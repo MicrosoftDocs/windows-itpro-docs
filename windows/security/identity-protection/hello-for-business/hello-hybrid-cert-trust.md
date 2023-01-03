@@ -12,6 +12,8 @@ ms.topic: how-to
 
 [!INCLUDE [hello-hybrid-cert-trust](./includes/hello-hybrid-cert-trust.md)]
 
+Hybrid environments are distributed systems that enable organizations to use on-premises and Azure AD-protected resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
+
 This deployment guide describes how to deploy Windows Hello for Business in a hybrid certificate trust scenario.
 
 > [!IMPORTANT]
@@ -24,7 +26,7 @@ The following prerequisites must be met for a hybrid certificate trust deploymen
 
 > [!div class="checklist"]
 > * Directories and directory synchronization
-> * Federation
+> * Federated authentication to Azure AD
 > * Device registration
 > * Public Key Infrastructure
 > * Multi-factor authentication
@@ -43,10 +45,10 @@ The hybrid-certificate trust deployment needs an *Azure Active Directory Premium
 > [!NOTE]
 > Windows Hello for Business hybrid certificate trust is not supported if the users' on-premises UPN suffix cannot be added as a verified domain in Azure AD.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Windows Hello for Business is tied between a user and a device. Both the user and device object must be synchronized between Azure Active Directory and Active Directory.
 
-### Federation
+### Federated authentication to Azure AD
 
 Windows Hello for Business hybrid certificate trust doesn't support Azure AD *Pass-through Authentication* (PTA) or *password hash sync* (PHS).\
 Windows Hello for Business hybrid certificate trust requires Active Directory to be federated with Azure Active Directory using AD FS. Additionally, you need to configure your AD FS farm to support Azure registered devices.
@@ -103,7 +105,7 @@ Once the prerequisites are met, deploying Windows Hello for Business with a hybr
 
 > [!div class="checklist"]
 > * Configure and validate the PKI
-> * Configure and validate AD FS
+> * Configure AD FS
 > * Configure Windows Hello for Business settings
 > * Provision Windows Hello for Business on Windows clients
 > * Configure single sign-on (SSO) for Azure AD joined devices

@@ -100,7 +100,7 @@ Before moving to the next section, ensure the following steps are complete:
 
 > [!div class="checklist"]
 > - Configure domain controller certificates
-> -_ Supersede existing domain controller certificates
+> - Supersede existing domain controller certificates
 > - Unpublish superseded certificate templates
 > - Publish the certificate template to the CA
 > - Deploy certificates to the domain controllers

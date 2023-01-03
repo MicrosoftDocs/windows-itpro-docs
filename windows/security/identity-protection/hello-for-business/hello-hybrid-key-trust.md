@@ -18,6 +18,8 @@ This deployment guide describes how to deploy Windows Hello for Business in a hy
 > [!IMPORTANT]
 > Windows Hello for Business *cloud Kerberos trust* is the recommended deployment model when compared to the *key trust model*. For more information, see [cloud Kerberos trust deployment](hello-hybrid-cloud-kerberos-trust.md).
 
+It is recommended that you review the [Windows Hello for Business planning guide](hello-planning-guide.md) prior to using the deployment guide. The planning guide helps you make decisions by explaining the available options with each aspect of the deployment and explains the potential outcomes based on each of these decisions.
+
 ## Prerequisites
 
 The following prerequisites must be met for a hybrid key trust deployment:

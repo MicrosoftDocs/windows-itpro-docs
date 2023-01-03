@@ -39,6 +39,14 @@ Expand the following sections to configure the PKI for Windows Hello for Busines
 
 <br>
 
+[!INCLUDE [enrollment-agent-certificate-template](includes/enrollment-agent-certificate-template.md)]
+
+<br>
+
+[!INCLUDE [auth-certificate-template](includes/auth-certificate-template.md)]
+
+<br>
+
 [!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
 
 <br>
@@ -76,14 +84,16 @@ Before moving to the next section, ensure the following steps are complete:
 
 > [!div class="checklist"]
 > - Configure domain controller certificates
-> -_ Supersede existing domain controller certificates
+> - Supersede existing domain controller certificates
 > - Unpublish superseded certificate templates
-> - Publish the certificate template to the CA
+> - Configure an enrollment agent certificate template
+> - Configure an authentication certificate template
+> - Publish the certificate templates to the CA
 > - Deploy certificates to the domain controllers
 > - Validate the domain controllers configuration
 
 > [!div class="nextstepaction"]
-> [Next: configure and provision Windows Hello for Business >](hello-hybrid-cert-trust-provision.md)
+> [Next: configure AD FS >](hello-hybrid-cert-whfb-settings-adfs.md)
 
 <!--links-->
 [SERV-1]: /troubleshoot/windows-server/windows-security/requirements-domain-controller
