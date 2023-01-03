@@ -30,6 +30,8 @@ For more information about features in Windows 11, see [Feature deprecations and
 
 To understand the distinction between _deprecation_ and _removal_, see [Windows client features lifecycle](feature-lifecycle.md).
 
+## Removed features and functionality
+
 The following features and functionalities have been removed from the installed product image for Windows client. Applications or code that depend on these features won't function in the release when it was removed, or in later releases.
 
 **The following list is subject to change and might not include every affected feature or functionality.**
