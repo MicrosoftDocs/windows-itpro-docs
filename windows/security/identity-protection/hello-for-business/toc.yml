@@ -41,26 +41,14 @@
       items: 
       - name: Overview
         href: hello-hybrid-cert-trust.md
-      - name: Prerequisites
-        href: hello-hybrid-cert-trust-prereqs.md
-      - name: New installation baseline
-        href: hello-hybrid-cert-new-install.md
-      - name: Configure Azure AD device registration
-        href: hello-hybrid-cert-trust-devreg.md
       - name: Configure Windows Hello for Business settings
         items:
-        - name: Overview
-          href: hello-hybrid-cert-whfb-settings.md
-        - name: Configure Active Directory
-          href: hello-hybrid-cert-whfb-settings-ad.md
-        - name: Configure Azure AD Connect Sync
-          href: hello-hybrid-cert-whfb-settings-dir-sync.md
-        - name: Configure PKI
-          href: hello-hybrid-cert-whfb-settings-pki.md
-        - name: Configure AD FS
-          href: hello-hybrid-cert-whfb-settings-adfs.md
-        - name: Configure Group Policy settings
-          href: hello-hybrid-cert-whfb-settings-policy.md
+      - name: Configure and validate the PKI
+        href: hello-hybrid-cert-whfb-settings-pki.md
+      - name: Configure AD FS
+        href: hello-hybrid-cert-whfb-settings-adfs.md
+      - name: Configure Group Policy settings
+        href: hello-hybrid-cert-whfb-settings-policy.md
       - name: Sign-in and provision Windows Hello for Business
         href: hello-hybrid-cert-whfb-provision.md
       - name: Configure SSO for Azure AD joined devices

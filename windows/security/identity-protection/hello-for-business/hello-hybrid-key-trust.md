@@ -11,9 +11,9 @@ ms.topic: how-to
 
 [!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-key-trust.md)]
 
-Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide describes how to deploy Windows Hello for Business in a hybrid key trust scenario.
+Hybrid environments are distributed systems that enable organizations to use on-premises and Azure AD-protected resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
 
-Hybrid environments are distributed systems that enable organizations to use on-premises and Azure AD-based identities and resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
+This deployment guide describes how to deploy Windows Hello for Business in a hybrid key trust scenario.
 
 > [!IMPORTANT]
 > Windows Hello for Business *cloud Kerberos trust* is the recommended deployment model when compared to the *key trust model*. For more information, see [cloud Kerberos trust deployment](hello-hybrid-cloud-kerberos-trust.md).
@@ -41,7 +41,7 @@ The two directories must be synchronized with [Azure AD Connect Sync][AZ-1], whi
 During the Window Hello for Business provisioning process, users register the public portion of their Windows Hello for Business credential with Azure AD. *Azure AD Connect Sync* synchronizes the Windows Hello for Business public key to Active Directory.
 
 > [!NOTE]
-> Windows Hello for Business Hybrid key trust is not supported if the users' on-premises UPN suffix cannot be added as a verified domain in Azure AD.
+> Windows Hello for Business hybrid key trust is not supported if the users' on-premises UPN suffix cannot be added as a verified domain in Azure AD.
 
 ### Authentication to Azure AD
 
