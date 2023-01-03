@@ -41,10 +41,8 @@
       items: 
       - name: Overview
         href: hello-hybrid-cert-trust.md
-      - name: Configure Windows Hello for Business settings
-        items:
       - name: Configure and validate the PKI
-        href: hello-hybrid-cert-whfb-settings-pki.md
+        href: hello-hybrid-cert-trust-validate-pki.md
       - name: Configure AD FS
         href: hello-hybrid-cert-whfb-settings-adfs.md
       - name: Configure Group Policy settings

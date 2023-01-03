@@ -3,6 +3,9 @@ ms.date: 12/28/2022
 ms.topic: include
 ---
 
+<details>
+<summary><b>Configure domain controller certificates</b></summary>
+
 Clients must trust the domain controllers, and the best way to do it is to ensure each domain controller has a *Kerberos Authentication* certificate. Installing a certificate on the domain controllers enables the Key Distribution Center (KDC) to prove its identity to other members of the domain. The certificates provide clients a root of trust external to the domain, namely the *enterprise certification authority*.
 
 Domain controllers automatically request a domain controller certificate (if published) when they discover an enterprise CA is added to Active Directory. However, certificates based on the *Domain Controller* and *Domain Controller Authentication* certificate templates don't include the *KDC Authentication* object identifier (OID), which was later added to the Kerberos RFC. Therefore, domain controllers need to request a certificate based on the *Kerberos Authentication* certificate template.
@@ -46,3 +49,5 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
    - Select **SHA256** from the **Request hash** list
 1. Select **OK**
 1. Close the console
+
+</details>

@@ -1,0 +1,95 @@
+---
+title: Configure and validate the Public Key Infrastructure in an on-premises certificate trust model
+description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a certificate trust model.
+ms.date: 01/03/2023
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
+ms.topic: tutorial
+---
+# Configure and validate the Public Key Infrastructure - on-premises certificate trust
+
+[!INCLUDE [hello-on-premises-key-trust](./includes/hello-on-premises-cert-trust.md)]
+
+Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a root of trust for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
+
+ Hybrid certificate trust deployments issue users with a sign-in certificate that enables them to authenticate using Windows Hello for Business credentials to the domain controllers. Additionally, hybrid certificate trust deployments issue certificates to registration authorities to provide defense-in-depth security when issuing user authentication certificates.
+
+## Deploy an enterprise certification authority
+
+This guide assumes most enterprises have an existing public key infrastructure. Windows Hello for Business depends on an enterprise PKI running the Windows Server *Active Directory Certificate Services* role.
+
+### Lab-based PKI
+
+The following instructions may be used to deploy simple public key infrastructure that is suitable **for a lab environment**.
+
+Sign in using *Enterprise Administrator* equivalent credentials on a Windows Server where you want the certification authority (CA) installed.
+
+>[!NOTE]
+>Never install a certification authority on a domain controller in a production environment.
+
+1. Open an elevated Windows PowerShell prompt
+1. Use the following command to install the Active Directory Certificate Services role.
+    ```PowerShell
+    Add-WindowsFeature Adcs-Cert-Authority -IncludeManagementTools
+    ```
+3. Use the following command to configure the CA using a basic certification authority configuration
+    ```PowerShell
+    Install-AdcsCertificationAuthority
+    ```
+
+## Configure the enterprise PKI
+
+If you don't have an existing PKI, review [Certification Authority Guidance](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)) to properly design your infrastructure. Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831348(v=ws.11)) for instructions on how to configure your PKI using the information from your design session.
+
+Expand the following sections to configure the PKI for Windows Hello for Business.
+
+<br>
+
+[!INCLUDE [dc-certificate-template](includes/dc-certificate-template.md)]
+
+<br>
+
+[!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
+
+<br>
+
+[!INCLUDE [web-server-certificate-template](includes/web-server-certificate-template.md)]
+
+<br>
+<details>
+<summary><b>Unpublish Superseded Certificate Templates</b></summary>
+
+[!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
+
+</details>
+
+<br>
+<details>
+<summary><b>Publish certificate templates to the CA</b></summary>
+
+A certification authority can only issue certificates for certificate templates that are published to it. If you have more than one CA, and you want more CAs to issue certificates based on the certificate template, then you must publish the certificate template to them.
+
+Sign in to the CA or management workstations with **Enterprise Admin** equivalent credentials.
+
+1. Open the **Certification Authority** management console
+1. Expand the parent node from the navigation pane
+1. Select **Certificate Templates** in the navigation pane
+1. Right-click the **Certificate Templates** node. Select **New > Certificate Template** to issue
+1. In the **Enable Certificates Templates** window, select the *Domain Controller Authentication (Kerberos)*, and *Internal Web Server* templates you created in the previous steps. Select **OK** to publish the selected certificate templates to the certification authority
+1. If you published the *Domain Controller Authentication (Kerberos)* certificate template, then unpublish the certificate templates you included in the superseded templates list
+   - To unpublish a certificate template, right-click the certificate template you want to unpublish and select **Delete**. Select **Yes** to confirm the operation
+1. Close the console
+
+</details>
+
+## Configure and deploy certificates to domain controllers
+
+[!INCLUDE [dc-certificate-deployment](includes/dc-certificate-deployment.md)]
+
+## Validate the configuration
+
+[!INCLUDE [dc-certificate-validate](includes/dc-certificate-validate.md)]
+
+> [!div class="nextstepaction"]
+> [Next: prepare and deploy AD FS >](hello-key-trust-adfs.md)
