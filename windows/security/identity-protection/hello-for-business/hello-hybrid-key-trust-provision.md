@@ -1,13 +1,15 @@
 ---
-title: Windows Hello for Business key trust clients configuration and enrollment
-description: Learn how to configure devices to enroll in Windows Hello for Business in a hybrid key trust scenario.
-ms.date: 11/1/2022
+title: Windows Hello for Business hybrid key trust clients configuration and enrollment
+description: Learn how to configure devices and enroll them in Windows Hello for Business in a hybrid key trust scenario.
+ms.date: 01/03/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: tutorial
 ---
 
-# Configure a Windows Hello for Business policy and deploy it to the devices - hybrid key trust
+# Configure and provision Windows Hello for Business - hybrid key trust
+
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-key-trust.md)]
 
 After the prerequisites are met and the PKI configuration is validated, Windows Hello for business must be enabled on the Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
