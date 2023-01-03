@@ -7,7 +7,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.topic: tutorial
 ---
-# Configure and validate the Public Key Infrastructure - hybrids certificate trust
+# Configure and validate the Public Key Infrastructure - hybrid certificate trust
 
 [!INCLUDE [hello-hybrid-key-trust](./includes/hello-on-premises-cert-trust.md)]
 
@@ -15,34 +15,11 @@ Windows Hello for Business must have a Public Key Infrastructure (PKI) when usin
 
 Hybrid certificate trust deployments issue users with a sign-in certificate that enables them to authenticate using Windows Hello for Business credentials to the domain controllers. Additionally, hybrid certificate trust deployments issue certificates to registration authorities to provide defense-in-depth security when issuing user authentication certificates.
 
-## Deploy an enterprise certification authority
-
-This guide assumes most enterprises have an existing public key infrastructure. Windows Hello for Business depends on an enterprise PKI running the Windows Server *Active Directory Certificate Services* role.\
-If you don't have an existing PKI, review [Certification Authority Guidance][PREV-1] to properly design your infrastructure. Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy][PREV-2] for instructions on how to configure your PKI using the information from your design session.
-
-### Lab-based PKI
-
-The following instructions may be used to deploy simple public key infrastructure that is suitable **for a lab environment**.
-
-Sign in using *Enterprise Administrator* equivalent credentials on a Windows Server where you want the certification authority (CA) installed.
-
->[!NOTE]
->Never install a certification authority on a domain controller in a production environment.
-
-1. Open an elevated Windows PowerShell prompt
-1. Use the following command to install the Active Directory Certificate Services role.
-    ```PowerShell
-    Add-WindowsFeature Adcs-Cert-Authority -IncludeManagementTools
-    ```
-3. Use the following command to configure the CA using a basic certification authority configuration
-    ```PowerShell
-    Install-AdcsCertificationAuthority
-    ```
-    ```
+[!INCLUDE [lab-based-pki-deploy](includes/lab-based-pki-deploy.md)]
 
 ## Configure the enterprise PKI
 
-The configuration of the enterprise PKI to support Windows Hello for Business consists of the following steps (expand each step to learn more):
+Expand the following sections to configure the PKI for Windows Hello for Business.
 
 <br>
 
@@ -67,7 +44,7 @@ The configuration of the enterprise PKI to support Windows Hello for Business co
 <br>
 <details>
 
-<summary><b>Publish the certificate template to the CA</b></summary>
+<summary><b>Publish the certificate templates to the CA</b></summary>
 
 A certification authority can only issue certificates for certificate templates that are published to it. If you have more than one CA, and you want more CAs to issue certificates based on the certificate template, then you must publish the certificate template to them.
 
@@ -77,7 +54,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 1. Expand the parent node from the navigation pane
 1. Select **Certificate Templates** in the navigation pane
 1. Right-click the **Certificate Templates** node. Select **New > Certificate Template to issue**
-1. In the **Enable Certificates Templates** window, select the *Domain Controller Authentication (Kerberos)* template you created in the previous steps > select **OK**
+1. In the **Enable Certificates Templates** window, select the *Domain Controller Authentication (Kerberos)*, *WHFB Enrollment Agent*  and *WHFB Authentication* templates you created in the previous steps > select **OK**
 1. Close the console
 
 </details>
@@ -110,5 +87,3 @@ Before moving to the next section, ensure the following steps are complete:
 
 <!--links-->
 [SERV-1]: /troubleshoot/windows-server/windows-security/requirements-domain-controller
-[PREV-1]: /previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)
-[PREV-2]: /previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831348(v=ws.11)
