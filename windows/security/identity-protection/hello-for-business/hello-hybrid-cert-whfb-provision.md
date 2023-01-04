@@ -193,7 +193,7 @@ The Windows Hello for Business provisioning process begins immediately after the
 You can determine the status of the prerequisite checks by viewing the **User Device Registration** admin log under **Applications and Services Logs > Microsoft > **Windows**.\
 This information is also available using the `dsregcmd /status` command from a console. For more information, see [dsregcmd][AZ-4].
 
-![Event358.](images/Event358-2.png)
+:::image type="content" source="images/Event358.png" alt-text="Details about event ID 358 showing that the device is ready to enroll in in Windows Hello for Business." border="false" lightbox="images/Event358.png"::::::
 
 ### PIN Setup
 
