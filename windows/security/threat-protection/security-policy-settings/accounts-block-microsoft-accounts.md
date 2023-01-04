@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Accounts: Block Microsoft accounts
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, management, and security considerations for the **Accounts: Block Microsoft accounts** security policy setting.
