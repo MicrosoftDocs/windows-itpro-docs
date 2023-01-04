@@ -15,6 +15,9 @@ After the prerequisites are met and the PKI configuration is validated, Windows 
 
 ### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
+
+## Configure Windows Hello for Business using Microsoft Intune
+
 For Azure AD joined devices and hybrid Azure AD joined devices enrolled in Intune, you can use Intune policies to manage Windows Hello for Business.
 
 There are different ways to enable and configure Windows Hello for Business in Intune:
@@ -54,7 +57,7 @@ To configure Windows Hello for Business using an *account protection* policy:
 1. Specify a **Name** and, optionally, a **Description** > **Next**
 1. Under *Block Windows Hello for Business*, select **Disabled** and multiple policies become available
     - These policies are optional to configure, but it's recommended to configure *Enable to use a Trusted Platform Module (TPM)* to **Yes**
-    - For more information about these policies, see [TBD](tbd)
+    - For more information about these policies, see [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
 1. Select **Next**
 1. Optionally, add *scope tags* > **Next**
 1. Assign the policy to a security group that contains as members the devices or users that you want to configure > **Next**
@@ -64,17 +67,17 @@ To configure Windows Hello for Business using an *account protection* policy:
 
 ### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
+## Configure Windows Hello for Business using group policies
+
 For hybrid Azure AD joined devices, you can use group policies to configure Windows Hello for Business.
 It is suggested to create a security group (for example, *Windows Hello for Business Users*) to make it easy to deploy Windows Hello for Business in phases. You assign Group Policy permissions to this group to simplify the deployment by adding the users to the group.
-
-### Windows Hello for Business Group Policy
 
 The Windows Hello for Business Group Policy object delivers the correct Group Policy settings to the user, which enables them to enroll and use Windows Hello for Business to authenticate to Azure and Active Directory
 
 > [!NOTE]
 > If you deployed Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more details about policy conflicts, see [Policy conflicts from multiple policy sources](./hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources)
 
-The *Enable Windows Hello for Business* group policy setting is the configuration needed for Windows to determine if a user should attempt to enroll for Windows Hello for Business. A user will only attempt enrollment if this policy setting is configured to enabled.\
+The *Enable Windows Hello for Business* group policy setting is the configuration needed for Windows to determine if a user should attempt to enroll for Windows Hello for Business. A user will only attempt enrollment if this policy setting is configured to **enabled**.\
 You can configure the *Enable Windows Hello for Business* setting for computer or users:
 
 - Deploying this policy setting to computers (or group of computers) results in all users that sign-in that computer to attempt a Windows Hello for Business enrollment
@@ -95,6 +98,11 @@ Sign-in a domain controller or management workstations with *Domain Admin* equiv
 1. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**
 1. In the content pane, open **Use Windows Hello for Business**. Select **Enable > OK**
 1. Close the **Group Policy Management Editor**
+
+> [!NOTE]
+> Windows Hello for Business can be configured using different policies. These policies are optional to configure, but it's recommended to enable *Use a hardware security device*.
+> 
+> For more information about these policies, see [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md).
 
 ### Configure security for GPO
 
@@ -149,45 +157,3 @@ This is the process that occurs after a user signs in, to enroll in Windows Hell
 <!--links-->
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
 [AZ-5]: /azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler
-
-
-<!---
-
-
-#### Other Related Group Policy settings
-
-#### Windows Hello for Business
-
-There are other Windows Hello for Business policy settings you can configure to manage your Windows Hello for Business deployment.  These policy settings are computer-based policy setting; so they are applicable to any user that sign-in from a computer with these policy settings. 
-
-#### Use a hardware security device
-
-The default configuration for Windows Hello for Business is to prefer hardware protected credentials; however, not all computers are able to create hardware protected credentials.  When Windows Hello for Business enrollment encounters a computer that cannot create a hardware protected credential, it will create a software-based credential.
-
-You can enable and deploy the **Use a hardware security device** Group Policy Setting to force Windows Hello for Business to only create hardware protected credentials.  Users that sign-in from a computer incapable of creating a hardware protected credential do not enroll for Windows Hello for Business.
-
-Another policy setting becomes available when you enable the **Use a hardware security device** Group Policy setting that enables you to prevent Windows Hello for Business enrollment from using version 1.2 Trusted Platform Modules (TPM). Version 1.2 TPMs typically perform cryptographic operations slower than version 2.0 TPMs and are more unforgiving during anti-hammering and PIN lockout activities. Some organizations may not want slow sign-in performance and management overhead associated with version 1.2 TPMs. To prevent Windows Hello for Business from using version 1.2 TPMs, select the TPM 1.2 check box after you enable the Use a hardware security device Group Policy object.
-
-#### Use biometrics
-
-Windows Hello for Business provides a great user experience when combined with the use of biometrics.  Rather than providing a PIN to sign-in, a user can use a fingerprint or facial recognition to sign-in to Windows, without sacrificing security.  
-
-The default Windows Hello for Business enables users to enroll and use biometrics. However, some organization may want more time before using biometrics and want to disable their use until they are ready. To not allow users to use biometrics, configure the **Use biometrics** Group Policy setting to disabled and apply it to your computers.  The policy setting disabled all biometrics. Currently, Windows doesn't provide the ability to set granular policies that enable you to disable specific modalities of biometrics, such as allowing facial recognition but disallowing fingerprint recognition.
-
-### PIN Complexity
-
-PIN complexity is not specific to Windows Hello for Business. Windows enables users to use PINs outside of Windows Hello for Business. PIN Complexity Group Policy settings apply to all uses of PINs, even when Windows Hello for Business is not deployed.
-
->[!IMPORTANT]
-> Starting from Windows 10, version 1703, the PIN complexity Group Policy settings have moved to remove misunderstanding that PIN complexity policy settings were exclusive to Windows Hello for Business. The new location of these Group Policy settings is under **Computer Configuration\Administrative Templates\System\PIN Complexity**  of the Group Policy editor.
-
-Windows provides eight PIN Complexity Group Policy settings that give you granular control over PIN creation and management. You can deploy these policy settings to computers, where they affect all users creating PINs on that computer; or, you can deploy these settings to users, where they affect those users creating PINs regardless of the computer they use.  If you deploy both computer and user PIN complexity Group Policy settings, the user policy settings have precedence over computer policy settings. Also, this conflict resolution is based on the last applied policy. Windows does not merge the policy settings automatically; however, you can deploy Group Policy to provide to accomplish a variety of configurations.  The policy settings included are:
-* Require digits
-* Require lowercase letters
-* Maximum PIN length
-* Minimum PIN length
-* Expiration
-* History
-* Require special characters
-* Require uppercase letters
---->
