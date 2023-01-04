@@ -10,7 +10,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.reviewer: pmadrigal
 ms.collection: highpri
-ms.date: 08/26/2022
+ms.date: 08/27/2022
 ---
 
 # Use Quick Assist to help users
