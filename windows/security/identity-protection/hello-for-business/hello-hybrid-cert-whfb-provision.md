@@ -151,11 +151,11 @@ To configure Windows Hello for Business using an *account protection* policy:
 
 ---
 
-## Provision Windows Hello for Business
+## Enroll in Windows Hello for Business
 
 The Windows Hello for Business provisioning process begins immediately after the user profile is loaded and before the user receives their desktop. For the provisioning process to begin, all prerequisite checks must pass.
 
-You can determine the status of the prerequisite checks by viewing the **User Device Registration** admin log under **Applications and Services Logs > Microsoft > **Windows**.\
+You can determine the status of the prerequisite checks by viewing the **User Device Registration** admin log under **Applications and Services Logs > Microsoft > Windows**.\
 This information is also available using the `dsregcmd /status` command from a console. For more information, see [dsregcmd][AZ-4].
 
 ### PIN Setup
