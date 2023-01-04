@@ -63,7 +63,8 @@ Windows Hello for Business settings are also available in the settings catalog. 
 
 ### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
-For hybrid Azure AD joined devices, you can use GPOs to manage Windows Hello for Business.
+For hybrid Azure AD joined devices, you can use group policies to configure Windows Hello for Business.
+It is suggested to create a security group (for example, *Windows Hello for Business Users*) to make it easy to deploy Windows Hello for Business in phases. You assign the **Group Policy** and **Certificate template** permissions to this group to simplify the deployment by adding the users to the group. This provides users with the proper permissions to provision Windows Hello for Business and to enroll in the Windows Hello for Business authentication certificate.
 
 #### Create the Windows Hello for Business Users Security Group
 
