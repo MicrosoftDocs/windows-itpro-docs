@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TabletPCInputPanel Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/29/2022
+ms.date: 01/04/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -43,6 +43,7 @@ ms.topic: reference
 <!-- AutoComplete_2-OmaUri-End -->
 
 <!-- AutoComplete_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Turns off the integration of application auto complete lists with Tablet PC Input Panel in applications where this behavior is available.
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -68,6 +69,9 @@ If you do not configure this policy, application auto complete lists will appear
 <!-- AutoComplete_2-DFProperties-End -->
 
 <!-- AutoComplete_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -103,6 +107,7 @@ If you do not configure this policy, application auto complete lists will appear
 <!-- EdgeTarget_2-OmaUri-End -->
 
 <!-- EdgeTarget_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Prevents Input Panel tab from appearing on the edge of the Tablet PC screen.
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -130,6 +135,9 @@ Caution: If you enable both the “Prevent Input Panel from appearing next to te
 <!-- EdgeTarget_2-DFProperties-End -->
 
 <!-- EdgeTarget_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -165,6 +173,7 @@ Caution: If you enable both the “Prevent Input Panel from appearing next to te
 <!-- IPTIPTarget_2-OmaUri-End -->
 
 <!-- IPTIPTarget_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Prevents the Tablet PC Input Panel icon from appearing next to any text entry area in applications where this behavior is available. This policy applies only when using a tablet pen as an input device.
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -192,6 +201,9 @@ Caution: If you enable both the “Prevent Input Panel from appearing next to te
 <!-- IPTIPTarget_2-DFProperties-End -->
 
 <!-- IPTIPTarget_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -227,6 +239,7 @@ Caution: If you enable both the “Prevent Input Panel from appearing next to te
 <!-- IPTIPTouchTarget_2-OmaUri-End -->
 
 <!-- IPTIPTouchTarget_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Prevents the Tablet PC Input Panel icon from appearing next to any text entry area in applications where this behavior is available. This policy applies only when a user is using touch input.
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -252,6 +265,9 @@ If you do not configure this policy, Input Panel will appear next to text entry 
 <!-- IPTIPTouchTarget_2-DFProperties-End -->
 
 <!-- IPTIPTouchTarget_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -287,6 +303,7 @@ If you do not configure this policy, Input Panel will appear next to text entry 
 <!-- PasswordSecurity_2-OmaUri-End -->
 
 <!-- PasswordSecurity_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Adjusts password security settings in Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 and Windows Vista). These settings include using the on-screen keyboard by default, preventing users from switching to another Input Panel skin (the writing pad or character pad), and not showing what keys are tapped when entering a password.
 
 Touch Keyboard and Handwriting panel enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -322,6 +339,9 @@ Caution: If you lower password security settings, people who can see the user’
 <!-- PasswordSecurity_2-DFProperties-End -->
 
 <!-- PasswordSecurity_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -357,6 +377,7 @@ Caution: If you lower password security settings, people who can see the user’
 <!-- Prediction_2-OmaUri-End -->
 
 <!-- Prediction_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Prevents the Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 and Windows Vista) from providing text prediction suggestions. This policy applies for both the on-screen keyboard and the handwriting tab when the feature is available for the current input area and input language.
 
 Touch Keyboard and Handwriting panel enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -382,6 +403,9 @@ If you do not configure this policy, Input Panel will provide text prediction su
 <!-- Prediction_2-DFProperties-End -->
 
 <!-- Prediction_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -417,6 +441,7 @@ If you do not configure this policy, Input Panel will provide text prediction su
 <!-- RareChar_2-OmaUri-End -->
 
 <!-- RareChar_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Includes rarely used Chinese, Kanji, and Hanja characters when handwriting is converted to typed text. This policy applies only to the use of the Microsoft recognizers for Chinese (Simplified), Chinese (Traditional), Japanese, and Korean. This setting appears in Input Panel Options (in Windows 7 and Windows Vista only) only when these input languages or keyboards are installed.
 
 Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 and Windows Vista) enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -442,6 +467,9 @@ If you do not configure this policy, rarely used Chinese, Kanji, and Hanja chara
 <!-- RareChar_2-DFProperties-End -->
 
 <!-- RareChar_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -477,6 +505,7 @@ If you do not configure this policy, rarely used Chinese, Kanji, and Hanja chara
 <!-- ScratchOut_2-OmaUri-End -->
 
 <!-- ScratchOut_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Turns off both the more tolerant scratch-out gestures that were added in Windows Vista and the Z-shaped scratch-out gesture that was available in Microsoft Windows XP Tablet PC Edition.
 
 The tolerant gestures let users scratch out ink in Input Panel by using strikethrough and other scratch-out gesture shapes.
@@ -508,6 +537,9 @@ If you do not configure this policy, users will be able to use both the tolerant
 <!-- ScratchOut_2-DFProperties-End -->
 
 <!-- ScratchOut_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -543,6 +575,7 @@ If you do not configure this policy, users will be able to use both the tolerant
 <!-- AutoComplete_1-OmaUri-End -->
 
 <!-- AutoComplete_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Turns off the integration of application auto complete lists with Tablet PC Input Panel in applications where this behavior is available.
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -568,6 +601,9 @@ If you do not configure this policy, application auto complete lists will appear
 <!-- AutoComplete_1-DFProperties-End -->
 
 <!-- AutoComplete_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -603,6 +639,7 @@ If you do not configure this policy, application auto complete lists will appear
 <!-- EdgeTarget_1-OmaUri-End -->
 
 <!-- EdgeTarget_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Prevents Input Panel tab from appearing on the edge of the Tablet PC screen.
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -630,6 +667,9 @@ Caution: If you enable both the “Prevent Input Panel from appearing next to te
 <!-- EdgeTarget_1-DFProperties-End -->
 
 <!-- EdgeTarget_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -665,6 +705,7 @@ Caution: If you enable both the “Prevent Input Panel from appearing next to te
 <!-- IPTIPTarget_1-OmaUri-End -->
 
 <!-- IPTIPTarget_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Prevents the Tablet PC Input Panel icon from appearing next to any text entry area in applications where this behavior is available. This policy applies only when using a tablet pen as an input device.
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -692,6 +733,9 @@ Caution: If you enable both the “Prevent Input Panel from appearing next to te
 <!-- IPTIPTarget_1-DFProperties-End -->
 
 <!-- IPTIPTarget_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -727,6 +771,7 @@ Caution: If you enable both the “Prevent Input Panel from appearing next to te
 <!-- IPTIPTouchTarget_1-OmaUri-End -->
 
 <!-- IPTIPTouchTarget_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Prevents the Tablet PC Input Panel icon from appearing next to any text entry area in applications where this behavior is available. This policy applies only when a user is using touch input.
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -752,6 +797,9 @@ If you do not configure this policy, Input Panel will appear next to text entry 
 <!-- IPTIPTouchTarget_1-DFProperties-End -->
 
 <!-- IPTIPTouchTarget_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -787,6 +835,7 @@ If you do not configure this policy, Input Panel will appear next to text entry 
 <!-- PasswordSecurity_1-OmaUri-End -->
 
 <!-- PasswordSecurity_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Adjusts password security settings in Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 and Windows Vista). These settings include using the on-screen keyboard by default, preventing users from switching to another Input Panel skin (the writing pad or character pad), and not showing what keys are tapped when entering a password.
 
 Touch Keyboard and Handwriting panel enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -822,6 +871,9 @@ Caution: If you lower password security settings, people who can see the user’
 <!-- PasswordSecurity_1-DFProperties-End -->
 
 <!-- PasswordSecurity_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -857,6 +909,7 @@ Caution: If you lower password security settings, people who can see the user’
 <!-- Prediction_1-OmaUri-End -->
 
 <!-- Prediction_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Prevents the Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 and Windows Vista) from providing text prediction suggestions. This policy applies for both the on-screen keyboard and the handwriting tab when the feature is available for the current input area and input language.
 
 Touch Keyboard and Handwriting panel enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -882,6 +935,9 @@ If you do not configure this policy, Input Panel will provide text prediction su
 <!-- Prediction_1-DFProperties-End -->
 
 <!-- Prediction_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -917,6 +973,7 @@ If you do not configure this policy, Input Panel will provide text prediction su
 <!-- RareChar_1-OmaUri-End -->
 
 <!-- RareChar_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Includes rarely used Chinese, Kanji, and Hanja characters when handwriting is converted to typed text. This policy applies only to the use of the Microsoft recognizers for Chinese (Simplified), Chinese (Traditional), Japanese, and Korean. This setting appears in Input Panel Options (in Windows 7 and Windows Vista only) only when these input languages or keyboards are installed.
 
 Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 and Windows Vista) enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
@@ -942,6 +999,9 @@ If you do not configure this policy, rarely used Chinese, Kanji, and Hanja chara
 <!-- RareChar_1-DFProperties-End -->
 
 <!-- RareChar_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -977,6 +1037,7 @@ If you do not configure this policy, rarely used Chinese, Kanji, and Hanja chara
 <!-- ScratchOut_1-OmaUri-End -->
 
 <!-- ScratchOut_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Turns off both the more tolerant scratch-out gestures that were added in Windows Vista and the Z-shaped scratch-out gesture that was available in Microsoft Windows XP Tablet PC Edition.
 
 The tolerant gestures let users scratch out ink in Input Panel by using strikethrough and other scratch-out gesture shapes.
@@ -1008,6 +1069,9 @@ If you do not configure this policy, users will be able to use both the tolerant
 <!-- ScratchOut_1-DFProperties-End -->
 
 <!-- ScratchOut_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
