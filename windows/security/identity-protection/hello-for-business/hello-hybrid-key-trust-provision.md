@@ -52,15 +52,15 @@ To configure Windows Hello for Business using an *account protection* policy:
 1. For *Platform**, select **Windows 10 and later** and for *Profile* select **Account protection**
 1. Select **Create**
 1. Specify a **Name** and, optionally, a **Description** > **Next**
-1. Under **Block Windows Hello for Business**, select **Disabled** and multiple policies become available
-    - These policies are optional to configure, but it's recommended to configure **Enable to use a Trusted Platform Module (TPM)** to **Yes**
+1. Under *Block Windows Hello for Business*, select **Disabled** and multiple policies become available
+    - These policies are optional to configure, but it's recommended to configure *Enable to use a Trusted Platform Module (TPM)* to **Yes**
     - For more information about these policies, see [TBD](tbd)
 1. Select **Next**
 1. Optionally, add *scope tags* > **Next**
 1. Assign the policy to a security group that contains as members the devices or users that you want to configure > **Next**
 1. Review the policy configuration and select **Create**
 
-    [![Intune custom device configuration policy creation](./images/hello-intune-enable.png)](./images/hello-intune-enable-large.png#lightbox)
+:::image type="content" source="images/whfb-intune-account-protection-enable.png" alt-text="Enablement of Windows Hello for Business from Microsoft Endpoint Manager admin center using an account protection policy." border="true" lightbox="images/whfb-intune-account-protection-enable.png":::
 
 ### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
@@ -125,7 +125,7 @@ Users (or devices) must receive the Windows Hello for Business group policy sett
 
 The Windows Hello for Business provisioning process begins immediately after the user profile is loaded and before the user receives their desktop. For the provisioning process to begin, all prerequisite checks must pass.
 
-You can determine the status of the prerequisite checks by viewing the **User Device Registration** admin log under **Applications and Services Logs > Microsoft > **Windows**.\
+You can determine the status of the prerequisite checks by viewing the **User Device Registration** admin log under **Applications and Services Logs > Microsoft > Windows**.\
 This information is also available using the `dsregcmd /status` command from a console. For more information, see [dsregcmd][AZ-4].
 
 ![Event358.](images/Event358-2.png)
@@ -147,6 +147,7 @@ This is the process that occurs after a user signs in, to enroll in Windows Hell
 > Read [Azure AD Connect sync: Scheduler][AZ-5] to view and adjust the **synchronization cycle** for your organization.
 
 <!--links-->
+[AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
 [AZ-5]: /azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler
 
 
