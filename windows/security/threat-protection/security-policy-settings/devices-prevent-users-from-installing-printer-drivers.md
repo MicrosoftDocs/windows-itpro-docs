@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Devices: Prevent users from installing printer drivers
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Devices: Prevent users from installing printer drivers** security policy setting.

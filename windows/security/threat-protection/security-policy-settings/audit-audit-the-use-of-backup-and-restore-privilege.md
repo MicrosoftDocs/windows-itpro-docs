@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Audit: Audit the use of Backup and Restore privilege
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Audit: Audit the use of Backup and Restore privilege** security policy setting.
