@@ -27,7 +27,7 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
 1. On the **General** tab:
    - Type *WHFB Enrollment Agent* in **Template display name**
    - Adjust the validity and renewal period to meet your enterprise's needs
-1. On the **Subject** tab, select the **Supply in the request** button if it is not already selected
+1. On the **Subject** tab, select the **Supply in the request** button if it isn't already selected
 
    > [!NOTE]
    > Group Managed Service Accounts (GMSA) do not support the *Build from this Active Directory information* option and will result in the AD FS server failing to enroll the enrollment agent certificate. You must configure the certificate template with *Supply in the request* to ensure that AD FS servers can perform the automatic enrollment and renewal of the enrollment agent certificate.
@@ -42,7 +42,7 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
 1. Type *adfssvc* in the **Enter the object names to select** text box and select **OK**
 1. Select the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section:
    - In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission
-   - Excluding the **adfssvc** user, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared
+   - Excluding the **adfssvc** user, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list
    - Select **OK**
 1. Close the console
 
@@ -74,7 +74,7 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
 1. Type *adfssvc* in the **Enter the object names to select** text box and select **OK**
 1. Select the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section:
    - In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission
-   - Excluding the **adfssvc** user, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared
+   - Excluding the **adfssvc** user, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list
    - Select **OK**
 1. Close the console
 

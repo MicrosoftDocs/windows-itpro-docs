@@ -9,7 +9,7 @@ Expand the following sections to configure the group policy for domain controlle
 <details>
 <summary><b>Configure automatic certificate enrollment for the domain controllers</b></summary>
 
-Domain controllers automatically request a certificate from the *Domain controller certificate* template. However, domain controllers are unaware of newer certificate templates or superseded configurations on certificate templates. To continue automatic enrollment and renewal of domain controller certificates, create and configure a Group Policy Object (GPO) for automatic certificate enrollment, linking the Group Policy object to the *Domain Controllers* Organizational Unit (OU).
+Domain controllers automatically request a certificate from the *Domain controller certificate* template. However, domain controllers are unaware of newer certificate templates or superseded configurations on certificate templates. For domain controllers to automatically enroll and renew of certificates, configure a GPO for automatic certificate enrollment, and link it to the *Domain Controllers* OU.
 
 1. Open the **Group Policy Management Console** (gpmc.msc)
 1. Expand the domain and select the **Group Policy Object** node in the navigation pane

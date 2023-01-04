@@ -6,7 +6,7 @@ ms.topic: include
 <details>
 <summary><b>Configure an internal web server certificate template</b></summary>
 
-Windows clients use the https protocol when communicating with Active Directory Federation Services (AD FS). To meet this need, you must issue a server authentication certificate to all the nodes in the AD FS farm. On-premises deployments can use a server authentication certificate issued by their enterprise PKI. You must configure a server authentication certificate template so the host running AD FS can request the certificate.
+Windows clients communicate with AD FS via HTTPS. To meet this need, a *server authentication* certificate must be issued to all the nodes in the AD FS farm. On-premises deployments can use a *server authentication* certificate issued by the enterprise PKI. A *server authentication* certificate template must be configured, so the AD FS nodes can request a certificate.
 
 Sign in to a CA or management workstations with *Domain Administrator* equivalent credentials.
 
@@ -36,5 +36,5 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
    - Select **SHA256** from the **Request hash** list
    - Select **OK**
 1. Close the console
- 
+
 </details>

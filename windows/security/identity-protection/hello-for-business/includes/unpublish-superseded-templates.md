@@ -6,7 +6,7 @@ ms.topic: include
 <details>
 <summary><b>Unpublish Superseded Certificate Templates</b></summary>
 
-The certification authority only issues certificates based on published certificate templates. For security, it's a good practice to unpublish certificate templates that the CA isn't configured to issue. This includes the pre-published certificate template from the role installation and any superseded certificate templates.
+The certification authority only issues certificates based on published certificate templates. For security, it's a good practice to unpublish certificate templates that the CA isn't configured to issue, including the pre-published templates from the role installation and any superseded templates.
 
 The newly created *domain controller authentication* certificate template supersedes previous domain controller certificate templates. Therefore, you need to unpublish these certificate templates from all issuing certificate authorities.
 

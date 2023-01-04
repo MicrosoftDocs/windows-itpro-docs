@@ -3,9 +3,9 @@ ms.date: 12/28/2022
 ms.topic: include
 ---
 
-Windows Hello for Business is a distributed system, which on the surface appears complex and difficult. The key to a successful Windows Hello for Business deployment is to validate phases of work prior to moving to the next phase.
+Windows Hello for Business is a distributed system, which on the surface appears complex and difficult. The key to a successful deployment is to validate phases of work prior to moving to the next phase.
 
-You want to confirm your domain controllers enroll the correct certificates and not any unnecessary (superseded) certificate templates. You need to check each domain controller that autoenrollment for the computer occurred.
+Confirm your domain controllers enroll the correct certificates and not any superseded certificate templates. Check that each domain controller completed the certificate autoenrollment.
 
 ### Use the event logs
 

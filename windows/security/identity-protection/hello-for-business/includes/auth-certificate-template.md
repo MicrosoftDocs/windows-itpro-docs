@@ -41,9 +41,9 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
 1. On the **Security** tab, select **Add**. Target an Active Directory security group that contains the users that you want to enroll in Windows Hello for Business. For example, if you have a group called *Window Hello for Business Users*, type it in the **Enter the object names to select** text box and select **OK**
 1. Select the **Windows Hello for Business Users** from the **Group or users names** list. In the **Permissions for Windows Hello for Business Users** section:
    - Select the **Allow** check box for the **Enroll** permission
-   - Excluding the group above (e.g. *Window Hello for Business Users*), clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared
+   - Excluding the group above (for example, *Window Hello for Business Users*), clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes aren't already cleared
    - Select **OK**
-1. If you previously issued Windows Hello for Business sign-in certificates using Configuration Manger and are switching to an AD FS registration authority, then on the **Superseded Templates** tab, add the previously used **Windows Hello for Business Authentication** template(s), so they will be superseded by this template for the users that have Enroll permission for this template
+1. If you previously issued Windows Hello for Business sign-in certificates using Configuration Manger and are switching to an AD FS registration authority, then on the **Superseded Templates** tab, add the previously used **Windows Hello for Business Authentication** template(s), so they'll be superseded by this template for the users that have Enroll permission for this template
 1. Select on the **Apply** to save changes and close the console
 
 #### Mark the template as the Windows Hello Sign-in template
