@@ -194,7 +194,6 @@ If users try to select a Control Panel item from the Properties item on a contex
 
 <!-- NoControlPanel-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Available in the latest Windows 10 Insider Preview Build. 
 <!-- NoControlPanel-Editable-End -->
 
 <!-- NoControlPanel-DFProperties-Begin -->

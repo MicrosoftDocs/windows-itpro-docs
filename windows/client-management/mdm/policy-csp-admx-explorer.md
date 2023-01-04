@@ -170,7 +170,6 @@ Note: When the menu bar is not displayed, users can access the menu bar by press
 
 <!-- AlwaysShowClassicMenu-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Available in the latest Windows 10 Insider Preview Build.
 <!-- AlwaysShowClassicMenu-Editable-End -->
 
 <!-- AlwaysShowClassicMenu-DFProperties-Begin -->

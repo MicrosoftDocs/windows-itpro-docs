@@ -1,251 +1,300 @@
 ---
-title: Policy CSP - ADMX_TouchInput
-description: Learn about Policy CSP - ADMX_TouchInput.
+title: ADMX_TouchInput Policy CSP
+description: Learn more about the ADMX_TouchInput Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
+ms.date: 01/03/2023
 ms.localizationpriority: medium
-ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 09/23/2020
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_TouchInput-Begin -->
 # Policy CSP - ADMX_TouchInput
 
-<hr/>
-
-<!--Policies-->
-## ADMX_TouchInput policies
-
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 >
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<dl>
-  <dd>
-    <a href="#admx-touchinput-touchinputoff_1">ADMX_TouchInput/TouchInputOff_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-touchinput-touchinputoff_2">ADMX_TouchInput/TouchInputOff_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-touchinput-panningeverywhereoff_1">ADMX_TouchInput/PanningEverywhereOff_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-touchinput-panningeverywhereoff_2">ADMX_TouchInput/PanningEverywhereOff_2</a>
-  </dd>
-</dl>
+<!-- ADMX_TouchInput-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_TouchInput-Editable-End -->
 
+<!-- PanningEverywhereOff_2-Begin -->
+## PanningEverywhereOff_2
 
-<hr/>
+<!-- PanningEverywhereOff_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PanningEverywhereOff_2-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-touchinput-touchinputoff_1"></a>**ADMX_TouchInput/TouchInputOff_1**
+<!-- PanningEverywhereOff_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_TouchInput/PanningEverywhereOff_2
+```
+<!-- PanningEverywhereOff_2-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- PanningEverywhereOff_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Turn off Panning
+Turns off touch panning, which allows users pan inside windows by touch. On a compatible PC with a touch digitizer, by default users are able to scroll or pan inside a scrolling area by dragging up or down directly on the scrolling content.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+If you enable this setting, the user will not be able to pan windows by touch.
 
-<!--/SupportedSKUs-->
-<hr/>
+If you disable this setting, the user can pan windows by touch.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+If you do not configure this setting, Touch Panning is on by default.
 
-> [!div class = "checklist"]
-> * User
+Note: Changes to this setting will not take effect until the user logs off.
+<!-- PanningEverywhereOff_2-Description-End -->
 
-<hr/>
+<!-- PanningEverywhereOff_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PanningEverywhereOff_2-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This setting turns off Tablet PC touch input Turns off touch input, which allows the user to interact with their computer using their finger.
+<!-- PanningEverywhereOff_2-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this setting, the user won't be able to produce input with touch. They won't be able to use touch input or touch gestures such as tap and double tap, the touch pointer, and other touch-specific features.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PanningEverywhereOff_2-DFProperties-End -->
+
+<!-- PanningEverywhereOff_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SingleFingerPanningOff |
+| Friendly Name | Turn off Touch Panning |
+| Location | Computer Configuration |
+| Path | WindowsComponents > Tablet PC > Touch Input |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\TabletPC |
+| Registry Value Name | TurnOffPanning |
+| ADMX File Name | TouchInput.admx |
+<!-- PanningEverywhereOff_2-AdmxBacked-End -->
+
+<!-- PanningEverywhereOff_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PanningEverywhereOff_2-Examples-End -->
+
+<!-- PanningEverywhereOff_2-End -->
+
+<!-- TouchInputOff_2-Begin -->
+## TouchInputOff_2
+
+<!-- TouchInputOff_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TouchInputOff_2-Applicability-End -->
+
+<!-- TouchInputOff_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_TouchInput/TouchInputOff_2
+```
+<!-- TouchInputOff_2-OmaUri-End -->
+
+<!-- TouchInputOff_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Turn off Tablet PC touch input
+
+Turns off touch input, which allows the user to interact with their computer using their finger.
+
+If you enable this setting, the user will not be able to produce input with touch. They will not be able to use touch input or touch gestures such as tap and double tap, the touch pointer, and other touch-specific features.
 
 If you disable this setting, the user can produce input with touch, by using gestures, the touch pointer, and other-touch specific features.
 
-If you don't configure this setting, touch input is on by default.
+If you do not configure this setting, touch input is on by default.
 
->[!NOTE]
-> Changes to this setting won't take effect until the user signs out.
+Note: Changes to this setting will not take effect until the user logs off.
+<!-- TouchInputOff_2-Description-End -->
 
-<!--/Description-->
+<!-- TouchInputOff_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TouchInputOff_2-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off Tablet PC touch input*
--   GP name: *TouchInputOff_1*
--   GP path: *Windows Components\Tablet PC\Touch Input*
--   GP ADMX file name: *TouchInput.admx*
+<!-- TouchInputOff_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<!--Policy-->
-<a href="" id="admx-touchinput-touchinputoff_2"></a>**ADMX_TouchInput/TouchInputOff_2**
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TouchInputOff_2-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- TouchInputOff_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TouchInputOff |
+| Friendly Name | Turn off Tablet PC touch input |
+| Location | Computer Configuration |
+| Path | WindowsComponents > Tablet PC > Touch Input |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\TabletPC |
+| Registry Value Name | TurnOffTouchInput |
+| ADMX File Name | TouchInput.admx |
+<!-- TouchInputOff_2-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TouchInputOff_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TouchInputOff_2-Examples-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TouchInputOff_2-End -->
 
-<hr/>
+<!-- PanningEverywhereOff_1-Begin -->
+## PanningEverywhereOff_1
 
-<!--/Scope-->
-<!--Description-->
-This setting turns off Tablet PC touch input Turns off touch input, which allows the user to interact with their computer using their finger.
+<!-- PanningEverywhereOff_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PanningEverywhereOff_1-Applicability-End -->
 
-If you enable this setting, the user won't be able to produce input with touch. They won't be able to use touch input or touch gestures such as tap and double tap, the touch pointer, and other touch-specific features.
+<!-- PanningEverywhereOff_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TouchInput/PanningEverywhereOff_1
+```
+<!-- PanningEverywhereOff_1-OmaUri-End -->
+
+<!-- PanningEverywhereOff_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Turn off Panning
+Turns off touch panning, which allows users pan inside windows by touch. On a compatible PC with a touch digitizer, by default users are able to scroll or pan inside a scrolling area by dragging up or down directly on the scrolling content.
+
+If you enable this setting, the user will not be able to pan windows by touch.
+
+If you disable this setting, the user can pan windows by touch.
+
+If you do not configure this setting, Touch Panning is on by default.
+
+Note: Changes to this setting will not take effect until the user logs off.
+<!-- PanningEverywhereOff_1-Description-End -->
+
+<!-- PanningEverywhereOff_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PanningEverywhereOff_1-Editable-End -->
+
+<!-- PanningEverywhereOff_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PanningEverywhereOff_1-DFProperties-End -->
+
+<!-- PanningEverywhereOff_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SingleFingerPanningOff |
+| Friendly Name | Turn off Touch Panning |
+| Location | User Configuration |
+| Path | WindowsComponents > Tablet PC > Touch Input |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\TabletPC |
+| Registry Value Name | TurnOffPanning |
+| ADMX File Name | TouchInput.admx |
+<!-- PanningEverywhereOff_1-AdmxBacked-End -->
+
+<!-- PanningEverywhereOff_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PanningEverywhereOff_1-Examples-End -->
+
+<!-- PanningEverywhereOff_1-End -->
+
+<!-- TouchInputOff_1-Begin -->
+## TouchInputOff_1
+
+<!-- TouchInputOff_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TouchInputOff_1-Applicability-End -->
+
+<!-- TouchInputOff_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TouchInput/TouchInputOff_1
+```
+<!-- TouchInputOff_1-OmaUri-End -->
+
+<!-- TouchInputOff_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Turn off Tablet PC touch input
+
+Turns off touch input, which allows the user to interact with their computer using their finger.
+
+If you enable this setting, the user will not be able to produce input with touch. They will not be able to use touch input or touch gestures such as tap and double tap, the touch pointer, and other touch-specific features.
 
 If you disable this setting, the user can produce input with touch, by using gestures, the touch pointer, and other-touch specific features.
 
-If you don't configure this setting, touch input is on by default.
+If you do not configure this setting, touch input is on by default.
 
->[!NOTE]
->Changes to this setting won't take effect until the user signs out.
+Note: Changes to this setting will not take effect until the user logs off.
+<!-- TouchInputOff_1-Description-End -->
 
-<!--/Description-->
+<!-- TouchInputOff_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TouchInputOff_1-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off Tablet PC touch input*
--   GP name: *TouchInputOff_2*
--   GP path: *Windows Components\Tablet PC\Touch Input*
--   GP ADMX file name: *TouchInput.admx*
+<!-- TouchInputOff_1-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TouchInputOff_1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- TouchInputOff_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<!--Policy-->
-<a href="" id="admx-touchinput-panningeverywhereoff_1"></a>**ADMX_TouchInput/PanningEverywhereOff_1**
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | TouchInputOff |
+| Friendly Name | Turn off Tablet PC touch input |
+| Location | User Configuration |
+| Path | WindowsComponents > Tablet PC > Touch Input |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\TabletPC |
+| Registry Value Name | TurnOffTouchInput |
+| ADMX File Name | TouchInput.admx |
+<!-- TouchInputOff_1-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- TouchInputOff_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TouchInputOff_1-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TouchInputOff_1-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ADMX_TouchInput-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_TouchInput-CspMoreInfo-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ADMX_TouchInput-End -->
 
-<hr/>
+## Related articles
 
-<!--/Scope-->
-<!--Description-->
-This setting turns off touch panning, which allows users pan inside windows by touch. On a compatible PC with a touch digitizer, by default users are able to scroll or pan inside a scrolling area by dragging up or down directly on the scrolling content.
-
-If you enable this setting, the user won't be able to pan windows by touch.
-
-If you disable this setting, the user can pan windows by touch. If you don't configure this setting, Touch Panning is on by default.
-
-> [!NOTE]
-> Changes to this setting won't take effect until the user logs off.
-
-<!--/Description-->
-
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off Touch Panning*
--   GP name: *PanningEverywhereOff_1*
--   GP path: *Windows Components\Tablet PC\Touch Input*
--   GP ADMX file name: *TouchInput.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<a href="" id="admx-touchinput-panningeverywhereoff_2"></a>**ADMX_TouchInput/PanningEverywhereOff_2**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This setting turns off touch panning, which allows users pan inside windows by touch. On a compatible PC with a touch digitizer, by default users are able to scroll or pan inside a scrolling area by dragging up or down directly on the scrolling content.
-
-If you enable this setting, the user won't be able to pan windows by touch.
-
-If you disable this setting, the user can pan windows by touch. If you don't configure this setting, Touch Panning is on by default.
-
-> [!NOTE]
-> Changes to this setting won't take effect until the user logs off.
-
-<!--/Description-->
-
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off Touch Panning*
--   GP name: *PanningEverywhereOff_2*
--   GP path: *Windows Components\Tablet PC\Touch Input*
--   GP ADMX file name: *TouchInput.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-
-<!--/Policies-->
-
-
-## Related topics
-
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+[Policy configuration service provider](policy-configuration-service-provider.md)

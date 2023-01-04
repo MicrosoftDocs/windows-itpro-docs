@@ -98,7 +98,6 @@ If you disable this setting, the system will need to be unlocked for the user to
 
 <!-- AllowCortanaAboveLock-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Added in Windows 10, version 1607.
 <!-- AllowCortanaAboveLock-Editable-End -->
 
 <!-- AllowCortanaAboveLock-DFProperties-Begin -->
