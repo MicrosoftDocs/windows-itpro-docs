@@ -69,12 +69,14 @@ To configure Windows Hello for Business using an *account protection* policy:
 ## Configure Windows Hello for Business using group policies
 
 For hybrid Azure AD joined devices, you can use group policies to configure Windows Hello for Business.
-It's suggested to create a security group (for example, *Windows Hello for Business Users*) to make it easy to deploy Windows Hello for Business in phases. You assign Group Policy permissions to this group to simplify the deployment by adding the users to the group.
+It's suggested to create a security group (for example, *Windows Hello for Business Users*) to make it easy to deploy Windows Hello for Business in phases. You assign **Group Policy permissions** to this group to simplify the deployment by adding the users to the group.
 
 The Windows Hello for Business Group Policy object delivers the correct Group Policy settings to the user, which enables them to enroll and use Windows Hello for Business to authenticate to Azure and Active Directory
 
 > [!NOTE]
 > If you deployed Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](./hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources)
+
+### Enable Windows Hello for Business group policy setting
 
 The *Enable Windows Hello for Business* group policy setting is the configuration needed for Windows to determine if a user should attempt to enroll for Windows Hello for Business. A user will only attempt enrollment if this policy setting is configured to **enabled**.\
 You can configure the *Enable Windows Hello for Business* setting for computer or users:
@@ -135,7 +137,7 @@ The Windows Hello for Business provisioning process begins immediately after the
 You can determine the status of the prerequisite checks by viewing the **User Device Registration** admin log under **Applications and Services Logs > Microsoft > Windows**.\
 This information is also available using the `dsregcmd /status` command from a console. For more information, see [dsregcmd][AZ-4].
 
-:::image type="content" source="images/Event358.png" alt-text="Details about event ID 358 showing that the device is ready to enroll in in Windows Hello for Business." border="false" lightbox="images/Event358.png"::::::
+:::image type="content" source="images/Event358.png" alt-text="Details about event ID 358 showing that the device is ready to enroll in in Windows Hello for Business." border="false" lightbox="images/Event358.png":::
 
 ### PIN Setup
 
