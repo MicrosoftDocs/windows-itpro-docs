@@ -19,6 +19,7 @@ ms.topic: conceptual
 # Security Options
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Provides an introduction to the **Security Options** settings for local security policies and links to more information.

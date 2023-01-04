@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Accounts: Limit local account use of blank passwords to console logon only
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Accounts: Limit local account use of blank passwords to console logon only** security policy setting.
