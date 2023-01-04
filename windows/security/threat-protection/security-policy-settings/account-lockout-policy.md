@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Account Lockout Policy
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the Account Lockout Policy settings and links to information about each policy setting.

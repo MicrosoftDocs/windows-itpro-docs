@@ -2,23 +2,19 @@
 metadata:
   title: Microsoft Connected Cache Frequently Asked Questions
   description: The following article is a list of frequently asked questions for Microsoft Connected Cache.
-  ms.sitesec: library
-  ms.pagetype: security
-  ms.localizationpriority: medium
   author: amymzhou
   ms.author: amymzhou
   manager: aaroncz
   ms.collection:
-    - M365-security-compliance
     - highpri
   ms.topic: faq
   ms.date: 09/30/2022
   ms.prod: windows-client
+  ms.technology: itpro-updates
 title: Microsoft Connected Cache Frequently Asked Questions
 summary: |
   **Applies to**
-  -   Windows 10
-  -   Windows 11
+  -   Windows 10 and later
   
 sections:
   - name: Ignored
@@ -32,12 +28,18 @@ sections:
       - question: What are the prerequisites and hardware requirements?
         answer: | 
          - Azure subscription  
-         - Hardware to host Microsoft Connected Cache:   
+         - Hardware to host Microsoft Connected Cache
+         - Ubuntu 20.04 LTS on a physical server or VM of your choice. 
+         
+         > [!NOTE]
+         > The Microsoft Connected Cache is deployed and managed using Azure IoT Edge and Ubuntu 20.04 is an [Azure IoT Edge Tier 1 operating system](/azure/iot-edge/support?view=iotedge-2020-11#tier-1). Additionally, the Microsoft Connected Cache module is optimized for Ubuntu 20.04 LTS. 
+         
+         The following are recommended hardware configurations:   
           
           <!--Using include file, mcc-prerequisites.md, for shared content on DO monitoring-->
           [!INCLUDE [Microsoft Connected Cache Prerequisites](includes/mcc-prerequisites.md)]
 
-         We have one customer who is able to achieve 40-Gbps egress rate using the following hardware specification:  
+         We have one customer who is able to achieve mid-30s Gbps egress rate using the following hardware specification:  
           - Dell PowerEdge R330  
           - 2 x Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40 GHz, total 32 core  
           - 48 GB, Micron Technology 18ASF1G72PDZ-2G1A1, Speed: 2133 MT/s  

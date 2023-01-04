@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Store passwords using reversible encryption
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Store passwords using reversible encryption** security policy setting.

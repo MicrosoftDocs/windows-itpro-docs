@@ -1,19 +1,13 @@
 ### YamlMime:FAQ
 metadata:
-  title: BitLocker To Go FAQ (Windows 10)
+  title: BitLocker To Go FAQ
   description: "Learn more about BitLocker To Go"
-  ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
   ms.prod: windows-client
   ms.technology: itpro-security
   ms.author: frankroj
-  ms.mktglfcycl: deploy
-  ms.sitesec: library
-  ms.pagetype: security
-  ms.localizationpriority: medium
   author: frankroj
   manager: aaroncz
   audience: ITPro
-  ms.collection: M365-security-compliance
   ms.topic: faq
   ms.date: 11/08/2022
   ms.custom: bitlocker

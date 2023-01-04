@@ -1,28 +1,21 @@
 ### YamlMime:FAQ
 metadata:
-  title: BitLocker Security FAQ (Windows 10)
+  title: BitLocker Security FAQ
   description: Learn more about how BitLocker security works. Browse frequently asked questions, such as, "What form of encryption does BitLocker use?"
-  ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
   ms.prod: windows-client
   ms.technology: itpro-security
-  ms.mktglfcycl: explore
-  ms.sitesec: library
-  ms.pagetype: security
-  ms.localizationpriority: medium
   author: frankroj
   ms.author: frankroj
   manager: aaroncz
   audience: ITPro
-  ms.collection: M365-security-compliance
   ms.topic: faq
   ms.date: 11/08/2022
   ms.custom: bitlocker
 title: BitLocker Security FAQ
 summary: |
   **Applies to:**
-  - Windows 10
-  - Windows 11
-  - Windows Server 2016 and above
+  - Windows 10 and later
+  - Windows Server 2016 and later
   
   
 
