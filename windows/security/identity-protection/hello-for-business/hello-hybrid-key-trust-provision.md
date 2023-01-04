@@ -17,17 +17,17 @@ After the prerequisites are met and the PKI configuration is validated, Windows 
 
 For Azure AD joined devices and hybrid Azure AD joined devices enrolled in Intune, you can use Intune policies to manage Windows Hello for Business.
 
-There are different ways to enable Windows Hello for Business via Intune:
+There are different ways to enable and configure Windows Hello for Business in Intune:
 
 - Using a policy applied at the tenant level. Note that this policy:
-  - is only applied at enrollment time, and any changes to its configuration won't apply to devices already enrolled in Intune
-  - it applies to *all devices* getting enrolled in Intune. For this reason, the policy is usually kept disabled and Windows Hello for Business is enabled using a policy targeted to a security group
-- A device configuration policy that is applied *after* device enrollment. Any changes to the policy will be applied to the devices during regular policy refresh. There are different policy types to chose from:
-  - settings catalog
-  - [security baselines](/mem/intune/protect/security-baselines)
-  - custom policy, via the PassportForWork CSP
-  - [account protection policy](/mem/intune/protect/endpoint-security-account-protection-policy)
-  - identity protection policy template
+  - Is only applied at enrollment time, and any changes to its configuration won't apply to devices already enrolled in Intune
+  - It applies to *all devices* getting enrolled in Intune. For this reason, the policy is usually kept disabled and Windows Hello for Business is enabled using a policy targeted to a security group
+- A device configuration policy that is applied *after* device enrollment. Any changes to the policy will be applied to the devices during regular policy refresh intervals. There are different policy types to chose from:
+  - [Settings catalog](/mem/intune/configuration/settings-catalog)
+  - [Security baselines](/mem/intune/protect/security-baselines)
+  - [Custom policy](/mem/intune/configuration/custom-settings-configure), via the [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)
+  - [Account protection policy](/mem/intune/protect/endpoint-security-account-protection-policy)
+  - [Identity protection policy template](/mem/intune/protect/identity-protection-configure)
 
 ### Verify the tenant-wide policy
 
@@ -40,23 +40,26 @@ To check the Windows Hello for Business policy applied at enrollment time:
 
 :::image type="content" source="images/whfb-intune-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Endpoint Manager admin center." border="true" lightbox="images/whfb-intune-disable.png":::
 
-If the tenant-wide policy is enabled, you can skip to [Provision Windows Hello for Business](#provision-windows-hello-for-business). Otherwise, follow the instructions below to create a policy.
+If the tenant-wide policy is enabled and configured to your needs, you can skip to [Provision Windows Hello for Business](#provision-windows-hello-for-business). Otherwise, follow the instructions below to create a policy using an *account protection* policy.
 
-### Enable Windows Hello for Business with a settings catalog policy
+### Enable and configure Windows Hello for Business
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Select **Devices** > **Windows** > **Configuration Profiles** > **Create profile**.
-1. For Platform, select **Windows 10 and later**.
-1. For Profile Type, select **Templates** and select the **Identity Protection** Template.
-1. Name the profile with a familiar name. For example, "Windows Hello for Business".
-1. In **Configurations settings**, set the **Configure Windows Hello for Business** option to **Enable**.
-1. After setting Configure Windows Hello for Business to Enable, multiple policy options become available. These policies are optional to configure. More information on these policies is available in our documentation on managing [Windows Hello for Business in your organization](hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business). We recommend setting **Use a Trusted Platform Module (TPM)** to **Enable**.
+1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+1. Select **Endpoint security** > **Account protection**
+1. Select **+ Create Policy**
+1. For *Platform**, select **Windows 10 and later** and for *Profile* select **Account protection**
+1. Select **Create**
+1. Specify a **Name** and, optionally, a **Description** > **Next**
+1. Under **Block Windows Hello for Business**, select **Disabled** and multiple policies become available
+  1. These policies are optional to configure, but it's recommended to configure **Enable to use a Trusted Platform Module (TPM)** to **Yes**
+  1. For more information about these policies, see [Windows Hello for Business in your organization](hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business)
+1. Select **Next**
+1. Optionally, add *scope tags* > **Next**
+1. Assign the policy to a security group that contains as members the devices or users that you want to configure > **Next**
+1. Review the policy configuration and select **Create**
+
 
     [![Intune custom device configuration policy creation](./images/hello-intune-enable.png)](./images/hello-intune-enable-large.png#lightbox)
-
-Assign the policy to a security group that contains as members the devices or users that you want to configure.
-
-Windows Hello for Business settings are also available in the settings catalog. For more information, see [Use the settings catalog to configure settings on Windows devices](/mem/intune/configuration/settings-catalog).
 
 ### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
