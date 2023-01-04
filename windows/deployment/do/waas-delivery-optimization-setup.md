@@ -92,8 +92,6 @@ To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimiza
 
 Many devices now come with large internal drives. You can set Delivery Optimization to take better advantage of this space (especially if you have large numbers of devices) by changing the minimum file size to cache. If you have more than 30 devices in your local network or group, change it from the default 50 MB to 10 MB. If you have more than 100 devices (and are running Windows 10, version 1803 or later), set this value to 1 MB.
 
-[//]: # (default of 50 aimed at consumer)
-
 To do this in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Minimum Peer Caching Content File Size** to 10 (if you have more than 30 devices) or 1 (if you have more than 100 devices).
 
 To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set [DOMinFileSizeToCache](/windows/client-management/mdm/policy-csp-deliveryoptimization#dominfilesizetocache) to 100 (if you have more than 30 devices) or 1 (if you have more than 100 devices).
