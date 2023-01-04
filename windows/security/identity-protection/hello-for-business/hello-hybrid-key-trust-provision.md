@@ -44,6 +44,8 @@ If the tenant-wide policy is enabled and configured to your needs, you can skip 
 
 ### Enable and configure Windows Hello for Business
 
+To configure Windows Hello for Business using an *account protection* policy:
+
 1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
 1. Select **Endpoint security** > **Account protection**
 1. Select **+ Create Policy**
@@ -51,79 +53,105 @@ If the tenant-wide policy is enabled and configured to your needs, you can skip 
 1. Select **Create**
 1. Specify a **Name** and, optionally, a **Description** > **Next**
 1. Under **Block Windows Hello for Business**, select **Disabled** and multiple policies become available
-  1. These policies are optional to configure, but it's recommended to configure **Enable to use a Trusted Platform Module (TPM)** to **Yes**
-  1. For more information about these policies, see [Windows Hello for Business in your organization](hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business)
+    - These policies are optional to configure, but it's recommended to configure **Enable to use a Trusted Platform Module (TPM)** to **Yes**
+    - For more information about these policies, see [TBD](tbd)
 1. Select **Next**
 1. Optionally, add *scope tags* > **Next**
 1. Assign the policy to a security group that contains as members the devices or users that you want to configure > **Next**
 1. Review the policy configuration and select **Create**
-
 
     [![Intune custom device configuration policy creation](./images/hello-intune-enable.png)](./images/hello-intune-enable-large.png#lightbox)
 
 ### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
 For hybrid Azure AD joined devices, you can use group policies to configure Windows Hello for Business.
+It is suggested to create a security group (for example, *Windows Hello for Business Users*) to make it easy to deploy Windows Hello for Business in phases. You assign Group Policy permissions to this group to simplify the deployment by adding the users to the group.
 
-#### Create the Windows Hello for Business Users Security Group
-
-The Windows Hello for Business Users group is used to make it easy to deploy Windows Hello for Business in phases. You assign Group Policy and Certificate template permissions to this group to simplify the deployment by simply adding the users to the group. This provides users with the proper permissions to provision Windows Hello for Business and to enroll in the Windows Hello for Business authentication certificate.
-
-Sign-in a domain controller or management workstation with *Domain Admin* equivalent credentials.
-
-1. Open **Active Directory Users and Computers**.
-2. Click **View** and click **Advanced Features**.
-3. Expand the domain node from the navigation pane.
-4. Right-click the **Users** container. Click **New**. Click **Group**.
-5. Type **Windows Hello for Business Users** in the **Group Name** text box.
-6. Click **OK**.
-
-#### Windows Hello for Business Group Policy
+### Windows Hello for Business Group Policy
 
 The Windows Hello for Business Group Policy object delivers the correct Group Policy settings to the user, which enables them to enroll and use Windows Hello for Business to authenticate to Azure and Active Directory
 
 > [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more details about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune](/mem/intune/protect/identity-protection-windows-settings) and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp). For more details about policy conflicts, see [Policy conflicts from multiple policy sources](./hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources)
+> If you deployed Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more details about policy conflicts, see [Policy conflicts from multiple policy sources](./hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources)
 
-#### Enable Windows Hello for Business
+The *Enable Windows Hello for Business* group policy setting is the configuration needed for Windows to determine if a user should attempt to enroll for Windows Hello for Business. A user will only attempt enrollment if this policy setting is configured to enabled.\
+You can configure the *Enable Windows Hello for Business* setting for computer or users:
 
-The Enable Windows Hello for Business Group Policy setting is the configuration needed for Windows to determine if a user should attempt to enroll for Windows Hello for Business.  A user will only attempt enrollment if this policy setting is configured to enabled.  
+- Deploying this policy setting to computers (or group of computers) results in all users that sign-in that computer to attempt a Windows Hello for Business enrollment
+- Deploying this policy setting to a user (or group of users), results in only that user attempting a Windows Hello for Business enrollment
 
-You can configure the Enable Windows Hello for Business Group Policy setting for computer or users. Deploying this policy setting to computers results in ALL users that sign-in that computer to attempt a Windows Hello for Business enrollment. Deploying this policy setting to a user results in only that user attempting a Windows Hello for Business enrollment.  Additionally, you can deploy the policy setting to a group of users so only those users attempt a Windows Hello for Business enrollment. If both user and computer policy settings are deployed, the user policy setting has precedence.
+If both user and computer policy settings are deployed, the user policy setting has precedence.
 
-#### Create the Windows Hello for Business Group Policy object
+### Enable and configure Windows Hello for Business
 
-The Group Policy object contains the policy setting needed to trigger Windows Hello for Business provisioning.
-
-Sign-in a domain controller or management workstations with _Domain Admin_ equivalent credentials.
+Sign-in a domain controller or management workstations with *Domain Admin* equivalent credentials.
 
 1. Start the **Group Policy Management Console** (gpmc.msc)
-2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
-3. Right-click **Group Policy object** and select **New**.
-4. Type *Enable Windows Hello for Business* in the name box and click **OK**.
-5. In the content pane, right-click the **Enable Windows Hello for Business** Group Policy object and click **Edit**.
-6. In the navigation pane, expand **Policies** under **User Configuration**.
-7. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**.
-8. In the content pane, double-click **Use Windows Hello for Business**. Click **Enable** and click **OK**. Close the **Group Policy Management Editor**.
+1. Expand the domain and select the **Group Policy Object** node in the navigation pane
+1. Right-click **Group Policy object** and select **New**
+1. Type *Enable Windows Hello for Business* in the name box and select **OK**
+1. In the content pane, right-click the **Enable Windows Hello for Business** group policy object and select **Edit**
+1. In the navigation pane, expand **Policies** under **User Configuration**
+1. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**
+1. In the content pane, open **Use Windows Hello for Business**. Select **Enable > OK**
+1. Close the **Group Policy Management Editor**
 
-#### Configure Security in the Windows Hello for Business Group Policy object
+### Configure security for GPO
 
-The best way to deploy the Windows Hello for Business Group Policy object is to use security group filtering. The enables you to easily manage the users that should receive Windows Hello for Business by simply adding them to a group. This enables you to deploy Windows Hello for Business in phases.
+The best way to deploy the Windows Hello for Business GPO is to use security group filtering. Only members of the targeted security group will provision Windows Hello for Business, enabling a phased rollout.
+
 1. Start the **Group Policy Management Console** (gpmc.msc)
-2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
-3. Double-click the **Enable Windows Hello for Business** Group Policy object.
-4. In the **Security Filtering** section of the content pane, click **Add**.  Type *Windows Hello for Business Users* or the name of the security group you previously created and click **OK**.
-5. Click the **Delegation** tab. Select **Authenticated Users** and click **Advanced**.
-6. In the **Group or User names** list, select **Authenticated Users**.  In the **Permissions for Authenticated Users** list, clear the **Allow** check box for the **Apply Group Policy** permission. Click **OK**.
+1. Expand the domain and select the **Group Policy Object** node in the navigation pane
+1. Open the **Enable Windows Hello for Business** GPO
+1. In the **Security Filtering** section of the content pane, select **Add**.  Type the name of the security group you previously created (for example, *Windows Hello for Business Users*) and select **OK**
+1. Select the **Delegation** tab. Select **Authenticated Users > Advanced**
+1. In the **Group or User names** list, select **Authenticated Users**.  In the **Permissions for Authenticated Users** list, clear the **Allow** check box for the **Apply Group Policy** permission. Select **OK**
 
-#### Deploy the Windows Hello for Business Group Policy object
+### Deploy the Windows Hello for Business Group Policy object
 
-The application of the Windows Hello for Business Group Policy object uses security group filtering.  This enables you to link the Group Policy object at the domain, ensuring the Group Policy object is within scope to all users. However, the security group filtering ensures only the users included in the *Windows Hello for Business Users* global group receive and apply the Group Policy object, which results in the provisioning of Windows Hello for Business.
+The application of the Windows Hello for Business Group Policy object uses security group filtering. This enables you to link the Group Policy object at the domain, ensuring the Group Policy object is within scope to all users. However, the security group filtering ensures only the members of the *Windows Hello for Business Users* global group receive and apply the Group Policy object, which results in the provisioning of Windows Hello for Business.
+
 1. Start the **Group Policy Management Console** (gpmc.msc)
-2. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and click **Link an existing GPO**
-3. In the **Select GPO** dialog box, select **Enable Windows Hello for Business** or the name of the Windows Hello for Business Group Policy object you previously created and click **OK**.
+1. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and select **Link an existing GPO**
+1. In the **Select GPO** dialog box, select *Enable Windows Hello for Business* or the name of the Windows Hello for Business Group Policy object you previously created and select **OK**
 
-Just to reassure, linking the **Windows Hello for Business** Group Policy object to the domain ensures the Group Policy object is in scope for all domain users. However, not all users will have the policy settings applied to them. Only users who are members of the Windows Hello for Business group receive the policy settings. All others users ignore the Group Policy object. 
+### Add members to the targeted group
+
+Users (or devices) must receive the Windows Hello for Business group policy settings and have the proper permission to provision  Windows Hello for Business. You can provide users with these settings and permissions by adding members to the *Windows Hello for Business Users* group. Users and groups who are not members of this group will not attempt to enroll for Windows Hello for Business.
+
+---
+
+## Provision Windows Hello for Business
+
+The Windows Hello for Business provisioning process begins immediately after the user profile is loaded and before the user receives their desktop. For the provisioning process to begin, all prerequisite checks must pass.
+
+You can determine the status of the prerequisite checks by viewing the **User Device Registration** admin log under **Applications and Services Logs > Microsoft > **Windows**.\
+This information is also available using the `dsregcmd /status` command from a console. For more information, see [dsregcmd][AZ-4].
+
+![Event358.](images/Event358-2.png)
+
+### PIN Setup
+
+This is the process that occurs after a user signs in, to enroll in Windows Hello for Business:
+
+1. The user is prompted with a full screen page to use Windows Hello with the organization account. The user selects **OK**
+1. The provisioning flow proceeds to the multi-factor authentication portion of the enrollment. Provisioning informs the user that it's actively attempting to contact the user through their configured form of MFA. The provisioning process doesn't proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry
+1. After a successful MFA, the provisioning flow asks the user to create and validate a PIN. This PIN must observe any PIN complexity policies configured on the device
+1. The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key. When key registration completes, Windows Hello for Business provisioning informs the user they can use their PIN to sign-in. The user may close the provisioning application and see their desktop. While the user has completed provisioning, Azure AD Connect synchronizes the user's key to Active Directory
+
+:::image type="content" source="images/haadj-whfb-pin-provisioning.gif" alt-text="Animation showing a user logging on to an HAADJ device with a password, and being prompted to enroll in Windows Hello for Business.":::
+
+> [!IMPORTANT]
+> The minimum time needed to synchronize the user's public key from Azure Active Directory to the on-premises Active Directory is 30 minutes. The Azure AD Connect scheduler controls the synchronization interval.
+> **This synchronization latency delays the user's ability to authenticate and use on-premises resources until the user's public key has synchronized to Active Directory.** Once synchronized, the user can authenticate and use on-premises resources.
+> Read [Azure AD Connect sync: Scheduler][AZ-5] to view and adjust the **synchronization cycle** for your organization.
+
+<!--links-->
+[AZ-5]: /azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler
+
+
+<!---
+
 
 #### Other Related Group Policy settings
 
@@ -161,37 +189,4 @@ Windows provides eight PIN Complexity Group Policy settings that give you granul
 * History
 * Require special characters
 * Require uppercase letters
-
-## Add users to the Windows Hello for Business Users group
-
-Users must receive the Windows Hello for Business group policy settings and have the proper permission to provision  Windows Hello for Business. You can provide users with these settings and permissions by adding the users or groups to the **Windows Hello for Business Users** group.   Users and groups who are not members of this group will not attempt to enroll for Windows Hello for Business.
-
----
-
-## Provision Windows Hello for Business
-
-The Windows Hello for Business provisioning process begins immediately after the user profile is loaded and before the user receives their desktop. For the provisioning process to begin, all prerequisite checks must pass.
-
-You can determine the status of the prerequisite checks by viewing the **User Device Registration** admin log under **Applications and Services Logs > Microsoft > **Windows**.\
-This information is also available using the `dsregcmd /status` command from a console. For more information, see [dsregcmd][AZ-4].
-
-![Event358.](images/Event358-2.png)
-
-### PIN Setup
-
-This is the process that occurs after a user signs in, to enroll in Windows Hello for Business:
-
-1. The user is prompted with a full screen page to use Windows Hello with the organization account. The user selects **OK**
-1. The provisioning flow proceeds to the multi-factor authentication portion of the enrollment. Provisioning informs the user that it's actively attempting to contact the user through their configured form of MFA. The provisioning process doesn't proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry
-1. After a successful MFA, the provisioning flow asks the user to create and validate a PIN. This PIN must observe any PIN complexity policies configured on the device
-1. The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key. When key registration completes, Windows Hello for Business provisioning informs the user they can use their PIN to sign-in. The user may close the provisioning application and see their desktop. While the user has completed provisioning, Azure AD Connect synchronizes the user's key to Active Directory
-
-:::image type="content" source="images/haadj-whfb-pin-provisioning.gif" alt-text="Animation showing a user logging on to an HAADJ device with a password, and being prompted to enroll in Windows Hello for Business.":::
-
-> [!IMPORTANT]
-> The minimum time needed to synchronize the user's public key from Azure Active Directory to the on-premises Active Directory is 30 minutes. The Azure AD Connect scheduler controls the synchronization interval.
-> **This synchronization latency delays the user's ability to authenticate and use on-premises resources until the user's public key has synchronized to Active Directory.** Once synchronized, the user can authenticate and use on-premises resources.
-> Read [Azure AD Connect sync: Scheduler][AZ-5] to view and adjust the **synchronization cycle** for your organization.
-
-<!--links-->
-[AZ-5]: /azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler
+--->
