@@ -1,260 +1,290 @@
 ---
-title: Policy CSP - ADMX_ShellCommandPromptRegEditTools
-description: Learn about Policy CSP - ADMX_ShellCommandPromptRegEditTools.
+title: ADMX_ShellCommandPromptRegEditTools Policy CSP
+description: Learn more about the ADMX_ShellCommandPromptRegEditTools Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
+ms.date: 01/05/2023
 ms.localizationpriority: medium
-ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 09/18/2020
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_ShellCommandPromptRegEditTools-Begin -->
 # Policy CSP - ADMX_ShellCommandPromptRegEditTools
 
-<hr/>
-
-<!--Policies-->
-## ADMX_ShellCommandPromptRegEditTools policies
-
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 >
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<dl>
-  <dd>
-    <a href="#admx-shellcommandpromptregedittools-disallowapps">ADMX_ShellCommandPromptRegEditTools/DisallowApps</a>
-  </dd>
-  <dd>
-    <a href="#admx-shellcommandpromptregedittools-disableregedit">ADMX_ShellCommandPromptRegEditTools/DisableRegedit</a>
-  </dd>
-  <dd>
-    <a href="#admx-shellcommandpromptregedittools-disablecmd">ADMX_ShellCommandPromptRegEditTools/DisableCMD</a>
-  </dd>
-  <dd>
-    <a href="#admx-shellcommandpromptregedittools-restrictapps">ADMX_ShellCommandPromptRegEditTools/RestrictApps</a>
-  </dd>
-</dl>
+<!-- ADMX_ShellCommandPromptRegEditTools-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_ShellCommandPromptRegEditTools-Editable-End -->
 
+<!-- DisableCMD-Begin -->
+## DisableCMD
 
-<hr/>
+<!-- DisableCMD-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableCMD-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-shellcommandpromptregedittools-disallowapps"></a>**ADMX_ShellCommandPromptRegEditTools/DisallowApps**
+<!-- DisableCMD-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_ShellCommandPromptRegEditTools/DisableCMD
+```
+<!-- DisableCMD-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- DisableCMD-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents users from running the interactive command prompt, Cmd.exe. This policy setting also determines whether batch files (.cmd and .bat) can run on the computer.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+If you enable this policy setting and the user tries to open a command window, the system displays a message explaining that a setting prevents the action.
 
-<!--/SupportedSKUs-->
-<hr/>
+If you disable this policy setting or do not configure it, users can run Cmd.exe and batch files normally.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Note: Do not prevent the computer from running batch files if the computer uses logon, logoff, startup, or shutdown batch file scripts, or for users that use Remote Desktop Services.
+<!-- DisableCMD-Description-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableCMD-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableCMD-Editable-End -->
 
-<hr/>
+<!-- DisableCMD-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting prevents users from running the interactive command prompt `Cmd.exe`.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableCMD-DFProperties-End -->
 
-This policy setting also determines whether batch files (.cmd and .bat) can run on the computer.
+<!-- DisableCMD-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-If you enable this policy setting and the user tries to open a command window, the system displays a message explaining that a setting prevents the action. .
+**ADMX mapping**:
 
-If you disable this policy setting or don't configure it, users can run Cmd.exe and batch files normally.
+| Name | Value |
+|:--|:--|
+| Name | DisableCMD |
+| Friendly Name | Prevent access to the command prompt |
+| Location | User Configuration |
+| Path | System |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| ADMX File Name | Shell-CommandPrompt-RegEditTools.admx |
+<!-- DisableCMD-AdmxBacked-End -->
 
-> [!NOTE]
-> Don't prevent the computer from running batch files if the computer uses logon, logoff, startup, or shutdown batch file scripts, or for users that use Remote Desktop Services.
+<!-- DisableCMD-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableCMD-Examples-End -->
 
+<!-- DisableCMD-End -->
 
-<!--/Description-->
+<!-- DisableRegedit-Begin -->
+## DisableRegedit
 
+<!-- DisableRegedit-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableRegedit-Applicability-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Prevent access to the command prompt*
--   GP name: *DisallowApps*
--   GP path: *System*
--   GP ADMX file name: *ShellCommandPromptRegEditTools.admx*
+<!-- DisableRegedit-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_ShellCommandPromptRegEditTools/DisableRegedit
+```
+<!-- DisableRegedit-OmaUri-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableRegedit-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Disables the Windows registry editor Regedit.exe.
 
+If you enable this policy setting and the user tries to start Regedit.exe, a message appears explaining that a policy setting prevents the action.
 
-<!--Policy-->
-<a href="" id="admx-shellcommandpromptregedittools-disableregedit"></a>**ADMX_ShellCommandPromptRegEditTools/DisableRegedit**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting disables the Windows registry editor `Regedit.exe`.
-
-If you enable this policy setting and the user tries to start `Regedit.exe`, a message appears explaining that a policy setting prevents the action.
-
-If you disable this policy setting or don't configure it, users can run `Regedit.exe` normally.
+If you disable this policy setting or do not configure it, users can run Regedit.exe normally.
 
 To prevent users from using other administrative tools, use the "Run only specified Windows applications" policy setting.
+<!-- DisableRegedit-Description-End -->
 
-<!--/Description-->
+<!-- DisableRegedit-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableRegedit-Editable-End -->
 
+<!-- DisableRegedit-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Prevent access to registry editing tools*
--   GP name: *DisableRegedit*
--   GP path: *System\Server Manager*
--   GP ADMX file name: *ShellCommandPromptRegEditTools.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableRegedit-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableRegedit-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<!--Policy-->
-<a href="" id="admx-shellcommandpromptregedittools-disablecmd"></a>**ADMX_ShellCommandPromptRegEditTools/DisableCMD**
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableRegedit |
+| Friendly Name | Prevent access to registry editing tools |
+| Location | User Configuration |
+| Path | System |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| ADMX File Name | Shell-CommandPrompt-RegEditTools.admx |
+<!-- DisableRegedit-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableRegedit-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableRegedit-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableRegedit-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisallowApps-Begin -->
+## DisallowApps
 
-> [!div class = "checklist"]
-> * User
+<!-- DisallowApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisallowApps-Applicability-End -->
 
-<hr/>
+<!-- DisallowApps-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_ShellCommandPromptRegEditTools/DisallowApps
+```
+<!-- DisallowApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting limits the Windows programs that users have permission to run on the computer.
+<!-- DisallowApps-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents Windows from running the programs you specify in this policy setting.
+
+If you enable this policy setting, users cannot run programs that you add to the list of disallowed applications.
+
+If you disable this policy setting or do not configure it, users can run any programs.
+
+This policy setting only prevents users from running programs that are started by the File Explorer process. It does not prevent users from running programs, such as Task Manager, which are started by the system process or by other processes. Also, if users have access to the command prompt (Cmd.exe), this policy setting does not prevent them from starting programs in the command window even though they would be prevented from doing so using File Explorer.
+
+Note: Non-Microsoft applications with Windows 2000 or later certification are required to comply with this policy setting.
+Note: To create a list of allowed applications, click Show. In the Show Contents dialog box, in the Value column, type the application executable name (e.g., Winword.exe, Poledit.exe, Powerpnt.exe).
+<!-- DisallowApps-Description-End -->
+
+<!-- DisallowApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowApps-Editable-End -->
+
+<!-- DisallowApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisallowApps-DFProperties-End -->
+
+<!-- DisallowApps-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisallowApps |
+| Friendly Name | Don't run specified Windows applications |
+| Location | User Configuration |
+| Path | System |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | DisallowRun |
+| ADMX File Name | Shell-CommandPrompt-RegEditTools.admx |
+<!-- DisallowApps-AdmxBacked-End -->
+
+<!-- DisallowApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowApps-Examples-End -->
+
+<!-- DisallowApps-End -->
+
+<!-- RestrictApps-Begin -->
+## RestrictApps
+
+<!-- RestrictApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RestrictApps-Applicability-End -->
+
+<!-- RestrictApps-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_ShellCommandPromptRegEditTools/RestrictApps
+```
+<!-- RestrictApps-OmaUri-End -->
+
+<!-- RestrictApps-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Limits the Windows programs that users have permission to run on the computer.
 
 If you enable this policy setting, users can only run programs that you add to the list of allowed applications.
 
-If you disable this policy setting or don't configure it, users can run all applications.  This policy setting only prevents users from running programs that are started by the File Explorer process.
+If you disable this policy setting or do not configure it, users can run all applications.
 
-It doesn't prevent users from running programs such as Task Manager, which is started by the system process or by other processes.  Also, if users have access to the command prompt `Cmd.exe`, this policy setting doesn't prevent them from starting programs in the command window even though they would be prevented from doing so using File Explorer.
+This policy setting only prevents users from running programs that are started by the File Explorer process. It does not prevent users from running programs such as Task Manager, which are started by the system process or by other processes. Also, if users have access to the command prompt (Cmd.exe), this policy setting does not prevent them from starting programs in the command window even though they would be prevented from doing so using File Explorer.
 
-Non-Microsoft applications with Windows 2000 or later certification are required to comply with this policy setting.
+Note: Non-Microsoft applications with Windows 2000 or later certification are required to comply with this policy setting.
+Note: To create a list of allowed applications, click Show. In the Show Contents dialog box, in the Value column, type the application executable name (e.g., Winword.exe, Poledit.exe, Powerpnt.exe).
+<!-- RestrictApps-Description-End -->
 
-To create a list of allowed applications, click Show.  In the Show Contents dialog box, in the Value column, type the application executable name (for example, Winword.exe, Poledit.exe, Powerpnt.exe).
+<!-- RestrictApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RestrictApps-Editable-End -->
 
-<!--/Description-->
+<!-- RestrictApps-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RestrictApps-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Run only specified Windows applications*
--   GP name: *DisableCMD*
--   GP path: *System*
--   GP ADMX file name: *ShellCommandPromptRegEditTools.admx*
+<!-- RestrictApps-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-shellcommandpromptregedittools-restrictapps"></a>**ADMX_ShellCommandPromptRegEditTools/RestrictApps**
+| Name | Value |
+|:--|:--|
+| Name | RestrictApps |
+| Friendly Name | Run only specified Windows applications |
+| Location | User Configuration |
+| Path | System |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | RestrictRun |
+| ADMX File Name | Shell-CommandPrompt-RegEditTools.admx |
+<!-- RestrictApps-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- RestrictApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RestrictApps-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- RestrictApps-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ADMX_ShellCommandPromptRegEditTools-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_ShellCommandPromptRegEditTools-CspMoreInfo-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ADMX_ShellCommandPromptRegEditTools-End -->
 
-> [!div class = "checklist"]
-> * User
+## Related articles
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting prevents Windows from running the programs you specify in this policy setting.
-
-If you enable this policy setting, users can't run programs that you add to the list of disallowed applications.
-
-If you disable this policy setting or don't configure it, users can run any programs.
-
-This policy setting only prevents users from running programs that are started by the File Explorer process. It doesn't prevent users from running programs, such as Task Manager, which are started by the system process or by other processes.  Also, if users have access to the command prompt (Cmd.exe), this policy setting doesn't prevent them from starting programs in the command window even though they would be prevented from doing so using File Explorer.
-
-Non-Microsoft applications with Windows 2000 or later certification are required to comply with this policy setting.
-
-To create a list of allowed applications, click Show. In the Show Contents dialog box, in the Value column, type the application executable name (for example, Winword.exe, Poledit.exe, Powerpnt.exe).
-
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Don't run specified Windows applications*
--   GP name: *RestrictApps*
--   GP path: *System*
--   GP ADMX file name: *ShellCommandPromptRegEditTools.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-
-<!--/Policies-->
-
-## Related topics
-
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+[Policy configuration service provider](policy-configuration-service-provider.md)
