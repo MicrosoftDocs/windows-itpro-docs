@@ -4,7 +4,7 @@ description: Learn more about the ADMX_QOS Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/29/2022
+ms.date: 01/05/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -43,6 +43,7 @@ ms.topic: reference
 <!-- QosMaxOutstandingSends-OmaUri-End -->
 
 <!-- QosMaxOutstandingSends-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the maximum number of outstanding packets permitted on the system. When the number of outstanding packets reaches this limit, the Packet Scheduler postpones all submissions to network adapters until the number falls below this limit.
 
 "Outstanding packets" are packets that the Packet Scheduler has submitted to a network adapter for transmission, but which have not yet been sent.
@@ -68,6 +69,9 @@ Important: If the maximum number of outstanding packets is specified in the regi
 <!-- QosMaxOutstandingSends-DFProperties-End -->
 
 <!-- QosMaxOutstandingSends-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -102,6 +106,7 @@ Important: If the maximum number of outstanding packets is specified in the regi
 <!-- QosNonBestEffortLimit-OmaUri-End -->
 
 <!-- QosNonBestEffortLimit-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Determines the percentage of connection bandwidth that the system can reserve. This value limits the combined bandwidth reservations of all programs running on the system.
 
 By default, the Packet Scheduler limits the system to 80 percent of the bandwidth of a connection, but you can use this setting to override the default.
@@ -127,6 +132,9 @@ Important: If a bandwidth limit is set for a particular network adapter in the r
 <!-- QosNonBestEffortLimit-DFProperties-End -->
 
 <!-- QosNonBestEffortLimit-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -161,6 +169,7 @@ Important: If a bandwidth limit is set for a particular network adapter in the r
 <!-- QosServiceTypeBestEffort_C-OmaUri-End -->
 
 <!-- QosServiceTypeBestEffort_C-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Best Effort service type (ServiceTypeBestEffort). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that conform to the flow specification.
@@ -186,6 +195,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeBestEffort_C-DFProperties-End -->
 
 <!-- QosServiceTypeBestEffort_C-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -220,6 +232,7 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeBestEffort_NC-OmaUri-End -->
 
 <!-- QosServiceTypeBestEffort_NC-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Best Effort service type (ServiceTypeBestEffort). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that do not conform to the flow specification.
@@ -245,6 +258,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeBestEffort_NC-DFProperties-End -->
 
 <!-- QosServiceTypeBestEffort_NC-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -279,6 +295,7 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeBestEffort_PV-OmaUri-End -->
 
 <!-- QosServiceTypeBestEffort_PV-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate link layer (Layer-2) priority value for packets with the Best Effort service type (ServiceTypeBestEffort). The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
 
 If you enable this setting, you can change the default priority value associated with the Best Effort service type.
@@ -302,6 +319,9 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeBestEffort_PV-DFProperties-End -->
 
 <!-- QosServiceTypeBestEffort_PV-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -336,6 +356,7 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeControlledLoad_C-OmaUri-End -->
 
 <!-- QosServiceTypeControlledLoad_C-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Controlled Load service type (ServiceTypeControlledLoad). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that conform to the flow specification.
@@ -361,6 +382,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeControlledLoad_C-DFProperties-End -->
 
 <!-- QosServiceTypeControlledLoad_C-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -395,6 +419,7 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeControlledLoad_NC-OmaUri-End -->
 
 <!-- QosServiceTypeControlledLoad_NC-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Controlled Load service type (ServiceTypeControlledLoad). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that do not conform to the flow specification.
@@ -420,6 +445,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeControlledLoad_NC-DFProperties-End -->
 
 <!-- QosServiceTypeControlledLoad_NC-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -454,6 +482,7 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeControlledLoad_PV-OmaUri-End -->
 
 <!-- QosServiceTypeControlledLoad_PV-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate link layer (Layer-2) priority value for packets with the Controlled Load service type (ServiceTypeControlledLoad). The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
 
 If you enable this setting, you can change the default priority value associated with the Controlled Load service type.
@@ -477,6 +506,9 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeControlledLoad_PV-DFProperties-End -->
 
 <!-- QosServiceTypeControlledLoad_PV-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -511,6 +543,7 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeGuaranteed_C-OmaUri-End -->
 
 <!-- QosServiceTypeGuaranteed_C-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Guaranteed service type (ServiceTypeGuaranteed). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that conform to the flow specification.
@@ -536,6 +569,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeGuaranteed_C-DFProperties-End -->
 
 <!-- QosServiceTypeGuaranteed_C-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -570,6 +606,7 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeGuaranteed_NC-OmaUri-End -->
 
 <!-- QosServiceTypeGuaranteed_NC-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Guaranteed service type (ServiceTypeGuaranteed). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that do not conform to the flow specification.
@@ -595,6 +632,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeGuaranteed_NC-DFProperties-End -->
 
 <!-- QosServiceTypeGuaranteed_NC-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -629,6 +669,7 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeGuaranteed_PV-OmaUri-End -->
 
 <!-- QosServiceTypeGuaranteed_PV-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate link layer (Layer-2) priority value for packets with the Guaranteed service type (ServiceTypeGuaranteed). The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
 
 If you enable this setting, you can change the default priority value associated with the Guaranteed service type.
@@ -652,6 +693,9 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeGuaranteed_PV-DFProperties-End -->
 
 <!-- QosServiceTypeGuaranteed_PV-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -686,6 +730,7 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeNetworkControl_C-OmaUri-End -->
 
 <!-- QosServiceTypeNetworkControl_C-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Network Control service type (ServiceTypeNetworkControl). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that conform to the flow specification.
@@ -711,6 +756,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeNetworkControl_C-DFProperties-End -->
 
 <!-- QosServiceTypeNetworkControl_C-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -745,6 +793,7 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeNetworkControl_NC-OmaUri-End -->
 
 <!-- QosServiceTypeNetworkControl_NC-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Network Control service type (ServiceTypeNetworkControl). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that do not conform to the flow specification.
@@ -770,6 +819,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeNetworkControl_NC-DFProperties-End -->
 
 <!-- QosServiceTypeNetworkControl_NC-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -804,6 +856,7 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeNetworkControl_PV-OmaUri-End -->
 
 <!-- QosServiceTypeNetworkControl_PV-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate link layer (Layer-2) priority value for packets with the Network Control service type (ServiceTypeNetworkControl). The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
 
 If you enable this setting, you can change the default priority value associated with the Network Control service type.
@@ -827,6 +880,9 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeNetworkControl_PV-DFProperties-End -->
 
 <!-- QosServiceTypeNetworkControl_PV-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -861,6 +917,7 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeNonConforming-OmaUri-End -->
 
 <!-- QosServiceTypeNonConforming-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate link layer (Layer-2) priority value for packets that do not conform to the flow specification. The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
 
 If you enable this setting, you can change the default priority value associated with nonconforming packets.
@@ -884,6 +941,9 @@ Important: If the Layer-2 priority value for nonconforming packets is specified 
 <!-- QosServiceTypeNonConforming-DFProperties-End -->
 
 <!-- QosServiceTypeNonConforming-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -918,6 +978,7 @@ Important: If the Layer-2 priority value for nonconforming packets is specified 
 <!-- QosServiceTypeQualitative_C-OmaUri-End -->
 
 <!-- QosServiceTypeQualitative_C-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Qualitative service type (ServiceTypeQualitative). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that conform to the flow specification.
@@ -943,6 +1004,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeQualitative_C-DFProperties-End -->
 
 <!-- QosServiceTypeQualitative_C-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -977,6 +1041,7 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeQualitative_NC-OmaUri-End -->
 
 <!-- QosServiceTypeQualitative_NC-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Qualitative service type (ServiceTypeQualitative). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that do not conform to the flow specification.
@@ -1002,6 +1067,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeQualitative_NC-DFProperties-End -->
 
 <!-- QosServiceTypeQualitative_NC-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -1036,6 +1104,7 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeQualitative_PV-OmaUri-End -->
 
 <!-- QosServiceTypeQualitative_PV-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate link layer (Layer-2) priority value for packets with the Qualitative service type (ServiceTypeQualitative). The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
 
 If you enable this setting, you can change the default priority value associated with the Qualitative service type.
@@ -1059,6 +1128,9 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeQualitative_PV-DFProperties-End -->
 
 <!-- QosServiceTypeQualitative_PV-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -1093,6 +1165,7 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosTimerResolution-OmaUri-End -->
 
 <!-- QosTimerResolution-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Determines the smallest unit of time that the Packet Scheduler uses when scheduling packets for transmission. The Packet Scheduler cannot schedule packets for transmission more frequently than permitted by the value of this entry.
 
 If you enable this setting, you can override the default timer resolution established for the system, usually units of 10 microseconds.
@@ -1116,6 +1189,9 @@ Important: If a timer resolution is specified in the registry for a particular n
 <!-- QosTimerResolution-DFProperties-End -->
 
 <!-- QosTimerResolution-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
