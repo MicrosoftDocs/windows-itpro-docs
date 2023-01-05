@@ -1,252 +1,288 @@
 ---
-title: Policy CSP - ADMX_ServerManager
-description: Learn about Policy CSP - ADMX_ServerManager.
+title: ADMX_ServerManager Policy CSP
+description: Learn more about the ADMX_ServerManager Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
+ms.date: 01/05/2023
 ms.localizationpriority: medium
-ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 09/18/2020
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_ServerManager-Begin -->
 # Policy CSP - ADMX_ServerManager
 
-<hr/>
-
-<!--Policies-->
-## ADMX_ServerManager policies
-
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 >
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<dl>
-  <dd>
-    <a href="#admx-servermanager-do_not_display_manage_your_server_page">ADMX_ServerManager/Do_not_display_Manage_Your_Server_page</a>
-  </dd>
-  <dd>
-    <a href="#admx-servermanager-servermanagerautorefreshrate">ADMX_ServerManager/ServerManagerAutoRefreshRate</a>
-  </dd>
-  <dd>
-    <a href="#admx-servermanager-donotlaunchinitialconfigurationtasks">ADMX_ServerManager/DoNotLaunchInitialConfigurationTasks</a>
-  </dd>
-  <dd>
-    <a href="#admx-servermanager-donotlaunchservermanager">ADMX_ServerManager/DoNotLaunchServerManager</a>
-  </dd>
-</dl>
+<!-- ADMX_ServerManager-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_ServerManager-Editable-End -->
 
+<!-- Do_not_display_Manage_Your_Server_page-Begin -->
+## Do_not_display_Manage_Your_Server_page
 
-<hr/>
+<!-- Do_not_display_Manage_Your_Server_page-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Do_not_display_Manage_Your_Server_page-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-servermanager-do_not_display_manage_your_server_page"></a>**ADMX_ServerManager/Do_not_display_Manage_Your_Server_page**
+<!-- Do_not_display_Manage_Your_Server_page-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_ServerManager/Do_not_display_Manage_Your_Server_page
+```
+<!-- Do_not_display_Manage_Your_Server_page-OmaUri-End -->
 
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to turn off the automatic display of Server Manager at sign in.
-
-If you enable this policy setting, Server Manager isn't displayed automatically when a user signs in to the server.
-
-If you disable this policy setting, Server Manager is displayed automatically when a user signs in to the server.
-
-If you don't configure this policy setting, Server Manager is displayed when a user signs in to the server. However, if the "Do not show me this console at logon" (Windows Server 2008 and Windows Server 2008 R2) or “Do not start Server Manager automatically at logon” (Windows Server 2012) option is selected, the console isn't displayed automatically at a sign in.
-
-> [!NOTE]
-> Regardless of the status of this policy setting, Server Manager is available from the Start menu or the Windows taskbar.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Do not display Server Manager automatically at logon*
--   GP name: *Do_not_display_Manage_Your_Server_page*
--   GP path: *System\Server Manager*
--   GP ADMX file name: *ServerManager.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-
-<!--Policy-->
-<a href="" id="admx-servermanager-servermanagerautorefreshrate"></a>**ADMX_ServerManager/ServerManagerAutoRefreshRate**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to set the refresh interval for Server Manager. Each refresh provides Server Manager with updated information about which roles and features are installed on servers that you're managing by using Server Manager. Server Manager also monitors the status of roles and features installed on managed servers.
-
-- If you enable this policy setting, Server Manager uses the refresh interval specified in the policy setting instead of the “Configure Refresh Interval” setting (in Windows Server 2008 and Windows Server 2008 R2), or the “Refresh the data shown in Server Manager every [x] [minutes/hours/days]” setting (in Windows Server 2012) that is configured in the Server Manager console.
-
-- If you disable this policy setting, Server Manager doesn't refresh automatically. If you don't configure this policy setting, Server Manager uses the refresh interval settings that are specified in the Server Manager console.
-
-> [!NOTE]
-> The default refresh interval for Server Manager is two minutes in Windows Server 2008 and Windows Server 2008 R2, or 10 minutes in Windows Server 2012.
-
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Configure the refresh interval for Server Manager*
--   GP name: *ServerManagerAutoRefreshRate*
--   GP path: *System\Server Manager*
--   GP ADMX file name: *ServerManager.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-servermanager-donotlaunchinitialconfigurationtasks"></a>**ADMX_ServerManager/DoNotLaunchInitialConfigurationTasks**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to turn off the automatic display of the Initial Configuration Tasks window at a sign in on Windows Server 2008 and Windows Server 2008 R2.
-
-If you enable this policy setting, the Initial Configuration Tasks window isn't displayed when an administrator signs in to the server.
-
-If you disable this policy setting, the Initial Configuration Tasks window is displayed when an administrator signs in to the server.
-
-If you don't configure this policy setting, the Initial Configuration Tasks window is displayed when an administrator signs in to the server. However, if an administrator selects the "Do not show this window at logon" option, the window isn't displayed on subsequent logons.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Do not display Initial Configuration Tasks window automatically at logon*
--   GP name: *DoNotLaunchInitialConfigurationTasks*
--   GP path: *System\Server Manager*
--   GP ADMX file name: *ServerManager.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-servermanager-donotlaunchservermanager"></a>**ADMX_ServerManager/DoNotLaunchServerManager**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- Do_not_display_Manage_Your_Server_page-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to turn off the automatic display of the Manage Your Server page.
 
-- If you enable this policy setting, the Manage Your Server page isn't displayed each time an administrator signs in to the server.
+If you enable this policy setting, the Manage Your Server page is not displayed each time an administrator logs on to the server.
 
-- If you disable or don't configure this policy setting, the Manage Your Server page is displayed each time an administrator signs in to the server.
+If you disable or do not configure this policy setting, the Manage Your Server page is displayed each time an administrator logs on to the server. However, if the administrator has selected the "Don’t display this page at logon" option at the bottom of the Manage Your Server page, the page is not displayed.
+<!-- Do_not_display_Manage_Your_Server_page-Description-End -->
 
-However, if the administrator has selected the "Don’t display this page at logon" option at the bottom of the Manage Your Server page, the page isn't displayed.
+<!-- Do_not_display_Manage_Your_Server_page-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Regardless of the status of this policy setting, Server Manager is available from the Start menu or the Windows taskbar.
+<!-- Do_not_display_Manage_Your_Server_page-Editable-End -->
 
-<!--/Description-->
+<!-- Do_not_display_Manage_Your_Server_page-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Do_not_display_Manage_Your_Server_page-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Do not display Manage Your Server page at logon*
--   GP name: *DoNotLaunchServerManager*
--   GP path: *System\Server Manager*
--   GP ADMX file name: *ServerManager.admx*
+<!-- Do_not_display_Manage_Your_Server_page-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+**ADMX mapping**:
 
-<!--/Policies-->
+| Name | Value |
+|:--|:--|
+| Name | Do_not_display_Manage_Your_Server_page |
+| Friendly Name | Do not display Manage Your Server page at logon |
+| Location | Computer Configuration |
+| Path | System |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\CurrentVersion\MYS |
+| Registry Value Name | DisableShowAtLogon |
+| ADMX File Name | ServerManager.admx |
+<!-- Do_not_display_Manage_Your_Server_page-AdmxBacked-End -->
 
-## Related topics
+<!-- Do_not_display_Manage_Your_Server_page-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Do_not_display_Manage_Your_Server_page-Examples-End -->
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+<!-- Do_not_display_Manage_Your_Server_page-End -->
+
+<!-- DoNotLaunchInitialConfigurationTasks-Begin -->
+## DoNotLaunchInitialConfigurationTasks
+
+<!-- DoNotLaunchInitialConfigurationTasks-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DoNotLaunchInitialConfigurationTasks-Applicability-End -->
+
+<!-- DoNotLaunchInitialConfigurationTasks-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_ServerManager/DoNotLaunchInitialConfigurationTasks
+```
+<!-- DoNotLaunchInitialConfigurationTasks-OmaUri-End -->
+
+<!-- DoNotLaunchInitialConfigurationTasks-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to turn off the automatic display of the Initial Configuration Tasks window at logon on Windows Server 2008 and Windows Server 2008 R2.
+
+If you enable this policy setting, the Initial Configuration Tasks window is not displayed when an administrator logs on to the server.
+
+If you disable this policy setting, the Initial Configuration Tasks window is displayed when an administrator logs on to the server.
+
+If you do not configure this policy setting, the Initial Configuration Tasks window is displayed when an administrator logs on to the server. However, if an administrator selects the "Do not show this window at logon" option, the window is not displayed on subsequent logons.
+<!-- DoNotLaunchInitialConfigurationTasks-Description-End -->
+
+<!-- DoNotLaunchInitialConfigurationTasks-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DoNotLaunchInitialConfigurationTasks-Editable-End -->
+
+<!-- DoNotLaunchInitialConfigurationTasks-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DoNotLaunchInitialConfigurationTasks-DFProperties-End -->
+
+<!-- DoNotLaunchInitialConfigurationTasks-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DoNotLaunchInitialConfigurationTasks |
+| Friendly Name | Do not display Initial Configuration Tasks window automatically at logon |
+| Location | Computer Configuration |
+| Path | System > Server Manager |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Server\InitialConfigurationTasks |
+| Registry Value Name | DoNotOpenAtLogon |
+| ADMX File Name | ServerManager.admx |
+<!-- DoNotLaunchInitialConfigurationTasks-AdmxBacked-End -->
+
+<!-- DoNotLaunchInitialConfigurationTasks-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DoNotLaunchInitialConfigurationTasks-Examples-End -->
+
+<!-- DoNotLaunchInitialConfigurationTasks-End -->
+
+<!-- DoNotLaunchServerManager-Begin -->
+## DoNotLaunchServerManager
+
+<!-- DoNotLaunchServerManager-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DoNotLaunchServerManager-Applicability-End -->
+
+<!-- DoNotLaunchServerManager-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_ServerManager/DoNotLaunchServerManager
+```
+<!-- DoNotLaunchServerManager-OmaUri-End -->
+
+<!-- DoNotLaunchServerManager-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to turn off the automatic display of Server Manager at logon.
+
+If you enable this policy setting, Server Manager is not displayed automatically when a user logs on to the server.
+
+If you disable this policy setting, Server Manager is displayed automatically when a user logs on to the server.
+
+If you do not configure this policy setting, Server Manager is displayed when a user logs on to the server. However, if the "Do not show me this console at logon" (Windows Server 2008 and Windows Server 2008 R2) or “Do not start Server Manager automatically at logon” (Windows Server 2012) option is selected, the console is not displayed automatically at logon.
+
+Note: Regardless of the status of this policy setting, Server Manager is available from the Start menu or the Windows taskbar.
+<!-- DoNotLaunchServerManager-Description-End -->
+
+<!-- DoNotLaunchServerManager-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DoNotLaunchServerManager-Editable-End -->
+
+<!-- DoNotLaunchServerManager-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DoNotLaunchServerManager-DFProperties-End -->
+
+<!-- DoNotLaunchServerManager-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DoNotLaunchServerManager |
+| Friendly Name | Do not display Server Manager automatically at logon |
+| Location | Computer Configuration |
+| Path | System > Server Manager |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Server\ServerManager |
+| Registry Value Name | DoNotOpenAtLogon |
+| ADMX File Name | ServerManager.admx |
+<!-- DoNotLaunchServerManager-AdmxBacked-End -->
+
+<!-- DoNotLaunchServerManager-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DoNotLaunchServerManager-Examples-End -->
+
+<!-- DoNotLaunchServerManager-End -->
+
+<!-- ServerManagerAutoRefreshRate-Begin -->
+## ServerManagerAutoRefreshRate
+
+<!-- ServerManagerAutoRefreshRate-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ServerManagerAutoRefreshRate-Applicability-End -->
+
+<!-- ServerManagerAutoRefreshRate-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_ServerManager/ServerManagerAutoRefreshRate
+```
+<!-- ServerManagerAutoRefreshRate-OmaUri-End -->
+
+<!-- ServerManagerAutoRefreshRate-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to set the refresh interval for Server Manager. Each refresh provides Server Manager with updated information about which roles and features are installed on servers that you are managing by using Server Manager. Server Manager also monitors the status of roles and features installed on managed servers.
+
+If you enable this policy setting, Server Manager uses the refresh interval specified in the policy setting instead of the “Configure Refresh Interval” setting (in Windows Server 2008 and Windows Server 2008 R2), or the “Refresh the data shown in Server Manager every [x] [minutes/hours/days]” setting (in Windows Server 2012) that is configured in the Server Manager console.
+
+If you disable this policy setting, Server Manager does not refresh automatically. If you do not configure this policy setting, Server Manager uses the refresh interval settings that are specified in the Server Manager console.
+
+Note: The default refresh interval for Server Manager is two minutes in Windows Server 2008 and Windows Server 2008 R2, or 10 minutes in Windows Server 2012.
+<!-- ServerManagerAutoRefreshRate-Description-End -->
+
+<!-- ServerManagerAutoRefreshRate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ServerManagerAutoRefreshRate-Editable-End -->
+
+<!-- ServerManagerAutoRefreshRate-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ServerManagerAutoRefreshRate-DFProperties-End -->
+
+<!-- ServerManagerAutoRefreshRate-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ServerManagerAutoRefreshRate |
+| Friendly Name | Configure the refresh interval for Server Manager |
+| Location | Computer Configuration |
+| Path | System > Server Manager |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Server\ServerManager |
+| Registry Value Name | RefreshIntervalEnabled |
+| ADMX File Name | ServerManager.admx |
+<!-- ServerManagerAutoRefreshRate-AdmxBacked-End -->
+
+<!-- ServerManagerAutoRefreshRate-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ServerManagerAutoRefreshRate-Examples-End -->
+
+<!-- ServerManagerAutoRefreshRate-End -->
+
+<!-- ADMX_ServerManager-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_ServerManager-CspMoreInfo-End -->
+
+<!-- ADMX_ServerManager-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
