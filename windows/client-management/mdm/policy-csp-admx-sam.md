@@ -4,7 +4,7 @@ description: Learn more about the ADMX_sam Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/29/2022
+ms.date: 01/05/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -43,13 +43,14 @@ ms.topic: reference
 <!-- SamNGCKeyROCAValidation-OmaUri-End -->
 
 <!-- SamNGCKeyROCAValidation-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure how domain controllers handle Windows Hello for Business (WHfB) keys that are vulnerable to the "Return of Coppersmith's attack" (ROCA) vulnerability.
 
 For more information on the ROCA vulnerability, please see:
 
-https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15361
+<https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15361>
 
-https://en.wikipedia.org/wiki/ROCA_vulnerability
+<https://en.wikipedia.org/wiki/ROCA_vulnerability>
 
 If you enable this policy setting the following options are supported:
 
@@ -67,7 +68,7 @@ A reboot is not required for changes to this setting to take effect.
 
 Note: to avoid unexpected disruptions this setting should not be set to Block until appropriate mitigations have been performed, for example patching of vulnerable TPMs.
 
-More information is available at https://go.microsoft.com/fwlink/?linkid=2116430.
+More information is available at <https://go.microsoft.com/fwlink/?linkid=2116430>.
 <!-- SamNGCKeyROCAValidation-Description-End -->
 
 <!-- SamNGCKeyROCAValidation-Editable-Begin -->
@@ -84,6 +85,9 @@ More information is available at https://go.microsoft.com/fwlink/?linkid=2116430
 <!-- SamNGCKeyROCAValidation-DFProperties-End -->
 
 <!-- SamNGCKeyROCAValidation-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
 **ADMX mapping**:
 
 | Name | Value |
