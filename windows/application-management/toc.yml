@@ -20,7 +20,7 @@ items:
     - name: Remove background task resource restrictions
       href: enterprise-background-activity-controls.md
     - name: Enable or block Windows Mixed Reality apps in the enterprise
-      href: manage-windows-mixed-reality.md
+      href: /windows/mixed-reality/enthusiast-guide/manage-windows-mixed-reality
 - name: Application Virtualization (App-V)
   items: 
     - name: App-V for Windows overview

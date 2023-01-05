@@ -80,7 +80,7 @@ sections:
 
       - question: How does Windows Hello for Business work with Azure AD registered devices?
         answer: |
-          A user will be prompted to set up a Windows Hello for Business key on an Azure AD registered devices  if the feature is enabled by policy. If the user has an existing Windows Hello container, the Windows Hello for Business key will be enrolled in that container and will be protected using their exiting gestures.
+          A user will be prompted to set up a Windows Hello for Business key on an Azure AD registered devices  if the feature is enabled by policy. If the user has an existing Windows Hello container, the Windows Hello for Business key will be enrolled in that container and will be protected using their existing gestures.
 
           If a user has signed into their Azure AD registered device with Windows Hello, their Windows Hello for Business key will be used to authenticate the user's work identity when they try to use Azure AD resources. The Windows Hello for Business key meets Azure AD multi-factor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. 
 
