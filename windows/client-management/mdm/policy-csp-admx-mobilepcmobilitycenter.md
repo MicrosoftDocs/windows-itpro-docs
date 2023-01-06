@@ -1,140 +1,162 @@
 ---
-title: Policy CSP - ADMX_MobilePCMobilityCenter
-description: Learn about Policy CSP - ADMX_MobilePCMobilityCenter.
+title: ADMX_MobilePCMobilityCenter Policy CSP
+description: Learn more about the ADMX_MobilePCMobilityCenter Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
+ms.date: 01/06/2023
 ms.localizationpriority: medium
-ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 09/20/2021
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_MobilePCMobilityCenter-Begin -->
 # Policy CSP - ADMX_MobilePCMobilityCenter
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 >
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+<!-- ADMX_MobilePCMobilityCenter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_MobilePCMobilityCenter-Editable-End -->
 
-<!--Policies-->
-## ADMX_MobilePCMobilityCenter policies
+<!-- MobilityCenterEnable_2-Begin -->
+## MobilityCenterEnable_2
 
-<dl>
-  <dd>
-    <a href="#admx-mobilepcmobilitycenter-mobilitycenterenable_1">ADMX_MobilePCMobilityCenter/MobilityCenterEnable_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-mobilepcmobilitycenter-mobilitycenterenable_2">ADMX_MobilePCMobilityCenter/MobilityCenterEnable_2</a>
-  </dd>
-</dl>
+<!-- MobilityCenterEnable_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MobilityCenterEnable_2-Applicability-End -->
 
+<!-- MobilityCenterEnable_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_MobilePCMobilityCenter/MobilityCenterEnable_2
+```
+<!-- MobilityCenterEnable_2-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-mobilepcmobilitycenter-mobilitycenterenable_1"></a>**ADMX_MobilePCMobilityCenter/MobilityCenterEnable_1**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- MobilityCenterEnable_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting turns off Windows Mobility Center.
 
-- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file doesn't launch it.
-- If you disable this policy setting, the user is able to invoke Windows Mobility Center and the .exe file launches it.
+If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file does not launch it.
 
-If you don't configure this policy setting, Windows Mobility Center is on by default.
+If you disable this policy setting, the user is able to invoke Windows Mobility Center and the .exe file launches it.
 
-<!--/Description-->
+If you do not configure this policy setting, Windows Mobility Center is on by default.
+<!-- MobilityCenterEnable_2-Description-End -->
 
+<!-- MobilityCenterEnable_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MobilityCenterEnable_2-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off Windows Mobility Center*
--   GP name: *MobilityCenterEnable_1*
--   GP path: *Windows Components\Windows Mobility Center*
--   GP ADMX file name: *MobilePCMobilityCenter.admx*
+<!-- MobilityCenterEnable_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MobilityCenterEnable_2-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-mobilepcmobilitycenter-mobilitycenterenable_2"></a>**ADMX_MobilePCMobilityCenter/MobilityCenterEnable_2**
+<!-- MobilityCenterEnable_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | MobilityCenterEnable |
+| Friendly Name | Turn off Windows Mobility Center |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Mobility Center |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\MobilityCenter |
+| Registry Value Name | NoMobilityCenter |
+| ADMX File Name | MobilePCMobilityCenter.admx |
+<!-- MobilityCenterEnable_2-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MobilityCenterEnable_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MobilityCenterEnable_2-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MobilityCenterEnable_2-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- MobilityCenterEnable_1-Begin -->
+## MobilityCenterEnable_1
 
-<hr/>
+<!-- MobilityCenterEnable_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MobilityCenterEnable_1-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- MobilityCenterEnable_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_MobilePCMobilityCenter/MobilityCenterEnable_1
+```
+<!-- MobilityCenterEnable_1-OmaUri-End -->
+
+<!-- MobilityCenterEnable_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting turns off Windows Mobility Center.
 
-- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file doesn't launch it.
-- If you disable this policy setting, the user is able to invoke Windows Mobility Center and the .exe file launches it.
+If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file does not launch it.
 
-If you don't configure this policy setting, Windows Mobility Center is on by default.
+If you disable this policy setting, the user is able to invoke Windows Mobility Center and the .exe file launches it.
 
-<!--/Description-->
+If you do not configure this policy setting, Windows Mobility Center is on by default.
+<!-- MobilityCenterEnable_1-Description-End -->
 
+<!-- MobilityCenterEnable_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MobilityCenterEnable_1-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off Windows Mobility Center*
--   GP name: *MobilityCenterEnable_2*
--   GP path: *Windows Components\Windows Mobility Center*
--   GP ADMX file name: *MobilePCMobilityCenter.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MobilityCenterEnable_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Policies-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MobilityCenterEnable_1-DFProperties-End -->
 
-## Related topics
+<!-- MobilityCenterEnable_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | MobilityCenterEnable |
+| Friendly Name | Turn off Windows Mobility Center |
+| Location | User Configuration |
+| Path | Windows Components > Windows Mobility Center |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\MobilityCenter |
+| Registry Value Name | NoMobilityCenter |
+| ADMX File Name | MobilePCMobilityCenter.admx |
+<!-- MobilityCenterEnable_1-AdmxBacked-End -->
+
+<!-- MobilityCenterEnable_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MobilityCenterEnable_1-Examples-End -->
+
+<!-- MobilityCenterEnable_1-End -->
+
+<!-- ADMX_MobilePCMobilityCenter-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_MobilePCMobilityCenter-CspMoreInfo-End -->
+
+<!-- ADMX_MobilePCMobilityCenter-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
