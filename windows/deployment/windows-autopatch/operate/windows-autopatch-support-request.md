@@ -68,4 +68,15 @@ Once a support request is mitigated, it can no longer be edited. If a request ha
 
 Customers who need help with Microsoft 365 workloads can sign in to [Microsoft FastTrack](https://fasttrack.microsoft.com/) with a valid Azure ID and submit a Request for Assistance.
 
+## Premier and Unified support options
+
+As a customer with a **Premier** or **Unified** support contract, you can specify a severity for your issue, and schedule a support callback for a specific time and day. These options are available when you open or submit a new issue and when you edit an active support case.
+
+**Severity** - The options to specify the severity of an issue depend on your support contract:
+
+- *Premier*: Severity of A, B, or C
+- *Unified*: Critical, or non-critical
+
+Selecting either a severity **A** or **Critical** issue limits you to a phone support case, which provides the fastest option to get support.
+
  Contact your Microsoft account team if you need additional assistance.
