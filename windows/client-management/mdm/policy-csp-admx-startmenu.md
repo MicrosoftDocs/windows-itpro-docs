@@ -4,7 +4,7 @@ description: Learn more about the ADMX_StartMenu Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/04/2023
+ms.date: 01/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,544 +17,13 @@ ms.topic: reference
 # Policy CSP - ADMX_StartMenu
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!-- ADMX_StartMenu-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- ADMX_StartMenu-Editable-End -->
-
-<!-- HidePowerOptions-Begin -->
-## HidePowerOptions
-
-<!-- HidePowerOptions-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- HidePowerOptions-Applicability-End -->
-
-<!-- HidePowerOptions-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/HidePowerOptions
-```
-<!-- HidePowerOptions-OmaUri-End -->
-
-<!-- HidePowerOptions-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting prevents users from performing the following commands from the Windows security screen, the logon screen, and the Start menu: Shut Down, Restart, Sleep, and Hibernate. This policy setting does not prevent users from running Windows-based programs that perform these functions.
-
-If you enable this policy setting, the shutdown, restart, sleep, and hibernate commands are removed from the Start menu. The Power button is also removed from the Windows Security screen, which appears when you press CTRL+ALT+DELETE, and from the logon screen.
-
-If you disable or do not configure this policy setting, the Power button and the Shut Down, Restart, Sleep, and Hibernate commands are available on the Start menu. The Power button on the Windows Security and logon screens is also available.
-<!-- HidePowerOptions-Description-End -->
-
-<!-- HidePowerOptions-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- HidePowerOptions-Editable-End -->
-
-<!-- HidePowerOptions-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- HidePowerOptions-DFProperties-End -->
-
-<!-- HidePowerOptions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | HidePowerOptions |
-| Friendly Name | Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands |
-| Location | Computer Configuration |
-| Path | Start Menu and Taskbar |
-| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
-| Registry Value Name | HidePowerOptions |
-| ADMX File Name | StartMenu.admx |
-<!-- HidePowerOptions-AdmxBacked-End -->
-
-<!-- HidePowerOptions-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- HidePowerOptions-Examples-End -->
-
-<!-- HidePowerOptions-End -->
-
-<!-- NoChangeStartMenu-Begin -->
-## NoChangeStartMenu
-
-<!-- NoChangeStartMenu-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- NoChangeStartMenu-Applicability-End -->
-
-<!-- NoChangeStartMenu-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoChangeStartMenu
-```
-
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoChangeStartMenu
-```
-<!-- NoChangeStartMenu-OmaUri-End -->
-
-<!-- NoChangeStartMenu-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to prevent users from changing their Start screen layout.
-
-If you enable this setting, you will prevent a user from selecting an app, resizing a tile, pinning/unpinning a tile or a secondary tile, entering the customize mode and rearranging tiles within Start and Apps.
-
-If you disable or do not configure this setting, you will allow a user to select an app, resize a tile, pin/unpin a tile or a secondary tile, enter the customize mode and rearrange tiles within Start and Apps.
-<!-- NoChangeStartMenu-Description-End -->
-
-<!-- NoChangeStartMenu-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- NoChangeStartMenu-Editable-End -->
-
-<!-- NoChangeStartMenu-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- NoChangeStartMenu-DFProperties-End -->
-
-<!-- NoChangeStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | NoChangeStartMenu |
-| Friendly Name | Prevent users from customizing their Start Screen |
-| Location | User Configuration |
-| Path | Start Menu and Taskbar |
-| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
-| Registry Value Name | NoChangeStartMenu |
-| ADMX File Name | StartMenu.admx |
-<!-- NoChangeStartMenu-AdmxBacked-End -->
-
-<!-- NoChangeStartMenu-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- NoChangeStartMenu-Examples-End -->
-
-<!-- NoChangeStartMenu-End -->
-
-<!-- NoMoreProgramsList-Begin -->
-## NoMoreProgramsList
-
-<!-- NoMoreProgramsList-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- NoMoreProgramsList-Applicability-End -->
-
-<!-- NoMoreProgramsList-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoMoreProgramsList
-```
-
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoMoreProgramsList
-```
-<!-- NoMoreProgramsList-OmaUri-End -->
-
-<!-- NoMoreProgramsList-Description-Begin -->
-<!-- Description-Source-ADMX -->
-If you enable this setting, the Start Menu will either collapse or remove the all apps list from the Start menu.
-
-Selecting "Collapse" will not display the app list next to the pinned tiles in Start. An "All apps" button will be displayed on Start to open the all apps list. This is equivalent to setting the "Show app list in Start" in Settings to Off.
-
-Selecting "Collapse and disable setting" will do the same as the collapse option and disable the "Show app list in Start menu" in Settings, so users cannot turn it to On.
-
-Selecting "Remove and disable setting" will remove the all apps list from Start and disable the "Show app list in Start menu" in Settings, so users cannot turn it to On. Select this option for compatibility with earlier versions of Windows.
-
-If you disable or do not configure this setting, the all apps list will be visible by default, and the user can change "Show app list in Start" in Settings.
-<!-- NoMoreProgramsList-Description-End -->
-
-<!-- NoMoreProgramsList-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- NoMoreProgramsList-Editable-End -->
-
-<!-- NoMoreProgramsList-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- NoMoreProgramsList-DFProperties-End -->
-
-<!-- NoMoreProgramsList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | NoMoreProgramsList |
-| Friendly Name | Remove All Programs list from the Start menu |
-| Location | Computer and User Configuration |
-| Path | Start Menu and Taskbar |
-| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
-| ADMX File Name | StartMenu.admx |
-<!-- NoMoreProgramsList-AdmxBacked-End -->
-
-<!-- NoMoreProgramsList-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- NoMoreProgramsList-Examples-End -->
-
-<!-- NoMoreProgramsList-End -->
-
-<!-- NoRun-Begin -->
-## NoRun
-
-<!-- NoRun-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- NoRun-Applicability-End -->
-
-<!-- NoRun-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoRun
-```
-
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoRun
-```
-<!-- NoRun-OmaUri-End -->
-
-<!-- NoRun-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Allows you to remove the Run command from the Start menu, Internet Explorer, and Task Manager.
-
-If you enable this setting, the following changes occur:
-
-(1) The Run command is removed from the Start menu.
-
-(2) The New Task (Run) command is removed from Task Manager.
-
-(3) The user will be blocked from entering the following into the Internet Explorer Address Bar:
-
---- A UNC path: \\`<server>`\\`<share>`
-
----Accessing local drives: e.g., C:
-
---- Accessing local folders: e.g., \temp>
-
-Also, users with extended keyboards will no longer be able to display the Run dialog box by pressing the Application key (the key with the Windows logo) + R.
-
-If you disable or do not configure this setting, users will be able to access the Run command in the Start menu and in Task Manager and use the Internet Explorer Address Bar.
-
-
-
-Note:This setting affects the specified interface only. It does not prevent users from using other methods to run programs.
-
-Note: It is a requirement for third-party applications with Windows 2000 or later certification to adhere to this setting.
-<!-- NoRun-Description-End -->
-
-<!-- NoRun-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- NoRun-Editable-End -->
-
-<!-- NoRun-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- NoRun-DFProperties-End -->
-
-<!-- NoRun-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | NoRun |
-| Friendly Name | Remove Run menu from Start Menu |
-| Location | Computer and User Configuration |
-| Path | Start Menu and Taskbar |
-| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
-| Registry Value Name | NoRun |
-| ADMX File Name | StartMenu.admx |
-<!-- NoRun-AdmxBacked-End -->
-
-<!-- NoRun-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- NoRun-Examples-End -->
-
-<!-- NoRun-End -->
-
-<!-- NoSetTaskbar-Begin -->
-## NoSetTaskbar
-
-<!-- NoSetTaskbar-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- NoSetTaskbar-Applicability-End -->
-
-<!-- NoSetTaskbar-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSetTaskbar
-```
-
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSetTaskbar
-```
-<!-- NoSetTaskbar-OmaUri-End -->
-
-<!-- NoSetTaskbar-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to prevent changes to Taskbar and Start Menu Settings.
-
-If you enable this policy setting, The user will be prevented from opening the Taskbar Properties dialog box.
-
-If the user right-clicks the taskbar and then clicks Properties, a message appears explaining that a setting prevents the action.
-
-If you disable or do not configure this policy setting, the Taskbar and Start Menu items are available from Settings on the Start menu.
-<!-- NoSetTaskbar-Description-End -->
-
-<!-- NoSetTaskbar-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- NoSetTaskbar-Editable-End -->
-
-<!-- NoSetTaskbar-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- NoSetTaskbar-DFProperties-End -->
-
-<!-- NoSetTaskbar-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | NoSetTaskbar |
-| Friendly Name | Prevent changes to Taskbar and Start Menu Settings |
-| Location | Computer and User Configuration |
-| Path | Start Menu and Taskbar |
-| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
-| Registry Value Name | NoSetTaskbar |
-| ADMX File Name | StartMenu.admx |
-<!-- NoSetTaskbar-AdmxBacked-End -->
-
-<!-- NoSetTaskbar-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- NoSetTaskbar-Examples-End -->
-
-<!-- NoSetTaskbar-End -->
-
-<!-- NoTrayContextMenu-Begin -->
-## NoTrayContextMenu
-
-<!-- NoTrayContextMenu-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- NoTrayContextMenu-Applicability-End -->
-
-<!-- NoTrayContextMenu-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoTrayContextMenu
-```
-
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoTrayContextMenu
-```
-<!-- NoTrayContextMenu-OmaUri-End -->
-
-<!-- NoTrayContextMenu-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to remove access to the context menus for the taskbar.
-
-If you enable this policy setting, the menus that appear when you right-click the taskbar and items on the taskbar are hidden, such as the Start button, the clock, and the taskbar buttons.
-
-If you disable or do not configure this policy setting, the context menus for the taskbar are available.
-
-This policy setting does not prevent users from using other methods to issue the commands that appear on these menus.
-<!-- NoTrayContextMenu-Description-End -->
-
-<!-- NoTrayContextMenu-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- NoTrayContextMenu-Editable-End -->
-
-<!-- NoTrayContextMenu-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- NoTrayContextMenu-DFProperties-End -->
-
-<!-- NoTrayContextMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | NoTrayContextMenu |
-| Friendly Name | Remove access to the context menus for the taskbar |
-| Location | Computer and User Configuration |
-| Path | Start Menu and Taskbar |
-| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
-| Registry Value Name | NoTrayContextMenu |
-| ADMX File Name | StartMenu.admx |
-<!-- NoTrayContextMenu-AdmxBacked-End -->
-
-<!-- NoTrayContextMenu-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- NoTrayContextMenu-Examples-End -->
-
-<!-- NoTrayContextMenu-End -->
-
-<!-- NoUninstallFromStart-Begin -->
-## NoUninstallFromStart
-
-<!-- NoUninstallFromStart-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- NoUninstallFromStart-Applicability-End -->
-
-<!-- NoUninstallFromStart-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoUninstallFromStart
-```
-
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoUninstallFromStart
-```
-<!-- NoUninstallFromStart-OmaUri-End -->
-
-<!-- NoUninstallFromStart-Description-Begin -->
-<!-- Description-Source-ADMX -->
-If you enable this setting, users cannot uninstall apps from Start.
-
-If you disable this setting or do not configure it, users can access the uninstall command from Start
-<!-- NoUninstallFromStart-Description-End -->
-
-<!-- NoUninstallFromStart-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- NoUninstallFromStart-Editable-End -->
-
-<!-- NoUninstallFromStart-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- NoUninstallFromStart-DFProperties-End -->
-
-<!-- NoUninstallFromStart-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | NoUninstallFromStart |
-| Friendly Name | Prevent users from uninstalling applications from Start |
-| Location | Computer and User Configuration |
-| Path | Start Menu and Taskbar |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
-| Registry Value Name | NoUninstallFromStart |
-| ADMX File Name | StartMenu.admx |
-<!-- NoUninstallFromStart-AdmxBacked-End -->
-
-<!-- NoUninstallFromStart-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- NoUninstallFromStart-Examples-End -->
-
-<!-- NoUninstallFromStart-End -->
-
-<!-- StartPinAppsWhenInstalled-Begin -->
-## StartPinAppsWhenInstalled
-
-<!-- StartPinAppsWhenInstalled-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- StartPinAppsWhenInstalled-Applicability-End -->
-
-<!-- StartPinAppsWhenInstalled-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/StartPinAppsWhenInstalled
-```
-
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/StartPinAppsWhenInstalled
-```
-<!-- StartPinAppsWhenInstalled-OmaUri-End -->
-
-<!-- StartPinAppsWhenInstalled-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows pinning apps to Start by default, when they are included by AppID on the list.
-<!-- StartPinAppsWhenInstalled-Description-End -->
-
-<!-- StartPinAppsWhenInstalled-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- StartPinAppsWhenInstalled-Editable-End -->
-
-<!-- StartPinAppsWhenInstalled-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- StartPinAppsWhenInstalled-DFProperties-End -->
-
-<!-- StartPinAppsWhenInstalled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | StartPinAppsWhenInstalled |
-| Friendly Name | Pin Apps to Start when installed |
-| Location | Computer and User Configuration |
-| Path | Start Menu and Taskbar |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
-| Registry Value Name | StartPinAppsWhenInstalled |
-| ADMX File Name | StartMenu.admx |
-<!-- StartPinAppsWhenInstalled-AdmxBacked-End -->
-
-<!-- StartPinAppsWhenInstalled-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- StartPinAppsWhenInstalled-Examples-End -->
-
-<!-- StartPinAppsWhenInstalled-End -->
 
 <!-- AddSearchInternetLinkInStartMenu-Begin -->
 ## AddSearchInternetLinkInStartMenu
@@ -573,11 +42,11 @@ This policy setting allows pinning apps to Start by default, when they are inclu
 
 <!-- AddSearchInternetLinkInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy, a "Search the Internet" link is shown when the user performs a search in the start menu search box. This button launches the default browser with the search terms.
+- If you enable this policy, a "Search the Internet" link is shown when the user performs a search in the start menu search box. This button launches the default browser with the search terms.
 
-If you disable this policy, there will not be a "Search the Internet" link when the user performs a search in the start menu search box.
+- If you disable this policy, there will not be a "Search the Internet" link when the user performs a search in the start menu search box.
 
-If you do not configure this policy (default), there will not be a "Search the Internet" link on the start menu.
+- If you do not configure this policy (default), there will not be a "Search the Internet" link on the start menu.
 <!-- AddSearchInternetLinkInStartMenu-Description-End -->
 
 <!-- AddSearchInternetLinkInStartMenu-Editable-Begin -->
@@ -595,7 +64,7 @@ If you do not configure this policy (default), there will not be a "Search the I
 
 <!-- AddSearchInternetLinkInStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -635,11 +104,12 @@ If you do not configure this policy (default), there will not be a "Search the I
 <!-- Description-Source-ADMX -->
 Clear history of recently opened documents on exit.
 
-If you enable this setting, the system deletes shortcuts to recently used document files when the user logs off. As a result, the Recent Items menu on the Start menu is always empty when the user logs on. In addition, recently and frequently used items in the Jump Lists off of programs in the Start Menu and Taskbar will be cleared when the user logs off.
+- If you enable this setting, the system deletes shortcuts to recently used document files when the user logs off. As a result, the Recent Items menu on the Start menu is always empty when the user logs on. In addition, recently and frequently used items in the Jump Lists off of programs in the Start Menu and Taskbar will be cleared when the user logs off.
 
-If you disable or do not configure this setting, the system retains document shortcuts, and when a user logs on, the Recent Items menu and the Jump Lists appear just as it did when the user logged off.
+- If you disable or do not configure this setting, the system retains document shortcuts, and when a user logs on, the Recent Items menu and the Jump Lists appear just as it did when the user logged off.
 
-Note: The system saves document shortcuts in the user profile in the System-drive\Users\User-name\Recent folder.
+> [!NOTE]
+> The system saves document shortcuts in the user profile in the System-drive\Users\User-name\Recent folder.
 
 Also, see the "Remove Recent Items menu from Start Menu" and "Do not keep history of recently opened documents" policies in this folder. The system only uses this setting when neither of these related settings are selected.
 
@@ -665,7 +135,7 @@ This policy also does not clear items that the user may have pinned to the Jump 
 
 <!-- ClearRecentDocsOnExit-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -703,9 +173,9 @@ This policy also does not clear items that the user may have pinned to the Jump 
 
 <!-- ClearRecentProgForNewUserInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy setting, the recent programs list in the start menu will be blank for each new user.
+- If you enable this policy setting, the recent programs list in the start menu will be blank for each new user.
 
-If you disable or do not configure this policy, the start menu recent programs list will be pre-populated with programs for each new user.
+- If you disable or do not configure this policy, the start menu recent programs list will be pre-populated with programs for each new user.
 <!-- ClearRecentProgForNewUserInStartMenu-Description-End -->
 
 <!-- ClearRecentProgForNewUserInStartMenu-Editable-Begin -->
@@ -723,7 +193,7 @@ If you disable or do not configure this policy, the start menu recent programs l
 
 <!-- ClearRecentProgForNewUserInStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -761,9 +231,9 @@ If you disable or do not configure this policy, the start menu recent programs l
 
 <!-- ClearTilesOnExit-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this setting, the system deletes tile notifications when the user logs on. As a result, the Tiles in the start view will always show their default content when the user logs on. In addition, any cached versions of these notifications will be cleared when the user logs on.
+- If you enable this setting, the system deletes tile notifications when the user logs on. As a result, the Tiles in the start view will always show their default content when the user logs on. In addition, any cached versions of these notifications will be cleared when the user logs on.
 
-If you disable or do not configure this setting, the system retains notifications, and when a user logs on, the tiles appear just as they did when the user logged off, including the history of previous notifications for each tile.
+- If you disable or do not configure this setting, the system retains notifications, and when a user logs on, the tiles appear just as they did when the user logged off, including the history of previous notifications for each tile.
 
 This setting does not prevent new notifications from appearing. See the "Turn off Application Notifications" setting to prevent new notifications.
 <!-- ClearTilesOnExit-Description-End -->
@@ -783,7 +253,7 @@ This setting does not prevent new notifications from appearing. See the "Turn of
 
 <!-- ClearTilesOnExit-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -823,9 +293,9 @@ This setting does not prevent new notifications from appearing. See the "Turn of
 <!-- Description-Source-ADMX -->
 This policy setting allows desktop apps to be listed first in the Apps view in Start.
 
-If you enable this policy setting, desktop apps would be listed first when the apps are sorted by category in the Apps view. The other sorting options would continue to be available and the user could choose to change their default sorting options.
+- If you enable this policy setting, desktop apps would be listed first when the apps are sorted by category in the Apps view. The other sorting options would continue to be available and the user could choose to change their default sorting options.
 
-If you disable or don't configure this policy setting, the desktop apps won't be listed first when the apps are sorted by category, and the user can configure this setting.
+- If you disable or don't configure this policy setting, the desktop apps won't be listed first when the apps are sorted by category, and the user can configure this setting.
 <!-- DesktopAppsFirstInAppsView-Description-End -->
 
 <!-- DesktopAppsFirstInAppsView-Editable-Begin -->
@@ -843,7 +313,7 @@ If you disable or don't configure this policy setting, the desktop apps won't be
 
 <!-- DesktopAppsFirstInAppsView-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -885,9 +355,9 @@ This policy setting prevents the user from searching apps, files, settings (and 
 
 This policy setting is only applied when the Apps view is set as the default view for Start.
 
-If you enable this policy setting, searching from the Apps view will only search the list of installed apps.
+- If you enable this policy setting, searching from the Apps view will only search the list of installed apps.
 
-If you disable or don’t configure this policy setting, the user can configure this setting.
+- If you disable or don't configure this policy setting, the user can configure this setting.
 <!-- DisableGlobalSearchOnAppsView-Description-End -->
 
 <!-- DisableGlobalSearchOnAppsView-Editable-Begin -->
@@ -905,7 +375,7 @@ If you disable or don’t configure this policy setting, the user can configure 
 
 <!-- DisableGlobalSearchOnAppsView-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -947,13 +417,14 @@ This policy only applies to the classic version of the start menu and does not a
 
 Adds the "Log Off `<username>`" item to the Start menu and prevents users from removing it.
 
-If you enable this setting, the Log Off `<username>` item appears in the Start menu. This setting also removes the Display Logoff item from Start Menu Options. As a result, users cannot remove the Log Off `<username>` item from the Start Menu.
+- If you enable this setting, the Log Off `<username>` item appears in the Start menu. This setting also removes the Display Logoff item from Start Menu Options. As a result, users cannot remove the Log Off `<username>` item from the Start Menu.
 
-If you disable this setting or do not configure it, users can use the Display Logoff item to add and remove the Log Off item.
+- If you disable this setting or do not configure it, users can use the Display Logoff item to add and remove the Log Off item.
 
 This setting affects the Start menu only. It does not affect the Log Off item on the Windows Security dialog box that appears when you press Ctrl+Alt+Del.
 
-Note: To add or remove the Log Off item on a computer, click Start, click Settings, click Taskbar and Start Menu, click the Start Menu Options tab, and then, in the Start Menu Settings box, click Display Logoff.
+> [!NOTE]
+> To add or remove the Log Off item on a computer, click Start, click Settings, click Taskbar and Start Menu, click the Start Menu Options tab, and then, in the Start Menu Settings box, click Display Logoff.
 
 Also, see "Remove Logoff" in User Configuration\Administrative Templates\System\Logon/Logoff.
 <!-- ForceStartMenuLogOff-Description-End -->
@@ -973,7 +444,7 @@ Also, see "Remove Logoff" in User Configuration\Administrative Templates\System\
 
 <!-- ForceStartMenuLogOff-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1013,11 +484,11 @@ Also, see "Remove Logoff" in User Configuration\Administrative Templates\System\
 <!-- Description-Source-ADMX -->
 This policy setting allows users to go to the desktop instead of the Start screen when they sign in.
 
-If you enable this policy setting, users will always go to the desktop when they sign in.
+- If you enable this policy setting, users will always go to the desktop when they sign in.
 
-If you disable this policy setting, users will always go to the Start screen when they sign in.
+- If you disable this policy setting, users will always go to the Start screen when they sign in.
 
-If you don’t configure this policy setting, the default setting for the user’s device will be used, and the user can choose to change it.
+- If you don't configure this policy setting, the default setting for the user's device will be used, and the user can choose to change it.
 <!-- GoToDesktopOnSignIn-Description-End -->
 
 <!-- GoToDesktopOnSignIn-Editable-Begin -->
@@ -1035,7 +506,7 @@ If you don’t configure this policy setting, the default setting for the user�
 
 <!-- GoToDesktopOnSignIn-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1079,9 +550,10 @@ This setting makes it easier for users to distinguish between programs that are 
 
 Partially installed programs include those that a system administrator assigns using Windows Installer and those that users have configured for full installation upon first use.
 
-If you disable this setting or do not configure it, all Start menu shortcuts appear as black text.
+- If you disable this setting or do not configure it, all Start menu shortcuts appear as black text.
 
-Note: Enabling this setting can make the Start menu slow to open.
+> [!NOTE]
+> Enabling this setting can make the Start menu slow to open.
 <!-- GreyMSIAds-Description-End -->
 
 <!-- GreyMSIAds-Editable-Begin -->
@@ -1099,7 +571,7 @@ Note: Enabling this setting can make the Start menu slow to open.
 
 <!-- GreyMSIAds-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1119,6 +591,66 @@ Note: Enabling this setting can make the Start menu slow to open.
 <!-- GreyMSIAds-Examples-End -->
 
 <!-- GreyMSIAds-End -->
+
+<!-- HidePowerOptions-Begin -->
+## HidePowerOptions
+
+<!-- HidePowerOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HidePowerOptions-Applicability-End -->
+
+<!-- HidePowerOptions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/HidePowerOptions
+```
+<!-- HidePowerOptions-OmaUri-End -->
+
+<!-- HidePowerOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents users from performing the following commands from the Windows security screen, the logon screen, and the Start menu: Shut Down, Restart, Sleep, and Hibernate. This policy setting does not prevent users from running Windows-based programs that perform these functions.
+
+- If you enable this policy setting, the shutdown, restart, sleep, and hibernate commands are removed from the Start menu. The Power button is also removed from the Windows Security screen, which appears when you press CTRL+ALT+DELETE, and from the logon screen.
+
+- If you disable or do not configure this policy setting, the Power button and the Shut Down, Restart, Sleep, and Hibernate commands are available on the Start menu. The Power button on the Windows Security and logon screens is also available.
+<!-- HidePowerOptions-Description-End -->
+
+<!-- HidePowerOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HidePowerOptions-Editable-End -->
+
+<!-- HidePowerOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HidePowerOptions-DFProperties-End -->
+
+<!-- HidePowerOptions-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | HidePowerOptions |
+| Friendly Name | Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands |
+| Location | Computer Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | HidePowerOptions |
+| ADMX File Name | StartMenu.admx |
+<!-- HidePowerOptions-AdmxBacked-End -->
+
+<!-- HidePowerOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HidePowerOptions-Examples-End -->
+
+<!-- HidePowerOptions-End -->
 
 <!-- Intellimenus-Begin -->
 ## Intellimenus
@@ -1141,11 +673,13 @@ Disables personalized menus.
 
 Windows personalizes long menus by moving recently used items to the top of the menu and hiding items that have not been used recently. Users can display the hidden items by clicking an arrow to extend the menu.
 
-If you enable this setting, the system does not personalize menus. All menu items appear and remain in standard order. Also, this setting removes the "Use Personalized Menus" option so users do not try to change the setting while a setting is in effect.
+- If you enable this setting, the system does not personalize menus. All menu items appear and remain in standard order. Also, this setting removes the "Use Personalized Menus" option so users do not try to change the setting while a setting is in effect.
 
-Note: Personalized menus require user tracking. If you enable the "Turn off user tracking" setting, the system disables user tracking and personalized menus and ignores this setting.
+> [!NOTE]
+> Personalized menus require user tracking. If you enable the "Turn off user tracking" setting, the system disables user tracking and personalized menus and ignores this setting.
 
-Tip: To Turn off personalized menus without specifying a setting, click Start, click Settings, click Taskbar and Start Menu, and then, on the General tab, clear the "Use Personalized Menus" option.
+> [!TIP]
+> To Turn off personalized menus without specifying a setting, click Start, click Settings, click Taskbar and Start Menu, and then, on the General tab, clear the "Use Personalized Menus" option.
 <!-- Intellimenus-Description-End -->
 
 <!-- Intellimenus-Editable-Begin -->
@@ -1163,7 +697,7 @@ Tip: To Turn off personalized menus without specifying a setting, click Start, c
 
 <!-- Intellimenus-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1205,11 +739,12 @@ This setting affects the taskbar, which is used to switch between running applic
 
 The taskbar includes the Start button, list of currently running tasks, and the notification area. By default, the taskbar is located at the bottom of the screen, but it can be dragged to any side of the screen. When it is locked, it cannot be moved or resized.
 
-If you enable this setting, it prevents the user from moving or resizing the taskbar. While the taskbar is locked, auto-hide and other taskbar options are still available in Taskbar properties.
+- If you enable this setting, it prevents the user from moving or resizing the taskbar. While the taskbar is locked, auto-hide and other taskbar options are still available in Taskbar properties.
 
-If you disable this setting or do not configure it, the user can configure the taskbar position.
+- If you disable this setting or do not configure it, the user can configure the taskbar position.
 
-Note: Enabling this setting also locks the QuickLaunch bar and any other toolbars that the user has on their taskbar. The toolbar's position is locked, and the user cannot show and hide various toolbars using the taskbar context menu.
+> [!NOTE]
+> Enabling this setting also locks the QuickLaunch bar and any other toolbars that the user has on their taskbar. The toolbar's position is locked, and the user cannot show and hide various toolbars using the taskbar context menu.
 <!-- LockTaskbar-Description-End -->
 
 <!-- LockTaskbar-Editable-Begin -->
@@ -1227,7 +762,7 @@ Note: Enabling this setting also locks the QuickLaunch bar and any other toolbar
 
 <!-- LockTaskbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1287,7 +822,7 @@ Enabling this setting adds a check box to the Run dialog box, giving users the o
 
 <!-- MemCheckBoxInRunDlg-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1329,9 +864,9 @@ This setting affects the notification area, also called the "system tray."
 
 The notification area is located in the task bar, generally at the bottom of the screen, and it includes the clock and current notifications. This setting determines whether the items are always expanded or always collapsed. By default, notifications are collapsed. The notification cleanup << icon can be referred to as the "notification chevron."
 
-If you enable this setting, the system notification area expands to show all of the notifications that use this area.
+- If you enable this setting, the system notification area expands to show all of the notifications that use this area.
 
-If you disable this setting, the system notification area will always collapse notifications.
+- If you disable this setting, the system notification area will always collapse notifications.
 
 If you do not configure it, the user can choose if they want notifications collapsed.
 <!-- NoAutoTrayNotify-Description-End -->
@@ -1351,7 +886,7 @@ If you do not configure it, the user can choose if they want notifications colla
 
 <!-- NoAutoTrayNotify-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1393,9 +928,9 @@ Hides pop-up text on the Start menu and in the notification area.
 
 When you hold the cursor over an item on the Start menu or in the notification area, the system displays pop-up text providing additional information about the object.
 
-If you enable this setting, some of this pop-up text is not displayed. The pop-up text affected by this setting includes "Click here to begin" on the Start button, "Where have all my programs gone" on the Start menu, and "Where have my icons gone" in the notification area.
+- If you enable this setting, some of this pop-up text is not displayed. The pop-up text affected by this setting includes "Click here to begin" on the Start button, "Where have all my programs gone" on the Start menu, and "Where have my icons gone" in the notification area.
 
-If you disable this setting or do not configure it, all pop-up text is displayed on the Start menu and in the notification area.
+- If you disable this setting or do not configure it, all pop-up text is displayed on the Start menu and in the notification area.
 <!-- NoBalloonTip-Description-End -->
 
 <!-- NoBalloonTip-Editable-Begin -->
@@ -1413,7 +948,7 @@ If you disable this setting or do not configure it, all pop-up text is displayed
 
 <!-- NoBalloonTip-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1434,6 +969,70 @@ If you disable this setting or do not configure it, all pop-up text is displayed
 
 <!-- NoBalloonTip-End -->
 
+<!-- NoChangeStartMenu-Begin -->
+## NoChangeStartMenu
+
+<!-- NoChangeStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoChangeStartMenu-Applicability-End -->
+
+<!-- NoChangeStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoChangeStartMenu
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoChangeStartMenu
+```
+<!-- NoChangeStartMenu-OmaUri-End -->
+
+<!-- NoChangeStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to prevent users from changing their Start screen layout.
+
+- If you enable this setting, you will prevent a user from selecting an app, resizing a tile, pinning/unpinning a tile or a secondary tile, entering the customize mode and rearranging tiles within Start and Apps.
+
+- If you disable or do not configure this setting, you will allow a user to select an app, resize a tile, pin/unpin a tile or a secondary tile, enter the customize mode and rearrange tiles within Start and Apps.
+<!-- NoChangeStartMenu-Description-End -->
+
+<!-- NoChangeStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoChangeStartMenu-Editable-End -->
+
+<!-- NoChangeStartMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoChangeStartMenu-DFProperties-End -->
+
+<!-- NoChangeStartMenu-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoChangeStartMenu |
+| Friendly Name | Prevent users from customizing their Start Screen |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoChangeStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoChangeStartMenu-AdmxBacked-End -->
+
+<!-- NoChangeStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoChangeStartMenu-Examples-End -->
+
+<!-- NoChangeStartMenu-End -->
+
 <!-- NoClose-Begin -->
 ## NoClose
 
@@ -1453,11 +1052,12 @@ If you disable this setting or do not configure it, all pop-up text is displayed
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from performing the following commands from the Start menu or Windows Security screen: Shut Down, Restart, Sleep, and Hibernate. This policy setting does not prevent users from running Windows-based programs that perform these functions.
 
-If you enable this policy setting, the Power button and the Shut Down, Restart, Sleep, and Hibernate commands are removed from the Start menu. The Power button is also removed from the Windows Security screen, which appears when you press CTRL+ALT+DELETE.
+- If you enable this policy setting, the Power button and the Shut Down, Restart, Sleep, and Hibernate commands are removed from the Start menu. The Power button is also removed from the Windows Security screen, which appears when you press CTRL+ALT+DELETE.
 
-If you disable or do not configure this policy setting, the Power button and the Shut Down, Restart, Sleep, and Hibernate commands are available on the Start menu. The Power button on the Windows Security screen is also available.
+- If you disable or do not configure this policy setting, the Power button and the Shut Down, Restart, Sleep, and Hibernate commands are available on the Start menu. The Power button on the Windows Security screen is also available.
 
-Note: Third-party programs certified as compatible with Microsoft Windows Vista, Windows XP SP2, Windows XP SP1, Windows XP, or Windows 2000 Professional are required to support this policy setting.
+> [!NOTE]
+> Third-party programs certified as compatible with Microsoft Windows Vista, Windows XP SP2, Windows XP SP1, Windows XP, or Windows 2000 Professional are required to support this policy setting.
 <!-- NoClose-Description-End -->
 
 <!-- NoClose-Editable-Begin -->
@@ -1475,7 +1075,7 @@ Note: Third-party programs certified as compatible with Microsoft Windows Vista,
 
 <!-- NoClose-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1515,9 +1115,11 @@ Note: Third-party programs certified as compatible with Microsoft Windows Vista,
 <!-- Description-Source-ADMX -->
 Removes items in the All Users profile from the Programs menu on the Start menu.
 
-By default, the Programs menu contains items from the All Users profile and items from the user's profile. If you enable this setting, only items in the user's profile appear in the Programs menu.
+By default, the Programs menu contains items from the All Users profile and items from the user's profile.
+- If you enable this setting, only items in the user's profile appear in the Programs menu.
 
-Tip: To see the Program menu items in the All Users profile, on the system drive, go to ProgramData\Microsoft\Windows\Start Menu\Programs.
+> [!TIP]
+> To see the Program menu items in the All Users profile, on the system drive, go to ProgramData\Microsoft\Windows\Start Menu\Programs.
 <!-- NoCommonGroups-Description-End -->
 
 <!-- NoCommonGroups-Editable-Begin -->
@@ -1535,7 +1137,7 @@ Tip: To see the Program menu items in the All Users profile, on the system drive
 
 <!-- NoCommonGroups-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1575,15 +1177,18 @@ Tip: To see the Program menu items in the All Users profile, on the system drive
 <!-- Description-Source-ADMX -->
 Prevents users from adding the Favorites menu to the Start menu or classic Start menu.
 
-If you enable this setting, the Display Favorites item does not appear in the Advanced Start menu options box.
+- If you enable this setting, the Display Favorites item does not appear in the Advanced Start menu options box.
 
-If you disable or do not configure this setting, the Display Favorite item is available.
+- If you disable or do not configure this setting, the Display Favorite item is available.
 
-Note:The Favorities menu does not appear on the Start menu by default. To display the Favorites menu, right-click Start, click Properties, and then click Customize. If you are using Start menu, click the Advanced tab, and then, under Start menu items, click the Favorites menu. If you are using the classic Start menu, click Display Favorites under Advanced Start menu options.
+> [!NOTE]
+> The Favorites menu does not appear on the Start menu by default. To display the Favorites menu, right-click Start, click Properties, and then click Customize. If you are using Start menu, click the Advanced tab, and then, under Start menu items, click the Favorites menu. If you are using the classic Start menu, click Display Favorites under Advanced Start menu options.
 
-Note:The items that appear in the Favorites menu when you install Windows are preconfigured by the system to appeal to most users. However, users can add and remove items from this menu, and system administrators can create a customized Favorites menu for a user group.
+> [!NOTE]
+> The items that appear in the Favorites menu when you install Windows are pre-configured by the system to appeal to most users. However, users can add and remove items from this menu, and system administrators can create a customized Favorites menu for a user group.
 
-Note:This setting only affects the Start menu. The Favorites item still appears in File Explorer and in Internet Explorer.
+> [!NOTE]
+> This setting only affects the Start menu. The Favorites item still appears in File Explorer and in Internet Explorer.
 <!-- NoFavoritesMenu-Description-End -->
 
 <!-- NoFavoritesMenu-Editable-Begin -->
@@ -1601,7 +1206,7 @@ Note:This setting only affects the Start menu. The Favorites item still appears 
 
 <!-- NoFavoritesMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1643,15 +1248,16 @@ This policy setting allows you to remove the Search link from the Start menu, an
 
 **Note** that this does not remove the search box from the new style Start menu.
 
-If you enable this policy setting, the Search item is removed from the Start menu and from the context menu that appears when you right-click the Start menu. Also, the system does not respond when users press the Application key (the key with the Windows logo)+ F.
+- If you enable this policy setting, the Search item is removed from the Start menu and from the context menu that appears when you right-click the Start menu. Also, the system does not respond when users press the Application key (the key with the Windows logo)+ F.
 
-Note: Enabling this policy setting also prevents the user from using the F3 key.
+> [!NOTE]
+> Enabling this policy setting also prevents the user from using the F3 key.
 
 In File Explorer, the Search item still appears on the Standard buttons toolbar, but the system does not respond when the user presses Ctrl+F. Also, Search does not appear in the context menu when you right-click an icon representing a drive or a folder.
 
 This policy setting affects the specified user interface elements only. It does not affect Internet Explorer and does not prevent the user from using other methods to search.
 
-If you disable or do not configure this policy setting, the Search link is available from the Start menu.
+- If you disable or do not configure this policy setting, the Search link is available from the Start menu.
 <!-- NoFind-Description-End -->
 
 <!-- NoFind-Editable-Begin -->
@@ -1669,7 +1275,7 @@ If you disable or do not configure this policy setting, the Search link is avail
 
 <!-- NoFind-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1707,9 +1313,9 @@ If you disable or do not configure this policy setting, the Search link is avail
 
 <!-- NoGamesFolderOnStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy the start menu will not show a link to the Games folder.
+- If you enable this policy the start menu will not show a link to the Games folder.
 
-If you disable or do not configure this policy, the start menu will show a link to the Games folder, unless the user chooses to remove it in the start menu control panel.
+- If you disable or do not configure this policy, the start menu will show a link to the Games folder, unless the user chooses to remove it in the start menu control panel.
 <!-- NoGamesFolderOnStartMenu-Description-End -->
 
 <!-- NoGamesFolderOnStartMenu-Editable-Begin -->
@@ -1727,7 +1333,7 @@ If you disable or do not configure this policy, the start menu will show a link 
 
 <!-- NoGamesFolderOnStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1767,9 +1373,9 @@ If you disable or do not configure this policy, the start menu will show a link 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the Help command from the Start menu.
 
-If you enable this policy setting, the Help command is removed from the Start menu.
+- If you enable this policy setting, the Help command is removed from the Start menu.
 
-If you disable or do not configure this policy setting, the Help command is available from the Start menu.
+- If you disable or do not configure this policy setting, the Help command is available from the Start menu.
 
 This policy setting only affects the Start menu. It does not remove the Help menu from File Explorer and does not prevent users from running Help.
 <!-- NoHelp-Description-End -->
@@ -1789,7 +1395,7 @@ This policy setting only affects the Start menu. It does not remove the Help men
 
 <!-- NoHelp-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1829,9 +1435,9 @@ This policy setting only affects the Start menu. It does not remove the Help men
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off user tracking.
 
-If you enable this policy setting, the system does not track the programs that the user runs, and does not display frequently used programs in the Start Menu.
+- If you enable this policy setting, the system does not track the programs that the user runs, and does not display frequently used programs in the Start Menu.
 
-If you disable or do not configure this policy setting, the system tracks the programs that the user runs. The system uses this information to customize Windows features, such as showing frequently used programs in the Start Menu.
+- If you disable or do not configure this policy setting, the system tracks the programs that the user runs. The system uses this information to customize Windows features, such as showing frequently used programs in the Start Menu.
 
 Also, see these related policy settings: "Remove frequent programs liist from the Start Menu" and "Turn off personalized menus".
 
@@ -1853,7 +1459,7 @@ This policy setting does not prevent users from pinning programs to the Start Me
 
 <!-- NoInstrumentation-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1874,6 +1480,73 @@ This policy setting does not prevent users from pinning programs to the Start Me
 
 <!-- NoInstrumentation-End -->
 
+<!-- NoMoreProgramsList-Begin -->
+## NoMoreProgramsList
+
+<!-- NoMoreProgramsList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoMoreProgramsList-Applicability-End -->
+
+<!-- NoMoreProgramsList-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoMoreProgramsList
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoMoreProgramsList
+```
+<!-- NoMoreProgramsList-OmaUri-End -->
+
+<!-- NoMoreProgramsList-Description-Begin -->
+<!-- Description-Source-ADMX -->
+- If you enable this setting, the Start Menu will either collapse or remove the all apps list from the Start menu.
+
+Selecting "Collapse" will not display the app list next to the pinned tiles in Start. An "All apps" button will be displayed on Start to open the all apps list. This is equivalent to setting the "Show app list in Start" in Settings to Off.
+
+Selecting "Collapse and disable setting" will do the same as the collapse option and disable the "Show app list in Start menu" in Settings, so users cannot turn it to On.
+
+Selecting "Remove and disable setting" will remove the all apps list from Start and disable the "Show app list in Start menu" in Settings, so users cannot turn it to On. Select this option for compatibility with earlier versions of Windows.
+
+- If you disable or do not configure this setting, the all apps list will be visible by default, and the user can change "Show app list in Start" in Settings.
+<!-- NoMoreProgramsList-Description-End -->
+
+<!-- NoMoreProgramsList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoMoreProgramsList-Editable-End -->
+
+<!-- NoMoreProgramsList-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoMoreProgramsList-DFProperties-End -->
+
+<!-- NoMoreProgramsList-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoMoreProgramsList |
+| Friendly Name | Remove All Programs list from the Start menu |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | StartMenu.admx |
+<!-- NoMoreProgramsList-AdmxBacked-End -->
+
+<!-- NoMoreProgramsList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoMoreProgramsList-Examples-End -->
+
+<!-- NoMoreProgramsList-End -->
+
 <!-- NoNetAndDialupConnect-Begin -->
 ## NoNetAndDialupConnect
 
@@ -1893,13 +1566,13 @@ This policy setting does not prevent users from pinning programs to the Start Me
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove Network Connections from the Start Menu.
 
-If you enable this policy setting, users are prevented from running Network Connections.
+- If you enable this policy setting, users are prevented from running Network Connections.
 
 Enabling this policy setting prevents the Network Connections folder from opening. This policy setting also removes Network Connections from Settings on the Start menu.
 
 Network Connections still appears in Control Panel and in File Explorer, but if users try to start it, a message appears explaining that a setting prevents the action.
 
-If you disable or do not configure this policy setting, Network Connections is available from the Start Menu.
+- If you disable or do not configure this policy setting, Network Connections is available from the Start Menu.
 
 Also, see the "Disable programs on Settings menu" and "Disable Control Panel" policy settings and the policy settings in the Network Connections folder (Computer Configuration and User Configuration\Administrative Templates\Network\Network Connections).
 <!-- NoNetAndDialupConnect-Description-End -->
@@ -1919,7 +1592,7 @@ Also, see the "Disable programs on Settings menu" and "Disable Control Panel" po
 
 <!-- NoNetAndDialupConnect-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1957,11 +1630,11 @@ Also, see the "Disable programs on Settings menu" and "Disable Control Panel" po
 
 <!-- NoPinnedPrograms-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this setting, the "Pinned Programs" list is removed from the Start menu. Users cannot pin programs to the Start menu.
+- If you enable this setting, the "Pinned Programs" list is removed from the Start menu. Users cannot pin programs to the Start menu.
 
 In Windows XP and Windows Vista, the Internet and email checkboxes are removed from the 'Customize Start Menu' dialog.
 
-If you disable this setting or do not configure it, the "Pinned Programs" list remains on the Start menu. Users can pin and unpin programs in the Start Menu.
+- If you disable this setting or do not configure it, the "Pinned Programs" list remains on the Start menu. Users can pin and unpin programs in the Start Menu.
 <!-- NoPinnedPrograms-Description-End -->
 
 <!-- NoPinnedPrograms-Editable-Begin -->
@@ -1979,7 +1652,7 @@ If you disable this setting or do not configure it, the "Pinned Programs" list r
 
 <!-- NoPinnedPrograms-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2021,7 +1694,7 @@ Removes the Recent Items menu from the Start menu. Removes the Documents menu fr
 
 The Recent Items menu contains links to the non-program files that users have most recently opened. It appears so that users can easily reopen their documents.
 
-If you enable this setting, the system saves document shortcuts but does not display the Recent Items menu in the Start Menu, and users cannot turn the menu on.
+- If you enable this setting, the system saves document shortcuts but does not display the Recent Items menu in the Start Menu, and users cannot turn the menu on.
 
 If you later disable the setting, so that the Recent Items menu appears in the Start Menu, the document shortcuts saved before the setting was enabled and while it was in effect appear in the Recent Items menu.
 
@@ -2029,7 +1702,8 @@ When the setting is disabled, the Recent Items menu appears in the Start Menu, a
 
 If the setting is not configured, users can turn the Recent Items menu on and off.
 
-Note: This setting does not prevent Windows programs from displaying shortcuts to recently opened documents. See the "Do not keep history of recently opened documents" setting.
+> [!NOTE]
+> This setting does not prevent Windows programs from displaying shortcuts to recently opened documents. See the "Do not keep history of recently opened documents" setting.
 
 This setting also does not hide document shortcuts displayed in the Open dialog box. See the "Hide the dropdown list of recent files" setting.
 <!-- NoRecentDocsMenu-Description-End -->
@@ -2049,7 +1723,7 @@ This setting also does not hide document shortcuts displayed in the Open dialog 
 
 <!-- NoRecentDocsMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2089,11 +1763,12 @@ This setting also does not hide document shortcuts displayed in the Open dialog 
 <!-- Description-Source-ADMX -->
 This policy setting prevents the system from conducting a comprehensive search of the target drive to resolve a shortcut.
 
-If you enable this policy setting, the system does not conduct the final drive search. It just displays a message explaining that the file is not found.
+- If you enable this policy setting, the system does not conduct the final drive search. It just displays a message explaining that the file is not found.
 
-If you disable or do not configure this policy setting, by default, when the system cannot find the target file for a shortcut (.lnk), it searches all paths associated with the shortcut. If the target file is located on an NTFS partition, the system then uses the target's file ID to find a path. If the resulting path is not correct, it conducts a comprehensive search of the target drive in an attempt to find the file.
+- If you disable or do not configure this policy setting, by default, when the system cannot find the target file for a shortcut (.lnk), it searches all paths associated with the shortcut. If the target file is located on an NTFS partition, the system then uses the target's file ID to find a path. If the resulting path is not correct, it conducts a comprehensive search of the target drive in an attempt to find the file.
 
-Note: This policy setting only applies to target files on NTFS partitions. FAT partitions do not have this ID tracking and search capability.
+> [!NOTE]
+> This policy setting only applies to target files on NTFS partitions. FAT partitions do not have this ID tracking and search capability.
 
 Also, see the "Do not track Shell shortcuts during roaming" and the "Do not use the tracking-based method when resolving shell shortcuts" policy settings.
 <!-- NoResolveSearch-Description-End -->
@@ -2113,7 +1788,7 @@ Also, see the "Do not track Shell shortcuts during roaming" and the "Do not use 
 
 <!-- NoResolveSearch-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2153,11 +1828,12 @@ Also, see the "Do not track Shell shortcuts during roaming" and the "Do not use 
 <!-- Description-Source-ADMX -->
 This policy setting prevents the system from using NTFS tracking features to resolve a shortcut.
 
-If you enable this policy setting, the system does not try to locate the file by using its file ID. It skips this step and begins a comprehensive search of the drive specified in the target path.
+- If you enable this policy setting, the system does not try to locate the file by using its file ID. It skips this step and begins a comprehensive search of the drive specified in the target path.
 
-If you disable or do not configure this policy setting, by default, when the system cannot find the target file for a shortcut (.lnk), it searches all paths associated with the shortcut. If the target file is located on an NTFS partition, the system then uses the target's file ID to find a path. If the resulting path is not correct, it conducts a comprehensive search of the target drive in an attempt to find the file.
+- If you disable or do not configure this policy setting, by default, when the system cannot find the target file for a shortcut (.lnk), it searches all paths associated with the shortcut. If the target file is located on an NTFS partition, the system then uses the target's file ID to find a path. If the resulting path is not correct, it conducts a comprehensive search of the target drive in an attempt to find the file.
 
-Note: This policy setting only applies to target files on NTFS partitions. FAT partitions do not have this ID tracking and search capability.
+> [!NOTE]
+> This policy setting only applies to target files on NTFS partitions. FAT partitions do not have this ID tracking and search capability.
 
 Also, see the "Do not track Shell shortcuts during roaming" and the "Do not use the search-based method when resolving shell shortcuts" policy settings.
 <!-- NoResolveTrack-Description-End -->
@@ -2177,7 +1853,7 @@ Also, see the "Do not track Shell shortcuts during roaming" and the "Do not use 
 
 <!-- NoResolveTrack-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2198,6 +1874,90 @@ Also, see the "Do not track Shell shortcuts during roaming" and the "Do not use 
 
 <!-- NoResolveTrack-End -->
 
+<!-- NoRun-Begin -->
+## NoRun
+
+<!-- NoRun-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoRun-Applicability-End -->
+
+<!-- NoRun-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoRun
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoRun
+```
+<!-- NoRun-OmaUri-End -->
+
+<!-- NoRun-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Allows you to remove the Run command from the Start menu, Internet Explorer, and Task Manager.
+
+- If you enable this setting, the following changes occur:
+
+(1) The Run command is removed from the Start menu.
+
+(2) The New Task (Run) command is removed from Task Manager.
+
+(3) The user will be blocked from entering the following into the Internet Explorer Address Bar:
+
+--- A UNC path: \\`<server>`\\`<share>`
+
+---Accessing local drives: e.g., C:
+
+--- Accessing local folders: e.g., \temp>
+
+Also, users with extended keyboards will no longer be able to display the Run dialog box by pressing the Application key (the key with the Windows logo) + R.
+
+- If you disable or do not configure this setting, users will be able to access the Run command in the Start menu and in Task Manager and use the Internet Explorer Address Bar.
+
+> [!NOTE]
+> This setting affects the specified interface only. It does not prevent users from using other methods to run programs.
+
+> [!NOTE]
+> It is a requirement for third-party applications with Windows 2000 or later certification to adhere to this setting.
+<!-- NoRun-Description-End -->
+
+<!-- NoRun-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoRun-Editable-End -->
+
+<!-- NoRun-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoRun-DFProperties-End -->
+
+<!-- NoRun-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoRun |
+| Friendly Name | Remove Run menu from Start Menu |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoRun |
+| ADMX File Name | StartMenu.admx |
+<!-- NoRun-AdmxBacked-End -->
+
+<!-- NoRun-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoRun-Examples-End -->
+
+<!-- NoRun-End -->
+
 <!-- NoSearchCommInStartMenu-Begin -->
 ## NoSearchCommInStartMenu
 
@@ -2215,9 +1975,9 @@ Also, see the "Do not track Shell shortcuts during roaming" and the "Do not use 
 
 <!-- NoSearchCommInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy the start menu search box will not search for communications.
+- If you enable this policy the start menu search box will not search for communications.
 
-If you disable or do not configure this policy, the start menu will search for communications, unless the user chooses not to in the start menu control panel.
+- If you disable or do not configure this policy, the start menu will search for communications, unless the user chooses not to in the start menu control panel.
 <!-- NoSearchCommInStartMenu-Description-End -->
 
 <!-- NoSearchCommInStartMenu-Editable-Begin -->
@@ -2235,7 +1995,7 @@ If you disable or do not configure this policy, the start menu will search for c
 
 <!-- NoSearchCommInStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2273,9 +2033,9 @@ If you disable or do not configure this policy, the start menu will search for c
 
 <!-- NoSearchComputerLinkInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy, the "See all results" link will not be shown when the user performs a search in the start menu search box.
+- If you enable this policy, the "See all results" link will not be shown when the user performs a search in the start menu search box.
 
-If you disable or do not configure this policy, the "See all results" link will be shown when the user performs a search in the start menu search box.
+- If you disable or do not configure this policy, the "See all results" link will be shown when the user performs a search in the start menu search box.
 <!-- NoSearchComputerLinkInStartMenu-Description-End -->
 
 <!-- NoSearchComputerLinkInStartMenu-Editable-Begin -->
@@ -2293,7 +2053,7 @@ If you disable or do not configure this policy, the "See all results" link will 
 
 <!-- NoSearchComputerLinkInStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2331,9 +2091,9 @@ If you disable or do not configure this policy, the "See all results" link will 
 
 <!-- NoSearchEverywhereLinkInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy, a "See more results" / "Search Everywhere" link will not be shown when the user performs a search in the start menu search box.
+- If you enable this policy, a "See more results" / "Search Everywhere" link will not be shown when the user performs a search in the start menu search box.
 
-If you disable or do not configure this policy, a "See more results" link will be shown when the user performs a search in the start menu search box. If a 3rd party protocol handler is installed, a "Search Everywhere" link will be shown instead of the "See more results" link.
+- If you disable or do not configure this policy, a "See more results" link will be shown when the user performs a search in the start menu search box. If a 3rd party protocol handler is installed, a "Search Everywhere" link will be shown instead of the "See more results" link.
 <!-- NoSearchEverywhereLinkInStartMenu-Description-End -->
 
 <!-- NoSearchEverywhereLinkInStartMenu-Editable-Begin -->
@@ -2351,7 +2111,7 @@ If you disable or do not configure this policy, a "See more results" link will b
 
 <!-- NoSearchEverywhereLinkInStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2389,9 +2149,10 @@ If you disable or do not configure this policy, a "See more results" link will b
 
 <!-- NoSearchFilesInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy setting the Start menu search box will not search for files.
+- If you enable this policy setting the Start menu search box will not search for files.
 
-If you disable or do not configure this policy setting, the Start menu will search for files, unless the user chooses not to do so directly in Control Panel. If you enable this policy, a "See more results" / "Search Everywhere" link will not be shown when the user performs a search in the start menu search box.
+- If you disable or do not configure this policy setting, the Start menu will search for files, unless the user chooses not to do so directly in Control Panel.
+- If you enable this policy, a "See more results" / "Search Everywhere" link will not be shown when the user performs a search in the start menu search box.
 <!-- NoSearchFilesInStartMenu-Description-End -->
 
 <!-- NoSearchFilesInStartMenu-Editable-Begin -->
@@ -2409,7 +2170,7 @@ If you disable or do not configure this policy setting, the Start menu will sear
 
 <!-- NoSearchFilesInStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2447,9 +2208,9 @@ If you disable or do not configure this policy setting, the Start menu will sear
 
 <!-- NoSearchInternetInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy the start menu search box will not search for internet history or favorites.
+- If you enable this policy the start menu search box will not search for internet history or favorites.
 
-If you disable or do not configure this policy, the start menu will search for for internet history or favorites, unless the user chooses not to in the start menu control panel.
+- If you disable or do not configure this policy, the start menu will search for for internet history or favorites, unless the user chooses not to in the start menu control panel.
 <!-- NoSearchInternetInStartMenu-Description-End -->
 
 <!-- NoSearchInternetInStartMenu-Editable-Begin -->
@@ -2467,7 +2228,7 @@ If you disable or do not configure this policy, the start menu will search for f
 
 <!-- NoSearchInternetInStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2505,9 +2266,9 @@ If you disable or do not configure this policy, the start menu will search for f
 
 <!-- NoSearchProgramsInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy setting the Start menu search box will not search for programs or Control Panel items.
+- If you enable this policy setting the Start menu search box will not search for programs or Control Panel items.
 
-If you disable or do not configure this policy setting, the Start menu search box will search for programs and Control Panel items, unless the user chooses not to do so directly in Control Panel.
+- If you disable or do not configure this policy setting, the Start menu search box will search for programs and Control Panel items, unless the user chooses not to do so directly in Control Panel.
 <!-- NoSearchProgramsInStartMenu-Description-End -->
 
 <!-- NoSearchProgramsInStartMenu-Editable-Begin -->
@@ -2525,7 +2286,7 @@ If you disable or do not configure this policy setting, the Start menu search bo
 
 <!-- NoSearchProgramsInStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2565,11 +2326,11 @@ If you disable or do not configure this policy setting, the Start menu search bo
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove programs on Settings menu.
 
-If you enable this policy setting, the Control Panel, Printers, and Network and Connection folders are removed from Settings on the Start menu, and from Computer and File Explorer. It also prevents the programs represented by these folders (such as Control.exe) from running.
+- If you enable this policy setting, the Control Panel, Printers, and Network and Connection folders are removed from Settings on the Start menu, and from Computer and File Explorer. It also prevents the programs represented by these folders (such as Control.exe) from running.
 
 However, users can still start Control Panel items by using other methods, such as right-clicking the desktop to start Display or right-clicking Computer to start System.
 
-If you disable or do not configure this policy setting, the Control Panel, Printers, and Network and Connection folders from Settings are available on the Start menu, and from Computer and File Explorer.
+- If you disable or do not configure this policy setting, the Control Panel, Printers, and Network and Connection folders from Settings are available on the Start menu, and from Computer and File Explorer.
 
 Also, see the "Disable Control Panel," "Disable Display in Control Panel," and "Remove Network Connections from Start Menu" policy settings.
 <!-- NoSetFolders-Description-End -->
@@ -2589,7 +2350,7 @@ Also, see the "Disable Control Panel," "Disable Display in Control Panel," and "
 
 <!-- NoSetFolders-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2610,6 +2371,72 @@ Also, see the "Disable Control Panel," "Disable Display in Control Panel," and "
 
 <!-- NoSetFolders-End -->
 
+<!-- NoSetTaskbar-Begin -->
+## NoSetTaskbar
+
+<!-- NoSetTaskbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSetTaskbar-Applicability-End -->
+
+<!-- NoSetTaskbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSetTaskbar
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSetTaskbar
+```
+<!-- NoSetTaskbar-OmaUri-End -->
+
+<!-- NoSetTaskbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to prevent changes to Taskbar and Start Menu Settings.
+
+- If you enable this policy setting, The user will be prevented from opening the Taskbar Properties dialog box.
+
+If the user right-clicks the taskbar and then clicks Properties, a message appears explaining that a setting prevents the action.
+
+- If you disable or do not configure this policy setting, the Taskbar and Start Menu items are available from Settings on the Start menu.
+<!-- NoSetTaskbar-Description-End -->
+
+<!-- NoSetTaskbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSetTaskbar-Editable-End -->
+
+<!-- NoSetTaskbar-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSetTaskbar-DFProperties-End -->
+
+<!-- NoSetTaskbar-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoSetTaskbar |
+| Friendly Name | Prevent changes to Taskbar and Start Menu Settings |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSetTaskbar |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSetTaskbar-AdmxBacked-End -->
+
+<!-- NoSetTaskbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSetTaskbar-Examples-End -->
+
+<!-- NoSetTaskbar-End -->
+
 <!-- NoSMConfigurePrograms-Begin -->
 ## NoSMConfigurePrograms
 
@@ -2629,13 +2456,14 @@ Also, see the "Disable Control Panel," "Disable Display in Control Panel," and "
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the Default Programs link from the Start menu.
 
-If you enable this policy setting, the Default Programs link is removed from the Start menu.
+- If you enable this policy setting, the Default Programs link is removed from the Start menu.
 
 Clicking the Default Programs link from the Start menu opens the Default Programs control panel and provides administrators the ability to specify default programs for certain activities, such as Web browsing or sending e-mail, as well as which programs are accessible from the Start menu, desktop, and other locations.
 
-If you disable or do not configure this policy setting, the Default Programs link is available from the Start menu.
+- If you disable or do not configure this policy setting, the Default Programs link is available from the Start menu.
 
-Note: This policy setting does not prevent the Set Default Programs for This Computer option from appearing in the Default Programs control panel.
+> [!NOTE]
+> This policy setting does not prevent the Set Default Programs for This Computer option from appearing in the Default Programs control panel.
 <!-- NoSMConfigurePrograms-Description-End -->
 
 <!-- NoSMConfigurePrograms-Editable-Begin -->
@@ -2653,7 +2481,7 @@ Note: This policy setting does not prevent the Set Default Programs for This Com
 
 <!-- NoSMConfigurePrograms-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2693,11 +2521,12 @@ Note: This policy setting does not prevent the Set Default Programs for This Com
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the Documents icon from the Start menu and its submenus.
 
-If you enable this policy setting, the Documents icon is removed from the Start menu and its submenus. Enabling this policy setting only removes the icon. It does not prevent the user from using other methods to gain access to the contents of the Documents folder.
+- If you enable this policy setting, the Documents icon is removed from the Start menu and its submenus. Enabling this policy setting only removes the icon. It does not prevent the user from using other methods to gain access to the contents of the Documents folder.
 
-Note: To make changes to this policy setting effective, you must log off and then log on.
+> [!NOTE]
+> To make changes to this policy setting effective, you must log off and then log on.
 
-If you disable or do not configure this policy setting, he Documents icon is available from the Start menu.
+- If you disable or do not configure this policy setting, he Documents icon is available from the Start menu.
 
 Also, see the "Remove Documents icon on the desktop" policy setting.
 <!-- NoSMMyDocuments-Description-End -->
@@ -2717,7 +2546,7 @@ Also, see the "Remove Documents icon on the desktop" policy setting.
 
 <!-- NoSMMyDocuments-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2757,9 +2586,9 @@ Also, see the "Remove Documents icon on the desktop" policy setting.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the Music icon from Start Menu.
 
-If you enable this policy setting, the Music icon is no longer available from Start Menu.
+- If you enable this policy setting, the Music icon is no longer available from Start Menu.
 
-If you disable or do not configure this policy setting, the Music icon is available from Start Menu.
+- If you disable or do not configure this policy setting, the Music icon is available from Start Menu.
 <!-- NoSMMyMusic-Description-End -->
 
 <!-- NoSMMyMusic-Editable-Begin -->
@@ -2777,7 +2606,7 @@ If you disable or do not configure this policy setting, the Music icon is availa
 
 <!-- NoSMMyMusic-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2817,9 +2646,9 @@ If you disable or do not configure this policy setting, the Music icon is availa
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the Network icon from Start Menu.
 
-If you enable this policy setting, the Network icon is no longer available from Start Menu.
+- If you enable this policy setting, the Network icon is no longer available from Start Menu.
 
-If you disable or do not configure this policy setting, the Network icon is available from Start Menu.
+- If you disable or do not configure this policy setting, the Network icon is available from Start Menu.
 <!-- NoSMMyNetworkPlaces-Description-End -->
 
 <!-- NoSMMyNetworkPlaces-Editable-Begin -->
@@ -2837,7 +2666,7 @@ If you disable or do not configure this policy setting, the Network icon is avai
 
 <!-- NoSMMyNetworkPlaces-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2877,9 +2706,9 @@ If you disable or do not configure this policy setting, the Network icon is avai
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the Pictures icon from Start Menu.
 
-If you enable this policy setting, the Pictures icon is no longer available from Start Menu.
+- If you enable this policy setting, the Pictures icon is no longer available from Start Menu.
 
-If you disable or do not configure this policy setting, the Pictures icon is available from Start Menu.
+- If you disable or do not configure this policy setting, the Pictures icon is available from Start Menu.
 <!-- NoSMMyPictures-Description-End -->
 
 <!-- NoSMMyPictures-Editable-Begin -->
@@ -2897,7 +2726,7 @@ If you disable or do not configure this policy setting, the Pictures icon is ava
 
 <!-- NoSMMyPictures-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2937,9 +2766,9 @@ If you disable or do not configure this policy setting, the Pictures icon is ava
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the Downloads link from the Start Menu.
 
-If you enable this policy setting, the Start Menu does not show a link to the Downloads folder.
+- If you enable this policy setting, the Start Menu does not show a link to the Downloads folder.
 
-If you disable or do not configure this policy setting, the Downloads link is available from the Start Menu.
+- If you disable or do not configure this policy setting, the Downloads link is available from the Start Menu.
 <!-- NoStartMenuDownload-Description-End -->
 
 <!-- NoStartMenuDownload-Editable-Begin -->
@@ -2957,7 +2786,7 @@ If you disable or do not configure this policy setting, the Downloads link is av
 
 <!-- NoStartMenuDownload-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2995,9 +2824,9 @@ If you disable or do not configure this policy setting, the Downloads link is av
 
 <!-- NoStartMenuHomegroup-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy the Start menu will not show a link to Homegroup. It also removes the homegroup item from the Start Menu options. As a result, users cannot add the homegroup link to the Start Menu.
+- If you enable this policy the Start menu will not show a link to Homegroup. It also removes the homegroup item from the Start Menu options. As a result, users cannot add the homegroup link to the Start Menu.
 
-If you disable or do not configure this policy, users can use the Start Menu options to add or remove the homegroup link from the Start Menu.
+- If you disable or do not configure this policy, users can use the Start Menu options to add or remove the homegroup link from the Start Menu.
 <!-- NoStartMenuHomegroup-Description-End -->
 
 <!-- NoStartMenuHomegroup-Editable-Begin -->
@@ -3015,7 +2844,7 @@ If you disable or do not configure this policy, users can use the Start Menu opt
 
 <!-- NoStartMenuHomegroup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3055,9 +2884,9 @@ If you disable or do not configure this policy, users can use the Start Menu opt
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the Recorded TV link from the Start Menu.
 
-If you enable this policy setting, the Start Menu does not show a link to the Recorded TV library.
+- If you enable this policy setting, the Start Menu does not show a link to the Recorded TV library.
 
-If you disable or do not configure this policy setting, the Recorded TV link is available from the Start Menu.
+- If you disable or do not configure this policy setting, the Recorded TV link is available from the Start Menu.
 <!-- NoStartMenuRecordedTV-Description-End -->
 
 <!-- NoStartMenuRecordedTV-Editable-Begin -->
@@ -3075,7 +2904,7 @@ If you disable or do not configure this policy setting, the Recorded TV link is 
 
 <!-- NoStartMenuRecordedTV-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3117,11 +2946,11 @@ Hides all folders on the user-specific (top) section of the Start menu. Other it
 
 This setting is designed for use with redirected folders. Redirected folders appear on the main (bottom) section of the Start menu. However, the original, user-specific version of the folder still appears on the top section of the Start menu. Because the appearance of two folders with the same name might confuse users, you can use this setting to hide user-specific folders.
 
-Note that this setting hides all user-specific folders, not just those associated with redirected folders.
+**Note** that this setting hides all user-specific folders, not just those associated with redirected folders.
 
-If you enable this setting, no folders appear on the top section of the Start menu. If users add folders to the Start Menu directory in their user profiles, the folders appear in the directory but not on the Start menu.
+- If you enable this setting, no folders appear on the top section of the Start menu. If users add folders to the Start Menu directory in their user profiles, the folders appear in the directory but not on the Start menu.
 
-If you disable this setting or do not configured it, Windows 2000 Professional and Windows XP Professional display folders on both sections of the Start menu.
+- If you disable this setting or do not configured it, Windows 2000 Professional and Windows XP Professional display folders on both sections of the Start menu.
 <!-- NoStartMenuSubFolders-Description-End -->
 
 <!-- NoStartMenuSubFolders-Editable-Begin -->
@@ -3139,7 +2968,7 @@ If you disable this setting or do not configured it, Windows 2000 Professional a
 
 <!-- NoStartMenuSubFolders-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3179,9 +3008,9 @@ If you disable this setting or do not configured it, Windows 2000 Professional a
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the Videos link from the Start Menu.
 
-If you enable this policy setting, the Start Menu does not show a link to the Videos library.
+- If you enable this policy setting, the Start Menu does not show a link to the Videos library.
 
-If you disable or do not configure this policy setting, the Videos link is available from the Start Menu.
+- If you disable or do not configure this policy setting, the Videos link is available from the Start Menu.
 <!-- NoStartMenuVideos-Description-End -->
 
 <!-- NoStartMenuVideos-Editable-Begin -->
@@ -3199,7 +3028,7 @@ If you disable or do not configure this policy setting, the Videos link is avail
 
 <!-- NoStartMenuVideos-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3241,11 +3070,11 @@ This setting affects the presentation of the Start menu.
 
 The classic Start menu in Windows 2000 Professional allows users to begin common tasks, while the new Start menu consolidates common items onto one menu. When the classic Start menu is used, the following icons are placed on the desktop: Documents, Pictures, Music, Computer, and Network. The new Start menu starts them directly.
 
-If you enable this setting, the Start menu displays the classic Start menu in the Windows 2000 style and displays the standard desktop icons.
+- If you enable this setting, the Start menu displays the classic Start menu in the Windows 2000 style and displays the standard desktop icons.
 
-If you disable this setting, the Start menu only displays in the new style, meaning the desktop icons are now on the Start page.
+- If you disable this setting, the Start menu only displays in the new style, meaning the desktop icons are now on the Start page.
 
-If you do not configure this setting, the default is the new style, and the user can change the view.
+- If you do not configure this setting, the default is the new style, and the user can change the view.
 <!-- NoStartPage-Description-End -->
 
 <!-- NoStartPage-Editable-Begin -->
@@ -3263,7 +3092,7 @@ If you do not configure this setting, the default is the new style, and the user
 
 <!-- NoStartPage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3303,9 +3132,9 @@ If you do not configure this setting, the default is the new style, and the user
 <!-- Description-Source-ADMX -->
 Prevents the clock in the system notification area from being displayed.
 
-If you enable this setting, the clock will not be displayed in the system notification area.
+- If you enable this setting, the clock will not be displayed in the system notification area.
 
-If you disable or do not configure this setting, the default behavior of the clock appearing in the notification area will occur.
+- If you disable or do not configure this setting, the default behavior of the clock appearing in the notification area will occur.
 <!-- NoTaskBarClock-Description-End -->
 
 <!-- NoTaskBarClock-Editable-Begin -->
@@ -3323,7 +3152,7 @@ If you disable or do not configure this setting, the default behavior of the clo
 
 <!-- NoTaskBarClock-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3365,7 +3194,7 @@ This setting affects the taskbar buttons used to switch between running programs
 
 Taskbar grouping consolidates similar applications when there is no room on the taskbar. It kicks in when the user's taskbar is full.
 
-If you enable this setting, it prevents the taskbar from grouping items that share the same program name. By default, this setting is always enabled.
+- If you enable this setting, it prevents the taskbar from grouping items that share the same program name. By default, this setting is always enabled.
 
 If you disable or do not configure it, items on the taskbar that share the same program are grouped together. The users have the option to disable grouping if they choose.
 <!-- NoTaskGrouping-Description-End -->
@@ -3385,7 +3214,7 @@ If you disable or do not configure it, items on the taskbar that share the same 
 
 <!-- NoTaskGrouping-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3427,9 +3256,9 @@ This setting affects the taskbar.
 
 The taskbar includes the Start button, buttons for currently running tasks, custom toolbars, the notification area, and the system clock. Toolbars include Quick Launch, Address, Links, Desktop, and other custom toolbars created by the user or by an application.
 
-If this setting is enabled, the taskbar does not display any custom toolbars, and the user cannot add any custom toolbars to the taskbar. Moreover, the "Toolbars" menu command and submenu are removed from the context menu. The taskbar displays only the Start button, taskbar buttons, the notification area, and the system clock.
+- If this setting is enabled, the taskbar does not display any custom toolbars, and the user cannot add any custom toolbars to the taskbar. Moreover, the "Toolbars" menu command and submenu are removed from the context menu. The taskbar displays only the Start button, taskbar buttons, the notification area, and the system clock.
 
-If this setting is disabled or is not configured, the taskbar displays all toolbars. Users can add or remove custom toolbars, and the "Toolbars" command appears in the context menu.
+- If this setting is disabled or is not configured, the taskbar displays all toolbars. Users can add or remove custom toolbars, and the "Toolbars" command appears in the context menu.
 <!-- NoToolbarsOnTaskbar-Description-End -->
 
 <!-- NoToolbarsOnTaskbar-Editable-Begin -->
@@ -3447,7 +3276,7 @@ If this setting is disabled or is not configured, the taskbar displays all toolb
 
 <!-- NoToolbarsOnTaskbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3467,6 +3296,72 @@ If this setting is disabled or is not configured, the taskbar displays all toolb
 <!-- NoToolbarsOnTaskbar-Examples-End -->
 
 <!-- NoToolbarsOnTaskbar-End -->
+
+<!-- NoTrayContextMenu-Begin -->
+## NoTrayContextMenu
+
+<!-- NoTrayContextMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoTrayContextMenu-Applicability-End -->
+
+<!-- NoTrayContextMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoTrayContextMenu
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoTrayContextMenu
+```
+<!-- NoTrayContextMenu-OmaUri-End -->
+
+<!-- NoTrayContextMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove access to the context menus for the taskbar.
+
+- If you enable this policy setting, the menus that appear when you right-click the taskbar and items on the taskbar are hidden, such as the Start button, the clock, and the taskbar buttons.
+
+- If you disable or do not configure this policy setting, the context menus for the taskbar are available.
+
+This policy setting does not prevent users from using other methods to issue the commands that appear on these menus.
+<!-- NoTrayContextMenu-Description-End -->
+
+<!-- NoTrayContextMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoTrayContextMenu-Editable-End -->
+
+<!-- NoTrayContextMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoTrayContextMenu-DFProperties-End -->
+
+<!-- NoTrayContextMenu-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoTrayContextMenu |
+| Friendly Name | Remove access to the context menus for the taskbar |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoTrayContextMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoTrayContextMenu-AdmxBacked-End -->
+
+<!-- NoTrayContextMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoTrayContextMenu-Examples-End -->
+
+<!-- NoTrayContextMenu-End -->
 
 <!-- NoTrayItemsDisplay-Begin -->
 ## NoTrayItemsDisplay
@@ -3489,11 +3384,12 @@ This setting affects the notification area (previously called the "system tray")
 
 Description: The notification area is located at the far right end of the task bar and includes the icons for current notifications and the system clock.
 
-If this setting is enabled, the user’s entire notification area, including the notification icons, is hidden. The taskbar displays only the Start button, taskbar buttons, custom toolbars (if any), and the system clock.
+- If this setting is enabled, the user's entire notification area, including the notification icons, is hidden. The taskbar displays only the Start button, taskbar buttons, custom toolbars (if any), and the system clock.
 
-If this setting is disabled or is not configured, the notification area is shown in the user's taskbar.
+- If this setting is disabled or is not configured, the notification area is shown in the user's taskbar.
 
-Note: Enabling this setting overrides the "Turn off notification area cleanup" setting, because if the notification area is hidden, there is no need to clean up the icons.
+> [!NOTE]
+> Enabling this setting overrides the "Turn off notification area cleanup" setting, because if the notification area is hidden, there is no need to clean up the icons.
 <!-- NoTrayItemsDisplay-Description-End -->
 
 <!-- NoTrayItemsDisplay-Editable-Begin -->
@@ -3511,7 +3407,7 @@ Note: Enabling this setting overrides the "Turn off notification area cleanup" s
 
 <!-- NoTrayItemsDisplay-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3532,6 +3428,68 @@ Note: Enabling this setting overrides the "Turn off notification area cleanup" s
 
 <!-- NoTrayItemsDisplay-End -->
 
+<!-- NoUninstallFromStart-Begin -->
+## NoUninstallFromStart
+
+<!-- NoUninstallFromStart-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoUninstallFromStart-Applicability-End -->
+
+<!-- NoUninstallFromStart-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoUninstallFromStart
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoUninstallFromStart
+```
+<!-- NoUninstallFromStart-OmaUri-End -->
+
+<!-- NoUninstallFromStart-Description-Begin -->
+<!-- Description-Source-ADMX -->
+- If you enable this setting, users cannot uninstall apps from Start.
+
+- If you disable this setting or do not configure it, users can access the uninstall command from Start
+<!-- NoUninstallFromStart-Description-End -->
+
+<!-- NoUninstallFromStart-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoUninstallFromStart-Editable-End -->
+
+<!-- NoUninstallFromStart-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoUninstallFromStart-DFProperties-End -->
+
+<!-- NoUninstallFromStart-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoUninstallFromStart |
+| Friendly Name | Prevent users from uninstalling applications from Start |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoUninstallFromStart |
+| ADMX File Name | StartMenu.admx |
+<!-- NoUninstallFromStart-AdmxBacked-End -->
+
+<!-- NoUninstallFromStart-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoUninstallFromStart-Examples-End -->
+
+<!-- NoUninstallFromStart-End -->
+
 <!-- NoUserFolderOnStartMenu-Begin -->
 ## NoUserFolderOnStartMenu
 
@@ -3549,9 +3507,9 @@ Note: Enabling this setting overrides the "Turn off notification area cleanup" s
 
 <!-- NoUserFolderOnStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy the start menu will not show a link to the user's storage folder.
+- If you enable this policy the start menu will not show a link to the user's storage folder.
 
-If you disable or do not configure this policy, the start menu will display a link, unless the user chooses to remove it in the start menu control panel.
+- If you disable or do not configure this policy, the start menu will display a link, unless the user chooses to remove it in the start menu control panel.
 <!-- NoUserFolderOnStartMenu-Description-End -->
 
 <!-- NoUserFolderOnStartMenu-Editable-Begin -->
@@ -3569,7 +3527,7 @@ If you disable or do not configure this policy, the start menu will display a li
 
 <!-- NoUserFolderOnStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3609,11 +3567,11 @@ If you disable or do not configure this policy, the start menu will display a li
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the user name label from the Start Menu in Windows XP and Windows Server 2003.
 
-If you enable this policy setting, the user name label is removed from the Start Menu in Windows XP and Windows Server 2003.
+- If you enable this policy setting, the user name label is removed from the Start Menu in Windows XP and Windows Server 2003.
 
 To remove the user name folder on Windows Vista, set the "Remove user folder link from Start Menu" policy setting.
 
-If you disable or do not configure this policy setting, the user name label appears on the Start Menu in Windows XP and Windows Server 2003.
+- If you disable or do not configure this policy setting, the user name label appears on the Start Menu in Windows XP and Windows Server 2003.
 <!-- NoUserNameOnStartMenu-Description-End -->
 
 <!-- NoUserNameOnStartMenu-Editable-Begin -->
@@ -3631,7 +3589,7 @@ If you disable or do not configure this policy setting, the user name label appe
 
 <!-- NoUserNameOnStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3671,13 +3629,13 @@ If you disable or do not configure this policy setting, the user name label appe
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove links and access to Windows Update.
 
-If you enable this policy setting, users are prevented from connecting to the Windows Update Web site.
+- If you enable this policy setting, users are prevented from connecting to the Windows Update Web site.
 
 Enabling this policy setting blocks user access to the Windows Update Web site at <https://windowsupdate.microsoft.com>. Also, the policy setting removes the Windows Update hyperlink from the Start menu and from the Tools menu in Internet Explorer.
 
-Windows Update, the online extension of Windows, offers software updates to keep a user’s system up-to-date. The Windows Update Product Catalog determines any system files, security fixes, and Microsoft updates that users need and shows the newest versions available for download.
+Windows Update, the online extension of Windows, offers software updates to keep a user's system up-to-date. The Windows Update Product Catalog determines any system files, security fixes, and Microsoft updates that users need and shows the newest versions available for download.
 
-If you disable or do not configure this policy setting, the Windows Update hyperlink is available from the Start menu and from the Tools menu in Internet Explorer.
+- If you disable or do not configure this policy setting, the Windows Update hyperlink is available from the Start menu and from the Tools menu in Internet Explorer.
 
 Also, see the "Hide the "Add programs from Microsoft" option" policy setting.
 <!-- NoWindowsUpdate-Description-End -->
@@ -3697,7 +3655,7 @@ Also, see the "Hide the "Add programs from Microsoft" option" policy setting.
 
 <!-- NoWindowsUpdate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3737,11 +3695,11 @@ Also, see the "Hide the "Add programs from Microsoft" option" policy setting.
 <!-- Description-Source-ADMX -->
 Set the default action of the power button on the Start menu.
 
-If you enable this setting, the Start Menu will set the power button to the chosen action, and not let the user change this action.
+- If you enable this setting, the Start Menu will set the power button to the chosen action, and not let the user change this action.
 
 If you set the button to either Sleep or Hibernate, and that state is not supported on a computer, then the button will fall back to Shut Down.
 
-If you disable or do not configure this setting, the Start Menu power button will be set to Shut Down by default, and the user can change this setting to another action.
+- If you disable or do not configure this setting, the Start Menu power button will be set to Shut Down by default, and the user can change this setting to another action.
 <!-- PowerButtonAction-Description-End -->
 
 <!-- PowerButtonAction-Editable-Begin -->
@@ -3759,13 +3717,13 @@ If you disable or do not configure this setting, the Start Menu power button wil
 
 <!-- PowerButtonAction-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | PowerButtonAction_DisplayName |
+| Name | PowerButtonAction |
 | Friendly Name | Change Start Menu power button |
 | Location | User Configuration |
 | Path | Start Menu and Taskbar |
@@ -3798,11 +3756,11 @@ If you disable or do not configure this setting, the Start Menu power button wil
 <!-- Description-Source-ADMX -->
 This policy setting controls whether the QuickLaunch bar is displayed in the Taskbar.
 
-If you enable this policy setting, the QuickLaunch bar will be visible and cannot be turned off.
+- If you enable this policy setting, the QuickLaunch bar will be visible and cannot be turned off.
 
-If you disable this policy setting, the QuickLaunch bar will be hidden and cannot be turned on.
+- If you disable this policy setting, the QuickLaunch bar will be hidden and cannot be turned on.
 
-If you do not configure this policy setting, then users will be able to turn the QuickLaunch bar on and off.
+- If you do not configure this policy setting, then users will be able to turn the QuickLaunch bar on and off.
 <!-- QuickLaunchEnabled-Description-End -->
 
 <!-- QuickLaunchEnabled-Editable-Begin -->
@@ -3820,7 +3778,7 @@ If you do not configure this policy setting, then users will be able to turn the
 
 <!-- QuickLaunchEnabled-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3858,9 +3816,9 @@ If you do not configure this policy setting, then users will be able to turn the
 
 <!-- RemoveUnDockPCButton-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this setting, the "Undock PC" button is removed from the simple Start Menu, and your PC cannot be undocked.
+- If you enable this setting, the "Undock PC" button is removed from the simple Start Menu, and your PC cannot be undocked.
 
-If you disable this setting or do not configure it, the "Undock PC" button remains on the simple Start menu, and your PC can be undocked.
+- If you disable this setting or do not configure it, the "Undock PC" button remains on the simple Start menu, and your PC can be undocked.
 <!-- RemoveUnDockPCButton-Description-End -->
 
 <!-- RemoveUnDockPCButton-Editable-Begin -->
@@ -3878,7 +3836,7 @@ If you disable this setting or do not configure it, the "Undock PC" button remai
 
 <!-- RemoveUnDockPCButton-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3918,9 +3876,9 @@ If you disable this setting or do not configure it, the "Undock PC" button remai
 <!-- Description-Source-ADMX -->
 This policy setting allows the Apps view to be opened by default when the user goes to Start.
 
-If you enable this policy setting, the Apps view will appear whenever the user goes to Start. Users will still be able to switch between the Apps view and the Start screen.
+- If you enable this policy setting, the Apps view will appear whenever the user goes to Start. Users will still be able to switch between the Apps view and the Start screen.
 
-If you disable or don’t configure this policy setting, the Start screen will appear by default whenever the user goes to Start, and the user will be able to switch between the Apps view and the Start screen. Also, the user will be able to configure this setting.
+- If you disable or don't configure this policy setting, the Start screen will appear by default whenever the user goes to Start, and the user will be able to switch between the Apps view and the Start screen. Also, the user will be able to configure this setting.
 <!-- ShowAppsViewOnStart-Description-End -->
 
 <!-- ShowAppsViewOnStart-Editable-Begin -->
@@ -3938,7 +3896,7 @@ If you disable or don’t configure this policy setting, the Start screen will a
 
 <!-- ShowAppsViewOnStart-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3978,11 +3936,12 @@ If you disable or don’t configure this policy setting, the Start screen will a
 <!-- Description-Source-ADMX -->
 This policy setting shows or hides the "Run as different user" command on the Start application bar.
 
-If you enable this setting, users can access the "Run as different user" command from Start for applications which support this functionality.
+- If you enable this setting, users can access the "Run as different user" command from Start for applications which support this functionality.
 
-If you disable this setting or do not configure it, users cannot access the "Run as different user" command from Start for any applications.
+- If you disable this setting or do not configure it, users cannot access the "Run as different user" command from Start for any applications.
 
-Note: This setting does not prevent users from using other methods, such as the shift right-click menu on application's jumplists in the taskbar to issue the "Run as different user" command.
+> [!NOTE]
+> This setting does not prevent users from using other methods, such as the shift right-click menu on application's jumplists in the taskbar to issue the "Run as different user" command.
 <!-- ShowRunAsDifferentUserInStart-Description-End -->
 
 <!-- ShowRunAsDifferentUserInStart-Editable-Begin -->
@@ -4000,7 +3959,7 @@ Note: This setting does not prevent users from using other methods, such as the 
 
 <!-- ShowRunAsDifferentUserInStart-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4038,7 +3997,8 @@ Note: This setting does not prevent users from using other methods, such as the 
 
 <!-- ShowRunInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this setting, the Run command is added to the Start menu. If you disable or do not configure this setting, the Run command is not visible on the Start menu by default, but it can be added from the Taskbar and Start menu properties. If the Remove Run link from Start Menu policy is set, the Add the Run command to the Start menu policy has no effect.
+- If you enable this setting, the Run command is added to the Start menu.
+- If you disable or do not configure this setting, the Run command is not visible on the Start menu by default, but it can be added from the Taskbar and Start menu properties. If the Remove Run link from Start Menu policy is set, the Add the Run command to the Start menu policy has no effect.
 <!-- ShowRunInStartMenu-Description-End -->
 
 <!-- ShowRunInStartMenu-Editable-Begin -->
@@ -4056,7 +4016,7 @@ If you enable this setting, the Run command is added to the Start menu. If you d
 
 <!-- ShowRunInStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4096,9 +4056,9 @@ If you enable this setting, the Run command is added to the Start menu. If you d
 <!-- Description-Source-ADMX -->
 This policy setting allows the Start screen to appear on the display the user is using when they press the Windows logo key. This setting only applies to users who are using multiple displays.
 
-If you enable this policy setting, the Start screen will appear on the display the user is using when they press the Windows logo key.
+- If you enable this policy setting, the Start screen will appear on the display the user is using when they press the Windows logo key.
 
-If you disable or don't configure this policy setting, the Start screen will always appear on the main display when the user presses the Windows logo key. Users will still be able to open Start on other displays by pressing the Start button on that display. Also, the user will be able to configure this setting.
+- If you disable or don't configure this policy setting, the Start screen will always appear on the main display when the user presses the Windows logo key. Users will still be able to open Start on other displays by pressing the Start button on that display. Also, the user will be able to configure this setting.
 <!-- ShowStartOnDisplayWithForegroundOnWinKey-Description-End -->
 
 <!-- ShowStartOnDisplayWithForegroundOnWinKey-Editable-Begin -->
@@ -4116,7 +4076,7 @@ If you disable or don't configure this policy setting, the Start screen will alw
 
 <!-- ShowStartOnDisplayWithForegroundOnWinKey-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4156,13 +4116,14 @@ If you disable or don't configure this policy setting, the Start screen will alw
 <!-- Description-Source-ADMX -->
 This policy setting allows you to removes the "Log Off `<username>`" item from the Start menu and prevents users from restoring it.
 
-If you enable this policy setting, the Log Off `<username>` item does not appear in the Start menu. This policy setting also removes the Display Logoff item from Start Menu Options. As a result, users cannot restore the Log Off `<username>` item to the Start Menu.
+- If you enable this policy setting, the Log Off `<username>` item does not appear in the Start menu. This policy setting also removes the Display Logoff item from Start Menu Options. As a result, users cannot restore the Log Off `<username>` item to the Start Menu.
 
-If you disable or do not configure this policy setting, users can use the Display Logoff item to add and remove the Log Off item.
+- If you disable or do not configure this policy setting, users can use the Display Logoff item to add and remove the Log Off item.
 
 This policy setting affects the Start menu only. It does not affect the Log Off item on the Windows Security dialog box that appears when you press Ctrl+Alt+Del, and it does not prevent users from using other methods to log off.
 
-Tip: To add or remove the Log Off item on a computer, click Start, click Settings, click Taskbar and Start Menu, click the Start Menu Options tab and, in the Start Menu Settings box, click Display Logoff.
+> [!TIP]
+> To add or remove the Log Off item on a computer, click Start, click Settings, click Taskbar and Start Menu, click the Start Menu Options tab and, in the Start Menu Settings box, click Display Logoff.
 
 See also: "Remove Logoff" policy setting in User Configuration\Administrative Templates\System\Logon/Logoff.
 <!-- StartMenuLogOff-Description-End -->
@@ -4182,7 +4143,7 @@ See also: "Remove Logoff" policy setting in User Configuration\Administrative Te
 
 <!-- StartMenuLogOff-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4202,6 +4163,66 @@ See also: "Remove Logoff" policy setting in User Configuration\Administrative Te
 <!-- StartMenuLogOff-Examples-End -->
 
 <!-- StartMenuLogOff-End -->
+
+<!-- StartPinAppsWhenInstalled-Begin -->
+## StartPinAppsWhenInstalled
+
+<!-- StartPinAppsWhenInstalled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- StartPinAppsWhenInstalled-Applicability-End -->
+
+<!-- StartPinAppsWhenInstalled-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/StartPinAppsWhenInstalled
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/StartPinAppsWhenInstalled
+```
+<!-- StartPinAppsWhenInstalled-OmaUri-End -->
+
+<!-- StartPinAppsWhenInstalled-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows pinning apps to Start by default, when they are included by AppID on the list.
+<!-- StartPinAppsWhenInstalled-Description-End -->
+
+<!-- StartPinAppsWhenInstalled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StartPinAppsWhenInstalled-Editable-End -->
+
+<!-- StartPinAppsWhenInstalled-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StartPinAppsWhenInstalled-DFProperties-End -->
+
+<!-- StartPinAppsWhenInstalled-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | StartPinAppsWhenInstalled |
+| Friendly Name | Pin Apps to Start when installed |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | StartPinAppsWhenInstalled |
+| ADMX File Name | StartMenu.admx |
+<!-- StartPinAppsWhenInstalled-AdmxBacked-End -->
+
+<!-- StartPinAppsWhenInstalled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StartPinAppsWhenInstalled-Examples-End -->
+
+<!-- StartPinAppsWhenInstalled-End -->
 
 <!-- ADMX_StartMenu-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

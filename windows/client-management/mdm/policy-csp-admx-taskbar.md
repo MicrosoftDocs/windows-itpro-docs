@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Taskbar Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/04/2023
+ms.date: 01/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_Taskbar
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -52,9 +50,9 @@ This policy setting removes Notifications and Action Center from the notificatio
 
 The notification area is located at the far right end of the taskbar and includes icons for current notifications and the system clock.
 
-If this setting is enabled, Notifications and Action Center is not displayed in the notification area. The user will be able to read notifications when they appear, but they won’t be able to review any notifications they miss.
+- If this setting is enabled, Notifications and Action Center is not displayed in the notification area. The user will be able to read notifications when they appear, but they won't be able to review any notifications they miss.
 
-If you disable or do not configure this policy setting, Notification and Security and Maintenance will be displayed on the taskbar.
+- If you disable or do not configure this policy setting, Notification and Security and Maintenance will be displayed on the taskbar.
 
 A reboot is required for this policy setting to take effect.
 <!-- DisableNotificationCenter-Description-End -->
@@ -74,7 +72,7 @@ A reboot is required for this policy setting to take effect.
 
 <!-- DisableNotificationCenter-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -95,70 +93,6 @@ A reboot is required for this policy setting to take effect.
 
 <!-- DisableNotificationCenter-End -->
 
-<!-- TaskbarNoPinnedList-Begin -->
-## TaskbarNoPinnedList
-
-<!-- TaskbarNoPinnedList-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TaskbarNoPinnedList-Applicability-End -->
-
-<!-- TaskbarNoPinnedList-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoPinnedList
-```
-
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoPinnedList
-```
-<!-- TaskbarNoPinnedList-OmaUri-End -->
-
-<!-- TaskbarNoPinnedList-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to remove pinned programs from the taskbar.
-
-If you enable this policy setting, pinned programs are prevented from being shown on the Taskbar. Users cannot pin programs to the Taskbar.
-
-If you disable or do not configure this policy setting, users can pin programs so that the program shortcuts stay on the Taskbar.
-<!-- TaskbarNoPinnedList-Description-End -->
-
-<!-- TaskbarNoPinnedList-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TaskbarNoPinnedList-Editable-End -->
-
-<!-- TaskbarNoPinnedList-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TaskbarNoPinnedList-DFProperties-End -->
-
-<!-- TaskbarNoPinnedList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TaskbarNoPinnedList |
-| Friendly Name | Remove pinned programs from the Taskbar |
-| Location | Computer and User Configuration |
-| Path | Start Menu and Taskbar |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
-| Registry Value Name | TaskbarNoPinnedList |
-| ADMX File Name | Taskbar.admx |
-<!-- TaskbarNoPinnedList-AdmxBacked-End -->
-
-<!-- TaskbarNoPinnedList-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TaskbarNoPinnedList-Examples-End -->
-
-<!-- TaskbarNoPinnedList-End -->
-
 <!-- EnableLegacyBalloonNotifications-Begin -->
 ## EnableLegacyBalloonNotifications
 
@@ -178,11 +112,11 @@ If you disable or do not configure this policy setting, users can pin programs s
 <!-- Description-Source-ADMX -->
 This policy disables the functionality that converts balloons to toast notifications.
 
-If you enable this policy setting, system and application notifications will render as balloons instead of toast notifications.
+- If you enable this policy setting, system and application notifications will render as balloons instead of toast notifications.
 
 Enable this policy setting if a specific app or system component that uses balloon notifications has compatibility issues with toast notifications.
 
-If you disable or don’t configure this policy setting, all notifications will appear as toast notifications.
+- If you disable or don't configure this policy setting, all notifications will appear as toast notifications.
 
 A reboot is required for this policy setting to take effect.
 <!-- EnableLegacyBalloonNotifications-Description-End -->
@@ -202,7 +136,7 @@ A reboot is required for this policy setting to take effect.
 
 <!-- EnableLegacyBalloonNotifications-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -242,9 +176,9 @@ A reboot is required for this policy setting to take effect.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove Security and Maintenance from the system control area.
 
-If you enable this policy setting, the Security and Maintenance icon is not displayed in the system notification area.
+- If you enable this policy setting, the Security and Maintenance icon is not displayed in the system notification area.
 
-If you disable or do not configure this policy setting, the Security and Maintenance icon is displayed in the system notification area.
+- If you disable or do not configure this policy setting, the Security and Maintenance icon is displayed in the system notification area.
 <!-- HideSCAHealth-Description-End -->
 
 <!-- HideSCAHealth-Editable-Begin -->
@@ -262,7 +196,7 @@ If you disable or do not configure this policy setting, the Security and Mainten
 
 <!-- HideSCAHealth-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -302,9 +236,9 @@ If you disable or do not configure this policy setting, the Security and Mainten
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the networking icon from the system control area.
 
-If you enable this policy setting, the networking icon is not displayed in the system notification area.
+- If you enable this policy setting, the networking icon is not displayed in the system notification area.
 
-If you disable or do not configure this policy setting, the networking icon is displayed in the system notification area.
+- If you disable or do not configure this policy setting, the networking icon is displayed in the system notification area.
 <!-- HideSCANetwork-Description-End -->
 
 <!-- HideSCANetwork-Editable-Begin -->
@@ -322,7 +256,7 @@ If you disable or do not configure this policy setting, the networking icon is d
 
 <!-- HideSCANetwork-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -362,9 +296,9 @@ If you disable or do not configure this policy setting, the networking icon is d
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the battery meter from the system control area.
 
-If you enable this policy setting, the battery meter is not displayed in the system notification area.
+- If you enable this policy setting, the battery meter is not displayed in the system notification area.
 
-If you disable or do not configure this policy setting, the battery meter is displayed in the system notification area.
+- If you disable or do not configure this policy setting, the battery meter is displayed in the system notification area.
 <!-- HideSCAPower-Description-End -->
 
 <!-- HideSCAPower-Editable-Begin -->
@@ -382,13 +316,13 @@ If you disable or do not configure this policy setting, the battery meter is dis
 
 <!-- HideSCAPower-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | HideSCABattery |
+| Name | HideSCAPower |
 | Friendly Name | Remove the battery meter |
 | Location | User Configuration |
 | Path | Start Menu and Taskbar |
@@ -422,9 +356,9 @@ If you disable or do not configure this policy setting, the battery meter is dis
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the volume control icon from the system control area.
 
-If you enable this policy setting, the volume control icon is not displayed in the system notification area.
+- If you enable this policy setting, the volume control icon is not displayed in the system notification area.
 
-If you disable or do not configure this policy setting, the volume control icon is displayed in the system notification area.
+- If you disable or do not configure this policy setting, the volume control icon is displayed in the system notification area.
 <!-- HideSCAVolume-Description-End -->
 
 <!-- HideSCAVolume-Editable-Begin -->
@@ -442,7 +376,7 @@ If you disable or do not configure this policy setting, the volume control icon 
 
 <!-- HideSCAVolume-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -482,7 +416,7 @@ If you disable or do not configure this policy setting, the volume control icon 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off feature advertisement balloon notifications.
 
-If you enable this policy setting, certain notification balloons that are marked as feature advertisements are not shown.
+- If you enable this policy setting, certain notification balloons that are marked as feature advertisements are not shown.
 
 If you disable do not configure this policy setting, feature advertisement balloons are shown.
 <!-- NoBalloonFeatureAdvertisements-Description-End -->
@@ -502,7 +436,7 @@ If you disable do not configure this policy setting, feature advertisement ballo
 
 <!-- NoBalloonFeatureAdvertisements-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -542,9 +476,9 @@ If you disable do not configure this policy setting, feature advertisement ballo
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control pinning the Store app to the Taskbar.
 
-If you enable this policy setting, users cannot pin the Store app to the Taskbar. If the Store app is already pinned to the Taskbar, it will be removed from the Taskbar on next login.
+- If you enable this policy setting, users cannot pin the Store app to the Taskbar. If the Store app is already pinned to the Taskbar, it will be removed from the Taskbar on next login.
 
-If you disable or do not configure this policy setting, users can pin the Store app to the Taskbar.
+- If you disable or do not configure this policy setting, users can pin the Store app to the Taskbar.
 <!-- NoPinningStoreToTaskbar-Description-End -->
 
 <!-- NoPinningStoreToTaskbar-Editable-Begin -->
@@ -562,7 +496,7 @@ If you disable or do not configure this policy setting, users can pin the Store 
 
 <!-- NoPinningStoreToTaskbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -602,9 +536,9 @@ If you disable or do not configure this policy setting, users can pin the Store 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control pinning items in Jump Lists.
 
-If you enable this policy setting, users cannot pin files, folders, websites, or other items to their Jump Lists in the Start Menu and Taskbar. Users also cannot unpin existing items pinned to their Jump Lists. Existing items already pinned to their Jump Lists will continue to show.
+- If you enable this policy setting, users cannot pin files, folders, websites, or other items to their Jump Lists in the Start Menu and Taskbar. Users also cannot unpin existing items pinned to their Jump Lists. Existing items already pinned to their Jump Lists will continue to show.
 
-If you disable or do not configure this policy setting, users can pin files, folders, websites, and other items to a program's Jump List so that the items is always present in this menu.
+- If you disable or do not configure this policy setting, users can pin files, folders, websites, and other items to a program's Jump List so that the items is always present in this menu.
 <!-- NoPinningToDestinations-Description-End -->
 
 <!-- NoPinningToDestinations-Editable-Begin -->
@@ -622,7 +556,7 @@ If you disable or do not configure this policy setting, users can pin files, fol
 
 <!-- NoPinningToDestinations-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -662,9 +596,9 @@ If you disable or do not configure this policy setting, users can pin files, fol
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control pinning programs to the Taskbar.
 
-If you enable this policy setting, users cannot change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users cannot unpin these programs already pinned to the Taskbar, and they cannot pin new programs to the Taskbar.
+- If you enable this policy setting, users cannot change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users cannot unpin these programs already pinned to the Taskbar, and they cannot pin new programs to the Taskbar.
 
-If you disable or do not configure this policy setting, users can change the programs currently pinned to the Taskbar.
+- If you disable or do not configure this policy setting, users can change the programs currently pinned to the Taskbar.
 <!-- NoPinningToTaskbar-Description-End -->
 
 <!-- NoPinningToTaskbar-Editable-Begin -->
@@ -682,7 +616,7 @@ If you disable or do not configure this policy setting, users can change the pro
 
 <!-- NoPinningToTaskbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -724,11 +658,12 @@ This policy setting allows you to control displaying or tracking items in Jump L
 
 The Start Menu and Taskbar display Jump Lists off of programs. These menus include files, folders, websites and other relevant items for that program. This helps users more easily reopen their most important documents and other tasks.
 
-If you enable this policy setting, the Start Menu and Taskbar only track the files that the user opens locally on this computer. Files that the user opens over the network from remote computers are not tracked or shown in the Jump Lists. Use this setting to reduce network traffic, particularly over slow network connections.
+- If you enable this policy setting, the Start Menu and Taskbar only track the files that the user opens locally on this computer. Files that the user opens over the network from remote computers are not tracked or shown in the Jump Lists. Use this setting to reduce network traffic, particularly over slow network connections.
 
-If you disable or do not configure this policy setting, all files that the user opens appear in the menus, including files located remotely on another computer.
+- If you disable or do not configure this policy setting, all files that the user opens appear in the menus, including files located remotely on another computer.
 
-Note: This setting does not prevent Windows from displaying remote files that the user has explicitly pinned to the Jump Lists. See the ""Do not allow pinning items in Jump Lists"" policy setting.
+> [!NOTE]
+> This setting does not prevent Windows from displaying remote files that the user has explicitly pinned to the Jump Lists. See the "Do not allow pinning items in Jump Lists" policy setting.
 <!-- NoRemoteDestinations-Description-End -->
 
 <!-- NoRemoteDestinations-Editable-Begin -->
@@ -746,7 +681,7 @@ Note: This setting does not prevent Windows from displaying remote files that th
 
 <!-- NoRemoteDestinations-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -786,9 +721,9 @@ Note: This setting does not prevent Windows from displaying remote files that th
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off automatic promotion of notification icons to the taskbar.
 
-If you enable this policy setting, newly added notification icons are not temporarily promoted to the Taskbar. Users can still configure icons to be shown or hidden in the Notification Control Panel.
+- If you enable this policy setting, newly added notification icons are not temporarily promoted to the Taskbar. Users can still configure icons to be shown or hidden in the Notification Control Panel.
 
-If you disable or do not configure this policy setting, newly added notification icons are temporarily promoted to the Taskbar.
+- If you disable or do not configure this policy setting, newly added notification icons are temporarily promoted to the Taskbar.
 <!-- NoSystraySystemPromotion-Description-End -->
 
 <!-- NoSystraySystemPromotion-Editable-Begin -->
@@ -806,7 +741,7 @@ If you disable or do not configure this policy setting, newly added notification
 
 <!-- NoSystraySystemPromotion-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -846,11 +781,11 @@ If you disable or do not configure this policy setting, newly added notification
 <!-- Description-Source-ADMX -->
 This policy setting allows users to see Windows Store apps on the taskbar.
 
-If you enable this policy setting, users will see Windows Store apps on the taskbar.
+- If you enable this policy setting, users will see Windows Store apps on the taskbar.
 
-If you disable this policy setting, users won’t see Windows Store apps on the taskbar.
+- If you disable this policy setting, users won't see Windows Store apps on the taskbar.
 
-If you don’t configure this policy setting, the default setting for the user’s device will be used, and the user can choose to change it.
+- If you don't configure this policy setting, the default setting for the user's device will be used, and the user can choose to change it.
 <!-- ShowWindowsStoreAppsOnTaskbar-Description-End -->
 
 <!-- ShowWindowsStoreAppsOnTaskbar-Editable-Begin -->
@@ -868,7 +803,7 @@ If you don’t configure this policy setting, the default setting for the user�
 
 <!-- ShowWindowsStoreAppsOnTaskbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -908,9 +843,9 @@ If you don’t configure this policy setting, the default setting for the user�
 <!-- Description-Source-ADMX -->
 This policy setting allows you to lock all taskbar settings.
 
-If you enable this policy setting, the user cannot access the taskbar control panel. The user is also unable to resize, move or rearrange toolbars on their taskbar.
+- If you enable this policy setting, the user cannot access the taskbar control panel. The user is also unable to resize, move or rearrange toolbars on their taskbar.
 
-If you disable or do not configure this policy setting, the user will be able to set any taskbar setting that is not prevented by another policy setting.
+- If you disable or do not configure this policy setting, the user will be able to set any taskbar setting that is not prevented by another policy setting.
 <!-- TaskbarLockAll-Description-End -->
 
 <!-- TaskbarLockAll-Editable-Begin -->
@@ -928,7 +863,7 @@ If you disable or do not configure this policy setting, the user will be able to
 
 <!-- TaskbarLockAll-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -968,9 +903,9 @@ If you disable or do not configure this policy setting, the user will be able to
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from adding or removing toolbars.
 
-If you enable this policy setting, the user is not allowed to add or remove any toolbars to the taskbar. Applications are not able to add toolbars either.
+- If you enable this policy setting, the user is not allowed to add or remove any toolbars to the taskbar. Applications are not able to add toolbars either.
 
-If you disable or do not configure this policy setting, the users and applications are able to add toolbars to the taskbar.
+- If you disable or do not configure this policy setting, the users and applications are able to add toolbars to the taskbar.
 <!-- TaskbarNoAddRemoveToolbar-Description-End -->
 
 <!-- TaskbarNoAddRemoveToolbar-Editable-Begin -->
@@ -988,7 +923,7 @@ If you disable or do not configure this policy setting, the users and applicatio
 
 <!-- TaskbarNoAddRemoveToolbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1028,9 +963,9 @@ If you disable or do not configure this policy setting, the users and applicatio
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from rearranging toolbars.
 
-If you enable this policy setting, users are not able to drag or drop toolbars to the taskbar.
+- If you enable this policy setting, users are not able to drag or drop toolbars to the taskbar.
 
-If you disable or do not configure this policy setting, users are able to rearrange the toolbars on the taskbar.
+- If you disable or do not configure this policy setting, users are able to rearrange the toolbars on the taskbar.
 <!-- TaskbarNoDragToolbar-Description-End -->
 
 <!-- TaskbarNoDragToolbar-Editable-Begin -->
@@ -1048,7 +983,7 @@ If you disable or do not configure this policy setting, users are able to rearra
 
 <!-- TaskbarNoDragToolbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1088,9 +1023,9 @@ If you disable or do not configure this policy setting, users are able to rearra
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent taskbars from being displayed on more than one monitor.
 
-If you enable this policy setting, users are not able to show taskbars on more than one display. The multiple display section is not enabled in the taskbar properties dialog.
+- If you enable this policy setting, users are not able to show taskbars on more than one display. The multiple display section is not enabled in the taskbar properties dialog.
 
-If you disable or do not configure this policy setting, users can show taskbars on more than one display.
+- If you disable or do not configure this policy setting, users can show taskbars on more than one display.
 <!-- TaskbarNoMultimon-Description-End -->
 
 <!-- TaskbarNoMultimon-Editable-Begin -->
@@ -1108,7 +1043,7 @@ If you disable or do not configure this policy setting, users can show taskbars 
 
 <!-- TaskbarNoMultimon-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1148,9 +1083,9 @@ If you disable or do not configure this policy setting, users can show taskbars 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off all notification balloons.
 
-If you enable this policy setting, no notification balloons are shown to the user.
+- If you enable this policy setting, no notification balloons are shown to the user.
 
-If you disable or do not configure this policy setting, notification balloons are shown to the user.
+- If you disable or do not configure this policy setting, notification balloons are shown to the user.
 <!-- TaskbarNoNotification-Description-End -->
 
 <!-- TaskbarNoNotification-Editable-Begin -->
@@ -1168,7 +1103,7 @@ If you disable or do not configure this policy setting, notification balloons ar
 
 <!-- TaskbarNoNotification-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1189,6 +1124,70 @@ If you disable or do not configure this policy setting, notification balloons ar
 
 <!-- TaskbarNoNotification-End -->
 
+<!-- TaskbarNoPinnedList-Begin -->
+## TaskbarNoPinnedList
+
+<!-- TaskbarNoPinnedList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoPinnedList-Applicability-End -->
+
+<!-- TaskbarNoPinnedList-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoPinnedList
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoPinnedList
+```
+<!-- TaskbarNoPinnedList-OmaUri-End -->
+
+<!-- TaskbarNoPinnedList-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove pinned programs from the taskbar.
+
+- If you enable this policy setting, pinned programs are prevented from being shown on the Taskbar. Users cannot pin programs to the Taskbar.
+
+- If you disable or do not configure this policy setting, users can pin programs so that the program shortcuts stay on the Taskbar.
+<!-- TaskbarNoPinnedList-Description-End -->
+
+<!-- TaskbarNoPinnedList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoPinnedList-Editable-End -->
+
+<!-- TaskbarNoPinnedList-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoPinnedList-DFProperties-End -->
+
+<!-- TaskbarNoPinnedList-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoPinnedList |
+| Friendly Name | Remove pinned programs from the Taskbar |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | TaskbarNoPinnedList |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoPinnedList-AdmxBacked-End -->
+
+<!-- TaskbarNoPinnedList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoPinnedList-Examples-End -->
+
+<!-- TaskbarNoPinnedList-End -->
+
 <!-- TaskbarNoRedock-Begin -->
 ## TaskbarNoRedock
 
@@ -1208,9 +1207,9 @@ If you disable or do not configure this policy setting, notification balloons ar
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from moving taskbar to another screen dock location.
 
-If you enable this policy setting, users are not able to drag their taskbar to another area of the monitor(s).
+- If you enable this policy setting, users are not able to drag their taskbar to another area of the monitor(s).
 
-If you disable or do not configure this policy setting, users are able to drag their taskbar to another area of the monitor unless prevented by another policy setting.
+- If you disable or do not configure this policy setting, users are able to drag their taskbar to another area of the monitor unless prevented by another policy setting.
 <!-- TaskbarNoRedock-Description-End -->
 
 <!-- TaskbarNoRedock-Editable-Begin -->
@@ -1228,7 +1227,7 @@ If you disable or do not configure this policy setting, users are able to drag t
 
 <!-- TaskbarNoRedock-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1268,9 +1267,9 @@ If you disable or do not configure this policy setting, users are able to drag t
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from resizing the taskbar.
 
-If you enable this policy setting, users are not be able to resize their taskbar.
+- If you enable this policy setting, users are not be able to resize their taskbar.
 
-If you disable or do not configure this policy setting, users are able to resize their taskbar unless prevented by another setting.
+- If you disable or do not configure this policy setting, users are able to resize their taskbar unless prevented by another setting.
 <!-- TaskbarNoResize-Description-End -->
 
 <!-- TaskbarNoResize-Editable-Begin -->
@@ -1288,7 +1287,7 @@ If you disable or do not configure this policy setting, users are able to resize
 
 <!-- TaskbarNoResize-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1328,9 +1327,9 @@ If you disable or do not configure this policy setting, users are able to resize
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off taskbar thumbnails.
 
-If you enable this policy setting, the taskbar thumbnails are not displayed and the system uses standard text for the tooltips.
+- If you enable this policy setting, the taskbar thumbnails are not displayed and the system uses standard text for the tooltips.
 
-If you disable or do not configure this policy setting, the taskbar thumbnails are displayed.
+- If you disable or do not configure this policy setting, the taskbar thumbnails are displayed.
 <!-- TaskbarNoThumbnail-Description-End -->
 
 <!-- TaskbarNoThumbnail-Editable-Begin -->
@@ -1348,7 +1347,7 @@ If you disable or do not configure this policy setting, the taskbar thumbnails a
 
 <!-- TaskbarNoThumbnail-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

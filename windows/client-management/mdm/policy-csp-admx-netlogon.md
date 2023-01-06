@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Netlogon Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_Netlogon
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -56,7 +54,7 @@ The allowable values for this setting result in the following behaviors:
 
 To specify this behavior in the DC Locator DNS SRV records, click Enabled, and then enter a value. The range of values is from 0 to 2.
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_AddressLookupOnPingBehavior-Description-End -->
 
 <!-- Netlogon_AddressLookupOnPingBehavior-Editable-Begin -->
@@ -74,7 +72,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!-- Netlogon_AddressLookupOnPingBehavior-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -115,11 +113,11 @@ This policy setting detremines the type of IP address that is returned for a dom
 
 By default, DC Locator APIs can return IPv4/IPv6 DC address. But if some applications are broken due to the returned IPv6 DC address, this policy can be used to disable the default behavior and enforce to return only IPv4 DC address. Once applications are fixed, this policy can be used to enable the default behavior.
 
-If you enable this policy setting, DC Locator APIs can return IPv4/IPv6 DC address. This is the default behavior of the DC Locator.
+- If you enable this policy setting, DC Locator APIs can return IPv4/IPv6 DC address. This is the default behavior of the DC Locator.
 
-If you disable this policy setting, DC Locator APIs will ONLY return IPv4 DC address if any. So if the domain controller supports both IPv4 and IPv6 addresses, DC Locator APIs will return IPv4 address. But if the domain controller supports only IPv6 address, then DC Locator APIs will fail.
+- If you disable this policy setting, DC Locator APIs will ONLY return IPv4 DC address if any. So if the domain controller supports both IPv4 and IPv6 addresses, DC Locator APIs will return IPv4 address. But if the domain controller supports only IPv6 address, then DC Locator APIs will fail.
 
-If you do not configure this policy setting, DC Locator APIs can return IPv4/IPv6 DC address. This is the default behavior of the DC Locator.
+- If you do not configure this policy setting, DC Locator APIs can return IPv4/IPv6 DC address. This is the default behavior of the DC Locator.
 <!-- Netlogon_AddressTypeReturned-Description-End -->
 
 <!-- Netlogon_AddressTypeReturned-Editable-Begin -->
@@ -137,7 +135,7 @@ If you do not configure this policy setting, DC Locator APIs can return IPv4/IPv
 
 <!-- Netlogon_AddressTypeReturned-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -179,9 +177,9 @@ This policy setting specifies whether the computers to which this setting is app
 
 By default, when no setting is specified for this policy, the behavior is the same as explicitly enabling this policy, unless the AllowSingleLabelDnsDomain policy setting is enabled.
 
-If you enable this policy setting, when the AllowSingleLabelDnsDomain policy is not enabled, computers to which this policy is applied, will locate a domain controller hosting an Active Directory domain specified with a single-label name, by appending different registered DNS suffixes to perform DNS name resolution. The single-label name is not used without appending DNS suffixes unless the computer is joined to a domain that has a single-label DNS name in the Active Directory forest. NetBIOS name resolution is performed on the single-label name only, in the event that DNS resolution fails.
+- If you enable this policy setting, when the AllowSingleLabelDnsDomain policy is not enabled, computers to which this policy is applied, will locate a domain controller hosting an Active Directory domain specified with a single-label name, by appending different registered DNS suffixes to perform DNS name resolution. The single-label name is not used without appending DNS suffixes unless the computer is joined to a domain that has a single-label DNS name in the Active Directory forest. NetBIOS name resolution is performed on the single-label name only, in the event that DNS resolution fails.
 
-If you disable this policy setting, when the AllowSingleLabelDnsDomain policy is not enabled, computers to which this policy is applied, will only use NetBIOS name resolution to attempt to locate a domain controller hosting an Active Directory domain specified with a single-label name. The computers will not attempt DNS name resolution in this case, unless the computer is searching for a domain with a single label DNS name to which this computer is joined, in the Active Directory forest.
+- If you disable this policy setting, when the AllowSingleLabelDnsDomain policy is not enabled, computers to which this policy is applied, will only use NetBIOS name resolution to attempt to locate a domain controller hosting an Active Directory domain specified with a single-label name. The computers will not attempt DNS name resolution in this case, unless the computer is searching for a domain with a single label DNS name to which this computer is joined, in the Active Directory forest.
 <!-- Netlogon_AllowDnsSuffixSearch-Description-End -->
 
 <!-- Netlogon_AllowDnsSuffixSearch-Editable-Begin -->
@@ -199,7 +197,7 @@ If you disable this policy setting, when the AllowSingleLabelDnsDomain policy is
 
 <!-- Netlogon_AllowDnsSuffixSearch-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -241,11 +239,11 @@ This policy setting controls whether the Net Logon service will allow the use of
 
 By default, Net Logon will not allow the older cryptography algorithms to be used and will not include them in the negotiation of cryptography algorithms. Therefore, computers running Windows NT 4.0 will not be able to establish a connection to this domain controller.
 
-If you enable this policy setting, Net Logon will allow the negotiation and use of older cryptography algorithms compatible with Windows NT 4.0. However, using the older algorithms represents a potential security risk.
+- If you enable this policy setting, Net Logon will allow the negotiation and use of older cryptography algorithms compatible with Windows NT 4.0. However, using the older algorithms represents a potential security risk.
 
-If you disable this policy setting, Net Logon will not allow the negotiation and use of older cryptography algorithms.
+- If you disable this policy setting, Net Logon will not allow the negotiation and use of older cryptography algorithms.
 
-If you do not configure this policy setting, Net Logon will not allow the negotiation and use of older cryptography algorithms.
+- If you do not configure this policy setting, Net Logon will not allow the negotiation and use of older cryptography algorithms.
 <!-- Netlogon_AllowNT4Crypto-Description-End -->
 
 <!-- Netlogon_AllowNT4Crypto-Editable-Begin -->
@@ -263,7 +261,7 @@ If you do not configure this policy setting, Net Logon will not allow the negoti
 
 <!-- Netlogon_AllowNT4Crypto-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -305,11 +303,11 @@ This policy setting specifies whether the computers to which this setting is app
 
 By default, the behavior specified in the AllowDnsSuffixSearch is used. If the AllowDnsSuffixSearch policy is disabled, then NetBIOS name resolution is used exclusively, to locate a domain controller hosting an Active Directory domain specified with a single-label name.
 
-If you enable this policy setting, computers to which this policy is applied will attempt to locate a domain controller hosting an Active Directory domain specified with a single-label name using DNS name resolution.
+- If you enable this policy setting, computers to which this policy is applied will attempt to locate a domain controller hosting an Active Directory domain specified with a single-label name using DNS name resolution.
 
-If you disable this policy setting, computers to which this setting is applied will use the AllowDnsSuffixSearch policy, if it is not disabled or perform NetBIOS name resolution otherwise, to attempt to locate a domain controller that hosts an Active Directory domain specified with a single-label name. the computers will not the DNS name resolution in this case, unless the computer is searching for a domain with a single label DNS name that exists in the Active Directory forest to which this computer is joined.
+- If you disable this policy setting, computers to which this setting is applied will use the AllowDnsSuffixSearch policy, if it is not disabled or perform NetBIOS name resolution otherwise, to attempt to locate a domain controller that hosts an Active Directory domain specified with a single-label name. the computers will not the DNS name resolution in this case, unless the computer is searching for a domain with a single label DNS name that exists in the Active Directory forest to which this computer is joined.
 
-If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
+- If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
 <!-- Netlogon_AllowSingleLabelDnsDomain-Description-End -->
 
 <!-- Netlogon_AllowSingleLabelDnsDomain-Editable-Begin -->
@@ -327,7 +325,7 @@ If you do not configure this policy setting, it is not applied to any computers,
 
 <!-- Netlogon_AllowSingleLabelDnsDomain-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -367,11 +365,11 @@ If you do not configure this policy setting, it is not applied to any computers,
 <!-- Description-Source-ADMX -->
 This policy setting determines whether domain controllers (DC) will dynamically register DC Locator site-specific SRV records for the closest sites where no DC for the same domain exists (or no Global Catalog for the same forest exists). These DNS records are dynamically registered by the Net Logon service, and they are used to locate the DC.
 
-If you enable this policy setting, the DCs to which this setting is applied dynamically register DC Locator site-specific DNS SRV records for the closest sites where no DC for the same domain, or no Global Catalog for the same forest, exists.
+- If you enable this policy setting, the DCs to which this setting is applied dynamically register DC Locator site-specific DNS SRV records for the closest sites where no DC for the same domain, or no Global Catalog for the same forest, exists.
 
-If you disable this policy setting, the DCs will not register site-specific DC Locator DNS SRV records for any other sites but their own.
+- If you disable this policy setting, the DCs will not register site-specific DC Locator DNS SRV records for any other sites but their own.
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_AutoSiteCoverage-Description-End -->
 
 <!-- Netlogon_AutoSiteCoverage-Editable-Begin -->
@@ -389,7 +387,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!-- Netlogon_AutoSiteCoverage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -431,11 +429,11 @@ This policy setting allows you to control the domain controller (DC) location al
 
 NetBIOS-based discovery uses a WINS server and mailslot messages but does not use site information. Hence it does not ensure that clients will discover the closest DC. It also allows a hub-site client to discover a branch-site DC even if the branch-site DC only registers site-specific DNS records (as recommended). For these reasons, NetBIOS-based discovery is not recommended.
 
-Note that this policy setting does not affect NetBIOS-based discovery for DC location if only the NetBIOS domain name is known.
+**Note** that this policy setting does not affect NetBIOS-based discovery for DC location if only the NetBIOS domain name is known.
 
-If you enable or do not configure this policy setting, the DC location algorithm does not use NetBIOS-based discovery as a fallback mechanism when DNS-based discovery fails. This is the default behavior.
+- If you enable or do not configure this policy setting, the DC location algorithm does not use NetBIOS-based discovery as a fallback mechanism when DNS-based discovery fails. This is the default behavior.
 
-If you disable this policy setting, the DC location algorithm can use NetBIOS-based discovery as a fallback mechanism when DNS based discovery fails.
+- If you disable this policy setting, the DC location algorithm can use NetBIOS-based discovery as a fallback mechanism when DNS based discovery fails.
 <!-- Netlogon_AvoidFallbackNetbiosDiscovery-Description-End -->
 
 <!-- Netlogon_AvoidFallbackNetbiosDiscovery-Editable-Begin -->
@@ -453,7 +451,7 @@ If you disable this policy setting, the DC location algorithm can use NetBIOS-ba
 
 <!-- Netlogon_AvoidFallbackNetbiosDiscovery-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -493,13 +491,13 @@ If you disable this policy setting, the DC location algorithm can use NetBIOS-ba
 <!-- Description-Source-ADMX -->
 This policy setting defines whether a domain controller (DC) should attempt to verify the password provided by a client with the PDC emulator if the DC failed to validate the password.
 
-Contacting the PDC emulator is useful in case the client’s password was recently changed and did not propagate to the DC yet. Users may want to disable this feature if the PDC emulator is located over a slow WAN connection.
+Contacting the PDC emulator is useful in case the client's password was recently changed and did not propagate to the DC yet. Users may want to disable this feature if the PDC emulator is located over a slow WAN connection.
 
-If you enable this policy setting, the DCs to which this policy setting applies will attempt to verify a password with the PDC emulator if the DC fails to validate the password.
+- If you enable this policy setting, the DCs to which this policy setting applies will attempt to verify a password with the PDC emulator if the DC fails to validate the password.
 
-If you disable this policy setting, the DCs will not attempt to verify any passwords with the PDC emulator.
+- If you disable this policy setting, the DCs will not attempt to verify any passwords with the PDC emulator.
 
-If you do not configure this policy setting, it is not applied to any DCs.
+- If you do not configure this policy setting, it is not applied to any DCs.
 <!-- Netlogon_AvoidPdcOnWan-Description-End -->
 
 <!-- Netlogon_AvoidPdcOnWan-Editable-Begin -->
@@ -517,7 +515,7 @@ If you do not configure this policy setting, it is not applied to any DCs.
 
 <!-- Netlogon_AvoidPdcOnWan-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -563,7 +561,8 @@ This setting is relevant only to those callers of DsGetDcName that have specifie
 
 If the value of this setting is less than the value specified in the NegativeCachePeriod subkey, the value in the NegativeCachePeriod subkey is used.
 
-Warning: If the value for this setting is too large, a client will not attempt to find any DCs that were initially unavailable. If the value set in this setting is very small and the DC is not available, the traffic caused by periodic DC discoveries may be excessive.
+> [!WARNING]
+> If the value for this setting is too large, a client will not attempt to find any DCs that were initially unavailable. If the value set in this setting is very small and the DC is not available, the traffic caused by periodic DC discoveries may be excessive.
 <!-- Netlogon_BackgroundRetryInitialPeriod-Description-End -->
 
 <!-- Netlogon_BackgroundRetryInitialPeriod-Editable-Begin -->
@@ -581,7 +580,7 @@ Warning: If the value for this setting is too large, a client will not attempt t
 
 <!-- Netlogon_BackgroundRetryInitialPeriod-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -626,7 +625,8 @@ The default value for this setting is 60 minutes (60*60). The maximum value for 
 
 If the value for this setting is smaller than the value specified for the Initial DC Discovery Retry Setting, the Initial DC Discovery Retry Setting is used.
 
-Warning: If the value for this setting is too large, a client may take very long periods to try to find a DC.
+> [!WARNING]
+> If the value for this setting is too large, a client may take very long periods to try to find a DC.
 
 If the value for this setting is too small and the DC is not available, the frequent retries may produce excessive network traffic.
 <!-- Netlogon_BackgroundRetryMaximumPeriod-Description-End -->
@@ -646,7 +646,7 @@ If the value for this setting is too small and the DC is not available, the freq
 
 <!-- Netlogon_BackgroundRetryMaximumPeriod-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -687,7 +687,8 @@ This policy setting determines when retries are no longer allowed for applicatio
 
 The default value for this setting is to not quit retrying (0). The maximum value for this setting is 49 days (0x49*24*60*60=4233600). The minimum value for this setting is 0.
 
-Warning: If the value for this setting is too small, a client will stop trying to find a DC too soon.
+> [!WARNING]
+> If the value for this setting is too small, a client will stop trying to find a DC too soon.
 <!-- Netlogon_BackgroundRetryQuitTime-Description-End -->
 
 <!-- Netlogon_BackgroundRetryQuitTime-Editable-Begin -->
@@ -705,7 +706,7 @@ Warning: If the value for this setting is too small, a client will stop trying t
 
 <!-- Netlogon_BackgroundRetryQuitTime-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -760,7 +761,7 @@ This policy setting determines when a successful DC cache entry is refreshed. Th
 
 <!-- Netlogon_BackgroundSuccessfulRefreshPeriod-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -801,11 +802,11 @@ This policy setting specifies the level of debug output for the Net Logon servic
 
 The Net Logon service outputs debug information to the log file netlogon.log in the directory %windir%\debug. By default, no debug information is logged.
 
-If you enable this policy setting and specify a non-zero value, debug information will be logged to the file. Higher values result in more verbose logging; the value of 536936447 is commonly used as an optimal setting.
+- If you enable this policy setting and specify a non-zero value, debug information will be logged to the file. Higher values result in more verbose logging; the value of 536936447 is commonly used as an optimal setting.
 
 If you specify zero for this policy setting, the default behavior occurs as described above.
 
-If you disable this policy setting or do not configure it, the default behavior occurs as described above.
+- If you disable this policy setting or do not configure it, the default behavior occurs as described above.
 <!-- Netlogon_DebugFlag-Description-End -->
 
 <!-- Netlogon_DebugFlag-Editable-Begin -->
@@ -823,7 +824,7 @@ If you disable this policy setting or do not configure it, the default behavior 
 
 <!-- Netlogon_DebugFlag-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -859,43 +860,42 @@ If you disable this policy setting or do not configure it, the default behavior 
 <!-- Netlogon_DnsAvoidRegisterRecords-OmaUri-End -->
 
 <!-- Netlogon_DnsAvoidRegisterRecords-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting determines which DC Locator DNS records are not registered by the Net Logon service.
-
-If you enable this policy setting, select Enabled and specify a list of space-delimited mnemonics (instructions) for the DC Locator DNS records that will not be registered by the DCs to which this setting is applied.
-
-Select the mnemonics from the following list:
-
-Mnemonic Type DNS Record
-
-LdapIpAddress A `<DnsDomainName>`
-Ldap SRV _ldap._tcp.`<DnsDomainName>`
-LdapAtSite SRV _ldap._tcp.`<SiteName>`._sites.`<DnsDomainName>`
-Pdc SRV _ldap._tcp.pdc._msdcs.`<DnsDomainName>`
-Gc SRV _ldap._tcp.gc._msdcs.`<DnsForestName>`
-GcAtSite SRV _ldap._tcp.`<SiteName>`._sites.gc._msdcs.`<DnsForestName>`
-DcByGuid SRV _ldap._tcp.`<DomainGuid>`.domains._msdcs.`<DnsForestName>`
-GcIpAddress A gc._msdcs.`<DnsForestName>`
-DsaCname CNAME `<DsaGuid>`._msdcs.`<DnsForestName>`
-Kdc SRV _kerberos._tcp.dc._msdcs.`<DnsDomainName>`
-KdcAtSite SRV _kerberos._tcp.`<SiteName>`._sites.dc._msdcs.`<DnsDomainName>`
-Dc SRV _ldap._tcp.dc._msdcs.`<DnsDomainName>`
-DcAtSite SRV _ldap._tcp.`<SiteName>`._sites.dc._msdcs.`<DnsDomainName>`
-Rfc1510Kdc SRV _kerberos._tcp.`<DnsDomainName>`
-Rfc1510KdcAtSite SRV _kerberos._tcp.`<SiteName>`._sites.`<DnsDomainName>`
-GenericGc SRV _gc._tcp.`<DnsForestName>`
-GenericGcAtSite SRV _gc._tcp.`<SiteName>`._sites.`<DnsForestName>`
-Rfc1510UdpKdc SRV _kerberos._udp.`<DnsDomainName>`
-Rfc1510Kpwd SRV _kpasswd._tcp.`<DnsDomainName>`
-Rfc1510UdpKpwd SRV _kpasswd._udp.`<DnsDomainName>`
-
-If you disable this policy setting, DCs configured to perform dynamic registration of DC Locator DNS records register all DC Locator DNS resource records.
-
-If you do not configure this policy setting, DCs use their local configuration.
+<!-- Description-Source-Manual-Forced -->
 <!-- Netlogon_DnsAvoidRegisterRecords-Description-End -->
 
 <!-- Netlogon_DnsAvoidRegisterRecords-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy setting determines which DC Locator DNS records aren't registered by the Net Logon service.
+
+- If you enable this policy setting, select Enabled and specify a list of space-delimited mnemonics (instructions) for the DC Locator DNS records that won't be registered by the DCs to which this setting is applied. Select the mnemonics from the following table:
+
+    | Mnemonic         | Type  | DNS Record                                                     |
+    |------------------|-------|----------------------------------------------------------------|
+    | LdapIpAddress    | A     | `<DnsDomainName>`                                              |
+    | Ldap             | SRV   | _ldap._tcp.`<DnsDomainName>`                                   |
+    | LdapAtSite       | SRV   | _ldap._tcp.`<SiteName>`._sites.`<DnsDomainName>`               |
+    | Pdc              | SRV   | _ldap._tcp.pdc._msdcs.`<DnsDomainName>`                        |
+    | Gc               | SRV   | _ldap._tcp.gc._msdcs.`<DnsForestName>`                         |
+    | GcAtSite         | SRV   | _ldap._tcp.`<SiteName>`._sites.gc._msdcs.`<DnsForestName>`     |
+    | DcByGuid         | SRV   | _ldap._tcp.`<DomainGuid>`.domains._msdcs.`<DnsForestName>`     |
+    | GcIpAddress      | A     | gc._msdcs.`<DnsForestName>`                                    |
+    | DsaCname         | CNAME | `<DsaGuid>`._msdcs.`<DnsForestName>`                           |
+    | Kdc              | SRV   | _kerberos._tcp.dc._msdcs.`<DnsDomainName>`                     |
+    | KdcAtSite        | SRV   | _kerberos._tcp.`<SiteName>`._sites.dc._msdcs.                  |
+    | KdcAtSite        | SRV   | _kerberos._tcp.`<SiteName>`._sites.dc._msdcs.`<DnsDomainName>` |
+    | Dc               | SRV   | _ldap._tcp.dc._msdcs.`<DnsDomainName>`                         |
+    | DcAtSite         | SRV   | _ldap._tcp.`<SiteName>`._sites.dc._msdcs.`<DnsDomainName>`     |
+    | Rfc1510Kdc       | SRV   | _kerberos._tcp.`<DnsDomainName>`                               |
+    | Rfc1510KdcAtSite | SRV   | _kerberos._tcp.`<SiteName>`._sites.`<DnsDomainName>`           |
+    | GenericGc        | SRV   | _gc._tcp.`<DnsForestName>`                                     |
+    | GenericGcAtSite  | SRV   | _gc._tcp.`<SiteName>`._sites.`<DnsForestName>`                 |
+    | Rfc1510UdpKdc    | SRV   | _kerberos._udp.`<DnsDomainName>`                               |
+    | Rfc1510Kpwd      | SRV   | _kpasswd._tcp.`<DnsDomainName>`                                |
+    | Rfc1510UdpKpwd   | SRV   | _kpasswd._udp.`<DnsDomainName>`                                |
+
+- If you disable this policy setting, DCs configured to perform dynamic registration of DC Locator DNS records register all DC Locator DNS resource records.
+
+- If you don't configure this policy setting, DCs use their local configuration.
 <!-- Netlogon_DnsAvoidRegisterRecords-Editable-End -->
 
 <!-- Netlogon_DnsAvoidRegisterRecords-DFProperties-Begin -->
@@ -909,7 +909,7 @@ If you do not configure this policy setting, DCs use their local configuration.
 
 <!-- Netlogon_DnsAvoidRegisterRecords-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -948,13 +948,14 @@ If you do not configure this policy setting, DCs use their local configuration.
 <!-- Description-Source-ADMX -->
 This policy setting specifies the Refresh Interval of the DC Locator DNS resource records for DCs to which this setting is applied. These DNS records are dynamically registered by the Net Logon service and are used by the DC Locator algorithm to locate the DC. This setting may be applied only to DCs using dynamic update.
 
-DCs configured to perform dynamic registration of the DC Locator DNS resource records periodically reregister their records with DNS servers, even if their records’ data has not changed. If authoritative DNS servers are configured to perform scavenging of the stale records, this reregistration is required to instruct the DNS servers configured to automatically remove (scavenge) stale records that these records are current and should be preserved in the database.
+DCs configured to perform dynamic registration of the DC Locator DNS resource records periodically reregister their records with DNS servers, even if their records' data has not changed. If authoritative DNS servers are configured to perform scavenging of the stale records, this reregistration is required to instruct the DNS servers configured to automatically remove (scavenge) stale records that these records are current and should be preserved in the database.
 
-Warning: If the DNS resource records are registered in zones with scavenging enabled, the value of this setting should never be longer than the Refresh Interval configured for these zones. Setting the Refresh Interval of the DC Locator DNS records to longer than the Refresh Interval of the DNS zones may result in the undesired deletion of DNS resource records.
+> [!WARNING]
+> If the DNS resource records are registered in zones with scavenging enabled, the value of this setting should never be longer than the Refresh Interval configured for these zones. Setting the Refresh Interval of the DC Locator DNS records to longer than the Refresh Interval of the DNS zones may result in the undesired deletion of DNS resource records.
 
 To specify the Refresh Interval of the DC records, click Enabled, and then enter a value larger than 1800. This value specifies the Refresh Interval of the DC records in seconds (for example, the value 3600 is 60 minutes).
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_DnsRefreshInterval-Description-End -->
 
 <!-- Netlogon_DnsRefreshInterval-Editable-Begin -->
@@ -972,7 +973,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!-- Netlogon_DnsRefreshInterval-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1039,7 +1040,7 @@ More information is available at <https://aka.ms/lowercasehostnamesrvrecord>
 
 <!-- Netlogon_DnsSrvRecordUseLowerCaseHostNames-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1081,7 +1082,7 @@ This policy setting specifies the value for the Time-To-Live (TTL) field in SRV 
 
 To specify the TTL for DC Locator DNS records, click Enabled, and then enter a value in seconds (for example, the value "900" is 15 minutes).
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_DnsTtl-Description-End -->
 
 <!-- Netlogon_DnsTtl-Editable-Begin -->
@@ -1099,7 +1100,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!-- Netlogon_DnsTtl-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1136,11 +1137,11 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!-- Netlogon_ExpectedDialupDelay-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies the additional time for the computer to wait for the domain controller’s (DC) response when logging on to the network.
+This policy setting specifies the additional time for the computer to wait for the domain controller's (DC) response when logging on to the network.
 
 To specify the expected dial-up delay at logon, click Enabled, and then enter the desired value in seconds (for example, the value "60" is 1 minute).
 
-If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
+- If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
 <!-- Netlogon_ExpectedDialupDelay-Description-End -->
 
 <!-- Netlogon_ExpectedDialupDelay-Editable-Begin -->
@@ -1158,7 +1159,7 @@ If you do not configure this policy setting, it is not applied to any computers,
 
 <!-- Netlogon_ExpectedDialupDelay-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1199,11 +1200,11 @@ This policy setting determines the interval for when a Force Rediscovery is carr
 
 The Domain Controller Locator (DC Locator) service is used by clients to find domain controllers for their Active Directory domain. When DC Locator finds a domain controller, it caches domain controllers to improve the efficiency of the location algorithm. As long as the cached domain controller meets the requirements and is running, DC Locator will continue to return it. If a new domain controller is introduced, existing clients will only discover it when a Force Rediscovery is carried out by DC Locator. To adapt to changes in network conditions DC Locator will by default carry out a Force Rediscovery according to a specific time interval and maintain efficient load-balancing of clients across all available domain controllers in all domains or forests. The default time interval for Force Rediscovery by DC Locator is 12 hours. Force Rediscovery can also be triggered if a call to DC Locator uses the DS_FORCE_REDISCOVERY flag. Rediscovery resets the timer on the cached domain controller entries.
 
-If you enable this policy setting, DC Locator on the machine will carry out Force Rediscovery periodically according to the configured time interval. The minimum time interval is 3600 seconds (1 hour) to avoid excessive network traffic from rediscovery. The maximum allowed time interval is 4294967200 seconds, while any value greater than 4294967 seconds (~49 days) will be treated as infinity.
+- If you enable this policy setting, DC Locator on the machine will carry out Force Rediscovery periodically according to the configured time interval. The minimum time interval is 3600 seconds (1 hour) to avoid excessive network traffic from rediscovery. The maximum allowed time interval is 4294967200 seconds, while any value greater than 4294967 seconds (~49 days) will be treated as infinity.
 
-If you disable this policy setting, Force Rediscovery will be used by default for the machine at every 12 hour interval.
+- If you disable this policy setting, Force Rediscovery will be used by default for the machine at every 12 hour interval.
 
-If you do not configure this policy setting, Force Rediscovery will be used by default for the machine at every 12 hour interval, unless the local machine setting in the registry is a different value.
+- If you do not configure this policy setting, Force Rediscovery will be used by default for the machine at every 12 hour interval, unless the local machine setting in the registry is a different value.
 <!-- Netlogon_ForceRediscoveryInterval-Description-End -->
 
 <!-- Netlogon_ForceRediscoveryInterval-Editable-Begin -->
@@ -1221,7 +1222,7 @@ If you do not configure this policy setting, Force Rediscovery will be used by d
 
 <!-- Netlogon_ForceRediscoveryInterval-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1264,7 +1265,7 @@ The GC Locator DNS records and the site-specific SRV records are dynamically reg
 
 To specify the sites covered by the GC Locator DNS SRV records, click Enabled, and enter the sites' names in a space-delimited format.
 
-If you do not configure this policy setting, it is not applied to any GCs, and GCs use their local configuration.
+- If you do not configure this policy setting, it is not applied to any GCs, and GCs use their local configuration.
 <!-- Netlogon_GcSiteCoverage-Description-End -->
 
 <!-- Netlogon_GcSiteCoverage-Editable-Begin -->
@@ -1282,7 +1283,7 @@ If you do not configure this policy setting, it is not applied to any GCs, and G
 
 <!-- Netlogon_GcSiteCoverage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1321,13 +1322,14 @@ If you do not configure this policy setting, it is not applied to any GCs, and G
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control the processing of incoming mailslot messages by a local domain controller (DC).
 
-Note: To locate a remote DC based on its NetBIOS (single-label) domain name, DC Locator first gets the list of DCs from a WINS server that is configured in its local client settings. DC Locator then sends a mailslot message to each remote DC to get more information. DC location succeeds only if a remote DC responds to the mailslot message.
+> [!NOTE]
+> To locate a remote DC based on its NetBIOS (single-label) domain name, DC Locator first gets the list of DCs from a WINS server that is configured in its local client settings. DC Locator then sends a mailslot message to each remote DC to get more information. DC location succeeds only if a remote DC responds to the mailslot message.
 
 This policy setting is recommended to reduce the attack surface on a DC, and can be used in an environment without WINS, in an IPv6-only environment, and whenever DC location based on a NetBIOS domain name is not required. This policy setting does not affect DC location based on DNS names.
 
-If you enable this policy setting, this DC does not process incoming mailslot messages that are used for NetBIOS domain name based DC location.
+- If you enable this policy setting, this DC does not process incoming mailslot messages that are used for NetBIOS domain name based DC location.
 
-If you disable or do not configure this policy setting, this DC processes incoming mailslot messages. This is the default behavior of DC Locator.
+- If you disable or do not configure this policy setting, this DC processes incoming mailslot messages. This is the default behavior of DC Locator.
 <!-- Netlogon_IgnoreIncomingMailslotMessages-Description-End -->
 
 <!-- Netlogon_IgnoreIncomingMailslotMessages-Editable-Begin -->
@@ -1345,7 +1347,7 @@ If you disable or do not configure this policy setting, this DC processes incomi
 
 <!-- Netlogon_IgnoreIncomingMailslotMessages-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1385,11 +1387,11 @@ If you disable or do not configure this policy setting, this DC processes incomi
 <!-- Description-Source-ADMX -->
 This policy setting specifies the Priority field in the SRV resource records registered by domain controllers (DC) to which this setting is applied. These DNS records are dynamically registered by the Net Logon service and are used to locate the DC.
 
-The Priority field in the SRV record sets the preference for target hosts (specified in the SRV record’s Target field). DNS clients that query for SRV resource records attempt to contact the first reachable host with the lowest priority number listed.
+The Priority field in the SRV record sets the preference for target hosts (specified in the SRV record's Target field). DNS clients that query for SRV resource records attempt to contact the first reachable host with the lowest priority number listed.
 
 To specify the Priority in the DC Locator DNS SRV resource records, click Enabled, and then enter a value. The range of values is from 0 to 65535.
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_LdapSrvPriority-Description-End -->
 
 <!-- Netlogon_LdapSrvPriority-Editable-Begin -->
@@ -1407,7 +1409,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!-- Netlogon_LdapSrvPriority-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1450,7 +1452,7 @@ The Weight field in the SRV record can be used in addition to the Priority value
 
 To specify the Weight in the DC Locator DNS SRV records, click Enabled, and then enter a value. The range of values is from 0 to 65535.
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_LdapSrvWeight-Description-End -->
 
 <!-- Netlogon_LdapSrvWeight-Editable-Begin -->
@@ -1468,7 +1470,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!-- Netlogon_LdapSrvWeight-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1507,9 +1509,10 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 <!-- Description-Source-ADMX -->
 This policy setting specifies the maximum size in bytes of the log file netlogon.log in the directory %windir%\debug when logging is enabled.
 
-By default, the maximum size of the log file is 20MB. If you enable this policy setting, the maximum size of the log file is set to the specified size. Once this size is reached the log file is saved to netlogon.bak and netlogon.log is truncated. A reasonable value based on available storage should be specified.
+By default, the maximum size of the log file is 20MB.
+- If you enable this policy setting, the maximum size of the log file is set to the specified size. Once this size is reached the log file is saved to netlogon.bak and netlogon.log is truncated. A reasonable value based on available storage should be specified.
 
-If you disable or do not configure this policy setting, the default behavior occurs as indicated above.
+- If you disable or do not configure this policy setting, the default behavior occurs as indicated above.
 <!-- Netlogon_MaximumLogFileSize-Description-End -->
 
 <!-- Netlogon_MaximumLogFileSize-Editable-Begin -->
@@ -1527,7 +1530,7 @@ If you disable or do not configure this policy setting, the default behavior occ
 
 <!-- Netlogon_MaximumLogFileSize-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1570,7 +1573,7 @@ The application directory partition DC Locator DNS records and the site-specific
 
 To specify the sites covered by the DC Locator application directory partition-specific DNS SRV records, click Enabled, and then enter the site names in a space-delimited format.
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_NdncSiteCoverage-Description-End -->
 
 <!-- Netlogon_NdncSiteCoverage-Editable-Begin -->
@@ -1588,7 +1591,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!-- Netlogon_NdncSiteCoverage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1629,7 +1632,8 @@ This policy setting specifies the amount of time (in seconds) the DC locator rem
 
 The default value for this setting is 45 seconds. The maximum value for this setting is 7 days (7*24*60*60). The minimum value for this setting is 0.
 
-Warning: If the value for this setting is too large, a client will not attempt to find any DCs that were initially unavailable. If the value for this setting is too small, clients will attempt to find DCs even when none are available.
+> [!WARNING]
+> If the value for this setting is too large, a client will not attempt to find any DCs that were initially unavailable. If the value for this setting is too small, clients will attempt to find DCs even when none are available.
 <!-- Netlogon_NegativeCachePeriod-Description-End -->
 
 <!-- Netlogon_NegativeCachePeriod-Editable-Begin -->
@@ -1647,7 +1651,7 @@ Warning: If the value for this setting is too large, a client will not attempt t
 
 <!-- Netlogon_NegativeCachePeriod-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1686,15 +1690,16 @@ Warning: If the value for this setting is too large, a client will not attempt t
 <!-- Description-Source-ADMX -->
 This policy setting controls whether or not the Netlogon share created by the Net Logon service on a domain controller (DC) should support compatibility in file sharing semantics with earlier applications.
 
-If you enable this policy setting, the Netlogon share will honor file sharing semantics that grant requests for exclusive read access to files on the share even when the caller has only read permission.
+- If you enable this policy setting, the Netlogon share will honor file sharing semantics that grant requests for exclusive read access to files on the share even when the caller has only read permission.
 
-If you disable or do not configure this policy setting, the Netlogon share will grant shared read access to files on the share when exclusive access is requested and the caller has only read permission.
+- If you disable or do not configure this policy setting, the Netlogon share will grant shared read access to files on the share when exclusive access is requested and the caller has only read permission.
 
 By default, the Netlogon share will grant shared read access to files on the share when exclusive access is requested.
 
-Note: The Netlogon share is a share created by the Net Logon service for use by client machines in the domain. The default behavior of the Netlogon share ensures that no application with only read permission to files on the Netlogon share can lock the files by requesting exclusive read access, which might prevent Group Policy settings from being updated on clients in the domain. When this setting is enabled, an application that relies on the ability to lock files on the Netlogon share with only read permission will be able to deny Group Policy clients from reading the files, and in general the availability of the Netlogon share on the domain will be decreased.
+> [!NOTE]
+> The Netlogon share is a share created by the Net Logon service for use by client machines in the domain. The default behavior of the Netlogon share ensures that no application with only read permission to files on the Netlogon share can lock the files by requesting exclusive read access, which might prevent Group Policy settings from being updated on clients in the domain. When this setting is enabled, an application that relies on the ability to lock files on the Netlogon share with only read permission will be able to deny Group Policy clients from reading the files, and in general the availability of the Netlogon share on the domain will be decreased.
 
-If you enable this policy setting, domain administrators should ensure that the only applications using the exclusive read capability in the domain are those approved by the administrator.
+- If you enable this policy setting, domain administrators should ensure that the only applications using the exclusive read capability in the domain are those approved by the administrator.
 <!-- Netlogon_NetlogonShareCompatibilityMode-Description-End -->
 
 <!-- Netlogon_NetlogonShareCompatibilityMode-Editable-Begin -->
@@ -1712,7 +1717,7 @@ If you enable this policy setting, domain administrators should ensure that the 
 
 <!-- Netlogon_NetlogonShareCompatibilityMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1770,7 +1775,7 @@ The default value for this setting is 30 minutes (1800). The maximum value for t
 
 <!-- Netlogon_NonBackgroundSuccessfulRefreshPeriod-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1818,7 +1823,7 @@ The allowable values for this setting result in the following behaviors:
 
 To specify this behavior, click Enabled and then enter a value. The range of values is from 1 to 2.
 
-If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
+- If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
 <!-- Netlogon_PingUrgencyMode-Description-End -->
 
 <!-- Netlogon_PingUrgencyMode-Editable-Begin -->
@@ -1836,7 +1841,7 @@ If you do not configure this policy setting, it is not applied to any computers,
 
 <!-- Netlogon_PingUrgencyMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1879,7 +1884,7 @@ This policy setting determines the interval at which Netlogon performs the follo
 
 - On the domain controllers (DC), discovers a DC that has not been discovered.
 
-- On the PDC, attempts to add the `<DomainName>`[1B] NetBIOS name if it hasn’t already been successfully added.
+- On the PDC, attempts to add the `<DomainName>`[1B] NetBIOS name if it hasn't already been successfully added.
 
 None of these operations are critical. 15 minutes is optimal in all but extreme cases. For instance, if a DC is separated from a trusted domain by an expensive (e.g., ISDN) line, this parameter might be adjusted upward to avoid frequent automatic discovery of DCs in a trusted domain.
 
@@ -1901,7 +1906,7 @@ To enable the setting, click Enabled, and then specify the interval in seconds.
 
 <!-- Netlogon_ScavengeInterval-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1944,7 +1949,7 @@ The DC Locator DNS records are dynamically registered by the Net Logon service, 
 
 To specify the sites covered by the DC Locator DNS SRV records, click Enabled, and then enter the sites names in a space-delimited format.
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_SiteCoverage-Description-End -->
 
 <!-- Netlogon_SiteCoverage-Editable-Begin -->
@@ -1962,7 +1967,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!-- Netlogon_SiteCoverage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2005,7 +2010,7 @@ An Active Directory site is one or more well-connected TCP/IP subnets that allow
 
 To specify the site name for this setting, click Enabled, and then enter the site name. When the site to which a computer belongs is not specified, the computer automatically discovers its site from Active Directory.
 
-If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
+- If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
 <!-- Netlogon_SiteName-Description-End -->
 
 <!-- Netlogon_SiteName-Editable-Begin -->
@@ -2023,7 +2028,7 @@ If you do not configure this policy setting, it is not applied to any computers,
 
 <!-- Netlogon_SiteName-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2068,9 +2073,10 @@ When this setting is disabled or not configured, the SYSVOL share will grant sha
 
 By default, the SYSVOL share will grant shared read access to files on the share when exclusive access is requested.
 
-Note: The SYSVOL share is a share created by the Net Logon service for use by Group Policy clients in the domain. The default behavior of the SYSVOL share ensures that no application with only read permission to files on the sysvol share can lock the files by requesting exclusive read access, which might prevent Group Policy settings from being updated on clients in the domain. When this setting is enabled, an application that relies on the ability to lock files on the SYSVOL share with only read permission will be able to deny Group Policy clients from reading the files, and in general the availability of the SYSVOL share on the domain will be decreased.
+> [!NOTE]
+> The SYSVOL share is a share created by the Net Logon service for use by Group Policy clients in the domain. The default behavior of the SYSVOL share ensures that no application with only read permission to files on the sysvol share can lock the files by requesting exclusive read access, which might prevent Group Policy settings from being updated on clients in the domain. When this setting is enabled, an application that relies on the ability to lock files on the SYSVOL share with only read permission will be able to deny Group Policy clients from reading the files, and in general the availability of the SYSVOL share on the domain will be decreased.
 
-If you enable this policy setting, domain administrators should ensure that the only applications using the exclusive read capability in the domain are those approved by the administrator.
+- If you enable this policy setting, domain administrators should ensure that the only applications using the exclusive read capability in the domain are those approved by the administrator.
 <!-- Netlogon_SysvolShareCompatibilityMode-Description-End -->
 
 <!-- Netlogon_SysvolShareCompatibilityMode-Editable-Begin -->
@@ -2088,7 +2094,7 @@ If you enable this policy setting, domain administrators should ensure that the 
 
 <!-- Netlogon_SysvolShareCompatibilityMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2130,11 +2136,11 @@ This policy setting enables DC Locator to attempt to locate a DC in the nearest 
 
 The DC Locator service is used by clients to find domain controllers for their Active Directory domain. The default behavior for DC Locator is to find a DC in the same site. If none are found in the same site, a DC in another site, which might be several site-hops away, could be returned by DC Locator. Site proximity between two sites is determined by the total site-link cost between them. A site is closer if it has a lower site link cost than another site with a higher site link cost.
 
-If you enable this policy setting, Try Next Closest Site DC Location will be turned on for the computer.
+- If you enable this policy setting, Try Next Closest Site DC Location will be turned on for the computer.
 
-If you disable this policy setting, Try Next Closest Site DC Location will not be used by default for the computer. However, if a DC Locator call is made using the DS_TRY_NEXTCLOSEST_SITE flag explicitly, the Try Next Closest Site behavior is honored.
+- If you disable this policy setting, Try Next Closest Site DC Location will not be used by default for the computer. However, if a DC Locator call is made using the DS_TRY_NEXTCLOSEST_SITE flag explicitly, the Try Next Closest Site behavior is honored.
 
-If you do not configure this policy setting, Try Next Closest Site DC Location will not be used by default for the machine. If the DS_TRY_NEXTCLOSEST_SITE flag is used explicitly, the Next Closest Site behavior will be used.
+- If you do not configure this policy setting, Try Next Closest Site DC Location will not be used by default for the machine. If the DS_TRY_NEXTCLOSEST_SITE flag is used explicitly, the Next Closest Site behavior will be used.
 <!-- Netlogon_TryNextClosestSite-Description-End -->
 
 <!-- Netlogon_TryNextClosestSite-Editable-Begin -->
@@ -2152,7 +2158,7 @@ If you do not configure this policy setting, Try Next Closest Site DC Location w
 
 <!-- Netlogon_TryNextClosestSite-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2192,11 +2198,11 @@ If you do not configure this policy setting, Try Next Closest Site DC Location w
 <!-- Description-Source-ADMX -->
 This policy setting determines if dynamic registration of the domain controller (DC) locator DNS resource records is enabled. These DNS records are dynamically registered by the Net Logon service and are used by the Locator algorithm to locate the DC.
 
-If you enable this policy setting, DCs to which this setting is applied dynamically register DC Locator DNS resource records through dynamic DNS update-enabled network connections.
+- If you enable this policy setting, DCs to which this setting is applied dynamically register DC Locator DNS resource records through dynamic DNS update-enabled network connections.
 
-If you disable this policy setting, DCs will not register DC Locator DNS resource records.
+- If you disable this policy setting, DCs will not register DC Locator DNS resource records.
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_UseDynamicDns-Description-End -->
 
 <!-- Netlogon_UseDynamicDns-Editable-Begin -->
@@ -2214,7 +2220,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!-- Netlogon_UseDynamicDns-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
