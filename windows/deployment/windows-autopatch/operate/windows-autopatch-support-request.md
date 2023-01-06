@@ -1,7 +1,7 @@
 ---
 title: Submit a support request
 description: Details how to contact the Windows Autopatch Service Engineering Team and submit support requests
-ms.date: 05/30/2022
+ms.date: 01/06/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -18,6 +18,20 @@ msreviewer: hathind
 > Make sure you've [added and verified your admin contacts](../deploy/windows-autopatch-admin-contacts.md). The Windows Autopatch Service Engineering Team will contact these individuals for assistance with troubleshooting issues.
 
 You can submit support tickets to Microsoft using the Windows Autopatch admin center. Email is the recommended approach to interact with the Windows Autopatch Service Engineering Team.
+
+## Premier and Unified support options
+
+As a customer with a **Premier** or **Unified** support contract, you can specify the severity of your issue, and schedule a support callback for a specific day and time. These options are available when you open or submit a new issue and when you edit an active support case.
+
+Depending on your support contract, the following severity options are available:
+
+| Support contract | Severity options |
+| ----- | ----- |
+| Premier | Severity A, B or C |
+| Unified | Critical or non-critical |
+
+> [!NOTE]
+> Selecting either severity **A** or **Critical** issue limits you to a phone support case. This is the fastest support option.
 
 ## Submit a new support request  
 
