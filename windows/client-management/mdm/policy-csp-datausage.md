@@ -59,6 +59,8 @@ If this policy setting is disabled or is not configured, the cost of 3G connecti
 
 <!-- SetCost3G-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This policy is deprecated.
 <!-- SetCost3G-Editable-End -->
 
 <!-- SetCost3G-DFProperties-Begin -->

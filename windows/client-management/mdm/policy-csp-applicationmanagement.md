@@ -4,7 +4,7 @@ description: Learn more about the ApplicationManagement Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/09/2022
+ms.date: 01/04/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -674,6 +674,8 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This policy allows the IT admin to specify a list of applications that users can run after logging on to the device.
 
+> [!NOTE]
+> This policy only works on modern apps.
 <!-- LaunchAppAfterLogOn-Editable-End -->
 
 <!-- LaunchAppAfterLogOn-DFProperties-Begin -->
@@ -688,18 +690,15 @@ This policy allows the IT admin to specify a list of applications that users can
 
 <!-- LaunchAppAfterLogOn-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-For this policy to work, the Windows apps need to declare in their manifest that they'll use the startup task. 
-Example of the declaration here:
+For this policy to work, the Windows apps need to declare in their manifest that they'll use the startup task.
 
 **Example**:
+
 ```xml
 <desktop:Extension Category="windows.startupTask">
    <desktop:StartupTask TaskId="CoffeeStartupTask" Enabled="true" DisplayName="ms-resource:Description" />
 </desktop:Extension>
 ```
-
-> [!NOTE]
-> This policy only works on modern apps.
 <!-- LaunchAppAfterLogOn-Examples-End -->
 
 <!-- LaunchAppAfterLogOn-End -->
@@ -802,9 +801,10 @@ If you enable this policy setting, privileges are extended to all programs. Thes
 
 If you disable or do not configure this policy setting, the system applies the current user's permissions when it installs programs that a system administrator does not distribute or offer.
 
-Note: This policy setting appears both in the Computer Configuration and User Configuration folders. To make this policy setting effective, you must enable it in both folders.
+**Note**: This policy setting appears both in the Computer Configuration and User Configuration folders. To make this policy setting effective, you must enable it in both folders.
 
-Caution: Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders.
+> [!CAUTION]
+> Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders.
 
 **Note** that the User Configuration version of this policy setting is not guaranteed to be secure.
 <!-- MSIAlwaysInstallWithElevatedPrivileges-Description-End -->
@@ -1091,7 +1091,7 @@ To ensure apps are up-to-date, this policy allows the admins to set a recurring 
 <!-- ScheduleForceRestartForUpdateFailures-DFProperties-End -->
 
 <!-- ScheduleForceRestartForUpdateFailures-AllowedValues-Begin -->
-https://github.com/vinaypamnani-msft/windows-docs-pr
+**Allowed values**:
 
 <br>
 <details>
@@ -1136,15 +1136,7 @@ https://github.com/vinaypamnani-msft/windows-docs-pr
 <!-- ScheduleForceRestartForUpdateFailures-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 
-> [!NOTE]
-> The check for recurrence is done in a case sensitive manner. For instance the value needs to be “Daily” instead of “daily”. The wrong case will cause SmartRetry to fail to execute.
-
-
-<!--/SupportedValues-->
-<!--Example-->
-**Examples**:
-
-Sample SyncML:
+**Example**:
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -1171,6 +1163,9 @@ Sample SyncML:
   </SyncBody>
 </SycnML>
 ```
+
+> [!NOTE]
+> The check for recurrence is done in a case sensitive manner. For instance the value needs to be "Daily" instead of "daily". The wrong case will cause SmartRetry to fail to execute.
 <!-- ScheduleForceRestartForUpdateFailures-Examples-End -->
 
 <!-- ScheduleForceRestartForUpdateFailures-End -->

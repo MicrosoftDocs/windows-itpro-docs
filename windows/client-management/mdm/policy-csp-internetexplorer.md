@@ -4,7 +4,7 @@ description: Learn more about the InternetExplorer Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/02/2023
+ms.date: 01/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - InternetExplorer
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -72,7 +70,7 @@ If you disable or do not configure this policy setting, the user can configure t
 
 <!-- AddSearchProvider-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -136,7 +134,7 @@ If you disable or do not configure this policy setting, ActiveX Filtering is not
 
 <!-- AllowActiveXFiltering-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -206,7 +204,7 @@ If you disable this policy setting, the list is deleted. The 'Deny all add-ons u
 
 <!-- AllowAddOnList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -226,6 +224,68 @@ If you disable this policy setting, the list is deleted. The 'Deny all add-ons u
 <!-- AllowAddOnList-Examples-End -->
 
 <!-- AllowAddOnList-End -->
+
+<!-- AllowAutoComplete-Begin -->
+## AllowAutoComplete
+
+<!-- AllowAutoComplete-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowAutoComplete-Applicability-End -->
+
+<!-- AllowAutoComplete-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/AllowAutoComplete
+```
+<!-- AllowAutoComplete-OmaUri-End -->
+
+<!-- AllowAutoComplete-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This AutoComplete feature can remember and suggest User names and passwords on Forms.
+
+If you enable this setting, the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms will be turned on. You have to decide whether to select "prompt me to save passwords".
+
+If you disable this setting the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned off. The user also cannot opt to be prompted to save passwords.
+
+If you do not configure this setting, the user has the freedom of turning on Auto complete for User name and passwords on forms and the option of prompting to save passwords. To display this option, the users open the Internet Options dialog box, click the Contents Tab and click the Settings button.
+<!-- AllowAutoComplete-Description-End -->
+
+<!-- AllowAutoComplete-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowAutoComplete-Editable-End -->
+
+<!-- AllowAutoComplete-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowAutoComplete-DFProperties-End -->
+
+<!-- AllowAutoComplete-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | RestrictFormSuggestPW |
+| Friendly Name | Turn on the auto-complete feature for user names and passwords on forms |
+| Location | User Configuration |
+| Path | Windows Components > Internet Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Internet Explorer\Main |
+| Registry Value Name | FormSuggest Passwords |
+| ADMX File Name | inetres.admx |
+<!-- AllowAutoComplete-AdmxBacked-End -->
+
+<!-- AllowAutoComplete-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowAutoComplete-Examples-End -->
+
+<!-- AllowAutoComplete-End -->
 
 <!-- AllowCertificateAddressMismatchWarning-Begin -->
 ## AllowCertificateAddressMismatchWarning
@@ -270,7 +330,7 @@ If you disable or do not configure this policy setting, the user can choose whet
 
 <!-- AllowCertificateAddressMismatchWarning-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -338,7 +398,7 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 
 <!-- AllowDeletingBrowsingHistoryOnExit-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -404,7 +464,7 @@ If you do not configure this policy, users will be able to turn on or turn off E
 
 <!-- AllowEnhancedProtectedMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -470,7 +530,7 @@ If you don't configure this policy setting, users can change the Suggestions set
 
 <!-- AllowEnhancedSuggestionsInAddressBar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -534,7 +594,7 @@ If you disable or don't configure this policy setting, the menu option won't app
 
 <!-- AllowEnterpriseModeFromToolsMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -597,7 +657,7 @@ If you disable or don't configure this policy setting, Internet Explorer opens a
 
 <!-- AllowEnterpriseModeSiteList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -658,7 +718,7 @@ If you disable this policy, system defaults will be used.
 
 <!-- AllowFallbackToSSL3-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -721,7 +781,7 @@ If you disable or do not configure this policy setting, the user can add and rem
 
 <!-- AllowInternetExplorer7PolicyList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -786,7 +846,7 @@ If you do not configure this policy setting, Internet Explorer uses an Internet 
 
 <!-- AllowInternetExplorerStandardsMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -856,7 +916,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 <!-- AllowInternetZoneTemplate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -926,7 +986,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 <!-- AllowIntranetZoneTemplate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -996,7 +1056,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 <!-- AllowLocalMachineZoneTemplate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1066,7 +1126,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 <!-- AllowLockedDownInternetZoneTemplate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1136,7 +1196,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 <!-- AllowLockedDownIntranetZoneTemplate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1206,7 +1266,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 <!-- AllowLockedDownLocalMachineZoneTemplate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1276,7 +1336,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1340,7 +1400,7 @@ If you disable or do not configure this policy setting, Internet Explorer does n
 
 <!-- AllowOneWordEntry-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1406,7 +1466,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 
 <!-- AllowSaveTargetAsInIEMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1492,7 +1552,7 @@ If you disable or do not configure this policy, users may choose their own site-
 
 <!-- AllowSiteToZoneAssignmentList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1588,7 +1648,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1654,7 +1714,7 @@ If you do not configure this policy, users can choose to run or install files wi
 
 <!-- AllowSoftwareWhenSignatureIsInvalid-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1724,7 +1784,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 <!-- AllowsRestrictedSitesZoneTemplate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1790,7 +1850,7 @@ If you do not configure this policy setting, the user can turn on and turn off t
 
 <!-- AllowSuggestedSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1860,7 +1920,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 <!-- AllowTrustedSitesZoneTemplate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1926,7 +1986,7 @@ If you do not configure this policy setting, Internet Explorer will not check se
 
 <!-- CheckServerCertificateRevocation-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1992,7 +2052,7 @@ If you do not configure this policy, Internet Explorer will not check the digita
 
 <!-- CheckSignaturesOnDownloadedPrograms-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2071,7 +2131,7 @@ If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge 
 
 <!-- ConfigureEdgeRedirectChannel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2345,13 +2405,13 @@ If you do not configure this policy setting, Internet Explorer requires consiste
 
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IESF_PolicyExplorerProcesses |
+| Name | IESF_PolicyExplorerProcesses_5 |
 | Friendly Name | Internet Explorer Processes |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Security Features > Consistent Mime Handling |
@@ -2364,6 +2424,68 @@ If you do not configure this policy setting, Internet Explorer requires consiste
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-Examples-End -->
 
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-End -->
+
+<!-- DisableActiveXVersionListAutoDownload-Begin -->
+## DisableActiveXVersionListAutoDownload
+
+<!-- DisableActiveXVersionListAutoDownload-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+<!-- DisableActiveXVersionListAutoDownload-Applicability-End -->
+
+<!-- DisableActiveXVersionListAutoDownload-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/DisableActiveXVersionListAutoDownload
+```
+<!-- DisableActiveXVersionListAutoDownload-OmaUri-End -->
+
+<!-- DisableActiveXVersionListAutoDownload-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting determines whether IE automatically downloads updated versions of Microsoft’s VersionList. XML. IE uses this file to determine whether an ActiveX control should be stopped from loading.
+
+If you enable this setting, IE stops downloading updated versions of VersionList. XML. Turning off this automatic download breaks the out-of-date ActiveX control blocking feature by not letting the version list update with newly outdated controls, potentially compromising the security of your computer.
+
+If you disable or don't configure this setting, IE continues to download updated versions of VersionList. XML.
+
+For more information, see "Out-of-date ActiveX control blocking" in the Internet Explorer TechNet library.
+<!-- DisableActiveXVersionListAutoDownload-Description-End -->
+
+<!-- DisableActiveXVersionListAutoDownload-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableActiveXVersionListAutoDownload-Editable-End -->
+
+<!-- DisableActiveXVersionListAutoDownload-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableActiveXVersionListAutoDownload-DFProperties-End -->
+
+<!-- DisableActiveXVersionListAutoDownload-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | VersionListAutomaticDownloadDisable |
+| Friendly Name | Turn off automatic download of the ActiveX VersionList |
+| Location | User Configuration |
+| Path | Windows Components > Internet Explorer > Security Features > Add-on Management |
+| Registry Key Name | Software\Microsoft\Internet Explorer\VersionManager |
+| Registry Value Name | DownloadVersionList |
+| ADMX File Name | inetres.admx |
+<!-- DisableActiveXVersionListAutoDownload-AdmxBacked-End -->
+
+<!-- DisableActiveXVersionListAutoDownload-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableActiveXVersionListAutoDownload-Examples-End -->
+
+<!-- DisableActiveXVersionListAutoDownload-End -->
 
 <!-- DisableBypassOfSmartScreenWarnings-Begin -->
 ## DisableBypassOfSmartScreenWarnings
@@ -2408,7 +2530,7 @@ If you disable or do not configure this policy setting, the user can bypass Smar
 
 <!-- DisableBypassOfSmartScreenWarnings-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2472,7 +2594,7 @@ If you disable or do not configure this policy setting, the user can bypass Smar
 
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2536,7 +2658,7 @@ If you disable or do not configure this policy setting, the user can use the Com
 
 <!-- DisableCompatView-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2600,7 +2722,7 @@ If you disable or do not configure this policy setting, a user can set the numbe
 
 <!-- DisableConfiguringHistory-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2664,7 +2786,7 @@ If you disable or do not configure this policy setting, the crash detection feat
 
 <!-- DisableCrashDetection-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2730,7 +2852,7 @@ If you do not configure this policy setting, the user can choose to participate 
 
 <!-- DisableCustomerExperienceImprovementProgramParticipation-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2798,7 +2920,7 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 
 <!-- DisableDeletingUserVisitedWebsites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2862,7 +2984,7 @@ If you disable or do not configure this policy setting, the user can set the Fee
 
 <!-- DisableEnclosureDownloading-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2910,7 +3032,7 @@ If you enable this policy setting, the browser negotiates or does not negotiate 
 
 If you disable or do not configure this policy setting, the user can select which encryption method the browser supports.
 
-Note: SSL 2.0 is off by default and is no longer supported starting with Windows 10 Version 1607. SSL 2.0 is an outdated security protocol, and enabling SSL 2.0 impairs the performance and functionality of TLS 1.0.
+**Note**: SSL 2.0 is off by default and is no longer supported starting with Windows 10 Version 1607. SSL 2.0 is an outdated security protocol, and enabling SSL 2.0 impairs the performance and functionality of TLS 1.0.
 <!-- DisableEncryptionSupport-Description-End -->
 
 <!-- DisableEncryptionSupport-Editable-Begin -->
@@ -2928,7 +3050,7 @@ Note: SSL 2.0 is off by default and is no longer supported starting with Windows
 
 <!-- DisableEncryptionSupport-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2991,7 +3113,7 @@ If you disable or do not configure this policy setting, the user can synchronize
 
 <!-- DisableFeedsBackgroundSync-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3059,7 +3181,7 @@ If you disable or do not configure this policy setting, Internet Explorer may ru
 
 <!-- DisableFirstRunWizard-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3126,7 +3248,7 @@ If you don't configure this setting, users can turn this behavior on or off, usi
 
 <!-- DisableFlipAheadFeature-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3192,7 +3314,7 @@ If you do not configure this policy setting, browser geolocation support can be 
 
 <!-- DisableGeolocation-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3212,6 +3334,66 @@ If you do not configure this policy setting, browser geolocation support can be 
 <!-- DisableGeolocation-Examples-End -->
 
 <!-- DisableGeolocation-End -->
+
+<!-- DisableHomePageChange-Begin -->
+## DisableHomePageChange
+
+<!-- DisableHomePageChange-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- DisableHomePageChange-Applicability-End -->
+
+<!-- DisableHomePageChange-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/DisableHomePageChange
+```
+<!-- DisableHomePageChange-OmaUri-End -->
+
+<!-- DisableHomePageChange-Description-Begin -->
+<!-- Description-Source-ADMX -->
+The Home page specified on the General tab of the Internet Options dialog box is the default Web page that Internet Explorer loads whenever it is run.
+
+If you enable this policy setting, a user cannot set a custom default home page. You must specify which default home page should load on the user machine. For machines with at least Internet Explorer 7, the home page can be set within this policy to override other home page policies.
+
+If you disable or do not configure this policy setting, the Home page box is enabled and users can choose their own home page.
+<!-- DisableHomePageChange-Description-End -->
+
+<!-- DisableHomePageChange-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableHomePageChange-Editable-End -->
+
+<!-- DisableHomePageChange-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableHomePageChange-DFProperties-End -->
+
+<!-- DisableHomePageChange-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | RestrictHomePage |
+| Friendly Name | Disable changing home page settings |
+| Location | User Configuration |
+| Path | Windows Components > Internet Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Internet Explorer\Control Panel |
+| Registry Value Name | HomePage |
+| ADMX File Name | inetres.admx |
+<!-- DisableHomePageChange-AdmxBacked-End -->
+
+<!-- DisableHomePageChange-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableHomePageChange-Examples-End -->
+
+<!-- DisableHomePageChange-End -->
 
 <!-- DisableHTMLApplication-Begin -->
 ## DisableHTMLApplication
@@ -3256,7 +3438,7 @@ If you disable or do not configure this policy setting, running the HTML Applica
 
 <!-- DisableHTMLApplication-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3320,7 +3502,7 @@ If you disable or do not configure this policy setting, the user can choose to i
 
 <!-- DisableIgnoringCertificateErrors-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3388,7 +3570,7 @@ If you do not configure this policy setting, InPrivate Browsing can be turned on
 
 <!-- DisableInPrivateBrowsing-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3458,7 +3640,7 @@ If you disable, or don’t configure this policy, all sites are opened using the
 
 <!-- DisableInternetExplorerApp-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3524,7 +3706,7 @@ If you disable, or don’t configure this policy, all sites are opened using the
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Internet Explorer 11 uses 64-bit processes (for greater security) or 32-bit processes (for greater compatibility) when running in Enhanced Protected Mode on 64-bit versions of Windows.
 
-Important: Some ActiveX controls and toolbars may not be available when 64-bit processes are used.
+**Important**: Some ActiveX controls and toolbars may not be available when 64-bit processes are used.
 
 If you enable this policy setting, Internet Explorer 11 will use 64-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows.
 
@@ -3548,7 +3730,7 @@ If you don't configure this policy setting, users can turn this feature on or of
 
 <!-- DisableProcessesInEnhancedProtectedMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3612,7 +3794,7 @@ If you disable or do not configure this policy setting, the user can configure p
 
 <!-- DisableProxyChange-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3656,7 +3838,7 @@ If you disable or do not configure this policy setting, the user can configure p
 <!-- Description-Source-ADMX -->
 This policy setting prevents the user from changing the default search provider for the Address bar and the toolbar Search box.
 
-If you enable this policy setting, disableprocessesthe user cannot change the default search provider.
+If you enable this policy setting, the user cannot change the default search provider.
 
 If you disable or do not configure this policy setting, the user can change the default search provider.
 <!-- DisableSearchProviderChange-Description-End -->
@@ -3676,7 +3858,7 @@ If you disable or do not configure this policy setting, the user can change the 
 
 <!-- DisableSearchProviderChange-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3724,7 +3906,7 @@ If you enable this policy setting, you can specify which default home pages shou
 
 If you disable or do not configure this policy setting, the user can add secondary home pages.
 
-Note: If the “Disable Changing Home Page Settings” policy is enabled, the user cannot add secondary home pages.
+**Note**: If the “Disable Changing Home Page Settings” policy is enabled, the user cannot add secondary home pages.
 <!-- DisableSecondaryHomePageChange-Description-End -->
 
 <!-- DisableSecondaryHomePageChange-Editable-Begin -->
@@ -3742,7 +3924,7 @@ Note: If the “Disable Changing Home Page Settings” policy is enabled, the us
 
 <!-- DisableSecondaryHomePageChange-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3805,7 +3987,7 @@ If you disable or do not configure this policy setting, the feature is turned on
 
 <!-- DisableSecuritySettingsCheck-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3867,7 +4049,7 @@ This policy is intended to help the administrator maintain version control for I
 
 <!-- DisableUpdateCheck-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3933,7 +4115,7 @@ If you do not configure this policy setting, a user will have the freedom to cho
 
 <!-- DisableWebAddressAutoComplete-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4001,7 +4183,7 @@ If you disable or do not configure this policy setting, Internet Explorer notifi
 
 <!-- DoNotAllowActiveXControlsInProtectedMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4047,7 +4229,7 @@ If you disable this policy or do not configure it, users can add Web sites to or
 
 This policy prevents users from changing site management settings for security zones established by the administrator.
 
-Note: The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from the interface, takes precedence over this policy. If it is enabled, this policy is ignored.
+**Note**: The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from the interface, takes precedence over this policy. If it is enabled, this policy is ignored.
 
 Also, see the "Security zones: Use only machine settings" policy.
 <!-- DoNotAllowUsersToAddSites-Description-End -->
@@ -4067,7 +4249,7 @@ Also, see the "Security zones: Use only machine settings" policy.
 
 <!-- DoNotAllowUsersToAddSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4113,7 +4295,7 @@ If you disable this policy or do not configure it, users can change the settings
 
 This policy prevents users from changing security zone settings established by the administrator.
 
-Note: The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from Internet Explorer in Control Panel, takes precedence over this policy. If it is enabled, this policy is ignored.
+**Note**: The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from Internet Explorer in Control Panel, takes precedence over this policy. If it is enabled, this policy is ignored.
 
 Also, see the "Security zones: Use only machine settings" policy.
 <!-- DoNotAllowUsersToChangePolicies-Description-End -->
@@ -4133,7 +4315,7 @@ Also, see the "Security zones: Use only machine settings" policy.
 
 <!-- DoNotAllowUsersToChangePolicies-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4199,7 +4381,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 
 <!-- DoNotBlockOutdatedActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4245,8 +4427,9 @@ This policy setting allows you to manage a list of domains on which Internet Exp
 
 If you enable this policy setting, you can enter a custom list of domains for which outdated ActiveX controls won't be blocked in Internet Explorer. Each domain entry must be formatted like one of the following:
 
-1. "domain.name.TLD". For example, if you want to include *.contoso.com/*, use "contoso.com"
+1. "domain.name. TLD". For example, if you want to include *.contoso.com/*, use "contoso.com"
 2. "hostname". For example, if you want to include https://example, use "example"
+
 3. "file:///path/filename.htm". For example, use "file:///C:/Users/contoso/Desktop/index.htm"
 
 If you disable or don't configure this policy setting, the list is deleted and Internet Explorer continues to block specific outdated ActiveX controls on all domains in the Internet Zone.
@@ -4269,7 +4452,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 
 <!-- DoNotBlockOutdatedActiveXControlsOnSpecificDomains-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4335,7 +4518,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 
 <!-- EnableExtendedIEModeHotkeys-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4403,7 +4586,7 @@ To learn more about disabling Internet Explorer 11 as a standalone browser, see 
 
 <!-- EnableGlobalWindowListInIEMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4469,7 +4652,7 @@ If you do not configure this policy setting, users choose whether to force local
 
 <!-- IncludeAllLocalSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4535,7 +4718,7 @@ If you do not configure this policy setting, users choose whether network paths 
 
 <!-- IncludeAllNetworkPaths-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4601,13 +4784,13 @@ If you do not configure this policy setting, users cannot load a page in the zon
 
 <!-- InternetZoneAllowAccessToDataSources-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAccessDataSourcesAcrossDomains |
+| Name | IZ_PolicyAccessDataSourcesAcrossDomains_1 |
 | Friendly Name | Access data sources across domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -4666,13 +4849,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarActiveXURLaction |
+| Name | IZ_PolicyNotificationBarActiveXURLaction_1 |
 | Friendly Name | Automatic prompting for ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -4729,13 +4912,13 @@ If you disable or do not configure this setting, file downloads that are not use
 
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarDownloadURLaction |
+| Name | IZ_PolicyNotificationBarDownloadURLaction_1 |
 | Friendly Name | Automatic prompting for file downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -4796,13 +4979,13 @@ If you do not configure this policy setting, a script can perform a clipboard op
 
 <!-- InternetZoneAllowCopyPasteViaScript-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAllowPasteViaScript |
+| Name | IZ_PolicyAllowPasteViaScript_1 |
 | Friendly Name | Allow cut, copy or paste operations from the clipboard via script |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -4861,13 +5044,13 @@ If you do not configure this policy setting, users can drag files or copy and pa
 
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyDropOrPasteFiles |
+| Name | IZ_PolicyDropOrPasteFiles_1 |
 | Friendly Name | Allow drag and drop or copy and paste files |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -4926,13 +5109,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 
 <!-- InternetZoneAllowFontDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyFontDownload |
+| Name | IZ_PolicyFontDownload_1 |
 | Friendly Name | Allow font downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -4991,13 +5174,13 @@ If you do not configure this policy setting, Web sites from less privileged zone
 
 <!-- InternetZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyZoneElevationURLaction |
+| Name | IZ_PolicyZoneElevationURLaction_1 |
 | Friendly Name | Web sites in less privileged Web content zones can navigate into this zone |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5056,13 +5239,13 @@ If you do not configure this policy setting, the user can decide whether to load
 
 <!-- InternetZoneAllowLoadingOfXAMLFiles-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_XAML |
+| Name | IZ_Policy_XAML_1 |
 | Friendly Name | Allow loading of XAML files |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5097,7 +5280,7 @@ If you do not configure this policy setting, the user can decide whether to load
 
 <!-- InternetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -5121,13 +5304,13 @@ If you do not configure this policy setting, Internet Explorer will execute unsi
 
 <!-- InternetZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction |
+| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction_1 |
 | Friendly Name | Run .NET Framework-reliant components not signed with Authenticode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5184,13 +5367,13 @@ If you disable this policy setting, the user does not see the per-site ActiveX p
 
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt |
+| Name | IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Internet |
 | Friendly Name | Allow only approved domains to use ActiveX controls without prompt |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5247,13 +5430,13 @@ If you disable this policy setting, the TDC Active X control will run from all s
 
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAllowTDCControl |
+| Name | IZ_PolicyAllowTDCControl_Both_Internet |
 | Friendly Name | Allow only approved domains to use the TDC ActiveX control |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5312,13 +5495,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_WebBrowserControl |
+| Name | IZ_Policy_WebBrowserControl_1 |
 | Friendly Name | Allow scripting of Internet Explorer WebBrowser controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5377,13 +5560,13 @@ If you do not configure this policy setting, the possible harmful actions contai
 
 <!-- InternetZoneAllowScriptInitiatedWindows-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyWindowsRestrictionsURLaction |
+| Name | IZ_PolicyWindowsRestrictionsURLaction_1 |
 | Friendly Name | Allow script-initiated windows without size or position constraints |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5442,13 +5625,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 
 <!-- InternetZoneAllowScriptlets-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_AllowScriptlets |
+| Name | IZ_Policy_AllowScriptlets_1 |
 | Friendly Name | Allow scriptlets |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5491,7 +5674,7 @@ If you disable this policy setting, SmartScreen Filter does not scan pages in th
 
 If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+**Note**: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 <!-- InternetZoneAllowSmartScreenIE-Description-End -->
 
 <!-- InternetZoneAllowSmartScreenIE-Editable-Begin -->
@@ -5509,13 +5692,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 
 <!-- InternetZoneAllowSmartScreenIE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_Phishing |
+| Name | IZ_Policy_Phishing_1 |
 | Friendly Name | Turn on SmartScreen Filter scan |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5572,13 +5755,13 @@ If you disable or do not configure this policy setting, script is not allowed to
 
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_ScriptStatusBar |
+| Name | IZ_Policy_ScriptStatusBar_1 |
 | Friendly Name | Allow updates to status bar via script |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5637,13 +5820,13 @@ If you do not configure this policy setting, users can preserve information in t
 
 <!-- InternetZoneAllowUserDataPersistence-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUserdataPersistence |
+| Name | IZ_PolicyUserdataPersistence_1 |
 | Friendly Name | Userdata persistence |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5704,13 +5887,13 @@ If you do not configure or disable this policy setting, VBScript is prevented fr
 
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAllowVBScript |
+| Name | IZ_PolicyAllowVBScript_1 |
 | Friendly Name | Allow VBScript to run in Internet Explorer |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5769,13 +5952,13 @@ If you don't configure this policy setting, Internet Explorer always checks with
 
 <!-- InternetZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAntiMalwareCheckingOfActiveXControls |
+| Name | IZ_PolicyAntiMalwareCheckingOfActiveXControls_1 |
 | Friendly Name | Don't run antimalware programs against ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5834,13 +6017,13 @@ If you do not configure this policy setting, users are queried whether to downlo
 
 <!-- InternetZoneDownloadSignedActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyDownloadSignedActiveX |
+| Name | IZ_PolicyDownloadSignedActiveX_1 |
 | Friendly Name | Download signed ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5899,13 +6082,13 @@ If you do not configure this policy setting, users cannot run unsigned controls.
 
 <!-- InternetZoneDownloadUnsignedActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyDownloadUnsignedActiveX |
+| Name | IZ_PolicyDownloadUnsignedActiveX_1 |
 | Friendly Name | Download unsigned ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -5962,13 +6145,13 @@ If you disable this policy setting, the XSS Filter is turned off for sites in th
 
 <!-- InternetZoneEnableCrossSiteScriptingFilter-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyTurnOnXSSFilter |
+| Name | IZ_PolicyTurnOnXSSFilter_Both_Internet |
 | Friendly Name | Turn on Cross-Site Scripting Filter |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6029,13 +6212,13 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyDragDropAcrossDomainsAcrossWindows |
+| Name | IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Internet |
 | Friendly Name | Enable dragging of content from different domains across windows |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6096,13 +6279,13 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyDragDropAcrossDomainsWithinWindow |
+| Name | IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Internet |
 | Friendly Name | Enable dragging of content from different domains within a window |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6161,13 +6344,13 @@ If you do not configure this policy setting, the MIME Sniffing Safety Feature wi
 
 <!-- InternetZoneEnableMIMESniffing-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyMimeSniffingURLaction |
+| Name | IZ_PolicyMimeSniffingURLaction_1 |
 | Friendly Name | Enable MIME Sniffing |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6226,13 +6409,13 @@ If you do not configure this policy setting, the user can turn on or turn off Pr
 
 <!-- InternetZoneEnableProtectedMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_TurnOnProtectedMode |
+| Name | IZ_Policy_TurnOnProtectedMode_1 |
 | Friendly Name | Turn on Protected Mode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6291,13 +6474,13 @@ If you do not configure this policy setting, the user can choose whether path in
 
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_LocalPathForUpload |
+| Name | IZ_Policy_LocalPathForUpload_1 |
 | Friendly Name | Include local path when user is uploading files to a server |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6358,13 +6541,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 
 <!-- InternetZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyScriptActiveXNotMarkedSafe |
+| Name | IZ_PolicyScriptActiveXNotMarkedSafe_1 |
 | Friendly Name | Initialize and script ActiveX controls not marked as safe |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6429,13 +6612,13 @@ If you do not configure this policy setting, the permission is set to High Safet
 
 <!-- InternetZoneJavaPermissions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyJavaPermissions |
+| Name | IZ_PolicyJavaPermissions_1 |
 | Friendly Name | Java permissions |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6494,13 +6677,13 @@ If you do not configure this policy setting, users are queried to choose whether
 
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyLaunchAppsAndFilesInIFRAME |
+| Name | IZ_PolicyLaunchAppsAndFilesInIFRAME_1 |
 | Friendly Name | Launching applications and files in an IFRAME |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6567,13 +6750,13 @@ If you do not configure this policy setting, logon is set to Automatic logon onl
 
 <!-- InternetZoneLogonOptions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyLogon |
+| Name | IZ_PolicyLogon_1 |
 | Friendly Name | Logon options |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6632,13 +6815,13 @@ If you do not configure this policy setting, users can open windows and frames f
 
 <!-- InternetZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNavigateSubframesAcrossDomains |
+| Name | IZ_PolicyNavigateSubframesAcrossDomains_1 |
 | Friendly Name | Navigate windows and frames across different domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6673,7 +6856,7 @@ If you do not configure this policy setting, users can open windows and frames f
 
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether .NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components.
 
@@ -6697,13 +6880,13 @@ If you do not configure this policy setting, Internet Explorer will execute sign
 
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicySignedFrameworkComponentsURLaction |
+| Name | IZ_PolicySignedFrameworkComponentsURLaction_1 |
 | Friendly Name | Run .NET Framework-reliant components signed with Authenticode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6762,13 +6945,13 @@ If you do not configure this policy setting, the user can configure how the comp
 
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_UnsafeFiles |
+| Name | IZ_Policy_UnsafeFiles_1 |
 | Friendly Name | Show security warning for potentially unsafe files |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6827,13 +7010,13 @@ If you do not configure this policy setting, most unwanted pop-up windows are pr
 
 <!-- InternetZoneUsePopupBlocker-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyBlockPopupWindows |
+| Name | IZ_PolicyBlockPopupWindows_1 |
 | Friendly Name | Use Pop-up Blocker |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Internet Zone |
@@ -6892,13 +7075,13 @@ If you do not configure this policy setting, users are queried to choose whether
 
 <!-- IntranetZoneAllowAccessToDataSources-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAccessDataSourcesAcrossDomains |
+| Name | IZ_PolicyAccessDataSourcesAcrossDomains_3 |
 | Friendly Name | Access data sources across domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
@@ -6957,13 +7140,13 @@ If you do not configure this policy setting, users will receive a prompt when a 
 
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarActiveXURLaction |
+| Name | IZ_PolicyNotificationBarActiveXURLaction_3 |
 | Friendly Name | Automatic prompting for ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
@@ -7020,13 +7203,13 @@ If you disable or do not configure this setting, users will receive a file downl
 
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarDownloadURLaction |
+| Name | IZ_PolicyNotificationBarDownloadURLaction_3 |
 | Friendly Name | Automatic prompting for file downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
@@ -7085,13 +7268,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 
 <!-- IntranetZoneAllowFontDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyFontDownload |
+| Name | IZ_PolicyFontDownload_3 |
 | Friendly Name | Allow font downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
@@ -7150,13 +7333,13 @@ If you do not configure this policy setting, Web sites from less privileged zone
 
 <!-- IntranetZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyZoneElevationURLaction |
+| Name | IZ_PolicyZoneElevationURLaction_3 |
 | Friendly Name | Web sites in less privileged Web content zones can navigate into this zone |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
@@ -7191,7 +7374,7 @@ If you do not configure this policy setting, Web sites from less privileged zone
 
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -7215,13 +7398,13 @@ If you do not configure this policy setting, Internet Explorer will execute unsi
 
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction |
+| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction_3 |
 | Friendly Name | Run .NET Framework-reliant components not signed with Authenticode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
@@ -7280,13 +7463,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 
 <!-- IntranetZoneAllowScriptlets-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_AllowScriptlets |
+| Name | IZ_Policy_AllowScriptlets_3 |
 | Friendly Name | Allow scriptlets |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
@@ -7329,7 +7512,7 @@ If you disable this policy setting, SmartScreen Filter does not scan pages in th
 
 If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+**Note**: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 <!-- IntranetZoneAllowSmartScreenIE-Description-End -->
 
 <!-- IntranetZoneAllowSmartScreenIE-Editable-Begin -->
@@ -7347,13 +7530,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 
 <!-- IntranetZoneAllowSmartScreenIE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_Phishing |
+| Name | IZ_Policy_Phishing_3 |
 | Friendly Name | Turn on SmartScreen Filter scan |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
@@ -7412,13 +7595,13 @@ If you do not configure this policy setting, users can preserve information in t
 
 <!-- IntranetZoneAllowUserDataPersistence-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUserdataPersistence |
+| Name | IZ_PolicyUserdataPersistence_3 |
 | Friendly Name | Userdata persistence |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
@@ -7477,13 +7660,13 @@ If you don't configure this policy setting, Internet Explorer won't check with y
 
 <!-- IntranetZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAntiMalwareCheckingOfActiveXControls |
+| Name | IZ_PolicyAntiMalwareCheckingOfActiveXControls_3 |
 | Friendly Name | Don't run antimalware programs against ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
@@ -7544,13 +7727,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 
 <!-- IntranetZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyScriptActiveXNotMarkedSafe |
+| Name | IZ_PolicyScriptActiveXNotMarkedSafe_3 |
 | Friendly Name | Initialize and script ActiveX controls not marked as safe |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
@@ -7615,13 +7798,13 @@ If you do not configure this policy setting, the permission is set to Medium Saf
 
 <!-- IntranetZoneJavaPermissions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyJavaPermissions |
+| Name | IZ_PolicyJavaPermissions_3 |
 | Friendly Name | Java permissions |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
@@ -7680,13 +7863,13 @@ If you do not configure this policy setting, users can open windows and frames f
 
 <!-- IntranetZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNavigateSubframesAcrossDomains |
+| Name | IZ_PolicyNavigateSubframesAcrossDomains_3 |
 | Friendly Name | Navigate windows and frames across different domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
@@ -7745,7 +7928,7 @@ If this policy is left unconfigured, then MSHTML will use JScript9Legacy and MSX
 
 <!-- JScriptReplacement-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -7817,7 +8000,7 @@ For more info about how to use this policy together with other related policies 
 
 <!-- KeepIntranetSitesInInternetExplorer-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -7906,13 +8089,13 @@ If you do not configure this policy setting, users can load a page in the zone t
 
 <!-- LocalMachineZoneAllowAccessToDataSources-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAccessDataSourcesAcrossDomains |
+| Name | IZ_PolicyAccessDataSourcesAcrossDomains_9 |
 | Friendly Name | Access data sources across domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
@@ -7971,13 +8154,13 @@ If you do not configure this policy setting, users will receive a prompt when a 
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarActiveXURLaction |
+| Name | IZ_PolicyNotificationBarActiveXURLaction_9 |
 | Friendly Name | Automatic prompting for ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
@@ -8034,13 +8217,13 @@ If you disable or do not configure this setting, users will receive a file downl
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarDownloadURLaction |
+| Name | IZ_PolicyNotificationBarDownloadURLaction_9 |
 | Friendly Name | Automatic prompting for file downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
@@ -8099,13 +8282,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 
 <!-- LocalMachineZoneAllowFontDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyFontDownload |
+| Name | IZ_PolicyFontDownload_9 |
 | Friendly Name | Allow font downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
@@ -8164,13 +8347,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 
 <!-- LocalMachineZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyZoneElevationURLaction |
+| Name | IZ_PolicyZoneElevationURLaction_9 |
 | Friendly Name | Web sites in less privileged Web content zones can navigate into this zone |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
@@ -8205,7 +8388,7 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -8229,13 +8412,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction |
+| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction_9 |
 | Friendly Name | Run .NET Framework-reliant components not signed with Authenticode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
@@ -8294,13 +8477,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 
 <!-- LocalMachineZoneAllowScriptlets-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_AllowScriptlets |
+| Name | IZ_Policy_AllowScriptlets_9 |
 | Friendly Name | Allow scriptlets |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
@@ -8343,7 +8526,7 @@ If you disable this policy setting, SmartScreen Filter does not scan pages in th
 
 If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+**Note**: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 <!-- LocalMachineZoneAllowSmartScreenIE-Description-End -->
 
 <!-- LocalMachineZoneAllowSmartScreenIE-Editable-Begin -->
@@ -8361,13 +8544,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 
 <!-- LocalMachineZoneAllowSmartScreenIE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_Phishing |
+| Name | IZ_Policy_Phishing_9 |
 | Friendly Name | Turn on SmartScreen Filter scan |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
@@ -8426,13 +8609,13 @@ If you do not configure this policy setting, users can preserve information in t
 
 <!-- LocalMachineZoneAllowUserDataPersistence-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUserdataPersistence |
+| Name | IZ_PolicyUserdataPersistence_9 |
 | Friendly Name | Userdata persistence |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
@@ -8491,13 +8674,13 @@ If you don't configure this policy setting, Internet Explorer won't check with y
 
 <!-- LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAntiMalwareCheckingOfActiveXControls |
+| Name | IZ_PolicyAntiMalwareCheckingOfActiveXControls_9 |
 | Friendly Name | Don't run antimalware programs against ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
@@ -8558,13 +8741,13 @@ If you do not configure this policy setting, users are queried whether to allow 
 
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyScriptActiveXNotMarkedSafe |
+| Name | IZ_PolicyScriptActiveXNotMarkedSafe_9 |
 | Friendly Name | Initialize and script ActiveX controls not marked as safe |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
@@ -8629,13 +8812,13 @@ If you do not configure this policy setting, the permission is set to Medium Saf
 
 <!-- LocalMachineZoneJavaPermissions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyJavaPermissions |
+| Name | IZ_PolicyJavaPermissions_9 |
 | Friendly Name | Java permissions |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
@@ -8694,13 +8877,13 @@ If you do not configure this policy setting, users can open windows and frames f
 
 <!-- LocalMachineZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNavigateSubframesAcrossDomains |
+| Name | IZ_PolicyNavigateSubframesAcrossDomains_9 |
 | Friendly Name | Navigate windows and frames across different domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
@@ -8759,13 +8942,13 @@ If you do not configure this policy setting, users cannot load a page in the zon
 
 <!-- LockedDownInternetZoneAllowAccessToDataSources-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAccessDataSourcesAcrossDomains |
+| Name | IZ_PolicyAccessDataSourcesAcrossDomains_2 |
 | Friendly Name | Access data sources across domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Internet Zone |
@@ -8824,13 +9007,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarActiveXURLaction |
+| Name | IZ_PolicyNotificationBarActiveXURLaction_2 |
 | Friendly Name | Automatic prompting for ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Internet Zone |
@@ -8887,13 +9070,13 @@ If you disable or do not configure this setting, file downloads that are not use
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarDownloadURLaction |
+| Name | IZ_PolicyNotificationBarDownloadURLaction_2 |
 | Friendly Name | Automatic prompting for file downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Internet Zone |
@@ -8952,13 +9135,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 
 <!-- LockedDownInternetZoneAllowFontDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyFontDownload |
+| Name | IZ_PolicyFontDownload_2 |
 | Friendly Name | Allow font downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Internet Zone |
@@ -9017,13 +9200,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyZoneElevationURLaction |
+| Name | IZ_PolicyZoneElevationURLaction_2 |
 | Friendly Name | Web sites in less privileged Web content zones can navigate into this zone |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Internet Zone |
@@ -9058,7 +9241,7 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -9082,13 +9265,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction |
+| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction_2 |
 | Friendly Name | Run .NET Framework-reliant components not signed with Authenticode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Internet Zone |
@@ -9147,13 +9330,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 
 <!-- LockedDownInternetZoneAllowScriptlets-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_AllowScriptlets |
+| Name | IZ_Policy_AllowScriptlets_2 |
 | Friendly Name | Allow scriptlets |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Internet Zone |
@@ -9196,7 +9379,7 @@ If you disable this policy setting, SmartScreen Filter does not scan pages in th
 
 If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+**Note**: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 <!-- LockedDownInternetZoneAllowSmartScreenIE-Description-End -->
 
 <!-- LockedDownInternetZoneAllowSmartScreenIE-Editable-Begin -->
@@ -9214,13 +9397,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 
 <!-- LockedDownInternetZoneAllowSmartScreenIE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_Phishing |
+| Name | IZ_Policy_Phishing_2 |
 | Friendly Name | Turn on SmartScreen Filter scan |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Internet Zone |
@@ -9279,13 +9462,13 @@ If you do not configure this policy setting, users can preserve information in t
 
 <!-- LockedDownInternetZoneAllowUserDataPersistence-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUserdataPersistence |
+| Name | IZ_PolicyUserdataPersistence_2 |
 | Friendly Name | Userdata persistence |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Internet Zone |
@@ -9346,13 +9529,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyScriptActiveXNotMarkedSafe |
+| Name | IZ_PolicyScriptActiveXNotMarkedSafe_2 |
 | Friendly Name | Initialize and script ActiveX controls not marked as safe |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Internet Zone |
@@ -9417,13 +9600,13 @@ If you do not configure this policy setting, Java applets are disabled.
 
 <!-- LockedDownInternetZoneJavaPermissions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyJavaPermissions |
+| Name | IZ_PolicyJavaPermissions_2 |
 | Friendly Name | Java permissions |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Internet Zone |
@@ -9482,13 +9665,13 @@ If you do not configure this policy setting, users can open windows and frames f
 
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNavigateSubframesAcrossDomains |
+| Name | IZ_PolicyNavigateSubframesAcrossDomains_2 |
 | Friendly Name | Navigate windows and frames across different domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Internet Zone |
@@ -9553,13 +9736,13 @@ If you do not configure this policy setting, Java applets are disabled.
 
 <!-- LockedDownIntranetJavaPermissions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyJavaPermissions |
+| Name | IZ_PolicyJavaPermissions_4 |
 | Friendly Name | Java permissions |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Intranet Zone |
@@ -9618,13 +9801,13 @@ If you do not configure this policy setting, users are queried to choose whether
 
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAccessDataSourcesAcrossDomains |
+| Name | IZ_PolicyAccessDataSourcesAcrossDomains_4 |
 | Friendly Name | Access data sources across domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Intranet Zone |
@@ -9683,13 +9866,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarActiveXURLaction |
+| Name | IZ_PolicyNotificationBarActiveXURLaction_4 |
 | Friendly Name | Automatic prompting for ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Intranet Zone |
@@ -9746,13 +9929,13 @@ If you disable or do not configure this setting, file downloads that are not use
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarDownloadURLaction |
+| Name | IZ_PolicyNotificationBarDownloadURLaction_4 |
 | Friendly Name | Automatic prompting for file downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Intranet Zone |
@@ -9811,13 +9994,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 
 <!-- LockedDownIntranetZoneAllowFontDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyFontDownload |
+| Name | IZ_PolicyFontDownload_4 |
 | Friendly Name | Allow font downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Intranet Zone |
@@ -9876,13 +10059,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyZoneElevationURLaction |
+| Name | IZ_PolicyZoneElevationURLaction_4 |
 | Friendly Name | Web sites in less privileged Web content zones can navigate into this zone |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Intranet Zone |
@@ -9917,7 +10100,7 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -9941,13 +10124,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction |
+| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction_4 |
 | Friendly Name | Run .NET Framework-reliant components not signed with Authenticode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Intranet Zone |
@@ -10006,13 +10189,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 
 <!-- LockedDownIntranetZoneAllowScriptlets-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_AllowScriptlets |
+| Name | IZ_Policy_AllowScriptlets_4 |
 | Friendly Name | Allow scriptlets |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Intranet Zone |
@@ -10055,7 +10238,7 @@ If you disable this policy setting, SmartScreen Filter does not scan pages in th
 
 If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+**Note**: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 <!-- LockedDownIntranetZoneAllowSmartScreenIE-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowSmartScreenIE-Editable-Begin -->
@@ -10073,13 +10256,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 
 <!-- LockedDownIntranetZoneAllowSmartScreenIE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_Phishing |
+| Name | IZ_Policy_Phishing_4 |
 | Friendly Name | Turn on SmartScreen Filter scan |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Intranet Zone |
@@ -10138,13 +10321,13 @@ If you do not configure this policy setting, users can preserve information in t
 
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUserdataPersistence |
+| Name | IZ_PolicyUserdataPersistence_4 |
 | Friendly Name | Userdata persistence |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Intranet Zone |
@@ -10205,13 +10388,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyScriptActiveXNotMarkedSafe |
+| Name | IZ_PolicyScriptActiveXNotMarkedSafe_4 |
 | Friendly Name | Initialize and script ActiveX controls not marked as safe |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Intranet Zone |
@@ -10270,13 +10453,13 @@ If you do not configure this policy setting, users can open windows and frames f
 
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNavigateSubframesAcrossDomains |
+| Name | IZ_PolicyNavigateSubframesAcrossDomains_4 |
 | Friendly Name | Navigate windows and frames across different domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Intranet Zone |
@@ -10335,13 +10518,13 @@ If you do not configure this policy setting, users can load a page in the zone t
 
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAccessDataSourcesAcrossDomains |
+| Name | IZ_PolicyAccessDataSourcesAcrossDomains_10 |
 | Friendly Name | Access data sources across domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Local Machine Zone |
@@ -10400,13 +10583,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarActiveXURLaction |
+| Name | IZ_PolicyNotificationBarActiveXURLaction_10 |
 | Friendly Name | Automatic prompting for ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Local Machine Zone |
@@ -10463,13 +10646,13 @@ If you disable or do not configure this setting, file downloads that are not use
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarDownloadURLaction |
+| Name | IZ_PolicyNotificationBarDownloadURLaction_10 |
 | Friendly Name | Automatic prompting for file downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Local Machine Zone |
@@ -10528,13 +10711,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyFontDownload |
+| Name | IZ_PolicyFontDownload_10 |
 | Friendly Name | Allow font downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Local Machine Zone |
@@ -10593,13 +10776,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyZoneElevationURLaction |
+| Name | IZ_PolicyZoneElevationURLaction_10 |
 | Friendly Name | Web sites in less privileged Web content zones can navigate into this zone |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Local Machine Zone |
@@ -10634,7 +10817,7 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -10658,13 +10841,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction |
+| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction_10 |
 | Friendly Name | Run .NET Framework-reliant components not signed with Authenticode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Local Machine Zone |
@@ -10723,13 +10906,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 
 <!-- LockedDownLocalMachineZoneAllowScriptlets-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_AllowScriptlets |
+| Name | IZ_Policy_AllowScriptlets_10 |
 | Friendly Name | Allow scriptlets |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Local Machine Zone |
@@ -10772,7 +10955,7 @@ If you disable this policy setting, SmartScreen Filter does not scan pages in th
 
 If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+**Note**: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 <!-- LockedDownLocalMachineZoneAllowSmartScreenIE-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowSmartScreenIE-Editable-Begin -->
@@ -10790,13 +10973,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 
 <!-- LockedDownLocalMachineZoneAllowSmartScreenIE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_Phishing |
+| Name | IZ_Policy_Phishing_10 |
 | Friendly Name | Turn on SmartScreen Filter scan |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Local Machine Zone |
@@ -10855,13 +11038,13 @@ If you do not configure this policy setting, users can preserve information in t
 
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUserdataPersistence |
+| Name | IZ_PolicyUserdataPersistence_10 |
 | Friendly Name | Userdata persistence |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Local Machine Zone |
@@ -10922,13 +11105,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyScriptActiveXNotMarkedSafe |
+| Name | IZ_PolicyScriptActiveXNotMarkedSafe_10 |
 | Friendly Name | Initialize and script ActiveX controls not marked as safe |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Local Machine Zone |
@@ -10993,13 +11176,13 @@ If you do not configure this policy setting, Java applets are disabled.
 
 <!-- LockedDownLocalMachineZoneJavaPermissions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyJavaPermissions |
+| Name | IZ_PolicyJavaPermissions_10 |
 | Friendly Name | Java permissions |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Local Machine Zone |
@@ -11058,13 +11241,13 @@ If you do not configure this policy setting, users can open windows and frames f
 
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNavigateSubframesAcrossDomains |
+| Name | IZ_PolicyNavigateSubframesAcrossDomains_10 |
 | Friendly Name | Navigate windows and frames across different domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Local Machine Zone |
@@ -11123,13 +11306,13 @@ If you do not configure this policy setting, users cannot load a page in the zon
 
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAccessDataSourcesAcrossDomains |
+| Name | IZ_PolicyAccessDataSourcesAcrossDomains_8 |
 | Friendly Name | Access data sources across domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Restricted Sites Zone |
@@ -11188,13 +11371,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarActiveXURLaction |
+| Name | IZ_PolicyNotificationBarActiveXURLaction_8 |
 | Friendly Name | Automatic prompting for ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Restricted Sites Zone |
@@ -11251,13 +11434,13 @@ If you disable or do not configure this setting, file downloads that are not use
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarDownloadURLaction |
+| Name | IZ_PolicyNotificationBarDownloadURLaction_8 |
 | Friendly Name | Automatic prompting for file downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Restricted Sites Zone |
@@ -11316,13 +11499,13 @@ If you do not configure this policy setting, users are queried whether to allow 
 
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyFontDownload |
+| Name | IZ_PolicyFontDownload_8 |
 | Friendly Name | Allow font downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Restricted Sites Zone |
@@ -11381,13 +11564,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyZoneElevationURLaction |
+| Name | IZ_PolicyZoneElevationURLaction_8 |
 | Friendly Name | Web sites in less privileged Web content zones can navigate into this zone |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Restricted Sites Zone |
@@ -11422,7 +11605,7 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -11446,13 +11629,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction |
+| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction_8 |
 | Friendly Name | Run .NET Framework-reliant components not signed with Authenticode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Restricted Sites Zone |
@@ -11511,13 +11694,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_AllowScriptlets |
+| Name | IZ_Policy_AllowScriptlets_8 |
 | Friendly Name | Allow scriptlets |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Restricted Sites Zone |
@@ -11560,7 +11743,7 @@ If you disable this policy setting, SmartScreen Filter does not scan pages in th
 
 If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+**Note**: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 <!-- LockedDownRestrictedSitesZoneAllowSmartScreenIE-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowSmartScreenIE-Editable-Begin -->
@@ -11578,13 +11761,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 
 <!-- LockedDownRestrictedSitesZoneAllowSmartScreenIE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_Phishing |
+| Name | IZ_Policy_Phishing_8 |
 | Friendly Name | Turn on SmartScreen Filter scan |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Restricted Sites Zone |
@@ -11643,13 +11826,13 @@ If you do not configure this policy setting, users cannot preserve information i
 
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUserdataPersistence |
+| Name | IZ_PolicyUserdataPersistence_8 |
 | Friendly Name | Userdata persistence |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Restricted Sites Zone |
@@ -11710,13 +11893,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyScriptActiveXNotMarkedSafe |
+| Name | IZ_PolicyScriptActiveXNotMarkedSafe_8 |
 | Friendly Name | Initialize and script ActiveX controls not marked as safe |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Restricted Sites Zone |
@@ -11781,13 +11964,13 @@ If you do not configure this policy setting, Java applets are disabled.
 
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyJavaPermissions |
+| Name | IZ_PolicyJavaPermissions_8 |
 | Friendly Name | Java permissions |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Restricted Sites Zone |
@@ -11846,13 +12029,13 @@ If you do not configure this policy setting, users cannot open other windows and
 
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNavigateSubframesAcrossDomains |
+| Name | IZ_PolicyNavigateSubframesAcrossDomains_8 |
 | Friendly Name | Navigate windows and frames across different domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Restricted Sites Zone |
@@ -11911,13 +12094,13 @@ If you do not configure this policy setting, users can load a page in the zone t
 
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAccessDataSourcesAcrossDomains |
+| Name | IZ_PolicyAccessDataSourcesAcrossDomains_6 |
 | Friendly Name | Access data sources across domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Trusted Sites Zone |
@@ -11976,13 +12159,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarActiveXURLaction |
+| Name | IZ_PolicyNotificationBarActiveXURLaction_6 |
 | Friendly Name | Automatic prompting for ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Trusted Sites Zone |
@@ -12039,13 +12222,13 @@ If you disable or do not configure this setting, file downloads that are not use
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarDownloadURLaction |
+| Name | IZ_PolicyNotificationBarDownloadURLaction_6 |
 | Friendly Name | Automatic prompting for file downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Trusted Sites Zone |
@@ -12104,13 +12287,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyFontDownload |
+| Name | IZ_PolicyFontDownload_6 |
 | Friendly Name | Allow font downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Trusted Sites Zone |
@@ -12169,13 +12352,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyZoneElevationURLaction |
+| Name | IZ_PolicyZoneElevationURLaction_6 |
 | Friendly Name | Web sites in less privileged Web content zones can navigate into this zone |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Trusted Sites Zone |
@@ -12210,7 +12393,7 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -12234,13 +12417,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction |
+| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction_6 |
 | Friendly Name | Run .NET Framework-reliant components not signed with Authenticode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Trusted Sites Zone |
@@ -12299,13 +12482,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_AllowScriptlets |
+| Name | IZ_Policy_AllowScriptlets_6 |
 | Friendly Name | Allow scriptlets |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Trusted Sites Zone |
@@ -12348,7 +12531,7 @@ If you disable this policy setting, SmartScreen Filter does not scan pages in th
 
 If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+**Note**: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 <!-- LockedDownTrustedSitesZoneAllowSmartScreenIE-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowSmartScreenIE-Editable-Begin -->
@@ -12366,13 +12549,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 
 <!-- LockedDownTrustedSitesZoneAllowSmartScreenIE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_Phishing |
+| Name | IZ_Policy_Phishing_6 |
 | Friendly Name | Turn on SmartScreen Filter scan |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Trusted Sites Zone |
@@ -12431,13 +12614,13 @@ If you do not configure this policy setting, users can preserve information in t
 
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUserdataPersistence |
+| Name | IZ_PolicyUserdataPersistence_6 |
 | Friendly Name | Userdata persistence |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Trusted Sites Zone |
@@ -12498,13 +12681,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyScriptActiveXNotMarkedSafe |
+| Name | IZ_PolicyScriptActiveXNotMarkedSafe_6 |
 | Friendly Name | Initialize and script ActiveX controls not marked as safe |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Trusted Sites Zone |
@@ -12569,13 +12752,13 @@ If you do not configure this policy setting, Java applets are disabled.
 
 <!-- LockedDownTrustedSitesZoneJavaPermissions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyJavaPermissions |
+| Name | IZ_PolicyJavaPermissions_6 |
 | Friendly Name | Java permissions |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Trusted Sites Zone |
@@ -12634,13 +12817,13 @@ If you do not configure this policy setting, users can open windows and frames f
 
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNavigateSubframesAcrossDomains |
+| Name | IZ_PolicyNavigateSubframesAcrossDomains_6 |
 | Friendly Name | Navigate windows and frames across different domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Locked-Down Trusted Sites Zone |
@@ -12699,13 +12882,13 @@ If you do not configure this policy setting, MIME sniffing will never promote a 
 
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IESF_PolicyExplorerProcesses |
+| Name | IESF_PolicyExplorerProcesses_6 |
 | Friendly Name | Internet Explorer Processes |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Security Features > Mime Sniffing Safety Feature |
@@ -12764,13 +12947,13 @@ If you do not configure this policy setting, the MK Protocol is prevented for Fi
 
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IESF_PolicyExplorerProcesses |
+| Name | IESF_PolicyExplorerProcesses_3 |
 | Friendly Name | Internet Explorer Processes |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Security Features > MK Protocol Security Restriction |
@@ -12827,7 +13010,7 @@ If you disable or do not configure this policy setting, the user can select his 
 
 <!-- NewTabDefaultPage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -12892,13 +13075,13 @@ If you do not configure this policy setting, the Notification bar will be displa
 
 <!-- NotificationBarInternetExplorerProcesses-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IESF_PolicyExplorerProcesses |
+| Name | IESF_PolicyExplorerProcesses_10 |
 | Friendly Name | Internet Explorer Processes |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Security Features > Notification bar |
@@ -12955,7 +13138,7 @@ If you disable or do not configure this policy setting, the user is prompted to 
 
 <!-- PreventManagingSmartScreenFilter-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -13018,7 +13201,7 @@ If you disable or do not configure this policy setting, ActiveX controls can be 
 
 <!-- PreventPerUserInstallationOfActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -13084,13 +13267,13 @@ If you do not configure this policy setting, any zone can be protected from zone
 
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IESF_PolicyExplorerProcesses |
+| Name | IESF_PolicyExplorerProcesses_9 |
 | Friendly Name | Internet Explorer Processes |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Security Features > Protection From Zone Elevation |
@@ -13149,7 +13332,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 
 <!-- RemoveRunThisTimeButtonForOutdatedActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -13215,7 +13398,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 
 <!-- ResetZoomForDialogInIEMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -13281,13 +13464,13 @@ If you do not configure this policy setting, the user's preference will be used 
 
 <!-- RestrictActiveXInstallInternetExplorerProcesses-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IESF_PolicyExplorerProcesses |
+| Name | IESF_PolicyExplorerProcesses_11 |
 | Friendly Name | Internet Explorer Processes |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Security Features > Restrict ActiveX Install |
@@ -13346,13 +13529,13 @@ If you do not configure this policy setting, users cannot load a page in the zon
 
 <!-- RestrictedSitesZoneAllowAccessToDataSources-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAccessDataSourcesAcrossDomains |
+| Name | IZ_PolicyAccessDataSourcesAcrossDomains_7 |
 | Friendly Name | Access data sources across domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -13411,13 +13594,13 @@ If you do not configure this policy setting, script code on pages in the zone is
 
 <!-- RestrictedSitesZoneAllowActiveScripting-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyActiveScripting |
+| Name | IZ_PolicyActiveScripting_7 |
 | Friendly Name | Allow active scripting |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -13476,13 +13659,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarActiveXURLaction |
+| Name | IZ_PolicyNotificationBarActiveXURLaction_7 |
 | Friendly Name | Automatic prompting for ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -13539,13 +13722,13 @@ If you disable or do not configure this setting, file downloads that are not use
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarDownloadURLaction |
+| Name | IZ_PolicyNotificationBarDownloadURLaction_7 |
 | Friendly Name | Automatic prompting for file downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -13604,13 +13787,13 @@ If you do not configure this policy setting, binary and script behaviors are not
 
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyBinaryBehaviors |
+| Name | IZ_PolicyBinaryBehaviors_7 |
 | Friendly Name | Allow binary and script behaviors |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -13671,13 +13854,13 @@ If you do not configure this policy setting, a script cannot perform a clipboard
 
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAllowPasteViaScript |
+| Name | IZ_PolicyAllowPasteViaScript_7 |
 | Friendly Name | Allow cut, copy or paste operations from the clipboard via script |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -13736,13 +13919,13 @@ If you do not configure this policy setting, users are queried to choose whether
 
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyDropOrPasteFiles |
+| Name | IZ_PolicyDropOrPasteFiles_7 |
 | Friendly Name | Allow drag and drop or copy and paste files |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -13801,13 +13984,13 @@ If you do not configure this policy setting, files are prevented from being down
 
 <!-- RestrictedSitesZoneAllowFileDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyFileDownload |
+| Name | IZ_PolicyFileDownload_7 |
 | Friendly Name | Allow file downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -13866,13 +14049,13 @@ If you do not configure this policy setting, users are queried whether to allow 
 
 <!-- RestrictedSitesZoneAllowFontDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyFontDownload |
+| Name | IZ_PolicyFontDownload_7 |
 | Friendly Name | Allow font downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -13931,13 +14114,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyZoneElevationURLaction |
+| Name | IZ_PolicyZoneElevationURLaction_7 |
 | Friendly Name | Web sites in less privileged Web content zones can navigate into this zone |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -13996,13 +14179,13 @@ If you do not configure this policy setting, the user can decide whether to load
 
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_XAML |
+| Name | IZ_Policy_XAML_7 |
 | Friendly Name | Allow loading of XAML files |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14061,13 +14244,13 @@ If you do not configure this policy setting, a user's browser that loads a page 
 
 <!-- RestrictedSitesZoneAllowMETAREFRESH-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAllowMETAREFRESH |
+| Name | IZ_PolicyAllowMETAREFRESH_7 |
 | Friendly Name | Allow META REFRESH |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14102,7 +14285,7 @@ If you do not configure this policy setting, a user's browser that loads a page 
 
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -14126,13 +14309,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction |
+| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction_7 |
 | Friendly Name | Run .NET Framework-reliant components not signed with Authenticode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14189,13 +14372,13 @@ If you disable this policy setting, the user does not see the per-site ActiveX p
 
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt |
+| Name | IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Restricted |
 | Friendly Name | Allow only approved domains to use ActiveX controls without prompt |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14252,13 +14435,13 @@ If you disable this policy setting, the TDC Active X control will run from all s
 
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAllowTDCControl |
+| Name | IZ_PolicyAllowTDCControl_Both_Restricted |
 | Friendly Name | Allow only approved domains to use the TDC ActiveX control |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14317,13 +14500,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_WebBrowserControl |
+| Name | IZ_Policy_WebBrowserControl_7 |
 | Friendly Name | Allow scripting of Internet Explorer WebBrowser controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14382,13 +14565,13 @@ If you do not configure this policy setting, the possible harmful actions contai
 
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyWindowsRestrictionsURLaction |
+| Name | IZ_PolicyWindowsRestrictionsURLaction_7 |
 | Friendly Name | Allow script-initiated windows without size or position constraints |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14447,13 +14630,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 
 <!-- RestrictedSitesZoneAllowScriptlets-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_AllowScriptlets |
+| Name | IZ_Policy_AllowScriptlets_7 |
 | Friendly Name | Allow scriptlets |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14496,7 +14679,7 @@ If you disable this policy setting, SmartScreen Filter does not scan pages in th
 
 If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+**Note**: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 <!-- RestrictedSitesZoneAllowSmartScreenIE-Description-End -->
 
 <!-- RestrictedSitesZoneAllowSmartScreenIE-Editable-Begin -->
@@ -14514,13 +14697,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 
 <!-- RestrictedSitesZoneAllowSmartScreenIE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_Phishing |
+| Name | IZ_Policy_Phishing_7 |
 | Friendly Name | Turn on SmartScreen Filter scan |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14577,13 +14760,13 @@ If you disable or do not configure this policy setting, script is not allowed to
 
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_ScriptStatusBar |
+| Name | IZ_Policy_ScriptStatusBar_7 |
 | Friendly Name | Allow updates to status bar via script |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14642,13 +14825,13 @@ If you do not configure this policy setting, users cannot preserve information i
 
 <!-- RestrictedSitesZoneAllowUserDataPersistence-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUserdataPersistence |
+| Name | IZ_PolicyUserdataPersistence_7 |
 | Friendly Name | Userdata persistence |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14709,13 +14892,13 @@ If you do not configure or disable this policy setting, VBScript is prevented fr
 
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAllowVBScript |
+| Name | IZ_PolicyAllowVBScript_7 |
 | Friendly Name | Allow VBScript to run in Internet Explorer |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14774,13 +14957,13 @@ If you don't configure this policy setting, Internet Explorer always checks with
 
 <!-- RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAntiMalwareCheckingOfActiveXControls |
+| Name | IZ_PolicyAntiMalwareCheckingOfActiveXControls_7 |
 | Friendly Name | Don't run antimalware programs against ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14839,13 +15022,13 @@ If you do not configure this policy setting, signed controls cannot be downloade
 
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyDownloadSignedActiveX |
+| Name | IZ_PolicyDownloadSignedActiveX_7 |
 | Friendly Name | Download signed ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14904,13 +15087,13 @@ If you do not configure this policy setting, users cannot run unsigned controls.
 
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyDownloadUnsignedActiveX |
+| Name | IZ_PolicyDownloadUnsignedActiveX_7 |
 | Friendly Name | Download unsigned ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -14967,13 +15150,13 @@ If you disable this policy setting, the XSS Filter is turned off for sites in th
 
 <!-- RestrictedSitesZoneEnableCrossSiteScriptingFilter-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyTurnOnXSSFilter |
+| Name | IZ_PolicyTurnOnXSSFilter_Both_Restricted |
 | Friendly Name | Turn on Cross-Site Scripting Filter |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15034,13 +15217,13 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyDragDropAcrossDomainsAcrossWindows |
+| Name | IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Restricted |
 | Friendly Name | Enable dragging of content from different domains across windows |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15101,13 +15284,13 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyDragDropAcrossDomainsWithinWindow |
+| Name | IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Restricted |
 | Friendly Name | Enable dragging of content from different domains within a window |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15166,13 +15349,13 @@ If you do not configure this policy setting, the actions that may be harmful can
 
 <!-- RestrictedSitesZoneEnableMIMESniffing-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyMimeSniffingURLaction |
+| Name | IZ_PolicyMimeSniffingURLaction_7 |
 | Friendly Name | Enable MIME Sniffing |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15231,13 +15414,13 @@ If you do not configure this policy setting, the user can choose whether path in
 
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_LocalPathForUpload |
+| Name | IZ_Policy_LocalPathForUpload_7 |
 | Friendly Name | Include local path when user is uploading files to a server |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15298,13 +15481,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyScriptActiveXNotMarkedSafe |
+| Name | IZ_PolicyScriptActiveXNotMarkedSafe_7 |
 | Friendly Name | Initialize and script ActiveX controls not marked as safe |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15369,13 +15552,13 @@ If you do not configure this policy setting, Java applets are disabled.
 
 <!-- RestrictedSitesZoneJavaPermissions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyJavaPermissions |
+| Name | IZ_PolicyJavaPermissions_7 |
 | Friendly Name | Java permissions |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15434,13 +15617,13 @@ If you do not configure this policy setting, users are prevented from running ap
 
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyLaunchAppsAndFilesInIFRAME |
+| Name | IZ_PolicyLaunchAppsAndFilesInIFRAME_7 |
 | Friendly Name | Launching applications and files in an IFRAME |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15507,13 +15690,13 @@ If you do not configure this policy setting, logon is set to Prompt for username
 
 <!-- RestrictedSitesZoneLogonOptions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyLogon |
+| Name | IZ_PolicyLogon_7 |
 | Friendly Name | Logon options |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15572,13 +15755,13 @@ If you do not configure this policy setting, users cannot open other windows and
 
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNavigateSubframesAcrossDomains |
+| Name | IZ_PolicyNavigateSubframesAcrossDomains_7 |
 | Friendly Name | Navigate windows and frames across different domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15639,13 +15822,13 @@ If you do not configure this policy setting, controls and plug-ins are prevented
 
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyRunActiveXControls |
+| Name | IZ_PolicyRunActiveXControls_7 |
 | Friendly Name | Run ActiveX controls and plugins |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15680,7 +15863,7 @@ If you do not configure this policy setting, controls and plug-ins are prevented
 
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether .NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components.
 
@@ -15704,13 +15887,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicySignedFrameworkComponentsURLaction |
+| Name | IZ_PolicySignedFrameworkComponentsURLaction_7 |
 | Friendly Name | Run .NET Framework-reliant components signed with Authenticode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15771,13 +15954,13 @@ If you do not configure this policy setting, script interaction is prevented fro
 
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyScriptActiveXMarkedSafe |
+| Name | IZ_PolicyScriptActiveXMarkedSafe_7 |
 | Friendly Name | Script ActiveX controls marked safe for scripting |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15838,13 +16021,13 @@ If you do not configure this policy setting, scripts are prevented from accessin
 
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyScriptingOfJavaApplets |
+| Name | IZ_PolicyScriptingOfJavaApplets_7 |
 | Friendly Name | Scripting of Java applets |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15903,13 +16086,13 @@ If you do not configure this policy setting, the user can configure how the comp
 
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_UnsafeFiles |
+| Name | IZ_Policy_UnsafeFiles_7 |
 | Friendly Name | Show security warning for potentially unsafe files |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -15968,13 +16151,13 @@ If you do not configure this policy setting, the user can turn on or turn off Pr
 
 <!-- RestrictedSitesZoneTurnOnProtectedMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_TurnOnProtectedMode |
+| Name | IZ_Policy_TurnOnProtectedMode_7 |
 | Friendly Name | Turn on Protected Mode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -16033,13 +16216,13 @@ If you do not configure this policy setting, most unwanted pop-up windows are pr
 
 <!-- RestrictedSitesZoneUsePopupBlocker-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyBlockPopupWindows |
+| Name | IZ_PolicyBlockPopupWindows_7 |
 | Friendly Name | Use Pop-up Blocker |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Restricted Sites Zone |
@@ -16098,13 +16281,13 @@ If you do not configure this policy setting, the user's preference determines wh
 
 <!-- RestrictFileDownloadInternetExplorerProcesses-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IESF_PolicyExplorerProcesses |
+| Name | IESF_PolicyExplorerProcesses_12 |
 | Friendly Name | Internet Explorer Processes |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Security Features > Restrict File Download |
@@ -16163,13 +16346,13 @@ If you do not configure this policy setting, popup windows and other restriction
 
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IESF_PolicyExplorerProcesses |
+| Name | IESF_PolicyExplorerProcesses_8 |
 | Friendly Name | Internet Explorer Processes |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Security Features > Scripted Window Security Restrictions |
@@ -16228,7 +16411,7 @@ If you disable or do not configure this policy setting, the user can configure h
 
 <!-- SearchProviderList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -16292,7 +16475,7 @@ Also, see the "Security zones: Do not allow users to change policies" policy.
 
 <!-- SecurityZonesUseOnlyMachineSettings-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -16340,7 +16523,7 @@ Enabling this setting automatically opens all sites not included in the Enterpri
 
 Disabling, or not configuring this setting, opens all sites based on the currently active browser.
 
-Note: If you've also enabled the Administrative Templates\Windows Components\Microsoft Edge\Send all intranet sites to Internet Explorer 11 policy setting, then all intranet sites will continue to open in Internet Explorer 11.
+**Note**: If you've also enabled the Administrative Templates\Windows Components\Microsoft Edge\Send all intranet sites to Internet Explorer 11 policy setting, then all intranet sites will continue to open in Internet Explorer 11.
 <!-- SendSitesNotInEnterpriseSiteListToEdge-Description-End -->
 
 <!-- SendSitesNotInEnterpriseSiteListToEdge-Editable-Begin -->
@@ -16360,7 +16543,7 @@ Note: If you've also enabled the Administrative Templates\Windows Components\Mic
 
 <!-- SendSitesNotInEnterpriseSiteListToEdge-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -16447,7 +16630,7 @@ If you disable or do not configure this policy setting, ActiveX controls, includ
 
 <!-- SpecifyUseOfActiveXInstallerService-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -16513,13 +16696,13 @@ If you do not configure this policy setting, users can load a page in the zone t
 
 <!-- TrustedSitesZoneAllowAccessToDataSources-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAccessDataSourcesAcrossDomains |
+| Name | IZ_PolicyAccessDataSourcesAcrossDomains_5 |
 | Friendly Name | Access data sources across domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
@@ -16578,13 +16761,13 @@ If you do not configure this policy setting, users will receive a prompt when a 
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarActiveXURLaction |
+| Name | IZ_PolicyNotificationBarActiveXURLaction_5 |
 | Friendly Name | Automatic prompting for ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
@@ -16641,13 +16824,13 @@ If you disable or do not configure this setting, users will receive a file downl
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNotificationBarDownloadURLaction |
+| Name | IZ_PolicyNotificationBarDownloadURLaction_5 |
 | Friendly Name | Automatic prompting for file downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
@@ -16706,13 +16889,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 
 <!-- TrustedSitesZoneAllowFontDownloads-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyFontDownload |
+| Name | IZ_PolicyFontDownload_5 |
 | Friendly Name | Allow font downloads |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
@@ -16771,13 +16954,13 @@ If you do not configure this policy setting, a warning is issued to the user tha
 
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyZoneElevationURLaction |
+| Name | IZ_PolicyZoneElevationURLaction_5 |
 | Friendly Name | Web sites in less privileged Web content zones can navigate into this zone |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
@@ -16812,7 +16995,7 @@ If you do not configure this policy setting, a warning is issued to the user tha
 
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -16836,13 +17019,13 @@ If you do not configure this policy setting, Internet Explorer will execute unsi
 
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction |
+| Name | IZ_PolicyUnsignedFrameworkComponentsURLaction_5 |
 | Friendly Name | Run .NET Framework-reliant components not signed with Authenticode |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
@@ -16901,13 +17084,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 
 <!-- TrustedSitesZoneAllowScriptlets-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_AllowScriptlets |
+| Name | IZ_Policy_AllowScriptlets_5 |
 | Friendly Name | Allow scriptlets |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
@@ -16950,7 +17133,7 @@ If you disable this policy setting, SmartScreen Filter does not scan pages in th
 
 If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+**Note**: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 <!-- TrustedSitesZoneAllowSmartScreenIE-Description-End -->
 
 <!-- TrustedSitesZoneAllowSmartScreenIE-Editable-Begin -->
@@ -16968,13 +17151,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 
 <!-- TrustedSitesZoneAllowSmartScreenIE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_Policy_Phishing |
+| Name | IZ_Policy_Phishing_5 |
 | Friendly Name | Turn on SmartScreen Filter scan |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
@@ -17033,13 +17216,13 @@ If you do not configure this policy setting, users can preserve information in t
 
 <!-- TrustedSitesZoneAllowUserDataPersistence-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyUserdataPersistence |
+| Name | IZ_PolicyUserdataPersistence_5 |
 | Friendly Name | Userdata persistence |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
@@ -17098,13 +17281,13 @@ If you don't configure this policy setting, Internet Explorer won't check with y
 
 <!-- TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyAntiMalwareCheckingOfActiveXControls |
+| Name | IZ_PolicyAntiMalwareCheckingOfActiveXControls_5 |
 | Friendly Name | Don't run antimalware programs against ActiveX controls |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
@@ -17165,13 +17348,13 @@ If you do not configure this policy setting, users are queried whether to allow 
 
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyScriptActiveXNotMarkedSafe |
+| Name | IZ_PolicyScriptActiveXNotMarkedSafe_5 |
 | Friendly Name | Initialize and script ActiveX controls not marked as safe |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
@@ -17236,13 +17419,13 @@ If you do not configure this policy setting, the permission is set to Low Safety
 
 <!-- TrustedSitesZoneJavaPermissions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyJavaPermissions |
+| Name | IZ_PolicyJavaPermissions_5 |
 | Friendly Name | Java permissions |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
@@ -17301,13 +17484,13 @@ If you do not configure this policy setting, users can open windows and frames f
 
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | IZ_PolicyNavigateSubframesAcrossDomains |
+| Name | IZ_PolicyNavigateSubframesAcrossDomains_5 |
 | Friendly Name | Navigate windows and frames across different domains |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
@@ -17320,190 +17503,6 @@ If you do not configure this policy setting, users can open windows and frames f
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Examples-End -->
 
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-End -->
-
-<!-- AllowAutoComplete-Begin -->
-## AllowAutoComplete
-
-<!-- AllowAutoComplete-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
-<!-- AllowAutoComplete-Applicability-End -->
-
-<!-- AllowAutoComplete-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/InternetExplorer/AllowAutoComplete
-```
-<!-- AllowAutoComplete-OmaUri-End -->
-
-<!-- AllowAutoComplete-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This AutoComplete feature can remember and suggest User names and passwords on Forms.
-
-If you enable this setting, the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms will be turned on. You have to decide whether to select "prompt me to save passwords".
-
-If you disable this setting the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned off. The user also cannot opt to be prompted to save passwords.
-
-If you do not configure this setting, the user has the freedom of turning on Auto complete for User name and passwords on forms and the option of prompting to save passwords. To display this option, the users open the Internet Options dialog box, click the Contents Tab and click the Settings button.
-<!-- AllowAutoComplete-Description-End -->
-
-<!-- AllowAutoComplete-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- AllowAutoComplete-Editable-End -->
-
-<!-- AllowAutoComplete-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- AllowAutoComplete-DFProperties-End -->
-
-<!-- AllowAutoComplete-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | RestrictFormSuggestPW |
-| Friendly Name | Turn on the auto-complete feature for user names and passwords on forms |
-| Location | User Configuration |
-| Path | Windows Components > Internet Explorer |
-| Registry Key Name | Software\Policies\Microsoft\Internet Explorer\Main |
-| Registry Value Name | FormSuggest Passwords |
-| ADMX File Name | inetres.admx |
-<!-- AllowAutoComplete-AdmxBacked-End -->
-
-<!-- AllowAutoComplete-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- AllowAutoComplete-Examples-End -->
-
-<!-- AllowAutoComplete-End -->
-
-<!-- DisableActiveXVersionListAutoDownload-Begin -->
-## DisableActiveXVersionListAutoDownload
-
-<!-- DisableActiveXVersionListAutoDownload-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
-<!-- DisableActiveXVersionListAutoDownload-Applicability-End -->
-
-<!-- DisableActiveXVersionListAutoDownload-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/InternetExplorer/DisableActiveXVersionListAutoDownload
-```
-<!-- DisableActiveXVersionListAutoDownload-OmaUri-End -->
-
-<!-- DisableActiveXVersionListAutoDownload-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This setting determines whether IE automatically downloads updated versions of Microsoft’s VersionList.XML. IE uses this file to determine whether an ActiveX control should be stopped from loading.
-
-If you enable this setting, IE stops downloading updated versions of VersionList.XML. Turning off this automatic download breaks the out-of-date ActiveX control blocking feature by not letting the version list update with newly outdated controls, potentially compromising the security of your computer.
-
-If you disable or don't configure this setting, IE continues to download updated versions of VersionList.XML.
-
-For more information, see "Out-of-date ActiveX control blocking" in the Internet Explorer TechNet library.
-<!-- DisableActiveXVersionListAutoDownload-Description-End -->
-
-<!-- DisableActiveXVersionListAutoDownload-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- DisableActiveXVersionListAutoDownload-Editable-End -->
-
-<!-- DisableActiveXVersionListAutoDownload-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- DisableActiveXVersionListAutoDownload-DFProperties-End -->
-
-<!-- DisableActiveXVersionListAutoDownload-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | VersionListAutomaticDownloadDisable |
-| Friendly Name | Turn off automatic download of the ActiveX VersionList |
-| Location | User Configuration |
-| Path | Windows Components > Internet Explorer > Security Features > Add-on Management |
-| Registry Key Name | Software\Microsoft\Internet Explorer\VersionManager |
-| Registry Value Name | DownloadVersionList |
-| ADMX File Name | inetres.admx |
-<!-- DisableActiveXVersionListAutoDownload-AdmxBacked-End -->
-
-<!-- DisableActiveXVersionListAutoDownload-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DisableActiveXVersionListAutoDownload-Examples-End -->
-
-<!-- DisableActiveXVersionListAutoDownload-End -->
-
-<!-- DisableHomePageChange-Begin -->
-## DisableHomePageChange
-
-<!-- DisableHomePageChange-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
-<!-- DisableHomePageChange-Applicability-End -->
-
-<!-- DisableHomePageChange-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/InternetExplorer/DisableHomePageChange
-```
-<!-- DisableHomePageChange-OmaUri-End -->
-
-<!-- DisableHomePageChange-Description-Begin -->
-<!-- Description-Source-ADMX -->
-The Home page specified on the General tab of the Internet Options dialog box is the default Web page that Internet Explorer loads whenever it is run.
-
-If you enable this policy setting, a user cannot set a custom default home page. You must specify which default home page should load on the user machine. For machines with at least Internet Explorer 7, the home page can be set within this policy to override other home page policies.
-
-If you disable or do not configure this policy setting, the Home page box is enabled and users can choose their own home page.
-<!-- DisableHomePageChange-Description-End -->
-
-<!-- DisableHomePageChange-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- DisableHomePageChange-Editable-End -->
-
-<!-- DisableHomePageChange-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- DisableHomePageChange-DFProperties-End -->
-
-<!-- DisableHomePageChange-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | RestrictHomePage |
-| Friendly Name | Disable changing home page settings |
-| Location | User Configuration |
-| Path | Windows Components > Internet Explorer |
-| Registry Key Name | Software\Policies\Microsoft\Internet Explorer\Control Panel |
-| Registry Value Name | HomePage |
-| ADMX File Name | inetres.admx |
-<!-- DisableHomePageChange-AdmxBacked-End -->
-
-<!-- DisableHomePageChange-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DisableHomePageChange-Examples-End -->
-
-<!-- DisableHomePageChange-End -->
 
 <!-- InternetExplorer-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

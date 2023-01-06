@@ -42,6 +42,9 @@ The handwriting panel has 2 modes - floats near the text box, or, attached to th
 
 <!-- PanelDefaultModeDocked-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+In floating mode, the content is hidden behind a flying-in panel and results in end-user dissatisfaction. The end-user will need to drag the flying-in panel, to see the rest of the content. In the fixed mode, the flying-in panel is fixed to the bottom of the screen and doesn't require any user interaction.
+
+The docked mode is especially useful in Kiosk mode, where you don't expect the end-user to drag the flying-in panel out of the way.
 <!-- PanelDefaultModeDocked-Editable-End -->
 
 <!-- PanelDefaultModeDocked-DFProperties-Begin -->

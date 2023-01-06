@@ -4,7 +4,7 @@ description: Learn more about the EventLogService Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/29/2022
+ms.date: 01/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - EventLogService
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -50,7 +48,7 @@ If you enable this policy setting and a log file reaches its maximum size, new e
 
 If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
 
-Note: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
+**Note**: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
 <!-- ControlEventLogBehavior-Description-End -->
 
 <!-- ControlEventLogBehavior-Editable-Begin -->
@@ -68,13 +66,13 @@ Note: Old events may or may not be retained according to the "Backup log automat
 
 <!-- ControlEventLogBehavior-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Channel_Log_Retention |
+| Name | Channel_Log_Retention_1 |
 | Friendly Name | Control Event Log behavior when the log file reaches its maximum size |
 | Location | Computer Configuration |
 | Path | Windows Components > Event Log Service > Application |
@@ -128,13 +126,13 @@ If you disable or do not configure this policy setting, the maximum size of the 
 
 <!-- SpecifyMaximumFileSizeApplicationLog-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Channel_LogMaxSize |
+| Name | Channel_LogMaxSize_1 |
 | Friendly Name | Specify the maximum log file size (KB) |
 | Location | Computer Configuration |
 | Path | Windows Components > Event Log Service > Application |
@@ -187,13 +185,13 @@ If you disable or do not configure this policy setting, the maximum size of the 
 
 <!-- SpecifyMaximumFileSizeSecurityLog-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Channel_LogMaxSize |
+| Name | Channel_LogMaxSize_2 |
 | Friendly Name | Specify the maximum log file size (KB) |
 | Location | Computer Configuration |
 | Path | Windows Components > Event Log Service > Security |
@@ -246,13 +244,13 @@ If you disable or do not configure this policy setting, the maximum size of the 
 
 <!-- SpecifyMaximumFileSizeSystemLog-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Channel_LogMaxSize |
+| Name | Channel_LogMaxSize_4 |
 | Friendly Name | Specify the maximum log file size (KB) |
 | Location | Computer Configuration |
 | Path | Windows Components > Event Log Service > System |

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_AppCompat Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/20/2022
+ms.date: 01/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -54,7 +54,7 @@ If the status is set to Disabled, the MS-DOS subsystem runs for all users on thi
 
 If the status is set to Not Configured, the OS falls back on a local policy set by the registry DWORD value HKLM\System\CurrentControlSet\Control\WOW\DisallowedPolicyDefault. If that value is non-0, this prevents all 16-bit applications from running. If that value is 0, 16-bit applications are allowed to run. If that value is also not present, on Windows 10 and above the OS will launch the 16-bit application support control panel to allow an elevated administrator to make the decision; on windows 7 and downlevel, the OS will allow 16-bit applications to run.
 
-Note: This setting appears in only Computer Configuration.
+**Note**: This setting appears in only Computer Configuration.
 <!-- AppCompatPrevent16BitMach-Description-End -->
 
 <!-- AppCompatPrevent16BitMach-Editable-Begin -->
@@ -242,7 +242,7 @@ The Windows Resource Protection and User Account Control features of Windows use
 
 This option is useful to server administrators who require faster performance and are aware of the compatibility of the applications they are using. It is particularly useful for a web server where applications may be launched several hundred times a second, and the performance of the loader is essential.
 
-NOTE: Many system processes cache the value of this setting for performance reasons. If you make changes to this setting, please reboot to ensure that your system accurately reflects those changes.
+**Note**: Many system processes cache the value of this setting for performance reasons. If you make changes to this setting, please reboot to ensure that your system accurately reflects those changes.
 <!-- AppCompatTurnOffEngine-Description-End -->
 
 <!-- AppCompatTurnOffEngine-Editable-Begin -->
@@ -281,6 +281,62 @@ NOTE: Many system processes cache the value of this setting for performance reas
 
 <!-- AppCompatTurnOffEngine-End -->
 
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Begin -->
+## AppCompatTurnOffProgramCompatibilityAssistant_1
+
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Applicability-End -->
+
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_1
+```
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-OmaUri-End -->
+
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting exists only for backward compatibility, and is not valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Description-End -->
+
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Editable-End -->
+
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-DFProperties-End -->
+
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AppCompatTurnOffProgramCompatibilityAssistant_1 |
+| Friendly Name | Turn off Program Compatibility Assistant |
+| Location | User Configuration |
+| Path | Windows Components > Application Compatibility |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppCompat |
+| Registry Value Name | DisablePCA |
+| ADMX File Name | AppCompat.admx |
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-AdmxBacked-End -->
+
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Examples-End -->
+
+<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-End -->
+
 <!-- AppCompatTurnOffProgramCompatibilityAssistant_2-Begin -->
 ## AppCompatTurnOffProgramCompatibilityAssistant_2
 
@@ -306,7 +362,7 @@ If you enable this policy setting, the PCA will be turned off. The user will not
 
 If you disable or do not configure this policy setting, the PCA will be turned on. To configure the diagnostic settings for the PCA, go to System->Troubleshooting and Diagnostics->Application Compatibility Diagnostics.
 
-Note: The Diagnostic Policy Service (DPS) and Program Compatibility Assistant Service must be running for the PCA to run. These services can be configured by using the Services snap-in to the Microsoft Management Console.
+**Note**: The Diagnostic Policy Service (DPS) and Program Compatibility Assistant Service must be running for the PCA to run. These services can be configured by using the Services snap-in to the Microsoft Management Console.
 <!-- AppCompatTurnOffProgramCompatibilityAssistant_2-Description-End -->
 
 <!-- AppCompatTurnOffProgramCompatibilityAssistant_2-Editable-Begin -->
@@ -330,7 +386,7 @@ Note: The Diagnostic Policy Service (DPS) and Program Compatibility Assistant Se
 
 | Name | Value |
 |:--|:--|
-| Name | AppCompatTurnOffProgramCompatibilityAssistant |
+| Name | AppCompatTurnOffProgramCompatibilityAssistant_2 |
 | Friendly Name | Turn off Program Compatibility Assistant |
 | Location | Computer Configuration |
 | Path | Windows Components > Application Compatibility |
@@ -370,7 +426,7 @@ If you enable this policy setting, the Inventory Collector will be turned off an
 
 If you disable or do not configure this policy setting, the Inventory Collector will be turned on.
 
-Note: This policy setting has no effect if the Customer Experience Improvement Program is turned off. The Inventory Collector will be off.
+**Note**: This policy setting has no effect if the Customer Experience Improvement Program is turned off. The Inventory Collector will be off.
 <!-- AppCompatTurnOffProgramInventory-Description-End -->
 
 <!-- AppCompatTurnOffProgramInventory-Editable-Begin -->
@@ -536,62 +592,6 @@ If you disable or do not configure this policy setting, Steps Recorder will be e
 <!-- AppCompatTurnOffUserActionRecord-Examples-End -->
 
 <!-- AppCompatTurnOffUserActionRecord-End -->
-
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Begin -->
-## AppCompatTurnOffProgramCompatibilityAssistant_1
-
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Applicability-End -->
-
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_1
-```
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-OmaUri-End -->
-
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This setting exists only for backward compatibility, and is not valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Description-End -->
-
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Editable-End -->
-
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-DFProperties-End -->
-
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | AppCompatTurnOffProgramCompatibilityAssistant |
-| Friendly Name | Turn off Program Compatibility Assistant |
-| Location | User Configuration |
-| Path | Windows Components > Application Compatibility |
-| Registry Key Name | Software\Policies\Microsoft\Windows\AppCompat |
-| Registry Value Name | DisablePCA |
-| ADMX File Name | AppCompat.admx |
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-AdmxBacked-End -->
-
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-Examples-End -->
-
-<!-- AppCompatTurnOffProgramCompatibilityAssistant_1-End -->
 
 <!-- ADMX_AppCompat-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

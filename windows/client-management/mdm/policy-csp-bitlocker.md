@@ -18,6 +18,8 @@ ms.topic: reference
 
 <!-- Bitlocker-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> To manage encryption of PCs and devices, use [BitLocker CSP](./bitlocker-csp.md).
 <!-- Bitlocker-Editable-End -->
 
 <!-- EncryptionMethod-Begin -->
@@ -42,6 +44,12 @@ This policy specifies the BitLocker Drive Encryption method and cipher strength.
 
 <!-- EncryptionMethod-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The following list shows the supported values:
+
+- 3 - AES-CBC 128-bit
+- 4 - AES-CBC 256-bit
+- 6 - XTS-AES 128-bit
+- 7 - XTS-AES 256-bit
 <!-- EncryptionMethod-Editable-End -->
 
 <!-- EncryptionMethod-DFProperties-Begin -->

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_UserProfiles Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_UserProfiles
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -44,9 +42,10 @@ ms.topic: reference
 
 <!-- CleanupProfiles-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows an administrator to automatically delete user profiles on system restart that have not been used within a specified number of days.
+This policy setting allows an administrator to automatically delete user profiles on system restart that have not been used within a specified number of days
 
-**Note**:  One day is interpreted as 24 hours after a specific user profile was accessed.
+> [!NOTE]
+> One day is interpreted as 24 hours after a specific user profile was accessed.
 
 If you enable this policy setting, the User Profile Service will automatically delete on the next system restart all user profiles on the computer that have not been used within the specified number of days.
 
@@ -68,7 +67,7 @@ If you disable or do not configure this policy setting, User Profile Service wil
 
 <!-- CleanupProfiles-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -107,7 +106,8 @@ If you disable or do not configure this policy setting, User Profile Service wil
 <!-- Description-Source-ADMX -->
 This policy setting controls whether Windows forcefully unloads the user's registry at logoff, even if there are open handles to the per-user registry keys.
 
-Note: This policy setting should only be used for cases where you may be running into application compatibility issues due to this specific Windows behavior. It is not recommended to enable this policy by default as it may prevent users from getting an updated version of their roaming user profile.
+> [!NOTE]
+> This policy setting should only be used for cases where you may be running into application compatibility issues due to this specific Windows behavior. It is not recommended to enable this policy by default as it may prevent users from getting an updated version of their roaming user profile.
 
 If you enable this policy setting, Windows will not forcefully unload the users registry at logoff, but will unload the registry when all open handles to the per-user registry keys are closed.
 
@@ -129,7 +129,7 @@ If you disable or do not configure this policy setting, Windows will always unlo
 
 <!-- DontForceUnloadHive-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -175,7 +175,8 @@ If you enable this policy setting, Windows will not delete Windows Installer or 
 
 If you disable or do not configure this policy setting, Windows will delete the entire profile for roaming users, including the Windows Installer and Group Policy software installation data when those profiles are deleted.
 
-Note: If this policy setting is enabled for a machine, local administrator action is required to remove the Windows Installer or Group Policy software installation data stored in the registry and file system of roaming users' profiles on the machine.
+> [!NOTE]
+> If this policy setting is enabled for a machine, local administrator action is required to remove the Windows Installer or Group Policy software installation data stored in the registry and file system of roaming users' profiles on the machine.
 <!-- LeaveAppMgmtData-Description-End -->
 
 <!-- LeaveAppMgmtData-Editable-Begin -->
@@ -193,7 +194,7 @@ Note: If this policy setting is enabled for a machine, local administrator actio
 
 <!-- LeaveAppMgmtData-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -213,6 +214,75 @@ Note: If this policy setting is enabled for a machine, local administrator actio
 <!-- LeaveAppMgmtData-Examples-End -->
 
 <!-- LeaveAppMgmtData-End -->
+
+<!-- LimitSize-Begin -->
+## LimitSize
+
+<!-- LimitSize-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LimitSize-Applicability-End -->
+
+<!-- LimitSize-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserProfiles/LimitSize
+```
+<!-- LimitSize-OmaUri-End -->
+
+<!-- LimitSize-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting sets the maximum size of each user profile and determines the system's response when a user profile reaches the maximum size. This policy setting affects both local and roaming profiles.
+
+If you disable this policy setting or do not configure it, the system does not limit the size of user profiles.
+
+If you enable this policy setting, you can:
+
+- Set a maximum permitted user profile size.
+- Determine whether the registry files are included in the calculation of the profile size.
+- Determine whether users are notified when the profile exceeds the permitted maximum size.
+- Specify a customized message notifying users of the oversized profile.
+- Determine how often the customized message is displayed.
+
+> [!NOTE]
+> In operating systems earlier than Microsoft Windows Vista, Windows will not allow users to log off until the profile size has been reduced to within the allowable limit. In Microsoft Windows Vista, Windows will not block users from logging off. Instead, if the user has a roaming user profile, Windows will not synchronize the user's profile with the roaming profile server if the maximum profile size limit specified here is exceeded.
+<!-- LimitSize-Description-End -->
+
+<!-- LimitSize-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LimitSize-Editable-End -->
+
+<!-- LimitSize-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LimitSize-DFProperties-End -->
+
+<!-- LimitSize-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LimitSize |
+| Friendly Name | Limit profile size |
+| Location | User Configuration |
+| Path | System > User Profiles |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | EnableProfileQuota |
+| ADMX File Name | UserProfiles.admx |
+<!-- LimitSize-AdmxBacked-End -->
+
+<!-- LimitSize-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LimitSize-Examples-End -->
+
+<!-- LimitSize-End -->
 
 <!-- ProfileErrorAction-Begin -->
 ## ProfileErrorAction
@@ -257,7 +327,7 @@ Also, see the "Delete cached copies of roaming profiles" policy setting.
 
 <!-- ProfileErrorAction-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -303,9 +373,10 @@ This policy setting and related policy settings in this folder together define t
 
 If you enable this policy setting, you can change how long Windows waits for a response from the server before considering the connection to be slow.
 
-If you disable or do not configure this policy setting, Windows considers the network connection to be slow if the server returns less than 500 kilobits of data per second or take 120 milliseconds to respond.Consider increasing this value for clients using DHCP Service-assigned addresses or for computers accessing profiles across dial-up connections.
+If you disable or do not configure this policy setting, Windows considers the network connection to be slow if the server returns less than 500 kilobits of data per second or take 120 milliseconds to respond. Consider increasing this value for clients using DHCP Service-assigned addresses or for computers accessing profiles across dial-up connections
 
-**Important**:  If the "Do not detect slow network connections" policy setting is enabled, this policy setting is ignored. Also, if the "Delete cached copies of roaming profiles" policy setting is enabled, there is no local copy of the roaming profile to load when the system detects a slow connection.
+> [!IMPORTANT]
+> If the "Do not detect slow network connections" policy setting is enabled, this policy setting is ignored. Also, if the "Delete cached copies of roaming profiles" policy setting is enabled, there is no local copy of the roaming profile to load when the system detects a slow connection.
 <!-- SlowLinkTimeOut-Description-End -->
 
 <!-- SlowLinkTimeOut-Editable-Begin -->
@@ -323,7 +394,7 @@ If you disable or do not configure this policy setting, Windows considers the ne
 
 <!-- SlowLinkTimeOut-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -364,15 +435,16 @@ This policy setting allows you to specify the location and root (file share or l
 
 If you enable this policy setting, the user's home folder is configured to the specified local or network location, creating a new folder for each user name.
 
-To use this policy setting, in the Location list, choose the location for the home folder. If you choose “On the network,” enter the path to a file share in the Path box (for example, \\ComputerName\ShareName), and then choose the drive letter to assign to the file share. If you choose “On the local computer,” enter a local path (for example, C:\HomeFolder) in the Path box.
+To use this policy setting, in the Location list, choose the location for the home folder. If you choose "On the network," enter the path to a file share in the Path box (for example, \\ComputerName\ShareName), and then choose the drive letter to assign to the file share. If you choose "On the local computer," enter a local path (for example, C:\HomeFolder) in the Path box.
 
 Do not specify environment variables or ellipses in the path. Also, do not specify a placeholder for the user name because the user name will be appended at logon.
 
-Note: The Drive letter box is ignored if you choose “On the local computer” from the Location list. If you choose “On the local computer” and enter a file share, the user's home folder will be placed in the network location without mapping the file share to a drive letter.
+> [!NOTE]
+> The Drive letter box is ignored if you choose "On the local computer" from the Location list. If you choose "On the local computer" and enter a file share, the user's home folder will be placed in the network location without mapping the file share to a drive letter.
 
 If you disable or do not configure this policy setting, the user's home folder is configured as specified in the user's Active Directory Domain Services account.
 
-If the "Set Remote Desktop Services User Home Directory" policy setting is enabled, the “Set user home folder” policy setting has no effect.
+If the "Set Remote Desktop Services User Home Directory" policy setting is enabled, the "Set user home folder" policy setting has no effect.
 <!-- USER_HOME-Description-End -->
 
 <!-- USER_HOME-Editable-Begin -->
@@ -390,7 +462,7 @@ If the "Set Remote Desktop Services User Home Directory" policy setting is enabl
 
 <!-- USER_HOME-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -453,13 +525,13 @@ If you do not configure or disable this policy the user will have full control o
 
 <!-- UserInfoAccessAction-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | UserInfoAccessAction_Name |
+| Name | UserInfoAccessAction |
 | Friendly Name | User management of sharing user name, account picture, and domain information with apps (not desktop apps) |
 | Location | Computer Configuration |
 | Path | System > User Profiles |
@@ -473,74 +545,6 @@ If you do not configure or disable this policy the user will have full control o
 <!-- UserInfoAccessAction-Examples-End -->
 
 <!-- UserInfoAccessAction-End -->
-
-<!-- LimitSize-Begin -->
-## LimitSize
-
-<!-- LimitSize-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- LimitSize-Applicability-End -->
-
-<!-- LimitSize-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_UserProfiles/LimitSize
-```
-<!-- LimitSize-OmaUri-End -->
-
-<!-- LimitSize-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting sets the maximum size of each user profile and determines the system's response when a user profile reaches the maximum size. This policy setting affects both local and roaming profiles.
-
-If you disable this policy setting or do not configure it, the system does not limit the size of user profiles.
-
-If you enable this policy setting, you can:
-
--- Set a maximum permitted user profile size.
--- Determine whether the registry files are included in the calculation of the profile size.
--- Determine whether users are notified when the profile exceeds the permitted maximum size.
--- Specify a customized message notifying users of the oversized profile.
--- Determine how often the customized message is displayed.
-
-Note: In operating systems earlier than Microsoft Windows Vista, Windows will not allow users to log off until the profile size has been reduced to within the allowable limit. In Microsoft Windows Vista, Windows will not block users from logging off. Instead, if the user has a roaming user profile, Windows will not synchronize the user's profile with the roaming profile server if the maximum profile size limit specified here is exceeded.
-<!-- LimitSize-Description-End -->
-
-<!-- LimitSize-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- LimitSize-Editable-End -->
-
-<!-- LimitSize-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- LimitSize-DFProperties-End -->
-
-<!-- LimitSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | LimitSize |
-| Friendly Name | Limit profile size |
-| Location | User Configuration |
-| Path | System > User Profiles |
-| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
-| Registry Value Name | EnableProfileQuota |
-| ADMX File Name | UserProfiles.admx |
-<!-- LimitSize-AdmxBacked-End -->
-
-<!-- LimitSize-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- LimitSize-Examples-End -->
-
-<!-- LimitSize-End -->
 
 <!-- ADMX_UserProfiles-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

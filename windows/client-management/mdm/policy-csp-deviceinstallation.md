@@ -4,7 +4,7 @@ description: Learn more about the DeviceInstallation Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/29/2022
+ms.date: 01/05/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - DeviceInstallation
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -76,7 +74,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 <!-- AllowInstallationOfMatchingDeviceIDs-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -176,7 +174,7 @@ Peripherals can be specified by their [device instance ID](/windows-hardware/dri
 
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -215,7 +213,11 @@ To enable this policy, use the following SyncML.
     </SyncBody>
 </SyncML>
 ```
+
+**Verify**:
+
 To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following details are listed near the end of the log:
+
 ``` txt
 >>>  [Device Installation Restrictions Policy Check]
 >>>  Section start 2018/11/15 12:26:41.659
@@ -276,7 +278,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -303,7 +305,6 @@ To enable this policy, use the following SyncML. This example allows Windows to 
 
 Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter.
 
-
 ```xml
 <SyncML>
     <SyncBody>
@@ -322,10 +323,10 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
     </SyncBody>
 </SyncML>
 ```
+
 **Verify**:
 
 To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following details are listed near the end of the log:
-
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -359,18 +360,22 @@ This policy setting will change the evaluation order in which Allow and Prevent 
 Device instance IDs > Device IDs > Device setup class > Removable devices
 
 Device instance IDs
+
 1. Prevent installation of devices using drivers that match these device instance IDs
 2. Allow installation of devices using drivers that match these device instance IDs
 
 Device IDs
+
 3. Prevent installation of devices using drivers that match these device IDs
 4. Allow installation of devices using drivers that match these device IDs
 
 Device setup class
+
 5. Prevent installation of devices using drivers that match these device setup classes
 6. Allow installation of devices using drivers that match these device setup classes
 
 Removable devices
+
 7. Prevent installation of removable devices
 
 NOTE: This policy setting provides more granular control than the "Prevent installation of devices not described by other policy settings" policy setting. If these conflicting policy settings are enabled at the same time, the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting will be enabled and the other policy setting will be ignored.
@@ -393,7 +398,7 @@ If you disable or do not configure this policy setting, the default evaluation i
 
 <!-- EnableInstallationPolicyLayering-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -430,6 +435,7 @@ If you disable or do not configure this policy setting, the default evaluation i
     </SyncBody>
 </SyncML>
 ```
+
 **Verify**:
 
 To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following details are listed near the end of the log:
@@ -444,8 +450,6 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 You can also change the evaluation order of device installation policy settings by using a custom profile in Intune.
 
 :::image type="content" source="images/edit-row.png" alt-text="This image is an edit row image.":::
-
-
 <!-- EnableInstallationPolicyLayering-Examples-End -->
 
 <!-- EnableInstallationPolicyLayering-End -->
@@ -489,7 +493,7 @@ If you disable or do not configure this policy setting, the setting in the Devic
 
 <!-- PreventDeviceMetadataFromNetwork-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -551,7 +555,7 @@ If you disable or do not configure this policy setting, Windows is allowed to in
 
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -651,7 +655,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 <!-- PreventInstallationOfMatchingDeviceIDs-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -670,8 +674,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
-To enable this policy, use the following SyncML. This example prevents Windows from installing compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use <code>&amp;#xF000;</code> as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_IDs_Deny_Retroactive to true.
-
+To enable this policy, use the following SyncML. This example prevents Windows from installing compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use `&amp;#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_IDs_Deny_Retroactive to true.
 
 ```xml
 <SyncML>
@@ -752,7 +755,7 @@ Peripherals can be specified by their [device instance ID](/windows-hardware/dri
 
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -792,7 +795,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
 </SyncML>
 ```
 
-**Verify**
+**Verify**:
 
 To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following details are listed near the end of the log:
 
@@ -812,15 +815,12 @@ For example, this custom profile prevents installation of devices with matching 
 To prevent installation of devices with matching device instance IDs by using custom profile in Intune:
 
 1. Locate the device instance ID.
-2. Replace `&` in the device instance IDs with `&amp;`.
-For example:
-Replace
-```USBSTOR\DISK&VEN_SAMSUNG&PROD_FLASH_DRIVE&REV_1100\0376319020002347&0```
-with
-```USBSTOR\DISK&amp;VEN_SAMSUNG&amp;PROD_FLASH_DRIVE&amp;REV_1100\0376319020002347&amp;0```
-    > [!Note]
-    > don't use spaces in the value.
-3. Replace the device instance IDs with `&amp;` into the sample SyncML. Add the SyncML into the Intune custom device configuration profile.
+1. Replace `&` in the device instance IDs with `&amp;`. For example: Replace `USBSTOR\DISK&VEN_SAMSUNG&PROD_FLASH_DRIVE&REV_1100\0376319020002347&0` with `USBSTOR\DISK&amp;VEN_SAMSUNG&amp;PROD_FLASH_DRIVE&amp;REV_1100\0376319020002347&amp;0`.
+
+    > [!NOTE]
+    > Don't use spaces in the value.
+
+1. Replace the device instance IDs with `&amp;` into the sample SyncML. Add the SyncML into the Intune custom device configuration profile.
 
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-Examples-End -->
 
@@ -868,7 +868,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

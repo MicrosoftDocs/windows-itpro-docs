@@ -4,7 +4,7 @@ description: Learn more about the DeliveryOptimization Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/27/2022
+ms.date: 01/05/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - DeliveryOptimization
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -102,10 +100,8 @@ The value 0 (zero) means "unlimited" cache; Delivery Optimization will clear the
 <!-- DOAllowVPNPeerCaching-OmaUri-End -->
 
 <!-- DOAllowVPNPeerCaching-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specify "true" to allow the device to participate in Peer Caching while connected via VPN to the domain network.
-
-This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
+<!-- Description-Source-DDF-Forced -->
+Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
 <!-- DOAllowVPNPeerCaching-Description-End -->
 
 <!-- DOAllowVPNPeerCaching-Editable-Begin -->
@@ -239,6 +235,8 @@ If this policy is not configured, the client will attempt to automatically find 
 
 <!-- DOCacheHostSource-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> If the DHCP Option ID is formatted incorrectly, the client will fall back to the [Cache Server Hostname](#docachehost) policy value if that value has been set.
 <!-- DOCacheHostSource-Editable-End -->
 
 <!-- DOCacheHostSource-DFProperties-Begin -->
@@ -293,7 +291,7 @@ This policy allows you to delay the use of an HTTP source in a background downlo
 
 After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from Peers.
 
-Note that a download that is waiting for peer sources, will appear to be stuck for the end user.
+**Note** that a download that is waiting for peer sources, will appear to be stuck for the end user.
 
 The recommended value is 1 hour (3600).
 <!-- DODelayBackgroundDownloadFromHttp-Description-End -->
@@ -349,10 +347,10 @@ The recommended value is 1 hour (3600).
 <!-- DODelayCacheServerFallbackBackground-OmaUri-End -->
 
 <!-- DODelayCacheServerFallbackBackground-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Set this policy to delay the fallback from Cache Server to the HTTP source for a background content download by X seconds.
+<!-- Description-Source-DDF-Forced -->
+Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for a background content download.
 
-Note: if you set the policy to delay background download from http, it will apply first (to allow downloads from peers first).
+**Note** that the DODelayBackgroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.
 <!-- DODelayCacheServerFallbackBackground-Description-End -->
 
 <!-- DODelayCacheServerFallbackBackground-Editable-Begin -->
@@ -406,10 +404,10 @@ Note: if you set the policy to delay background download from http, it will appl
 <!-- DODelayCacheServerFallbackForeground-OmaUri-End -->
 
 <!-- DODelayCacheServerFallbackForeground-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Set this policy to delay the fallback from Cache Server to the HTTP source for a foreground content download by X seconds.
+<!-- Description-Source-DDF-Forced -->
+Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for foreground content download.
 
-Note: if you set the policy to delay foreground download from http, it will apply first (to allow downloads from peers first).
+**Note** that the DODelayForegroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.
 <!-- DODelayCacheServerFallbackForeground-Description-End -->
 
 <!-- DODelayCacheServerFallbackForeground-Editable-Begin -->
@@ -468,7 +466,7 @@ This policy allows you to delay the use of an HTTP source in a foreground (inter
 
 After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from Peers.
 
-Note that a download that is waiting for peer sources, will appear to be stuck for the end user.
+**Note** that a download that is waiting for peer sources, will appear to be stuck for the end user.
 
 The recommended value is 1 minute (60).
 <!-- DODelayForegroundDownloadFromHttp-Description-End -->
@@ -583,22 +581,8 @@ Disallow downloads from Microsoft Connected Cache servers when the device connec
 <!-- DODownloadMode-OmaUri-End -->
 
 <!-- DODownloadMode-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps and App updates.
-
-The following list shows the supported values:
-
-0 = HTTP only, no peering.
-
-1 = HTTP blended with peering behind the same NAT.
-
-2 = HTTP blended with peering across a private group. Peering occurs on devices in the same Active Directory Site (if exist) or the same domain by default. When this option is selected, peering will cross NATs. To create a custom group use Group ID in combination with Mode 2.
-
-3 = HTTP blended with Internet Peering.
-
-99 = Simple download mode with no peering. Delivery Optimization downloads using HTTP only and does not attempt to contact the Delivery Optimization cloud services.
-
-100 = Bypass mode. Windows 10: Do not use Delivery Optimization and use BITS instead. Windows 11: Deprecated, use Simple mode instead.
+<!-- Description-Source-DDF-Forced -->
+Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps and App updates. The default value is 1.
 <!-- DODownloadMode-Description-End -->
 
 <!-- DODownloadMode-Editable-Begin -->
@@ -669,7 +653,7 @@ Group ID must be set as a GUID. This Policy specifies an arbitrary group ID that
 
 Use this if you need to create a single group for Local Network Peering for branches that are on different domains or are not on the same LAN.
 
-Note: this is a best effort optimization and should not be relied on for an authentication of identity.
+**Note** this is a best effort optimization and should not be relied on for an authentication of identity.
 <!-- DOGroupId-Description-End -->
 
 <!-- DOGroupId-Editable-Begin -->
@@ -721,30 +705,14 @@ Note: this is a best effort optimization and should not be relied on for an auth
 <!-- DOGroupIdSource-OmaUri-End -->
 
 <!-- DOGroupIdSource-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Set this policy to restrict peer selection to a specific source.
-
-Options available are:
-
-1 = AD Site.
-
-2 = Authenticated domain SID.
-
-3 = DHCP Option ID.
-
-4 = DNS Suffix.
-
-5 = AAD Tenant ID.
-
-When set, the Group ID will be assigned automatically from the selected source. This policy is ignored if the GroupID policy is also set.
-
-The options set in this policy only apply to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored.
-
-For option 3 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID.
+<!-- Description-Source-DDF-Forced -->
+Set this policy to restrict peer selection to a specific source. Available options are: 1 = AD Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix, 5 = AAD. When set, the Group ID will be assigned automatically from the selected source. This policy is ignored if the GroupID policy is also set. The options set in this policy only apply to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. For option 3 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID. Starting with Windows 10, version 1903, you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this, set the value of DOGroupIdSource to 5.
 <!-- DOGroupIdSource-Description-End -->
 
 <!-- DOGroupIdSource-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> The default behavior, when neither the DOGroupId or DOGroupIdSource policies are set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If DOGroupIdSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead.
 <!-- DOGroupIdSource-Editable-End -->
 
 <!-- DOGroupIdSource-DFProperties-Begin -->
@@ -863,10 +831,8 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!-- DOMaxCacheAge-OmaUri-End -->
 
 <!-- DOMaxCacheAge-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully.
-
-The value 0 (zero) means "unlimited"; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size has not exceeded.
+<!-- Description-Source-DDF-Forced -->
+Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means unlimited; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size has not exceeded. The value 0 is new in Windows 10, version 1607. The default value is 604800 seconds (7 days).
 <!-- DOMaxCacheAge-Description-End -->
 
 <!-- DOMaxCacheAge-Editable-Begin -->
@@ -920,8 +886,8 @@ The value 0 (zero) means "unlimited"; Delivery Optimization will hold the files 
 <!-- DOMaxCacheSize-OmaUri-End -->
 
 <!-- DOMaxCacheSize-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies the maximum cache size that Delivery Optimization uses as a percentage of available disk size (1-100).
+<!-- Description-Source-DDF-Forced -->
+Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100). The default value is 20.
 <!-- DOMaxCacheSize-Description-End -->
 
 <!-- DOMaxCacheSize-Editable-Begin -->
@@ -1032,10 +998,8 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!-- DOMinBackgroundQos-OmaUri-End -->
 
 <!-- DOMinBackgroundQos-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies the minimum download QoS (Quality of Service or speed) for background downloads in KiloBytes/second.
-
-This policy affects the blending of peer and HTTP sources. Delivery Optimization complements the download from HTTP source to achieve the specified minimum QoS value.
+<!-- Description-Source-DDF-Forced -->
+Specifies the minimum download QoS (Quality of Service or speed) in KiloBytes/sec for background downloads. This policy affects the blending of peer and HTTP sources. Delivery Optimization complements the download from the HTTP source to achieve the minimum QoS value set. The default value is 20480 (20 MB/s).
 <!-- DOMinBackgroundQos-Description-End -->
 
 <!-- DOMinBackgroundQos-Editable-Begin -->
@@ -1207,10 +1171,8 @@ Note: If the DOModifyCacheDrive policy is set, the disk size check will apply to
 <!-- DOMinFileSizeToCache-OmaUri-End -->
 
 <!-- DOMinFileSizeToCache-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies the minimum content file size in MB enabled to use Peer Caching.
-
-Recommended values: 1 MB to 100000 MB.
+<!-- Description-Source-DDF-Forced -->
+Specifies the minimum content file size in MB enabled to use Peer Caching. Recommended values: 1 MB to 100,000 MB. The default value is 100 MB.
 <!-- DOMinFileSizeToCache-Description-End -->
 
 <!-- DOMinFileSizeToCache-Editable-Begin -->
@@ -1264,12 +1226,8 @@ Recommended values: 1 MB to 100000 MB.
 <!-- DOMinRAMAllowedToPeer-OmaUri-End -->
 
 <!-- DOMinRAMAllowedToPeer-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies the minimum RAM size in GB required to use Peer Caching.
-
-For example if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching.
-
-Recommended values: 1 GB to 4 GB.
+<!-- Description-Source-DDF-Forced -->
+Specifies the minimum RAM size in GB required to use Peer Caching. For example, if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. Recommended values: 1 GB to 4 GB. The default value is 4 GB.
 <!-- DOMinRAMAllowedToPeer-Description-End -->
 
 <!-- DOMinRAMAllowedToPeer-Editable-Begin -->
@@ -1378,10 +1336,8 @@ By default, %SystemDrive% is used to store the cache. The drive location can be 
 <!-- DOMonthlyUploadDataCap-OmaUri-End -->
 
 <!-- DOMonthlyUploadDataCap-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies the maximum total bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month.
-
-The value 0 (zero) means "unlimited"; No monthly upload limit is applied if 0 is set.
+<!-- Description-Source-DDF-Forced -->
+Specifies the maximum total bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month. The value 0 (zero) means unlimited; No monthly upload limit is applied if 0 is set. The default value is 5120 (5 TB).
 <!-- DOMonthlyUploadDataCap-Description-End -->
 
 <!-- DOMonthlyUploadDataCap-Editable-Begin -->
@@ -1566,6 +1522,9 @@ These options apply to both Download Mode LAN (1) and Group (2).
 
 <!-- DORestrictPeerSelectionBy-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+If Group mode is set, Delivery Optimization will connect to locally discovered peers that are also part of the same Group (have the same Group ID).
+
+In Windows 11 the 'Local Peer Discovery' option was introduced to restrict peer discovery to the local network. The default value in Windows 11 is set to 'Local Peer Discovery'. The Local Peer Discovery (DNS-SD) option can only be set via MDM delivered policies on Windows 11 builds.
 <!-- DORestrictPeerSelectionBy-Editable-End -->
 
 <!-- DORestrictPeerSelectionBy-DFProperties-Begin -->
@@ -1643,7 +1602,7 @@ Specifies the maximum background download bandwidth that Delivery Optimization u
 
 <!-- DOSetHoursToLimitBackgroundDownloadBandwidth-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1703,7 +1662,7 @@ This policy allows an IT Admin to define the following details:
 
 <!-- DOSetHoursToLimitForegroundDownloadBandwidth-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

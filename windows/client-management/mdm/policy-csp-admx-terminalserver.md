@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TerminalServer Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_TerminalServer
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -68,7 +66,7 @@ If the status is set to Not Configured, automatic reconnection is not specified 
 
 <!-- TS_AUTO_RECONNECT-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -130,7 +128,7 @@ If you disable or do not configure this policy setting, users can redirect their
 
 <!-- TS_CAMERA_REDIRECTION-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -178,7 +176,8 @@ If no certificate can be found that was created with the specified certificate t
 
 If you disable or do not configure this policy, the certificate template name is not specified at the Group Policy level. By default, a self-signed certificate is used to authenticate the RD Session Host server.
 
-Note: If you select a specific certificate to be used to authenticate the RD Session Host server, that certificate will take precedence over this policy setting.
+> [!NOTE]
+> If you select a specific certificate to be used to authenticate the RD Session Host server, that certificate will take precedence over this policy setting.
 <!-- TS_CERTIFICATE_TEMPLATE_POLICY-Description-End -->
 
 <!-- TS_CERTIFICATE_TEMPLATE_POLICY-Editable-Begin -->
@@ -196,7 +195,7 @@ Note: If you select a specific certificate to be used to authenticate the RD Ses
 
 <!-- TS_CERTIFICATE_TEMPLATE_POLICY-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -215,6 +214,69 @@ Note: If you select a specific certificate to be used to authenticate the RD Ses
 <!-- TS_CERTIFICATE_TEMPLATE_POLICY-Examples-End -->
 
 <!-- TS_CERTIFICATE_TEMPLATE_POLICY-End -->
+
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Begin -->
+## TS_CLIENT_ALLOW_SIGNED_FILES_1
+
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Applicability-End -->
+
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_CLIENT_ALLOW_SIGNED_FILES_1
+```
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-OmaUri-End -->
+
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify whether users can run Remote Desktop Protocol (.rdp) files from a publisher that signed the file with a valid certificate. A valid certificate is one issued by an authority recognized by the client, such as the issuers in the client's Third-Party Root Certification Authorities certificate store. This policy setting also controls whether the user can start an RDP session by using default .rdp settings (for example, when a user directly opens the Remote Desktop Connection [RDC] client without specifying an .rdp file).
+
+If you enable or do not configure this policy setting, users can run .rdp files that are signed with a valid certificate. Users can also start an RDP session with default .rdp settings by directly opening the RDC client. When a user starts an RDP session, the user is asked to confirm whether they want to connect.
+
+If you disable this policy setting, users cannot run .rdp files that are signed with a valid certificate. Additionally, users cannot start an RDP session by directly opening the RDC client and specifying the remote computer name. When a user tries to start an RDP session, the user receives a message that the publisher has been blocked.
+
+> [!NOTE]
+> You can define this policy setting in the Computer Configuration node or in the User Configuration node. If you configure this policy setting for the computer, all users on the computer are affected.
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Description-End -->
+
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Editable-End -->
+
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-DFProperties-End -->
+
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_CLIENT_ALLOW_SIGNED_FILES_1 |
+| Friendly Name | Allow .rdp files from valid publishers and user's default .rdp settings |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Connection Client |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| Registry Value Name | AllowSignedFiles |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-AdmxBacked-End -->
+
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Examples-End -->
+
+<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-End -->
 
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_2-Begin -->
 ## TS_CLIENT_ALLOW_SIGNED_FILES_2
@@ -239,7 +301,8 @@ If you enable or do not configure this policy setting, users can run .rdp files 
 
 If you disable this policy setting, users cannot run .rdp files that are signed with a valid certificate. Additionally, users cannot start an RDP session by directly opening the RDC client and specifying the remote computer name. When a user tries to start an RDP session, the user receives a message that the publisher has been blocked.
 
-Note: You can define this policy setting in the Computer Configuration node or in the User Configuration node. If you configure this policy setting for the computer, all users on the computer are affected.
+> [!NOTE]
+> You can define this policy setting in the Computer Configuration node or in the User Configuration node. If you configure this policy setting for the computer, all users on the computer are affected.
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_2-Description-End -->
 
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_2-Editable-Begin -->
@@ -257,13 +320,13 @@ Note: You can define this policy setting in the Computer Configuration node or i
 
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | TS_CLIENT_ALLOW_SIGNED_FILES |
+| Name | TS_CLIENT_ALLOW_SIGNED_FILES_2 |
 | Friendly Name | Allow .rdp files from valid publishers and user's default .rdp settings |
 | Location | Computer Configuration |
 | Path | Windows Components > Remote Desktop Services > Remote Desktop Connection Client |
@@ -277,6 +340,66 @@ Note: You can define this policy setting in the Computer Configuration node or i
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_2-Examples-End -->
 
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_2-End -->
+
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Begin -->
+## TS_CLIENT_ALLOW_UNSIGNED_FILES_1
+
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Applicability-End -->
+
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_CLIENT_ALLOW_UNSIGNED_FILES_1
+```
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-OmaUri-End -->
+
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify whether users can run unsigned Remote Desktop Protocol (.rdp) files and .rdp files from unknown publishers on the client computer.
+
+If you enable or do not configure this policy setting, users can run unsigned .rdp files and .rdp files from unknown publishers on the client computer. Before a user starts an RDP session, the user receives a warning message and is asked to confirm whether they want to connect.
+
+If you disable this policy setting, users cannot run unsigned .rdp files and .rdp files from unknown publishers on the client computer. If the user tries to start an RDP session, the user receives a message that the publisher has been blocked.
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Description-End -->
+
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Editable-End -->
+
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-DFProperties-End -->
+
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_CLIENT_ALLOW_UNSIGNED_FILES_1 |
+| Friendly Name | Allow .rdp files from unknown publishers |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Connection Client |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| Registry Value Name | AllowUnsignedFiles |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-AdmxBacked-End -->
+
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Examples-End -->
+
+<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-End -->
 
 <!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_2-Begin -->
 ## TS_CLIENT_ALLOW_UNSIGNED_FILES_2
@@ -317,13 +440,13 @@ If you disable this policy setting, users cannot run unsigned .rdp files and .rd
 
 <!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | TS_CLIENT_ALLOW_UNSIGNED_FILES |
+| Name | TS_CLIENT_ALLOW_UNSIGNED_FILES_2 |
 | Friendly Name | Allow .rdp files from unknown publishers |
 | Location | Computer Configuration |
 | Path | Windows Components > Remote Desktop Services > Remote Desktop Connection Client |
@@ -382,7 +505,7 @@ If you do not configure this policy setting audio and video playback redirection
 
 <!-- TS_CLIENT_AUDIO-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -447,7 +570,7 @@ If you do not configure this policy setting, Audio recording redirection is not 
 
 <!-- TS_CLIENT_AUDIO_CAPTURE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -511,7 +634,7 @@ If you disable or do not configure this policy setting, audio playback quality w
 
 <!-- TS_CLIENT_AUDIO_QUALITY-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -574,7 +697,7 @@ If you do not configure this policy setting, Clipboard redirection is not specif
 
 <!-- TS_CLIENT_CLIPBOARD-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -638,7 +761,7 @@ If you do not configure this policy setting, COM port redirection is not specifi
 
 <!-- TS_CLIENT_COM-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -702,7 +825,7 @@ If you do not configure this policy setting, the default printer is not specifie
 
 <!-- TS_CLIENT_DEFAULT_M-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -758,7 +881,7 @@ This policy setting specifies whether the Remote Desktop Connection can use hard
 
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -778,6 +901,66 @@ This policy setting specifies whether the Remote Desktop Connection can use hard
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-Examples-End -->
 
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-End -->
+
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Begin -->
+## TS_CLIENT_DISABLE_PASSWORD_SAVING_1
+
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Applicability-End -->
+
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_CLIENT_DISABLE_PASSWORD_SAVING_1
+```
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-OmaUri-End -->
+
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Controls whether a user can save passwords using Remote Desktop Connection.
+
+If you enable this setting the credential saving checkbox in Remote Desktop Connection will be disabled and users will no longer be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves his settings, any password that previously existed in the RDP file will be deleted.
+
+If you disable this setting or leave it not configured, the user will be able to save passwords using Remote Desktop Connection
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Description-End -->
+
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Editable-End -->
+
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-DFProperties-End -->
+
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_CLIENT_DISABLE_PASSWORD_SAVING_1 |
+| Friendly Name | Do not allow passwords to be saved |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Connection Client |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| Registry Value Name | DisablePasswordSaving |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-AdmxBacked-End -->
+
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Examples-End -->
+
+<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-End -->
 
 <!-- TS_CLIENT_LPT-Begin -->
 ## TS_CLIENT_LPT
@@ -822,7 +1005,7 @@ If you do not configure this policy setting, LPT port redirection is not specifi
 
 <!-- TS_CLIENT_LPT-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -866,9 +1049,10 @@ By default, Remote Desktop Services does not allow redirection of supported Plug
 
 If you disable this policy setting, users can redirect their supported Plug and Play devices to the remote computer. Users can use the More option on the Local Resources tab of Remote Desktop Connection to choose the supported Plug and Play devices to redirect to the remote computer.
 
-If you enable this policy setting, users cannot redirect their supported Plug and Play devices to the remote computer.If you do not configure this policy setting, users can redirect their supported Plug and Play devices to the remote computer only if it is running Windows Server 2012 R2 and earlier versions.
+If you enable this policy setting, users cannot redirect their supported Plug and Play devices to the remote computer. If you do not configure this policy setting, users can redirect their supported Plug and Play devices to the remote computer only if it is running Windows Server 2012 R2 and earlier versions.
 
-Note: You can disable redirection of specific types of supported Plug and Play devices by using Computer Configuration\Administrative Templates\System\Device Installation\Device Installation Restrictions policy settings.
+> [!NOTE]
+> You can disable redirection of specific types of supported Plug and Play devices by using Computer Configuration\Administrative Templates\System\Device Installation\Device Installation Restrictions policy settings.
 <!-- TS_CLIENT_PNP-Description-End -->
 
 <!-- TS_CLIENT_PNP-Editable-Begin -->
@@ -886,7 +1070,7 @@ Note: You can disable redirection of specific types of supported Plug and Play d
 
 <!-- TS_CLIENT_PNP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -950,7 +1134,7 @@ If you do not configure this policy setting, client printer mapping is not speci
 
 <!-- TS_CLIENT_PRINTER-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -994,7 +1178,7 @@ If you enable this policy setting, any certificate with an SHA1 thumbprint that 
 
 If you disable or do not configure this policy setting, no publisher is treated as a trusted .rdp publisher.
 
-Notes:
+**Note**:
 
 You can define this policy setting in the Computer Configuration node or in the User Configuration node. If you configure this policy setting for the computer, the list of certificate thumbprints trusted for a user is a combination of the list defined for the computer and the list defined for the user.
 
@@ -1018,13 +1202,13 @@ If the list contains a string that is not a certificate thumbprint, it is ignore
 
 <!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS |
+| Name | TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_1 |
 | Friendly Name | Specify SHA1 thumbprints of certificates representing trusted .rdp publishers |
 | Location | Computer Configuration |
 | Path | Windows Components > Remote Desktop Services > Remote Desktop Connection Client |
@@ -1037,6 +1221,73 @@ If the list contains a string that is not a certificate thumbprint, it is ignore
 <!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_1-Examples-End -->
 
 <!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_1-End -->
+
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Begin -->
+## TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2
+
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Applicability-End -->
+
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2
+```
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-OmaUri-End -->
+
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify a list of Secure Hash Algorithm 1 (SHA1) certificate thumbprints that represent trusted Remote Desktop Protocol (.rdp) file publishers.
+
+If you enable this policy setting, any certificate with an SHA1 thumbprint that matches a thumbprint on the list is trusted. If a user tries to start an .rdp file that is signed by a trusted certificate, the user does not receive any warning messages when they start the file. To obtain the thumbprint, view the certificate details, and then click the Thumbprint field.
+
+If you disable or do not configure this policy setting, no publisher is treated as a trusted .rdp publisher.
+
+**Note**:
+
+You can define this policy setting in the Computer Configuration node or in the User Configuration node. If you configure this policy setting for the computer, the list of certificate thumbprints trusted for a user is a combination of the list defined for the computer and the list defined for the user.
+
+This policy setting overrides the behavior of the "Allow .rdp files from valid publishers and user's default .rdp settings" policy setting.
+
+If the list contains a string that is not a certificate thumbprint, it is ignored.
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Description-End -->
+
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Editable-End -->
+
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-DFProperties-End -->
+
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2 |
+| Friendly Name | Specify SHA1 thumbprints of certificates representing trusted .rdp publishers |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Connection Client |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-AdmxBacked-End -->
+
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Examples-End -->
+
+<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-End -->
 
 <!-- TS_CLIENT_TURN_OFF_UDP-Begin -->
 ## TS_CLIENT_TURN_OFF_UDP
@@ -1077,7 +1328,7 @@ If you disable or do not configure this policy setting, Remote Desktop Protocol 
 
 <!-- TS_CLIENT_TURN_OFF_UDP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1123,9 +1374,11 @@ If you enable this policy setting, the color depth that you specify is the maxim
 
 If you disable or do not configure this policy setting, the color depth for connections is not specified at the Group Policy level.
 
-Note:
+**Note**:
+
 1.	Setting the color depth to 24 bits is only supported on Windows Server 2003 and Windows XP Professional.
 2.	The value specified in this policy setting is not applied to connections from client computers that are using at least Remote Desktop Protocol 8.0 (computers running at least Windows 8 or Windows Server 2012). The 32-bit color depth format is always used for these connections.
+
 3.	For connections from client computers that are using Remote Desktop Protocol 7.1 or earlier versions that are connecting to computers running at least Windows 8 or Windows Server 2012, the minimum of the following values is used as the color depth format:
 a.	Value specified by this policy setting
 b.	Maximum color depth supported by the client
@@ -1149,7 +1402,7 @@ If the client does not support at least 16 bits, the connection is terminated.
 
 <!-- TS_COLORDEPTH-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1188,13 +1441,15 @@ If the client does not support at least 16 bits, the connection is terminated.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to limit the size of the entire roaming user profile cache on the local drive. This policy setting only applies to a computer on which the Remote Desktop Session Host role service is installed.
 
-Note: If you want to limit the size of an individual user profile, use the "Limit profile size" policy setting located in User Configuration\Policies\Administrative Templates\System\User Profiles.
+> [!NOTE]
+> If you want to limit the size of an individual user profile, use the "Limit profile size" policy setting located in User Configuration\Policies\Administrative Templates\System\User Profiles.
 
 If you enable this policy setting, you must specify a monitoring interval (in minutes) and a maximum size (in gigabytes) for the entire roaming user profile cache. The monitoring interval determines how often the size of the entire roaming user profile cache is checked. When the size of the entire roaming user profile cache exceeds the maximum size that you have specified, the oldest (least recently used) roaming user profiles will be deleted until the size of the entire roaming user profile cache is less than the maximum size specified.
 
 If you disable or do not configure this policy setting, no restriction is placed on the size of the entire roaming user profile cache on the local drive.
 
-Note: This policy setting is ignored if the "Prevent Roaming Profile changes from propagating to the server" policy setting located in Computer Configuration\Policies\Administrative Templates\System\User Profiles is enabled.
+> [!NOTE]
+> This policy setting is ignored if the "Prevent Roaming Profile changes from propagating to the server" policy setting located in Computer Configuration\Policies\Administrative Templates\System\User Profiles is enabled.
 <!-- TS_DELETE_ROAMING_USER_PROFILES-Description-End -->
 
 <!-- TS_DELETE_ROAMING_USER_PROFILES-Editable-Begin -->
@@ -1212,7 +1467,7 @@ Note: This policy setting is ignored if the "Prevent Roaming Profile changes fro
 
 <!-- TS_DELETE_ROAMING_USER_PROFILES-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1276,7 +1531,7 @@ If the status is set to Not Configured, the default behavior applies.
 
 <!-- TS_DISABLE_REMOTE_DESKTOP_WALLPAPER-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1340,7 +1595,7 @@ NOTE: The policy setting enables load-balancing of graphics processing units (GP
 
 <!-- TS_DX_USE_FULL_HWGPU-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1384,7 +1639,8 @@ If you enable or do not configure this policy setting, the RD Session Host serve
 
 If you disable this policy setting, the RD Session Host server tries to find a suitable printer driver to install the client printer. If the RD Session Host server does not have a printer driver that matches the client printer, the server tries to use the Remote Desktop Easy Print driver to install the client printer. If for any reason the Remote Desktop Easy Print printer driver cannot be used, the client printer is not available for the Remote Desktop Services session.
 
-Note: If the "Do not allow client printer redirection" policy setting is enabled, the "Use Remote Desktop Easy Print printer driver first" policy setting is ignored.
+> [!NOTE]
+> If the "Do not allow client printer redirection" policy setting is enabled, the "Use Remote Desktop Easy Print printer driver first" policy setting is ignored.
 <!-- TS_EASY_PRINT-Description-End -->
 
 <!-- TS_EASY_PRINT-Editable-Begin -->
@@ -1402,7 +1658,7 @@ Note: If the "Do not allow client printer redirection" policy setting is enabled
 
 <!-- TS_EASY_PRINT-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1422,6 +1678,69 @@ Note: If the "Do not allow client printer redirection" policy setting is enabled
 <!-- TS_EASY_PRINT-Examples-End -->
 
 <!-- TS_EASY_PRINT-End -->
+
+<!-- TS_EASY_PRINT_User-Begin -->
+## TS_EASY_PRINT_User
+
+<!-- TS_EASY_PRINT_User-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_EASY_PRINT_User-Applicability-End -->
+
+<!-- TS_EASY_PRINT_User-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_EASY_PRINT_User
+```
+<!-- TS_EASY_PRINT_User-OmaUri-End -->
+
+<!-- TS_EASY_PRINT_User-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify whether the Remote Desktop Easy Print printer driver is used first to install all client printers.
+
+If you enable or do not configure this policy setting, the RD Session Host server first tries to use the Remote Desktop Easy Print printer driver to install all client printers. If for any reason the Remote Desktop Easy Print printer driver cannot be used, a printer driver on the RD Session Host server that matches the client printer is used. If the RD Session Host server does not have a printer driver that matches the client printer, the client printer is not available for the Remote Desktop session.
+
+If you disable this policy setting, the RD Session Host server tries to find a suitable printer driver to install the client printer. If the RD Session Host server does not have a printer driver that matches the client printer, the server tries to use the Remote Desktop Easy Print driver to install the client printer. If for any reason the Remote Desktop Easy Print printer driver cannot be used, the client printer is not available for the Remote Desktop Services session.
+
+> [!NOTE]
+> If the "Do not allow client printer redirection" policy setting is enabled, the "Use Remote Desktop Easy Print printer driver first" policy setting is ignored.
+<!-- TS_EASY_PRINT_User-Description-End -->
+
+<!-- TS_EASY_PRINT_User-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_EASY_PRINT_User-Editable-End -->
+
+<!-- TS_EASY_PRINT_User-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_EASY_PRINT_User-DFProperties-End -->
+
+<!-- TS_EASY_PRINT_User-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_EASY_PRINT_User |
+| Friendly Name | Use Remote Desktop Easy Print printer driver first |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Printer Redirection |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| Registry Value Name | UseUniversalPrinterDriverFirst |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_EASY_PRINT_User-AdmxBacked-End -->
+
+<!-- TS_EASY_PRINT_User-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_EASY_PRINT_User-Examples-End -->
+
+<!-- TS_EASY_PRINT_User-End -->
 
 <!-- TS_EnableVirtualGraphics-Begin -->
 ## TS_EnableVirtualGraphics
@@ -1468,7 +1787,7 @@ If you do not configure this policy setting, the default behavior will be used. 
 
 <!-- TS_EnableVirtualGraphics-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1524,7 +1843,8 @@ If you disable this policy setting, the RD Session Host server fallback driver i
 
 If you do not configure this policy setting, the fallback printer driver behavior is off by default.
 
-Note: If the "Do not allow client printer redirection" setting is enabled, this policy setting is ignored and the fallback printer driver is disabled.
+> [!NOTE]
+> If the "Do not allow client printer redirection" setting is enabled, this policy setting is ignored and the fallback printer driver is disabled.
 <!-- TS_FALLBACKPRINTDRIVERTYPE-Description-End -->
 
 <!-- TS_FALLBACKPRINTDRIVERTYPE-Editable-Begin -->
@@ -1542,7 +1862,7 @@ Note: If the "Do not allow client printer redirection" setting is enabled, this 
 
 <!-- TS_FALLBACKPRINTDRIVERTYPE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1588,7 +1908,8 @@ If you enable this policy setting, logging off the connected administrator is no
 
 If you disable or do not configure this policy setting, logging off the connected administrator is allowed.
 
-Note: The console session is also known as Session 0. Console access can be obtained by using the /console switch from Remote Desktop Connection in the computer field name or from the command line.
+> [!NOTE]
+> The console session is also known as Session 0. Console access can be obtained by using the /console switch from Remote Desktop Connection in the computer field name or from the command line.
 <!-- TS_FORCIBLE_LOGOFF-Description-End -->
 
 <!-- TS_FORCIBLE_LOGOFF-Editable-Begin -->
@@ -1606,7 +1927,7 @@ Note: The console session is also known as Session 0. Console access can be obta
 
 <!-- TS_FORCIBLE_LOGOFF-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1626,6 +1947,193 @@ Note: The console session is also known as Session 0. Console access can be obta
 <!-- TS_FORCIBLE_LOGOFF-Examples-End -->
 
 <!-- TS_FORCIBLE_LOGOFF-End -->
+
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Begin -->
+## TS_GATEWAY_POLICY_AUTH_METHOD
+
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Applicability-End -->
+
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_GATEWAY_POLICY_AUTH_METHOD
+```
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-OmaUri-End -->
+
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the authentication method that clients must use when attempting to connect to an RD Session Host server through an RD Gateway server. You can enforce this policy setting or you can allow users to overwrite this policy setting. By default, when you enable this policy setting, it is enforced. When this policy setting is enforced, users cannot override this setting, even if they select the "Use these RD Gateway server settings" option on the client.
+
+To allow users to overwrite this policy setting, select the "Allow users to change this setting" check box. When you do this, users can specify an alternate authentication method by configuring settings on the client, using an RDP file, or using an HTML script. If users do not specify an alternate authentication method, the authentication method that you specify in this policy setting is used by default.
+
+If you disable or do not configure this policy setting, the authentication method that is specified by the user is used, if one is specified. If an authentication method is not specified, the Negotiate protocol that is enabled on the client or a smart card can be used for authentication.
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Description-End -->
+
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Editable-End -->
+
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-DFProperties-End -->
+
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_GATEWAY_POLICY_AUTH_METHOD |
+| Friendly Name | Set RD Gateway authentication method |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > RD Gateway |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-AdmxBacked-End -->
+
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Examples-End -->
+
+<!-- TS_GATEWAY_POLICY_AUTH_METHOD-End -->
+
+<!-- TS_GATEWAY_POLICY_ENABLE-Begin -->
+## TS_GATEWAY_POLICY_ENABLE
+
+<!-- TS_GATEWAY_POLICY_ENABLE-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_GATEWAY_POLICY_ENABLE-Applicability-End -->
+
+<!-- TS_GATEWAY_POLICY_ENABLE-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_GATEWAY_POLICY_ENABLE
+```
+<!-- TS_GATEWAY_POLICY_ENABLE-OmaUri-End -->
+
+<!-- TS_GATEWAY_POLICY_ENABLE-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If you enable this policy setting, when Remote Desktop Connection cannot connect directly to a remote computer (an RD Session Host server or a computer with Remote Desktop enabled), the clients will attempt to connect to the remote computer through an RD Gateway server. In this case, the clients will attempt to connect to the RD Gateway server that is specified in the "Set RD Gateway server address" policy setting.
+
+You can enforce this policy setting or you can allow users to overwrite this setting. By default, when you enable this policy setting, it is enforced. When this policy setting is enforced, users cannot override this setting, even if they select the "Use these RD Gateway server settings" option on the client.
+
+> [!NOTE]
+> To enforce this policy setting, you must also specify the address of the RD Gateway server by using the "Set RD Gateway server address" policy setting, or client connection attempts to any remote computer will fail, if the client cannot connect directly to the remote computer. To enhance security, it is also highly recommended that you specify the authentication method by using the "Set RD Gateway authentication method" policy setting. If you do not specify an authentication method by using this policy setting, either the NTLM protocol that is enabled on the client or a smart card can be used.
+
+To allow users to overwrite this policy setting, select the "Allow users to change this setting" check box. When you do this, users on the client can choose not to connect through the RD Gateway server by selecting the "Do not use an RD Gateway server" option. Users can specify a connection method by configuring settings on the client, using an RDP file, or using an HTML script. If users do not specify a connection method, the connection method that you specify in this policy setting is used by default.
+
+If you disable or do not configure this policy setting, clients will not use the RD Gateway server address that is specified in the "Set RD Gateway server address" policy setting. If an RD Gateway server is specified by the user, a client connection attempt will be made through that RD Gateway server.
+<!-- TS_GATEWAY_POLICY_ENABLE-Description-End -->
+
+<!-- TS_GATEWAY_POLICY_ENABLE-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_GATEWAY_POLICY_ENABLE-Editable-End -->
+
+<!-- TS_GATEWAY_POLICY_ENABLE-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_GATEWAY_POLICY_ENABLE-DFProperties-End -->
+
+<!-- TS_GATEWAY_POLICY_ENABLE-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_GATEWAY_POLICY_ENABLE |
+| Friendly Name | Enable connection through RD Gateway |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > RD Gateway |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| Registry Value Name | UseProxy |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_GATEWAY_POLICY_ENABLE-AdmxBacked-End -->
+
+<!-- TS_GATEWAY_POLICY_ENABLE-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_GATEWAY_POLICY_ENABLE-Examples-End -->
+
+<!-- TS_GATEWAY_POLICY_ENABLE-End -->
+
+<!-- TS_GATEWAY_POLICY_SERVER-Begin -->
+## TS_GATEWAY_POLICY_SERVER
+
+<!-- TS_GATEWAY_POLICY_SERVER-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_GATEWAY_POLICY_SERVER-Applicability-End -->
+
+<!-- TS_GATEWAY_POLICY_SERVER-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_GATEWAY_POLICY_SERVER
+```
+<!-- TS_GATEWAY_POLICY_SERVER-OmaUri-End -->
+
+<!-- TS_GATEWAY_POLICY_SERVER-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the address of the RD Gateway server that clients must use when attempting to connect to an RD Session Host server. You can enforce this policy setting or you can allow users to overwrite this policy setting. By default, when you enable this policy setting, it is enforced. When this policy setting is enforced, users cannot override this setting, even if they select the "Use these RD Gateway server settings" option on the client.
+
+> [!NOTE]
+> It is highly recommended that you also specify the authentication method by using the "Set RD Gateway authentication method" policy setting. If you do not specify an authentication method by using this setting, either the NTLM protocol that is enabled on the client or a smart card can be used.
+
+To allow users to overwrite the "Set RD Gateway server address" policy setting and connect to another RD Gateway server, you must select the "Allow users to change this setting" check box and users will be allowed to specify an alternate RD Gateway server. Users can specify an alternative RD Gateway server by configuring settings on the client, using an RDP file, or using an HTML script. If users do not specify an alternate RD Gateway server, the server that you specify in this policy setting is used by default.
+
+> [!NOTE]
+> If you disable or do not configure this policy setting, but enable the "Enable connections through RD Gateway" policy setting, client connection attempts to any remote computer will fail, if the client cannot connect directly to the remote computer. If an RD Gateway server is specified by the user, a client connection attempt will be made through that RD Gateway server.
+<!-- TS_GATEWAY_POLICY_SERVER-Description-End -->
+
+<!-- TS_GATEWAY_POLICY_SERVER-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_GATEWAY_POLICY_SERVER-Editable-End -->
+
+<!-- TS_GATEWAY_POLICY_SERVER-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_GATEWAY_POLICY_SERVER-DFProperties-End -->
+
+<!-- TS_GATEWAY_POLICY_SERVER-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_GATEWAY_POLICY_SERVER |
+| Friendly Name | Set RD Gateway server address |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > RD Gateway |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_GATEWAY_POLICY_SERVER-AdmxBacked-End -->
+
+<!-- TS_GATEWAY_POLICY_SERVER-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_GATEWAY_POLICY_SERVER-Examples-End -->
+
+<!-- TS_GATEWAY_POLICY_SERVER-End -->
 
 <!-- TS_JOIN_SESSION_DIRECTORY-Begin -->
 ## TS_JOIN_SESSION_DIRECTORY
@@ -1652,7 +2160,7 @@ If you disable this policy setting, the server does not join a farm in RD Connec
 
 If the policy setting is not configured, the policy setting is not specified at the Group Policy level.
 
-Notes:
+**Note**:
 
 1. If you enable this policy setting, you must also enable the Configure RD Connection Broker farm name and Configure RD Connection Broker server name policy settings.
 
@@ -1674,7 +2182,7 @@ Notes:
 
 <!-- TS_JOIN_SESSION_DIRECTORY-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1736,7 +2244,7 @@ If you disable or do not configure this policy setting, a keep-alive interval is
 
 <!-- TS_KEEP_ALIVE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1784,7 +2292,8 @@ By default, the RDS Endpoint Servers group is empty.
 
 If you disable or do not configure this policy setting, the Remote Desktop license server issues an RDS CAL to any RD Session Host server that requests one. The RDS Endpoint Servers group is not deleted or changed in any way by disabling or not configuring this policy setting.
 
-Note: You should only enable this policy setting when the license server is a member of a domain. You can only add computer accounts for RD Session Host servers to the RDS Endpoint Servers group when the license server is a member of a domain.
+> [!NOTE]
+> You should only enable this policy setting when the license server is a member of a domain. You can only add computer accounts for RD Session Host servers to the RDS Endpoint Servers group when the license server is a member of a domain.
 <!-- TS_LICENSE_SECGROUP-Description-End -->
 
 <!-- TS_LICENSE_SECGROUP-Editable-Begin -->
@@ -1802,7 +2311,7 @@ Note: You should only enable this policy setting when the license server is a me
 
 <!-- TS_LICENSE_SECGROUP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1866,7 +2375,7 @@ If you disable or do not configure this policy setting, the RD Session Host serv
 
 <!-- TS_LICENSE_SERVERS-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1927,7 +2436,7 @@ If you disable or do not configure this policy setting, these notifications will
 
 <!-- TS_LICENSE_TOOLTIP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1992,7 +2501,7 @@ If you disable or do not configure this policy setting, the licensing mode is no
 
 <!-- TS_LICENSING_MODE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2039,7 +2548,8 @@ If the status is set to Enabled, the maximum number of connections is limited to
 
 If the status is set to Disabled or Not Configured, limits to the number of connections are not enforced at the Group Policy level.
 
-Note: This setting is designed to be used on RD Session Host servers (that is, on servers running Windows with Remote Desktop Session Host role service installed).
+> [!NOTE]
+> This setting is designed to be used on RD Session Host servers (that is, on servers running Windows with Remote Desktop Session Host role service installed).
 <!-- TS_MAX_CON_POLICY-Description-End -->
 
 <!-- TS_MAX_CON_POLICY-Editable-Begin -->
@@ -2057,7 +2567,7 @@ Note: This setting is designed to be used on RD Session Host servers (that is, o
 
 <!-- TS_MAX_CON_POLICY-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2116,7 +2626,7 @@ If you disable or do not configure this policy setting, the maximum resolution t
 
 <!-- TS_MAXDISPLAYRES-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2175,7 +2685,7 @@ If you disable or do not configure this policy setting, the number of monitors t
 
 <!-- TS_MAXMONITOR-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2220,7 +2730,8 @@ If you enable this policy setting, "Disconnect" does not appear as an option in 
 
 If you disable or do not configure this policy setting, "Disconnect" is not removed from the list in the Shut Down Windows dialog box.
 
-Note: This policy setting affects only the Shut Down Windows dialog box. It does not prevent users from using other methods to disconnect from a Remote Desktop Services session. This policy setting also does not prevent disconnected sessions at the server. You can control how long a disconnected session remains active on the server by configuring the "Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\RD Session Host\Session Time Limits\Set time limit for disconnected sessions" policy setting.
+> [!NOTE]
+> This policy setting affects only the Shut Down Windows dialog box. It does not prevent users from using other methods to disconnect from a Remote Desktop Services session. This policy setting also does not prevent disconnected sessions at the server. You can control how long a disconnected session remains active on the server by configuring the "Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\RD Session Host\Session Time Limits\Set time limit for disconnected sessions" policy setting.
 <!-- TS_NoDisconnectMenu-Description-End -->
 
 <!-- TS_NoDisconnectMenu-Editable-Begin -->
@@ -2238,7 +2749,7 @@ Note: This policy setting affects only the Shut Down Windows dialog box. It does
 
 <!-- TS_NoDisconnectMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2298,7 +2809,7 @@ If the status is set to Disabled or Not Configured, Windows Security remains in 
 
 <!-- TS_NoSecurityMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2365,7 +2876,7 @@ If you disable or do not configure this policy setting, the license server will 
 
 <!-- TS_PreventLicenseUpgrade-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2407,7 +2918,8 @@ This policy setting determines whether a user will be prompted on the client com
 
 If you enable this policy setting, a user will be prompted on the client computer instead of on the RD Session Host server to provide credentials for a remote connection to an RD Session Host server. If saved credentials for the user are available on the client computer, the user will not be prompted to provide credentials.
 
-Note: If you enable this policy setting in releases of Windows Server 2008 R2 with SP1 or Windows Server 2008 R2, and a user is prompted on both the client computer and on the RD Session Host server to provide credentials, clear the Always prompt for password check box on the Log on Settings tab in Remote Desktop Session Host Configuration.
+> [!NOTE]
+> If you enable this policy setting in releases of Windows Server 2008 R2 with SP1 or Windows Server 2008 R2, and a user is prompted on both the client computer and on the RD Session Host server to provide credentials, clear the Always prompt for password check box on the Log on Settings tab in Remote Desktop Session Host Configuration.
 
 If you disable or do not configure this policy setting, the version of the operating system on the RD Session Host server will determine when a user is prompted to provide credentials for a remote connection to an RD Session Host server. For Windows Server 2003 and Windows 2000 Server a user will be prompted on the terminal server to provide credentials for a remote connection. For Windows Server 2008 and Windows Server 2008 R2, a user will be prompted on the client computer to provide credentials for a remote connection.
 <!-- TS_PROMT_CREDS_CLIENT_COMP-Description-End -->
@@ -2427,7 +2939,7 @@ If you disable or do not configure this policy setting, the version of the opera
 
 <!-- TS_PROMT_CREDS_CLIENT_COMP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2447,6 +2959,70 @@ If you disable or do not configure this policy setting, the version of the opera
 <!-- TS_PROMT_CREDS_CLIENT_COMP-Examples-End -->
 
 <!-- TS_PROMT_CREDS_CLIENT_COMP-End -->
+
+<!-- TS_RADC_DefaultConnection-Begin -->
+## TS_RADC_DefaultConnection
+
+<!-- TS_RADC_DefaultConnection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_RADC_DefaultConnection-Applicability-End -->
+
+<!-- TS_RADC_DefaultConnection-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_RADC_DefaultConnection
+```
+<!-- TS_RADC_DefaultConnection-OmaUri-End -->
+
+<!-- TS_RADC_DefaultConnection-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the default connection URL for RemoteApp and Desktop Connections. The default connection URL is a specific connection that can only be configured by using Group Policy. In addition to the capabilities that are common to all connections, the default connection URL allows document file types to be associated with RemoteApp programs.
+
+The default connection URL must be configured in the form of <https://contoso.com/rdweb/Feed/webfeed.aspx>.
+
+If you enable this policy setting, the specified URL is configured as the default connection URL for the user and replaces any existing connection URL. The user cannot change the default connection URL. The user's default logon credentials are used when setting up the default connection URL.
+
+If you disable or do not configure this policy setting, the user has no default connection URL.
+
+> [!NOTE]
+> RemoteApp programs that are installed through RemoteApp and Desktop Connections from an untrusted server can compromise the security of a user's account.
+<!-- TS_RADC_DefaultConnection-Description-End -->
+
+<!-- TS_RADC_DefaultConnection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_RADC_DefaultConnection-Editable-End -->
+
+<!-- TS_RADC_DefaultConnection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_RADC_DefaultConnection-DFProperties-End -->
+
+<!-- TS_RADC_DefaultConnection-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_RADC_DefaultConnection |
+| Friendly Name | Specify default connection URL |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > RemoteApp and Desktop Connections |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Workspaces |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_RADC_DefaultConnection-AdmxBacked-End -->
+
+<!-- TS_RADC_DefaultConnection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_RADC_DefaultConnection-Examples-End -->
+
+<!-- TS_RADC_DefaultConnection-End -->
 
 <!-- TS_RDSAppX_WaitForRegistration-Begin -->
 ## TS_RDSAppX_WaitForRegistration
@@ -2489,7 +3065,7 @@ If you disable or do not configure this policy setting, the Start screen is show
 
 <!-- TS_RDSAppX_WaitForRegistration-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2509,6 +3085,71 @@ If you disable or do not configure this policy setting, the Start screen is show
 <!-- TS_RDSAppX_WaitForRegistration-Examples-End -->
 
 <!-- TS_RDSAppX_WaitForRegistration-End -->
+
+<!-- TS_RemoteControl_1-Begin -->
+## TS_RemoteControl_1
+
+<!-- TS_RemoteControl_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_RemoteControl_1-Applicability-End -->
+
+<!-- TS_RemoteControl_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_RemoteControl_1
+```
+<!-- TS_RemoteControl_1-OmaUri-End -->
+
+<!-- TS_RemoteControl_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If you enable this policy setting, administrators can interact with a user's Remote Desktop Services session based on the option selected. Select the desired level of control and permission from the options list:
+
+1. No remote control allowed: Disallows an administrator to use remote control or view a remote user session.
+2. Full Control with user's permission: Allows the administrator to interact with the session, with the user's consent.
+
+3. Full Control without user's permission: Allows the administrator to interact with the session, without the user's consent.
+4. View Session with user's permission: Allows the administrator to watch the session of a remote user with the user's consent.
+
+5. View Session without user's permission: Allows the administrator to watch the session of a remote user without the user's consent.
+
+If you disable this policy setting, administrators can interact with a user's Remote Desktop Services session, with the user's consent.
+<!-- TS_RemoteControl_1-Description-End -->
+
+<!-- TS_RemoteControl_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_RemoteControl_1-Editable-End -->
+
+<!-- TS_RemoteControl_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_RemoteControl_1-DFProperties-End -->
+
+<!-- TS_RemoteControl_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_RemoteControl_1 |
+| Friendly Name | Set rules for remote control of Remote Desktop Services user sessions |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Connections |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_RemoteControl_1-AdmxBacked-End -->
+
+<!-- TS_RemoteControl_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_RemoteControl_1-Examples-End -->
+
+<!-- TS_RemoteControl_1-End -->
 
 <!-- TS_RemoteControl_2-Begin -->
 ## TS_RemoteControl_2
@@ -2531,8 +3172,10 @@ If you enable this policy setting, administrators can interact with a user's Rem
 
 1. No remote control allowed: Disallows an administrator to use remote control or view a remote user session.
 2. Full Control with user's permission: Allows the administrator to interact with the session, with the user's consent.
+
 3. Full Control without user's permission: Allows the administrator to interact with the session, without the user's consent.
 4. View Session with user's permission: Allows the administrator to watch the session of a remote user with the user's consent.
+
 5. View Session without user's permission: Allows the administrator to watch the session of a remote user without the user's consent.
 
 If you disable this policy setting, administrators can interact with a user's Remote Desktop Services session, with the user's consent.
@@ -2553,13 +3196,13 @@ If you disable this policy setting, administrators can interact with a user's Re
 
 <!-- TS_RemoteControl_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | TS_RemoteControl |
+| Name | TS_RemoteControl_2 |
 | Friendly Name | Set rules for remote control of Remote Desktop Services user sessions |
 | Location | Computer Configuration |
 | Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Connections |
@@ -2614,7 +3257,7 @@ By default, Remote Desktop Connection sessions that use RemoteFX are optimized f
 
 <!-- TS_RemoteDesktopVirtualGraphics-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2659,7 +3302,7 @@ If you enable this policy setting, you must specify the name of a farm in RD Con
 
 If you disable or do not configure this policy setting, the farm name is not specified at the Group Policy level.
 
-Notes:
+**Note**:
 
 1. This policy setting is not effective unless both the Join RD Connection Broker and the Configure RD Connection Broker server name policy settings are enabled and configured by using Group Policy.
 
@@ -2681,7 +3324,7 @@ Notes:
 
 <!-- TS_SD_ClustName-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2726,7 +3369,7 @@ If you disable this policy setting, the IP address of the RD Session Host server
 
 If you do not configure this policy setting, the Use IP address redirection policy setting is not enforced at the group Group policy Policy level and the default will be used. This setting is enabled by default.
 
-Notes:
+**Note**:
 
 1. For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
 <!-- TS_SD_EXPOSE_ADDRESS-Description-End -->
@@ -2746,7 +3389,7 @@ Notes:
 
 <!-- TS_SD_EXPOSE_ADDRESS-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2790,7 +3433,7 @@ If you enable this policy setting, you must specify the RD Connection Broker ser
 
 If you disable or do not configure this policy setting, the policy setting is not specified at the Group Policy level.
 
-Notes:
+**Note**:
 
 1. For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
 
@@ -2814,7 +3457,7 @@ Notes:
 
 <!-- TS_SD_Loc-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2879,7 +3522,7 @@ If you disable or do not configure this policy setting, the security method to b
 
 <!-- TS_SECURITY_LAYER_POLICY-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2944,7 +3587,7 @@ If you disable or do not configure this policy setting, Remote Desktop Protocol 
 
 <!-- TS_SELECT_NETWORK_DETECT-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3009,7 +3652,7 @@ If you disable or do not configure this policy setting, RDP will choose the opti
 
 <!-- TS_SELECT_TRANSPORT-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3068,7 +3711,7 @@ If you disable this policy setting, RemoteApp programs published from this RD Se
 
 <!-- TS_SERVER_ADVANCED_REMOTEFX_REMOTEAPP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3134,7 +3777,7 @@ If you disable or do not configure this policy setting, the authentication setti
 
 <!-- TS_SERVER_AUTH-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3189,7 +3832,7 @@ This policy setting lets you enable H.264/AVC hardware encoding support for Remo
 
 <!-- TS_SERVER_AVC_HW_ENCODE_PREFERRED-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3245,7 +3888,7 @@ This policy setting prioritizes the H.264/AVC 444 graphics mode for non-RemoteFX
 
 <!-- TS_SERVER_AVC444_MODE_PREFERRED-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3309,7 +3952,7 @@ If you disable or do not configure this policy setting, the default RDP compress
 
 <!-- TS_SERVER_COMPRESSOR-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3369,7 +4012,7 @@ If you disable or do not configure this policy setting, RemoteFX Adaptive Graphi
 
 <!-- TS_SERVER_IMAGE_QUALITY-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3406,7 +4049,7 @@ If you disable or do not configure this policy setting, RemoteFX Adaptive Graphi
 
 <!-- TS_SERVER_LEGACY_RFX-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure graphics encoding to use the RemoteFX Codec on the Remote Desktop Session Host server so that the sessions are compatible with non-Windows thin client devices designed for Windows Server 2008 R2 SP1. These clients only support the Windows Server 2008 R2 SP1 RemoteFX Codec.If you enable this policy setting, users' sessions on this server will only use the Windows Server 2008 R2 SP1 RemoteFX Codec for encoding. This mode is compatible with thin client devices that only support the Windows Server 2008 R2 SP1 RemoteFX Codec.If you disable or do not configure this policy setting, non-Windows thin clients that only support the Windows Server 2008 R2 SP1 RemoteFX Codec will not be able to connect to this server. This policy setting applies only to clients that are using Remote Desktop Protocol (RDP) 7.1, and does not affect clients that are using other RDP versions.
+This policy setting allows you to configure graphics encoding to use the RemoteFX Codec on the Remote Desktop Session Host server so that the sessions are compatible with non-Windows thin client devices designed for Windows Server 2008 R2 SP1. These clients only support the Windows Server 2008 R2 SP1 RemoteFX Codec. If you enable this policy setting, users' sessions on this server will only use the Windows Server 2008 R2 SP1 RemoteFX Codec for encoding. This mode is compatible with thin client devices that only support the Windows Server 2008 R2 SP1 RemoteFX Codec. If you disable or do not configure this policy setting, non-Windows thin clients that only support the Windows Server 2008 R2 SP1 RemoteFX Codec will not be able to connect to this server. This policy setting applies only to clients that are using Remote Desktop Protocol (RDP) 7.1, and does not affect clients that are using other RDP versions.
 <!-- TS_SERVER_LEGACY_RFX-Description-End -->
 
 <!-- TS_SERVER_LEGACY_RFX-Editable-Begin -->
@@ -3424,7 +4067,7 @@ This policy setting allows you to configure graphics encoding to use the RemoteF
 
 <!-- TS_SERVER_LEGACY_RFX-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3465,8 +4108,10 @@ This policy setting allows you to configure graphics encoding to use the RemoteF
 This policy setting allows the administrator to configure the RemoteFX experience for Remote Desktop Session Host or Remote Desktop Virtualization Host servers. By default, the system will choose the best experience based on available nework bandwidth.
 
 If you enable this policy setting, the RemoteFX experience could be set to one of the following options:
+
 1. Let the system choose the experience for the network condition
 2. Optimize for server scalability
+
 3. Optimize for minimum bandwidth usage
 
 If you disable or do not configure this policy setting, the RemoteFX experience will change dynamically based on the network condition."
@@ -3487,7 +4132,7 @@ If you disable or do not configure this policy setting, the RemoteFX experience 
 
 <!-- TS_SERVER_PROFILE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3548,7 +4193,7 @@ If you disable or do not configure this policy setting, Remote Desktop Services 
 
 <!-- TS_SERVER_VISEXP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3609,7 +4254,7 @@ For this change to take effect, you must restart Windows.
 
 <!-- TS_SERVER_WDDM_GRAPHICS_DRIVER-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3629,6 +4274,75 @@ For this change to take effect, you must restart Windows.
 <!-- TS_SERVER_WDDM_GRAPHICS_DRIVER-Examples-End -->
 
 <!-- TS_SERVER_WDDM_GRAPHICS_DRIVER-End -->
+
+<!-- TS_Session_End_On_Limit_1-Begin -->
+## TS_Session_End_On_Limit_1
+
+<!-- TS_Session_End_On_Limit_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_Session_End_On_Limit_1-Applicability-End -->
+
+<!-- TS_Session_End_On_Limit_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_Session_End_On_Limit_1
+```
+<!-- TS_Session_End_On_Limit_1-OmaUri-End -->
+
+<!-- TS_Session_End_On_Limit_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether to end a Remote Desktop Services session that has timed out instead of disconnecting it.
+
+You can use this setting to direct Remote Desktop Services to end a session (that is, the user is logged off and the session is deleted from the server) after time limits for active or idle sessions are reached. By default, Remote Desktop Services disconnects sessions that reach their time limits.
+
+Time limits are set locally by the server administrator or by using Group Policy. See the policy settings Set time limit for active Remote Desktop Services sessions and Set time limit for active but idle Remote Desktop Services sessions policy settings.
+
+If you enable this policy setting, Remote Desktop Services ends any session that reaches its time-out limit.
+
+If you disable this policy setting, Remote Desktop Services always disconnects a timed-out session, even if specified otherwise by the server administrator.
+
+If you do not configure this policy setting, Remote Desktop Services disconnects a timed-out session, unless specified otherwise in local settings.
+
+> [!NOTE]
+> This policy setting only applies to time-out limits that are explicitly set by the administrator. This policy setting does not apply to time-out events that occur due to connectivity or network conditions. This setting appears in both Computer Configuration and User Configuration. If both settings are configured, the Computer Configuration setting takes precedence.
+<!-- TS_Session_End_On_Limit_1-Description-End -->
+
+<!-- TS_Session_End_On_Limit_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_Session_End_On_Limit_1-Editable-End -->
+
+<!-- TS_Session_End_On_Limit_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_Session_End_On_Limit_1-DFProperties-End -->
+
+<!-- TS_Session_End_On_Limit_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_Session_End_On_Limit_1 |
+| Friendly Name | End session when time limits are reached |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Session Time Limits |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| Registry Value Name | fResetBroken |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_Session_End_On_Limit_1-AdmxBacked-End -->
+
+<!-- TS_Session_End_On_Limit_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_Session_End_On_Limit_1-Examples-End -->
+
+<!-- TS_Session_End_On_Limit_1-End -->
 
 <!-- TS_Session_End_On_Limit_2-Begin -->
 ## TS_Session_End_On_Limit_2
@@ -3659,7 +4373,8 @@ If you disable this policy setting, Remote Desktop Services always disconnects a
 
 If you do not configure this policy setting, Remote Desktop Services disconnects a timed-out session, unless specified otherwise in local settings.
 
-Note: This policy setting only applies to time-out limits that are explicitly set by the administrator. This policy setting does not apply to time-out events that occur due to connectivity or network conditions. This setting appears in both Computer Configuration and User Configuration. If both settings are configured, the Computer Configuration setting takes precedence.
+> [!NOTE]
+> This policy setting only applies to time-out limits that are explicitly set by the administrator. This policy setting does not apply to time-out events that occur due to connectivity or network conditions. This setting appears in both Computer Configuration and User Configuration. If both settings are configured, the Computer Configuration setting takes precedence.
 <!-- TS_Session_End_On_Limit_2-Description-End -->
 
 <!-- TS_Session_End_On_Limit_2-Editable-Begin -->
@@ -3677,13 +4392,13 @@ Note: This policy setting only applies to time-out limits that are explicitly se
 
 <!-- TS_Session_End_On_Limit_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | TS_Session_End_On_Limit |
+| Name | TS_Session_End_On_Limit_2 |
 | Friendly Name | End session when time limits are reached |
 | Location | Computer Configuration |
 | Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Session Time Limits |
@@ -3697,6 +4412,72 @@ Note: This policy setting only applies to time-out limits that are explicitly se
 <!-- TS_Session_End_On_Limit_2-Examples-End -->
 
 <!-- TS_Session_End_On_Limit_2-End -->
+
+<!-- TS_SESSIONS_Disconnected_Timeout_1-Begin -->
+## TS_SESSIONS_Disconnected_Timeout_1
+
+<!-- TS_SESSIONS_Disconnected_Timeout_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_SESSIONS_Disconnected_Timeout_1-Applicability-End -->
+
+<!-- TS_SESSIONS_Disconnected_Timeout_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_SESSIONS_Disconnected_Timeout_1
+```
+<!-- TS_SESSIONS_Disconnected_Timeout_1-OmaUri-End -->
+
+<!-- TS_SESSIONS_Disconnected_Timeout_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure a time limit for disconnected Remote Desktop Services sessions.
+
+You can use this policy setting to specify the maximum amount of time that a disconnected session remains active on the server. By default, Remote Desktop Services allows users to disconnect from a Remote Desktop Services session without logging off and ending the session.
+
+When a session is in a disconnected state, running programs are kept active even though the user is no longer actively connected. By default, these disconnected sessions are maintained for an unlimited time on the server.
+
+If you enable this policy setting, disconnected sessions are deleted from the server after the specified amount of time. To enforce the default behavior that disconnected sessions are maintained for an unlimited time, select Never. If you have a console session, disconnected session time limits do not apply.
+
+If you disable or do not configure this policy setting, this policy setting is not specified at the Group Policy level. Be y default, Remote Desktop Services disconnected sessions are maintained for an unlimited amount of time.
+
+> [!NOTE]
+> This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the Computer Configuration policy setting takes precedence.
+<!-- TS_SESSIONS_Disconnected_Timeout_1-Description-End -->
+
+<!-- TS_SESSIONS_Disconnected_Timeout_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_SESSIONS_Disconnected_Timeout_1-Editable-End -->
+
+<!-- TS_SESSIONS_Disconnected_Timeout_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_SESSIONS_Disconnected_Timeout_1-DFProperties-End -->
+
+<!-- TS_SESSIONS_Disconnected_Timeout_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_SESSIONS_Disconnected_Timeout_1 |
+| Friendly Name | Set time limit for disconnected sessions |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Session Time Limits |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_SESSIONS_Disconnected_Timeout_1-AdmxBacked-End -->
+
+<!-- TS_SESSIONS_Disconnected_Timeout_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_SESSIONS_Disconnected_Timeout_1-Examples-End -->
+
+<!-- TS_SESSIONS_Disconnected_Timeout_1-End -->
 
 <!-- TS_SESSIONS_Disconnected_Timeout_2-Begin -->
 ## TS_SESSIONS_Disconnected_Timeout_2
@@ -3723,10 +4504,10 @@ When a session is in a disconnected state, running programs are kept active even
 
 If you enable this policy setting, disconnected sessions are deleted from the server after the specified amount of time. To enforce the default behavior that disconnected sessions are maintained for an unlimited time, select Never. If you have a console session, disconnected session time limits do not apply.
 
-
 If you disable or do not configure this policy setting, this policy setting is not specified at the Group Policy level. Be y default, Remote Desktop Services disconnected sessions are maintained for an unlimited amount of time.
 
-Note: This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the Computer Configuration policy setting takes precedence.
+> [!NOTE]
+> This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the Computer Configuration policy setting takes precedence.
 <!-- TS_SESSIONS_Disconnected_Timeout_2-Description-End -->
 
 <!-- TS_SESSIONS_Disconnected_Timeout_2-Editable-Begin -->
@@ -3744,13 +4525,13 @@ Note: This policy setting appears in both Computer Configuration and User Config
 
 <!-- TS_SESSIONS_Disconnected_Timeout_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | TS_SESSIONS_Disconnected_Timeout |
+| Name | TS_SESSIONS_Disconnected_Timeout_2 |
 | Friendly Name | Set time limit for disconnected sessions |
 | Location | Computer Configuration |
 | Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Session Time Limits |
@@ -3763,6 +4544,70 @@ Note: This policy setting appears in both Computer Configuration and User Config
 <!-- TS_SESSIONS_Disconnected_Timeout_2-Examples-End -->
 
 <!-- TS_SESSIONS_Disconnected_Timeout_2-End -->
+
+<!-- TS_SESSIONS_Idle_Limit_1-Begin -->
+## TS_SESSIONS_Idle_Limit_1
+
+<!-- TS_SESSIONS_Idle_Limit_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_SESSIONS_Idle_Limit_1-Applicability-End -->
+
+<!-- TS_SESSIONS_Idle_Limit_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_SESSIONS_Idle_Limit_1
+```
+<!-- TS_SESSIONS_Idle_Limit_1-OmaUri-End -->
+
+<!-- TS_SESSIONS_Idle_Limit_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify the maximum amount of time that an active Remote Desktop Services session can be idle (without user input) before it is automatically disconnected.
+
+If you enable this policy setting, you must select the desired time limit in the Idle session limit list. Remote Desktop Services will automatically disconnect active but idle sessions after the specified amount of time. The user receives a warning two minutes before the session disconnects, which allows the user to press a key or move the mouse to keep the session active. If you have a console session, idle session time limits do not apply.
+
+If you disable or do not configure this policy setting, the time limit is not specified at the Group Policy level. By default, Remote Desktop Services allows sessions to remain active but idle for an unlimited amount of time.
+
+If you want Remote Desktop Services to end instead of disconnect a session when the time limit is reached, you can configure the policy setting Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits\End session when time limits are reached.
+
+> [!NOTE]
+> This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the Computer Configuration policy setting takes precedence.
+<!-- TS_SESSIONS_Idle_Limit_1-Description-End -->
+
+<!-- TS_SESSIONS_Idle_Limit_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_SESSIONS_Idle_Limit_1-Editable-End -->
+
+<!-- TS_SESSIONS_Idle_Limit_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_SESSIONS_Idle_Limit_1-DFProperties-End -->
+
+<!-- TS_SESSIONS_Idle_Limit_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_SESSIONS_Idle_Limit_1 |
+| Friendly Name | Set time limit for active but idle Remote Desktop Services sessions |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Session Time Limits |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_SESSIONS_Idle_Limit_1-AdmxBacked-End -->
+
+<!-- TS_SESSIONS_Idle_Limit_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_SESSIONS_Idle_Limit_1-Examples-End -->
+
+<!-- TS_SESSIONS_Idle_Limit_1-End -->
 
 <!-- TS_SESSIONS_Idle_Limit_2-Begin -->
 ## TS_SESSIONS_Idle_Limit_2
@@ -3789,7 +4634,8 @@ If you disable or do not configure this policy setting, the time limit is not sp
 
 If you want Remote Desktop Services to end instead of disconnect a session when the time limit is reached, you can configure the policy setting Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits\End session when time limits are reached.
 
-Note: This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the Computer Configuration policy setting takes precedence.
+> [!NOTE]
+> This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the Computer Configuration policy setting takes precedence.
 <!-- TS_SESSIONS_Idle_Limit_2-Description-End -->
 
 <!-- TS_SESSIONS_Idle_Limit_2-Editable-Begin -->
@@ -3807,13 +4653,13 @@ Note: This policy setting appears in both Computer Configuration and User Config
 
 <!-- TS_SESSIONS_Idle_Limit_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | TS_SESSIONS_Idle_Limit |
+| Name | TS_SESSIONS_Idle_Limit_2 |
 | Friendly Name | Set time limit for active but idle Remote Desktop Services sessions |
 | Location | Computer Configuration |
 | Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Session Time Limits |
@@ -3826,6 +4672,70 @@ Note: This policy setting appears in both Computer Configuration and User Config
 <!-- TS_SESSIONS_Idle_Limit_2-Examples-End -->
 
 <!-- TS_SESSIONS_Idle_Limit_2-End -->
+
+<!-- TS_SESSIONS_Limits_1-Begin -->
+## TS_SESSIONS_Limits_1
+
+<!-- TS_SESSIONS_Limits_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_SESSIONS_Limits_1-Applicability-End -->
+
+<!-- TS_SESSIONS_Limits_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_SESSIONS_Limits_1
+```
+<!-- TS_SESSIONS_Limits_1-OmaUri-End -->
+
+<!-- TS_SESSIONS_Limits_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify the maximum amount of time that a Remote Desktop Services session can be active before it is automatically disconnected.
+
+If you enable this policy setting, you must select the desired time limit in the Active session limit list. Remote Desktop Services will automatically disconnect active sessions after the specified amount of time. The user receives a warning two minutes before the Remote Desktop Services session disconnects, which allows the user to save open files and close programs. If you have a console session, active session time limits do not apply.
+
+If you disable or do not configure this policy setting, this policy setting is not specified at the Group Policy level. By default, Remote Desktop Services allows sessions to remain active for an unlimited amount of time.
+
+If you want Remote Desktop Services to end instead of disconnect a session when the time limit is reached, you can configure the policy setting Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits\End session when time limits are reached.
+
+> [!NOTE]
+> This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the Computer Configuration policy setting takes precedence.
+<!-- TS_SESSIONS_Limits_1-Description-End -->
+
+<!-- TS_SESSIONS_Limits_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_SESSIONS_Limits_1-Editable-End -->
+
+<!-- TS_SESSIONS_Limits_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_SESSIONS_Limits_1-DFProperties-End -->
+
+<!-- TS_SESSIONS_Limits_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_SESSIONS_Limits_1 |
+| Friendly Name | Set time limit for active Remote Desktop Services sessions |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Session Time Limits |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_SESSIONS_Limits_1-AdmxBacked-End -->
+
+<!-- TS_SESSIONS_Limits_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_SESSIONS_Limits_1-Examples-End -->
+
+<!-- TS_SESSIONS_Limits_1-End -->
 
 <!-- TS_SESSIONS_Limits_2-Begin -->
 ## TS_SESSIONS_Limits_2
@@ -3852,7 +4762,8 @@ If you disable or do not configure this policy setting, this policy setting is n
 
 If you want Remote Desktop Services to end instead of disconnect a session when the time limit is reached, you can configure the policy setting Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits\End session when time limits are reached.
 
-Note: This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the Computer Configuration policy setting takes precedence.
+> [!NOTE]
+> This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the Computer Configuration policy setting takes precedence.
 <!-- TS_SESSIONS_Limits_2-Description-End -->
 
 <!-- TS_SESSIONS_Limits_2-Editable-Begin -->
@@ -3870,13 +4781,13 @@ Note: This policy setting appears in both Computer Configuration and User Config
 
 <!-- TS_SESSIONS_Limits_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | TS_SESSIONS_Limits |
+| Name | TS_SESSIONS_Limits_2 |
 | Friendly Name | Set time limit for active Remote Desktop Services sessions |
 | Location | Computer Configuration |
 | Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Session Time Limits |
@@ -3931,7 +4842,7 @@ If you do not configure this policy setting, this policy setting is not specifie
 
 <!-- TS_SINGLE_SESSION-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -3975,7 +4886,8 @@ If you enable this policy setting, Remote Desktop Services users cannot use a sm
 
 If you disable or do not configure this policy setting, smart card device redirection is allowed. By default, Remote Desktop Services automatically redirects smart card devices on connection.
 
-Note: The client computer must be running at least Microsoft Windows 2000 Server or at least Microsoft Windows XP Professional and the target server must be joined to a domain.
+> [!NOTE]
+> The client computer must be running at least Microsoft Windows 2000 Server or at least Microsoft Windows XP Professional and the target server must be joined to a domain.
 <!-- TS_SMART_CARD-Description-End -->
 
 <!-- TS_SMART_CARD-Editable-Begin -->
@@ -3993,7 +4905,7 @@ Note: The client computer must be running at least Microsoft Windows 2000 Server
 
 <!-- TS_SMART_CARD-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4013,6 +4925,75 @@ Note: The client computer must be running at least Microsoft Windows 2000 Server
 <!-- TS_SMART_CARD-Examples-End -->
 
 <!-- TS_SMART_CARD-End -->
+
+<!-- TS_START_PROGRAM_1-Begin -->
+## TS_START_PROGRAM_1
+
+<!-- TS_START_PROGRAM_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_START_PROGRAM_1-Applicability-End -->
+
+<!-- TS_START_PROGRAM_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_START_PROGRAM_1
+```
+<!-- TS_START_PROGRAM_1-OmaUri-End -->
+
+<!-- TS_START_PROGRAM_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Configures Remote Desktop Services to run a specified program automatically upon connection.
+
+You can use this setting to specify a program to run automatically when a user logs on to a remote computer.
+
+By default, Remote Desktop Services sessions provide access to the full Windows desktop, unless otherwise specified with this setting, by the server administrator, or by the user in configuring the client connection. Enabling this setting overrides the "Start Program" settings set by the server administrator or user. The Start menu and Windows Desktop are not displayed, and when the user exits the program the session is automatically logged off.
+
+To use this setting, in Program path and file name, type the fully qualified path and file name of the executable file to be run when the user logs on. If necessary, in Working Directory, type the fully qualified path to the starting directory for the program. If you leave Working Directory blank, the program runs with its default working directory. If the specified program path, file name, or working directory is not the name of a valid directory, the RD Session Host server connection fails with an error message.
+
+If the status is set to Enabled, Remote Desktop Services sessions automatically run the specified program and use the specified Working Directory (or the program default directory, if Working Directory is not specified) as the working directory for the program.
+
+If the status is set to Disabled or Not Configured, Remote Desktop Services sessions start with the full desktop, unless the server administrator or user specify otherwise. (See "Computer Configuration\Administrative Templates\System\Logon\Run these programs at user logon" setting.)
+
+> [!NOTE]
+> This setting appears in both Computer Configuration and User Configuration. If both settings are configured, the Computer Configuration setting overrides.
+<!-- TS_START_PROGRAM_1-Description-End -->
+
+<!-- TS_START_PROGRAM_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_START_PROGRAM_1-Editable-End -->
+
+<!-- TS_START_PROGRAM_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_START_PROGRAM_1-DFProperties-End -->
+
+<!-- TS_START_PROGRAM_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_START_PROGRAM_1 |
+| Friendly Name | Start a program on connection |
+| Location | User Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Remote Session Environment |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| Registry Value Name | fInheritInitialProgram |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_START_PROGRAM_1-AdmxBacked-End -->
+
+<!-- TS_START_PROGRAM_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_START_PROGRAM_1-Examples-End -->
+
+<!-- TS_START_PROGRAM_1-End -->
 
 <!-- TS_START_PROGRAM_2-Begin -->
 ## TS_START_PROGRAM_2
@@ -4043,7 +5024,8 @@ If the status is set to Enabled, Remote Desktop Services sessions automatically 
 
 If the status is set to Disabled or Not Configured, Remote Desktop Services sessions start with the full desktop, unless the server administrator or user specify otherwise. (See "Computer Configuration\Administrative Templates\System\Logon\Run these programs at user logon" setting.)
 
-Note: This setting appears in both Computer Configuration and User Configuration. If both settings are configured, the Computer Configuration setting overrides.
+> [!NOTE]
+> This setting appears in both Computer Configuration and User Configuration. If both settings are configured, the Computer Configuration setting overrides.
 <!-- TS_START_PROGRAM_2-Description-End -->
 
 <!-- TS_START_PROGRAM_2-Editable-Begin -->
@@ -4061,13 +5043,13 @@ Note: This setting appears in both Computer Configuration and User Configuration
 
 <!-- TS_START_PROGRAM_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | TS_START_PROGRAM |
+| Name | TS_START_PROGRAM_2 |
 | Friendly Name | Start a program on connection |
 | Location | Computer Configuration |
 | Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Remote Session Environment |
@@ -4108,7 +5090,8 @@ If you disable this policy setting, temporary folders are deleted when a user lo
 
 If you do not configure this policy setting, Remote Desktop Services deletes the temporary folders from the remote computer at logoff, unless specified otherwise by the server administrator.
 
-Note: This setting only takes effect if per-session temporary folders are in use on the server. If you enable the Do not use temporary folders per session policy setting, this policy setting has no effect.
+> [!NOTE]
+> This setting only takes effect if per-session temporary folders are in use on the server. If you enable the Do not use temporary folders per session policy setting, this policy setting has no effect.
 <!-- TS_TEMP_DELETE-Description-End -->
 
 <!-- TS_TEMP_DELETE-Editable-Begin -->
@@ -4126,7 +5109,7 @@ Note: This setting only takes effect if per-session temporary folders are in use
 
 <!-- TS_TEMP_DELETE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4190,7 +5173,7 @@ If you do not configure this policy setting, per-session temporary folders are c
 
 <!-- TS_TEMP_PER_SESSION-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4234,7 +5217,8 @@ If you enable this policy setting, clients that are capable of time zone redirec
 
 If you disable or do not configure this policy setting, the client computer does not redirect its time zone information and the session time zone is the same as the server time zone.
 
-Note: Time zone redirection is possible only when connecting to at least a Microsoft Windows Server 2003 terminal server with a client using RDP 5.1 and later.
+> [!NOTE]
+> Time zone redirection is possible only when connecting to at least a Microsoft Windows Server 2003 terminal server with a client using RDP 5.1 and later.
 <!-- TS_TIME_ZONE-Description-End -->
 
 <!-- TS_TIME_ZONE-Editable-Begin -->
@@ -4252,7 +5236,7 @@ Note: Time zone redirection is possible only when connecting to at least a Micro
 
 <!-- TS_TIME_ZONE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4298,7 +5282,8 @@ If you enable this policy setting the default security descriptors for existing 
 
 If you disable or do not configure this policy setting, server administrators have full read/write permissions to the user security descriptors by using the Remote Desktop Session WMI Provider.
 
-Note: The preferred method of managing user access is by adding a user to the Remote Desktop Users group.
+> [!NOTE]
+> The preferred method of managing user access is by adding a user to the Remote Desktop Users group.
 <!-- TS_TSCC_PERMISSIONS_POLICY-Description-End -->
 
 <!-- TS_TSCC_PERMISSIONS_POLICY-Editable-Begin -->
@@ -4316,7 +5301,7 @@ Note: The preferred method of managing user access is by adding a user to the Re
 
 <!-- TS_TSCC_PERMISSIONS_POLICY-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4360,7 +5345,8 @@ If you enable this policy setting, the desktop is always displayed when a client
 
 If you disable or do not configure this policy setting, an initial program can be specified that runs on the remote computer after the client connects to the remote computer. If an initial program is not specified, the desktop is always displayed on the remote computer after the client connects to the remote computer.
 
-Note: If this policy setting is enabled, then the "Start a program on connection" policy setting is ignored.
+> [!NOTE]
+> If this policy setting is enabled, then the "Start a program on connection" policy setting is ignored.
 <!-- TS_TURNOFF_SINGLEAPP-Description-End -->
 
 <!-- TS_TURNOFF_SINGLEAPP-Editable-Begin -->
@@ -4378,7 +5364,7 @@ Note: If this policy setting is enabled, then the "Start a program on connection
 
 <!-- TS_TURNOFF_SINGLEAPP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4442,7 +5428,7 @@ If you disable this policy setting, UI Automation clients running on your local 
 
 <!-- TS_UIA-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4504,7 +5490,7 @@ For this change to take effect, you must restart Windows.
 
 <!-- TS_USB_REDIRECTION_DISABLE-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4551,7 +5537,8 @@ If you disable this policy setting, Network Level Authentication is not required
 
 If you do not configure this policy setting, the local setting on the target computer will be enforced. On Windows Server 2012 and Windows 8, Network Level Authentication is enforced by default.
 
-Important: Disabling this policy setting provides less security because user authentication will occur later in the remote connection process.
+> [!IMPORTANT]
+> Disabling this policy setting provides less security because user authentication will occur later in the remote connection process.
 <!-- TS_USER_AUTHENTICATION_POLICY-Description-End -->
 
 <!-- TS_USER_AUTHENTICATION_POLICY-Editable-Begin -->
@@ -4569,7 +5556,7 @@ Important: Disabling this policy setting provides less security because user aut
 
 <!-- TS_USER_AUTHENTICATION_POLICY-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4613,7 +5600,8 @@ To use this setting, select the location for the home directory (network or loca
 
 If you choose to keep the home directory on the local computer, type the Home Dir Root Path in the form "Drive:\Path" (without quotes), without environment variables or ellipses. Do not specify a placeholder for user alias, because Remote Desktop Services automatically appends this at logon.
 
-Note: The Drive Letter field is ignored if you choose to specify a local path. If you choose to specify a local path but then type the name of a network share in Home Dir Root Path, Remote Desktop Services places user home directories in the network location.
+> [!NOTE]
+> The Drive Letter field is ignored if you choose to specify a local path. If you choose to specify a local path but then type the name of a network share in Home Dir Root Path, Remote Desktop Services places user home directories in the network location.
 
 If the status is set to Enabled, Remote Desktop Services creates the user's home directory in the specified location on the local computer or the network. The home directory path for each user is the specified Home Dir Root Path and the user's alias.
 
@@ -4635,7 +5623,7 @@ If the status is set to Disabled or Not Configured, the user's home directory is
 
 <!-- TS_USER_HOME-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4678,7 +5666,7 @@ If you enable this policy setting, Remote Desktop Services uses the path specifi
 
 If you disable or do not configure this policy setting, mandatory user profiles are not used by users connecting remotely to the RD Session Host server.
 
-Note:
+**Note**:
 
 For this policy setting to take effect, you must also enable and configure the "Set path for Remote Desktop Services Roaming User Profile" policy setting.
 <!-- TS_USER_MANDATORY_PROFILES-Description-End -->
@@ -4698,7 +5686,7 @@ For this policy setting to take effect, you must also enable and configure the "
 
 <!-- TS_USER_MANDATORY_PROFILES-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4746,7 +5734,8 @@ To configure this policy setting, type the path to the network share in the form
 
 If you disable or do not configure this policy setting, user profiles are stored locally on the RD Session Host server. You can configure a user's profile path on the Remote Desktop Services Profile tab on the user's account Properties dialog box.
 
-Notes:
+**Note**:
+
 1. The roaming user profiles enabled by the policy setting apply only to Remote Desktop Services connections. A user might also have a Windows roaming user profile configured. The Remote Desktop Services roaming user profile always takes precedence in a Remote Desktop Services session.
 2. To configure a mandatory Remote Desktop Services roaming user profile for all users connecting remotely to the RD Session Host server, use this policy setting together with the "Use mandatory profiles on the RD Session Host server" policy setting located in Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\RD Session Host\Profiles. The path set in the "Set path for Remote Desktop Services Roaming User Profile" policy setting should contain the mandatory profile.
 <!-- TS_USER_PROFILES-Description-End -->
@@ -4766,7 +5755,7 @@ Notes:
 
 <!-- TS_USER_PROFILES-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -4785,955 +5774,6 @@ Notes:
 <!-- TS_USER_PROFILES-Examples-End -->
 
 <!-- TS_USER_PROFILES-End -->
-
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Begin -->
-## TS_CLIENT_ALLOW_SIGNED_FILES_1
-
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Applicability-End -->
-
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_CLIENT_ALLOW_SIGNED_FILES_1
-```
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-OmaUri-End -->
-
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to specify whether users can run Remote Desktop Protocol (.rdp) files from a publisher that signed the file with a valid certificate. A valid certificate is one issued by an authority recognized by the client, such as the issuers in the client's Third-Party Root Certification Authorities certificate store. This policy setting also controls whether the user can start an RDP session by using default .rdp settings (for example, when a user directly opens the Remote Desktop Connection [RDC] client without specifying an .rdp file).
-
-If you enable or do not configure this policy setting, users can run .rdp files that are signed with a valid certificate. Users can also start an RDP session with default .rdp settings by directly opening the RDC client. When a user starts an RDP session, the user is asked to confirm whether they want to connect.
-
-If you disable this policy setting, users cannot run .rdp files that are signed with a valid certificate. Additionally, users cannot start an RDP session by directly opening the RDC client and specifying the remote computer name. When a user tries to start an RDP session, the user receives a message that the publisher has been blocked.
-
-Note: You can define this policy setting in the Computer Configuration node or in the User Configuration node. If you configure this policy setting for the computer, all users on the computer are affected.
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Description-End -->
-
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Editable-End -->
-
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-DFProperties-End -->
-
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_CLIENT_ALLOW_SIGNED_FILES |
-| Friendly Name | Allow .rdp files from valid publishers and user's default .rdp settings |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > Remote Desktop Connection Client |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| Registry Value Name | AllowSignedFiles |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-AdmxBacked-End -->
-
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Examples-End -->
-
-<!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-End -->
-
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Begin -->
-## TS_CLIENT_ALLOW_UNSIGNED_FILES_1
-
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Applicability-End -->
-
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_CLIENT_ALLOW_UNSIGNED_FILES_1
-```
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-OmaUri-End -->
-
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to specify whether users can run unsigned Remote Desktop Protocol (.rdp) files and .rdp files from unknown publishers on the client computer.
-
-If you enable or do not configure this policy setting, users can run unsigned .rdp files and .rdp files from unknown publishers on the client computer. Before a user starts an RDP session, the user receives a warning message and is asked to confirm whether they want to connect.
-
-If you disable this policy setting, users cannot run unsigned .rdp files and .rdp files from unknown publishers on the client computer. If the user tries to start an RDP session, the user receives a message that the publisher has been blocked.
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Description-End -->
-
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Editable-End -->
-
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-DFProperties-End -->
-
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_CLIENT_ALLOW_UNSIGNED_FILES |
-| Friendly Name | Allow .rdp files from unknown publishers |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > Remote Desktop Connection Client |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| Registry Value Name | AllowUnsignedFiles |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-AdmxBacked-End -->
-
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-Examples-End -->
-
-<!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-End -->
-
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Begin -->
-## TS_CLIENT_DISABLE_PASSWORD_SAVING_1
-
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Applicability-End -->
-
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_CLIENT_DISABLE_PASSWORD_SAVING_1
-```
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-OmaUri-End -->
-
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Controls whether a user can save passwords using Remote Desktop Connection.
-
-If you enable this setting the credential saving checkbox in Remote Desktop Connection will be disabled and users will no longer be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves his settings, any password that previously existed in the RDP file will be deleted.
-
-If you disable this setting or leave it not configured, the user will be able to save passwords using Remote Desktop Connection
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Description-End -->
-
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Editable-End -->
-
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-DFProperties-End -->
-
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_CLIENT_DISABLE_PASSWORD_SAVING |
-| Friendly Name | Do not allow passwords to be saved |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > Remote Desktop Connection Client |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| Registry Value Name | DisablePasswordSaving |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-AdmxBacked-End -->
-
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Examples-End -->
-
-<!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-End -->
-
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Begin -->
-## TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2
-
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Applicability-End -->
-
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2
-```
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-OmaUri-End -->
-
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to specify a list of Secure Hash Algorithm 1 (SHA1) certificate thumbprints that represent trusted Remote Desktop Protocol (.rdp) file publishers.
-
-If you enable this policy setting, any certificate with an SHA1 thumbprint that matches a thumbprint on the list is trusted. If a user tries to start an .rdp file that is signed by a trusted certificate, the user does not receive any warning messages when they start the file. To obtain the thumbprint, view the certificate details, and then click the Thumbprint field.
-
-If you disable or do not configure this policy setting, no publisher is treated as a trusted .rdp publisher.
-
-Note:
-
-You can define this policy setting in the Computer Configuration node or in the User Configuration node. If you configure this policy setting for the computer, the list of certificate thumbprints trusted for a user is a combination of the list defined for the computer and the list defined for the user.
-
-This policy setting overrides the behavior of the "Allow .rdp files from valid publishers and user's default .rdp settings" policy setting.
-
-If the list contains a string that is not a certificate thumbprint, it is ignored.
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Description-End -->
-
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Editable-End -->
-
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-DFProperties-End -->
-
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS |
-| Friendly Name | Specify SHA1 thumbprints of certificates representing trusted .rdp publishers |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > Remote Desktop Connection Client |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-AdmxBacked-End -->
-
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-Examples-End -->
-
-<!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-End -->
-
-<!-- TS_EASY_PRINT_User-Begin -->
-## TS_EASY_PRINT_User
-
-<!-- TS_EASY_PRINT_User-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_EASY_PRINT_User-Applicability-End -->
-
-<!-- TS_EASY_PRINT_User-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_EASY_PRINT_User
-```
-<!-- TS_EASY_PRINT_User-OmaUri-End -->
-
-<!-- TS_EASY_PRINT_User-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to specify whether the Remote Desktop Easy Print printer driver is used first to install all client printers.
-
-If you enable or do not configure this policy setting, the RD Session Host server first tries to use the Remote Desktop Easy Print printer driver to install all client printers. If for any reason the Remote Desktop Easy Print printer driver cannot be used, a printer driver on the RD Session Host server that matches the client printer is used. If the RD Session Host server does not have a printer driver that matches the client printer, the client printer is not available for the Remote Desktop session.
-
-If you disable this policy setting, the RD Session Host server tries to find a suitable printer driver to install the client printer. If the RD Session Host server does not have a printer driver that matches the client printer, the server tries to use the Remote Desktop Easy Print driver to install the client printer. If for any reason the Remote Desktop Easy Print printer driver cannot be used, the client printer is not available for the Remote Desktop Services session.
-
-Note: If the "Do not allow client printer redirection" policy setting is enabled, the "Use Remote Desktop Easy Print printer driver first" policy setting is ignored.
-<!-- TS_EASY_PRINT_User-Description-End -->
-
-<!-- TS_EASY_PRINT_User-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_EASY_PRINT_User-Editable-End -->
-
-<!-- TS_EASY_PRINT_User-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_EASY_PRINT_User-DFProperties-End -->
-
-<!-- TS_EASY_PRINT_User-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_EASY_PRINT |
-| Friendly Name | Use Remote Desktop Easy Print printer driver first |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Printer Redirection |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| Registry Value Name | UseUniversalPrinterDriverFirst |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_EASY_PRINT_User-AdmxBacked-End -->
-
-<!-- TS_EASY_PRINT_User-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_EASY_PRINT_User-Examples-End -->
-
-<!-- TS_EASY_PRINT_User-End -->
-
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Begin -->
-## TS_GATEWAY_POLICY_AUTH_METHOD
-
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Applicability-End -->
-
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_GATEWAY_POLICY_AUTH_METHOD
-```
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-OmaUri-End -->
-
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies the authentication method that clients must use when attempting to connect to an RD Session Host server through an RD Gateway server. You can enforce this policy setting or you can allow users to overwrite this policy setting. By default, when you enable this policy setting, it is enforced. When this policy setting is enforced, users cannot override this setting, even if they select the "Use these RD Gateway server settings" option on the client.
-
-To allow users to overwrite this policy setting, select the "Allow users to change this setting" check box. When you do this, users can specify an alternate authentication method by configuring settings on the client, using an RDP file, or using an HTML script. If users do not specify an alternate authentication method, the authentication method that you specify in this policy setting is used by default.
-
-If you disable or do not configure this policy setting, the authentication method that is specified by the user is used, if one is specified. If an authentication method is not specified, the Negotiate protocol that is enabled on the client or a smart card can be used for authentication.
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Description-End -->
-
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Editable-End -->
-
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-DFProperties-End -->
-
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_GATEWAY_POLICY_AUTH_METHOD |
-| Friendly Name | Set RD Gateway authentication method |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > RD Gateway |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-AdmxBacked-End -->
-
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-Examples-End -->
-
-<!-- TS_GATEWAY_POLICY_AUTH_METHOD-End -->
-
-<!-- TS_GATEWAY_POLICY_ENABLE-Begin -->
-## TS_GATEWAY_POLICY_ENABLE
-
-<!-- TS_GATEWAY_POLICY_ENABLE-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_GATEWAY_POLICY_ENABLE-Applicability-End -->
-
-<!-- TS_GATEWAY_POLICY_ENABLE-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_GATEWAY_POLICY_ENABLE
-```
-<!-- TS_GATEWAY_POLICY_ENABLE-OmaUri-End -->
-
-<!-- TS_GATEWAY_POLICY_ENABLE-Description-Begin -->
-<!-- Description-Source-ADMX -->
-If you enable this policy setting, when Remote Desktop Connection cannot connect directly to a remote computer (an RD Session Host server or a computer with Remote Desktop enabled), the clients will attempt to connect to the remote computer through an RD Gateway server. In this case, the clients will attempt to connect to the RD Gateway server that is specified in the "Set RD Gateway server address" policy setting.
-
-You can enforce this policy setting or you can allow users to overwrite this setting. By default, when you enable this policy setting, it is enforced. When this policy setting is enforced, users cannot override this setting, even if they select the "Use these RD Gateway server settings" option on the client.
-
-Note: To enforce this policy setting, you must also specify the address of the RD Gateway server by using the "Set RD Gateway server address" policy setting, or client connection attempts to any remote computer will fail, if the client cannot connect directly to the remote computer. To enhance security, it is also highly recommended that you specify the authentication method by using the "Set RD Gateway authentication method" policy setting. If you do not specify an authentication method by using this policy setting, either the NTLM protocol that is enabled on the client or a smart card can be used.
-
-To allow users to overwrite this policy setting, select the "Allow users to change this setting" check box. When you do this, users on the client can choose not to connect through the RD Gateway server by selecting the "Do not use an RD Gateway server" option. Users can specify a connection method by configuring settings on the client, using an RDP file, or using an HTML script. If users do not specify a connection method, the connection method that you specify in this policy setting is used by default.
-
-If you disable or do not configure this policy setting, clients will not use the RD Gateway server address that is specified in the "Set RD Gateway server address" policy setting. If an RD Gateway server is specified by the user, a client connection attempt will be made through that RD Gateway server.
-<!-- TS_GATEWAY_POLICY_ENABLE-Description-End -->
-
-<!-- TS_GATEWAY_POLICY_ENABLE-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_GATEWAY_POLICY_ENABLE-Editable-End -->
-
-<!-- TS_GATEWAY_POLICY_ENABLE-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_GATEWAY_POLICY_ENABLE-DFProperties-End -->
-
-<!-- TS_GATEWAY_POLICY_ENABLE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_GATEWAY_POLICY_ENABLE |
-| Friendly Name | Enable connection through RD Gateway |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > RD Gateway |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| Registry Value Name | UseProxy |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_GATEWAY_POLICY_ENABLE-AdmxBacked-End -->
-
-<!-- TS_GATEWAY_POLICY_ENABLE-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_GATEWAY_POLICY_ENABLE-Examples-End -->
-
-<!-- TS_GATEWAY_POLICY_ENABLE-End -->
-
-<!-- TS_GATEWAY_POLICY_SERVER-Begin -->
-## TS_GATEWAY_POLICY_SERVER
-
-<!-- TS_GATEWAY_POLICY_SERVER-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_GATEWAY_POLICY_SERVER-Applicability-End -->
-
-<!-- TS_GATEWAY_POLICY_SERVER-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_GATEWAY_POLICY_SERVER
-```
-<!-- TS_GATEWAY_POLICY_SERVER-OmaUri-End -->
-
-<!-- TS_GATEWAY_POLICY_SERVER-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies the address of the RD Gateway server that clients must use when attempting to connect to an RD Session Host server. You can enforce this policy setting or you can allow users to overwrite this policy setting. By default, when you enable this policy setting, it is enforced. When this policy setting is enforced, users cannot override this setting, even if they select the "Use these RD Gateway server settings" option on the client.
-
-Note: It is highly recommended that you also specify the authentication method by using the "Set RD Gateway authentication method" policy setting. If you do not specify an authentication method by using this setting, either the NTLM protocol that is enabled on the client or a smart card can be used.
-
-To allow users to overwrite the "Set RD Gateway server address" policy setting and connect to another RD Gateway server, you must select the "Allow users to change this setting" check box and users will be allowed to specify an alternate RD Gateway server. Users can specify an alternative RD Gateway server by configuring settings on the client, using an RDP file, or using an HTML script. If users do not specify an alternate RD Gateway server, the server that you specify in this policy setting is used by default.
-
-Note: If you disable or do not configure this policy setting, but enable the "Enable connections through RD Gateway" policy setting, client connection attempts to any remote computer will fail, if the client cannot connect directly to the remote computer. If an RD Gateway server is specified by the user, a client connection attempt will be made through that RD Gateway server.
-<!-- TS_GATEWAY_POLICY_SERVER-Description-End -->
-
-<!-- TS_GATEWAY_POLICY_SERVER-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_GATEWAY_POLICY_SERVER-Editable-End -->
-
-<!-- TS_GATEWAY_POLICY_SERVER-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_GATEWAY_POLICY_SERVER-DFProperties-End -->
-
-<!-- TS_GATEWAY_POLICY_SERVER-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_GATEWAY_POLICY_SERVER |
-| Friendly Name | Set RD Gateway server address |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > RD Gateway |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_GATEWAY_POLICY_SERVER-AdmxBacked-End -->
-
-<!-- TS_GATEWAY_POLICY_SERVER-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_GATEWAY_POLICY_SERVER-Examples-End -->
-
-<!-- TS_GATEWAY_POLICY_SERVER-End -->
-
-<!-- TS_RADC_DefaultConnection-Begin -->
-## TS_RADC_DefaultConnection
-
-<!-- TS_RADC_DefaultConnection-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_RADC_DefaultConnection-Applicability-End -->
-
-<!-- TS_RADC_DefaultConnection-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_RADC_DefaultConnection
-```
-<!-- TS_RADC_DefaultConnection-OmaUri-End -->
-
-<!-- TS_RADC_DefaultConnection-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting specifies the default connection URL for RemoteApp and Desktop Connections. The default connection URL is a specific connection that can only be configured by using Group Policy. In addition to the capabilities that are common to all connections, the default connection URL allows document file types to be associated with RemoteApp programs.
-
-The default connection URL must be configured in the form of <https://contoso.com/rdweb/Feed/webfeed.aspx>.
-
-If you enable this policy setting, the specified URL is configured as the default connection URL for the user and replaces any existing connection URL. The user cannot change the default connection URL. The user's default logon credentials are used when setting up the default connection URL.
-
-If you disable or do not configure this policy setting, the user has no default connection URL.
-
-Note: RemoteApp programs that are installed through RemoteApp and Desktop Connections from an untrusted server can compromise the security of a user's account.
-<!-- TS_RADC_DefaultConnection-Description-End -->
-
-<!-- TS_RADC_DefaultConnection-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_RADC_DefaultConnection-Editable-End -->
-
-<!-- TS_RADC_DefaultConnection-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_RADC_DefaultConnection-DFProperties-End -->
-
-<!-- TS_RADC_DefaultConnection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_RADC_DefaultDesktop |
-| Friendly Name | Specify default connection URL |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > RemoteApp and Desktop Connections |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Workspaces |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_RADC_DefaultConnection-AdmxBacked-End -->
-
-<!-- TS_RADC_DefaultConnection-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_RADC_DefaultConnection-Examples-End -->
-
-<!-- TS_RADC_DefaultConnection-End -->
-
-<!-- TS_RemoteControl_1-Begin -->
-## TS_RemoteControl_1
-
-<!-- TS_RemoteControl_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_RemoteControl_1-Applicability-End -->
-
-<!-- TS_RemoteControl_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_RemoteControl_1
-```
-<!-- TS_RemoteControl_1-OmaUri-End -->
-
-<!-- TS_RemoteControl_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-If you enable this policy setting, administrators can interact with a user's Remote Desktop Services session based on the option selected. Select the desired level of control and permission from the options list:
-
-1. No remote control allowed: Disallows an administrator to use remote control or view a remote user session.
-2. Full Control with user's permission: Allows the administrator to interact with the session, with the user's consent.
-3. Full Control without user's permission: Allows the administrator to interact with the session, without the user's consent.
-4. View Session with user's permission: Allows the administrator to watch the session of a remote user with the user's consent.
-5. View Session without user's permission: Allows the administrator to watch the session of a remote user without the user's consent.
-
-If you disable this policy setting, administrators can interact with a user's Remote Desktop Services session, with the user's consent.
-<!-- TS_RemoteControl_1-Description-End -->
-
-<!-- TS_RemoteControl_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_RemoteControl_1-Editable-End -->
-
-<!-- TS_RemoteControl_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_RemoteControl_1-DFProperties-End -->
-
-<!-- TS_RemoteControl_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_RemoteControl |
-| Friendly Name | Set rules for remote control of Remote Desktop Services user sessions |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Connections |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_RemoteControl_1-AdmxBacked-End -->
-
-<!-- TS_RemoteControl_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_RemoteControl_1-Examples-End -->
-
-<!-- TS_RemoteControl_1-End -->
-
-<!-- TS_Session_End_On_Limit_1-Begin -->
-## TS_Session_End_On_Limit_1
-
-<!-- TS_Session_End_On_Limit_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_Session_End_On_Limit_1-Applicability-End -->
-
-<!-- TS_Session_End_On_Limit_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_Session_End_On_Limit_1
-```
-<!-- TS_Session_End_On_Limit_1-OmaUri-End -->
-
-<!-- TS_Session_End_On_Limit_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting specifies whether to end a Remote Desktop Services session that has timed out instead of disconnecting it.
-
-You can use this setting to direct Remote Desktop Services to end a session (that is, the user is logged off and the session is deleted from the server) after time limits for active or idle sessions are reached. By default, Remote Desktop Services disconnects sessions that reach their time limits.
-
-Time limits are set locally by the server administrator or by using Group Policy. See the policy settings Set time limit for active Remote Desktop Services sessions and Set time limit for active but idle Remote Desktop Services sessions policy settings.
-
-If you enable this policy setting, Remote Desktop Services ends any session that reaches its time-out limit.
-
-If you disable this policy setting, Remote Desktop Services always disconnects a timed-out session, even if specified otherwise by the server administrator.
-
-If you do not configure this policy setting, Remote Desktop Services disconnects a timed-out session, unless specified otherwise in local settings.
-
-Note: This policy setting only applies to time-out limits that are explicitly set by the administrator. This policy setting does not apply to time-out events that occur due to connectivity or network conditions. This setting appears in both Computer Configuration and User Configuration. If both settings are configured, the Computer Configuration setting takes precedence.
-<!-- TS_Session_End_On_Limit_1-Description-End -->
-
-<!-- TS_Session_End_On_Limit_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_Session_End_On_Limit_1-Editable-End -->
-
-<!-- TS_Session_End_On_Limit_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_Session_End_On_Limit_1-DFProperties-End -->
-
-<!-- TS_Session_End_On_Limit_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_Session_End_On_Limit |
-| Friendly Name | End session when time limits are reached |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Session Time Limits |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| Registry Value Name | fResetBroken |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_Session_End_On_Limit_1-AdmxBacked-End -->
-
-<!-- TS_Session_End_On_Limit_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_Session_End_On_Limit_1-Examples-End -->
-
-<!-- TS_Session_End_On_Limit_1-End -->
-
-<!-- TS_SESSIONS_Disconnected_Timeout_1-Begin -->
-## TS_SESSIONS_Disconnected_Timeout_1
-
-<!-- TS_SESSIONS_Disconnected_Timeout_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_SESSIONS_Disconnected_Timeout_1-Applicability-End -->
-
-<!-- TS_SESSIONS_Disconnected_Timeout_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_SESSIONS_Disconnected_Timeout_1
-```
-<!-- TS_SESSIONS_Disconnected_Timeout_1-OmaUri-End -->
-
-<!-- TS_SESSIONS_Disconnected_Timeout_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to configure a time limit for disconnected Remote Desktop Services sessions.
-
-You can use this policy setting to specify the maximum amount of time that a disconnected session remains active on the server. By default, Remote Desktop Services allows users to disconnect from a Remote Desktop Services session without logging off and ending the session.
-
-When a session is in a disconnected state, running programs are kept active even though the user is no longer actively connected. By default, these disconnected sessions are maintained for an unlimited time on the server.
-
-If you enable this policy setting, disconnected sessions are deleted from the server after the specified amount of time. To enforce the default behavior that disconnected sessions are maintained for an unlimited time, select Never. If you have a console session, disconnected session time limits do not apply.
-
-
-If you disable or do not configure this policy setting, this policy setting is not specified at the Group Policy level. Be y default, Remote Desktop Services disconnected sessions are maintained for an unlimited amount of time.
-
-Note: This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the Computer Configuration policy setting takes precedence.
-<!-- TS_SESSIONS_Disconnected_Timeout_1-Description-End -->
-
-<!-- TS_SESSIONS_Disconnected_Timeout_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_SESSIONS_Disconnected_Timeout_1-Editable-End -->
-
-<!-- TS_SESSIONS_Disconnected_Timeout_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_SESSIONS_Disconnected_Timeout_1-DFProperties-End -->
-
-<!-- TS_SESSIONS_Disconnected_Timeout_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_SESSIONS_Disconnected_Timeout |
-| Friendly Name | Set time limit for disconnected sessions |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Session Time Limits |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_SESSIONS_Disconnected_Timeout_1-AdmxBacked-End -->
-
-<!-- TS_SESSIONS_Disconnected_Timeout_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_SESSIONS_Disconnected_Timeout_1-Examples-End -->
-
-<!-- TS_SESSIONS_Disconnected_Timeout_1-End -->
-
-<!-- TS_SESSIONS_Idle_Limit_1-Begin -->
-## TS_SESSIONS_Idle_Limit_1
-
-<!-- TS_SESSIONS_Idle_Limit_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_SESSIONS_Idle_Limit_1-Applicability-End -->
-
-<!-- TS_SESSIONS_Idle_Limit_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_SESSIONS_Idle_Limit_1
-```
-<!-- TS_SESSIONS_Idle_Limit_1-OmaUri-End -->
-
-<!-- TS_SESSIONS_Idle_Limit_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to specify the maximum amount of time that an active Remote Desktop Services session can be idle (without user input) before it is automatically disconnected.
-
-If you enable this policy setting, you must select the desired time limit in the Idle session limit list. Remote Desktop Services will automatically disconnect active but idle sessions after the specified amount of time. The user receives a warning two minutes before the session disconnects, which allows the user to press a key or move the mouse to keep the session active. If you have a console session, idle session time limits do not apply.
-
-If you disable or do not configure this policy setting, the time limit is not specified at the Group Policy level. By default, Remote Desktop Services allows sessions to remain active but idle for an unlimited amount of time.
-
-If you want Remote Desktop Services to end instead of disconnect a session when the time limit is reached, you can configure the policy setting Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits\End session when time limits are reached.
-
-Note: This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the Computer Configuration policy setting takes precedence.
-<!-- TS_SESSIONS_Idle_Limit_1-Description-End -->
-
-<!-- TS_SESSIONS_Idle_Limit_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_SESSIONS_Idle_Limit_1-Editable-End -->
-
-<!-- TS_SESSIONS_Idle_Limit_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_SESSIONS_Idle_Limit_1-DFProperties-End -->
-
-<!-- TS_SESSIONS_Idle_Limit_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_SESSIONS_Idle_Limit |
-| Friendly Name | Set time limit for active but idle Remote Desktop Services sessions |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Session Time Limits |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_SESSIONS_Idle_Limit_1-AdmxBacked-End -->
-
-<!-- TS_SESSIONS_Idle_Limit_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_SESSIONS_Idle_Limit_1-Examples-End -->
-
-<!-- TS_SESSIONS_Idle_Limit_1-End -->
-
-<!-- TS_SESSIONS_Limits_1-Begin -->
-## TS_SESSIONS_Limits_1
-
-<!-- TS_SESSIONS_Limits_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_SESSIONS_Limits_1-Applicability-End -->
-
-<!-- TS_SESSIONS_Limits_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_SESSIONS_Limits_1
-```
-<!-- TS_SESSIONS_Limits_1-OmaUri-End -->
-
-<!-- TS_SESSIONS_Limits_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to specify the maximum amount of time that a Remote Desktop Services session can be active before it is automatically disconnected.
-
-If you enable this policy setting, you must select the desired time limit in the Active session limit list. Remote Desktop Services will automatically disconnect active sessions after the specified amount of time. The user receives a warning two minutes before the Remote Desktop Services session disconnects, which allows the user to save open files and close programs. If you have a console session, active session time limits do not apply.
-
-If you disable or do not configure this policy setting, this policy setting is not specified at the Group Policy level. By default, Remote Desktop Services allows sessions to remain active for an unlimited amount of time.
-
-If you want Remote Desktop Services to end instead of disconnect a session when the time limit is reached, you can configure the policy setting Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits\End session when time limits are reached.
-
-Note: This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the Computer Configuration policy setting takes precedence.
-<!-- TS_SESSIONS_Limits_1-Description-End -->
-
-<!-- TS_SESSIONS_Limits_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_SESSIONS_Limits_1-Editable-End -->
-
-<!-- TS_SESSIONS_Limits_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_SESSIONS_Limits_1-DFProperties-End -->
-
-<!-- TS_SESSIONS_Limits_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_SESSIONS_Limits |
-| Friendly Name | Set time limit for active Remote Desktop Services sessions |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Session Time Limits |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_SESSIONS_Limits_1-AdmxBacked-End -->
-
-<!-- TS_SESSIONS_Limits_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_SESSIONS_Limits_1-Examples-End -->
-
-<!-- TS_SESSIONS_Limits_1-End -->
-
-<!-- TS_START_PROGRAM_1-Begin -->
-## TS_START_PROGRAM_1
-
-<!-- TS_START_PROGRAM_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- TS_START_PROGRAM_1-Applicability-End -->
-
-<!-- TS_START_PROGRAM_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_START_PROGRAM_1
-```
-<!-- TS_START_PROGRAM_1-OmaUri-End -->
-
-<!-- TS_START_PROGRAM_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Configures Remote Desktop Services to run a specified program automatically upon connection.
-
-You can use this setting to specify a program to run automatically when a user logs on to a remote computer.
-
-By default, Remote Desktop Services sessions provide access to the full Windows desktop, unless otherwise specified with this setting, by the server administrator, or by the user in configuring the client connection. Enabling this setting overrides the "Start Program" settings set by the server administrator or user. The Start menu and Windows Desktop are not displayed, and when the user exits the program the session is automatically logged off.
-
-To use this setting, in Program path and file name, type the fully qualified path and file name of the executable file to be run when the user logs on. If necessary, in Working Directory, type the fully qualified path to the starting directory for the program. If you leave Working Directory blank, the program runs with its default working directory. If the specified program path, file name, or working directory is not the name of a valid directory, the RD Session Host server connection fails with an error message.
-
-If the status is set to Enabled, Remote Desktop Services sessions automatically run the specified program and use the specified Working Directory (or the program default directory, if Working Directory is not specified) as the working directory for the program.
-
-If the status is set to Disabled or Not Configured, Remote Desktop Services sessions start with the full desktop, unless the server administrator or user specify otherwise. (See "Computer Configuration\Administrative Templates\System\Logon\Run these programs at user logon" setting.)
-
-Note: This setting appears in both Computer Configuration and User Configuration. If both settings are configured, the Computer Configuration setting overrides.
-<!-- TS_START_PROGRAM_1-Description-End -->
-
-<!-- TS_START_PROGRAM_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- TS_START_PROGRAM_1-Editable-End -->
-
-<!-- TS_START_PROGRAM_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- TS_START_PROGRAM_1-DFProperties-End -->
-
-<!-- TS_START_PROGRAM_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | TS_START_PROGRAM |
-| Friendly Name | Start a program on connection |
-| Location | User Configuration |
-| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Remote Session Environment |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
-| Registry Value Name | fInheritInitialProgram |
-| ADMX File Name | TerminalServer.admx |
-<!-- TS_START_PROGRAM_1-AdmxBacked-End -->
-
-<!-- TS_START_PROGRAM_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- TS_START_PROGRAM_1-Examples-End -->
-
-<!-- TS_START_PROGRAM_1-End -->
 
 <!-- ADMX_TerminalServer-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

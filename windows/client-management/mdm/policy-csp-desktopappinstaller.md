@@ -4,7 +4,7 @@ description: Learn more about the DesktopAppInstaller Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/29/2022
+ms.date: 01/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - DesktopAppInstaller
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,11 +44,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy controls additional sources provided by the enterprise IT administrator.
 
-If you do not configure this policy, no additional sources will be configured for the Windows Package Manager.
+If you do not configure this policy, no additional sources will be configured for the [Windows Package Manager](/windows/package-manager/).
 
-If you enable this policy, the additional sources will be added to the Windows Package Manager and cannot be removed. The representation for each additional source can be obtained from installed sources using 'winget source export'.
+If you enable this policy, the additional sources will be added to the [Windows Package Manager](/windows/package-manager/) and cannot be removed. The representation for each additional source can be obtained from installed sources using '[winget source export](/windows/package-manager/winget)'.
 
-If you disable this policy, no additional sources can be configured for the Windows Package Manager.
+If you disable this policy, no additional sources can be configured for the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableAdditionalSources-Description-End -->
 
 <!-- EnableAdditionalSources-Editable-Begin -->
@@ -68,7 +66,7 @@ If you disable this policy, no additional sources can be configured for the Wind
 
 <!-- EnableAdditionalSources-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -110,9 +108,9 @@ This policy controls additional sources allowed by the enterprise IT administrat
 
 If you do not configure this policy, users will be able to add or remove additional sources other than those configured by policy.
 
-If you enable this policy, only the sources specified can be added or removed from the Windows Package Manager. The representation for each allowed source can be obtained from installed sources using 'winget source export'.
+If you enable this policy, only the sources specified can be added or removed from the [Windows Package Manager](/windows/package-manager/). The representation for each allowed source can be obtained from installed sources using '[winget source export](/windows/package-manager/winget)'.
 
-If you disable this policy, no additional sources can be configured for the Windows Package Manager.
+If you disable this policy, no additional sources can be configured for the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableAllowedSources-Description-End -->
 
 <!-- EnableAllowedSources-Editable-Begin -->
@@ -130,7 +128,7 @@ If you disable this policy, no additional sources can be configured for the Wind
 
 <!-- EnableAllowedSources-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -168,11 +166,11 @@ If you disable this policy, no additional sources can be configured for the Wind
 
 <!-- EnableAppInstaller-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy controls whether the Windows Package Manager can be used by users.
+This policy controls whether the [Windows Package Manager](/windows/package-manager/) can be used by users.
 
-If you enable or do not configure this setting, users will be able to use the Windows Package Manager.
+If you enable or do not configure this setting, users will be able to use the [Windows Package Manager](/windows/package-manager/).
 
-If you disable this setting, users will not be able to use the Windows Package Manager.
+If you disable this setting, users will not be able to use the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableAppInstaller-Description-End -->
 
 <!-- EnableAppInstaller-Editable-Begin -->
@@ -191,7 +189,7 @@ Users will still be able to execute the *winget* command. The default help will 
 
 <!-- EnableAppInstaller-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -229,13 +227,13 @@ Users will still be able to execute the *winget* command. The default help will 
 
 <!-- EnableDefaultSource-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy controls the default source included with the Windows Package Manager.
+This policy controls the default source included with the [Windows Package Manager](/windows/package-manager/).
 
-If you do not configure this setting, the default source for the Windows Package Manager will be available and can be removed.
+If you do not configure this setting, the default source for the [Windows Package Manager](/windows/package-manager/) will be available and can be removed.
 
-If you enable this setting, the default source for the Windows Package Manager will be available and cannot be removed.
+If you enable this setting, the default source for the [Windows Package Manager](/windows/package-manager/) will be available and cannot be removed.
 
-If you disable this setting the default source for the Windows Package Manager will not be available.
+If you disable this setting the default source for the [Windows Package Manager](/windows/package-manager/) will not be available.
 <!-- EnableDefaultSource-Description-End -->
 
 <!-- EnableDefaultSource-Editable-Begin -->
@@ -253,7 +251,7 @@ If you disable this setting the default source for the Windows Package Manager w
 
 <!-- EnableDefaultSource-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -291,11 +289,11 @@ If you disable this setting the default source for the Windows Package Manager w
 
 <!-- EnableExperimentalFeatures-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy controls whether users can enable experimental features in the Windows Package Manager.
+This policy controls whether users can enable experimental features in the [Windows Package Manager](/windows/package-manager/).
 
-If you enable or do not configure this setting, users will be able to enable experimental features for the Windows Package Manager.
+If you enable or do not configure this setting, users will be able to enable experimental features for the [Windows Package Manager](/windows/package-manager/).
 
-If you disable this setting, users will not be able to enable experimental features for the Windows Package Manager.
+If you disable this setting, users will not be able to enable experimental features for the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableExperimentalFeatures-Description-End -->
 
 <!-- EnableExperimentalFeatures-Editable-Begin -->
@@ -314,7 +312,7 @@ Experimental features are used during Windows Package Manager development cycle 
 
 <!-- EnableExperimentalFeatures-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -352,11 +350,11 @@ Experimental features are used during Windows Package Manager development cycle 
 
 <!-- EnableHashOverride-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy controls whether or not the Windows Package Manager can be configured to enable the ability override the SHA256 security validation in settings.
+This policy controls whether or not the [Windows Package Manager](/windows/package-manager/) can be configured to enable the ability override the SHA256 security validation in settings.
 
-If you enable or do not configure this policy, users will be able to enable the ability override the SHA256 security validation in the Windows Package Manager settings.
+If you enable or do not configure this policy, users will be able to enable the ability override the SHA256 security validation in the [Windows Package Manager](/windows/package-manager/) settings.
 
-If you disable this policy, users will not be able to enable the ability override the SHA256 security validation in the Windows Package Manager settings.
+If you disable this policy, users will not be able to enable the ability override the SHA256 security validation in the [Windows Package Manager](/windows/package-manager/) settings.
 <!-- EnableHashOverride-Description-End -->
 
 <!-- EnableHashOverride-Editable-Begin -->
@@ -374,7 +372,7 @@ If you disable this policy, users will not be able to enable the ability overrid
 
 <!-- EnableHashOverride-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -414,9 +412,9 @@ If you disable this policy, users will not be able to enable the ability overrid
 <!-- Description-Source-ADMX -->
 This policy controls whether users can install packages with local manifest files.
 
-If you enable or do not configure this setting, users will be able to install packages with local manifests using the Windows Package Manager.
+If you enable or do not configure this setting, users will be able to install packages with local manifests using the [Windows Package Manager](/windows/package-manager/).
 
-If you disable this setting, users will not be able to install packages with local manifests using the Windows Package Manager.
+If you disable this setting, users will not be able to install packages with local manifests using the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableLocalManifestFiles-Description-End -->
 
 <!-- EnableLocalManifestFiles-Editable-Begin -->
@@ -434,7 +432,7 @@ If you disable this setting, users will not be able to install packages with loc
 
 <!-- EnableLocalManifestFiles-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -472,13 +470,13 @@ If you disable this setting, users will not be able to install packages with loc
 
 <!-- EnableMicrosoftStoreSource-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy controls the Microsoft Store source included with the Windows Package Manager.
+This policy controls the Microsoft Store source included with the [Windows Package Manager](/windows/package-manager/).
 
 If you do not configure this setting, the Microsoft Store source for the Windows Package manager will be available and can be removed.
 
-If you enable this setting, the Microsoft Store source for the Windows Package Manager will be available and cannot be removed.
+If you enable this setting, the Microsoft Store source for the [Windows Package Manager](/windows/package-manager/) will be available and cannot be removed.
 
-If you disable this setting the Microsoft Store source for the Windows Package Manager will not be available.
+If you disable this setting the Microsoft Store source for the [Windows Package Manager](/windows/package-manager/) will not be available.
 <!-- EnableMicrosoftStoreSource-Description-End -->
 
 <!-- EnableMicrosoftStoreSource-Editable-Begin -->
@@ -496,7 +494,7 @@ If you disable this setting the Microsoft Store source for the Windows Package M
 
 <!-- EnableMicrosoftStoreSource-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -556,7 +554,7 @@ If you disable this setting, users will not be able to install packages from web
 
 <!-- EnableMSAppInstallerProtocol-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -596,9 +594,9 @@ If you disable this setting, users will not be able to install packages from web
 <!-- Description-Source-ADMX -->
 This policy controls whether users can change their settings.
 
-If you enable or do not configure this setting, users will be able to change settings for the Windows Package Manager.
+If you enable or do not configure this setting, users will be able to change settings for the [Windows Package Manager](/windows/package-manager/).
 
-If you disable this setting, users will not be able to change settings for the Windows Package Manager.
+If you disable this setting, users will not be able to change settings for the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableSettings-Description-End -->
 
 <!-- EnableSettings-Editable-Begin -->
@@ -617,7 +615,7 @@ The settings are stored inside of a .json file on the user’s system. It may be
 
 <!-- EnableSettings-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -657,13 +655,14 @@ The settings are stored inside of a .json file on the user’s system. It may be
 <!-- Description-Source-ADMX -->
 This policy controls the auto update interval for package-based sources.
 
-If you disable or do not configure this setting, the default interval or the value specified in settings will be used by the Windows Package Manager.
+If you disable or do not configure this setting, the default interval or the value specified in settings will be used by the [Windows Package Manager](/windows/package-manager/).
 
-If you enable this setting, the number of minutes specified will be used by the Windows Package Manager.
+If you enable this setting, the number of minutes specified will be used by the [Windows Package Manager](/windows/package-manager/).
 <!-- SourceAutoUpdateInterval-Description-End -->
 
 <!-- SourceAutoUpdateInterval-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The default source for Windows Package Manager is configured such that an index of the packages is cached on the local machine. The index is downloaded when a user invokes a command, and the interval has passed (the index is not updated in the background). This setting has no impact on REST-based sources.
 <!-- SourceAutoUpdateInterval-Editable-End -->
 
 <!-- SourceAutoUpdateInterval-DFProperties-Begin -->
@@ -677,7 +676,7 @@ If you enable this setting, the number of minutes specified will be used by the 
 
 <!-- SourceAutoUpdateInterval-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

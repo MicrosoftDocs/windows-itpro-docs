@@ -4,7 +4,7 @@ description: Learn more about the Browser Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/24/2022
+ms.date: 01/04/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -18,6 +18,8 @@ ms.topic: reference
 
 <!-- Browser-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> These settings are for the previous version of Microsoft Edge (version 45 and earlier) and are deprecated. These settings will be removed in a future Windows release. Microsoft recommends updating your version of Microsoft Edge to version 77 or later and use the ADMX Ingestion function for management. Learn more about how to [Configure Microsoft Edge using Mobile Device Management](/deployedge/configure-edge-with-mdm).
 <!-- Browser-Editable-End -->
 
 <!-- AllowAddressBarDropdown-Begin -->
@@ -43,7 +45,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.
 
-Note: Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.
+**Note**: Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.
 
 If you enable or don't configure this setting, employees can see the Address bar drop-down functionality in Microsoft Edge.
 
@@ -165,10 +167,10 @@ If you don't configure this setting, employees can choose whether to use Autofil
 **Verify**:
 To verify AllowAutofill is set to 0 (not allowed):
 
-1.  Open Microsoft Edge.
-2.  In the upper-right corner of the browser, click **…**.
-3.  Click **Settings** in the dropdown list, and select **View Advanced Settings**.
-4.  Verify the setting **Save form entries** is grayed out.
+1. Open Microsoft Edge.
+2. In the upper-right corner of the browser, click **…**.
+3. Click **Settings** in the dropdown list, and select **View Advanced Settings**.
+4. Verify the setting **Save form entries** is grayed out.
 <!-- AllowAutofill-Examples-End -->
 
 <!-- AllowAutofill-End -->
@@ -1323,7 +1325,7 @@ If disabled, the browsing history stops saving and is not visible in the History
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether users can change their search engine. If you disable this setting, users can't add new search engines or change the default used in the address bar.
 
-Important
+**Important**:
 This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
 
 If you enable or don't configure this policy, users can add new search engines and change the default used in the address bar from within Microsoft Edge Settings.
@@ -2118,7 +2120,7 @@ The Home button loads either the default Start page, the New tab page, or a URL 
 
 <!-- ConfigureKioskMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-Configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access, either as a single app or as one of multiple apps running on the kiosk device. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge. You need to configure Microsoft Edge in assigned access for this policy to take effect; otherwise, these settings are ignored. To learn more about assigned access and kiosk configuration, see “Configure kiosk and shared devices running Windows desktop editions” (<https://aka.ms/E489vw)>. If enabled and set to 0 (Default or not configured): - If it’s a single app, it runs InPrivate full screen for digital signage or interactive displays. - If it’s one of many apps, Microsoft Edge runs as normal. If enabled and set to 1: - If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. - If it’s one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can’t customize Microsoft Edge.
+Configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access, either as a single app or as one of multiple apps running on the kiosk device. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge. You need to configure Microsoft Edge in assigned access for this policy to take effect; otherwise, these settings are ignored. To learn more about assigned access and kiosk configuration, see “Configure kiosk and shared devices running Windows desktop editions” (<https://aka.ms/E489. vw)>. If enabled and set to 0 (Default or not configured): - If it’s a single app, it runs InPrivate full screen for digital signage or interactive displays. - If it’s one of many apps, Microsoft Edge runs as normal. If enabled and set to 1: - If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. - If it’s one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can’t customize Microsoft Edge.
 <!-- ConfigureKioskMode-Description-End -->
 
 <!-- ConfigureKioskMode-Editable-Begin -->
@@ -2586,7 +2588,7 @@ This setting lets you configure whether your company uses Enterprise Mode and th
 
 <!-- EnterpriseSiteListServiceUrl-Description-Begin -->
 <!-- Description-Source-DDF -->
-Important. Discontinued in Windows 10, version 1511. Use the Browser/EnterpriseModeSiteList policy instead.
+**Important**: . Discontinued in Windows 10, version 1511. Use the Browser/EnterpriseModeSiteList policy instead.
 <!-- EnterpriseSiteListServiceUrl-Description-End -->
 
 <!-- EnterpriseSiteListServiceUrl-Editable-Begin -->
@@ -2673,7 +2675,7 @@ Configure first run URL.
 
 <!-- HomePages-Description-Begin -->
 <!-- Description-Source-DDF -->
-When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users are not allowed to make changes to their Start pages. If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format: `<support.contoso.com>` `<support.microsoft.com>` If disabled or not configured, the webpages specified in App settings loads as the default Start pages. Version 1703 or later: If you do not want to send traffic to Microsoft, enable this policy and use the `<about:blank>` value, which honors domain- and non-domain-joined devices, when it is the only configured URL. Version 1809: If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy. Supported devices: Domain-joined or MDM-enrolled Related policy: - Configure Open Microsoft Edge With - Disable Lockdown of Start Pages
+When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users are not allowed to make changes to their Start pages. If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:  `<support.contoso.com>` `<support.microsoft.com>` If disabled or not configured, the webpages specified in App settings loads as the default Start pages. Version 1703 or later: If you do not want to send traffic to Microsoft, enable this policy and use the `<about:blank>` value, which honors domain- and non-domain-joined devices, when it is the only configured URL. Version 1809: If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy. Supported devices: Domain-joined or MDM-enrolled Related policy: - Configure Open Microsoft Edge With - Disable Lockdown of Start Pages
 <!-- HomePages-Description-End -->
 
 <!-- HomePages-Editable-Begin -->
@@ -2734,7 +2736,7 @@ This policy setting lets you decide whether employees can add, import, sort, or 
 
 If you enable this setting, employees won't be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
 
-Important
+**Important**:
 Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
 
 If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.
@@ -3230,7 +3232,7 @@ If you disable or don't configure this setting, employees can ignore Windows Def
 
 <!-- PreventTurningOffRequiredExtensions-Description-Begin -->
 <!-- Description-Source-DDF -->
-You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically. When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs). For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe prevents a user from turning off the OneNote Web Clipper and Office Online extension. When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension. If disabled or not configured, extensions defined as part of this policy get ignored. Default setting: Disabled or not configured Related policies: Allow Developer Tools Related Documents: - Find a package family name (PFN) for per-app VPN (<https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)> - How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (<https://docs.microsoft.com/intune/windows-store-for-business)> - How to assign apps to groups with Microsoft Intune (<https://docs.microsoft.com/intune/apps-deploy)> - Manage apps from the Microsoft Store for Business with System Center Configuration Manager (<https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)> - How to add Windows line-of-business (LOB) apps to Microsoft Intune (<https://docs.microsoft.com/intune/lob-apps-windows)>
+You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically. When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs). For example, adding Microsoft.OneNoteWebClipper_8. wekyb3. d8. bbwe;Microsoft.OfficeOnline_8. wekyb3. d8. bbwe prevents a user from turning off the OneNote Web Clipper and Office Online extension. When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension. If disabled or not configured, extensions defined as part of this policy get ignored. Default setting: Disabled or not configured Related policies: Allow Developer Tools Related Documents: - Find a package family name (PFN) for per-app VPN (<https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)> - How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (<https://docs.microsoft.com/intune/windows-store-for-business)> - How to assign apps to groups with Microsoft Intune (<https://docs.microsoft.com/intune/apps-deploy)> - Manage apps from the Microsoft Store for Business with System Center Configuration Manager (<https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)> - How to add Windows line-of-business (LOB) apps to Microsoft Intune (<https://docs.microsoft.com/intune/lob-apps-windows)>
 <!-- PreventTurningOffRequiredExtensions-Description-End -->
 
 <!-- PreventTurningOffRequiredExtensions-Editable-Begin -->

@@ -4,7 +4,7 @@ description: Learn more about the DeviceLock Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/29/2022
+ms.date: 01/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,15 +17,13 @@ ms.topic: reference
 # Policy CSP - DeviceLock
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!-- DeviceLock-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-[!Important]
+> [!IMPORTANT]
 > The DeviceLock CSP utilizes the [Exchange ActiveSync Policy Engine](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)). When password length and complexity rules are applied, all the local user and administrator accounts are marked to change their password at the next sign in to ensure complexity requirements are met. For more information, see [Password length and complexity supported by account types](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)#password-length-and-complexity-supported-by-account-types).
 
 <!-- DeviceLock-Editable-End -->
@@ -156,10 +154,10 @@ Specifies whether PINs or passwords such as 1111 or 1234 are allowed. For the de
 
 <!-- AllowSimpleDevicePassword-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
+
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
-
-For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 <!-- AllowSimpleDevicePassword-Editable-End -->
 
 <!-- AllowSimpleDevicePassword-DFProperties-Begin -->
@@ -211,16 +209,11 @@ Determines the type of PIN or password required. This policy only applies if the
 <!-- AlphanumericDevicePasswordRequired-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy must be wrapped in an Atomic command.
->
-> Always use the Replace command instead of Add for this policy in Windows for desktop editions (Home, Pro, Enterprise, and Education).
-
-
+> If **AlphanumericDevicePasswordRequired** is set to 1 or 2, then MinDevicePasswordLength = 0 and MinDevicePasswordComplexCharacters = 1.
+> If **AlphanumericDevicePasswordRequired** is set to 0, then MinDevicePasswordLength = 4 and MinDevicePasswordComplexCharacters = 2.
 
 > [!NOTE]
-> If **AlphanumericDevicePasswordRequired** is set to 1 or 2, then MinDevicePasswordLength = 0 and MinDevicePasswordComplexCharacters = 1.
->
-> If **AlphanumericDevicePasswordRequired** is set to 0, then MinDevicePasswordLength = 4 and MinDevicePasswordComplexCharacters = 2.
+> This policy must be wrapped in an Atomic command. Always use the Replace command instead of Add for this policy in Windows for desktop editions (Home, Pro, Enterprise, and Education).
 <!-- AlphanumericDevicePasswordRequired-Editable-End -->
 
 <!-- AlphanumericDevicePasswordRequired-DFProperties-Begin -->
@@ -246,48 +239,6 @@ Determines the type of PIN or password required. This policy only applies if the
 
 <!-- AlphanumericDevicePasswordRequired-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-> [!NOTE]
-> This policy must be wrapped in an Atomic command.
->
-> Always use the Replace command instead of Add for this policy in Windows for desktop editions.
-
-
-
-Max policy value is the most restricted.
-
-For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   An integer X where 4 &lt;= X &lt;= 16 for client devices. However, local accounts will always enforce a minimum password length of 6.
--   Not enforced.
--   The default value is 4 for client devices.
-
-<!--/SupportedValues-->
-<!--Example-->
-The following example shows how to set the minimum password length to 4 characters.
-
-```xml
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncBody>
-        <Replace>
-            <CmdID>$CmdID$</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Vendor/MSFT/Policy/Config/DeviceLock/MinDevicePasswordLength</LocURI>
-                </Target>
-                <Meta>
-                    <Format xmlns="syncml:metinf">int</Format>
-                </Meta>
-                <Data>4</Data>
-            </Item>
-        </Replace>
-        <Final/>
-    </SyncBody>
-</SyncML>
-```
 <!-- AlphanumericDevicePasswordRequired-Examples-End -->
 
 <!-- AlphanumericDevicePasswordRequired-End -->
@@ -309,7 +260,8 @@ The following example shows how to set the minimum password length to 4 characte
 
 <!-- ClearTextPassword-Description-Begin -->
 <!-- Description-Source-DDF -->
-Store passwords using reversible encryption This security setting determines whether the operating system stores passwords using reversible encryption. This policy provides support for applications that use protocols that require knowledge of the user's password for authentication purposes. Storing passwords using reversible encryption is essentially the same as storing plaintext versions of the passwords. For this reason, this policy should never be enabled unless application requirements outweigh the need to protect password information. This policy is required when using Challenge-Handshake Authentication Protocol (CHAP) authentication through remote access or Internet Authentication Services (IAS). It is also required when using Digest Authentication in Internet Information Services (IIS).
+Store passwords using reversible encryption
+This security setting determines whether the operating system stores passwords using reversible encryption. This policy provides support for applications that use protocols that require knowledge of the user's password for authentication purposes. Storing passwords using reversible encryption is essentially the same as storing plaintext versions of the passwords. For this reason, this policy should never be enabled unless application requirements outweigh the need to protect password information. This policy is required when using Challenge-Handshake Authentication Protocol (CHAP) authentication through remote access or Internet Authentication Services (IAS). It is also required when using Digest Authentication in Internet Information Services (IIS).
 <!-- ClearTextPassword-Description-End -->
 
 <!-- ClearTextPassword-Editable-Begin -->
@@ -365,43 +317,38 @@ Specifies whether device lock is enabled.
 <!-- DevicePasswordEnabled-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy must be wrapped in an Atomic command.
->
-> Always use the Replace command instead of Add for this policy in Windows for desktop editions.
+> This policy must be wrapped in an Atomic command. Always use the Replace command instead of Add for this policy in Windows for desktop editions.
 
 > [!IMPORTANT]
 > The **DevicePasswordEnabled** setting must be set to 0 (device password is enabled) for the following policy settings to take effect:
 >
-> -   AllowSimpleDevicePassword
-> -   MinDevicePasswordLength
-> -   AlphanumericDevicePasswordRequired
-> -   MaxDevicePasswordFailedAttempts
-> -   MaxInactivityTimeDeviceLock
-> -   MinDevicePasswordComplexCharacters
-&nbsp;
-
-> [!IMPORTANT]
+> - AllowSimpleDevicePassword
+> - MinDevicePasswordLength
+> - AlphanumericDevicePasswordRequired
+> - MaxDevicePasswordFailedAttempts
+> - MaxInactivityTimeDeviceLock
+> - MinDevicePasswordComplexCharacters
+>
 > If **DevicePasswordEnabled** is set to 0 (device password is enabled), then the following policies are set:
 >
-> -   MinDevicePasswordLength is set to 4
-> -   MinDevicePasswordComplexCharacters is set to 1
+> - MinDevicePasswordLength is set to 4
+> - MinDevicePasswordComplexCharacters is set to 1
 >
 > If **DevicePasswordEnabled** is set to 1 (device password is disabled), then the following DeviceLock policies are set to 0:
 >
-> -   MinDevicePasswordLength
-> -   MinDevicePasswordComplexCharacters
-
-> [!Important]
-> **DevicePasswordEnabled** should not be set to Enabled (0) when WMI is used to set the EAS DeviceLock policies given that it is Enabled by default in Policy CSP for back compat with Windows 8.x. If **DevicePasswordEnabled** is set to Enabled(0) then Policy CSP will return an error stating that **DevicePasswordEnabled** already exists. Windows 8.x did not support DevicePassword policy. When disabling **DevicePasswordEnabled** (1) then this should be the only policy set from the DeviceLock group of policies listed below:
-> - **DevicePasswordEnabled** is the parent policy of the following:
->   - AllowSimpleDevicePassword
->   - MinDevicePasswordLength
->   - AlphanumericDevicePasswordRequired
->   - MinDevicePasswordComplexCharacters
->   - DevicePasswordExpiration
->   - DevicePasswordHistory
->   - MaxDevicePasswordFailedAttempts
->   - MaxInactivityTimeDeviceLock
+> - MinDevicePasswordLength
+> - MinDevicePasswordComplexCharacters
+>
+> **DevicePasswordEnabled** should not be set to Enabled (0) when WMI is used to set the EAS DeviceLock policies given that it is Enabled by default in Policy CSP for backward compatibility with Windows 8.x. If **DevicePasswordEnabled** is set to Enabled(0) then Policy CSP will return an error stating that **DevicePasswordEnabled** already exists. Windows 8.x did not support DevicePassword policy. When disabling **DevicePasswordEnabled** (1), it should be the only policy set from the DeviceLock group of policies listed below:
+>
+> - AllowSimpleDevicePassword
+> - MinDevicePasswordLength
+> - AlphanumericDevicePasswordRequired
+> - MinDevicePasswordComplexCharacters
+> - DevicePasswordExpiration
+> - DevicePasswordHistory
+> - MaxDevicePasswordFailedAttempts
+> - MaxInactivityTimeDeviceLock
 
 <!-- DevicePasswordEnabled-Editable-End -->
 
@@ -452,6 +399,10 @@ Specifies when the password expires (in days).
 
 <!-- DevicePasswordExpiration-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+If all policy values = 0, then 0; otherwise, Min policy value is the most secure value.
+
+For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
+
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
 <!-- DevicePasswordExpiration-Editable-End -->
@@ -470,20 +421,6 @@ Specifies when the password expires (in days).
 
 <!-- DevicePasswordExpiration-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-> [!NOTE]
-> This policy must be wrapped in an Atomic command.
-
-
-If all policy values = 0, then 0; otherwise, Min policy value is the most secure value.
-
-For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   An integer X where 0 &lt;= X &lt;= 730.
--   0 (default) - Passwords don't expire.
 <!-- DevicePasswordExpiration-Examples-End -->
 
 <!-- DevicePasswordExpiration-End -->
@@ -510,21 +447,14 @@ Specifies how many passwords can be stored in the history that can’t be used.
 
 <!-- DevicePasswordHistory-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!NOTE]
-> This policy must be wrapped in an Atomic command.
-
 The value includes the user's current password. This value denotes that with a setting of 1, the user can't reuse their current password when choosing a new password, while a setting of 5 means that a user can't set their new password to their current password or any of their previous four passwords.
 
 Max policy value is the most restricted.
 
 For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   An integer X where 0 &lt;= X &lt;= 50.
--   0 (default)
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
 <!-- DevicePasswordHistory-Editable-End -->
 
 <!-- DevicePasswordHistory-DFProperties-Begin -->
@@ -641,15 +571,11 @@ Specifies the default lock screen and logon image shown when no user is signed i
 <!-- Description-Source-DDF -->
 The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality.
 
-**Note**: This policy must be wrapped in an Atomic command. This policy has different behaviors on the mobile device and desktop. On a mobile device, when the user reaches the value set by this policy, then the device is wiped. On a desktop, when the user reaches the value set by this policy, it is not wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker is not enabled, then the policy cannot be enforced. Prior to reaching the failed attempts limit, the user is sent to the lock screen and warned that more failed attempts will lock their computer. When the user reaches the limit, the device automatically reboots and shows the BitLocker recovery page. This page prompts the user for the BitLocker recovery key. Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value. For additional information about this policy, see Exchange ActiveSync Policy Engine Overview.
+**Note**: This policy must be wrapped in an Atomic command. This policy has different behaviors on the mobile device and desktop. On a mobile device, when the user reaches the value set by this policy, then the device is wiped. On a desktop, when the user reaches the value set by this policy, it is not wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker is not enabled, then the policy cannot be enforced. Prior to reaching the failed attempts limit, the user is sent to the lock screen and warned that more failed attempts will lock their computer. When the user reaches the limit, the device automatically reboots and shows the BitLocker recovery page. This page prompts the user for the BitLocker recovery key. Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value. For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 <!-- MaxDevicePasswordFailedAttempts-Description-End -->
 
 <!-- MaxDevicePasswordFailedAttempts-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The following list shows the supported values:
-
--   An integer X where 4 &lt;= X &lt;= 16 for client devices.
--   0 (default) - The device is never wiped after an incorrect PIN or password is entered.
 <!-- MaxDevicePasswordFailedAttempts-Editable-End -->
 
 <!-- MaxDevicePasswordFailedAttempts-DFProperties-Begin -->
@@ -687,9 +613,7 @@ The following list shows the supported values:
 
 <!-- MaximumPasswordAge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting determines the period of time (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If the maximum password age is between 1 and 999 days, the Minimum password age must be less than the maximum password age. If the maximum password age is set to 0, the minimum password age can be any value between 0 and 998 days.
-
-**Note**:  It is a security best practice to have passwords expire every 30 to 90 days, depending on your environment. This way, an attacker has a limited amount of time in which to crack a user's password and have access to your network resources. Default: 42.
+This security setting determines the period of time (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If the maximum password age is between 1 and 999 days, the Minimum password age must be less than the maximum password age. If the maximum password age is set to 0, the minimum password age can be any value between 0 and 998 days. Note: It is a security best practice to have passwords expire every 30 to 90 days, depending on your environment. This way, an attacker has a limited amount of time in which to crack a user's password and have access to your network resources. Default: 42.
 <!-- MaximumPasswordAge-Description-End -->
 
 <!-- MaximumPasswordAge-Editable-Begin -->
@@ -744,6 +668,12 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <!-- MaxInactivityTimeDeviceLock-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app.
+
+On HoloLens, this timeout is controlled by the device's system sleep timeout, regardless of the value set by this policy.
+
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
 <!-- MaxInactivityTimeDeviceLock-Editable-End -->
 
 <!-- MaxInactivityTimeDeviceLock-DFProperties-Begin -->
@@ -827,45 +757,32 @@ The number of complex element types (uppercase and lowercase letters, numbers, a
 
 <!-- MinDevicePasswordComplexCharacters-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!NOTE]
-> This policy must be wrapped in an Atomic command.
->
-> Always use the Replace command instead of Add for this policy in Windows for desktop editions.
+The following list shows the supported values and actual enforced values:
 
-PIN enforces the following behavior for client devices:
-
--   1 - Digits only
--   2 - Digits and lowercase letters are required
--   3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts.
--   4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop or HoloLens.
-
-The default value is 1. The following list shows the supported values and actual enforced values:
-
-|Account Type|Supported Values|Actual Enforced Values|
-|--- |--- |--- |
-|Local Accounts|1,2,3|3|
-|Microsoft Accounts|1,2|&lt;p2|
-|Domain Accounts|Not supported|Not supported|
-
+| Account Type       | Supported Values | Actual Enforced Values |
+|--------------------|------------------|------------------------|
+| Local Accounts     | 1,2,3            | 3                      |
+| Microsoft Accounts | 1,2              | &lt;p2                 |
+| Domain Accounts    | Not supported    | Not supported          |
 
 Enforced values for Local and Microsoft Accounts:
 
--   Local accounts support values of 1, 2, and 3, however they always enforce a value of 3.
--   Passwords for local accounts must meet the following minimum requirements:
-
-    -   Not contain the user's account name or parts of the user's full name that exceed two consecutive characters
-    -   Be at least six characters in length
-    -   Contain characters from three of the following four categories:
-
-        -   English uppercase characters (A through Z)
-        -   English lowercase characters (a through z)
-        -   Base 10 digits (0 through 9)
-        -   Special characters (!, $, \#, %, etc.)
+- Local accounts support values of 1, 2, and 3, however they always enforce a value of 3.
+- Passwords for local accounts must meet the following minimum requirements:
+  - Not contain the user's account name or parts of the user's full name that exceed two consecutive characters
+  - Be at least six characters in length
+  - Contain characters from three of the following four categories:
+    - English uppercase characters (A through Z)
+    - English lowercase characters (a through z)
+    - Base 10 digits (0 through 9)
+    - Special characters (!, $, \#, %, etc.)
 
 The enforcement of policies for Microsoft accounts happens on the server, and the server requires a password length of 8 and a complexity of 2. A complexity value of 3 or 4 is unsupported and setting this value on the server makes Microsoft accounts non-compliant.
 
 For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
+> [!NOTE]
+> This policy must be wrapped in an Atomic command. Always use the Replace command instead of Add for this policy in Windows for desktop editions.
 <!-- MinDevicePasswordComplexCharacters-Editable-End -->
 
 <!-- MinDevicePasswordComplexCharacters-DFProperties-Begin -->
@@ -918,7 +835,12 @@ Specifies the minimum number or characters required in the PIN or password.
 
 <!-- MinDevicePasswordLength-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Max policy value is the most restricted.
 
+For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
+
+> [!NOTE]
+> This policy must be wrapped in an Atomic command. Always use the Replace command instead of Add for this policy in Windows for desktop editions.
 <!-- MinDevicePasswordLength-Editable-End -->
 
 <!-- MinDevicePasswordLength-DFProperties-Begin -->
@@ -935,27 +857,6 @@ Specifies the minimum number or characters required in the PIN or password.
 
 <!-- MinDevicePasswordLength-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-> [!NOTE]
-> This policy must be wrapped in an Atomic command.
->
-> Always use the Replace command instead of Add for this policy in Windows for desktop editions.
-
-
-
-Max policy value is the most restricted.
-
-For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   An integer X where 4 &lt;= X &lt;= 16 for client devices. However, local accounts will always enforce a minimum password length of 6.
--   Not enforced.
--   The default value is 4 for client devices.
-
-<!--/SupportedValues-->
-<!--Example-->
 **Example**:
 
 The following example shows how to set the minimum password length to 4 characters.
@@ -1050,11 +951,23 @@ This security setting determines the period of time (in days) that a password mu
 
 <!-- PasswordComplexity-Description-Begin -->
 <!-- Description-Source-DDF -->
-Password must meet complexity requirements This security setting determines whether passwords must meet complexity requirements. If this policy is enabled, passwords must meet the following minimum requirements: Not contain the user's account name or parts of the user's full name that exceed two consecutive characters Be at least six characters in length Contain characters from three of the following four categories: English uppercase characters (A through Z) English lowercase characters (a through z) Base 10 digits (0 through 9) Non-alphabetic characters (for example, !, $, #, %) Complexity requirements are enforced when passwords are changed or created.
+Password must meet complexity requirements
+This security setting determines whether passwords must meet complexity requirements. If this policy is enabled, passwords must meet the following minimum requirements: Not contain the user's account name or parts of the user's full name that exceed two consecutive characters Be at least six characters in length Contain characters from three of the following four categories: English uppercase characters (A through Z) English lowercase characters (a through z) Base 10 digits (0 through 9) Non-alphabetic characters (for example, !, $, #, %) Complexity requirements are enforced when passwords are changed or created.
 <!-- PasswordComplexity-Description-End -->
 
 <!-- PasswordComplexity-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Password must meet complexity requirements. This security setting determines whether passwords must meet complexity requirements. If this policy is enabled, passwords must meet the following minimum requirements:
+
+- Not contain the user's account name or parts of the user's full name that exceed two consecutive characters
+- Be at least six characters in length
+- Contain characters from three of the following four categories:
+  - English uppercase characters (A through Z)
+  - English lowercase characters (a through z)
+  - Base 10 digits (0 through 9)
+  - Non-alphabetic characters (for example, !, $, #, %)
+
+Complexity requirements are enforced when passwords are changed or created.
 <!-- PasswordComplexity-Editable-End -->
 
 <!-- PasswordComplexity-DFProperties-Begin -->
@@ -1100,9 +1013,8 @@ Password must meet complexity requirements This security setting determines whet
 
 <!-- PasswordHistorySize-Description-Begin -->
 <!-- Description-Source-DDF -->
-Minimum password length This security setting determines the least number of characters that a password for a user account may contain. The maximum value for this setting is dependent on the value of the Relax minimum password length limits setting. If the Relax minimum password length limits setting is not defined, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and disabled, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and enabled, this setting may be configured from 0 to 128. Setting the required number of characters to 0 means that no password is required.
-
-**Note**:  By default, member computers follow the configuration of their domain controllers. Default: 7 on domain controllers. 0 on stand-alone servers. Configuring this setting than 14 may affect compatibility with clients, services, and applications. Microsoft recommends that you only configure this setting larger than 14 after using the Minimum password length audit setting to test for potential incompatibilities at the new setting.
+Minimum password length
+This security setting determines the least number of characters that a password for a user account may contain. The maximum value for this setting is dependent on the value of the Relax minimum password length limits setting. If the Relax minimum password length limits setting is not defined, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and disabled, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and enabled, this setting may be configured from 0 to 128. Setting the required number of characters to 0 means that no password is required. Note: By default, member computers follow the configuration of their domain controllers. Default: 7 on domain controllers. 0 on stand-alone servers. Configuring this setting than 14 may affect compatibility with clients, services, and applications. Microsoft recommends that you only configure this setting larger than 14 after using the Minimum password length audit setting to test for potential incompatibilities at the new setting.
 <!-- PasswordHistorySize-Description-End -->
 
 <!-- PasswordHistorySize-Editable-Begin -->
@@ -1174,7 +1086,7 @@ If you enable this setting, users will no longer be able to enable or disable lo
 
 <!-- PreventEnablingLockScreenCamera-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1234,7 +1146,7 @@ If you enable this setting, users will no longer be able to modify slide show se
 
 <!-- PreventLockScreenSlideShow-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

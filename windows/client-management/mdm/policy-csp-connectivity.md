@@ -4,7 +4,7 @@ description: Learn more about the Connectivity Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/27/2022
+ms.date: 01/04/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - Connectivity
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -194,13 +192,12 @@ If this policy setting is not configured or is disabled, clients are allowed to 
 <!-- AllowCellularDataRoaming-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Validate**:
-To validate, the enterprise can confirm by observing the roaming enable switch in the UX. It will be inactive if the roaming policy is being enforced by the enterprise policy.
 
-To validate on devices, perform the following steps:
+To validate, the enterprise can confirm by observing the roaming enable switch in the UX. It will be inactive if the roaming policy is being enforced by the enterprise policy. To validate on a device, perform the following steps:
 
-1.  Go to Cellular & SIM.
-2.  Click on the SIM (next to the signal strength icon) and select **Properties**.
-3.  On the Properties page, select **Data roaming options**.
+1. Go to Cellular & SIM.
+2. Click on the SIM (next to the signal strength icon) and select **Properties**.
+3. On the Properties page, select **Data roaming options**.
 <!-- AllowCellularDataRoaming-Examples-End -->
 
 <!-- AllowCellularDataRoaming-End -->
@@ -222,7 +219,7 @@ To validate on devices, perform the following steps:
 
 <!-- AllowConnectedDevices-Description-Begin -->
 <!-- Description-Source-DDF -->
-Note This policy requires reboot to take effect. Allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
+**Note**: This policy requires reboot to take effect. Allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
 <!-- AllowConnectedDevices-Description-End -->
 
 <!-- AllowConnectedDevices-Editable-Begin -->
@@ -373,7 +370,6 @@ If you do not configure this policy setting, the default behavior depends on the
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Validate**:
 
-
 If the Connectivity/AllowPhonePCLinking policy is configured to value 0, add a phone button in the Phones section in settings will be grayed out and clicking it will not launch the window for a user to enter their phone number.
 
 Device that has previously opt-in to MMX will also stop showing on the device list.
@@ -398,7 +394,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 
 <!-- AllowUSBConnection-Description-Begin -->
 <!-- Description-Source-DDF -->
-NoteCurrently, this policy is supported only in HoloLens 2, Hololens (1st gen) Commercial Suite, and HoloLens (1st gen) Development Edition. Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy does not affect USB charging. Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy is enforced. Most restricted value is 0.
+**Note**: Currently, this policy is supported only in HoloLens 2, Hololens (1st gen) Commercial Suite, and HoloLens (1st gen) Development Edition. Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy does not affect USB charging. Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy is enforced. Most restricted value is 0.
 <!-- AllowUSBConnection-Description-End -->
 
 <!-- AllowUSBConnection-Editable-Begin -->
@@ -549,7 +545,7 @@ This policy setting specifies whether to allow printing over HTTP from this clie
 
 Printing over HTTP allows a client to print to printers on the intranet as well as the Internet.
 
-Note: This policy setting affects the client side of Internet printing only. It does not prevent this computer from acting as an Internet Printing server and making its shared printers available via HTTP.
+**Note**: This policy setting affects the client side of Internet printing only. It does not prevent this computer from acting as an Internet Printing server and making its shared printers available via HTTP.
 
 If you enable this policy setting, it prevents this client from printing to Internet printers over HTTP.
 
@@ -573,13 +569,13 @@ Also, see the "Web-based printing" policy setting in Computer Configuration/Admi
 
 <!-- DiablePrintingOverHTTP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DisableHTTPPrinting |
+| Name | DisableHTTPPrinting_2 |
 | Friendly Name | Turn off printing over HTTP |
 | Location | Computer Configuration |
 | Path | InternetManagement > Internet Communication settings |
@@ -615,7 +611,7 @@ This policy setting specifies whether to allow this client to download print dri
 
 To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
 
-Note: This policy setting does not prevent the client from printing to printers on the Intranet or the Internet over HTTP. It only prohibits downloading drivers that are not already installed locally.
+**Note**: This policy setting does not prevent the client from printing to printers on the Intranet or the Internet over HTTP. It only prohibits downloading drivers that are not already installed locally.
 
 If you enable this policy setting, print drivers cannot be downloaded over HTTP.
 
@@ -637,13 +633,13 @@ If you disable or do not configure this policy setting, users can download print
 
 <!-- DisableDownloadingOfPrintDriversOverHTTP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DisableWebPnPDownload |
+| Name | DisableWebPnPDownload_2 |
 | Friendly Name | Turn off downloading of print drivers over HTTP |
 | Location | Computer Configuration |
 | Path | InternetManagement > Internet Communication settings |
@@ -701,13 +697,13 @@ See the documentation for the web publishing and online ordering wizards for mor
 
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | ShellPreventWPWDownload |
+| Name | ShellPreventWPWDownload_2 |
 | Friendly Name | Turn off Internet download for Web publishing and online ordering wizards |
 | Location | Computer Configuration |
 | Path | InternetManagement > Internet Communication settings |
@@ -828,7 +824,7 @@ If you enable this policy, Windows only allows access to the specified UNC paths
 
 <!-- HardenedUNCPaths-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -867,7 +863,7 @@ If you enable this policy, Windows only allows access to the specified UNC paths
 <!-- Description-Source-ADMX -->
 Determines whether a user can install and configure the Network Bridge.
 
-Important: This settings is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting does not apply.
+**Important**: This settings is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting does not apply.
 
 The Network Bridge allows users to create a layer 2 MAC bridge, enabling them to connect two or more network segements together. This connection appears in the Network Connections folder.
 
@@ -889,7 +885,7 @@ If you disable this setting or do not configure it, the user will be able to cre
 
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
