@@ -10,13 +10,13 @@ ms.topic: article
 
 [!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cloudkerb-trust.md)]
 
-Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to successfully deploy Windows Hello for Business in a cloud Kerberos trust scenario.
+Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to successfully deploy Windows Hello for Business in a *cloud Kerberos trust* scenario.
 
 ## Introduction to cloud Kerberos trust
 
-The goal of **Windows Hello for Business cloud Kerberos trust** is to bring the simplified deployment experience of [*passwordless security key sign-in*][AZ-1] to Windows Hello for Business, and it can be used for new or existing Windows Hello for Business deployments.
+The goal of Windows Hello for Business cloud Kerberos trust is to bring the simplified deployment experience of [*passwordless security key sign-in*][AZ-1] to Windows Hello for Business, and it can be used for new or existing Windows Hello for Business deployments.
 
-*Windows Hello for Business cloud Kerberos trust* uses **Azure AD Kerberos**, which enables a simpler deployment when compared to the *key trust model*:
+Windows Hello for Business cloud Kerberos trust uses *Azure AD Kerberos*, which enables a simpler deployment when compared to the *key trust model*:
 
 - No need to deploy a public key infrastructure (PKI) or to change an existing PKI
 - No need to synchronize public keys between Azure AD and Active Directory for users to access on-premises resources. This means that there isn't delay between the user's WHFB provisioning and being able to authenticate to Active Directory
@@ -146,7 +146,7 @@ You can configure the Enable Windows Hello for Business Group Policy setting for
 cloud Kerberos trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
 
 > [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune][MEM-1] and [PassportForWork CSP][WIN-1]. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources).
+> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune][MEM-1] and [PassportForWork CSP](../../../client-management/mdm/passportforwork-csp.md). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources).
 
 #### Update administrative templates
 
@@ -238,20 +238,20 @@ If you encounter issues or want to share feedback about Windows Hello for Busine
 
 ## Frequently Asked Questions
 
-For a list of frequently asked questions about Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business Frequently Asked Questions][hello-faq.yml#cloud-kerberos-trust].
+For a list of frequently asked questions about Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business Frequently Asked Questions](hello-faq.yml#cloud-kerberos-trust).
 
----
+<!--Links-->
 
 [AZ-1]: /azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises
 [AZ-2]: /azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azure-ad-kerberos-powershell-module
 [AZ-3]: /azure/active-directory/fundamentals/active-directory-how-to-find-tenant
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
 
-[SERV-1]: /windows-server/administration/performance-tuning/role/active-directory-server/capacity-planning-for-active-directory-domain-services
-[TS-1]: /troubleshoot/windows-client/group-policy/create-and-manage-central-store
-
 [MEM-1]: /mem/intune/protect/identity-protection-windows-settings
-[WIN-1]: /windows/client-management/mdm/passportforwork-csp
-[WIN-2]: /windows/security/identity-protection/remote-credential-guard
+
+[SERV-1]: /windows-server/administration/performance-tuning/role/active-directory-server/capacity-planning-for-active-directory-domain-services
+
 [SUP-1]: https://support.microsoft.com/topic/january-23-2020-kb4534307-os-build-14393-3474-b181594e-2c6a-14ea-e75b-678efea9d27e
 [SUP-2]: https://support.microsoft.com/topic/january-23-2020-kb4534321-os-build-17763-1012-023e84c3-f9aa-3b55-8aff-d512911c459f
+
+[TS-1]: /troubleshoot/windows-client/group-policy/create-and-manage-central-store
