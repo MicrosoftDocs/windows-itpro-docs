@@ -207,6 +207,8 @@ To do this, follow these steps:
 
      * **4**: Automatically download and scheduled installation.
 
+     * **5**: Allow local admin to select the configuration mode. This option is not available for Windows 10 or later versions.
+
      * **7**:  Notify for install and notify for restart. (Windows Server 2016 and later only)
 
    * ScheduledInstallDay (REG_DWORD):
