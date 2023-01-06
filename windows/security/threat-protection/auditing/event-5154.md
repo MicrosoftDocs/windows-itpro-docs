@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5154(S): The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections.

@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Delivery Optimization # < 60 chars
-summary: Set up peer to peer downloads for Windows Updates and learn about Microsoft Connected Cache.  # < 160 chars
+summary: Set up peer to peer downloads for Microsoft content supported by Delivery Optimization and learn about Microsoft Connected Cache.  # < 160 chars
 
 metadata:
   title: Delivery Optimization # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -36,7 +36,7 @@ landingContent:
 
 
   # Card (optional)
-  - title: Configure Delivery Optimization on Windows clients
+  - title: Configure Delivery Optimization on Windows
     linkLists:
       - linkListType: how-to-guide
         links:

@@ -22,6 +22,7 @@ ms.technology: itpro-security
 # Minimum password length
 
 **Applies to**
+- Windows 11
 - Windows 10
 
 This article describes the recommended practices, location, values, policy management, and security considerations for the **Minimum password length** security policy setting.

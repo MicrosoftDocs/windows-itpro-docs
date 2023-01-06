@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Accounts: Rename administrator account
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This security policy reference topic for the IT professional describes the best practices, location, values, and security considerations for this policy setting.

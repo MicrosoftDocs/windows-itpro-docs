@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.date: 06/28/2018
 ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # Microsoft network client: Digitally sign communications (always)
