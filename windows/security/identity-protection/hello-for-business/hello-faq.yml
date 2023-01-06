@@ -1,26 +1,17 @@
 ### YamlMime:FAQ
 metadata:
   title: Windows Hello for Business Frequently Asked Questions (FAQ)
-  description: Use these frequently asked questions (FAQ) to learn important details about Windows Hello for Business.  
-  keywords: identity, PIN, biometric, Hello, passport
+  description: Use these frequently asked questions (FAQ) to learn important details about Windows Hello for Business.
   ms.prod: windows-client
   ms.technology: itpro-security
-  ms.sitesec: library
-  ms.pagetype: security, mobile
-  audience: ITPro
-  author: paolomatarazzo
-  ms.author: paoloma
-  manager: aaroncz
-  ms.reviewer: prsriva
   ms.collection:
     - highpri
   ms.topic: faq
-  localizationpriority: medium
-  ms.date: 11/11/2022
+  ms.date: 01/06/2023
   appliesto: 
     - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 
-title: Windows Hello for Business Frequently Asked Questions (FAQ)
+title: Common questions about Windows Hello for Business
 summary: |
 
 sections:
@@ -136,18 +127,6 @@ sections:
       - question: Can I wear a mask to enroll or unlock using Windows Hello face authentication?
         answer: |
           Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock your device. The product group is aware of this behavior and is investigating this article further. Remove a mask if you're wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn't allow you to remove a mask temporarily, consider un-enrolling from face authentication and only using PIN or fingerprint.
-
-
-  - name: Cloud Kerberos trust
-    questions:
-      - question: What is Windows Hello for Business cloud Kerberos trust?
-        answer: |
-          Windows Hello for Business *cloud Kerberos trust* is a **trust model** that enables Windows Hello for Business deployment using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD-joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). Cloud Kerberos trust is the preferred deployment model if you do not need to support certificate authentication scenarios. For more information, see [cloud Kerberos trust deployment](/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust).
-
-
-
-
-
 
   - name: Features
     questions:      
@@ -280,8 +259,25 @@ sections:
         answer: |
           Starting in Windows 10, version 1709, you can use multi-factor unlock to require users to provide an extra factor to unlock their device. Authentication remains two-factor, but another factor is required before Windows allows the user to reach the desktop. To learn more, see [Multifactor Unlock](feature-multifactor-unlock.md).
 
-
-
-
-
-
+  - name: Cloud Kerberos trust
+    questions:
+      - question: What is Windows Hello for Business cloud Kerberos trust?
+        answer: |
+          Windows Hello for Business *cloud Kerberos trust* is a **trust model** that enables Windows Hello for Business deployment using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD-joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). Cloud Kerberos trust is the preferred deployment model if you do not need to support certificate authentication scenarios. For more information, see [cloud Kerberos trust deployment](/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust).
+      - question: Does Windows Hello for Business cloud Kerberos trust work in my on-premises environment?
+        answer: |
+          This feature doesn't work in a pure on-premises AD domain services environment.
+      - question: Does Windows Hello for Business cloud Kerberos trust work in a Windows sign-in with RODC present in the hybrid environment?
+        answer: |
+          Windows Hello for Business cloud Kerberos trust looks for a writeable DC to exchange the partial TGT. As long as you have at least one writeable DC per site, login with cloud Kerberos trust will work.
+      - question: Do I need line of sight to a domain controller to use Windows Hello for Business cloud Kerberos trust?
+        answer: |
+          Windows Hello for Business cloud Kerberos trust requires line of sight to a domain controller when:
+          - a user signs-in for the first time or unlocks with Windows Hello for Business after provisioning. 
+          - attempting to access on-premises resources secured by Active Directory. 
+      - question: Can I use RDP/VDI with Windows Hello for Business cloud Kerberos trust?
+        answer: |
+          Windows Hello for Business cloud Kerberos trust can't be used as a supplied credential with RDP/VDI. Similar to key trust, cloud Kerberos trust can be used for RDP with [remote credential guard][WIN-2] or if a [certificate is enrolled into Windows Hello for Business](hello-deployment-rdp-certs.md) for this purpose.
+      - question: Do all my domain controllers need to be fully patched as per the prerequisites for me to use Windows Hello for Business cloud Kerberos trust?
+        answer: |
+          No, only the number necessary to handle the load from all cloud Kerberos trust devices.

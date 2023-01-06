@@ -238,28 +238,7 @@ If you encounter issues or want to share feedback about Windows Hello for Busine
 
 ## Frequently Asked Questions
 
-### Does Windows Hello for Business cloud Kerberos trust work in my on-premises environment?
-
-This feature doesn't work in a pure on-premises AD domain services environment.
-
-### Does Windows Hello for Business cloud Kerberos trust work in a Windows sign-in with RODC present in the hybrid environment?
-
-Windows Hello for Business cloud Kerberos trust looks for a writeable DC to exchange the partial TGT. As long as you have at least one writeable DC per site, login with cloud Kerberos trust will work.
-
-### Do I need line of sight to a domain controller to use Windows Hello for Business cloud Kerberos trust?
-
-Windows Hello for Business cloud Kerberos trust requires line of sight to a domain controller when:
-
-- a user signs-in for the first time or unlocks with Windows Hello for Business after provisioning. 
-- attempting to access on-premises resources secured by Active Directory. 
-
-### Can I use RDP/VDI with Windows Hello for Business cloud Kerberos trust?
-
-Windows Hello for Business cloud Kerberos trust can't be used as a supplied credential with RDP/VDI. Similar to key trust, cloud Kerberos trust can be used for RDP with [remote credential guard][WIN-2] or if a [certificate is enrolled into Windows Hello for Business](hello-deployment-rdp-certs.md) for this purpose.
-
-### Do all my domain controllers need to be fully patched as per the prerequisites for me to use Windows Hello for Business cloud Kerberos trust?
-
-No, only the number necessary to handle the load from all cloud Kerberos trust devices.
+For a list of frequently asked questions about Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business Frequently Asked Questions][hello-faq.yml#cloud-kerberos-trust].
 
 ---
 
