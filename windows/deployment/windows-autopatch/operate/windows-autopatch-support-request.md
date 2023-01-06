@@ -70,13 +70,16 @@ Customers who need help with Microsoft 365 workloads can sign in to [Microsoft F
 
 ## Premier and Unified support options
 
-As a customer with a **Premier** or **Unified** support contract, you can specify a severity for your issue, and schedule a support callback for a specific time and day. These options are available when you open or submit a new issue and when you edit an active support case.
+As a customer with a **Premier** or **Unified** support contract, you can specify the severity of your issue, and schedule a support callback for a specific day and time. These options are available when you open or submit a new issue and when you edit an active support case.
 
-**Severity** - The options to specify the severity of an issue depend on your support contract:
+**Severity** - Depending on your support contract, the following severity options are available:
 
-- *Premier*: Severity of A, B, or C
-- *Unified*: Critical, or non-critical
+| Support contract | Severity options |
+| ----- | ----- |
+| Premier | Severity A, B or C |
+| Unified | Critical or non-critical |
 
-Selecting either a severity **A** or **Critical** issue limits you to a phone support case, which provides the fastest option to get support.
+> [!NOTE]
+> Selecting either severity **A** or **Critical** issue limits you to a phone support case. This is the fastest support option.
 
  Contact your Microsoft account team if you need additional assistance.
