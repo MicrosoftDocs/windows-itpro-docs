@@ -8,7 +8,7 @@ ms.topic: article
 ---
 # Cloud Kerberos trust deployment
 
-[!INCLUDE [hello-hybrid-key-trust](/windows/client-management/mdm/passportforwork-csp)]
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cloudkerb-trust.md)]
 
 Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to successfully deploy Windows Hello for Business in a *cloud Kerberos trust* scenario.
 
@@ -146,7 +146,7 @@ You can configure the Enable Windows Hello for Business Group Policy setting for
 cloud Kerberos trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
 
 > [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune][MEM-1] and [PassportForWork CSP](../../../client-management/mdm/passportforwork-csp.md). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources).
+> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune][MEM-1] and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources).
 
 #### Update administrative templates
 
