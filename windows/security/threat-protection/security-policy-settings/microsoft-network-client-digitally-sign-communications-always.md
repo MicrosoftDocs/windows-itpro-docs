@@ -19,6 +19,7 @@ ms.topic: conceptual
 # Microsoft network client: Digitally sign communications (always)
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 -   Windows Server
 
