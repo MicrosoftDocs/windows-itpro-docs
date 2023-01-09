@@ -44,7 +44,7 @@ sections:
           :::image type="content" source="images/passport-fig3-logicalcontainer.png" alt-text="logical container with set of keys":::
 
           Containers can contain several types of key material:
-            - An authentication key, which is always an asymmetric public–private key pair. This key pair is generated during registration. It must be unlocked each time it's accessed, by using either the user's PIN or a biometric gesture. The authentication key exists until the user resets the PIN, at which time a new key will be generated. When the new key is generated, all the key material that the old key previously protected must be decrypted and re-encrypted using the new key.
+            - An authentication key, which is always an asymmetric public-private key pair. This key pair is generated during registration. It must be unlocked each time it's accessed, by using either the user's PIN or a biometric gesture. The authentication key exists until the user resets the PIN, at which time a new key will be generated. When the new key is generated, all the key material that the old key previously protected must be decrypted and re-encrypted using the new key.
             - The IDP key. These keys can be either symmetric or asymmetric, depending on which IDP you use. A single container may contain zero or more IDP keys, with some restrictions (for example, the enterprise container can contain zero or one IDP key). IDP keys are stored in the container. For certificate-based Windows Hello for Work, when the container is unlocked, applications that require access to the IDP key or key pair can request access. IDP keys are used to sign or encrypt authentication requests or tokens sent from this device to the IDP. IDP keys are typically long-lived but could have a shorter lifetime than the authentication key. Microsoft accounts, Active Directory accounts, and Azure AD accounts all require the use of asymmetric key pairs. The device generates public and private keys, registers the public key with the IDP (which stores it for later verification), and securely stores the private key. For enterprises, the IDP keys can be generated in two ways:
               - The IDP key pair can be associated with an enterprise Certificate Authority (CA) through the Windows Network Device Enrollment Service (NDES). In this case, Windows Hello requests a new certificate with the same key as the certificate from the existing PKI. This option lets organizations that have an existing PKI continue to use it where appropriate. Given that many applications, such as VPN solutions, require the use of certificates, when you deploy Windows Hello in this mode, it allows a faster transition away from user passwords while still preserving certificate-based functionality. This option also allows the enterprise to store additional certificates in the protected container.
               - The IDP can generate the IDP key pair directly, which allows quick, lower-overhead deployment of Windows Hello in environments that don't have or need a PKI.
@@ -84,6 +84,9 @@ sections:
       - question: Can I deploy and manage Windows Hello for Business using Microsoft Intune?
         answer: |
           Yes, hybrid and cloud-only Windows Hello for Business deployments can use Microsoft Intune. For more information, see [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello).
+      - question: Can I deploy and manage Windows Hello for Business by using Microsoft Configuration Manager?
+        answer: |
+          Starting in Configuration Manager, version 2203, Windows Hello for Business deployments using Configuration Manager are no longer supported.
       - question: How do I delete a Windows Hello for Business container on a device?
         answer: |  
           You can effectively disable Windows Hello for Business by launching `certutil.exe -deleteHelloContainer` on the end device under a user account, and then restarting the device.          
@@ -120,18 +123,21 @@ sections:
 
   - name: Design and planning
     questions:
-      - question: How many users can enroll for Windows Hello for Business on a single Windows device?
-        answer: |
-          The maximum number of supported enrollments on a single device is 10. This lets 10 users each enroll their face and up to 10 fingerprints. For devices with more than 10 users, or for users that sign-in to many devices (for example, a support technician), it's recommended the use of FIDO2 security keys.
       - question: Can Windows Hello for Business work in air-gapped environments?
         answer: |
           Yes. You can use the on-premises Windows Hello for Business deployment and combine it with a third-party MFA provider that doesn't require internet connectivity to achieve an air-gapped Windows Hello for Business deployment.
+      - question: How many users can enroll for Windows Hello for Business on a single Windows device?
+        answer: |
+          The maximum number of supported enrollments on a single device is 10. This lets 10 users each enroll their face and up to 10 fingerprints. For devices with more than 10 users, or for users that sign-in to many devices (for example, a support technician), it's recommended the use of FIDO2 security keys.
+      - question: I have extended Active Directory to Azure Active Directory. Can I use the on-premises deployment model?
+        answer: |
+          No. If your organization is using Microsoft cloud services, then you must use a hybrid deployment model. On-premises deployments are exclusive to organizations who need more time before moving to the cloud and exclusively use Active Directory.
       - question: What attributes are synchronized by Azure AD Connect with Windows Hello for Business?
         answer: |
           Review [Azure AD Connect sync: Attributes synchronized to Azure Active Directory](/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized) for a list of attributes that sync based on scenarios. The base scenarios that include Windows Hello for Business are the [Windows 10](/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#windows-10) scenario and the [Device writeback](/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#device-writeback) scenario. Your environment may include other attributes.
-      - question: Can I use third-party authentication providers with Windows Hello for Business?
+      - question: Can I use third-party MFA providers with Windows Hello for Business?
         answer: |
-          Yes, if you're using federated hybrid deployment, you can use any third-party that provides an Active Directory Federation Services (AD FS) multi-factor authentication adapter. A list of third-party MFA adapters can be found [here](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods).
+          Yes, if you're using federated hybrid deployment, you can use any third-party that provides an AD FS MFA adapter. A list of third-party MFA adapters can be found [here](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods).
       - question: Does Windows Hello for Business work with third-party federation servers?
         answer: |
           Windows Hello for Business works with any third-party federation servers that support the protocols used during the provisioning experience.<br><br>
@@ -145,15 +151,11 @@ sections:
       - question: Can I enroll local Windows accounts in Windows Hello for Business?
         answer: |
           Windows Hello for Business is not designed to work with local accounts.
-      - question: I have extended Active Directory to Azure Active Directory. Can I use the on-premises deployment model?
-        answer: |
-          No. If your organization is using Microsoft cloud services, then you must use a hybrid deployment model. On-premises deployments are exclusive to organizations who need more time before moving to the cloud and exclusively use Active Directory.
-      - question: Can I wear a mask to enroll or unlock using Windows Hello face authentication?
-        answer: |
-          Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock your device. The product group is aware of this behavior and is investigating this article further. Remove a mask if you're wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn't allow you to remove a mask temporarily, consider un-enrolling from face authentication and only using PIN or fingerprint.
       - question: What are the biometric requirements for Windows Hello for Business?
         answer: |
-          Read [Windows Hello biometric requirements](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information.
+          Read [Windows Hello biometric requirements](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information.      - question: Can I wear a mask to enroll or unlock using Windows Hello face authentication?
+        answer: |
+          Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock your device. The product group is aware of this behavior and is investigating this article further. Remove a mask if you're wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn't allow you to remove a mask temporarily, consider un-enrolling from face authentication and only using PIN or fingerprint.
       - question: How does Windows Hello for Business work with Azure AD registered devices?
         answer: |
           A user will be prompted to set up a Windows Hello for Business key on an Azure AD registered devices  if the feature is enabled by policy. If the user has an existing Windows Hello container, the Windows Hello for Business key will be enrolled in that container and will be protected using existing gestures.
@@ -174,16 +176,22 @@ sections:
           Windows Hello for Business is two-factor authentication based on the observed authentication factors of: *something you have*, *something you know*, and *something that's part of you*. Windows Hello for Business incorporates two of these factors: something you have (the user's private key protected by the device's security module) and something you know (your PIN). With the proper hardware, you can enhance the user experience by introducing biometrics. By using biometrics, you can replace the "something you know" authentication factor with the "something that is part of you" factor, with the assurances that users can fall back to the "something you know factor".
 
           > [!NOTE]
-          > The Windows Hello for Business key meets Azure AD multi-factor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources.
+          > The Windows Hello for Business key meets Azure AD multi-factor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. For more information, see [What is a Primary Refresh Token](/azure/active-directory/devices/concept-primary-refresh-token#when-does-a-prt-get-an-mfa-claim).
       - question: Which is a better or more secure for of authentication, key or certificate?
         answer: |
           Both types of authentication provide the same security; one is not more secure than the other.
           The trust models of your deployment determine how you authenticate to Active Directory (on-premises). Both key trust and certificate trust use the same hardware-backed, two-factor credential. The differences between the two trust types is the issuance of end-entity certificates:
           - The *key trust* model authenticates to Active Directory by using a raw key. Key trust doesn't require an enterprise-issued certificate, therefore you don't need to issue certificates to users (domain controller certificates are still needed)
           - The *certificate trust* model authenticates to Active Directory by using a certificate. Therefore, you need to issue certificates to users. The certificate used in certificate trust uses the TPM-protected private key to request a certificate from your enterprise's issuing CA
-      - question: Can I use a *convenience PIN* with Azure Active Directory?
+      - question: What is convenience PIN?
+        answer: |
+          *Convenience PIN* provides a simple way to sign in to Windows, but it still uses a password for authentication. Organizations using convenience PINs should move to **Windows Hello for Business**. New Windows deployments should deploy Windows Hello for Business and not convenience PINs.
+      - question: Can I use a convenience PIN with Azure Active Directory?
         answer: |
           No. While it's possible to set a convenience PIN on Azure AD joined and hybrid Azure AD joined devices, convenience PIN isn't supported for Azure AD user accounts (including synchronized identities). Convenience PIN is only supported for on-premises Active Directory users and local account users.
+      - question: What about virtual smart cards?
+        answer: |
+          Windows Hello for Business is the modern, two-factor credential for Windows. Microsoft will be deprecating virtual smart cards in the future, but no date is set at this time. Customers using virtual smart cards should move to Windows Hello for Business. Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business. Microsoft recommends that new Windows deployments use Windows Hello for Business.
       - question: What URLs do I need to allow for a hybrid deployment?
         answer: |
           For a list of required URLs, see [Microsoft 365 Common and Office Online](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#microsoft-365-common-and-office-online).
@@ -198,15 +206,6 @@ sections:
       - question: Can I use an external Windows Hello compatible camera or other Windows Hello compatible accessory when my laptop lid is closed or docked?
         answer: |
           Some laptops and tablets with keyboards that close may not use an external Windows Hello compatible camera or other Windows Hello compatible accessory when the computer is docked with the lid closed. The issue has been addressed in Windows 11, version 22H2.
-      - question: What about virtual smart cards?
-        answer: |
-          Windows Hello for Business is the modern, two-factor credential for Windows. Microsoft will be deprecating virtual smart cards in the future, but no date is set at this time. Customers using virtual smart cards should move to Windows Hello for Business. Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business. Microsoft recommends that new Windows deployments use Windows Hello for Business.
-      - question: What about convenience PIN?
-        answer: |
-          While *convenience PIN* provides a convenient way to sign in to Windows, it stills uses a password for authentication. Customers using *convenience PINs* should move to **Windows Hello for Business**. New Windows deployments should deploy Windows Hello for Business and not convenience PINs. Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business.
-      - question: Can I deploy Windows Hello for Business by using Microsoft Configuration Manager?
-        answer: |
-          Windows Hello for Business deployments using Configuration Manager should follow the hybrid deployment model that uses Active Directory Federation Services. Starting in Configuration Manager version 1910, certificate-based authentication with Windows Hello for Business settings isn't supported. Key-based authentication is still valid with Configuration Manager. For more information, see [Windows Hello for Business settings in Configuration Manager](/configmgr/protect/deploy-use/windows-hello-for-business-settings).
       - question: Can I use Windows Hello for Business credentials in private browser mode or "incognito" mode?
         answer: |
           Windows Hello for Business credentials need access to device state, which is not available in private browser mode or incognito mode. Hence it can't be used in private browser or Incognito mode.

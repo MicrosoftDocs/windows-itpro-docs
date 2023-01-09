@@ -133,8 +133,6 @@
     href: hello-manage-in-organization.md
 - name: Windows Hello for Business features
   items:
-  - name: Conditional access 
-    href: hello-feature-conditional-access.md
   - name: PIN Reset
     href: hello-feature-pin-reset.md
   - name: Dual Enrollment

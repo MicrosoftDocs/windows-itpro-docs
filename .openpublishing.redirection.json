@@ -20299,6 +20299,11 @@
       "source_path": "windows/security/identity-protection/hello-for-business/retired/hello-how-it-works.md",
       "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-faq",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-feature-conditional-access.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-faq",
+      "redirect_document_id": false
     }
   ]
 }
