@@ -57,6 +57,7 @@ The following method explains how to disable Windows Hello for Business enrollme
 
 > [!NOTE]
 > This policy is only applied during new device enrollments. For currently enrolled devices, you can [set the same settings in a device configuration policy](hello-manage-in-organization.md).
+
 ## Disable Windows Hello for Business enrollment without Intune
 
 If you don't use Intune in your organization, then you can disable Windows Hello for Business using the registry. You can use a third-party MDM, or some other method that you use to manage these devices. Because these systems are Azure AD Joined only, and not domain joined, these settings can also be made manually in the registry.
