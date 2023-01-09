@@ -120,6 +120,9 @@ sections:
       - question: Can I disable the PIN while using Windows Hello for Business?
         answer: |
           No. The movement away from passwords is accomplished by gradually reducing the use of the password. In situations where you can't authenticate by using biometrics, you need a fallback mechanism that isn't a password. The PIN is the fallback mechanism. Disabling or hiding the PIN credential provider will disable the use of biometrics.
+      - question: What is Event ID 300?
+        answer: |
+          This event is created when Windows Hello for Business is successfully created and registered with Azure Active Directory (Azure AD). Applications or services can trigger actions on this event. For example, a certificate provisioning service can listen to this event and trigger a certificate request. This is a normal condition and no further action is required.
 
   - name: Design and planning
     questions:
