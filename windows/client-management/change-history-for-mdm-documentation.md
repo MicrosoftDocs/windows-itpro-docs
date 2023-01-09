@@ -3,7 +3,7 @@ title: Change history for MDM documentation
 description: This article lists new and updated articles for Mobile Device Management.
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.topic: article
 ms.prod: windows-client
@@ -20,14 +20,14 @@ As of November 2020 This page will no longer be updated. This article lists new 
 
 |New or updated article | Description|
 |--- | ---|
-| [Policy CSP](mdm/policy-configuration-service-provider.md) | Added the following new policy:<br>- [Multitasking/BrowserAltTabBlowout](mdm/policy-csp-multitasking.md#multitasking-browseralttabblowout) |
+| [Policy CSP](mdm/policy-configuration-service-provider.md) | Added the following new policy:<br>- [Multitasking/BrowserAltTabBlowout](mdm/policy-csp-multitasking.md#browseralttabblowout) |
 | [SurfaceHub CSP](mdm/surfacehub-csp.md) | Added the following new node:<br>-Properties/SleepMode |
 
 ## October 2020
 
 |New or updated article | Description|
 |--- | ---|
-| [Policy CSP](mdm/policy-configuration-service-provider.md) | Added the following new policies<br>- [Experience/DisableCloudOptimizedContent](mdm/policy-csp-experience.md#experience-disablecloudoptimizedcontent)<br>- [LocalUsersAndGroups/Configure](mdm/policy-csp-localusersandgroups.md#localusersandgroups-configure)<br>- [MixedReality/AADGroupMembershipCacheValidityInDays](mdm/policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)<br>- [MixedReality/BrightnessButtonDisabled](mdm/policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled)<br>- [MixedReality/FallbackDiagnostics](mdm/policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics)<br>- [MixedReality/MicrophoneDisabled](mdm/policy-csp-mixedreality.md#mixedreality-microphonedisabled)<br>- [MixedReality/VolumeButtonDisabled](mdm/policy-csp-mixedreality.md#mixedreality-volumebuttondisabled)<br>- [Update/DisableWUfBSafeguards](mdm/policy-csp-update.md#update-disablewufbsafeguards)<br>- [WindowsSandbox/AllowAudioInput](mdm/policy-csp-windowssandbox.md#windowssandbox-allowaudioinput)<br>- [WindowsSandbox/AllowClipboardRedirection](mdm/policy-csp-windowssandbox.md#windowssandbox-allowclipboardredirection)<br>- [WindowsSandbox/AllowNetworking](mdm/policy-csp-windowssandbox.md#windowssandbox-allownetworking)<br>- [WindowsSandbox/AllowPrinterRedirection](mdm/policy-csp-windowssandbox.md#windowssandbox-allowprinterredirection)<br>- [WindowsSandbox/AllowVGPU](mdm/policy-csp-windowssandbox.md#windowssandbox-allowvgpu)<br>- [WindowsSandbox/AllowVideoInput](mdm/policy-csp-windowssandbox.md#windowssandbox-allowvideoinput) |
+| [Policy CSP](mdm/policy-configuration-service-provider.md) | Added the following new policies<br>- [Experience/DisableCloudOptimizedContent](mdm/policy-csp-experience.md#disablecloudoptimizedcontent)<br>- [LocalUsersAndGroups/Configure](mdm/policy-csp-localusersandgroups.md#configure)<br>- [MixedReality/AADGroupMembershipCacheValidityInDays](mdm/policy-csp-mixedreality.md#aadgroupmembershipcachevalidityindays)<br>- [MixedReality/BrightnessButtonDisabled](mdm/policy-csp-mixedreality.md#brightnessbuttondisabled)<br>- [MixedReality/FallbackDiagnostics](mdm/policy-csp-mixedreality.md#fallbackdiagnostics)<br>- [MixedReality/MicrophoneDisabled](mdm/policy-csp-mixedreality.md#microphonedisabled)<br>- [MixedReality/VolumeButtonDisabled](mdm/policy-csp-mixedreality.md#volumebuttondisabled)<br>- [Update/DisableWUfBSafeguards](mdm/policy-csp-update.md#disablewufbsafeguards)<br>- [WindowsSandbox/AllowAudioInput](mdm/policy-csp-windowssandbox.md#allowaudioinput)<br>- [WindowsSandbox/AllowClipboardRedirection](mdm/policy-csp-windowssandbox.md#allowclipboardredirection)<br>- [WindowsSandbox/AllowNetworking](mdm/policy-csp-windowssandbox.md#allownetworking)<br>- [WindowsSandbox/AllowPrinterRedirection](mdm/policy-csp-windowssandbox.md#allowprinterredirection)<br>- [WindowsSandbox/AllowVGPU](mdm/policy-csp-windowssandbox.md#allowvgpu)<br>- [WindowsSandbox/AllowVideoInput](mdm/policy-csp-windowssandbox.md#allowvideoinput) |
 
 ## September 2020
 
@@ -46,7 +46,7 @@ As of November 2020 This page will no longer be updated. This article lists new 
 
 |New or updated article | Description|
 |--- | ---|
-|[Policy CSP - System](mdm/policy-csp-system.md)|Added the following new policy settings:<br>  - System/AllowDesktopAnalyticsProcessing <br>- System/AllowMicrosoftManagedDesktopProcessing <br> - System/AllowUpdateComplianceProcessing<br> - System/AllowWUfBCloudProcessing <br> <br><br>Updated the following policy setting:<br>-  <a href="mdm/policy-csp-system.md#system-allowcommercialdatapipeline" id="system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a> <br>|
+|[Policy CSP - System](mdm/policy-csp-system.md)|Added the following new policy settings:<br>  - System/AllowDesktopAnalyticsProcessing <br>- System/AllowMicrosoftManagedDesktopProcessing <br> - System/AllowUpdateComplianceProcessing<br> - System/AllowWUfBCloudProcessing <br> <br><br>Updated the following policy setting:<br>-  <a href="mdm/policy-csp-system.md#allowcommercialdatapipeline" id="system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a> <br>|
 
 ## June 2020
 
@@ -239,7 +239,7 @@ As of November 2020 This page will no longer be updated. This article lists new 
 |[AccountManagement CSP](mdm/accountmanagement-csp.md)|Added a new CSP in Windows 10, version 1803.|
 |[RootCATrustedCertificates CSP](mdm/rootcacertificates-csp.md)|Added the following node in Windows 10, version 1803:<li>UntrustedCertificates|
 |[Policy CSP](mdm/policy-configuration-service-provider.md)|Added the following new policies for Windows 10, version 1803:<li>ApplicationDefaults/EnableAppUriHandlers<li>ApplicationManagement/MSIAllowUserControlOverInstall<li>ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges<li>Connectivity/AllowPhonePCLinking<li>Notifications/DisallowCloudNotification<li>Notifications/DisallowTileNotification<li>RestrictedGroups/ConfigureGroupMembership<br/><br/>The following existing policies were updated:<li>Browser/AllowCookies - updated the supported values. There are three values - 0, 1, 2.<li>InternetExplorer/AllowSiteToZoneAssignmentList - updated the description and added an example SyncML<li>TextInput/AllowIMENetworkAccess - introduced new suggestion services in Japanese IME in addition to cloud suggestion.<br/><br/>Added a new section:<li>[[Policies in Policy CSP supported by Group Policy](mdm/policies-in-policy-csp-supported-by-group-policy.md) - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.|
-|[Policy CSP - Bluetooth](mdm/policy-csp-bluetooth.md)|Added new section [ServicesAllowedList usage guide](mdm/policy-csp-bluetooth.md#servicesallowedlist-usage-guide).|
+|[Policy CSP - Bluetooth](mdm/policy-csp-bluetooth.md)|Added new section [ServicesAllowedList usage guide](mdm/policy-csp-bluetooth.md#usage-guide).|
 |[MultiSIM CSP](mdm/multisim-csp.md)|Added SyncML examples and updated the settings descriptions.|
 |[RemoteWipe CSP](mdm/remotewipe-csp.md)|Reverted back to Windows 10, version 1709. Removed previous draft documentation for version 1803.|
 

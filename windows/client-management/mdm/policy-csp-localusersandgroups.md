@@ -37,16 +37,10 @@ ms.topic: reference
 
 <!-- Configure-Description-Begin -->
 <!-- Description-Source-DDF -->
-This Setting allows an administrator to manage local groups on a Device.
-Possible settings
+This Setting allows an administrator to manage local groups on a Device. Possible settings:
 
-1. Update Group Membership Update a group and add and/or remove members though the 'U' action.
-When using Update, existing group members that are not specified in the policy remain untouched.
-
-2. Replace Group Membership Restrict a group by replacing group membership through the 'R' action.
-When using Replace, existing group membership is replaced by the list of members specified in
-the add member section. This option works in the same way as a Restricted Group and any group
-members that are not specified in the policy are removed
+1. Update Group Membership Update a group and add and/or remove members though the 'U' action. When using Update, existing group members that are not specified in the policy remain untouched.
+2. Replace Group Membership Restrict a group by replacing group membership through the 'R' action. When using Replace, existing group membership is replaced by the list of members specified in the add member section. This option works in the same way as a Restricted Group and any group members that are not specified in the policy are removed.
 
 > [!CAUTION]
 > If the same group is configured with both Replace and Update, then Replace will win.
@@ -55,9 +49,9 @@ members that are not specified in the policy are removed
 <!-- Configure-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> The [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting also allows you to configure members (users or Azure Active Directory groups) to a Windows 10 local group. However, it allows only for a full replace of the existing groups with the new members and does not allow selective add or remove.
+> The [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#configuregroupmembership) policy setting also allows you to configure members (users or Azure Active Directory groups) to a Windows 10 local group. However, it allows only for a full replace of the existing groups with the new members and does not allow selective add or remove.
 >
-> Starting from Windows 10, version 20H2, it is recommended to use the LocalUsersandGroups policy instead of the RestrictedGroups policy. Applying both the policies to the same device is unsupported and may yield unpredictable results.
+> Starting from Windows 10, version 20H2, it is recommended to use the LocalUsersAndGroups policy instead of the RestrictedGroups policy. Applying both the policies to the same device is unsupported and may yield unpredictable results.
 <!-- Configure-Editable-End -->
 
 <!-- Configure-DFProperties-Begin -->
@@ -142,7 +136,7 @@ members that are not specified in the policy are removed
 
 <!-- Configure-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-**Example**:
+**Examples**:
 
 Here is an example of the policy definition XML for group configuration:
 
@@ -160,26 +154,24 @@ where:
 
 - `<accessgroup desc>`: Specifies the name or SID of the local group to configure. If you specify a SID, the [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API is used to translate the SID to a valid group name. If you specify a name, the [LookupAccountName](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API is used to lookup the group and validate the name. If name/SID lookup fails, the group is skipped and the next group in the XML file is processed. If there are multiple errors, the last error is returned at the end of the policy processing.
 - `<group action>`: Specifies the action to take on the local group, which can be Update and Restrict, represented by U and R:
-    - Update. This action must be used to keep the current group membership intact and add or remove members of the specific group.
-    - Restrict. This action must be used to replace current membership with the newly specified groups. This action provides the same functionality as the [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting.
+  - Update. This action must be used to keep the current group membership intact and add or remove members of the specific group.
+  - Restrict. This action must be used to replace current membership with the newly specified groups. This action provides the same functionality as the [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#configuregroupmembership) policy setting.
 - `<add member>`: Specifies the SID or name of the member to configure.
 - `<remove member>`: Specifies the SID or name of the member to remove from the specified group.
 
     > [!NOTE]
-    > When specifying member names of the user accounts, you must use following format – AzureAD\userUPN. For example, "AzureAD\user1@contoso.com" or "AzureAD\user2@contoso.co.uk".
+    > When specifying member names of the user accounts, you must use following format - AzureAD\userUPN. For example, "AzureAD\user1@contoso.com" or "AzureAD\user2@contoso.co.uk".
 For adding Azure AD groups, you need to specify the Azure AD Group SID. Azure AD group names are not supported with this policy.
 For more information, see [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea).
 
 See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configuration/custom-settings-windows-10) for information on how to create custom profiles.
 
 > [!IMPORTANT]
+>
 > - `<add member>` and `<remove member>` can use an Azure AD SID or the user's name. For adding or removing Azure AD groups using this policy, you must use the group's SID. Azure AD group SIDs can be obtained using [Graph](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true#json-representation) API for Groups. The SID is present in the `securityIdentifier` attribute.
 > - When specifying a SID in the `<add member>` or `<remove member>`, member SIDs are added without attempting to resolve them. Therefore, be very careful when specifying a SID to ensure it is correct.
 > - `<remove member>` is not valid for the R (Restrict) action and will be ignored if present.
 > - The list in the XML is processed in the given order except for the R actions, which get processed last to ensure they win. It also means that, if a group is present multiple times with different add/remove values, all of them will be processed in the order they are present.
-
-
-**Examples**
 
 **Example 1**: Azure Active Directory focused.
 
@@ -198,9 +190,7 @@ The following example updates the built-in administrators group with the SID **S
 **Example 2**: Replace / Restrict the built-in administrators group with an Azure AD user account.
 
 > [!NOTE]
-> When using the ‘R’ replace option to configure the built-in Administrators group with the SID **S-1-5-21-2222222222-3333333333-4444444444-500** you should always specify the administrator as a member plus any other custom members. This is necessary because the built-in administrator must always be a member of the administrators group.
-
-**Example**:
+> When using the 'R' replace option to configure the built-in Administrators group with the SID **S-1-5-21-2222222222-3333333333-4444444444-500** you should always specify the administrator as a member plus any other custom members. This is necessary because the built-in administrator must always be a member of the administrators group.
 
 ```xml
 <GroupConfiguration>
@@ -228,8 +218,7 @@ The following example shows how you can update a local group (**Administrators**
 ```
 
 > [!NOTE]
->
-> When Azure Active Directory group SID’s are added to local groups, Azure AD account logon privileges are evaluated only for the following well-known groups on a Windows 10 device:
+> When Azure Active Directory group SID's are added to local groups, Azure AD account logon privileges are evaluated only for the following well-known groups on a Windows 10 device:
 >
 > - Administrators
 > - Users
@@ -237,7 +226,12 @@ The following example shows how you can update a local group (**Administrators**
 > - Power Users
 > - Remote Desktop Users
 > - Remote Management Users
+<!-- Configure-Examples-End -->
 
+<!-- Configure-End -->
+
+<!-- LocalUsersAndGroups-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
 ## FAQs
 
 This section provides answers to some common questions you might have about the LocalUsersAndGroups policy CSP.
@@ -281,8 +275,7 @@ If you specify both R and U in the same XML, the R (Restrict) action takes prece
 After a policy is applied on the client device, you can investigate the event log to review the result:
 
 1. Open Event Viewer (**eventvwr.exe**).
-2. Navigate to **Applications and Services Logs** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-
-Diagnostics-Provider** > **Admin**.
+2. Navigate to **Applications and Services Logs** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider** > **Admin**.
 3. Search for the `LocalUsersAndGroups` string to review the relevant details.
 
 ### How can I troubleshoot Name/SID lookup APIs?
@@ -293,7 +286,6 @@ To troubleshoot Name/SID lookup APIs:
 
     ```powershell
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgInfoLevel -Value 0x800 -Type dword -Force
-
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgTraceOptions -Value 0x1 -Type dword -Force
     ```
 
@@ -303,15 +295,8 @@ To troubleshoot Name/SID lookup APIs:
 
     ```powershell
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgInfoLevel -Value 0x0 -Type dword -Force
-
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgTraceOptions -Value 0x0 -Type dword -Force
     ```
-<!-- Configure-Examples-End -->
-
-<!-- Configure-End -->
-
-<!-- LocalUsersAndGroups-CspMoreInfo-Begin -->
-<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
 <!-- LocalUsersAndGroups-CspMoreInfo-End -->
 
 <!-- LocalUsersAndGroups-End -->
