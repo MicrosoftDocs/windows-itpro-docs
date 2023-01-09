@@ -22,6 +22,7 @@ ms.technology: itpro-security
 # Interactive logon: Machine inactivity limit
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, management, and security considerations for the **Interactive logon: Machine inactivity limit** security policy setting.
