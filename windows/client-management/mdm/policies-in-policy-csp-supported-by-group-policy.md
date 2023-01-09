@@ -1,6 +1,6 @@
 ---
 title: Policies in Policy CSP supported by Group Policy
-description: Learn about the policies in Policy CSP supported by Group Policy..
+description: Learn about the policies in Policy CSP supported by Group Policy.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

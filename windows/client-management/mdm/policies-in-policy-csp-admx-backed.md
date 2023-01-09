@@ -1,6 +1,6 @@
 ---
 title: ADMX-backed policies in Policy CSP
-description: Learn about the ADMX-backed policies in Policy CSP..
+description: Learn about the ADMX-backed policies in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
