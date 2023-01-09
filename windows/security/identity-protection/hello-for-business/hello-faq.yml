@@ -153,7 +153,8 @@ sections:
           Windows Hello for Business is not designed to work with local accounts.
       - question: What are the biometric requirements for Windows Hello for Business?
         answer: |
-          Read [Windows Hello biometric requirements](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information.      - question: Can I wear a mask to enroll or unlock using Windows Hello face authentication?
+          Read [Windows Hello biometric requirements](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information.
+      - question: Can I wear a mask to enroll or unlock using Windows Hello face authentication?
         answer: |
           Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock your device. The product group is aware of this behavior and is investigating this article further. Remove a mask if you're wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn't allow you to remove a mask temporarily, consider un-enrolling from face authentication and only using PIN or fingerprint.
       - question: How does Windows Hello for Business work with Azure AD registered devices?
