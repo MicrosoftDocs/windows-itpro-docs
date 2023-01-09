@@ -1,200 +1,296 @@
 ---
-title: Policy CSP - ADMX_DiskNVCache
-description: Learn about Policy CSP - ADMX_DiskNVCache.
+title: ADMX_DiskNVCache Policy CSP
+description: Learn more about the ADMX_DiskNVCache Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 08/12/2020
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_DiskNVCache-Begin -->
 # Policy CSP - ADMX_DiskNVCache
 
-
-<hr/>
-
-<!--Policies-->
-## ADMX_DiskNVCache policies
-
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
+<!-- ADMX_DiskNVCache-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DiskNVCache-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-disknvcache-bootresumepolicy">ADMX_DiskNVCache/BootResumePolicy</a>
-  </dd>
-  <dd>
-    <a href="#admx-disknvcache-featureoffpolicy">ADMX_DiskNVCache/FeatureOffPolicy</a>
-  </dd>
-  <dd>
-    <a href="#admx-disknvcache-solidstatepolicy">ADMX_DiskNVCache/SolidStatePolicy</a>
-  </dd>
-</dl>
+<!-- BootResumePolicy-Begin -->
+## BootResumePolicy
 
+<!-- BootResumePolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- BootResumePolicy-Applicability-End -->
 
-<hr/>
+<!-- BootResumePolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DiskNVCache/BootResumePolicy
+```
+<!-- BootResumePolicy-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-disknvcache-bootresumepolicy"></a>**ADMX_DiskNVCache/BootResumePolicy**
-<!--SupportedSKUs-->
+<!-- BootResumePolicy-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off the boot and resume optimizations for the hybrid hard disks in the system.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you enable this policy setting, the system does not use the non-volatile (NV) cache to optimize boot and resume.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you disable this policy setting, the system uses the NV cache to achieve faster boot and resume. The system determines the data that will be stored in the NV cache to optimize boot and resume. The required data is stored in the NV cache during shutdown and hibernate, respectively. This might cause a slight increase in the time taken for shutdown and hibernate.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you do not configure this policy setting, the default behavior is observed and the NV cache is used for boot and resume optimizations.
 
-> [!div class = "checklist"]
-> * Device
+> [!NOTE]
+> This policy setting is applicable only if the NV cache feature is on.
+<!-- BootResumePolicy-Description-End -->
 
-<hr/>
+<!-- BootResumePolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- BootResumePolicy-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting turns off the boot and resumes optimizations for the hybrid hard disks in the system.
+<!-- BootResumePolicy-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this policy setting, the system doesn't use the non-volatile (NV) cache to optimize boot and resume.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- BootResumePolicy-DFProperties-End -->
 
-The system determines the data that will be stored in the NV cache to optimize boot and resume.
+<!-- BootResumePolicy-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-The required data is stored in the NV cache during shutdown and hibernate, respectively. This storage in such a location might cause a slight increase in the time taken for shutdown and hibernate.  If you don't configure this policy setting, the default behavior is observed and the NV cache is used for boot and resume optimizations.
+**ADMX mapping**:
 
-This policy setting is applicable only if the NV cache feature is on.
+| Name | Value |
+|:--|:--|
+| Name | BootResumePolicy |
+| Friendly Name | Turn off boot and resume optimizations |
+| Location | Computer Configuration |
+| Path | System > Disk NV Cache |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NvCache |
+| Registry Value Name | OptimizeBootAndResume |
+| ADMX File Name | DiskNVCache.admx |
+<!-- BootResumePolicy-AdmxBacked-End -->
 
-<!--/Description-->
+<!-- BootResumePolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- BootResumePolicy-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off boot and resume optimizations*
--   GP name: *BootResumePolicy*
--   GP path: *System\Disk NV Cache*
--   GP ADMX file name: *DiskNVCache.admx*
+<!-- BootResumePolicy-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- CachePowerModePolicy-Begin -->
+## CachePowerModePolicy
 
-<a href="" id="admx-disknvcache-featureoffpolicy"></a>**ADMX_DiskNVCache/FeatureOffPolicy**
-<!--SupportedSKUs-->
+<!-- CachePowerModePolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CachePowerModePolicy-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CachePowerModePolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DiskNVCache/CachePowerModePolicy
+```
+<!-- CachePowerModePolicy-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CachePowerModePolicy-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off power save mode on the hybrid hard disks in the system.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you enable this policy setting, the hard disks are not put into NV cache power save mode and no power savings are achieved.
 
-> [!div class = "checklist"]
-> * Device
+- If you disable this policy setting, the hard disks are put into an NV cache power saving mode. In this mode, the system tries to save power by aggressively spinning down the disk.
 
-<hr/>
+- If you do not configure this policy setting, the default behavior is to allow the hybrid hard disks to be in power save mode.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting turns off all support for the non-volatile (NV) cache on all hybrid hard disks in the system.
+> [!NOTE]
+> This policy setting is applicable only if the NV cache feature is on.
+<!-- CachePowerModePolicy-Description-End -->
 
-To check if you have hybrid hard disks in the system, from Device Manager, right-click the disk drive and select Properties. The NV cache can be used to optimize boot and resume by reading data from the cache while the disks are spinning up. The NV cache can also be used to reduce the power consumption of the system by keeping the disks spun down while satisfying reads and writes from the cache.
+<!-- CachePowerModePolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CachePowerModePolicy-Editable-End -->
 
-If you enable this policy setting, the system won't manage the NV cache and won't enable NV cache power saving mode.
+<!-- CachePowerModePolicy-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable this policy setting, the system will manage the NV cache on the disks if the other policy settings for the NV cache are appropriately configured.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CachePowerModePolicy-DFProperties-End -->
 
-This policy setting will take effect on next boot.  If you don't configure this policy setting, the default behavior is to turn on support for the NV cache.
+<!-- CachePowerModePolicy-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--/Description-->
+**ADMX mapping**:
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off non-volatile cache feature*
--   GP name: *FeatureOffPolicy*
--   GP path: *System\Disk NV Cache*
--   GP ADMX file name: *DiskNVCache.admx*
+| Name | Value |
+|:--|:--|
+| Name | CachePowerModePolicy |
+| Friendly Name | Turn off cache power mode |
+| Location | Computer Configuration |
+| Path | System > Disk NV Cache |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NvCache |
+| Registry Value Name | EnablePowerModeState |
+| ADMX File Name | DiskNVCache.admx |
+<!-- CachePowerModePolicy-AdmxBacked-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- CachePowerModePolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CachePowerModePolicy-Examples-End -->
 
-<hr/>
+<!-- CachePowerModePolicy-End -->
 
-<!--Policy-->
-<a href="" id="admx-disknvcache-solidstatepolicy"></a>**ADMX_DiskNVCache/SolidStatePolicy**
-<!--SupportedSKUs-->
+<!-- FeatureOffPolicy-Begin -->
+## FeatureOffPolicy
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- FeatureOffPolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- FeatureOffPolicy-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- FeatureOffPolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DiskNVCache/FeatureOffPolicy
+```
+<!-- FeatureOffPolicy-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- FeatureOffPolicy-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off all support for the non-volatile (NV) cache on all hybrid hard disks in the system. To check if you have hybrid hard disks in the system, from Device Manager, right-click the disk drive and select Properties. The NV cache can be used to optimize boot and resume by reading data from the cache while the disks are spinning up. The NV cache can also be used to reduce the power consumption of the system by keeping the disks spun down while satisfying reads and writes from the cache.
 
-> [!div class = "checklist"]
-> * Device
+- If you enable this policy setting, the system will not manage the NV cache and will not enable NV cache power saving mode.
 
-<hr/>
+- If you disable this policy setting, the system will manage the NV cache on the disks if the other policy settings for the NV cache are appropriately configured.
 
-<!--/Scope-->
-<!--Description-->
+> [!NOTE]
+> This policy setting will take effect on next boot.
+
+- If you do not configure this policy setting, the default behavior is to turn on support for the NV cache.
+<!-- FeatureOffPolicy-Description-End -->
+
+<!-- FeatureOffPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- FeatureOffPolicy-Editable-End -->
+
+<!-- FeatureOffPolicy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- FeatureOffPolicy-DFProperties-End -->
+
+<!-- FeatureOffPolicy-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | FeatureOffPolicy |
+| Friendly Name | Turn off non-volatile cache feature |
+| Location | Computer Configuration |
+| Path | System > Disk NV Cache |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NvCache |
+| Registry Value Name | EnableNvCache |
+| ADMX File Name | DiskNVCache.admx |
+<!-- FeatureOffPolicy-AdmxBacked-End -->
+
+<!-- FeatureOffPolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- FeatureOffPolicy-Examples-End -->
+
+<!-- FeatureOffPolicy-End -->
+
+<!-- SolidStatePolicy-Begin -->
+## SolidStatePolicy
+
+<!-- SolidStatePolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SolidStatePolicy-Applicability-End -->
+
+<!-- SolidStatePolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DiskNVCache/SolidStatePolicy
+```
+<!-- SolidStatePolicy-OmaUri-End -->
+
+<!-- SolidStatePolicy-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting turns off the solid state mode for the hybrid hard disks.
 
-If you enable this policy setting, frequently written files such as the file system metadata and registry may not be stored in the NV cache.
+- If you enable this policy setting, frequently written files such as the file system metadata and registry may not be stored in the NV cache.
 
-If you disable this policy setting, the system will store frequently written data into the non-volatile (NV) cache. This storage allows the system to exclusively run out of the NV cache and power down the disk for longer periods to save power.
+- If you disable this policy setting, the system will store frequently written data into the non-volatile (NV) cache. This allows the system to exclusively run out of the NV cache and power down the disk for longer periods to save power. **Note** that this can cause increased wear of the NV cache.
 
-This can cause increased wear of the NV cache.  If you don't configure this policy setting, the default behavior of the system is observed and frequently written files will be stored in the NV cache.
+- If you do not configure this policy setting, the default behavior of the system is observed and frequently written files will be stored in the NV cache.
 
->[!Note]
+> [!NOTE]
 > This policy setting is applicable only if the NV cache feature is on.
+<!-- SolidStatePolicy-Description-End -->
 
+<!-- SolidStatePolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SolidStatePolicy-Editable-End -->
 
-<!--/Description-->
+<!-- SolidStatePolicy-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off solid state mode*
--   GP name: *SolidStatePolicy*
--   GP path: *System\Disk NV Cache*
--   GP ADMX file name: *DiskNVCache.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SolidStatePolicy-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- SolidStatePolicy-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<hr/>
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | SolidStatePolicy |
+| Friendly Name | Turn off solid state mode |
+| Location | Computer Configuration |
+| Path | System > Disk NV Cache |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NvCache |
+| Registry Value Name | EnableSolidStateMode |
+| ADMX File Name | DiskNVCache.admx |
+<!-- SolidStatePolicy-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- SolidStatePolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SolidStatePolicy-Examples-End -->
 
-## Related topics
+<!-- SolidStatePolicy-End -->
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+<!-- ADMX_DiskNVCache-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DiskNVCache-CspMoreInfo-End -->
+
+<!-- ADMX_DiskNVCache-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -24,8 +24,9 @@ ms.topic: reference
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!-- ADMX_LocationProviderAdm-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->[!WARNING]
-Some information relates to pre-released products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!WARNING]
+> Some information relates to pre-released products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 <!-- ADMX_LocationProviderAdm-Editable-End -->
 
 <!-- DisableWindowsLocationProvider_1-Begin -->
