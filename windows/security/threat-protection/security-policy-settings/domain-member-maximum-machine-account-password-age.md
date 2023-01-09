@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Domain member: Maximum machine account password age
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Domain member: Maximum machine account password age** security policy setting.

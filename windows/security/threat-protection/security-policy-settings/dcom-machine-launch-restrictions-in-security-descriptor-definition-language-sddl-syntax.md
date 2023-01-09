@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # DCOM: Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **DCOM: Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax** security policy setting.
