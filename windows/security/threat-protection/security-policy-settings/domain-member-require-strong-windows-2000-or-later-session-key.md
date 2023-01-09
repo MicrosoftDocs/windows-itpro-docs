@@ -20,7 +20,8 @@ ms.technology: itpro-security
 # Domain member: Require strong (Windows 2000 or later) session key
 
 **Applies to**
--   Windows 10
+-   Windows 11
+-   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Domain member: Require strong (Windows 2000 or later) session key** security policy setting.
 
