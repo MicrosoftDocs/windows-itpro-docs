@@ -1,10 +1,10 @@
 ---
 title: TaskScheduler Policy CSP
-description: Learn more about the TaskScheduler Area in Policy CSP
+description: Learn more about the TaskScheduler Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/08/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -59,8 +59,8 @@ This setting determines whether the specific task is enabled (1) or disabled (0)
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled |
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
 <!-- EnableXboxGameSaveTask-AllowedValues-End -->
 
 <!-- EnableXboxGameSaveTask-Examples-Begin -->

@@ -1,10 +1,10 @@
 ---
 title: Power Policy CSP
-description: Learn more about the Power Area in Policy CSP
+description: Learn more about the Power Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/20/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - Power
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -44,7 +42,7 @@ ms.topic: reference
 
 <!-- AllowHibernate-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting decides if hibernate on the machine is allowed or not. Supported values: 0 – Disable hibernate. 1 (default) - Allow hibernate.
+This policy setting decides if hibernate on the machine is allowed or not. Supported values: 0 - Disable hibernate. 1 (default) - Allow hibernate.
 <!-- AllowHibernate-Description-End -->
 
 <!-- AllowHibernate-Editable-Begin -->
@@ -95,9 +93,9 @@ This policy setting decides if hibernate on the machine is allowed or not. Suppo
 <!-- Description-Source-ADMX -->
 This policy setting manages whether or not Windows is allowed to use standby states when putting the computer in a sleep state.
 
-If you enable or do not configure this policy setting, Windows uses standby states to put the computer in a sleep state.
+- If you enable or do not configure this policy setting, Windows uses standby states to put the computer in a sleep state.
 
-If you disable this policy setting, standby states (S1-S3) are not allowed.
+- If you disable this policy setting, standby states (S1-S3) are not allowed.
 <!-- AllowStandbyStatesWhenSleepingOnBattery-Description-End -->
 
 <!-- AllowStandbyStatesWhenSleepingOnBattery-Editable-Begin -->
@@ -115,13 +113,13 @@ If you disable this policy setting, standby states (S1-S3) are not allowed.
 
 <!-- AllowStandbyStatesWhenSleepingOnBattery-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | AllowStandbyStatesDC |
+| Name | AllowStandbyStatesDC_2 |
 | Friendly Name | Allow standby states (S1-S3) when sleeping (on battery) |
 | Location | Computer Configuration |
 | Path | System > Power Management > Sleep Settings |
@@ -155,9 +153,9 @@ If you disable this policy setting, standby states (S1-S3) are not allowed.
 <!-- Description-Source-ADMX -->
 This policy setting manages whether or not Windows is allowed to use standby states when putting the computer in a sleep state.
 
-If you enable or do not configure this policy setting, Windows uses standby states to put the computer in a sleep state.
+- If you enable or do not configure this policy setting, Windows uses standby states to put the computer in a sleep state.
 
-If you disable this policy setting, standby states (S1-S3) are not allowed.
+- If you disable this policy setting, standby states (S1-S3) are not allowed.
 <!-- AllowStandbyWhenSleepingPluggedIn-Description-End -->
 
 <!-- AllowStandbyWhenSleepingPluggedIn-Editable-Begin -->
@@ -175,13 +173,13 @@ If you disable this policy setting, standby states (S1-S3) are not allowed.
 
 <!-- AllowStandbyWhenSleepingPluggedIn-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | AllowStandbyStatesAC |
+| Name | AllowStandbyStatesAC_2 |
 | Friendly Name | Allow standby states (S1-S3) when sleeping (plugged in) |
 | Location | Computer Configuration |
 | Path | System > Power Management > Sleep Settings |
@@ -215,9 +213,9 @@ If you disable this policy setting, standby states (S1-S3) are not allowed.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows turns off the display.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or do not configure this policy setting, users control this setting.
 
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- DisplayOffTimeoutOnBattery-Description-End -->
@@ -237,13 +235,13 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!-- DisplayOffTimeoutOnBattery-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | VideoPowerDownTimeOutDC |
+| Name | VideoPowerDownTimeOutDC_2 |
 | Friendly Name | Turn off the display (on battery) |
 | Location | Computer Configuration |
 | Path | System > Power Management > Video and Display Settings |
@@ -276,9 +274,9 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows turns off the display.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or do not configure this policy setting, users control this setting.
 
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- DisplayOffTimeoutPluggedIn-Description-End -->
@@ -298,13 +296,13 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!-- DisplayOffTimeoutPluggedIn-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | VideoPowerDownTimeOutAC |
+| Name | VideoPowerDownTimeOutAC_2 |
 | Friendly Name | Turn off the display (plugged in) |
 | Location | Computer Configuration |
 | Path | System > Power Management > Video and Display Settings |
@@ -335,7 +333,9 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!-- EnergySaverBatteryThresholdOnBattery-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to specify battery charge level at which Energy Saver is turned on. If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level. If you disable or do not configure this policy setting, users control this setting.
+This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
+- If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level.
+- If you disable or do not configure this policy setting, users control this setting.
 <!-- EnergySaverBatteryThresholdOnBattery-Description-End -->
 
 <!-- EnergySaverBatteryThresholdOnBattery-Editable-Begin -->
@@ -390,7 +390,9 @@ This policy setting allows you to specify battery charge level at which Energy S
 
 <!-- EnergySaverBatteryThresholdPluggedIn-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to specify battery charge level at which Energy Saver is turned on. If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level. If you disable or do not configure this policy setting, users control this setting.
+This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
+- If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level.
+- If you disable or do not configure this policy setting, users control this setting.
 <!-- EnergySaverBatteryThresholdPluggedIn-Description-End -->
 
 <!-- EnergySaverBatteryThresholdPluggedIn-Editable-Begin -->
@@ -447,9 +449,9 @@ This policy setting allows you to specify battery charge level at which Energy S
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or do not configure this policy setting, users control this setting.
 
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- HibernateTimeoutOnBattery-Description-End -->
@@ -469,13 +471,13 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!-- HibernateTimeoutOnBattery-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DCHibernateTimeOut |
+| Name | DCHibernateTimeOut_2 |
 | Friendly Name | Specify the system hibernate timeout (on battery) |
 | Location | Computer Configuration |
 | Path | System > Power Management > Sleep Settings |
@@ -508,9 +510,9 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or do not configure this policy setting, users control this setting.
 
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- HibernateTimeoutPluggedIn-Description-End -->
@@ -530,13 +532,13 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!-- HibernateTimeoutPluggedIn-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | ACHibernateTimeOut |
+| Name | ACHibernateTimeOut_2 |
 | Friendly Name | Specify the system hibernate timeout (plugged in) |
 | Location | Computer Configuration |
 | Path | System > Power Management > Sleep Settings |
@@ -569,9 +571,9 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- Description-Source-ADMX -->
 This policy setting specifies whether or not the user is prompted for a password when the system resumes from sleep.
 
-If you enable or do not configure this policy setting, the user is prompted for a password when the system resumes from sleep.
+- If you enable or do not configure this policy setting, the user is prompted for a password when the system resumes from sleep.
 
-If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
+- If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
 <!-- RequirePasswordWhenComputerWakesOnBattery-Description-End -->
 
 <!-- RequirePasswordWhenComputerWakesOnBattery-Editable-Begin -->
@@ -589,13 +591,13 @@ If you disable this policy setting, the user is not prompted for a password when
 
 <!-- RequirePasswordWhenComputerWakesOnBattery-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DCPromptForPasswordOnResume |
+| Name | DCPromptForPasswordOnResume_2 |
 | Friendly Name | Require a password when a computer wakes (on battery) |
 | Location | Computer Configuration |
 | Path | System > Power Management > Sleep Settings |
@@ -629,9 +631,9 @@ If you disable this policy setting, the user is not prompted for a password when
 <!-- Description-Source-ADMX -->
 This policy setting specifies whether or not the user is prompted for a password when the system resumes from sleep.
 
-If you enable or do not configure this policy setting, the user is prompted for a password when the system resumes from sleep.
+- If you enable or do not configure this policy setting, the user is prompted for a password when the system resumes from sleep.
 
-If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
+- If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
 <!-- RequirePasswordWhenComputerWakesPluggedIn-Description-End -->
 
 <!-- RequirePasswordWhenComputerWakesPluggedIn-Editable-Begin -->
@@ -649,13 +651,13 @@ If you disable this policy setting, the user is not prompted for a password when
 
 <!-- RequirePasswordWhenComputerWakesPluggedIn-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | ACPromptForPasswordOnResume |
+| Name | ACPromptForPasswordOnResume_2 |
 | Friendly Name | Require a password when a computer wakes (plugged in) |
 | Location | Computer Configuration |
 | Path | System > Power Management > Sleep Settings |
@@ -687,7 +689,8 @@ If you disable this policy setting, the user is not prompted for a password when
 
 <!-- SelectLidCloseActionOnBattery-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action. If you disable this policy setting or do not configure it, users can see and change this setting.
+This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action.
+- If you disable this policy setting or do not configure it, users can see and change this setting.
 <!-- SelectLidCloseActionOnBattery-Description-End -->
 
 <!-- SelectLidCloseActionOnBattery-Editable-Begin -->
@@ -709,10 +712,10 @@ This policy setting specifies the action that Windows takes when a user closes t
 
 | Value | Description |
 |:--|:--|
-| 0 | Take no action |
-| 1 (Default) | Sleep |
-| 2 | System hibernate sleep state |
-| 3 | System shutdown |
+| 0 | Take no action. |
+| 1 (Default) | Sleep. |
+| 2 | System hibernate sleep state. |
+| 3 | System shutdown. |
 <!-- SelectLidCloseActionOnBattery-AllowedValues-End -->
 
 <!-- SelectLidCloseActionOnBattery-GpMapping-Begin -->
@@ -752,7 +755,8 @@ This policy setting specifies the action that Windows takes when a user closes t
 
 <!-- SelectLidCloseActionPluggedIn-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action. If you disable this policy setting or do not configure it, users can see and change this setting.
+This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action.
+- If you disable this policy setting or do not configure it, users can see and change this setting.
 <!-- SelectLidCloseActionPluggedIn-Description-End -->
 
 <!-- SelectLidCloseActionPluggedIn-Editable-Begin -->
@@ -774,10 +778,10 @@ This policy setting specifies the action that Windows takes when a user closes t
 
 | Value | Description |
 |:--|:--|
-| 0 | Take no action |
-| 1 (Default) | Sleep |
-| 2 | System hibernate sleep state |
-| 3 | System shutdown |
+| 0 | Take no action. |
+| 1 (Default) | Sleep. |
+| 2 | System hibernate sleep state. |
+| 3 | System shutdown. |
 <!-- SelectLidCloseActionPluggedIn-AllowedValues-End -->
 
 <!-- SelectLidCloseActionPluggedIn-GpMapping-Begin -->
@@ -817,7 +821,8 @@ This policy setting specifies the action that Windows takes when a user closes t
 
 <!-- SelectPowerButtonActionOnBattery-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting specifies the action that Windows takes when a user presses the power button. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action. If you disable this policy setting or do not configure it, users can see and change this setting.
+This policy setting specifies the action that Windows takes when a user presses the power button. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action.
+- If you disable this policy setting or do not configure it, users can see and change this setting.
 <!-- SelectPowerButtonActionOnBattery-Description-End -->
 
 <!-- SelectPowerButtonActionOnBattery-Editable-Begin -->
@@ -839,10 +844,10 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 | Value | Description |
 |:--|:--|
-| 0 | Take no action |
-| 1 (Default) | Sleep |
-| 2 | System hibernate sleep state |
-| 3 | System shutdown |
+| 0 | Take no action. |
+| 1 (Default) | Sleep. |
+| 2 | System hibernate sleep state. |
+| 3 | System shutdown. |
 <!-- SelectPowerButtonActionOnBattery-AllowedValues-End -->
 
 <!-- SelectPowerButtonActionOnBattery-GpMapping-Begin -->
@@ -882,7 +887,8 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 <!-- SelectPowerButtonActionPluggedIn-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting specifies the action that Windows takes when a user presses the power button. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action. If you disable this policy setting or do not configure it, users can see and change this setting.
+This policy setting specifies the action that Windows takes when a user presses the power button. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action.
+- If you disable this policy setting or do not configure it, users can see and change this setting.
 <!-- SelectPowerButtonActionPluggedIn-Description-End -->
 
 <!-- SelectPowerButtonActionPluggedIn-Editable-Begin -->
@@ -904,10 +910,10 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 | Value | Description |
 |:--|:--|
-| 0 | Take no action |
-| 1 (Default) | Sleep |
-| 2 | System hibernate sleep state |
-| 3 | System shutdown |
+| 0 | Take no action. |
+| 1 (Default) | Sleep. |
+| 2 | System hibernate sleep state. |
+| 3 | System shutdown. |
 <!-- SelectPowerButtonActionPluggedIn-AllowedValues-End -->
 
 <!-- SelectPowerButtonActionPluggedIn-GpMapping-Begin -->
@@ -947,7 +953,8 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 <!-- SelectSleepButtonActionOnBattery-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting specifies the action that Windows takes when a user presses the sleep button. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action. If you disable this policy setting or do not configure it, users can see and change this setting.
+This policy setting specifies the action that Windows takes when a user presses the sleep button. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action.
+- If you disable this policy setting or do not configure it, users can see and change this setting.
 <!-- SelectSleepButtonActionOnBattery-Description-End -->
 
 <!-- SelectSleepButtonActionOnBattery-Editable-Begin -->
@@ -969,10 +976,10 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 | Value | Description |
 |:--|:--|
-| 0 | Take no action |
-| 1 (Default) | Sleep |
-| 2 | System hibernate sleep state |
-| 3 | System shutdown |
+| 0 | Take no action. |
+| 1 (Default) | Sleep. |
+| 2 | System hibernate sleep state. |
+| 3 | System shutdown. |
 <!-- SelectSleepButtonActionOnBattery-AllowedValues-End -->
 
 <!-- SelectSleepButtonActionOnBattery-GpMapping-Begin -->
@@ -1012,7 +1019,8 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 <!-- SelectSleepButtonActionPluggedIn-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting specifies the action that Windows takes when a user presses the sleep button. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action. If you disable this policy setting or do not configure it, users can see and change this setting.
+This policy setting specifies the action that Windows takes when a user presses the sleep button. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action.
+- If you disable this policy setting or do not configure it, users can see and change this setting.
 <!-- SelectSleepButtonActionPluggedIn-Description-End -->
 
 <!-- SelectSleepButtonActionPluggedIn-Editable-Begin -->
@@ -1034,10 +1042,10 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 | Value | Description |
 |:--|:--|
-| 0 | Take no action |
-| 1 (Default) | Sleep |
-| 2 | System hibernate sleep state |
-| 3 | System shutdown |
+| 0 | Take no action. |
+| 1 (Default) | Sleep. |
+| 2 | System hibernate sleep state. |
+| 3 | System shutdown. |
 <!-- SelectSleepButtonActionPluggedIn-AllowedValues-End -->
 
 <!-- SelectSleepButtonActionPluggedIn-GpMapping-Begin -->
@@ -1079,9 +1087,9 @@ This policy setting specifies the action that Windows takes when a user presses 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or do not configure this policy setting, users control this setting.
 
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- StandbyTimeoutOnBattery-Description-End -->
@@ -1101,13 +1109,13 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!-- StandbyTimeoutOnBattery-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DCStandbyTimeOut |
+| Name | DCStandbyTimeOut_2 |
 | Friendly Name | Specify the system sleep timeout (on battery) |
 | Location | Computer Configuration |
 | Path | System > Power Management > Sleep Settings |
@@ -1140,9 +1148,9 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or do not configure this policy setting, users control this setting.
 
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- StandbyTimeoutPluggedIn-Description-End -->
@@ -1162,13 +1170,13 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!-- StandbyTimeoutPluggedIn-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | ACStandbyTimeOut |
+| Name | ACStandbyTimeOut_2 |
 | Friendly Name | Specify the system sleep timeout (plugged in) |
 | Location | Computer Configuration |
 | Path | System > Power Management > Sleep Settings |
@@ -1201,9 +1209,9 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off hybrid sleep.
 
-If you enable this policy setting, a hiberfile is not generated when the system transitions to sleep (Stand By).
+- If you enable this policy setting, a hiberfile is not generated when the system transitions to sleep (Stand By).
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or do not configure this policy setting, users control this setting.
 <!-- TurnOffHybridSleepOnBattery-Description-End -->
 
 <!-- TurnOffHybridSleepOnBattery-Editable-Begin -->
@@ -1225,8 +1233,8 @@ If you disable or do not configure this policy setting, users control this setti
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) |  |
-| 1 | hybrid sleep |
+| 0 (Default) | . |
+| 1 | Hybrid sleep. |
 <!-- TurnOffHybridSleepOnBattery-AllowedValues-End -->
 
 <!-- TurnOffHybridSleepOnBattery-GpMapping-Begin -->
@@ -1268,9 +1276,9 @@ If you disable or do not configure this policy setting, users control this setti
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off hybrid sleep.
 
-If you enable this policy setting, a hiberfile is not generated when the system transitions to sleep (Stand By).
+- If you enable this policy setting, a hiberfile is not generated when the system transitions to sleep (Stand By).
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or do not configure this policy setting, users control this setting.
 <!-- TurnOffHybridSleepPluggedIn-Description-End -->
 
 <!-- TurnOffHybridSleepPluggedIn-Editable-Begin -->
@@ -1292,8 +1300,8 @@ If you disable or do not configure this policy setting, users control this setti
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) |  |
-| 1 | hybrid sleep |
+| 0 (Default) | . |
+| 1 | Hybrid sleep. |
 <!-- TurnOffHybridSleepPluggedIn-AllowedValues-End -->
 
 <!-- TurnOffHybridSleepPluggedIn-GpMapping-Begin -->
@@ -1333,7 +1341,9 @@ If you disable or do not configure this policy setting, users control this setti
 
 <!-- UnattendedSleepTimeoutOnBattery-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer. If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep. If you disable or do not configure this policy setting, users control this setting. If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep.
+- If you disable or do not configure this policy setting, users control this setting. If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- UnattendedSleepTimeoutOnBattery-Description-End -->
 
 <!-- UnattendedSleepTimeoutOnBattery-Editable-Begin -->
@@ -1388,7 +1398,9 @@ This policy setting allows you to specify the period of inactivity before Window
 
 <!-- UnattendedSleepTimeoutPluggedIn-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer. If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep. If you disable or do not configure this policy setting, users control this setting. If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep.
+- If you disable or do not configure this policy setting, users control this setting. If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- UnattendedSleepTimeoutPluggedIn-Description-End -->
 
 <!-- UnattendedSleepTimeoutPluggedIn-Editable-Begin -->

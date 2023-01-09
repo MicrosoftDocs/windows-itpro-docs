@@ -1,10 +1,10 @@
 ---
 title: DataProtection Policy CSP
-description: Learn more about the DataProtection Area in Policy CSP
+description: Learn more about the DataProtection Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -86,9 +86,10 @@ This policy setting allows you to block direct memory access (DMA) for all hot p
 
 <!-- LegacySelectiveWipeID-Description-Begin -->
 <!-- Description-Source-DDF -->
-Important. This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time. Setting used by Windows 8. 1 Selective Wipe.
+Important. This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time. Setting used by Windows 8. 1 Selective Wipe
 
-**Note**: This policy is not recommended for use in Windows 10.
+> [!NOTE]
+> This policy is not recommended for use in Windows 10.
 <!-- LegacySelectiveWipeID-Description-End -->
 
 <!-- LegacySelectiveWipeID-Editable-Begin -->

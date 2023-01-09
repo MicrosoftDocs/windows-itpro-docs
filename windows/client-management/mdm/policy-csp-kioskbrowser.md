@@ -1,10 +1,10 @@
 ---
 title: KioskBrowser Policy CSP
-description: Learn more about the KioskBrowser Area in Policy CSP
+description: Learn more about the KioskBrowser Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -201,8 +201,8 @@ When the policy is enabled, the Kiosk Browser app shows a button to reset the br
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- EnableEndSessionButton-AllowedValues-End -->
 
 <!-- EnableEndSessionButton-Examples-Begin -->
@@ -256,8 +256,8 @@ Enable/disable kiosk browser's home button.
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- EnableHomeButton-AllowedValues-End -->
 
 <!-- EnableHomeButton-Examples-Begin -->
@@ -311,8 +311,8 @@ Enable/disable kiosk browser's navigation buttons (forward/back).
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- EnableNavigationButtons-AllowedValues-End -->
 
 <!-- EnableNavigationButtons-Examples-Begin -->

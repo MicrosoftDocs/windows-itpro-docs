@@ -1,10 +1,10 @@
 ---
 title: WindowsDefenderSecurityCenter Policy CSP
-description: Learn more about the WindowsDefenderSecurityCenter Area in Policy CSP
+description: Learn more about the WindowsDefenderSecurityCenter Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/07/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,8 @@ ms.topic: reference
 
 <!-- CompanyName-Description-Begin -->
 <!-- Description-Source-DDF -->
-The company name that is displayed to the users. CompanyName is required for both EnableCustomizedToasts and EnableInAppCustomization. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display the contact options. Value type is string. Supported operations are Add, Get, Replace and Delete.
+The company name that is displayed to the users. CompanyName is required for both EnableCustomizedToasts and EnableInAppCustomization.
+- If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display the contact options. Value type is string. Supported operations are Add, Get, Replace and Delete.
 <!-- CompanyName-Description-End -->
 
 <!-- CompanyName-Editable-Begin -->
@@ -266,7 +267,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disabled or not configured) The security processor troubleshooting page shows a button that initiates the process to clear the security processor (TPM). |
-| 1 | (Enabled) The security processor troubleshooting page will not show a button to initiate the process to clear the security processor (TPM) |
+| 1 | (Enabled) The security processor troubleshooting page will not show a button to initiate the process to clear the security processor (TPM). |
 <!-- DisableClearTpmButton-AllowedValues-End -->
 
 <!-- DisableClearTpmButton-GpMapping-Begin -->
@@ -956,7 +957,8 @@ Same as Disabled.
 
 <!-- Email-Description-Begin -->
 <!-- Description-Source-DDF -->
-The email address that is displayed to users.  The default mail application is used to initiate email actions. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options. Value type is string. Supported operations are Add, Get, Replace and Delete.
+The email address that is displayed to users. The default mail application is used to initiate email actions.
+- If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options. Value type is string. Supported operations are Add, Get, Replace and Delete.
 <!-- Email-Description-End -->
 
 <!-- Email-Editable-Begin -->
@@ -1046,7 +1048,7 @@ Same as Disabled.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | notification text. |
+| 0 (Default) | Notification text. |
 | 1 | (Enable) Notifications contain the company name and contact options. |
 <!-- EnableCustomizedToasts-AllowedValues-End -->
 
@@ -1413,8 +1415,8 @@ Same as Disabled.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) |  |
-| 1 | Enabled |
+| 0 (Default) | . |
+| 1 | Enabled. |
 <!-- HideWindowsSecurityNotificationAreaControl-AllowedValues-End -->
 
 <!-- HideWindowsSecurityNotificationAreaControl-GpMapping-Begin -->
@@ -1454,7 +1456,8 @@ Same as Disabled.
 
 <!-- Phone-Description-Begin -->
 <!-- Description-Source-DDF -->
-The phone number or Skype ID that is displayed to users.  Skype is used to initiate the call. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options. Value type is string. Supported operations are Add, Get, Replace, and Delete.
+The phone number or Skype ID that is displayed to users. Skype is used to initiate the call.
+- If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options. Value type is string. Supported operations are Add, Get, Replace, and Delete.
 <!-- Phone-Description-End -->
 
 <!-- Phone-Editable-Begin -->
@@ -1507,7 +1510,8 @@ The phone number or Skype ID that is displayed to users.  Skype is used to init
 
 <!-- URL-Description-Begin -->
 <!-- Description-Source-DDF -->
-The help portal URL this is displayed to users.  The default browser is used to initiate this action. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then the device will not display contact options. Value type is Value type is string. Supported operations are Add, Get, Replace, and Delete.
+The help portal URL this is displayed to users. The default browser is used to initiate this action.
+- If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then the device will not display contact options. Value type is Value type is string. Supported operations are Add, Get, Replace, and Delete.
 <!-- URL-Description-End -->
 
 <!-- URL-Editable-Begin -->

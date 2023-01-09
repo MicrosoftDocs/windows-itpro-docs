@@ -1,10 +1,10 @@
 ---
 title: WirelessDisplay Policy CSP
-description: Learn more about the WirelessDisplay Area in Policy CSP
+description: Learn more about the WirelessDisplay Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/07/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -135,7 +135,9 @@ This policy setting allows you to turn off discovering the display service adver
 
 <!-- AllowMovementDetectionOnInfrastructure-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to disable the infrastructure movement detection feature. If you set it to 0, your PC may stay connected and continue to project if you walk away from a Wireless Display receiver to which you are projecting over infrastructure. If you set it to 1, your PC will detect that you have moved and will automatically disconnect your infrastructure Wireless Display session.
+This policy setting allows you to disable the infrastructure movement detection feature.
+If you set it to 0, your PC may stay connected and continue to project if you walk away from a Wireless Display receiver to which you are projecting over infrastructure.
+If you set it to 1, your PC will detect that you have moved and will automatically disconnect your infrastructure Wireless Display session.
 <!-- AllowMovementDetectionOnInfrastructure-Description-End -->
 
 <!-- AllowMovementDetectionOnInfrastructure-Editable-Begin -->
@@ -184,7 +186,9 @@ This policy setting allows you to disable the infrastructure movement detection 
 
 <!-- AllowPCReceiverToBeTCPServer-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows a PC acting as a Wireless Display receiver to be a TCP server for the TCP session carrying the projection stream to the receiver. If you set it to 0, your PC receiver will start the outbound connection as a TCP client. If you set it to 1, your PC may receive the incoming projection as a TCP server.
+This policy setting allows a PC acting as a Wireless Display receiver to be a TCP server for the TCP session carrying the projection stream to the receiver.
+If you set it to 0, your PC receiver will start the outbound connection as a TCP client.
+If you set it to 1, your PC may receive the incoming projection as a TCP server.
 <!-- AllowPCReceiverToBeTCPServer-Description-End -->
 
 <!-- AllowPCReceiverToBeTCPServer-Editable-Begin -->
@@ -233,7 +237,9 @@ This policy setting allows a PC acting as a Wireless Display receiver to be a TC
 
 <!-- AllowPCSenderToBeTCPClient-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows a PC acting as a Wireless Display sender to be a TCP client for the TCP session carrying the projection stream to the receiver. If you set it to 0, your PC will only participate in an outgoing projection as a TCP server. If you set it to 1, your PC may start an outgoing projection as a TCP client.
+This policy setting allows a PC acting as a Wireless Display sender to be a TCP client for the TCP session carrying the projection stream to the receiver.
+If you set it to 0, your PC will only participate in an outgoing projection as a TCP server.
+If you set it to 1, your PC may start an outgoing projection as a TCP client.
 <!-- AllowPCSenderToBeTCPClient-Description-End -->
 
 <!-- AllowPCSenderToBeTCPClient-Editable-Begin -->
@@ -282,7 +288,9 @@ This policy setting allows a PC acting as a Wireless Display sender to be a TCP 
 
 <!-- AllowProjectionFromPC-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy allows you to turn off projection from a PC. If you set it to 0, your PC cannot discover or project to other devices. If you set it to 1, your PC can discover and project to other devices.
+This policy allows you to turn off projection from a PC.
+If you set it to 0, your PC cannot discover or project to other devices.
+If you set it to 1, your PC can discover and project to other devices.
 <!-- AllowProjectionFromPC-Description-End -->
 
 <!-- AllowProjectionFromPC-Editable-Begin -->
@@ -331,7 +339,9 @@ This policy allows you to turn off projection from a PC. If you set it to 0, you
 
 <!-- AllowProjectionFromPCOverInfrastructure-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy allows you to turn off projection from a PC over infrastructure. If you set it to 0, your PC cannot discover or project to other infrastructure devices, though it may still be possible to discover and project over WiFi Direct. If you set it to 1, your PC can discover and project to other devices over infrastructure.
+This policy allows you to turn off projection from a PC over infrastructure.
+If you set it to 0, your PC cannot discover or project to other infrastructure devices, though it may still be possible to discover and project over WiFi Direct.
+If you set it to 1, your PC can discover and project to other devices over infrastructure.
 <!-- AllowProjectionFromPCOverInfrastructure-Description-End -->
 
 <!-- AllowProjectionFromPCOverInfrastructure-Editable-Begin -->
@@ -382,11 +392,7 @@ This policy allows you to turn off projection from a PC over infrastructure. If 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off projection to a PC.
 
-
-
 If you turn it on, your PC isn't discoverable and can't be projected to except if the user manually launches the Wireless Display app.
-
-
 
 If you turn it off or don't configure it, your PC is discoverable and can be projected to above lock screen only. The user has an option to turn it always on or off except for manual launch, too.
 <!-- AllowProjectionToPC-Description-End -->
@@ -451,7 +457,9 @@ If you turn it off or don't configure it, your PC is discoverable and can be pro
 
 <!-- AllowProjectionToPCOverInfrastructure-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to turn off projection to a PC over infrastructure. If you set it to 0, your PC cannot be discoverable and can't be projected to over infrastructure, though it may still be possible to project over WiFi Direct. If you set it to 1, your PC can be discoverable and can be projected to over infrastructure.
+This policy setting allows you to turn off projection to a PC over infrastructure.
+If you set it to 0, your PC cannot be discoverable and can't be projected to over infrastructure, though it may still be possible to project over WiFi Direct.
+If you set it to 1, your PC can be discoverable and can be projected to over infrastructure.
 <!-- AllowProjectionToPCOverInfrastructure-Description-End -->
 
 <!-- AllowProjectionToPCOverInfrastructure-Editable-Begin -->
@@ -500,7 +508,7 @@ This policy setting allows you to turn off projection to a PC over infrastructur
 
 <!-- AllowUserInputFromWirelessDisplayReceiver-Description-Begin -->
 <!-- Description-Source-DDF -->
-Setting this policy controls whether or not the wireless display can send input—keyboard, mouse, pen, and touch input if the display supports it—back to the source device.
+Setting this policy controls whether or not the wireless display can send input-keyboard, mouse, pen, and touch input if the display supports it-back to the source device.
 <!-- AllowUserInputFromWirelessDisplayReceiver-Description-End -->
 
 <!-- AllowUserInputFromWirelessDisplayReceiver-Editable-Begin -->
@@ -578,8 +586,8 @@ If you set this to 'Always', all pairings will require PIN.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | PIN is not required. |
-| 1 | Pairing ceremony for new devices will always require a PIN |
-| 2 | All pairings will require PIN |
+| 1 | Pairing ceremony for new devices will always require a PIN. |
+| 2 | All pairings will require PIN. |
 <!-- RequirePinForPairing-AllowedValues-End -->
 
 <!-- RequirePinForPairing-GpMapping-Begin -->

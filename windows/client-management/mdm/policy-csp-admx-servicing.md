@@ -1,10 +1,10 @@
 ---
 title: ADMX_Servicing Policy CSP
-description: Learn more about the ADMX_Servicing Area in Policy CSP
+description: Learn more about the ADMX_Servicing Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_Servicing
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,11 +44,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting specifies the network locations that will be used for the repair of operating system corruption and for enabling optional features that have had their payload files removed.
 
-If you enable this policy setting and specify the new location, the files in that location will be used to repair operating system corruption and for enabling optional features that have had their payload files removed. You must enter the fully qualified path to the new location in the ""Alternate source file path"" text box. Multiple locations can be specified when each path is separated by a semicolon.
+- If you enable this policy setting and specify the new location, the files in that location will be used to repair operating system corruption and for enabling optional features that have had their payload files removed. You must enter the fully qualified path to the new location in the "Alternate source file path" text box. Multiple locations can be specified when each path is separated by a semicolon.
 
-The network location can be either a folder, or a WIM file. If it is a WIM file, the location should be specified by prefixing the path with “wim:” and include the index of the image to use in the WIM file. For example “wim:\\server\share\install.wim:3”.
+The network location can be either a folder, or a WIM file. If it is a WIM file, the location should be specified by prefixing the path with "wim:" and include the index of the image to use in the WIM file. For example "wim:\\server\share\install.wim:3".
 
-If you disable or do not configure this policy setting, or if the required files cannot be found at the locations specified in this policy setting, the files will be downloaded from Windows Update, if that is allowed by the policy settings for the computer.
+- If you disable or do not configure this policy setting, or if the required files cannot be found at the locations specified in this policy setting, the files will be downloaded from Windows Update, if that is allowed by the policy settings for the computer.
 <!-- Servicing-Description-End -->
 
 <!-- Servicing-Editable-Begin -->
@@ -68,13 +66,13 @@ If you disable or do not configure this policy setting, or if the required files
 
 <!-- Servicing-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | CloudFulfillmentGPO |
+| Name | Servicing |
 | Friendly Name | Specify settings for optional component installation and component repair |
 | Location | Computer Configuration |
 | Path | System |

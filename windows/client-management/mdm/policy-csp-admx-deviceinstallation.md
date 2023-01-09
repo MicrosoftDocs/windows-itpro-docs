@@ -1,10 +1,10 @@
 ---
 title: ADMX_DeviceInstallation Policy CSP
-description: Learn more about the ADMX_DeviceInstallation Area in Policy CSP
+description: Learn more about the ADMX_DeviceInstallation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_DeviceInstallation
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,9 +44,10 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to determine whether members of the Administrators group can install and update the drivers for any device, regardless of other policy settings.
 
-If you enable this policy setting, members of the Administrators group can use the Add Hardware wizard or the Update Driver wizard to install and update the drivers for any device. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
+- If you enable this policy setting, members of the Administrators group can use the Add Hardware wizard or the Update Driver wizard to install and update the drivers for any device.
+- If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-If you disable or do not configure this policy setting, members of the Administrators group are subject to all policy settings that restrict device installation.
+- If you disable or do not configure this policy setting, members of the Administrators group are subject to all policy settings that restrict device installation.
 <!-- DeviceInstall_AllowAdminInstall-Description-End -->
 
 <!-- DeviceInstall_AllowAdminInstall-Editable-Begin -->
@@ -66,7 +65,7 @@ If you disable or do not configure this policy setting, members of the Administr
 
 <!-- DeviceInstall_AllowAdminInstall-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -106,9 +105,9 @@ If you disable or do not configure this policy setting, members of the Administr
 <!-- Description-Source-ADMX -->
 This policy setting allows you to display a custom message to users in a notification when a device installation is attempted and a policy setting prevents the installation.
 
-If you enable this policy setting, Windows displays the text you type in the Detail Text box when a policy setting prevents device installation.
+- If you enable this policy setting, Windows displays the text you type in the Detail Text box when a policy setting prevents device installation.
 
-If you disable or do not configure this policy setting, Windows displays a default message when a policy setting prevents device installation.
+- If you disable or do not configure this policy setting, Windows displays a default message when a policy setting prevents device installation.
 <!-- DeviceInstall_DeniedPolicy_DetailText-Description-End -->
 
 <!-- DeviceInstall_DeniedPolicy_DetailText-Editable-Begin -->
@@ -126,7 +125,7 @@ If you disable or do not configure this policy setting, Windows displays a defau
 
 <!-- DeviceInstall_DeniedPolicy_DetailText-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -165,9 +164,9 @@ If you disable or do not configure this policy setting, Windows displays a defau
 <!-- Description-Source-ADMX -->
 This policy setting allows you to display a custom message title in a notification when a device installation is attempted and a policy setting prevents the installation.
 
-If you enable this policy setting, Windows displays the text you type in the Main Text box as the title text of a notification when a policy setting prevents device installation.
+- If you enable this policy setting, Windows displays the text you type in the Main Text box as the title text of a notification when a policy setting prevents device installation.
 
-If you disable or do not configure this policy setting, Windows displays a default title in a notification when a policy setting prevents device installation.
+- If you disable or do not configure this policy setting, Windows displays a default title in a notification when a policy setting prevents device installation.
 <!-- DeviceInstall_DeniedPolicy_SimpleText-Description-End -->
 
 <!-- DeviceInstall_DeniedPolicy_SimpleText-Editable-Begin -->
@@ -185,7 +184,7 @@ If you disable or do not configure this policy setting, Windows displays a defau
 
 <!-- DeviceInstall_DeniedPolicy_SimpleText-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -224,9 +223,9 @@ If you disable or do not configure this policy setting, Windows displays a defau
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the number of seconds Windows waits for a device installation task to complete.
 
-If you enable this policy setting, Windows waits for the number of seconds you specify before terminating the installation.
+- If you enable this policy setting, Windows waits for the number of seconds you specify before terminating the installation.
 
-If you disable or do not configure this policy setting, Windows waits 240 seconds for a device installation task to complete before terminating the installation.
+- If you disable or do not configure this policy setting, Windows waits 240 seconds for a device installation task to complete before terminating the installation.
 <!-- DeviceInstall_InstallTimeout-Description-End -->
 
 <!-- DeviceInstall_InstallTimeout-Editable-Begin -->
@@ -244,7 +243,7 @@ If you disable or do not configure this policy setting, Windows waits 240 second
 
 <!-- DeviceInstall_InstallTimeout-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -283,11 +282,12 @@ If you disable or do not configure this policy setting, Windows waits 240 second
 <!-- Description-Source-ADMX -->
 This policy setting establishes the amount of time (in seconds) that the system will wait to reboot in order to enforce a change in device installation restriction policies.
 
-If you enable this policy setting, set the amount of seconds you want the system to wait until a reboot.
+- If you enable this policy setting, set the amount of seconds you want the system to wait until a reboot.
 
-If you disable or do not configure this policy setting, the system does not force a reboot.
+- If you disable or do not configure this policy setting, the system does not force a reboot.
 
-Note: If no reboot is forced, the device installation restriction right will not take effect until the system is restarted.
+> [!NOTE]
+> If no reboot is forced, the device installation restriction right will not take effect until the system is restarted.
 <!-- DeviceInstall_Policy_RebootTime-Description-End -->
 
 <!-- DeviceInstall_Policy_RebootTime-Editable-Begin -->
@@ -305,7 +305,7 @@ Note: If no reboot is forced, the device installation restriction right will not
 
 <!-- DeviceInstall_Policy_RebootTime-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -347,9 +347,10 @@ This policy setting allows you to prevent Windows from installing removable devi
 
 NOTE: To enable the "Allow installation of devices using drivers that match these device setup classes", "Allow installation of devices that match any of these device IDs", and "Allow installation of devices that match any of these device instance IDs" policy settings to supersede this policy setting for applicable devices, enable the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting.
 
-If you enable this policy setting, Windows is prevented from installing removable devices and existing removable devices cannot have their drivers updated. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of removable devices from a remote desktop client to the remote desktop server.
+- If you enable this policy setting, Windows is prevented from installing removable devices and existing removable devices cannot have their drivers updated.
+- If you enable this policy setting on a remote desktop server, the policy setting affects redirection of removable devices from a remote desktop client to the remote desktop server.
 
-If you disable or do not configure this policy setting, Windows can install and update driver packages for removable devices as allowed or prevented by other policy settings.
+- If you disable or do not configure this policy setting, Windows can install and update driver packages for removable devices as allowed or prevented by other policy settings.
 <!-- DeviceInstall_Removable_Deny-Description-End -->
 
 <!-- DeviceInstall_Removable_Deny-Editable-Begin -->
@@ -367,7 +368,7 @@ If you disable or do not configure this policy setting, Windows can install and 
 
 <!-- DeviceInstall_Removable_Deny-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -407,9 +408,9 @@ If you disable or do not configure this policy setting, Windows can install and 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent Windows from creating a system restore point during device activity that would normally prompt Windows to create a system restore point. Windows normally creates restore points for certain driver activity, such as the installation of an unsigned driver. A system restore point enables you to more easily restore your system to its state before the activity.
 
-If you enable this policy setting, Windows does not create a system restore point when one would normally be created.
+- If you enable this policy setting, Windows does not create a system restore point when one would normally be created.
 
-If you disable or do not configure this policy setting, Windows creates a system restore point as it normally would.
+- If you disable or do not configure this policy setting, Windows creates a system restore point as it normally would.
 <!-- DeviceInstall_SystemRestore-Description-End -->
 
 <!-- DeviceInstall_SystemRestore-Editable-Begin -->
@@ -427,7 +428,7 @@ If you disable or do not configure this policy setting, Windows creates a system
 
 <!-- DeviceInstall_SystemRestore-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -467,9 +468,9 @@ If you disable or do not configure this policy setting, Windows creates a system
 <!-- Description-Source-ADMX -->
 This policy setting specifies a list of device setup class GUIDs describing driver packages that non-administrator members of the built-in Users group may install on the system.
 
-If you enable this policy setting, members of the Users group may install new drivers for the specified device setup classes. The drivers must be signed according to Windows Driver Signing Policy, or be signed by publishers already in the TrustedPublisher store.
+- If you enable this policy setting, members of the Users group may install new drivers for the specified device setup classes. The drivers must be signed according to Windows Driver Signing Policy, or be signed by publishers already in the TrustedPublisher store.
 
-If you disable or do not configure this policy setting, only members of the Administrators group are allowed to install new driver packages on the system.
+- If you disable or do not configure this policy setting, only members of the Administrators group are allowed to install new driver packages on the system.
 <!-- DriverInstall_Classes_AllowUser-Description-End -->
 
 <!-- DriverInstall_Classes_AllowUser-Editable-Begin -->
@@ -487,7 +488,7 @@ If you disable or do not configure this policy setting, only members of the Admi
 
 <!-- DriverInstall_Classes_AllowUser-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

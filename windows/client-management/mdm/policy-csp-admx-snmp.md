@@ -1,10 +1,10 @@
 ---
 title: ADMX_Snmp Policy CSP
-description: Learn more about the ADMX_Snmp Area in Policy CSP
+description: Learn more about the ADMX_Snmp Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/04/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_Snmp
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -50,15 +48,17 @@ SNMP is a protocol designed to give a user the capability to remotely manage a c
 
 A valid community is a community recognized by the SNMP service, while a community is a group of hosts (servers, workstations, hubs, and routers) that are administered together by SNMP. The SNMP service is a managed network node that receives SNMP packets from the network.
 
-If you enable this policy setting, the SNMP agent only accepts requests from management systems within the communities it recognizes, and only SNMP Read operation is allowed for the community.
+- If you enable this policy setting, the SNMP agent only accepts requests from management systems within the communities it recognizes, and only SNMP Read operation is allowed for the community.
 
-If you disable or do not configure this policy setting, the SNMP service takes the Valid Communities configured on the local computer instead.
+- If you disable or do not configure this policy setting, the SNMP service takes the Valid Communities configured on the local computer instead.
 
 Best practice: For security purposes, it is recommended to restrict the HKLM\SOFTWARE\Policies\SNMP\Parameters\ValidCommunities key to allow only the local admin group full control.
 
-Note: It is good practice to use a cryptic community name.
+> [!NOTE]
+> It is good practice to use a cryptic community name.
 
-Note: This policy setting has no effect if the SNMP agent is not installed on the client computer.
+> [!NOTE]
+> This policy setting has no effect if the SNMP agent is not installed on the client computer.
 
 Also, see the other two SNMP settings: "Specify permitted managers" and "Specify trap configuration".
 <!-- SNMP_Communities-Description-End -->
@@ -78,7 +78,7 @@ Also, see the other two SNMP settings: "Specify permitted managers" and "Specify
 
 <!-- SNMP_Communities-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -121,13 +121,14 @@ Simple Network Management Protocol is a protocol designed to give a user the cap
 
 The manager is located on the host computer on the network. The manager's role is to poll the agents for certain requested information.
 
-If you enable this policy setting, the SNMP agent only accepts requests from the list of permitted managers that you configure using this setting.
+- If you enable this policy setting, the SNMP agent only accepts requests from the list of permitted managers that you configure using this setting.
 
-If you disable or do not configure this policy setting, SNMP service takes the permitted managers configured on the local computer instead.
+- If you disable or do not configure this policy setting, SNMP service takes the permitted managers configured on the local computer instead.
 
 Best practice: For security purposes, it is recommended to restrict the HKLM\SOFTWARE\Policies\SNMP\Parameters\PermittedManagers key to allow only the local admin group full control.
 
-Note: This policy setting has no effect if the SNMP agent is not installed on the client computer.
+> [!NOTE]
+> This policy setting has no effect if the SNMP agent is not installed on the client computer.
 
 Also, see the other two SNMP policy settings: "Specify trap configuration" and "Specify Community Name".
 <!-- SNMP_PermittedManagers-Description-End -->
@@ -147,7 +148,7 @@ Also, see the other two SNMP policy settings: "Specify trap configuration" and "
 
 <!-- SNMP_PermittedManagers-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -190,11 +191,12 @@ Simple Network Management Protocol is a protocol designed to give a user the cap
 
 This policy setting allows you to configure the name of the hosts that receive trap messages for the community sent by the SNMP service. A trap message is an alert or significant event that allows the SNMP agent to notify management systems asynchronously.
 
-If you enable this policy setting, the SNMP service sends trap messages to the hosts within the "public" community.
+- If you enable this policy setting, the SNMP service sends trap messages to the hosts within the "public" community.
 
-If you disable or do not configure this policy setting, the SNMP service takes the trap configuration configured on the local computer instead.
+- If you disable or do not configure this policy setting, the SNMP service takes the trap configuration configured on the local computer instead.
 
-Note: This setting has no effect if the SNMP agent is not installed on the client computer.
+> [!NOTE]
+> This setting has no effect if the SNMP agent is not installed on the client computer.
 
 Also, see the other two SNMP settings: "Specify permitted managers" and "Specify Community Name".
 <!-- SNMP_Traps_Public-Description-End -->
@@ -214,7 +216,7 @@ Also, see the other two SNMP settings: "Specify permitted managers" and "Specify
 
 <!-- SNMP_Traps_Public-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

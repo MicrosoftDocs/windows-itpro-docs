@@ -1,10 +1,10 @@
 ---
 title: ADMX_WinInit Policy CSP
-description: Learn more about the ADMX_WinInit Area in Policy CSP
+description: Learn more about the ADMX_WinInit Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_WinInit
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,9 +44,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting controls the legacy remote shutdown interface (named pipe). The named pipe remote shutdown interface is needed in order to shutdown this system from a remote Windows XP or Windows Server 2003 system.
 
-If you enable this policy setting, the system does not create the named pipe remote shutdown interface.
+- If you enable this policy setting, the system does not create the named pipe remote shutdown interface.
 
-If you disable or do not configure this policy setting, the system creates the named pipe remote shutdown interface.
+- If you disable or do not configure this policy setting, the system creates the named pipe remote shutdown interface.
 <!-- DisableNamedPipeShutdownPolicyDescription-Description-End -->
 
 <!-- DisableNamedPipeShutdownPolicyDescription-Editable-Begin -->
@@ -66,7 +64,7 @@ If you disable or do not configure this policy setting, the system creates the n
 
 <!-- DisableNamedPipeShutdownPolicyDescription-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -106,9 +104,9 @@ If you disable or do not configure this policy setting, the system creates the n
 <!-- Description-Source-ADMX -->
 This policy setting controls the use of fast startup.
 
-If you enable this policy setting, the system requires hibernate to be enabled.
+- If you enable this policy setting, the system requires hibernate to be enabled.
 
-If you disable or do not configure this policy setting, the local setting is used.
+- If you disable or do not configure this policy setting, the local setting is used.
 <!-- Hiberboot-Description-End -->
 
 <!-- Hiberboot-Editable-Begin -->
@@ -126,7 +124,7 @@ If you disable or do not configure this policy setting, the local setting is use
 
 <!-- Hiberboot-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -166,9 +164,9 @@ If you disable or do not configure this policy setting, the local setting is use
 <!-- Description-Source-ADMX -->
 This policy setting configures the number of minutes the system waits for the hung logon sessions before proceeding with the system shutdown.
 
-If you enable this policy setting, the system waits for the hung logon sessions for the number of minutes specified.
+- If you enable this policy setting, the system waits for the hung logon sessions for the number of minutes specified.
 
-If you disable or do not configure this policy setting, the default timeout value is 3 minutes for workstations and 15 minutes for servers.
+- If you disable or do not configure this policy setting, the default timeout value is 3 minutes for workstations and 15 minutes for servers.
 <!-- ShutdownTimeoutHungSessionsDescription-Description-End -->
 
 <!-- ShutdownTimeoutHungSessionsDescription-Editable-Begin -->
@@ -186,7 +184,7 @@ If you disable or do not configure this policy setting, the default timeout valu
 
 <!-- ShutdownTimeoutHungSessionsDescription-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

@@ -1,10 +1,10 @@
 ---
 title: ADMX_sdiagschd Policy CSP
-description: Learn more about the ADMX_sdiagschd Area in Policy CSP
+description: Learn more about the ADMX_sdiagschd Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_sdiagschd
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,13 +44,13 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Determines whether scheduled diagnostics will run to proactively detect and resolve system problems.
 
-If you enable this policy setting, you must choose an execution level. If you choose detection and troubleshooting only, Windows will periodically detect and troubleshoot problems. The user will be notified of the problem for interactive resolution.
+- If you enable this policy setting, you must choose an execution level. If you choose detection and troubleshooting only, Windows will periodically detect and troubleshoot problems. The user will be notified of the problem for interactive resolution.
 
 If you choose detection, troubleshooting and resolution, Windows will resolve some of these problems silently without requiring user input.
 
-If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve problems on a scheduled basis.
+- If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve problems on a scheduled basis.
 
-If you do not configure this policy setting, local troubleshooting preferences will take precedence, as configured in the control panel. If no local troubleshooting preference is configured, scheduled diagnostics are enabled for detection, troubleshooting and resolution by default.
+- If you do not configure this policy setting, local troubleshooting preferences will take precedence, as configured in the control panel. If no local troubleshooting preference is configured, scheduled diagnostics are enabled for detection, troubleshooting and resolution by default.
 
 No reboots or service restarts are required for this policy to take effect: changes take effect immediately.
 
@@ -74,7 +72,7 @@ This policy setting will only take effect when the Task Scheduler service is in 
 
 <!-- ScheduledDiagnosticsExecutionPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

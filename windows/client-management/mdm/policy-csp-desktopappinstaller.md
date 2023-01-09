@@ -1,10 +1,10 @@
 ---
 title: DesktopAppInstaller Policy CSP
-description: Learn more about the DesktopAppInstaller Area in Policy CSP
+description: Learn more about the DesktopAppInstaller Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,11 +44,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy controls additional sources provided by the enterprise IT administrator.
 
-If you do not configure this policy, no additional sources will be configured for the [Windows Package Manager](/windows/package-manager/).
+- If you do not configure this policy, no additional sources will be configured for the [Windows Package Manager](/windows/package-manager/).
 
-If you enable this policy, the additional sources will be added to the [Windows Package Manager](/windows/package-manager/) and cannot be removed. The representation for each additional source can be obtained from installed sources using '[winget source export](/windows/package-manager/winget)'.
+- If you enable this policy, the additional sources will be added to the [Windows Package Manager](/windows/package-manager/) and cannot be removed. The representation for each additional source can be obtained from installed sources using '[winget source export](/windows/package-manager/winget)'.
 
-If you disable this policy, no additional sources can be configured for the [Windows Package Manager](/windows/package-manager/).
+- If you disable this policy, no additional sources can be configured for the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableAdditionalSources-Description-End -->
 
 <!-- EnableAdditionalSources-Editable-Begin -->
@@ -106,11 +106,11 @@ If you disable this policy, no additional sources can be configured for the [Win
 <!-- Description-Source-ADMX -->
 This policy controls additional sources allowed by the enterprise IT administrator.
 
-If you do not configure this policy, users will be able to add or remove additional sources other than those configured by policy.
+- If you do not configure this policy, users will be able to add or remove additional sources other than those configured by policy.
 
-If you enable this policy, only the sources specified can be added or removed from the [Windows Package Manager](/windows/package-manager/). The representation for each allowed source can be obtained from installed sources using '[winget source export](/windows/package-manager/winget)'.
+- If you enable this policy, only the sources specified can be added or removed from the [Windows Package Manager](/windows/package-manager/). The representation for each allowed source can be obtained from installed sources using '[winget source export](/windows/package-manager/winget)'.
 
-If you disable this policy, no additional sources can be configured for the [Windows Package Manager](/windows/package-manager/).
+- If you disable this policy, no additional sources can be configured for the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableAllowedSources-Description-End -->
 
 <!-- EnableAllowedSources-Editable-Begin -->
@@ -168,9 +168,9 @@ If you disable this policy, no additional sources can be configured for the [Win
 <!-- Description-Source-ADMX -->
 This policy controls whether the [Windows Package Manager](/windows/package-manager/) can be used by users.
 
-If you enable or do not configure this setting, users will be able to use the [Windows Package Manager](/windows/package-manager/).
+- If you enable or do not configure this setting, users will be able to use the [Windows Package Manager](/windows/package-manager/).
 
-If you disable this setting, users will not be able to use the [Windows Package Manager](/windows/package-manager/).
+- If you disable this setting, users will not be able to use the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableAppInstaller-Description-End -->
 
 <!-- EnableAppInstaller-Editable-Begin -->
@@ -229,11 +229,11 @@ Users will still be able to execute the *winget* command. The default help will 
 <!-- Description-Source-ADMX -->
 This policy controls the default source included with the [Windows Package Manager](/windows/package-manager/).
 
-If you do not configure this setting, the default source for the [Windows Package Manager](/windows/package-manager/) will be available and can be removed.
+- If you do not configure this setting, the default source for the [Windows Package Manager](/windows/package-manager/) will be available and can be removed.
 
-If you enable this setting, the default source for the [Windows Package Manager](/windows/package-manager/) will be available and cannot be removed.
+- If you enable this setting, the default source for the [Windows Package Manager](/windows/package-manager/) will be available and cannot be removed.
 
-If you disable this setting the default source for the [Windows Package Manager](/windows/package-manager/) will not be available.
+- If you disable this setting the default source for the [Windows Package Manager](/windows/package-manager/) will not be available.
 <!-- EnableDefaultSource-Description-End -->
 
 <!-- EnableDefaultSource-Editable-Begin -->
@@ -291,9 +291,9 @@ If you disable this setting the default source for the [Windows Package Manager]
 <!-- Description-Source-ADMX -->
 This policy controls whether users can enable experimental features in the [Windows Package Manager](/windows/package-manager/).
 
-If you enable or do not configure this setting, users will be able to enable experimental features for the [Windows Package Manager](/windows/package-manager/).
+- If you enable or do not configure this setting, users will be able to enable experimental features for the [Windows Package Manager](/windows/package-manager/).
 
-If you disable this setting, users will not be able to enable experimental features for the [Windows Package Manager](/windows/package-manager/).
+- If you disable this setting, users will not be able to enable experimental features for the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableExperimentalFeatures-Description-End -->
 
 <!-- EnableExperimentalFeatures-Editable-Begin -->
@@ -352,9 +352,9 @@ Experimental features are used during Windows Package Manager development cycle 
 <!-- Description-Source-ADMX -->
 This policy controls whether or not the [Windows Package Manager](/windows/package-manager/) can be configured to enable the ability override the SHA256 security validation in settings.
 
-If you enable or do not configure this policy, users will be able to enable the ability override the SHA256 security validation in the [Windows Package Manager](/windows/package-manager/) settings.
+- If you enable or do not configure this policy, users will be able to enable the ability override the SHA256 security validation in the [Windows Package Manager](/windows/package-manager/) settings.
 
-If you disable this policy, users will not be able to enable the ability override the SHA256 security validation in the [Windows Package Manager](/windows/package-manager/) settings.
+- If you disable this policy, users will not be able to enable the ability override the SHA256 security validation in the [Windows Package Manager](/windows/package-manager/) settings.
 <!-- EnableHashOverride-Description-End -->
 
 <!-- EnableHashOverride-Editable-Begin -->
@@ -412,9 +412,9 @@ If you disable this policy, users will not be able to enable the ability overrid
 <!-- Description-Source-ADMX -->
 This policy controls whether users can install packages with local manifest files.
 
-If you enable or do not configure this setting, users will be able to install packages with local manifests using the [Windows Package Manager](/windows/package-manager/).
+- If you enable or do not configure this setting, users will be able to install packages with local manifests using the [Windows Package Manager](/windows/package-manager/).
 
-If you disable this setting, users will not be able to install packages with local manifests using the [Windows Package Manager](/windows/package-manager/).
+- If you disable this setting, users will not be able to install packages with local manifests using the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableLocalManifestFiles-Description-End -->
 
 <!-- EnableLocalManifestFiles-Editable-Begin -->
@@ -472,11 +472,11 @@ If you disable this setting, users will not be able to install packages with loc
 <!-- Description-Source-ADMX -->
 This policy controls the Microsoft Store source included with the [Windows Package Manager](/windows/package-manager/).
 
-If you do not configure this setting, the Microsoft Store source for the Windows Package manager will be available and can be removed.
+- If you do not configure this setting, the Microsoft Store source for the Windows Package manager will be available and can be removed.
 
-If you enable this setting, the Microsoft Store source for the [Windows Package Manager](/windows/package-manager/) will be available and cannot be removed.
+- If you enable this setting, the Microsoft Store source for the [Windows Package Manager](/windows/package-manager/) will be available and cannot be removed.
 
-If you disable this setting the Microsoft Store source for the [Windows Package Manager](/windows/package-manager/) will not be available.
+- If you disable this setting the Microsoft Store source for the [Windows Package Manager](/windows/package-manager/) will not be available.
 <!-- EnableMicrosoftStoreSource-Description-End -->
 
 <!-- EnableMicrosoftStoreSource-Editable-Begin -->
@@ -534,9 +534,9 @@ If you disable this setting the Microsoft Store source for the [Windows Package 
 <!-- Description-Source-ADMX -->
 This policy controls whether users can install packages from a website that is using the ms-appinstaller protocol.
 
-If you enable or do not configure this setting, users will be able to install packages from websites that use this protocol.
+- If you enable or do not configure this setting, users will be able to install packages from websites that use this protocol.
 
-If you disable this setting, users will not be able to install packages from websites that use this protocol.
+- If you disable this setting, users will not be able to install packages from websites that use this protocol.
 <!-- EnableMSAppInstallerProtocol-Description-End -->
 
 <!-- EnableMSAppInstallerProtocol-Editable-Begin -->
@@ -594,9 +594,9 @@ If you disable this setting, users will not be able to install packages from web
 <!-- Description-Source-ADMX -->
 This policy controls whether users can change their settings.
 
-If you enable or do not configure this setting, users will be able to change settings for the [Windows Package Manager](/windows/package-manager/).
+- If you enable or do not configure this setting, users will be able to change settings for the [Windows Package Manager](/windows/package-manager/).
 
-If you disable this setting, users will not be able to change settings for the [Windows Package Manager](/windows/package-manager/).
+- If you disable this setting, users will not be able to change settings for the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableSettings-Description-End -->
 
 <!-- EnableSettings-Editable-Begin -->
@@ -655,9 +655,9 @@ The settings are stored inside of a .json file on the user’s system. It may be
 <!-- Description-Source-ADMX -->
 This policy controls the auto update interval for package-based sources.
 
-If you disable or do not configure this setting, the default interval or the value specified in settings will be used by the [Windows Package Manager](/windows/package-manager/).
+- If you disable or do not configure this setting, the default interval or the value specified in settings will be used by the [Windows Package Manager](/windows/package-manager/).
 
-If you enable this setting, the number of minutes specified will be used by the [Windows Package Manager](/windows/package-manager/).
+- If you enable this setting, the number of minutes specified will be used by the [Windows Package Manager](/windows/package-manager/).
 <!-- SourceAutoUpdateInterval-Description-End -->
 
 <!-- SourceAutoUpdateInterval-Editable-Begin -->

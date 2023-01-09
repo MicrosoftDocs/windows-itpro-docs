@@ -1,10 +1,10 @@
 ---
 title: NetworkListManager Policy CSP
-description: Learn more about the NetworkListManager Area in Policy CSP
+description: Learn more about the NetworkListManager Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/20/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -54,7 +54,6 @@ When entering a list of TLS endpoints in Microsoft Intune, use the following for
 - The client must trust the server certificate. So the CA certificate that the HTTPS server certificate chains to must be present in the client machine's root certificate store.
 
 - A certificate shouldn't be a public certificate.
-
 <!-- AllowedTlsAuthenticationEndpoints-Editable-End -->
 
 <!-- AllowedTlsAuthenticationEndpoints-DFProperties-Begin -->
@@ -97,7 +96,6 @@ The string will be used to name the network authenticated against one of the end
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 This policy setting provides the string that names a network. If this setting is used for Trusted Network Detection in an Always On VPN profile, it must be the DNS suffix that is configured in the TrustedNetworkDetection attribute.
-
 <!-- ConfiguredTlsAuthenticationNetworkName-Editable-End -->
 
 <!-- ConfiguredTlsAuthenticationNetworkName-DFProperties-Begin -->

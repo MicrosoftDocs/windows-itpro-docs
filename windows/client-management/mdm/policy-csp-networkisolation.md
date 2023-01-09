@@ -1,10 +1,10 @@
 ---
 title: NetworkIsolation Policy CSP
-description: Learn more about the NetworkIsolation Area in Policy CSP
+description: Learn more about the NetworkIsolation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/20/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -188,7 +188,6 @@ Sets the enterprise IP ranges that define the computers in the enterprise networ
 2a01:110::-2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,
 fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 ```
-
 <!-- EnterpriseIPRange-Examples-End -->
 
 <!-- EnterpriseIPRange-End -->
@@ -214,9 +213,9 @@ This setting does not apply to desktop apps.
 
 Turns off Windows Network Isolation's automatic discovery of private network hosts in the domain corporate environment.
 
-If you enable this policy setting, it turns off Windows Network Isolation's automatic discovery of private network hosts in the domain corporate environment. Only network hosts within the address ranges configured via Group Policy will be classified as private.
+- If you enable this policy setting, it turns off Windows Network Isolation's automatic discovery of private network hosts in the domain corporate environment. Only network hosts within the address ranges configured via Group Policy will be classified as private.
 
-If you disable or do not configure this policy setting, Windows Network Isolation attempts to automatically discover your private network hosts in the domain corporate environment.
+- If you disable or do not configure this policy setting, Windows Network Isolation attempts to automatically discover your private network hosts in the domain corporate environment.
 
 For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 <!-- EnterpriseIPRangesAreAuthoritative-Description-End -->
@@ -240,8 +239,8 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- EnterpriseIPRangesAreAuthoritative-AllowedValues-End -->
 
 <!-- EnterpriseIPRangesAreAuthoritative-GpMapping-Begin -->
@@ -281,9 +280,10 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 <!-- EnterpriseNetworkDomainNames-Description-Begin -->
 <!-- Description-Source-DDF -->
-This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to. This is a comma-separated list of domains, for example contoso. sharepoint. com, Fabrikam. com.
+This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to. This is a comma-separated list of domains, for example contoso. sharepoint. com, Fabrikam. com
 
-**Note**: The client requires domain name to be canonical, otherwise the setting will be rejected by the client. Here are the steps to create canonical domain names:Transform the ASCII characters (A-Z only) to lower case. For example, Microsoft. COM -> microsoft. com. Call IdnToAscii with IDN_USE_STD3_ASCII_RULES as the flags. Call IdnToUnicode with no flags set (dwFlags = 0).
+> [!NOTE]
+> The client requires domain name to be canonical, otherwise the setting will be rejected by the client. Here are the steps to create canonical domain namesTransform the ASCII characters (A-Z only) to lower case. For example, Microsoft. COM -> microsoft. com. Call IdnToAscii with IDN_USE_STD3_ASCII_RULES as the flags. Call IdnToUnicode with no flags set (dwFlags = 0).
 <!-- EnterpriseNetworkDomainNames-Description-End -->
 
 <!-- EnterpriseNetworkDomainNames-Editable-Begin -->
@@ -293,7 +293,6 @@ For more information, see the following APIs:
 
 - [IdnToAscii function (winnls.h)](/windows/win32/api/winnls/nf-winnls-idntoascii)
 - [IdnToUnicode function (winnls.h)](/windows/win32/api/winnls/nf-winnls-idntounicode)
-
 <!-- EnterpriseNetworkDomainNames-Editable-End -->
 
 <!-- EnterpriseNetworkDomainNames-DFProperties-Begin -->
@@ -387,9 +386,9 @@ This setting does not apply to desktop apps.
 
 Turns off Windows Network Isolation's automatic proxy discovery in the domain corporate environment.
 
-If you enable this policy setting, it turns off Windows Network Isolation's automatic proxy discovery in the domain corporate environment. Only proxies configured with Group Policy are authoritative. This applies to both Internet and intranet proxies.
+- If you enable this policy setting, it turns off Windows Network Isolation's automatic proxy discovery in the domain corporate environment. Only proxies configured with Group Policy are authoritative. This applies to both Internet and intranet proxies.
 
-If you disable or do not configure this policy setting, Windows Network Isolation attempts to automatically discover your proxy server addresses.
+- If you disable or do not configure this policy setting, Windows Network Isolation attempts to automatically discover your proxy server addresses.
 
 For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 <!-- EnterpriseProxyServersAreAuthoritative-Description-End -->
@@ -413,8 +412,8 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- EnterpriseProxyServersAreAuthoritative-AllowedValues-End -->
 
 <!-- EnterpriseProxyServersAreAuthoritative-GpMapping-Begin -->

@@ -1,10 +1,10 @@
 ---
 title: ADMX_Globalization Policy CSP
-description: Learn more about the ADMX_Globalization Area in Policy CSP
+description: Learn more about the ADMX_Globalization Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -115,7 +115,8 @@ The policy setting "Restrict user locales" can also be enabled to disallow selec
 - If you disable or do not configure this policy setting, the user can select a custom locale as their user locale.
 
 - If this policy setting is enabled at the machine level, it cannot be disabled by a per-user policy setting.
-- If this policy setting is disabled at the machine level, the per-user policy setting will be ignored. If this policy setting is not configured at the machine level, restrictions will be based on per-user policy settings.
+- If this policy setting is disabled at the machine level, the per-user policy setting will be ignored.
+- If this policy setting is not configured at the machine level, restrictions will be based on per-user policy settings.
 
 To set this policy setting on a per-user basis, make sure that you do not configure the per-machine policy setting.
 <!-- CustomLocalesNoSelect_1-Description-End -->
@@ -184,7 +185,8 @@ The policy setting "Restrict user locales" can also be enabled to disallow selec
 - If you disable or do not configure this policy setting, the user can select a custom locale as their user locale.
 
 - If this policy setting is enabled at the machine level, it cannot be disabled by a per-user policy setting.
-- If this policy setting is disabled at the machine level, the per-user policy setting will be ignored. If this policy setting is not configured at the machine level, restrictions will be based on per-user policy settings.
+- If this policy setting is disabled at the machine level, the per-user policy setting will be ignored.
+- If this policy setting is not configured at the machine level, restrictions will be based on per-user policy settings.
 
 To set this policy setting on a per-user basis, make sure that you do not configure the per-machine policy setting.
 <!-- CustomLocalesNoSelect_2-Description-End -->
@@ -724,7 +726,8 @@ The locale list is specified using language tags, separated by a semicolon (;). 
 - If you disable or do not configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.
 
 - If this policy setting is enabled at the computer level, it cannot be disabled by a per-user policy.
-- If this policy setting is disabled at the computer level, the per-user policy is ignored. If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
+- If this policy setting is disabled at the computer level, the per-user policy is ignored.
+- If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
 <!-- LocaleUserRestrict_1-Description-End -->
 
 <!-- LocaleUserRestrict_1-Editable-Begin -->
@@ -791,7 +794,8 @@ The locale list is specified using language tags, separated by a semicolon (;). 
 - If you disable or do not configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.
 
 - If this policy setting is enabled at the computer level, it cannot be disabled by a per-user policy.
-- If this policy setting is disabled at the computer level, the per-user policy is ignored. If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
+- If this policy setting is disabled at the computer level, the per-user policy is ignored.
+- If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
 <!-- LocaleUserRestrict_2-Description-End -->
 
 <!-- LocaleUserRestrict_2-Editable-Begin -->

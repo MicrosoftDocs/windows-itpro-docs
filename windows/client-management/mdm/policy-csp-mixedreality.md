@@ -1,10 +1,10 @@
 ---
 title: MixedReality Policy CSP
-description: Learn more about the MixedReality Area in Policy CSP
+description: Learn more about the MixedReality Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,17 +17,13 @@ ms.topic: reference
 # Policy CSP - MixedReality
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!-- MixedReality-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 These policies are only supported on [Microsoft HoloLens 2](/hololens/hololens2-hardware). They're not supported on HoloLens (first gen) Development Edition or HoloLens (first gen) Commercial Suite devices.
-
 <!-- MixedReality-Editable-End -->
 
 <!-- AADGroupMembershipCacheValidityInDays-Begin -->
@@ -52,7 +48,6 @@ This policy controls for how many days, AAD group membership cache is allowed to
 
 <!-- AADGroupMembershipCacheValidityInDays-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 Steps to use this policy correctly:
 
 1. Create a device configuration profile for kiosk, which targets Azure AD groups. Assign it to the HoloLens devices.
@@ -66,7 +61,6 @@ Steps to use this policy correctly:
 
 > [!NOTE]
 > Until you do step 4 for an Azure AD user, the user will experience failure behavior similar to a disconnected environment.
-
 <!-- AADGroupMembershipCacheValidityInDays-Editable-End -->
 
 <!-- AADGroupMembershipCacheValidityInDays-DFProperties-Begin -->
@@ -108,9 +102,7 @@ This policy controls whether the device will display the captive portal flow on 
 
 <!-- AllowCaptivePortalBeforeLogon-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 This opt-in policy can help with the setup of new devices in new areas or new users. The captive portal allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if necessary.
-
 <!-- AllowCaptivePortalBeforeLogon-Editable-End -->
 
 <!-- AllowCaptivePortalBeforeLogon-DFProperties-Begin -->
@@ -155,16 +147,14 @@ This opt-in policy can help with the setup of new devices in new areas or new us
 
 <!-- AllowLaunchUriInSingleAppKiosk-Description-Begin -->
 <!-- Description-Source-DDF -->
-By default, launching applications via Launcher API (Launcher Class (Windows.System) - Windows UWP applications | Microsoft Docs) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
+By default, launching applications via Launcher API (Launcher Class (Windows. System) - Windows UWP applications | Microsoft Docs) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
 <!-- AllowLaunchUriInSingleAppKiosk-Description-End -->
 
 <!-- AllowLaunchUriInSingleAppKiosk-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 Enable this policy to allow for other apps to be launched within a single app kiosk. This behavior may be useful if you want to launch the Settings app to calibrate your device or change your Wi-Fi.
 
 For more information on the Launcher API, see [Launcher Class (Windows.System) - Windows UWP applications](/uwp/api/windows.system.launcher).
-
 <!-- AllowLaunchUriInSingleAppKiosk-Editable-End -->
 
 <!-- AllowLaunchUriInSingleAppKiosk-DFProperties-Begin -->
@@ -214,7 +204,6 @@ This policy controls whether a user will be automatically logged on. When the po
 
 <!-- AutoLogonUser-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 Some customers want to set up devices that are tied to an identity but don't want any sign-in experience. In this case, you can pick up a device and immediately use remote assist. It also allows you to rapidly distribute HoloLens devices and have users speed up sign-in.
 
 The string value is the email address of the user to automatically sign in.
@@ -225,7 +214,6 @@ On a device where you configure this policy, the user specified in the policy ne
 >
 > - Some events such as major OS updates may require the specified user to sign in to the device again to resume auto-logon behavior.
 > - Auto-logon is only supported for Microsoft accounts and Azure Active Directory (Azure AD) users.
-
 <!-- AutoLogonUser-Editable-End -->
 
 <!-- AutoLogonUser-DFProperties-Begin -->
@@ -358,14 +346,12 @@ This policy setting controls if pressing the brightness button changes the brigh
 
 <!-- ConfigureMovingPlatform-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy controls the behavior of moving platform feature on HoloLens 2, that is, whether it’s turned off / on or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. Please refer to HoloLens 2 Moving Platform Mode for background information.
+This policy controls the behavior of moving platform feature on HoloLens 2, that is, whether it's turned off / on or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. Please refer to HoloLens 2 Moving Platform Mode for background information.
 <!-- ConfigureMovingPlatform-Description-End -->
 
 <!-- ConfigureMovingPlatform-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 For more information, see [Moving platform mode on low dynamic motion moving platforms](/hololens/hololens2-moving-platform).
-
 <!-- ConfigureMovingPlatform-Editable-End -->
 
 <!-- ConfigureMovingPlatform-DFProperties-Begin -->
@@ -413,12 +399,12 @@ For more information, see [Moving platform mode on low dynamic motion moving pla
 <!-- Description-Source-ADMX -->
 This policy setting specifies a set of parameters for controlling the Windows NTP Client.
 
-If you enable this policy setting, you can specify the following parameters for the Windows NTP Client.
+- If you enable this policy setting, you can specify the following parameters for the Windows NTP Client.
 
-If you disable or do not configure this policy setting, the WIndows NTP Client uses the defaults of each of the following parameters.
+- If you disable or do not configure this policy setting, the WIndows NTP Client uses the defaults of each of the following parameters.
 
 NtpServer
-The Domain Name System (DNS) name or IP address of an NTP time source. This value is in the form of ""dnsName,flags"" where ""flags"" is a hexadecimal bitmask of the flags for that host. For more information, see the NTP Client Group Policy Settings Associated with Windows Time section of the Windows Time Service Group Policy Settings. The default value is ""time.windows.com,0x09"".
+The Domain Name System (DNS) name or IP address of an NTP time source. This value is in the form of "dnsName,flags" where "flags" is a hexadecimal bitmask of the flags for that host. For more information, see the NTP Client Group Policy Settings Associated with Windows Time section of the Windows Time Service Group Policy Settings. The default value is "time.windows.com,0x09".
 
 Type
 This value controls the authentication that W32time uses. The default value is NT5DS.
@@ -441,7 +427,6 @@ This value is a bitmask that controls events that may be logged to the System lo
 
 <!-- ConfigureNtpClient-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 **More information**:
 
 You may want to configure a different time server for your device fleet. You can use this policy to configure certain aspects of the NTP client. In the Settings app, the Time/Language page will show the time server after a time sync has occurred.
@@ -452,7 +437,6 @@ For more information, see [ADMX_W32Time Policy CSP - W32Time_Policy_Configure_NT
 > This policy also requires enabling [NtpClientEnabled](#ntpclientenabled).
 >
 > After you enable this policy, restart the device for the changes to apply.
-
 <!-- ConfigureNtpClient-Editable-End -->
 
 <!-- ConfigureNtpClient-DFProperties-Begin -->
@@ -466,7 +450,7 @@ For more information, see [ADMX_W32Time Policy CSP - W32Time_Policy_Configure_NT
 
 <!-- ConfigureNtpClient-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -481,7 +465,7 @@ For more information, see [ADMX_W32Time Policy CSP - W32Time_Policy_Configure_NT
 <!-- ConfigureNtpClient-AdmxBacked-End -->
 
 <!-- ConfigureNtpClient-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->\
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 
 **Example**:
 
@@ -497,7 +481,6 @@ The following XML string is an example of the value for this policy:
 <data id="W32TIME_SpecialPollInterval" value="1024"/>
 <data id="W32TIME_NtpClientEventLogFlags" value="0"/>
 ```
-
 <!-- ConfigureNtpClient-Examples-End -->
 
 <!-- ConfigureNtpClient-End -->
@@ -524,9 +507,7 @@ Network Connection Status Indicator (NCSI) detects Internet connectivity and cor
 
 <!-- DisallowNetworkConnectivityPassivePolling-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 Windows Network Connectivity Status Indicator may get a false positive internet-capable signal from passive polling. That behavior may result in the Wi-Fi adapter unexpectedly resetting when the device connects to an intranet-only access point. When you enable this policy, you can avoid unexpected network interruptions caused by false positive NCSI passive polling.
-
 <!-- DisallowNetworkConnectivityPassivePolling-Editable-End -->
 
 <!-- DisallowNetworkConnectivityPassivePolling-DFProperties-Begin -->
@@ -571,7 +552,7 @@ Windows Network Connectivity Status Indicator may get a false positive internet-
 
 <!-- EyeTrackingCalibrationPrompt-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy controls when a new person uses Hololens device, if Hololens should automatically ask to run eye calibration.
+This policy controls when a new person uses HoloLens device, if HoloLens should automatically ask to run eye calibration.
 <!-- EyeTrackingCalibrationPrompt-Description-End -->
 
 <!-- EyeTrackingCalibrationPrompt-Editable-Begin -->
@@ -675,14 +656,12 @@ This policy configures behavior of HUP to determine, which algorithm to use for 
 
 <!-- HeadTrackingMode-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 **Allowed values**:
 
 | Value | Description |
 |:--|:--|
 | `0` (Default) | Feature - Default feature based / SLAM-based tracker. |
 | `1` | Constellation - LR constellation based tracker. |
-
 <!-- HeadTrackingMode-Editable-End -->
 
 <!-- HeadTrackingMode-DFProperties-Begin -->
@@ -724,9 +703,7 @@ This policy controls whether the user can change down direction manually or not.
 
 <!-- ManualDownDirectionDisabled-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 When the system automatically determines the down direction, it's using the measured gravity vector.
-
 <!-- ManualDownDirectionDisabled-Editable-End -->
 
 <!-- ManualDownDirectionDisabled-DFProperties-Begin -->
@@ -824,16 +801,14 @@ This policy setting specifies whether the Windows NTP Client is enabled.
 
 Enabling the Windows NTP Client allows your computer to synchronize its computer clock with other NTP servers. You might want to disable this service if you decide to use a third-party time provider.
 
-If you enable this policy setting, you can set the local computer clock to synchronize time with NTP servers.
+- If you enable this policy setting, you can set the local computer clock to synchronize time with NTP servers.
 
-If you disable or do not configure this policy setting, the local computer clock does not synchronize time with NTP servers.
+- If you disable or do not configure this policy setting, the local computer clock does not synchronize time with NTP servers.
 <!-- NtpClientEnabled-Description-End -->
 
 <!-- NtpClientEnabled-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 For more information, see the [ConfigureNtpClient](#configurentpclient) policy.
-
 <!-- NtpClientEnabled-Editable-End -->
 
 <!-- NtpClientEnabled-DFProperties-Begin -->
@@ -847,7 +822,7 @@ For more information, see the [ConfigureNtpClient](#configurentpclient) policy.
 
 <!-- NtpClientEnabled-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -864,7 +839,6 @@ For more information, see the [ConfigureNtpClient](#configurentpclient) policy.
 
 <!-- NtpClientEnabled-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-
 **Example**:
 
 The following example XML string shows the value to enable this policy:
@@ -872,7 +846,6 @@ The following example XML string shows the value to enable this policy:
 ```xml
 <enabled/>
 ```
-
 <!-- NtpClientEnabled-Examples-End -->
 
 <!-- NtpClientEnabled-End -->
@@ -894,17 +867,13 @@ The following example XML string shows the value to enable this policy:
 
 <!-- SkipCalibrationDuringSetup-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy configures whether the device will take the user through the eye tracking calibration process during device setup and first time user setup. If this policy is enabled, the device will not show the eye tracking calibration process during device setup and first time user setup.
-
-**Note** that until the user goes through the calibration process, eye tracking will not work on the device. If an app requires eye tracking and the user has not gone through the calibration process, the user will be prompted to do so.
+This policy configures whether the device will take the user through the eye tracking calibration process during device setup and first time user setup. If this policy is enabled, the device will not show the eye tracking calibration process during device setup and first time user setup. **Note** that until the user goes through the calibration process, eye tracking will not work on the device. If an app requires eye tracking and the user has not gone through the calibration process, the user will be prompted to do so.
 <!-- SkipCalibrationDuringSetup-Description-End -->
 
 <!-- SkipCalibrationDuringSetup-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 > [!NOTE]
 > The user will still be able to calibrate their device from the Settings app.
-
 <!-- SkipCalibrationDuringSetup-Editable-End -->
 
 <!-- SkipCalibrationDuringSetup-DFProperties-Begin -->
@@ -954,9 +923,7 @@ This policy configures whether the device will take the user through a training 
 
 <!-- SkipTrainingDuringSetup-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 It skips the training experience of interactions with the hummingbird and Start menu training. The user will still be able to learn these movement controls from the Tips app.
-
 <!-- SkipTrainingDuringSetup-Editable-End -->
 
 <!-- SkipTrainingDuringSetup-DFProperties-Begin -->

@@ -1,10 +1,10 @@
 ---
 title: Security Policy CSP
-description: Learn more about the Security Area in Policy CSP
+description: Learn more about the Security Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/19/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -239,7 +239,7 @@ This policy is deprecated.
 
 <!-- ClearTPMIfNotReady-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting configures the system to prompt the user to clear the TPM if the TPM is detected to be in any state other than Ready. This policy will take effect only if the system’s TPM is in a state other than Ready, including if the TPM is “Ready, with reduced functionality”. The prompt to clear the TPM will start occurring after the next reboot, upon user login only if the logged in user is part of the Administrators group for the system. The prompt can be dismissed, but will reappear after every reboot and login until the policy is disabled or until the TPM is in a Ready state.
+This policy setting configures the system to prompt the user to clear the TPM if the TPM is detected to be in any state other than Ready. This policy will take effect only if the system's TPM is in a state other than Ready, including if the TPM is "Ready, with reduced functionality". The prompt to clear the TPM will start occurring after the next reboot, upon user login only if the logged in user is part of the Administrators group for the system. The prompt can be dismissed, but will reappear after every reboot and login until the policy is disabled or until the TPM is in a Ready state.
 <!-- ClearTPMIfNotReady-Description-End -->
 
 <!-- ClearTPMIfNotReady-Editable-Begin -->
@@ -307,6 +307,8 @@ Configures the use of passwords for Windows features
 
 <!-- ConfigureWindowsPasswords-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This policy is only supported in [Windows 10 S](/windows/deployment/s-mode).
 <!-- ConfigureWindowsPasswords-Editable-End -->
 
 <!-- ConfigureWindowsPasswords-DFProperties-Begin -->
@@ -324,9 +326,9 @@ Configures the use of passwords for Windows features
 
 | Value | Description |
 |:--|:--|
-| 0 | -Disallow passwords (Asymmetric credentials will be promoted to replace passwords on Windows features) |
-| 1 | Allow passwords (Passwords continue to be allowed to be used for Windows features) |
-| 2 (Default) | as per SKU and device capabilities. Windows 10 S devices will exhibit "Disallow passwords" default, and all other devices will default to "Allow passwords") |
+| 0 | Disallow passwords (Asymmetric credentials will be promoted to replace passwords on Windows features). |
+| 1 | Allow passwords (Passwords continue to be allowed to be used for Windows features). |
+| 2 (Default) | As per SKU and device capabilities. Windows 10 S devices will exhibit "Disallow passwords" default, and all other devices will default to "Allow passwords"). |
 <!-- ConfigureWindowsPasswords-AllowedValues-End -->
 
 <!-- ConfigureWindowsPasswords-Examples-Begin -->
@@ -359,7 +361,6 @@ Specifies whether to allow automatic device encryption during OOBE when the devi
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 For more information, see [BitLocker Device Encryption](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)
-
 <!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-Editable-End -->
 
 <!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-DFProperties-Begin -->
@@ -413,17 +414,16 @@ This policy controls the requirement of Admin Authentication in RecoveryEnvironm
 
 <!-- RecoveryEnvironmentAuthentication-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+**Validation procedure**:
 
-**Validation procedure**
-
-To validate this policy, check whether Refresh ("Keep my files") and Reset ("Remove everything") require administraor authentication in Windows Recovery Environment (WinRE).
+To validate this policy, check whether Refresh ("Keep my files") and Reset ("Remove everything") require administrator authentication in Windows Recovery Environment (WinRE).
 
 1. First, start Push Button Reset (PBR) in WinRE. Open a command prompt as an administrator and run the following command: `reagentc /boottore`
 1. The device should restart to WinRE. In the WinRE interface, go to **Troubleshoot** and select **Reset this PC**. You should see two options: **Keep my files** and **Remove everything**.
 1. Choose the option to **Keep my files**. View the behavior for authentication.
 1. Select the back arrow and choose **Remove everything**. View the behavior for authentication.
 
-    Instead of going back, alternatively you can go through the reset options, and select **Cancel** on the final confirmation page. It will then return to the main WinRE interface.
+Instead of going back, alternatively you can go through the reset options, and select **Cancel** on the final confirmation page. It will then return to the main WinRE interface.
 
 The following table shows what behavior is expected for the policy settings with each scenario:
 
@@ -435,7 +435,6 @@ The following table shows what behavior is expected for the policy settings with
 | Default (`0`)                  | :heavy_check_mark: | :x:                   |
 | RequireAuthentication" (`1`)   | :heavy_check_mark: | :heavy_check_mark:    |
 | NoRequireAuthentication" (`2`) | :x:                | :x:                   |
-
 <!-- RecoveryEnvironmentAuthentication-Editable-End -->
 
 <!-- RecoveryEnvironmentAuthentication-DFProperties-Begin -->
@@ -453,9 +452,9 @@ The following table shows what behavior is expected for the policy settings with
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | current) behavior |
-| 1 | RequireAuthentication: Admin Authentication is always required for components in RecoveryEnvironment |
-| 2 | NoRequireAuthentication: Admin Authentication is not required for components in RecoveryEnvironment |
+| 0 (Default) | Current) behavior. |
+| 1 | RequireAuthentication: Admin Authentication is always required for components in RecoveryEnvironment. |
+| 2 | NoRequireAuthentication: Admin Authentication is not required for components in RecoveryEnvironment. |
 <!-- RecoveryEnvironmentAuthentication-AllowedValues-End -->
 
 <!-- RecoveryEnvironmentAuthentication-Examples-Begin -->
@@ -481,9 +480,7 @@ The following table shows what behavior is expected for the policy settings with
 
 <!-- RequireDeviceEncryption-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows enterprise to turn on internal storage encryption. Most restricted value is 1.
-
-**Important**: If encryption has been enabled, it cannot be turned off by using this policy.
+Allows enterprise to turn on internal storage encryption. Most restricted value is 1. Important. If encryption has been enabled, it cannot be turned off by using this policy.
 <!-- RequireDeviceEncryption-Description-End -->
 
 <!-- RequireDeviceEncryption-Editable-Begin -->
@@ -581,9 +578,10 @@ Specifies whether provisioning packages must have a certificate signed by a devi
 
 <!-- RequireRetrieveHealthCertificateOnBoot-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether to retrieve and post TCG Boot logs, and get or cache an encrypted or signed Health Attestation Report from the Microsoft Health Attestation Service (HAS) when a device boots or reboots. Setting this policy to 1 (Required):Determines whether a device is capable of Remote Device Health Attestation, by verifying if the device has TPM 2. 0. Improves the performance of the device by enabling the device to fetch and cache data to reduce the latency during Device Health Verification.
+Specifies whether to retrieve and post TCG Boot logs, and get or cache an encrypted or signed Health Attestation Report from the Microsoft Health Attestation Service (HAS) when a device boots or reboots. Setting this policy to 1 (Required)Determines whether a device is capable of Remote Device Health Attestation, by verifying if the device has TPM 2. 0. Improves the performance of the device by enabling the device to fetch and cache data to reduce the latency during Device Health Verification
 
-**Note**: We recommend that this policy is set to Required after MDM enrollment. Most restricted value is 1.
+> [!NOTE]
+> We recommend that this policy is set to Required after MDM enrollment. Most restricted value is 1.
 <!-- RequireRetrieveHealthCertificateOnBoot-Description-End -->
 
 <!-- RequireRetrieveHealthCertificateOnBoot-Editable-Begin -->

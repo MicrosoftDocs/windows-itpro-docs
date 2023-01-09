@@ -1,10 +1,10 @@
 ---
 title: DeviceLock Policy CSP
-description: Learn more about the DeviceLock Area in Policy CSP
+description: Learn more about the DeviceLock Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -25,7 +25,6 @@ ms.topic: reference
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!IMPORTANT]
 > The DeviceLock CSP utilizes the [Exchange ActiveSync Policy Engine](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)). When password length and complexity rules are applied, all the local user and administrator accounts are marked to change their password at the next sign in to ensure complexity requirements are met. For more information, see [Password length and complexity supported by account types](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)#password-length-and-complexity-supported-by-account-types).
-
 <!-- DeviceLock-Editable-End -->
 
 <!-- AllowIdleReturnWithoutPassword-Begin -->
@@ -122,8 +121,8 @@ Specifies whether to show a user-configurable setting to control the screen time
 
 | Value | Description |
 |:--|:--|
-| 1 | Allow |
-| 0 (Default) | Block |
+| 1 | Allow. |
+| 0 (Default) | Block. |
 <!-- AllowScreenTimeoutWhileLockedUserConfig-AllowedValues-End -->
 
 <!-- AllowScreenTimeoutWhileLockedUserConfig-Examples-Begin -->
@@ -349,7 +348,6 @@ Specifies whether device lock is enabled.
 > - DevicePasswordHistory
 > - MaxDevicePasswordFailedAttempts
 > - MaxInactivityTimeDeviceLock
-
 <!-- DevicePasswordEnabled-Editable-End -->
 
 <!-- DevicePasswordEnabled-DFProperties-Begin -->
@@ -367,8 +365,8 @@ Specifies whether device lock is enabled.
 
 | Value | Description |
 |:--|:--|
-| 0 | Enabled |
-| 1 (Default) | Disabled |
+| 0 | Enabled. |
+| 1 (Default) | Disabled. |
 <!-- DevicePasswordEnabled-AllowedValues-End -->
 
 <!-- DevicePasswordEnabled-Examples-Begin -->
@@ -442,7 +440,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 
 <!-- DevicePasswordHistory-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies how many passwords can be stored in the history that can’t be used.
+Specifies how many passwords can be stored in the history that can't be used.
 <!-- DevicePasswordHistory-Description-End -->
 
 <!-- DevicePasswordHistory-Editable-Begin -->
@@ -569,9 +567,10 @@ Specifies the default lock screen and logon image shown when no user is signed i
 
 <!-- MaxDevicePasswordFailedAttempts-Description-Begin -->
 <!-- Description-Source-DDF -->
-The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality.
+The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality
 
-**Note**: This policy must be wrapped in an Atomic command. This policy has different behaviors on the mobile device and desktop. On a mobile device, when the user reaches the value set by this policy, then the device is wiped. On a desktop, when the user reaches the value set by this policy, it is not wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker is not enabled, then the policy cannot be enforced. Prior to reaching the failed attempts limit, the user is sent to the lock screen and warned that more failed attempts will lock their computer. When the user reaches the limit, the device automatically reboots and shows the BitLocker recovery page. This page prompts the user for the BitLocker recovery key. Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value. For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
+> [!NOTE]
+> This policy must be wrapped in an Atomic command. This policy has different behaviors on the mobile device and desktop. On a mobile device, when the user reaches the value set by this policy, then the device is wiped. On a desktop, when the user reaches the value set by this policy, it is not wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker is not enabled, then the policy cannot be enforced. Prior to reaching the failed attempts limit, the user is sent to the lock screen and warned that more failed attempts will lock their computer. When the user reaches the limit, the device automatically reboots and shows the BitLocker recovery page. This page prompts the user for the BitLocker recovery key. Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value. For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 <!-- MaxDevicePasswordFailedAttempts-Description-End -->
 
 <!-- MaxDevicePasswordFailedAttempts-Editable-Begin -->
@@ -613,7 +612,10 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <!-- MaximumPasswordAge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting determines the period of time (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If the maximum password age is between 1 and 999 days, the Minimum password age must be less than the maximum password age. If the maximum password age is set to 0, the minimum password age can be any value between 0 and 998 days. Note: It is a security best practice to have passwords expire every 30 to 90 days, depending on your environment. This way, an attacker has a limited amount of time in which to crack a user's password and have access to your network resources. Default: 42.
+This security setting determines the period of time (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If the maximum password age is between 1 and 999 days, the Minimum password age must be less than the maximum password age. If the maximum password age is set to 0, the minimum password age can be any value between 0 and 998 days
+
+> [!NOTE]
+> It is a security best practice to have passwords expire every 30 to 90 days, depending on your environment. This way, an attacker has a limited amount of time in which to crack a user's password and have access to your network resources. Default 42.
 <!-- MaximumPasswordAge-Description-End -->
 
 <!-- MaximumPasswordAge-Editable-Begin -->
@@ -662,8 +664,7 @@ This security setting determines the period of time (in days) that a password ca
 <!-- MaxInactivityTimeDeviceLock-OmaUri-End -->
 
 <!-- MaxInactivityTimeDeviceLock-Description-Begin -->
-<!-- Description-Source-DDF -->
-The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality.
+<!-- Description-Source-Manual-Forced -->
 <!-- MaxInactivityTimeDeviceLock-Description-End -->
 
 <!-- MaxInactivityTimeDeviceLock-Editable-Begin -->
@@ -801,10 +802,10 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Digits only |
-| 2 | Digits and lowercase letters are required |
-| 3 | Digits lowercase letters and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts |
-| 4 | Digits lowercase letters uppercase letters and special characters are required. Not supported in desktop |
+| 1 (Default) | Digits only. |
+| 2 | Digits and lowercase letters are required. |
+| 3 | Digits lowercase letters and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. |
+| 4 | Digits lowercase letters uppercase letters and special characters are required. Not supported in desktop. |
 <!-- MinDevicePasswordComplexCharacters-AllowedValues-End -->
 
 <!-- MinDevicePasswordComplexCharacters-Examples-Begin -->
@@ -950,9 +951,7 @@ This security setting determines the period of time (in days) that a password mu
 <!-- PasswordComplexity-OmaUri-End -->
 
 <!-- PasswordComplexity-Description-Begin -->
-<!-- Description-Source-DDF -->
-Password must meet complexity requirements
-This security setting determines whether passwords must meet complexity requirements. If this policy is enabled, passwords must meet the following minimum requirements: Not contain the user's account name or parts of the user's full name that exceed two consecutive characters Be at least six characters in length Contain characters from three of the following four categories: English uppercase characters (A through Z) English lowercase characters (a through z) Base 10 digits (0 through 9) Non-alphabetic characters (for example, !, $, #, %) Complexity requirements are enforced when passwords are changed or created.
+<!-- Description-Source-Manual-Forced -->
 <!-- PasswordComplexity-Description-End -->
 
 <!-- PasswordComplexity-Editable-Begin -->
@@ -1014,7 +1013,10 @@ Complexity requirements are enforced when passwords are changed or created.
 <!-- PasswordHistorySize-Description-Begin -->
 <!-- Description-Source-DDF -->
 Minimum password length
-This security setting determines the least number of characters that a password for a user account may contain. The maximum value for this setting is dependent on the value of the Relax minimum password length limits setting. If the Relax minimum password length limits setting is not defined, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and disabled, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and enabled, this setting may be configured from 0 to 128. Setting the required number of characters to 0 means that no password is required. Note: By default, member computers follow the configuration of their domain controllers. Default: 7 on domain controllers. 0 on stand-alone servers. Configuring this setting than 14 may affect compatibility with clients, services, and applications. Microsoft recommends that you only configure this setting larger than 14 after using the Minimum password length audit setting to test for potential incompatibilities at the new setting.
+This security setting determines the least number of characters that a password for a user account may contain. The maximum value for this setting is dependent on the value of the Relax minimum password length limits setting. If the Relax minimum password length limits setting is not defined, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and disabled, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and enabled, this setting may be configured from 0 to 128. Setting the required number of characters to 0 means that no password is required
+
+> [!NOTE]
+> By default, member computers follow the configuration of their domain controllers. Default 7 on domain controllers. 0 on stand-alone servers. Configuring this setting than 14 may affect compatibility with clients, services, and applications. Microsoft recommends that you only configure this setting larger than 14 after using the Minimum password length audit setting to test for potential incompatibilities at the new setting.
 <!-- PasswordHistorySize-Description-End -->
 
 <!-- PasswordHistorySize-Editable-Begin -->
@@ -1068,7 +1070,7 @@ Disables the lock screen camera toggle switch in PC Settings and prevents a came
 
 By default, users can enable invocation of an available camera on the lock screen.
 
-If you enable this setting, users will no longer be able to enable or disable lock screen camera access in PC Settings, and the camera cannot be invoked on the lock screen.
+- If you enable this setting, users will no longer be able to enable or disable lock screen camera access in PC Settings, and the camera cannot be invoked on the lock screen.
 <!-- PreventEnablingLockScreenCamera-Description-End -->
 
 <!-- PreventEnablingLockScreenCamera-Editable-Begin -->
@@ -1128,7 +1130,7 @@ Disables the lock screen slide show settings in PC Settings and prevents a slide
 
 By default, users can enable a slide show that will run after they lock the machine.
 
-If you enable this setting, users will no longer be able to modify slide show settings in PC Settings, and no slide show will ever start.
+- If you enable this setting, users will no longer be able to modify slide show settings in PC Settings, and no slide show will ever start.
 <!-- PreventLockScreenSlideShow-Description-End -->
 
 <!-- PreventLockScreenSlideShow-Editable-Begin -->

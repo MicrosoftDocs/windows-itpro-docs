@@ -1,10 +1,10 @@
 ---
 title: ADMX_MSI Policy CSP
-description: Learn more about the ADMX_MSI Area in Policy CSP
+description: Learn more about the ADMX_MSI Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_MSI
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,13 +44,13 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows users to search for installation files during privileged installations.
 
-If you enable this policy setting, the Browse button in the "Use feature from" dialog box is enabled. As a result, users can search for installation files even when the installation program is running with elevated system privileges.
+- If you enable this policy setting, the Browse button in the "Use feature from" dialog box is enabled. As a result, users can search for installation files even when the installation program is running with elevated system privileges.
 
 Because the installation is running with elevated system privileges, users can browse through directories that their own permissions would not allow.
 
 This policy setting does not affect installations that run in the user's security context. Also, see the "Remove browse dialog box for new source" policy setting.
 
-If you disable or do not configure this policy setting, by default, only system administrators can browse during installations with elevated privileges, such as installations offered on the desktop or displayed in Add or Remove Programs.
+- If you disable or do not configure this policy setting, by default, only system administrators can browse during installations with elevated privileges, such as installations offered on the desktop or displayed in Add or Remove Programs.
 <!-- AllowLockdownBrowse-Description-End -->
 
 <!-- AllowLockdownBrowse-Editable-Begin -->
@@ -70,7 +68,7 @@ If you disable or do not configure this policy setting, by default, only system 
 
 <!-- AllowLockdownBrowse-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -110,11 +108,11 @@ If you disable or do not configure this policy setting, by default, only system 
 <!-- Description-Source-ADMX -->
 This policy setting allows users to install programs from removable media during privileged installations.
 
-If you enable this policy setting, all users are permitted to install programs from removable media, such as floppy disks and CD-ROMs, even when the installation program is running with elevated system privileges.
+- If you enable this policy setting, all users are permitted to install programs from removable media, such as floppy disks and CD-ROMs, even when the installation program is running with elevated system privileges.
 
 This policy setting does not affect installations that run in the user's security context. By default, users can install from removable media when the installation runs in their own security context.
 
-If you disable or do not configure this policy setting, by default, users can install programs from removable media only when the installation runs in the user's security context. During privileged installations, such as those offered on the desktop or displayed in Add or Remove Programs, only system administrators can install from removable media.
+- If you disable or do not configure this policy setting, by default, users can install programs from removable media only when the installation runs in the user's security context. During privileged installations, such as those offered on the desktop or displayed in Add or Remove Programs, only system administrators can install from removable media.
 
 Also, see the "Prevent removable media source for any install" policy setting.
 <!-- AllowLockdownMedia-Description-End -->
@@ -134,7 +132,7 @@ Also, see the "Prevent removable media source for any install" policy setting.
 
 <!-- AllowLockdownMedia-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -174,9 +172,9 @@ Also, see the "Prevent removable media source for any install" policy setting.
 <!-- Description-Source-ADMX -->
 This policy setting allows users to patch elevated products.
 
-If you enable this policy setting, all users are permitted to install patches, even when the installation program is running with elevated system privileges. Patches are updates or upgrades that replace only those program files that have changed. Because patches can easily be vehicles for malicious programs, some installations prohibit their use.
+- If you enable this policy setting, all users are permitted to install patches, even when the installation program is running with elevated system privileges. Patches are updates or upgrades that replace only those program files that have changed. Because patches can easily be vehicles for malicious programs, some installations prohibit their use.
 
-If you disable or do not configure this policy setting, by default, only system administrators can apply patches during installations with elevated privileges, such as installations offered on the desktop or displayed in Add or Remove Programs.
+- If you disable or do not configure this policy setting, by default, only system administrators can apply patches during installations with elevated privileges, such as installations offered on the desktop or displayed in Add or Remove Programs.
 
 This policy setting does not affect installations that run in the user's security context. By default, users can install patches to programs that run in their own security context. Also, see the "Prohibit patching" policy setting.
 <!-- AllowLockdownPatch-Description-End -->
@@ -196,7 +194,7 @@ This policy setting does not affect installations that run in the user's securit
 
 <!-- AllowLockdownPatch-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -236,15 +234,15 @@ This policy setting does not affect installations that run in the user's securit
 <!-- Description-Source-ADMX -->
 This policy setting controls Windows Installer's interaction with the Restart Manager. The Restart Manager API can eliminate or reduce the number of system restarts that are required to complete an installation or update.
 
-If you enable this policy setting, you can use the options in the Prohibit Use of Restart Manager box to control file in use detection behavior.
+- If you enable this policy setting, you can use the options in the Prohibit Use of Restart Manager box to control file in use detection behavior.
 
--- The "Restart Manager On" option instructs Windows Installer to use Restart Manager to detect files in use and mitigate a system restart, when possible.
+- The "Restart Manager On" option instructs Windows Installer to use Restart Manager to detect files in use and mitigate a system restart, when possible.
 
--- The "Restart Manager Off" option turns off Restart Manager for file in use detection and the legacy file in use behavior is used.
+- The "Restart Manager Off" option turns off Restart Manager for file in use detection and the legacy file in use behavior is used.
 
--- The "Restart Manager Off for Legacy App Setup" option applies to packages that were created for Windows Installer versions lesser than 4.0. This option lets those packages display the legacy files in use UI while still using Restart Manager for detection.
+- The "Restart Manager Off for Legacy App Setup" option applies to packages that were created for Windows Installer versions lesser than 4.0. This option lets those packages display the legacy files in use UI while still using Restart Manager for detection.
 
-If you disable or do not configure this policy setting, Windows Installer will use Restart Manager to detect files in use and mitigate a system restart, when possible.
+- If you disable or do not configure this policy setting, Windows Installer will use Restart Manager to detect files in use and mitigate a system restart, when possible.
 <!-- DisableAutomaticApplicationShutdown-Description-End -->
 
 <!-- DisableAutomaticApplicationShutdown-Editable-Begin -->
@@ -262,7 +260,7 @@ If you disable or do not configure this policy setting, Windows Installer will u
 
 <!-- DisableAutomaticApplicationShutdown-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -301,11 +299,11 @@ If you disable or do not configure this policy setting, Windows Installer will u
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from searching for installation files when they add features or components to an installed program.
 
-If you enable this policy setting, the Browse button beside the "Use feature from" list in the Windows Installer dialog box is disabled. As a result, users must select an installation file source from the "Use features from" list that the system administrator configures.
+- If you enable this policy setting, the Browse button beside the "Use feature from" list in the Windows Installer dialog box is disabled. As a result, users must select an installation file source from the "Use features from" list that the system administrator configures.
 
 This policy setting applies even when the installation is running in the user's security context.
 
-If you disable or do not configure this policy setting, the Browse button is enabled when an installation is running in the user's security context. But only system administrators can browse when an installation is running with elevated system privileges, such as installations offered on the desktop or in Add or Remove Programs.
+- If you disable or do not configure this policy setting, the Browse button is enabled when an installation is running in the user's security context. But only system administrators can browse when an installation is running with elevated system privileges, such as installations offered on the desktop or in Add or Remove Programs.
 
 This policy setting affects Windows Installer only. It does not prevent users from selecting other browsers, such as File Explorer or Network Locations, to search for installation files.
 
@@ -327,7 +325,7 @@ Also, see the "Enable user to browse for source while elevated" policy setting.
 
 <!-- DisableBrowse-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -367,9 +365,9 @@ Also, see the "Enable user to browse for source while elevated" policy setting.
 <!-- Description-Source-ADMX -->
 This policy setting controls the ability to turn off all patch optimizations.
 
-If you enable this policy setting, all Patch Optimization options are turned off during the installation.
+- If you enable this policy setting, all Patch Optimization options are turned off during the installation.
 
-If you disable or do not configure this policy setting, it enables faster application of patches by removing execution of unnecessary actions. The flyweight patching mode is primarily designed for patches that just update a few files or registry values. The Installer will analyze the patch for specific changes to determine if optimization is possible. If so, the patch will be applied using a minimal set of processing.
+- If you disable or do not configure this policy setting, it enables faster application of patches by removing execution of unnecessary actions. The flyweight patching mode is primarily designed for patches that just update a few files or registry values. The Installer will analyze the patch for specific changes to determine if optimization is possible. If so, the patch will be applied using a minimal set of processing.
 <!-- DisableFlyweightPatching-Description-End -->
 
 <!-- DisableFlyweightPatching-Editable-Begin -->
@@ -387,7 +385,7 @@ If you disable or do not configure this policy setting, it enables faster applic
 
 <!-- DisableFlyweightPatching-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -426,13 +424,13 @@ If you disable or do not configure this policy setting, it enables faster applic
 <!-- Description-Source-ADMX -->
 This policy setting controls Windows Installer's processing of the MsiLogging property. The MsiLogging property in an installation package can be used to enable automatic logging of all install operations for the package.
 
-If you enable this policy setting, you can use the options in the Disable logging via package settings box to control automatic logging via package settings behavior.
+- If you enable this policy setting, you can use the options in the Disable logging via package settings box to control automatic logging via package settings behavior.
 
--- The "Logging via package settings on" option instructs Windows Installer to automatically generate log files for packages that include the MsiLogging property.
+- The "Logging via package settings on" option instructs Windows Installer to automatically generate log files for packages that include the MsiLogging property.
 
--- The "Logging via package settings off" option turns off the automatic logging behavior when specified via the MsiLogging policy. Log files can still be generated using the logging command line switch or the Logging policy.
+- The "Logging via package settings off" option turns off the automatic logging behavior when specified via the MsiLogging policy. Log files can still be generated using the logging command line switch or the Logging policy.
 
-If you disable or do not configure this policy setting, Windows Installer will automatically generate log files for those packages that include the MsiLogging property.
+- If you disable or do not configure this policy setting, Windows Installer will automatically generate log files for those packages that include the MsiLogging property.
 <!-- DisableLoggingFromPackage-Description-End -->
 
 <!-- DisableLoggingFromPackage-Editable-Begin -->
@@ -450,7 +448,7 @@ If you disable or do not configure this policy setting, Windows Installer will a
 
 <!-- DisableLoggingFromPackage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -469,6 +467,70 @@ If you disable or do not configure this policy setting, Windows Installer will a
 <!-- DisableLoggingFromPackage-Examples-End -->
 
 <!-- DisableLoggingFromPackage-End -->
+
+<!-- DisableMedia-Begin -->
+## DisableMedia
+
+<!-- DisableMedia-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableMedia-Applicability-End -->
+
+<!-- DisableMedia-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_MSI/DisableMedia
+```
+<!-- DisableMedia-OmaUri-End -->
+
+<!-- DisableMedia-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents users from installing any programs from removable media.
+
+- If you enable this policy setting, if a user tries to install a program from removable media, such as CD-ROMs, floppy disks, and DVDs, a message appears stating that the feature cannot be found.
+
+This policy setting applies even when the installation is running in the user's security context.
+
+- If you disable or do not configure this policy setting, users can install from removable media when the installation is running in their own security context, but only system administrators can use removable media when an installation is running with elevated system privileges, such as installations offered on the desktop or in Add or Remove Programs.
+
+Also, see the "Enable user to use media source while elevated" and "Hide the 'Add a program from CD-ROM or floppy disk' option" policy settings.
+<!-- DisableMedia-Description-End -->
+
+<!-- DisableMedia-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableMedia-Editable-End -->
+
+<!-- DisableMedia-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableMedia-DFProperties-End -->
+
+<!-- DisableMedia-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableMedia |
+| Friendly Name | Prevent removable media source for any installation |
+| Location | User Configuration |
+| Path | Windows Components > Windows Installer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Installer |
+| Registry Value Name | DisableMedia |
+| ADMX File Name | MSI.admx |
+<!-- DisableMedia-AdmxBacked-End -->
+
+<!-- DisableMedia-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableMedia-Examples-End -->
+
+<!-- DisableMedia-End -->
 
 <!-- DisableMSI-Begin -->
 ## DisableMSI
@@ -489,13 +551,13 @@ If you disable or do not configure this policy setting, Windows Installer will a
 <!-- Description-Source-ADMX -->
 This policy setting restricts the use of Windows Installer.
 
-If you enable this policy setting, you can prevent users from installing software on their systems or permit users to install only those programs offered by a system administrator. You can use the options in the Disable Windows Installer box to establish an installation setting.
+- If you enable this policy setting, you can prevent users from installing software on their systems or permit users to install only those programs offered by a system administrator. You can use the options in the Disable Windows Installer box to establish an installation setting.
 
--- The "Never" option indicates Windows Installer is fully enabled. Users can install and upgrade software. This is the default behavior for Windows Installer on Windows 2000 Professional, Windows XP Professional and Windows Vista when the policy is not configured.
+- The "Never" option indicates Windows Installer is fully enabled. Users can install and upgrade software. This is the default behavior for Windows Installer on Windows 2000 Professional, Windows XP Professional and Windows Vista when the policy is not configured.
 
--- The "For non-managed applications only" option permits users to install only those programs that a system administrator assigns (offers on the desktop) or publishes (adds them to Add or Remove Programs). This is the default behavior of Windows Installer on Windows Server 2003 family when the policy is not configured.
+- The "For non-managed applications only" option permits users to install only those programs that a system administrator assigns (offers on the desktop) or publishes (adds them to Add or Remove Programs). This is the default behavior of Windows Installer on Windows Server 2003 family when the policy is not configured.
 
--- The "Always" option indicates that Windows Installer is disabled.
+- The "Always" option indicates that Windows Installer is disabled.
 
 This policy setting affects Windows Installer only. It does not prevent users from using other methods to install and upgrade programs.
 <!-- DisableMSI-Description-End -->
@@ -515,7 +577,7 @@ This policy setting affects Windows Installer only. It does not prevent users fr
 
 <!-- DisableMSI-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -554,11 +616,12 @@ This policy setting affects Windows Installer only. It does not prevent users fr
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from using Windows Installer to install patches.
 
-If you enable this policy setting, users are prevented from using Windows Installer to install patches. Patches are updates or upgrades that replace only those program files that have changed. Because patches can be easy vehicles for malicious programs, some installations prohibit their use.
+- If you enable this policy setting, users are prevented from using Windows Installer to install patches. Patches are updates or upgrades that replace only those program files that have changed. Because patches can be easy vehicles for malicious programs, some installations prohibit their use.
 
-Note: This policy setting applies only to installations that run in the user's security context.
+> [!NOTE]
+> This policy setting applies only to installations that run in the user's security context.
 
-If you disable or do not configure this policy setting, by default, users who are not system administrators cannot apply patches to installations that run with elevated system privileges, such as those offered on the desktop or in Add or Remove Programs.
+- If you disable or do not configure this policy setting, by default, users who are not system administrators cannot apply patches to installations that run with elevated system privileges, such as those offered on the desktop or in Add or Remove Programs.
 
 Also, see the "Enable user to patch elevated products" policy setting.
 <!-- DisablePatch-Description-End -->
@@ -578,7 +641,7 @@ Also, see the "Enable user to patch elevated products" policy setting.
 
 <!-- DisablePatch-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -599,6 +662,68 @@ Also, see the "Enable user to patch elevated products" policy setting.
 
 <!-- DisablePatch-End -->
 
+<!-- DisableRollback_1-Begin -->
+## DisableRollback_1
+
+<!-- DisableRollback_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableRollback_1-Applicability-End -->
+
+<!-- DisableRollback_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_MSI/DisableRollback_1
+```
+<!-- DisableRollback_1-OmaUri-End -->
+
+<!-- DisableRollback_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prohibits Windows Installer from generating and saving the files it needs to reverse an interrupted or unsuccessful installation.
+
+- If you enable this policy setting, Windows Installer is prevented from recording the original state of the system and sequence of changes it makes during installation. It also prevents Windows Installer from retaining files it intends to delete later. As a result, Windows Installer cannot restore the computer to its original state if the installation does not complete.
+
+This policy setting is designed to reduce the amount of temporary disk space required to install programs. Also, it prevents malicious users from interrupting an installation to gather data about the internal state of the computer or to search secure system files. However, because an incomplete installation can render the system or a program inoperable, do not use this policy setting unless it is essential.
+
+This policy setting appears in the Computer Configuration and User Configuration folders. If the policy setting is enabled in either folder, it is considered be enabled, even if it is explicitly disabled in the other folder.
+<!-- DisableRollback_1-Description-End -->
+
+<!-- DisableRollback_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableRollback_1-Editable-End -->
+
+<!-- DisableRollback_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableRollback_1-DFProperties-End -->
+
+<!-- DisableRollback_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableRollback_1 |
+| Friendly Name | Prohibit rollback |
+| Location | User Configuration |
+| Path | Windows Components > Windows Installer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Installer |
+| Registry Value Name | DisableRollback |
+| ADMX File Name | MSI.admx |
+<!-- DisableRollback_1-AdmxBacked-End -->
+
+<!-- DisableRollback_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableRollback_1-Examples-End -->
+
+<!-- DisableRollback_1-End -->
+
 <!-- DisableRollback_2-Begin -->
 ## DisableRollback_2
 
@@ -618,7 +743,7 @@ Also, see the "Enable user to patch elevated products" policy setting.
 <!-- Description-Source-ADMX -->
 This policy setting prohibits Windows Installer from generating and saving the files it needs to reverse an interrupted or unsuccessful installation.
 
-If you enable this policy setting, Windows Installer is prevented from recording the original state of the system and sequence of changes it makes during installation. It also prevents Windows Installer from retaining files it intends to delete later. As a result, Windows Installer cannot restore the computer to its original state if the installation does not complete.
+- If you enable this policy setting, Windows Installer is prevented from recording the original state of the system and sequence of changes it makes during installation. It also prevents Windows Installer from retaining files it intends to delete later. As a result, Windows Installer cannot restore the computer to its original state if the installation does not complete.
 
 This policy setting is designed to reduce the amount of temporary disk space required to install programs. Also, it prevents malicious users from interrupting an installation to gather data about the internal state of the computer or to search secure system files. However, because an incomplete installation can render the system or a program inoperable, do not use this policy setting unless it is essential.
 
@@ -640,13 +765,13 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 <!-- DisableRollback_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DisableRollback |
+| Name | DisableRollback_2 |
 | Friendly Name | Prohibit rollback |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Installer |
@@ -680,9 +805,9 @@ This policy setting appears in the Computer Configuration and User Configuration
 <!-- Description-Source-ADMX -->
 This policy setting controls the ability to turn off shared components.
 
-If you enable this policy setting, no packages on the system get the shared component functionality enabled by the msidbComponentAttributesShared attribute in the Component Table.
+- If you enable this policy setting, no packages on the system get the shared component functionality enabled by the msidbComponentAttributesShared attribute in the Component Table.
 
-If you disable or do not configure this policy setting, by default, the shared component functionality is allowed.
+- If you disable or do not configure this policy setting, by default, the shared component functionality is allowed.
 <!-- DisableSharedComponent-Description-End -->
 
 <!-- DisableSharedComponent-Editable-Begin -->
@@ -700,7 +825,7 @@ If you disable or do not configure this policy setting, by default, the shared c
 
 <!-- DisableSharedComponent-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -742,9 +867,9 @@ This policy setting controls the ability of non-administrators to install update
 
 Non-administrator updates provide a mechanism for the author of an application to create digitally signed updates that can be applied by non-privileged users.
 
-If you enable this policy setting, only administrators or users with administrative privileges can apply updates to Windows Installer based applications.
+- If you enable this policy setting, only administrators or users with administrative privileges can apply updates to Windows Installer based applications.
 
-If you disable or do not configure this policy setting, users without administrative privileges can install non-administrator updates.
+- If you disable or do not configure this policy setting, users without administrative privileges can install non-administrator updates.
 <!-- MSI_DisableLUAPatching-Description-End -->
 
 <!-- MSI_DisableLUAPatching-Editable-Begin -->
@@ -762,7 +887,7 @@ If you disable or do not configure this policy setting, users without administra
 
 <!-- MSI_DisableLUAPatching-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -804,9 +929,9 @@ This policy setting controls the ability for users or administrators to remove W
 
 This policy setting should be used if you need to maintain a tight control over updates. One example is a lockdown environment where you want to ensure that updates once installed cannot be removed by users or administrators.
 
-If you enable this policy setting, updates cannot be removed from the computer by a user or an administrator. The Windows Installer can still remove an update that is no longer applicable to the product.
+- If you enable this policy setting, updates cannot be removed from the computer by a user or an administrator. The Windows Installer can still remove an update that is no longer applicable to the product.
 
-If you disable or do not configure this policy setting, a user can remove an update from the computer only if the user has been granted privileges to remove the update. This can depend on whether the user is an administrator, whether "Disable Windows Installer" and "Always install with elevated privileges" policy settings are set, and whether the update was installed in a per-user managed, per-user unmanaged, or per-machine context."
+- If you disable or do not configure this policy setting, a user can remove an update from the computer only if the user has been granted privileges to remove the update. This can depend on whether the user is an administrator, whether "Disable Windows Installer" and "Always install with elevated privileges" policy settings are set, and whether the update was installed in a per-user managed, per-user unmanaged, or per-machine context."
 <!-- MSI_DisablePatchUninstall-Description-End -->
 
 <!-- MSI_DisablePatchUninstall-Editable-Begin -->
@@ -824,7 +949,7 @@ If you disable or do not configure this policy setting, a user can remove an upd
 
 <!-- MSI_DisablePatchUninstall-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -864,9 +989,9 @@ If you disable or do not configure this policy setting, a user can remove an upd
 <!-- Description-Source-ADMX -->
 This policy setting prevents Windows Installer from creating a System Restore checkpoint each time an application is installed. System Restore enables users, in the event of a problem, to restore their computers to a previous state without losing personal data files.
 
-If you enable this policy setting, the Windows Installer does not generate System Restore checkpoints when installing applications.
+- If you enable this policy setting, the Windows Installer does not generate System Restore checkpoints when installing applications.
 
-If you disable or do not configure this policy setting, by default, the Windows Installer automatically creates a System Restore checkpoint each time an application is installed, so that users can restore their computer to the state it was in before installing the application.
+- If you disable or do not configure this policy setting, by default, the Windows Installer automatically creates a System Restore checkpoint each time an application is installed, so that users can restore their computer to the state it was in before installing the application.
 <!-- MSI_DisableSRCheckPoints-Description-End -->
 
 <!-- MSI_DisableSRCheckPoints-Editable-Begin -->
@@ -884,7 +1009,7 @@ If you disable or do not configure this policy setting, by default, the Windows 
 
 <!-- MSI_DisableSRCheckPoints-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -924,9 +1049,9 @@ If you disable or do not configure this policy setting, by default, the Windows 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure user installs. To configure this policy setting, set it to enabled and use the drop-down list to select the behavior you want.
 
-If you do not configure this policy setting, or if the policy setting is enabled and "Allow User Installs" is selected, the installer allows and makes use of products that are installed per user, and products that are installed per computer. If the installer finds a per-user install of an application, this hides a per-computer installation of that same product.
+- If you do not configure this policy setting, or if the policy setting is enabled and "Allow User Installs" is selected, the installer allows and makes use of products that are installed per user, and products that are installed per computer. If the installer finds a per-user install of an application, this hides a per-computer installation of that same product.
 
-If you enable this policy setting and "Hide User Installs" is selected, the installer ignores per-user applications. This causes a per-computer installed application to be visible to users, even if those users have a per-user install of the product registered in their user profile.
+- If you enable this policy setting and "Hide User Installs" is selected, the installer ignores per-user applications. This causes a per-computer installed application to be visible to users, even if those users have a per-user install of the product registered in their user profile.
 <!-- MSI_DisableUserInstalls-Description-End -->
 
 <!-- MSI_DisableUserInstalls-Editable-Begin -->
@@ -944,7 +1069,7 @@ If you enable this policy setting and "Hide User Installs" is selected, the inst
 
 <!-- MSI_DisableUserInstalls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -983,7 +1108,7 @@ If you enable this policy setting and "Hide User Installs" is selected, the inst
 <!-- Description-Source-ADMX -->
 This policy setting causes the Windows Installer to enforce strict rules for component upgrades.
 
-If you enable this policy setting, strict upgrade rules will be enforced by the Windows Installer which may cause some upgrades to fail. Upgrades can fail if they attempt to do one of the following:
+- If you enable this policy setting, strict upgrade rules will be enforced by the Windows Installer which may cause some upgrades to fail. Upgrades can fail if they attempt to do one of the following:
 
 (1) Remove a component from a feature.
 This can also occur if you change the GUID of a component. The component identified by the original GUID appears to be removed and the component as identified by the new GUID appears as a new component.
@@ -991,7 +1116,7 @@ This can also occur if you change the GUID of a component. The component identif
 (2) Add a new feature to the top or middle of an existing feature tree.
 The new feature must be added as a new leaf feature to an existing feature tree.
 
-If you disable or do not configure this policy setting, the Windows Installer will use less restrictive rules for component upgrades.
+- If you disable or do not configure this policy setting, the Windows Installer will use less restrictive rules for component upgrades.
 <!-- MSI_EnforceUpgradeComponentRules-Description-End -->
 
 <!-- MSI_EnforceUpgradeComponentRules-Editable-Begin -->
@@ -1009,7 +1134,7 @@ If you disable or do not configure this policy setting, the Windows Installer wi
 
 <!-- MSI_EnforceUpgradeComponentRules-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1051,13 +1176,13 @@ This policy controls the percentage of disk space available to the Windows Insta
 
 The Windows Installer uses the baseline file cache to save baseline files modified by binary delta difference updates. The cache is used to retrieve the baseline file for future updates. The cache eliminates user prompts for source media when new updates are applied.
 
-If you enable this policy setting you can modify the maximum size of the Windows Installer baseline file cache.
+- If you enable this policy setting you can modify the maximum size of the Windows Installer baseline file cache.
 
 If you set the baseline cache size to 0, the Windows Installer will stop populating the baseline cache for new updates. The existing cached files will remain on disk and will be deleted when the product is removed.
 
 If you set the baseline cache to 100, the Windows Installer will use available free space for the baseline file cache.
 
-If you disable or do not configure this policy setting, the Windows Installer will uses a default value of 10 percent for the baseline file cache maximum size.
+- If you disable or do not configure this policy setting, the Windows Installer will uses a default value of 10 percent for the baseline file cache maximum size.
 <!-- MSI_MaxPatchCacheSize-Description-End -->
 
 <!-- MSI_MaxPatchCacheSize-Editable-Begin -->
@@ -1075,7 +1200,7 @@ If you disable or do not configure this policy setting, the Windows Installer wi
 
 <!-- MSI_MaxPatchCacheSize-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1114,9 +1239,9 @@ If you disable or do not configure this policy setting, the Windows Installer wi
 <!-- Description-Source-ADMX -->
 This policy setting controls the ability to prevent embedded UI.
 
-If you enable this policy setting, no packages on the system can run embedded UI.
+- If you enable this policy setting, no packages on the system can run embedded UI.
 
-If you disable or do not configure this policy setting, embedded UI is allowed to run.
+- If you disable or do not configure this policy setting, embedded UI is allowed to run.
 <!-- MsiDisableEmbeddedUI-Description-End -->
 
 <!-- MsiDisableEmbeddedUI-Editable-Begin -->
@@ -1134,7 +1259,7 @@ If you disable or do not configure this policy setting, embedded UI is allowed t
 
 <!-- MsiDisableEmbeddedUI-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1178,7 +1303,7 @@ When you enable this policy setting, you can specify the types of events you wan
 
 To disable logging, delete all of the letters from the box.
 
-If you disable or do not configure this policy setting, Windows Installer logs the default event types, represented by the letters "iweap."
+- If you disable or do not configure this policy setting, Windows Installer logs the default event types, represented by the letters "iweap."
 <!-- MSILogging-Description-End -->
 
 <!-- MSILogging-Editable-Begin -->
@@ -1196,7 +1321,7 @@ If you disable or do not configure this policy setting, Windows Installer logs t
 
 <!-- MSILogging-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1235,9 +1360,9 @@ If you disable or do not configure this policy setting, Windows Installer logs t
 <!-- Description-Source-ADMX -->
 This policy setting allows Web-based programs to install software on the computer without notifying the user.
 
-If you disable or do not configure this policy setting, by default, when a script hosted by an Internet browser tries to install a program on the system, the system warns users and allows them to select or refuse the installation.
+- If you disable or do not configure this policy setting, by default, when a script hosted by an Internet browser tries to install a program on the system, the system warns users and allows them to select or refuse the installation.
 
-If you enable this policy setting, the warning is suppressed and allows the installation to proceed.
+- If you enable this policy setting, the warning is suppressed and allows the installation to proceed.
 
 This policy setting is designed for enterprises that use Web-based tools to distribute programs to their employees. However, because this policy setting can pose a security risk, it should be applied cautiously.
 <!-- SafeForScripting-Description-End -->
@@ -1257,7 +1382,7 @@ This policy setting is designed for enterprises that use Web-based tools to dist
 
 <!-- SafeForScripting-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1277,6 +1402,73 @@ This policy setting is designed for enterprises that use Web-based tools to dist
 <!-- SafeForScripting-Examples-End -->
 
 <!-- SafeForScripting-End -->
+
+<!-- SearchOrder-Begin -->
+## SearchOrder
+
+<!-- SearchOrder-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SearchOrder-Applicability-End -->
+
+<!-- SearchOrder-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_MSI/SearchOrder
+```
+<!-- SearchOrder-OmaUri-End -->
+
+<!-- SearchOrder-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the order in which Windows Installer searches for installation files.
+
+- If you disable or do not configure this policy setting, by default, the Windows Installer searches the network first, then removable media (floppy drive, CD-ROM, or DVD), and finally, the Internet (URL).
+
+- If you enable this policy setting, you can change the search order by specifying the letters representing each file source in the order that you want Windows Installer to search:
+
+- "n" represents the network;
+
+- "m" represents media;
+
+- "u" represents URL, or the Internet.
+
+To exclude a file source, omit or delete the letter representing that source type.
+<!-- SearchOrder-Description-End -->
+
+<!-- SearchOrder-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SearchOrder-Editable-End -->
+
+<!-- SearchOrder-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SearchOrder-DFProperties-End -->
+
+<!-- SearchOrder-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SearchOrder |
+| Friendly Name | Specify the order in which Windows Installer searches for installation files |
+| Location | User Configuration |
+| Path | Windows Components > Windows Installer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Installer |
+| ADMX File Name | MSI.admx |
+<!-- SearchOrder-AdmxBacked-End -->
+
+<!-- SearchOrder-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SearchOrder-Examples-End -->
+
+<!-- SearchOrder-End -->
 
 <!-- TransformsSecure-Begin -->
 ## TransformsSecure
@@ -1299,15 +1491,15 @@ This policy setting saves copies of transform files in a secure location on the 
 
 Transform files consist of instructions to modify or customize a program during installation.
 
-If you enable this policy setting, the transform file is saved in a secure location on the user's computer.
+- If you enable this policy setting, the transform file is saved in a secure location on the user's computer.
 
-If you do not configure this policy setting on Windows Server 2003, Windows Installer requires the transform file in order to repeat an installation in which the transform file was used, therefore, the user must be using the same computer or be connected to the original or identical media to reinstall, remove, or repair the installation.
+- If you do not configure this policy setting on Windows Server 2003, Windows Installer requires the transform file in order to repeat an installation in which the transform file was used, therefore, the user must be using the same computer or be connected to the original or identical media to reinstall, remove, or repair the installation.
 
 This policy setting is designed for enterprises to prevent unauthorized or malicious editing of transform files.
 
-If you disable this policy setting, Windows Installer stores transform files in the Application Data directory in the user's profile.
+- If you disable this policy setting, Windows Installer stores transform files in the Application Data directory in the user's profile.
 
-If you do not configure this policy setting on Windows 2000 Professional, Windows XP Professional and Windows Vista, when a user reinstalls, removes, or repairs an installation, the transform file is available, even if the user is on a different computer or is not connected to the network.
+- If you do not configure this policy setting on Windows 2000 Professional, Windows XP Professional and Windows Vista, when a user reinstalls, removes, or repairs an installation, the transform file is available, even if the user is on a different computer or is not connected to the network.
 <!-- TransformsSecure-Description-End -->
 
 <!-- TransformsSecure-Editable-Begin -->
@@ -1325,7 +1517,7 @@ If you do not configure this policy setting on Windows 2000 Professional, Window
 
 <!-- TransformsSecure-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1345,199 +1537,6 @@ If you do not configure this policy setting on Windows 2000 Professional, Window
 <!-- TransformsSecure-Examples-End -->
 
 <!-- TransformsSecure-End -->
-
-<!-- DisableMedia-Begin -->
-## DisableMedia
-
-<!-- DisableMedia-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- DisableMedia-Applicability-End -->
-
-<!-- DisableMedia-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_MSI/DisableMedia
-```
-<!-- DisableMedia-OmaUri-End -->
-
-<!-- DisableMedia-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting prevents users from installing any programs from removable media.
-
-If you enable this policy setting, if a user tries to install a program from removable media, such as CD-ROMs, floppy disks, and DVDs, a message appears stating that the feature cannot be found.
-
-This policy setting applies even when the installation is running in the user's security context.
-
-If you disable or do not configure this policy setting, users can install from removable media when the installation is running in their own security context, but only system administrators can use removable media when an installation is running with elevated system privileges, such as installations offered on the desktop or in Add or Remove Programs.
-
-Also, see the "Enable user to use media source while elevated" and "Hide the 'Add a program from CD-ROM or floppy disk' option" policy settings.
-<!-- DisableMedia-Description-End -->
-
-<!-- DisableMedia-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- DisableMedia-Editable-End -->
-
-<!-- DisableMedia-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- DisableMedia-DFProperties-End -->
-
-<!-- DisableMedia-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | DisableMedia |
-| Friendly Name | Prevent removable media source for any installation |
-| Location | User Configuration |
-| Path | Windows Components > Windows Installer |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Installer |
-| Registry Value Name | DisableMedia |
-| ADMX File Name | MSI.admx |
-<!-- DisableMedia-AdmxBacked-End -->
-
-<!-- DisableMedia-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DisableMedia-Examples-End -->
-
-<!-- DisableMedia-End -->
-
-<!-- DisableRollback_1-Begin -->
-## DisableRollback_1
-
-<!-- DisableRollback_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- DisableRollback_1-Applicability-End -->
-
-<!-- DisableRollback_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_MSI/DisableRollback_1
-```
-<!-- DisableRollback_1-OmaUri-End -->
-
-<!-- DisableRollback_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting prohibits Windows Installer from generating and saving the files it needs to reverse an interrupted or unsuccessful installation.
-
-If you enable this policy setting, Windows Installer is prevented from recording the original state of the system and sequence of changes it makes during installation. It also prevents Windows Installer from retaining files it intends to delete later. As a result, Windows Installer cannot restore the computer to its original state if the installation does not complete.
-
-This policy setting is designed to reduce the amount of temporary disk space required to install programs. Also, it prevents malicious users from interrupting an installation to gather data about the internal state of the computer or to search secure system files. However, because an incomplete installation can render the system or a program inoperable, do not use this policy setting unless it is essential.
-
-This policy setting appears in the Computer Configuration and User Configuration folders. If the policy setting is enabled in either folder, it is considered be enabled, even if it is explicitly disabled in the other folder.
-<!-- DisableRollback_1-Description-End -->
-
-<!-- DisableRollback_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- DisableRollback_1-Editable-End -->
-
-<!-- DisableRollback_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- DisableRollback_1-DFProperties-End -->
-
-<!-- DisableRollback_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | DisableRollback |
-| Friendly Name | Prohibit rollback |
-| Location | User Configuration |
-| Path | Windows Components > Windows Installer |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Installer |
-| Registry Value Name | DisableRollback |
-| ADMX File Name | MSI.admx |
-<!-- DisableRollback_1-AdmxBacked-End -->
-
-<!-- DisableRollback_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DisableRollback_1-Examples-End -->
-
-<!-- DisableRollback_1-End -->
-
-<!-- SearchOrder-Begin -->
-## SearchOrder
-
-<!-- SearchOrder-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- SearchOrder-Applicability-End -->
-
-<!-- SearchOrder-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_MSI/SearchOrder
-```
-<!-- SearchOrder-OmaUri-End -->
-
-<!-- SearchOrder-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting specifies the order in which Windows Installer searches for installation files.
-
-If you disable or do not configure this policy setting, by default, the Windows Installer searches the network first, then removable media (floppy drive, CD-ROM, or DVD), and finally, the Internet (URL).
-
-If you enable this policy setting, you can change the search order by specifying the letters representing each file source in the order that you want Windows Installer to search:
-
--- "n" represents the network;
-
--- "m" represents media;
-
--- "u" represents URL, or the Internet.
-
-To exclude a file source, omit or delete the letter representing that source type.
-<!-- SearchOrder-Description-End -->
-
-<!-- SearchOrder-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- SearchOrder-Editable-End -->
-
-<!-- SearchOrder-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- SearchOrder-DFProperties-End -->
-
-<!-- SearchOrder-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | SearchOrder |
-| Friendly Name | Specify the order in which Windows Installer searches for installation files |
-| Location | User Configuration |
-| Path | Windows Components > Windows Installer |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Installer |
-| ADMX File Name | MSI.admx |
-<!-- SearchOrder-AdmxBacked-End -->
-
-<!-- SearchOrder-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- SearchOrder-Examples-End -->
-
-<!-- SearchOrder-End -->
 
 <!-- ADMX_MSI-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

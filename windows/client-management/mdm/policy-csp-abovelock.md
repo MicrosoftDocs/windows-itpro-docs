@@ -1,10 +1,10 @@
 ---
 title: AboveLock Policy CSP
-description: Learn more about the AboveLock Area in Policy CSP
+description: Learn more about the AboveLock Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/09/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -91,9 +91,9 @@ This policy is deprecated
 <!-- Description-Source-ADMX -->
 This policy setting determines whether or not the user can interact with Cortana using speech while the system is locked.
 
-If you enable or don’t configure this setting, the user can interact with Cortana using speech while the system is locked.
+- If you enable or don't configure this setting, the user can interact with Cortana using speech while the system is locked.
 
-If you disable this setting, the system will need to be unlocked for the user to interact with Cortana using speech.
+- If you disable this setting, the system will need to be unlocked for the user to interact with Cortana using speech.
 <!-- AllowCortanaAboveLock-Description-End -->
 
 <!-- AllowCortanaAboveLock-Editable-Begin -->

@@ -1,10 +1,10 @@
 ---
 title: EventLogService Policy CSP
-description: Learn more about the EventLogService Area in Policy CSP
+description: Learn more about the EventLogService Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,11 +44,12 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting controls Event Log behavior when the log file reaches its maximum size.
 
-If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
+- If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
 
-If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
+- If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
 
-**Note**: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
+> [!NOTE]
+> Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
 <!-- ControlEventLogBehavior-Description-End -->
 
 <!-- ControlEventLogBehavior-Editable-Begin -->
@@ -106,9 +107,9 @@ If you disable or do not configure this policy setting and a log file reaches it
 <!-- Description-Source-ADMX -->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
+- If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
 
-If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 1 megabyte.
+- If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 1 megabyte.
 <!-- SpecifyMaximumFileSizeApplicationLog-Description-End -->
 
 <!-- SpecifyMaximumFileSizeApplicationLog-Editable-Begin -->
@@ -165,9 +166,9 @@ If you disable or do not configure this policy setting, the maximum size of the 
 <!-- Description-Source-ADMX -->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 20 megabytes (20480 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
+- If you enable this policy setting, you can configure the maximum log file size to be between 20 megabytes (20480 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
 
-If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 20 megabytes.
+- If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 20 megabytes.
 <!-- SpecifyMaximumFileSizeSecurityLog-Description-End -->
 
 <!-- SpecifyMaximumFileSizeSecurityLog-Editable-Begin -->
@@ -224,9 +225,9 @@ If you disable or do not configure this policy setting, the maximum size of the 
 <!-- Description-Source-ADMX -->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
+- If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
 
-If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 1 megabyte.
+- If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 1 megabyte.
 <!-- SpecifyMaximumFileSizeSystemLog-Description-End -->
 
 <!-- SpecifyMaximumFileSizeSystemLog-Editable-Begin -->

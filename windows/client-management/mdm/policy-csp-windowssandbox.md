@@ -1,10 +1,10 @@
 ---
 title: WindowsSandbox Policy CSP
-description: Learn more about the WindowsSandbox Area in Policy CSP
+description: Learn more about the WindowsSandbox Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/07/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -39,13 +39,13 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting enables or disables audio input to the Sandbox.
 
-If you enable this policy setting, Windows Sandbox will be able to receive audio input from the user. Applications using a microphone may require this setting.
+- If you enable this policy setting, Windows Sandbox will be able to receive audio input from the user. Applications using a microphone may require this setting.
 
-If you disable this policy setting, Windows Sandbox will not be able to receive audio input from the user. Applications using a microphone may not function properly with this setting.
+- If you disable this policy setting, Windows Sandbox will not be able to receive audio input from the user. Applications using a microphone may not function properly with this setting.
 
-If you do not configure this policy setting, audio input will be enabled.
+- If you do not configure this policy setting, audio input will be enabled.
 
-Note that there may be security implications of exposing host audio input to the container.
+**Note** that there may be security implications of exposing host audio input to the container.
 <!-- AllowAudioInput-Description-End -->
 
 <!-- AllowAudioInput-Editable-Begin -->
@@ -104,11 +104,11 @@ Note that there may be security implications of exposing host audio input to the
 <!-- Description-Source-ADMX -->
 This policy setting enables or disables clipboard sharing with the sandbox.
 
-If you enable this policy setting, copy and paste between the host and Windows Sandbox are permitted.
+- If you enable this policy setting, copy and paste between the host and Windows Sandbox are permitted.
 
-If you disable this policy setting, copy and paste in and out of Sandbox will be restricted.
+- If you disable this policy setting, copy and paste in and out of Sandbox will be restricted.
 
-If you do not configure this policy setting, clipboard sharing will be enabled.
+- If you do not configure this policy setting, clipboard sharing will be enabled.
 <!-- AllowClipboardRedirection-Description-End -->
 
 <!-- AllowClipboardRedirection-Editable-Begin -->
@@ -167,13 +167,13 @@ If you do not configure this policy setting, clipboard sharing will be enabled.
 <!-- Description-Source-ADMX -->
 This policy setting enables or disables networking in the sandbox. You can disable network access to decrease the attack surface exposed by the sandbox.
 
-If you enable this policy setting, networking is done by creating a virtual switch on the host, and connects the Windows Sandbox to it via a virtual NIC.
+- If you enable this policy setting, networking is done by creating a virtual switch on the host, and connects the Windows Sandbox to it via a virtual NIC.
 
-If you disable this policy setting, networking is disabled in Windows Sandbox.
+- If you disable this policy setting, networking is disabled in Windows Sandbox.
 
-If you do not configure this policy setting, networking will be enabled.
+- If you do not configure this policy setting, networking will be enabled.
 
-Note that enabling networking can expose untrusted applications to the internal network.
+**Note** that enabling networking can expose untrusted applications to the internal network.
 <!-- AllowNetworking-Description-End -->
 
 <!-- AllowNetworking-Editable-Begin -->
@@ -232,11 +232,11 @@ Note that enabling networking can expose untrusted applications to the internal 
 <!-- Description-Source-ADMX -->
 This policy setting enables or disables printer sharing from the host into the Sandbox.
 
-If you enable this policy setting, host printers will be shared into Windows Sandbox.
+- If you enable this policy setting, host printers will be shared into Windows Sandbox.
 
-If you disable this policy setting, Windows Sandbox will not be able to view printers from the host.
+- If you disable this policy setting, Windows Sandbox will not be able to view printers from the host.
 
-If you do not configure this policy setting, printer redirection will be disabled.
+- If you do not configure this policy setting, printer redirection will be disabled.
 <!-- AllowPrinterRedirection-Description-End -->
 
 <!-- AllowPrinterRedirection-Editable-Begin -->
@@ -295,13 +295,13 @@ If you do not configure this policy setting, printer redirection will be disable
 <!-- Description-Source-ADMX -->
 This policy setting is to enable or disable the virtualized GPU.
 
-If you enable this policy setting, vGPU will be supported in the Windows Sandbox.
+- If you enable this policy setting, vGPU will be supported in the Windows Sandbox.
 
-If you disable this policy setting, Windows Sandbox will use software rendering, which can be slower than virtualized GPU.
+- If you disable this policy setting, Windows Sandbox will use software rendering, which can be slower than virtualized GPU.
 
-If you do not configure this policy setting, vGPU will be enabled.
+- If you do not configure this policy setting, vGPU will be enabled.
 
-Note that enabling virtualized GPU can potentially increase the attack surface of the sandbox.
+**Note** that enabling virtualized GPU can potentially increase the attack surface of the sandbox.
 <!-- AllowVGPU-Description-End -->
 
 <!-- AllowVGPU-Editable-Begin -->
@@ -360,13 +360,13 @@ Note that enabling virtualized GPU can potentially increase the attack surface o
 <!-- Description-Source-ADMX -->
 This policy setting enables or disables video input to the Sandbox.
 
-If you enable this policy setting, video input is enabled in Windows Sandbox.
+- If you enable this policy setting, video input is enabled in Windows Sandbox.
 
-If you disable this policy setting, video input is disabled in Windows Sandbox. Applications using video input may not function properly in Windows Sandbox.
+- If you disable this policy setting, video input is disabled in Windows Sandbox. Applications using video input may not function properly in Windows Sandbox.
 
-If you do not configure this policy setting, video input will be disabled. Applications that use video input may not function properly in Windows Sandbox.
+- If you do not configure this policy setting, video input will be disabled. Applications that use video input may not function properly in Windows Sandbox.
 
-Note that there may be security implications of exposing host video input to the container.
+**Note** that there may be security implications of exposing host video input to the container.
 <!-- AllowVideoInput-Description-End -->
 
 <!-- AllowVideoInput-Editable-Begin -->

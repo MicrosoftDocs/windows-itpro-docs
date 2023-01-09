@@ -1,10 +1,10 @@
 ---
 title: Search Policy CSP
-description: Learn more about the Search Area in Policy CSP
+description: Learn more about the Search Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/19/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -170,7 +170,6 @@ This feature allows you to disable find my files completely on the machine
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 This policy controls whether the user can configure search to *Find My Files* mode. This mode searches files in secondary hard drives and also outside of the user profile. Find My Files doesn't allow users to search files or locations to which they don't have access.
-
 <!-- AllowFindMyFiles-Editable-End -->
 
 <!-- AllowFindMyFiles-DFProperties-Begin -->
@@ -224,7 +223,10 @@ This policy controls whether the user can configure search to *Find My Files* mo
 
 <!-- AllowIndexingEncryptedStoresOrItems-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows encrypted items to be indexed. If you enable this policy setting, indexing will attempt to decrypt and index the content (access restrictions will still apply). If you disable this policy setting, the search service components (including non-Microsoft components) are expected not to index encrypted items or encrypted stores. This policy setting is not configured by default. If you do not configure this policy setting, the local setting, configured through Control Panel, will be used. By default, the Control Panel setting is set to not index encrypted content.
+This policy setting allows encrypted items to be indexed.
+- If you enable this policy setting, indexing will attempt to decrypt and index the content (access restrictions will still apply).
+- If you disable this policy setting, the search service components (including non-Microsoft components) are expected not to index encrypted items or encrypted stores. This policy setting is not configured by default.
+- If you do not configure this policy setting, the local setting, configured through Control Panel, will be used. By default, the Control Panel setting is set to not index encrypted content.
 
 When this setting is enabled or disabled, the index is rebuilt completely.
 
@@ -309,7 +311,6 @@ Disabling this setting turns off search highlights in the start menu search box 
 |:--|:--|
 | 0 | Disabling this setting turns off search highlights in search home, and the taskbar search box (Windows 10) or the Start menu search box (Windows 11). |
 | 1 (Default) | Enabling or not configuring this setting turns on search highlights in search home, and the taskbar search box (Windows 10) or the Start menu search box (Windows 11). |
-
 <!-- AllowSearchHighlights-Editable-End -->
 
 <!-- AllowSearchHighlights-DFProperties-Begin -->
@@ -369,7 +370,6 @@ If this is enabled, search and Cortana can access location information.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `0` to not allow search to use location.
-
 <!-- AllowSearchToUseLocation-Editable-End -->
 
 <!-- AllowSearchToUseLocation-DFProperties-Begin -->
@@ -477,16 +477,19 @@ This policy has been deprecated.
 
 <!-- AllowUsingDiacritics-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows words that contain diacritic characters to be treated as separate words. If you enable this policy setting, words that only differ in diacritics are treated as different words. If you disable this policy setting, words with diacritics and words without diacritics are treated as identical words. This policy setting is not configured by default. If you do not configure this policy setting, the local setting, configured through Control Panel, will be used.
+This policy setting allows words that contain diacritic characters to be treated as separate words.
+- If you enable this policy setting, words that only differ in diacritics are treated as different words.
+- If you disable this policy setting, words with diacritics and words without diacritics are treated as identical words. This policy setting is not configured by default.
+- If you do not configure this policy setting, the local setting, configured through Control Panel, will be used
 
-**Note**:  By default, the Control Panel setting is set to treat words that differ only because of diacritics as the same word.
+> [!NOTE]
+> By default, the Control Panel setting is set to treat words that differ only because of diacritics as the same word.
 <!-- AllowUsingDiacritics-Description-End -->
 
 <!-- AllowUsingDiacritics-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `0` to not allow the use of diacritics.
-
 <!-- AllowUsingDiacritics-Editable-End -->
 
 <!-- AllowUsingDiacritics-DFProperties-Begin -->
@@ -586,14 +589,15 @@ Allow Windows indexer. Value type is integer.
 
 <!-- AlwaysUseAutoLangDetection-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines when Windows uses automatic language detection results, and when it relies on indexing history. If you enable this policy setting, Windows will always use automatic language detection to index (as it did in Windows 7). Using automatic language detection can increase memory usage. We recommend enabling this policy setting only on PCs where documents are stored in many languages. If you disable or do not configure this policy setting, Windows will use automatic language detection only when it can determine the language of a document with high confidence.
+This policy setting determines when Windows uses automatic language detection results, and when it relies on indexing history.
+- If you enable this policy setting, Windows will always use automatic language detection to index (as it did in Windows 7). Using automatic language detection can increase memory usage. We recommend enabling this policy setting only on PCs where documents are stored in many languages.
+- If you disable or do not configure this policy setting, Windows will use automatic language detection only when it can determine the language of a document with high confidence.
 <!-- AlwaysUseAutoLangDetection-Description-End -->
 
 <!-- AlwaysUseAutoLangDetection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `0` to now allow automatic language detection.
-
 <!-- AlwaysUseAutoLangDetection-Editable-End -->
 
 <!-- AlwaysUseAutoLangDetection-DFProperties-Begin -->
@@ -717,9 +721,9 @@ If enabled, the search indexer backoff feature will be disabled. Indexing will c
 <!-- Description-Source-ADMX -->
 This policy setting configures whether or not locations on removable drives can be added to libraries.
 
-If you enable this policy setting, locations on removable drives cannot be added to libraries. In addition, locations on removable drives cannot be indexed.
+- If you enable this policy setting, locations on removable drives cannot be added to libraries. In addition, locations on removable drives cannot be indexed.
 
-If you disable or do not configure this policy setting, locations on removable drives can be added to libraries. In addition, locations on removable drives can be indexed.
+- If you disable or do not configure this policy setting, locations on removable drives can be added to libraries. In addition, locations on removable drives can be indexed.
 <!-- DisableRemovableDriveIndexing-Description-End -->
 
 <!-- DisableRemovableDriveIndexing-Editable-Begin -->
@@ -782,9 +786,9 @@ If you disable or do not configure this policy setting, locations on removable d
 
 <!-- DisableSearch-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy, the Search UI will be disabled along with all its entry points, such as keyboard shortcuts, touchpad gestures, and type-to-search in the Start menu. The Start menu's search box and Search Taskbar button will also be hidden.
+- If you enable this policy, the Search UI will be disabled along with all its entry points, such as keyboard shortcuts, touchpad gestures, and type-to-search in the Start menu. The Start menu's search box and Search Taskbar button will also be hidden.
 
-If you disable or don't configure this policy setting, the user will be able to open the Search UI and its different entry points will be shown.
+- If you disable or don't configure this policy setting, the user will be able to open the Search UI and its different entry points will be shown.
 <!-- DisableSearch-Description-End -->
 
 <!-- DisableSearch-Editable-Begin -->
@@ -849,11 +853,11 @@ If you disable or don't configure this policy setting, the user will be able to 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control whether or not Search can perform queries on the web, and if the web results are displayed in Search.
 
-If you enable this policy setting, queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.
+- If you enable this policy setting, queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.
 
-If you disable this policy setting, queries will be performed on the web and web results will be displayed when a user performs a query in Search.
+- If you disable this policy setting, queries will be performed on the web and web results will be displayed when a user performs a query in Search.
 
-If you don't configure this policy setting, a user can choose whether or not Search can perform queries on the web, and if the web results are displayed in Search.
+- If you don't configure this policy setting, a user can choose whether or not Search can perform queries on the web, and if the web results are displayed in Search.
 <!-- DoNotUseWebResults-Description-End -->
 
 <!-- DoNotUseWebResults-Editable-Begin -->
@@ -915,12 +919,8 @@ If you don't configure this policy setting, a user can choose whether or not Sea
 <!-- PreventIndexingLowDiskSpaceMB-OmaUri-End -->
 
 <!-- PreventIndexingLowDiskSpaceMB-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 2147483647 MB.
-
-Enable this policy if computers in your environment have extremely limited hard drive space.
-
-When this policy is disabled or not configured, Windows Desktop Search automatically manages your index size.
+<!-- Description-Source-DDF-Forced -->
+Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 1. Enable this policy if computers in your environment have extremely limited hard drive space. When this policy is disabled or not configured, Windows Desktop Search automatically manages your index size.
 <!-- PreventIndexingLowDiskSpaceMB-Description-End -->
 
 <!-- PreventIndexingLowDiskSpaceMB-Editable-Begin -->
@@ -981,8 +981,8 @@ When this policy is disabled or not configured, Windows Desktop Search automatic
 <!-- PreventRemoteQueries-OmaUri-End -->
 
 <!-- PreventRemoteQueries-Description-Begin -->
-<!-- Description-Source-ADMX -->
-If enabled, clients will be unable to query this computer's index remotely. Thus, when they are browsing network shares that are stored on this computer, they will not search them using the index. If disabled, client search requests will use this computer's index. Default is disabled.
+<!-- Description-Source-DDF-Forced -->
+If enabled, clients will be unable to query this computer's index remotely. Thus, when they are browsing network shares that are stored on this computer, they will not search them using the index. If disabled, client search requests will use this computer's index. .
 <!-- PreventRemoteQueries-Description-End -->
 
 <!-- PreventRemoteQueries-Editable-Begin -->
@@ -1070,8 +1070,8 @@ This policy is deprecated.
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Enable |
-| 0 | Disable |
+| 1 (Default) | Enable. |
+| 0 | Disable. |
 <!-- SafeSearchPermissions-AllowedValues-End -->
 
 <!-- SafeSearchPermissions-Examples-Begin -->

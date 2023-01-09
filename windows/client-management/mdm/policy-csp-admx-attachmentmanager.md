@@ -1,10 +1,10 @@
 ---
 title: ADMX_AttachmentManager Policy CSP
-description: Learn more about the ADMX_AttachmentManager Area in Policy CSP
+description: Learn more about the ADMX_AttachmentManager Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/20/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_AttachmentManager
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -52,11 +50,11 @@ Preferring the file type instructs Windows to use the file type data over the fi
 
 Using both the file handler and type data is the most restrictive option. Windows chooses the more restrictive recommendation which will cause users to see more trust prompts than choosing the other options.
 
-If you enable this policy setting, you can choose the order in which Windows processes risk assessment data.
+- If you enable this policy setting, you can choose the order in which Windows processes risk assessment data.
 
-If you disable this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
+- If you disable this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
 
-If you do not configure this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
+- If you do not configure this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
 <!-- AM_EstimateFileHandlerRisk-Description-End -->
 
 <!-- AM_EstimateFileHandlerRisk-Editable-Begin -->
@@ -74,7 +72,7 @@ If you do not configure this policy setting, Windows uses its default trust logi
 
 <!-- AM_EstimateFileHandlerRisk-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -119,11 +117,11 @@ Moderate Risk: If the attachment is in the list of moderate-risk file types and 
 
 Low Risk: If the attachment is in the list of low-risk file types, Windows will not prompt the user before accessing the file, regardless of the file's zone information.
 
-If you enable this policy setting, you can specify the default risk level for file types.
+- If you enable this policy setting, you can specify the default risk level for file types.
 
-If you disable this policy setting, Windows sets the default risk level to moderate.
+- If you disable this policy setting, Windows sets the default risk level to moderate.
 
-If you do not configure this policy setting, Windows sets the default risk level to moderate.
+- If you do not configure this policy setting, Windows sets the default risk level to moderate.
 <!-- AM_SetFileRiskLevel-Description-End -->
 
 <!-- AM_SetFileRiskLevel-Editable-Begin -->
@@ -141,7 +139,7 @@ If you do not configure this policy setting, Windows sets the default risk level
 
 <!-- AM_SetFileRiskLevel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -180,11 +178,11 @@ If you do not configure this policy setting, Windows sets the default risk level
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the list of high-risk file types. If the file attachment is in the list of high-risk file types and is from the restricted zone, Windows blocks the user from accessing the file. If the file is from the Internet zone, Windows prompts the user before accessing the file. This inclusion list takes precedence over the medium-risk and low-risk inclusion lists (where an extension is listed in more than one inclusion list).
 
-If you enable this policy setting, you can create a custom list of high-risk file types.
+- If you enable this policy setting, you can create a custom list of high-risk file types.
 
-If you disable this policy setting, Windows uses its built-in list of file types that pose a high risk.
+- If you disable this policy setting, Windows uses its built-in list of file types that pose a high risk.
 
-If you do not configure this policy setting, Windows uses its built-in list of high-risk file types.
+- If you do not configure this policy setting, Windows uses its built-in list of high-risk file types.
 <!-- AM_SetHighRiskInclusion-Description-End -->
 
 <!-- AM_SetHighRiskInclusion-Editable-Begin -->
@@ -202,7 +200,7 @@ If you do not configure this policy setting, Windows uses its built-in list of h
 
 <!-- AM_SetHighRiskInclusion-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -241,11 +239,11 @@ If you do not configure this policy setting, Windows uses its built-in list of h
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the list of low-risk file types. If the attachment is in the list of low-risk file types, Windows will not prompt the user before accessing the file, regardless of the file's zone information. This inclusion list overrides the list of high-risk file types built into Windows and has a lower precedence than the high-risk or medium-risk inclusion lists (where an extension is listed in more than one inclusion list).
 
-If you enable this policy setting, you can specify file types that pose a low risk.
+- If you enable this policy setting, you can specify file types that pose a low risk.
 
-If you disable this policy setting, Windows uses its default trust logic.
+- If you disable this policy setting, Windows uses its default trust logic.
 
-If you do not configure this policy setting, Windows uses its default trust logic.
+- If you do not configure this policy setting, Windows uses its default trust logic.
 <!-- AM_SetLowRiskInclusion-Description-End -->
 
 <!-- AM_SetLowRiskInclusion-Editable-Begin -->
@@ -263,7 +261,7 @@ If you do not configure this policy setting, Windows uses its default trust logi
 
 <!-- AM_SetLowRiskInclusion-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -302,11 +300,11 @@ If you do not configure this policy setting, Windows uses its default trust logi
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the list of moderate-risk file types. If the attachment is in the list of moderate-risk file types and is from the restricted or Internet zone, Windows prompts the user before accessing the file. This inclusion list overrides the list of potentially high-risk file types built into Windows and it takes precedence over the low-risk inclusion list but has a lower precedence than the high-risk inclusion list (where an extension is listed in more than one inclusion list).
 
-If you enable this policy setting, you can specify file types which pose a moderate risk.
+- If you enable this policy setting, you can specify file types which pose a moderate risk.
 
-If you disable this policy setting, Windows uses its default trust logic.
+- If you disable this policy setting, Windows uses its default trust logic.
 
-If you do not configure this policy setting, Windows uses its default trust logic.
+- If you do not configure this policy setting, Windows uses its default trust logic.
 <!-- AM_SetModRiskInclusion-Description-End -->
 
 <!-- AM_SetModRiskInclusion-Editable-Begin -->
@@ -324,7 +322,7 @@ If you do not configure this policy setting, Windows uses its default trust logi
 
 <!-- AM_SetModRiskInclusion-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

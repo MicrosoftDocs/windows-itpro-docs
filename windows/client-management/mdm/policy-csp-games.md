@@ -1,10 +1,10 @@
 ---
 title: Games Policy CSP
-description: Learn more about the Games Area in Policy CSP
+description: Learn more about the Games Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/02/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage

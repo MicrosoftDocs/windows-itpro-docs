@@ -1,10 +1,10 @@
 ---
 title: ADMX_sam Policy CSP
-description: Learn more about the ADMX_sam Area in Policy CSP
+description: Learn more about the ADMX_sam Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_sam
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,19 +44,19 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure how domain controllers handle Windows Hello for Business (WHfB) keys that are vulnerable to the "Return of Coppersmith's attack" (ROCA) vulnerability.
 
-For more information on the ROCA vulnerability, please see:
+For more information on the ROCA vulnerability, please see
 
-<https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15361>
+<https//cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15361>
 
-<https://en.wikipedia.org/wiki/ROCA_vulnerability>
+<https//en.wikipedia.org/wiki/ROCA_vulnerability>
 
-If you enable this policy setting the following options are supported:
+- If you enable this policy setting the following options are supported
 
-Ignore: during authentication the domain controller will not probe any WHfB keys for the ROCA vulnerability.
+Ignore during authentication the domain controller will not probe any WHfB keys for the ROCA vulnerability.
 
-Audit: during authentication the domain controller will emit audit events for WHfB keys that are subject to the ROCA vulnerability (authentications will still succeed).
+Audit during authentication the domain controller will emit audit events for WHfB keys that are subject to the ROCA vulnerability (authentications will still succeed).
 
-Block: during authentication the domain controller will block the use of WHfB keys that are subject to the ROCA vulnerability (authentications will fail).
+Block during authentication the domain controller will block the use of WHfB keys that are subject to the ROCA vulnerability (authentications will fail).
 
 This setting only takes effect on domain controllers.
 
@@ -66,9 +64,9 @@ If not configured, domain controllers will default to using their local configur
 
 A reboot is not required for changes to this setting to take effect.
 
-Note: to avoid unexpected disruptions this setting should not be set to Block until appropriate mitigations have been performed, for example patching of vulnerable TPMs.
+**Note** to avoid unexpected disruptions this setting should not be set to Block until appropriate mitigations have been performed, for example patching of vulnerable TPMs.
 
-More information is available at <https://go.microsoft.com/fwlink/?linkid=2116430>.
+More information is available at <https//go.microsoft.com/fwlink/?linkid=2116430>.
 <!-- SamNGCKeyROCAValidation-Description-End -->
 
 <!-- SamNGCKeyROCAValidation-Editable-Begin -->
@@ -86,7 +84,7 @@ More information is available at <https://go.microsoft.com/fwlink/?linkid=211643
 
 <!-- SamNGCKeyROCAValidation-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

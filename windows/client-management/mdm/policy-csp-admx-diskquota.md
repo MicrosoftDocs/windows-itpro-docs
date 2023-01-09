@@ -1,6 +1,6 @@
 ---
 title: ADMX_DiskQuota Policy CSP
-description: Learn more about the ADMX_DiskQuota Area in Policy CSP
+description: Learn more about the ADMX_DiskQuota Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

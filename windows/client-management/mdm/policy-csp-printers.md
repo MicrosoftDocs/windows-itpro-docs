@@ -1,6 +1,6 @@
 ---
 title: Printers Policy CSP
-description: Learn more about the Printers Area in Policy CSP
+description: Learn more about the Printers Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
@@ -468,10 +468,16 @@ The following are the supported values:
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-DFProperties-End -->
 
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
 > [!TIP]
 > This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!-- Unknown -->
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ConfigureRpcAuthnLevelPrivacyEnabled |
+| ADMX File Name | Printing.admx |
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-AdmxBacked-End -->
 
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-Examples-Begin -->

@@ -1,10 +1,10 @@
 ---
 title: ADMX_DeviceSetup Policy CSP
-description: Learn more about the ADMX_DeviceSetup Area in Policy CSP
+description: Learn more about the ADMX_DeviceSetup Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_DeviceSetup
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,9 +44,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off "Found New Hardware" balloons during device installation.
 
-If you enable this policy setting, "Found New Hardware" balloons do not appear while a device is being installed.
+- If you enable this policy setting, "Found New Hardware" balloons do not appear while a device is being installed.
 
-If you disable or do not configure this policy setting, "Found New Hardware" balloons appear while a device is being installed, unless the driver for the device suppresses the balloons.
+- If you disable or do not configure this policy setting, "Found New Hardware" balloons appear while a device is being installed, unless the driver for the device suppresses the balloons.
 <!-- DeviceInstall_BalloonTips-Description-End -->
 
 <!-- DeviceInstall_BalloonTips-Editable-Begin -->
@@ -66,7 +64,7 @@ If you disable or do not configure this policy setting, "Found New Hardware" bal
 
 <!-- DeviceInstall_BalloonTips-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -106,13 +104,13 @@ If you disable or do not configure this policy setting, "Found New Hardware" bal
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the order in which Windows searches source locations for device drivers.
 
-If you enable this policy setting, you can select whether Windows searches for drivers on Windows Update unconditionally, only if necessary, or not at all.
+- If you enable this policy setting, you can select whether Windows searches for drivers on Windows Update unconditionally, only if necessary, or not at all.
 
-Note that searching always implies that Windows will attempt to search Windows Update exactly one time. With this setting, Windows will not continually search for updates. This setting is used to ensure that the best software will be found for the device, even if the network is temporarily available.
+**Note** that searching always implies that Windows will attempt to search Windows Update exactly one time. With this setting, Windows will not continually search for updates. This setting is used to ensure that the best software will be found for the device, even if the network is temporarily available.
 
 If the setting for searching only if needed is specified, then Windows will search for a driver only if a driver is not locally available on the system.
 
-If you disable or do not configure this policy setting, members of the Administrators group can determine the priority order in which Windows searches source locations for device drivers.
+- If you disable or do not configure this policy setting, members of the Administrators group can determine the priority order in which Windows searches source locations for device drivers.
 <!-- DriverSearchPlaces_SearchOrderConfiguration-Description-End -->
 
 <!-- DriverSearchPlaces_SearchOrderConfiguration-Editable-Begin -->
@@ -130,7 +128,7 @@ If you disable or do not configure this policy setting, members of the Administr
 
 <!-- DriverSearchPlaces_SearchOrderConfiguration-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

@@ -1,10 +1,10 @@
 ---
 title: LockDown Policy CSP
-description: Learn more about the LockDown Area in Policy CSP
+description: Learn more about the LockDown Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,9 +37,9 @@ ms.topic: reference
 
 <!-- AllowEdgeSwipe-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you disable this policy setting, users will not be able to invoke any system UI by swiping in from any screen edge.
+- If you disable this policy setting, users will not be able to invoke any system UI by swiping in from any screen edge.
 
-If you enable or do not configure this policy setting, users will be able to invoke system UI by swiping in from the screen edges.
+- If you enable or do not configure this policy setting, users will be able to invoke system UI by swiping in from the screen edges.
 <!-- AllowEdgeSwipe-Description-End -->
 
 <!-- AllowEdgeSwipe-Editable-Begin -->

@@ -1,10 +1,10 @@
 ---
 title: DeviceHealthMonitoring Policy CSP
-description: Learn more about the DeviceHealthMonitoring Area in Policy CSP
+description: Learn more about the DeviceHealthMonitoring Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/29/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowDeviceHealthMonitoring-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enable/disable 4Nines device health monitoring on devices.
+Enable/disable 4. Nines device health monitoring on devices.
 <!-- AllowDeviceHealthMonitoring-Description-End -->
 
 <!-- AllowDeviceHealthMonitoring-Editable-Begin -->

@@ -1,10 +1,10 @@
 ---
 title: ADMX_OfflineFiles Policy CSP
-description: Learn more about the ADMX_OfflineFiles Area in Policy CSP
+description: Learn more about the ADMX_OfflineFiles Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_OfflineFiles
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -48,9 +46,9 @@ Makes subfolders available offline whenever their parent folder is made availabl
 
 This setting automatically extends the "make available offline" setting to all new and existing subfolders of a folder. Users do not have the option of excluding subfolders.
 
-If you enable this setting, when you make a folder available offline, all folders within that folder are also made available offline. Also, new folders that you create within a folder that is available offline are made available offline when the parent folder is synchronized.
+- If you enable this setting, when you make a folder available offline, all folders within that folder are also made available offline. Also, new folders that you create within a folder that is available offline are made available offline when the parent folder is synchronized.
 
-If you disable this setting or do not configure it, the system asks users whether they want subfolders to be made available offline when they make a parent folder available offline.
+- If you disable this setting or do not configure it, the system asks users whether they want subfolders to be made available offline when they make a parent folder available offline.
 <!-- Pol_AlwaysPinSubFolders-Description-End -->
 
 <!-- Pol_AlwaysPinSubFolders-Editable-Begin -->
@@ -68,7 +66,7 @@ If you disable this setting or do not configure it, the system asks users whethe
 
 <!-- Pol_AlwaysPinSubFolders-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -89,6 +87,70 @@ If you disable this setting or do not configure it, the system asks users whethe
 
 <!-- Pol_AlwaysPinSubFolders-End -->
 
+<!-- Pol_AssignedOfflineFiles_1-Begin -->
+## Pol_AssignedOfflineFiles_1
+
+<!-- Pol_AssignedOfflineFiles_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_AssignedOfflineFiles_1-Applicability-End -->
+
+<!-- Pol_AssignedOfflineFiles_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_AssignedOfflineFiles_1
+```
+<!-- Pol_AssignedOfflineFiles_1-OmaUri-End -->
+
+<!-- Pol_AssignedOfflineFiles_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting lists network files and folders that are always available for offline use. This ensures that the specified files and folders are available offline to users of the computer.
+
+- If you enable this policy setting, the files you enter are always available offline to users of the computer. To specify a file or folder, click Show. In the Show Contents dialog box in the Value Name column, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
+
+- If you disable this policy setting, the list of files or folders made always available offline (including those inherited from lower precedence GPOs) is deleted and no files or folders are made available for offline use by Group Policy (though users can still specify their own files and folders for offline use).
+
+- If you do not configure this policy setting, no files or folders are made available for offline use by Group Policy.
+
+> [!NOTE]
+> This setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings will be combined and all specified files will be available for offline use.
+<!-- Pol_AssignedOfflineFiles_1-Description-End -->
+
+<!-- Pol_AssignedOfflineFiles_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_AssignedOfflineFiles_1-Editable-End -->
+
+<!-- Pol_AssignedOfflineFiles_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_AssignedOfflineFiles_1-DFProperties-End -->
+
+<!-- Pol_AssignedOfflineFiles_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_AssignedOfflineFiles_1 |
+| Friendly Name | Specify administratively assigned Offline Files |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_AssignedOfflineFiles_1-AdmxBacked-End -->
+
+<!-- Pol_AssignedOfflineFiles_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_AssignedOfflineFiles_1-Examples-End -->
+
+<!-- Pol_AssignedOfflineFiles_1-End -->
+
 <!-- Pol_AssignedOfflineFiles_2-Begin -->
 ## Pol_AssignedOfflineFiles_2
 
@@ -108,13 +170,14 @@ If you disable this setting or do not configure it, the system asks users whethe
 <!-- Description-Source-ADMX -->
 This policy setting lists network files and folders that are always available for offline use. This ensures that the specified files and folders are available offline to users of the computer.
 
-If you enable this policy setting, the files you enter are always available offline to users of the computer. To specify a file or folder, click Show. In the Show Contents dialog box in the Value Name column, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
+- If you enable this policy setting, the files you enter are always available offline to users of the computer. To specify a file or folder, click Show. In the Show Contents dialog box in the Value Name column, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
 
-If you disable this policy setting, the list of files or folders made always available offline (including those inherited from lower precedence GPOs) is deleted and no files or folders are made available for offline use by Group Policy (though users can still specify their own files and folders for offline use).
+- If you disable this policy setting, the list of files or folders made always available offline (including those inherited from lower precedence GPOs) is deleted and no files or folders are made available for offline use by Group Policy (though users can still specify their own files and folders for offline use).
 
-If you do not configure this policy setting, no files or folders are made available for offline use by Group Policy.
+- If you do not configure this policy setting, no files or folders are made available for offline use by Group Policy.
 
-Note: This setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings will be combined and all specified files will be available for offline use.
+> [!NOTE]
+> This setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings will be combined and all specified files will be available for offline use.
 <!-- Pol_AssignedOfflineFiles_2-Description-End -->
 
 <!-- Pol_AssignedOfflineFiles_2-Editable-Begin -->
@@ -132,13 +195,13 @@ Note: This setting appears in the Computer Configuration and User Configuration 
 
 <!-- Pol_AssignedOfflineFiles_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_AssignedOfflineFiles |
+| Name | Pol_AssignedOfflineFiles_2 |
 | Friendly Name | Specify administratively assigned Offline Files |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -171,11 +234,11 @@ Note: This setting appears in the Computer Configuration and User Configuration 
 <!-- Description-Source-ADMX -->
 This policy setting controls when background synchronization occurs while operating in slow-link mode, and applies to any user who logs onto the specified machine while this policy is in effect. To control slow-link mode, use the "Configure slow-link mode" policy setting.
 
-If you enable this policy setting, you can control when Windows synchronizes in the background while operating in slow-link mode. Use the 'Sync Interval' and 'Sync Variance' values to override the default sync interval and variance settings. Use 'Blockout Start Time' and 'Blockout Duration' to set a period of time where background sync is disabled. Use the 'Maximum Allowed Time Without A Sync' value to ensure that all network folders on the machine are synchronized with the server on a regular basis.
+- If you enable this policy setting, you can control when Windows synchronizes in the background while operating in slow-link mode. Use the 'Sync Interval' and 'Sync Variance' values to override the default sync interval and variance settings. Use 'Blockout Start Time' and 'Blockout Duration' to set a period of time where background sync is disabled. Use the 'Maximum Allowed Time Without A Sync' value to ensure that all network folders on the machine are synchronized with the server on a regular basis.
 
 You can also configure Background Sync for network shares that are in user selected Work Offline mode. This mode is in effect when a user selects the Work Offline button for a specific share. When selected, all configured settings will apply to shares in user selected Work Offline mode as well.
 
-If you disable or do not configure this policy setting, Windows performs a background sync of offline folders in the slow-link mode at a default interval with the start of the sync varying between 0 and 60 additional minutes. In Windows 7 and Windows Server 2008 R2, the default sync interval is 360 minutes. In Windows 8 and Windows Server 2012, the default sync interval is 120 minutes.
+- If you disable or do not configure this policy setting, Windows performs a background sync of offline folders in the slow-link mode at a default interval with the start of the sync varying between 0 and 60 additional minutes. In Windows 7 and Windows Server 2008 R2, the default sync interval is 360 minutes. In Windows 8 and Windows Server 2012, the default sync interval is 120 minutes.
 <!-- Pol_BackgroundSyncSettings-Description-End -->
 
 <!-- Pol_BackgroundSyncSettings-Editable-Begin -->
@@ -193,7 +256,7 @@ If you disable or do not configure this policy setting, Windows performs a backg
 
 <!-- Pol_BackgroundSyncSettings-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -235,17 +298,17 @@ This policy setting limits the amount of disk space that can be used to store of
 
 This setting also disables the ability to adjust, through the Offline Files control panel applet, the disk space limits on the Offline Files cache. This prevents users from trying to change the option while a policy setting controls it.
 
-If you enable this policy setting, you can specify the disk space limit (in megabytes) for offline files and also specify how much of that disk space can be used by automatically cached files.
+- If you enable this policy setting, you can specify the disk space limit (in megabytes) for offline files and also specify how much of that disk space can be used by automatically cached files.
 
-If you disable this policy setting, the system limits the space that offline files occupy to 25 percent of the total space on the drive where the Offline Files cache is located. The limit for automatically cached files is 100 percent of the total disk space limit.
+- If you disable this policy setting, the system limits the space that offline files occupy to 25 percent of the total space on the drive where the Offline Files cache is located. The limit for automatically cached files is 100 percent of the total disk space limit.
 
-If you do not configure this policy setting, the system limits the space that offline files occupy to 25 percent of the total space on the drive where the Offline Files cache is located. The limit for automatically cached files is 100 percent of the total disk space limit. However, the users can change these values using the Offline Files control applet.
+- If you do not configure this policy setting, the system limits the space that offline files occupy to 25 percent of the total space on the drive where the Offline Files cache is located. The limit for automatically cached files is 100 percent of the total disk space limit. However, the users can change these values using the Offline Files control applet.
 
-If you enable this setting and specify a total size limit greater than the size of the drive hosting the Offline Files cache, and that drive is the system drive, the total size limit is automatically adjusted downward to 75 percent of the size of the drive. If the cache is located on a drive other than the system drive, the limit is automatically adjusted downward to 100 percent of the size of the drive.
+- If you enable this setting and specify a total size limit greater than the size of the drive hosting the Offline Files cache, and that drive is the system drive, the total size limit is automatically adjusted downward to 75 percent of the size of the drive. If the cache is located on a drive other than the system drive, the limit is automatically adjusted downward to 100 percent of the size of the drive.
 
-If you enable this setting and specify a total size limit less than the amount of space currently used by the Offline Files cache, the total size limit is automatically adjusted upward to the amount of space currently used by offline files. The cache is then considered full.
+- If you enable this setting and specify a total size limit less than the amount of space currently used by the Offline Files cache, the total size limit is automatically adjusted upward to the amount of space currently used by offline files. The cache is then considered full.
 
-If you enable this setting and specify an auto-cached space limit greater than the total size limit, the auto-cached limit is automatically adjusted downward to equal the total size limit.
+- If you enable this setting and specify an auto-cached space limit greater than the total size limit, the auto-cached limit is automatically adjusted downward to equal the total size limit.
 
 This setting replaces the Default Cache Size setting used by pre-Windows Vista systems.
 <!-- Pol_CacheSize-Description-End -->
@@ -265,7 +328,7 @@ This setting replaces the Default Cache Size setting used by pre-Windows Vista s
 
 <!-- Pol_CacheSize-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -284,6 +347,68 @@ This setting replaces the Default Cache Size setting used by pre-Windows Vista s
 <!-- Pol_CacheSize-Examples-End -->
 
 <!-- Pol_CacheSize-End -->
+
+<!-- Pol_CustomGoOfflineActions_1-Begin -->
+## Pol_CustomGoOfflineActions_1
+
+<!-- Pol_CustomGoOfflineActions_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_CustomGoOfflineActions_1-Applicability-End -->
+
+<!-- Pol_CustomGoOfflineActions_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_CustomGoOfflineActions_1
+```
+<!-- Pol_CustomGoOfflineActions_1-OmaUri-End -->
+
+<!-- Pol_CustomGoOfflineActions_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines how computers respond when they are disconnected from particular offline file servers. This setting overrides the default response, a user-specified response, and the response specified in the "Action on server disconnect" setting.
+
+To use this setting, click Show. In the Show Contents dialog box in the Value Name column box, type the server's computer name. Then, in the Value column box, type "0" if users can work offline when they are disconnected from this server, or type "1" if they cannot.
+
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured for a particular server, the setting in Computer Configuration takes precedence over the setting in User Configuration. Both Computer and User configuration take precedence over a user's setting. This setting does not prevent users from setting custom actions through the Offline Files tab. However, users are unable to change any custom actions established via this setting.
+
+> [!TIP]
+> To configure this setting without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click Advanced. This setting corresponds to the settings in the "Exception list" section.
+<!-- Pol_CustomGoOfflineActions_1-Description-End -->
+
+<!-- Pol_CustomGoOfflineActions_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_CustomGoOfflineActions_1-Editable-End -->
+
+<!-- Pol_CustomGoOfflineActions_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_CustomGoOfflineActions_1-DFProperties-End -->
+
+<!-- Pol_CustomGoOfflineActions_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_CustomGoOfflineActions_1 |
+| Friendly Name | Non-default server disconnect actions |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_CustomGoOfflineActions_1-AdmxBacked-End -->
+
+<!-- Pol_CustomGoOfflineActions_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_CustomGoOfflineActions_1-Examples-End -->
+
+<!-- Pol_CustomGoOfflineActions_1-End -->
 
 <!-- Pol_CustomGoOfflineActions_2-Begin -->
 ## Pol_CustomGoOfflineActions_2
@@ -308,7 +433,8 @@ To use this setting, click Show. In the Show Contents dialog box in the Value Na
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured for a particular server, the setting in Computer Configuration takes precedence over the setting in User Configuration. Both Computer and User configuration take precedence over a user's setting. This setting does not prevent users from setting custom actions through the Offline Files tab. However, users are unable to change any custom actions established via this setting.
 
-Tip: To configure this setting without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click Advanced. This setting corresponds to the settings in the "Exception list" section.
+> [!TIP]
+> To configure this setting without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click Advanced. This setting corresponds to the settings in the "Exception list" section.
 <!-- Pol_CustomGoOfflineActions_2-Description-End -->
 
 <!-- Pol_CustomGoOfflineActions_2-Editable-Begin -->
@@ -326,13 +452,13 @@ Tip: To configure this setting without establishing a setting, in Windows Explor
 
 <!-- Pol_CustomGoOfflineActions_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_CustomGoOfflineActions |
+| Name | Pol_CustomGoOfflineActions_2 |
 | Friendly Name | Non-default server disconnect actions |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -371,13 +497,14 @@ Automatic caching can be set on any network share. When a user opens a file on t
 
 This setting does not limit the disk space available for files that user's make available offline manually.
 
-If you enable this setting, you can specify an automatic-cache disk space limit.
+- If you enable this setting, you can specify an automatic-cache disk space limit.
 
-If you disable this setting, the system limits the space that automatically cached files occupy to 10 percent of the space on the system drive.
+- If you disable this setting, the system limits the space that automatically cached files occupy to 10 percent of the space on the system drive.
 
-If you do not configure this setting, disk space for automatically cached files is limited to 10 percent of the system drive by default, but users can change it.
+- If you do not configure this setting, disk space for automatically cached files is limited to 10 percent of the system drive by default, but users can change it.
 
-Tip: To change the amount of disk space used for automatic caching without specifying a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then use the slider bar associated with the "Amount of disk space to use for temporary offline files" option.
+> [!TIP]
+> To change the amount of disk space used for automatic caching without specifying a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then use the slider bar associated with the "Amount of disk space to use for temporary offline files" option.
 <!-- Pol_DefCacheSize-Description-End -->
 
 <!-- Pol_DefCacheSize-Editable-Begin -->
@@ -395,7 +522,7 @@ Tip: To change the amount of disk space used for automatic caching without speci
 
 <!-- Pol_DefCacheSize-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -434,13 +561,14 @@ Tip: To change the amount of disk space used for automatic caching without speci
 <!-- Description-Source-ADMX -->
 This policy setting determines whether the Offline Files feature is enabled. Offline Files saves a copy of network files on the user's computer for use when the computer is not connected to the network.
 
-If you enable this policy setting, Offline Files is enabled and users cannot disable it.
+- If you enable this policy setting, Offline Files is enabled and users cannot disable it.
 
-If you disable this policy setting, Offline Files is disabled and users cannot enable it.
+- If you disable this policy setting, Offline Files is disabled and users cannot enable it.
 
-If you do not configure this policy setting, Offline Files is enabled on Windows client computers, and disabled on computers running Windows Server, unless changed by the user.
+- If you do not configure this policy setting, Offline Files is enabled on Windows client computers, and disabled on computers running Windows Server, unless changed by the user.
 
-Note: Changes to this policy setting do not take effect until the affected computer is restarted.
+> [!NOTE]
+> Changes to this policy setting do not take effect until the affected computer is restarted.
 <!-- Pol_Enabled-Description-End -->
 
 <!-- Pol_Enabled-Editable-Begin -->
@@ -458,7 +586,7 @@ Note: Changes to this policy setting do not take effect until the affected compu
 
 <!-- Pol_Enabled-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -500,13 +628,14 @@ This policy setting determines whether offline files are encrypted.
 
 Offline files are locally cached copies of files from a network share. Encrypting this cache reduces the likelihood that a user could access files from the Offline Files cache without proper permissions.
 
-If you enable this policy setting, all files in the Offline Files cache are encrypted. This includes existing files as well as files added later. The cached copy on the local computer is affected, but the associated network copy is not. The user cannot unencrypt Offline Files through the user interface.
+- If you enable this policy setting, all files in the Offline Files cache are encrypted. This includes existing files as well as files added later. The cached copy on the local computer is affected, but the associated network copy is not. The user cannot unencrypt Offline Files through the user interface.
 
-If you disable this policy setting, all files in the Offline Files cache are unencrypted. This includes existing files as well as files added later, even if the files were stored using NTFS encryption or BitLocker Drive Encryption while on the server. The cached copy on the local computer is affected, but the associated network copy is not. The user cannot encrypt Offline Files through the user interface.
+- If you disable this policy setting, all files in the Offline Files cache are unencrypted. This includes existing files as well as files added later, even if the files were stored using NTFS encryption or BitLocker Drive Encryption while on the server. The cached copy on the local computer is affected, but the associated network copy is not. The user cannot encrypt Offline Files through the user interface.
 
-If you do not configure this policy setting, encryption of the Offline Files cache is controlled by the user through the user interface. The current cache state is retained, and if the cache is only partially encrypted, the operation completes so that it is fully encrypted. The cache does not return to the unencrypted state. The user must be an administrator on the local computer to encrypt or decrypt the Offline Files cache.
+- If you do not configure this policy setting, encryption of the Offline Files cache is controlled by the user through the user interface. The current cache state is retained, and if the cache is only partially encrypted, the operation completes so that it is fully encrypted. The cache does not return to the unencrypted state. The user must be an administrator on the local computer to encrypt or decrypt the Offline Files cache.
 
-Note: By default, this cache is protected on NTFS partitions by ACLs.
+> [!NOTE]
+> By default, this cache is protected on NTFS partitions by ACLs.
 
 This setting is applied at user logon. If this setting is changed after user logon then user logoff and logon is required for this setting to take effect.
 <!-- Pol_EncryptOfflineFiles-Description-End -->
@@ -526,7 +655,7 @@ This setting is applied at user logon. If this setting is changed after user log
 
 <!-- Pol_EncryptOfflineFiles-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -546,6 +675,76 @@ This setting is applied at user logon. If this setting is changed after user log
 <!-- Pol_EncryptOfflineFiles-Examples-End -->
 
 <!-- Pol_EncryptOfflineFiles-End -->
+
+<!-- Pol_EventLoggingLevel_1-Begin -->
+## Pol_EventLoggingLevel_1
+
+<!-- Pol_EventLoggingLevel_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_EventLoggingLevel_1-Applicability-End -->
+
+<!-- Pol_EventLoggingLevel_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_EventLoggingLevel_1
+```
+<!-- Pol_EventLoggingLevel_1-OmaUri-End -->
+
+<!-- Pol_EventLoggingLevel_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines which events the Offline Files feature records in the event log.
+
+Offline Files records events in the Application log in Event Viewer when it detects errors. By default, Offline Files records an event only when the offline files storage cache is corrupted. However, you can use this setting to specify additional events you want Offline Files to record.
+
+To use this setting, in the "Enter" box, select the number corresponding to the events you want the system to log. The levels are cumulative; that is, each level includes the events in all preceding levels.
+
+"0" records an error when the offline storage cache is corrupted.
+
+"1" also records an event when the server hosting the offline file is disconnected from the network.
+
+"2" also records events when the local computer is connected and disconnected from the network.
+
+"3" also records an event when the server hosting the offline file is reconnected to the network.
+
+> [!NOTE]
+> This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
+<!-- Pol_EventLoggingLevel_1-Description-End -->
+
+<!-- Pol_EventLoggingLevel_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_EventLoggingLevel_1-Editable-End -->
+
+<!-- Pol_EventLoggingLevel_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_EventLoggingLevel_1-DFProperties-End -->
+
+<!-- Pol_EventLoggingLevel_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_EventLoggingLevel_1 |
+| Friendly Name | Event logging level |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_EventLoggingLevel_1-AdmxBacked-End -->
+
+<!-- Pol_EventLoggingLevel_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_EventLoggingLevel_1-Examples-End -->
+
+<!-- Pol_EventLoggingLevel_1-End -->
 
 <!-- Pol_EventLoggingLevel_2-Begin -->
 ## Pol_EventLoggingLevel_2
@@ -578,7 +777,8 @@ To use this setting, in the "Enter" box, select the number corresponding to the 
 
 "3" also records an event when the server hosting the offline file is reconnected to the network.
 
-Note: This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
+> [!NOTE]
+> This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 <!-- Pol_EventLoggingLevel_2-Description-End -->
 
 <!-- Pol_EventLoggingLevel_2-Editable-Begin -->
@@ -596,13 +796,13 @@ Note: This setting appears in the Computer Configuration and User Configuration 
 
 <!-- Pol_EventLoggingLevel_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_EventLoggingLevel |
+| Name | Pol_EventLoggingLevel_2 |
 | Friendly Name | Event logging level |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -635,9 +835,9 @@ Note: This setting appears in the Computer Configuration and User Configuration 
 <!-- Description-Source-ADMX -->
 This policy setting enables administrators to block certain file types from being created in the folders that have been made available offline.
 
-If you enable this policy setting, a user will be unable to create files with the specified file extensions in any of the folders that have been made available offline.
+- If you enable this policy setting, a user will be unable to create files with the specified file extensions in any of the folders that have been made available offline.
 
-If you disable or do not configure this policy setting, a user can create a file of any type in the folders that have been made available offline.
+- If you disable or do not configure this policy setting, a user can create a file of any type in the folders that have been made available offline.
 <!-- Pol_ExclusionListSettings-Description-End -->
 
 <!-- Pol_ExclusionListSettings-Editable-Begin -->
@@ -655,7 +855,7 @@ If you disable or do not configure this policy setting, a user can create a file
 
 <!-- Pol_ExclusionListSettings-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -700,7 +900,8 @@ This setting is designed to protect files that cannot be separated, such as data
 
 To use this setting, type the file name extension in the "Extensions" box. To type more than one extension, separate the extensions with a semicolon (;).
 
-Note: To make changes to this setting effective, you must log off and log on again.
+> [!NOTE]
+> To make changes to this setting effective, you must log off and log on again.
 <!-- Pol_ExtExclusionList-Description-End -->
 
 <!-- Pol_ExtExclusionList-Editable-Begin -->
@@ -718,7 +919,7 @@ Note: To make changes to this setting effective, you must log off and log on aga
 
 <!-- Pol_ExtExclusionList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -737,6 +938,80 @@ Note: To make changes to this setting effective, you must log off and log on aga
 <!-- Pol_ExtExclusionList-Examples-End -->
 
 <!-- Pol_ExtExclusionList-End -->
+
+<!-- Pol_GoOfflineAction_1-Begin -->
+## Pol_GoOfflineAction_1
+
+<!-- Pol_GoOfflineAction_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_GoOfflineAction_1-Applicability-End -->
+
+<!-- Pol_GoOfflineAction_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_GoOfflineAction_1
+```
+<!-- Pol_GoOfflineAction_1-OmaUri-End -->
+
+<!-- Pol_GoOfflineAction_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines whether network files remain available if the computer is suddenly disconnected from the server hosting the files.
+
+This setting also disables the "When a network connection is lost" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
+
+- If you enable this setting, you can use the "Action" box to specify how computers in the group respond.
+
+- "Work offline" indicates that the computer can use local copies of network files while the server is inaccessible.
+
+- "Never go offline" indicates that network files are not available while the server is inaccessible.
+
+- If you disable this setting or select the "Work offline" option, users can work offline if disconnected.
+
+- If you do not configure this setting, users can work offline by default, but they can change this option.
+
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
+
+> [!TIP]
+> To configure this setting without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, click Advanced, and then select an option in the "When a network connection is lost" section.
+
+Also, see the "Non-default server disconnect actions" setting.
+<!-- Pol_GoOfflineAction_1-Description-End -->
+
+<!-- Pol_GoOfflineAction_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_GoOfflineAction_1-Editable-End -->
+
+<!-- Pol_GoOfflineAction_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_GoOfflineAction_1-DFProperties-End -->
+
+<!-- Pol_GoOfflineAction_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_GoOfflineAction_1 |
+| Friendly Name | Action on server disconnect |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_GoOfflineAction_1-AdmxBacked-End -->
+
+<!-- Pol_GoOfflineAction_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_GoOfflineAction_1-Examples-End -->
+
+<!-- Pol_GoOfflineAction_1-End -->
 
 <!-- Pol_GoOfflineAction_2-Begin -->
 ## Pol_GoOfflineAction_2
@@ -759,19 +1034,20 @@ Determines whether network files remain available if the computer is suddenly di
 
 This setting also disables the "When a network connection is lost" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
 
-If you enable this setting, you can use the "Action" box to specify how computers in the group respond.
+- If you enable this setting, you can use the "Action" box to specify how computers in the group respond.
 
--- "Work offline" indicates that the computer can use local copies of network files while the server is inaccessible.
+- "Work offline" indicates that the computer can use local copies of network files while the server is inaccessible.
 
--- "Never go offline" indicates that network files are not available while the server is inaccessible.
+- "Never go offline" indicates that network files are not available while the server is inaccessible.
 
-If you disable this setting or select the "Work offline" option, users can work offline if disconnected.
+- If you disable this setting or select the "Work offline" option, users can work offline if disconnected.
 
-If you do not configure this setting, users can work offline by default, but they can change this option.
+- If you do not configure this setting, users can work offline by default, but they can change this option.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
-Tip: To configure this setting without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, click Advanced, and then select an option in the "When a network connection is lost" section.
+> [!TIP]
+> To configure this setting without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, click Advanced, and then select an option in the "When a network connection is lost" section.
 
 Also, see the "Non-default server disconnect actions" setting.
 <!-- Pol_GoOfflineAction_2-Description-End -->
@@ -791,13 +1067,13 @@ Also, see the "Non-default server disconnect actions" setting.
 
 <!-- Pol_GoOfflineAction_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_GoOfflineAction |
+| Name | Pol_GoOfflineAction_2 |
 | Friendly Name | Action on server disconnect |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -810,6 +1086,71 @@ Also, see the "Non-default server disconnect actions" setting.
 <!-- Pol_GoOfflineAction_2-Examples-End -->
 
 <!-- Pol_GoOfflineAction_2-End -->
+
+<!-- Pol_NoCacheViewer_1-Begin -->
+## Pol_NoCacheViewer_1
+
+<!-- Pol_NoCacheViewer_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_NoCacheViewer_1-Applicability-End -->
+
+<!-- Pol_NoCacheViewer_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_NoCacheViewer_1
+```
+<!-- Pol_NoCacheViewer_1-OmaUri-End -->
+
+<!-- Pol_NoCacheViewer_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Disables the Offline Files folder.
+
+This setting disables the "View Files" button on the Offline Files tab. As a result, users cannot use the Offline Files folder to view or open copies of network files stored on their computer. Also, they cannot use the folder to view characteristics of offline files, such as their server status, type, or location.
+
+This setting does not prevent users from working offline or from saving local copies of files available offline. Also, it does not prevent them from using other programs, such as Windows Explorer, to view their offline files.
+
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
+
+> [!TIP]
+> To view the Offline Files Folder, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click "View Files."
+<!-- Pol_NoCacheViewer_1-Description-End -->
+
+<!-- Pol_NoCacheViewer_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_NoCacheViewer_1-Editable-End -->
+
+<!-- Pol_NoCacheViewer_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_NoCacheViewer_1-DFProperties-End -->
+
+<!-- Pol_NoCacheViewer_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_NoCacheViewer_1 |
+| Friendly Name | Prevent use of Offline Files folder |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| Registry Value Name | NoCacheViewer |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_NoCacheViewer_1-AdmxBacked-End -->
+
+<!-- Pol_NoCacheViewer_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_NoCacheViewer_1-Examples-End -->
+
+<!-- Pol_NoCacheViewer_1-End -->
 
 <!-- Pol_NoCacheViewer_2-Begin -->
 ## Pol_NoCacheViewer_2
@@ -836,7 +1177,8 @@ This setting does not prevent users from working offline or from saving local co
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
-Tip: To view the Offline Files Folder, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click "View Files."
+> [!TIP]
+> To view the Offline Files Folder, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click "View Files."
 <!-- Pol_NoCacheViewer_2-Description-End -->
 
 <!-- Pol_NoCacheViewer_2-Editable-Begin -->
@@ -854,13 +1196,13 @@ Tip: To view the Offline Files Folder, in Windows Explorer, on the Tools menu, c
 
 <!-- Pol_NoCacheViewer_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_NoCacheViewer |
+| Name | Pol_NoCacheViewer_2 |
 | Friendly Name | Prevent use of Offline Files folder |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -874,6 +1216,71 @@ Tip: To view the Offline Files Folder, in Windows Explorer, on the Tools menu, c
 <!-- Pol_NoCacheViewer_2-Examples-End -->
 
 <!-- Pol_NoCacheViewer_2-End -->
+
+<!-- Pol_NoConfigCache_1-Begin -->
+## Pol_NoConfigCache_1
+
+<!-- Pol_NoConfigCache_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_NoConfigCache_1-Applicability-End -->
+
+<!-- Pol_NoConfigCache_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_NoConfigCache_1
+```
+<!-- Pol_NoConfigCache_1-OmaUri-End -->
+
+<!-- Pol_NoConfigCache_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from enabling, disabling, or changing the configuration of Offline Files.
+
+This setting removes the Offline Files tab from the Folder Options dialog box. It also removes the Settings item from the Offline Files context menu and disables the Settings button on the Offline Files Status dialog box. As a result, users cannot view or change the options on the Offline Files tab or Offline Files dialog box.
+
+This is a comprehensive setting that locks down the configuration you establish by using other settings in this folder.
+
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
+
+> [!TIP]
+> This setting provides a quick method for locking down the default settings for Offline Files. To accept the defaults, just enable this setting. You do not have to disable any other settings in this folder.
+<!-- Pol_NoConfigCache_1-Description-End -->
+
+<!-- Pol_NoConfigCache_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_NoConfigCache_1-Editable-End -->
+
+<!-- Pol_NoConfigCache_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_NoConfigCache_1-DFProperties-End -->
+
+<!-- Pol_NoConfigCache_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_NoConfigCache_1 |
+| Friendly Name | Prohibit user configuration of Offline Files |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| Registry Value Name | NoConfigCache |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_NoConfigCache_1-AdmxBacked-End -->
+
+<!-- Pol_NoConfigCache_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_NoConfigCache_1-Examples-End -->
+
+<!-- Pol_NoConfigCache_1-End -->
 
 <!-- Pol_NoConfigCache_2-Begin -->
 ## Pol_NoConfigCache_2
@@ -900,7 +1307,8 @@ This is a comprehensive setting that locks down the configuration you establish 
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
-Tip: This setting provides a quick method for locking down the default settings for Offline Files. To accept the defaults, just enable this setting. You do not have to disable any other settings in this folder.
+> [!TIP]
+> This setting provides a quick method for locking down the default settings for Offline Files. To accept the defaults, just enable this setting. You do not have to disable any other settings in this folder.
 <!-- Pol_NoConfigCache_2-Description-End -->
 
 <!-- Pol_NoConfigCache_2-Editable-Begin -->
@@ -918,13 +1326,13 @@ Tip: This setting provides a quick method for locking down the default settings 
 
 <!-- Pol_NoConfigCache_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_NoConfigCache |
+| Name | Pol_NoConfigCache_2 |
 | Friendly Name | Prohibit user configuration of Offline Files |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -938,6 +1346,72 @@ Tip: This setting provides a quick method for locking down the default settings 
 <!-- Pol_NoConfigCache_2-Examples-End -->
 
 <!-- Pol_NoConfigCache_2-End -->
+
+<!-- Pol_NoMakeAvailableOffline_1-Begin -->
+## Pol_NoMakeAvailableOffline_1
+
+<!-- Pol_NoMakeAvailableOffline_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_NoMakeAvailableOffline_1-Applicability-End -->
+
+<!-- Pol_NoMakeAvailableOffline_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_NoMakeAvailableOffline_1
+```
+<!-- Pol_NoMakeAvailableOffline_1-OmaUri-End -->
+
+<!-- Pol_NoMakeAvailableOffline_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents users from making network files and folders available offline.
+
+- If you enable this policy setting, users cannot designate files to be saved on their computer for offline use. However, Windows will still cache local copies of files that reside on network shares designated for automatic caching.
+
+- If you disable or do not configure this policy setting, users can manually specify files and folders that they want to make available offline.
+
+**Note**:
+
+This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence.
+
+The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
+<!-- Pol_NoMakeAvailableOffline_1-Description-End -->
+
+<!-- Pol_NoMakeAvailableOffline_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_NoMakeAvailableOffline_1-Editable-End -->
+
+<!-- Pol_NoMakeAvailableOffline_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_NoMakeAvailableOffline_1-DFProperties-End -->
+
+<!-- Pol_NoMakeAvailableOffline_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_NoMakeAvailableOffline_1 |
+| Friendly Name | Remove "Make Available Offline" command |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| Registry Value Name | NoMakeAvailableOffline |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_NoMakeAvailableOffline_1-AdmxBacked-End -->
+
+<!-- Pol_NoMakeAvailableOffline_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_NoMakeAvailableOffline_1-Examples-End -->
+
+<!-- Pol_NoMakeAvailableOffline_1-End -->
 
 <!-- Pol_NoMakeAvailableOffline_2-Begin -->
 ## Pol_NoMakeAvailableOffline_2
@@ -958,11 +1432,11 @@ Tip: This setting provides a quick method for locking down the default settings 
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from making network files and folders available offline.
 
-If you enable this policy setting, users cannot designate files to be saved on their computer for offline use. However, Windows will still cache local copies of files that reside on network shares designated for automatic caching.
+- If you enable this policy setting, users cannot designate files to be saved on their computer for offline use. However, Windows will still cache local copies of files that reside on network shares designated for automatic caching.
 
-If you disable or do not configure this policy setting, users can manually specify files and folders that they want to make available offline.
+- If you disable or do not configure this policy setting, users can manually specify files and folders that they want to make available offline.
 
-Notes:
+**Note**:
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence.
 
@@ -984,13 +1458,13 @@ The "Make Available Offline" command is called "Always available offline" on com
 
 <!-- Pol_NoMakeAvailableOffline_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_NoMakeAvailableOffline |
+| Name | Pol_NoMakeAvailableOffline_2 |
 | Friendly Name | Remove "Make Available Offline" command |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -1004,6 +1478,77 @@ The "Make Available Offline" command is called "Always available offline" on com
 <!-- Pol_NoMakeAvailableOffline_2-Examples-End -->
 
 <!-- Pol_NoMakeAvailableOffline_2-End -->
+
+<!-- Pol_NoPinFiles_1-Begin -->
+## Pol_NoPinFiles_1
+
+<!-- Pol_NoPinFiles_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_NoPinFiles_1-Applicability-End -->
+
+<!-- Pol_NoPinFiles_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_NoPinFiles_1
+```
+<!-- Pol_NoPinFiles_1-OmaUri-End -->
+
+<!-- Pol_NoPinFiles_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage a list of files and folders for which you want to block the "Make Available Offline" command.
+
+- If you enable this policy setting, the "Make Available Offline" command is not available for the files and folders that you list. To specify these files and folders, click Show. In the Show Contents dialog box, in the Value Name column box, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
+
+- If you disable this policy setting, the list of files and folders is deleted, including any lists inherited from lower precedence GPOs, and the "Make Available Offline" command is displayed for all files and folders.
+
+- If you do not configure this policy setting, the "Make Available Offline" command is available for all files and folders.
+
+**Note**:
+
+This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings are combined, and the "Make Available Offline" command is unavailable for all specified files and folders.
+
+The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
+
+This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching." It only affects the display of the "Make Available Offline" command in File Explorer.
+
+If the "Remove 'Make Available Offline' command" policy setting is enabled, this setting has no effect.
+<!-- Pol_NoPinFiles_1-Description-End -->
+
+<!-- Pol_NoPinFiles_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_NoPinFiles_1-Editable-End -->
+
+<!-- Pol_NoPinFiles_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_NoPinFiles_1-DFProperties-End -->
+
+<!-- Pol_NoPinFiles_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_NoPinFiles_1 |
+| Friendly Name | Remove "Make Available Offline" for these files and folders |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_NoPinFiles_1-AdmxBacked-End -->
+
+<!-- Pol_NoPinFiles_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_NoPinFiles_1-Examples-End -->
+
+<!-- Pol_NoPinFiles_1-End -->
 
 <!-- Pol_NoPinFiles_2-Begin -->
 ## Pol_NoPinFiles_2
@@ -1024,13 +1569,13 @@ The "Make Available Offline" command is called "Always available offline" on com
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage a list of files and folders for which you want to block the "Make Available Offline" command.
 
-If you enable this policy setting, the "Make Available Offline" command is not available for the files and folders that you list. To specify these files and folders, click Show. In the Show Contents dialog box, in the Value Name column box, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
+- If you enable this policy setting, the "Make Available Offline" command is not available for the files and folders that you list. To specify these files and folders, click Show. In the Show Contents dialog box, in the Value Name column box, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
 
-If you disable this policy setting, the list of files and folders is deleted, including any lists inherited from lower precedence GPOs, and the "Make Available Offline" command is displayed for all files and folders.
+- If you disable this policy setting, the list of files and folders is deleted, including any lists inherited from lower precedence GPOs, and the "Make Available Offline" command is displayed for all files and folders.
 
-If you do not configure this policy setting, the "Make Available Offline" command is available for all files and folders.
+- If you do not configure this policy setting, the "Make Available Offline" command is available for all files and folders.
 
-Notes:
+**Note**:
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings are combined, and the "Make Available Offline" command is unavailable for all specified files and folders.
 
@@ -1056,13 +1601,13 @@ If the "Remove 'Make Available Offline' command" policy setting is enabled, this
 
 <!-- Pol_NoPinFiles_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_NoPinFiles |
+| Name | Pol_NoPinFiles_2 |
 | Friendly Name | Remove "Make Available Offline" for these files and folders |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -1075,6 +1620,77 @@ If the "Remove 'Make Available Offline' command" policy setting is enabled, this
 <!-- Pol_NoPinFiles_2-Examples-End -->
 
 <!-- Pol_NoPinFiles_2-End -->
+
+<!-- Pol_NoReminders_1-Begin -->
+## Pol_NoReminders_1
+
+<!-- Pol_NoReminders_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_NoReminders_1-Applicability-End -->
+
+<!-- Pol_NoReminders_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_NoReminders_1
+```
+<!-- Pol_NoReminders_1-OmaUri-End -->
+
+<!-- Pol_NoReminders_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hides or displays reminder balloons, and prevents users from changing the setting.
+
+Reminder balloons appear above the Offline Files icon in the notification area to notify users when they have lost the connection to a networked file and are working on a local copy of the file. Users can then decide how to proceed.
+
+- If you enable this setting, the system hides the reminder balloons, and prevents users from displaying them.
+
+If you disable the setting, the system displays the reminder balloons and prevents users from hiding them.
+
+If this setting is not configured, reminder balloons are displayed by default when you enable offline files, but users can change the setting.
+
+To prevent users from changing the setting while a setting is in effect, the system disables the "Enable reminders" option on the Offline Files tab
+
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
+
+> [!TIP]
+> To display or hide reminder balloons without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Enable reminders" check box.
+<!-- Pol_NoReminders_1-Description-End -->
+
+<!-- Pol_NoReminders_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_NoReminders_1-Editable-End -->
+
+<!-- Pol_NoReminders_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_NoReminders_1-DFProperties-End -->
+
+<!-- Pol_NoReminders_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_NoReminders_1 |
+| Friendly Name | Turn off reminder balloons |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| Registry Value Name | NoReminders |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_NoReminders_1-AdmxBacked-End -->
+
+<!-- Pol_NoReminders_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_NoReminders_1-Examples-End -->
+
+<!-- Pol_NoReminders_1-End -->
 
 <!-- Pol_NoReminders_2-Begin -->
 ## Pol_NoReminders_2
@@ -1097,7 +1713,7 @@ Hides or displays reminder balloons, and prevents users from changing the settin
 
 Reminder balloons appear above the Offline Files icon in the notification area to notify users when they have lost the connection to a networked file and are working on a local copy of the file. Users can then decide how to proceed.
 
-If you enable this setting, the system hides the reminder balloons, and prevents users from displaying them.
+- If you enable this setting, the system hides the reminder balloons, and prevents users from displaying them.
 
 If you disable the setting, the system displays the reminder balloons and prevents users from hiding them.
 
@@ -1107,7 +1723,8 @@ To prevent users from changing the setting while a setting is in effect, the sys
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
-Tip: To display or hide reminder balloons without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Enable reminders" check box.
+> [!TIP]
+> To display or hide reminder balloons without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Enable reminders" check box.
 <!-- Pol_NoReminders_2-Description-End -->
 
 <!-- Pol_NoReminders_2-Editable-Begin -->
@@ -1125,13 +1742,13 @@ Tip: To display or hide reminder balloons without establishing a setting, in Win
 
 <!-- Pol_NoReminders_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_NoReminders |
+| Name | Pol_NoReminders_2 |
 | Friendly Name | Turn off reminder balloons |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -1169,9 +1786,9 @@ The cached files are temporary and are not available to the user when offline. T
 
 This policy setting is triggered by the configured round trip network latency value. We recommend using this policy setting when the network connection to the server is slow. For example, you can configure a value of 60 ms as the round trip latency of the network above which files should be transparently cached in the Offline Files cache. If the round trip latency of the network is less than 60ms, reads to remote files will not be cached.
 
-If you enable this policy setting, transparent caching is enabled and configurable.
+- If you enable this policy setting, transparent caching is enabled and configurable.
 
-If you disable or do not configure this policy setting, remote files will be not be transparently cached on client computers.
+- If you disable or do not configure this policy setting, remote files will be not be transparently cached on client computers.
 <!-- Pol_OnlineCachingSettings-Description-End -->
 
 <!-- Pol_OnlineCachingSettings-Editable-Begin -->
@@ -1189,7 +1806,7 @@ If you disable or do not configure this policy setting, remote files will be not
 
 <!-- Pol_OnlineCachingSettings-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1230,9 +1847,10 @@ Deletes local copies of the user's offline files when the user logs off.
 
 This setting specifies that automatically and manually cached offline files are retained only while the user is logged on to the computer. When the user logs off, the system deletes all local copies of offline files.
 
-If you disable this setting or do not configure it, automatically and manually cached copies are retained on the user's computer for later offline use.
+- If you disable this setting or do not configure it, automatically and manually cached copies are retained on the user's computer for later offline use.
 
-Caution: Files are not synchronized before they are deleted. Any changes to local files since the last synchronization are lost.
+> [!CAUTION]
+> Files are not synchronized before they are deleted. Any changes to local files since the last synchronization are lost.
 <!-- Pol_PurgeAtLogoff-Description-End -->
 
 <!-- Pol_PurgeAtLogoff-Editable-Begin -->
@@ -1250,7 +1868,7 @@ Caution: Files are not synchronized before they are deleted. Any changes to loca
 
 <!-- Pol_PurgeAtLogoff-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1290,9 +1908,9 @@ Caution: Files are not synchronized before they are deleted. Any changes to loca
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn on economical application of administratively assigned Offline Files.
 
-If you enable or do not configure this policy setting, only new files and folders in administratively assigned folders are synchronized at logon. Files and folders that are already available offline are skipped and are synchronized later.
+- If you enable or do not configure this policy setting, only new files and folders in administratively assigned folders are synchronized at logon. Files and folders that are already available offline are skipped and are synchronized later.
 
-If you disable this policy setting, all administratively assigned folders are synchronized at logon.
+- If you disable this policy setting, all administratively assigned folders are synchronized at logon.
 <!-- Pol_QuickAdimPin-Description-End -->
 
 <!-- Pol_QuickAdimPin-Editable-Begin -->
@@ -1310,7 +1928,7 @@ If you disable this policy setting, all administratively assigned folders are sy
 
 <!-- Pol_QuickAdimPin-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1331,6 +1949,70 @@ If you disable this policy setting, all administratively assigned folders are sy
 
 <!-- Pol_QuickAdimPin-End -->
 
+<!-- Pol_ReminderFreq_1-Begin -->
+## Pol_ReminderFreq_1
+
+<!-- Pol_ReminderFreq_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_ReminderFreq_1-Applicability-End -->
+
+<!-- Pol_ReminderFreq_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_ReminderFreq_1
+```
+<!-- Pol_ReminderFreq_1-OmaUri-End -->
+
+<!-- Pol_ReminderFreq_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines how often reminder balloon updates appear.
+
+- If you enable this setting, you can select how often reminder balloons updates appear and also prevent users from changing this setting.
+
+Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the update interval.
+
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
+
+> [!TIP]
+> To set reminder balloon frequency without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Display reminder balloons every ... minutes" option.
+<!-- Pol_ReminderFreq_1-Description-End -->
+
+<!-- Pol_ReminderFreq_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_ReminderFreq_1-Editable-End -->
+
+<!-- Pol_ReminderFreq_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_ReminderFreq_1-DFProperties-End -->
+
+<!-- Pol_ReminderFreq_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_ReminderFreq_1 |
+| Friendly Name | Reminder balloon frequency |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_ReminderFreq_1-AdmxBacked-End -->
+
+<!-- Pol_ReminderFreq_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_ReminderFreq_1-Examples-End -->
+
+<!-- Pol_ReminderFreq_1-End -->
+
 <!-- Pol_ReminderFreq_2-Begin -->
 ## Pol_ReminderFreq_2
 
@@ -1350,13 +2032,14 @@ If you disable this policy setting, all administratively assigned folders are sy
 <!-- Description-Source-ADMX -->
 Determines how often reminder balloon updates appear.
 
-If you enable this setting, you can select how often reminder balloons updates appear and also prevent users from changing this setting.
+- If you enable this setting, you can select how often reminder balloons updates appear and also prevent users from changing this setting.
 
 Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the update interval.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
-Tip: To set reminder balloon frequency without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Display reminder balloons every ... minutes" option.
+> [!TIP]
+> To set reminder balloon frequency without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Display reminder balloons every ... minutes" option.
 <!-- Pol_ReminderFreq_2-Description-End -->
 
 <!-- Pol_ReminderFreq_2-Editable-Begin -->
@@ -1374,13 +2057,13 @@ Tip: To set reminder balloon frequency without establishing a setting, in Window
 
 <!-- Pol_ReminderFreq_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_ReminderFreq |
+| Name | Pol_ReminderFreq_2 |
 | Friendly Name | Reminder balloon frequency |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -1393,6 +2076,65 @@ Tip: To set reminder balloon frequency without establishing a setting, in Window
 <!-- Pol_ReminderFreq_2-Examples-End -->
 
 <!-- Pol_ReminderFreq_2-End -->
+
+<!-- Pol_ReminderInitTimeout_1-Begin -->
+## Pol_ReminderInitTimeout_1
+
+<!-- Pol_ReminderInitTimeout_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_ReminderInitTimeout_1-Applicability-End -->
+
+<!-- Pol_ReminderInitTimeout_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_ReminderInitTimeout_1
+```
+<!-- Pol_ReminderInitTimeout_1-OmaUri-End -->
+
+<!-- Pol_ReminderInitTimeout_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines how long the first reminder balloon for a network status change is displayed.
+
+Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the first reminder.
+
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
+<!-- Pol_ReminderInitTimeout_1-Description-End -->
+
+<!-- Pol_ReminderInitTimeout_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_ReminderInitTimeout_1-Editable-End -->
+
+<!-- Pol_ReminderInitTimeout_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_ReminderInitTimeout_1-DFProperties-End -->
+
+<!-- Pol_ReminderInitTimeout_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_ReminderInitTimeout_1 |
+| Friendly Name | Initial reminder balloon lifetime |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_ReminderInitTimeout_1-AdmxBacked-End -->
+
+<!-- Pol_ReminderInitTimeout_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_ReminderInitTimeout_1-Examples-End -->
+
+<!-- Pol_ReminderInitTimeout_1-End -->
 
 <!-- Pol_ReminderInitTimeout_2-Begin -->
 ## Pol_ReminderInitTimeout_2
@@ -1433,13 +2175,13 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 <!-- Pol_ReminderInitTimeout_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_ReminderInitTimeout |
+| Name | Pol_ReminderInitTimeout_2 |
 | Friendly Name | Initial reminder balloon lifetime |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -1452,6 +2194,65 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_ReminderInitTimeout_2-Examples-End -->
 
 <!-- Pol_ReminderInitTimeout_2-End -->
+
+<!-- Pol_ReminderTimeout_1-Begin -->
+## Pol_ReminderTimeout_1
+
+<!-- Pol_ReminderTimeout_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_ReminderTimeout_1-Applicability-End -->
+
+<!-- Pol_ReminderTimeout_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_ReminderTimeout_1
+```
+<!-- Pol_ReminderTimeout_1-OmaUri-End -->
+
+<!-- Pol_ReminderTimeout_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines how long updated reminder balloons are displayed.
+
+Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the update reminder.
+
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
+<!-- Pol_ReminderTimeout_1-Description-End -->
+
+<!-- Pol_ReminderTimeout_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_ReminderTimeout_1-Editable-End -->
+
+<!-- Pol_ReminderTimeout_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_ReminderTimeout_1-DFProperties-End -->
+
+<!-- Pol_ReminderTimeout_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_ReminderTimeout_1 |
+| Friendly Name | Reminder balloon lifetime |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_ReminderTimeout_1-AdmxBacked-End -->
+
+<!-- Pol_ReminderTimeout_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_ReminderTimeout_1-Examples-End -->
+
+<!-- Pol_ReminderTimeout_1-End -->
 
 <!-- Pol_ReminderTimeout_2-Begin -->
 ## Pol_ReminderTimeout_2
@@ -1492,13 +2293,13 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 <!-- Pol_ReminderTimeout_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_ReminderTimeout |
+| Name | Pol_ReminderTimeout_2 |
 | Friendly Name | Reminder balloon lifetime |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -1531,11 +2332,11 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Description-Source-ADMX -->
 This policy setting controls the network latency and throughput thresholds that will cause a client computers to transition files and folders that are already available offline to the slow-link mode so that the user's access to this data is not degraded due to network slowness. When Offline Files is operating in the slow-link mode, all network file requests are satisfied from the Offline Files cache. This is similar to a user working offline.
 
-If you enable this policy setting, Offline Files uses the slow-link mode if the network throughput between the client and the server is below (slower than) the Throughput threshold parameter, or if the round-trip network latency is above (slower than) the Latency threshold parameter.
+- If you enable this policy setting, Offline Files uses the slow-link mode if the network throughput between the client and the server is below (slower than) the Throughput threshold parameter, or if the round-trip network latency is above (slower than) the Latency threshold parameter.
 
 You can configure the slow-link mode by specifying threshold values for Throughput (in bits per second) and/or Latency (in milliseconds) for specific UNC paths. We recommend that you always specify a value for Latency, since the round-trip network latency detection is faster. You can use wildcard characters (*) for specifying UNC paths. If you do not specify a Latency or Throughput value, computers running Windows Vista or Windows Server 2008 will not use the slow-link mode.
 
-If you do not configure this policy setting, computers running Windows Vista or Windows Server 2008 will not transition a shared folder to the slow-link mode. Computers running Windows 7 or Windows Server 2008 R2 will use the default latency value of 80 milliseconds when transitioning a folder to the slow-link mode. Computers running Windows 8 or Windows Server 2012 will use the default latency value of 35 milliseconds when transitioning a folder to the slow-link mode. To avoid extra charges on cell phone or broadband plans, it may be necessary to configure the latency threshold to be lower than the round-trip network latency.
+- If you do not configure this policy setting, computers running Windows Vista or Windows Server 2008 will not transition a shared folder to the slow-link mode. Computers running Windows 7 or Windows Server 2008 R2 will use the default latency value of 80 milliseconds when transitioning a folder to the slow-link mode. Computers running Windows 8 or Windows Server 2012 will use the default latency value of 35 milliseconds when transitioning a folder to the slow-link mode. To avoid extra charges on cell phone or broadband plans, it may be necessary to configure the latency threshold to be lower than the round-trip network latency.
 
 In Windows Vista or Windows Server 2008, once transitioned to slow-link mode, users will continue to operate in slow-link mode until the user clicks the Work Online button on the toolbar in Windows Explorer. Data will only be synchronized to the server if the user manually initiates synchronization by using Sync Center.
 
@@ -1543,7 +2344,7 @@ In Windows 7, Windows Server 2008 R2, Windows 8 or Windows Server 2012, when ope
 
 In Windows 8 or Windows Server 2012, set the Latency threshold to 1ms to keep users always working offline in slow-link mode.
 
-If you disable this policy setting, computers will not use the slow-link mode.
+- If you disable this policy setting, computers will not use the slow-link mode.
 <!-- Pol_SlowLinkSettings-Description-End -->
 
 <!-- Pol_SlowLinkSettings-Editable-Begin -->
@@ -1561,7 +2362,7 @@ If you disable this policy setting, computers will not use the slow-link mode.
 
 <!-- Pol_SlowLinkSettings-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1603,11 +2404,12 @@ Configures the threshold value at which Offline Files considers a network connec
 
 When a connection is considered slow, Offline Files automatically adjust its behavior to avoid excessive synchronization traffic and will not automatically reconnect to a server when the presence of a server is detected.
 
-If you enable this setting, you can configure the threshold value that will be used to determine a slow network connection.
+- If you enable this setting, you can configure the threshold value that will be used to determine a slow network connection.
 
-If this setting is disabled or not configured, the default threshold value of 64,000 bps is used to determine if a network connection is considered to be slow.
+- If this setting is disabled or not configured, the default threshold value of 64,000 bps is used to determine if a network connection is considered to be slow.
 
-Note: Use the following formula when entering the slow link value: [ bps / 100]. For example, if you want to set a threshold value of 128,000 bps, enter a value of 1280.
+> [!NOTE]
+> Use the following formula when entering the slow link value: [ bps / 100]. For example, if you want to set a threshold value of 128,000 bps, enter a value of 1280.
 <!-- Pol_SlowLinkSpeed-Description-End -->
 
 <!-- Pol_SlowLinkSpeed-Editable-Begin -->
@@ -1625,7 +2427,7 @@ Note: Use the following formula when entering the slow link value: [ bps / 100].
 
 <!-- Pol_SlowLinkSpeed-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1644,6 +2446,75 @@ Note: Use the following formula when entering the slow link value: [ bps / 100].
 <!-- Pol_SlowLinkSpeed-Examples-End -->
 
 <!-- Pol_SlowLinkSpeed-End -->
+
+<!-- Pol_SyncAtLogoff_1-Begin -->
+## Pol_SyncAtLogoff_1
+
+<!-- Pol_SyncAtLogoff_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_SyncAtLogoff_1-Applicability-End -->
+
+<!-- Pol_SyncAtLogoff_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_SyncAtLogoff_1
+```
+<!-- Pol_SyncAtLogoff_1-OmaUri-End -->
+
+<!-- Pol_SyncAtLogoff_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines whether offline files are fully synchronized when users log off.
+
+This setting also disables the "Synchronize all offline files before logging off" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
+
+- If you enable this setting, offline files are fully synchronized. Full synchronization ensures that offline files are complete and current.
+
+- If you disable this setting, the system only performs a quick synchronization. Quick synchronization ensures that files are complete, but does not ensure that they are current.
+
+- If you do not configure this setting, the system performs a quick synchronization by default, but users can change this option.
+
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
+
+> [!TIP]
+> To change the synchronization method without changing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then select the "Synchronize all offline files before logging off" option.
+<!-- Pol_SyncAtLogoff_1-Description-End -->
+
+<!-- Pol_SyncAtLogoff_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_SyncAtLogoff_1-Editable-End -->
+
+<!-- Pol_SyncAtLogoff_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_SyncAtLogoff_1-DFProperties-End -->
+
+<!-- Pol_SyncAtLogoff_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_SyncAtLogoff_1 |
+| Friendly Name | Synchronize all offline files before logging off |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| Registry Value Name | SyncAtLogoff |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_SyncAtLogoff_1-AdmxBacked-End -->
+
+<!-- Pol_SyncAtLogoff_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_SyncAtLogoff_1-Examples-End -->
+
+<!-- Pol_SyncAtLogoff_1-End -->
 
 <!-- Pol_SyncAtLogoff_2-Begin -->
 ## Pol_SyncAtLogoff_2
@@ -1666,15 +2537,16 @@ Determines whether offline files are fully synchronized when users log off.
 
 This setting also disables the "Synchronize all offline files before logging off" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
 
-If you enable this setting, offline files are fully synchronized. Full synchronization ensures that offline files are complete and current.
+- If you enable this setting, offline files are fully synchronized. Full synchronization ensures that offline files are complete and current.
 
-If you disable this setting, the system only performs a quick synchronization. Quick synchronization ensures that files are complete, but does not ensure that they are current.
+- If you disable this setting, the system only performs a quick synchronization. Quick synchronization ensures that files are complete, but does not ensure that they are current.
 
-If you do not configure this setting, the system performs a quick synchronization by default, but users can change this option.
+- If you do not configure this setting, the system performs a quick synchronization by default, but users can change this option.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
-Tip: To change the synchronization method without changing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then select the "Synchronize all offline files before logging off" option.
+> [!TIP]
+> To change the synchronization method without changing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then select the "Synchronize all offline files before logging off" option.
 <!-- Pol_SyncAtLogoff_2-Description-End -->
 
 <!-- Pol_SyncAtLogoff_2-Editable-Begin -->
@@ -1692,13 +2564,13 @@ Tip: To change the synchronization method without changing a setting, in Windows
 
 <!-- Pol_SyncAtLogoff_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_SyncAtLogoff |
+| Name | Pol_SyncAtLogoff_2 |
 | Friendly Name | Synchronize all offline files before logging off |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -1712,6 +2584,75 @@ Tip: To change the synchronization method without changing a setting, in Windows
 <!-- Pol_SyncAtLogoff_2-Examples-End -->
 
 <!-- Pol_SyncAtLogoff_2-End -->
+
+<!-- Pol_SyncAtLogon_1-Begin -->
+## Pol_SyncAtLogon_1
+
+<!-- Pol_SyncAtLogon_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_SyncAtLogon_1-Applicability-End -->
+
+<!-- Pol_SyncAtLogon_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_SyncAtLogon_1
+```
+<!-- Pol_SyncAtLogon_1-OmaUri-End -->
+
+<!-- Pol_SyncAtLogon_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines whether offline files are fully synchronized when users log on.
+
+This setting also disables the "Synchronize all offline files before logging on" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
+
+- If you enable this setting, offline files are fully synchronized at logon. Full synchronization ensures that offline files are complete and current. Enabling this setting automatically enables logon synchronization in Synchronization Manager.
+
+- If this setting is disabled and Synchronization Manager is configured for logon synchronization, the system performs only a quick synchronization. Quick synchronization ensures that files are complete but does not ensure that they are current.
+
+- If you do not configure this setting and Synchronization Manager is configured for logon synchronization, the system performs a quick synchronization by default, but users can change this option.
+
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
+
+> [!TIP]
+> To change the synchronization method without setting a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then select the "Synchronize all offline files before logging on" option.
+<!-- Pol_SyncAtLogon_1-Description-End -->
+
+<!-- Pol_SyncAtLogon_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_SyncAtLogon_1-Editable-End -->
+
+<!-- Pol_SyncAtLogon_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_SyncAtLogon_1-DFProperties-End -->
+
+<!-- Pol_SyncAtLogon_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_SyncAtLogon_1 |
+| Friendly Name | Synchronize all offline files when logging on |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| Registry Value Name | SyncAtLogon |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_SyncAtLogon_1-AdmxBacked-End -->
+
+<!-- Pol_SyncAtLogon_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_SyncAtLogon_1-Examples-End -->
+
+<!-- Pol_SyncAtLogon_1-End -->
 
 <!-- Pol_SyncAtLogon_2-Begin -->
 ## Pol_SyncAtLogon_2
@@ -1734,15 +2675,16 @@ Determines whether offline files are fully synchronized when users log on.
 
 This setting also disables the "Synchronize all offline files before logging on" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
 
-If you enable this setting, offline files are fully synchronized at logon. Full synchronization ensures that offline files are complete and current. Enabling this setting automatically enables logon synchronization in Synchronization Manager.
+- If you enable this setting, offline files are fully synchronized at logon. Full synchronization ensures that offline files are complete and current. Enabling this setting automatically enables logon synchronization in Synchronization Manager.
 
-If this setting is disabled and Synchronization Manager is configured for logon synchronization, the system performs only a quick synchronization. Quick synchronization ensures that files are complete but does not ensure that they are current.
+- If this setting is disabled and Synchronization Manager is configured for logon synchronization, the system performs only a quick synchronization. Quick synchronization ensures that files are complete but does not ensure that they are current.
 
-If you do not configure this setting and Synchronization Manager is configured for logon synchronization, the system performs a quick synchronization by default, but users can change this option.
+- If you do not configure this setting and Synchronization Manager is configured for logon synchronization, the system performs a quick synchronization by default, but users can change this option.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
-Tip: To change the synchronization method without setting a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then select the "Synchronize all offline files before logging on" option.
+> [!TIP]
+> To change the synchronization method without setting a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then select the "Synchronize all offline files before logging on" option.
 <!-- Pol_SyncAtLogon_2-Description-End -->
 
 <!-- Pol_SyncAtLogon_2-Editable-Begin -->
@@ -1760,13 +2702,13 @@ Tip: To change the synchronization method without setting a setting, in Windows 
 
 <!-- Pol_SyncAtLogon_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_SyncAtLogon |
+| Name | Pol_SyncAtLogon_2 |
 | Friendly Name | Synchronize all offline files when logging on |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -1780,6 +2722,68 @@ Tip: To change the synchronization method without setting a setting, in Windows 
 <!-- Pol_SyncAtLogon_2-Examples-End -->
 
 <!-- Pol_SyncAtLogon_2-End -->
+
+<!-- Pol_SyncAtSuspend_1-Begin -->
+## Pol_SyncAtSuspend_1
+
+<!-- Pol_SyncAtSuspend_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_SyncAtSuspend_1-Applicability-End -->
+
+<!-- Pol_SyncAtSuspend_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_SyncAtSuspend_1
+```
+<!-- Pol_SyncAtSuspend_1-OmaUri-End -->
+
+<!-- Pol_SyncAtSuspend_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines whether offline files are synchonized before a computer is suspended.
+
+- If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
+
+If you disable or do not configuring this setting, files are not synchronized when the computer is suspended.
+
+> [!NOTE]
+> If the computer is suspended by closing the display on a portable computer, files are not synchronized. If multiple users are logged on to the computer at the time the computer is suspended, a synchronization is not performed.
+<!-- Pol_SyncAtSuspend_1-Description-End -->
+
+<!-- Pol_SyncAtSuspend_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_SyncAtSuspend_1-Editable-End -->
+
+<!-- Pol_SyncAtSuspend_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_SyncAtSuspend_1-DFProperties-End -->
+
+<!-- Pol_SyncAtSuspend_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_SyncAtSuspend_1 |
+| Friendly Name | Synchronize offline files before suspend |
+| Location | User Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_SyncAtSuspend_1-AdmxBacked-End -->
+
+<!-- Pol_SyncAtSuspend_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_SyncAtSuspend_1-Examples-End -->
+
+<!-- Pol_SyncAtSuspend_1-End -->
 
 <!-- Pol_SyncAtSuspend_2-Begin -->
 ## Pol_SyncAtSuspend_2
@@ -1800,11 +2804,12 @@ Tip: To change the synchronization method without setting a setting, in Windows 
 <!-- Description-Source-ADMX -->
 Determines whether offline files are synchonized before a computer is suspended.
 
-If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
+- If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
 
 If you disable or do not configuring this setting, files are not synchronized when the computer is suspended.
 
-Note: If the computer is suspended by closing the display on a portable computer, files are not synchronized. If multiple users are logged on to the computer at the time the computer is suspended, a synchronization is not performed.
+> [!NOTE]
+> If the computer is suspended by closing the display on a portable computer, files are not synchronized. If multiple users are logged on to the computer at the time the computer is suspended, a synchronization is not performed.
 <!-- Pol_SyncAtSuspend_2-Description-End -->
 
 <!-- Pol_SyncAtSuspend_2-Editable-Begin -->
@@ -1822,13 +2827,13 @@ Note: If the computer is suspended by closing the display on a portable computer
 
 <!-- Pol_SyncAtSuspend_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_SyncAtSuspend |
+| Name | Pol_SyncAtSuspend_2 |
 | Friendly Name | Synchronize offline files before suspend |
 | Location | Computer Configuration |
 | Path | Network > Offline Files |
@@ -1861,9 +2866,9 @@ Note: If the computer is suspended by closing the display on a portable computer
 <!-- Description-Source-ADMX -->
 This policy setting determines whether offline files are synchronized in the background when it could result in extra charges on cell phone or broadband plans.
 
-If you enable this setting, synchronization can occur in the background when the user's network is roaming, near, or over the plan's data limit. This may result in extra charges on cell phone or broadband plans.
+- If you enable this setting, synchronization can occur in the background when the user's network is roaming, near, or over the plan's data limit. This may result in extra charges on cell phone or broadband plans.
 
-If this setting is disabled or not configured, synchronization will not run in the background on network folders when the user's network is roaming, near, or over the plan's data limit. The network folder must also be in "slow-link" mode, as specified by the "Configure slow-link mode" policy to avoid network usage.
+- If this setting is disabled or not configured, synchronization will not run in the background on network folders when the user's network is roaming, near, or over the plan's data limit. The network folder must also be in "slow-link" mode, as specified by the "Configure slow-link mode" policy to avoid network usage.
 <!-- Pol_SyncOnCostedNetwork-Description-End -->
 
 <!-- Pol_SyncOnCostedNetwork-Editable-Begin -->
@@ -1881,7 +2886,7 @@ If this setting is disabled or not configured, synchronization will not run in t
 
 <!-- Pol_SyncOnCostedNetwork-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1902,1045 +2907,6 @@ If this setting is disabled or not configured, synchronization will not run in t
 
 <!-- Pol_SyncOnCostedNetwork-End -->
 
-<!-- Pol_WorkOfflineDisabled_2-Begin -->
-## Pol_WorkOfflineDisabled_2
-
-<!-- Pol_WorkOfflineDisabled_2-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_WorkOfflineDisabled_2-Applicability-End -->
-
-<!-- Pol_WorkOfflineDisabled_2-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_WorkOfflineDisabled_2
-```
-<!-- Pol_WorkOfflineDisabled_2-OmaUri-End -->
-
-<!-- Pol_WorkOfflineDisabled_2-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting removes the "Work offline" command from Explorer, preventing users from manually changing whether Offline Files is in online mode or offline mode.
-
-If you enable this policy setting, the "Work offline" command is not displayed in File Explorer.
-
-If you disable or do not configure this policy setting, the "Work offline" command is displayed in File Explorer.
-<!-- Pol_WorkOfflineDisabled_2-Description-End -->
-
-<!-- Pol_WorkOfflineDisabled_2-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_WorkOfflineDisabled_2-Editable-End -->
-
-<!-- Pol_WorkOfflineDisabled_2-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_WorkOfflineDisabled_2-DFProperties-End -->
-
-<!-- Pol_WorkOfflineDisabled_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_WorkOfflineDisabled |
-| Friendly Name | Remove "Work offline" command |
-| Location | Computer Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| Registry Value Name | WorkOfflineDisabled |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_WorkOfflineDisabled_2-AdmxBacked-End -->
-
-<!-- Pol_WorkOfflineDisabled_2-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_WorkOfflineDisabled_2-Examples-End -->
-
-<!-- Pol_WorkOfflineDisabled_2-End -->
-
-<!-- Pol_AssignedOfflineFiles_1-Begin -->
-## Pol_AssignedOfflineFiles_1
-
-<!-- Pol_AssignedOfflineFiles_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_AssignedOfflineFiles_1-Applicability-End -->
-
-<!-- Pol_AssignedOfflineFiles_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_AssignedOfflineFiles_1
-```
-<!-- Pol_AssignedOfflineFiles_1-OmaUri-End -->
-
-<!-- Pol_AssignedOfflineFiles_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting lists network files and folders that are always available for offline use. This ensures that the specified files and folders are available offline to users of the computer.
-
-If you enable this policy setting, the files you enter are always available offline to users of the computer. To specify a file or folder, click Show. In the Show Contents dialog box in the Value Name column, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
-
-If you disable this policy setting, the list of files or folders made always available offline (including those inherited from lower precedence GPOs) is deleted and no files or folders are made available for offline use by Group Policy (though users can still specify their own files and folders for offline use).
-
-If you do not configure this policy setting, no files or folders are made available for offline use by Group Policy.
-
-Note: This setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings will be combined and all specified files will be available for offline use.
-<!-- Pol_AssignedOfflineFiles_1-Description-End -->
-
-<!-- Pol_AssignedOfflineFiles_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_AssignedOfflineFiles_1-Editable-End -->
-
-<!-- Pol_AssignedOfflineFiles_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_AssignedOfflineFiles_1-DFProperties-End -->
-
-<!-- Pol_AssignedOfflineFiles_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_AssignedOfflineFiles |
-| Friendly Name | Specify administratively assigned Offline Files |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_AssignedOfflineFiles_1-AdmxBacked-End -->
-
-<!-- Pol_AssignedOfflineFiles_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_AssignedOfflineFiles_1-Examples-End -->
-
-<!-- Pol_AssignedOfflineFiles_1-End -->
-
-<!-- Pol_CustomGoOfflineActions_1-Begin -->
-## Pol_CustomGoOfflineActions_1
-
-<!-- Pol_CustomGoOfflineActions_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_CustomGoOfflineActions_1-Applicability-End -->
-
-<!-- Pol_CustomGoOfflineActions_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_CustomGoOfflineActions_1
-```
-<!-- Pol_CustomGoOfflineActions_1-OmaUri-End -->
-
-<!-- Pol_CustomGoOfflineActions_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Determines how computers respond when they are disconnected from particular offline file servers. This setting overrides the default response, a user-specified response, and the response specified in the "Action on server disconnect" setting.
-
-To use this setting, click Show. In the Show Contents dialog box in the Value Name column box, type the server's computer name. Then, in the Value column box, type "0" if users can work offline when they are disconnected from this server, or type "1" if they cannot.
-
-This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured for a particular server, the setting in Computer Configuration takes precedence over the setting in User Configuration. Both Computer and User configuration take precedence over a user's setting. This setting does not prevent users from setting custom actions through the Offline Files tab. However, users are unable to change any custom actions established via this setting.
-
-Tip: To configure this setting without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click Advanced. This setting corresponds to the settings in the "Exception list" section.
-<!-- Pol_CustomGoOfflineActions_1-Description-End -->
-
-<!-- Pol_CustomGoOfflineActions_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_CustomGoOfflineActions_1-Editable-End -->
-
-<!-- Pol_CustomGoOfflineActions_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_CustomGoOfflineActions_1-DFProperties-End -->
-
-<!-- Pol_CustomGoOfflineActions_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_CustomGoOfflineActions |
-| Friendly Name | Non-default server disconnect actions |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_CustomGoOfflineActions_1-AdmxBacked-End -->
-
-<!-- Pol_CustomGoOfflineActions_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_CustomGoOfflineActions_1-Examples-End -->
-
-<!-- Pol_CustomGoOfflineActions_1-End -->
-
-<!-- Pol_EventLoggingLevel_1-Begin -->
-## Pol_EventLoggingLevel_1
-
-<!-- Pol_EventLoggingLevel_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_EventLoggingLevel_1-Applicability-End -->
-
-<!-- Pol_EventLoggingLevel_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_EventLoggingLevel_1
-```
-<!-- Pol_EventLoggingLevel_1-OmaUri-End -->
-
-<!-- Pol_EventLoggingLevel_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Determines which events the Offline Files feature records in the event log.
-
-Offline Files records events in the Application log in Event Viewer when it detects errors. By default, Offline Files records an event only when the offline files storage cache is corrupted. However, you can use this setting to specify additional events you want Offline Files to record.
-
-To use this setting, in the "Enter" box, select the number corresponding to the events you want the system to log. The levels are cumulative; that is, each level includes the events in all preceding levels.
-
-"0" records an error when the offline storage cache is corrupted.
-
-"1" also records an event when the server hosting the offline file is disconnected from the network.
-
-"2" also records events when the local computer is connected and disconnected from the network.
-
-"3" also records an event when the server hosting the offline file is reconnected to the network.
-
-Note: This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
-<!-- Pol_EventLoggingLevel_1-Description-End -->
-
-<!-- Pol_EventLoggingLevel_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_EventLoggingLevel_1-Editable-End -->
-
-<!-- Pol_EventLoggingLevel_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_EventLoggingLevel_1-DFProperties-End -->
-
-<!-- Pol_EventLoggingLevel_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_EventLoggingLevel |
-| Friendly Name | Event logging level |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_EventLoggingLevel_1-AdmxBacked-End -->
-
-<!-- Pol_EventLoggingLevel_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_EventLoggingLevel_1-Examples-End -->
-
-<!-- Pol_EventLoggingLevel_1-End -->
-
-<!-- Pol_GoOfflineAction_1-Begin -->
-## Pol_GoOfflineAction_1
-
-<!-- Pol_GoOfflineAction_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_GoOfflineAction_1-Applicability-End -->
-
-<!-- Pol_GoOfflineAction_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_GoOfflineAction_1
-```
-<!-- Pol_GoOfflineAction_1-OmaUri-End -->
-
-<!-- Pol_GoOfflineAction_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Determines whether network files remain available if the computer is suddenly disconnected from the server hosting the files.
-
-This setting also disables the "When a network connection is lost" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
-
-If you enable this setting, you can use the "Action" box to specify how computers in the group respond.
-
--- "Work offline" indicates that the computer can use local copies of network files while the server is inaccessible.
-
--- "Never go offline" indicates that network files are not available while the server is inaccessible.
-
-If you disable this setting or select the "Work offline" option, users can work offline if disconnected.
-
-If you do not configure this setting, users can work offline by default, but they can change this option.
-
-This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
-
-Tip: To configure this setting without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, click Advanced, and then select an option in the "When a network connection is lost" section.
-
-Also, see the "Non-default server disconnect actions" setting.
-<!-- Pol_GoOfflineAction_1-Description-End -->
-
-<!-- Pol_GoOfflineAction_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_GoOfflineAction_1-Editable-End -->
-
-<!-- Pol_GoOfflineAction_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_GoOfflineAction_1-DFProperties-End -->
-
-<!-- Pol_GoOfflineAction_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_GoOfflineAction |
-| Friendly Name | Action on server disconnect |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_GoOfflineAction_1-AdmxBacked-End -->
-
-<!-- Pol_GoOfflineAction_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_GoOfflineAction_1-Examples-End -->
-
-<!-- Pol_GoOfflineAction_1-End -->
-
-<!-- Pol_NoCacheViewer_1-Begin -->
-## Pol_NoCacheViewer_1
-
-<!-- Pol_NoCacheViewer_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_NoCacheViewer_1-Applicability-End -->
-
-<!-- Pol_NoCacheViewer_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_NoCacheViewer_1
-```
-<!-- Pol_NoCacheViewer_1-OmaUri-End -->
-
-<!-- Pol_NoCacheViewer_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Disables the Offline Files folder.
-
-This setting disables the "View Files" button on the Offline Files tab. As a result, users cannot use the Offline Files folder to view or open copies of network files stored on their computer. Also, they cannot use the folder to view characteristics of offline files, such as their server status, type, or location.
-
-This setting does not prevent users from working offline or from saving local copies of files available offline. Also, it does not prevent them from using other programs, such as Windows Explorer, to view their offline files.
-
-This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
-
-Tip: To view the Offline Files Folder, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click "View Files."
-<!-- Pol_NoCacheViewer_1-Description-End -->
-
-<!-- Pol_NoCacheViewer_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_NoCacheViewer_1-Editable-End -->
-
-<!-- Pol_NoCacheViewer_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_NoCacheViewer_1-DFProperties-End -->
-
-<!-- Pol_NoCacheViewer_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_NoCacheViewer |
-| Friendly Name | Prevent use of Offline Files folder |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| Registry Value Name | NoCacheViewer |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_NoCacheViewer_1-AdmxBacked-End -->
-
-<!-- Pol_NoCacheViewer_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_NoCacheViewer_1-Examples-End -->
-
-<!-- Pol_NoCacheViewer_1-End -->
-
-<!-- Pol_NoConfigCache_1-Begin -->
-## Pol_NoConfigCache_1
-
-<!-- Pol_NoConfigCache_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_NoConfigCache_1-Applicability-End -->
-
-<!-- Pol_NoConfigCache_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_NoConfigCache_1
-```
-<!-- Pol_NoConfigCache_1-OmaUri-End -->
-
-<!-- Pol_NoConfigCache_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Prevents users from enabling, disabling, or changing the configuration of Offline Files.
-
-This setting removes the Offline Files tab from the Folder Options dialog box. It also removes the Settings item from the Offline Files context menu and disables the Settings button on the Offline Files Status dialog box. As a result, users cannot view or change the options on the Offline Files tab or Offline Files dialog box.
-
-This is a comprehensive setting that locks down the configuration you establish by using other settings in this folder.
-
-This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
-
-Tip: This setting provides a quick method for locking down the default settings for Offline Files. To accept the defaults, just enable this setting. You do not have to disable any other settings in this folder.
-<!-- Pol_NoConfigCache_1-Description-End -->
-
-<!-- Pol_NoConfigCache_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_NoConfigCache_1-Editable-End -->
-
-<!-- Pol_NoConfigCache_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_NoConfigCache_1-DFProperties-End -->
-
-<!-- Pol_NoConfigCache_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_NoConfigCache |
-| Friendly Name | Prohibit user configuration of Offline Files |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| Registry Value Name | NoConfigCache |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_NoConfigCache_1-AdmxBacked-End -->
-
-<!-- Pol_NoConfigCache_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_NoConfigCache_1-Examples-End -->
-
-<!-- Pol_NoConfigCache_1-End -->
-
-<!-- Pol_NoMakeAvailableOffline_1-Begin -->
-## Pol_NoMakeAvailableOffline_1
-
-<!-- Pol_NoMakeAvailableOffline_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_NoMakeAvailableOffline_1-Applicability-End -->
-
-<!-- Pol_NoMakeAvailableOffline_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_NoMakeAvailableOffline_1
-```
-<!-- Pol_NoMakeAvailableOffline_1-OmaUri-End -->
-
-<!-- Pol_NoMakeAvailableOffline_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting prevents users from making network files and folders available offline.
-
-If you enable this policy setting, users cannot designate files to be saved on their computer for offline use. However, Windows will still cache local copies of files that reside on network shares designated for automatic caching.
-
-If you disable or do not configure this policy setting, users can manually specify files and folders that they want to make available offline.
-
-Notes:
-
-This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence.
-
-The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
-<!-- Pol_NoMakeAvailableOffline_1-Description-End -->
-
-<!-- Pol_NoMakeAvailableOffline_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_NoMakeAvailableOffline_1-Editable-End -->
-
-<!-- Pol_NoMakeAvailableOffline_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_NoMakeAvailableOffline_1-DFProperties-End -->
-
-<!-- Pol_NoMakeAvailableOffline_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_NoMakeAvailableOffline |
-| Friendly Name | Remove "Make Available Offline" command |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| Registry Value Name | NoMakeAvailableOffline |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_NoMakeAvailableOffline_1-AdmxBacked-End -->
-
-<!-- Pol_NoMakeAvailableOffline_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_NoMakeAvailableOffline_1-Examples-End -->
-
-<!-- Pol_NoMakeAvailableOffline_1-End -->
-
-<!-- Pol_NoPinFiles_1-Begin -->
-## Pol_NoPinFiles_1
-
-<!-- Pol_NoPinFiles_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_NoPinFiles_1-Applicability-End -->
-
-<!-- Pol_NoPinFiles_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_NoPinFiles_1
-```
-<!-- Pol_NoPinFiles_1-OmaUri-End -->
-
-<!-- Pol_NoPinFiles_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to manage a list of files and folders for which you want to block the "Make Available Offline" command.
-
-If you enable this policy setting, the "Make Available Offline" command is not available for the files and folders that you list. To specify these files and folders, click Show. In the Show Contents dialog box, in the Value Name column box, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
-
-If you disable this policy setting, the list of files and folders is deleted, including any lists inherited from lower precedence GPOs, and the "Make Available Offline" command is displayed for all files and folders.
-
-If you do not configure this policy setting, the "Make Available Offline" command is available for all files and folders.
-
-Notes:
-
-This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings are combined, and the "Make Available Offline" command is unavailable for all specified files and folders.
-
-The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
-
-This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching." It only affects the display of the "Make Available Offline" command in File Explorer.
-
-If the "Remove 'Make Available Offline' command" policy setting is enabled, this setting has no effect.
-<!-- Pol_NoPinFiles_1-Description-End -->
-
-<!-- Pol_NoPinFiles_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_NoPinFiles_1-Editable-End -->
-
-<!-- Pol_NoPinFiles_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_NoPinFiles_1-DFProperties-End -->
-
-<!-- Pol_NoPinFiles_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_NoPinFiles |
-| Friendly Name | Remove "Make Available Offline" for these files and folders |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_NoPinFiles_1-AdmxBacked-End -->
-
-<!-- Pol_NoPinFiles_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_NoPinFiles_1-Examples-End -->
-
-<!-- Pol_NoPinFiles_1-End -->
-
-<!-- Pol_NoReminders_1-Begin -->
-## Pol_NoReminders_1
-
-<!-- Pol_NoReminders_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_NoReminders_1-Applicability-End -->
-
-<!-- Pol_NoReminders_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_NoReminders_1
-```
-<!-- Pol_NoReminders_1-OmaUri-End -->
-
-<!-- Pol_NoReminders_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Hides or displays reminder balloons, and prevents users from changing the setting.
-
-Reminder balloons appear above the Offline Files icon in the notification area to notify users when they have lost the connection to a networked file and are working on a local copy of the file. Users can then decide how to proceed.
-
-If you enable this setting, the system hides the reminder balloons, and prevents users from displaying them.
-
-If you disable the setting, the system displays the reminder balloons and prevents users from hiding them.
-
-If this setting is not configured, reminder balloons are displayed by default when you enable offline files, but users can change the setting.
-
-To prevent users from changing the setting while a setting is in effect, the system disables the "Enable reminders" option on the Offline Files tab
-
-This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
-
-Tip: To display or hide reminder balloons without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Enable reminders" check box.
-<!-- Pol_NoReminders_1-Description-End -->
-
-<!-- Pol_NoReminders_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_NoReminders_1-Editable-End -->
-
-<!-- Pol_NoReminders_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_NoReminders_1-DFProperties-End -->
-
-<!-- Pol_NoReminders_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_NoReminders |
-| Friendly Name | Turn off reminder balloons |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| Registry Value Name | NoReminders |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_NoReminders_1-AdmxBacked-End -->
-
-<!-- Pol_NoReminders_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_NoReminders_1-Examples-End -->
-
-<!-- Pol_NoReminders_1-End -->
-
-<!-- Pol_ReminderFreq_1-Begin -->
-## Pol_ReminderFreq_1
-
-<!-- Pol_ReminderFreq_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_ReminderFreq_1-Applicability-End -->
-
-<!-- Pol_ReminderFreq_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_ReminderFreq_1
-```
-<!-- Pol_ReminderFreq_1-OmaUri-End -->
-
-<!-- Pol_ReminderFreq_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Determines how often reminder balloon updates appear.
-
-If you enable this setting, you can select how often reminder balloons updates appear and also prevent users from changing this setting.
-
-Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the update interval.
-
-This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
-
-Tip: To set reminder balloon frequency without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Display reminder balloons every ... minutes" option.
-<!-- Pol_ReminderFreq_1-Description-End -->
-
-<!-- Pol_ReminderFreq_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_ReminderFreq_1-Editable-End -->
-
-<!-- Pol_ReminderFreq_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_ReminderFreq_1-DFProperties-End -->
-
-<!-- Pol_ReminderFreq_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_ReminderFreq |
-| Friendly Name | Reminder balloon frequency |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_ReminderFreq_1-AdmxBacked-End -->
-
-<!-- Pol_ReminderFreq_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_ReminderFreq_1-Examples-End -->
-
-<!-- Pol_ReminderFreq_1-End -->
-
-<!-- Pol_ReminderInitTimeout_1-Begin -->
-## Pol_ReminderInitTimeout_1
-
-<!-- Pol_ReminderInitTimeout_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_ReminderInitTimeout_1-Applicability-End -->
-
-<!-- Pol_ReminderInitTimeout_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_ReminderInitTimeout_1
-```
-<!-- Pol_ReminderInitTimeout_1-OmaUri-End -->
-
-<!-- Pol_ReminderInitTimeout_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Determines how long the first reminder balloon for a network status change is displayed.
-
-Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the first reminder.
-
-This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
-<!-- Pol_ReminderInitTimeout_1-Description-End -->
-
-<!-- Pol_ReminderInitTimeout_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_ReminderInitTimeout_1-Editable-End -->
-
-<!-- Pol_ReminderInitTimeout_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_ReminderInitTimeout_1-DFProperties-End -->
-
-<!-- Pol_ReminderInitTimeout_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_ReminderInitTimeout |
-| Friendly Name | Initial reminder balloon lifetime |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_ReminderInitTimeout_1-AdmxBacked-End -->
-
-<!-- Pol_ReminderInitTimeout_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_ReminderInitTimeout_1-Examples-End -->
-
-<!-- Pol_ReminderInitTimeout_1-End -->
-
-<!-- Pol_ReminderTimeout_1-Begin -->
-## Pol_ReminderTimeout_1
-
-<!-- Pol_ReminderTimeout_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_ReminderTimeout_1-Applicability-End -->
-
-<!-- Pol_ReminderTimeout_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_ReminderTimeout_1
-```
-<!-- Pol_ReminderTimeout_1-OmaUri-End -->
-
-<!-- Pol_ReminderTimeout_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Determines how long updated reminder balloons are displayed.
-
-Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the update reminder.
-
-This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
-<!-- Pol_ReminderTimeout_1-Description-End -->
-
-<!-- Pol_ReminderTimeout_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_ReminderTimeout_1-Editable-End -->
-
-<!-- Pol_ReminderTimeout_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_ReminderTimeout_1-DFProperties-End -->
-
-<!-- Pol_ReminderTimeout_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_ReminderTimeout |
-| Friendly Name | Reminder balloon lifetime |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_ReminderTimeout_1-AdmxBacked-End -->
-
-<!-- Pol_ReminderTimeout_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_ReminderTimeout_1-Examples-End -->
-
-<!-- Pol_ReminderTimeout_1-End -->
-
-<!-- Pol_SyncAtLogoff_1-Begin -->
-## Pol_SyncAtLogoff_1
-
-<!-- Pol_SyncAtLogoff_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_SyncAtLogoff_1-Applicability-End -->
-
-<!-- Pol_SyncAtLogoff_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_SyncAtLogoff_1
-```
-<!-- Pol_SyncAtLogoff_1-OmaUri-End -->
-
-<!-- Pol_SyncAtLogoff_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Determines whether offline files are fully synchronized when users log off.
-
-This setting also disables the "Synchronize all offline files before logging off" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
-
-If you enable this setting, offline files are fully synchronized. Full synchronization ensures that offline files are complete and current.
-
-If you disable this setting, the system only performs a quick synchronization. Quick synchronization ensures that files are complete, but does not ensure that they are current.
-
-If you do not configure this setting, the system performs a quick synchronization by default, but users can change this option.
-
-This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
-
-Tip: To change the synchronization method without changing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then select the "Synchronize all offline files before logging off" option.
-<!-- Pol_SyncAtLogoff_1-Description-End -->
-
-<!-- Pol_SyncAtLogoff_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_SyncAtLogoff_1-Editable-End -->
-
-<!-- Pol_SyncAtLogoff_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_SyncAtLogoff_1-DFProperties-End -->
-
-<!-- Pol_SyncAtLogoff_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_SyncAtLogoff |
-| Friendly Name | Synchronize all offline files before logging off |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| Registry Value Name | SyncAtLogoff |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_SyncAtLogoff_1-AdmxBacked-End -->
-
-<!-- Pol_SyncAtLogoff_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_SyncAtLogoff_1-Examples-End -->
-
-<!-- Pol_SyncAtLogoff_1-End -->
-
-<!-- Pol_SyncAtLogon_1-Begin -->
-## Pol_SyncAtLogon_1
-
-<!-- Pol_SyncAtLogon_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_SyncAtLogon_1-Applicability-End -->
-
-<!-- Pol_SyncAtLogon_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_SyncAtLogon_1
-```
-<!-- Pol_SyncAtLogon_1-OmaUri-End -->
-
-<!-- Pol_SyncAtLogon_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Determines whether offline files are fully synchronized when users log on.
-
-This setting also disables the "Synchronize all offline files before logging on" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
-
-If you enable this setting, offline files are fully synchronized at logon. Full synchronization ensures that offline files are complete and current. Enabling this setting automatically enables logon synchronization in Synchronization Manager.
-
-If this setting is disabled and Synchronization Manager is configured for logon synchronization, the system performs only a quick synchronization. Quick synchronization ensures that files are complete but does not ensure that they are current.
-
-If you do not configure this setting and Synchronization Manager is configured for logon synchronization, the system performs a quick synchronization by default, but users can change this option.
-
-This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
-
-Tip: To change the synchronization method without setting a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then select the "Synchronize all offline files before logging on" option.
-<!-- Pol_SyncAtLogon_1-Description-End -->
-
-<!-- Pol_SyncAtLogon_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_SyncAtLogon_1-Editable-End -->
-
-<!-- Pol_SyncAtLogon_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_SyncAtLogon_1-DFProperties-End -->
-
-<!-- Pol_SyncAtLogon_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_SyncAtLogon |
-| Friendly Name | Synchronize all offline files when logging on |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| Registry Value Name | SyncAtLogon |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_SyncAtLogon_1-AdmxBacked-End -->
-
-<!-- Pol_SyncAtLogon_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_SyncAtLogon_1-Examples-End -->
-
-<!-- Pol_SyncAtLogon_1-End -->
-
-<!-- Pol_SyncAtSuspend_1-Begin -->
-## Pol_SyncAtSuspend_1
-
-<!-- Pol_SyncAtSuspend_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- Pol_SyncAtSuspend_1-Applicability-End -->
-
-<!-- Pol_SyncAtSuspend_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_SyncAtSuspend_1
-```
-<!-- Pol_SyncAtSuspend_1-OmaUri-End -->
-
-<!-- Pol_SyncAtSuspend_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Determines whether offline files are synchonized before a computer is suspended.
-
-If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
-
-If you disable or do not configuring this setting, files are not synchronized when the computer is suspended.
-
-Note: If the computer is suspended by closing the display on a portable computer, files are not synchronized. If multiple users are logged on to the computer at the time the computer is suspended, a synchronization is not performed.
-<!-- Pol_SyncAtSuspend_1-Description-End -->
-
-<!-- Pol_SyncAtSuspend_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Pol_SyncAtSuspend_1-Editable-End -->
-
-<!-- Pol_SyncAtSuspend_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Pol_SyncAtSuspend_1-DFProperties-End -->
-
-<!-- Pol_SyncAtSuspend_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Pol_SyncAtSuspend |
-| Friendly Name | Synchronize offline files before suspend |
-| Location | User Configuration |
-| Path | Network > Offline Files |
-| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
-| ADMX File Name | OfflineFiles.admx |
-<!-- Pol_SyncAtSuspend_1-AdmxBacked-End -->
-
-<!-- Pol_SyncAtSuspend_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Pol_SyncAtSuspend_1-Examples-End -->
-
-<!-- Pol_SyncAtSuspend_1-End -->
-
 <!-- Pol_WorkOfflineDisabled_1-Begin -->
 ## Pol_WorkOfflineDisabled_1
 
@@ -2960,9 +2926,9 @@ Note: If the computer is suspended by closing the display on a portable computer
 <!-- Description-Source-ADMX -->
 This policy setting removes the "Work offline" command from Explorer, preventing users from manually changing whether Offline Files is in online mode or offline mode.
 
-If you enable this policy setting, the "Work offline" command is not displayed in File Explorer.
+- If you enable this policy setting, the "Work offline" command is not displayed in File Explorer.
 
-If you disable or do not configure this policy setting, the "Work offline" command is displayed in File Explorer.
+- If you disable or do not configure this policy setting, the "Work offline" command is displayed in File Explorer.
 <!-- Pol_WorkOfflineDisabled_1-Description-End -->
 
 <!-- Pol_WorkOfflineDisabled_1-Editable-Begin -->
@@ -2980,13 +2946,13 @@ If you disable or do not configure this policy setting, the "Work offline" comma
 
 <!-- Pol_WorkOfflineDisabled_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_WorkOfflineDisabled |
+| Name | Pol_WorkOfflineDisabled_1 |
 | Friendly Name | Remove "Work offline" command |
 | Location | User Configuration |
 | Path | Network > Offline Files |
@@ -3000,6 +2966,66 @@ If you disable or do not configure this policy setting, the "Work offline" comma
 <!-- Pol_WorkOfflineDisabled_1-Examples-End -->
 
 <!-- Pol_WorkOfflineDisabled_1-End -->
+
+<!-- Pol_WorkOfflineDisabled_2-Begin -->
+## Pol_WorkOfflineDisabled_2
+
+<!-- Pol_WorkOfflineDisabled_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_WorkOfflineDisabled_2-Applicability-End -->
+
+<!-- Pol_WorkOfflineDisabled_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_OfflineFiles/Pol_WorkOfflineDisabled_2
+```
+<!-- Pol_WorkOfflineDisabled_2-OmaUri-End -->
+
+<!-- Pol_WorkOfflineDisabled_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting removes the "Work offline" command from Explorer, preventing users from manually changing whether Offline Files is in online mode or offline mode.
+
+- If you enable this policy setting, the "Work offline" command is not displayed in File Explorer.
+
+- If you disable or do not configure this policy setting, the "Work offline" command is displayed in File Explorer.
+<!-- Pol_WorkOfflineDisabled_2-Description-End -->
+
+<!-- Pol_WorkOfflineDisabled_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_WorkOfflineDisabled_2-Editable-End -->
+
+<!-- Pol_WorkOfflineDisabled_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_WorkOfflineDisabled_2-DFProperties-End -->
+
+<!-- Pol_WorkOfflineDisabled_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_WorkOfflineDisabled_2 |
+| Friendly Name | Remove "Work offline" command |
+| Location | Computer Configuration |
+| Path | Network > Offline Files |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetCache |
+| Registry Value Name | WorkOfflineDisabled |
+| ADMX File Name | OfflineFiles.admx |
+<!-- Pol_WorkOfflineDisabled_2-AdmxBacked-End -->
+
+<!-- Pol_WorkOfflineDisabled_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_WorkOfflineDisabled_2-Examples-End -->
+
+<!-- Pol_WorkOfflineDisabled_2-End -->
 
 <!-- ADMX_OfflineFiles-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

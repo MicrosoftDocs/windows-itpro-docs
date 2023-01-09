@@ -1,10 +1,10 @@
 ---
 title: Cryptography Policy CSP
-description: Learn more about the Cryptography Area in Policy CSP
+description: Learn more about the Cryptography Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/27/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -59,8 +59,8 @@ Allows or disallows the Federal Information Processing Standard (FIPS) policy.
 
 | Value | Description |
 |:--|:--|
-| 1 | Allow |
-| 0 (Default) | Block |
+| 1 | Allow. |
+| 0 (Default) | Block. |
 <!-- AllowFipsAlgorithmPolicy-AllowedValues-End -->
 
 <!-- AllowFipsAlgorithmPolicy-GpMapping-Begin -->

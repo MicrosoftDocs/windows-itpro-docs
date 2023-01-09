@@ -1,10 +1,10 @@
 ---
 title: ADMX_Programs Policy CSP
-description: Learn more about the ADMX_Programs Area in Policy CSP
+description: Learn more about the ADMX_Programs Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_Programs
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -48,7 +46,7 @@ This setting removes the Set Program Access and Defaults page from the Programs 
 
 The Set Program Access and Computer Defaults page allows administrators to specify default programs for certain activities, such as Web browsing or sending e-mail, as well as specify the programs that are accessible from the Start menu, desktop, and other locations.
 
-If this setting is disabled or not configured, the Set Program Access and Defaults button is available to all users.
+- If this setting is disabled or not configured, the Set Program Access and Defaults button is available to all users.
 
 This setting does not prevent users from using other tools and methods to change program access or defaults.
 
@@ -70,7 +68,7 @@ This setting does not prevent the Default Programs icon from appearing on the St
 
 <!-- NoDefaultPrograms-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -114,11 +112,12 @@ This setting prevents users from accessing the "Get Programs" page from the Prog
 
 Published programs are those programs that the system administrator has explicitly made available to the user with a tool such as Windows Installer. Typically, system administrators publish programs to notify users of their availability, to recommend their use, or to enable users to install them without having to search for installation files.
 
-If this setting is enabled, users cannot view the programs that have been published by the system administrator, and they cannot use the "Get Programs" page to install published programs. Enabling this feature does not prevent users from installing programs by using other methods. Users will still be able to view and installed assigned (partially installed) programs that are offered on the desktop or on the Start menu.
+- If this setting is enabled, users cannot view the programs that have been published by the system administrator, and they cannot use the "Get Programs" page to install published programs. Enabling this feature does not prevent users from installing programs by using other methods. Users will still be able to view and installed assigned (partially installed) programs that are offered on the desktop or on the Start menu.
 
-If this setting is disabled or is not configured, the "Install a program from the network" task to the "Get Programs" page will be available to all users.
+- If this setting is disabled or is not configured, the "Install a program from the network" task to the "Get Programs" page will be available to all users.
 
-Note: If the "Hide Programs Control Panel" setting is enabled, this setting is ignored.
+> [!NOTE]
+> If the "Hide Programs Control Panel" setting is enabled, this setting is ignored.
 <!-- NoGetPrograms-Description-End -->
 
 <!-- NoGetPrograms-Editable-Begin -->
@@ -136,7 +135,7 @@ Note: If the "Hide Programs Control Panel" setting is enabled, this setting is i
 
 <!-- NoGetPrograms-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -178,7 +177,7 @@ This setting prevents users from accessing "Installed Updates" page from the "Vi
 
 "Installed Updates" allows users to view and uninstall updates currently installed on the computer. The updates are often downloaded directly from Windows Update or from various program publishers.
 
-If this setting is disabled or not configured, the "View installed updates" task and the "Installed Updates" page will be available to all users.
+- If this setting is disabled or not configured, the "View installed updates" task and the "Installed Updates" page will be available to all users.
 
 This setting does not prevent users from using other tools and methods to install or uninstall programs.
 <!-- NoInstalledUpdates-Description-End -->
@@ -198,7 +197,7 @@ This setting does not prevent users from using other tools and methods to instal
 
 <!-- NoInstalledUpdates-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -238,7 +237,7 @@ This setting does not prevent users from using other tools and methods to instal
 <!-- Description-Source-ADMX -->
 This setting prevents users from accessing "Programs and Features" to view, uninstall, change, or repair programs that are currently installed on the computer.
 
-If this setting is disabled or not configured, "Programs and Features" will be available to all users.
+- If this setting is disabled or not configured, "Programs and Features" will be available to all users.
 
 This setting does not prevent users from using other tools and methods to view or uninstall programs. It also does not prevent users from linking to related Programs Control Panel Features including Windows Features, Get Programs, or Windows Marketplace.
 <!-- NoProgramsAndFeatures-Description-End -->
@@ -258,7 +257,7 @@ This setting does not prevent users from using other tools and methods to view o
 
 <!-- NoProgramsAndFeatures-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -300,7 +299,7 @@ This setting prevents users from using the Programs Control Panel in Category Vi
 
 The Programs Control Panel allows users to uninstall, change, and repair programs, enable and disable Windows Features, set program defaults, view installed updates, and purchase software from Windows Marketplace. Programs published or assigned to the user by the system administrator also appear in the Programs Control Panel.
 
-If this setting is disabled or not configured, the Programs Control Panel in Category View and Programs and Features in Classic View will be available to all users.
+- If this setting is disabled or not configured, the Programs Control Panel in Category View and Programs and Features in Classic View will be available to all users.
 
 When enabled, this setting takes precedence over the other settings in this folder.
 
@@ -322,7 +321,7 @@ This setting does not prevent users from using other tools and methods to instal
 
 <!-- NoProgramsCPL-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -362,7 +361,7 @@ This setting does not prevent users from using other tools and methods to instal
 <!-- Description-Source-ADMX -->
 This setting prevents users from accessing the "Turn Windows features on or off" task from the Programs Control Panel in Category View, Programs and Features in Classic View, and Get Programs. As a result, users cannot view, enable, or disable various Windows features and services.
 
-If this setting is disabled or is not configured, the "Turn Windows features on or off" task will be available to all users.
+- If this setting is disabled or is not configured, the "Turn Windows features on or off" task will be available to all users.
 
 This setting does not prevent users from using other tools and methods to configure services or enable or disable program components.
 <!-- NoWindowsFeatures-Description-End -->
@@ -382,7 +381,7 @@ This setting does not prevent users from using other tools and methods to config
 
 <!-- NoWindowsFeatures-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -428,7 +427,8 @@ Enabling this feature does not prevent users from navigating to Windows Marketpl
 
 If this feature is disabled or is not configured, the "Get new programs from Windows Marketplace" task link will be available to all users.
 
-Note: If the "Hide Programs control Panel" setting is enabled, this setting is ignored.
+> [!NOTE]
+> If the "Hide Programs control Panel" setting is enabled, this setting is ignored.
 <!-- NoWindowsMarketplace-Description-End -->
 
 <!-- NoWindowsMarketplace-Editable-Begin -->
@@ -446,7 +446,7 @@ Note: If the "Hide Programs control Panel" setting is enabled, this setting is i
 
 <!-- NoWindowsMarketplace-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

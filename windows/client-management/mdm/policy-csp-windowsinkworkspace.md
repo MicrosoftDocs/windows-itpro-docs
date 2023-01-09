@@ -1,10 +1,10 @@
 ---
 title: WindowsInkWorkspace Policy CSP
-description: Learn more about the WindowsInkWorkspace Area in Policy CSP
+description: Learn more about the WindowsInkWorkspace Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/07/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -122,9 +122,9 @@ Specifies whether to allow the user to access the ink workspace.
 
 | Value | Description |
 |:--|:--|
-| 0 | access to ink workspace is disabled. The feature is turned off. |
-| 1 | ink workspace is enabled (feature is turned on), but the user cannot access it above the lock screen. |
-| 2 (Default) | ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen. |
+| 0 | Access to ink workspace is disabled. The feature is turned off. |
+| 1 | Ink workspace is enabled (feature is turned on), but the user cannot access it above the lock screen. |
+| 2 (Default) | Ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen. |
 <!-- AllowWindowsInkWorkspace-AllowedValues-End -->
 
 <!-- AllowWindowsInkWorkspace-GpMapping-Begin -->

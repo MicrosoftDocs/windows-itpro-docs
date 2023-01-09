@@ -1,10 +1,10 @@
 ---
 title: ADMX_GroupPolicy Policy CSP
-description: Learn more about the ADMX_GroupPolicy Area in Policy CSP
+description: Learn more about the ADMX_GroupPolicy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_GroupPolicy
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -48,15 +46,15 @@ This policy setting allows user-based policy processing, roaming user profiles, 
 
 This policy setting affects all user accounts that interactively log on to a computer in a different forest when a trust across forests or a two-way forest trust exists.
 
-If you do not configure this policy setting:
+- If you do not configure this policy setting:
 - No user-based policy settings are applied from the user's forest.
 - Users do not receive their roaming profiles; they receive a local profile on the computer from the local forest. A warning message appears to the user, and an event log message (1529) is posted.
 - Loopback Group Policy processing is applied, using the Group Policy Objects (GPOs) that are scoped to the computer.
 - An event log message (1109) is posted, stating that loopback was invoked in Replace mode.
 
-If you enable this policy setting, the behavior is exactly the same as in Windows 2000: user policy is applied, and a roaming user profile is allowed from the trusted forest.
+- If you enable this policy setting, the behavior is exactly the same as in Windows 2000: user policy is applied, and a roaming user profile is allowed from the trusted forest.
 
-If you disable this policy setting, the behavior is the same as if it is not configured.
+- If you disable this policy setting, the behavior is the same as if it is not configured.
 <!-- AllowX-ForestPolicy-and-RUP-Description-End -->
 
 <!-- AllowX-ForestPolicy-and-RUP-Editable-Begin -->
@@ -74,7 +72,7 @@ If you disable this policy setting, the behavior is the same as if it is not con
 
 <!-- AllowX-ForestPolicy-and-RUP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -114,9 +112,9 @@ If you disable this policy setting, the behavior is the same as if it is not con
 <!-- Description-Source-ADMX -->
 This policy setting specifies how long Group Policy should wait for workplace connectivity notifications during startup policy processing. If the startup policy processing is synchronous, the computer is blocked until workplace connectivity is available or the wait time is reached. If the startup policy processing is asynchronous, the computer is not blocked and policy processing will occur in the background. In either case, configuring this policy setting overrides any system-computed wait times.
 
-If you enable this policy setting, Group Policy uses this administratively configured maximum wait time for workplace connectivity, and overrides any default or system-computed wait time.
+- If you enable this policy setting, Group Policy uses this administratively configured maximum wait time for workplace connectivity, and overrides any default or system-computed wait time.
 
-If you disable or do not configure this policy setting, Group Policy will use the default wait time of 60 seconds on computers running Windows operating systems greater than Windows 7 configured for workplace connectivity.
+- If you disable or do not configure this policy setting, Group Policy will use the default wait time of 60 seconds on computers running Windows operating systems greater than Windows 7 configured for workplace connectivity.
 <!-- CorpConnSyncWaitTime-Description-End -->
 
 <!-- CorpConnSyncWaitTime-Editable-Begin -->
@@ -134,7 +132,7 @@ If you disable or do not configure this policy setting, Group Policy will use th
 
 <!-- CorpConnSyncWaitTime-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -177,7 +175,8 @@ This policy setting affects all policy settings that use the software installati
 
 This policy setting overrides customized settings that the program implementing the software installation policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+- If you enable this policy setting, you can use the check boxes provided to change the options.
+- If you disable or do not configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
@@ -199,7 +198,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!-- CSE_AppMgmt-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -242,7 +241,8 @@ This policy setting affects all policies that use the disk quota component of Gr
 
 This policy setting overrides customized settings that the program implementing the disk quota policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+- If you enable this policy setting, you can use the check boxes provided to change the options.
+- If you disable or do not configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
@@ -266,7 +266,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!-- CSE_DiskQuota-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -309,7 +309,8 @@ This policy setting affects all policies that use the encryption component of Gr
 
 It overrides customized settings that the program implementing the encryption policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+- If you enable this policy setting, you can use the check boxes provided to change the options.
+- If you disable or do not configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
@@ -333,7 +334,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!-- CSE_EFSRecovery-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -376,7 +377,8 @@ This policy setting affects all policies that use the folder redirection compone
 
 This policy setting overrides customized settings that the program implementing the folder redirection policy setting set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+- If you enable this policy setting, you can use the check boxes provided to change the options.
+- If you disable or do not configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
@@ -398,7 +400,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!-- CSE_FolderRedirection-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -441,7 +443,8 @@ This policy setting affects all policies that use the Internet Explorer Maintena
 
 This policy setting overrides customized settings that the program implementing the Internet Explorer Maintenance policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+- If you enable this policy setting, you can use the check boxes provided to change the options.
+- If you disable or do not configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
@@ -465,7 +468,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!-- CSE_IEM-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -508,7 +511,8 @@ This policy setting affects all policies that use the IP security component of G
 
 This policy setting overrides customized settings that the program implementing the IP security policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+- If you enable this policy setting, you can use the check boxes provided to change the options.
+- If you disable or do not configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
@@ -532,7 +536,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!-- CSE_IPSecurity-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -573,7 +577,8 @@ This policy setting determines when registry policies are updated.
 
 This policy setting affects all policies in the Administrative Templates folder and any other policies that store values in the registry. It overrides customized settings that the program implementing a registry policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+- If you enable this policy setting, you can use the check boxes provided to change the options.
+- If you disable or do not configure this policy setting, it has no effect on the system.
 
 The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes will not take effect until the next user logon or system restart.
 
@@ -595,7 +600,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!-- CSE_Registry-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -636,7 +641,8 @@ This policy setting determines when policies that assign shared scripts are upda
 
 This policy setting affects all policies that use the scripts component of Group Policy, such as those in WindowsSettings\Scripts. It overrides customized settings that the program implementing the scripts policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this setting, it has no effect on the system.
+- If you enable this policy setting, you can use the check boxes provided to change the options.
+- If you disable or do not configure this setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
@@ -660,7 +666,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!-- CSE_Scripts-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -703,7 +709,8 @@ This policy setting affects all policies that use the security component of Grou
 
 This policy setting overrides customized settings that the program implementing the security policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+- If you enable this policy setting, you can use the check boxes provided to change the options.
+- If you disable or do not configure this policy setting, it has no effect on the system.
 
 The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes will not take effect until the next user logon or system restart.
 
@@ -725,7 +732,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!-- CSE_Security-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -768,9 +775,9 @@ This policy setting affects all policies that use the wired network component of
 
 It overrides customized settings that the program implementing the wired network set when it was installed.
 
-If you enable this policy, you can use the check boxes provided to change the options.
+- If you enable this policy, you can use the check boxes provided to change the options.
 
-If you disable this setting or do not configure it, it has no effect on the system.
+- If you disable this setting or do not configure it, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
@@ -794,7 +801,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!-- CSE_Wired-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -837,9 +844,9 @@ This policy setting affects all policies that use the wireless network component
 
 It overrides customized settings that the program implementing the wireless network set when it was installed.
 
-If you enable this policy, you can use the check boxes provided to change the options.
+- If you enable this policy, you can use the check boxes provided to change the options.
 
-If you disable this setting or do not configure it, it has no effect on the system.
+- If you disable this setting or do not configure it, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
@@ -863,7 +870,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!-- CSE_Wireless-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -882,6 +889,79 @@ The "Process even if the Group Policy objects have not changed" option updates a
 <!-- CSE_Wireless-Examples-End -->
 
 <!-- CSE_Wireless-End -->
+
+<!-- DenyRsopToInteractiveUser_1-Begin -->
+## DenyRsopToInteractiveUser_1
+
+<!-- DenyRsopToInteractiveUser_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DenyRsopToInteractiveUser_1-Applicability-End -->
+
+<!-- DenyRsopToInteractiveUser_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/DenyRsopToInteractiveUser_1
+```
+<!-- DenyRsopToInteractiveUser_1-OmaUri-End -->
+
+<!-- DenyRsopToInteractiveUser_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls the ability of users to view their Resultant Set of Policy (RSoP) data.
+
+By default, interactively logged on users can view their own Resultant Set of Policy (RSoP) data.
+
+- If you enable this policy setting, interactive users cannot generate RSoP data.
+
+- If you disable or do not configure this policy setting, interactive users can generate RSoP.
+
+> [!NOTE]
+> This policy setting does not affect administrators. If you enable or disable this policy setting, by default administrators can view RSoP data.
+
+> [!NOTE]
+> To view RSoP data on a client computer, use the RSoP snap-in for the Microsoft Management Console. You can launch the RSoP snap-in from the command line by typing RSOP.msc
+
+> [!NOTE]
+> This policy setting exists as both a User Configuration and Computer Configuration setting.
+
+Also, see the "Turn off Resultant set of Policy logging" policy setting in Computer Configuration\Administrative Templates\System\GroupPolicy.
+<!-- DenyRsopToInteractiveUser_1-Description-End -->
+
+<!-- DenyRsopToInteractiveUser_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DenyRsopToInteractiveUser_1-Editable-End -->
+
+<!-- DenyRsopToInteractiveUser_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DenyRsopToInteractiveUser_1-DFProperties-End -->
+
+<!-- DenyRsopToInteractiveUser_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DenyRsopToInteractiveUser_1 |
+| Friendly Name | Determine if interactive users can generate Resultant Set of Policy data |
+| Location | User Configuration |
+| Path | System > Group Policy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | DenyRsopToInteractiveUser |
+| ADMX File Name | GroupPolicy.admx |
+<!-- DenyRsopToInteractiveUser_1-AdmxBacked-End -->
+
+<!-- DenyRsopToInteractiveUser_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DenyRsopToInteractiveUser_1-Examples-End -->
+
+<!-- DenyRsopToInteractiveUser_1-End -->
 
 <!-- DenyRsopToInteractiveUser_2-Begin -->
 ## DenyRsopToInteractiveUser_2
@@ -904,15 +984,18 @@ This policy setting controls the ability of users to view their Resultant Set of
 
 By default, interactively logged on users can view their own Resultant Set of Policy (RSoP) data.
 
-If you enable this policy setting, interactive users cannot generate RSoP data.
+- If you enable this policy setting, interactive users cannot generate RSoP data.
 
-If you disable or do not configure this policy setting, interactive users can generate RSoP.
+- If you disable or do not configure this policy setting, interactive users can generate RSoP.
 
-Note: This policy setting does not affect administrators. If you enable or disable this policy setting, by default administrators can view RSoP data.
+> [!NOTE]
+> This policy setting does not affect administrators. If you enable or disable this policy setting, by default administrators can view RSoP data.
 
-Note: To view RSoP data on a client computer, use the RSoP snap-in for the Microsoft Management Console. You can launch the RSoP snap-in from the command line by typing RSOP.msc
+> [!NOTE]
+> To view RSoP data on a client computer, use the RSoP snap-in for the Microsoft Management Console. You can launch the RSoP snap-in from the command line by typing RSOP.msc
 
-Note: This policy setting exists as both a User Configuration and Computer Configuration setting.
+> [!NOTE]
+> This policy setting exists as both a User Configuration and Computer Configuration setting.
 
 Also, see the "Turn off Resultant set of Policy logging" policy setting in Computer Configuration\Administrative Templates\System\GroupPolicy.
 <!-- DenyRsopToInteractiveUser_2-Description-End -->
@@ -932,13 +1015,13 @@ Also, see the "Turn off Resultant set of Policy logging" policy setting in Compu
 
 <!-- DenyRsopToInteractiveUser_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DenyRsopToInteractiveUser |
+| Name | DenyRsopToInteractiveUser_2 |
 | Friendly Name | Determine if interactive users can generate Resultant Set of Policy data |
 | Location | Computer Configuration |
 | Path | System > Group Policy |
@@ -988,7 +1071,7 @@ This policy setting prevents the Group Policy Client Service from stopping when 
 
 <!-- DisableAOACProcessing-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1009,6 +1092,70 @@ This policy setting prevents the Group Policy Client Service from stopping when 
 
 <!-- DisableAOACProcessing-End -->
 
+<!-- DisableAutoADMUpdate-Begin -->
+## DisableAutoADMUpdate
+
+<!-- DisableAutoADMUpdate-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableAutoADMUpdate-Applicability-End -->
+
+<!-- DisableAutoADMUpdate-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/DisableAutoADMUpdate
+```
+<!-- DisableAutoADMUpdate-OmaUri-End -->
+
+<!-- DisableAutoADMUpdate-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents the system from updating the Administrative Templates source files automatically when you open the Group Policy Object Editor. Administrators might want to use this if they are concerned about the amount of space used on the system volume of a DC.
+
+By default, when you start the Group Policy Object Editor, a timestamp comparison is performed on the source files in the local %SYSTEMROOT%\inf directory and the source files stored in the GPO. If the local files are newer, they are copied into the GPO.
+
+Changing the status of this setting to Enabled will keep any source files from copying to the GPO.
+
+Changing the status of this setting to Disabled will enforce the default behavior. Files will always be copied to the GPO if they have a later timestamp.
+
+NOTE: If the Computer Configuration policy setting, "Always use local ADM files for the Group Policy Object Editor" is enabled, the state of this setting is ignored and always treated as Enabled.
+<!-- DisableAutoADMUpdate-Description-End -->
+
+<!-- DisableAutoADMUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableAutoADMUpdate-Editable-End -->
+
+<!-- DisableAutoADMUpdate-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableAutoADMUpdate-DFProperties-End -->
+
+<!-- DisableAutoADMUpdate-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableAutoADMUpdate |
+| Friendly Name | Turn off automatic update of ADM files |
+| Location | User Configuration |
+| Path | System > Group Policy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Group Policy Editor |
+| Registry Value Name | DisableAutoADMUpdate |
+| ADMX File Name | GroupPolicy.admx |
+<!-- DisableAutoADMUpdate-AdmxBacked-End -->
+
+<!-- DisableAutoADMUpdate-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableAutoADMUpdate-Examples-End -->
+
+<!-- DisableAutoADMUpdate-End -->
+
 <!-- DisableBackgroundPolicy-Begin -->
 ## DisableBackgroundPolicy
 
@@ -1028,11 +1175,12 @@ This policy setting prevents the Group Policy Client Service from stopping when 
 <!-- Description-Source-ADMX -->
 This policy setting prevents Group Policy from being updated while the computer is in use. This policy setting applies to Group Policy for computers, users, and domain controllers.
 
-If you enable this policy setting, the system waits until the current user logs off the system before updating the computer and user settings.
+- If you enable this policy setting, the system waits until the current user logs off the system before updating the computer and user settings.
 
-If you disable or do not configure this policy setting, updates can be applied while users are working. The frequency of updates is determined by the "Set Group Policy refresh interval for computers" and "Set Group Policy refresh interval for users" policy settings.
+- If you disable or do not configure this policy setting, updates can be applied while users are working. The frequency of updates is determined by the "Set Group Policy refresh interval for computers" and "Set Group Policy refresh interval for users" policy settings.
 
-Note: If you make changes to this policy setting, you must restart your computer for it to take effect.
+> [!NOTE]
+> If you make changes to this policy setting, you must restart your computer for it to take effect.
 <!-- DisableBackgroundPolicy-Description-End -->
 
 <!-- DisableBackgroundPolicy-Editable-Begin -->
@@ -1050,7 +1198,7 @@ Note: If you make changes to this policy setting, you must restart your computer
 
 <!-- DisableBackgroundPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1092,11 +1240,12 @@ This policy setting prevents Local Group Policy Objects (Local GPOs) from being 
 
 By default, the policy settings in Local GPOs are applied before any domain-based GPO policy settings. These policy settings can apply to both users and the local computer. You can disable the processing and application of all Local GPOs to ensure that only domain-based GPOs are applied.
 
-If you enable this policy setting, the system does not process and apply any Local GPOs.
+- If you enable this policy setting, the system does not process and apply any Local GPOs.
 
-If you disable or do not configure this policy setting, Local GPOs continue to be applied.
+- If you disable or do not configure this policy setting, Local GPOs continue to be applied.
 
-Note: For computers joined to a domain, it is strongly recommended that you only configure this policy setting in domain-based GPOs. This policy setting will be ignored on computers that are joined to a workgroup.
+> [!NOTE]
+> For computers joined to a domain, it is strongly recommended that you only configure this policy setting in domain-based GPOs. This policy setting will be ignored on computers that are joined to a workgroup.
 <!-- DisableLGPOProcessing-Description-End -->
 
 <!-- DisableLGPOProcessing-Editable-Begin -->
@@ -1114,7 +1263,7 @@ Note: For computers joined to a domain, it is strongly recommended that you only
 
 <!-- DisableLGPOProcessing-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1154,15 +1303,17 @@ Note: For computers joined to a domain, it is strongly recommended that you only
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control a user's ability to invoke a computer policy refresh.
 
-If you enable this policy setting, users are not able to invoke a refresh of computer policy. Computer policy will still be applied at startup or when an official policy refresh occurs.
+- If you enable this policy setting, users are not able to invoke a refresh of computer policy. Computer policy will still be applied at startup or when an official policy refresh occurs.
 
-If you disable or do not configure this policy setting, the default behavior applies. By default, computer policy is applied when the computer starts up. It also applies at a specified refresh interval or when manually invoked by the user.
+- If you disable or do not configure this policy setting, the default behavior applies. By default, computer policy is applied when the computer starts up. It also applies at a specified refresh interval or when manually invoked by the user.
 
-Note: This policy setting applies only to non-administrators. Administrators can still invoke a refresh of computer policy at any time, no matter how this policy setting is configured.
+> [!NOTE]
+> This policy setting applies only to non-administrators. Administrators can still invoke a refresh of computer policy at any time, no matter how this policy setting is configured.
 
 Also, see the "Set Group Policy refresh interval for computers" policy setting to change the policy refresh interval.
 
-Note: If you make changes to this policy setting, you must restart your computer for it to take effect.
+> [!NOTE]
+> If you make changes to this policy setting, you must restart your computer for it to take effect.
 <!-- DisableUsersFromMachGP-Description-End -->
 
 <!-- DisableUsersFromMachGP-Editable-Begin -->
@@ -1180,7 +1331,7 @@ Note: If you make changes to this policy setting, you must restart your computer
 
 <!-- DisableUsersFromMachGP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1220,11 +1371,11 @@ Note: If you make changes to this policy setting, you must restart your computer
 <!-- Description-Source-ADMX -->
 This policy setting determines whether the Windows device is allowed to participate in cross-device experiences (continue experiences).
 
-If you enable this policy setting, the Windows device is discoverable by other Windows devices that belong to the same user, and can participate in cross-device experiences.
+- If you enable this policy setting, the Windows device is discoverable by other Windows devices that belong to the same user, and can participate in cross-device experiences.
 
-If you disable this policy setting, the Windows device is not discoverable by other devices, and cannot participate in cross-device experiences.
+- If you disable this policy setting, the Windows device is not discoverable by other devices, and cannot participate in cross-device experiences.
 
-If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+- If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 <!-- EnableCDP-Description-End -->
 
 <!-- EnableCDP-Editable-Begin -->
@@ -1242,7 +1393,7 @@ If you do not configure this policy setting, the default behavior depends on the
 
 <!-- EnableCDP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1282,13 +1433,13 @@ If you do not configure this policy setting, the default behavior depends on the
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure Group Policy caching behavior.
 
-If you enable or do not configure this policy setting, Group Policy caches policy information after every background processing session. This cache saves applicable GPOs and the settings contained within them. When Group Policy runs in synchronous foreground mode, it refers to this cache, which enables it to run faster. When the cache is read, Group Policy attempts to contact a logon domain controller to determine the link speed. When Group Policy runs in background mode or asynchronous foreground mode, it continues to download the latest version of the policy information, and it uses a bandwidth estimate to determine slow link thresholds. (See the “Configure Group Policy Slow Link Detection” policy setting to configure asynchronous foreground behavior.)
+- If you enable or do not configure this policy setting, Group Policy caches policy information after every background processing session. This cache saves applicable GPOs and the settings contained within them. When Group Policy runs in synchronous foreground mode, it refers to this cache, which enables it to run faster. When the cache is read, Group Policy attempts to contact a logon domain controller to determine the link speed. When Group Policy runs in background mode or asynchronous foreground mode, it continues to download the latest version of the policy information, and it uses a bandwidth estimate to determine slow link thresholds. (See the "Configure Group Policy Slow Link Detection" policy setting to configure asynchronous foreground behavior.)
 
 The slow link value that is defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before reporting the link speed as slow. The default is 500 milliseconds.
 
 The timeout value that is defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before determining that there is no network connectivity. This stops the current Group Policy processing. Group Policy will run in the background the next time a connection to a domain controller is established. Setting this value too high might result in longer waits for the user at boot or logon. The default is 5000 milliseconds.
 
-If you disable this policy setting, the Group Policy client will not cache applicable GPOs or settings that are contained within the GPOs. When Group Policy runs synchronously, it downloads the latest version of the policy from the network and uses bandwidth estimates to determine slow link thresholds. (See the “Configure Group Policy Slow Link Detection” policy setting to configure asynchronous foreground behavior.)
+- If you disable this policy setting, the Group Policy client will not cache applicable GPOs or settings that are contained within the GPOs. When Group Policy runs synchronously, it downloads the latest version of the policy from the network and uses bandwidth estimates to determine slow link thresholds. (See the "Configure Group Policy Slow Link Detection" policy setting to configure asynchronous foreground behavior.)
 <!-- EnableLogonOptimization-Description-End -->
 
 <!-- EnableLogonOptimization-Editable-Begin -->
@@ -1306,7 +1457,7 @@ If you disable this policy setting, the Group Policy client will not cache appli
 
 <!-- EnableLogonOptimization-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1345,10 +1496,10 @@ If you disable this policy setting, the Group Policy client will not cache appli
 <!-- EnableLogonOptimizationOnServerSKU-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure Group Policy caching behavior on Windows Server machines.
-If you enable this policy setting, Group Policy caches policy information after every background processing session. This cache saves applicable GPOs and the settings contained within them. When Group Policy runs in synchronous foreground mode, it refers to this cache, which enables it to run faster. When the cache is read, Group Policy attempts to contact a logon domain controller to determine the link speed. When Group Policy runs in background mode or asynchronous foreground mode, it continues to download the latest version of the policy information, and it uses a bandwidth estimate to determine slow link thresholds. (See the “Configure Group Policy Slow Link Detection” policy setting to configure asynchronous foreground behavior.)
+- If you enable this policy setting, Group Policy caches policy information after every background processing session. This cache saves applicable GPOs and the settings contained within them. When Group Policy runs in synchronous foreground mode, it refers to this cache, which enables it to run faster. When the cache is read, Group Policy attempts to contact a logon domain controller to determine the link speed. When Group Policy runs in background mode or asynchronous foreground mode, it continues to download the latest version of the policy information, and it uses a bandwidth estimate to determine slow link thresholds. (See the "Configure Group Policy Slow Link Detection" policy setting to configure asynchronous foreground behavior.)
 The slow link value that is defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before reporting the link speed as slow. The default is 500 milliseconds.
 The timeout value that is defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before determining that there is no network connectivity. This stops the current Group Policy processing. Group Policy will run in the background the next time a connection to a domain controller is established. Setting this value too high might result in longer waits for the user at boot or logon. The default is 5000 milliseconds.
-If you disable or do not configure this policy setting, the Group Policy client will not cache applicable GPOs or settings that are contained within the GPOs. When Group Policy runs synchronously, it downloads the latest version of the policy from the network and uses bandwidth estimates to determine slow link thresholds. (See the “Configure Group Policy Slow Link Detection” policy setting to configure asynchronous foreground behavior.)
+- If you disable or do not configure this policy setting, the Group Policy client will not cache applicable GPOs or settings that are contained within the GPOs. When Group Policy runs synchronously, it downloads the latest version of the policy from the network and uses bandwidth estimates to determine slow link thresholds. (See the "Configure Group Policy Slow Link Detection" policy setting to configure asynchronous foreground behavior.)
 <!-- EnableLogonOptimizationOnServerSKU-Description-End -->
 
 <!-- EnableLogonOptimizationOnServerSKU-Editable-Begin -->
@@ -1366,7 +1517,7 @@ If you disable or do not configure this policy setting, the Group Policy client 
 
 <!-- EnableLogonOptimizationOnServerSKU-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1406,11 +1557,11 @@ If you disable or do not configure this policy setting, the Group Policy client 
 <!-- Description-Source-ADMX -->
 This policy allows IT admins to turn off the ability to Link a Phone with a PC to continue reading, emailing and other tasks that requires linking between Phone and PC.
 
-If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in Continue on PC experiences.
+- If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in Continue on PC experiences.
 
-If you disable this policy setting, the Windows device is not allowed to be linked to Phones, will remove itself from the device list of any linked Phones, and cannot participate in Continue on PC experiences.
+- If you disable this policy setting, the Windows device is not allowed to be linked to Phones, will remove itself from the device list of any linked Phones, and cannot participate in Continue on PC experiences.
 
-If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+- If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 <!-- EnableMMX-Description-End -->
 
 <!-- EnableMMX-Editable-Begin -->
@@ -1428,7 +1579,7 @@ If you do not configure this policy setting, the default behavior depends on the
 
 <!-- EnableMMX-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1448,6 +1599,73 @@ If you do not configure this policy setting, the default behavior depends on the
 <!-- EnableMMX-Examples-End -->
 
 <!-- EnableMMX-End -->
+
+<!-- EnforcePoliciesOnly-Begin -->
+## EnforcePoliciesOnly
+
+<!-- EnforcePoliciesOnly-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnforcePoliciesOnly-Applicability-End -->
+
+<!-- EnforcePoliciesOnly-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/EnforcePoliciesOnly
+```
+<!-- EnforcePoliciesOnly-OmaUri-End -->
+
+<!-- EnforcePoliciesOnly-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents administrators from viewing or using Group Policy preferences.
+
+A Group Policy administration (.adm) file can contain both true settings and preferences. True settings, which are fully supported by Group Policy, must use registry entries in the Software\Policies or Software\Microsoft\Windows\CurrentVersion\Policies registry subkeys. Preferences, which are not fully supported, use registry entries in other subkeys.
+
+- If you enable this policy setting, the "Show Policies Only" command is turned on, and administrators cannot turn it off. As a result, Group Policy Object Editor displays only true settings; preferences do not appear.
+
+- If you disable or do not configure this policy setting, the "Show Policies Only" command is turned on by default, but administrators can view preferences by turning off the "Show Policies Only" command.
+
+> [!NOTE]
+> To find the "Show Policies Only" command, in Group Policy Object Editor, click the Administrative Templates folder (either one), right-click the same folder, and then point to "View."
+
+In Group Policy Object Editor, preferences have a red icon to distinguish them from true settings, which have a blue icon.
+<!-- EnforcePoliciesOnly-Description-End -->
+
+<!-- EnforcePoliciesOnly-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnforcePoliciesOnly-Editable-End -->
+
+<!-- EnforcePoliciesOnly-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnforcePoliciesOnly-DFProperties-End -->
+
+<!-- EnforcePoliciesOnly-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | EnforcePoliciesOnly |
+| Friendly Name | Enforce Show Policies Only |
+| Location | User Configuration |
+| Path | System > Group Policy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Group Policy Editor |
+| Registry Value Name | ShowPoliciesOnly |
+| ADMX File Name | GroupPolicy.admx |
+<!-- EnforcePoliciesOnly-AdmxBacked-End -->
+
+<!-- EnforcePoliciesOnly-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnforcePoliciesOnly-Examples-End -->
+
+<!-- EnforcePoliciesOnly-End -->
 
 <!-- FontMitigation-Begin -->
 ## FontMitigation
@@ -1484,13 +1702,13 @@ This security feature provides a global setting to prevent programs from loading
 
 <!-- FontMitigation-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Font_List |
+| Name | FontMitigation |
 | Friendly Name | Untrusted Font Blocking |
 | Location | Computer Configuration |
 | Path | System > Mitigation Options |
@@ -1503,6 +1721,144 @@ This security feature provides a global setting to prevent programs from loading
 <!-- FontMitigation-Examples-End -->
 
 <!-- FontMitigation-End -->
+
+<!-- GPDCOptions-Begin -->
+## GPDCOptions
+
+<!-- GPDCOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- GPDCOptions-Applicability-End -->
+
+<!-- GPDCOptions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/GPDCOptions
+```
+<!-- GPDCOptions-OmaUri-End -->
+
+<!-- GPDCOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines which domain controller the Group Policy Object Editor snap-in uses.
+
+- If you enable this setting, you can which domain controller is used according to these options:
+
+"Use the Primary Domain Controller" indicates that the Group Policy Object Editor snap-in reads and writes changes to the domain controller designated as the PDC Operations Master for the domain.
+
+"Inherit from Active Directory Snap-ins" indicates that the Group Policy Object Editor snap-in reads and writes changes to the domain controller that Active Directory Users and Computers or Active Directory Sites and Services snap-ins use.
+
+"Use any available domain controller" indicates that the Group Policy Object Editor snap-in can read and write changes to any available domain controller.
+
+- If you disable this setting or do not configure it, the Group Policy Object Editor snap-in uses the domain controller designated as the PDC Operations Master for the domain.
+
+> [!NOTE]
+> To change the PDC Operations Master for a domain, in Active Directory Users and Computers, right-click a domain, and then click "Operations Masters."
+<!-- GPDCOptions-Description-End -->
+
+<!-- GPDCOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- GPDCOptions-Editable-End -->
+
+<!-- GPDCOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- GPDCOptions-DFProperties-End -->
+
+<!-- GPDCOptions-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | GPDCOptions |
+| Friendly Name | Configure Group Policy domain controller selection |
+| Location | User Configuration |
+| Path | System > Group Policy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Group Policy Editor |
+| ADMX File Name | GroupPolicy.admx |
+<!-- GPDCOptions-AdmxBacked-End -->
+
+<!-- GPDCOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- GPDCOptions-Examples-End -->
+
+<!-- GPDCOptions-End -->
+
+<!-- GPTransferRate_1-Begin -->
+## GPTransferRate_1
+
+<!-- GPTransferRate_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- GPTransferRate_1-Applicability-End -->
+
+<!-- GPTransferRate_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/GPTransferRate_1
+```
+<!-- GPTransferRate_1-OmaUri-End -->
+
+<!-- GPTransferRate_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting defines a slow connection for purposes of applying and updating Group Policy.
+
+If the rate at which data is transferred from the domain controller providing a policy update to the computers in this group is slower than the rate specified by this setting, the system considers the connection to be slow.
+
+The system's response to a slow policy connection varies among policies. The program implementing the policy can specify the response to a slow link. Also, the policy processing settings in this folder lets you override the programs' specified responses to slow links.
+
+- If you enable this setting, you can, in the "Connection speed" box, type a decimal number between 0 and 4,294,967,200, indicating a transfer rate in kilobits per second. Any connection slower than this rate is considered to be slow. If you type 0, all connections are considered to be fast.
+
+- If you disable this setting or do not configure it, the system uses the default value of 500 kilobits per second.
+
+This setting appears in the Computer Configuration and User Configuration folders. The setting in Computer Configuration defines a slow link for policies in the Computer Configuration folder. The setting in User Configuration defines a slow link for settings in the User Configuration folder.
+
+Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile
+
+> [!NOTE]
+> If the profile server has IP connectivity, the connection speed setting is used. If the profile server does not have IP connectivity, the SMB timing is used.
+<!-- GPTransferRate_1-Description-End -->
+
+<!-- GPTransferRate_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- GPTransferRate_1-Editable-End -->
+
+<!-- GPTransferRate_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- GPTransferRate_1-DFProperties-End -->
+
+<!-- GPTransferRate_1-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | GPTransferRate_1 |
+| Friendly Name | Configure Group Policy slow link detection |
+| Location | User Configuration |
+| Path | System > Group Policy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| ADMX File Name | GroupPolicy.admx |
+<!-- GPTransferRate_1-AdmxBacked-End -->
+
+<!-- GPTransferRate_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- GPTransferRate_1-Examples-End -->
+
+<!-- GPTransferRate_1-End -->
 
 <!-- GPTransferRate_2-Begin -->
 ## GPTransferRate_2
@@ -1527,15 +1883,16 @@ If the rate at which data is transferred from the domain controller providing a 
 
 The system's response to a slow policy connection varies among policies. The program implementing the policy can specify the response to a slow link. Also, the policy processing settings in this folder lets you override the programs' specified responses to slow links.
 
-If you enable this setting, you can, in the "Connection speed" box, type a decimal number between 0 and 4,294,967,200, indicating a transfer rate in kilobits per second. Any connection slower than this rate is considered to be slow. If you type 0, all connections are considered to be fast.
+- If you enable this setting, you can, in the "Connection speed" box, type a decimal number between 0 and 4,294,967,200, indicating a transfer rate in kilobits per second. Any connection slower than this rate is considered to be slow. If you type 0, all connections are considered to be fast.
 
-If you disable this setting or do not configure it, the system uses the default value of 500 kilobits per second.
+- If you disable this setting or do not configure it, the system uses the default value of 500 kilobits per second.
 
 This setting appears in the Computer Configuration and User Configuration folders. The setting in Computer Configuration defines a slow link for policies in the Computer Configuration folder. The setting in User Configuration defines a slow link for settings in the User Configuration folder.
 
-Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile.
+Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile
 
-**Note**:  If the profile server has IP connectivity, the connection speed setting is used. If the profile server does not have IP connectivity, the SMB timing is used.
+> [!NOTE]
+> If the profile server has IP connectivity, the connection speed setting is used. If the profile server does not have IP connectivity, the SMB timing is used.
 <!-- GPTransferRate_2-Description-End -->
 
 <!-- GPTransferRate_2-Editable-Begin -->
@@ -1553,13 +1910,13 @@ Also, see the "Do not detect slow network connections" and related policies in C
 
 <!-- GPTransferRate_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | GPTransferRate |
+| Name | GPTransferRate_2 |
 | Friendly Name | Configure Group Policy slow link detection |
 | Location | Computer Configuration |
 | Path | System > Group Policy |
@@ -1596,9 +1953,9 @@ In addition to background updates, Group Policy for the computer is always updat
 
 By default, computer Group Policy is updated in the background every 90 minutes, with a random offset of 0 to 30 minutes.
 
-If you enable this setting, you can specify an update rate from 0 to 64,800 minutes (45 days). If you select 0 minutes, the computer tries to update Group Policy every 7 seconds. However, because updates might interfere with users' work and increase network traffic, very short update intervals are not appropriate for most installations.
+- If you enable this setting, you can specify an update rate from 0 to 64,800 minutes (45 days). If you select 0 minutes, the computer tries to update Group Policy every 7 seconds. However, because updates might interfere with users' work and increase network traffic, very short update intervals are not appropriate for most installations.
 
-If you disable this setting, Group Policy is updated every 90 minutes (the default). To specify that Group Policy should never be updated while the computer is in use, select the "Turn off background refresh of Group Policy" policy.
+- If you disable this setting, Group Policy is updated every 90 minutes (the default). To specify that Group Policy should never be updated while the computer is in use, select the "Turn off background refresh of Group Policy" policy.
 
 The Set Group Policy refresh interval for computers policy also lets you specify how much the actual update interval varies. To prevent clients with the same update interval from requesting updates simultaneously, the system varies the update interval for each client by a random number of minutes. The number you type in the random time box sets the upper limit for the range of variance. For example, if you type 30 minutes, the system selects a variance of 0 to 30 minutes. Typing a large number establishes a broad range and makes it less likely that client requests overlap. However, updates might be delayed significantly.
 
@@ -1606,7 +1963,8 @@ This setting establishes the update rate for computer Group Policy. To set an up
 
 This setting is only used when the "Turn off background refresh of Group Policy" setting is not enabled.
 
-Note: Consider notifying users that their policy is updated periodically so that they recognize the signs of a policy update. When Group Policy is updated, the Windows desktop is refreshed; it flickers briefly and closes open menus. Also, restrictions imposed by Group Policies, such as those that limit the programs users can run, might interfere with tasks in progress.
+> [!NOTE]
+> Consider notifying users that their policy is updated periodically so that they recognize the signs of a policy update. When Group Policy is updated, the Windows desktop is refreshed; it flickers briefly and closes open menus. Also, restrictions imposed by Group Policies, such as those that limit the programs users can run, might interfere with tasks in progress.
 <!-- GroupPolicyRefreshRate-Description-End -->
 
 <!-- GroupPolicyRefreshRate-Editable-Begin -->
@@ -1624,7 +1982,7 @@ Note: Consider notifying users that their policy is updated periodically so that
 
 <!-- GroupPolicyRefreshRate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1665,13 +2023,14 @@ This policy setting specifies how often Group Policy is updated on domain contro
 
 By default, Group Policy on the domain controllers is updated every five minutes.
 
-If you enable this setting, you can specify an update rate from 0 to 64,800 minutes (45 days). If you select 0 minutes, the domain controller tries to update Group Policy every 7 seconds. However, because updates might interfere with users' work and increase network traffic, very short update intervals are not appropriate for most installations.
+- If you enable this setting, you can specify an update rate from 0 to 64,800 minutes (45 days). If you select 0 minutes, the domain controller tries to update Group Policy every 7 seconds. However, because updates might interfere with users' work and increase network traffic, very short update intervals are not appropriate for most installations.
 
-If you disable or do not configure this setting, the domain controller updates Group Policy every 5 minutes (the default). To specify that Group Policies for users should never be updated while the computer is in use, select the "Turn off background refresh of Group Policy" setting.
+- If you disable or do not configure this setting, the domain controller updates Group Policy every 5 minutes (the default). To specify that Group Policies for users should never be updated while the computer is in use, select the "Turn off background refresh of Group Policy" setting.
 
 This setting also lets you specify how much the actual update interval varies. To prevent domain controllers with the same update interval from requesting updates simultaneously, the system varies the update interval for each controller by a random number of minutes. The number you type in the random time box sets the upper limit for the range of variance. For example, if you type 30 minutes, the system selects a variance of 0 to 30 minutes. Typing a large number establishes a broad range and makes it less likely that update requests overlap. However, updates might be delayed significantly.
 
-Note: This setting is used only when you are establishing policy for a domain, site, organizational unit (OU), or customized group. If you are establishing policy for a local computer only, the system ignores this setting.
+> [!NOTE]
+> This setting is used only when you are establishing policy for a domain, site, organizational unit (OU), or customized group. If you are establishing policy for a local computer only, the system ignores this setting.
 <!-- GroupPolicyRefreshRateDC-Description-End -->
 
 <!-- GroupPolicyRefreshRateDC-Editable-Begin -->
@@ -1689,7 +2048,7 @@ Note: This setting is used only when you are establishing policy for a domain, s
 
 <!-- GroupPolicyRefreshRateDC-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1709,6 +2068,80 @@ Note: This setting is used only when you are establishing policy for a domain, s
 
 <!-- GroupPolicyRefreshRateDC-End -->
 
+<!-- GroupPolicyRefreshRateUser-Begin -->
+## GroupPolicyRefreshRateUser
+
+<!-- GroupPolicyRefreshRateUser-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- GroupPolicyRefreshRateUser-Applicability-End -->
+
+<!-- GroupPolicyRefreshRateUser-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/GroupPolicyRefreshRateUser
+```
+<!-- GroupPolicyRefreshRateUser-OmaUri-End -->
+
+<!-- GroupPolicyRefreshRateUser-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies how often Group Policy for users is updated while the computer is in use (in the background). This setting specifies a background update rate only for the Group Policies in the User Configuration folder.
+
+In addition to background updates, Group Policy for users is always updated when users log on.
+
+By default, user Group Policy is updated in the background every 90 minutes, with a random offset of 0 to 30 minutes.
+
+- If you enable this setting, you can specify an update rate from 0 to 64,800 minutes (45 days). If you select 0 minutes, the computer tries to update user Group Policy every 7 seconds. However, because updates might interfere with users' work and increase network traffic, very short update intervals are not appropriate for most installations.
+
+- If you disable this setting, user Group Policy is updated every 90 minutes (the default). To specify that Group Policy for users should never be updated while the computer is in use, select the "Turn off background refresh of Group Policy" setting.
+
+This setting also lets you specify how much the actual update interval varies. To prevent clients with the same update interval from requesting updates simultaneously, the system varies the update interval for each client by a random number of minutes. The number you type in the random time box sets the upper limit for the range of variance. For example, if you type 30 minutes, the system selects a variance of 0 to 30 minutes. Typing a large number establishes a broad range and makes it less likely that client requests overlap. However, updates might be delayed significantly.
+
+> [!IMPORTANT]
+> If the "Turn off background refresh of Group Policy" setting is enabled, this setting is ignored.
+
+> [!NOTE]
+> This setting establishes the update rate for user Group Policies. To set an update rate for computer Group Policies, use the "Group Policy refresh interval for computers" setting (located in Computer Configuration\Administrative Templates\System\Group Policy).
+
+> [!TIP]
+> Consider notifying users that their policy is updated periodically so that they recognize the signs of a policy update. When Group Policy is updated, the Windows desktop is refreshed; it flickers briefly and closes open menus. Also, restrictions imposed by Group Policies, such as those that limit the programs a user can run, might interfere with tasks in progress.
+<!-- GroupPolicyRefreshRateUser-Description-End -->
+
+<!-- GroupPolicyRefreshRateUser-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- GroupPolicyRefreshRateUser-Editable-End -->
+
+<!-- GroupPolicyRefreshRateUser-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- GroupPolicyRefreshRateUser-DFProperties-End -->
+
+<!-- GroupPolicyRefreshRateUser-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | GroupPolicyRefreshRateUser |
+| Friendly Name | Set Group Policy refresh interval for users |
+| Location | User Configuration |
+| Path | System > Group Policy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| ADMX File Name | GroupPolicy.admx |
+<!-- GroupPolicyRefreshRateUser-AdmxBacked-End -->
+
+<!-- GroupPolicyRefreshRateUser-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- GroupPolicyRefreshRateUser-Examples-End -->
+
+<!-- GroupPolicyRefreshRateUser-End -->
+
 <!-- LogonScriptDelay-Begin -->
 ## LogonScriptDelay
 
@@ -1726,17 +2159,17 @@ Note: This setting is used only when you are establishing policy for a domain, s
 
 <!-- LogonScriptDelay-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Enter “0” to disable Logon Script Delay.
+Enter "0" to disable Logon Script Delay.
 
 This policy setting allows you to configure how long the Group Policy client waits after logon before running scripts.
 
 By default, the Group Policy client waits five minutes before running logon scripts. This helps create a responsive desktop environment by preventing disk contention.
 
-If you enable this policy setting, Group Policy will wait for the specified amount of time before running logon scripts.
+- If you enable this policy setting, Group Policy will wait for the specified amount of time before running logon scripts.
 
-If you disable this policy setting, Group Policy will run scripts immediately after logon.
+- If you disable this policy setting, Group Policy will run scripts immediately after logon.
 
-If you do not configure this policy setting, Group Policy will wait five minutes before running logon scripts.
+- If you do not configure this policy setting, Group Policy will wait five minutes before running logon scripts.
 <!-- LogonScriptDelay-Description-End -->
 
 <!-- LogonScriptDelay-Editable-Begin -->
@@ -1754,7 +2187,7 @@ If you do not configure this policy setting, Group Policy will wait five minutes
 
 <!-- LogonScriptDelay-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1774,6 +2207,127 @@ If you do not configure this policy setting, Group Policy will wait five minutes
 <!-- LogonScriptDelay-Examples-End -->
 
 <!-- LogonScriptDelay-End -->
+
+<!-- NewGPODisplayName-Begin -->
+## NewGPODisplayName
+
+<!-- NewGPODisplayName-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NewGPODisplayName-Applicability-End -->
+
+<!-- NewGPODisplayName-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/NewGPODisplayName
+```
+<!-- NewGPODisplayName-OmaUri-End -->
+
+<!-- NewGPODisplayName-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to set the default display name for new Group Policy objects.
+
+This setting allows you to specify the default name for new Group Policy objects created from policy compliant Group Policy Management tools including the Group Policy tab in Active Directory tools and the GPO browser.
+
+The display name can contain environment variables and can be a maximum of 255 characters long.
+
+- If this setting is disabled or Not Configured, the default display name of New Group Policy object is used.
+<!-- NewGPODisplayName-Description-End -->
+
+<!-- NewGPODisplayName-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NewGPODisplayName-Editable-End -->
+
+<!-- NewGPODisplayName-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NewGPODisplayName-DFProperties-End -->
+
+<!-- NewGPODisplayName-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NewGPODisplayName |
+| Friendly Name | Set default name for new Group Policy objects |
+| Location | User Configuration |
+| Path | System > Group Policy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Group Policy Editor |
+| ADMX File Name | GroupPolicy.admx |
+<!-- NewGPODisplayName-AdmxBacked-End -->
+
+<!-- NewGPODisplayName-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NewGPODisplayName-Examples-End -->
+
+<!-- NewGPODisplayName-End -->
+
+<!-- NewGPOLinksDisabled-Begin -->
+## NewGPOLinksDisabled
+
+<!-- NewGPOLinksDisabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NewGPOLinksDisabled-Applicability-End -->
+
+<!-- NewGPOLinksDisabled-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/NewGPOLinksDisabled
+```
+<!-- NewGPOLinksDisabled-OmaUri-End -->
+
+<!-- NewGPOLinksDisabled-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to create new Group Policy object links in the disabled state.
+
+- If you enable this setting, you can create all new Group Policy object links in the disabled state by default. After you configure and test the new object links by using a policy compliant Group Policy management tool such as Active Directory Users and Computers or Active Directory Sites and Services, you can enable the object links for use on the system.
+
+- If you disable this setting or do not configure it, new Group Policy object links are created in the enabled state. If you do not want them to be effective until they are configured and tested, you must disable the object link.
+<!-- NewGPOLinksDisabled-Description-End -->
+
+<!-- NewGPOLinksDisabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NewGPOLinksDisabled-Editable-End -->
+
+<!-- NewGPOLinksDisabled-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NewGPOLinksDisabled-DFProperties-End -->
+
+<!-- NewGPOLinksDisabled-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NewGPOLinksDisabled |
+| Friendly Name | Create new Group Policy Object links disabled by default |
+| Location | User Configuration |
+| Path | System > Group Policy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Group Policy Editor |
+| Registry Value Name | NewGPOLinksDisabled |
+| ADMX File Name | GroupPolicy.admx |
+<!-- NewGPOLinksDisabled-AdmxBacked-End -->
+
+<!-- NewGPOLinksDisabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NewGPOLinksDisabled-Examples-End -->
+
+<!-- NewGPOLinksDisabled-End -->
 
 <!-- OnlyUseLocalAdminFiles-Begin -->
 ## OnlyUseLocalAdminFiles
@@ -1804,15 +2358,16 @@ This leads to the following behavior:
 
 You can change this behavior by using this setting.
 
-If you enable this setting, the Group Policy Object Editor snap-in always uses local ADM files in your %windir%\inf directory when editing GPOs.
+- If you enable this setting, the Group Policy Object Editor snap-in always uses local ADM files in your %windir%\inf directory when editing GPOs.
 
 This leads to the following behavior:
 
 - If you had originally created the GPO with an English system, and then you edit the GPO with a Japanese system, the Group Policy Object Editor snap-in uses the local Japanese ADM files, and you see the text in Japanese under Administrative Templates.
 
-If you disable or do not configure this setting, the Group Policy Object Editor snap-in always loads all ADM files from the actual GPO.
+- If you disable or do not configure this setting, the Group Policy Object Editor snap-in always loads all ADM files from the actual GPO.
 
-Note: If the ADMs that you require are not all available locally in your %windir%\inf directory, you might not be able to see all the settings that have been configured in the GPO that you are editing.
+> [!NOTE]
+> If the ADMs that you require are not all available locally in your %windir%\inf directory, you might not be able to see all the settings that have been configured in the GPO that you are editing.
 <!-- OnlyUseLocalAdminFiles-Description-End -->
 
 <!-- OnlyUseLocalAdminFiles-Editable-Begin -->
@@ -1830,7 +2385,7 @@ Note: If the ADMs that you require are not all available locally in your %windir
 
 <!-- OnlyUseLocalAdminFiles-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1911,13 +2466,13 @@ Setting flags not specified here to any value other than ? results in undefined 
 
 <!-- ProcessMitigationOptions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | ProcessMitigationOptions_List |
+| Name | ProcessMitigationOptions |
 | Friendly Name | Process Mitigation Options |
 | Location | Computer and User Configuration |
 | Path | System > Mitigation Options |
@@ -1966,7 +2521,7 @@ Enabling this setting will cause the Group Policy Client to connect to the same 
 
 <!-- ResetDfsClientInfoDuringRefreshPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2008,11 +2563,12 @@ This setting allows you to enable or disable Resultant Set of Policy (RSoP) logg
 
 RSoP logs information on Group Policy settings that have been applied to the client. This information includes details such as which Group Policy Objects (GPO) were applied, where they came from, and the client-side extension settings that were included.
 
-If you enable this setting, RSoP logging is turned off.
+- If you enable this setting, RSoP logging is turned off.
 
-If you disable or do not configure this setting, RSoP logging is turned on. By default, RSoP logging is always on.
+- If you disable or do not configure this setting, RSoP logging is turned on. By default, RSoP logging is always on.
 
-Note: To view the RSoP information logged on a client computer, you can use the RSoP snap-in in the Microsoft Management Console (MMC).
+> [!NOTE]
+> To view the RSoP information logged on a client computer, you can use the RSoP snap-in in the Microsoft Management Console (MMC).
 <!-- RSoPLogging-Description-End -->
 
 <!-- RSoPLogging-Editable-Begin -->
@@ -2030,7 +2586,7 @@ Note: To view the RSoP information logged on a client computer, you can use the 
 
 <!-- RSoPLogging-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2072,11 +2628,12 @@ This policy setting allows an administrator to define the Direct Access connecti
 
 When Group Policy detects the bandwidth speed of a Direct Access connection, the detection can sometimes fail to provide any bandwidth speed information. If Group Policy detects a bandwidth speed, Group Policy will follow the normal rules for evaluating if the Direct Access connection is a fast or slow network connection. If no bandwidth speed is detected, Group Policy will default to a slow network connection. This policy setting allows the administrator the option to override the default to slow network connection and instead default to using a fast network connection in the case that no network bandwidth speed is determined.
 
-Note: When Group Policy detects a slow network connection, Group Policy will only process those client side extensions configured for processing across a slow link (slow network connection).
+> [!NOTE]
+> When Group Policy detects a slow network connection, Group Policy will only process those client side extensions configured for processing across a slow link (slow network connection).
 
-If you enable this policy, when Group Policy cannot determine the bandwidth speed across Direct Access, Group Policy will evaluate the network connection as a fast link and process all client side extensions.
+- If you enable this policy, when Group Policy cannot determine the bandwidth speed across Direct Access, Group Policy will evaluate the network connection as a fast link and process all client side extensions.
 
-If you disable this setting or do not configure it, Group Policy will evaluate the network connection as a slow link and process only those client side extensions configured to process over a slow link.
+- If you disable this setting or do not configure it, Group Policy will evaluate the network connection as a slow link and process only those client side extensions configured to process over a slow link.
 <!-- SlowLinkDefaultForDirectAccess-Description-End -->
 
 <!-- SlowLinkDefaultForDirectAccess-Editable-Begin -->
@@ -2094,7 +2651,7 @@ If you disable this setting or do not configure it, Group Policy will evaluate t
 
 <!-- SlowLinkDefaultForDirectAccess-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2134,17 +2691,19 @@ If you disable this setting or do not configure it, Group Policy will evaluate t
 <!-- Description-Source-ADMX -->
 This policy directs Group Policy processing to skip processing any client side extension that requires synchronous processing (that is, whether computers wait for the network to be fully initialized during computer startup and user logon) when a slow network connection is detected.
 
-If you enable this policy setting, when a slow network connection is detected, Group Policy processing will always run in an asynchronous manner.
+- If you enable this policy setting, when a slow network connection is detected, Group Policy processing will always run in an asynchronous manner.
 Client computers will not wait for the network to be fully initialized at startup and logon. Existing users will be logged on using cached credentials,
 which will result in shorter logon times. Group Policy will be applied in the background after the network becomes available.
-Note that because this is a background refresh, extensions requiring synchronous processing such as Software Installation, Folder Redirection
+> [!NOTE]
+> that because this is a background refresh, extensions requiring synchronous processing such as Software Installation, Folder Redirection
 and Drive Maps preference extension will not be applied.
 
-Note: There are two conditions that will cause Group Policy to be processed synchronously even if this policy setting is enabled:
+> [!NOTE]
+> There are two conditions that will cause Group Policy to be processed synchronously even if this policy setting is enabled:
 1 - At the first computer startup after the client computer has joined the domain.
 2 - If the policy setting "Always wait for the network at computer startup and logon" is enabled.
 
-If you disable or do not configure this policy setting, detecting a slow network connection will not affect whether Group Policy processing will be synchronous or asynchronous.
+- If you disable or do not configure this policy setting, detecting a slow network connection will not affect whether Group Policy processing will be synchronous or asynchronous.
 <!-- SlowlinkDefaultToAsync-Description-End -->
 
 <!-- SlowlinkDefaultToAsync-Editable-Begin -->
@@ -2162,7 +2721,7 @@ If you disable or do not configure this policy setting, detecting a slow network
 
 <!-- SlowlinkDefaultToAsync-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2202,9 +2761,9 @@ If you disable or do not configure this policy setting, detecting a slow network
 <!-- Description-Source-ADMX -->
 This policy setting specifies how long Group Policy should wait for network availability notifications during startup policy processing. If the startup policy processing is synchronous, the computer is blocked until the network is available or the default wait time is reached. If the startup policy processing is asynchronous, the computer is not blocked and policy processing will occur in the background. In either case, configuring this policy setting overrides any system-computed wait times.
 
-If you enable this policy setting, Group Policy will use this administratively configured maximum wait time and override any default or system-computed wait time.
+- If you enable this policy setting, Group Policy will use this administratively configured maximum wait time and override any default or system-computed wait time.
 
-If you disable or do not configure this policy setting, Group Policy will use the default wait time of 30 seconds on computers running Windows Vista operating system.
+- If you disable or do not configure this policy setting, Group Policy will use the default wait time of 30 seconds on computers running Windows Vista operating system.
 <!-- SyncWaitTime-Description-End -->
 
 <!-- SyncWaitTime-Editable-Begin -->
@@ -2222,7 +2781,7 @@ If you disable or do not configure this policy setting, Group Policy will use th
 
 <!-- SyncWaitTime-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2261,17 +2820,19 @@ If you disable or do not configure this policy setting, Group Policy will use th
 <!-- Description-Source-ADMX -->
 This policy setting directs the system to apply the set of Group Policy objects for the computer to any user who logs on to a computer affected by this setting. It is intended for special-use computers, such as those in public places, laboratories, and classrooms, where you must modify the user setting based on the computer that is being used.
 
-By default, the user's Group Policy Objects determine which user settings apply. If this setting is enabled, then, when a user logs on to this computer, the computer's Group Policy Objects determine which set of Group Policy Objects applies.
+By default, the user's Group Policy Objects determine which user settings apply.
+- If this setting is enabled, then, when a user logs on to this computer, the computer's Group Policy Objects determine which set of Group Policy Objects applies.
 
-If you enable this setting, you can select one of the following modes from the Mode box:
+- If you enable this setting, you can select one of the following modes from the Mode box:
 
 "Replace" indicates that the user settings defined in the computer's Group Policy Objects replace the user settings normally applied to the user.
 
 "Merge" indicates that the user settings defined in the computer's Group Policy Objects and the user settings normally applied to the user are combined. If the settings conflict, the user settings in the computer's Group Policy Objects take precedence over the user's normal settings.
 
-If you disable this setting or do not configure it, the user's Group Policy Objects determines which user settings apply.
+- If you disable this setting or do not configure it, the user's Group Policy Objects determines which user settings apply.
 
-Note: This setting is effective only when both the computer account and the user account are in at least Windows 2000 domains.
+> [!NOTE]
+> This setting is effective only when both the computer account and the user account are in at least Windows 2000 domains.
 <!-- UserPolicyMode-Description-End -->
 
 <!-- UserPolicyMode-Editable-Begin -->
@@ -2289,7 +2850,7 @@ Note: This setting is effective only when both the computer account and the user
 
 <!-- UserPolicyMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -2308,534 +2869,6 @@ Note: This setting is effective only when both the computer account and the user
 <!-- UserPolicyMode-Examples-End -->
 
 <!-- UserPolicyMode-End -->
-
-<!-- DenyRsopToInteractiveUser_1-Begin -->
-## DenyRsopToInteractiveUser_1
-
-<!-- DenyRsopToInteractiveUser_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- DenyRsopToInteractiveUser_1-Applicability-End -->
-
-<!-- DenyRsopToInteractiveUser_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/DenyRsopToInteractiveUser_1
-```
-<!-- DenyRsopToInteractiveUser_1-OmaUri-End -->
-
-<!-- DenyRsopToInteractiveUser_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting controls the ability of users to view their Resultant Set of Policy (RSoP) data.
-
-By default, interactively logged on users can view their own Resultant Set of Policy (RSoP) data.
-
-If you enable this policy setting, interactive users cannot generate RSoP data.
-
-If you disable or do not configure this policy setting, interactive users can generate RSoP.
-
-Note: This policy setting does not affect administrators. If you enable or disable this policy setting, by default administrators can view RSoP data.
-
-Note: To view RSoP data on a client computer, use the RSoP snap-in for the Microsoft Management Console. You can launch the RSoP snap-in from the command line by typing RSOP.msc
-
-Note: This policy setting exists as both a User Configuration and Computer Configuration setting.
-
-Also, see the "Turn off Resultant set of Policy logging" policy setting in Computer Configuration\Administrative Templates\System\GroupPolicy.
-<!-- DenyRsopToInteractiveUser_1-Description-End -->
-
-<!-- DenyRsopToInteractiveUser_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- DenyRsopToInteractiveUser_1-Editable-End -->
-
-<!-- DenyRsopToInteractiveUser_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- DenyRsopToInteractiveUser_1-DFProperties-End -->
-
-<!-- DenyRsopToInteractiveUser_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | DenyRsopToInteractiveUser |
-| Friendly Name | Determine if interactive users can generate Resultant Set of Policy data |
-| Location | User Configuration |
-| Path | System > Group Policy |
-| Registry Key Name | Software\Policies\Microsoft\Windows\System |
-| Registry Value Name | DenyRsopToInteractiveUser |
-| ADMX File Name | GroupPolicy.admx |
-<!-- DenyRsopToInteractiveUser_1-AdmxBacked-End -->
-
-<!-- DenyRsopToInteractiveUser_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DenyRsopToInteractiveUser_1-Examples-End -->
-
-<!-- DenyRsopToInteractiveUser_1-End -->
-
-<!-- DisableAutoADMUpdate-Begin -->
-## DisableAutoADMUpdate
-
-<!-- DisableAutoADMUpdate-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- DisableAutoADMUpdate-Applicability-End -->
-
-<!-- DisableAutoADMUpdate-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/DisableAutoADMUpdate
-```
-<!-- DisableAutoADMUpdate-OmaUri-End -->
-
-<!-- DisableAutoADMUpdate-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Prevents the system from updating the Administrative Templates source files automatically when you open the Group Policy Object Editor. Administrators might want to use this if they are concerned about the amount of space used on the system volume of a DC.
-
-By default, when you start the Group Policy Object Editor, a timestamp comparison is performed on the source files in the local %SYSTEMROOT%\inf directory and the source files stored in the GPO. If the local files are newer, they are copied into the GPO.
-
-Changing the status of this setting to Enabled will keep any source files from copying to the GPO.
-
-Changing the status of this setting to Disabled will enforce the default behavior. Files will always be copied to the GPO if they have a later timestamp.
-
-NOTE: If the Computer Configuration policy setting, "Always use local ADM files for the Group Policy Object Editor" is enabled, the state of this setting is ignored and always treated as Enabled.
-<!-- DisableAutoADMUpdate-Description-End -->
-
-<!-- DisableAutoADMUpdate-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- DisableAutoADMUpdate-Editable-End -->
-
-<!-- DisableAutoADMUpdate-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- DisableAutoADMUpdate-DFProperties-End -->
-
-<!-- DisableAutoADMUpdate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | DisableAutoADMUpdate |
-| Friendly Name | Turn off automatic update of ADM files |
-| Location | User Configuration |
-| Path | System > Group Policy |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Group Policy Editor |
-| Registry Value Name | DisableAutoADMUpdate |
-| ADMX File Name | GroupPolicy.admx |
-<!-- DisableAutoADMUpdate-AdmxBacked-End -->
-
-<!-- DisableAutoADMUpdate-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DisableAutoADMUpdate-Examples-End -->
-
-<!-- DisableAutoADMUpdate-End -->
-
-<!-- EnforcePoliciesOnly-Begin -->
-## EnforcePoliciesOnly
-
-<!-- EnforcePoliciesOnly-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- EnforcePoliciesOnly-Applicability-End -->
-
-<!-- EnforcePoliciesOnly-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/EnforcePoliciesOnly
-```
-<!-- EnforcePoliciesOnly-OmaUri-End -->
-
-<!-- EnforcePoliciesOnly-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting prevents administrators from viewing or using Group Policy preferences.
-
-A Group Policy administration (.adm) file can contain both true settings and preferences. True settings, which are fully supported by Group Policy, must use registry entries in the Software\Policies or Software\Microsoft\Windows\CurrentVersion\Policies registry subkeys. Preferences, which are not fully supported, use registry entries in other subkeys.
-
-If you enable this policy setting, the "Show Policies Only" command is turned on, and administrators cannot turn it off. As a result, Group Policy Object Editor displays only true settings; preferences do not appear.
-
-If you disable or do not configure this policy setting, the "Show Policies Only" command is turned on by default, but administrators can view preferences by turning off the "Show Policies Only" command.
-
-Note: To find the "Show Policies Only" command, in Group Policy Object Editor, click the Administrative Templates folder (either one), right-click the same folder, and then point to "View."
-
-In Group Policy Object Editor, preferences have a red icon to distinguish them from true settings, which have a blue icon.
-<!-- EnforcePoliciesOnly-Description-End -->
-
-<!-- EnforcePoliciesOnly-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- EnforcePoliciesOnly-Editable-End -->
-
-<!-- EnforcePoliciesOnly-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- EnforcePoliciesOnly-DFProperties-End -->
-
-<!-- EnforcePoliciesOnly-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | EnforcePoliciesOnly |
-| Friendly Name | Enforce Show Policies Only |
-| Location | User Configuration |
-| Path | System > Group Policy |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Group Policy Editor |
-| Registry Value Name | ShowPoliciesOnly |
-| ADMX File Name | GroupPolicy.admx |
-<!-- EnforcePoliciesOnly-AdmxBacked-End -->
-
-<!-- EnforcePoliciesOnly-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- EnforcePoliciesOnly-Examples-End -->
-
-<!-- EnforcePoliciesOnly-End -->
-
-<!-- GPDCOptions-Begin -->
-## GPDCOptions
-
-<!-- GPDCOptions-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- GPDCOptions-Applicability-End -->
-
-<!-- GPDCOptions-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/GPDCOptions
-```
-<!-- GPDCOptions-OmaUri-End -->
-
-<!-- GPDCOptions-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting determines which domain controller the Group Policy Object Editor snap-in uses.
-
-If you enable this setting, you can which domain controller is used according to these options:
-
-"Use the Primary Domain Controller" indicates that the Group Policy Object Editor snap-in reads and writes changes to the domain controller designated as the PDC Operations Master for the domain.
-
-"Inherit from Active Directory Snap-ins" indicates that the Group Policy Object Editor snap-in reads and writes changes to the domain controller that Active Directory Users and Computers or Active Directory Sites and Services snap-ins use.
-
-"Use any available domain controller" indicates that the Group Policy Object Editor snap-in can read and write changes to any available domain controller.
-
-If you disable this setting or do not configure it, the Group Policy Object Editor snap-in uses the domain controller designated as the PDC Operations Master for the domain.
-
-Note: To change the PDC Operations Master for a domain, in Active Directory Users and Computers, right-click a domain, and then click "Operations Masters."
-<!-- GPDCOptions-Description-End -->
-
-<!-- GPDCOptions-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- GPDCOptions-Editable-End -->
-
-<!-- GPDCOptions-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- GPDCOptions-DFProperties-End -->
-
-<!-- GPDCOptions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | GPDCOptions |
-| Friendly Name | Configure Group Policy domain controller selection |
-| Location | User Configuration |
-| Path | System > Group Policy |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Group Policy Editor |
-| ADMX File Name | GroupPolicy.admx |
-<!-- GPDCOptions-AdmxBacked-End -->
-
-<!-- GPDCOptions-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- GPDCOptions-Examples-End -->
-
-<!-- GPDCOptions-End -->
-
-<!-- GPTransferRate_1-Begin -->
-## GPTransferRate_1
-
-<!-- GPTransferRate_1-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- GPTransferRate_1-Applicability-End -->
-
-<!-- GPTransferRate_1-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/GPTransferRate_1
-```
-<!-- GPTransferRate_1-OmaUri-End -->
-
-<!-- GPTransferRate_1-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting defines a slow connection for purposes of applying and updating Group Policy.
-
-If the rate at which data is transferred from the domain controller providing a policy update to the computers in this group is slower than the rate specified by this setting, the system considers the connection to be slow.
-
-The system's response to a slow policy connection varies among policies. The program implementing the policy can specify the response to a slow link. Also, the policy processing settings in this folder lets you override the programs' specified responses to slow links.
-
-If you enable this setting, you can, in the "Connection speed" box, type a decimal number between 0 and 4,294,967,200, indicating a transfer rate in kilobits per second. Any connection slower than this rate is considered to be slow. If you type 0, all connections are considered to be fast.
-
-If you disable this setting or do not configure it, the system uses the default value of 500 kilobits per second.
-
-This setting appears in the Computer Configuration and User Configuration folders. The setting in Computer Configuration defines a slow link for policies in the Computer Configuration folder. The setting in User Configuration defines a slow link for settings in the User Configuration folder.
-
-Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile.
-
-**Note**:  If the profile server has IP connectivity, the connection speed setting is used. If the profile server does not have IP connectivity, the SMB timing is used.
-<!-- GPTransferRate_1-Description-End -->
-
-<!-- GPTransferRate_1-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- GPTransferRate_1-Editable-End -->
-
-<!-- GPTransferRate_1-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- GPTransferRate_1-DFProperties-End -->
-
-<!-- GPTransferRate_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | GPTransferRate |
-| Friendly Name | Configure Group Policy slow link detection |
-| Location | User Configuration |
-| Path | System > Group Policy |
-| Registry Key Name | Software\Policies\Microsoft\Windows\System |
-| ADMX File Name | GroupPolicy.admx |
-<!-- GPTransferRate_1-AdmxBacked-End -->
-
-<!-- GPTransferRate_1-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- GPTransferRate_1-Examples-End -->
-
-<!-- GPTransferRate_1-End -->
-
-<!-- GroupPolicyRefreshRateUser-Begin -->
-## GroupPolicyRefreshRateUser
-
-<!-- GroupPolicyRefreshRateUser-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- GroupPolicyRefreshRateUser-Applicability-End -->
-
-<!-- GroupPolicyRefreshRateUser-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/GroupPolicyRefreshRateUser
-```
-<!-- GroupPolicyRefreshRateUser-OmaUri-End -->
-
-<!-- GroupPolicyRefreshRateUser-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting specifies how often Group Policy for users is updated while the computer is in use (in the background). This setting specifies a background update rate only for the Group Policies in the User Configuration folder.
-
-In addition to background updates, Group Policy for users is always updated when users log on.
-
-By default, user Group Policy is updated in the background every 90 minutes, with a random offset of 0 to 30 minutes.
-
-If you enable this setting, you can specify an update rate from 0 to 64,800 minutes (45 days). If you select 0 minutes, the computer tries to update user Group Policy every 7 seconds. However, because updates might interfere with users' work and increase network traffic, very short update intervals are not appropriate for most installations.
-
-If you disable this setting, user Group Policy is updated every 90 minutes (the default). To specify that Group Policy for users should never be updated while the computer is in use, select the "Turn off background refresh of Group Policy" setting.
-
-This setting also lets you specify how much the actual update interval varies. To prevent clients with the same update interval from requesting updates simultaneously, the system varies the update interval for each client by a random number of minutes. The number you type in the random time box sets the upper limit for the range of variance. For example, if you type 30 minutes, the system selects a variance of 0 to 30 minutes. Typing a large number establishes a broad range and makes it less likely that client requests overlap. However, updates might be delayed significantly.
-
-Important: If the "Turn off background refresh of Group Policy" setting is enabled, this setting is ignored.
-
-Note: This setting establishes the update rate for user Group Policies. To set an update rate for computer Group Policies, use the "Group Policy refresh interval for computers" setting (located in Computer Configuration\Administrative Templates\System\Group Policy).
-
-Tip: Consider notifying users that their policy is updated periodically so that they recognize the signs of a policy update. When Group Policy is updated, the Windows desktop is refreshed; it flickers briefly and closes open menus. Also, restrictions imposed by Group Policies, such as those that limit the programs a user can run, might interfere with tasks in progress.
-<!-- GroupPolicyRefreshRateUser-Description-End -->
-
-<!-- GroupPolicyRefreshRateUser-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- GroupPolicyRefreshRateUser-Editable-End -->
-
-<!-- GroupPolicyRefreshRateUser-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- GroupPolicyRefreshRateUser-DFProperties-End -->
-
-<!-- GroupPolicyRefreshRateUser-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | GroupPolicyRefreshRateUser |
-| Friendly Name | Set Group Policy refresh interval for users |
-| Location | User Configuration |
-| Path | System > Group Policy |
-| Registry Key Name | Software\Policies\Microsoft\Windows\System |
-| ADMX File Name | GroupPolicy.admx |
-<!-- GroupPolicyRefreshRateUser-AdmxBacked-End -->
-
-<!-- GroupPolicyRefreshRateUser-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- GroupPolicyRefreshRateUser-Examples-End -->
-
-<!-- GroupPolicyRefreshRateUser-End -->
-
-<!-- NewGPODisplayName-Begin -->
-## NewGPODisplayName
-
-<!-- NewGPODisplayName-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- NewGPODisplayName-Applicability-End -->
-
-<!-- NewGPODisplayName-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/NewGPODisplayName
-```
-<!-- NewGPODisplayName-OmaUri-End -->
-
-<!-- NewGPODisplayName-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to set the default display name for new Group Policy objects.
-
-This setting allows you to specify the default name for new Group Policy objects created from policy compliant Group Policy Management tools including the Group Policy tab in Active Directory tools and the GPO browser.
-
-The display name can contain environment variables and can be a maximum of 255 characters long.
-
-If this setting is Disabled or Not Configured, the default display name of New Group Policy object is used.
-<!-- NewGPODisplayName-Description-End -->
-
-<!-- NewGPODisplayName-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- NewGPODisplayName-Editable-End -->
-
-<!-- NewGPODisplayName-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- NewGPODisplayName-DFProperties-End -->
-
-<!-- NewGPODisplayName-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | NewGPODisplayName |
-| Friendly Name | Set default name for new Group Policy objects |
-| Location | User Configuration |
-| Path | System > Group Policy |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Group Policy Editor |
-| ADMX File Name | GroupPolicy.admx |
-<!-- NewGPODisplayName-AdmxBacked-End -->
-
-<!-- NewGPODisplayName-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- NewGPODisplayName-Examples-End -->
-
-<!-- NewGPODisplayName-End -->
-
-<!-- NewGPOLinksDisabled-Begin -->
-## NewGPOLinksDisabled
-
-<!-- NewGPOLinksDisabled-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- NewGPOLinksDisabled-Applicability-End -->
-
-<!-- NewGPOLinksDisabled-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_GroupPolicy/NewGPOLinksDisabled
-```
-<!-- NewGPOLinksDisabled-OmaUri-End -->
-
-<!-- NewGPOLinksDisabled-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to create new Group Policy object links in the disabled state.
-
-If you enable this setting, you can create all new Group Policy object links in the disabled state by default. After you configure and test the new object links by using a policy compliant Group Policy management tool such as Active Directory Users and Computers or Active Directory Sites and Services, you can enable the object links for use on the system.
-
-If you disable this setting or do not configure it, new Group Policy object links are created in the enabled state. If you do not want them to be effective until they are configured and tested, you must disable the object link.
-<!-- NewGPOLinksDisabled-Description-End -->
-
-<!-- NewGPOLinksDisabled-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- NewGPOLinksDisabled-Editable-End -->
-
-<!-- NewGPOLinksDisabled-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- NewGPOLinksDisabled-DFProperties-End -->
-
-<!-- NewGPOLinksDisabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | NewGPOLinksDisabled |
-| Friendly Name | Create new Group Policy Object links disabled by default |
-| Location | User Configuration |
-| Path | System > Group Policy |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Group Policy Editor |
-| Registry Value Name | NewGPOLinksDisabled |
-| ADMX File Name | GroupPolicy.admx |
-<!-- NewGPOLinksDisabled-AdmxBacked-End -->
-
-<!-- NewGPOLinksDisabled-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- NewGPOLinksDisabled-Examples-End -->
-
-<!-- NewGPOLinksDisabled-End -->
 
 <!-- ADMX_GroupPolicy-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

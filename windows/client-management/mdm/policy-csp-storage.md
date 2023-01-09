@@ -1,10 +1,10 @@
 ---
 title: Storage Policy CSP
-description: Learn more about the Storage Area in Policy CSP
+description: Learn more about the Storage Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/09/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - Storage
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -75,8 +73,8 @@ Same as Enabled.
 
 | Value | Description |
 |:--|:--|
-| 0 | Do not allow |
-| 1 (Default) | Allow |
+| 0 | Do not allow. |
+| 1 (Default) | Allow. |
 <!-- AllowDiskHealthModelUpdates-AllowedValues-End -->
 
 <!-- AllowDiskHealthModelUpdates-GpMapping-Begin -->
@@ -116,10 +114,10 @@ Same as Enabled.
 
 <!-- AllowStorageSenseGlobal-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Storage Sense can automatically clean some of the user’s files to free up disk space. By default, Storage Sense is automatically turned on when the machine runs into low disk space and is set to run whenever the machine runs into storage pressure. This cadence can be changed in Storage settings or set with the "Configure Storage Sense cadence" group policy.
+Storage Sense can automatically clean some of the user's files to free up disk space. By default, Storage Sense is automatically turned on when the machine runs into low disk space and is set to run whenever the machine runs into storage pressure. This cadence can be changed in Storage settings or set with the "Configure Storage Sense cadence" group policy.
 
 Enabled:
-Storage Sense is turned on for the machine, with the default cadence as ‘during low free disk space’. Users cannot disable Storage Sense, but they can adjust the cadence (unless you also configure the "Configure Storage Sense cadence" group policy).
+Storage Sense is turned on for the machine, with the default cadence as 'during low free disk space'. Users cannot disable Storage Sense, but they can adjust the cadence (unless you also configure the "Configure Storage Sense cadence" group policy).
 
 Disabled:
 Storage Sense is turned off the machine. Users cannot enable Storage Sense.
@@ -147,8 +145,8 @@ By default, Storage Sense is turned off until the user runs into low disk space 
 
 | Value | Description |
 |:--|:--|
-| 1 | Allow |
-| 0 (Default) | Block |
+| 1 | Allow. |
+| 0 (Default) | Block. |
 <!-- AllowStorageSenseGlobal-AllowedValues-End -->
 
 <!-- AllowStorageSenseGlobal-GpMapping-Begin -->
@@ -188,18 +186,18 @@ By default, Storage Sense is turned off until the user runs into low disk space 
 
 <!-- AllowStorageSenseTemporaryFilesCleanup-Description-Begin -->
 <!-- Description-Source-ADMX -->
-When Storage Sense runs, it can delete the user’s temporary files that are not in use.
+When Storage Sense runs, it can delete the user's temporary files that are not in use.
 
 If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
 
 Enabled:
-Storage Sense will delete the user’s temporary files that are not in use. Users cannot disable this setting in Storage settings.
+Storage Sense will delete the user's temporary files that are not in use. Users cannot disable this setting in Storage settings.
 
 Disabled:
-Storage Sense will not delete the user’s temporary files. Users cannot enable this setting in Storage settings.
+Storage Sense will not delete the user's temporary files. Users cannot enable this setting in Storage settings.
 
 Not Configured:
-By default, Storage Sense will delete the user’s temporary files. Users can configure this setting in Storage settings.
+By default, Storage Sense will delete the user's temporary files. Users can configure this setting in Storage settings.
 <!-- AllowStorageSenseTemporaryFilesCleanup-Description-End -->
 
 <!-- AllowStorageSenseTemporaryFilesCleanup-Editable-Begin -->
@@ -221,8 +219,8 @@ By default, Storage Sense will delete the user’s temporary files. Users can co
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Allow |
-| 0 | Block |
+| 1 (Default) | Allow. |
+| 0 | Block. |
 <!-- AllowStorageSenseTemporaryFilesCleanup-AllowedValues-End -->
 
 <!-- AllowStorageSenseTemporaryFilesCleanup-GpMapping-Begin -->
@@ -262,7 +260,7 @@ By default, Storage Sense will delete the user’s temporary files. Users can co
 
 <!-- ConfigStorageSenseCloudContentDehydrationThreshold-Description-Begin -->
 <!-- Description-Source-ADMX -->
-When Storage Sense runs, it can dehydrate cloud-backed content that hasn’t been opened in a certain amount of days.
+When Storage Sense runs, it can dehydrate cloud-backed content that hasn't been opened in a certain amount of days.
 
 If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
 
@@ -325,16 +323,16 @@ By default, Storage Sense will not dehydrate any cloud-backed content. Users can
 
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-Description-Begin -->
 <!-- Description-Source-ADMX -->
-When Storage Sense runs, it can delete files in the user’s Downloads folder if they haven’t been opened for more than a certain number of days.
+When Storage Sense runs, it can delete files in the user's Downloads folder if they haven't been opened for more than a certain number of days.
 
 If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
 
 Enabled:
 You must provide the minimum number of days a file can remain unopened before Storage Sense deletes it from Downloads folder. Supported values are: 0 - 365.
-If you set this value to zero, Storage Sense will not delete files in the user’s Downloads folder. The default is 0, or never deleting files in the Downloads folder.
+If you set this value to zero, Storage Sense will not delete files in the user's Downloads folder. The default is 0, or never deleting files in the Downloads folder.
 
 Disabled or Not Configured:
-By default, Storage Sense will not delete files in the user’s Downloads folder. Users can configure this setting in Storage settings.
+By default, Storage Sense will not delete files in the user's Downloads folder. Users can configure this setting in Storage settings.
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-Description-End -->
 
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-Editable-Begin -->
@@ -388,7 +386,7 @@ By default, Storage Sense will not delete files in the user’s Downloads folder
 
 <!-- ConfigStorageSenseGlobalCadence-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Storage Sense can automatically clean some of the user’s files to free up disk space.
+Storage Sense can automatically clean some of the user's files to free up disk space.
 
 If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
 
@@ -396,7 +394,7 @@ Enabled:
 You must provide the desired Storage Sense cadence. Supported options are: daily, weekly, monthly, and during low free disk space. The default is 0 (during low free disk space).
 
 Disabled or Not Configured:
-By default, the Storage Sense cadence is set to “during low free disk space”. Users can configure this setting in Storage settings.
+By default, the Storage Sense cadence is set to "during low free disk space". Users can configure this setting in Storage settings.
 <!-- ConfigStorageSenseGlobalCadence-Description-End -->
 
 <!-- ConfigStorageSenseGlobalCadence-Editable-Begin -->
@@ -408,7 +406,6 @@ Use the following integer values for the supported options:
 - `1`: Daily
 - `7`: Weekly
 - `30`: Monthly
-
 <!-- ConfigStorageSenseGlobalCadence-Editable-End -->
 
 <!-- ConfigStorageSenseGlobalCadence-DFProperties-Begin -->
@@ -458,16 +455,16 @@ Use the following integer values for the supported options:
 
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-Description-Begin -->
 <!-- Description-Source-ADMX -->
-When Storage Sense runs, it can delete files in the user’s Recycle Bin if they have been there for over a certain amount of days.
+When Storage Sense runs, it can delete files in the user's Recycle Bin if they have been there for over a certain amount of days.
 
 If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
 
 Enabled:
 You must provide the minimum age threshold (in days) of a file in the Recycle Bin before Storage Sense will delete it. Supported values are: 0 - 365.
-If you set this value to zero, Storage Sense will not delete files in the user’s Recycle Bin. The default is 30 days.
+If you set this value to zero, Storage Sense will not delete files in the user's Recycle Bin. The default is 30 days.
 
 Disabled or Not Configured:
-By default, Storage Sense will delete files in the user’s Recycle Bin that have been there for over 30 days. Users can configure this setting in Storage settings.
+By default, Storage Sense will delete files in the user's Recycle Bin that have been there for over 30 days. Users can configure this setting in Storage settings.
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-Description-End -->
 
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-Editable-Begin -->
@@ -523,9 +520,9 @@ By default, Storage Sense will delete files in the user’s Recycle Bin that hav
 <!-- Description-Source-ADMX -->
 This policy setting configures whether or not Windows will activate an Enhanced Storage device.
 
-If you enable this policy setting, Windows will not activate unactivated Enhanced Storage devices.
+- If you enable this policy setting, Windows will not activate unactivated Enhanced Storage devices.
 
-If you disable or do not configure this policy setting, Windows will activate unactivated Enhanced Storage devices.
+- If you disable or do not configure this policy setting, Windows will activate unactivated Enhanced Storage devices.
 <!-- EnhancedStorageDevices-Description-End -->
 
 <!-- EnhancedStorageDevices-Editable-Begin -->
@@ -543,7 +540,7 @@ If you disable or do not configure this policy setting, Windows will activate un
 
 <!-- EnhancedStorageDevices-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -583,11 +580,12 @@ If you disable or do not configure this policy setting, Windows will activate un
 <!-- Description-Source-ADMX -->
 This policy setting denies write access to removable disks.
 
-If you enable this policy setting, write access is denied to this removable storage class.
+- If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
 
-Note: To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives."
+> [!NOTE]
+> To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives."
 <!-- RemovableDiskDenyWriteAccess-Description-End -->
 
 <!-- RemovableDiskDenyWriteAccess-Editable-Begin -->
@@ -651,9 +649,9 @@ Note: To require that users write data to BitLocker-protected storage, enable th
 <!-- Description-Source-ADMX -->
 This policy setting denies read access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
 
-If you enable this policy setting, read access is denied to this removable storage class.
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
 <!-- WPDDevicesDenyReadAccessPerDevice-Description-End -->
 
 <!-- WPDDevicesDenyReadAccessPerDevice-Editable-Begin -->
@@ -664,13 +662,11 @@ This policy does enforcement over the following protocols that are used by most 
 - Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth.
 - Media Transfer Protocol (MTP) over USB, IP, and Bluetooth.
 - Mass Storage Class (MSC) over USB.
-
 <!-- version note from old article, which doesn't align with version applicability above
 To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46). -->
 
 >[!NOTE]
 > WPD policy isn't a reliable policy for removable storage. You can't use WPD policy to entirely block removable storage. For example, if a user inserts a USB drive to a device with a WPD policy, the policy may block PTP or MTP, but the user can still browse the drive in Windows Explorer.
-
 <!-- WPDDevicesDenyReadAccessPerDevice-Editable-End -->
 
 <!-- WPDDevicesDenyReadAccessPerDevice-DFProperties-Begin -->
@@ -684,13 +680,13 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 
 <!-- WPDDevicesDenyReadAccessPerDevice-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WPDDevices_DenyRead_Access |
+| Name | WPDDevices_DenyRead_Access_2 |
 | Friendly Name | WPD Devices: Deny read access |
 | Location | Computer Configuration |
 | Path | System > Removable Storage Access |
@@ -704,79 +700,6 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 <!-- WPDDevicesDenyReadAccessPerDevice-Examples-End -->
 
 <!-- WPDDevicesDenyReadAccessPerDevice-End -->
-
-<!-- WPDDevicesDenyWriteAccessPerDevice-Begin -->
-## WPDDevicesDenyWriteAccessPerDevice
-
-<!-- WPDDevicesDenyWriteAccessPerDevice-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- WPDDevicesDenyWriteAccessPerDevice-Applicability-End -->
-
-<!-- WPDDevicesDenyWriteAccessPerDevice-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Storage/WPDDevicesDenyWriteAccessPerDevice
-```
-<!-- WPDDevicesDenyWriteAccessPerDevice-OmaUri-End -->
-
-<!-- WPDDevicesDenyWriteAccessPerDevice-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting denies write access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
-
-If you enable this policy setting, write access is denied to this removable storage class.
-
-If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
-<!-- WPDDevicesDenyWriteAccessPerDevice-Description-End -->
-
-<!-- WPDDevicesDenyWriteAccessPerDevice-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
-This policy does enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
-
-- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth.
-- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth.
-- Mass Storage Class (MSC) over USB.
-
-<!-- version note from old article, which doesn't align with version applicability above
-To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46). -->
-
->[!NOTE]
-> WPD policy isn't a reliable policy for removable storage. You can't use WPD policy to entirely block removable storage. For example, if a user inserts a USB drive to a device with a WPD policy, the policy may block PTP or MTP, but the user can still browse the drive in Windows Explorer.
-
-<!-- WPDDevicesDenyWriteAccessPerDevice-Editable-End -->
-
-<!-- WPDDevicesDenyWriteAccessPerDevice-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- WPDDevicesDenyWriteAccessPerDevice-DFProperties-End -->
-
-<!-- WPDDevicesDenyWriteAccessPerDevice-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | WPDDevices_DenyWrite_Access |
-| Friendly Name | WPD Devices: Deny write access |
-| Location | Computer Configuration |
-| Path | System > Removable Storage Access |
-| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{6AC27878-A6FA-4155-BA85-F98F491D4F33} |
-| Registry Value Name | Deny_Write |
-| ADMX File Name | RemovableStorage.admx |
-<!-- WPDDevicesDenyWriteAccessPerDevice-AdmxBacked-End -->
-
-<!-- WPDDevicesDenyWriteAccessPerDevice-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- WPDDevicesDenyWriteAccessPerDevice-Examples-End -->
-
-<!-- WPDDevicesDenyWriteAccessPerDevice-End -->
 
 <!-- WPDDevicesDenyReadAccessPerUser-Begin -->
 ## WPDDevicesDenyReadAccessPerUser
@@ -797,9 +720,9 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 <!-- Description-Source-ADMX -->
 This policy setting denies read access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
 
-If you enable this policy setting, read access is denied to this removable storage class.
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
 <!-- WPDDevicesDenyReadAccessPerUser-Description-End -->
 
 <!-- WPDDevicesDenyReadAccessPerUser-Editable-Begin -->
@@ -810,13 +733,11 @@ This policy does enforcement over the following protocols that are used by most 
 - Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth.
 - Media Transfer Protocol (MTP) over USB, IP, and Bluetooth.
 - Mass Storage Class (MSC) over USB.
-
 <!-- version note from old article, which doesn't align with version applicability above
 To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46). -->
 
 >[!NOTE]
 > WPD policy isn't a reliable policy for removable storage. You can't use WPD policy to entirely block removable storage. For example, if a user inserts a USB drive to a device with a WPD policy, the policy may block PTP or MTP, but the user can still browse the drive in Windows Explorer.
-
 <!-- WPDDevicesDenyReadAccessPerUser-Editable-End -->
 
 <!-- WPDDevicesDenyReadAccessPerUser-DFProperties-Begin -->
@@ -830,13 +751,13 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 
 <!-- WPDDevicesDenyReadAccessPerUser-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WPDDevices_DenyRead_Access |
+| Name | WPDDevices_DenyRead_Access_1 |
 | Friendly Name | WPD Devices: Deny read access |
 | Location | User Configuration |
 | Path | System > Removable Storage Access |
@@ -850,6 +771,77 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 <!-- WPDDevicesDenyReadAccessPerUser-Examples-End -->
 
 <!-- WPDDevicesDenyReadAccessPerUser-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-Begin -->
+## WPDDevicesDenyWriteAccessPerDevice
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- WPDDevicesDenyWriteAccessPerDevice-Applicability-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Storage/WPDDevicesDenyWriteAccessPerDevice
+```
+<!-- WPDDevicesDenyWriteAccessPerDevice-OmaUri-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting denies write access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
+
+- If you enable this policy setting, write access is denied to this removable storage class.
+
+- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+<!-- WPDDevicesDenyWriteAccessPerDevice-Description-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+This policy does enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
+
+- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth.
+- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth.
+- Mass Storage Class (MSC) over USB.
+<!-- version note from old article, which doesn't align with version applicability above
+To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46). -->
+
+>[!NOTE]
+> WPD policy isn't a reliable policy for removable storage. You can't use WPD policy to entirely block removable storage. For example, if a user inserts a USB drive to a device with a WPD policy, the policy may block PTP or MTP, but the user can still browse the drive in Windows Explorer.
+<!-- WPDDevicesDenyWriteAccessPerDevice-Editable-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- WPDDevicesDenyWriteAccessPerDevice-DFProperties-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | WPDDevices_DenyWrite_Access_2 |
+| Friendly Name | WPD Devices: Deny write access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{6AC27878-A6FA-4155-BA85-F98F491D4F33} |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- WPDDevicesDenyWriteAccessPerDevice-AdmxBacked-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WPDDevicesDenyWriteAccessPerDevice-Examples-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-End -->
 
 <!-- WPDDevicesDenyWriteAccessPerUser-Begin -->
 ## WPDDevicesDenyWriteAccessPerUser
@@ -870,9 +862,9 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 <!-- Description-Source-ADMX -->
 This policy setting denies write access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
 
-If you enable this policy setting, write access is denied to this removable storage class.
+- If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
 <!-- WPDDevicesDenyWriteAccessPerUser-Description-End -->
 
 <!-- WPDDevicesDenyWriteAccessPerUser-Editable-Begin -->
@@ -883,13 +875,11 @@ This policy does enforcement over the following protocols that are used by most 
 - Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth.
 - Media Transfer Protocol (MTP) over USB, IP, and Bluetooth.
 - Mass Storage Class (MSC) over USB.
-
 <!-- version note from old article, which doesn't align with version applicability above
 To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46). -->
 
 >[!NOTE]
 > WPD policy isn't a reliable policy for removable storage. You can't use WPD policy to entirely block removable storage. For example, if a user inserts a USB drive to a device with a WPD policy, the policy may block PTP or MTP, but the user can still browse the drive in Windows Explorer.
-
 <!-- WPDDevicesDenyWriteAccessPerUser-Editable-End -->
 
 <!-- WPDDevicesDenyWriteAccessPerUser-DFProperties-Begin -->
@@ -903,13 +893,13 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 
 <!-- WPDDevicesDenyWriteAccessPerUser-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WPDDevices_DenyWrite_Access |
+| Name | WPDDevices_DenyWrite_Access_1 |
 | Friendly Name | WPD Devices: Deny write access |
 | Location | User Configuration |
 | Path | System > Removable Storage Access |

@@ -1,10 +1,10 @@
 ---
 title: ErrorReporting Policy CSP
-description: Learn more about the ErrorReporting Area in Policy CSP
+description: Learn more about the ErrorReporting Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/29/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ErrorReporting
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,7 +44,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting determines the consent behavior of Windows Error Reporting for specific event types.
 
-If you enable this policy setting, you can add specific event types to a list by clicking Show, and typing event types in the Value Name column of the Show Contents dialog box. Event types are those for generic, non-fatal errors: crash, no response, and kernel fault errors. For each specified event type, you can set a consent level of 0, 1, 2, 3, or 4.
+- If you enable this policy setting, you can add specific event types to a list by clicking Show, and typing event types in the Value Name column of the Show Contents dialog box. Event types are those for generic, non-fatal errors: crash, no response, and kernel fault errors. For each specified event type, you can set a consent level of 0, 1, 2, 3, or 4.
 
 - 0 (Disable): Windows Error Reporting sends no data to Microsoft for this event type.
 
@@ -58,7 +56,7 @@ If you enable this policy setting, you can add specific event types to a list by
 
 - 4 (Send all data): Any data requested by Microsoft is sent automatically.
 
-If you disable or do not configure this policy setting, then the default consent settings that are applied are those specified by the user in Control Panel, or in the Configure Default Consent policy setting.
+- If you disable or do not configure this policy setting, then the default consent settings that are applied are those specified by the user in Control Panel, or in the Configure Default Consent policy setting.
 <!-- CustomizeConsentSettings-Description-End -->
 
 <!-- CustomizeConsentSettings-Editable-Begin -->
@@ -76,13 +74,13 @@ If you disable or do not configure this policy setting, then the default consent
 
 <!-- CustomizeConsentSettings-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WerConsentCustomize |
+| Name | WerConsentCustomize_2 |
 | Friendly Name | Customize consent settings |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Error Reporting > Consent |
@@ -115,9 +113,9 @@ If you disable or do not configure this policy setting, then the default consent
 <!-- Description-Source-ADMX -->
 This policy setting turns off Windows Error Reporting, so that reports are not collected or sent to either Microsoft or internal servers within your organization when software unexpectedly stops working or fails.
 
-If you enable this policy setting, Windows Error Reporting does not send any problem information to Microsoft. Additionally, solution information is not available in Security and Maintenance in Control Panel.
+- If you enable this policy setting, Windows Error Reporting does not send any problem information to Microsoft. Additionally, solution information is not available in Security and Maintenance in Control Panel.
 
-If you disable or do not configure this policy setting, the Turn off Windows Error Reporting policy setting in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings takes precedence. If Turn off Windows Error Reporting is also either disabled or not configured, user settings in Control Panel for Windows Error Reporting are applied.
+- If you disable or do not configure this policy setting, the Turn off Windows Error Reporting policy setting in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings takes precedence. If Turn off Windows Error Reporting is also either disabled or not configured, user settings in Control Panel for Windows Error Reporting are applied.
 <!-- DisableWindowsErrorReporting-Description-End -->
 
 <!-- DisableWindowsErrorReporting-Editable-Begin -->
@@ -135,13 +133,13 @@ If you disable or do not configure this policy setting, the Turn off Windows Err
 
 <!-- DisableWindowsErrorReporting-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WerDisable |
+| Name | WerDisable_2 |
 | Friendly Name | Disable Windows Error Reporting |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Error Reporting |
@@ -175,11 +173,11 @@ If you disable or do not configure this policy setting, the Turn off Windows Err
 <!-- Description-Source-ADMX -->
 This policy setting controls whether users are shown an error dialog box that lets them report an error.
 
-If you enable this policy setting, users are notified in a dialog box that an error has occurred, and can display more details about the error. If the Configure Error Reporting policy setting is also enabled, the user can also report the error.
+- If you enable this policy setting, users are notified in a dialog box that an error has occurred, and can display more details about the error. If the Configure Error Reporting policy setting is also enabled, the user can also report the error.
 
-If you disable this policy setting, users are not notified that errors have occurred. If the Configure Error Reporting policy setting is also enabled, errors are reported, but users receive no notification. Disabling this policy setting is useful for servers that do not have interactive users.
+- If you disable this policy setting, users are not notified that errors have occurred. If the Configure Error Reporting policy setting is also enabled, errors are reported, but users receive no notification. Disabling this policy setting is useful for servers that do not have interactive users.
 
-If you do not configure this policy setting, users can change this setting in Control Panel, which is set to enable notification by default on computers that are running Windows XP Personal Edition and Windows XP Professional Edition, and disable notification by default on computers that are running Windows Server.
+- If you do not configure this policy setting, users can change this setting in Control Panel, which is set to enable notification by default on computers that are running Windows XP Personal Edition and Windows XP Professional Edition, and disable notification by default on computers that are running Windows Server.
 
 See also the Configure Error Reporting policy setting.
 <!-- DisplayErrorNotification-Description-End -->
@@ -199,7 +197,7 @@ See also the Configure Error Reporting policy setting.
 
 <!-- DisplayErrorNotification-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -239,9 +237,9 @@ See also the Configure Error Reporting policy setting.
 <!-- Description-Source-ADMX -->
 This policy setting controls whether additional data in support of error reports can be sent to Microsoft automatically.
 
-If you enable this policy setting, any additional data requests from Microsoft in response to a Windows Error Reporting report are automatically declined, without notification to the user.
+- If you enable this policy setting, any additional data requests from Microsoft in response to a Windows Error Reporting report are automatically declined, without notification to the user.
 
-If you disable or do not configure this policy setting, then consent policy settings in Computer Configuration/Administrative Templates/Windows Components/Windows Error Reporting/Consent take precedence.
+- If you disable or do not configure this policy setting, then consent policy settings in Computer Configuration/Administrative Templates/Windows Components/Windows Error Reporting/Consent take precedence.
 <!-- DoNotSendAdditionalData-Description-End -->
 
 <!-- DoNotSendAdditionalData-Editable-Begin -->
@@ -259,13 +257,13 @@ If you disable or do not configure this policy setting, then consent policy sett
 
 <!-- DoNotSendAdditionalData-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WerNoSecondLevelData |
+| Name | WerNoSecondLevelData_2 |
 | Friendly Name | Do not send additional data |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Error Reporting |
@@ -299,9 +297,9 @@ If you disable or do not configure this policy setting, then consent policy sett
 <!-- Description-Source-ADMX -->
 This policy setting prevents the display of the user interface for critical errors.
 
-If you enable or do not configure this policy setting, Windows Error Reporting does not display any GUI-based error messages or dialog boxes for critical errors.
+- If you enable or do not configure this policy setting, Windows Error Reporting does not display any GUI-based error messages or dialog boxes for critical errors.
 
-If you disable this policy setting, Windows Error Reporting displays the GUI-based error messages or dialog boxes for critical errors.
+- If you disable this policy setting, Windows Error Reporting displays the GUI-based error messages or dialog boxes for critical errors.
 <!-- PreventCriticalErrorDisplay-Description-End -->
 
 <!-- PreventCriticalErrorDisplay-Editable-Begin -->
@@ -319,7 +317,7 @@ If you disable this policy setting, Windows Error Reporting displays the GUI-bas
 
 <!-- PreventCriticalErrorDisplay-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

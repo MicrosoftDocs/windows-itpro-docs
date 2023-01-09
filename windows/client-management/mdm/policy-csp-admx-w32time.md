@@ -1,10 +1,10 @@
 ---
 title: ADMX_W32Time Policy CSP
-description: Learn more about the ADMX_W32Time Area in Policy CSP
+description: Learn more about the ADMX_W32Time Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/22/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_W32Time
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,7 +44,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify Clock discipline and General values for the Windows Time service (W32time) for domain controllers including RODCs.
 
-If this policy setting is enabled, W32time Service on target machines use the settings provided here. Otherwise, the service on target machines use locally configured settings values.
+- If this policy setting is enabled, W32time Service on target machines use the settings provided here. Otherwise, the service on target machines use locally configured settings values.
 
 For more details on individual parameters, combinations of parameter values as well as definitions of flags, see <https://go.microsoft.com/fwlink/?linkid=847809>.
 
@@ -142,7 +140,7 @@ This parameter controls the frequency at which an event that indicates the numbe
 
 <!-- W32TIME_POLICY_CONFIG-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -181,12 +179,12 @@ This parameter controls the frequency at which an event that indicates the numbe
 <!-- Description-Source-ADMX -->
 This policy setting specifies a set of parameters for controlling the Windows NTP Client.
 
-If you enable this policy setting, you can specify the following parameters for the Windows NTP Client.
+- If you enable this policy setting, you can specify the following parameters for the Windows NTP Client.
 
-If you disable or do not configure this policy setting, the WIndows NTP Client uses the defaults of each of the following parameters.
+- If you disable or do not configure this policy setting, the WIndows NTP Client uses the defaults of each of the following parameters.
 
 NtpServer
-The Domain Name System (DNS) name or IP address of an NTP time source. This value is in the form of ""dnsName,flags"" where ""flags"" is a hexadecimal bitmask of the flags for that host. For more information, see the NTP Client Group Policy Settings Associated with Windows Time section of the Windows Time Service Group Policy Settings. The default value is ""time.windows.com,0x09"".
+The Domain Name System (DNS) name or IP address of an NTP time source. This value is in the form of "dnsName,flags" where "flags" is a hexadecimal bitmask of the flags for that host. For more information, see the NTP Client Group Policy Settings Associated with Windows Time section of the Windows Time Service Group Policy Settings. The default value is "time.windows.com,0x09".
 
 Type
 This value controls the authentication that W32time uses. The default value is NT5DS.
@@ -222,7 +220,7 @@ This value is a bitmask that controls events that may be logged to the System lo
 
 <!-- W32TIME_POLICY_CONFIGURE_NTPCLIENT-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -263,9 +261,9 @@ This policy setting specifies whether the Windows NTP Client is enabled.
 
 Enabling the Windows NTP Client allows your computer to synchronize its computer clock with other NTP servers. You might want to disable this service if you decide to use a third-party time provider.
 
-If you enable this policy setting, you can set the local computer clock to synchronize time with NTP servers.
+- If you enable this policy setting, you can set the local computer clock to synchronize time with NTP servers.
 
-If you disable or do not configure this policy setting, the local computer clock does not synchronize time with NTP servers.
+- If you disable or do not configure this policy setting, the local computer clock does not synchronize time with NTP servers.
 <!-- W32TIME_POLICY_ENABLE_NTPCLIENT-Description-End -->
 
 <!-- W32TIME_POLICY_ENABLE_NTPCLIENT-Editable-Begin -->
@@ -283,7 +281,7 @@ If you disable or do not configure this policy setting, the local computer clock
 
 <!-- W32TIME_POLICY_ENABLE_NTPCLIENT-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -323,10 +321,9 @@ If you disable or do not configure this policy setting, the local computer clock
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify whether the Windows NTP Server is enabled.
 
-If you enable this policy setting for the Windows NTP Server, your computer can service NTP requests from other computers.
+- If you enable this policy setting for the Windows NTP Server, your computer can service NTP requests from other computers.
 
-
-If you disable or do not configure this policy setting, your computer cannot service NTP requests from other computers.
+- If you disable or do not configure this policy setting, your computer cannot service NTP requests from other computers.
 <!-- W32TIME_POLICY_ENABLE_NTPSERVER-Description-End -->
 
 <!-- W32TIME_POLICY_ENABLE_NTPSERVER-Editable-Begin -->
@@ -344,7 +341,7 @@ If you disable or do not configure this policy setting, your computer cannot ser
 
 <!-- W32TIME_POLICY_ENABLE_NTPSERVER-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

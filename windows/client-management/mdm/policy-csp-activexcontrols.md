@@ -1,10 +1,10 @@
 ---
 title: ActiveXControls Policy CSP
-description: Learn more about the ActiveXControls Area in Policy CSP
+description: Learn more about the ActiveXControls Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/13/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ActiveXControls
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,11 +44,12 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved Activex Install sites specified by host URL.
 
-If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL.
+- If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL.
 
-If you disable or do not configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation.
+- If you disable or do not configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation.
 
-Note: Wild card characters cannot be used when specifying the host URLs.
+> [!NOTE]
+> Wild card characters cannot be used when specifying the host URLs.
 <!-- ApprovedInstallationSites-Description-End -->
 
 <!-- ApprovedInstallationSites-Editable-Begin -->
@@ -68,7 +67,7 @@ Note: Wild card characters cannot be used when specifying the host URLs.
 
 <!-- ApprovedInstallationSites-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

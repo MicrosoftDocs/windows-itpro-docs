@@ -1,10 +1,10 @@
 ---
 title: ADMX_TerminalServer Policy CSP
-description: Learn more about the ADMX_TerminalServer Area in Policy CSP
+description: Learn more about the ADMX_TerminalServer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -174,7 +174,7 @@ A certificate is needed to authenticate an RD Session Host server when TLS 1.0, 
 
 If no certificate can be found that was created with the specified certificate template, the RD Session Host server will issue a certificate enrollment request and will use the current certificate until the request is completed. If more than one certificate is found that was created with the specified certificate template, the certificate that will expire latest and that matches the current name of the RD Session Host server will be selected.
 
-If you disable or do not configure this policy, the certificate template name is not specified at the Group Policy level. By default, a self-signed certificate is used to authenticate the RD Session Host server.
+- If you disable or do not configure this policy, the certificate template name is not specified at the Group Policy level. By default, a self-signed certificate is used to authenticate the RD Session Host server.
 
 > [!NOTE]
 > If you select a specific certificate to be used to authenticate the RD Session Host server, that certificate will take precedence over this policy setting.
@@ -863,7 +863,8 @@ By default, Remote Desktop Services automatically designates the client default 
 
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies whether the Remote Desktop Connection can use hardware acceleration if supported hardware is available. If you use this setting, the Remote Desktop Client will use only software decoding. For example, if you have a problem that you suspect may be related to hardware acceleration, use this setting to disable the acceleration; then, if the problem still occurs, you will know that there are additional issues to investigate. If you disable this setting or leave it not configured, the Remote Desktop client will use hardware accelerated decoding if supported hardware is available.
+This policy setting specifies whether the Remote Desktop Connection can use hardware acceleration if supported hardware is available. If you use this setting, the Remote Desktop Client will use only software decoding. For example, if you have a problem that you suspect may be related to hardware acceleration, use this setting to disable the acceleration; then, if the problem still occurs, you will know that there are additional issues to investigate.
+- If you disable this setting or leave it not configured, the Remote Desktop client will use hardware accelerated decoding if supported hardware is available.
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-Description-End -->
 
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-Editable-Begin -->
@@ -921,9 +922,9 @@ This policy setting specifies whether the Remote Desktop Connection can use hard
 <!-- Description-Source-ADMX -->
 Controls whether a user can save passwords using Remote Desktop Connection.
 
-If you enable this setting the credential saving checkbox in Remote Desktop Connection will be disabled and users will no longer be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves his settings, any password that previously existed in the RDP file will be deleted.
+- If you enable this setting the credential saving checkbox in Remote Desktop Connection will be disabled and users will no longer be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves his settings, any password that previously existed in the RDP file will be deleted.
 
-If you disable this setting or leave it not configured, the user will be able to save passwords using Remote Desktop Connection
+- If you disable this setting or leave it not configured, the user will be able to save passwords using Remote Desktop Connection
 <!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Description-End -->
 
 <!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Editable-Begin -->
@@ -3817,7 +3818,8 @@ Do not connect if authentication fails: The client establishes a connection to t
 
 <!-- TS_SERVER_AVC_HW_ENCODE_PREFERRED-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting lets you enable H.264/AVC hardware encoding support for Remote Desktop Connections. When you enable hardware encoding, if an error occurs, we will attempt to use software encoding. If you disable or do not configure this policy, we will always use software encoding.
+This policy setting lets you enable H.264/AVC hardware encoding support for Remote Desktop Connections. When you enable hardware encoding, if an error occurs, we will attempt to use software encoding.
+- If you disable or do not configure this policy, we will always use software encoding.
 <!-- TS_SERVER_AVC_HW_ENCODE_PREFERRED-Description-End -->
 
 <!-- TS_SERVER_AVC_HW_ENCODE_PREFERRED-Editable-Begin -->
@@ -5413,7 +5415,7 @@ UI Automation gives programs access to most UI elements, which lets you use assi
 
 Remote Desktop sessions don't currently support UI Automation redirection.
 
-If you enable or don't configure this policy setting, any UI Automation clients on your local computer can interact with remote apps. For example, you can use your local computer's Narrator and Magnifier clients to interact with UI on a web page you opened in a remote session.
+- If you enable or don't configure this policy setting, any UI Automation clients on your local computer can interact with remote apps. For example, you can use your local computer's Narrator and Magnifier clients to interact with UI on a web page you opened in a remote session.
 
 - If you disable this policy setting, UI Automation clients running on your local computer can't interact with remote apps.
 <!-- TS_UIA-Description-End -->

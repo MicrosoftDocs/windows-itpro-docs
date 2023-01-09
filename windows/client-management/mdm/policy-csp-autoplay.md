@@ -1,10 +1,10 @@
 ---
 title: Autoplay Policy CSP
-description: Learn more about the Autoplay Area in Policy CSP
+description: Learn more about the Autoplay Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/24/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - Autoplay
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -50,9 +48,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting disallows AutoPlay for MTP devices like cameras or phones.
 
-If you enable this policy setting, AutoPlay is not allowed for MTP devices like cameras or phones.
+- If you enable this policy setting, AutoPlay is not allowed for MTP devices like cameras or phones.
 
-If you disable or do not configure this policy setting, AutoPlay is enabled for non-volume devices.
+- If you disable or do not configure this policy setting, AutoPlay is enabled for non-volume devices.
 <!-- DisallowAutoplayForNonVolumeDevices-Description-End -->
 
 <!-- DisallowAutoplayForNonVolumeDevices-Editable-Begin -->
@@ -70,7 +68,7 @@ If you disable or do not configure this policy setting, AutoPlay is enabled for 
 
 <!-- DisallowAutoplayForNonVolumeDevices-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -120,12 +118,12 @@ Prior to Windows Vista, when media containing an autorun command is inserted, th
 
 This creates a major security concern as code may be executed without user's knowledge. The default behavior starting with Windows Vista is to prompt the user whether autorun command is to be run. The autorun command is represented as a handler in the Autoplay dialog.
 
-If you enable this policy setting, an Administrator can change the default Windows Vista or later behavior for autorun to:
+- If you enable this policy setting, an Administrator can change the default Windows Vista or later behavior for autorun to:
 
 a) Completely disable autorun commands, or
 b) Revert back to pre-Windows Vista behavior of automatically executing the autorun command.
 
-If you disable or not configure this policy setting, Windows Vista or later will prompt the user whether autorun command is to be run.
+- If you disable or not configure this policy setting, Windows Vista or later will prompt the user whether autorun command is to be run.
 <!-- SetDefaultAutoRunBehavior-Description-End -->
 
 <!-- SetDefaultAutoRunBehavior-Editable-Begin -->
@@ -143,7 +141,7 @@ If you disable or not configure this policy setting, Windows Vista or later will
 
 <!-- SetDefaultAutoRunBehavior-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -192,13 +190,14 @@ Prior to Windows XP SP2, Autoplay is disabled by default on removable drives, su
 
 Starting with Windows XP SP2, Autoplay is enabled for removable drives as well, including Zip drives and some USB mass storage devices.
 
-If you enable this policy setting, Autoplay is disabled on CD-ROM and removable media drives, or disabled on all drives.
+- If you enable this policy setting, Autoplay is disabled on CD-ROM and removable media drives, or disabled on all drives.
 
 This policy setting disables Autoplay on additional types of drives. You cannot use this setting to enable Autoplay on drives on which it is disabled by default.
 
-If you disable or do not configure this policy setting, AutoPlay is enabled.
+- If you disable or do not configure this policy setting, AutoPlay is enabled.
 
-Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
+> [!NOTE]
+> This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 <!-- TurnOffAutoPlay-Description-End -->
 
 <!-- TurnOffAutoPlay-Editable-Begin -->
@@ -216,7 +215,7 @@ Note: This policy setting appears in both the Computer Configuration and User Co
 
 <!-- TurnOffAutoPlay-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

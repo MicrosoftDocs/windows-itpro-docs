@@ -1,10 +1,10 @@
 ---
 title: ADMX_iSCSI Policy CSP
-description: Learn more about the ADMX_iSCSI Area in Policy CSP
+description: Learn more about the ADMX_iSCSI Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_iSCSI
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -62,7 +60,7 @@ If enabled then new iSNS servers may not be added and thus new targets discovere
 
 <!-- iSCSIDiscovery_ConfigureiSNSServers-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -118,7 +116,7 @@ If enabled then new target portals may not be added and thus new targets discove
 
 <!-- iSCSIDiscovery_ConfigureTargetPortals-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -156,9 +154,7 @@ If enabled then new target portals may not be added and thus new targets discove
 
 <!-- iSCSIDiscovery_ConfigureTargets-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If enabled then discovered targets may not be manually configured. If disabled then discovered targets may be manually configured.
-
-**Note**:  if enabled there may be cases where this will break VDS.
+If enabled then discovered targets may not be manually configured. If disabled then discovered targets may be manually configured. **Note** if enabled there may be cases where this will break VDS.
 <!-- iSCSIDiscovery_ConfigureTargets-Description-End -->
 
 <!-- iSCSIDiscovery_ConfigureTargets-Editable-Begin -->
@@ -176,7 +172,7 @@ If enabled then discovered targets may not be manually configured. If disabled t
 
 <!-- iSCSIDiscovery_ConfigureTargets-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -214,9 +210,7 @@ If enabled then discovered targets may not be manually configured. If disabled t
 
 <!-- iSCSIDiscovery_NewStaticTargets-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If enabled then new targets may not be manually configured by entering the target name and target portal; already discovered targets may be manually configured. If disabled then new and already discovered targets may be manually configured.
-
-**Note**:  if enabled there may be cases where this will break VDS.
+If enabled then new targets may not be manually configured by entering the target name and target portal; already discovered targets may be manually configured. If disabled then new and already discovered targets may be manually configured. **Note** if enabled there may be cases where this will break VDS.
 <!-- iSCSIDiscovery_NewStaticTargets-Description-End -->
 
 <!-- iSCSIDiscovery_NewStaticTargets-Editable-Begin -->
@@ -234,7 +228,7 @@ If enabled then new targets may not be manually configured by entering the targe
 
 <!-- iSCSIDiscovery_NewStaticTargets-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -290,7 +284,7 @@ If enabled then do not allow the initiator iqn name to be changed. If disabled t
 
 <!-- iSCSIGeneral_ChangeIQNName-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -346,7 +340,7 @@ If enabled then only those sessions that are established via a persistent login 
 
 <!-- iSCSIGeneral_RestrictAdditionalLogins-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -402,7 +396,7 @@ If enabled then do not allow the initiator CHAP secret to be changed. If disable
 
 <!-- iSCSISecurity_ChangeCHAPSecret-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -458,7 +452,7 @@ If enabled then only those connections that are configured for IPSec may be esta
 
 <!-- iSCSISecurity_RequireIPSec-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -514,7 +508,7 @@ If enabled then only those sessions that are configured for mutual CHAP may be e
 
 <!-- iSCSISecurity_RequireMutualCHAP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -552,9 +546,7 @@ If enabled then only those sessions that are configured for mutual CHAP may be e
 
 <!-- iSCSISecurity_RequireOneWayCHAP-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If enabled then only those sessions that are configured for one-way CHAP may be established. If disabled then sessions that are configured for one-way CHAP or sessions not configured for one-way CHAP may be established.
-
-**Note** that if the "Do not allow sessions without mutual CHAP" setting is enabled then that setting overrides this one.
+If enabled then only those sessions that are configured for one-way CHAP may be established. If disabled then sessions that are configured for one-way CHAP or sessions not configured for one-way CHAP may be established. **Note** that if the "Do not allow sessions without mutual CHAP" setting is enabled then that setting overrides this one.
 <!-- iSCSISecurity_RequireOneWayCHAP-Description-End -->
 
 <!-- iSCSISecurity_RequireOneWayCHAP-Editable-Begin -->
@@ -572,7 +564,7 @@ If enabled then only those sessions that are configured for one-way CHAP may be 
 
 <!-- iSCSISecurity_RequireOneWayCHAP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

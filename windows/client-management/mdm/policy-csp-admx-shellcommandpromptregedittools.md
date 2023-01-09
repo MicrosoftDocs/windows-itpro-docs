@@ -1,10 +1,10 @@
 ---
 title: ADMX_ShellCommandPromptRegEditTools Policy CSP
-description: Learn more about the ADMX_ShellCommandPromptRegEditTools Area in Policy CSP
+description: Learn more about the ADMX_ShellCommandPromptRegEditTools Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_ShellCommandPromptRegEditTools
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,11 +44,12 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from running the interactive command prompt, Cmd.exe. This policy setting also determines whether batch files (.cmd and .bat) can run on the computer.
 
-If you enable this policy setting and the user tries to open a command window, the system displays a message explaining that a setting prevents the action.
+- If you enable this policy setting and the user tries to open a command window, the system displays a message explaining that a setting prevents the action.
 
-If you disable this policy setting or do not configure it, users can run Cmd.exe and batch files normally.
+- If you disable this policy setting or do not configure it, users can run Cmd.exe and batch files normally.
 
-Note: Do not prevent the computer from running batch files if the computer uses logon, logoff, startup, or shutdown batch file scripts, or for users that use Remote Desktop Services.
+> [!NOTE]
+> Do not prevent the computer from running batch files if the computer uses logon, logoff, startup, or shutdown batch file scripts, or for users that use Remote Desktop Services.
 <!-- DisableCMD-Description-End -->
 
 <!-- DisableCMD-Editable-Begin -->
@@ -68,7 +67,7 @@ Note: Do not prevent the computer from running batch files if the computer uses 
 
 <!-- DisableCMD-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -107,9 +106,9 @@ Note: Do not prevent the computer from running batch files if the computer uses 
 <!-- Description-Source-ADMX -->
 Disables the Windows registry editor Regedit.exe.
 
-If you enable this policy setting and the user tries to start Regedit.exe, a message appears explaining that a policy setting prevents the action.
+- If you enable this policy setting and the user tries to start Regedit.exe, a message appears explaining that a policy setting prevents the action.
 
-If you disable this policy setting or do not configure it, users can run Regedit.exe normally.
+- If you disable this policy setting or do not configure it, users can run Regedit.exe normally.
 
 To prevent users from using other administrative tools, use the "Run only specified Windows applications" policy setting.
 <!-- DisableRegedit-Description-End -->
@@ -129,7 +128,7 @@ To prevent users from using other administrative tools, use the "Run only specif
 
 <!-- DisableRegedit-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -168,14 +167,16 @@ To prevent users from using other administrative tools, use the "Run only specif
 <!-- Description-Source-ADMX -->
 Prevents Windows from running the programs you specify in this policy setting.
 
-If you enable this policy setting, users cannot run programs that you add to the list of disallowed applications.
+- If you enable this policy setting, users cannot run programs that you add to the list of disallowed applications.
 
-If you disable this policy setting or do not configure it, users can run any programs.
+- If you disable this policy setting or do not configure it, users can run any programs.
 
 This policy setting only prevents users from running programs that are started by the File Explorer process. It does not prevent users from running programs, such as Task Manager, which are started by the system process or by other processes. Also, if users have access to the command prompt (Cmd.exe), this policy setting does not prevent them from starting programs in the command window even though they would be prevented from doing so using File Explorer.
 
-Note: Non-Microsoft applications with Windows 2000 or later certification are required to comply with this policy setting.
-Note: To create a list of allowed applications, click Show. In the Show Contents dialog box, in the Value column, type the application executable name (e.g., Winword.exe, Poledit.exe, Powerpnt.exe).
+> [!NOTE]
+> Non-Microsoft applications with Windows 2000 or later certification are required to comply with this policy setting.
+> [!NOTE]
+> To create a list of allowed applications, click Show. In the Show Contents dialog box, in the Value column, type the application executable name (e.g., Winword.exe, Poledit.exe, Powerpnt.exe).
 <!-- DisallowApps-Description-End -->
 
 <!-- DisallowApps-Editable-Begin -->
@@ -193,7 +194,7 @@ Note: To create a list of allowed applications, click Show. In the Show Contents
 
 <!-- DisallowApps-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -233,14 +234,16 @@ Note: To create a list of allowed applications, click Show. In the Show Contents
 <!-- Description-Source-ADMX -->
 Limits the Windows programs that users have permission to run on the computer.
 
-If you enable this policy setting, users can only run programs that you add to the list of allowed applications.
+- If you enable this policy setting, users can only run programs that you add to the list of allowed applications.
 
-If you disable this policy setting or do not configure it, users can run all applications.
+- If you disable this policy setting or do not configure it, users can run all applications.
 
 This policy setting only prevents users from running programs that are started by the File Explorer process. It does not prevent users from running programs such as Task Manager, which are started by the system process or by other processes. Also, if users have access to the command prompt (Cmd.exe), this policy setting does not prevent them from starting programs in the command window even though they would be prevented from doing so using File Explorer.
 
-Note: Non-Microsoft applications with Windows 2000 or later certification are required to comply with this policy setting.
-Note: To create a list of allowed applications, click Show. In the Show Contents dialog box, in the Value column, type the application executable name (e.g., Winword.exe, Poledit.exe, Powerpnt.exe).
+> [!NOTE]
+> Non-Microsoft applications with Windows 2000 or later certification are required to comply with this policy setting.
+> [!NOTE]
+> To create a list of allowed applications, click Show. In the Show Contents dialog box, in the Value column, type the application executable name (e.g., Winword.exe, Poledit.exe, Powerpnt.exe).
 <!-- RestrictApps-Description-End -->
 
 <!-- RestrictApps-Editable-Begin -->
@@ -258,7 +261,7 @@ Note: To create a list of allowed applications, click Show. In the Show Contents
 
 <!-- RestrictApps-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

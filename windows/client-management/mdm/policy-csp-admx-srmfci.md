@@ -1,6 +1,6 @@
 ---
 title: ADMX_srmfci Policy CSP
-description: Learn more about the ADMX_srmfci Area in Policy CSP
+description: Learn more about the ADMX_srmfci Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

@@ -1,10 +1,10 @@
 ---
 title: Privacy Policy CSP
-description: Learn more about the Privacy Area in Policy CSP
+description: Learn more about the Privacy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/20/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,14 +36,15 @@ ms.topic: reference
 <!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-OmaUri-End -->
 
 <!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows or disallows the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
-
-**Note**: There were issues reported with the previous release of this policy and a fix was Most restricted value is 0.
+<!-- Description-Source-Manual-Forced -->
 <!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Description-End -->
 
 <!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Allows or disallows the automatic acceptance of the pairing and privacy user consent dialog when launching apps. Most restricted value is 0.
+
+> [!NOTE]
+> There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709.
 <!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Editable-End -->
 
 <!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-DFProperties-Begin -->
@@ -89,8 +90,8 @@ Allows or disallows the automatic acceptance of the pairing and privacy user con
 <!-- AllowCrossDeviceClipboard-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Clipboard contents can be synchronized across devices.
-If you enable this policy setting, Clipboard contents are allowed to be synchronized across devices logged in under the same Microsoft account or Azure AD account.
-If you disable this policy setting, Clipboard contents cannot be shared to other devices.
+- If you enable this policy setting, Clipboard contents are allowed to be synchronized across devices logged in under the same Microsoft account or Azure AD account.
+- If you disable this policy setting, Clipboard contents cannot be shared to other devices.
 Policy change takes effect immediately.
 <!-- AllowCrossDeviceClipboard-Description-End -->
 
@@ -98,7 +99,6 @@ Policy change takes effect immediately.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 Most restrictive value is `0` to not allow cross-device clipboard.
-
 <!-- AllowCrossDeviceClipboard-Editable-End -->
 
 <!-- AllowCrossDeviceClipboard-DFProperties-Begin -->
@@ -172,7 +172,6 @@ Updated in Windows 10, version 1809.
 When enabled, users can use their voice for dictation, and talk to Cortana and other apps that use Microsoft cloud-based speech recognition. Microsoft uses voice input to help improve speech services.
 
 The most restrictive value is `0` to not allow speech services.
-
 <!-- AllowInputPersonalization-Editable-End -->
 
 <!-- AllowInputPersonalization-DFProperties-Begin -->
@@ -233,9 +232,9 @@ The most restrictive value is `0` to not allow speech services.
 <!-- Description-Source-ADMX -->
 This policy setting turns off the advertising ID, preventing apps from using the ID for experiences across apps.
 
-If you enable this policy setting, the advertising ID is turned off. Apps can't use the ID for experiences across apps.
+- If you enable this policy setting, the advertising ID is turned off. Apps can't use the ID for experiences across apps.
 
-If you disable or do not configure this policy setting, users can control whether apps can use the advertising ID for experiences across apps.
+- If you disable or do not configure this policy setting, users can control whether apps can use the advertising ID for experiences across apps.
 <!-- DisableAdvertisingId-Description-End -->
 
 <!-- DisableAdvertisingId-Editable-Begin -->
@@ -314,7 +313,6 @@ If this policy is disabled or not configured, then the privacy experience may la
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 In some managed environments, the privacy settings may be set by other policies. In this case, enable this policy to not show a screen for users to change these privacy settings.
-
 <!-- DisablePrivacyExperience-Editable-End -->
 
 <!-- DisablePrivacyExperience-DFProperties-Begin -->
@@ -374,8 +372,8 @@ In some managed environments, the privacy settings may be set by other policies.
 <!-- EnableActivityFeed-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting determines whether ActivityFeed is enabled.
-If you enable this policy setting, all activity types (as applicable) are allowed to be published and ActivityFeed shall roam these activities across device graph of the user.
-If you disable this policy setting, activities can't be published and ActivityFeed shall disable cloud sync.
+- If you enable this policy setting, all activity types (as applicable) are allowed to be published and ActivityFeed shall roam these activities across device graph of the user.
+- If you disable this policy setting, activities can't be published and ActivityFeed shall disable cloud sync.
 Policy change takes effect immediately.
 <!-- EnableActivityFeed-Description-End -->
 
@@ -446,7 +444,6 @@ This policy setting specifies whether Windows apps can access account informatio
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to account information.
-
 <!-- LetAppsAccessAccountInfo-Editable-End -->
 
 <!-- LetAppsAccessAccountInfo-DFProperties-Begin -->
@@ -670,10 +667,8 @@ This policy setting specifies whether Windows apps can access the movement of th
 
 <!-- LetAppsAccessBackgroundSpatialPerception-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 > [!NOTE]
 > Currently, this policy is supported only in [Microsoft HoloLens 2](/hololens/hololens2-hardware).
-
 <!-- LetAppsAccessBackgroundSpatialPerception-Editable-End -->
 
 <!-- LetAppsAccessBackgroundSpatialPerception-DFProperties-Begin -->
@@ -724,10 +719,8 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 > [!NOTE]
 > Currently, this policy is supported only in [Microsoft HoloLens 2](/hololens/hololens2-hardware).
-
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Editable-End -->
 
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-DFProperties-Begin -->
@@ -771,7 +764,6 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 
 > [!NOTE]
 > Currently, this policy is supported only in [Microsoft HoloLens 2](/hololens/hololens2-hardware).
-
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Editable-End -->
 
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-DFProperties-Begin -->
@@ -815,7 +807,6 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. The use
 
 > [!NOTE]
 > Currently, this policy is supported only in [Microsoft HoloLens 2](/hololens/hololens2-hardware).
-
 <!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Editable-End -->
 
 <!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-DFProperties-Begin -->
@@ -858,7 +849,6 @@ This policy setting specifies whether Windows apps can access the calendar.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to the calendar.
-
 <!-- LetAppsAccessCalendar-Editable-End -->
 
 <!-- LetAppsAccessCalendar-DFProperties-Begin -->
@@ -1084,7 +1074,6 @@ This policy setting specifies whether Windows apps can access call history.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to call history.
-
 <!-- LetAppsAccessCallHistory-Editable-End -->
 
 <!-- LetAppsAccessCallHistory-DFProperties-Begin -->
@@ -1287,7 +1276,7 @@ List of semi-colon delimited Package Family Names of Windows apps. The user is a
 <!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-End -->
 
 <!-- LetAppsAccessCamera-Begin -->
-## LetAppsAccessCameras
+## LetAppsAccessCamera
 
 <!-- LetAppsAccessCamera-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -1310,7 +1299,6 @@ This policy setting specifies whether Windows apps can access the camera.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to the camera.
-
 <!-- LetAppsAccessCamera-Editable-End -->
 
 <!-- LetAppsAccessCamera-DFProperties-Begin -->
@@ -1536,7 +1524,6 @@ This policy setting specifies whether Windows apps can access contacts.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to contacts.
-
 <!-- LetAppsAccessContacts-Editable-End -->
 
 <!-- LetAppsAccessContacts-DFProperties-Begin -->
@@ -1762,7 +1749,6 @@ This policy setting specifies whether Windows apps can access email.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to email.
-
 <!-- LetAppsAccessEmail-Editable-End -->
 
 <!-- LetAppsAccessEmail-DFProperties-Begin -->
@@ -2576,7 +2562,6 @@ This policy setting specifies whether Windows apps can access location.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to the device's location.
-
 <!-- LetAppsAccessLocation-Editable-End -->
 
 <!-- LetAppsAccessLocation-DFProperties-Begin -->
@@ -2802,7 +2787,6 @@ This policy setting specifies whether Windows apps can read or send messages (te
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to messaging.
-
 <!-- LetAppsAccessMessaging-Editable-End -->
 
 <!-- LetAppsAccessMessaging-DFProperties-Begin -->
@@ -3028,7 +3012,6 @@ This policy setting specifies whether Windows apps can access the microphone.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to the microphone.
-
 <!-- LetAppsAccessMicrophone-Editable-End -->
 
 <!-- LetAppsAccessMicrophone-DFProperties-Begin -->
@@ -3254,7 +3237,6 @@ This policy setting specifies whether Windows apps can access motion data.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to motion data.
-
 <!-- LetAppsAccessMotion-Editable-End -->
 
 <!-- LetAppsAccessMotion-DFProperties-Begin -->
@@ -3480,7 +3462,6 @@ This policy setting specifies whether Windows apps can access notifications.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to notifications.
-
 <!-- LetAppsAccessNotifications-Editable-End -->
 
 <!-- LetAppsAccessNotifications-DFProperties-Begin -->
@@ -3706,7 +3687,6 @@ This policy setting specifies whether Windows apps can make phone calls
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to make phone calls.
-
 <!-- LetAppsAccessPhone-Editable-End -->
 
 <!-- LetAppsAccessPhone-DFProperties-Begin -->
@@ -3932,7 +3912,6 @@ This policy setting specifies whether Windows apps have access to control radios
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to control radios.
-
 <!-- LetAppsAccessRadios-Editable-End -->
 
 <!-- LetAppsAccessRadios-DFProperties-Begin -->
@@ -4372,7 +4351,6 @@ This policy setting specifies whether Windows apps can access trusted devices.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access trusted devices.
-
 <!-- LetAppsAccessTrustedDevices-Editable-End -->
 
 <!-- LetAppsAccessTrustedDevices-DFProperties-Begin -->
@@ -4726,7 +4704,6 @@ This policy setting specifies whether Windows apps can get diagnostic informatio
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps access to diagnostic data.
-
 <!-- LetAppsGetDiagnosticInfo-Editable-End -->
 
 <!-- LetAppsGetDiagnosticInfo-DFProperties-Begin -->
@@ -4950,12 +4927,10 @@ This policy setting specifies whether Windows apps can run in the background.
 
 <!-- LetAppsRunInBackground-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 The most restrictive value is `2` to deny apps from running in the background.
 
 > [!WARNING]
 > Be careful when you determine which apps should have their background activity disabled. Communication apps normally update tiles and notifications through background processes. If you turn off background activity for these types of apps, it could cause text message, email, and voicemail notifications to not function. This policy could also cause background email syncing to not function properly.
-
 <!-- LetAppsRunInBackground-Editable-End -->
 
 <!-- LetAppsRunInBackground-DFProperties-Begin -->
@@ -5181,7 +5156,6 @@ This policy setting specifies whether Windows apps can communicate with unpaired
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The most restrictive value is `2` to deny apps syncing with devices.
-
 <!-- LetAppsSyncWithDevices-Editable-End -->
 
 <!-- LetAppsSyncWithDevices-DFProperties-Begin -->
@@ -5401,8 +5375,8 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- PublishUserActivities-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting determines whether User Activities can be published.
-If you enable this policy setting, activities of type User Activity are allowed to be published.
-If you disable this policy setting, activities of type User Activity are not allowed to be published.
+- If you enable this policy setting, activities of type User Activity are allowed to be published.
+- If you disable this policy setting, activities of type User Activity are not allowed to be published.
 Policy change takes effect immediately.
 <!-- PublishUserActivities-Description-End -->
 
@@ -5410,7 +5384,6 @@ Policy change takes effect immediately.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 For more information, see [Windows activity history and your privacy](https://support.microsoft.com/windows/-windows-activity-history-and-your-privacy-2b279964-44ec-8c2f-e0c2-6779b07d2cbd).
-
 <!-- PublishUserActivities-Editable-End -->
 
 <!-- PublishUserActivities-DFProperties-Begin -->
@@ -5470,8 +5443,8 @@ For more information, see [Windows activity history and your privacy](https://su
 <!-- UploadUserActivities-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting determines whether published User Activities can be uploaded.
-If you enable this policy setting, activities of type User Activity are allowed to be uploaded.
-If you disable this policy setting, activities of type User Activity are not allowed to be uploaded.
+- If you enable this policy setting, activities of type User Activity are allowed to be uploaded.
+- If you disable this policy setting, activities of type User Activity are not allowed to be uploaded.
 Deletion of activities of type User Activity are independent of this setting.
 Policy change takes effect immediately.
 <!-- UploadUserActivities-Description-End -->
@@ -5480,7 +5453,6 @@ Policy change takes effect immediately.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 For more information, see [Windows activity history and your privacy](https://support.microsoft.com/windows/-windows-activity-history-and-your-privacy-2b279964-44ec-8c2f-e0c2-6779b07d2cbd).
-
 <!-- UploadUserActivities-Editable-End -->
 
 <!-- UploadUserActivities-DFProperties-Begin -->

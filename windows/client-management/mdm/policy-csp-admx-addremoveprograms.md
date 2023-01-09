@@ -1,10 +1,10 @@
 ---
 title: ADMX_AddRemovePrograms Policy CSP
-description: Learn more about the ADMX_AddRemovePrograms Area in Policy CSP
+description: Learn more about the ADMX_AddRemovePrograms Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/13/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_AddRemovePrograms
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,15 +44,16 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Specifies the category of programs that appears when users open the "Add New Programs" page.
 
-If you enable this setting, only the programs in the category you specify are displayed when the "Add New Programs" page opens. Users can use the Category box on the "Add New Programs" page to display programs in other categories.
+- If you enable this setting, only the programs in the category you specify are displayed when the "Add New Programs" page opens. Users can use the Category box on the "Add New Programs" page to display programs in other categories.
 
 To use this setting, type the name of a category in the Category box for this setting. You must enter a category that is already defined in Add or Remove Programs. To define a category, use Software Installation.
 
-If you disable this setting or do not configure it, all programs (Category: All) are displayed when the "Add New Programs" page opens.
+- If you disable this setting or do not configure it, all programs (Category: All) are displayed when the "Add New Programs" page opens.
 
 You can use this setting to direct users to the programs they are most likely to need.
 
-Note: This setting is ignored if either the "Remove Add or Remove Programs" setting or the "Hide Add New Programs page" setting is enabled.
+> [!NOTE]
+> This setting is ignored if either the "Remove Add or Remove Programs" setting or the "Hide Add New Programs page" setting is enabled.
 <!-- DefaultCategory-Description-End -->
 
 <!-- DefaultCategory-Editable-Begin -->
@@ -72,7 +71,7 @@ Note: This setting is ignored if either the "Remove Add or Remove Programs" sett
 
 <!-- DefaultCategory-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -111,11 +110,12 @@ Note: This setting is ignored if either the "Remove Add or Remove Programs" sett
 <!-- Description-Source-ADMX -->
 Removes the "Add a program from CD-ROM or floppy disk" section from the Add New Programs page. This prevents users from using Add or Remove Programs to install programs from removable media.
 
-If you disable this setting or do not configure it, the "Add a program from CD-ROM or floppy disk" option is available to all users.
+- If you disable this setting or do not configure it, the "Add a program from CD-ROM or floppy disk" option is available to all users.
 
 This setting does not prevent users from using other tools and methods to add or remove program components.
 
-Note: If the "Hide Add New Programs page" setting is enabled, this setting is ignored. Also, if the "Prevent removable media source for any install" setting (located in User Configuration\Administrative Templates\Windows Components\Windows Installer) is enabled, users cannot add programs from removable media, regardless of this setting.
+> [!NOTE]
+> If the "Hide Add New Programs page" setting is enabled, this setting is ignored. Also, if the "Prevent removable media source for any install" setting (located in User Configuration\Administrative Templates\Windows Components\Windows Installer) is enabled, users cannot add programs from removable media, regardless of this setting.
 <!-- NoAddFromCDorFloppy-Description-End -->
 
 <!-- NoAddFromCDorFloppy-Editable-Begin -->
@@ -133,7 +133,7 @@ Note: If the "Hide Add New Programs page" setting is enabled, this setting is ig
 
 <!-- NoAddFromCDorFloppy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -173,11 +173,12 @@ Note: If the "Hide Add New Programs page" setting is enabled, this setting is ig
 <!-- Description-Source-ADMX -->
 Removes the "Add programs from Microsoft" section from the Add New Programs page. This setting prevents users from using Add or Remove Programs to connect to Windows Update.
 
-If you disable this setting or do not configure it, "Add programs from Microsoft" is available to all users.
+- If you disable this setting or do not configure it, "Add programs from Microsoft" is available to all users.
 
 This setting does not prevent users from using other tools and methods to connect to Windows Update.
 
-Note: If the "Hide Add New Programs page" setting is enabled, this setting is ignored.
+> [!NOTE]
+> If the "Hide Add New Programs page" setting is enabled, this setting is ignored.
 <!-- NoAddFromInternet-Description-End -->
 
 <!-- NoAddFromInternet-Editable-Begin -->
@@ -195,7 +196,7 @@ Note: If the "Hide Add New Programs page" setting is enabled, this setting is ig
 
 <!-- NoAddFromInternet-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -239,11 +240,12 @@ This setting removes the "Add programs from your network" section from the Add N
 
 Published programs are those programs that the system administrator has explicitly made available to the user with a tool such as Windows Installer. Typically, system administrators publish programs to notify users that the programs are available, to recommend their use, or to enable users to install them without having to search for installation files.
 
-If you enable this setting, users cannot tell which programs have been published by the system administrator, and they cannot use Add or Remove Programs to install published programs. However, they can still install programs by using other methods, and they can view and install assigned (partially installed) programs that are offered on the desktop or on the Start menu.
+- If you enable this setting, users cannot tell which programs have been published by the system administrator, and they cannot use Add or Remove Programs to install published programs. However, they can still install programs by using other methods, and they can view and install assigned (partially installed) programs that are offered on the desktop or on the Start menu.
 
-If you disable this setting or do not configure it, "Add programs from your network" is available to all users.
+- If you disable this setting or do not configure it, "Add programs from your network" is available to all users.
 
-Note: If the "Hide Add New Programs page" setting is enabled, this setting is ignored.
+> [!NOTE]
+> If the "Hide Add New Programs page" setting is enabled, this setting is ignored.
 <!-- NoAddFromNetwork-Description-End -->
 
 <!-- NoAddFromNetwork-Editable-Begin -->
@@ -261,7 +263,7 @@ Note: If the "Hide Add New Programs page" setting is enabled, this setting is ig
 
 <!-- NoAddFromNetwork-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -303,7 +305,7 @@ Removes the Add New Programs button from the Add or Remove Programs bar. As a re
 
 The Add New Programs button lets users install programs published or assigned by a system administrator.
 
-If you disable this setting or do not configure it, the Add New Programs button is available to all users.
+- If you disable this setting or do not configure it, the Add New Programs button is available to all users.
 
 This setting does not prevent users from using other tools and methods to install programs.
 <!-- NoAddPage-Description-End -->
@@ -323,7 +325,7 @@ This setting does not prevent users from using other tools and methods to instal
 
 <!-- NoAddPage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -367,7 +369,7 @@ This setting removes Add or Remove Programs from Control Panel and removes the A
 
 Add or Remove Programs lets users install, uninstall, repair, add, and remove features and components of Windows 2000 Professional and a wide variety of Windows programs. Programs published or assigned to the user appear in Add or Remove Programs.
 
-If you disable this setting or do not configure it, Add or Remove Programs is available to all users.
+- If you disable this setting or do not configure it, Add or Remove Programs is available to all users.
 
 When enabled, this setting takes precedence over the other settings in this folder.
 
@@ -389,7 +391,7 @@ This setting does not prevent users from using other tools and methods to instal
 
 <!-- NoAddRemovePrograms-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -431,7 +433,7 @@ Removes the Set Program Access and Defaults button from the Add or Remove Progra
 
 The Set Program Access and Defaults button lets administrators specify default programs for certain activities, such as Web browsing or sending e-mail, as well as which programs are accessible from the Start menu, desktop, and other locations.
 
-If you disable this setting or do not configure it, the Set Program Access and Defaults button is available to all users.
+- If you disable this setting or do not configure it, the Set Program Access and Defaults button is available to all users.
 
 This setting does not prevent users from using other tools and methods to change program access or defaults.
 
@@ -453,7 +455,7 @@ This setting does not prevent the Set Program Access and Defaults icon from appe
 
 <!-- NoChooseProgramsPage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -495,7 +497,7 @@ Removes the Change or Remove Programs button from the Add or Remove Programs bar
 
 The Change or Remove Programs button lets users uninstall, repair, add, or remove features of installed programs.
 
-If you disable this setting or do not configure it, the Change or Remove Programs page is available to all users.
+- If you disable this setting or do not configure it, the Change or Remove Programs page is available to all users.
 
 This setting does not prevent users from using other tools and methods to delete or uninstall programs.
 <!-- NoRemovePage-Description-End -->
@@ -515,7 +517,7 @@ This setting does not prevent users from using other tools and methods to delete
 
 <!-- NoRemovePage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -557,11 +559,13 @@ Prevents users from using Add or Remove Programs to configure installed services
 
 This setting removes the "Set up services" section of the Add/Remove Windows Components page. The "Set up services" section lists system services that have not been configured and offers users easy access to the configuration tools.
 
-If you disable this setting or do not configure it, "Set up services" appears only when there are unconfigured system services. If you enable this setting, "Set up services" never appears.
+- If you disable this setting or do not configure it, "Set up services" appears only when there are unconfigured system services.
+- If you enable this setting, "Set up services" never appears.
 
 This setting does not prevent users from using other methods to configure services.
 
-Note: When "Set up services" does not appear, clicking the Add/Remove Windows Components button starts the Windows Component Wizard immediately. Because the only remaining option on the Add/Remove Windows Components page starts the wizard, that option is selected automatically, and the page is bypassed.
+> [!NOTE]
+> When "Set up services" does not appear, clicking the Add/Remove Windows Components button starts the Windows Component Wizard immediately. Because the only remaining option on the Add/Remove Windows Components page starts the wizard, that option is selected automatically, and the page is bypassed.
 
 To remove "Set up services" and prevent the Windows Component Wizard from starting, enable the "Hide Add/Remove Windows Components page" setting. If the "Hide Add/Remove Windows Components page" setting is enabled, this setting is ignored.
 <!-- NoServices-Description-End -->
@@ -581,7 +585,7 @@ To remove "Set up services" and prevent the Windows Component Wizard from starti
 
 <!-- NoServices-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -623,9 +627,10 @@ Removes links to the Support Info dialog box from programs on the Change or Remo
 
 Programs listed on the Change or Remove Programs page can include a "Click here for support information" hyperlink. When clicked, the hyperlink opens a dialog box that displays troubleshooting information, including a link to the installation files and data that users need to obtain product support, such as the Product ID and version number of the program. The dialog box also includes a hyperlink to support information on the Internet, such as the Microsoft Product Support Services Web page.
 
-If you disable this setting or do not configure it, the Support Info hyperlink appears.
+- If you disable this setting or do not configure it, the Support Info hyperlink appears.
 
-Note: Not all programs provide a support information hyperlink.
+> [!NOTE]
+> Not all programs provide a support information hyperlink.
 <!-- NoSupportInfo-Description-End -->
 
 <!-- NoSupportInfo-Editable-Begin -->
@@ -643,7 +648,7 @@ Note: Not all programs provide a support information hyperlink.
 
 <!-- NoSupportInfo-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -685,7 +690,7 @@ Removes the Add/Remove Windows Components button from the Add or Remove Programs
 
 The Add/Remove Windows Components button lets users configure installed services and use the Windows Component Wizard to add, remove, and configure components of Windows from the installation files.
 
-If you disable this setting or do not configure it, the Add/Remove Windows Components button is available to all users.
+- If you disable this setting or do not configure it, the Add/Remove Windows Components button is available to all users.
 
 This setting does not prevent users from using other tools and methods to configure services or add or remove program components. However, this setting blocks user access to the Windows Component Wizard.
 <!-- NoWindowsSetupPage-Description-End -->
@@ -705,7 +710,7 @@ This setting does not prevent users from using other tools and methods to config
 
 <!-- NoWindowsSetupPage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

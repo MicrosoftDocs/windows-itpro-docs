@@ -1,10 +1,10 @@
 ---
 title: ADMX_FolderRedirection Policy CSP
-description: Learn more about the ADMX_FolderRedirection Area in Policy CSP
+description: Learn more about the ADMX_FolderRedirection Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,141 +17,13 @@ ms.topic: reference
 # Policy CSP - ADMX_FolderRedirection
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!-- ADMX_FolderRedirection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- ADMX_FolderRedirection-Editable-End -->
-
-<!-- LocalizeXPRelativePaths_2-Begin -->
-## LocalizeXPRelativePaths_2
-
-<!-- LocalizeXPRelativePaths_2-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- LocalizeXPRelativePaths_2-Applicability-End -->
-
-<!-- LocalizeXPRelativePaths_2-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_FolderRedirection/LocalizeXPRelativePaths_2
-```
-<!-- LocalizeXPRelativePaths_2-OmaUri-End -->
-
-<!-- LocalizeXPRelativePaths_2-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows the administrator to define whether Folder Redirection should use localized names for the All Programs, Startup, My Music, My Pictures, and My Videos subfolders when redirecting the parent Start Menu and legacy My Documents folder respectively.
-
-If you enable this policy setting, Windows Vista, Windows 7, Windows 8, and Windows Server 2012 will use localized folder names for these subfolders when redirecting the Start Menu or legacy My Documents folder.
-
-If you disable or not configure this policy setting, Windows Vista, Windows 7, Windows 8, and Windows Server 2012 will use the standard English names for these subfolders when redirecting the Start Menu or legacy My Documents folder.
-
-Note: This policy is valid only on Windows Vista, Windows 7, Windows 8, and Windows Server 2012 when it processes a legacy redirection policy already deployed for these folders in your existing localized environment.
-<!-- LocalizeXPRelativePaths_2-Description-End -->
-
-<!-- LocalizeXPRelativePaths_2-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- LocalizeXPRelativePaths_2-Editable-End -->
-
-<!-- LocalizeXPRelativePaths_2-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- LocalizeXPRelativePaths_2-DFProperties-End -->
-
-<!-- LocalizeXPRelativePaths_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | LocalizeXPRelativePaths |
-| Friendly Name | Use localized subfolder names when redirecting Start Menu and My Documents |
-| Location | Computer Configuration |
-| Path | System > Folder Redirection |
-| Registry Key Name | Software\Policies\Microsoft\Windows\System\Fdeploy |
-| Registry Value Name | LocalizeXPRelativePaths |
-| ADMX File Name | FolderRedirection.admx |
-<!-- LocalizeXPRelativePaths_2-AdmxBacked-End -->
-
-<!-- LocalizeXPRelativePaths_2-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- LocalizeXPRelativePaths_2-Examples-End -->
-
-<!-- LocalizeXPRelativePaths_2-End -->
-
-<!-- PrimaryComputer_FR_2-Begin -->
-## PrimaryComputer_FR_2
-
-<!-- PrimaryComputer_FR_2-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- PrimaryComputer_FR_2-Applicability-End -->
-
-<!-- PrimaryComputer_FR_2-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_FolderRedirection/PrimaryComputer_FR_2
-```
-<!-- PrimaryComputer_FR_2-OmaUri-End -->
-
-<!-- PrimaryComputer_FR_2-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting controls whether folders are redirected on a user's primary computers only. This policy setting is useful to improve logon performance and to increase security for user data on computers where the user might not want to download private data, such as on a meeting room computer or on a computer in a remote office.
-
-To designate a user's primary computers, an administrator must use management software or a script to add primary computer attributes to the user's account in Active Directory Domain Services (AD DS). This policy setting also requires the Windows Server 2012 version of the Active Directory schema to function.
-
-If you enable this policy setting and the user has redirected folders, such as the Documents and Pictures folders, the folders are redirected on the user's primary computer only.
-
-If you disable or do not configure this policy setting and the user has redirected folders, the folders are redirected on every computer that the user logs on to.
-
-Note: If you enable this policy setting in Computer Configuration and User Configuration, the Computer Configuration policy setting takes precedence.
-<!-- PrimaryComputer_FR_2-Description-End -->
-
-<!-- PrimaryComputer_FR_2-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- PrimaryComputer_FR_2-Editable-End -->
-
-<!-- PrimaryComputer_FR_2-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- PrimaryComputer_FR_2-DFProperties-End -->
-
-<!-- PrimaryComputer_FR_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | PrimaryComputerFr |
-| Friendly Name | Redirect folders on primary computers only |
-| Location | Computer Configuration |
-| Path | System > Folder Redirection |
-| Registry Key Name | Software\Policies\Microsoft\Windows\System\Fdeploy |
-| Registry Value Name | PrimaryComputerEnabledFR |
-| ADMX File Name | FolderRedirection.admx |
-<!-- PrimaryComputer_FR_2-AdmxBacked-End -->
-
-<!-- PrimaryComputer_FR_2-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- PrimaryComputer_FR_2-Examples-End -->
-
-<!-- PrimaryComputer_FR_2-End -->
 
 <!-- DisableFRAdminPin-Begin -->
 ## DisableFRAdminPin
@@ -172,15 +44,18 @@ Note: If you enable this policy setting in Computer Configuration and User Confi
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control whether all redirected shell folders, such as Contacts, Documents, Desktop, Favorites, Music, Pictures, Videos, Start Menu, and AppData\Roaming, are available offline by default.
 
-If you enable this policy setting, users must manually select the files they wish to make available offline.
+- If you enable this policy setting, users must manually select the files they wish to make available offline.
 
-If you disable or do not configure this policy setting, redirected shell folders are automatically made available offline. All subfolders within the redirected folders are also made available offline.
+- If you disable or do not configure this policy setting, redirected shell folders are automatically made available offline. All subfolders within the redirected folders are also made available offline.
 
-Note: This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching", nor does it affect the availability of the "Always available offline" menu option in the user interface.
+> [!NOTE]
+> This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching", nor does it affect the availability of the "Always available offline" menu option in the user interface.
 
-Note: Do not enable this policy setting if users will need access to their redirected files if the network or server holding the redirected files becomes unavailable.
+> [!NOTE]
+> Do not enable this policy setting if users will need access to their redirected files if the network or server holding the redirected files becomes unavailable.
 
-Note: If one or more valid folder GUIDs are specified in the policy setting "Do not automatically make specific redirected folders available offline", that setting will override the configured value of "Do not automatically make all redirected folders available offline".
+> [!NOTE]
+> If one or more valid folder GUIDs are specified in the policy setting "Do not automatically make specific redirected folders available offline", that setting will override the configured value of "Do not automatically make all redirected folders available offline".
 <!-- DisableFRAdminPin-Description-End -->
 
 <!-- DisableFRAdminPin-Editable-Begin -->
@@ -198,7 +73,7 @@ Note: If one or more valid folder GUIDs are specified in the policy setting "Do 
 
 <!-- DisableFRAdminPin-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -240,11 +115,13 @@ This policy setting allows you to control whether individual redirected shell fo
 
 For the folders affected by this setting, users must manually select the files they wish to make available offline.
 
-If you disable or do not configure this policy setting, all redirected shell folders are automatically made available offline. All subfolders within the redirected folders are also made available offline.
+- If you disable or do not configure this policy setting, all redirected shell folders are automatically made available offline. All subfolders within the redirected folders are also made available offline.
 
-Note: This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching", nor does it affect the availability of the "Always available offline" menu option in the user interface.
+> [!NOTE]
+> This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching", nor does it affect the availability of the "Always available offline" menu option in the user interface.
 
-Note: The configuration of this policy for any folder will override the configured value of "Do not automatically make all redirected folders available offline".
+> [!NOTE]
+> The configuration of this policy for any folder will override the configured value of "Do not automatically make all redirected folders available offline".
 <!-- DisableFRAdminPinByFolder-Description-End -->
 
 <!-- DisableFRAdminPinByFolder-Editable-Begin -->
@@ -262,7 +139,7 @@ Note: The configuration of this policy for any folder will override the configur
 
 <!-- DisableFRAdminPinByFolder-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -301,9 +178,9 @@ Note: The configuration of this policy for any folder will override the configur
 <!-- Description-Source-ADMX -->
 This policy setting controls whether the contents of redirected folders is copied from the old location to the new location or simply renamed in the Offline Files cache when a folder is redirected to a new location.
 
-If you enable this policy setting, when the path to a redirected folder is changed from one network location to another and Folder Redirection is configured to move the content to the new location, instead of copying the content to the new location, the cached content is renamed in the local cache and not copied to the new location. To use this policy setting, you must move or restore the server content to the new network location using a method that preserves the state of the files, including their timestamps, before updating the Folder Redirection location.
+- If you enable this policy setting, when the path to a redirected folder is changed from one network location to another and Folder Redirection is configured to move the content to the new location, instead of copying the content to the new location, the cached content is renamed in the local cache and not copied to the new location. To use this policy setting, you must move or restore the server content to the new network location using a method that preserves the state of the files, including their timestamps, before updating the Folder Redirection location.
 
-If you disable or do not configure this policy setting, when the path to a redirected folder is changed and Folder Redirection is configured to move the content to the new location, Windows copies the contents of the local cache to the new network location, then deleted the content from the old network location.
+- If you disable or do not configure this policy setting, when the path to a redirected folder is changed and Folder Redirection is configured to move the content to the new location, Windows copies the contents of the local cache to the new network location, then deleted the content from the old network location.
 <!-- FolderRedirectionEnableCacheRename-Description-End -->
 
 <!-- FolderRedirectionEnableCacheRename-Editable-Begin -->
@@ -321,7 +198,7 @@ If you disable or do not configure this policy setting, when the path to a redir
 
 <!-- FolderRedirectionEnableCacheRename-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -361,11 +238,12 @@ If you disable or do not configure this policy setting, when the path to a redir
 <!-- Description-Source-ADMX -->
 This policy setting allows the administrator to define whether Folder Redirection should use localized names for the All Programs, Startup, My Music, My Pictures, and My Videos subfolders when redirecting the parent Start Menu and legacy My Documents folder respectively.
 
-If you enable this policy setting, Windows Vista, Windows 7, Windows 8, and Windows Server 2012 will use localized folder names for these subfolders when redirecting the Start Menu or legacy My Documents folder.
+- If you enable this policy setting, Windows Vista, Windows 7, Windows 8, and Windows Server 2012 will use localized folder names for these subfolders when redirecting the Start Menu or legacy My Documents folder.
 
-If you disable or not configure this policy setting, Windows Vista, Windows 7, Windows 8, and Windows Server 2012 will use the standard English names for these subfolders when redirecting the Start Menu or legacy My Documents folder.
+- If you disable or not configure this policy setting, Windows Vista, Windows 7, Windows 8, and Windows Server 2012 will use the standard English names for these subfolders when redirecting the Start Menu or legacy My Documents folder.
 
-Note: This policy is valid only on Windows Vista, Windows 7, Windows 8, and Windows Server 2012 when it processes a legacy redirection policy already deployed for these folders in your existing localized environment.
+> [!NOTE]
+> This policy is valid only on Windows Vista, Windows 7, Windows 8, and Windows Server 2012 when it processes a legacy redirection policy already deployed for these folders in your existing localized environment.
 <!-- LocalizeXPRelativePaths_1-Description-End -->
 
 <!-- LocalizeXPRelativePaths_1-Editable-Begin -->
@@ -383,13 +261,13 @@ Note: This policy is valid only on Windows Vista, Windows 7, Windows 8, and Wind
 
 <!-- LocalizeXPRelativePaths_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | LocalizeXPRelativePaths |
+| Name | LocalizeXPRelativePaths_1 |
 | Friendly Name | Use localized subfolder names when redirecting Start Menu and My Documents |
 | Location | User Configuration |
 | Path | System > Folder Redirection |
@@ -403,6 +281,69 @@ Note: This policy is valid only on Windows Vista, Windows 7, Windows 8, and Wind
 <!-- LocalizeXPRelativePaths_1-Examples-End -->
 
 <!-- LocalizeXPRelativePaths_1-End -->
+
+<!-- LocalizeXPRelativePaths_2-Begin -->
+## LocalizeXPRelativePaths_2
+
+<!-- LocalizeXPRelativePaths_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LocalizeXPRelativePaths_2-Applicability-End -->
+
+<!-- LocalizeXPRelativePaths_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_FolderRedirection/LocalizeXPRelativePaths_2
+```
+<!-- LocalizeXPRelativePaths_2-OmaUri-End -->
+
+<!-- LocalizeXPRelativePaths_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows the administrator to define whether Folder Redirection should use localized names for the All Programs, Startup, My Music, My Pictures, and My Videos subfolders when redirecting the parent Start Menu and legacy My Documents folder respectively.
+
+- If you enable this policy setting, Windows Vista, Windows 7, Windows 8, and Windows Server 2012 will use localized folder names for these subfolders when redirecting the Start Menu or legacy My Documents folder.
+
+- If you disable or not configure this policy setting, Windows Vista, Windows 7, Windows 8, and Windows Server 2012 will use the standard English names for these subfolders when redirecting the Start Menu or legacy My Documents folder.
+
+> [!NOTE]
+> This policy is valid only on Windows Vista, Windows 7, Windows 8, and Windows Server 2012 when it processes a legacy redirection policy already deployed for these folders in your existing localized environment.
+<!-- LocalizeXPRelativePaths_2-Description-End -->
+
+<!-- LocalizeXPRelativePaths_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LocalizeXPRelativePaths_2-Editable-End -->
+
+<!-- LocalizeXPRelativePaths_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LocalizeXPRelativePaths_2-DFProperties-End -->
+
+<!-- LocalizeXPRelativePaths_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LocalizeXPRelativePaths_2 |
+| Friendly Name | Use localized subfolder names when redirecting Start Menu and My Documents |
+| Location | Computer Configuration |
+| Path | System > Folder Redirection |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System\Fdeploy |
+| Registry Value Name | LocalizeXPRelativePaths |
+| ADMX File Name | FolderRedirection.admx |
+<!-- LocalizeXPRelativePaths_2-AdmxBacked-End -->
+
+<!-- LocalizeXPRelativePaths_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LocalizeXPRelativePaths_2-Examples-End -->
+
+<!-- LocalizeXPRelativePaths_2-End -->
 
 <!-- PrimaryComputer_FR_1-Begin -->
 ## PrimaryComputer_FR_1
@@ -425,11 +366,12 @@ This policy setting controls whether folders are redirected on a user's primary 
 
 To designate a user's primary computers, an administrator must use management software or a script to add primary computer attributes to the user's account in Active Directory Domain Services (AD DS). This policy setting also requires the Windows Server 2012 version of the Active Directory schema to function.
 
-If you enable this policy setting and the user has redirected folders, such as the Documents and Pictures folders, the folders are redirected on the user's primary computer only.
+- If you enable this policy setting and the user has redirected folders, such as the Documents and Pictures folders, the folders are redirected on the user's primary computer only.
 
-If you disable or do not configure this policy setting and the user has redirected folders, the folders are redirected on every computer that the user logs on to.
+- If you disable or do not configure this policy setting and the user has redirected folders, the folders are redirected on every computer that the user logs on to.
 
-Note: If you enable this policy setting in Computer Configuration and User Configuration, the Computer Configuration policy setting takes precedence.
+> [!NOTE]
+> If you enable this policy setting in Computer Configuration and User Configuration, the Computer Configuration policy setting takes precedence.
 <!-- PrimaryComputer_FR_1-Description-End -->
 
 <!-- PrimaryComputer_FR_1-Editable-Begin -->
@@ -447,13 +389,13 @@ Note: If you enable this policy setting in Computer Configuration and User Confi
 
 <!-- PrimaryComputer_FR_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | PrimaryComputerFr |
+| Name | PrimaryComputer_FR_1 |
 | Friendly Name | Redirect folders on primary computers only |
 | Location | User Configuration |
 | Path | System > Folder Redirection |
@@ -467,6 +409,71 @@ Note: If you enable this policy setting in Computer Configuration and User Confi
 <!-- PrimaryComputer_FR_1-Examples-End -->
 
 <!-- PrimaryComputer_FR_1-End -->
+
+<!-- PrimaryComputer_FR_2-Begin -->
+## PrimaryComputer_FR_2
+
+<!-- PrimaryComputer_FR_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PrimaryComputer_FR_2-Applicability-End -->
+
+<!-- PrimaryComputer_FR_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_FolderRedirection/PrimaryComputer_FR_2
+```
+<!-- PrimaryComputer_FR_2-OmaUri-End -->
+
+<!-- PrimaryComputer_FR_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls whether folders are redirected on a user's primary computers only. This policy setting is useful to improve logon performance and to increase security for user data on computers where the user might not want to download private data, such as on a meeting room computer or on a computer in a remote office.
+
+To designate a user's primary computers, an administrator must use management software or a script to add primary computer attributes to the user's account in Active Directory Domain Services (AD DS). This policy setting also requires the Windows Server 2012 version of the Active Directory schema to function.
+
+- If you enable this policy setting and the user has redirected folders, such as the Documents and Pictures folders, the folders are redirected on the user's primary computer only.
+
+- If you disable or do not configure this policy setting and the user has redirected folders, the folders are redirected on every computer that the user logs on to.
+
+> [!NOTE]
+> If you enable this policy setting in Computer Configuration and User Configuration, the Computer Configuration policy setting takes precedence.
+<!-- PrimaryComputer_FR_2-Description-End -->
+
+<!-- PrimaryComputer_FR_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PrimaryComputer_FR_2-Editable-End -->
+
+<!-- PrimaryComputer_FR_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PrimaryComputer_FR_2-DFProperties-End -->
+
+<!-- PrimaryComputer_FR_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | PrimaryComputer_FR_2 |
+| Friendly Name | Redirect folders on primary computers only |
+| Location | Computer Configuration |
+| Path | System > Folder Redirection |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System\Fdeploy |
+| Registry Value Name | PrimaryComputerEnabledFR |
+| ADMX File Name | FolderRedirection.admx |
+<!-- PrimaryComputer_FR_2-AdmxBacked-End -->
+
+<!-- PrimaryComputer_FR_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PrimaryComputer_FR_2-Examples-End -->
+
+<!-- PrimaryComputer_FR_2-End -->
 
 <!-- ADMX_FolderRedirection-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

@@ -1,10 +1,10 @@
 ---
 title: ADMX_LeakDiagnostic Policy CSP
-description: Learn more about the ADMX_LeakDiagnostic Area in Policy CSP
+description: Learn more about the ADMX_LeakDiagnostic Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_LeakDiagnostic
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,15 +44,16 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Diagnostic Policy Service (DPS) diagnoses memory leak problems.
 
-If you enable or do not configure this policy setting, the DPS enables Windows Memory Leak Diagnosis by default.
+- If you enable or do not configure this policy setting, the DPS enables Windows Memory Leak Diagnosis by default.
 
-If you disable this policy setting, the DPS is not able to diagnose memory leak problems.
+- If you disable this policy setting, the DPS is not able to diagnose memory leak problems.
 
 This policy setting takes effect only under the following conditions:
--- If the diagnostics-wide scenario execution policy is not configured.
--- When the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios are not executed.
+- If the diagnostics-wide scenario execution policy is not configured.
+- When the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios are not executed.
 
-Note: The DPS can be configured with the Services snap-in to the Microsoft Management Console.
+> [!NOTE]
+> The DPS can be configured with the Services snap-in to the Microsoft Management Console.
 
 No operating system restart or service restart is required for this policy to take effect. Changes take effect immediately.
 <!-- WdiScenarioExecutionPolicy-Description-End -->
@@ -75,7 +74,7 @@ For Windows Server systems, this policy setting applies only if the Desktop Expe
 
 <!-- WdiScenarioExecutionPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

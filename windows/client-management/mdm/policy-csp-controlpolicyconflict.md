@@ -1,10 +1,10 @@
 ---
 title: ControlPolicyConflict Policy CSP
-description: Learn more about the ControlPolicyConflict Area in Policy CSP
+description: Learn more about the ControlPolicyConflict Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/27/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -69,7 +69,6 @@ For the list MDM-GP mapping list, see [Policies in Policy CSP supported by Group
 ](./policies-in-policy-csp-supported-by-group-policy.md).
 
 The MDM Diagnostic report shows the applied configurations states of a device including policies, certificates, configuration sources, and resource information. The report includes a list of blocked GP settings because MDM equivalent is configured, if any. To get the diagnostic report, go to **Settings** > **Accounts** > **Access work or school** > and then click the desired work or school account. Scroll to the bottom of the page to **Advanced Diagnostic Report** and then click **Create Report**.
-
 <!-- MDMWinsOverGP-Editable-End -->
 
 <!-- MDMWinsOverGP-DFProperties-Begin -->
@@ -87,7 +86,7 @@ The MDM Diagnostic report shows the applied configurations states of a device in
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) |  |
+| 0 (Default) | . |
 | 1 | The MDM policy is used and the GP policy is blocked. |
 <!-- MDMWinsOverGP-AllowedValues-End -->
 

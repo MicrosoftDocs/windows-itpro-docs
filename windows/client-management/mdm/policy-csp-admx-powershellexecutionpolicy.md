@@ -1,10 +1,10 @@
 ---
 title: ADMX_PowerShellExecutionPolicy Policy CSP
-description: Learn more about the ADMX_PowerShellExecutionPolicy Area in Policy CSP
+description: Learn more about the ADMX_PowerShellExecutionPolicy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_PowerShellExecutionPolicy
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -50,15 +48,16 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn on logging for Windows PowerShell modules.
 
-If you enable this policy setting, pipeline execution events for members of the specified modules are recorded in the Windows PowerShell log in Event Viewer. Enabling this policy setting for a module is equivalent to setting the LogPipelineExecutionDetails property of the module to True.
+- If you enable this policy setting, pipeline execution events for members of the specified modules are recorded in the Windows PowerShell log in Event Viewer. Enabling this policy setting for a module is equivalent to setting the LogPipelineExecutionDetails property of the module to True.
 
-If you disable this policy setting, logging of execution events is disabled for all Windows PowerShell modules. Disabling this policy setting for a module is equivalent to setting the LogPipelineExecutionDetails property of the module to False.
+- If you disable this policy setting, logging of execution events is disabled for all Windows PowerShell modules. Disabling this policy setting for a module is equivalent to setting the LogPipelineExecutionDetails property of the module to False.
 
-If this policy setting is not configured, the LogPipelineExecutionDetails property of a module or snap-in determines whether the execution events of a module or snap-in are logged. By default, the LogPipelineExecutionDetails property of all modules and snap-ins is set to False.
+- If this policy setting is not configured, the LogPipelineExecutionDetails property of a module or snap-in determines whether the execution events of a module or snap-in are logged. By default, the LogPipelineExecutionDetails property of all modules and snap-ins is set to False.
 
 To add modules and snap-ins to the policy setting list, click Show, and then type the module names in the list. The modules and snap-ins in the list must be installed on the computer.
 
-Note: This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.
+> [!NOTE]
+> This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.
 <!-- EnableModuleLogging-Description-End -->
 
 <!-- EnableModuleLogging-Editable-Begin -->
@@ -76,7 +75,7 @@ Note: This policy setting exists under both Computer Configuration and User Conf
 
 <!-- EnableModuleLogging-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -120,7 +119,7 @@ Note: This policy setting exists under both Computer Configuration and User Conf
 <!-- Description-Source-ADMX -->
 This policy setting lets you configure the script execution policy, controlling which scripts are allowed to run.
 
-If you enable this policy setting, the scripts selected in the drop-down list are allowed to run.
+- If you enable this policy setting, the scripts selected in the drop-down list are allowed to run.
 
 The "Allow only signed scripts" policy setting allows scripts to execute only if they are signed by a trusted publisher.
 
@@ -128,11 +127,12 @@ The "Allow local scripts and remote signed scripts" policy setting allows any lo
 
 The "Allow all scripts" policy setting allows all scripts to run.
 
-If you disable this policy setting, no scripts are allowed to run.
+- If you disable this policy setting, no scripts are allowed to run.
 
-Note: This policy setting exists under both "Computer Configuration" and "User Configuration" in the Local Group Policy Editor. The "Computer Configuration" has precedence over "User Configuration."
+> [!NOTE]
+> This policy setting exists under both "Computer Configuration" and "User Configuration" in the Local Group Policy Editor. The "Computer Configuration" has precedence over "User Configuration."
 
-If you disable or do not configure this policy setting, it reverts to a per-machine preference setting; the default if that is not configured is "No scripts allowed."
+- If you disable or do not configure this policy setting, it reverts to a per-machine preference setting; the default if that is not configured is "No scripts allowed."
 <!-- EnableScripts-Description-End -->
 
 <!-- EnableScripts-Editable-Begin -->
@@ -150,7 +150,7 @@ If you disable or do not configure this policy setting, it reverts to a per-mach
 
 <!-- EnableScripts-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -194,18 +194,19 @@ If you disable or do not configure this policy setting, it reverts to a per-mach
 <!-- Description-Source-ADMX -->
 This policy setting lets you capture the input and output of Windows PowerShell commands into text-based transcripts.
 
-If you enable this policy setting, Windows PowerShell will enable transcripting for Windows PowerShell, the Windows PowerShell ISE, and any other
+- If you enable this policy setting, Windows PowerShell will enable transcripting for Windows PowerShell, the Windows PowerShell ISE, and any other
 applications that leverage the Windows PowerShell engine. By default, Windows PowerShell will record transcript output to each users' My Documents
 directory, with a file name that includes 'PowerShell_transcript', along with the computer name and time started. Enabling this policy is equivalent
 to calling the Start-Transcript cmdlet on each Windows PowerShell session.
 
-If you disable this policy setting, transcripting of PowerShell-based applications is disabled by default, although transcripting can still be enabled
+- If you disable this policy setting, transcripting of PowerShell-based applications is disabled by default, although transcripting can still be enabled
 through the Start-Transcript cmdlet.
 
 If you use the OutputDirectory setting to enable transcript logging to a shared location, be sure to limit access to that directory to prevent users
 from viewing the transcripts of other users or computers.
 
-Note: This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.
+> [!NOTE]
+> This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.
 <!-- EnableTranscripting-Description-End -->
 
 <!-- EnableTranscripting-Editable-Begin -->
@@ -223,7 +224,7 @@ Note: This policy setting exists under both Computer Configuration and User Conf
 
 <!-- EnableTranscripting-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -267,11 +268,12 @@ Note: This policy setting exists under both Computer Configuration and User Conf
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set the default value of the SourcePath parameter on the Update-Help cmdlet.
 
-If you enable this policy setting, the Update-Help cmdlet will use the specified value as the default value for the SourcePath parameter. This default value can be overridden by specifying a different value with the SourcePath parameter on the Update-Help cmdlet.
+- If you enable this policy setting, the Update-Help cmdlet will use the specified value as the default value for the SourcePath parameter. This default value can be overridden by specifying a different value with the SourcePath parameter on the Update-Help cmdlet.
 
-If this policy setting is disabled or not configured, this policy setting does not set a default value for the SourcePath parameter of the Update-Help cmdlet.
+- If this policy setting is disabled or not configured, this policy setting does not set a default value for the SourcePath parameter of the Update-Help cmdlet.
 
-Note: This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.
+> [!NOTE]
+> This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.
 <!-- EnableUpdateHelpDefaultSourcePath-Description-End -->
 
 <!-- EnableUpdateHelpDefaultSourcePath-Editable-Begin -->
@@ -289,7 +291,7 @@ Note: This policy setting exists under both Computer Configuration and User Conf
 
 <!-- EnableUpdateHelpDefaultSourcePath-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

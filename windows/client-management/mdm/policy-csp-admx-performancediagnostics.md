@@ -1,10 +1,10 @@
 ---
 title: ADMX_PerformanceDiagnostics Policy CSP
-description: Learn more about the ADMX_PerformanceDiagnostics Area in Policy CSP
+description: Learn more about the ADMX_PerformanceDiagnostics Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_PerformanceDiagnostics
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,11 +44,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Determines the execution level for Windows Boot Performance Diagnostics.
 
-If you enable this policy setting, you must select an execution level from the dropdown menu. If you select problem detection and troubleshooting only, the Diagnostic Policy Service (DPS) will detect Windows Boot Performance problems and attempt to determine their root causes. These root causes will be logged to the event log when detected, but no corrective action will be taken. If you select detection, troubleshooting and resolution, the DPS will detect Windows Boot Performance problems and indicate to the user that assisted resolution is available.
+- If you enable this policy setting, you must select an execution level from the dropdown menu. If you select problem detection and troubleshooting only, the Diagnostic Policy Service (DPS) will detect Windows Boot Performance problems and attempt to determine their root causes. These root causes will be logged to the event log when detected, but no corrective action will be taken. If you select detection, troubleshooting and resolution, the DPS will detect Windows Boot Performance problems and indicate to the user that assisted resolution is available.
 
-If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve any Windows Boot Performance problems that are handled by the DPS.
+- If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve any Windows Boot Performance problems that are handled by the DPS.
 
-If you do not configure this policy setting, the DPS will enable Windows Boot Performance for resolution by default.
+- If you do not configure this policy setting, the DPS will enable Windows Boot Performance for resolution by default.
 
 This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.
 
@@ -74,13 +72,13 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 <!-- WdiScenarioExecutionPolicy_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WdiScenarioExecutionPolicy |
+| Name | WdiScenarioExecutionPolicy_1 |
 | Friendly Name | Configure Scenario Execution Level |
 | Location | Computer Configuration |
 | Path | System > Troubleshooting and Diagnostics > Windows Boot Performance Diagnostics |
@@ -114,11 +112,11 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 <!-- Description-Source-ADMX -->
 Determines the execution level for Windows System Responsiveness Diagnostics.
 
-If you enable this policy setting, you must select an execution level from the dropdown menu. If you select problem detection and troubleshooting only, the Diagnostic Policy Service (DPS) will detect Windows System Responsiveness problems and attempt to determine their root causes. These root causes will be logged to the event log when detected, but no corrective action will be taken. If you select detection, troubleshooting and resolution, the DPS will detect Windows System Responsiveness problems and indicate to the user that assisted resolution is available.
+- If you enable this policy setting, you must select an execution level from the dropdown menu. If you select problem detection and troubleshooting only, the Diagnostic Policy Service (DPS) will detect Windows System Responsiveness problems and attempt to determine their root causes. These root causes will be logged to the event log when detected, but no corrective action will be taken. If you select detection, troubleshooting and resolution, the DPS will detect Windows System Responsiveness problems and indicate to the user that assisted resolution is available.
 
-If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve any Windows System Responsiveness problems that are handled by the DPS.
+- If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve any Windows System Responsiveness problems that are handled by the DPS.
 
-If you do not configure this policy setting, the DPS will enable Windows System Responsiveness for resolution by default.
+- If you do not configure this policy setting, the DPS will enable Windows System Responsiveness for resolution by default.
 
 This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.
 
@@ -142,13 +140,13 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 <!-- WdiScenarioExecutionPolicy_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WdiScenarioExecutionPolicy |
+| Name | WdiScenarioExecutionPolicy_2 |
 | Friendly Name | Configure Scenario Execution Level |
 | Location | Computer Configuration |
 | Path | System > Troubleshooting and Diagnostics > Windows System Responsiveness Performance Diagnostics |
@@ -182,11 +180,11 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 <!-- Description-Source-ADMX -->
 Determines the execution level for Windows Shutdown Performance Diagnostics.
 
-If you enable this policy setting, you must select an execution level from the dropdown menu. If you select problem detection and troubleshooting only, the Diagnostic Policy Service (DPS) will detect Windows Shutdown Performance problems and attempt to determine their root causes. These root causes will be logged to the event log when detected, but no corrective action will be taken. If you select detection, troubleshooting and resolution, the DPS will detect Windows Shutdown Performance problems and indicate to the user that assisted resolution is available.
+- If you enable this policy setting, you must select an execution level from the dropdown menu. If you select problem detection and troubleshooting only, the Diagnostic Policy Service (DPS) will detect Windows Shutdown Performance problems and attempt to determine their root causes. These root causes will be logged to the event log when detected, but no corrective action will be taken. If you select detection, troubleshooting and resolution, the DPS will detect Windows Shutdown Performance problems and indicate to the user that assisted resolution is available.
 
-If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve any Windows Shutdown Performance problems that are handled by the DPS.
+- If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve any Windows Shutdown Performance problems that are handled by the DPS.
 
-If you do not configure this policy setting, the DPS will enable Windows Shutdown Performance for resolution by default.
+- If you do not configure this policy setting, the DPS will enable Windows Shutdown Performance for resolution by default.
 
 This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.
 
@@ -210,13 +208,13 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 <!-- WdiScenarioExecutionPolicy_3-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WdiScenarioExecutionPolicy |
+| Name | WdiScenarioExecutionPolicy_3 |
 | Friendly Name | Configure Scenario Execution Level |
 | Location | Computer Configuration |
 | Path | System > Troubleshooting and Diagnostics > Windows Shutdown Performance Diagnostics |
@@ -250,11 +248,11 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 <!-- Description-Source-ADMX -->
 Determines the execution level for Windows Standby/Resume Performance Diagnostics.
 
-If you enable this policy setting, you must select an execution level from the dropdown menu. If you select problem detection and troubleshooting only, the Diagnostic Policy Service (DPS) will detect Windows Standby/Resume Performance problems and attempt to determine their root causes. These root causes will be logged to the event log when detected, but no corrective action will be taken. If you select detection, troubleshooting and resolution, the DPS will detect Windows Standby/Resume Performance problems and indicate to the user that assisted resolution is available.
+- If you enable this policy setting, you must select an execution level from the dropdown menu. If you select problem detection and troubleshooting only, the Diagnostic Policy Service (DPS) will detect Windows Standby/Resume Performance problems and attempt to determine their root causes. These root causes will be logged to the event log when detected, but no corrective action will be taken. If you select detection, troubleshooting and resolution, the DPS will detect Windows Standby/Resume Performance problems and indicate to the user that assisted resolution is available.
 
-If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve any Windows Standby/Resume Performance problems that are handled by the DPS.
+- If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve any Windows Standby/Resume Performance problems that are handled by the DPS.
 
-If you do not configure this policy setting, the DPS will enable Windows Standby/Resume Performance for resolution by default.
+- If you do not configure this policy setting, the DPS will enable Windows Standby/Resume Performance for resolution by default.
 
 This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.
 
@@ -278,13 +276,13 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 <!-- WdiScenarioExecutionPolicy_4-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WdiScenarioExecutionPolicy |
+| Name | WdiScenarioExecutionPolicy_4 |
 | Friendly Name | Configure Scenario Execution Level |
 | Location | Computer Configuration |
 | Path | System > Troubleshooting and Diagnostics > Windows Standby/Resume Performance Diagnostics |

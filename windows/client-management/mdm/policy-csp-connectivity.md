@@ -1,10 +1,10 @@
 ---
 title: Connectivity Policy CSP
-description: Learn more about the Connectivity Area in Policy CSP
+description: Learn more about the Connectivity Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/04/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -42,9 +42,10 @@ ms.topic: reference
 
 <!-- AllowBluetooth-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the user to enable Bluetooth or restrict access.
+Allows the user to enable Bluetooth or restrict access
 
-**Note**: This value is not supported in Windows Phone 8. 1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile. If this is not set or it is deleted, the default value of 2 (Allow) is used. Most restricted value is 0.
+> [!NOTE]
+> This value is not supported in Windows Phone 8. 1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile. If this is not set or it is deleted, the default value of 2 (Allow) is used. Most restricted value is 0.
 <!-- AllowBluetooth-Description-End -->
 
 <!-- AllowBluetooth-Editable-Begin -->
@@ -146,9 +147,9 @@ Allows the cellular data channel on the device. Device reboot is not required to
 <!-- Description-Source-ADMX -->
 This policy setting prevents clients from connecting to Mobile Broadband networks when the client is registered on a roaming provider network.
 
-If this policy setting is enabled, all automatic and manual connection attempts to roaming provider networks are blocked until the client registers with the home provider network.
+- If this policy setting is enabled, all automatic and manual connection attempts to roaming provider networks are blocked until the client registers with the home provider network.
 
-If this policy setting is not configured or is disabled, clients are allowed to connect to roaming provider Mobile Broadband networks.
+- If this policy setting is not configured or is disabled, clients are allowed to connect to roaming provider Mobile Broadband networks.
 <!-- AllowCellularDataRoaming-Description-End -->
 
 <!-- AllowCellularDataRoaming-Editable-Begin -->
@@ -219,7 +220,8 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 
 <!-- AllowConnectedDevices-Description-Begin -->
 <!-- Description-Source-DDF -->
-**Note**: This policy requires reboot to take effect. Allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
+> [!NOTE]
+> This policy requires reboot to take effect. Allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
 <!-- AllowConnectedDevices-Description-End -->
 
 <!-- AllowConnectedDevices-Editable-Begin -->
@@ -322,11 +324,11 @@ This policy is deprecated.
 <!-- Description-Source-ADMX -->
 This policy allows IT admins to turn off the ability to Link a Phone with a PC to continue reading, emailing and other tasks that requires linking between Phone and PC.
 
-If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in Continue on PC experiences.
+- If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in Continue on PC experiences.
 
-If you disable this policy setting, the Windows device is not allowed to be linked to Phones, will remove itself from the device list of any linked Phones, and cannot participate in Continue on PC experiences.
+- If you disable this policy setting, the Windows device is not allowed to be linked to Phones, will remove itself from the device list of any linked Phones, and cannot participate in Continue on PC experiences.
 
-If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+- If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 <!-- AllowPhonePCLinking-Description-End -->
 
 <!-- AllowPhonePCLinking-Editable-Begin -->
@@ -394,7 +396,8 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 
 <!-- AllowUSBConnection-Description-Begin -->
 <!-- Description-Source-DDF -->
-**Note**: Currently, this policy is supported only in HoloLens 2, Hololens (1st gen) Commercial Suite, and HoloLens (1st gen) Development Edition. Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy does not affect USB charging. Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy is enforced. Most restricted value is 0.
+> [!NOTE]
+> Currently, this policy is supported only in HoloLens 2, HoloLens (1st gen) Commercial Suite, and HoloLens (1st gen) Development Edition. Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy does not affect USB charging. Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy is enforced. Most restricted value is 0.
 <!-- AllowUSBConnection-Description-End -->
 
 <!-- AllowUSBConnection-Editable-Begin -->
@@ -545,11 +548,12 @@ This policy setting specifies whether to allow printing over HTTP from this clie
 
 Printing over HTTP allows a client to print to printers on the intranet as well as the Internet.
 
-**Note**: This policy setting affects the client side of Internet printing only. It does not prevent this computer from acting as an Internet Printing server and making its shared printers available via HTTP.
+> [!NOTE]
+> This policy setting affects the client side of Internet printing only. It does not prevent this computer from acting as an Internet Printing server and making its shared printers available via HTTP.
 
-If you enable this policy setting, it prevents this client from printing to Internet printers over HTTP.
+- If you enable this policy setting, it prevents this client from printing to Internet printers over HTTP.
 
-If you disable or do not configure this policy setting, users can choose to print to Internet printers over HTTP.
+- If you disable or do not configure this policy setting, users can choose to print to Internet printers over HTTP.
 
 Also, see the "Web-based printing" policy setting in Computer Configuration/Administrative Templates/Printers.
 <!-- DiablePrintingOverHTTP-Description-End -->
@@ -611,11 +615,12 @@ This policy setting specifies whether to allow this client to download print dri
 
 To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
 
-**Note**: This policy setting does not prevent the client from printing to printers on the Intranet or the Internet over HTTP. It only prohibits downloading drivers that are not already installed locally.
+> [!NOTE]
+> This policy setting does not prevent the client from printing to printers on the Intranet or the Internet over HTTP. It only prohibits downloading drivers that are not already installed locally.
 
-If you enable this policy setting, print drivers cannot be downloaded over HTTP.
+- If you enable this policy setting, print drivers cannot be downloaded over HTTP.
 
-If you disable or do not configure this policy setting, users can download print drivers over HTTP.
+- If you disable or do not configure this policy setting, users can download print drivers over HTTP.
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Description-End -->
 
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Editable-Begin -->
@@ -675,9 +680,9 @@ This policy setting specifies whether Windows should download a list of provider
 
 These wizards allow users to select from a list of companies that provide services such as online storage and photographic printing. By default, Windows displays providers downloaded from a Windows website in addition to providers specified in the registry.
 
-If you enable this policy setting, Windows does not download providers, and only the service providers that are cached in the local registry are displayed.
+- If you enable this policy setting, Windows does not download providers, and only the service providers that are cached in the local registry are displayed.
 
-If you disable or do not configure this policy setting, a list of providers are downloaded when the user uses the web publishing or online ordering wizards.
+- If you disable or do not configure this policy setting, a list of providers are downloaded when the user uses the web publishing or online ordering wizards.
 
 See the documentation for the web publishing and online ordering wizards for more information, including details on specifying service providers in the registry.
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Description-End -->
@@ -739,9 +744,9 @@ This policy setting turns off the active tests performed by the Windows Network 
 
 As part of determining the connectivity level, NCSI performs one of two active tests: downloading a page from a dedicated Web server or making a DNS request for a dedicated address.
 
-If you enable this policy setting, NCSI does not run either of the two active tests. This may reduce the ability of NCSI, and of other components that use NCSI, to determine Internet access.
+- If you enable this policy setting, NCSI does not run either of the two active tests. This may reduce the ability of NCSI, and of other components that use NCSI, to determine Internet access.
 
-If you disable or do not configure this policy setting, NCSI runs one of the two active tests.
+- If you disable or do not configure this policy setting, NCSI runs one of the two active tests.
 <!-- DisallowNetworkConnectivityActiveTests-Description-End -->
 
 <!-- DisallowNetworkConnectivityActiveTests-Editable-Begin -->
@@ -763,8 +768,8 @@ If you disable or do not configure this policy setting, NCSI runs one of the two
 
 | Value | Description |
 |:--|:--|
-| 1 | Allow |
-| 0 (Default) | Block |
+| 1 | Allow. |
+| 0 (Default) | Block. |
 <!-- DisallowNetworkConnectivityActiveTests-AllowedValues-End -->
 
 <!-- DisallowNetworkConnectivityActiveTests-GpMapping-Begin -->
@@ -806,7 +811,7 @@ If you disable or do not configure this policy setting, NCSI runs one of the two
 <!-- Description-Source-ADMX -->
 This policy setting configures secure access to UNC paths.
 
-If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.
+- If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.
 <!-- HardenedUNCPaths-Description-End -->
 
 <!-- HardenedUNCPaths-Editable-Begin -->
@@ -863,11 +868,12 @@ If you enable this policy, Windows only allows access to the specified UNC paths
 <!-- Description-Source-ADMX -->
 Determines whether a user can install and configure the Network Bridge.
 
-**Important**: This settings is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting does not apply.
+> [!IMPORTANT]
+> This settings is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting does not apply.
 
 The Network Bridge allows users to create a layer 2 MAC bridge, enabling them to connect two or more network segements together. This connection appears in the Network Connections folder.
 
-If you disable this setting or do not configure it, the user will be able to create and modify the configuration of a Network Bridge. Enabling this setting does not remove an existing Network Bridge from the user's computer.
+- If you disable this setting or do not configure it, the user will be able to create and modify the configuration of a Network Bridge. Enabling this setting does not remove an existing Network Bridge from the user's computer.
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Description-End -->
 
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Editable-Begin -->

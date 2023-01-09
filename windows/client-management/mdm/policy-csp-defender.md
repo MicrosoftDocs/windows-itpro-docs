@@ -1,10 +1,10 @@
 ---
 title: Defender Policy CSP
-description: Learn more about the Defender Area in Policy CSP
+description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/27/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,11 +37,11 @@ ms.topic: reference
 
 <!-- AllowArchiveScanning-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure scans for malicious software and unwanted software in archive files such as .ZIP or .CAB files.
+This policy setting allows you to configure scans for malicious software and unwanted software in archive files such as . ZIP or . CAB files.
 
-If you enable or do not configure this setting, archive files will be scanned.
+- If you enable or do not configure this setting, archive files will be scanned.
 
-If you disable this setting, archive files will not be scanned. However, archives are always scanned during directed scans.
+- If you disable this setting, archive files will not be scanned. However, archives are always scanned during directed scans.
 <!-- AllowArchiveScanning-Description-End -->
 
 <!-- AllowArchiveScanning-Editable-Begin -->
@@ -106,9 +106,9 @@ If you disable this setting, archive files will not be scanned. However, archive
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure behavior monitoring.
 
-If you enable or do not configure this setting, behavior monitoring will be enabled.
+- If you enable or do not configure this setting, behavior monitoring will be enabled.
 
-If you disable this setting, behavior monitoring will be disabled.
+- If you disable this setting, behavior monitoring will be disabled.
 <!-- AllowBehaviorMonitoring-Description-End -->
 
 <!-- AllowBehaviorMonitoring-Editable-Begin -->
@@ -184,9 +184,9 @@ Basic membership will send basic information to Microsoft about software that ha
 
 Advanced membership, in addition to basic information, will send more information to Microsoft about malicious software, spyware, and potentially unwanted software, including the location of the software, file names, how the software operates, and how it has impacted your computer.
 
-If you enable this setting, you will join Microsoft MAPS with the membership specified.
+- If you enable this setting, you will join Microsoft MAPS with the membership specified.
 
-If you disable or do not configure this setting, you will not join Microsoft MAPS.
+- If you disable or do not configure this setting, you will not join Microsoft MAPS.
 
 In Windows 10, Basic membership is no longer available, so setting the value to 1 or 2 enrolls the device into Advanced membership.
 <!-- AllowCloudProtection-Description-End -->
@@ -253,9 +253,9 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure e-mail scanning. When e-mail scanning is enabled, the engine will parse the mailbox and mail files, according to their specific format, in order to analyze the mail bodies and attachments. Several e-mail formats are currently supported, for example: pst (Outlook), dbx, mbx, mime (Outlook Express), binhex (Mac). Email scanning is not supported on modern email clients.
 
-If you enable this setting, e-mail scanning will be enabled.
+- If you enable this setting, e-mail scanning will be enabled.
 
-If you disable or do not configure this setting, e-mail scanning will be disabled.
+- If you disable or do not configure this setting, e-mail scanning will be disabled.
 <!-- AllowEmailScanning-Description-End -->
 
 <!-- AllowEmailScanning-Editable-Begin -->
@@ -320,9 +320,9 @@ If you disable or do not configure this setting, e-mail scanning will be disable
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure scanning mapped network drives.
 
-If you enable this setting, mapped network drives will be scanned.
+- If you enable this setting, mapped network drives will be scanned.
 
-If you disable or do not configure this setting, mapped network drives will not be scanned.
+- If you disable or do not configure this setting, mapped network drives will not be scanned.
 <!-- AllowFullScanOnMappedNetworkDrives-Description-End -->
 
 <!-- AllowFullScanOnMappedNetworkDrives-Editable-Begin -->
@@ -387,9 +387,9 @@ If you disable or do not configure this setting, mapped network drives will not 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether or not to scan for malicious software and unwanted software in the contents of removable drives, such as USB flash drives, when running a full scan.
 
-If you enable this setting, removable drives will be scanned during any type of scan.
+- If you enable this setting, removable drives will be scanned during any type of scan.
 
-If you disable or do not configure this setting, removable drives will not be scanned during a full scan. Removable drives may still be scanned during quick scan and custom scan.
+- If you disable or do not configure this setting, removable drives will not be scanned during a full scan. Removable drives may still be scanned during quick scan and custom scan.
 <!-- AllowFullScanRemovableDriveScanning-Description-End -->
 
 <!-- AllowFullScanRemovableDriveScanning-Editable-Begin -->
@@ -503,9 +503,9 @@ Allows or disallows Windows Defender Intrusion Prevention functionality.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure scanning for all downloaded files and attachments.
 
-If you enable or do not configure this setting, scanning for all downloaded files and attachments will be enabled.
+- If you enable or do not configure this setting, scanning for all downloaded files and attachments will be enabled.
 
-If you disable this setting, scanning for all downloaded files and attachments will be disabled.
+- If you disable this setting, scanning for all downloaded files and attachments will be disabled.
 <!-- AllowIOAVProtection-Description-End -->
 
 <!-- AllowIOAVProtection-Editable-Begin -->
@@ -570,9 +570,9 @@ If you disable this setting, scanning for all downloaded files and attachments w
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure monitoring for file and program activity.
 
-If you enable or do not configure this setting, monitoring for file and program activity will be enabled.
+- If you enable or do not configure this setting, monitoring for file and program activity will be enabled.
 
-If you disable this setting, monitoring for file and program activity will be disabled.
+- If you disable this setting, monitoring for file and program activity will be disabled.
 <!-- AllowOnAccessProtection-Description-End -->
 
 <!-- AllowOnAccessProtection-Editable-Begin -->
@@ -700,9 +700,9 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure scanning for network files. It is recommended that you do not enable this setting.
 
-If you enable this setting, network files will be scanned.
+- If you enable this setting, network files will be scanned.
 
-If you disable or do not configure this setting, network files will not be scanned.
+- If you disable or do not configure this setting, network files will not be scanned.
 <!-- AllowScanningNetworkFiles-Description-End -->
 
 <!-- AllowScanningNetworkFiles-Editable-Begin -->
@@ -815,7 +815,7 @@ Allows or disallows Windows Defender Script Scanning functionality.
 <!-- AllowUserUIAccess-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure whether or not to display AM UI to the users.
-If you enable this setting AM UI won't be available to users.
+- If you enable this setting AM UI won't be available to users.
 <!-- AllowUserUIAccess-Description-End -->
 
 <!-- AllowUserUIAccess-Editable-Begin -->
@@ -883,8 +883,8 @@ Exclude files and paths from Attack Surface Reduction (ASR) rules.
 Enabled:
 Specify the folders or files and resources that should be excluded from ASR rules in the Options section.
 Enter each rule on a new line as a name-value pair:
-- Name column: Enter a folder path or a fully qualified resource name. For example, ""C:\Windows"" will exclude all files in that directory. ""C:\Windows\App.exe"" will exclude only that specific file in that specific folder
-- Value column: Enter ""0"" for each item
+- Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
+- Value column: Enter "0" for each item
 
 Disabled:
 No exclusions will be applied to the ASR rules.
@@ -970,11 +970,13 @@ The following status IDs are permitted under the value column:
 - 5 (Not Configured)
 - 6 (Warn)
 
-
 Example:
-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx 0
-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx 1
-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx 2
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+0
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+1
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+2
 
 Disabled:
 No ASR rules will be configured.
@@ -982,7 +984,7 @@ No ASR rules will be configured.
 Not configured:
 Same as Disabled.
 
-You can exclude folders or files in the ""Exclude files and paths from Attack Surface Reduction Rules"" GP setting.
+You can exclude folders or files in the "Exclude files and paths from Attack Surface Reduction Rules" GP setting.
 <!-- AttackSurfaceReductionRules-Description-End -->
 
 <!-- AttackSurfaceReductionRules-Editable-Begin -->
@@ -1037,9 +1039,9 @@ You can exclude folders or files in the ""Exclude files and paths from Attack Su
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the maximum percentage CPU utilization permitted during a scan. Valid values for this setting are a percentage represented by the integers 5 to 100. A value of 0 indicates that there should be no throttling of CPU utilization. The default value is 50.
 
-If you enable this setting, CPU utilization will not exceed the percentage specified.
+- If you enable this setting, CPU utilization will not exceed the percentage specified.
 
-If you disable or do not configure this setting, CPU utilization will not exceed the default value.
+- If you disable or do not configure this setting, CPU utilization will not exceed the default value.
 <!-- AvgCPULoadFactor-Description-End -->
 
 <!-- AvgCPULoadFactor-Editable-Begin -->
@@ -1098,9 +1100,9 @@ This policy setting allows you to manage whether a check for new virus and spywa
 
 This setting applies to scheduled scans, but it has no effect on scans initiated manually from the user interface or to the ones started from the command line using "mpcmdrun -Scan".
 
-If you enable this setting, a check for new security intelligence will occur before running a scan.
+- If you enable this setting, a check for new security intelligence will occur before running a scan.
 
-If you disable this setting or do not configure this setting, the scan will start using the existing security intelligence.
+- If you disable this setting or do not configure this setting, the scan will start using the existing security intelligence.
 <!-- CheckForSignaturesBeforeRunningScan-Description-End -->
 
 <!-- CheckForSignaturesBeforeRunningScan-Editable-Begin -->
@@ -1122,8 +1124,8 @@ If you disable this setting or do not configure this setting, the scan will star
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled |
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
 <!-- CheckForSignaturesBeforeRunningScan-AllowedValues-End -->
 
 <!-- CheckForSignaturesBeforeRunningScan-GpMapping-Begin -->
@@ -1162,9 +1164,10 @@ If you disable this setting or do not configure this setting, the scan will star
 
 <!-- CloudBlockLevel-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer. If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
+This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer. If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. For more information about specific values that are supported, see the Windows Defender Antivirus documentation site
 
-**Note**: This feature requires the Join Microsoft MAPS setting enabled in order to function.
+> [!NOTE]
+> This feature requires the Join Microsoft MAPS setting enabled in order to function.
 <!-- CloudBlockLevel-Description-End -->
 
 <!-- CloudBlockLevel-Editable-Begin -->
@@ -1186,10 +1189,10 @@ This policy setting determines how aggressive Windows Defender Antivirus will be
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | NotConfigured |
-| 2 | High |
-| 4 | HighPlus |
-| 6 | ZeroTolerance |
+| 0 (Default) | NotConfigured. |
+| 2 | High. |
+| 4 | HighPlus. |
+| 6 | ZeroTolerance. |
 <!-- CloudBlockLevel-AllowedValues-End -->
 
 <!-- CloudBlockLevel-GpMapping-Begin -->
@@ -1229,9 +1232,10 @@ This policy setting determines how aggressive Windows Defender Antivirus will be
 
 <!-- CloudExtendedTimeout-Description-Begin -->
 <!-- Description-Source-DDF -->
-This feature allows Windows Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50. The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds. For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds.
+This feature allows Windows Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50. The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds. For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds
 
-**Note**: This feature depends on three other MAPS settings the must all be enabled- Configure the 'Block at First Sight' feature; Join Microsoft MAPS; Send file samples when further analysis is required.
+> [!NOTE]
+> This feature depends on three other MAPS settings the must all be enabled- Configure the 'Block at First Sight' feature; Join Microsoft MAPS; Send file samples when further analysis is required.
 <!-- CloudExtendedTimeout-Description-End -->
 
 <!-- CloudExtendedTimeout-Editable-Begin -->
@@ -1431,9 +1435,9 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 <!-- Description-Source-ADMX -->
 This policy setting defines the number of days items should be kept in the Quarantine folder before being removed.
 
-If you enable this setting, items will be removed from the Quarantine folder after the number of days specified.
+- If you enable this setting, items will be removed from the Quarantine folder after the number of days specified.
 
-If you disable or do not configure this setting, items will be kept in the quarantine folder indefinitely and will not be automatically removed.
+- If you disable or do not configure this setting, items will be kept in the quarantine folder indefinitely and will not be automatically removed.
 <!-- DaysToRetainCleanedMalware-Description-End -->
 
 <!-- DaysToRetainCleanedMalware-Editable-Begin -->
@@ -1490,9 +1494,9 @@ If you disable or do not configure this setting, items will be kept in the quara
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
 
-If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
+- If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
 
-If you disable or do not configure this setting, catch-up scans for scheduled full scans will be turned off.
+- If you disable or do not configure this setting, catch-up scans for scheduled full scans will be turned off.
 <!-- DisableCatchupFullScan-Description-End -->
 
 <!-- DisableCatchupFullScan-Editable-Begin -->
@@ -1514,8 +1518,8 @@ If you disable or do not configure this setting, catch-up scans for scheduled fu
 
 | Value | Description |
 |:--|:--|
-| 0 | Enabled |
-| 1 (Default) | Disabled |
+| 0 | Enabled. |
+| 1 (Default) | Disabled. |
 <!-- DisableCatchupFullScan-AllowedValues-End -->
 
 <!-- DisableCatchupFullScan-GpMapping-Begin -->
@@ -1556,9 +1560,9 @@ If you disable or do not configure this setting, catch-up scans for scheduled fu
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
 
-If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
+- If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
 
-If you disable or do not configure this setting, catch-up scans for scheduled quick scans will be turned off.
+- If you disable or do not configure this setting, catch-up scans for scheduled quick scans will be turned off.
 <!-- DisableCatchupQuickScan-Description-End -->
 
 <!-- DisableCatchupQuickScan-Editable-Begin -->
@@ -1580,8 +1584,8 @@ If you disable or do not configure this setting, catch-up scans for scheduled qu
 
 | Value | Description |
 |:--|:--|
-| 0 | Enabled |
-| 1 (Default) | Disabled |
+| 0 | Enabled. |
+| 1 (Default) | Disabled. |
 <!-- DisableCatchupQuickScan-AllowedValues-End -->
 
 <!-- DisableCatchupQuickScan-GpMapping-Begin -->
@@ -1635,20 +1639,17 @@ The following will be blocked:
 - Attempts by untrusted apps to write to disk sectors
 The Windows event log will record these blocks under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1123.
 
-
 Disabled:
 The following will not be blocked and will be allowed to run:
 - Attempts by untrusted apps to modify or delete files in protected folders
 - Attempts by untrusted apps to write to disk sectors
 These attempts will not be recorded in the Windows event log.
 
-
 Audit Mode:
 The following will not be blocked and will be allowed to run:
 - Attempts by untrusted apps to modify or delete files in protected folders
 - Attempts by untrusted apps to write to disk sectors
 The Windows event log will record these attempts under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1124.
-
 
 Block disk modification only:
 The following will be blocked:
@@ -1658,7 +1659,6 @@ The Windows event log will record these attempts under Applications and Services
 The following will not be blocked and will be allowed to run:
 - Attempts by untrusted apps to modify or delete files in protected folders
 These attempts will not be recorded in the Windows event log.
-
 
 Audit disk modification only:
 The following will not be blocked and will be allowed to run:
@@ -1690,9 +1690,9 @@ Same as Disabled.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled |
-| 2 | Audit Mode |
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+| 2 | Audit Mode. |
 <!-- EnableControlledFolderAccess-AllowedValues-End -->
 
 <!-- EnableControlledFolderAccess-GpMapping-Begin -->
@@ -1734,9 +1734,9 @@ Same as Disabled.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to enable or disable low CPU priority for scheduled scans.
 
-If you enable this setting, low CPU priority will be used during scheduled scans.
+- If you enable this setting, low CPU priority will be used during scheduled scans.
 
-If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.
+- If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.
 <!-- EnableLowCPUPriority-Description-End -->
 
 <!-- EnableLowCPUPriority-Editable-Begin -->
@@ -1758,8 +1758,8 @@ If you disable or do not configure this setting, not changes will be made to CPU
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled |
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
 <!-- EnableLowCPUPriority-AllowedValues-End -->
 
 <!-- EnableLowCPUPriority-GpMapping-Begin -->
@@ -1831,9 +1831,9 @@ Same as Disabled.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled (block mode) |
-| 2 | Enabled (audit mode) |
+| 0 (Default) | Disabled. |
+| 1 | Enabled (block mode). |
+| 2 | Enabled (audit mode). |
 <!-- EnableNetworkProtection-AllowedValues-End -->
 
 <!-- EnableNetworkProtection-GpMapping-Begin -->
@@ -1980,9 +1980,10 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 
 <!-- ExcludedProcesses-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows an administrator to specify a list of files opened by processes to ignore during a scan.
+Allows an administrator to specify a list of files opened by processes to ignore during a scan
 
-**Important**: The process itself is not excluded from the scan, but can be by using the Defender/ExcludedPaths policy to exclude its path. Each file type must be separated by a |. For example, C:\Example. exe|C:\Example1.exe.
+> [!IMPORTANT]
+> The process itself is not excluded from the scan, but can be by using the Defender/ExcludedPaths policy to exclude its path. Each file type must be separated by a |. For example, C\Example. exe|C\Example1.exe.
 <!-- ExcludedProcesses-Description-End -->
 
 <!-- ExcludedProcesses-Editable-Begin -->
@@ -2112,18 +2113,18 @@ Same as Disabled.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure monitoring for incoming and outgoing files, without having to turn off monitoring entirely. It is recommended for use on servers where there is a lot of incoming and outgoing file activity but for performance reasons need to have scanning disabled for a particular scan direction. The appropriate configuration should be evaluated based on the server role.
 
-Note that this configuration is only honored for NTFS volumes. For any other file system type, full monitoring of file and program activity will be present on those volumes.
+**Note** that this configuration is only honored for NTFS volumes. For any other file system type, full monitoring of file and program activity will be present on those volumes.
 
-The options for this setting are mutually exclusive:
+The options for this setting are mutually exclusive
 0 = Scan incoming and outgoing files (default)
 1 = Scan incoming files only
 2 = Scan outgoing files only
 
 Any other value, or if the value does not exist, resolves to the default (0).
 
-If you enable this setting, the specified type of monitoring will be enabled.
+- If you enable this setting, the specified type of monitoring will be enabled.
 
-If you disable or do not configure this setting, monitoring for incoming and outgoing files will be enabled.
+- If you disable or do not configure this setting, monitoring for incoming and outgoing files will be enabled.
 <!-- RealTimeScanDirection-Description-End -->
 
 <!-- RealTimeScanDirection-Editable-Begin -->
@@ -2191,9 +2192,9 @@ This policy setting allows you to specify the scan type to use during a schedule
 1 = Quick Scan (default)
 2 = Full Scan
 
-If you enable this setting, the scan type will be set to the specified value.
+- If you enable this setting, the scan type will be set to the specified value.
 
-If you disable or do not configure this setting, the default scan type will used.
+- If you disable or do not configure this setting, the default scan type will used.
 <!-- ScanParameter-Description-End -->
 
 <!-- ScanParameter-Editable-Begin -->
@@ -2215,8 +2216,8 @@ If you disable or do not configure this setting, the default scan type will used
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Quick scan |
-| 2 | Full scan |
+| 1 (Default) | Quick scan. |
+| 2 | Full scan. |
 <!-- ScanParameter-AllowedValues-End -->
 
 <!-- ScanParameter-GpMapping-Begin -->
@@ -2258,9 +2259,9 @@ If you disable or do not configure this setting, the default scan type will used
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the time of day at which to perform a daily quick scan. The time value is represented as the number of minutes past midnight (00:00). For example, 120 (0x78) is equivalent to 02:00 AM. By default, this setting is set to disabled. The schedule is based on local time on the computer where the scan is executing.
 
-If you enable this setting, a daily quick scan will run at the time of day specified.
+- If you enable this setting, a daily quick scan will run at the time of day specified.
 
-If you disable or do not configure this setting, daily quick scan controlled by this config will not be run.
+- If you disable or do not configure this setting, daily quick scan controlled by this config will not be run.
 <!-- ScheduleQuickScanTime-Description-End -->
 
 <!-- ScheduleQuickScanTime-Editable-Begin -->
@@ -2328,9 +2329,9 @@ This setting can be configured with the following ordinal number values:
 (0x7) Saturday
 (0x8) Never (default)
 
-If you enable this setting, a scheduled scan will run at the frequency specified.
+- If you enable this setting, a scheduled scan will run at the frequency specified.
 
-If you disable or do not configure this setting, a scheduled scan will run at a default frequency.
+- If you disable or do not configure this setting, a scheduled scan will run at a default frequency.
 <!-- ScheduleScanDay-Description-End -->
 
 <!-- ScheduleScanDay-Editable-Begin -->
@@ -2352,15 +2353,15 @@ If you disable or do not configure this setting, a scheduled scan will run at a 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Every day |
-| 1 | Sunday |
-| 2 | Monday |
-| 3 | Tuesday |
-| 4 | Wednesday |
-| 5 | Thursday |
-| 6 | Friday |
-| 7 | Saturday |
-| 8 | No scheduled scan |
+| 0 (Default) | Every day. |
+| 1 | Sunday. |
+| 2 | Monday. |
+| 3 | Tuesday. |
+| 4 | Wednesday. |
+| 5 | Thursday. |
+| 6 | Friday. |
+| 7 | Saturday. |
+| 8 | No scheduled scan. |
 <!-- ScheduleScanDay-AllowedValues-End -->
 
 <!-- ScheduleScanDay-GpMapping-Begin -->
@@ -2402,9 +2403,9 @@ If you disable or do not configure this setting, a scheduled scan will run at a 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the time of day at which to perform a scheduled scan. The time value is represented as the number of minutes past midnight (00:00). For example, 120 (0x78) is equivalent to 02:00 AM. By default, this setting is set to a time value of 2:00 AM. The schedule is based on local time on the computer where the scan is executing.
 
-If you enable this setting, a scheduled scan will run at the time of day specified.
+- If you enable this setting, a scheduled scan will run at the time of day specified.
 
-If you disable or do not configure this setting, a scheduled scan will run at a default time.
+- If you disable or do not configure this setting, a scheduled scan will run at a default time.
 <!-- ScheduleScanTime-Description-End -->
 
 <!-- ScheduleScanTime-Editable-Begin -->
@@ -2461,7 +2462,7 @@ If you disable or do not configure this setting, a scheduled scan will run at a 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to define the security intelligence location for VDI-configured computers.
 
-If you disable or do not configure this setting, security intelligence will be referred from the default local source.
+- If you disable or do not configure this setting, security intelligence will be referred from the default local source.
 <!-- SecurityIntelligenceLocation-Description-End -->
 
 <!-- SecurityIntelligenceLocation-Editable-Begin -->
@@ -2514,13 +2515,13 @@ If you disable or do not configure this setting, security intelligence will be r
 
 <!-- SignatureUpdateFallbackOrder-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: “InternalDefinitionUpdateServer”, “MicrosoftUpdateServer”, “MMPC”, and “FileShares”
+This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: "InternalDefinitionUpdateServer", "MicrosoftUpdateServer", "MMPC", and "FileShares"
 
 For example: { InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }
 
-If you enable this setting, security intelligence update sources will be contacted in the order specified. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
+- If you enable this setting, security intelligence update sources will be contacted in the order specified. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
 
-If you disable or do not configure this setting, security intelligence update sources will be contacted in a default order.
+- If you disable or do not configure this setting, security intelligence update sources will be contacted in a default order.
 <!-- SignatureUpdateFallbackOrder-Description-End -->
 
 <!-- SignatureUpdateFallbackOrder-Editable-Begin -->
@@ -2576,9 +2577,9 @@ If you disable or do not configure this setting, security intelligence update so
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure UNC file share sources for downloading security intelligence updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources. For example: "{\\unc1 | \\unc2 }". The list is empty by default.
 
-If you enable this setting, the specified sources will be contacted for security intelligence updates. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
+- If you enable this setting, the specified sources will be contacted for security intelligence updates. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
 
-If you disable or do not configure this setting, the list will remain empty by default and no sources will be contacted.
+- If you disable or do not configure this setting, the list will remain empty by default and no sources will be contacted.
 <!-- SignatureUpdateFileSharesSources-Description-End -->
 
 <!-- SignatureUpdateFileSharesSources-Editable-Begin -->
@@ -2634,9 +2635,9 @@ If you disable or do not configure this setting, the list will remain empty by d
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify an interval at which to check for security intelligence updates. The time value is represented as the number of hours between update checks. Valid values range from 1 (every hour) to 24 (once per day).
 
-If you enable this setting, checks for security intelligence updates will occur at the interval specified.
+- If you enable this setting, checks for security intelligence updates will occur at the interval specified.
 
-If you disable or do not configure this setting, checks for security intelligence updates will occur at the default interval.
+- If you disable or do not configure this setting, checks for security intelligence updates will occur at the default interval.
 <!-- SignatureUpdateInterval-Description-End -->
 
 <!-- SignatureUpdateInterval-Editable-Begin -->
@@ -2762,7 +2763,7 @@ Possible options are:
 
 <!-- ThreatSeverityDefaultAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take. This value is a list of threat severity level IDs and corresponding actions, separated by a | using the format threat level=action|threat level=action. For example, 1=6|2=2|4=10|5=3. The following list shows the supported values for threat severity levels:1 – Low severity threats2 – Moderate severity threats4 – High severity threats5 – Severe threatsThe following list shows the supported values for possible actions:2 – Quarantine. Moves files to quarantine. 3 – Remove. Removes files from system. 6 – Allow. Allows file/does none of the above actions. 8 – User defined. Requires user to make a decision on which action to take. 10 – Block. Blocks file execution.
+Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take. This value is a list of threat severity level IDs and corresponding actions, separated by a | using the format threat level=action|threat level=action. For example, 1=6|2=2|4=10|5=3. The following list shows the supported values for threat severity levels:1 - Low severity threats2 - Moderate severity threats4 - High severity threats5 - Severe threatsThe following list shows the supported values for possible actions:2 - Quarantine. Moves files to quarantine. 3 - Remove. Removes files from system. 6 - Allow. Allows file/does none of the above actions. 8 - User defined. Requires user to make a decision on which action to take. 10 - Block. Blocks file execution.
 <!-- ThreatSeverityDefaultAction-Description-End -->
 
 <!-- ThreatSeverityDefaultAction-Editable-Begin -->

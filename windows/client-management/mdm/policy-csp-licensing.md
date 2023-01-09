@@ -1,10 +1,10 @@
 ---
 title: Licensing Policy CSP
-description: Learn more about the Licensing Area in Policy CSP
+description: Learn more about the Licensing Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -105,7 +105,7 @@ Policy Options:
 <!-- DisallowKMSClientOnlineAVSValidation-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting lets you opt-out of sending KMS client activation data to Microsoft automatically. Enabling this setting prevents this computer from sending data to Microsoft regarding its activation state.
-If you disable or do not configure this policy setting, KMS client activation data will be sent to Microsoft services when this device activates.
+- If you disable or do not configure this policy setting, KMS client activation data will be sent to Microsoft services when this device activates.
 Policy Options:
 - Not Configured (default -- data will be automatically sent to Microsoft)
 - Disabled (data will be automatically sent to Microsoft)

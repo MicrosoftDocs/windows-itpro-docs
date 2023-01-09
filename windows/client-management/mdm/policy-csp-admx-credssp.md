@@ -1,10 +1,10 @@
 ---
 title: ADMX_CredSsp Policy CSP
-description: Learn more about the ADMX_CredSsp Area in Policy CSP
+description: Learn more about the ADMX_CredSsp Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/20/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_CredSsp
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -48,7 +46,7 @@ This policy setting applies to applications using the Cred SSP component (for ex
 
 This policy setting applies when server authentication was achieved by using a trusted X509 certificate or Kerberos.
 
-If you enable this policy setting, you can specify the servers to which the user's default credentials can be delegated (default credentials are those that you use when first logging on to Windows).
+- If you enable this policy setting, you can specify the servers to which the user's default credentials can be delegated (default credentials are those that you use when first logging on to Windows).
 
 The policy becomes effective the next time the user signs on to a computer running Windows.
 
@@ -57,7 +55,8 @@ If you disable or do not configure (by default) this policy setting, delegation 
 FWlink for KB:
 <https://go.microsoft.com/fwlink/?LinkId=301508>
 
-Note: The "Allow delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> [!NOTE]
+> The "Allow delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
 TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
@@ -80,7 +79,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 <!-- AllowDefaultCredentials-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -122,11 +121,12 @@ This policy setting applies to applications using the Cred SSP component (for ex
 
 This policy setting applies when server authentication was achieved via NTLM.
 
-If you enable this policy setting, you can specify the servers to which the user's default credentials can be delegated (default credentials are those that you use when first logging on to Windows).
+- If you enable this policy setting, you can specify the servers to which the user's default credentials can be delegated (default credentials are those that you use when first logging on to Windows).
 
 If you disable or do not configure (by default) this policy setting, delegation of default credentials is not permitted to any machine.
 
-Note: The "Allow delegating default credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> [!NOTE]
+> The "Allow delegating default credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
 TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
@@ -149,7 +149,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 <!-- AllowDefCredentialsWhenNTLMOnly-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -189,21 +189,19 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- Description-Source-ADMX -->
 Encryption Oracle Remediation
 
-This policy setting applies to applications using the CredSSP component (for example: Remote Desktop Connection).
+This policy setting applies to applications using the CredSSP component (for example Remote Desktop Connection).
 
 Some versions of the CredSSP protocol are vulnerable to an encryption oracle attack against the client. This policy controls compatibility with vulnerable clients and servers. This policy allows you to set the level of protection desired for the encryption oracle vulnerability.
 
-If you enable this policy setting, CredSSP version support will be selected based on the following options:
+- If you enable this policy setting, CredSSP version support will be selected based on the following options
 
-Force Updated Clients: Client applications which use CredSSP will not be able to fall back to the insecure versions and services using CredSSP will not accept unpatched clients.
+Force Updated Clients Client applications which use CredSSP will not be able to fall back to the insecure versions and services using CredSSP will not accept unpatched clients. **Note** this setting should not be deployed until all remote hosts support the newest version.
 
-**Note**:  this setting should not be deployed until all remote hosts support the newest version.
+Mitigated Client applications which use CredSSP will not be able to fall back to the insecure version but services using CredSSP will accept unpatched clients. See the link below for important information about the risk posed by remaining unpatched clients.
 
-Mitigated: Client applications which use CredSSP will not be able to fall back to the insecure version but services using CredSSP will accept unpatched clients. See the link below for important information about the risk posed by remaining unpatched clients.
+Vulnerable Client applications which use CredSSP will expose the remote servers to attacks by supporting fall back to the insecure versions and services using CredSSP will accept unpatched clients.
 
-Vulnerable: Client applications which use CredSSP will expose the remote servers to attacks by supporting fall back to the insecure versions and services using CredSSP will accept unpatched clients.
-
-For more information about the vulnerability and servicing requirements for protection, see <https://go.microsoft.com/fwlink/?linkid=866660>
+For more information about the vulnerability and servicing requirements for protection, see <https//go.microsoft.com/fwlink/?linkid=866660>
 <!-- AllowEncryptionOracle-Description-End -->
 
 <!-- AllowEncryptionOracle-Editable-Begin -->
@@ -221,7 +219,7 @@ For more information about the vulnerability and servicing requirements for prot
 
 <!-- AllowEncryptionOracle-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -262,13 +260,14 @@ This policy setting applies to applications using the Cred SSP component (for ex
 
 This policy setting applies when server authentication was achieved via a trusted X509 certificate or Kerberos.
 
-If you enable this policy setting, you can specify the servers to which the user's fresh credentials can be delegated (fresh credentials are those that you are prompted for when executing the application).
+- If you enable this policy setting, you can specify the servers to which the user's fresh credentials can be delegated (fresh credentials are those that you are prompted for when executing the application).
 
 If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
 
-If you disable this policy setting, delegation of fresh credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of fresh credentials is not permitted to any machine.
 
-Note: The "Allow delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard is permitted when specifying the SPN.
+> [!NOTE]
+> The "Allow delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard is permitted when specifying the SPN.
 
 For Example:
 TERMSRV/host.humanresources.fabrikam.com
@@ -292,7 +291,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 <!-- AllowFreshCredentials-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -334,13 +333,14 @@ This policy setting applies to applications using the Cred SSP component (for ex
 
 This policy setting applies when server authentication was achieved via NTLM.
 
-If you enable this policy setting, you can specify the servers to which the user's fresh credentials can be delegated (fresh credentials are those that you are prompted for when executing the application).
+- If you enable this policy setting, you can specify the servers to which the user's fresh credentials can be delegated (fresh credentials are those that you are prompted for when executing the application).
 
 If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
 
-If you disable this policy setting, delegation of fresh credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of fresh credentials is not permitted to any machine.
 
-Note: The "Allow delegating fresh credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> [!NOTE]
+> The "Allow delegating fresh credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
 TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
@@ -363,7 +363,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 <!-- AllowFreshCredentialsWhenNTLMOnly-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -405,13 +405,14 @@ This policy setting applies to applications using the Cred SSP component (for ex
 
 This policy setting applies when server authentication was achieved via a trusted X509 certificate or Kerberos.
 
-If you enable this policy setting, you can specify the servers to which the user's saved credentials can be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
+- If you enable this policy setting, you can specify the servers to which the user's saved credentials can be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
 
 If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
 
-If you disable this policy setting, delegation of saved credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of saved credentials is not permitted to any machine.
 
-Note: The "Allow delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> [!NOTE]
+> The "Allow delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
 TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
@@ -434,7 +435,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 <!-- AllowSavedCredentials-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -476,13 +477,14 @@ This policy setting applies to applications using the Cred SSP component (for ex
 
 This policy setting applies when server authentication was achieved via NTLM.
 
-If you enable this policy setting, you can specify the servers to which the user's saved credentials can be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
+- If you enable this policy setting, you can specify the servers to which the user's saved credentials can be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
 
 If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*) if the client machine is not a member of any domain. If the client is domain-joined, by default the delegation of saved credentials is not permitted to any machine.
 
-If you disable this policy setting, delegation of saved credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of saved credentials is not permitted to any machine.
 
-Note: The "Allow delegating saved credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> [!NOTE]
+> The "Allow delegating saved credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
 TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
@@ -505,7 +507,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 <!-- AllowSavedCredentialsWhenNTLMOnly-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -545,11 +547,12 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- Description-Source-ADMX -->
 This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
-If you enable this policy setting, you can specify the servers to which the user's default credentials cannot be delegated (default credentials are those that you use when first logging on to Windows).
+- If you enable this policy setting, you can specify the servers to which the user's default credentials cannot be delegated (default credentials are those that you use when first logging on to Windows).
 
 If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
 
-Note: The "Deny delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> [!NOTE]
+> The "Deny delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
 TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
@@ -574,7 +577,7 @@ This policy setting can be used in combination with the "Allow delegating defaul
 
 <!-- DenyDefaultCredentials-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -614,11 +617,12 @@ This policy setting can be used in combination with the "Allow delegating defaul
 <!-- Description-Source-ADMX -->
 This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
-If you enable this policy setting, you can specify the servers to which the user's fresh credentials cannot be delegated (fresh credentials are those that you are prompted for when executing the application).
+- If you enable this policy setting, you can specify the servers to which the user's fresh credentials cannot be delegated (fresh credentials are those that you are prompted for when executing the application).
 
 If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
 
-Note: The "Deny delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> [!NOTE]
+> The "Deny delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
 TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
@@ -643,7 +647,7 @@ This policy setting can be used in combination with the "Allow delegating fresh 
 
 <!-- DenyFreshCredentials-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -683,11 +687,12 @@ This policy setting can be used in combination with the "Allow delegating fresh 
 <!-- Description-Source-ADMX -->
 This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
-If you enable this policy setting, you can specify the servers to which the user's saved credentials cannot be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
+- If you enable this policy setting, you can specify the servers to which the user's saved credentials cannot be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
 
 If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
 
-Note: The "Deny delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> [!NOTE]
+> The "Deny delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
 TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
@@ -712,7 +717,7 @@ This policy setting can be used in combination with the "Allow delegating saved 
 
 <!-- DenySavedCredentials-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -755,7 +760,7 @@ When running in Restricted Admin or Remote Credential Guard mode, participating 
 Participating apps:
 Remote Desktop Client
 
-If you enable this policy setting, the following options are supported:
+- If you enable this policy setting, the following options are supported:
 
 Restrict credential delegation: Participating applications must use Restricted Admin or Remote Credential Guard to connect to remote hosts.
 
@@ -763,11 +768,13 @@ Require Remote Credential Guard: Participating applications must use Remote Cred
 
 Require Restricted Admin: Participating applications must use Restricted Admin to connect to remote hosts.
 
-If you disable or do not configure this policy setting, Restricted Admin and Remote Credential Guard mode are not enforced and participating apps can delegate credentials to remote devices.
+- If you disable or do not configure this policy setting, Restricted Admin and Remote Credential Guard mode are not enforced and participating apps can delegate credentials to remote devices.
 
-Note: To disable most credential delegation, it may be sufficient to deny delegation in Credential Security Support Provider (CredSSP) by modifying Administrative template settings (located at Computer Configuration\Administrative Templates\System\Credentials Delegation).
+> [!NOTE]
+> To disable most credential delegation, it may be sufficient to deny delegation in Credential Security Support Provider (CredSSP) by modifying Administrative template settings (located at Computer Configuration\Administrative Templates\System\Credentials Delegation).
 
-Note: On Windows 8.1 and Windows Server 2012 R2, enabling this policy will enforce Restricted Administration mode, regardless of the mode chosen. These versions do not support Remote Credential Guard.
+> [!NOTE]
+> On Windows 8.1 and Windows Server 2012 R2, enabling this policy will enforce Restricted Administration mode, regardless of the mode chosen. These versions do not support Remote Credential Guard.
 <!-- RestrictedRemoteAdministration-Description-End -->
 
 <!-- RestrictedRemoteAdministration-Editable-Begin -->
@@ -785,7 +792,7 @@ Note: On Windows 8.1 and Windows Server 2012 R2, enabling this policy will enfor
 
 <!-- RestrictedRemoteAdministration-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

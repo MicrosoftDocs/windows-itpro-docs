@@ -1,10 +1,10 @@
 ---
 title: Display Policy CSP
-description: Learn more about the Display Area in Policy CSP
+description: Learn more about the Display Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/29/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -272,7 +272,6 @@ To validate on Desktop, do the following tasks:
 
 1.   Configure the setting for an app, which has GDI DPI scaling enabled via MDM or any other supported mechanisms.
 2.   Run the app and observe blurry text.
-
 <!--/Validation-->Each cloud resource can also be paired optionally with an internal proxy server by using a trailing comma followed by the proxy address.
 <!-- TurnOffGdiDPIScalingForApps-Examples-End -->
 

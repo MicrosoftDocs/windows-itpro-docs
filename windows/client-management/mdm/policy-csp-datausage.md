@@ -1,10 +1,10 @@
 ---
 title: DataUsage Policy CSP
-description: Learn more about the DataUsage Area in Policy CSP
+description: Learn more about the DataUsage Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/27/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - DataUsage
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,7 +44,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting configures the cost of 3G connections on the local machine.
 
-If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all 3G connections on the local machine:
+- If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all 3G connections on the local machine:
 
 - Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
 
@@ -54,7 +52,7 @@ If this policy setting is enabled, a drop-down list box presenting possible cost
 
 - Variable: This connection is costed on a per byte basis.
 
-If this policy setting is disabled or is not configured, the cost of 3G connections is Fixed by default.
+- If this policy setting is disabled or is not configured, the cost of 3G connections is Fixed by default.
 <!-- SetCost3G-Description-End -->
 
 <!-- SetCost3G-Editable-Begin -->
@@ -74,7 +72,7 @@ If this policy setting is disabled or is not configured, the cost of 3G connecti
 
 <!-- SetCost3G-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -113,7 +111,7 @@ If this policy setting is disabled or is not configured, the cost of 3G connecti
 <!-- Description-Source-ADMX -->
 This policy setting configures the cost of 4G connections on the local machine.
 
-If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all 4G connections on the local machine:
+- If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all 4G connections on the local machine:
 
 - Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
 
@@ -121,7 +119,7 @@ If this policy setting is enabled, a drop-down list box presenting possible cost
 
 - Variable: This connection is costed on a per byte basis.
 
-If this policy setting is disabled or is not configured, the cost of 4G connections is Fixed by default.
+- If this policy setting is disabled or is not configured, the cost of 4G connections is Fixed by default.
 <!-- SetCost4G-Description-End -->
 
 <!-- SetCost4G-Editable-Begin -->
@@ -139,7 +137,7 @@ If this policy setting is disabled or is not configured, the cost of 4G connecti
 
 <!-- SetCost4G-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

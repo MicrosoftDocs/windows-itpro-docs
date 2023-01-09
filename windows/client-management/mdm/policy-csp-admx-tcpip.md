@@ -1,10 +1,10 @@
 ---
 title: ADMX_tcpip Policy CSP
-description: Learn more about the ADMX_tcpip Area in Policy CSP
+description: Learn more about the ADMX_tcpip Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/04/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_tcpip
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,9 +44,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify a 6to4 relay name for a 6to4 host. A 6to4 relay is used as a default gateway for IPv6 network traffic sent by the 6to4 host. The 6to4 relay name setting has no effect if 6to4 connectivity is not available on the host.
 
-If you enable this policy setting, you can specify a relay name for a 6to4 host.
+- If you enable this policy setting, you can specify a relay name for a 6to4 host.
 
-If you disable or do not configure this policy setting, the local host setting is used, and you cannot specify a relay name for a 6to4 host.
+- If you disable or do not configure this policy setting, the local host setting is used, and you cannot specify a relay name for a 6to4 host.
 <!-- 6to4_Router_Name-Description-End -->
 
 <!-- 6to4_Router_Name-Editable-Begin -->
@@ -66,7 +64,7 @@ If you disable or do not configure this policy setting, the local host setting i
 
 <!-- 6to4_Router_Name-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -105,9 +103,9 @@ If you disable or do not configure this policy setting, the local host setting i
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the interval at which the relay name is resolved. The 6to4 relay name resolution interval setting has no effect if 6to4 connectivity is not available on the host.
 
-If you enable this policy setting, you can specify the value for the duration at which the relay name is resolved periodically.
+- If you enable this policy setting, you can specify the value for the duration at which the relay name is resolved periodically.
 
-If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or do not configure this policy setting, the local host setting is used.
 <!-- 6to4_Router_Name_Resolution_Interval-Description-End -->
 
 <!-- 6to4_Router_Name_Resolution_Interval-Editable-Begin -->
@@ -125,7 +123,7 @@ If you disable or do not configure this policy setting, the local host setting i
 
 <!-- 6to4_Router_Name_Resolution_Interval-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -164,9 +162,9 @@ If you disable or do not configure this policy setting, the local host setting i
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure 6to4, an address assignment and router-to-router automatic tunneling technology that is used to provide unicast IPv6 connectivity between IPv6 sites and hosts across the IPv4 Internet. 6to4 uses the global address prefix: 2002:WWXX:YYZZ::/48 in which the letters are a hexadecimal representation of the global IPv4 address (w.x.y.z) assigned to a site.
 
-If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or do not configure this policy setting, the local host setting is used.
 
-If you enable this policy setting, you can configure 6to4 with one of the following settings:
+- If you enable this policy setting, you can configure 6to4 with one of the following settings:
 
 Policy Default State: 6to4 is turned off and connectivity with 6to4 will not be available.
 
@@ -190,7 +188,7 @@ Policy Disabled State: 6to4 is turned off and connectivity with 6to4 will not be
 
 <!-- 6to4_State-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -229,9 +227,9 @@ Policy Disabled State: 6to4 is turned off and connectivity with 6to4 will not be
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure IP Stateless Autoconfiguration Limits.
 
-If you enable or do not configure this policy setting, IP Stateless Autoconfiguration Limits will be enabled and system will limit the number of autoconfigured addresses and routes.
+- If you enable or do not configure this policy setting, IP Stateless Autoconfiguration Limits will be enabled and system will limit the number of autoconfigured addresses and routes.
 
-If you disable this policy setting, IP Stateless Autoconfiguration Limits will be disabled and system will not limit the number of autoconfigured addresses and routes.
+- If you disable this policy setting, IP Stateless Autoconfiguration Limits will be disabled and system will not limit the number of autoconfigured addresses and routes.
 <!-- IP_Stateless_Autoconfiguration_Limits_State-Description-End -->
 
 <!-- IP_Stateless_Autoconfiguration_Limits_State-Editable-Begin -->
@@ -249,7 +247,7 @@ If you disable this policy setting, IP Stateless Autoconfiguration Limits will b
 
 <!-- IP_Stateless_Autoconfiguration_Limits_State-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -289,9 +287,9 @@ If you disable this policy setting, IP Stateless Autoconfiguration Limits will b
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure IP-HTTPS, a tunneling technology that uses the HTTPS protocol to provide IP connectivity to a remote network.
 
-If you disable or do not configure this policy setting, the local host settings are used.
+- If you disable or do not configure this policy setting, the local host settings are used.
 
-If you enable this policy setting, you can specify an IP-HTTPS server URL. You will be able to configure IP-HTTPS with one of the following settings:
+- If you enable this policy setting, you can specify an IP-HTTPS server URL. You will be able to configure IP-HTTPS with one of the following settings:
 
 Policy Default State: The IP-HTTPS interface is used when there are no other connectivity options.
 
@@ -315,7 +313,7 @@ Policy Disabled State: No IP-HTTPS interfaces are present on the host.
 
 <!-- IPHTTPS_ClientState-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -354,9 +352,9 @@ Policy Disabled State: No IP-HTTPS interfaces are present on the host.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify a router name or Internet Protocol version 4 (IPv4) address for an ISATAP router.
 
-If you enable this policy setting, you can specify a router name or IPv4 address for an ISATAP router. If you enter an IPv4 address of the ISATAP router in the text box, DNS services are not required.
+- If you enable this policy setting, you can specify a router name or IPv4 address for an ISATAP router. If you enter an IPv4 address of the ISATAP router in the text box, DNS services are not required.
 
-If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or do not configure this policy setting, the local host setting is used.
 <!-- ISATAP_Router_Name-Description-End -->
 
 <!-- ISATAP_Router_Name-Editable-Begin -->
@@ -374,7 +372,7 @@ If you disable or do not configure this policy setting, the local host setting i
 
 <!-- ISATAP_Router_Name-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -413,9 +411,9 @@ If you disable or do not configure this policy setting, the local host setting i
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure Intra-Site Automatic Tunnel Addressing Protocol (ISATAP), an address-to-router and host-to-host, host-to-router and router-to-host automatic tunneling technology that is used to provide unicast IPv6 connectivity between IPv6 hosts across an IPv4 intranet.
 
-If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or do not configure this policy setting, the local host setting is used.
 
-If you enable this policy setting, you can configure ISATAP with one of the following settings:
+- If you enable this policy setting, you can configure ISATAP with one of the following settings:
 
 Policy Default State: No ISATAP interfaces are present on the host.
 
@@ -439,7 +437,7 @@ Policy Disabled State: No ISATAP interfaces are present on the host.
 
 <!-- ISATAP_State-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -478,9 +476,9 @@ Policy Disabled State: No ISATAP interfaces are present on the host.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to select the UDP port the Teredo client will use to send packets. If you leave the default of 0, the operating system will select a port (recommended). If you select a UDP port that is already in use by a system, the Teredo client will fail to initialize.
 
-If you enable this policy setting, you can customize a UDP port for the Teredo client.
+- If you enable this policy setting, you can customize a UDP port for the Teredo client.
 
-If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or do not configure this policy setting, the local host setting is used.
 <!-- Teredo_Client_Port-Description-End -->
 
 <!-- Teredo_Client_Port-Editable-Begin -->
@@ -498,7 +496,7 @@ If you disable or do not configure this policy setting, the local host setting i
 
 <!-- Teredo_Client_Port-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -537,7 +535,7 @@ If you disable or do not configure this policy setting, the local host setting i
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set Teredo to be ready to communicate, a process referred to as qualification. By default, Teredo enters a dormant state when not in use. The qualification process brings it out of a dormant state.
 
-If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or do not configure this policy setting, the local host setting is used.
 
 This policy setting contains only one state:
 
@@ -559,7 +557,7 @@ Policy Enabled State: If Default Qualified is enabled, Teredo will attempt quali
 
 <!-- Teredo_Default_Qualified-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -598,11 +596,12 @@ Policy Enabled State: If Default Qualified is enabled, Teredo will attempt quali
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the Teredo refresh rate.
 
-Note: On a periodic basis (by default, every 30 seconds), Teredo clients send a single Router Solicitation packet to the Teredo server. The Teredo server sends a Router Advertisement Packet in response. This periodic packet refreshes the IP address and UDP port mapping in the translation table of the Teredo client's NAT device.
+> [!NOTE]
+> On a periodic basis (by default, every 30 seconds), Teredo clients send a single Router Solicitation packet to the Teredo server. The Teredo server sends a Router Advertisement Packet in response. This periodic packet refreshes the IP address and UDP port mapping in the translation table of the Teredo client's NAT device.
 
-If you enable this policy setting, you can specify the refresh rate. If you choose a refresh rate longer than the port mapping in the Teredo client's NAT device, Teredo might stop working or connectivity might be intermittent.
+- If you enable this policy setting, you can specify the refresh rate. If you choose a refresh rate longer than the port mapping in the Teredo client's NAT device, Teredo might stop working or connectivity might be intermittent.
 
-If you disable or do not configure this policy setting, the refresh rate is configured using the local settings on the computer. The default refresh rate is 30 seconds.
+- If you disable or do not configure this policy setting, the refresh rate is configured using the local settings on the computer. The default refresh rate is 30 seconds.
 <!-- Teredo_Refresh_Rate-Description-End -->
 
 <!-- Teredo_Refresh_Rate-Editable-Begin -->
@@ -620,7 +619,7 @@ If you disable or do not configure this policy setting, the refresh rate is conf
 
 <!-- Teredo_Refresh_Rate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -659,9 +658,9 @@ If you disable or do not configure this policy setting, the refresh rate is conf
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the name of the Teredo server. This server name will be used on the Teredo client computer where this policy setting is applied.
 
-If you enable this policy setting, you can specify a Teredo server name that applies to a Teredo client.
+- If you enable this policy setting, you can specify a Teredo server name that applies to a Teredo client.
 
-If you disable or do not configure this policy setting, the local settings on the computer are used to determine the Teredo server name.
+- If you disable or do not configure this policy setting, the local settings on the computer are used to determine the Teredo server name.
 <!-- Teredo_Server_Name-Description-End -->
 
 <!-- Teredo_Server_Name-Editable-Begin -->
@@ -679,7 +678,7 @@ If you disable or do not configure this policy setting, the local settings on th
 
 <!-- Teredo_Server_Name-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -718,9 +717,9 @@ If you disable or do not configure this policy setting, the local settings on th
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure Teredo, an address assignment and automatic tunneling technology that provides unicast IPv6 connectivity across the IPv4 Internet.
 
-If you disable or do not configure this policy setting, the local host settings are used.
+- If you disable or do not configure this policy setting, the local host settings are used.
 
-If you enable this policy setting, you can configure Teredo with one of the following settings:
+- If you enable this policy setting, you can configure Teredo with one of the following settings:
 
 Default: The default state is "Client."
 
@@ -746,7 +745,7 @@ Enterprise Client: The Teredo interface is always present, even if the host is o
 
 <!-- Teredo_State-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -785,11 +784,11 @@ Enterprise Client: The Teredo interface is always present, even if the host is o
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure Window Scaling Heuristics. Window Scaling Heuristics is an algorithm to identify connectivity and throughput problems caused by many Firewalls and other middle boxes that don't interpret Window Scaling option correctly.
 
-If you do not configure this policy setting, the local host settings are used.
+- If you do not configure this policy setting, the local host settings are used.
 
-If you enable this policy setting, Window Scaling Heuristics will be enabled and system will try to identify connectivity and throughput problems and take appropriate measures.
+- If you enable this policy setting, Window Scaling Heuristics will be enabled and system will try to identify connectivity and throughput problems and take appropriate measures.
 
-If you disable this policy setting, Window Scaling Heuristics will be disabled and system will not try to identify connectivity and throughput problems casued by Firewalls or other middle boxes.
+- If you disable this policy setting, Window Scaling Heuristics will be disabled and system will not try to identify connectivity and throughput problems casued by Firewalls or other middle boxes.
 <!-- Windows_Scaling_Heuristics_State-Description-End -->
 
 <!-- Windows_Scaling_Heuristics_State-Editable-Begin -->
@@ -807,7 +806,7 @@ If you disable this policy setting, Window Scaling Heuristics will be disabled a
 
 <!-- Windows_Scaling_Heuristics_State-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

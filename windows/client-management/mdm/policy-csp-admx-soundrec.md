@@ -1,6 +1,6 @@
 ---
 title: ADMX_SoundRec Policy CSP
-description: Learn more about the ADMX_SoundRec Area in Policy CSP
+description: Learn more about the ADMX_SoundRec Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

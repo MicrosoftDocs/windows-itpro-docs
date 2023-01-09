@@ -1,10 +1,10 @@
 ---
 title: ADMX_nca Policy CSP
-description: Learn more about the ADMX_nca Area in Policy CSP
+description: Learn more about the ADMX_nca Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_nca
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -48,19 +46,19 @@ Specifies resources on your intranet that are normally accessible to DirectAcces
 
 Each string can be one of the following types:
 
-- A DNS name or IPv6 address that NCA pings. The syntax is “PING:” followed by a fully qualified domain name (FQDN) that resolves to an IPv6 address, or an IPv6 address. Examples: PING:myserver.corp.contoso.com or PING:2002:836b:1::1.
+- A DNS name or IPv6 address that NCA pings. The syntax is "PING:" followed by a fully qualified domain name (FQDN) that resolves to an IPv6 address, or an IPv6 address. Examples: PING:myserver.corp.contoso.com or PING:2002:836b:1::1.
 
-Note
+**Note**
 
 We recommend that you use FQDNs instead of IPv6 addresses wherever possible.
 
-Important
+**Important**
 
 At least one of the entries must be a PING: resource.
 
--	A Uniform Resource Locator (URL) that NCA queries with a Hypertext Transfer Protocol (HTTP) request. The contents of the web page do not matter. The syntax is “HTTP:” followed by a URL. The host portion of the URL must resolve to an IPv6 address of a Web server or contain an IPv6 address. Examples: HTTP:<https://myserver.corp.contoso.com/> or HTTP:https://2002:836b:1::1/.
+-	A Uniform Resource Locator (URL) that NCA queries with a Hypertext Transfer Protocol (HTTP) request. The contents of the web page do not matter. The syntax is "HTTP:" followed by a URL. The host portion of the URL must resolve to an IPv6 address of a Web server or contain an IPv6 address. Examples: HTTP:<https://myserver.corp.contoso.com/> or HTTP:https://2002:836b:1::1/.
 
--	A Universal Naming Convention (UNC) path to a file that NCA checks for existence. The contents of the file do not matter. The syntax is “FILE:” followed by a UNC path. The ComputerName portion of the UNC path must resolve to an IPv6 address or contain an IPv6 address. Examples: FILE:\\myserver\myshare\test.txt or FILE:\\2002:836b:1::1\myshare\test.txt.
+-	A Universal Naming Convention (UNC) path to a file that NCA checks for existence. The contents of the file do not matter. The syntax is "FILE:" followed by a UNC path. The ComputerName portion of the UNC path must resolve to an IPv6 address or contain an IPv6 address. Examples: FILE:\\myserver\myshare\test.txt or FILE:\\2002:836b:1::1\myshare\test.txt.
 
 You must configure this setting to have complete NCA functionality.
 <!-- CorporateResources-Description-End -->
@@ -80,7 +78,7 @@ You must configure this setting to have complete NCA functionality.
 
 <!-- CorporateResources-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -135,7 +133,7 @@ Specifies commands configured by the administrator for custom logging. These com
 
 <!-- CustomCommands-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -196,7 +194,7 @@ You must configure this setting to have complete NCA functionality.
 
 <!-- DTEs-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -233,9 +231,9 @@ You must configure this setting to have complete NCA functionality.
 
 <!-- FriendlyName-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Specifies the string that appears for DirectAccess connectivity when the user clicks the Networking notification area icon. For example, you can specify “Contoso Intranet Access” for the DirectAccess clients of the Contoso Corporation.
+Specifies the string that appears for DirectAccess connectivity when the user clicks the Networking notification area icon. For example, you can specify "Contoso Intranet Access" for the DirectAccess clients of the Contoso Corporation.
 
-If this setting is not configured, the string that appears for DirectAccess connectivity is “Corporate Connection”.
+If this setting is not configured, the string that appears for DirectAccess connectivity is "Corporate Connection".
 <!-- FriendlyName-Description-End -->
 
 <!-- FriendlyName-Editable-Begin -->
@@ -253,7 +251,7 @@ If this setting is not configured, the string that appears for DirectAccess conn
 
 <!-- FriendlyName-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -292,15 +290,13 @@ If this setting is not configured, the string that appears for DirectAccess conn
 <!-- Description-Source-ADMX -->
 Specifies whether the user has Connect and Disconnect options for the DirectAccess entry when the user clicks the Networking notification area icon.
 
-If the user clicks the Disconnect option, NCA removes the DirectAccess rules from the Name Resolution Policy Table (NRPT) and the DirectAccess client computer uses whatever normal name resolution is available to the client computer in its current network configuration, including sending all DNS queries to the local intranet or Internet DNS servers.
+If the user clicks the Disconnect option, NCA removes the DirectAccess rules from the Name Resolution Policy Table (NRPT) and the DirectAccess client computer uses whatever normal name resolution is available to the client computer in its current network configuration, including sending all DNS queries to the local intranet or Internet DNS servers. **Note** that NCA does not remove the existing IPsec tunnels and users can still access intranet resources across the DirectAccess server by specifying IPv6 addresses rather than names.
 
-**Note** that NCA does not remove the existing IPsec tunnels and users can still access intranet resources across the DirectAccess server by specifying IPv6 addresses rather than names.
-
-The ability to disconnect allows users to specify single-label, unqualified names (such as “PRINTSVR”) for local resources when connected to a different intranet and for temporary access to intranet resources when network location detection has not correctly determined that the DirectAccess client computer is connected to its own intranet.
+The ability to disconnect allows users to specify single-label, unqualified names (such as "PRINTSVR") for local resources when connected to a different intranet and for temporary access to intranet resources when network location detection has not correctly determined that the DirectAccess client computer is connected to its own intranet.
 
 To restore the DirectAccess rules to the NRPT and resume normal DirectAccess functionality, the user clicks Connect.
 
-Note
+**Note**
 If the DirectAccess client computer is on the intranet and has correctly determined its network location, the Disconnect option has no effect because the rules for DirectAccess are already removed from the NRPT.
 
 If this setting is not configured, users do not have Connect or Disconnect options.
@@ -321,7 +317,7 @@ If this setting is not configured, users do not have Connect or Disconnect optio
 
 <!-- LocalNamesOn-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -379,7 +375,7 @@ Set this to Disabled to keep NCA probing actively all the time. If this setting 
 
 <!-- PassiveMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -439,7 +435,7 @@ If this setting is not configured, the entry for DirectAccess connectivity appea
 
 <!-- ShowUI-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -497,7 +493,7 @@ When the user sends the log files to the Administrator, NCA uses the default e-m
 
 <!-- SupportEmail-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

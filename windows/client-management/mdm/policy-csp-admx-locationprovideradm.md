@@ -1,10 +1,10 @@
 ---
 title: ADMX_LocationProviderAdm Policy CSP
-description: Learn more about the ADMX_LocationProviderAdm Area in Policy CSP
+description: Learn more about the ADMX_LocationProviderAdm Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_LocationProviderAdm
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -48,9 +46,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting turns off the Windows Location Provider feature for this computer.
 
-If you enable this policy setting, the Windows Location Provider feature will be turned off, and all programs on this computer will not be able to use the Windows Location Provider feature.
+- If you enable this policy setting, the Windows Location Provider feature will be turned off, and all programs on this computer will not be able to use the Windows Location Provider feature.
 
-If you disable or do not configure this policy setting, all programs on this computer can use the Windows Location Provider feature.
+- If you disable or do not configure this policy setting, all programs on this computer can use the Windows Location Provider feature.
 <!-- DisableWindowsLocationProvider_1-Description-End -->
 
 <!-- DisableWindowsLocationProvider_1-Editable-Begin -->
@@ -68,13 +66,13 @@ If you disable or do not configure this policy setting, all programs on this com
 
 <!-- DisableWindowsLocationProvider_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DisableWindowsLocationProvider |
+| Name | DisableWindowsLocationProvider_1 |
 | Friendly Name | Turn off Windows Location Provider |
 | Location | Computer Configuration |
 | Path | Windows Components > Location and Sensors > Windows Location Provider |

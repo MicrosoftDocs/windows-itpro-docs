@@ -1,10 +1,10 @@
 ---
 title: WindowsAutopilot Policy CSP
-description: Learn more about the WindowsAutopilot Area in Policy CSP
+description: Learn more about the WindowsAutopilot Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/07/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -59,8 +59,8 @@ Specifies whether to check for Windows Autopilot updates after enrollment. Most 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Not enabled |
-| 1 | Enabled |
+| 0 (Default) | Not enabled. |
+| 1 | Enabled. |
 <!-- EnableAgilityPostEnrollment-AllowedValues-End -->
 
 <!-- EnableAgilityPostEnrollment-Examples-Begin -->

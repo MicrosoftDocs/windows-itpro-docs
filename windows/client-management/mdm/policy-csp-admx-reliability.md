@@ -1,10 +1,10 @@
 ---
 title: ADMX_Reliability Policy CSP
-description: Learn more about the ADMX_Reliability Area in Policy CSP
+description: Learn more about the ADMX_Reliability Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_Reliability
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,13 +44,14 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows the system to detect the time of unexpected shutdowns by writing the current time to disk on a schedule controlled by the Timestamp Interval.
 
-If you enable this policy setting, you are able to specify how often the Persistent System Timestamp is refreshed and subsequently written to the disk. You can specify the Timestamp Interval in seconds.
+- If you enable this policy setting, you are able to specify how often the Persistent System Timestamp is refreshed and subsequently written to the disk. You can specify the Timestamp Interval in seconds.
 
-If you disable this policy setting, the Persistent System Timestamp is turned off and the timing of unexpected shutdowns is not recorded.
+- If you disable this policy setting, the Persistent System Timestamp is turned off and the timing of unexpected shutdowns is not recorded.
 
-If you do not configure this policy setting, the Persistent System Timestamp is refreshed according the default, which is every 60 seconds beginning with Windows Server 2003.
+- If you do not configure this policy setting, the Persistent System Timestamp is refreshed according the default, which is every 60 seconds beginning with Windows Server 2003.
 
-Note: This feature might interfere with power configuration settings that turn off hard disks after a period of inactivity. These power settings may be accessed in the Power Options Control Panel.
+> [!NOTE]
+> This feature might interfere with power configuration settings that turn off hard disks after a period of inactivity. These power settings may be accessed in the Power Options Control Panel.
 <!-- EE_EnablePersistentTimeStamp-Description-End -->
 
 <!-- EE_EnablePersistentTimeStamp-Editable-Begin -->
@@ -70,7 +69,7 @@ Note: This feature might interfere with power configuration settings that turn o
 
 <!-- EE_EnablePersistentTimeStamp-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -110,11 +109,11 @@ Note: This feature might interfere with power configuration settings that turn o
 <!-- Description-Source-ADMX -->
 This policy setting controls whether or not unplanned shutdown events can be reported when error reporting is enabled.
 
-If you enable this policy setting, error reporting includes unplanned shutdown events.
+- If you enable this policy setting, error reporting includes unplanned shutdown events.
 
-If you disable this policy setting, unplanned shutdown events are not included in error reporting.
+- If you disable this policy setting, unplanned shutdown events are not included in error reporting.
 
-If you do not configure this policy setting, users can adjust this setting using the control panel, which is set to "Upload unplanned shutdown events" by default.
+- If you do not configure this policy setting, users can adjust this setting using the control panel, which is set to "Upload unplanned shutdown events" by default.
 
 Also see the "Configure Error Reporting" policy setting.
 <!-- PCH_ReportShutdownEvents-Description-End -->
@@ -134,7 +133,7 @@ Also see the "Configure Error Reporting" policy setting.
 
 <!-- PCH_ReportShutdownEvents-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -176,13 +175,14 @@ This policy setting defines when the Shutdown Event Tracker System State Data fe
 
 The system state data file contains information about the basic system state as well as the state of all running processes.
 
-If you enable this policy setting, the System State Data feature is activated when the user indicates that the shutdown or restart is unplanned.
+- If you enable this policy setting, the System State Data feature is activated when the user indicates that the shutdown or restart is unplanned.
 
-If you disable this policy setting, the System State Data feature is never activated.
+- If you disable this policy setting, the System State Data feature is never activated.
 
-If you do not configure this policy setting, the default behavior for the System State Data feature occurs.
+- If you do not configure this policy setting, the default behavior for the System State Data feature occurs.
 
-Note: By default, the System State Data feature is always enabled on Windows Server 2003. See "Supported on" for all supported versions.
+> [!NOTE]
+> By default, the System State Data feature is always enabled on Windows Server 2003. See "Supported on" for all supported versions.
 <!-- ShutdownEventTrackerStateFile-Description-End -->
 
 <!-- ShutdownEventTrackerStateFile-Editable-Begin -->
@@ -200,7 +200,7 @@ Note: By default, the System State Data feature is always enabled on Windows Ser
 
 <!-- ShutdownEventTrackerStateFile-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -240,17 +240,18 @@ Note: By default, the System State Data feature is always enabled on Windows Ser
 <!-- Description-Source-ADMX -->
 The Shutdown Event Tracker can be displayed when you shut down a workstation or server. This is an extra set of questions that is displayed when you invoke a shutdown to collect information related to why you are shutting down the computer.
 
-If you enable this setting and choose "Always" from the drop-down menu list, the Shutdown Event Tracker is displayed when the computer shuts down.
+- If you enable this setting and choose "Always" from the drop-down menu list, the Shutdown Event Tracker is displayed when the computer shuts down.
 
-If you enable this policy setting and choose "Server Only" from the drop-down menu list, the Shutdown Event Tracker is displayed when you shut down a computer running Windows Server. (See "Supported on" for supported versions.)
+- If you enable this policy setting and choose "Server Only" from the drop-down menu list, the Shutdown Event Tracker is displayed when you shut down a computer running Windows Server. (See "Supported on" for supported versions.)
 
-If you enable this policy setting and choose "Workstation Only" from the drop-down menu list, the Shutdown Event Tracker is displayed when you shut down a computer running a client version of Windows. (See "Supported on" for supported versions.)
+- If you enable this policy setting and choose "Workstation Only" from the drop-down menu list, the Shutdown Event Tracker is displayed when you shut down a computer running a client version of Windows. (See "Supported on" for supported versions.)
 
-If you disable this policy setting, the Shutdown Event Tracker is not displayed when you shut down the computer.
+- If you disable this policy setting, the Shutdown Event Tracker is not displayed when you shut down the computer.
 
-If you do not configure this policy setting, the default behavior for the Shutdown Event Tracker occurs.
+- If you do not configure this policy setting, the default behavior for the Shutdown Event Tracker occurs.
 
-Note: By default, the Shutdown Event Tracker is only displayed on computers running Windows Server.
+> [!NOTE]
+> By default, the Shutdown Event Tracker is only displayed on computers running Windows Server.
 <!-- ShutdownReason-Description-End -->
 
 <!-- ShutdownReason-Editable-Begin -->
@@ -268,7 +269,7 @@ Note: By default, the Shutdown Event Tracker is only displayed on computers runn
 
 <!-- ShutdownReason-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

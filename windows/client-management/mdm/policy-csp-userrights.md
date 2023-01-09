@@ -1,10 +1,10 @@
 ---
 title: UserRights Policy CSP
-description: Learn more about the UserRights Area in Policy CSP
+description: Learn more about the UserRights Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/08/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -18,7 +18,6 @@ ms.topic: reference
 
 <!-- UserRights-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 User rights are assigned for user accounts or groups. The name of the policy defines the user right in question, and the values are always users or groups. Values can be represented as Security Identifiers (SID) or strings. For more information, see [Well-known SID structures](/openspecs/windows_protocols/ms-dtyp/81d92bba-d22b-4a8c-908a-554ab29148ab).
 
 Even though strings are supported for well-known accounts and groups, it's better to use SIDs, because strings are localized for different languages. Some user rights allow things like AccessFromNetwork, while others disallow things, like DenyAccessFromNetwork.
@@ -103,7 +102,6 @@ For example, the following syntax grants user rights to a specific user or group
 ```xml
 <![CDATA[*S-1-12-1-430441778-1204322964-3914475434-3271576427&#xF000;*S-1-12-1-2699785510-1240757380-4153857927-656075536]]>
 ```
-
 <!-- UserRights-Editable-End -->
 
 <!-- AccessCredentialManagerAsTrustedCaller-Begin -->
@@ -172,9 +170,10 @@ This user right is used by Credential Manager during Backup/Restore. No accounts
 
 <!-- AccessFromNetwork-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users and groups are allowed to connect to the computer over the network. Remote Desktop Services are not affected by this user right.
+This user right determines which users and groups are allowed to connect to the computer over the network. Remote Desktop Services are not affected by this user right
 
-**Note**: Remote Desktop Services was called Terminal Services in previous versions of Windows Server.
+> [!NOTE]
+> Remote Desktop Services was called Terminal Services in previous versions of Windows Server.
 <!-- AccessFromNetwork-Description-End -->
 
 <!-- AccessFromNetwork-Editable-Begin -->
@@ -223,7 +222,7 @@ This user right determines which users and groups are allowed to connect to the 
 
 <!-- ActAsPartOfTheOperatingSystem-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right allows a process to impersonate any user without authentication. The process can therefore gain access to the same local resources as that user. Processes that require this privilege should use the LocalSystem account, which already includes this privilege, rather than using a separate user account with this privilege specially assigned.
+This user right allows a process to impersonate any user without authentication. The process can therefore gain access to the same local resources as that user. Processes that require this privilege should use the LocalSystem account, which already includes this privilege, rather than using a separate user account with this privilege specially assigned
 
 > [!CAUTION]
 > Assigning this user right can be a security risk. Only assign this user right to trusted users.
@@ -275,9 +274,10 @@ This user right allows a process to impersonate any user without authentication.
 
 <!-- AllowLocalLogOn-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users can log on to the computer.
+This user right determines which users can log on to the computer
 
-**Note**: Modifying this setting may affect compatibility with clients, services, and applications. For compatibility information about this setting, see Allow log on locally (<https://go.microsoft.com/fwlink/?LinkId=24268> ) at the Microsoft website.
+> [!NOTE]
+> Modifying this setting may affect compatibility with clients, services, and applications. For compatibility information about this setting, see Allow log on locally (<https//go.microsoft.com/fwlink/?LinkId=24268> ) at the Microsoft website.
 <!-- AllowLocalLogOn-Description-End -->
 
 <!-- AllowLocalLogOn-Editable-Begin -->
@@ -326,7 +326,7 @@ This user right determines which users can log on to the computer.
 
 <!-- BackupFilesAndDirectories-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when backing up files and directories.Specifically, this user right is similar to granting the following permissions to the user or group in question on all files and folders on the system:Traverse Folder/Execute File, Read.
+This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when backing up files and directories. Specifically, this user right is similar to granting the following permissions to the user or group in question on all files and folders on the systemTraverse Folder/Execute File, Read
 
 > [!CAUTION]
 > Assigning this user right can be a security risk. Since users with this user right can read any registry settings and files, only assign this user right to trusted users
@@ -441,7 +441,6 @@ This user right determines which users and groups can change the time and date o
 > | Error code         | Symbolic name       | Error description            | Header     |
 > |--------------------|---------------------|------------------------------|------------|
 > | `0x80070032` (Hex) | ERROR_NOT_SUPPORTED | The request isn't supported. | winerror.h |
-
 <!-- ChangeSystemTime-Editable-End -->
 
 <!-- ChangeSystemTime-DFProperties-Begin -->
@@ -535,7 +534,7 @@ This user right determines which users and groups can change the time zone used 
 
 <!-- CreateGlobalObjects-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting determines whether users can create global objects that are available to all sessions. Users can still create objects that are specific to their own session if they do not have this user right. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption.
+This security setting determines whether users can create global objects that are available to all sessions. Users can still create objects that are specific to their own session if they do not have this user right. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption
 
 > [!CAUTION]
 > Assigning this user right can be a security risk. Assign this user right only to trusted users.
@@ -685,12 +684,13 @@ This user right determines which accounts can be used by processes to create a d
 
 <!-- CreateSymbolicLinks-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines if the user can create a symbolic link from the computer he is logged on to.
+This user right determines if the user can create a symbolic link from the computer he is logged on to
 
 > [!CAUTION]
-> This privilege should only be given to trusted users. Symbolic links can expose security vulnerabilities in applications that aren't designed to handle them.
+> This privilege should only be given to trusted users. Symbolic links can expose security vulnerabilities in applications that aren't designed to handle them
 
-**Note**: This setting can be used in conjunction a symlink filesystem setting that can be manipulated with the command line utility to control the kinds of symlinks that are allowed on the machine. Type 'fsutil behavior set symlinkevaluation /?' at the command line to get more information about fsutil and symbolic links.
+> [!NOTE]
+> This setting can be used in conjunction a symlink filesystem setting that can be manipulated with the command line utility to control the kinds of symlinks that are allowed on the machine. Type 'fsutil behavior set symlinkevaluation /?' at the command line to get more information about fsutil and symbolic links.
 <!-- CreateSymbolicLinks-Description-End -->
 
 <!-- CreateSymbolicLinks-Editable-Begin -->
@@ -739,7 +739,7 @@ This user right determines if the user can create a symbolic link from the compu
 
 <!-- CreateToken-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which accounts can be used by processes to create a token that can then be used to get access to any local resources when the process uses an internal application programming interface (API) to create an access token. This user right is used internally by the operating system. Unless it is necessary, do not assign this user right to a user, group, or process other than Local System.
+This user right determines which accounts can be used by processes to create a token that can then be used to get access to any local resources when the process uses an internal application programming interface (API) to create an access token. This user right is used internally by the operating system. Unless it is necessary, do not assign this user right to a user, group, or process other than Local System
 
 > [!CAUTION]
 > Assigning this user right can be a security risk. Do not assign this user right to any user, group, or process that you do not want to take over the system.
@@ -791,7 +791,7 @@ This user right determines which accounts can be used by processes to create a t
 
 <!-- DebugPrograms-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users can attach a debugger to any process or to the kernel. Developers who are debugging their own applications do not need to be assigned this user right. Developers who are debugging new system components will need this user right to be able to do so. This user right provides complete access to sensitive and critical operating system components.
+This user right determines which users can attach a debugger to any process or to the kernel. Developers who are debugging their own applications do not need to be assigned this user right. Developers who are debugging new system components will need this user right to be able to do so. This user right provides complete access to sensitive and critical operating system components
 
 > [!CAUTION]
 > Assigning this user right can be a security risk. Only assign this user right to trusted users.
@@ -892,16 +892,15 @@ This user right determines which users are prevented from accessing a computer o
 
 <!-- DenyLocalLogOn-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting determines which service accounts are prevented from registering a process as a service.
+This security setting determines which service accounts are prevented from registering a process as a service
 
-**Note**: This security setting does not apply to the System, Local Service, or Network Service accounts.
+> [!NOTE]
+> This security setting does not apply to the System, Local Service, or Network Service accounts.
 <!-- DenyLocalLogOn-Description-End -->
 
 <!-- DenyLocalLogOn-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
-  <!-- KNOWN ISSUE: DenyLocalLogOn policy section from DDF has strings for 'Deny log on as a service'-->
-
+<!-- KNOWN ISSUE: DenyLocalLogOn policy section from DDF has strings for 'Deny log on as a service'-->
 <!-- DenyLocalLogOn-Editable-End -->
 
 <!-- DenyLocalLogOn-DFProperties-Begin -->
@@ -1044,7 +1043,7 @@ This user right determines which users and groups are prohibited from logging on
 
 <!-- EnableDelegation-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users can set the Trusted for Delegation setting on a user or computer object. The user or object that is granted this privilege must have write access to the account control flags on the user or computer object. A server process running on a computer (or under a user context) that is trusted for delegation can access resources on another computer using delegated credentials of a client, as long as the client account does not have the Account cannot be delegated account control flag set.
+This user right determines which users can set the Trusted for Delegation setting on a user or computer object. The user or object that is granted this privilege must have write access to the account control flags on the user or computer object. A server process running on a computer (or under a user context) that is trusted for delegation can access resources on another computer using delegated credentials of a client, as long as the client account does not have the Account cannot be delegated account control flag set
 
 > [!CAUTION]
 > Misuse of this user right, or of the Trusted for Delegation setting, could make the network vulnerable to sophisticated attacks using Trojan horse programs that impersonate incoming clients and use their credentials to gain access to network resources.
@@ -1145,14 +1144,16 @@ This user right determines which accounts can be used by a process to add entrie
 
 <!-- ImpersonateClient-Description-Begin -->
 <!-- Description-Source-DDF -->
-Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they have created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels.
+Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they have created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels
 
 > [!CAUTION]
-> Assigning this user right can be a security risk. Only assign this user right to trusted users.
+> Assigning this user right can be a security risk. Only assign this user right to trusted users
 
-**Note**: By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist. 1) The access token that is being impersonated is for this user. 2) The user, in this logon session, created the access token by logging on to the network with explicit credentials. 3) The requested level is less than Impersonate, such as Anonymous or Identify. Because of these factors, users do not usually need this user right.
+> [!NOTE]
+> By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist. 1) The access token that is being impersonated is for this user. 2) The user, in this logon session, created the access token by logging on to the network with explicit credentials. 3) The requested level is less than Impersonate, such as Anonymous or Identify. Because of these factors, users do not usually need this user right
 
-**Warning**: If you enable this setting, programs that previously had the Impersonate privilege may lose it, and they may not run.
+> [!WARNING]
+> If you enable this setting, programs that previously had the Impersonate privilege may lose it, and they may not run.
 <!-- ImpersonateClient-Description-End -->
 
 <!-- ImpersonateClient-Editable-Begin -->
@@ -1201,9 +1202,10 @@ Assigning this user right to a user allows programs running on behalf of that us
 
 <!-- IncreaseProcessWorkingSet-Description-Begin -->
 <!-- Description-Source-DDF -->
-Increase a process working set. This privilege determines which user accounts can increase or decrease the size of a process’s working set. The working set of a process is the set of memory pages currently visible to the process in physical RAM memory. These pages are resident and available for an application to use without triggering a page fault. The minimum and maximum working set sizes affect the virtual memory paging behavior of a process.
+Increase a process working set. This privilege determines which user accounts can increase or decrease the size of a process's working set. The working set of a process is the set of memory pages currently visible to the process in physical RAM memory. These pages are resident and available for an application to use without triggering a page fault. The minimum and maximum working set sizes affect the virtual memory paging behavior of a process
 
-**Warning**: Increasing the working set size for a process decreases the amount of physical memory available to the rest of the system.
+> [!WARNING]
+> Increasing the working set size for a process decreases the amount of physical memory available to the rest of the system.
 <!-- IncreaseProcessWorkingSet-Description-End -->
 
 <!-- IncreaseProcessWorkingSet-Editable-Begin -->
@@ -1262,7 +1264,6 @@ This user right determines which accounts can use a process with Write Property 
 > If you remove **Window Manager\Window Manager Group** from the **Increase scheduling priority** user right, certain applications and computers won't function correctly. In particular, the INK workspace doesn't function correctly on unified memory architecture (UMA) laptop and desktop computers that run Windows 10, version 1903 or later and that use the Intel GFX driver.
 >
 > On affected computers, the display blinks when users draw on INK workspaces such as those that are used by Microsoft Edge, Microsoft PowerPoint, or Microsoft OneNote. The blinking occurs because the inking-related processes repeatedly try to use the Real-Time priority, but are denied permission.
-
 <!-- IncreaseSchedulingPriority-Editable-End -->
 
 <!-- IncreaseSchedulingPriority-DFProperties-Begin -->
@@ -1307,7 +1308,7 @@ This user right determines which accounts can use a process with Write Property 
 
 <!-- LoadUnloadDeviceDrivers-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users can dynamically load and unload device drivers or other code in to kernel mode. This user right does not apply to Plug and Play device drivers. It is recommended that you do not assign this privilege to other users.
+This user right determines which users can dynamically load and unload device drivers or other code in to kernel mode. This user right does not apply to Plug and Play device drivers. It is recommended that you do not assign this privilege to other users
 
 > [!CAUTION]
 > Assigning this user right can be a security risk. Do not assign this user right to any user, group, or process that you do not want to take over the system.
@@ -1604,9 +1605,10 @@ This user right determines which users and groups can run maintenance tasks on a
 
 <!-- ModifyFirmwareEnvironment-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines who can modify firmware environment values. Firmware environment variables are settings stored in the nonvolatile RAM of non-x86-based computers. The effect of the setting depends on the processor.On x86-based computers, the only firmware environment value that can be modified by assigning this user right is the Last Known Good Configuration setting, which should only be modified by the system. On Itanium-based computers, boot information is stored in nonvolatile RAM. Users must be assigned this user right to run bootcfg.exe and to change the Default Operating System setting on Startup and Recovery in System Properties. On all computers, this user right is required to install or upgrade Windows.
+This user right determines who can modify firmware environment values. Firmware environment variables are settings stored in the nonvolatile RAM of non-x86-based computers. The effect of the setting depends on the processor. On x86-based computers, the only firmware environment value that can be modified by assigning this user right is the Last Known Good Configuration setting, which should only be modified by the system. On Itanium-based computers, boot information is stored in nonvolatile RAM. Users must be assigned this user right to run bootcfg.exe and to change the Default Operating System setting on Startup and Recovery in System Properties. On all computers, this user right is required to install or upgrade Windows
 
-**Note**: This security setting does not affect who can modify the system environment variables and user environment variables that are displayed on the Advanced tab of System Properties.
+> [!NOTE]
+> This security setting does not affect who can modify the system environment variables and user environment variables that are displayed on the Advanced tab of System Properties.
 <!-- ModifyFirmwareEnvironment-Description-End -->
 
 <!-- ModifyFirmwareEnvironment-Editable-Begin -->
@@ -1900,7 +1902,7 @@ This security setting determines which user accounts can call the CreateProcessA
 
 <!-- RestoreFilesAndDirectories-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when restoring backed up files and directories, and determines which users can set any valid security principal as the owner of an object. Specifically, this user right is similar to granting the following permissions to the user or group in question on all files and folders on the system:Traverse Folder/Execute File, Write.
+This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when restoring backed up files and directories, and determines which users can set any valid security principal as the owner of an object. Specifically, this user right is similar to granting the following permissions to the user or group in question on all files and folders on the systemTraverse Folder/Execute File, Write
 
 > [!CAUTION]
 > Assigning this user right can be a security risk. Since users with this user right can overwrite registry settings, hide data, and gain ownership of system objects, only assign this user right to trusted users.
@@ -2001,7 +2003,7 @@ This security setting determines which users who are logged on locally to the co
 
 <!-- TakeOwnership-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users can take ownership of any securable object in the system, including Active Directory objects, files and folders, printers, registry keys, processes, and threads.
+This user right determines which users can take ownership of any securable object in the system, including Active Directory objects, files and folders, printers, registry keys, processes, and threads
 
 > [!CAUTION]
 > Assigning this user right can be a security risk. Since owners of objects have full control of them, only assign this user right to trusted users.

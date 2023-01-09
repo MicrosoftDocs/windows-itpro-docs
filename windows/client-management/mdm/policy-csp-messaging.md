@@ -1,10 +1,10 @@
 ---
 title: Messaging Policy CSP
-description: Learn more about the Messaging Area in Policy CSP
+description: Learn more about the Messaging Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,7 +44,6 @@ This policy setting allows backup and restore of cellular text messages to Micro
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 Disable this feature to avoid information being stored on servers outside of your organization's control.
-
 <!-- AllowMessageSync-Editable-End -->
 
 <!-- AllowMessageSync-DFProperties-Begin -->
@@ -62,8 +61,8 @@ Disable this feature to avoid information being stored on servers outside of you
 
 | Value | Description |
 |:--|:--|
-| 0 | message sync is not allowed and cannot be changed by the user. |
-| 1 (Default) | message sync is allowed. The user can change this setting. |
+| 0 | Message sync is not allowed and cannot be changed by the user. |
+| 1 (Default) | Message sync is allowed. The user can change this setting. |
 <!-- AllowMessageSync-AllowedValues-End -->
 
 <!-- AllowMessageSync-GpMapping-Begin -->
@@ -125,8 +124,8 @@ This policy setting allows you to enable or disable the sending and receiving ce
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Allow |
-| 0 | Block |
+| 1 (Default) | Allow. |
+| 0 | Block. |
 <!-- AllowMMS-AllowedValues-End -->
 
 <!-- AllowMMS-Examples-Begin -->
@@ -174,8 +173,8 @@ This policy setting allows you to enable or disable the sending and receiving of
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Allow |
-| 0 | Block |
+| 1 (Default) | Allow. |
+| 0 | Block. |
 <!-- AllowRCS-AllowedValues-End -->
 
 <!-- AllowRCS-Examples-Begin -->

@@ -1,10 +1,10 @@
 ---
 title: ADMX_EnhancedStorage Policy CSP
-description: Learn more about the ADMX_EnhancedStorage Area in Policy CSP
+description: Learn more about the ADMX_EnhancedStorage Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_EnhancedStorage
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,9 +44,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure a list of Enhanced Storage devices by manufacturer and product ID that are usable on your computer.
 
-If you enable this policy setting, only Enhanced Storage devices that contain a manufacturer and product ID specified in this policy are usable on your computer.
+- If you enable this policy setting, only Enhanced Storage devices that contain a manufacturer and product ID specified in this policy are usable on your computer.
 
-If you disable or do not configure this policy setting, all Enhanced Storage devices are usable on your computer.
+- If you disable or do not configure this policy setting, all Enhanced Storage devices are usable on your computer.
 <!-- ApprovedEnStorDevices-Description-End -->
 
 <!-- ApprovedEnStorDevices-Editable-Begin -->
@@ -66,7 +64,7 @@ If you disable or do not configure this policy setting, all Enhanced Storage dev
 
 <!-- ApprovedEnStorDevices-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -106,9 +104,9 @@ If you disable or do not configure this policy setting, all Enhanced Storage dev
 <!-- Description-Source-ADMX -->
 This policy setting allows you to create a list of IEEE 1667 silos, compliant with the Institute of Electrical and Electronics Engineers, Inc. (IEEE) 1667 specification, that are usable on your computer.
 
-If you enable this policy setting, only IEEE 1667 silos that match a silo type identifier specified in this policy are usable on your computer.
+- If you enable this policy setting, only IEEE 1667 silos that match a silo type identifier specified in this policy are usable on your computer.
 
-If you disable or do not configure this policy setting, all IEEE 1667 silos on Enhanced Storage devices are usable on your computer.
+- If you disable or do not configure this policy setting, all IEEE 1667 silos on Enhanced Storage devices are usable on your computer.
 <!-- ApprovedSilos-Description-End -->
 
 <!-- ApprovedSilos-Editable-Begin -->
@@ -126,7 +124,7 @@ If you disable or do not configure this policy setting, all IEEE 1667 silos on E
 
 <!-- ApprovedSilos-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -166,9 +164,9 @@ If you disable or do not configure this policy setting, all IEEE 1667 silos on E
 <!-- Description-Source-ADMX -->
 This policy setting configures whether or not a password can be used to unlock an Enhanced Storage device.
 
-If you enable this policy setting, a password cannot be used to unlock an Enhanced Storage device.
+- If you enable this policy setting, a password cannot be used to unlock an Enhanced Storage device.
 
-If you disable or do not configure this policy setting, a password can be used to unlock an Enhanced Storage device.
+- If you disable or do not configure this policy setting, a password can be used to unlock an Enhanced Storage device.
 <!-- DisablePasswordAuthentication-Description-End -->
 
 <!-- DisablePasswordAuthentication-Editable-Begin -->
@@ -186,7 +184,7 @@ If you disable or do not configure this policy setting, a password can be used t
 
 <!-- DisablePasswordAuthentication-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -226,9 +224,9 @@ If you disable or do not configure this policy setting, a password can be used t
 <!-- Description-Source-ADMX -->
 This policy setting configures whether or not non-Enhanced Storage removable devices are allowed on your computer.
 
-If you enable this policy setting, non-Enhanced Storage removable devices are not allowed on your computer.
+- If you enable this policy setting, non-Enhanced Storage removable devices are not allowed on your computer.
 
-If you disable or do not configure this policy setting, non-Enhanced Storage removable devices are allowed on your computer.
+- If you disable or do not configure this policy setting, non-Enhanced Storage removable devices are allowed on your computer.
 <!-- DisallowLegacyDiskDevices-Description-End -->
 
 <!-- DisallowLegacyDiskDevices-Editable-Begin -->
@@ -246,7 +244,7 @@ If you disable or do not configure this policy setting, non-Enhanced Storage rem
 
 <!-- DisallowLegacyDiskDevices-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -288,9 +286,9 @@ This policy setting locks Enhanced Storage devices when the computer is locked.
 
 This policy setting is supported in Windows Server SKUs only.
 
-If you enable this policy setting, the Enhanced Storage device remains locked when the computer is locked.
+- If you enable this policy setting, the Enhanced Storage device remains locked when the computer is locked.
 
-If you disable or do not configure this policy setting, the Enhanced Storage device state is not changed when the computer is locked.
+- If you disable or do not configure this policy setting, the Enhanced Storage device state is not changed when the computer is locked.
 <!-- LockDeviceOnMachineLock-Description-End -->
 
 <!-- LockDeviceOnMachineLock-Editable-Begin -->
@@ -308,7 +306,7 @@ If you disable or do not configure this policy setting, the Enhanced Storage dev
 
 <!-- LockDeviceOnMachineLock-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -348,9 +346,9 @@ If you disable or do not configure this policy setting, the Enhanced Storage dev
 <!-- Description-Source-ADMX -->
 This policy setting configures whether or not only USB root hub connected Enhanced Storage devices are allowed. Allowing only root hub connected Enhanced Storage devices minimizes the risk of an unauthorized USB device reading data on an Enhanced Storage device.
 
-If you enable this policy setting, only USB root hub connected Enhanced Storage devices are allowed.
+- If you enable this policy setting, only USB root hub connected Enhanced Storage devices are allowed.
 
-If you disable or do not configure this policy setting, USB Enhanced Storage devices connected to both USB root hubs and non-root hubs will be allowed.
+- If you disable or do not configure this policy setting, USB Enhanced Storage devices connected to both USB root hubs and non-root hubs will be allowed.
 <!-- RootHubConnectedEnStorDevices-Description-End -->
 
 <!-- RootHubConnectedEnStorDevices-Editable-Begin -->
@@ -368,7 +366,7 @@ If you disable or do not configure this policy setting, USB Enhanced Storage dev
 
 <!-- RootHubConnectedEnStorDevices-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

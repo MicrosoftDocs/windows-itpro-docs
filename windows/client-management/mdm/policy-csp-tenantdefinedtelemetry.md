@@ -1,10 +1,10 @@
 ---
 title: TenantDefinedTelemetry Policy CSP
-description: Learn more about the TenantDefinedTelemetry Area in Policy CSP
+description: Learn more about the TenantDefinedTelemetry Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/02/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,6 +36,7 @@ ms.topic: reference
 <!-- CustomTelemetryId-OmaUri-End -->
 
 <!-- CustomTelemetryId-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy is used to let mission control what type of Edition we are currently in.
 <!-- CustomTelemetryId-Description-End -->
 
@@ -58,9 +59,9 @@ This policy is used to let mission control what type of Edition we are currently
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Base |
-| 1 | Education |
-| 2 | Commercial |
+| 0 (Default) | Base. |
+| 1 | Education. |
+| 2 | Commercial. |
 <!-- CustomTelemetryId-AllowedValues-End -->
 
 <!-- CustomTelemetryId-Examples-Begin -->

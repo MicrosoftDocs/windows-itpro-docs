@@ -1,10 +1,10 @@
 ---
 title: ADMX_StartMenu Policy CSP
-description: Learn more about the ADMX_StartMenu Area in Policy CSP
+description: Learn more about the ADMX_StartMenu Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1244,9 +1244,7 @@ Prevents users from adding the Favorites menu to the Start menu or classic Start
 
 <!-- NoFind-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to remove the Search link from the Start menu, and disables some File Explorer search elements.
-
-**Note** that this does not remove the search box from the new style Start menu.
+This policy setting allows you to remove the Search link from the Start menu, and disables some File Explorer search elements. **Note** that this does not remove the search box from the new style Start menu.
 
 - If you enable this policy setting, the Search item is removed from the Start menu and from the context menu that appears when you right-click the Start menu. Also, the system does not respond when users press the Application key (the key with the Windows logo)+ F.
 

@@ -1,10 +1,10 @@
 ---
 title: NewsAndInterests Policy CSP
-description: Learn more about the NewsAndInterests Area in Policy CSP
+description: Learn more about the NewsAndInterests Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/20/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -46,7 +46,6 @@ If you turned this feature on before, it will stay on automatically unless you t
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 This policy applies to the entire widgets experience, including content on the taskbar.
-
 <!-- AllowNewsAndInterests-Editable-End -->
 
 <!-- AllowNewsAndInterests-DFProperties-Begin -->

@@ -1,10 +1,10 @@
 ---
 title: RestrictedGroups Policy CSP
-description: Learn more about the RestrictedGroups Area in Policy CSP
+description: Learn more about the RestrictedGroups Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/19/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -23,7 +23,6 @@ ms.topic: reference
 > Starting from Windows 10, version 20H2, to configure members of Windows local groups, use the [LocalUsersandGroups](policy-csp-localusersandgroups.md) policy instead of the RestrictedGroups policy. These members can be users or Azure Active Directory (Azure AD) groups.
 >
 > Don't apply both policies to the same device, it's unsupported and may yield unpredictable results.
-
 <!-- RestrictedGroups-Editable-End -->
 
 <!-- ConfigureGroupMembership-Begin -->
@@ -43,7 +42,7 @@ ms.topic: reference
 
 <!-- ConfigureGroupMembership-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting allows an administrator to define the members of a security-sensitive (restricted) group. When a Restricted Groups Policy is enforced, any current member of a restricted group that is not on the Members list is removed. Any user on the Members list who is not currently a member of the restricted group is added. You can use Restricted Groups policy to control group membership. Using the policy, you can specify what members are part of a group. Any members that are not specified in the policy are removed during configuration or refresh. For example, you can create a Restricted Groups policy to only allow specified users (for example, Alice and John) to be members of the Administrators group. When policy is refreshed, only Alice and John will remain as members of the Administrators group.
+This security setting allows an administrator to define the members of a security-sensitive (restricted) group. When a Restricted Groups Policy is enforced, any current member of a restricted group that is not on the Members list is removed. Any user on the Members list who is not currently a member of the restricted group is added. You can use Restricted Groups policy to control group membership. Using the policy, you can specify what members are part of a group. Any members that are not specified in the policy are removed during configuration or refresh. For example, you can create a Restricted Groups policy to only allow specified users (for example, Alice and John) to be members of the Administrators group. When policy is refreshed, only Alice and John will remain as members of the Administrators group
 
 > [!CAUTION]
 > If a Restricted Groups policy is applied, any current member not on the Restricted Groups policy members list is removed. This can include default members, such as administrators. Restricted Groups should be used primarily to configure membership of local groups on workstation or member servers. An empty Members list means that the restricted group has no members.
@@ -51,52 +50,12 @@ This security setting allows an administrator to define the members of a securit
 
 <!-- ConfigureGroupMembership-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 > [!CAUTION]
 > You can't remove the built-in Administrator account from the built-in Administrators group. If you try to remove it, the command fails with the following error:
 >
 > | Error Code  | Symbolic Name | Error Description | Header |
 > |----------|----------|----------|----------|
 > |  `0x55b` (Hex)  <br>  `1371` (Dec)  |ERROR_SPECIAL_ACCOUNT|Cannot perform this operation on built-in accounts.|  winerror.h  |
-
-Starting in Windows 10, version 1809, you can use this schema for retrieval and application of the RestrictedGroups/ConfigureGroupMembership policy. A minimum occurrence of zero members when applying the policy implies clearing the access group, and should be used with caution.
-
-```xml
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
-  <xs:simpleType name="member_name">
-    <xs:restriction base="xs:string">
-      <xs:maxLength value="255" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:element name="accessgroup">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="member" minOccurs="0" maxOccurs="unbounded">
-          <xs:annotation>
-            <xs:documentation>Restricted Group Member</xs:documentation>
-          </xs:annotation>
-          <xs:complexType>
-           <xs:attribute name="name" type="member_name" use="required"/>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-      <xs:attribute name="desc" type="member_name" use="required"/>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="groupmembership">
-    <xs:complexType>
-       <xs:sequence>
-          <xs:element name="accessgroup" minOccurs="0" maxOccurs="unbounded">
-           <xs:annotation>
-              <xs:documentation>Restricted Group</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-       </xs:sequence>
-    </xs:complexType>
-   </xs:element>
-</xs:schema>
-```
-
 <!-- ConfigureGroupMembership-Editable-End -->
 
 <!-- ConfigureGroupMembership-DFProperties-Begin -->
@@ -182,7 +141,6 @@ Descriptions of the properties:
 
 > [!NOTE]
 > Currently, the RestrictedGroups/ConfigureGroupMembership policy doesn't have a MemberOf functionality. However, you can add a domain group as a member to a local group by using the member portion, as shown in this example.
-
 <!-- ConfigureGroupMembership-Examples-End -->
 
 <!-- ConfigureGroupMembership-End -->

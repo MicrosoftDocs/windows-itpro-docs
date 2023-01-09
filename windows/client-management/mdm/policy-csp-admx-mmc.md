@@ -1,6 +1,6 @@
 ---
 title: ADMX_MMC Policy CSP
-description: Learn more about the ADMX_MMC Area in Policy CSP
+description: Learn more about the ADMX_MMC Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

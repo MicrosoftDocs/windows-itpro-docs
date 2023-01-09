@@ -1,10 +1,10 @@
 ---
 title: ADMX_Printing2 Policy CSP
-description: Learn more about the ADMX_Printing2 Area in Policy CSP
+description: Learn more about the ADMX_Printing2 Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_Printing2
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,13 +44,14 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Determines whether the Add Printer Wizard automatically publishes the computer's shared printers in Active Directory.
 
-If you enable this setting or do not configure it, the Add Printer Wizard automatically publishes all shared printers.
+- If you enable this setting or do not configure it, the Add Printer Wizard automatically publishes all shared printers.
 
-If you disable this setting, the Add Printer Wizard does not automatically publish printers. However, you can publish shared printers manually.
+- If you disable this setting, the Add Printer Wizard does not automatically publish printers. However, you can publish shared printers manually.
 
 The default behavior is to automatically publish shared printers in Active Directory.
 
-Note: This setting is ignored if the "Allow printers to be published" setting is disabled.
+> [!NOTE]
+> This setting is ignored if the "Allow printers to be published" setting is disabled.
 <!-- AutoPublishing-Description-End -->
 
 <!-- AutoPublishing-Editable-Begin -->
@@ -70,7 +69,7 @@ Note: This setting is ignored if the "Allow printers to be published" setting is
 
 <!-- AutoPublishing-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -112,11 +111,12 @@ Determines whether the domain controller can prune (delete from Active Directory
 
 By default, the pruning service on the domain controller prunes printer objects from Active Directory if the computer that published them does not respond to contact requests. When the computer that published the printers restarts, it republishes any deleted printer objects.
 
-If you enable this setting or do not configure it, the domain controller prunes this computer's printers when the computer does not respond.
+- If you enable this setting or do not configure it, the domain controller prunes this computer's printers when the computer does not respond.
 
-If you disable this setting, the domain controller does not prune this computer's printers. This setting is designed to prevent printers from being pruned when the computer is temporarily disconnected from the network.
+- If you disable this setting, the domain controller does not prune this computer's printers. This setting is designed to prevent printers from being pruned when the computer is temporarily disconnected from the network.
 
-Note: You can use the "Directory Pruning Interval" and "Directory Pruning Retry" settings to adjust the contact interval and number of contact attempts.
+> [!NOTE]
+> You can use the "Directory Pruning Interval" and "Directory Pruning Retry" settings to adjust the contact interval and number of contact attempts.
 <!-- ImmortalPrintQueue-Description-End -->
 
 <!-- ImmortalPrintQueue-Editable-Begin -->
@@ -134,7 +134,7 @@ Note: You can use the "Directory Pruning Interval" and "Directory Pruning Retry"
 
 <!-- ImmortalPrintQueue-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -178,15 +178,17 @@ The Windows pruning service prunes printer objects from Active Directory when th
 
 You can enable this setting to change the default behavior. To use this setting, select one of the following options from the "Prune non-republishing printers" box:
 
--- "Never" specifies that printer objects that are not automatically republished are never pruned. "Never" is the default.
+- "Never" specifies that printer objects that are not automatically republished are never pruned. "Never" is the default.
 
--- "Only if Print Server is found" prunes printer objects that are not automatically republished only when the print server responds, but the printer is unavailable.
+- "Only if Print Server is found" prunes printer objects that are not automatically republished only when the print server responds, but the printer is unavailable.
 
--- "Whenever printer is not found" prunes printer objects that are not automatically republished whenever the host computer does not respond, just as it does with Windows 2000 printers.
+- "Whenever printer is not found" prunes printer objects that are not automatically republished whenever the host computer does not respond, just as it does with Windows 2000 printers.
 
-Note: This setting applies to printers published by using Active Directory Users and Computers or Pubprn.vbs. It does not apply to printers published by using Printers in Control Panel.
+> [!NOTE]
+> This setting applies to printers published by using Active Directory Users and Computers or Pubprn.vbs. It does not apply to printers published by using Printers in Control Panel.
 
-Tip: If you disable automatic pruning, remember to delete printer objects manually whenever you remove a printer or print server.
+> [!TIP]
+> If you disable automatic pruning, remember to delete printer objects manually whenever you remove a printer or print server.
 <!-- PruneDownlevel-Description-End -->
 
 <!-- PruneDownlevel-Editable-Begin -->
@@ -204,7 +206,7 @@ Tip: If you disable automatic pruning, remember to delete printer objects manual
 
 <!-- PruneDownlevel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -247,11 +249,12 @@ The pruning service periodically contacts computers that have published printers
 
 By default, the pruning service contacts computers every eight hours and allows two repeated contact attempts before deleting printers from Active Directory.
 
-If you enable this setting, you can change the interval between contact attempts.
+- If you enable this setting, you can change the interval between contact attempts.
 
 If you do not configure or disable this setting the default values will be used.
 
-Note: This setting is used only on domain controllers.
+> [!NOTE]
+> This setting is used only on domain controllers.
 <!-- PruningInterval-Description-End -->
 
 <!-- PruningInterval-Editable-Begin -->
@@ -269,7 +272,7 @@ Note: This setting is used only on domain controllers.
 
 <!-- PruningInterval-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -314,7 +317,8 @@ The thread priority influences the order in which the thread receives processor 
 
 By default, the pruning thread runs at normal priority. However, you can adjust the priority to improve the performance of this service.
 
-Note: This setting is used only on domain controllers.
+> [!NOTE]
+> This setting is used only on domain controllers.
 <!-- PruningPriority-Description-End -->
 
 <!-- PruningPriority-Editable-Begin -->
@@ -332,7 +336,7 @@ Note: This setting is used only on domain controllers.
 
 <!-- PruningPriority-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -375,11 +379,12 @@ The pruning service periodically contacts computers that have published printers
 
 By default, the pruning service contacts computers every eight hours and allows two retries before deleting printers from Active Directory. You can use this setting to change the number of retries.
 
-If you enable this setting, you can change the interval between attempts.
+- If you enable this setting, you can change the interval between attempts.
 
 If you do not configure or disable this setting, the default values are used.
 
-Note: This setting is used only on domain controllers.
+> [!NOTE]
+> This setting is used only on domain controllers.
 <!-- PruningRetries-Description-End -->
 
 <!-- PruningRetries-Editable-Begin -->
@@ -397,7 +402,7 @@ Note: This setting is used only on domain controllers.
 
 <!-- PruningRetries-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -438,13 +443,15 @@ Specifies whether or not to log events when the pruning service on a domain cont
 
 The pruning service periodically contacts computers that have published printers to verify that the printers are still available for use. If a computer does not respond to the contact attempt, the attempt is retried a specified number of times, at a specified interval. The "Directory pruning retry" setting determines the number of times the attempt is retried; the default value is two retries. The "Directory Pruning Interval" setting determines the time interval between retries; the default value is every eight hours. If the computer has not responded by the last contact attempt, its printers are pruned from the directory.
 
-If you enable this policy setting, the contact events are recorded in the event log.
+- If you enable this policy setting, the contact events are recorded in the event log.
 
-If you disable or do not configure this policy setting, the contact events are not recorded in the event log.
+- If you disable or do not configure this policy setting, the contact events are not recorded in the event log.
 
-Note: This setting does not affect the logging of pruning events; the actual pruning of a printer is always logged.
+> [!NOTE]
+> This setting does not affect the logging of pruning events; the actual pruning of a printer is always logged.
 
-Note: This setting is used only on domain controllers.
+> [!NOTE]
+> This setting is used only on domain controllers.
 <!-- PruningRetryLog-Description-End -->
 
 <!-- PruningRetryLog-Editable-Begin -->
@@ -462,7 +469,7 @@ Note: This setting is used only on domain controllers.
 
 <!-- PruningRetryLog-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -524,7 +531,7 @@ The spooler must be restarted for changes to this policy to take effect.
 
 <!-- RegisterSpoolerRemoteRpcEndPoint-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -586,7 +593,7 @@ To disable verification, disable this setting, or enable this setting and select
 
 <!-- VerifyPublishedState-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

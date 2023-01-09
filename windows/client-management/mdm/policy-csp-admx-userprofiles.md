@@ -1,10 +1,10 @@
 ---
 title: ADMX_UserProfiles Policy CSP
-description: Learn more about the ADMX_UserProfiles Area in Policy CSP
+description: Learn more about the ADMX_UserProfiles Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,9 +47,9 @@ This policy setting allows an administrator to automatically delete user profile
 > [!NOTE]
 > One day is interpreted as 24 hours after a specific user profile was accessed.
 
-If you enable this policy setting, the User Profile Service will automatically delete on the next system restart all user profiles on the computer that have not been used within the specified number of days.
+- If you enable this policy setting, the User Profile Service will automatically delete on the next system restart all user profiles on the computer that have not been used within the specified number of days.
 
-If you disable or do not configure this policy setting, User Profile Service will not automatically delete any profiles on the next system restart.
+- If you disable or do not configure this policy setting, User Profile Service will not automatically delete any profiles on the next system restart.
 <!-- CleanupProfiles-Description-End -->
 
 <!-- CleanupProfiles-Editable-Begin -->
@@ -109,9 +109,9 @@ This policy setting controls whether Windows forcefully unloads the user's regis
 > [!NOTE]
 > This policy setting should only be used for cases where you may be running into application compatibility issues due to this specific Windows behavior. It is not recommended to enable this policy by default as it may prevent users from getting an updated version of their roaming user profile.
 
-If you enable this policy setting, Windows will not forcefully unload the users registry at logoff, but will unload the registry when all open handles to the per-user registry keys are closed.
+- If you enable this policy setting, Windows will not forcefully unload the users registry at logoff, but will unload the registry when all open handles to the per-user registry keys are closed.
 
-If you disable or do not configure this policy setting, Windows will always unload the users registry at logoff, even if there are any open handles to the per-user registry keys at user logoff.
+- If you disable or do not configure this policy setting, Windows will always unload the users registry at logoff, even if there are any open handles to the per-user registry keys at user logoff.
 <!-- DontForceUnloadHive-Description-End -->
 
 <!-- DontForceUnloadHive-Editable-Begin -->
@@ -171,9 +171,9 @@ This policy setting determines whether the system retains a roaming user's Windo
 
 By default Windows deletes all information related to a roaming user (which includes the user's settings, data, Windows Installer related data, and the like) when their profile is deleted. As a result, the next time a roaming user whose profile was previously deleted on that client logs on, they will need to reinstall all apps published via policy at logon increasing logon time. You can use this policy setting to change this behavior.
 
-If you enable this policy setting, Windows will not delete Windows Installer or Group Policy software installation data for roaming users when profiles are deleted from the machine. This will improve the performance of Group Policy based Software Installation during user logon when a user profile is deleted and that user subsequently logs on to the machine.
+- If you enable this policy setting, Windows will not delete Windows Installer or Group Policy software installation data for roaming users when profiles are deleted from the machine. This will improve the performance of Group Policy based Software Installation during user logon when a user profile is deleted and that user subsequently logs on to the machine.
 
-If you disable or do not configure this policy setting, Windows will delete the entire profile for roaming users, including the Windows Installer and Group Policy software installation data when those profiles are deleted.
+- If you disable or do not configure this policy setting, Windows will delete the entire profile for roaming users, including the Windows Installer and Group Policy software installation data when those profiles are deleted.
 
 > [!NOTE]
 > If this policy setting is enabled for a machine, local administrator action is required to remove the Windows Installer or Group Policy software installation data stored in the registry and file system of roaming users' profiles on the machine.
@@ -234,9 +234,9 @@ If you disable or do not configure this policy setting, Windows will delete the 
 <!-- Description-Source-ADMX -->
 This policy setting sets the maximum size of each user profile and determines the system's response when a user profile reaches the maximum size. This policy setting affects both local and roaming profiles.
 
-If you disable this policy setting or do not configure it, the system does not limit the size of user profiles.
+- If you disable this policy setting or do not configure it, the system does not limit the size of user profiles.
 
-If you enable this policy setting, you can:
+- If you enable this policy setting, you can:
 
 - Set a maximum permitted user profile size.
 - Determine whether the registry files are included in the calculation of the profile size.
@@ -305,9 +305,9 @@ This policy setting will automatically log off a user when Windows cannot load t
 
 If Windows cannot access the user profile folder or the profile contains errors that prevent it from loading, Windows logs on the user with a temporary profile. This policy setting allows the administrator to disable this behavior, preventing Windows from loggin on the user with a temporary profile.
 
-If you enable this policy setting, Windows will not log on a user with a temporary profile. Windows logs the user off if their profile cannot be loaded.
+- If you enable this policy setting, Windows will not log on a user with a temporary profile. Windows logs the user off if their profile cannot be loaded.
 
-If you disable this policy setting or do not configure it, Windows logs on the user with a temporary profile when Windows cannot load their user profile.
+- If you disable this policy setting or do not configure it, Windows logs on the user with a temporary profile when Windows cannot load their user profile.
 
 Also, see the "Delete cached copies of roaming profiles" policy setting.
 <!-- ProfileErrorAction-Description-End -->
@@ -371,9 +371,9 @@ To determine the network performance characteristics, a connection is made to th
 
 This policy setting and related policy settings in this folder together define the system's response when roaming user profiles are slow to load.
 
-If you enable this policy setting, you can change how long Windows waits for a response from the server before considering the connection to be slow.
+- If you enable this policy setting, you can change how long Windows waits for a response from the server before considering the connection to be slow.
 
-If you disable or do not configure this policy setting, Windows considers the network connection to be slow if the server returns less than 500 kilobits of data per second or take 120 milliseconds to respond. Consider increasing this value for clients using DHCP Service-assigned addresses or for computers accessing profiles across dial-up connections
+- If you disable or do not configure this policy setting, Windows considers the network connection to be slow if the server returns less than 500 kilobits of data per second or take 120 milliseconds to respond. Consider increasing this value for clients using DHCP Service-assigned addresses or for computers accessing profiles across dial-up connections
 
 > [!IMPORTANT]
 > If the "Do not detect slow network connections" policy setting is enabled, this policy setting is ignored. Also, if the "Delete cached copies of roaming profiles" policy setting is enabled, there is no local copy of the roaming profile to load when the system detects a slow connection.
@@ -433,7 +433,7 @@ If you disable or do not configure this policy setting, Windows considers the ne
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the location and root (file share or local path) of a user's home folder for a logon session.
 
-If you enable this policy setting, the user's home folder is configured to the specified local or network location, creating a new folder for each user name.
+- If you enable this policy setting, the user's home folder is configured to the specified local or network location, creating a new folder for each user name.
 
 To use this policy setting, in the Location list, choose the location for the home folder. If you choose "On the network," enter the path to a file share in the Path box (for example, \\ComputerName\ShareName), and then choose the drive letter to assign to the file share. If you choose "On the local computer," enter a local path (for example, C:\HomeFolder) in the Path box.
 
@@ -442,7 +442,7 @@ Do not specify environment variables or ellipses in the path. Also, do not speci
 > [!NOTE]
 > The Drive letter box is ignored if you choose "On the local computer" from the Location list. If you choose "On the local computer" and enter a file share, the user's home folder will be placed in the network location without mapping the file share to a drive letter.
 
-If you disable or do not configure this policy setting, the user's home folder is configured as specified in the user's Active Directory Domain Services account.
+- If you disable or do not configure this policy setting, the user's home folder is configured as specified in the user's Active Directory Domain Services account.
 
 If the "Set Remote Desktop Services User Home Directory" policy setting is enabled, the "Set user home folder" policy setting has no effect.
 <!-- USER_HOME-Description-End -->
@@ -501,7 +501,7 @@ If the "Set Remote Desktop Services User Home Directory" policy setting is enabl
 <!-- Description-Source-ADMX -->
 This setting prevents users from managing the ability to allow apps to access the user name, account picture, and domain information.
 
-If you enable this policy setting, sharing of user name, picture and domain information may be controlled by setting one of the following options:
+- If you enable this policy setting, sharing of user name, picture and domain information may be controlled by setting one of the following options:
 
 "Always on" - users will not be able to change this setting and the user's name and account picture will be shared with apps (not desktop apps). In addition apps (not desktop apps) that have the enterprise authentication capability will also be able to retrieve the user's UPN, SIP/URI, and DNS.
 

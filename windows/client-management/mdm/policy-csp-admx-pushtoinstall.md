@@ -1,6 +1,6 @@
 ---
 title: ADMX_PushToInstall Policy CSP
-description: Learn more about the ADMX_PushToInstall Area in Policy CSP
+description: Learn more about the ADMX_PushToInstall Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

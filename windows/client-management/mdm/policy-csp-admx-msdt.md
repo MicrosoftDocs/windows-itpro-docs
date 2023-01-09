@@ -1,10 +1,10 @@
 ---
 title: ADMX_MSDT Policy CSP
-description: Learn more about the ADMX_MSDT Area in Policy CSP
+description: Learn more about the ADMX_MSDT Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_MSDT
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,13 +44,13 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting configures Microsoft Support Diagnostic Tool (MSDT) interactive communication with the support provider. MSDT gathers diagnostic data for analysis by support professionals.
 
-If you enable this policy setting, users can use MSDT to collect and send diagnostic data to a support professional to resolve a problem.
+- If you enable this policy setting, users can use MSDT to collect and send diagnostic data to a support professional to resolve a problem.
 
 By default, the support provider is set to Microsoft Corporation.
 
-If you disable this policy setting, MSDT cannot run in support mode, and no data can be collected or sent to the support provider.
+- If you disable this policy setting, MSDT cannot run in support mode, and no data can be collected or sent to the support provider.
 
-If you do not configure this policy setting, MSDT support mode is enabled by default.
+- If you do not configure this policy setting, MSDT support mode is enabled by default.
 
 No reboots or service restarts are required for this policy setting to take effect. Changes take effect immediately.
 <!-- MsdtSupportProvider-Description-End -->
@@ -72,7 +70,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 <!-- MsdtSupportProvider-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -116,11 +114,12 @@ Microsoft Support Diagnostic Tool (MSDT) gathers diagnostic data for analysis by
 
 These tools are required to completely troubleshoot the problem. If tool download is restricted, it may not be possible to find the root cause of the problem.
 
-If you enable this policy setting for remote troubleshooting, MSDT prompts the user to download additional tools to diagnose problems on remote computers only. If you enable this policy setting for local and remote troubleshooting, MSDT always prompts for additional tool downloading.
+- If you enable this policy setting for remote troubleshooting, MSDT prompts the user to download additional tools to diagnose problems on remote computers only.
+- If you enable this policy setting for local and remote troubleshooting, MSDT always prompts for additional tool downloading.
 
-If you disable this policy setting, MSDT never downloads tools, and is unable to diagnose problems on remote computers.
+- If you disable this policy setting, MSDT never downloads tools, and is unable to diagnose problems on remote computers.
 
-If you do not configure this policy setting, MSDT prompts the user before downloading any additional tools.
+- If you do not configure this policy setting, MSDT prompts the user before downloading any additional tools.
 
 No reboots or service restarts are required for this policy setting to take effect. Changes take effect immediately.
 
@@ -144,7 +143,7 @@ This policy setting will only take effect when the Diagnostic Policy Service (DP
 
 <!-- MsdtToolDownloadPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -186,11 +185,11 @@ This policy setting determines the execution level for Microsoft Support Diagnos
 
 Microsoft Support Diagnostic Tool (MSDT) gathers diagnostic data for analysis by support professionals.
 
-If you enable this policy setting, administrators can use MSDT to collect and send diagnostic data to a support professional to resolve a problem.
+- If you enable this policy setting, administrators can use MSDT to collect and send diagnostic data to a support professional to resolve a problem.
 
-If you disable this policy setting, MSDT cannot gather diagnostic data.
+- If you disable this policy setting, MSDT cannot gather diagnostic data.
 
-If you do not configure this policy setting, MSDT is turned on by default.
+- If you do not configure this policy setting, MSDT is turned on by default.
 
 This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.
 
@@ -214,7 +213,7 @@ This policy setting will only take effect when the Diagnostic Policy Service (DP
 
 <!-- WdiScenarioExecutionPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

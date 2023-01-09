@@ -1,10 +1,10 @@
 ---
 title: Update Policy CSP
-description: Learn more about the Update Area in Policy CSP
+description: Learn more about the Update Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/07/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,10 @@ ms.topic: reference
 
 <!-- ActiveHoursEnd-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the IT admin (when used with Update/ActiveHoursStart) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time. **Note**: The default maximum difference from start time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured. See Update/ActiveHoursMaxRange below for more information. Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc. The default is 17 (5 PM).
+Allows the IT admin (when used with Update/ActiveHoursStart) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time
+
+> [!NOTE]
+> The default maximum difference from start time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured. See Update/ActiveHoursMaxRange below for more information. Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc. The default is 17 (5 PM).
 <!-- ActiveHoursEnd-Description-End -->
 
 <!-- ActiveHoursEnd-Editable-Begin -->
@@ -96,7 +99,7 @@ Enable this policy to specify the maximum number of hours from the start time th
 
 The max active hours range can be set between 8 and 18 hours.
 
-If you disable or do not configure this policy, the default max active hours range will be used.
+- If you disable or do not configure this policy, the default max active hours range will be used.
 <!-- ActiveHoursMaxRange-Description-End -->
 
 <!-- ActiveHoursMaxRange-Editable-Begin -->
@@ -151,7 +154,10 @@ If you disable or do not configure this policy, the default max active hours ran
 
 <!-- ActiveHoursStart-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the IT admin (when used with Update/ActiveHoursEnd) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time. **Note**: The default maximum difference from end time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured. See Update/ActiveHoursMaxRange above for more information. Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc. The default value is 8 (8 AM).
+Allows the IT admin (when used with Update/ActiveHoursEnd) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time
+
+> [!NOTE]
+> The default maximum difference from end time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured. See Update/ActiveHoursMaxRange above for more information. Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc. The default value is 8 (8 AM).
 <!-- ActiveHoursStart-Description-End -->
 
 <!-- ActiveHoursStart-Editable-Begin -->
@@ -206,7 +212,7 @@ Allows the IT admin (when used with Update/ActiveHoursEnd) to manage a range of 
 
 <!-- AllowAutoUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables the IT admin to manage automatic update behavior to scan, download, and install updates. Supported operations are Get and Replace. **Important**: This option should be used only for systems under regulatory compliance, as you will not get security updates as well. If the policy is not configured, end-users get the default behavior (Auto install and restart).
+Enables the IT admin to manage automatic update behavior to scan, download, and install updates. Supported operations are Get and Replace. Important. This option should be used only for systems under regulatory compliance, as you will not get security updates as well. If the policy is not configured, end-users get the default behavior (Auto install and restart).
 <!-- AllowAutoUpdate-Description-End -->
 
 <!-- AllowAutoUpdate-Editable-Begin -->
@@ -298,8 +304,8 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Not allowed |
-| 1 | Allowed |
+| 0 (Default) | Not allowed. |
+| 1 | Allowed. |
 <!-- AllowAutoWindowsUpdateDownloadOverMeteredNetwork-AllowedValues-End -->
 
 <!-- AllowAutoWindowsUpdateDownloadOverMeteredNetwork-GpMapping-Begin -->
@@ -458,7 +464,10 @@ Allows the IT admin to manage whether Automatic Updates accepts updates signed b
 
 <!-- AllowUpdateService-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store. Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Microsoft Store. Enabling this policy will disable that functionality, and may cause connection to public services such as the Microsoft Store to stop working. **Note**: This policy applies only when the desktop or device is configured to connect to an intranet update service using the Specify intranet Microsoft update service location policy.
+Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store. Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Microsoft Store. Enabling this policy will disable that functionality, and may cause connection to public services such as the Microsoft Store to stop working
+
+> [!NOTE]
+> This policy applies only when the desktop or device is configured to connect to an intranet update service using the Specify intranet Microsoft update service location policy.
 <!-- AllowUpdateService-Description-End -->
 
 <!-- AllowUpdateService-Editable-Begin -->
@@ -524,9 +533,9 @@ This policy setting allows you to configure Automatic Maintenance wake up policy
 
 The maintenance wakeup policy specifies if Automatic Maintenance should make a wake request to the OS for the daily scheduled maintenance. Note, that if the OS power wake policy is explicitly disabled, then this setting has no effect.
 
-If you enable this policy setting, Automatic Maintenance will attempt to set OS wake policy and make a wake request for the daily scheduled time, if required.
+- If you enable this policy setting, Automatic Maintenance will attempt to set OS wake policy and make a wake request for the daily scheduled time, if required.
 
-If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
+- If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
 <!-- AutomaticMaintenanceWakeUp-Description-End -->
 
 <!-- AutomaticMaintenanceWakeUp-Editable-Begin -->
@@ -593,9 +602,10 @@ Specify the deadline before the PC will automatically restart to apply updates. 
 
 The restart may happen inside active hours.
 
-If you disable or do not configure this policy, the PC will restart according to the default schedule.
+- If you disable or do not configure this policy, the PC will restart according to the default schedule.
 
 Enabling either of the following two policies will override the above policy:
+
 1. No auto-restart with logged on users for scheduled automatic updates installations.
 2. Always automatically restart at scheduled time.
 <!-- AutoRestartDeadlinePeriodInDays-Description-End -->
@@ -652,7 +662,9 @@ Enabling either of the following two policies will override the above policy:
 
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-Description-Begin -->
 <!-- Description-Source-DDF -->
-For Feature Updates, this policy specifies the deadline in days before automatically executing a scheduled restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart is scheduled. The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks. Value type is integer. Default is 7 days. Supported values range: 2-30. **Note** that the PC must restart for certain updates to take effect. If you enable this policy, a restart will automatically occur the specified number of days after the restart was scheduled. If you disable or do not configure this policy, the PC will restart according to the default schedule. If any of the following two policies are enabled, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installations. Always automatically restart at scheduled time.
+For Feature Updates, this policy specifies the deadline in days before automatically executing a scheduled restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart is scheduled. The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks. Value type is integer. Default is 7 days. Supported values range 2-30. **Note** that the PC must restart for certain updates to take effect.
+- If you enable this policy, a restart will automatically occur the specified number of days after the restart was scheduled.
+- If you disable or do not configure this policy, the PC will restart according to the default schedule. If any of the following two policies are enabled, this policy has no effectNo auto-restart with logged on users for scheduled automatic updates installations. Always automatically restart at scheduled time.
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-Description-End -->
 
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-Editable-Begin -->
@@ -729,11 +741,11 @@ Allows the IT Admin to specify the period for auto-restart reminder notification
 
 | Value | Description |
 |:--|:--|
-| 15 (Default) | 15 Minutes |
-| 30 | 30 Minutes |
-| 60 | 60 Minutes |
-| 120 | 120 Minutes |
-| 240 | 240 Minutes |
+| 15 (Default) | 15 Minutes. |
+| 30 | 30 Minutes. |
+| 60 | 60 Minutes. |
+| 120 | 120 Minutes. |
+| 240 | 240 Minutes. |
 <!-- AutoRestartNotificationSchedule-AllowedValues-End -->
 
 <!-- AutoRestartNotificationSchedule-GpMapping-Begin -->
@@ -777,7 +789,7 @@ Enable this policy to specify the method by which the auto-restart required noti
 
 The method can be set to require user action to dismiss the notification.
 
-If you disable or do not configure this policy, the default method will be used.
+- If you disable or do not configure this policy, the default method will be used.
 <!-- AutoRestartRequiredNotificationDismissal-Description-End -->
 
 <!-- AutoRestartRequiredNotificationDismissal-Editable-Begin -->
@@ -862,11 +874,11 @@ Allows the IT admin to set which branch a device receives their updates from. As
 
 | Value | Description |
 |:--|:--|
-| 2 | {0x2}  - Windows Insider build - Fast (added in Windows 10, version 1709) |
-| 4 | {0x4}  - Windows Insider build - Slow (added in Windows 10, version 1709) |
-| 8 | {0x8}  - Release Windows Insider build (added in Windows 10, version 1709) |
+| 2 | {0x2}  - Windows Insider build - Fast (added in Windows 10, version 1709). |
+| 4 | {0x4}  - Windows Insider build - Slow (added in Windows 10, version 1709). |
+| 8 | {0x8}  - Release Windows Insider build (added in Windows 10, version 1709). |
 | 16 (Default) | {0x10} - Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted). |
-| 32 | 2 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel. (*Only applicable to releases prior to 1903, for all releases 1903 and after the Semi-annual Channel and Semi-annual Channel (Targeted) into a single Semi-annual Channel with a value of 16) |
+| 32 | 2 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel. (*Only applicable to releases prior to 1903, for all releases 1903 and after the Semi-annual Channel and Semi-annual Channel (Targeted) into a single Semi-annual Channel with a value of 16). |
 | 64 | {0x40} - Release Preview of Quality Updates Only. |
 <!-- BranchReadinessLevel-AllowedValues-End -->
 
@@ -1328,7 +1340,10 @@ Enable enterprises/IT admin to configure feature update uninstall period
 
 <!-- DeferFeatureUpdatesPeriodInDays-Description-Begin -->
 <!-- Description-Source-DDF -->
-Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect. Defers Feature Updates for the specified number of days. Supported values are 0-365 days. **Important**: The default maximum number of days to defer an update has been increased from 180 (Windows 10, version 1607) to 365 in Windows 10, version 1703.
+Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect. Defers Feature Updates for the specified number of days. Supported values are 0-365 days
+
+> [!IMPORTANT]
+> The default maximum number of days to defer an update has been increased from 180 (Windows 10, version 1607) to 365 in Windows 10, version 1703.
 <!-- DeferFeatureUpdatesPeriodInDays-Description-End -->
 
 <!-- DeferFeatureUpdatesPeriodInDays-Editable-Begin -->
@@ -1438,7 +1453,7 @@ Defers Quality Updates for the specified number of days. Supported values are 0-
 
 <!-- DeferUpdatePeriod-Description-Begin -->
 <!-- Description-Source-DDF -->
-Note. Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices. Allows IT Admins to specify update delays for up to 4 weeks. Supported values are 0-4, which refers to the number of weeks to defer updates. In Windows 10 Mobile Enterprise version 1511 devices set to automatic updates, for DeferUpdatePeriod to work, you must set the following:Update/RequireDeferUpgrade must be set to 1System/AllowTelemetry must be set to 1 or higherIf the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. OS upgrade:Maximum deferral: 8 monthsDeferral increment: 1 monthUpdate type/notes:Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5Update:Maximum deferral: 1 monthDeferral increment: 1 weekUpdate type/notes:If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic. - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441- Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4- Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F- Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828- Tools - B4832BD8-E735-4761-8DAF-37F882276DAB- Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F- Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83- Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0Other/cannot defer:Maximum deferral: No deferralDeferral increment: No deferralUpdate type/notes:Any update category not specifically enumerated above falls into this category. - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B
+Note. Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices. Allows IT Admins to specify update delays for up to 4 weeks. Supported values are 0-4, which refers to the number of weeks to defer updates. In Windows 10 Mobile Enterprise version 1511 devices set to automatic updates, for DeferUpdatePeriod to work, you must set the following:Update/RequireDeferUpgrade must be set to 1. System/AllowTelemetry must be set to 1 or higherIf the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. OS upgrade:Maximum deferral: 8 monthsDeferral increment: 1 monthUpdate type/notes:Upgrade - 3689. BDC8-B205-4. AF4-8. D4A-A63924C5E9D5Update:Maximum deferral: 1 monthDeferral increment: 1 weekUpdate type/notes:If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic. - Security Update - 0. FA1201D-4330-4. FA8-8. AE9-B877473B6441- Critical Update - E6CF1350-C01B-414. D-A61F-263. D14D133B4- Update Rollup - 28. BC880E-0592-4. CBF-8. F95-C79B17911D5F- Service Pack - 68. C5B0A3-D1A6-4553-AE49-01. D3A7827828- Tools - B4832BD8-E735-4761-8. DAF-37. F882276DAB- Feature Pack - B54E7D24-7. ADD-428. F-8. B75-90. A396FA584F- Update - CD5FFD1E-E932-4. E3A-BF74-18. BF0B1BBD83- Driver - EBFC1FC5-71. A4-4. F7B-9. ACA-3. B9A503104A0Other/cannot defer:Maximum deferral: No deferralDeferral increment: No deferralUpdate type/notes:Any update category not specifically enumerated above falls into this category. - Definition Update - E0789628-CE08-4437-BE74-2495. B842F43B
 <!-- DeferUpdatePeriod-Description-End -->
 
 <!-- DeferUpdatePeriod-Editable-Begin -->
@@ -1489,7 +1504,8 @@ Note. Don't use this policy in Windows 10, version 1607 devices, instead use th
 
 <!-- DeferUpgradePeriod-Description-Begin -->
 <!-- Description-Source-DDF -->
-NoteSince this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect. Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices. Allows IT Admins to specify additional upgrade delays for up to 8 months. Supported values are 0-8, which refers to the number of months to defer upgrades. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
+> [!NOTE]
+> Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect. Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices. Allows IT Admins to specify additional upgrade delays for up to 8 months. Supported values are 0-8, which refers to the number of months to defer upgrades. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
 <!-- DeferUpgradePeriod-Description-End -->
 
 <!-- DeferUpgradePeriod-Editable-Begin -->
@@ -1600,7 +1616,8 @@ Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
 Enable this policy to not allow update deferral policies to cause scans against Windows Update.
 
 If this policy is disabled or not configured, then the Windows Update client may initiate automatic scans against Windows Update while update deferral policies are enabled.
-Note: This policy applies only when the intranet Microsoft update service this computer is directed to is configured to support client-side targeting. If the "Specify intranet Microsoft update service location" policy is disabled or not configured, this policy has no effect.
+> [!NOTE]
+> This policy applies only when the intranet Microsoft update service this computer is directed to is configured to support client-side targeting. If the "Specify intranet Microsoft update service location" policy is disabled or not configured, this policy has no effect.
 <!-- DisableDualScan-Description-End -->
 
 <!-- DisableDualScan-Editable-Begin -->
@@ -1624,8 +1641,8 @@ Note: This policy applies only when the intranet Microsoft update service this c
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | allow scan against Windows Update |
-| 1 | do not allow update deferral policies to cause scans against Windows Update |
+| 0 (Default) | Allow scan against Windows Update. |
+| 1 | Do not allow update deferral policies to cause scans against Windows Update. |
 <!-- DisableDualScan-AllowedValues-End -->
 
 <!-- DisableDualScan-GpMapping-Begin -->
@@ -1779,7 +1796,8 @@ Do not enforce TLS certificate pinning for Windows Update client for detecting u
 
 <!-- EngagedRestartDeadline-Description-Begin -->
 <!-- Description-Source-DDF -->
-For Quality Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period. The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks. **Note**: If Update/EngagedDeadline is the only policy set (Update/EngagedRestartTransitionSchedule and Update/EngagedRestartSnoozeSchedule are not set), the behavior goes from reboot required -> engaged behavior -> forced reboot after deadline is reached with a 3-day snooze period. Value type is integer. Default is 14. Supported value range: 2 - 30. If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (e. g. pending user scheduling). If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
+For Quality Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period. The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks. Note. If Update/EngagedDeadline is the only policy set (Update/EngagedRestartTransitionSchedule and Update/EngagedRestartSnoozeSchedule are not set), the behavior goes from reboot required -> engaged behavior -> forced reboot after deadline is reached with a 3-day snooze period. Value type is integer. Default is 14. Supported value range: 2 - 30. If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (e. g. pending user scheduling).
+- If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
 <!-- EngagedRestartDeadline-Description-End -->
 
 <!-- EngagedRestartDeadline-Editable-Begin -->
@@ -1834,7 +1852,8 @@ For Quality Updates, this policy specifies the deadline in days before automatic
 
 <!-- EngagedRestartDeadlineForFeatureUpdates-Description-Begin -->
 <!-- Description-Source-DDF -->
-For Feature Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period. Value type is integer. Default is 14. Supported value range: 2 - 30. If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (e. g. pending user scheduling). If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
+For Feature Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period. Value type is integer. Default is 14. Supported value range: 2 - 30. If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (e. g. pending user scheduling).
+- If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
 <!-- EngagedRestartDeadlineForFeatureUpdates-Description-End -->
 
 <!-- EngagedRestartDeadlineForFeatureUpdates-Editable-Begin -->
@@ -1889,7 +1908,8 @@ For Feature Updates, this policy specifies the deadline in days before automatic
 
 <!-- EngagedRestartSnoozeSchedule-Description-Begin -->
 <!-- Description-Source-DDF -->
-For Quality Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days. Value type is integer. Default is 3 days. Supported value range: 1 - 3. If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
+For Quality Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days. Value type is integer. Default is 3 days. Supported value range: 1 - 3.
+- If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
 <!-- EngagedRestartSnoozeSchedule-Description-End -->
 
 <!-- EngagedRestartSnoozeSchedule-Editable-Begin -->
@@ -1944,7 +1964,8 @@ For Quality Updates, this policy specifies the number of days a user can snooze 
 
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Description-Begin -->
 <!-- Description-Source-DDF -->
-For Feature Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days. Value type is integer. Default is 3 days. Supported value range: 1 - 3. If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
+For Feature Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days. Value type is integer. Default is 3 days. Supported value range: 1 - 3.
+- If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Description-End -->
 
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Editable-Begin -->
@@ -2007,11 +2028,13 @@ You can specify the deadline in days before automatically scheduling and executi
 
 If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
-If you disable or do not configure this policy, the PC will restart following the default schedule.
+- If you disable or do not configure this policy, the PC will restart following the default schedule.
 
 Enabling any of the following policies will override the above policy:
+
 1. No auto-restart with logged on users for scheduled automatic updates installations
 2. Always automatically restart at scheduled time
+
 3. Specify deadline before auto-restart for update installation
 <!-- EngagedRestartTransitionSchedule-Description-End -->
 
@@ -2067,7 +2090,8 @@ Enabling any of the following policies will override the above policy:
 
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Description-Begin -->
 <!-- Description-Source-DDF -->
-For Feature Updates, this policy specifies the timing before transitioning from Auto restarts scheduled_outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending. Value type is integer. Default value is 7 days. Supported value range: 2 - 30. If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
+For Feature Updates, this policy specifies the timing before transitioning from Auto restarts scheduled_outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending. Value type is integer. Default value is 7 days. Supported value range: 2 - 30.
+- If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Description-End -->
 
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Editable-Begin -->
@@ -2124,7 +2148,7 @@ For Feature Updates, this policy specifies the timing before transitioning from 
 <!-- Description-Source-ADMX -->
 Enable this policy to not include drivers with Windows quality updates.
 
-If you disable or do not configure this policy, Windows Update will include updates that have a Driver classification.
+- If you disable or do not configure this policy, Windows Update will include updates that have a Driver classification.
 <!-- ExcludeWUDriversInQualityUpdate-Description-End -->
 
 <!-- ExcludeWUDriversInQualityUpdate-Editable-Begin -->
@@ -2187,7 +2211,10 @@ If you disable or do not configure this policy, Windows Update will include upda
 
 <!-- FillEmptyContentUrls-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows Windows Update Agent to determine the download URL when it is missing from the metadata. This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the alternate download URL). **Note**: This setting should only be used in combination with an alternate download URL and configured to use ISV file cache. This setting is used when the intranet update service does not provide download URLs in the update metadata for files which are available on the alternate download server.
+Allows Windows Update Agent to determine the download URL when it is missing from the metadata. This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the alternate download URL)
+
+> [!NOTE]
+> This setting should only be used in combination with an alternate download URL and configured to use ISV file cache. This setting is used when the intranet update service does not provide download URLs in the update metadata for files which are available on the alternate download server.
 <!-- FillEmptyContentUrls-Description-End -->
 
 <!-- FillEmptyContentUrls-Editable-Begin -->
@@ -2250,7 +2277,10 @@ Allows Windows Update Agent to determine the download URL when it is missing fro
 
 <!-- IgnoreMOAppDownloadLimit-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. **Warning**: Setting this policy might cause devices to incur costs from MO operators.
+Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies
+
+> [!WARNING]
+> Setting this policy might cause devices to incur costs from MO operators.
 <!-- IgnoreMOAppDownloadLimit-Description-End -->
 
 <!-- IgnoreMOAppDownloadLimit-Editable-Begin -->
@@ -2307,7 +2337,10 @@ To validate this policy:
 
 <!-- IgnoreMOUpdateDownloadLimit-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. **Warning**: Setting this policy might cause devices to incur costs from MO operators.
+Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies
+
+> [!WARNING]
+> Setting this policy might cause devices to incur costs from MO operators.
 <!-- IgnoreMOUpdateDownloadLimit-Description-End -->
 
 <!-- IgnoreMOUpdateDownloadLimit-Editable-Begin -->
@@ -2386,10 +2419,10 @@ Used to manage Windows 10 Insider Preview builds. Value type is integer.
 
 | Value | Description |
 |:--|:--|
-| 0 | Disable Preview builds |
-| 1 | Disable Preview builds once the next release is public |
-| 2 | Enable Preview builds |
-| 3 (Default) | Preview builds is left to user selection |
+| 0 | Disable Preview builds. |
+| 1 | Disable Preview builds once the next release is public. |
+| 2 | Enable Preview builds. |
+| 3 (Default) | Preview builds is left to user selection. |
 <!-- ManagePreviewBuilds-AllowedValues-End -->
 
 <!-- ManagePreviewBuilds-GpMapping-Begin -->
@@ -2428,7 +2461,7 @@ Used to manage Windows 10 Insider Preview builds. Value type is integer.
 
 <!-- NoUpdateNotificationsDuringActiveHours-Description-Begin -->
 <!-- Description-Source-DDF -->
-When enabled, notifications will only be disabled during active hours. Takes effect only if Update/UpdateNotificationLevel is configured to 1 or 2. To ensure that the device stays secure, a notification will still be shown if this option is selected once “Specify deadlines for automatic updates and restarts” deadline has been reached if configured, regardless of active hours.
+When enabled, notifications will only be disabled during active hours. Takes effect only if Update/UpdateNotificationLevel is configured to 1 or 2. To ensure that the device stays secure, a notification will still be shown if this option is selected once "Specify deadlines for automatic updates and restarts" deadline has been reached if configured, regardless of active hours.
 <!-- NoUpdateNotificationsDuringActiveHours-Description-End -->
 
 <!-- NoUpdateNotificationsDuringActiveHours-Editable-Begin -->
@@ -2489,7 +2522,8 @@ When enabled, notifications will only be disabled during active hours. Takes eff
 
 <!-- PauseDeferrals-Description-Begin -->
 <!-- Description-Source-DDF -->
-NoteDon't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use PauseDeferrals for Windows 10, version 1511 devices. Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
+> [!NOTE]
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use PauseDeferrals for Windows 10, version 1511 devices. Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
 <!-- PauseDeferrals-Description-End -->
 
 <!-- PauseDeferrals-Editable-Begin -->
@@ -2548,7 +2582,7 @@ NoteDon't use this policy in Windows 10, version 1607 devices, instead use the 
 
 <!-- PauseFeatureUpdates-Description-Begin -->
 <!-- Description-Source-DDF -->
-Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect. Allows IT Admins to pause Feature Updates for up to 60 days.
+Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect. Allows IT Admins to pause Feature Updates for up to 60 days.
 <!-- PauseFeatureUpdates-Description-End -->
 
 <!-- PauseFeatureUpdates-Editable-Begin -->
@@ -2881,7 +2915,8 @@ Supported value type is a string containing a Windows product. For example, "Win
 
 <!-- RequireDeferUpgrade-Description-Begin -->
 <!-- Description-Source-DDF -->
-NoteDon't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices. Allows the IT admin to set a device to Semi-Annual Channel train.
+> [!NOTE]
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices. Allows the IT admin to set a device to Semi-Annual Channel train.
 <!-- RequireDeferUpgrade-Description-End -->
 
 <!-- RequireDeferUpgrade-Editable-Begin -->
@@ -2940,7 +2975,8 @@ NoteDon't use this policy in Windows 10, version 1607 devices, instead use the 
 
 <!-- RequireUpdateApproval-Description-Begin -->
 <!-- Description-Source-DDF -->
-Note If you previously used the Update/PhoneUpdateRestrictions policy in previous versions of Windows, it has been deprecated. Please use this policy instead. Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved. Supported operations are Get and Replace.
+> [!NOTE]
+> If you previously used the Update/PhoneUpdateRestrictions policy in previous versions of Windows, it has been deprecated. Please use this policy instead. Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved. Supported operations are Get and Replace.
 <!-- RequireUpdateApproval-Description-End -->
 
 <!-- RequireUpdateApproval-Editable-Begin -->
@@ -3013,14 +3049,14 @@ Enables the IT admin to schedule the day of the update installation. The data ty
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Every day |
-| 1 | Sunday |
-| 2 | Monday |
-| 3 | Tuesday |
-| 4 | Wednesday |
-| 5 | Thursday |
-| 6 | Friday |
-| 7 | Saturday |
+| 0 (Default) | Every day. |
+| 1 | Sunday. |
+| 2 | Monday. |
+| 3 | Tuesday. |
+| 4 | Wednesday. |
+| 5 | Thursday. |
+| 6 | Friday. |
+| 7 | Saturday. |
 <!-- ScheduledInstallDay-AllowedValues-End -->
 
 <!-- ScheduledInstallDay-GpMapping-Begin -->
@@ -3084,8 +3120,8 @@ Enables the IT admin to schedule the update installation on the every week. Valu
 
 | Value | Description |
 |:--|:--|
-| 0 | no update in the schedule |
-| 1 (Default) | update is scheduled every week |
+| 0 | No update in the schedule. |
+| 1 (Default) | Update is scheduled every week. |
 <!-- ScheduledInstallEveryWeek-AllowedValues-End -->
 
 <!-- ScheduledInstallEveryWeek-GpMapping-Begin -->
@@ -3149,8 +3185,8 @@ Enables the IT admin to schedule the update installation on the first week of th
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | no update in the schedule |
-| 1 | update is scheduled every first week of the month |
+| 0 (Default) | No update in the schedule. |
+| 1 | Update is scheduled every first week of the month. |
 <!-- ScheduledInstallFirstWeek-AllowedValues-End -->
 
 <!-- ScheduledInstallFirstWeek-GpMapping-Begin -->
@@ -3214,8 +3250,8 @@ Enables the IT admin to schedule the update installation on the fourth week of t
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | no update in the schedule |
-| 1 | update is scheduled every fourth week of the month |
+| 0 (Default) | No update in the schedule. |
+| 1 | Update is scheduled every fourth week of the month. |
 <!-- ScheduledInstallFourthWeek-AllowedValues-End -->
 
 <!-- ScheduledInstallFourthWeek-GpMapping-Begin -->
@@ -3279,8 +3315,8 @@ Enables the IT admin to schedule the update installation on the second week of t
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | no update in the schedule |
-| 1 | update is scheduled every second week of the month |
+| 0 (Default) | No update in the schedule. |
+| 1 | Update is scheduled every second week of the month. |
 <!-- ScheduledInstallSecondWeek-AllowedValues-End -->
 
 <!-- ScheduledInstallSecondWeek-GpMapping-Begin -->
@@ -3344,8 +3380,8 @@ Enables the IT admin to schedule the update installation on the third week of th
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | no update in the schedule |
-| 1 | update is scheduled every third week of the month |
+| 0 (Default) | No update in the schedule. |
+| 1 | Update is scheduled every third week of the month. |
 <!-- ScheduledInstallThirdWeek-AllowedValues-End -->
 
 <!-- ScheduledInstallThirdWeek-GpMapping-Begin -->
@@ -3385,7 +3421,8 @@ Enables the IT admin to schedule the update installation on the third week of th
 
 <!-- ScheduledInstallTime-Description-Begin -->
 <!-- Description-Source-DDF -->
-Note This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile EnterpriseEnables the IT admin to schedule the time of the update installation. The data type is a integer. Supported operations are Add, Delete, Get, and Replace. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile EnterpriseEnables the IT admin to schedule the time of the update installation. The data type is a integer. Supported operations are Add, Delete, Get, and Replace. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.
 <!-- ScheduledInstallTime-Description-End -->
 
 <!-- ScheduledInstallTime-Editable-Begin -->
@@ -3466,9 +3503,9 @@ Allows the IT Admin to specify the period for auto-restart imminent warning noti
 
 | Value | Description |
 |:--|:--|
-| 15 (Default) | 15 Minutes |
-| 30 | 30 Minutes |
-| 60 | 60 Minutes |
+| 15 (Default) | 15 Minutes. |
+| 30 | 30 Minutes. |
+| 60 | 60 Minutes. |
 <!-- ScheduleImminentRestartWarning-AllowedValues-End -->
 
 <!-- ScheduleImminentRestartWarning-GpMapping-Begin -->
@@ -3514,7 +3551,7 @@ Specifies the amount of time prior to a scheduled restart to display the warning
 
 You can specify the amount of time prior to a scheduled restart to notify the user that the auto restart is imminent to allow them time to save their work.
 
-If you disable or do not configure this policy, the default notification behaviors will be used.
+- If you disable or do not configure this policy, the default notification behaviors will be used.
 <!-- ScheduleRestartWarning-Description-End -->
 
 <!-- ScheduleRestartWarning-Editable-Begin -->
@@ -3536,11 +3573,11 @@ If you disable or do not configure this policy, the default notification behavio
 
 | Value | Description |
 |:--|:--|
-| 2 | 2 Hours |
-| 4 (Default) | 4 Hours |
-| 8 | 8 Hours |
-| 12 | 12 Hours |
-| 24 | 24 Hours |
+| 2 | 2 Hours. |
+| 4 (Default) | 4 Hours. |
+| 8 | 8 Hours. |
+| 12 | 12 Hours. |
+| 24 | 24 Hours. |
 <!-- ScheduleRestartWarning-AllowedValues-End -->
 
 <!-- ScheduleRestartWarning-GpMapping-Begin -->
@@ -3602,8 +3639,8 @@ Allows the IT Admin to disable auto-restart notifications for update installatio
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Enabled |
-| 1 | Disabled |
+| 0 (Default) | Enabled. |
+| 1 | Disabled. |
 <!-- SetAutoRestartNotificationDisable-AllowedValues-End -->
 
 <!-- SetAutoRestartNotificationDisable-GpMapping-Begin -->
@@ -3666,8 +3703,8 @@ Once enabled user access to pause updates is removed.
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- SetDisablePauseUXAccess-AllowedValues-End -->
 
 <!-- SetDisablePauseUXAccess-GpMapping-Begin -->
@@ -3709,7 +3746,7 @@ Once enabled user access to pause updates is removed.
 <!-- Description-Source-ADMX -->
 This setting allows you to remove access to scan Windows Update.
 
-If you enable this setting user access to Windows Update scan, download and install is removed.
+- If you enable this setting user access to Windows Update scan, download and install is removed.
 <!-- SetDisableUXWUAccess-Description-End -->
 
 <!-- SetDisableUXWUAccess-Editable-Begin -->
@@ -3731,8 +3768,8 @@ If you enable this setting user access to Windows Update scan, download and ins
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled |
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
 <!-- SetDisableUXWUAccess-AllowedValues-End -->
 
 <!-- SetDisableUXWUAccess-GpMapping-Begin -->
@@ -3794,8 +3831,8 @@ Enabling this policy for EDU devices that remain on Carts overnight will skip po
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | not configured |
-| 1 | configured |
+| 0 (Default) | Not configured. |
+| 1 | Configured. |
 <!-- SetEDURestart-AllowedValues-End -->
 
 <!-- SetEDURestart-GpMapping-Begin -->
@@ -3856,8 +3893,8 @@ Enabling this policy for EDU devices that remain on Carts overnight will skip po
 
 | Value | Description |
 |:--|:--|
-| 0 | Detect, download and deploy Driver Updates from Windows Update |
-| 1 (Default) | Detect, download and deploy Driver Updates from Windows Server Update Services (WSUS) |
+| 0 | Detect, download and deploy Driver Updates from Windows Update. |
+| 1 (Default) | Detect, download and deploy Driver Updates from Windows Server Update Services (WSUS). |
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-AllowedValues-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-GpMapping-Begin -->
@@ -3917,8 +3954,8 @@ Enabling this policy for EDU devices that remain on Carts overnight will skip po
 
 | Value | Description |
 |:--|:--|
-| 0 | Detect, download and deploy Feature Updates from Windows Update |
-| 1 (Default) | Detect, download and deploy Feature Updates from Windows Server Update Services (WSUS) |
+| 0 | Detect, download and deploy Feature Updates from Windows Update. |
+| 1 (Default) | Detect, download and deploy Feature Updates from Windows Server Update Services (WSUS). |
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-AllowedValues-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-GpMapping-Begin -->
@@ -3978,8 +4015,8 @@ Enabling this policy for EDU devices that remain on Carts overnight will skip po
 
 | Value | Description |
 |:--|:--|
-| 0 | Detect, download and deploy other Updates from Windows Update |
-| 1 (Default) | Detect, download and deploy other Updates from Windows Server Update Services (WSUS) |
+| 0 | Detect, download and deploy other Updates from Windows Update. |
+| 1 (Default) | Detect, download and deploy other Updates from Windows Server Update Services (WSUS). |
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-AllowedValues-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-GpMapping-Begin -->
@@ -4039,8 +4076,8 @@ Enabling this policy for EDU devices that remain on Carts overnight will skip po
 
 | Value | Description |
 |:--|:--|
-| 0 | Detect, download and deploy Quality Updates from Windows Update |
-| 1 (Default) | Detect, download and deploy Quality Updates from Windows Server Update Services (WSUS) |
+| 0 | Detect, download and deploy Quality Updates from Windows Update. |
+| 1 (Default) | Detect, download and deploy Quality Updates from Windows Server Update Services (WSUS). |
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-AllowedValues-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-GpMapping-Begin -->
@@ -4107,8 +4144,8 @@ This policy setting doesn't impact those customers who have, per Microsoft recom
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Only use system proxy for detecting updates (default) |
-| 1 | Allow user proxy to be used as a fallback if detection using system proxy fails |
+| 0 (Default) | Only use system proxy for detecting updates (default). |
+| 1 | Allow user proxy to be used as a fallback if detection using system proxy fails. |
 <!-- SetProxyBehaviorForUpdateDetection-AllowedValues-End -->
 
 <!-- SetProxyBehaviorForUpdateDetection-GpMapping-Begin -->
@@ -4201,15 +4238,15 @@ Available in Windows 10, version 1803 and later. Enables IT administrators to sp
 
 <!-- UpdateNotificationLevel-Description-Begin -->
 <!-- Description-Source-ADMX -->
-0 (default) – Use the default Windows Update notifications
-1 – Turn off all notifications, excluding restart warnings
-2 – Turn off all notifications, including restart warnings
+0 (default) - Use the default Windows Update notifications
+1 - Turn off all notifications, excluding restart warnings
+2 - Turn off all notifications, including restart warnings
 
-This policy allows you to define what Windows Update notifications users see. This policy doesn’t control how and when updates are downloaded and installed.
+This policy allows you to define what Windows Update notifications users see. This policy doesn't control how and when updates are downloaded and installed.
 
-Important: if you choose not to get update notifications and also define other Group policy so that devices aren’t automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
+**Important** if you choose not to get update notifications and also define other Group policy so that devices aren't automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
 
-If you select “Apply only during active hours” in conjunction with Option 1 or 2, then notifications will only be disabled during active hours. You can set active hours by setting “Turn off auto-restart for updates during active hours” or allow the device to set active hours based on user behavior. To ensure that the device stays secure, a notification will still be shown if this option is selected once “Specify deadlines for automatic updates and restarts” deadline has been reached if configured, regardless of active hours.
+If you select "Apply only during active hours" in conjunction with Option 1 or 2, then notifications will only be disabled during active hours. You can set active hours by setting "Turn off auto-restart for updates during active hours" or allow the device to set active hours based on user behavior. To ensure that the device stays secure, a notification will still be shown if this option is selected once "Specify deadlines for automatic updates and restarts" deadline has been reached if configured, regardless of active hours.
 <!-- UpdateNotificationLevel-Description-End -->
 
 <!-- UpdateNotificationLevel-Editable-Begin -->
@@ -4231,9 +4268,9 @@ If you select “Apply only during active hours” in conjunction with Option 1 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Use the default Windows Update notifications |
-| 1 | Turn off all notifications, excluding restart warnings |
-| 2 | Turn off all notifications, including restart warnings |
+| 0 (Default) | Use the default Windows Update notifications. |
+| 1 | Turn off all notifications, excluding restart warnings. |
+| 2 | Turn off all notifications, including restart warnings. |
 <!-- UpdateNotificationLevel-AllowedValues-End -->
 
 <!-- UpdateNotificationLevel-GpMapping-Begin -->
@@ -4273,7 +4310,8 @@ If you select “Apply only during active hours” in conjunction with Option 1 
 
 <!-- UpdateServiceUrl-Description-Begin -->
 <!-- Description-Source-DDF -->
-ImportantStarting in Windows 10, version 1703 this policy is not supported in Windows 10 Mobile Enterprise and IoT Mobile. Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that cannot connect to the Internet. Supported operations are Get and Replace.
+> [!IMPORTANT]
+> Starting in Windows 10, version 1703 this policy is not supported in Windows 10 Mobile Enterprise and IoT Mobile. Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that cannot connect to the Internet. Supported operations are Get and Replace.
 <!-- UpdateServiceUrl-Description-End -->
 
 <!-- UpdateServiceUrl-Editable-Begin -->
@@ -4327,7 +4365,10 @@ ImportantStarting in Windows 10, version 1703 this policy is not supported in Wi
 
 <!-- UpdateServiceUrlAlternate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network. This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network. To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update agent, and download updates from an alternate download server instead of WSUS Server. Value type is string and the default value is an empty string, . If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet. **Note**: If the Configure Automatic Updates Group Policy is disabled, then this policy has no effect. If the Alternate Download Server Group Policy is not set, it will use the WSUS server by default to download updates. This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
+Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network. This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network. To use this setting, you must set two server name values the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update agent, and download updates from an alternate download server instead of WSUS Server. Value type is string and the default value is an empty string, . If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet
+
+> [!NOTE]
+> If the Configure Automatic Updates Group Policy is disabled, then this policy has no effect. If the Alternate Download Server Group Policy is not set, it will use the WSUS server by default to download updates. This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
 <!-- UpdateServiceUrlAlternate-Description-End -->
 
 <!-- UpdateServiceUrlAlternate-Editable-Begin -->

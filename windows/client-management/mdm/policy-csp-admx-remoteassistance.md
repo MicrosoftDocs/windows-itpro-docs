@@ -1,10 +1,10 @@
 ---
 title: ADMX_RemoteAssistance Policy CSP
-description: Learn more about the ADMX_RemoteAssistance Area in Policy CSP
+description: Learn more about the ADMX_RemoteAssistance Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_RemoteAssistance
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,11 +44,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting enables Remote Assistance invitations to be generated with improved encryption so that only computers running this version (or later versions) of the operating system can connect. This policy setting does not affect Remote Assistance connections that are initiated by instant messaging contacts or the unsolicited Offer Remote Assistance.
 
-If you enable this policy setting, only computers running this version (or later versions) of the operating system can connect to this computer.
+- If you enable this policy setting, only computers running this version (or later versions) of the operating system can connect to this computer.
 
-If you disable this policy setting, computers running this version and a previous version of the operating system can connect to this computer.
+- If you disable this policy setting, computers running this version and a previous version of the operating system can connect to this computer.
 
-If you do not configure this policy setting, users can configure the setting in System Properties in the Control Panel.
+- If you do not configure this policy setting, users can configure the setting in System Properties in the Control Panel.
 <!-- RA_EncryptedTicketOnly-Description-End -->
 
 <!-- RA_EncryptedTicketOnly-Editable-Begin -->
@@ -68,7 +66,7 @@ If you do not configure this policy setting, users can configure the setting in 
 
 <!-- RA_EncryptedTicketOnly-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -122,11 +120,11 @@ For example:
 -No full window drag
 -Turn off background
 
-If you enable this policy setting, bandwidth optimization occurs at the level specified.
+- If you enable this policy setting, bandwidth optimization occurs at the level specified.
 
-If you disable this policy setting, application-based settings are used.
+- If you disable this policy setting, application-based settings are used.
 
-If you do not configure this policy setting, application-based settings are used.
+- If you do not configure this policy setting, application-based settings are used.
 <!-- RA_Optimize_Bandwidth-Description-End -->
 
 <!-- RA_Optimize_Bandwidth-Editable-Begin -->
@@ -144,7 +142,7 @@ If you do not configure this policy setting, application-based settings are used
 
 <!-- RA_Optimize_Bandwidth-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

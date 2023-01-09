@@ -1,10 +1,10 @@
 ---
 title: ApplicationDefaults Policy CSP
-description: Learn more about the ApplicationDefaults Area in Policy CSP
+description: Learn more about the ApplicationDefaults Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/09/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -147,7 +147,7 @@ Enabling this policy setting enables web-to-app linking so that apps can be laun
 
 Disabling this policy disables web-to-app linking and http(s) URIs will be opened in the default browser instead of launching the associated app.
 
-If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+- If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 <!-- EnableAppUriHandlers-Description-End -->
 
 <!-- EnableAppUriHandlers-Editable-Begin -->

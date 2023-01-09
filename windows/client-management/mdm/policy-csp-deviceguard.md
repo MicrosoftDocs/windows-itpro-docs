@@ -1,10 +1,10 @@
 ---
 title: DeviceGuard Policy CSP
-description: Learn more about the DeviceGuard Area in Policy CSP
+description: Learn more about the DeviceGuard Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/29/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -60,9 +60,9 @@ For more information about System Guard, see [Introducing Windows Defender Syste
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Unmanaged Configurable by Administrative user |
-| 1 | Unmanaged Enables Secure Launch if supported by hardware |
-| 2 | Unmanaged Disables Secure Launch |
+| 0 (Default) | Unmanaged Configurable by Administrative user. |
+| 1 | Unmanaged Enables Secure Launch if supported by hardware. |
+| 2 | Unmanaged Disables Secure Launch. |
 <!-- ConfigureSystemGuardLaunch-AllowedValues-End -->
 
 <!-- ConfigureSystemGuardLaunch-GpMapping-Begin -->
@@ -120,19 +120,20 @@ The "Not Configured" option leaves the policy setting undefined. Group Policy do
 
 The "Require UEFI Memory Attributes Table" option will only enable Virtualization Based Protection of Code Integrity on devices with UEFI firmware support for the Memory Attributes Table. Devices without the UEFI Memory Attributes Table may have firmware that is incompatible with Virtualization Based Protection of Code Integrity which in some cases can lead to crashes or data loss or incompatibility with certain plug-in cards. If not setting this option the targeted devices should be tested to ensure compatibility.
 
-Warning: All drivers on the system must be compatible with this feature or the system may crash. Ensure that this policy setting is only deployed to computers which are known to be compatible.
+> [!WARNING]
+> All drivers on the system must be compatible with this feature or the system may crash. Ensure that this policy setting is only deployed to computers which are known to be compatible.
 
 Credential Guard
 
 This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials.
 
-For Windows 11 21H2 and earlier, the "Disabled" option turns off Credential Guard remotely if it was previously turned on with the "Enabled without lock" option. For later versions, the "Disabled" option turns off Credential Guard remotely if it was previously turned on with the "Enabled without lock" option or was "Not Configured".
+For Windows 11 21. H2 and earlier, the "Disabled" option turns off Credential Guard remotely if it was previously turned on with the "Enabled without lock" option. For later versions, the "Disabled" option turns off Credential Guard remotely if it was previously turned on with the "Enabled without lock" option or was "Not Configured".
 
 The "Enabled with UEFI lock" option ensures that Credential Guard cannot be disabled remotely. In order to disable the feature, you must set the Group Policy to "Disabled" as well as remove the security functionality from each computer, with a physically present user, in order to clear configuration persisted in UEFI.
 
 The "Enabled without lock" option allows Credential Guard to be disabled remotely by using Group Policy. The devices that use this setting must be running at least Windows 10 (Version 1511).
 
-For Windows 11 21H2 and earlier, the "Not Configured" option leaves the policy setting undefined. Group Policy does not write the policy setting to the registry, and so it has no impact on computers or users. If there is a current setting in the registry it will not be modified. For later versions, if there is no current setting in the registry, the "Not Configured" option will enable Credential Guard without UEFI lock.
+For Windows 11 21. H2 and earlier, the "Not Configured" option leaves the policy setting undefined. Group Policy does not write the policy setting to the registry, and so it has no impact on computers or users. If there is a current setting in the registry it will not be modified. For later versions, if there is no current setting in the registry, the "Not Configured" option will enable Credential Guard without UEFI lock.
 
 Secure Launch
 
@@ -148,15 +149,13 @@ Kernel-mode Hardware-enforced Stack Protection
 
 This setting enables Hardware-enforced Stack Protection for kernel-mode code. When this security feature is enabled, kernel-mode data stacks are hardened with hardware-based shadow stacks, which store intended return address targets to ensure that program control flow is not tampered.
 
-This security feature has the following prerequisites:
+This security feature has the following prerequisites
 1) The CPU hardware supports hardware-based shadow stacks.
 2) Virtualization Based Protection of Code Integrity is enabled.
 
-If either prerequisite is not met, this feature will not be enabled, even if an "Enabled" option is selected for this feature.
+If either prerequisite is not met, this feature will not be enabled, even if an "Enabled" option is selected for this feature. **Note** that selecting an "Enabled" option for this feature will not automatically enable Virtualization Based Protection of Code Integrity, that needs to be done separately.
 
-**Note** that selecting an "Enabled" option for this feature will not automatically enable Virtualization Based Protection of Code Integrity, that needs to be done separately.
-
-Devices that enable this security feature must be running at least Windows 11 (Version 22H2).
+Devices that enable this security feature must be running at least Windows 11 (Version 22. H2).
 
 The "Disabled" option turns off kernel-mode Hardware-enforced Stack Protection.
 
@@ -166,7 +165,8 @@ The "Enabled in enforcement mode" option enables kernel-mode Hardware-enforced S
 
 The "Not Configured" option leaves the policy setting undefined. Group Policy does not write the policy setting to the registry, and so it has no impact on computers or users. If there is a current setting in the registry it will not be modified.
 
-Warning: All drivers on the system must be compatible with this security feature or the system may crash in enforcement mode. Audit mode can be used to discover incompatible drivers. For more information, refer to <https://go.microsoft.com/fwlink/?LinkId=2162953>.
+> [!WARNING]
+> All drivers on the system must be compatible with this security feature or the system may crash in enforcement mode. Audit mode can be used to discover incompatible drivers. For more information, refer to <https//go.microsoft.com/fwlink/?LinkId=2162953>.
 <!-- EnableVirtualizationBasedSecurity-Description-End -->
 
 <!-- EnableVirtualizationBasedSecurity-Editable-Begin -->
@@ -188,8 +188,8 @@ Warning: All drivers on the system must be compatible with this security feature
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | disable virtualization based security. |
-| 1 | enable virtualization based security. |
+| 0 (Default) | Disable virtualization based security. |
+| 1 | Enable virtualization based security. |
 <!-- EnableVirtualizationBasedSecurity-AllowedValues-End -->
 
 <!-- EnableVirtualizationBasedSecurity-GpMapping-Begin -->

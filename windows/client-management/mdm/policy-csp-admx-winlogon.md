@@ -1,10 +1,10 @@
 ---
 title: ADMX_WinLogon Policy CSP
-description: Learn more about the ADMX_WinLogon Area in Policy CSP
+description: Learn more about the ADMX_WinLogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,15 +17,78 @@ ms.topic: reference
 # Policy CSP - ADMX_WinLogon
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!-- ADMX_WinLogon-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- ADMX_WinLogon-Editable-End -->
+
+<!-- CustomShell-Begin -->
+## CustomShell
+
+<!-- CustomShell-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CustomShell-Applicability-End -->
+
+<!-- CustomShell-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WinLogon/CustomShell
+```
+<!-- CustomShell-OmaUri-End -->
+
+<!-- CustomShell-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies an alternate user interface.
+
+The Explorer program (%windir%\explorer.exe) creates the familiar Windows interface, but you can use this setting to specify an alternate interface.
+- If you enable this setting, the system starts the interface you specify instead of Explorer.exe.
+
+To use this setting, copy your interface program to a network share or to your system drive. Then, enable this setting, and type the name of the interface program, including the file name extension, in the Shell name text box. If the interface program file is not located in a folder specified in the Path environment variable for your system, enter the fully qualified path to the file.
+
+- If you disable this setting or do not configure it, the setting is ignored and the system displays the Explorer interface.
+
+> [!TIP]
+> To find the folders indicated by the Path environment variable, click System Properties in Control Panel, click the Advanced tab, click the Environment Variables button, and then, in the System variables box, click Path.
+<!-- CustomShell-Description-End -->
+
+<!-- CustomShell-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CustomShell-Editable-End -->
+
+<!-- CustomShell-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CustomShell-DFProperties-End -->
+
+<!-- CustomShell-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | CustomShell |
+| Friendly Name | Custom User Interface |
+| Location | User Configuration |
+| Path | System |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| ADMX File Name | WinLogon.admx |
+<!-- CustomShell-AdmxBacked-End -->
+
+<!-- CustomShell-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CustomShell-Examples-End -->
+
+<!-- CustomShell-End -->
 
 <!-- DisplayLastLogonInfoDescription-Begin -->
 ## DisplayLastLogonInfoDescription
@@ -50,7 +113,7 @@ For local user accounts and domain user accounts in domains of at least a Window
 
 For domain user accounts in Windows Server 2003, Windows 2000 native, or Windows 2000 mixed functional level domains, if you enable this setting, a warning message will appear that Windows could not retrieve the information and the user will not be able to log on. Therefore, you should not enable this policy setting if the domain is not at the Windows Server 2008 domain functional level.
 
-If you disable or do not configure this setting, messages about the previous logon or logon failures are not displayed.
+- If you disable or do not configure this setting, messages about the previous logon or logon failures are not displayed.
 <!-- DisplayLastLogonInfoDescription-Description-End -->
 
 <!-- DisplayLastLogonInfoDescription-Editable-Begin -->
@@ -68,7 +131,7 @@ If you disable or do not configure this setting, messages about the previous log
 
 <!-- DisplayLastLogonInfoDescription-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -88,6 +151,135 @@ If you disable or do not configure this setting, messages about the previous log
 <!-- DisplayLastLogonInfoDescription-Examples-End -->
 
 <!-- DisplayLastLogonInfoDescription-End -->
+
+<!-- LogonHoursNotificationPolicyDescription-Begin -->
+## LogonHoursNotificationPolicyDescription
+
+<!-- LogonHoursNotificationPolicyDescription-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LogonHoursNotificationPolicyDescription-Applicability-End -->
+
+<!-- LogonHoursNotificationPolicyDescription-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WinLogon/LogonHoursNotificationPolicyDescription
+```
+<!-- LogonHoursNotificationPolicyDescription-OmaUri-End -->
+
+<!-- LogonHoursNotificationPolicyDescription-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy controls whether the logged on user should be notified when his logon hours are about to expire. By default, a user is notified before logon hours expire, if actions have been set to occur when the logon hours expire.
+
+- If you enable this setting, warnings are not displayed to the user before the logon hours expire.
+
+- If you disable or do not configure this setting, users receive warnings before the logon hours expire, if actions have been set to occur when the logon hours expire.
+
+> [!NOTE]
+> If you configure this setting, you might want to examine and appropriately configure the "Set action to take when logon hours expire" setting. If "Set action to take when logon hours expire" is disabled or not configured, the "Remove logon hours expiration warnings" setting will have no effect, and users receive no warnings about logon hour expiration
+<!-- LogonHoursNotificationPolicyDescription-Description-End -->
+
+<!-- LogonHoursNotificationPolicyDescription-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LogonHoursNotificationPolicyDescription-Editable-End -->
+
+<!-- LogonHoursNotificationPolicyDescription-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LogonHoursNotificationPolicyDescription-DFProperties-End -->
+
+<!-- LogonHoursNotificationPolicyDescription-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LogonHoursNotificationPolicyDescription |
+| Friendly Name | Remove logon hours expiration warnings |
+| Location | User Configuration |
+| Path | Windows Components > Windows Logon Options |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | DontDisplayLogonHoursWarnings |
+| ADMX File Name | WinLogon.admx |
+<!-- LogonHoursNotificationPolicyDescription-AdmxBacked-End -->
+
+<!-- LogonHoursNotificationPolicyDescription-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LogonHoursNotificationPolicyDescription-Examples-End -->
+
+<!-- LogonHoursNotificationPolicyDescription-End -->
+
+<!-- LogonHoursPolicyDescription-Begin -->
+## LogonHoursPolicyDescription
+
+<!-- LogonHoursPolicyDescription-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LogonHoursPolicyDescription-Applicability-End -->
+
+<!-- LogonHoursPolicyDescription-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WinLogon/LogonHoursPolicyDescription
+```
+<!-- LogonHoursPolicyDescription-OmaUri-End -->
+
+<!-- LogonHoursPolicyDescription-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy controls which action will be taken when the logon hours expire for the logged on user. The actions include lock the workstation, disconnect the user, or log the user off completely.
+
+If you choose to lock or disconnect a session, the user cannot unlock the session or reconnect except during permitted logon hours.
+
+If you choose to log off a user, the user cannot log on again except during permitted logon hours. If you choose to log off a user, the user might lose unsaved data.
+
+- If you enable this setting, the system will perform the action you specify when the user's logon hours expire.
+
+- If you disable or do not configure this setting, the system takes no action when the user's logon hours expire. The user can continue the existing session, but cannot log on to a new session.
+
+> [!NOTE]
+> If you configure this setting, you might want to examine and appropriately configure the "Remove logon hours expiration warnings" setting
+<!-- LogonHoursPolicyDescription-Description-End -->
+
+<!-- LogonHoursPolicyDescription-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LogonHoursPolicyDescription-Editable-End -->
+
+<!-- LogonHoursPolicyDescription-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LogonHoursPolicyDescription-DFProperties-End -->
+
+<!-- LogonHoursPolicyDescription-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LogonHoursPolicyDescription |
+| Friendly Name | Set action to take when logon hours expire |
+| Location | User Configuration |
+| Path | Windows Components > Windows Logon Options |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| ADMX File Name | WinLogon.admx |
+<!-- LogonHoursPolicyDescription-AdmxBacked-End -->
+
+<!-- LogonHoursPolicyDescription-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LogonHoursPolicyDescription-Examples-End -->
+
+<!-- LogonHoursPolicyDescription-End -->
 
 <!-- ReportCachedLogonPolicyDescription-Begin -->
 ## ReportCachedLogonPolicyDescription
@@ -132,7 +324,7 @@ If disabled or not configured, no popup will be displayed to the user.
 
 <!-- ReportCachedLogonPolicyDescription-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -172,14 +364,14 @@ If disabled or not configured, no popup will be displayed to the user.
 <!-- Description-Source-ADMX -->
 This policy setting controls whether or not software can simulate the Secure Attention Sequence (SAS).
 
-If you enable this policy setting, you have one of four options:
+- If you enable this policy setting, you have one of four options:
 
 If you set this policy setting to "None," user mode software cannot simulate the SAS.
 If you set this policy setting to "Services," services can simulate the SAS.
 If you set this policy setting to "Ease of Access applications," Ease of Access applications can simulate the SAS.
 If you set this policy setting to "Services and Ease of Access applications," both services and Ease of Access applications can simulate the SAS.
 
-If you disable or do not configure this setting, only Ease of Access applications running on the secure desktop can simulate the SAS.
+- If you disable or do not configure this setting, only Ease of Access applications running on the secure desktop can simulate the SAS.
 <!-- SoftwareSASGeneration-Description-End -->
 
 <!-- SoftwareSASGeneration-Editable-Begin -->
@@ -197,13 +389,13 @@ If you disable or do not configure this setting, only Ease of Access application
 
 <!-- SoftwareSASGeneration-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | SoftwareSASGenerationDescription |
+| Name | SoftwareSASGeneration |
 | Friendly Name | Disable or enable software Secure Attention Sequence |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Logon Options |
@@ -216,196 +408,6 @@ If you disable or do not configure this setting, only Ease of Access application
 <!-- SoftwareSASGeneration-Examples-End -->
 
 <!-- SoftwareSASGeneration-End -->
-
-<!-- CustomShell-Begin -->
-## CustomShell
-
-<!-- CustomShell-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- CustomShell-Applicability-End -->
-
-<!-- CustomShell-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_WinLogon/CustomShell
-```
-<!-- CustomShell-OmaUri-End -->
-
-<!-- CustomShell-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies an alternate user interface.
-
-The Explorer program (%windir%\explorer.exe) creates the familiar Windows interface, but you can use this setting to specify an alternate interface. If you enable this setting, the system starts the interface you specify instead of Explorer.exe.
-
-To use this setting, copy your interface program to a network share or to your system drive. Then, enable this setting, and type the name of the interface program, including the file name extension, in the Shell name text box. If the interface program file is not located in a folder specified in the Path environment variable for your system, enter the fully qualified path to the file.
-
-If you disable this setting or do not configure it, the setting is ignored and the system displays the Explorer interface.
-
-Tip: To find the folders indicated by the Path environment variable, click System Properties in Control Panel, click the Advanced tab, click the Environment Variables button, and then, in the System variables box, click Path.
-<!-- CustomShell-Description-End -->
-
-<!-- CustomShell-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- CustomShell-Editable-End -->
-
-<!-- CustomShell-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- CustomShell-DFProperties-End -->
-
-<!-- CustomShell-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | CustomShellPolicyDescription |
-| Friendly Name | Custom User Interface |
-| Location | User Configuration |
-| Path | System |
-| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
-| ADMX File Name | WinLogon.admx |
-<!-- CustomShell-AdmxBacked-End -->
-
-<!-- CustomShell-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- CustomShell-Examples-End -->
-
-<!-- CustomShell-End -->
-
-<!-- LogonHoursNotificationPolicyDescription-Begin -->
-## LogonHoursNotificationPolicyDescription
-
-<!-- LogonHoursNotificationPolicyDescription-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- LogonHoursNotificationPolicyDescription-Applicability-End -->
-
-<!-- LogonHoursNotificationPolicyDescription-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_WinLogon/LogonHoursNotificationPolicyDescription
-```
-<!-- LogonHoursNotificationPolicyDescription-OmaUri-End -->
-
-<!-- LogonHoursNotificationPolicyDescription-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy controls whether the logged on user should be notified when his logon hours are about to expire. By default, a user is notified before logon hours expire, if actions have been set to occur when the logon hours expire.
-
-If you enable this setting, warnings are not displayed to the user before the logon hours expire.
-
-If you disable or do not configure this setting, users receive warnings before the logon hours expire, if actions have been set to occur when the logon hours expire.
-
-Note: If you configure this setting, you might want to examine and appropriately configure the “Set action to take when logon hours expire” setting. If “Set action to take when logon hours expire” is disabled or not configured, the “Remove logon hours expiration warnings” setting will have no effect, and users receive no warnings about logon hour expiration
-<!-- LogonHoursNotificationPolicyDescription-Description-End -->
-
-<!-- LogonHoursNotificationPolicyDescription-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- LogonHoursNotificationPolicyDescription-Editable-End -->
-
-<!-- LogonHoursNotificationPolicyDescription-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- LogonHoursNotificationPolicyDescription-DFProperties-End -->
-
-<!-- LogonHoursNotificationPolicyDescription-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | LogonHoursNotificationPolicyDescription |
-| Friendly Name | Remove logon hours expiration warnings |
-| Location | User Configuration |
-| Path | Windows Components > Windows Logon Options |
-| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
-| Registry Value Name | DontDisplayLogonHoursWarnings |
-| ADMX File Name | WinLogon.admx |
-<!-- LogonHoursNotificationPolicyDescription-AdmxBacked-End -->
-
-<!-- LogonHoursNotificationPolicyDescription-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- LogonHoursNotificationPolicyDescription-Examples-End -->
-
-<!-- LogonHoursNotificationPolicyDescription-End -->
-
-<!-- LogonHoursPolicyDescription-Begin -->
-## LogonHoursPolicyDescription
-
-<!-- LogonHoursPolicyDescription-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- LogonHoursPolicyDescription-Applicability-End -->
-
-<!-- LogonHoursPolicyDescription-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_WinLogon/LogonHoursPolicyDescription
-```
-<!-- LogonHoursPolicyDescription-OmaUri-End -->
-
-<!-- LogonHoursPolicyDescription-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy controls which action will be taken when the logon hours expire for the logged on user. The actions include lock the workstation, disconnect the user, or log the user off completely.
-
-If you choose to lock or disconnect a session, the user cannot unlock the session or reconnect except during permitted logon hours.
-
-If you choose to log off a user, the user cannot log on again except during permitted logon hours. If you choose to log off a user, the user might lose unsaved data.
-
-If you enable this setting, the system will perform the action you specify when the user’s logon hours expire.
-
-If you disable or do not configure this setting, the system takes no action when the user’s logon hours expire. The user can continue the existing session, but cannot log on to a new session.
-
-Note: If you configure this setting, you might want to examine and appropriately configure the “Remove logon hours expiration warnings” setting
-<!-- LogonHoursPolicyDescription-Description-End -->
-
-<!-- LogonHoursPolicyDescription-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- LogonHoursPolicyDescription-Editable-End -->
-
-<!-- LogonHoursPolicyDescription-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- LogonHoursPolicyDescription-DFProperties-End -->
-
-<!-- LogonHoursPolicyDescription-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | LogonHoursPolicyDescription |
-| Friendly Name | Set action to take when logon hours expire |
-| Location | User Configuration |
-| Path | Windows Components > Windows Logon Options |
-| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
-| ADMX File Name | WinLogon.admx |
-<!-- LogonHoursPolicyDescription-AdmxBacked-End -->
-
-<!-- LogonHoursPolicyDescription-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- LogonHoursPolicyDescription-Examples-End -->
-
-<!-- LogonHoursPolicyDescription-End -->
 
 <!-- ADMX_WinLogon-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

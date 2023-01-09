@@ -1,10 +1,10 @@
 ---
 title: ADMX_wlansvc Policy CSP
-description: Learn more about the ADMX_wlansvc Area in Policy CSP
+description: Learn more about the ADMX_wlansvc Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_wlansvc
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,7 +44,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting configures the cost of Wireless LAN (WLAN) connections on the local machine.
 
-If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all WLAN connections on the local machine:
+- If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all WLAN connections on the local machine:
 
 - Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
 
@@ -54,7 +52,7 @@ If this policy setting is enabled, a drop-down list box presenting possible cost
 
 - Variable: This connection is costed on a per byte basis.
 
-If this policy setting is disabled or is not configured, the cost of Wireless LAN connections is Unrestricted by default.
+- If this policy setting is disabled or is not configured, the cost of Wireless LAN connections is Unrestricted by default.
 <!-- SetCost-Description-End -->
 
 <!-- SetCost-Editable-Begin -->
@@ -72,7 +70,7 @@ If this policy setting is disabled or is not configured, the cost of Wireless LA
 
 <!-- SetCost-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -113,7 +111,7 @@ This policy applies to Wireless Display connections. This policy means that the 
 
 Conversely it means that Push Button is NOT allowed.
 
-If this policy setting is disabled or is not configured, by default Push Button pairing is allowed (but not necessarily preferred).
+- If this policy setting is disabled or is not configured, by default Push Button pairing is allowed (but not necessarily preferred).
 <!-- SetPINEnforced-Description-End -->
 
 <!-- SetPINEnforced-Editable-Begin -->
@@ -131,13 +129,13 @@ If this policy setting is disabled or is not configured, by default Push Button 
 
 <!-- SetPINEnforced-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Wireless_Display_PINEnforced |
+| Name | SetPINEnforced |
 | Friendly Name | Require PIN pairing |
 | Location | Computer Configuration |
 | Path | Network > Wireless Display |
@@ -173,7 +171,7 @@ This policy applies to Wireless Display connections. This policy changes the pre
 
 When enabled, it makes the connections to prefer a PIN for pairing to Wireless Display devices over the Push Button pairing method.
 
-If this policy setting is disabled or is not configured, by default Push Button pairing is preferred (if allowed by other policies).
+- If this policy setting is disabled or is not configured, by default Push Button pairing is preferred (if allowed by other policies).
 <!-- SetPINPreferred-Description-End -->
 
 <!-- SetPINPreferred-Editable-Begin -->
@@ -191,13 +189,13 @@ If this policy setting is disabled or is not configured, by default Push Button 
 
 <!-- SetPINPreferred-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Wireless_Display_PINPreferred |
+| Name | SetPINPreferred |
 | Friendly Name | Prefer PIN pairing |
 | Location | Computer Configuration |
 | Path | Network > Wireless Display |

@@ -1,10 +1,10 @@
 ---
-potitle: HumanPresence Policy CSP
-description: Learn more about the HumanPresence Area in Policy CSP
+title: HumanPresence Policy CSP
+description: Learn more about the HumanPresence Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/02/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -251,7 +251,7 @@ Determines the timeout for Lock on Leave forced by the MDM policy. The user will
 
 | Value | Description |
 |:--|:--|
-| 120 | TwoMinutes |
+| 120 | TwoMinutes. |
 | 30 | ThirtySeconds. |
 | 10 | TenSeconds. |
 | 0 (Default) | DefaultToUserChoice. |

@@ -1,10 +1,10 @@
 ---
 title: Wifi Policy CSP
-description: Learn more about the Wifi Area in Policy CSP
+description: Learn more about the Wifi Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/07/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -45,9 +45,9 @@ This policy setting determines whether users can enable the following WLAN setti
 
 "Enable paid services" enables Windows to temporarily connect to open hotspots to determine if paid services are available.
 
-If this policy setting is disabled, both "Connect to suggested open hotspots," "Connect to networks shared by my contacts," and "Enable paid services" will be turned off and users on this device will be prevented from enabling them.
+- If this policy setting is disabled, both "Connect to suggested open hotspots," "Connect to networks shared by my contacts," and "Enable paid services" will be turned off and users on this device will be prevented from enabling them.
 
-If this policy setting is not configured or is enabled, users can choose to enable or disable either "Connect to suggested open hotspots" or "Connect to networks shared by my contacts".
+- If this policy setting is not configured or is enabled, users can choose to enable or disable either "Connect to suggested open hotspots" or "Connect to networks shared by my contacts".
 <!-- AllowAutoConnectToWiFiSenseHotspots-Description-End -->
 
 <!-- AllowAutoConnectToWiFiSenseHotspots-Editable-Begin -->
@@ -114,19 +114,23 @@ Determines whether administrators can enable and configure the Internet Connecti
 
 ICS lets administrators configure their system as an Internet gateway for a small network and provides network services, such as name resolution and addressing through DHCP, to the local private network.
 
-If you enable this setting, ICS cannot be enabled or configured by administrators, and the ICS service cannot run on the computer. The Advanced tab in the Properties dialog box for a LAN or remote access connection is removed. The Internet Connection Sharing page is removed from the New Connection Wizard. The Network Setup Wizard is disabled.
+- If you enable this setting, ICS cannot be enabled or configured by administrators, and the ICS service cannot run on the computer. The Advanced tab in the Properties dialog box for a LAN or remote access connection is removed. The Internet Connection Sharing page is removed from the New Connection Wizard. The Network Setup Wizard is disabled.
 
-If you disable this setting or do not configure it and have two or more connections, administrators can enable ICS. The Advanced tab in the properties dialog box for a LAN or remote access connection is available. In addition, the user is presented with the option to enable Internet Connection Sharing in the Network Setup Wizard and Make New Connection Wizard. (The Network Setup Wizard is available only in Windows XP Professional.)
+- If you disable this setting or do not configure it and have two or more connections, administrators can enable ICS. The Advanced tab in the properties dialog box for a LAN or remote access connection is available. In addition, the user is presented with the option to enable Internet Connection Sharing in the Network Setup Wizard and Make New Connection Wizard. (The Network Setup Wizard is available only in Windows XP Professional.)
 
 By default, ICS is disabled when you create a remote access connection, but administrators can use the Advanced tab to enable it. When running the New Connection Wizard or Network Setup Wizard, administrators can choose to enable ICS.
 
-Note: Internet Connection Sharing is only available when two or more network connections are present.
+> [!NOTE]
+> Internet Connection Sharing is only available when two or more network connections are present.
 
-Note: When the "Prohibit access to properties of a LAN connection," "Ability to change properties of an all user remote access connection," or "Prohibit changing properties of a private remote access connection" settings are set to deny access to the Connection Properties dialog box, the Advanced tab for the connection is blocked.
+> [!NOTE]
+> When the "Prohibit access to properties of a LAN connection," "Ability to change properties of an all user remote access connection," or "Prohibit changing properties of a private remote access connection" settings are set to deny access to the Connection Properties dialog box, the Advanced tab for the connection is blocked.
 
-Note: Nonadministrators are already prohibited from configuring Internet Connection Sharing, regardless of this setting.
+> [!NOTE]
+> Nonadministrators are already prohibited from configuring Internet Connection Sharing, regardless of this setting.
 
-Note: Disabling this setting does not prevent Wireless Hosted Networking from using the ICS service for DHCP services. To prevent the ICS service from running, on the Network Permissions tab in the network's policy properties, select the "Don't use hosted networks" check box.
+> [!NOTE]
+> Disabling this setting does not prevent Wireless Hosted Networking from using the ICS service for DHCP services. To prevent the ICS service from running, on the Network Permissions tab in the network's policy properties, select the "Don't use hosted networks" check box.
 <!-- AllowInternetSharing-Description-End -->
 
 <!-- AllowInternetSharing-Editable-Begin -->
@@ -189,7 +193,10 @@ Note: Disabling this setting does not prevent Wireless Hosted Networking from us
 
 <!-- AllowManualWiFiConfiguration-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks. Most restricted value is 0. **Note**: Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
+Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks. Most restricted value is 0
+
+> [!NOTE]
+> Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
 <!-- AllowManualWiFiConfiguration-Description-End -->
 
 <!-- AllowManualWiFiConfiguration-Editable-Begin -->

@@ -1,6 +1,6 @@
 ---
 title: ADMX_MicrosoftDefenderAntivirus Policy CSP
-description: Learn more about the ADMX_MicrosoftDefenderAntivirus Area in Policy CSP
+description: Learn more about the ADMX_MicrosoftDefenderAntivirus Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
@@ -361,7 +361,7 @@ Real-time protection consists of always-on scanning with file and process behavi
 
 - If you enable this policy setting, real-time protection is turned off.
 
-If you either disable or do not configure this policy setting, real-time protection is turned on.
+- If you either disable or do not configure this policy setting, real-time protection is turned on.
 <!-- DisableRealtimeMonitoring-Description-End -->
 
 <!-- DisableRealtimeMonitoring-Editable-Begin -->
@@ -3255,10 +3255,16 @@ This policy setting allows you to configure heuristics. Suspicious detections wi
 <!-- Scan_DisablePackedExeScanning-DFProperties-End -->
 
 <!-- Scan_DisablePackedExeScanning-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
 > [!TIP]
 > This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!-- Unknown -->
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Scan_DisablePackedExeScanning |
+| ADMX File Name | WindowsDefender.admx |
 <!-- Scan_DisablePackedExeScanning-AdmxBacked-End -->
 
 <!-- Scan_DisablePackedExeScanning-Examples-Begin -->

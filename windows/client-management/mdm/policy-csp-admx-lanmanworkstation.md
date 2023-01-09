@@ -1,10 +1,10 @@
 ---
 title: ADMX_LanmanWorkstation Policy CSP
-description: Learn more about the ADMX_LanmanWorkstation Area in Policy CSP
+description: Learn more about the ADMX_LanmanWorkstation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_LanmanWorkstation
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,9 +44,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting determines the cipher suites used by the SMB client.
 
-If you enable this policy setting, cipher suites are prioritized in the order specified.
+- If you enable this policy setting, cipher suites are prioritized in the order specified.
 
-If you enable this policy setting and do not specify at least one supported cipher suite, or if you disable or do not configure this policy setting, the default cipher suite order is used.
+- If you enable this policy setting and do not specify at least one supported cipher suite, or if you disable or do not configure this policy setting, the default cipher suite order is used.
 
 SMB 3.11 cipher suites:
 
@@ -65,7 +63,8 @@ How to modify this setting:
 
 Arrange the desired cipher suites in the edit box, one cipher suite per line, in order from most to least preferred, with the most preferred cipher suite at the top. Remove any cipher suites you don't want to use.
 
-Note: When configuring this security setting, changes will not take effect until you restart Windows.
+> [!NOTE]
+> When configuring this security setting, changes will not take effect until you restart Windows.
 <!-- Pol_CipherSuiteOrder-Description-End -->
 
 <!-- Pol_CipherSuiteOrder-Editable-Begin -->
@@ -84,13 +83,13 @@ AES_256 is not supported on Windows 10 version 20H2 and lower. If you enter only
 
 <!-- Pol_CipherSuiteOrder-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_CipherSuiteOrder_Name |
+| Name | Pol_CipherSuiteOrder |
 | Friendly Name | Cipher suite order |
 | Location | Computer Configuration |
 | Path | Network > Lanman Workstation |
@@ -123,11 +122,12 @@ AES_256 is not supported on Windows 10 version 20H2 and lower. If you enter only
 <!-- Description-Source-ADMX -->
 This policy setting determines the behavior of SMB handle caching for clients connecting to an SMB share where the Continuous Availability (CA) flag is enabled.
 
-If you enable this policy setting, the SMB client will allow cached handles to files on CA shares. This may lead to better performance when repeatedly accessing a large number of unstructured data files on CA shares running in Microsoft Azure Files.
+- If you enable this policy setting, the SMB client will allow cached handles to files on CA shares. This may lead to better performance when repeatedly accessing a large number of unstructured data files on CA shares running in Microsoft Azure Files.
 
-If you disable or do not configure this policy setting, Windows will prevent use of cached handles to files opened through CA shares.
+- If you disable or do not configure this policy setting, Windows will prevent use of cached handles to files opened through CA shares.
 
-Note: This policy has no effect when connecting Scale-out File Server shares provided by a Windows Server. Microsoft does not recommend enabling this policy for clients that routinely connect to files hosted on a Windows Failover Cluster with the File Server for General Use role, as it can lead to adverse failover times and increased memory and CPU usage.
+> [!NOTE]
+> This policy has no effect when connecting Scale-out File Server shares provided by a Windows Server. Microsoft does not recommend enabling this policy for clients that routinely connect to files hosted on a Windows Failover Cluster with the File Server for General Use role, as it can lead to adverse failover times and increased memory and CPU usage.
 <!-- Pol_EnableHandleCachingForCAFiles-Description-End -->
 
 <!-- Pol_EnableHandleCachingForCAFiles-Editable-Begin -->
@@ -145,13 +145,13 @@ Note: This policy has no effect when connecting Scale-out File Server shares pro
 
 <!-- Pol_EnableHandleCachingForCAFiles-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_EnableHandleCachingForCAFiles_Name |
+| Name | Pol_EnableHandleCachingForCAFiles |
 | Friendly Name | Handle Caching on Continuous Availability Shares |
 | Location | Computer Configuration |
 | Path | Network > Lanman Workstation |
@@ -185,11 +185,12 @@ Note: This policy has no effect when connecting Scale-out File Server shares pro
 <!-- Description-Source-ADMX -->
 This policy setting determines the behavior of Offline Files on clients connecting to an SMB share where the Continuous Availability (CA) flag is enabled.
 
-If you enable this policy setting, the "Always Available offline" option will appear in the File Explorer menu on a Windows computer when connecting to a CA-enabled share. Pinning of files on CA-enabled shares using client-side caching will also be possible.
+- If you enable this policy setting, the "Always Available offline" option will appear in the File Explorer menu on a Windows computer when connecting to a CA-enabled share. Pinning of files on CA-enabled shares using client-side caching will also be possible.
 
-If you disable or do not configure this policy setting, Windows will prevent use of Offline Files with CA-enabled shares.
+- If you disable or do not configure this policy setting, Windows will prevent use of Offline Files with CA-enabled shares.
 
-Note: Microsoft does not recommend enabling this group policy. Use of CA with Offline Files will lead to very long transition times between the online and offline states.
+> [!NOTE]
+> Microsoft does not recommend enabling this group policy. Use of CA with Offline Files will lead to very long transition times between the online and offline states.
 <!-- Pol_EnableOfflineFilesforCAShares-Description-End -->
 
 <!-- Pol_EnableOfflineFilesforCAShares-Editable-Begin -->
@@ -207,13 +208,13 @@ Note: Microsoft does not recommend enabling this group policy. Use of CA with Of
 
 <!-- Pol_EnableOfflineFilesforCAShares-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | Pol_EnableCSCforCAShares_Name |
+| Name | Pol_EnableOfflineFilesforCAShares |
 | Friendly Name | Offline Files Availability on Continuous Availability Shares |
 | Location | Computer Configuration |
 | Path | Network > Lanman Workstation |

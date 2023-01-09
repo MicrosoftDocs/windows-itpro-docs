@@ -1,10 +1,10 @@
 ---
 title: TextInput Policy CSP
-description: Learn more about the TextInput Area in Policy CSP
+description: Learn more about the TextInput Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/07/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -86,7 +86,8 @@ Placeholder only. Do not use in production environment.
 
 <!-- AllowIMELogging-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file and history-based predictive input. Most restricted value is 0.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop. Allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file and history-based predictive input. Most restricted value is 0.
 <!-- AllowIMELogging-Description-End -->
 
 <!-- AllowIMELogging-Editable-Begin -->
@@ -184,7 +185,8 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 <!-- AllowInputPanel-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the IT admin to disable the touch/handwriting keyboard on Windows. Most restricted value is 0.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop. Allows the IT admin to disable the touch/handwriting keyboard on Windows. Most restricted value is 0.
 <!-- AllowInputPanel-Description-End -->
 
 <!-- AllowInputPanel-Editable-Begin -->
@@ -233,7 +235,8 @@ Allows the IT admin to disable the touch/handwriting keyboard on Windows. Most r
 
 <!-- AllowJapaneseIMESurrogatePairCharacters-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the Japanese IME surrogate pair characters. Most restricted value is 0.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop. Allows the Japanese IME surrogate pair characters. Most restricted value is 0.
 <!-- AllowJapaneseIMESurrogatePairCharacters-Description-End -->
 
 <!-- AllowJapaneseIMESurrogatePairCharacters-Editable-Begin -->
@@ -282,7 +285,8 @@ Allows the Japanese IME surrogate pair characters. Most restricted value is 0.
 
 <!-- AllowJapaneseIVSCharacters-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows Japanese Ideographic Variation Sequence (IVS) characters. Most restricted value is 0.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop. Allows Japanese Ideographic Variation Sequence (IVS) characters. Most restricted value is 0.
 <!-- AllowJapaneseIVSCharacters-Description-End -->
 
 <!-- AllowJapaneseIVSCharacters-Editable-Begin -->
@@ -331,7 +335,8 @@ Allows Japanese Ideographic Variation Sequence (IVS) characters. Most restricted
 
 <!-- AllowJapaneseNonPublishingStandardGlyph-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the Japanese non-publishing standard glyph. Most restricted value is 0.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop. Allows the Japanese non-publishing standard glyph. Most restricted value is 0.
 <!-- AllowJapaneseNonPublishingStandardGlyph-Description-End -->
 
 <!-- AllowJapaneseNonPublishingStandardGlyph-Editable-Begin -->
@@ -380,7 +385,8 @@ Allows the Japanese non-publishing standard glyph. Most restricted value is 0.
 
 <!-- AllowJapaneseUserDictionary-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the Japanese user dictionary. Most restricted value is 0.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop. Allows the Japanese user dictionary. Most restricted value is 0.
 <!-- AllowJapaneseUserDictionary-Description-End -->
 
 <!-- AllowJapaneseUserDictionary-Editable-Begin -->
@@ -429,7 +435,8 @@ Allows the Japanese user dictionary. Most restricted value is 0.
 
 <!-- AllowKeyboardTextSuggestions-Description-Begin -->
 <!-- Description-Source-DDF -->
- Specifies whether text prediction is enabled or disabled for the on-screen keyboard, touch keyboard, and handwriting recognition tool. When this policy is set to disabled, text prediction is disabled. Most restricted value is 0.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop. Specifies whether text prediction is enabled or disabled for the on-screen keyboard, touch keyboard, and handwriting recognition tool. When this policy is set to disabled, text prediction is disabled. Most restricted value is 0.
 <!-- AllowKeyboardTextSuggestions-Description-End -->
 
 <!-- AllowKeyboardTextSuggestions-Editable-Begin -->
@@ -483,7 +490,7 @@ To validate that text prediction is disabled on Windows 10 for desktop, do the f
 
 <!-- AllowLanguageFeaturesUninstall-Description-Begin -->
 <!-- Description-Source-ADMX -->
-When this policy setting is enabled, some language features (such as handwriting recognizers and spell checking dictionaries) included with a language can be uninstalled from a user’s machine when the language is uninstalled. The language can be reinstalled with a different selection of included language features if needed. When this policy setting is disabled, language features remain on the user’s machine when the language is uninstalled.
+When this policy setting is enabled, some language features (such as handwriting recognizers and spell checking dictionaries) included with a language can be uninstalled from a user's machine when the language is uninstalled. The language can be reinstalled with a different selection of included language features if needed. When this policy setting is disabled, language features remain on the user's machine when the language is uninstalled.
 <!-- AllowLanguageFeaturesUninstall-Description-End -->
 
 <!-- AllowLanguageFeaturesUninstall-Editable-Begin -->
@@ -658,17 +665,18 @@ Allows the user to turn on or off the automatic downloading of newer versions of
 
 <!-- ConfigureJapaneseIMEVersion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the version of Microsoft IME.​
+This policy setting controls the version of Microsoft IME. 
 
-If you don’t configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default.​
+- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
 
-If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected.​
+- If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
 
-If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
+- If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
 
 This Policy setting applies only to Microsoft Japanese IME.
 
-Note: Changes to this setting will not take effect until the user logs off.
+> [!NOTE]
+> Changes to this setting will not take effect until the user logs off.
 <!-- ConfigureJapaneseIMEVersion-Description-End -->
 
 <!-- ConfigureJapaneseIMEVersion-Editable-Begin -->
@@ -732,17 +740,18 @@ Note: Changes to this setting will not take effect until the user logs off.
 
 <!-- ConfigureKoreanIMEVersion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the version of Microsoft IME.​
+This policy setting controls the version of Microsoft IME. 
 
-If you don’t configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default.​
+- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
 
-If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected.​
+- If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
 
-If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
+- If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
 
 This Policy setting applies only to Microsoft Korean IME.
 
-Note: Changes to this setting will not take effect until the user logs off.
+> [!NOTE]
+> Changes to this setting will not take effect until the user logs off.
 <!-- ConfigureKoreanIMEVersion-Description-End -->
 
 <!-- ConfigureKoreanIMEVersion-Editable-Begin -->
@@ -797,17 +806,18 @@ Note: Changes to this setting will not take effect until the user logs off.
 
 <!-- ConfigureSimplifiedChineseIMEVersion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the version of Microsoft IME.​
+This policy setting controls the version of Microsoft IME. 
 
-If you don’t configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default.​
+- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
 
-If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected.​
+- If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
 
-If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
+- If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
 
 This Policy setting applies only to Microsoft Simplified Chinese IME.
 
-Note: Changes to this setting will not take effect until the user logs off.
+> [!NOTE]
+> Changes to this setting will not take effect until the user logs off.
 <!-- ConfigureSimplifiedChineseIMEVersion-Description-End -->
 
 <!-- ConfigureSimplifiedChineseIMEVersion-Editable-Begin -->
@@ -871,17 +881,18 @@ Note: Changes to this setting will not take effect until the user logs off.
 
 <!-- ConfigureTraditionalChineseIMEVersion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the version of Microsoft IME.​
+This policy setting controls the version of Microsoft IME. 
 
-If you don’t configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default.​
+- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
 
-If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected.​
+- If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
 
-If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
+- If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
 
 This Policy setting applies only to Microsoft Traditional Chinese IME.
 
-Note: Changes to this setting will not take effect until the user logs off.
+> [!NOTE]
+> Changes to this setting will not take effect until the user logs off.
 <!-- ConfigureTraditionalChineseIMEVersion-Description-End -->
 
 <!-- ConfigureTraditionalChineseIMEVersion-Editable-Begin -->
@@ -994,7 +1005,8 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 
 <!-- ExcludeJapaneseIMEExceptJIS0208-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the users to restrict character code range of conversion by setting the character filter.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop. Allows the users to restrict character code range of conversion by setting the character filter.
 <!-- ExcludeJapaneseIMEExceptJIS0208-Description-End -->
 
 <!-- ExcludeJapaneseIMEExceptJIS0208-Editable-Begin -->
@@ -1043,7 +1055,8 @@ Allows the users to restrict character code range of conversion by setting the c
 
 <!-- ExcludeJapaneseIMEExceptJIS0208andEUDC-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the users to restrict character code range of conversion by setting the character filter.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop. Allows the users to restrict character code range of conversion by setting the character filter.
 <!-- ExcludeJapaneseIMEExceptJIS0208andEUDC-Description-End -->
 
 <!-- ExcludeJapaneseIMEExceptJIS0208andEUDC-Editable-Begin -->
@@ -1092,7 +1105,8 @@ Allows the users to restrict character code range of conversion by setting the c
 
 <!-- ExcludeJapaneseIMEExceptShiftJIS-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the users to restrict character code range of conversion by setting the character filter.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop. Allows the users to restrict character code range of conversion by setting the character filter.
 <!-- ExcludeJapaneseIMEExceptShiftJIS-Description-End -->
 
 <!-- ExcludeJapaneseIMEExceptShiftJIS-Editable-Begin -->

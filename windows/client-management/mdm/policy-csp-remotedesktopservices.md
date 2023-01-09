@@ -1,10 +1,10 @@
 ---
 title: RemoteDesktopServices Policy CSP
-description: Learn more about the RemoteDesktopServices Area in Policy CSP
+description: Learn more about the RemoteDesktopServices Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/20/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - RemoteDesktopServices
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,13 +44,14 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure remote access to computers by using Remote Desktop Services.
 
-If you enable this policy setting, users who are members of the Remote Desktop Users group on the target computer can connect remotely to the target computer by using Remote Desktop Services.
+- If you enable this policy setting, users who are members of the Remote Desktop Users group on the target computer can connect remotely to the target computer by using Remote Desktop Services.
 
-If you disable this policy setting, users cannot connect remotely to the target computer by using Remote Desktop Services. The target computer will maintain any current connections, but will not accept any new incoming connections.
+- If you disable this policy setting, users cannot connect remotely to the target computer by using Remote Desktop Services. The target computer will maintain any current connections, but will not accept any new incoming connections.
 
-If you do not configure this policy setting, Remote Desktop Services uses the Remote Desktop setting on the target computer to determine whether the remote connection is allowed. This setting is found on the Remote tab in the System properties sheet. By default, remote connections are not allowed.
+- If you do not configure this policy setting, Remote Desktop Services uses the Remote Desktop setting on the target computer to determine whether the remote connection is allowed. This setting is found on the Remote tab in the System properties sheet. By default, remote connections are not allowed.
 
-Note: You can limit which clients are able to connect remotely by using Remote Desktop Services by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Security\Require user authentication for remote connections by using Network Level Authentication.
+> [!NOTE]
+> You can limit which clients are able to connect remotely by using Remote Desktop Services by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Security\Require user authentication for remote connections by using Network Level Authentication.
 
 You can limit the number of users who can connect simultaneously by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Connections\Limit number of connections, or by configuring the policy setting Maximum Connections by using the Remote Desktop Session Host WMI Provider.
 <!-- AllowUsersToConnectRemotely-Description-End -->
@@ -72,7 +71,7 @@ You can limit the number of users who can connect simultaneously by configuring 
 
 <!-- AllowUsersToConnectRemotely-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -111,7 +110,7 @@ You can limit the number of users who can connect simultaneously by configuring 
 <!-- Description-Source-ADMX -->
 Specifies whether to require the use of a specific encryption level to secure communications between client computers and RD Session Host servers during Remote Desktop Protocol (RDP) connections. This policy only applies when you are using native RDP encryption. However, native RDP encryption (as opposed to SSL encryption) is not recommended. This policy does not apply to SSL encryption.
 
-If you enable this policy setting, all communications between clients and RD Session Host servers during remote connections must use the encryption method specified in this setting. By default, the encryption level is set to High. The following encryption methods are available:
+- If you enable this policy setting, all communications between clients and RD Session Host servers during remote connections must use the encryption method specified in this setting. By default, the encryption level is set to High. The following encryption methods are available:
 
 * High: The High setting encrypts data sent from the client to the server and from the server to the client by using strong 128-bit encryption. Use this encryption level in environments that contain only 128-bit clients (for example, clients that run Remote Desktop Connection). Clients that do not support this encryption level cannot connect to RD Session Host servers.
 
@@ -119,9 +118,9 @@ If you enable this policy setting, all communications between clients and RD Ses
 
 * Low: The Low setting encrypts only data sent from the client to the server by using 56-bit encryption.
 
-If you disable or do not configure this setting, the encryption level to be used for remote connections to RD Session Host servers is not enforced through Group Policy.
+- If you disable or do not configure this setting, the encryption level to be used for remote connections to RD Session Host servers is not enforced through Group Policy.
 
-Important
+**Important**
 
 FIPS compliance can be configured through the System cryptography. Use FIPS compliant algorithms for encryption, hashing, and signing settings in Group Policy (under Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options.) The FIPS compliant setting encrypts and decrypts data sent from the client to the server and from the server to the client, with the Federal Information Processing Standard (FIPS) 140 encryption algorithms, by using Microsoft cryptographic modules. Use this encryption level when communications between clients and RD Session Host servers requires the highest level of encryption.
 <!-- ClientConnectionEncryptionLevel-Description-End -->
@@ -141,7 +140,7 @@ FIPS compliance can be configured through the System cryptography. Use FIPS comp
 
 <!-- ClientConnectionEncryptionLevel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -182,11 +181,11 @@ This policy setting specifies whether to prevent the mapping of client drives in
 
 By default, an RD Session Host server maps client drives automatically upon connection. Mapped drives appear in the session folder tree in File Explorer or Computer in the format `<driveletter>` on `<computername>`. You can use this policy setting to override this behavior.
 
-If you enable this policy setting, client drive redirection is not allowed in Remote Desktop Services sessions, and Clipboard file copy redirection is not allowed on computers running Windows XP, Windows Server 2003, Windows Server 2012 (and later) or Windows 8 (and later).
+- If you enable this policy setting, client drive redirection is not allowed in Remote Desktop Services sessions, and Clipboard file copy redirection is not allowed on computers running Windows XP, Windows Server 2003, Windows Server 2012 (and later) or Windows 8 (and later).
 
-If you disable this policy setting, client drive redirection is always allowed. In addition, Clipboard file copy redirection is always allowed if Clipboard redirection is allowed.
+- If you disable this policy setting, client drive redirection is always allowed. In addition, Clipboard file copy redirection is always allowed if Clipboard redirection is allowed.
 
-If you do not configure this policy setting, client drive redirection and Clipboard file copy redirection are not specified at the Group Policy level.
+- If you do not configure this policy setting, client drive redirection and Clipboard file copy redirection are not specified at the Group Policy level.
 <!-- DoNotAllowDriveRedirection-Description-End -->
 
 <!-- DoNotAllowDriveRedirection-Editable-Begin -->
@@ -204,7 +203,7 @@ If you do not configure this policy setting, client drive redirection and Clipbo
 
 <!-- DoNotAllowDriveRedirection-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -244,9 +243,9 @@ If you do not configure this policy setting, client drive redirection and Clipbo
 <!-- Description-Source-ADMX -->
 Controls whether passwords can be saved on this computer from Remote Desktop Connection.
 
-If you enable this setting the password saving checkbox in Remote Desktop Connection will be disabled and users will no longer be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves his settings, any password that previously existed in the RDP file will be deleted.
+- If you enable this setting the password saving checkbox in Remote Desktop Connection will be disabled and users will no longer be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves his settings, any password that previously existed in the RDP file will be deleted.
 
-If you disable this setting or leave it not configured, the user will be able to save passwords using Remote Desktop Connection.
+- If you disable this setting or leave it not configured, the user will be able to save passwords using Remote Desktop Connection.
 <!-- DoNotAllowPasswordSaving-Description-End -->
 
 <!-- DoNotAllowPasswordSaving-Editable-Begin -->
@@ -264,13 +263,13 @@ If you disable this setting or leave it not configured, the user will be able to
 
 <!-- DoNotAllowPasswordSaving-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | TS_CLIENT_DISABLE_PASSWORD_SAVING |
+| Name | TS_CLIENT_DISABLE_PASSWORD_SAVING_2 |
 | Friendly Name | Do not allow passwords to be saved |
 | Location | Computer Configuration |
 | Path | Windows Components > Remote Desktop Services > Remote Desktop Connection Client |
@@ -306,9 +305,9 @@ This policy setting lets you control the redirection of web authentication (WebA
 
 By default, Remote Desktop allows redirection of WebAuthn requests.
 
-If you enable this policy setting, users can't use their local authenticator inside the Remote Desktop session.
+- If you enable this policy setting, users can't use their local authenticator inside the Remote Desktop session.
 
-If you disable or do not configure this policy setting, users can use local authenticators inside the Remote Desktop session.
+- If you disable or do not configure this policy setting, users can use local authenticators inside the Remote Desktop session.
 <!-- DoNotAllowWebAuthnRedirection-Description-End -->
 
 <!-- DoNotAllowWebAuthnRedirection-Editable-Begin -->
@@ -326,7 +325,7 @@ If you disable or do not configure this policy setting, users can use local auth
 
 <!-- DoNotAllowWebAuthnRedirection-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -370,11 +369,11 @@ You can use this setting to enforce a password prompt for users logging on to Re
 
 By default, Remote Desktop Services allows users to automatically log on by entering a password in the Remote Desktop Connection client.
 
-If you enable this policy setting, users cannot automatically log on to Remote Desktop Services by supplying their passwords in the Remote Desktop Connection client. They are prompted for a password to log on.
+- If you enable this policy setting, users cannot automatically log on to Remote Desktop Services by supplying their passwords in the Remote Desktop Connection client. They are prompted for a password to log on.
 
-If you disable this policy setting, users can always log on to Remote Desktop Services automatically by supplying their passwords in the Remote Desktop Connection client.
+- If you disable this policy setting, users can always log on to Remote Desktop Services automatically by supplying their passwords in the Remote Desktop Connection client.
 
-If you do not configure this policy setting, automatic logon is not specified at the Group Policy level.
+- If you do not configure this policy setting, automatic logon is not specified at the Group Policy level.
 <!-- PromptForPasswordUponConnection-Description-End -->
 
 <!-- PromptForPasswordUponConnection-Editable-Begin -->
@@ -392,7 +391,7 @@ If you do not configure this policy setting, automatic logon is not specified at
 
 <!-- PromptForPasswordUponConnection-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -440,7 +439,8 @@ If the status is set to Disabled, Remote Desktop Services always requests securi
 
 If the status is set to Not Configured, unsecured communication is allowed.
 
-Note: The RPC interface is used for administering and configuring Remote Desktop Services.
+> [!NOTE]
+> The RPC interface is used for administering and configuring Remote Desktop Services.
 <!-- RequireSecureRPCCommunication-Description-End -->
 
 <!-- RequireSecureRPCCommunication-Editable-Begin -->
@@ -458,7 +458,7 @@ Note: The RPC interface is used for administering and configuring Remote Desktop
 
 <!-- RequireSecureRPCCommunication-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

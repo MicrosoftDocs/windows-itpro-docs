@@ -1,10 +1,10 @@
 ---
 title: ADMX_AppCompat Policy CSP
-description: Learn more about the ADMX_AppCompat Area in Policy CSP
+description: Learn more about the ADMX_AppCompat Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_AppCompat
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -54,7 +52,8 @@ If the status is set to Disabled, the MS-DOS subsystem runs for all users on thi
 
 If the status is set to Not Configured, the OS falls back on a local policy set by the registry DWORD value HKLM\System\CurrentControlSet\Control\WOW\DisallowedPolicyDefault. If that value is non-0, this prevents all 16-bit applications from running. If that value is 0, 16-bit applications are allowed to run. If that value is also not present, on Windows 10 and above the OS will launch the 16-bit application support control panel to allow an elevated administrator to make the decision; on windows 7 and downlevel, the OS will allow 16-bit applications to run.
 
-**Note**: This setting appears in only Computer Configuration.
+> [!NOTE]
+> This setting appears in only Computer Configuration.
 <!-- AppCompatPrevent16BitMach-Description-End -->
 
 <!-- AppCompatPrevent16BitMach-Editable-Begin -->
@@ -72,7 +71,7 @@ If the status is set to Not Configured, the OS falls back on a local policy set 
 
 <!-- AppCompatPrevent16BitMach-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -130,7 +129,7 @@ The compatibility property page displays a list of options that can be selected 
 
 <!-- AppCompatRemoveProgramCompatPropPage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -194,7 +193,7 @@ Disabling telemetry will take effect on any newly launched applications. To ensu
 
 <!-- AppCompatTurnOffApplicationImpactTelemetry-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -242,7 +241,7 @@ The Windows Resource Protection and User Account Control features of Windows use
 
 This option is useful to server administrators who require faster performance and are aware of the compatibility of the applications they are using. It is particularly useful for a web server where applications may be launched several hundred times a second, and the performance of the loader is essential.
 
-**Note**: Many system processes cache the value of this setting for performance reasons. If you make changes to this setting, please reboot to ensure that your system accurately reflects those changes.
+NOTE: Many system processes cache the value of this setting for performance reasons. If you make changes to this setting, please reboot to ensure that your system accurately reflects those changes.
 <!-- AppCompatTurnOffEngine-Description-End -->
 
 <!-- AppCompatTurnOffEngine-Editable-Begin -->
@@ -260,7 +259,7 @@ This option is useful to server administrators who require faster performance an
 
 <!-- AppCompatTurnOffEngine-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -316,7 +315,7 @@ This setting exists only for backward compatibility, and is not valid for this v
 
 <!-- AppCompatTurnOffProgramCompatibilityAssistant_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -358,11 +357,12 @@ This policy setting controls the state of the Program Compatibility Assistant (P
 
 The PCA monitors applications run by the user. When a potential compatibility issue with an application is detected, the PCA will prompt the user with recommended solutions. To configure the diagnostic settings for the PCA, go to System->Troubleshooting and Diagnostics->Application Compatibility Diagnostics.
 
-If you enable this policy setting, the PCA will be turned off. The user will not be presented with solutions to known compatibility issues when running applications. Turning off the PCA can be useful for system administrators who require better performance and are already aware of application compatibility issues.
+- If you enable this policy setting, the PCA will be turned off. The user will not be presented with solutions to known compatibility issues when running applications. Turning off the PCA can be useful for system administrators who require better performance and are already aware of application compatibility issues.
 
-If you disable or do not configure this policy setting, the PCA will be turned on. To configure the diagnostic settings for the PCA, go to System->Troubleshooting and Diagnostics->Application Compatibility Diagnostics.
+- If you disable or do not configure this policy setting, the PCA will be turned on. To configure the diagnostic settings for the PCA, go to System->Troubleshooting and Diagnostics->Application Compatibility Diagnostics.
 
-**Note**: The Diagnostic Policy Service (DPS) and Program Compatibility Assistant Service must be running for the PCA to run. These services can be configured by using the Services snap-in to the Microsoft Management Console.
+> [!NOTE]
+> The Diagnostic Policy Service (DPS) and Program Compatibility Assistant Service must be running for the PCA to run. These services can be configured by using the Services snap-in to the Microsoft Management Console.
 <!-- AppCompatTurnOffProgramCompatibilityAssistant_2-Description-End -->
 
 <!-- AppCompatTurnOffProgramCompatibilityAssistant_2-Editable-Begin -->
@@ -380,7 +380,7 @@ If you disable or do not configure this policy setting, the PCA will be turned o
 
 <!-- AppCompatTurnOffProgramCompatibilityAssistant_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -422,11 +422,12 @@ This policy setting controls the state of the Inventory Collector.
 
 The Inventory Collector inventories applications, files, devices, and drivers on the system and sends the information to Microsoft. This information is used to help diagnose compatibility problems.
 
-If you enable this policy setting, the Inventory Collector will be turned off and data will not be sent to Microsoft. Collection of installation data through the Program Compatibility Assistant is also disabled.
+- If you enable this policy setting, the Inventory Collector will be turned off and data will not be sent to Microsoft. Collection of installation data through the Program Compatibility Assistant is also disabled.
 
-If you disable or do not configure this policy setting, the Inventory Collector will be turned on.
+- If you disable or do not configure this policy setting, the Inventory Collector will be turned on.
 
-**Note**: This policy setting has no effect if the Customer Experience Improvement Program is turned off. The Inventory Collector will be off.
+> [!NOTE]
+> This policy setting has no effect if the Customer Experience Improvement Program is turned off. The Inventory Collector will be off.
 <!-- AppCompatTurnOffProgramInventory-Description-End -->
 
 <!-- AppCompatTurnOffProgramInventory-Editable-Begin -->
@@ -444,7 +445,7 @@ If you disable or do not configure this policy setting, the Inventory Collector 
 
 <!-- AppCompatTurnOffProgramInventory-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -488,9 +489,9 @@ Switchback is a mechanism that provides generic compatibility mitigations to old
 
 Switchback is on by default.
 
-If you enable this policy setting, Switchback will be turned off. Turning Switchback off may degrade the compatibility of older applications. This option is useful for server administrators who require performance and are aware of compatibility of the applications they are using.
+- If you enable this policy setting, Switchback will be turned off. Turning Switchback off may degrade the compatibility of older applications. This option is useful for server administrators who require performance and are aware of compatibility of the applications they are using.
 
-If you disable or do not configure this policy setting, the Switchback will be turned on.
+- If you disable or do not configure this policy setting, the Switchback will be turned on.
 
 Please reboot the system after changing the setting to ensure that your system accurately reflects those changes.
 <!-- AppCompatTurnOffSwitchBack-Description-End -->
@@ -510,7 +511,7 @@ Please reboot the system after changing the setting to ensure that your system a
 
 <!-- AppCompatTurnOffSwitchBack-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -552,9 +553,9 @@ This policy setting controls the state of Steps Recorder.
 
 Steps Recorder keeps a record of steps taken by the user. The data generated by Steps Recorder can be used in feedback systems such as Windows Error Reporting to help developers understand and fix problems. The data includes user actions such as keyboard input and mouse input, user interface data, and screen shots. Steps Recorder includes an option to turn on and off data collection.
 
-If you enable this policy setting, Steps Recorder will be disabled.
+- If you enable this policy setting, Steps Recorder will be disabled.
 
-If you disable or do not configure this policy setting, Steps Recorder will be enabled.
+- If you disable or do not configure this policy setting, Steps Recorder will be enabled.
 <!-- AppCompatTurnOffUserActionRecord-Description-End -->
 
 <!-- AppCompatTurnOffUserActionRecord-Editable-Begin -->
@@ -572,7 +573,7 @@ If you disable or do not configure this policy setting, Steps Recorder will be e
 
 <!-- AppCompatTurnOffUserActionRecord-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

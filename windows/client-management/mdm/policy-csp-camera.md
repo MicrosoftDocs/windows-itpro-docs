@@ -1,10 +1,10 @@
 ---
 title: Camera Policy CSP
-description: Learn more about the Camera Area in Policy CSP
+description: Learn more about the Camera Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/27/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -39,9 +39,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allow the use of Camera devices on the machine.
 
-If you enable or do not configure this policy setting, Camera devices will be enabled.
+- If you enable or do not configure this policy setting, Camera devices will be enabled.
 
-If you disable this property setting, Camera devices will be disabled.
+- If you disable this property setting, Camera devices will be disabled.
 <!-- AllowCamera-Description-End -->
 
 <!-- AllowCamera-Editable-Begin -->

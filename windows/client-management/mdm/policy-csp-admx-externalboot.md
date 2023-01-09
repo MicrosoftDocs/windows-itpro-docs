@@ -1,10 +1,10 @@
 ---
 title: ADMX_ExternalBoot Policy CSP
-description: Learn more about the ADMX_ExternalBoot Area in Policy CSP
+description: Learn more about the ADMX_ExternalBoot Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_ExternalBoot
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,9 +44,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Specifies whether the PC can use the hibernation sleep state (S4) when started from a Windows To Go workspace.
 
-If you enable this setting, Windows, when started from a Windows To Go workspace, can hibernate the PC.
+- If you enable this setting, Windows, when started from a Windows To Go workspace, can hibernate the PC.
 
-If you disable or don't configure this setting, Windows, when started from a Windows To Go workspace, can't hibernate the PC.
+- If you disable or don't configure this setting, Windows, when started from a Windows To Go workspace, can't hibernate the PC.
 <!-- PortableOperatingSystem_Hibernate-Description-End -->
 
 <!-- PortableOperatingSystem_Hibernate-Editable-Begin -->
@@ -66,13 +64,13 @@ If you disable or don't configure this setting, Windows, when started from a Win
 
 <!-- PortableOperatingSystem_Hibernate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | PortableOperatingSystem_Hibernate_DisplayName |
+| Name | PortableOperatingSystem_Hibernate |
 | Friendly Name | Allow hibernate (S4) when starting from a Windows To Go workspace |
 | Location | Computer Configuration |
 | Path | Windows Components > Portable Operating System |
@@ -106,11 +104,11 @@ If you disable or don't configure this setting, Windows, when started from a Win
 <!-- Description-Source-ADMX -->
 This policy setting controls whether the PC will boot to Windows To Go if a USB device containing a Windows To Go workspace is connected, and controls whether users can make changes using the Windows To Go Startup Options Control Panel item.
 
-If you enable this setting, booting to Windows To Go when a USB device is connected will be enabled, and users will not be able to make changes using the Windows To Go Startup Options Control Panel item.
+- If you enable this setting, booting to Windows To Go when a USB device is connected will be enabled, and users will not be able to make changes using the Windows To Go Startup Options Control Panel item.
 
-If you disable this setting, booting to Windows To Go when a USB device is connected will not be enabled unless a user configures the option manually in the BIOS or other boot order configuration.
+- If you disable this setting, booting to Windows To Go when a USB device is connected will not be enabled unless a user configures the option manually in the BIOS or other boot order configuration.
 
-If you do not configure this setting, users who are members of the Administrators group can make changes using the Windows To Go Startup Options Control Panel item.
+- If you do not configure this setting, users who are members of the Administrators group can make changes using the Windows To Go Startup Options Control Panel item.
 <!-- PortableOperatingSystem_Launcher-Description-End -->
 
 <!-- PortableOperatingSystem_Launcher-Editable-Begin -->
@@ -128,13 +126,13 @@ If you do not configure this setting, users who are members of the Administrator
 
 <!-- PortableOperatingSystem_Launcher-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | PortableOperatingSystem_Launcher_DisplayName |
+| Name | PortableOperatingSystem_Launcher |
 | Friendly Name | Windows To Go Default Startup Options |
 | Location | Computer Configuration |
 | Path | Windows Components > Portable Operating System |
@@ -168,9 +166,9 @@ If you do not configure this setting, users who are members of the Administrator
 <!-- Description-Source-ADMX -->
 Specifies whether the PC can use standby sleep states (S1-S3) when starting from a Windows To Go workspace.
 
-If you enable this setting, Windows, when started from a Windows To Go workspace, can't use standby states to make the PC sleep.
+- If you enable this setting, Windows, when started from a Windows To Go workspace, can't use standby states to make the PC sleep.
 
-If you disable or don't configure this setting, Windows, when started from a Windows To Go workspace, can use standby states to make the PC sleep.
+- If you disable or don't configure this setting, Windows, when started from a Windows To Go workspace, can use standby states to make the PC sleep.
 <!-- PortableOperatingSystem_Sleep-Description-End -->
 
 <!-- PortableOperatingSystem_Sleep-Editable-Begin -->
@@ -188,13 +186,13 @@ If you disable or don't configure this setting, Windows, when started from a Win
 
 <!-- PortableOperatingSystem_Sleep-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | PortableOperatingSystem_Sleep_DisplayName |
+| Name | PortableOperatingSystem_Sleep |
 | Friendly Name | Disallow standby sleep states (S1-S3) when starting from a Windows to Go workspace |
 | Location | Computer Configuration |
 | Path | Windows Components > Portable Operating System |

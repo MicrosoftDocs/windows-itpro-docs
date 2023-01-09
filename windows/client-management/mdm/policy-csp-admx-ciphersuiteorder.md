@@ -1,10 +1,10 @@
 ---
 title: ADMX_CipherSuiteOrder Policy CSP
-description: Learn more about the ADMX_CipherSuiteOrder Area in Policy CSP
+description: Learn more about the ADMX_CipherSuiteOrder Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/20/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_CipherSuiteOrder
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,9 +44,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting determines the cipher suites used by the Secure Socket Layer (SSL).
 
-If you enable this policy setting, SSL cipher suites are prioritized in the order specified.
+- If you enable this policy setting, SSL cipher suites are prioritized in the order specified.
 
-If you disable or do not configure this policy setting, default cipher suite order is used.
+- If you disable or do not configure this policy setting, default cipher suite order is used.
 
 Link for all the cipherSuites: <https://go.microsoft.com/fwlink/?LinkId=517265>
 <!-- SSLCipherSuiteOrder-Description-End -->
@@ -68,7 +66,7 @@ Link for all the cipherSuites: <https://go.microsoft.com/fwlink/?LinkId=517265>
 
 <!-- SSLCipherSuiteOrder-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -107,9 +105,9 @@ Link for all the cipherSuites: <https://go.microsoft.com/fwlink/?LinkId=517265>
 <!-- Description-Source-ADMX -->
 This policy setting determines the priority order of ECC curves used with ECDHE cipher suites.
 
-If you enable this policy setting, ECC curves are prioritized in the order specified.(Enter one Curve name per line)
+- If you enable this policy setting, ECC curves are prioritized in the order specified.(Enter one Curve name per line)
 
-If you disable or do not configure this policy setting, the default ECC curve order is used.
+- If you disable or do not configure this policy setting, the default ECC curve order is used.
 
 Default Curve Order
  
@@ -137,7 +135,7 @@ CertUtil.exe -DisplayEccCurve
 
 <!-- SSLCurveOrder-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

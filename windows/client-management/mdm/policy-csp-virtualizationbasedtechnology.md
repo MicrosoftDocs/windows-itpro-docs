@@ -1,10 +1,10 @@
 ---
 title: VirtualizationBasedTechnology Policy CSP
-description: Learn more about the VirtualizationBasedTechnology Area in Policy CSP
+description: Learn more about the VirtualizationBasedTechnology Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/07/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -123,8 +123,8 @@ Require UEFI Memory Attributes Table
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not require UEFI Memory Attributes Table |
-| 1 | Require UEFI Memory Attributes Table |
+| 0 (Default) | Do not require UEFI Memory Attributes Table. |
+| 1 | Require UEFI Memory Attributes Table. |
 <!-- RequireUEFIMemoryAttributesTable-AllowedValues-End -->
 
 <!-- RequireUEFIMemoryAttributesTable-GpMapping-Begin -->

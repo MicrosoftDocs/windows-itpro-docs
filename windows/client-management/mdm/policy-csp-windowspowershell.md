@@ -1,10 +1,10 @@
 ---
 title: WindowsPowerShell Policy CSP
-description: Learn more about the WindowsPowerShell Area in Policy CSP
+description: Learn more about the WindowsPowerShell Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/07/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - WindowsPowerShell
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -48,15 +46,17 @@ ms.topic: reference
 
 <!-- TurnOnPowerShellScriptBlockLogging-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables logging of all PowerShell script input to the Microsoft-Windows-PowerShell/Operational event log. If you enable this policy setting,
+This policy setting enables logging of all PowerShell script input to the Microsoft-Windows-PowerShell/Operational event log.
+- If you enable this policy setting,
 Windows PowerShell will log the processing of commands, script blocks, functions, and scripts - whether invoked interactively, or through automation.
 
-If you disable this policy setting, logging of PowerShell script input is disabled.
+- If you disable this policy setting, logging of PowerShell script input is disabled.
 
 If you enable the Script Block Invocation Logging, PowerShell additionally logs events when invocation of a command, script block, function, or script
 starts or stops. Enabling Invocation Logging generates a high volume of event logs.
 
-Note: This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.
+> [!NOTE]
+> This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.
 <!-- TurnOnPowerShellScriptBlockLogging-Description-End -->
 
 <!-- TurnOnPowerShellScriptBlockLogging-Editable-Begin -->
@@ -73,6 +73,9 @@ Note: This policy setting exists under both Computer Configuration and User Conf
 <!-- TurnOnPowerShellScriptBlockLogging-DFProperties-End -->
 
 <!-- TurnOnPowerShellScriptBlockLogging-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |

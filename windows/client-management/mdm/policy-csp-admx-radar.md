@@ -1,6 +1,6 @@
 ---
 title: ADMX_Radar Policy CSP
-description: Learn more about the ADMX_Radar Area in Policy CSP
+description: Learn more about the ADMX_Radar Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

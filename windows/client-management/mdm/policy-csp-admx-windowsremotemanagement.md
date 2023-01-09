@@ -1,10 +1,10 @@
 ---
 title: ADMX_WindowsRemoteManagement Policy CSP
-description: Learn more about the ADMX_WindowsRemoteManagement Area in Policy CSP
+description: Learn more about the ADMX_WindowsRemoteManagement Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_WindowsRemoteManagement
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,9 +44,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts Kerberos credentials over the network.
 
-If you enable this policy setting, the WinRM service does not accept Kerberos credentials over the network.
+- If you enable this policy setting, the WinRM service does not accept Kerberos credentials over the network.
 
-If you disable or do not configure this policy setting, the WinRM service accepts Kerberos authentication from a remote client.
+- If you disable or do not configure this policy setting, the WinRM service accepts Kerberos authentication from a remote client.
 <!-- DisallowKerberos_1-Description-End -->
 
 <!-- DisallowKerberos_1-Editable-Begin -->
@@ -66,13 +64,13 @@ If you disable or do not configure this policy setting, the WinRM service accept
 
 <!-- DisallowKerberos_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DisallowKerberos |
+| Name | DisallowKerberos_1 |
 | Friendly Name | Disallow Kerberos authentication |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
@@ -106,9 +104,9 @@ If you disable or do not configure this policy setting, the WinRM service accept
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Kerberos authentication directly.
 
-If you enable this policy setting, the Windows Remote Management (WinRM) client does not use Kerberos authentication directly. Kerberos can still be used if the WinRM client is using the Negotiate authentication and Kerberos is selected.
+- If you enable this policy setting, the Windows Remote Management (WinRM) client does not use Kerberos authentication directly. Kerberos can still be used if the WinRM client is using the Negotiate authentication and Kerberos is selected.
 
-If you disable or do not configure this policy setting, the WinRM client uses the Kerberos authentication directly.
+- If you disable or do not configure this policy setting, the WinRM client uses the Kerberos authentication directly.
 <!-- DisallowKerberos_2-Description-End -->
 
 <!-- DisallowKerberos_2-Editable-Begin -->
@@ -126,13 +124,13 @@ If you disable or do not configure this policy setting, the WinRM client uses th
 
 <!-- DisallowKerberos_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DisallowKerberos |
+| Name | DisallowKerberos_2 |
 | Friendly Name | Disallow Kerberos authentication |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Remote Management (WinRM) > WinRM Client |

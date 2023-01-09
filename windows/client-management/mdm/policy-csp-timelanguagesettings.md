@@ -1,10 +1,10 @@
 ---
 title: TimeLanguageSettings Policy CSP
-description: Learn more about the TimeLanguageSettings Area in Policy CSP
+description: Learn more about the TimeLanguageSettings Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/07/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -91,9 +91,9 @@ This policy is deprecated.
 <!-- Description-Source-ADMX -->
 This policy setting controls whether the LPRemove task will run to clean up language packs installed on a machine but are not used by any users on that machine.
 
-If you enable this policy setting, language packs that are installed as part of the system image will remain installed even if they are not used by any user on that system.
+- If you enable this policy setting, language packs that are installed as part of the system image will remain installed even if they are not used by any user on that system.
 
-If you disable or do not configure this policy setting, language packs that are installed as part of the system image but are not used by any user on that system will be removed as part of a scheduled clean up task.
+- If you disable or do not configure this policy setting, language packs that are installed as part of the system image but are not used by any user on that system will be removed as part of a scheduled clean up task.
 <!-- BlockCleanupOfUnusedPreinstalledLangPacks-Description-End -->
 
 <!-- BlockCleanupOfUnusedPreinstalledLangPacks-Editable-Begin -->
@@ -199,9 +199,9 @@ Specifies the time zone to be applied to the device. This is the standard Window
 <!-- Description-Source-ADMX -->
 This policy setting controls which UI language is used for computers with more than one UI language installed.
 
-If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language is restricted to a specified language. If the specified language is not installed on the target computer or you disable this policy setting, the language selection defaults to the language selected by the local administrator.
+- If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language is restricted to a specified language. If the specified language is not installed on the target computer or you disable this policy setting, the language selection defaults to the language selected by the local administrator.
 
-If you disable or do not configure this policy setting, there is no restriction of a specific language used for the Windows menus and dialogs.
+- If you disable or do not configure this policy setting, there is no restriction of a specific language used for the Windows menus and dialogs.
 <!-- MachineUILanguageOverwrite-Description-End -->
 
 <!-- MachineUILanguageOverwrite-Editable-Begin -->

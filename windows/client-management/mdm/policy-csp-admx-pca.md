@@ -1,10 +1,10 @@
 ---
 title: ADMX_pca Policy CSP
-description: Learn more about the ADMX_pca Area in Policy CSP
+description: Learn more about the ADMX_pca Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_pca
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -62,13 +60,13 @@ This setting exists only for backward compatibility, and is not valid for this v
 
 <!-- DetectBlockedDriversPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DetectBlockedDriversText |
+| Name | DetectBlockedDriversPolicy |
 | Friendly Name | Notify blocked drivers |
 | Location | Computer Configuration |
 | Path | System > Troubleshooting and Diagnostics > Application Compatibility Diagnostics |
@@ -117,13 +115,13 @@ This setting exists only for backward compatibility, and is not valid for this v
 
 <!-- DetectDeprecatedCOMComponentFailuresPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DetectDeprecatedCOMComponentFailuresText |
+| Name | DetectDeprecatedCOMComponentFailuresPolicy |
 | Friendly Name | Detect application failures caused by deprecated COM objects |
 | Location | Computer Configuration |
 | Path | System > Troubleshooting and Diagnostics > Application Compatibility Diagnostics |
@@ -173,13 +171,13 @@ This setting exists only for backward compatibility, and is not valid for this v
 
 <!-- DetectDeprecatedComponentFailuresPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DetectDeprecatedComponentFailuresText |
+| Name | DetectDeprecatedComponentFailuresPolicy |
 | Friendly Name | Detect application failures caused by deprecated Windows DLLs |
 | Location | Computer Configuration |
 | Path | System > Troubleshooting and Diagnostics > Application Compatibility Diagnostics |
@@ -229,13 +227,13 @@ This setting exists only for backward compatibility, and is not valid for this v
 
 <!-- DetectInstallFailuresPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DetectInstallFailuresText |
+| Name | DetectInstallFailuresPolicy |
 | Friendly Name | Detect application install failures |
 | Location | Computer Configuration |
 | Path | System > Troubleshooting and Diagnostics > Application Compatibility Diagnostics |
@@ -284,13 +282,13 @@ This setting exists only for backward compatibility, and is not valid for this v
 
 <!-- DetectUndetectedInstallersPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DetectUndetectedInstallersText |
+| Name | DetectUndetectedInstallersPolicy |
 | Friendly Name | Detect application installers that need to be run as administrator |
 | Location | Computer Configuration |
 | Path | System > Troubleshooting and Diagnostics > Application Compatibility Diagnostics |
@@ -340,13 +338,13 @@ This setting exists only for backward compatibility, and is not valid for this v
 
 <!-- DetectUpdateFailuresPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DetectUpdateFailuresText |
+| Name | DetectUpdateFailuresPolicy |
 | Friendly Name | Detect applications unable to launch installers under UAC |
 | Location | Computer Configuration |
 | Path | System > Troubleshooting and Diagnostics > Application Compatibility Diagnostics |
@@ -380,13 +378,14 @@ This setting exists only for backward compatibility, and is not valid for this v
 <!-- Description-Source-ADMX -->
 This policy setting configures the Program Compatibility Assistant (PCA) to diagnose failures with application and driver compatibility.
 
-If you enable this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues. When failures are detected, the PCA will provide options to run the application in a compatibility mode or get help online through a Microsoft website.
+- If you enable this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues. When failures are detected, the PCA will provide options to run the application in a compatibility mode or get help online through a Microsoft website.
 
-If you disable this policy setting, the PCA does not detect compatibility issues for applications and drivers.
+- If you disable this policy setting, the PCA does not detect compatibility issues for applications and drivers.
 
-If you do not configure this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues.
+- If you do not configure this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues.
 
-Note: This policy setting has no effect if the "Turn off Program Compatibility Assistant" policy setting is enabled. The Diagnostic Policy Service (DPS) and Program Compatibility Assistant Service must be running for the PCA to run. These services can be configured by using the Services snap-in to the Microsoft Management Console.
+> [!NOTE]
+> This policy setting has no effect if the "Turn off Program Compatibility Assistant" policy setting is enabled. The Diagnostic Policy Service (DPS) and Program Compatibility Assistant Service must be running for the PCA to run. These services can be configured by using the Services snap-in to the Microsoft Management Console.
 <!-- DisablePcaUIPolicy-Description-End -->
 
 <!-- DisablePcaUIPolicy-Editable-Begin -->
@@ -404,13 +403,13 @@ Note: This policy setting has no effect if the "Turn off Program Compatibility A
 
 <!-- DisablePcaUIPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DisablePcaUIText |
+| Name | DisablePcaUIPolicy |
 | Friendly Name | Detect compatibility issues for applications and drivers |
 | Location | Computer Configuration |
 | Path | System > Troubleshooting and Diagnostics > Application Compatibility Diagnostics |

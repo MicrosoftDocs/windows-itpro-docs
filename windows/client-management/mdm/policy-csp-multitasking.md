@@ -1,10 +1,10 @@
 ---
 title: Multitasking Policy CSP
-description: Learn more about the Multitasking Area in Policy CSP
+description: Learn more about the Multitasking Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/20/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -49,7 +49,6 @@ Configures the inclusion of Microsoft Edge tabs into Alt-Tab.
 Enabling this policy restricts the number of Microsoft Edge tabs that are allowed to appear in the Alt+Tab switcher. Alt+Tab can be configured to show all open Microsoft Edge tabs, only the five most recent tabs, only the three most recent tabs, or no tabs. Setting the policy to no tabs configures the Alt+Tab switcher to show app windows only, which is the classic Alt+Tab behavior.
 
 This policy only applies to the Alt+Tab switcher. When the policy isn't enabled, the feature respects the user's setting in the Settings app.
-
 <!-- BrowserAltTabBlowout-Editable-End -->
 
 <!-- BrowserAltTabBlowout-DFProperties-Begin -->
@@ -67,10 +66,10 @@ This policy only applies to the Alt+Tab switcher. When the policy isn't enabled,
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Open windows and all tabs in Microsoft Edge |
-| 2 | Open windows and 5 most recent tabs in Microsoft Edge |
-| 3 | Open windows and 3 most recent tabs in Microsoft Edge |
-| 4 | Open windows only |
+| 1 (Default) | Open windows and all tabs in Microsoft Edge. |
+| 2 | Open windows and 5 most recent tabs in Microsoft Edge. |
+| 3 | Open windows and 3 most recent tabs in Microsoft Edge. |
+| 4 | Open windows only. |
 <!-- BrowserAltTabBlowout-AllowedValues-End -->
 
 <!-- BrowserAltTabBlowout-GpMapping-Begin -->

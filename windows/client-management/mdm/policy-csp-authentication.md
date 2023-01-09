@@ -1,10 +1,10 @@
 ---
 title: Authentication Policy CSP
-description: Learn more about the Authentication Area in Policy CSP
+description: Learn more about the Authentication Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/22/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,7 +44,6 @@ Specifies whether password reset is enabled for AAD accounts.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 This policy allows the Azure Active Directory (Azure AD) tenant administrator to enable the self-service password reset feature on the Windows sign-in screen.
-
 <!-- AllowAadPasswordReset-Editable-End -->
 
 <!-- AllowAadPasswordReset-DFProperties-Begin -->
@@ -71,6 +70,55 @@ This policy allows the Azure Active Directory (Azure AD) tenant administrator to
 <!-- AllowAadPasswordReset-Examples-End -->
 
 <!-- AllowAadPasswordReset-End -->
+
+<!-- AllowEAPCertSSO-Begin -->
+## AllowEAPCertSSO
+
+<!-- AllowEAPCertSSO-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowEAPCertSSO-Applicability-End -->
+
+<!-- AllowEAPCertSSO-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Authentication/AllowEAPCertSSO
+```
+<!-- AllowEAPCertSSO-OmaUri-End -->
+
+<!-- AllowEAPCertSSO-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
+<!-- AllowEAPCertSSO-Description-End -->
+
+<!-- AllowEAPCertSSO-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowEAPCertSSO-Editable-End -->
+
+<!-- AllowEAPCertSSO-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowEAPCertSSO-DFProperties-End -->
+
+<!-- AllowEAPCertSSO-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. |
+| 1 | Allowed. |
+<!-- AllowEAPCertSSO-AllowedValues-End -->
+
+<!-- AllowEAPCertSSO-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowEAPCertSSO-Examples-End -->
+
+<!-- AllowEAPCertSSO-End -->
 
 <!-- AllowFastReconnect-Begin -->
 ## AllowFastReconnect
@@ -140,9 +188,9 @@ Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restrict
 <!-- Description-Source-ADMX -->
 This policy allows users to use a companion device, such as a phone, fitness band, or IoT device, to sign on to a desktop computer running Windows 10. The companion device provides a second factor of authentication with Windows Hello.
 
-If you enable or do not configure this policy setting, users can authenticate to Windows Hello using a companion device.
+- If you enable or do not configure this policy setting, users can authenticate to Windows Hello using a companion device.
 
-If you disable this policy, users cannot use a companion device to authenticate with Windows Hello.
+- If you disable this policy, users cannot use a companion device to authenticate with Windows Hello.
 <!-- AllowSecondaryAuthenticationDevice-Description-End -->
 
 <!-- AllowSecondaryAuthenticationDevice-Editable-Begin -->
@@ -213,7 +261,6 @@ Specifies a list of domains that are allowed to access the webcam in Web Sign-in
 
 > [!NOTE]
 > Web sign-in is only supported on Azure AD joined PCs.
-
 <!-- ConfigureWebcamAccessDomainNames-Editable-End -->
 
 <!-- ConfigureWebcamAccessDomainNames-DFProperties-Begin -->
@@ -234,7 +281,6 @@ Specifies a list of domains that are allowed to access the webcam in Web Sign-in
 Your organization federates to "Contoso IDP" and your web sign-in portal at `signinportal.contoso.com` requires webcam access. Then the value for this policy should be:
 
 `contoso.com`
-
 <!-- ConfigureWebcamAccessDomainNames-Examples-End -->
 
 <!-- ConfigureWebcamAccessDomainNames-End -->
@@ -269,7 +315,6 @@ This policy specifies the list of domains that users can access in certain authe
 
 > [!NOTE]
 > This policy is required in federated environments as a mitigation to the vulnerability described in [CVE-2021-27092](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-27092).
-
 <!-- ConfigureWebSignInAllowedUrls-Editable-End -->
 
 <!-- ConfigureWebSignInAllowedUrls-DFProperties-Begin -->
@@ -290,7 +335,6 @@ This policy specifies the list of domains that users can access in certain authe
 Your organization's PIN reset or web sign-in authentication flow is expected to navigate to the following two domains: `accounts.contoso.com` and `signin.contoso.com`. Then the value for this policy should be:
 
 `accounts.contoso.com;signin.contoso.com`
-
 <!-- ConfigureWebSignInAllowedUrls-Examples-End -->
 
 <!-- ConfigureWebSignInAllowedUrls-End -->
@@ -322,7 +366,6 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 
 > [!IMPORTANT]
 > Pre-configured candidate local accounts are any local accounts that are pre-configured or added on the device.
-
 <!-- EnableFastFirstSignIn-Editable-End -->
 
 <!-- EnableFastFirstSignIn-DFProperties-Begin -->
@@ -341,8 +384,8 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 | Value | Description |
 |:--|:--|
 | 0 (Default) | The feature defaults to the existing SKU and device capabilities. |
-| 1 | Enabled. Auto-connect new non-admin Azure AD accounts to pre-configured candidate local accounts |
-| 2 | Disabled. Do not auto-connect new non-admin Azure AD accounts to pre-configured local accounts |
+| 1 | Enabled. Auto-connect new non-admin Azure AD accounts to pre-configured candidate local accounts. |
+| 2 | Disabled. Do not auto-connect new non-admin Azure AD accounts to pre-configured local accounts. |
 <!-- EnableFastFirstSignIn-AllowedValues-End -->
 
 <!-- EnableFastFirstSignIn-Examples-Begin -->
@@ -381,7 +424,6 @@ Specifies whether web-based sign-in is allowed for signing in to Windows
 
 > [!NOTE]
 > Web sign-in is only supported on Azure AD joined PCs.
-
 <!-- EnableWebSignIn-Editable-End -->
 
 <!-- EnableWebSignIn-DFProperties-Begin -->
@@ -400,8 +442,8 @@ Specifies whether web-based sign-in is allowed for signing in to Windows
 | Value | Description |
 |:--|:--|
 | 0 (Default) | The feature defaults to the existing SKU and device capabilities. |
-| 1 | Enabled. Web Sign-in will be enabled for signing in to Windows |
-| 2 | Disabled. Web Sign-in will not be enabled for signing in to Windows |
+| 1 | Enabled. Web Sign-in will be enabled for signing in to Windows. |
+| 2 | Disabled. Web Sign-in will not be enabled for signing in to Windows. |
 <!-- EnableWebSignIn-AllowedValues-End -->
 
 <!-- EnableWebSignIn-Examples-Begin -->
@@ -453,59 +495,9 @@ Your organization uses the `@contoso.com` tenant domain name. Then the value for
 `contoso.com`
 
 For the user `abby@constoso.com`, a sign-in is done using `abby` in the username field instead of `abby@contoso.com`.
-
 <!-- PreferredAadTenantDomainName-Examples-End -->
 
 <!-- PreferredAadTenantDomainName-End -->
-
-<!-- AllowEAPCertSSO-Begin -->
-## AllowEAPCertSSO
-
-<!-- AllowEAPCertSSO-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
-<!-- AllowEAPCertSSO-Applicability-End -->
-
-<!-- AllowEAPCertSSO-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/Authentication/AllowEAPCertSSO
-```
-<!-- AllowEAPCertSSO-OmaUri-End -->
-
-<!-- AllowEAPCertSSO-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
-<!-- AllowEAPCertSSO-Description-End -->
-
-<!-- AllowEAPCertSSO-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- AllowEAPCertSSO-Editable-End -->
-
-<!-- AllowEAPCertSSO-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- AllowEAPCertSSO-DFProperties-End -->
-
-<!-- AllowEAPCertSSO-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Not allowed. |
-| 1 | Allowed. |
-<!-- AllowEAPCertSSO-AllowedValues-End -->
-
-<!-- AllowEAPCertSSO-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- AllowEAPCertSSO-Examples-End -->
-
-<!-- AllowEAPCertSSO-End -->
 
 <!-- Authentication-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

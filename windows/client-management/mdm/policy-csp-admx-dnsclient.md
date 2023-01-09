@@ -1,10 +1,10 @@
 ---
 title: ADMX_DnsClient Policy CSP
-description: Learn more about the ADMX_DnsClient Area in Policy CSP
+description: Learn more about the ADMX_DnsClient Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_DnsClient
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,9 +44,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Specifies that NetBIOS over TCP/IP (NetBT) queries are issued for fully qualified domain names.
 
-If you enable this policy setting, NetBT queries will be issued for multi-label and fully qualified domain names such as "www.example.com" in addition to single-label names.
+- If you enable this policy setting, NetBT queries will be issued for multi-label and fully qualified domain names such as "www.example.com" in addition to single-label names.
 
-If you disable this policy setting, or if you do not configure this policy setting, NetBT queries will only be issued for single-label names such as "example" and not for multi-label and fully qualified domain names.
+- If you disable this policy setting, or if you do not configure this policy setting, NetBT queries will only be issued for single-label names such as "example" and not for multi-label and fully qualified domain names.
 <!-- DNS_AllowFQDNNetBiosQueries-Description-End -->
 
 <!-- DNS_AllowFQDNNetBiosQueries-Editable-Begin -->
@@ -66,7 +64,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!-- DNS_AllowFQDNNetBiosQueries-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -112,11 +110,11 @@ For example, if attaching suffixes is allowed, an unqualified multi-label name q
 
 If attaching suffixes is allowed, and a DNS client with a primary domain suffix of "contoso.com" performs a query for "server.corp" the DNS client will send a query for "server.corp" first, and then a query for "server.corp.contoso.com." second if the first query fails.
 
-If you enable this policy setting, suffixes are allowed to be appended to an unqualified multi-label name if the original name query fails.
+- If you enable this policy setting, suffixes are allowed to be appended to an unqualified multi-label name if the original name query fails.
 
-If you disable this policy setting, no suffixes are appended to unqualified multi-label name queries if the original name query fails.
+- If you disable this policy setting, no suffixes are appended to unqualified multi-label name queries if the original name query fails.
 
-If you do not configure this policy setting, computers will use their local DNS client settings to determine the query behavior for unqualified multi-label names.
+- If you do not configure this policy setting, computers will use their local DNS client settings to determine the query behavior for unqualified multi-label names.
 <!-- DNS_AppendToMultiLabelName-Description-End -->
 
 <!-- DNS_AppendToMultiLabelName-Editable-Begin -->
@@ -134,7 +132,7 @@ If you do not configure this policy setting, computers will use their local DNS 
 
 <!-- DNS_AppendToMultiLabelName-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -176,9 +174,9 @@ Specifies a connection-specific DNS suffix. This policy setting supersedes local
 
 To use this policy setting, click Enabled, and then enter a string value representing the DNS suffix.
 
-If you enable this policy setting, the DNS suffix that you enter will be applied to all network connections used by computers that receive this policy setting.
+- If you enable this policy setting, the DNS suffix that you enter will be applied to all network connections used by computers that receive this policy setting.
 
-If you disable this policy setting, or if you do not configure this policy setting, computers will use the local or DHCP supplied connection specific DNS suffix, if configured.
+- If you disable this policy setting, or if you do not configure this policy setting, computers will use the local or DHCP supplied connection specific DNS suffix, if configured.
 <!-- DNS_Domain-Description-End -->
 
 <!-- DNS_Domain-Editable-Begin -->
@@ -196,7 +194,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!-- DNS_Domain-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -253,9 +251,9 @@ If a DNS suffix search list is not specified, the DNS client attaches the primar
 
 For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the non-dot-terminated single-label name "example," and the DNS query for example.ooo.aaa.microsoft.com fails, the DNS client devolves the primary DNS suffix (drops the leftmost label) till the specified devolution level, and submits a query for example.aaa.microsoft.com. If this query fails, the primary DNS suffix is devolved further if it is under specified devolution level and the query example.microsoft.com is submitted. If this query fails, devolution continues if it is under specified devolution level and the query example.microsoft.com is submitted, corresponding to a devolution level of two. The primary DNS suffix cannot be devolved beyond a devolution level of two. The devolution level can be configured using this policy setting. The default devolution level is two.
 
-If you enable this policy setting and DNS devolution is also enabled, DNS clients use the DNS devolution level that you specify.
+- If you enable this policy setting and DNS devolution is also enabled, DNS clients use the DNS devolution level that you specify.
 
-If this policy setting is disabled, or if this policy setting is not configured, DNS clients use the default devolution level of two provided that DNS devolution is enabled.
+- If this policy setting is disabled, or if this policy setting is not configured, DNS clients use the default devolution level of two provided that DNS devolution is enabled.
 <!-- DNS_DomainNameDevolutionLevel-Description-End -->
 
 <!-- DNS_DomainNameDevolutionLevel-Editable-Begin -->
@@ -273,7 +271,7 @@ If this policy setting is disabled, or if this policy setting is not configured,
 
 <!-- DNS_DomainNameDevolutionLevel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -313,9 +311,9 @@ If this policy setting is disabled, or if this policy setting is not configured,
 <!-- Description-Source-ADMX -->
 Specifies whether the DNS client should convert internationalized domain names (IDNs) to Punycode when the computer is on non-domain networks with no WINS servers configured.
 
-If this policy setting is enabled, IDNs are not converted to Punycode.
+- If this policy setting is enabled, IDNs are not converted to Punycode.
 
-If this policy setting is disabled, or if this policy setting is not configured, IDNs are converted to Punycode when the computer is on non-domain networks with no WINS servers configured.
+- If this policy setting is disabled, or if this policy setting is not configured, IDNs are converted to Punycode when the computer is on non-domain networks with no WINS servers configured.
 <!-- DNS_IdnEncoding-Description-End -->
 
 <!-- DNS_IdnEncoding-Editable-Begin -->
@@ -333,7 +331,7 @@ If this policy setting is disabled, or if this policy setting is not configured,
 
 <!-- DNS_IdnEncoding-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -373,9 +371,9 @@ If this policy setting is disabled, or if this policy setting is not configured,
 <!-- Description-Source-ADMX -->
 Specifies whether the DNS client should convert internationalized domain names (IDNs) to the Nameprep form, a canonical Unicode representation of the string.
 
-If this policy setting is enabled, IDNs are converted to the Nameprep form.
+- If this policy setting is enabled, IDNs are converted to the Nameprep form.
 
-If this policy setting is disabled, or if this policy setting is not configured, IDNs are not converted to the Nameprep form.
+- If this policy setting is disabled, or if this policy setting is not configured, IDNs are not converted to the Nameprep form.
 <!-- DNS_IdnMapping-Description-End -->
 
 <!-- DNS_IdnMapping-Editable-Begin -->
@@ -393,7 +391,7 @@ If this policy setting is disabled, or if this policy setting is not configured,
 
 <!-- DNS_IdnMapping-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -435,9 +433,9 @@ Defines the DNS servers to which a computer sends queries when it attempts to re
 
 To use this policy setting, click Enabled, and then enter a space-delimited list of IP addresses in the available field. To use this policy setting, you must enter at least one IP address.
 
-If you enable this policy setting, the list of DNS servers is applied to all network connections used by computers that receive this policy setting.
+- If you enable this policy setting, the list of DNS servers is applied to all network connections used by computers that receive this policy setting.
 
-If you disable this policy setting, or if you do not configure this policy setting, computers will use the local or DHCP supplied list of DNS servers, if configured.
+- If you disable this policy setting, or if you do not configure this policy setting, computers will use the local or DHCP supplied list of DNS servers, if configured.
 <!-- DNS_NameServer-Description-End -->
 
 <!-- DNS_NameServer-Editable-Begin -->
@@ -455,7 +453,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!-- DNS_NameServer-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -494,11 +492,12 @@ If you disable this policy setting, or if you do not configure this policy setti
 <!-- Description-Source-ADMX -->
 Specifies that responses from link local name resolution protocols received over a network interface that is higher in the binding order are preferred over DNS responses from network interfaces lower in the binding order. Examples of link local name resolution protocols include link local multicast name resolution (LLMNR) and NetBIOS over TCP/IP (NetBT).
 
-If you enable this policy setting, responses from link local protocols will be preferred over DNS responses if the local responses are from a network with a higher binding order.
+- If you enable this policy setting, responses from link local protocols will be preferred over DNS responses if the local responses are from a network with a higher binding order.
 
-If you disable this policy setting, or if you do not configure this policy setting, then DNS responses from networks lower in the binding order will be preferred over responses from link local protocols received from networks higher in the binding order.
+- If you disable this policy setting, or if you do not configure this policy setting, then DNS responses from networks lower in the binding order will be preferred over responses from link local protocols received from networks higher in the binding order.
 
-Note: This policy setting is applicable only if the turn off smart multi-homed name resolution policy setting is disabled or not configured.
+> [!NOTE]
+> This policy setting is applicable only if the turn off smart multi-homed name resolution policy setting is disabled or not configured.
 <!-- DNS_PreferLocalResponsesOverLowerOrderDns-Description-End -->
 
 <!-- DNS_PreferLocalResponsesOverLowerOrderDns-Editable-Begin -->
@@ -516,7 +515,7 @@ Note: This policy setting is applicable only if the turn off smart multi-homed n
 
 <!-- DNS_PreferLocalResponsesOverLowerOrderDns-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -558,13 +557,14 @@ Specifies the primary DNS suffix used by computers in DNS name registration and 
 
 To use this policy setting, click Enabled and enter the entire primary DNS suffix you want to assign. For example: microsoft.com.
 
-Important: In order for changes to this policy setting to be applied on computers that receive it, you must restart Windows.
+> [!IMPORTANT]
+> In order for changes to this policy setting to be applied on computers that receive it, you must restart Windows.
 
-If you enable this policy setting, it supersedes the primary DNS suffix configured in the DNS Suffix and NetBIOS Computer Name dialog box using the System control panel.
+- If you enable this policy setting, it supersedes the primary DNS suffix configured in the DNS Suffix and NetBIOS Computer Name dialog box using the System control panel.
 
 You can use this policy setting to prevent users, including local administrators, from changing the primary DNS suffix.
 
-If you disable this policy setting, or if you do not configure this policy setting, each computer uses its local primary DNS suffix, which is usually the DNS name of Active Directory domain to which it is joined.
+- If you disable this policy setting, or if you do not configure this policy setting, each computer uses its local primary DNS suffix, which is usually the DNS name of Active Directory domain to which it is joined.
 <!-- DNS_PrimaryDnsSuffix-Description-End -->
 
 <!-- DNS_PrimaryDnsSuffix-Editable-Begin -->
@@ -582,7 +582,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!-- DNS_PrimaryDnsSuffix-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -623,13 +623,14 @@ Specifies if a computer performing dynamic DNS registration will register A and 
 
 By default, a DNS client performing dynamic DNS registration registers A and PTR resource records with a concatenation of its computer name and the primary DNS suffix. For example, a computer name of mycomputer and a primary DNS suffix of microsoft.com will be registered as: mycomputer.microsoft.com.
 
-If you enable this policy setting, a computer will register A and PTR resource records with its connection-specific DNS suffix, in addition to the primary DNS suffix. This applies to all network connections used by computers that receive this policy setting.
+- If you enable this policy setting, a computer will register A and PTR resource records with its connection-specific DNS suffix, in addition to the primary DNS suffix. This applies to all network connections used by computers that receive this policy setting.
 
-For example, with a computer name of mycomputer, a primary DNS suffix of microsoft.com, and a connection specific DNS suffix of VPNconnection, a computer will register A and PTR resource records for mycomputer.VPNconnection and mycomputer.microsoft.com when this policy setting is enabled.
+For example, with a computer name of mycomputer, a primary DNS suffix of microsoft.com, and a connection specific DNS suffix of VPNconnection, a computer will register A and PTR resource records for mycomputer. VPNconnection and mycomputer.microsoft.com when this policy setting is enabled.
 
-Important: This policy setting is ignored on a DNS client computer if dynamic DNS registration is disabled.
+> [!IMPORTANT]
+> This policy setting is ignored on a DNS client computer if dynamic DNS registration is disabled.
 
-If you disable this policy setting, or if you do not configure this policy setting, a DNS client computer will not register any A and PTR resource records using a connection-specific DNS suffix.
+- If you disable this policy setting, or if you do not configure this policy setting, a DNS client computer will not register any A and PTR resource records using a connection-specific DNS suffix.
 <!-- DNS_RegisterAdapterName-Description-End -->
 
 <!-- DNS_RegisterAdapterName-Editable-Begin -->
@@ -647,7 +648,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!-- DNS_RegisterAdapterName-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -689,7 +690,7 @@ Specifies if DNS client computers will register PTR resource records.
 
 By default, DNS clients configured to perform dynamic DNS registration will attempt to register PTR resource record only if they successfully registered the corresponding A resource record.
 
-If you enable this policy setting, registration of PTR records will be determined by the option that you choose under Register PTR records.
+- If you enable this policy setting, registration of PTR records will be determined by the option that you choose under Register PTR records.
 
 To use this policy setting, click Enabled, and then select one of the following options from the drop-down list:
 
@@ -699,7 +700,7 @@ Register: Computers will attempt to register PTR resource records even if regist
 
 Register only if A record registration succeeds: Computers will attempt to register PTR resource records only if registration of the corresponding A records was successful.
 
-If you disable this policy setting, or if you do not configure this policy setting, computers will use locally configured settings.
+- If you disable this policy setting, or if you do not configure this policy setting, computers will use locally configured settings.
 <!-- DNS_RegisterReverseLookup-Description-End -->
 
 <!-- DNS_RegisterReverseLookup-Editable-Begin -->
@@ -717,7 +718,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!-- DNS_RegisterReverseLookup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -756,9 +757,9 @@ If you disable this policy setting, or if you do not configure this policy setti
 <!-- Description-Source-ADMX -->
 Specifies if DNS dynamic update is enabled. Computers configured for DNS dynamic update automatically register and update their DNS resource records with a DNS server.
 
-If you enable this policy setting, or you do not configure this policy setting, computers will attempt to use dynamic DNS registration on all network connections that have connection-specific dynamic DNS registration enabled. For a dynamic DNS registration to be enabled on a network connection, the connection-specific configuration must allow dynamic DNS registration, and this policy setting must not be disabled.
+- If you enable this policy setting, or you do not configure this policy setting, computers will attempt to use dynamic DNS registration on all network connections that have connection-specific dynamic DNS registration enabled. For a dynamic DNS registration to be enabled on a network connection, the connection-specific configuration must allow dynamic DNS registration, and this policy setting must not be disabled.
 
-If you disable this policy setting, computers may not use dynamic DNS registration for any of their network connections, regardless of the configuration for individual network connections.
+- If you disable this policy setting, computers may not use dynamic DNS registration for any of their network connections, regardless of the configuration for individual network connections.
 <!-- DNS_RegistrationEnabled-Description-End -->
 
 <!-- DNS_RegistrationEnabled-Editable-Begin -->
@@ -776,7 +777,7 @@ If you disable this policy setting, computers may not use dynamic DNS registrati
 
 <!-- DNS_RegistrationEnabled-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -820,9 +821,9 @@ This policy setting is designed for computers that register address (A) resource
 
 During dynamic update of resource records in a zone that does not use Secure Dynamic Updates, an A resource record might exist that associates the client's host name with an IP address different than the one currently in use by the client. By default, the DNS client attempts to replace the existing A resource record with an A resource record that has the client's current IP address.
 
-If you enable this policy setting or if you do not configure this policy setting, DNS clients maintain their default behavior and will attempt to replace conflicting A resource records during dynamic update.
+- If you enable this policy setting or if you do not configure this policy setting, DNS clients maintain their default behavior and will attempt to replace conflicting A resource records during dynamic update.
 
-If you disable this policy setting, existing A resource records that contain conflicting IP addresses will not be replaced during a dynamic update, and an error will be recorded in Event Viewer.
+- If you disable this policy setting, existing A resource records that contain conflicting IP addresses will not be replaced during a dynamic update, and an error will be recorded in Event Viewer.
 <!-- DNS_RegistrationOverwritesInConflict-Description-End -->
 
 <!-- DNS_RegistrationOverwritesInConflict-Editable-Begin -->
@@ -840,7 +841,7 @@ If you disable this policy setting, existing A resource records that contain con
 
 <!-- DNS_RegistrationOverwritesInConflict-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -882,13 +883,14 @@ Specifies the interval used by DNS clients to refresh registration of A and PTR 
 
 Computers configured to perform dynamic DNS registration of A and PTR resource records periodically reregister their records with DNS servers, even if the record has not changed. This reregistration is required to indicate to DNS servers that records are current and should not be automatically removed (scavenged) when a DNS server is configured to delete stale records.
 
-Warning: If record scavenging is enabled on the zone, the value of this policy setting should never be longer than the value of the DNS zone refresh interval. Configuring the registration refresh interval to be longer than the refresh interval of the DNS zone might result in the undesired deletion of A and PTR resource records.
+> [!WARNING]
+> If record scavenging is enabled on the zone, the value of this policy setting should never be longer than the value of the DNS zone refresh interval. Configuring the registration refresh interval to be longer than the refresh interval of the DNS zone might result in the undesired deletion of A and PTR resource records.
 
 To specify the registration refresh interval, click Enabled and then enter a value of 1800 or greater. The value that you specify is the number of seconds to use for the registration refresh interval. For example, 1800 seconds is 30 minutes.
 
-If you enable this policy setting, registration refresh interval that you specify will be applied to all network connections used by computers that receive this policy setting.
+- If you enable this policy setting, registration refresh interval that you specify will be applied to all network connections used by computers that receive this policy setting.
 
-If you disable this policy setting, or if you do not configure this policy setting, computers will use the local or DHCP supplied setting. By default, client computers configured with a static IP address attempt to update their DNS resource records once every 24 hours and DHCP clients will attempt to update their DNS resource records when a DHCP lease is granted or renewed.
+- If you disable this policy setting, or if you do not configure this policy setting, computers will use the local or DHCP supplied setting. By default, client computers configured with a static IP address attempt to update their DNS resource records once every 24 hours and DHCP clients will attempt to update their DNS resource records when a DHCP lease is granted or renewed.
 <!-- DNS_RegistrationRefreshInterval-Description-End -->
 
 <!-- DNS_RegistrationRefreshInterval-Editable-Begin -->
@@ -906,7 +908,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!-- DNS_RegistrationRefreshInterval-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -947,9 +949,9 @@ Specifies the value of the time to live (TTL) field in A and PTR resource record
 
 To specify the TTL, click Enabled and then enter a value in seconds (for example, 900 is 15 minutes).
 
-If you enable this policy setting, the TTL value that you specify will be applied to DNS resource records registered for all network connections used by computers that receive this policy setting.
+- If you enable this policy setting, the TTL value that you specify will be applied to DNS resource records registered for all network connections used by computers that receive this policy setting.
 
-If you disable this policy setting, or if you do not configure this policy setting, computers will use the TTL settings specified in DNS. By default, the TTL is 1200 seconds (20 minutes).
+- If you disable this policy setting, or if you do not configure this policy setting, computers will use the TTL settings specified in DNS. By default, the TTL is 1200 seconds (20 minutes).
 <!-- DNS_RegistrationTtl-Description-End -->
 
 <!-- DNS_RegistrationTtl-Editable-Begin -->
@@ -967,7 +969,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!-- DNS_RegistrationTtl-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1012,9 +1014,9 @@ Client computers that receive this policy setting will attach one or more suffix
 
 To use this policy setting, click Enabled, and then enter a string value representing the DNS suffixes that should be appended to single-label names. You must specify at least one suffix. Use a comma-delimited string, such as "microsoft.com,serverua.microsoft.com,office.microsoft.com" to specify multiple suffixes.
 
-If you enable this policy setting, one DNS suffix is attached at a time for each query. If a query is unsuccessful, a new DNS suffix is added in place of the failed suffix, and this new query is submitted. The values are used in the order they appear in the string, starting with the leftmost value and proceeding to the right until a query is successful or all suffixes are tried.
+- If you enable this policy setting, one DNS suffix is attached at a time for each query. If a query is unsuccessful, a new DNS suffix is added in place of the failed suffix, and this new query is submitted. The values are used in the order they appear in the string, starting with the leftmost value and proceeding to the right until a query is successful or all suffixes are tried.
 
-If you disable this policy setting, or if you do not configure this policy setting, the primary DNS suffix and network connection-specific DNS suffixes are appended to the unqualified queries.
+- If you disable this policy setting, or if you do not configure this policy setting, the primary DNS suffix and network connection-specific DNS suffixes are appended to the unqualified queries.
 <!-- DNS_SearchList-Description-End -->
 
 <!-- DNS_SearchList-Editable-Begin -->
@@ -1032,7 +1034,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!-- DNS_SearchList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1071,9 +1073,9 @@ If you disable this policy setting, or if you do not configure this policy setti
 <!-- Description-Source-ADMX -->
 Specifies that a multi-homed DNS client should optimize name resolution across networks. The setting improves performance by issuing parallel DNS, link local multicast name resolution (LLMNR) and NetBIOS over TCP/IP (NetBT) queries across all networks. In the event that multiple positive responses are received, the network binding order is used to determine which response to accept.
 
-If you enable this policy setting, the DNS client will not perform any optimizations. DNS queries will be issued across all networks first. LLMNR queries will be issued if the DNS queries fail, followed by NetBT queries if LLMNR queries fail.
+- If you enable this policy setting, the DNS client will not perform any optimizations. DNS queries will be issued across all networks first. LLMNR queries will be issued if the DNS queries fail, followed by NetBT queries if LLMNR queries fail.
 
-If you disable this policy setting, or if you do not configure this policy setting, name resolution will be optimized when issuing DNS, LLMNR and NetBT queries.
+- If you disable this policy setting, or if you do not configure this policy setting, name resolution will be optimized when issuing DNS, LLMNR and NetBT queries.
 <!-- DNS_SmartMultiHomedNameResolution-Description-End -->
 
 <!-- DNS_SmartMultiHomedNameResolution-Editable-Begin -->
@@ -1091,7 +1093,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!-- DNS_SmartMultiHomedNameResolution-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1131,11 +1133,12 @@ If you disable this policy setting, or if you do not configure this policy setti
 <!-- Description-Source-ADMX -->
 Specifies that the DNS client should prefer responses from link local name resolution protocols on non-domain networks over DNS responses when issuing queries for flat names. Examples of link local name resolution protocols include link local multicast name resolution (LLMNR) and NetBIOS over TCP/IP (NetBT).
 
-If you enable this policy setting, the DNS client will prefer DNS responses, followed by LLMNR, followed by NetBT for all networks.
+- If you enable this policy setting, the DNS client will prefer DNS responses, followed by LLMNR, followed by NetBT for all networks.
 
-If you disable this policy setting, or if you do not configure this policy setting, the DNS client will prefer link local responses for flat name queries on non-domain networks.
+- If you disable this policy setting, or if you do not configure this policy setting, the DNS client will prefer link local responses for flat name queries on non-domain networks.
 
-Note: This policy setting is applicable only if the turn off smart multi-homed name resolution policy setting is disabled or not configured.
+> [!NOTE]
+> This policy setting is applicable only if the turn off smart multi-homed name resolution policy setting is disabled or not configured.
 <!-- DNS_SmartProtocolReorder-Description-End -->
 
 <!-- DNS_SmartProtocolReorder-Editable-Begin -->
@@ -1153,7 +1156,7 @@ Note: This policy setting is applicable only if the turn off smart multi-homed n
 
 <!-- DNS_SmartProtocolReorder-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1201,9 +1204,9 @@ Only unsecure - computers send only nonsecure dynamic updates.
 
 Only secure - computers send only secure dynamic updates.
 
-If you enable this policy setting, computers that attempt to send dynamic DNS updates will use the security level that you specify in this policy setting.
+- If you enable this policy setting, computers that attempt to send dynamic DNS updates will use the security level that you specify in this policy setting.
 
-If you disable this policy setting, or if you do not configure this policy setting, computers will use local settings. By default, DNS clients attempt to use unsecured dynamic update first. If an unsecured update is refused, clients try to use secure update.
+- If you disable this policy setting, or if you do not configure this policy setting, computers will use local settings. By default, DNS clients attempt to use unsecured dynamic update first. If an unsecured update is refused, clients try to use secure update.
 <!-- DNS_UpdateSecurityLevel-Description-End -->
 
 <!-- DNS_UpdateSecurityLevel-Editable-Begin -->
@@ -1221,7 +1224,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!-- DNS_UpdateSecurityLevel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1262,9 +1265,9 @@ Specifies if computers may send dynamic updates to zones with a single label nam
 
 By default, a DNS client that is configured to perform dynamic DNS update will update the DNS zone that is authoritative for its DNS resource records unless the authoritative zone is a top-level domain or root zone.
 
-If you enable this policy setting, computers send dynamic updates to any zone that is authoritative for the resource records that the computer needs to update, except the root zone.
+- If you enable this policy setting, computers send dynamic updates to any zone that is authoritative for the resource records that the computer needs to update, except the root zone.
 
-If you disable this policy setting, or if you do not configure this policy setting, computers do not send dynamic updates to the root zone or top-level domain zones that are authoritative for the resource records that the computer needs to update.
+- If you disable this policy setting, or if you do not configure this policy setting, computers do not send dynamic updates to the root zone or top-level domain zones that are authoritative for the resource records that the computer needs to update.
 <!-- DNS_UpdateTopLevelDomainZones-Description-End -->
 
 <!-- DNS_UpdateTopLevelDomainZones-Editable-Begin -->
@@ -1282,7 +1285,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!-- DNS_UpdateTopLevelDomainZones-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1340,9 +1343,9 @@ If a DNS suffix search list is not specified, the DNS client attaches the primar
 
 For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the non-dot-terminated single-label name "example," and the DNS query for example.ooo.aaa.microsoft.com fails, the DNS client devolves the primary DNS suffix (drops the leftmost label) till the specified devolution level, and submits a query for example.aaa.microsoft.com. If this query fails, the primary DNS suffix is devolved further if it is under specified devolution level and the query example.microsoft.com is submitted. If this query fails, devolution continues if it is under specified devolution level and the query example.microsoft.com is submitted, corresponding to a devolution level of two. The primary DNS suffix cannot be devolved beyond a devolution level of two. The devolution level can be configured using the primary DNS suffix devolution level policy setting. The default devolution level is two.
 
-If you enable this policy setting, or if you do not configure this policy setting, DNS clients attempt to resolve single-label names using concatenations of the single-label name to be resolved and the devolved primary DNS suffix.
+- If you enable this policy setting, or if you do not configure this policy setting, DNS clients attempt to resolve single-label names using concatenations of the single-label name to be resolved and the devolved primary DNS suffix.
 
-If you disable this policy setting, DNS clients do not attempt to resolve names that are concatenations of the single-label name to be resolved and the devolved primary DNS suffix.
+- If you disable this policy setting, DNS clients do not attempt to resolve names that are concatenations of the single-label name to be resolved and the devolved primary DNS suffix.
 <!-- DNS_UseDomainNameDevolution-Description-End -->
 
 <!-- DNS_UseDomainNameDevolution-Editable-Begin -->
@@ -1360,7 +1363,7 @@ If you disable this policy setting, DNS clients do not attempt to resolve names 
 
 <!-- DNS_UseDomainNameDevolution-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1402,9 +1405,9 @@ Specifies that link local multicast name resolution (LLMNR) is disabled on clien
 
 LLMNR is a secondary name resolution protocol. With LLMNR, queries are sent using multicast over a local network link on a single subnet from a client computer to another client computer on the same subnet that also has LLMNR enabled. LLMNR does not require a DNS server or DNS client configuration, and provides name resolution in scenarios in which conventional DNS name resolution is not possible.
 
-If you enable this policy setting, LLMNR will be disabled on all available network adapters on the client computer.
+- If you enable this policy setting, LLMNR will be disabled on all available network adapters on the client computer.
 
-If you disable this policy setting, or you do not configure this policy setting, LLMNR will be enabled on all available network adapters.
+- If you disable this policy setting, or you do not configure this policy setting, LLMNR will be enabled on all available network adapters.
 <!-- Turn_Off_Multicast-Description-End -->
 
 <!-- Turn_Off_Multicast-Editable-Begin -->
@@ -1422,13 +1425,13 @@ If you disable this policy setting, or you do not configure this policy setting,
 
 <!-- Turn_Off_Multicast-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DNS_TurnOffMulticast |
+| Name | Turn_Off_Multicast |
 | Friendly Name | Turn off multicast name resolution |
 | Location | Computer Configuration |
 | Path | Network > DNS Client |

@@ -1,10 +1,10 @@
 ---
 title: DeliveryOptimization Policy CSP
-description: Learn more about the DeliveryOptimization Area in Policy CSP
+description: Learn more about the DeliveryOptimization Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -348,9 +348,7 @@ The recommended value is 1 hour (3600).
 
 <!-- DODelayCacheServerFallbackBackground-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for a background content download.
-
-**Note** that the DODelayBackgroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.
+Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for a background content download. **Note** that the DODelayBackgroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.
 <!-- DODelayCacheServerFallbackBackground-Description-End -->
 
 <!-- DODelayCacheServerFallbackBackground-Editable-Begin -->
@@ -405,9 +403,7 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 
 <!-- DODelayCacheServerFallbackForeground-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for foreground content download.
-
-**Note** that the DODelayForegroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.
+Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for foreground content download. **Note** that the DODelayForegroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.
 <!-- DODelayCacheServerFallbackForeground-Description-End -->
 
 <!-- DODelayCacheServerFallbackForeground-Editable-Begin -->
@@ -545,8 +541,8 @@ Disallow downloads from Microsoft Connected Cache servers when the device connec
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Allowed |
-| 1 | Not allowed |
+| 0 (Default) | Allowed. |
+| 1 | Not allowed. |
 <!-- DODisallowCacheServerDownloadsOnVPN-AllowedValues-End -->
 
 <!-- DODisallowCacheServerDownloadsOnVPN-GpMapping-Begin -->
@@ -730,12 +726,12 @@ Set this policy to restrict peer selection to a specific source. Available optio
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Unset |
-| 1 | AD site |
-| 2 | Authenticated domain SID |
-| 3 | DHCP user option |
-| 4 | DNS suffix |
-| 5 | AAD |
+| 0 (Default) | Unset. |
+| 1 | AD site. |
+| 2 | Authenticated domain SID. |
+| 3 | DHCP user option. |
+| 4 | DNS suffix. |
+| 5 | AAD. |
 <!-- DOGroupIdSource-AllowedValues-End -->
 
 <!-- DOGroupIdSource-GpMapping-Begin -->
@@ -1117,7 +1113,8 @@ Specifies the required minimum disk size (capacity in GB) for the device to use 
 
 Recommended values: 64 GB to 256 GB.
 
-Note: If the DOModifyCacheDrive policy is set, the disk size check will apply to the new working directory specified by this policy.
+> [!NOTE]
+> If the DOModifyCacheDrive policy is set, the disk size check will apply to the new working directory specified by this policy.
 <!-- DOMinDiskSizeAllowedToPeer-Description-End -->
 
 <!-- DOMinDiskSizeAllowedToPeer-Editable-Begin -->

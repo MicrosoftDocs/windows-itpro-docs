@@ -1,10 +1,10 @@
 ---
 title: RemoteManagement Policy CSP
-description: Learn more about the RemoteManagement Area in Policy CSP
+description: Learn more about the RemoteManagement Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/20/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - RemoteManagement
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,9 +44,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Basic authentication.
 
-If you enable this policy setting, the WinRM client uses Basic authentication. If WinRM is configured to use HTTP transport, the user name and password are sent over the network as clear text.
+- If you enable this policy setting, the WinRM client uses Basic authentication. If WinRM is configured to use HTTP transport, the user name and password are sent over the network as clear text.
 
-If you disable or do not configure this policy setting, the WinRM client does not use Basic authentication.
+- If you disable or do not configure this policy setting, the WinRM client does not use Basic authentication.
 <!-- AllowBasicAuthentication_Client-Description-End -->
 
 <!-- AllowBasicAuthentication_Client-Editable-Begin -->
@@ -66,13 +64,13 @@ If you disable or do not configure this policy setting, the WinRM client does no
 
 <!-- AllowBasicAuthentication_Client-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | AllowBasic |
+| Name | AllowBasic_2 |
 | Friendly Name | Allow Basic authentication |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Remote Management (WinRM) > WinRM Client |
@@ -106,9 +104,9 @@ If you disable or do not configure this policy setting, the WinRM client does no
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts Basic authentication from a remote client.
 
-If you enable this policy setting, the WinRM service accepts Basic authentication from a remote client.
+- If you enable this policy setting, the WinRM service accepts Basic authentication from a remote client.
 
-If you disable or do not configure this policy setting, the WinRM service does not accept Basic authentication from a remote client.
+- If you disable or do not configure this policy setting, the WinRM service does not accept Basic authentication from a remote client.
 <!-- AllowBasicAuthentication_Service-Description-End -->
 
 <!-- AllowBasicAuthentication_Service-Editable-Begin -->
@@ -126,13 +124,13 @@ If you disable or do not configure this policy setting, the WinRM service does n
 
 <!-- AllowBasicAuthentication_Service-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | AllowBasic |
+| Name | AllowBasic_1 |
 | Friendly Name | Allow Basic authentication |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
@@ -166,9 +164,9 @@ If you disable or do not configure this policy setting, the WinRM service does n
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses CredSSP authentication.
 
-If you enable this policy setting, the WinRM client uses CredSSP authentication.
+- If you enable this policy setting, the WinRM client uses CredSSP authentication.
 
-If you disable or do not configure this policy setting, the WinRM client does not use CredSSP authentication.
+- If you disable or do not configure this policy setting, the WinRM client does not use CredSSP authentication.
 <!-- AllowCredSSPAuthenticationClient-Description-End -->
 
 <!-- AllowCredSSPAuthenticationClient-Editable-Begin -->
@@ -186,13 +184,13 @@ If you disable or do not configure this policy setting, the WinRM client does no
 
 <!-- AllowCredSSPAuthenticationClient-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | AllowCredSSP |
+| Name | AllowCredSSP_2 |
 | Friendly Name | Allow CredSSP authentication |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Remote Management (WinRM) > WinRM Client |
@@ -226,9 +224,9 @@ If you disable or do not configure this policy setting, the WinRM client does no
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts CredSSP authentication from a remote client.
 
-If you enable this policy setting, the WinRM service accepts CredSSP authentication from a remote client.
+- If you enable this policy setting, the WinRM service accepts CredSSP authentication from a remote client.
 
-If you disable or do not configure this policy setting, the WinRM service does not accept CredSSP authentication from a remote client.
+- If you disable or do not configure this policy setting, the WinRM service does not accept CredSSP authentication from a remote client.
 <!-- AllowCredSSPAuthenticationService-Description-End -->
 
 <!-- AllowCredSSPAuthenticationService-Editable-Begin -->
@@ -246,13 +244,13 @@ If you disable or do not configure this policy setting, the WinRM service does n
 
 <!-- AllowCredSSPAuthenticationService-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | AllowCredSSP |
+| Name | AllowCredSSP_1 |
 | Friendly Name | Allow CredSSP authentication |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
@@ -286,11 +284,11 @@ If you disable or do not configure this policy setting, the WinRM service does n
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service automatically listens on the network for requests on the HTTP transport over the default HTTP port.
 
-If you enable this policy setting, the WinRM service automatically listens on the network for requests on the HTTP transport over the default HTTP port.
+- If you enable this policy setting, the WinRM service automatically listens on the network for requests on the HTTP transport over the default HTTP port.
 
 To allow WinRM service to receive requests over the network, configure the Windows Firewall policy setting with exceptions for Port 5985 (default port for HTTP).
 
-If you disable or do not configure this policy setting, the WinRM service will not respond to requests from a remote computer, regardless of whether or not any WinRM listeners are configured.
+- If you disable or do not configure this policy setting, the WinRM service will not respond to requests from a remote computer, regardless of whether or not any WinRM listeners are configured.
 
 The service listens on the addresses specified by the IPv4 and IPv6 filters. The IPv4 filter specifies one or more ranges of IPv4 addresses, and the IPv6 filter specifies one or more ranges of IPv6addresses. If specified, the service enumerates the available IP addresses on the computer and uses only addresses that fall within one of the filter ranges.
 
@@ -301,7 +299,7 @@ For example, if you want the service to listen only on IPv4 addresses, leave the
 Ranges are specified using the syntax IP1-IP2. Multiple ranges are separated using "," (comma) as the delimiter.
 
 Example IPv4 filters:\n2.0.0.1-2.0.0.20, 24.0.0.1-24.0.0.22
-Example IPv6 filters:\n3FFE:FFFF:7654:FEDA:1245:BA98:0000:0000-3FFE:FFFF:7654:FEDA:1245:BA98:3210:4562
+Example IPv6 filters:\n3FFE:FFFF:7654:FEDA:1245:BA98:0000:0000-3. FFE:FFFF:7654:FEDA:1245:BA98:3210:4562
 <!-- AllowRemoteServerManagement-Description-End -->
 
 <!-- AllowRemoteServerManagement-Editable-Begin -->
@@ -319,7 +317,7 @@ Example IPv6 filters:\n3FFE:FFFF:7654:FEDA:1245:BA98:0000:0000-3FFE:FFFF:7654:FE
 
 <!-- AllowRemoteServerManagement-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -359,9 +357,9 @@ Example IPv6 filters:\n3FFE:FFFF:7654:FEDA:1245:BA98:0000:0000-3FFE:FFFF:7654:FE
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client sends and receives unencrypted messages over the network.
 
-If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network.
+- If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network.
 
-If you disable or do not configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
+- If you disable or do not configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
 <!-- AllowUnencryptedTraffic_Client-Description-End -->
 
 <!-- AllowUnencryptedTraffic_Client-Editable-Begin -->
@@ -379,13 +377,13 @@ If you disable or do not configure this policy setting, the WinRM client sends o
 
 <!-- AllowUnencryptedTraffic_Client-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | AllowUnencrypted |
+| Name | AllowUnencrypted_2 |
 | Friendly Name | Allow unencrypted traffic |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Remote Management (WinRM) > WinRM Client |
@@ -419,9 +417,9 @@ If you disable or do not configure this policy setting, the WinRM client sends o
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service sends and receives unencrypted messages over the network.
 
-If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network.
+- If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network.
 
-If you disable or do not configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
+- If you disable or do not configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
 <!-- AllowUnencryptedTraffic_Service-Description-End -->
 
 <!-- AllowUnencryptedTraffic_Service-Editable-Begin -->
@@ -439,13 +437,13 @@ If you disable or do not configure this policy setting, the WinRM client sends o
 
 <!-- AllowUnencryptedTraffic_Service-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | AllowUnencrypted |
+| Name | AllowUnencrypted_1 |
 | Friendly Name | Allow unencrypted traffic |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
@@ -479,9 +477,9 @@ If you disable or do not configure this policy setting, the WinRM client sends o
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Digest authentication.
 
-If you enable this policy setting, the WinRM client does not use Digest authentication.
+- If you enable this policy setting, the WinRM client does not use Digest authentication.
 
-If you disable or do not configure this policy setting, the WinRM client uses Digest authentication.
+- If you disable or do not configure this policy setting, the WinRM client uses Digest authentication.
 <!-- DisallowDigestAuthentication-Description-End -->
 
 <!-- DisallowDigestAuthentication-Editable-Begin -->
@@ -499,7 +497,7 @@ If you disable or do not configure this policy setting, the WinRM client uses Di
 
 <!-- DisallowDigestAuthentication-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -539,9 +537,9 @@ If you disable or do not configure this policy setting, the WinRM client uses Di
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Negotiate authentication.
 
-If you enable this policy setting, the WinRM client does not use Negotiate authentication.
+- If you enable this policy setting, the WinRM client does not use Negotiate authentication.
 
-If you disable or do not configure this policy setting, the WinRM client uses Negotiate authentication.
+- If you disable or do not configure this policy setting, the WinRM client uses Negotiate authentication.
 <!-- DisallowNegotiateAuthenticationClient-Description-End -->
 
 <!-- DisallowNegotiateAuthenticationClient-Editable-Begin -->
@@ -559,13 +557,13 @@ If you disable or do not configure this policy setting, the WinRM client uses Ne
 
 <!-- DisallowNegotiateAuthenticationClient-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DisallowNegotiate |
+| Name | DisallowNegotiate_2 |
 | Friendly Name | Disallow Negotiate authentication |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Remote Management (WinRM) > WinRM Client |
@@ -599,9 +597,9 @@ If you disable or do not configure this policy setting, the WinRM client uses Ne
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts Negotiate authentication from a remote client.
 
-If you enable this policy setting, the WinRM service does not accept Negotiate authentication from a remote client.
+- If you enable this policy setting, the WinRM service does not accept Negotiate authentication from a remote client.
 
-If you disable or do not configure this policy setting, the WinRM service accepts Negotiate authentication from a remote client.
+- If you disable or do not configure this policy setting, the WinRM service accepts Negotiate authentication from a remote client.
 <!-- DisallowNegotiateAuthenticationService-Description-End -->
 
 <!-- DisallowNegotiateAuthenticationService-Editable-Begin -->
@@ -619,13 +617,13 @@ If you disable or do not configure this policy setting, the WinRM service accept
 
 <!-- DisallowNegotiateAuthenticationService-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | DisallowNegotiate |
+| Name | DisallowNegotiate_1 |
 | Friendly Name | Disallow Negotiate authentication |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
@@ -659,9 +657,9 @@ If you disable or do not configure this policy setting, the WinRM service accept
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service will not allow RunAs credentials to be stored for any plug-ins.
 
-If you enable this policy setting, the WinRM service will not allow the RunAsUser or RunAsPassword configuration values to be set for any plug-ins. If a plug-in has already set the RunAsUser and RunAsPassword configuration values, the RunAsPassword configuration value will be erased from the credential store on this computer.
+- If you enable this policy setting, the WinRM service will not allow the RunAsUser or RunAsPassword configuration values to be set for any plug-ins. If a plug-in has already set the RunAsUser and RunAsPassword configuration values, the RunAsPassword configuration value will be erased from the credential store on this computer.
 
-If you disable or do not configure this policy setting, the WinRM service will allow the RunAsUser and RunAsPassword configuration values to be set for plug-ins and the RunAsPassword value will be stored securely.
+- If you disable or do not configure this policy setting, the WinRM service will allow the RunAsUser and RunAsPassword configuration values to be set for plug-ins and the RunAsPassword value will be stored securely.
 
 If you enable and then disable this policy setting,any values that were previously configured for RunAsPassword will need to be reset.
 <!-- DisallowStoringOfRunAsCredentials-Description-End -->
@@ -681,7 +679,7 @@ If you enable and then disable this policy setting,any values that were previous
 
 <!-- DisallowStoringOfRunAsCredentials-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -721,9 +719,9 @@ If you enable and then disable this policy setting,any values that were previous
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set the hardening level of the Windows Remote Management (WinRM) service with regard to channel binding tokens.
 
-If you enable this policy setting, the WinRM service uses the level specified in HardeningLevel to determine whether or not to accept a received request, based on a supplied channel binding token.
+- If you enable this policy setting, the WinRM service uses the level specified in HardeningLevel to determine whether or not to accept a received request, based on a supplied channel binding token.
 
-If you disable or do not configure this policy setting, you can configure the hardening level locally on each computer.
+- If you disable or do not configure this policy setting, you can configure the hardening level locally on each computer.
 
 If HardeningLevel is set to Strict, any request not containing a valid channel binding token is rejected.
 
@@ -747,13 +745,13 @@ If HardeningLevel is set to None, all requests are accepted (though they are not
 
 <!-- SpecifyChannelBindingTokenHardeningLevel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | CBTHardeningLevel |
+| Name | CBTHardeningLevel_1 |
 | Friendly Name | Specify channel binding token hardening level |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
@@ -787,9 +785,9 @@ If HardeningLevel is set to None, all requests are accepted (though they are not
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses the list specified in TrustedHostsList to determine if the destination host is a trusted entity.
 
-If you enable this policy setting, the WinRM client uses the list specified in TrustedHostsList to determine if the destination host is a trusted entity. The WinRM client uses this list when neither HTTPS nor Kerberos are used to authenticate the identity of the host.
+- If you enable this policy setting, the WinRM client uses the list specified in TrustedHostsList to determine if the destination host is a trusted entity. The WinRM client uses this list when neither HTTPS nor Kerberos are used to authenticate the identity of the host.
 
-If you disable or do not configure this policy setting and the WinRM client needs to use the list of trusted hosts, you must configure the list of trusted hosts locally on each computer.
+- If you disable or do not configure this policy setting and the WinRM client needs to use the list of trusted hosts, you must configure the list of trusted hosts locally on each computer.
 <!-- TrustedHosts-Description-End -->
 
 <!-- TrustedHosts-Editable-Begin -->
@@ -807,7 +805,7 @@ If you disable or do not configure this policy setting and the WinRM client need
 
 <!-- TrustedHosts-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -847,9 +845,9 @@ If you disable or do not configure this policy setting and the WinRM client need
 <!-- Description-Source-ADMX -->
 This policy setting turns on or turns off an HTTP listener created for backward compatibility purposes in the Windows Remote Management (WinRM) service.
 
-If you enable this policy setting, the HTTP listener always appears.
+- If you enable this policy setting, the HTTP listener always appears.
 
-If you disable or do not configure this policy setting, the HTTP listener never appears.
+- If you disable or do not configure this policy setting, the HTTP listener never appears.
 
 When certain port 80 listeners are migrated to WinRM 2.0, the listener port number changes to 5985.
 
@@ -871,7 +869,7 @@ A listener might be automatically created on port 80 to ensure backward compatib
 
 <!-- TurnOnCompatibilityHTTPListener-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -911,9 +909,9 @@ A listener might be automatically created on port 80 to ensure backward compatib
 <!-- Description-Source-ADMX -->
 This policy setting turns on or turns off an HTTPS listener created for backward compatibility purposes in the Windows Remote Management (WinRM) service.
 
-If you enable this policy setting, the HTTPS listener always appears.
+- If you enable this policy setting, the HTTPS listener always appears.
 
-If you disable or do not configure this policy setting, the HTTPS listener never appears.
+- If you disable or do not configure this policy setting, the HTTPS listener never appears.
 
 When certain port 443 listeners are migrated to WinRM 2.0, the listener port number changes to 5986.
 
@@ -935,7 +933,7 @@ A listener might be automatically created on port 443 to ensure backward compati
 
 <!-- TurnOnCompatibilityHTTPSListener-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

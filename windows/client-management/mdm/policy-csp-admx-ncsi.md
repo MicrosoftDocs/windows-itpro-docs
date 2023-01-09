@@ -1,10 +1,10 @@
 ---
 title: ADMX_NCSI Policy CSP
-description: Learn more about the ADMX_NCSI Area in Policy CSP
+description: Learn more about the ADMX_NCSI Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_NCSI
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -62,7 +60,7 @@ This policy setting enables you to specify the expected address of the host name
 
 <!-- NCSI_CorpDnsProbeContent-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -117,7 +115,7 @@ This policy setting enables you to specify the host name of a computer known to 
 
 <!-- NCSI_CorpDnsProbeHost-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -172,7 +170,7 @@ This policy setting enables you to specify the list of IPv6 corporate site prefi
 
 <!-- NCSI_CorpSitePrefixes-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -227,7 +225,7 @@ This policy setting enables you to specify the URL of the corporate website, aga
 
 <!-- NCSI_CorpWebProbeUrl-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -282,7 +280,7 @@ This policy setting enables you to specify the HTTPS URL of the corporate websit
 
 <!-- NCSI_DomainLocationDeterminationUrl-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -319,7 +317,8 @@ This policy setting enables you to specify the HTTPS URL of the corporate websit
 
 <!-- NCSI_GlobalDns-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it is currently probing on. If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
+This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it is currently probing on.
+- If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
 <!-- NCSI_GlobalDns-Description-End -->
 
 <!-- NCSI_GlobalDns-Editable-Begin -->
@@ -337,7 +336,7 @@ This policy setting enables you to specify DNS binding behavior. NCSI by default
 
 <!-- NCSI_GlobalDns-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -392,7 +391,7 @@ This Policy setting enables you to specify passive polling behavior. NCSI polls 
 
 <!-- NCSI_PassivePolling-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

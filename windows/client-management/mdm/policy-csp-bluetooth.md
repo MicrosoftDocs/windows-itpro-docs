@@ -1,10 +1,10 @@
 ---
 title: Bluetooth Policy CSP
-description: Learn more about the Bluetooth Area in Policy CSP
+description: Learn more about the Bluetooth Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/24/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -206,8 +206,8 @@ This policy allows the IT admin to block users on these managed devices from usi
 
 | Value | Description |
 |:--|:--|
-| 0 | Disallow. Block users on these managed devices from using Swift Pair and other proximity based scenarios |
-| 1 (Default) | Allow. Allow users on these managed devices to use Swift Pair and other proximity based scenarios |
+| 0 | Disallow. Block users on these managed devices from using Swift Pair and other proximity based scenarios. |
+| 1 (Default) | Allow. Allow users on these managed devices to use Swift Pair and other proximity based scenarios. |
 <!-- AllowPromptedProximalConnections-AllowedValues-End -->
 
 <!-- AllowPromptedProximalConnections-Examples-Begin -->
@@ -272,7 +272,7 @@ Sets the local Bluetooth device name. If this is set, the value that it is set t
 
 <!-- ServicesAllowedList-Description-Begin -->
 <!-- Description-Source-DDF -->
-Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7CAA-436C-8BF0-78CD0FFBD4AF}. The default value is an empty string. For more information, see ServicesAllowedList usage guide
+Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7. CAA-436. C-8. BF0-78. CD0FFBD4AF}. The default value is an empty string. For more information, see ServicesAllowedList usage guide
 <!-- ServicesAllowedList-Description-End -->
 
 <!-- ServicesAllowedList-Editable-Begin -->

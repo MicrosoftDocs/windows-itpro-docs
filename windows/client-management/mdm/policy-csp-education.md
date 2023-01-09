@@ -1,10 +1,10 @@
 ---
 title: Education Policy CSP
-description: Learn more about the Education Area in Policy CSP
+description: Learn more about the Education Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/29/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -19,104 +19,6 @@ ms.topic: reference
 <!-- Education-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- Education-Editable-End -->
-
-<!-- EnableEduThemes-Begin -->
-## EnableEduThemes
-
-<!-- EnableEduThemes-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
-<!-- EnableEduThemes-Applicability-End -->
-
-<!-- EnableEduThemes-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Education/EnableEduThemes
-```
-<!-- EnableEduThemes-OmaUri-End -->
-
-<!-- EnableEduThemes-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting allows you to control whether EDU-specific theme packs are available in Settings > Personalization. If you disable or don't configure this policy setting, EDU-specific theme packs will not be included. If you enable this policy setting, users will be able to personalize their devices with EDU-specific themes.
-<!-- EnableEduThemes-Description-End -->
-
-<!-- EnableEduThemes-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- EnableEduThemes-Editable-End -->
-
-<!-- EnableEduThemes-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- EnableEduThemes-DFProperties-End -->
-
-<!-- EnableEduThemes-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Disabled. |
-| 1 | Enabled. |
-<!-- EnableEduThemes-AllowedValues-End -->
-
-<!-- EnableEduThemes-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- EnableEduThemes-Examples-End -->
-
-<!-- EnableEduThemes-End -->
-
-<!-- IsEducationEnvironment-Begin -->
-## IsEducationEnvironment
-
-<!-- IsEducationEnvironment-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
-<!-- IsEducationEnvironment-Applicability-End -->
-
-<!-- IsEducationEnvironment-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment
-```
-<!-- IsEducationEnvironment-OmaUri-End -->
-
-<!-- IsEducationEnvironment-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting allows tenant to control whether to declare this OS as an education environment
-<!-- IsEducationEnvironment-Description-End -->
-
-<!-- IsEducationEnvironment-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- IsEducationEnvironment-Editable-End -->
-
-<!-- IsEducationEnvironment-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- IsEducationEnvironment-DFProperties-End -->
-
-<!-- IsEducationEnvironment-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Disabled. |
-| 1 | Enabled. |
-<!-- IsEducationEnvironment-AllowedValues-End -->
-
-<!-- IsEducationEnvironment-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- IsEducationEnvironment-Examples-End -->
-
-<!-- IsEducationEnvironment-End -->
 
 <!-- AllowGraphingCalculator-Begin -->
 ## AllowGraphingCalculator
@@ -135,7 +37,9 @@ This policy setting allows tenant to control whether to declare this OS as an ed
 
 <!-- AllowGraphingCalculator-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app. If you enable or don't configure this policy setting, users will be able to access graphing functionality.
+This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app.
+- If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app.
+- If you enable or don't configure this policy setting, users will be able to access graphing functionality.
 <!-- AllowGraphingCalculator-Description-End -->
 
 <!-- AllowGraphingCalculator-Editable-Begin -->
@@ -221,6 +125,106 @@ The policy value is expected to be the name (network host name) of an installed 
 
 <!-- DefaultPrinterName-End -->
 
+<!-- EnableEduThemes-Begin -->
+## EnableEduThemes
+
+<!-- EnableEduThemes-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+<!-- EnableEduThemes-Applicability-End -->
+
+<!-- EnableEduThemes-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Education/EnableEduThemes
+```
+<!-- EnableEduThemes-OmaUri-End -->
+
+<!-- EnableEduThemes-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to control whether EDU-specific theme packs are available in Settings > Personalization.
+- If you disable or don't configure this policy setting, EDU-specific theme packs will not be included.
+- If you enable this policy setting, users will be able to personalize their devices with EDU-specific themes.
+<!-- EnableEduThemes-Description-End -->
+
+<!-- EnableEduThemes-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableEduThemes-Editable-End -->
+
+<!-- EnableEduThemes-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableEduThemes-DFProperties-End -->
+
+<!-- EnableEduThemes-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- EnableEduThemes-AllowedValues-End -->
+
+<!-- EnableEduThemes-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableEduThemes-Examples-End -->
+
+<!-- EnableEduThemes-End -->
+
+<!-- IsEducationEnvironment-Begin -->
+## IsEducationEnvironment
+
+<!-- IsEducationEnvironment-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+<!-- IsEducationEnvironment-Applicability-End -->
+
+<!-- IsEducationEnvironment-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment
+```
+<!-- IsEducationEnvironment-OmaUri-End -->
+
+<!-- IsEducationEnvironment-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows tenant to control whether to declare this OS as an education environment
+<!-- IsEducationEnvironment-Description-End -->
+
+<!-- IsEducationEnvironment-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IsEducationEnvironment-Editable-End -->
+
+<!-- IsEducationEnvironment-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- IsEducationEnvironment-DFProperties-End -->
+
+<!-- IsEducationEnvironment-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- IsEducationEnvironment-AllowedValues-End -->
+
+<!-- IsEducationEnvironment-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IsEducationEnvironment-Examples-End -->
+
+<!-- IsEducationEnvironment-End -->
+
 <!-- PreventAddingNewPrinters-Begin -->
 ## PreventAddingNewPrinters
 
@@ -240,7 +244,7 @@ The policy value is expected to be the name (network host name) of an installed 
 <!-- Description-Source-ADMX -->
 Prevents users from using familiar methods to add local and network printers.
 
-If this policy setting is enabled, it removes the Add Printer option from the Start menu. (To find the Add Printer option, click Start, click Printers, and then click Add Printer.) This setting also removes Add Printer from the Printers folder in Control Panel.
+- If this policy setting is enabled, it removes the Add Printer option from the Start menu. (To find the Add Printer option, click Start, click Printers, and then click Add Printer.) This setting also removes Add Printer from the Printers folder in Control Panel.
 
 Also, users cannot add printers by dragging a printer icon into the Printers folder. If they try, a message appears explaining that the setting prevents the action.
 
@@ -248,7 +252,8 @@ However, this setting does not prevent users from using the Add Hardware Wizard 
 
 This setting does not delete printers that users have already added. However, if users have not added a printer when this setting is applied, they cannot print.
 
-Note: You can use printer permissions to restrict the use of printers without specifying a setting. In the Printers folder, right-click a printer, click Properties, and then click the Security tab.
+> [!NOTE]
+> You can use printer permissions to restrict the use of printers without specifying a setting. In the Printers folder, right-click a printer, click Properties, and then click the Security tab.
 
 If this policy is disabled, or not configured, users can add printers using the methods described above.
 <!-- PreventAddingNewPrinters-Description-End -->

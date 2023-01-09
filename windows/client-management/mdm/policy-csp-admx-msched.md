@@ -1,10 +1,10 @@
 ---
 title: ADMX_msched Policy CSP
-description: Learn more about the ADMX_msched Area in Policy CSP
+description: Learn more about the ADMX_msched Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_msched
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -48,9 +46,9 @@ This policy setting allows you to configure Automatic Maintenance activation bou
 
 The maintenance activation boundary is the daily schduled time at which Automatic Maintenance starts
 
-If you enable this policy setting, this will override the default daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel.
+- If you enable this policy setting, this will override the default daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel.
 
-If you disable or do not configure this policy setting, the daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
+- If you disable or do not configure this policy setting, the daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
 <!-- ActivationBoundaryPolicy-Description-End -->
 
 <!-- ActivationBoundaryPolicy-Editable-Begin -->
@@ -68,13 +66,13 @@ If you disable or do not configure this policy setting, the daily scheduled time
 
 <!-- ActivationBoundaryPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | ActivationBoundary |
+| Name | ActivationBoundaryPolicy |
 | Friendly Name | Automatic Maintenance Activation Boundary |
 | Location | Computer Configuration |
 | Path | Windows Components > Maintenance Scheduler |
@@ -109,11 +107,11 @@ This policy setting allows you to configure Automatic Maintenance activation ran
 
 The maintenance random delay is the amount of time up to which Automatic Maintenance will delay starting from its Activation Boundary.
 
-If you enable this policy setting, Automatic Maintenance will delay starting from its Activation Boundary, by upto this time.
+- If you enable this policy setting, Automatic Maintenance will delay starting from its Activation Boundary, by upto this time.
 
-If you do not configure this policy setting, 4 hour random delay will be applied to Automatic Maintenance.
+- If you do not configure this policy setting, 4 hour random delay will be applied to Automatic Maintenance.
 
-If you disable this policy setting, no random delay will be applied to Automatic Maintenance.
+- If you disable this policy setting, no random delay will be applied to Automatic Maintenance.
 <!-- RandomDelayPolicy-Description-End -->
 
 <!-- RandomDelayPolicy-Editable-Begin -->
@@ -131,13 +129,13 @@ If you disable this policy setting, no random delay will be applied to Automatic
 
 <!-- RandomDelayPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | RandomDelay |
+| Name | RandomDelayPolicy |
 | Friendly Name | Automatic Maintenance Random Delay |
 | Location | Computer Configuration |
 | Path | Windows Components > Maintenance Scheduler |

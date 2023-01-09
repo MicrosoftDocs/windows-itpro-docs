@@ -1,10 +1,10 @@
 ---
 title: Kerberos Policy CSP
-description: Learn more about the Kerberos Area in Policy CSP
+description: Learn more about the Kerberos Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,9 +44,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting defines the list of trusting forests that the Kerberos client searches when attempting to resolve two-part service principal names (SPNs).
 
-If you enable this policy setting, the Kerberos client searches the forests in this list, if it is unable to resolve a two-part SPN. If a match is found, the Kerberos client requests a referral ticket to the appropriate domain.
+- If you enable this policy setting, the Kerberos client searches the forests in this list, if it is unable to resolve a two-part SPN. If a match is found, the Kerberos client requests a referral ticket to the appropriate domain.
 
-If you disable or do not configure this policy setting, the Kerberos client does not search the listed forests to resolve the SPN. If the Kerberos client is unable to resolve the SPN because the name is not found, NTLM authentication might be used.
+- If you disable or do not configure this policy setting, the Kerberos client does not search the listed forests to resolve the SPN. If the Kerberos client is unable to resolve the SPN because the name is not found, NTLM authentication might be used.
 <!-- AllowForestSearchOrder-Description-End -->
 
 <!-- AllowForestSearchOrder-Editable-Begin -->
@@ -104,9 +104,9 @@ If you disable or do not configure this policy setting, the Kerberos client does
 <!-- Description-Source-ADMX -->
 This policy setting allows retrieving the Azure AD Kerberos Ticket Granting Ticket during logon.
 
-If you disable or do not configure this policy setting, the Azure AD Kerberos Ticket Granting Ticket is not retrieved during logon.
+- If you disable or do not configure this policy setting, the Azure AD Kerberos Ticket Granting Ticket is not retrieved during logon.
 
-If you enable this policy setting, the Azure AD Kerberos Ticket Granting Ticket is retrieved during logon.
+- If you enable this policy setting, the Azure AD Kerberos Ticket Granting Ticket is retrieved during logon.
 <!-- CloudKerberosTicketRetrievalEnabled-Description-End -->
 
 <!-- CloudKerberosTicketRetrievalEnabled-Editable-Begin -->
@@ -170,9 +170,9 @@ If you enable this policy setting, the Azure AD Kerberos Ticket Granting Ticket 
 <!-- KerberosClientSupportsClaimsCompoundArmor-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting controls whether a device will request claims and compound authentication for Dynamic Access Control and Kerberos armoring using Kerberos authentication with domains that support these features.
-If you enable this policy setting, the client computers will request claims, provide information required to create compounded authentication and armor Kerberos messages in domains which support claims and compound authentication for Dynamic Access Control and Kerberos armoring.
+- If you enable this policy setting, the client computers will request claims, provide information required to create compounded authentication and armor Kerberos messages in domains which support claims and compound authentication for Dynamic Access Control and Kerberos armoring.
 
-If you disable or do not configure this policy setting, the client devices will not request claims, provide information required to create compounded authentication and armor Kerberos messages. Services hosted on the device will not be able to retrieve claims for clients using Kerberos protocol transition.
+- If you disable or do not configure this policy setting, the client devices will not request claims, provide information required to create compounded authentication and armor Kerberos messages. Services hosted on the device will not be able to retrieve claims for clients using Kerberos protocol transition.
 <!-- KerberosClientSupportsClaimsCompoundArmor-Description-End -->
 
 <!-- KerberosClientSupportsClaimsCompoundArmor-Editable-Begin -->
@@ -230,17 +230,17 @@ If you disable or do not configure this policy setting, the client devices will 
 <!-- Description-Source-ADMX -->
 This policy setting controls hash or checksum algorithms used by the Kerberos client when performing certificate authentication.
 
-If you enable this policy, you will be able to configure one of four states for each algorithm:
+- If you enable this policy, you will be able to configure one of four states for each algorithm:
 
-- “Default” sets the algorithm to the recommended state.
+- "Default" sets the algorithm to the recommended state.
 
-- “Supported” enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
+- "Supported" enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
 
-- “Audited” enables usage of the algorithm and reports an event (ID 206) every time it is used. This state is intended to verify that the algorithm is not being used and can be safely disabled.
+- "Audited" enables usage of the algorithm and reports an event (ID 206) every time it is used. This state is intended to verify that the algorithm is not being used and can be safely disabled.
 
-- “Not Supported” disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
+- "Not Supported" disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
 
-If you disable or do not configure this policy, each algorithm will assume the “Default” state.
+- If you disable or do not configure this policy, each algorithm will assume the "Default" state.
 More information about the hash and checksum algorithms supported by the Windows Kerberos client and their default states can be found at <https://go.microsoft.com/fwlink/?linkid=2169037>.
 
 Events generated by this configuration: 205, 206, 207, 208.
@@ -265,8 +265,8 @@ Events generated by this configuration: 205, 206, 207, 208.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled / Not Configured |
-| 1 | Enabled |
+| 0 (Default) | Disabled / Not Configured. |
+| 1 | Enabled. |
 <!-- PKInitHashAlgorithmConfiguration-AllowedValues-End -->
 
 <!-- PKInitHashAlgorithmConfiguration-GpMapping-Begin -->
@@ -336,10 +336,10 @@ If you don't configure this policy, the SHA1 algorithm will assume the **Default
 
 | Value | Description |
 |:--|:--|
-| 0 | Not Supported |
-| 1 (Default) | Default |
-| 2 | Audited |
-| 3 | Supported |
+| 0 | Not Supported. |
+| 1 (Default) | Default. |
+| 2 | Audited. |
+| 3 | Supported. |
 <!-- PKInitHashAlgorithmSHA1-AllowedValues-End -->
 
 <!-- PKInitHashAlgorithmSHA1-GpMapping-Begin -->
@@ -404,10 +404,10 @@ If you don't configure this policy, the SHA256 algorithm will assume the **Defau
 
 | Value | Description |
 |:--|:--|
-| 0 | Not Supported |
-| 1 (Default) | Default |
-| 2 | Audited |
-| 3 | Supported |
+| 0 | Not Supported. |
+| 1 (Default) | Default. |
+| 2 | Audited. |
+| 3 | Supported. |
 <!-- PKInitHashAlgorithmSHA256-AllowedValues-End -->
 
 <!-- PKInitHashAlgorithmSHA256-GpMapping-Begin -->
@@ -472,10 +472,10 @@ If you don't configure this policy, the SHA384 algorithm will assume the **Defau
 
 | Value | Description |
 |:--|:--|
-| 0 | Not Supported |
-| 1 (Default) | Default |
-| 2 | Audited |
-| 3 | Supported |
+| 0 | Not Supported. |
+| 1 (Default) | Default. |
+| 2 | Audited. |
+| 3 | Supported. |
 <!-- PKInitHashAlgorithmSHA384-AllowedValues-End -->
 
 <!-- PKInitHashAlgorithmSHA384-GpMapping-Begin -->
@@ -540,10 +540,10 @@ If you don't configure this policy, the SHA512 algorithm will assume the **Defau
 
 | Value | Description |
 |:--|:--|
-| 0 | Not Supported |
-| 1 (Default) | Default |
-| 2 | Audited |
-| 3 | Supported |
+| 0 | Not Supported. |
+| 1 (Default) | Default. |
+| 2 | Audited. |
+| 3 | Supported. |
 <!-- PKInitHashAlgorithmSHA512-AllowedValues-End -->
 
 <!-- PKInitHashAlgorithmSHA512-GpMapping-Begin -->
@@ -583,12 +583,12 @@ This policy setting controls whether a computer requires that Kerberos message e
 > [!WARNING]
 > When a domain does not support Kerberos armoring by enabling "Support Dynamic Access Control and Kerberos armoring", then all authentication for all its users will fail from computers with this policy setting enabled.
 
-If you enable this policy setting, the client computers in the domain enforce the use of Kerberos armoring in only authentication service (AS) and ticket-granting service (TGS) message exchanges with the domain controllers.
+- If you enable this policy setting, the client computers in the domain enforce the use of Kerberos armoring in only authentication service (AS) and ticket-granting service (TGS) message exchanges with the domain controllers.
 
 > [!NOTE]
 > The Kerberos Group Policy "Kerberos client support for claims, compound authentication and Kerberos armoring" must also be enabled to support Kerberos armoring.
 
-If you disable or do not configure this policy setting, the client computers in the domain enforce the use of Kerberos armoring when possible as supported by the target domain.
+- If you disable or do not configure this policy setting, the client computers in the domain enforce the use of Kerberos armoring when possible as supported by the target domain.
 <!-- RequireKerberosArmoring-Description-End -->
 
 <!-- RequireKerberosArmoring-Editable-Begin -->
@@ -646,9 +646,9 @@ If you disable or do not configure this policy setting, the client computers in 
 <!-- Description-Source-ADMX -->
 This policy setting controls the Kerberos client's behavior in validating the KDC certificate for smart card and system certificate logon.
 
-If you enable this policy setting, the Kerberos client requires that the KDC's X.509 certificate contains the KDC key purpose object identifier in the Extended Key Usage (EKU) extensions, and that the KDC's X.509 certificate contains a dNSName subjectAltName (SAN) extension that matches the DNS name of the domain. If the computer is joined to a domain, the Kerberos client requires that the KDC's X.509 certificate must be signed by a Certificate Authority (CA) in the NTAuth store. If the computer is not joined to a domain, the Kerberos client allows the root CA certificate on the smart card to be used in the path validation of the KDC's X.509 certificate.
+- If you enable this policy setting, the Kerberos client requires that the KDC's X.509 certificate contains the KDC key purpose object identifier in the Extended Key Usage (EKU) extensions, and that the KDC's X.509 certificate contains a dNSName subjectAltName (SAN) extension that matches the DNS name of the domain. If the computer is joined to a domain, the Kerberos client requires that the KDC's X.509 certificate must be signed by a Certificate Authority (CA) in the NTAuth store. If the computer is not joined to a domain, the Kerberos client allows the root CA certificate on the smart card to be used in the path validation of the KDC's X.509 certificate.
 
-If you disable or do not configure this policy setting, the Kerberos client requires only that the KDC certificate contain the Server Authentication purpose object identifier in the EKU extensions which can be issued to any server.
+- If you disable or do not configure this policy setting, the Kerberos client requires only that the KDC certificate contain the Server Authentication purpose object identifier in the EKU extensions which can be issued to any server.
 <!-- RequireStrictKDCValidation-Description-End -->
 
 <!-- RequireStrictKDCValidation-Editable-Begin -->
@@ -708,9 +708,9 @@ This policy setting allows you to set the value returned to applications which r
 
 The size of the context token buffer determines the maximum size of SSPI context tokens an application expects and allocates. Depending upon authentication request processing and group memberships, the buffer might be smaller than the actual size of the SSPI context token.
 
-If you enable this policy setting, the Kerberos client or server uses the configured value, or the locally allowed maximum value, whichever is smaller.
+- If you enable this policy setting, the Kerberos client or server uses the configured value, or the locally allowed maximum value, whichever is smaller.
 
-If you disable or do not configure this policy setting, the Kerberos client or server uses the locally configured value or the default value.
+- If you disable or do not configure this policy setting, the Kerberos client or server uses the locally configured value or the default value.
 
 > [!NOTE]
 > This policy setting configures the existing MaxTokenSize registry value in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters, which was added in Windows XP and Windows Server 2003, with a default value of 12,000 bytes. Beginning with Windows 8 the default is 48,000 bytes. Due to HTTP's base64 encoding of authentication context tokens, it is not advised to set this value more than 48,000 bytes.

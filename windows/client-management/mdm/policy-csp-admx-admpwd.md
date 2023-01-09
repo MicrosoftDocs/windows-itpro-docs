@@ -1,10 +1,10 @@
 ---
 title: ADMX_AdmPwd Policy CSP
-description: Learn more about the ADMX_AdmPwd Area in Policy CSP
+description: Learn more about the ADMX_AdmPwd Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/20/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_AdmPwd
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -63,10 +61,16 @@ If you disable or not configure this setting, local administrator password is NO
 <!-- POL_AdmPwd-DFProperties-End -->
 
 <!-- POL_AdmPwd-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!-- Unknown -->
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | POL_AdmPwd |
+| ADMX File Name | AdmPwd.admx |
 <!-- POL_AdmPwd-AdmxBacked-End -->
 
 <!-- POL_AdmPwd-Examples-Begin -->
@@ -111,10 +115,16 @@ When you disable or don't configure this setting, password expiration time may b
 <!-- POL_AdmPwd_AdminName-DFProperties-End -->
 
 <!-- POL_AdmPwd_AdminName-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!-- Unknown -->
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | POL_AdmPwd_AdminName |
+| ADMX File Name | AdmPwd.admx |
 <!-- POL_AdmPwd_AdminName-AdmxBacked-End -->
 
 <!-- POL_AdmPwd_AdminName-Examples-Begin -->
@@ -159,10 +169,16 @@ When you disable or don't configure this setting, password expiration time may b
 <!-- POL_AdmPwd_DontAllowPwdExpirationBehindPolicy-DFProperties-End -->
 
 <!-- POL_AdmPwd_DontAllowPwdExpirationBehindPolicy-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!-- Unknown -->
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | POL_AdmPwd_DontAllowPwdExpirationBehindPolicy |
+| ADMX File Name | AdmPwd.admx |
 <!-- POL_AdmPwd_DontAllowPwdExpirationBehindPolicy-AdmxBacked-End -->
 
 <!-- POL_AdmPwd_DontAllowPwdExpirationBehindPolicy-Examples-Begin -->
@@ -209,10 +225,16 @@ If you disable or not configure this setting, local administrator password is NO
 <!-- POL_AdmPwd_Enabled-DFProperties-End -->
 
 <!-- POL_AdmPwd_Enabled-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!-- Unknown -->
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | POL_AdmPwd_Enabled |
+| ADMX File Name | AdmPwd.admx |
 <!-- POL_AdmPwd_Enabled-AdmxBacked-End -->
 
 <!-- POL_AdmPwd_Enabled-Examples-Begin -->

@@ -1,10 +1,10 @@
 ---
 title: LocalPoliciesSecurityOptions Policy CSP
-description: Learn more about the LocalPoliciesSecurityOptions Area in Policy CSP
+description: Learn more about the LocalPoliciesSecurityOptions Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -39,7 +39,8 @@ ms.topic: reference
 
 <!-- Accounts_BlockMicrosoftAccounts-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting prevents users from adding new Microsoft accounts on this computer. If you select the "Users can’t add Microsoft accounts" option, users will not be able to create new Microsoft accounts on this computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise. If you select the "Users can’t add or log on with Microsoft accounts" option, existing Microsoft account users will not be able to log on to Windows. Selecting this option might make it impossible for an existing administrator on this computer to log on and manage the system. If you disable or do not configure this policy (recommended), users will be able to use Microsoft accounts with Windows.
+This policy setting prevents users from adding new Microsoft accounts on this computer. If you select the "Users can't add Microsoft accounts" option, users will not be able to create new Microsoft accounts on this computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise. If you select the "Users can't add or log on with Microsoft accounts" option, existing Microsoft account users will not be able to log on to Windows. Selecting this option might make it impossible for an existing administrator on this computer to log on and manage the system.
+- If you disable or do not configure this policy (recommended), users will be able to use Microsoft accounts with Windows.
 <!-- Accounts_BlockMicrosoftAccounts-Description-End -->
 
 <!-- Accounts_BlockMicrosoftAccounts-Editable-Begin -->
@@ -63,7 +64,7 @@ This policy setting prevents users from adding new Microsoft accounts on this co
 |:--|:--|
 | 0 (Default) | Disabled (users will be able to use Microsoft accounts with Windows). |
 | 1 | Enabled (users can't add Microsoft accounts). |
-| 3 | Users can't add or log on with Microsoft accounts |
+| 3 | Users can't add or log on with Microsoft accounts. |
 <!-- Accounts_BlockMicrosoftAccounts-AllowedValues-End -->
 
 <!-- Accounts_BlockMicrosoftAccounts-GpMapping-Begin -->
@@ -123,8 +124,8 @@ This security setting determines whether the local Administrator account is enab
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- Accounts_EnableAdministratorAccountStatus-AllowedValues-End -->
 
 <!-- Accounts_EnableAdministratorAccountStatus-GpMapping-Begin -->
@@ -184,8 +185,8 @@ This security setting determines if the Guest account is enabled or disabled. De
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- Accounts_EnableGuestAccountStatus-AllowedValues-End -->
 
 <!-- Accounts_EnableGuestAccountStatus-GpMapping-Begin -->
@@ -248,8 +249,8 @@ Accounts Limit local account use of blank passwords to console logon only This s
 
 | Value | Description |
 |:--|:--|
-| 0 | Disabled |
-| 1 (Default) | Enabled |
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
 <!-- Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly-AllowedValues-End -->
 
 <!-- Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly-GpMapping-Begin -->
@@ -456,8 +457,8 @@ Devices Allow undock without having to log on This security setting determines w
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Allow |
-| 0 | Block |
+| 1 (Default) | Allow. |
+| 0 | Block. |
 <!-- Devices_AllowUndockWithoutHavingToLogon-AllowedValues-End -->
 
 <!-- Devices_AllowUndockWithoutHavingToLogon-GpMapping-Begin -->
@@ -492,7 +493,9 @@ Devices Allow undock without having to log on This security setting determines w
 
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-Description-Begin -->
 <!-- Description-Source-DDF -->
-Devices: Prevent users from installing printer drivers when connecting to shared printers For a computer to print to a shared printer, the driver for that shared printer must be installed on the local computer. This security setting determines who is allowed to install a printer driver as part of connecting to a shared printer. If this setting is enabled, only Administrators can install a printer driver as part of connecting to a shared printer. If this setting is disabled, any user can install a printer driver as part of connecting to a shared printer. Default on servers: Enabled. Default on workstations: Disabled Notes This setting does not affect the ability to add a local printer. This setting does not affect Administrators.
+Devices: Prevent users from installing printer drivers when connecting to shared printers For a computer to print to a shared printer, the driver for that shared printer must be installed on the local computer. This security setting determines who is allowed to install a printer driver as part of connecting to a shared printer.
+- If this setting is enabled, only Administrators can install a printer driver as part of connecting to a shared printer.
+- If this setting is disabled, any user can install a printer driver as part of connecting to a shared printer. Default on servers: Enabled. Default on workstations: Disabled Notes This setting does not affect the ability to add a local printer. This setting does not affect Administrators.
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-Description-End -->
 
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-Editable-Begin -->
@@ -514,8 +517,8 @@ Devices: Prevent users from installing printer drivers when connecting to shared
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-AllowedValues-End -->
 
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-GpMapping-Begin -->
@@ -621,10 +624,10 @@ Interactive Logon:Display user information when the session is locked User displ
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | User display name, domain and user names |
-| 2 | User display name only |
-| 3 | Do not display user information |
-| 4 | Domain and user names only |
+| 1 (Default) | User display name, domain and user names. |
+| 2 | User display name only. |
+| 3 | Do not display user information. |
+| 4 | Domain and user names only. |
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-AllowedValues-End -->
 
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-GpMapping-Begin -->
@@ -681,8 +684,8 @@ Interactive logon: Don't display last signed-in This security setting determines
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled (username will be shown) |
-| 1 | Enabled (username will not be shown) |
+| 0 (Default) | Disabled (username will be shown). |
+| 1 | Enabled (username will not be shown). |
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-AllowedValues-End -->
 
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-GpMapping-Begin -->
@@ -739,8 +742,8 @@ Interactive logon: Don't display username at sign-in This security setting deter
 
 | Value | Description |
 |:--|:--|
-| 0 | Disabled (username will be shown) |
-| 1 (Default) | Enabled (username will not be shown) |
+| 0 | Disabled (username will be shown). |
+| 1 (Default) | Enabled (username will not be shown). |
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-AllowedValues-End -->
 
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-GpMapping-Begin -->
@@ -797,8 +800,8 @@ Interactive logon: Do not require CTRL+ALT+DEL This security setting determines 
 
 | Value | Description |
 |:--|:--|
-| 0 | Disabled |
-| 1 (Default) | Enabled (a user is not required to press CTRL+ALT+DEL to log on) |
+| 0 | Disabled. |
+| 1 (Default) | Enabled (a user is not required to press CTRL+ALT+DEL to log on). |
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-AllowedValues-End -->
 
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-GpMapping-Begin -->
@@ -1008,10 +1011,10 @@ Interactive logon Smart card removal behavior This security setting determines w
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | No Action |
-| 1 | Lock Workstation |
-| 2 | Force Logoff |
-| 3 | Disconnect if a Remote Desktop Services session |
+| 0 (Default) | No Action. |
+| 1 | Lock Workstation. |
+| 2 | Force Logoff. |
+| 3 | Disconnect if a Remote Desktop Services session. |
 <!-- InteractiveLogon_SmartCardRemovalBehavior-AllowedValues-End -->
 
 <!-- InteractiveLogon_SmartCardRemovalBehavior-GpMapping-Begin -->
@@ -1046,7 +1049,8 @@ Interactive logon Smart card removal behavior This security setting determines w
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-Description-Begin -->
 <!-- Description-Source-DDF -->
-Microsoft network client Digitally sign communications (always) This security setting determines whether packet signing is required by the SMB client component. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted. If this setting is enabled, the Microsoft network client will not communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server. Default Disabled
+Microsoft network client Digitally sign communications (always) This security setting determines whether packet signing is required by the SMB client component. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.
+- If this setting is enabled, the Microsoft network client will not communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server. Default Disabled
 
 > [!IMPORTANT]
 > For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set Microsoft network client Digitally sign communications (if server agrees)
@@ -1074,8 +1078,8 @@ Microsoft network client Digitally sign communications (always) This security se
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-AllowedValues-End -->
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-GpMapping-Begin -->
@@ -1110,7 +1114,8 @@ Microsoft network client Digitally sign communications (always) This security se
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-Description-Begin -->
 <!-- Description-Source-DDF -->
-Microsoft network client Digitally sign communications (if server agrees) This security setting determines whether the SMB client attempts to negotiate SMB packet signing. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB client component attempts to negotiate SMB packet signing when it connects to an SMB server. If this setting is enabled, the Microsoft network client will ask the server to perform SMB packet signing upon session setup. If packet signing has been enabled on the server, packet signing will be negotiated. If this policy is disabled, the SMB client will never negotiate SMB packet signing. Default Enabled
+Microsoft network client Digitally sign communications (if server agrees) This security setting determines whether the SMB client attempts to negotiate SMB packet signing. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB client component attempts to negotiate SMB packet signing when it connects to an SMB server.
+- If this setting is enabled, the Microsoft network client will ask the server to perform SMB packet signing upon session setup. If packet signing has been enabled on the server, packet signing will be negotiated. If this policy is disabled, the SMB client will never negotiate SMB packet signing. Default Enabled
 
 > [!NOTE]
 > All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings Microsoft network client Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference <https//go.microsoft.com/fwlink/?LinkID=787136>.
@@ -1135,8 +1140,8 @@ Microsoft network client Digitally sign communications (if server agrees) This s
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Enable |
-| 0 | Disable |
+| 1 (Default) | Enable. |
+| 0 | Disable. |
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-AllowedValues-End -->
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-GpMapping-Begin -->
@@ -1193,8 +1198,8 @@ Microsoft network client: Send unencrypted password to connect to third-party SM
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-AllowedValues-End -->
 
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-GpMapping-Begin -->
@@ -1229,7 +1234,9 @@ Microsoft network client: Send unencrypted password to connect to third-party SM
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-Description-Begin -->
 <!-- Description-Source-DDF -->
-Microsoft network server Digitally sign communications (always) This security setting determines whether packet signing is required by the SMB server component. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB client is permitted. If this setting is enabled, the Microsoft network server will not communicate with a Microsoft network client unless that client agrees to perform SMB packet signing. If this setting is disabled, SMB packet signing is negotiated between the client and server. Default Disabled for member servers. Enabled for domain controllers
+Microsoft network server Digitally sign communications (always) This security setting determines whether packet signing is required by the SMB server component. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB client is permitted.
+- If this setting is enabled, the Microsoft network server will not communicate with a Microsoft network client unless that client agrees to perform SMB packet signing.
+- If this setting is disabled, SMB packet signing is negotiated between the client and server. Default Disabled for member servers. Enabled for domain controllers
 
 > [!NOTE]
 > All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings Microsoft network client Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. Similarly, if client-side SMB signing is required, that client will not be able to establish a session with servers that do not have packet signing enabled. By default, server-side SMB signing is enabled only on domain controllers. If server-side SMB signing is enabled, SMB packet signing will be negotiated with clients that have client-side SMB signing enabled. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors
@@ -1257,8 +1264,8 @@ Microsoft network server Digitally sign communications (always) This security se
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-AllowedValues-End -->
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-GpMapping-Begin -->
@@ -1293,7 +1300,8 @@ Microsoft network server Digitally sign communications (always) This security se
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-Description-Begin -->
 <!-- Description-Source-DDF -->
-Microsoft network server Digitally sign communications (if client agrees) This security setting determines whether the SMB server will negotiate SMB packet signing with clients that request it. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB server will negotiate SMB packet signing when an SMB client requests it. If this setting is enabled, the Microsoft network server will negotiate SMB packet signing as requested by the client. That is, if packet signing has been enabled on the client, packet signing will be negotiated. If this policy is disabled, the SMB client will never negotiate SMB packet signing. Default Enabled on domain controllers only
+Microsoft network server Digitally sign communications (if client agrees) This security setting determines whether the SMB server will negotiate SMB packet signing with clients that request it. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB server will negotiate SMB packet signing when an SMB client requests it.
+- If this setting is enabled, the Microsoft network server will negotiate SMB packet signing as requested by the client. That is, if packet signing has been enabled on the client, packet signing will be negotiated. If this policy is disabled, the SMB client will never negotiate SMB packet signing. Default Enabled on domain controllers only
 
 > [!IMPORTANT]
 > For Windows 2000 servers to negotiate signing with Windows NT 4.0 clients, the following registry value must be set to 1 on the server running Windows 2000 HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecuritysignature Notes All Windows operating systems support both a client-side SMB component and a server-side SMB component. For Windows 2000 and above, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings Microsoft network client Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference <https//go.microsoft.com/fwlink/?LinkID=787136>.
@@ -1318,8 +1326,8 @@ Microsoft network server Digitally sign communications (if client agrees) This s
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-AllowedValues-End -->
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-GpMapping-Begin -->
@@ -1354,7 +1362,8 @@ Microsoft network server Digitally sign communications (if client agrees) This s
 
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network access: Allow anonymous SID/name translation This policy setting determines whether an anonymous user can request security identifier (SID) attributes for another user. If this policy is enabled, an anonymous user can request the SID attribute for another user. An anonymous user with knowledge of an administrator's SID could contact a computer that has this policy enabled and use the SID to get the administrator's name. This setting affects both the SID-to-name translation as well as the name-to-SID translation. If this policy setting is disabled, an anonymous user cannot request the SID attribute for another user. Default on workstations and member servers: Disabled. Default on domain controllers running Windows Server 2008 or later: Disabled. Default on domain controllers running Windows Server 2003 R2 or earlier: Enabled.
+Network access: Allow anonymous SID/name translation This policy setting determines whether an anonymous user can request security identifier (SID) attributes for another user. If this policy is enabled, an anonymous user can request the SID attribute for another user. An anonymous user with knowledge of an administrator's SID could contact a computer that has this policy enabled and use the SID to get the administrator's name. This setting affects both the SID-to-name translation as well as the name-to-SID translation.
+- If this policy setting is disabled, an anonymous user cannot request the SID attribute for another user. Default on workstations and member servers: Disabled. Default on domain controllers running Windows Server 2008 or later: Disabled. Default on domain controllers running Windows Server 2003 R2 or earlier: Enabled.
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Description-End -->
 
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Editable-Begin -->
@@ -1376,8 +1385,8 @@ Network access: Allow anonymous SID/name translation This policy setting determi
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-AllowedValues-End -->
 
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-GpMapping-Begin -->
@@ -1437,8 +1446,8 @@ Network access Do not allow anonymous enumeration of SAM accounts This security 
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Enabled |
-| 0 | Disabled |
+| 1 (Default) | Enabled. |
+| 0 | Disabled. |
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts-AllowedValues-End -->
 
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts-GpMapping-Begin -->
@@ -1495,8 +1504,8 @@ Network access: Do not allow anonymous enumeration of SAM accounts and shares Th
 
 | Value | Description |
 |:--|:--|
-| 1 | Enabled |
-| 0 (Default) | Disabled |
+| 1 | Enabled. |
+| 0 (Default) | Disabled. |
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-AllowedValues-End -->
 
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-GpMapping-Begin -->
@@ -1553,8 +1562,8 @@ Network access: Restrict anonymous access to Named Pipes and Shares When enabled
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Enable |
-| 0 | Disable |
+| 1 (Default) | Enable. |
+| 0 | Disable. |
 <!-- NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares-AllowedValues-End -->
 
 <!-- NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares-GpMapping-Begin -->
@@ -1637,7 +1646,9 @@ Network access: Restrict clients allowed to make remote calls to SAM This policy
 
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network security Allow Local System to use computer identity for NTLM This policy setting allows Local System services that use Negotiate to use the computer identity when reverting to NTLM authentication. If you enable this policy setting, services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error. If you disable this policy setting, services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. By default, this policy is enabled on Windows 7 and above. By default, this policy is disabled on Windows Vista. This policy is supported on at least Windows Vista or Windows Server 2008
+Network security Allow Local System to use computer identity for NTLM This policy setting allows Local System services that use Negotiate to use the computer identity when reverting to NTLM authentication.
+- If you enable this policy setting, services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.
+- If you disable this policy setting, services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. By default, this policy is enabled on Windows 7 and above. By default, this policy is disabled on Windows Vista. This policy is supported on at least Windows Vista or Windows Server 2008
 
 > [!NOTE]
 > Windows Vista or Windows Server 2008 do not expose this setting in Group Policy.
@@ -1664,8 +1675,8 @@ Network security Allow Local System to use computer identity for NTLM This polic
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Allow |
-| 0 | Block |
+| 1 (Default) | Allow. |
+| 0 | Block. |
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-AllowedValues-End -->
 
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-GpMapping-Begin -->
@@ -1722,8 +1733,8 @@ Network security: Allow PKU2U authentication requests to this computer to use on
 
 | Value | Description |
 |:--|:--|
-| 0 | Block |
-| 1 (Default) | Allow |
+| 0 | Block. |
+| 1 (Default) | Allow. |
 <!-- NetworkSecurity_AllowPKU2UAuthenticationRequests-AllowedValues-End -->
 
 <!-- NetworkSecurity_AllowPKU2UAuthenticationRequests-GpMapping-Begin -->
@@ -1786,8 +1797,8 @@ Network security Do not store LAN Manager hash value on next password change Thi
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Enable |
-| 0 | Disable |
+| 1 (Default) | Enable. |
+| 0 | Disable. |
 <!-- NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange-AllowedValues-End -->
 
 <!-- NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange-GpMapping-Begin -->
@@ -1847,8 +1858,8 @@ Network security Force logoff when logon hours expire This security setting dete
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-AllowedValues-End -->
 
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-GpMapping-Begin -->
@@ -1908,12 +1919,12 @@ Network security LAN Manager authentication level This security setting determin
 
 | Value | Description |
 |:--|:--|
-| 0 | Send LM and NTLM responses |
-| 1 | Send LM and NTLM-use NTLMv2 session security if negotiated |
-| 2 | Send LM and NTLM responses only |
-| 3 (Default) | Send LM and NTLMv2 responses only |
-| 4 | Send LM and NTLMv2 responses only. Refuse LM |
-| 5 | Send LM and NTLMv2 responses only. Refuse LM and NTLM |
+| 0 | Send LM and NTLM responses. |
+| 1 | Send LM and NTLM-use NTLMv2 session security if negotiated. |
+| 2 | Send LM and NTLM responses only. |
+| 3 (Default) | Send LM and NTLMv2 responses only. |
+| 4 | Send LM and NTLMv2 responses only. Refuse LM. |
+| 5 | Send LM and NTLMv2 responses only. Refuse LM and NTLM. |
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-AllowedValues-End -->
 
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-GpMapping-Begin -->
@@ -1970,10 +1981,10 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 
 | Value | Description |
 |:--|:--|
-| 0 | None |
-| 524288 | Require NTLMv2 session security |
-| 536870912 (Default) | Require 128-bit encryption |
-| 537395200 | Require NTLM and 128-bit encryption |
+| 0 | None. |
+| 524288 | Require NTLMv2 session security. |
+| 536870912 (Default) | Require 128-bit encryption. |
+| 537395200 | Require NTLM and 128-bit encryption. |
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-AllowedValues-End -->
 
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-GpMapping-Begin -->
@@ -2030,10 +2041,10 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 
 | Value | Description |
 |:--|:--|
-| 0 | None |
-| 524288 | Require NTLMv2 session security |
-| 536870912 (Default) | Require 128-bit encryption |
-| 537395200 | Require NTLM and 128-bit encryption |
+| 0 | None. |
+| 524288 | Require NTLMv2 session security. |
+| 536870912 (Default) | Require 128-bit encryption. |
+| 537395200 | Require NTLM and 128-bit encryption. |
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers-AllowedValues-End -->
 
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers-GpMapping-Begin -->
@@ -2068,7 +2079,8 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the "Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers" policy setting is configured. If you configure this policy setting, you can define a list of remote servers to which clients are allowed to use NTLM authentication. If you do not configure this policy setting, no exceptions will be applied. The naming format for servers on this exception list is the fully qualified domain name (FQDN) or NetBIOS server name used by the application, listed one per line. To ensure exceptions the name used by all applications needs to be in the list, and to ensure an exception is accurate, the server name should be listed in both naming formats . A single asterisk (*) can be used anywhere in the string as a wildcard character.
+Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the "Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers" policy setting is configured. If you configure this policy setting, you can define a list of remote servers to which clients are allowed to use NTLM authentication.
+- If you do not configure this policy setting, no exceptions will be applied. The naming format for servers on this exception list is the fully qualified domain name (FQDN) or NetBIOS server name used by the application, listed one per line. To ensure exceptions the name used by all applications needs to be in the list, and to ensure an exception is accurate, the server name should be listed in both naming formats . A single asterisk (*) can be used anywhere in the string as a wildcard character.
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-Description-End -->
 
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-Editable-Begin -->
@@ -2142,9 +2154,9 @@ Network security Restrict NTLM Audit Incoming NTLM Traffic This policy setting a
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disable |
-| 1 | Enable auditing for domain accounts |
-| 2 | Enable auditing for all accounts |
+| 0 (Default) | Disable. |
+| 1 | Enable auditing for domain accounts. |
+| 2 | Enable auditing for all accounts. |
 <!-- NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic-AllowedValues-End -->
 
 <!-- NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic-GpMapping-Begin -->
@@ -2204,9 +2216,9 @@ Network security Restrict NTLM Incoming NTLM traffic This policy setting allows 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Allow all |
-| 1 | Deny all domain accounts |
-| 2 | Deny all accounts |
+| 0 (Default) | Allow all. |
+| 1 | Deny all domain accounts. |
+| 2 | Deny all accounts. |
 <!-- NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic-AllowedValues-End -->
 
 <!-- NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic-GpMapping-Begin -->
@@ -2266,9 +2278,9 @@ Network security Restrict NTLM Outgoing NTLM traffic to remote servers This poli
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Allow all |
-| 1 | Deny all domain accounts |
-| 2 | Deny all accounts |
+| 0 (Default) | Allow all. |
+| 1 | Deny all domain accounts. |
+| 2 | Deny all accounts. |
 <!-- NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers-AllowedValues-End -->
 
 <!-- NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers-GpMapping-Begin -->
@@ -2325,8 +2337,8 @@ Shutdown: Allow system to be shut down without having to log on This security se
 
 | Value | Description |
 |:--|:--|
-| 0 | disabled |
-| 1 (Default) | enabled (allow system to be shut down without having to log on) |
+| 0 | Disabled. |
+| 1 (Default) | Enabled (allow system to be shut down without having to log on). |
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-AllowedValues-End -->
 
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-GpMapping-Begin -->
@@ -2361,7 +2373,8 @@ Shutdown: Allow system to be shut down without having to log on This security se
 
 <!-- Shutdown_ClearVirtualMemoryPageFile-Description-Begin -->
 <!-- Description-Source-DDF -->
-Shutdown: Clear virtual memory pagefile This security setting determines whether the virtual memory pagefile is cleared when the system is shut down. Virtual memory support uses a system pagefile to swap pages of memory to disk when they are not used. On a running system, this pagefile is opened exclusively by the operating system, and it is well protected. However, systems that are configured to allow booting to other operating systems might have to make sure that the system pagefile is wiped clean when this system shuts down. This ensures that sensitive information from process memory that might go into the pagefile is not available to an unauthorized user who manages to directly access the pagefile. When this policy is enabled, it causes the system pagefile to be cleared upon clean shutdown. If you enable this security option, the hibernation file (hiberfil.sys) is also zeroed out when hibernation is disabled. Default: Disabled.
+Shutdown: Clear virtual memory pagefile This security setting determines whether the virtual memory pagefile is cleared when the system is shut down. Virtual memory support uses a system pagefile to swap pages of memory to disk when they are not used. On a running system, this pagefile is opened exclusively by the operating system, and it is well protected. However, systems that are configured to allow booting to other operating systems might have to make sure that the system pagefile is wiped clean when this system shuts down. This ensures that sensitive information from process memory that might go into the pagefile is not available to an unauthorized user who manages to directly access the pagefile. When this policy is enabled, it causes the system pagefile to be cleared upon clean shutdown.
+- If you enable this security option, the hibernation file (hiberfil.sys) is also zeroed out when hibernation is disabled. Default: Disabled.
 <!-- Shutdown_ClearVirtualMemoryPageFile-Description-End -->
 
 <!-- Shutdown_ClearVirtualMemoryPageFile-Editable-Begin -->
@@ -2383,8 +2396,8 @@ Shutdown: Clear virtual memory pagefile This security setting determines whether
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- Shutdown_ClearVirtualMemoryPageFile-AllowedValues-End -->
 
 <!-- Shutdown_ClearVirtualMemoryPageFile-GpMapping-Begin -->
@@ -2419,7 +2432,7 @@ Shutdown: Clear virtual memory pagefile This security setting determines whether
 
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop. This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user. • Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop. • Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.
+User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop. This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user. - Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop. - Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Description-End -->
 
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Editable-Begin -->
@@ -2441,8 +2454,8 @@ User Account Control: Allow UIAccess applications to prompt for elevation withou
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | disabled |
-| 1 | enabled (allow UIAccess applications to prompt for elevation without using the secure desktop) |
+| 0 (Default) | Disabled. |
+| 1 | Enabled (allow UIAccess applications to prompt for elevation without using the secure desktop). |
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-AllowedValues-End -->
 
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-GpMapping-Begin -->
@@ -2477,10 +2490,10 @@ User Account Control: Allow UIAccess applications to prompt for elevation withou
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode This policy setting controls the behavior of the elevation prompt for administrators. The options are • Elevate without prompting Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials
+User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode This policy setting controls the behavior of the elevation prompt for administrators. The options are - Elevate without prompting Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials
 
 > [!NOTE]
-> Use this option only in the most constrained environments. • Prompt for credentials on the secure desktop When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. • Prompt for consent on the secure desktop When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. • Prompt for credentials When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. • Prompt for consent When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. • Prompt for consent for non-Windows binaries (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+> Use this option only in the most constrained environments. - Prompt for credentials on the secure desktop When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. - Prompt for consent on the secure desktop When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. - Prompt for credentials When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. - Prompt for consent When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. - Prompt for consent for non-Windows binaries (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-Description-End -->
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-Editable-Begin -->
@@ -2502,12 +2515,12 @@ User Account Control Behavior of the elevation prompt for administrators in Admi
 
 | Value | Description |
 |:--|:--|
-| 0 | Elevate without prompting |
-| 1 | Prompt for credentials on the secure desktop |
-| 2 | Prompt for consent on the secure desktop |
-| 3 | Prompt for credentials |
-| 4 | Prompt for consent |
-| 5 (Default) | Prompt for consent for non-Windows binaries |
+| 0 | Elevate without prompting. |
+| 1 | Prompt for credentials on the secure desktop. |
+| 2 | Prompt for consent on the secure desktop. |
+| 3 | Prompt for credentials. |
+| 4 | Prompt for consent. |
+| 5 (Default) | Prompt for consent for non-Windows binaries. |
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-AllowedValues-End -->
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-GpMapping-Begin -->
@@ -2542,7 +2555,7 @@ User Account Control Behavior of the elevation prompt for administrators in Admi
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Behavior of the elevation prompt for standard users This policy setting controls the behavior of the elevation prompt for standard users. The options are: • Prompt for credentials: (Default) When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. • Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls. • Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+User Account Control: Behavior of the elevation prompt for standard users This policy setting controls the behavior of the elevation prompt for standard users. The options are: - Prompt for credentials: (Default) When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. - Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls. - Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-Description-End -->
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-Editable-Begin -->
@@ -2564,9 +2577,9 @@ User Account Control: Behavior of the elevation prompt for standard users This p
 
 | Value | Description |
 |:--|:--|
-| 0 | Automatically deny elevation requests |
-| 1 | Prompt for credentials on the secure desktop |
-| 3 (Default) | Prompt for credentials |
+| 0 | Automatically deny elevation requests. |
+| 1 | Prompt for credentials on the secure desktop. |
+| 3 (Default) | Prompt for credentials. |
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-AllowedValues-End -->
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-GpMapping-Begin -->
@@ -2623,8 +2636,8 @@ User Account Control: Detect application installations and prompt for elevation 
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Enable |
-| 0 | Disable |
+| 1 (Default) | Enable. |
+| 0 | Disable. |
 <!-- UserAccountControl_DetectApplicationInstallationsAndPromptForElevation-AllowedValues-End -->
 
 <!-- UserAccountControl_DetectApplicationInstallationsAndPromptForElevation-GpMapping-Begin -->
@@ -2659,7 +2672,7 @@ User Account Control: Detect application installations and prompt for elevation 
 
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Only elevate executable files that are signed and validated This policy setting enforces public key infrastructure (PKI) signature checks for any interactive applications that request elevation of privilege. Enterprise administrators can control which applications are allowed to run by adding certificates to the Trusted Publishers certificate store on local computers. The options are: • Enabled: Enforces the PKI certification path validation for a given executable file before it is permitted to run. • Disabled: (Default) Does not enforce PKI certification path validation before a given executable file is permitted to run.
+User Account Control: Only elevate executable files that are signed and validated This policy setting enforces public key infrastructure (PKI) signature checks for any interactive applications that request elevation of privilege. Enterprise administrators can control which applications are allowed to run by adding certificates to the Trusted Publishers certificate store on local computers. The options are: - Enabled: Enforces the PKI certification path validation for a given executable file before it is permitted to run. - Disabled: (Default) Does not enforce PKI certification path validation before a given executable file is permitted to run.
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Description-End -->
 
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Editable-Begin -->
@@ -2717,7 +2730,7 @@ User Account Control: Only elevate executable files that are signed and validate
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - …\Program Files\, including subfolders - …\Windows\system32\ - …\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are: • Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity. • Disabled: An application runs with UIAccess integrity even if it does not reside in a secure location in the file system.
+User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - ...\Program Files\, including subfolders - ...\Windows\system32\ - ...\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are: - Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity. - Disabled: An application runs with UIAccess integrity even if it does not reside in a secure location in the file system.
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-End -->
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Editable-Begin -->
@@ -2775,7 +2788,7 @@ User Account Control: Only elevate UIAccess applications that are installed in s
 
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control Turn on Admin Approval Mode This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer. The options are • Enabled (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. • Disabled Admin Approval Mode and all related UAC policy settings are disabled
+User Account Control Turn on Admin Approval Mode This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer. The options are - Enabled (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. - Disabled Admin Approval Mode and all related UAC policy settings are disabled
 
 > [!NOTE]
 > If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
@@ -2800,8 +2813,8 @@ User Account Control Turn on Admin Approval Mode This policy setting controls th
 
 | Value | Description |
 |:--|:--|
-| 0 | Disabled |
-| 1 (Default) | Enabled |
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-AllowedValues-End -->
 
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-GpMapping-Begin -->
@@ -2836,7 +2849,7 @@ User Account Control Turn on Admin Approval Mode This policy setting controls th
 
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Switch to the secure desktop when prompting for elevation This policy setting controls whether the elevation request prompt is displayed on the interactive user's desktop or the secure desktop. The options are: • Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users. • Disabled: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.
+User Account Control: Switch to the secure desktop when prompting for elevation This policy setting controls whether the elevation request prompt is displayed on the interactive user's desktop or the secure desktop. The options are: - Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users. - Disabled: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-Description-End -->
 
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-Editable-Begin -->
@@ -2858,8 +2871,8 @@ User Account Control: Switch to the secure desktop when prompting for elevation 
 
 | Value | Description |
 |:--|:--|
-| 0 | Disabled |
-| 1 (Default) | Enabled |
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-AllowedValues-End -->
 
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-GpMapping-Begin -->
@@ -2894,7 +2907,7 @@ User Account Control: Switch to the secure desktop when prompting for elevation 
 
 <!-- UserAccountControl_UseAdminApprovalMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Use Admin Approval Mode for the built-in Administrator account This policy setting controls the behavior of Admin Approval Mode for the built-in Administrator account. The options are: • Enabled: The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation. • Disabled: (Default) The built-in Administrator account runs all applications with full administrative privilege.
+User Account Control: Use Admin Approval Mode for the built-in Administrator account This policy setting controls the behavior of Admin Approval Mode for the built-in Administrator account. The options are: - Enabled: The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation. - Disabled: (Default) The built-in Administrator account runs all applications with full administrative privilege.
 <!-- UserAccountControl_UseAdminApprovalMode-Description-End -->
 
 <!-- UserAccountControl_UseAdminApprovalMode-Editable-Begin -->
@@ -2916,8 +2929,8 @@ User Account Control: Use Admin Approval Mode for the built-in Administrator acc
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- UserAccountControl_UseAdminApprovalMode-AllowedValues-End -->
 
 <!-- UserAccountControl_UseAdminApprovalMode-GpMapping-Begin -->
@@ -2952,7 +2965,7 @@ User Account Control: Use Admin Approval Mode for the built-in Administrator acc
 
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Virtualize file and registry write failures to per-user locations This policy setting controls whether application write failures are redirected to defined registry and file system locations. This policy setting mitigates applications that run as administrator and write run-time application data to %ProgramFiles%, %Windir%, %Windir%\system32, or HKLM\Software. The options are: • Enabled: (Default) Application write failures are redirected at run time to defined user locations for both the file system and registry. • Disabled: Applications that write data to protected locations fail.
+User Account Control: Virtualize file and registry write failures to per-user locations This policy setting controls whether application write failures are redirected to defined registry and file system locations. This policy setting mitigates applications that run as administrator and write run-time application data to %ProgramFiles%, %Windir%, %Windir%\system32, or HKLM\Software. The options are: - Enabled: (Default) Application write failures are redirected at run time to defined user locations for both the file system and registry. - Disabled: Applications that write data to protected locations fail.
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-Description-End -->
 
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-Editable-Begin -->
@@ -2974,8 +2987,8 @@ User Account Control: Virtualize file and registry write failures to per-user lo
 
 | Value | Description |
 |:--|:--|
-| 0 | Disabled |
-| 1 (Default) | Enabled |
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-AllowedValues-End -->
 
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-GpMapping-Begin -->

@@ -1,10 +1,10 @@
 ---
 title: WebThreatDefense Policy CSP
-description: Learn more about the WebThreatDefense Area in Policy CSP
+description: Learn more about the WebThreatDefense Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/07/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -61,8 +61,8 @@ Configures Enhanced Phishing Protection notifications to allow to capture the su
 
 | Value | Description |
 |:--|:--|
-| 0 | Disabled |
-| 1 (Default) | Enabled |
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
 <!-- CaptureThreatWindow-AllowedValues-End -->
 
 <!-- CaptureThreatWindow-GpMapping-Begin -->
@@ -99,9 +99,9 @@ Configures Enhanced Phishing Protection notifications to allow to capture the su
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Enhanced Phishing Protection in Microsoft Defender SmartScreen warns your users if they type their work or school password into one of the following malicious scenarios: into a reported phishing site, into a Microsoft login URL with an invalid certificate, or into an application connecting to either a reported phishing site or a Microsoft login URL with an invalid certificate.
 
-If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen warns your users if they type their work or school password into one of the malicious scenarios described above and encourages them to change their password.
+- If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen warns your users if they type their work or school password into one of the malicious scenarios described above and encourages them to change their password.
 
-If you disable or don’t configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen will not warn your users if they type their work or school password into one of the malicious scenarios described above.
+- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen will not warn your users if they type their work or school password into one of the malicious scenarios described above.
 <!-- NotifyMalicious-Description-End -->
 
 <!-- NotifyMalicious-Editable-Begin -->
@@ -123,8 +123,8 @@ If you disable or don’t configure this policy setting, Enhanced Phishing Prote
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled |
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
 <!-- NotifyMalicious-AllowedValues-End -->
 
 <!-- NotifyMalicious-GpMapping-Begin -->
@@ -166,9 +166,9 @@ If you disable or don’t configure this policy setting, Enhanced Phishing Prote
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Enhanced Phishing Protection in Microsoft Defender SmartScreen warns your users if they reuse their work or school password.
 
-If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen warns users if they reuse their work or school password and encourages them to change it.
+- If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen warns users if they reuse their work or school password and encourages them to change it.
 
-If you disable or don’t configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen will not warn users if they reuse their work or school password.
+- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen will not warn users if they reuse their work or school password.
 <!-- NotifyPasswordReuse-Description-End -->
 
 <!-- NotifyPasswordReuse-Editable-Begin -->
@@ -190,8 +190,8 @@ If you disable or don’t configure this policy setting, Enhanced Phishing Prote
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled |
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
 <!-- NotifyPasswordReuse-AllowedValues-End -->
 
 <!-- NotifyPasswordReuse-GpMapping-Begin -->
@@ -233,9 +233,9 @@ If you disable or don’t configure this policy setting, Enhanced Phishing Prote
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Enhanced Phishing Protection in Microsoft Defender SmartScreen warns your users if they type their work or school passwords in Notepad, Winword, or M365 Office apps like OneNote, Word, Excel, etc.
 
-If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen warns your users if they store their password in text editor apps.
+- If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen warns your users if they store their password in text editor apps.
 
-If you disable or don’t configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen will not warn users if they store their password in text editor apps.
+- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen will not warn users if they store their password in text editor apps.
 <!-- NotifyUnsafeApp-Description-End -->
 
 <!-- NotifyUnsafeApp-Editable-Begin -->
@@ -257,8 +257,8 @@ If you disable or don’t configure this policy setting, Enhanced Phishing Prote
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled |
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
 <!-- NotifyUnsafeApp-AllowedValues-End -->
 
 <!-- NotifyUnsafeApp-GpMapping-Begin -->
@@ -300,11 +300,11 @@ If you disable or don’t configure this policy setting, Enhanced Phishing Prote
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Enhanced Phishing Protection in Microsoft Defender SmartScreen is in audit mode or off. Users do not see notifications for any protection scenarios when Enhanced Phishing Protection in Microsoft Defender is in audit mode. Audit mode captures unsafe password entry events and sends telemetry through Microsoft Defender.
 
-If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen is enabled in audit mode and your users are unable to turn it off.
+- If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen is enabled in audit mode and your users are unable to turn it off.
 
-If you disable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen is off and it will not capture events, send telemetry, or notify users. Additionally, your users are unable to turn it on.
+- If you disable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen is off and it will not capture events, send telemetry, or notify users. Additionally, your users are unable to turn it on.
 
-If you don’t configure this setting, users can decide whether or not they will enable Enhanced Phishing Protection in Microsoft Defender SmartScreen.
+- If you don't configure this setting, users can decide whether or not they will enable Enhanced Phishing Protection in Microsoft Defender SmartScreen.
 <!-- ServiceEnabled-Description-End -->
 
 <!-- ServiceEnabled-Editable-Begin -->
@@ -326,8 +326,8 @@ If you don’t configure this setting, users can decide whether or not they will
 
 | Value | Description |
 |:--|:--|
-| 0 | Disabled |
-| 1 (Default) | Enabled |
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
 <!-- ServiceEnabled-AllowedValues-End -->
 
 <!-- ServiceEnabled-GpMapping-Begin -->

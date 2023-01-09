@@ -1,10 +1,10 @@
 ---
 title: ADMX_Printing Policy CSP
-description: Learn more about the ADMX_Printing Area in Policy CSP
+description: Learn more about the ADMX_Printing Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_Printing
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,13 +44,14 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Internet printing lets you display printers on Web pages so that printers can be viewed, managed, and used across the Internet or an intranet.
 
-If you enable this policy setting, Internet printing is activated on this server.
+- If you enable this policy setting, Internet printing is activated on this server.
 
-If you disable this policy setting or do not configure it, Internet printing is not activated.
+- If you disable this policy setting or do not configure it, Internet printing is not activated.
 
 Internet printing is an extension of Internet Information Services (IIS). To use Internet printing, IIS must be installed, and printing support and this setting must be enabled.
 
-Note: This setting affects the server side of Internet printing only. It does not prevent the print client on the computer from printing across the Internet.
+> [!NOTE]
+> This setting affects the server side of Internet printing only. It does not prevent the print client on the computer from printing across the Internet.
 
 Also, see the "Custom support URL in the Printers folder's left pane" setting in this folder and the "Browse a common Web site to find printers" setting in User Configuration\Administrative Templates\Control Panel\Printers.
 <!-- AllowWebPrinting-Description-End -->
@@ -72,7 +71,7 @@ Also, see the "Custom support URL in the Printers folder's left pane" setting in
 
 <!-- AllowWebPrinting-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -114,11 +113,11 @@ Determines if print driver components are isolated from applications instead of 
 
 Not all applications support driver isolation. By default, Microsoft Excel 2007, Excel 2010, Word 2007, Word 2010 and certain other applications are configured to support it. Other applications may also be capable of isolating print drivers, depending on whether they are configured for it.
 
-If you enable or do not configure this policy setting, then applications that are configured to support driver isolation will be isolated.
+- If you enable or do not configure this policy setting, then applications that are configured to support driver isolation will be isolated.
 
-If you disable this policy setting, then print drivers will be loaded within all associated application processes.
+- If you disable this policy setting, then print drivers will be loaded within all associated application processes.
 
-Notes:
+**Note**:
 -This policy setting applies only to applications opted into isolation.
 -This policy setting applies only to print drivers loaded by applications. Print drivers loaded by the print spooler are not affected.
 -This policy setting is only checked once during the lifetime of a process. After changing the policy, a running application must be relaunched before settings take effect.
@@ -139,7 +138,7 @@ Notes:
 
 <!-- ApplicationDriverIsolation-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -179,11 +178,12 @@ Notes:
 <!-- Description-Source-ADMX -->
 By default, the Printers folder includes a link to the Microsoft Support Web page called "Get help with printing". It can also include a link to a Web page supplied by the vendor of the currently selected printer.
 
-If you enable this policy setting, you replace the "Get help with printing" default link with a link to a Web page customized for your enterprise.
+- If you enable this policy setting, you replace the "Get help with printing" default link with a link to a Web page customized for your enterprise.
 
-If you disable this setting or do not configure it, or if you do not enter an alternate Internet address, the default link will appear in the Printers folder.
+- If you disable this setting or do not configure it, or if you do not enter an alternate Internet address, the default link will appear in the Printers folder.
 
-Note: Web pages links only appear in the Printers folder when Web view is enabled. If Web view is disabled, the setting has no effect. (To enable Web view, open the Printers folder, and, on the Tools menu, click Folder Options, click the General tab, and then click "Enable Web content in folders.")
+> [!NOTE]
+> Web pages links only appear in the Printers folder when Web view is enabled. If Web view is disabled, the setting has no effect. (To enable Web view, open the Printers folder, and, on the Tools menu, click Folder Options, click the General tab, and then click "Enable Web content in folders.")
 
 Also, see the "Activate Internet printing" setting in this setting folder and the "Browse a common web site to find printers" setting in User Configuration\Administrative Templates\Control Panel\Printers.
 
@@ -205,7 +205,7 @@ Web view is affected by the "Turn on Classic Shell" and "Do not allow Folder Opt
 
 <!-- CustomizedSupportUrl-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -242,11 +242,11 @@ Web view is affected by the "Turn on Classic Shell" and "Do not allow Folder Opt
 
 <!-- DomainPrinters-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy setting, it sets the maximum number of printers (of each type) that the Add Printer wizard will display on a computer on a managed network (when the computer is able to reach a domain controller, e.g. a domain-joined laptop on a corporate network.)
+- If you enable this policy setting, it sets the maximum number of printers (of each type) that the Add Printer wizard will display on a computer on a managed network (when the computer is able to reach a domain controller, e.g. a domain-joined laptop on a corporate network.)
 
-If this policy setting is disabled, the network scan page will not be displayed.
+- If this policy setting is disabled, the network scan page will not be displayed.
 
-If this policy setting is not configured, the Add Printer wizard will display the default number of printers of each type:
+- If this policy setting is not configured, the Add Printer wizard will display the default number of printers of each type:
 Directory printers: 20
 TCP/IP printers: 0
 Web Services printers: 0
@@ -257,7 +257,8 @@ In order to view available Web Services printers on your network, ensure that ne
 
 If you would like to not display printers of a certain type, enable this policy and set the number of printers to display to 0.
 
-In Windows 10 and later, only TCP/IP printers can be shown in the wizard. If you enable this policy setting, only TCP/IP printer limits are applicable. On Windows 10 only, if you disable or do not configure this policy setting, the default limit is applied.
+In Windows 10 and later, only TCP/IP printers can be shown in the wizard.
+- If you enable this policy setting, only TCP/IP printer limits are applicable. On Windows 10 only, if you disable or do not configure this policy setting, the default limit is applied.
 
 In Windows 8 and later, Bluetooth printers are not shown so its limit does not apply to those versions of Windows.
 <!-- DomainPrinters-Description-End -->
@@ -277,7 +278,7 @@ In Windows 8 and later, Bluetooth printers are not shown so its limit does not a
 
 <!-- DomainPrinters-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -317,9 +318,9 @@ In Windows 8 and later, Bluetooth printers are not shown so its limit does not a
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage where client computers search for Point and Printer drivers.
 
-If you enable this policy setting, the client computer will continue to search for compatible Point and Print drivers from Windows Update after it fails to find the compatible driver from the local driver store and the server driver cache.
+- If you enable this policy setting, the client computer will continue to search for compatible Point and Print drivers from Windows Update after it fails to find the compatible driver from the local driver store and the server driver cache.
 
-If you disable this policy setting, the client computer will only search the local driver store and server driver cache for compatible Point and Print drivers. If it is unable to find a compatible driver, then the Point and Print connection will fail.
+- If you disable this policy setting, the client computer will only search the local driver store and server driver cache for compatible Point and Print drivers. If it is unable to find a compatible driver, then the Point and Print connection will fail.
 
 This policy setting is not configured by default, and the behavior depends on the version of Windows that you are using.
 By default, Windows Ultimate, Professional and Home SKUs will continue to search for compatible Point and Print drivers from Windows Update, if needed. However, you must explicitly enable this policy setting for other versions of Windows (for example Windows Enterprise, and all versions of Windows Server 2008 R2 and later) to have the same behavior.
@@ -340,7 +341,7 @@ By default, Windows Ultimate, Professional and Home SKUs will continue to search
 
 <!-- DoNotInstallCompatibleDriverFromWindowsUpdate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -360,6 +361,69 @@ By default, Windows Ultimate, Professional and Home SKUs will continue to search
 <!-- DoNotInstallCompatibleDriverFromWindowsUpdate-Examples-End -->
 
 <!-- DoNotInstallCompatibleDriverFromWindowsUpdate-End -->
+
+<!-- DownlevelBrowse-Begin -->
+## DownlevelBrowse
+
+<!-- DownlevelBrowse-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DownlevelBrowse-Applicability-End -->
+
+<!-- DownlevelBrowse-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Printing/DownlevelBrowse
+```
+<!-- DownlevelBrowse-OmaUri-End -->
+
+<!-- DownlevelBrowse-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Allows users to use the Add Printer Wizard to search the network for shared printers.
+
+- If you enable this setting or do not configure it, when users choose to add a network printer by selecting the "A network printer, or a printer attached to another computer" radio button on Add Printer Wizard's page 2, and also check the "Connect to this printer (or to browse for a printer, select this option and click Next)" radio button on Add Printer Wizard's page 3, and do not specify a printer name in the adjacent "Name" edit box, then Add Printer Wizard displays the list of shared printers on the network and invites to choose a printer from the shown list.
+
+- If you disable this setting, the network printer browse page is removed from within the Add Printer Wizard, and users cannot search the network but must type a printer name.
+
+> [!NOTE]
+> This setting affects the Add Printer Wizard only. It does not prevent users from using other programs to search for shared printers or to connect to network printers.
+<!-- DownlevelBrowse-Description-End -->
+
+<!-- DownlevelBrowse-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DownlevelBrowse-Editable-End -->
+
+<!-- DownlevelBrowse-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DownlevelBrowse-DFProperties-End -->
+
+<!-- DownlevelBrowse-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DownlevelBrowse |
+| Friendly Name | Browse the network to find printers |
+| Location | User Configuration |
+| Path | Control Panel > Printers |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\Printers\Wizard |
+| Registry Value Name | Downlevel Browse |
+| ADMX File Name | Printing.admx |
+<!-- DownlevelBrowse-AdmxBacked-End -->
+
+<!-- DownlevelBrowse-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DownlevelBrowse-Examples-End -->
+
+<!-- DownlevelBrowse-End -->
 
 <!-- EMFDespooling-Begin -->
 ## EMFDespooling
@@ -382,17 +446,20 @@ When printing through a print server, determines whether the print spooler on th
 
 This policy setting only effects printing to a Windows print server.
 
-If you enable this policy setting on a client machine, the client spooler will not process print jobs before sending them to the print server. This decreases the workload on the client at the expense of increasing the load on the server.
+- If you enable this policy setting on a client machine, the client spooler will not process print jobs before sending them to the print server. This decreases the workload on the client at the expense of increasing the load on the server.
 
-If you disable this policy setting on a client machine, the client itself will process print jobs into printer device commands. These commands will then be sent to the print server, and the server will simply pass the commands to the printer. This increases the workload of the client while decreasing the load on the server.
+- If you disable this policy setting on a client machine, the client itself will process print jobs into printer device commands. These commands will then be sent to the print server, and the server will simply pass the commands to the printer. This increases the workload of the client while decreasing the load on the server.
 
 If you do not enable this policy setting, the behavior is the same as disabling it.
 
-Note: This policy does not determine whether offline printing will be available to the client. The client print spooler can always queue print jobs when not connected to the print server. Upon reconnecting to the server, the client will submit any pending print jobs.
+> [!NOTE]
+> This policy does not determine whether offline printing will be available to the client. The client print spooler can always queue print jobs when not connected to the print server. Upon reconnecting to the server, the client will submit any pending print jobs.
 
-Note: Some printer drivers require a custom print processor. In some cases the custom print processor may not be installed on the client machine, such as when the print server does not support transferring print processors during point-and-print. In the case of a print processor mismatch, the client spooler will always send jobs to the print server for rendering. Disabling the above policy setting does not override this behavior.
+> [!NOTE]
+> Some printer drivers require a custom print processor. In some cases the custom print processor may not be installed on the client machine, such as when the print server does not support transferring print processors during point-and-print. In the case of a print processor mismatch, the client spooler will always send jobs to the print server for rendering. Disabling the above policy setting does not override this behavior.
 
-Note: In cases where the client print driver does not match the server print driver (mismatched connection), the client will always process the print job, regardless of the setting of this policy.
+> [!NOTE]
+> In cases where the client print driver does not match the server print driver (mismatched connection), the client will always process the print job, regardless of the setting of this policy.
 <!-- EMFDespooling-Description-End -->
 
 <!-- EMFDespooling-Editable-Begin -->
@@ -410,7 +477,7 @@ Note: In cases where the client print driver does not match the server print dri
 
 <!-- EMFDespooling-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -450,7 +517,7 @@ Note: In cases where the client print driver does not match the server print dri
 <!-- Description-Source-ADMX -->
 Determines whether the XPS Rasterization Service or the XPS-to-GDI conversion (XGC) is forced to use a software rasterizer instead of a Graphics Processing Unit (GPU) to rasterize pages.
 
-This setting may improve the performance of the XPS Rasterization Service or the XPS-to-GDI conversion (XGC) on machines that have a relatively powerful CPU as compared to the machine’s GPU.
+This setting may improve the performance of the XPS Rasterization Service or the XPS-to-GDI conversion (XGC) on machines that have a relatively powerful CPU as compared to the machine's GPU.
 <!-- ForceSoftwareRasterization-Description-End -->
 
 <!-- ForceSoftwareRasterization-Editable-Begin -->
@@ -468,13 +535,13 @@ This setting may improve the performance of the XPS Rasterization Service or the
 
 <!-- ForceSoftwareRasterization-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | ForceSWRas |
+| Name | ForceSoftwareRasterization |
 | Friendly Name | Always rasterize content to be printed using a software rasterizer |
 | Location | Computer Configuration |
 | Path | Printers |
@@ -488,6 +555,69 @@ This setting may improve the performance of the XPS Rasterization Service or the
 <!-- ForceSoftwareRasterization-Examples-End -->
 
 <!-- ForceSoftwareRasterization-End -->
+
+<!-- IntranetPrintersUrl-Begin -->
+## IntranetPrintersUrl
+
+<!-- IntranetPrintersUrl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IntranetPrintersUrl-Applicability-End -->
+
+<!-- IntranetPrintersUrl-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Printing/IntranetPrintersUrl
+```
+<!-- IntranetPrintersUrl-OmaUri-End -->
+
+<!-- IntranetPrintersUrl-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Adds a link to an Internet or intranet Web page to the Add Printer Wizard.
+
+You can use this setting to direct users to a Web page from which they can install printers.
+
+- If you enable this setting and type an Internet or intranet address in the text box, the system adds a Browse button to the "Specify a Printer" page in the Add Printer Wizard. The Browse button appears beside the "Connect to a printer on the Internet or on a home or office network" option. When users click Browse, the system opens an Internet browser and navigates to the specified URL address to display the available printers.
+
+This setting makes it easy for users to find the printers you want them to add.
+
+Also, see the "Custom support URL in the Printers folder's left pane" and "Activate Internet printing" settings in "Computer Configuration\Administrative Templates\Printers."
+<!-- IntranetPrintersUrl-Description-End -->
+
+<!-- IntranetPrintersUrl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IntranetPrintersUrl-Editable-End -->
+
+<!-- IntranetPrintersUrl-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IntranetPrintersUrl-DFProperties-End -->
+
+<!-- IntranetPrintersUrl-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IntranetPrintersUrl |
+| Friendly Name | Browse a common web site to find printers |
+| Location | User Configuration |
+| Path | Control Panel > Printers |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\Printers\Wizard |
+| ADMX File Name | Printing.admx |
+<!-- IntranetPrintersUrl-AdmxBacked-End -->
+
+<!-- IntranetPrintersUrl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IntranetPrintersUrl-Examples-End -->
+
+<!-- IntranetPrintersUrl-End -->
 
 <!-- KMPrintersAreBlocked-Begin -->
 ## KMPrintersAreBlocked
@@ -508,13 +638,14 @@ This setting may improve the performance of the XPS Rasterization Service or the
 <!-- Description-Source-ADMX -->
 Determines whether printers using kernel-mode drivers may be installed on the local computer. Kernel-mode drivers have access to system-wide memory, and therefore poorly-written kernel-mode drivers can cause stop errors.
 
-If you disable this setting, or do not configure it, then printers using a kernel-mode drivers may be installed on the local computer running Windows XP Home Edition and Windows XP Professional.
+- If you disable this setting, or do not configure it, then printers using a kernel-mode drivers may be installed on the local computer running Windows XP Home Edition and Windows XP Professional.
 
-If you do not configure this setting on Windows Server 2003 family products, the installation of kernel-mode printer drivers will be blocked.
+- If you do not configure this setting on Windows Server 2003 family products, the installation of kernel-mode printer drivers will be blocked.
 
-If you enable this setting, installation of a printer using a kernel-mode driver will not be allowed.
+- If you enable this setting, installation of a printer using a kernel-mode driver will not be allowed.
 
-Note: By applying this policy, existing kernel-mode drivers will be disabled upon installation of service packs or reinstallation of the Windows XP operating system. This policy does not apply to 64-bit kernel-mode printer drivers as they cannot be installed and associated with a print queue.
+> [!NOTE]
+> By applying this policy, existing kernel-mode drivers will be disabled upon installation of service packs or reinstallation of the Windows XP operating system. This policy does not apply to 64-bit kernel-mode printer drivers as they cannot be installed and associated with a print queue.
 <!-- KMPrintersAreBlocked-Description-End -->
 
 <!-- KMPrintersAreBlocked-Editable-Begin -->
@@ -532,7 +663,7 @@ Note: By applying this policy, existing kernel-mode drivers will be disabled upo
 
 <!-- KMPrintersAreBlocked-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -553,6 +684,68 @@ Note: By applying this policy, existing kernel-mode drivers will be disabled upo
 
 <!-- KMPrintersAreBlocked-End -->
 
+<!-- LegacyDefaultPrinterMode-Begin -->
+## LegacyDefaultPrinterMode
+
+<!-- LegacyDefaultPrinterMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LegacyDefaultPrinterMode-Applicability-End -->
+
+<!-- LegacyDefaultPrinterMode-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Printing/LegacyDefaultPrinterMode
+```
+<!-- LegacyDefaultPrinterMode-OmaUri-End -->
+
+<!-- LegacyDefaultPrinterMode-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This preference allows you to change default printer management.
+
+- If you enable this setting, Windows will not manage the default printer.
+
+- If you disable this setting, Windows will manage the default printer.
+
+- If you do not configure this setting, default printer management will not change.
+<!-- LegacyDefaultPrinterMode-Description-End -->
+
+<!-- LegacyDefaultPrinterMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LegacyDefaultPrinterMode-Editable-End -->
+
+<!-- LegacyDefaultPrinterMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LegacyDefaultPrinterMode-DFProperties-End -->
+
+<!-- LegacyDefaultPrinterMode-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LegacyDefaultPrinterMode |
+| Friendly Name | Turn off Windows default printer management |
+| Location | User Configuration |
+| Path | Control Panel > Printers |
+| Registry Key Name | Software\Microsoft\Windows NT\CurrentVersion\Windows |
+| Registry Value Name | LegacyDefaultPrinterMode |
+| ADMX File Name | Printing.admx |
+<!-- LegacyDefaultPrinterMode-AdmxBacked-End -->
+
+<!-- LegacyDefaultPrinterMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LegacyDefaultPrinterMode-Examples-End -->
+
+<!-- LegacyDefaultPrinterMode-End -->
+
 <!-- MXDWUseLegacyOutputFormatMSXPS-Begin -->
 ## MXDWUseLegacyOutputFormatMSXPS
 
@@ -572,9 +765,9 @@ Note: By applying this policy, existing kernel-mode drivers will be disabled upo
 <!-- Description-Source-ADMX -->
 Microsoft XPS Document Writer (MXDW) generates OpenXPS (*.oxps) files by default in Windows 10, Windows 10 and Windows Server 2022.
 
-If you enable this group policy setting, the default MXDW output format is the legacy Microsoft XPS (*.xps).
+- If you enable this group policy setting, the default MXDW output format is the legacy Microsoft XPS (*.xps).
 
-If you disable or do not configure this policy setting, the default MXDW output format is OpenXPS (*.oxps).
+- If you disable or do not configure this policy setting, the default MXDW output format is OpenXPS (*.oxps).
 <!-- MXDWUseLegacyOutputFormatMSXPS-Description-End -->
 
 <!-- MXDWUseLegacyOutputFormatMSXPS-Editable-Begin -->
@@ -592,7 +785,7 @@ If you disable or do not configure this policy setting, the default MXDW output 
 
 <!-- MXDWUseLegacyOutputFormatMSXPS-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -613,6 +806,68 @@ If you disable or do not configure this policy setting, the default MXDW output 
 
 <!-- MXDWUseLegacyOutputFormatMSXPS-End -->
 
+<!-- NoDeletePrinter-Begin -->
+## NoDeletePrinter
+
+<!-- NoDeletePrinter-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoDeletePrinter-Applicability-End -->
+
+<!-- NoDeletePrinter-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Printing/NoDeletePrinter
+```
+<!-- NoDeletePrinter-OmaUri-End -->
+
+<!-- NoDeletePrinter-Description-Begin -->
+<!-- Description-Source-ADMX -->
+- If this policy setting is enabled, it prevents users from deleting local and network printers.
+
+If a user tries to delete a printer, such as by using the Delete option in Printers in Control Panel, a message appears explaining that a setting prevents the action.
+
+This setting does not prevent users from running other programs to delete a printer.
+
+If this policy is disabled, or not configured, users can delete printers using the methods described above.
+<!-- NoDeletePrinter-Description-End -->
+
+<!-- NoDeletePrinter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoDeletePrinter-Editable-End -->
+
+<!-- NoDeletePrinter-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoDeletePrinter-DFProperties-End -->
+
+<!-- NoDeletePrinter-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoDeletePrinter |
+| Friendly Name | Prevent deletion of printers |
+| Location | User Configuration |
+| Path | Control Panel > Printers |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoDeletePrinter |
+| ADMX File Name | Printing.admx |
+<!-- NoDeletePrinter-AdmxBacked-End -->
+
+<!-- NoDeletePrinter-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoDeletePrinter-Examples-End -->
+
+<!-- NoDeletePrinter-End -->
+
 <!-- NonDomainPrinters-Begin -->
 ## NonDomainPrinters
 
@@ -632,7 +887,7 @@ If you disable or do not configure this policy setting, the default MXDW output 
 <!-- Description-Source-ADMX -->
 This policy sets the maximum number of printers (of each type) that the Add Printer wizard will display on a computer on an unmanaged network (when the computer is not able to reach a domain controller, e.g. a domain-joined laptop on a home network.)
 
-If this setting is disabled, the network scan page will not be displayed.
+- If this setting is disabled, the network scan page will not be displayed.
 
 If this setting is not configured, the Add Printer wizard will display the default number of printers of each type:
 TCP/IP printers: 50
@@ -642,7 +897,8 @@ Shared printers: 50
 
 If you would like to not display printers of a certain type, enable this policy and set the number of printers to display to 0.
 
-In Windows 10 and later, only TCP/IP printers can be shown in the wizard. If you enable this policy setting, only TCP/IP printer limits are applicable. On Windows 10 only, if you disable or do not configure this policy setting, the default limit is applied.
+In Windows 10 and later, only TCP/IP printers can be shown in the wizard.
+- If you enable this policy setting, only TCP/IP printer limits are applicable. On Windows 10 only, if you disable or do not configure this policy setting, the default limit is applied.
 
 In Windows 8 and later, Bluetooth printers are not shown so its limit does not apply to those versions of Windows.
 <!-- NonDomainPrinters-Description-End -->
@@ -662,7 +918,7 @@ In Windows 8 and later, Bluetooth printers are not shown so its limit does not a
 
 <!-- NonDomainPrinters-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -683,6 +939,66 @@ In Windows 8 and later, Bluetooth printers are not shown so its limit does not a
 
 <!-- NonDomainPrinters-End -->
 
+<!-- PackagePointAndPrintOnly-Begin -->
+## PackagePointAndPrintOnly
+
+<!-- PackagePointAndPrintOnly-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PackagePointAndPrintOnly-Applicability-End -->
+
+<!-- PackagePointAndPrintOnly-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Printing/PackagePointAndPrintOnly
+```
+<!-- PackagePointAndPrintOnly-OmaUri-End -->
+
+<!-- PackagePointAndPrintOnly-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy restricts clients computers to use package point and print only.
+
+- If this setting is enabled, users will only be able to point and print to printers that use package-aware drivers. When using package point and print, client computers will check the driver signature of all drivers that are downloaded from print servers.
+
+- If this setting is disabled, or not configured, users will not be restricted to package-aware point and print only.
+<!-- PackagePointAndPrintOnly-Description-End -->
+
+<!-- PackagePointAndPrintOnly-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PackagePointAndPrintOnly-Editable-End -->
+
+<!-- PackagePointAndPrintOnly-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PackagePointAndPrintOnly-DFProperties-End -->
+
+<!-- PackagePointAndPrintOnly-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | PackagePointAndPrintOnly |
+| Friendly Name | Only use Package Point and print |
+| Location | User Configuration |
+| Path | Control Panel > Printers |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint |
+| Registry Value Name | PackagePointAndPrintOnly |
+| ADMX File Name | Printing.admx |
+<!-- PackagePointAndPrintOnly-AdmxBacked-End -->
+
+<!-- PackagePointAndPrintOnly-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PackagePointAndPrintOnly-Examples-End -->
+
+<!-- PackagePointAndPrintOnly-End -->
+
 <!-- PackagePointAndPrintOnly_Win7-Begin -->
 ## PackagePointAndPrintOnly_Win7
 
@@ -702,9 +1018,9 @@ In Windows 8 and later, Bluetooth printers are not shown so its limit does not a
 <!-- Description-Source-ADMX -->
 This policy restricts clients computers to use package point and print only.
 
-If this setting is enabled, users will only be able to point and print to printers that use package-aware drivers. When using package point and print, client computers will check the driver signature of all drivers that are downloaded from print servers.
+- If this setting is enabled, users will only be able to point and print to printers that use package-aware drivers. When using package point and print, client computers will check the driver signature of all drivers that are downloaded from print servers.
 
-If this setting is disabled, or not configured, users will not be restricted to package-aware point and print only.
+- If this setting is disabled, or not configured, users will not be restricted to package-aware point and print only.
 <!-- PackagePointAndPrintOnly_Win7-Description-End -->
 
 <!-- PackagePointAndPrintOnly_Win7-Editable-Begin -->
@@ -722,13 +1038,13 @@ If this setting is disabled, or not configured, users will not be restricted to 
 
 <!-- PackagePointAndPrintOnly_Win7-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | PackagePointAndPrintOnly |
+| Name | PackagePointAndPrintOnly_Win7 |
 | Friendly Name | Only use Package Point and print |
 | Location | Computer Configuration |
 | Path | Printers |
@@ -742,6 +1058,70 @@ If this setting is disabled, or not configured, users will not be restricted to 
 <!-- PackagePointAndPrintOnly_Win7-Examples-End -->
 
 <!-- PackagePointAndPrintOnly_Win7-End -->
+
+<!-- PackagePointAndPrintServerList-Begin -->
+## PackagePointAndPrintServerList
+
+<!-- PackagePointAndPrintServerList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PackagePointAndPrintServerList-Applicability-End -->
+
+<!-- PackagePointAndPrintServerList-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Printing/PackagePointAndPrintServerList
+```
+<!-- PackagePointAndPrintServerList-OmaUri-End -->
+
+<!-- PackagePointAndPrintServerList-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Restricts package point and print to approved servers.
+
+This policy setting restricts package point and print connections to approved servers. This setting only applies to Package Point and Print connections, and is completely independent from the "Point and Print Restrictions" policy that governs the behavior of non-package point and print connections.
+
+Windows Vista and later clients will attempt to make a non-package point and print connection anytime a package point and print connection fails, including attempts that are blocked by this policy. Administrators may need to set both policies to block all print connections to a specific print server.
+
+- If this setting is enabled, users will only be able to package point and print to print servers approved by the network administrator. When using package point and print, client computers will check the driver signature of all drivers that are downloaded from print servers.
+
+- If this setting is disabled, or not configured, package point and print will not be restricted to specific print servers.
+<!-- PackagePointAndPrintServerList-Description-End -->
+
+<!-- PackagePointAndPrintServerList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PackagePointAndPrintServerList-Editable-End -->
+
+<!-- PackagePointAndPrintServerList-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PackagePointAndPrintServerList-DFProperties-End -->
+
+<!-- PackagePointAndPrintServerList-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | PackagePointAndPrintServerList |
+| Friendly Name | Package Point and print - Approved servers |
+| Location | User Configuration |
+| Path | Control Panel > Printers |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint |
+| Registry Value Name | PackagePointAndPrintServerList |
+| ADMX File Name | Printing.admx |
+<!-- PackagePointAndPrintServerList-AdmxBacked-End -->
+
+<!-- PackagePointAndPrintServerList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PackagePointAndPrintServerList-Examples-End -->
+
+<!-- PackagePointAndPrintServerList-End -->
 
 <!-- PackagePointAndPrintServerList_Win7-Begin -->
 ## PackagePointAndPrintServerList_Win7
@@ -766,9 +1146,9 @@ This policy setting restricts package point and print connections to approved se
 
 Windows Vista and later clients will attempt to make a non-package point and print connection anytime a package point and print connection fails, including attempts that are blocked by this policy. Administrators may need to set both policies to block all print connections to a specific print server.
 
-If this setting is enabled, users will only be able to package point and print to print servers approved by the network administrator. When using package point and print, client computers will check the driver signature of all drivers that are downloaded from print servers.
+- If this setting is enabled, users will only be able to package point and print to print servers approved by the network administrator. When using package point and print, client computers will check the driver signature of all drivers that are downloaded from print servers.
 
-If this setting is disabled, or not configured, package point and print will not be restricted to specific print servers.
+- If this setting is disabled, or not configured, package point and print will not be restricted to specific print servers.
 <!-- PackagePointAndPrintServerList_Win7-Description-End -->
 
 <!-- PackagePointAndPrintServerList_Win7-Editable-Begin -->
@@ -786,13 +1166,13 @@ If this setting is disabled, or not configured, package point and print will not
 
 <!-- PackagePointAndPrintServerList_Win7-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | PackagePointAndPrintServerList |
+| Name | PackagePointAndPrintServerList_Win7 |
 | Friendly Name | Package Point and print - Approved servers |
 | Location | Computer Configuration |
 | Path | Printers |
@@ -824,7 +1204,7 @@ If this setting is disabled, or not configured, package point and print will not
 
 <!-- PhysicalLocation-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If this policy setting is enabled, it specifies the default location criteria used when searching for printers.
+- If this policy setting is enabled, it specifies the default location criteria used when searching for printers.
 
 This setting is a component of the Location Tracking feature of Windows printers. To use this setting, enable Location Tracking by enabling the "Pre-populate printer search location text" setting.
 
@@ -832,7 +1212,7 @@ When Location Tracking is enabled, the system uses the specified location as a c
 
 Type the location of the user's computer. When users search for printers, the system uses the specified location (and other search criteria) to find a printer nearby. You can also use this setting to direct users to a particular printer or group of printers that you want them to use.
 
-If you disable this setting or do not configure it, and the user does not type a location as a search criterion, the system searches for a nearby printer based on the IP address and subnet mask of the user's computer.
+- If you disable this setting or do not configure it, and the user does not type a location as a search criterion, the system searches for a nearby printer based on the IP address and subnet mask of the user's computer.
 <!-- PhysicalLocation-Description-End -->
 
 <!-- PhysicalLocation-Editable-Begin -->
@@ -850,7 +1230,7 @@ If you disable this setting or do not configure it, and the user does not type a
 
 <!-- PhysicalLocation-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -891,9 +1271,9 @@ Enables the physical Location Tracking setting for Windows printers.
 
 Use Location Tracking to design a location scheme for your enterprise and assign computers and printers to locations in the scheme. Location Tracking overrides the standard method used to locate and associate computers and printers. The standard method uses a printer's IP address and subnet mask to estimate its physical location and proximity to computers.
 
-If you enable this setting, users can browse for printers by location without knowing the printer's location or location naming scheme. Enabling Location Tracking adds a Browse button in the Add Printer wizard's Printer Name and Sharing Location screen and to the General tab in the Printer Properties dialog box. If you enable the Group Policy Computer location setting, the default location you entered appears in the Location field by default.
+- If you enable this setting, users can browse for printers by location without knowing the printer's location or location naming scheme. Enabling Location Tracking adds a Browse button in the Add Printer wizard's Printer Name and Sharing Location screen and to the General tab in the Printer Properties dialog box. If you enable the Group Policy Computer location setting, the default location you entered appears in the Location field by default.
 
-If you disable this setting or do not configure it, Location Tracking is disabled. Printer proximity is estimated using the standard method (that is, based on IP address and subnet mask).
+- If you disable this setting or do not configure it, Location Tracking is disabled. Printer proximity is estimated using the standard method (that is, based on IP address and subnet mask).
 <!-- PhysicalLocationSupport-Description-End -->
 
 <!-- PhysicalLocationSupport-Editable-Begin -->
@@ -911,7 +1291,7 @@ If you disable this setting or do not configure it, Location Tracking is disable
 
 <!-- PhysicalLocationSupport-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -951,12 +1331,11 @@ If you disable this setting or do not configure it, Location Tracking is disable
 <!-- Description-Source-ADMX -->
 This policy setting determines whether the print spooler will execute print drivers in an isolated or separate process. When print drivers are loaded in an isolated process (or isolated processes), a print driver failure will not cause the print spooler service to fail.
 
-If you enable or do not configure this policy setting, the print spooler will execute print drivers in an isolated process by default.
+- If you enable or do not configure this policy setting, the print spooler will execute print drivers in an isolated process by default.
 
-If you disable this policy setting, the print spooler will execute print drivers in the print spooler process.
+- If you disable this policy setting, the print spooler will execute print drivers in the print spooler process.
 
-
-Notes:
+**Note**:
 -Other system or driver policy settings may alter the process in which a print driver is executed.
 -This policy setting applies only to print drivers loaded by the print spooler. Print drivers loaded by applications are not affected.
 -This policy setting takes effect without restarting the print spooler service.
@@ -977,7 +1356,7 @@ Notes:
 
 <!-- PrintDriverIsolationExecutionPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1017,11 +1396,11 @@ Notes:
 <!-- Description-Source-ADMX -->
 This policy setting determines whether the print spooler will override the Driver Isolation compatibility reported by the print driver. This enables executing print drivers in an isolated process, even if the driver does not report compatibility.
 
-If you enable this policy setting, the print spooler isolates all print drivers that do not explicitly opt out of Driver Isolation.
+- If you enable this policy setting, the print spooler isolates all print drivers that do not explicitly opt out of Driver Isolation.
 
-If you disable or do not configure this policy setting, the print spooler uses the Driver Isolation compatibility flag value reported by the print driver.
+- If you disable or do not configure this policy setting, the print spooler uses the Driver Isolation compatibility flag value reported by the print driver.
 
-Notes:
+**Note**:
 -Other system or driver policy settings may alter the process in which a print driver is executed.
 -This policy setting applies only to print drivers loaded by the print spooler. Print drivers loaded by applications are not affected.
 -This policy setting takes effect without restarting the print spooler service.
@@ -1042,7 +1421,7 @@ Notes:
 
 <!-- PrintDriverIsolationOverrideCompat-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1062,6 +1441,67 @@ Notes:
 <!-- PrintDriverIsolationOverrideCompat-Examples-End -->
 
 <!-- PrintDriverIsolationOverrideCompat-End -->
+
+<!-- PrinterDirectorySearchScope-Begin -->
+## PrinterDirectorySearchScope
+
+<!-- PrinterDirectorySearchScope-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PrinterDirectorySearchScope-Applicability-End -->
+
+<!-- PrinterDirectorySearchScope-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Printing/PrinterDirectorySearchScope
+```
+<!-- PrinterDirectorySearchScope-OmaUri-End -->
+
+<!-- PrinterDirectorySearchScope-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the Active Directory location where searches for printers begin.
+
+The Add Printer Wizard gives users the option of searching Active Directory for a shared printer.
+
+- If you enable this policy setting, these searches begin at the location you specify in the "Default Active Directory path" box. Otherwise, searches begin at the root of Active Directory.
+
+This setting only provides a starting point for Active Directory searches for printers. It does not restrict user searches through Active Directory.
+<!-- PrinterDirectorySearchScope-Description-End -->
+
+<!-- PrinterDirectorySearchScope-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PrinterDirectorySearchScope-Editable-End -->
+
+<!-- PrinterDirectorySearchScope-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PrinterDirectorySearchScope-DFProperties-End -->
+
+<!-- PrinterDirectorySearchScope-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | PrinterDirectorySearchScope |
+| Friendly Name | Default Active Directory path when searching for printers |
+| Location | User Configuration |
+| Path | Control Panel > Printers |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\Printers\Wizard |
+| ADMX File Name | Printing.admx |
+<!-- PrinterDirectorySearchScope-AdmxBacked-End -->
+
+<!-- PrinterDirectorySearchScope-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PrinterDirectorySearchScope-Examples-End -->
+
+<!-- PrinterDirectorySearchScope-End -->
 
 <!-- PrinterServerThread-Begin -->
 ## PrinterServerThread
@@ -1084,13 +1524,14 @@ Announces the presence of shared printers to print servers for the domain.
 
 On domains with Active Directory, shared printer resources are available in Active Directory and are not announced.
 
-If you enable this setting, the print spooler announces shared printers to the print servers.
+- If you enable this setting, the print spooler announces shared printers to the print servers.
 
-If you disable this setting, shared printers are not announced to print servers, even if Active Directory is not available.
+- If you disable this setting, shared printers are not announced to print servers, even if Active Directory is not available.
 
-If you do not configure this setting, shared printers are announced to servers only when Active Directory is not available.
+- If you do not configure this setting, shared printers are announced to servers only when Active Directory is not available.
 
-Note: A client license is used each time a client computer announces a printer to a print browse master on the domain.
+> [!NOTE]
+> A client license is used each time a client computer announces a printer to a print browse master on the domain.
 <!-- PrinterServerThread-Description-End -->
 
 <!-- PrinterServerThread-Editable-Begin -->
@@ -1108,7 +1549,7 @@ Note: A client license is used each time a client computer announces a printer t
 
 <!-- PrinterServerThread-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1148,11 +1589,12 @@ Note: A client license is used each time a client computer announces a printer t
 <!-- Description-Source-ADMX -->
 This policy controls whether the print job name will be included in print event logs.
 
-If you disable or do not configure this policy setting, the print job name will not be included.
+- If you disable or do not configure this policy setting, the print job name will not be included.
 
-If you enable this policy setting, the print job name will be included in new log entries.
+- If you enable this policy setting, the print job name will be included in new log entries.
 
-Note: This setting does not apply to Branch Office Direct Printing jobs.
+> [!NOTE]
+> This setting does not apply to Branch Office Direct Printing jobs.
 <!-- ShowJobTitleInEventLogs-Description-End -->
 
 <!-- ShowJobTitleInEventLogs-Editable-Begin -->
@@ -1170,7 +1612,7 @@ Note: This setting does not apply to Branch Office Direct Printing jobs.
 
 <!-- ShowJobTitleInEventLogs-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1212,9 +1654,9 @@ This policy determines if v4 printer drivers are allowed to run printer extensio
 
 V4 printer drivers may include an optional, customized user interface known as a printer extension. These extensions may provide access to more device features, but this may not be appropriate for all enterprises.
 
-If you enable this policy setting, then all printer extensions will not be allowed to run.
+- If you enable this policy setting, then all printer extensions will not be allowed to run.
 
-If you disable this policy setting or do not configure it, then all printer extensions that have been installed will be allowed to run.
+- If you disable this policy setting or do not configure it, then all printer extensions that have been installed will be allowed to run.
 <!-- V4DriverDisallowPrinterExtension-Description-End -->
 
 <!-- V4DriverDisallowPrinterExtension-Editable-Begin -->
@@ -1232,7 +1674,7 @@ If you disable this policy setting or do not configure it, then all printer exte
 
 <!-- V4DriverDisallowPrinterExtension-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -1252,440 +1694,6 @@ If you disable this policy setting or do not configure it, then all printer exte
 <!-- V4DriverDisallowPrinterExtension-Examples-End -->
 
 <!-- V4DriverDisallowPrinterExtension-End -->
-
-<!-- DownlevelBrowse-Begin -->
-## DownlevelBrowse
-
-<!-- DownlevelBrowse-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- DownlevelBrowse-Applicability-End -->
-
-<!-- DownlevelBrowse-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_Printing/DownlevelBrowse
-```
-<!-- DownlevelBrowse-OmaUri-End -->
-
-<!-- DownlevelBrowse-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Allows users to use the Add Printer Wizard to search the network for shared printers.
-
-If you enable this setting or do not configure it, when users choose to add a network printer by selecting the "A network printer, or a printer attached to another computer" radio button on Add Printer Wizard's page 2, and also check the "Connect to this printer (or to browse for a printer, select this option and click Next)" radio button on Add Printer Wizard's page 3, and do not specify a printer name in the adjacent "Name" edit box, then Add Printer Wizard displays the list of shared printers on the network and invites to choose a printer from the shown list.
-
-If you disable this setting, the network printer browse page is removed from within the Add Printer Wizard, and users cannot search the network but must type a printer name.
-
-Note: This setting affects the Add Printer Wizard only. It does not prevent users from using other programs to search for shared printers or to connect to network printers.
-<!-- DownlevelBrowse-Description-End -->
-
-<!-- DownlevelBrowse-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- DownlevelBrowse-Editable-End -->
-
-<!-- DownlevelBrowse-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- DownlevelBrowse-DFProperties-End -->
-
-<!-- DownlevelBrowse-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | DownlevelBrowse |
-| Friendly Name | Browse the network to find printers |
-| Location | User Configuration |
-| Path | Control Panel > Printers |
-| Registry Key Name | Software\Policies\Microsoft\Windows NT\Printers\Wizard |
-| Registry Value Name | Downlevel Browse |
-| ADMX File Name | Printing.admx |
-<!-- DownlevelBrowse-AdmxBacked-End -->
-
-<!-- DownlevelBrowse-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DownlevelBrowse-Examples-End -->
-
-<!-- DownlevelBrowse-End -->
-
-<!-- IntranetPrintersUrl-Begin -->
-## IntranetPrintersUrl
-
-<!-- IntranetPrintersUrl-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- IntranetPrintersUrl-Applicability-End -->
-
-<!-- IntranetPrintersUrl-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_Printing/IntranetPrintersUrl
-```
-<!-- IntranetPrintersUrl-OmaUri-End -->
-
-<!-- IntranetPrintersUrl-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Adds a link to an Internet or intranet Web page to the Add Printer Wizard.
-
-You can use this setting to direct users to a Web page from which they can install printers.
-
-If you enable this setting and type an Internet or intranet address in the text box, the system adds a Browse button to the "Specify a Printer" page in the Add Printer Wizard. The Browse button appears beside the "Connect to a printer on the Internet or on a home or office network" option. When users click Browse, the system opens an Internet browser and navigates to the specified URL address to display the available printers.
-
-This setting makes it easy for users to find the printers you want them to add.
-
-Also, see the "Custom support URL in the Printers folder's left pane" and "Activate Internet printing" settings in "Computer Configuration\Administrative Templates\Printers."
-<!-- IntranetPrintersUrl-Description-End -->
-
-<!-- IntranetPrintersUrl-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- IntranetPrintersUrl-Editable-End -->
-
-<!-- IntranetPrintersUrl-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- IntranetPrintersUrl-DFProperties-End -->
-
-<!-- IntranetPrintersUrl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | IntranetPrintersUrl |
-| Friendly Name | Browse a common web site to find printers |
-| Location | User Configuration |
-| Path | Control Panel > Printers |
-| Registry Key Name | Software\Policies\Microsoft\Windows NT\Printers\Wizard |
-| ADMX File Name | Printing.admx |
-<!-- IntranetPrintersUrl-AdmxBacked-End -->
-
-<!-- IntranetPrintersUrl-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- IntranetPrintersUrl-Examples-End -->
-
-<!-- IntranetPrintersUrl-End -->
-
-<!-- LegacyDefaultPrinterMode-Begin -->
-## LegacyDefaultPrinterMode
-
-<!-- LegacyDefaultPrinterMode-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- LegacyDefaultPrinterMode-Applicability-End -->
-
-<!-- LegacyDefaultPrinterMode-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_Printing/LegacyDefaultPrinterMode
-```
-<!-- LegacyDefaultPrinterMode-OmaUri-End -->
-
-<!-- LegacyDefaultPrinterMode-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This preference allows you to change default printer management.
-
-If you enable this setting, Windows will not manage the default printer.
-
-If you disable this setting, Windows will manage the default printer.
-
-If you do not configure this setting, default printer management will not change.
-<!-- LegacyDefaultPrinterMode-Description-End -->
-
-<!-- LegacyDefaultPrinterMode-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- LegacyDefaultPrinterMode-Editable-End -->
-
-<!-- LegacyDefaultPrinterMode-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- LegacyDefaultPrinterMode-DFProperties-End -->
-
-<!-- LegacyDefaultPrinterMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | SetDefaultPrinterMRUModeOff |
-| Friendly Name | Turn off Windows default printer management |
-| Location | User Configuration |
-| Path | Control Panel > Printers |
-| Registry Key Name | Software\Microsoft\Windows NT\CurrentVersion\Windows |
-| Registry Value Name | LegacyDefaultPrinterMode |
-| ADMX File Name | Printing.admx |
-<!-- LegacyDefaultPrinterMode-AdmxBacked-End -->
-
-<!-- LegacyDefaultPrinterMode-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- LegacyDefaultPrinterMode-Examples-End -->
-
-<!-- LegacyDefaultPrinterMode-End -->
-
-<!-- NoDeletePrinter-Begin -->
-## NoDeletePrinter
-
-<!-- NoDeletePrinter-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- NoDeletePrinter-Applicability-End -->
-
-<!-- NoDeletePrinter-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_Printing/NoDeletePrinter
-```
-<!-- NoDeletePrinter-OmaUri-End -->
-
-<!-- NoDeletePrinter-Description-Begin -->
-<!-- Description-Source-ADMX -->
-If this policy setting is enabled, it prevents users from deleting local and network printers.
-
-If a user tries to delete a printer, such as by using the Delete option in Printers in Control Panel, a message appears explaining that a setting prevents the action.
-
-This setting does not prevent users from running other programs to delete a printer.
-
-If this policy is disabled, or not configured, users can delete printers using the methods described above.
-<!-- NoDeletePrinter-Description-End -->
-
-<!-- NoDeletePrinter-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- NoDeletePrinter-Editable-End -->
-
-<!-- NoDeletePrinter-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- NoDeletePrinter-DFProperties-End -->
-
-<!-- NoDeletePrinter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | NoDeletePrinter |
-| Friendly Name | Prevent deletion of printers |
-| Location | User Configuration |
-| Path | Control Panel > Printers |
-| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
-| Registry Value Name | NoDeletePrinter |
-| ADMX File Name | Printing.admx |
-<!-- NoDeletePrinter-AdmxBacked-End -->
-
-<!-- NoDeletePrinter-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- NoDeletePrinter-Examples-End -->
-
-<!-- NoDeletePrinter-End -->
-
-<!-- PackagePointAndPrintOnly-Begin -->
-## PackagePointAndPrintOnly
-
-<!-- PackagePointAndPrintOnly-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- PackagePointAndPrintOnly-Applicability-End -->
-
-<!-- PackagePointAndPrintOnly-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_Printing/PackagePointAndPrintOnly
-```
-<!-- PackagePointAndPrintOnly-OmaUri-End -->
-
-<!-- PackagePointAndPrintOnly-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy restricts clients computers to use package point and print only.
-
-If this setting is enabled, users will only be able to point and print to printers that use package-aware drivers. When using package point and print, client computers will check the driver signature of all drivers that are downloaded from print servers.
-
-If this setting is disabled, or not configured, users will not be restricted to package-aware point and print only.
-<!-- PackagePointAndPrintOnly-Description-End -->
-
-<!-- PackagePointAndPrintOnly-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- PackagePointAndPrintOnly-Editable-End -->
-
-<!-- PackagePointAndPrintOnly-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- PackagePointAndPrintOnly-DFProperties-End -->
-
-<!-- PackagePointAndPrintOnly-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | PackagePointAndPrintOnly |
-| Friendly Name | Only use Package Point and print |
-| Location | User Configuration |
-| Path | Control Panel > Printers |
-| Registry Key Name | Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint |
-| Registry Value Name | PackagePointAndPrintOnly |
-| ADMX File Name | Printing.admx |
-<!-- PackagePointAndPrintOnly-AdmxBacked-End -->
-
-<!-- PackagePointAndPrintOnly-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- PackagePointAndPrintOnly-Examples-End -->
-
-<!-- PackagePointAndPrintOnly-End -->
-
-<!-- PackagePointAndPrintServerList-Begin -->
-## PackagePointAndPrintServerList
-
-<!-- PackagePointAndPrintServerList-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- PackagePointAndPrintServerList-Applicability-End -->
-
-<!-- PackagePointAndPrintServerList-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_Printing/PackagePointAndPrintServerList
-```
-<!-- PackagePointAndPrintServerList-OmaUri-End -->
-
-<!-- PackagePointAndPrintServerList-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Restricts package point and print to approved servers.
-
-This policy setting restricts package point and print connections to approved servers. This setting only applies to Package Point and Print connections, and is completely independent from the "Point and Print Restrictions" policy that governs the behavior of non-package point and print connections.
-
-Windows Vista and later clients will attempt to make a non-package point and print connection anytime a package point and print connection fails, including attempts that are blocked by this policy. Administrators may need to set both policies to block all print connections to a specific print server.
-
-If this setting is enabled, users will only be able to package point and print to print servers approved by the network administrator. When using package point and print, client computers will check the driver signature of all drivers that are downloaded from print servers.
-
-If this setting is disabled, or not configured, package point and print will not be restricted to specific print servers.
-<!-- PackagePointAndPrintServerList-Description-End -->
-
-<!-- PackagePointAndPrintServerList-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- PackagePointAndPrintServerList-Editable-End -->
-
-<!-- PackagePointAndPrintServerList-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- PackagePointAndPrintServerList-DFProperties-End -->
-
-<!-- PackagePointAndPrintServerList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | PackagePointAndPrintServerList |
-| Friendly Name | Package Point and print - Approved servers |
-| Location | User Configuration |
-| Path | Control Panel > Printers |
-| Registry Key Name | Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint |
-| Registry Value Name | PackagePointAndPrintServerList |
-| ADMX File Name | Printing.admx |
-<!-- PackagePointAndPrintServerList-AdmxBacked-End -->
-
-<!-- PackagePointAndPrintServerList-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- PackagePointAndPrintServerList-Examples-End -->
-
-<!-- PackagePointAndPrintServerList-End -->
-
-<!-- PrinterDirectorySearchScope-Begin -->
-## PrinterDirectorySearchScope
-
-<!-- PrinterDirectorySearchScope-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- PrinterDirectorySearchScope-Applicability-End -->
-
-<!-- PrinterDirectorySearchScope-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_Printing/PrinterDirectorySearchScope
-```
-<!-- PrinterDirectorySearchScope-OmaUri-End -->
-
-<!-- PrinterDirectorySearchScope-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies the Active Directory location where searches for printers begin.
-
-The Add Printer Wizard gives users the option of searching Active Directory for a shared printer.
-
-If you enable this policy setting, these searches begin at the location you specify in the "Default Active Directory path" box. Otherwise, searches begin at the root of Active Directory.
-
-This setting only provides a starting point for Active Directory searches for printers. It does not restrict user searches through Active Directory.
-<!-- PrinterDirectorySearchScope-Description-End -->
-
-<!-- PrinterDirectorySearchScope-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- PrinterDirectorySearchScope-Editable-End -->
-
-<!-- PrinterDirectorySearchScope-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- PrinterDirectorySearchScope-DFProperties-End -->
-
-<!-- PrinterDirectorySearchScope-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | PrinterDirectorySearchScope |
-| Friendly Name | Default Active Directory path when searching for printers |
-| Location | User Configuration |
-| Path | Control Panel > Printers |
-| Registry Key Name | Software\Policies\Microsoft\Windows NT\Printers\Wizard |
-| ADMX File Name | Printing.admx |
-<!-- PrinterDirectorySearchScope-AdmxBacked-End -->
-
-<!-- PrinterDirectorySearchScope-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- PrinterDirectorySearchScope-Examples-End -->
-
-<!-- PrinterDirectorySearchScope-End -->
 
 <!-- ADMX_Printing-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

@@ -1,10 +1,10 @@
 ---
 title: FederatedAuthentication Policy CSP
-description: Learn more about the FederatedAuthentication Area in Policy CSP
+description: Learn more about the FederatedAuthentication Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/30/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage

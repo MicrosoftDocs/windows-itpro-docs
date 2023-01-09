@@ -1,10 +1,10 @@
 ---
 title: Troubleshooting Policy CSP
-description: Learn more about the Troubleshooting Area in Policy CSP
+description: Learn more about the Troubleshooting Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/07/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -50,14 +50,17 @@ Enabling this policy allows you to configure how troubleshooting is applied on t
 5 = Allow the user to choose their own troubleshooting settings.
 
 After setting this policy, you can use the following instructions to check devices in your domain for available troubleshooting from Microsoft:
+
 1. Create a bat script with the following contents:
 rem The following batch script triggers Recommended Troubleshooting
 schtasks /run /TN "\Microsoft\Windows\Diagnosis\RecommendedTroubleshootingScanner"
 
 2. To create a new immediate task, navigate to the Group Policy Management Editor > Computer Configuration > Preferences and select Control Panel Settings.
 3. Under Control Panel settings, right-click on Scheduled Tasks and select New. Select Immediate Task (At least Windows 7).
+
 4. Provide name and description as appropriate, then under Security Options set the user account to System and select the Run with highest privileges checkbox.
 5. In the Actions tab, create a new action, select Start a Program as its type, then enter the file created in step 1.
+
 6. Configure the task to deploy to your domain.
 <!-- AllowRecommendations-Description-End -->
 

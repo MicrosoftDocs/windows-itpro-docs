@@ -1,10 +1,10 @@
 ---
 title: LocalUsersAndGroups Policy CSP
-description: Learn more about the LocalUsersAndGroups Area in Policy CSP
+description: Learn more about the LocalUsersAndGroups Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,16 @@ ms.topic: reference
 
 <!-- Configure-Description-Begin -->
 <!-- Description-Source-DDF -->
-This Setting allows an administrator to manage local groups on a Device. Possible settings: 1. Update Group Membership: Update a group and add and/or remove members though the 'U' action. When using Update, existing group members that are not specified in the policy remain untouched. 2. Replace Group Membership: Restrict a group by replacing group membership through the 'R' action. When using Replace, existing group membership is replaced by the list of members specified in the add member section. This option works in the same way as a Restricted Group and any group members that are not specified in the policy are removed.
+This Setting allows an administrator to manage local groups on a Device.
+Possible settings
+
+1. Update Group Membership Update a group and add and/or remove members though the 'U' action.
+When using Update, existing group members that are not specified in the policy remain untouched.
+
+2. Replace Group Membership Restrict a group by replacing group membership through the 'R' action.
+When using Replace, existing group membership is replaced by the list of members specified in
+the add member section. This option works in the same way as a Restricted Group and any group
+members that are not specified in the policy are removed
 
 > [!CAUTION]
 > If the same group is configured with both Replace and Update, then Replace will win.

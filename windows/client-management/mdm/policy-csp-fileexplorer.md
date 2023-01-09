@@ -1,10 +1,10 @@
 ---
 title: FileExplorer Policy CSP
-description: Learn more about the FileExplorer Area in Policy CSP
+description: Learn more about the FileExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/30/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - FileExplorer
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -240,11 +238,11 @@ A value that can represent one or more folder locations in File Explorer. If not
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Access to all folder locations. |
-| 13 | Documents, Pictures, Downloads |
-| 15 | Desktop, Documents, Pictures, Downloads |
-| 31 | Desktop, Documents, Pictures, Downloads, Network |
-| 47 | This PC, Desktop, Documents, Pictures, Downloads |
-| 63 | This PC, Desktop, Documents, Pictures, Downloads, Network |
+| 13 | Documents, Pictures, Downloads. |
+| 15 | Desktop, Documents, Pictures, Downloads. |
+| 31 | Desktop, Documents, Pictures, Downloads, Network. |
+| 47 | This PC, Desktop, Documents, Pictures, Downloads. |
+| 63 | This PC, Desktop, Documents, Pictures, Downloads, Network. |
 <!-- SetAllowedFolderLocations-AllowedValues-End -->
 
 <!-- SetAllowedFolderLocations-Examples-Begin -->
@@ -297,13 +295,13 @@ A value that can represent one or more storage locations in File Explorer. If no
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Access to all storage locations. |
-| 1 | Removable Drives |
-| 2 | Sync roots |
-| 3 | Removable Drives, Sync roots |
-| 4 | Local Drives |
-| 5 | Removable Drives, Local Drives |
-| 6 | Sync Roots, Local Drives |
-| 7 | Removable Drives, Sync Roots, Local Drives |
+| 1 | Removable Drives. |
+| 2 | Sync roots. |
+| 3 | Removable Drives, Sync roots. |
+| 4 | Local Drives. |
+| 5 | Removable Drives, Local Drives. |
+| 6 | Sync Roots, Local Drives. |
+| 7 | Removable Drives, Sync Roots, Local Drives. |
 <!-- SetAllowedStorageLocations-AllowedValues-End -->
 
 <!-- SetAllowedStorageLocations-Examples-Begin -->
@@ -347,7 +345,7 @@ Disabling data execution prevention can allow certain legacy plug-in application
 
 <!-- TurnOffDataExecutionPreventionForExplorer-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -403,7 +401,7 @@ Disabling heap termination on corruption can allow certain legacy plug-in applic
 
 <!-- TurnOffHeapTerminationOnCorruption-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

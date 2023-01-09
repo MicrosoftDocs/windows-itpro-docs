@@ -1,10 +1,10 @@
 ---
 title: Browser Policy CSP
-description: Learn more about the Browser Area in Policy CSP
+description: Learn more about the Browser Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/04/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -45,11 +45,12 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.
 
-**Note**: Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.
+> [!NOTE]
+> Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.
 
-If you enable or don't configure this setting, employees can see the Address bar drop-down functionality in Microsoft Edge.
+- If you enable or don't configure this setting, employees can see the Address bar drop-down functionality in Microsoft Edge.
 
-If you disable this setting, employees won't see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type".
+- If you disable this setting, employees won't see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type".
 <!-- AllowAddressBarDropdown-Description-End -->
 
 <!-- AllowAddressBarDropdown-Editable-Begin -->
@@ -118,11 +119,11 @@ If you disable this setting, employees won't see the Address bar drop-down funct
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether employees can use Autofill to automatically fill in form fields while using Microsoft Edge. By default, employees can choose whether to use Autofill.
 
-If you enable this setting, employees can use Autofill to automatically fill in forms while using Microsoft Edge.
+- If you enable this setting, employees can use Autofill to automatically fill in forms while using Microsoft Edge.
 
-If you disable this setting, employees can't use Autofill to automatically fill in forms while using Microsoft Edge.
+- If you disable this setting, employees can't use Autofill to automatically fill in forms while using Microsoft Edge.
 
-If you don't configure this setting, employees can choose whether to use Autofill to automatically fill in forms while using Microsoft Edge.
+- If you don't configure this setting, employees can choose whether to use Autofill to automatically fill in forms while using Microsoft Edge.
 <!-- AllowAutofill-Description-End -->
 
 <!-- AllowAutofill-Editable-Begin -->
@@ -327,9 +328,9 @@ This setting lets you configure how your company deals with cookies.
 
 | Value | Description |
 |:--|:--|
-| 0 | Block all cookies from all sites |
-| 1 | Block only cookies from third party websites |
-| 2 (Default) | Allow all cookies from all sites |
+| 0 | Block all cookies from all sites. |
+| 1 | Block only cookies from third party websites. |
+| 2 (Default) | Allow all cookies from all sites. |
 <!-- AllowCookies-AllowedValues-End -->
 
 <!-- AllowCookies-GpMapping-Begin -->
@@ -382,9 +383,9 @@ To verify AllowCookies is set to 0 (not allowed):
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether F12 Developer Tools are available on Microsoft Edge.
 
-If you enable or don't configure this setting, the F12 Developer Tools are available in Microsoft Edge.
+- If you enable or don't configure this setting, the F12 Developer Tools are available in Microsoft Edge.
 
-If you disable this setting, the F12 Developer Tools aren't available in Microsoft Edge.
+- If you disable this setting, the F12 Developer Tools aren't available in Microsoft Edge.
 <!-- AllowDeveloperTools-Description-End -->
 
 <!-- AllowDeveloperTools-Editable-Begin -->
@@ -453,11 +454,11 @@ If you disable this setting, the F12 Developer Tools aren't available in Microso
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether employees can send Do Not Track requests to websites that ask for tracking info. By default, Do Not Track requests aren't sent, but employees can choose to turn on and send requests.
 
-If you enable this setting, Do Not Tracker requests are always sent to websites asking for tracking info.
+- If you enable this setting, Do Not Tracker requests are always sent to websites asking for tracking info.
 
-If you disable this setting, Do Not Track requests are never sent to websites asking for tracking info.
+- If you disable this setting, Do Not Track requests are never sent to websites asking for tracking info.
 
-If you don't configure this setting, employees can choose whether to send Do Not Track requests to websites asking for tracking info.
+- If you don't configure this setting, employees can choose whether to send Do Not Track requests to websites asking for tracking info.
 <!-- AllowDoNotTrack-Description-End -->
 
 <!-- AllowDoNotTrack-Editable-Begin -->
@@ -533,9 +534,9 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 <!-- Description-Source-ADMX -->
 This setting lets you decide whether employees can load extensions in Microsoft Edge.
 
-If you enable or don't configure this setting, employees can use Microsoft Edge Extensions.
+- If you enable or don't configure this setting, employees can use Microsoft Edge Extensions.
 
-If you disable this setting, employees can't use Microsoft Edge Extensions.
+- If you disable this setting, employees can't use Microsoft Edge Extensions.
 <!-- AllowExtensions-Description-End -->
 
 <!-- AllowExtensions-Editable-Begin -->
@@ -604,9 +605,9 @@ If you disable this setting, employees can't use Microsoft Edge Extensions.
 <!-- Description-Source-ADMX -->
 This setting lets you decide whether employees can run Adobe Flash in Microsoft Edge.
 
-If you enable or don't configure this setting, employees can use Adobe Flash.
+- If you enable or don't configure this setting, employees can use Adobe Flash.
 
-If you disable this setting, employees can't use Adobe Flash.
+- If you disable this setting, employees can't use Adobe Flash.
 <!-- AllowFlash-Description-End -->
 
 <!-- AllowFlash-Editable-Begin -->
@@ -673,7 +674,7 @@ If you disable this setting, employees can't use Adobe Flash.
 
 <!-- AllowFlashClickToRun-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable or don’t configure the Adobe Flash Click-to-Run setting, Microsoft Edge will require a user to click the Click-to-Run button, to click the content, or for the site to appear on the auto-allowed list, before loading and running the content.
+If you enable or don't configure the Adobe Flash Click-to-Run setting, Microsoft Edge will require a user to click the Click-to-Run button, to click the content, or for the site to appear on the auto-allowed list, before loading and running the content.
 
 Sites get onto the auto-allowed list based on user feedback, specifically by how often the content is allowed to load and run.
 <!-- AllowFlashClickToRun-Description-End -->
@@ -815,9 +816,9 @@ If disabled, full-screen mode is unavailable for use in Microsoft Edge.
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether employees can browse using InPrivate website browsing.
 
-If you enable or don't configure this setting, employees can use InPrivate website browsing.
+- If you enable or don't configure this setting, employees can use InPrivate website browsing.
 
-If you disable this setting, employees can't use InPrivate website browsing.
+- If you disable this setting, employees can't use InPrivate website browsing.
 <!-- AllowInPrivate-Description-End -->
 
 <!-- AllowInPrivate-Editable-Begin -->
@@ -886,9 +887,9 @@ If you disable this setting, employees can't use InPrivate website browsing.
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether to use the Microsoft Compatibility List (a Microsoft-provided list that helps sites with known compatibility issues to display properly) in Microsoft Edge. By default, the Microsoft Compatibility List is enabled and can be viewed by visiting about:compat.
 
-If you enable or don’t configure this setting, Microsoft Edge periodically downloads the latest version of the list from Microsoft, applying the updates during browser navigation. Visiting any site on the Microsoft Compatibility List prompts the employee to use Internet Explorer 11, where the site is automatically rendered as though it’s in whatever version of IE is necessary for it to appear properly.
+- If you enable or don't configure this setting, Microsoft Edge periodically downloads the latest version of the list from Microsoft, applying the updates during browser navigation. Visiting any site on the Microsoft Compatibility List prompts the employee to use Internet Explorer 11, where the site is automatically rendered as though it's in whatever version of IE is necessary for it to appear properly.
 
-If you disable this setting, the Microsoft Compatibility List isn’t used during browser navigation.
+- If you disable this setting, the Microsoft Compatibility List isn't used during browser navigation.
 <!-- AllowMicrosoftCompatibilityList-Description-End -->
 
 <!-- AllowMicrosoftCompatibilityList-Editable-Begin -->
@@ -957,11 +958,11 @@ If you disable this setting, the Microsoft Compatibility List isn’t used durin
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether employees can save their passwords locally, using Password Manager. By default, Password Manager is turned on.
 
-If you enable this setting, employees can use Password Manager to save their passwords locally.
+- If you enable this setting, employees can use Password Manager to save their passwords locally.
 
-If you disable this setting, employees can't use Password Manager to save their passwords locally.
+- If you disable this setting, employees can't use Password Manager to save their passwords locally.
 
-If you don't configure this setting, employees can choose whether to use Password Manager to save their passwords locally.
+- If you don't configure this setting, employees can choose whether to use Password Manager to save their passwords locally.
 <!-- AllowPasswordManager-Description-End -->
 
 <!-- AllowPasswordManager-Editable-Begin -->
@@ -1035,11 +1036,11 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether to turn on Pop-up Blocker. By default, Pop-up Blocker is turned on..
 
-If you enable this setting, Pop-up Blocker is turned on, stopping pop-up windows from appearing.
+- If you enable this setting, Pop-up Blocker is turned on, stopping pop-up windows from appearing.
 
-If you disable this setting, Pop-up Blocker is turned off, letting pop-ups windows appear.
+- If you disable this setting, Pop-up Blocker is turned off, letting pop-ups windows appear.
 
-If you don't configure this setting, employees can choose whether to use Pop-up Blocker.
+- If you don't configure this setting, employees can choose whether to use Pop-up Blocker.
 <!-- AllowPopups-Description-End -->
 
 <!-- AllowPopups-Editable-Begin -->
@@ -1113,9 +1114,9 @@ To verify AllowPopups is set to 0 (not allowed):
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether Microsoft Edge can pre-launch during Windows sign in, when the system is idle, and each time Microsoft Edge is closed. By default this setting is to allow pre-launch.
 
-If you allow pre-launch, disable, or don’t configure this policy setting, Microsoft Edge pre-launches during Windows sign in, when the system is idle, and each time Microsoft Edge is closed; minimizing the amount of time required to start up Microsoft Edge.
+If you allow pre-launch, disable, or don't configure this policy setting, Microsoft Edge pre-launches during Windows sign in, when the system is idle, and each time Microsoft Edge is closed; minimizing the amount of time required to start up Microsoft Edge.
 
-If you prevent pre-launch, Microsoft Edge won’t pre-launch during Windows sign in, when the system is idle, or each time Microsoft Edge is closed.
+If you prevent pre-launch, Microsoft Edge won't pre-launch during Windows sign in, when the system is idle, or each time Microsoft Edge is closed.
 <!-- AllowPrelaunch-Description-End -->
 
 <!-- AllowPrelaunch-Editable-Begin -->
@@ -1323,14 +1324,15 @@ If disabled, the browsing history stops saving and is not visible in the History
 
 <!-- AllowSearchEngineCustomization-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting lets you decide whether users can change their search engine. If you disable this setting, users can't add new search engines or change the default used in the address bar.
+This policy setting lets you decide whether users can change their search engine.
+- If you disable this setting, users can't add new search engines or change the default used in the address bar.
 
-**Important**:
+**Important**
 This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
 
-If you enable or don't configure this policy, users can add new search engines and change the default used in the address bar from within Microsoft Edge Settings.
+- If you enable or don't configure this policy, users can add new search engines and change the default used in the address bar from within Microsoft Edge Settings.
 
-If you disable this setting, users can't add search engines or change the default used in the address bar.
+- If you disable this setting, users can't add search engines or change the default used in the address bar.
 <!-- AllowSearchEngineCustomization-Description-End -->
 
 <!-- AllowSearchEngineCustomization-Editable-Begin -->
@@ -1399,11 +1401,11 @@ If you disable this setting, users can't add search engines or change the defaul
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether search suggestions appear in the Address bar of Microsoft Edge. By default, employees can choose whether search suggestions appear in the Address bar of Microsoft Edge.
 
-If you enable this setting, employees can see search suggestions in the Address bar of Microsoft Edge.
+- If you enable this setting, employees can see search suggestions in the Address bar of Microsoft Edge.
 
-If you disable this setting, employees can't see search suggestions in the Address bar of Microsoft Edge.
+- If you disable this setting, employees can't see search suggestions in the Address bar of Microsoft Edge.
 
-If you don't configure this setting, employees can choose whether search suggestions appear in the Address bar of Microsoft Edge.
+- If you don't configure this setting, employees can choose whether search suggestions appear in the Address bar of Microsoft Edge.
 <!-- AllowSearchSuggestionsinAddressBar-Description-End -->
 
 <!-- AllowSearchSuggestionsinAddressBar-Editable-Begin -->
@@ -1482,7 +1484,7 @@ Supported versions: Microsoft Edge on Windows 10, version 1809
 Default setting: Disabled or not configured
 Related policies:
 - Allows development of Windows Store apps and installing them from an integrated development environment (IDE)
-- Allow all trusted apps to install​
+- Allow all trusted apps to install 
 <!-- AllowSideloadingOfExtensions-Description-End -->
 
 <!-- AllowSideloadingOfExtensions-Editable-Begin -->
@@ -1551,11 +1553,11 @@ Related policies:
 <!-- Description-Source-ADMX -->
 This policy setting lets you configure whether to turn on Windows Defender SmartScreen. Windows Defender SmartScreen provides warning messages to help protect your employees from potential phishing scams and malicious software. By default, Windows Defender SmartScreen is turned on.
 
-If you enable this setting, Windows Defender SmartScreen is turned on and employees can't turn it off.
+- If you enable this setting, Windows Defender SmartScreen is turned on and employees can't turn it off.
 
-If you disable this setting, Windows Defender SmartScreen is turned off and employees can't turn it on.
+- If you disable this setting, Windows Defender SmartScreen is turned off and employees can't turn it on.
 
-If you don't configure this setting, employees can choose whether to use Windows Defender SmartScreen.
+- If you don't configure this setting, employees can choose whether to use Windows Defender SmartScreen.
 <!-- AllowSmartScreen-Description-End -->
 
 <!-- AllowSmartScreen-Editable-Begin -->
@@ -1629,9 +1631,9 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether Microsoft Edge can load the Start and New Tab page during Windows sign in and each time Microsoft Edge is closed. By default this setting is to allow preloading.
 
-If you allow preloading, disable, or don’t configure this policy setting, Microsoft Edge loads the Start and New Tab page during Windows sign in and each time Microsoft Edge is closed; minimizing the amount of time required to start up Microsoft Edge and to start a new tab.
+If you allow preloading, disable, or don't configure this policy setting, Microsoft Edge loads the Start and New Tab page during Windows sign in and each time Microsoft Edge is closed; minimizing the amount of time required to start up Microsoft Edge and to start a new tab.
 
-If you prevent preloading, Microsoft Edge won’t load the Start or New Tab page during Windows sign in and each time Microsoft Edge is closed.
+If you prevent preloading, Microsoft Edge won't load the Start or New Tab page during Windows sign in and each time Microsoft Edge is closed.
 <!-- AllowTabPreloading-Description-End -->
 
 <!-- AllowTabPreloading-Editable-Begin -->
@@ -1699,11 +1701,11 @@ If you prevent preloading, Microsoft Edge won’t load the Start or New Tab page
 <!-- Description-Source-ADMX -->
 This policy setting lets you configure what appears when Microsoft Edge opens a new tab. By default, Microsoft Edge opens the New Tab page.
 
-If you enable this setting, Microsoft Edge opens a new tab with the New Tab page.
+- If you enable this setting, Microsoft Edge opens a new tab with the New Tab page.
 
-If you disable this setting, Microsoft Edge opens a new tab with a blank page. If you use this setting, employees can't change it.
+- If you disable this setting, Microsoft Edge opens a new tab with a blank page. If you use this setting, employees can't change it.
 
-If you don't configure this setting, employees can choose how new tabs appears.
+- If you don't configure this setting, employees can choose how new tabs appears.
 <!-- AllowWebContentOnNewTabPage-Description-End -->
 
 <!-- AllowWebContentOnNewTabPage-Editable-Begin -->
@@ -1772,9 +1774,9 @@ If you don't configure this setting, employees can choose how new tabs appears.
 <!-- Description-Source-ADMX -->
 This policy setting helps you to decide whether to make the Books tab visible, regardless of a device's country or region setting, as configured in the Country or region area of Windows settings.
 
-If you enable this setting, Microsoft Edge shows the Books Library, regardless of the device's country or region.
+- If you enable this setting, Microsoft Edge shows the Books Library, regardless of the device's country or region.
 
-If you disable or don't configure this setting, Microsoft Edge shows the Books Library only in countries or regions where it's supported.
+- If you disable or don't configure this setting, Microsoft Edge shows the Books Library only in countries or regions where it's supported.
 <!-- AlwaysEnableBooksLibrary-Description-End -->
 
 <!-- AlwaysEnableBooksLibrary-Editable-Begin -->
@@ -1843,9 +1845,9 @@ If you disable or don't configure this setting, Microsoft Edge shows the Books L
 <!-- Description-Source-ADMX -->
 This policy setting allows the automatic clearing of browsing data when Microsoft Edge closes.
 
-If you enable this policy setting, clearing browsing history on exit is turned on.
+- If you enable this policy setting, clearing browsing history on exit is turned on.
 
-If you disable or don't configure this policy setting, it can be turned on and configured by the employee in the Clear browsing data options under Settings.
+- If you disable or don't configure this policy setting, it can be turned on and configured by the employee in the Clear browsing data options under Settings.
 <!-- ClearBrowsingDataOnExit-Description-End -->
 
 <!-- ClearBrowsingDataOnExit-Editable-Begin -->
@@ -1919,7 +1921,8 @@ To verify whether browsing data is cleared on exit (ClearBrowsingDataOnExit is s
 
 <!-- ConfigureAdditionalSearchEngines-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows you to add up to 5 additional search engines for MDM-enrolled devices. If this setting is turned on, you can add up to 5 additional search engines for your employee. For each additional search engine you wish to add, you must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. This policy does not affect the default search engine. Employees will not be able to remove these search engines, but they can set any one of these as the default. If this setting is not configured, the search engines are the ones specified in the App settings. If this setting is disabled, the search engines you had added will be deleted from your employee's machine. Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.
+Allows you to add up to 5 additional search engines for MDM-enrolled devices. If this setting is turned on, you can add up to 5 additional search engines for your employee. For each additional search engine you wish to add, you must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. This policy does not affect the default search engine. Employees will not be able to remove these search engines, but they can set any one of these as the default. If this setting is not configured, the search engines are the ones specified in the App settings.
+- If this setting is disabled, the search engines you had added will be deleted from your employee's machine. Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.
 <!-- ConfigureAdditionalSearchEngines-Description-End -->
 
 <!-- ConfigureAdditionalSearchEngines-Editable-Begin -->
@@ -2071,10 +2074,10 @@ The Home button loads either the default Start page, the New tab page, or a URL 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Show home button and load the Start page |
-| 1 | Show home button and load the New tab page |
-| 2 | Show home button and load the custom URL defined in the Set Home Button URL policy |
-| 3 | Hide home button |
+| 0 (Default) | Show home button and load the Start page. |
+| 1 | Show home button and load the New tab page. |
+| 2 | Show home button and load the custom URL defined in the Set Home Button URL policy. |
+| 3 | Hide home button. |
 <!-- ConfigureHomeButton-AllowedValues-End -->
 
 <!-- ConfigureHomeButton-GpMapping-Begin -->
@@ -2120,7 +2123,7 @@ The Home button loads either the default Start page, the New tab page, or a URL 
 
 <!-- ConfigureKioskMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-Configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access, either as a single app or as one of multiple apps running on the kiosk device. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge. You need to configure Microsoft Edge in assigned access for this policy to take effect; otherwise, these settings are ignored. To learn more about assigned access and kiosk configuration, see “Configure kiosk and shared devices running Windows desktop editions” (<https://aka.ms/E489. vw)>. If enabled and set to 0 (Default or not configured): - If it’s a single app, it runs InPrivate full screen for digital signage or interactive displays. - If it’s one of many apps, Microsoft Edge runs as normal. If enabled and set to 1: - If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. - If it’s one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can’t customize Microsoft Edge.
+Configure how Microsoft Edge behaves when it's running in kiosk mode with assigned access, either as a single app or as one of multiple apps running on the kiosk device. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge. You need to configure Microsoft Edge in assigned access for this policy to take effect; otherwise, these settings are ignored. To learn more about assigned access and kiosk configuration, see "Configure kiosk and shared devices running Windows desktop editions" (<https://aka.ms/E489vw)>. If enabled and set to 0 (Default or not configured): - If it's a single app, it runs InPrivate full screen for digital signage or interactive displays. - If it's one of many apps, Microsoft Edge runs as normal. If enabled and set to 1: - If it's a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can't minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking "End session." You can configure Microsoft Edge to restart after a period of inactivity by using the "Configure kiosk reset after idle timeout" policy. - If it's one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can't customize Microsoft Edge.
 <!-- ConfigureKioskMode-Description-End -->
 
 <!-- ConfigureKioskMode-Editable-Begin -->
@@ -2142,8 +2145,8 @@ Configure how Microsoft Edge behaves when it’s running in kiosk mode with assi
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable |
-| 0 (Default) | Disable |
+| 1 | Enable. |
+| 0 (Default) | Disable. |
 <!-- ConfigureKioskMode-AllowedValues-End -->
 
 <!-- ConfigureKioskMode-GpMapping-Begin -->
@@ -2186,7 +2189,7 @@ Configure how Microsoft Edge behaves when it’s running in kiosk mode with assi
 
 <!-- ConfigureKioskResetAfterIdleTimeout-Description-Begin -->
 <!-- Description-Source-DDF -->
-You can configure Microsoft Edge to reset to the configured start experience after a specified amount of idle time. The reset timer begins after the last user interaction. Resetting to the configured start experience deletes the current user’s browsing data. If enabled, you can set the idle time in minutes (0-1440). You must set the Configure kiosk mode policy to 1 and configure Microsoft Edge in assigned access as a single app for this policy to work. Once the idle time meets the time specified, a confirmation message prompts the user to continue, and if no user action, Microsoft Edge resets after 30 seconds. If you set this policy to 0, Microsoft Edge does not use an idle timer. If disabled or not configured, the default value is 5 minutes. If you do not configure Microsoft Edge in assigned access, then this policy does not take effect.
+You can configure Microsoft Edge to reset to the configured start experience after a specified amount of idle time. The reset timer begins after the last user interaction. Resetting to the configured start experience deletes the current user's browsing data. If enabled, you can set the idle time in minutes (0-1440). You must set the Configure kiosk mode policy to 1 and configure Microsoft Edge in assigned access as a single app for this policy to work. Once the idle time meets the time specified, a confirmation message prompts the user to continue, and if no user action, Microsoft Edge resets after 30 seconds. If you set this policy to 0, Microsoft Edge does not use an idle timer. If disabled or not configured, the default value is 5 minutes. If you do not configure Microsoft Edge in assigned access, then this policy does not take effect.
 <!-- ConfigureKioskResetAfterIdleTimeout-Description-End -->
 
 <!-- ConfigureKioskResetAfterIdleTimeout-Editable-Begin -->
@@ -2267,10 +2270,10 @@ You can configure Microsoft Edge to lock down the Start page, preventing users f
 
 | Value | Description |
 |:--|:--|
-| 0 | Load the Start page |
-| 1 | Load the New tab page |
-| 2 | Load the previous pages |
-| 3 (Default) | Load a specific page or pages |
+| 0 | Load the Start page. |
+| 1 | Load the New tab page. |
+| 2 | Load the previous pages. |
+| 3 (Default) | Load a specific page or pages. |
 <!-- ConfigureOpenMicrosoftEdgeWith-AllowedValues-End -->
 
 <!-- ConfigureOpenMicrosoftEdgeWith-GpMapping-Begin -->
@@ -2341,10 +2344,10 @@ Configures what browsing data will be sent to Microsoft 365 Analytics for device
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | No data collected or sent |
-| 1 | Send intranet history only |
-| 2 | Send Internet history only |
-| 3 | Send both intranet and Internet history |
+| 0 (Default) | No data collected or sent. |
+| 1 | Send intranet history only. |
+| 2 | Send Internet history only. |
+| 3 | Send both intranet and Internet history. |
 <!-- ConfigureTelemetryForMicrosoft365Analytics-AllowedValues-End -->
 
 <!-- ConfigureTelemetryForMicrosoft365Analytics-GpMapping-Begin -->
@@ -2398,7 +2401,6 @@ You can configure Microsoft Edge to disable the lockdown of Start pages allowing
 
 > [!IMPORTANT]
 > This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/microsoft-edge/microsoft-browser-extension-policy).
-
 <!-- DisableLockdownOfStartPages-Editable-End -->
 
 <!-- DisableLockdownOfStartPages-DFProperties-Begin -->
@@ -2462,9 +2464,9 @@ You can configure Microsoft Edge to disable the lockdown of Start pages allowing
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide how much data to send to Microsoft about the book you're reading from the Books tab in Microsoft Edge.
 
-If you enable this setting, Microsoft Edge sends additional telemetry data, on top of the basic telemetry data, from the Books tab.
+- If you enable this setting, Microsoft Edge sends additional telemetry data, on top of the basic telemetry data, from the Books tab.
 
-If you disable or don't configure this setting, Microsoft Edge only sends basic telemetry data, depending on your device configuration.
+- If you disable or don't configure this setting, Microsoft Edge only sends basic telemetry data, depending on your device configuration.
 <!-- EnableExtendedBooksTelemetry-Description-End -->
 
 <!-- EnableExtendedBooksTelemetry-Editable-Begin -->
@@ -2588,7 +2590,7 @@ This setting lets you configure whether your company uses Enterprise Mode and th
 
 <!-- EnterpriseSiteListServiceUrl-Description-Begin -->
 <!-- Description-Source-DDF -->
-**Important**: . Discontinued in Windows 10, version 1511. Use the Browser/EnterpriseModeSiteList policy instead.
+Important. Discontinued in Windows 10, version 1511. Use the Browser/EnterpriseModeSiteList policy instead.
 <!-- EnterpriseSiteListServiceUrl-Description-End -->
 
 <!-- EnterpriseSiteListServiceUrl-Editable-Begin -->
@@ -2675,7 +2677,7 @@ Configure first run URL.
 
 <!-- HomePages-Description-Begin -->
 <!-- Description-Source-DDF -->
-When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users are not allowed to make changes to their Start pages. If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:  `<support.contoso.com>` `<support.microsoft.com>` If disabled or not configured, the webpages specified in App settings loads as the default Start pages. Version 1703 or later: If you do not want to send traffic to Microsoft, enable this policy and use the `<about:blank>` value, which honors domain- and non-domain-joined devices, when it is the only configured URL. Version 1809: If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy. Supported devices: Domain-joined or MDM-enrolled Related policy: - Configure Open Microsoft Edge With - Disable Lockdown of Start Pages
+When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users are not allowed to make changes to their Start pages. If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format: `<support.contoso.com>` `<support.microsoft.com>` If disabled or not configured, the webpages specified in App settings loads as the default Start pages. Version 1703 or later: If you do not want to send traffic to Microsoft, enable this policy and use the `<about:blank>` value, which honors domain- and non-domain-joined devices, when it is the only configured URL. Version 1809: If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy. Supported devices: Domain-joined or MDM-enrolled Related policy: - Configure Open Microsoft Edge With - Disable Lockdown of Start Pages
 <!-- HomePages-Description-End -->
 
 <!-- HomePages-Editable-Begin -->
@@ -2734,12 +2736,12 @@ When you enable the Configure Open Microsoft Edge With policy, you can configure
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether employees can add, import, sort, or edit the Favorites list on Microsoft Edge.
 
-If you enable this setting, employees won't be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
+- If you enable this setting, employees won't be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
 
-**Important**:
+**Important**
 Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
 
-If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.
+- If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.
 <!-- LockdownFavorites-Description-End -->
 
 <!-- LockdownFavorites-Editable-Begin -->
@@ -2808,9 +2810,9 @@ If you disable or don't configure this setting (default), employees can add, imp
 <!-- Description-Source-ADMX -->
 This policy settings lets you decide whether employees can access the about:flags page, which is used to change developer settings and to enable experimental features.
 
-If you enable this policy setting, employees can't access the about:flags page.
+- If you enable this policy setting, employees can't access the about:flags page.
 
-If you disable or don't configure this setting, employees can access the about:flags page.
+- If you disable or don't configure this setting, employees can access the about:flags page.
 <!-- PreventAccessToAboutFlagsInMicrosoftEdge-Description-End -->
 
 <!-- PreventAccessToAboutFlagsInMicrosoftEdge-Editable-Begin -->
@@ -2950,9 +2952,9 @@ If disabled or not configured, overriding certificate errors are allowed.
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether employees see Microsoft's First Run webpage when opening Microsoft Edge for the first time.
 
-If you enable this setting, employees won't see the First Run page when opening Microsoft Edge for the first time.
+- If you enable this setting, employees won't see the First Run page when opening Microsoft Edge for the first time.
 
-If you disable or don't configure this setting, employees will see the First Run page when opening Microsoft Edge for the first time.
+- If you disable or don't configure this setting, employees will see the First Run page when opening Microsoft Edge for the first time.
 <!-- PreventFirstRunPage-Description-End -->
 
 <!-- PreventFirstRunPage-Editable-Begin -->
@@ -3021,9 +3023,9 @@ If you disable or don't configure this setting, employees will see the First Run
 <!-- Description-Source-ADMX -->
 This policy lets you decide whether Microsoft Edge can gather Live Tile metadata from the ieonline.microsoft.com service to provide a better experience while pinning a Live Tile to the Start menu.
 
-If you enable this setting, Microsoft Edge won't gather the Live Tile metadata, providing a minimal experience when a user pins a Live Tile to the Start menu.
+- If you enable this setting, Microsoft Edge won't gather the Live Tile metadata, providing a minimal experience when a user pins a Live Tile to the Start menu.
 
-If you disable or don't configure this setting, Microsoft Edge gathers the Live Tile metadata, providing a fuller and more complete experience when a user pins a Live Tile to the Start menu.
+- If you disable or don't configure this setting, Microsoft Edge gathers the Live Tile metadata, providing a fuller and more complete experience when a user pins a Live Tile to the Start menu.
 <!-- PreventLiveTileDataCollection-Description-End -->
 
 <!-- PreventLiveTileDataCollection-Editable-Begin -->
@@ -3092,9 +3094,9 @@ If you disable or don't configure this setting, Microsoft Edge gathers the Live 
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about potentially malicious websites.
 
-If you enable this setting, employees can't ignore Windows Defender SmartScreen warnings and they are blocked from continuing to the site.
+- If you enable this setting, employees can't ignore Windows Defender SmartScreen warnings and they are blocked from continuing to the site.
 
-If you disable or don't configure this setting, employees can ignore Windows Defender SmartScreen warnings and continue to the site.
+- If you disable or don't configure this setting, employees can ignore Windows Defender SmartScreen warnings and continue to the site.
 <!-- PreventSmartScreenPromptOverride-Description-End -->
 
 <!-- PreventSmartScreenPromptOverride-Editable-Begin -->
@@ -3163,9 +3165,9 @@ If you disable or don't configure this setting, employees can ignore Windows Def
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about downloading unverified files.
 
-If you enable this setting, employees can't ignore Windows Defender SmartScreen warnings and they are blocked from downloading the unverified files.
+- If you enable this setting, employees can't ignore Windows Defender SmartScreen warnings and they are blocked from downloading the unverified files.
 
-If you disable or don't configure this setting, employees can ignore Windows Defender SmartScreen warnings and continue the download process.
+- If you disable or don't configure this setting, employees can ignore Windows Defender SmartScreen warnings and continue the download process.
 <!-- PreventSmartScreenPromptOverrideForFiles-Description-End -->
 
 <!-- PreventSmartScreenPromptOverrideForFiles-Editable-Begin -->
@@ -3232,7 +3234,7 @@ If you disable or don't configure this setting, employees can ignore Windows Def
 
 <!-- PreventTurningOffRequiredExtensions-Description-Begin -->
 <!-- Description-Source-DDF -->
-You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically. When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs). For example, adding Microsoft.OneNoteWebClipper_8. wekyb3. d8. bbwe;Microsoft.OfficeOnline_8. wekyb3. d8. bbwe prevents a user from turning off the OneNote Web Clipper and Office Online extension. When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension. If disabled or not configured, extensions defined as part of this policy get ignored. Default setting: Disabled or not configured Related policies: Allow Developer Tools Related Documents: - Find a package family name (PFN) for per-app VPN (<https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)> - How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (<https://docs.microsoft.com/intune/windows-store-for-business)> - How to assign apps to groups with Microsoft Intune (<https://docs.microsoft.com/intune/apps-deploy)> - Manage apps from the Microsoft Store for Business with System Center Configuration Manager (<https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)> - How to add Windows line-of-business (LOB) apps to Microsoft Intune (<https://docs.microsoft.com/intune/lob-apps-windows)>
+You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically. When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs). For example, adding Microsoft. OneNoteWebClipper_8wekyb3d8bbwe;Microsoft. OfficeOnline_8wekyb3d8bbwe prevents a user from turning off the OneNote Web Clipper and Office Online extension. When enabled, removing extensions from the list does not uninstall the extension from the user's computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension. If disabled or not configured, extensions defined as part of this policy get ignored. Default setting: Disabled or not configured Related policies: Allow Developer Tools Related Documents: - Find a package family name (PFN) for per-app VPN (<https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)> - How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (<https://docs.microsoft.com/intune/windows-store-for-business)> - How to assign apps to groups with Microsoft Intune (<https://docs.microsoft.com/intune/apps-deploy)> - Manage apps from the Microsoft Store for Business with System Center Configuration Manager (<https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)> - How to add Windows line-of-business (LOB) apps to Microsoft Intune (<https://docs.microsoft.com/intune/lob-apps-windows)>
 <!-- PreventTurningOffRequiredExtensions-Description-End -->
 
 <!-- PreventTurningOffRequiredExtensions-Editable-Begin -->
@@ -3292,9 +3294,9 @@ You can define a list of extensions in Microsoft Edge that users cannot turn off
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether an employee's LocalHost IP address shows while making calls using the WebRTC protocol.
 
-If you enable this setting, LocalHost IP addresses are hidden while making calls using the WebRTC protocol.
+- If you enable this setting, LocalHost IP addresses are hidden while making calls using the WebRTC protocol.
 
-If you disable or don't configure this setting, LocalHost IP addresses are shown while making calls using the WebRTC protocol.
+- If you disable or don't configure this setting, LocalHost IP addresses are shown while making calls using the WebRTC protocol.
 <!-- PreventUsingLocalHostIPAddressForWebRTC-Description-End -->
 
 <!-- PreventUsingLocalHostIPAddressForWebRTC-Editable-Begin -->
@@ -3361,9 +3363,12 @@ If you disable or don't configure this setting, LocalHost IP addresses are shown
 
 <!-- ProvisionFavorites-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees cannot modify, sort, move, export or delete these provisioned favorites. If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
+This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees cannot modify, sort, move, export or delete these provisioned favorites.
+- If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites
 
-**Important**: Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge. If you disable or don't configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.
+> [!IMPORTANT]
+> Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+- If you disable or don't configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.
 <!-- ProvisionFavorites-Description-End -->
 
 <!-- ProvisionFavorites-Editable-Begin -->
@@ -3386,7 +3391,7 @@ This policy setting allows you to configure a default set of favorites, which wi
 |:--|:--|
 | Name | ConfiguredFavorites |
 | Friendly Name | Provision Favorites |
-| Element Name | Specify the URL which points to the file that has all the data for provisioning favorites (in html format). You can export a set of favorites from Microsoft Edge and use that html file for provisioning user machines.<br> <br> URL can be specified as<br> 1. HTTP location: https://localhost:8080/URLs.html<br> 2. Local network: \\network\shares\URLs.html<br> 3. Local file: file:///c:\\Users\\`<user>`\\Documents\\URLs.html or C:\\Users\\`<user>`\\Documents\\URLs.html |
+| Element Name | Specify the URL which points to the file that has all the data for provisioning favorites (in html format). You can export a set of favorites from Microsoft Edge and use that html file for provisioning user machines.<br> <br> URL can be specified as<br> <br> 1. HTTP location: https://localhost:8080/URLs.html<br> 2. Local network: \\network\shares\URLs.html<br> 3. Local file: file:///c:\\Users\\`<user>`\\Documents\\URLs.html or C:\\Users\\`<user>`\\Documents\\URLs.html |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Microsoft Edge |
 | Registry Key Name | Software\Policies\Microsoft\MicrosoftEdge\Favorites |
@@ -3429,9 +3434,9 @@ To define a default list of favorites:
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether your intranet sites should all open using Internet Explorer 11. This setting should only be used if there are known compatibility problems with Microsoft Edge.
 
-If you enable this setting, all intranet sites are automatically opened using Internet Explorer 11.
+- If you enable this setting, all intranet sites are automatically opened using Internet Explorer 11.
 
-If you disable or don't configure this setting, all intranet sites are automatically opened using Microsoft Edge.
+- If you disable or don't configure this setting, all intranet sites are automatically opened using Microsoft Edge.
 <!-- SendIntranetTraffictoInternetExplorer-Description-End -->
 
 <!-- SendIntranetTraffictoInternetExplorer-Editable-Begin -->
@@ -3498,7 +3503,8 @@ If you disable or don't configure this setting, all intranet sites are automatic
 
 <!-- SetDefaultSearchEngine-Description-Begin -->
 <!-- Description-Source-DDF -->
-Sets the default search engine for MDM-enrolled devices. Users can still change their default search engine. If this setting is turned on, you are setting the default search engine that you would like your employees to use. Employees can still change the default search engine, unless you apply the AllowSearchEngineCustomization policy which will disable the ability to change it. You must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. If you would like for your employees to use the Edge factory settings for the default search engine for their market, set the string EDGEDEFAULT; if you would like for your employees to use Bing as the default search engine, set the string EDGEBING. If this setting is not configured, the default search engine is set to the one specified in App settings and can be changed by your employees. If this setting is disabled, the policy-set search engine will be removed, and, if it is the current default, the default will be set back to the factory Microsoft Edge search engine for the market. Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.
+Sets the default search engine for MDM-enrolled devices. Users can still change their default search engine. If this setting is turned on, you are setting the default search engine that you would like your employees to use. Employees can still change the default search engine, unless you apply the AllowSearchEngineCustomization policy which will disable the ability to change it. You must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. If you would like for your employees to use the Edge factory settings for the default search engine for their market, set the string EDGEDEFAULT; if you would like for your employees to use Bing as the default search engine, set the string EDGEBING. If this setting is not configured, the default search engine is set to the one specified in App settings and can be changed by your employees.
+- If this setting is disabled, the policy-set search engine will be removed, and, if it is the current default, the default will be set back to the factory Microsoft Edge search engine for the market. Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.
 <!-- SetDefaultSearchEngine-Description-End -->
 
 <!-- SetDefaultSearchEngine-Editable-Begin -->
@@ -3748,9 +3754,9 @@ Related policies:
 <!-- Description-Source-ADMX -->
 This setting lets you decide whether people can sync their favorites between Internet Explorer and Microsoft Edge.
 
-If you enable this setting, employees can sync their favorites between Internet Explorer and Microsoft Edge.
+- If you enable this setting, employees can sync their favorites between Internet Explorer and Microsoft Edge.
 
-If you disable or don't configure this setting, employees can’t sync their favorites between Internet Explorer and Microsoft Edge.
+- If you disable or don't configure this setting, employees can't sync their favorites between Internet Explorer and Microsoft Edge.
 <!-- SyncFavoritesBetweenIEAndMicrosoftEdge-Description-End -->
 
 <!-- SyncFavoritesBetweenIEAndMicrosoftEdge-Editable-Begin -->
@@ -3903,9 +3909,9 @@ Related policy:
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether Microsoft Edge stores books from the Books tab to a default, shared folder for Windows.
 
-If you enable this setting, Microsoft Edge automatically downloads book files to a common, shared folder and prevents students and teachers from removing the book from the Books tab. For this to work properly, your students and teachers must be signed in using a school account.
+- If you enable this setting, Microsoft Edge automatically downloads book files to a common, shared folder and prevents students and teachers from removing the book from the Books tab. For this to work properly, your students and teachers must be signed in using a school account.
 
-If you disable or don't configure this setting, Microsoft Edge downloads book files to a per-user folder for each student or teacher.
+- If you disable or don't configure this setting, Microsoft Edge downloads book files to a per-user folder for each student or teacher.
 <!-- UseSharedFolderForBooks-Description-End -->
 
 <!-- UseSharedFolderForBooks-Editable-Begin -->

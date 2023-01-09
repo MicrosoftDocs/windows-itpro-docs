@@ -1,10 +1,10 @@
 ---
 title: ADMX_EAIME Policy CSP
-description: Learn more about the ADMX_EAIME Area in Policy CSP
+description: Learn more about the ADMX_EAIME Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_EAIME
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,13 +44,14 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to include the Non-Publishing Standard Glyph in the candidate list when Publishing Standard Glyph for the word exists.
 
-If you enable this policy setting, Non-Publishing Standard Glyph is not included in the candidate list when Publishing Standard Glyph for the word exists.
+- If you enable this policy setting, Non-Publishing Standard Glyph is not included in the candidate list when Publishing Standard Glyph for the word exists.
 
-If you disable or do not configure this policy setting, both Publishing Standard Glyph and Non-Publishing Standard Glyph are included in the candidate list.
+- If you disable or do not configure this policy setting, both Publishing Standard Glyph and Non-Publishing Standard Glyph are included in the candidate list.
 
 This policy setting applies to Japanese Microsoft IME only.
 
-**Note**: Changes to this setting will not take effect until the user logs off.
+> [!NOTE]
+> Changes to this setting will not take effect until the user logs off.
 <!-- L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList-Description-End -->
 
 <!-- L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList-Editable-Begin -->
@@ -70,7 +69,7 @@ This policy setting applies to Japanese Microsoft IME only.
 
 <!-- L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -110,7 +109,7 @@ This policy setting applies to Japanese Microsoft IME only.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to restrict character code range of conversion by setting character filter.
 
-If you enable this policy setting, then only the character code ranges specified by this policy setting are used for conversion of IME. You can specify multiple ranges by setting a value combined with a bitwise OR of following values:
+- If you enable this policy setting, then only the character code ranges specified by this policy setting are used for conversion of IME. You can specify multiple ranges by setting a value combined with a bitwise OR of following values:
 
 0x0001 // JIS208 area
 0x0002 // NEC special char code
@@ -124,11 +123,12 @@ If you enable this policy setting, then only the character code ranges specified
 0x1000 // IVS char
 0xFFFF // no definition.
 
-If you disable or do not configure this policy setting, no range of characters are filtered by default.
+- If you disable or do not configure this policy setting, no range of characters are filtered by default.
 
 This policy setting applies to Japanese Microsoft IME only.
 
-**Note**: Changes to this setting will not take effect until the user logs off.
+> [!NOTE]
+> Changes to this setting will not take effect until the user logs off.
 <!-- L_RestrictCharacterCodeRangeOfConversion-Description-End -->
 
 <!-- L_RestrictCharacterCodeRangeOfConversion-Editable-Begin -->
@@ -146,7 +146,7 @@ This policy setting applies to Japanese Microsoft IME only.
 
 <!-- L_RestrictCharacterCodeRangeOfConversion-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -185,9 +185,9 @@ This policy setting applies to Japanese Microsoft IME only.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off the ability to use a custom dictionary.
 
-If you enable this policy setting, you cannot add, edit, and delete words in the custom dictionary either with GUI tools or APIs. A word registered in the custom dictionary before enabling this policy setting can continue to be used for conversion.
+- If you enable this policy setting, you cannot add, edit, and delete words in the custom dictionary either with GUI tools or APIs. A word registered in the custom dictionary before enabling this policy setting can continue to be used for conversion.
 
-If you disable or do not configure this policy setting, the custom dictionary can be used by default.
+- If you disable or do not configure this policy setting, the custom dictionary can be used by default.
 
 [Clear auto-tuning information] removes self-tuned words from the custom dictionary, even if a group policy setting is turned on. To do this, select Settings > Time & Language > Japanese Options > Microsoft IME Options. If compatibility mode is turned on, select Advanced options > Dictionary/Auto-tuning > [Clear auto-tuning information].
 
@@ -195,7 +195,8 @@ If you disable or do not configure this policy setting, the custom dictionary ca
 
 This policy setting is applied to Japanese Microsoft IME.
 
-**Note**: Changes to this setting will not take effect until the user logs off.
+> [!NOTE]
+> Changes to this setting will not take effect until the user logs off.
 <!-- L_TurnOffCustomDictionary-Description-End -->
 
 <!-- L_TurnOffCustomDictionary-Editable-Begin -->
@@ -213,7 +214,7 @@ This policy setting is applied to Japanese Microsoft IME.
 
 <!-- L_TurnOffCustomDictionary-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -253,13 +254,14 @@ This policy setting is applied to Japanese Microsoft IME.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off history-based predictive input.
 
-If you enable this policy setting, history-based predictive input is turned off.
+- If you enable this policy setting, history-based predictive input is turned off.
 
-If you disable or do not configure this policy setting, history-based predictive input is on by default.
+- If you disable or do not configure this policy setting, history-based predictive input is on by default.
 
 This policy setting applies to Japanese Microsoft IME only.
 
-**Note**: Changes to this setting will not take effect until the user logs off.
+> [!NOTE]
+> Changes to this setting will not take effect until the user logs off.
 <!-- L_TurnOffHistorybasedPredictiveInput-Description-End -->
 
 <!-- L_TurnOffHistorybasedPredictiveInput-Editable-Begin -->
@@ -277,7 +279,7 @@ This policy setting applies to Japanese Microsoft IME only.
 
 <!-- L_TurnOffHistorybasedPredictiveInput-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -319,13 +321,14 @@ This policy setting allows you to turn off Internet search integration.
 
 Search integration includes both using Search Provider (Japanese Microsoft IME) and performing bing search from predictive input for Japanese Microsoft IME.
 
-If you enable this policy setting, you cannot use search integration.
+- If you enable this policy setting, you cannot use search integration.
 
-If you disable or do not configure this policy setting, the search integration function can be used by default.
+- If you disable or do not configure this policy setting, the search integration function can be used by default.
 
 This policy setting applies to Japanese Microsoft IME.
 
-**Note**: Changes to this setting will not take effect until the user logs off.
+> [!NOTE]
+> Changes to this setting will not take effect until the user logs off.
 <!-- L_TurnOffInternetSearchIntegration-Description-End -->
 
 <!-- L_TurnOffInternetSearchIntegration-Editable-Begin -->
@@ -343,7 +346,7 @@ This policy setting applies to Japanese Microsoft IME.
 
 <!-- L_TurnOffInternetSearchIntegration-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -383,11 +386,11 @@ This policy setting applies to Japanese Microsoft IME.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off Open Extended Dictionary.
 
-If you enable this policy setting, Open Extended Dictionary is turned off. You cannot add a new Open Extended Dictionary.
+- If you enable this policy setting, Open Extended Dictionary is turned off. You cannot add a new Open Extended Dictionary.
 
 For Japanese Microsoft IME, an Open Extended Dictionary that is added before enabling this policy setting is not used for conversion.
 
-If you disable or do not configure this policy setting, Open Extended Dictionary can be added and used by default.
+- If you disable or do not configure this policy setting, Open Extended Dictionary can be added and used by default.
 
 This policy setting is applied to Japanese Microsoft IME.
 <!-- L_TurnOffOpenExtendedDictionary-Description-End -->
@@ -407,7 +410,7 @@ This policy setting is applied to Japanese Microsoft IME.
 
 <!-- L_TurnOffOpenExtendedDictionary-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -447,9 +450,9 @@ This policy setting is applied to Japanese Microsoft IME.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off saving the auto-tuning result to file.
 
-If you enable this policy setting, the auto-tuning data is not saved to file.
+- If you enable this policy setting, the auto-tuning data is not saved to file.
 
-If you disable or do not configure this policy setting, auto-tuning data is saved to file by default.
+- If you disable or do not configure this policy setting, auto-tuning data is saved to file by default.
 
 This policy setting applies to Japanese Microsoft IME only.
 <!-- L_TurnOffSavingAutoTuningDataToFile-Description-End -->
@@ -469,7 +472,7 @@ This policy setting applies to Japanese Microsoft IME only.
 
 <!-- L_TurnOffSavingAutoTuningDataToFile-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -509,11 +512,11 @@ This policy setting applies to Japanese Microsoft IME only.
 <!-- Description-Source-ADMX -->
 This policy setting controls the cloud candidates feature, which uses an online service to provide input suggestions that don't exist in a PC's local dictionary.
 
-If you enable this policy setting, the functionality associated with this feature is turned on, the user's keyboard input is sent to Microsoft to generate the suggestions, and the user won't be able to turn it off.
+- If you enable this policy setting, the functionality associated with this feature is turned on, the user's keyboard input is sent to Microsoft to generate the suggestions, and the user won't be able to turn it off.
 
-If you disable this policy setting, the functionality associated with this feature is turned off, and the user won't be able to turn it on.
+- If you disable this policy setting, the functionality associated with this feature is turned off, and the user won't be able to turn it on.
 
-If you don't configure this policy setting, it will be turned off by default, and the user can turn on and turn off the cloud candidates feature.
+- If you don't configure this policy setting, it will be turned off by default, and the user can turn on and turn off the cloud candidates feature.
 
 This Policy setting applies to Microsoft CHS Pinyin IME and JPN IME.
 <!-- L_TurnOnCloudCandidate-Description-End -->
@@ -533,7 +536,7 @@ This Policy setting applies to Microsoft CHS Pinyin IME and JPN IME.
 
 <!-- L_TurnOnCloudCandidate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -573,11 +576,11 @@ This Policy setting applies to Microsoft CHS Pinyin IME and JPN IME.
 <!-- Description-Source-ADMX -->
 This policy setting controls the cloud candidates feature, which uses an online service to provide input suggestions that don't exist in a PC's local dictionary.
 
-If you enable this policy setting, the functionality associated with this feature is turned on, the user's keyboard input is sent to Microsoft to generate the suggestions, and the user won't be able to turn it off.
+- If you enable this policy setting, the functionality associated with this feature is turned on, the user's keyboard input is sent to Microsoft to generate the suggestions, and the user won't be able to turn it off.
 
-If you disable this policy setting, the functionality associated with this feature is turned off, and the user won't be able to turn it on.
+- If you disable this policy setting, the functionality associated with this feature is turned off, and the user won't be able to turn it on.
 
-If you don't configure this policy setting, it will be turned off by default, and the user can turn on and turn off the cloud candidates feature.
+- If you don't configure this policy setting, it will be turned off by default, and the user can turn on and turn off the cloud candidates feature.
 
 This Policy setting applies only to Microsoft CHS Pinyin IME.
 <!-- L_TurnOnCloudCandidateCHS-Description-End -->
@@ -597,7 +600,7 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 
 <!-- L_TurnOnCloudCandidateCHS-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -660,10 +663,16 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 <!-- L_TurnOnLexiconUpdate-DFProperties-End -->
 
 <!-- L_TurnOnLexiconUpdate-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!-- Unknown -->
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | L_TurnOnLexiconUpdate |
+| ADMX File Name | EAIME.admx |
 <!-- L_TurnOnLexiconUpdate-AdmxBacked-End -->
 
 <!-- L_TurnOnLexiconUpdate-Examples-Begin -->
@@ -714,10 +723,16 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 <!-- L_TurnOnLiveStickers-DFProperties-End -->
 
 <!-- L_TurnOnLiveStickers-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!-- Unknown -->
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | L_TurnOnLiveStickers |
+| ADMX File Name | EAIME.admx |
 <!-- L_TurnOnLiveStickers-AdmxBacked-End -->
 
 <!-- L_TurnOnLiveStickers-Examples-Begin -->
@@ -745,9 +760,9 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn on logging of misconversion for the misconversion report.
 
-If you enable this policy setting, misconversion logging is turned on.
+- If you enable this policy setting, misconversion logging is turned on.
 
-If you disable or do not configure this policy setting, misconversion logging is turned off.
+- If you disable or do not configure this policy setting, misconversion logging is turned off.
 
 This policy setting applies to Japanese Microsoft IME and Traditional Chinese IME.
 <!-- L_TurnOnMisconversionLoggingForMisconversionReport-Description-End -->
@@ -767,7 +782,7 @@ This policy setting applies to Japanese Microsoft IME and Traditional Chinese IM
 
 <!-- L_TurnOnMisconversionLoggingForMisconversionReport-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

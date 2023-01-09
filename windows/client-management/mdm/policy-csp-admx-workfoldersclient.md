@@ -1,10 +1,10 @@
 ---
 title: ADMX_WorkFoldersClient Policy CSP
-description: Learn more about the ADMX_WorkFoldersClient Area in Policy CSP
+description: Learn more about the ADMX_WorkFoldersClient Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_WorkFoldersClient
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,9 +44,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting specifies whether Work Folders should be set up automatically for all users of the affected computer.
 
-If you enable this policy setting, Work Folders will be set up automatically for all users of the affected computer. This prevents users from choosing not to use Work Folders on the computer; it also prevents them from manually specifying the local folder in which Work Folders stores files. Work Folders will use the settings specified in the "Specify Work Folders settings" policy setting in User Configuration\Administrative Templates\Windows Components\WorkFolders. If the "Specify Work Folders settings" policy setting does not apply to a user, Work Folders is not automatically set up.
+- If you enable this policy setting, Work Folders will be set up automatically for all users of the affected computer. This prevents users from choosing not to use Work Folders on the computer; it also prevents them from manually specifying the local folder in which Work Folders stores files. Work Folders will use the settings specified in the "Specify Work Folders settings" policy setting in User Configuration\Administrative Templates\Windows Components\WorkFolders. If the "Specify Work Folders settings" policy setting does not apply to a user, Work Folders is not automatically set up.
 
-If you disable or do not configure this policy setting, Work Folders uses the "Force automatic setup" option of the "Specify Work Folders settings" policy setting to determine whether to automatically set up Work Folders for a given user.
+- If you disable or do not configure this policy setting, Work Folders uses the "Force automatic setup" option of the "Specify Work Folders settings" policy setting to determine whether to automatically set up Work Folders for a given user.
 <!-- Pol_MachineEnableWorkFolders-Description-End -->
 
 <!-- Pol_MachineEnableWorkFolders-Editable-Begin -->
@@ -66,7 +64,7 @@ If you disable or do not configure this policy setting, Work Folders uses the "F
 
 <!-- Pol_MachineEnableWorkFolders-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -122,7 +120,7 @@ This policy specifies whether Work Folders should use Token Broker for interacti
 
 <!-- Pol_UserEnableTokenBroker-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -162,18 +160,20 @@ This policy specifies whether Work Folders should use Token Broker for interacti
 <!-- Description-Source-ADMX -->
 This policy setting specifies the Work Folders server for affected users, as well as whether or not users are allowed to change settings when setting up Work Folders on a domain-joined computer.
 
-If you enable this policy setting, affected users receive Work Folders settings when they sign in to a domain-joined PC. If this policy setting is disabled or not configured, no Work Folders settings are specified for the affected users, though users can manually set up Work Folders by using the Work Folders Control Panel item.
+- If you enable this policy setting, affected users receive Work Folders settings when they sign in to a domain-joined PC.
+- If this policy setting is disabled or not configured, no Work Folders settings are specified for the affected users, though users can manually set up Work Folders by using the Work Folders Control Panel item.
 
 The "Work Folders URL" can specify either the URL used by the organization for Work Folders discovery, or the specific URL of the file server that stores the affected users' data.
 
-The "Work Folders Local Path" specifies the local folder used on the client machine to sync files. This path may contain environment variables.
+The "Work Folders Local Path" specifies the local folder used on the client machine to sync files. This path may contain environment variables
 
-**Note**:  In order for this configuration to take effect, a valid 'Work Folders URL' must also be specified.
+> [!NOTE]
+> In order for this configuration to take effect, a valid 'Work Folders URL' must also be specified.
 
-The “On-demand file access preference” option controls whether to enable on-demand file access. When enabled, the user controls which files in Work Folders are available offline on a given PC. The rest of the files in Work Folders are always visible and don’t take up any space on the PC, but the user must be connected to the Internet to access them.
+The "On-demand file access preference" option controls whether to enable on-demand file access. When enabled, the user controls which files in Work Folders are available offline on a given PC. The rest of the files in Work Folders are always visible and don't take up any space on the PC, but the user must be connected to the Internet to access them.
 
-If you enable this policy setting, on-demand file access is enabled.
-If you disable this policy setting, on-demand file access is disabled, and enough storage space to store all the user’s files is required on each of their PCs.
+- If you enable this policy setting, on-demand file access is enabled.
+- If you disable this policy setting, on-demand file access is disabled, and enough storage space to store all the user's files is required on each of their PCs.
 If you specify User choice or do not configure this policy setting, the user decides whether to enable on-demand file access. However, if the Force automatic setup policy setting is enabled, Work Folders is set up automatically with on-demand file access enabled.
 
 The "Force automatic setup" option specifies that Work Folders should be set up automatically without prompting users. This prevents users from choosing not to use Work Folders on the computer; it also prevents them from manually specifying the local folder in which Work Folders stores files. By default, Work Folders is stored in the "%USERPROFILE%\Work Folders" folder. If this option is not specified, users must use the Work Folders Control Panel item on their computers to set up Work Folders.
@@ -194,7 +194,7 @@ The "Force automatic setup" option specifies that Work Folders should be set up 
 
 <!-- Pol_UserEnableWorkFolders-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

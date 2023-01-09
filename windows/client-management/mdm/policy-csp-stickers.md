@@ -1,10 +1,10 @@
 ---
 title: Stickers Policy CSP
-description: Learn more about the Stickers Area in Policy CSP
+description: Learn more about the Stickers Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/02/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,6 +36,7 @@ ms.topic: reference
 <!-- EnableStickers-OmaUri-End -->
 
 <!-- EnableStickers-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to control whether you want to allow stickers to be edited and placed on Desktop
 <!-- EnableStickers-Description-End -->
 

@@ -1,10 +1,10 @@
 ---
 title: ADMX_WPN Policy CSP
-description: Learn more about the ADMX_WPN Area in Policy CSP
+description: Learn more about the ADMX_WPN Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,85 +17,13 @@ ms.topic: reference
 # Policy CSP - ADMX_WPN
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!-- ADMX_WPN-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- ADMX_WPN-Editable-End -->
-
-<!-- NoToastNotification-Begin -->
-## NoToastNotification
-
-<!-- NoToastNotification-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- NoToastNotification-Applicability-End -->
-
-<!-- NoToastNotification-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/ADMX_WPN/NoToastNotification
-```
-
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_WPN/NoToastNotification
-```
-<!-- NoToastNotification-OmaUri-End -->
-
-<!-- NoToastNotification-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting turns off toast notifications for applications.
-
-If you enable this policy setting, applications will not be able to raise toast notifications.
-
-Note that this policy does not affect taskbar notification balloons.
-
-Note that Windows system features are not affected by this policy. You must enable/disable system features individually to stop their ability to raise toast notifications.
-
-If you disable or do not configure this policy setting, toast notifications are enabled and can be turned off by the administrator or user.
-
-No reboots or service restarts are required for this policy setting to take effect.
-<!-- NoToastNotification-Description-End -->
-
-<!-- NoToastNotification-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- NoToastNotification-Editable-End -->
-
-<!-- NoToastNotification-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- NoToastNotification-DFProperties-End -->
-
-<!-- NoToastNotification-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | NoToastNotification |
-| Friendly Name | Turn off toast notifications |
-| Location | User Configuration |
-| Path | Start Menu and Taskbar > Notifications |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications |
-| Registry Value Name | NoToastApplicationNotification |
-| ADMX File Name | WPN.admx |
-<!-- NoToastNotification-AdmxBacked-End -->
-
-<!-- NoToastNotification-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- NoToastNotification-Examples-End -->
-
-<!-- NoToastNotification-End -->
 
 <!-- NoCallsDuringQuietHours-Begin -->
 ## NoCallsDuringQuietHours
@@ -116,11 +44,11 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- Description-Source-ADMX -->
 This policy setting blocks voice and video calls during Quiet Hours.
 
-If you enable this policy setting, voice and video calls will be blocked during the designated Quiet Hours time window each day, and users will not be able to customize any other Quiet Hours settings.
+- If you enable this policy setting, voice and video calls will be blocked during the designated Quiet Hours time window each day, and users will not be able to customize any other Quiet Hours settings.
 
-If you disable this policy setting, voice and video calls will be allowed during Quiet Hours, and users will not be able to customize this or any other Quiet Hours settings.
+- If you disable this policy setting, voice and video calls will be allowed during Quiet Hours, and users will not be able to customize this or any other Quiet Hours settings.
 
-If you do not configure this policy setting, voice and video calls will be allowed during Quiet Hours by default. Adminstrators and users will be able to modify this setting.
+- If you do not configure this policy setting, voice and video calls will be allowed during Quiet Hours by default. Adminstrators and users will be able to modify this setting.
 <!-- NoCallsDuringQuietHours-Description-End -->
 
 <!-- NoCallsDuringQuietHours-Editable-Begin -->
@@ -138,7 +66,7 @@ If you do not configure this policy setting, voice and video calls will be allow
 
 <!-- NoCallsDuringQuietHours-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -178,9 +106,9 @@ If you do not configure this policy setting, voice and video calls will be allow
 <!-- Description-Source-ADMX -->
 This policy setting turns off toast notifications on the lock screen.
 
-If you enable this policy setting, applications will not be able to raise toast notifications on the lock screen.
+- If you enable this policy setting, applications will not be able to raise toast notifications on the lock screen.
 
-If you disable or do not configure this policy setting, toast notifications on the lock screen are enabled and can be turned off by the administrator or user.
+- If you disable or do not configure this policy setting, toast notifications on the lock screen are enabled and can be turned off by the administrator or user.
 
 No reboots or service restarts are required for this policy setting to take effect.
 <!-- NoLockScreenToastNotification-Description-End -->
@@ -200,7 +128,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 <!-- NoLockScreenToastNotification-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -240,11 +168,11 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- Description-Source-ADMX -->
 This policy setting turns off Quiet Hours functionality.
 
-If you enable this policy setting, toast notifications will not be suppressed and some background tasks will not be deferred during the designated Quiet Hours time window each day.
+- If you enable this policy setting, toast notifications will not be suppressed and some background tasks will not be deferred during the designated Quiet Hours time window each day.
 
-If you disable this policy setting, toast notifications will be suppressed and some background task deferred during the designated Quiet Hours time window. Users will not be able to change this or any other Quiet Hours settings.
+- If you disable this policy setting, toast notifications will be suppressed and some background task deferred during the designated Quiet Hours time window. Users will not be able to change this or any other Quiet Hours settings.
 
-If you do not configure this policy setting, Quiet Hours are enabled by default but can be turned off or by the administrator or user.
+- If you do not configure this policy setting, Quiet Hours are enabled by default but can be turned off or by the administrator or user.
 <!-- NoQuietHours-Description-End -->
 
 <!-- NoQuietHours-Editable-Begin -->
@@ -262,7 +190,7 @@ If you do not configure this policy setting, Quiet Hours are enabled by default 
 
 <!-- NoQuietHours-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -283,6 +211,76 @@ If you do not configure this policy setting, Quiet Hours are enabled by default 
 
 <!-- NoQuietHours-End -->
 
+<!-- NoToastNotification-Begin -->
+## NoToastNotification
+
+<!-- NoToastNotification-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoToastNotification-Applicability-End -->
+
+<!-- NoToastNotification-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WPN/NoToastNotification
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WPN/NoToastNotification
+```
+<!-- NoToastNotification-OmaUri-End -->
+
+<!-- NoToastNotification-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off toast notifications for applications.
+
+- If you enable this policy setting, applications will not be able to raise toast notifications.
+
+**Note** that this policy does not affect taskbar notification balloons.
+
+**Note** that Windows system features are not affected by this policy. You must enable/disable system features individually to stop their ability to raise toast notifications.
+
+- If you disable or do not configure this policy setting, toast notifications are enabled and can be turned off by the administrator or user.
+
+No reboots or service restarts are required for this policy setting to take effect.
+<!-- NoToastNotification-Description-End -->
+
+<!-- NoToastNotification-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoToastNotification-Editable-End -->
+
+<!-- NoToastNotification-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoToastNotification-DFProperties-End -->
+
+<!-- NoToastNotification-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoToastNotification |
+| Friendly Name | Turn off toast notifications |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar > Notifications |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications |
+| Registry Value Name | NoToastApplicationNotification |
+| ADMX File Name | WPN.admx |
+<!-- NoToastNotification-AdmxBacked-End -->
+
+<!-- NoToastNotification-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoToastNotification-Examples-End -->
+
+<!-- NoToastNotification-End -->
+
 <!-- QuietHoursDailyBeginMinute-Begin -->
 ## QuietHoursDailyBeginMinute
 
@@ -302,11 +300,11 @@ If you do not configure this policy setting, Quiet Hours are enabled by default 
 <!-- Description-Source-ADMX -->
 This policy setting specifies the number of minutes after midnight (local time) that Quiet Hours is to begin each day.
 
-If you enable this policy setting, the specified time will be used, and users will not be able to customize any Quiet Hours settings.
+- If you enable this policy setting, the specified time will be used, and users will not be able to customize any Quiet Hours settings.
 
-If you disable this policy setting, a default value will be used, and users will not be able to change it or any other Quiet Hours setting.
+- If you disable this policy setting, a default value will be used, and users will not be able to change it or any other Quiet Hours setting.
 
-If you do not configure this policy setting, a default value will be used, which administrators and users will be able to modify.
+- If you do not configure this policy setting, a default value will be used, which administrators and users will be able to modify.
 <!-- QuietHoursDailyBeginMinute-Description-End -->
 
 <!-- QuietHoursDailyBeginMinute-Editable-Begin -->
@@ -324,7 +322,7 @@ If you do not configure this policy setting, a default value will be used, which
 
 <!-- QuietHoursDailyBeginMinute-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -363,11 +361,11 @@ If you do not configure this policy setting, a default value will be used, which
 <!-- Description-Source-ADMX -->
 This policy setting specifies the number of minutes after midnight (local time) that Quiet Hours is to end each day.
 
-If you enable this policy setting, the specified time will be used, and users will not be able to customize any Quiet Hours settings.
+- If you enable this policy setting, the specified time will be used, and users will not be able to customize any Quiet Hours settings.
 
-If you disable this policy setting, a default value will be used, and users will not be able to change it or any other Quiet Hours setting.
+- If you disable this policy setting, a default value will be used, and users will not be able to change it or any other Quiet Hours setting.
 
-If you do not configure this policy setting, a default value will be used, which administrators and users will be able to modify.
+- If you do not configure this policy setting, a default value will be used, which administrators and users will be able to modify.
 <!-- QuietHoursDailyEndMinute-Description-End -->
 
 <!-- QuietHoursDailyEndMinute-Editable-Begin -->
@@ -385,7 +383,7 @@ If you do not configure this policy setting, a default value will be used, which
 
 <!-- QuietHoursDailyEndMinute-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

@@ -1,10 +1,10 @@
 ---
 title: ADMX_DCOM Policy CSP
-description: Learn more about the ADMX_DCOM Area in Policy CSP
+description: Learn more about the ADMX_DCOM Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_DCOM
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,11 +44,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Allows you to specify that local computer administrators can supplement the "Define Activation Security Check exemptions" list.
 
-If you enable this policy setting, and DCOM does not find an explicit entry for a DCOM server application id (appid) in the "Define Activation Security Check exemptions" policy (if enabled), DCOM will look for an entry in the locally configured list.
+- If you enable this policy setting, and DCOM does not find an explicit entry for a DCOM server application id (appid) in the "Define Activation Security Check exemptions" policy (if enabled), DCOM will look for an entry in the locally configured list.
 
-If you disable this policy setting, DCOM will not look in the locally configured DCOM activation security check exemption list.
+- If you disable this policy setting, DCOM will not look in the locally configured DCOM activation security check exemption list.
 
-If you do not configure this policy setting, DCOM will only look in the locally configured exemption list if the "Define Activation Security Check exemptions" policy is not configured.
+- If you do not configure this policy setting, DCOM will only look in the locally configured exemption list if the "Define Activation Security Check exemptions" policy is not configured.
 <!-- DCOMActivationSecurityCheckAllowLocalList-Description-End -->
 
 <!-- DCOMActivationSecurityCheckAllowLocalList-Editable-Begin -->
@@ -69,7 +67,7 @@ If you do not configure this policy setting, DCOM will only look in the locally 
 
 <!-- DCOMActivationSecurityCheckAllowLocalList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -111,13 +109,13 @@ Allows you to view and change a list of DCOM server application ids (appids) whi
 
 DCOM server appids added to this policy must be listed in curly-brace format. For example: {b5dcb061-cefb-42e0-a1be-e6a6438133fe}. If you enter a non-existent or improperly formatted appid DCOM will add it to the list without checking for errors.
 
-If you enable this policy setting, you can view and change the list of DCOM activation security check exemptions defined by Group Policy settings. If you add an appid to this list and set its value to 1, DCOM will not enforce the Activation security check for that DCOM server. If you add an appid to this list and set its value to 0 DCOM will always enforce the Activation security check for that DCOM server regardless of local settings.
+- If you enable this policy setting, you can view and change the list of DCOM activation security check exemptions defined by Group Policy settings. If you add an appid to this list and set its value to 1, DCOM will not enforce the Activation security check for that DCOM server. If you add an appid to this list and set its value to 0 DCOM will always enforce the Activation security check for that DCOM server regardless of local settings.
 
-If you disable this policy setting, the appid exemption list defined by Group Policy is deleted, and the one defined by local computer administrators is used.
+- If you disable this policy setting, the appid exemption list defined by Group Policy is deleted, and the one defined by local computer administrators is used.
 
-If you do not configure this policy setting, the appid exemption list defined by local computer administrators is used.
+- If you do not configure this policy setting, the appid exemption list defined by local computer administrators is used.
 
-Notes:
+**Note**:
 
 The DCOM Activation security check is done after a DCOM server process is started, but before an object activation request is dispatched to the server process. This access check is done against the DCOM server's custom launch permission security descriptor if it exists, or otherwise against the configured defaults.
 
@@ -142,7 +140,7 @@ DCOM servers added to this exemption list are only exempted if their custom laun
 
 <!-- DCOMActivationSecurityCheckExemptionList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

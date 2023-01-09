@@ -1,10 +1,10 @@
 ---
 title: ADMX_Help Policy CSP
-description: Learn more about the ADMX_Help Area in Policy CSP
+description: Learn more about the ADMX_Help Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_Help
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -48,9 +46,9 @@ This policy setting allows you to exclude HTML Help Executable from being monito
 
 Data Execution Prevention (DEP) is designed to block malicious code that takes advantage of exception-handling mechanisms in Windows by monitoring your programs to make sure that they use system memory safely.
 
-If you enable this policy setting, DEP for HTML Help Executable is turned off. This will allow certain legacy ActiveX controls to function without DEP shutting down HTML Help Executable.
+- If you enable this policy setting, DEP for HTML Help Executable is turned off. This will allow certain legacy ActiveX controls to function without DEP shutting down HTML Help Executable.
 
-If you disable or do not configure this policy setting, DEP is turned on for HTML Help Executable. This provides an additional security benefit, but HTLM Help stops if DEP detects system memory abnormalities.
+- If you disable or do not configure this policy setting, DEP is turned on for HTML Help Executable. This provides an additional security benefit, but HTLM Help stops if DEP detects system memory abnormalities.
 <!-- DisableHHDEP-Description-End -->
 
 <!-- DisableHHDEP-Editable-Begin -->
@@ -68,7 +66,7 @@ If you disable or do not configure this policy setting, DEP is turned on for HTM
 
 <!-- DisableHHDEP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -108,19 +106,21 @@ If you disable or do not configure this policy setting, DEP is turned on for HTM
 <!-- Description-Source-ADMX -->
 This policy setting allows you to restrict certain HTML Help commands to function only in HTML Help (.chm) files within specified folders and their subfolders. Alternatively, you can disable these commands on the entire system. It is strongly recommended that only folders requiring administrative privileges be added to this policy setting.
 
-If you enable this policy setting, the commands function only for .chm files in the specified folders and their subfolders.
+- If you enable this policy setting, the commands function only for .chm files in the specified folders and their subfolders.
 
 To restrict the commands to one or more folders, enable the policy setting and enter the desired folders in the text box on the Settings tab of the Policy Properties dialog box. Use a semicolon to separate folders. For example, to restrict the commands to only .chm files in the %windir%\help folder and D:\somefolder, add the following string to the edit box: "%windir%\help;D:\somefolder".
 
-Note: An environment variable may be used, (for example, %windir%), as long as it is defined on the system. For example, %programfiles% is not defined on some early versions of Windows.
+> [!NOTE]
+> An environment variable may be used, (for example, %windir%), as long as it is defined on the system. For example, %programfiles% is not defined on some early versions of Windows.
 
 The "Shortcut" command is used to add a link to a Help topic, and runs executables that are external to the Help file. The "WinHelp" command is used to add a link to a Help topic, and runs a WinHLP32.exe Help (.hlp) file.
 
 To disallow the "Shortcut" and "WinHelp" commands on the entire local system, enable the policy setting and leave the text box on the Settings tab of the Policy Properties dialog box blank.
 
-If you disable or do not configure this policy setting, these commands are fully functional for all Help files.
+- If you disable or do not configure this policy setting, these commands are fully functional for all Help files.
 
-Note: Only folders on the local computer can be specified in this policy setting. You cannot use this policy setting to enable the "Shortcut" and "WinHelp" commands for .chm files that are stored on mapped drives or accessed using UNC paths.
+> [!NOTE]
+> Only folders on the local computer can be specified in this policy setting. You cannot use this policy setting to enable the "Shortcut" and "WinHelp" commands for .chm files that are stored on mapped drives or accessed using UNC paths.
 
 For additional options, see the "Restrict these programs from being launched from Help" policy.
 <!-- HelpQualifiedRootDir_Comp-Description-End -->
@@ -140,7 +140,7 @@ For additional options, see the "Restrict these programs from being launched fro
 
 <!-- HelpQualifiedRootDir_Comp-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -159,69 +159,6 @@ For additional options, see the "Restrict these programs from being launched fro
 <!-- HelpQualifiedRootDir_Comp-Examples-End -->
 
 <!-- HelpQualifiedRootDir_Comp-End -->
-
-<!-- RestrictRunFromHelp_Comp-Begin -->
-## RestrictRunFromHelp_Comp
-
-<!-- RestrictRunFromHelp_Comp-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- RestrictRunFromHelp_Comp-Applicability-End -->
-
-<!-- RestrictRunFromHelp_Comp-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_Help/RestrictRunFromHelp_Comp
-```
-<!-- RestrictRunFromHelp_Comp-OmaUri-End -->
-
-<!-- RestrictRunFromHelp_Comp-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to restrict programs from being run from online Help.
-
-If you enable this policy setting, you can prevent specified programs from being run from Help. When you enable this policy setting, enter the file names names of the programs you want to restrict, separated by commas.
-
-If you disable or do not configure this policy setting, users can run all applications from online Help.
-
-Note: You can also restrict users from running applications by using the Software Restriction Policy settings available in Computer Configuration\Security Settings.
-
-Note: This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help
-<!-- RestrictRunFromHelp_Comp-Description-End -->
-
-<!-- RestrictRunFromHelp_Comp-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- RestrictRunFromHelp_Comp-Editable-End -->
-
-<!-- RestrictRunFromHelp_Comp-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- RestrictRunFromHelp_Comp-DFProperties-End -->
-
-<!-- RestrictRunFromHelp_Comp-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-**ADMX mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | RestrictRunFromHelp_Comp |
-| Friendly Name | Restrict these programs from being launched from Help |
-| Location | Computer Configuration |
-| Path | System |
-| Registry Key Name | Software\Policies\Microsoft\Windows\System |
-| ADMX File Name | Help.admx |
-<!-- RestrictRunFromHelp_Comp-AdmxBacked-End -->
-
-<!-- RestrictRunFromHelp_Comp-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- RestrictRunFromHelp_Comp-Examples-End -->
-
-<!-- RestrictRunFromHelp_Comp-End -->
 
 <!-- RestrictRunFromHelp-Begin -->
 ## RestrictRunFromHelp
@@ -242,13 +179,15 @@ Note: This policy setting is available under Computer Configuration and User Con
 <!-- Description-Source-ADMX -->
 This policy setting allows you to restrict programs from being run from online Help.
 
-If you enable this policy setting, you can prevent specified programs from being run from Help. When you enable this policy setting, enter the file names names of the programs you want to restrict, separated by commas.
+- If you enable this policy setting, you can prevent specified programs from being run from Help. When you enable this policy setting, enter the file names names of the programs you want to restrict, separated by commas.
 
-If you disable or do not configure this policy setting, users can run all applications from online Help.
+- If you disable or do not configure this policy setting, users can run all applications from online Help.
 
-Note: You can also restrict users from running applications by using the Software Restriction Policy settings available in Computer Configuration\Security Settings.
+> [!NOTE]
+> You can also restrict users from running applications by using the Software Restriction Policy settings available in Computer Configuration\Security Settings.
 
-Note: This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help
+> [!NOTE]
+> This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help
 <!-- RestrictRunFromHelp-Description-End -->
 
 <!-- RestrictRunFromHelp-Editable-Begin -->
@@ -266,7 +205,7 @@ Note: This policy setting is available under Computer Configuration and User Con
 
 <!-- RestrictRunFromHelp-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -285,6 +224,71 @@ Note: This policy setting is available under Computer Configuration and User Con
 <!-- RestrictRunFromHelp-Examples-End -->
 
 <!-- RestrictRunFromHelp-End -->
+
+<!-- RestrictRunFromHelp_Comp-Begin -->
+## RestrictRunFromHelp_Comp
+
+<!-- RestrictRunFromHelp_Comp-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RestrictRunFromHelp_Comp-Applicability-End -->
+
+<!-- RestrictRunFromHelp_Comp-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Help/RestrictRunFromHelp_Comp
+```
+<!-- RestrictRunFromHelp_Comp-OmaUri-End -->
+
+<!-- RestrictRunFromHelp_Comp-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to restrict programs from being run from online Help.
+
+- If you enable this policy setting, you can prevent specified programs from being run from Help. When you enable this policy setting, enter the file names names of the programs you want to restrict, separated by commas.
+
+- If you disable or do not configure this policy setting, users can run all applications from online Help.
+
+> [!NOTE]
+> You can also restrict users from running applications by using the Software Restriction Policy settings available in Computer Configuration\Security Settings.
+
+> [!NOTE]
+> This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help
+<!-- RestrictRunFromHelp_Comp-Description-End -->
+
+<!-- RestrictRunFromHelp_Comp-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RestrictRunFromHelp_Comp-Editable-End -->
+
+<!-- RestrictRunFromHelp_Comp-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RestrictRunFromHelp_Comp-DFProperties-End -->
+
+<!-- RestrictRunFromHelp_Comp-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | RestrictRunFromHelp_Comp |
+| Friendly Name | Restrict these programs from being launched from Help |
+| Location | Computer Configuration |
+| Path | System |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| ADMX File Name | Help.admx |
+<!-- RestrictRunFromHelp_Comp-AdmxBacked-End -->
+
+<!-- RestrictRunFromHelp_Comp-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RestrictRunFromHelp_Comp-Examples-End -->
+
+<!-- RestrictRunFromHelp_Comp-End -->
 
 <!-- ADMX_Help-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

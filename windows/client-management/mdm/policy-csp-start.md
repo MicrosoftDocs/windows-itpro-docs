@@ -1,10 +1,10 @@
 ---
 title: Start Policy CSP
-description: Learn more about the Start Area in Policy CSP
+description: Learn more about the Start Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/09/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -552,7 +552,6 @@ With this policy you can push a new list of pinned apps to override the default/
 For more information on how to configure the Start menu, see [Customize the Start menu layout on Windows 11](/windows/configuration/customize-start-menu-layout-windows-11).
 
 This string policy takes a JSON file named `LayoutModification.json`. The file enumerates the items to pin and their relative order.
-
 <!-- ConfigureStartPins-Editable-End -->
 
 <!-- ConfigureStartPins-DFProperties-Begin -->
@@ -602,7 +601,7 @@ This string policy takes a JSON file named `LayoutModification.json`. The file e
 <!-- Description-Source-ADMX -->
 This policy allows you to prevent users from being able to open context menus in the Start Menu.
 
-If you enable this policy, then invocations of context menus within the Start Menu will be ignored.
+- If you enable this policy, then invocations of context menus within the Start Menu will be ignored.
 <!-- DisableContextMenus-Description-End -->
 
 <!-- DisableContextMenus-Editable-Begin -->
@@ -648,6 +647,74 @@ If you enable this policy, then invocations of context menus within the Start Me
 
 <!-- DisableContextMenus-End -->
 
+<!-- DisableControlCenter-Begin -->
+## DisableControlCenter
+
+<!-- DisableControlCenter-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+<!-- DisableControlCenter-Applicability-End -->
+
+<!-- DisableControlCenter-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Start/DisableControlCenter
+```
+<!-- DisableControlCenter-OmaUri-End -->
+
+<!-- DisableControlCenter-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting removes Quick Settings from the bottom right area on the taskbar.
+
+The quick settings area is located at the left of the clock in the taskbar and includes icons for current network and volume.
+
+- If this setting is enabled, Quick Settings is not displayed in the quick settings area.
+
+A reboot is required for this policy setting to take effect.
+<!-- DisableControlCenter-Description-End -->
+
+<!-- DisableControlCenter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableControlCenter-Editable-End -->
+
+<!-- DisableControlCenter-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableControlCenter-DFProperties-End -->
+
+<!-- DisableControlCenter-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Enable Quick Settings. |
+| 1 | Disable Quick Settings. |
+<!-- DisableControlCenter-AllowedValues-End -->
+
+<!-- DisableControlCenter-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableControlCenter |
+| Friendly Name | Remove Quick Settings |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | DisableControlCenter |
+| ADMX File Name | StartMenu.admx |
+<!-- DisableControlCenter-GpMapping-End -->
+
+<!-- DisableControlCenter-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableControlCenter-Examples-End -->
+
+<!-- DisableControlCenter-End -->
+
 <!-- DisableEditingQuickSettings-Begin -->
 ## DisableEditingQuickSettings
 
@@ -665,9 +732,9 @@ If you enable this policy, then invocations of context menus within the Start Me
 
 <!-- DisableEditingQuickSettings-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy, the user will be unable to modify Quick Settings.
+- If you enable this policy, the user will be unable to modify Quick Settings.
 
-If you disable or don't configure this policy setting, the user will be able to edit Quick Settings, such as pinning or unpinning buttons.
+- If you disable or don't configure this policy setting, the user will be able to edit Quick Settings, such as pinning or unpinning buttons.
 <!-- DisableEditingQuickSettings-Description-End -->
 
 <!-- DisableEditingQuickSettings-Editable-Begin -->
@@ -734,16 +801,15 @@ If you disable or don't configure this policy setting, the user will be able to 
 
 <!-- ForceStartSize-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy and set it to Start menu or full screen Start, Start will be that size and users will be unable to change the size of Start in Settings.
+- If you enable this policy and set it to Start menu or full screen Start, Start will be that size and users will be unable to change the size of Start in Settings.
 
-If you disable or don’t configure this policy setting, Windows will automatically select the size based on hardware form factor and users will be able to change the size of Start in Settings.
+- If you disable or don't configure this policy setting, Windows will automatically select the size based on hardware form factor and users will be able to change the size of Start in Settings.
 <!-- ForceStartSize-Description-End -->
 
 <!-- ForceStartSize-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 If there's a policy configuration conflict, the latest configuration request is applied to the device.
-
 <!-- ForceStartSize-Editable-End -->
 
 <!-- ForceStartSize-DFProperties-Begin -->
@@ -828,7 +894,6 @@ To validate this policy, do the following steps:
     2. If set to `2`: Verify that the **All Apps** list is collapsed, and that the **Settings** toggle is grayed out.
 
     3. If set to `3`: Verify that there's no way of opening the **All Apps** list from Start, and that the **Settings** toggle is grayed out.
-
 <!-- HideAppList-Editable-End -->
 
 <!-- HideAppList-DFProperties-Begin -->
@@ -928,9 +993,9 @@ Enabling this policy hides "Change account settings" from appearing in the user 
 
 <!-- HideFrequentlyUsedApps-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this setting, the frequently used programs list is removed from the Start menu.
+- If you enable this setting, the frequently used programs list is removed from the Start menu.
 
-If you disable this setting or do not configure it, the frequently used programs list remains on the simple Start menu.
+- If you disable this setting or do not configure it, the frequently used programs list remains on the simple Start menu.
 <!-- HideFrequentlyUsedApps-Description-End -->
 
 <!-- HideFrequentlyUsedApps-Editable-Begin -->
@@ -947,7 +1012,6 @@ To validate this policy, do the following steps:
 4. Restart the explorer.exe process, or restart the computer.
 5. Check that the **Show most used apps** Settings toggle is grayed out.
 6. Check that most used apps don't appear in Start.
-
 <!-- HideFrequentlyUsedApps-Editable-End -->
 
 <!-- HideFrequentlyUsedApps-DFProperties-Begin -->
@@ -1014,7 +1078,6 @@ Enabling this policy hides "Hibernate" from appearing in the power button in the
 
 > [!NOTE]
 > This policy is only applicable on laptops. The **Hibernate** option doesn't appear on desktop PCs.
-
 <!-- HideHibernate-Editable-End -->
 
 <!-- HideHibernate-DFProperties-Begin -->
@@ -1092,6 +1155,71 @@ Enabling this policy hides "Lock" from appearing in the user tile in the start m
 
 <!-- HideLock-End -->
 
+<!-- HidePeopleBar-Begin -->
+## HidePeopleBar
+
+<!-- HidePeopleBar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- HidePeopleBar-Applicability-End -->
+
+<!-- HidePeopleBar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Start/HidePeopleBar
+```
+<!-- HidePeopleBar-OmaUri-End -->
+
+<!-- HidePeopleBar-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy allows you to remove the People Bar from the taskbar and disables the My People experience.
+
+- If you enable this policy the people icon will be removed from the taskbar, the corresponding settings toggle is removed from the taskbar settings page, and users will not be able to pin people to the taskbar.
+<!-- HidePeopleBar-Description-End -->
+
+<!-- HidePeopleBar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HidePeopleBar-Editable-End -->
+
+<!-- HidePeopleBar-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- HidePeopleBar-DFProperties-End -->
+
+<!-- HidePeopleBar-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Do not hide. |
+| 1 | Hide. |
+<!-- HidePeopleBar-AllowedValues-End -->
+
+<!-- HidePeopleBar-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | HidePeopleBar |
+| Friendly Name | Remove the People Bar from the taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | HidePeopleBar |
+| ADMX File Name | StartMenu.admx |
+<!-- HidePeopleBar-GpMapping-End -->
+
+<!-- HidePeopleBar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HidePeopleBar-Examples-End -->
+
+<!-- HidePeopleBar-End -->
+
 <!-- HidePowerButton-Begin -->
 ## HidePowerButton
 
@@ -1117,7 +1245,6 @@ Enabling this policy hides the power button from appearing in the start menu.
 
 > [!NOTE]
 > This policy requires a reboot to take effect.
-
 <!-- HidePowerButton-Editable-End -->
 
 <!-- HidePowerButton-DFProperties-Begin -->
@@ -1186,7 +1313,6 @@ To validate this policy, do the following steps:
 7. Check that the Settings toggle is grayed out.
 8. Open some images in the Photos app.
 9. Right-click the pinned Photos app. Verify that there's no jump list of recent items.
-
 <!-- HideRecentJumplists-Editable-End -->
 
 <!-- HideRecentJumplists-DFProperties-Begin -->
@@ -1237,7 +1363,7 @@ To validate this policy, do the following steps:
 <!-- Description-Source-ADMX -->
 This policy allows you to prevent the Start Menu from displaying a list of recently installed applications.
 
-If you enable this policy, the Start Menu will no longer display the "Recently added" list. The corresponding setting will also be disabled in Settings.
+- If you enable this policy, the Start Menu will no longer display the "Recently added" list. The corresponding setting will also be disabled in Settings.
 <!-- HideRecentlyAddedApps-Description-End -->
 
 <!-- HideRecentlyAddedApps-Editable-Begin -->
@@ -1254,7 +1380,6 @@ To validate this policy, do the following steps:
 4. Restart the explorer.exe process or restart the computer.
 5. Check that the **Show recently added apps** Settings toggle is grayed out.
 6. Check that recently added apps don't appear in Start.
-
 <!-- HideRecentlyAddedApps-Editable-End -->
 
 <!-- HideRecentlyAddedApps-DFProperties-Begin -->
@@ -1319,7 +1444,7 @@ To validate this policy, do the following steps:
 <!-- Description-Source-ADMX -->
 This policy allows you to prevent the Start Menu from displaying a list of recommended applications and files.
 
-If you enable this policy setting, the Start Menu will no longer show the section containing a list of recommended files and apps.
+- If you enable this policy setting, the Start Menu will no longer show the section containing a list of recommended files and apps.
 <!-- HideRecommendedSection-Description-End -->
 
 <!-- HideRecommendedSection-Editable-Begin -->
@@ -1634,7 +1759,7 @@ Enabling this policy hides "Switch account" from appearing in the user tile in t
 <!-- Description-Source-ADMX -->
 This policy setting allows you to hide the TaskView button.
 
-If you enable this policy setting, the TaskView button will be hidden and the Settings toggle will be disabled.
+- If you enable this policy setting, the TaskView button will be hidden and the Settings toggle will be disabled.
 <!-- HideTaskViewButton-Description-End -->
 
 <!-- HideTaskViewButton-Editable-Begin -->
@@ -1705,7 +1830,6 @@ Enabling this policy hides the user tile from appearing in the start menu.
 
 > [!NOTE]
 > This policy requires a reboot to take effect.
-
 <!-- HideUserTile-Editable-End -->
 
 <!-- HideUserTile-DFProperties-Begin -->
@@ -1772,7 +1896,6 @@ To validate this policy, do the following steps:
 2. Set the [StartLayout policy](#startlayout) to anything that triggers the Microsoft Edge assets import.
 3. Sign out and sign in again.
 4. Verify that all Microsoft Edge assets defined in the XML show up in the following path: `%LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState`.
-
 <!-- ImportEdgeAssets-Editable-End -->
 
 <!-- ImportEdgeAssets-DFProperties-Begin -->
@@ -1807,7 +1930,9 @@ To validate this policy, do the following steps:
 
 <!-- NoPinningToTaskbar-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to control pinning programs to the Taskbar. If you enable this policy setting, users cannot change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users cannot unpin these programs already pinned to the Taskbar, and they cannot pin new programs to the Taskbar. If you disable or do not configure this policy setting, users can change the programs currently pinned to the Taskbar.
+This policy setting allows you to control pinning programs to the Taskbar.
+- If you enable this policy setting, users cannot change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users cannot unpin these programs already pinned to the Taskbar, and they cannot pin new programs to the Taskbar.
+- If you disable or do not configure this policy setting, users can change the programs currently pinned to the Taskbar.
 <!-- NoPinningToTaskbar-Description-End -->
 
 <!-- NoPinningToTaskbar-Editable-Begin -->
@@ -1820,7 +1945,6 @@ To validate this policy, do the following steps:
 3. Verify that the option to **Unpin from taskbar** doesn't show.
 4. Open the Start menu and right-click on one of the app list icons.
 5. Select **More** and verify that **Pin to taskbar** doesn't show.
-
 <!-- NoPinningToTaskbar-Editable-End -->
 
 <!-- NoPinningToTaskbar-DFProperties-Begin -->
@@ -1869,7 +1993,7 @@ To validate this policy, do the following steps:
 
 <!-- ShowOrHideMostUsedApps-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy setting, you can configure Start menu to show or hide the list of user's most used apps, regardless of user settings.
+- If you enable this policy setting, you can configure Start menu to show or hide the list of user's most used apps, regardless of user settings.
 
 Selecting "Show" will force the "Most used" list to be shown, and user cannot change to hide it using the Settings app.
 
@@ -1877,7 +2001,7 @@ Selecting "Hide" will force the "Most used" list to be hidden, and user cannot c
 
 Selecting "Not Configured", or if you disable or do not configure this policy setting, all will allow users to turn on or off the display of "Most used" list using the Settings app. This is default behavior.
 
-Note: configuring this policy to "Show" or "Hide" on supported versions of Windows 10 will supercede any policy setting of "Remove frequent programs list from the Start Menu" (which manages same part of Start menu but with fewer options).
+**Note** configuring this policy to "Show" or "Hide" on supported versions of Windows 10 will supercede any policy setting of "Remove frequent programs list from the Start Menu" (which manages same part of Start menu but with fewer options).
 <!-- ShowOrHideMostUsedApps-Description-End -->
 
 <!-- ShowOrHideMostUsedApps-Editable-Begin -->
@@ -1940,9 +2064,9 @@ Note: configuring this policy to "Show" or "Hide" on supported versions of Windo
 
 <!-- SimplifyQuickSettings-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this policy, Quick Settings will be reduced to only having the WiFi, Bluetooth, Accessibility, and VPN buttons; the brightness and volume sliders; and battery indicator and link to the Settings app.
+- If you enable this policy, Quick Settings will be reduced to only having the WiFi, Bluetooth, Accessibility, and VPN buttons; the brightness and volume sliders; and battery indicator and link to the Settings app.
 
-If you disable or don't configure this policy setting, the regular Quick Settings layout will appear whenever Quick Settings is invoked.
+- If you disable or don't configure this policy setting, the regular Quick Settings layout will appear whenever Quick Settings is invoked.
 <!-- SimplifyQuickSettings-Description-End -->
 
 <!-- SimplifyQuickSettings-Editable-Begin -->
@@ -2016,7 +2140,7 @@ To use this setting, you must first manually configure a device's Start layout t
 
 Once the XML file is generated and moved to the desired file path, type the fully qualified path and name of the XML file. You can type a local path, such as C:\StartLayouts\myLayout.xml or a UNC path, such as \\Server\Share\Layout.xml. If the specified file is not available when the user logs on, the layout won't be changed. Users cannot customize their Start screen while this setting is enabled.
 
-If you disable this setting or do not configure it, the Start screen layout won't be changed and users will be able to customize it.
+- If you disable this setting or do not configure it, the Start screen layout won't be changed and users will be able to customize it.
 <!-- StartLayout-Description-End -->
 
 <!-- StartLayout-Editable-Begin -->
@@ -2025,7 +2149,6 @@ If you disable this setting or do not configure it, the Start screen layout won'
 If both user and device policies are set, the user policy is used. You can also use this policy to change apps that are pinned to the taskbar.
 
 For more information on how to customize the Start layout, see [Customize the Start menu layout on Windows 11](/windows/configuration/customize-start-menu-layout-windows-11) and [Customize the Taskbar on Windows 11](/windows/configuration/customize-taskbar-windows-11).
-
 <!-- StartLayout-Editable-End -->
 
 <!-- StartLayout-DFProperties-Begin -->
@@ -2056,139 +2179,6 @@ For more information on how to customize the Start layout, see [Customize the St
 <!-- StartLayout-Examples-End -->
 
 <!-- StartLayout-End -->
-
-<!-- DisableControlCenter-Begin -->
-## DisableControlCenter
-
-<!-- DisableControlCenter-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
-<!-- DisableControlCenter-Applicability-End -->
-
-<!-- DisableControlCenter-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/Start/DisableControlCenter
-```
-<!-- DisableControlCenter-OmaUri-End -->
-
-<!-- DisableControlCenter-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting removes Quick Settings from the bottom right area on the taskbar.
-
-The quick settings area is located at the left of the clock in the taskbar and includes icons for current network and volume.
-
-If this setting is enabled, Quick Settings is not displayed in the quick settings area.
-
-A reboot is required for this policy setting to take effect.
-<!-- DisableControlCenter-Description-End -->
-
-<!-- DisableControlCenter-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- DisableControlCenter-Editable-End -->
-
-<!-- DisableControlCenter-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- DisableControlCenter-DFProperties-End -->
-
-<!-- DisableControlCenter-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 | Enable Quick Settings. |
-| 1 | Disable Quick Settings. |
-<!-- DisableControlCenter-AllowedValues-End -->
-
-<!-- DisableControlCenter-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | DisableControlCenter |
-| Friendly Name | Remove Quick Settings |
-| Location | User Configuration |
-| Path | Start Menu and Taskbar |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
-| Registry Value Name | DisableControlCenter |
-| ADMX File Name | StartMenu.admx |
-<!-- DisableControlCenter-GpMapping-End -->
-
-<!-- DisableControlCenter-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DisableControlCenter-Examples-End -->
-
-<!-- DisableControlCenter-End -->
-
-<!-- HidePeopleBar-Begin -->
-## HidePeopleBar
-
-<!-- HidePeopleBar-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
-<!-- HidePeopleBar-Applicability-End -->
-
-<!-- HidePeopleBar-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/Start/HidePeopleBar
-```
-<!-- HidePeopleBar-OmaUri-End -->
-
-<!-- HidePeopleBar-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy allows you to remove the People Bar from the taskbar and disables the My People experience.
-
-If you enable this policy the people icon will be removed from the taskbar, the corresponding settings toggle is removed from the taskbar settings page, and users will not be able to pin people to the taskbar.
-<!-- HidePeopleBar-Description-End -->
-
-<!-- HidePeopleBar-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- HidePeopleBar-Editable-End -->
-
-<!-- HidePeopleBar-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- HidePeopleBar-DFProperties-End -->
-
-<!-- HidePeopleBar-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Do not hide. |
-| 1 | Hide. |
-<!-- HidePeopleBar-AllowedValues-End -->
-
-<!-- HidePeopleBar-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | HidePeopleBar |
-| Friendly Name | Remove the People Bar from the taskbar |
-| Location | User Configuration |
-| Path | Start Menu and Taskbar |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
-| Registry Value Name | HidePeopleBar |
-| ADMX File Name | StartMenu.admx |
-<!-- HidePeopleBar-GpMapping-End -->
-
-<!-- HidePeopleBar-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- HidePeopleBar-Examples-End -->
-
-<!-- HidePeopleBar-End -->
 
 <!-- Start-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

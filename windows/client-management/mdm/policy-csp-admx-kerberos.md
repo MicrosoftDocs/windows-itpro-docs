@@ -1,10 +1,10 @@
 ---
 title: ADMX_Kerberos Policy CSP
-description: Learn more about the ADMX_Kerberos Area in Policy CSP
+description: Learn more about the ADMX_Kerberos Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_Kerberos
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,11 +44,12 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting controls whether a device always sends a compound authentication request when the resource domain requests compound identity.
 
-Note: For a domain controller to request compound authentication, the policies "KDC support for claims, compound authentication, and Kerberos armoring" and "Request compound authentication" must be configured and enabled in the resource account domain.
+> [!NOTE]
+> For a domain controller to request compound authentication, the policies "KDC support for claims, compound authentication, and Kerberos armoring" and "Request compound authentication" must be configured and enabled in the resource account domain.
 
-If you enable this policy setting and the resource domain requests compound authentication, devices that support compound authentication always send a compound authentication request.
+- If you enable this policy setting and the resource domain requests compound authentication, devices that support compound authentication always send a compound authentication request.
 
-If you disable or do not configure this policy setting and the resource domain requests compound authentication, devices will send a non-compounded authentication request first then a compound authentication request when the service requests compound authentication.
+- If you disable or do not configure this policy setting and the resource domain requests compound authentication, devices will send a non-compounded authentication request first then a compound authentication request when the service requests compound authentication.
 <!-- AlwaysSendCompoundId-Description-End -->
 
 <!-- AlwaysSendCompoundId-Editable-Begin -->
@@ -68,7 +67,7 @@ If you disable or do not configure this policy setting and the resource domain r
 
 <!-- AlwaysSendCompoundId-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -110,14 +109,14 @@ Support for device authentication using certificate will require connectivity to
 
 This policy setting allows you to set support for Kerberos to attempt authentication using the certificate for the device to the domain.
 
-If you enable this policy setting, the devices credentials will be selected based on the following options:
+- If you enable this policy setting, the devices credentials will be selected based on the following options:
 
 Automatic: Device will attempt to authenticate using its certificate. If the DC does not support computer account authentication using certificates then authentication with password will be attempted.
 
 Force: Device will always authenticate using its certificate. If a DC cannot be found which support computer account authentication using certificates then authentication will fail.
 
-If you disable this policy setting, certificates will never be used.
-If you do not configure this policy setting, Automatic will be used.
+- If you disable this policy setting, certificates will never be used.
+- If you do not configure this policy setting, Automatic will be used.
 <!-- DevicePKInitEnabled-Description-End -->
 
 <!-- DevicePKInitEnabled-Editable-Begin -->
@@ -135,7 +134,7 @@ If you do not configure this policy setting, Automatic will be used.
 
 <!-- DevicePKInitEnabled-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -175,11 +174,11 @@ If you do not configure this policy setting, Automatic will be used.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify which DNS host names and which DNS suffixes are mapped to a Kerberos realm.
 
-If you enable this policy setting, you can view and change the list of DNS host names and DNS suffixes mapped to a Kerberos realm as defined by Group Policy. To view the list of mappings, enable the policy setting and then click the Show button. To add a mapping, enable the policy setting, note the syntax, and then click Show. In the Show Contents dialog box in the Value Name column, type a realm name. In the Value column, type the list of DNS host names and DNS suffixes using the appropriate syntax format. To remove a mapping from the list, click the mapping entry to be removed, and then press the DELETE key. To edit a mapping, remove the current entry from the list and add a new one with different parameters.
+- If you enable this policy setting, you can view and change the list of DNS host names and DNS suffixes mapped to a Kerberos realm as defined by Group Policy. To view the list of mappings, enable the policy setting and then click the Show button. To add a mapping, enable the policy setting, note the syntax, and then click Show. In the Show Contents dialog box in the Value Name column, type a realm name. In the Value column, type the list of DNS host names and DNS suffixes using the appropriate syntax format. To remove a mapping from the list, click the mapping entry to be removed, and then press the DELETE key. To edit a mapping, remove the current entry from the list and add a new one with different parameters.
 
-If you disable this policy setting, the host name-to-Kerberos realm mappings list defined by Group Policy is deleted.
+- If you disable this policy setting, the host name-to-Kerberos realm mappings list defined by Group Policy is deleted.
 
-If you do not configure this policy setting, the system uses the host name-to-Kerberos realm mappings that are defined in the local registry, if they exist.
+- If you do not configure this policy setting, the system uses the host name-to-Kerberos realm mappings that are defined in the local registry, if they exist.
 <!-- HostToRealm-Description-End -->
 
 <!-- HostToRealm-Editable-Begin -->
@@ -197,13 +196,13 @@ If you do not configure this policy setting, the system uses the host name-to-Ke
 
 <!-- HostToRealm-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | hosttorealm |
+| Name | HostToRealm |
 | Friendly Name | Define host name-to-Kerberos realm mappings |
 | Location | Computer Configuration |
 | Path | System > Kerberos |
@@ -237,10 +236,11 @@ If you do not configure this policy setting, the system uses the host name-to-Ke
 <!-- Description-Source-ADMX -->
 This policy setting allows you to disable revocation check for the SSL certificate of the targeted KDC proxy server.
 
-If you enable this policy setting, revocation check for the SSL certificate of the KDC proxy server is ignored by the Kerberos client. This policy setting should only be used in troubleshooting KDC proxy connections.
-Warning: When revocation check is ignored, the server represented by the certificate is not guaranteed valid.
+- If you enable this policy setting, revocation check for the SSL certificate of the KDC proxy server is ignored by the Kerberos client. This policy setting should only be used in troubleshooting KDC proxy connections.
+> [!WARNING]
+> When revocation check is ignored, the server represented by the certificate is not guaranteed valid.
 
-If you disable or do not configure this policy setting, the Kerberos client enforces the revocation check for the SSL certificate. The connection to the KDC proxy server is not established if the revocation check fails.
+- If you disable or do not configure this policy setting, the Kerberos client enforces the revocation check for the SSL certificate. The connection to the KDC proxy server is not established if the revocation check fails.
 <!-- KdcProxyDisableServerRevocationCheck-Description-End -->
 
 <!-- KdcProxyDisableServerRevocationCheck-Editable-Begin -->
@@ -258,7 +258,7 @@ If you disable or do not configure this policy setting, the Kerberos client enfo
 
 <!-- KdcProxyDisableServerRevocationCheck-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -298,9 +298,9 @@ If you disable or do not configure this policy setting, the Kerberos client enfo
 <!-- Description-Source-ADMX -->
 This policy setting configures the Kerberos client's mapping to KDC proxy servers for domains based on their DNS suffix names.
 
-If you enable this policy setting, the Kerberos client will use the KDC proxy server for a domain when a domain controller cannot be located based on the configured mappings. To map a KDC proxy server to a domain, enable the policy setting, click Show, and then map the KDC proxy server name(s) to the DNS name for the domain using the syntax described in the options pane. In the Show Contents dialog box in the Value Name column, type a DNS suffix name. In the Value column, type the list of proxy servers using the appropriate syntax format. To view the list of mappings, enable the policy setting and then click the Show button. To remove a mapping from the list, click the mapping entry to be removed, and then press the DELETE key. To edit a mapping, remove the current entry from the list and add a new one with different parameters.
+- If you enable this policy setting, the Kerberos client will use the KDC proxy server for a domain when a domain controller cannot be located based on the configured mappings. To map a KDC proxy server to a domain, enable the policy setting, click Show, and then map the KDC proxy server name(s) to the DNS name for the domain using the syntax described in the options pane. In the Show Contents dialog box in the Value Name column, type a DNS suffix name. In the Value column, type the list of proxy servers using the appropriate syntax format. To view the list of mappings, enable the policy setting and then click the Show button. To remove a mapping from the list, click the mapping entry to be removed, and then press the DELETE key. To edit a mapping, remove the current entry from the list and add a new one with different parameters.
 
-If you disable or do not configure this policy setting, the Kerberos client does not have KDC proxy servers settings defined by Group Policy.
+- If you disable or do not configure this policy setting, the Kerberos client does not have KDC proxy servers settings defined by Group Policy.
 <!-- KdcProxyServer-Description-End -->
 
 <!-- KdcProxyServer-Editable-Begin -->
@@ -318,7 +318,7 @@ If you disable or do not configure this policy setting, the Kerberos client does
 
 <!-- KdcProxyServer-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -358,11 +358,11 @@ If you disable or do not configure this policy setting, the Kerberos client does
 <!-- Description-Source-ADMX -->
 This policy setting configures the Kerberos client so that it can authenticate with interoperable Kerberos V5 realms, as defined by this policy setting.
 
-If you enable this policy setting, you can view and change the list of interoperable Kerberos V5 realms and their settings. To view the list of interoperable Kerberos V5 realms, enable the policy setting and then click the Show button. To add an interoperable Kerberos V5 realm, enable the policy setting, note the syntax, and then click Show. In the Show Contents dialog box in the Value Name column, type the interoperable Kerberos V5 realm name. In the Value column, type the realm flags and host names of the host KDCs using the appropriate syntax format. To remove an interoperable Kerberos V5 realm Value Name or Value entry from the list, click the entry, and then press the DELETE key. To edit a mapping, remove the current entry from the list and add a new one with different parameters.
+- If you enable this policy setting, you can view and change the list of interoperable Kerberos V5 realms and their settings. To view the list of interoperable Kerberos V5 realms, enable the policy setting and then click the Show button. To add an interoperable Kerberos V5 realm, enable the policy setting, note the syntax, and then click Show. In the Show Contents dialog box in the Value Name column, type the interoperable Kerberos V5 realm name. In the Value column, type the realm flags and host names of the host KDCs using the appropriate syntax format. To remove an interoperable Kerberos V5 realm Value Name or Value entry from the list, click the entry, and then press the DELETE key. To edit a mapping, remove the current entry from the list and add a new one with different parameters.
 
-If you disable this policy setting, the interoperable Kerberos V5 realm settings defined by Group Policy are deleted.
+- If you disable this policy setting, the interoperable Kerberos V5 realm settings defined by Group Policy are deleted.
 
-If you do not configure this policy setting, the system uses the interoperable Kerberos V5 realm settings that are defined in the local registry, if they exist.
+- If you do not configure this policy setting, the system uses the interoperable Kerberos V5 realm settings that are defined in the local registry, if they exist.
 <!-- MitRealms-Description-End -->
 
 <!-- MitRealms-Editable-Begin -->
@@ -380,7 +380,7 @@ If you do not configure this policy setting, the system uses the interoperable K
 
 <!-- MitRealms-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -422,7 +422,7 @@ This policy setting controls configuring the device's Active Directory account f
 
 Support for providing compound authentication which is used for access control will require enough domain controllers in the resource account domains to support the requests. The Domain Administrator must configure the policy "Support Dynamic Access Control and Kerberos armoring" on all the domain controllers to support this policy.
 
-If you enable this policy setting, the device's Active Directory account will be configured for compound authentication by the following options:
+- If you enable this policy setting, the device's Active Directory account will be configured for compound authentication by the following options:
 
 Never: Compound authentication is never provided for this computer account.
 
@@ -430,8 +430,8 @@ Automatic: Compound authentication is provided for this computer account when on
 
 Always: Compound authentication is always provided for this computer account.
 
-If you disable this policy setting, Never will be used.
-If you do not configure this policy setting, Automatic will be used.
+- If you disable this policy setting, Never will be used.
+- If you do not configure this policy setting, Automatic will be used.
 <!-- ServerAcceptsCompound-Description-End -->
 
 <!-- ServerAcceptsCompound-Editable-Begin -->
@@ -449,7 +449,7 @@ If you do not configure this policy setting, Automatic will be used.
 
 <!-- ServerAcceptsCompound-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -489,9 +489,9 @@ If you do not configure this policy setting, Automatic will be used.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure this server so that Kerberos can decrypt a ticket that contains this system-generated SPN. When an application attempts to make a remote procedure call (RPC) to this server with a NULL value for the service principal name (SPN), computers running Windows 7 or later attempt to use Kerberos by generating an SPN.
 
-If you enable this policy setting, only services running as LocalSystem or NetworkService are allowed to accept these connections. Services running as identities different from LocalSystem or NetworkService might fail to authenticate.
+- If you enable this policy setting, only services running as LocalSystem or NetworkService are allowed to accept these connections. Services running as identities different from LocalSystem or NetworkService might fail to authenticate.
 
-If you disable or do not configure this policy setting, any service is allowed to accept incoming connections by using this system-generated SPN.
+- If you disable or do not configure this policy setting, any service is allowed to accept incoming connections by using this system-generated SPN.
 <!-- StrictTarget-Description-End -->
 
 <!-- StrictTarget-Editable-Begin -->
@@ -509,7 +509,7 @@ If you disable or do not configure this policy setting, any service is allowed t
 
 <!-- StrictTarget-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

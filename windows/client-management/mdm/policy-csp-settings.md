@@ -1,10 +1,10 @@
 ---
 title: Settings Policy CSP
-description: Learn more about the Settings Area in Policy CSP
+description: Learn more about the Settings Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/09/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,9 +37,10 @@ ms.topic: reference
 
 <!-- AllowAutoPlay-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the user to change Auto Play settings.
+Allows the user to change Auto Play settings
 
-**Note**: Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
+> [!NOTE]
+> Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
 <!-- AllowAutoPlay-Description-End -->
 
 <!-- AllowAutoPlay-Editable-Begin -->
@@ -96,7 +97,6 @@ Allows the user to change Data Sense settings.
 
 > [!NOTE]
 > The AllowDataSense policy isn't supported on Windows 10, version 2004 and later.
-
 <!-- AllowDataSense-Editable-End -->
 
 <!-- AllowDataSense-DFProperties-Begin -->
@@ -628,87 +628,6 @@ Allows user to change account settings.
 
 <!-- AllowYourAccount-End -->
 
-<!-- PageVisibilityList-Begin -->
-## PageVisibilityList
-
-<!-- PageVisibilityList-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
-<!-- PageVisibilityList-Applicability-End -->
-
-<!-- PageVisibilityList-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList
-```
-
-```Device
-./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList
-```
-<!-- PageVisibilityList-OmaUri-End -->
-
-<!-- PageVisibilityList-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. The mode will be specified by the policy string beginning with either the string showonly: or hide:. Pages are identified by a shortened version of their already published URIs, which is the URI minus the ms-settings: prefix. For example, if the URI for a settings page is ms-settings:bluetooth, the page identifier used in the policy will be just bluetooth. Multiple page identifiers are separated by semicolons. The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI ms-settings:about and ms-settings:bluetooth respectively:showonly:about;bluetooth. If the policy is not specified, the behavior will be that no pages are affected. If the policy string is formatted incorrectly, it will be ignored entirely (i. e. treated as not set) to prevent the machine from becoming unserviceable if data corruption occurs.
-
-**Note** that if a page is already hidden for another reason, then it will remain hidden even if it is in a showonly: list. The format of the PageVisibilityList value is as follows: The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity. There are two variants: one that shows only the given pages and one which hides the given pages. The first variant starts with the string showonly: and the second with the string hide:. Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace. Each page identifier is the ms-settings:xyz URI for the page, minus the ms-settings: prefix, so the identifier for the page with URI ms-settings:network-wifi would be just network-wifi. The default value for this setting is an empty string, which is interpreted as show everything. Example 1, specifies that only the wifi and bluetooth pages should be shown (they have URIs ms-settings:network-wifi and ms-settings:bluetooth). All other pages (and the categories they're in) will be hidden:showonly:network-wifi;bluetooth. Example 2, specifies that the wifi page should not be shown:hide:network-wifi
-<!-- PageVisibilityList-Description-End -->
-
-<!-- PageVisibilityList-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
-For more information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
-
-To validate this policy, use the following steps:
-
-1. In the Settings app, open **System** and verify that the **About** page is visible and accessible.
-2. Configure this policy with the following string: `hide:about`.
-3. Open **System** settings again and verify that the **About** page is hidden.
-
-<!-- PageVisibilityList-Editable-End -->
-
-<!-- PageVisibilityList-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- PageVisibilityList-DFProperties-End -->
-
-<!-- PageVisibilityList-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | SettingsPageVisibility |
-| Friendly Name | Settings Page Visibility |
-| Element Name | Settings Page Visibility |
-| Location | Computer and User Configuration |
-| Path | Control Panel |
-| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
-| ADMX File Name | ControlPanel.admx |
-<!-- PageVisibilityList-GpMapping-End -->
-
-<!-- PageVisibilityList-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-
-**Example 1**: Only the wifi and bluetooth pages should be shown. They have URIs `ms-settings:network-wifi` and `ms-settings:bluetooth`. All other pages (and the categories they're in) will be hidden:
-
-`showonly:network-wifi;bluetooth`
-
-**Example 2**: The wifi page shouldn't be shown:
-
-`hide:network-wifi`
-
-**Example 3**: Allow access only to the **about** and **bluetooth** pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively:
-
-`showonly:about;bluetooth`
-
-<!-- PageVisibilityList-Examples-End -->
-
-<!-- PageVisibilityList-End -->
-
 <!-- ConfigureTaskbarCalendar-Begin -->
 ## ConfigureTaskbarCalendar
 
@@ -728,11 +647,11 @@ To validate this policy, use the following steps:
 <!-- Description-Source-ADMX -->
 By default, the calendar is set according to the locale of the operating system, and users can show an additional calendar. For zh-CN and zh-SG locales, an additional calendar shows the lunar month and date and holiday names in Simplified Chinese (Lunar) by default. For zh-TW, zh-HK, and zh-MO locales, an additional calendar shows the lunar month and date and holiday names in Traditional Chinese (Lunar) by default.
 
-If you enable this policy setting, users can show an additional calendar in either Simplified Chinese (Lunar) or Traditional Chinese (Lunar), regardless of the locale.
+- If you enable this policy setting, users can show an additional calendar in either Simplified Chinese (Lunar) or Traditional Chinese (Lunar), regardless of the locale.
 
-If you disable this policy setting, users cannot show an additional calendar, regardless of the locale.
+- If you disable this policy setting, users cannot show an additional calendar, regardless of the locale.
 
-If you do not configure this policy setting, the calendar will be set according to the default logic.
+- If you do not configure this policy setting, the calendar will be set according to the default logic.
 <!-- ConfigureTaskbarCalendar-Description-End -->
 
 <!-- ConfigureTaskbarCalendar-Editable-Begin -->
@@ -779,6 +698,83 @@ If you do not configure this policy setting, the calendar will be set according 
 <!-- ConfigureTaskbarCalendar-Examples-End -->
 
 <!-- ConfigureTaskbarCalendar-End -->
+
+<!-- PageVisibilityList-Begin -->
+## PageVisibilityList
+
+<!-- PageVisibilityList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- PageVisibilityList-Applicability-End -->
+
+<!-- PageVisibilityList-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList
+```
+<!-- PageVisibilityList-OmaUri-End -->
+
+<!-- PageVisibilityList-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. The mode will be specified by the policy string beginning with either the string showonly or hide. Pages are identified by a shortened version of their already published URIs, which is the URI minus the ms-settings prefix. For example, if the URI for a settings page is ms-settingsbluetooth, the page identifier used in the policy will be just bluetooth. Multiple page identifiers are separated by semicolons. The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI ms-settingsabout and ms-settingsbluetooth respectivelyshowonlyabout;bluetooth. If the policy is not specified, the behavior will be that no pages are affected. If the policy string is formatted incorrectly, it will be ignored entirely (i. e. treated as not set) to prevent the machine from becoming unserviceable if data corruption occurs. **Note** that if a page is already hidden for another reason, then it will remain hidden even if it is in a showonly list. The format of the PageVisibilityList value is as follows The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity. There are two variants one that shows only the given pages and one which hides the given pages. The first variant starts with the string showonly and the second with the string hide. Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace. Each page identifier is the ms-settingsxyz URI for the page, minus the ms-settings prefix, so the identifier for the page with URI ms-settingsnetwork-wifi would be just network-wifi. The default value for this setting is an empty string, which is interpreted as show everything. Example 1, specifies that only the wifi and bluetooth pages should be shown (they have URIs ms-settingsnetwork-wifi and ms-settingsbluetooth). All other pages (and the categories they're in) will be hiddenshowonlynetwork-wifi;bluetooth. Example 2, specifies that the wifi page should not be shownhidenetwork-wifi
+<!-- PageVisibilityList-Description-End -->
+
+<!-- PageVisibilityList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+For more information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
+
+To validate this policy, use the following steps:
+
+1. In the Settings app, open **System** and verify that the **About** page is visible and accessible.
+2. Configure this policy with the following string: `hide:about`.
+3. Open **System** settings again and verify that the **About** page is hidden.
+<!-- PageVisibilityList-Editable-End -->
+
+<!-- PageVisibilityList-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PageVisibilityList-DFProperties-End -->
+
+<!-- PageVisibilityList-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SettingsPageVisibility |
+| Friendly Name | Settings Page Visibility |
+| Element Name | Settings Page Visibility |
+| Location | Computer and User Configuration |
+| Path | Control Panel |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | ControlPanel.admx |
+<!-- PageVisibilityList-GpMapping-End -->
+
+<!-- PageVisibilityList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+
+**Example 1**: Only the wifi and bluetooth pages should be shown. They have URIs `ms-settings:network-wifi` and `ms-settings:bluetooth`. All other pages (and the categories they're in) will be hidden:
+
+`showonly:network-wifi;bluetooth`
+
+**Example 2**: The wifi page shouldn't be shown:
+
+`hide:network-wifi`
+
+**Example 3**: Allow access only to the **about** and **bluetooth** pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively:
+
+`showonly:about;bluetooth`
+<!-- PageVisibilityList-Examples-End -->
+
+<!-- PageVisibilityList-End -->
 
 <!-- Settings-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

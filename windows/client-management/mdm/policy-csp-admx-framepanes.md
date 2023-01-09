@@ -1,10 +1,10 @@
 ---
 title: ADMX_FramePanes Policy CSP
-description: Learn more about the ADMX_FramePanes Area in Policy CSP
+description: Learn more about the ADMX_FramePanes Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/03/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_FramePanes
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,11 +44,12 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting shows or hides the Details Pane in File Explorer.
 
-If you enable this policy setting and configure it to hide the pane, the Details Pane in File Explorer is hidden and cannot be turned on by the user.
+- If you enable this policy setting and configure it to hide the pane, the Details Pane in File Explorer is hidden and cannot be turned on by the user.
 
-If you enable this policy setting and configure it to show the pane, the Details Pane is always visible and cannot be hidden by the user.
+- If you enable this policy setting and configure it to show the pane, the Details Pane is always visible and cannot be hidden by the user
 
-**Note**:  This has a side effect of not being able to toggle to the Preview Pane since the two cannot be displayed at the same time.
+> [!NOTE]
+> This has a side effect of not being able to toggle to the Preview Pane since the two cannot be displayed at the same time.
 
 If you disable, or do not configure this policy setting, the Details Pane is hidden by default and can be displayed by the user. This is the default policy setting.
 <!-- NoPreviewPane-Description-End -->
@@ -70,7 +69,7 @@ If you disable, or do not configure this policy setting, the Details Pane is hid
 
 <!-- NoPreviewPane-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -109,7 +108,7 @@ If you disable, or do not configure this policy setting, the Details Pane is hid
 <!-- Description-Source-ADMX -->
 Hides the Preview Pane in File Explorer.
 
-If you enable this policy setting, the Preview Pane in File Explorer is hidden and cannot be turned on by the user.
+- If you enable this policy setting, the Preview Pane in File Explorer is hidden and cannot be turned on by the user.
 
 If you disable, or do not configure this setting, the Preview Pane is hidden by default and can be displayed by the user.
 <!-- NoReadingPane-Description-End -->
@@ -129,7 +128,7 @@ If you disable, or do not configure this setting, the Preview Pane is hidden by 
 
 <!-- NoReadingPane-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 

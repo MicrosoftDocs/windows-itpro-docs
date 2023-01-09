@@ -1,10 +1,10 @@
 ---
 title: ADMX_PeerToPeerCaching Policy CSP
-description: Learn more about the ADMX_PeerToPeerCaching Area in Policy CSP
+description: Learn more about the ADMX_PeerToPeerCaching Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/05/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_PeerToPeerCaching
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -80,13 +78,13 @@ Select one of the following:
 
 <!-- EnableWindowsBranchCache-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WBC_Enable |
+| Name | EnableWindowsBranchCache |
 | Friendly Name | Turn on BranchCache |
 | Location | Computer Configuration |
 | Path | Network > BranchCache |
@@ -150,13 +148,13 @@ Select one of the following:
 
 <!-- EnableWindowsBranchCache_Distributed-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WBC_Distributed_Enable |
+| Name | EnableWindowsBranchCache_Distributed |
 | Friendly Name | Set BranchCache Distributed Cache mode |
 | Location | Computer Configuration |
 | Path | Network > BranchCache |
@@ -226,13 +224,13 @@ Hosted cache clients must trust the server certificate that is issued to the hos
 
 <!-- EnableWindowsBranchCache_Hosted-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WBC_HostedCache_Location |
+| Name | EnableWindowsBranchCache_Hosted |
 | Friendly Name | Set BranchCache Hosted Cache mode |
 | Location | Computer Configuration |
 | Path | Network > BranchCache |
@@ -263,9 +261,10 @@ Hosted cache clients must trust the server certificate that is issued to the hos
 
 <!-- EnableWindowsBranchCache_HostedCacheDiscovery-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies whether client computers should attempt the automatic configuration of hosted cache mode by searching for hosted cache servers publishing service connection points that are associated with the client's current Active Directory site. If you enable this policy setting, client computers to which the policy setting is applied search for hosted cache servers using Active Directory, and will prefer both these servers and hosted cache mode rather than manual BranchCache configuration or BranchCache configuration by other group policies.
+This policy setting specifies whether client computers should attempt the automatic configuration of hosted cache mode by searching for hosted cache servers publishing service connection points that are associated with the client's current Active Directory site.
+- If you enable this policy setting, client computers to which the policy setting is applied search for hosted cache servers using Active Directory, and will prefer both these servers and hosted cache mode rather than manual BranchCache configuration or BranchCache configuration by other group policies.
 
-If you enable this policy setting in addition to the "Turn on BranchCache" policy setting, BranchCache clients attempt to discover hosted cache servers in the local branch office. If client computers detect hosted cache servers, hosted cache mode is turned on. If they do not detect hosted cache servers, hosted cache mode is not turned on, and the client uses any other configuration that is specified manually or by Group Policy.
+- If you enable this policy setting in addition to the "Turn on BranchCache" policy setting, BranchCache clients attempt to discover hosted cache servers in the local branch office. If client computers detect hosted cache servers, hosted cache mode is turned on. If they do not detect hosted cache servers, hosted cache mode is not turned on, and the client uses any other configuration that is specified manually or by Group Policy.
 
 When this policy setting is applied, the client computer performs or does not perform automatic hosted cache server discovery under the following circumstances:
 
@@ -305,13 +304,13 @@ Select one of the following:
 
 <!-- EnableWindowsBranchCache_HostedCacheDiscovery-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WBC_HostedCacheDiscovery_Enable |
+| Name | EnableWindowsBranchCache_HostedCacheDiscovery |
 | Friendly Name | Enable Automatic Hosted Cache Discovery by Service Connection Point |
 | Location | Computer Configuration |
 | Path | Network > BranchCache |
@@ -345,11 +344,11 @@ Select one of the following:
 <!-- Description-Source-ADMX -->
 This policy setting specifies whether client computers are configured to use hosted cache mode and provides the computer name of the hosted cache servers that are available to the client computers. Hosted cache mode enables client computers in branch offices to retrieve content from one or more hosted cache servers that are installed in the same office location. You can use this setting to automatically configure client computers that are configured for hosted cache mode with the computer names of the hosted cache servers in the branch office.
 
-If you enable this policy setting and specify valid computer names of hosted cache servers, hosted cache mode is enabled for all client computers to which the policy setting is applied. For this policy setting to take effect, you must also enable the "Turn on BranchCache" policy setting.
+- If you enable this policy setting and specify valid computer names of hosted cache servers, hosted cache mode is enabled for all client computers to which the policy setting is applied. For this policy setting to take effect, you must also enable the "Turn on BranchCache" policy setting.
 
 This policy setting can only be applied to client computers that are running at least Windows 8. This policy has no effect on computers that are running Windows 7 or Windows Vista. Client computers to which this policy setting is applied, in addition to the "Set BranchCache Hosted Cache mode" policy setting, use the hosted cache servers that are specified in this policy setting and do not use the hosted cache server that is configured in the policy setting "Set BranchCache Hosted Cache Mode."
 
-If you do not configure this policy setting, or if you disable this policy setting, client computers that are configured with hosted cache mode still function correctly.
+- If you do not configure this policy setting, or if you disable this policy setting, client computers that are configured with hosted cache mode still function correctly.
 
 Policy configuration
 
@@ -381,13 +380,13 @@ In circumstances where this setting is enabled, you can also select and configur
 
 <!-- EnableWindowsBranchCache_HostedMultipleServers-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WBC_HostedCache_MultipleServers |
+| Name | EnableWindowsBranchCache_HostedMultipleServers |
 | Friendly Name | Configure Hosted Cache Servers |
 | Location | Computer Configuration |
 | Path | Network > BranchCache |
@@ -450,13 +449,13 @@ In circumstances where this policy setting is enabled, you can also select and c
 
 <!-- EnableWindowsBranchCache_SMB-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WBC_SMB_Enable |
+| Name | EnableWindowsBranchCache_SMB |
 | Friendly Name | Configure BranchCache for network files |
 | Location | Computer Configuration |
 | Path | Network > BranchCache |
@@ -489,9 +488,9 @@ In circumstances where this policy setting is enabled, you can also select and c
 <!-- Description-Source-ADMX -->
 This policy setting specifies the default percentage of total disk space that is allocated for the BranchCache disk cache on client computers.
 
-If you enable this policy setting, you can configure the percentage of total disk space to allocate for the cache.
+- If you enable this policy setting, you can configure the percentage of total disk space to allocate for the cache.
 
-If you disable or do not configure this policy setting, the cache is set to 5 percent of the total disk space on the client computer.
+- If you disable or do not configure this policy setting, the cache is set to 5 percent of the total disk space on the client computer.
 
 Policy configuration
 
@@ -525,13 +524,13 @@ In circumstances where this setting is enabled, you can also select and configur
 
 <!-- SetCachePercent-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WBC_Cache_Percent |
+| Name | SetCachePercent |
 | Friendly Name | Set percentage of disk space used for client computer cache |
 | Location | Computer Configuration |
 | Path | Network > BranchCache |
@@ -564,9 +563,9 @@ In circumstances where this setting is enabled, you can also select and configur
 <!-- Description-Source-ADMX -->
 This policy setting specifies the default age in days for which segments are valid in the BranchCache data cache on client computers.
 
-If you enable this policy setting, you can configure the age for segments in the data cache.
+- If you enable this policy setting, you can configure the age for segments in the data cache.
 
-If you disable or do not configure this policy setting, the age is set to 28 days.
+- If you disable or do not configure this policy setting, the age is set to 28 days.
 
 Policy configuration
 
@@ -598,13 +597,13 @@ In circumstances where this setting is enabled, you can also select and configur
 
 <!-- SetDataCacheEntryMaxAge-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WBC_Cache_MaxAge |
+| Name | SetDataCacheEntryMaxAge |
 | Friendly Name | Set age for segments in the data cache |
 | Location | Computer Configuration |
 | Path | Network > BranchCache |
@@ -637,9 +636,9 @@ In circumstances where this setting is enabled, you can also select and configur
 <!-- Description-Source-ADMX -->
 This policy setting specifies whether BranchCache-capable client computers operate in a downgraded mode in order to maintain compatibility with previous versions of BranchCache. If client computers do not use the same BranchCache version, cache efficiency might be reduced because client computers that are using different versions of BranchCache might store cache data in incompatible formats.
 
-If you enable this policy setting, all clients use the version of BranchCache that you specify in "Select from the following versions."
+- If you enable this policy setting, all clients use the version of BranchCache that you specify in "Select from the following versions."
 
-If you do not configure this setting, all clients will use the version of BranchCache that matches their operating system.
+- If you do not configure this setting, all clients will use the version of BranchCache that matches their operating system.
 
 Policy configuration
 
@@ -675,13 +674,13 @@ Select from the following versions
 
 <!-- SetDowngrading-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | WBC_Downgrading |
+| Name | SetDowngrading |
 | Friendly Name | Configure Client BranchCache Version Support |
 | Location | Computer Configuration |
 | Path | Network > BranchCache |

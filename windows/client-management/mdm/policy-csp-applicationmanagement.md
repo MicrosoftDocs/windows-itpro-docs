@@ -1,10 +1,10 @@
 ---
 title: ApplicationManagement Policy CSP
-description: Learn more about the ApplicationManagement Area in Policy CSP
+description: Learn more about the ApplicationManagement Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/04/2023
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -39,9 +39,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.
 
-If you enable this policy setting, you can install any LOB or developer-signed Windows Store app (which must be signed with a certificate chain that can be successfully validated by the local computer).
+- If you enable this policy setting, you can install any LOB or developer-signed Windows Store app (which must be signed with a certificate chain that can be successfully validated by the local computer).
 
-If you disable or do not configure this policy setting, you cannot install LOB or developer-signed Windows Store apps.
+- If you disable or do not configure this policy setting, you cannot install LOB or developer-signed Windows Store apps.
 <!-- AllowAllTrustedApps-Description-End -->
 
 <!-- AllowAllTrustedApps-Editable-Begin -->
@@ -171,11 +171,11 @@ Specifies whether automatic update of apps from Microsoft Store are allowed. Mos
 <!-- Description-Source-ADMX -->
 This policy setting controls whether the system can archive infrequently used apps.
 
-If you enable this policy setting, then the system will periodically check for and archive infrequently used apps.
+- If you enable this policy setting, then the system will periodically check for and archive infrequently used apps.
 
-If you disable this policy setting, then the system will not archive any apps.
+- If you disable this policy setting, then the system will not archive any apps.
 
-If you do not configure this policy setting (default), then the system will follow default behavior, which is to periodically check for and archive infrequently used apps, and the user will be able to configure this setting themselves.
+- If you do not configure this policy setting (default), then the system will follow default behavior, which is to periodically check for and archive infrequently used apps, and the user will be able to configure this setting themselves.
 <!-- AllowAutomaticAppArchiving-Description-End -->
 
 <!-- AllowAutomaticAppArchiving-Editable-Begin -->
@@ -241,9 +241,9 @@ If you do not configure this policy setting (default), then the system will foll
 <!-- Description-Source-ADMX -->
 Allows or denies development of Microsoft Store applications and installing them directly from an IDE.
 
-If you enable this setting and enable the "Allow all trusted apps to install" Group Policy, you can develop Microsoft Store apps and install them directly from an IDE.
+- If you enable this setting and enable the "Allow all trusted apps to install" Group Policy, you can develop Microsoft Store apps and install them directly from an IDE.
 
-If you disable or do not configure this setting, you cannot develop Microsoft Store apps or install them directly from an IDE.
+- If you disable or do not configure this setting, you cannot develop Microsoft Store apps or install them directly from an IDE.
 <!-- AllowDeveloperUnlock-Description-End -->
 
 <!-- AllowDeveloperUnlock-Editable-Begin -->
@@ -309,7 +309,8 @@ If you disable or do not configure this setting, you cannot develop Microsoft St
 <!-- Description-Source-ADMX -->
 Windows Game Recording and Broadcasting.
 
-This setting enables or disables the Windows Game Recording and Broadcasting features. If you disable this setting, Windows Game Recording will not be allowed.
+This setting enables or disables the Windows Game Recording and Broadcasting features.
+- If you disable this setting, Windows Game Recording will not be allowed.
 If the setting is enabled or not configured, then Recording and Broadcasting (streaming) will be allowed.
 <!-- AllowGameDVR-Description-End -->
 
@@ -317,7 +318,6 @@ If the setting is enabled or not configured, then Recording and Broadcasting (st
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
-
 <!-- AllowGameDVR-Editable-End -->
 
 <!-- AllowGameDVR-DFProperties-Begin -->
@@ -378,9 +378,9 @@ If the setting is enabled or not configured, then Recording and Broadcasting (st
 <!-- Description-Source-ADMX -->
 Manages a Windows app's ability to share data between users who have installed the app.
 
-If you enable this policy, a Windows app can share app data with other instances of that app. Data is shared through the SharedLocal folder. This folder is available through the Windows.Storage API.
+- If you enable this policy, a Windows app can share app data with other instances of that app. Data is shared through the SharedLocal folder. This folder is available through the Windows. Storage API.
 
-If you disable this policy, a Windows app can't share app data with other instances of that app. If this policy was previously enabled, any previously shared app data will remain in the SharedLocal folder.
+- If you disable this policy, a Windows app can't share app data with other instances of that app. If this policy was previously enabled, any previously shared app data will remain in the SharedLocal folder.
 <!-- AllowSharedUserAppData-Description-End -->
 
 <!-- AllowSharedUserAppData-Editable-Begin -->
@@ -539,9 +539,9 @@ This policy is deprecated
 <!-- Description-Source-ADMX -->
 Manages non-Administrator users' ability to install Windows app packages.
 
-If you enable this policy, non-Administrators will be unable to initiate installation of Windows app packages. Administrators who wish to install an app will need to do so from an Administrator context (for example, an Administrator PowerShell window). All users will still be able to install Windows app packages via the Microsoft Store, if permitted by other policies.
+- If you enable this policy, non-Administrators will be unable to initiate installation of Windows app packages. Administrators who wish to install an app will need to do so from an Administrator context (for example, an Administrator PowerShell window). All users will still be able to install Windows app packages via the Microsoft Store, if permitted by other policies.
 
-If you disable or do not configure this policy, all users will be able to initiate installation of Windows app packages.
+- If you disable or do not configure this policy, all users will be able to initiate installation of Windows app packages.
 <!-- BlockNonAdminUserInstall-Description-End -->
 
 <!-- BlockNonAdminUserInstall-Editable-Begin -->
@@ -722,9 +722,9 @@ For this policy to work, the Windows apps need to declare in their manifest that
 <!-- Description-Source-ADMX -->
 This policy setting permits users to change installation options that typically are available only to system administrators.
 
-If you enable this policy setting, some of the security features of Windows Installer are bypassed. It permits installations to complete that otherwise would be halted due to a security violation.
+- If you enable this policy setting, some of the security features of Windows Installer are bypassed. It permits installations to complete that otherwise would be halted due to a security violation.
 
-If you disable or do not configure this policy setting, the security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed.
+- If you disable or do not configure this policy setting, the security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed.
 
 If Windows Installer detects that an installation package has permitted the user to change a protected option, it stops the installation and displays a message. These security features operate only when the installation program is running in a privileged security context in which it has access to directories denied to the user.
 
@@ -750,8 +750,8 @@ This policy setting is designed for less restrictive environments. It can be use
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled |
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
 <!-- MSIAllowUserControlOverInstall-AllowedValues-End -->
 
 <!-- MSIAllowUserControlOverInstall-GpMapping-Begin -->
@@ -797,16 +797,15 @@ This policy setting is designed for less restrictive environments. It can be use
 <!-- Description-Source-ADMX -->
 This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.
 
-If you enable this policy setting, privileges are extended to all programs. These privileges are usually reserved for programs that have been assigned to the user (offered on the desktop), assigned to the computer (installed automatically), or made available in Add or Remove Programs in Control Panel. This profile setting lets users install programs that require access to directories that the user might not have permission to view or change, including directories on highly restricted computers.
+- If you enable this policy setting, privileges are extended to all programs. These privileges are usually reserved for programs that have been assigned to the user (offered on the desktop), assigned to the computer (installed automatically), or made available in Add or Remove Programs in Control Panel. This profile setting lets users install programs that require access to directories that the user might not have permission to view or change, including directories on highly restricted computers.
 
-If you disable or do not configure this policy setting, the system applies the current user's permissions when it installs programs that a system administrator does not distribute or offer.
+- If you disable or do not configure this policy setting, the system applies the current user's permissions when it installs programs that a system administrator does not distribute or offer.
 
-**Note**: This policy setting appears both in the Computer Configuration and User Configuration folders. To make this policy setting effective, you must enable it in both folders.
+> [!NOTE]
+> This policy setting appears both in the Computer Configuration and User Configuration folders. To make this policy setting effective, you must enable it in both folders.
 
 > [!CAUTION]
-> Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders.
-
-**Note** that the User Configuration version of this policy setting is not guaranteed to be secure.
+> Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders. **Note** that the User Configuration version of this policy setting is not guaranteed to be secure.
 <!-- MSIAlwaysInstallWithElevatedPrivileges-Description-End -->
 
 <!-- MSIAlwaysInstallWithElevatedPrivileges-Editable-Begin -->
@@ -828,8 +827,8 @@ If you disable or do not configure this policy setting, the system applies the c
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled |
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
 <!-- MSIAlwaysInstallWithElevatedPrivileges-AllowedValues-End -->
 
 <!-- MSIAlwaysInstallWithElevatedPrivileges-GpMapping-Begin -->
@@ -875,9 +874,9 @@ If you disable or do not configure this policy setting, the system applies the c
 <!-- Description-Source-ADMX -->
 Denies access to the retail catalog in the Microsoft Store, but displays the private store.
 
-If you enable this setting, users will not be able to view the retail catalog in the Microsoft Store, but they will be able to view apps in the private store.
+- If you enable this setting, users will not be able to view the retail catalog in the Microsoft Store, but they will be able to view apps in the private store.
 
-If you disable or don't configure this setting, users can access the retail catalog in the Microsoft Store.
+- If you disable or don't configure this setting, users can access the retail catalog in the Microsoft Store.
 <!-- RequirePrivateStoreOnly-Description-End -->
 
 <!-- RequirePrivateStoreOnly-Editable-Begin -->
@@ -942,9 +941,9 @@ If you disable or don't configure this setting, users can access the retail cata
 <!-- Description-Source-ADMX -->
 Prevent users' app data from moving to another location when an app is moved or installed on another location.
 
-If you enable this setting, all users' app data will stay on the system volume, regardless of where the app is installed.
+- If you enable this setting, all users' app data will stay on the system volume, regardless of where the app is installed.
 
-If you disable or do not configure this setting, then when an app is moved to a different volume, the users' app data will also move to this volume.
+- If you disable or do not configure this setting, then when an app is moved to a different volume, the users' app data will also move to this volume.
 <!-- RestrictAppDataToSystemVolume-Description-End -->
 
 <!-- RestrictAppDataToSystemVolume-Editable-Begin -->
@@ -1009,9 +1008,9 @@ If you disable or do not configure this setting, then when an app is moved to a 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage installing Windows apps on additional volumes such as secondary partitions, USB drives, or SD cards.
 
-If you enable this setting, you can't move or install Windows apps on volumes that are not the system volume.
+- If you enable this setting, you can't move or install Windows apps on volumes that are not the system volume.
 
-If you disable or do not configure this setting, you can move or install Windows apps on other volumes.
+- If you disable or do not configure this setting, you can move or install Windows apps on other volumes.
 <!-- RestrictAppToSystemVolume-Description-End -->
 
 <!-- RestrictAppToSystemVolume-Editable-Begin -->

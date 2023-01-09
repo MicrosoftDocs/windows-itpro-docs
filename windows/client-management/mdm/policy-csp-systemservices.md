@@ -1,10 +1,10 @@
 ---
 title: SystemServices Policy CSP
-description: Learn more about the SystemServices Area in Policy CSP
+description: Learn more about the SystemServices Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/09/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -159,9 +159,9 @@ This setting determines whether the service's start type is Automatic(2), Manual
 
 | Value | Description |
 |:--|:--|
-| 2 | Automatic |
-| 3 (Default) | Manual |
-| 4 | Disabled |
+| 2 | Automatic. |
+| 3 (Default) | Manual. |
+| 4 | Disabled. |
 <!-- ConfigureXboxAccessoryManagementServiceStartupMode-AllowedValues-End -->
 
 <!-- ConfigureXboxAccessoryManagementServiceStartupMode-GpMapping-Begin -->
@@ -218,9 +218,9 @@ This setting determines whether the service's start type is Automatic(2), Manual
 
 | Value | Description |
 |:--|:--|
-| 2 | Automatic |
-| 3 (Default) | Manual |
-| 4 | Disabled |
+| 2 | Automatic. |
+| 3 (Default) | Manual. |
+| 4 | Disabled. |
 <!-- ConfigureXboxLiveAuthManagerServiceStartupMode-AllowedValues-End -->
 
 <!-- ConfigureXboxLiveAuthManagerServiceStartupMode-GpMapping-Begin -->
@@ -277,9 +277,9 @@ This setting determines whether the service's start type is Automatic(2), Manual
 
 | Value | Description |
 |:--|:--|
-| 2 | Automatic |
-| 3 (Default) | Manual |
-| 4 | Disabled |
+| 2 | Automatic. |
+| 3 (Default) | Manual. |
+| 4 | Disabled. |
 <!-- ConfigureXboxLiveGameSaveServiceStartupMode-AllowedValues-End -->
 
 <!-- ConfigureXboxLiveGameSaveServiceStartupMode-GpMapping-Begin -->
@@ -336,9 +336,9 @@ This setting determines whether the service's start type is Automatic(2), Manual
 
 | Value | Description |
 |:--|:--|
-| 2 | Automatic |
-| 3 (Default) | Manual |
-| 4 | Disabled |
+| 2 | Automatic. |
+| 3 (Default) | Manual. |
+| 4 | Disabled. |
 <!-- ConfigureXboxLiveNetworkingServiceStartupMode-AllowedValues-End -->
 
 <!-- ConfigureXboxLiveNetworkingServiceStartupMode-GpMapping-Begin -->
