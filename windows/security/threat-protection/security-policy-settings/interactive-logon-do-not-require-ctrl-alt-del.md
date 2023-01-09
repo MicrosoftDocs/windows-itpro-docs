@@ -19,6 +19,7 @@ ms.technology: itpro-security
 # Interactive logon: Do not require CTRL+ALT+DEL
 
 **Applies to**
+- Windows 11
 - Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Interactive logon: Do not require CTRL+ALT+DEL** security policy setting.
