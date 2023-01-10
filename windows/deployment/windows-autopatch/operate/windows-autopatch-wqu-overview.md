@@ -84,7 +84,7 @@ When running an expedited release, the regular goal of 95% of devices in 21 days
 
 Windows Autopatch provides the option to turn off of service-driven expedited quality updates.
 
-By default, the service expedites quality updates as needed. For those organizations seeking greater control, you can disable expedited quality updates for Microsoft Managed Desktop-enrolled devices using Microsoft Intune.
+By default, the service expedites quality updates as needed. For those organizations seeking greater control, you can disable expedited quality updates for Windows Autopatch-enrolled devices using Microsoft Intune.
 
 **To turn off service-driven expedited quality updates:**
 
@@ -116,8 +116,8 @@ There are two statuses associated with paused quality updates, **Service Paused*
 
 | Status | Description |
 | ----- | ------ |
-| Service Paused | If the Microsoft Managed Desktop service has paused an update, the release will have the **Service Paused** status. You must [submit a support request](windows-autopatch-support-request.md) to resume the update. |
-| Customer Paused | If you've paused an update, the release will have the **Customer Paused** status. The Microsoft Managed Desktop service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update. |
+| Service Paused | If the Windows Autopatch service has paused an update, the release will have the **Service Paused** status. You must [submit a support request](windows-autopatch-support-request.md) to resume the update. |
+| Customer Paused | If you've paused an update, the release will have the **Customer Paused** status. The Windows Autopatch service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update. |
 
 ## Incidents and outages
 
