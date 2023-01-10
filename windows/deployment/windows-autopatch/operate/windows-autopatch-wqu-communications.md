@@ -12,7 +12,7 @@ manager: dougeby
 msreviewer: hathind
 ---
 
-# Windows quality update communications
+# Windows quality and feature update communications
 
 There are three categories of communication that are sent out during a Windows quality and feature update:
 
