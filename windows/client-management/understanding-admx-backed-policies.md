@@ -237,7 +237,7 @@ Below is the internal OS mapping of a Group Policy to an MDM area and name. This
 
 `./[Device|User]/Vendor/MSFT/Policy/Config/[config|result]/<area>/<policy>`
 
-The data payload of the SyncML needs to be encoded so that it doesn't conflict with the boilerplate SyncML XML tags. Use this online tool for encoding and encoding the policy data [Coder's Toolbox](http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii)
+The data payload of the SyncML needs to be encoded so that it doesn't conflict with the boilerplate SyncML XML tags. Use this online tool for encoding and decoding the policy data [Coder's Toolbox](http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii)
 
 **Snippet of manifest for AppVirtualization area:**
 
