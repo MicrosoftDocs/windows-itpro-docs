@@ -3233,12 +3233,24 @@ This policy setting lets you decide whether employees can override the Windows D
 <!-- PreventTurningOffRequiredExtensions-OmaUri-End -->
 
 <!-- PreventTurningOffRequiredExtensions-Description-Begin -->
-<!-- Description-Source-DDF -->
-You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically. When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs). For example, adding Microsoft. OneNoteWebClipper_8wekyb3d8bbwe;Microsoft. OfficeOnline_8wekyb3d8bbwe prevents a user from turning off the OneNote Web Clipper and Office Online extension. When enabled, removing extensions from the list does not uninstall the extension from the user's computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension. If disabled or not configured, extensions defined as part of this policy get ignored. Default setting: Disabled or not configured Related policies: Allow Developer Tools Related Documents: - Find a package family name (PFN) for per-app VPN (<https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)> - How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (<https://docs.microsoft.com/intune/windows-store-for-business)> - How to assign apps to groups with Microsoft Intune (<https://docs.microsoft.com/intune/apps-deploy)> - Manage apps from the Microsoft Store for Business with System Center Configuration Manager (<https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)> - How to add Windows line-of-business (LOB) apps to Microsoft Intune (<https://docs.microsoft.com/intune/lob-apps-windows)>
+<!-- Description-Source-Manual-Forced -->
 <!-- PreventTurningOffRequiredExtensions-Description-End -->
 
 <!-- PreventTurningOffRequiredExtensions-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically.
+
+- When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs). For example, adding `Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe` prevents a user from turning off the OneNote Web Clipper and Office Online extension. When enabled, removing extensions from the list does not uninstall the extension from the user's computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension.
+- If disabled or not configured, extensions defined as part of this policy get ignored.
+- Default setting: Disabled or not configured
+
+Related Documents:
+
+- [Find a package family name (PFN) for per-app VPN](/mem/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](/mem/intune/apps/windows-store-for-business)
+- [Assign apps to groups with Microsoft Intune](/mem/intune/apps-deploy)
+- [Manage apps from the Microsoft Store for Business and Education with Configuration Manager](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- [Add a Windows line-of-business app to Microsoft Intune](/mem/intune/apps/lob-apps-windows)
 <!-- PreventTurningOffRequiredExtensions-Editable-End -->
 
 <!-- PreventTurningOffRequiredExtensions-DFProperties-Begin -->
