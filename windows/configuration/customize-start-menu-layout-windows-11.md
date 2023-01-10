@@ -33,7 +33,7 @@ This article shows you how to export an existing Start menu layout, and use the 
 
 - When you customize the Start layout, you overwrite the entire full layout. A partial Start layout isn't available. Users can pin and unpin apps, and uninstall apps from Start.  However, the reapplication of the MDM policy on logon/explorer restart will restore the specified layout and not retain any user changes.
 - 
-To prevent users from making any changes to the Start Menu layout see topic [NoChangeStartMenu](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-startmenu#admx-startmenu-nochangestartmenu/)
+To prevent users from making any changes to the Start Menu layout see topic [NoChangeStartMenu](/windows/client-management/mdm/policy-csp-admx-startmenu#admx-startmenu-nochangestartmenu)
 
 
 - It's recommended to use a Mobile Device Management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. You can use Microsoft Intune. Intune is a family of products that include Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
