@@ -46,13 +46,13 @@ ms.date: 08/01/2022
 - [Experience/AllowManualMDMUnenrollment](policy-csp-experience.md#allowmanualmdmunenrollment)
 - [MixedReality/AADGroupMembershipCacheValidityInDays](policy-csp-mixedreality.md#aadgroupmembershipcachevalidityindays)
 - [MixedReality/AADGroupMembershipCacheValidityInDays](./policy-csp-mixedreality.md#aadgroupmembershipcachevalidityindays) <sup>9</sup>
-- [MixedReality/AllowCaptivePortalBeforeLogon](./policy-csp-mixedreality.md#allowcaptiveportalpeforelogon) <sup>12</sup>
+- [MixedReality/AllowCaptivePortalBeforeLogon](./policy-csp-mixedreality.md#allowcaptiveportalbeforelogon) <sup>12</sup>
 - [MixedReality/AllowLaunchUriInSingleAppKiosk](./policy-csp-mixedreality.md#allowlaunchuriinsingleappkiosk)<sup>10</sup>
 - [MixedReality/AutoLogonUser](./policy-csp-mixedreality.md#autologonuser) <sup>11</sup>
 - [MixedReality/BrightnessButtonDisabled](./policy-csp-mixedreality.md#brightnessbuttondisabled) <sup>9</sup>
 - [MixedReality/ConfigureMovingPlatform](policy-csp-mixedreality.md#configuremovingplatform) <sup>*[Feb. 2022 Servicing release](/hololens/hololens-release-notes#windows-holographic-version-21h2---february-2022-update)</sup>
 - [MixedReality/ConfigureNtpClient](./policy-csp-mixedreality.md#configurentpclient) <sup>12</sup>
-- [MixedReality/DisallowNetworkConnectivityPassivePolling](./policy-csp-mixedreality.md#disablesisallownetworkconnectivitypassivepolling) <sup>12</sup>
+- [MixedReality/DisallowNetworkConnectivityPassivePolling](./policy-csp-mixedreality.md#disallownetworkconnectivitypassivepolling) <sup>12</sup>
 - [MixedReality/FallbackDiagnostics](./policy-csp-mixedreality.md#fallbackdiagnostics) <sup>9</sup>
 - [MixedReality/HeadTrackingMode](policy-csp-mixedreality.md#headtrackingmode) <sup>9</sup>
 - [MixedReality/ManualDownDirectionDisabled](policy-csp-mixedreality.md#manualdowndirectiondisabled) <sup>*[Feb. 2022 Servicing release](/hololens/hololens-release-notes#windows-holographic-version-21h2---february-2022-update)</sup>
@@ -71,26 +71,26 @@ ms.date: 08/01/2022
 - [Privacy/AllowInputPersonalization](policy-csp-privacy.md#allowinputpersonalization)
 - [Privacy/DisablePrivacyExperience](./policy-csp-privacy.md#disableprivacyexperience) <sup>Insider</sup>
 - [Privacy/LetAppsAccessAccountInfo](policy-csp-privacy.md#letappsaccessaccountinfo)
-- [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessaccountinfo-forceallowtheseapps)
-- [Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessaccountinfo-forcedenytheseapps)
-- [Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccessaccountinfo-userincontroloftheseapps)
+- [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessaccountinfo_forceallowtheseapps)
+- [Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessaccountinfo_forcedenytheseapps)
+- [Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccessaccountinfo_userincontroloftheseapps)
 - [Privacy/LetAppsAccessBackgroundSpatialPerception](policy-csp-privacy.md#letappsaccessbackgroundspatialperception)
-- [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessbackgroundspatialperception-forceallowtheseapps)
-- [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessbackgroundspatialperception-forcedenytheseapps)
-- [Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccessbackgroundspatialperception-userincontroloftheseapps)
-- [Privacy/LetAppsAccessCamera_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccesscamera-forceallowtheseapps) <sup>8</sup>
-- [Privacy/LetAppsAccessCamera_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccesscamera-forcedenytheseapps) <sup>8</sup>
-- [Privacy/LetAppsAccessCamera_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccesscamera-userincontroloftheseapps) <sup>8</sup>
+- [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessbackgroundspatialperception_forceallowtheseapps)
+- [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessbackgroundspatialperception_forcedenytheseapps)
+- [Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccessbackgroundspatialperception_userincontroloftheseapps)
+- [Privacy/LetAppsAccessCamera_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccesscamera_forceallowtheseapps) <sup>8</sup>
+- [Privacy/LetAppsAccessCamera_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccesscamera_forcedenytheseapps) <sup>8</sup>
+- [Privacy/LetAppsAccessCamera_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccesscamera_userincontroloftheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessGazeInput](policy-csp-privacy.md#letappsaccessgazeinput) <sup>8</sup>
-- [Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessgazeinput-forceallowtheseapps) <sup>8</sup>
-- [Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessgazeinput-forcedenytheseapps) <sup>8</sup>
-- [Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccessgazeinput-userincontroloftheseapps) <sup>8</sup>
+- [Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessgazeinput_forceallowtheseapps) <sup>8</sup>
+- [Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessgazeinput_forcedenytheseapps) <sup>8</sup>
+- [Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccessgazeinput_userincontroloftheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessCamera](policy-csp-privacy.md#letappsaccesscamera)
 - [Privacy/LetAppsAccessLocation](policy-csp-privacy.md#letappsaccesslocation)
 - [Privacy/LetAppsAccessMicrophone](policy-csp-privacy.md#letappsaccessmicrophone)
-- [Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessmicrophone-forceallowtheseapps) <sup>8</sup>
-- [Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessmicrophone-forcedenytheseapps) <sup>8</sup>
-- [Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccessmicrophone-userincontroloftheseapps) <sup>8</sup>
+- [Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessmicrophone_forceallowtheseapps) <sup>8</sup>
+- [Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessmicrophone_forcedenytheseapps) <sup>8</sup>
+- [Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccessmicrophone_userincontroloftheseapps) <sup>8</sup>
 - [RemoteLock/Lock](./remotelock-csp.md) <sup>9</sup>
 - [Search/AllowSearchToUseLocation](policy-csp-search.md#allowsearchtouselocation)
 - [Security/AllowAddProvisioningPackage](policy-csp-security.md#allowaddprovisioningpackage) <sup>9</sup>
