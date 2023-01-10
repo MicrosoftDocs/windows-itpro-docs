@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Windows Hello for Business Frequently Asked Questions (FAQ)
-  description: Use these frequently asked questions (FAQ) to learn important details about Windows Hello for Business.   
+  description: Use these frequently asked questions (FAQ) to learn important details about Windows Hello for Business.  
   keywords: identity, PIN, biometric, Hello, passport
   ms.prod: windows-client
   ms.technology: itpro-security
@@ -13,7 +13,6 @@ metadata:
   manager: aaroncz
   ms.reviewer: prsriva
   ms.collection:
-    - M365-identity-device-management
     - highpri
   ms.topic: faq
   localizationpriority: medium
@@ -30,16 +29,16 @@ sections:
     
       - question: What is Windows Hello for Business cloud Kerberos trust?
         answer: |
-          Windows Hello for Business cloud Kerberos trust is a new trust model that is currently in preview. This trust model will enable Windows Hello for Business deployment using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD-joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). cloud Kerberos trust is the preferred deployment model if you do not need to support certificate authentication scenarios. For more information, see [Hybrid cloud Kerberos trust Deployment (Preview)](/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust).
+          Windows Hello for Business *cloud Kerberos trust* is a **trust model** that enables Windows Hello for Business deployment using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD-joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). Cloud Kerberos trust is the preferred deployment model if you do not need to support certificate authentication scenarios. For more information, see [cloud Kerberos trust deployment](/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust).
 
 
       - question: What about virtual smart cards?
         answer: |
-          Windows Hello for Business is the modern, two-factor credential for Windows 10. Microsoft will be deprecating virtual smart cards in the future, but no date is set at this time. Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business.  Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business. Microsoft recommends that new Windows 10 deployments use Windows Hello for Business. Virtual smart cards remain supported for Windows 7 and Windows 8.
+          Windows Hello for Business is the modern, two-factor credential for Windows. Microsoft will be deprecating virtual smart cards in the future, but no date is set at this time. Customers using virtual smart cards should move to Windows Hello for Business. Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business. Microsoft recommends that new Windows deployments use Windows Hello for Business.
 
       - question: What about convenience PIN?
         answer: |
-          Microsoft is committed to its vision of a <u>world without passwords.</u> We recognize the *convenience* provided by convenience PIN, but it stills uses a password for authentication. Microsoft recommends that customers using Windows 10 and convenience PINs should move to Windows Hello for Business. New Windows 10 deployments should deploy Windows Hello for Business and not convenience PINs. Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business. 
+          While *convenience PIN* provides a convenient way to sign in to Windows, it stills uses a password for authentication. Customers using *convenience PINs* should move to **Windows Hello for Business**. New Windows deployments should deploy Windows Hello for Business and not convenience PINs. Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business.
 
       - question: Can I use Windows Hello for Business key trust and RDP?
         answer: |
@@ -57,10 +56,14 @@ sections:
       - question: How many users can enroll for Windows Hello for Business on a single Windows 10 computer?
         answer: |
           The maximum number of supported enrollments on a single Windows 10 computer is 10. This lets 10 users each enroll their face and up to 10 fingerprints. For devices with more than 10 users, we strongly encourage the use of FIDO2 security keys.
+          
+      - question: Can I use Windows Hello for Business credentials in private browser mode or "incognito" mode?
+        answer: |
+          Windows Hello for Business credentials need access to device state, which is not available in private browser mode or incognito mode. Hence it can't be used in private browser or Incognito mode.
 
       - question: How can a PIN be more secure than a password?
         answer: |
-          When using Windows Hello for Business, the PIN isn't a symmetric key, whereas the password is a symmetric key.  With passwords, there's a server that has some representation of the password. With Windows Hello for Business, the PIN is user-provided entropy used to load the private key in the Trusted Platform Module (TPM). The server doesn't have a copy of the PIN. For that matter, the Windows client doesn't have a copy of the current PIN either. The user must provide the entropy, the TPM-protected key, and the TPM that generated that key in order to successfully access the private key.
+          When using Windows Hello for Business, the PIN isn't a symmetric key, whereas the password is a symmetric key. With passwords, there's a server that has some representation of the password. With Windows Hello for Business, the PIN is user-provided entropy used to load the private key in the Trusted Platform Module (TPM). The server doesn't have a copy of the PIN. For that matter, the Windows client doesn't have a copy of the current PIN either. The user must provide the entropy, the TPM-protected key, and the TPM that generated that key in order to successfully access the private key.
           The statement "PIN is stronger than Password" is not directed at the strength of the entropy used by the PIN. It's about the difference between providing entropy versus continuing the use of a symmetric key (the password). The TPM has anti-hammering features that thwart brute-force PIN attacks (an attacker's continuous attempt to try all combination of PINs). Some organizations may worry about shoulder surfing. For those organizations, rather than increase the complexity of the PIN, implement the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
 
       - question: What's a container?
@@ -77,7 +80,7 @@ sections:
 
       - question: How does Windows Hello for Business work with Azure AD registered devices?
         answer: |
-          A user will be prompted to set up a Windows Hello for Business key on an Azure AD registered devices  if the feature is enabled by policy. If the user has an existing Windows Hello container, the Windows Hello for Business key will be enrolled in that container and will be protected using their exiting gestures.
+          A user will be prompted to set up a Windows Hello for Business key on an Azure AD registered devices  if the feature is enabled by policy. If the user has an existing Windows Hello container, the Windows Hello for Business key will be enrolled in that container and will be protected using their existing gestures.
 
           If a user has signed into their Azure AD registered device with Windows Hello, their Windows Hello for Business key will be used to authenticate the user's work identity when they try to use Azure AD resources. The Windows Hello for Business key meets Azure AD multi-factor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. 
 
@@ -91,7 +94,7 @@ sections:
 
       - question: Can I use a convenience PIN with Azure Active Directory?
         answer: |
-          It's currently possible to set a convenience PIN on Azure Active Directory Joined or Hybrid Active Directory Joined devices. Convenience PIN isn't supported for Azure Active Directory user accounts (synchronized identities included). It's only supported for on-premises Domain Joined users and local account users.
+          It's currently possible to set a convenience PIN on Azure Active Directory Joined or Hybrid Active Directory Joined devices. However, convenience PIN isn't supported for Azure Active Directory user accounts (synchronized identities included). It's only supported for on-premises Domain Joined users and local account users.
 
       - question: Can I use an external Windows Hello compatible camera when my computer has a built-in Windows Hello compatible camera?
         answer: |
@@ -166,7 +169,7 @@ sections:
 
       - question: Where is Windows Hello biometrics data stored?
         answer: |
-            When you enroll in Windows Hello, a representation of your face called an enrollment profile is created more information can be found on [Windows Hello face authentication](/windows-hardware/design/device-experiences/windows-hello-face-authentication). This enrollment profile biometrics data is device specific, is stored locally on the device, and does not leave the device or roam with the user. Some external fingerprint sensors store biometric data on the fingerprint module itself rather than on Windows device. Even in this case, the biometrics data is stored locally on those modules, is device specific, doesn't roam, never leaves the module, and is never sent to Microsoft cloud or external server.  For more details, see [Windows Hello biometrics in the enterprise](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored).
+            When you enroll in Windows Hello, a representation of your face called an enrollment profile is created more information can be found on [Windows Hello face authentication](/windows-hardware/design/device-experiences/windows-hello-face-authentication). This enrollment profile biometrics data is device specific, is stored locally on the device, and does not leave the device or roam with the user. Some external fingerprint sensors store biometric data on the fingerprint module itself rather than on Windows device. Even in this case, the biometrics data is stored locally on those modules, is device specific, doesn't roam, never leaves the module, and is never sent to Microsoft cloud or external server. For more details, see [Windows Hello biometrics in the enterprise](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored).
       
       - question: What is the format used to store Windows Hello biometrics data on the device?
         answer: |
@@ -230,9 +233,9 @@ sections:
           
       - question: How does PIN caching work with Windows Hello for Business?
         answer: |
-          Windows Hello for Business provides a PIN caching user experience by using a ticketing system. Rather than caching a PIN, processes cache a ticket they can use to request private key operations. Azure AD and Active Directory sign-in keys are cached under lock. This means the keys remain available for use without prompting, as long as the user is interactively signed-in. Microsoft Account sign-in keys are transactional keys, which means the user is always prompted when accessing the key.  
+          Windows Hello for Business provides a PIN caching user experience by using a ticketing system. Rather than caching a PIN, processes cache a ticket they can use to request private key operations. Azure AD and Active Directory sign-in keys are cached under lock. This means the keys remain available for use without prompting, as long as the user is interactively signed-in. Microsoft Account sign-in keys are transactional keys, which means the user is always prompted when accessing the key. 
           
-          Beginning with Windows 10, version 1709, Windows Hello for Business used as a smart card (smart card emulation that is enabled by default) provides the same user experience of default smart card PIN caching. Each process requesting a private key operation will prompt the user for the PIN on first use. Subsequent private key operations won't prompt the user for the PIN.  
+          Beginning with Windows 10, version 1709, Windows Hello for Business used as a smart card (smart card emulation that is enabled by default) provides the same user experience of default smart card PIN caching. Each process requesting a private key operation will prompt the user for the PIN on first use. Subsequent private key operations won't prompt the user for the PIN. 
           
           The smart card emulation feature of Windows Hello for Business verifies the PIN and then discards the PIN in exchange for a ticket. The process doesn't receive the PIN, but rather the ticket that grants them private key operations. Windows 10 doesn't provide any Group Policy settings to adjust this caching.
           

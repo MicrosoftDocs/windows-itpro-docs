@@ -9,6 +9,7 @@ ms.reviewer:
 manager: dougeby
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Prepare a servicing strategy for Windows client updates

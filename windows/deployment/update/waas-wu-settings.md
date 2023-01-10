@@ -10,6 +10,7 @@ ms.topic: article
 ms.collection: highpri
 date: 09/22/2022
 ms.technology: itpro-updates
+ms.date: 01/06/2023
 ---
 
 # Manage additional Windows Update settings
@@ -155,7 +156,7 @@ Enables the IT admin to manage automatic update behavior to scan, download, and 
 
 #### Configuring Automatic Updates by using Group Policy
 
-Under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Configure Automatic Updates**, you must select one of the four options:
+Under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Configure Automatic Updates**, you must select one of the following options:
 
 **2 - Notify for download and auto install** -  When Windows finds updates that apply to this device, users will be notified that updates are ready to be downloaded. After going to **Settings > Update & security > Windows Update**, users can download and install any available updates.
 
@@ -163,11 +164,13 @@ Under **Computer Configuration\Administrative Templates\Windows Components\Windo
 
 **4 - Auto download and schedule the install** - Specify the schedule using the options in the Group Policy Setting. For more information about this setting, see [Schedule update installation](waas-restart.md#schedule-update-installation).
 
-**5 - Allow local admin to choose setting** - With this option, local administrators will be allowed to use the settings app to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
+**5 - Allow local admin to choose setting** - With this option, local administrators will be allowed to use the settings app to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates. This option is not available in any Windows 10 or later versions. 
 
-If this setting is set to *Disabled*, any updates that are available on Windows Update must be downloaded and installed manually. To do this, users must go to **Settings > Update & security > Windows Update**.
+**7 - Notify for install and notify for restart** (Windows Server 2016 and later only) - With this option, when Windows finds updates that apply to this device, they will be downloaded, then users will be notified that updates are ready to be installed. Once updates are installed, a notification will be displayed to users to restart the device. 
 
-If this setting is set to *Not Configured*, an administrator can still configure Automatic Updates through the settings app, under **Settings > Update & security > Windows Update > Advanced options**.
+If this setting is set to **Disabled**, any updates that are available on Windows Update must be downloaded and installed manually. To do this, users must go to **Settings > Update & security > Windows Update**.
+
+If this setting is set to **Not Configured**, an administrator can still configure Automatic Updates through the settings app, under **Settings > Update & security > Windows Update > Advanced options**.
 
 #### Configuring Automatic Updates by editing the registry
 
@@ -203,6 +206,10 @@ To do this, follow these steps:
      * **3**: Automatically download and notify of installation.
 
      * **4**: Automatically download and scheduled installation.
+
+     * **5**: Allow local admin to select the configuration mode. This option is not available for Windows 10 or later versions.
+
+     * **7**:  Notify for install and notify for restart. (Windows Server 2016 and later only)
 
    * ScheduledInstallDay (REG_DWORD):
 

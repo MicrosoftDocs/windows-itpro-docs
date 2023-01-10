@@ -18,6 +18,7 @@ ms.date: 08/01/2022
 - [ApplicationManagement/AllowAllTrustedApps](policy-csp-applicationmanagement.md#applicationmanagement-allowalltrustedapps)
 - [ApplicationManagement/AllowAppStoreAutoUpdate](policy-csp-applicationmanagement.md#applicationmanagement-allowappstoreautoupdate)
 - [ApplicationManagement/AllowDeveloperUnlock](policy-csp-applicationmanagement.md#applicationmanagement-allowdeveloperunlock)
+- [ApplicationManagement/RequirePrivateStoreOnly](policy-csp-applicationmanagement.md#applicationmanagement-requireprivatestoreonly) <sup>11</sup>
 - [Authentication/AllowFastReconnect](policy-csp-authentication.md#authentication-allowfastreconnect)
 - [Authentication/PreferredAadTenantDomainName](policy-csp-authentication.md#authentication-preferredaadtenantdomainname)
 - [Bluetooth/AllowDiscoverableMode](policy-csp-bluetooth.md#bluetooth-allowdiscoverablemode)

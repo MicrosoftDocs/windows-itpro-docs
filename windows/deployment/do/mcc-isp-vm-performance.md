@@ -2,14 +2,12 @@
 title: Enhancing VM performance
 manager: aaroncz
 description: How to enhance performance on a virtual machine used with Microsoft Connected Cache for ISPs
-keywords: updates, downloads, network, bandwidth
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-audience: itpro
 author: amyzhou
-ms.localizationpriority: medium
 ms.author: amyzhou
 ms.topic: reference
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Enhancing virtual machine performance

@@ -11,6 +11,7 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Servicing stack updates
@@ -20,6 +21,7 @@ ms.technology: itpro-updates
 
 -   Windows 10
 -   Windows 11
+-   Windows Server
 
 ## What is a servicing stack update?
 Servicing stack updates provide fixes to the servicing stack, the component that installs Windows updates. Additionally, it contains the "component-based servicing stack" (CBS), which is a key underlying component for several elements of Windows deployment, such as DISM, SFC, changing Windows features or roles, and repairing components. The CBS is a small component that typically does not have updates released every month.
@@ -60,3 +62,5 @@ Typically, the improvements are reliability and performance improvements that do
 ## Simplifying on-premises deployment of servicing stack updates
 
 With the Windows Update experience, servicing stack updates and cumulative updates are deployed together to the device. The update stack automatically orchestrates the installation, so both are applied correctly. Starting in February 2021, the cumulative update will include the latest servicing stack updates, to provide a single cumulative update payload to both Windows Server Update Services (WSUS) and Microsoft Catalog. If you use an endpoint management tool backed by WSUS, such as Configuration Manager, you will only have to select and deploy the monthly cumulative update. The latest servicing stack updates will automatically be applied correctly. Release notes and file information for cumulative updates, including those related to the servicing stack, will be in a single KB article. The combined monthly cumulative update will be available on Windows 10, version 2004 and later starting with the 2021 2C release, KB4601382.
+
+

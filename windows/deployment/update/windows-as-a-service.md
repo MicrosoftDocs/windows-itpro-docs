@@ -10,6 +10,7 @@ ms.reviewer:
 manager: dougeby
 ms.localizationpriority: high
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Windows as a service

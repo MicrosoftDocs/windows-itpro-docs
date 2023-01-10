@@ -8,6 +8,7 @@ ms.author: arcarley
 manager: dougeby
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Use Windows Update for Business and WSUS together

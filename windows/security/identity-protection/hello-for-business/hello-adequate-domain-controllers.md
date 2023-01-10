@@ -4,7 +4,7 @@ description: Guide for planning to have an adequate number of Windows Server 201
 ms.date: 08/20/2018
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.topic: article
 ---
 # Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments

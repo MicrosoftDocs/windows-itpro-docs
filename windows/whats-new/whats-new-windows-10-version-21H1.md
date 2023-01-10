@@ -9,6 +9,7 @@ ms.localizationpriority: high
 ms.topic: article
 ms.collection: highpri
 ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 10, version 21H1 for IT Pros

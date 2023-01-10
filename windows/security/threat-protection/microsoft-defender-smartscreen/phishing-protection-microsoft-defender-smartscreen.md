@@ -12,6 +12,7 @@ ms.date: 10/07/2022
 adobe-target: true
 appliesto: 
   - ✅ <b>Windows 11, version 22H2</b>
+ms.topic: conceptual
 ---
 
 # Enhanced Phishing Protection in Microsoft Defender SmartScreen  

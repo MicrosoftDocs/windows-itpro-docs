@@ -10,6 +10,7 @@ ms.author: carmenf
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Delivery Optimization reference
@@ -63,7 +64,7 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Delay foreground download cache server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 |
 | [Delay background download cache server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 |
 | [Cache Server Hostname](#cache-server-hostname) | DOCacheHost | 1809  |
-| [Cache Server Hostname Source](#cache-server-hostname-source) | DOCacheHostSource | 1809  |
+| [Cache Server Hostname Source](#cache-server-hostname-source) | DOCacheHostSource | 2004 |
 | [Maximum Foreground Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)         | DOMaxForegroundDownloadBandwidth | 2004 |
 | [Maximum Background Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) | DOMaxBackgroundDownloadBandwidth | 2004 |
 
@@ -145,7 +146,7 @@ Starting in Windows 10, version 1803, set this policy to restrict peer selection
 - 4 = DNS Suffix
 - 5 = Starting with Windows 10, version 1903, you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
-When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy will be ignored. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
+When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy will be ignored. The default behavior, when neither the GroupID or GroupIDSource policies are set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
 
 ### Minimum RAM (inclusive) allowed to use Peer Caching  
 

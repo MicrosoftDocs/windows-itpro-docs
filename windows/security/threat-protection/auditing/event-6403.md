@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 6403(-): BranchCache: The hosted cache sent an incorrectly formatted response to the client.

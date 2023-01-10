@@ -1,4 +1,4 @@
-- name: Delivery Optimization for Windows client and Microsoft Connected Cache
+- name: Delivery Optimization for Windows and Microsoft Connected Cache
   href: index.yml
 - name: What's new
   href: whats-new-do.md
@@ -9,9 +9,9 @@
     href: waas-delivery-optimization.md
   - name: Delivery Optimization Frequently Asked Questions
     href: waas-delivery-optimization-faq.yml    
-  - name: Configure Delivery Optimization for Windows clients
+  - name: Configure Delivery Optimization for Windows
     items:
-    - name: Windows client Delivery Optimization settings
+    - name: Windows Delivery Optimization settings
       href: waas-delivery-optimization-setup.md#recommended-delivery-optimization-settings
     - name: Configure Delivery Optimization settings using Microsoft Intune
       href: /mem/intune/configuration/delivery-optimization-windows

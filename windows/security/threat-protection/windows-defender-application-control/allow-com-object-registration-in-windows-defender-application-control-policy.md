@@ -14,6 +14,7 @@ ms.reviewer: isbrahm
 ms.author: vinpa
 manager: aaroncz
 ms.technology: itpro-security
+ms.date: 12/31/2017
 ms.topic: article
 ---
 
@@ -68,6 +69,10 @@ One attribute:
   > Deny only works in base policies, not supplemental policies
 
 - The setting needs to be placed in the order of ASCII values (first by Provider, then Key, then ValueName)
+
+### Multiple policy considerations
+
+Similar to executable files, COM objects must pass each policy on the system to be allowed by WDAC. For example, if the COM object under evaluation passes most but not all of your WDAC policies, the COM object will not be allowed. If you are using a combination of base and supplemental policies, the COM object just needs to be allowlisted in either the base policy or one of the supplemental policies. 
 
 ### Examples
 

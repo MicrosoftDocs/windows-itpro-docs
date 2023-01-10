@@ -9,6 +9,7 @@ manager: dougeby
 ms.reviewer: 
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Introduction to the Windows Insider Program for Business

@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.author: carmenf
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Using a proxy with Delivery Optimization

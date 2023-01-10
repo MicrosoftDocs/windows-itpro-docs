@@ -10,6 +10,7 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
 ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # Windows 11 requirements
@@ -105,5 +106,5 @@ The VM host CPU must also meet Windows 11 [processor requirements](/windows-hard
 ## See also
 
 [Windows minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)<br>
-[What's new in Windows 11 overview](windows-11-whats-new.md)
+[What's new in Windows 11 overview](/windows/whats-new/windows-11-overview)
 
