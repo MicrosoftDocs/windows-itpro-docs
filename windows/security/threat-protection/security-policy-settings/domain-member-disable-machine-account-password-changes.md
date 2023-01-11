@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Domain member: Disable machine account password changes
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Domain member: Disable machine account password changes** security policy setting.

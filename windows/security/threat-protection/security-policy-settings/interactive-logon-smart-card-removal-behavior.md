@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Interactive logon: Smart card removal behavior
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the recommended practices, location, values, policy management, and security considerations for the **Interactive logon: Smart card removal behavior** security policy setting.
