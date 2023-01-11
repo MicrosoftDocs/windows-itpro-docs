@@ -1,6 +1,6 @@
 ---
 title: Understanding ADMX policies
-description: In Windows 10, you can use ADMX policies for Windows 10 mobile device management (MDM) across Windows 10 devices.
+description: You can use ADMX policies for Windows mobile device management (MDM) across Windows devices.
 ms.author: vinpa
 ms.topic: article
 ms.prod: windows-client
@@ -237,7 +237,7 @@ Below is the internal OS mapping of a Group Policy to an MDM area and name. This
 
 `./[Device|User]/Vendor/MSFT/Policy/Config/[config|result]/<area>/<policy>`
 
-The data payload of the SyncML needs to be encoded so that it doesn't conflict with the boilerplate SyncML XML tags. Use this online tool for encoding and decoding the policy data [Coder's Toolbox](http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii)
+The data payload of the SyncML needs to be encoded so that it doesn't conflict with the boilerplate SyncML XML tags. Use this online tool for encoding and decoding the policy data [Coder's Toolbox](https://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii).
 
 **Snippet of manifest for AppVirtualization area:**
 
