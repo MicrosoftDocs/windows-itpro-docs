@@ -240,7 +240,7 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 
 ## Deploy the root CA certificate to Azure AD-joined devices
 
-The domain controllers have a certificate that include the new CRL distribution point. Next, you need the enterprise root certificate so you can deploy it to Azure AD-joined devices. When you deploy the enterprise root certificates to a device, it ensures the device trusts any certificates issued by the certificate authority. Without the certificate, Azure AD-joined devices don't trust domain controller certificates and authentication fails. Expand each step to learn more:
+The domain controllers have a certificate that includes the new CRL distribution point. Next, you need the enterprise root certificate so you can deploy it to Azure AD-joined devices. When you deploy the enterprise root certificates to a device, it ensures the device trusts any certificates issued by the certificate authority. Without the certificate, Azure AD-joined devices don't trust domain controller certificates and authentication fails. Expand each step to learn more:
 
 <br>
 <details>

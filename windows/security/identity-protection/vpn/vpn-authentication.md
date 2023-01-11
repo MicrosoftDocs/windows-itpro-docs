@@ -88,7 +88,7 @@ See [EAP configuration](/windows/client-management/mdm/eap-configuration) for EA
 
 The following image shows the field for EAP XML in a Microsoft Intune VPN profile. The EAP XML field only appears when you select a built-in connection type (automatic, IKEv2, L2TP, PPTP).
 
-![EAP XML configuration in Intune profile.](images/vpn-eap-xml.png)
+:::image type="content" source="images/vpn-eap-xml.png" alt-text="EAP XML configuration in Intune profile.":::
 
 ## Related topics
 

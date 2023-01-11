@@ -82,7 +82,7 @@ The best way to deploy the Windows Hello for Business GPO is to use security gro
 
 ### Deploy the Windows Hello for Business Group Policy object
 
-The application of Group Policy object uses security group filtering. This solution allows to link the GPO to the domain, ensuring the GPO is scoped to all users. The security group filtering ensures that only the members of the *Windows Hello for Business Users* global group receive and apply the GPO, which results in the provisioning of Windows Hello for Business.
+The application of Group Policy object uses security group filtering. This solution allows linking the GPO to the domain, ensuring the GPO is scoped to all users. The security group filtering ensures that only the members of the *Windows Hello for Business Users* global group receive and apply the GPO, which results in the provisioning of Windows Hello for Business.
 
 1. Start the **Group Policy Management Console** (gpmc.msc)
 1. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and select **Link an existing GPO**
@@ -108,7 +108,7 @@ There are different ways to enable and configure Windows Hello for Business in I
 - Using a policy applied at the tenant level. The tenant policy:
   - Is only applied at enrollment time, and any changes to its configuration won't apply to devices already enrolled in Intune
   - It applies to *all devices* getting enrolled in Intune. For this reason, the policy is usually disabled and Windows Hello for Business is enabled using a policy targeted to a security group
-- A device configuration policy that is applied *after* device enrollment. Any changes to the policy will be applied to the devices during regular policy refresh intervals. There are different policy types to chose from:
+- A device configuration policy that is applied *after* device enrollment. Any changes to the policy will be applied to the devices during regular policy refresh intervals. Chose from the following policy types:
   - [Settings catalog][MEM-1]
   - [Security baselines][MEM-2]
   - [Custom policy][MEM-3], via the [PassportForWork CSP][MEM-4]
