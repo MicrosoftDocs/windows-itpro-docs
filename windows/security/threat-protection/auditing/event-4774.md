@@ -8,10 +8,11 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: vinaypamnani-msft
 ms.date: 09/07/2021
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4774(S, F): An account was mapped for logon

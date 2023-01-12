@@ -13,6 +13,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # System Guard Secure Launch and SMM protection

@@ -6,12 +6,10 @@ ms.prod: windows-client
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf
-ms.collection: 
-  - M365-modern-desktop
-  - m365initiative-coredeploy
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # What's new in Delivery Optimization 
@@ -21,7 +19,7 @@ ms.technology: itpro-updates
 - Windows 10
 - Windows 11
 
-## Microsoft Connected Cache (private preview)
+## Microsoft Connected Cache (early preview)
 
 Microsoft Connected Cache (MCC) is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many bare-metal servers or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the client policy using management tools such as Intune.
 

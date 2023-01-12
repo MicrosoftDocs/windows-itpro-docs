@@ -6,13 +6,12 @@ description: How to use the Windows Update for Business reports workbook.
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: article
-ms.date: 10/24/2022
+ms.date: 11/15/2022
 ms.technology: itpro-updates
 ---
 
-# Windows Update for Business reports (preview) workbook
+# Windows Update for Business reports workbook
 <!-- MAX6325272, OS33771278 -->
 ***(Applies to: Windows 11 & Windows 10)***
 
@@ -141,7 +140,7 @@ The **Device status** group for feature updates contains the following items:
 
 ## <a name="bkmk_do"></a> Delivery Optimization (preview tab)
 
-The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes Microsoft Connected Cache (MCC) information.
+The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes [Microsoft Connected Cache](/windows/deployment/do/waas-microsoft-connected-cache) information.
 
 At the top of the report, tiles display the following information:
 
@@ -155,6 +154,8 @@ The Delivery Optimization tab is further divided into the following groups:
 - **Device Configuration**: A chart differentiating the number of devices with and without peer-to-peer. And, a table of Download Mode configuration breakdown between numbers of devices. When selected, the devices within that group can be viewed, filtered in a separate table.
 - **Content Distribution**: Includes charts showing percentage volumes and GB volumes by source by content types. All content types are linked to a table for deeper filtering by **ContentType**, **AzureADTenantId**, and **GroupID**.
 - **Efficiency By Group**: This view provides filters commonly used ways of grouping devices. The provided filters include: **GroupID**, **City**, **Country**, and **ISP**.
+
+:::image type="content" source="images/wufb-do-overview.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook for Delivery Optimization." lightbox="images/wufb-do-overview.png":::
 
 ## Customize the workbook
 

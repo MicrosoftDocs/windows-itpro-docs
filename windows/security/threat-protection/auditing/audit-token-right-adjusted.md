@@ -7,6 +7,8 @@ ms.author: vinpa
 ms.pagetype: security
 ms.prod: windows-client
 ms.technology: itpro-security
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # Audit Token Right Adjusted

@@ -1,7 +1,7 @@
 ---
 title: Privacy
-description: This article provides details about the data platform and privacy compliance for Autopatch
-ms.date: 05/30/2022
+description:  This article provides details about the data platform and privacy compliance for Autopatch
+ms.date: 11/08/2022
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: reference
@@ -40,9 +40,12 @@ Processor duties of Windows Autopatch include ensuring appropriate confidentiali
 
 ## Windows Autopatch data storage and staff location
 
-Windows Autopatch stores its data in the Azure data centers in the United States.
+Windows Autopatch stores its data in the Azure data centers based on your data residency. For more information, see [Microsoft 365 data center locations](/microsoft-365/enterprise/o365-data-locations).
 
-Personal data obtained by Windows Autopatch and other services are required to keep the service operational. If a device is removed from Windows Autopatch, we keep personal data for a maximum of 30 days. For more information on data retention, see [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
+> [!IMPORTANT]
+> <ul><li>As of November 8, 2022, only <b>new</b> Windows Autopatch customers (EU, UK, Africa, Middle East) will have their data live in the European data centers.</li><li>Existing European Union (EU) Windows Autopatch customers will move from the North American data centers to the European data centers by the end of 2022.</li><li>If you're an existing Windows Autopatch customer, but <b>not</b> part of the European Union, data migration from North America to your respective data residency will occur next year.</li></ul>
+
+Data obtained by Windows Autopatch and other services are required to keep the service operational. If a device is removed from Windows Autopatch, we keep data for a maximum of 30 days. For more information on data retention, see [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
 
 Windows Autopatch Service Engineering Team is in the United States, India and Romania.
 
@@ -54,9 +57,9 @@ The enhanced diagnostic data setting includes more detailed information about th
 
 The diagnostic data terminology will change in future versions of Windows. Windows Autopatch is committed to processing only the data that the service needs. The diagnostic level will change to **Optional**, but Windows Autopatch will implement the limited diagnostic policies to fine-tune diagnostic data collection required for the service. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection).
 
-Windows Autopatch only processes and stores system-level data from Windows 10 optional diagnostic data that originates from enrolled devices such as application and device reliability, and performance information. Windows Autopatch doesn't process and store customers' personal data such as chat and browser history, voice, text, or speech data.
+Windows Autopatch only processes and stores system-level data from Windows 10 optional diagnostic data that originates from enrolled devices such as application and device reliability, and performance information. Windows Autopatch doesn't process and store customers' data such as chat and browser history, voice, text, or speech data.
 
-For more information about the diagnostic data collection of Microsoft Windows 10, see the [Where we store and process personal data](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) section of the Microsoft Privacy Statement.
+For more information about the diagnostic data collection of Microsoft Windows 10, see the [Where we store and process data](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) section of the Microsoft Privacy Statement.
 
 ## Tenant access
 
@@ -76,7 +79,7 @@ Windows Autopatch creates and uses guest accounts using just-in-time access func
 | Account name | Usage | Mitigating controls |
 | ----- | ----- | -----|
 | MsAdmin@tenantDomain.onmicrosoft.com | <ul><li>This account is a limited-service account with administrator privileges. This account is used as an Intune and User administrator to define and configure the tenant for Windows Autopatch devices.</li><li>This account doesn't have interactive sign-in permissions. The account performs operations only through the service.</li></ul> | Audited sign-ins |
-| MsAdminInt@tenantDomain.onmicrosoft.com |<ul><li>This account is an Intune and User administrator account used to define and configure the tenant for Windows Autopatch devices.</li><li>This account is used for interactive login to the customer’s tenant.</li><li>The use of this account is limited as most operations are exclusively through MsAdmin (non-interactive) account.</li></ul> | <ul><li>Restricted to be accessed only from defined secure access workstations (SAWs) through a conditional access policy</li><li>Audited sign-ins</li</ul> |
+| MsAdminInt@tenantDomain.onmicrosoft.com |<ul><li>This account is an Intune and User administrator account used to define and configure the tenant for Windows Autopatch devices.</li><li>This account is used for interactive login to the customer’s tenant.</li><li>The use of this account is limited as most operations are exclusively through MsAdmin (non-interactive) account.</li></ul> | <ul><li>Restricted to be accessed only from defined secure access workstations (SAWs) through a conditional access policy</li><li>Audited sign-ins</li></ul> |
 | MsTest@tenantDomain.onmicrosoft.com | This account is a standard account used as a validation account for initial configuration and roll out of policy, application, and device compliance settings. | Audited sign-ins |
 
 ## Microsoft Windows Update for Business
@@ -107,11 +110,11 @@ Changes to the types of data gathered and where it's stored are considered a mat
 
 ## Data subject requests
 
-Windows Autopatch follows General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA) privacy regulations, which give data subjects specific rights to their personal data.
+Windows Autopatch follows General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA) privacy regulations, which give data subjects specific rights to their data.
 
 These rights include:
 
-- Obtaining copies of personal data
+- Obtaining copies of data
 - Requesting corrections to it
 - Restricting the processing of it
 - Deleting it
@@ -123,7 +126,7 @@ To exercise data subject requests on data collected by the Windows Autopatch cas
 
 | Data subject requests | Description |
 | ------ | ------ |
-| Data from Windows Autopatch support requests | Your IT administrator can request deletion, or extraction of personal data related support requests by submitting a report request at the [admin center](https://aka.ms/memadmin). <br><br> Provide the following information: <ul><li>Request type: Change request</li><li>Category: Security</li><li>Subcategory: Other</li><li>Description: Provide the relevant device names or user names.</li></ul> |
+| Data from Windows Autopatch support requests | Your IT administrator can request deletion, or extraction of data related support requests by submitting a report request at the [admin center](https://aka.ms/memadmin). <br><br> Provide the following information: <ul><li>Request type: Change request</li><li>Category: Security</li><li>Subcategory: Other</li><li>Description: Provide the relevant device names or user names.</li></ul> |
 
 For DSRs from other products related to the service, see the following articles:
 

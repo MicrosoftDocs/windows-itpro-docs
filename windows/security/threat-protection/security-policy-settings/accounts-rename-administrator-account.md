@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
 ms.technology: itpro-security
@@ -21,6 +20,7 @@ ms.technology: itpro-security
 # Accounts: Rename administrator account
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This security policy reference topic for the IT professional describes the best practices, location, values, and security considerations for this policy setting.

@@ -1,24 +1,16 @@
 ---
-title: Hybrid cloud Kerberos trust deployment (Windows Hello for Business)
-description: Learn the information you need to successfully deploy Windows Hello for Business in a hybrid cloud Kerberos trust scenario.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
+title: Windows Hello for Business Cloud Kerberos trust deployment
+description: Learn how to deploy Windows Hello for Business in a cloud Kerberos trust scenario.
 ms.date: 11/1/2022
 appliesto: 
-  - ✅ <b>Windows 10, version 21H2 and later</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Hybrid deployment</b>
-  - ✅ <b>Hybrid cloud Kerberos trust</b>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10, version 21H2 and later</a>
+ms.topic: article
 ---
-# Hybrid cloud Kerberos trust deployment
+# Cloud Kerberos trust deployment
 
-Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to successfully deploy Windows Hello for Business in a hybrid cloud Kerberos trust scenario.
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cloudkerb-trust.md)]
+
+Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to successfully deploy Windows Hello for Business in a cloud Kerberos trust scenario.
 
 ## Introduction to cloud Kerberos trust
 

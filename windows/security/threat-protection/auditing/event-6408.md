@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 6408(-): Registered product %1 failed and Windows Firewall is now controlling the filtering for %2.

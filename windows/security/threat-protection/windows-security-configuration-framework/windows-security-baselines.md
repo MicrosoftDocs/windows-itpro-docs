@@ -7,7 +7,6 @@ ms.author: vinpa
 author: vinaypamnani-msft
 manager: aaroncz
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
 ms.date: 01/26/2022
@@ -66,7 +65,7 @@ There are several ways to get and use security baselines:
 
 2. [Mobile device management (MDM) security baselines](/windows/client-management/mdm/#mdm-security-baseline) function like the Microsoft group policy-based security baselines and can easily integrate these baselines into an existing MDM management tool.
 
-3. MDM security baselines can easily be configures in Microsoft Intune on devices that run Windows 10 and Windows 11. For more information, see [List of the settings in the Windows 10/11 MDM security baseline in Intune](/mem/intune/protect/security-baseline-settings-mdm-all).
+3. MDM security baselines can easily be configured in Microsoft Intune on devices that run Windows 10 and Windows 11. For more information, see [List of the settings in the Windows 10/11 MDM security baseline in Intune](/mem/intune/protect/security-baseline-settings-mdm-all).
 
 ## Community
 

@@ -16,9 +16,6 @@ msreviewer: hathind
 
 Getting started with Windows Autopatch has been designed to be easy. This article outlines the infrastructure requirements you must meet to assure success with Windows Autopatch.
 
-> [!NOTE]
-> For those who used the promo code to access Windows Autopatch during public preview, you'll continue to have access to Windows Autopatch even when the promo code expires. There is no additional action you have to take to continue using Windows Autopatch.
-
 | Area | Prerequisite details |
 | ----- | ----- |
 | Licensing | Windows Autopatch requires Windows 10/11 Enterprise E3 (or higher) to be assigned to your users. Additionally, Azure Active Directory Premium and Microsoft Intune are required. For details about the specific service plans, see [more about licenses](#more-about-licenses).<p><p>For more information on available licenses, see [Microsoft 365 licensing](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).<p><p>For more information about licensing terms and conditions for products and services purchased through Microsoft Commercial Volume Licensing Programs, see the [Product Terms site](https://www.microsoft.com/licensing/terms/). |
@@ -29,12 +26,20 @@ Getting started with Windows Autopatch has been designed to be easy. This articl
 
 ## More about licenses
 
-Windows Autopatch is included with Window 10/11 Enterprise E3 or higher (user-based only). The following are the service plan SKUs that are eligible for Windows Autopatch:
+Windows Autopatch is included with Windows 10/11 Enterprise E3 or higher (user-based only). The following are the service plan SKUs that are eligible for Windows Autopatch:
 
 | License | ID | GUID number |
 | ----- | ----- | ------|
 | [Microsoft 365 E3](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E3 | 05e9a617-0261-4cee-bb44-138d3ef5d965 |
+| [Microsoft 365 E3 (500 seats minimum_HUB)](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | Microsoft_365_E3 | 0c21030a-7e60-4ec7-9a0f-0042e0e0211a |
+| [Microsoft 365 E3 - Unattended License](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E3_RPA1 | c2ac2ee4-9bb1-47e4-8541-d689c7e83371 |
 | [Microsoft 365 E5](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E5 | 06ebc4ee-1bb5-47dd-8120-11324bc54e06 |
+| [Microsoft 365 E5 (500 seats minimum)_HUB](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | Microsoft_365_E5 | db684ac5-c0e7-4f92-8284-ef9ebde75d33 |
+| [Microsoft 365 E5 with calling minutes](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E5_CALLINGMINUTES | a91fc4e0-65e5-4266-aa76-4037509c1626 |
+| [Microsoft 365 E5 without audio conferencing](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E5_NOPSTNCONF | cd2925a3-5076-4233-8931-638a8c94f773 |
+| [Microsoft 365 E5 without audio conferencing (500 seats minimum)_HUB](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | Microsoft_365_E5_without_Audio_Conferencing | 2113661c-6509-4034-98bb-9c47bd28d63c |
+| [TEST - Microsoft 365 E3](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E3_TEST | 23a55cbc-971c-4ba2-8bae-04cd13d2f4ad |
+| [TEST - Microsoft 365 E5 without audio conferencing](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E5_NOPSTNCONF_TEST | 1362a0d9-b3c2-4112-bf1a-7a838d181c0f |
 | [Windows 10/11 Enterprise E3](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | WIN10_VDA_E3 | 6a0f6da5-0b87-4190-a6ae-9bb5a2b9546a |
 | [Windows 10/11 Enterprise E5](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | WIN10_VDA_E5 | 488ba24a-39a9-4473-8ee5-19291e71b002 |
 | [Windows 10/11 Enterprise VDA](/windows/deployment/deploy-enterprise-licenses#virtual-desktop-access-vda) | E3_VDA_only | d13ef257-988a-46f3-8fce-f47484dd4550 |

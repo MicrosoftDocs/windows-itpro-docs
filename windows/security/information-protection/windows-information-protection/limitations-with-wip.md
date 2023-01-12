@@ -6,10 +6,10 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.reviewer: rafals
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/05/2019
 ms.localizationpriority: medium
+ms.technology: itpro-security
 ---
 
 # Limitations while using Windows Information Protection (WIP)

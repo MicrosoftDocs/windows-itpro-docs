@@ -7,13 +7,12 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
-ms.collection: M365-analytics
 ms.topic: article
-ms.date: 06/16/2022
+ms.date: 11/15/2022
 ms.technology: itpro-updates
 ---
 
-# Configuring devices through the Windows Update for Business reports (preview) configuration script
+# Configuring devices through the Windows Update for Business reports configuration script
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 

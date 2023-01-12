@@ -4,7 +4,7 @@ description: Describes the purpose of the Set up School PCs app for Windows 10 d
 ms.topic: conceptual
 ms.date: 08/10/2022
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # What is Set up School PCs?

@@ -7,10 +7,9 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.reviewer: rafals
-ms.collection: 
-  - M365-security-compliance
 ms.topic: overview
 ms.date: 07/15/2022
+ms.technology: itpro-security
 ---
 
 # Protect your enterprise data using Windows Information Protection (WIP)

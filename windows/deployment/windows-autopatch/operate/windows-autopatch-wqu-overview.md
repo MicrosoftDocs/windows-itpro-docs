@@ -1,7 +1,7 @@
 ---
 title: Windows quality updates
 description: This article explains how Windows quality updates are managed in Autopatch
-ms.date: 08/08/2022
+ms.date: 12/15/2022
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -31,7 +31,7 @@ For a device to be eligible for Windows quality updates as a part of Windows Aut
 | Internet connectivity | Devices must have a steady internet connection, and access to Windows [update endpoints](../prepare/windows-autopatch-configure-network.md). |
 | Windows edition | Devices must be on a Windows edition supported by Windows Autopatch. For more information, see [Prerequisites](../prepare/windows-autopatch-prerequisites.md). |
 | Mobile device management (MDM) policy conflict | Devices must not have deployed any policies that would prevent device management. For more information, see [Conflicting and unsupported policies](../operate/windows-autopatch-wqu-unsupported-policies.md). |
-| Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](windows-autopatch-wqu-unsupported-policies.md#group-policy) |
+| Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](windows-autopatch-wqu-unsupported-policies.md#group-policy-and-other-policy-managers) |
 
 ## Windows quality update releases
 
@@ -52,27 +52,72 @@ Windows Autopatch configures these policies differently across update rings to g
 
 :::image type="content" source="../media/release-process-timeline.png" alt-text="Release process timeline" lightbox="../media/release-process-timeline.png":::
 
-## Expedited releases
+## Release management
+
+In the Release management blade, you can:
+
+- Track the [Windows quality update schedule](#release-schedule) for devices in the [four deployment rings](windows-autopatch-update-management.md#windows-autopatch-deployment-rings).
+- [Turn off expedited Windows quality updates](#turn-off-service-driven-expedited-quality-update-releases).
+- Review release announcements and knowledge based articles for regular and [Out of Band (OOB) Windows quality updates](#out-of-band-releases).
+
+### Release schedule
+
+For each [deployment ring](windows-autopatch-update-management.md#windows-autopatch-deployment-rings), the **Release schedule** tab contains:
+
+- The status of the update. Releases will appear as **Active**. The update schedule is based on the values of the [Windows 10 Update Ring policies](/mem/intune/protect/windows-update-for-business-configure), which have been configured on your behalf.
+- The date the update is available.
+- The target completion date of the update.
+- In the **Release schedule** tab, you can either [**Pause** and/or **Resume**](#pausing-and-resuming-a-release) a Windows quality update release.
+
+### Expedited releases
 
 Threat and vulnerability information about a new revision of Windows becomes available on the second Tuesday of each month. Windows Autopatch assesses that information shortly afterwards. If the service determines that it's critical to security, it may be expedited. The quality update is also evaluated on an ongoing basis throughout the release and Windows Autopatch may choose to expedite at any time during the release.
 
-When running an expedited release, the regular goal of 95% of devices in 21 days no longer applies. Instead, Windows Autopatch greatly accelerates the release schedule of the release to update the environment more quickly. This approach requires an updated schedule for all devices outside of the Test ring since those devices are already getting the update as quickly.
+When running an expedited release, the regular goal of 95% of devices in 21 days no longer applies. Instead, Windows Autopatch greatly accelerates the release schedule of the release to update the environment more quickly. This approach requires an updated schedule for all devices outside of the Test ring since those devices are already getting the update quickly.
 
 | Release type | Group | Deferral | Deadline | Grace period |
 | ----- | ----- | ----- | ----- | ----- |
 | Standard release | Test<p>First<p>Fast<p>Broad | 0<p>1<p>6<p>9 | 0<p>2<p>2<p>5 | 0<p>2<p>2<p>2 |
 | Expedited release | All devices | 0 | 1 | 1 |
 
+#### Turn off service-driven expedited quality update releases
+
+Windows Autopatch provides the option to turn off of service-driven expedited quality updates.
+
+By default, the service expedites quality updates as needed. For those organizations seeking greater control, you can disable expedited quality updates for Windows Autopatch-enrolled devices using Microsoft Intune.
+
+**To turn off service-driven expedited quality updates:**
+
+1. Go to **[Microsoft Endpoint Manager portal](https://go.microsoft.com/fwlink/?linkid=2109431)** > **Devices**.
+2. Under **Windows Autopatch** > **Release management**, go to the **Release settings** tab and turn off the **Expedited Quality Updates** setting.
+
 > [!NOTE]
 > Windows Autopatch doesn't allow customers to request expedited releases.
 
-## Pausing and resuming a release
+### Out of Band releases
+
+Windows Autopatch schedules and deploys required Out of Band (OOB) updates released outside of the normal schedule.
+
+**To view deployed Out of Band quality updates:**
+
+1. Go to [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > **Windows Autopatch** > **Release management**.
+2. Under the **Release Announcements** tab, you can view the knowledge base (KB) articles corresponding to deployed OOB and regular Windows quality updates.
+
+> [!NOTE]
+> Announcements will be **removed** from the Release announcements tab when the next quality update is released. Further, if quality updates are paused for a deployment ring, the OOB updates will also be paused.
+
+### Pausing and resuming a release
 
 If Windows Autopatch detects a [significant issue with a release](../operate/windows-autopatch-wqu-signals.md), we may decide to pause that release.
 
-If we pause the release, a policy will be deployed which prevents devices from updating while the issue is investigated. Once the issue is resolved, the release will be resumed.
+In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Release management** > in the **Release schedule** tab, you can pause or resume a Windows quality update.
 
-You can pause or resume a Windows quality update from the Release management tab in the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+There are two statuses associated with paused quality updates, **Service Paused** and **Customer Paused**.
+
+| Status | Description |
+| ----- | ------ |
+| Service Paused | If the Windows Autopatch service has paused an update, the release will have the **Service Paused** status. You must [submit a support request](windows-autopatch-support-request.md) to resume the update. |
+| Customer Paused | If you've paused an update, the release will have the **Customer Paused** status. The Windows Autopatch service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update. |
 
 ## Incidents and outages
 

@@ -12,9 +12,10 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
-# 4688(S): A new process has been created.
+# 4688(S): A new process has been created. (Windows 10)
 
 
 <img src="images/event-4688.png" alt="Event 4688 illustration" width="417" height="479" hspace="10" align="left" />

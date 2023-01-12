@@ -6,13 +6,12 @@ description: Overview of Windows Update for Business reports to explain what it'
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: article
-ms.date: 08/09/2022
+ms.date: 11/15/2022
 ms.technology: itpro-updates
 ---
 
-# Windows Update for Business reports (preview) overview
+# Windows Update for Business reports overview
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 
@@ -40,10 +39,11 @@ Currently, Windows Update for Business reports contains the following features:
     - UCClientReadinessStatus
     - UCClientUpdateStatus
     - UCDeviceAlert
+    - UCDOAggregatedStatus
+    - UCDOStatus
     - UCServiceUpdateStatus
     - UCUpdateAlert
-    - UCDOStatus
-    - UCDOAggregatedStatus
+
 - Client data collection to populate the Windows Update for Business reports tables
 
 :::image type="content" source="media/wufb-reports-query-table.png" alt-text="Screenshot of using a custom Kusto (KQL) query on Windows Update for Business reports data in Log Analytics." lightbox="media/wufb-reports-query-table.png":::

@@ -11,6 +11,8 @@ ms.reviewer: pesmith
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # VPN auto-triggered profile options

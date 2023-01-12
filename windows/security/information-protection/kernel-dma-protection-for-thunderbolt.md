@@ -2,14 +2,14 @@
 title: Kernel DMA Protection (Windows)
 description: Kernel DMA Protection protects PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to Thunderbolt™ 3 ports.
 ms.prod: windows-client
-author: dansimp
-ms.author: dansimp
+author: vinaypamnani-msft
+ms.author: vinpa
 manager: aaroncz
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
-ms.date: 03/26/2019
+ms.date: 01/05/2023
+ms.technology: itpro-security
 ---
 
 # Kernel DMA Protection
@@ -65,6 +65,9 @@ Systems released prior to Windows 10 version 1803 do not support Kernel DMA Prot
 
 >[!NOTE]
 >Kernel DMA Protection is not compatible with other BitLocker DMA attacks countermeasures. It is recommended to disable the BitLocker DMA attacks countermeasures if the system supports Kernel DMA Protection. Kernel DMA Protection provides higher security bar for the system over the BitLocker DMA attack countermeasures, while maintaining usability of external peripherals.
+
+>[!NOTE]
+>DMA remapping support for graphics devices was added in Windows 11 with the WDDM 3.0 driver model; Windows 10 does not support this feature.
 
 ## How to check if Kernel DMA Protection is enabled
 

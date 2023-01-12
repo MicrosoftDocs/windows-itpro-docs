@@ -4,7 +4,7 @@ description: This reference of security settings provides information about how 
 ms.assetid: ef5a4579-15a8-4507-9a43-b7ccddcb0ed1
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Security policy settings reference
 
 **Applies to**
--   Windows 10
+-   Windows 11
+-   Windows 10
 
 This reference of security settings provides information about how to implement and manage security policies, including setting options and security considerations.
 

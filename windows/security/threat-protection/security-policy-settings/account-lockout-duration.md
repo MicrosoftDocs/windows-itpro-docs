@@ -13,7 +13,6 @@ author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
 ms.date: 08/16/2021
@@ -23,6 +22,7 @@ ms.technology: itpro-security
 # Account lockout duration
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Account lockout duration** security policy setting.

@@ -1,20 +1,14 @@
 ---
 title: Azure AD Join Single Sign-on Deployment
 description: Learn how to provide single sign-on to your on-premises resources for Azure Active Directory-joined devices, using Windows Hello for Business.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 08/19/2018
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # Azure AD Join Single Sign-on Deployment
+
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-keycert-trust-aad.md)]
 
 Windows Hello for Business combined with Azure Active Directory-joined devices makes it easy for users to securely access cloud-based resources using a strong, two-factor credential.  Some resources may remain on-premises as enterprises transition resources to the cloud and Azure AD-joined devices may need to access these resources.  With additional configurations to your current hybrid deployment, you can provide single sign-on to your on-premises resources for Azure Active Directory-joined devices using Windows Hello for Business, using a key or a certificate.
 

@@ -1,22 +1,11 @@
 ---
 title: User Account Control security policy settings (Windows)
 description: You can use security policies to configure how User Account Control works in your organization.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: sulahiri
-manager: aaroncz
-ms.collection: 
-  - M365-identity-device-management
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 09/24/2021
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # User Account Control security policy settings

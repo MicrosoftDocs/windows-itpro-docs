@@ -1,16 +1,10 @@
 ---
 title: How Windows Hello for Business works (Windows)
 description: Learn about registration, authentication, key material, and infrastructure for Windows Hello for Business.
-ms.prod: windows-client
-ms.localizationpriority: high
-author: paolomatarazzo
-ms.author: paoloma
 ms.date: 10/16/2017
-manager: aaroncz
-ms.topic: article
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # How Windows Hello for Business works in Windows devices
 

@@ -6,10 +6,9 @@ ms.prod: windows-client
 author: dansimp
 ms.author: dansimp
 manager: aaroncz
-ms.collection: 
-  - M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/06/2021
+ms.technology: itpro-security
 ---
 
 # Understanding PCR banks on TPM 2.0 devices

@@ -9,6 +9,7 @@ author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.reviewer: 
 manager: aaroncz
+ms.date: 12/31/2017
 ---
 
 # Policy CSP - InternetExplorer
@@ -4426,7 +4427,7 @@ The following list shows the supported values:
 ADMX Info:
 -   GP Friendly name: *Enable extended hot keys in Internet Explorer mode*
 -   GP name: *EnableExtendedIEModeHotkeys*
--   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
+-   GP path: *Windows Components/Internet Explorer/Main*
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->

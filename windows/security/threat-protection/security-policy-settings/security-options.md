@@ -5,19 +5,21 @@ ms.assetid: 405ea253-8116-4e57-b08e-14a8dcdca92b
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.date: 06/28/2018
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # Security Options
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Provides an introduction to the **Security Options** settings for local security policies and links to more information.

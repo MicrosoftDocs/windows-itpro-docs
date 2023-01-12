@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # Windows 11 requirements
@@ -83,7 +85,7 @@ The following configuration requirements apply to VMs running Windows 11.
 -	Generation: 2<b> \*</b>
 -	Storage: 64 GB or greater
 -	Security: 
-    - Azure: [Trusted launch](/azure/virtual-machines/trusted-launch) with vTPM and secure boot enabled
+    - Azure: [Trusted launch](/azure/virtual-machines/trusted-launch) with vTPM enabled
     - Hyper-V: [Secure boot and TPM enabled](/windows-server/virtualization/hyper-v/learn-more/Generation-2-virtual-machine-security-settings-for-Hyper-V#secure-boot-setting-in-hyper-v-manager)
     - General settings: Secure boot capable, virtual TPM enabled
 -	Memory:  4 GB or greater
@@ -104,5 +106,5 @@ The VM host CPU must also meet Windows 11 [processor requirements](/windows-hard
 ## See also
 
 [Windows minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)<br>
-[What's new in Windows 11 overview](windows-11-whats-new.md)
+[What's new in Windows 11 overview](/windows/whats-new/windows-11-overview)
 

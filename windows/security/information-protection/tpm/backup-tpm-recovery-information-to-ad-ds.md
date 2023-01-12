@@ -6,9 +6,9 @@ ms.prod: windows-client
 author: dansimp
 ms.author: dansimp
 manager: aaroncz
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2021
+ms.technology: itpro-security
 ---
 
 # Back up the TPM recovery information to AD DS

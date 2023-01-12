@@ -7,7 +7,6 @@ ms.author: vinpa
 author: vinaypamnani-msft
 manager: aaroncz
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
 ms.date: 02/14/2022
@@ -32,7 +31,6 @@ The Security Compliance Toolkit consists of:
 -   Windows 10 security baselines
     -   Windows 10, version 22H2
     -   Windows 10, version 21H2
-    -   Windows 10, version 21H1
     -   Windows 10, version 20H2
     -   Windows 10, version 1809
     -   Windows 10, version 1607
@@ -49,7 +47,7 @@ The Security Compliance Toolkit consists of:
     -   Microsoft 365 Apps for Enterprise Version 2206
     
 -   Microsoft Edge security baseline
-    -   Edge version 98
+    -   Edge version 107
 
 -   Tools
     -   Policy Analyzer

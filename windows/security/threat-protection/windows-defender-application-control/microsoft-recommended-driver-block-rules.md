@@ -10,13 +10,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
   - highpri
 author: jgeurten
 ms.reviewer: jsuther
 ms.author: vinpa
 manager: aaroncz
 ms.date: 11/01/2022
+ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Microsoft recommended driver block rules

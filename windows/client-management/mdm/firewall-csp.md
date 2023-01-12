@@ -8,6 +8,7 @@ ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.reviewer: 
 manager: aaroncz
+ms.date: 12/31/2017
 ---
 
 # Firewall configuration service provider (CSP)
@@ -22,8 +23,6 @@ The table below shows the applicability of Windows:
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-
-The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings, per profile settings, and the desired set of custom rules to be enforced on the device.  Using the Firewall CSP the IT admin can now manage non-domain devices, and reduce the risk of network security threats across all systems connecting to the corporate network.  This CSP was added Windows 10, version 1709.
 
 The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings, per profile settings, and the desired set of custom rules to be enforced on the device.  Using the Firewall CSP the IT admin can now manage non-domain devices, and reduce the risk of network security threats across all systems connecting to the corporate network.  This CSP was added Windows 10, version 1709.
 
@@ -53,6 +52,11 @@ Firewall
 ------------DisableStealthMode
 ------------Shielded
 ------------DisableUnicastResponsesToMulticastBroadcast
+------------EnableLogDroppedPackets
+------------EnableLogSuccessConnections
+------------EnableLogIgnoredRules
+------------LogMaxFileSize
+------------LogFilePath
 ------------DisableInboundNotifications
 ------------AuthAppsAllowUserPrefMerge
 ------------GlobalPortsAllowUserPrefMerge
@@ -66,6 +70,11 @@ Firewall
 ------------DisableStealthMode
 ------------Shielded
 ------------DisableUnicastResponsesToMulticastBroadcast
+------------EnableLogDroppedPackets
+------------EnableLogSuccessConnections
+------------EnableLogIgnoredRules
+------------LogMaxFileSize
+------------LogFilePath
 ------------DisableInboundNotifications
 ------------AuthAppsAllowUserPrefMerge
 ------------GlobalPortsAllowUserPrefMerge
@@ -79,6 +88,11 @@ Firewall
 ------------DisableStealthMode
 ------------Shielded
 ------------DisableUnicastResponsesToMulticastBroadcast
+------------EnableLogDroppedPackets
+------------EnableLogSuccessConnections
+------------EnableLogIgnoredRules
+------------LogMaxFileSize
+------------LogFilePath
 ------------DisableInboundNotifications
 ------------AuthAppsAllowUserPrefMerge
 ------------GlobalPortsAllowUserPrefMerge
@@ -224,6 +238,25 @@ Boolean value. If it's true, unicast responses to multicast broadcast traffic ar
 Default value is false.
 Value type is bool. Supported operations are Add, Get and Replace.
 
+<a href="" id="enablelogdroppedpackets"></a>**/EnableLogDroppedPackets**
+Boolean value. If this value is true, firewall will log all dropped packets. The merge law for this option is to let "on" values win.
+Default value is false. Supported operations are Get and Replace.
+
+<a href="" id="enablelogsuccessconnections"></a>**/EnableLogSuccessConnections**
+Boolean value. If this value is true, firewall will log all successful inbound connections. The merge law for this option is to let "on" values win.
+Default value is false. Supported operations are Get and Replace.
+
+<a href="" id="enablelogignoredrules"></a>**/EnableLogIgnoredRules**
+Boolean value. If this value is true, firewall will log ignored firewall rules. The merge law for this option is to let "on" values win.
+Default value is false. Supported operations are Get and Replace.
+
+<a href="" id="logmaxfilesize"></a>**/LogMaxFileSize**
+Integer value that specifies the size, in kilobytes, of the log file where dropped packets, successful connections and ignored rules are logged. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used.
+Default value is 1024. Supported operations are Get and Replace
+
+<a href="" id="logfilepath"></a>**/LogFilePath**
+String value that represents the file path to the log where firewall logs dropped packets, successful connections and ignored rules. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used. Default value is "%systemroot%\system32\LogFiles\Firewall\pfirewall.log". Supported operations are Get and Replace
+
 <a href="" id="disableinboundnotifications"></a>**/DisableInboundNotifications**
 Boolean value. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port.  If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 Default value is false.
@@ -350,7 +383,7 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 
 <a href="" id="icmptypesandcodes"></a>**FirewallRules/_FirewallRuleName_/IcmpTypesAndCodes**
-ICMP types and codes applicable to the firewall rule. To specify all ICMP types and codes, use the “\*” character. For specific ICMP types and codes, use the “:” character to separate the type and code, for example, 3:4, 1:\*. The “\*” character can be used to represent any code. The “\*” character cannot be used to specify any type; examples such as “\*:4” or “\*:\*” are invalid.
+Comma separated list of ICMP types and codes applicable to the firewall rule. To specify all ICMP types and codes, use the “\*” character. For specific ICMP types and codes, use the “:” character to separate the type and code, for example, 3:4, 1:\*. The “\*” character can be used to represent any code. The “\*” character cannot be used to specify any type; examples such as “\*:4” or “\*:\*” are invalid.
 If not specified, the default is All.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
@@ -432,6 +465,7 @@ Comma separated list of interface types. Valid values:
 - RemoteAccess
 - Wireless
 - Lan
+- MBB (i.e. Mobile Broadband)
 
 If not specified, the default is All.
 Value type is string. Supported operations are Get and Replace.

@@ -2,7 +2,7 @@
 metadata:
   title: Windows Autopatch - Frequently Asked Questions (FAQ)
   description: Answers to frequently asked questions about Windows Autopatch.
-  ms.prod: w11
+  ms.prod: windows-client
   ms.topic: faq
   ms.date: 08/26/2022
   audience: itpro
@@ -11,6 +11,7 @@ metadata:
   author: tiaraquan
   ms.author: tiaraquan
   ms.reviwer: hathind
+  ms.technology: itpro-updates
 title: Frequently Asked Questions about Windows Autopatch
 summary: This article answers frequently asked questions about Windows Autopatch.
 sections:
@@ -45,7 +46,9 @@ sections:
           - [Azure Active Directory (Azure AD) Premium](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses)
           - [Hybrid Azure AD-Joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Azure AD-joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
           - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)
-          Additional pre-requisites for devices managed by Configuration Manager: 
+          
+          Additional prerequisites for devices managed by Configuration Manager: 
+
           - [Configuration Manager Co-management requirements](../prepare/windows-autopatch-prerequisites.md#configuration-manager-co-management-requirements)
           - [A supported version of Configuration Manager](/mem/configmgr/core/servers/manage/updates#supported-versions)
           - [Switch workloads for device configuration, Windows Update and Microsoft 365 Apps from Configuration Manager to Intune](/mem/configmgr/comanage/how-to-switch-workloads) (minimum Pilot Intune. Pilot collection must contain the devices you want to register into Autopatch.)
@@ -85,7 +88,7 @@ sections:
           - Microsoft Teams: Windows Autopatch allows eligible devices to benefit from the standard automatic update channels and will provide support for issues with Teams updates.
       - question: What does Windows Autopatch do to ensure updates are done successfully?
         answer: |
-          For Windows quality updates, updates are applied to devices in the Test ring first. The devices are evaluated, and then rolled out to the First, Fast then Broad rings. There's an evaluation period at each progression. This process is dependent on customer testing and verification of all updates during these rollout stages. The outcome is to ensure that registered devices are always up to date and disruption to business operations is minimized to free up your IT department from that ongoing task.
+          For Windows quality and feature updates, updates are applied to devices in the Test ring first. The devices are evaluated, and then rolled out to the First, Fast then Broad rings. There's an evaluation period at each progression. This process is dependent on customer testing and verification of all updates during these rollout stages. The outcome is to ensure that registered devices are always up to date and disruption to business operations is minimized to free up your IT department from that ongoing task.
       - question: What happens if there's an issue with an update?
         answer: |
           Autopatch relies on the following capabilities to help resolve update issues:

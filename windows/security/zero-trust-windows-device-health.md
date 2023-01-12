@@ -1,19 +1,19 @@
 ---
-title: Zero Trust and Windows device health 
+title: Zero Trust and Windows device health
 description: Describes the process of Windows device health attestation
 ms.reviewer: 
 ms.topic: article
 manager: aaroncz
 ms.author: paoloma
 author: paolomatarazzo
-ms.collection: M365-security-compliance
 ms.custom: intro-overview
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Zero Trust and Windows device health
-Organizations need a security model that more effectively adapts to the complexity of the modern work environment. IT admins need to embrace the hybrid workplace, while protecting people, devices, apps, and data wherever they’re located. Implementing a Zero Trust model for security helps addresses today's complex environments.
+Organizations need a security model that more effectively adapts to the complexity of the modern work environment. IT admins need to embrace the hybrid workplace, while protecting people, devices, apps, and data wherever they’re located. Implementing a Zero Trust model for security helps address today's complex environments.
 
 The [Zero Trust](https://www.microsoft.com/security/business/zero-trust) principles are:
 

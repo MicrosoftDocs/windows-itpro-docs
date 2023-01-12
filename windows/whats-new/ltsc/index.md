@@ -8,6 +8,8 @@ manager: dougeby
 ms.localizationpriority: low
 ms.topic: article
 ms.collection: highpri
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # Windows 10 Enterprise LTSC

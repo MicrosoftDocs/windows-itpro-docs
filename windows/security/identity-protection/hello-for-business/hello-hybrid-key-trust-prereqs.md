@@ -1,23 +1,16 @@
 ---
 title: Hybrid Azure AD joined Key trust Windows Hello for Business Prerequisites (Windows Hello for Business)
 description: Learn about the prerequisites for hybrid Windows Hello for Business deployments using key trust and what the next steps are in the deployment process.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 4/30/2021
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Hybrid deployment</b>
-  - ✅ <b>Key trust</b>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # Hybrid Azure AD joined Key trust Windows Hello for Business Prerequisites
 
-Hybrid environments are distributed systems that enable organizations to use on-premises and Azure-based identities and resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication that provides a single sign-in like experience to modern resources.
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-key-trust.md)]
+
+Hybrid environments are distributed systems that enable organizations to use on-premises and Azure AD-based identities and resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication that provides a single sign-in like experience to modern resources.
 
 The distributed systems on which these technologies were built involved several pieces of on-premises and cloud infrastructure.  High-level pieces of the infrastructure include:
 
@@ -32,7 +25,7 @@ The distributed systems on which these technologies were built involved several 
 
 Hybrid Windows Hello for Business needs two directories: on-premises Active Directory and a cloud Azure Active Directory.  The minimum required domain functional and forest functional levels for Windows Hello for Business deployment is Windows Server 2008 R2.  
 
-A hybrid Windows Hello for Business deployment needs an Azure Active Directory subscription.  The hybrid key trust deployment does not need a premium Azure Active Directory subscription.
+A hybrid Windows Hello for Business deployment requires Azure Active Directory. The hybrid key trust deployment does not need a premium Azure Active Directory subscription.
 
 You can deploy Windows Hello for Business in any environment with Windows Server 2008 R2 or later domain controllers.  
 If using the key trust deployment model, you MUST ensure that you have adequate (1 or more, depending on your authentication load) Windows Server 2016 or later Domain Controllers in each Active Directory site where users will be authenticating for Windows Hello for Business.  
@@ -112,7 +105,7 @@ You can deploy Windows Hello for Business key trust in non-federated and federat
 
 Windows Hello for Business is a strong, two-factor credential the helps organizations reduce their dependency on passwords.  The provisioning process lets a user enroll in Windows Hello for Business using their user name and password as one factor, but needs a second factor of authentication.
 
-Hybrid Windows Hello for Business deployments can use Azure's Multifactor Authentication (MFA) service or they can use multifactor authentication provided by AD FS beginning with Windows Server 2012 R2, which includes an adapter model that enables third parties to integrate their MFA into AD FS. The MFA enabled by an Office 365 license is sufficient for Azure AD.
+Hybrid Windows Hello for Business deployments can use Azure's Multifactor Authentication (MFA) service or they can use multifactor authentication provided by AD FS, which includes an adapter model that enables third parties to integrate their MFA into AD FS.
 
 ### Section Review
 

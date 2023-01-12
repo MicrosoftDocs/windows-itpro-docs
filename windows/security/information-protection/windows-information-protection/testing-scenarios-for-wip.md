@@ -7,9 +7,9 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: aaroncz
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 03/05/2019
+ms.technology: itpro-security
 ---
 
 # Testing scenarios for Windows Information Protection (WIP)

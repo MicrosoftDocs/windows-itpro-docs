@@ -11,6 +11,8 @@ ms.date: 09/23/2021
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # VPN and conditional access

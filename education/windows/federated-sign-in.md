@@ -1,24 +1,16 @@
 ---
 title: Configure federated sign-in for Windows devices
 description: Description of federated sign-in feature for Windows 11 SE and how to configure it via Intune
-ms.date: 09/15/2022
-ms.prod: windows
-ms.technology: windows
+ms.date: 01/12/2023
 ms.topic: how-to
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer:
-manager: aaroncz
-ms.collection: education
 appliesto:
-- ✅ <b>Windows 11 SE, version 22H2</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ---
 
 <!-- MAXADO-6286399 -->
 # Configure federated sign-in for Windows 11 SE
 
-Starting in **Windows 11 SE, version 22H2**, you can enable your users to sign-in using a SAML 2.0 identity provider (IdP). This feature is called **federated sign-in**. Federated sign-in is a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Azure AD, they can sign-in using their existing credentials from the IdP. For example, students and educators can use QR code badges to sign-in.
+Starting in Windows 11 SE, version 22H2, you can enable your users to sign-in using a SAML 2.0 identity provider (IdP). This feature is called *federated sign-in*. Federated sign-in is a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Azure AD, they can sign-in using their existing credentials from the IdP. For example, students and educators can use QR code badges to sign-in.
 
 ## Benefits of federated sign-in
 
@@ -33,7 +25,9 @@ To implement federated sign-in, the following prerequisites must be met:
 
 1. An Azure AD tenant, with one or multiple domains federated to a third-party SAML 2.0 IdP. For more information, see [Use a SAML 2.0 Identity Provider (IdP) for Single Sign On][AZ-1]
     >[!NOTE]
-    >If your organization uses a third-party federation solution, you can configure single sign-on to Azure Active Directory if the solution is compatible with Azure Active Directory. For questions regarding compatibility, please contact your identity provider. If you're an IdP, and would like to validate your solution for interoperability, please refer to these [guidelines][MSFT-1].
+    >If your organization uses a third-party federation solution, you can configure single sign-on to Azure Active Directory if the solution is compatible with Azure Active Directory. For questions regarding compatibility, contact your identity provider. If you're an IdP, and would like to validate your solution for interoperability, refer to these [guidelines][MSFT-1].
+    >
+    >For a step-by-step guide on how to configure Google Workspace as an identity provider for Azure AD, see [Configure federation between Google Workspace and Azure AD](configure-aad-google-trust.md).
 1. Individual IdP accounts created: each user will require an account defined in the third-party IdP platform
 1. Individual Azure AD accounts created: each user will require a matching account defined in Azure AD. These accounts are commonly created through automated solutions, for example:
     - [School Data Sync (SDS)][SDS-1]
@@ -57,7 +51,7 @@ To configure federated sign-in using Microsoft Intune, [create a custom profile]
 
 To sign-in with a SAML 2.0 identity provider, your devices must be configured with different policies, which can be configured using Microsoft Intune.
 
-To configure federated sign-in using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
+[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
@@ -68,7 +62,8 @@ To configure federated sign-in using Microsoft Intune, [create a custom profile]
 
 :::image type="content" source="images/federated-sign-in-settings-intune.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/federated-sign-in-settings-intune.png" border="true":::
 
-Assign the policy to a security group that contains as members the devices that require federated sign-in.
+[!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
 
 <!--
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
@@ -113,8 +108,6 @@ Federated sign-in doesn't work on devices that have the following settings enabl
 
 - The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen
 - Select the *Other User* button, and the standard username/password credentials are available to log into the device
-
------------
 
 [AZ-1]: /azure/active-directory/hybrid/how-to-connect-fed-saml-idp
 [AZ-2]: /azure/active-directory/enterprise-users/licensing-groups-assign

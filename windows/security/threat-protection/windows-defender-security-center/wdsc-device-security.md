@@ -1,27 +1,20 @@
 ---
 title: Device security in the Windows Security app
 description: Use the Device security section to manage security built into your device, including virtualization-based security.
-keywords: device security, device guard, wdav, smartscreen, antivirus, wdsc, exploit, protection, hide
-search.product: eADQiWindows 10XVcnh
 ms.prod: windows-client
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.date: 
-ms.reviewer: 
+ms.date: 12/31/2018
 manager: aaroncz
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Device security
 
 **Applies to**
 
-- Windows 10
-- Windows 11
+- Windows 10 and later
 
 The **Device security** section contains information and settings for built-in device security.
 

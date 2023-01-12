@@ -7,9 +7,9 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: aaroncz
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 03/11/2019
+ms.technology: itpro-security
 ---
 
 # Create a Windows Information Protection (WIP) policy using Microsoft Intune

@@ -9,6 +9,7 @@ author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Prepare a device for kiosk configuration
@@ -206,7 +207,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
 ## Enable logging
 
-Logs can help you [troubleshoot issues](./kiosk-troubleshoot.md) kiosk issues. Logs about configuration and runtime issues can be obtained by enabling the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** channel, which is disabled by default.
+Logs can help you [troubleshoot issues](/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting) kiosk issues. Logs about configuration and runtime issues can be obtained by enabling the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** channel, which is disabled by default.
 
 :::image type="content" source="images/enable-assigned-access-log.png" alt-text="On Windows client, open Event Viewer, right-click Operational, select enable log to turn on logging to help troubleshoot.":::
 

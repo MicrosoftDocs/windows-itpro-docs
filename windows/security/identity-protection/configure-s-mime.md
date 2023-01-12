@@ -5,13 +5,13 @@ ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
-ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 
 

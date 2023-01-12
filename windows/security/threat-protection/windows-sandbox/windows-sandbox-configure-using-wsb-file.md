@@ -8,9 +8,7 @@ manager: aaroncz
 ms.collection: 
   - highpri
 ms.topic: article
-ms.localizationpriority: medium
-ms.date: 
-ms.reviewer: 
+ms.date: 6/30/2022
 ms.technology: itpro-security
 ---
 
@@ -229,12 +227,14 @@ With the Visual Studio Code installer script already mapped into the sandbox, th
 
 ### VSCodeInstall.cmd
 
+Download vscode to `downloads` folder and run from `downloads` folder
+
 ```batch
 REM Download Visual Studio Code
-curl -L "https://update.code.visualstudio.com/latest/win32-x64-user/stable" --output C:\users\WDAGUtilityAccount\Desktop\vscode.exe
+curl -L "https://update.code.visualstudio.com/latest/win32-x64-user/stable" --output C:\users\WDAGUtilityAccount\Downloads\vscode.exe
 
 REM Install and run Visual Studio Code
-C:\users\WDAGUtilityAccount\Desktop\vscode.exe /verysilent /suppressmsgboxes
+C:\users\WDAGUtilityAccount\Downloads\vscode.exe /verysilent /suppressmsgboxes
 ```
 
 ### VSCode.wsb
@@ -244,15 +244,17 @@ C:\users\WDAGUtilityAccount\Desktop\vscode.exe /verysilent /suppressmsgboxes
   <MappedFolders>
     <MappedFolder>
       <HostFolder>C:\SandboxScripts</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Downloads\sandbox</SandboxFolder>
       <ReadOnly>true</ReadOnly>
     </MappedFolder>
     <MappedFolder>
       <HostFolder>C:\CodingProjects</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Documents\Projects</SandboxFolder>
       <ReadOnly>false</ReadOnly>
     </MappedFolder>
   </MappedFolders>
   <LogonCommand>
-    <Command>C:\Users\WDAGUtilityAccount\Desktop\SandboxScripts\VSCodeInstall.cmd</Command>
+    <Command>C:\Users\WDAGUtilityAccount\Downloads\sandbox\VSCodeInstall.cmd</Command>
   </LogonCommand>
 </Configuration>
 ```
