@@ -23,6 +23,15 @@ You can submit support tickets to Microsoft using the Windows Autopatch admin ce
 
 Support requests are triaged and responded to as they're received.
 
+**To submit a new support request:**
+
+1. Sign into the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant administration** menu.
+1. In the **Windows Autopatch** section, select **Support requests**.
+1. In the **Support requests** section, select **+ New support request**.
+1. Enter your question(s) and/or a description of the problem.
+1. Review all the information you provided for accuracy.
+1. When you're ready, select **Create**.
+
 ### Premier and Unified support options
 
 If you have a **Premier** or **Unified** support contract, when you submit a new request, or edit an active support request, you can:
@@ -39,15 +48,6 @@ Depending on your support contract, the following severity options are available
 | ----- | ----- |
 | Premier | Severity A, B or C |
 | Unified | Critical or non-critical |
-
-**To submit a new support request:**
-
-1. Sign into the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant administration** menu.
-1. In the **Windows Autopatch** section, select **Support requests**.
-1. In the **Support requests** section, select **+ New support request**.
-1. Enter your question(s) and/or a description of the problem.
-1. Review all the information you provided for accuracy.
-1. When you're ready, select **Create**.
 
 ## Manage an active support request
 
