@@ -705,8 +705,7 @@ The "Configure diagnostic data opt-in settings user interface" group policy can 
 
 | Value | Description |
 |:--|:--|
-| 0 | Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
-Note: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1. |
+| 0 | Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender. <br>Note: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1. |
 | 1 (Default) | Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level. |
 | 3 | Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels. |
 <!-- AllowTelemetry-AllowedValues-End -->
