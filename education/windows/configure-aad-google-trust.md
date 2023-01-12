@@ -125,4 +125,4 @@ From a private browser session, navigate to https://portal.azure.com and sign in
 1. The user will be redirected to Google Workspace to sign in
 1. After Google Workspace authentication, the user will be redirected back to Azure AD and signed in
 
-:::image type="content" source="images/google/google-sso.gif" alt-text="Clever SSO":::
+:::image type="content" source="images/google/google-sso.gif" alt-text="User authenticating to the Azure portal using a Google Workspace federated identity.":::
