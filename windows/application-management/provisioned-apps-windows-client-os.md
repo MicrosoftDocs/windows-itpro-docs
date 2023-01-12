@@ -111,8 +111,8 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
     | ❌ |  ✔️|||
     
     ---  
->     [!NOTE]
->     For devices running Windows 11, version 21H2, and any supported version of Windows 10, you need to acquire the [HEVC Video Extensions](ms-windows-store://pdp/?productid=9NMZLZ57R3T7) from the Microsoft Store.
+    >[!NOTE]
+    >For devices running Windows 11, version 21H2, and any supported version of Windows 10, you need to acquire the [HEVC Video Extensions](ms-windows-store://pdp/?productid=9NMZLZ57R3T7) from the Microsoft Store.
 
 - [Microsoft Messaging](ms-windows-store://pdp/?PFN=Microsoft.Messaging_8wekyb3d8bbwe) | Package name:Microsoft.Messaging
   - Supported versions:
