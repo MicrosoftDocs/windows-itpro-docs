@@ -19,7 +19,7 @@ msreviewer: hathind
 
 You can submit support tickets to Microsoft using the Windows Autopatch admin center. Email is the recommended approach to interact with the Windows Autopatch Service Engineering Team.
 
-## Submit a new support request  
+## Submit a new support request
 
 Support requests are triaged and responded to as they're received.
 
