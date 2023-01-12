@@ -123,5 +123,5 @@ For more information, see [Accessibility information for IT professionals](/wind
 
 ## High Efficiency Video Coding (HEVC) support
 <!--7475101-->
-Starting in Windows 11, version 22H2, support for High Efficiency Video Coding (HEVC) is now available. YOu can play HEVC videos in any video app on your Windows 11 device. HEVC is designed to take advantage of hardware capabilities on some newer devices to support 4K and Ultra HD content.
+Starting in Windows 11, version 22H2, support for High Efficiency Video Coding (HEVC) is now available. You can play HEVC videos in any video app on your Windows 11 device. HEVC is designed to take advantage of hardware capabilities on some newer devices to support 4K and Ultra HD content.
 For devices that don't have hardware support for HEVC videos, software support is provided, but the playback experience might vary based on the video resolution and your devices performance.
