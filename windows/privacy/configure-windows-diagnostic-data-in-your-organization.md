@@ -348,20 +348,18 @@ If you wish to disable, at any time, switch the same setting to **0**. The defau
 > - Windows diagnostic data collected from a device before it was enabled with Windows diagnostic data processor configuration will be deleted when this configuration is enabled.
 > - When you enable devices with the Windows diagnostic data processor configuration, users may continue to submit feedback through various channels such as Windows feedback hub or Edge feedback. However, the feedback data is not subject to the terms of the Windows diagnostic data processor configuration. If this is not desired, we recommend that you disable feedback using the available policies or application management solutions.
 
-You can also enable the Windows diagnostic data processor configuration by enrolling in services that use Windows diagnostic data. These services currently include Desktop Analytics, Update Compliance, Microsoft Managed Desktop, and Windows Update for Business.
+You can also enable the Windows diagnostic data processor configuration by enrolling in services that use Windows diagnostic data. These services currently include Update Compliance, Windows Update for Business reports, Microsoft Managed Desktop, and Windows Update for Business.
 
 For information on these services and how to configure the group policies, refer to the following documentation:
-
-Desktop Analytics:
-
-- [Enable data sharing for Desktop Analytics](/mem/configmgr/desktop-analytics/enable-data-sharing)
-- [Desktop Analytics data privacy](/mem/configmgr/desktop-analytics/privacy)
-- [Group policy settings for Desktop Analytics](/mem/configmgr/desktop-analytics/group-policy-settings)
 
 Update Compliance:
 
 - [Privacy in Update Compliance](/windows/deployment/update/update-compliance-privacy)
 - [Manually configuring devices for Update Compliance](/windows/deployment/update/update-compliance-configuration-manual#required-policies)
+
+Windows Update for Business reports
+
+- [Windows Update for Business reports prerequisites](/windows/deployment/update/wufb-reports-prerequisites)
 
 Microsoft Managed Desktop:
 
@@ -370,10 +368,6 @@ Microsoft Managed Desktop:
 Windows Update for Business:
 
 - [How to enable deployment protections](/windows/deployment/update/deployment-service-overview#how-to-enable-deployment-protections)
-
-## Limit optional diagnostic data for Desktop Analytics
-
-For more information about how to limit the diagnostic data to the minimum required by Desktop Analytics, see [Enable data sharing for Desktop Analytics](/mem/configmgr/desktop-analytics/enable-data-sharing).
 
 ## Change privacy settings on a single server
 
