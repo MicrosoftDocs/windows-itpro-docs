@@ -1,13 +1,13 @@
 ---
 title: Configure federation between Google Workspace and Azure AD
 description: Configuration of a federated trust between Google Workspace and Azure AD, with Google Workspace acting as an identity provider (IdP) for Azure AD.
-ms.date: 12/06/2022
+ms.date: 1/12/2023
 ms.topic: how-to
 ---
 
 # Configure federation between Google Workspace and Azure AD
 
-In this article, you'll learn the steps to configure Google Workspace as an identity provider (IdP) for Azure AD.\
+This article describes the steps required to configure Google Workspace as an identity provider (IdP) for Azure AD.\
 Once configured, users will be able to sign in to Azure AD with their Google Workspace credentials.
 
 ## Prerequisites
@@ -46,11 +46,11 @@ To test federation, the following prerequisites must be met:
         If using Google auto-provisioning, select **Basic Information > Primary email**
       - Select **Continue**
 1. On the *Attribute mapping* page, map the Google attributes to the Azure AD attributes
-    
+
     |Google Directory attributes|Azure AD attributes|
     |-|-|
     |Basic Information: Primary Email|App attributes: IDPEmail|
-    
+
     > [!IMPORTANT]
     > You must ensure that your the Azure AD user accounts email match those in your Google Workspace.
 
