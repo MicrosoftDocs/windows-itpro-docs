@@ -19,23 +19,26 @@ msreviewer: hathind
 
 You can submit support tickets to Microsoft using the Windows Autopatch admin center. Email is the recommended approach to interact with the Windows Autopatch Service Engineering Team.
 
-## Premier and Unified support options
+## Submit a new support request
 
-As a customer with a **Premier** or **Unified** support contract, you can specify the severity of your issue, and schedule a support callback for a specific day and time. These options are available when you open or submit a new issue and when you edit an active support case.
+Support requests are triaged and responded to as they're received.
+
+### Premier and Unified support options
+
+If you have a **Premier** or **Unified** support contract, when you submit a new request, or edit an active support request, you can:
+
+- Specify the severity of your issue
+- Schedule a support callback for a specific day and time
 
 Depending on your support contract, the following severity options are available:
+
+> [!NOTE]
+> Selecting either severity **A** or **Critical** issue limits you to a phone support case. This is the fastest support option.
 
 | Support contract | Severity options |
 | ----- | ----- |
 | Premier | Severity A, B or C |
 | Unified | Critical or non-critical |
-
-> [!NOTE]
-> Selecting either severity **A** or **Critical** issue limits you to a phone support case. This is the fastest support option.
-
-## Submit a new support request  
-
-Support requests are triaged and responded to as they're received.
 
 **To submit a new support request:**
 

@@ -1,7 +1,7 @@
 ---
 title: Fix issues found by the Readiness assessment tool
 description: This article details how to fix issues found by the Readiness assessment tool
-ms.date: 11/17/2022
+ms.date: 01/12/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -15,6 +15,9 @@ msreviewer: hathind
 # Fix issues found by the Readiness assessment tool
 
 Seeing issues with your tenant? This article details how to remediate issues found with your tenant.
+
+> [!NOTE]
+> If you need more assistance with tenant enrollment, you can [submit a tenant enrollment support request](#submit-a-tenant-enrollment-support-request).
 
 ## Check results
 
@@ -70,3 +73,29 @@ Windows Autopatch requires the following licenses:
 | Result | Meaning |
 | ----- | ----- |
 | Not ready | Windows Autopatch requires Windows 10/11 Enterprise E3 (or higher) to be assigned to your users. Additionally, Azure Active Directory Premium, and Microsoft Intune are required. For more information, see [more about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). |
+
+## Submit a tenant enrollment support request
+
+> [!IMPORTANT]
+> Make sure you've [added and verified your admin contacts](../deploy/windows-autopatch-admin-contacts.md). The Windows Autopatch Service Engineering Team will contact these individuals for assistance with troubleshooting issues.
+
+If you need more assistance with tenant enrollment, you can submit support requests to the Windows Autopatch Service Engineering Team in the Windows Autopatch enrollment tool. Email is the recommended approach to interact with the Windows Autopatch Service Engineering Team.
+
+**To submit a new tenant enrollment support request:**
+
+1. If the Readiness assessment tool fails, remediation steps can be found by selecting **View details** under **Management settings** and then selecting the individual checkbox. The **Contact Support** button will be available below remediation instructions in the fly-in-pane.
+2. Enter your question(s) and/or a description of the problem.
+3. Review all the information you provided for accuracy.
+4. When you're ready, select **Create**.
+
+### Manage an active tenant enrollment support request
+
+The primary contact for the support request will receive email notifications when a case is created, assigned to a service engineer to investigate, and mitigated.
+
+If you have a question about the case, the best way to get in touch is to reply directly to one of the emails. If we have questions about your request or need more details, we'll email the primary contact listed in the support request.
+
+**To view all your active tenant enrollment support requests:**
+
+1. Sign into the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant Administration** menu.
+1. In the **Windows Autopatch** section, select **Tenant Enrollment**.
+1. Select the **Support history** tab. You can view the list of all support cases, or select an individual case to view the details.
