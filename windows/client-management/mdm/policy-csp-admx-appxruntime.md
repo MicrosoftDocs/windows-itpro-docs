@@ -4,7 +4,7 @@ description: Learn more about the ADMX_AppXRuntime Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 01/12/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -46,7 +46,7 @@ This policy setting lets you turn on Content URI Rules to supplement the static 
 
 - If you enable this policy setting, you can define additional Content URI Rules that all Windows Store apps that use the enterpriseAuthentication capability on a computer can use.
 
-If you disable or don't set this policy setting, Windows Store apps will only use the static Content URI Rules.
+- If you disable or don't set this policy setting, Windows Store apps will only use the static Content URI Rules.
 <!-- AppxRuntimeApplicationContentUriRules-Description-End -->
 
 <!-- AppxRuntimeApplicationContentUriRules-Editable-Begin -->
