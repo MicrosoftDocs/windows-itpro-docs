@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer developing in Windows 10 and Windows 11.
-ms.date: 10/28/2022
+ms.date: 12/05/2022
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
@@ -23,9 +23,11 @@ Each version of Windows client adds new features and functionality. Occasionally
 
 For more information about features in Windows 11, see [Feature deprecations and removals](https://www.microsoft.com/windows/windows-11-specifications#table3).
 
-To understand the distinction between _deprecation_ and _removal_, see [Windows client features lifecycle](feature-lifecycle.md).
+To understand the distinction between *deprecation* and *removal*, see [Windows client features lifecycle](feature-lifecycle.md).
 
 The features in this article are no longer being actively developed, and might be removed in a future update. Some features have been replaced with other features or functionality and some are now available from other sources.
+
+## Deprecated features
 
 **The following list is subject to change and might not include every affected feature or functionality.**
 
@@ -34,6 +36,8 @@ The features in this article are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Deprecation announced |
 | ----------- | --------------------- | ---- |
+| Universal Windows Platform (UWP) Applications for 32-bit Arm <!--7116112-->| This change is applicable only to devices with an Arm processor, for example Snapdragon processors from Qualcomm. If you have a PC built with a processor from Intel or AMD, this content is not applicable. If you are not sure which type of processor you have, check **Settings** > **System** > **About**.</br> </br> Support for 32-bit Arm versions of applications will be removed in a future release of Windows 11. After this change, for the small number of applications affected, app features might be different and you might notice a difference in performance. For more technical details about this change, see [Update app architecture from Arm32 to Arm64](/windows/arm/arm32-to-arm64). | January 2023 |
+| Update Compliance <!--7260188-->| [Update Compliance](/windows/deployment/update/update-compliance-monitor), a cloud-based service for the Windows client, is no longer being developed. This service has been replaced with [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview), which provides reporting on client compliance with Microsoft updates from the Azure portal. | November 2022|
 | Windows Information Protection <!-- 6010051 --> | [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) will no longer be developed in future versions of Windows. For more information, see [Announcing sunset of Windows Information Protection (WIP)](https://go.microsoft.com/fwlink/?linkid=2202124).<br> <br>For your data protection needs, Microsoft recommends that you use [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) and [Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp). | July 2022 |
 | BitLocker To Go Reader | **Note: BitLocker to Go as a feature is still supported.**<br>Reading of BitLocker-protected removable drives ([BitLocker To Go](/windows/security/information-protection/bitlocker/bitlocker-to-go-faq)) from Windows XP or Windows Vista in later operating systems is deprecated and might be removed in a future release of Windows client.<br>The following items might not be available in a future release of Windows client:<br>- ADMX policy: **Allow access to BitLocker-protected removable data drives from earlier versions of Windows**<br>- Command line parameter: [`manage-bde -DiscoveryVolumeType`](/windows-server/administration/windows-commands/manage-bde-on) (-dv)<br>- Catalog file: **c:\windows\BitLockerDiscoveryVolumeContents**<br>- BitLocker 2 Go Reader app: **bitlockertogo.exe** and associated files  | 21H1 |
 | Personalization roaming | Roaming of Personalization settings (including wallpaper, slideshow, accent colors, and lock screen images) is no longer being developed and might be removed in a future release. | 21H1 |

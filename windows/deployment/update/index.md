@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.author: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Update Windows client in enterprise deployments

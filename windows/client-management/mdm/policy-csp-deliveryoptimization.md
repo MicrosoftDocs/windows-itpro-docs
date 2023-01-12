@@ -702,11 +702,7 @@ ADMX Info:
 <!--Description-->
 Set this policy to restrict peer selection to a specific source. Available options are: 1 = Active Directory Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix, 5 = Azure Active Directory.
 
-When set, the Group ID will be assigned automatically from the selected source.
-
-If you set this policy, the GroupID policy will be ignored.
-
-The options set in this policy only apply to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored.
+When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy will be ignored. The default behavior, when neither the GroupID or GroupIDSource policies are set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
 
 For option 3 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID.
 

@@ -8,7 +8,6 @@ author: frankroj
 ms.author: frankroj
 manager: aaroncz
 ms.collection: 
-  - M365-modern-desktop
   - highpri
 search.appverid: 
   - MET150
@@ -39,6 +38,9 @@ This article covers the following information:
 - [Virtual Desktop Access (VDA)](#virtual-desktop-access-vda): How to enable Windows subscription activation for VMs in the cloud.
 
 For more information on how to deploy Enterprise licenses, see [Deploy Windows Enterprise licenses](deploy-enterprise-licenses.md).
+
+> [!NOTE]
+> Organizations that use the Subscription Activation feature to enable users to upgrade from one version of Windows to another and use Conditional Access policies to control access need to exclude the Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f, from their device compliance policy using **Select Excluded Cloud Apps**.
 
 ## Subscription activation for Enterprise
 

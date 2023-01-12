@@ -1,14 +1,16 @@
 ---
-title: Add or remove pinned apps on the Start menu in Windows 11 | Microsoft Docs
+title: Add or remove pinned apps on the Start menu in Windows 11
 description: Export Start layout to LayoutModification.json with pinned apps, and add or remove pinned apps. Use the JSON text in an MDM policy to deploy a custom Start menu layout to Windows 11 devices.
 manager: aaroncz
+author: lizgt2000
 ms.author: lizlong
 ms.reviewer: ericpapa
 ms.prod: windows-client
-author: lizgt2000
 ms.localizationpriority: medium
 ms.collection: highpri
 ms.technology: itpro-configure
+ms.date: 01/10/2023
+ms.topic: article
 ---
 
 # Customize the Start menu layout on Windows 11
@@ -29,9 +31,11 @@ This article shows you how to export an existing Start menu layout, and use the 
 
 ## Before you begin
 
-- When you customize the Start layout, you overwrite the entire full layout. A partial Start layout isn't available. Users can pin and unpin apps, and uninstall apps from Start. You can't prevent users from changing the layout.
+- When you customize the Start layout, you overwrite the entire full layout. A partial Start layout isn't available. Users can pin and unpin apps, and uninstall apps from Start. When a user signs in or Explorer restarts, Windows reapplies the MDM policy. This action restores the specified layout and doesn't retain any user changes.
 
-- It's recommended to use a Mobile Device Management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. You can use Microsoft Intune. Intune is a family of products that include Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
+  To prevent users from making any changes to the Start menu layout, see the [NoChangeStartMenu](/windows/client-management/mdm/policy-csp-admx-startmenu#admx-startmenu-nochangestartmenu) policy.
+
+- It's recommended to use a mobile device management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. You can use Microsoft Intune. Intune is a family of products that include Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
 
   In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
 

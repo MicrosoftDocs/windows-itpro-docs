@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.topic: article
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # OOBE (Windows Configuration Designer reference)

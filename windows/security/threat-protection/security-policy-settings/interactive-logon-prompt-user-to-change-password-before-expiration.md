@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
 ms.technology: itpro-security
@@ -21,6 +20,7 @@ ms.technology: itpro-security
 # Interactive log on: Prompt the user to change passwords before expiration
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This article describes the best practices, location, values, policy management, and security considerations for the **Interactive logon: Prompt user to change password before expiration** security policy setting.

@@ -2,7 +2,6 @@
 title: Pin Reset
 description: Learn how Microsoft PIN reset services enable you to help users recover who have forgotten their PIN.
 ms.collection: 
-  - M365-identity-device-management
   - highpri
 ms.date: 07/29/2022
 appliesto: 

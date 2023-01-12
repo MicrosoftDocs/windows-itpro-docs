@@ -5,11 +5,11 @@ ms.prod: windows-client
 author: dansimp
 ms.author: dansimp
 manager: aaroncz
-ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: 
 ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Microsoft Security Development Lifecycle

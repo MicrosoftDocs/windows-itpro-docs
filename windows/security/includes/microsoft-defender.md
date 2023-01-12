@@ -1,13 +1,7 @@
 ---
-title: Microsoft 365 Defender important guidance
-description: A note in regard to important Microsoft 365 Defender guidance.
-ms.date: 
-ms.reviewer: 
-manager: aaroncz
 author: paolomatarazzo
 ms.author: paoloma
-manager: aaroncz
-ms.prod: m365-security
+ms.date: 12/08/2022
 ms.topic: include
 ---
 

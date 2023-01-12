@@ -6,10 +6,12 @@
       items:
         - name: What is Windows Autopatch?
           href: overview/windows-autopatch-overview.md
+        - name: Roles and responsibilities
+          href: overview/windows-autopatch-roles-responsibilities.md
         - name: FAQ
           href: overview/windows-autopatch-faq.yml
     - name: Prepare
-      href: prepare/index.md
+      href: 
       items: 
         - name: Prerequisites
           href: prepare/windows-autopatch-prerequisites.md
@@ -21,7 +23,7 @@
             - name: Fix issues found by the Readiness assessment tool
               href: prepare/windows-autopatch-fix-issues.md
     - name: Deploy
-      href: deploy/index.md
+      href: 
       items:
         - name: Add and verify admin contacts
           href: deploy/windows-autopatch-admin-contacts.md
@@ -35,7 +37,7 @@
             - name: Post-device registration readiness checks
               href: deploy/windows-autopatch-post-reg-readiness-checks.md
     - name: Operate
-      href: operate/index.md
+      href: 
       items:
         - name: Software update management
           href: operate/windows-autopatch-update-management.md
@@ -98,10 +100,10 @@
           href: references/windows-autopatch-changes-to-tenant.md
         - name: Privacy
           href: references/windows-autopatch-privacy.md
-        - name: Windows Autopatch preview addendum
-          href: references/windows-autopatch-preview-addendum.md
     - name: What's new
       href:
       items: 
+        - name: What's new 2023
+          href: whats-new/windows-autopatch-whats-new-2023.md
         - name: What's new 2022
           href: whats-new/windows-autopatch-whats-new-2022.md

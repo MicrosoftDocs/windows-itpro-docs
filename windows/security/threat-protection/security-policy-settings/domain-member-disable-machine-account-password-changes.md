@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/27/2019
 ms.technology: itpro-security
@@ -21,6 +20,7 @@ ms.technology: itpro-security
 # Domain member: Disable machine account password changes
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Domain member: Disable machine account password changes** security policy setting.

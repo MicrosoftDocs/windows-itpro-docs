@@ -4,7 +4,6 @@ description: Learn how to plan and implement a WDAC deployment.
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: aaroncz
 ms.author: jogeurte
@@ -32,7 +31,7 @@ Before you deploy your WDAC policies, you must first convert the XML to its bina
 
    ```powershell
     ## Update the path to your WDAC policy XML
-    $WDACPolicyXMLFile = $env:USERPROFILE"\Desktop\MyWDACPolicy.xml"
+    $WDACPolicyXMLFile = $env:USERPROFILE + "\Desktop\MyWDACPolicy.xml"
     [xml]$WDACPolicy = Get-Content -Path $WDACPolicyXMLFile
     if (($WDACPolicy.SiPolicy.PolicyID) -ne $null) ## Multiple policy format (For Windows builds 1903+ only, including Server 2022)
     {

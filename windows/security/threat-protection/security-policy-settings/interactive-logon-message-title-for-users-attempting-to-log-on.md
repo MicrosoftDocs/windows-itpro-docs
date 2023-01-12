@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
 ms.technology: itpro-security
@@ -22,6 +21,7 @@ ms.technology: itpro-security
 
 **Applies to**
 
+- Windows 11
 - Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Interactive logon: Message title for users attempting to log on** security policy setting.

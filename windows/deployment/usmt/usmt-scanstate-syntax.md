@@ -203,6 +203,7 @@ The following table indicates which command-line options aren't compatible with 
 |**/encrypt**|Required*|X|X||
 |**/keyfile**|N/A||X||
 |**/l**|||||
+|**/listfiles**|||X||
 |**/progress**|||X||
 |**/r**|||X||
 |**/w**|||X||

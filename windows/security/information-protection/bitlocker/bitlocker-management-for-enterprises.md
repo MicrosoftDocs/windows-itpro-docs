@@ -6,8 +6,6 @@ ms.localizationpriority: medium
 author: frankroj
 ms.author: frankroj
 manager: aaroncz
-ms.collection: 
-  - M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/08/2022
 ms.custom: bitlocker
@@ -36,6 +34,11 @@ Devices joined to Azure AD are managed using Mobile Device Management (MDM) poli
 Starting with Windows 10 version 1703, the enablement of BitLocker can be triggered over MDM either by the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider/) or the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp/). The BitLocker CSP adds policy options that go beyond ensuring that encryption has occurred, and is available on computers that run Windows 11, Windows 10, and on Windows phones.
 
 For hardware that is compliant with Modern Standby and HSTI, when using either of these features, [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption) is automatically turned on whenever the user joins a device to Azure AD. Azure AD provides a portal where recovery keys are also backed up, so users can retrieve their own recovery key for self-service, if necessary. For older devices that aren't yet encrypted, beginning with Windows 10 version 1703, admins can use the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp/) to trigger encryption and store the recovery key in Azure AD. This process and feature is applicable to Azure Hybrid AD as well.
+
+> [!NOTE]
+> To manage Bitlocker, except to enable and disable it, one of the following licenses must be assigned to your users:
+> - Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, and E5).
+> - Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 and A5).
 
 ## Managing workplace-joined PCs and phones
 

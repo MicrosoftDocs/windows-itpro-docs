@@ -1,6 +1,6 @@
 ---
 title: Azure Active Directory integration with MDM
-description: Azure Active Directory is the world largest enterprise cloud identity management service.
+description: Azure Active Directory is the world's largest enterprise cloud identity management service.
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
@@ -9,11 +9,12 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.collection: highpri
+ms.date: 12/31/2017
 ---
 
 # Azure Active Directory integration with MDM
 
-Azure Active Directory is the world largest enterprise cloud identity management service. It’s used by organizations to access Office 365 and business applications from Microsoft and third-party software as a service (SaaS) vendors. Many of the rich Windows 10 experiences for organizational users (such as store access or OS state roaming) use Azure AD as the underlying identity infrastructure. Windows integrates with Azure AD, allowing devices to be registered in Azure AD and enrolled into MDM in an integrated flow.
+Azure Active Directory is the world's largest enterprise cloud identity management service. It’s used by organizations to access Office 365 and business applications from Microsoft and third-party software as a service (SaaS) vendors. Many of the rich Windows 10 experiences for organizational users (such as store access or OS state roaming) use Azure AD as the underlying identity infrastructure. Windows integrates with Azure AD, allowing devices to be registered in Azure AD and enrolled into MDM in an integrated flow.
 
 Once a device is enrolled in MDM, the MDM:
 

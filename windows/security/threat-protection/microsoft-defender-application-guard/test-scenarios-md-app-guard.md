@@ -10,6 +10,7 @@ ms.reviewer: sazankha
 manager: aaroncz
 ms.date: 09/23/2022
 ms.custom: asr
+ms.topic: conceptual
 ---
 
 # Application Guard testing scenarios

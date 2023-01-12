@@ -13,11 +13,13 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.date: 11/13/2018
 ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # Minimum password age
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Minimum password age** security policy setting.

@@ -13,6 +13,7 @@ ms.reviewer:
 manager: aaroncz
 ms.custom: sasr
 ms.technology: itpro-security
+ms.topic: how-to
 ---
 
 # Configure Microsoft Defender Application Guard policy settings

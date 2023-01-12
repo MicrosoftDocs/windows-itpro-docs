@@ -2,12 +2,12 @@
 title: Appendix
 manager: aaroncz
 description: Appendix on Microsoft Connected Cache (MCC) for Enterprise and Education.
-ms.prod: w10
+ms.prod: windows-client
 author: amymzhou
 ms.author: amyzhou
-ms.localizationpriority: medium
-ms.collection: M365-modern-desktop
 ms.topic: article
+ms.date: 12/31/2017
+ms.technology: itpro-updates
 ---
 
 # Appendix
