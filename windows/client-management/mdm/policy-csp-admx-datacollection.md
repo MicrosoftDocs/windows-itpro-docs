@@ -49,6 +49,8 @@ This policy setting defines the identifier used to uniquely associate this devic
 
 <!-- CommercialIdPolicy-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!IMPORTANT]
+> Starting in January 2023, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
 <!-- CommercialIdPolicy-Editable-End -->
 
 <!-- CommercialIdPolicy-DFProperties-Begin -->
