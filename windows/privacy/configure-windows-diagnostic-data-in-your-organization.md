@@ -25,7 +25,7 @@ ms.topic: conceptual
 - Surface Hub
 - Hololens
 
-This topic describes the types of Windows diagnostic data sent back to Microsoft and the ways you can manage it within your organization. Microsoft uses the data to quickly identify and address issues affecting its customers.
+This article describes the types of Windows diagnostic data sent back to Microsoft and the ways you can manage it within your organization. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
 ## Overview
 
@@ -301,15 +301,12 @@ Use [Policy Configuration Service Provider (CSP)](/windows/client-management/mdm
 
 ## Enable Windows diagnostic data processor configuration
 
-> [!IMPORTANT]
-> There are some significant changes planned for diagnostic data processor configuration. To learn more, [review this information](changes-to-windows-diagnostic-data-collection.md#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
-
 The Windows diagnostic data processor configuration enables you to be the controller, as defined by the European Union General Data Protection Regulation (GDPR), for the Windows diagnostic data collected from your Windows devices that meet the configuration requirements.
 
 ### Prerequisites
 
 - Use a supported version of Windows 10 or Windows 11
-- The following editions are supported: 
+- The following editions are supported:
   - Enterprise
   - Professional
   - Education
@@ -319,13 +316,47 @@ For the best experience, use the most current build of any operating system spec
 
 The diagnostic data setting on the device should be set to Required diagnostic data or higher, and the following endpoints need to be reachable:
 
-- v10c.events.data.microsoft.com
-- umwatsonc.events.data.microsoft.com
-- kmwatsonc.events.data.microsoft.com
+- us-v10c.events.data.microsoft.com (eu-v10c.events.data.microsoft.com for tenants with billing address in the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations))
+- umwatsonc.events.data.microsoft.com (eu-watsonc.events.data.microsoft.com for tenants with billing address in the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations))
 - settings-win.data.microsoft.com
 - *.blob.core.windows.net
 
 ### Enabling Windows diagnostic data processor configuration
+
+> [!NOTE]
+> The information in this section applies to the following versions of Windows:
+> - Windows 10, versions 20H2, 21H2 and 22H2
+> - Windows 11, versions 21H2 and 22H2
+
+Starting with the January 2023 preview cumulative update, how you enable the processor configuration option depends on the billing address of the Azure AD tenant to which your devices are joined.
+
+### Devices in Azure AD tenants with a billing address in the European Union (EU) or European Free Trade Association (EFTA)
+
+For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) in the EU or EFTA, the Windows diagnostic data for that device will be automatically configured for the processor option. The Windows diagnostic data for those devices will be processed in Europe.
+
+From a compliance standpoint, this change means that Microsoft will be the processor and the organization will be the controller of the Windows diagnostic data. IT admins for those organizations will become responsible for responding to their users’ [data subject requests](/compliance/regulatory/gdpr-dsr-windows).
+
+### Devices in Azure AD tenants with a billing address outside of the EU and EFTA
+
+For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) outside of the EU and EFTA, to enable the processor configuration option, the organization must sign up for any of the following enterprise services, which rely on diagnostic data:
+
+- [Update Compliance](/windows/deployment/update/update-compliance-monitor)
+- [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview)
+- [Windows Update for Business deployment service](/windows/deployment/update/deployment-service-overview)
+- [Microsoft Managed Desktop](/managed-desktop/intro/)
+- [Endpoint analytics (in Microsoft Intune)](/mem/analytics/overview)
+
+*(Additional licensing requirements may apply to use these services.)*
+
+If you don’t sign up for any of these enterprise services, Microsoft will act as controller for the diagnostic data.
+
+> [!NOTE]
+> In all cases, enrollment in the Windows diagnostic data processor configuration requires a device to be joined to an Azure AD tenant. If a device isn't properly enrolled, Microsoft will act as the controller for Windows diagnostic data in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) terms won't apply.
+
+### Enabling Windows diagnostic data processor configuration (older versions of Windows 10)
+
+> [!NOTE]
+> The information in this section applies to Windows 10, versions 1809, 1903, 1909, and 2004.
 
 Use the instructions below to enable Windows diagnostic data processor configuration using a single setting, through Group Policy, or an MDM solution.
 
