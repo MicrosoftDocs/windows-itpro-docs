@@ -30,7 +30,7 @@ Device readiness in Windows Autopatch is divided into two different scenarios:
 | Scenario | Description |
 | ----- | ----- |
 | Prerequisite checks | Ensures devices follow software-based requirements before being registered with the service. |
-| Post-device registration readiness checks | Provides continuous monitoring of device health for registered devices.<p>IT admins can easily detect and remediate configuration mismatches in their environments or issues that prevent devices from having one or more software update workloads (Windows quality, feature updates, Microsoft Office, Microsoft Teams, or Microsoft Edge) fully managed by the Windows Autopatch service. Configuration mismatches can leave devices in a vulnerable state, out of compliance and exposed to security threats.</p>|
+| Post-device registration readiness checks | Provides continuous monitoring of device health for registered devices.<p>IT admins can easily detect and remediate configuration mismatches in their environments or issues that prevent devices from having one or more software update workloads fully managed by the Windows Autopatch service. Software workloads include:<ul><li>Windows quality updates</li><li>Feature updates</li><li>Microsoft Office</li><li>Microsoft Teams</li><li> Microsoft Edge</li></ul><p>Configuration mismatches can leave devices in a vulnerable state, out of compliance and exposed to security threats.</p></p>|
 
 ### Device readiness checks available for each scenario
 
@@ -42,14 +42,19 @@ The status of each post-device registration readiness check is shown in the Wind
 
 ## About the three tabs in the Devices blade
 
-You deploy software updates to secure your environment, but these deployments only reach healthy and active devices. Unhealthy or not ready devices affect the overall software update compliance. Figuring out device health can be challenging and disruptive to the end user when IT can’t obtain proactive data sent by the device to the service for IT admins to proactively detect, troubleshoot, and fix issues.
+You deploy software updates to secure your environment, but these deployments only reach healthy and active devices. Unhealthy or not ready devices affect the overall software update compliance.
 
-Windows Autopatch has three tabs within its Devices blade. Each tab is designed to provide a different set of device readiness statuses so IT admins know where to go to monitor, and troubleshoot potential device health issues:
+Figuring out device health can be challenging and disruptive to the end user when IT admins can't:
+
+- Obtain proactive data sent by the device to the service, or
+- Proactively detect and remediate issues
+
+Windows Autopatch has three tabs within its Devices blade. Each tab is designed to provide a different set of device readiness statuses so IT admins know where to go to monitor, and remediate potential device health issues:
 
 | Tab | Description |
 | ----- | ----- |
 | Ready | This tab only lists devices with the **Active** status. Devices with the **Active** status successfully:<ul><li>Passed the prerequisite checks.</li><li>Registered with Windows Autopatch.</li></ul>This tab also lists devices that have passed all postdevice registration readiness checks. |
-| Not ready | This tab only lists devices with the **Readiness failed** and **Inactive** status.<ul><li>**Readiness failed status**: Devices that didn’t pass one or more post-device registration readiness checks.</li><li>**Inactive**: Devices that haven’t communicated with the Microsoft Intune service in the last 28 days.</li></ul> |
+| Not ready | This tab only lists devices with the **Readiness failed** and **Inactive** status.<ul><li>**Readiness failed status**: Devices that didn’t pass one or more post-device registration readiness checks.</li><li>**Inactive**: Devices that haven't communicated with the Microsoft Intune service in the last 28 days.</li></ul> |
 | Not registered | Only lists devices with the **Prerequisite failed** status in it. Devices with the **Prerequisite failed** status didn’t pass one or more prerequisite checks during the device registration process. |
 
 ## Details about the post-device registration readiness checks
