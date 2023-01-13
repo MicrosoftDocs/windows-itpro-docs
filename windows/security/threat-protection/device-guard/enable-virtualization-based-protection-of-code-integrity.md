@@ -285,9 +285,9 @@ Value  | Description
 
 This field lists the computer name. All valid values for computer name.
 
-Another method to determine the available and enabled Windows Defender Device Guard features is to run msinfo32.exe from an elevated PowerShell session. When you run this program, the Windows Defender Device Guard properties are displayed at the bottom of the **System Summary** section.
+Another method to determine the available and enabled virtualization-based security features is to run msinfo32.exe from an elevated PowerShell session. When you run this program, the virtualization-based security features are displayed at the bottom of the **System Summary** section.
 
-:::image type="content" alt-text="Windows Defender Device Guard properties in the System Summary." source="../images/dg-fig11-dgproperties.png" lightbox="../images/dg-fig11-dgproperties.png":::
+:::image type="content" alt-text="Virtualization-based security features in the System Summary of System Information." source="images/system-information-virtualization-based-security.png" lightbox="images/system-information-virtualization-based-security.png":::
 
 ## Troubleshooting
 
