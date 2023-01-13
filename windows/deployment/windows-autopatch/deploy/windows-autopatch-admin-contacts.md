@@ -19,7 +19,7 @@ There are several ways that Windows Autopatch service communicates with customer
 > [!IMPORTANT]
 > You might have already added these contacts in the Microsoft Endpoint Manager admin center during the enrollment process. If so, take a moment now to double-check that the contact list is accurate, since the Windows Autopatch Service Engineering Team must be able to reach them if a severe incident occurs.
 
-You must have an admin contact for each specified area of focus. The Windows Autopatch Service Engineering Team will contact these individuals for assistance with troubleshooting your support request. Admin contacts should be the best person or group that can answer questions and make decisions for different [areas of focus](#area-of-focus).
+You must have an admin contact for each specified area of focus. The Windows Autopatch Service Engineering Team will contact these individuals for assistance with your support request. Admin contacts should be the best person or group that can answer questions and make decisions for different [areas of focus](#area-of-focus).
 
 > [!IMPORTANT]
 > Whoever you choose as admin contacts, they must have the knowledge and authority to make decisions for your Windows Autopatch environment. The Windows Autopatch Service Engineering Team will contact these admin contacts for questions involving support requests.
