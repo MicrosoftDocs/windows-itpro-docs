@@ -20299,6 +20299,21 @@
       "source_path": "windows/configuration/provisioning-packages/provision-pcs-with-apps-and-certificates.md",
       "redirect_url": "/windows/configuration/provisioning-packages/provision-pcs-with-apps",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/configuration/cortana-at-work/cortana-at-work-crm.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/configuration/cortana-at-work/cortana-at-work-powerbi.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/configuration/manage-wifi-sense-in-enterprise.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": true
     }
   ]
 }
