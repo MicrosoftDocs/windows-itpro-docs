@@ -315,7 +315,7 @@ The Windows diagnostic data processor configuration enables you to be the contro
 > [!NOTE]
 > In all cases, enrollment in the Windows diagnostic data processor configuration requires a device to be joined to an Azure AD tenant. If a device isn't properly enrolled, Microsoft will act as the controller for Windows diagnostic data in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) terms won't apply.
 
-For the best experience, use the most current build of any operating system specified above. Configuration functionality and availability may vary on older systems. See [Lifecycle Policy](/lifecycle/products/windows-10-enterprise-and-education)
+For the best experience, use the most current build of any operating system specified above. Configuration functionality and availability may vary on older systems. For release information, see [Windows 10 Enterprise and Education](/lifecycle/products/windows-10-enterprise-and-education) and [Windows 11 Enterprise and Education](/lifecycle/products/windows-11-enterprise-and-education) on the Microsoft Lifecycle Policy site.
 
 The diagnostic data setting on the device should be set to Required diagnostic data or higher, and the following endpoints need to be reachable:
 
