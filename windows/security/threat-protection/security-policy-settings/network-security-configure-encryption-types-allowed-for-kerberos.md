@@ -1,17 +1,12 @@
 ---
 title: Network security Configure encryption types allowed for Kerberos
 description: Best practices, location, values and security considerations for the policy setting, Network security Configure encryption types allowed for Kerberos Win7 only.
-ms.assetid: 303d32cc-415b-44ba-96c0-133934046ece
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.collection: 
   - highpri
 ms.topic: conceptual
@@ -24,17 +19,7 @@ ms.technology: itpro-security
 **Applies to**
 -   Windows 11
 -   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Vista
--   Windows XP
--   Windows Server 2012 R2
--   Windows Server 2012
--   Windows Server 2008 R2
--   Windows Server 2008
--   Windows Server 2003
--   Windows 2000 Server
+-   Windows Server
 
 Describes the best practices, location, values, and security considerations for the **Network security: Configure encryption types allowed for Kerberos** security policy setting.
 
@@ -42,7 +27,7 @@ Describes the best practices, location, values, and security considerations for 
 
 This policy setting allows you to set the encryption types that the Kerberos protocol is allowed to use. If it isn't selected, the encryption type won't be allowed. This setting might affect compatibility with client computers or services and applications. Multiple selections are permitted.
 
-For more information, see [article 977321](/troubleshoot/windows-server/windows-security/kdc-event-16-27-des-encryption-disabled) in the Microsoft Knowledge Base.
+For more information, see [KDC event ID 16 or 27 is logged if DES for Kerberos is disabled](/troubleshoot/windows-server/windows-security/kdc-event-16-27-des-encryption-disabled).
 
 The following table lists and explains the allowed encryption types.
 
