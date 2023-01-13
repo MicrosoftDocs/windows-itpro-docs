@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers** security policy setting.
