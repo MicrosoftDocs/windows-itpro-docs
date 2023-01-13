@@ -76,17 +76,18 @@ Windows Autopatch requires the following licenses:
 
 ## Submit a tenant enrollment support request
 
-> [!IMPORTANT]
-> Make sure you've [added and verified your admin contacts](../deploy/windows-autopatch-admin-contacts.md). The Windows Autopatch Service Engineering Team will contact these individuals for assistance with troubleshooting issues.
-
 If you need more assistance with tenant enrollment, you can submit support requests to the Windows Autopatch Service Engineering Team in the Windows Autopatch enrollment tool. Email is the recommended approach to interact with the Windows Autopatch Service Engineering Team.
+
+> [!NOTE]
+> After you've successfully enrolled your tenant, this feature will no longer be accessible. You must [submit a support request through the Tenant administration menu](../operate/windows-autopatch-support-request.md).
 
 **To submit a new tenant enrollment support request:**
 
-1. If the Readiness assessment tool fails, remediation steps can be found by selecting **View details** under **Management settings** and then selecting the individual checkbox. The **Contact Support** button will be available below remediation instructions in the fly-in-pane.
-2. Enter your question(s) and/or a description of the problem.
-3. Review all the information you provided for accuracy.
-4. When you're ready, select **Create**.
+1. Go to Management settings > View details > select **the readiness check result**. The **Contact Support** button will be available below remediation instructions in the fly-in-pane.
+2. Enter your question(s) and/or a description of the issue.
+3. Enter your primary contact information. Windows Autopatch will work directly with the contact listed to resolve the support request.
+4. Review all the information for accuracy.
+5. Select **Create**.
 
 ### Manage an active tenant enrollment support request
 
