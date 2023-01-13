@@ -17,7 +17,7 @@ msreviewer: hathind
 There are several ways that Windows Autopatch service communicates with customers. To streamline communication and ensure we're checking with the right people when you [submit a support request](../operate/windows-autopatch-support-request.md), you must provide a set of admin contacts when you onboard with Windows Autopatch.
 
 > [!IMPORTANT]
-> You might have already added these contacts in the Microsoft Endpoint Manager admin center during the enrollment process. If so, take a moment now to double-check that the contact list is accurate, since the Windows Autopatch Service Engineering Team must be able to reach them if a severe incident occurs.
+> You might have already added these contacts in the Microsoft Endpoint Manager admin center during the [enrollment process](../prepare/windows-autopatch-enroll-tenant.md#step-4-enroll-your-tenant), or if you've [submitted a tenant enrollment support request](../prepare/windows-autopatch-enrollment-support-request.md). However, take a moment to double-check that the contact list is accurate, since the Windows Autopatch Service Engineering Team must be able to reach them if a severe incident occurs.
 
 You must have an admin contact for each specified area of focus. The Windows Autopatch Service Engineering Team will contact these individuals for assistance with your support request. Admin contacts should be the best person or group that can answer questions and make decisions for different [areas of focus](#area-of-focus).
 

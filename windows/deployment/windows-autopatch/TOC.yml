@@ -22,6 +22,8 @@
           items:
             - name: Fix issues found by the Readiness assessment tool
               href: prepare/windows-autopatch-fix-issues.md
+            - name: Submit a tenant enrollment support request
+              href: prepare/windows-autopatch-enrollment-support-request.md
     - name: Deploy
       href: 
       items:
