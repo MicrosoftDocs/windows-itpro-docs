@@ -325,8 +325,8 @@ The diagnostic data setting on the device should be set to Required diagnostic d
 
 > [!NOTE]
 > The information in this section applies to the following versions of Windows:
-> - Windows 10, versions 20H2, 21H2 and 22H2
-> - Windows 11, versions 21H2 and 22H2
+> - Windows 10, versions 20H2, 21H2, 22H2, and newer
+> - Windows 11, versions 21H2, 22H2, and newer
 
 Starting with the January 2023 preview cumulative update, how you enable the processor configuration option depends on the billing address of the Azure AD tenant to which your devices are joined.
 
@@ -334,7 +334,14 @@ Starting with the January 2023 preview cumulative update, how you enable the pro
 
 For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) in the EU or EFTA, the Windows diagnostic data for that device will be automatically configured for the processor option. The Windows diagnostic data for those devices will be processed in Europe.
 
+> [!NOTE]
+> The Windows diagnostic data processor configuration has components for which work is in progress to be included in the EU Data Boundary, but completion of this work is delayed beyond January 1, 2023. These components will be included in the EU Data Boundary in the coming months. In the meantime, Microsoft will temporarily transfer data out of the EU Data Boundary as part of service operations to ensure uninterrupted operation of the services customers signed up for.
+
 From a compliance standpoint, this change means that Microsoft will be the processor and the organization will be the controller of the Windows diagnostic data. IT admins for those organizations will become responsible for responding to their users’ [data subject requests](/compliance/regulatory/gdpr-dsr-windows).
+
+>[!Note]
+> - Windows diagnostic data collected from a device before it was enabled with Windows diagnostic data processor configuration will be deleted when this configuration is enabled.
+> - When you enable devices with the Windows diagnostic data processor configuration, users may continue to submit feedback through various channels such as Windows feedback hub or Edge feedback. However, the feedback data is not subject to the terms of the Windows diagnostic data processor configuration. If this is not desired, we recommend that you disable feedback using the available policies or application management solutions.
 
 ### Devices in Azure AD tenants with a billing address outside of the EU and EFTA
 
@@ -353,10 +360,12 @@ If you don’t sign up for any of these enterprise services, Microsoft will act 
 > [!NOTE]
 > In all cases, enrollment in the Windows diagnostic data processor configuration requires a device to be joined to an Azure AD tenant. If a device isn't properly enrolled, Microsoft will act as the controller for Windows diagnostic data in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) terms won't apply.
 
-### Enabling Windows diagnostic data processor configuration (older versions of Windows 10)
+### Enabling Windows diagnostic data processor configuration on older versions of Windows
 
 > [!NOTE]
-> The information in this section applies to Windows 10, versions 1809, 1903, 1909, and 2004.
+> The information in this section applies to the following versions of Windows:
+> - Windows 10, versions 1809, 1903, 1909, and 2004.
+> - Newer versions of Windows 10 and Windows 11 that have not updated yet to at least the January 2023 preview cumulative update.
 
 Use the instructions below to enable Windows diagnostic data processor configuration using a single setting, through Group Policy, or an MDM solution.
 
@@ -373,32 +382,6 @@ To use an MDM solution, such as [Microsoft Intune](/mem/intune/configuration/cus
 Under **Value**, use **1** to enable the service.
 
 If you wish to disable, at any time, switch the same setting to **0**. The default value is **0**.
-
->[!Note]
-> - If you have any additional policies that also enable you to be a controller of Windows diagnostic data, such as the services listed below, you will need to turn off all the applicable policies in order to stop being a controller for Windows diagnostic data.
-> - Windows diagnostic data collected from a device before it was enabled with Windows diagnostic data processor configuration will be deleted when this configuration is enabled.
-> - When you enable devices with the Windows diagnostic data processor configuration, users may continue to submit feedback through various channels such as Windows feedback hub or Edge feedback. However, the feedback data is not subject to the terms of the Windows diagnostic data processor configuration. If this is not desired, we recommend that you disable feedback using the available policies or application management solutions.
-
-You can also enable the Windows diagnostic data processor configuration by enrolling in services that use Windows diagnostic data. These services currently include Update Compliance, Windows Update for Business reports, Microsoft Managed Desktop, and Windows Update for Business.
-
-For information on these services and how to configure the group policies, refer to the following documentation:
-
-Update Compliance:
-
-- [Privacy in Update Compliance](/windows/deployment/update/update-compliance-privacy)
-- [Manually configuring devices for Update Compliance](/windows/deployment/update/update-compliance-configuration-manual#required-policies)
-
-Windows Update for Business reports
-
-- [Windows Update for Business reports prerequisites](/windows/deployment/update/wufb-reports-prerequisites)
-
-Microsoft Managed Desktop:
-
-- [Privacy and personal data](/microsoft-365/managed-desktop/service-description/privacy-personal-data)
-
-Windows Update for Business:
-
-- [How to enable deployment protections](/windows/deployment/update/deployment-service-overview#how-to-enable-deployment-protections)
 
 ## Change privacy settings on a single server
 
