@@ -1,7 +1,7 @@
 ---
 title: Policies in Policy CSP supported by HoloLens 2
 description: Learn about the policies in Policy CSP supported by HoloLens 2.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -104,10 +104,10 @@ ms.date: 08/01/2022
 - [Storage/ConfigStorageSenseCloudContentDehydrationThreshold](policy-csp-storage.md#storage-configstoragesensecloudcontentdehydrationthreshold) <sup>12</sup>
 - [Storage/ConfigStorageSenseDownloadsCleanupThreshold](policy-csp-storage.md#storage-configstoragesensedownloadscleanupthreshold) <sup>12</sup>
 - [Storage/ConfigStorageSenseGlobalCadence](policy-csp-storage.md#storage-configstoragesenseglobalcadence) <sup>12</sup>
-- [System/AllowCommercialDataPipeline](policy-csp-system.md#system-allowcommercialdatapipeline)
-- [System/AllowLocation](policy-csp-system.md#system-allowlocation)
-- [System/AllowStorageCard](policy-csp-system.md#system-allowstoragecard)
-- [System/AllowTelemetry](policy-csp-system.md#system-allowtelemetry)
+- [System/AllowCommercialDataPipeline](policy-csp-system.md#allowcommercialdatapipeline)
+- [System/AllowLocation](policy-csp-system.md#allowlocation)
+- [System/AllowStorageCard](policy-csp-system.md#allowstoragecard)
+- [System/AllowTelemetry](policy-csp-system.md#allowtelemetry)
 - [TimeLanguageSettings/ConfigureTimeZone](./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone) <sup>9</sup>
 - [Update/ActiveHoursEnd](./policy-csp-update.md#update-activehoursend) <sup>9</sup>
 - [Update/ActiveHoursMaxRange](./policy-csp-update.md#update-activehoursmaxrange) <sup>9</sup>
