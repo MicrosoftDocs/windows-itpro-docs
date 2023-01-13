@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # System objects: Require case insensitivity for non-Windows subsystems
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **System objects: Require case insensitivity for non-Windows subsystems** security policy setting.
