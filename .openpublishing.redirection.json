@@ -20303,17 +20303,17 @@
     {
       "source_path": "windows/configuration/cortana-at-work/cortana-at-work-crm.md",
       "redirect_url": "/windows/resources",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/cortana-at-work/cortana-at-work-powerbi.md",
       "redirect_url": "/windows/resources",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/manage-wifi-sense-in-enterprise.md",
       "redirect_url": "/windows/resources",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
