@@ -65,7 +65,7 @@ A healthy or active device in Windows Autopatch is:
 - Actively sending data
 - Passes all post-device registration readiness checks
 
-The post-device registration readiness checks are powered by the **Microsoft Cloud Managed Desktop Extension**. It's installed right after devices are successfully registered with Windows Autopatch. The **Microsoft Cloud Managed Desktop Extension** has the Device Readiness Check Plugin. The Device Readiness Check Plugin is responsible for performing the readiness checks and reporting the results back to the service. The **Microsoft Cloud Managed Desktop Extension** is a subcomponent of the overall Windows Autopatch service.
+The post-device registration readiness checks are powered by the **Microsoft Cloud Managed Desktop Extension**. It's installed right after devices are successfully registered with Windows Autopatch. The **Microsoft Cloud Managed Desktop Extension** has the Device Readiness Check Plugin. The Device Readiness Check Plugin is responsible for performing the readiness checks and reporting the results back to the service. The **Microsoft Cloud Managed Desktop Extension** is a sub-component of the overall Windows Autopatch service.
 
 The following list of post-device registration readiness checks is performed in Windows Autopatch:
 
