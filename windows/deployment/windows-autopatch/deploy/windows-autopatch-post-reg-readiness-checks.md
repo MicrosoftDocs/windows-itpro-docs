@@ -30,7 +30,7 @@ Device readiness in Windows Autopatch is divided into two different scenarios:
 | Scenario | Description |
 | ----- | ----- |
 | Prerequisite checks | Ensures devices follow software-based requirements before being registered with the service. |
-| Post-device registration readiness checks | Provides continuous monitoring of device health for registered devices.<p>IT admins can easily detect and remediate configuration mismatches in their environments or issues that prevent devices from having one or more software update workloads fully managed by the Windows Autopatch service. Software workloads include:<ul><li>Windows quality updates</li><li>Feature updates</li><li>Microsoft Office</li><li>Microsoft Teams</li><li> Microsoft Edge</li></ul><p>Configuration mismatches can leave devices in a vulnerable state, out of compliance and exposed to security threats.</p></p>|
+| Post-device registration readiness checks | Provides continuous monitoring of device health for registered devices.<br><p>IT admins can easily detect and remediate configuration mismatches in their environments or issues that prevent devices from having one or more software update workloads fully managed by the Windows Autopatch service. Software workloads include:<ul><li>Windows quality updates</li><li>Feature updates</li><li>Microsoft Office</li><li>Microsoft Teams</li><li> Microsoft Edge</li></ul><p>Configuration mismatches can leave devices in a vulnerable state, out of compliance and exposed to security threats.</p></p>|
 
 ### Device readiness checks available for each scenario
 
