@@ -83,7 +83,7 @@ If you need more assistance with tenant enrollment, you can submit support reque
 
 **To submit a new tenant enrollment support request:**
 
-1. Go to Management settings > View details > select **the readiness check result**. The **Contact Support** button will be available below remediation instructions in the fly-in-pane.
+1. Go to Management settings > View details > select a **readiness check result**. The **Contact Support** button will be available below remediation instructions in the fly-in-pane.
 2. Enter your question(s) and/or a description of the issue.
 3. Enter your primary contact information. Windows Autopatch will work directly with the contact listed to resolve the support request.
 4. Review all the information for accuracy.
