@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Domain member: Digitally encrypt or sign secure channel data (always)
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Domain member: Digitally encrypt or sign secure channel data (always)** security policy setting.

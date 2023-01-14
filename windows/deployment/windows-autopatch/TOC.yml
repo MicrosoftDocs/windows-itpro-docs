@@ -22,6 +22,8 @@
           items:
             - name: Fix issues found by the Readiness assessment tool
               href: prepare/windows-autopatch-fix-issues.md
+            - name: Submit a tenant enrollment support request
+              href: prepare/windows-autopatch-enrollment-support-request.md
     - name: Deploy
       href: 
       items:
@@ -103,5 +105,7 @@
     - name: What's new
       href:
       items: 
+        - name: What's new 2023
+          href: whats-new/windows-autopatch-whats-new-2023.md
         - name: What's new 2022
           href: whats-new/windows-autopatch-whats-new-2022.md

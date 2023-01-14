@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Audit Policy
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Provides information about basic audit policies that are available in Windows and links to information about each setting.

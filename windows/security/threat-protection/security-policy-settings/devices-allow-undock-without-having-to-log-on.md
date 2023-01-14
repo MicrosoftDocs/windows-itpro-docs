@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Devices: Allow undock without having to log on
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Devices: Allow undock without having to log on** security policy setting.

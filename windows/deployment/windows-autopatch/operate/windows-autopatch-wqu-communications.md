@@ -12,7 +12,7 @@ manager: dougeby
 msreviewer: hathind
 ---
 
-# Windows quality update communications
+# Windows quality and feature update communications
 
 There are three categories of communication that are sent out during a Windows quality and feature update:
 
@@ -29,8 +29,8 @@ Communications are posted to Message center, Service health dashboard, and the W
 | Communication | Location | Timing | Description |
 | ----- | ----- |  ----- | ----- |
 | Release schedule | <ul><li>Message center</li><li>Messages blade</li><li>Email sent to your specified [admin contacts](../deploy/windows-autopatch-admin-contacts.md)</li><ul> | At least seven days prior to the second Tuesday of the month| Notification of the planned release window for each ring. |
-| Release start | Same as release schedule | The second Tuesday of every month | Notification that the update is now being released into your environment. |
-| Release summary | Same as release schedule | The fourth Tuesday of every month | Informs you of the percentage of eligible devices that were patched during the release. |
+| Release start | Same as release schedule | The second Tuesday of every month. | Notification that the update is now being released into your environment. |
+| Release summary | Same as release schedule | The fourth Tuesday of every month. | Informs you of the percentage of eligible devices that were patched during the release. |
 
 ## Communications during release
 
