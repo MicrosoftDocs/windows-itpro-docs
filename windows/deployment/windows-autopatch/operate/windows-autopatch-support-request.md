@@ -1,7 +1,7 @@
 ---
 title: Submit a support request
 description: Details how to contact the Windows Autopatch Service Engineering Team and submit support requests
-ms.date: 05/30/2022
+ms.date: 01/06/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -15,11 +15,11 @@ msreviewer: hathind
 # Submit a support request
 
 > [!IMPORTANT]
-> Make sure you've [added and verified your admin contacts](../deploy/windows-autopatch-admin-contacts.md). The Windows Autopatch Service Engineering Team will contact these individuals for assistance with troubleshooting issues.
+> Make sure you've [added and verified your admin contacts](../deploy/windows-autopatch-admin-contacts.md). The Windows Autopatch Service Engineering Team will contact these individuals for assistance with remediating issues.
 
 You can submit support tickets to Microsoft using the Windows Autopatch admin center. Email is the recommended approach to interact with the Windows Autopatch Service Engineering Team.
 
-## Submit a new support request  
+## Submit a new support request
 
 Support requests are triaged and responded to as they're received.
 
@@ -31,6 +31,23 @@ Support requests are triaged and responded to as they're received.
 1. Enter your question(s) and/or a description of the problem.
 1. Review all the information you provided for accuracy.
 1. When you're ready, select **Create**.
+
+### Premier and Unified support options
+
+If you have a **Premier** or **Unified** support contract, when you submit a new request, or edit an active support request, you can:
+
+- Specify the severity of your issue
+- Schedule a support callback for a specific day and time
+
+Depending on your support contract, the following severity options are available:
+
+> [!NOTE]
+> Selecting either severity **A** or **Critical** issue limits you to a phone support case. This is the fastest support option.
+
+| Support contract | Severity options |
+| ----- | ----- |
+| Premier | Severity A, B or C |
+| Unified | Critical or non-critical |
 
 ## Manage an active support request
 

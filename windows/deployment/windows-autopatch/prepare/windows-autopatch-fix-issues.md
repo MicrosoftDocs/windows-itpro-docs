@@ -1,7 +1,7 @@
 ---
 title: Fix issues found by the Readiness assessment tool
-description: This article details how to fix issues found by the Readiness assessment tool
-ms.date: 11/17/2022
+description: This article details how to fix issues found by the Readiness assessment tool.
+ms.date: 01/12/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -15,6 +15,9 @@ msreviewer: hathind
 # Fix issues found by the Readiness assessment tool
 
 Seeing issues with your tenant? This article details how to remediate issues found with your tenant.
+
+> [!NOTE]
+> If you need more assistance with tenant enrollment, you can [submit a tenant enrollment support request](../prepare/windows-autopatch-enrollment-support-request.md).
 
 ## Check results
 

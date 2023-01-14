@@ -1,7 +1,7 @@
 ---
 title: Policies in Policy CSP that can be set using Exchange Active Sync (EAS)
 description: Learn about the policies in Policy CSP that can be set using Exchange Active Sync (EAS).
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -30,8 +30,8 @@ ms.date: 07/18/2019
 - [DeviceLock/PreventLockScreenSlideShow](policy-csp-devicelock.md#devicelock-preventlockscreenslideshow)
 - [Search/AllowSearchToUseLocation](policy-csp-search.md#search-allowsearchtouselocation)
 - [Security/RequireDeviceEncryption](policy-csp-security.md#security-requiredeviceencryption)
-- [System/AllowStorageCard](policy-csp-system.md#system-allowstoragecard)
-- [System/TelemetryProxy](policy-csp-system.md#system-telemetryproxy)
+- [System/AllowStorageCard](policy-csp-system.md#allowstoragecard)
+- [System/TelemetryProxy](policy-csp-system.md#telemetryproxy)
 - [Wifi/AllowInternetSharing](policy-csp-wifi.md#wifi-allowinternetsharing)
 - [Wifi/AllowWiFi](policy-csp-wifi.md#wifi-allowwifi)
 

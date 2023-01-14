@@ -398,6 +398,17 @@ The following GPO snippet performs the following tasks:
 
 ![configure event channels.](images/capi-gpo.png)
 
+The following table also contains the six actions to configure in the GPO:
+
+| Program/Script                     | Arguments                                                                                                |
+|------------------------------------|----------------------------------------------------------------------------------------------------------|
+| %SystemRoot%\System32\wevtutil.exe | sl Microsoft-Windows-CAPI2/Operational /e:true                                                           |
+| %SystemRoot%\System32\wevtutil.exe | sl Microsoft-Windows-CAPI2/Operational /ms:102432768                                                     |
+| %SystemRoot%\System32\wevtutil.exe | sl "Microsoft-Windows-AppLocker/EXE and DLL" /ms:102432768                                               |
+| %SystemRoot%\System32\wevtutil.exe | sl Microsoft-Windows-CAPI2/Operational /ca:"O:BAG:SYD:(A;;0x7;;;BA)(A;;0x2;;;AU)(A;;0x1;;;S-1-5-32-573)" |
+| %SystemRoot%\System32\wevtutil.exe | sl "Microsoft-Windows-DriverFrameworks-UserMode/Operational" /e:true                                     |
+| %SystemRoot%\System32\wevtutil.exe | sl "Microsoft-Windows-DriverFrameworks-UserMode/Operational" /ms:52432896                                |
+
 ## <a href="" id="bkmk-appendixd"></a>Appendix D - Minimum GPO for WEF Client configuration
 
 Here are the minimum steps for WEF to operate:

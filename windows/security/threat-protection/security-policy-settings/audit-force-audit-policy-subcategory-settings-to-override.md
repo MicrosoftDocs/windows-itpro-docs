@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings** security policy setting.

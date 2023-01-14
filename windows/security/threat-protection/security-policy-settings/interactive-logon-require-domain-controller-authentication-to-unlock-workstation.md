@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Interactive logon: Require Domain Controller authentication to unlock workstation
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Interactive logon: Require Domain Controller authentication to unlock workstation** security policy setting.
