@@ -149,9 +149,9 @@ When you configure your MDT Build Lab deployment share, you can also add applica
 
 On **MDT01**:
 
-1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC2200320282_en_US.exe) to **D:\\setup\\adobe** on MDT01.
+1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC2200320310_en_US.exe) to **D:\\setup\\adobe** on MDT01.
 
-2. Extract the .exe file that you downloaded to a .msi (ex: .\AcroRdrDC2200320282_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
+2. Extract the .exe file that you downloaded to a .msi (ex: .\AcroRdrDC2200320310_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
 
 3. In the Deployment Workbench, expand the **MDT Production** node and navigate to the **Applications** node.
 
