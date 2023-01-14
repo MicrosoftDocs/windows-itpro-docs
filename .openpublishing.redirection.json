@@ -746,7 +746,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-if-client-agrees.md",
+      "source_path": "windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-if-client-agress.md",
       "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
       "redirect_document_id": false
     },
