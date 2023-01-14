@@ -163,7 +163,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
    1. Enable nested virtualization:
 
       ```powershell
-      Set -VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
+      Set-VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
       ```
 
    1. Enable MAC spoofing:
