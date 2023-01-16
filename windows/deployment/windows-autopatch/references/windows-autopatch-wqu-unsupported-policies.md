@@ -14,7 +14,7 @@ msreviewer: adnich
 
 # Windows update policies
 
-## Update rings for Windows 10 and later
+## Deployment rings for Windows 10 and later
 
 The following policies contain settings which apply to both Windows quality and feature updates. After onboarding there will be four of these policies in your tenant with the following naming convention:
 
