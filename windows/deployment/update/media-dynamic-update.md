@@ -9,7 +9,7 @@ manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017
-ms.reviewer: SteveDiAcetis
+ms.reviewer: stevedia
 ---
 
 # Update Windows installation media with Dynamic Update

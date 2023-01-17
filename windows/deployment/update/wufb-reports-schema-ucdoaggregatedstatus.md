@@ -1,7 +1,6 @@
 ---
 title: Windows Update for Business reports Data Schema - UCDOAggregatedStatus
-ms.reviewer: 
-  - carmenf
+ms.reviewer: carmenf
 manager: aaroncz
 description: UCDOAggregatedStatus schema
 ms.prod: windows-client

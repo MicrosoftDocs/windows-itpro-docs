@@ -1,7 +1,6 @@
 ---
 title: Windows Update for Business reports Data Schema - UCDOStatus
-ms.reviewer: 
-  - carmenf
+ms.reviewer: carmenf
 manager: aaroncz
 description: UCDOStatus schema
 ms.prod: windows-client
