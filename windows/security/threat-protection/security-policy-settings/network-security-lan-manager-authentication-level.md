@@ -22,6 +22,7 @@ ms.technology: itpro-security
 # Network security: LAN Manager authentication level
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network security: LAN Manager authentication level** security policy setting.
