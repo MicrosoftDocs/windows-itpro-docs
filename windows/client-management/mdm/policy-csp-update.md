@@ -3221,9 +3221,23 @@ If this policy is disabled or not configured, then the Windows Update client may
 <!-- EngagedRestartDeadline-OmaUri-End -->
 
 <!-- EngagedRestartDeadline-Description-Begin -->
-<!-- Description-Source-DDF -->
-For Quality Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period. The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks. Note. If Update/EngagedDeadline is the only policy set (Update/EngagedRestartTransitionSchedule and Update/EngagedRestartSnoozeSchedule are not set), the behavior goes from reboot required -> engaged behavior -> forced reboot after deadline is reached with a 3-day snooze period. Value type is integer. Default is 14. Supported value range: 2 - 30. If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (e. g. pending user scheduling).
-- If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
+<!-- Description-Source-ADMX-Forced -->
+Enable this policy to control the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 0 and 30 days from the time the restart becomes pending.
+
+You can specify the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
+
+You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+
+If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+
+- If you disable or do not configure this policy, the PC will restart following the default schedule.
+
+Enabling any of the following policies will override the above policy:
+
+1. No auto-restart with logged on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time
+
+3. Specify deadline before auto-restart for update installation
 <!-- EngagedRestartDeadline-Description-End -->
 
 <!-- EngagedRestartDeadline-Editable-Begin -->
@@ -3277,9 +3291,23 @@ For Quality Updates, this policy specifies the deadline in days before automatic
 <!-- EngagedRestartDeadlineForFeatureUpdates-OmaUri-End -->
 
 <!-- EngagedRestartDeadlineForFeatureUpdates-Description-Begin -->
-<!-- Description-Source-DDF -->
-For Feature Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period. Value type is integer. Default is 14. Supported value range: 2 - 30. If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (e. g. pending user scheduling).
-- If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
+<!-- Description-Source-ADMX-Forced -->
+Enable this policy to control the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 0 and 30 days from the time the restart becomes pending.
+
+You can specify the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
+
+You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+
+If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+
+- If you disable or do not configure this policy, the PC will restart following the default schedule.
+
+Enabling any of the following policies will override the above policy:
+
+1. No auto-restart with logged on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time
+
+3. Specify deadline before auto-restart for update installation
 <!-- EngagedRestartDeadlineForFeatureUpdates-Description-End -->
 
 <!-- EngagedRestartDeadlineForFeatureUpdates-Editable-Begin -->
@@ -3333,9 +3361,23 @@ For Feature Updates, this policy specifies the deadline in days before automatic
 <!-- EngagedRestartSnoozeSchedule-OmaUri-End -->
 
 <!-- EngagedRestartSnoozeSchedule-Description-Begin -->
-<!-- Description-Source-DDF -->
-For Quality Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days. Value type is integer. Default is 3 days. Supported value range: 1 - 3.
-- If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
+<!-- Description-Source-ADMX-Forced -->
+Enable this policy to control the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 0 and 30 days from the time the restart becomes pending.
+
+You can specify the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
+
+You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+
+If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+
+- If you disable or do not configure this policy, the PC will restart following the default schedule.
+
+Enabling any of the following policies will override the above policy:
+
+1. No auto-restart with logged on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time
+
+3. Specify deadline before auto-restart for update installation
 <!-- EngagedRestartSnoozeSchedule-Description-End -->
 
 <!-- EngagedRestartSnoozeSchedule-Editable-Begin -->
@@ -3389,9 +3431,23 @@ For Quality Updates, this policy specifies the number of days a user can snooze 
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-OmaUri-End -->
 
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Description-Begin -->
-<!-- Description-Source-DDF -->
-For Feature Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days. Value type is integer. Default is 3 days. Supported value range: 1 - 3.
-- If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
+<!-- Description-Source-ADMX-Forced -->
+Enable this policy to control the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 0 and 30 days from the time the restart becomes pending.
+
+You can specify the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
+
+You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+
+If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+
+- If you disable or do not configure this policy, the PC will restart following the default schedule.
+
+Enabling any of the following policies will override the above policy:
+
+1. No auto-restart with logged on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time
+
+3. Specify deadline before auto-restart for update installation
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Description-End -->
 
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Editable-Begin -->
@@ -3445,7 +3501,7 @@ For Feature Updates, this policy specifies the number of days a user can snooze 
 <!-- EngagedRestartTransitionSchedule-OmaUri-End -->
 
 <!-- EngagedRestartTransitionSchedule-Description-Begin -->
-<!-- Description-Source-ADMX -->
+<!-- Description-Source-ADMX-Forced -->
 Enable this policy to control the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 0 and 30 days from the time the restart becomes pending.
 
 You can specify the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
@@ -3515,9 +3571,23 @@ Enabling any of the following policies will override the above policy:
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-OmaUri-End -->
 
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Description-Begin -->
-<!-- Description-Source-DDF -->
-For Feature Updates, this policy specifies the timing before transitioning from Auto restarts scheduled_outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending. Value type is integer. Default value is 7 days. Supported value range: 2 - 30.
-- If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation
+<!-- Description-Source-ADMX-Forced -->
+Enable this policy to control the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 0 and 30 days from the time the restart becomes pending.
+
+You can specify the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
+
+You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+
+If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+
+- If you disable or do not configure this policy, the PC will restart following the default schedule.
+
+Enabling any of the following policies will override the above policy:
+
+1. No auto-restart with logged on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time
+
+3. Specify deadline before auto-restart for update installation
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Description-End -->
 
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Editable-Begin -->
@@ -4050,7 +4120,7 @@ Enable enterprises/IT admin to configure feature update uninstall period
 <!-- DeferUpdatePeriod-OmaUri-End -->
 
 <!-- DeferUpdatePeriod-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-Manual-Forced -->
 <!-- DeferUpdatePeriod-Description-End -->
 
 <!-- DeferUpdatePeriod-Editable-Begin -->
@@ -4138,7 +4208,8 @@ Other/can't defer:
 
 <!-- DeferUpgradePeriod-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows IT Admins to specify additional upgrade delays for up to 8 months. Supported values are 0-8, which refers to the number of months to defer upgrades. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
+> [!NOTE]
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices. Allows IT Admins to specify additional upgrade delays for up to 8 months. Supported values are 0-8, which refers to the number of months to defer upgrades. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
 <!-- DeferUpgradePeriod-Description-End -->
 
 <!-- DeferUpgradePeriod-Editable-Begin -->
