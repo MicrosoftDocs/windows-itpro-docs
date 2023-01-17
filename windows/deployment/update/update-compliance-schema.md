@@ -1,7 +1,6 @@
 ---
 title: Update Compliance Data Schema
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: an overview of Update Compliance data schema
 ms.prod: windows-client
 author: mestew

@@ -2,10 +2,10 @@
 title: Windows client updates, channels, and tools
 description: Brief summary of the kinds of Windows updates, the channels they are served through, and the tools for managing them
 ms.prod: windows-client
-author: aczechowski
+author: mestew
 ms.localizationpriority: medium
-ms.author: aaroncz
-manager: dougeby
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017

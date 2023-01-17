@@ -1,7 +1,6 @@
 ---
 title: Update Compliance Configuration Script
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: Downloading and using the Update Compliance Configuration Script
 ms.prod: windows-client
 author: mestew

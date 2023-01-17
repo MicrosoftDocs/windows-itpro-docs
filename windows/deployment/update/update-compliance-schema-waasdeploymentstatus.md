@@ -1,7 +1,6 @@
 ---
 title: Update Compliance Schema - WaaSDeploymentStatus
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: WaaSDeploymentStatus schema
 ms.prod: windows-client
 author: mestew
