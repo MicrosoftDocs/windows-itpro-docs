@@ -816,6 +816,7 @@ This policy setting configures secure access to UNC paths.
 
 <!-- HardenedUNCPaths-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+For more information, see [MS15-011: Vulnerability in Group Policy could allow remote code execution](https://support.microsoft.com/kb/3000483).
 <!-- HardenedUNCPaths-Editable-End -->
 
 <!-- HardenedUNCPaths-DFProperties-Begin -->

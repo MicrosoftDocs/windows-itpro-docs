@@ -4,7 +4,7 @@ description: Learn more about the ADMX_ControlPanelDisplay Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 01/13/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -349,9 +349,9 @@ Enables desktop screen savers.
 
 - If you disable this setting, screen savers do not run. Also, this setting disables the Screen Saver section of the Screen Saver dialog in the Personalization or Display Control Panel. As a result, users cannot change the screen saver options.
 
-If you do not configure it, this setting has no effect on the system.
+- If you do not configure it, this setting has no effect on the system.
 
-If you enable it, a screen saver runs, provided the following two conditions hold: First, a valid screen saver on the client is specified through the "Screen Saver executable name" setting or through Control Panel on the client computer. Second, the screen saver timeout is set to a nonzero value through the setting or Control Panel.
+- If you enable it, a screen saver runs, provided the following two conditions hold: First, a valid screen saver on the client is specified through the "Screen Saver executable name" setting or through Control Panel on the client computer. Second, the screen saver timeout is set to a nonzero value through the setting or Control Panel.
 
 Also, see the "Prevent changing Screen Saver" setting.
 <!-- CPL_Personalization_EnableScreenSaver-Description-End -->
