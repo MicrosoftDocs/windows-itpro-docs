@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Log on as a service
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This article describes the recommended practices, location, values, policy management, and security considerations for the **Log on as a service** security policy setting.
