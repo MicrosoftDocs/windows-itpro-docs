@@ -1,7 +1,7 @@
 ---
 title: Configure federation between Google Workspace and Azure AD
 description: Configuration of a federated trust between Google Workspace and Azure AD, with Google Workspace acting as an identity provider (IdP) for Azure AD.
-ms.date: 1/12/2023
+ms.date: 01/17/2023
 ms.topic: how-to
 ---
 
@@ -31,7 +31,7 @@ To test federation, the following prerequisites must be met:
     - PowerShell scripts that call the Microsoft Graph API
     - Provisioning tools offered by the IdP - this capability is offered by Google Workspace through [auto-provisioning](https://support.google.com/a/answer/7365072)
 
-## Configure Google Workspace as and IdP for Azure AD
+## Configure Google Workspace as an IdP for Azure AD
 
 1. Sign in to the [Google Workspace Admin Console](https://admin.google.com) with an account with *super admin* privileges
 1. Select **Apps > Web and mobile apps**
