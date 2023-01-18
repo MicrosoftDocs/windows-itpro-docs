@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Group Policy.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/17/2023
+ms.date: 01/18/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage

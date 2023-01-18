@@ -4,7 +4,7 @@ description: Learn more about the Update Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/17/2023
+ms.date: 01/18/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -22,87 +22,324 @@ ms.topic: reference
 
 Update CSP policies are listed below based on the group policy area:
 
-- [Manage updates offered from Windows Update](#manage-updates-offered-from-windows-update)
-  - [BranchReadinessLevel](#branchreadinesslevel) (Select when Preview Builds and Feature Updates are received)
-  - [DeferFeatureUpdatesPeriodInDays](#deferfeatureupdatesperiodindays) (Select when Preview Builds and Feature Updates are received)
-  - [DeferQualityUpdatesPeriodInDays](#deferqualityupdatesperiodindays) (Select when Quality Updates are received)
-  - [ExcludeWUDriversInQualityUpdate](#excludewudriversinqualityupdate) (Do not include drivers with Windows Updates)
-  - [ManagePreviewBuilds](#managepreviewbuilds) (Manage preview builds)
-  - [PauseFeatureUpdates](#pausefeatureupdates) (Select when Preview Builds and Feature Updates are received)
-  - [PauseFeatureUpdatesStartTime](#pausefeatureupdatesstarttime) (Select when Preview Builds and Feature Updates are received)
-  - [PauseQualityUpdates](#pausequalityupdates) (Select when Quality Updates are received)
-  - [PauseQualityUpdatesStartTime](#pausequalityupdatesstarttime) (Select when Quality Updates are received)
-  - [ProductVersion](#productversion) (Select the target Feature Update version)
-  - [TargetReleaseVersion](#targetreleaseversion) (Select the target Feature Update version)
-- [Manage updates offered from Windows Server Update Service](#manage-updates-offered-from-windows-server-update-service)
-  - [AllowUpdateService](#allowupdateservice) (Specify intranet Microsoft update service location)
-  - [DetectionFrequency](#detectionfrequency) (Automatic Updates detection frequency)
-  - [DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection](#donotenforceenterprisetlscertpinningforupdatedetection) (Specify intranet Microsoft update service location)
-  - [FillEmptyContentUrls](#fillemptycontenturls) (Specify intranet Microsoft update service location)
-  - [SetPolicyDrivenUpdateSourceForDriverUpdates](#setpolicydrivenupdatesourcefordriverupdates) (Specify intranet Microsoft update service location)
-  - [SetPolicyDrivenUpdateSourceForFeatureUpdates](#setpolicydrivenupdatesourceforfeatureupdates) (Specify intranet Microsoft update service location)
-  - [SetPolicyDrivenUpdateSourceForOtherUpdates](#setpolicydrivenupdatesourceforotherupdates) (Specify intranet Microsoft update service location)
-  - [SetPolicyDrivenUpdateSourceForQualityUpdates](#setpolicydrivenupdatesourceforqualityupdates) (Specify intranet Microsoft update service location)
-  - [SetProxyBehaviorForUpdateDetection](#setproxybehaviorforupdatedetection) (Specify intranet Microsoft update service location)
-  - [UpdateServiceUrl](#updateserviceurl) (Specify intranet Microsoft update service location)
-  - [UpdateServiceUrlAlternate](#updateserviceurlalternate) (Specify intranet Microsoft update service location)
-- [Manage end user experience](#manage-end-user-experience)
-  - [ActiveHoursEnd](#activehoursend) (Turn off auto-restart for updates during active hours)
-  - [ActiveHoursMaxRange](#activehoursmaxrange) (Specify active hours range for auto-restarts)
-  - [ActiveHoursStart](#activehoursstart) (Turn off auto-restart for updates during active hours)
-  - [AllowAutoUpdate](#allowautoupdate) (Configure Automatic Updates)
-  - [AllowAutoWindowsUpdateDownloadOverMeteredNetwork](#allowautowindowsupdatedownloadovermeterednetwork) (Allow updates to be downloaded automatically over metered connections)
-  - [AllowMUUpdateService](#allowmuupdateservice) (Configure Automatic Updates)
-  - [ConfigureDeadlineForFeatureUpdates](#configuredeadlineforfeatureupdates) (Specify deadlines for automatic updates and restarts)
-  - [ConfigureDeadlineForQualityUpdates](#configuredeadlineforqualityupdates) (Specify deadlines for automatic updates and restarts)
-  - [ConfigureDeadlineGracePeriod](#configuredeadlinegraceperiod) (Specify deadlines for automatic updates and restarts)
-  - [ConfigureDeadlineGracePeriodForFeatureUpdates](#configuredeadlinegraceperiodforfeatureupdates) (Specify deadlines for automatic updates and restarts)
-  - [ConfigureDeadlineNoAutoReboot](#configuredeadlinenoautoreboot) (Specify deadlines for automatic updates and restarts)
-  - [NoUpdateNotificationsDuringActiveHours](#noupdatenotificationsduringactivehours) (Display options for update notifications)
-  - [ScheduledInstallDay](#scheduledinstallday) (Configure Automatic Updates)
-  - [ScheduledInstallEveryWeek](#scheduledinstalleveryweek) (Configure Automatic Updates)
-  - [ScheduledInstallFirstWeek](#scheduledinstallfirstweek) (Configure Automatic Updates)
-  - [ScheduledInstallFourthWeek](#scheduledinstallfourthweek) (Configure Automatic Updates)
-  - [ScheduledInstallSecondWeek](#scheduledinstallsecondweek) (Configure Automatic Updates)
-  - [ScheduledInstallThirdWeek](#scheduledinstallthirdweek) (Configure Automatic Updates)
-  - [ScheduledInstallTime](#scheduledinstalltime) (Configure Automatic Updates)
-  - [SetDisablePauseUXAccess](#setdisablepauseuxaccess) (Remove access to "Pause updates" feature)
-  - [SetDisableUXWUAccess](#setdisableuxwuaccess) (Remove access to use all Windows Update features)
-  - [SetEDURestart](#setedurestart) (Update Power Policy for Cart Restarts)
-  - [UpdateNotificationLevel](#updatenotificationlevel) (Display options for update notifications)
-- [Legacy Policies](#legacy-policies)
-  - [AutoRestartDeadlinePeriodInDays](#autorestartdeadlineperiodindays) (Specify deadline before auto-restart for update installation)
-  - [AutoRestartDeadlinePeriodInDaysForFeatureUpdates](#autorestartdeadlineperiodindaysforfeatureupdates) (Specify deadline before auto-restart for update installation)
-  - [AutoRestartNotificationSchedule](#autorestartnotificationschedule) (Configure auto-restart reminder notifications for updates)
-  - [AutoRestartRequiredNotificationDismissal](#autorestartrequirednotificationdismissal) (Configure auto-restart required notification for updates)
-  - [DisableDualScan](#disabledualscan) (Do not allow update deferral policies to cause scans against Windows Update)
-  - [EngagedRestartDeadline](#engagedrestartdeadline) (Specify Engaged restart transition and notification schedule for updates)
-  - [EngagedRestartDeadlineForFeatureUpdates](#engagedrestartdeadlineforfeatureupdates) (Specify Engaged restart transition and notification schedule for updates)
-  - [EngagedRestartSnoozeSchedule](#engagedrestartsnoozeschedule) (Specify Engaged restart transition and notification schedule for updates)
-  - [EngagedRestartSnoozeScheduleForFeatureUpdates](#engagedrestartsnoozescheduleforfeatureupdates) (Specify Engaged restart transition and notification schedule for updates)
-  - [EngagedRestartTransitionSchedule](#engagedrestarttransitionschedule) (Specify Engaged restart transition and notification schedule for updates)
-  - [EngagedRestartTransitionScheduleForFeatureUpdates](#engagedrestarttransitionscheduleforfeatureupdates) (Specify Engaged restart transition and notification schedule for updates)
-  - [ScheduleImminentRestartWarning](#scheduleimminentrestartwarning) (Configure auto-restart warning notifications schedule for updates)
-  - [ScheduleRestartWarning](#schedulerestartwarning) (Configure auto-restart warning notifications schedule for updates)
-  - [SetAutoRestartNotificationDisable](#setautorestartnotificationdisable) (Turn off auto-restart notifications for update installations)
-- [Maintenance Scheduler](#maintenance-scheduler)
-  - [AutomaticMaintenanceWakeUp](#automaticmaintenancewakeup) (Automatic Maintenance WakeUp Policy)
-- [Other policies](#other-policies)
-  - [AllowNonMicrosoftSignedUpdate](#allownonmicrosoftsignedupdate)
+- [Windows Insider Preview](#windows-insider-preview)
   - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](#configuredeadlinenoautorebootforfeatureupdates)
   - [ConfigureDeadlineNoAutoRebootForQualityUpdates](#configuredeadlinenoautorebootforqualityupdates)
+- [Manage updates offered from Windows Update](#manage-updates-offered-from-windows-update)
+  - [AllowNonMicrosoftSignedUpdate](#allownonmicrosoftsignedupdate)
+  - [AutomaticMaintenanceWakeUp](#automaticmaintenancewakeup)
+  - [BranchReadinessLevel](#branchreadinesslevel)
+  - [DeferFeatureUpdatesPeriodInDays](#deferfeatureupdatesperiodindays)
+  - [DeferQualityUpdatesPeriodInDays](#deferqualityupdatesperiodindays)
+  - [DisableWUfBSafeguards](#disablewufbsafeguards)
+  - [ExcludeWUDriversInQualityUpdate](#excludewudriversinqualityupdate)
+  - [ManagePreviewBuilds](#managepreviewbuilds)
+  - [PauseFeatureUpdates](#pausefeatureupdates)
+  - [PauseFeatureUpdatesStartTime](#pausefeatureupdatesstarttime)
+  - [PauseQualityUpdates](#pausequalityupdates)
+  - [PauseQualityUpdatesStartTime](#pausequalityupdatesstarttime)
+  - [ProductVersion](#productversion)
+  - [TargetReleaseVersion](#targetreleaseversion)
+- [Manage updates offered from Windows Server Update Service](#manage-updates-offered-from-windows-server-update-service)
+  - [AllowUpdateService](#allowupdateservice)
+  - [DetectionFrequency](#detectionfrequency)
+  - [DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection](#donotenforceenterprisetlscertpinningforupdatedetection)
+  - [FillEmptyContentUrls](#fillemptycontenturls)
+  - [SetPolicyDrivenUpdateSourceForDriverUpdates](#setpolicydrivenupdatesourcefordriverupdates)
+  - [SetPolicyDrivenUpdateSourceForFeatureUpdates](#setpolicydrivenupdatesourceforfeatureupdates)
+  - [SetPolicyDrivenUpdateSourceForOtherUpdates](#setpolicydrivenupdatesourceforotherupdates)
+  - [SetPolicyDrivenUpdateSourceForQualityUpdates](#setpolicydrivenupdatesourceforqualityupdates)
+  - [SetProxyBehaviorForUpdateDetection](#setproxybehaviorforupdatedetection)
+  - [UpdateServiceUrl](#updateserviceurl)
+  - [UpdateServiceUrlAlternate](#updateserviceurlalternate)
+- [Manage end user experience](#manage-end-user-experience)
+  - [ActiveHoursEnd](#activehoursend)
+  - [ActiveHoursMaxRange](#activehoursmaxrange)
+  - [ActiveHoursStart](#activehoursstart)
+  - [AllowAutoUpdate](#allowautoupdate)
+  - [AllowAutoWindowsUpdateDownloadOverMeteredNetwork](#allowautowindowsupdatedownloadovermeterednetwork)
+  - [AllowMUUpdateService](#allowmuupdateservice)
+  - [ConfigureDeadlineForFeatureUpdates](#configuredeadlineforfeatureupdates)
+  - [ConfigureDeadlineForQualityUpdates](#configuredeadlineforqualityupdates)
+  - [ConfigureDeadlineGracePeriod](#configuredeadlinegraceperiod)
+  - [ConfigureDeadlineGracePeriodForFeatureUpdates](#configuredeadlinegraceperiodforfeatureupdates)
+  - [ConfigureDeadlineNoAutoReboot](#configuredeadlinenoautoreboot)
   - [ConfigureFeatureUpdateUninstallPeriod](#configurefeatureupdateuninstallperiod)
+  - [NoUpdateNotificationsDuringActiveHours](#noupdatenotificationsduringactivehours)
+  - [ScheduledInstallDay](#scheduledinstallday)
+  - [ScheduledInstallEveryWeek](#scheduledinstalleveryweek)
+  - [ScheduledInstallFirstWeek](#scheduledinstallfirstweek)
+  - [ScheduledInstallFourthWeek](#scheduledinstallfourthweek)
+  - [ScheduledInstallSecondWeek](#scheduledinstallsecondweek)
+  - [ScheduledInstallThirdWeek](#scheduledinstallthirdweek)
+  - [ScheduledInstallTime](#scheduledinstalltime)
+  - [SetDisablePauseUXAccess](#setdisablepauseuxaccess)
+  - [SetDisableUXWUAccess](#setdisableuxwuaccess)
+  - [SetEDURestart](#setedurestart)
+  - [UpdateNotificationLevel](#updatenotificationlevel)
+- [Legacy Policies](#legacy-policies)
+  - [AutoRestartDeadlinePeriodInDays](#autorestartdeadlineperiodindays)
+  - [AutoRestartDeadlinePeriodInDaysForFeatureUpdates](#autorestartdeadlineperiodindaysforfeatureupdates)
+  - [AutoRestartNotificationSchedule](#autorestartnotificationschedule)
+  - [AutoRestartRequiredNotificationDismissal](#autorestartrequirednotificationdismissal)
   - [DeferUpdatePeriod](#deferupdateperiod)
   - [DeferUpgradePeriod](#deferupgradeperiod)
-  - [DisableWUfBSafeguards](#disablewufbsafeguards)
+  - [DisableDualScan](#disabledualscan)
+  - [EngagedRestartDeadline](#engagedrestartdeadline)
+  - [EngagedRestartDeadlineForFeatureUpdates](#engagedrestartdeadlineforfeatureupdates)
+  - [EngagedRestartSnoozeSchedule](#engagedrestartsnoozeschedule)
+  - [EngagedRestartSnoozeScheduleForFeatureUpdates](#engagedrestartsnoozescheduleforfeatureupdates)
+  - [EngagedRestartTransitionSchedule](#engagedrestarttransitionschedule)
+  - [EngagedRestartTransitionScheduleForFeatureUpdates](#engagedrestarttransitionscheduleforfeatureupdates)
   - [IgnoreMOAppDownloadLimit](#ignoremoappdownloadlimit)
   - [IgnoreMOUpdateDownloadLimit](#ignoremoupdatedownloadlimit)
   - [PauseDeferrals](#pausedeferrals)
   - [PhoneUpdateRestrictions](#phoneupdaterestrictions)
   - [RequireDeferUpgrade](#requiredeferupgrade)
   - [RequireUpdateApproval](#requireupdateapproval)
+  - [ScheduleImminentRestartWarning](#scheduleimminentrestartwarning)
+  - [ScheduleRestartWarning](#schedulerestartwarning)
+  - [SetAutoRestartNotificationDisable](#setautorestartnotificationdisable)
+
+## Windows Insider Preview
+
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Begin -->
+### ConfigureDeadlineNoAutoRebootForFeatureUpdates
+
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates
+```
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-Begin -->
+<!-- Description-Source-DDF -->
+When enabled, devices will not automatically restart outside of active hours until the deadline and grace period have expired for feature updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForFeatureUpdates is configured.
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-DFProperties-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-AllowedValues-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ConfigureDeadlineNoAutoRebootForFeatureUpdates |
+| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
+| Element Name | ConfigureDeadlineNoAutoRebootForFeatureUpdates |
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-GpMapping-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Examples-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Begin -->
+### ConfigureDeadlineNoAutoRebootForQualityUpdates
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoRebootForQualityUpdates
+```
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-Begin -->
+<!-- Description-Source-DDF -->
+When enabled, devices will not automatically restart outside of active hours until the deadline and grace period have expired for quality updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates is configured.
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-DFProperties-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-AllowedValues-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ConfigureDeadlineNoAutoRebootForQualityUpdates |
+| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
+| Element Name | ConfigureDeadlineNoAutoRebootForQualityUpdates |
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-GpMapping-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Examples-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-End -->
 
 ## Manage updates offered from Windows Update
+
+<!-- AllowNonMicrosoftSignedUpdate-Begin -->
+### AllowNonMicrosoftSignedUpdate
+
+<!-- AllowNonMicrosoftSignedUpdate-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowNonMicrosoftSignedUpdate-Applicability-End -->
+
+<!-- AllowNonMicrosoftSignedUpdate-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/AllowNonMicrosoftSignedUpdate
+```
+<!-- AllowNonMicrosoftSignedUpdate-OmaUri-End -->
+
+<!-- AllowNonMicrosoftSignedUpdate-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows the IT admin to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. This policy supports using WSUS for 3rd party software and patch distribution. This policy is specific to desktop and local publishing via WSUS for 3rd party updates (binaries and updates not hosted on Microsoft Update) and allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.
+<!-- AllowNonMicrosoftSignedUpdate-Description-End -->
+
+<!-- AllowNonMicrosoftSignedUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowNonMicrosoftSignedUpdate-Editable-End -->
+
+<!-- AllowNonMicrosoftSignedUpdate-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowNonMicrosoftSignedUpdate-DFProperties-End -->
+
+<!-- AllowNonMicrosoftSignedUpdate-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed or not configured. Updates from an intranet Microsoft update service location must be signed by Microsoft. |
+| 1 (Default) | Allowed. Accepts updates received through an intranet Microsoft update service location, if they are signed by a certificate found in the 'Trusted Publishers' certificate store of the local computer. |
+<!-- AllowNonMicrosoftSignedUpdate-AllowedValues-End -->
+
+<!-- AllowNonMicrosoftSignedUpdate-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowNonMicrosoftSignedUpdate-Examples-End -->
+
+<!-- AllowNonMicrosoftSignedUpdate-End -->
+
+<!-- AutomaticMaintenanceWakeUp-Begin -->
+### AutomaticMaintenanceWakeUp
+
+<!-- AutomaticMaintenanceWakeUp-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+<!-- AutomaticMaintenanceWakeUp-Applicability-End -->
+
+<!-- AutomaticMaintenanceWakeUp-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/AutomaticMaintenanceWakeUp
+```
+<!-- AutomaticMaintenanceWakeUp-OmaUri-End -->
+
+<!-- AutomaticMaintenanceWakeUp-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure Automatic Maintenance wake up policy.
+
+The maintenance wakeup policy specifies if Automatic Maintenance should make a wake request to the OS for the daily scheduled maintenance. Note, that if the OS power wake policy is explicitly disabled, then this setting has no effect.
+
+- If you enable this policy setting, Automatic Maintenance will attempt to set OS wake policy and make a wake request for the daily scheduled time, if required.
+
+- If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
+<!-- AutomaticMaintenanceWakeUp-Description-End -->
+
+<!-- AutomaticMaintenanceWakeUp-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AutomaticMaintenanceWakeUp-Editable-End -->
+
+<!-- AutomaticMaintenanceWakeUp-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AutomaticMaintenanceWakeUp-DFProperties-End -->
+
+<!-- AutomaticMaintenanceWakeUp-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
+<!-- AutomaticMaintenanceWakeUp-AllowedValues-End -->
+
+<!-- AutomaticMaintenanceWakeUp-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | WakeUpPolicy |
+| Friendly Name | Automatic Maintenance WakeUp Policy |
+| Location | Computer Configuration |
+| Path | Windows Components > Maintenance Scheduler |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Task Scheduler\Maintenance |
+| Registry Value Name | WakeUp |
+| ADMX File Name | msched.admx |
+<!-- AutomaticMaintenanceWakeUp-GpMapping-End -->
+
+<!-- AutomaticMaintenanceWakeUp-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AutomaticMaintenanceWakeUp-Examples-End -->
+
+<!-- AutomaticMaintenanceWakeUp-End -->
 
 <!-- BranchReadinessLevel-Begin -->
 ### BranchReadinessLevel
@@ -282,6 +519,65 @@ Defers Quality Updates for the specified number of days. Supported values are 0-
 <!-- DeferQualityUpdatesPeriodInDays-Examples-End -->
 
 <!-- DeferQualityUpdatesPeriodInDays-End -->
+
+<!-- DisableWUfBSafeguards-Begin -->
+### DisableWUfBSafeguards
+
+<!-- DisableWUfBSafeguards-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1490] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1110] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363.1110] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.546] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableWUfBSafeguards-Applicability-End -->
+
+<!-- DisableWUfBSafeguards-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/DisableWUfBSafeguards
+```
+<!-- DisableWUfBSafeguards-OmaUri-End -->
+
+<!-- DisableWUfBSafeguards-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies that a Windows Update for Business device should skip safeguards.
+<!-- DisableWUfBSafeguards-Description-End -->
+
+<!-- DisableWUfBSafeguards-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Safeguard holds prevent a device with a known compatibility issue from being offered a new OS version. The offering will proceed once a fix is issued and is verified on a held device. The aim of safeguards is to protect the device and user from a failed or poor upgrade experience. The safeguard holds protection is provided by default to all the devices trying to update to a new Windows 10 Feature Update version via Windows Update.
+
+IT admins can, if necessary, opt devices out of safeguard protections using this policy setting or via the **Disable safeguards for Feature Updates** Group Policy.
+
+> [!NOTE]
+> Opting out of the safeguards can put devices at risk from known performance issues. We recommend opting out only in an IT environment for validation purposes. Further, you can leverage the Windows Insider Program for Business Release Preview Channel in order to validate the upcoming Windows 10 Feature Update version without the safeguards being applied.
+>
+> The disable safeguards policy will revert to "Not Configured" on a device after moving to a new Windows 10 version, even if previously enabled. This ensures the admin is consciously disabling Microsoft's default protection from known issues for each new feature update.
+>
+> Disabling safeguards doesn't guarantee your device will be able to successfully update. The update may still fail on the device and will likely result in a bad experience post upgrade, as you're bypassing the protection given by Microsoft pertaining to known issues.
+<!-- DisableWUfBSafeguards-Editable-End -->
+
+<!-- DisableWUfBSafeguards-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableWUfBSafeguards-DFProperties-End -->
+
+<!-- DisableWUfBSafeguards-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Safeguards are enabled and devices may be blocked for upgrades until the safeguard is cleared. |
+| 1 | Safeguards are not enabled and upgrades will be deployed without blocking on safeguards. |
+<!-- DisableWUfBSafeguards-AllowedValues-End -->
+
+<!-- DisableWUfBSafeguards-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableWUfBSafeguards-Examples-End -->
+
+<!-- DisableWUfBSafeguards-End -->
 
 <!-- ExcludeWUDriversInQualityUpdate-Begin -->
 ### ExcludeWUDriversInQualityUpdate
@@ -2162,6 +2458,47 @@ When enabled, devices will not automatically restart outside of active hours unt
 
 <!-- ConfigureDeadlineNoAutoReboot-End -->
 
+<!-- ConfigureFeatureUpdateUninstallPeriod-Begin -->
+### ConfigureFeatureUpdateUninstallPeriod
+
+<!-- ConfigureFeatureUpdateUninstallPeriod-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- ConfigureFeatureUpdateUninstallPeriod-Applicability-End -->
+
+<!-- ConfigureFeatureUpdateUninstallPeriod-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/ConfigureFeatureUpdateUninstallPeriod
+```
+<!-- ConfigureFeatureUpdateUninstallPeriod-OmaUri-End -->
+
+<!-- ConfigureFeatureUpdateUninstallPeriod-Description-Begin -->
+<!-- Description-Source-DDF -->
+Enable enterprises/IT admin to configure feature update uninstall period
+<!-- ConfigureFeatureUpdateUninstallPeriod-Description-End -->
+
+<!-- ConfigureFeatureUpdateUninstallPeriod-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureFeatureUpdateUninstallPeriod-Editable-End -->
+
+<!-- ConfigureFeatureUpdateUninstallPeriod-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[2-60]` |
+| Default Value  | 10 |
+<!-- ConfigureFeatureUpdateUninstallPeriod-DFProperties-End -->
+
+<!-- ConfigureFeatureUpdateUninstallPeriod-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureFeatureUpdateUninstallPeriod-Examples-End -->
+
+<!-- ConfigureFeatureUpdateUninstallPeriod-End -->
+
 <!-- NoUpdateNotificationsDuringActiveHours-Begin -->
 ### NoUpdateNotificationsDuringActiveHours
 
@@ -3218,6 +3555,150 @@ The method can be set to require user action to dismiss the notification.
 
 <!-- AutoRestartRequiredNotificationDismissal-End -->
 
+<!-- DeferUpdatePeriod-Begin -->
+### DeferUpdatePeriod
+
+<!-- DeferUpdatePeriod-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- DeferUpdatePeriod-Applicability-End -->
+
+<!-- DeferUpdatePeriod-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod
+```
+<!-- DeferUpdatePeriod-OmaUri-End -->
+
+<!-- DeferUpdatePeriod-Description-Begin -->
+<!-- Description-Source-Manual-Forced -->
+<!-- DeferUpdatePeriod-Description-End -->
+
+<!-- DeferUpdatePeriod-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
+
+Allows IT Admins to specify update delays for up to four weeks. Supported values are 0-4, which refers to the number of weeks to defer updates.
+
+- If the **Specify intranet Microsoft update service location** policy is enabled, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
+- If the **Allow Telemetry** policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
+
+OS upgrade:
+
+- Maximum deferral: Eight months
+- Deferral increment: One month
+- Update type/notes:
+  - Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5
+
+Update:
+
+- Maximum deferral: One month
+- Deferral increment: One week
+- Update type/notes: If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic:
+
+  - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
+  - Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4
+  - Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F
+  - Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828
+  - Tools - B4832BD8-E735-4761-8DAF-37F882276DAB
+  - Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F
+  - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
+  - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
+
+Other/can't defer:
+
+- Maximum deferral: No deferral
+- Deferral increment: No deferral
+- Update type/notes:
+  Any update category not enumerated above falls into this category.
+      - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B
+<!-- DeferUpdatePeriod-Editable-End -->
+
+<!-- DeferUpdatePeriod-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-4]` |
+| Default Value  | 0 |
+<!-- DeferUpdatePeriod-DFProperties-End -->
+
+<!-- DeferUpdatePeriod-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DeferUpgrade |
+| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
+| Element Name | DeferUpdatePeriodId |
+<!-- DeferUpdatePeriod-GpMapping-End -->
+
+<!-- DeferUpdatePeriod-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DeferUpdatePeriod-Examples-End -->
+
+<!-- DeferUpdatePeriod-End -->
+
+<!-- DeferUpgradePeriod-Begin -->
+### DeferUpgradePeriod
+
+<!-- DeferUpgradePeriod-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- DeferUpgradePeriod-Applicability-End -->
+
+<!-- DeferUpgradePeriod-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod
+```
+<!-- DeferUpgradePeriod-OmaUri-End -->
+
+<!-- DeferUpgradePeriod-Description-Begin -->
+<!-- Description-Source-Manual-Forced -->
+<!-- DeferUpgradePeriod-Description-End -->
+
+<!-- DeferUpgradePeriod-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Allows IT Admins to specify additional upgrade delays for up to 8 months. Supported values are 0-8, which refers to the number of months to defer upgrades.
+
+- If the **Specify intranet Microsoft update service location** policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
+- If the **Allow Telemetry** policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
+
+> [!NOTE]
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
+<!-- DeferUpgradePeriod-Editable-End -->
+
+<!-- DeferUpgradePeriod-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-8]` |
+| Default Value  | 0 |
+<!-- DeferUpgradePeriod-DFProperties-End -->
+
+<!-- DeferUpgradePeriod-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DeferUpgrade |
+| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
+| Element Name | DeferUpgradePeriodId |
+<!-- DeferUpgradePeriod-GpMapping-End -->
+
+<!-- DeferUpgradePeriod-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DeferUpgradePeriod-Examples-End -->
+
+<!-- DeferUpgradePeriod-End -->
+
 <!-- DisableDualScan-Begin -->
 ### DisableDualScan
 
@@ -3707,688 +4188,6 @@ Enabling any of the following policies will override the above policy:
 
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-End -->
 
-<!-- ScheduleImminentRestartWarning-Begin -->
-### ScheduleImminentRestartWarning
-
-<!-- ScheduleImminentRestartWarning-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
-<!-- ScheduleImminentRestartWarning-Applicability-End -->
-
-<!-- ScheduleImminentRestartWarning-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/ScheduleImminentRestartWarning
-```
-<!-- ScheduleImminentRestartWarning-OmaUri-End -->
-
-<!-- ScheduleImminentRestartWarning-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows the IT Admin to specify the period for auto-restart imminent warning notifications. The default value is 15 (minutes).
-<!-- ScheduleImminentRestartWarning-Description-End -->
-
-<!-- ScheduleImminentRestartWarning-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- ScheduleImminentRestartWarning-Editable-End -->
-
-<!-- ScheduleImminentRestartWarning-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 15 |
-<!-- ScheduleImminentRestartWarning-DFProperties-End -->
-
-<!-- ScheduleImminentRestartWarning-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 15 (Default) | 15 Minutes. |
-| 30 | 30 Minutes. |
-| 60 | 60 Minutes. |
-<!-- ScheduleImminentRestartWarning-AllowedValues-End -->
-
-<!-- ScheduleImminentRestartWarning-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | RestartWarnRemind |
-| Friendly Name | Configure auto-restart warning notifications schedule for updates |
-| Element Name | Warning (mins) |
-| Location | Computer Configuration |
-| Path | Windows Components > Windows Update > Legacy Policies |
-| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
-| ADMX File Name | WindowsUpdate.admx |
-<!-- ScheduleImminentRestartWarning-GpMapping-End -->
-
-<!-- ScheduleImminentRestartWarning-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- ScheduleImminentRestartWarning-Examples-End -->
-
-<!-- ScheduleImminentRestartWarning-End -->
-
-<!-- ScheduleRestartWarning-Begin -->
-### ScheduleRestartWarning
-
-<!-- ScheduleRestartWarning-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
-<!-- ScheduleRestartWarning-Applicability-End -->
-
-<!-- ScheduleRestartWarning-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/ScheduleRestartWarning
-```
-<!-- ScheduleRestartWarning-OmaUri-End -->
-
-<!-- ScheduleRestartWarning-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Enable this policy to control when notifications are displayed to warn users about a scheduled restart for the update installation deadline. Users are not able to postpone the scheduled restart once the deadline has been reached and the restart is automatically executed.
-
-Specifies the amount of time prior to a scheduled restart to display the warning reminder to the user.
-
-You can specify the amount of time prior to a scheduled restart to notify the user that the auto restart is imminent to allow them time to save their work.
-
-- If you disable or do not configure this policy, the default notification behaviors will be used.
-<!-- ScheduleRestartWarning-Description-End -->
-
-<!-- ScheduleRestartWarning-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- ScheduleRestartWarning-Editable-End -->
-
-<!-- ScheduleRestartWarning-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 4 |
-<!-- ScheduleRestartWarning-DFProperties-End -->
-
-<!-- ScheduleRestartWarning-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 2 | 2 Hours. |
-| 4 (Default) | 4 Hours. |
-| 8 | 8 Hours. |
-| 12 | 12 Hours. |
-| 24 | 24 Hours. |
-<!-- ScheduleRestartWarning-AllowedValues-End -->
-
-<!-- ScheduleRestartWarning-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | RestartWarnRemind |
-| Friendly Name | Configure auto-restart warning notifications schedule for updates |
-| Element Name | Reminder (hours) |
-| Location | Computer Configuration |
-| Path | Windows Components > Windows Update > Legacy Policies |
-| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
-| ADMX File Name | WindowsUpdate.admx |
-<!-- ScheduleRestartWarning-GpMapping-End -->
-
-<!-- ScheduleRestartWarning-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- ScheduleRestartWarning-Examples-End -->
-
-<!-- ScheduleRestartWarning-End -->
-
-<!-- SetAutoRestartNotificationDisable-Begin -->
-### SetAutoRestartNotificationDisable
-
-<!-- SetAutoRestartNotificationDisable-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
-<!-- SetAutoRestartNotificationDisable-Applicability-End -->
-
-<!-- SetAutoRestartNotificationDisable-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/SetAutoRestartNotificationDisable
-```
-<!-- SetAutoRestartNotificationDisable-OmaUri-End -->
-
-<!-- SetAutoRestartNotificationDisable-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows the IT Admin to disable auto-restart notifications for update installations.
-<!-- SetAutoRestartNotificationDisable-Description-End -->
-
-<!-- SetAutoRestartNotificationDisable-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- SetAutoRestartNotificationDisable-Editable-End -->
-
-<!-- SetAutoRestartNotificationDisable-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- SetAutoRestartNotificationDisable-DFProperties-End -->
-
-<!-- SetAutoRestartNotificationDisable-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Enabled. |
-| 1 | Disabled. |
-<!-- SetAutoRestartNotificationDisable-AllowedValues-End -->
-
-<!-- SetAutoRestartNotificationDisable-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | AutoRestartNotificationDisable |
-| Friendly Name | Turn off auto-restart notifications for update installations |
-| Location | Computer Configuration |
-| Path | Windows Components > Windows Update > Legacy Policies |
-| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
-| ADMX File Name | WindowsUpdate.admx |
-<!-- SetAutoRestartNotificationDisable-GpMapping-End -->
-
-<!-- SetAutoRestartNotificationDisable-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- SetAutoRestartNotificationDisable-Examples-End -->
-
-<!-- SetAutoRestartNotificationDisable-End -->
-
-## Maintenance Scheduler
-
-<!-- AutomaticMaintenanceWakeUp-Begin -->
-### AutomaticMaintenanceWakeUp
-
-<!-- AutomaticMaintenanceWakeUp-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
-<!-- AutomaticMaintenanceWakeUp-Applicability-End -->
-
-<!-- AutomaticMaintenanceWakeUp-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/AutomaticMaintenanceWakeUp
-```
-<!-- AutomaticMaintenanceWakeUp-OmaUri-End -->
-
-<!-- AutomaticMaintenanceWakeUp-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to configure Automatic Maintenance wake up policy.
-
-The maintenance wakeup policy specifies if Automatic Maintenance should make a wake request to the OS for the daily scheduled maintenance. Note, that if the OS power wake policy is explicitly disabled, then this setting has no effect.
-
-- If you enable this policy setting, Automatic Maintenance will attempt to set OS wake policy and make a wake request for the daily scheduled time, if required.
-
-- If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
-<!-- AutomaticMaintenanceWakeUp-Description-End -->
-
-<!-- AutomaticMaintenanceWakeUp-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- AutomaticMaintenanceWakeUp-Editable-End -->
-
-<!-- AutomaticMaintenanceWakeUp-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1 |
-<!-- AutomaticMaintenanceWakeUp-DFProperties-End -->
-
-<!-- AutomaticMaintenanceWakeUp-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 | Disabled. |
-| 1 (Default) | Enabled. |
-<!-- AutomaticMaintenanceWakeUp-AllowedValues-End -->
-
-<!-- AutomaticMaintenanceWakeUp-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | WakeUpPolicy |
-| Friendly Name | Automatic Maintenance WakeUp Policy |
-| Location | Computer Configuration |
-| Path | Windows Components > Maintenance Scheduler |
-| Registry Key Name | Software\Policies\Microsoft\Windows\Task Scheduler\Maintenance |
-| Registry Value Name | WakeUp |
-| ADMX File Name | msched.admx |
-<!-- AutomaticMaintenanceWakeUp-GpMapping-End -->
-
-<!-- AutomaticMaintenanceWakeUp-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- AutomaticMaintenanceWakeUp-Examples-End -->
-
-<!-- AutomaticMaintenanceWakeUp-End -->
-
-## Other policies
-
-<!-- AllowNonMicrosoftSignedUpdate-Begin -->
-### AllowNonMicrosoftSignedUpdate
-
-<!-- AllowNonMicrosoftSignedUpdate-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
-<!-- AllowNonMicrosoftSignedUpdate-Applicability-End -->
-
-<!-- AllowNonMicrosoftSignedUpdate-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/AllowNonMicrosoftSignedUpdate
-```
-<!-- AllowNonMicrosoftSignedUpdate-OmaUri-End -->
-
-<!-- AllowNonMicrosoftSignedUpdate-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows the IT admin to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. This policy supports using WSUS for 3rd party software and patch distribution. This policy is specific to desktop and local publishing via WSUS for 3rd party updates (binaries and updates not hosted on Microsoft Update) and allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.
-<!-- AllowNonMicrosoftSignedUpdate-Description-End -->
-
-<!-- AllowNonMicrosoftSignedUpdate-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- AllowNonMicrosoftSignedUpdate-Editable-End -->
-
-<!-- AllowNonMicrosoftSignedUpdate-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1 |
-<!-- AllowNonMicrosoftSignedUpdate-DFProperties-End -->
-
-<!-- AllowNonMicrosoftSignedUpdate-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 | Not allowed or not configured. Updates from an intranet Microsoft update service location must be signed by Microsoft. |
-| 1 (Default) | Allowed. Accepts updates received through an intranet Microsoft update service location, if they are signed by a certificate found in the 'Trusted Publishers' certificate store of the local computer. |
-<!-- AllowNonMicrosoftSignedUpdate-AllowedValues-End -->
-
-<!-- AllowNonMicrosoftSignedUpdate-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- AllowNonMicrosoftSignedUpdate-Examples-End -->
-
-<!-- AllowNonMicrosoftSignedUpdate-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Begin -->
-### ConfigureDeadlineNoAutoRebootForFeatureUpdates
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates
-```
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-Begin -->
-<!-- Description-Source-DDF -->
-When enabled, devices will not automatically restart outside of active hours until the deadline and grace period have expired for feature updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForFeatureUpdates is configured.
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-DFProperties-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Disabled. |
-| 1 | Enabled. |
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-AllowedValues-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | ConfigureDeadlineNoAutoRebootForFeatureUpdates |
-| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
-| Element Name | ConfigureDeadlineNoAutoRebootForFeatureUpdates |
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-GpMapping-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Examples-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Begin -->
-### ConfigureDeadlineNoAutoRebootForQualityUpdates
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoRebootForQualityUpdates
-```
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-Begin -->
-<!-- Description-Source-DDF -->
-When enabled, devices will not automatically restart outside of active hours until the deadline and grace period have expired for quality updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates is configured.
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-DFProperties-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Disabled. |
-| 1 | Enabled. |
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-AllowedValues-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | ConfigureDeadlineNoAutoRebootForQualityUpdates |
-| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
-| Element Name | ConfigureDeadlineNoAutoRebootForQualityUpdates |
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-GpMapping-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Examples-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-End -->
-
-<!-- ConfigureFeatureUpdateUninstallPeriod-Begin -->
-### ConfigureFeatureUpdateUninstallPeriod
-
-<!-- ConfigureFeatureUpdateUninstallPeriod-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
-<!-- ConfigureFeatureUpdateUninstallPeriod-Applicability-End -->
-
-<!-- ConfigureFeatureUpdateUninstallPeriod-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/ConfigureFeatureUpdateUninstallPeriod
-```
-<!-- ConfigureFeatureUpdateUninstallPeriod-OmaUri-End -->
-
-<!-- ConfigureFeatureUpdateUninstallPeriod-Description-Begin -->
-<!-- Description-Source-DDF -->
-Enable enterprises/IT admin to configure feature update uninstall period
-<!-- ConfigureFeatureUpdateUninstallPeriod-Description-End -->
-
-<!-- ConfigureFeatureUpdateUninstallPeriod-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- ConfigureFeatureUpdateUninstallPeriod-Editable-End -->
-
-<!-- ConfigureFeatureUpdateUninstallPeriod-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[2-60]` |
-| Default Value  | 10 |
-<!-- ConfigureFeatureUpdateUninstallPeriod-DFProperties-End -->
-
-<!-- ConfigureFeatureUpdateUninstallPeriod-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- ConfigureFeatureUpdateUninstallPeriod-Examples-End -->
-
-<!-- ConfigureFeatureUpdateUninstallPeriod-End -->
-
-<!-- DeferUpdatePeriod-Begin -->
-### DeferUpdatePeriod
-
-<!-- DeferUpdatePeriod-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
-<!-- DeferUpdatePeriod-Applicability-End -->
-
-<!-- DeferUpdatePeriod-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod
-```
-<!-- DeferUpdatePeriod-OmaUri-End -->
-
-<!-- DeferUpdatePeriod-Description-Begin -->
-<!-- Description-Source-Manual-Forced -->
-<!-- DeferUpdatePeriod-Description-End -->
-
-<!-- DeferUpdatePeriod-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
-
-Allows IT Admins to specify update delays for up to four weeks. Supported values are 0-4, which refers to the number of weeks to defer updates.
-
-- If the **Specify intranet Microsoft update service location** policy is enabled, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
-- If the **Allow Telemetry** policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
-
-OS upgrade:
-
-- Maximum deferral: Eight months
-- Deferral increment: One month
-- Update type/notes:
-  - Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5
-
-Update:
-
-- Maximum deferral: One month
-- Deferral increment: One week
-- Update type/notes: If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic:
-
-  - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
-  - Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4
-  - Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F
-  - Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828
-  - Tools - B4832BD8-E735-4761-8DAF-37F882276DAB
-  - Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F
-  - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
-  - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
-
-Other/can't defer:
-
-- Maximum deferral: No deferral
-- Deferral increment: No deferral
-- Update type/notes:
-  Any update category not enumerated above falls into this category.
-      - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B
-<!-- DeferUpdatePeriod-Editable-End -->
-
-<!-- DeferUpdatePeriod-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-4]` |
-| Default Value  | 0 |
-<!-- DeferUpdatePeriod-DFProperties-End -->
-
-<!-- DeferUpdatePeriod-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | DeferUpgrade |
-| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
-| Element Name | DeferUpdatePeriodId |
-<!-- DeferUpdatePeriod-GpMapping-End -->
-
-<!-- DeferUpdatePeriod-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DeferUpdatePeriod-Examples-End -->
-
-<!-- DeferUpdatePeriod-End -->
-
-<!-- DeferUpgradePeriod-Begin -->
-### DeferUpgradePeriod
-
-<!-- DeferUpgradePeriod-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
-<!-- DeferUpgradePeriod-Applicability-End -->
-
-<!-- DeferUpgradePeriod-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod
-```
-<!-- DeferUpgradePeriod-OmaUri-End -->
-
-<!-- DeferUpgradePeriod-Description-Begin -->
-<!-- Description-Source-Manual-Forced -->
-<!-- DeferUpgradePeriod-Description-End -->
-
-<!-- DeferUpgradePeriod-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Allows IT Admins to specify additional upgrade delays for up to 8 months. Supported values are 0-8, which refers to the number of months to defer upgrades.
-
-- If the **Specify intranet Microsoft update service location** policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
-- If the **Allow Telemetry** policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
-
-> [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
-<!-- DeferUpgradePeriod-Editable-End -->
-
-<!-- DeferUpgradePeriod-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-8]` |
-| Default Value  | 0 |
-<!-- DeferUpgradePeriod-DFProperties-End -->
-
-<!-- DeferUpgradePeriod-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | DeferUpgrade |
-| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
-| Element Name | DeferUpgradePeriodId |
-<!-- DeferUpgradePeriod-GpMapping-End -->
-
-<!-- DeferUpgradePeriod-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DeferUpgradePeriod-Examples-End -->
-
-<!-- DeferUpgradePeriod-End -->
-
-<!-- DisableWUfBSafeguards-Begin -->
-### DisableWUfBSafeguards
-
-<!-- DisableWUfBSafeguards-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1490] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1110] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363.1110] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.546] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
-<!-- DisableWUfBSafeguards-Applicability-End -->
-
-<!-- DisableWUfBSafeguards-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/DisableWUfBSafeguards
-```
-<!-- DisableWUfBSafeguards-OmaUri-End -->
-
-<!-- DisableWUfBSafeguards-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies that a Windows Update for Business device should skip safeguards.
-<!-- DisableWUfBSafeguards-Description-End -->
-
-<!-- DisableWUfBSafeguards-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Safeguard holds prevent a device with a known compatibility issue from being offered a new OS version. The offering will proceed once a fix is issued and is verified on a held device. The aim of safeguards is to protect the device and user from a failed or poor upgrade experience. The safeguard holds protection is provided by default to all the devices trying to update to a new Windows 10 Feature Update version via Windows Update.
-
-IT admins can, if necessary, opt devices out of safeguard protections using this policy setting or via the **Disable safeguards for Feature Updates** Group Policy.
-
-> [!NOTE]
-> Opting out of the safeguards can put devices at risk from known performance issues. We recommend opting out only in an IT environment for validation purposes. Further, you can leverage the Windows Insider Program for Business Release Preview Channel in order to validate the upcoming Windows 10 Feature Update version without the safeguards being applied.
->
-> The disable safeguards policy will revert to "Not Configured" on a device after moving to a new Windows 10 version, even if previously enabled. This ensures the admin is consciously disabling Microsoft's default protection from known issues for each new feature update.
->
-> Disabling safeguards doesn't guarantee your device will be able to successfully update. The update may still fail on the device and will likely result in a bad experience post upgrade, as you're bypassing the protection given by Microsoft pertaining to known issues.
-<!-- DisableWUfBSafeguards-Editable-End -->
-
-<!-- DisableWUfBSafeguards-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- DisableWUfBSafeguards-DFProperties-End -->
-
-<!-- DisableWUfBSafeguards-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Safeguards are enabled and devices may be blocked for upgrades until the safeguard is cleared. |
-| 1 | Safeguards are not enabled and upgrades will be deployed without blocking on safeguards. |
-<!-- DisableWUfBSafeguards-AllowedValues-End -->
-
-<!-- DisableWUfBSafeguards-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DisableWUfBSafeguards-Examples-End -->
-
-<!-- DisableWUfBSafeguards-End -->
-
 <!-- IgnoreMOAppDownloadLimit-Begin -->
 ### IgnoreMOAppDownloadLimit
 
@@ -4719,6 +4518,204 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 <!-- RequireUpdateApproval-Examples-End -->
 
 <!-- RequireUpdateApproval-End -->
+
+<!-- ScheduleImminentRestartWarning-Begin -->
+### ScheduleImminentRestartWarning
+
+<!-- ScheduleImminentRestartWarning-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- ScheduleImminentRestartWarning-Applicability-End -->
+
+<!-- ScheduleImminentRestartWarning-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/ScheduleImminentRestartWarning
+```
+<!-- ScheduleImminentRestartWarning-OmaUri-End -->
+
+<!-- ScheduleImminentRestartWarning-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows the IT Admin to specify the period for auto-restart imminent warning notifications. The default value is 15 (minutes).
+<!-- ScheduleImminentRestartWarning-Description-End -->
+
+<!-- ScheduleImminentRestartWarning-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ScheduleImminentRestartWarning-Editable-End -->
+
+<!-- ScheduleImminentRestartWarning-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 15 |
+<!-- ScheduleImminentRestartWarning-DFProperties-End -->
+
+<!-- ScheduleImminentRestartWarning-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 15 (Default) | 15 Minutes. |
+| 30 | 30 Minutes. |
+| 60 | 60 Minutes. |
+<!-- ScheduleImminentRestartWarning-AllowedValues-End -->
+
+<!-- ScheduleImminentRestartWarning-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | RestartWarnRemind |
+| Friendly Name | Configure auto-restart warning notifications schedule for updates |
+| Element Name | Warning (mins) |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Update > Legacy Policies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
+| ADMX File Name | WindowsUpdate.admx |
+<!-- ScheduleImminentRestartWarning-GpMapping-End -->
+
+<!-- ScheduleImminentRestartWarning-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ScheduleImminentRestartWarning-Examples-End -->
+
+<!-- ScheduleImminentRestartWarning-End -->
+
+<!-- ScheduleRestartWarning-Begin -->
+### ScheduleRestartWarning
+
+<!-- ScheduleRestartWarning-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- ScheduleRestartWarning-Applicability-End -->
+
+<!-- ScheduleRestartWarning-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/ScheduleRestartWarning
+```
+<!-- ScheduleRestartWarning-OmaUri-End -->
+
+<!-- ScheduleRestartWarning-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Enable this policy to control when notifications are displayed to warn users about a scheduled restart for the update installation deadline. Users are not able to postpone the scheduled restart once the deadline has been reached and the restart is automatically executed.
+
+Specifies the amount of time prior to a scheduled restart to display the warning reminder to the user.
+
+You can specify the amount of time prior to a scheduled restart to notify the user that the auto restart is imminent to allow them time to save their work.
+
+- If you disable or do not configure this policy, the default notification behaviors will be used.
+<!-- ScheduleRestartWarning-Description-End -->
+
+<!-- ScheduleRestartWarning-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ScheduleRestartWarning-Editable-End -->
+
+<!-- ScheduleRestartWarning-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 4 |
+<!-- ScheduleRestartWarning-DFProperties-End -->
+
+<!-- ScheduleRestartWarning-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 2 | 2 Hours. |
+| 4 (Default) | 4 Hours. |
+| 8 | 8 Hours. |
+| 12 | 12 Hours. |
+| 24 | 24 Hours. |
+<!-- ScheduleRestartWarning-AllowedValues-End -->
+
+<!-- ScheduleRestartWarning-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | RestartWarnRemind |
+| Friendly Name | Configure auto-restart warning notifications schedule for updates |
+| Element Name | Reminder (hours) |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Update > Legacy Policies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
+| ADMX File Name | WindowsUpdate.admx |
+<!-- ScheduleRestartWarning-GpMapping-End -->
+
+<!-- ScheduleRestartWarning-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ScheduleRestartWarning-Examples-End -->
+
+<!-- ScheduleRestartWarning-End -->
+
+<!-- SetAutoRestartNotificationDisable-Begin -->
+### SetAutoRestartNotificationDisable
+
+<!-- SetAutoRestartNotificationDisable-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- SetAutoRestartNotificationDisable-Applicability-End -->
+
+<!-- SetAutoRestartNotificationDisable-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/SetAutoRestartNotificationDisable
+```
+<!-- SetAutoRestartNotificationDisable-OmaUri-End -->
+
+<!-- SetAutoRestartNotificationDisable-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows the IT Admin to disable auto-restart notifications for update installations.
+<!-- SetAutoRestartNotificationDisable-Description-End -->
+
+<!-- SetAutoRestartNotificationDisable-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetAutoRestartNotificationDisable-Editable-End -->
+
+<!-- SetAutoRestartNotificationDisable-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- SetAutoRestartNotificationDisable-DFProperties-End -->
+
+<!-- SetAutoRestartNotificationDisable-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Enabled. |
+| 1 | Disabled. |
+<!-- SetAutoRestartNotificationDisable-AllowedValues-End -->
+
+<!-- SetAutoRestartNotificationDisable-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AutoRestartNotificationDisable |
+| Friendly Name | Turn off auto-restart notifications for update installations |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Update > Legacy Policies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
+| ADMX File Name | WindowsUpdate.admx |
+<!-- SetAutoRestartNotificationDisable-GpMapping-End -->
+
+<!-- SetAutoRestartNotificationDisable-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetAutoRestartNotificationDisable-Examples-End -->
+
+<!-- SetAutoRestartNotificationDisable-End -->
 
 <!-- Update-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
