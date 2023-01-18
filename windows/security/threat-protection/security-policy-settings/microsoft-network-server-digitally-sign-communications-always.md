@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Microsoft network server: Digitally sign communications (always)
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 -   Windows Server
 

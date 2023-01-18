@@ -14,7 +14,7 @@ msreviewer: adnich
 
 # Windows update policies
 
-## Update rings for Windows 10 and later
+## Deployment rings for Windows 10 and later
 
 The following policies contain settings which apply to both Windows quality and feature updates. After onboarding there will be four of these policies in your tenant with the following naming convention:
 
@@ -36,7 +36,7 @@ The following policies contain settings which apply to both Windows quality and 
 
 | Setting name | Test | First | Fast | Broad |
 | ----- | ----- | ----- | ----- | ----- |
-| Automatic update behaviour | Reset to default | Reset to default | Reset to default | Reset to default |
+| Automatic update behavior | Reset to default | Reset to default | Reset to default | Reset to default |
 | Restart checks | Allow | Allow | Allow | Allow |
 | Option to pause updates | Disable | Disable | Disable | Disable |
 | Option to check for Windows updates | Default |  Default | Default | Default |

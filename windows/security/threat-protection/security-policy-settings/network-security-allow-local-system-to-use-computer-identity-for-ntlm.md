@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Network security: Allow Local System to use computer identity for NTLM
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the location, values, policy management, and security considerations for the **Network security: Allow Local System to use computer identity for NTLM** security policy setting.

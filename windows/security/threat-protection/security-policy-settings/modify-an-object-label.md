@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Modify an object label
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Modify an object label** security policy setting.
