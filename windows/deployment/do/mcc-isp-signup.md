@@ -48,7 +48,7 @@ Before you begin sign up, ensure you have the following components:
    > [!IMPORTANT]
    > After your resource has been created, we need some information to verify your network operator status and approve you to host Microsoft Connected Cache nodes. Please ensure that your [Peering DB](https://www.peeringdb.com/) organization information is up to date as this information will be used for verification. The NOC contact email will be used to send verification information.
 
-After a few moments, you will see a "Validation successful" message, indicating you can move onto the next step and select **Create**.
+    After a few moments, you will see a "Validation successful" message, indicating you can move onto the next step and select **Create**.
 
    :::image type="content" source="./images/mcc-isp-create-resource-validated.png" alt-text="Screenshot of the Azure portal that shows a green validation successful message for the creation of the Microsoft Connected Cache resource.":::
 

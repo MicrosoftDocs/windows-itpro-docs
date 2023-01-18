@@ -43,11 +43,11 @@ There are many hardware configurations that suit Microsoft Connected Cache. As a
 - 4 - Transcend SSD230s 1 TB SATA Drives
 - Intel Corporation Ethernet 10G 2P X520 Adapter (Link Aggregated)
 
-### Enhancing virtual machine performance
+## Enhancing virtual machine performance
 
 In virtual environments, the cache server egress peaks at around 1.1 Gbps. If you want to maximize the egress in virtual environments, it's critical to change two settings.
 
-## Virtual machine settings
+### Virtual machine settings
 
 Change the following settings to maximize the egress in virtual environments:
 
@@ -61,6 +61,4 @@ Change the following settings to maximize the egress in virtual environments:
 
 2. Enable high performance in the BIOS instead of energy savings. Microsoft has found this setting to also nearly double egress in a Microsoft Hyper-V deployment.
 
-## Next steps
 
-[Support and troubleshooting](mcc-isp-support.md)
