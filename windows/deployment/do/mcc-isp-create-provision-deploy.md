@@ -135,7 +135,7 @@ There are five IDs that the device provisioning script takes as input in order t
 
 | Field Name | Expected Value| Description |
 |---|---|---|
-| **Cache drive folder** | File path string | Up to 9 drive folders accessible by the cache node can be configured for each cache node to configure cache storage. Enter the file path to each drive. For example: `/dev/folder/` Each cache drive should have read/write permissions configured. |
+| **Cache drive folder** | File path string | Up to 9 drive folders accessible by the cache node can be configured for each cache node to configure cache storage. Enter the location of the folder in Ubuntu where the external physical drive is mounted. For example: `/dev/sda3/` Each cache drive should have read/write permissions configured. Ensure your disks are mounted and visit [Attach a data disk to a Linux VM](/azure/virtual-machines/linux/attach-disk-portal#find-the-disk) for more information.|
 | **Cache drive size in gigabytes** | Integer in GB | Set the size of each drive configured for the cache node. |
 
 ### Client routing fields

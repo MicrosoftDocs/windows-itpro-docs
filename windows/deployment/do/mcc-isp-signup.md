@@ -52,7 +52,7 @@ Before you begin sign up, ensure you have the following components:
 
    :::image type="content" source="./images/mcc-isp-create-resource-validated.png" alt-text="Screenshot of the Azure portal that shows a green validation successful message for the creation of the Microsoft Connected Cache resource.":::
 
-1. The creation of the cache node may take a few minutes. After a successful creation, you will see a **Deployment complete** page as below:
+1. The creation of the cache node may take a few minutes. After a successful creation, you will see a **Deployment complete** page as below. Select **Go to resource**.
 
     :::image type="content" source="./images/mcc-isp-deployment-complete.png" alt-text="Screenshot of the Azure portal that shows a successful deployment for the creation of the Microsoft Connected Cache resource.":::
 
