@@ -71,8 +71,6 @@ BGP (Border Gateway Protocol) routing is another method offered for client routi
     > [!NOTE]
     > **Prefix count** and **IP Space** will stop displaying `0` when BGP is successfully established.
 
-1. After you are finished configuring your server, don't forget to press **Save** to save your configurations.
-
 ## Deploy cache node software to server  
 
 Once the user executes the cache server provisioning script, resources are created behind the scenes resulting in the successful cache node installation. The script takes the input of different IDs outlined below to register the server as an Azure IoT Edge device. Even though Microsoft Connected Cache scenario isn't related to IoT, Azure IoT Edge is installed for container management and communication operation purposes.
@@ -115,7 +113,7 @@ There are five IDs that the device provisioning script takes as input in order t
 
 1. Copy and paste the script command line shown in the Azure portal.
 
-1. Run the script in your server terminal for your cache node. The script may take a few minutes to run. If there were no errors, you have set up your cache node successfully. To verify the server is set up correctly, follow the [verification steps](mcc-isp-verify-cache-node.md).
+1. Run the script in your server terminal for your cache node by . The script may take a few minutes to run. If there were no errors, you have set up your cache node successfully. To verify the server is set up correctly, follow the [verification steps](mcc-isp-verify-cache-node.md).
 
     > [!NOTE]
     > The same script can be used to provision multiple cache nodes, but the command line is unique per cache node. Additionally, if you need to re-provision your server or provision a new server or VM for the cache node, you must copy the command line from the Azure portal again as the "registrationkey" value is unique for each successful execution of the provisioning script.
@@ -137,7 +135,7 @@ There are five IDs that the device provisioning script takes as input in order t
 
 | Field Name | Expected Value| Description |
 |---|---|---|
-| **Cache drive folder** | File path string | Up to 9 drive folders accessible by the cache node can be configured for each cache node to configure cache storage. Enter the location of the folder in Ubuntu where the external physical drive is mounted. For example: `/dev/folder/` Each cache drive should have read/write permissions configured. |
+| **Cache drive folder** | File path string | Up to 9 drive folders accessible by the cache node can be configured for each cache node to configure cache storage. Enter the file path to each drive. For example: `/dev/folder/` Each cache drive should have read/write permissions configured. |
 | **Cache drive size in gigabytes** | Integer in GB | Set the size of each drive configured for the cache node. |
 
 ### Client routing fields

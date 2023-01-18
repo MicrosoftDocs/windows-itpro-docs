@@ -41,9 +41,7 @@ Before you begin sign up, ensure you have the following components:
 
    :::image type="content" source="./images/mcc-isp-search.png" alt-text="Screenshot of the Azure portal that shows the Microsoft Connected Cache resource in Azure marketplace.":::
 
-1. Select **Create** to create a **Microsoft Connected Cache**. When prompted, choose the subscription, resource group, and location of your cache node. Also, enter a name for your cache node.
-
-   :::image type="content" source="./images/mcc-isp-create-resource-fields.png" alt-text="Screenshot of the Azure portal that shows the Microsoft Connected Cache resource creation step.":::
+1. Select **Create** to create a **Microsoft Connected Cache**. When prompted, enter a name for your cache resource.  
 
    > [!IMPORTANT]
    > After your resource has been created, we need some information to verify your network operator status and approve you to host Microsoft Connected Cache nodes. Please ensure that your [Peering DB](https://www.peeringdb.com/) organization information is up to date as this information will be used for verification. The NOC contact email will be used to send verification information.
@@ -69,7 +67,7 @@ Before you begin sign up, ensure you have the following components:
 
    **Can't find the verification email in your inbox?** Check your NOC email is correct in [Peering DB](https://www.peeringdb.com/). Search for an email from the sender **microsoft-noreply@microsoft.com** with the email subject: **Here’s your Microsoft Connected Cache verification code** in your Spam folders. Still can't find it? Ensure that your email admin rules allow emails from the sender **microsoft-noreply@microsoft.com**.
 
-1. Once verified, you are ready to move to the next step! Next, follow the instructions in **[Create, provision, and deploy cache node](mcc-isp-create-provision-deploy.md)** to create your cache node.
+1. Once verified, follow the instructions in [Create, provision, and deploy cache node](mcc-isp-create-provision-deploy.md) to create your cache node.
 
 <!--## Traffic estimation
 
