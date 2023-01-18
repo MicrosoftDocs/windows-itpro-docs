@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Adjust memory quotas for a process
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Adjust memory quotas for a process** security policy setting.

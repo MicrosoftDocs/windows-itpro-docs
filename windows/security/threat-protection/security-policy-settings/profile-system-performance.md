@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Profile system performance
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This security policy reference topic for the IT professional describes the best practices, location, values, policy management, and security considerations for the **Profile system performance** security policy setting.

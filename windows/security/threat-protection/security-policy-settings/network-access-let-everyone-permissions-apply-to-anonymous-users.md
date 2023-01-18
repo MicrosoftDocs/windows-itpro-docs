@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Network access: Let Everyone permissions apply to anonymous users
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Let Everyone permissions apply to anonymous users** security policy setting.
