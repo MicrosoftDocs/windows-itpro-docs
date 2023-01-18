@@ -54,7 +54,7 @@ After a few moments, you will see a "Validation successful" message, indicating 
 
 1. The creation of the cache node may take a few minutes. After a successful creation, you will see a **Deployment complete** page as below:
 
-    :::image type="content" source="./images/mcc-isp-create-deployment-complete.png" alt-text="Screenshot of the Azure portal that shows a green validation successful message for the creation of the Microsoft Connected Cache resource.":::
+    :::image type="content" source="./images/mcc-isp-deployment-complete.png" alt-text="Screenshot of the Azure portal that shows a successful deployment for the creation of the Microsoft Connected Cache resource.":::
 
 1. Navigate to **Settings** > **Sign up**. Enter your organization ASN. Indicate whether you're a transit provider. If so, additionally, include any ASN(s) for downstream network operators that you may transit traffic for.
 
@@ -76,37 +76,3 @@ After a few moments, you will see a "Validation successful" message, indicating 
 During the sign-up process, Microsoft will provide you with a traffic estimation based on your ASN(s). We make estimations based on our predictions on historical data about Microsoft content download volume. We'll use these estimations to recommend hardware or VM configurations. You can review these recommendations within the Azure portal.
 
 We make these estimations based on the Microsoft content types that Microsoft Connected Cache serves. To learn more about the types of content that are supported, see [Delivery Optimization and Microsoft Connected Cache content type endpoints](delivery-optimization-endpoints.md).  -->
-
-### Cache performance
-
-To make sure you're maximizing the performance of your cache node, review the following information:
-
-#### OS requirements
-
-The Microsoft Connected Cache module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice.
-
-#### NIC requirements
-
-- Multiple NICs on a single MCC instance are supported using a *link aggregated* configuration.
-- 10 Gbps NIC is the minimum speed recommended, but any NIC is supported.
-
-#### Drive performance
-
-The maximum number of disks supported is 9. When configuring your drives, we recommend SSD drives as cache read speed of SSD is superior to HDD. In addition, using multiple disks is recommended to improve cache performance. 
-
-RAID disk configurations are discouraged as cache performance will be impacted. If using RAID disk configurations, ensure striping.
-
-### Hardware configuration example
-
-There are many hardware configurations that suit Microsoft Connected Cache. As an example, a customer has deployed the following hardware configuration and is able to achieve a peak egress of about 35 Gbps:
-
-**Dell PowerEdge R330**
-
-- 2 x Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40 GHz, total 32 core
-- 48 GB, Micron Technology 18ASF1G72PDZ-2G1A1, Speed: 2133 MT/s
-- 4 - Transcend SSD230s 1 TB SATA Drives
-- Intel Corporation Ethernet 10G 2P X520 Adapter (Link Aggregated)
-
-### Virtual machines
-
-Microsoft Connected Cache supports both physical and virtual machines as cache servers. If you're using a virtual machine as your server, refer to [VM performance](mcc-isp-vm-performance.md) for tips on how to improve your VM performance.
