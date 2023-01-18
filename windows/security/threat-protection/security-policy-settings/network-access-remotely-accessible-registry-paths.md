@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Network access: Remotely accessible registry paths
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Remotely accessible registry paths** security policy setting.

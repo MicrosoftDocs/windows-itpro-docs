@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Deny log on locally
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Deny log on locally** security policy setting.

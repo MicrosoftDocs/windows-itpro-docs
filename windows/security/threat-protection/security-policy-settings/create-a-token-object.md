@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Create a token object
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Create a token object** security policy setting.
