@@ -60,5 +60,3 @@ Change the following settings to maximize the egress in virtual environments:
     Microsoft has found these settings to double egress when using a Microsoft Hyper-V deployment.
 
 2. Enable high performance in the BIOS instead of energy savings. Microsoft has found this setting to also nearly double egress in a Microsoft Hyper-V deployment.
-
-
