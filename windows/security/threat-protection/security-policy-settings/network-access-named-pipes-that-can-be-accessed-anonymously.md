@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Network access: Named Pipes that can be accessed anonymously
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Named Pipes that can be accessed anonymously** security policy setting.

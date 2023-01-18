@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Increase a process working set
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Increase a process working set** security policy setting.
