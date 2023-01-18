@@ -1,5 +1,5 @@
 ---
-title: Enhancing VM performance
+title: Enhancing cache performance
 manager: aaroncz
 description: How to enhance performance on a virtual machine used with Microsoft Connected Cache for ISPs
 keywords: updates, downloads, network, bandwidth
