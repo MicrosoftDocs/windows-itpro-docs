@@ -56,7 +56,7 @@
         - name: Frequently Asked Questions
           href: mcc-isp-faq.yml
         - name: Enhancing cache performance
-          href: mcc-isp-cache-performance.md
+          href: mcc-isp-vm-performance.md
         - name: Support and troubleshooting
           href: mcc-isp-support.md
         - name: MCC for ISPs (early preview)

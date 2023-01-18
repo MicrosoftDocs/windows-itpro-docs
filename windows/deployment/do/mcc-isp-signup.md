@@ -41,7 +41,9 @@ Before you begin sign up, ensure you have the following components:
 
    :::image type="content" source="./images/mcc-isp-search.png" alt-text="Screenshot of the Azure portal that shows the Microsoft Connected Cache resource in Azure marketplace.":::
 
-1. Select **Create** to create a **Microsoft Connected Cache**. When prompted, enter a name for your cache resource.  
+1. Select **Create** to create a **Microsoft Connected Cache**. When prompted, choose the subscription, resource group, and location of your cache node. Also, enter a name for your cache node.
+
+   :::image type="content" source="./images/mcc-isp-create-resource-fields.png" alt-text="Screenshot of the Azure portal that shows the Microsoft Connected Cache resource creation step.":::
 
    > [!IMPORTANT]
    > After your resource has been created, we need some information to verify your network operator status and approve you to host Microsoft Connected Cache nodes. Please ensure that your [Peering DB](https://www.peeringdb.com/) organization information is up to date as this information will be used for verification. The NOC contact email will be used to send verification information.
