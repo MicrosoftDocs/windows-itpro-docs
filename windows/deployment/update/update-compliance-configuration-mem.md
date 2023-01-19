@@ -1,7 +1,6 @@
 ---
 title: Configuring Microsoft Intune devices for Update Compliance
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: Configuring devices that are enrolled in Intune for Update Compliance
 ms.prod: windows-client
 author: mestew

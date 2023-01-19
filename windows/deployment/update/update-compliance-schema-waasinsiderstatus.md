@@ -1,7 +1,6 @@
 ---
 title: Update Compliance Schema - WaaSInsiderStatus
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: WaaSInsiderStatus schema
 ms.prod: windows-client
 author: mestew

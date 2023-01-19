@@ -1,7 +1,6 @@
 ---
 title: Enable Windows Update for Business reports
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: How to enable Windows Update for Business reports through the Azure portal
 ms.prod: windows-client
 author: mestew

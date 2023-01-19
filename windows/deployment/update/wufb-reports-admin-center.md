@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 admin center software updates page
-manager: dougeby
+manager: aaroncz
 description: Microsoft admin center populates Windows Update for Business reports data into the software updates page.
 ms.prod: windows-client
 author: mestew

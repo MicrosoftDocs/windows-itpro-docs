@@ -1,7 +1,6 @@
 ---
 title: Manually configuring devices for Update Compliance
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: Manually configuring devices for Update Compliance
 ms.prod: windows-client
 author: mestew
