@@ -2,10 +2,10 @@
 title: Update Windows client in enterprise deployments
 description: Windows as a service provides an all-new way to think about building, deploying, and servicing Windows client.
 ms.prod: windows-client
-author: aczechowski
-manager: dougeby
+author: mestew
+manager: aaroncz
 ms.localizationpriority: high
-ms.author: aaroncz
+ms.author: mstewart
 ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017

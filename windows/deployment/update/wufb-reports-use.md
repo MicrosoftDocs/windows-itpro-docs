@@ -1,7 +1,6 @@
 ---
 title: Use the Windows Update for Business reports data
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: How to use the Windows Update for Business reports data for custom solutions using tools like Azure Monitor Logs.
 ms.prod: windows-client
 author: mestew
