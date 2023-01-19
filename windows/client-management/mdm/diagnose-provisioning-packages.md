@@ -15,7 +15,8 @@ ms.collection: highpri
 # Diagnose Provisioning Packages
 <!-- 
 
-change this per ahmed - ask vinay anchor tag 
+change this per ahmed 
+ask vinay anchor tag 
 
 -->
 ## Unable to apply Power Settings
@@ -51,7 +52,7 @@ To help diagnose common problems, you can run the mdmdiagnosticstool and capture
 When applying multivariant packages it may be difficult to see why a target was not applied. The MdmDiagnosticsTool [(Diagnose MDM failures in Windows 10 - Windows Client Management | Microsoft Learn)](/windows/client-management/diagnose-mdm-failures-in-windows-10) includes the multivariant condition values on the target system. 
 <!-- 
 
-this need to be fixed
+this also needs to be fixed
 
 -->
 (Zinc semester addition - Deliverable 41742231: [Hydra] [Tooling] Add MultiVariant handler values to MdmdiagnosticsTool diagnostics) which can be helpful when diagnosing why the PPKG was not applied in the target system.
