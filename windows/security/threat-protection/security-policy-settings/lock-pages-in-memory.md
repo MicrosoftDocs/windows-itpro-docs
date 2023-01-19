@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Lock pages in memory
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Lock pages in memory** security policy setting.
