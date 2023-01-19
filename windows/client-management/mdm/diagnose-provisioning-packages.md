@@ -15,7 +15,7 @@ ms.collection: highpri
 # Diagnose Provisioning Packages
 
 ## Unable to apply Power Settings
-When applying certain provisioning packages containing power settings ([Configure power settings | Microsoft Learn](./windows-hardware/customize/power-settings/configure-power-settings?view=windows-11)) they require elevated permissions which are not applied when applying PPKGs [after the initial setup](/windows/configuration/provisioning-packages/provisioning-apply-package#after-initial-setup). An error of STATUS_PRIVILEGE_NOT_HELD (HRESULT=0xc0000061) is given when applying these packages with the incorrect security context.
+When applying certain provisioning packages containing power settings ([Configure power settings | Microsoft Learn](../windows-hardware/customize/power-settings/configure-power-settings?view=windows-11)) they require elevated permissions which are not applied when applying PPKGs [after the initial setup](/windows/configuration/provisioning-packages/provisioning-apply-package#after-initial-setup). An error of STATUS_PRIVILEGE_NOT_HELD (HRESULT=0xc0000061) is given when applying these packages with the incorrect security context.
 
 Simply placing the PPKG into %WINDIR%/Provisioning/Packages and rebooting the machine will apply the packages with the correct security context (NT Authority\SYSTEM - [LocalSystem Account - Win32 apps | Microsoft Learn](/windows/win32/services/localsystem-account)) as stated in the note in [Configure power settings | Microsoft Learn](/windows-hardware/customize/power-settings/configure-power-settings?view=windows-11)
 
