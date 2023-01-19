@@ -1,7 +1,6 @@
 ---
 title: Windows Update for Business reports Data Schema - UCClientUpdateStatus
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: UCClientUpdateStatus schema
 ms.prod: windows-client
 author: mestew

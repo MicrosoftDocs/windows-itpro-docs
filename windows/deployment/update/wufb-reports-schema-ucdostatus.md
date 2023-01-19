@@ -1,11 +1,11 @@
 ---
 title: Windows Update for Business reports Data Schema - UCDOStatus
-ms.reviewer: 
-manager: naengler
+ms.reviewer: carmenf
+manager: aaroncz
 description: UCDOStatus schema
 ms.prod: windows-client
-author: cmknox
-ms.author: carmenf
+author: mestew
+ms.author: mstewart
 ms.topic: reference
 ms.date: 11/17/2022
 ms.technology: itpro-updates
