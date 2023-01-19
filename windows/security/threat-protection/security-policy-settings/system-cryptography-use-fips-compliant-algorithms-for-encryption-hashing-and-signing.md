@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This security policy reference topic for the IT professional describes the best practices, location, values, policy management and security considerations for this policy setting.

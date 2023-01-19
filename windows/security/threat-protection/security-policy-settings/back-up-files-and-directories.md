@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Back up files and directories - security policy setting
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This article describes the recommended practices, location, values, policy management, and security considerations for the **Back up files and directories** security policy setting.

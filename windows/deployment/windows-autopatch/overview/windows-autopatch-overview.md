@@ -27,7 +27,7 @@ Rather than maintaining complex digital infrastructure, businesses want to focus
 - **Optimize your IT admin resources**: By automating routine endpoint updates, IT pros have more time to create value.
 - **On-premises infrastructure**: Transitioning to the world of software as a service (SaaS) allows you to minimize your investment in on-premises hardware since updates are delivered from the cloud.  
 - **Onboard new services**: Windows Autopatch is scoped to make it easy to enroll and minimizes the time investment from your IT Admins to get started.  
-- **Minimize end user disruption**: By releasing in sequential update rings, and responding to reliability and compatibility signals, user disruptions due to updates are minimized.
+- **Minimize end user disruption**: By releasing in sequential deployment rings, and responding to reliability and compatibility signals, user disruptions due to updates are minimized.
 
 Windows Autopatch helps you minimize the involvement of your scarce IT resources in the planning and deployment of updates for Windows, Microsoft 365 Apps, Microsoft Edge or Teams. By crafting careful rollout sequences and communicating with you throughout the release, your IT Admins can focus on other activities and tasks.
 
