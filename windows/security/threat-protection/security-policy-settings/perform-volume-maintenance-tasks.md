@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Perform volume maintenance tasks
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Perform volume maintenance tasks** security policy setting.

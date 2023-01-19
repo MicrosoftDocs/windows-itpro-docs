@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Restore files and directories - security policy setting
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Restore files and directories** security policy setting.

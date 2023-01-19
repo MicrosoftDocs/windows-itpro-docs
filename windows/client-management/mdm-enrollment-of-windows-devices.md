@@ -285,13 +285,13 @@ The deep link used for connecting your device to work will always use the follow
 > [!NOTE]
 > AWA and Azure Active Directory-joined values for mode are only supported on Windows 10, version 1709 and later. 
 
-
 ### Connect to MDM using a deep link
 
 > [!NOTE]
-> Deep links only work with Internet Explorer or Microsoft Edge browsers. When connecting to MDM using a deep link, the URI you should use is:
-> **ms-device-enrollment:?mode=mdm** 
-> **ms-device-enrollment:?mode=mdm&username=someone@example.com&servername=<`https://example.server.com`>**
+> Deep links only work with Internet Explorer or Microsoft Edge browsers. Examples of URI's that may be used to connect to MDM using a deep link:
+> 
+> - **ms-device-enrollment:?mode=mdm**
+> - **ms-device-enrollment:?mode=mdm&username=`someone@example.com`&servername=`https://example.server.com`**
 
 To connect your devices to MDM using deep links:
 
@@ -302,6 +302,9 @@ To connect your devices to MDM using deep links:
     - IT admins can add this link to a welcome email that users can select to enroll into MDM.
 
       ![using enrollment deeplink in email.](images/deeplinkenrollment1.png)
+
+      > [!NOTE]
+      > Ensure that your email filters do not block deep links.
 
     - IT admins can also add this link to an internal web page that users refer to enrollment instructions.
 

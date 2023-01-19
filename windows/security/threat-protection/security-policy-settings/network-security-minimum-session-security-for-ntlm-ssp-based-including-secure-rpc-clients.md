@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Network security: Minimum session security for NTLM SSP based (including secure RPC) clients
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network security: Minimum session security for NTLM SSP based (including secure RPC) clients** security policy setting.
