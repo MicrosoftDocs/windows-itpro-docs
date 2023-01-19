@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # User Account Control: Behavior of the elevation prompt for standard users
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Behavior of the elevation prompt for standard users** security policy setting.

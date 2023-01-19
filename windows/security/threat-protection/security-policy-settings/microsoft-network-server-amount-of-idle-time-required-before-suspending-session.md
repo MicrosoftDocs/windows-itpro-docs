@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Microsoft network server: Amount of idle time required before suspending session
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Microsoft network server: Amount of idle time required before suspending session** security policy setting.
