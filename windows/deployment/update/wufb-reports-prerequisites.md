@@ -1,7 +1,6 @@
 ---
 title: Windows Update for Business reports prerequisites
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: Prerequisites for Windows Update for Business reports
 ms.prod: windows-client
 author: mestew

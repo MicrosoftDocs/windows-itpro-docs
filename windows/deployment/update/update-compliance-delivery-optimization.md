@@ -1,14 +1,12 @@
 ---
 title: Delivery Optimization in Update Compliance
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: Learn how the Update Compliance solution provides you with information about your Delivery Optimization configuration.
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates
 ms.date: 12/31/2017
 ---
