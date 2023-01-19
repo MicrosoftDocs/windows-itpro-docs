@@ -13,20 +13,14 @@ ms.collection: highpri
 ---
 
 # Diagnose Provisioning Packages
-<!-- 
 
-change this per ahmed 
-ask vinay anchor tag 
-
--->
 ## Unable to apply Power Settings
-When applying certain provisioning packages containing power settings ([Configure power settings | Microsoft Learn](/windows-hardware/customize/power-settings/configure-power-settings?view=windows-11)) they require elevated permissions which are not applied when applying PPKGs after the initial setup as seen [Apply a provisioning package (Windows 10/11) - Configure Windows | Microsoft Learn](/windows/configuration/provisioning-packages/provisioning-apply-package#after-initial-setup). An error of STATUS_PRIVILEGE_NOT_HELD (HRESULT=0xc0000061) is given when applying these packages with the incorrect security context.
+When applying certain provisioning packages containing power settings ([Configure power settings | Microsoft Learn](/windows-hardware/customize/power-settings/configure-power-settings?view=windows-11)) they require elevated permissions which are not applied when applying PPKGs [after the initial setup](/windows/configuration/provisioning-packages/provisioning-apply-package#after-initial-setup). An error of STATUS_PRIVILEGE_NOT_HELD (HRESULT=0xc0000061) is given when applying these packages with the incorrect security context.
 
 Simply placing the PPKG into %WINDIR%/Provisioning/Packages and rebooting the machine will apply the packages with the correct security context (NT Authority\SYSTEM - [LocalSystem Account - Win32 apps | Microsoft Learn](/windows/win32/services/localsystem-account)) as stated in the note in [Configure power settings | Microsoft Learn](/windows-hardware/customize/power-settings/configure-power-settings?view=windows-11)
 
 ## Unable to perform Bulk Enrollment in Azure AD
 Provisioning packages allow enrollment into Azure AD as seen in [(Bulk join a Windows device to Azure AD and Microsoft Endpoint Manager using a provisioning package - Microsoft Community Hub)](https://techcommunity.microsoft.com/t5/intune-customer-success/bulk-join-a-windows-device-to-azure-ad-and-microsoft-endpoint/ba-p/2381400). A few issues can occur:
-
 
 <!--
 
