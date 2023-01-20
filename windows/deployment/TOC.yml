@@ -164,11 +164,6 @@
               href: update/waas-configure-wufb.md
             - name: Use Windows Update for Business and WSUS
               href: update/wufb-wsus.md    
-            - name: Windows Update for Business deployment service
-              href: update/deployment-service-overview.md
-              items:
-                - name: Troubleshoot the Windows Update for Business deployment service
-                  href: update/deployment-service-troubleshoot.md
             - name: Enforcing compliance deadlines for updates
               href: update/wufb-compliancedeadlines.md
             - name: Integrate Windows Update for Business with management solutions
@@ -177,6 +172,18 @@
               href: update/waas-wufb-group-policy.md
             - name: 'Walkthrough: use Intune to configure Windows Update for Business'
               href: update/deploy-updates-intune.md
+        - name: Windows Update for Business deployment service
+          items:
+          - name: Windows Update for Business deployment service overview
+            href: update/deployment-service-overview.md
+          - name: Prerequisites for Windows Update for Business deployment service
+            href: update/deployment-service-prerequisites.md
+          - name: Deploy feature updates
+            href: update/deployment-service-feature-updates.md
+          - name: Deploy expedited updates
+            href: update/deployment-service-expedited-updates.md
+          - name: Troubleshoot Windows Update for Business deployment service
+            href: update/deployment-service-troubleshoot.md
     - name: Monitor
       items:
       - name: Windows Update for Business reports
