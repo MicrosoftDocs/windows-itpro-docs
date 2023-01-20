@@ -178,10 +178,12 @@
             href: update/deployment-service-overview.md
           - name: Prerequisites for Windows Update for Business deployment service
             href: update/deployment-service-prerequisites.md
-          - name: Deploy feature updates
-            href: update/deployment-service-feature-updates.md
-          - name: Deploy expedited updates
-            href: update/deployment-service-expedited-updates.md
+          - name: Deploy updates using Windows Update for Business deployment service
+            items:            
+            - name: 'Tutorial: Deploy feature updates'
+              href: update/deployment-service-feature-updates.md
+            - name: 'Tutorial: Deploy expedited updates' 
+              href: update/deployment-service-expedited-updates.md
           - name: Troubleshoot Windows Update for Business deployment service
             href: update/deployment-service-troubleshoot.md
     - name: Monitor
