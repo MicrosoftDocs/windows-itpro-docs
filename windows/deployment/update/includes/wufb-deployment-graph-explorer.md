@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ---
 <!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context.  -->
 
-For this tutorial, you'll use Graph Explorer to make requests to the [Microsoft Graph APIs](https://learn.microsoft.com/graph/api/resources/windowsupdates-updates?view=graph-rest-beta&preserve-view=true) to retrieve, add, delete, and update data. For more information about using Graph Explorer, see [Get started with Graph Explorer](https://docs.microsoft.com/graph/graph-explorer/overview).
+For this tutorial, you'll use Graph Explorer to make requests to the [Microsoft Graph APIs](/graph/api/resources/windowsupdates-updates?view=graph-rest-beta&preserve-view=true) to retrieve, add, delete, and update data. For more information about using Graph Explorer, see [Get started with Graph Explorer](/graph/graph-explorer/overview).
 
 > [!WARNING]
 > Using a test tenant for tutorials is recommended. If you use a production tenant, ensure you verify which client devices you're targeting with deployments.
