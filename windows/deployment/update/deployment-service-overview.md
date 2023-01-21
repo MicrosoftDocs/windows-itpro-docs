@@ -34,7 +34,7 @@ The service is privacy focused and backed by leading industry compliance certifi
 
 ## How it works
 
-The deployment service complements existing Windows Update for Business capabilities, including existing device policies and [Windows Update for Businesss reports](wufb-reports-overview.md).
+The deployment service complements existing Windows Update for Business capabilities, including existing device policies and [Windows Update for Business reports](wufb-reports-overview.md).
 
 :::image type="content" source="media/wufbds-product-large.png" alt-text="Elements in following text.":::
 

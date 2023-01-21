@@ -1,0 +1,25 @@
+---
+author: mestew
+ms.author: mstewart
+manager: aaroncz
+ms.prod: w10
+ms.collection: M365-modern-desktop
+ms.topic: include
+ms.date: 08/18/2022
+ms.localizationpriority: medium
+---
+<!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context.  -->
+
+For this tutorial, you'll use Graph Explorer to make requests to the [Microsoft Graph APIs](https://learn.microsoft.com/graph/api/resources/windowsupdates-updates?view=graph-rest-beta&preserve-view=true) to retrieve, add, delete, and update data. For more information about using Graph Explorer, see [Get started with Graph Explorer](https://docs.microsoft.com/graph/graph-explorer/overview).
+
+> [!WARNING]
+> Using a test tenant for tutorials is recommended. If you use a production tenant, ensure you verify which client devices you're targeting with deployments.
+
+1. From a browser, go to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) and sign in using an Azure Active Directory (Azure AD) user account.
+1. You may need to enable the [`WindowsUpdates.ReadWrite.All` permission](/graph/permissions-reference#windows-updates-permissions) to use the queries in this tutorial. To enable the permission:
+    1. Select the **Modify permissions** tab in Graph Explorer.
+    1. In the permissions dialog box, select the **WindowsUpdates.ReadWrite.All** permission then select **Consent**. You may need to sign in again to grant consent.
+    
+       :::image type="content" source="../media/wufbds-graph-modify-permission.png" alt-text="Screenshot of the modify permissions tab in Graph Explorer":::
+
+
