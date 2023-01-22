@@ -38,7 +38,7 @@ sections:
 
       - question: What about convenience PIN?
         answer: |
-          While *convenience PIN* provides a convenient way to sign in to Windows, it stills uses a password for authentication. Customers using *convenience PINs* should move to **Windows Hello for Business**. New Windows deployments should deploy Windows Hello for Business and not convenience PINs. Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business.
+          While *convenience PIN* provides a convenient way to sign in to Windows, it still use a password for authentication. When correct convenience PIN is provided to Windows, it loads password information from its cache and authenticates the user. Convenience PIN is a mechanism that hides password from users using PIN. Customers using *convenience PINs* should move to **Windows Hello for Business**. New Windows deployments should deploy Windows Hello for Business and not convenience PINs. Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business. (Please note that 'PIN' configured fro Windows Hello for Business is not same as 'Convinience PIN'. Convinience PIN refers a PIN configured for Windows Hello.)
 
       - question: Can I use Windows Hello for Business key trust and RDP?
         answer: |
