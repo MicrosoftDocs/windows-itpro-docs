@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Smartcard Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 01/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,12 +44,12 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting lets you allow certificates without an Extended Key Usage (EKU) set to be used for logon.
 
-In versions of Windows prior to Windows Vista, smart card certificates that are used for logon require an enhanced key usage (EKU) extension with a smart card logon object identifier. This policy setting can be used to modify that restriction.
+In versions of Windows prior to Windows Vista, smart card certificates that are used for logon require an extended key usage (EKU) extension with a smart card logon object identifier. This policy setting can be used to modify that restriction.
 
 - If you enable this policy setting, certificates with the following attributes can also be used to log on with a smart card:
-- Certificates with no EKU
-- Certificates with an All Purpose EKU
-- Certificates with a Client Authentication EKU
+  - Certificates with no EKU
+  - Certificates with an All Purpose EKU
+  - Certificates with a Client Authentication EKU
 
 - If you disable or do not configure this policy setting, only certificates that contain the smart card logon object identifier can be used to log on with a smart card.
 <!-- AllowCertificatesWithNoEKU-Description-End -->
@@ -410,7 +410,7 @@ This policy setting allows you to manage the clean up behavior of root certifica
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the root certificate propagation that occurs when a smart card is inserted.
 
-- If you enable or do not configure this policy setting then root certificate propagation will occur when you insert your smart card
+- If you enable or do not configure this policy setting then root certificate propagation will occur when you insert your smart card.
 
 > [!NOTE]
 > For this policy setting to work the following policy setting must also be enabled Turn on certificate propagation from smart card.
@@ -603,7 +603,7 @@ This policy settings lets you configure if all your valid logon certificates are
 
 During the certificate renewal period, a user can have multiple valid logon certificates issued from the same certificate template. This can cause confusion as to which certificate to select for logon. The common case for this behavior is when a certificate is renewed and the old one has not yet expired. Two certificates are determined to be the same if they are issued from the same template with the same major version and they are for the same user (determined by their UPN).
 
-If there are two or more of the "same" certificate on a smart card and this policy is enabled then the certificate that is used for logon on Windows 2000, Windows XP, and Windows 2003 Server will be shown, otherwise the the certificate with the expiration time furthest in the future will be shown
+If there are two or more of the "same" certificate on a smart card and this policy is enabled then the certificate that is used for logon on Windows 2000, Windows XP, and Windows 2003 Server will be shown, otherwise the the certificate with the expiration time furthest in the future will be shown.
 
 > [!NOTE]
 > This setting will be applied after the following policy "Allow time invalid certificates"
@@ -730,7 +730,7 @@ During logon Windows will by default only read the default certificate from the 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the displayed message when a smart card is blocked.
 
-- If you enable this policy setting, the specified message will be displayed to the user when the smart card is blocked
+- If you enable this policy setting, the specified message will be displayed to the user when the smart card is blocked.
 
 > [!NOTE]
 > The following policy setting must be enabled - Allow Integrated Unblock screen to be displayed at the time of logon.

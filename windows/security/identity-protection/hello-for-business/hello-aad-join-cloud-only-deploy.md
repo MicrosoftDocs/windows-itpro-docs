@@ -8,7 +8,7 @@ ms.topic: article
 ---
 # Cloud-only deployment
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-cloud.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-cloud.md)]
 
 ## Introduction
 
