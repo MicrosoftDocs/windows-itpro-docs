@@ -8,7 +8,7 @@ ms.topic: include
 ms.date: 08/18/2022
 ms.localizationpriority: medium
 ---
-<!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context.  -->
+<!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
 
 For this tutorial, you'll use Graph Explorer to make requests to the [Microsoft Graph APIs](/graph/api/resources/windowsupdates-updates?view=graph-rest-beta&preserve-view=true) to retrieve, add, delete, and update data. For more information about using Graph Explorer, see [Get started with Graph Explorer](/graph/graph-explorer/overview).
 
@@ -20,6 +20,6 @@ For this tutorial, you'll use Graph Explorer to make requests to the [Microsoft 
     1. Select the **Modify permissions** tab in Graph Explorer.
     1. In the permissions dialog box, select the **WindowsUpdates.ReadWrite.All** permission then select **Consent**. You may need to sign in again to grant consent.
     
-       :::image type="content" source="../media/wufbds-graph-modify-permission.png" alt-text="Screenshot of the modify permissions tab in Graph Explorer":::
+       :::image type="content" source="../media/7512398-wufbds-graph-modify-permission.png" alt-text="Screenshot of the modify permissions tab in Graph Explorer":::
 
 

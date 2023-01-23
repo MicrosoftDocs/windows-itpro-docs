@@ -1,0 +1,36 @@
+---
+author: mestew
+ms.author: mstewart
+manager: aaroncz
+ms.prod: w10
+ms.collection: M365-modern-desktop
+ms.topic: include
+ms.date: 08/18/2022
+ms.localizationpriority: medium
+---
+<!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
+
+You will need at least [Device.Read.All](/graph/permissions-reference#device-permissions) permission to display [device](/graph/api/resources/device) information.
+
+Displays the AzureAD ID and name of all devices:</br>
+ `GET https://graph.microsoft.com/v1.0/devices?$select=deviceid,displayName`
+
+Displays the AzureAD ID for a device name that starts with `Test`:</br>
+ `GET https://graph.microsoft.com/v1.0/devices?$filter=startswith(displayName, 'Test')&$select=deviceid,displayName`
+
+### Add a request header
+
+For the next requests, set the **ConsistencyLevel** header to `eventual`. For more information about advanced query parameters, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+1. In Graph Explorer, select the **Request headers** tab.
+1. For **Key** type in `ConsistencyLevel` then type `eventual` for **Value**. 
+1. Select the **Add** button. When you're finished, remove the request header by selecting the trash can icon.
+
+    :::image type="content" source="../media/7512398-deployment-service-graph-modify-header.png" alt-text="Screenshot of the request headers tab in Graph Explorer":::
+
+Displays the name and operating system version for the device that has the AzureAD ID of `44bb2fa1-5bfe-44c7-9221-9c8ed64e1076`:</br>
+ `GET https://graph.microsoft.com/v1.0/devices?$search="deviceid:44bb2fa1-5bfe-44c7-9221-9c8ed64e1076"?$select=displayName,operatingSystemVersion`
+
+Find devices that don't have virtual machine listed as the model and that have a manufacturer listed: </br>
+`GET https://graph.microsoft.com/v1.0/devices?$filter=model ne 'virtual machine' and NOT(manufacturer eq null)&$count=true&$select=deviceid,displayName,operatingSystemVersion`
+

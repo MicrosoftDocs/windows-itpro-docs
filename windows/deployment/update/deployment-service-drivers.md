@@ -27,3 +27,9 @@ In this tutorial, you will:
 
 <!--Using include for Graph Explorer sign in-->
 [!INCLUDE [Graph Explorer sign in](./includes/wufb-deployment-graph-explorer.md)]
+
+## Run queries to identify test devices
+
+<!--Using include for Graph Explorer device queries-->
+[!INCLUDE [Graph Explorer device queries](./includes/wufb-deployment-find-device-name.md)]
+
