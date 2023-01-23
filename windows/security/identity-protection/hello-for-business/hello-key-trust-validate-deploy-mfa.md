@@ -10,7 +10,7 @@ ms.topic: tutorial
 
 # Validate and deploy multi-factor authentication - on-premises key trust
 
-[!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
+[!INCLUDE [hello-on-premises-key-trust](./includes/hello-on-premises-key-trust.md)]
 
 Windows Hello for Business requires users perform multi-factor authentication (MFA) prior to enroll in the service. On-premises deployments can use, as MFA option:
 

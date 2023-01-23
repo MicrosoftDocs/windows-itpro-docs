@@ -11,7 +11,7 @@ ms.topic: tutorial
 ---
 # Configure Windows Hello for Business group policy settings - on-premises certificate Trust
 
-[!INCLUDE [hello-on-premises-cert-trust](../../includes/hello-on-premises-cert-trust.md)]
+[!INCLUDE [hello-on-premises-cert-trust](./includes/hello-on-premises-cert-trust.md)]
 
 On-premises certificate-based deployments of Windows Hello for Business need three Group Policy settings:
 - Enable Windows Hello for Business

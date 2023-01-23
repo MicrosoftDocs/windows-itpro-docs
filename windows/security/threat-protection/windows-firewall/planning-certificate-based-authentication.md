@@ -55,6 +55,6 @@ If you're installing the certificates on an operating system other than Windows,
 
 When the clients and servers have the certificates available, you can configure the IPsec and connection security rules to include those certificates as a valid authentication method. The authentication method requires the subject name of the certificate, for example: **DC=com,DC=woodgrovebank,CN=CorporateCertServer**. Optionally, select **Enable certificate to account mapping** to support using these credentials for restricting access to users or devices that are members of authorized groups in a server isolation solution.
 
-Starting in Windows Server 2012, you can configure certificate selection criteria so the desired certificate is selected and/or validated. Enhanced Key Usage (EKU) criteria can be configured, and name restrictions and certificate thumbprints. This EKU is configured using the **Advanced** button when choosing certificates for the authentication method in the user interface, or through Windows PowerShell.
+Starting in Windows Server 2012, you can configure certificate selection criteria so the desired certificate is selected and/or validated. extended key usage (EKU) criteria can be configured, and name restrictions and certificate thumbprints. This EKU is configured using the **Advanced** button when choosing certificates for the authentication method in the user interface, or through Windows PowerShell.
 
 **Next:** [Documenting the Zones](documenting-the-zones.md)

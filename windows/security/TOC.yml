@@ -310,7 +310,7 @@
       href: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
     - name: Passwordless
       items:
-      - name: Windows Hello for Business
+      - name: Windows Hello for Business ⇒
         href: identity-protection/hello-for-business/index.yml
       - name: FIDO 2 security keys
         href: /azure/active-directory/authentication/howto-authentication-passwordless-security-key?context=/windows/security/context/context
