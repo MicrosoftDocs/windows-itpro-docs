@@ -60,11 +60,9 @@ Authenticating from a Hybrid Azure AD joined device to a domain using Windows He
 
 ## Configure a CRL distribution point for an issuing CA
 
-Use this set of procedures to update the CA that issues domain controller certificates to include an http-based CRL distribution point. Expand each step to learn more:
+Use this set of procedures to update the CA that issues domain controller certificates to include an http-based CRL distribution point.
 
-<br>
-<details>
-<summary><b>Configure Internet Information Services to host CRL distribution point</b></summary>
+### Configure Internet Information Services to host CRL distribution point
 
 You need to host your new certificate revocation list on a web server so Azure AD-joined devices can easily validate certificates without authentication. You can host these files on web servers many ways. The following steps are just one and may be useful for admins unfamiliar with adding a new CRL distribution point.
 
@@ -103,10 +101,7 @@ You need to host your new certificate revocation list on a web server so Azure A
     ![Create DNS host record.](images/aadj/dns-new-host-dialog.png)
 1. Close the **DNS Manager**
 
-</details>
-<br>
-<details>
-<summary><b>Prepare a file share to host the certificate revocation list</b></summary>
+### Prepare a file share to host the certificate revocation list
 
 These procedures configure NTFS and share permissions on the web server to allow the certificate authority to automatically publish the certificate revocation list.
 
@@ -145,14 +140,11 @@ These procedures configure NTFS and share permissions on the web server to allow
 1. In the **Permissions for cdp** dialog box, select the name of the certificate authority from the **Group or user names** list. In the **Permissions for** section, select **Allow** for **Full control**. Select **OK**
 1. Select **Close** in the **cdp Properties** dialog box
 
-</details>
-<br>
-<details>
-<summary><b>Configure the new CDP and publishing location in the issuing CA</b></summary>
+### Configure the new CDP and publishing location in the issuing CA
 
 The web server is ready to host the CRL distribution point. Now, configure the issuing certificate authority to publish the CRL at the new location and to include the new CRL distribution point.
 
-### Configure the CRL distribution Point
+#### Configure the CRL distribution Point
 
 1. On the issuing certificate authority, sign-in as a local administrator. Start the **Certification Authority** console from **Administrative Tools**
 1. In the navigation pane, right-click the name of the certificate authority and select **Properties**
@@ -170,7 +162,7 @@ The web server is ready to host the CRL distribution point. Now, configure the i
 > [!NOTE]
 > Optionally, you can remove unused CRL distribution points and publishing locations.
 
-### Configure the CRL publishing location
+#### Configure the CRL publishing location
 
 1. On the issuing certificate authority, sign-in as a local administrator. Start the **Certificate Authority** console from **Administrative Tools**
 1. In the navigation pane, right-click the name of the certificate authority and select **Properties**
@@ -184,30 +176,21 @@ The web server is ready to host the CRL distribution point. Now, configure the i
 1. Select **Publish Delta CRLs to this location**
 1. Select **Apply** save your selections. Select **Yes** when ask to restart the service. Select **OK** to close the properties dialog box
 
-</details>
-<br>
-<details>
-<summary><b>Publish CRL</b></summary>
-
-### Publish a new CRL
+#### Publish a new CRL
 
 1. On the issuing certificate authority, sign-in as a local administrator. Start the **Certificate Authority** console from **Administrative Tools**
 1. In the navigation pane, right-click **Revoked Certificates**, hover over **All Tasks**, and select **Publish**
     ![Publish a New CRL.](images/aadj/publish-new-crl.png)
 1. In the **Publish CRL** dialog box, select **New CRL** and select **OK**
 
-### Validate CDP Publishing
+#### Validate CDP Publishing
 
 Validate the new CRL distribution point is working.
 
 1. Open a web browser. Navigate to `http://crl.[yourdomain].com/cdp`. You should see two files created from publishing the new CRL
     ![Validate the new CRL.](images/aadj/validate-cdp-using-browser.png)
-</details>
-<br>
-<details>
-<summary><b>Reissue domain controller certificates</b></summary>
 
-### Reissue domain controller certificates
+#### Reissue domain controller certificates
 
 With the CA properly configured with a valid HTTP-based CRL distribution point, you need to reissue certificates to domain controllers as the old certificate doesn't have the updated CRL distribution point. 
 
@@ -227,7 +210,7 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 > [!IMPORTANT]
 > If you are not using automatic certificate enrollment, create a calendar reminder to alert you two months before the certificate expiration date. Send the reminder to multiple people in the organization to ensure more than one or two people know when these certificates expire.
 
-### Validate CDP in the new certificate
+#### Validate CDP in the new certificate
 
 1. Sign-in a domain controller using administrative credentials
 1. Open the **Run** dialog box. Type **certlm.msc** to open the **Certificate Manager** for the local computer
@@ -236,15 +219,11 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 1. Review the information below the list of fields to confirm the new URL for the CRL distribution point is present in the certificate. Select **OK**
     ![New Certificate with updated CDP.](images/aadj/dc-cert-with-new-cdp.png)
 
-</details>
-
 ## Deploy the root CA certificate to Azure AD-joined devices
 
 The domain controllers have a certificate that includes the new CRL distribution point. Next, you need the enterprise root certificate so you can deploy it to Azure AD-joined devices. When you deploy the enterprise root certificates to a device, it ensures the device trusts any certificates issued by the certificate authority. Without the certificate, Azure AD-joined devices don't trust domain controller certificates and authentication fails. Expand each step to learn more:
 
-<br>
-<details>
-<summary><b>Export the enterprise root certificate</b></summary>
+### Export the enterprise root certificate
 
 1. Sign-in a domain controller using administrative credentials
 1. Open the **Run** dialog box. Type **certlm.msc** to open the **Certificate Manager** for the local computer
@@ -259,10 +238,7 @@ The domain controllers have a certificate that includes the new CRL distribution
     ![Export root certificate.](images/aadj/certlm-export-root-certificate.png)
 1. Select **OK**  two times to return to the **Certificate Manager** for the local computer. Close the **Certificate Manager**
 
-</details>
-<br>
-<details>
-<summary><b>Deploy the certificate via Intune</b></summary>
+### Deploy the certificate via Intune
 
 To configure devices with Microsoft Intune, use a custom policy:
 
@@ -275,7 +251,5 @@ To configure devices with Microsoft Intune, use a custom policy:
 1. Select **Next**
 1. Under **Assignment**, select a security group that contains as members the devices or users that you want to configure > **Next**
 1. Review the policy configuration and select **Create**
-
-</details>
 
 If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). Otherwise, you can sign in to an Azure AD joined device with Windows Hello for Business and test SSO to an on-premises resource.

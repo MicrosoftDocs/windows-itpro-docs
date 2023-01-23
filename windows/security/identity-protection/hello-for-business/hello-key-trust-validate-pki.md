@@ -17,44 +17,15 @@ Windows Hello for Business must have a Public Key Infrastructure (PKI) when usin
 
 ## Configure the enterprise PKI
 
-Expand the following sections to configure the PKI for Windows Hello for Business.
-
-<br>
-<details>
-<summary><b>Configure domain controller certificates</b></summary>
-
 [!INCLUDE [dc-certificate-template](includes/dc-certificate-template.md)]
-
-</details>
-
-
-<br>
-<details>
-<summary><b>Supersede existing domain controller certificates</b></summary>
 
 [!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
 
-</details>
-
-<br>
-<details>
-<summary><b>Configure an internal web server certificate template</b></summary>
-
 [!INCLUDE [web-server-certificate-template](includes/web-server-certificate-template.md)]
-
-</details>
-
-<br>
-<details>
-<summary><b>Unpublish Superseded Certificate Templates</b></summary>
 
 [!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
 
-</details>
-
-<br>
-<details>
-<summary><b>Publish certificate templates to the CA</b></summary>
+### Publish certificate templates to the CA
 
 A certification authority can only issue certificates for certificate templates that are published to it. If you have more than one CA, and you want more CAs to issue certificates based on the certificate template, then you must publish the certificate template to them.
 
@@ -68,8 +39,6 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 1. If you published the *Domain Controller Authentication (Kerberos)* certificate template, then unpublish the certificate templates you included in the superseded templates list
    - To unpublish a certificate template, right-click the certificate template you want to unpublish and select **Delete**. Select **Yes** to confirm the operation
 1. Close the console
-
-</details>
 
 ## Configure and deploy certificates to domain controllers
 

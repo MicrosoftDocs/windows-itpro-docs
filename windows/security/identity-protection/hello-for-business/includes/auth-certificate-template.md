@@ -3,8 +3,7 @@ ms.date: 12/28/2022
 ms.topic: include
 ---
 
-<details>
-<summary><b>Configure a Windows Hello for Business authentication certificate template</b></summary>
+### Configure a Windows Hello for Business authentication certificate template
 
 During Windows Hello for Business provisioning, Windows clients request an authentication certificate from AD FS, which requests the authentication certificate on behalf of the user. This task configures the Windows Hello for Business authentication certificate template.
 

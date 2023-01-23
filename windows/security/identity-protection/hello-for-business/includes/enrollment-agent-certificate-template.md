@@ -3,8 +3,7 @@ ms.date: 01/03/2022
 ms.topic: include
 ---
 
-<details>
-<summary><b>Configure an enrollment agent certificate template</b></summary>
+### Configure an enrollment agent certificate template
 
 A certificate registration authority (CRA) is a trusted authority that validates certificate request. Once it validates the request, it presents the request to the certification authority (CA) for issuance. The CA issues the certificate, returns it to the CRA, which returns the certificate to the requesting user. Windows Hello for Business certificate trust deployments use AD FS as the CRA.
 
@@ -13,7 +12,7 @@ The CRA enrolls for an *enrollment agent certificate*. Once the CRA verifies the
 > [!IMPORTANT]
 > Follow the procedures below based on the AD FS service account used in your environment.
 
-### Create an enrollment agent certificate for Group Managed Service Accounts (GMSA)
+#### Create an enrollment agent certificate for Group Managed Service Accounts (GMSA)
 
 Sign in to a CA or management workstations with *Domain Administrator* equivalent credentials.
 
@@ -46,7 +45,7 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
    - Select **OK**
 1. Close the console
 
-### Create an enrollment agent certificate for a standard service account
+#### Create an enrollment agent certificate for a standard service account
 
 Sign in to a CA or management workstations with *Domain Administrator* equivalent credentials.
 
@@ -78,4 +77,3 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
    - Select **OK**
 1. Close the console
 
-</details>

@@ -3,8 +3,7 @@ ms.date: 12/28/2022
 ms.topic: include
 ---
 
-<details>
-<summary><b>Supersede existing domain controller certificates</b></summary>
+### Supersede existing domain controller certificates
 
 The domain controllers may have an existing domain controller certificate. The Active Directory Certificate Services provides a default certificate template for domain controllers called *domain controller certificate*. Later releases of Windows Server provided a new certificate template called *domain controller authentication certificate*. These certificate templates were provided prior to the update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the *KDC Authentication* extension.
 
@@ -32,4 +31,3 @@ However, the certificate template and the superseding of certificate templates i
 >
 > `Certutil -viewstore -enterprise NTAuth`
 
-</details>

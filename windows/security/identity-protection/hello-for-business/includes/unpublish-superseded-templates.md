@@ -3,8 +3,7 @@ ms.date: 12/28/2022
 ms.topic: include
 ---
 
-<details>
-<summary><b>Unpublish Superseded Certificate Templates</b></summary>
+### Unpublish Superseded Certificate Templates
 
 The certification authority only issues certificates based on published certificate templates. For security, it's a good practice to unpublish certificate templates that the CA isn't configured to issue, including the pre-published templates from the role installation and any superseded templates.
 
@@ -17,4 +16,3 @@ Sign in to the CA or management workstation with *Enterprise Administrator* equi
 1. Right-click the *Domain Controller* certificate template and select **Delete**. Select **Yes** on the **Disable certificate templates** window
 1. Repeat step 3 for the *Domain Controller Authentication* and *Kerberos Authentication* certificate templates
 
-</details>

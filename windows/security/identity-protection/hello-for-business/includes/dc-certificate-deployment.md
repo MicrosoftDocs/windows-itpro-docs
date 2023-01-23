@@ -3,11 +3,7 @@ ms.date: 12/28/2022
 ms.topic: include
 ---
 
-Expand the following sections to configure the group policy for domain controllers and validate the certificate deployment.
-
-<br>
-<details>
-<summary><b>Configure automatic certificate enrollment for the domain controllers</b></summary>
+### Configure automatic certificate enrollment for the domain controllers
 
 Domain controllers automatically request a certificate from the *Domain controller certificate* template. However, domain controllers are unaware of newer certificate templates or superseded configurations on certificate templates. For domain controllers to automatically enroll and renew of certificates, configure a GPO for automatic certificate enrollment, and link it to the *Domain Controllers* OU.
 
@@ -25,11 +21,7 @@ Domain controllers automatically request a certificate from the *Domain controll
 1. Select **OK**
 1. Close the **Group Policy Management Editor**
 
-</details>
-
-<br>
-<details>
-<summary><b>Deploy the domain controller auto certificate enrollment GPO</b></summary>
+### Deploy the domain controller auto certificate enrollment GPO
 
 Sign in to domain controller or management workstations with *Domain Administrator* equivalent credentials.
 
@@ -38,4 +30,3 @@ Sign in to domain controller or management workstations with *Domain Administrat
 1. In the **Select GPO** dialog box, select *Domain Controller Auto Certificate Enrollment* or the name of the domain controller certificate enrollment Group Policy object you previously created
 1. Select **OK**
 
-</details>

@@ -36,7 +36,7 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
     ```PowerShell
     Add-WindowsFeature Adcs-Cert-Authority -IncludeManagementTools
     ```
-3. Use the following command to configure the CA using a basic certification authority configuration
+1. Use the following command to configure the CA using a basic certification authority configuration
     ```PowerShell
     Install-AdcsCertificationAuthority
     ```
@@ -44,8 +44,6 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
 ## Configure the enterprise PKI
 
 The configuration of the enterprise PKI to support Windows Hello for Business consists of the following steps (expand each step to learn more):
-
-<br>
 
 [!INCLUDE [dc-certificate-template](includes/dc-certificate-template.md)]
 
@@ -57,18 +55,11 @@ The configuration of the enterprise PKI to support Windows Hello for Business co
 > - Install the root CA certificate in the device's trusted root certificate store. See [how to deploy a trusted certificate profile](/mem/intune/protect/certificates-trusted-root#to-create-a-trusted-certificate-profile) via Intune
 > - Publish your certificate revocation list to a location that is available to Azure AD-joined devices, such as a web-based URL
 
-<br>
-
 [!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
-
-<br>
 
 [!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
 
-<br>
-<details>
-
-<summary><b>Publish the certificate template to the CA</b></summary>
+### Publish the certificate template to the CA
 
 A certification authority can only issue certificates for certificate templates that are published to it. If you have more than one CA, and you want more CAs to issue certificates based on the certificate template, then you must publish the certificate template to them.
 
@@ -80,8 +71,6 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 1. Right-click the **Certificate Templates** node. Select **New > Certificate Template to issue**
 1. In the **Enable Certificates Templates** window, select the *Domain Controller Authentication (Kerberos)* template you created in the previous steps > select **OK**
 1. Close the console
-
-</details>
 
 > [!IMPORTANT]
 > If you plan to deploy **Azure AD joined** devices, and require single sign-on (SSO) to on-premises resources when signing in with Windows Hello for Business, follow the procedures to [update your CA to include an http-based CRL distribution point](hello-hybrid-aadj-sso.md).

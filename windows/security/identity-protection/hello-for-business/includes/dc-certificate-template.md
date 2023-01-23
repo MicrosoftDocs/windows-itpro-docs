@@ -3,8 +3,7 @@ ms.date: 12/28/2022
 ms.topic: include
 ---
 
-<details>
-<summary><b>Configure domain controller certificates</b></summary>
+### Configure domain controller certificates
 
 Clients must trust the domain controllers, and the best way to enable the trust is to ensure that each domain controller has a *Kerberos Authentication* certificate. Installing a certificate on the domain controllers enables the Key Distribution Center (KDC) to prove its identity to other members of the domain. The certificates provide clients a root of trust external to the domain, namely the *enterprise certification authority*.
 
@@ -50,4 +49,3 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
 1. Select **OK**
 1. Close the console
 
-</details>

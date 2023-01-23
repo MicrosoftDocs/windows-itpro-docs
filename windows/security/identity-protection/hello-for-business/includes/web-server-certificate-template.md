@@ -1,10 +1,9 @@
 ---
-ms.date: 12/28/2022
+ms.date: 01/23/2023
 ms.topic: include
 ---
 
-<details>
-<summary><b>Configure an internal web server certificate template</b></summary>
+### Configure an internal web server certificate template
 
 Windows clients communicate with AD FS via HTTPS. To meet this need, a *server authentication* certificate must be issued to all the nodes in the AD FS farm. On-premises deployments can use a *server authentication* certificate issued by the enterprise PKI. A *server authentication* certificate template must be configured, so the AD FS nodes can request a certificate.
 
@@ -37,4 +36,3 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
    - Select **OK**
 1. Close the console
 
-</details>
