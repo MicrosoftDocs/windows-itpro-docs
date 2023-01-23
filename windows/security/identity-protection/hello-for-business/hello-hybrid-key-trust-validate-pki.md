@@ -43,8 +43,6 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
 
 ## Configure the enterprise PKI
 
-The configuration of the enterprise PKI to support Windows Hello for Business consists of the following steps (expand each step to learn more):
-
 [!INCLUDE [dc-certificate-template](includes/dc-certificate-template.md)]
 
 > [!NOTE]
