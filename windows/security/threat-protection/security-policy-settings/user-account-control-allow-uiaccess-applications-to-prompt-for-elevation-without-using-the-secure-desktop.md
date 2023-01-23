@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop** security policy setting.

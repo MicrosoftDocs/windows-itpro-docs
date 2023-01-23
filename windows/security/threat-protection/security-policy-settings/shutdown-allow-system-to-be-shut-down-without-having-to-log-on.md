@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Shutdown: Allow system to be shut down without having to log on
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Shutdown: Allow system to be shut down without having to log on** security policy setting.

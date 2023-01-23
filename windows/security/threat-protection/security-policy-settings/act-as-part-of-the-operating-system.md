@@ -20,7 +20,8 @@ ms.technology: itpro-security
 # Act as part of the operating system
 
 **Applies to**
--   Windows 10
+-  Windows 11
+-  Windows 10    
 
 Describes the best practices, location, values, policy management, and security considerations for the **Act as part of the operating system** security policy setting.
 

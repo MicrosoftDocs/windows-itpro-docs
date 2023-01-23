@@ -1,7 +1,7 @@
 ---
 title: Policies in Policy CSP supported by HoloLens (1st gen) Development Edition
 description: Learn about the policies in Policy CSP supported by HoloLens (1st gen) Development Edition.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -46,8 +46,8 @@ ms.date: 07/18/2019
 - [Settings/AllowDateTime](policy-csp-settings.md#settings-allowdatetime)
 - [Settings/AllowVPN](policy-csp-settings.md#settings-allowvpn)
 - [Speech/AllowSpeechModelUpdate](policy-csp-speech.md#speech-allowspeechmodelupdate)
-- [System/AllowTelemetry](policy-csp-system.md#system-allowtelemetry)
-- [System/AllowLocation](policy-csp-system.md#system-allowlocation)
+- [System/AllowTelemetry](policy-csp-system.md#allowtelemetry)
+- [System/AllowLocation](policy-csp-system.md#allowlocation)
 - [Update/AllowAutoUpdate](policy-csp-update.md#update-allowautoupdate)
 - [Update/AllowUpdateService](policy-csp-update.md#update-allowupdateservice)
 - [Update/RequireUpdateApproval](policy-csp-update.md#update-requireupdateapproval)

@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Microsoft network server: Server SPN target name validation level
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, and values, policy management and security considerations for the **Microsoft network server: Server SPN target name validation level** security policy setting.

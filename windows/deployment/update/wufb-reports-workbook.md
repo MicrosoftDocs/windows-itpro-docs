@@ -1,7 +1,6 @@
 ---
 title: Use the workbook for Windows Update for Business reports
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: How to use the Windows Update for Business reports workbook.
 ms.prod: windows-client
 author: mestew

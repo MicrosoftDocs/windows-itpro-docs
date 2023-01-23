@@ -4,10 +4,9 @@ description: The latest news for Windows as a service with resources to help you
 ms.prod: windows-client
 ms.topic: article
 ms.manager: elizapo
-author: aczechowski
-ms.author: aaroncz
-ms.reviewer: 
-manager: dougeby
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: high
 ms.technology: itpro-updates
 ms.date: 12/31/2017

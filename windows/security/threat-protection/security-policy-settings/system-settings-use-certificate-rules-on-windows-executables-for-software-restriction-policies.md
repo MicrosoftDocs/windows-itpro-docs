@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # System settings: Use certificate rules on Windows executables for Software Restriction Policies
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **System settings: Use certificate rules on Windows executables for Software Restriction Policies** security policy setting.
