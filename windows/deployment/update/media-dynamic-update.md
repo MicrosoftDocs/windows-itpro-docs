@@ -188,7 +188,7 @@ Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\install.wim" -Index 1 -Pa
 #
 # update Windows Recovery Environment (WinRE)
 #
-Copy-Item -Path $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Destination $WORKING_PATH"\winre.wim" -Force -Recurse -ErrorAction stop | Out-Null
+Copy-Item -Path $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Destination $WORKING_PATH"\winre.wim" -Force -ErrorAction stop | Out-Null
 Write-Output "$(Get-TS): Mounting WinRE"
 Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim" -Index 1 -Path $WINRE_MOUNT -ErrorAction stop | Out-Null
 
@@ -417,7 +417,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
 
     # If second image, save setup.exe for later use. This will address possible binary mismatch with the version in the main OS \sources folder
     if ($IMAGE.ImageIndex -eq "2") {
-        Copy-Item -Path $WINPE_MOUNT"\sources\setup.exe" -Destination $WORKING_PATH"\setup.exe" -Force -Recurse -ErrorAction stop | Out-Null
+        Copy-Item -Path $WINPE_MOUNT"\sources\setup.exe" -Destination $WORKING_PATH"\setup.exe" -Force -ErrorAction stop | Out-Null
     }
         
     # Dismount
@@ -501,7 +501,7 @@ Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $LCU_PATH -ErrorAction stop
 # Copy our updated recovery image from earlier into the main OS
 # Note: If I were updating more than 1 edition, I'd want to copy the same recovery image file
 # into each edition to enable single instancing
-Copy-Item -Path $WORKING_PATH"\winre.wim" -Destination $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Force -Recurse -ErrorAction stop | Out-Null
+Copy-Item -Path $WORKING_PATH"\winre.wim" -Destination $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Force -ErrorAction stop | Out-Null
 
 # Perform image cleanup
 Write-Output "$(Get-TS): Performing image cleanup on main OS"
@@ -543,7 +543,7 @@ Write-Output "$(Get-TS): Adding package $SETUP_DU_PATH"
 cmd.exe /c $env:SystemRoot\System32\expand.exe $SETUP_DU_PATH -F:* $MEDIA_NEW_PATH"\sources" | Out-Null
 
 # Copy setup.exe from boot.wim, saved earlier.
-Copy-Item -Path $WORKING_PATH"\setup.exe" -Destination $MEDIA_NEW_PATH"\sources\setup.exe" -Force -Recurse -ErrorAction stop | Out-Null
+Copy-Item -Path $WORKING_PATH"\setup.exe" -Destination $MEDIA_NEW_PATH"\sources\setup.exe" -Force -ErrorAction stop | Out-Null
 
 ```
 
