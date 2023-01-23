@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Network security: Allow LocalSystem NULL session fallback
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Network security: Allow LocalSystem NULL session fallback** security policy setting.

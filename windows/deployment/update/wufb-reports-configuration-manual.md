@@ -1,7 +1,6 @@
 ---
 title: Manually configuring devices for Windows Update for Business reports
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: How to manually configure devices for Windows Update for Business reports
 ms.prod: windows-client
 author: mestew

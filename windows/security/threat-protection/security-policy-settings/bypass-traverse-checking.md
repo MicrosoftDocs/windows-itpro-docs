@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Bypass traverse checking
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).

@@ -1,7 +1,7 @@
 ---
 title: Fix issues found by the Readiness assessment tool
-description: This article details how to fix issues found by the Readiness assessment tool
-ms.date: 11/17/2022
+description: This article details how to fix issues found by the Readiness assessment tool.
+ms.date: 01/12/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -15,6 +15,9 @@ msreviewer: hathind
 # Fix issues found by the Readiness assessment tool
 
 Seeing issues with your tenant? This article details how to remediate issues found with your tenant.
+
+> [!NOTE]
+> If you need more assistance with tenant enrollment, you can [submit a tenant enrollment support request](../prepare/windows-autopatch-enrollment-support-request.md).
 
 ## Check results
 
@@ -42,9 +45,9 @@ This setting must be turned on to avoid a "lack of permissions" error when we in
 | ----- | ----- |
 | Not ready | Allow access to unlicensed admins should be turned on. Without this setting enabled, errors can occur when we try to access your Azure AD organization for service. You can safely enable this setting without worrying about security implications. The scope of access is defined by the roles assigned to users, including our operations staff.<p><p>For more information, see [Unlicensed admins](/mem/intune/fundamentals/unlicensed-admins). |
 
-### Update rings for Windows 10 or later
+### Deployment rings for Windows 10 or later
 
-Your "Windows 10 update ring" policy in Intune must not target any Windows Autopatch devices.
+Your "Windows 10 deployment ring" policy in Intune must not target any Windows Autopatch devices.
 
 | Result | Meaning |
 | ----- | ----- |

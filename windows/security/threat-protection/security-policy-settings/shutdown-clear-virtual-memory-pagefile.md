@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Shutdown: Clear virtual memory pagefile 
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Shutdown: Clear virtual memory pagefile** security policy setting.

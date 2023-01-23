@@ -5,7 +5,6 @@ ms.author: lizlong
 ms.topic: article
 ms.prod: windows-client
 author: lizgt2000
-ms.reviewer: 
 manager: aaroncz
 ms.technology: itpro-updates
 ms.date: 12/31/2017

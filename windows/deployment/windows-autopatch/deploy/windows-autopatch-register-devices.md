@@ -86,7 +86,7 @@ For more information, see [Windows Autopatch Prerequisites](../prepare/windows-a
 
 ## About the Ready, Not ready and Not registered tabs
 
-Windows Autopatch has three tabs within its device blade. Each tab is designed to provide a different set of device readiness status so IT admin knows where to go to monitor, and troubleshoot potential device health issues.
+Windows Autopatch has three tabs within its device blade. Each tab is designed to provide a different set of device readiness statuses so IT admin knows where to go to monitor, and fix potential device health issues.
 
 | Device blade tab | Purpose | Expected device readiness status |
 | ----- | ----- | ----- |

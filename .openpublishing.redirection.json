@@ -742,12 +742,12 @@
     },
     {
       "source_path": "windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-if-server-agrees.md",
-      "redirect_url": "/windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-client-digitally-sign-communications-if-server-agrees",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-if-client-agress.md",
-      "redirect_url": "/windows/security/threat-protectionsecurity-policy-settings/smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
@@ -3447,7 +3447,7 @@
     },
     {
       "source_path": "windows/device-security/security-policy-settings/microsoft-network-client-digitally-sign-communications-if-server-agrees.md",
-      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-if-server-agrees",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
@@ -3472,7 +3472,7 @@
     },
     {
       "source_path": "windows/device-security/security-policy-settings/microsoft-network-server-digitally-sign-communications-if-client-agrees.md",
-      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-if-client-agrees",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
@@ -12392,12 +12392,12 @@
     },
     {
       "source_path": "windows/keep-secure/microsoft-network-client-digitally-sign-communications-always.md",
-      "redirect_url": "/windows/device-security/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/keep-secure/microsoft-network-client-digitally-sign-communications-if-server-agrees.md",
-      "redirect_url": "/windows/device-security/security-policy-settings/microsoft-network-client-digitally-sign-communications-if-server-agrees",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
@@ -12417,12 +12417,12 @@
     },
     {
       "source_path": "windows/keep-secure/microsoft-network-server-digitally-sign-communications-always.md",
-      "redirect_url": "/windows/device-security/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/keep-secure/microsoft-network-server-digitally-sign-communications-if-client-agrees.md",
-      "redirect_url": "/windows/device-security/security-policy-settings/microsoft-network-server-digitally-sign-communications-if-client-agrees",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
@@ -20293,6 +20293,46 @@
     {
       "source_path": "windows/security/identity-protection/hello-for-business/reset-security-key.md",
       "redirect_url": "/azure/active-directory/authentication/howto-authentication-passwordless-security-key",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/provisioning-packages/provision-pcs-with-apps-and-certificates.md",
+      "redirect_url": "/windows/configuration/provisioning-packages/provision-pcs-with-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/configuration/cortana-at-work/cortana-at-work-crm.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/cortana-at-work/cortana-at-work-powerbi.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/manage-wifi-sense-in-enterprise.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-client-digitally-sign-communications-always.md",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-client-digitally-sign-communications-if-server-agrees.md",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-server-digitally-sign-communications-always.md",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees.md",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {

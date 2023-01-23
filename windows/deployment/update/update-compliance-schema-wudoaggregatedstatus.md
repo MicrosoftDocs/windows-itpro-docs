@@ -1,7 +1,6 @@
 ---
 title: Update Compliance Schema - WUDOAggregatedStatus
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: WUDOAggregatedStatus schema
 ms.prod: windows-client
 author: mestew

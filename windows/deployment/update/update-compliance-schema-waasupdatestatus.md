@@ -1,7 +1,6 @@
 ---
 title: Update Compliance Schema - WaaSUpdateStatus
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: WaaSUpdateStatus schema
 ms.prod: windows-client
 author: mestew

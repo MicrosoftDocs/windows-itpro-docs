@@ -1,7 +1,6 @@
 ---
 title: Windows Update for Business reports feedback, support, and troubleshooting
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: Windows Update for Business reports support information.
 ms.prod: windows-client
 author: mestew

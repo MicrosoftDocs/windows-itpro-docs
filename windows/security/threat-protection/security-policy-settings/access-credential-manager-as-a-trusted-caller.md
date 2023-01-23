@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Access Credential Manager as a trusted caller
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This article describes the recommended practices, location, values, policy management, and security considerations for the **Access Credential Manager as a trusted caller** security policy setting.

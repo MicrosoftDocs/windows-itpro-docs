@@ -1,6 +1,6 @@
 ---
 title: Get started with Update Compliance
-manager: aczechowski
+manager: aaroncz
 description: Prerequisites, Azure onboarding, and configuring devices for Update Compliance
 ms.prod: windows-client
 author: mestew
