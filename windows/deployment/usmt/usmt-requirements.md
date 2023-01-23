@@ -1,5 +1,5 @@
 ---
-title: USMT Requirements (Windows 10)
+title: USMT Requirements (Windows 11)
 description: While the User State Migration Tool (USMT) doesn't have many requirements, these tips and tricks can help smooth the migration process.
 ms.reviewer: 
 manager: aaroncz
@@ -15,7 +15,7 @@ ms.technology: itpro-deploy
 
 ## Supported operating systems
 
-The User State Migration Tool (USMT) 10.0 doesn't have any explicit RAM or CPU speed requirements for either the source or destination computers. If your computer complies with the system requirements of the operating system, it also complies with the requirements for USMT. You need an intermediate store location large enough to hold all of the migrated data and settings, and the same amount of hard disk space on the destination computer for the migrated files and settings.
+The User State Migration Tool (USMT) 11.0 doesn't have any explicit RAM or CPU speed requirements for either the source or destination computers. If your computer complies with the system requirements of the operating system, it also complies with the requirements for USMT. You need an intermediate store location large enough to hold all of the migrated data and settings, and the same amount of hard disk space on the destination computer for the migrated files and settings.
 
 The following table lists the operating systems supported in USMT.
 
@@ -27,6 +27,7 @@ The following table lists the operating systems supported in USMT.
 |64-bit versions of Windows 8|✔️|✔️|
 |32-bit versions of Windows 10|✔️|✔️|
 |64-bit versions of Windows 10|✔️|✔️|
+|64-bit versions of Windows 11|✔️|✔️|
 
 > [!NOTE]
 > You can migrate a 32-bit operating system to a 64-bit operating system. However, you cannot migrate a 64-bit operating system to a 32-bit operating system.
@@ -34,7 +35,7 @@ The following table lists the operating systems supported in USMT.
 ## Unsupported scenarios
 
 - USMT doesn't support any of the Windows Server® operating systems.
-- USMT for Windows 10 shouldn't be used for migrating between previous versions of Windows. USMT for Windows 10 is only meant to migrate to Windows 10 or between Windows 10 versions. For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) overview](/previous-versions/windows/hh825227(v=win.10)).
+- USMT for Windows 10/11 shouldn't be used for migrating between previous versions of Windows. USMT for Windows 10 is only meant to migrate to Windows 10 or between Windows 10 versions. For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) overview](/previous-versions/windows/hh825227(v=win.10)).
 
 ## Windows PE
 
