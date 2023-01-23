@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Network security: Allow PKU2U authentication requests to this computer to use online identities
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This article describes the best practices, location, and values for the **Network Security: Allow PKU2U authentication requests to this computer to use online identities** security policy setting.

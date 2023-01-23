@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # System objects: Strengthen default permissions of internal system objects (for example, Symbolic Links)
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **System objects: Strengthen default permissions of internal system objects (e.g. Symbolic Links)** security policy setting.

@@ -2,10 +2,10 @@
 title: Use Windows Update for Business and Windows Server Update Services (WSUS) together
 description: Learn how to use Windows Update for Business and WSUS together using the new scan source policy.
 ms.prod: windows-client
-author: arcarley
+author: mestew
 ms.localizationpriority: medium
-ms.author: arcarley
-manager: dougeby
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017

@@ -1,7 +1,6 @@
 ---
 title: Windows Update for Business reports configuration script
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: Downloading and using the Windows Update for Business reports configuration script
 ms.prod: windows-client
 author: mestew

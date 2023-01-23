@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Network security: Do not store LAN Manager hash value on next password change
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network security: Do not store LAN Manager hash value on next password change** security policy setting.

@@ -51,7 +51,7 @@ Windows Autopatch Service Engineering Team is in the United States, India and Ro
 
 ## Microsoft Windows 10/11 diagnostic data
 
-Windows Autopatch uses [Windows 10/11 Enhanced diagnostic data](/windows/privacy/windows-diagnostic-data) to keep Windows secure, up to date, troubleshoot problems, and make product improvements.
+Windows Autopatch uses [Windows 10/11 Enhanced diagnostic data](/windows/privacy/windows-diagnostic-data) to keep Windows secure, up to date, fix problems, and make product improvements.
 
 The enhanced diagnostic data setting includes more detailed information about the devices enrolled in Windows Autopatch and their settings, capabilities, and device health. When enhanced diagnostic data is selected, data, including required diagnostic data, are collected. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection) about the Windows 10 diagnostic data setting and data collection.
 
