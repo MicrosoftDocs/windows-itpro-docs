@@ -189,7 +189,7 @@ sections:
           - The *certificate trust* model authenticates to Active Directory by using a certificate. Therefore, you need to issue certificates to users. The certificate used in certificate trust uses the TPM-protected private key to request a certificate from your enterprise's issuing CA
       - question: What is convenience PIN?
         answer: |
-          *Convenience PIN* provides a simple way to sign in to Windows, but it still uses a password for authentication. Organizations using convenience PINs should move to **Windows Hello for Business**. New Windows deployments should deploy Windows Hello for Business and not convenience PINs.
+          *Convenience PIN* provides a simpler way to sign in to Windows than passwords, but it still uses a password for authentication. When the correct convenience PIN is provided to Windows, the password information is loaded from its cache and authenticates the user. Organizations using convenience PINs should move to **Windows Hello for Business**. New Windows deployments should deploy Windows Hello for Business and not convenience PINs.
       - question: Can I use a convenience PIN with Azure Active Directory?
         answer: |
           No. While it's possible to set a convenience PIN on Azure AD joined and hybrid Azure AD joined devices, convenience PIN isn't supported for Azure AD user accounts (including synchronized identities). Convenience PIN is only supported for on-premises Active Directory users and local account users.
