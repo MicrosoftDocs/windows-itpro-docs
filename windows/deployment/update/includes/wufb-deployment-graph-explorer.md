@@ -22,4 +22,8 @@ For this tutorial, you'll use Graph Explorer to make requests to the [Microsoft 
     
        :::image type="content" source="../media/7512398-wufbds-graph-modify-permission.png" alt-text="Screenshot of the modify permissions tab in Graph Explorer":::
 
-
+1. To make requests:
+   1. Select either GET, POST, PUT, PATCH, or DELETE from the drop-down list for the HTTP verb.
+   1. 
+   1. If you need to modify the request body, you can do so in the **Request body** tab.
+   1. Select the **Run query** button. The results will appear in the **Response** window.
