@@ -791,8 +791,6 @@ This policy setting is applied when BitLocker is turned on.
 
 The **Allow data recovery agent** check box is used to specify whether a data recovery agent can be used with BitLocker-protected operating system drives. Before a data recovery agent can be used, it must be added from **Public Key Policies**, which is located in the Group Policy Management Console (GPMC) or in the Local Group Policy Editor.
 
-For more information about adding data recovery agents, see [BitLocker basic deployment](bitlocker-basic-deployment.md).
-
 In **Configure user storage of BitLocker recovery information**, select whether users are allowed, required, or not allowed to generate a 48-digit recovery password.
 
 Select **Omit recovery options from the BitLocker setup wizard** to prevent users from specifying recovery options when they enable BitLocker on a drive. This policy setting means that which recovery option to use when BitLocker is enabled can't be specified. Instead, BitLocker recovery options for the drive are determined by the policy setting.
