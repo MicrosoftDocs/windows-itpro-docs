@@ -31,66 +31,26 @@
       items: 
       - name: Overview
         href: hello-hybrid-key-trust.md
-      - name: Prerequisites
-        href: hello-hybrid-key-trust-prereqs.md
-      - name: New installation baseline
-        href: hello-hybrid-key-new-install.md
-      - name: Configure directory synchronization
-        href: hello-hybrid-key-trust-dirsync.md
-      - name: Configure Azure AD device registration
-        href: hello-hybrid-key-trust-devreg.md
-      - name: Configure Windows Hello for Business settings
-        items:
-        - name: Overview
-          href: hello-hybrid-key-whfb-settings.md
-        - name: Configure Active Directory
-          href: hello-hybrid-key-whfb-settings-ad.md
-        - name: Configure Azure AD Connect Sync
-          href: hello-hybrid-key-whfb-settings-dir-sync.md
-        - name: Configure PKI
-          href: hello-hybrid-key-whfb-settings-pki.md
-        - name: Configure Group Policy settings
-          href: hello-hybrid-key-whfb-settings-policy.md
-      - name: Sign-in and provision Windows Hello for Business
-        href: hello-hybrid-key-whfb-provision.md
-      - name: On-premises SSO for Azure AD joined devices
+      - name: Configure and validate the PKI
+        href: hello-hybrid-key-trust-validate-pki.md
+      - name: Configure and provision Windows Hello for Business
+        href: hello-hybrid-key-trust-provision.md
+      - name: Configure SSO for Azure AD joined devices
         href: hello-hybrid-aadj-sso.md
-      - name: Configure Azure AD joined devices for on-premises SSO
-        href: hello-hybrid-aadj-sso-base.md
     - name: Certificate trust deployment
       items: 
       - name: Overview
         href: hello-hybrid-cert-trust.md
-      - name: Prerequisites
-        href: hello-hybrid-cert-trust-prereqs.md
-      - name: New installation baseline
-        href: hello-hybrid-cert-new-install.md
-      - name: Configure Azure AD device registration
-        href: hello-hybrid-cert-trust-devreg.md
-      - name: Configure Windows Hello for Business settings
-        items:
-        - name: Overview
-          href: hello-hybrid-cert-whfb-settings.md
-        - name: Configure Active Directory
-          href: hello-hybrid-cert-whfb-settings-ad.md
-        - name: Configure Azure AD Connect Sync
-          href: hello-hybrid-cert-whfb-settings-dir-sync.md
-        - name: Configure PKI
-          href: hello-hybrid-cert-whfb-settings-pki.md
-        - name: Configure AD FS
-          href: hello-hybrid-cert-whfb-settings-adfs.md
-        - name: Configure Group Policy settings
-          href: hello-hybrid-cert-whfb-settings-policy.md
-      - name: Sign-in and provision Windows Hello for Business
+      - name: Configure and validate the PKI
+        href: hello-hybrid-cert-trust-validate-pki.md
+      - name: Configure AD FS
+        href: hello-hybrid-cert-whfb-settings-adfs.md
+      - name: Configure and provision Windows Hello for Business
         href: hello-hybrid-cert-whfb-provision.md
-      - name: On-premises SSO for Azure AD joined devices
+      - name: Configure SSO for Azure AD joined devices
         href: hello-hybrid-aadj-sso.md
-      - name: Configure Azure AD joined devices for on-premises SSO
-        href: hello-hybrid-aadj-sso-base.md
-      - name: Using certificates for on-premises SSO
+      - name: Deploy certificates to Azure AD joined devices
         href: hello-hybrid-aadj-sso-cert.md
-    - name: Planning for Domain Controller load
-      href: hello-adequate-domain-controllers.md
   - name: On-premises deployments
     items:
     - name: Key trust deployment
@@ -99,7 +59,7 @@
         href: hello-deployment-key-trust.md
       - name: Validate Active Directory prerequisites
         href: hello-key-trust-validate-ad-prereq.md
-      - name: Configure and validate Public Key Infrastructure (PKI)
+      - name: Configure and validate the PKI
         href: hello-key-trust-validate-pki.md
       - name: Prepare and deploy Active Directory Federation Services (AD FS)
         href: hello-key-trust-adfs.md
@@ -121,8 +81,8 @@
         href: hello-cert-trust-validate-deploy-mfa.md
       - name: Configure Windows Hello for Business policy settings
         href: hello-cert-trust-policy-settings.md
-    - name: Planning for Domain Controller load
-      href: hello-adequate-domain-controllers.md
+  - name: Planning for Domain Controller load
+    href: hello-adequate-domain-controllers.md
   - name: Deploy certificates for remote desktop (RDP) sign-in
     href: hello-deployment-rdp-certs.md
 - name: How-to Guides
