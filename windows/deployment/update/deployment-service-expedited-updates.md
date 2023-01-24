@@ -24,7 +24,7 @@ In this tutorial, you will:
 
 ## Prerequisites
 
-? This requires an extra license at the moment correct? Of does the client have to be listed as intune managed ate the moment?
+? This requires an extra license at the moment correct? Of does the client have to be listed as intune managed at the moment?
 
 ## Open Graph Explorer
 
