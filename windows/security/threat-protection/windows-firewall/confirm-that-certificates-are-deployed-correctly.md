@@ -1,19 +1,12 @@
 ---
 title: Confirm That Certificates Are Deployed Correctly (Windows)
 description: Learn how to confirm that a Group Policy is being applied as expected and that the certificates are being properly installed on the workstations.
-ms.assetid: de0c8dfe-16b0-4d3b-8e8f-9282f6a65eee
-ms.reviewer: jekrynit
 ms.author: paoloma
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: securit
-ms.localizationpriority: medium
 author: paolomatarazzo
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
-ms.date: 09/07/2021
+ms.date: 01/24/2023
 ms.technology: itpro-security
 appliesto: 
   - ✅ <b>Windows 10</b>
@@ -24,7 +17,6 @@ appliesto:
 ---
 
 # Confirm That Certificates Are Deployed Correctly
-
 
 After configuring your certificates and autoenrollment in Group Policy, you can confirm that the policy is being applied as expected, and that the certificates are being properly installed on the workstation devices.
 
@@ -37,23 +29,21 @@ To complete these procedures, you must be a member of the Domain Administrators 
 In this topic:
 
 -   [Refresh Group Policy on a device](#to-refresh-group-policy-on-a-device)
-
 -   [Verify that a certificate is installed](#to-verify-that-a-certificate-is-installed)
 
 ## To refresh Group Policy on a device
 
  From an elevated command prompt, run the following command:
 
-``` syntax
-gpupdate /target:computer /force
+``` cmd
+gpupdate /target:computer /force
 ```
 
 After Group Policy is refreshed, you can see which GPOs are currently applied to the device.
 
 ## To verify that a certificate is installed
 
-1.  Open the Cerificates console.
-
-2.  In the navigation pane, expand **Trusted Root Certification Authorities**, and then click **Certificates**.
+1.  Open the Certificates console
+1.  In the navigation pane, expand **Trusted Root Certification Authorities**, and then click **Certificates**
 
     The CA that you created appears in the list.
