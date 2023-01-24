@@ -1,7 +1,6 @@
 ---
 title: Windows Update for Business reports Data Schema - UCUpdateAlert
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: UCUpdateAlert schema
 ms.prod: windows-client
 author: mestew

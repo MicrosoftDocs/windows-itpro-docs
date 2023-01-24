@@ -1,12 +1,12 @@
 ---
 title: Determine application readiness
-manager: dougeby
+manager: aaroncz
 description: How to test your apps to know which need attention prior to deploying an update
 ms.prod: windows-client
 ms.localizationpriority: medium
 ms.topic: article
-ms.author: aaroncz
-author: aczechowski
+ms.author: mstewart
+author: mestew
 ms.technology: itpro-updates
 ms.date: 12/31/2017
 ---

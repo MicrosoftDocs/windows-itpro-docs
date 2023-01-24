@@ -471,7 +471,7 @@ This policy setting is used to determine what certificate to use with BitLocker.
 
 This policy setting is applied when BitLocker is turned on.
 
-The object identifier is specified in the enhanced key usage (EKU) of a certificate. BitLocker can identify which certificates can be used to authenticate a user certificate to a BitLocker-protected drive by matching the object identifier in the certificate with the object identifier that is defined by this policy setting.
+The object identifier is specified in the extended key usage (EKU) of a certificate. BitLocker can identify which certificates can be used to authenticate a user certificate to a BitLocker-protected drive by matching the object identifier in the certificate with the object identifier that is defined by this policy setting.
 
 The default object identifier is 1.3.6.1.4.1.311.67.1.1.
 

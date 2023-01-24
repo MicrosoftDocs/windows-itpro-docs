@@ -1,13 +1,11 @@
 ---
 title: Update Compliance - Safeguard Holds report
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: Learn how the Safeguard Holds report provides information about safeguard holds in your population.
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates
 ms.date: 12/31/2017
 ---

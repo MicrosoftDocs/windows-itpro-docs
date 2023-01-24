@@ -5,8 +5,7 @@ ms.prod: windows-client
 author: mestew
 ms.localizationpriority: medium
 ms.author: mstewart
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017
