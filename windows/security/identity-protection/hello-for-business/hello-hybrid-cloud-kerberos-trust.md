@@ -1,5 +1,5 @@
 ---
-title: Windows Hello for Business Cloud Kerberos trust deployment
+title: Windows Hello for Business cloud Kerberos trust deployment
 description: Learn how to deploy Windows Hello for Business in a cloud Kerberos trust scenario.
 ms.date: 11/1/2022
 appliesto: 
@@ -8,7 +8,7 @@ ms.topic: article
 ---
 # Cloud Kerberos trust deployment
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cloudkerb-trust.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cloudkerb-trust.md)]
 
 Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to successfully deploy Windows Hello for Business in a cloud Kerberos trust scenario.
 
@@ -189,7 +189,7 @@ The cloud Kerberos trust prerequisite check detects whether the user has a parti
 This is the process that occurs after a user signs in, to enroll in Windows Hello for Business:
 
 1. The user is prompted with a full screen page to use Windows Hello with the organization account. The user selects **OK**
-1. The provisioning flow proceeds to the multi-factor authentication portion of the enrollment.  Provisioning informs the user that it's actively attempting to contact the user through their configured form of MFA. The provisioning process doesn't proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry
+1. The provisioning flow proceeds to the multi-factor authentication portion of the enrollment. Provisioning informs the user that it's actively attempting to contact the user through their configured form of MFA. The provisioning process doesn't proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry
 1. After a successful MFA, the provisioning flow asks the user to create and validate a PIN. This PIN must observe any PIN complexity policies configured on the device
 
 :::image type="content" source="images/haadj-whfb-pin-provisioning.gif" alt-text="Animation showing a user logging on to an HAADJ device with a password, and being prompted to enroll in Windows Hello for Business.":::
@@ -261,7 +261,7 @@ Windows Hello for Business cloud Kerberos trust can't be used as a supplied cred
 
 No, only the number necessary to handle the load from all cloud Kerberos trust devices.
 
----
+<!--links-->
 
 [AZ-1]: /azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises
 [AZ-2]: /azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azure-ad-kerberos-powershell-module

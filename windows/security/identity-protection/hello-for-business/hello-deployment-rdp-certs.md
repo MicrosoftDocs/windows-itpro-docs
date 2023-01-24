@@ -12,9 +12,9 @@ appliesto:
 # Deploy certificates for remote desktop (RDP) sign-in
 
 This document describes Windows Hello for Business functionalities or scenarios that apply to:
-- **Deployment type:** [!INCLUDE [hybrid](../../includes/hello-deployment-hybrid.md)]
-- **Trust type:** [!INCLUDE [cloud-kerberos](../../includes/hello-trust-cloud-kerberos.md)], [!INCLUDE [key](../../includes/hello-trust-key.md)]
-- **Join type:** [!INCLUDE [hello-join-aadj](../../includes/hello-join-aad.md)], [!INCLUDE [hello-join-hybrid](../../includes/hello-join-hybrid.md)]
+- **Deployment type:** [!INCLUDE [hybrid](./includes/hello-deployment-hybrid.md)]
+- **Trust type:** [!INCLUDE [cloud-kerberos](./includes/hello-trust-cloud-kerberos.md)], [!INCLUDE [key](./includes/hello-trust-key.md)]
+- **Join type:** [!INCLUDE [hello-join-aadj](./includes/hello-join-aad.md)], [!INCLUDE [hello-join-hybrid](./includes/hello-join-hybrid.md)]
 ---
 
 Windows Hello for Business supports using a certificate as the supplied credential, when establishing a remote desktop connection to another Windows device. This document discusses three approaches for *cloud Kerberos trust* and *key trust* deployments, where authentication certificates can be deployed to an existing Windows Hello for Business user:
@@ -30,11 +30,7 @@ Windows Hello for Business supports using a certificate as the supplied credenti
 
 To deploy certificates using an on-premises Active Directory Certificate Services enrollment policy, you must first create a *certificate template*, and then deploy certificates based on that template.
 
-Expand the following sections to learn more about the process.
-
-<br>
-<details>
-<summary><b>Create a Windows Hello for Business certificate template</b></summary>
+### Create a Windows Hello for Business certificate template
 
 Follow these steps to create a certificate template:
 
@@ -81,11 +77,7 @@ Follow these steps to create a certificate template:
 1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and select **OK**. It can take some time for the template to replicate to all servers and become available in this list
 1. After the template replicates, in the MMC, right-click in the Certification Authority list, select **All Tasks > Stop Service**. Right-click the name of the CA again, select **All Tasks > Start Service**
 
-</details>
-
-<br>
-<details>
-<summary><b>Request a certificate</b></summary>
+### Request a certificate
 
 1. Sign in to a client that is hybrid Azure AD joined, ensuring that the client has line of sight to a domain controller and the issuing CA
 1. Open the **Certificates - Current User** Microsoft Management Console (MMC). To do so, you can execute the command `certmgr.msc`
@@ -94,8 +86,6 @@ Follow these steps to create a certificate template:
 1. Under *Select Certificate Enrollment Policy*, select **Active Directory Enrollment Policy > Next**
 1. Under *Request Certificates*, select the check-box for the certificate template you created in the previous section (*WHfB Certificate Authentication*) and then select **Enroll**
 1. After a successful certificate request, select **Finish** on the Certificate Installation Results screen
-
-</details>
 
 ## Deploy certificates via Intune
 
@@ -111,9 +101,7 @@ Next, you should deploy the root CA certificate (and any other intermediate cert
 
 Once these requirements are met, a policy can be configured in Intune that provisions certificates for the users on the targeted device.
 
-<br>
-<details>
-<summary><b>Create a policy in Intune</b></summary>
+### Create a policy in Intune
 
 This section describes how to configure a SCEP policy in Intune. Similar steps can be followed to configure a PKCS policy.
 
@@ -147,19 +135,14 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
 For more information how to configure SCEP policies, see [Configure SCEP certificate profiles in Intune][MEM-3].
 To configure PKCS policies, see [Configure and use PKCS certificate with Intune][MEM-4].
 
-</details>
+### Request a certificate for Intune clients
 
-<br>
-<details>
-<summary><b>Request a certificate</b></summary>
 Once the Intune policy is created, targeted clients will request a certificate during their next policy refresh cycle. To validate that the certificate is present in the user store, follow these steps:
 
 1. Sign in to a client targeted by the Intune policy
 1. Open the **Certificates - Current User** Microsoft Management Console (MMC). To do so, you can execute the command `certmgr.msc`
 1. In the left pane of the MMC, expand **Personal** and select **Certificates**
 1. In the right-hand pane of the MMC, check for the new certificate
-
-</details>
 
 ## Use third-party certification authorities
 

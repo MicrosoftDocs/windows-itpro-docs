@@ -9,7 +9,7 @@ ms.topic: tutorial
 ---
 # Validate Active Directory prerequisites - on-premises key trust
 
-[!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
+[!INCLUDE [hello-on-premises-key-trust](./includes/hello-on-premises-key-trust.md)]
 
 Key trust deployments need an adequate number of domain controllers to ensure successful user authentication with Windows Hello for Business. To learn more about domain controller planning for key trust deployments, read the [Windows Hello for Business planning guide](hello-planning-guide.md) and the [Planning an adequate number of Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) section.
 
