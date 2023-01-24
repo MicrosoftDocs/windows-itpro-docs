@@ -52,7 +52,7 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
    4.  **User (using Kerberos V5)**. Selecting this option tells the computer to use and require authentication of the currently signed-in user by using their domain credentials.
 
-   5.  **Computer certificate from this certification authority**. Selecting this option and entering the identification of a certification authority (CA) tells the computer to use and require authentication by using a certificate that is issued by the selected CA. If you also select **Accept only health certificates**, then only certificates that include the system health authentication enhanced key usage (EKU) typically provided in a Network Access Protection (NAP) infrastructure can be used for this rule.
+   5.  **Computer certificate from this certification authority**. Selecting this option and entering the identification of a certification authority (CA) tells the computer to use and require authentication by using a certificate that is issued by the selected CA. If you also select **Accept only health certificates**, then only certificates that include the system health authentication extended key usage (EKU) typically provided in a Network Access Protection (NAP) infrastructure can be used for this rule.
 
    6.  **Advanced**. Click **Customize** to specify a custom combination of authentication methods required for your scenario. You can specify both a **First authentication method** and a **Second authentication method**.
 

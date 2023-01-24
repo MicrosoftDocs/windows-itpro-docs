@@ -108,7 +108,7 @@ manager: aaroncz
 <!--Description-->
 This policy setting lets you allow certificates without an Extended Key Usage (EKU) set to be used for signing in.
 
-In versions of Windows, prior to Windows Vista, smart card certificates that are used for a sign-in require an enhanced key usage (EKU) extension with a smart card logon object identifier. This policy setting can be used to modify that restriction.
+In versions of Windows, prior to Windows Vista, smart card certificates that are used for a sign-in require an extended key usage (EKU) extension with a smart card logon object identifier. This policy setting can be used to modify that restriction.
 
 If you enable this policy setting, certificates with the following attributes can also be used to sign in on with a smart card:
 

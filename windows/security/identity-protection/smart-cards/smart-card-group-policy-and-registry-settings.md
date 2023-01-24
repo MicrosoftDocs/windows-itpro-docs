@@ -93,10 +93,10 @@ The following table lists the default values for these GPO settings. Variations 
 
 ### Allow certificates with no extended key usage certificate attribute
 
-You can use this policy setting to allow certificates without an enhanced key usage (EKU) set to be used for sign-in.
+You can use this policy setting to allow certificates without an extended key usage (EKU) set to be used for sign-in.
 
 > [!NOTE]
-> Enhanced key usage certificate attribute is also known as extended key usage.
+> extended key usage certificate attribute is also known as extended key usage.
 > 
 > In versions of Windows before Windows Vista, smart card certificates that are used to sign in require an EKU extension with a smart card logon object identifier. This policy setting can be used to modify that restriction.
 
