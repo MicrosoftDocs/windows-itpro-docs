@@ -1,7 +1,7 @@
 ---
 title: Windows quality update signals
 description: This article explains the Windows quality update signals
-ms.date: 05/30/2022
+ms.date: 01/24/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -57,5 +57,3 @@ Autopatch monitors the following reliability signals:
 | Microsoft Teams reliability | Tracks the number of Microsoft Teams crashes and freezes per device. |
 
 When the update is released to the First ring, the service crosses the 500 device threshold. Therefore, Autopatch can to detect regressions, which are common to all customers. At this point in the release, we'll decide if we need to change the release schedule or pause for all customers.
-
-Once your tenant reaches 500 devices, Windows Autopatch starts generating recommendations specific to your devices. Based on this information, the service starts developing insights specific to your tenant allowing a customized response to what's happening in your environment.
