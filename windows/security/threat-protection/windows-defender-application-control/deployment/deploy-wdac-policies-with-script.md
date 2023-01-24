@@ -31,11 +31,9 @@ This article describes how to deploy Windows Defender Application Control (WDAC)
 You should now have one or more WDAC policies converted into binary form. If not, follow the steps described in [Deploying Windows Defender Application Control (WDAC) policies](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
 > [!IMPORTANT]
-> Due to an existing bug, you should avoid rebootlessly activating new **signed** WDAC Base policies on systems with **memory integrity** enabled (also known as hypervisor-protected code integrity or HVCI). Skip all steps below that use citool.exe, RefreshPolicy.exe, or WMI to initiate a policy activation. Instead, follow the steps to copy the policy binary to the correct system32 and EFI locations and then activate the policy with a system restart.
+> Due to a known issue, you should always activate new **signed** WDAC Base policies with a reboot on systems with [**memory integrity**](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) enabled. Skip all steps below that use citool.exe, RefreshPolicy.exe, or WMI to initiate a policy activation. Instead, copy the policy binary to the correct system32 and EFI locations and then activate the policy with a system restart.
 >
-> Updates to signed Base policies that are already active on the system can be done rebootlessly.
->
-> This bug doesn't affect deployment of any unsigned policies or any supplemental policies (signed or unsigned).
+> This issue does not affect updates to signed Base policies that are already active on the system, deployment of unsigned policies, or deployment of supplemental policies (signed or unsigned). It also does not affect deployments to systems that are not running memory integrity.
 
 ## Deploying policies for Windows 11 22H2 and above
 

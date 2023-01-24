@@ -56,11 +56,9 @@ All Windows Defender Application Control policy changes should be deployed in au
 ## Choose how to deploy WDAC policies
 
 > [!IMPORTANT]
-> Due to an existing bug, you should avoid rebootlessly activating new **signed** WDAC Base policies on systems with **memory integrity** enabled (also known as hypervisor-protected code integrity or HVCI). Instead, deploy new signed WDAC Base policies [via script](deployment/deploy-wdac-policies-with-script.md) and activate the policy with a system restart.
+> Due to a known issue, you should always activate new **signed** WDAC Base policies with a reboot on systems with [**memory integrity**](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) enabled. We recommend [deploying via script](deployment/deploy-wdac-policies-with-script.md) in this case.
 >
-> Updates to signed Base policies that are already active on the system can be done rebootlessly.
->
-> This bug doesn't affect deployment of any unsigned policies or any supplemental policies (signed or unsigned).
+> This issue does not affect updates to signed Base policies that are already active on the system, deployment of unsigned policies, or deployment of supplemental policies (signed or unsigned). It also does not affect deployments to systems that are not running memory integrity.
 
 There are several options to deploy Windows Defender Application Control policies to managed endpoints, including:
 
