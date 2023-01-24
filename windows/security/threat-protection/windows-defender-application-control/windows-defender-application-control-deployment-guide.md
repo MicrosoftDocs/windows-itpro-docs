@@ -8,7 +8,7 @@ author: jgeurten
 ms.reviewer: aaroncz
 ms.author: jogeurte
 manager: jsuther
-ms.date: 10/06/2022
+ms.date: 01/23/2023
 ms.topic: overview
 ---
 
@@ -54,6 +54,13 @@ As with any significant change to your environment, implementing application con
 All Windows Defender Application Control policy changes should be deployed in audit mode before proceeding to enforcement. Carefully monitor events from devices where the policy has been deployed to ensure the block events you observe match your expectation before broadening the deployment to other deployment rings. If your organization uses Microsoft Defender for Endpoint, you can use the Advanced Hunting feature to centrally monitor WDAC-related events. Otherwise, we recommend using an event log forwarding solution to collect relevant events from your managed endpoints.
 
 ## Choose how to deploy WDAC policies
+
+> [!IMPORTANT]
+> Due to an existing bug, you should avoid rebootlessly activating new **signed** WDAC Base policies on systems with **memory integrity** enabled (also known as hypervisor-protected code integrity or HVCI). Instead, deploy new signed WDAC Base policies [via script](deployment/deploy-wdac-policies-with-script.md) and activate the policy with a system restart.
+>
+> Updates to signed Base policies that are already active on the system can be done rebootlessly.
+>
+> This bug doesn't affect deployment of any unsigned policies or any supplemental policies (signed or unsigned).
 
 There are several options to deploy Windows Defender Application Control policies to managed endpoints, including:
 

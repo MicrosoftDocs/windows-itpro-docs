@@ -8,7 +8,7 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 10/06/2022
+ms.date: 01/23/2023
 ms.topic: how-to
 ---
 
@@ -24,6 +24,13 @@ ms.topic: how-to
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 You can use a Mobile Device Management (MDM) solution, like Microsoft Intune, to configure Windows Defender Application Control (WDAC) on client machines. Intune includes native support for WDAC, which can be a helpful starting point, but customers may find the available circle-of-trust options too limiting. To deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI. If your organization uses another MDM solution, check with your solution provider for WDAC policy deployment steps.
+
+> [!IMPORTANT]
+> Due to an existing bug, you should avoid rebootlessly activating new **signed** WDAC Base policies on systems with **memory integrity** enabled (also known as hypervisor-protected code integrity or HVCI). Instead of Mobile Device Management (MDM), deploy new signed WDAC Base policies [via script](deployment/deploy-wdac-policies-with-script.md) and activate the policy with a system restart.
+>
+> Updates to signed Base policies that are already active on the system can be done rebootlessly and using MDM.
+>
+> This bug doesn't affect deployment of any unsigned policies.
 
 ## Use Intune's built-in policies
 

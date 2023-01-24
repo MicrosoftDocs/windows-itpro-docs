@@ -13,7 +13,7 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 10/06/2022
+ms.date: 01/23/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -31,7 +31,14 @@ ms.topic: article
 >
 > Group Policy-based deployment of Windows Defender Application Control policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for policy deployment.
 
-Single-policy format Windows Defender Application Control policies (pre-1903 policy schema) can be easily deployed and managed with Group Policy. 
+> [!IMPORTANT]
+> Due to an existing bug, you should avoid rebootlessly activating new **signed** WDAC Base policies on systems with **memory integrity** enabled (also known as hypervisor-protected code integrity or HVCI). Instead of Group Policy, deploy new signed WDAC Base policies [via script](deployment/deploy-wdac-policies-with-script.md) and activate the policy with a system restart.
+>
+> Updates to signed Base policies that are already active on the system can be done rebootlessly and using Group Policy.
+>
+> This bug doesn't affect deployment of any unsigned policies.
+
+Single-policy format Windows Defender Application Control policies (pre-1903 policy schema) can be easily deployed and managed with Group Policy.
 
 You should now have a WDAC policy converted into binary form. If not, follow the steps described in [Deploying Windows Defender Application Control (WDAC) policies](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
