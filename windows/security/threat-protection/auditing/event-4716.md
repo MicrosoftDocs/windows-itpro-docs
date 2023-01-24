@@ -181,7 +181,7 @@ After the event, one more event ID is generated:
 Log Name:      Security
 Source:        Microsoft-Windows-Security-Auditing
 Date:          <time>
-Event ID:      4742
+Event ID:      4724
 Task Category: Computer Account Management
 Level:         Information
 Keywords:      Audit Success
