@@ -8,7 +8,7 @@ ms.topic: include
 ms.date: 02/14/2023
 ms.localizationpriority: medium
 ---
-<!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
+<!--This file is shared by deployment-service-drivers.md and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
 
 You enroll devices based on the types of updates you want them to recieve.Currently, you can enroll devices to receive feature updates (`feature`) or drivers (`driver`). You can enroll devices to receive updates from multiple update classifications.
 

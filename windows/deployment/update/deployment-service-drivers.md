@@ -48,3 +48,9 @@ When you enroll devices into driver management, the deployment service becomes t
 <!--Using include for enrolling devices using Graph Explorer-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-enroll-device-graph-explorer.md)]
 
+
+
+## Remove device enrollment
+
+<!--Using include for removing device enrollment-->
+[!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-graph-unenroll.md)]
