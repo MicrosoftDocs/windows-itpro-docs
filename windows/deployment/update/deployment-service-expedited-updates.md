@@ -26,6 +26,8 @@ In this tutorial, you will:
 
 ? This requires an extra license at the moment correct? Of does the client have to be listed as intune managed at the moment?
 
+All of the [prerequisites for the Windows Update for Business deployment service](deployment-service-overview.md#prerequisites) must be met.
+
 ### Permissions
 
 <!--Using include for tutorial permissions-->

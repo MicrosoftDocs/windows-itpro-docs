@@ -17,14 +17,15 @@ ms.date: 02/14/2023
 
 In this tutorial, you will:
 > [!div class="checklist"]
-> * [Open Graph Explorer](#open-graph-explorer) 
+> * [Open Graph Explorer](#open-graph-explorer)
 > * [Run queries to identify test devices](#run-queries-to-identify-test-devices)
-> * [Enroll devices](#enroll-devices) 
+> * [Enroll devices](#enroll-devices)
 > * Do Z
 > * Do Z
 
 ## Prerequisites
 
+All of the [prerequisites for the Windows Update for Business deployment service](deployment-service-overview.md#prerequisites) must be met.
 ### Permissions
 
 <!--Using include for tutorial permissions-->
@@ -46,3 +47,4 @@ When you enroll devices into driver management, the deployment service becomes t
 
 <!--Using include for enrolling devices using Graph Explorer-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-enroll-device-graph-explorer.md)]
+

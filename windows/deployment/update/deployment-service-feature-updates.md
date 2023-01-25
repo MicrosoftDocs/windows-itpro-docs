@@ -23,6 +23,7 @@ In this tutorial, you will:
 
 ## Prerequisites
 
+All of the [prerequisites for the Windows Update for Business deployment service](deployment-service-overview.md#prerequisites) must be met.
 ### Permissions
 
 <!--Using include for tutorial permissions-->
