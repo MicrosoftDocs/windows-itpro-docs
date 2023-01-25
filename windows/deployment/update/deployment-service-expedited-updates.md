@@ -17,8 +17,8 @@ ms.date: 02/14/2023
 
 In this tutorial, you will:
 > [!div class="checklist"]
-> * Do X
-> * Do Y
+> * [Open Graph Explorer](#open-graph-explorer) 
+> * [Run queries to identify test devices](#run-queries-to-identify-test-devices)
 > * Do Z
 
 
@@ -35,3 +35,14 @@ In this tutorial, you will:
 
 <!--Using include for Graph Explorer device queries-->
 [!INCLUDE [Graph Explorer device queries](./includes/wufb-deployment-find-device-name.md)]
+
+## Enroll devices
+
+
+## List updates in the catalog that can be expedited
+
+1. Query the catalog to find updates that can be expedited, For example, query for all security updates that can be deployed as expedited updates by the deployment service. Using `$top=3` and ordering by `ReleaseDateTimeshows` displays the three most current updates.
+
+```
+GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$orderby=releaseDateTime desc&$top=3
+```

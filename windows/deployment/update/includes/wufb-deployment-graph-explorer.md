@@ -2,10 +2,10 @@
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.prod: w10
-ms.collection: M365-modern-desktop
+ms.technology: itpro-updates
+ms.prod: windows-client
 ms.topic: include
-ms.date: 08/18/2022
+ms.date: 02/14/2023
 ms.localizationpriority: medium
 ---
 <!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->

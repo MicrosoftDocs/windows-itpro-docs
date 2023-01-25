@@ -15,13 +15,13 @@ ms.date: 02/14/2023
 <!--7260403, 7512398-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-
 In this tutorial, you will:
 > [!div class="checklist"]
-> * Do X
-> * Do Y
+> * [Open Graph Explorer](#open-graph-explorer) 
+> * [Run queries to identify test devices](#run-queries-to-identify-test-devices)
+> * [Enroll devices](#enroll-devices) 
 > * Do Z
-
+> * Do Z
 
 ## Open Graph Explorer
 

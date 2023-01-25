@@ -17,8 +17,8 @@ ms.date: 02/14/2023
 
 In this tutorial, you will:
 > [!div class="checklist"]
-> * Do X
-> * Do Y
+> * [Open Graph Explorer](#open-graph-explorer) 
+> * [Run queries to identify test devices](#run-queries-to-identify-test-devices)
 > * Do Z
 
 ## Open Graph Explorer

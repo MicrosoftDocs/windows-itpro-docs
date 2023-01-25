@@ -2,23 +2,27 @@
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.prod: w10
-ms.collection: M365-modern-desktop
+ms.technology: itpro-updates
+ms.prod: windows-client
 ms.topic: include
-ms.date: 08/18/2022
+ms.date: 02/14/2023
 ms.localizationpriority: medium
 ---
 <!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
 
 You will need at least [Device.Read.All](/graph/permissions-reference#device-permissions) permission to display [device](/graph/api/resources/device) information.
 
-Displays the AzureAD ID and name of all devices:</br>
- `GET https://graph.microsoft.com/v1.0/devices?$select=deviceid,displayName`
+Displays the AzureAD ID and name of all devices:
 
-Displays the AzureAD ID for a device name that starts with `Test`:</br>
- `GET https://graph.microsoft.com/v1.0/devices?$filter=startswith(displayName, 'Test')&$select=deviceid,displayName`
+```rest
+GET https://graph.microsoft.com/v1.0/devices?$select=deviceid,displayName
+```
 
+Displays the AzureAD ID for a device name that starts with `Test`:
 
+```rest
+GET https://graph.microsoft.com/v1.0/devices?$filter=startswith(displayName,'Test')&$select=deviceid,displayName
+```
 
 ### Add a request header
 
@@ -30,9 +34,14 @@ For the next requests, set the **ConsistencyLevel** header to `eventual`. For mo
 
     :::image type="content" source="../media/7512398-deployment-service-graph-modify-header.png" alt-text="Screenshot of the request headers tab in Graph Explorer":::
 
-Displays the name and operating system version for the device that has the AzureAD ID of `01234567-89ab-cdef-0123-456789abcdef`:</br>
- `GET https://graph.microsoft.com/v1.0/devices?$search="deviceid:01234567-89ab-cdef-0123-456789abcdef"?$select=displayName,operatingSystemVersion`
+Displays the name and operating system version for the device that has the AzureAD ID of `01234567-89ab-cdef-0123-456789abcdef`:
 
-Find devices that don't have virtual machine listed as the model and that have a manufacturer listed: </br>
-`GET https://graph.microsoft.com/v1.0/devices?$filter=model ne 'virtual machine' and NOT(manufacturer eq null)&$count=true&$select=deviceid,displayName,operatingSystemVersion`
+```rest
+GET https://graph.microsoft.com/v1.0/devices?$search="deviceid:01234567-89ab-cdef-0123-456789abcdef"?$select=displayName,operatingSystemVersion
+```
 
+Find devices that don't have virtual machine listed as the model and that have a manufacturer listed:
+
+```rest
+GET https://graph.microsoft.com/v1.0/devices?$filter=model ne 'virtual machine' and NOT(manufacturer eq null)&$count=true&$select=deviceid,displayName,operatingSystemVersion
+```
