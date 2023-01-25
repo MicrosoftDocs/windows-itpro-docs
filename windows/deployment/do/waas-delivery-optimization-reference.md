@@ -22,7 +22,7 @@ ms.date: 12/31/2017
 
 > **Looking for more Group Policy settings?** See the master spreadsheet available at the [Download Center](https://www.microsoft.com/download/details.aspx?id=103506).
 
-There are a great many details you can set in Delivery Optimization to customize it to do just what you need it to. This topic summarizes them for your reference. If you just need an overview of Delivery Optimization, see [Delivery Optimization for Windows client updates](waas-delivery-optimization.md). If you need information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization for Windows client updates](waas-delivery-optimization-setup.md).
+There are many configuration options you can set in Delivery Optimization to customize the content delivery experience specific to your environment needs. This topic summarizes those configurations for your reference. If you just need an overview of Delivery Optimization, see [What is Delivery Optimization](waas-delivery-optimization.md). If you need information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization for Windows](waas-delivery-optimization-setup.md).
 
 ## Delivery Optimization options
 
@@ -31,14 +31,13 @@ You can use Group Policy or an MDM solution like Intune to configure Delivery Op
 You will find the Delivery Optimization settings in Group Policy under **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization**.
 In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimization/**.
 
-[//]: # (something about Intune UX--perhaps link to relevant Intune docs?)
-
 ### Summary of Delivery Optimization settings
 
 | Group Policy setting | MDM setting | Supported from version |
 | --- | --- | --- |
 | [Download mode](#download-mode) | DODownloadMode | 1511 |
 | [Group ID](#group-id)  | DOGroupID | 1511 |
+| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 |
 | [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-inclusive-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer | 1703 |
 | [Minimum disk size allowed to use Peer Caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 |
 | [Max Cache Age](#max-cache-age) | DOMaxCacheAge | 1511 |
@@ -58,7 +57,6 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [SetHoursToLimitBackgroundDownloadBandwidth](#set-business-hours-to-limit-background-download-bandwidth) | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 |
 | [SetHoursToLimitForegroundDownloadBandwidth](#set-business-hours-to-limit-foreground-download-bandwidth)  |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 |
 | [Select a method to restrict Peer Selection](#select-a-method-to-restrict-peer-selection) |DORestrictPeerSelectionBy | 1803 |
-| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 |
 | [Delay background download from http (in secs)](#delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 |
 | [Delay foreground download from http (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 |
 | [Delay foreground download cache server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 |
@@ -259,7 +257,7 @@ The device can download from peers while on battery regardless of this policy.
 
 ### Cache Server Hostname
 
-Set this policy to designate one or more Microsoft Connected Cache servers to be used by Delivery Optimization. You can set one or more FQDNs or IP Addresses that are comma-separated, for example: myhost.somerandomhost.com,myhost2.somrandomhost.com,10.10.1.7. **By default, this policy is empty.**
+Set this policy to designate one or more Microsoft Connected Cache servers to be used by Delivery Optimization. You can set one or more FQDNs or IP Addresses that are comma-separated, for example: myhost.somerandomhost.com,myhost2.somerandomhost.com,10.10.1.7. **By default, this policy is empty.**
 
 >[!IMPORTANT]
 > Any value will signify that the policy is set. For example, an empty string ("") is not considered empty.
