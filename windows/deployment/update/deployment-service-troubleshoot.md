@@ -15,10 +15,7 @@ ms.date: 12/31/2017
 
 # Troubleshoot the Windows Update for Business deployment service
 
-**Applies to**
-
--   Windows 10
--   Windows 11
+***(Applies to: Windows 11 & Windows 10)***
 
 This troubleshooting guide addresses the most common issues that IT administrators face when using the Windows Update for Business [deployment service](deployment-service-overview.md). For a general troubleshooting guide for Windows Update, see [Windows Update troubleshooting](/troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json).
 

@@ -15,10 +15,7 @@ ms.date: 12/31/2017
 
 # Windows Update for Business deployment service
 
-**Applies to**
-
--   Windows 10
--   Windows 11
+***(Applies to: Windows 11 & Windows 10)***
 
 The Windows Update for Business deployment service is a cloud service within the Windows Update for Business product family. It provides control over the approval, scheduling, and safeguarding of updates delivered from Windows Update. It's designed to work in harmony with your existing Windows Update for Business policies.
 
@@ -58,8 +55,11 @@ The deployment service exposes these capabilities through Microsoft [Graph REST 
 
 To work with the deployment service, devices must meet all these requirements:
 
-- Be running Windows 10, version 1709 or later (or Windows 11)
-- Be joined to Azure Active Directory (AD) or Hybrid AD
+- Devices must be [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+- Run one of the following operating systems:
+  - Windows 11
+  - Windows 10, version 1709 or later
+   
 - Have one of the following Windows 10 or Windows 11 editions installed:
     - Pro
     - Enterprise
@@ -68,6 +68,7 @@ To work with the deployment service, devices must meet all these requirements:
     - Pro for Workstations
 
 Additionally, your organization must have one of the following subscriptions:
+
 - Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
 - Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5)
 - Windows Virtual Desktop Access E3 or E5

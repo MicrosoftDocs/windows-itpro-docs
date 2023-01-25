@@ -26,7 +26,7 @@ In this tutorial, you will:
 ### Permissions
 
 <!--Using include for tutorial permissions-->
-[!INCLUDE [Windows Update for Business deployment service tutorial permissions](./includes/wufb-deployment-tutorial-permissions.md.md)]
+[!INCLUDE [Windows Update for Business deployment service tutorial permissions](./includes/wufb-deployment-tutorial-permissions.md)]
 
 ## Open Graph Explorer
 

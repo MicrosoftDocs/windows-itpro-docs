@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ---
 <!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
 
-
+Use the [device](/graph/api/resources/device) resource type to find clients to enroll into the deployment service. Change the query parameters to fit your specific needs. For more information, see [Use query parameters](/graph/query-parameters). 
 
 Displays the **AzureAD Device ID** and **Name** of all devices:
 
@@ -40,7 +40,7 @@ Displays the **Name** and **Operating system version** for the device that has t
 GET https://graph.microsoft.com/v1.0/devices?$search="deviceid:01234567-89ab-cdef-0123-456789abcdef"?$select=displayName,operatingSystemVersion
 ```
 
-Find devices that don't have virtual machine listed as the model and that have a manufacturer listed. Display the **AzureAD Device ID**, **Name**, and **Operating system version** for each device:
+To find devices that likely aren't virtual machines, filter for devices that don't have virtual machine listed as the model but do have a manufacturer listed. Display the **AzureAD Device ID**, **Name**, and **Operating system version** for each device:
 
 ```rest
 GET https://graph.microsoft.com/v1.0/devices?$filter=model ne 'virtual machine' and NOT(manufacturer eq null)&$count=true&$select=deviceid,displayName,operatingSystemVersion
