@@ -9,7 +9,7 @@ ms.reviewer: aaroncz
 ms.author: jogeurte
 ms.manager: jsuther
 manager: aaroncz
-ms.date: 12/03/2022
+ms.date: 01/23/2023
 ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
@@ -26,13 +26,18 @@ ms.localizationpriority: medium
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
-This article describes how to deploy Windows Defender Application Control (WDAC) policies using script. The instructions below use PowerShell but can work with any scripting host.
+This article describes how to deploy Windows Defender Application Control (WDAC) policies using script. The following instructions use PowerShell but can work with any scripting host.
 
 You should now have one or more WDAC policies converted into binary form. If not, follow the steps described in [Deploying Windows Defender Application Control (WDAC) policies](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
+> [!IMPORTANT]
+> Due to a known issue, you should always activate new **signed** WDAC Base policies with a reboot on systems with [**memory integrity**](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) enabled. Skip all steps below that use citool.exe, RefreshPolicy.exe, or WMI to initiate a policy activation. Instead, copy the policy binary to the correct system32 and EFI locations and then activate the policy with a system restart.
+>
+> This issue does not affect updates to signed Base policies that are already active on the system, deployment of unsigned policies, or deployment of supplemental policies (signed or unsigned). It also does not affect deployments to systems that are not running memory integrity.
+
 ## Deploying policies for Windows 11 22H2 and above
 
-You can use [citool.exe](/windows/security/threat-protection/windows-defender-application-control/operations/citool-commands) to apply policies on Windows 11 22H2 with the following commands. Be sure to replace **&lt;Path to policy binary file to deploy&gt;** in the example below with the actual path to your WDAC policy binary file.
+You can use [citool.exe](/windows/security/threat-protection/windows-defender-application-control/operations/citool-commands) to apply policies on Windows 11 22H2 with the following commands. Be sure to replace **&lt;Path to policy binary file to deploy&gt;** in the following example with the actual path to your WDAC policy binary file.
 
 ```powershell
 # Policy binary files should be named as {GUID}.cip for multiple policy format files (where {GUID} = <PolicyId> from the Policy XML)
@@ -92,9 +97,9 @@ Use WMI to apply policies on all other versions of Windows and Windows Server.
 
 ## Deploying signed policies
 
-If you are using [signed WDAC policies](/windows/security/threat-protection/windows-defender-application-control/use-signed-policies-to-protect-windows-defender-application-control-against-tampering), the policies must be deployed into your device's EFI partition in addition to the steps outlined above. Unsigned WDAC policies do not need to be present in the EFI partition. Deploying your policy via [Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle this step automatically. 
+If you're using [signed WDAC policies](/windows/security/threat-protection/windows-defender-application-control/use-signed-policies-to-protect-windows-defender-application-control-against-tampering), the policies must be deployed into your device's EFI partition in addition to the locations outlined in the earlier sections. Unsigned WDAC policies don't need to be present in the EFI partition. <!-- Deploying your policy via [Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle this step automatically. -->
 
-1. Mount the EFI volume and make the directory, if it doesn't exist, in an elevated PowerShell prompt: 
+1. Mount the EFI volume and make the directory, if it doesn't exist, in an elevated PowerShell prompt:
 
     ```powershell
    $MountPoint = 'C:\EFIMount'
