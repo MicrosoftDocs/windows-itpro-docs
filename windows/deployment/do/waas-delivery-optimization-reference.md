@@ -33,42 +33,40 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 
 ### Summary of Delivery Optimization settings
 
-| Group Policy setting | MDM setting | Supported from version |
+| Group Policy setting | MDM setting | Supported from version | Notes |
 | --- | --- | --- |
-| [Download mode](#download-mode) | DODownloadMode | 1511 |
-| [Group ID](#group-id)  | DOGroupID | 1511 |
-| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 |
-| [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-inclusive-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer | 1703 |
-| [Minimum disk size allowed to use Peer Caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 |
-| [Max Cache Age](#max-cache-age) | DOMaxCacheAge | 1511 |
-| [Max Cache Size](#max-cache-size)  | DOMaxCacheSize | 1511 |
-| [Absolute Max Cache Size](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize | 1607 |
-| [Modify Cache Drive](#modify-cache-drive) | DOModifyCacheDrive | 1607 |
-| [Minimum Peer Caching Content File Size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache | 1703 |
-| [Maximum Download Bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004; use [Maximum Background Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)  or [Maximum Foreground Download Bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)|
-| [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004; use [Maximum Background Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)  or [Maximum Foreground Download Bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)|
-| [Max Upload Bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 (removed in Windows 10, version 2004) |
-| [Monthly Upload Data Cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 |
-| [Minimum Background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 |
-| [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1709 |
-| [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1709 |
-| [MaxForegroundDownloadBandwidth](#maximum-foreground-download-bandwidth) | DOPercentageMaxForegroundBandwidth | 1803 |
-| [MaxBackgroundDownloadBandwidth](#maximum-background-download-bandwidth) | DOPercentageMaxBackgroundBandwidth | 1803 |
-| [SetHoursToLimitBackgroundDownloadBandwidth](#set-business-hours-to-limit-background-download-bandwidth) | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 |
-| [SetHoursToLimitForegroundDownloadBandwidth](#set-business-hours-to-limit-foreground-download-bandwidth)  |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 |
-| [Select a method to restrict Peer Selection](#select-a-method-to-restrict-peer-selection) |DORestrictPeerSelectionBy | 1803 |
-| [Delay background download from http (in secs)](#delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 |
-| [Delay foreground download from http (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 |
-| [Delay foreground download cache server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 |
-| [Delay background download cache server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 |
-| [Cache Server Hostname](#cache-server-hostname) | DOCacheHost | 1809  |
-| [Cache Server Hostname Source](#cache-server-hostname-source) | DOCacheHostSource | 2004 |
-| [Maximum Foreground Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)         | DOMaxForegroundDownloadBandwidth | 2004 |
-| [Maximum Background Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) | DOMaxBackgroundDownloadBandwidth | 2004 |
+| [Download mode](#download-mode) | DODownloadMode | 1511 | The Group [Download mode](#download-mode) combined with [Group ID](#group-id), enables administrators to create custom device groups that will share content between devices in the group.|
+| [Group ID](#group-id)  | DOGroupID | 1511 | Used with Group [Download mode](#download-mode). If not set, check GroupIDSource. When neither the GroupID or GroupIDSource policies are set, the Group ID will be defined as the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order.  |
+| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 | If not set, check GroupID. When neither the GroupID or GroupIDSource policies are set, the Group will be defined as the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. |
+| [Select a method to restrict peer selection](#select-a-method-to-restrict-peer-selection) | DORestrictPeerSelectionBy | 1803 | Starting in Windows 11, consumer devices default to using 'Local discovery (DNS-SD)' and commercial devices will default to using 'Subnet'.  |
+| [Minimum RAM (inclusive) allowed to use peer caching](#minimum-ram-inclusive-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer | 1703 | Default value is 4 GB. |
+| [Minimum disk size allowed to use peer caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 | Default value is 32 GB. |
+| [Max cache age](#max-cache-age) | DOMaxCacheAge | 1511 | |
+| [Max cache size](#max-cache-size)  | DOMaxCacheSize | 1511 | |
+| [Absolute max cache size (in GBs)](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize | 1607 | |
+| [Modify cache drive](#modify-cache-drive) | DOModifyCacheDrive | 1607 | |
+| [Minimum peer caching content file size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache | 1703 | |
+| [Maximum download bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004; use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| |
+| [Percentage of maximum download bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004; use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)  or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| |
+| [Maximum upload bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 (removed in Windows 10, version 2004) | |
+| [Monthly upload data cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 | |
+| [Minimum background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 | |
+| [Enable peer caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1709 | |
+| [Allow uploads while the device is on battery while under set battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1709 | |
+| [Maximum foreground download bandwidth](#maximum-foreground-download-bandwidth) | DOPercentageMaxForegroundBandwidth | 1803 | |
+| [Maximum background download bandwidth](#maximum-background-download-bandwidth) | DOPercentageMaxBackgroundBandwidth | 1803 | |
+| [Maximum foreground download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)         | DOMaxForegroundDownloadBandwidth | 2004 | |
+| [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) | DOMaxBackgroundDownloadBandwidth | 2004 | |
+| [Set hours to limit background download bandwidth](#set-business-hours-to-limit-background-download-bandwidth) | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 | |
+| [Set hours to limit foreground download bandwidth](#set-business-hours-to-limit-foreground-download-bandwidth)  |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 | |
+| [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 | |
+| [Delay foreground download from HTTP (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 | |
+| [Delay foreground download Cache Server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 | |
+| [Delay background download Cache Server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 | |
+| [Cache Server Hostname](#cache-server-hostname) | DOCacheHost | 1809  | |
+| [Cache Server Hostname Source](#cache-server-hostname-source) | DOCacheHostSource | 2004 | |
 
 ### More detail on Delivery Optimization settings
-
-[Group ID](#group-id), combined with Group [Download mode](#download-mode), enables administrators to create custom device groups that will share content between devices in the group.
 
 Delivery Optimization uses locally cached updates. In cases where devices have ample local storage and you would like to cache more content, or if you have limited storage and would like to cache less, use the following settings to adjust the Delivery Optimization cache to suit your scenario:
 
@@ -93,8 +91,8 @@ Additional options available that control the impact Delivery Optimization has o
 - [Set Business Hours to Limit Foreground Download Bandwidth](#set-business-hours-to-limit-foreground-download-bandwidth) specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 - [Select a method to restrict Peer Selection](#select-a-method-to-restrict-peer-selection) restricts peer selection by the options you select.
 - [Select the source of Group IDs](#select-the-source-of-group-ids) restricts peer selection to a specific source.
-- [Delay background download from http (in secs)](#delay-background-download-from-http-in-secs) allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
-- [Delay foreground download from http (in secs)](#delay-foreground-download-from-http-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
+- [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
+- [Delay foreground download from HTTP (in secs)](#delay-foreground-download-from-http-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
 
 Administrators can further customize scenarios where Delivery Optimization will be used with the following settings:
 
@@ -126,8 +124,6 @@ Download mode dictates which download sources clients are allowed to use when do
 
 By default, peer sharing on clients using the Group download mode (option 2) is limited to the same domain in Windows 10, version 1511, and the same domain and Active Directory Domain Services site in Windows 10, version 1607. By using the Group ID setting, you can optionally create a custom group that contains devices that should participate in Delivery Optimization but do not fall within those domain or Active Directory Domain Services site boundaries, including devices in another domain. Using Group ID, you can further restrict the default group (for example, you could create a subgroup representing an office building), or extend the group beyond the domain, allowing devices in multiple domains in your organization to be peers. This setting requires the custom group to be specified as a GUID on each device that participates in the custom group.
 
-[//]: # (Configuration Manager boundary group option; GroupID Source policy)
-
 >[!NOTE]
 >To generate a GUID using Powershell, use [```[guid]::NewGuid()```](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)
 >
@@ -137,7 +133,7 @@ By default, peer sharing on clients using the Group download mode (option 2) is 
 
 Starting in Windows 10, version 1803, set this policy to restrict peer selection to a specific source, when using a GroupID policy. The options are:
 
-- 0 = not set
+- 0 = Not set
 - 1 = AD Site
 - 2 = Authenticated domain SID
 - 3 = DHCP Option ID (with this option, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID)
@@ -215,21 +211,23 @@ If Group mode is set, Delivery Optimization will connect to locally discovered p
 
 The Local Peer Discovery (DNS-SD) option can only be set via MDM delivered policies on Windows 11 builds. This feature can be enabled in supported Windows 10 builds by setting the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy` value to **2**.
 
-### Delay background download from http (in secs)
+### Delay background download from HTTP (in secs)
 
-Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer. The maximum value is 4294967295  seconds. **By default, this policy is not set.**
+Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy is not set.**
 
-### Delay foreground download from http (in secs)
+### Delay foreground download from HTTP (in secs)
 
 Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy is not set.**
 
 ### Delay Foreground Download Cache Server Fallback (in secs)
 
-Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If you set the policy to delay foreground download from http, it will apply first (to allow downloads from peers first). **By default, this policy is not set.**
+Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If the 'Delay foreground download from HTTP' policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy is not set.**
+
+By default this policy is not set. So,
 
 ### Delay Background Download Cache Server Fallback (in secs)
 
-Starting in Windows 10, version 1903, set this policy to delay the fallback from cache server to the HTTP source for a background content download by X seconds. If you set the policy to delay background download from http, it will apply first (to allow downloads from peers first). **By default, this policy is not set.**
+Starting in Windows 10, version 1903, set this policy to delay the fallback from cache server to the HTTP source for a background content download by X seconds. If the 'Delay background download from HTTP' policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy is not set.**
 
 ### Minimum Background QoS
 
