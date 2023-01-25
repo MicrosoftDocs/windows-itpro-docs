@@ -34,7 +34,7 @@ In this tutorial, you will:
 ## Run queries to identify test devices
 
 <!--Using include for Graph Explorer device queries-->
-[!INCLUDE [Graph Explorer device queries](./includes/wufb-deployment-find-device-name.md)]
+[!INCLUDE [Graph Explorer device queries](./includes/wufb-deployment-find-device-name-graph-explorer.md)]
 
 ## Enroll devices
 

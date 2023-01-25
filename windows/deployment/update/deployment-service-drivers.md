@@ -31,5 +31,11 @@ In this tutorial, you will:
 ## Run queries to identify test devices
 
 <!--Using include for Graph Explorer device queries-->
-[!INCLUDE [Graph Explorer device queries](./includes/wufb-deployment-find-device-name.md)]
+[!INCLUDE [Graph Explorer device queries](./includes/wufb-deployment-find-device-name-graph-explorer.md)]
 
+## Enroll devices
+
+When you enroll devices into driver management, the deployment service becomes the authority for driver updates coming from Windows Update. Devices don't receive drivers from Windows Update until a deployment is manually created or they're added to a driver update policy with approvals.
+
+<!--Using include for enrolling devices using Graph Explorer-->
+[!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-enroll-device-graph-explorer.md)]

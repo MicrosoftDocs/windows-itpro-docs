@@ -29,4 +29,11 @@ In this tutorial, you will:
 ## Run queries to identify test devices
 
 <!--Using include for Graph Explorer device queries-->
-[!INCLUDE [Graph Explorer device queries](./includes/wufb-deployment-find-device-name.md)]
+[!INCLUDE [Graph Explorer device queries](./includes/wufb-deployment-find-device-name-graph-explorer.md)]
+
+## Enroll devices
+
+As long as a device remains enrolled in feature update management, the device doesn't receive any other feature updates from Windows Update unless explicitly deployed using the deployment service.
+
+<!--Using include for enrolling devices using Graph Explorer-->
+[!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-enroll-device-graph-explorer.md)]

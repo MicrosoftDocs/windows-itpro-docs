@@ -12,13 +12,13 @@ ms.localizationpriority: medium
 
 You will need at least [Device.Read.All](/graph/permissions-reference#device-permissions) permission to display [device](/graph/api/resources/device) information.
 
-Displays the AzureAD ID and name of all devices:
+Displays the AzureAD device ID and name of all devices:
 
 ```rest
 GET https://graph.microsoft.com/v1.0/devices?$select=deviceid,displayName
 ```
 
-Displays the AzureAD ID for a device name that starts with `Test`:
+Displays the AzureAD device ID for a device name that starts with `Test`:
 
 ```rest
 GET https://graph.microsoft.com/v1.0/devices?$filter=startswith(displayName,'Test')&$select=deviceid,displayName
@@ -34,7 +34,7 @@ For the next requests, set the **ConsistencyLevel** header to `eventual`. For mo
 
     :::image type="content" source="../media/7512398-deployment-service-graph-modify-header.png" alt-text="Screenshot of the request headers tab in Graph Explorer":::
 
-Displays the name and operating system version for the device that has the AzureAD ID of `01234567-89ab-cdef-0123-456789abcdef`:
+Displays the name and operating system version for the device that has the AzureAD device ID of `01234567-89ab-cdef-0123-456789abcdef`:
 
 ```rest
 GET https://graph.microsoft.com/v1.0/devices?$search="deviceid:01234567-89ab-cdef-0123-456789abcdef"?$select=displayName,operatingSystemVersion
@@ -45,3 +45,4 @@ Find devices that don't have virtual machine listed as the model and that have a
 ```rest
 GET https://graph.microsoft.com/v1.0/devices?$filter=model ne 'virtual machine' and NOT(manufacturer eq null)&$count=true&$select=deviceid,displayName,operatingSystemVersion
 ```
+
