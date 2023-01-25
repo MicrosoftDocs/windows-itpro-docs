@@ -1,7 +1,6 @@
 ---
 title: Windows Update for Business reports data schema
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: An overview of Windows Update for Business reports data schema
 ms.prod: windows-client
 author: mestew

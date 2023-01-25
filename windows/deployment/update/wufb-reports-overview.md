@@ -1,7 +1,6 @@
 ---
 title: Windows Update for Business reports overview
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: Overview of Windows Update for Business reports to explain what it's used for and the cloud services it relies on.
 ms.prod: windows-client
 author: mestew

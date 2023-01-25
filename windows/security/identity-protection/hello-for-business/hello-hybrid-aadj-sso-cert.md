@@ -4,12 +4,12 @@ description: If you want to use certificates for on-premises single-sign on for 
 ms.date: 08/19/2018
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Using Certificates for AADJ On-premises Single-sign On
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust-aad.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cert-trust-aad.md)]
 
 If you plan to use certificates for on-premises single-sign on, then follow these **additional** steps to configure the environment to enroll Windows Hello for Business certificates for Azure AD-joined devices.
 

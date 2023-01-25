@@ -48,7 +48,7 @@ To release updates to devices in a gradual manner, Windows Autopatch deploys a s
 > [!IMPORTANT]
 > Deploying deferral, deadline, or grace period policies which conflict with Autopatch's policies will cause a device to be considered ineligible for management, it will still receive policies from Windows Autopatch that are not in conflict, but may not function as designed.  These devices will be marked as ineligible in our device reporting and will not count towards our [service level objective](#service-level-objective).
 
-Windows Autopatch configures these policies differently across update rings to gradually release the update to devices in your estate. Devices in the Test ring receive changes first and devices in the Broad ring receive changes last. For more information, see [Windows Autopatch deployment rings](../operate/windows-autopatch-update-management.md#windows-autopatch-deployment-rings).
+Windows Autopatch configures these policies differently across deployment rings to gradually release the update to devices in your estate. Devices in the Test ring receive changes first and devices in the Broad ring receive changes last. For more information, see [Windows Autopatch deployment rings](../operate/windows-autopatch-update-management.md#windows-autopatch-deployment-rings).
 
 :::image type="content" source="../media/release-process-timeline.png" alt-text="Release process timeline" lightbox="../media/release-process-timeline.png":::
 

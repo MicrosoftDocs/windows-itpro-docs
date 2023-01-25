@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Network security: Restrict NTLM: Audit incoming NTLM traffic
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Audit incoming NTLM traffic** security policy setting.

@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Network access: Do not allow storage of passwords and credentials for network authentication
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Do not allow storage of passwords and credentials for network authentication** security policy setting.

@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # User Account Control: Run all administrators in Admin Approval Mode
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This article describes the best practices, location, values, policy management and security considerations for the **User Account Control: Run all administrators in Admin Approval Mode** security policy setting.

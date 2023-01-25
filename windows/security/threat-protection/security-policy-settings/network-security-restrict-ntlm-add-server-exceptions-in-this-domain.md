@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Network security: Restrict NTLM: Add server exceptions in this domain
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network security: Restrict NTLM: Add server exceptions in this domain** security policy setting.

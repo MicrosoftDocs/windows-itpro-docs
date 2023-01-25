@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Microsoft network server: Disconnect clients when sign-in hours expire
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Microsoft network server: Disconnect clients when logon hours expire** security policy setting.

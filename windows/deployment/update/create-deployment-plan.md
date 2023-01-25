@@ -2,10 +2,10 @@
 title: Create a deployment plan
 description: Devise the number of deployment rings you need and how you want to populate them
 ms.prod: windows-client
-author: aczechowski
+author: mestew
 ms.localizationpriority: medium
-ms.author: aaroncz
-manager: dougeby
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017

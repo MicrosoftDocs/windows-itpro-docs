@@ -21,6 +21,7 @@ ms.technology: itpro-security
 # Microsoft network client: Send unencrypted password to third-party SMB servers
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Microsoft network client: Send unencrypted password to third-party SMB servers** security policy setting.

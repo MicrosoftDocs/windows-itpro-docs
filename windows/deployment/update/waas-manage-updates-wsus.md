@@ -2,10 +2,10 @@
 title: Deploy Windows client updates using Windows Server Update Services
 description: WSUS allows companies to defer, selectively approve, choose when delivered, and determine which devices receive updates.
 ms.prod: windows-client
-author: aczechowski
+author: mestew
 ms.localizationpriority: medium
-ms.author: aaroncz
-manager: dougeby
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
 ms.collection: highpri
 ms.technology: itpro-updates

@@ -334,7 +334,7 @@ Value type is integer.
 
 Supported operation is Get.
 
-- Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode.
+- Bit 0 - Set to 1 when Application Guard is enabled into Windows Isolated environment mode.
 - Bit 1 - Set to 1 when the client machine is Hyper-V capable.
 - Bit 2 - Reserved for Microsoft.
 - Bit 3 - Set to 1 when Application Guard is installed on the client machine.

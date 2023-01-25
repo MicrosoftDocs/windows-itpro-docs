@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # System cryptography: Force strong key protection for user keys stored on the computer
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **System cryptography: Force strong key protection for user keys stored on the computer** security policy setting.
