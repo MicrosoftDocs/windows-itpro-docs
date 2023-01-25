@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ---
 <!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
 
-You will need at least [Device.Read.All](/graph/permissions-reference#device-permissions) permission to display [device](/graph/api/resources/device) information.
+
 
 Displays the **AzureAD Device ID** and **Name** of all devices:
 
@@ -50,4 +50,4 @@ GET https://graph.microsoft.com/v1.0/devices?$filter=model ne 'virtual machine' 
 > Requests using the [device](/graph/api/resources/device) resource type typically have both an `id` and a `deviceid`:
 > - The `deviceid` is the **Azure AD Device ID** and will be used in this tutorial.
 >    - Later in this tutorial, this `deviceid` will be used as an `id` when you make certain requests such as adding a device to a deployment audience.
-> - The `id` from the [device](/graph/api/resources/device) resource type is usually the Azure AD Object ID and it won't be used in this tutorial.
+> - The `id` from the [device](/graph/api/resources/device) resource type is usually the Azure AD Object ID, which won't be used in this tutorial.

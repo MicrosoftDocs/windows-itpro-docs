@@ -26,6 +26,11 @@ In this tutorial, you will:
 
 ? This requires an extra license at the moment correct? Of does the client have to be listed as intune managed at the moment?
 
+### Permissions
+
+<!--Using include for tutorial permissions-->
+[!INCLUDE [Windows Update for Business deployment service tutorial permissions](./includes/wufb-deployment-tutorial-permissions.md.md)]
+
 ## Open Graph Explorer
 
 <!--Using include for Graph Explorer sign in-->

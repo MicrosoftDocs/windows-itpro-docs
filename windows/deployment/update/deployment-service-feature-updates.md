@@ -21,6 +21,13 @@ In this tutorial, you will:
 > * [Run queries to identify test devices](#run-queries-to-identify-test-devices)
 > * Do Z
 
+## Prerequisites
+
+### Permissions
+
+<!--Using include for tutorial permissions-->
+[!INCLUDE [Windows Update for Business deployment service tutorial permissions](./includes/wufb-deployment-tutorial-permissions.md.md)]
+
 ## Open Graph Explorer
 
 <!--Using include for Graph Explorer sign in-->
