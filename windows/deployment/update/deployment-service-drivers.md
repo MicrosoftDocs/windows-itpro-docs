@@ -21,7 +21,7 @@ In this tutorial, you will:
 > * [Run queries to identify test devices](#run-queries-to-identify-test-devices)
 > * [Enroll devices](#enroll-devices)
 > * [Create a deployment audience and add audience members](#create-a-deployment-audience-and-add-audience-members)
-> * Do Z
+> * [Create an update policy](#create-an-update-policy)
 > * Do Z
 > * Do Z
 > * [Remove device enrollment](#remove-device-enrollment)
@@ -67,7 +67,7 @@ When you enroll devices into driver management, the deployment service becomes t
    ```json
    {
        "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deploymentAudiences/$entity",
-       "id": "d39ad1ce-01234-5678-9abc-def012345678",
+       "id": "d39ad1ce-0123-4567-89ab-cdef01234567",
        "reportingDeviceCount": 0,
        "applicableContent": []
    }
@@ -76,7 +76,7 @@ When you enroll devices into driver management, the deployment service becomes t
 1. Add devices, using their **Azure AD ID**, to the deployment audience so they become audience members. Specify the deployment **Audience ID** in the URL field and the devices to add in the request body. The `id` property specifies the **Azure AD ID** of the device.
 
    ```rest
-   POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-01234-5678-9abc-def012345678/updateAudience
+   POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience
    Content-type: application/json
 
    {
@@ -96,6 +96,98 @@ When you enroll devices into driver management, the deployment service becomes t
      ]
    }
    ```
+
+<!-- check timing with PM on this blurb from dev docs: When the deployment audience is successfully updated, the Windows Update for Business deployment service will start collecting scan results from Windows Update to build a catalog of applicable drivers to be browsed, approved, and scheduled for deployment.--> 
+
+## Create an update policy
+
+Update policies define how content is deployed to a deployment audience. An [update policy](/graph/api/resources/windowsupdates-updatepolicy)  
+
+After devices are added to a deployment audience, you can create an [update policy](/graph/api/resources/windowsupdates-updatepolicy) that governs the deployment of content to the associated deployment audiences.  The update policy is a high-level template so content can be deployed in a similar way for a given audience without having to create, manage, and relate individual deployments.  Content is deployed to the devices in the associated audiences when a content approval is added to the policy.
+
+Create an update policy and assign an existing deployment audience to it. You can specify additional settings when you create the policy, or you can create a policy and define the settings later. 
+
+To create a policy without any deployment settings, in the request body specify the **Audience ID** as `id`. In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`: 
+
+
+```rest
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
+Content-type: application/json
+{
+  "audience": {
+    "@odata.id": "d39ad1ce-0123-4567-89ab-cdef01234567"
+  }
+}
+```
+
+Response, returning the **Policy ID** of `9011c330-1234-5678-9abc-def012345678` 
+```json
+HTTP/1.1 202 Accepted
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatePolicies/$entity",
+    "id": "9011c330-1234-5678-9abc-def012345678",
+    "createdDateTime": "2023-01-25T05:32:21.9721459Z",
+    "autoEnrollmentUpdateCategories": [],
+    "complianceChangeRules": [],
+    "deploymentSettings": {
+        "schedule": null,
+        "monitoring": null,
+        "contentApplicability": null,
+        "userExperience": null,
+        "expedite": null
+    }
+}
+```
+
+Policy with settings example:
+
+```rest
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
+Content-Type: application/json
+Content-length: 835
+
+{
+  "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
+  "audience": {
+    "@odata.id": "d39ad1ce-0123-4567-89ab-cdef01234567"
+  },
+  "complianceChanges": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval"
+    }
+  ],
+  "complianceChangeRules": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule",
+      "contentFilter": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
+      },
+      "durationBeforeDeploymentStart": "P7D"
+    }
+  ],
+  "deploymentSettings": {
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+    "schedule": {
+      "gradualRollout": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+        "durationBetweenOffers": "P1D",
+        "devicePerOffer": 1000
+      }
+    }
+  }
+}
+```
+
+**note to add info or change the above example to include the following, if possible.**
+  "deploymentSettings": {
+    "contentApplicability": {
+      "offerWhileRecommendedBy": ["Microsoft"],
+
+
+
+
+<!--[Error 411](/graph/errors) Length Required -->
 
 
 ## Remove device enrollment
