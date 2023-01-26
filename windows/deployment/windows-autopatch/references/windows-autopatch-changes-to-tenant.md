@@ -1,7 +1,7 @@
 ---
 title: Changes made at tenant enrollment
 description: This reference article details the changes made to your tenant when enrolling into Windows Autopatch
-ms.date: 12/01/2022
+ms.date: 01/24/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: reference
@@ -56,13 +56,11 @@ Windows Autopatch will create Azure Active Directory groups that are required to
 
 - Windows Autopatch - Set MDM to Win Over GPO
 - Windows Autopatch - Data Collection
-- Windows Autopatch-Window Update Detection Frequency
 
 | Policy name | Policy description | Properties | Value |
 | ----- | ----- | ----- | ----- |
 | Windows Autopatch - Set MDM to Win Over GPO | Sets mobile device management (MDM) to win over GPO<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| [MDM Wins Over GP](/windows/client-management/mdm/policy-csp-controlpolicyconflict#controlpolicyconflict-MDMWinsOverGP) | The MDM policy is used and the GP policy is blocked |
 | Windows Autopatch - Data Collection | Allows diagnostic data from this device to be processed by Microsoft Managed Desktop and Telemetry settings for Windows devices.<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>|<ol><li>[Configure Telemetry Opt In Change Notification](/windows/client-management/mdm/policy-csp-system#system-configuretelemetryoptinchangenotification)</li><li>[Configure Telemetry Opt In Settings Ux](/windows/client-management/mdm/policy-csp-system#system-configuretelemetryoptinsettingsux)</li><li>[Allow Telemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)</li><li>[Limit Enhanced Diagnostic Data Windows Analytics](/windows/client-management/mdm/policy-csp-system#system-limitenhanceddiagnosticdatawindowsanalytics)</li><li>[Limit Dump Collection](/windows/client-management/mdm/policy-csp-system#system-limitdumpcollection)</li><li>[Limit Diagnostic Log Collection](/windows/client-management/mdm/policy-csp-system#system-limitdiagnosticlogcollection)</li></ol>|<ol><li>Enable telemetry change notifications</li><li>Enable Telemetry opt-in Settings</li><li>Full</li><li>Enabled</li><li>Enabled</li><li>Enabled</li></ol> |
-| Windows Autopatch - Windows Update Detection Frequency | Sets Windows update detection frequency<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| [./Vendor/MSFT/Policy/Config/Update/DetectionFrequency](/windows/client-management/mdm/policy-csp-update#update-detectionfrequency)| 4 |
 
 ## Deployment rings for Windows 10 and later
 

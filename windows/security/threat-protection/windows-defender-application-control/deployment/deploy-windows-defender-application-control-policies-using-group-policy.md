@@ -13,7 +13,7 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 10/06/2022
+ms.date: 01/23/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -28,10 +28,16 @@ ms.topic: article
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
->
-> Group Policy-based deployment of Windows Defender Application Control policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for policy deployment.
 
-Single-policy format Windows Defender Application Control policies (pre-1903 policy schema) can be easily deployed and managed with Group Policy. 
+> [!IMPORTANT]
+> Due to a known issue, you should always activate new **signed** WDAC Base policies *with a reboot* on systems with [**memory integrity**](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) enabled. Instead of Group Policy, deploy new signed WDAC Base policies [via script](/windows/security/threat-protection/windows-defender-application-control/deployment/deploy-wdac-policies-with-script#deploying-signed-policies) and activate the policy with a system restart.
+>
+> This issue does not affect updates to signed Base policies that are already active on the system, deployment of unsigned policies, or deployment of supplemental policies (signed or unsigned). It also does not affect deployments to systems that are not running memory integrity.
+
+Single-policy format Windows Defender Application Control policies (pre-1903 policy schema) can be easily deployed and managed with Group Policy.
+
+> [!IMPORTANT]
+> Group Policy-based deployment of Windows Defender Application Control policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for policy deployment.
 
 You should now have a WDAC policy converted into binary form. If not, follow the steps described in [Deploying Windows Defender Application Control (WDAC) policies](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 

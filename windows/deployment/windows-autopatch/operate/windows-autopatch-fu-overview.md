@@ -30,8 +30,8 @@ For a device to be eligible for Windows feature updates as a part of Windows Aut
 | Deployed | Windows Autopatch doesn't update devices that haven't yet been deployed. |
 | Internet connectivity | Devices must have a steady internet connection, and access to Windows [update endpoints](../prepare/windows-autopatch-configure-network.md). |
 | Windows edition | Devices must be on a Windows edition supported by Windows Autopatch. For more information, see [Prerequisites](../prepare/windows-autopatch-prerequisites.md). |
-| Mobile device management (MDM) policy conflict | Devices must not have deployed any policies that would prevent device management. For more information, see [Conflicting and unsupported policies](../operate/windows-autopatch-wqu-unsupported-policies.md). |
-| Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](windows-autopatch-wqu-unsupported-policies.md#group-policy-and-other-policy-managers). |
+| Mobile device management (MDM) policy conflict | Devices must not have deployed any policies that would prevent device management. For more information, see [Conflicting and unsupported policies](../references/windows-autopatch-wqu-unsupported-policies.md). |
+| Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](../references/windows-autopatch-wqu-unsupported-policies.md#group-policy-and-other-policy-managers). |
 
 ## Windows feature update releases
 
