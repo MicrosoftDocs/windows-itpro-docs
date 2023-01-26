@@ -22,6 +22,7 @@ In this tutorial, you will:
 > - [Enroll devices](#enroll-devices)
 > - [Create a deployment audience and add audience members](#create-a-deployment-audience-and-add-audience-members)
 > - [Create an update policy](#create-an-update-policy)
+> - [Review applicable driver content and approve it](#review-applicable-driver-content-and-approve-it)
 > - Do Z
 > - Do Z
 > - [Remove device enrollment](#remove-device-enrollment)
@@ -103,9 +104,11 @@ When you enroll devices into driver management, the deployment service becomes t
    GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/members
    ```
 
+Once a device has been enrolled and added to a deployment audience, the Windows Update for Business deployment service will start collecting scan results from Windows Update to build a catalog of applicable drivers to be browsed, approved, and scheduled for deployment.
+
 ## Create an update policy
 
-Update policies define how content is deployed to a deployment audience. An [update policy](/graph/api/resources/windowsupdates-updatepolicy) ensures deployments to deployment audiences behave in a consistent manner without having to create and manage multiple individual deployments. When a content approval is added to the policy, it's deployed to the devices in the associated audiences. When creating an update policy, you can either:
+Update policies define how content is deployed to a deployment audience. An [update policy](/graph/api/resources/windowsupdates-updatepolicy) ensures deployments to a deployment audience behaves in a consistent manner without having to create and manage multiple individual deployments. When a content approval is added to the policy, it's deployed to the devices in the associated audiences. When creating an update policy, you can either:
 
 - Create a policy and define the settings later
 
@@ -167,6 +170,7 @@ Update policies define how content is deployed to a deployment audience. An [upd
    ```
 
 **note to add info about behavior defined by settings in example and maybe include info about autoapprove while recommended** 
+
 ```dotnetcli
 
   "deploymentSettings": {
@@ -196,13 +200,15 @@ Content-type: application/json
 }
 ```
 <!--[Error 411](/graph/errors) Length Required -->
-## Review applicable driver content and approve content
+## Review applicable driver content and approve it
+
+Review 
 
 
 **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`
 
 ```rest
-GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/f660d844-30b7-46e4-a6cf-47e36164d3cb/applicableContent
+GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/applicableContent
 ```
 
 
