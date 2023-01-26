@@ -1,10 +1,10 @@
 ---
 title: WindowsLogon Policy CSP
-description: Learn more about the WindowsLogon Area in Policy CSP
+description: Learn more about the WindowsLogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/09/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - WindowsLogon
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -46,15 +44,15 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting controls whether a device will automatically sign in and lock the last interactive user after the system restarts or after a shutdown and cold boot.
 
-This only occurs if the last interactive user didn’t sign out before the restart or shutdown.​
+This only occurs if the last interactive user didn't sign out before the restart or shutdown. 
 
-If the device is joined to Active Directory or Azure Active Directory, this policy only applies to Windows Update restarts. Otherwise, this will apply to both Windows Update restarts and user-initiated restarts and shutdowns.​
+If the device is joined to Active Directory or Azure Active Directory, this policy only applies to Windows Update restarts. Otherwise, this will apply to both Windows Update restarts and user-initiated restarts and shutdowns. 
 
-If you don’t configure this policy setting, it is enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots.​
+- If you don't configure this policy setting, it is enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots. 
 
-After enabling this policy, you can configure its settings through the ConfigAutomaticRestartSignOn policy, which configures the mode of automatically signing in and locking the last interactive user after a restart or cold boot​.
+After enabling this policy, you can configure its settings through the ConfigAutomaticRestartSignOn policy, which configures the mode of automatically signing in and locking the last interactive user after a restart or cold boot .
 
-If you disable this policy setting, the device does not configure automatic sign in. The user’s lock screen apps are not restarted after the system restarts.
+- If you disable this policy setting, the device does not configure automatic sign in. The user's lock screen apps are not restarted after the system restarts.
 <!-- AllowAutomaticRestartSignOn-Description-End -->
 
 <!-- AllowAutomaticRestartSignOn-Editable-Begin -->
@@ -72,13 +70,13 @@ If you disable this policy setting, the device does not configure automatic sign
 
 <!-- AllowAutomaticRestartSignOn-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | AutomaticRestartSignOnDescription |
+| Name | AutomaticRestartSignOn |
 | Friendly Name | Sign-in and lock last interactive user automatically after a restart |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Logon Options |
@@ -110,17 +108,18 @@ If you disable this policy setting, the device does not configure automatic sign
 
 <!-- ConfigAutomaticRestartSignOn-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the configuration under which an automatic restart and sign on and lock occurs after a restart or cold boot. If you chose “Disabled” in the “Sign-in and lock last interactive user automatically after a restart” policy, then automatic sign on will not occur and this policy does not need to be configured.
+This policy setting controls the configuration under which an automatic restart and sign on and lock occurs after a restart or cold boot. If you chose "Disabled" in the "Sign-in and lock last interactive user automatically after a restart" policy, then automatic sign on will not occur and this policy does not need to be configured.
 
-If you enable this policy setting, you can choose one of the following two options:
+- If you enable this policy setting, you can choose one of the following two options:
 
-1. “Enabled if BitLocker is on and not suspended” specifies that automatic sign on and lock will only occur if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device’s hard drive at this time if BitLocker is not on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
+1. "Enabled if BitLocker is on and not suspended" specifies that automatic sign on and lock will only occur if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device's hard drive at this time if BitLocker is not on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
 BitLocker is suspended during updates if:
-- The device doesn’t have TPM 2.0 and PCR7, or
-- The device doesn’t use a TPM-only protector
-2. “Always Enabled” specifies that automatic sign on will happen even if BitLocker is off or suspended during reboot or shutdown. When BitLocker is not enabled, personal data is accessible on the hard drive. Automatic restart and sign on should only be run under this condition if you are confident that the configured device is in a secure physical location.
+- The device doesn't have TPM 2.0 and PCR7, or
+- The device doesn't use a TPM-only protector
 
-If you disable or don’t configure this setting, automatic sign on will default to the “Enabled if BitLocker is on and not suspended” behavior.
+2. "Always Enabled" specifies that automatic sign on will happen even if BitLocker is off or suspended during reboot or shutdown. When BitLocker is not enabled, personal data is accessible on the hard drive. Automatic restart and sign on should only be run under this condition if you are confident that the configured device is in a secure physical location.
+
+- If you disable or don't configure this setting, automatic sign on will default to the "Enabled if BitLocker is on and not suspended" behavior.
 <!-- ConfigAutomaticRestartSignOn-Description-End -->
 
 <!-- ConfigAutomaticRestartSignOn-Editable-Begin -->
@@ -138,13 +137,13 @@ If you disable or don’t configure this setting, automatic sign on will default
 
 <!-- ConfigAutomaticRestartSignOn-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | ConfigAutomaticRestartSignOnDescription |
+| Name | ConfigAutomaticRestartSignOn |
 | Friendly Name | Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Logon Options |
@@ -177,9 +176,9 @@ If you disable or don’t configure this setting, automatic sign on will default
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent app notifications from appearing on the lock screen.
 
-If you enable this policy setting, no app notifications are displayed on the lock screen.
+- If you enable this policy setting, no app notifications are displayed on the lock screen.
 
-If you disable or do not configure this policy setting, users can choose which apps display notifications on the lock screen.
+- If you disable or do not configure this policy setting, users can choose which apps display notifications on the lock screen.
 <!-- DisableLockScreenAppNotifications-Description-End -->
 
 <!-- DisableLockScreenAppNotifications-Editable-Begin -->
@@ -197,7 +196,7 @@ If you disable or do not configure this policy setting, users can choose which a
 
 <!-- DisableLockScreenAppNotifications-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -237,9 +236,9 @@ If you disable or do not configure this policy setting, users can choose which a
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control whether anyone can interact with available networks UI on the logon screen.
 
-If you enable this policy setting, the PC's network connectivity state cannot be changed without signing into Windows.
+- If you enable this policy setting, the PC's network connectivity state cannot be changed without signing into Windows.
 
-If you disable or don't configure this policy setting, any user can disconnect the PC from the network or can connect the PC to other available networks without signing into Windows.
+- If you disable or don't configure this policy setting, any user can disconnect the PC from the network or can connect the PC to other available networks without signing into Windows.
 <!-- DontDisplayNetworkSelectionUI-Description-End -->
 
 <!-- DontDisplayNetworkSelectionUI-Editable-Begin -->
@@ -257,7 +256,7 @@ If you disable or don't configure this policy setting, any user can disconnect t
 
 <!-- DontDisplayNetworkSelectionUI-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -323,13 +322,14 @@ Here's an example to enable this policy:
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control whether users see the first sign-in animation when signing in to the computer for the first time. This applies to both the first user of the computer who completes the initial setup and users who are added to the computer later. It also controls if Microsoft account users will be offered the opt-in prompt for services during their first sign-in.
 
-If you enable this policy setting, Microsoft account users will see the opt-in prompt for services, and users with other accounts will see the sign-in animation.
+- If you enable this policy setting, Microsoft account users will see the opt-in prompt for services, and users with other accounts will see the sign-in animation.
 
-If you disable this policy setting, users will not see the animation and Microsoft account users will not see the opt-in prompt for services.
+- If you disable this policy setting, users will not see the animation and Microsoft account users will not see the opt-in prompt for services.
 
-If you do not configure this policy setting, the user who completes the initial Windows setup will see the animation during their first sign-in. If the first user had already completed the initial setup and this policy setting is not configured, users new to this computer will not see the animation.
+- If you do not configure this policy setting, the user who completes the initial Windows setup will see the animation during their first sign-in. If the first user had already completed the initial setup and this policy setting is not configured, users new to this computer will not see the animation.
 
-Note: The first sign-in animation will not be shown on Server, so this policy will have no effect.
+> [!NOTE]
+> The first sign-in animation will not be shown on Server, so this policy will have no effect.
 <!-- EnableFirstLogonAnimation-Description-End -->
 
 <!-- EnableFirstLogonAnimation-Editable-Begin -->
@@ -394,9 +394,9 @@ Note: The first sign-in animation will not be shown on Server, so this policy wi
 <!-- Description-Source-ADMX -->
 This policy controls the configuration under which winlogon sends MPR notifications in the system.
 
-If you enable this setting or do not configure it, winlogon sends MPR notifications if a credential manager is configured.
+- If you enable this setting or do not configure it, winlogon sends MPR notifications if a credential manager is configured.
 
-If you disable this setting, winlogon does not send MPR notifications.
+- If you disable this setting, winlogon does not send MPR notifications.
 <!-- EnableMPRNotifications-Description-End -->
 
 <!-- EnableMPRNotifications-Editable-Begin -->
@@ -414,7 +414,7 @@ If you disable this setting, winlogon does not send MPR notifications.
 
 <!-- EnableMPRNotifications-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -454,9 +454,9 @@ If you disable this setting, winlogon does not send MPR notifications.
 <!-- Description-Source-ADMX -->
 This policy setting allows local users to be enumerated on domain-joined computers.
 
-If you enable this policy setting, Logon UI will enumerate all local users on domain-joined computers.
+- If you enable this policy setting, Logon UI will enumerate all local users on domain-joined computers.
 
-If you disable or do not configure this policy setting, the Logon UI will not enumerate local users on domain-joined computers.
+- If you disable or do not configure this policy setting, the Logon UI will not enumerate local users on domain-joined computers.
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-Description-End -->
 
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-Editable-Begin -->
@@ -474,7 +474,7 @@ If you disable or do not configure this policy setting, the Logon UI will not en
 
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
 **ADMX mapping**:
 
@@ -514,11 +514,11 @@ If you disable or do not configure this policy setting, the Logon UI will not en
 <!-- Description-Source-ADMX -->
 This policy setting allows you to hide the Switch User interface in the Logon UI, the Start menu and the Task Manager.
 
-If you enable this policy setting, the Switch User interface is hidden from the user who is attempting to log on or is logged on to the computer that has this policy applied.
+- If you enable this policy setting, the Switch User interface is hidden from the user who is attempting to log on or is logged on to the computer that has this policy applied.
 
 The locations that Switch User interface appear are in the Logon UI, the Start menu and the Task Manager.
 
-If you disable or do not configure this policy setting, the Switch User interface is accessible to the user in the three locations.
+- If you disable or do not configure this policy setting, the Switch User interface is accessible to the user in the three locations.
 <!-- HideFastUserSwitching-Description-End -->
 
 <!-- HideFastUserSwitching-Editable-Begin -->
@@ -588,7 +588,7 @@ The policy currently supports below options:
 1. Not Configured: Default shell will be launched.
 2. Apply Lightweight Shell: Lightweight shell does not have a user interface and helps the device to achieve better performance as the shell consumes limited resources over default shell. Lightweight shell contains a limited set of features which could be consumed by applications. This configuration can be useful if the device needs to have a continuous running user interface application which would consume features offered by Lightweight shell.
 
-If you disable or do not configure this policy setting, then the default shell will be launched.
+- If you disable or do not configure this policy setting, then the default shell will be launched.
 <!-- OverrideShellProgram-Description-End -->
 
 <!-- OverrideShellProgram-Editable-Begin -->
@@ -611,8 +611,8 @@ If you disable or do not configure this policy setting, then the default shell w
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Not Configured |
-| 1 | Apply Lightweight shell |
+| 0 (Default) | Not Configured. |
+| 1 | Apply Lightweight shell. |
 <!-- OverrideShellProgram-AllowedValues-End -->
 
 <!-- OverrideShellProgram-Examples-Begin -->

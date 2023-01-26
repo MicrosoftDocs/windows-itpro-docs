@@ -1,135 +1,166 @@
 ---
-title: Policy CSP - Licensing
-description: Use the Policy CSP - Licensing setting to enable or disable Windows license reactivation on managed devices.
+title: Licensing Policy CSP
+description: Learn more about the Licensing Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 01/09/2023
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Licensing-Begin -->
 # Policy CSP - Licensing
 
-<hr/>
+<!-- Licensing-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Licensing-Editable-End -->
 
-<!--Policies-->
-## Licensing policies
+<!-- AllowWindowsEntitlementReactivation-Begin -->
+## AllowWindowsEntitlementReactivation
 
-<dl>
-  <dd>
-    <a href="#licensing-allowwindowsentitlementreactivation">Licensing/AllowWindowsEntitlementReactivation</a>
-  </dd>
-  <dd>
-    <a href="#licensing-disallowkmsclientonlineavsvalidation">Licensing/DisallowKMSClientOnlineAVSValidation</a>
-  </dd>
-</dl>
+<!-- AllowWindowsEntitlementReactivation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowWindowsEntitlementReactivation-Applicability-End -->
 
-<hr/>
+<!-- AllowWindowsEntitlementReactivation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Licensing/AllowWindowsEntitlementReactivation
+```
+<!-- AllowWindowsEntitlementReactivation-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="licensing-allowwindowsentitlementreactivation"></a>**Licensing/AllowWindowsEntitlementReactivation**
+<!-- AllowWindowsEntitlementReactivation-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls whether OS Reactivation is blocked on a device.
+Policy Options:
+- Not Configured (default -- Windows registration and reactivation is allowed)
+- Disabled (Windows registration and reactivation is not allowed)
+- Enabled (Windows registration is allowed)
+<!-- AllowWindowsEntitlementReactivation-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowWindowsEntitlementReactivation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWindowsEntitlementReactivation-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowWindowsEntitlementReactivation-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowWindowsEntitlementReactivation-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowWindowsEntitlementReactivation-AllowedValues-Begin -->
+**Allowed values**:
 
-> [!div class = "checklist"]
-> * Device
+| Value | Description |
+|:--|:--|
+| 0 | Disable Windows license reactivation on managed devices. |
+| 1 (Default) | Enable Windows license reactivation on managed devices. |
+<!-- AllowWindowsEntitlementReactivation-AllowedValues-End -->
 
-<hr/>
+<!-- AllowWindowsEntitlementReactivation-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Scope-->
-<!--Description-->
-Enables or Disable Windows license reactivation on managed devices.
+| Name | Value |
+|:--|:--|
+| Name | AllowWindowsEntitlementReactivation |
+| Friendly Name | Control Device Reactivation for Retail devices |
+| Location | Computer Configuration |
+| Path | Windows Components > Software Protection Platform |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\CurrentVersion\Software Protection Platform |
+| Registry Value Name | AllowWindowsEntitlementReactivation |
+| ADMX File Name | AVSValidationGP.admx |
+<!-- AllowWindowsEntitlementReactivation-GpMapping-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Control Device Reactivation for Retail devices*
--   GP name: *AllowWindowsEntitlementReactivation*
--   GP path: *Windows Components/Software Protection Platform*
--   GP ADMX file name: *AVSValidationGP.admx*
+<!-- AllowWindowsEntitlementReactivation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWindowsEntitlementReactivation-Examples-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowWindowsEntitlementReactivation-End -->
 
--   0 – Disable Windows license reactivation on managed devices.
--   1 (default) – Enable Windows license reactivation on managed devices.
+<!-- DisallowKMSClientOnlineAVSValidation-Begin -->
+## DisallowKMSClientOnlineAVSValidation
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- DisallowKMSClientOnlineAVSValidation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- DisallowKMSClientOnlineAVSValidation-Applicability-End -->
 
-<hr/>
+<!-- DisallowKMSClientOnlineAVSValidation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Licensing/DisallowKMSClientOnlineAVSValidation
+```
+<!-- DisallowKMSClientOnlineAVSValidation-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="licensing-disallowkmsclientonlineavsvalidation"></a>**Licensing/DisallowKMSClientOnlineAVSValidation**
+<!-- DisallowKMSClientOnlineAVSValidation-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting lets you opt-out of sending KMS client activation data to Microsoft automatically. Enabling this setting prevents this computer from sending data to Microsoft regarding its activation state.
+- If you disable or do not configure this policy setting, KMS client activation data will be sent to Microsoft services when this device activates.
+Policy Options:
+- Not Configured (default -- data will be automatically sent to Microsoft)
+- Disabled (data will be automatically sent to Microsoft)
+- Enabled (data will not be sent to Microsoft)
+<!-- DisallowKMSClientOnlineAVSValidation-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- DisallowKMSClientOnlineAVSValidation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowKMSClientOnlineAVSValidation-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisallowKMSClientOnlineAVSValidation-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisallowKMSClientOnlineAVSValidation-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisallowKMSClientOnlineAVSValidation-AllowedValues-Begin -->
+**Allowed values**:
 
-> [!div class = "checklist"]
-> * Device
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- DisallowKMSClientOnlineAVSValidation-AllowedValues-End -->
 
-<hr/>
+<!-- DisallowKMSClientOnlineAVSValidation-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Scope-->
-<!--Description-->
-Enabling this setting prevents this computer from sending data to Microsoft regarding its activation state.
+| Name | Value |
+|:--|:--|
+| Name | NoAcquireGT |
+| Friendly Name | Turn off KMS Client Online AVS Validation |
+| Location | Computer Configuration |
+| Path | Windows Components > Software Protection Platform |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\CurrentVersion\Software Protection Platform |
+| Registry Value Name | NoGenTicket |
+| ADMX File Name | AVSValidationGP.admx |
+<!-- DisallowKMSClientOnlineAVSValidation-GpMapping-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Turn off KMS Client Online AVS Validation*
--   GP name: *NoAcquireGT*
--   GP path: *Windows Components/Software Protection Platform*
--   GP ADMX file name: *AVSValidationGP.admx*
+<!-- DisallowKMSClientOnlineAVSValidation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowKMSClientOnlineAVSValidation-Examples-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- DisallowKMSClientOnlineAVSValidation-End -->
 
--   0 (default) – Disabled
--   1 – Enabled
+<!-- Licensing-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Licensing-CspMoreInfo-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+<!-- Licensing-End -->
 
-
-<!--/Policies-->
-
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)
