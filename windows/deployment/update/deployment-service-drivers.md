@@ -97,7 +97,11 @@ When you enroll devices into driver management, the deployment service becomes t
    }
    ```
 
-<!-- check timing with PM on this blurb from dev docs: When the deployment audience is successfully updated, the Windows Update for Business deployment service will start collecting scan results from Windows Update to build a catalog of applicable drivers to be browsed, approved, and scheduled for deployment.--> 
+1. To verify the devices were added to the audience, run the following query using the **Audience ID**:
+
+   ```rest
+   GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/members
+   ```
 
 ## Create an update policy
 
@@ -122,13 +126,14 @@ Update policies define how content is deployed to a deployment audience. An [upd
    To create a policy with additional settings, in the request body:
     - Specify the **Audience ID** as `id`
     - Define any additional deployment or compliance [settings](beta/api/adminwindowsupdates-post-updatepolicies). /graph/api/resources/windowsupdates-updatepolicy
+    - You may need to add the `content-length` header to the request. *?The value should be the length of the request body in bytes?*.
     
    In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`:
 
    ```rest
    POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
    Content-Type: application/json
-   Content-length: 835
+   Content-length: 967
    {
      "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
      "audience": {
@@ -170,7 +175,7 @@ Update policies define how content is deployed to a deployment audience. An [upd
 ```
 
 
-Response, returning the **Policy ID** of `9011c330-1234-5678-9abc-def0123456`:
+Response returning the policy, without any additional settings specified, that has a **Policy ID** of `9011c330-1234-5678-9abc-def0123456`:
 
 ```json
 HTTP/1.1 202 Accepted
@@ -190,8 +195,16 @@ Content-type: application/json
     }
 }
 ```
-
 <!--[Error 411](/graph/errors) Length Required -->
+## Review applicable driver content and approve content
+
+
+**Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`
+
+```rest
+GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/f660d844-30b7-46e4-a6cf-47e36164d3cb/applicableContent
+```
+
 
 
 ## Remove device enrollment
