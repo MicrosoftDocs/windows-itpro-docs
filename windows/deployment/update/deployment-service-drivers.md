@@ -17,14 +17,14 @@ ms.date: 02/14/2023
 
 In this tutorial, you will:
 > [!div class="checklist"]
-> * [Open Graph Explorer](#open-graph-explorer)
-> * [Run queries to identify test devices](#run-queries-to-identify-test-devices)
-> * [Enroll devices](#enroll-devices)
-> * [Create a deployment audience and add audience members](#create-a-deployment-audience-and-add-audience-members)
-> * [Create an update policy](#create-an-update-policy)
-> * Do Z
-> * Do Z
-> * [Remove device enrollment](#remove-device-enrollment)
+> - [Open Graph Explorer](#open-graph-explorer)
+> - [Run queries to identify test devices](#run-queries-to-identify-test-devices)
+> - [Enroll devices](#enroll-devices)
+> - [Create a deployment audience and add audience members](#create-a-deployment-audience-and-add-audience-members)
+> - [Create an update policy](#create-an-update-policy)
+> - Do Z
+> - Do Z
+> - [Remove device enrollment](#remove-device-enrollment)
 
 ## Prerequisites
 
@@ -101,26 +101,77 @@ When you enroll devices into driver management, the deployment service becomes t
 
 ## Create an update policy
 
-Update policies define how content is deployed to a deployment audience. An [update policy](/graph/api/resources/windowsupdates-updatepolicy)  
+Update policies define how content is deployed to a deployment audience. An [update policy](/graph/api/resources/windowsupdates-updatepolicy) ensures deployments to deployment audiences behave in a consistent manner without having to create and manage multiple individual deployments. When a content approval is added to the policy, it's deployed to the devices in the associated audiences. When creating an update policy, you can either:
 
-After devices are added to a deployment audience, you can create an [update policy](/graph/api/resources/windowsupdates-updatepolicy) that governs the deployment of content to the associated deployment audiences.  The update policy is a high-level template so content can be deployed in a similar way for a given audience without having to create, manage, and relate individual deployments.  Content is deployed to the devices in the associated audiences when a content approval is added to the policy.
+- Create a policy and define the settings later
 
-Create an update policy and assign an existing deployment audience to it. You can specify additional settings when you create the policy, or you can create a policy and define the settings later. 
+   To create a policy without any deployment settings, in the request body specify the **Audience ID** as `id`. In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`:
 
-To create a policy without any deployment settings, in the request body specify the **Audience ID** as `id`. In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`: 
+   ```rest
+   POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
+   Content-type: application/json
+   {
+     "audience": {
+       "@odata.id": "d39ad1ce-0123-4567-89ab-cdef01234567"
+     }
+   }
+   ```
 
+- Specify settings during policy creation
 
-```rest
-POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
-Content-type: application/json
-{
-  "audience": {
-    "@odata.id": "d39ad1ce-0123-4567-89ab-cdef01234567"
-  }
-}
+   To create a policy with additional settings, in the request body:
+    - Specify the **Audience ID** as `id`
+    - Define any additional deployment or compliance [settings](beta/api/adminwindowsupdates-post-updatepolicies). /graph/api/resources/windowsupdates-updatepolicy
+    
+   In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`:
+
+   ```rest
+   POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
+   Content-Type: application/json
+   Content-length: 835
+   {
+     "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
+     "audience": {
+       "@odata.id": "d39ad1ce-0123-4567-89ab-cdef01234567"
+     },
+     "complianceChanges": [
+       {
+         "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval"
+       }
+     ],
+     "complianceChangeRules": [
+       {
+         "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule",
+         "contentFilter": {
+           "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
+         },
+         "durationBeforeDeploymentStart": "P7D"
+       }
+     ],
+     "deploymentSettings": {
+       "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+       "schedule": {
+         "gradualRollout": {
+           "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+           "durationBetweenOffers": "P1D",
+           "devicePerOffer": 1000
+         }
+       }
+     }
+   }
+   ```
+
+**note to add info about behavior defined by settings in example and maybe include info about autoapprove while recommended** 
+```dotnetcli
+
+  "deploymentSettings": {
+    "contentApplicability": {
+      "offerWhileRecommendedBy": ["Microsoft"],
 ```
 
-Response, returning the **Policy ID** of `9011c330-1234-5678-9abc-def012345678` 
+
+Response, returning the **Policy ID** of `9011c330-1234-5678-9abc-def0123456`:
+
 ```json
 HTTP/1.1 202 Accepted
 Content-type: application/json
@@ -139,53 +190,6 @@ Content-type: application/json
     }
 }
 ```
-
-Policy with settings example:
-
-```rest
-POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
-Content-Type: application/json
-Content-length: 835
-
-{
-  "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
-  "audience": {
-    "@odata.id": "d39ad1ce-0123-4567-89ab-cdef01234567"
-  },
-  "complianceChanges": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval"
-    }
-  ],
-  "complianceChangeRules": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule",
-      "contentFilter": {
-        "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
-      },
-      "durationBeforeDeploymentStart": "P7D"
-    }
-  ],
-  "deploymentSettings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
-    "schedule": {
-      "gradualRollout": {
-        "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
-        "durationBetweenOffers": "P1D",
-        "devicePerOffer": 1000
-      }
-    }
-  }
-}
-```
-
-**note to add info or change the above example to include the following, if possible.**
-  "deploymentSettings": {
-    "contentApplicability": {
-      "offerWhileRecommendedBy": ["Microsoft"],
-
-
-
 
 <!--[Error 411](/graph/errors) Length Required -->
 
