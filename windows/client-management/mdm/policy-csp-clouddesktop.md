@@ -1,10 +1,10 @@
 ---
 title: CloudDesktop Policy CSP
-description: Learn more about the CloudDesktop Area in Policy CSP
+description: Learn more about the CloudDesktop Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/09/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -42,7 +42,7 @@ This policy allows the user to configure the boot to cloud mode. Boot to Cloud m
 This policy supports the below options:
 
 1. Not Configured: Machine will not trigger the Cloud PC connection automatically.
-2. Enable Boot to Cloud Desktop: The user will see that configured Cloud PC Provider application launches automatically. Once the sign-in operation finishes, the user is seamlessly connected to a provisioned Cloud PC.
+2. Enable Boot to Cloud Desktop: Users who have a Cloud PC provisioned will get connected seamlessly to the Cloud PC as they finish sign-in operation.
 <!-- BootToCloudMode-Description-End -->
 
 <!-- BootToCloudMode-Editable-Begin -->
@@ -64,8 +64,8 @@ This policy supports the below options:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Not Configured |
-| 1 | Enable Boot to Cloud Desktop |
+| 0 (Default) | Not Configured. |
+| 1 | Enable Boot to Cloud Desktop. |
 <!-- BootToCloudMode-AllowedValues-End -->
 
 <!-- BootToCloudMode-Examples-Begin -->

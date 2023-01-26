@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Group Policy.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/29/2022
+ms.date: 01/18/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -317,12 +317,14 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [DOMinBatteryPercentageAllowedToUpload](policy-csp-deliveryoptimization.md)
 - [DOCacheHost](policy-csp-deliveryoptimization.md)
 - [DOCacheHostSource](policy-csp-deliveryoptimization.md)
+- [DODisallowCacheServerDownloadsOnVPN](policy-csp-deliveryoptimization.md)
 - [DOGroupIdSource](policy-csp-deliveryoptimization.md)
 - [DODelayBackgroundDownloadFromHttp](policy-csp-deliveryoptimization.md)
 - [DODelayForegroundDownloadFromHttp](policy-csp-deliveryoptimization.md)
 - [DODelayCacheServerFallbackBackground](policy-csp-deliveryoptimization.md)
 - [DODelayCacheServerFallbackForeground](policy-csp-deliveryoptimization.md)
 - [DORestrictPeerSelectionBy](policy-csp-deliveryoptimization.md)
+- [DOVpnKeywords](policy-csp-deliveryoptimization.md)
 
 ## DeviceGuard
 
@@ -877,6 +879,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [NotifyMalicious](policy-csp-webthreatdefense.md)
 - [NotifyPasswordReuse](policy-csp-webthreatdefense.md)
 - [NotifyUnsafeApp](policy-csp-webthreatdefense.md)
+- [CaptureThreatWindow](policy-csp-webthreatdefense.md)
 
 ## Wifi
 

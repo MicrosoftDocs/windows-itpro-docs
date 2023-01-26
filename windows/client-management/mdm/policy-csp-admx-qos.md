@@ -1,10 +1,10 @@
 ---
 title: ADMX_QOS Policy CSP
-description: Learn more about the ADMX_QOS Area in Policy CSP
+description: Learn more about the ADMX_QOS Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/29/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - ADMX_QOS
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -43,15 +41,17 @@ ms.topic: reference
 <!-- QosMaxOutstandingSends-OmaUri-End -->
 
 <!-- QosMaxOutstandingSends-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the maximum number of outstanding packets permitted on the system. When the number of outstanding packets reaches this limit, the Packet Scheduler postpones all submissions to network adapters until the number falls below this limit.
 
 "Outstanding packets" are packets that the Packet Scheduler has submitted to a network adapter for transmission, but which have not yet been sent.
 
-If you enable this setting, you can limit the number of outstanding packets.
+- If you enable this setting, you can limit the number of outstanding packets.
 
-If you disable this setting or do not configure it, then the setting has no effect on the system.
+- If you disable this setting or do not configure it, then the setting has no effect on the system.
 
-Important: If the maximum number of outstanding packets is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the maximum number of outstanding packets is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosMaxOutstandingSends-Description-End -->
 
 <!-- QosMaxOutstandingSends-Editable-Begin -->
@@ -68,6 +68,9 @@ Important: If the maximum number of outstanding packets is specified in the regi
 <!-- QosMaxOutstandingSends-DFProperties-End -->
 
 <!-- QosMaxOutstandingSends-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -102,15 +105,17 @@ Important: If the maximum number of outstanding packets is specified in the regi
 <!-- QosNonBestEffortLimit-OmaUri-End -->
 
 <!-- QosNonBestEffortLimit-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Determines the percentage of connection bandwidth that the system can reserve. This value limits the combined bandwidth reservations of all programs running on the system.
 
 By default, the Packet Scheduler limits the system to 80 percent of the bandwidth of a connection, but you can use this setting to override the default.
 
-If you enable this setting, you can use the "Bandwidth limit" box to adjust the amount of bandwidth the system can reserve.
+- If you enable this setting, you can use the "Bandwidth limit" box to adjust the amount of bandwidth the system can reserve.
 
-If you disable this setting or do not configure it, the system uses the default value of 80 percent of the connection.
+- If you disable this setting or do not configure it, the system uses the default value of 80 percent of the connection.
 
-Important: If a bandwidth limit is set for a particular network adapter in the registry, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If a bandwidth limit is set for a particular network adapter in the registry, this setting is ignored when configuring that network adapter.
 <!-- QosNonBestEffortLimit-Description-End -->
 
 <!-- QosNonBestEffortLimit-Editable-Begin -->
@@ -127,6 +132,9 @@ Important: If a bandwidth limit is set for a particular network adapter in the r
 <!-- QosNonBestEffortLimit-DFProperties-End -->
 
 <!-- QosNonBestEffortLimit-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -161,15 +169,17 @@ Important: If a bandwidth limit is set for a particular network adapter in the r
 <!-- QosServiceTypeBestEffort_C-OmaUri-End -->
 
 <!-- QosServiceTypeBestEffort_C-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Best Effort service type (ServiceTypeBestEffort). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that conform to the flow specification.
 
-If you enable this setting, you can change the default DSCP value associated with the Best Effort service type.
+- If you enable this setting, you can change the default DSCP value associated with the Best Effort service type.
 
-If you disable this setting, the system uses the default DSCP value of 0.
+- If you disable this setting, the system uses the default DSCP value of 0.
 
-Important: If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeBestEffort_C-Description-End -->
 
 <!-- QosServiceTypeBestEffort_C-Editable-Begin -->
@@ -186,6 +196,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeBestEffort_C-DFProperties-End -->
 
 <!-- QosServiceTypeBestEffort_C-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -220,15 +233,17 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeBestEffort_NC-OmaUri-End -->
 
 <!-- QosServiceTypeBestEffort_NC-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Best Effort service type (ServiceTypeBestEffort). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that do not conform to the flow specification.
 
-If you enable this setting, you can change the default DSCP value associated with the Best Effort service type.
+- If you enable this setting, you can change the default DSCP value associated with the Best Effort service type.
 
-If you disable this setting, the system uses the default DSCP value of 0.
+- If you disable this setting, the system uses the default DSCP value of 0.
 
-Important: If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeBestEffort_NC-Description-End -->
 
 <!-- QosServiceTypeBestEffort_NC-Editable-Begin -->
@@ -245,6 +260,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeBestEffort_NC-DFProperties-End -->
 
 <!-- QosServiceTypeBestEffort_NC-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -279,13 +297,15 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeBestEffort_PV-OmaUri-End -->
 
 <!-- QosServiceTypeBestEffort_PV-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate link layer (Layer-2) priority value for packets with the Best Effort service type (ServiceTypeBestEffort). The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
 
-If you enable this setting, you can change the default priority value associated with the Best Effort service type.
+- If you enable this setting, you can change the default priority value associated with the Best Effort service type.
 
-If you disable this setting, the system uses the default priority value of 0.
+- If you disable this setting, the system uses the default priority value of 0.
 
-Important: If the Layer-2 priority value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the Layer-2 priority value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeBestEffort_PV-Description-End -->
 
 <!-- QosServiceTypeBestEffort_PV-Editable-Begin -->
@@ -302,6 +322,9 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeBestEffort_PV-DFProperties-End -->
 
 <!-- QosServiceTypeBestEffort_PV-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -336,15 +359,17 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeControlledLoad_C-OmaUri-End -->
 
 <!-- QosServiceTypeControlledLoad_C-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Controlled Load service type (ServiceTypeControlledLoad). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that conform to the flow specification.
 
-If you enable this setting, you can change the default DSCP value associated with the Controlled Load service type.
+- If you enable this setting, you can change the default DSCP value associated with the Controlled Load service type.
 
-If you disable this setting, the system uses the default DSCP value of 24 (0x18).
+- If you disable this setting, the system uses the default DSCP value of 24 (0x18).
 
-Important: If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeControlledLoad_C-Description-End -->
 
 <!-- QosServiceTypeControlledLoad_C-Editable-Begin -->
@@ -361,6 +386,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeControlledLoad_C-DFProperties-End -->
 
 <!-- QosServiceTypeControlledLoad_C-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -395,15 +423,17 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeControlledLoad_NC-OmaUri-End -->
 
 <!-- QosServiceTypeControlledLoad_NC-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Controlled Load service type (ServiceTypeControlledLoad). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that do not conform to the flow specification.
 
-If you enable this setting, you can change the default DSCP value associated with the Controlled Load service type.
+- If you enable this setting, you can change the default DSCP value associated with the Controlled Load service type.
 
-If you disable this setting, the system uses the default DSCP value of 0.
+- If you disable this setting, the system uses the default DSCP value of 0.
 
-Important: If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeControlledLoad_NC-Description-End -->
 
 <!-- QosServiceTypeControlledLoad_NC-Editable-Begin -->
@@ -420,6 +450,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeControlledLoad_NC-DFProperties-End -->
 
 <!-- QosServiceTypeControlledLoad_NC-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -454,13 +487,15 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeControlledLoad_PV-OmaUri-End -->
 
 <!-- QosServiceTypeControlledLoad_PV-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate link layer (Layer-2) priority value for packets with the Controlled Load service type (ServiceTypeControlledLoad). The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
 
-If you enable this setting, you can change the default priority value associated with the Controlled Load service type.
+- If you enable this setting, you can change the default priority value associated with the Controlled Load service type.
 
-If you disable this setting, the system uses the default priority value of 0.
+- If you disable this setting, the system uses the default priority value of 0.
 
-Important: If the Layer-2 priority value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the Layer-2 priority value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeControlledLoad_PV-Description-End -->
 
 <!-- QosServiceTypeControlledLoad_PV-Editable-Begin -->
@@ -477,6 +512,9 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeControlledLoad_PV-DFProperties-End -->
 
 <!-- QosServiceTypeControlledLoad_PV-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -511,15 +549,17 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeGuaranteed_C-OmaUri-End -->
 
 <!-- QosServiceTypeGuaranteed_C-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Guaranteed service type (ServiceTypeGuaranteed). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that conform to the flow specification.
 
-If you enable this setting, you can change the default DSCP value associated with the Guaranteed service type.
+- If you enable this setting, you can change the default DSCP value associated with the Guaranteed service type.
 
-If you disable this setting, the system uses the default DSCP value of 40 (0x28).
+- If you disable this setting, the system uses the default DSCP value of 40 (0x28).
 
-Important: If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeGuaranteed_C-Description-End -->
 
 <!-- QosServiceTypeGuaranteed_C-Editable-Begin -->
@@ -536,6 +576,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeGuaranteed_C-DFProperties-End -->
 
 <!-- QosServiceTypeGuaranteed_C-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -570,15 +613,17 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeGuaranteed_NC-OmaUri-End -->
 
 <!-- QosServiceTypeGuaranteed_NC-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Guaranteed service type (ServiceTypeGuaranteed). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that do not conform to the flow specification.
 
-If you enable this setting, you can change the default DSCP value associated with the Guaranteed service type.
+- If you enable this setting, you can change the default DSCP value associated with the Guaranteed service type.
 
-If you disable this setting, the system uses the default DSCP value of 0.
+- If you disable this setting, the system uses the default DSCP value of 0.
 
-Important: If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeGuaranteed_NC-Description-End -->
 
 <!-- QosServiceTypeGuaranteed_NC-Editable-Begin -->
@@ -595,6 +640,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeGuaranteed_NC-DFProperties-End -->
 
 <!-- QosServiceTypeGuaranteed_NC-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -629,13 +677,15 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeGuaranteed_PV-OmaUri-End -->
 
 <!-- QosServiceTypeGuaranteed_PV-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate link layer (Layer-2) priority value for packets with the Guaranteed service type (ServiceTypeGuaranteed). The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
 
-If you enable this setting, you can change the default priority value associated with the Guaranteed service type.
+- If you enable this setting, you can change the default priority value associated with the Guaranteed service type.
 
-If you disable this setting, the system uses the default priority value of 0.
+- If you disable this setting, the system uses the default priority value of 0.
 
-Important: If the Layer-2 priority value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the Layer-2 priority value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeGuaranteed_PV-Description-End -->
 
 <!-- QosServiceTypeGuaranteed_PV-Editable-Begin -->
@@ -652,6 +702,9 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeGuaranteed_PV-DFProperties-End -->
 
 <!-- QosServiceTypeGuaranteed_PV-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -686,15 +739,17 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeNetworkControl_C-OmaUri-End -->
 
 <!-- QosServiceTypeNetworkControl_C-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Network Control service type (ServiceTypeNetworkControl). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that conform to the flow specification.
 
-If you enable this setting, you can change the default DSCP value associated with the Network Control service type.
+- If you enable this setting, you can change the default DSCP value associated with the Network Control service type.
 
-If you disable this setting, the system uses the default DSCP value of 48 (0x30).
+- If you disable this setting, the system uses the default DSCP value of 48 (0x30).
 
-Important: If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeNetworkControl_C-Description-End -->
 
 <!-- QosServiceTypeNetworkControl_C-Editable-Begin -->
@@ -711,6 +766,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeNetworkControl_C-DFProperties-End -->
 
 <!-- QosServiceTypeNetworkControl_C-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -745,15 +803,17 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeNetworkControl_NC-OmaUri-End -->
 
 <!-- QosServiceTypeNetworkControl_NC-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Network Control service type (ServiceTypeNetworkControl). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that do not conform to the flow specification.
 
-If you enable this setting, you can change the default DSCP value associated with the Network Control service type.
+- If you enable this setting, you can change the default DSCP value associated with the Network Control service type.
 
-If you disable this setting, the system uses the default DSCP value of 0.
+- If you disable this setting, the system uses the default DSCP value of 0.
 
-Important: If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeNetworkControl_NC-Description-End -->
 
 <!-- QosServiceTypeNetworkControl_NC-Editable-Begin -->
@@ -770,6 +830,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeNetworkControl_NC-DFProperties-End -->
 
 <!-- QosServiceTypeNetworkControl_NC-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -804,13 +867,15 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeNetworkControl_PV-OmaUri-End -->
 
 <!-- QosServiceTypeNetworkControl_PV-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate link layer (Layer-2) priority value for packets with the Network Control service type (ServiceTypeNetworkControl). The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
 
-If you enable this setting, you can change the default priority value associated with the Network Control service type.
+- If you enable this setting, you can change the default priority value associated with the Network Control service type.
 
-If you disable this setting, the system uses the default priority value of 0.
+- If you disable this setting, the system uses the default priority value of 0.
 
-Important: If the Layer-2 priority value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the Layer-2 priority value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeNetworkControl_PV-Description-End -->
 
 <!-- QosServiceTypeNetworkControl_PV-Editable-Begin -->
@@ -827,6 +892,9 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeNetworkControl_PV-DFProperties-End -->
 
 <!-- QosServiceTypeNetworkControl_PV-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -861,13 +929,15 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeNonConforming-OmaUri-End -->
 
 <!-- QosServiceTypeNonConforming-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate link layer (Layer-2) priority value for packets that do not conform to the flow specification. The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
 
-If you enable this setting, you can change the default priority value associated with nonconforming packets.
+- If you enable this setting, you can change the default priority value associated with nonconforming packets.
 
-If you disable this setting, the system uses the default priority value of 0.
+- If you disable this setting, the system uses the default priority value of 0.
 
-Important: If the Layer-2 priority value for nonconforming packets is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the Layer-2 priority value for nonconforming packets is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeNonConforming-Description-End -->
 
 <!-- QosServiceTypeNonConforming-Editable-Begin -->
@@ -884,6 +954,9 @@ Important: If the Layer-2 priority value for nonconforming packets is specified 
 <!-- QosServiceTypeNonConforming-DFProperties-End -->
 
 <!-- QosServiceTypeNonConforming-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -918,15 +991,17 @@ Important: If the Layer-2 priority value for nonconforming packets is specified 
 <!-- QosServiceTypeQualitative_C-OmaUri-End -->
 
 <!-- QosServiceTypeQualitative_C-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Qualitative service type (ServiceTypeQualitative). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that conform to the flow specification.
 
-If you enable this setting, you can change the default DSCP value associated with the Qualitative service type.
+- If you enable this setting, you can change the default DSCP value associated with the Qualitative service type.
 
-If you disable this setting, the system uses the default DSCP value of 0.
+- If you disable this setting, the system uses the default DSCP value of 0.
 
-Important: If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeQualitative_C-Description-End -->
 
 <!-- QosServiceTypeQualitative_C-Editable-Begin -->
@@ -943,6 +1018,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeQualitative_C-DFProperties-End -->
 
 <!-- QosServiceTypeQualitative_C-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -977,15 +1055,17 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeQualitative_NC-OmaUri-End -->
 
 <!-- QosServiceTypeQualitative_NC-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Qualitative service type (ServiceTypeQualitative). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
 This setting applies only to packets that do not conform to the flow specification.
 
-If you enable this setting, you can change the default DSCP value associated with the Qualitative service type.
+- If you enable this setting, you can change the default DSCP value associated with the Qualitative service type.
 
-If you disable this setting, the system uses the default DSCP value of 0.
+- If you disable this setting, the system uses the default DSCP value of 0.
 
-Important: If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the DSCP value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeQualitative_NC-Description-End -->
 
 <!-- QosServiceTypeQualitative_NC-Editable-Begin -->
@@ -1002,6 +1082,9 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeQualitative_NC-DFProperties-End -->
 
 <!-- QosServiceTypeQualitative_NC-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -1036,13 +1119,15 @@ Important: If the DSCP value for this service type is specified in the registry 
 <!-- QosServiceTypeQualitative_PV-OmaUri-End -->
 
 <!-- QosServiceTypeQualitative_PV-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies an alternate link layer (Layer-2) priority value for packets with the Qualitative service type (ServiceTypeQualitative). The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
 
-If you enable this setting, you can change the default priority value associated with the Qualitative service type.
+- If you enable this setting, you can change the default priority value associated with the Qualitative service type.
 
-If you disable this setting, the system uses the default priority value of 0.
+- If you disable this setting, the system uses the default priority value of 0.
 
-Important: If the Layer-2 priority value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If the Layer-2 priority value for this service type is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
 <!-- QosServiceTypeQualitative_PV-Description-End -->
 
 <!-- QosServiceTypeQualitative_PV-Editable-Begin -->
@@ -1059,6 +1144,9 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosServiceTypeQualitative_PV-DFProperties-End -->
 
 <!-- QosServiceTypeQualitative_PV-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
@@ -1093,13 +1181,15 @@ Important: If the Layer-2 priority value for this service type is specified in t
 <!-- QosTimerResolution-OmaUri-End -->
 
 <!-- QosTimerResolution-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Determines the smallest unit of time that the Packet Scheduler uses when scheduling packets for transmission. The Packet Scheduler cannot schedule packets for transmission more frequently than permitted by the value of this entry.
 
-If you enable this setting, you can override the default timer resolution established for the system, usually units of 10 microseconds.
+- If you enable this setting, you can override the default timer resolution established for the system, usually units of 10 microseconds.
 
-If you disable this setting or do not configure it, the setting has no effect on the system.
+- If you disable this setting or do not configure it, the setting has no effect on the system.
 
-Important: If a timer resolution is specified in the registry for a particular network adapter, then this setting is ignored when configuring that network adapter.
+> [!IMPORTANT]
+> If a timer resolution is specified in the registry for a particular network adapter, then this setting is ignored when configuring that network adapter.
 <!-- QosTimerResolution-Description-End -->
 
 <!-- QosTimerResolution-Editable-Begin -->
@@ -1116,6 +1206,9 @@ Important: If a timer resolution is specified in the registry for a particular n
 <!-- QosTimerResolution-DFProperties-End -->
 
 <!-- QosTimerResolution-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |

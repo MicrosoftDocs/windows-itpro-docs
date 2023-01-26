@@ -1,81 +1,83 @@
 ---
-title: Policy CSP - FederatedAuthentication
-description: Use the Policy CSP - Represents the enablement state of the Web Sign-in Credential Provider for device sign-in.
-ms.author: v-nsatapathy
-ms.topic: article
+title: FederatedAuthentication Policy CSP
+description: Learn more about the FederatedAuthentication Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: nimishasatapathy
-ms.localizationpriority: medium
-ms.date: 09/07/2022
-ms.reviewer: 
-manager: dansimp
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- FederatedAuthentication-Begin -->
 # Policy CSP - FederatedAuthentication
 
+<!-- FederatedAuthentication-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- FederatedAuthentication-Editable-End -->
 
-<hr/>
+<!-- EnableWebSignInForPrimaryUser-Begin -->
+## EnableWebSignInForPrimaryUser
 
-<!--Policies-->
-## FederatedAuthentication policies  
+<!-- EnableWebSignInForPrimaryUser-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+<!-- EnableWebSignInForPrimaryUser-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#federatedauthentication-enablewebsigninforprimaryuser">FederatedAuthentication/EnableWebSignInForPrimaryUser</a>
-  </dd>
-</dl>
+<!-- EnableWebSignInForPrimaryUser-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser
+```
+<!-- EnableWebSignInForPrimaryUser-OmaUri-End -->
 
+<!-- EnableWebSignInForPrimaryUser-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether web-based sign-in is enabled with the Primary User experience
+<!-- EnableWebSignInForPrimaryUser-Description-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="federatedauthentication-enablewebsigninforprimaryuser"></a>**FederatedAuthentication/EnableWebSignInForPrimaryUser**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|No|No|
-|Education|No|No|
-|Windows SE|Yes|No|
-
-> [!NOTE]
-> Only available on Windows SE edition when Education/IsEducationEnvironment policy is also set to "1".
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Machine
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy specifies whether Web Sign-in can be used for device sign-in in a single-user environment.​
-
+<!-- EnableWebSignInForPrimaryUser-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Web Sign-in is only supported on Azure AD Joined PCs.
+<!-- EnableWebSignInForPrimaryUser-Editable-End -->
 
-<!--/Description-->
+<!-- EnableWebSignInForPrimaryUser-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedValues-->
-Value type is integer:  
-- 0 - (default): Feature defaults as appropriate for edition and device capabilities.
-- 1 - Enabled: Web Sign-in Credential Provider will be enabled for device sign-in.
-- 2 - Disabled: Web Sign-in Credential Provider won't be enabled for device sign-in.
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableWebSignInForPrimaryUser-DFProperties-End -->
 
-<!--/SupportedValues-->
+<!-- EnableWebSignInForPrimaryUser-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Feature defaults as appropriate for edition and device capabilities. As of now, all editions/devices exhibit Disabled behavior by default. However, this may change for future editions/devices. |
+| 1 | Enabled. Web Sign-in Credential Provider will be enabled for device sign-in. |
+| 2 | Disabled. Web Sign-in Credential Provider will be not be enabled for device sign-in. |
+<!-- EnableWebSignInForPrimaryUser-AllowedValues-End -->
 
-<!--/Policies-->
+<!-- EnableWebSignInForPrimaryUser-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableWebSignInForPrimaryUser-Examples-End -->
 
+<!-- EnableWebSignInForPrimaryUser-End -->
+
+<!-- FederatedAuthentication-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- FederatedAuthentication-CspMoreInfo-End -->
+
+<!-- FederatedAuthentication-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
