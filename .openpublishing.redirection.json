@@ -20429,6 +20429,21 @@
       "source_path": "windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees.md",
       "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/retired/hello-how-it-works.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-feature-conditional-access.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-event-300.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-faq",
+      "redirect_document_id": false
     }
   ]
 }
