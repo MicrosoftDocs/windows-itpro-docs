@@ -1,10 +1,10 @@
 ---
 title: MSSLegacy Policy CSP
-description: Learn more about the MSSLegacy Area in Policy CSP
+description: Learn more about the MSSLegacy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/29/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - MSSLegacy
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -43,7 +41,7 @@ ms.topic: reference
 <!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-OmaUri-End -->
 
 <!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Description-Begin -->
-<!-- Description-Not-Found -->
+<!-- Description-Source-Not-Found -->
 <!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Description-End -->
 
 <!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Editable-Begin -->
@@ -61,7 +59,16 @@ Allow ICMP redirects to override OSPF generated routes.
 <!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-DFProperties-End -->
 
 <!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-AdmxBacked-Begin -->
-<!-- Unknown -->
+<!-- ADMX-Not-Found -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_MSS_EnableICMPRedirect |
+| ADMX File Name | mss-legacy.admx |
 <!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-AdmxBacked-End -->
 
 <!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Examples-Begin -->
@@ -86,7 +93,7 @@ Allow ICMP redirects to override OSPF generated routes.
 <!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-OmaUri-End -->
 
 <!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Description-Begin -->
-<!-- Description-Not-Found -->
+<!-- Description-Source-Not-Found -->
 <!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Description-End -->
 
 <!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Editable-Begin -->
@@ -104,7 +111,16 @@ Allow the computer to ignore NetBIOS name release requests except from WINS serv
 <!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-DFProperties-End -->
 
 <!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-AdmxBacked-Begin -->
-<!-- Unknown -->
+<!-- ADMX-Not-Found -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_MSS_NoNameReleaseOnDemand |
+| ADMX File Name | mss-legacy.admx |
 <!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-AdmxBacked-End -->
 
 <!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Examples-Begin -->
@@ -129,7 +145,7 @@ Allow the computer to ignore NetBIOS name release requests except from WINS serv
 <!-- IPSourceRoutingProtectionLevel-OmaUri-End -->
 
 <!-- IPSourceRoutingProtectionLevel-Description-Begin -->
-<!-- Description-Not-Found -->
+<!-- Description-Source-Not-Found -->
 <!-- IPSourceRoutingProtectionLevel-Description-End -->
 
 <!-- IPSourceRoutingProtectionLevel-Editable-Begin -->
@@ -147,7 +163,16 @@ IP source routing protection level (protects against packet spoofing).
 <!-- IPSourceRoutingProtectionLevel-DFProperties-End -->
 
 <!-- IPSourceRoutingProtectionLevel-AdmxBacked-Begin -->
-<!-- Unknown -->
+<!-- ADMX-Not-Found -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_MSS_DisableIPSourceRouting |
+| ADMX File Name | mss-legacy.admx |
 <!-- IPSourceRoutingProtectionLevel-AdmxBacked-End -->
 
 <!-- IPSourceRoutingProtectionLevel-Examples-Begin -->
@@ -172,7 +197,7 @@ IP source routing protection level (protects against packet spoofing).
 <!-- IPv6SourceRoutingProtectionLevel-OmaUri-End -->
 
 <!-- IPv6SourceRoutingProtectionLevel-Description-Begin -->
-<!-- Description-Not-Found -->
+<!-- Description-Source-Not-Found -->
 <!-- IPv6SourceRoutingProtectionLevel-Description-End -->
 
 <!-- IPv6SourceRoutingProtectionLevel-Editable-Begin -->
@@ -190,7 +215,16 @@ IPv6 source routing protection level (protects against packet spoofing).
 <!-- IPv6SourceRoutingProtectionLevel-DFProperties-End -->
 
 <!-- IPv6SourceRoutingProtectionLevel-AdmxBacked-Begin -->
-<!-- Unknown -->
+<!-- ADMX-Not-Found -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_MSS_DisableIPSourceRoutingIPv6 |
+| ADMX File Name | mss-legacy.admx |
 <!-- IPv6SourceRoutingProtectionLevel-AdmxBacked-End -->
 
 <!-- IPv6SourceRoutingProtectionLevel-Examples-Begin -->
