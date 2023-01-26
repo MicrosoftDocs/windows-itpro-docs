@@ -19,7 +19,10 @@ In this tutorial, you will:
 > [!div class="checklist"]
 > * [Open Graph Explorer](#open-graph-explorer) 
 > * [Run queries to identify test devices](#run-queries-to-identify-test-devices)
+> * [Enroll devices](#enroll-devices)
 > * Do Z
+> * Do Z
+> * [Remove device enrollment](#remove-device-enrollment)
 
 ## Prerequisites
 

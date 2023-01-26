@@ -29,7 +29,7 @@ GET https://graph.microsoft.com/v1.0/devices?$filter=startswith(displayName,'Tes
 For the next requests, set the **ConsistencyLevel** header to `eventual`. For more information about advanced query parameters, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 1. In Graph Explorer, select the **Request headers** tab.
-1. For **Key** type in `ConsistencyLevel` and for **Value**, type `eventual`. 
+1. For **Key** type in `ConsistencyLevel` and for **Value**, type `eventual`.
 1. Select the **Add** button. When you're finished, remove the request header by selecting the trash can icon.
 
     :::image type="content" source="../media/7512398-deployment-service-graph-modify-header.png" alt-text="Screenshot of the request headers tab in Graph Explorer" lightbox="../media/7512398-deployment-service-graph-modify-header.png":::

@@ -22,6 +22,7 @@ In this tutorial, you will:
 > * [Enroll devices](#enroll-devices)
 > * Do Z
 > * Do Z
+> * [Remove device enrollment](#remove-device-enrollment)
 
 ## Prerequisites
 
@@ -48,8 +49,24 @@ When you enroll devices into driver management, the deployment service becomes t
 <!--Using include for enrolling devices using Graph Explorer-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-enroll-device-graph-explorer.md)]
 
+## Create an audience
 
+```rest
+POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
+content-type: application/json
 
+{}
+```
+
+Returns a [201 Created] response with the following body:
+```json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deploymentAudiences/$entity",
+    "id": "f0ec689b-fa10-4e45-965c-ce753f7d4363",
+    "reportingDeviceCount": 0,
+    "applicableContent": []
+}
+```
 ## Remove device enrollment
 
 <!--Using include for removing device enrollment-->

@@ -15,7 +15,7 @@ When a device no longer needs to be managed by the deployment service, remove th
 - The device will continue to receive feature updates from the deployment service
 - Drivers may start being installed from Windows Update depending on the device's configuration
 
-To remove device enrollment,POST to [updatableAssets](/graph/api/resources/windowsupdates-updatableasset) using [unenrollAssets](/graph/api/windowsupdates-updatableasset-unenrollassets). In the request body, specify:
+To remove device enrollment, POST to [updatableAssets](/graph/api/resources/windowsupdates-updatableasset) using [unenrollAssets](/graph/api/windowsupdates-updatableasset-unenrollassets). In the request body, specify:
 - **Azure AD Device ID** as `id` for the device
 - Either `feature` or `driver` for the updateCategory
 
