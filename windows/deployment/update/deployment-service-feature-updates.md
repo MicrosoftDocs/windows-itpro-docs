@@ -11,7 +11,7 @@ ms.technology: itpro-updates
 ms.date: 02/14/2023
 ---
 
-# Deploy feature updates with Windows Update for Business deployment service
+# Tutorial: Deploy feature updates with Windows Update for Business deployment service
 <!--7512398-->
 ***(Applies to: Windows 11 & Windows 10)***
 

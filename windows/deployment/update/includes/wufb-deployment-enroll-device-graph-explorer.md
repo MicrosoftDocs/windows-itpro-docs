@@ -19,26 +19,26 @@ You enroll devices based on the types of updates you want them to recieve.Curren
    1. In the **Request body** tab, enter the following JSON, supplying the following information:
       - **Azure AD Device ID** as `id`
       - Either `feature` or `driver` for the updateCategory
-   
-       ```json
-	      {
-	          "updateCategory": "driver",
-	          "assets": [
-	              {
-	                 "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-	                 "id": "01234567-89ab-cdef-0123-456789abcdef"
-	              },
-                {
-	                 "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-	                 "id": "01234567-89ab-cdef-0123-456789abcde0"
-	              },
-                {
-	                  "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-	                  "id": "01234567-89ab-cdef-0123-456789abcde1"
-	              }
-	          ]
-	      }
-       ```
+
+      ```json
+      {
+        "updateCategory": "driver",
+        "assets": [
+          {
+            "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+            "id": "01234567-89ab-cdef-0123-456789abcdef"
+          },
+          {
+            "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+            "id": "01234567-89ab-cdef-0123-456789abcde0"
+          },
+          {
+            "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+            "id": "01234567-89ab-cdef-0123-456789abcde1"
+          }
+        ]
+      }
+      ```
 
    1. Select the **Run query** button. The results will appear in the **Response** window. In this case, the status code of [202 Accepted](/troubleshoot/developer/webapps/iis/www-administration-management/http-status-code#2xx---success).
 
