@@ -19,3 +19,7 @@ To enroll into Windows Update for Business reports, edit configuration settings,
 
 To display the workbook and view the **Windows** tab in the **Software Updates** page [Microsoft 365 admin center](https://admin.microsoft.com) use the following role:
   - [Global Reader role](/azure/active-directory/roles/permissions-reference#global-reader)
+  - [Policy and Profile Manager](/mem/intune/fundamentals/role-based-access-control#built-in-roles)
+  - Windows Update Deployment Administrator
+    
+    Intune Policy and Profile Manager and Windows Update Deployment Administrator roles are much more scoped and would be recommended for accessing the Windows Update for Business reports.
