@@ -121,6 +121,4 @@ There are two statuses associated with paused quality updates, **Service Paused*
 
 ## Incidents and outages
 
-If devices in your tenant aren't meeting the [service level objective](../operate/windows-autopatch-wqu-overview.md#service-level-objective) for Windows quality updates, an incident will be raised, and the Windows Autopatch Service Engineering Team will work to bring the devices back into compliance.
-
-If you're experiencing other issues related to Windows quality updates, [submit a support request](../operate/windows-autopatch-support-request.md).
+Windows Autopatch provides information on how you can remediate [Ineligible Devices (Customer Actions)](../operate/windows-autopatch-wqu-reports-overview.md#ineligible-devices-customer-action) and/or the Windows Autopatch service may remediate [Not up to Date devices](../operate/windows-autopatch-wqu-reports-overview.md#not-up-to-date-microsoft-action) to bring them back into compliance.
