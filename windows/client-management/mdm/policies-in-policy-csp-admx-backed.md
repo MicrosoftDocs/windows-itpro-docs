@@ -4,7 +4,7 @@ description: Learn about the ADMX-backed policies in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/29/2022
+ms.date: 01/18/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2927,6 +2927,7 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [ConfigureRpcListenerPolicy](policy-csp-printers.md)
 - [ConfigureRpcConnectionPolicy](policy-csp-printers.md)
 - [ConfigureRpcTcpPort](policy-csp-printers.md)
+- [ConfigureRpcAuthnLevelPrivacyEnabled](policy-csp-printers.md)
 - [ConfigureIppPageCountsPolicy](policy-csp-printers.md)
 - [ConfigureRedirectionGuardPolicy](policy-csp-printers.md)
 
@@ -2987,6 +2988,7 @@ This article lists the ADMX-backed policies in Policy CSP.
 ## SettingsSync
 
 - [DisableAccessibilitySettingSync](policy-csp-settingssync.md)
+- [DisableLanguageSettingSync](policy-csp-settingssync.md)
 
 ## Storage
 

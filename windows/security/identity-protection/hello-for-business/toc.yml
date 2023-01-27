@@ -91,10 +91,10 @@
     href: hello-prepare-people-to-use.md
   - name: Manage Windows Hello for Business in your organization
     href: hello-manage-in-organization.md
+  - name: Windows Hello and password changes
+    href: hello-and-password-changes.md
 - name: Windows Hello for Business features
   items:
-  - name: Conditional access 
-    href: hello-feature-conditional-access.md
   - name: PIN Reset
     href: hello-feature-pin-reset.md
   - name: Dual Enrollment
@@ -111,10 +111,6 @@
     href: hello-deployment-issues.md
   - name: Errors during PIN creation
     href: hello-errors-during-pin-creation.md
-  - name: Event ID 300 - Windows Hello successfully created
-    href: hello-event-300.md
-  - name: Windows Hello and password changes
-    href: hello-and-password-changes.md
 - name: Reference
   items:
   - name: How Windows Hello for Business provisioning works
