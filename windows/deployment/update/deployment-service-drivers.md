@@ -47,7 +47,7 @@ All of the [prerequisites for the Windows Update for Business deployment service
 
 ## Enroll devices
 
-When you enroll devices into driver management, the deployment service becomes the authority for driver updates coming from Windows Update. Devices don't receive drivers from Windows Update until a deployment is manually created or they're added to a driver update policy with approvals.
+When you enroll devices into driver management, the deployment service becomes the authority for driver updates coming from Windows Update. Devices don't receive drivers or firmware from Windows Update until a deployment is manually created or they're added to a driver update policy with approvals.
 
 <!--Using include for enrolling devices using Graph Explorer-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-enroll-device-graph-explorer.md)]
@@ -112,7 +112,7 @@ Update policies define how content is deployed to a deployment audience. An [upd
 
 - Create a policy and define the settings later
 
-   To create a policy without any deployment settings, in the request body specify the **Audience ID** as `id`. In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`:
+   To create a policy without any deployment settings, in the request body specify the **Audience ID** as `id`. In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`, and the `id` given in the response is the **Policy ID**:
 
    ```rest
    POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
@@ -128,7 +128,7 @@ Update policies define how content is deployed to a deployment audience. An [upd
 
    To create a policy with additional settings, in the request body:
     - Specify the **Audience ID** as `id`
-    - Define any additional deployment or compliance [settings](beta/api/adminwindowsupdates-post-updatepolicies). /graph/api/resources/windowsupdates-updatepolicy
+    - Define any additional [deployment settings](beta/api/resources/windowsupdates-deploymentsettings). 
     - You may need to add the `content-length` header to the request. *?The value should be the length of the request body in bytes?*.
     
    In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`:
@@ -171,15 +171,14 @@ Update policies define how content is deployed to a deployment audience. An [upd
 
 **note to add info about behavior defined by settings in example and maybe include info about autoapprove while recommended** 
 
-```dotnetcli
+```
 
   "deploymentSettings": {
     "contentApplicability": {
       "offerWhileRecommendedBy": ["Microsoft"],
 ```
-
-
-Response returning the policy, without any additional settings specified, that has a **Policy ID** of `9011c330-1234-5678-9abc-def0123456`:
+ 
+Response returning the policy, without any additional settings specified, that has a **Policy ID** of `9011c330-1234-5678-9abc-def012345678`:
 
 ```json
 HTTP/1.1 202 Accepted
@@ -202,16 +201,66 @@ Content-type: application/json
 <!--[Error 411](/graph/errors) Length Required -->
 ## Review applicable driver content and approve it
 
-Review 
+Once Windows Update for Business deployment service has scan results from devices, the applicability for driver and firmware updates can be displayed for a deployment audience.
 
-
-**Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`
+To display [applicable content](/graph/api/resources/windowsupdates-applicablecontent), run a query using the  **Audience ID**, for example `d39ad1ce-0123-4567-89ab-cdef01234567`:  
 
 ```rest
 GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/applicableContent
 ```
 
+Each applicable update returns the following information:
 
+- An `id` for its [catalog entry](/graph/api/resources/windowsupdates-catalogentry)
+- The **Azure AD ID** of the devices it's applicable to
+- Information describing the update such as the name and version.
+
+The following truncated response displays:
+- An **Azure AD ID** of `01234567-89ab-cdef-0123-456789abcdef` 
+- The **Catalog ID** of `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d`
+
+```json
+"matchedDevices": [
+    {
+        "recommendedBy": [
+            "Microsoft"
+        ],
+        "deviceId": "01ea3c90-12f5-4093-a4c9-c1434657c976"
+    }
+],
+"catalogEntry": {
+    "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateCatalogEntry",
+    "id": "1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d",
+```
+
+Each driver update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). Approve content for drivers and firmware by adding a [content approval](/graph/api/resources/windowsupdates-contentapproval) for the catalog entry to an existing policy. This approval is a [compliance change](/graph/api/resources/windowsupdates-compliance) for the policy and it  
+
+
+Deployments for driver updates are created and enforced on a policy through [compliance changes](/graph/api/resources/windowsupdates-compliance). [Content approvals](/graph/api/esources/windowsupdates-contentapproval) for driver updates are added to a policy by specifying the [catalog entry](/graph/api/resources/windowsupdates-catalogentry) associated to a specific driver update. Content will only be delivered to devices in the deployment audiences associated with the update policy once approved.
+
+Add a content approval to an existing policy, **Policy ID** `9011c330-1234-5678-9abc-def012345678` for the driver update with the **Catalog ID** `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d`. Schedule the start date for January, 20 2023 at 1 AM UTC: 
+
+```rest
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
+    "content": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "catalogEntry": {
+            "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateCatalogEntry",
+            "id": "1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d"
+        }
+    },
+    "deploymentSettings": {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
+            "startDateTime": "2023-01-20T01:00:00Z"
+        }
+    }
+}
+```
 
 ## Remove device enrollment
 
