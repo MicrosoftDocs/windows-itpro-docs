@@ -185,7 +185,7 @@ Enables or disables sharing of the host clipboard with the sandbox.
 `<ClipboardRedirection>value</ClipboardRedirection>`
 
 Supported values:
-- *Enable*: Enables sharing of host clipboard into the sandbox.
+- *Enable*: Enables sharing of the host clipboard with the sandbox.
 - *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox will be restricted. 
 - *Default*: This value is the default value for clipboard redirection. Currently, copy/paste between the host and sandbox are permitted under *Default*.
 
