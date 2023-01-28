@@ -76,6 +76,7 @@ Enables or disables networking in the sandbox. You can disable network access to
 `<Networking>value</Networking>`
 
 Supported values:
+- *Disable*: Enables networking in the sandbox.
 - *Disable*: Disables networking in the sandbox.
 - *Default*: This value is the default value for networking support. This value enables networking by creating a virtual switch on the host and connects the sandbox to it via a virtual NIC.
 
