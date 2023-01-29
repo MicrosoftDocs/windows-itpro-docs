@@ -31,7 +31,8 @@ This user right determines if users can create a symbolic link from the device t
 
 A symbolic link is a file system object that points to another file system object that is called the target. Symbolic links are transparent to users. The links appear as normal files or directories, and they can be acted upon by the user or application in exactly the same manner. Symbolic links are designed to aid in migration and application compatibility with UNIX operating systems. Microsoft has implemented symbolic links to function just like UNIX links.
 
->**Warning:**   This privilege should only be given to trusted users. Symbolic links can expose security vulnerabilities in applications that aren't designed to handle them.
+> [!WARNING]
+> This privilege should only be given to trusted users. Symbolic links can expose security vulnerabilities in applications that aren't designed to handle them.
 
 Constant: SeCreateSymbolicLinkPrivilege
 
