@@ -33,7 +33,7 @@ Starting with Microsoft Intune version 1902, you can set many Delivery Optimizat
 
 ## Allow content endpoints
 
-When using a firewall, it is important that the content endpoints are allowed and associated ports are open. For more information, see [Endpoints for Delivery Optimization and Microsoft Connected Cache content](delivery-optimization-endpoints.md).
+When using a firewall, it's important that the content endpoints are allowed and associated ports are open. For more information, see [Endpoints for Delivery Optimization and Microsoft Connected Cache content](delivery-optimization-endpoints.md).
 
 ## Recommended Delivery Optimization settings
 
@@ -62,7 +62,7 @@ Quick-reference table:
 
 ### Hybrid WAN scenario
 
-For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group, when neither the GroupID or GroupIDSource policies are set, is the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If your domain-based group is too wide, or your Active Directory sites aren't aligned with your site network topology, then you should consider additional options for dynamically creating groups, for example by using the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) policy.
+For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group, when the GroupID or GroupIDSource policies are not set, is the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If your domain-based group is too wide, or your Active Directory sites aren't aligned with your site network topology, then you should consider additional options for dynamically creating groups, for example by using the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) policy.
 
 To do this in Group Policy go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
@@ -70,7 +70,7 @@ To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimiza
 
 ### Hub and spoke topology with boundary groups
 
-The default download mode setting is **1**; this means all devices breaking out to the internet using the same public IP will be considered as a single peer group. To prevent peer-to-peer activity across your WAN, you should set the download mode to **2**. If you have already defined Active Directory sites per hub or branch office, then you don't need to do anything else since those will be used by default as the source for creation of Group IDs. If you're not using Active Directory sites, you should set a different source for Groups by using the the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) options or the [DORestrictPeerSelectionBy] (waas-delivery-optimization-reference.md#select-a-method-to-restrict-peer-selection) policy to restrict the activity to the subnet.
+The default download mode setting is **1**; this means all devices breaking out to the internet using the same public IP will be considered as a single peer group. To prevent peer-to-peer activity across your WAN, you should set the download mode to **2**. If you have already defined Active Directory sites per hub or branch office, then you don't need to do anything else since those will be used by default as the source for creation of Group IDs. If you're not using Active Directory sites, you should set a different source for Groups by using the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) options or the [DORestrictPeerSelectionBy] (waas-delivery-optimization-reference.md#select-a-method-to-restrict-peer-selection) policy to restrict the activity to the subnet.
 
 To do this in Group Policy go to ****Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
@@ -89,11 +89,11 @@ To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimiza
 
 ### Plentiful free space and large numbers of devices
 
-Many devices now come with large internal drives. You can set Delivery Optimization to take better advantage of this space (especially if you have large numbers of devices) by changing the minimum file size to cache. If you have more than 30 devices in your local network or group, change it from the default 50 MB to 10 MB. If you have more than 100 devices (and are running Windows 10, version 1803 or later), set this value to 1 MB.
+Many devices now come with large internal drives. You can set Delivery Optimization to take better advantage of this space (especially if you have large numbers of devices) by changing the minimum file size to cache. If you've more than 30 devices in your local network or group, change it from the default 50 MB to 10 MB. If you've more than 100 devices (and are running Windows 10, version 1803 or later), set this value to 1 MB.
 
-To do this in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Minimum Peer Caching Content File Size** to 10 (if you have more than 30 devices) or 1 (if you have more than 100 devices).
+To do this in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Minimum Peer Caching Content File Size** to 10 (if you've more than 30 devices) or 1 (if you've more than 100 devices).
 
-To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set [DOMinFileSizeToCache](/windows/client-management/mdm/policy-csp-deliveryoptimization#dominfilesizetocache) to 100 (if you have more than 30 devices) or 1 (if you have more than 100 devices).
+To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set [DOMinFileSizeToCache](/windows/client-management/mdm/policy-csp-deliveryoptimization#dominfilesizetocache) to 100 (if you've more than 30 devices) or 1 (if you've more than 100 devices).
 
 ### Lab scenario
 
@@ -144,7 +144,7 @@ Try these steps:
 1. Download the same app on two different devices on the same network, waiting 10 – 15 minutes between downloads.
 2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and ensure that **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** is 1 or 2 on both devices.
 3. Run `Get-DeliveryOptimizationPerfSnap` from an elevated PowerShell window on the second device. The **NumberOfPeers** field should be non-zero.
-4. If the number of peers is zero and **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** is 1, ensure that both devices are using the same public IP address to reach the internet (you can easily do this by opening a browser window and do a search for “what is my IP”). In the case where devices are not reporting the same public IP address, configure **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** to 2 (Group) and use a custom **[DOGroupID (Guid)](waas-delivery-optimization-reference.md#group-id)**, to fix this.
+4. If the number of peers is zero and **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** is 1, ensure that both devices are using the same public IP address to reach the internet (you can easily do this by opening a browser window and do a search for “what is my IP”). In the case where devices aren't reporting the same public IP address, configure **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** to 2 (Group) and use a custom **[DOGroupID (Guid)](waas-delivery-optimization-reference.md#group-id)**, to fix this.
 
 > [!NOTE]
 > Starting in Windows 10, version 2004, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
@@ -154,7 +154,7 @@ Try these steps:
 Try a Telnet test between two devices on the network to ensure they can connect using port 7680. Follow these steps:
 
 1. Install Telnet by running `dism /online /Enable-Feature /FeatureName:TelnetClient` from an elevated command prompt.
-2. Run the test. For example, if you are on device with IP 192.168.8.12 and you are trying to test the connection to 192.168.9.17 run `telnet 192.168.9.17 7680` (the syntax is *telnet [destination IP] [port]*. You will either see a connection error or a blinking cursor like this /_. The blinking cursor means success.
+2. Run the test. For example, if you are on device with IP 192.168.8.12 and you're trying to test the connection to 192.168.9.17 run `telnet 192.168.9.17 7680` (the syntax is *telnet [destination IP] [port]*. You'll either see a connection error or a blinking cursor like this /_. The blinking cursor means success.
 
 > [!NOTE]
 > You can also use [Test-NetConnection](/powershell/module/nettcpip/test-netconnection) instead of Telnet to run the test.

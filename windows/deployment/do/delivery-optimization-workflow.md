@@ -20,7 +20,7 @@ ms.date: 12/31/2017
 
 ## Download request workflow
 
-This workflow allows Delivery Optimization to securely and efficiently deliver requested content to the calling device. Delivery Optimization uses content metadata to determine all available locations to pull content from, and content verification.
+This workflow allows Delivery Optimization to securely and efficiently deliver requested content to the calling device. Delivery Optimization uses content metadata to verify the content and to determine all available locations to pull content from.
 
 1. When a download starts, the Delivery Optimization client attempts to get its content metadata. This content metadata is a hash file containing the SHA-256 block-level hashes of each piece in the file (typically one piece = 1 MB).
 2. The authenticity of the content metadata file itself is verified prior to any content being downloaded using a hash that is obtained via an SSL channel from the Delivery Optimization service. The same channel is used to ensure the content is curated and authorized to use peer-to-peer.

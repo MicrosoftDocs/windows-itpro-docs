@@ -36,8 +36,8 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | Group Policy setting | MDM setting | Supported from version | Notes |
 | --- | --- | --- | ------- |
 | [Download mode](#download-mode) | DODownloadMode | 1511 | Default is set to LAN(1). The Group [Download mode](#download-mode) (2) combined with [Group ID](#group-id), enables administrators to create custom device groups that will share content between devices in the group.|
-| [Group ID](#group-id)  | DOGroupID | 1511 | Used with Group [Download mode](#download-mode). If not set, check [GroupIDSource](#select-the-source-of-group-ids). When neither the GroupID or GroupIDSource policies are set, the GroupID will be defined as the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order.  |
-| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 | If not set, check [Group ID](#group-id). When neither the GroupID or GroupIDSource policies are set, the Group will be defined as the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. |
+| [Group ID](#group-id)  | DOGroupID | 1511 | Used with Group [Download mode](#download-mode). If not set, check [GroupIDSource](#select-the-source-of-group-ids). When GroupID or GroupIDSource policies are not set, the GroupID will be defined as the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order.  |
+| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 | If not set, check [Group ID](#group-id). When the GroupID or GroupIDSource policies are not set, the Group will be defined as the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. |
 | [Select a method to restrict peer selection](#select-a-method-to-restrict-peer-selection) | DORestrictPeerSelectionBy | 1803 | Starting in Windows 11, consumer devices default to using 'Local discovery (DNS-SD)' and commercial devices  default to using 'Subnet'.  |
 | [Minimum RAM (inclusive) allowed to use peer caching](#minimum-ram-inclusive-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer | 1703 | Default value is 4 GB. |
 | [Minimum disk size allowed to use peer caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 | Default value is 32 GB. |
@@ -45,12 +45,12 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Max cache size](#max-cache-size)  | DOMaxCacheSize | 1511 | Default value is 20%. |
 | [Absolute max cache size (in GBs)](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize | 1607 | Default value is 10 GB.|
 | [Modify cache drive](#modify-cache-drive) | DOModifyCacheDrive | 1607 | Default to the operating system drive through the %SYSTEMDRIVE% environment variable. |
-| [Minimum peer caching content file size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache | 1703 | Default file size is 50MB. |
+| [Minimum peer caching content file size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache | 1703 | Default file size is 50 MB. |
 | [Maximum download bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004; use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| Default is '0' which will dynamically adjust. |
 | [Percentage of maximum download bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004; use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)  or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| Default is '0' which will dynamically adjust. |
 | [Maximum upload bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 (removed in Windows 10, version 2004) | Default is '0' (unlimited). |
-| [Monthly upload data cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 | Default value for is 20 GB. |
-| [Minimum background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 | Default value is 500KB/s. |
+| [Monthly upload data cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 | Default value is 20 GB. |
+| [Minimum background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 | Default value is 500 KB/s. |
 | [Enable peer caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1709 | Default is to not allow peering while on VPN. |
 | [Allow uploads while the device is on battery while under set battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1709 | Default is to not allow peering while on battery.  |
 | [Maximum foreground download bandwidth (percentage)](#maximum-foreground-download-bandwidth) | DOPercentageMaxForegroundBandwidth | 1803 | Default is '0' which will dynamically adjust. |
@@ -70,7 +70,7 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 
 #### Locally cached updates
 
-Delivery Optimization uses locally cached updates. In cases where devices have ample local storage and you would like to cache more content, or if you have limited storage and would like to cache less, use the following settings to adjust the Delivery Optimization cache to suit your scenario:
+Delivery Optimization uses locally cached updates to deliver contact via peers. The more content available in the cache, the more likely that peering can be used. In cases where devices have enough local storage and you'd like to cache more content. Likewise, if you have limited storage and would prefer to cache less, use the following settings to adjust the Delivery Optimization cache to suit your scenario:
 
 - [Max Cache Size](#max-cache-size) and [Absolute Max Cache Size](#absolute-max-cache-size) control the amount of space the Delivery Optimization cache can use.
 - [Max Cache Age](#max-cache-age) controls the retention period for each update in the cache.
@@ -83,7 +83,7 @@ All cached files have to be above a set minimum size. This size is automatically
 
 #### Impact to network
 
-Additional options available that control the impact Delivery Optimization has on your network include the following:
+More options available that control the impact Delivery Optimization has on your network include the following:
 
 - [Maximum Download Bandwidth](#maximum-download-bandwidth) and [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) control the download bandwidth used by Delivery Optimization.
 - [Max Upload Bandwidth](#max-upload-bandwidth) controls the Delivery Optimization upload bandwidth usage.
@@ -100,7 +100,7 @@ Additional options available that control the impact Delivery Optimization has o
 
 #### Delay options
 
-There are four settings that allow you to control the default behavior and delay access to the HTTP source. The goal of these settings to is provide fine tuning to a particular network's needs to potentially increase the success rate of pulling content from local sources (either from peer or Microsoft Connected Cache). To use either the peer-to-peer functionality or the Microsoft Connected Cache features, devices must have access to the internet and Delivery Optimization cloud services. When Delivery Optimization is configured to use peers and Microsoft Connected Cache (MCC), to achieve the best possible content delivery experience, the client will connect to MCC and peers in parallel. If the desired content cannot be obtain from MCC or peers, Delivery Optimization will automatically fallback to the HTTP source to get the requested content. However, the following delay settings can be used to alter this behavior.
+There are four settings that allow you to control the default behavior and delay access to the HTTP source. The goal of these settings is to provide fine tuning to a particular network's needs to potentially increase the success rate of pulling content from local sources (either from peer or Microsoft Connected Cache). To use either the peer-to-peer functionality or the Microsoft Connected Cache features, devices must have access to the internet and Delivery Optimization cloud services. When Delivery Optimization is configured to use peers and Microsoft Connected Cache (MCC), to achieve the best possible content delivery experience, the client will connect to MCC and peers in parallel. If the desired content cannot be obtained from MCC or peers, Delivery Optimization will automatically fallback to the HTTP source to get the requested content. However, the following delay settings can be used to alter this behavior.
 
 ##### Peer-to-peer delay settings
 
@@ -125,7 +125,7 @@ Administrators can further customize scenarios where Delivery Optimization will 
 
 ### Download mode
 
-Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers. The following table shows the available download mode options and what they do. Additional technical details for these policies are available in [Policy CSP - Delivery Optimization](/windows/client-management/mdm/policy-csp-deliveryoptimization).
+Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers. The following table shows the available download mode options and what they do. Other technical details for these policies are available in [Policy CSP - Delivery Optimization](/windows/client-management/mdm/policy-csp-deliveryoptimization).
 
 | Download mode option | Functionality when set |
 | --- | --- |
@@ -162,7 +162,7 @@ Starting in Windows 10, version 1803, set this policy to restrict peer selection
 - 4 = DNS Suffix
 - 5 = Starting with Windows 10, version 1903, you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
-When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy will be ignored. The default behavior, when neither the GroupID or GroupIDSource policies are set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
+When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy will be ignored. The default behavior, when the GroupID or GroupIDSource policies are not set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
 
 ### Minimum RAM (inclusive) allowed to use Peer Caching  
 
@@ -189,7 +189,7 @@ This setting specifies the maximum number of gigabytes the Delivery Optimization
 
 ### Minimum Peer Caching Content File Size
 
-This setting specifies the minimum content file size in MB enabled to use Peer Caching. The recommended values are from 1 to 100000. **The default file size is 50MB** to participate in peering.
+This setting specifies the minimum content file size in MB enabled to use Peer Caching. The recommended values are from 1 to 100000. **The default file size is 50 MB** to participate in peering.
 
 ### Maximum Download Bandwidth
 
@@ -253,7 +253,7 @@ Starting in Windows 10, version 1903, set this policy to delay the fallback from
 
 ### Minimum Background QoS
 
-This value specifies the minimum download speed guarantee that a client attempts to achieve and will fulfill by downloading more kilobytes from Windows Update servers or WSUS. The lower this value is, the more content will be sourced using peers on the network rather than Windows Update. The higher this value, the more content is received from Windows Update servers or WSUS, versus peers on the local network. **The default value is 500KB/s.**
+This value specifies the minimum download speed guarantee that a client attempts to achieve and will fulfill by downloading more kilobytes from Windows Update servers or WSUS. The lower this value is, the more content will be sourced using peers on the network rather than Windows Update. The higher this value, the more content is received from Windows Update servers or WSUS, versus peers on the local network. **The default value is 500 KB/s.**
 
 ### Modify Cache Drive
 
