@@ -4,7 +4,7 @@ description: Learn more about the Search Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 01/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -187,7 +187,7 @@ This policy controls whether the user can configure search to *Find My Files* mo
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Find My Files feature can be toggled (still off by default), and the settings UI is present. |
+| 1 (Default) | , and the settings UI is present. |
 | 0 | Find My Files feature is turned off completely, and the settings UI is disabled. |
 <!-- AllowFindMyFiles-AllowedValues-End -->
 
@@ -480,7 +480,7 @@ This policy has been deprecated.
 This policy setting allows words that contain diacritic characters to be treated as separate words.
 - If you enable this policy setting, words that only differ in diacritics are treated as different words.
 - If you disable this policy setting, words with diacritics and words without diacritics are treated as identical words. This policy setting is not configured by default.
-- If you do not configure this policy setting, the local setting, configured through Control Panel, will be used
+- If you do not configure this policy setting, the local setting, configured through Control Panel, will be used.
 
 > [!NOTE]
 > By default, the Control Panel setting is set to treat words that differ only because of diacritics as the same word.
@@ -639,6 +639,68 @@ The most restrictive value is `0` to now allow automatic language detection.
 
 <!-- AlwaysUseAutoLangDetection-End -->
 
+<!-- ConfigureSearchOnTaskbarMode-Begin -->
+## ConfigureSearchOnTaskbarMode
+
+<!-- ConfigureSearchOnTaskbarMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- ConfigureSearchOnTaskbarMode-Applicability-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/ConfigureSearchOnTaskbarMode
+```
+<!-- ConfigureSearchOnTaskbarMode-OmaUri-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+Configures search on the taskbar.
+- If you disable this policy setting or do not configure it, users can see and change this setting.
+<!-- ConfigureSearchOnTaskbarMode-Description-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureSearchOnTaskbarMode-Editable-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 3 |
+<!-- ConfigureSearchOnTaskbarMode-DFProperties-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Hide. |
+| 1 | Search icon only. |
+| 2 | Search icon and label. |
+| 3 (Default) | Search box. |
+<!-- ConfigureSearchOnTaskbarMode-AllowedValues-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ConfigureSearchOnTaskbarMode |
+| Path | Search > AT > WindowsComponents > Search |
+| Element Name | ConfigureSearchOnTaskbarMode_Dropdown |
+<!-- ConfigureSearchOnTaskbarMode-GpMapping-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureSearchOnTaskbarMode-Examples-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-End -->
+
 <!-- DisableBackoff-Begin -->
 ## DisableBackoff
 
@@ -775,7 +837,7 @@ This policy setting configures whether or not locations on removable drives can 
 <!-- DisableSearch-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
 <!-- DisableSearch-Applicability-End -->
 
 <!-- DisableSearch-OmaUri-Begin -->
@@ -1031,13 +1093,10 @@ If enabled, clients will be unable to query this computer's index remotely. Thus
 <!-- SafeSearchPermissions-Begin -->
 ## SafeSearchPermissions
 
-> [!NOTE]
-> This policy is deprecated and may be removed in a future release.
-
 <!-- SafeSearchPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
 <!-- SafeSearchPermissions-Applicability-End -->
 
 <!-- SafeSearchPermissions-OmaUri-Begin -->
@@ -1047,8 +1106,7 @@ If enabled, clients will be unable to query this computer's index remotely. Thus
 <!-- SafeSearchPermissions-OmaUri-End -->
 
 <!-- SafeSearchPermissions-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy is deprecated.
+<!-- Description-Source-Not-Found -->
 <!-- SafeSearchPermissions-Description-End -->
 
 <!-- SafeSearchPermissions-Editable-Begin -->
