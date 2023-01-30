@@ -30,7 +30,7 @@ Two methods of peer-to-peer content distribution are available.
 
     Windows Update, Windows Update for Business, and Windows Server Update Services (WSUS) can use Delivery Optimization. Delivery Optimization can significantly reduce the amount of network traffic to external Windows Update sources and the time it takes for clients to retrieve the updates.
 
-- [BranchCache](../update/waas-branchcache.md) is a bandwidth optimization technology that is included in some editions of Windows Server 2016 and Windows operating systems, as well as in some editions of Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, and Windows 7.
+- [BranchCache](../update/waas-branchcache.md) is a bandwidth optimization technology that is included in some editions of Windows Server 2016 and Windows operating systems, and in some editions of Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, and Windows 7.
 
     >[!NOTE]
     >Full BranchCache functionality is supported in Windows 10 Enterprise and Education; Windows 10 Pro supports some BranchCache functionality, including BITS transfers used for servicing operations.

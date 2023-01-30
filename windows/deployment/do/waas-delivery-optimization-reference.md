@@ -28,7 +28,7 @@ There are many configuration options you can set in Delivery Optimization to cus
 
 You can use Group Policy or an MDM solution like Intune to configure Delivery Optimization.
 
-You will find the Delivery Optimization settings in Group Policy under **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization**.
+You'll find the Delivery Optimization settings in Group Policy under **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization**.
 In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimization/**.
 
 ### Summary of Delivery Optimization settings
@@ -36,8 +36,8 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | Group Policy setting | MDM setting | Supported from version | Notes |
 | --- | --- | --- | ------- |
 | [Download mode](#download-mode) | DODownloadMode | 1511 | Default is set to LAN(1). The Group [Download mode](#download-mode) (2) combined with [Group ID](#group-id), enables administrators to create custom device groups that will share content between devices in the group.|
-| [Group ID](#group-id)  | DOGroupID | 1511 | Used with Group [Download mode](#download-mode). If not set, check [GroupIDSource](#select-the-source-of-group-ids). When GroupID or GroupIDSource policies are not set, the GroupID will be defined as the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order.  |
-| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 | If not set, check [Group ID](#group-id). When the GroupID or GroupIDSource policies are not set, the Group will be defined as the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. |
+| [Group ID](#group-id)  | DOGroupID | 1511 | Used with Group [Download mode](#download-mode). If not set, check [GroupIDSource](#select-the-source-of-group-ids). When GroupID or GroupIDSource policies aren't set, the GroupID will be defined as the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order.  |
+| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 | If not set, check [Group ID](#group-id). When the GroupID or GroupIDSource policies aren't set, the Group will be defined as the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. |
 | [Select a method to restrict peer selection](#select-a-method-to-restrict-peer-selection) | DORestrictPeerSelectionBy | 1803 | Starting in Windows 11, consumer devices default to using 'Local discovery (DNS-SD)' and commercial devices  default to using 'Subnet'.  |
 | [Minimum RAM (inclusive) allowed to use peer caching](#minimum-ram-inclusive-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer | 1703 | Default value is 4 GB. |
 | [Minimum disk size allowed to use peer caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 | Default value is 32 GB. |
@@ -57,12 +57,12 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Maximum background download bandwidth (percentage)](#maximum-background-download-bandwidth) | DOPercentageMaxBackgroundBandwidth | 1803 | Default is '0' which will dynamically adjust. |
 | [Maximum foreground download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) | DOMaxForegroundDownloadBandwidth | 2004 | Default is '0' which will dynamically adjust. |
 | [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) | DOMaxBackgroundDownloadBandwidth | 2004 | Default is '0' which will dynamically adjust. |
-| [Set hours to limit background download bandwidth](#set-business-hours-to-limit-background-download-bandwidth) | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 | Default is not set. |
-| [Set hours to limit foreground download bandwidth](#set-business-hours-to-limit-foreground-download-bandwidth) |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 | Default is not set. |
-| [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 | Default is not set. For peering, use this policy to delay the fallback to the HTTP source.  |
-| [Delay foreground download from HTTP (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 | Default is not set. For peering, Use this policy to delay the fallback to the HTTP source. |
-| [Delay foreground download Cache Server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 | Default is not set. For cached content (using Microsoft Connected Cache) Use this policy to delay the fallback to the HTTP source. |
-| [Delay background download Cache Server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 | Default is not set. For cached content (using Microsoft Connected Cache).|
+| [Set hours to limit background download bandwidth](#set-business-hours-to-limit-background-download-bandwidth) | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 | Default isn't set. |
+| [Set hours to limit foreground download bandwidth](#set-business-hours-to-limit-foreground-download-bandwidth) |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 | Default isn't set. |
+| [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 | Default isn't set. For peering, use this policy to delay the fallback to the HTTP source.  |
+| [Delay foreground download from HTTP (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 | Default isn't set. For peering, Use this policy to delay the fallback to the HTTP source. |
+| [Delay foreground download Cache Server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 | Default isn't set. For cached content (using Microsoft Connected Cache) Use this policy to delay the fallback to the HTTP source. |
+| [Delay background download Cache Server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 | Default isn't set. For cached content (using Microsoft Connected Cache).|
 | [Cache Server Hostname](#cache-server-hostname) | DOCacheHost | 1809  | Default is it has no value. |
 | [Cache Server Hostname Source](#cache-server-hostname-source) | DOCacheHostSource | 2004 | Default is it has no value. |
 
@@ -100,7 +100,7 @@ More options available that control the impact Delivery Optimization has on your
 
 #### Delay options
 
-There are four settings that allow you to control the default behavior and delay access to the HTTP source. The goal of these settings is to provide fine tuning to a particular network's needs to potentially increase the success rate of pulling content from local sources (either from peer or Microsoft Connected Cache). To use either the peer-to-peer functionality or the Microsoft Connected Cache features, devices must have access to the internet and Delivery Optimization cloud services. When Delivery Optimization is configured to use peers and Microsoft Connected Cache (MCC), to achieve the best possible content delivery experience, the client will connect to MCC and peers in parallel. If the desired content cannot be obtained from MCC or peers, Delivery Optimization will automatically fallback to the HTTP source to get the requested content. However, the following delay settings can be used to alter this behavior.
+There are four settings that allow you to control the default behavior and delay access to the HTTP source. The goal of these settings is to provide fine tuning to a particular network's needs to potentially increase the success rate of pulling content from local sources (either from peer or Microsoft Connected Cache). To use either the peer-to-peer functionality or the Microsoft Connected Cache features, devices must have access to the internet and Delivery Optimization cloud services. When Delivery Optimization is configured to use peers and Microsoft Connected Cache (MCC), to achieve the best possible content delivery experience, the client will connect to MCC and peers in parallel. If the desired content can't be obtained from MCC or peers, Delivery Optimization will automatically fallback to the HTTP source to get the requested content. However, the following delay settings can be used to alter this behavior.
 
 ##### Peer-to-peer delay settings
 
@@ -134,7 +134,7 @@ Download mode dictates which download sources clients are allowed to use when do
 | Group (2) | When group mode is set, the group is automatically selected based on the device's Active Directory Domain Services (AD DS) site (Windows 10, version 1607) or the domain the device is authenticated to (Windows 10, version 1511). In group mode, peering occurs across internal subnets, between devices that belong to the same group, including devices in remote offices. You can use GroupID option to create your own custom group independently of domains and AD DS sites. Starting with Windows 10, version 1803, you can use the GroupIDSource parameter to take advantage of other method to create groups dynamically. Group download mode is the recommended option for most organizations looking to achieve the best bandwidth optimization with Delivery Optimization. |
 | Internet (3) | Enable Internet peer sources for Delivery Optimization. |
 | Simple (99) | Simple mode disables the use of Delivery Optimization cloud services completely (for offline environments). Delivery Optimization switches to this mode automatically when the Delivery Optimization cloud services are unavailable, unreachable or when the content file size is less than 10 MB. In this mode, Delivery Optimization provides a reliable download experience, with no peer-to-peer caching. |
-|Bypass (100) |Bypass Delivery Optimization and use BITS, instead. You should only select this mode if you use WSUS and prefer to use BranchCache. You do not need to set this option if you are using Configuration Manager. If you want to disable peer-to-peer functionality, it's best to set **DownloadMode** to **(0)** or **(99)**. |
+|Bypass (100) |Bypass Delivery Optimization and use BITS, instead. You should only select this mode if you use WSUS and prefer to use BranchCache. You don't need to set this option if you're using Configuration Manager. If you want to disable peer-to-peer functionality, it's best to set **DownloadMode** to **(0)** or **(99)**. |
 
 > [!NOTE]
 > Starting in Windows 11, the Bypass option of Download Mode is no longer used.
@@ -144,7 +144,7 @@ Download mode dictates which download sources clients are allowed to use when do
 
 ### Group ID
 
-By default, peer sharing on clients using the Group download mode (option 2) is limited to the same domain in Windows 10, version 1511, and the same domain and Active Directory Domain Services site in Windows 10, version 1607. By using the Group ID setting, you can optionally create a custom group that contains devices that should participate in Delivery Optimization but do not fall within those domain or Active Directory Domain Services site boundaries, including devices in another domain. Using Group ID, you can further restrict the default group (for example, you could create a subgroup representing an office building), or extend the group beyond the domain, allowing devices in multiple domains in your organization to be peers. This setting requires the custom group to be specified as a GUID on each device that participates in the custom group.
+By default, peer sharing on clients using the Group download mode (option 2) is limited to the same domain in Windows 10, version 1511, and the same domain and Active Directory Domain Services site in Windows 10, version 1607. By using the Group ID setting, you can optionally create a custom group that contains devices that should participate in Delivery Optimization but don't fall within those domain or Active Directory Domain Services site boundaries, including devices in another domain. Using Group ID, you can further restrict the default group (for example, you could create a subgroup representing an office building), or extend the group beyond the domain, allowing devices in multiple domains in your organization to be peers. This setting requires the custom group to be specified as a GUID on each device that participates in the custom group.
 
 >[!NOTE]
 >To generate a GUID using Powershell, use [```[guid]::NewGuid()```](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)
@@ -162,7 +162,7 @@ Starting in Windows 10, version 1803, set this policy to restrict peer selection
 - 4 = DNS Suffix
 - 5 = Starting with Windows 10, version 1903, you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
-When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy will be ignored. The default behavior, when the GroupID or GroupIDSource policies are not set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
+When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy will be ignored. The default behavior, when the GroupID or GroupIDSource policies aren't set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
 
 ### Minimum RAM (inclusive) allowed to use Peer Caching  
 
@@ -200,11 +200,11 @@ This setting specifies the maximum download bandwidth that can be used across al
 
 ### Maximum Foreground Download Bandwidth
 
-Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. **The default value of "0"** means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers are not throttled even when this policy is set.
+Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. **The default value of "0"** means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers aren't throttled even when this policy is set.
 
 ### Maximum Background Download Bandwidth
 
-Starting in Windows 10, version 1803, specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. **The default value of "0"** means that Delivery Optimization dynamically adjusts to use the available bandwidth for background downloads. However, downloads from LAN peers are not throttled even when this policy is set.
+Starting in Windows 10, version 1803, specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. **The default value of "0"** means that Delivery Optimization dynamically adjusts to use the available bandwidth for background downloads. However, downloads from LAN peers aren't throttled even when this policy is set.
 
 ### Percentage of Maximum Download Bandwidth
 
@@ -215,19 +215,19 @@ This setting specifies the maximum download bandwidth that Delivery Optimization
 
 ### Max Upload Bandwidth
 
-This setting allows you to limit the number of upload bandwidth individual clients can use for Delivery Optimization. Consider this setting when clients are providing content to requesting peers on the network. This option is set in kilobytes per second (KB/s). **The default value is "0" or "unlimited"** which means Delivery Optimization dynamically optimizes for minimal usage of upload bandwidth; however it does not cap the upload bandwidth rate at a set rate.
+This setting allows you to limit the number of upload bandwidth individual clients can use for Delivery Optimization. Consider this setting when clients are providing content to requesting peers on the network. This option is set in kilobytes per second (KB/s). **The default value is "0" or "unlimited"** which means Delivery Optimization dynamically optimizes for minimal usage of upload bandwidth; however it doesn't cap the upload bandwidth rate at a set rate.
 
 ### Set Business Hours to Limit Background Download Bandwidth
 
-Starting in Windows 10, version 1803, specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. **By default, this policy is not set.**
+Starting in Windows 10, version 1803, specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. **By default, this policy isn't set.**
 
 ### Set Business Hours to Limit Foreground Download Bandwidth
 
-Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. **By default, this policy is not set.**
+Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. **By default, this policy isn't set.**
 
 ### Select a method to restrict peer selection
 
-Starting in Windows 10, version 1803, set this policy to restrict peer selection via selected option. In Windows 11 the 'Local Peer Discovery' option was introduced to restrict peer discovery to the local network. Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. These options apply to both Download Modes LAN (1) and Group (2) and therefore means there is no peering between subnets. **The default value in Windows 11 is set to "Local Peer Discovery"**.
+Starting in Windows 10, version 1803, set this policy to restrict peer selection via selected option. In Windows 11 the 'Local Peer Discovery' option was introduced to restrict peer discovery to the local network. Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. These options apply to both Download Modes LAN (1) and Group (2) and therefore means there's no peering between subnets. **The default value in Windows 11 is set to "Local Peer Discovery"**.
 
 If Group mode is set, Delivery Optimization will connect to locally discovered peers that are also part of the same Group (have the same Group ID).
 
@@ -235,21 +235,21 @@ The Local Peer Discovery (DNS-SD) option can only be set via MDM delivered polic
 
 ### Delay background download from HTTP (in secs)
 
-Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy is not set.**
+Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy isn't set.**
 
 ### Delay foreground download from HTTP (in secs)
 
-Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy is not set.**
+Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy isn't set.**
 
 ### Delay Foreground Download Cache Server Fallback (in secs)
 
-Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If the 'Delay foreground download from HTTP' policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy is not set.**
+Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If the 'Delay foreground download from HTTP' policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy isn't set.**
 
-By default this policy is not set. So,
+By default this policy isn't set. So,
 
 ### Delay Background Download Cache Server Fallback (in secs)
 
-Starting in Windows 10, version 1903, set this policy to delay the fallback from cache server to the HTTP source for a background content download by X seconds. If the 'Delay background download from HTTP' policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy is not set.**
+Starting in Windows 10, version 1903, set this policy to delay the fallback from cache server to the HTTP source for a background content download by X seconds. If the 'Delay background download from HTTP' policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy isn't set.**
 
 ### Minimum Background QoS
 
@@ -265,7 +265,7 @@ This setting specifies the total amount of data in gigabytes that a Delivery Opt
 
 ### Enable Peer Caching while the device connects via VPN
 
-This setting determines whether a device will be allowed to participate in Peer Caching while connected to VPN. **By default, if a VPN connection is detected, peering is not allowed.** Specify "true" to allow the device to participate in Peer Caching while connected via VPN to the domain network. The device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
+This setting determines whether a device will be allowed to participate in Peer Caching while connected to VPN. **By default, if a VPN connection is detected, peering isn't allowed.** Specify "true" to allow the device to participate in Peer Caching while connected via VPN to the domain network. The device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
 
 ### Allow uploads while the device is on battery while under set Battery level
 
@@ -280,7 +280,7 @@ The device can download from peers while on battery regardless of this policy.
 Set this policy to designate one or more Microsoft Connected Cache servers to be used by Delivery Optimization. You can set one or more FQDNs or IP Addresses that are comma-separated, for example: myhost.somerandomhost.com,myhost2.somerandomhost.com,10.10.1.7. **By default, this policy has no value.**
 
 >[!IMPORTANT]
-> Any value will signify that the policy is set. For example, an empty string ("") is not considered empty.
+> Any value will signify that the policy is set. For example, an empty string ("") isn't considered empty.
 
 ### Cache Server Hostname Source
 

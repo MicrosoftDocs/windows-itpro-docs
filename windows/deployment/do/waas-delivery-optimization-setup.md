@@ -25,7 +25,7 @@ ms.date: 12/19/2022
 
 You can use Group Policy or an MDM solution like Intune to configure Delivery Optimization.
 
-You will find the Delivery Optimization settings in Group Policy under **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization**.
+You'll find the Delivery Optimization settings in Group Policy under **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization**.
 
 Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](/mem/intune/configuration/delivery-optimization-windows).
 
@@ -56,13 +56,13 @@ Quick-reference table:
 | Use case | Policy | Recommended value | Reason |
 | --- | --- | --- | --- |
 | Hub & spoke topology | Download mode | 1 or 2 | Automatic grouping of peers to match your topology |
-| Sites with > 30 devices | Minimum file size to cache | 10 MB (or 1 MB) | Leverage peers-to-peer capability in more downloads |
+| Sites with > 30 devices | Minimum file size to cache | 10 MB (or 1 MB) | Use peers-to-peer capability in more downloads |
 | Large number of mobile devices | Allow uploads on battery power | 60% | Increase # of devices that can upload while limiting battery drain |
 | Labs with AC-powered devices | Content expiration | 7 (up to 30) days | Leverage devices that can upload more for a longer period |
 
 ### Hybrid WAN scenario
 
-For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group, when the GroupID or GroupIDSource policies are not set, is the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If your domain-based group is too wide, or your Active Directory sites aren't aligned with your site network topology, then you should consider additional options for dynamically creating groups, for example by using the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) policy.
+For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group, when the GroupID or GroupIDSource policies aren't set, is the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If your domain-based group is too wide, or your Active Directory sites aren't aligned with your site network topology, then you should consider other options for dynamically creating groups, for example by using the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) policy.
 
 To do this in Group Policy go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
