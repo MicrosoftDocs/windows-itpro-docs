@@ -46,9 +46,6 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Absolute max cache size (in GBs)](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize | 1607 | Default value is 10 GB.|
 | [Modify cache drive](#modify-cache-drive) | DOModifyCacheDrive | 1607 | Default to the operating system drive through the %SYSTEMDRIVE% environment variable. |
 | [Minimum peer caching content file size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache | 1703 | Default file size is 50 MB. |
-| [Maximum download bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004; use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| Default is '0' which will dynamically adjust. |
-| [Percentage of maximum download bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004; use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)  or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| Default is '0' which will dynamically adjust. |
-| [Maximum upload bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 (removed in Windows 10, version 2004) | Default is '0' (unlimited). |
 | [Monthly upload data cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 | Default value is 20 GB. |
 | [Minimum background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 | Default value is 500 KB/s. |
 | [Enable peer caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1709 | Default is to not allow peering while on VPN. |
@@ -61,10 +58,13 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Set hours to limit foreground download bandwidth](#set-business-hours-to-limit-foreground-download-bandwidth) |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 | Default isn't set. |
 | [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 | Default isn't set. For peering, use this policy to delay the fallback to the HTTP source. [Learn more](#delay-options) about the different delay options. |
 | [Delay foreground download from HTTP (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 | Default isn't set. For peering, use this policy to delay the fallback to the HTTP source. [Learn more](#delay-options) about the different delay options.|
-| [Delay foreground download Cache Server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 | Default isn't set. For Microsoft Connected Cache content use this policy to delay the fallback to the HTTP source.[Learn more](#delay-options) about the different delay options. |
-| [Delay background download Cache Server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 | Default isn't set. For Microsoft Connected Cache content use this policy to delay the fallback to the HTTP source. [Learn more](#delay-options) about the different delay options.|
+| [Delay foreground download Cache Server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 | Default isn't set. For Microsoft Connected Cache content use this policy to delay the fallback to the HTTP source.[Learn more](#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources) about the different delay options. |
+| [Delay background download Cache Server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 | Default isn't set. For Microsoft Connected Cache content use this policy to delay the fallback to the HTTP source. [Learn more](#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources) about the different delay options.|
 | [Cache Server Hostname](#cache-server-hostname) | DOCacheHost | 1809  | Default is it has no value. |
 | [Cache Server Hostname Source](#cache-server-hostname-source) | DOCacheHostSource | 2004 | Default is it has no value. |
+| [Maximum download bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004); use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| Default is '0' which will dynamically adjust. |
+| [Percentage of maximum download bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004); use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)  or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| Default is '0' which will dynamically adjust. |
+| [Maximum upload bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 (removed in Windows 10, version 2004) | Default is '0' (unlimited). |
 
 ### More detail on Delivery Optimization settings
 
@@ -98,16 +98,16 @@ More options available that control the impact Delivery Optimization has on your
 - [Delay foreground download from HTTP (in secs)](#delay-foreground-download-from-http-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
 - [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
 
-#### Delay options
+#### Policies to prioritize the use of Peer-to-Peer and Cache Server sources
 
-There are four settings that allow you to control the default behavior and delay access to the HTTP source. The goal of these settings is to provide fine tuning to a particular network's needs to potentially increase the success rate of pulling content from local sources (either from peer or Microsoft Connected Cache). To use either the peer-to-peer functionality or the Microsoft Connected Cache features, devices must have access to the internet and Delivery Optimization cloud services. When Delivery Optimization is configured to use peers and Microsoft Connected Cache (MCC), to achieve the best possible content delivery experience, the client will connect to MCC and peers in parallel. If the desired content can't be obtained from MCC or peers, Delivery Optimization will automatically fallback to the HTTP source to get the requested content. However, the following delay settings can be used to alter this behavior.
+When Delivery Optimization client is configured to use peers and Microsoft Connected Cache (MCC), to achieve the best possible content delivery experience, the client will connect to both MCC and peers in parallel. If the desired content can’t be obtained from MCC or peers, Delivery Optimization will automatically fallback to the HTTP source to get the requested content. There are four settings that allow you to prioritize peer-to-peer or MCC sources by delaying the immediate fallback to HTTP source which is the default behavior.
 
-##### Peer-to-peer delay settings
+##### Peer-to-peer delay fallback settings
 
 - [Delay foreground download from HTTP (in secs)](#delay-foreground-download-from-http-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
 - [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
 
-##### Microsoft Connected Cache (MCC) delay settings
+##### Microsoft Connected Cache (MCC) delay fallback settings
 
 - [Delay foreground download Cache Server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use a cache server.
 - [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) allows you to delay the use of an HTTP source in a background  download that is allowed to use a cache server.
