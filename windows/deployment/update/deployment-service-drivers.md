@@ -23,8 +23,7 @@ In this tutorial, you will:
 > - [Create a deployment audience and add audience members](#create-a-deployment-audience-and-add-audience-members)
 > - [Create an update policy](#create-an-update-policy)
 > - [Review applicable driver content and approve it](#review-applicable-driver-content-and-approve-it)
-> - Do Z
-> - Do Z
+> - [Revoke content approval](#revoke-content-approval)
 > - [Remove device enrollment](#remove-device-enrollment)
 
 ## Prerequisites
@@ -233,12 +232,10 @@ The following truncated response displays:
     "id": "1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d",
 ```
 
-Each driver update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). Approve content for drivers and firmware by adding a [content approval](/graph/api/resources/windowsupdates-contentapproval) for the catalog entry to an existing policy. This approval is a [compliance change](/graph/api/resources/windowsupdates-compliance) for the policy and it  
+Each driver update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). Approve content for drivers and firmware by adding a [content approval](/graph/api/resources/windowsupdates-contentapproval) for the catalog entry to an existing policy. Content approval is a [compliance change](/graph/api/resources/windowsupdates-compliance) for the policy.
 
 
-Deployments for driver updates are created and enforced on a policy through [compliance changes](/graph/api/resources/windowsupdates-compliance). [Content approvals](/graph/api/esources/windowsupdates-contentapproval) for driver updates are added to a policy by specifying the [catalog entry](/graph/api/resources/windowsupdates-catalogentry) associated to a specific driver update. Content will only be delivered to devices in the deployment audiences associated with the update policy once approved.
-
-Add a content approval to an existing policy, **Policy ID** `9011c330-1234-5678-9abc-def012345678` for the driver update with the **Catalog ID** `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d`. Schedule the start date for January, 20 2023 at 1 AM UTC: 
+Add a content approval to an existing policy, **Policy ID** `9011c330-1234-5678-9abc-def012345678` for the driver update with the **Catalog ID** `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d`. Schedule the start date for January, 20 2023 at 1 AM UTC:
 
 ```rest
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges
@@ -261,6 +258,17 @@ Content-type: application/json
     }
 }
 ```
+
+Review the compliance changes to a policy with the most recent changes listed in the response first. The following example returns the compliance changes for a policy with the **Policy ID** `9011c330-1234-5678-9abc-def012345678`:
+
+```rest
+GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges?orderby=createdDateTime desc
+
+```
+
+## Revoke content approval
+
+
 
 ## Remove device enrollment
 
