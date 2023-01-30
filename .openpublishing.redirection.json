@@ -20411,6 +20411,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/identity-protection/credential-guard/credential-guard-not-protected-scenarios.md",
+      "redirect_url": "/windows/security/identity-protection/credential-guard/credential-guard-protection-limits",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-client-digitally-sign-communications-always.md",
       "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
       "redirect_document_id": false
@@ -20428,6 +20433,21 @@
     {
       "source_path": "windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees.md",
       "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/retired/hello-how-it-works.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-feature-conditional-access.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-event-300.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-faq",
       "redirect_document_id": false
     }
   ]

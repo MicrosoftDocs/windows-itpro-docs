@@ -4,7 +4,7 @@ description: Learn more about the CloudPC Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/02/2022
+ms.date: 12/27/2022
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- CloudPCConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
 <!-- CloudPCConfiguration-Applicability-End -->
 
 <!-- CloudPCConfiguration-OmaUri-Begin -->
@@ -36,6 +36,7 @@ ms.topic: reference
 <!-- CloudPCConfiguration-OmaUri-End -->
 
 <!-- CloudPCConfiguration-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy is used by IT admin to set the configuration mode of cloud PC.
 <!-- CloudPCConfiguration-Description-End -->
 
