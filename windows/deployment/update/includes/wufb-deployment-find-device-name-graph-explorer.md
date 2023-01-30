@@ -48,6 +48,6 @@ GET https://graph.microsoft.com/v1.0/devices?$filter=model ne 'virtual machine' 
 
 > [!Tip]
 > Requests using the [device](/graph/api/resources/device) resource type typically have both an `id` and a `deviceid`:
-> - The `deviceid` is the **Azure AD Device ID** and will be used in this tutorial.
->    - Later in this tutorial, this `deviceid` will be used as an `id` when you make certain requests such as adding a device to a deployment audience.
-> - The `id` from the [device](/graph/api/resources/device) resource type is usually the Azure AD Object ID, which won't be used in this tutorial.
+> - The `deviceid` is the **Azure AD Device ID** and will be used in this article.
+>    - Later in this article, this `deviceid` will be used as an `id` when you make certain requests such as adding a device to a deployment audience.
+> - The `id` from the [device](/graph/api/resources/device) resource type is usually the Azure AD Object ID, which won't be used in this article.

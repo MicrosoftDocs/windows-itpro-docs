@@ -1,21 +1,21 @@
 ---
-title: 'Tutorial: Deploy drivers and firmware updates with Windows Update for Business deployment service.'
+title: Deploy drivers and firmware updates with Windows Update for Business deployment service.
 description: Use Windows Update for Business deployment service to deploy driver and firmware updates. 
 ms.prod: windows-client
 author: mestew
 ms.localizationpriority: medium
 ms.author: mstewart
 manager: aaroncz
-ms.topic: tutorial
+ms.topic: article
 ms.technology: itpro-updates
 ms.date: 02/14/2023
 ---
 
-# Tutorial: Deploy drivers and firmware updates with Windows Update for Business deployment service
+# Deploy drivers and firmware updates with Windows Update for Business deployment service
 <!--7260403, 7512398-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-In this tutorial, you will:
+In this article, you will:
 > [!div class="checklist"]
 > - [Open Graph Explorer](#open-graph-explorer)
 > - [Run queries to identify test devices](#run-queries-to-identify-test-devices)
@@ -31,8 +31,8 @@ In this tutorial, you will:
 All of the [prerequisites for the Windows Update for Business deployment service](deployment-service-overview.md#prerequisites) must be met.
 ### Permissions
 
-<!--Using include for tutorial permissions-->
-[!INCLUDE [Windows Update for Business deployment service tutorial permissions](./includes/wufb-deployment-tutorial-permissions.md)]
+<!--Using include for Graph Explorer permissions-->
+[!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-graph-explorer-permissions)]
 
 ## Open Graph Explorer
 
@@ -268,6 +268,8 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c3
 
 ## Revoke content approval
 
+
+```
 
 
 ## Remove device enrollment
