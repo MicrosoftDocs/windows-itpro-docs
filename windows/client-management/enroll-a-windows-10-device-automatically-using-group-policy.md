@@ -16,6 +16,7 @@ ms.collection: highpri
 
 **Applies to:**
 
+-   Windows 11
 -   Windows 10
 
 Starting in Windows 10, version 1709, you can use a Group Policy to trigger auto-enrollment to Mobile Device Management (MDM) for Active Directory (AD) domain-joined devices.
@@ -196,6 +197,10 @@ Requirements:
 
    - 21H2 --> [Administrative Templates (.admx) for Windows 10 November 2021 Update (21H2)-v2.0](https://www.microsoft.com/download/details.aspx?id=104042)
    
+   - 22H2 --> [Administrative Templates (.admx) for Windows 10 October 2022 Update (22H2)](https://www.microsoft.com/download/104677)
+
+   - 22H2 --> [Administrative Templates (.admx) for Windows 11 2022 September Update (22H2)](https://www.microsoft.com/download/details.aspx?id=104593)
+   
    
 2. Install the package on the Domain Controller.
 
@@ -216,6 +221,11 @@ Requirements:
    - 21H1 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2021 Update (21H1)**
 
    - 21H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 November 2021 Update V2 (21H2)**
+    
+   - 22H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2022 Update (22H2)**
+
+   - 22H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 11 September 2022 Update (22H2)**
+
 
 4. Rename the extracted Policy Definitions folder to `PolicyDefinitions`.
 
