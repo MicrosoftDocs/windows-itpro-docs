@@ -68,7 +68,7 @@ This new functionality is an update to the [BitLocker CSP](/windows/client-manag
 
 This feature will soon be enabled on Olympia Corp as an optional feature.
 
-#### Delivering BitLocker policy to AutoPilot devices during OOBE 
+#### Delivering BitLocker policy to Autopilot devices during OOBE 
 
 You can choose which encryption algorithm to apply to BitLocker encryption capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This option allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before BitLocker encryption begins. 
 
