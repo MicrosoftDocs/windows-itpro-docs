@@ -32,7 +32,7 @@ All of the [prerequisites for the Windows Update for Business deployment service
 ### Permissions
 
 <!--Using include for Graph Explorer permissions-->
-[!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-graph-explorer-permissions)]
+[!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-graph-explorer-permissions.md)]
 
 ## Open Graph Explorer
 
@@ -127,8 +127,8 @@ Update policies define how content is deployed to a deployment audience. An [upd
 
    To create a policy with additional settings, in the request body:
     - Specify the **Audience ID** as `id`
-    - Define any additional [deployment settings](beta/api/resources/windowsupdates-deploymentsettings). 
-    - You may need to add the `content-length` header to the request. *?The value should be the length of the request body in bytes?*.
+    - Define any additional [deployment settings](beta/api/resources/windowsupdates-deploymentsettings).
+    - You may need to add the `content-length` header to the request. The value should be the length of the request body in bytes.
     
    In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`:
 
@@ -197,7 +197,7 @@ Content-type: application/json
     }
 }
 ```
-<!--[Error 411](/graph/errors) Length Required -->
+
 ## Review applicable driver content and approve it
 
 Once Windows Update for Business deployment service has scan results from devices, the applicability for driver and firmware updates can be displayed for a deployment audience.
@@ -234,8 +234,10 @@ The following truncated response displays:
 
 Each driver update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). Approve content for drivers and firmware by adding a [content approval](/graph/api/resources/windowsupdates-contentapproval) for the catalog entry to an existing policy. Content approval is a [compliance change](/graph/api/resources/windowsupdates-compliance) for the policy.
 
+> [!IMPORTANT]
+> Any [deployment settings](beta/api/resources/windowsupdates-deploymentsettings) configured for the content approval will be combined with the existing [update policy's](#create-an-update-policy) deployment settings. If the content approval and update policy specify the same deployment setting, the setting from the content approval is used.
 
-Add a content approval to an existing policy, **Policy ID** `9011c330-1234-5678-9abc-def012345678` for the driver update with the **Catalog ID** `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d`. Schedule the start date for January, 20 2023 at 1 AM UTC:
+Add a content approval to an existing policy, **Policy ID** `9011c330-1234-5678-9abc-def012345678` for the driver update with the **Catalog ID** `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d. Schedule the start date for January, 20 2023 at 1 AM UTC:
 
 ```rest
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges
@@ -259,7 +261,9 @@ Content-type: application/json
 }
 ```
 
-Review the compliance changes to a policy with the most recent changes listed in the response first. The following example returns the compliance changes for a policy with the **Policy ID** `9011c330-1234-5678-9abc-def012345678`:
+Review the compliance changes to a policy with the most recent changes listed in the response first. The following example returns the compliance changes for a policy with the **Policy ID** `9011c330-1234-5678-9abc-def012345678` and sorts by `createdDateTime` in descending order:
+
+```rest
 
 ```rest
 GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges?orderby=createdDateTime desc
@@ -268,11 +272,21 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c3
 
 ## Revoke content approval
 
+Approval for content can be revoked by setting the `isRevoked` property of the [compliance change](/graph/api/resources/windowsupdates-compliance) to true. This setting can be changed while a deployment is in progress. However, revoking will only prevent the content from being offered to devices if they haven't already received it. To resume offering the content, a new [approval](#review-applicable-driver-content-and-approve-it) will need to be created.
 
+
+### Request
+
+```http
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/d7a89208-17c5-4daf-a164-ce176b00e4ef/complianceChanges/dbf29574-ffd9-49cf-87f2-f03629e596ba
+Content-type: application/json
+{
+    "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
+    "isRevoked": true
+}
 ```
-
 
 ## Remove device enrollment
 
-<!--Using include for removing device enrollment-->
+<!--Using include for removing device enrollment--> 
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-graph-unenroll.md)]

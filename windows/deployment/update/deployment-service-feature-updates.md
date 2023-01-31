@@ -31,7 +31,7 @@ All of the [prerequisites for the Windows Update for Business deployment service
 ### Permissions
 
 <!--Using include for Graph Explorer permissions-->
-[!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-graph-explorer-permissions)]
+[!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-graph-explorer-permissions.md)]
 
 ## Open Graph Explorer
 
