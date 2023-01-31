@@ -21,12 +21,6 @@ Microsoft provides robust modern device management (MDM) solutions such as Micro
 
 Windows Autopatch makes it easier and less expensive for you to keep your Windows devices up to date so you can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
 
-Windows Autopatch feature update deployment provides:
-
-- A customer-driven and efficient Windows feature update deployment approach for Windows OS target versions and deployment cadence.
-- Proactive insights prior, during and after Windows Feature update deployments.
-- Options to [pause or resume Windows](#pausing-and-resuming-a-release) feature updates on behalf of your organization.
-
 ## Enforcing a minimum Windows OS version
 
 Once devices are registered with Windows Autopatch, they’re assigned to deployment rings. Each deployment ring has a set of Windows feature update policies assigned to them.
@@ -53,6 +47,9 @@ If your tenant is enrolled with Windows Autopatch, you can see the following pol
 | Windows Autopatch – DSS Policy [Fast] | Windows 10 20H2 | Make update available as soon as possible | 12/14/2022 | 12/21/2022 | 1 | 5/8/2023, 7:00PM |
 | Windows Autopatch – DSS Policy [Broad] | Windows 10 20H2 | Make update available as soon as possible | 12/15/2022 | 12/29/2022 | 1 | 5/8/2023, 7:00PM |
 
+> [!IMPORTANT]
+> If you’re ahead of the current minimum OS version enforced by Windows Autopatch in your organization, you can [edit Windows Autopatch’s default Windows feature update policy and select your desired targeted version](/mem/intune/protect/windows-10-feature-updates#create-and-assign-feature-updates-for-windows-10-and-later-policy).
+
 ## Test Windows 11 feature updates
 
 You can test Windows 11 deployments by adding devices either through direct membership or by bulk importing them into the Modern Workplace - Windows 11 Pre-Release Test Devices Azure AD group. There’s a separate Windows feature update policy (**Modern Workplace DSS Policy [Windows 11]**) targeted to this Azure AD group, and its configuration is set as follows:
@@ -72,9 +69,17 @@ Windows Autopatch provides a permanent pause of a Windows feature update deploym
 **To pause or resume a feature update:**
 
 1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Select **Devices** from the left navigation menu.
-1. Under the **Windows Autopatch** section, select **Release management**.
-1. In the **Release management** blade, select either **Pause** or **Resume**.
+2. Select **Devices** from the left navigation menu.
+3. Under the **Windows Autopatch** section, select **Release management**.
+4. In the **Release management** blade, select either: **Pause** or **Resume**.
+5. Select the update type you would like to pause or resume.
+6. Select a reason from the dropdown menu.
+7. Optional. Enter details about why you're pausing or resuming the selected update.
+8. If you're resuming an update, you can select one or more deployment rings.
+9. Select **Okay**.
+
+> [!NOTE]
+> Pausing an update can take up to eight hours to deploy to devices.
 
 ## Rollback
 

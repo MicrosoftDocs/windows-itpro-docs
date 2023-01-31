@@ -25,7 +25,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | Article | Description |
 | ----- | ----- |
 | [Windows feature update](../operate/windows-autopatch-fu-overview.md) | Updated Windows feature update information |
-| [Submit a tenant enrollment support request](../prepare/windows-autopatch-enrollment-support-request.md) | Added the Submit a tenant enrollment support request section. You can submit a tenant enrollment support request through the Tenant enrollment tool if you're running into issues with enrollment. |
+| [Submit a tenant enrollment support request](../prepare/windows-autopatch-enrollment-support-request.md) | Added the Submit a tenant enrollment support request section. You can submit a tenant enrollment support request through the Tenant enrollment tool if you're running into issues with enrollment |
 | [Submit a support request](../operate/windows-autopatch-support-request.md) | Added Premier and Unified support options section |
 
 ### January service release
