@@ -58,7 +58,6 @@ The Windows Autopatch deployment ring calculation happens during the [device reg
 - If the Windows Autopatch tenant’s existing managed device size is **≤ 200**, the deployment ring assignment is First **(5%)**, Fast **(15%)**, remaining devices go to the Broad ring **(80%)**.
 - If the Windows Autopatch tenant’s existing managed device size is **>200**, the deployment ring assignment will be First **(1%)**, Fast **(9%)**, remaining devices go to the Broad ring **(90%)**.
 
-
 | Deployment ring | Default device balancing percentage | Description |
 | ----- | ----- | ----- |
 | Test | **zero** | Windows Autopatch doesn't automatically add devices to this deployment ring. You must manually add devices to the Test ring following the required procedure. For more information on these procedures, see [Moving devices in between deployment rings](/windows/deployment/windows-autopatch/operate/windows-autopatch-update-management#moving-devices-in-between-deployment-rings). The recommended number of devices in this ring, based upon your environment size, is as follows:<br><ul><li>**0–500** devices: minimum **one** device.</li><li>**500–5000** devices: minimum **five** devices.</li><li>**5000+** devices: minimum **50** devices.</li></ul>Devices in this group are intended for your IT Administrators and testers since changes are released here first. This release schedule provides your organization the opportunity to validate updates prior to reaching production users. |
@@ -84,7 +83,7 @@ When the assignment is complete, the **Ring assigned by** column changes to **Ad
 > [!NOTE]
 > You can only move devices to other deployment rings when they're in an active state in the **Ready** tab.<p>If you don't see the **Ring assigned by column** change to **Pending** in Step 5, check to see whether the device exists in Microsoft Intune or not by searching for it in its device blade. For more information, see [Device details in Intune](/mem/intune/remote-actions/device-inventory).
   
-> [!WARNING]   
+> [!WARNING]
 > Moving devices between deployment rings through directly changing Azure AD group membership isn't supported and may cause unintended configuration conflicts within the Windows Autopatch service. To avoid service interruption to devices, use the **Assign device to ring** action described previously to move devices between deployment rings.
   
 ## Automated deployment ring remediation functions
