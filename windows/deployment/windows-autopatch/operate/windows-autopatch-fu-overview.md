@@ -69,7 +69,7 @@ Windows Autopatch provides a permanent pause of a Windows feature update deploym
 2. Select **Devices** from the left navigation menu.
 3. Under the **Windows Autopatch** section, select **Release management**.
 4. In the **Release management** blade, select either: **Pause** or **Resume**. When resuming an update, you can select one or more deployment rings.
-5. Select the update you would like to pause or resume.
+5. Select the update type you would like to pause or resume.
 6. Select a reason from the dropdown menu.
 7. Optional. Enter details about why you're pausing or resuming the selected update.
 8. Select **Okay**.
