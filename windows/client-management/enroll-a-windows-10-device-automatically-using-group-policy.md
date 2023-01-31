@@ -225,7 +225,6 @@ Requirements:
 
    - 22H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 11 September 2022 Update (22H2)**
 
-
 4. Rename the extracted Policy Definitions folder to `PolicyDefinitions`.
 
 5. Copy the PolicyDefinitions folder to `\\contoso.com\SYSVOL\contoso.com\policies\PolicyDefinitions`.
