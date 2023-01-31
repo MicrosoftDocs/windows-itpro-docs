@@ -47,7 +47,7 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Modify cache drive](#modify-cache-drive) | DOModifyCacheDrive | 1607 | Default to the operating system drive through the %SYSTEMDRIVE% environment variable. |
 | [Minimum peer caching content file size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache | 1703 | Default file size is 50 MB. |
 | [Monthly upload data cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 | Default value is 20 GB. |
-| [Minimum background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 | Default value is 500 KB/s. |
+| [Minimum background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 | Recommend setting this to 500 KB/s. Default value is 2500 KB/s. |
 | [Enable peer caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1709 | Default is to not allow peering while on VPN. |
 | [Allow uploads while the device is on battery while under set battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1709 | Default is to not allow peering while on battery.  |
 | [Maximum foreground download bandwidth (percentage)](#maximum-foreground-download-bandwidth) | DOPercentageMaxForegroundBandwidth | 1803 | Default is '0' which will dynamically adjust. |
@@ -62,9 +62,9 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Delay background download Cache Server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 | Default isn't set. For Microsoft Connected Cache content use this policy to delay the fallback to the HTTP source. [Learn more](#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources) about the different delay options.|
 | [Cache Server Hostname](#cache-server-hostname) | DOCacheHost | 1809  | Default is it has no value. |
 | [Cache Server Hostname Source](#cache-server-hostname-source) | DOCacheHostSource | 2004 | Default is it has no value. |
-| [Maximum download bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004); use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| Default is '0' which will dynamically adjust. |
-| [Percentage of maximum download bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004); use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)  or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| Default is '0' which will dynamically adjust. |
-| [Maximum upload bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 (removed in Windows 10, version 2004) | Default is '0' (unlimited). |
+| [Maximum download bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 (deprecated in Windows 10, version 2004); use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| Default is '0' which will dynamically adjust. |
+| [Percentage of maximum download bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 (deprecated in Windows 10, version 2004); use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)  or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| Default is '0' which will dynamically adjust. |
+| [Maximum upload bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 (deprecated in Windows 10, version 2004) | Default is '0' (unlimited). |
 
 ### More detail on Delivery Optimization settings
 
@@ -88,15 +88,13 @@ More options available that control the impact Delivery Optimization has on your
 - [Maximum Download Bandwidth](#maximum-download-bandwidth) and [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) control the download bandwidth used by Delivery Optimization.
 - [Max Upload Bandwidth](#max-upload-bandwidth) controls the Delivery Optimization upload bandwidth usage.
 - [Monthly Upload Data Cap](#monthly-upload-data-cap) controls the amount of data a client can upload to peers each month.
-- [Minimum Background QoS](#minimum-background-qos) lets administrators guarantee a minimum download speed for Windows updates. This setting adjusts the amount of data downloaded directly from Windows Update or WSUS servers, rather than other peers in the network.
+- [Minimum Background QoS](#minimum-background-qos) lets administrators guarantee a minimum download speed for Windows updates. This setting adjusts the amount of data downloaded directly from HTTP sources, rather than other peers in the network.
 - [Maximum Foreground Download Bandwidth](#maximum-foreground-download-bandwidth) specifies the **maximum foreground download bandwidth** that Delivery Optimization uses, across all concurrent download activities, as a percentage of available download bandwidth.
 - [Maximum Background Download Bandwidth](#maximum-background-download-bandwidth) specifies the **maximum background download bandwidth** that Delivery Optimization uses, across all concurrent download activities, as a percentage of available download bandwidth.
 - [Set Business Hours to Limit Background Download Bandwidth](#set-business-hours-to-limit-background-download-bandwidth) specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 - [Set Business Hours to Limit Foreground Download Bandwidth](#set-business-hours-to-limit-foreground-download-bandwidth) specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 - [Select a method to restrict Peer Selection](#select-a-method-to-restrict-peer-selection) restricts peer selection by the options you select.
 - [Select the source of Group IDs](#select-the-source-of-group-ids) restricts peer selection to a specific source.
-- [Delay foreground download from HTTP (in secs)](#delay-foreground-download-from-http-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
-- [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
 
 #### Policies to prioritize the use of Peer-to-Peer and Cache Server sources
 
@@ -253,7 +251,7 @@ Starting in Windows 10, version 1903, set this policy to delay the fallback from
 
 ### Minimum Background QoS
 
-This value specifies the minimum download speed guarantee that a client attempts to achieve and will fulfill by downloading more kilobytes from Windows Update servers or WSUS. The lower this value is, the more content will be sourced using peers on the network rather than Windows Update. The higher this value, the more content is received from Windows Update servers or WSUS, versus peers on the local network. **The default value is 500 KB/s.**
+This value specifies the minimum download speed guarantee that a client attempts to achieve and will fulfill by downloading more kilobytes from HTTP sources . The lower this value is, the more content will be sourced using peers on the network rather than HTTP sources. The higher this value, the more content is received from HTTP sources, versus peers on the local network. **The default value is 2500 KB/s.**
 
 ### Modify Cache Drive
 
