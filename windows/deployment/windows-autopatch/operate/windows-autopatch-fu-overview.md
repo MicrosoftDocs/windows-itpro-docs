@@ -21,12 +21,6 @@ Microsoft provides robust modern device management (MDM) solutions such as Micro
 
 Windows Autopatch makes it easier and less expensive for you to keep your Windows devices up to date so you can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
 
-Windows Autopatch feature update deployment provides:
-
-- A customer-driven and efficient Windows feature update deployment approach for Windows OS target versions and deployment cadence.
-- Proactive insights prior, during and after Windows Feature update deployments.
-- Options to [pause or resume Windows](#pausing-and-resuming-a-release) feature updates on behalf of your organization.
-
 ## Enforcing a minimum Windows OS version
 
 Once devices are registered with Windows Autopatch, they’re assigned to deployment rings. Each deployment ring has a set of Windows feature update policies assigned to them.
@@ -72,9 +66,17 @@ Windows Autopatch provides a permanent pause of a Windows feature update deploym
 **To pause or resume a feature update:**
 
 1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Select **Devices** from the left navigation menu.
-1. Under the **Windows Autopatch** section, select **Release management**.
-1. In the **Release management** blade, select either **Pause** or **Resume**.
+2. Select **Devices** from the left navigation menu.
+3. Under the **Windows Autopatch** section, select **Release management**.
+4. In the **Release management** blade, select either: **Pause** or **Resume**.
+5. Select the update type you would like to pause or resume.
+6. Select a reason from the dropdown menu.
+7. Optional. Enter details about why you're pausing or resuming the selected update.
+8. If you're resuming an update, you can select one or more deployment rings.
+9. Select **Okay**.
+
+> [!NOTE]
+> Pausing an update can take up to eight hours to deploy to devices.
 
 ## Rollback
 
