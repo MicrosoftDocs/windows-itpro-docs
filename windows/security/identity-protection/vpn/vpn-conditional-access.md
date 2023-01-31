@@ -12,6 +12,7 @@ appliesto:
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
 ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # VPN and conditional access
@@ -67,7 +68,7 @@ Two client-side configuration service providers are leveraged for VPN device com
    - **Sso**: entries under SSO should be used to direct the VPN client to use a certificate other than the VPN authentication certificate when accessing resources that require Kerberos authentication.
    - **Sso/Enabled**: if this field is set to **true**, the VPN client looks for a separate certificate for Kerberos authentication.
    - **Sso/IssuerHash**: hashes for the VPN client to look for the correct certificate for Kerberos authentication.
-   - **Sso/Eku**: comma-separated list of Enhanced Key Usage (EKU) extensions for the VPN client to look for the correct certificate for Kerberos authentication.
+   - **Sso/Eku**: comma-separated list of extended key usage (EKU) extensions for the VPN client to look for the correct certificate for Kerberos authentication.
    
 - HealthAttestation CSP (not a requirement) - functions performed by the HealthAttestation CSP include:
 

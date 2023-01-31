@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5028(F): The Windows Firewall Service was unable to parse the new security policy. The service will continue with currently enforced policy.

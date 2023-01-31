@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Replace a process level token
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Replace a process level token** security policy setting.

@@ -8,6 +8,7 @@ ms.prod: windows-client
 author: frankroj
 ms.date: 11/08/2022
 ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # Encrypted Hard Drive
@@ -98,7 +99,7 @@ The AK is the key used to unlock data on the drive. A hash of the key is stored 
 
 When a computer with an encrypted hard drive is in a powered-off state, the drive locks automatically. As a computer powers on, the device remains in a locked state and is only unlocked after the AK decrypts the DEK. Once the AK decrypts the DEK, read-write operations can take place on the device.
 
-When writing data to the drive, it passes through an encryption engine before the write operation completes. Likewise, reading data from the drive requires the encryption engine to decrypt the data before passing that data back to the user. If the DEK needs to be changed or erased, the data on the drive doesn't need to be re-encrypted. A new Authentication Key needs to be created and it will re-encrypt the DEK. Once completed, the DEK can now be unlocked using the new AK, and read-writes to the volume can continue.
+When writing data to the drive, it passes through an encryption engine before the write operation completes. Likewise, reading data from the drive requires the encryption engine to decrypt the data before passing that data back to the user. If the AK needs to be changed or erased, the data on the drive doesn't need to be re-encrypted. A new Authentication Key needs to be created and it will re-encrypt the DEK. Once completed, the DEK can now be unlocked using the new AK, and read-writes to the volume can continue.
 
 ## Reconfiguring encrypted hard drives
 

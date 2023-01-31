@@ -51,7 +51,7 @@ Windows Autopatch Service Engineering Team is in the United States, India and Ro
 
 ## Microsoft Windows 10/11 diagnostic data
 
-Windows Autopatch uses [Windows 10/11 Enhanced diagnostic data](/windows/privacy/windows-diagnostic-data) to keep Windows secure, up to date, troubleshoot problems, and make product improvements.
+Windows Autopatch uses [Windows 10/11 Enhanced diagnostic data](/windows/privacy/windows-diagnostic-data) to keep Windows secure, up to date, fix problems, and make product improvements.
 
 The enhanced diagnostic data setting includes more detailed information about the devices enrolled in Windows Autopatch and their settings, capabilities, and device health. When enhanced diagnostic data is selected, data, including required diagnostic data, are collected. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection) about the Windows 10 diagnostic data setting and data collection.
 
@@ -79,7 +79,7 @@ Windows Autopatch creates and uses guest accounts using just-in-time access func
 | Account name | Usage | Mitigating controls |
 | ----- | ----- | -----|
 | MsAdmin@tenantDomain.onmicrosoft.com | <ul><li>This account is a limited-service account with administrator privileges. This account is used as an Intune and User administrator to define and configure the tenant for Windows Autopatch devices.</li><li>This account doesn't have interactive sign-in permissions. The account performs operations only through the service.</li></ul> | Audited sign-ins |
-| MsAdminInt@tenantDomain.onmicrosoft.com |<ul><li>This account is an Intune and User administrator account used to define and configure the tenant for Windows Autopatch devices.</li><li>This account is used for interactive login to the customer’s tenant.</li><li>The use of this account is limited as most operations are exclusively through MsAdmin (non-interactive) account.</li></ul> | <ul><li>Restricted to be accessed only from defined secure access workstations (SAWs) through a conditional access policy</li><li>Audited sign-ins</li</ul> |
+| MsAdminInt@tenantDomain.onmicrosoft.com |<ul><li>This account is an Intune and User administrator account used to define and configure the tenant for Windows Autopatch devices.</li><li>This account is used for interactive login to the customer’s tenant.</li><li>The use of this account is limited as most operations are exclusively through MsAdmin (non-interactive) account.</li></ul> | <ul><li>Restricted to be accessed only from defined secure access workstations (SAWs) through a conditional access policy</li><li>Audited sign-ins</li></ul> |
 | MsTest@tenantDomain.onmicrosoft.com | This account is a standard account used as a validation account for initial configuration and roll out of policy, application, and device compliance settings. | Audited sign-ins |
 
 ## Microsoft Windows Update for Business

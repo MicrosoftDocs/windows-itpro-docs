@@ -14,6 +14,7 @@ ms.localizationpriority: medium
 msauthor: v-anbic
 ms.date: 08/27/2018
 ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # Working with AppLocker rules

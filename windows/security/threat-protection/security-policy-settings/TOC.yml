@@ -136,10 +136,6 @@
                       href: interactive-logon-smart-card-removal-behavior.md
                     - name: "Microsoft network client: Digitally sign communications (always)"
                       href: microsoft-network-client-digitally-sign-communications-always.md
-                    - name: "SMBv1 Microsoft network client: Digitally sign communications (always)"
-                      href: smbv1-microsoft-network-client-digitally-sign-communications-always.md
-                    - name: "SMBv1 Microsoft network client: Digitally sign communications (if server agrees)"
-                      href: smbv1-microsoft-network-client-digitally-sign-communications-if-server-agrees.md
                     - name: "Microsoft network client: Send unencrypted password to third-party SMB servers"
                       href: microsoft-network-client-send-unencrypted-password-to-third-party-smb-servers.md
                     - name: "Microsoft network server: Amount of idle time required before suspending session"
@@ -148,10 +144,6 @@
                       href: microsoft-network-server-attempt-s4u2self-to-obtain-claim-information.md
                     - name: "Microsoft network server: Digitally sign communications (always)"
                       href: microsoft-network-server-digitally-sign-communications-always.md
-                    - name: "SMBv1 Microsoft network server: Digitally sign communications (always)"
-                      href: smbv1-microsoft-network-server-digitally-sign-communications-always.md
-                    - name: "SMBv1 Microsoft network server: Digitally sign communications (if client agrees)"
-                      href: smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees.md
                     - name: "Microsoft network server: Disconnect clients when logon hours expire"
                       href: microsoft-network-server-disconnect-clients-when-logon-hours-expire.md
                     - name: "Microsoft network server: Server SPN target name validation level"

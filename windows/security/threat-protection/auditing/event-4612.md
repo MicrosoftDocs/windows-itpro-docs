@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4612(S): Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits.

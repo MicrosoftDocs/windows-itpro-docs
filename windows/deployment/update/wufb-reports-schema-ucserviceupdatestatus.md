@@ -1,7 +1,6 @@
 ---
 title: Windows Update for Business reports Data Schema - UCServiceUpdateStatus
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: UCServiceUpdateStatus schema
 ms.prod: windows-client
 author: mestew

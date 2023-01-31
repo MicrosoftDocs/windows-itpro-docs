@@ -9,6 +9,7 @@ author: dulcemontemayor
 ms.date: 02/28/2019
 ms.localizationpriority: medium
 ms.technology: itpro-security
+ms.topic: how-to
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection
@@ -396,6 +397,17 @@ The following GPO snippet performs the following tasks:
 -   Sets the maximum file size for **Microsoft-Windows-DriverFrameworks-UserMode/Operational** to 50 MB.
 
 ![configure event channels.](images/capi-gpo.png)
+
+The following table also contains the six actions to configure in the GPO:
+
+| Program/Script                     | Arguments                                                                                                |
+|------------------------------------|----------------------------------------------------------------------------------------------------------|
+| %SystemRoot%\System32\wevtutil.exe | sl Microsoft-Windows-CAPI2/Operational /e:true                                                           |
+| %SystemRoot%\System32\wevtutil.exe | sl Microsoft-Windows-CAPI2/Operational /ms:102432768                                                     |
+| %SystemRoot%\System32\wevtutil.exe | sl "Microsoft-Windows-AppLocker/EXE and DLL" /ms:102432768                                               |
+| %SystemRoot%\System32\wevtutil.exe | sl Microsoft-Windows-CAPI2/Operational /ca:"O:BAG:SYD:(A;;0x7;;;BA)(A;;0x2;;;AU)(A;;0x1;;;S-1-5-32-573)" |
+| %SystemRoot%\System32\wevtutil.exe | sl "Microsoft-Windows-DriverFrameworks-UserMode/Operational" /e:true                                     |
+| %SystemRoot%\System32\wevtutil.exe | sl "Microsoft-Windows-DriverFrameworks-UserMode/Operational" /ms:52432896                                |
 
 ## <a href="" id="bkmk-appendixd"></a>Appendix D - Minimum GPO for WEF Client configuration
 

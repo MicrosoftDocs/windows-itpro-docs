@@ -13,11 +13,14 @@ ms.localizationpriority: none
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Authorization Policy Change
 
 Audit Authorization Policy Change allows you to audit assignment and removal of user rights in user right policies, changes in security token object permission, resource attributes changes and Central Access Policy changes for file system objects.
+
+**Event volume**: Medium to High.
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |-------------------|-----------------|-----------------|------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -38,6 +41,4 @@ Audit Authorization Policy Change allows you to audit assignment and removal of 
 -   [4911](event-4911.md)(S): Resource attributes of the object were changed.
 
 -   [4913](event-4913.md)(S): Central Access Policy on the object was changed.
-
-**Event volume**: Medium to High.
 

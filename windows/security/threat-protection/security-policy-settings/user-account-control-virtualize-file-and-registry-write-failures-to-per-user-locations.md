@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # User Account Control: Virtualize file and registry write failures to per-user locations
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Virtualize file and registry write failures to per-user locations** security policy setting.

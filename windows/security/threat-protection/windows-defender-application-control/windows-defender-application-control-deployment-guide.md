@@ -8,7 +8,7 @@ author: jgeurten
 ms.reviewer: aaroncz
 ms.author: jogeurte
 manager: jsuther
-ms.date: 10/06/2022
+ms.date: 01/23/2023
 ms.topic: overview
 ---
 
@@ -31,7 +31,7 @@ Before you deploy your WDAC policies, you must first convert the XML to its bina
 
    ```powershell
     ## Update the path to your WDAC policy XML
-    $WDACPolicyXMLFile = $env:USERPROFILE"\Desktop\MyWDACPolicy.xml"
+    $WDACPolicyXMLFile = $env:USERPROFILE + "\Desktop\MyWDACPolicy.xml"
     [xml]$WDACPolicy = Get-Content -Path $WDACPolicyXMLFile
     if (($WDACPolicy.SiPolicy.PolicyID) -ne $null) ## Multiple policy format (For Windows builds 1903+ only, including Server 2022)
     {
@@ -54,6 +54,11 @@ As with any significant change to your environment, implementing application con
 All Windows Defender Application Control policy changes should be deployed in audit mode before proceeding to enforcement. Carefully monitor events from devices where the policy has been deployed to ensure the block events you observe match your expectation before broadening the deployment to other deployment rings. If your organization uses Microsoft Defender for Endpoint, you can use the Advanced Hunting feature to centrally monitor WDAC-related events. Otherwise, we recommend using an event log forwarding solution to collect relevant events from your managed endpoints.
 
 ## Choose how to deploy WDAC policies
+
+> [!IMPORTANT]
+> Due to a known issue, you should always activate new **signed** WDAC Base policies with a reboot on systems with [**memory integrity**](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) enabled. We recommend [deploying via script](deployment/deploy-wdac-policies-with-script.md) in this case.
+>
+> This issue does not affect updates to signed Base policies that are already active on the system, deployment of unsigned policies, or deployment of supplemental policies (signed or unsigned). It also does not affect deployments to systems that are not running memory integrity.
 
 There are several options to deploy Windows Defender Application Control policies to managed endpoints, including:
 

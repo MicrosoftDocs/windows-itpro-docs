@@ -1,7 +1,7 @@
 ---
 title: Windows quality update signals
 description: This article explains the Windows quality update signals
-ms.date: 05/30/2022
+ms.date: 01/24/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -22,7 +22,7 @@ If there's a scenario that is critical to your business, which isn't monitored b
 
 Before being released to the Test ring, Windows Autopatch reviews several data sources to determine if we need to send any customer advisories or need to pause the update. Situations where Windows Autopatch doesn't release an update to the Test ring are seldom occurrences.
 
-| Text | Text |
+| Pre-release signal | Description |
 | ----- | ----- |
 | Windows Payload Review | The contents of the B release are reviewed to help focus your update testing on areas that have changed. If any relevant changes are detected, a [customer advisory](../operate/windows-autopatch-wqu-communications.md#communications-during-release) will be sent out. |
 | C-Release Review - Internal Signals | Windows Autopatch reviews active incidents associated with the previous C release to understand potential risks in the B release. |
@@ -50,12 +50,10 @@ Autopatch monitors the following reliability signals:
 
 | Device reliability signal | Description |
 | ----- | ----- |
-| Blue screens | These events are highly disruptive to end users so are closely watched. |
+| Blue screens | These events are highly disruptive to end users. These events are closely monitored. |
 | Overall app reliability | Tracks the total number of app crashes and freezes on a device. A known limitation with this measure is that if one app becomes 10% more reliable and another becomes 10% less reliable then it shows up as a flat line in the measure. |
 | Microsoft Office reliability | Tracks the number of Office crashes and freezes per application per device. |
 | Microsoft Edge reliability | Tracks the number of Microsoft Edge crashes and freezes per device. |
 | Microsoft Teams reliability | Tracks the number of Microsoft Teams crashes and freezes per device. |
 
-When the update is released to the First ring, the service crosses the 500 device threshold. Therefore, Autopatch is able to detect regressions, which are common to all customers. At this point in the release, we'll decide if we need to change the release schedule or pause for all customers.
-
-Once your tenant reaches 500 devices, Windows Autopatch starts generating recommendations specific to your devices. Based on this information, the service starts developing insights specific to your tenant allowing a customized response to what's happening in your environment.
+When the update is released to the First ring, the service crosses the 500 device threshold. Therefore, Autopatch can to detect regressions, which are common to all customers. At this point in the release, we'll decide if we need to change the release schedule or pause for all customers.

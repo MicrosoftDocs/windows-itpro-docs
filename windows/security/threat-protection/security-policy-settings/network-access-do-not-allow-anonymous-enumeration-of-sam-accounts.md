@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Network access: Do not allow anonymous enumeration of SAM accounts
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Network access: Do not allow anonymous enumeration of SAM accounts** security policy setting.

@@ -1,11 +1,11 @@
 ---
 title: Configure Windows Update for Business
-manager: dougeby
+manager: aaroncz
 description: You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices.
 ms.prod: windows-client
-author: aczechowski
+author: mestew
 ms.localizationpriority: medium
-ms.author: aaroncz
+ms.author: mstewart
 ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017

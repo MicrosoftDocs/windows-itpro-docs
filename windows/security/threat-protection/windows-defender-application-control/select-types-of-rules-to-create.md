@@ -13,7 +13,7 @@ author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: vinpa
 manager: aaroncz
-ms.date: 08/29/2022
+ms.date: 01/23/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -96,7 +96,7 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 | **FilePublisher** | This level combines the "FileName" attribute of the signed file, plus "Publisher" (PCA certificate with CN of leaf), plus a minimum version number. This option trusts specific files from the specified publisher, with a version at or above the specified version number. |
 | **LeafCertificate** | Adds trusted signers at the individual signing certificate level. The benefit of using this level versus the individual hash level is that new versions of the product will have different hash values but typically the same signing certificate. When this level is used, no policy update would be needed to run the new version of the application. However, leaf certificates have much shorter validity periods than other certificate levels, so the Windows Defender Application Control policy must be updated whenever these certificates change. |
 | **PcaCertificate** | Adds the highest available certificate in the provided certificate chain to signers. This level is typically one certificate below the root certificate because the scan doesn't validate anything beyond the certificates included in the provided signature (it doesn't go online or check local root stores). |
-| **RootCertificate** | Currently unsupported. |
+| **RootCertificate** | This level may produce an overly permissive policy and isn't recommended for most use cases. |
 | **WHQL** | Trusts binaries if they've been validated and signed by WHQL. This level is primarily for kernel binaries. |
 | **WHQLPublisher** | This level combines the WHQL level and the CN on the leaf certificate, and is primarily for kernel binaries. |
 | **WHQLFilePublisher** | Specifies that the binaries are validated and signed by WHQL, with a specific publisher (WHQLPublisher), and that the binary is the specified version or newer. This level is primarily for kernel binaries. |

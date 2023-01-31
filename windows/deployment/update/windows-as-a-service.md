@@ -3,11 +3,10 @@ title: Windows as a service
 ms.prod: windows-client
 ms.topic: article
 ms.manager: dougeby
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 description: Discover the latest news articles, videos, and podcasts about Windows as a service. Find resources for using Windows as a service within your organization.
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.localizationpriority: high
 ms.technology: itpro-updates
 ms.date: 12/31/2017

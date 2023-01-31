@@ -1,13 +1,12 @@
 ---
 title: Windows Update for Business
-manager: dougeby
+manager: aaroncz
 description: Learn how Windows Update for Business lets you manage when devices receive updates from Windows Update.
 ms.prod: windows-client
-author: aczechowski
+author: mestew
 ms.localizationpriority: medium
-ms.author: aaroncz
+ms.author: mstewart
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ms.collection: highpri
 ms.technology: itpro-updates
 ms.date: 12/31/2017

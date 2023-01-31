@@ -8,9 +8,7 @@ manager: aaroncz
 ms.collection: 
   - highpri
 ms.topic: article
-ms.localizationpriority: medium
-ms.date: 
-ms.reviewer: 
+ms.date: 6/30/2022
 ms.technology: itpro-security
 ---
 
@@ -78,6 +76,7 @@ Enables or disables networking in the sandbox. You can disable network access to
 `<Networking>value</Networking>`
 
 Supported values:
+- *Enable*: Enables networking in the sandbox.
 - *Disable*: Disables networking in the sandbox.
 - *Default*: This value is the default value for networking support. This value enables networking by creating a virtual switch on the host and connects the sandbox to it via a virtual NIC.
 
@@ -186,6 +185,7 @@ Enables or disables sharing of the host clipboard with the sandbox.
 `<ClipboardRedirection>value</ClipboardRedirection>`
 
 Supported values:
+- *Enable*: Enables sharing of the host clipboard with the sandbox.
 - *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox will be restricted. 
 - *Default*: This value is the default value for clipboard redirection. Currently, copy/paste between the host and sandbox are permitted under *Default*.
 
