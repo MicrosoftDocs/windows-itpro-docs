@@ -201,7 +201,6 @@ Requirements:
 
    - 22H2 --> [Administrative Templates (.admx) for Windows 11 2022 September Update (22H2)](https://www.microsoft.com/download/details.aspx?id=104593)
    
-   
 2. Install the package on the Domain Controller.
 
 3. Navigate, depending on the version to the folder:
