@@ -21,12 +21,6 @@ Microsoft provides robust modern device management (MDM) solutions such as Micro
 
 Windows Autopatch makes it easier and less expensive for you to keep your Windows devices up to date so you can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
 
-Windows Autopatch feature update deployment provides:
-
-- A customer-driven and efficient Windows feature update deployment approach for Windows OS target versions and deployment cadence.
-- Proactive insights prior, during and after Windows Feature update deployments.
-- Options to [pause or resume Windows](#pausing-and-resuming-a-release) feature updates on behalf of your organization.
-
 ## Enforcing a minimum Windows OS version
 
 Once devices are registered with Windows Autopatch, they’re assigned to deployment rings. Each deployment ring has a set of Windows feature update policies assigned to them.
