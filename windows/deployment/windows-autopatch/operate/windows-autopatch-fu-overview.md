@@ -47,6 +47,9 @@ If your tenant is enrolled with Windows Autopatch, you can see the following pol
 | Windows Autopatch – DSS Policy [Fast] | Windows 10 20H2 | Make update available as soon as possible | 12/14/2022 | 12/21/2022 | 1 | 5/8/2023, 7:00PM |
 | Windows Autopatch – DSS Policy [Broad] | Windows 10 20H2 | Make update available as soon as possible | 12/15/2022 | 12/29/2022 | 1 | 5/8/2023, 7:00PM |
 
+> [!IMPORTANT]
+> If you’re ahead of the current minimum OS version enforced by Windows Autopatch in your organization, you can [edit Windows Autopatch’s default Windows feature update policy and select your desired targeted version](/mem/intune/protect/windows-10-feature-updates#create-and-assign-feature-updates-for-windows-10-and-later-policy).
+
 ## Test Windows 11 feature updates
 
 You can test Windows 11 deployments by adding devices either through direct membership or by bulk importing them into the Modern Workplace - Windows 11 Pre-Release Test Devices Azure AD group. There’s a separate Windows feature update policy (**Modern Workplace DSS Policy [Windows 11]**) targeted to this Azure AD group, and its configuration is set as follows:
