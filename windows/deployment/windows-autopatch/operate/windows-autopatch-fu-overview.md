@@ -74,7 +74,7 @@ Windows Autopatch provides a permanent pause of a Windows feature update deploym
 7. Optional. Enter details about why you're pausing or resuming the selected update.
 8. Select **Okay**.
 
-> [!CAUTION]
+> [!NOTE]
 > Pausing an update can take up to eight hours to deploy to devices.
 
 ## Rollback
