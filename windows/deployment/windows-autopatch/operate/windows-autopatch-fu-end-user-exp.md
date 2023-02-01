@@ -51,7 +51,16 @@ The deadline specified in the update policy is five days. Therefore, once this d
 
 In the following example, the user is on holiday and the device is offline beyond the feature update deadline. The user then returns to work and the device is turned back on.
 
-Since the deadline has already passed, the device is granted a two-day grace period to install the update and restart. The user will be notified of a pending installation and given options to choose from. Once the two-day grace period has expired, the user is forced to restart with a 15-minute warning notification.
+The grace period to install the update and restart depends on the deployment ring the device is assigned to:
+
+| Deployment ring | Grace period (in days) |
+| ----- | ----- |
+| Test | Zero days |
+| First | Two days |
+| Fast | Two days |
+| Broad | Two days |
+
+The user will be notified of a pending installation and given options to choose from. Once the grace period has expired, the user is forced to restart with a 15-minute warning notification.
 
 :::image type="content" source="../media/windows-feature-update-grace-period.png" alt-text="Windows feature update grace period" lightbox="../media/windows-feature-update-grace-period.png":::
 
