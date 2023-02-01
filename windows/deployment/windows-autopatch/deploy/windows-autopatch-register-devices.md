@@ -111,12 +111,19 @@ A role defines the set of permissions granted to users assigned to that role. Yo
 
 - Azure AD Global Administrator
 - Intune Service Administrator
-- Modern Workplace Intune Administrator
 
 For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) and [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
-> [!NOTE]
-> The Modern Workplace Intune Admin role is a custom created role during the Windows Autopatch tenant enrollment process. This role can assign administrators to Intune roles, and allows you to create and configure custom Intune roles.
+If you want to assign less-privileged user accounts to perform specific tasks in the Windows Autopatch portal, such as register devices with the service, you can add these user accounts into one of the two Azure AD groups created during the tenant enrollment process:
+
+| Role | Discover devices | Modify columns | Refresh device list | Export to .CSV | Device actions |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| Modern Workplace Roles - Service Administrator | Yes | Yes | Yes | Yes | Yes |
+| Modern Workplace Roles - Service Reader | No | Yes | Yes | Yes | No |
+
+> [!TIP]
+> If adding less-privileged user accounts into the **Modern Workplace Roles - Service Administrator** Azure AD group, it's also recommended to add the same users as owners of the **Windows Autopatch Device Registration** Azure AD group so these user accounts can add new devices as members of the group for registration purposes.
+> See [assign an owner of member of a group in Azure AD](https://learn.microsoft.com/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group) for more details.
 
 ## Details about the device registration process
 
