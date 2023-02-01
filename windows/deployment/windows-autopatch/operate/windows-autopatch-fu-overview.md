@@ -50,7 +50,7 @@ If your tenant is enrolled with Windows Autopatch, you can see the following pol
 > If you’re ahead of the current minimum OS version enforced by Windows Autopatch in your organization, you can [edit Windows Autopatch’s default Windows feature update policy and select your desired targeted version](/mem/intune/protect/windows-10-feature-updates#create-and-assign-feature-updates-for-windows-10-and-later-policy).
 
 > [!NOTE]
-> The four minimum Windows 10 OS version feature update policies were introduced in Windows Autopatch in the 2212 release milestone. Its creation automatically unassigns the previous four feature update policies targeting Windows 10 21H2 from all four Windows Autopatch deployment rings:<p>**Modern Workplace DSS Policy [Test]**</p><p>**Modern Workplace DSS Policy [First]**</p><p>**Modern Workplace DSS Policy [Fast]**</p><p>**Modern Workplace DSS Policy [Broad]**</p><p>Since the new feature update policies setting the minimum Windows 10 OS version are already in place, the policies above can be safely removed from your tenant.</p>
+> The four minimum Windows 10 OS version feature update policies were introduced in Windows Autopatch in the 2212 release milestone. Its creation automatically unassigns the previous four feature update policies targeting Windows 10 21H2 from all four Windows Autopatch deployment rings:<ul><li>**Modern Workplace DSS Policy [Test]**</li><li>**Modern Workplace DSS Policy [First]**</li><li>**Modern Workplace DSS Policy [Fast]**</li><li>**Modern Workplace DSS Policy [Broad]**</li><p>Since the new Windows feature update policies that set the minimum Windows 10 OS version are already in place, the Modern Workplace DSS policies can be safely removed from your tenant.</p>
 
 ## Test Windows 11 feature updates
 
@@ -61,11 +61,11 @@ You can test Windows 11 deployments by adding devices either through direct memb
 | Modern Workplace DSS Policy [Windows 11] | Windows 11 22H2 | Make update available as soon as possible | N/A | N/A | N/A | 10/13/2025, 7:00PM |
 
 > [!IMPORTANT]
-> Windows Autopatch neither applies its deployment ring distribution, nor configure [Windows Update for Business gradual rollout settings](https://learn.microsoft.com/mem/intune/protect/windows-update-rollout-options) in the Feature update policy **Modern Workplace DSS Policy [Windows 11]**.<p>Once devices are added into the **Modern Workplace - Windows 11 Pre-Release Test Devices** Azure AD group, they can all apply the Windows 11 22H2 feature update with no gradual rollout or deployment ring capabilities.</p>
+> Windows Autopatch neither applies its deployment ring distribution, nor configures the [Windows Update for Business gradual rollout settings](/mem/intune/protect/windows-update-rollout-options) in the **Modern Workplace DSS Policy [Windows 11]** policy.<p>Once devices are added to the **Modern Workplace - Windows 11 Pre-Release Test Devices** Azure AD group, the devices can be offered the Windows 11 22H2 feature update at the same time.</p>
 
 ## Manage Windows feature update deployments
 
-Windows Autopatch uses Microsoft Intune’s built-in solution, which uses configuration service providers (CSPs), for pausing and resuming both [Windows quality and feature updates](windows-autopatch-wqu-overview.md#pausing-and-resuming-a-release).
+Windows Autopatch uses Microsoft Intune’s built-in solution, which uses configuration service providers (CSPs), for pausing and resuming both [Windows quality](windows-autopatch-wqu-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release).
 
 Windows Autopatch provides a permanent pause of a Windows feature update deployment. The Windows Autopatch service automatically extends the 35-day pause limit (permanent pause) established by Microsoft Intune on your behalf. The deployment remains permanently paused until you decide to resume it.
 
