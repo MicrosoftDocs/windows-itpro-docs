@@ -1,7 +1,7 @@
 ---
 title: Windows feature updates
 description: This article explains how Windows feature updates are managed in Autopatch
-ms.date: 01/31/2023
+ms.date: 02/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -23,11 +23,11 @@ Windows Autopatch makes it easier and less expensive for you to keep your Window
 
 ## Enforcing a minimum Windows OS version
 
-Once devices are registered with Windows Autopatch, they’re assigned to deployment rings. Each deployment ring has a set of Windows feature update policies assigned to them.
+Once devices are registered with Windows Autopatch, they’re assigned to deployment rings. Each deployment ring has its Windows feature update policy assigned to them.
 
 The policies:
 
-- Contain the minimum Windows OS version being currently serviced by the Windows servicing channels. The current minimum OS version is **Windows 10 20H2**.
+- Contain the minimum Windows 10 OS version being currently serviced by the [Windows servicing channels](https://learn.microsoft.com/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2). The current minimum OS version is **Windows 10 20H2**.
 - Set a bare minimum Windows OS version required by the service once devices are registered with the service.
 - Minimize unexpected Windows OS upgrades once new devices register with Windows Autopatch.
 
@@ -56,7 +56,7 @@ You can test Windows 11 deployments by adding devices either through direct memb
 
 | Policy name | Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch – DSS Policy [Test] | Windows 11 22H2 | Make update available as soon as possible | N/A | N/A | N/A | 10/13/2025, 7:00PM |
+| Modern Workplace DSS Policy [Windows 11] | Windows 11 22H2 | Make update available as soon as possible | N/A | N/A | N/A | 10/13/2025, 7:00PM |
 
 ## Manage Windows feature update deployments
 
@@ -78,8 +78,9 @@ Windows Autopatch provides a permanent pause of a Windows feature update deploym
 8. If you're resuming an update, you can select one or more deployment rings.
 9. Select **Okay**.
 
-> [!NOTE]
-> Pausing an update can take up to eight hours to deploy to devices.
+> [!TIP]
+> Pausing an update can take up to eight hours to be applied to devices. This happens because Windows Autopatch leverages Microsoft Intune as its management solution, and that's the average frequency devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates.
+	> See [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](https://learn.microsoft.com/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) for more details.
 
 ## Rollback
 
