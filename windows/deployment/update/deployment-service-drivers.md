@@ -127,7 +127,7 @@ Update policies define how content is deployed to a deployment audience. An [upd
 
    To create a policy with additional settings, in the request body:
     - Specify the **Audience ID** as `id`
-    - Define any additional [deployment settings](beta/api/resources/windowsupdates-deploymentsettings).
+    - Define any additional [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings).
     - You may need to add the `content-length` header to the request. The value should be the length of the request body in bytes.
     
    In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`:
@@ -235,7 +235,7 @@ The following truncated response displays:
 Each driver update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). Approve content for drivers and firmware by adding a [content approval](/graph/api/resources/windowsupdates-contentapproval) for the catalog entry to an existing policy. Content approval is a [compliance change](/graph/api/resources/windowsupdates-compliance) for the policy.
 
 > [!IMPORTANT]
-> Any [deployment settings](beta/api/resources/windowsupdates-deploymentsettings) configured for the content approval will be combined with the existing [update policy's](#create-an-update-policy) deployment settings. If the content approval and update policy specify the same deployment setting, the setting from the content approval is used.
+> Any [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings) configured for the content approval will be combined with the existing [update policy's](#create-an-update-policy) deployment settings. If the content approval and update policy specify the same deployment setting, the setting from the content approval is used.
 
 Add a content approval to an existing policy, **Policy ID** `9011c330-1234-5678-9abc-def012345678` for the driver update with the **Catalog ID** `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d. Schedule the start date for January, 20 2023 at 1 AM UTC:
 
