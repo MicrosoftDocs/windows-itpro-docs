@@ -16,6 +16,9 @@ ms.topic: reference
 <!-- Search-Begin -->
 # Policy CSP - Search
 
+> [!IMPORTANT]
+> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+
 <!-- Search-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- Search-Editable-End -->
