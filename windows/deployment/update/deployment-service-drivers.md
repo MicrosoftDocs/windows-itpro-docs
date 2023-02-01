@@ -266,7 +266,6 @@ Content-type: application/json
 
 Review the compliance changes to a policy with the most recent changes listed in the response first. The following example returns the compliance changes for a policy with the **Policy ID** `9011c330-1234-5678-9abc-def012345678` and sorts by `createdDateTime` in descending order:
 
-```rest
 
 ```rest
 GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges?orderby=createdDateTime desc
