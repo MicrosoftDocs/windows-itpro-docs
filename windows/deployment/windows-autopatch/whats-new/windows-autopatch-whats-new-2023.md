@@ -18,6 +18,15 @@ This article lists new and updated feature releases, and service releases, with 
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
 
+## February 2023
+
+### February feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) | Updated Feature update policies section with Windows Autopatch - DSS Policy [deployment ring] |
+| [Register your devices](../deploy/windows-autopatch-register-devices.md) |<ul><li>Updated the Built-in roles required for registration section.</li><li>Added more information about assigning less-privileged user accounts</li></ul> |
+
 ## January 2023
 
 ### January feature releases or updates
