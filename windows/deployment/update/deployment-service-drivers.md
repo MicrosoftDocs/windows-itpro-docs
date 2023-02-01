@@ -208,12 +208,25 @@ To edit the policy settings, **PATCH** the policy using the **Policy ID**. Run t
    PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678
    Content-Type: application/json
 
-  "deploymentSettings": {
-    "contentApplicability": {
-      "offerWhileRecommendedBy": ["Microsoft"],
+{
+    "complianceChangeRules": [
+     {
+        "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule",
+         "contentFilter": {
+          "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
+        }
+    }
+  ],
+    "deploymentSettings": {
+       "@odata.type": "#microsoft.graph.windowsUpdates.deploymentSettings",
+        "contentApplicability": {
+          "@odata.type": "#microsoft.graph.windowsUpdates.contentApplicabilitySettings",
+          "offerWhileRecommendedBy": ["microsoft"]
+        }
+      }
+}
 ```
 
-**note to add info about behavior defined by settings in example and maybe include info about autoapprove while recommended**
 
 
 ## Review applicable driver content
