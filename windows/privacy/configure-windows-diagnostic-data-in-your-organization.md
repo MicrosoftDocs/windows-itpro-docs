@@ -383,6 +383,8 @@ Under **Value**, use **1** to enable the service.
 
 If you wish to disable, at any time, switch the same setting to **0**. The default value is **0**.
 
+This setting is also available in the Intune Settings Catalog. **Create profile** > **Windows 10 and later** > **Settings catalog** > Category **System** -> Search for **Allow commercial data pipeline**.
+
 ## Change privacy settings on a single server
 
 You can also change the privacy settings on a server running either the Azure Stack HCI operating system or Windows Server. For more information, see [Change privacy settings on individual servers](/azure-stack/hci/manage/change-privacy-settings).
