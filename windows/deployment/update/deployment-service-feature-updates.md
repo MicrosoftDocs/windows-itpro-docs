@@ -18,7 +18,7 @@ ms.date: 02/14/2023
 In this article, you will:
 > [!div class="checklist"]
 > * [Open Graph Explorer](#open-graph-explorer) 
-> * [Run queries to identify test devices](#run-queries-to-identify-test-devices)
+> * [Run queries to identify test devices](#run-queries-to-identify-devices)
 > * [Enroll devices](#enroll-devices)
 > * Do Z
 > * Do Z
@@ -38,7 +38,7 @@ All of the [prerequisites for the Windows Update for Business deployment service
 <!--Using include for Graph Explorer sign in-->
 [!INCLUDE [Graph Explorer sign in](./includes/wufb-deployment-graph-explorer.md)]
 
-## Run queries to identify test devices
+## Run queries to identify devices
 
 <!--Using include for Graph Explorer device queries-->
 [!INCLUDE [Graph Explorer device queries](./includes/wufb-deployment-find-device-name-graph-explorer.md)]
