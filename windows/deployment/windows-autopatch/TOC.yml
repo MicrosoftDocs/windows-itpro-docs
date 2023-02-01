@@ -50,7 +50,7 @@
                 - name: Windows quality updates
                   href: operate/windows-autopatch-wqu-overview.md
                   items:
-                    - name: Windows quality end user experience
+                    - name: Windows quality update end user experience
                       href: operate/windows-autopatch-wqu-end-user-exp.md
                     - name: Windows quality update signals
                       href: operate/windows-autopatch-wqu-signals.md
@@ -70,7 +70,7 @@
                 - name: Windows feature updates
                   href: operate/windows-autopatch-fu-overview.md
                   items:
-                    - name: Windows feature end user experience
+                    - name: Windows feature update end user experience
                       href: operate/windows-autopatch-fu-end-user-exp.md
                 - name: Windows quality and feature update communications
                   href: operate/windows-autopatch-wqu-communications.md
