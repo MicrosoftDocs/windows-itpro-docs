@@ -56,7 +56,7 @@ When you enroll devices into driver management, the deployment service becomes t
 
 ## Create a deployment audience and add audience members
 
-1. Create an audience for the driver deployment. The deployment audience is a collection of member devices that will receive the driver deployment. POST to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience) resource with a request body of `{}` to create a new audience.
+1. Create an audience for the driver deployment. The deployment audience is a collection of member devices that will receive the driver deployment. **POST** to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience) resource with a request body of `{}` to create a new audience.
 
    ```http
    POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
@@ -103,17 +103,19 @@ When you enroll devices into driver management, the deployment service becomes t
 
 1. To verify the devices were added to the audience, run the following query using the **Audience ID**:
 
-   ```http
-   GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/members
-   ```
+   `GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/members`
 
 Once a device has been enrolled and added to a deployment audience, the Windows Update for Business deployment service will start collecting scan results from Windows Update to build a catalog of applicable drivers to be browsed, approved, and scheduled for deployment.
 
 ## Create an update policy
 
-Update policies define how content is deployed to a deployment audience. An [update policy](/graph/api/resources/windowsupdates-updatepolicy) ensures deployments to a deployment audience behaves in a consistent manner without having to create and manage multiple individual deployments. When a content approval is added to the policy, it's deployed to the devices in the associated audiences. When creating an update policy, you can either:
+Update policies define how content is deployed to a deployment audience. An [update policy](/graph/api/resources/windowsupdates-updatepolicy) ensures deployments to a deployment audience behaves in a consistent manner without having to create and manage multiple individual deployments. When a content approval is added to the policy, it's deployed to the devices in the associated audiences.
 
-- Create a policy and define the settings later
+> [!IMPORTANT]
+> Any [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings) configured for a [content approval](#approve-driver-content-for-deployment) will be combined with the existing update policy's deployment settings. If the content approval and update policy specify the same deployment setting, the setting from the content approval is used.
+
+
+### Create a policy and define the settings later
 
    To create a policy without any deployment settings, in the request body specify the **Audience ID** as `id`. In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`, and the `id` given in the response is the **Policy ID**:
 
@@ -127,9 +129,9 @@ Update policies define how content is deployed to a deployment audience. An [upd
    }
    ```
 
-- Specify settings during policy creation
+### Specify settings during policy creation
 
-   To create a policy with additional settings, in the request body:
+To create a policy with additional settings, in the request body:
   - Specify the **Audience ID** as `id`
   - Define any additional [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings).
   - You may need to add the `content-length` header to the request. The value should be the length of the request body in bytes.
@@ -172,14 +174,6 @@ Update policies define how content is deployed to a deployment audience. An [upd
    }
    ```
 
-**note to add info about behavior defined by settings in example and maybe include info about autoapprove while recommended**
-
-```
-
-  "deploymentSettings": {
-    "contentApplicability": {
-      "offerWhileRecommendedBy": ["Microsoft"],
-```
 
 Response returning the policy, without any additional settings specified, that has a **Policy ID** of `9011c330-1234-5678-9abc-def012345678`:
 
@@ -202,6 +196,26 @@ Content-type: application/json
 }
 ```
 
+### Review and edit policy settings
+
+To review the policy settings, run the following query using the **Policy ID**, for example `9011c330-1234-5678-9abc-def012345678`:
+
+   `GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678`
+
+To edit the policy settings, **PATCH** the policy using the **Policy ID**. Run the following **PATCH** to automatically approve driver content that's recommended by `Microsoft`for deployment for **Policy ID** `9011c330-1234-5678-9abc-def012345678`:
+
+``` http
+   PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678
+   Content-Type: application/json
+
+  "deploymentSettings": {
+    "contentApplicability": {
+      "offerWhileRecommendedBy": ["Microsoft"],
+```
+
+**note to add info about behavior defined by settings in example and maybe include info about autoapprove while recommended**
+
+
 ## Review applicable driver content
 
 Once Windows Update for Business deployment service has scan results from devices, the applicability for driver and firmware updates can be displayed for a deployment audience. Each applicable update returns the following information:
@@ -216,7 +230,7 @@ To display [applicable content](/graph/api/resources/windowsupdates-applicableco
 GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/applicableContent
 ```
 
-   The following truncated response displays:
+The following truncated response displays:
   - An **Azure AD ID** of `01234567-89ab-cdef-0123-456789abcdef`
   - The **Catalog ID** of `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d`
 
@@ -264,6 +278,8 @@ Content-type: application/json
     }
 }
 ```
+
+
 
 Review the compliance changes to a policy with the most recent changes listed in the response first. The following example returns the compliance changes for a policy with the **Policy ID** `9011c330-1234-5678-9abc-def012345678` and sorts by `createdDateTime` in descending order:
 
