@@ -215,23 +215,23 @@ Each applicable update returns the following information:
 - The **Azure AD ID** of the devices it's applicable to
 - Information describing the update such as the name and version.
 
-The following truncated response displays:
-- An **Azure AD ID** of `01234567-89ab-cdef-0123-456789abcdef` 
-- The **Catalog ID** of `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d`
+   The following truncated response displays:
+   - An **Azure AD ID** of `01234567-89ab-cdef-0123-456789abcdef` 
+   - The **Catalog ID** of `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d`
 
-```json
-"matchedDevices": [
-    {
-        "recommendedBy": [
-            "Microsoft"
-        ],
-        "deviceId": "01ea3c90-12f5-4093-a4c9-c1434657c976"
-    }
-],
-"catalogEntry": {
-    "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateCatalogEntry",
-    "id": "1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d",
-```
+      ```json
+      "matchedDevices": [
+          {
+              "recommendedBy": [
+                  "Microsoft"
+              ],
+              "deviceId": "01ea3c90-12f5-4093-a4c9-c1434657c976"
+          }
+      ],
+      "catalogEntry": {
+          "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateCatalogEntry",
+          "id": "1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d",
+      ```
 
 ## Approve driver content for deployment
 
@@ -274,7 +274,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c3
 
 ## Revoke content approval
 
-Approval for content can be revoked by setting the `isRevoked` property of the [compliance change](/graph/api/resources/windowsupdates-compliance) to true. This setting can be changed while a deployment is in progress. However, revoking will only prevent the content from being offered to devices if they haven't already received it. To resume offering the content, a new [approval](#review-applicable-driver-content-and-approve-it) will need to be created.
+Approval for content can be revoked by setting the `isRevoked` property of the [compliance change](/graph/api/resources/windowsupdates-compliance) to true. This setting can be changed while a deployment is in progress. However, revoking will only prevent the content from being offered to devices if they haven't already received it. To resume offering the content, a new [approval](#approve-driver-content-for-deployment) will need to be created.
 
 
 ### Request
