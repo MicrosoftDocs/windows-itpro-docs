@@ -24,7 +24,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
-| [Register your devices](../deploy/windows-autopatch-register-devices.md) |<ul><li>Removed Modern Workplace Intune Administrator role from the Built-in roles required for registration section.</li><li>Added more information about assigning less-privileged user accounts</li></ul> |
+| [Register your devices](../deploy/windows-autopatch-register-devices.md) |<ul><li>Updated the Built-in roles required for registration section.</li><li>Added more information about assigning less-privileged user accounts</li></ul> |
 
 ## January 2023
 
