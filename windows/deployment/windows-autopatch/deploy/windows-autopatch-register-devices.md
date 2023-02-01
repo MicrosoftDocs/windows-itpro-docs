@@ -114,7 +114,7 @@ A role defines the set of permissions granted to users assigned to that role. Yo
 
 For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) and [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
-If you want to assign less-privileged user accounts to perform specific tasks in the Windows Autopatch portal, such as register devices with the service, you can add these user accounts into one of the two Azure AD groups created during the [tenant enrollment](../prepare/windows-autopatch-enroll-tenant.md)process:
+If you want to assign less-privileged user accounts to perform specific tasks in the Windows Autopatch portal, such as register devices with the service, you can add these user accounts into one of the two Azure AD groups created during the [tenant enrollment](../prepare/windows-autopatch-enroll-tenant.md) process:
 
 | Role | Discover devices | Modify columns | Refresh device list | Export to .CSV | Device actions |
 | ----- | ----- | ----- | ----- | ----- | ----- |
