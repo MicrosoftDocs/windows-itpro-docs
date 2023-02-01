@@ -112,7 +112,7 @@ To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimiza
 
 Update Compliance provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
 
-[[DO status](images/UC_workspace_DO_status.png)](images/UC_workspace_DO_status.png#lightbox)
+:::image type="content" source="images/UC_workspace_DO_status.png" alt-text="Delivery Optimization status in Update Compliance" lightbox="images/UC_workspace_DO_status.png":::
 
 For details, see [Delivery Optimization in Update Compliance](../update/update-compliance-delivery-optimization.md).
 
