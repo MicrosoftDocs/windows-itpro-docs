@@ -50,7 +50,7 @@ If your tenant is enrolled with Windows Autopatch, you can see the following pol
 > If you’re ahead of the current minimum OS version enforced by Windows Autopatch in your organization, you can [edit Windows Autopatch’s default Windows feature update policy and select your desired targeted version](/mem/intune/protect/windows-10-feature-updates#create-and-assign-feature-updates-for-windows-10-and-later-policy).
 
 > [!NOTE]
-> The four minimum Windows 10 OS version feature update policies were introduced in Windows Autopatch in the 2212 release milestone. Its creation automatically unassigns the previous four feature update policies targeting Windows 10 21H2 from all four Windows Autopatch deployment rings:<p>**Modern Workplace DSS Policy [Test]**</p><p>**Modern Workplace DSS Policy [First]**</p><p>**Modern Workplace DSS Policy [Fast]**</p><p>**Modern Workplace DSS Policy [Broad]**</p><p>Since the new feature update policies setting the minimum Windows 10 OS version are in place, the policies above can be removed from your tenant.</p>
+> The four minimum Windows 10 OS version feature update policies were introduced in Windows Autopatch in the 2212 release milestone. Its creation automatically unassigns the previous four feature update policies targeting Windows 10 21H2 from all four Windows Autopatch deployment rings:<p>**Modern Workplace DSS Policy [Test]**</p><p>**Modern Workplace DSS Policy [First]**</p><p>**Modern Workplace DSS Policy [Fast]**</p><p>**Modern Workplace DSS Policy [Broad]**</p><p>Since the new feature update policies setting the minimum Windows 10 OS version are already in place, the policies above can be safely removed from your tenant.</p>
 
 ## Test Windows 11 feature updates
 
@@ -67,7 +67,7 @@ You can test Windows 11 deployments by adding devices either through direct memb
 
 Windows Autopatch uses Microsoft Intune’s built-in solution, which uses configuration service providers (CSPs), for pausing and resuming both [Windows quality and feature updates](windows-autopatch-wqu-overview.md#pausing-and-resuming-a-release).
 
-Windows Autopatch provides a permanent pause of a Windows feature update deployment. The Windows Autopatch service automatically extends the 35 day pause limit (permanent pause) established by Microsoft Intune on your behalf. The deployment remains permanently paused until you decide to resume it.
+Windows Autopatch provides a permanent pause of a Windows feature update deployment. The Windows Autopatch service automatically extends the 35-day pause limit (permanent pause) established by Microsoft Intune on your behalf. The deployment remains permanently paused until you decide to resume it.
 
 ## Pausing and resuming a release
 
@@ -84,7 +84,7 @@ Windows Autopatch provides a permanent pause of a Windows feature update deploym
 9. Select **Okay**.
 
 > [!NOTE]
-> Pausing an update can take up to eight hours to be applied to devices. This happens because Windows Autopatch uses Microsoft Intune as its management solution, and that's the average frequency devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates.<p>For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).</p>
+> Pausing or resuming an update can take up to eight hours to be applied to devices. This happens because Windows Autopatch uses Microsoft Intune as its management solution, and that's the average frequency devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates.<p>For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).</p>
 
 ## Rollback
 
