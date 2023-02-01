@@ -4,7 +4,7 @@ description: Learn more about the Search Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/30/2023
+ms.date: 02/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -655,9 +655,18 @@ The most restrictive value is `0` to now allow automatic language detection.
 <!-- ConfigureSearchOnTaskbarMode-OmaUri-End -->
 
 <!-- ConfigureSearchOnTaskbarMode-Description-Begin -->
-<!-- Description-Source-DDF -->
-Configures search on the taskbar.
-- If you disable this policy setting or do not configure it, users can see and change this setting.
+<!-- Description-Source-ADMX-Forced -->
+This policy setting allows you to configure search on the taskbar.
+
+- If you enable this policy setting and set it to hide, search on taskbar will be hidden by default. Users cannot change it in Settings.
+
+- If you enable this policy setting and set it to search icon only, the search icon will be displayed on the taskbar by default. Users cannot change it in Settings.
+
+- If you enable this policy setting and set it to search icon and label, the search icon and label will be displayed on the taskbar by default. Users cannot change it in Settings.
+
+- If you enable this policy setting and set it to search box, the search box will be displayed on the taskbar by default. Users cannot change it in Settings.
+
+- If you disable or do not configure this policy setting, search on taskbar will be configured according to the defaults for your Windows edition. Users will be able to change search on taskbar in Settings.
 <!-- ConfigureSearchOnTaskbarMode-Description-End -->
 
 <!-- ConfigureSearchOnTaskbarMode-Editable-Begin -->
@@ -691,8 +700,12 @@ Configures search on the taskbar.
 | Name | Value |
 |:--|:--|
 | Name | ConfigureSearchOnTaskbarMode |
-| Path | Search > AT > WindowsComponents > Search |
-| Element Name | ConfigureSearchOnTaskbarMode_Dropdown |
+| Friendly Name | Configures search on the taskbar |
+| Element Name | Search on the taskbar |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Windows Search |
+| ADMX File Name | Search.admx |
 <!-- ConfigureSearchOnTaskbarMode-GpMapping-End -->
 
 <!-- ConfigureSearchOnTaskbarMode-Examples-Begin -->
