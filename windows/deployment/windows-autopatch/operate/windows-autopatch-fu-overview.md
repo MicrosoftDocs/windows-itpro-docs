@@ -27,7 +27,7 @@ Once devices are registered with Windows Autopatch, they’re assigned to deploy
 
 The policies:
 
-- Contain the minimum Windows 10 OS version being currently serviced by the [Windows servicing channels](https://learn.microsoft.com/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2). The current minimum OS version is **Windows 10 20H2**.
+- Contain the minimum Windows 10 version being currently serviced by the [Windows servicing channels](https://learn.microsoft.com/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2). The current minimum OS version is **Windows 10 20H2**.
 - Set a bare minimum Windows OS version required by the service once devices are registered with the service.
 - Minimize unexpected Windows OS upgrades once new devices register with Windows Autopatch.
 
