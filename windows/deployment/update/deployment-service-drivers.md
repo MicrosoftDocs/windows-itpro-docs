@@ -63,16 +63,16 @@ When you enroll devices into driver management, the deployment service becomes t
    {}
    ```
 
-   The POST returns a [201 Created](/troubleshoot/developer/webapps/iis/www-administration-management/http-status-code#2xx---success) response with the following body, where `id` is the **Audience ID**:
+      The POST returns a [201 Created](/troubleshoot/developer/webapps/iis/www-administration-management/http-status-code#2xx---success) response with the following body, where `id` is the **Audience ID**:
 
-   ```json
-   {
-       "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deploymentAudiences/$entity",
-       "id": "d39ad1ce-0123-4567-89ab-cdef01234567",
-       "reportingDeviceCount": 0,
-       "applicableContent": []
-   }
-   ```
+      ```json
+      {
+          "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deploymentAudiences/$entity",
+          "id": "d39ad1ce-0123-4567-89ab-cdef01234567",
+          "reportingDeviceCount": 0,
+          "applicableContent": []
+      }
+      ```
 
 1. Add devices, using their **Azure AD ID**, to the deployment audience so they become audience members. Specify the deployment **Audience ID** in the URL field and the devices to add in the request body. The `id` property specifies the **Azure AD ID** of the device.
 
