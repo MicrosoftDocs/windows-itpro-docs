@@ -10,21 +10,18 @@ ms.localizationpriority: medium
 ---
 <!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
 
-Use the [device](/graph/api/resources/device) resource type to find clients to enroll into the deployment service. Change the query parameters to fit your specific needs. For more information, see [Use query parameters](/graph/query-parameters). 
+Use the [device](/graph/api/resources/device) resource type to find clients to enroll into the deployment service. Change the query parameters to fit your specific needs. For more information, see [Use query parameters](/graph/query-parameters).
 
-Displays the **AzureAD Device ID** and **Name** of all devices:
+- Displays the **AzureAD Device ID** and **Name** of all devices:
 
-```rest
-GET https://graph.microsoft.com/v1.0/devices?$select=deviceid,displayName
-```
+  `GET https://graph.microsoft.com/v1.0/devices?$select=deviceid,displayName`
 
-Displays the **AzureAD Device ID** and **Name** for device names that starts with `Test`:
+- Displays the **AzureAD Device ID** and **Name** for devices that have a name starting with `Test`:
 
-```rest
-GET https://graph.microsoft.com/v1.0/devices?$filter=startswith(displayName,'Test')&$select=deviceid,displayName
-```
+  `GET https://graph.microsoft.com/v1.0/devices?$filter=startswith (displayName,'Test')&$select=deviceid,displayName`  
 
-### Add a request header
+
+### Add a request header for advanced queries
 
 For the next requests, set the **ConsistencyLevel** header to `eventual`. For more information about advanced query parameters, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
@@ -34,17 +31,14 @@ For the next requests, set the **ConsistencyLevel** header to `eventual`. For mo
 
     :::image type="content" source="../media/7512398-deployment-service-graph-modify-header.png" alt-text="Screenshot of the request headers tab in Graph Explorer" lightbox="../media/7512398-deployment-service-graph-modify-header.png":::
 
-Displays the **Name** and **Operating system version** for the device that has the **AzureAD Device ID** of `01234567-89ab-cdef-0123-456789abcdef`:
+- Display the **Name** and **Operating system version** for the device that has `01234567-89ab-cdef-0123-456789abcdef` as the **AzureAD Device ID**:
 
-```rest
-GET https://graph.microsoft.com/v1.0/devices?$search="deviceid:01234567-89ab-cdef-0123-456789abcdef"?$select=displayName,operatingSystemVersion
-```
+   `GET https://graph.microsoft.com/v1.0/devices?$search="deviceid:01234567-89ab-cdef-0123-456789abcdef"?$select=displayName,operatingSystemVersion`
 
-To find devices that likely aren't virtual machines, filter for devices that don't have virtual machine listed as the model but do have a manufacturer listed. Display the **AzureAD Device ID**, **Name**, and **Operating system version** for each device:
+- To find devices that likely aren't virtual machines, filter for devices that don't have virtual machine listed as the model but do have a manufacturer listed. Display the **AzureAD Device ID**, **Name**, and **Operating system version** for each device:
 
-```rest
-GET https://graph.microsoft.com/v1.0/devices?$filter=model ne 'virtual machine' and NOT(manufacturer eq null)&$count=true&$select=deviceid,displayName,operatingSystemVersion
-```
+   `GET https://graph.microsoft.com/v1.0/devices?$filter=model ne 'virtual machine' and NOT(manufacturer eq null)&$count=true&$select=deviceid,displayName,operatingSystemVersion`
+
 
 > [!Tip]
 > Requests using the [device](/graph/api/resources/device) resource type typically have both an `id` and a `deviceid`:

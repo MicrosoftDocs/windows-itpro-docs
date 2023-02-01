@@ -17,6 +17,7 @@ ms.date: 02/14/2023
 
 In this article, you will:
 > [!div class="checklist"]
+>
 > - [Open Graph Explorer](#open-graph-explorer)
 > - [Run queries to identify test devices](#run-queries-to-identify-devices)
 > - [Enroll devices](#enroll-devices)
@@ -30,6 +31,7 @@ In this article, you will:
 ## Prerequisites
 
 All of the [prerequisites for the Windows Update for Business deployment service](deployment-service-overview.md#prerequisites) must be met.
+
 ### Permissions
 
 <!--Using include for Graph Explorer permissions-->
@@ -63,16 +65,17 @@ When you enroll devices into driver management, the deployment service becomes t
    {}
    ```
 
-      The POST returns a [201 Created](/troubleshoot/developer/webapps/iis/www-administration-management/http-status-code#2xx---success) response with the following body, where `id` is the **Audience ID**:
+   The POST returns a [201 Created](/troubleshoot/developer/webapps/iis/www-administration-management/http-status-code#2xx---success) response with the following body, where `id` is the **Audience ID**:
 
-      ```json
-      {
-          "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deploymentAudiences/$entity",
-          "id": "d39ad1ce-0123-4567-89ab-cdef01234567",
-          "reportingDeviceCount": 0,
-          "applicableContent": []
-      }
-      ```
+   ```json
+   {
+       "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deploymentAudiences/$entity",
+       "id": "d39ad1ce-0123-4567-89ab-cdef01234567",
+       "reportingDeviceCount": 0,
+       "applicableContent": []
+   }
+   ```
+
 
 1. Add devices, using their **Azure AD ID**, to the deployment audience so they become audience members. Specify the deployment **Audience ID** in the URL field and the devices to add in the request body. The `id` property specifies the **Azure AD ID** of the device.
 
@@ -127,10 +130,10 @@ Update policies define how content is deployed to a deployment audience. An [upd
 - Specify settings during policy creation
 
    To create a policy with additional settings, in the request body:
-    - Specify the **Audience ID** as `id`
-    - Define any additional [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings).
-    - You may need to add the `content-length` header to the request. The value should be the length of the request body in bytes.
-    
+  - Specify the **Audience ID** as `id`
+  - Define any additional [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings).
+  - You may need to add the `content-length` header to the request. The value should be the length of the request body in bytes.
+
    In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`:
 
    ```rest
@@ -169,7 +172,7 @@ Update policies define how content is deployed to a deployment audience. An [upd
    }
    ```
 
-**note to add info about behavior defined by settings in example and maybe include info about autoapprove while recommended** 
+**note to add info about behavior defined by settings in example and maybe include info about autoapprove while recommended**
 
 ```
 
@@ -177,7 +180,7 @@ Update policies define how content is deployed to a deployment audience. An [upd
     "contentApplicability": {
       "offerWhileRecommendedBy": ["Microsoft"],
 ```
- 
+
 Response returning the policy, without any additional settings specified, that has a **Policy ID** of `9011c330-1234-5678-9abc-def012345678`:
 
 ```json
@@ -201,7 +204,11 @@ Content-type: application/json
 
 ## Review applicable driver content
 
-Once Windows Update for Business deployment service has scan results from devices, the applicability for driver and firmware updates can be displayed for a deployment audience.
+Once Windows Update for Business deployment service has scan results from devices, the applicability for driver and firmware updates can be displayed for a deployment audience. Each applicable update returns the following information:
+
+- An `id` for its [catalog entry](/graph/api/resources/windowsupdates-catalogentry)
+- The **Azure AD ID** of the devices it's applicable to
+- Information describing the update such as the name and version.
 
 To display [applicable content](/graph/api/resources/windowsupdates-applicablecontent), run a query using the  **Audience ID**, for example `d39ad1ce-0123-4567-89ab-cdef01234567`:  
 
@@ -209,15 +216,9 @@ To display [applicable content](/graph/api/resources/windowsupdates-applicableco
 GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/applicableContent
 ```
 
-Each applicable update returns the following information:
-
-- An `id` for its [catalog entry](/graph/api/resources/windowsupdates-catalogentry)
-- The **Azure AD ID** of the devices it's applicable to
-- Information describing the update such as the name and version.
-
    The following truncated response displays:
-   - An **Azure AD ID** of `01234567-89ab-cdef-0123-456789abcdef` 
-   - The **Catalog ID** of `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d`
+  - An **Azure AD ID** of `01234567-89ab-cdef-0123-456789abcdef`
+  - The **Catalog ID** of `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d`
 
       ```json
       "matchedDevices": [
@@ -266,7 +267,6 @@ Content-type: application/json
 
 Review the compliance changes to a policy with the most recent changes listed in the response first. The following example returns the compliance changes for a policy with the **Policy ID** `9011c330-1234-5678-9abc-def012345678` and sorts by `createdDateTime` in descending order:
 
-
 ```rest
 GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges?orderby=createdDateTime desc
 
@@ -275,7 +275,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c3
 ## Revoke content approval
 
 Approval for content can be revoked by setting the `isRevoked` property of the [compliance change](/graph/api/resources/windowsupdates-compliance) to true. This setting can be changed while a deployment is in progress. However, revoking will only prevent the content from being offered to devices if they haven't already received it. To resume offering the content, a new [approval](#approve-driver-content-for-deployment) will need to be created.
-
 
 ### Request
 
@@ -290,5 +289,5 @@ Content-type: application/json
 
 ## Remove device enrollment
 
-<!--Using include for removing device enrollment--> 
+<!--Using include for removing device enrollment-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-graph-unenroll.md)]
