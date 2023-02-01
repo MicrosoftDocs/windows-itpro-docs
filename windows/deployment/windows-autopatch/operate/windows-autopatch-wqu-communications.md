@@ -1,5 +1,5 @@
 ---
-title: Windows quality and feature update communications
+title: Windows quality update communications
 description: This article explains Windows quality update communications
 ms.date: 05/30/2022
 ms.prod: windows-client
@@ -12,7 +12,7 @@ manager: dougeby
 msreviewer: hathind
 ---
 
-# Windows quality and feature update communications
+# Windows quality update communications
 
 There are three categories of communication that are sent out during a Windows quality and feature update:
 
