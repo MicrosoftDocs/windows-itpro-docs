@@ -14,10 +14,10 @@ msreviewer: andredm7
 
 # Windows feature updates
 
-Microsoft provides robust mobile device management (MDM) solutions such as Microsoft Intune, Windows Update for Business, Configuration Manager etc. However, the administration of these solutions to keep Windows devices up to date with the latest Windows feature releases rests on your organization’s IT admins. The Windows feature update process is considered one of the most expensive and time consuming tasks for IT since it requires incremental rollout and validation.
+Microsoft provides robust mobile device management (MDM) solutions such as Microsoft Intune, Windows Update for Business, Configuration Manager etc. However, the administration of these solutions to keep Windows devices up to date with the latest Windows feature releases rests on your organization’s IT admins. The Windows feature update process is considered one of the most expensive and time consuming tasks for IT since it requires incremental rollout and validation. Windows feature updates:
 
-- Fixes known bugs to keep Windows devices protected against behavioral issues.
-- New features to boost end-user productivity.
+- Keep Windows devices protected against behavioral issues.
+- Provide new features to boost end-user productivity.
 
 Windows Autopatch makes it easier and less expensive for you to keep your Windows devices up to date so you can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
 
