@@ -58,7 +58,7 @@ When you enroll devices into driver management, the deployment service becomes t
 
 1. Create an audience for the driver deployment. The deployment audience is a collection of member devices that will receive the driver deployment. POST to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience) resource with a request body of `{}` to create a new audience.
 
-   ```rest
+   ```http
    POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
    content-type: application/json
 
@@ -79,7 +79,7 @@ When you enroll devices into driver management, the deployment service becomes t
 
 1. Add devices, using their **Azure AD ID**, to the deployment audience so they become audience members. Specify the deployment **Audience ID** in the URL field and the devices to add in the request body. The `id` property specifies the **Azure AD ID** of the device.
 
-   ```rest
+   ```http
    POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience
    Content-type: application/json
 
@@ -103,7 +103,7 @@ When you enroll devices into driver management, the deployment service becomes t
 
 1. To verify the devices were added to the audience, run the following query using the **Audience ID**:
 
-   ```rest
+   ```http
    GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/members
    ```
 
@@ -117,7 +117,7 @@ Update policies define how content is deployed to a deployment audience. An [upd
 
    To create a policy without any deployment settings, in the request body specify the **Audience ID** as `id`. In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`, and the `id` given in the response is the **Policy ID**:
 
-   ```rest
+   ```http
    POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
    Content-type: application/json
    {
@@ -136,7 +136,7 @@ Update policies define how content is deployed to a deployment audience. An [upd
 
    In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`:
 
-   ```rest
+   ```http
    POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
    Content-Type: application/json
    Content-length: 967
@@ -212,7 +212,7 @@ Once Windows Update for Business deployment service has scan results from device
 
 To display [applicable content](/graph/api/resources/windowsupdates-applicablecontent), run a query using the  **Audience ID**, for example `d39ad1ce-0123-4567-89ab-cdef01234567`:  
 
-```rest
+```http
 GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/applicableContent
 ```
 
@@ -243,7 +243,7 @@ Each driver update is associated with a unique [catalog entry](/graph/api/resour
 
 Add a content approval to an existing policy, **Policy ID** `9011c330-1234-5678-9abc-def012345678` for the driver update with the **Catalog ID** `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d`. Schedule the start date for January, 20 2023 at 1 AM UTC:
 
-```rest
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges
 Content-type: application/json
 
@@ -267,7 +267,7 @@ Content-type: application/json
 
 Review the compliance changes to a policy with the most recent changes listed in the response first. The following example returns the compliance changes for a policy with the **Policy ID** `9011c330-1234-5678-9abc-def012345678` and sorts by `createdDateTime` in descending order:
 
-```rest
+```http
 GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges?orderby=createdDateTime desc
 
 ```
