@@ -119,6 +119,6 @@ There are two statuses associated with paused quality updates, **Service Paused*
 | Service Paused | If the Windows Autopatch service has paused an update, the release will have the **Service Paused** status. You must [submit a support request](windows-autopatch-support-request.md) to resume the update. |
 | Customer Paused | If you've paused an update, the release will have the **Customer Paused** status. The Windows Autopatch service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update. |
 
-## Incidents and outages
+## Remediating Ineligible and/or Not up to Date devices
 
-Windows Autopatch provides information on how you can remediate [Ineligible Devices (Customer Actions)](../operate/windows-autopatch-wqu-reports-overview.md#ineligible-devices-customer-action) and/or the Windows Autopatch service may remediate [Not up to Date devices](../operate/windows-autopatch-wqu-reports-overview.md#not-up-to-date-microsoft-action) to bring them back into compliance.
+To ensure your devices receive Windows quality updates, Windows Autopatch provides information on how you can remediate [Ineligible Devices (Customer Actions)](../operate/windows-autopatch-wqu-reports-overview.md#ineligible-devices-customer-action). In addition, the Windows Autopatch service may remediate [Not up to Date devices](../operate/windows-autopatch-wqu-reports-overview.md#not-up-to-date-microsoft-action) to bring them back into compliance.
