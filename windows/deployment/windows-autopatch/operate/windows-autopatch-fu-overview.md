@@ -79,7 +79,7 @@ Windows Autopatch provides a permanent pause of a Windows feature update deploym
 9. Select **Okay**.
 
 > [!TIP]
-> Pausing an update can take up to eight hours to be applied to devices. This happens because Windows Autopatch leverages Microsoft Intune as its management solution, and that's the average frequency devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates.<p>For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) for more details.</p>
+> Pausing an update can take up to eight hours to be applied to devices. This happens because Windows Autopatch uses Microsoft Intune as its management solution, and that's the average frequency devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates.<p>For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) for more details.</p>
 
 ## Rollback
 
