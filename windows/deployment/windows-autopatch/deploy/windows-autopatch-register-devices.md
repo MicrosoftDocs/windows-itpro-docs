@@ -122,7 +122,7 @@ If you want to assign less-privileged user accounts to perform specific tasks in
 | Modern Workplace Roles - Service Reader | No | Yes | Yes | Yes | No |
 
 > [!TIP]
-> If you're adding less-privileged user accounts into the **Modern Workplace Roles - Service Administrator** Azure AD group, it's recommended to add the same users as owners of the **Windows Autopatch Device Registration** Azure AD group. Owners of the **Windows Autopatch Device Registration** Azure AD group can add new devices as members of the group for registration purposes.<p>For more information, see [assign an owner of member of a group in Azure AD](https://learn.microsoft.com/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group).</p>
+> If you're adding less-privileged user accounts into the **Modern Workplace Roles - Service Administrator** Azure AD group, it's recommended to add the same users as owners of the **Windows Autopatch Device Registration** Azure AD group. Owners of the **Windows Autopatch Device Registration** Azure AD group can add new devices as members of the group for registration purposes.<p>For more information, see [assign an owner of member of a group in Azure AD](/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group).</p>
 
 ## Details about the device registration process
 
