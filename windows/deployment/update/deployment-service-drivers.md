@@ -109,7 +109,7 @@ Once a device has been enrolled and added to a deployment audience, the Windows 
 
 ## Create an update policy
 
-Update policies define how content is deployed to a deployment audience. An [update policy](/graph/api/resources/windowsupdates-updatepolicy) ensures deployments to a deployment audience behaves in a consistent manner without having to create and manage multiple individual deployments. When a content approval is added to the policy, it's deployed to the devices in the associated audiences.
+Update policies define how content is deployed to a deployment audience. An [update policy](/graph/api/resources/windowsupdates-updatepolicy) ensures deployments to a deployment audience behave in a consistent manner without having to create and manage multiple individual deployments. When a content approval is added to the policy, it's deployed to the devices in the associated audiences.
 
 > [!IMPORTANT]
 > Any [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings) configured for a [content approval](#approve-driver-content-for-deployment) will be combined with the existing update policy's deployment settings. If the content approval and update policy specify the same deployment setting, the setting from the content approval is used.
@@ -154,7 +154,7 @@ Content-type: application/json
 
 To create a policy with additional settings, in the request body:
   - Specify the **Audience ID** as `id`
-  - Define any additional [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings).
+  - Define any [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings).
   - You may need to add the `content-length` header to the request. The value should be the length of the request body in bytes.
 
    In the following driver update policy example, any deployments created by a content approval will start in 7 days after approval and will gradually roll out to 1000 devices per day for  **Audience ID** `d39ad1ce-0123-4567-89ab-cdef01234567`:
