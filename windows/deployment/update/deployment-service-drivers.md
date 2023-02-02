@@ -65,7 +65,7 @@ When you enroll devices into driver management, the deployment service becomes t
    {}
    ```
 
-   The POST returns a [201 Created](/troubleshoot/developer/webapps/iis/www-administration-management/http-status-code#2xx---success) response with the following body, where `id` is the **Audience ID**:
+   The POST returns an HTTP status code of `201 Created` as a response with the following body, where `id` is the **Audience ID**:
 
    ```json
    {
@@ -155,7 +155,7 @@ To create a policy without any deployment settings, in the request body specify 
 To create a policy with additional settings, in the request body:
   - Specify the **Audience ID** as `id`
   - Define any [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings).
-  - You may need to add the `content-length` header to the request. The value should be the length of the request body in bytes.
+  - Add the `content-length` header to the request if a status code of 411 occurs. The value should be the length of the request body in bytes. For information on error codes, see [Microsoft Graph error responses and resource types](/graph/errors).
 
    In the following driver update policy example, any deployments created by a content approval will start 7 days after approval and will gradually roll out to 1000 devices per day for **Audience ID** `d39ad1ce-0123-4567-89ab-cdef01234567`:
 

@@ -40,6 +40,6 @@ You enroll devices based on the types of updates you want them to recieve.Curren
       }
       ```
 
-   1. Select the **Run query** button. The results will appear in the **Response** window. In this case, the status code of [202 Accepted](/troubleshoot/developer/webapps/iis/www-administration-management/http-status-code#2xx---success).
+   1. Select the **Run query** button. The results will appear in the **Response** window. In this case, the HTTP status code of `202 Accepted`.
 
        :::image type="content" source="../media/7512398-deployment-enroll-asset-graph.png" alt-text="Screenshot of successfully enrolling assets through Graph Explorer." lightbox="../media/7512398-deployment-enroll-asset-graph.png" :::
