@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Group Policy.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/18/2023
+ms.date: 01/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -642,6 +642,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [AllowCortanaInAAD](policy-csp-search.md)
 - [AllowFindMyFiles](policy-csp-search.md)
 - [AllowSearchHighlights](policy-csp-search.md)
+- [ConfigureSearchOnTaskbarMode](policy-csp-search.md)
 
 ## Security
 
