@@ -65,7 +65,7 @@ You can test Windows 11 deployments by adding devices either through direct memb
 
 ## Manage Windows feature update deployments
 
-Windows Autopatch uses Microsoft Intune’s built-in solution, which uses configuration service providers (CSPs), for pausing and resuming both [Windows quality](windows-autopatch-wqu-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release).
+Windows Autopatch uses Microsoft Intune’s built-in solution, which uses configuration service providers (CSPs), for pausing and resuming both [Windows quality](windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release).
 
 Windows Autopatch provides a permanent pause of a Windows feature update deployment. The Windows Autopatch service automatically extends the 35-day pause limit (permanent pause) established by Microsoft Intune on your behalf. The deployment remains permanently paused until you decide to resume it.
 

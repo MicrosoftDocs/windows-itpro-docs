@@ -20452,12 +20452,67 @@
     },
     {
       "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-fu-overview.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-feature-update-overview",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-overview",
       "redirect_document_id": true
     },
     {
       "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-fu-end-user-exp.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-feature-update-end-user-exp",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-end-user-exp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-end-user-exp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-signals.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-signals",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-communications.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-communications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-reports-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-reports-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-summary-dashboard.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-summary-dashboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-all-devices-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-all-devices-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-all-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-all-devices-historical-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-eligible-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-eligible-devices-historical-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-ineligible-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-ineligible-devices-historical-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-wqu-unsupported-policies.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/references/windows-autopatch-windows-update-unsupported-policies",
       "redirect_document_id": true
     }
   ]
