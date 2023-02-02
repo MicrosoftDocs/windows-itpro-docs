@@ -55,7 +55,7 @@ The following table contains information about the events that you can use to de
 
 | Event ID | Level | Event message | Description |
 | --- | --- | --- | --- |
-| 8000 | Error| Application Identity Policy conversion failed. Status *&lt;%1&gt;*| Indicates that the policy wasn't applied correctly to the computer. The status message is provided for troubleshooting purposes.| 
+| 8000 | Error| Application Identity Policy conversion failed. Status * &lt;%1&gt; *| Indicates that the policy wasn't applied correctly to the computer. The status message is provided for troubleshooting purposes.| 
 | 8001 | Information| The AppLocker policy was applied successfully to this computer.| Indicates that the AppLocker policy was successfully applied to the computer.| 
 | 8002 | Information| *&lt;File name&gt; * was allowed to run.| Specifies that the .exe or .dll file is allowed by an AppLocker rule.| 
 | 8003 | Warning| *&lt;File name&gt; * was allowed to run but would have been prevented from running if the AppLocker policy was enforced.| Applied only when the **Audit only** enforcement mode is enabled. Specifies that the .exe or .dll file would be blocked if the **Enforce rules** enforcement mode were enabled. |
