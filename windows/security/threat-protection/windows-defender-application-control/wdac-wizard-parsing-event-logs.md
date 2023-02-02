@@ -31,9 +31,9 @@ ms.technology: itpro-security
 
 As of [version 2.2.0.0](https://webapp-wdac-wizard.azurewebsites.net/archives.html), the WDAC Wizard supports creating WDAC policy rules from the following event log types: 
 
-1. [The WDAC event log events on the system](#WDAC-Event-Viewer-Log-Parsing)
-2. [Exported .EVTX log files from any system](#WDAC-Event-Log-File-Parsing)
-3. [Exported WDAC events from MDE Advanced Hunting WDAC events](#MDE-Advanced-Hunting-WDAC-Event-Parsing)
+1. [The WDAC event log events on the system](#wdac-event-viewer-log-parsing)
+2. [Exported .EVTX log files from any system](#wdac-event-log-file-parsing)
+3. [Exported WDAC events from MDE Advanced Hunting WDAC events](#mde-advanced-hunting-wdac-event-parsing)
 
 
 ## WDAC Event Viewer Log Parsing
@@ -50,7 +50,7 @@ The Wizard will parse the relevant audit and block events from the CodeIntegrity
 > ![Parse WDAC and AppLocker event log system events](images/wdac-wizard-event-log-system.png)
 
 4. Select the Next button to navigate to the table of software to view the audit and block events and create rules from
-5. [Generate rules from the events](#Creating-Policy-Rules-from-the-Events)
+5. [Generate rules from the events](#creating-policy-rules-from-the-events)
 
 ## WDAC Event Log File Parsing
 
@@ -67,7 +67,7 @@ The Wizard will parse the relevant audit and block events from the selected log 
 > ![Parse evtx file WDAC events](images/wdac-wizard-event-log-files.png)
 
 5. Select the Next button to navigate to the table of software to view the audit and block events and create rules from
-6. [Generate rules from the events](#Creating-Policy-Rules-from-the-Events)
+6. [Generate rules from the events](#creating-policy-rules-from-the-events)
 
 ## MDE Advanced Hunting WDAC Event Parsing
 
@@ -114,7 +114,7 @@ The Wizard will parse the relevant audit and block events from the selected Adva
 > ![Parse the Advanced Hunting CSV WDAC event files](images/wdac-wizard-event-log-mde-ah-parsing.png)
 
 7. Select the Next button to navigate to the table of software to view the audit and block events and create rules from
-8. [Generate rules from the events](#Creating-Policy-Rules-from-the-Events)
+8. [Generate rules from the events](#creating-policy-rules-from-the-events)
 
 
 ## Creating Policy Rules from the Events
