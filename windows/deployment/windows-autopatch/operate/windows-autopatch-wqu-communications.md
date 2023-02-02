@@ -1,5 +1,5 @@
 ---
-title: Windows quality and feature update communications
+title: Windows quality update communications
 description: This article explains Windows quality update communications
 ms.date: 05/30/2022
 ms.prod: windows-client
@@ -12,7 +12,7 @@ manager: dougeby
 msreviewer: hathind
 ---
 
-# Windows quality and feature update communications
+# Windows quality update communications
 
 There are three categories of communication that are sent out during a Windows quality and feature update:
 
@@ -20,7 +20,11 @@ There are three categories of communication that are sent out during a Windows q
 - [Communications during release](#communications-during-release)
 - [Incident communications](#incident-communications)
 
-Communications are posted to Message center, Service health dashboard, and the Windows Autopatch messages section of the Microsoft Endpoint Manager admin center as appropriate for the type of communication.  
+Communications are posted to, as appropriate for the type of communication, to the:
+
+- Message center
+- Service health dashboard
+- Windows Autopatch messages section of the Microsoft Endpoint Manager admin center 
 
 :::image type="content" source="../media/update-communications.png" alt-text="Update communications timeline" lightbox="../media/update-communications.png":::
 
@@ -42,4 +46,4 @@ For example, new threat intelligence may require us to expedite a release, or we
 
 ## Incident communications
 
-Despite the best intentions, every service should plan for failure and success. When there's an incident, timely and transparent communication is key to building and maintaining your trust. If insufficient numbers of devices have been updated to meet the service level objective, devices will experience an interruption to productivity and an incident will be raised. Microsoft will update the status of the incident at least once every 24 hours.
+Despite the best intentions, every service should plan for failure and success. When there's an incident, timely and transparent communication is key to building and maintaining your trust. If insufficient numbers of devices have been updated to meet the service level objective, devices will experience an interruption to productivity, and an incident will be raised. Microsoft will update the status of the incident at least once every 24 hours.

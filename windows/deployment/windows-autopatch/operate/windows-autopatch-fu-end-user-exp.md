@@ -29,11 +29,11 @@ In this section we'll review what an end user would see in the following three s
 
 ### Typical update experience
 
-In this example, we'll be discussing a device in the First ring. The Autopatch service updates the First ring’s DSS policy to target the next version of Windows 30 days after the start of the release. When the policy is applied to the device, the device will download the update, and notify end users that the new version of Windows is ready to install. The end user can either:
+In this example, we'll be discussing a device in the First ring. When the policy is applied to the device, the device will download the update, and notify end users that the new version of Windows is ready to install. The end user can either:
 
-1. Restart immediately to install the updates
-1. Schedule the installation, or
-1. Snooze (the device will attempt to install outside of active hours.)
+1. Restart immediately to install the updates.
+2. Schedule the installation.
+3. Snooze (the device will attempt to install outside of active hours).
 
 In the following example, the user schedules the restart and is notified 15 minutes prior to the scheduled restart time. The user can reschedule, if necessary, but isn't able to reschedule past the deadline.
 
@@ -51,7 +51,16 @@ The deadline specified in the update policy is five days. Therefore, once this d
 
 In the following example, the user is on holiday and the device is offline beyond the feature update deadline. The user then returns to work and the device is turned back on.
 
-Since the deadline has already passed, the device is granted a two-day grace period to install the update and restart. The user will be notified of a pending installation and given options to choose from. Once the two-day grace period has expired, the user is forced to restart with a 15-minute warning notification.
+The grace period to install the update and restart depends on the deployment ring the device is assigned to:
+
+| Deployment ring | Grace period (in days) |
+| ----- | ----- |
+| Test | Zero days |
+| First | Two days |
+| Fast | Two days |
+| Broad | Two days |
+
+The user will be notified of a pending installation and given options to choose from. Once the grace period has expired, the user is forced to restart with a 15-minute warning notification.
 
 :::image type="content" source="../media/windows-feature-update-grace-period.png" alt-text="Windows feature update grace period" lightbox="../media/windows-feature-update-grace-period.png":::
 
