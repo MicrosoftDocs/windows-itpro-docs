@@ -54,7 +54,7 @@ To create rules from the WDAC event logs on the system:
 
 ## WDAC Event Log File Parsing
 
-To create rules from the WDAC .EVTX event logs files on the system:
+To create rules from the WDAC `.EVTX` event logs files on the system:
 
 1. Select **Policy Editor** from the WDAC Wizard main page.
 2. Select **Convert Event Log to a WDAC Policy**.
@@ -108,14 +108,13 @@ To create rules from the WDAC events in [MDE Advanced Hunting](querying-applicat
 5. Select the **Parse Log File(s)** button under the "Parse MDE Advanced Hunting Events to Policy" header.
 6. Select the .CSV WDAC MDE Advanced Hunting export files from the disk to parse.
 
-   The Wizard will parse the relevant audit and block events from the selected Advanced Hunting log files. You will see a notification when the Wizard successfully finishes reading the events. 
+   The Wizard will parse the relevant audit and block events from the selected Advanced Hunting log files. You'll see a notification when the Wizard successfully finishes reading the events. 
 
    > [!div class="mx-imgBorder"]
    > ![Parse the Advanced Hunting CSV WDAC event files](images/wdac-wizard-event-log-mde-ah-parsing.png)
 
 7. Select the Next button to navigate to the table of software to view the audit and block events and create rules from.
 8. [Generate rules from the events](#creating-policy-rules-from-the-events).
-
 
 ## Creating Policy Rules from the Events
 
