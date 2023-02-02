@@ -20449,6 +20449,16 @@
       "source_path": "windows/security/identity-protection/hello-for-business/hello-event-300.md",
       "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-faq",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-fu-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-feature-update-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-fu-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-feature-update-end-user-exp",
+      "redirect_document_id": true
     }
   ]
 }

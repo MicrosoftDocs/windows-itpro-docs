@@ -70,10 +70,10 @@
                         - name: Ineligible devices report—historical
                           href: operate/windows-autopatch-wqu-ineligible-devices-historical-report.md
                 - name: Windows feature updates
-                  href: operate/windows-autopatch-fu-overview.md
+                  href: operate/windows-autopatch-feature-update-overview.md
                   items:
                     - name: Windows feature update end user experience
-                      href: operate/windows-autopatch-fu-end-user-exp.md
+                      href: operate/windows-autopatch-feature-update-end-user-exp.md
             - name: Microsoft 365 Apps for enterprise
               href: operate/windows-autopatch-microsoft-365-apps-enterprise.md
             - name: Microsoft Edge
