@@ -1,7 +1,7 @@
 ---
 title: Windows feature updates
 description: This article explains how Windows feature updates are managed in Autopatch
-ms.date: 07/11/2022
+ms.date: 02/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -9,98 +9,90 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+msreviewer: andredm7
 ---
 
 # Windows feature updates
 
-## Service level objective
+Microsoft provides robust mobile device management (MDM) solutions such as Microsoft Intune, Windows Update for Business, Configuration Manager etc. However, the administration of these solutions to keep Windows devices up to date with the latest Windows feature releases rests on your organization’s IT admins. The Windows feature update process is considered one of the most expensive and time consuming tasks for IT since it requires incremental rollout and validation. Windows feature updates:
 
-Windows Autopatch aims to keep at least 99% of eligible devices on a supported version of Windows so that they can continue receiving Windows feature updates.
+- Keep Windows devices protected against behavioral issues.
+- Provide new features to boost end-user productivity.
 
-## Device eligibility
+Windows Autopatch makes it easier and less expensive for you to keep your Windows devices up to date so you can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
 
-For a device to be eligible for Windows feature updates as a part of Windows Autopatch it must meet the following criteria:
+## Enforcing a minimum Windows OS version
 
-| Criteria | Description |
-| ----- | ----- |
-| Activity | Devices must have at least six hours of usage, with at least two hours being continuous since the start of the update. |
-| Intune sync | Devices must have checked with Intune within the last five days. |
-| Storage space | Devices must have more than one GB (GigaBytes) of free storage space. |
-| Deployed | Windows Autopatch doesn't update devices that haven't yet been deployed. |
-| Internet connectivity | Devices must have a steady internet connection, and access to Windows [update endpoints](../prepare/windows-autopatch-configure-network.md). |
-| Windows edition | Devices must be on a Windows edition supported by Windows Autopatch. For more information, see [Prerequisites](../prepare/windows-autopatch-prerequisites.md). |
-| Mobile device management (MDM) policy conflict | Devices must not have deployed any policies that would prevent device management. For more information, see [Conflicting and unsupported policies](../references/windows-autopatch-wqu-unsupported-policies.md). |
-| Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](../references/windows-autopatch-wqu-unsupported-policies.md#group-policy-and-other-policy-managers). |
+Once devices are registered with Windows Autopatch, they’re assigned to deployment rings. Each of the four deployment rings have its Windows feature update policy assigned to them. This is intended to minimize unexpected Windows OS upgrades once new devices register with the service.
 
-## Windows feature update releases
+The policies:
 
-When the service decides to move to a new version of Windows, the following update schedule is indicative of the minimum amount of time between rings during a rollout.
+- Contain the minimum Windows 10 version being currently serviced by the [Windows servicing channels](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2). The current minimum OS version is **Windows 10 20H2**.
+- Set a bare minimum Windows OS version required by the service once devices are registered with the service.
 
-The final release schedule is communicated prior to release and may vary a little from the following schedule to account for business weeks or other scheduling considerations. For example, Autopatch may decide to release to the Fast Ring after 62 days instead of 60, if 60 days after the release start was a weekend.  
+If a device is registered with Windows Autopatch, and the device is:
 
-| Ring | Timeline |
-| ----- | ----- |
-| Test | Release start |
-| First | Release start + 30 days |
-| Fast | Release start + 60 days |
-| Broad | Release start + 90 days |
+- Below the service's currently targeted Windows feature update, that device will update to the service's target version when it meets the Windows OS upgrade eligibility criteria.
+- On, or above the currently targeted Windows feature update version, there won't be any Windows OS upgrades to that device.
 
-:::image type="content" source="../media/windows-feature-release-process-timeline.png" alt-text="Windows feature release timeline" lightbox="../media/windows-feature-release-process-timeline.png":::
+## Windows feature update policy configuration
 
-## New devices to Windows Autopatch
+If your tenant is enrolled with Windows Autopatch, you can see the following policies created by the service in the Microsoft Intune portal:
 
-If a device is enrolled and it's below Autopatch's currently targeted Windows feature update, that device will update to the service's target version within five days of meeting eligibility criteria.  
+| Policy name | Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| Windows Autopatch – DSS Policy [Test] | Windows 10 20H2 | Make update available as soon as possible | N/A | N/A | N/A | 5/8/2023, 7:00PM |
+| Windows Autopatch – DSS Policy [First] | Windows 10 20H2 | Make update available as soon as possible | N/A | N/A | N/A | 5/8/2023, 7:00PM |
+| Windows Autopatch – DSS Policy [Fast] | Windows 10 20H2 | Make update available as soon as possible | 12/14/2022 | 12/21/2022 | 1 | 5/8/2023, 7:00PM |
+| Windows Autopatch – DSS Policy [Broad] | Windows 10 20H2 | Make update available as soon as possible | 12/15/2022 | 12/29/2022 | 1 | 5/8/2023, 7:00PM |
 
-If a device is enrolled and it's on, or above the currently targeted Windows feature update, there won't be any change to that device.  
-
-## Feature update configuration
-
-When releasing a feature update, there are two policies that are configured by the service to create the update schedule described in the previous section. You’ll see four of each of the following policies in your tenant, one for each ring:  
-
-- **Modern Workplace DSS Policy**: This policy is used to control the target version of Windows.  
-- **Modern Workplace Update Policy**: This policy is used to control deferrals and deadlines for feature and quality updates.  
-
-| Ring | Target version (DSS) Policy | Feature update deferral | Feature update deadline | Feature update grace period |
-| ----- | ----- | ----- | ----- | ----- |
-| Test | 20H2 | 0 | 5 | 0 |
-| First | 20H2 | 0 | 5 | 2 |
-| Fast | 20H2 | 0 | 5 | 2 |
-| Broad | 20H2 | 0 | 5 | 2 |
+> [!IMPORTANT]
+> If you’re ahead of the current minimum OS version enforced by Windows Autopatch in your organization, you can [edit Windows Autopatch’s default Windows feature update policy and select your desired targeted version](/mem/intune/protect/windows-10-feature-updates#create-and-assign-feature-updates-for-windows-10-and-later-policy).
 
 > [!NOTE]
-> Customers are not able to select a target version for their tenant.
+> The four minimum Windows 10 OS version feature update policies were introduced in Windows Autopatch in the 2212 release milestone. Its creation automatically unassigns the previous four feature update policies targeting Windows 10 21H2 from all four Windows Autopatch deployment rings:<ul><li>**Modern Workplace DSS Policy [Test]**</li><li>**Modern Workplace DSS Policy [First]**</li><li>**Modern Workplace DSS Policy [Fast]**</li><li>**Modern Workplace DSS Policy [Broad]**</li><p>Since the new Windows feature update policies that set the minimum Windows 10 OS version are already in place, the Modern Workplace DSS policies can be safely removed from your tenant.</p>
 
-During a release, the service modifies the Modern Workplace DSS policy to change the target version for a specific ring in Intune. That change is deployed to devices and updates the devices prior to the update deadline.  
+## Test Windows 11 feature updates
 
-To understand how devices will react to the change in the Modern Workplace DSS policy, it's important to understand how deferral, deadline, and grace periods affect devices.
+You can test Windows 11 deployments by adding devices either through direct membership or by bulk importing them into the **Modern Workplace - Windows 11 Pre-Release Test Devices** Azure AD group. There’s a separate Windows feature update policy (**Modern Workplace DSS Policy [Windows 11]**) targeted to this Azure AD group, and its configuration is set as follows:
 
-| Policy | Description |
-| ----- | ----- |
-| [Deferrals](/windows/client-management/mdm/policy-csp-update#update-deferqualityupdatesperiodindays) | The deferral policy determines how many days after a release the feature update is offered to a device. The service maximizes control over feature updates by creating individual DSS policies for each ring and modifying the ring's DSS policy to change the target update version. Therefore, the feature update deferral policy for all rings is set to zero days so that a change in the DSS policy is released as soon as possible.   |
-| [Deadlines](/windows/client-management/mdm/policy-csp-update#update-autorestartdeadlineperiodindays)    | Before the deadline, restarts can be scheduled by users or automatically scheduled outside of active hours. After the deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule. The deadline for a specific device is set to be the specified number of days after the update is offered to the device.  |
-| [Grace periods](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod) | This policy specifies a minimum number of days after an update is downloaded until the device is automatically restarted. This policy overrides the deadline policy so that if a user comes back from vacation, it prevents the device from forcing a restart to complete the update as soon as it comes online.  |
+| Policy name | Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| Modern Workplace DSS Policy [Windows 11] | Windows 11 22H2 | Make update available as soon as possible | N/A | N/A | N/A | 10/13/2025, 7:00PM |
 
 > [!IMPORTANT]
-> Deploying deferral, deadline, or grace period policies which conflict with Autopatch's policies will render a device ineligible for management. Also, if any update related to group policy settings are detected, the device will also be ineligible for management.
+> Windows Autopatch neither applies its deployment ring distribution, nor configures the [Windows Update for Business gradual rollout settings](/mem/intune/protect/windows-update-rollout-options) in the **Modern Workplace DSS Policy [Windows 11]** policy.<p>Once devices are added to the **Modern Workplace - Windows 11 Pre-Release Test Devices** Azure AD group, the devices can be offered the Windows 11 22H2 feature update at the same time.</p>
 
-## Windows 11 testing
+## Manage Windows feature update deployments
 
-To allow customers to test Windows 11 in their environment, there's a separate DSS policy that enables you to test Windows 11 before broadly adopting within your environment. When you add devices to the **Modern Workplace - Windows 11 Pre-Release Test Devices** group they'll update to Windows 11.  
+Windows Autopatch uses Microsoft Intune’s built-in solution, which uses configuration service providers (CSPs), for pausing and resuming both [Windows quality](windows-autopatch-wqu-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release).
 
-> [!IMPORTANT]
-> This group is intended for testing purposes only and shouldn't be used to broadly update to Windows 11 in your environment.
+Windows Autopatch provides a permanent pause of a Windows feature update deployment. The Windows Autopatch service automatically extends the 35-day pause limit (permanent pause) established by Microsoft Intune on your behalf. The deployment remains permanently paused until you decide to resume it.
 
 ## Pausing and resuming a release
 
-You can pause or resume a Windows feature update from the Release management tab in the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+**To pause or resume a feature update:**
+
+1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Devices** from the left navigation menu.
+3. Under the **Windows Autopatch** section, select **Release management**.
+4. In the **Release management** blade, select either: **Pause** or **Resume**.
+5. Select the update type you would like to pause or resume.
+6. Select a reason from the dropdown menu.
+7. Optional. Enter details about why you're pausing or resuming the selected update.
+8. If you're resuming an update, you can select one or more deployment rings.
+9. Select **Okay**.
+
+> [!NOTE]
+> Pausing or resuming an update can take up to eight hours to be applied to devices. This happens because Windows Autopatch uses Microsoft Intune as its management solution, and that's the average frequency devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates.<p>For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).</p>
 
 ## Rollback
 
-Windows Autopatch doesn't support the rollback of feature updates.
+Windows Autopatch doesn’t support the rollback of Windows Feature updates.
 
-## Incidents and outages
+> [!CAUTION]
+> It’s not recommended to use [Microsoft Intune’s capabilities](/mem/intune/protect/windows-10-update-rings#manage-your-windows-update-rings) to pause and rollback a Windows feature update. However, if you choose to pause, resume and/or roll back from Intune, Windows Autopatch is **not** responsible for any problems that arise from rolling back the Windows feature update.
 
-If devices in your tenant don't meet the [service level objective](#service-level-objective) for Windows feature updates, Autopatch will raise an incident will be raised. The Windows Autopatch Service Engineering Team will work to bring those devices onto the latest version of Windows.
+## Contact support
 
-If you're experiencing other issues related to Windows feature updates, [submit a support request](../operate/windows-autopatch-support-request.md).
+If you’re experiencing issues related to Windows feature updates, you can [submit a support request](../operate/windows-autopatch-support-request.md). Email is the recommended approach to interact with the Windows Autopatch Service Engineering Team.
