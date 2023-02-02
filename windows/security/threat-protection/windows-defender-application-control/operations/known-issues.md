@@ -9,7 +9,7 @@ ms.reviewer: jogeurte
 ms.author: jogeurte
 ms.manager: jsuther
 manager: aaroncz
-ms.date: 07/01/2022
+ms.date: 02/02/2023
 ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
@@ -19,7 +19,6 @@ ms.localizationpriority: medium
 
 **Applies to:**
 
-
 - Windows 10
 - Windows 11
 - Windows Server 2016 and above
@@ -27,11 +26,11 @@ ms.localizationpriority: medium
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
-This topic covers tips and tricks for admins and known issues with Windows Defender Application Control (WDAC). Test this configuration in your lab before enabling it in production.
+This article covers tips and tricks for admins and known issues with Windows Defender Application Control (WDAC). Test this configuration in your lab before enabling it in production.
 
 ## Managed Installer and ISG will cause garrulous events
 
-When Managed Installer and ISG are enabled, 3091 and 3092 events will be logged when a file didn't have Managed Installer or ISG authorization, regardless of whether the file was allowed. Beginning with the September 2022 C release, these events will be moved to the verbose channel since the events don't indicate an issue with the policy.
+When Managed Installer and ISG are enabled, 3091 and 3092 events will be logged when a file didn't have Managed Installer or ISG authorization, regardless of whether the file was allowed. These events have been moved to the verbose channel beginning with the September 2022 Update Preview since the events don't indicate an issue with the policy.
 
 ## .NET native images may generate false positive block events
 
