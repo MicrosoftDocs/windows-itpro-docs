@@ -44,7 +44,7 @@ To create rules from the WDAC event logs on the system:
 2. Select **Convert Event Log to a WDAC Policy**
 3. Select the **Parse Event Logs** button under the Parse Event Logs from the "System Event Viewer to Policy" header
 
-The Wizard will parse the relevant audit and block events from the CodeIntegrity (WDAC) Operational and AppLocker MSI and Script logs. You will see a notification when the Wizard successfully finishes reading the events. 
+The Wizard will parse the relevant audit and block events from the CodeIntegrity (WDAC) Operational and AppLocker MSI and Script logs. You'll see a notification when the Wizard successfully finishes reading the events. 
 
 > [!div class="mx-imgBorder"]
 > ![Parse WDAC and AppLocker event log system events](images/wdac-wizard-event-log-system.png)
@@ -59,9 +59,9 @@ To create rules from the WDAC .EVTX event logs files on the system:
 1. Select **Policy Editor** from the WDAC Wizard main page
 2. Select **Convert Event Log to a WDAC Policy**
 3. Select the **Parse Log File(s)** button under the "Parse Event Log evtx Files to Policy" header
-4. Multi-select the .EVTX WDAC CodeIntegrity files from the disk to parse
+4. Select the .EVTX WDAC CodeIntegrity files from the disk to parse
 
-The Wizard will parse the relevant audit and block events from the selected log files. You will see a notification when the Wizard successfully finishes reading the events. 
+The Wizard will parse the relevant audit and block events from the selected log files. You'll see a notification when the Wizard successfully finishes reading the events. 
 
 > [!div class="mx-imgBorder"]
 > ![Parse evtx file WDAC events](images/wdac-wizard-event-log-files.png)
@@ -106,7 +106,7 @@ DeviceEvents
 3. Select **Policy Editor** from the WDAC Wizard main page
 4. Select **Convert Event Log to a WDAC Policy**
 5. Select the **Parse Log File(s)** button under the "Parse MDE Advanced Hunting Events to Policy" header
-6. Multi-select the .CSV WDAC MDE Advanced Hunting export files from the disk to parse
+6. Select the .CSV WDAC MDE Advanced Hunting export files from the disk to parse
 
 The Wizard will parse the relevant audit and block events from the selected Advanced Hunting log files. You will see a notification when the Wizard successfully finishes reading the events. 
 
@@ -119,7 +119,7 @@ The Wizard will parse the relevant audit and block events from the selected Adva
 
 ## Creating Policy Rules from the Events
 
-On the "Configure Event Log Rules" page, the unique WDAC log events will be shown in the table. Event Ids, filenames, product names, the policy name that audited or blocked the file, as well as the file publisher are all shown in the table. The table can be sorted alphabetically by clicking on any of the headers. 
+On the "Configure Event Log Rules" page, the unique WDAC log events will be shown in the table. Event Ids, filenames, product names, the policy name that audited or blocked the file, and the file publisher are all shown in the table. The table can be sorted alphabetically by clicking on any of the headers. 
 
 To create a rule and add it to the WDAC policy: 
 
