@@ -116,14 +116,14 @@ If Windows Autopatch detects a [significant issue with a release](../operate/win
 **To pause or resume a quality update:**
 
 1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Select **Devices** from the left navigation menu.
-1. Under the **Windows Autopatch** section, select **Release management**.
-1. In the **Release management** blade, select either: **Pause** or **Resume**.
-1. Select the update type you would like to pause or resume.
-1. Select a reason from the dropdown menu.
-1. Optional. Enter details about why you're pausing or resuming the selected update.
-1. If you're resuming an update, you can select one or more deployment rings.
-1. Select **Okay**.
+2. Select **Devices** from the left navigation menu.
+3. Under the **Windows Autopatch** section, select **Release management**.
+4. In the **Release management** blade, select either: **Pause** or **Resume**.
+5. Select the update type you would like to pause or resume.
+6. Select a reason from the dropdown menu.
+7. Optional. Enter details about why you're pausing or resuming the selected update.
+8. If you're resuming an update, you can select one or more deployment rings.
+9. Select **Okay**.
 
 There are two statuses associated with paused quality updates, **Service Paused** and **Customer Paused**.
 
