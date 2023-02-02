@@ -68,10 +68,10 @@
               href: wdac-wizard-create-supplemental-policy.md
             - name: Editing a WDAC policy with the Wizard
               href: wdac-wizard-editing-policy.md
-            - name: Merging multiple WDAC policies with the Wizard
-              href: wdac-wizard-merging-policies.md
             - name: Creating WDAC Policy Rules from WDAC Events
               href: wdac-wizard-parsing-event-logs.md
+            - name: Merging multiple WDAC policies with the Wizard
+              href: wdac-wizard-merging-policies.md
 - name: WDAC deployment guide
   href: windows-defender-application-control-deployment-guide.md
   items:
