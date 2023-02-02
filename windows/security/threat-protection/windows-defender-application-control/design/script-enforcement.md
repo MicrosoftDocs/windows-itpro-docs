@@ -38,7 +38,7 @@ Validation for signed scripts is done using the [WinVerifyTrust API](/windows/wi
 WDAC shares the *AppLocker - MSI and Script* event log for all script enforcement events. Whenever a script host asks WDAC if a script should be allowed, an event will be logged with the answer WDAC returned to the script host. For more information on WDAC script enforcement events, see [Understanding Application Control events](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#windows-applocker-msi-and-script-log).
 
 > [!NOTE]
-> When a script runs that is not allowed by policy, WDAC raises an event indicating that the script was "blocked". However, the actual script enforcement behavior is handled by the script host and may not actually completely block the file from running.
+> When a script runs that is not allowed by policy, WDAC raises an event indicating that the script was "blocked." However, the actual script enforcement behavior is handled by the script host and may not actually completely block the file from running.
 >
 > Also be aware that some script hosts may change how they behave even if a WDAC policy is in audit mode only. You should review the information below for each script host and test thoroughly within your environment to ensure the scripts you need to run are working properly.
 
