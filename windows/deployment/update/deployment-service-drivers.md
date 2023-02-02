@@ -318,7 +318,11 @@ Review all of the compliance changes to a policy with the most recent changes li
    > [!TIP]
    > There should only be one **Compliance Change ID** per **Catalog ID** for a policy. If there are multiple **Compliance Change IDs** for the same **Catalog ID** then, most likely, there's multiple deployments for the same piece of content targeted to the same audience but with different deployment behaviors. To remove the duplicate, [delete the compliance change](/graph/api/resources/windowsupdates-compliancechange-delete) with the duplicate **Catalog ID**. Deleting the compliance change will mark any deployments created by the approval as `archived`.
 
-### Edit a content approval 
+To retrieve the deployment ID, use the [expand parameter](/graph/query-parameters#expand-parameter) to review the deployment information related the content approval. The following example displays the content approval and the deployment information for **Compliance Change ID** `c03911a7-9876-5432-10ab-cdef98765432` in update **Policy ID** `9011c330-1234-5678-9abc-def012345678`:
+
+   `GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges/c03911a7-9876-5432-10ab-cdef98765432/$/microsoft.graph.windowsUpdates.contentApproval?$expand=deployments`
+
+### Edit deployment settings for a content approval
 
 Since content approval is a compliance change for the policy, when you [update a content approval](/graph/api/resources/windowsupdates--contentapproval-update), you're editing the compliance change for the policy. The following example changes the `startDateTime` for the **Compliance Change ID** of `c03911a7-9876-5432-10ab-cdef98765432` in the update **Policy ID** `9011c330-1234-5678-9abc-def012345678` to February 28, 2023 at 5 AM UTC:
 
@@ -336,13 +340,14 @@ PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011
 }
 ```
 
+
 ## Revoke content approval
 
 Approval for content can be revoked by setting the `isRevoked` property of the [compliance change](/graph/api/resources/windowsupdates-compliance) to true. This setting can be changed while a deployment is in progress. However, revoking will only prevent the content from being offered to devices if they haven't already received it. To resume offering the content, a new [approval](#approve-driver-content-for-deployment) will need to be created.
 
 
 ```http
-PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/d7a89208-17c5-4daf-a164-ce176b00e4ef/complianceChanges/dbf29574-ffd9-49cf-87f2-f03629e596ba
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges/c03911a7-9876-5432-10ab-cdef98765432
 Content-type: application/json
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
