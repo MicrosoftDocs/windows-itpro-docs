@@ -1,7 +1,7 @@
 ---
 title: Windows feature updates
 description: This article explains how Windows feature updates are managed in Autopatch
-ms.date: 02/01/2023
+ms.date: 02/02/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -14,10 +14,12 @@ msreviewer: andredm7
 
 # Windows feature updates
 
-Microsoft provides robust mobile device management (MDM) solutions such as Microsoft Intune, Windows Update for Business, Configuration Manager etc. However, the administration of these solutions to keep Windows devices up to date with the latest Windows feature releases rests on your organization’s IT admins. The Windows feature update process is considered one of the most expensive and time consuming tasks for IT since it requires incremental rollout and validation. Windows feature updates:
+Microsoft provides robust mobile device management (MDM) solutions such as Microsoft Intune, Windows Update for Business, Configuration Manager etc. However, the administration of these solutions to keep Windows devices up to date with the latest Windows feature releases rests on your organization’s IT admins. The Windows feature update process is considered one of the most expensive and time consuming tasks for IT since it requires incremental rollout and validation.
 
-- Keep Windows devices protected against behavioral issues.
-- Provide new features to boost end-user productivity.
+Windows feature updates consist of:
+
+- Keeping Windows devices protected against behavioral issues.
+- Providing new features to boost end-user productivity.
 
 Windows Autopatch makes it easier and less expensive for you to keep your Windows devices up to date so you can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
 
@@ -85,6 +87,18 @@ Windows Autopatch provides a permanent pause of a Windows feature update deploym
 
 > [!NOTE]
 > Pausing or resuming an update can take up to eight hours to be applied to devices. This happens because Windows Autopatch uses Microsoft Intune as its management solution, and that's the average frequency devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates.<p>For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).</p>
+
+### Pause statuses
+
+There are two statuses: **Service Paused** and **Customer Paused**.
+
+| Status | Description |
+| ----- | ------ |
+| Service Paused | If the Windows Autopatch service has paused an update, the release will have the **Service Paused** status. You must [submit a support request](windows-autopatch-support-request.md) to resume the update. |
+| Customer Paused | If you've paused an update, the release will have the **Customer Paused** status. The Windows Autopatch service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update. |
+
+> [!IMPORTANT]
+> Service pause is only available for [Windows Quality Updates](windows-autopatch-windows-quality-update-overview.md). Windows Autopatch does not pause Windows Feature Updates on behalf of your organization.
 
 ## Rollback
 
