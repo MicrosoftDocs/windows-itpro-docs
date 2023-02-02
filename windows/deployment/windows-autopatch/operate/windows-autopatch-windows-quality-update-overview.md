@@ -110,7 +110,20 @@ Windows Autopatch schedules and deploys required Out of Band (OOB) updates relea
 
 If Windows Autopatch detects a [significant issue with a release](../operate/windows-autopatch-windows-quality-update-signals.md), we may decide to pause that release.
 
-In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Release management** > in the **Release schedule** tab, you can pause or resume a Windows quality update.
+> [!IMPORTANT]
+> Pausing or resuming an update can take up to eight hours to be applied to devices, because Windows Autopatch uses Microsoft Intune as its management solution and that's the average frequency devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates.<p>For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).</p>
+
+**To pause or resume a quality update:**
+
+1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Select **Devices** from the left navigation menu.
+1. Under the **Windows Autopatch** section, select **Release management**.
+1. In the **Release management** blade, select either: **Pause** or **Resume**.
+1. Select the update type you would like to pause or resume.
+1. Select a reason from the dropdown menu.
+1. Optional. Enter details about why you're pausing or resuming the selected update.
+1. If you're resuming an update, you can select one or more deployment rings.
+1. Select **Okay**.
 
 There are two statuses associated with paused quality updates, **Service Paused** and **Customer Paused**.
 
