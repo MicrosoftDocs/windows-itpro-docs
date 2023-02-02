@@ -1,7 +1,7 @@
 ---
 title: Privacy
 description:  This article provides details about the data platform and privacy compliance for Autopatch
-ms.date: 11/08/2022
+ms.date: 02/02/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: reference
@@ -60,6 +60,11 @@ The diagnostic data terminology will change in future versions of Windows. Windo
 Windows Autopatch only processes and stores system-level data from Windows 10 optional diagnostic data that originates from enrolled devices such as application and device reliability, and performance information. Windows Autopatch doesn't process and store customers' data such as chat and browser history, voice, text, or speech data.
 
 For more information about the diagnostic data collection of Microsoft Windows 10, see the [Where we store and process data](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) section of the Microsoft Privacy Statement.
+
+For more information about how Windows diagnostic data is used, see:
+
+- [Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enable-windows-diagnostic-data-processor-configuration)
+- [Features that require Windows diagnostic data](/mem/intune/protect/data-enable-windows-data)
 
 ## Tenant access
 
