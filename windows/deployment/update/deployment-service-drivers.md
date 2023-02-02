@@ -129,7 +129,7 @@ To create a policy without any deployment settings, in the request body specify 
    }
    ```
 
-Response returning the policy, without any additional settings specified, that has a **Policy ID** of `9011c330-1234-5678-9abc-def012345678`:
+   Response returning the policy, without any additional settings specified, that has a **Policy ID** of `9011c330-1234-5678-9abc-def012345678`:
 
    ```json
    HTTP/1.1 202 Accepted
