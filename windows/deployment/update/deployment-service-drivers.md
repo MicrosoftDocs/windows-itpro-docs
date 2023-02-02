@@ -19,7 +19,7 @@ The Windows Update for Business deployment service is used to approve and schedu
 > [!div class="checklist"]
 >
 > - [Open Graph Explorer](#open-graph-explorer)
-> - [Run queries to identify test devices](#run-queries-to-identify-devices)
+> - [Run queries to identify devices](#run-queries-to-identify-devices)
 > - [Enroll devices](#enroll-devices)
 > - [Create a deployment audience and add audience members](#create-a-deployment-audience-and-add-audience-members)
 > - [Create an update policy](#create-an-update-policy)
