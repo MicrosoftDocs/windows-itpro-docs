@@ -117,7 +117,7 @@ Update policies define how content is deployed to a deployment audience. An [upd
 
 ### Create a policy and define the settings later
 
-   To create a policy without any deployment settings, in the request body specify the **Audience ID** as `id`. In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`, and the `id` given in the response is the **Policy ID**:
+To create a policy without any deployment settings, in the request body specify the **Audience ID** as `id`. In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`, and the `id` given in the response is the **Policy ID**:
 
    ```http
    POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
@@ -131,24 +131,24 @@ Update policies define how content is deployed to a deployment audience. An [upd
 
 Response returning the policy, without any additional settings specified, that has a **Policy ID** of `9011c330-1234-5678-9abc-def012345678`:
 
-```json
-HTTP/1.1 202 Accepted
-Content-type: application/json
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatePolicies/$entity",
-    "id": "9011c330-1234-5678-9abc-def012345678",
-    "createdDateTime": "2023-01-25T05:32:21.9721459Z",
-    "autoEnrollmentUpdateCategories": [],
-    "complianceChangeRules": [],
-    "deploymentSettings": {
-        "schedule": null,
-        "monitoring": null,
-        "contentApplicability": null,
-        "userExperience": null,
-        "expedite": null
-    }
-}
-```
+   ```json
+   HTTP/1.1 202 Accepted
+   Content-type: application/json
+   {
+       "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatePolicies/$entity",
+       "id": "9011c330-1234-5678-9abc-def012345678",
+       "createdDateTime": "2023-01-25T05:32:21.9721459Z",
+       "autoEnrollmentUpdateCategories": [],
+       "complianceChangeRules": [],
+       "deploymentSettings": {
+           "schedule": null,
+           "monitoring": null,
+           "contentApplicability": null,
+           "userExperience": null,
+           "expedite": null
+       }
+   }
+   ```
 
 ### Specify settings during policy creation
 
@@ -157,7 +157,7 @@ To create a policy with additional settings, in the request body:
   - Define any [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings).
   - You may need to add the `content-length` header to the request. The value should be the length of the request body in bytes.
 
-   In the following driver update policy example, any deployments created by a content approval will start in 7 days after approval and will gradually roll out to 1000 devices per day for  **Audience ID** `d39ad1ce-0123-4567-89ab-cdef01234567`:
+   In the following driver update policy example, any deployments created by a content approval will start 7 days after approval and will gradually roll out to 1000 devices per day for **Audience ID** `d39ad1ce-0123-4567-89ab-cdef01234567`:
 
    ```http
    POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
