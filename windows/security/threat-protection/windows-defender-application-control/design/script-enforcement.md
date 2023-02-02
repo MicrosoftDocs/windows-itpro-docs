@@ -9,7 +9,7 @@ ms.reviewer: jogeurte
 ms.author: jogeurte
 ms.manager: jsuther
 manager: aaroncz
-ms.date: 11/02/2022
+ms.date: 02/02/2023
 ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
@@ -26,13 +26,18 @@ ms.localizationpriority: medium
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
+> [!IMPORTANT]
+> Option **11 Disabled:Script Enforcement** is not supported on **Windows Server 2016** and should not be used on that platform. Doing so may result in unexpected script enforcement behaviors.
+
 ## Script enforcement overview
 
 By default, script enforcement is enabled for all WDAC policies unless the option **11 Disabled:Script Enforcement** is set in the policy. WDAC script enforcement involves a handshake between an enlightened script host, such as PowerShell, and WDAC. The actual enforcement behavior, however, is handled entirely by the script host. Some script hosts, like the Microsoft HTML Application Host (mshta.exe), simply block all code execution if any WDAC UMCI policy is active. Most script hosts first ask WDAC whether a script should be allowed to run based on the WDAC policies currently active. The script host then either blocks, allows, or changes *how* the script is run to best protect the user and the device.
 
+Validation for signed scripts is done using the [WinVerifyTrust API](/windows/win32/api/wintrust/nf-wintrust-winverifytrust). To pass validation, the signature root must be present in the trusted root store on the device and be allowed by your WDAC policy. This behavior is different from WDAC validation for executable files, which doesn't require installation of the root certificate.
+
 WDAC shares the *AppLocker - MSI and Script* event log for all script enforcement events. Whenever a script host asks WDAC if a script should be allowed, an event will be logged with the answer WDAC returned to the script host. For more information on WDAC script enforcement events, see [Understanding Application Control events](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#windows-applocker-msi-and-script-log).
 
-> [!IMPORTANT]
+> [!NOTE]
 > When a script runs that is not allowed by policy, WDAC raises an event indicating that the script was "blocked". However, the actual script enforcement behavior is handled by the script host and may not actually completely block the file from running.
 >
 > Also be aware that some script hosts may change how they behave even if a WDAC policy is in audit mode only. You should review the information below for each script host and test thoroughly within your environment to ensure the scripts you need to run are working properly.
@@ -43,7 +48,7 @@ WDAC shares the *AppLocker - MSI and Script* event log for all script enforcemen
 
 All PowerShell scripts (.ps1), modules (.psm1), and manifests (.psd1) must be allowed by WDAC policy in order to run with Full Language rights.
 
-Any **dependent modules** that are loaded by an allowed module must also be allowed by WDAC policy, and module functions must be exported explicitly by name when WDAC is enforced. Modules that do not specify any exported functions (no export name list) will still load but no module functions will be accessible. Modules that use wildcards (\*) in their name will fail to load.
+Any **dependent modules** that are loaded by an allowed module must also be allowed by WDAC policy, and module functions must be exported explicitly by name when WDAC is enforced. Modules that don't specify any exported functions (no export name list) will still load but no module functions will be accessible. Modules that use wildcards (\*) in their name will fail to load.
 
 Any PowerShell script that isn't allowed by WDAC policy will still run, but only in Constrained Language Mode.
 

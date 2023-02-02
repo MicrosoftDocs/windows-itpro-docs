@@ -1,6 +1,6 @@
 ---
 title: Using Event Viewer with AppLocker (Windows)
-description: This topic lists AppLocker events and describes how to use Event Viewer with AppLocker.
+description: This article lists AppLocker events and describes how to use Event Viewer with AppLocker.
 ms.assetid: 109abb10-78b1-4c29-a576-e5a17dfeb916
 ms.reviewer: 
 ms.author: vinpa
@@ -14,7 +14,7 @@ manager: aaroncz
 audience: ITPro
 ms.topic: conceptual
 ms.technology: itpro-security
-ms.date: 12/31/2017
+ms.date: 02/02/2023
 ---
 
 # Using Event Viewer with AppLocker
@@ -28,7 +28,7 @@ ms.date: 12/31/2017
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
-This topic lists AppLocker events and describes how to use Event Viewer with AppLocker.
+This article lists AppLocker events and describes how to use Event Viewer with AppLocker.
 
 The AppLocker log contains information about applications that are affected by AppLocker rules. Each event in the log contains detailed info about:
 
@@ -43,10 +43,13 @@ Review the entries in the Event Viewer to determine if any applications aren't i
 
 For info about what to look for in the AppLocker event logs, see [Monitor app usage with AppLocker](monitor-application-usage-with-applocker.md).
 
+> [!NOTE]
+> The AppLocker event logs are very verbose and can result in a large number of events depending on the policies deployed, particularly in the *AppLocker - EXE and DLL* event log. If you're using an event forwarding and collection service, like LogAnalytics, you may want to adjust the configuration for that event log to only collect Error events or stop collecting events from that log altogether.
+
 **To review the AppLocker log in Event Viewer**
 
 1.  Open Event Viewer.
-2.  In the console tree under **Application and Services Logs\\Microsoft\\Windows**, click **AppLocker**.
+2.  In the console tree under **Application and Services Logs\\Microsoft\\Windows**, select **AppLocker**.
 
 The following table contains information about the events that you can use to determine which apps are affected by AppLocker rules.
 
@@ -83,7 +86,7 @@ The following table contains information about the events that you can use to de
 | 8040 | Error | Package family name * version * was prevented from installing or updating due to Config CI policy | Added in Windows Server 2016 and Windows 10.|
 
  
-## Related topics
+## Related articles
 
 - [Tools to use with AppLocker](tools-to-use-with-applocker.md)
  
