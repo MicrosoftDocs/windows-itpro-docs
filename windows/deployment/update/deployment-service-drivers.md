@@ -129,6 +129,27 @@ Update policies define how content is deployed to a deployment audience. An [upd
    }
    ```
 
+Response returning the policy, without any additional settings specified, that has a **Policy ID** of `9011c330-1234-5678-9abc-def012345678`:
+
+```json
+HTTP/1.1 202 Accepted
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatePolicies/$entity",
+    "id": "9011c330-1234-5678-9abc-def012345678",
+    "createdDateTime": "2023-01-25T05:32:21.9721459Z",
+    "autoEnrollmentUpdateCategories": [],
+    "complianceChangeRules": [],
+    "deploymentSettings": {
+        "schedule": null,
+        "monitoring": null,
+        "contentApplicability": null,
+        "userExperience": null,
+        "expedite": null
+    }
+}
+```
+
 ### Specify settings during policy creation
 
 To create a policy with additional settings, in the request body:
@@ -136,7 +157,7 @@ To create a policy with additional settings, in the request body:
   - Define any additional [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings).
   - You may need to add the `content-length` header to the request. The value should be the length of the request body in bytes.
 
-   In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`:
+   In the following driver update policy example, any deployments created by a content approval will start in 7 days after approval and will gradually roll out to 1000 devices per day for  **Audience ID** `d39ad1ce-0123-4567-89ab-cdef01234567`:
 
    ```http
    POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
@@ -174,27 +195,6 @@ To create a policy with additional settings, in the request body:
    }
    ```
 
-
-Response returning the policy, without any additional settings specified, that has a **Policy ID** of `9011c330-1234-5678-9abc-def012345678`:
-
-```json
-HTTP/1.1 202 Accepted
-Content-type: application/json
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatePolicies/$entity",
-    "id": "9011c330-1234-5678-9abc-def012345678",
-    "createdDateTime": "2023-01-25T05:32:21.9721459Z",
-    "autoEnrollmentUpdateCategories": [],
-    "complianceChangeRules": [],
-    "deploymentSettings": {
-        "schedule": null,
-        "monitoring": null,
-        "contentApplicability": null,
-        "userExperience": null,
-        "expedite": null
-    }
-}
-```
 
 ### Review and edit update policy settings
 
@@ -290,8 +290,6 @@ Content-type: application/json
     }
 }
 ```
-
-
 
 Review the compliance changes to a policy with the most recent changes listed in the response first. The following example returns the compliance changes for a policy with the **Policy ID** `9011c330-1234-5678-9abc-def012345678` and sorts by `createdDateTime` in descending order:
 
