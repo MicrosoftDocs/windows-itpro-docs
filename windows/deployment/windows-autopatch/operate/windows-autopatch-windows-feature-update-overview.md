@@ -1,7 +1,7 @@
 ---
 title: Windows feature updates
 description: This article explains how Windows feature updates are managed in Autopatch
-ms.date: 02/01/2023
+ms.date: 02/02/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -14,10 +14,12 @@ msreviewer: andredm7
 
 # Windows feature updates
 
-Microsoft provides robust mobile device management (MDM) solutions such as Microsoft Intune, Windows Update for Business, Configuration Manager etc. However, the administration of these solutions to keep Windows devices up to date with the latest Windows feature releases rests on your organization’s IT admins. The Windows feature update process is considered one of the most expensive and time consuming tasks for IT since it requires incremental rollout and validation. Windows feature updates:
+Microsoft provides robust mobile device management (MDM) solutions such as Microsoft Intune, Windows Update for Business, Configuration Manager etc. However, the administration of these solutions to keep Windows devices up to date with the latest Windows feature releases rests on your organization’s IT admins. The Windows feature update process is considered one of the most expensive and time consuming tasks for IT since it requires incremental rollout and validation.
 
-- Keep Windows devices protected against behavioral issues.
-- Provide new features to boost end-user productivity.
+Windows feature updates consist of:
+
+- Keeping Windows devices protected against behavioral issues.
+- Providing new features to boost end-user productivity.
 
 Windows Autopatch makes it easier and less expensive for you to keep your Windows devices up to date so you can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
 
@@ -71,7 +73,10 @@ Windows Autopatch provides a permanent pause of a Windows feature update deploym
 
 ## Pausing and resuming a release
 
-**To pause or resume a feature update:**
+> [!IMPORTANT]
+> Pausing or resuming an update can take up to eight hours to be applied to devices. Windows Autopatch uses Microsoft Intune as its management solution and that's the average frequency devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates.<p>For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).</p>
+
+**To pause or resume a Windows feature update:**
 
 1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** from the left navigation menu.
@@ -83,8 +88,10 @@ Windows Autopatch provides a permanent pause of a Windows feature update deploym
 8. If you're resuming an update, you can select one or more deployment rings.
 9. Select **Okay**.
 
+If you've paused an update, the specified release will have the **Customer Paused** status. The Windows Autopatch service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update.
+
 > [!NOTE]
-> Pausing or resuming an update can take up to eight hours to be applied to devices. This happens because Windows Autopatch uses Microsoft Intune as its management solution, and that's the average frequency devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates.<p>For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).</p>
+> The Service Paused status only applies to [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release). Windows Autopatch doesn't pause Windows feature updates on your behalf.
 
 ## Rollback
 
