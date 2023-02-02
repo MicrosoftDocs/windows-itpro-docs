@@ -56,4 +56,4 @@ Autopatch monitors the following reliability signals:
 | Microsoft Edge reliability | Tracks the number of Microsoft Edge crashes and freezes per device. |
 | Microsoft Teams reliability | Tracks the number of Microsoft Teams crashes and freezes per device. |
 
-When the update is released to the First ring, the service crosses the 500 device threshold. Therefore, Autopatch can to detect regressions, which are common to all customers. At this point in the release, we'll decide if we need to change the release schedule or pause for all customers.
+When the update is released to the First ring, the service crosses the 500 device threshold. Therefore, Autopatch can detect regressions that are common to all customers. At this point in the release, we'll decide if we need to change the release schedule or pause for all customers.
