@@ -196,7 +196,7 @@ Content-type: application/json
 }
 ```
 
-### Review and edit policy settings
+### Review and edit update policy settings
 
 To review the policy settings, run the following query using the **Policy ID**, for example `9011c330-1234-5678-9abc-def012345678`:
 
@@ -226,7 +226,6 @@ To edit the policy settings, **PATCH** the policy using the **Policy ID**. Run t
       }
 }
 ```
-
 
 
 ## Review applicable driver content
