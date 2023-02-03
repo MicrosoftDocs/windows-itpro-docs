@@ -55,7 +55,7 @@ Azure AD groups synced up from:
 > It isn't recommended to sync Configuration Manager collections straight to the **Windows Autopatch Device Registration** Azure AD group. Use a different Azure AD group when syncing Configuration Manager collections to Azure AD groups then you can nest this or these groups into the **Windows Autopatch Device Registration** Azure AD group.
 
 > [!IMPORTANT]
-> The **Windows Autopatch Device Registration** Azure AD group only supports one level of Azure AD nested groups.
+> The **Windows Autopatch Device Registration** Azure AD group only supports **one level** of Azure AD nested groups.
 
 ### Clean up dual state of Hybrid Azure AD joined and Azure registered devices in your Azure AD tenant
 
