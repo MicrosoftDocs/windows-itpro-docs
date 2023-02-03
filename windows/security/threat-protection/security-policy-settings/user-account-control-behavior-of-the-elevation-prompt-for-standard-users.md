@@ -78,7 +78,7 @@ One of the risks that the UAC feature tries to mitigate is that of malicious pro
 
 ### Countermeasure
 
-Configure the **User Account Control: Behavior of the elevation prompt for standard users** to **Automatically deny elevation requests**. This setting requires the user to sign in with an administrative account to run programs that require elevation of privilege. As a security best practice, standard users shouldn't have knowledge of administrative passwords. However, if your users have both standard and administrator-level accounts, we recommend setting **Prompt for credentials** so that the users don't choose to always sign in with their administrator accounts, and they shift their behavior to use the standard user account.
+Configure the **User Account Control: Behavior of the elevation prompt for standard users** to **Automatically deny elevation requests**. This setting requires the user to sign in with an administrative account to run programs that require elevation of privilege. As a security best practice, standard users shouldn't have knowledge of administrative passwords. However, if your users have both standard and administrator-level accounts, we recommend setting **Prompt for credentials on the secure desktop** so that the users don't choose to always sign in with their administrator accounts, and they shift their behavior to use the standard user account.
 
 ### Potential impact
 
