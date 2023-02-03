@@ -228,7 +228,7 @@ sections:
           How do I open a support ticket for Microsoft Defender Application Guard?
         answer: |
          [Create a new support request](https://support.serviceshub.microsoft.com/supportforbusiness/create).
-         Under the Product Family, select Windows. Select the product and the product version you need help with. For the category that best desribes the issue, select, 'Windows Security Tecnologies'. In the final option, select, 'Windows Defender Application Guard'.
+         Under the Product Family, select Windows. Select the product and the product version you need help with. For the category that best describes the issue, select, **Windows Security Technologies**. In the final option, select **Windows Defender Application Guard**.
 
 additionalContent: |
 
