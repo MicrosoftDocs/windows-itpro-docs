@@ -39,9 +39,6 @@ Windows Autopatch automatically runs its discover devices function every hour to
 > [!NOTE]
 > Devices that are intended to be managed by the Windows Autopatch service **must** be added into the **Windows Autopatch Device Registration** Azure AD assigned group. Devices can only be added to this group if they have an Azure AD device ID. Windows Autopatch scans the Azure AD group hourly to discover newly added devices to be registered. You can also use the **Discover devices** button in either the **Ready** or **Not ready** tab to register devices on demand.
 
-> [!IMPORTANT]
-> Windows Autopatch supports only one level of group-nesting in the **Windows Autopatch Device Registration** Azure AD group.
-
 #### Supported scenarios when nesting other Azure AD groups
 
 Windows Autopatch also supports the following Azure AD nested group scenarios:
