@@ -51,7 +51,7 @@ As long as a device remains enrolled in feature update management, the device do
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-enroll-device-graph-explorer.md)]
 
 
-## Remove device enrollment
+## Unenroll devices
 
 <!--Using include for removing device enrollment-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-graph-unenroll.md)]

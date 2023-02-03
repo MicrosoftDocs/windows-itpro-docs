@@ -244,7 +244,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d
 
 The following truncated response displays:
   - An **Azure AD ID** of `01234567-89ab-cdef-0123-456789abcdef`
-  - The **Catalog ID** of `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d`
+  - The **Catalog ID** of `5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c`
 
       ```json
       "matchedDevices": [
@@ -257,7 +257,17 @@ The following truncated response displays:
       ],
       "catalogEntry": {
           "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateCatalogEntry",
-          "id": "1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d",
+          "id": "5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c",
+          "displayName": "Microsoft - Test - 1.0.0.1",
+          "deployableUntilDateTime": null,
+          "releaseDateTime": "0001-01-21T04:18:32Z",
+          "description": "Microsoft test driver update released in January 2021",
+          "driverClass": "OtherHardware",
+          "provider": "Microsoft",
+          "setupInformationFile": null,
+          "manufacturer": "Microsoft",
+          "version": "1.0.0.1",
+          "versionDateTime": "2021-01-11T02:43:14Z"
       ```
 
 ## Approve driver content for deployment
@@ -267,7 +277,7 @@ Each driver update is associated with a unique [catalog entry](/graph/api/resour
 > [!IMPORTANT]
 > Any [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings) configured for the content approval will be combined with the existing [update policy's](#create-an-update-policy) deployment settings. If the content approval and update policy specify the same deployment setting, the setting from the content approval is used.
 
-Add a content approval to an existing policy, **Policy ID** `9011c330-1234-5678-9abc-def012345678` for the driver update with the **Catalog ID** `1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d`. Schedule the start date for February 14, 2023 at 1 AM UTC:
+Add a content approval to an existing policy, **Policy ID** `9011c330-1234-5678-9abc-def012345678` for the driver update with the **Catalog ID** `5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c`. Schedule the start date for February 14, 2023 at 1 AM UTC:
 
 ```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges
@@ -279,7 +289,7 @@ Content-type: application/json
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
         "catalogEntry": {
             "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateCatalogEntry",
-            "id": "1d082682ff38a3a885cefd68ec6ab3782be3dc31d156c9e5c6fd3dc55cbd839d"
+            "id": "5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c"
         }
     },
     "deploymentSettings": {
@@ -355,7 +365,7 @@ Content-type: application/json
 }
 ```
 
-## Remove device enrollment
+## Unenroll device
 
 <!--Using include for removing device enrollment-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-graph-unenroll.md)]

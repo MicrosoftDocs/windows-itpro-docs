@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ---
 <!--This file is shared by deployment-service-drivers.md and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
 
-You enroll devices based on the types of updates you want them to recieve.Currently, you can enroll devices to receive feature updates (`feature`) or drivers (`driver`). You can enroll devices to receive updates from multiple update classifications.
+You enroll devices based on the types of updates you want them to receive. Currently, you can enroll devices to receive feature updates (`feature`) or drivers (`driver`). You can enroll devices to receive updates from multiple update classifications.
 
 1. To enroll devices, POST to [updatableAssets](/graph/api/resources/windowsupdates-updatableasset) using [enrollAssets](/graph/api/windowsupdates-updatableasset-enrollassets). The following example enrolls three devices to receive driver updates:
    1. In Graph Explorer, select **POST** from the drop-down list for the HTTP verb.
