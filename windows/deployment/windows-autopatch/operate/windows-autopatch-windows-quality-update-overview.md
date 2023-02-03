@@ -88,7 +88,7 @@ By default, the service expedites quality updates as needed. For those organizat
 
 **To turn off service-driven expedited quality updates:**
 
-1. Go to **[Microsoft Endpoint Manager portal](https://go.microsoft.com/fwlink/?linkid=2109431)** > **Devices**.
+1. Go to **[Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)** > **Devices**.
 2. Under **Windows Autopatch** > **Release management**, go to the **Release settings** tab and turn off the **Expedited Quality Updates** setting.
 
 > [!NOTE]
@@ -100,7 +100,7 @@ Windows Autopatch schedules and deploys required Out of Band (OOB) updates relea
 
 **To view deployed Out of Band quality updates:**
 
-1. Go to [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > **Windows Autopatch** > **Release management**.
+1. Go to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > **Windows Autopatch** > **Release management**.
 2. Under the **Release Announcements** tab, you can view the knowledge base (KB) articles corresponding to deployed OOB and regular Windows quality updates.
 
 > [!NOTE]
@@ -115,7 +115,7 @@ If Windows Autopatch detects a [significant issue with a release](../operate/win
 
 **To pause or resume a Windows quality update:**
 
-1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** from the left navigation menu.
 3. Under the **Windows Autopatch** section, select **Release management**.
 4. In the **Release management** blade, select either: **Pause** or **Resume**.
