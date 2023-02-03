@@ -9,7 +9,7 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
-ms.date: 08/01/2022
+ms.date: 02/03/2023
 ---
 
 # Policies in Policy CSP supported by HoloLens 2
@@ -31,7 +31,20 @@ ms.date: 08/01/2022
 - [Browser/AllowSearchSuggestionsinAddressBar](policy-csp-browser.md#allowsearchsuggestionsinaddressbar)
 - [Browser/AllowSmartScreen](policy-csp-browser.md#allowsmartscreen)
 - [Connectivity/AllowBluetooth](policy-csp-connectivity.md#allowbluetooth)
+- [Connectivity/AllowConnectedDevices](policy-csp-connectivity.md#allowconnecteddevices)
 - [Connectivity/AllowUSBConnection](policy-csp-connectivity.md#allowusbconnection)
+- [DeliveryOptimization/DOCacheHost](policy-csp-deliveryoptimization.md#docachehost) <sup>10</sup>
+- [DeliveryOptimization/DOCacheHostSource](policy-csp-deliveryoptimization.md#docachehostsource) <sup>10</sup>
+- [DeliveryOptimization/DODelayCacheServerFallbackBackground](policy-csp-deliveryoptimization.md#dodelaycacheserverfallbackbackground) <sup>10</sup>
+- [DeliveryOptimization/DODelayCacheServerFallbackForeground](policy-csp-deliveryoptimization.md#dodelaycacheserverfallbackforeground) <sup>10</sup>
+- [DeliveryOptimization/DODownloadMode](policy-csp-deliveryoptimization.md#dodownloadmode) <sup>10</sup>
+- [DeliveryOptimization/DOMaxBackgroundDownloadBandwidth](policy-csp-deliveryoptimization.md#domaxbackgrounddownloadbandwidth) <sup>10</sup>
+- [DeliveryOptimization/DOMaxForegroundDownloadBandwidth](policy-csp-deliveryoptimization.md#domaxforegrounddownloadbandwidth) <sup>10</sup>
+- [DeliveryOptimization/DOPercentageMaxBackgroundBandwidth](policy-csp-deliveryoptimization.md#dopercentagemaxbackgroundbandwidth) <sup>10</sup>
+- [DeliveryOptimization/DOPercentageMaxForegroundBandwidth](policy-csp-deliveryoptimization.md#dopercentagemaxforegroundbandwidth) <sup>10</sup>
+- [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](policy-csp-deliveryoptimization.md#dosethourstolimitforegrounddownloadbandwidth) <sup>10</sup>
+- [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](policy-csp-deliveryoptimization.md#dosethourstolimitbackgrounddownloadbandwidth) <sup>10</sup>
+- [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](policy-csp-deliveryoptimization.md#dosethourstolimitbackgrounddownloadbandwidth) <sup>10</sup>
 - [DeviceLock/AllowIdleReturnWithoutPassword](policy-csp-devicelock.md#allowidlereturnwithoutpassword)
 - [DeviceLock/AllowSimpleDevicePassword](policy-csp-devicelock.md#allowsimpledevicepassword)
 - [DeviceLock/AlphanumericDevicePasswordRequired](policy-csp-devicelock.md#alphanumericdevicepasswordrequired)
@@ -44,7 +57,8 @@ ms.date: 08/01/2022
 - [DeviceLock/MinDevicePasswordLength](policy-csp-devicelock.md#mindevicepasswordlength)
 - [Experience/AllowCortana](policy-csp-experience.md#allowcortana)
 - [Experience/AllowManualMDMUnenrollment](policy-csp-experience.md#allowmanualmdmunenrollment)
-- [MixedReality/AADGroupMembershipCacheValidityInDays](policy-csp-mixedreality.md#aadgroupmembershipcachevalidityindays)
+- [MemoryDump/AllowCrashDump](policy-csp-memorydump.md#allowcrashdump)
+- [MemoryDump/AllowLivehDump](policy-csp-memorydump.md#allowlivedump)
 - [MixedReality/AADGroupMembershipCacheValidityInDays](./policy-csp-mixedreality.md#aadgroupmembershipcachevalidityindays) <sup>9</sup>
 - [MixedReality/AllowCaptivePortalBeforeLogon](./policy-csp-mixedreality.md#allowcaptiveportalbeforelogon) <sup>12</sup>
 - [MixedReality/AllowLaunchUriInSingleAppKiosk](./policy-csp-mixedreality.md#allowlaunchuriinsingleappkiosk)<sup>10</sup>
@@ -78,6 +92,7 @@ ms.date: 08/01/2022
 - [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessbackgroundspatialperception_forceallowtheseapps)
 - [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessbackgroundspatialperception_forcedenytheseapps)
 - [Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccessbackgroundspatialperception_userincontroloftheseapps)
+- [Privacy/LetAppsAccessCamera](policy-csp-privacy.md#letappsaccesscamera)
 - [Privacy/LetAppsAccessCamera_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccesscamera_forceallowtheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessCamera_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccesscamera_forcedenytheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessCamera_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccesscamera_userincontroloftheseapps) <sup>8</sup>
@@ -85,13 +100,11 @@ ms.date: 08/01/2022
 - [Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessgazeinput_forceallowtheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessgazeinput_forcedenytheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccessgazeinput_userincontroloftheseapps) <sup>8</sup>
-- [Privacy/LetAppsAccessCamera](policy-csp-privacy.md#letappsaccesscamera)
 - [Privacy/LetAppsAccessLocation](policy-csp-privacy.md#letappsaccesslocation)
 - [Privacy/LetAppsAccessMicrophone](policy-csp-privacy.md#letappsaccessmicrophone)
 - [Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessmicrophone_forceallowtheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessmicrophone_forcedenytheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccessmicrophone_userincontroloftheseapps) <sup>8</sup>
-- [RemoteLock/Lock](./remotelock-csp.md) <sup>9</sup>
 - [Search/AllowSearchToUseLocation](policy-csp-search.md#allowsearchtouselocation)
 - [Security/AllowAddProvisioningPackage](policy-csp-security.md#allowaddprovisioningpackage) <sup>9</sup>
 - [Security/AllowRemoveProvisioningPackage](policy-csp-security.md#allowremoveprovisioningpackage) <sup>9</sup>
@@ -105,9 +118,15 @@ ms.date: 08/01/2022
 - [Storage/ConfigStorageSenseDownloadsCleanupThreshold](policy-csp-storage.md#configstoragesensedownloadscleanupthreshold) <sup>12</sup>
 - [Storage/ConfigStorageSenseGlobalCadence](policy-csp-storage.md#configstoragesenseglobalcadence) <sup>12</sup>
 - [System/AllowCommercialDataPipeline](policy-csp-system.md#allowcommercialdatapipeline)
+- [System/AllowDeviceNameInDiagnosticData](policy-csp-system.md#allowdevicenameindiagnosticdata)
 - [System/AllowLocation](policy-csp-system.md#allowlocation)
 - [System/AllowStorageCard](policy-csp-system.md#allowstoragecard)
 - [System/AllowTelemetry](policy-csp-system.md#allowtelemetry)
+- [System/ConfigureTelemetryOptInSettingsUx](policy-csp-system.md#configuretelemetryoptinsettingsux)
+- [System/DisableDeviceDelete](policy-csp-system.md#disabledevicedelete)
+- [System/FeedbackHubAlwaysSaveDiagnosticsLocally](policy-csp-system.md#feedbackhubalwayssavediagnosticslocally)
+- [System/LimitDiagnosticLogCollection](policy-csp-system.md#limitdumpcollection)
+- [System/LimitDumpCollection](policy-csp-system.md#limitdumpcollection)
 - [TimeLanguageSettings/ConfigureTimeZone](./policy-csp-timelanguagesettings.md#configuretimezone) <sup>9</sup>
 - [Update/ActiveHoursEnd](./policy-csp-update.md#activehoursend) <sup>9</sup>
 - [Update/ActiveHoursMaxRange](./policy-csp-update.md#activehoursmaxrange) <sup>9</sup>
