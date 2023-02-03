@@ -20,8 +20,8 @@ Keeping your devices up to date is a balance of speed and stability. Windows Aut
 
 | Software update workload | Description |
 | ----- | ----- |
-| Windows quality update | Windows Autopatch uses four deployment rings to manage Windows quality updates. For more detailed information, see [Windows quality updates](../operate/windows-autopatch-wqu-overview.md). |
-| Windows feature update | Windows Autopatch uses four deployment rings to manage Windows feature updates. For more detailed information, see [Windows feature updates](windows-autopatch-fu-overview.md).
+| Windows quality update | Windows Autopatch uses four deployment rings to manage Windows quality updates. For more detailed information, see [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md). |
+| Windows feature update | Windows Autopatch uses four deployment rings to manage Windows feature updates. For more detailed information, see [Windows feature updates](windows-autopatch-windows-feature-update-overview.md).
 | Anti-virus definition | Updated with each scan. |
 | Microsoft 365 Apps for enterprise | For more information, see [Microsoft 365 Apps for enterprise](windows-autopatch-microsoft-365-apps-enterprise.md). |
 | Microsoft Edge | For more information, see [Microsoft Edge](../operate/windows-autopatch-edge.md). |

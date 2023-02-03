@@ -38,8 +38,8 @@ The following information is available in the All devices report:
 | Azure Active Directory (AD) device ID | The current Azure AD recorded device ID for the device. |
 | Serial number | The current Intune recorded serial number for the device. |
 | Deployment ring | The currently assigned Windows Autopatch deployment ring for the device. |
-| Update status | The current update status for the device (see [Windows quality update statuses](windows-autopatch-wqu-reports-overview.md#windows-quality-update-statuses)). |
-| Update sub status | The current update sub status for the device (see [Windows quality update statuses](windows-autopatch-wqu-reports-overview.md#windows-quality-update-statuses)) |
+| Update status | The current update status for the device (see [Windows quality update statuses](windows-autopatch-windows-quality-update-reports-overview.md#windows-quality-update-statuses)). |
+| Update sub status | The current update sub status for the device (see [Windows quality update statuses](windows-autopatch-windows-quality-update-reports-overview.md#windows-quality-update-statuses)) |
 | OS version | The current version of Windows installed on the device. |
 | OS revision | The current revision of Windows installed on the device. |
 | Intune last check in time | The last time the device checked in to Intune. |
