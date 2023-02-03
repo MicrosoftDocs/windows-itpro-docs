@@ -19,6 +19,7 @@ ms.date: 02/03/2023
 - [ApplicationManagement/AllowAppStoreAutoUpdate](policy-csp-applicationmanagement.md#allowappstoreautoupdate)
 - [ApplicationManagement/AllowDeveloperUnlock](policy-csp-applicationmanagement.md#allowdeveloperunlock)
 - [ApplicationManagement/RequirePrivateStoreOnly](policy-csp-applicationmanagement.md#requireprivatestoreonly) <sup>11</sup>
+- [ApplicationManagement/ScheduleForceRestartForUpdateFailures](policy-csp-applicationmanagement.md#smart-retry-for-app-updates)
 - [Authentication/AllowFastReconnect](policy-csp-authentication.md#allowfastreconnect)
 - [Authentication/PreferredAadTenantDomainName](policy-csp-authentication.md#preferredaadtenantdomainname)
 - [Bluetooth/AllowDiscoverableMode](policy-csp-bluetooth.md#allowdiscoverablemode)
