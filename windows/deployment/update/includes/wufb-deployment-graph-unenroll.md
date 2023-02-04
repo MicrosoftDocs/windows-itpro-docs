@@ -40,4 +40,3 @@ Content-Type: application/json
   ]
 }
 ```
-

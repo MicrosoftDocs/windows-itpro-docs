@@ -103,7 +103,9 @@ When you enroll devices into driver management, the deployment service becomes t
 
 1. To verify the devices were added to the audience, run the following query using the **Audience ID**:
 
-   `GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/members`
+   ```http
+   GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/members
+   ```
 
 Once a device has been enrolled and added to a deployment audience, the Windows Update for Business deployment service will start collecting scan results from Windows Update to build a catalog of applicable drivers to be browsed, approved, and scheduled for deployment.
 
@@ -129,12 +131,12 @@ To create a policy without any deployment settings, in the request body specify 
    }
    ```
 
-   Response returning the policy, without any additional settings specified, that has a **Policy ID** of `9011c330-1234-5678-9abc-def012345678`:
+Response returning the policy, without any additional settings specified, that has a **Policy ID** of `9011c330-1234-5678-9abc-def012345678`:
 
-   ```json
-   HTTP/1.1 202 Accepted
-   Content-type: application/json
-   {
+     ```json
+     HTTP/1.1 202 Accepted
+     Content-type: application/json
+     {
        "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatePolicies/$entity",
        "id": "9011c330-1234-5678-9abc-def012345678",
        "createdDateTime": "2023-01-25T05:32:21.9721459Z",
@@ -147,8 +149,8 @@ To create a policy without any deployment settings, in the request body specify 
            "userExperience": null,
            "expedite": null
        }
-   }
-   ```
+     }
+     ```
 
 ### Specify settings during policy creation
 
@@ -200,7 +202,9 @@ To create a policy with additional settings, in the request body:
 
 To review the policy settings, run the following query using the **Policy ID**, for example `9011c330-1234-5678-9abc-def012345678`:
 
-   `GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678`
+   ```http
+    GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678
+   ```
 
 To edit the policy settings, **PATCH** the policy using the **Policy ID**. Run the following **PATCH** to automatically approve driver content that's recommended by `Microsoft`for deployment for **Policy ID** `9011c330-1234-5678-9abc-def012345678`:
 
@@ -244,7 +248,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d
 
 The following truncated response displays:
   - An **Azure AD ID** of `01234567-89ab-cdef-0123-456789abcdef`
-  - The **Catalog ID** of `5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c`
+  - The **Catalog ID** of `5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c`  
 
       ```json
       "matchedDevices": [
@@ -323,14 +327,18 @@ The response for a content approval returns content and deployment settings alon
 
 Review all of the compliance changes to a policy with the most recent changes listed in the response first. The following example returns the compliance changes for a policy with the **Policy ID** `9011c330-1234-5678-9abc-def012345678` and sorts by `createdDateTime` in descending order:
 
-   `GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges?orderby=createdDateTime desc`
+   ```http
+   GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges?orderby=createdDateTime desc
+   ```
 
    > [!TIP]
    > There should only be one **Compliance Change ID** per **Catalog ID** for a policy. If there are multiple **Compliance Change IDs** for the same **Catalog ID** then, most likely, there's multiple deployments for the same piece of content targeted to the same audience but with different deployment behaviors. To remove the duplicate, [delete the compliance change](/graph/api/resources/windowsupdates-compliancechange-delete) with the duplicate **Catalog ID**. Deleting the compliance change will mark any deployments created by the approval as `archived`.
 
 To retrieve the deployment ID, use the [expand parameter](/graph/query-parameters#expand-parameter) to review the deployment information related the content approval. The following example displays the content approval and the deployment information for **Compliance Change ID** `c03911a7-9876-5432-10ab-cdef98765432` in update **Policy ID** `9011c330-1234-5678-9abc-def012345678`:
 
-   `GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges/c03911a7-9876-5432-10ab-cdef98765432/$/microsoft.graph.windowsUpdates.contentApproval?$expand=deployments`
+   ```http
+   GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges/c03911a7-9876-5432-10ab-cdef98765432/$/microsoft.graph.windowsUpdates.contentApproval?$expand=deployments
+   ```
 
 ### Edit deployment settings for a content approval
 

@@ -14,11 +14,15 @@ Use the [device](/graph/api/resources/device) resource type to find clients to e
 
 - Displays the **AzureAD Device ID** and **Name** of all devices:
 
-  `GET https://graph.microsoft.com/v1.0/devices?$select=deviceid,displayName`
+   ```http
+  GET https://graph.microsoft.com/v1.0/devices?$select=deviceid,displayName
+   ```
 
 - Displays the **AzureAD Device ID** and **Name** for devices that have a name starting with `Test`:
 
-  `GET https://graph.microsoft.com/v1.0/devices?$filter=startswith (displayName,'Test')&$select=deviceid,displayName`  
+   ```http
+  GET https://graph.microsoft.com/v1.0/devices?$filter=startswith (displayName,'Test')&$select=deviceid,displayName
+   ```
 
 
 ### Add a request header for advanced queries
@@ -33,12 +37,15 @@ For the next requests, set the **ConsistencyLevel** header to `eventual`. For mo
 
 - Display the **Name** and **Operating system version** for the device that has `01234567-89ab-cdef-0123-456789abcdef` as the **AzureAD Device ID**:
 
-   `GET https://graph.microsoft.com/v1.0/devices?$search="deviceid:01234567-89ab-cdef-0123-456789abcdef"?$select=displayName,operatingSystemVersion`
+   ```http
+   GET https://graph.microsoft.com/v1.0/devices?$search="deviceid:01234567-89ab-cdef-0123-456789abcdef"?$select=displayName,operatingSystemVersion`
+   ```
 
 - To find devices that likely aren't virtual machines, filter for devices that don't have virtual machine listed as the model but do have a manufacturer listed. Display the **AzureAD Device ID**, **Name**, and **Operating system version** for each device:
 
-   `GET https://graph.microsoft.com/v1.0/devices?$filter=model ne 'virtual machine' and NOT(manufacturer eq null)&$count=true&$select=deviceid,displayName,operatingSystemVersion`
-
+   ```http
+   GET https://graph.microsoft.com/v1.0/devices?$filter=model ne 'virtual machine' and NOT(manufacturer eq null)&$count=true&$select=deviceid,displayName,operatingSystemVersion`
+   ```
 
 > [!Tip]
 > Requests using the [device](/graph/api/resources/device) resource type typically have both an `id` and a `deviceid`:
