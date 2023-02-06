@@ -1711,14 +1711,14 @@ The following fields are available:
 
 ### Microsoft.Windows.Analog.Spectrum.TelemetryHolographicSpaceCreated
 
-No content is currently available.
+This event indicates the state of Windows holographic scene. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
-- **AppSessionGuid**  No content is currently available.
-- **IsForCompositor**  No content is currently available.
-- **Source**  No content is currently available.
-- **WindowInstanceId**  No content is currently available.
+- **AppSessionGuid**  GUID made up of process ID and is used as a correlation vector for process instances in the telemetry backend.
+- **IsForCompositor**  True/False to indicate whether the holographic space is for compositor process.
+- **Source**  An enumeration indicating the source of the log.
+- **WindowInstanceId**  Unique value for each window instance.
 
 
 ### Microsoft.Windows.Shell.HolographicFirstRun.AppActivated
@@ -2206,28 +2206,27 @@ The following fields are available:
 
 ### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Entered
 
-No content is currently available.
+This event sends data indicating the start of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
-- **TargetAsId**  No content is currently available.
-- **windowInstanceId**  No content is currently available.
+- **SessionID**  Unique value for each attempt.
+- **TargetAsId**  The sequence number for the process.
+- **windowInstanceId**  Unique value for each window instance.
 
 
 ### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Leave
 
-No content is currently available.
+This event sends data indicating the end of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
-- **EventHistory**  No content is currently available.
-- **ExternalComponentState**  No content is currently available.
-- **LastEvent**  No content is currently available.
-- **SessionID**  No content is currently available.
-- **TargetAsId**  No content is currently available.
-- **windowInstanceId**  No content is currently available.
-
+- **EventHistory**  Unique number of event history.
+- **ExternalComponentState**  State of external component.
+- **LastEvent**  Unique number of last event.
+- **SessionID**  Unique value for each attempt.
+- **TargetAsId**  The sequence number for the process.
+- **windowInstanceId**  Unique value for each window instance.
 
 
 ## Privacy consent logging events
@@ -2441,18 +2440,18 @@ The following fields are available:
 
 ### Update360Telemetry.FellBackToDownloadingAllPackageFiles
 
-No content is currently available.
+This event indicates whether a failure occurred during Missing File List generation and is applicable to Quality Update downloads.
 
 The following fields are available:
 
-- **ErrorCode**  No content is currently available.
-- **FlightId**  No content is currently available.
-- **ObjectId**  No content is currently available.
-- **Package**  No content is currently available.
-- **RelatedCV**  No content is currently available.
-- **ScenarioId**  No content is currently available.
-- **SessionId**  No content is currently available.
-- **UpdateId**  No content is currently available.
+- **ErrorCode**  Error code returned during Missing File List generation.
+- **FlightId**  Unique ID for each flight.
+- **ObjectId**  Unique ID for each flight.
+- **Package**  Name of the package for which Missing File List generation failed and we fell back to downloading all package files.
+- **RelatedCV**  Correlation vector value generated from the latest USO scan.
+- **ScenarioId**  Indicates the update scenario.
+- **SessionId**  Unique value for each attempt (same value for initialize, download, install commit phases).
+- **UpdateId**  Unique ID for each Update.
 
 
 ### Update360Telemetry.UpdateAgentDownloadRequest
@@ -3376,24 +3375,24 @@ This event is derived event results for the LaunchPageDuration scenario.
 
 ### Microsoft.Windows.Update.WUClient.DownloadPaused
 
-No content is currently available.
+This event is fired when the Download stage is paused.
 
 The following fields are available:
 
-- **BundleId**  No content is currently available.
-- **CallerName**  No content is currently available.
-- **ClassificationId**  No content is currently available.
-- **DownloadPriority**  No content is currently available.
-- **EventType**  No content is currently available.
-- **FlightId**  No content is currently available.
-- **HandlerInfo**  No content is currently available.
-- **HandlerType**  No content is currently available.
-- **Props**  No content is currently available.
-- **RegulationResult**  No content is currently available.
-- **RelatedCV**  No content is currently available.
-- **ServiceGuid**  No content is currently available.
-- **UpdateId**  No content is currently available.
-- **UusVersion**  No content is currently available.
+- **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
+- **CallerName**  Name of application making the Windows Update request. Used to identify context of request.
+- **ClassificationId**  Classification identifier of the update content.
+- **DownloadPriority**  Indicates the priority of the download activity.
+- **EventType**  Indicates the purpose of the event - whether because scan started, succeeded, failed, etc.
+- **FlightId**  Secondary status code for certain scenarios where StatusCode was not specific enough.
+- **HandlerInfo**  Blob of Handler related information.
+- **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
+- **Props**  Commit Props {MergedUpdate}
+- **RegulationResult**  The result code (HResult) of the last attempt to contact the regulation web service for download regulation of update content.
+- **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc).
+- **UpdateId**  Identifier associated with the specific piece of content.
+- **UusVersion**  The version of the Update Undocked Stack.
 
 
 ### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
