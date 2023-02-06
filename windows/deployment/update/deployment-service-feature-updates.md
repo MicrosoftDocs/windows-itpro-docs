@@ -55,11 +55,43 @@ As long as a device remains enrolled in feature update management, the device do
 
 ## Create a deployment audience and add audience members
 
+> [!TIP]
+> Windows Update for Business reports has a [workbook](wufb-reports-workbook.md#feature-updates-tab) that displays the current operating system version for devices. In the workbook, go to the **Feature updates** tab and in the **In Service feature update** tile, select the **View details** link to open the details flyout. The OS version and Azure AD ID of devices can easily be exported into a .csv file or opened in [Azure Monitor Logs](/azure/azure-monitor/logs/log-query-overview) to help when creating a deployment audience.
+
 <!--Using include for creating deployment audiences and adding audience members using Graph Explorer-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-audience-graph-explorer.md)]
 
+## List catalog entries for feature updates
 
+```http
+GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.featureUpdateCatalogEntry')
+```
 
+Truncated response:
+
+```json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/catalog/entries",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "f341705b-0b15-4ce3-aaf2-6a1681d78606",
+            "displayName": "Windows 10, version 22H2",
+            "deployableUntilDateTime": "2024-10-08T00:00:00Z",
+            "releaseDateTime": "2022-10-18T00:00:00Z",
+            "version": "Windows 10, version 22H2"
+        },
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "d9049ddb-0ca8-4bc1-bd3c-41a456ef300f",
+            "displayName": "Windows 11, version 22H2",
+            "deployableUntilDateTime": "2025-10-14T00:00:00Z",
+            "releaseDateTime": "2022-09-20T00:00:00Z",
+            "version": "Windows 11, version 22H2"
+        }
+    ]
+}
+```
 
 ## Unenroll devices
 

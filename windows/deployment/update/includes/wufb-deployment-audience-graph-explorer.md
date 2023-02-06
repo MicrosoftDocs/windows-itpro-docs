@@ -55,7 +55,7 @@ ms.localizationpriority: medium
    }
    ```
 
-1. To verify the devices were added to the audience, run the following query using the **Audience ID**:
+1. To verify the devices were added to the audience, run the following query using the **Audience ID** of `d39ad1ce-0123-4567-89ab-cdef01234567`:
 
    ```http
    GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/members
