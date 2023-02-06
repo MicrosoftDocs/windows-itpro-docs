@@ -20516,7 +20516,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-docs-pr/windows/client-management/mdm/policy-ddf-file.md",
+      "source_path": "windows/client-management/mdm/policy-ddf-file.md",
       "redirect_url": "/windows/client-management/mdm/configuration-service-provider-ddf",
       "redirect_document_id": true
     }
