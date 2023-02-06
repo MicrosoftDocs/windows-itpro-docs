@@ -35,10 +35,6 @@ You can learn more about Windows functional and diagnostic data through these ar
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 - [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
 
-
-
-
-
 ## Appraiser events
 
 ### Microsoft.Windows.Appraiser.General.ChecksumTotalPictureCount
@@ -1286,7 +1282,6 @@ The following fields are available:
 - **objectInstanceId**  Object identity which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
- 
 
 ## Component-based servicing events
 
@@ -1713,6 +1708,18 @@ The following fields are available:
 
 
 ## Holographic events
+
+### Microsoft.Windows.Analog.Spectrum.TelemetryHolographicSpaceCreated
+
+No content is currently available.
+
+The following fields are available:
+
+- **AppSessionGuid**  No content is currently available.
+- **IsForCompositor**  No content is currently available.
+- **Source**  No content is currently available.
+- **WindowInstanceId**  No content is currently available.
+
 
 ### Microsoft.Windows.Shell.HolographicFirstRun.AppActivated
 
@@ -2195,6 +2202,34 @@ The following fields are available:
 - **resultCode**  HR result of the cancellation.
 
 
+## Other events
+
+### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Entered
+
+No content is currently available.
+
+The following fields are available:
+
+- **SessionID**  No content is currently available.
+- **TargetAsId**  No content is currently available.
+- **windowInstanceId**  No content is currently available.
+
+
+### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Leave
+
+No content is currently available.
+
+The following fields are available:
+
+- **EventHistory**  No content is currently available.
+- **ExternalComponentState**  No content is currently available.
+- **LastEvent**  No content is currently available.
+- **SessionID**  No content is currently available.
+- **TargetAsId**  No content is currently available.
+- **windowInstanceId**  No content is currently available.
+
+
+
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -2403,6 +2438,22 @@ The following fields are available:
 
 
 ## Update events
+
+### Update360Telemetry.FellBackToDownloadingAllPackageFiles
+
+No content is currently available.
+
+The following fields are available:
+
+- **ErrorCode**  No content is currently available.
+- **FlightId**  No content is currently available.
+- **ObjectId**  No content is currently available.
+- **Package**  No content is currently available.
+- **RelatedCV**  No content is currently available.
+- **ScenarioId**  No content is currently available.
+- **SessionId**  No content is currently available.
+- **UpdateId**  No content is currently available.
+
 
 ### Update360Telemetry.UpdateAgentDownloadRequest
 
@@ -3320,6 +3371,29 @@ The following fields are available:
 ### Microsoft.Windows.Update.Ux.MusUpdateSettings.Derived.ClientAggregated.LaunchPageDuration
 
 This event is derived event results for the LaunchPageDuration scenario.
+
+
+
+### Microsoft.Windows.Update.WUClient.DownloadPaused
+
+No content is currently available.
+
+The following fields are available:
+
+- **BundleId**  No content is currently available.
+- **CallerName**  No content is currently available.
+- **ClassificationId**  No content is currently available.
+- **DownloadPriority**  No content is currently available.
+- **EventType**  No content is currently available.
+- **FlightId**  No content is currently available.
+- **HandlerInfo**  No content is currently available.
+- **HandlerType**  No content is currently available.
+- **Props**  No content is currently available.
+- **RegulationResult**  No content is currently available.
+- **RelatedCV**  No content is currently available.
+- **ServiceGuid**  No content is currently available.
+- **UpdateId**  No content is currently available.
+- **UusVersion**  No content is currently available.
 
 
 ### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
