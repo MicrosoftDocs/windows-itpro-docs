@@ -26,7 +26,7 @@ The Windows Update for Business deployment service is used to approve and schedu
 > - [Review applicable driver content](#review-applicable-driver-content)
 > - [Approve driver content for deployment](#approve-driver-content-for-deployment)
 > - [Revoke content approval](#revoke-content-approval)
-> - [Remove device enrollment](#remove-device-enrollment)
+> - [Unenroll devices](#unenroll-devices)
 
 ## Prerequisites
 
@@ -85,24 +85,24 @@ To create a policy without any deployment settings, in the request body specify 
 
 Response returning the policy, without any additional settings specified, that has a **Policy ID** of `9011c330-1234-5678-9abc-def012345678`:
 
-     ```json
-     HTTP/1.1 202 Accepted
-     Content-type: application/json
-     {
-       "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatePolicies/$entity",
-       "id": "9011c330-1234-5678-9abc-def012345678",
-       "createdDateTime": "2023-01-25T05:32:21.9721459Z",
-       "autoEnrollmentUpdateCategories": [],
-       "complianceChangeRules": [],
-       "deploymentSettings": {
-           "schedule": null,
-           "monitoring": null,
-           "contentApplicability": null,
-           "userExperience": null,
-           "expedite": null
-       }
-     }
-     ```
+```json
+HTTP/1.1 202 Accepted
+Content-type: application/json
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatePolicies/$entity",
+  "id": "9011c330-1234-5678-9abc-def012345678",
+  "createdDateTime": "2023-01-25T05:32:21.9721459Z",
+  "autoEnrollmentUpdateCategories": [],
+  "complianceChangeRules": [],
+  "deploymentSettings": {
+      "schedule": null,
+      "monitoring": null,
+      "contentApplicability": null,
+      "userExperience": null,
+      "expedite": null
+  }
+}
+```
 
 ### Specify settings during policy creation
 
@@ -325,7 +325,7 @@ Content-type: application/json
 }
 ```
 
-## Unenroll device
+## Unenroll devices
 
 <!--Using include for removing device enrollment-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-graph-unenroll.md)]
