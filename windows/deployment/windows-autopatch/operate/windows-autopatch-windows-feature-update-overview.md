@@ -91,7 +91,7 @@ Windows Autopatch provides a permanent pause of a Windows feature update deploym
 If you've paused an update, the specified release will have the **Customer Paused** status. The Windows Autopatch service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update.
 
 > [!NOTE]
-> The Service Paused status only applies to [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release). Windows Autopatch doesn't pause Windows feature updates on your behalf.
+> The **Service Paused** status only applies to [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release). Windows Autopatch doesn't pause Windows feature updates on your behalf.
 
 ## Rollback
 
