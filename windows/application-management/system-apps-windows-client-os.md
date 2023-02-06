@@ -44,7 +44,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -53,7 +53,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -62,7 +62,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -71,7 +71,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -80,7 +80,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ |  | | ✔️ |
 
   ---
@@ -89,7 +89,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -98,7 +98,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -107,7 +107,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -116,7 +116,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -125,7 +125,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -134,7 +134,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -143,7 +143,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -152,7 +152,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -161,7 +161,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -170,7 +170,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ |  | | ✔️ |
 
   ---
@@ -179,7 +179,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -188,7 +188,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -197,7 +197,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -206,7 +206,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -215,7 +215,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -224,7 +224,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -233,7 +233,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ |  | | ✔️ |
 
   ---
@@ -242,7 +242,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -251,7 +251,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -260,7 +260,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -269,7 +269,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -278,7 +278,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -287,7 +287,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -296,7 +296,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -305,7 +305,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -314,7 +314,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -323,7 +323,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -332,7 +332,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
@@ -341,7 +341,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ✔️ | ✔️ |  | | ✔️ |
 
   ---
@@ -350,7 +350,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 
   ---
   | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
-  | --- | --- | --- | --- | --- |
+  | --- | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
