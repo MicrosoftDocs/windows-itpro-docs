@@ -19463,7 +19463,7 @@
     {
       "source_path": "windows/security/threat-protection/intelligence/rootkits-malware.md",
       "redirect_url": "/microsoft-365/security/intelligence/rootkits-malware",
-      "redirect_document_id": false  
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/intelligence/safety-scanner-download.md",
@@ -20114,7 +20114,7 @@
       "source_path": "windows/deployment/update/update-compliance-v2-enable.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-enable",
       "redirect_document_id": false
-    },	
+    },
     {
       "source_path": "windows/deployment/update/update-compliance-v2-help.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-help",
@@ -20124,22 +20124,22 @@
       "source_path": "windows/deployment/update/update-compliance-v2-overview.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-overview",
       "redirect_document_id": false
-    },		
+    },
     {
       "source_path": "windows/deployment/update/update-compliance-v2-prerequisites.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-prerequisites",
       "redirect_document_id": false
-    },	
+    },
     {
       "source_path": "windows/deployment/update/update-compliance-v2-schema-ucclient.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucclient",
       "redirect_document_id": false
-    },	
+    },
     {
       "source_path": "windows/deployment/update/update-compliance-v2-schema-ucclientreadinessstatus.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucclientreadinessstatus",
       "redirect_document_id": false
-    },		
+    },
     {
       "source_path": "windows/deployment/update/update-compliance-v2-schema-ucclientupdatestatus.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucclientupdatestatus",
@@ -20149,17 +20149,17 @@
       "source_path": "windows/deployment/update/update-compliance-v2-schema-ucdevicealert.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucdevicealert",
       "redirect_document_id": false
-    },		
+    },
     {
       "source_path": "windows/deployment/update/update-compliance-v2-schema-ucserviceupdatestatus.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucserviceupdatestatus",
       "redirect_document_id": false
-    },		
+    },
     {
       "source_path": "windows/deployment/update/update-compliance-v2-schema-ucupdatealert.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucupdatealert",
       "redirect_document_id": false
-    },	
+    },
     {
       "source_path": "windows/deployment/update/update-compliance-v2-schema.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-schema",
@@ -20194,7 +20194,7 @@
       "source_path": "windows/deployment/planning/features-lifecycle.md",
       "redirect_url": "/windows/whats-new/feature-lifecycle",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "windows/deployment/planning/windows-10-deprecated-features.md",
       "redirect_url": "/windows/whats-new/deprecated-features",
@@ -20205,7 +20205,7 @@
       "redirect_url": "/windows/whats-new/removed-features",
       "redirect_document_id": false
     },
-    {               
+    {
       "source_path": "windows/deployment/usmt/usmt-common-issues.md",
       "redirect_url": "/troubleshoot/windows-client/deployment/usmt-common-issues",
       "redirect_document_id": false
@@ -20513,6 +20513,11 @@
     {
       "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-wqu-unsupported-policies.md",
       "redirect_url": "/windows/deployment/windows-autopatch/references/windows-autopatch-windows-update-unsupported-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/client-management/mdm/policy-ddf-file.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-ddf",
       "redirect_document_id": true
     }
   ]
