@@ -22,6 +22,8 @@ In this article, you will:
 > * [Open Graph Explorer](#open-graph-explorer) 
 > * [Run queries to identify devices](#run-queries-to-identify-devices)
 > * [Enroll devices](#enroll-devices)
+> * [Create a deployment audience and add audience members](#create-a-deployment-audience-and-add-audience-members)
+> * [List catalog entries for feature updates](#list-catalog-entries-for-feature-updates)
 > * Do Z
 > * Do Z
 > - [Unenroll devices](#unenroll-devices)
@@ -62,6 +64,7 @@ As long as a device remains enrolled in feature update management, the device do
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-audience-graph-explorer.md)]
 
 ## List catalog entries for feature updates
+
 
 ```http
 GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.featureUpdateCatalogEntry')
