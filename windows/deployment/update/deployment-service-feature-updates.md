@@ -18,7 +18,7 @@ ms.date: 02/14/2023
 In this article, you will:
 > [!div class="checklist"]
 > * [Open Graph Explorer](#open-graph-explorer) 
-> * [Run queries to identify test devices](#run-queries-to-identify-devices)
+> * [Run queries to identify devices](#run-queries-to-identify-devices)
 > * [Enroll devices](#enroll-devices)
 > * Do Z
 > * Do Z
@@ -49,6 +49,13 @@ As long as a device remains enrolled in feature update management, the device do
 
 <!--Using include for enrolling devices using Graph Explorer-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-enroll-device-graph-explorer.md)]
+
+## Create a deployment audience and add audience members
+
+<!--Using include for creating deployment audiences and adding audience members using Graph Explorer-->
+[!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-audience-graph-explorer.md)]
+
+
 
 
 ## Unenroll devices

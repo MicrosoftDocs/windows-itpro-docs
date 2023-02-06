@@ -56,56 +56,8 @@ When you enroll devices into driver management, the deployment service becomes t
 
 ## Create a deployment audience and add audience members
 
-1. Create an audience for the driver deployment. The deployment audience is a collection of member devices that will receive the driver deployment. **POST** to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience) resource with a request body of `{}` to create a new audience.
-
-   ```http
-   POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
-   content-type: application/json
-
-   {}
-   ```
-
-   The POST returns an HTTP status code of `201 Created` as a response with the following body, where `id` is the **Audience ID**:
-
-   ```json
-   {
-       "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deploymentAudiences/$entity",
-       "id": "d39ad1ce-0123-4567-89ab-cdef01234567",
-       "reportingDeviceCount": 0,
-       "applicableContent": []
-   }
-   ```
-
-
-1. Add devices, using their **Azure AD ID**, to the deployment audience so they become audience members. Specify the deployment **Audience ID** in the URL field and the devices to add in the request body. The `id` property specifies the **Azure AD ID** of the device.
-
-   ```http
-   POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience
-   Content-type: application/json
-
-   {
-     "addMembers": [
-       {
-         "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-         "id": "01234567-89ab-cdef-0123-456789abcdef"
-       },
-       {
-         "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-         "id": "01234567-89ab-cdef-0123-456789abcde0"
-       },
-       {
-         "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-        "id": "01234567-89ab-cdef-0123-456789abcde1"
-       }
-     ]
-   }
-   ```
-
-1. To verify the devices were added to the audience, run the following query using the **Audience ID**:
-
-   ```http
-   GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/members
-   ```
+<!--Using include for creating deployment audiences and adding audience members using Graph Explorer-->
+[!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-audience-graph-explorer.md)]
 
 Once a device has been enrolled and added to a deployment audience, the Windows Update for Business deployment service will start collecting scan results from Windows Update to build a catalog of applicable drivers to be browsed, approved, and scheduled for deployment.
 
