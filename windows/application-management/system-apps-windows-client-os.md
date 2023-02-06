@@ -43,7 +43,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - File Picker | Package name: 1527c705-839a-4832-9118-54d4Bd6a0c89
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -52,7 +52,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - File Explorer | Package name: c5e2524a-ea46-4f67-841f-6a9465d9d515
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -61,7 +61,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - App Resolver UX | Package name: E2A4F912-2574-4A75-9BB0-0D023378592B
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -70,7 +70,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Add Suggested Folders To Library | Package name: F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -79,7 +79,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - InputApp
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ |  | | ✔️ |
 
@@ -88,7 +88,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.AAD.Broker.Plugin | Package name: Microsoft.AAD.Broker.Plugin
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -97,7 +97,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.AccountsControl | Package name: Microsoft.AccountsControl
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
   ---
@@ -105,7 +105,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.AsyncTextService | Package name: Microsoft.AsyncTextService
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -114,7 +114,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Hello setup UI | Package name: Microsoft.BioEnrollment
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -123,7 +123,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.CredDialogHost
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -132,7 +132,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.ECApp
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -141,7 +141,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.LockApp
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -150,7 +150,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft Edge | Package name: Microsoft.MicrosoftEdge
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -159,7 +159,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.MicrosoftEdgeDevToolsClient
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -168,7 +168,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.PPIProjection
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ |  | | ✔️ |
 
@@ -177,7 +177,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.Win32WebViewHost
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -186,7 +186,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.Windows.Apprep.ChxApp
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -195,7 +195,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.Windows.AssignedAccessLockApp
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -204,7 +204,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.Windows.CapturePicker
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -213,7 +213,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.Windows.CloudExperienceHost
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -222,7 +222,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.Windows.ContentDeliveryManager
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
   ---
@@ -230,7 +230,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Cortana | Package name: Microsoft.Windows.Cortana
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ |  | | ✔️ |
 
@@ -239,7 +239,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.Windows.OOBENetworkCaptivePort
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -248,7 +248,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.Windows.OOBENetworkConnectionFlow
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -257,7 +257,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.Windows.ParentalControls
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -266,7 +266,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - People Hub | Package name: Microsoft.Windows.PeopleExperienceHost
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -275,7 +275,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.Windows.PinningConfirmationDialog
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -284,7 +284,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.Windows.SecHealthUI
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -293,7 +293,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.Windows.SecureAssessmentBrowser
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -302,7 +302,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Start | Package name: Microsoft.Windows.ShellExperienceHost
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -311,7 +311,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Microsoft.XboxGameCallableUI
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -320,7 +320,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Windows.CBSPreview
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -329,7 +329,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Settings | Package name: Windows.immersivecontrolpanel
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
@@ -338,7 +338,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Print 3D | Package name: Windows.Print3D
 
   ---
-  | Uninstall through UI? | 22H2 | 21H1 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ✔️ | ✔️ |  | | ✔️ |
 
@@ -347,7 +347,7 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - Print UI | Package name: Windows.PrintDialog
 
   ---
-  | Uninstall through UI? | 22H1 | 21H2 | 20H2 | 1809 |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
   | --- | --- | --- | --- | --- |
   | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
