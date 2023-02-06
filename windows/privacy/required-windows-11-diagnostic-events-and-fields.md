@@ -1919,7 +1919,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HvciAlreadyEnabled
 
-No content is currently available.
+Fires when HVCI is already enabled so no need to continue auto-enablement.
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HvciScanGetResultFailed
@@ -3777,7 +3777,7 @@ The following fields are available:
 
 - **migDiagSession->CString**  Indicates the phase of the update.
 - **objectCount**  Number of files being tracked for the corresponding phase of the update.
-- **sfInfo.Name**  No content is currently available.
+- **sfInfo.Name**  This indicates well know folder location path (Ex: PUBLIC_downloads etc.)
 
 
 ### Microsoft.Windows.MigrationCore.MigObjectCountDLUsr
