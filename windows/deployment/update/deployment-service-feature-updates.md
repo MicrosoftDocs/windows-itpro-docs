@@ -50,17 +50,16 @@ All of the [prerequisites for the Windows Update for Business deployment service
 
 ## Enroll devices
 
-As long as a device remains enrolled in feature update management through the deployment service, the device doesn't receive any other feature updates from Windows Update unless explicitly deployed using the deployment service. A device is offered the specified feature update if it hasn't already received the update. For example, if you deploy Windows 11 feature update version 22H2 to a device that's enrolled into feature update management and is currently on an older version of Windows 11, the device updates to version 22H2. If the device is already at or above version 22H2, it stays on its current version.
+When you enroll devices into feature update management, the deployment service becomes the authority for feature updates coming from Windows Update.
+As long as a device remains enrolled in feature update management through the deployment service, the device doesn't receive any other feature updates from Windows Update unless explicitly deployed using the deployment service. A device is offered the specified feature update if it hasn't already received the update. For example, if you deploy Windows 11 feature update version 22H2 to a device that's enrolled into feature update management and is currently on an older version of Windows 11, the device updates to version 22H2. If the device is already running version 22H2 or a later version, it stays on its current version.
+
+> [!TIP]
+> Windows Update for Business reports has a [workbook](wufb-reports-workbook.md#feature-updates-tab) that displays the current operating system version for devices. In the workbook, go to the **Feature updates** tab and in the **In Service feature update** tile, select the **View details** link to open the details flyout. The OS version and Azure AD ID of devices can easily be exported into a .csv file or opened in [Azure Monitor Logs](/azure/azure-monitor/logs/log-query-overview) to help when creating a deployment audience.
 
 <!--Using include for enrolling devices using Graph Explorer-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-enroll-device-graph-explorer.md)]
 
 ## Create a deployment audience and add audience members
-
-
-
-> [!TIP]
-> Windows Update for Business reports has a [workbook](wufb-reports-workbook.md#feature-updates-tab) that displays the current operating system version for devices. In the workbook, go to the **Feature updates** tab and in the **In Service feature update** tile, select the **View details** link to open the details flyout. The OS version and Azure AD ID of devices can easily be exported into a .csv file or opened in [Azure Monitor Logs](/azure/azure-monitor/logs/log-query-overview) to help when creating a deployment audience.
 
 <!--Using include for creating deployment audiences and adding audience members using Graph Explorer-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-audience-graph-explorer.md)]

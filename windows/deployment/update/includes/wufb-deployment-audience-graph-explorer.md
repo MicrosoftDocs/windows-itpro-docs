@@ -9,8 +9,9 @@ ms.date: 02/14/2023
 ms.localizationpriority: medium
 ---
 <!--This file is shared by deployment-service-drivers.md and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
+A deployment audience is a collection of devices that you want to deploy updates to. The audience needs to be created first, then members are added to the audience. Use the following steps to create a deployment audience, add members, and verify it:
 
-1. Create an audience for the driver deployment. The deployment audience is a collection of member devices that will receive the driver deployment. **POST** to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience) resource with a request body of `{}` to create a new audience.
+1. To create a new audience, **POST** to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience) resource with a request body of `{}`.
 
    ```http
    POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
