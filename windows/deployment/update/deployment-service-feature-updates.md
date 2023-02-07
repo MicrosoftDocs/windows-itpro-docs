@@ -66,8 +66,7 @@ As long as a device remains enrolled in feature update management through the de
 
 ## List catalog entries for feature updates
 
-
-
+Each feature update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). The `id` returned is the **Catalog ID** and is used to create a deployment. Feature updates are deployable until they reach their support retirement dates. For more information see, the support lifecycle dates for [Windows 10](/lifecycle/products/windows-10-enterprise-and-education) and [Windows 11](/lifecycle/products/windows-11-enterprise-and-education) Enterprise and Education editions. The following query lists all deployable feature update catalog entries: 
 ```http
 GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.featureUpdateCatalogEntry')
 ```
