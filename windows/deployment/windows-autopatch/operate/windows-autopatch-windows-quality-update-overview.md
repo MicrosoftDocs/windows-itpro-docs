@@ -108,6 +108,9 @@ Windows Autopatch schedules and deploys required Out of Band (OOB) updates relea
 
 ### Pausing and resuming a release
 
+> [!CAUTION]
+> It's only recommended to use Windows Autopatch's end-user experience to pause and resume [Windows quality](windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release). If you need assistance with pausing and resuming updates, please [submit a support request](../operate/windows-autopatch-support-request.md).
+
 If Windows Autopatch detects a [significant issue with a release](../operate/windows-autopatch-windows-quality-update-signals.md), we may decide to pause that release.
 
 > [!IMPORTANT]
@@ -124,9 +127,6 @@ If Windows Autopatch detects a [significant issue with a release](../operate/win
 7. Optional. Enter details about why you're pausing or resuming the selected update.
 8. If you're resuming an update, you can select one or more deployment rings.
 9. Select **Okay**.
-
-> [!CAUTION]
-> It's only recommended to use Windows Autopatch's end-user experience to pause and resume [Windows quality](windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release). If you need assistance with pausing and resuming updates, please [submit a support request](../operate/windows-autopatch-support-request.md).
 
 The three following statuses are associated with paused quality updates:
 
