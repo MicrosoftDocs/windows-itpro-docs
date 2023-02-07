@@ -1,7 +1,7 @@
 ---
 title: Windows quality updates
 description: This article explains how Windows quality updates are managed in Autopatch
-ms.date: 12/15/2022
+ms.date: 02/07/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+msreviewer: andredm7
 ---
 
 # Windows quality updates
@@ -125,12 +125,19 @@ If Windows Autopatch detects a [significant issue with a release](../operate/win
 8. If you're resuming an update, you can select one or more deployment rings.
 9. Select **Okay**.
 
-There are two statuses associated with paused quality updates, **Service Paused** and **Customer Paused**.
+> [!CAUTION]
+> It's only recommended to use Windows Autopatch's end-user experience to pause and resume [Windows quality](windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release). If you need assistance with pausing and resuming updates, please [submit a support request](../operate/windows-autopatch-support-request.md).
+
+There are three statuses associated with paused quality updates, **Service Paused**, **Customer Paused** and **Customer & Service pause**.
 
 | Status | Description |
 | ----- | ------ |
-| Service Paused | If the Windows Autopatch service has paused an update, the release will have the **Service Paused** status. You must [submit a support request](windows-autopatch-support-request.md) to resume the update. |
-| Customer Paused | If you've paused an update, the release will have the **Customer Paused** status. The Windows Autopatch service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update. |
+| Service Pause | If the Windows Autopatch service has paused an update, the release will have the **Service Pause** status. You must [submit a support request](windows-autopatch-support-request.md) to resume the update. |
+| Customer Pause | If you've paused an update, the release will have the **Customer Pause** status. The Windows Autopatch service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update. |
+| Customer & Service Pause | If you and Microsoft (Windows Autopatch service) have both paused an update, the release will have the **Customer & Service pause** status. If you plan on resuming an update deployment under this mixed state, you must first [submit a support request](windows-autopatch-support-request.md) for Windows Autopatch service engineers to resume the update deployment on your behalf, this will change your update deployment status to **Customer pause**, once this happens, you can resume the update deployment in Windows Autopatch Release management blade yourself. |
+
+> [!NOTE]
+> The service-level pause of updates is driven by the various software update deployment-related signals Windows Autopatch receive from Windows Update for Business several other product groups within Microsoft.
 
 ## Remediating Ineligible and/or Not up to Date devices
 

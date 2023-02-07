@@ -1,7 +1,7 @@
 ---
 title: Windows feature updates
 description: This article explains how Windows feature updates are managed in Autopatch
-ms.date: 02/02/2023
+ms.date: 02/07/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -88,7 +88,7 @@ Windows Autopatch provides a permanent pause of a Windows feature update deploym
 8. If you're resuming an update, you can select one or more deployment rings.
 9. Select **Okay**.
 
-If you've paused an update, the specified release will have the **Customer Paused** status. The Windows Autopatch service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update.
+If you've paused an update, the specified release will have the **Customer Pause** status. The Windows Autopatch service can't overwrite IT admin's pause. You must select **Resume** to resume the update.
 
 > [!NOTE]
 > The **Service Paused** status only applies to [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release). Windows Autopatch doesn't pause Windows feature updates on your behalf.
@@ -98,7 +98,7 @@ If you've paused an update, the specified release will have the **Customer Pause
 Windows Autopatch doesn’t support the rollback of Windows Feature updates.
 
 > [!CAUTION]
-> It’s not recommended to use [Microsoft Intune’s capabilities](/mem/intune/protect/windows-10-update-rings#manage-your-windows-update-rings) to pause and rollback a Windows feature update. However, if you choose to pause, resume and/or roll back from Intune, Windows Autopatch is **not** responsible for any problems that arise from rolling back the Windows feature update.
+> It's only recommended to use Windows Autopatch's end-user experience to pause and resume [Windows quality](windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release). If you need assistance with pausing and resuming updates, please [submit a support request](../operate/windows-autopatch-support-request.md).
 
 ## Contact support
 
