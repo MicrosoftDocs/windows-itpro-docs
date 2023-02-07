@@ -15,7 +15,9 @@ ms.date: 02/14/2023
 <!--7260403, 7512398-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-The Windows Update for Business deployment service is used to approve and schedule software updates. The deployment service exposes its capabilities through the [Microsoft Graph API](/graph/use-the-api). You can call the API directly, through a [Graph SDK](/graph/sdks/sdks-overview), or integrate them with a management tool such as [Microsoft Intune](/mem/intune). This article uses Graph Explorer to walk through the entire process of deploying a driver update to clients. In this article, you will:
+The Windows Update for Business deployment service is used to approve and schedule software updates. The deployment service exposes its capabilities through the [Microsoft Graph API](/graph/use-the-api). You can call the API directly, through a [Graph SDK](/graph/sdks/sdks-overview), or integrate them with a management tool such as [Microsoft Intune](/mem/intune). 
+
+This article uses [Graph Explorer](/graph/graph-explorer/graph-explorer-overview) to walk through the entire process of deploying a driver update to clients. In this article, you will:
 > [!div class="checklist"]
 >
 > - [Open Graph Explorer](#open-graph-explorer)
@@ -323,6 +325,12 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
     "isRevoked": true
 }
+```
+
+To display all deployments with the most recently created returned first, order deployments based on the `createdDateTime`:
+
+```http
+GET https://graph.microsoft.com/beta/admin/windows/updates/deployments?orderby=createdDateTime desc
 ```
 
 ## Unenroll devices

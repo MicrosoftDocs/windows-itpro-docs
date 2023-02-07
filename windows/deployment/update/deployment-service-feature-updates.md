@@ -15,7 +15,9 @@ ms.date: 02/14/2023
 <!--7512398-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-The Windows Update for Business deployment service is used to approve and schedule software updates. The deployment service exposes its capabilities through the [Microsoft Graph API](/graph/use-the-api). You can call the API directly, through a [Graph SDK](/graph/sdks/sdks-overview), or integrate them with a management tool such as [Microsoft Intune](/mem/intune). This article uses Graph Explorer to walk through the entire process of deploying a feature update to clients. In this article, you will:
+The Windows Update for Business deployment service is used to approve and schedule software updates. The deployment service exposes its capabilities through the [Microsoft Graph API](/graph/use-the-api). You can call the API directly, through a [Graph SDK](/graph/sdks/sdks-overview), or integrate them with a management tool such as [Microsoft Intune](/mem/intune). 
+
+This article uses [Graph Explorer](/graph/graph-explorer/graph-explorer-overview) to walk through the entire process of deploying a feature update to clients. In this article, you will:
 
 In this article, you will:
 > [!div class="checklist"]
@@ -26,7 +28,7 @@ In this article, you will:
 > * [Create a deployment](#create-a-deployment)
 > * [Add members to the deployment audience](#add-members-to-the-deployment-audience)
 > * [Pause a deployment](#pause-a-deployment)
-> - [Unenroll devices](#unenroll-devices)
+> * [Unenroll devices](#unenroll-devices)
 
 
 ## Prerequisites
@@ -219,7 +221,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-
 
 ## Add members to the deployment audience
 
-The **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567`, was created when the deployment was created. The **Audience ID** is used to add members to the deployment audience. After the deployment audience is updated, Windows Update starts offering the update to the devices according to the deployment settings. As long as the deployment exists and the device is in the audience, the update will be offered
+The **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567`, was created when the deployment was created. The **Audience ID** is used to add members to the deployment audience. After the deployment audience is updated, Windows Update starts offering the update to the devices according to the deployment settings. As long as the deployment exists and the device is in the audience, the update will be offered. 
 
 The following example adds three devices to the deployment audience using the **Azure AD ID** for each device:
 
@@ -247,7 +249,9 @@ The following example adds three devices to the deployment audience using the **
 
 ## Pause a deployment
 
-To pause a deployment, PATCH the deployment to have a `requestedValue` of `paused` for the [deploymentState](/graph/api/resources/windowsupdates-deploymentstate). To resume the deployment, use the value `none` and the state will either update to `offering` or `scheduled` if the deployment hasn't reached the start date yet. The following example pauses the deployment with a **Deployment ID** of `de910e12-3456-7890-abcd-ef1234567890`:
+To pause a deployment, PATCH the deployment to have a `requestedValue` of `paused` for the [deploymentState](/graph/api/resources/windowsupdates-deploymentstate). To resume the deployment, use the value `none` and the state will either update to `offering` or `scheduled` if the deployment hasn't reached the start date yet.
+
+The following example pauses the deployment with a **Deployment ID** of `de910e12-3456-7890-abcd-ef1234567890`:
 
 ```http
 
