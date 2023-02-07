@@ -65,9 +65,10 @@ Before you begin sign up, ensure you have the following components:
     > [!NOTE]
     > Verification codes expire in 24 hours. You will need to generate a new code if it expires.
 
-   :::image type="content" source="images/mcc-isp-operator-verification.png" alt-text="Screenshot of the sign up verification page on Azure portal for Microsoft Connected Cache." lightbox="./images/mcc-isp-operator-verification.png":::
+    :::image type="content" source="images/mcc-isp-operator-verification.png" alt-text="Screenshot of the sign up verification page on Azure portal for Microsoft Connected Cache." lightbox="./images/mcc-isp-operator-verification.png":::
 
-   **Can't find the verification email in your inbox?** Check your NOC email is correct in [Peering DB](https://www.peeringdb.com/). Search for an email from the sender **microsoft-noreply@microsoft.com** with the email subject: **Here’s your Microsoft Connected Cache verification code** in your Spam folders. Still can't find it? Ensure that your email admin rules allow emails from the sender **microsoft-noreply@microsoft.com**.
+    > [!NOTE]
+    > **Can't find the verification email in your inbox?** Check that the email under the NOC role is correct in [Peering DB](https://www.peeringdb.com/). Search for an email from the sender **microsoft-noreply@microsoft.com** with the email subject: "Here’s your Microsoft Connected Cache verification code" in your Spam folders. Still can't find it? Ensure that your email admin rules allow emails from the sender **microsoft-noreply@microsoft.com**.
 
 1. Once verified, follow the instructions in [Create, provision, and deploy cache node](mcc-isp-create-provision-deploy.md) to create your cache node.
 

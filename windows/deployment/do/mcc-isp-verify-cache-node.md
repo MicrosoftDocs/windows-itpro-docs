@@ -37,7 +37,7 @@ For example, this command provides the current status of the starting and stoppi
 
 :::image type="content" source="./images/mcc-isp-edge-journalctl.png" alt-text="Terminal output of journalctl command for iotedge." lightbox="./images/mcc-isp-edge-journalctl.png":::
 
-You may need to wait several minutes for the MCC container image to complete downloading and to start up. 
+You may need to wait up to 30 minutes for the cache node software to complete downloading and begin caching. 
 
 ## Verify functionality on Azure portal
 
