@@ -32,7 +32,7 @@ The following information is available in the Summary dashboard:
 
 | Column name | Description |
 | ----- | ----- |
-| Windows quality update status | The device update state. For more information, see [Windows quality update status](windows-autopatch-wqu-reports-overview.md#windows-quality-update-statuses). |
+| Windows quality update status | The device update state. For more information, see [Windows quality update status](windows-autopatch-windows-quality-update-reports-overview.md#windows-quality-update-statuses). |
 | Devices | The number of devices showing as applicable for the state. |
 
 ## Report options

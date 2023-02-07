@@ -24,12 +24,12 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
-| [Windows quality updates](../operate/windows-autopatch-wqu-overview.md) | Added information about: <ul><li>Turning off service-driven expedited quality update releases<ul><li>[MC482178](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul></li><li>Viewing deployed out of band releases<ul><li>[MC484915](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul></li></ul> |
+| [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) | Added information about: <ul><li>Turning off service-driven expedited quality update releases<ul><li>[MC482178](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul></li><li>Viewing deployed out of band releases<ul><li>[MC484915](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul></li></ul> |
 | [Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md) | Added Roles and responsibilities article |
 | [Prerequisites](../prepare/windows-autopatch-prerequisites.md) | Added more licenses to the More about licenses section<ul><li>[MC452168](https://admin.microsoft.com/adminportal/home#/MessageCenter) |
-| [Unsupported policies](../operate/windows-autopatch-wqu-unsupported-policies.md) | Updated to include other policy managers in the Group policy section |
+| [Unsupported policies](../references/windows-autopatch-windows-update-unsupported-policies.md) | Updated to include other policy managers in the Group policy section |
 | [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) | Updated the Device configuration, Microsoft Office and Edge policies |
-| [Windows quality update reports](../operate/windows-autopatch-wqu-reports-overview.md) | Added Windows quality update reports |
+| [Windows quality update reports](../operate/windows-autopatch-windows-quality-update-reports-overview.md) | Added Windows quality update reports |
 
 ### December service release
 

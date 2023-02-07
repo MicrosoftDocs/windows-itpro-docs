@@ -58,7 +58,7 @@ This ensures that:
 -  The current Policy Manager policies are refreshed from what MDM has set
 -  Any values set by scripts/user outside of GP that conflict with MDM are removed
 
-The [Policy DDF](policy-ddf-file.md) contains the following tags to identify the policies with equivalent GP:
+The [Policy DDF](configuration-service-provider-ddf.md) contains the following tags to identify the policies with equivalent GP:
 
 -  \<MSFT:ADMXBacked\>
 -  \<MSFT:ADMXMapped\>
