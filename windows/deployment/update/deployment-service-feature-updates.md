@@ -24,9 +24,8 @@ In this article, you will:
 > * [Enroll devices](#enroll-devices)
 > * [List catalog entries for feature updates](#list-catalog-entries-for-feature-updates)
 > * [Create a deployment](#create-a-deployment)
-> * Do Z
-> * Do Z
-> * Do Z
+> * [Add members to the deployment audience](#add-members-to-the-deployment-audience)
+> * [Pause a deployment](#pause-a-deployment)
 > - [Unenroll devices](#unenroll-devices)
 
 
@@ -220,7 +219,9 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-
 
 ## Add members to the deployment audience
 
-The **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567`, was created when the deployment was created. The **Audience ID** is used to add members to the deployment audience. The following example adds three devices to the deployment audience using the **Azure AD ID** for each device:
+The **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567`, was created when the deployment was created. The **Audience ID** is used to add members to the deployment audience. After the deployment audience is updated, Windows Update starts offering the update to the devices according to the deployment settings. As long as the deployment exists and the device is in the audience, the update will be offered
+
+The following example adds three devices to the deployment audience using the **Azure AD ID** for each device:
 
    ```http
    POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience
@@ -243,6 +244,24 @@ The **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567`, was created when th
      ]
    }
    ```
+
+## Pause a deployment
+
+To pause a deployment, PATCH the deployment to have a `requestedValue` of `paused` for the [deploymentState](/graph/api/resources/windowsupdates-deploymentstate). To resume the deployment, use the value `none` and the state will either update to `offering` or `scheduled` if the deployment hasn't reached the start date yet. The following example pauses the deployment with a **Deployment ID** of `de910e12-3456-7890-abcd-ef1234567890`:
+
+```http
+
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
+  "state": {
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentState",
+    "requestedValue": "paused"
+  }
+}
+```
 
 ## Unenroll devices
 
