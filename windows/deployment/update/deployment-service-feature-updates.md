@@ -22,7 +22,6 @@ In this article, you will:
 > * [Open Graph Explorer](#open-graph-explorer)
 > * [Run queries to identify devices](#run-queries-to-identify-devices)
 > * [Enroll devices](#enroll-devices)
-> * [Create a deployment audience and add audience members](#create-a-deployment-audience-and-add-audience-members)
 > * [List catalog entries for feature updates](#list-catalog-entries-for-feature-updates)
 > * [Create a deployment](#create-a-deployment)
 > * Do Z
@@ -55,20 +54,15 @@ All of the [prerequisites for the Windows Update for Business deployment service
 When you enroll devices into feature update management, the deployment service becomes the authority for feature updates coming from Windows Update.
 As long as a device remains enrolled in feature update management through the deployment service, the device doesn't receive any other feature updates from Windows Update unless explicitly deployed using the deployment service. A device is offered the specified feature update if it hasn't already received the update. For example, if you deploy Windows 11 feature update version 22H2 to a device that's enrolled into feature update management and is currently on an older version of Windows 11, the device updates to version 22H2. If the device is already running version 22H2 or a later version, it stays on its current version.
 
-> [!TIP]
-> Windows Update for Business reports has a [workbook](wufb-reports-workbook.md#feature-updates-tab) that displays the current operating system version for devices. In the workbook, go to the **Feature updates** tab and in the **In Service feature update** tile, select the **View details** link to open the details flyout. The OS version and Azure AD ID of devices can easily be exported into a .csv file or opened in [Azure Monitor Logs](/azure/azure-monitor/logs/log-query-overview) to help when creating a deployment audience.
+   > [!TIP]
+   > Windows Update for Business reports has a [workbook](wufb-reports-workbook.md#feature-updates-tab) that displays the current operating system version for devices. In the workbook, go to the **Feature updates** tab and in the **In Service feature update** tile, select the **View details** link to open the details flyout. The OS version and Azure AD ID of devices can easily be exported into a .csv file or opened in [Azure Monitor Logs](/azure/azure-monitor/logs/log-query-overview) to help when creating a deployment audience.
 
 <!--Using include for enrolling devices using Graph Explorer-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-enroll-device-graph-explorer.md)]
 
-## Create a deployment audience and add audience members
-
-<!--Using include for creating deployment audiences and adding audience members using Graph Explorer-->
-[!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-audience-graph-explorer.md)]
-
 ## List catalog entries for feature updates
 
-Each feature update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). The `id` returned is the **Catalog ID** and is used to create a deployment. Feature updates are deployable until they reach their support retirement dates. For more information see, the support lifecycle dates for [Windows 10](/lifecycle/products/windows-10-enterprise-and-education) and [Windows 11](/lifecycle/products/windows-11-enterprise-and-education) Enterprise and Education editions. The following query lists all deployable feature update catalog entries:
+Each feature update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). The `id` returned is the **Catalog ID** and is used to create a deployment. Feature updates are deployable until they reach their support retirement dates. For more information, see the support lifecycle dates for [Windows 10](/lifecycle/products/windows-10-enterprise-and-education) and [Windows 11](/lifecycle/products/windows-11-enterprise-and-education) Enterprise and Education editions. The following query lists all deployable feature update catalog entries:
 
 ```http
 GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.featureUpdateCatalogEntry')
@@ -97,12 +91,14 @@ The following truncated response displays a **Catalog ID** of  `d9049ddb-0ca8-4b
 When creating a deployment for a feature update, there are multiple options available to define how the deployment behaves. The following [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings) are defined in the example request body for deploying the Windows 11, version 22H2 feature update (**Catalog ID** of  `d9049ddb-0ca8-4bc1-bd3c-41a456ef300f`):  
 
 - Deployment [start date](/graph/api/resources/windowsupdates-schedulesettings) of February 14, 2023 at 5 AM UTC
-- [Gradual rollout](/graph/api/resources/windowsupdates-gradualrolloutsettings) at a rate of 100 devices every 3 days
-- [Monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) that will pause the deployment if 5 devices rollback the feature update
+- [Gradual rollout](/graph/api/resources/windowsupdates-gradualrolloutsettings) at a rate of 100 devices every three days
+- [Monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) that will pause the deployment if five devices rollback the feature update
 - Default [safeguard hold](/graph/api/resources/windowsupdates-safeguardprofile) behavior of applying all applicable safeguards to devices in a deployment
   - When safeguard holds aren't explicitly defined, the default safeguard hold behavior is applied automatically
 
 ```http
+POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
+Content-type: application/json
 {
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
@@ -116,13 +112,12 @@ When creating a deployment for a feature update, there are multiple options avai
         "schedule": {
             "startDateTime": "2023-02-14T05:00:00Z",
             "gradualRollout": {
-                "@odata.type": "#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings",
+                "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
                 "durationBetweenOffers": "P3D",
                 "devicesPerOffer": "100"
             }
         },
         "monitoring": {
-        "@odata.type": "microsoft.graph.windowsUpdates.monitoringSettings",
             "monitoringRules": [
                 {
                     "signal": "rollback",
@@ -134,6 +129,122 @@ When creating a deployment for a feature update, there are multiple options avai
     }
 }
 ```
+
+The response body will contain:
+- The new **Deployment ID**, `de910e12-3456-7890-abcd-ef1234567890` in the example
+- The new **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567` in the example
+- Any settings defined in the deployment request body
+
+   ```json
+   {
+       "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments/$entity",
+       "id": "de910e12-3456-7890-abcd-ef1234567890",
+       "createdDateTime": "2023-02-07T19:21:15.425905Z",
+       "lastModifiedDateTime": "2023-02-07T19:21:15Z",
+       "state": {
+           "effectiveValue": "scheduled",
+           "requestedValue": "none",
+           "reasons": []
+       },
+       "content": {
+           "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+           "catalogEntry@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments('de910e12-3456-7890-abcd-ef1234567890')/content/microsoft.graph.windowsUpdates.catalogContent/catalogEntry/$entity",
+           "catalogEntry": {
+               "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+               "id": "d9049ddb-0ca8-4bc1-bd3c-41a456ef300f",
+               "displayName": "Windows 11, version 22H2",
+               "deployableUntilDateTime": "2025-10-14T00:00:00Z",
+               "releaseDateTime": "0001-01-01T00:00:00Z",
+               "version": "Windows 11, version 22H2"
+           }
+       },
+       "settings": {
+           "contentApplicability": null,
+           "userExperience": null,
+           "expedite": null,
+           "schedule": {
+               "startDateTime": "2023-02-14T05:00:00Z",
+               "gradualRollout": {
+                   "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+                   "durationBetweenOffers": "P3D",
+                   "devicesPerOffer": 100
+               }
+           },
+           "monitoring": {
+               "monitoringRules": [
+                   {
+                       "signal": "rollback",
+                       "threshold": 5,
+                       "action": "pauseDeployment"
+                   }
+               ]
+           }
+       },
+       "audience@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments('de910e12-3456-7890-abcd-ef1234567890')/audience/$entity",
+       "audience": {
+           "id": "d39ad1ce-0123-4567-89ab-cdef01234567",
+           "applicableContent": []
+       }
+   }
+   ```
+
+### Edit a deployment
+
+To [update deployment](/graph/api/windowsupdates-deployment-update), PATCH the deployment resource by its **Deployment ID** and supply the updated settings in the request body. The following example keeps the existing gradual rollout settings that were defined when creating the deployment but changes the deployment start date to February 28, 2023 at 5 AM UTC:
+
+```http  
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
+Content-type: application/json
+
+{
+    "settings": {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
+            "startDateTime": "2023-02-28T05:00:00Z",
+            "gradualRollout": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+                "durationBetweenOffers": "P3D",
+                "devicesPerOffer": "100"
+            }
+        }
+    }
+}
+
+```
+
+To verify the deployment settings for the **Deployment ID** of `de910e12-3456-7890-abcd-ef1234567890`:
+
+```http
+GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
+```
+
+## Add members to the deployment audience
+
+
+
+The **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567`, was created when the deployment was created. The **Audience ID** is used to add members to the deployment audience. The following example adds three devices to the deployment audience using the **Azure AD ID** for each device:
+
+   ```http
+   POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience
+   Content-type: application/json
+
+   {
+     "addMembers": [
+       {
+         "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+         "id": "01234567-89ab-cdef-0123-456789abcdef"
+       },
+       {
+         "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+         "id": "01234567-89ab-cdef-0123-456789abcde0"
+       },
+       {
+         "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+        "id": "01234567-89ab-cdef-0123-456789abcde1"
+       }
+     ]
+   }
+   ```
 
 ## Unenroll devices
 
