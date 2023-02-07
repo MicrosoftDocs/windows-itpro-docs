@@ -6435,7 +6435,7 @@ This event sends data specific to the FixupWimmountSysPath mitigation used for O
 
 The following fields are available:
 
-- **ClientId**  In the Windows Update scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **ClientId**  In the Windows Update scenario, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightId**  Unique identifier for each flight.
 - **ImagePathDefault**  Default path to wimmount.sys driver defined in the system registry.
 - **ImagePathFixedup**  Boolean indicating whether the wimmount.sys driver path was fixed by this mitigation.
