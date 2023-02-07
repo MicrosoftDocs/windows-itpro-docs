@@ -220,8 +220,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-
 
 ## Add members to the deployment audience
 
-
-
 The **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567`, was created when the deployment was created. The **Audience ID** is used to add members to the deployment audience. The following example adds three devices to the deployment audience using the **Azure AD ID** for each device:
 
    ```http
