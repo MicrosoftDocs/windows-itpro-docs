@@ -24,6 +24,8 @@ In this article, you will:
 > * [Enroll devices](#enroll-devices)
 > * [Create a deployment audience and add audience members](#create-a-deployment-audience-and-add-audience-members)
 > * [List catalog entries for feature updates](#list-catalog-entries-for-feature-updates)
+> * [Create a deployment](#create-a-deployment)
+> * Do Z
 > * Do Z
 > * Do Z
 > - [Unenroll devices](#unenroll-devices)
@@ -66,25 +68,18 @@ As long as a device remains enrolled in feature update management through the de
 
 ## List catalog entries for feature updates
 
-Each feature update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). The `id` returned is the **Catalog ID** and is used to create a deployment. Feature updates are deployable until they reach their support retirement dates. For more information see, the support lifecycle dates for [Windows 10](/lifecycle/products/windows-10-enterprise-and-education) and [Windows 11](/lifecycle/products/windows-11-enterprise-and-education) Enterprise and Education editions. The following query lists all deployable feature update catalog entries: 
+Each feature update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). The `id` returned is the **Catalog ID** and is used to create a deployment. Feature updates are deployable until they reach their support retirement dates. For more information see, the support lifecycle dates for [Windows 10](/lifecycle/products/windows-10-enterprise-and-education) and [Windows 11](/lifecycle/products/windows-11-enterprise-and-education) Enterprise and Education editions. The following query lists all deployable feature update catalog entries:
+
 ```http
 GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.featureUpdateCatalogEntry')
 ```
 
-Truncated response:
+The following truncated response displays a **Catalog ID** of  `d9049ddb-0ca8-4bc1-bd3c-41a456ef300f` for the Windows 11, version 22H2 feature update:
 
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/catalog/entries",
     "value": [
-        {
-            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
-            "id": "f341705b-0b15-4ce3-aaf2-6a1681d78606",
-            "displayName": "Windows 10, version 22H2",
-            "deployableUntilDateTime": "2024-10-08T00:00:00Z",
-            "releaseDateTime": "2022-10-18T00:00:00Z",
-            "version": "Windows 10, version 22H2"
-        },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
             "id": "d9049ddb-0ca8-4bc1-bd3c-41a456ef300f",
@@ -99,8 +94,46 @@ Truncated response:
 
 ## Create a deployment
 
+When creating a deployment for a feature update, there are multiple options available to define how the deployment behaves. The following [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings) are defined in the example request body for deploying the Windows 11, version 22H2 feature update (**Catalog ID** of  `d9049ddb-0ca8-4bc1-bd3c-41a456ef300f`):  
 
+- Deployment [start date](/graph/api/resources/windowsupdates-schedulesettings) of February 14, 2023 at 5 AM UTC
+- [Gradual rollout](/graph/api/resources/windowsupdates-gradualrolloutsettings) at a rate of 100 devices every 3 days
+- [Monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) that will pause the deployment if 5 devices rollback the feature update
+- Default [safeguard hold](/graph/api/resources/windowsupdates-safeguardprofile) behavior of applying all applicable safeguards to devices in a deployment
+  - When safeguard holds aren't explicitly defined, the default safeguard hold behavior is applied automatically
 
+```http
+{
+    "content": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "catalogEntry": {
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "d9049ddb-0ca8-4bc1-bd3c-41a456ef300f"
+        }
+    },
+    "settings": {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
+            "startDateTime": "2023-02-14T05:00:00Z",
+            "gradualRollout": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings",
+                "durationBetweenOffers": "P3D",
+                "devicesPerOffer": "100"
+            }
+        },
+        "monitoring": {
+        "@odata.type": "microsoft.graph.windowsUpdates.monitoringSettings",
+            "monitoringRules": [
+                {
+                    "signal": "rollback",
+                    "threshold": 5,
+                    "action": "pauseDeployment"
+                }
+            ]
+        }
+    }
+}
+```
 
 ## Unenroll devices
 
