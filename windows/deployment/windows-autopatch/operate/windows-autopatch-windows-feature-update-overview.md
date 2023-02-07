@@ -95,7 +95,7 @@ If you've paused an update, the specified release will have the **Customer Pause
 
 ## Rollback
 
-Windows Autopatch doesn’t support the rollback of Windows Feature updates.
+Windows Autopatch doesn’t support the rollback of Windows feature updates.
 
 > [!CAUTION]
 > It's only recommended to use Windows Autopatch's end-user experience to pause and resume [Windows quality](../operate/windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release). If you need assistance with pausing and resuming updates, please [submit a support request](../operate/windows-autopatch-support-request.md).
