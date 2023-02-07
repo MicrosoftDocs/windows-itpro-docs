@@ -133,7 +133,7 @@ The three following statuses are associated with paused quality updates:
 | Status | Description |
 | ----- | ------ |
 | Service Pause | If the Windows Autopatch service has paused an update, the release will have the **Service Pause** status. You must [submit a support request](../operate/windows-autopatch-support-request.md) to resume the update. |
-| Customer Pause | If you've paused an update, the release will have the **Customer Pause** status. The Windows Autopatch service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update. |
+| Customer Pause | If you've paused an update, the release will have the **Customer Pause** status. The Windows Autopatch service can't overwrite an IT admin's pause. You must select **Resume** to resume the update. |
 | Customer & Service Pause | If you and Windows Autopatch have both paused an update, the release will have the **Customer & Service Pause** status. If you resume the update, and the **Service Pause** status still remains, you must [submit a support request](../operate/windows-autopatch-support-request.md) for Windows Autopatch to resume the update deployment on your behalf. |
 
 ## Remediating Ineligible and/or Not up to Date devices
