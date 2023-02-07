@@ -40,4 +40,4 @@ The following options are available:
 | Export | Select **Export devices** at the top of the page to export data from this report into a CSV file. |
 | Filter | Select either the **Update status** or **Deployment rings** filters at the top of the report to filter the results. Then, select **Generate trend**. |
 
-For a description of the displayed device status trends, see [Windows quality update statuses](windows-autopatch-wqu-reports-overview.md#windows-quality-update-statuses).
+For a description of the displayed device status trends, see [Windows quality update statuses](windows-autopatch-windows-quality-update-reports-overview.md#windows-quality-update-statuses).

@@ -1,7 +1,7 @@
 ---
 title: Register your devices
 description: This article details how to register devices in Autopatch
-ms.date: 09/07/2022
+ms.date: 02/03/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -20,8 +20,8 @@ Before Microsoft can manage your devices in Windows Autopatch, you must have dev
 
 Windows Autopatch can take over software update management control of devices that meet software-based prerequisites as soon as an IT admin decides to have their tenant managed by the service. The Windows Autopatch software update management scope includes the following software update workloads:
 
-- [Windows quality updates](../operate/windows-autopatch-wqu-overview.md)
-- [Windows feature updates](../operate/windows-autopatch-fu-overview.md)
+- [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md)
+- [Windows feature updates](../operate/windows-autopatch-windows-feature-update-overview.md)
 - [Microsoft 365 Apps for enterprise updates](../operate/windows-autopatch-microsoft-365-apps-enterprise.md)
 - [Microsoft Edge updates](../operate/windows-autopatch-edge.md)
 - [Microsoft Teams updates](../operate/windows-autopatch-teams.md)
@@ -52,7 +52,7 @@ Azure AD groups synced up from:
 > It isn't recommended to sync Configuration Manager collections straight to the **Windows Autopatch Device Registration** Azure AD group. Use a different Azure AD group when syncing Configuration Manager collections to Azure AD groups then you can nest this or these groups into the **Windows Autopatch Device Registration** Azure AD group.
 
 > [!IMPORTANT]
-> The **Windows Autopatch Device Registration** Azure AD group only supports one level of Azure AD nested groups.
+> The **Windows Autopatch Device Registration** Azure AD group only supports **one level** of Azure AD nested groups.
 
 ### Clean up dual state of Hybrid Azure AD joined and Azure registered devices in your Azure AD tenant
 
