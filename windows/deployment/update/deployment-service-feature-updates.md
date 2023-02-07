@@ -212,7 +212,7 @@ Content-type: application/json
 
 ```
 
-To verify the deployment settings for the **Deployment ID** of `de910e12-3456-7890-abcd-ef1234567890`:
+Verify the deployment settings for the deployment with a **Deployment ID** of `de910e12-3456-7890-abcd-ef1234567890`:
 
 ```http
 GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
