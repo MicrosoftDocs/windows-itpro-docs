@@ -49,7 +49,7 @@ To create rules from the WDAC event logs on the system:
    > [!div class="mx-imgBorder"]
    > ![Parse WDAC and AppLocker event log system events](images/wdac-wizard-event-log-system.png)
 
-4. Select the Next button to view the audit and block events and create rules from.
+4. Select the Next button to view the audit and block events and create rules.
 5. [Generate rules from the events](#creating-policy-rules-from-the-events).
 
 ## WDAC Event Log File Parsing
@@ -66,7 +66,7 @@ To create rules from the WDAC `.EVTX` event logs files on the system:
    > [!div class="mx-imgBorder"]
    > ![Parse evtx file WDAC events](images/wdac-wizard-event-log-files.png)
 
-5. Select the Next button to view the audit and block events and create rules from.
+5. Select the Next button to view the audit and block events and create rules.
 6. [Generate rules from the events](#creating-policy-rules-from-the-events).
 
 ## MDE Advanced Hunting WDAC Event Parsing
@@ -113,7 +113,7 @@ To create rules from the WDAC events in [MDE Advanced Hunting](querying-applicat
    > [!div class="mx-imgBorder"]
    > ![Parse the Advanced Hunting CSV WDAC event files](images/wdac-wizard-event-log-mde-ah-parsing.png)
 
-7. Select the Next button to view the audit and block events and create rules from.
+7. Select the Next button to view the audit and block events and create rules.
 8. [Generate rules from the events](#creating-policy-rules-from-the-events).
 
 ## Creating Policy Rules from the Events
