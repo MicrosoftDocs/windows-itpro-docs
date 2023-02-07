@@ -4248,7 +4248,7 @@ The following fields are available:
 - **FlightId**  The ID of the Windows Insider build the device received.
 - **InstallDate**  The date the driver was installed.
 - **InstallFlags**  The driver installation flags.
-- **OptionalData**  Metadata specific to Windows Update associated with the driver (flight IDs, recovery IDs, etc.)
+- **OptionalData**  Metadata specific to Windows Update (WU) associated with the driver (flight IDs, recovery IDs, etc.)
 - **RebootRequired**  Indicates whether a reboot is required after the installation.
 - **RollbackPossible**  Indicates whether this driver can be rolled back.
 - **WuTargetedHardwareId**  Indicates that the driver was installed because the device hardware ID was targeted by the Windows Update.
