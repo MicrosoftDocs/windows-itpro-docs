@@ -19,7 +19,7 @@ ms.topic: reference
 <!-- LocalPoliciesSecurityOptions-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> To find data formats (and other policy-related details), see [Policy DDF file](./policy-ddf-file.md).
+> To find data formats (and other policy-related details), see [Policy DDF file](./configuration-service-provider-ddf.md).
 <!-- LocalPoliciesSecurityOptions-Editable-End -->
 
 <!-- Accounts_BlockMicrosoftAccounts-Begin -->
