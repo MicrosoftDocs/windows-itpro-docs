@@ -23,12 +23,19 @@ If you're not able to sign up for a Microsoft Azure subscription with the **Acco
 - [Can't sign up for a Microsoft Azure subscription](/troubleshoot/azure/general/cannot-sign-up-subscription). 
 - [Troubleshoot issues when you sign up for a new account in the Azure portal](/azure/cost-management-billing/manage/troubleshoot-azure-sign-up).
 
-## Installing on VMWare
+## Hardware specifications
+
+Most customers choose to install their cache node on a Windows Server with a nested Hyper-V VM. If this is not supported in your network, some customers have also opted to install their cache node using VMWare. At this time, a Linux-only solution is not available and Azure VMs do not support the standalone Microsoft Connected Cache.
+
+### Installing on VMWare
 
 We've seen that Microsoft Connected Cache for Enterprise and Education can be successfully installed on VMWare. To do so, there are a couple of additional configurations to be made:
 
 1. Ensure that you're using ESX. In the VM settings, turn on the option **Expose hardware assisted virtualization to the guest OS**.
 1. Using the HyperV Manager, create an external switch. For the external switch to have internet connection, ensure **"Allow promiscuous mode"**, **"Allow forged transmits"**, and **"Allow MAC changes"** are all switched to **Yes**.
+
+### Installing on Hyper-V
+To learn more about how to configure Intel and AMD processors to support nested virtualization, see [Run Hyper-V in a Virtual Machine with Nested Virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization).
 
 ## Diagnostics Script
 
@@ -95,7 +102,7 @@ You can either set your MCC IP address or FQDN using:
    :::image type="content" source="./images/ent-mcc-group-policy-hostname.png" alt-text="Screenshot of the Group Policy editor showing the Cache Server Hostname Group Policy setting." lightbox="./images/ent-mcc-group-policy-hostname.png":::
 
 
-**Verify Content using the DO Client**
+## Verify Content using the DO Client
 
 To verify that the Delivery Optimization client can download content using MCC, you can use the following steps:
 

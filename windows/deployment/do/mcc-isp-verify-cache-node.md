@@ -17,6 +17,28 @@ ms.topic: article
 
 This article details how to verify that your cache node(s) are functioning properly and serving traffic. This article also details how to monitor your cache nodes. 
 
+## Verify cache node installation is complete
+
+Sign in to the Connected Cache server or use SSH. Run the following command from a terminal to see the running modules (containers):
+
+```bash
+sudo iotedge list
+```
+
+:::image type="content" source="./images/mcc-isp-running-containers.png" alt-text="Screenshot of the terminal output of iotedge list command, showing the running containers." lightbox="./images/mcc-isp-running-containers.png":::
+
+If it lists the **edgeAgent** and **edgeHub** containers, but doesn't include **MCC**, view the status of the IoT Edge security manager using the command:
+
+```bash
+sudo iotedge system logs -- -f
+```
+
+For example, this command provides the current status of the starting and stopping of a container, or the container pull and start:
+
+:::image type="content" source="./images/mcc-isp-edge-journalctl.png" alt-text="Terminal output of journalctl command for iotedge." lightbox="./images/mcc-isp-edge-journalctl.png":::
+
+You may need to wait several minutes for the MCC container image to complete downloading and to start up. 
+
 ## Verify functionality on Azure portal
 
 Sign into the [Azure portal](https://www.portal.azure.com) and navigate to the **Overview** page. Select the **Monitoring** tab to verify the functionality of your server(s) by validating the number of healthy nodes shown. If you see any **Unhealthy nodes**, select the **Diagnose and Solve** link to troubleshoot and resolve the issue.
