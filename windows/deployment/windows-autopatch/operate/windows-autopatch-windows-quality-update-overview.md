@@ -1,7 +1,7 @@
 ---
 title: Windows quality updates
 description: This article explains how Windows quality updates are managed in Autopatch
-ms.date: 12/15/2022
+ms.date: 02/07/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+msreviewer: andredm7
 ---
 
 # Windows quality updates
@@ -108,7 +108,10 @@ Windows Autopatch schedules and deploys required Out of Band (OOB) updates relea
 
 ### Pausing and resuming a release
 
-If Windows Autopatch detects a [significant issue with a release](../operate/windows-autopatch-windows-quality-update-signals.md), we may decide to pause that release.
+> [!CAUTION]
+> It's only recommended to use Windows Autopatch's end-user experience to pause and resume [Windows quality](windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release). If you need assistance with pausing and resuming updates, please [submit a support request](../operate/windows-autopatch-support-request.md).
+
+The service-level pause of updates is driven by the various software update deployment-related signals Windows Autopatch receive from Windows Update for Business several other product groups within Microsoft. If Windows Autopatch detects a [significant issue with a release](../operate/windows-autopatch-windows-quality-update-signals.md), we may decide to pause that release.
 
 > [!IMPORTANT]
 > Pausing or resuming an update can take up to eight hours to be applied to devices. Windows Autopatch uses Microsoft Intune as its management solution and that's the average frequency devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates.<p>For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).</p>
@@ -125,12 +128,13 @@ If Windows Autopatch detects a [significant issue with a release](../operate/win
 8. If you're resuming an update, you can select one or more deployment rings.
 9. Select **Okay**.
 
-There are two statuses associated with paused quality updates, **Service Paused** and **Customer Paused**.
+The three following statuses are associated with paused quality updates:
 
 | Status | Description |
 | ----- | ------ |
-| Service Paused | If the Windows Autopatch service has paused an update, the release will have the **Service Paused** status. You must [submit a support request](windows-autopatch-support-request.md) to resume the update. |
-| Customer Paused | If you've paused an update, the release will have the **Customer Paused** status. The Windows Autopatch service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update. |
+| Service Pause | If the Windows Autopatch service has paused an update, the release will have the **Service Pause** status. You must [submit a support request](../operate/windows-autopatch-support-request.md) to resume the update. |
+| Customer Pause | If you've paused an update, the release will have the **Customer Pause** status. The Windows Autopatch service can't overwrite an IT admin's pause. You must select **Resume** to resume the update. |
+| Customer & Service Pause | If you and Windows Autopatch have both paused an update, the release will have the **Customer & Service Pause** status. If you resume the update, and the **Service Pause** status still remains, you must [submit a support request](../operate/windows-autopatch-support-request.md) for Windows Autopatch to resume the update deployment on your behalf. |
 
 ## Remediating Ineligible and/or Not up to Date devices
 
