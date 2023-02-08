@@ -14,7 +14,7 @@ msreviewer: hathind
 
 # Submit a tenant enrollment support request
 
-If you need more assistance with tenant enrollment, you can submit support requests to the Windows Autopatch Service Engineering Team in the Windows Autopatch enrollment tool. Email is the recommended approach to interact with the Windows Autopatch Service Engineering Team.
+If you need more assistance with tenant enrollment, you can submit support requests to the Windows Autopatch Service Engineering Team in the Windows Autopatch enrollment tool.
 
 > [!NOTE]
 > After you've successfully enrolled your tenant, this feature will no longer be accessible. You must [submit a support request through the Tenant administration menu](../operate/windows-autopatch-support-request.md).
