@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 11/15/2022
+ms.date: 02/10/2023
 ms.technology: itpro-updates
 ---
 
@@ -51,9 +51,9 @@ Windows Update for Business reports supports Windows client devices on the follo
 
 At minimum, Windows Update for Business reports requires devices to send diagnostic data at the *Required* level (previously *Basic*). For more information about what's included in different diagnostic levels, see [Diagnostics, feedback, and privacy in Windows](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319). 
 
-Some queries in Windows Update for Business reports require devices to send diagnostic data at the following levels:
+For some queries, such as Windows 11 eligibility reporting, Windows Update for Business reports requires devices to send diagnostic data at the following levels:
 
-- *Optional* level (previously *Full*) for Windows 11 devices
+- *Optional* level  for Windows 11 devices (previously *Full*)
 - *Enhanced* level for Windows 10 devices
 
 Device names don't appear in Windows Update for Business reports unless you individually opt-in devices by using a policy. The configuration script does this for you, but when using other client configuration methods, set one of the following to display device names:
