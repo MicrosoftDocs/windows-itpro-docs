@@ -2662,7 +2662,7 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 
 <!-- ScheduledInstallDay-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables the IT admin to schedule the day of the update installation. The data type is a integer.
+Enables the IT admin to schedule the day of the update installation. The data type is an integer.
 <!-- ScheduledInstallDay-Description-End -->
 
 <!-- ScheduledInstallDay-Editable-Begin -->
@@ -2733,7 +2733,7 @@ Enables the IT admin to schedule the day of the update installation. The data ty
 
 <!-- ScheduledInstallEveryWeek-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables the IT admin to schedule the update installation on the every week. Value type is integer.
+Enables the IT admin to schedule the update installation every week. Value type is integer.
 <!-- ScheduledInstallEveryWeek-Description-End -->
 
 <!-- ScheduledInstallEveryWeek-Editable-Begin -->
@@ -3058,7 +3058,7 @@ Enables the IT admin to schedule the update installation on the third week of th
 
 <!-- ScheduledInstallTime-Description-Begin -->
 <!-- Description-Source-DDF -->
- the IT admin to schedule the time of the update installation. The data type is a integer. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.
+ the IT admin to schedule the time of the update installation. The data type is an integer. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.
 <!-- ScheduledInstallTime-Description-End -->
 
 <!-- ScheduledInstallTime-Editable-Begin -->
@@ -3117,7 +3117,7 @@ Enables the IT admin to schedule the update installation on the third week of th
 
 <!-- SetDisablePauseUXAccess-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting allows to remove access to "Pause updates" feature.
+This setting allows removing access to "Pause updates" feature.
 
 Once enabled user access to pause updates is removed.
 <!-- SetDisablePauseUXAccess-Description-End -->
