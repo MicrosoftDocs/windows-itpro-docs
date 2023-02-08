@@ -47,7 +47,7 @@ landingContent:
           - text: Policy CSP
             url: policy-configuration-service-provider.md
           - text: Policy DDF file
-            url: policy-ddf-file.md
+            url: configuration-service-provider-ddf.md
           - text: Policy CSP - Start
             url: policy-csp-start.md
           - text: Policy CSP - Update
