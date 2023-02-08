@@ -105,4 +105,4 @@ Windows Autopatch doesn’t support the rollback of Windows feature updates.
 
 ## Contact support
 
-If you’re experiencing issues related to Windows feature updates, you can [submit a support request](../operate/windows-autopatch-support-request.md). Email is the recommended approach to interact with the Windows Autopatch Service Engineering Team.
+If you’re experiencing issues related to Windows feature updates, you can [submit a support request](../operate/windows-autopatch-support-request.md).
