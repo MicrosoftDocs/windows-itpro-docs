@@ -17,23 +17,34 @@ ms.date: 12/31/2017
 
 ***(Applies to: Windows 11 & Windows 10)***
 
-The Windows Update for Business deployment service is a cloud service within the Windows Update for Business product family. It provides control over the approval, scheduling, and safeguarding of updates delivered from Windows Update. It's designed to work in harmony with your existing Windows Update for Business policies.
+The Windows Update for Business deployment service is a cloud service within the Windows Update for Business product family. It's designed to work with your existing [Windows Update for Business](waas-manage-updates-wufb.md) policies and [Windows Update for Business reports](wufb-reports-overview.md). The deployment service provides control over the approval, scheduling, and safeguarding of updates delivered from Windows Update to managed devices. The service is privacy focused and backed by leading industry compliance certifications.
 
-The deployment service is designed for IT Pros who are looking for more control than is provided through deferral policies and deployment rings. It provides the following abilities:
+## Capabilities of the Windows Update for Business deployment service
 
-- You can schedule deployment of updates to start on a specific date (for example, deploy 20H2 to specified devices on March 14, 2021).
-- You can stage deployments over a period of days or weeks by using rich expressions (for example, deploy 20H2 to 500 devices per day, beginning on March 14, 2021).
-- You can bypass pre-configured Windows Update for Business policies to immediately deploy a security update across your organization when emergencies arise.
-- You can benefit from deployments with automatic piloting tailored to your unique device population to ensure coverage of hardware and software in your organization.
-- You can use safeguards against likely update issues that have been identified by Microsoft machine-learning algorithms and automatically hold the deployment for any affected devices.
+The deployment service is designed for IT Pros who are looking for more control than is provided through deferral policies and deployment rings. The service provides the following capabilities:
 
-The service is privacy focused and backed by leading industry compliance certifications.
+- **Approval and scheduling**: Approve and schedule deployment of updates to start on a specific date
+   - *Example*: Deploy the Windows 11 22H2 feature update to specified devices on February 17, 2023.
+- **Gradual rollout**: Stage deployments over a period of days or weeks by specifying gradual rollout settings
+  - *Example*: Deploy the Windows 11 22H2 feature update to 500 devices per day, beginning on February 17, 2023
+- **Expedite**: Bypass the configured Windows Update for Business policies to immediately deploy a security update across the organization
+- **Safeguard holds**: Automatically holds the deployment for devices that may be impacted by an update issue identified by Microsoft machine-learning algorithms
 
-## How it works
+Certain capabilities are available for specific update classifications: 
+
+|Capabilities | Quality updates | Feature updates | Drivers and firmware|
+|---|---|---|---|
+|Approval and scheduling | | Yes | Yes |
+|Gradual rollout | | Yes | Yes |
+|Expedite | Yes | | |
+|Safeguard holds| | Yes | |
+
+
+## How the deployment service works
 
 The deployment service complements existing Windows Update for Business capabilities, including existing device policies and [Windows Update for Business reports](wufb-reports-overview.md).
 
-:::image type="content" source="media/wufbds-product-large.png" alt-text="Elements in following text.":::
+:::image type="content" source="media/7512398-deployment-service-overview.png" alt-text="Elements in following text.":::
 
 Windows Update for Business comprises three elements:
 - Client policy to govern update experiences and timing – available through Group Policy and CSPs
@@ -73,6 +84,10 @@ Additionally, your organization must have one of the following subscriptions:
 - Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5)
 - Windows Virtual Desktop Access E3 or E5
 - Microsoft 365 Business Premium
+
+## Limitations
+
+Windows Update for Business deployment service is a Windows service hosted in Azure that uses Windows diagnostic data. You should be aware that Windows Update for Business deployment service doesn't meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services, see the [Microsoft Trust Center](/compliance/regulatory/offering-home). Windows Update for Business deployment service is available in the Azure Commercial cloud, but not available for GCC High or United States Department of Defense customers.
 
 ## Getting started
 
