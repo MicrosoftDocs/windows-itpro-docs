@@ -42,6 +42,8 @@ Certain capabilities are available for specific update classifications:
 
 ## How the deployment service works
 
+With typical update management solutions, usually update policies are set on the client itself using either registry edits, Group Policy, or an MDM solution that leverages CSPs. This means that the device determines what the end user experience for updates are
+
 The deployment service complements existing Windows Update for Business capabilities, including existing device policies and [Windows Update for Business reports](wufb-reports-overview.md).
 
 :::image type="content" source="media/7512398-deployment-service-overview.png" alt-text="Elements in following text.":::

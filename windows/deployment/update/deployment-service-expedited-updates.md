@@ -44,7 +44,6 @@ All of the [prerequisites for the Windows Update for Business deployment service
 [!INCLUDE [Graph Explorer device queries](./includes/wufb-deployment-find-device-name-graph-explorer.md)]
 
 
-
 ## List updates in the catalog that can be expedited
 
 1. Query the catalog to find updates that can be expedited, For example, query for all security updates that can be deployed as expedited updates by the deployment service. Using `$top=3` and ordering by `ReleaseDateTimeshows` displays the three most current updates.
