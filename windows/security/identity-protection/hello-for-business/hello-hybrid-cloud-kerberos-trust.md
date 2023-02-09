@@ -28,9 +28,8 @@ Windows Hello for Business cloud Kerberos trust uses *Azure AD Kerberos*, which 
 ## Azure AD Kerberos and cloud Kerberos trust authentication
 
 *Key trust* and *certificate trust* use certificate authentication-based Kerberos for requesting kerberos ticket-granting-tickets (TGTs) for on-premises authentication. This type of authentication requires a PKI for DC certificates, and requires end-user certificates for certificate trust.\
-For *Azure AD joined devices* to have single sign-on (SSO) to on-premises resources protected by Active Directory, they must trust and validate the DC certificates. For this to happen, a certificate revocation list (CRL) must be published to an endpoint accessible by the Azure AD joined devices.
 
-*Cloud Kerberos trust* uses *Azure AD Kerberos*, which doesn't require any of the above PKI to request TGTs.
+*Cloud Kerberos trust* uses *Azure AD Kerberos*, which doesn't require a PKI to request TGTs.
 
 With *Azure AD Kerberos*, Azure AD can issue TGTs for one or more AD domains. Windows can request a TGT from Azure AD when authenticating with Windows Hello for Business, and use the returned TGT for logon or to access traditional AD-based resources. Kerberos service tickets and authorization continue to be controlled by the on-premises Domain Controllers.
 
