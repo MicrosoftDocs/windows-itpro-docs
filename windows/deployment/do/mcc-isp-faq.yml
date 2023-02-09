@@ -69,8 +69,6 @@ sections:
         answer: We have already successfully onboarded ISPs in many countries around the world and have received positive feedback! However, you can always start off with a portion of your CIDR blocks to test out the performance of MCC before expanding to more customers.
       - question: How does Microsoft Connected Cache populate its content?
         answer: Microsoft Connected Cache is a cold cache warmed by client requests. The client requests content and that is what fills up the cache. There's no off-peak cache fill necessary. Microsoft Connected Cache will reach out to different CDN providers just like a client device would. The traffic flow from Microsoft Connected Cache will vary depending on how you currently transit to each of these CDN providers. The content can come from third party CDNs or from AFD.
-      - question: What do I do if I need more support and have more questions even after reading this FAQ page?
-        answer: For further support for Microsoft Connected Cache, visit [Troubleshooting Issues for Microsoft Connected Cache for ISP (public preview)](mcc-isp-support.md).
       - question: What CDNs will Microsoft Connected Cache pull content from?
         answer: | 
          Microsoft relies on a dynamic mix of 1st and 3rd party CDN providers to ensure enough capacity, redundancy, and performance for the delivery of Microsoft served content.  Though we don't provide lists of the CDN vendors we utilize as they can change without notice, our endpoints are public knowledge.  If someone were to perform a series of DNS lookups against our endpoints (tlu.dl.delivery.mp.microsoft.com for example), they would be able to determine which CDN or CDNs were in rotation at a given point in time:
@@ -82,3 +80,11 @@ sections:
          $ whois 13.107.4.50|grep "Organization:"
          
          Organization:   Microsoft Corporation (MSFT)
+      - question: I am a network service provider and have downstream transit customers. If one of my downstream transit customers onboards to Microsoft Connected Cache, how will it affect my traffic?
+        answer: If a downstream customer deploys a Microsoft Connected Cache node, the cache controller will prefer the downstream ASN when handling that ASN's traffic.
+      - question: I signed up for Microsoft Connected Cache, but I'm not receiving the verification email. What should I do?
+        answer: First, check that the email under the NOC role is correct in your PeeringDB page. If the email associated with NOC role is correct, search for an email from the sender "microsoft-noreply@microsoft.com" with the email subject - "Here’s your Microsoft Connected Cache verification code" in your Spam folders. Still can't find it? Ensure that your email admin rules allow emails from the sender "microsoft-noreply@microsoft.com".
+      - question: I have an active MCC, but I'm noticing I hit the message limit for my IoT Hub each day. Does this affect my MCC performance and should I be concerned?
+        answer: Even when the quota of 8k messages is hit, the MCC functionality will not be affected. Your client devices will continue to download content as normal. You will also not be charged above the 8k message limit, so you don’t need to worry at all about getting a paid plan – MCC will always be a free service. So what is the impact if functionality isn’t? Instead, messages about the configuration or edge deployment would be impacted – this means that if there was a request to update your MCC and the daily quota was reached, your MCC might not update. In that case, you would just need to wait for the next day to update. This is only a limitation of the private preview and is not an issue during public preview.
+      - question: What do I do if I need more support and have more questions even after reading this FAQ page?
+        answer: For further support for Microsoft Connected Cache, visit [Troubleshooting Issues for Microsoft Connected Cache for ISP (public preview)](mcc-isp-support.md).

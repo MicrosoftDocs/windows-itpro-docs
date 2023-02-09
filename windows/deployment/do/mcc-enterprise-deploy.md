@@ -305,21 +305,16 @@ sudo iotedge list
 
 :::image type="content" source="./images/ent-mcc-iotedge-list.png" alt-text="Screenshot of the iotedge list command." lightbox="./images/ent-mcc-iotedge-list.png":::
 
-If edgeAgent and edgeHub containers are listed, but not "MCC", you may view the status of the IoT Edge security manager using the command:
+If edgeAgent and edgeHub containers are listed, but not "MCC", you may view the status of the IoT Edge security manager by using the command:
 
 ```bash
 sudo journalctl -u iotedge -f
 ```
 
-For example, this command will provide the current status of the starting, stopping of a container, or the container pull and start.  
+This command will provide the current status of the starting, stopping of a container, or the container pull and start.  
 
 :::image type="content" source="./images/ent-mcc-journalctl.png" alt-text="Screenshot of the output from journalctl -u iotedge -f." lightbox="./images/ent-mcc-journalctl.png":::
 
-Use this command to check the IoT Edge Journal
-
-```bash
-sudo journalctl -u iotedge -f
-```
 
 > [!NOTE]
 > You should consult the IoT Edge troubleshooting guide ([Common issues and resolutions for Azure IoT Edge](/azure/iot-edge/troubleshoot)) for any issues you may encounter configuring IoT Edge, but we've listed a few issues that we encountered during our internal validation.
