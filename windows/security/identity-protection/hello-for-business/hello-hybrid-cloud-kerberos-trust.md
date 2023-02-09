@@ -114,8 +114,8 @@ Assign the policy to a security group that contains as members the devices or us
 
 Windows Hello for Business settings are also available in the settings catalog. For more information, see [Use the settings catalog to configure settings on Windows and macOS devices - preview](/mem/intune/configuration/settings-catalog).
 
->[!IMPORTANT]
-    >If you would like to enforce the use of Digits for your Windows Hello for Business PIN, you can use the Settings Catalog and choose the Digits or the Digits(User) instead of using the Identity Protection Template.
+> [!IMPORTANT]
+> If you want to enforce the use of digits for your Windows Hello for Business PIN, use the settings catalog and choose **Digits** or **Digits (User)** instead of using the Identity Protection template.
 
 ### Configure cloud Kerberos trust policy
 
