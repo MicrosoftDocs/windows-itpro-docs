@@ -43,7 +43,6 @@ All of the [prerequisites for the Windows Update for Business deployment service
 <!--Using include for Graph Explorer device queries-->
 [!INCLUDE [Graph Explorer device queries](./includes/wufb-deployment-find-device-name-graph-explorer.md)]
 
-## Enroll devices
 
 
 ## List updates in the catalog that can be expedited
