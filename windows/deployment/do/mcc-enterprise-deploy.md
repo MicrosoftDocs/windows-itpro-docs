@@ -31,18 +31,18 @@ To deploy MCC to your server:
 
 For questions regarding these instructions contact [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com)
 
-### Provide Microsoft with the Azure Subscription ID
+### Provide Microsoft with the Azure subscription ID
 
 As part of the MCC preview onboarding process an Azure subscription ID must be provided to Microsoft. 
 
 > [!IMPORTANT]
 > [Take this survey](https://aka.ms/MSConnectedCacheSignup) and provide your Azure subscription ID and contact information to be added to the allowlist for this preview. You will not be able to proceed if you skip this step.
 
-For information about creating or locating your subscription ID, see [Steps to obtain an Azure Subscription ID](mcc-enterprise-appendix.md#steps-to-obtain-an-azure-subscription-id).
+For information about creating or locating your subscription ID, see [Steps to obtain an Azure subscription ID](mcc-enterprise-appendix.md#steps-to-obtain-an-azure-subscription-id).
 
 ### Create the MCC resource in Azure
 
-The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes. 
+The MCC Azure management portal is used to create and manage MCC nodes. An Azure subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes. 
 
 Once you take the survey above and the MCC team adds your subscription ID to the allowlist, you'll be given a link to the Azure portal where you can create the resource described below. 
 
@@ -221,7 +221,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
 1. If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
 
-    1. You'll be shown a list of existing IoT Hubs in your Azure Subscription. Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter "1"**
+    1. You'll be shown a list of existing IoT Hubs in your Azure subscription. Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter "1"**
 
        :::image type="content" source="./images/ent-mcc-script-select-hub.png" alt-text="Screenshot of the installer script running in PowerShell prompting you to select which IoT Hub to use." lightbox="./images/ent-mcc-script-select-hub.png":::
        :::image type="content" source="./images/ent-mcc-script-complete.png" alt-text="Screenshot of the installer script displaying the completion summary in PowerShell." lightbox="./images/ent-mcc-script-complete.png":::
@@ -235,7 +235,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
 ## Verify proper functioning MCC server
 
-#### Verify Client Side
+#### Verify client side
 
 Connect to the EFLOW VM and check if MCC is properly running:
 

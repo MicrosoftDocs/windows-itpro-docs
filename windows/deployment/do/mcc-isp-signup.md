@@ -25,7 +25,7 @@ This article details the process of signing up for Microsoft Connected Cache for
 
 Before you begin sign up, ensure you have the following components:
 
-1. **Azure Pay-As-You-Go subscription**: Microsoft Connected Cache is a completely free-of-charge service hosted in Azure. You will need to have a Pay-As-You-Go subscription in order to onboard to our service. To create a subscription, [visit this page](https://azure.microsoft.com/offers/ms-azr-0003p/).
+1. **Azure Pay-As-You-Go subscription**: Microsoft Connected Cache is a completely free-of-charge service hosted in Azure. You'll need to have a Pay-As-You-Go subscription in order to onboard to our service. To create a subscription, go to the [Pay-As-You-Go subscription page](https://azure.microsoft.com/offers/ms-azr-0003p/).
 
 1. **Access to Azure portal**: Ensure you have the credentials needed to access your organization's Azure portal.
 
@@ -38,22 +38,22 @@ Before you begin sign up, ensure you have the following components:
 
 1. Navigate to the [Azure portal](https://www.portal.azure.com). Select **Create a Resource**. Then, search for **Microsoft Connected Cache**.
 
-   :::image type="content" source="./images/mcc-isp-search.png" alt-text="Screenshot of the Azure portal that shows the Microsoft Connected Cache resource in Azure marketplace.":::
+   :::image type="content" source="./images/mcc-isp-search.png" alt-text="Screenshot of the Azure portal that shows the Microsoft Connected Cache resource in Azure marketplace." lightbox="./images/mcc-isp-search.png":::
 
 1. Select **Create** to create a **Microsoft Connected Cache**. When prompted, choose the subscription, resource group, and location of your cache node. Also, enter a name for your cache node.
 
-   :::image type="content" source="./images/mcc-isp-create-resource-fields.png" alt-text="Screenshot of the Azure portal that shows the Microsoft Connected Cache resource creation step.":::
+   :::image type="content" source="./images/mcc-isp-create-resource-fields.png" alt-text="Screenshot of the Azure portal that shows the Microsoft Connected Cache resource creation step." lightbox="./images/mcc-isp-create-resource-fields.png":::
 
    > [!IMPORTANT]
    > After your resource has been created, we need some information to verify your network operator status and approve you to host Microsoft Connected Cache nodes. Please ensure that your [Peering DB](https://www.peeringdb.com/) organization information is up to date as this information will be used for verification. The NOC contact email will be used to send verification information.
 
-    After a few moments, you will see a "Validation successful" message, indicating you can move onto the next step and select **Create**.
+    After a few moments, you'll see a "Validation successful" message, indicating you can move onto the next step and select **Create**.
 
-   :::image type="content" source="./images/mcc-isp-create-resource-validated.png" alt-text="Screenshot of the Azure portal that shows a green validation successful message for the creation of the Microsoft Connected Cache resource.":::
+   :::image type="content" source="./images/mcc-isp-create-resource-validated.png" alt-text="Screenshot of the Azure portal that shows a green validation successful message for the creation of the Microsoft Connected Cache resource." lightbox="./images/mcc-isp-create-resource-validated.png":::
 
-1. The creation of the cache node may take a few minutes. After a successful creation, you will see a **Deployment complete** page as below. Select **Go to resource**.
+1. The creation of the cache node may take a few minutes. After a successful creation, you'll see a **Deployment complete** page as below. Select **Go to resource**.
 
-    :::image type="content" source="./images/mcc-isp-deployment-complete.png" alt-text="Screenshot of the Azure portal that shows a successful deployment for the creation of the Microsoft Connected Cache resource.":::
+    :::image type="content" source="./images/mcc-isp-deployment-complete.png" alt-text="Screenshot of the Azure portal that shows a successful deployment for the creation of the Microsoft Connected Cache resource." lightbox="./images/mcc-isp-deployment-complete.png":::
 
 1. Navigate to **Settings** > **Sign up**. Enter your organization ASN. Indicate whether you're a transit provider. If so, additionally, include any ASN(s) for downstream network operators that you may transit traffic for.
 

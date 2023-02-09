@@ -29,7 +29,7 @@ ms.technology: itpro-updates
    > [!NOTE]
    > Azure VMs are not currently supported. If you'd like to install your cache node on VMWare, see the [Appendix](mcc-enterprise-appendix.md) for a few additional configurations.
 
-    **EFLOW Requires Hyper-V support**
+    **EFLOW requires Hyper-V support**
     - On Windows client, enable the Hyper-V feature
     - On Windows Server, install the Hyper-V role and create a default network switch
 
@@ -43,7 +43,7 @@ ms.technology: itpro-updates
 
     VM networking:
     -  An external virtual switch to support outbound and inbound network communication (created during the installation process)
-1. **Content endpoints**: Using a proxy or firewall? Certain endpoints must be allowed through in order for your MCC to cache and serve content. See [Delivery Optimization and Microsoft Connected Cache content type endpoints](delivery-optimization-endpoints.md) for the complete list of endpoints required. 
+1. **Content endpoints**: If you're using a proxy or firewall, certain endpoints must be allowed through in order for your MCC to cache and serve content. See [Delivery Optimization and Microsoft Connected Cache content type endpoints](delivery-optimization-endpoints.md) for the list of required endpoints. 
 
 ## Sizing recommendations
 
