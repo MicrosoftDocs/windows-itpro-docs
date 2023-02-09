@@ -128,7 +128,7 @@ You must enable Restricted Admin or Windows Defender Remote Credential Guard on 
     
     - Add a new DWORD value named **DisableRestrictedAdmin**.
     
-    - To turn on Restricted Admin and Windows Defender Remote Credential Guard, set the value of this registry setting to 0 to turn on Windows Defender Remote Credential Guard.
+    - To turn on Restricted Admin and Windows Defender Remote Credential Guard, set the value of this registry setting to 0.
     
 3. Close Registry Editor.
 

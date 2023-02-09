@@ -17,8 +17,6 @@ msreviewer: hathind
 > [!IMPORTANT]
 > Make sure you've [added and verified your admin contacts](../deploy/windows-autopatch-admin-contacts.md). The Windows Autopatch Service Engineering Team will contact these individuals for assistance with remediating issues.
 
-You can submit support tickets to Microsoft using the Windows Autopatch admin center. Email is the recommended approach to interact with the Windows Autopatch Service Engineering Team.
-
 ## Submit a new support request
 
 Support requests are triaged and responded to as they're received.
