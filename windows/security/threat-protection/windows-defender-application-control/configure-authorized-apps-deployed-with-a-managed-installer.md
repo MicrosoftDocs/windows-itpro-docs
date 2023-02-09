@@ -13,7 +13,7 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 08/26/2022
+ms.date: 02/02/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -61,6 +61,9 @@ To turn on managed installer tracking, you must:
 
 - Create and deploy an AppLocker policy that defines your managed installer rules and enables services enforcement for executables and DLLs.
 - Enable AppLocker's Application Identity and AppLockerFltr services.
+
+> [!NOTE]
+> The managed installer AppLocker policy below is designed to be safely merged with any pre-existing AppLocker policies and won't change the behavior of those policies. However, if applied on a device that doesn't currently have any AppLocker policy, you will see a large increase in warning events generated in the *AppLocker - EXE and DLL* event log. If you're using an event forwarding and collection service, like LogAnalytics, you may want to adjust the configuration for that event log to only collect Error events or stop collecting events from that log altogether.
 
 > [!NOTE]
 > MEMCM will automatically configure itself as a managed installer, and enable the required AppLocker components, if you deploy one of its inbox WDAC policies. If you are configuring MEMCM as a managed installer using any other method, additional setup is required. Use the [**ManagedInstaller** cmdline switch in your ccmsetup.exe setup](/mem/configmgr/core/clients/deploy/about-client-installation-properties#managedinstaller). Or you can deploy one of the MEMCM inbox audit mode policies alongside your custom policy.

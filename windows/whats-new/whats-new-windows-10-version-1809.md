@@ -3,14 +3,14 @@ title: What's new in Windows 10, version 1809
 ms.reviewer: 
 description: Learn about features for Windows 10, version 1809, including features and fixes included in previous cumulative updates to Windows 10, version 1803.
 ms.prod: windows-client
-author: aczechowski
-manager: dougeby
-ms.author: aaroncz
+author: mestew
+manager: aaroncz
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: itpro-fundamentals
-ms.date: 12/31/2017
+ms.date: 01/31/2023
 ---
 
 # What's new in Windows 10, version 1809 for IT Pros
@@ -19,11 +19,13 @@ ms.date: 12/31/2017
 
 In this article, we describe new and updated features of interest to IT Pros for Windows 10, version 1809. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1803. 
 
+<!---
+
 The following 3-minute video summarizes some of the new features that are available for IT Pros in this release.
 
-&nbsp;
-
 > [!video https://www.youtube.com/embed/hAva4B-wsVA]
+
+--->
 
 ## Deployment
 
@@ -68,7 +70,7 @@ This new functionality is an update to the [BitLocker CSP](/windows/client-manag
 
 This feature will soon be enabled on Olympia Corp as an optional feature.
 
-#### Delivering BitLocker policy to AutoPilot devices during OOBE 
+#### Delivering BitLocker policy to Autopilot devices during OOBE 
 
 You can choose which encryption algorithm to apply to BitLocker encryption capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This option allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before BitLocker encryption begins. 
 

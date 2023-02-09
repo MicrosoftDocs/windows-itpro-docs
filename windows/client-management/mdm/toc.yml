@@ -34,7 +34,7 @@ items:
       href: policy-configuration-service-provider.md
       items:
       - name: Policy CSP DDF file
-        href: policy-ddf-file.md
+        href: configuration-service-provider-ddf.md
       - name: Policy CSP support scenarios
         items:
         - name: ADMX policies in Policy CSP

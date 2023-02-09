@@ -26,8 +26,8 @@ The report types are organized into the following focus areas:
 
 | Focus area | Description |
 | ----- | ----- |
-| Operational detail | <ul><li>[Summary dashboard](windows-autopatch-wqu-summary-dashboard.md): Provides the current update status summary for all devices.</li><li>[All devices report](windows-autopatch-wqu-all-devices-report.md): Provides the current update status of all devices at the device level.</li></ul> |
-| Device trends | <ul><li>[All devices report – historical](windows-autopatch-wqu-all-devices-historical-report.md): Provides the update status trend of all devices over the last 90 days.</li><li>[Eligible devices report – historical](windows-autopatch-wqu-eligible-devices-historical-report.md): Provides the update status trend of all eligible devices to receive quality updates over the last 90 days.</li><li>[Ineligible devices report – historical](windows-autopatch-wqu-ineligible-devices-historical-report.md): Provides a trending view of why ineligible devices haven’t received quality updates over the last 90 days.</li></ul> |
+| Operational detail | <ul><li>[Summary dashboard](windows-autopatch-windows-quality-update-summary-dashboard.md): Provides the current update status summary for all devices.</li><li>[All devices report](windows-autopatch-windows-quality-update-all-devices-report.md): Provides the current update status of all devices at the device level.</li></ul> |
+| Device trends | <ul><li>[All devices report – historical](windows-autopatch-windows-quality-update-all-devices-historical-report.md): Provides the update status trend of all devices over the last 90 days.</li><li>[Eligible devices report – historical](windows-autopatch-windows-quality-update-eligible-devices-historical-report.md): Provides the update status trend of all eligible devices to receive quality updates over the last 90 days.</li><li>[Ineligible devices report – historical](windows-autopatch-windows-quality-update-ineligible-devices-historical-report.md): Provides a trending view of why ineligible devices haven’t received quality updates over the last 90 days.</li></ul> |
 
 ## Who can access the reports?
 
@@ -57,16 +57,16 @@ Healthy devices are devices that meet all of the following prerequisites:
 
 - [Prerequisites](../prepare/windows-autopatch-prerequisites.md)
 - [Prerequisites for device registration](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration)
-- [Windows quality update device eligibility](../operate/windows-autopatch-wqu-overview.md#device-eligibility)
+- [Windows quality update device eligibility](../operate/windows-autopatch-windows-quality-update-overview.md#device-eligibility)
 
 > [!NOTE]
 > Healthy devices will remain with the **In Progress** status for the 21-day service level objective period. Devices which are **Paused** are also considered healthy.
 
 | Sub status | Description |
 | ----- | ----- |
-| Up to Date | Devices are up to date with the latest quality update deployed through the [Windows Autopatch release schedule](../operate/windows-autopatch-wqu-overview.md#windows-quality-update-releases). |
-| In Progress | Devices are currently installing the latest quality update deployed through the [Windows Autopatch release schedule](../operate/windows-autopatch-wqu-overview.md#windows-quality-update-releases). |
-| Paused | Devices that are currently paused due to a Windows Autopatch or customer-initiated Release Management pause. For more information, see [Pausing and resuming a release](../operate/windows-autopatch-wqu-overview.md#pausing-and-resuming-a-release). |
+| Up to Date | Devices are up to date with the latest quality update deployed through the [Windows Autopatch release schedule](../operate/windows-autopatch-windows-quality-update-overview.md#windows-quality-update-releases). |
+| In Progress | Devices are currently installing the latest quality update deployed through the [Windows Autopatch release schedule](../operate/windows-autopatch-windows-quality-update-overview.md#windows-quality-update-releases). |
+| Paused | Devices that are currently paused due to a Windows Autopatch or customer-initiated Release Management pause. For more information, see [Pausing and resuming a release](../operate/windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release). |
 
 ### Not Up to Date (Microsoft Action)
 
@@ -76,7 +76,7 @@ Not Up to Date means a device isn’t up to date when the:
 - Device is more than 21 days overdue from the last release.
 
 > [!NOTE]
-> Microsoft Action refers to the responsibility of the Windows Autopatch Service Engineering Team to carry out the appropriate action to resolve the reported device state. Windows Autopatch aims to keep at least [95% of eligible devices on the latest Windows quality update 21 days after release](../operate/windows-autopatch-wqu-overview.md#service-level-objective).
+> Microsoft Action refers to the responsibility of the Windows Autopatch Service Engineering Team to carry out the appropriate action to resolve the reported device state. Windows Autopatch aims to keep at least [95% of eligible devices on the latest Windows quality update 21 days after release](../operate/windows-autopatch-windows-quality-update-overview.md#service-level-objective).
 
 | Sub status | Description |
 | ----- | ----- |

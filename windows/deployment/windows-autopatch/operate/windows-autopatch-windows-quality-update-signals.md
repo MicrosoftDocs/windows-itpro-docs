@@ -24,7 +24,7 @@ Before being released to the Test ring, Windows Autopatch reviews several data s
 
 | Pre-release signal | Description |
 | ----- | ----- |
-| Windows Payload Review | The contents of the B release are reviewed to help focus your update testing on areas that have changed. If any relevant changes are detected, a [customer advisory](../operate/windows-autopatch-wqu-communications.md#communications-during-release) will be sent out. |
+| Windows Payload Review | The contents of the B release are reviewed to help focus your update testing on areas that have changed. If any relevant changes are detected, a [customer advisory](../operate/windows-autopatch-windows-quality-update-communications.md#communications-during-release) will be sent out. |
 | C-Release Review - Internal Signals | Windows Autopatch reviews active incidents associated with the previous C release to understand potential risks in the B release. |
 | C-Release Review - Social Signals | Windows Autopatch monitors social signals to better understand potential risks associated with the B release. |
 
@@ -56,4 +56,4 @@ Autopatch monitors the following reliability signals:
 | Microsoft Edge reliability | Tracks the number of Microsoft Edge crashes and freezes per device. |
 | Microsoft Teams reliability | Tracks the number of Microsoft Teams crashes and freezes per device. |
 
-When the update is released to the First ring, the service crosses the 500 device threshold. Therefore, Autopatch can to detect regressions, which are common to all customers. At this point in the release, we'll decide if we need to change the release schedule or pause for all customers.
+When the update is released to the First ring, the service crosses the 500 device threshold. Therefore, Autopatch can detect regressions that are common to all customers. At this point in the release, we'll decide if we need to change the release schedule or pause for all customers.
