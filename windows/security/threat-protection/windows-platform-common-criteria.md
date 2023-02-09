@@ -2,13 +2,14 @@
 title: Common Criteria Certifications
 description: This topic details how Microsoft supports the Common Criteria certification program.
 ms.prod: windows-client
-ms.author: paoloma
-author: paolomatarazzo
+ms.author: sushmanemali
+author: s4sush
 manager: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/4/2022
-ms.reviewer: 
+ms.reviewer: paoloma
+manager: mgrimm
 ms.technology: itpro-security
 ---
 
@@ -27,6 +28,17 @@ The product releases below are currently certified against the cited *Protection
 For more details, expand each product section.
 
 <br>
+
+
+<details>
+<summary><b>  Windows 11, Windows 10 (version  20H2, 21H1, 21H2), Windows Server, Windows Server 2022, Azure Stack HCIv2 version 21H2, Azure Stack Hub and Edge</b></summary>
+
+Certified against the Protection Profile for General Purpose Operating Systems, including the Extended Package for Wireless Local Area Network Clients and the Module for Virtual Private Network Clients
+
+- [Security Target](https://download.microsoft.com/download/c/5/9/c59832ff-414b-4f15-8273-d0c349a0b154/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Security%20Target%20(21H2%20et%20al).pdf)
+- [Administrative Guide](https://download.microsoft.com/download/9/1/7/9178ce6a-8117-42e7-be0d-186fc4a89ca6/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Administrative%20Guide%20(21H2%20et%20al).pdf)
+- [Assurance Activity Report](https://download.microsoft.com/download/4/1/6/416151fe-63e7-48c0-a485-1d87148c71fe/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Assurance%20Activity%20Report%20(21H2%20et%20al).pdf)
+- [Validation Report](https://download.microsoft.com/download/e/3/7/e374af1a-3c5d-42ee-8e19-df47d2c0e3d6/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Validation%20Report%20(21H2%20et%20al).pdf)
 
 <details>
 <summary><b>  Windows 10, version 2004, Windows Server, version 2004, Windows Server Core Datacenter (Azure Fabric Controller), Windows Server Core Datacenter (Azure Stack)</b></summary>
