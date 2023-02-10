@@ -7,7 +7,6 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ---
 
-<!-- MAXADO-6286399 -->
 # Configure federated sign-in for Windows 11 SE
 
 Starting in Windows 11 SE, version 22H2, you can enable your users to sign-in using a SAML 2.0 identity provider (IdP). This feature is called *federated sign-in*. Federated sign-in is a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Azure AD, they can sign-in using their existing credentials from the IdP. For example, students and educators can use QR code badges to sign-in.
