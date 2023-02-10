@@ -55,8 +55,8 @@ All of the [prerequisites for the Windows Update for Business deployment service
 When you enroll devices into feature update management, the deployment service becomes the authority for feature updates coming from Windows Update.
 As long as a device remains enrolled in feature update management through the deployment service, the device doesn't receive any other feature updates from Windows Update unless explicitly deployed using the deployment service. A device is offered the specified feature update if it hasn't already received the update. For example, if you deploy Windows 11 feature update version 22H2 to a device that's enrolled into feature update management and is currently on an older version of Windows 11, the device updates to version 22H2. If the device is already running version 22H2 or a later version, it stays on its current version.
 
-   > [!TIP]
-   > Windows Update for Business reports has a [workbook](wufb-reports-workbook.md#feature-updates-tab) that displays the current operating system version for devices. In the workbook, go to the **Feature updates** tab and in the **In Service feature update** tile, select the **View details** link to open the details flyout. The OS version and Azure AD ID of devices can easily be exported into a .csv file or opened in [Azure Monitor Logs](/azure/azure-monitor/logs/log-query-overview) to help when creating a deployment audience.
+> [!TIP]
+> Windows Update for Business reports has a [workbook](wufb-reports-workbook.md#feature-updates-tab) that displays the current operating system version for devices. In the workbook, go to the **Feature updates** tab and in the **In Service feature update** tile, select the **View details** link to open the details flyout. The OS version and Azure AD ID of devices can easily be exported into a .csv file or opened in [Azure Monitor Logs](/azure/azure-monitor/logs/log-query-overview) to help when creating a deployment audience.
 
 <!--Using include for enrolling devices using Graph Explorer-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-enroll-device-graph-explorer.md)]
@@ -65,7 +65,7 @@ As long as a device remains enrolled in feature update management through the de
 
 Each feature update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). The `id` returned is the **Catalog ID** and is used to create a deployment. Feature updates are deployable until they reach their support retirement dates. For more information, see the support lifecycle dates for [Windows 10](/lifecycle/products/windows-10-enterprise-and-education) and [Windows 11](/lifecycle/products/windows-11-enterprise-and-education) Enterprise and Education editions. The following query lists all deployable feature update catalog entries:
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.featureUpdateCatalogEntry')
 ```
 
@@ -97,9 +97,10 @@ When creating a deployment for a feature update, there are multiple options avai
 - Default [safeguard hold](/graph/api/resources/windowsupdates-safeguardprofile) behavior of applying all applicable safeguards to devices in a deployment
   - When safeguard holds aren't explicitly defined, the default safeguard hold behavior is applied automatically
 
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
-Content-type: application/json
+content-type: application/json
+
 {
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
@@ -193,9 +194,9 @@ The response body will contain:
 
 To [update deployment](/graph/api/windowsupdates-deployment-update), PATCH the deployment resource by its **Deployment ID** and supply the updated settings in the request body. The following example keeps the existing gradual rollout settings that were defined when creating the deployment but changes the deployment start date to February 28, 2023 at 5 AM UTC:
 
-```http  
+```msgraph-interactive  
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
-Content-type: application/json
+content-type: application/json
 
 {
     "settings": {
@@ -215,7 +216,7 @@ Content-type: application/json
 
 Verify the deployment settings for the deployment with a **Deployment ID** of `de910e12-3456-7890-abcd-ef1234567890`:
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
 ```
 
@@ -225,9 +226,9 @@ The **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567`, was created when th
 
 The following example adds three devices to the deployment audience using the **Azure AD ID** for each device:
 
-   ```http
+   ```msgraph-interactive
    POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience
-   Content-type: application/json
+   content-type: application/json
 
    {
      "addMembers": [
@@ -253,10 +254,10 @@ To pause a deployment, PATCH the deployment to have a `requestedValue` of `pause
 
 The following example pauses the deployment with a **Deployment ID** of `de910e12-3456-7890-abcd-ef1234567890`:
 
-```http
+```msgraph-interactive
 
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
-Content-Type: application/json
+content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deployment",

@@ -75,9 +75,10 @@ Update policies define how content is deployed to a deployment audience. An [upd
 
 To create a policy without any deployment settings, in the request body specify the **Audience ID** as `id`. In the following example, the **Audience ID** is `d39ad1ce-0123-4567-89ab-cdef01234567`, and the `id` given in the response is the **Policy ID**:
 
-   ```http
+   ```msgraph-interactive
    POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
-   Content-type: application/json
+   content-type: application/json
+   
    {
      "audience": {
        "@odata.id": "d39ad1ce-0123-4567-89ab-cdef01234567"
@@ -115,9 +116,10 @@ To create a policy with additional settings, in the request body:
 
    In the following driver update policy example, any deployments created by a content approval will start 7 days after approval and will gradually roll out to 1000 devices per day for **Audience ID** `d39ad1ce-0123-4567-89ab-cdef01234567`:
 
-   ```http
+   ```msgraph-interactive
    POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
-   Content-Type: application/json
+   content-type: application/json
+   
    Content-length: 967
    {
      "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
@@ -156,15 +158,14 @@ To create a policy with additional settings, in the request body:
 
 To review the policy settings, run the following query using the **Policy ID**, for example `9011c330-1234-5678-9abc-def012345678`:
 
-   ```http
-    GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678
+   ```msgraph-interactive
+   GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678
    ```
 
 To edit the policy settings, **PATCH** the policy using the **Policy ID**. Run the following **PATCH** to automatically approve driver content that's recommended by `Microsoft`for deployment for **Policy ID** `9011c330-1234-5678-9abc-def012345678`:
 
-``` http
-   PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678
-   Content-Type: application/json
+``` msgraph-interactive
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678
 
 {
     "complianceChangeRules": [
@@ -196,7 +197,7 @@ Once Windows Update for Business deployment service has scan results from device
 
 To display [applicable content](/graph/api/resources/windowsupdates-applicablecontent), run a query using the  **Audience ID**, for example `d39ad1ce-0123-4567-89ab-cdef01234567`:  
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/applicableContent
 ```
 
@@ -237,9 +238,9 @@ Each driver update is associated with a unique [catalog entry](/graph/api/resour
 
 Add a content approval to an existing policy, **Policy ID** `9011c330-1234-5678-9abc-def012345678` for the driver update with the **Catalog ID** `5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c`. Schedule the start date for February 14, 2023 at 1 AM UTC:
 
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges
-Content-type: application/json
+content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
@@ -261,7 +262,7 @@ Content-type: application/json
 
 The response for a content approval returns content and deployment settings along with an `id`, which is the **Compliance Change ID**. The **Compliance Change ID** is `c03911a7-9876-5432-10ab-cdef98765432` in the following truncated response:
 
-```http
+```json
     "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
     "id": "c03911a7-9876-5432-10ab-cdef98765432",
     "createdDateTime": "2023-02-02T17:54:39.173292Z",
@@ -281,7 +282,7 @@ The response for a content approval returns content and deployment settings alon
 
 Review all of the compliance changes to a policy with the most recent changes listed in the response first. The following example returns the compliance changes for a policy with the **Policy ID** `9011c330-1234-5678-9abc-def012345678` and sorts by `createdDateTime` in descending order:
 
-   ```http
+   ```msgraph-interactive
    GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges?orderby=createdDateTime desc
    ```
 
@@ -290,7 +291,7 @@ Review all of the compliance changes to a policy with the most recent changes li
 
 To retrieve the deployment ID, use the [expand parameter](/graph/query-parameters#expand-parameter) to review the deployment information related the content approval. The following example displays the content approval and the deployment information for **Compliance Change ID** `c03911a7-9876-5432-10ab-cdef98765432` in update **Policy ID** `9011c330-1234-5678-9abc-def012345678`:
 
-   ```http
+   ```msgraph-interactive
    GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges/c03911a7-9876-5432-10ab-cdef98765432/$/microsoft.graph.windowsUpdates.contentApproval?$expand=deployments
    ```
 
@@ -298,8 +299,9 @@ To retrieve the deployment ID, use the [expand parameter](/graph/query-parameter
 
 Since content approval is a compliance change for the policy, when you [update a content approval](/graph/api/resources/windowsupdates--contentapproval-update), you're editing the compliance change for the policy. The following example changes the `startDateTime` for the **Compliance Change ID** of `c03911a7-9876-5432-10ab-cdef98765432` in the update **Policy ID** `9011c330-1234-5678-9abc-def012345678` to February 28, 2023 at 5 AM UTC:
 
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges/c03911a7-9876-5432-10ab-cdef98765432
+content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
@@ -318,9 +320,10 @@ PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011
 Approval for content can be revoked by setting the `isRevoked` property of the [compliance change](/graph/api/resources/windowsupdates-compliance) to true. This setting can be changed while a deployment is in progress. However, revoking will only prevent the content from being offered to devices if they haven't already received it. To resume offering the content, a new [approval](#approve-driver-content-for-deployment) will need to be created.
 
 
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges/c03911a7-9876-5432-10ab-cdef98765432
-Content-type: application/json
+content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
     "isRevoked": true
@@ -329,7 +332,7 @@ Content-type: application/json
 
 To display all deployments with the most recently created returned first, order deployments based on the `createdDateTime`:
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/deployments?orderby=createdDateTime desc
 ```
 

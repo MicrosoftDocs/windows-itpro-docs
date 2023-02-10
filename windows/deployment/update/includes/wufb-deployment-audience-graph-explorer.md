@@ -13,9 +13,8 @@ A deployment audience is a collection of devices that you want to deploy updates
 
 1. To create a new audience, **POST** to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience) resource with a request body of `{}`.
 
-   ```http
-   POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
-   content-type: application/json
+   ```msgraph-interactive
+   POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences   
 
    {}
    ```
@@ -34,9 +33,8 @@ A deployment audience is a collection of devices that you want to deploy updates
 
 1. Add devices, using their **Azure AD ID**, to the deployment audience so they become audience members. Specify the deployment **Audience ID** in the URL field and the devices to add in the request body. The `id` property specifies the **Azure AD ID** of the device.
 
-   ```http
-   POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience
-   Content-type: application/json
+   ```msgraph-interactive
+   POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience   
 
    {
      "addMembers": [
@@ -58,6 +56,6 @@ A deployment audience is a collection of devices that you want to deploy updates
 
 1. To verify the devices were added to the audience, run the following query using the **Audience ID** of `d39ad1ce-0123-4567-89ab-cdef01234567`:
 
-   ```http
+   ```msgraph-interactive
    GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/members
    ```

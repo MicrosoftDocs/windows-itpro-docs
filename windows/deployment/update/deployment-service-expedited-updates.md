@@ -79,6 +79,7 @@ When creating a deployment, there are [multiple options](/graph/api/resources/wi
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
+content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
@@ -157,6 +158,7 @@ The following example adds two devices to the deployment audience using the **Az
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience
+content-type: application/json
 
 {
   "addMembers": [
@@ -180,6 +182,7 @@ The following example pauses the deployment with a **Deployment ID** of `de910e1
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
+content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
