@@ -35,7 +35,7 @@ Some TPM PCRs are used as checksums of log events. The log events are extended i
 
 To bind the use of a TPM based key to a certain state of the PC, the key can be sealed to an expected set of PCR values. For instance, PCRs 0 through 7 have a well-defined value after the boot process – when the OS is loaded. When the hardware, firmware, or boot loader of the machine changes, the change can be detected in the PCR values. Windows uses this capability to make certain cryptographic keys only available at certain times during the boot process. For instance, the BitLocker key can be used at a certain point in the boot, but not before or after.
 
-It is important to note that this binding to PCR values also includes the hashing algorithm used for the PCR. For instance, a key can be bound to a specific value of the SHA-1 PCR\[12\], if using SHA-256 PCR bank, even with the same system configuration. Otherwise, the PCR values will not match.
+It is important to note that this binding to PCR values also includes the hashing algorithm used for the PCR. For instance, a key can be bound to a specific value of the SHA-1 PCR\[12\], if using the SHA-256 PCR bank, even with the same system configuration. Otherwise, the PCR values will not match.
 
 ## What happens when PCR banks are switched?
 
