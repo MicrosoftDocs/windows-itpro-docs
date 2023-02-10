@@ -22,9 +22,8 @@ To unenroll a device, POST to [updatableAssets](/graph/api/resources/windowsupda
 
 The following example removes `driver` enrollment for two devices, `01234567-89ab-cdef-0123-456789abcdef` and `01234567-89ab-cdef-0123-456789abcde0`:
 
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/unenrollAssets
-Content-Type: application/json
 
 {
   "updateCategory": "driver",
