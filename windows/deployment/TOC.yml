@@ -178,7 +178,7 @@
             href: update/deployment-service-overview.md
           - name: Prerequisites for Windows Update for Business deployment service
             href: update/deployment-service-prerequisites.md
-          - name: Deploy updates with Windows Update for Business deployment service
+          - name: Deploy updates with the deployment service
             items:            
             - name: Deploy feature updates using Graph Explorer
               href: update/deployment-service-feature-updates.md

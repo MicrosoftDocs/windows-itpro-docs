@@ -11,18 +11,43 @@ ms.technology: itpro-updates
 ms.date: 12/31/2017
 ---
 
-
-
 # Windows Update for Business deployment service
 
 ***(Applies to: Windows 11 & Windows 10)***
 
 The Windows Update for Business deployment service is a cloud service within the Windows Update for Business product family. It's designed to work with your existing [Windows Update for Business](waas-manage-updates-wufb.md) policies and [Windows Update for Business reports](wufb-reports-overview.md). The deployment service provides control over the approval, scheduling, and safeguarding of updates delivered from Windows Update to managed devices. The service is privacy focused and backed by leading industry compliance certifications.
 
-Windows Update for Business has three elements:
-- Client policy, available through Group Policy settings and CSPs, which defines the timing and experience for updates
+Windows Update for Business product family has three elements:
+
+- Client policy to govern update experiences and timing, which are available through Group Policy and CSPs
 - [Windows Update for Business reports](wufb-reports-overview.md) to monitor update deployment
-- Deployment service APIs for approving and scheduling specific updates - available through the Microsoft Graph and associated SDKs (including PowerShell)
+- Deployment service APIs to approve and schedule specific updates for deployment, which are available through the Microsoft Graph and associated SDKs (including PowerShell)
+
+## How the deployment service works
+
+With most update management solutions, usually update policies are set on the client itself using either registry edits, Group Policy, or an MDM solution that leverages CSPs. This means that the end user experience and deployment settings for updates are ultimately determined by the individual device settings. However, with Windows Update for Business deployment service, the service is the central point of control for update deployment behavior. Because the deployment service is directly integrated into Windows Update, once the admin defines the update deployment behavior, Windows Update is already aware of the how the device should be directed to install when a device scans
+
+the service ensures that the update is delivered to the device in the defined manner. 
+
+The deployment service complements existing Windows Update for Business capabilities, including existing device policies and [Windows Update for Business reports](wufb-reports-overview.md).
+
+:::image type="content" source="media/7512398-deployment-service-overview.png" alt-text="Diagram displaying the three elements that are parts of the Windows Update for Business family. ":::
+
+Windows Update for Business comprises three elements:
+- Client policy to govern update experiences and timing which are available through Group Policy and CSPs
+- Deployment service APIs to approve and schedule specific updates which are available through the Microsoft Graph and associated SDKs (including PowerShell)
+- Windows Update for Business reports to monitor update deployment
+
+Unlike existing client policy, the deployment service doesn't interact with devices directly. The service is native to the cloud and all operations take place between various Microsoft services. It creates a direct communication channel between a management tool (including scripting tools such as Windows PowerShell) and the Windows Update service so that the approval and offering of content can be directly controlled by an IT Pro.
+
+:::image type="content" source="media/wufbds-interaction-small.png" alt-text="Process described in following text.":::
+
+Using the deployment service typically follows a common pattern:
+1. IT Pro uses a management tool to select devices and approve content to be deployed. This tool could be PowerShell, a Microsoft Graph app or a more complete management solution such as Microsoft Intune.
+2. The chosen tool conveys your approval, scheduling, and device selection information to the deployment service.
+3. The deployment service processes the content approval and compares it with previously approved content. Final update applicability is determined and conveyed to Windows Update, which then offers approved content to devices on their next check for updates.
+
+The deployment service exposes these capabilities through Microsoft [Graph REST APIs](/graph/overview). You can call the APIs directly, through a Graph SDK, or integrate them with a management tool such as Microsoft Intune.
 
 ## Capabilities of the Windows Update for Business deployment service
 
@@ -45,56 +70,9 @@ Certain capabilities are available for specific update classifications:
 |Safeguard holds| | Yes | |
 
 
-## How the deployment service works
 
-With most update management solutions, usually update policies are set on the client itself using either registry edits, Group Policy, or an MDM solution that leverages CSPs. This means that the end user experience and deployment settings for updates are ultimately determined by the individual device settings. However, with Windows Update for Business deployment service, the service is the central point of control for update deployment behavior. Because the deployment service is directly integrated into Windows Update, once the admin defines the update deployment behavior, the service ensures that the update is delivered to the device in the defined manner. 
 
-The deployment service complements existing Windows Update for Business capabilities, including existing device policies and [Windows Update for Business reports](wufb-reports-overview.md).
 
-:::image type="content" source="media/7512398-deployment-service-overview.png" alt-text="Elements in following text.":::
-
-Windows Update for Business comprises three elements:
-- Client policy to govern update experiences and timing - available through Group Policy and CSPs
-- Deployment service APIs to approve and schedule specific updates - available through the Microsoft Graph and associated SDKs (including PowerShell)
-- Windows Update for Business reports to monitor update deployment
-
-Unlike existing client policy, the deployment service doesn't interact with devices directly. The service is native to the cloud and all operations take place between various Microsoft services. It creates a direct communication channel between a management tool (including scripting tools such as Windows PowerShell) and the Windows Update service so that the approval and offering of content can be directly controlled by an IT Pro.
-
-:::image type="content" source="media/wufbds-interaction-small.png" alt-text="Process described in following text.":::
-
-Using the deployment service typically follows a common pattern:
-1. IT Pro uses a management tool to select devices and approve content to be deployed. This tool could be PowerShell, a Microsoft Graph app or a more complete management solution such as Microsoft Intune.
-2. The chosen tool conveys your approval, scheduling, and device selection information to the deployment service.
-3. The deployment service processes the content approval and compares it with previously approved content. Final update applicability is determined and conveyed to Windows Update, which then offers approved content to devices on their next check for updates.
-
-The deployment service exposes these capabilities through Microsoft [Graph REST APIs](/graph/overview). You can call the APIs directly, through a Graph SDK, or integrate them with a management tool such as Microsoft Intune.
-
-## Prerequisites
-
-To work with the deployment service, devices must meet all these requirements:
-
-- Devices must be [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
-- Run one of the following operating systems:
-  - Windows 11
-  - Windows 10, version 1709 or later
-   
-- Have one of the following Windows 10 or Windows 11 editions installed:
-    - Pro
-    - Enterprise
-    - Education
-    - Pro Education
-    - Pro for Workstations
-
-Additionally, your organization must have one of the following subscriptions:
-
-- Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
-- Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5)
-- Windows Virtual Desktop Access E3 or E5
-- Microsoft 365 Business Premium
-
-## Limitations
-
-Windows Update for Business deployment service is a Windows service hosted in Azure that uses Windows diagnostic data. You should be aware that Windows Update for Business deployment service doesn't meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services, see the [Microsoft Trust Center](/compliance/regulatory/offering-home). Windows Update for Business deployment service is available in the Azure Commercial cloud, but not available for GCC High or United States Department of Defense customers.
 
 ## Getting started
 
@@ -143,53 +121,11 @@ To verify whether a device is affected by a safeguard hold, see [Am I affected b
 
 During deployments of Windows 11 or Windows 10 feature updates, driver combinations can sometimes result in an unexpected update failure that makes the device revert to the previously installed operating system version. The deployment service can monitor devices for such issues and automatically pause deployments when this happens, giving you time to detect and mitigate issues.
 
-### How to enable deployment protections
-
-Deployment scheduling controls are always available, but to take advantage of the unique deployment protections tailored to your population, devices must share diagnostic data with Microsoft.
-
-#### Device prerequisites
-
-- Diagnostic data is set to *Required* or *Optional*.
-- The **AllowWUfBCloudProcessing** policy is set to **8**.
-
-#### Set the **AllowWUfBCloudProcessing** policy
-
-To enroll devices in Windows Update for Business cloud processing, set the **AllowWUfBCloudProcessing** policy using mobile device management (MDM) policy or Group Policy.
-
-| Policy| Sets registry key under `HKLM\Software`|
-|--|--|
-| GPO for Windows 10, version 1809 or later: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow WUfB Cloud Processing** | `\Policies\Microsoft\Windows\DataCollection\AllowWUfBCloudProcessing` |
-| MDM for Windows 10, version 1809 or later: ../Vendor/MSFT/ Policy/Config/System/**AllowWUfBCloudProcessing** | `\Microsoft\PolicyManager\current\device\System\AllowWUfBCloudProcessing` |
-
-Following is an example of setting the policy using Intune:
-
-1. Sign in to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-
-2. Select **Devices** > **Configuration profiles** > **Create profile**.
-
-3. Select **Windows 10 and later** in **Platform**, select **Templates** in **Profile type**, select **Custom** in **Template name**, and then select **Create**.
-
-4. In **Basics**, enter a meaningful name and a description for the policy, and then select **Next**.
-
-5. In **Configuration settings**, select **Add**, enter the following settings, select **Save**, and then select **Next**.
-    - Name: **AllowWUfBCloudProcessing**
-    - Description: Enter a description.
-    - OMA-URI: `./Vendor/MSFT/Policy/Config/System/AllowWUfBCloudProcessing`
-    - Data type: **Integer**
-    - Value: **8**
-
-6. In **Assignments**, select the groups that will receive the profile, and then select **Next**.
-
-7. In **Review + create**, review your settings, and then select **Create**.
-
-8. (Optional) To verify that the policy reached the client, check the value of the following registry entry: 
-
-   `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\System\AllowWUfBCloudProcessing`
 
 ## Best practices
 Follow these suggestions for the best results with the service.
 
-### Device onboarding 
+### Device onboarding
 
 - Wait until devices finish provisioning before managing with the service. If a device is being provisioned by Autopilot, it can only be managed by the deployment service after it finishes provisioning (typically one day).
 
