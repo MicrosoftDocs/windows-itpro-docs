@@ -49,7 +49,7 @@ Before switching PCR banks you should suspend or disable BitLocker – or have y
 
 ## How can I identify which PCR bank is being used?
 
-A TPM can be configured to have multiple PCR banks active. When BIOS is performing measurements it will do so into all active PCR banks, depending on its capability to make these measurements. BIOS may chose to deactivate PCR banks that it does not support or "cap" PCR banks that it does not support by extending a separator. The following registry value identifies which PCR banks are active.
+A TPM can be configured to have multiple PCR banks active. When BIOS is performing measurements it will do so into all active PCR banks, depending on its capability to make these measurements. BIOS may choose to deactivate PCR banks that it does not support or "cap" PCR banks that it does not support by extending a separator. The following registry value identifies which PCR banks are active.
 
 - Registry key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\IntegrityServices<br>
 - DWORD: TPMActivePCRBanks<br>
