@@ -35,12 +35,12 @@ There are different ways to enable and configure Windows Hello for Business in I
 
 To check the Windows Hello for Business policy applied at enrollment time:
 
-1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431/" target="_blank"><b>Microsoft Intune admin center</b></a>
 1. Select **Devices** > **Windows** > **Windows Enrollment**
 1. Select **Windows Hello for Business**
 1. Verify the status of **Configure Windows Hello for Business** and any settings that may be configured
 
-:::image type="content" source="images/whfb-intune-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Endpoint Manager admin center." border="true" lightbox="images/whfb-intune-disable.png":::
+:::image type="content" source="images/whfb-intune-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Intune admin center." border="true" lightbox="images/whfb-intune-disable.png":::
 
 If the tenant-wide policy is enabled and configured to your needs, you can skip to [Enroll in Windows Hello for Business](#enroll-in-windows-hello-for-business). Otherwise, follow the instructions below to create a policy using an *account protection* policy.
 
@@ -48,7 +48,7 @@ If the tenant-wide policy is enabled and configured to your needs, you can skip 
 
 To configure Windows Hello for Business using an *account protection* policy:
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Intune admin center</b></a>
 1. Select **Endpoint security** > **Account protection**
 1. Select **+ Create Policy**
 1. For *Platform**, select **Windows 10 and later** and for *Profile* select **Account protection**
@@ -62,7 +62,7 @@ To configure Windows Hello for Business using an *account protection* policy:
 1. Assign the policy to a security group that contains as members the devices or users that you want to configure > **Next**
 1. Review the policy configuration and select **Create**
 
-:::image type="content" source="images/whfb-intune-account-protection-enable.png" alt-text="Enablement of Windows Hello for Business from Microsoft Endpoint Manager admin center using an account protection policy." border="true" lightbox="images/whfb-intune-account-protection-enable.png":::
+:::image type="content" source="images/whfb-intune-account-protection-enable.png" alt-text="Enablement of Windows Hello for Business from Microsoft Intune admin center using an account protection policy." border="true" lightbox="images/whfb-intune-account-protection-enable.png":::
 
 #### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 

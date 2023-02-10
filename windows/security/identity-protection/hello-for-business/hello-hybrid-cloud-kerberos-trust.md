@@ -99,7 +99,7 @@ If you already enabled Windows Hello for Business, you can skip to **configure t
 
 You can also follow these steps to create a device configuration policy instead of using the device enrollment policy:
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** > **Windows** > **Configuration Profiles** > **Create profile**.
 1. For Platform, select **Windows 10 and later**.
 1. For Profile Type, select **Templates** and select the **Identity Protection** Template.
@@ -117,7 +117,7 @@ Windows Hello for Business settings are also available in the settings catalog. 
 
 To configure the *cloud Kerberos trust* policy, follow the steps below:
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** > **Windows** > **Configuration Profiles** > **Create profile**.
 1. For Profile Type, select **Templates** and select the **Custom** Template.
 1. Name the profile with a familiar name. For example, "Windows Hello for Business cloud Kerberos trust".

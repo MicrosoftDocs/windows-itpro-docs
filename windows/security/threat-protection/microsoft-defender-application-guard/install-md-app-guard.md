@@ -98,7 +98,7 @@ Application Guard functionality is turned off by default. However, you can quick
 
 :::image type="content" source="images/MDAG-EndpointMgr-newprofile.jpg" alt-text="Enroll devices in Intune.":::
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Configuration profiles** > **+ Create profile**, and do the following: <br/>
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Configuration profiles** > **+ Create profile**, and do the following: <br/>
 
    1. In the **Platform** list, select **Windows 10 and later**. 
    

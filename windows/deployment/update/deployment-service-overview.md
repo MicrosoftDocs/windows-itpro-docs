@@ -140,7 +140,7 @@ To enroll devices in Windows Update for Business cloud processing, set the **All
 
 Following is an example of setting the policy using Intune:
 
-1. Sign in to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 

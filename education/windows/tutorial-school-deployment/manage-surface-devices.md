@@ -21,13 +21,13 @@ DFCI supports zero-touch provisioning, eliminates BIOS passwords, and provides c
 
 ## Microsoft Surface Management Portal
 
-Located in the Microsoft Endpoint Manager admin center, the Microsoft Surface Management Portal enables you to self-serve, manage, and monitor your school's Intune-managed Surface devices at scale. Get insights into device compliance, support activity, warranty coverage, and more.
+Located in the Microsoft Intune admin center, the Microsoft Surface Management Portal enables you to self-serve, manage, and monitor your school's Intune-managed Surface devices at scale. Get insights into device compliance, support activity, warranty coverage, and more.
 
 When Surface devices are enrolled in cloud management and users sign in for the first time, information automatically flows into the Surface Management Portal, giving you a single pane of glass for Surface-specific administration activities.
 
 To access and use the Surface Management Portal:
 
-1. Sign in to <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+1. Sign in to <a href="https://go.microsoft.com/fwlink/?linkid=2109431/" target="_blank"><b>Microsoft Intune admin center</b></a>
 1. Select **All services** > **Surface Management Portal**
     :::image type="content" source="./images/surface-management-portal.png" alt-text="Surface Management Portal within Microsoft Endpoint Manager" lightbox="./images/surface-management-portal-expanded.png" border="true":::
 1. To obtain insights for all your Surface devices, select **Monitor**

@@ -242,7 +242,7 @@ The domain controllers have a certificate that includes the new CRL distribution
 
 To configure devices with Microsoft Intune, use a custom policy:
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Intune admin center</b></a>
 1. Select **Devices > Configuration profiles > Create profile**
 1. Select **Platform > Windows 8.1 and later** and **Profile type > Trusted certificate**
 1. Select **Create**
