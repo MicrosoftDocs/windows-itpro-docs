@@ -23,7 +23,7 @@ Windows Update for Business product family has three elements:
 - [Windows Update for Business reports](wufb-reports-overview.md) to monitor update deployment
 - Deployment service APIs to approve and schedule specific updates for deployment, which are available through the Microsoft Graph and associated SDKs (including PowerShell)
 
-The deployment service complements existing Windows Update for Business capabilities, including existing device policies and [Windows Update for Business reports](wufb-reports-overview.md).
+The deployment service complements existing Windows Update for Business capabilities, including existing device policies and the[Windows Update for Business reports workbook](wufb-reports-workbook.md).
 
 :::image type="content" source="media/7512398-deployment-service-overview.png" alt-text="Diagram displaying the three elements that are parts of the Windows Update for Business family.":::
 
@@ -54,7 +54,7 @@ The deployment service is designed for IT Pros who are looking for more control 
 
 Certain capabilities are available for specific update classifications:
 
-|Capabilities | Quality updates | Feature updates | Drivers and firmware|
+|Capabilities | [Quality updates](deployment-service-expedited-updates.md) | [Feature updates](deployment-service-feature-updates.md) | [Drivers and firmware](deployment-service-drivers.md)|
 |---|---|---|---|
 |Approval and scheduling | | Yes | Yes |
 |Gradual rollout | | Yes | Yes |
@@ -66,7 +66,7 @@ Certain capabilities are available for specific update classifications:
 
 The deployment service protects deployments through a combination of rollout controls and machine-learning algorithms that monitor deployments and react to issues during the rollout.
 
-### Schedule rollouts with automatic piloting
+### Gradual rollout
 
 The deployment service allows any update to be deployed over a period of days or weeks. Once an update has been scheduled, the deployment service optimizes the deployment based on the scheduling parameters and unique attributes spanning the devices being updated. The service follows these steps:
 
@@ -75,24 +75,28 @@ The deployment service allows any update to be deployed over a period of days or
 3. Start deploying to earlier waves to build coverage of device attributes present in the population.
 4. Continue deploying at a uniform rate until all waves are complete and all devices are updated.
 
-This built-in piloting capability complements your existing ring structure and provides another support for reducing and managing risk during an update. Unlike tools such as Desktop Analytics, this capability is intended to operate within each ring. The deployment service doesn't provide a workflow for creating rings themselves.
-
-You should continue to use deployment rings as part of the servicing strategy for your organization, but use gradual rollouts to add scheduling convenience and other protections within each ring.
+This built-in piloting capability complements your existing [deployment ring](waas-quick-start.md) structure and provides another support for reducing and managing risk during an update. This capability is intended to operate within each ring. The deployment service doesn't provide a workflow for creating rings themselves. Continue to use deployment rings as part of the servicing strategy for your organization, but use gradual rollouts to add scheduling convenience and other protections within each ring.
 
 ### Safeguard holds against likely and known issues
 
-Microsoft uses [safeguard holds](/windows/deployment/update/safeguard-holds) to protect devices from encountering known quality or compatibility issues by preventing them from installing the update or upgrade. For Windows 11 deployments, the deployment service extends these safeguard holds to also protect devices that Microsoft identifies as being at a higher risk of experiencing problems after an update (such as operating system rollbacks, app crashes, or graphics issues). The service temporarily holds the deployment for these devices while Microsoft investigates the likely issue. Safeguard holds apply to deployments by default, but you can opt out.
-
-To verify whether a device is affected by a safeguard hold, see [Am I affected by a safeguard hold?](/windows/deployment/update/safeguard-holds#am-i-affected-by-a-safeguard-hold)
+Microsoft uses [safeguard holds](/windows/deployment/update/safeguard-holds) to protect devices from encountering known quality or compatibility issues by preventing them from installing the update or upgrade. For Windows 11 deployments, the deployment service extends these safeguard holds to also protect devices that Microsoft identifies as being at a higher risk of experiencing problems after an update (such as operating system rollbacks, app crashes, or graphics issues). The service temporarily holds the deployment for these devices while Microsoft investigates the likely issue. Safeguard holds apply to deployments by default, but you can opt out. To verify whether a device is affected by a safeguard hold, see [Am I affected by a safeguard hold?](/windows/deployment/update/safeguard-holds#am-i-affected-by-a-safeguard-hold).
 
 ### Monitoring deployments to detect rollback issues
 
 During deployments of Windows 11 or Windows 10 feature updates, driver combinations can sometimes result in an unexpected update failure that makes the device revert to the previously installed operating system version. The deployment service can monitor devices for such issues and automatically pause deployments when this happens, giving you time to detect and mitigate issues.
-## Getting started with the deployment service
 
-To use the deployment service, you use a management tool built on the platform, script common actions using PowerShell, or build your own application.
+## Get started with the deployment service
 
-### Using Microsoft Intune
+To use the deployment service, you use a management tool built on the platform like Microsoft Intune, script common actions using PowerShell, or build your own application.
+
+To learn more about the deployment service, see:
+
+- [Prerequisites for Windows Update for Business deployment service](deployment-service-prerequisites.md)
+- [Deploy feature updates using Graph Explorer](deployment-service-feature-updates.md)
+- [Deploy expedited updates using Graph Explorer](deployment-service-expedited-updates.md)
+- [Deploy driver and firmware updates using Graph Explorer](deployment-service-drivers.md)
+
+### Use Microsoft Intune
 
 Microsoft Intune integrates with the deployment service to provide Windows client update management capabilities. For more information, see:
 

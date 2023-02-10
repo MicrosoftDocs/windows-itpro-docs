@@ -38,11 +38,20 @@ Windows Update for Business deployment service requires users of the devices to 
 - Windows 11 Professional, Education, Enterprise, Pro Education, or Pro for Workstations editions
 - Windows 10 Professional, Education, Enterprise, Pro Education, or Pro for Workstations editions
 
-## Windows client servicing channels
+### Windows operating system updates
+
+- Expediting updates requires the *Update Health Tools* on the clients. The tools are are installed starting with [KB 4023057](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a). To confirm the presence of the Update Health Tools on a device:
+  - Look for the folder **C:\Program Files\Microsoft Update Health Tools** or review *Add Remove Programs* for **Microsoft Update Health Tools**.
+  - As an Admin, run the following PowerShell script:  `Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match "Microsoft Update Health Tools"}`
+
+- Installing the 2023-02 Cumulative Update is highly recommended to take advantage of [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data).
+
+- ## Windows client servicing channels
 
 Windows Update for Business deployment service supports Windows client devices on the following channels:
 
 - General Availability Channel
+
 
 ## Diagnostic data requirements
 
@@ -59,21 +68,38 @@ Deployment scheduling controls are always available. However, to take advantage 
 > [!NOTE]
 > Leveraging other parts of the Graph API might require additional permissions. For example, to display [device](/graph/api/resources/device) information, a minimum of [Device.Read.All](/graph/permissions-reference#device-permissions) permission is needed.
 
+## Required endpoints
+
+- Have access to the following endpoints:
+
+- [Windows Update endpoints](/windows/privacy/manage-windows-1809-endpoints#windows-update)
+    - *.prod.do.dsp.mp.microsoft.com
+    - *.windowsupdate.com
+    - *.dl.delivery.mp.microsoft.com
+    - *.update.microsoft.com
+    - *.delivery.mp.microsoft.com
+    - tsfe.trafficshaping.dsp.mp.microsoft.com
+- Windows Update for Business deployment service endpoints 
+
+    - devicelistenerprod.microsoft.com
+    - login.windows.net
+    - payloadprod*.blob.core.windows.net
+
+- [Windows Push Notification Services](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config): *(Recommended, but not required. Without this access, devices might not expedite updates until their next daily check for updates.)*
+    - *.notify.windows.com
+
+
 ## Limitations
 
 <!--Using include for deployment service limitations-->
 [!INCLUDE [Windows Update for Business deployment service limitations](./includes/wufb-deployment-limitations.md)]
 
+## General tips for the deployment service
 
-## Best practices
-Follow these suggestions for the best results with the service.
-
-### Device onboarding
+Follow these suggestions for the best results with the service:
 
 - Wait until devices finish provisioning before managing with the service. If a device is being provisioned by Autopilot, it can only be managed by the deployment service after it finishes provisioning (typically one day).
 
 - Use the deployment service for feature update management without feature update deferral policy. If you want to use the deployment service to manage feature updates on a device that previously used a feature update deferral policy, it's best to set the feature update deferral policy to **0** days to avoid having multiple conditions governing feature updates. You should only change the feature update deferral policy value to 0 days after you've confirmed that the device was enrolled in the service with no errors.
 
-### General
-
-Avoid using different channels to manage the same resources. If you use Microsoft Intune along with Microsoft Graph APIs or PowerShell, aspects of resources (such as devices, deployments, updatable asset groups) might be overwritten if you use both channels to manage the same resources. Instead, only manage each resource through the channel that created it.
+- Avoid using different channels to manage the same resources. If you use Microsoft Intune along with Microsoft Graph APIs or PowerShell, aspects of resources (such as devices, deployments, updatable asset groups) might be overwritten if you use both channels to manage the same resources. Instead, only manage each resource through the channel that created it.

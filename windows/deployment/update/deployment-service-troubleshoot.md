@@ -19,6 +19,11 @@ ms.date: 12/31/2017
 
 This troubleshooting guide addresses the most common issues that IT administrators face when using the Windows Update for Business [deployment service](deployment-service-overview.md). For a general troubleshooting guide for Windows Update, see [Windows Update troubleshooting](/troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json).
 
+
+## General tips for the deployment service
+
+
+
 ## The device isn't receiving an update that I deployed
 
 - Check that the device doesn't have updates of the relevant category paused. See [Pause feature updates](waas-configure-wufb.md#pause-feature-updates) and [Pause quality updates](waas-configure-wufb.md#pause-quality-updates).

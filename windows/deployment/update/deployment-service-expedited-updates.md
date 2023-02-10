@@ -28,7 +28,7 @@ In this article, you will:
 
 ## Prerequisites
 
-All of the [prerequisites for the Windows Update for Business deployment service](deployment-service-overview.md#prerequisites) must be met.
+All of the [prerequisites for the Windows Update for Business deployment service](deployment-service-prerequisites.md) must be met.
 
 ### Permissions
 
