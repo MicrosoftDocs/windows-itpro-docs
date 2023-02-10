@@ -9,7 +9,6 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/4/2022
 ms.reviewer: paoloma
-manager: mgrimm
 ms.technology: itpro-security
 ---
 
@@ -25,12 +24,7 @@ The product releases below are currently certified against the cited *Protection
 - The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration
 - The *Certification Report or Validation Report* documents the results of the evaluation by the validation team, with the *Assurance Activity Report* providing details on the evaluator's actions
 
-For more details, expand each product section.
-
-<br>
-
-<details>
-<summary><b>  Windows 11, Windows 10 (version  20H2, 21H1, 21H2), Windows Server, Windows Server 2022, Azure Stack HCIv2 version 21H2, Azure Stack Hub and Edge</b></summary>
+### Windows 11, Windows 10 (version  20H2, 21H1, 21H2), Windows Server, Windows Server 2022, Azure Stack HCIv2 version 21H2, Azure Stack Hub and Edge
 
 Certified against the Protection Profile for General Purpose Operating Systems, including the Extended Package for Wireless Local Area Network Clients and the Module for Virtual Private Network Clients
 
@@ -39,10 +33,7 @@ Certified against the Protection Profile for General Purpose Operating Systems, 
 - [Assurance Activity Report](https://download.microsoft.com/download/4/1/6/416151fe-63e7-48c0-a485-1d87148c71fe/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Assurance%20Activity%20Report%20(21H2%20et%20al).pdf)
 - [Validation Report](https://download.microsoft.com/download/e/3/7/e374af1a-3c5d-42ee-8e19-df47d2c0e3d6/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Validation%20Report%20(21H2%20et%20al).pdf)
  
-</details>
-
-<details>
-<summary><b>  Windows 10, version 2004, Windows Server, version 2004, Windows Server Core Datacenter (Azure Fabric Controller), Windows Server Core Datacenter (Azure Stack)</b></summary>
+### Windows 10, version 2004, Windows Server, version 2004, Windows Server Core Datacenter (Azure Fabric Controller), Windows Server Core Datacenter (Azure Stack)
 
 Certified against the Protection Profile for General Purpose Operating Systems, including the Extended Package for Wireless Local Area Network Clients and the Module for Virtual Private Network Clients
 
@@ -51,10 +42,7 @@ Certified against the Protection Profile for General Purpose Operating Systems, 
 - [Validation Report](https://download.microsoft.com/download/1/c/b/1cb65e32-f87d-41dd-bc29-88dc943fad9d/Windows%2010%202004%20GP%20OS%20Validation%20Reports.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/3/2/4/324562b6-0917-4708-8f9d-8d2d12859839/Windows%2010%202004%20GP%20OS%20Assurance%20Activity%20Report-Public%20.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1909, Windows Server, version 1909, Windows Server 2019, version 1809 Hyper-V</b></summary>
+### Windows 10, version 1909, Windows Server, version 1909, Windows Server 2019, version 1809 Hyper-V
 
 Certified against the Protection Profile for Virtualization, including the Extended Package for Server Virtualization.
 
@@ -63,10 +51,7 @@ Certified against the Protection Profile for Virtualization, including the Exten
 - [Validation Report](https://download.microsoft.com/download/4/7/6/476ca991-631d-4943-aa89-b0cd4f448d14/Windows%20+%20Windows%20Server%201909,%20Windows%20Server%202019%20Hyper-V%20Validation%20Report.pdf)
 - [Assurance Activities Report](https://download.microsoft.com/download/3/b/4/3b4818d8-62a1-4b8d-8cb4-9b3256564355/Windows%20+%20Windows%20Server%201909,%20Windows%20Server%202019%20Hyper-V%20Assurance%20Activity%20Report.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1909, Windows Server, version 1909</b></summary>
+### Windows 10, version 1909, Windows Server, version 1909
 
 Certified against the Protection Profile for General Purpose Operating Systems, including the Extended Package for Wireless Local Area Network Clients and the Module for Virtual Private Network Clients.</b></summary>
 
@@ -75,10 +60,7 @@ Certified against the Protection Profile for General Purpose Operating Systems, 
 - [Certification Report](https://download.microsoft.com/download/9/f/3/9f350b73-1790-4dcb-97f7-a0e65a00b55f/Windows%2010%201909%20GP%20OS%20Certification%20Report.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/0/0/d/00d26b48-a051-4e9a-8036-850d825f8ef9/Windows%2010%201909%20GP%20OS%20Assurance%20Activity%20Report.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1903, Windows Server, version 1903</b></summary>
+### Windows 10, version 1903, Windows Server, version 1903
 
 Certified against the Protection Profile for General Purpose Operating Systems, including the Extended Package for Wireless Local Area Network Clients.</b></summary>
 
@@ -87,10 +69,7 @@ Certified against the Protection Profile for General Purpose Operating Systems, 
 - [Certification Report](https://download.microsoft.com/download/2/1/9/219909ad-2f2a-44cc-8fcb-126f28c74d36/Windows%2010%201903%20GP%20OS%20Certification%20Report.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/2/a/1/2a103b68-cd12-4476-8945-873746b5f432/Windows%2010%201903%20GP%20OS%20Assurance%20Activity%20Report.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1809, Windows Server, version 1809</b></summary>
+### Windows 10, version 1809, Windows Server, version 1809
 
 Certified against the Protection Profile for General Purpose Operating Systems, including the Extended Package for Wireless Local Area Network Clients.
 
@@ -99,10 +78,7 @@ Certified against the Protection Profile for General Purpose Operating Systems, 
 - [Certification Report](https://download.microsoft.com/download/9/4/0/940ac551-7757-486d-9da1-7aa0300ebac0/Windows%2010%20version%201809%20GP%20OS%20Certification%20Report%20-%202018-61-INF-2795.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/a/6/6/a66bfcf1-f6ef-4991-ab06-5b1c01f91983/Windows%2010%201809%20GP%20OS%20Assurance%20Activity%20Report.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1803, Windows Server, version 1803</b></summary>
+### Windows 10, version 1803, Windows Server, version 1803
 
 Certified against the Protection Profile for General Purpose Operating Systems, including the Extended Package for Wireless Local Area Network Clients.
 
@@ -111,10 +87,7 @@ Certified against the Protection Profile for General Purpose Operating Systems, 
 - [Certification Report](https://download.microsoft.com/download/6/7/1/67167BF2-885D-4646-A61E-96A0024B52BB/Windows%2010%201803%20GP%20OS%20Certification%20Report.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/b/3/d/b3da41b6-6ebc-4a26-a581-2d2ad8d8d1ac/Windows%2010%201803%20GP%20OS%20Assurance%20Activity%20Report.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1709, Windows Server, version 1709</b></summary>
+### Windows 10, version 1709, Windows Server, version 1709
 
 Certified against the Protection Profile for General Purpose Operating Systems.
 
@@ -123,10 +96,7 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 - [Certification Report](https://download.microsoft.com/download/2/C/2/2C20D013-0610-4047-B2FA-516819DFAE0A/Windows%2010%201709%20GP%20OS%20Certification%20Report.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/e/7/6/e7644e3c-1e59-4754-b071-aec491c71849/Windows%2010%201709%20GP%20OS%20Assurance%20Activity%20Report.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1703, Windows Server, version 1703</b></summary>
+### Windows 10, version 1703, Windows Server, version 1703
 
 Certified against the Protection Profile for General Purpose Operating Systems.
 
@@ -135,10 +105,7 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 - [Certification Report](https://download.microsoft.com/download/3/2/c/32cdf627-dd23-4266-90ff-2f9685fd15c0/2017-49%20inf-2218%20cr.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/a/e/9/ae9a2235-e1cd-4869-964d-c8260f604367/Windows%2010%201703%20GP%20OS%20Assurance%20Activity%20Report.pdf) 
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1607, Windows Server 2016</b></summary>
+### Windows 10, version 1607, Windows Server 2016
 
 Certified against the Protection Profile for General Purpose Operating Systems.
 
@@ -147,10 +114,7 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 - [Validation Report](https://download.microsoft.com/download/5/4/8/548cc06e-c671-4502-bebf-20d38e49b731/2016-36-inf-1779.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/a/5/f/a5f08a43-75f9-4433-bd77-aeb14276e587/Windows%2010%201607%20GP%20OS%20Assurance%20Activity%20Report.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1507, Windows Server 2012 R2</b></summary>
+### Windows 10, version 1507, Windows Server 2012 R2
 
 Certified against the Protection Profile for General Purpose Operating Systems.
 
@@ -158,8 +122,6 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 - [Administrative Guide](https://download.microsoft.com/download/0/f/d/0fd33c9a-98ac-499e-882f-274f80f3d4f0/microsoft%20windows%2010%20and%20server%202012%20r2%20gp%20os%20guidance.pdf)
 - [Certification Report](https://www.commoncriteriaportal.org/files/epfiles/cr_windows10.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/7/e/5/7e5575c9-10f9-4f3d-9871-bd7cf7422e3b/Windows%2010%20(1507),%20Windows%20Server%202012%20R2%20GPOS%20Assurance%20Activity%20Report.pdf)
-
-</details>
 
 ## Archived certified products
 
@@ -169,12 +131,7 @@ The product releases below were certified against the cited *Protection Profile*
 - The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration
 - The *Certification Report or Validation Report* documents the results of the evaluation by the validation team, with the *Assurance Activity Report* providing details on the evaluator's actions
 
-For more details, expand each product section.
-
-
-<br>
-<details>
-<summary><b>  Windows Server 2016, Windows Server 2012 R2, Windows 10</b></summary>
+### Windows Server 2016, Windows Server 2012 R2, Windows 10
 
 Certified against the Protection Profile for Server Virtualization.
 
@@ -183,10 +140,7 @@ Certified against the Protection Profile for Server Virtualization.
 - [Validation Report](https://download.microsoft.com/download/a/3/3/a336f881-4ac9-4c79-8202-95289f86bb7a/st_vid10823-vr.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/3/f/c/3fcc76e1-d471-4b44-9a19-29e69b6ab899/Windows%2010%20Hyper-V,%20Server%202016,%20Server%202012%20R2%20Virtualization%20Assurance%20Activity%20Report.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1607, Windows 10 Mobile, version 1607</b></summary>
+### Windows 10, version 1607, Windows 10 Mobile, version 1607
 
 Certified against the Protection Profile for Mobile Device Fundamentals.
 
@@ -195,10 +149,7 @@ Certified against the Protection Profile for Mobile Device Fundamentals.
 - [Validation Report](https://download.microsoft.com/download/f/2/f/f2f7176e-34f4-4ab0-993c-6606d207bb3c/st_vid10752-vr.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/9/3/9/939b44a8-5755-4d4c-b020-d5e8b89690ab/Windows%2010%20and%20Windows%2010%20Mobile%201607%20MDF%20Assurance%20Activity%20Report.pdf) 
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1607, Windows Server 2016</b></summary>
+### Windows 10, version 1607, Windows Server 2016
 
 Certified against the Protection Profile for IPsec Virtual Private Network (VPN) Clients.
 
@@ -207,10 +158,7 @@ Certified against the Protection Profile for IPsec Virtual Private Network (VPN)
 - [Validation Report](https://download.microsoft.com/download/2/0/a/20a8e686-3cd9-43c4-a22a-54b552a9788a/st_vid10753-vr.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/b/8/d/b8ddc36a-408a-4d64-a31c-d41c9c1e9d9e/Windows%2010%201607,%20Windows%20Server%202016%20IPsec%20VPN%20Client%20Assurance%20Activity%20Report.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1511</b></summary>
+### Windows 10, version 1511
 
 Certified against the Protection Profile for Mobile Device Fundamentals.
 
@@ -219,10 +167,7 @@ Certified against the Protection Profile for Mobile Device Fundamentals.
 - [Validation Report](https://download.microsoft.com/download/d/c/b/dcb7097d-1b9f-4786-bb07-3c169fefb579/st_vid10715-vr.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/1/f/1/1f12ed80-6d73-4a16-806f-d5116814bd7c/Windows%2010%20November%202015%20Update%20(1511)%20MDF%20Assurance%20Activity%20Report.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1507, Windows 10 Mobile, version 1507</b></summary>
+### Windows 10, version 1507, Windows 10 Mobile, version 1507
 
 Certified against the Protection Profile for Mobile Device Fundamentals.
 
@@ -231,10 +176,7 @@ Certified against the Protection Profile for Mobile Device Fundamentals.
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid10694-vr.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/a/1/3/a1365491-0a53-42cd-bd73-ca4067c43d86/Windows%2010,%20Windows%2010%20Mobile%20(1507)%20MDF%20Assurance%20Activity%20Report.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 10, version 1507</b></summary>
+### Windows 10, version 1507
 
 Certified against the Protection Profile for IPsec Virtual Private Network (VPN) Clients.
 
@@ -243,10 +185,7 @@ Certified against the Protection Profile for IPsec Virtual Private Network (VPN)
 - [Validation Report](https://download.microsoft.com/download/9/b/6/9b633763-6078-48aa-b9ba-960da2172a11/st_vid10746-vr.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/9/3/6/93630ffb-5c06-4fea-af36-164da3e359c9/Windows%2010%20IPsec%20VPN%20Client%20Assurance%20Activity%20Report.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 8.1 with Surface 3, Windows Phone 8.1 with Lumia 635 and Lumia 830</b></summary>
+### Windows 8.1 with Surface 3, Windows Phone 8.1 with Lumia 635 and Lumia 830
 
 Certified against the Protection Profile for Mobile Device Fundamentals.
 
@@ -254,10 +193,7 @@ Certified against the Protection Profile for Mobile Device Fundamentals.
 - [Administrative Guide](https://download.microsoft.com/download/b/e/3/be365594-daa5-4af3-a6b5-9533d61eae32/surface%20pro%203%20mobile%20operational%20guidance.docx)
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid10635-vr.pdf)
 
-</details>
-
-<details>
-<summary><b>  Surface Pro 3, Windows 8.1</b></summary>
+### Surface Pro 3, Windows 8.1
 
 Certified against the Protection Profile for Mobile Device Fundamentals.
 
@@ -265,10 +201,7 @@ Certified against the Protection Profile for Mobile Device Fundamentals.
 - [Administrative Guide](https://download.microsoft.com/download/b/e/3/be365594-daa5-4af3-a6b5-9533d61eae32/surface%20pro%203%20mobile%20operational%20guidance.docx)
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid10632-vr.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 8.1, Windows Phone 8.1</b></summary>
+### Windows 8.1, Windows Phone 8.1
 
 Certified against the Protection Profile for Mobile Device Fundamentals.
 
@@ -276,10 +209,7 @@ Certified against the Protection Profile for Mobile Device Fundamentals.
 - [Administrative Guide](https://download.microsoft.com/download/b/0/e/b0e30225-5017-4241-ac0a-6c40bc8e6714/mobile%20operational%20guidance.docx)
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid10592-vr.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 8, Windows Server 2012</b></summary>
+### Windows 8, Windows Server 2012
 
 Certified against the Protection Profile for General Purpose Operating Systems.
 
@@ -287,10 +217,7 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 - [Administrative Guide](https://download.microsoft.com/download/6/0/b/60b27ded-705a-4751-8e9f-642e635c3cf3/microsoft%20windows%208%20windows%20server%202012%20common%20criteria%20supplemental%20admin%20guidance.docx)
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid10520-vr.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 8, Windows RT</b></summary>
+### Windows 8, Windows RT
 
 Certified against the Protection Profile for General Purpose Operating Systems.
 
@@ -298,10 +225,7 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 - [Administrative Guide](https://download.microsoft.com/download/8/6/e/86e8c001-8556-4949-90cf-f5beac918026/microsoft%20windows%208%20microsoft%20windows%20rt%20common%20criteria%20supplemental%20admin.docx)
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid10620-vr.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 8, Windows Server 2012 BitLocker</b></summary>
+### Windows 8, Windows Server 2012 BitLocker
 
 Certified against the Protection Profile for Full Disk Encryption.
 
@@ -309,10 +233,7 @@ Certified against the Protection Profile for Full Disk Encryption.
 - [Administrative Guide](https://download.microsoft.com/download/0/8/4/08468080-540b-4326-91bf-f2a33b7e1764/administrative%20guidance%20for%20software%20full%20disk%20encryption%20clients.pdf)
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid10540-vr.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 8, Windows RT, Windows Server 2012 IPsec VPN Client</b></summary>
+### Windows 8, Windows RT, Windows Server 2012 IPsec VPN Client
 
 Certified against the Protection Profile for IPsec Virtual Private Network (VPN) Clients.
 
@@ -320,10 +241,7 @@ Certified against the Protection Profile for IPsec Virtual Private Network (VPN)
 - [Administrative Guide](https://download.microsoft.com/download/a/9/f/a9fd7e2d-023b-4925-a62f-58a7f1a6bd47/microsoft%20windows%208%20windows%20server%202012%20supplemental%20admin%20guidance%20ipsec%20vpn%20client.docx)
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid10529-vr.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows 7, Windows Server 2008 R2</b></summary>
+### Windows 7, Windows Server 2008 R2
 
 Certified against the Protection Profile for General Purpose Operating Systems.
 
@@ -331,46 +249,31 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 - [Administrative Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=ee05b6d0-9939-4765-9217-63083bb94a00)
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid10390-vr.pdf)
 
-</details>
-
-<details>
-<summary><b>  Microsoft Windows Server 2008 R2 Hyper-V Role</b></summary>
+### Microsoft Windows Server 2008 R2 Hyper-V Role
 
 - [Security Target](https://www.microsoft.com/download/en/details.aspx?id=29305)
 - [Administrative Guide](https://www.microsoft.com/download/en/details.aspx?id=29308)
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/0570a_pdf.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows Vista, Windows Server 2008 at EAL4+</b></summary>
+### Windows Vista, Windows Server 2008 at EAL4+
 
 - [Security Target](https://www.commoncriteriaportal.org/files/epfiles/st_vid10291-st.pdf)
 - [Administrative Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=06166288-24c4-4c42-9daa-2b2473ddf567)
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid10291-vr.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows Vista, Windows Server 2008 at EAL1</b></summary>
+### Windows Vista, Windows Server 2008 at EAL1
 
 - [Security Target](https://www.commoncriteriaportal.org/files/epfiles/efs-t005_msvista_msserver2008_eal1_st_v1.0.pdf)
 - [Administrative Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=06166288-24c4-4c42-9daa-2b2473ddf567)
 - [Certification Report](https://www.commoncriteriaportal.org/files/epfiles/efs-t005_msvista_msserver2008_eal1_cr_v1.0.pdf)
 
-</details>
-
-<details>
-<summary><b>  Microsoft Windows Server 2008 Hyper-V Role</b></summary>
+### Microsoft Windows Server 2008 Hyper-V Role
 
 - [Security Target](https://www.commoncriteriaportal.org/files/epfiles/0570b_pdf.pdf)
 - [Administrative Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=cb19538d-9e13-4ab6-af38-8f48abfdad08)
 - [Certification Report](http://www.commoncriteriaportal.org:80/files/epfiles/0570a_pdf.pdf) 
 
-</details>
-
-<details>
-<summary><b>  Windows Server 2003 Certificate Server</b></summary>
+### Windows Server 2003 Certificate Server
 
 - [Security Target](https://www.commoncriteriaportal.org/files/epfiles/st_vid9507-st.pdf)
 - [Administrator's Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=445093d8-45e2-4cf6-884c-8802c1e6cb2d)
@@ -379,12 +282,7 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 - [Evaluation Technical Report](https://www.microsoft.com/downloads/details.aspx?familyid=a594e77f-dcbb-4787-9d68-e4689e60a314)
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid9507-vr.pdf)
 
-</details>
-
-<details>
-<summary><b>  Windows Rights Management Services</b></summary>
+### Windows Rights Management Services
 
 - [Security Target](https://www.commoncriteriaportal.org/files/epfiles/st_vid10224-st.pdf)
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid10224-vr.pdf)
-
-</details>
