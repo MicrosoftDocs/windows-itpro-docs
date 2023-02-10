@@ -186,8 +186,6 @@
               href: update/deployment-service-expedited-updates.md
             - name: Deploy driver and firmware updates using Graph Explorer
               href: update/deployment-service-drivers.md
-            - name: Deploy expedited updates using Intune
-              href: /mem/intune/protect/windows-10-expedite-updates?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
           - name: Troubleshoot Windows Update for Business deployment service
             href: update/deployment-service-troubleshoot.md
     - name: Monitor

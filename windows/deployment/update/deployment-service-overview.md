@@ -23,31 +23,23 @@ Windows Update for Business product family has three elements:
 - [Windows Update for Business reports](wufb-reports-overview.md) to monitor update deployment
 - Deployment service APIs to approve and schedule specific updates for deployment, which are available through the Microsoft Graph and associated SDKs (including PowerShell)
 
-## How the deployment service works
-
-With most update management solutions, usually update policies are set on the client itself using either registry edits, Group Policy, or an MDM solution that leverages CSPs. This means that the end user experience and deployment settings for updates are ultimately determined by the individual device settings. However, with Windows Update for Business deployment service, the service is the central point of control for update deployment behavior. Because the deployment service is directly integrated into Windows Update, once the admin defines the update deployment behavior, Windows Update is already aware of the how the device should be directed to install when a device scans
-
-the service ensures that the update is delivered to the device in the defined manner. 
-
 The deployment service complements existing Windows Update for Business capabilities, including existing device policies and [Windows Update for Business reports](wufb-reports-overview.md).
 
-:::image type="content" source="media/7512398-deployment-service-overview.png" alt-text="Diagram displaying the three elements that are parts of the Windows Update for Business family. ":::
+:::image type="content" source="media/7512398-deployment-service-overview.png" alt-text="Diagram displaying the three elements that are parts of the Windows Update for Business family.":::
 
-Windows Update for Business comprises three elements:
-- Client policy to govern update experiences and timing which are available through Group Policy and CSPs
-- Deployment service APIs to approve and schedule specific updates which are available through the Microsoft Graph and associated SDKs (including PowerShell)
-- Windows Update for Business reports to monitor update deployment
+## How the deployment service works
 
-Unlike existing client policy, the deployment service doesn't interact with devices directly. The service is native to the cloud and all operations take place between various Microsoft services. It creates a direct communication channel between a management tool (including scripting tools such as Windows PowerShell) and the Windows Update service so that the approval and offering of content can be directly controlled by an IT Pro.
+With most update management solutions, usually update policies are set on the client itself using either registry edits, Group Policy, or an MDM solution that leverages CSPs. This means that the end user experience and deployment settings for updates are ultimately determined by the individual device settings. However, with Windows Update for Business deployment service, the service is the central point of control for update deployment behavior. Because the deployment service is directly integrated with Windows Update, once the admin defines the update deployment behavior, Windows Update is already aware of the how the device should be directed to install updates when a device scans for updates. The deployment service creates a direct communication channel between a management tool (including scripting tools such as Windows PowerShell) and the Windows Update service so that the approval and offering of content can be directly controlled by an admin.
 
-:::image type="content" source="media/wufbds-interaction-small.png" alt-text="Process described in following text.":::
 
 Using the deployment service typically follows a common pattern:
-1. IT Pro uses a management tool to select devices and approve content to be deployed. This tool could be PowerShell, a Microsoft Graph app or a more complete management solution such as Microsoft Intune.
-2. The chosen tool conveys your approval, scheduling, and device selection information to the deployment service.
+1. An admin uses a management tool to select devices and approve content to be deployed. This tool could be PowerShell, a Microsoft Graph app or a more complete management solution such as Microsoft Intune.
+2. The chosen management tool conveys your approval, scheduling, and device selection information to the deployment service.
 3. The deployment service processes the content approval and compares it with previously approved content. Final update applicability is determined and conveyed to Windows Update, which then offers approved content to devices on their next check for updates.
 
-The deployment service exposes these capabilities through Microsoft [Graph REST APIs](/graph/overview). You can call the APIs directly, through a Graph SDK, or integrate them with a management tool such as Microsoft Intune.
+   :::image type="content" source="media/wufbds-interaction-small.png" alt-text="Diagram displaying ":::
+
+The deployment service exposes these capabilities through Microsoft [Graph REST APIs](/graph/overview). You can call the APIs directly, through a Graph SDK, or integrate them with a management tool such as [Microsoft Intune](mem/intune).
 
 ## Capabilities of the Windows Update for Business deployment service
 
@@ -60,7 +52,7 @@ The deployment service is designed for IT Pros who are looking for more control 
 - **Expedite**: Bypass the configured Windows Update for Business policies to immediately deploy a security update across the organization
 - **Safeguard holds**: Automatically holds the deployment for devices that may be impacted by an update issue identified by Microsoft machine-learning algorithms
 
-Certain capabilities are available for specific update classifications: 
+Certain capabilities are available for specific update classifications:
 
 |Capabilities | Quality updates | Feature updates | Drivers and firmware|
 |---|---|---|---|
@@ -69,30 +61,6 @@ Certain capabilities are available for specific update classifications:
 |Expedite | Yes | | |
 |Safeguard holds| | Yes | |
 
-
-
-
-
-
-## Getting started
-
-To use the deployment service, you use a management tool built on the platform, script common actions using PowerShell, or build your own application.
-
-### Using Microsoft Intune
-
-Intune integrates with the deployment service to provide Windows client update management capabilities. For more information, see [Feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates).
-
-### Scripting common actions using PowerShell
-
-The Microsoft Graph SDK includes a PowerShell extension that you can use to script and automate common update actions. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
-
-### Building your own application
-
-Microsoft Graph makes deployment service APIs available through. Get started with these learning paths:
-- Learning path: [Microsoft Graph Fundamentals](/training/paths/m365-msgraph-fundamentals/)
-- Learning path: [Build apps with Microsoft Graph](/training/paths/m365-msgraph-associate/)
-
-Once you're familiar with Microsoft Graph development, see [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview) for more.
 
 ## Deployment protections
 
@@ -120,25 +88,37 @@ To verify whether a device is affected by a safeguard hold, see [Am I affected b
 ### Monitoring deployments to detect rollback issues
 
 During deployments of Windows 11 or Windows 10 feature updates, driver combinations can sometimes result in an unexpected update failure that makes the device revert to the previously installed operating system version. The deployment service can monitor devices for such issues and automatically pause deployments when this happens, giving you time to detect and mitigate issues.
+## Getting started with the deployment service
 
+To use the deployment service, you use a management tool built on the platform, script common actions using PowerShell, or build your own application.
 
-## Best practices
-Follow these suggestions for the best results with the service.
+### Using Microsoft Intune
 
-### Device onboarding
+Microsoft Intune integrates with the deployment service to provide Windows client update management capabilities. For more information, see:
 
-- Wait until devices finish provisioning before managing with the service. If a device is being provisioned by Autopilot, it can only be managed by the deployment service after it finishes provisioning (typically one day).
+- [Feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates)
+- [Expedite Windows quality updates in Microsoft Intune](/mem/intune/protect/windows-10-expedite-updates)
 
-- Use the deployment service for feature update management without feature update deferral policy. If you want to use the deployment service to manage feature updates on a device that previously used a feature update deferral policy, it's best to set the feature update deferral policy to **0** days to avoid having multiple conditions governing feature updates. You should only change the feature update deferral policy value to 0 days after you've confirmed that the device was enrolled in the service with no errors.
+### Scripting common actions using PowerShell
 
-### General
+The Microsoft Graph SDK includes a PowerShell extension that you can use to script and automate common update actions. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
 
-Avoid using different channels to manage the same resources. If you use Microsoft Intune along with Microsoft Graph APIs or PowerShell, aspects of resources (such as devices, deployments, updatable asset groups) might be overwritten if you use both channels to manage the same resources. Instead, only manage each resource through the channel that created it.
+### Building your own application
+
+Microsoft Graph makes deployment service APIs available through. Get started with these learning paths:
+- Learning path: [Microsoft Graph Fundamentals](/training/paths/m365-msgraph-fundamentals/)
+- Learning path: [Build apps with Microsoft Graph](/training/paths/m365-msgraph-associate/)
+
+Once you're familiar with Microsoft Graph development, see [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview) for more.
 
 
 ## Next steps
 
-To learn more about the deployment service, try the following:
+To learn more about the deployment service, see:
 
-- [Feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates)
+- [Prerequisites for Windows Update for Business deployment service](deployment-service-prerequisites.md)
+- [Deploy feature updates using Graph Explorer](deployment-service-feature-updates.md)
+- [Deploy expedited updates using Graph Explorer](deployment-service-expedited-updates.md)
+- [Deploy driver and firmware updates using Graph Explorer](deployment-service-drivers.md)
 - [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview)
+

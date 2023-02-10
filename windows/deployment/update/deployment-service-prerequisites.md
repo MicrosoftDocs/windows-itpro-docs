@@ -63,3 +63,17 @@ Deployment scheduling controls are always available. However, to take advantage 
 
 <!--Using include for deployment service limitations-->
 [!INCLUDE [Windows Update for Business deployment service limitations](./includes/wufb-deployment-limitations.md)]
+
+
+## Best practices
+Follow these suggestions for the best results with the service.
+
+### Device onboarding
+
+- Wait until devices finish provisioning before managing with the service. If a device is being provisioned by Autopilot, it can only be managed by the deployment service after it finishes provisioning (typically one day).
+
+- Use the deployment service for feature update management without feature update deferral policy. If you want to use the deployment service to manage feature updates on a device that previously used a feature update deferral policy, it's best to set the feature update deferral policy to **0** days to avoid having multiple conditions governing feature updates. You should only change the feature update deferral policy value to 0 days after you've confirmed that the device was enrolled in the service with no errors.
+
+### General
+
+Avoid using different channels to manage the same resources. If you use Microsoft Intune along with Microsoft Graph APIs or PowerShell, aspects of resources (such as devices, deployments, updatable asset groups) might be overwritten if you use both channels to manage the same resources. Instead, only manage each resource through the channel that created it.
