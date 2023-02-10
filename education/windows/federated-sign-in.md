@@ -1,7 +1,7 @@
 ---
 title: Configure federated sign-in for Windows devices
 description: Description of federated sign-in feature for the Education SKUs of Windows 11 and how to configure it via Intune or provisioning packages.
-ms.date: 01/27/2023
+ms.date: 02/10/2023
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
