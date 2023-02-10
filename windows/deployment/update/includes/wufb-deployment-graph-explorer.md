@@ -10,10 +10,12 @@ ms.localizationpriority: medium
 ---
 <!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
 
-For this article, you'll use Graph Explorer to make requests to the [Microsoft Graph APIs](/graph/api/resources/windowsupdates-updates?view=graph-rest-beta&preserve-view=true) to retrieve, add, delete, and update data. For more information about using Graph Explorer, see [Get started with Graph Explorer](/graph/graph-explorer/overview).
+For this article, you'll use Graph Explorer to make requests to the [Microsoft Graph APIs](/graph/api/resources/windowsupdates-updates?view=graph-rest-beta&preserve-view=true) to retrieve, add, delete, and update data. Graph Explorer is a developer tool that lets you learn about Microsoft Graph APIs. For more information about using Graph Explorer, see [Get started with Graph Explorer](/graph/graph-explorer/overview).
 
 > [!WARNING]
-> Using a test tenant to verify the deployment process first is recommended. If you use a production tenant, ensure you verify which client devices you're targeting with deployments.
+>
+> - Requests listed in this article require signing in with a Microsoft 365 account. Join the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program) to get a free sandbox preconfigured with sample data packs for testing.
+> - Using a test tenant to verify the deployment process first is highly recommended. If you use a production tenant, ensure you verify which client devices you're targeting with deployments.
 
 1. From a browser, go to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) and sign in using an Azure Active Directory (Azure AD) user account.
 1. You may need to enable the [`WindowsUpdates.ReadWrite.All` permission](/graph/permissions-reference#windows-updates-permissions) to use the queries in this article. To enable the permission:
