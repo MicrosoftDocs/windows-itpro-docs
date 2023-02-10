@@ -77,6 +77,7 @@ To create a policy without any deployment settings, in the request body specify 
 
    ```msgraph-interactive
    POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
+   content-type: application/json
    
    {
      "audience": {
@@ -117,6 +118,7 @@ To create a policy with additional settings, in the request body:
 
    ```msgraph-interactive
    POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
+   content-type: application/json
    
    Content-length: 967
    {
@@ -238,6 +240,7 @@ Add a content approval to an existing policy, **Policy ID** `9011c330-1234-5678-
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges
+content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
@@ -298,6 +301,7 @@ Since content approval is a compliance change for the policy, when you [update a
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges/c03911a7-9876-5432-10ab-cdef98765432
+content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
@@ -318,6 +322,7 @@ Approval for content can be revoked by setting the `isRevoked` property of the [
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges/c03911a7-9876-5432-10ab-cdef98765432
+content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
