@@ -99,6 +99,7 @@ When creating a deployment for a feature update, there are multiple options avai
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
+content-type: application/json
 
 {
     "content": {
@@ -195,6 +196,7 @@ To [update deployment](/graph/api/windowsupdates-deployment-update), PATCH the d
 
 ```msgraph-interactive  
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
+content-type: application/json
 
 {
     "settings": {
@@ -225,7 +227,8 @@ The **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567`, was created when th
 The following example adds three devices to the deployment audience using the **Azure AD ID** for each device:
 
    ```msgraph-interactive
-   POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience   
+   POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience
+   content-type: application/json
 
    {
      "addMembers": [
@@ -254,6 +257,7 @@ The following example pauses the deployment with a **Deployment ID** of `de910e1
 ```msgraph-interactive
 
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
+content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
