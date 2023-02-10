@@ -24,6 +24,7 @@ The following example removes `driver` enrollment for two devices, `01234567-89a
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/unenrollAssets
+content-type: application/json
 
 {
   "updateCategory": "driver",
