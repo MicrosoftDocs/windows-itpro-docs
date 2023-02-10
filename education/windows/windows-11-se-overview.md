@@ -8,6 +8,7 @@ appliesto:
 ms.collection:
   - highpri
   - education
+  - tier1
 ---
 
 # Windows 11 SE Overview

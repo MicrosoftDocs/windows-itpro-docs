@@ -8,6 +8,7 @@ appliesto:
 ms.collection:
   - highpri
   - education
+  - tier2
 ---
 
 # Test Windows 10 in S mode on existing Windows 10 education devices
