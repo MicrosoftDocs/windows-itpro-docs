@@ -1164,7 +1164,7 @@ This setting applies to scheduled scans, but it has no effect on scans initiated
 
 <!-- CloudBlockLevel-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer. If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. For more information about specific values that are supported, [see the Windows Defender Antivirus documentation site](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/specify-cloud-protection-level-microsoft-defender-antivirus).
+This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer. If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. For more information about specific values that are supported, see [Specify the cloud protection level](/microsoft-365/security/defender-endpoint/specify-cloud-protection-level-microsoft-defender-antivirus).
 
 > [!NOTE]
 > This feature requires the Join Microsoft MAPS setting enabled in order to function.
