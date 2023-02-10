@@ -19,6 +19,11 @@ ms.date: 12/31/2017
 
 The Windows Update for Business deployment service is a cloud service within the Windows Update for Business product family. It's designed to work with your existing [Windows Update for Business](waas-manage-updates-wufb.md) policies and [Windows Update for Business reports](wufb-reports-overview.md). The deployment service provides control over the approval, scheduling, and safeguarding of updates delivered from Windows Update to managed devices. The service is privacy focused and backed by leading industry compliance certifications.
 
+Windows Update for Business has three elements:
+- Client policy, available through Group Policy settings and CSPs, which defines the timing and experience for updates
+- [Windows Update for Business reports](wufb-reports-overview.md) to monitor update deployment
+- Deployment service APIs for approving and scheduling specific updates - available through the Microsoft Graph and associated SDKs (including PowerShell)
+
 ## Capabilities of the Windows Update for Business deployment service
 
 The deployment service is designed for IT Pros who are looking for more control than is provided through deferral policies and deployment rings. The service provides the following capabilities:
@@ -42,15 +47,15 @@ Certain capabilities are available for specific update classifications:
 
 ## How the deployment service works
 
-With typical update management solutions, usually update policies are set on the client itself using either registry edits, Group Policy, or an MDM solution that leverages CSPs. This means that the device determines what the end user experience for updates are
+With most update management solutions, usually update policies are set on the client itself using either registry edits, Group Policy, or an MDM solution that leverages CSPs. This means that the end user experience and deployment settings for updates are ultimately determined by the individual device settings. However, with Windows Update for Business deployment service, the service is the central point of control for update deployment behavior. Because the deployment service is directly integrated into Windows Update, once the admin defines the update deployment behavior, the service ensures that the update is delivered to the device in the defined manner. 
 
 The deployment service complements existing Windows Update for Business capabilities, including existing device policies and [Windows Update for Business reports](wufb-reports-overview.md).
 
 :::image type="content" source="media/7512398-deployment-service-overview.png" alt-text="Elements in following text.":::
 
 Windows Update for Business comprises three elements:
-- Client policy to govern update experiences and timing – available through Group Policy and CSPs
-- Deployment service APIs to approve and schedule specific updates – available through the Microsoft Graph and associated SDKs (including PowerShell)
+- Client policy to govern update experiences and timing - available through Group Policy and CSPs
+- Deployment service APIs to approve and schedule specific updates - available through the Microsoft Graph and associated SDKs (including PowerShell)
 - Windows Update for Business reports to monitor update deployment
 
 Unlike existing client policy, the deployment service doesn't interact with devices directly. The service is native to the cloud and all operations take place between various Microsoft services. It creates a direct communication channel between a management tool (including scripting tools such as Windows PowerShell) and the Windows Update service so that the approval and offering of content can be directly controlled by an IT Pro.
