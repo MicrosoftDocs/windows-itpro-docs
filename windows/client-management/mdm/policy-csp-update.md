@@ -4,7 +4,7 @@ description: Learn more about the Update Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/18/2023
+ms.date: 02/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,6 +16,9 @@ ms.topic: reference
 <!-- Update-Begin -->
 # Policy CSP - Update
 
+> [!IMPORTANT]
+> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+
 <!-- Update-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- Update-Editable-End -->
@@ -23,6 +26,7 @@ ms.topic: reference
 Update CSP policies are listed below based on the group policy area:
 
 - [Windows Insider Preview](#windows-insider-preview)
+  - [AllowTemporaryEnterpriseFeatureControl](#allowtemporaryenterprisefeaturecontrol)
   - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](#configuredeadlinenoautorebootforfeatureupdates)
   - [ConfigureDeadlineNoAutoRebootForQualityUpdates](#configuredeadlinenoautorebootforqualityupdates)
 - [Manage updates offered from Windows Update](#manage-updates-offered-from-windows-update)
@@ -102,6 +106,75 @@ Update CSP policies are listed below based on the group policy area:
   - [SetAutoRestartNotificationDisable](#setautorestartnotificationdisable)
 
 ## Windows Insider Preview
+
+<!-- AllowTemporaryEnterpriseFeatureControl-Begin -->
+### AllowTemporaryEnterpriseFeatureControl
+
+<!-- AllowTemporaryEnterpriseFeatureControl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- AllowTemporaryEnterpriseFeatureControl-Applicability-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/AllowTemporaryEnterpriseFeatureControl
+```
+<!-- AllowTemporaryEnterpriseFeatureControl-OmaUri-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Features introduced via servicing (outside of the annual feature update) are off by default for devices that have their Windows updates managed*.
+
+- If this policy is configured to "Enabled", then all features available in the latest monthly quality update installed will be on.
+
+- If this policy is set to "Not Configured" or "Disabled" then features that are shipped via a monthly quality update (servicing) will remain off until the feature update that includes these features is installed.
+
+*Windows update managed devices are those that have their Windows updates managed via policy; whether via the cloud using Windows Update for Business or on-premises with Windows Server Update Services (WSUS).
+<!-- AllowTemporaryEnterpriseFeatureControl-Description-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowTemporaryEnterpriseFeatureControl-Editable-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowTemporaryEnterpriseFeatureControl-DFProperties-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. |
+| 1 | Allowed. |
+<!-- AllowTemporaryEnterpriseFeatureControl-AllowedValues-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowTemporaryEnterpriseFeatureControl |
+| Friendly Name | Enable features introduced via servicing that are off by default |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Update > Manage end user experience |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
+| Registry Value Name | AllowTemporaryEnterpriseFeatureControl |
+| ADMX File Name | WindowsUpdate.admx |
+<!-- AllowTemporaryEnterpriseFeatureControl-GpMapping-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowTemporaryEnterpriseFeatureControl-Examples-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Begin -->
 ### ConfigureDeadlineNoAutoRebootForFeatureUpdates
@@ -2589,7 +2662,7 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 
 <!-- ScheduledInstallDay-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables the IT admin to schedule the day of the update installation. The data type is a integer.
+Enables the IT admin to schedule the day of the update installation. The data type is an integer.
 <!-- ScheduledInstallDay-Description-End -->
 
 <!-- ScheduledInstallDay-Editable-Begin -->
@@ -2660,7 +2733,7 @@ Enables the IT admin to schedule the day of the update installation. The data ty
 
 <!-- ScheduledInstallEveryWeek-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables the IT admin to schedule the update installation on the every week. Value type is integer.
+Enables the IT admin to schedule the update installation every week. Value type is integer.
 <!-- ScheduledInstallEveryWeek-Description-End -->
 
 <!-- ScheduledInstallEveryWeek-Editable-Begin -->
@@ -2985,7 +3058,7 @@ Enables the IT admin to schedule the update installation on the third week of th
 
 <!-- ScheduledInstallTime-Description-Begin -->
 <!-- Description-Source-DDF -->
- the IT admin to schedule the time of the update installation. The data type is a integer. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.
+ the IT admin to schedule the time of the update installation. The data type is an integer. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.
 <!-- ScheduledInstallTime-Description-End -->
 
 <!-- ScheduledInstallTime-Editable-Begin -->
@@ -3044,7 +3117,7 @@ Enables the IT admin to schedule the update installation on the third week of th
 
 <!-- SetDisablePauseUXAccess-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting allows to remove access to "Pause updates" feature.
+This setting allows removing access to "Pause updates" feature.
 
 Once enabled user access to pause updates is removed.
 <!-- SetDisablePauseUXAccess-Description-End -->
