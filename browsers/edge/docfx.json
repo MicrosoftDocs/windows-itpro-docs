@@ -28,6 +28,9 @@
     ],
     "globalMetadata": {
       "recommendations": true,
+      "ms.collection": [
+        "tier3"
+      ],
       "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "ms.technology": "microsoft-edge",
