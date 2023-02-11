@@ -52,13 +52,5 @@ A more recent update is deployed when the following conditions are met:
 
 While expedite update deployments will override an update deferral for the update version that's specified, they don't override deferrals that are in place for any other update version.
 
-### Log location for the Update Health Tools
-
-The Update Health Tools are used when you deploy expedited updates. In some cases, you may wish to review the logs for the Update Health Tools.
-
-**Log location**: `%ProgramFiles%\Microsoft Update Health Tools\Logs`
-
-- The logs are in `.etl` format. 
-  - Microsoft offers [PerfView as a download on GitHub](https://github.com/Microsoft/perfview/blob/main/documentation/Downloading.md) which displays etl files.
-
-For more information, see [Troubleshooting expedited updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/troubleshooting-expedited-updates/ba-p/2595615).
+<!--Using include for Update Health Tools log location-->
+[!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-update-health-tools-logs.md)]

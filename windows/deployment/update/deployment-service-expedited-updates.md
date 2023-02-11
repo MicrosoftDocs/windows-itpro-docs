@@ -192,3 +192,6 @@ content-type: application/json
   }
 }
 ```
+
+<!--Using include for Update Health Tools log location-->
+[!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-update-health-tools-logs.md)]

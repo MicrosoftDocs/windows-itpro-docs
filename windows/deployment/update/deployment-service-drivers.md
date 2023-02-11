@@ -114,7 +114,7 @@ To create a policy with additional settings, in the request body:
   - Define any [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings).
   - Add the `content-length` header to the request if a status code of 411 occurs. The value should be the length of the request body in bytes. For information on error codes, see [Microsoft Graph error responses and resource types](/graph/errors).
 
-   In the following driver update policy example, any deployments created by a content approval will start 7 days after approval and will gradually roll out to 1000 devices per day for **Audience ID** `d39ad1ce-0123-4567-89ab-cdef01234567`:
+   In the following driver update policy example, any deployments created by a content approval will start 7 days after approval for **Audience ID** `d39ad1ce-0123-4567-89ab-cdef01234567`:
 
    ```msgraph-interactive
    POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
