@@ -6,7 +6,7 @@ author: mestew
 ms.localizationpriority: medium
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
+ms.topic: overview
 ms.technology: itpro-updates
 ms.date: 12/31/2017
 ---
@@ -29,21 +29,21 @@ The deployment service complements existing Windows Update for Business capabili
 
 ## How the deployment service works
 
-With most update management solutions, usually update policies are set on the client itself using either registry edits, Group Policy, or an MDM solution that leverages CSPs. This means that the end user experience and deployment settings for updates are ultimately determined by the individual device settings. However, with Windows Update for Business deployment service, the service is the central point of control for update deployment behavior. Because the deployment service is directly integrated with Windows Update, once the admin defines the update deployment behavior, Windows Update is already aware of the how the device should be directed to install updates when a device scans for updates. The deployment service creates a direct communication channel between a management tool (including scripting tools such as Windows PowerShell) and the Windows Update service so that the approval and offering of content can be directly controlled by an admin.
+With most update management solutions, usually update policies are set on the client itself using either registry edits, Group Policy, or an MDM solution that leverages CSPs. This means that the end user experience and deployment settings for updates are ultimately determined by the individual device settings. However, with Windows Update for Business deployment service, the service is the central point of control for update deployment behavior. Because the deployment service is directly integrated with Windows Update, once the admin defines the deployment behavior, Windows Update is already aware of how device should be directed to install updates when the device scans. The deployment service creates a direct communication channel between a management tool (including scripting tools such as Windows PowerShell) and the Windows Update service so that the approval and offering of content can be directly controlled by an admin.
 
 
 Using the deployment service typically follows a common pattern:
-1. An admin uses a management tool to select devices and approve content to be deployed. This tool could be PowerShell, a Microsoft Graph app or a more complete management solution such as Microsoft Intune.
+1. An admin uses a management tool to select devices and approve content to be deployed. This tool could be PowerShell, a Microsoft Graph app, or a more complete management solution such as Microsoft Intune.
 2. The chosen management tool conveys your approval, scheduling, and device selection information to the deployment service.
 3. The deployment service processes the content approval and compares it with previously approved content. Final update applicability is determined and conveyed to Windows Update, which then offers approved content to devices on their next check for updates.
 
    :::image type="content" source="media/wufbds-interaction-small.png" alt-text="Diagram displaying ":::
 
-The deployment service exposes these capabilities through Microsoft [Graph REST APIs](/graph/overview). You can call the APIs directly, through a Graph SDK, or integrate them with a management tool such as [Microsoft Intune](mem/intune).
+The deployment service exposes these capabilities through Microsoft [Graph REST APIs](/graph/overview). You can call the APIs directly, through a Graph SDK, or integrate them with a management tool such as [Microsoft Intune](/mem/intune).
 
 ## Capabilities of the Windows Update for Business deployment service
 
-The deployment service is designed for IT Pros who are looking for more control than is provided through deferral policies and deployment rings. The service provides the following capabilities:
+The deployment service is designed for IT Pros who are looking for more control than is provided through deferral policies and deployment rings. The service provides the following capabilities for updates:
 
 - **Approval and scheduling**: Approve and schedule deployment of updates to start on a specific date
    - *Example*: Deploy the Windows 11 22H2 feature update to specified devices on February 17, 2023.
@@ -57,7 +57,7 @@ Certain capabilities are available for specific update classifications:
 |Capabilities | [Quality updates](deployment-service-expedited-updates.md) | [Feature updates](deployment-service-feature-updates.md) | [Drivers and firmware](deployment-service-drivers.md)|
 |---|---|---|---|
 |Approval and scheduling | | Yes | Yes |
-|Gradual rollout | | Yes | Yes |
+|Gradual rollout | | Yes |  |
 |Expedite | Yes | | |
 |Safeguard holds| | Yes | |
 
@@ -79,7 +79,7 @@ This built-in piloting capability complements your existing [deployment ring](wa
 
 ### Safeguard holds against likely and known issues
 
-Microsoft uses [safeguard holds](/windows/deployment/update/safeguard-holds) to protect devices from encountering known quality or compatibility issues by preventing them from installing the update or upgrade. For Windows 11 deployments, the deployment service extends these safeguard holds to also protect devices that Microsoft identifies as being at a higher risk of experiencing problems after an update (such as operating system rollbacks, app crashes, or graphics issues). The service temporarily holds the deployment for these devices while Microsoft investigates the likely issue. Safeguard holds apply to deployments by default, but you can opt out. To verify whether a device is affected by a safeguard hold, see [Am I affected by a safeguard hold?](/windows/deployment/update/safeguard-holds#am-i-affected-by-a-safeguard-hold).
+Microsoft uses [safeguard holds](/windows/deployment/update/safeguard-holds) to protect devices from encountering known quality or compatibility issues by preventing them from installing the update or upgrade. For Windows 11 deployments, the deployment service also extends safeguard holds to protect devices that Microsoft identifies as being at a higher risk of experiencing problems after an update (such as operating system rollbacks, app crashes, or graphics issues). The service temporarily holds the deployment for these devices while Microsoft investigates the likely issue. Safeguard holds apply to deployments by default, but you can opt out. To verify whether a device is affected by a safeguard hold, see [Am I affected by a safeguard hold?](/windows/deployment/update/safeguard-holds#am-i-affected-by-a-safeguard-hold).
 
 ### Monitoring deployments to detect rollback issues
 
@@ -89,7 +89,7 @@ During deployments of Windows 11 or Windows 10 feature updates, driver combinati
 
 To use the deployment service, you use a management tool built on the platform like Microsoft Intune, script common actions using PowerShell, or build your own application.
 
-To learn more about the deployment service, see:
+To learn more about the deployment service and the deployment process, see:
 
 - [Prerequisites for Windows Update for Business deployment service](deployment-service-prerequisites.md)
 - [Deploy feature updates using Graph Explorer](deployment-service-feature-updates.md)
@@ -109,20 +109,11 @@ The Microsoft Graph SDK includes a PowerShell extension that you can use to scri
 
 ### Building your own application
 
-Microsoft Graph makes deployment service APIs available through. Get started with these learning paths:
+Microsoft Graph makes deployment service APIs available through. Get started with the resources below:
+
 - Learning path: [Microsoft Graph Fundamentals](/training/paths/m365-msgraph-fundamentals/)
 - Learning path: [Build apps with Microsoft Graph](/training/paths/m365-msgraph-associate/)
 
-Once you're familiar with Microsoft Graph development, see [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview) for more.
-
-
-## Next steps
-
-To learn more about the deployment service, see:
-
-- [Prerequisites for Windows Update for Business deployment service](deployment-service-prerequisites.md)
-- [Deploy feature updates using Graph Explorer](deployment-service-feature-updates.md)
-- [Deploy expedited updates using Graph Explorer](deployment-service-expedited-updates.md)
-- [Deploy driver and firmware updates using Graph Explorer](deployment-service-drivers.md)
+- Windows Update for Business deployment service [sample driver deployment application](https://github.com/microsoftgraph/windowsupdates-webapplication-sample) on GitHub https://github.com/microsoftgraph/windowsupdates-webapplication-sample
 - [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview)
 
