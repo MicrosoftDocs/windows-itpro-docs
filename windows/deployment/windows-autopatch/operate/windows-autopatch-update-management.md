@@ -76,12 +76,12 @@ If you want to move separate devices to different deployment rings, after Window
 3. In the **Ready** tab, select one or more devices you want to assign. All selected devices will be assigned to the deployment ring you specify.
 4. Select **Device actions** from the menu.
 5. Select **Assign device to ring**. A fly-in opens.
-6. Use the dropdown menu to select the deployment ring to move devices to, and then select **Save**. The **Ring assigned by** column will change to **Pending**.
+6. Use the dropdown menu to select the deployment ring to move devices to, and then select **Save**. The **Group assigned by** column will change to **Pending**.
 
-When the assignment is complete, the **Ring assigned by** column changes to **Admin** (which indicates that you made the change) and the **Ring** column shows the new deployment ring assignment.
+When the assignment is complete, the **Group assigned by** column changes to **Admin** (which indicates that you made the change) and the **Ring** column shows the new deployment ring assignment.
 
 > [!NOTE]
-> You can only move devices to other deployment rings when they're in an active state in the **Ready** tab.<p>If you don't see the **Ring assigned by column** change to **Pending** in Step 5, check to see whether the device exists in Microsoft Intune or not by searching for it in its device blade. For more information, see [Device details in Intune](/mem/intune/remote-actions/device-inventory).
+> You can only move devices to other deployment rings when they're in an active state in the **Ready** tab.<p>If you don't see the **Group assigned by column** change to **Pending** in Step 5, check to see whether the device exists in Microsoft Intune or not by searching for it in its device blade. For more information, see [Device details in Intune](/mem/intune/remote-actions/device-inventory).
   
 > [!WARNING]
 > Moving devices between deployment rings through directly changing Azure AD group membership isn't supported and may cause unintended configuration conflicts within the Windows Autopatch service. To avoid service interruption to devices, use the **Assign device to ring** action described previously to move devices between deployment rings.
