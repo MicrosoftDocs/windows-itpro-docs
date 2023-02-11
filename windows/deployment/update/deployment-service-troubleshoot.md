@@ -19,11 +19,6 @@ ms.date: 12/31/2017
 
 This troubleshooting guide addresses the most common issues that IT administrators face when using the Windows Update for Business [deployment service](deployment-service-overview.md). For a general troubleshooting guide for Windows Update, see [Windows Update troubleshooting](/troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json).
 
-
-## General tips for the deployment service
-
-
-
 ## The device isn't receiving an update that I deployed
 
 - Check that the device doesn't have updates of the relevant category paused. See [Pause feature updates](waas-configure-wufb.md#pause-feature-updates) and [Pause quality updates](waas-configure-wufb.md#pause-quality-updates).
@@ -37,3 +32,33 @@ This troubleshooting guide addresses the most common issues that IT administrato
 
 - Check that the device is scanning the Windows Update service and not a different endpoint. If the device is scanning for updates from a WSUS endpoint, for example, it might receive different updates. To learn more about scanning for updates, see [Scanning updates](how-windows-update-works.md#scanning-updates).
 - **Feature updates only**: Check that the device is successfully enrolled in feature update management by the deployment service. A device that is not successfully enrolled might receive different updates according to its feature update deferral period, for example. A device that is successfully enrolled will be represented by an Azure AD device resource with an update management enrollment for feature updates and have no Azure AD device registration errors.
+
+### The device installed a newer update then the expedited update I deployed
+
+There are some scenarios when a deployment to expedite an update results in the installation of a more recent update than specified in policy. This result occurs when the newer update includes and surpasses the specified update, and that newer update is available before a device checks in to install the update that's specified in the expedite update policy.
+
+Installing the most recent quality update reduces disruptions to the device and user while applying the benefits of the intended update. This avoids having to install multiple updates, which each might require separate reboots.
+
+A more recent update is deployed when the following conditions are met:
+
+- The device isn't targeted with a deferral policy that blocks installation of a more recent update. In this case, the most recently available update that isn't deferred is the update that might install.
+
+- During the process to expedite an update, the device runs a new scan that detects the newer update. This can occur due to the timing of:
+  - When the device restarts to complete installation
+  - When the device runs its daily scan
+  - When a new update becomes available
+
+  When a scan identifies a newer update, Windows Update attempts to stop installation of the original update, cancel the restart, and then starts the download and installation of the more recent update.
+
+While expedite update deployments will override an update deferral for the update version that's specified, they don't override deferrals that are in place for any other update version.
+
+### Log location for the Update Health Tools
+
+The Update Health Tools are used when you deploy expedited updates. In some cases, you may wish to review the logs for the Update Health Tools.
+
+**Log location**: `%ProgramFiles%\Microsoft Update Health Tools\Logs`
+
+- The logs are in `.etl` format. 
+  - Microsoft offers [PerfView as a download on GitHub](https://github.com/Microsoft/perfview/blob/main/documentation/Downloading.md) which displays etl files.
+
+For more information, see [Troubleshooting expedited updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/troubleshooting-expedited-updates/ba-p/2595615).
