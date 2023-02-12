@@ -23,7 +23,7 @@ ms.technology: itpro-updates
 - [Delivery Optimization](#bkmk_do)
 - [Driver updates](#driver-updates-tab)
 
-:::image type="content" source="media/33771278-wufb-reports-workbook-summary.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook with the three tabbed sections outlined in red." lightbox="media/33771278-wufb-reports-workbook-summary.png":::
+:::image type="content" source="media/33771278-wufb-reports-workbook-summary.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook. The three tabbed sections are outlined in red." lightbox="media/33771278-wufb-reports-workbook-summary.png":::
 
 ## Open the Windows Update for Business reports workbook
 
@@ -168,7 +168,7 @@ The **Driver update** tab provides generalized data at the top by using tiles. T
 
 Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 250 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
-:::image type="content" source="imedia/7539531-wufb-reports-workbook-drivers.png" alt-text="Screenshot of the update status tab in the Windows Update for Business reports workbook for driver updates." lightbox="media/7539531-wufb-reports-workbook-drivers.png":::
+:::image type="content" source="imedia/7539531-wufb-reports-workbook-drivers.png" alt-text="Screenshot of the update status tab for driver updates." lightbox="media/7539531-wufb-reports-workbook-drivers.png":::
 
 Just like the [**Quality updates**](#quality-updates-tab) and [**Feature updates**](#feature-updates-tab) tabs, the **Driver updates** tab is also subdivided into **Update status** and **Device status** groups below the tiles. These different chart groups allow you to easily discover trends in compliance data.
 
