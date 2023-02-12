@@ -114,6 +114,6 @@ Microsoft Graph makes deployment service APIs available through. Get started wit
 - Learning path: [Microsoft Graph Fundamentals](/training/paths/m365-msgraph-fundamentals/)
 - Learning path: [Build apps with Microsoft Graph](/training/paths/m365-msgraph-associate/)
 
-- Windows Update for Business deployment service [sample driver deployment application](https://github.com/microsoftgraph/windowsupdates-webapplication-sample) on GitHub https://github.com/microsoftgraph/windowsupdates-webapplication-sample
+- Windows Update for Business deployment service [sample driver deployment application](https://github.com/microsoftgraph/windowsupdates-webapplication-sample) on GitHub
 - [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview)
 
