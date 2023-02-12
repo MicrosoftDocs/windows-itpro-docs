@@ -40,6 +40,7 @@ WindowsAdvancedThreatProtection
 ----Configuration
 --------SampleSharing
 --------TelemetryReportingFrequency
+--------AadDdeviceId
 ----Offboarding
 ----DeviceTagging
 --------Group
@@ -110,6 +111,11 @@ The following list shows the supported values:
 
 - 1 (default) – Normal
 - 2 - Expedite
+
+Supported operations are Get and Replace.
+
+<a href="" id="configuration-AadDeviceId"></a>**Configuration/AadDeviceId**
+Returns or sets the Intune's reported known AadDeviceId for the machine
 
 Supported operations are Get and Replace.
 
@@ -213,6 +219,16 @@ Supported operations are Get and Replace.
         <Target>
           <LocURI>
             ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/TelemetryReportingFrequency
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Get>
+      <CmdID>7</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/AadDeviceId
           </LocURI>
         </Target>
       </Item>
