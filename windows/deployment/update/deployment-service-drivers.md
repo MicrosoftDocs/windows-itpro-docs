@@ -90,7 +90,7 @@ Response returning the policy, without any additional settings specified, that h
 
 ```json
 HTTP/1.1 202 Accepted
-Content-type: application/json
+content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatePolicies/$entity",
   "id": "9011c330-1234-5678-9abc-def012345678",
@@ -119,8 +119,7 @@ To create a policy with additional settings, in the request body:
    ```msgraph-interactive
    POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
    content-type: application/json
-   
-   Content-length: 967
+      
    {
      "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
      "audience": {
@@ -139,17 +138,7 @@ To create a policy with additional settings, in the request body:
          },
          "durationBeforeDeploymentStart": "P7D"
        }
-     ],
-     "deploymentSettings": {
-       "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
-       "schedule": {
-         "gradualRollout": {
-           "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
-           "durationBetweenOffers": "P1D",
-           "devicePerOffer": 1000
-         }
-       }
-     }
+     ]
    }
    ```
 
@@ -166,6 +155,7 @@ To edit the policy settings, **PATCH** the policy using the **Policy ID**. Run t
 
 ``` msgraph-interactive
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678
+content-type: application/json
 
 {
     "complianceChangeRules": [

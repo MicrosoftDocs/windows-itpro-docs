@@ -174,6 +174,12 @@ content-type: application/json
 }
 ```
 
+To verify the devices were added to the audience, run the following query using the **Audience ID** of `d39ad1ce-0123-4567-89ab-cdef01234567`:
+
+   ```msgraph-interactive
+   GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/members
+   ```
+
 ## Pause a deployment
 
 To pause a deployment, PATCH the deployment to have a `requestedValue` of `paused` for the [deploymentState](/graph/api/resources/windowsupdates-deploymentstate). To resume the deployment, use the value `none` and the state will either update to `offering` or `scheduled` if the deployment hasn't reached the start date yet.
