@@ -155,7 +155,7 @@ The Delivery Optimization tab is further divided into the following groups:
 - **Content Distribution**: Includes charts showing percentage volumes and GB volumes by source by content types. All content types are linked to a table for deeper filtering by **ContentType**, **AzureADTenantId**, and **GroupID**.
 - **Efficiency By Group**: This view provides filters commonly used ways of grouping devices. The provided filters include: **GroupID**, **City**, **Country**, and **ISP**.
 
-:::image type="content" source="images/wufb-do-overview.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook for Delivery Optimization." lightbox="images/wufb-do-overview.png":::
+:::image type="content" source="imedia/wufb-do-overview.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook for Delivery Optimization." lightbox="media/wufb-do-overview.png":::
 
 ## Driver updates tab
 
@@ -167,6 +167,8 @@ The **Driver update** tab provides generalized data at the top by using tiles. T
 **Active alerts**: Count of active alerts for driver deployments
 
 Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 250 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+
+:::image type="content" source="imedia/7539531-wufb-reports-workbook-drivers.png" alt-text="Screenshot of the update status tab in the Windows Update for Business reports workbook for driver updates." lightbox="media/7539531-wufb-reports-workbook-drivers.png":::
 
 Just like the [**Quality updates**](#quality-updates-tab) and [**Feature updates**](#feature-updates-tab) tabs, the **Driver updates** tab is also subdivided into **Update status** and **Device status** groups below the tiles. These different chart groups allow you to easily discover trends in compliance data.
 
