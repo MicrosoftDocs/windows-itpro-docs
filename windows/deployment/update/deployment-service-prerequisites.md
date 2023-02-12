@@ -33,7 +33,7 @@ Windows Update for Business deployment service requires users of the devices to 
 - Windows Virtual Desktop Access E3 or E5
 - Microsoft 365 Business Premium
 
-## Operating systems, editions, and channels
+## Operating systems and editions
 
 - Windows 11 Professional, Education, Enterprise, Pro Education, or Pro for Workstations editions
 - Windows 10 Professional, Education, Enterprise, Pro Education, or Pro for Workstations editions
