@@ -45,5 +45,5 @@ Alert for both client and service updates. Contains information that needs atten
 | **TimeGenerated** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The time the snapshot generated this specific record. This is to determine to which batch snapshot this record belongs. |
 | **Type** | [string](/azure/kusto/query/scalar-data-types/string) | `UpdateAlert` | The entity type. |
 | **UpdateCategory** | [string](/azure/kusto/query/scalar-data-types/string) | `WindowsFeatureUpdate` | The type of content this DeviceUpdateEvent is tracking. |
-| **UpdateClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether this update is an upgrade (feature update), security (quality update), non-security (quality update) |
+| **UpdateClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether this update is an upgrade (feature update), security (quality update), non-security (quality update), or driver |
 | **URL** | [string](/azure/kusto/query/scalar-data-types/string) | `aka.ms/errordetail32152` | An optional URL to get more in-depth information related to this alert.  |

@@ -41,4 +41,12 @@ Update Event that comes directly from the service-side. The event has only servi
 | **TimeGenerated** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | Time the snapshot ran  can also be the same as EventDateTimeUTC in some cases. |
 | **Type** | [string](/azure/kusto/query/scalar-data-types/string) | `ServiceUpdateEvent` | The EntityType |
 | **UpdateCategory** | [string](/azure/kusto/query/scalar-data-types/string) | `WindowsFeatureUpdate` | The type of content this DeviceUpdateEvent is tracking. |
-| **UpdateClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether this update is an upgrade (feature update), security (quality update), non-security (quality update) |
+| **UpdateClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether this update is an upgrade (feature update), security (quality update), non-security (quality update), or driver |
+| **UpdateDisplayName** |  [string](/azure/kusto/query/scalar-data-types/string) | `Windows 10 1909` | The long-form display name for the given update. Varies on content type (feature update. quality update) |
+| **UpdateId** | [string](/azure/kusto/query/scalar-data-types/string)  | `10e519f0-06ae-4141-8f53-afee63e995f0`  |Update ID of the targeted update|
+| **UpdateManufacturer** | [string](/azure/kusto/query/scalar-data-types/string) | `Microsoft` | Manufacturer of update. Microsoft for feature or quality updates, for drivers the name of driver manufacturer. |
+|**UpdateProvider** | [string](/azure/kusto/query/scalar-data-types/string) | `Microsoft` | Update provider of drivers and firmware |
+| **UpdateRecommendedTime** |[datetime](/azure/kusto/query/scalar-data-types/datetime) | `2022-05-14 09:26:03.478039` | Date and time when the update was recommended to the device |
+| **UpdateReleaseTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | The release date of the update |
+|**UpdateVersion** | [string](/azure/kusto/query/scalar-data-types/string) | `20.0.19.3` | Update version of drivers or firmware |
+| **UpdateVersionTime** | [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | Update version  date time stamp for drivers and firmware |

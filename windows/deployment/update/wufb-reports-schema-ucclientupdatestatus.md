@@ -43,7 +43,7 @@ Update Event that combines the latest client-based data with the latest service-
 | **TimeGenerated** |  [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | The time the snapshot generated this specific record. This is to determine to which batch snapshot this record belongs. |
 | **Type** |  [string](/azure/kusto/query/scalar-data-types/string) | `DeviceUpdateEvent` | The EntityType |
 | **UpdateCategory** |  [string](/azure/kusto/query/scalar-data-types/string) | `WindowsFeatureUpdate` | The type of content this DeviceUpdateEvent is tracking. |
-| **UpdateClassification** |  [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether the update classification is an upgrade (feature update), security (quality update), non-security (quality update) |
+| **UpdateClassification** |  [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether the update classification is an upgrade (feature update), security (quality update), non-security (quality update), or driver |
 | **UpdateDisplayName** |  [string](/azure/kusto/query/scalar-data-types/string) | `Windows 10 1909` | The long-form display name for the given update. Varies on content type (feature update. quality update) |
 | **UpdateId** | [string](/azure/kusto/query/scalar-data-types/string)  | `10e519f0-06ae-4141-8f53-afee63e995f0`  |Update ID of the targeted update|
 | **UpdateInstalledTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | DateTime when event transitioned to UpdateInstalled, else empty. |
