@@ -1,11 +1,10 @@
 ---
 title: Policies for update compliance, activity, and user experience
-ms.reviewer: 
 description: Explanation and recommendations for settings
 ms.prod: windows-client
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: medium
 ms.topic: article
 ms.technology: itpro-updates

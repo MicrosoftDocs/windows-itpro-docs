@@ -67,12 +67,7 @@ For more info, see [Configure Windows diagnostic data in your organization](conf
 
 ## Services that rely on Enhanced diagnostic data
 
-Customers who use services that depend on Windows diagnostic data, such as Microsoft Managed Desktop or Desktop Analytics, may be impacted by the behavioral changes when they're released. These services will be updated to address these changes and guidance will be published on how to configure them properly.
-
-The following articles provide information on the current configurations:
-
-- [Microsoft Managed Desktop](/microsoft-365/managed-desktop/service-description/device-policies#windows-diagnostic-data)
-- [Desktop Analytics](/mem/configmgr/desktop-analytics/overview)
+Customers who use services that depend on Windows diagnostic data, such as [Microsoft Managed Desktop](/microsoft-365/managed-desktop/service-description/device-policies#windows-diagnostic-data), may be impacted by the behavioral changes when they're released. These services will be updated to address these changes and guidance will be published on how to configure them properly.
 
 ## Significant changes coming to the Windows diagnostic data processor configuration
 
@@ -95,6 +90,7 @@ From a compliance standpoint, this change means that Microsoft will be the proce
 For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) outside of the EU and EFTA, to enable the processor configuration option, the organization must sign up for any of the following enterprise services, which rely on diagnostic data:
 
 - [Update Compliance](/windows/deployment/update/update-compliance-monitor)
+- [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview)
 - [Windows Update for Business deployment service](/windows/deployment/update/deployment-service-overview)
 - [Microsoft Managed Desktop](/managed-desktop/intro/)
 - [Endpoint analytics (in Microsoft Intune)](/mem/analytics/overview)
@@ -129,4 +125,5 @@ As part of this change, the following policies will no longer be supported to co
  - Allow Desktop Analytics Processing
  - Allow Update Compliance Processing
  - Allow WUfB Cloud Processing
+ - Allow Microsoft Managed Desktop Processing
  - Configure the Commercial ID

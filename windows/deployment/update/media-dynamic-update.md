@@ -2,13 +2,14 @@
 title: Update Windows installation media with Dynamic Update
 description: Learn how to deploy feature updates to your mission critical devices
 ms.prod: windows-client
-author: SteveDiAcetis
+author: mestew
 ms.localizationpriority: medium
-ms.author: aaroncz
-manager: dougeby
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017
+ms.reviewer: stevedia
 ---
 
 # Update Windows installation media with Dynamic Update
@@ -75,6 +76,7 @@ This table shows the correct sequence for applying the various tasks to the file
 |Add Features on Demand     |         |         |  20       |
 |Add Safe OS Dynamic Update     | 6        |        |       |
 |Add Setup Dynamic Update     |         |         |         | 26
+|Add setup.exe from WinPE     |         |         |         | 27
 |Add latest cumulative update     |         | 15        | 21        |
 |Clean up the image     |  7       | 16        | 22        |
 |Add Optional Components     |         |         |  23       |
@@ -187,7 +189,7 @@ Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\install.wim" -Index 1 -Pa
 #
 # update Windows Recovery Environment (WinRE)
 #
-Copy-Item -Path $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Destination $WORKING_PATH"\winre.wim" -Force -Recurse -ErrorAction stop | Out-Null
+Copy-Item -Path $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Destination $WORKING_PATH"\winre.wim" -Force -ErrorAction stop | Out-Null
 Write-Output "$(Get-TS): Mounting WinRE"
 Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim" -Index 1 -Path $WINRE_MOUNT -ErrorAction stop | Out-Null
 
@@ -298,7 +300,7 @@ Move-Item -Path $WORKING_PATH"\winre2.wim" -Destination $WORKING_PATH"\winre.wim
 
 ### Update WinPE
 
-This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, add font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. Finally, it cleans and exports Boot.wim, and copies it back to the new media.
+This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, add font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. For the second image, we'll save setup.exe for later use, to ensure this version matches the \sources\setup.exe version from the installation media. If these binaries are not identical, Windows Setup will fail during installation. Finally, it cleans and exports Boot.wim, and copies it back to the new media.
 
 ```powershell
 #
@@ -311,7 +313,7 @@ $WINPE_IMAGES = Get-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim"
 Foreach ($IMAGE in $WINPE_IMAGES) {
 
     # update WinPE
-    Write-Output "$(Get-TS): Mounting WinPE"
+    Write-Output "$(Get-TS): Mounting WinPE, image index $($IMAGE.ImageIndex)"
     Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim" -Index $IMAGE.ImageIndex -Path $WINPE_MOUNT -ErrorAction stop | Out-Null  
 
     # Add servicing stack update (Step 9 from the table)
@@ -414,6 +416,11 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     Write-Output "$(Get-TS): Performing image cleanup on WinPE"
     DISM /image:$WINPE_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
 
+    # If second image, save setup.exe for later use. This will address possible binary mismatch with the version in the main OS \sources folder
+    if ($IMAGE.ImageIndex -eq "2") {
+        Copy-Item -Path $WINPE_MOUNT"\sources\setup.exe" -Destination $WORKING_PATH"\setup.exe" -Force -ErrorAction stop | Out-Null
+    }
+        
     # Dismount
     Dismount-WindowsImage -Path $WINPE_MOUNT -Save -ErrorAction stop | Out-Null
 
@@ -495,7 +502,7 @@ Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $LCU_PATH -ErrorAction stop
 # Copy our updated recovery image from earlier into the main OS
 # Note: If I were updating more than 1 edition, I'd want to copy the same recovery image file
 # into each edition to enable single instancing
-Copy-Item -Path $WORKING_PATH"\winre.wim" -Destination $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Force -Recurse -ErrorAction stop | Out-Null
+Copy-Item -Path $WORKING_PATH"\winre.wim" -Destination $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Force -ErrorAction stop | Out-Null
 
 # Perform image cleanup
 Write-Output "$(Get-TS): Performing image cleanup on main OS"
@@ -525,7 +532,7 @@ Move-Item -Path $WORKING_PATH"\install2.wim" -Destination $MEDIA_NEW_PATH"\sourc
 
 ### Update remaining media files
 
-This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings an updated Setup.exe as needed, along with the latest compatibility database, and replacement component manifests.
+This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings an updated Setup files as needed, along with the latest compatibility database, and replacement component manifests. This script also does a final replacement of setup.exe using the previously saved version from WinPE.
 
 ```powershell
 #
@@ -535,6 +542,10 @@ This part of the script updates the Setup files. It simply copies the individual
 # Add Setup DU by copy the files from the package into the newMedia
 Write-Output "$(Get-TS): Adding package $SETUP_DU_PATH"
 cmd.exe /c $env:SystemRoot\System32\expand.exe $SETUP_DU_PATH -F:* $MEDIA_NEW_PATH"\sources" | Out-Null
+
+# Copy setup.exe from boot.wim, saved earlier.
+Copy-Item -Path $WORKING_PATH"\setup.exe" -Destination $MEDIA_NEW_PATH"\sources\setup.exe" -Force -ErrorAction stop | Out-Null
+
 ```
 
 ### Finish up

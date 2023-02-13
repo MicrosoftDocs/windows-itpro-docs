@@ -1,91 +1,96 @@
 ---
-title: Policy CSP - ADMX_EventLogging
-description: Learn about the Policy CSP - ADMX_EventLogging.
+title: ADMX_EventLogging Policy CSP
+description: Learn more about the ADMX_EventLogging Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 09/12/2021
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_EventLogging-Begin -->
 # Policy CSP - ADMX_EventLogging
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+<!-- ADMX_EventLogging-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_EventLogging-Editable-End -->
 
-<!--Policies-->
-## ADMX_EventLogging policies
+<!-- EnableProtectedEventLogging-Begin -->
+## EnableProtectedEventLogging
 
-<dl>
-  <dd>
-    <a href="#admx-eventlogging-enableprotectedeventlogging">ADMX_EventLogging/EnableProtectedEventLogging</a>
-  </dd>
-</dl>
+<!-- EnableProtectedEventLogging-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnableProtectedEventLogging-Applicability-End -->
 
+<!-- EnableProtectedEventLogging-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_EventLogging/EnableProtectedEventLogging
+```
+<!-- EnableProtectedEventLogging-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-eventlogging-enableprotectedeventlogging"></a>**ADMX_EventLogging/EnableProtectedEventLogging**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- EnableProtectedEventLogging-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting lets you configure Protected Event Logging.
 
-If you enable this policy setting, components that support it will use the certificate you supply to encrypt potentially sensitive event log data before writing it to the event log. Data will be encrypted using the Cryptographic Message Syntax (CMS) standard and the public key you provide.
+- If you enable this policy setting, components that support it will use the certificate you supply to encrypt potentially sensitive event log data before writing it to the event log. Data will be encrypted using the Cryptographic Message Syntax (CMS) standard and the public key you provide. You can use the Unprotect-CmsMessage PowerShell cmdlet to decrypt these encrypted messages, provided that you have access to the private key corresponding to the public key that they were encrypted with.
 
-You can use the `Unprotect-CmsMessage` PowerShell cmdlet to decrypt these encrypted messages, if you have access to the private key corresponding to the public key that they were encrypted with.
+- If you disable or do not configure this policy setting, components will not encrypt event log messages before writing them to the event log.
+<!-- EnableProtectedEventLogging-Description-End -->
 
-If you disable or don't configure this policy setting, components won't encrypt event log messages before writing them to the event log.
+<!-- EnableProtectedEventLogging-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableProtectedEventLogging-Editable-End -->
 
-<!--/Description-->
+<!-- EnableProtectedEventLogging-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Enable Protected Event Logging*
--   GP name: *EnableProtectedEventLogging*
--   GP path: *Windows Components\Event Logging*
--   GP ADMX file name: *EventLogging.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableProtectedEventLogging-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- EnableProtectedEventLogging-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
+**ADMX mapping**:
 
-<!--/Policies-->
+| Name | Value |
+|:--|:--|
+| Name | EnableProtectedEventLogging |
+| Friendly Name | Enable Protected Event Logging |
+| Location | Computer Configuration |
+| Path | Windows Components > Event Logging |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EventLog\ProtectedEventLogging |
+| Registry Value Name | EnableProtectedEventLogging |
+| ADMX File Name | EventLogging.admx |
+<!-- EnableProtectedEventLogging-AdmxBacked-End -->
 
-## Related topics
+<!-- EnableProtectedEventLogging-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableProtectedEventLogging-Examples-End -->
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+<!-- EnableProtectedEventLogging-End -->
+
+<!-- ADMX_EventLogging-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_EventLogging-CspMoreInfo-End -->
+
+<!-- ADMX_EventLogging-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

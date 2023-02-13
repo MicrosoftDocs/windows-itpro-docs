@@ -8,7 +8,7 @@ ms.topic: article
 ---
 # Cloud-only deployment
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-cloud.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-cloud.md)]
 
 ## Introduction
 
@@ -47,7 +47,7 @@ We recommend that you disable or manage Windows Hello for Business provisioning 
 
 ### Disable Windows Hello for Business using Intune Enrollment policy
 
-The following method explains how to disable Windows Hello for Business enrollment without Intune.
+The following method explains how to disable Windows Hello for Business enrollment using Intune.
 
 1. Sign into the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Go to **Devices** > **Enrollment** > **Enroll devices** > **Windows enrollment** > **Windows Hello for Business**. The Windows Hello for Business pane opens.

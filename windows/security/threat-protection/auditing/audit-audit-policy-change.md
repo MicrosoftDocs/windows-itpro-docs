@@ -49,13 +49,13 @@ Changes to audit policy that are audited include:
 
 The following events will be enabled with Success auditing in this subcategory:
 
--   4902(S): The Per-user audit policy table was created.
+-   [4902](event-4902.md)(S): The Per-user audit policy table was created.
 
--   4907(S): Auditing settings on object were changed.
+-   [4907](event-4907.md)(S): Auditing settings on object were changed.
 
--   4904(S): An attempt was made to register a security event source.
+-   [4904](event-4904.md)(S): An attempt was made to register a security event source.
 
--   4905(S): An attempt was made to unregister a security event source.
+-   [4905](event-4905.md)(S): An attempt was made to unregister a security event source.
 
 All other events in this subcategory will be logged regardless of the "Audit Policy Change" setting.
 

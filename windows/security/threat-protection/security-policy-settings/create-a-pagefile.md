@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Create a pagefile - security policy setting
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Create a pagefile** security policy setting.

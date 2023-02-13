@@ -38,8 +38,12 @@ items:
       href: edu-stickers.md
     - name: Configure Take a Test in kiosk mode
       href: edu-take-a-test-kiosk-mode.md
-    - name: Configure federated sign-in
-      href: federated-sign-in.md
+    - name: Federated identity
+      items:
+      - name: Configure federated sign-in
+        href: federated-sign-in.md
+      - name: Configure federation between Google Workspace and Azure AD
+        href: configure-aad-google-trust.md
     - name: Configure Shared PC
       href: /windows/configuration/set-up-shared-or-guest-pc?context=/education/context/context
     - name: Use the Set up School PCs app

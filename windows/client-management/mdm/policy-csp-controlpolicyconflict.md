@@ -1,77 +1,55 @@
 ---
-title: Policy CSP - ControlPolicyConflict
-description: Use the Policy CSP - ControlPolicyConflict setting to control which policy is used whenever both the MDM policy and its equivalent Group Policy are set on the device.
+title: ControlPolicyConflict Policy CSP
+description: Learn more about the ControlPolicyConflict Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 01/09/2023
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.reviewer: 
-manager: aaroncz
-ms.date: 12/31/2017
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ControlPolicyConflict-Begin -->
 # Policy CSP - ControlPolicyConflict
 
+<!-- ControlPolicyConflict-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ControlPolicyConflict-Editable-End -->
 
+<!-- MDMWinsOverGP-Begin -->
+## MDMWinsOverGP
 
-<hr/>
+<!-- MDMWinsOverGP-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- MDMWinsOverGP-Applicability-End -->
 
-<!--Policies-->
-## ControlPolicyConflict policies
+<!-- MDMWinsOverGP-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ControlPolicyConflict/MDMWinsOverGP
+```
+<!-- MDMWinsOverGP-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="controlpolicyconflict-mdmwinsovergp"></a>**ControlPolicyConflict/MDMWinsOverGP**
+<!-- MDMWinsOverGP-Description-Begin -->
+<!-- Description-Source-DDF -->
+If set to 1 then any MDM policy that is set that has an equivalent GP policy will result in GP service blocking the setting of the policy by GP MMC. Setting the value to 0 (zero) or deleting the policy will remove the GP policy blocks restore the saved GP policies.
+<!-- MDMWinsOverGP-Description-End -->
 
-> [!NOTE]
-> This setting doesn't apply to the following types of group policies:
->
-> - If they don't map to an MDM policy. For example, Windows Settings > Security Settings > Public Key Policies.
-> - If they are group policies that aren't defined by an ADMX template. For example, Windows Settings > Scripts.
-> - If they have list entries. For example, Administrative Templates > Windows Components > ActiveX Installer Service > Approved Installation Sites for ActiveX Controls.
-> - If they are in the Windows Update category.
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy allows the IT admin to control which policy will be used whenever both the MDM policy and its equivalent Group Policy (GP) are set on the device.
+<!-- MDMWinsOverGP-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 > [!NOTE]
 > MDMWinsOverGP only applies to policies in Policy CSP. MDM policies win over Group Policies where applicable; not all Group Policies are available via MDM or CSP. It does not apply to other MDM settings with equivalent GP settings that are defined in other CSPs.
-
 This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel.
 The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
 
 > [!NOTE]
 > This policy doesn't support the Delete command and doesn’t support setting the value to 0 again after it was previously set to 1. Windows 10 version 1809 will support using the Delete command to set the value to 0 again, if it was previously set to 1.
-
-The following list shows the supported values:
-
-- 0 (default)
-- 1 - The MDM policy is used and the GP policy is blocked.
 
 The policy should be set at every sync to ensure the device removes any settings that conflict with MDM just as it does on the very first set of the policy.
 This ensures that:
@@ -80,7 +58,7 @@ This ensures that:
 -  The current Policy Manager policies are refreshed from what MDM has set
 -  Any values set by scripts/user outside of GP that conflict with MDM are removed
 
-The [Policy DDF](policy-ddf-file.md) contains the following tags to identify the policies with equivalent GP:
+The [Policy DDF](configuration-service-provider-ddf.md) contains the following tags to identify the policies with equivalent GP:
 
 -  \<MSFT:ADMXBacked\>
 -  \<MSFT:ADMXMapped\>
@@ -91,18 +69,39 @@ For the list MDM-GP mapping list, see [Policies in Policy CSP supported by Group
 ](./policies-in-policy-csp-supported-by-group-policy.md).
 
 The MDM Diagnostic report shows the applied configurations states of a device including policies, certificates, configuration sources, and resource information. The report includes a list of blocked GP settings because MDM equivalent is configured, if any. To get the diagnostic report, go to **Settings** > **Accounts** > **Access work or school** > and then click the desired work or school account. Scroll to the bottom of the page to **Advanced Diagnostic Report** and then click **Create Report**.
+<!-- MDMWinsOverGP-Editable-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- MDMWinsOverGP-DFProperties-Begin -->
+**Description framework properties**:
 
-- 0 (default)
-- 1 - The MDM policy is used and the GP policy is blocked.
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- MDMWinsOverGP-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+<!-- MDMWinsOverGP-AllowedValues-Begin -->
+**Allowed values**:
 
+| Value | Description |
+|:--|:--|
+| 0 (Default) | . |
+| 1 | The MDM policy is used and the GP policy is blocked. |
+<!-- MDMWinsOverGP-AllowedValues-End -->
 
+<!-- MDMWinsOverGP-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MDMWinsOverGP-Examples-End -->
 
-<!--/Policies-->
+<!-- MDMWinsOverGP-End -->
+
+<!-- ControlPolicyConflict-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ControlPolicyConflict-CspMoreInfo-End -->
+
+<!-- ControlPolicyConflict-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

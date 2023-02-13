@@ -1,246 +1,287 @@
 ---
-title: Policy CSP - HumanPresence
-description: Use the Policy CSP - HumanPresence setting allows wake on approach and lock on leave that can be managed from MDM.
+title: HumanPresence Policy CSP
+description: Learn more about the HumanPresence Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 01/09/2023
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- HumanPresence-Begin -->
 # Policy CSP - HumanPresence
 
-<hr/>
+<!-- HumanPresence-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HumanPresence-Editable-End -->
 
-<!--Policies-->
-## HumanPresence policies
+<!-- ForceInstantDim-Begin -->
+## ForceInstantDim
 
-<dl>
-  <dd>
-    <a href="#humanpresence-forceinstantdim">HumanPresence/ForceInstantDim</a>
-  </dd>
-  <dd>
-    <a href="#humanpresence-forceinstantlock">HumanPresence/ForceInstantLock</a>
-  </dd>
-  <dd>
-    <a href="#humanpresence-forceinstantwake">HumanPresence/ForceInstantWake</a>
-  </dd>
-  <dd>
-    <a href="#humanpresence-forcelocktimeout">HumanPresence/ForceLockTimeout</a>
-  </dd>
-</dl>
+<!-- ForceInstantDim-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ForceInstantDim-Applicability-End -->
 
-<hr/>
+<!-- ForceInstantDim-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/HumanPresence/ForceInstantDim
+```
+<!-- ForceInstantDim-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="humanpresence-forceinstantdim"></a>**HumanPresence/ForceInstantDim**
+<!-- ForceInstantDim-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines whether Attention Based Display Dimming is forced on/off by the MDM policy. The user will not be able to change this setting and the toggle in the UI will be greyed out.
+<!-- ForceInstantDim-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- ForceInstantDim-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This is a power saving feature that prolongs battery charge.
+<!-- ForceInstantDim-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|Yes|
-|Business|No|No|
-|Enterprise|No|Yes|
-|Education|No|Yes|
+<!-- ForceInstantDim-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ForceInstantDim-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ForceInstantDim-AllowedValues-Begin -->
+**Allowed values**:
 
-> [!div class = "checklist"]
-> * Device
+| Value | Description |
+|:--|:--|
+| 2 | ForcedOff. |
+| 1 | ForcedOn. |
+| 0 (Default) | DefaultToUserChoice. |
+<!-- ForceInstantDim-AllowedValues-End -->
 
-<hr/>
+<!-- ForceInstantDim-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This feature dims the screen based on user attention. This is a power saving feature that prolongs battery charge.
+| Name | Value |
+|:--|:--|
+| Name | ForceInstantDim |
+| Friendly Name | Force Instant Dim |
+| Location | Computer Configuration |
+| Path | Windows Components > Human Presence |
+| Registry Key Name | Software\Policies\Microsoft\HumanPresence |
+| ADMX File Name | Sensors.admx |
+<!-- ForceInstantDim-GpMapping-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Force Instant Dim*
--   GP name: *ForceInstantDim*
--   GP path: *Windows Components/Human Presence*
--   GP ADMX file name: *Sensors.admx*
+<!-- ForceInstantDim-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForceInstantDim-Examples-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- ForceInstantDim-End -->
 
-- 2 = ForcedOff
-- 1 = ForcedOn
-- 0 = DefaultToUserChoice
-- Defaults to 0.
+<!-- ForceInstantLock-Begin -->
+## ForceInstantLock
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- ForceInstantLock-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ForceInstantLock-Applicability-End -->
 
-<hr/>
+<!-- ForceInstantLock-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/HumanPresence/ForceInstantLock
+```
+<!-- ForceInstantLock-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="humanpresence-forceinstantlock"></a>**HumanPresence/ForceInstantLock**
+<!-- ForceInstantLock-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines whether Lock on Leave is forced on/off by the MDM policy. The user will not be able to change this setting and the toggle in the UI will be greyed out.
+<!-- ForceInstantLock-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- ForceInstantLock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ForceInstantLock-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Windows SE|No|No|
-|Business|No|No|
-|Enterprise|No|Yes|
-|Education|No|Yes|
+<!-- ForceInstantLock-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ForceInstantLock-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ForceInstantLock-AllowedValues-Begin -->
+**Allowed values**:
 
-> [!div class = "checklist"]
-> * Device
+| Value | Description |
+|:--|:--|
+| 2 | ForcedOff. |
+| 1 | ForcedOn. |
+| 0 (Default) | DefaultToUserChoice. |
+<!-- ForceInstantLock-AllowedValues-End -->
 
-<hr/>
+<!-- ForceInstantLock-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This policy specifies, whether the device can lock when a human presence sensor detects a human.
+| Name | Value |
+|:--|:--|
+| Name | ForceInstantLock |
+| Friendly Name | Force Instant Lock |
+| Location | Computer Configuration |
+| Path | Windows Components > Human Presence |
+| Registry Key Name | Software\Policies\Microsoft\HumanPresence |
+| Registry Value Name | ForceInstantLock |
+| ADMX File Name | Sensors.admx |
+<!-- ForceInstantLock-GpMapping-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Implements wake on approach and lock on leave that can be managed from MDM*
--   GP name: *ForceInstantLock*
--   GP path: *Windows Components/HumanPresence*
--   GP ADMX file name: *HumanPresence.admx*
+<!-- ForceInstantLock-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForceInstantLock-Examples-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- ForceInstantLock-End -->
 
-- 2 = ForcedOff
-- 1 = ForcedOn
-- 0 = DefaultToUserChoice
-- Defaults to 0
+<!-- ForceInstantWake-Begin -->
+## ForceInstantWake
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+<!-- ForceInstantWake-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ForceInstantWake-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="humanpresence-forceinstantwake"></a>**HumanPresence/ForceInstantWake**
+<!-- ForceInstantWake-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/HumanPresence/ForceInstantWake
+```
+<!-- ForceInstantWake-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- ForceInstantWake-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines whether Wake On Arrival is forced on/off by the MDM policy. The user will not be able to change this setting and the toggle in the UI will be greyed out.
+<!-- ForceInstantWake-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Windows SE|No|No|
-|Business|No|No|
-|Enterprise|No|Yes|
-|Education|No|Yes|
+<!-- ForceInstantWake-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ForceInstantWake-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ForceInstantWake-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ForceInstantWake-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ForceInstantWake-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 2 | ForcedOff. |
+| 1 | ForcedOn. |
+| 0 (Default) | DefaultToUserChoice. |
+<!-- ForceInstantWake-AllowedValues-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy specifies, whether the device can lock when a human presence sensor detects a human.
+<!-- ForceInstantWake-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Implements wake on approach and lock on leave that can be managed from MDM*
--   GP name: *ForceInstantWake*
--   GP path: *Windows Components/HumanPresence*
--   GP ADMX file name: *HumanPresence.admx*
+| Name | Value |
+|:--|:--|
+| Name | ForceInstantWake |
+| Friendly Name | Force Instant Wake |
+| Location | Computer Configuration |
+| Path | Windows Components > Human Presence |
+| Registry Key Name | Software\Policies\Microsoft\HumanPresence |
+| Registry Value Name | ForceInstantWake |
+| ADMX File Name | Sensors.admx |
+<!-- ForceInstantWake-GpMapping-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- ForceInstantWake-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForceInstantWake-Examples-End -->
 
-- 2 = ForcedOff
-- 1 = ForcedOn
-- 0 = DefaultToUserChoice
-- Defaults to 0
+<!-- ForceInstantWake-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+<!-- ForceLockTimeout-Begin -->
+## ForceLockTimeout
 
-<!--Policy-->
-<a href="" id="humanpresence-forcelocktimeout"></a>**HumanPresence/ForceLockTimeout**
+<!-- ForceLockTimeout-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ForceLockTimeout-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- ForceLockTimeout-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/HumanPresence/ForceLockTimeout
+```
+<!-- ForceLockTimeout-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Windows SE|No|No|
-|Business|No|No|
-|Enterprise|No|Yes|
-|Education|No|Yes|
+<!-- ForceLockTimeout-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines the timeout for Lock on Leave forced by the MDM policy. The user will be unable to change this setting and the toggle in the UI will be greyed out.
+<!-- ForceLockTimeout-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ForceLockTimeout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ForceLockTimeout-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ForceLockTimeout-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ForceLockTimeout-DFProperties-End -->
 
-<hr/>
+<!-- ForceLockTimeout-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Scope-->
-<!--Description-->
-This policy specifies, at what distance the sensor wakes up when it sees a human in seconds.
+| Value | Description |
+|:--|:--|
+| 120 | TwoMinutes. |
+| 30 | ThirtySeconds. |
+| 10 | TenSeconds. |
+| 0 (Default) | DefaultToUserChoice. |
+<!-- ForceLockTimeout-AllowedValues-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Implements wake on approach and lock on leave that can be managed from MDM*
--   GP name: *ForceLockTimeout*
--   GP path: *Windows Components/HumanPresence*
--   GP ADMX file name: *HumanPresence.admx*
+<!-- ForceLockTimeout-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Integer value that specifies, whether the device can lock when a human presence sensor detects a human.
+| Name | Value |
+|:--|:--|
+| Name | ForceLockTimeout |
+| Friendly Name | Lock Timeout |
+| Location | Computer Configuration |
+| Path | Windows Components > Human Presence |
+| Registry Key Name | Software\Policies\Microsoft\HumanPresence |
+| ADMX File Name | Sensors.admx |
+<!-- ForceLockTimeout-GpMapping-End -->
 
-The following list shows the supported values:
+<!-- ForceLockTimeout-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForceLockTimeout-Examples-End -->
 
-- 120 = 120 seconds
-- 30 = 30 seconds
-- 10 = 10 seconds
-- 0 = DefaultToUserChoice
-- Defaults to 0
+<!-- ForceLockTimeout-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+<!-- HumanPresence-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- HumanPresence-CspMoreInfo-End -->
 
-<!--/Policies-->
+<!-- HumanPresence-End -->
 
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

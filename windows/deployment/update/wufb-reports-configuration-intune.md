@@ -1,6 +1,5 @@
 ---
 title: Configuring Microsoft Intune devices for Windows Update for Business reports
-ms.reviewer: 
 manager: aaroncz
 description: Configuring devices that are enrolled in Microsoft Intune for Windows Update for Business reports
 ms.prod: windows-client

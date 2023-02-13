@@ -39,7 +39,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [DeviceUpdateCenter](wcd-deviceupdatecenter.md) | ✔️ |  |  |  |
 | [DMClient](wcd-dmclient.md) | ✔️ | ✔️ |  | ✔️ |
 | [EditionUpgrade](wcd-editionupgrade.md) | ✔️ |  | ✔️ |  |
-| [EmbeddedLockdownProfiles](wcd-embeddedlockdownprofiles.md) |  |  |  |  |
+| [EmbeddedLockdownProfiles](https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5) |  |  |  |  |
 | [FirewallConfiguration](wcd-firewallconfiguration.md) |  |  |  | ✔️ |
 | [FirstExperience](wcd-firstexperience.md) |  |  | ✔️ |  |
 | [Folders](wcd-folders.md) |✔️ | ✔️ |  |  |

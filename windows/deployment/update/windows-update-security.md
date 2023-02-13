@@ -1,6 +1,5 @@
 ---
 title: Windows Update security
-ms.reviewer: 
 manager: aaroncz
 description: Overview of the security for Windows Update.
 ms.prod: windows-client

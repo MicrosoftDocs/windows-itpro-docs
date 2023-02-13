@@ -1,7 +1,6 @@
 ---
 title: Privacy in Update Compliance
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: an overview of the Feature Update Status report
 ms.prod: windows-client
 author: mestew

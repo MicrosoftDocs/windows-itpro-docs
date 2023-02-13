@@ -1,7 +1,7 @@
 ---
 title: Register your devices
 description: This article details how to register devices in Autopatch
-ms.date: 09/07/2022
+ms.date: 02/03/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -20,8 +20,8 @@ Before Microsoft can manage your devices in Windows Autopatch, you must have dev
 
 Windows Autopatch can take over software update management control of devices that meet software-based prerequisites as soon as an IT admin decides to have their tenant managed by the service. The Windows Autopatch software update management scope includes the following software update workloads:
 
-- [Windows quality updates](../operate/windows-autopatch-wqu-overview.md)
-- [Windows feature updates](../operate/windows-autopatch-fu-overview.md)
+- [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md)
+- [Windows feature updates](../operate/windows-autopatch-windows-feature-update-overview.md)
 - [Microsoft 365 Apps for enterprise updates](../operate/windows-autopatch-microsoft-365-apps-enterprise.md)
 - [Microsoft Edge updates](../operate/windows-autopatch-edge.md)
 - [Microsoft Teams updates](../operate/windows-autopatch-teams.md)
@@ -52,7 +52,7 @@ Azure AD groups synced up from:
 > It isn't recommended to sync Configuration Manager collections straight to the **Windows Autopatch Device Registration** Azure AD group. Use a different Azure AD group when syncing Configuration Manager collections to Azure AD groups then you can nest this or these groups into the **Windows Autopatch Device Registration** Azure AD group.
 
 > [!IMPORTANT]
-> The **Windows Autopatch Device Registration** Azure AD group only supports one level of Azure AD nested groups.
+> The **Windows Autopatch Device Registration** Azure AD group only supports **one level** of Azure AD nested groups.
 
 ### Clean up dual state of Hybrid Azure AD joined and Azure registered devices in your Azure AD tenant
 
@@ -86,7 +86,7 @@ For more information, see [Windows Autopatch Prerequisites](../prepare/windows-a
 
 ## About the Ready, Not ready and Not registered tabs
 
-Windows Autopatch has three tabs within its device blade. Each tab is designed to provide a different set of device readiness status so IT admin knows where to go to monitor, and troubleshoot potential device health issues.
+Windows Autopatch has three tabs within its device blade. Each tab is designed to provide a different set of device readiness statuses so IT admin knows where to go to monitor, and fix potential device health issues.
 
 | Device blade tab | Purpose | Expected device readiness status |
 | ----- | ----- | ----- |
@@ -111,12 +111,18 @@ A role defines the set of permissions granted to users assigned to that role. Yo
 
 - Azure AD Global Administrator
 - Intune Service Administrator
-- Modern Workplace Intune Administrator
 
 For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) and [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
-> [!NOTE]
-> The Modern Workplace Intune Admin role is a custom created role during the Windows Autopatch tenant enrollment process. This role can assign administrators to Intune roles, and allows you to create and configure custom Intune roles.
+If you want to assign less-privileged user accounts to perform specific tasks in the Windows Autopatch portal, such as register devices with the service, you can add these user accounts into one of the two Azure AD groups created during the [tenant enrollment](../prepare/windows-autopatch-enroll-tenant.md) process:
+
+| Role | Discover devices | Modify columns | Refresh device list | Export to .CSV | Device actions |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| Modern Workplace Roles - Service Administrator | Yes | Yes | Yes | Yes | Yes |
+| Modern Workplace Roles - Service Reader | No | Yes | Yes | Yes | No |
+
+> [!TIP]
+> If you're adding less-privileged user accounts into the **Modern Workplace Roles - Service Administrator** Azure AD group, it's recommended to add the same users as owners of the **Windows Autopatch Device Registration** Azure AD group. Owners of the **Windows Autopatch Device Registration** Azure AD group can add new devices as members of the group for registration purposes.<p>For more information, see [assign an owner of member of a group in Azure AD](/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group).</p>
 
 ## Details about the device registration process
 

@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Group Policy.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/29/2022
+ms.date: 02/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -317,12 +317,14 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [DOMinBatteryPercentageAllowedToUpload](policy-csp-deliveryoptimization.md)
 - [DOCacheHost](policy-csp-deliveryoptimization.md)
 - [DOCacheHostSource](policy-csp-deliveryoptimization.md)
+- [DODisallowCacheServerDownloadsOnVPN](policy-csp-deliveryoptimization.md)
 - [DOGroupIdSource](policy-csp-deliveryoptimization.md)
 - [DODelayBackgroundDownloadFromHttp](policy-csp-deliveryoptimization.md)
 - [DODelayForegroundDownloadFromHttp](policy-csp-deliveryoptimization.md)
 - [DODelayCacheServerFallbackBackground](policy-csp-deliveryoptimization.md)
 - [DODelayCacheServerFallbackForeground](policy-csp-deliveryoptimization.md)
 - [DORestrictPeerSelectionBy](policy-csp-deliveryoptimization.md)
+- [DOVpnKeywords](policy-csp-deliveryoptimization.md)
 
 ## DeviceGuard
 
@@ -640,6 +642,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [AllowCortanaInAAD](policy-csp-search.md)
 - [AllowFindMyFiles](policy-csp-search.md)
 - [AllowSearchHighlights](policy-csp-search.md)
+- [ConfigureSearchOnTaskbarMode](policy-csp-search.md)
 
 ## Security
 
@@ -811,6 +814,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [SetPolicyDrivenUpdateSourceForOtherUpdates](policy-csp-update.md)
 - [SetEDURestart](policy-csp-update.md)
 - [AllowAutoWindowsUpdateDownloadOverMeteredNetwork](policy-csp-update.md)
+- [AllowTemporaryEnterpriseFeatureControl](policy-csp-update.md)
 - [SetDisableUXWUAccess](policy-csp-update.md)
 - [SetDisablePauseUXAccess](policy-csp-update.md)
 - [UpdateNotificationLevel](policy-csp-update.md)
@@ -877,6 +881,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [NotifyMalicious](policy-csp-webthreatdefense.md)
 - [NotifyPasswordReuse](policy-csp-webthreatdefense.md)
 - [NotifyUnsafeApp](policy-csp-webthreatdefense.md)
+- [CaptureThreatWindow](policy-csp-webthreatdefense.md)
 
 ## Wifi
 

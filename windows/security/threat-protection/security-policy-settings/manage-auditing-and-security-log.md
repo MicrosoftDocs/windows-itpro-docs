@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Manage auditing and security log
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Manage auditing and security log** security policy setting.

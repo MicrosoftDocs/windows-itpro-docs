@@ -9,7 +9,7 @@ ms.topic: tutorial
 ---
 # Prepare and deploy Active Directory Federation Services - on-premises key trust
 
-[!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
+[!INCLUDE [hello-on-premises-key-trust](./includes/hello-on-premises-key-trust.md)]
 
 Windows Hello for Business works exclusively with the Active Directory Federation Service (AD FS) role included with Windows Server. The on-premises key trust deployment model uses AD FS for *key registration* and *device registration*.
 

@@ -1,6 +1,6 @@
 ---
-title: Prepare and deploy Active Directory Federation Services in an on-premises certificate trust
-description: Learn how to configure Active Directory Federation Services to support the Windows Hello for Business certificate trust model.
+title: Prepare and deploy Active Directory Federation Services in an on-premises certificate trust model
+description: Learn how to configure Active Directory Federation Services to support the Windows Hello for Business on-premises certificate trust model.
 ms.date: 12/12/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
@@ -9,7 +9,7 @@ ms.topic: tutorial
 ---
 # Prepare and deploy Active Directory Federation Services - on-premises certificate trust
 
-[!INCLUDE [hello-on-premises-cert-trust](../../includes/hello-on-premises-cert-trust.md)]
+[!INCLUDE [hello-on-premises-cert-trust](./includes/hello-on-premises-cert-trust.md)]
 
 Windows Hello for Business works exclusively with the Active Directory Federation Service (AD FS) role included with Windows Server. The on-premises certificate trust deployment model uses AD FS for *certificate enrollment* and *device registration*.
 
@@ -179,11 +179,11 @@ Sign-in the AD FS server with *domain administrator* equivalent credentials.
 
 Open a **Windows PowerShell** prompt and type the following command:
 
-   ```PowerShell
-   Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication
+```PowerShell
+Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication
    ```
-   >[!NOTE]
-   > If you gave your Windows Hello for Business Enrollment Agent and Windows Hello for Business Authentication certificate templates different names, then replace *WHFBEnrollmentAgent* and *WHFBAuthentication* in the above command with the name of your certificate templates.
+>[!NOTE]
+> If you gave your Windows Hello for Business Enrollment Agent and Windows Hello for Business Authentication certificate templates different names, then replace *WHFBEnrollmentAgent* and *WHFBAuthentication* in the above command with the name of your certificate templates. It's important that you use the template name rather than the template display name.  You can view the template name on the **General** tab of the certificate template by using the **Certificate Template** management console (certtmpl.msc). Or, you can view the template name by using the `Get-CATemplate` PowerShell cmdlet on a CA.
 
 ### Enrollment agent certificate enrollment
 

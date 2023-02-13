@@ -20,7 +20,8 @@ ms.technology: itpro-security
 # Microsoft network server: Attempt S4U2Self to obtain claim information
 
 **Applies to**
--   Windows 10
+-   Windows 11
+-   Windows 10
 
 Describes the best practices, location, values, management, and security considerations for the **Microsoft network server: Attempt S4U2Self to obtain claim information** security policy setting.
 

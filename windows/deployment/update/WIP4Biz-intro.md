@@ -1,12 +1,10 @@
 ---
 title: Introduction to the Windows Insider Program for Business
 description: In this article, you'll learn about the Windows Insider Program for Business and why IT Pros should join.
-ms.custom: seo-marvel-apr2020
 ms.prod: windows-client
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
-ms.reviewer: 
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017

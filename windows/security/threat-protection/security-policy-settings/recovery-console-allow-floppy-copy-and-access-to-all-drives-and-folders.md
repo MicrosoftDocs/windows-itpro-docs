@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Recovery console: Allow floppy copy and access to all drives and folders
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Recovery console: Allow floppy copy and access to all drives and folders** security policy setting.

@@ -20,7 +20,8 @@ ms.technology: itpro-security
 # Deny access to this computer from the network
 
 **Applies to**
-- Windows 10
+-   Windows 11
+-   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Deny access to this computer from the network** security policy setting.
 

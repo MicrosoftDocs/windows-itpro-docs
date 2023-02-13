@@ -8,6 +8,7 @@ appliesto:
 ms.collection:
   - highpri
   - education
+  - tier1
 ---
 
 # Windows 11 SE Overview
@@ -81,7 +82,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 
 | Application                               | Supported version | App Type | Vendor                                    |
 |-------------------------------------------|-------------------|----------|-------------------------------------------|
-| `3d builder`                              | `18.0.1931.0`     | Win32    | `Microsoft`                               |
+| `3d builder`                              | 18.0.1931.0       | Win32    | `Microsoft`                               |
 | `Absolute Software Endpoint Agent`        | 7.20.0.1          | Win32    | `Absolute Software Corporation`           |
 | `AirSecure`                               | 8.0.0             | Win32    | `AIR`                                     |
 | `Alertus Desktop`                         | 5.4.48.0          | Win32    | `Alertus technologies`                    |
@@ -93,20 +94,23 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Class Policy`                            | 114.0.0           | Win32    | `Class Policy`                            |
 | `Classroom.cloud`                         | 1.40.0004         | Win32    | `NetSupport`                              |
 | `CoGat Secure Browser`                    | 11.0.0.19         | Win32    | `Riverside Insights`                      |
+| `ContentKeeper Cloud`                     | 9.01.45           | Win32    | `ContentKeeper Technologies`              |
 | `Dragon Professional Individual`          | 15.00.100         | Win32    | `Nuance Communications`                   |
 | `DRC INSIGHT Online Assessments`          | 12.0.0.0          | `Store`  | `Data recognition Corporation`            |
 | `Duo from Cisco`                          | 3.0.0             | Win32    | `Cisco`                                   |
 | `e-Speaking Voice and Speech recognition` | 4.4.0.8           | Win32    | `e-speaking`                              |
+| `EasyReader`                              | 10.0.3.481        | Win32    | `Dolphin Computer Access`                 |
 | `Epson iProjection`                       | 3.31              | Win32    | `Epson`                                   |
 | `eTests`                                  | 4.0.25            | Win32    | `CASAS`                                   |
 | `FortiClient`                             | 7.2.0.4034+       | Win32    | `Fortinet`                                |
 | `Free NaturalReader`                      | 16.1.2            | Win32    | `Natural Soft`                            |
 | `Ghotit Real Writer & Reader`             | 10.14.2.3         | Win32    | `Ghotit Ltd`                              |
 | `GoGuardian`                              | 1.4.4             | Win32    | `GoGuardian`                              |
-| `Google Chrome`                           | 102.0.5005.115    | Win32    | `Google`                                  |
+| `Google Chrome`                           | 109.0.5414.75     | Win32    | `Google`                                  |
 | `Illuminate Lockdown Browser`             | 2.0.5             | Win32    | `Illuminate Education`                    |
 | `Immunet`                                 | 7.5.8.21178       | Win32    | `Immunet`                                 |
 | `Impero Backdrop Client`                  | 4.4.86            | Win32    | `Impero Software`                         |
+| `IMT Lazarus`                             | 2.86.0            | Win32    | `IMTLazarus`                              |
 | `Inspiration 10`                          | 10.11             | Win32    | `TechEdology Ltd`                         |
 | `JAWS for Windows`                        | 2022.2112.24      | Win32    | `Freedom Scientific`                      |
 | `Kite Student Portal`                     | 9.0.0.0           | Win32    | `Dynamic Learning Maps`                   |
@@ -133,11 +137,12 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Remote Desktop client (MSRDC)`           | 1.2.3213.0        | Win32    | `Microsoft`                               |
 | `Remote Help`                             | 4.0.1.13          | Win32    | `Microsoft`                               |
 | `Respondus Lockdown Browser`              | 2.0.9.03          | Win32    | `Respondus`                               |
-| `Safe Exam Browser`                       | 3.3.2.413         | Win32    | `Safe Exam Browser`                       |
+| `Safe Exam Browser`                       | 3.4.1.505         | Win32    | `Safe Exam Browser`                       |
 | `Senso.Cloud`                             | 2021.11.15.0      | Win32    | `Senso.Cloud`                             |
-| `Smoothwall Monitor`                      | 2.8.0             | Win32    | `Smoothwall Ltd`                          |
+| `Smoothwall Monitor`                      | 2.9.2             | Win32    | `Smoothwall Ltd`                          |
 | `SuperNova Magnifier & Screen Reader`     | 21.02             | Win32    | `Dolphin Computer Access`                 |
 | `SuperNova Magnifier & Speech`            | 21.02             | Win32    | `Dolphin Computer Access`                 |
+|`TX Secure Browser`                        | 15.0.0            | Win32    | `Cambium Development`                     |
 | `VitalSourceBookShelf`                    | 10.2.26.0         | Win32    | `VitalSource Technologies Inc`            |
 | `Winbird`                                 | 19                | Win32    | `Winbird Co., Ltd.`                       |
 | `WordQ`                                   | 5.4.23            | Win32    | `Mathetmots`                              |
