@@ -7,6 +7,9 @@ author: scottbreenmsft
 ms.author: scbree
 ms.reviewer: paoloma
 manager: jeffbu
+ms.collection:
+  - tier3
+  - education
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
@@ -114,7 +117,7 @@ These steps provide instructions on how to use Microsoft Intune to upgrade devic
 
 These steps configure a filter that will only apply to devices running the *Windows Home edition*. This filter will ensure only devices running *Windows Home edition* are upgraded. For more information about filters, see [Create filters in Microsoft Intune](/mem/intune/fundamentals/filters).
 
-- Start in the [**Microsoft Endpoint Manager admin console**](https://endpoint.microsoft.com)
+- Start in the [**Microsoft Intune admin center**](https://go.microsoft.com/fwlink/?linkid=2109431)
 - Select **Tenant administration** > **Filters**
 - Select **Create**
   - Specify a name for the filter (for example *Windows Home edition*)
@@ -139,7 +142,7 @@ These steps configure a filter that will only apply to devices running the *Wind
 
 These steps create and assign a Windows edition upgrade policy. For more information, see [Windows 10/11 device settings to upgrade editions or enable S mode in Intune](/mem/intune/configuration/edition-upgrade-windows-settings).
 
-- Start in the [**Microsoft Endpoint Manager admin console**](https://endpoint.microsoft.com)
+- Start in the [**Microsoft Intune admin center**](https://go.microsoft.com/fwlink/?linkid=2109431)
 - Select **Devices** > **Configuration profiles**
 - Select **Create profile**
   - Select the **Platform** as **Windows 10 or later**
@@ -174,9 +177,9 @@ The edition upgrade policy will now apply to all existing and new Windows Home e
 
 ### Step 3: Report on device edition
 
-You can check the Windows versions of managed devices in the Microsoft Endpoint Manager admin console.
+You can check the Windows versions of managed devices in the Microsoft Intune admin center.
 
-- Start in the **Microsoft Endpoint Manager admin console**
+- Start in the **Microsoft Intune admin center**
 - Select **Devices** > **Windows**
 - Select the **Columns** button
 - Select **Sku Family**

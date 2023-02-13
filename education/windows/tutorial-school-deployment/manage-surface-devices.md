@@ -21,21 +21,21 @@ DFCI supports zero-touch provisioning, eliminates BIOS passwords, and provides c
 
 ## Microsoft Surface Management Portal
 
-Located in the Microsoft Endpoint Manager admin center, the Microsoft Surface Management Portal enables you to self-serve, manage, and monitor your school's Intune-managed Surface devices at scale. Get insights into device compliance, support activity, warranty coverage, and more.
+Located in the Microsoft Intune admin center, the Microsoft Surface Management Portal enables you to self-serve, manage, and monitor your school's Intune-managed Surface devices at scale. Get insights into device compliance, support activity, warranty coverage, and more.
 
 When Surface devices are enrolled in cloud management and users sign in for the first time, information automatically flows into the Surface Management Portal, giving you a single pane of glass for Surface-specific administration activities.
 
 To access and use the Surface Management Portal:
 
-1. Sign in to <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
-1. Select **All services** > **Surface Management Portal**
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **All services** > **Surface Management Portal**
     :::image type="content" source="./images/surface-management-portal.png" alt-text="Surface Management Portal within Microsoft Endpoint Manager" lightbox="./images/surface-management-portal-expanded.png" border="true":::
-1. To obtain insights for all your Surface devices, select **Monitor**
+3. To obtain insights for all your Surface devices, select **Monitor**
     - Devices that are out of compliance or not registered, have critically low storage, require updates, or are currently inactive, are listed here
-1. To obtain details on each insights category, select **View report**
+4. To obtain details on each insights category, select **View report**
     - This dashboard displays diagnostic information that you can customize and export
-1. To obtain the device's warranty information, select **Device warranty and coverage**
-1. To review a list of support requests and their status, select **Support requests**
+5. To obtain the device's warranty information, select **Device warranty and coverage**
+6. To review a list of support requests and their status, select **Support requests**
 
 <!-- Reference links in article -->
 

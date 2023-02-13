@@ -56,7 +56,7 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 
 | Task | Your responsibility | Windows Autopatch |
 | ----- | :-----: | :-----: |
-| [Maintain contacts in the Microsoft Endpoint Manager admin center](../deploy/windows-autopatch-admin-contacts.md) | :heavy_check_mark: | :x: |
+| [Maintain contacts in the Microsoft Intune admin center](../deploy/windows-autopatch-admin-contacts.md) | :heavy_check_mark: | :x: |
 | [Maintain and manage the Windows Autopatch service configuration](../operate/windows-autopatch-maintain-environment.md) | :x: | :heavy_check_mark: |
 | [Maintain customer configuration to align with the Windows Autopatch service configuration](../operate/windows-autopatch-maintain-environment.md) |  :heavy_check_mark: | :x: |
 | [Run on-going checks to ensure devices are only present in one deployment ring](../operate/windows-autopatch-update-management.md#automated-deployment-ring-remediation-functions) | :x: | :heavy_check_mark: |

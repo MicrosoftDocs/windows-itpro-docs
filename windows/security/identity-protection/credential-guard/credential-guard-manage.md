@@ -66,7 +66,7 @@ To enforce processing of the group policy, you can run `gpupdate /force`.
 
 ### Enable Windows Defender Credential Guard by using Microsoft Intune
 
-1. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices**.
+1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices**.
 
 1. Select **Configuration Profiles**.
 

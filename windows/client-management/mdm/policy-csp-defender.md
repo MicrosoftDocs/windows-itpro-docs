@@ -4,7 +4,7 @@ description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 02/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1164,7 +1164,7 @@ This setting applies to scheduled scans, but it has no effect on scans initiated
 
 <!-- CloudBlockLevel-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer. If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. For more information about specific values that are supported, see the Windows Defender Antivirus documentation site
+This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer. If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. For more information about specific values that are supported, see [Specify the cloud protection level](/microsoft-365/security/defender-endpoint/specify-cloud-protection-level-microsoft-defender-antivirus).
 
 > [!NOTE]
 > This feature requires the Join Microsoft MAPS setting enabled in order to function.
@@ -1232,7 +1232,7 @@ This policy setting determines how aggressive Windows Defender Antivirus will be
 
 <!-- CloudExtendedTimeout-Description-Begin -->
 <!-- Description-Source-DDF -->
-This feature allows Windows Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50. The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds. For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds
+This feature allows Windows Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50. The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds. For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds.
 
 > [!NOTE]
 > This feature depends on three other MAPS settings the must all be enabled- Configure the 'Block at First Sight' feature; Join Microsoft MAPS; Send file samples when further analysis is required.
@@ -1980,7 +1980,7 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 
 <!-- ExcludedProcesses-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows an administrator to specify a list of files opened by processes to ignore during a scan
+Allows an administrator to specify a list of files opened by processes to ignore during a scan.
 
 > [!IMPORTANT]
 > The process itself is not excluded from the scan, but can be by using the Defender/ExcludedPaths policy to exclude its path. Each file type must be separated by a |. For example, C\Example. exe|C\Example1.exe.
