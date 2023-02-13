@@ -168,7 +168,7 @@ MDM providers can deploy policies to devices managed by the organization, includ
 
 Use the following steps to create an Intune policy that deploys your taskbar XML file:
 
-1. Sign in to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 

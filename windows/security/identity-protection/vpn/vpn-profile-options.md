@@ -295,9 +295,9 @@ The following sample is a sample plug-in VPN profile. This blob would fall under
 
 ## Apply ProfileXML using Intune
 
-After you configure the settings that you want using ProfileXML, you can create a custom profile in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431). After it's created, you deploy this profile to your devices.
+After you configure the settings that you want using ProfileXML, you can create a custom profile in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431). After it's created, you deploy this profile to your devices.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 3. Enter the following properties:
 
