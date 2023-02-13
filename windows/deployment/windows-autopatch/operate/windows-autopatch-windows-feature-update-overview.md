@@ -74,7 +74,7 @@ Windows Autopatch provides a permanent pause of a Windows feature update deploym
 ## Release management
 
 > [!NOTE]
-> To access the Release Management blade, you must have the correct [role-based access control](../deploy/windows-autopatch-register-devices.md#built-in-roles-required-for-device-registration).
+> To access the Release management blade, you must have the correct [role-based access control](../deploy/windows-autopatch-register-devices.md#built-in-roles-required-for-device-registration).
 
 ### Pausing and resuming a release
 
