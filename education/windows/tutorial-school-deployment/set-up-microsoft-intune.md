@@ -44,7 +44,7 @@ With enrollment restrictions, you can prevent certain types of devices from bein
 
 To block personally owned Windows devices from enrolling:
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431/" target="_blank"><b>Microsoft Intune admin center</b></a>
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** > **Enroll devices** > **Enrollment device platform restrictions**
 1. Select the **Windows restrictions** tab
 1. Select **Create restriction**
@@ -63,7 +63,7 @@ Windows Hello for Business is a biometric authentication feature that allows use
 It's suggested to disable Windows Hello for Business on Windows devices at the tenant level, and enabling it only for devices that need it, for example for teachers and staff devices.
 To disable Windows Hello for Business at the tenant level:
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431/" target="_blank"><b>Microsoft Intune admin center</b></a>
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** > **Windows** > **Windows Enrollment**
 1. Select **Windows Hello for Business**
 1. Ensure that **Configure Windows Hello for Business** is set to **disabled**

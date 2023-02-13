@@ -29,7 +29,7 @@ Microsoft provides global technical, pre-sales, billing, and subscription suppor
 
 Follow these steps to obtain support in Microsoft Endpoint Manager:
 
-- Sign in to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Intune admin center</b></a>
+- Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 - Select **Troubleshooting + support** > **Help and support**
     :::image type="content" source="images/advanced-support.png" alt-text="Screenshot that shows how to obtain support from Microsoft Endpoint Manager." lightbox="images/advanced-support.png":::
 - Select the required support scenario: Configuration Manager, Intune, Co-management, or Windows 365

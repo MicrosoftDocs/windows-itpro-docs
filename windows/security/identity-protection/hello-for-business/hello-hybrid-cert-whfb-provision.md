@@ -119,7 +119,7 @@ There are different ways to enable and configure Windows Hello for Business in I
 
 To check the Windows Hello for Business policy applied at enrollment time:
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431/" target="_blank"><b>Microsoft Intune admin center</b></a>
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** > **Windows** > **Windows Enrollment**
 1. Select **Windows Hello for Business**
 1. Verify the status of **Configure Windows Hello for Business** and any settings that may be configured
@@ -132,7 +132,7 @@ If the tenant-wide policy is enabled and configured to your needs, you can skip 
 
 To configure Windows Hello for Business using an *account protection* policy:
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Intune admin center</b></a>
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Endpoint security** > **Account protection**
 1. Select **+ Create Policy**
 1. For *Platform**, select **Windows 10 and later** and for *Profile* select **Account protection**
