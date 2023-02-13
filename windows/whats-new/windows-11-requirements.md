@@ -46,6 +46,7 @@ To install or upgrade to Windows 11, devices must meet the following minimum har
 
 > [!NOTE]
 > **Note 1: Storage**
+>
 > There might be more storage requirements over time for updates, and to enable specific features within the OS. For more information, see [Windows 11 specifications](https://www.microsoft.com/windows/windows-11-specifications).
 
 For more information, see the following Windows Insider blog post: [Update on Windows 11 minimum system requirements](https://blogs.windows.com/windows-insider/2021/06/28/update-on-windows-11-minimum-system-requirements/).
@@ -116,12 +117,14 @@ The following configuration requirements apply to VMs running Windows 11.
 
 > [!NOTE]
 > **Note 2: VM generation**
+>
 > In-place upgrade of existing generation 1 VMs to Windows 11 isn't possible.
 
 <a name="bkmk_note3"></a>
 
 > [!NOTE]
 > **Note 3: VM host processor**
+>
 > There may be some instances where this requirement for the VM host doesn't apply. For more information, see [SMC article title TBD](https://support.microsoft.com).<!-- 7600331 -->
 
 ## Next steps
