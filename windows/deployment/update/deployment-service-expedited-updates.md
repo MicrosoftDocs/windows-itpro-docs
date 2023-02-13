@@ -24,7 +24,7 @@ In this article, you will:
 > * [List catalog entries for expedited updates](#list-catalog-entries-for-expedited-updates)
 > * [Create a deployment](#create-a-deployment)
 > * [Add members to the deployment audience](#add-members-to-the-deployment-audience)
-> * [Pause a deployment](#pause-a-deployment)
+> * [Delete a deployment](#pause-a-deployment)
 
 ## Prerequisites
 
@@ -180,24 +180,17 @@ To verify the devices were added to the audience, run the following query using 
    GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/members
    ```
 
-## Pause a deployment
+## Delete a deployment
 
-To pause a deployment, PATCH the deployment to have a `requestedValue` of `paused` for the [deploymentState](/graph/api/resources/windowsupdates-deploymentstate). To resume the deployment, use the value `none` and the state will either update to `offering` or `scheduled` if the deployment hasn't reached the start date yet.
+To stop an expedited deployment, DELETE the deployment. Deleting the deployment will prevent the content from being offered to devices if they haven't already received it. To resume offering the content, a new approval will need to be created.
 
-The following example pauses the deployment with a **Deployment ID** of `de910e12-3456-7890-abcd-ef1234567890`:
+
+The following example deletes the deployment with a **Deployment ID** of `de910e12-3456-7890-abcd-ef1234567890`:
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
-content-type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
-  "state": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentState",
-    "requestedValue": "paused"
-  }
-}
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
 ```
+
 
 <!--Using include for Update Health Tools log location-->
 [!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-update-health-tools-logs.md)]
