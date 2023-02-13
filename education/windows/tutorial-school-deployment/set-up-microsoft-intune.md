@@ -50,7 +50,7 @@ To block personally owned Windows devices from enrolling:
 1. Select **Create restriction**
 1. On the **Basics** page, provide a name for the restriction and, optionally, a description > **Next**
 1. On the **Platform settings** page, in the **Personally owned devices** field, select **Block** > **Next**
-    :::image type="content" source="./images/enrollment-restrictions.png" alt-text="Device enrollment restriction page in Microsoft Intune admin center" lightbox="./images/enrollment-restrictions.png" border="true":::
+    :::image type="content" source="./images/enrollment-restrictions.png" alt-text="This screenshot is of the device enrollment restriction page in Microsoft Intune admin center." lightbox="./images/enrollment-restrictions.png":::
 1. Optionally, on the **Scope tags** page, add scope tags > **Next**
 1. On the **Assignments** page, select **Add groups**, and then use the search box to find and choose groups to which you want to apply the restriction > **Next**
 1. On the **Review + create** page, select **Create** to save the restriction
@@ -69,7 +69,7 @@ To disable Windows Hello for Business at the tenant level:
 1. Ensure that **Configure Windows Hello for Business** is set to **disabled**
 1. Select **Save**
 
-:::image type="content" source="./images/whfb-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Intune admin center." border="true" lightbox="./images/whfb-disable.png":::
+:::image type="content" source="./images/whfb-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Intune admin center." lightbox="./images/whfb-disable.png":::
 
 For more information how to enable Windows Hello for Business on specific devices, see [Create a Windows Hello for Business policy][MEM-4].
 

@@ -124,7 +124,7 @@ To check the Windows Hello for Business policy applied at enrollment time:
 1. Select **Windows Hello for Business**
 1. Verify the status of **Configure Windows Hello for Business** and any settings that may be configured
 
-:::image type="content" source="images/whfb-intune-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Intune admin center." border="true" lightbox="images/whfb-intune-disable.png":::
+:::image type="content" source="images/whfb-intune-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Intune admin center." lightbox="images/whfb-intune-disable.png":::
 
 If the tenant-wide policy is enabled and configured to your needs, you can skip to [Enroll in Windows Hello for Business](#enroll-in-windows-hello-for-business). Otherwise, follow the instructions below to create a policy using an *account protection* policy.
 
@@ -147,7 +147,7 @@ To configure Windows Hello for Business using an *account protection* policy:
 1. Assign the policy to a security group that contains as members the devices or users that you want to configure > **Next**
 1. Review the policy configuration and select **Create**
 
-:::image type="content" source="images/whfb-intune-account-protection-cert-enable.png" alt-text="Enablement of Windows Hello for Business from Microsoft Intune admin center using an account protection policy." border="true" lightbox="images/whfb-intune-account-protection-cert-enable.png":::
+:::image type="content" source="images/whfb-intune-account-protection-cert-enable.png" alt-text="Enablement of Windows Hello for Business from Microsoft Intune admin center using an account protection policy." lightbox="images/whfb-intune-account-protection-cert-enable.png":::
 
 ---
 
