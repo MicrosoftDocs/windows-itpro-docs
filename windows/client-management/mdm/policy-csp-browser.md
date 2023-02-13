@@ -1484,7 +1484,7 @@ Supported versions: Microsoft Edge on Windows 10, version 1809
 Default setting: Disabled or not configured
 Related policies:
 - Allows development of Windows Store apps and installing them from an integrated development environment (IDE)
-- Allow all trusted apps to install 
+- Allow all trusted apps to install
 <!-- AllowSideloadingOfExtensions-Description-End -->
 
 <!-- AllowSideloadingOfExtensions-Editable-Begin -->
@@ -3248,7 +3248,7 @@ Related Documents:
 
 - [Find a package family name (PFN) for per-app VPN](/mem/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)
 - [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](/mem/intune/apps/windows-store-for-business)
-- [Assign apps to groups with Microsoft Intune](/mem/intune/apps-deploy)
+- [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy)
 - [Manage apps from the Microsoft Store for Business and Education with Configuration Manager](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
 - [Add a Windows line-of-business app to Microsoft Intune](/mem/intune/apps/lob-apps-windows)
 <!-- PreventTurningOffRequiredExtensions-Editable-End -->

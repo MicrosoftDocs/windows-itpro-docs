@@ -8,6 +8,7 @@ appliesto:
 ms.collection:
   - highpri
   - education
+  - tier2
 ---
 
 # Configure Stickers for Windows 11 SE
