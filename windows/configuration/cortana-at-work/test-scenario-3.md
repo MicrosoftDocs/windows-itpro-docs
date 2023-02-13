@@ -2,6 +2,7 @@
 title: Test scenario 3 - Set a reminder for a specific location using Cortana at work
 description: A test scenario about how to set up, review, and edit a reminder based on a location.
 ms.prod: windows-client
+ms.collection: tier3
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
