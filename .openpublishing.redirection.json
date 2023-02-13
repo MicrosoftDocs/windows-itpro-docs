@@ -20519,6 +20519,71 @@
       "source_path": "windows/client-management/mdm/policy-ddf-file.md",
       "redirect_url": "/windows/client-management/mdm/configuration-service-provider-ddf",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/change-the-tpm-owner-password.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/get-support-for-security-baselines.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/mbsa-removal-and-guidance.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-recovery-loop-break.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/credential-guard/credential-guard-scripts.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/manage-tpm-commands.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/manage-tpm-lockout.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/device-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-set-individual-device.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-windows-10-in-s-mode.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/audit-and-enforce-windows-defender-application-control-policies.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/procedures-used-in-this-guide.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
     }
   ]
 }
