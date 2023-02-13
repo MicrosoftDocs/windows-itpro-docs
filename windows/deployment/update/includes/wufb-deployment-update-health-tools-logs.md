@@ -18,4 +18,4 @@ The Update Health Tools are used when you deploy expedited updates. In some case
 - The logs are in `.etl` format. 
   - Microsoft offers [PerfView as a download on GitHub](https://github.com/Microsoft/perfview/blob/main/documentation/Downloading.md), which displays `.etl` files.
 
-For more information, see [Troubleshooting expedited updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/troubleshooting-expedited-updates/ba-p/2595615).
+For more information, see [Troubleshooting expedited updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/get-the-most-out-of-expedited-windows-quality-updates/ba-p/3659741).
