@@ -346,7 +346,7 @@ Table 5. Select on-premises AD DS, Azure AD, or hybrid
 |--- |--- |--- |--- |
 |Use Office 365||✔️|✔️|
 |Use Intune for management||✔️|✔️|
-|Use Microsoft Endpoint Manager for management|✔️||✔️|
+|Use Microsoft Configuration Manager for management|✔️||✔️|
 |Use Group Policy for management|✔️||✔️|
 |Have devices that are domain-joined|✔️||✔️|
 |Allow faculty and students to Bring Your Own Device (BYOD) which aren't domain-joined||✔️|✔️|
@@ -359,7 +359,7 @@ You may ask the question, “Why plan for device, user, and app management befor
 
 Also, planning management before deployment is essential to being ready to support the devices as you deploy them. You want to have your management processes and technology in place when the first teachers, facility, or students start using their new Windows device.
 
-Table 6 is a decision matrix that lists the device, user, and app management products and technologies and the features supported by each product or technology. The primary device, user, and app management products and technologies include Group Policy, Microsoft Endpoint Configuration Manager, Intune, and the Microsoft Deployment Toolkit (MDT). Use this decision matrix to help you select the right combination of products and technologies for your plan.
+Table 6 is a decision matrix that lists the device, user, and app management products and technologies and the features supported by each product or technology. The primary device, user, and app management products and technologies include Group Policy, Microsoft Configuration Manager, Intune, and the Microsoft Deployment Toolkit (MDT). Use this decision matrix to help you select the right combination of products and technologies for your plan.
 
 Table 6. Device, user, and app management products and technologies
 
@@ -464,7 +464,7 @@ Use the following Microsoft management systems and the deployment resources to p
 
 - [Windows Autopilot](/mem/autopilot/windows-autopilot)
 
-- Microsoft Endpoint Configuration Manager [core infrastructure documentation](/mem/configmgr/core/)
+- Microsoft Configuration Manager [core infrastructure documentation](/mem/configmgr/core/)
 
 - Provisioning packages:
 

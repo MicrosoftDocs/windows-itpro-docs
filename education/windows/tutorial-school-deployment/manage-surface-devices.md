@@ -17,7 +17,7 @@ Surface devices use a Unified Extensible Firmware Interface (UEFI) setting that 
 
 DFCI supports zero-touch provisioning, eliminates BIOS passwords, and provides control of security settings for boot options, cameras and microphones, built-in peripherals, and more. For more information, see [Manage DFCI on Surface devices][SURF-1] and [Manage DFCI with Windows Autopilot][MEM-1], which includes a list of requirements to use DFCI.
 
-:::image type="content" source="./images/dfci-profile.png" alt-text="Creation of a DFCI profile from Microsoft Endpoint Manager" lightbox="./images/dfci-profile-expanded.png" border="true":::
+:::image type="content" source="./images/dfci-profile.png" alt-text="Creation of a DFCI profile from Microsoft Intune" lightbox="./images/dfci-profile-expanded.png" border="true":::
 
 ## Microsoft Surface Management Portal
 
@@ -29,7 +29,7 @@ To access and use the Surface Management Portal:
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **All services** > **Surface Management Portal**
-    :::image type="content" source="./images/surface-management-portal.png" alt-text="Surface Management Portal within Microsoft Endpoint Manager" lightbox="./images/surface-management-portal-expanded.png" border="true":::
+    :::image type="content" source="./images/surface-management-portal.png" alt-text="Surface Management Portal within Microsoft Intune" lightbox="./images/surface-management-portal-expanded.png" border="true":::
 3. To obtain insights for all your Surface devices, select **Monitor**
     - Devices that are out of compliance or not registered, have critically low storage, require updates, or are currently inactive, are listed here
 4. To obtain details on each insights category, select **View report**

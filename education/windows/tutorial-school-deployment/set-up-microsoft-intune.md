@@ -7,9 +7,9 @@ ms.topic: tutorial
 
 # Set up Microsoft Intune
 
-Without the proper tools and resources, managing hundreds or thousands of devices in a school environment can be a complex and time-consuming task. Microsoft Endpoint Manager provides a collection of services that simplifies the management of devices at scale.
+Without the proper tools and resources, managing hundreds or thousands of devices in a school environment can be a complex and time-consuming task. Microsoft Intune is a collection of services that simplifies the management of devices at scale.
 
-Microsoft Intune is one of the services provided by Microsoft Endpoint Manager. The Microsoft Intune service can be managed in different ways, and one of them is **Intune for Education**, a web portal designed for education environments.
+The Microsoft Intune service can be managed in different ways, and one of them is **Intune for Education**, a web portal designed for education environments.
 
 :::image type="content" source="./images/intune-education-portal.png" alt-text="Intune for Education dashboard" lightbox="./images/intune-education-portal.png" border="true":::
 
