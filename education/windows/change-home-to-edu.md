@@ -74,7 +74,7 @@ It's critical that MAKs are protected whenever they're used. The following proce
 - Mobile Device Management (like Microsoft Intune) via [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp);
     > [!IMPORTANT]
     > If you are using a Mobile Device Management product other than Microsoft Intune, ensure the key isn't accessible by students.
-- Operating System Deployment processes with tools such as Microsoft Deployment Toolkit or Microsoft Endpoint Configuration Manager.
+- Operating System Deployment processes with tools such as Microsoft Deployment Toolkit or Microsoft Configuration Manager.
 
 For a full list of methods to perform a Windows edition upgrade and more details, see [Windows 10 edition upgrade](/windows/deployment/upgrade/windows-10-edition-upgrades).
 

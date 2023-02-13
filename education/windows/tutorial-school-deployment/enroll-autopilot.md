@@ -87,7 +87,7 @@ An Enrollment Status Page (ESP) is a greeting page displayed to users while enro
 > [!NOTE]
 > Some Windows Autopilot deployment profiles **require** the ESP to be configured.
 
-To deploy the ESP to devices, you need to create an ESP profile in Microsoft Endpoint Manager.
+To deploy the ESP to devices, you need to create an ESP profile in Microsoft Intune.
 
 > [!TIP]
 > While testing the deployment process, you can configure the ESP to:
