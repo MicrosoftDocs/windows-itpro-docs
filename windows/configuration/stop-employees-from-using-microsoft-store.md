@@ -1,5 +1,5 @@
 ---
-title: Configure access to Microsoft Store (Windows 10)
+title: Configure access to Microsoft Store
 description: Learn how to configure access to Microsoft Store for client computers and mobile devices in your organization.
 ms.reviewer: 
 manager: aaroncz
@@ -9,7 +9,9 @@ ms.author: lizlong
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 11/29/2022
-ms.collection: highpri
+ms.collection:
+ - highpri
+ - tier2
 ms.technology: itpro-configure
 ---
 
