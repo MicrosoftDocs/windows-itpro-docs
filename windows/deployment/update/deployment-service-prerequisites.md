@@ -46,13 +46,14 @@ Windows Update for Business deployment service supports Windows client devices o
   - Look for the folder **C:\Program Files\Microsoft Update Health Tools** or review *Add Remove Programs* for **Microsoft Update Health Tools**.
   - As an Admin, run the following PowerShell script:  `Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match "Microsoft Update Health Tools"}`
 
-- To take advantage of [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data), installing the 2023-02 Cumulative Update on the clients is recommended.
+- To take advantage of [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data), installing the February 2023 Cumulative Update, or a later equivalent update, for Windows 10 ([KB5022834](https://support.microsoft.com/help/5022834
+)) and Windows 11 ([KB5022836](https://support.microsoft.com/help/5022836)) is recommended
 
 ## Diagnostic data requirements
 
-Deployment scheduling controls are always available. However, to take advantage of the unique deployment protections tailored to your population and to [deploy driver updates](deployment-service-drivers.md), devices must share diagnostic data with Microsoft. For these features, At minimum, the deployment service requires devices to send [diagnostic data](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-settings) at the *Required* level (previously called *Basic*) for these features. 
+Deployment scheduling controls are always available. However, to take advantage of the unique deployment protections tailored to your population and to [deploy driver updates](deployment-service-drivers.md), devices must share diagnostic data with Microsoft. For these features, at minimum, the deployment service requires devices to send [diagnostic data](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-settings) at the *Required* level (previously called *Basic*) for these features.
 
-Some options for the deployment service require devices to send diagnostic data at the following levels:
+When you use [Windows Update for Business reports](wufb-reports-overview.md) in conjunction with the deployment service, using diagnostic data at the following levels allows device names to appear in reporting:
 
 - *Optional* level (previously *Full*) for Windows 11 devices
 - *Enhanced* level for Windows 10 devices
