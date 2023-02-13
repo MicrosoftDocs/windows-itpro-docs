@@ -138,28 +138,9 @@ The **Device status** group for feature updates contains the following items:
 - **Device compliance status**: Table containing a list of devices getting a feature update and installation information including active alerts for the devices.
   - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
-## <a name="bkmk_do"></a> Delivery Optimization
-
-The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes [Microsoft Connected Cache](/windows/deployment/do/waas-microsoft-connected-cache) information.
-
-At the top of the report, tiles display the following information:
-
-- Total bandwidth savings percentage
-- The percentage of the saved bandwidth broken down by peer-to-peer and MCC
-- Device counts showing percentages of bytes delivered between peer-to-peer and MCC
-- The breakdown of total downloaded GBs.
-
-The Delivery Optimization tab is further divided into the following groups:
-
-- **Device Configuration**: A chart differentiating the number of devices with and without peer-to-peer. And, a table of Download Mode configuration breakdown between numbers of devices. When selected, the devices within that group can be viewed, filtered in a separate table.
-- **Content Distribution**: Includes charts showing percentage volumes and GB volumes by source by content types. All content types are linked to a table for deeper filtering by **ContentType**, **AzureADTenantId**, and **GroupID**.
-- **Efficiency By Group**: This view provides filters commonly used ways of grouping devices. The provided filters include: **GroupID**, **City**, **Country**, and **ISP**.
-
-:::image type="content" source="media/wufb-do-overview.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook for Delivery Optimization." lightbox="media/wufb-do-overview.png":::
-
 ## Driver updates tab
 
-The **Driver update** tab provides generalized data at the top by using tiles. The data becomes more specific as you navigate lower in this tab. The top of the driver updates tab contains tiles with the following information:
+The **Driver update** tab provides information on driver and firmware update deployments from [Windows Update for Business deployment service](deployment-service-overview.md). Generalized data is at the top of the page in tiles. The data becomes more specific as you navigate lower in this tab. The top of the driver updates tab contains tiles with the following information:
 
 **Devices taking driver updates**: Count of devices that are installing driver and firmware updates.
 **Approved updates**: Count of approved driver updates
@@ -189,6 +170,25 @@ The **Device status** group for driver updates contains the following items:
 - **Device alerts**: Count of active device alerts for driver updates in each alert classification.
 - **Device compliance status**: Table containing a list of devices getting a driver update and installation information including active alerts for the devices.
   - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+
+## <a name="bkmk_do"></a> Delivery Optimization
+
+The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes [Microsoft Connected Cache](/windows/deployment/do/waas-microsoft-connected-cache) information.
+
+At the top of the report, tiles display the following information:
+
+- Total bandwidth savings percentage
+- The percentage of the saved bandwidth broken down by peer-to-peer and MCC
+- Device counts showing percentages of bytes delivered between peer-to-peer and MCC
+- The breakdown of total downloaded GBs.
+
+The Delivery Optimization tab is further divided into the following groups:
+
+- **Device Configuration**: A chart differentiating the number of devices with and without peer-to-peer. And, a table of Download Mode configuration breakdown between numbers of devices. When selected, the devices within that group can be viewed, filtered in a separate table.
+- **Content Distribution**: Includes charts showing percentage volumes and GB volumes by source by content types. All content types are linked to a table for deeper filtering by **ContentType**, **AzureADTenantId**, and **GroupID**.
+- **Efficiency By Group**: This view provides filters commonly used ways of grouping devices. The provided filters include: **GroupID**, **City**, **Country**, and **ISP**.
+
+:::image type="content" source="media/wufb-do-overview.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook for Delivery Optimization." lightbox="media/wufb-do-overview.png":::
 
 
 ## Customize the workbook
