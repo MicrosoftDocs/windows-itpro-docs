@@ -14,7 +14,7 @@ For this article, you'll use Graph Explorer to make requests to the [Microsoft G
 
 > [!WARNING]
 >
-> - Requests listed in this article require signing in with a Microsoft 365 account. Join the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program) to get a free sandbox preconfigured with sample data packs for testing.
+> - Requests listed in this article require signing in with a Microsoft 365 account. If needed, a free one month trial is available for [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium).
 > - Using a test tenant to verify the deployment process first is highly recommended. If you use a production tenant, ensure you verify which client devices you're targeting with deployments.
 
 1. From a browser, go to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) and sign in using an Azure Active Directory (Azure AD) user account.

@@ -46,8 +46,7 @@ Windows Update for Business deployment service supports Windows client devices o
   - Look for the folder **C:\Program Files\Microsoft Update Health Tools** or review *Add Remove Programs* for **Microsoft Update Health Tools**.
   - As an Admin, run the following PowerShell script:  `Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match "Microsoft Update Health Tools"}`
 
-- To take advantage of [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data), installing the February 2023 Cumulative Update, or a later equivalent update, for Windows 10 ([KB5022834](https://support.microsoft.com/help/5022834
-)) and Windows 11 ([KB5022836](https://support.microsoft.com/help/5022836)) is recommended
+- To take advantage of [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data), installing the February 2023 Cumulative Update, or a later equivalent update, is recommended
 
 ## Diagnostic data requirements
 

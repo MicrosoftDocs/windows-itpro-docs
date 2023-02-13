@@ -28,6 +28,7 @@ In this article, you will:
 > * [Create a deployment](#create-a-deployment)
 > * [Add members to the deployment audience](#add-members-to-the-deployment-audience)
 > * [Pause a deployment](#pause-a-deployment)
+> * [Delete a deployment](#delete-a-deployment)
 > * [Unenroll devices](#unenroll-devices)
 
 
@@ -89,7 +90,7 @@ The following truncated response displays a **Catalog ID** of  `d9049ddb-0ca8-4b
 
 ## Create a deployment
 
-When creating a deployment for a feature update, there are multiple options available to define how the deployment behaves. The following [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings) are defined in the example request body for deploying the Windows 11, version 22H2 feature update (**Catalog ID** of  `d9049ddb-0ca8-4bc1-bd3c-41a456ef300f`):  
+When creating a deployment for a feature update, there are multiple options available to define how the deployment behaves. The deployment and monitoring settings are optional. The following [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings) are defined in the example request body for deploying the Windows 11, version 22H2 feature update (**Catalog ID** of  `d9049ddb-0ca8-4bc1-bd3c-41a456ef300f`):  
 
 - Deployment [start date](/graph/api/resources/windowsupdates-schedulesettings) of February 14, 2023 at 5 AM UTC
 - [Gradual rollout](/graph/api/resources/windowsupdates-gradualrolloutsettings) at a rate of 100 devices every three days
@@ -272,6 +273,17 @@ content-type: application/json
     "requestedValue": "paused"
   }
 }
+```
+
+## Delete a deployment
+
+To remove the deployment completely, DELETE the deployment. Deleting the deployment will prevent the content from being offered to devices if they haven't already received it. To resume offering the content, a new approval will need to be created.
+
+
+The following example deletes the deployment with a **Deployment ID** of `de910e12-3456-7890-abcd-ef1234567890`:
+
+```msgraph-interactive
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
 ```
 
 ## Unenroll devices

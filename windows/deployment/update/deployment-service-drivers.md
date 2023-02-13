@@ -65,7 +65,7 @@ Once a device has been enrolled and added to a deployment audience, the Windows 
 
 ## Create an update policy
 
-Update policies define how content is deployed to a deployment audience. An [update policy](/graph/api/resources/windowsupdates-updatepolicy) ensures deployments to a deployment audience behave in a consistent manner without having to create and manage multiple individual deployments. When a content approval is added to the policy, it's deployed to the devices in the associated audiences.
+Update policies define how content is deployed to a deployment audience. An [update policy](/graph/api/resources/windowsupdates-updatepolicy) ensures deployments to a deployment audience behave in a consistent manner without having to create and manage multiple individual deployments. When a content approval is added to the policy, it's deployed to the devices in the associated audiences. The deployment and monitoring settings are optional.
 
 > [!IMPORTANT]
 > Any [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings) configured for a [content approval](#approve-driver-content-for-deployment) will be combined with the existing update policy's deployment settings. If the content approval and update policy specify the same deployment setting, the setting from the content approval is used.
