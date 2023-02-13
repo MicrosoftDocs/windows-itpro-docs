@@ -42,8 +42,10 @@ Alert for both client and service updates. Contains information that needs atten
 | **StartTime** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The time this alert was activated. |
 | **TargetBuild** | [string](/azure/kusto/query/scalar-data-types/string) | `18363.836` | The Windows 10 Major. Revision this UpdateAlert is relative to. |
 | **TargetVersion** | [string](/azure/kusto/query/scalar-data-types/string) | `1909` | The Windows 10 build this UpdateAlert is relative to. |
+| **TenantId** |[string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Azure AD tenant ID of the device. |
 | **TimeGenerated** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The time the snapshot generated this specific record. This is to determine to which batch snapshot this record belongs. |
 | **Type** | [string](/azure/kusto/query/scalar-data-types/string) | `UpdateAlert` | The entity type. |
 | **UpdateCategory** | [string](/azure/kusto/query/scalar-data-types/string) | `WindowsFeatureUpdate` | The type of content this DeviceUpdateEvent is tracking. |
 | **UpdateClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether this update is an upgrade (feature update), security (quality update), non-security (quality update), or driver |
 | **URL** | [string](/azure/kusto/query/scalar-data-types/string) | `aka.ms/errordetail32152` | An optional URL to get more in-depth information related to this alert.  |
+| **UpdateId** | [string](/azure/kusto/query/scalar-data-types/string)  | `10e519f0-06ae-4141-8f53-afee63e995f0`  |Update ID of the targeted update|
