@@ -7,6 +7,7 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ms.collection:
   - highpri
+  - tier2
   - education
 ---
 
@@ -147,7 +148,7 @@ Existing Azure AD domain joined devices will be changed to Windows 10 Pro Educat
 ### For new devices that are not Azure AD joined
 Now that you've turned on the setting to automatically change to Windows 10 Pro Education, the users are ready to change their devices running Windows 10 Pro, version 1607 or higher, version 1703 to Windows 10 Pro Education edition.
 
-#### Step 1: Join users’ devices to Azure AD
+#### Step 1: Join users' devices to Azure AD
 
 Users can join a device to Azure AD the first time they start the device (during setup), or they can join a device that they already use running Windows 10 Pro, version 1607 or higher, version 1703.
 

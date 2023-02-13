@@ -29,7 +29,10 @@
     "globalMetadata": {
       "recommendations": true,
       "ms.topic": "article",
-      "ms.collection": "education",
+      "ms.collection": [
+        "education",
+        "tier2"
+      ],
       "ms.prod": "windows-client",
       "ms.technology": "itpro-edu",
       "author": "paolomatarazzo",

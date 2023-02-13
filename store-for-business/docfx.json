@@ -32,6 +32,9 @@
     "externalReference": [],
     "globalMetadata": {
       "recommendations": true,
+      "ms.collection": [
+        "tier2"
+      ],
       "breadcrumb_path": "/microsoft-store/breadcrumb/toc.json",
       "ms.author": "trudyha",
       "audience": "ITPro",
