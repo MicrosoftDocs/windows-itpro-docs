@@ -24,7 +24,7 @@ In this article, you will:
 > * [List catalog entries for expedited updates](#list-catalog-entries-for-expedited-updates)
 > * [Create a deployment](#create-a-deployment)
 > * [Add members to the deployment audience](#add-members-to-the-deployment-audience)
-> * [Delete a deployment](#pause-a-deployment)
+> * [Delete a deployment](#delete-a-deployment)
 
 ## Prerequisites
 
