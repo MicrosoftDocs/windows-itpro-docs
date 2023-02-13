@@ -7,6 +7,9 @@ author: scottbreenmsft
 ms.author: scbree
 ms.reviewer: paoloma
 manager: jeffbu
+ms.collection:
+  - tier3
+  - education
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---

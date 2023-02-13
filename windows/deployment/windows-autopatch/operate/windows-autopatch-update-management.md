@@ -91,7 +91,7 @@ When the assignment is complete, the **Ring assigned by** column changes to **Ad
 Windows Autopatch monitors device membership in its deployment rings, except for the **Modern Workplace Devices-Windows Autopatch-Test** ring, to provide automated deployment ring remediation functions to mitigate the risk of not having its managed devices being part of one of its deployment rings. These automated functions help mitigate risk of potentially having devices in a vulnerable state, and exposed to security threats in case they're not receiving update deployments due to either:
 
 - Changes performed by the IT admin on objects created by the Windows Autopatch tenant enrollment process, or
-- An issue occurred which prevented devices from getting a deployment rings assigned during the [device registration process](../deploy/windows-autopatch-device-registration-overview.md).
+- An issue occurred which prevented devices from getting a deployment ring assigned during the [device registration process](../deploy/windows-autopatch-device-registration-overview.md).
 
 There are two automated deployment ring remediation functions:
 
