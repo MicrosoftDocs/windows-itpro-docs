@@ -55,7 +55,7 @@ Windows Autopatch configures these policies differently across deployment rings 
 ## Release management
 
 > [!NOTE]
-> To access the Release Management blade, you must have the correct [role-based access control](../deploy/windows-autopatch-register-devices.md#built-in-roles-required-for-device-registration).
+> To access the Release management blade, you must have the correct [role-based access control](../deploy/windows-autopatch-register-devices.md#built-in-roles-required-for-device-registration).
 
 In the Release management blade, you can:
 
