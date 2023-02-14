@@ -142,7 +142,7 @@ To add more flexibility to the update process, settings are available to control
 
 [Configure Automatic Updates](#configure-automatic-updates) offers four different options for automatic update installation, while [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) makes sure drivers are not installed with the rest of the received updates.
 
-### Do not include drivers with Windows Updates 
+### Do not include drivers with Windows Updates
 
 Allows admins to exclude Windows Update drivers during updates.
 
