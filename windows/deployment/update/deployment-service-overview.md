@@ -96,13 +96,6 @@ To learn more about the deployment service and the deployment process, see:
 - [Deploy expedited updates using Graph Explorer](deployment-service-expedited-updates.md)
 - [Deploy driver and firmware updates using Graph Explorer](deployment-service-drivers.md)
 
-### Use Microsoft Intune
-
-Microsoft Intune integrates with the deployment service to provide Windows client update management capabilities. For more information, see:
-
-- [Feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates)
-- [Expedite Windows quality updates in Microsoft Intune](/mem/intune/protect/windows-10-expedite-updates)
-
 ### Scripting common actions using PowerShell
 
 The Microsoft Graph SDK includes a PowerShell extension that you can use to script and automate common update actions. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
@@ -116,4 +109,11 @@ Microsoft Graph makes deployment service APIs available through. Get started wit
 
 - Windows Update for Business deployment service [sample driver deployment application](https://github.com/microsoftgraph/windowsupdates-webapplication-sample) on GitHub
 - [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview)
+
+### Use Microsoft Intune
+
+Microsoft Intune integrates with the deployment service to provide Windows client update management capabilities. For more information, see:
+
+- [Feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates)
+- [Expedite Windows quality updates in Microsoft Intune](/mem/intune/protect/windows-10-expedite-updates)
 
