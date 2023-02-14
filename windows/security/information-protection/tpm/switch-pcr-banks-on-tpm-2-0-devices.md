@@ -35,13 +35,13 @@ Some TPM PCRs are used as checksums of log events. The log events are extended i
 
 To bind the use of a TPM based key to a certain state of the PC, the key can be sealed to an expected set of PCR values. For instance, PCRs 0 through 7 have a well-defined value after the boot process – when the OS is loaded. When the hardware, firmware, or boot loader of the machine changes, the change can be detected in the PCR values. Windows uses this capability to make certain cryptographic keys only available at certain times during the boot process. For instance, the BitLocker key can be used at a certain point in the boot, but not before or after.
 
-It is important to note that this binding to PCR values also includes the hashing algorithm used for the PCR. For instance, a key can be bound to a specific value of the SHA-1 PCR\[12\], if using SHA-256 PCR banks, even with the same system configuration. Otherwise, the PCR values will not match.
+It is important to note that this binding to PCR values also includes the hashing algorithm used for the PCR. For instance, a key can be bound to a specific value of the SHA-1 PCR\[12\], if using the SHA-256 PCR bank, even with the same system configuration. Otherwise, the PCR values will not match.
 
 ## What happens when PCR banks are switched?
 
 When the PCR banks are switched, the algorithm used to compute the hashed values stored in the PCRs during extend operations is changed. Each hash algorithm will return a different cryptographic signature for the same inputs.
 
-As a result, if the currently used PCR bank is switched all keys that have been bound to the previous PCR values will no longer work. For example, if you had a key bound to the SHA-1 value of PCR\[12\] and subsequently changed the PCR banks to SHA-256, the banks wouldn’t match, and you would be unable to use that key. The BitLocker key is secured using the PCR banks and Windows will not be able to unseal it if the PCR banks are switched while BitLocker is enabled.
+As a result, if the currently used PCR bank is switched all keys that have been bound to the previous PCR values will no longer work. For example, if you had a key bound to the SHA-1 value of PCR\[12\] and subsequently changed the PCR bank to SHA-256, the banks wouldn’t match, and you would be unable to use that key. The BitLocker key is secured using the PCR banks and Windows will not be able to unseal it if the PCR banks are switched while BitLocker is enabled.
 
 ## What can I do to switch PCRs when BitLocker is already active?
 
@@ -49,7 +49,7 @@ Before switching PCR banks you should suspend or disable BitLocker – or have y
 
 ## How can I identify which PCR bank is being used?
 
-A TPM can be configured to have multiple PCR banks active. When BIOS is performing measurements it will do so into all active PCR banks, depending on its capability to make these measurements. BIOS may chose to deactivate PCR banks that it does not support or "cap" PCR banks that it does not support by extending a separator. The following registry value identifies which PCR banks are active.
+A TPM can be configured to have multiple PCR banks active. When BIOS is performing measurements it will do so into all active PCR banks, depending on its capability to make these measurements. BIOS may choose to deactivate PCR banks that it does not support or "cap" PCR banks that it does not support by extending a separator. The following registry value identifies which PCR banks are active.
 
 - Registry key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\IntegrityServices<br>
 - DWORD: TPMActivePCRBanks<br>

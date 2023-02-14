@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: jgeurten
-ms.reviewer: isbrahm
+ms.reviewer: jsuther1974
 ms.author: vinpa
 manager: aaroncz
 ms.topic: conceptual

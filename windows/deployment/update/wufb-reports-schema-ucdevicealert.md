@@ -43,4 +43,4 @@ These alerts are activated as a result of an issue that is device-specific. It i
 | **TimeGenerated** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The time the snapshot generated this specific record. This is to determine to which batch snapshot this record belongs. |
 | **Type** | [string](/azure/kusto/query/scalar-data-types/string) | `UpdateAlert` | The entity type. |
 | **UpdateCategory** | [string](/azure/kusto/query/scalar-data-types/string) | `WindowsFeatureUpdate` | The type of content this DeviceUpdateEvent is tracking. |
-| **UpdateClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether this content is an upgrade (feature update), security (quality update), non-security (quality update) |
+| **UpdateClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether this content is an upgrade (feature update), security (quality update), non-security (quality update), or driver |
