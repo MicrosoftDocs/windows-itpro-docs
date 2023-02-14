@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 02/10/2023
+ms.date: 02/14/2023
 ms.technology: itpro-updates
 ---
 
@@ -48,6 +48,10 @@ Windows Update for Business reports supports Windows client devices on the follo
 
 - General Availability Channel
 - Windows Update for Business reports *counts* Windows Insider Preview devices, but doesn't currently provide detailed deployment insights for them.
+
+### Windows operating system updates
+
+- For [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data), installing the January 2023 release preview cumulative update, or a later equivalent update, is recommended
 
 ## Diagnostic data requirements
 
