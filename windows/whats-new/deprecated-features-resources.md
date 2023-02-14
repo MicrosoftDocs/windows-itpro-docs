@@ -1,7 +1,7 @@
 ---
 title: Resources for deprecated features in the Windows client
 description: Resources and details for deprecated features in the Windows Client.
-ms.date: 12/10/2022
+ms.date: 02/14/2023
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
@@ -33,6 +33,7 @@ The following troubleshooters will automatically be redirected when you access t
 
 - Background Intelligent Transfer Service (BITS)
 - Bluetooth
+- Camera
 - Internet Connections
 - Network Adapter
 - Playing Audio
