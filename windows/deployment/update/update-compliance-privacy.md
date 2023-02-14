@@ -17,6 +17,10 @@ ms.date: 12/31/2017
 - Windows 10
 - Windows 11
 
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
+
+
 Update Compliance is fully committed to privacy, centering on these tenets:
 
 - **Transparency:** Windows client diagnostic data events that are required for Update Compliance's operation are fully documented (see the links for additional information) so you can review them with your company's security and compliance teams. The Diagnostic Data Viewer lets you see diagnostic data sent from a given device (see [Diagnostic Data Viewer Overview](/windows/configuration/diagnostic-data-viewer-overview) for details).
