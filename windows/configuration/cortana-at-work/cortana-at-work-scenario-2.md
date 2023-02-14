@@ -2,6 +2,7 @@
 title: Perform a quick search with Cortana at work (Windows)
 description: This scenario is a test scenario about how to perform a quick search with Cortana at work.
 ms.prod: windows-client
+ms.collection: tier3
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

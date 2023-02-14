@@ -7,7 +7,9 @@ ms.author: lizlong
 ms.reviewer: ericpapa
 ms.prod: windows-client
 ms.localizationpriority: medium
-ms.collection: highpri
+ms.collection:
+ - highpri
+ - tier1
 ms.technology: itpro-configure
 ms.date: 01/10/2023
 ms.topic: article
