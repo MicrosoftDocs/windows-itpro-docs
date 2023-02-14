@@ -71,7 +71,7 @@ Drivers are automatically enabled because they are beneficial to device systems.
  We also recommend that you allow Microsoft product updates as discussed previously.
 
 ### Set when devices receive feature and quality updates
-
+ 
 #### I want to receive pre-release versions of the next feature update
 
 1. Ensure that you are enrolled in the Windows Insider Program for Business. This is a completely free program available to commercial customers to aid them in their validation of feature updates before they are released. Joining the program enables you to receive updates prior to their release as well as receive emails and content related to what is coming in the next updates. 

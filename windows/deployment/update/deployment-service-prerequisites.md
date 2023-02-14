@@ -91,6 +91,12 @@ When you use [Windows Update for Business reports](wufb-reports-overview.md) in 
 <!--Using include for deployment service limitations-->
 [!INCLUDE [Windows Update for Business deployment service limitations](./includes/wufb-deployment-limitations.md)]
 
+## Policy considerations for drivers
+
+<!--Using include for Policy considerations for drivers-->
+[!INCLUDE [Windows Update for Business deployment service driver policy considerations](./includes/wufb-deployment-driver-policy-considerations.md)]
+
+
 ## General tips for the deployment service
 
 Follow these suggestions for the best results with the service:
