@@ -31,6 +31,13 @@ Starting with Microsoft Intune version 1902, you can set many Delivery Optimizat
 
 **Starting with Windows 10, version 1903**, you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this set the value for [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) to its new maximum value of 5.
 
+## Allow service endpoints
+
+When using a firewall, it's important that the Delivery Optimization Service endpoints are allowed and associated ports are open. For more information, see [Endpoints for Delivery Optimization and Microsoft Connected Cache content](delivery-optimization-endpoints.md). 
+
+[Delivery Optimization Frequently Asked Questions](waas-delivery-optimization-faq.yml).
+
+
 ## Allow content endpoints
 
 When using a firewall, it's important that the content endpoints are allowed and associated ports are open. For more information, see [Endpoints for Delivery Optimization and Microsoft Connected Cache content](delivery-optimization-endpoints.md).
@@ -72,7 +79,7 @@ To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimiza
 
 The default download mode setting is **1**; this means all devices breaking out to the internet using the same public IP will be considered as a single peer group. To prevent peer-to-peer activity across your WAN, you should set the download mode to **2**. If you have already defined Active Directory sites per hub or branch office, then you don't need to do anything else since those will be used by default as the source for creation of Group IDs. If you're not using Active Directory sites, you should set a different source for Groups by using the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) options or the [DORestrictPeerSelectionBy] (waas-delivery-optimization-reference.md#select-a-method-to-restrict-peer-selection) policy to restrict the activity to the subnet.
 
-To do this in Group Policy go to ****Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
+To do this in Group Policy go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
 To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set [DODownloadMode](/windows/client-management/mdm/policy-csp-deliveryoptimization#dodownloadmode) to **2**.
 

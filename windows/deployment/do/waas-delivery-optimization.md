@@ -21,11 +21,21 @@ ms.date: 12/31/2017
 - Windows 10
 - Windows 11
 
-> **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the master spreadsheet available at the [Download Center](https://www.microsoft.com/download/details.aspx?id=102158).
+> **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the master spreadsheet available at the [Download Center for Windows 11](https://www.microsoft.com/en-us/download/details.aspx?id=104594) or [Download Center for Windows 10](https://www.microsoft.com/en-us/download/details.aspx?id=104678).
 
-Windows updates, upgrades, and applications can contain packages with large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization is an HTTP downloader with a cloud-managed solution that allows clients to download those packages from alternate sources (such as other peers on the network and/or a caching server) in addition to the traditional internet-based servers (referred to as 'HTTP sources' throughout Delivery Optimization documents). You can use Delivery Optimization with [Windows Update](../update/how-windows-update-works.md), Windows Server Update Services (WSUS), [Microsoft Intune/Windows Update for Business](/mem/intune/configuration/delivery-optimization-windows), or [Microsoft Configuration Manager](/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#windows-delivery-optimization) (when installation of Express Updates is enabled).
+Win 11 22H2
 
-To use either the peer-to-peer functionality or the Microsoft Connected Cache features, devices must have access to the Internet and Delivery Optimization cloud services. When Delivery Optimization is configured to use peers and Microsoft Connected Cache (MCC), to achieve the best possible content delivery experience, the client will connect to MCC and peers in parallel. If the desired content can't be obtained from MCC or peers, Delivery Optimization will automatically fallback to the HTTP source to get the requested content.
+Download Group Policy Settings Reference Spreadsheet for Windows 11 2022 Update (22H2) from Official Microsoft Download Center 
+
+Win 10 22H2
+
+Download Group Policy Settings Reference Spreadsheet for Windows 10 2022 Update (22H2) from Official Microsoft Download Center 
+
+Windows updates, upgrades, and applications can contain packages with large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. Delivery Optimization is a reliable HTTP downloader with a cloud-managed solution that allows Windows devices to download those packages from alternate sources if desired (such as other devices on the network and/or a dedicated cache server) in addition to the traditional internet-based servers (referred to as 'HTTP sources' throughout Delivery Optimization documents). You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment however, the use of peer-to-peer is completely optional.
+
+To use either the peer-to-peer functionality or the Microsoft Connected Cache features, devices must have access to the Internet and Delivery Optimization cloud services. When Delivery Optimization is configured to use peers and Microsoft Connected Cache (MCC), to achieve the best possible content delivery experience, the client will connect to MCC and peers in parallel. If the desired content can't be obtained from MCC or peers, Delivery Optimization will seamlessly fall back to the HTTP source to get the requested content.
+
+You can use Delivery Optimization with Windows Update, Windows Server Update Services (WSUS), Microsoft Intune/Windows Update for Business, or Microsoft Configuration Manager (when installation of Express Updates is enabled).
 
 For information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization](waas-delivery-optimization-setup.md). For a comprehensive list of all Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
 
@@ -60,7 +70,7 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | MDM Agent | Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
 | Xbox Game Pass (PC) | Windows 10 1809, Windows 11 | :heavy_check_mark: |  | :heavy_check_mark: |
 | Windows Package Manager| Windows 10 1809, Windows 11 | :heavy_check_mark: |  |  |
-| MSIX | Windows 10 2004, Windows 11 | :heavy_check_mark: |  |  |
+| MSIX Installer| Windows 10 2004, Windows 11 | :heavy_check_mark: |  |  |
 
 #### Windows Server
 

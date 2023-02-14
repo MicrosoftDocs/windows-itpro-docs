@@ -85,9 +85,10 @@ All cached files have to be above a set minimum size. This size is automatically
 
 More options available that control the impact Delivery Optimization has on your network include the following:
 
-- [Maximum Download Bandwidth](#maximum-download-bandwidth) and [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) control the download bandwidth used by Delivery Optimization.
-- [Max Upload Bandwidth](#max-upload-bandwidth) controls the Delivery Optimization upload bandwidth usage.
-- [Monthly Upload Data Cap](#monthly-upload-data-cap) controls the amount of data a client can upload to peers each month.
+- [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) to control the amount of bandwidth for downloading in the background in KB/s.
+- [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) to control the amount of bandwidth for downloading in the foreground in KB/s.
+- | [Maximum foreground download bandwidth (percentage)](#maximum-foreground-download-bandwidth) to control the amount of bandwidth for downloading in the foreground based on percentage.
+| [Maximum background download bandwidth (percentage)](#maximum-background-download-bandwidth) to control the amount of bandwidth for downloading in the background based on percentage.
 - [Minimum Background QoS](#minimum-background-qos) lets administrators guarantee a minimum download speed for Windows updates. This setting adjusts the amount of data downloaded directly from HTTP sources, rather than other peers in the network.
 - [Maximum Foreground Download Bandwidth](#maximum-foreground-download-bandwidth) specifies the **maximum foreground download bandwidth** that Delivery Optimization uses, across all concurrent download activities, as a percentage of available download bandwidth.
 - [Maximum Background Download Bandwidth](#maximum-background-download-bandwidth) specifies the **maximum background download bandwidth** that Delivery Optimization uses, across all concurrent download activities, as a percentage of available download bandwidth.
@@ -132,10 +133,11 @@ Download mode dictates which download sources clients are allowed to use when do
 | Group (2) | When group mode is set, the group is automatically selected based on the device's Active Directory Domain Services (AD DS) site (Windows 10, version 1607) or the domain the device is authenticated to (Windows 10, version 1511). In group mode, peering occurs across internal subnets, between devices that belong to the same group, including devices in remote offices. You can use GroupID option to create your own custom group independently of domains and AD DS sites. Starting with Windows 10, version 1803, you can use the GroupIDSource parameter to take advantage of other method to create groups dynamically. Group download mode is the recommended option for most organizations looking to achieve the best bandwidth optimization with Delivery Optimization. |
 | Internet (3) | Enable Internet peer sources for Delivery Optimization. |
 | Simple (99) | Simple mode disables the use of Delivery Optimization cloud services completely (for offline environments). Delivery Optimization switches to this mode automatically when the Delivery Optimization cloud services are unavailable, unreachable or when the content file size is less than 10 MB. In this mode, Delivery Optimization provides a reliable download experience, with no peer-to-peer caching. |
-|Bypass (100) |Bypass Delivery Optimization and use BITS, instead. You should only select this mode if you use WSUS and prefer to use BranchCache. You don't need to set this option if you're using Configuration Manager. If you want to disable peer-to-peer functionality, it's best to set **DownloadMode** to **(0)** or **(99)**. |
+|Bypass (100) | This option is deprecated starting in Windows 11.
+If you want to disable peer-to-peer functionality, it's best to set DownloadMode to (0). If your device doesn’t have internet access, set Download Mode to (99). Bypass Delivery Optimization and use BITS, instead. You should only select this mode if you use WSUS and prefer to use BranchCache. You don't need to set this option if you're using Configuration Manager.
 
 > [!NOTE]
-> Starting in Windows 11, the Bypass option of Download Mode is no longer used.
+> Starting in Windows 11, the Bypass option of Download Mode is deprecated.
 >
 > [!NOTE]
 > When you use Azure Active Directory tenant, AD Site, or AD Domain as the source of group IDs, the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
