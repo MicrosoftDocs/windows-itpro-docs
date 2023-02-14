@@ -28,7 +28,10 @@ To install or upgrade to Windows 11, devices must meet the following minimum har
 
 - **Memory**: 4 gigabytes (GB) or greater.
 
-- **Storage**: 64 GB <sup>[Note 1](#bkmk_note1)</sup> or greater available disk space.
+- **Storage**: 64 GB or greater available disk space.
+
+  > [!NOTE]
+  > There might be more storage requirements over time for updates, and to enable specific features within the OS. For more information, see [Windows 11 specifications](https://www.microsoft.com/windows/windows-11-specifications).
 
 - **Graphics card**: Compatible with DirectX 12 or later, with a WDDM 2.0 driver.
 
@@ -41,13 +44,6 @@ To install or upgrade to Windows 11, devices must meet the following minimum har
 - **Internet connection**: Internet connectivity is necessary to perform updates, and to download and use some features.
 
   - Windows 11 Home edition requires an internet connection and a Microsoft Account to complete device setup on first use.
-
-<a name="bkmk_note1"></a>
-
-> [!NOTE]
-> **Note 1: Storage**
->
-> There might be more storage requirements over time for updates, and to enable specific features within the OS. For more information, see [Windows 11 specifications](https://www.microsoft.com/windows/windows-11-specifications).
 
 For more information, see the following Windows Insider blog post: [Update on Windows 11 minimum system requirements](https://blogs.windows.com/windows-insider/2021/06/28/update-on-windows-11-minimum-system-requirements/).
 
@@ -94,7 +90,10 @@ Some features in Windows 11 have requirements beyond the minimum [hardware requi
 
 The following configuration requirements apply to VMs running Windows 11.
 
-- **Generation**: 2 <sup>[Note 2](#bkmk_note2)</sup>
+- **Generation**: 2
+
+  > [!NOTE]
+  > In-place upgrade of existing generation 1 VMs to Windows 11 isn't possible.
 
 - **Storage**: 64 GB or greater disk space.
 
@@ -109,23 +108,12 @@ The following configuration requirements apply to VMs running Windows 11.
 
 - **Processor**: Two or more virtual processors.
 
-  - The VM host processor must also meet Windows 11 [processor requirements](/windows-hardware/design/minimum/windows-processor-requirements). <sup>[Note 3](#bkmk_note2)</sup>
+  - The VM host processor must also meet Windows 11 [processor requirements](/windows-hardware/design/minimum/windows-processor-requirements).
 
-    Procedures to configure required VM settings depend on the VM host type. For example, VM hosts running Hyper-V, virtualization (VT-x, VT-d) must be enabled in the BIOS. Virtual TPM 2.0 is emulated in the guest VM independent of the Hyper-V host TPM presence or version.
+    > [!NOTE]
+    > There may be some instances where this requirement for the VM host doesn't apply. For more information, see [Options for using Windows 11 with Mac computers](https://support.microsoft.com/topic/cd15fd62-9b34-4b78-b0bc-121baa3c568c).<!-- 7600331 -->
 
-<a name="bkmk_note2"></a>
-
-> [!NOTE]
-> **Note 2: VM generation**
->
-> In-place upgrade of existing generation 1 VMs to Windows 11 isn't possible.
-
-<a name="bkmk_note3"></a>
-
-> [!NOTE]
-> **Note 3: VM host processor**
->
-> There may be some instances where this requirement for the VM host doesn't apply. For more information, see [SMC article title TBD](https://support.microsoft.com).<!-- 7600331 -->
+  - Procedures to configure required VM settings depend on the VM host type. For example, VM hosts running Hyper-V, virtualization (VT-x, VT-d) must be enabled in the BIOS. Virtual TPM 2.0 is emulated in the guest VM independent of the Hyper-V host TPM presence or version.
 
 ## Next steps
 
