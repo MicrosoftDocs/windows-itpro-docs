@@ -15,14 +15,15 @@ ms.technology: itpro-updates
 ***(Applies to: Windows 11 & Windows 10)***
 
 
-[Windows Update for Business reports](wufb-reports-overview.md) presents information commonly needed by updates administrators in an easy-to-use format. Windows Update for Business reports uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into four tab sections:
+[Windows Update for Business reports](wufb-reports-overview.md) presents information commonly needed by updates administrators in an easy-to-use format. Windows Update for Business reports uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into tab sections:
 
 - [Summary](#summary-tab)
 - [Quality updates](#quality-updates-tab)
 - [Feature updates](#feature-updates-tab)
 - [Delivery Optimization](#bkmk_do)
+- [Driver updates](#driver-updates-tab)
 
-:::image type="content" source="media/33771278-wufb-reports-workbook-summary.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook with the three tabbed sections outlined in red." lightbox="media/33771278-wufb-reports-workbook-summary.png":::
+:::image type="content" source="media/33771278-wufb-reports-workbook-summary.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook. The three tabbed sections are outlined in red." lightbox="media/33771278-wufb-reports-workbook-summary.png":::
 
 ## Open the Windows Update for Business reports workbook
 
@@ -137,7 +138,40 @@ The **Device status** group for feature updates contains the following items:
 - **Device compliance status**: Table containing a list of devices getting a feature update and installation information including active alerts for the devices.
   - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
-## <a name="bkmk_do"></a> Delivery Optimization (preview tab)
+## Driver updates tab
+
+The **Driver update** tab provides information on driver and firmware update deployments from [Windows Update for Business deployment service](deployment-service-overview.md). Generalized data is at the top of the page in tiles. The data becomes more specific as you navigate lower in this tab. The top of the driver updates tab contains tiles with the following information:
+
+**Devices taking driver updates**: Count of devices that are installing driver and firmware updates.
+**Approved updates**: Count of approved driver updates
+**Total policies**: The total number of deployment polices for driver and firmware updates from [Windows Update for Business deployment service](deployment-service-overview.md)
+**Active alerts**: Count of active alerts for driver deployments
+
+Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 250 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+
+:::image type="content" source="media/7539531-wufb-reports-workbook-drivers.png" alt-text="Screenshot of the update status tab for driver updates." lightbox="media/7539531-wufb-reports-workbook-drivers.png":::
+
+Just like the [**Quality updates**](#quality-updates-tab) and [**Feature updates**](#feature-updates-tab) tabs, the **Driver updates** tab is also subdivided into **Update status** and **Device status** groups below the tiles. These different chart groups allow you to easily discover trends in compliance data.
+
+### <a name="bkmk_update-group-driver"></a> Update status group for drivers
+
+The **Update status** group for driver updates contains the following items:
+
+- **Update states for all driver updates**: Chart containing the number of devices in a specific state, such as installing, for driver updates.
+- **Distribution of Driver Classes**: Chart containing the number of drivers in a specific class.
+- **Update alerts for all driver updates**: Chart containing the count of active errors and warnings for driver updates.
+
+The **Update deployment status** table displays information about deployed driver updates for your devices. Drill-in further by selecting a value from the **TotalDevices** column to display the status of a specific driver for a specific policy along with information about the installation status for each device.
+
+### <a name="bkmk_device-group-driver"></a> Device status group for driver updates
+
+The **Device status** group for driver updates contains the following items:
+
+- **Device alerts**: Count of active device alerts for driver updates in each alert classification.
+- **Device compliance status**: Table containing a list of devices getting a driver update and installation information including active alerts for the devices.
+  - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+
+## <a name="bkmk_do"></a> Delivery Optimization
 
 The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes [Microsoft Connected Cache](/windows/deployment/do/waas-microsoft-connected-cache) information.
 
@@ -154,7 +188,8 @@ The Delivery Optimization tab is further divided into the following groups:
 - **Content Distribution**: Includes charts showing percentage volumes and GB volumes by source by content types. All content types are linked to a table for deeper filtering by **ContentType**, **AzureADTenantId**, and **GroupID**.
 - **Efficiency By Group**: This view provides filters commonly used ways of grouping devices. The provided filters include: **GroupID**, **City**, **Country**, and **ISP**.
 
-:::image type="content" source="images/wufb-do-overview.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook for Delivery Optimization." lightbox="images/wufb-do-overview.png":::
+:::image type="content" source="media/wufb-do-overview.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook for Delivery Optimization." lightbox="media/wufb-do-overview.png":::
+
 
 ## Customize the workbook
 
