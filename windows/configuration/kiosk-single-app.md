@@ -1,6 +1,6 @@
 ---
-title: Set up a single-app kiosk on Windows 10/11
-description: A single-use device is easy to set up in Windows 10 and Windows 11 for desktop editions (Pro, Enterprise, and Education).
+title: Set up a single-app kiosk on Windows
+description: A single-use device is easy to set up in Windows Pro, Enterprise, and Education editions.
 ms.reviewer: sybruckm
 manager: aaroncz
 ms.author: lizlong
@@ -8,7 +8,9 @@ ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri
+ms.collection:
+ - highpri
+ - tier1
 ms.technology: itpro-configure
 ms.date: 12/31/2017
 ---

@@ -2,6 +2,7 @@
 title: Set up and test custom voice commands in Cortana for your organization (Windows)
 description: How to create voice commands that use Cortana to perform voice-enabled actions in your line-of-business (LOB) Universal Windows Platform (UWP) apps.
 ms.prod: windows-client
+ms.collection: tier3
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

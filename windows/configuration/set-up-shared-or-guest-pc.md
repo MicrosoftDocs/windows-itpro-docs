@@ -10,7 +10,7 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: 
 manager: aaroncz
-ms.collection: 
+ms.collection: tier2
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
