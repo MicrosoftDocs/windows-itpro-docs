@@ -8,6 +8,7 @@ appliesto:
 ms.collection:
   - highpri
   - education
+  - tier2
 ---
 
 # For teachers - get Minecraft: Education Edition
