@@ -38,7 +38,7 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 
 | Task | Your responsibility | Windows Autopatch |
 | ----- | :-----: | :-----: |
-| [Add and verify admin contacts](../deploy/windows-autopatch-admin-contacts.md) in Microsoft Endpoint Manager |  :heavy_check_mark: | :x: |
+| [Add and verify admin contacts](../deploy/windows-autopatch-admin-contacts.md) in Microsoft Intune |  :heavy_check_mark: | :x: |
 | [Deploy and configure Windows Autopatch service configuration](../references/windows-autopatch-changes-to-tenant.md) | :x: | :heavy_check_mark: |
 | Educate users on the Windows Autopatch end user update experience<ul><li>[Windows quality update end user experience](../operate/windows-autopatch-windows-quality-update-end-user-exp.md)</li><li>[Windows feature update end user experience](../operate/windows-autopatch-windows-feature-update-end-user-exp.md)</li><li>[Microsoft 365 Apps for enterprise end user experience](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#end-user-experience)</li><li>[Microsoft Teams end user experience](../operate/windows-autopatch-teams.md#end-user-experience)</li></ul> | :heavy_check_mark: | :x: |
 | Remove your devices from existing unsupported [Windows update](../references/windows-autopatch-windows-update-unsupported-policies.md) and [Microsoft 365](../references/windows-autopatch-microsoft-365-policies.md) policies |  :heavy_check_mark: | :x: |
@@ -56,7 +56,7 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 
 | Task | Your responsibility | Windows Autopatch |
 | ----- | :-----: | :-----: |
-| [Maintain contacts in the Microsoft Endpoint Manager admin center](../deploy/windows-autopatch-admin-contacts.md) | :heavy_check_mark: | :x: |
+| [Maintain contacts in the Microsoft Intune admin center](../deploy/windows-autopatch-admin-contacts.md) | :heavy_check_mark: | :x: |
 | [Maintain and manage the Windows Autopatch service configuration](../operate/windows-autopatch-maintain-environment.md) | :x: | :heavy_check_mark: |
 | [Maintain customer configuration to align with the Windows Autopatch service configuration](../operate/windows-autopatch-maintain-environment.md) |  :heavy_check_mark: | :x: |
 | [Run on-going checks to ensure devices are only present in one deployment ring](../operate/windows-autopatch-update-management.md#automated-deployment-ring-remediation-functions) | :x: | :heavy_check_mark: |
