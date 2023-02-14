@@ -71,7 +71,12 @@ Windows Autopatch uses Microsoft Intune’s built-in solution, which uses config
 
 Windows Autopatch provides a permanent pause of a Windows feature update deployment. The Windows Autopatch service automatically extends the 35-day pause limit (permanent pause) established by Microsoft Intune on your behalf. The deployment remains permanently paused until you decide to resume it.
 
-## Pausing and resuming a release
+## Release management
+
+> [!NOTE]
+> To access the Release management blade, you must have the correct [role-based access control](../deploy/windows-autopatch-register-devices.md#built-in-roles-required-for-device-registration).
+
+### Pausing and resuming a release
 
 > [!CAUTION]
 > It's only recommended to use Windows Autopatch's end-user experience to pause and resume [Windows quality](../operate/windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release). If you need assistance with pausing and resuming updates, please [submit a support request](../operate/windows-autopatch-support-request.md).
