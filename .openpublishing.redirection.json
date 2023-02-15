@@ -20519,6 +20519,21 @@
       "source_path": "windows/client-management/mdm/policy-ddf-file.md",
       "redirect_url": "/windows/client-management/mdm/configuration-service-provider-ddf",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "education/windows/education-scenarios-store-for-business.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "education/windows/teacher-get-minecraft.md",
+      "redirect_url": "/education/windows/get-minecraft-for-education",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "education/windows/school-get-minecraft.md",
+      "redirect_url": "/education/windows/get-minecraft-for-education",
+      "redirect_document_id": true
     }
   ]
 }

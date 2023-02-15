@@ -100,5 +100,5 @@ landingContent:
           url: edu-take-a-test-kiosk-mode.md
         - text: Configure Shared PC
           url: /windows/configuration/set-up-shared-or-guest-pc?context=/education/context/context
-        - text: "Deploy Minecraft: Education Edition"
+        - text: "Deploy Minecraft Education"
           url: get-minecraft-for-education.md

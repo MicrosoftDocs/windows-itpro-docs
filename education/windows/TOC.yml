@@ -56,16 +56,8 @@ items:
         href: change-to-pro-education.md
       - name: Upgrade Windows Home to Windows Education on student-owned devices
         href: change-home-to-edu.md
-    - name: "Get and deploy Minecraft: Education Edition"
-      items: 
-      - name: "Get Minecraft: Education Edition"
-        href: get-minecraft-for-education.md
-      - name: "For IT administrators: get Minecraft Education Edition"
-        href: school-get-minecraft.md
-      - name: "For teachers: get Minecraft Education Edition"
-        href: teacher-get-minecraft.md
-    - name: Work with Microsoft Store for Education
-      href: education-scenarios-store-for-business.md
+    - name: "Get and deploy Minecraft Education"
+      href: get-minecraft-for-education.md
     - name: Migrate from Chromebook to Windows
       items: 
         - name: Chromebook migration guide
