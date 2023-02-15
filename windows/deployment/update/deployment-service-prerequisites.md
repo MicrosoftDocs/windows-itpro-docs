@@ -42,7 +42,7 @@ Windows Update for Business deployment service supports Windows client devices o
 
 ### Windows operating system updates
 
-- Expediting updates requires the *Update Health Tools* on the clients. The tools are are installed starting with [KB 4023057](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a). To confirm the presence of the Update Health Tools on a device:
+- Expediting updates requires the *Update Health Tools* on the clients. The tools are installed starting with [KB 4023057](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a). To confirm the presence of the Update Health Tools on a device:
   - Look for the folder **C:\Program Files\Microsoft Update Health Tools** or review *Add Remove Programs* for **Microsoft Update Health Tools**.
   - As an Admin, run the following PowerShell script:  `Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match "Microsoft Update Health Tools"}`
 
@@ -90,6 +90,12 @@ When you use [Windows Update for Business reports](wufb-reports-overview.md) in 
 
 <!--Using include for deployment service limitations-->
 [!INCLUDE [Windows Update for Business deployment service limitations](./includes/wufb-deployment-limitations.md)]
+
+## Policy considerations for drivers
+
+<!--Using include for Policy considerations for drivers-->
+[!INCLUDE [Windows Update for Business deployment service driver policy considerations](./includes/wufb-deployment-driver-policy-considerations.md)]
+
 
 ## General tips for the deployment service
 
