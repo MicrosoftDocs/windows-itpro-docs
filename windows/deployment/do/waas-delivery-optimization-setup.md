@@ -116,7 +116,7 @@ To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimiza
 
 Windows Update for Business Delivery Optimization Report provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer, Microsoft Connected Cache (MCC), HTTP source/CDN distribution over the past 28 days.
 
-:::image type="content" source="images/wufb-do-overview.png" alt-text="Delivery Optimization status in Update Compliance" lightbox="images/wufb-do-overview.png":::
+:::image type="content" source="../update/images/wufb-do-overview.png" alt-text="Delivery Optimization status in Update Compliance" lightbox="../update/images/wufb-do-overview.png":::
 
 For details, see [Windows Update for Business Delivery Optimization Report](../update/wufb-reports-overview.md).
 
