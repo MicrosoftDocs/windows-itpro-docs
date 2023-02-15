@@ -46,6 +46,8 @@ items:
         href: configure-aad-google-trust.md
     - name: Configure Shared PC
       href: /windows/configuration/set-up-shared-or-guest-pc?context=/education/context/context
+    - name: Get and deploy Minecraft Education
+      href: get-minecraft-for-education.md
     - name: Use the Set up School PCs app
       href: use-set-up-school-pcs-app.md
     - name: Change Windows edition
@@ -56,8 +58,6 @@ items:
         href: change-to-pro-education.md
       - name: Upgrade Windows Home to Windows Education on student-owned devices
         href: change-home-to-edu.md
-    - name: "Get and deploy Minecraft Education"
-      href: get-minecraft-for-education.md
     - name: Migrate from Chromebook to Windows
       items: 
         - name: Chromebook migration guide
