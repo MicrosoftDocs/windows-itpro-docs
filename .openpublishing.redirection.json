@@ -20522,18 +20522,18 @@
     },
     {
       "source_path": "education/windows/education-scenarios-store-for-business.md",
-      "redirect_url": "/education/windows",
-      "redirect_document_id": true
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": false
     },
     {
       "source_path": "education/windows/teacher-get-minecraft.md",
       "redirect_url": "/education/windows/get-minecraft-for-education",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "education/windows/school-get-minecraft.md",
       "redirect_url": "/education/windows/get-minecraft-for-education",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }

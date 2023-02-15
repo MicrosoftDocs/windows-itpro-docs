@@ -30,7 +30,7 @@ Teachers and IT administrators can get access to **Minecraft Education** and add
 [Learn how IT administrators can get and distribute **Minecraft: Education Edition**](school-get-minecraft.md), and how to manage permissions for Minecraft.
 
 
-# For IT administrators - get Minecraft: Education Edition
+## For IT administrators - get Minecraft: Education Edition
 
 When you sign up for a [Minecraft: Education Edition](https://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](https://education.minecraft.net) subscription, Minecraft: Education Edition will be added to the inventory in your Microsoft Admin Center which is associated with your Azure Active Directory (Azure AD) tenant. Your Microsoft Admin Center is only displayed to members of your organization with administrative roles.
 
@@ -114,12 +114,7 @@ After Minecraft: Education Edition is added to your Microsoft Admin Center inven
 
 [About Intune Admin roles in the Microsoft 365 admin center](/microsoft-365/business-premium/m365bp-intune-admin-roles-in-the-mac)
 
-## Related topics
-
-[Get Minecraft: Education Edition](get-minecraft-for-education.md)
-
-
-# For teachers - get Minecraft: Education Edition
+## For teachers - get Minecraft: Education Edition
 
 The following article describes how teachers can get and distribute Minecraft: Education Edition at their school. Minecraft: Education Edition is available for anyone to trial, and subscriptions can be purchased by qualified educational institutions directly in the [Microsoft Admin Center by IT Admins](/education/windows/school-get-minecraft), via volume licensing agreements and through partner resellers. 
 
@@ -139,8 +134,3 @@ M:EE is included in many volume license agreements, however, only the administra
 #### Troubleshoot 
 
 If you're having trouble installing the app, you can get more help on our [Support page](https://aka.ms/minecraftedusupport). 
-
-## Related topics
-
-[Get Minecraft: Education Edition](get-minecraft-for-education.md)
-[For IT admins: get Minecraft: Education Edition](school-get-minecraft.md)
