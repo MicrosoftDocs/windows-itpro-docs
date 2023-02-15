@@ -41,4 +41,5 @@ The following policies define the source for driver updates as either Windows Up
   - Will display the applicable driver content in the deployment service
   - Will install drivers that are approved from the deployment service
 
-> [!NOTE] When the scan source for drivers is set to WSUS, the deployment service doesn't get inventory events from devices. This means that the deployment service won't be able to report the applicability of a driver for the device. 
+> [!NOTE] 
+> When the scan source for drivers is set to WSUS, the deployment service doesn't get inventory events from devices. This means that the deployment service won't be able to report the applicability of a driver for the device. 
