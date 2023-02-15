@@ -12,8 +12,6 @@ ms.localizationpriority: medium
 
 It's possible for the service to receive content approval but the content doesn't get installed on the device because of a Group Policy, CSP, or registry setting on the device. In some cases, organizations specifically configure these policies to fit their current or future needs. For instance, organizations may want to review applicable driver content through the deployment service, but not allow installation. Configuring this sort of behavior can be useful, especially when transitioning management of driver updates due to changing organizational needs. The following list describes driver related update policies that can affect deployments through the deployment service: 
 
-
-
 ### Policies that exclude drivers from Windows Update for a device
 
 The following policies exclude drivers from Windows Update for a device:
@@ -25,8 +23,9 @@ The following policies exclude drivers from Windows Update for a device:
   - **Intune**: [**Windows Drivers** update setting](/mem/intune/protect/windows-update-settings#update-settings) for the update ring set to `Allow` 
 
 **Behavior with the deployment service**: Devices with driver exclusion polices that are enrolled for **drivers** and added to an audience though the deployment service:
-  - Won't install drivers that are approved from the deployment service
   - Will display the applicable driver content in the deployment service
+  - Won't install drivers that are approved from the deployment service
+    - If drivers are deployed to a device that's blocking them, the deployment service displays the driver is being offered and reporting displays the install is pending.
 
 ### Policies that define the source for driver updates
 
@@ -42,3 +41,4 @@ The following policies define the source for driver updates as either Windows Up
   - Will display the applicable driver content in the deployment service
   - Will install drivers that are approved from the deployment service
 
+> [!NOTE] When the scan source for drivers is set to WSUS, the deployment service doesn't get inventory events from devices. This means that the deployment service won't be able to report the applicability of a driver for the device. 
