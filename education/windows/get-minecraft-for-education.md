@@ -95,12 +95,12 @@ If you're using Microsoft Intune to manage your devices, follow these steps to d
 1. Go to the <a href="https://intune.micorsoft.com" target="_blank"><b>Microsoft Intune admin center</b></a>
 1. Select **Apps > Windows > Add**
 1. Under *App type*, select **Microsoft Store app (new)** and choose **Select**
-1. Select *Search the Microsoft Store app (new)* and search for **Minecraft Education**
+1. Select **Search the Microsoft Store app (new)** and search for **Minecraft Education**
 1. Select the app and choose **Select**
 1. On the *App information* screen, select **Next**
 1. On the *Assignments* screen, choose how you want to target the installation of Minecraft Education
-  - *Required* assignments are installed without user interaction
-  - *Available* assignments enable Minecraft Education to be installed from Company Portal by the targeted users
+    - *Required* assignments are installed without user interaction
+    - *Available* assignments enable Minecraft Education to be installed from Company Portal by the targeted users
 1. Select **Next**
 1. On the *Review + Create* screen, select **Create**
 
