@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 11/15/2022
+ms.date: 02/10/2023
 ms.technology: itpro-updates
 ---
 
@@ -86,11 +86,6 @@ To share feedback about the Microsoft Learn platform, see [Microsoft Learn feedb
 ## Troubleshooting tips
 
 Use the following troubleshooting tips to resolve the most common problems when using Windows Update for Business reports:
-
-### Verify client configuration
-
-<!--Using include for verifying device configuration-->
-[!INCLUDE [Endpoints for Windows Update for Business reports](./includes/wufb-reports-verify-device-configuration.md)]
 
 ### Ensuring devices are configured correctly to send data
 
