@@ -40,6 +40,7 @@ WindowsAdvancedThreatProtection
 ----Configuration
 --------SampleSharing
 --------TelemetryReportingFrequency
+--------AadDdeviceId
 ----Offboarding
 ----DeviceTagging
 --------Group
@@ -48,34 +49,34 @@ WindowsAdvancedThreatProtection
 
 The following list describes the characteristics and parameters.
 
-<a href="" id="--device-vendor-msft-windowsadvancedthreatprotection"></a>**./Device/Vendor/MSFT/WindowsAdvancedThreatProtection**
+**./Device/Vendor/MSFT/WindowsAdvancedThreatProtection**
 The root node for the Windows Defender Advanced Threat Protection configuration service provider.
 
 Supported operation is Get.
 
-<a href="" id="onboarding"></a>**Onboarding**
+**Onboarding**
 Sets Windows Defender Advanced Threat Protection Onboarding blob and initiates onboarding to Windows Defender Advanced Threat Protection.
 
 The data type is a string.
 
 Supported operations are Get and Replace.
 
-<a href="" id="healthstate"></a>**HealthState**
+**HealthState**
 Node that represents the Windows Defender Advanced Threat Protection health state.
 
-<a href="" id="healthstate-lastconnected"></a>**HealthState/LastConnected**
+**HealthState/LastConnected**
 Contains the timestamp of the last successful connection.
 
 Supported operation is Get.
 
-<a href="" id="healthstate-senseisrunning"></a>**HealthState/SenseIsRunning**
+**HealthState/SenseIsRunning**
 Boolean value that identifies the Windows Defender Advanced Threat Protection Sense running state.
 
 The default value is false.
 
 Supported operation is Get.
 
-<a href="" id="healthstate-onboardingstate"></a>**HealthState/OnboardingState**
+**HealthState/OnboardingState**
 Represents the onboarding state.
 
 Supported operation is Get.
@@ -85,15 +86,15 @@ The following list shows the supported values:
 - 0 (default) – Not onboarded
 - 1 – Onboarded
 
-<a href="" id="healthstate-orgid"></a>**HealthState/OrgId**
+**HealthState/OrgId**
 String that represents the OrgID.
 
 Supported operation is Get.
 
-<a href="" id="configuration"></a>**Configuration**
+**Configuration**
 Represents Windows Defender Advanced Threat Protection configuration.
 
-<a href="" id="configuration-samplesharing"></a>**Configuration/SampleSharing**
+**Configuration/SampleSharing**
 Returns or sets the Windows Defender Advanced Threat Protection Sample Sharing configuration parameter.
 
 The following list shows the supported values:
@@ -103,7 +104,7 @@ The following list shows the supported values:
 
 Supported operations are Get and Replace.
 
-<a href="" id="configuration-telemetryreportingfrequency"></a>**Configuration/TelemetryReportingFrequency**
+**Configuration/TelemetryReportingFrequency**
 Added in Windows 10, version 1703. Returns or sets the Windows Defender Advanced Threat Protection diagnostic data reporting frequency.
 
 The following list shows the supported values:
@@ -113,26 +114,31 @@ The following list shows the supported values:
 
 Supported operations are Get and Replace.
 
-<a href="" id="offboarding"></a>**Offboarding**
+**Configuration/AadDeviceId**
+Returns or sets the Intune's reported known AadDeviceId for the machine
+
+Supported operations are Get and Replace.
+
+**Offboarding**
 Sets the Windows Defender Advanced Threat Protection Offboarding blob and initiates offboarding to Windows Defender Advanced Threat Protection.
 
 The data type is a string.
 
 Supported operations are Get and Replace.
 
-<a href="" id="devicetagging"></a>**DeviceTagging**
+**DeviceTagging**
 Added in Windows 10, version 1709. Represents Windows Defender Advanced Threat Protection configuration for managing role based access and device tagging.
 
 Supported operation is Get.
 
-<a href="" id="group"></a>**DeviceTagging/Group**
+**DeviceTagging/Group**
 Added in Windows 10, version 1709. Device group identifiers.
 
 The data type is a string.
 
 Supported operations are Get and Replace.
 
-<a href="" id="criticality"></a>**DeviceTagging/Criticality**
+**DeviceTagging/Criticality**
 Added in Windows 10, version 1709. Asset criticality value. Supported values:
 
 - 0 - Normal
@@ -213,6 +219,16 @@ Supported operations are Get and Replace.
         <Target>
           <LocURI>
             ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/TelemetryReportingFrequency
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Get>
+      <CmdID>7</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/AadDeviceId
           </LocURI>
         </Target>
       </Item>
