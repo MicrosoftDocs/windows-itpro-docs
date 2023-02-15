@@ -14,11 +14,10 @@ ms.date: 12/31/2017
 
 # Optimize Windows update delivery
 
-
 **Applies to**
 
--   Windows 10
--   Windows 11
+- Windows 10
+- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
@@ -57,6 +56,7 @@ Windows client quality update downloads can be large because every package conta
 > Express update delivery applies to quality update downloads. Starting with Windows 10, version 1709, Express update delivery also applies to feature update downloads for clients connected to Windows Update and Windows Update for Business.
 
 ### How Microsoft supports Express
+
 - **Express on Microsoft Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or later, or Windows 10, version 1607 with the April 2017 cumulative update.
 - **Express on WSUS Standalone**
 
@@ -67,6 +67,7 @@ Windows client quality update downloads can be large because every package conta
 ### How Express download works
 
 For OS updates that support Express, there are two versions of the file payload stored on the service:
+
 1. **Full-file version** - essentially replacing the local versions of the update binaries.
 2. **Express version** - containing the deltas needed to patch the existing binaries on the device.
 
