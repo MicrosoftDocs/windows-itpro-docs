@@ -23,8 +23,6 @@ Before you begin, make sure that you, your computer, and your school's network a
 
 * Office 365 and Azure Active Directory
 * [Latest Set up School PCs app](https://www.microsoft.com/store/apps/9nblggh4ls40)  
-* Permission to buy apps in Microsoft Store for Education
-* Set up School PCs app has permission to access the Microsoft Store for Education
 * A NTFS-formatted USB drive that is at least 1 GB, if not installing Office; and at least 8 GB, if installing Office
 * Student PCs must either: 
     * Be within range of the Wi-Fi network that you configured in the app.
@@ -172,7 +170,7 @@ The following table describes each setting and lists the applicable Windows 10 v
 |Allow local storage (not recommended for shared devices)    |X|X|X|X| Lets students save files to the Desktop and Documents folder on the Student PC.         |Not recommended if the device will be shared between different students.|
 |Optimize device for a single student, instead of a shared cart or lab    |X|X|X|X|Optimizes the device for use by a single student, rather than many students.       |Recommended if the device will be shared between different students. Single-optimized accounts are set to expire, and require a signin, 180 days after setup. This setting increases the maximum PC storage to 100% of the available disk space. In this case, student accounts aren't deleted unless the account has been inactive for 180 days. |
 |Let guests sign in to these PCs     |X|X|X|X|Allows guests to use student PCs without a school account. |Common to use within a public, shared space, such as a library. Also used when a student loses their password. Adds a **Guest** account to the PC sign-in screen that anyone can sign in to.|
-|Enable Autopilot Reset  |Not available|X|X|X|Lets you remotely reset a student’s PC from the lock screen, apply the device’s original settings, and enroll it in device management (Azure AD and MDM).  |Requires Windows 10, version 1709 and WinRE must be enabled on the PC. Setup will fail if both requirements aren't met.|
+|Enable Autopilot Reset  |Not available|X|X|X|Lets you remotely reset a student's PC from the lock screen, apply the device's original settings, and enroll it in device management (Azure AD and MDM).  |Requires Windows 10, version 1709 and WinRE must be enabled on the PC. Setup will fail if both requirements aren't met.|
 |Lock screen background|X|X|X|X|Change the default screen lock background to a custom image.|Click **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png.|   
 
 After you've made your selections, click **Next**.
