@@ -25,6 +25,8 @@
       href: delivery-optimization-workflow.md       
     - name: Using a proxy with Delivery Optimization
       href: delivery-optimization-proxy.md
+    - name: Testing Delivery Optimization
+      href: delivery-optimization-test.md
 - name: Microsoft Connected Cache
   items:
     - name: Microsoft Connected Cache overview
