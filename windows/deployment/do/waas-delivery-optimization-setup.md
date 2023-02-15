@@ -33,7 +33,7 @@ Starting with Microsoft Intune version 1902, you can set many Delivery Optimizat
 
 ## Allow service endpoints
 
-When using a firewall, it's important that the Delivery Optimization Service endpoints are allowed and associated ports are open. For more information, see [Endpoints for Delivery Optimization and Microsoft Connected Cache content](delivery-optimization-endpoints.md).
+When using a firewall, it's important that the Delivery Optimization Service endpoints are allowed and associated ports are open. For more information, see [Delivery Optimization FAQ](waas-delivery-optimization-faq.yml#what-hostnames-should-i-allow-through-my-firewall-to-support-delivery-optimization) for more information.
 
 ## Allow content endpoints
 
