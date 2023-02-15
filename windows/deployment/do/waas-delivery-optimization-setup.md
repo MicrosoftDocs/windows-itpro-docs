@@ -39,10 +39,6 @@ When using a firewall, it's important that the Delivery Optimization Service end
 
 When using a firewall, it's important that the content endpoints are allowed and associated ports are open. For more information, see [Endpoints for Delivery Optimization and Microsoft Connected Cache content](delivery-optimization-endpoints.md).
 
-## Frequently Asked Questions
-
-See [Delivery Optimization Frequently Asked Questions](waas-delivery-optimization-faq.yml) for other commonly asked questions related to Delivery Optimization.
-
 ## Recommended Delivery Optimization settings
 
 Delivery Optimization offers a great many settings to fine-tune its behavior (see [Delivery Optimization reference](waas-delivery-optimization-reference.md) for a comprehensive list), but for the most efficient performance, there are just a few key parameters that will have the greatest impact if particular situations exist in your deployment. If you just need an overview of Delivery Optimization, see [Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md).
@@ -116,13 +112,13 @@ To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimiza
 <!--Using include file, waas-delivery-optimization-monitor.md, for shared content on DO monitoring-->
 [!INCLUDE [Monitor Delivery Optimization](includes/waas-delivery-optimization-monitor.md)]
 
-### Monitor with Update Compliance
+### Monitor with Windows Update for Business Delivery Optimization Report
 
-Update Compliance provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
+Windows Update for Business Delivery Optimization Report provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer, Microsoft Connected Cache (MCC), HTTP source/CDN distribution over the past 28 days.
 
-:::image type="content" source="images/UC_workspace_DO_status.png" alt-text="Delivery Optimization status in Update Compliance" lightbox="images/UC_workspace_DO_status.png":::
+:::image type="content" source="images/wufb-do-overview.png" alt-text="Delivery Optimization status in Update Compliance" lightbox="images/wufb-do-overview.png":::
 
-For details, see [Delivery Optimization in Update Compliance](../update/update-compliance-delivery-optimization.md).
+For details, see [Windows Update for Business Delivery Optimization Report](../update/wufb-reports-overview.md).
 
 ## Troubleshooting
 
