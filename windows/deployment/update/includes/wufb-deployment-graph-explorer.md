@@ -15,7 +15,7 @@ For this article, you'll use Graph Explorer to make requests to the [Microsoft G
 > [!WARNING]
 >
 > - Requests listed in this article require signing in with a Microsoft 365 account. If needed, a free one month trial is available for [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium).
-> - Using a test tenant to verify the deployment process first is highly recommended. If you use a production tenant, ensure you verify which client devices you're targeting with deployments.
+> - Using a test tenant to learn and verify the deployment process is highly recommended. Graph Explorer is intended to be a learning tool. Ensure you understand  [granting consent](/graph/security-authorization) and the [consent type](/graph/api/resources/oauth2permissiongrant#properties) for Graph Explorer before proceeding.
 
 1. From a browser, go to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) and sign in using an Azure Active Directory (Azure AD) user account.
 1. You may need to enable the [`WindowsUpdates.ReadWrite.All` permission](/graph/permissions-reference#windows-updates-permissions) to use the queries in this article. To enable the permission:

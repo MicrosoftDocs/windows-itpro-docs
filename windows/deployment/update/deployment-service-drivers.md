@@ -330,3 +330,8 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments?orderby=c
 
 <!--Using include for removing device enrollment-->
 [!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-graph-unenroll.md)]
+
+## Policy considerations for drivers
+
+<!--Using include for Policy considerations for drivers-->
+[!INCLUDE [Windows Update for Business deployment service driver policy considerations](./includes/wufb-deployment-driver-policy-considerations.md)]
