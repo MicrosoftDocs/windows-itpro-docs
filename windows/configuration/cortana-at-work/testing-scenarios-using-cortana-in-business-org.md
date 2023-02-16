@@ -2,6 +2,7 @@
 title: Testing scenarios using Cortana in your business or organization
 description: A list of suggested testing scenarios that you can use to test Cortana in your organization.
 ms.prod: windows-client
+ms.collection: tier3
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

@@ -8,7 +8,9 @@ ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.prod: windows-client
-ms.collection: highpri
+ms.collection:
+ - highpri
+ - tier2
 ms.technology: itpro-configure
 ms.date: 12/31/2017
 ---
@@ -41,7 +43,7 @@ foreach ($app in $installedapps)
 $aumidList
 ```
 
-You can add the –user &lt;username&gt; or the –allusers parameters to the get-AppxPackage cmdlet to list AUMIDs for other users. You must use an elevated Windows PowerShell prompt to use the –user or –allusers parameters.
+You can add the `-user <username>` or the `-allusers` parameters to the **Get-AppxPackage** cmdlet to list AUMIDs for other users. You must use an elevated Windows PowerShell prompt to use the `-user` or -`allusers` parameters.
 
 ## To find the AUMID by using File Explorer
 
@@ -63,7 +65,7 @@ At a command prompt, type the following command:
 
 `reg query HKEY_CURRENT_USER\Software\Classes\ActivatableClasses\Package /s /f AppUserModelID | find "REG_SZ"`
 
-## Example
+### Example to get AUMIDs of the installed apps for the specified user
 
 The following code sample creates a function in Windows PowerShell that returns an array of AUMIDs of the installed apps for the specified user.
 
@@ -105,14 +107,14 @@ The following Windows PowerShell commands demonstrate how you can call the listA
 # Get a list of AUMIDs for the current account:
 listAumids
 
-# Get a list of AUMIDs for an account named “CustomerAccount”:
+# Get a list of AUMIDs for an account named "CustomerAccount":
 listAumids("CustomerAccount")
 
 # Get a list of AUMIDs for all accounts on the device:
 listAumids("allusers")
 ```
 
-## Example
+### Example to get the AUMID of any application in the Start menu
 
 The following code sample creates a function in Windows PowerShell that returns the AUMID of any application currently listed in the Start menu.
 
@@ -148,4 +150,3 @@ Get-AppAUMID -AppName Word
 # List all apps and their AUMID in the Start menu
 Get-AppAUMID
 ```
-
