@@ -20,7 +20,7 @@ ms.date: 12/31/2017
 - Windows 10
 - Windows 11
 
-> **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the master spreadsheet available at the [Download Center for Windows 11](https://www.microsoft.com/en-us/download/details.aspx?id=104594) or [Download Center for Windows 10](https://www.microsoft.com/en-us/download/details.aspx?id=104678).
+> **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the master spreadsheet available at the Download Center [for Windows 11](https://www.microsoft.com/en-us/download/details.aspx?id=104594) or [for Windows 10](https://www.microsoft.com/en-us/download/details.aspx?id=104678).
 
 There are many configuration options you can set in Delivery Optimization to customize the content delivery experience specific to your environment needs. This topic summarizes those configurations for your reference. If you just need an overview of Delivery Optimization, see [What is Delivery Optimization](waas-delivery-optimization.md). If you need information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization for Windows](waas-delivery-optimization-setup.md).
 

@@ -21,7 +21,7 @@ ms.date: 12/31/2017
 - Windows 10
 - Windows 11
 
-> **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the master spreadsheet available at the [Download Center for Windows 11](https://www.microsoft.com/en-us/download/details.aspx?id=104594) or [Download Center for Windows 10](https://www.microsoft.com/en-us/download/details.aspx?id=104678).
+> **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the master spreadsheet available at the Download Center [for Windows 11](https://www.microsoft.com/en-us/download/details.aspx?id=104594) or [for Windows 10](https://www.microsoft.com/en-us/download/details.aspx?id=104678).
 
 Windows updates, upgrades, and applications can contain packages with large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. Delivery Optimization is a reliable HTTP downloader with a cloud-managed solution that allows Windows devices to download those packages from alternate sources if desired (such as other devices on the network and/or a dedicated cache server) in addition to the traditional internet-based servers (referred to as 'HTTP sources' throughout Delivery Optimization documents). You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment however, the use of peer-to-peer is completely optional.
 

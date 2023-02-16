@@ -74,7 +74,7 @@ To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimiza
 
 ### Hub and spoke topology with boundary groups
 
-The default download mode setting is **1**; this means all devices breaking out to the internet using the same public IP will be considered as a single peer group. To prevent peer-to-peer activity across your WAN, you should set the download mode to **2**. If you have already defined Active Directory sites per hub or branch office, then you don't need to do anything else since those will be used by default as the source for creation of Group IDs. If you're not using Active Directory sites, you should set a different source for Groups by using the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) options or the [DORestrictPeerSelectionBy] (waas-delivery-optimization-reference.md#select-a-method-to-restrict-peer-selection) policy to restrict the activity to the subnet.
+The default download mode setting is **1**; this means all devices breaking out to the internet using the same public IP will be considered as a single peer group. To prevent peer-to-peer activity across your WAN, you should set the download mode to **2**. If you have already defined Active Directory sites per hub or branch office, then you don't need to do anything else since those will be used by default as the source for creation of Group IDs. If you're not using Active Directory sites, you should set a different source for Groups by using the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) options or the [DORestrictPeerSelectionBy](waas-delivery-optimization-reference.md#select-a-method-to-restrict-peer-selection) policy to restrict the activity to the subnet.
 
 To do this in Group Policy go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
@@ -116,7 +116,7 @@ To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimiza
 
 Windows Update for Business Delivery Optimization Report provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer, Microsoft Connected Cache (MCC), HTTP source/CDN distribution over the past 28 days.
 
-:::image type="content" source="/windows/deployment/update/images/wufb-do-overview.png" alt-text="Delivery Optimization status in Update Compliance" lightbox="/windows/deployment/update/images/wufb-do-overview.png":::
+:::image type="content" source="/windows/deployment/update/images/wufb-do-overview.png" alt-text="This screenshot shows the Windows Update for Business report, Delivery Optimization status in Update Compliance." lightbox="/windows/deployment/update/images/wufb-do-overview.png":::
 
 For details, see [Windows Update for Business Delivery Optimization Report](../update/wufb-reports-overview.md).
 
