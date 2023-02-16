@@ -5,8 +5,6 @@ ms.date: 03/20/2018
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
-ms.collection:
-  - tier1
 ---
 # Multi-factor Unlock
 

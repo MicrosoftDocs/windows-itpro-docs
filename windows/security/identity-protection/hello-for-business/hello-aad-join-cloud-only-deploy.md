@@ -5,8 +5,6 @@ ms.date: 06/23/2021
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
-ms.collection:
-  - tier1
 ---
 # Cloud-only deployment
 

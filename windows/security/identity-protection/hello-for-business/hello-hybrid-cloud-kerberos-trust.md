@@ -5,8 +5,6 @@ ms.date: 11/1/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10, version 21H2 and later</a>
 ms.topic: article
-ms.collection:
-  - tier1
 ---
 # Cloud Kerberos trust deployment
 
