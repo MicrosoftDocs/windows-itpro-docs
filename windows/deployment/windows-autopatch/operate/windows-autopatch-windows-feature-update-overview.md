@@ -1,7 +1,7 @@
 ---
 title: Windows feature updates
 description: This article explains how Windows feature updates are managed in Autopatch
-ms.date: 02/07/2023
+ms.date: 02/17/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -36,6 +36,9 @@ If a device is registered with Windows Autopatch, and the device is:
 
 - Below the service's currently targeted Windows feature update, that device will update to the service's target version when it meets the Windows OS upgrade eligibility criteria.
 - On, or above the currently targeted Windows feature update version, there won't be any Windows OS upgrades to that device.
+
+> [!IMPORTANT]
+> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](https://learn.microsoft.com/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC servicing channel](https://learn.microsoft.com/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2). The service only supports managing the [Windows Quality updates](/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC servicing channel. Windows Update for Business service and Windows Autopatch don't offer Windows Feature updates for devices that are part of the LTSC servicing channel. You must either use a LTSC media or leverage [Configuration Manager Operating System Deployment capabilities to do in-place upgrades](https://learn.microsoft.com/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC servicing channel.
 
 ## Windows feature update policy configuration
 

@@ -1,7 +1,7 @@
 ---
 title: Prerequisites
 description: This article details the prerequisites needed for Windows Autopatch
-ms.date: 09/16/2022
+ms.date: 02/17/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -44,11 +44,14 @@ Windows Autopatch is included with Windows 10/11 Enterprise E3 or higher (user-b
 | [Windows 10/11 Enterprise E5](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | WIN10_VDA_E5 | 488ba24a-39a9-4473-8ee5-19291e71b002 |
 | [Windows 10/11 Enterprise VDA](/windows/deployment/deploy-enterprise-licenses#virtual-desktop-access-vda) | E3_VDA_only | d13ef257-988a-46f3-8fce-f47484dd4550 |
 
-The following Windows OS 10 editions, 1809 builds and architecture are supported in Windows Autopatch:
+The following Windows OS 10 editions, 1809+ builds and architecture are supported in Windows Autopatch:
 
 - Windows 10 (1809+)/11 Pro
 - Windows 10 (1809+)/11 Enterprise
 - Windows 10 (1809+)/11 Pro for Workstations
+
+> [!NOTE]
+> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](https://learn.microsoft.com/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC servicing channel](https://learn.microsoft.com/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2). The service only supports managing the [Windows Quality updates](/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC servicing channel. Additionally, Windows Autopatch can only manage Windows Quality Updates for devices that haven't reached end of servicing for its LTSC servicing channel (Mainstream support end date).
 
 ## Configuration Manager co-management requirements
 
