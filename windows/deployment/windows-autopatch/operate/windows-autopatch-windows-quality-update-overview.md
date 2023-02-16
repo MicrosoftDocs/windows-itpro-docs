@@ -34,7 +34,7 @@ For a device to be eligible for Windows quality updates as a part of Windows Aut
 | Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](../references/windows-autopatch-windows-update-unsupported-policies.md#group-policy-and-other-policy-managers) |
 
 > [!NOTE]
-> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC Servicing Channel](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC Servicing Channel. Additionally, Windows Autopatch can only manage Windows quality updates for devices that haven't reached the [end of servicing date](/windows/release-health/release-information#enterprise-and-iot-enterprise-ltsbltsc-editions) for its LTSC Servicing Channel.
+> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Additionally, Windows Autopatch can only manage Windows quality updates for devices that haven't reached the LTSC's [end of servicing date](/windows/release-health/release-information#enterprise-and-iot-enterprise-ltsbltsc-editions).
 
 ## Windows quality update releases
 
