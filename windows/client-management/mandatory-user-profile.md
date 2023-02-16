@@ -5,10 +5,12 @@ ms.prod: windows-client
 author: vinaypamnani-msft
 ms.author: vinpa
 ms.date: 09/14/2021
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.topic: article
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-manage
 ---
 
@@ -51,7 +53,7 @@ First, you create a default user profile with the customizations that you want, 
 1. Sign in to a computer running Windows 10 as a member of the local Administrator group. Do not use a domain account.
 
    > [!NOTE]
-   > Use a lab or extra computer running a clean installation of Windows 10 to create a default user profile. Do not use a computer that is required for business (that is, a production computer). This process removes all domain accounts from the computer, including user profile folders. 
+   > Use a lab or extra computer running a clean installation of Windows 10 to create a default user profile. Do not use a computer that is required for business (that is, a production computer). This process removes all domain accounts from the computer, including user profile folders.
 
 1. Configure the computer settings that you want to include in the user profile. For example, you can configure settings for the desktop background, uninstall default apps, install line-of-business apps, and so on.
 
