@@ -5,6 +5,10 @@ ms.date: 02/10/2023
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
+ms.collection:
+  - highpri
+  - tier1
+  - education
 ---
 
 # Configure federated sign-in for Windows devices

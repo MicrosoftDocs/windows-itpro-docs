@@ -3,6 +3,7 @@ title: User Experience Virtualization for Windows 10, version 1607
 description: Overview of User Experience Virtualization for Windows 10, version 1607
 author: aczechowski
 ms.prod: windows-client
+ms.collection: tier3
 ms.date: 05/02/2017
 ms.reviewer: 
 manager: dougeby

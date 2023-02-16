@@ -150,7 +150,7 @@ Descriptions of the properties:
 
 **Policy timeline**:
 
-The behavior of this policy setting differs in different Windows 10 versions. For Windows 10, version 1809 through version 1909, you can use name in `<accessgroup dec>` and SID in `<member name>`. For Windows 10, version 2004, you can use name or SID for both the elements, as described in the example.
+The behavior of this policy setting differs in different Windows 10 versions. For Windows 10, version 1809 through version 1909, you can use name in `<accessgroup desc>` and SID in `<member name>`. For Windows 10, version 2004, you can use name or SID for both the elements, as described in the example.
 
 The following table describes how this policy setting behaves in different Windows 10 versions:
 

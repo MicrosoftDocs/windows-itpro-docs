@@ -156,6 +156,7 @@ Beginning with Windows 10 version 1703, you can enable Windows Defender Remote C
 
      > [!NOTE]
      > Neither Windows Defender Remote Credential Guard nor Restricted Admin mode will send credentials in clear text to the Remote Desktop server.
+     > When **Restrict Credential Delegation** is enabled, the /restrictedAdmin switch will be ignored. Windows will enforce the policy configuration instead and will use Windows Defender Remote Credential Guard. 
 
    - If you want to require Windows Defender Remote Credential Guard, choose **Require Remote Credential Guard**. With this setting, a Remote Desktop connection will succeed only if the remote computer meets the [requirements](#reqs) listed earlier in this topic.
 

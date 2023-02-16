@@ -9,7 +9,9 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/18/2020
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
 ---
 
 # Configuration service provider DDF files

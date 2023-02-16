@@ -7,9 +7,11 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 04/30/2022
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
 ---
 
 # Enroll a Windows 10 device automatically using Group Policy
@@ -188,19 +190,19 @@ Requirements:
    - 1903 --> [Administrative Templates (.admx) for Windows 10 May 2019 Update (1903)](https://www.microsoft.com/download/details.aspx?id=58495)
 
    - 1909 --> [Administrative Templates (.admx) for Windows 10 November 2019 Update (1909)](https://www.microsoft.com/download/confirmation.aspx?id=100591)
-   
+
    - 2004 --> [Administrative Templates (.admx) for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/confirmation.aspx?id=101445)
-   
+
    - 20H2 --> [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
 
    - 21H1 --> [Administrative Templates (.admx) for Windows 10 May 2021 Update (21H1)](https://www.microsoft.com/download/details.aspx?id=103124)
 
    - 21H2 --> [Administrative Templates (.admx) for Windows 10 November 2021 Update (21H2)-v2.0](https://www.microsoft.com/download/details.aspx?id=104042)
-   
+
    - 22H2 --> [Administrative Templates (.admx) for Windows 10 October 2022 Update (22H2)](https://www.microsoft.com/download/104677)
 
    - 22H2 --> [Administrative Templates (.admx) for Windows 11 2022 September Update (22H2)](https://www.microsoft.com/download/details.aspx?id=104593)
-   
+
 2. Install the package on the Domain Controller.
 
 3. Navigate, depending on the version to the folder:
@@ -214,13 +216,13 @@ Requirements:
    - 1909 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 November 2019 Update (1909)**
 
    - 2004 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2020 Update (2004)**
-   
+
    - 20H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**
 
    - 21H1 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2021 Update (21H1)**
 
    - 21H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 November 2021 Update V2 (21H2)**
-    
+
    - 22H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2022 Update (22H2)**
 
    - 22H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 11 September 2022 Update (22H2)**

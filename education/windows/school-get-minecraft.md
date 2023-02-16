@@ -8,6 +8,7 @@ appliesto:
 ms.collection:
   - highpri
   - education
+  - tier2
 ---
 
 # For IT administrators - get Minecraft: Education Edition
@@ -34,7 +35,7 @@ If you turn off this setting after students have been using Minecraft: Education
 
 Users in a Microsoft verified academic institution account will have access to the free trial limited logins for Minecraft: Education Edition. This grants faculty accounts 25 free logins and student accounts 10 free logins. To purchase direct licenses, see [Minecraft: Education Edition - direct purchase](#individual-copies). 
 
-If you’ve been approved and are part of the Enrollment for Education Solutions volume license program, you can purchase a volume license for Minecraft: Education Edition. For more information, see [Minecraft: Education Edition - volume license](#volume-license). 
+If you've been approved and are part of the Enrollment for Education Solutions volume license program, you can purchase a volume license for Minecraft: Education Edition. For more information, see [Minecraft: Education Edition - volume license](#volume-license). 
 
 ### <a href="" id="individual-copies"></a>Minecraft: Education Edition - direct purchase
 
@@ -48,7 +49,7 @@ If you’ve been approved and are part of the Enrollment for Education Solutions
 
 5. Select the quantity of licenses you would like to purchase and select **Place Order**.
 
-6. After you’ve purchased licenses, you’ll need to [assign them to users in the Admin Center](/microsoft-365/admin/manage/assign-licenses-to-users).
+6. After you've purchased licenses, you'll need to [assign them to users in the Admin Center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 If you need additional licenses for **Minecraft: Education Edition**, see [Buy or remove subscription licenses](/microsoft-365/commerce/licenses/buy-licenses).
 
@@ -57,7 +58,7 @@ If you need additional licenses for **Minecraft: Education Edition**, see [Buy o
 Qualified education institutions can purchase Minecraft: Education Edition licenses through their Microsoft channel partner. Schools need to be part of the Enrollment for Education Solutions (EES) volume licensing program. Educational institutions should work with their channel partner to determine which Minecraft: Education Edition licensing offer is best for their institution. The process looks like this: 
 
 - Your channel partner will submit and process your volume license order, your licenses will be shown on [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), and the licenses will be available in your [Microsoft Store for Education](https://www.microsoft.com/business-store) inventory. 
-- You’ll receive an email with a link to Microsoft Store for Education. 
+- You'll receive an email with a link to Microsoft Store for Education. 
 - Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com) to distribute and manage the Minecraft: Education Edition licenses. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft)
 
 ## Minecraft: Education Edition payment options
