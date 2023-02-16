@@ -328,8 +328,6 @@
           href: identity-protection/credential-guard/credential-guard-requirements.md
         - name: Manage Credential Guard
           href: identity-protection/credential-guard/credential-guard-manage.md
-        - name: Hardware readiness tool
-          href: identity-protection/credential-guard/dg-readiness-tool.md
         - name: Credential Guard protection limits
           href: identity-protection/credential-guard/credential-guard-protection-limits.md
         - name: Considerations when using Credential Guard
