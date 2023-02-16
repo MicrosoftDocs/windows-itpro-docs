@@ -1,70 +1,203 @@
 ---
 title: WiredNetwork CSP
-description: The WiredNetwork configuration service provider (CSP) is used by the enterprise to configure wired Internet on devices that don't have GP. Learn how it works.
+description: Learn more about the WiredNetwork CSP.
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 02/16/2023
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 06/27/2018
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- WiredNetwork-Begin -->
 # WiredNetwork CSP
 
-The table below shows the applicability of Windows:
+<!-- WiredNetwork-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The WiredNetwork configuration service provider (CSP) is used by the enterprise to configure wired Internet on devices that don't have group policy to enable them to access corporate Internet over ethernet.
+<!-- WiredNetwork-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-The WiredNetwork configuration service provider (CSP) is used by the enterprise to configure wired Internet on devices that don't have GP to enable them to access corporate Internet over ethernet. This CSP was added in Windows 10, version 1809.
-
+<!-- WiredNetwork-Tree-Begin -->
 The following example shows the WiredNetwork configuration service provider in tree format.
+
+```text
+./Device/Vendor/MSFT/WiredNetwork
+--- EnableBlockPeriod
+--- LanXML
+./User/Vendor/MSFT/WiredNetwork
+--- EnableBlockPeriod
+--- LanXML
 ```
-./User/Vendor/MSFT
-WiredNetwork
-----LanXML
-----EnableBlockPeriod
+<!-- WiredNetwork-Tree-End -->
 
+<!-- Device-EnableBlockPeriod-Begin -->
+## Device/EnableBlockPeriod
 
-./Device/Vendor/MSFT
-WiredNetwork
-----LanXML
-----EnableBlockPeriod
+<!-- Device-EnableBlockPeriod-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- Device-EnableBlockPeriod-Applicability-End -->
 
-
-./User/Vendor/MSFT
-./Device/Vendor/MSFT
-WiredNetwork
-----LanXML
-----EnableBlockPeriod
+<!-- Device-EnableBlockPeriod-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/WiredNetwork/EnableBlockPeriod
 ```
-<a href="" id="wirednetwork"></a>**./Device/Vendor/MSFT/WiredNetwork**
-The root node for the wirednetwork configuration service provider.
+<!-- Device-EnableBlockPeriod-OmaUri-End -->
 
-<a href="" id="lanxml"></a>**LanXML**
-Optional. XML describing the wired network configuration and follows the LAN_profile schemas https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx.
+<!-- Device-EnableBlockPeriod-Description-Begin -->
+<!-- Description-Source-DDF -->
+Enable block period (minutes), used to specify the duration for which automatic authentication attempts will be blocked from occurring after a failed authentication attempt.
+<!-- Device-EnableBlockPeriod-Description-End -->
 
-- Supported operations are Add, Get, Replace, and Delete.
-- Value type is string.
+<!-- Device-EnableBlockPeriod-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-EnableBlockPeriod-Editable-End -->
 
-<a href="" id="enableblockperiod"></a>**EnableBlockPeriod**
- Optional. Enable block period (minutes), used to specify the duration for which automatic authentication attempts will be blocked from occurring after a failed authentication attempt.
+<!-- Device-EnableBlockPeriod-DFProperties-Begin -->
+**Description framework properties**:
 
-- Supported operations are Add, Get, Replace, and Delete.
-- Value type is integer.
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-4294967295]` |
+<!-- Device-EnableBlockPeriod-DFProperties-End -->
+
+<!-- Device-EnableBlockPeriod-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-EnableBlockPeriod-Examples-End -->
+
+<!-- Device-EnableBlockPeriod-End -->
+
+<!-- Device-LanXML-Begin -->
+## Device/LanXML
+
+<!-- Device-LanXML-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- Device-LanXML-Applicability-End -->
+
+<!-- Device-LanXML-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/WiredNetwork/LanXML
+```
+<!-- Device-LanXML-OmaUri-End -->
+
+<!-- Device-LanXML-Description-Begin -->
+<!-- Description-Source-DDF -->
+XML describing the wired network configuration and follows the LAN_profile schemas <https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx>.
+<!-- Device-LanXML-Description-End -->
+
+<!-- Device-LanXML-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-LanXML-Editable-End -->
+
+<!-- Device-LanXML-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-LanXML-DFProperties-End -->
+
+<!-- Device-LanXML-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-LanXML-Examples-End -->
+
+<!-- Device-LanXML-End -->
+
+<!-- User-EnableBlockPeriod-Begin -->
+## User/EnableBlockPeriod
+
+<!-- User-EnableBlockPeriod-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- User-EnableBlockPeriod-Applicability-End -->
+
+<!-- User-EnableBlockPeriod-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/WiredNetwork/EnableBlockPeriod
+```
+<!-- User-EnableBlockPeriod-OmaUri-End -->
+
+<!-- User-EnableBlockPeriod-Description-Begin -->
+<!-- Description-Source-DDF -->
+Enable block period (minutes), used to specify the duration for which automatic authentication attempts will be blocked from occurring after a failed authentication attempt.
+<!-- User-EnableBlockPeriod-Description-End -->
+
+<!-- User-EnableBlockPeriod-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-EnableBlockPeriod-Editable-End -->
+
+<!-- User-EnableBlockPeriod-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-4294967295]` |
+<!-- User-EnableBlockPeriod-DFProperties-End -->
+
+<!-- User-EnableBlockPeriod-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-EnableBlockPeriod-Examples-End -->
+
+<!-- User-EnableBlockPeriod-End -->
+
+<!-- User-LanXML-Begin -->
+## User/LanXML
+
+<!-- User-LanXML-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- User-LanXML-Applicability-End -->
+
+<!-- User-LanXML-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/WiredNetwork/LanXML
+```
+<!-- User-LanXML-OmaUri-End -->
+
+<!-- User-LanXML-Description-Begin -->
+<!-- Description-Source-DDF -->
+XML describing the wired network configuration and follows the LAN_profile schemas <https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx>.
+<!-- User-LanXML-Description-End -->
+
+<!-- User-LanXML-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-LanXML-Editable-End -->
+
+<!-- User-LanXML-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-LanXML-DFProperties-End -->
+
+<!-- User-LanXML-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-LanXML-Examples-End -->
+
+<!-- User-LanXML-End -->
+
+<!-- WiredNetwork-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+## Examples
 
 The following example shows how to add a wired network profile:
+
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -83,7 +216,10 @@ The following example shows how to add a wired network profile:
   </SyncBody>
 </SyncML>
 ```
+<!-- WiredNetwork-CspMoreInfo-End -->
 
-## Related topics
+<!-- WiredNetwork-End -->
 
-[Configuration service provider reference](index.yml)
+## Related articles
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
