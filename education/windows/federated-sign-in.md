@@ -9,7 +9,7 @@ appliesto:
 
 # Configure federated sign-in for Windows devices
 
-Starting in Windows 11 SE, version 22H2 and Windows 11 Pro Edu/Education, version 22H2 with [KB-TBD][KB-1], you can enable your users to sign-in using a SAML 2.0 identity provider (IdP). This feature is called *federated sign-in*. Federated sign-in is a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Azure AD, they can sign-in using their existing credentials from the IdP. For example, students and educators can use QR code badges to sign-in.
+Starting in Windows 11 SE, version 22H2 and Windows 11 Pro Edu/Education, version 22H2 with [KB5022913][KB-1], you can enable your users to sign-in using a SAML 2.0 identity provider (IdP). This feature is called *federated sign-in*. Federated sign-in is a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Azure AD, they can sign-in using their existing credentials from the IdP. For example, students and educators can use QR code badges to sign-in.
 
 ## Benefits of federated sign-in
 
@@ -124,6 +124,6 @@ Federated sign-in doesn't work on devices that have the following settings enabl
 [WIN-1]: /windows/client-management/mdm/sharedpc-csp
 [WIN-2]: /windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin
 
-[KB-1]: https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3
+[KB-1]: https://support.microsoft.com/kb/5022913
 
 [EXT-1]: https://support.clever.com/hc/s/articles/000001546
