@@ -13,7 +13,7 @@ ms.technology: itpro-security
 # Manage TPM commands
 
 **Applies to**
--   Windows 10
+-   Windows 10
 -   Windows 11
 -   Windows Server 2016 and above
 

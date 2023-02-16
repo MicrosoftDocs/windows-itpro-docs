@@ -10,6 +10,7 @@ manager: aaroncz
 audience: ITPro
 ms.collection: 
   - highpri
+  - tier2
 ms.topic: conceptual
 ms.date: 12/16/2021
 ms.reviewer: 
@@ -77,7 +78,7 @@ Set the following registry keys to enable HVCI. These keys provide exactly the s
 
 > [!IMPORTANT]
 >
-> - Among the commands that follow, you can choose settings for **Secure Boot** and **Secure Boot with DMA**. In most situations, we recommend that you choose **Secure Boot**. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled.
+> - Among the commands that follow, you can choose settings for **Secure Boot** and **Secure Boot with DMA**. In most situations, we recommend that you choose **Secure Boot**. This option provides Secure Boot with as much protection as is supported by a given computer's hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled.
 >
 > - In contrast, with **Secure Boot with DMA**, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can still have Windows Defender Application Control enabled.
 >

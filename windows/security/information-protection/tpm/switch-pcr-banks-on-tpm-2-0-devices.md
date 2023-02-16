@@ -41,7 +41,7 @@ It is important to note that this binding to PCR values also includes the hashin
 
 When the PCR banks are switched, the algorithm used to compute the hashed values stored in the PCRs during extend operations is changed. Each hash algorithm will return a different cryptographic signature for the same inputs.
 
-As a result, if the currently used PCR bank is switched all keys that have been bound to the previous PCR values will no longer work. For example, if you had a key bound to the SHA-1 value of PCR\[12\] and subsequently changed the PCR bank to SHA-256, the banks wouldn’t match, and you would be unable to use that key. The BitLocker key is secured using the PCR banks and Windows will not be able to unseal it if the PCR banks are switched while BitLocker is enabled.
+As a result, if the currently used PCR bank is switched all keys that have been bound to the previous PCR values will no longer work. For example, if you had a key bound to the SHA-1 value of PCR\[12\] and subsequently changed the PCR bank to SHA-256, the banks wouldn't match, and you would be unable to use that key. The BitLocker key is secured using the PCR banks and Windows will not be able to unseal it if the PCR banks are switched while BitLocker is enabled.
 
 ## What can I do to switch PCRs when BitLocker is already active?
 

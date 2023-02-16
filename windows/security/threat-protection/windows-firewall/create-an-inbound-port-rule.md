@@ -14,6 +14,7 @@ manager: aaroncz
 audience: ITPro
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.technology: itpro-security
@@ -71,6 +72,6 @@ This topic describes how to create a standard port rule for a specified protocol
 
 9. On the **Profile** page, select the network location types to which this rule applies, and then click **Next**.
 
-   >**Note:**  If this GPO is targeted at server computers running Windows Server 2008 that never move, consider modifying the rules to apply to all network location type profiles. This prevents an unexpected change in the applied rules if the network location type changes due to the installation of a new network card or the disconnection of an existing network card’s cable. A disconnected network card is automatically assigned to the Public network location type.
+   >**Note:**  If this GPO is targeted at server computers running Windows Server 2008 that never move, consider modifying the rules to apply to all network location type profiles. This prevents an unexpected change in the applied rules if the network location type changes due to the installation of a new network card or the disconnection of an existing network card's cable. A disconnected network card is automatically assigned to the Public network location type.
    
 10. On the **Name** page, type a name and description for your rule, and then click **Finish**.
