@@ -16,7 +16,7 @@ ms.technology: itpro-updates
 
 Windows Update for Business reports is a cloud-based solution that provides information about your Azure Active Directory-joined devices' compliance with Windows updates. Windows Update for Business reports is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses. Windows Update for Business reports helps you:
 
-- Monitor security, quality, and feature updates for Windows 11 and Windows 10 devices
+- Monitor security, quality, driver, and feature updates for Windows 11 and Windows 10 devices
 - Report on devices with update compliance issues
 - Analyze and display your data in multiple ways
 

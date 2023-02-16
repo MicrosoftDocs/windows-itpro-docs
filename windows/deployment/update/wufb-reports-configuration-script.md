@@ -7,7 +7,7 @@ author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
 ms.topic: article
-ms.date: 11/15/2022
+ms.date: 02/10/2023
 ms.technology: itpro-updates
 ---
 
@@ -43,10 +43,6 @@ Open `RunConfig.bat` and configure the following (assuming a first-run, with `ru
 1. Examine the logs for any issues. If there are no issues, then all devices with a similar configuration and network profile are ready for the script to be deployed with `runMode=Deployment`.
 1. If there are issues, gather the logs and provide them to Microsoft Support.
 
-## Verify device configuration
-
-<!--Using include for verifying device configuration-->
-[!INCLUDE [Endpoints for Windows Update for Business reports](./includes/wufb-reports-verify-device-configuration.md)]
 
 ## Script errors
 

@@ -8,8 +8,8 @@ author: lizgt2000
 ms.reviewer: 
 manager: aaroncz
 ms.localizationpriority: medium
-ms.date: 02/14/2023
-ms.topic: reference
+ms.topic: conceptual
+ms.collection: tier1
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>

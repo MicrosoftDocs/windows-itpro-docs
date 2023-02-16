@@ -4,6 +4,7 @@ ms.reviewer:
 manager: dougeby
 description: Cortana includes powerful configuration options specifically to optimize unique small to medium-sized business and enterprise environments.
 ms.prod: windows-client
+ms.collection: tier3
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

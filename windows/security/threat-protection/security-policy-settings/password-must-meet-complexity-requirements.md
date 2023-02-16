@@ -112,4 +112,4 @@ The use of ALT key character combinations may greatly enhance the complexity of 
 
 ## Related articles
 
-- [Password Policy](password-policy.md)
+- [Password Policy](/microsoft-365/admin/misc/password-policy-recommendations)
