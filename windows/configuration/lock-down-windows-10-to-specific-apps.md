@@ -9,7 +9,9 @@ manager: aaroncz
 ms.reviewer: sybruckm
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.collection: highpri
+ms.collection:
+ - highpri
+ - tier2
 ms.date: 12/31/2017
 ---
 
@@ -247,7 +249,7 @@ A few things to note here:
 - The test device on which you customize the Start layout should have the same OS version that is installed on the device where you plan to deploy the multi-app assigned access configuration.
 - Since the multi-app assigned access experience is intended for fixed-purpose devices, to ensure the device experiences are consistent and predictable, use the *full* Start layout option instead of the *partial* Start layout.
 - There are no apps pinned on the taskbar in the multi-app mode, and it's not supported to configure Taskbar layout using the `<CustomTaskbarLayoutCollection>` tag in a layout modification XML as part of the assigned access configuration.
-- The following example uses `DesktopApplicationLinkPath` to pin the desktop app to start. When the desktop app doesn’t have a shortcut link on the target device, [learn how to provision .lnk files using Windows Configuration Designer](#lnk-files).
+- The following example uses `DesktopApplicationLinkPath` to pin the desktop app to start. When the desktop app doesn't have a shortcut link on the target device, [learn how to provision .lnk files using Windows Configuration Designer](#lnk-files).
 
 The following example pins Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps on Start:
 
@@ -284,7 +286,7 @@ The following example pins Groove Music, Movies & TV, Photos, Weather, Calculato
 
 ##### Taskbar
 
-Define whether you want to have the taskbar present in the kiosk device. For tablet-based or touch-enabled all-in-one kiosks, when you don’t attach a keyboard and mouse, you can hide the taskbar as part of the multi-app experience if you want.
+Define whether you want to have the taskbar present in the kiosk device. For tablet-based or touch-enabled all-in-one kiosks, when you don't attach a keyboard and mouse, you can hide the taskbar as part of the multi-app experience if you want.
 
 The following example exposes the taskbar to the end user:
 
@@ -607,7 +609,7 @@ Lock the Taskbar     |  Enabled
 Prevent users from adding or removing toolbars |        Enabled
 Prevent users from resizing the taskbar  |  Enabled
 Remove frequent programs list from the Start Menu |     Enabled
-Remove ‘Map Network Drive’ and ‘Disconnect Network Drive’ | Enabled
+Remove 'Map Network Drive' and 'Disconnect Network Drive' | Enabled
 Remove the Security and Maintenance icon     |  Enabled
 Turn off all balloon notifications |        Enabled
 Turn off feature advertisement balloon notifications     |  Enabled
@@ -615,7 +617,7 @@ Turn off toast notifications |      Enabled
 Remove Task Manager |       Enabled
 Remove Change Password option in Security Options UI |      Enabled
 Remove Sign Out option in Security Options UI    |  Enabled
-Remove All Programs list from the Start Menu     |  Enabled – Remove and disable setting
+Remove All Programs list from the Start Menu     |  Enabled - Remove and disable setting
 Prevent access to drives from My Computer    |  Enabled - Restrict all drivers
 
 >[!NOTE]

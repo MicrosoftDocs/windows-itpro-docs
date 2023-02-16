@@ -1,6 +1,6 @@
 ---
 title: Manage Windows Defender Credential Guard (Windows)
-description: Learn how to deploy and manage Windows Defender Credential Guard using Group Policy, the registry, or hardware readiness tools.
+description: Learn how to deploy and manage Windows Defender Credential Guard using Group Policy or the registry.
 ms.date: 11/23/2022
 ms.collection:
   - highpri
@@ -39,7 +39,7 @@ Windows Defender Credential Guard will be enabled by default when a PC meets the
 
 ## Enable Windows Defender Credential Guard
 
-Windows Defender Credential Guard can be enabled either by using [Group Policy](#enable-windows-defender-credential-guard-by-using-group-policy), the [registry](#enable-windows-defender-credential-guard-by-using-the-registry), or the [Hypervisor-Protected Code Integrity (HVCI) and Windows Defender Credential Guard hardware readiness tool](#enable-windows-defender-credential-guard-by-using-the-hvci-and-windows-defender-credential-guard-hardware-readiness-tool). Windows Defender Credential Guard can also protect secrets in a Hyper-V virtual machine, just as it would on a physical machine.
+Windows Defender Credential Guard can be enabled either by using [Group Policy](#enable-windows-defender-credential-guard-by-using-group-policy) or the [registry](#enable-windows-defender-credential-guard-by-using-the-registry). Windows Defender Credential Guard can also protect secrets in a Hyper-V virtual machine, just as it would on a physical machine.
 The same set of procedures used to enable Windows Defender Credential Guard on physical machines applies also to virtual machines.
 
 > [!NOTE]
@@ -152,19 +152,6 @@ To enable, use the Control Panel or the Deployment Image Servicing and Managemen
 > [!NOTE]
 > You can also enable Windows Defender Credential Guard by setting the registry entries in the [FirstLogonCommands](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-firstlogoncommands) unattend setting.
 
-### Enable Windows Defender Credential Guard by using the HVCI and Windows Defender Credential Guard hardware readiness tool
-
-You can also enable Windows Defender Credential Guard by using the [HVCI and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
-
-```cmd
-DG_Readiness_Tool.ps1 -Enable -AutoReboot
-```
-
-> [!IMPORTANT]
-> When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
->
-> This is a known issue.
-
 ### Review Windows Defender Credential Guard performance
 
 #### Is Windows Defender Credential Guard running?
@@ -178,17 +165,6 @@ You can view System Information to check that Windows Defender Credential Guard 
 1. Confirm that **Credential Guard** is shown next to **Virtualization-based security Services Running**.
 
    :::image type="content" source="images/credguard-msinfo32.png" alt-text="The 'Virtualization-based security Services Running' entry lists Credential Guard in System Information (msinfo32.exe).":::
-
-You can also check that Windows Defender Credential Guard is running by using the [HVCI and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
-
-```cmd
-DG_Readiness_Tool_v3.6.ps1 -Ready
-```
-
-> [!IMPORTANT]
-> When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
->
-> This is a known issue.
 
 > [!NOTE]
 > For client machines that are running Windows 10 1703, LsaIso.exe is running whenever virtualization-based security is enabled for other features.

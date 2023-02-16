@@ -9,7 +9,9 @@ author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
 ms.reviewer: pmadrigal
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier1
 ms.date: 08/26/2022
 ---
 

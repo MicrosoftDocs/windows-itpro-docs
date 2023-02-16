@@ -54,3 +54,8 @@ While expedite update deployments will override an update deferral for the updat
 
 <!--Using include for Update Health Tools log location-->
 [!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-update-health-tools-logs.md)]
+
+## Policy considerations for drivers
+
+<!--Using include for Policy considerations for drivers-->
+[!INCLUDE [Windows Update for Business deployment service driver policy considerations](./includes/wufb-deployment-driver-policy-considerations.md)]
