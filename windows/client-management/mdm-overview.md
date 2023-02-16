@@ -9,7 +9,9 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
 ---
 
 # Mobile Device Management overview

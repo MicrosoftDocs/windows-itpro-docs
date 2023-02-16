@@ -7,9 +7,11 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
 ---
 
 # DynamicManagement CSP
