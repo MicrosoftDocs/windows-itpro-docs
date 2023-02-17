@@ -668,7 +668,7 @@ items:
     - name: DeviceManageability
       href: devicemanageability-csp.md
       items:
-      - name: DeviceManageability DDF
+      - name: DeviceManageability DDF file
         href: devicemanageability-ddf.md
     - name: DeviceStatus
       href: devicestatus-csp.md
@@ -740,7 +740,7 @@ items:
     - name: EnterpriseModernAppManagement
       href: enterprisemodernappmanagement-csp.md
       items:
-      - name: EnterpriseModernAppManagement DDF
+      - name: EnterpriseModernAppManagement DDF file
         href: enterprisemodernappmanagement-ddf.md
       - name: EnterpriseModernAppManagement XSD
         href: enterprisemodernappmanagement-xsd.md
