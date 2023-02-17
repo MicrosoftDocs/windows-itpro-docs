@@ -767,10 +767,10 @@ items:
       items:
       - name: LanguagePackManagement DDF file
         href: language-pack-management-ddf-file.md
-    - name: Local Administrator Password Solution
+    - name: LAPS
       href: laps-csp.md
       items:
-      - name: Local Administrator Password Solution DDF
+      - name: LAPS DDF file
         href: laps-ddf-file.md
     - name: MultiSIM
       href: multisim-csp.md
