@@ -108,7 +108,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Ghotit Real Writer & Reader`             | 10.14.2.3         | Win32    | `Ghotit Ltd`                              |
 | `GoGuardian`                              | 1.4.4             | Win32    | `GoGuardian`                              |
 | `Google Chrome`                           | 109.0.5414.75     | Win32    | `Google`                                  |
-| `GuideConnect`                            | 1.23              | Win32    | `Dolphin Computer Access                  |
+| `GuideConnect`                            | 1.23              | Win32    | `Dolphin Computer Access`                 |
 | `Illuminate Lockdown Browser`             | 2.0.5             | Win32    | `Illuminate Education`                    |
 | `Immunet`                                 | 7.5.8.21178       | Win32    | `Immunet`                                 |
 | `Impero Backdrop Client`                  | 4.4.86            | Win32    | `Impero Software`                         |
