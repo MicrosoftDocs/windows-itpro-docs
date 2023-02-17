@@ -6,6 +6,7 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: 9cb8324e-d73b-41ba-ade9-3acc796e21d8
 ms.reviewer: 
+ms.date: 03/15/2016
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -60,8 +61,3 @@ You can also click **Select All** to add, or **Clear All** to remove, all of the
  
 
  
-
-
-
-
-
