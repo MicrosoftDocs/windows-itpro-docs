@@ -811,6 +811,11 @@ items:
       items:
       - name: Personalization DDF file
         href: personalization-ddf.md
+    - name: PrinterProvisioning
+      href: printerprovisioning-csp.md
+      items:
+      - name: PrinterProvisioning DDF file
+        href: printerprovisioning-ddf-file.md
     - name: Provisioning
       href: provisioning-csp.md
     - name: PXLOGICAL
