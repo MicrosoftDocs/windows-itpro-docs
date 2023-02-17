@@ -762,6 +762,11 @@ items:
       items:
       - name: HealthAttestation DDF
         href: healthattestation-ddf.md
+    - name: LanguagePackManagement
+      href: language-pack-management-csp.md
+      items:
+      - name: LanguagePackManagement DDF file
+        href: language-pack-management-ddf-file.md
     - name: Local Administrator Password Solution
       href: laps-csp.md
       items:
