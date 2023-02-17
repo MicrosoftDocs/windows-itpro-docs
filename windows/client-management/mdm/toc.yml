@@ -794,7 +794,7 @@ items:
     - name: Office
       href: office-csp.md
       items:
-      - name: Office DDF
+      - name: Office DDF file
         href: office-ddf.md
     - name: PassportForWork
       href: passportforwork-csp.md
