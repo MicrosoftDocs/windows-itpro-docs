@@ -9,6 +9,7 @@ title: Internet Explorer 11 (IE11) - Deployment Guide for IT Pros (Internet Expl
 ms.sitesec: library
 ms.localizationpriority: medium
 manager: dansimp
+ms.date: 02/24/2016
 ---
 
 

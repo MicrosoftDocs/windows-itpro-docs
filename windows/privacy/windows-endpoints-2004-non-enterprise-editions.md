@@ -7,6 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
+ms.date: 05/11/2020
 ms.topic: reference
 ---
 # Windows 10, version 2004, connection endpoints for non-Enterprise editions
@@ -195,4 +196,3 @@ The following methodology was used to derive the network endpoints:
 |www.microsoft.com|HTTP|Connected User Experiences and Telemetry, Microsoft Data Management service
 |www.msftconnecttest.com|HTTP|Network Connection (NCSI)
 |www.office.com|HTTPS|Microsoft Office
-
