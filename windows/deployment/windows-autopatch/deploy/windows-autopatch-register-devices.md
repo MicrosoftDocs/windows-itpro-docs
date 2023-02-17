@@ -81,7 +81,7 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
 - Devices must have Serial Number, Model and Manufacturer.
 
 > [!NOTE]
-> Windows Autopatch doesn't support device emulators that don't generate Serial number, Model and Manufacturer. Devices that use a non-supported device emulator fail the **Intune or Cloud-Attached** pre-requisite check. Additionally, devices with duplicated serial numbers will fail to register with Windows Autopatch.
+> Windows Autopatch doesn't support device emulators that don't generate the serial number, model and manufacturer information. Devices that use a non-supported device emulator fail the **Intune or Cloud-Attached** prerequisite check. Additionally, devices with duplicated serial numbers will fail to register with Windows Autopatch.
 
 > [!NOTE]
 > Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Additionally, Windows Autopatch can only manage Windows quality updates for devices that haven't reached the LTSC's [end of servicing date](/windows/release-health/release-information#enterprise-and-iot-enterprise-ltsbltsc-editions).
