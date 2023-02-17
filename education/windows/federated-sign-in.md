@@ -4,7 +4,7 @@ description: Description of federated sign-in feature for the Education SKUs of 
 ms.date: 02/10/2023
 ms.topic: how-to
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ms.collection:
   - highpri
   - tier1
