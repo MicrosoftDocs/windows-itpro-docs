@@ -830,6 +830,11 @@ items:
       items:
       - name: RemoteFind DDF file
         href: remotefind-ddf-file.md
+    - name: RemoteLock
+      href: remotelock-csp.md
+      items:
+      - name: RemoteLock DDF file
+        href: remotelock-ddf-file.md
     - name: RemoteWipe
       href: remotewipe-csp.md
       items:
