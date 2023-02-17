@@ -61,7 +61,7 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 
 - [Read in braille](https://support.microsoft.com/windows/chapter-8-using-narrator-with-braille-3e5f065b-1c9d-6eb2-ec6d-1d07c9e94b20). Narrator supports braille displays from more than 35 manufacturers using more than 40 languages and multiple braille variants.
 
-- Starting in Windows 11, version 22H2 with [KB5022913](https://support.microsoft.com/kb/5022913), the compatibility of braille displays has been expanded. Braille displays work seamlessly and reliably across multiple screen readers, improving the end user experience. For more information, see [To be added](https://microsoft.com)
+- Starting in Windows 11, version 22H2 with [KB5022913](https://support.microsoft.com/kb/5022913), the compatibility of braille displays has been expanded. Braille displays work seamlessly and reliably across multiple screen readers, improving the end user experience.
 
 ## Hearing
 
