@@ -807,7 +807,7 @@ This setting has a maximum allowed value of 24 hours.
 
 <!-- LAPS-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
-# Settings Applicability
+## Settings Applicability
 
 The LAPS CSP can be used to manage devices that are either joined to Azure AD or joined to both Azure AD and Active Directory (hybrid-joined). The LAPS CSP manages a mix of AAD-only and AD-only settings. The AD-only settings are only applicable for hybrid-joined devices, and then only when BackupDirectory is set to 2.
 

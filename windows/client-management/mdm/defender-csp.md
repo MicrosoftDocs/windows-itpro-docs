@@ -633,7 +633,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-Description-Begin -->
 <!-- Description-Source-DDF -->
-Follow the instructions provided here: <https://learn.microsoft.com/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide>
+Follow the instructions provided here: <https://learn.microsoft.com/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control>
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-Description-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-Editable-Begin -->
@@ -748,7 +748,7 @@ Follow the instructions provided here: <https://learn.microsoft.com/microsoft-36
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-Description-Begin -->
 <!-- Description-Source-DDF -->
-Follow the instructions provided here: <https://learn.microsoft.com/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide>
+Follow the instructions provided here: <https://learn.microsoft.com/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control>
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-Description-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-Editable-Begin -->
