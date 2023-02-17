@@ -670,6 +670,11 @@ items:
       items:
       - name: DeviceManageability DDF file
         href: devicemanageability-ddf.md
+    - name: DevicePreparation
+      href: devicepreparation-csp.md
+      items:
+      - name: DevicePreparation DDF file
+        href: devicepreparation-ddf-file.md
     - name: DeviceStatus
       href: devicestatus-csp.md
       items:
@@ -742,8 +747,6 @@ items:
       items:
       - name: EnterpriseModernAppManagement DDF file
         href: enterprisemodernappmanagement-ddf.md
-      - name: EnterpriseModernAppManagement XSD
-        href: enterprisemodernappmanagement-xsd.md
     - name: eUICCs
       href: euiccs-csp.md
       items:
