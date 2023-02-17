@@ -801,10 +801,10 @@ items:
       items:
       - name: PassportForWork DDF file
         href: passportforwork-ddf.md
-    - name: PersonalDataEncryption
+    - name: PDE
       href: personaldataencryption-csp.md
       items:
-      - name: PersonalDataEncryption DDF file
+      - name: PDE DDF file
         href: personaldataencryption-ddf-file.md
     - name: Personalization
       href: personalization-csp.md

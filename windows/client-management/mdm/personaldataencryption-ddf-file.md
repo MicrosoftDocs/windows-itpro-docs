@@ -1,32 +1,29 @@
 ---
-title: PersonalDataEncryption DDF file
-description: Learn about the OMA DM device description framework (DDF) for the PersonalDataEncryption configuration service provider.
-ms.author: v-nsatapathy
-ms.topic: article
+title: PDE DDF file
+description: View the XML file containing the device description framework (DDF) for the PDE configuration service provider.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 02/17/2023
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: nimishasatapathy
-ms.localizationpriority: medium
-ms.date: 09/10/2022
-ms.reviewer: 
-manager: dansimp
+ms.topic: reference
 ---
 
-# PersonalDataEncryption DDF file
+<!-- Auto-Generated CSP Document -->
 
-This topic shows the OMA DM device description framework (DDF) for the **PersonalDataEncryption** configuration service provider.
+# PDE DDF file
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
-
-The XML below is the current version for this CSP.
+The following XML file contains the device description framework (DDF) for the PDE configuration service provider.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
-  "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
-  [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
+<!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"[<?oma-dm-ddf-ver supported-versions="1.2"?>]>
 <MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
   <VerDTD>1.2</VerDTD>
+  <MSFT:Diagnostics>
+  </MSFT:Diagnostics>
   <Node>
     <NodeName>PDE</NodeName>
     <Path>./User/Vendor/MSFT</Path>
@@ -46,6 +43,11 @@ The XML below is the current version for this CSP.
       <DFType>
         <DDFName />
       </DFType>
+      <MSFT:Applicability>
+        <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
+        <MSFT:CspVersion>1.0</MSFT:CspVersion>
+        <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x87;0x88;0x88*;0xAB;0xAC;0xB4;0xBC;0xBF;0xCD;</MSFT:EditionAllowList>
+      </MSFT:Applicability>
     </DFProperties>
     <Node>
       <NodeName>EnablePersonalDataEncryption</NodeName>
@@ -125,3 +127,7 @@ The XML below is the current version for this CSP.
   </Node>
 </MgmtTree>
 ```
+
+## Related articles
+
+[PDE configuration service provider reference](personaldataencryption-csp.md)
