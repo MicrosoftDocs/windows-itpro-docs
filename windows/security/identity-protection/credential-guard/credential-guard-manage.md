@@ -4,6 +4,7 @@ description: Learn how to deploy and manage Windows Defender Credential Guard us
 ms.date: 11/23/2022
 ms.collection:
   - highpri
+  - tier2
 ms.topic: article
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>

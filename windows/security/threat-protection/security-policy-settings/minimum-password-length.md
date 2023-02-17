@@ -14,6 +14,7 @@ manager: aaroncz
 audience: ITPro
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 03/30/2022
 ms.technology: itpro-security
@@ -50,7 +51,7 @@ In addition, requiring long passwords can actually decrease the security of an o
 
 ### Default values
 
-The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
+The following table lists the actual and effective default policy values. Default values are also listed on the policy's property page.
 
 | Server type or Group Policy Object (GPO) | Default value |
 | - | - |
