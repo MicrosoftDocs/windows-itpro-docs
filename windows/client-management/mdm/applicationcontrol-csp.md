@@ -4,7 +4,7 @@ description: Learn more about the ApplicationControl CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/16/2023
+ms.date: 02/17/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -347,7 +347,7 @@ TRUE/FALSE if the Policy is a Base Policy versus a Supplemental Policy.
 
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-IsDeployed-Description-Begin -->
 <!-- Description-Source-DDF -->
-Whether the Policy indicated by the GUID is deployed on the system (on the physical machine).
+Whether the Policy indicated by the GUID is deployed on the system (on the physical machine)
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-IsDeployed-Description-End -->
 
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-IsDeployed-Editable-Begin -->
@@ -390,7 +390,7 @@ Supported values are as follows:
 
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-IsEffective-Description-Begin -->
 <!-- Description-Source-DDF -->
-Whether the Policy indicated by the GUID is Effective on the system (loaded by the enforcement engine and in effect).
+Whether the Policy indicated by the GUID is Effective on the system (loaded by the enforcement engine and in effect)
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-IsEffective-Description-End -->
 
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-IsEffective-Editable-Begin -->

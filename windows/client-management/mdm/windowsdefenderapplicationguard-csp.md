@@ -214,14 +214,12 @@ Initiates remote installation of Application Guard feature.
 <!-- Description-Source-DDF-Forced -->
 Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device.
 
-| Value | Description |
-|:--|:--|
-| Bit 0 | Set to 1 when Application Guard is enabled into enterprise manage mode |
-| Bit 1 | Set to 1 when the client machine is Hyper-V capable |
-| Bit 2 | Reserved for Microsoft |
-| Bit 3 | Set to 1 when Application Guard is installed on the client machine |
-| Bit 4 | Reserved for Microsoft |
-| Bit 5 | Set to 1 when the client machine meets minimum hardware requirements |
+Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode.
+Bit 1 - Set to 1 when the client machine is Hyper-V capable.
+Bit 2 - Reserved for Microsoft.
+Bit 3 - Set to 1 when Application Guard is installed on the client machine.
+Bit 4 - Reserved for Microsoft.
+Bit 5 - Set to 1 when the client machine meets minimum hardware requirements.
 
 <!-- Device-PlatformStatus-Description-End -->
 
@@ -949,15 +947,13 @@ This policy setting allows you to determine whether users can elect to download 
 <!-- Description-Source-DDF-Forced -->
 Returns bitmask that indicates status of Application Guard installation and pre-requisites on the device.
 
-| Value | Description |
-|:--|:--|
-| Bit 0 | Set to 1 when Application Guard is enabled into enterprise manage mode |
-| Bit 1 | Set to 1 when the client machine is Hyper-V capable |
-| Bit 2 | Set to 1 when the client machine has a valid OS license and SKU |
-| Bit 3 | Set to 1 when Application Guard installed on the client machine |
-| Bit 4 | Set to 1 when required Network Isolation Policies are configured |
-| Bit 5 | Set to 1 when the client machine meets minimum hardware requirements |
-| Bit 6 | Set to 1 when system reboot is required |
+Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode.
+Bit 1 - Set to 1 when the client machine is Hyper-V capable.
+Bit 2 - Set to 1 when the client machine has a valid OS license and SKU.
+Bit 3 - Set to 1 when Application Guard installed on the client machine.
+Bit 4 - Set to 1 when required Network Isolation Policies are configured.
+Bit 5 - Set to 1 when the client machine meets minimum hardware requirements.
+Bit 6 - Set to 1 when system reboot is required.
 
 <!-- Device-Status-Description-End -->
 

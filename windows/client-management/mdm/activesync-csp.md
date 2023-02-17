@@ -4,7 +4,7 @@ description: Learn more about the ActiveSync CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/16/2023
+ms.date: 02/17/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -293,7 +293,7 @@ Specify the account type. This value is entered during setup and cannot be modif
 
 <!-- User-Accounts-{Account GUID}-Domain-Description-Begin -->
 <!-- Description-Source-DDF -->
-Domain name of the Exchange server
+Domain name of the Exchange server.
 <!-- User-Accounts-{Account GUID}-Domain-Description-End -->
 
 <!-- User-Accounts-{Account GUID}-Domain-Editable-Begin -->
@@ -450,7 +450,7 @@ Specifies the time window used for syncing calendar items to the phone.
 
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-Description-Begin -->
 <!-- Description-Source-DDF -->
-Interior node for Content Types
+Interior node for Content Types.
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-Description-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-Editable-Begin -->
@@ -1018,7 +1018,7 @@ Specifies the mail body type and email age filter.
 
 <!-- User-Accounts-{Account GUID}-Policies-MailBodyType-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the email body type. HTML or plain
+Specifies the email body type. HTML or plain.
 <!-- User-Accounts-{Account GUID}-Policies-MailBodyType-Description-End -->
 
 <!-- User-Accounts-{Account GUID}-Policies-MailBodyType-Editable-Begin -->

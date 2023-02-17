@@ -4,7 +4,7 @@ description: Learn more about the Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/17/2023
+ms.date: 02/17/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -344,7 +344,7 @@ Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX f
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Setting Type of Win32 App. Policy Or Preference
+Setting Type of Win32 App. Policy Or Preference.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-Description-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-Editable-Begin -->
@@ -384,7 +384,7 @@ Setting Type of Win32 App. Policy Or Preference
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Unique ID of ADMX file
+Unique ID of ADMX file.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-Description-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-Editable-Begin -->
@@ -424,7 +424,7 @@ Unique ID of ADMX file
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Description-Begin -->
 <!-- Description-Source-DDF -->
-Properties of Win32 App ADMX Ingestion
+Properties of Win32 App ADMX Ingestion.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Description-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Editable-Begin -->
@@ -463,7 +463,7 @@ Properties of Win32 App ADMX Ingestion
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Setting Type of Win32 App. Policy Or Preference
+Setting Type of Win32 App. Policy Or Preference.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Description-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Editable-Begin -->
@@ -503,7 +503,7 @@ Setting Type of Win32 App. Policy Or Preference
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Unique ID of ADMX file
+Unique ID of ADMX file.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Description-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Editable-Begin -->

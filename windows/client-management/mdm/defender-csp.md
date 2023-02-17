@@ -1,10 +1,10 @@
 ---
 title: Defender CSP
-description: Learn more about the Defender CSP
+description: Learn more about the Defender CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/02/2022
+ms.date: 02/17/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -31,6 +31,7 @@ The following example shows the Defender configuration service provider in tree 
 ------ AllowNetworkProtectionOnWinServer
 ------ ASROnlyPerRuleExclusions
 ------ DataDuplicationDirectory
+------ DataDuplicationLocalRetentionPeriod
 ------ DataDuplicationRemoteLocation
 ------ DefaultEnforcement
 ------ DeviceControl
@@ -51,24 +52,23 @@ The following example shows the Defender configuration service provider in tree 
 ------ DisableLocalAdminMerge
 ------ DisableNetworkProtectionPerfTelemetry
 ------ DisableRdpParsing
+------ DisableSmtpParsing
 ------ DisableSshParsing
 ------ DisableTlsParsing
 ------ EnableDnsSinkhole
 ------ EnableFileHashComputation
 ------ EngineUpdatesChannel
------- ExcludedIpAddresses
 ------ HideExclusionsFromLocalAdmins
+------ IntelTDTEnabled
 ------ MeteredConnectionUpdates
 ------ PassiveRemediation
------- PauseUpdateExpirationTime
------- PauseUpdateFlag
------- PauseUpdateStartTime
 ------ PlatformUpdatesChannel
+------ RandomizeScheduleTaskTimes
+------ ScanOnlyIfIdleEnabled
 ------ SchedulerRandomizationTime
 ------ SecurityIntelligenceUpdatesChannel
 ------ SupportLogLocation
 ------ TamperProtection
------- TDTFeatureEnabled
 ------ ThrottleForScheduledScanOnly
 --- Detections
 ------ {ThreatId}
@@ -125,6 +125,7 @@ The following example shows the Defender configuration service provider in tree 
 <!-- Device-Configuration-OmaUri-End -->
 
 <!-- Device-Configuration-Description-Begin -->
+<!-- Description-Source-DDF -->
 An interior node to group Windows Defender configuration information.
 <!-- Device-Configuration-Description-End -->
 
@@ -163,6 +164,7 @@ An interior node to group Windows Defender configuration information.
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-OmaUri-End -->
 
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-Description-Begin -->
+<!-- Description-Source-DDF -->
 This settings controls whether Network Protection is allowed to enable datagram processing on Windows Server. If false, the value of DisableDatagramProcessing will be ignored and default to disabling Datagram inspection.
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-Description-End -->
 
@@ -177,6 +179,7 @@ This settings controls whether Network Protection is allowed to enable datagram 
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-DFProperties-End -->
 
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-AllowedValues-Begin -->
@@ -185,7 +188,7 @@ This settings controls whether Network Protection is allowed to enable datagram 
 | Value | Description |
 |:--|:--|
 | 1 | Datagram processing on Windows Server is enabled. |
-| 0 | Datagram processing on Windows Server is disabled. |
+| 0 (Default) | Datagram processing on Windows Server is disabled. |
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-AllowedValues-End -->
 
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-Examples-Begin -->
@@ -210,6 +213,7 @@ This settings controls whether Network Protection is allowed to enable datagram 
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-OmaUri-End -->
 
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-Description-Begin -->
+<!-- Description-Source-DDF -->
 This settings controls whether Network Protection is allowed to be configured into block or audit mode on windows downlevel of RS3. If false, the value of EnableNetworkProtection will be ignored.
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-Description-End -->
 
@@ -224,6 +228,7 @@ This settings controls whether Network Protection is allowed to be configured in
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-DFProperties-End -->
 
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-AllowedValues-Begin -->
@@ -232,7 +237,7 @@ This settings controls whether Network Protection is allowed to be configured in
 | Value | Description |
 |:--|:--|
 | 1 | Network protection will be enabled downlevel. |
-| 0 | Network protection will be disabled downlevel. |
+| 0 (Default) | Network protection will be disabled downlevel. |
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-AllowedValues-End -->
 
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-Examples-Begin -->
@@ -257,6 +262,7 @@ This settings controls whether Network Protection is allowed to be configured in
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-OmaUri-End -->
 
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-Description-Begin -->
+<!-- Description-Source-DDF -->
 This settings controls whether Network Protection is allowed to be configured into block or audit mode on Windows Server. If false, the value of EnableNetworkProtection will be ignored.
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-Description-End -->
 
@@ -279,8 +285,8 @@ This settings controls whether Network Protection is allowed to be configured in
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Allow |
-| 0 | Disallow |
+| 1 (Default) | Allow. |
+| 0 | Disallow. |
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-AllowedValues-End -->
 
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-Examples-Begin -->
@@ -305,6 +311,7 @@ This settings controls whether Network Protection is allowed to be configured in
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-OmaUri-End -->
 
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-Description-Begin -->
+<!-- Description-Source-DDF -->
 Apply ASR only per rule exclusions.
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-Description-End -->
 
@@ -343,6 +350,7 @@ Apply ASR only per rule exclusions.
 <!-- Device-Configuration-DataDuplicationDirectory-OmaUri-End -->
 
 <!-- Device-Configuration-DataDuplicationDirectory-Description-Begin -->
+<!-- Description-Source-DDF -->
 Define data duplication directory for device control.
 <!-- Device-Configuration-DataDuplicationDirectory-Description-End -->
 
@@ -365,6 +373,47 @@ Define data duplication directory for device control.
 
 <!-- Device-Configuration-DataDuplicationDirectory-End -->
 
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-Begin -->
+### Configuration/DataDuplicationLocalRetentionPeriod
+
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-Applicability-End -->
+
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/DataDuplicationLocalRetentionPeriod
+```
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-OmaUri-End -->
+
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-Description-Begin -->
+<!-- Description-Source-DDF -->
+Define the retention period in days of how much time the evidence data will be kept on the client machine should any transfer to the remote locations would occur.
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-Description-End -->
+
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-Editable-End -->
+
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[1-120]` |
+| Default Value  | 60 |
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-DFProperties-End -->
+
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-Examples-End -->
+
+<!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-End -->
+
 <!-- Device-Configuration-DataDuplicationRemoteLocation-Begin -->
 ### Configuration/DataDuplicationRemoteLocation
 
@@ -381,6 +430,7 @@ Define data duplication directory for device control.
 <!-- Device-Configuration-DataDuplicationRemoteLocation-OmaUri-End -->
 
 <!-- Device-Configuration-DataDuplicationRemoteLocation-Description-Begin -->
+<!-- Description-Source-DDF -->
 Define data duplication remote location for device control.
 <!-- Device-Configuration-DataDuplicationRemoteLocation-Description-End -->
 
@@ -419,6 +469,7 @@ Define data duplication remote location for device control.
 <!-- Device-Configuration-DefaultEnforcement-OmaUri-End -->
 
 <!-- Device-Configuration-DefaultEnforcement-Description-Begin -->
+<!-- Description-Source-DDF -->
 Control Device Control default enforcement. This is the enforcement applied if there are no policy rules present or at the end of the policy rules evaluation none were matched.
 <!-- Device-Configuration-DefaultEnforcement-Description-End -->
 
@@ -433,6 +484,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
 <!-- Device-Configuration-DefaultEnforcement-DFProperties-End -->
 
 <!-- Device-Configuration-DefaultEnforcement-AllowedValues-Begin -->
@@ -440,8 +492,8 @@ Control Device Control default enforcement. This is the enforcement applied if t
 
 | Value | Description |
 |:--|:--|
-| 1 | Default Allow Enforcement |
-| 2 | Default Deny Enforcement |
+| 1 (Default) | Default Allow Enforcement. |
+| 2 | Default Deny Enforcement. |
 <!-- Device-Configuration-DefaultEnforcement-AllowedValues-End -->
 
 <!-- Device-Configuration-DefaultEnforcement-Examples-Begin -->
@@ -466,7 +518,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-OmaUri-End -->
 
 <!-- Device-Configuration-DeviceControl-Description-Begin -->
-<!-- Description-Not-Found -->
+<!-- Description-Source-Not-Found -->
 <!-- Device-Configuration-DeviceControl-Description-End -->
 
 <!-- Device-Configuration-DeviceControl-Editable-Begin -->
@@ -504,7 +556,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-PolicyGroups-OmaUri-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-Description-Begin -->
-<!-- Description-Not-Found -->
+<!-- Description-Source-Not-Found -->
 <!-- Device-Configuration-DeviceControl-PolicyGroups-Description-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-Editable-Begin -->
@@ -542,7 +594,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-OmaUri-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-Description-Begin -->
-<!-- Description-Not-Found -->
+<!-- Description-Source-Not-Found -->
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-Description-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-Editable-Begin -->
@@ -580,7 +632,8 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-OmaUri-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-Description-Begin -->
-<!-- Description-Not-Found -->
+<!-- Description-Source-DDF -->
+Follow the instructions provided here: <https://learn.microsoft.com/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide>
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-Description-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-Editable-Begin -->
@@ -618,7 +671,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-PolicyRules-OmaUri-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-Description-Begin -->
-<!-- Description-Not-Found -->
+<!-- Description-Source-Not-Found -->
 <!-- Device-Configuration-DeviceControl-PolicyRules-Description-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-Editable-Begin -->
@@ -656,7 +709,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-OmaUri-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-Description-Begin -->
-<!-- Description-Not-Found -->
+<!-- Description-Source-Not-Found -->
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-Description-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-Editable-Begin -->
@@ -694,7 +747,8 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-OmaUri-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-Description-Begin -->
-<!-- Description-Not-Found -->
+<!-- Description-Source-DDF -->
+Follow the instructions provided here: <https://learn.microsoft.com/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide>
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-Description-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-Editable-Begin -->
@@ -732,6 +786,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControlEnabled-OmaUri-End -->
 
 <!-- Device-Configuration-DeviceControlEnabled-Description-Begin -->
+<!-- Description-Source-DDF -->
 Control Device Control feature.
 <!-- Device-Configuration-DeviceControlEnabled-Description-End -->
 
@@ -746,6 +801,7 @@ Control Device Control feature.
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-DeviceControlEnabled-DFProperties-End -->
 
 <!-- Device-Configuration-DeviceControlEnabled-AllowedValues-Begin -->
@@ -753,8 +809,8 @@ Control Device Control feature.
 
 | Value | Description |
 |:--|:--|
-| 1 |  |
-| 0 |  |
+| 1 | . |
+| 0 (Default) | . |
 <!-- Device-Configuration-DeviceControlEnabled-AllowedValues-End -->
 
 <!-- Device-Configuration-DeviceControlEnabled-Examples-Begin -->
@@ -779,7 +835,8 @@ Control Device Control feature.
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-OmaUri-End -->
 
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Description-Begin -->
-Indicates whether the CPU will be throttled for scheduled scans while the device is idle.  This feature is enabled by default and will not throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.
+<!-- Description-Source-DDF -->
+Indicates whether the CPU will be throttled for scheduled scans while the device is idle. This feature is enabled by default and will not throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Description-End -->
 
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Editable-Begin -->
@@ -801,8 +858,8 @@ Indicates whether the CPU will be throttled for scheduled scans while the device
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Disable CPU Throttle on idle scans |
-| 0 | Enable CPU Throttle on idle scans |
+| 1 (Default) | Disable CPU Throttle on idle scans. |
+| 0 | Enable CPU Throttle on idle scans. |
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Examples-Begin -->
@@ -827,6 +884,7 @@ Indicates whether the CPU will be throttled for scheduled scans while the device
 <!-- Device-Configuration-DisableDnsOverTcpParsing-OmaUri-End -->
 
 <!-- Device-Configuration-DisableDnsOverTcpParsing-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting disables DNS over TCP Parsing for Network Protection.
 <!-- Device-Configuration-DisableDnsOverTcpParsing-Description-End -->
 
@@ -849,8 +907,8 @@ This setting disables DNS over TCP Parsing for Network Protection.
 
 | Value | Description |
 |:--|:--|
-| 1 | DNS over TCP parsing is disabled |
-| 0 (Default) | DNS over TCP parsing is enabled |
+| 1 | DNS over TCP parsing is disabled. |
+| 0 (Default) | DNS over TCP parsing is enabled. |
 <!-- Device-Configuration-DisableDnsOverTcpParsing-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableDnsOverTcpParsing-Examples-Begin -->
@@ -875,6 +933,7 @@ This setting disables DNS over TCP Parsing for Network Protection.
 <!-- Device-Configuration-DisableDnsParsing-OmaUri-End -->
 
 <!-- Device-Configuration-DisableDnsParsing-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting disables DNS Parsing for Network Protection.
 <!-- Device-Configuration-DisableDnsParsing-Description-End -->
 
@@ -897,8 +956,8 @@ This setting disables DNS Parsing for Network Protection.
 
 | Value | Description |
 |:--|:--|
-| 1 | DNS parsing is disabled |
-| 0 (Default) | DNS parsing is enabled |
+| 1 | DNS parsing is disabled. |
+| 0 (Default) | DNS parsing is enabled. |
 <!-- Device-Configuration-DisableDnsParsing-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableDnsParsing-Examples-Begin -->
@@ -923,6 +982,7 @@ This setting disables DNS Parsing for Network Protection.
 <!-- Device-Configuration-DisableFtpParsing-OmaUri-End -->
 
 <!-- Device-Configuration-DisableFtpParsing-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting disables FTP Parsing for Network Protection.
 <!-- Device-Configuration-DisableFtpParsing-Description-End -->
 
@@ -945,8 +1005,8 @@ This setting disables FTP Parsing for Network Protection.
 
 | Value | Description |
 |:--|:--|
-| 1 | FTP parsing is disabled |
-| 0 (Default) | FTP parsing is enabled |
+| 1 | FTP parsing is disabled. |
+| 0 (Default) | FTP parsing is enabled. |
 <!-- Device-Configuration-DisableFtpParsing-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableFtpParsing-Examples-Begin -->
@@ -971,6 +1031,7 @@ This setting disables FTP Parsing for Network Protection.
 <!-- Device-Configuration-DisableGradualRelease-OmaUri-End -->
 
 <!-- Device-Configuration-DisableGradualRelease-Description-Begin -->
+<!-- Description-Source-DDF -->
 Enable this policy to disable gradual rollout of Defender updates.
 <!-- Device-Configuration-DisableGradualRelease-Description-End -->
 
@@ -985,6 +1046,7 @@ Enable this policy to disable gradual rollout of Defender updates.
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-DisableGradualRelease-DFProperties-End -->
 
 <!-- Device-Configuration-DisableGradualRelease-AllowedValues-Begin -->
@@ -992,8 +1054,8 @@ Enable this policy to disable gradual rollout of Defender updates.
 
 | Value | Description |
 |:--|:--|
-| 1 | Gradual release is disabled |
-| 0 | Gradual release is enabled |
+| 1 | Gradual release is disabled. |
+| 0 (Default) | Gradual release is enabled. |
 <!-- Device-Configuration-DisableGradualRelease-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableGradualRelease-Examples-Begin -->
@@ -1018,6 +1080,7 @@ Enable this policy to disable gradual rollout of Defender updates.
 <!-- Device-Configuration-DisableHttpParsing-OmaUri-End -->
 
 <!-- Device-Configuration-DisableHttpParsing-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting disables HTTP Parsing for Network Protection.
 <!-- Device-Configuration-DisableHttpParsing-Description-End -->
 
@@ -1040,8 +1103,8 @@ This setting disables HTTP Parsing for Network Protection.
 
 | Value | Description |
 |:--|:--|
-| 1 | HTTP parsing is disabled |
-| 0 (Default) | HTTP parsing is enabled |
+| 1 | HTTP parsing is disabled. |
+| 0 (Default) | HTTP parsing is enabled. |
 <!-- Device-Configuration-DisableHttpParsing-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableHttpParsing-Examples-Begin -->
@@ -1066,6 +1129,7 @@ This setting disables HTTP Parsing for Network Protection.
 <!-- Device-Configuration-DisableInboundConnectionFiltering-OmaUri-End -->
 
 <!-- Device-Configuration-DisableInboundConnectionFiltering-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting disables Inbound connection filtering for Network Protection.
 <!-- Device-Configuration-DisableInboundConnectionFiltering-Description-End -->
 
@@ -1080,6 +1144,7 @@ This setting disables Inbound connection filtering for Network Protection.
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-DisableInboundConnectionFiltering-DFProperties-End -->
 
 <!-- Device-Configuration-DisableInboundConnectionFiltering-AllowedValues-Begin -->
@@ -1087,8 +1152,8 @@ This setting disables Inbound connection filtering for Network Protection.
 
 | Value | Description |
 |:--|:--|
-| 1 | Inbound connection filtering is disabled |
-| 0 | Inbound connection filtering is enabled |
+| 1 | Inbound connection filtering is disabled. |
+| 0 (Default) | Inbound connection filtering is enabled. |
 <!-- Device-Configuration-DisableInboundConnectionFiltering-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableInboundConnectionFiltering-Examples-Begin -->
@@ -1113,7 +1178,8 @@ This setting disables Inbound connection filtering for Network Protection.
 <!-- Device-Configuration-DisableLocalAdminMerge-OmaUri-End -->
 
 <!-- Device-Configuration-DisableLocalAdminMerge-Description-Begin -->
-When this value is set to false, it allows a local admin the ability to specify some settings for complex list type that will then merge /override the Preference settings with the Policy settings
+<!-- Description-Source-DDF -->
+When this value is set to false, it allows a local admin the ability to specify some settings for complex list type that will then merge /override the Preference settings with the Policy settings.
 <!-- Device-Configuration-DisableLocalAdminMerge-Description-End -->
 
 <!-- Device-Configuration-DisableLocalAdminMerge-Editable-Begin -->
@@ -1127,6 +1193,7 @@ When this value is set to false, it allows a local admin the ability to specify 
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-DisableLocalAdminMerge-DFProperties-End -->
 
 <!-- Device-Configuration-DisableLocalAdminMerge-AllowedValues-Begin -->
@@ -1134,8 +1201,8 @@ When this value is set to false, it allows a local admin the ability to specify 
 
 | Value | Description |
 |:--|:--|
-| 1 | Disable Local Admin Merge |
-| 0 | Enable Local Admin Merge |
+| 1 | Disable Local Admin Merge. |
+| 0 (Default) | Enable Local Admin Merge. |
 <!-- Device-Configuration-DisableLocalAdminMerge-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableLocalAdminMerge-Examples-Begin -->
@@ -1160,6 +1227,7 @@ When this value is set to false, it allows a local admin the ability to specify 
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-OmaUri-End -->
 
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting disables the gathering and send of performance telemetry from Network Protection.
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-Description-End -->
 
@@ -1174,6 +1242,7 @@ This setting disables the gathering and send of performance telemetry from Netwo
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-DFProperties-End -->
 
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-AllowedValues-Begin -->
@@ -1181,8 +1250,8 @@ This setting disables the gathering and send of performance telemetry from Netwo
 
 | Value | Description |
 |:--|:--|
-| 1 | Network protection telemetry is disabled |
-| 0 | Network protection telemetry is enabled |
+| 1 | Network protection telemetry is disabled. |
+| 0 (Default) | Network protection telemetry is enabled. |
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-Examples-Begin -->
@@ -1207,6 +1276,7 @@ This setting disables the gathering and send of performance telemetry from Netwo
 <!-- Device-Configuration-DisableRdpParsing-OmaUri-End -->
 
 <!-- Device-Configuration-DisableRdpParsing-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting disables RDP Parsing for Network Protection.
 <!-- Device-Configuration-DisableRdpParsing-Description-End -->
 
@@ -1221,6 +1291,7 @@ This setting disables RDP Parsing for Network Protection.
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-DisableRdpParsing-DFProperties-End -->
 
 <!-- Device-Configuration-DisableRdpParsing-AllowedValues-Begin -->
@@ -1228,8 +1299,8 @@ This setting disables RDP Parsing for Network Protection.
 
 | Value | Description |
 |:--|:--|
-| 1 | RDP Parsing is disabled |
-| 0 | RDP Parsing is enabled |
+| 1 | RDP Parsing is disabled. |
+| 0 (Default) | RDP Parsing is enabled. |
 <!-- Device-Configuration-DisableRdpParsing-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableRdpParsing-Examples-Begin -->
@@ -1237,6 +1308,55 @@ This setting disables RDP Parsing for Network Protection.
 <!-- Device-Configuration-DisableRdpParsing-Examples-End -->
 
 <!-- Device-Configuration-DisableRdpParsing-End -->
+
+<!-- Device-Configuration-DisableSmtpParsing-Begin -->
+### Configuration/DisableSmtpParsing
+
+<!-- Device-Configuration-DisableSmtpParsing-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-DisableSmtpParsing-Applicability-End -->
+
+<!-- Device-Configuration-DisableSmtpParsing-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/DisableSmtpParsing
+```
+<!-- Device-Configuration-DisableSmtpParsing-OmaUri-End -->
+
+<!-- Device-Configuration-DisableSmtpParsing-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting disables SMTP Parsing for Network Protection.
+<!-- Device-Configuration-DisableSmtpParsing-Description-End -->
+
+<!-- Device-Configuration-DisableSmtpParsing-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableSmtpParsing-Editable-End -->
+
+<!-- Device-Configuration-DisableSmtpParsing-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-DisableSmtpParsing-DFProperties-End -->
+
+<!-- Device-Configuration-DisableSmtpParsing-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | SMTP parsing is disabled. |
+| 0 (Default) | SMTP parsing is enabled. |
+<!-- Device-Configuration-DisableSmtpParsing-AllowedValues-End -->
+
+<!-- Device-Configuration-DisableSmtpParsing-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableSmtpParsing-Examples-End -->
+
+<!-- Device-Configuration-DisableSmtpParsing-End -->
 
 <!-- Device-Configuration-DisableSshParsing-Begin -->
 ### Configuration/DisableSshParsing
@@ -1254,6 +1374,7 @@ This setting disables RDP Parsing for Network Protection.
 <!-- Device-Configuration-DisableSshParsing-OmaUri-End -->
 
 <!-- Device-Configuration-DisableSshParsing-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting disables SSH Parsing for Network Protection.
 <!-- Device-Configuration-DisableSshParsing-Description-End -->
 
@@ -1276,8 +1397,8 @@ This setting disables SSH Parsing for Network Protection.
 
 | Value | Description |
 |:--|:--|
-| 1 | SSH parsing is disabled |
-| 0 (Default) | SSH parsing is enabled |
+| 1 | SSH parsing is disabled. |
+| 0 (Default) | SSH parsing is enabled. |
 <!-- Device-Configuration-DisableSshParsing-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableSshParsing-Examples-Begin -->
@@ -1302,6 +1423,7 @@ This setting disables SSH Parsing for Network Protection.
 <!-- Device-Configuration-DisableTlsParsing-OmaUri-End -->
 
 <!-- Device-Configuration-DisableTlsParsing-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting disables TLS Parsing for Network Protection.
 <!-- Device-Configuration-DisableTlsParsing-Description-End -->
 
@@ -1324,8 +1446,8 @@ This setting disables TLS Parsing for Network Protection.
 
 | Value | Description |
 |:--|:--|
-| 1 | TLS parsing is disabled |
-| 0 (Default) | TLS parsing is enabled |
+| 1 | TLS parsing is disabled. |
+| 0 (Default) | TLS parsing is enabled. |
 <!-- Device-Configuration-DisableTlsParsing-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableTlsParsing-Examples-Begin -->
@@ -1350,6 +1472,7 @@ This setting disables TLS Parsing for Network Protection.
 <!-- Device-Configuration-EnableDnsSinkhole-OmaUri-End -->
 
 <!-- Device-Configuration-EnableDnsSinkhole-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting enables the DNS Sinkhole feature for Network Protection, respecting the value of EnableNetworkProtection for block vs audit, does nothing in inspect mode.
 <!-- Device-Configuration-EnableDnsSinkhole-Description-End -->
 
@@ -1364,6 +1487,7 @@ This setting enables the DNS Sinkhole feature for Network Protection, respecting
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
 <!-- Device-Configuration-EnableDnsSinkhole-DFProperties-End -->
 
 <!-- Device-Configuration-EnableDnsSinkhole-AllowedValues-Begin -->
@@ -1371,8 +1495,8 @@ This setting enables the DNS Sinkhole feature for Network Protection, respecting
 
 | Value | Description |
 |:--|:--|
-| 1 | DNS Sinkhole is disabled |
-| 0 | DNS Sinkhole is enabled |
+| 1 (Default) | DNS Sinkhole is disabled. |
+| 0 | DNS Sinkhole is enabled. |
 <!-- Device-Configuration-EnableDnsSinkhole-AllowedValues-End -->
 
 <!-- Device-Configuration-EnableDnsSinkhole-Examples-Begin -->
@@ -1397,6 +1521,7 @@ This setting enables the DNS Sinkhole feature for Network Protection, respecting
 <!-- Device-Configuration-EnableFileHashComputation-OmaUri-End -->
 
 <!-- Device-Configuration-EnableFileHashComputation-Description-Begin -->
+<!-- Description-Source-DDF -->
 Enables or disables file hash computation feature. When this feature is enabled Windows defender will compute hashes for files it scans.
 <!-- Device-Configuration-EnableFileHashComputation-Description-End -->
 
@@ -1419,8 +1544,8 @@ Enables or disables file hash computation feature. When this feature is enabled 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disable |
-| 1 | Enable |
+| 0 (Default) | Disable. |
+| 1 | Enable. |
 <!-- Device-Configuration-EnableFileHashComputation-AllowedValues-End -->
 
 <!-- Device-Configuration-EnableFileHashComputation-Examples-Begin -->
@@ -1445,6 +1570,7 @@ Enables or disables file hash computation feature. When this feature is enabled 
 <!-- Device-Configuration-EngineUpdatesChannel-OmaUri-End -->
 
 <!-- Device-Configuration-EngineUpdatesChannel-Description-Begin -->
+<!-- Description-Source-DDF -->
 Enable this policy to specify when devices receive Microsoft Defender engine updates during the monthly gradual rollout.
 <!-- Device-Configuration-EngineUpdatesChannel-Description-End -->
 
@@ -1459,6 +1585,7 @@ Enable this policy to specify when devices receive Microsoft Defender engine upd
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-EngineUpdatesChannel-DFProperties-End -->
 
 <!-- Device-Configuration-EngineUpdatesChannel-AllowedValues-Begin -->
@@ -1466,7 +1593,7 @@ Enable this policy to specify when devices receive Microsoft Defender engine upd
 
 | Value | Description |
 |:--|:--|
-| 0 | Not configured (Default). The device will stay up to date automatically during the gradual release cycle. Suitable for most devices. |
+| 0 (Default) | Not configured (Default). The device will stay up to date automatically during the gradual release cycle. Suitable for most devices. |
 | 2 | Beta Channel: Devices set to this channel will be the first to receive new updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in (manual) test environments only and a limited number of devices. |
 | 3 | Current Channel (Preview): Devices set to this channel will be offered updates earliest during the monthly gradual release cycle. Suggested for pre-production/validation environments. |
 | 4 | Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested to apply to a small, representative part of your production population (~10%). |
@@ -1479,45 +1606,6 @@ Enable this policy to specify when devices receive Microsoft Defender engine upd
 <!-- Device-Configuration-EngineUpdatesChannel-Examples-End -->
 
 <!-- Device-Configuration-EngineUpdatesChannel-End -->
-
-<!-- Device-Configuration-ExcludedIpAddresses-Begin -->
-### Configuration/ExcludedIpAddresses
-
-<!-- Device-Configuration-ExcludedIpAddresses-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
-<!-- Device-Configuration-ExcludedIpAddresses-Applicability-End -->
-
-<!-- Device-Configuration-ExcludedIpAddresses-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Defender/Configuration/ExcludedIpAddresses
-```
-<!-- Device-Configuration-ExcludedIpAddresses-OmaUri-End -->
-
-<!-- Device-Configuration-ExcludedIpAddresses-Description-Begin -->
-This node contains a list of values specifying any IP addresses that wdnisdrv will ignore when intercepting traffic.
-<!-- Device-Configuration-ExcludedIpAddresses-Description-End -->
-
-<!-- Device-Configuration-ExcludedIpAddresses-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Configuration-ExcludedIpAddresses-Editable-End -->
-
-<!-- Device-Configuration-ExcludedIpAddresses-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | List (Delimiter: `|`) |
-<!-- Device-Configuration-ExcludedIpAddresses-DFProperties-End -->
-
-<!-- Device-Configuration-ExcludedIpAddresses-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Configuration-ExcludedIpAddresses-Examples-End -->
-
-<!-- Device-Configuration-ExcludedIpAddresses-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Begin -->
 ### Configuration/HideExclusionsFromLocalAdmins
@@ -1535,7 +1623,8 @@ This node contains a list of values specifying any IP addresses that wdnisdrv wi
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-OmaUri-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Description-Begin -->
-This policy setting controls whether or not exclusions are visible to local admins.  For end users (that are not local admins) exclusions are not visible, whether or not this setting is enabled.
+<!-- Description-Source-DDF -->
+This policy setting controls whether or not exclusions are visible to local admins. For end users (that are not local admins) exclusions are not visible, whether or not this setting is enabled.
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Description-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Editable-Begin -->
@@ -1551,6 +1640,7 @@ This policy setting controls whether or not exclusions are visible to local admi
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-DFProperties-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-AllowedValues-Begin -->
@@ -1559,7 +1649,7 @@ This policy setting controls whether or not exclusions are visible to local admi
 | Value | Description |
 |:--|:--|
 | 1 | If you enable this setting, local admins will no longer be able to see the exclusion list in Windows Security App or via PowerShell. |
-| 0 | If you disable or do not configure this setting, local admins will be able to see exclusions in the Windows Security App and via PowerShell. |
+| 0 (Default) | If you disable or do not configure this setting, local admins will be able to see exclusions in the Windows Security App and via PowerShell. |
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-AllowedValues-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Examples-Begin -->
@@ -1567,6 +1657,55 @@ This policy setting controls whether or not exclusions are visible to local admi
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Examples-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-End -->
+
+<!-- Device-Configuration-IntelTDTEnabled-Begin -->
+### Configuration/IntelTDTEnabled
+
+<!-- Device-Configuration-IntelTDTEnabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+<!-- Device-Configuration-IntelTDTEnabled-Applicability-End -->
+
+<!-- Device-Configuration-IntelTDTEnabled-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/IntelTDTEnabled
+```
+<!-- Device-Configuration-IntelTDTEnabled-OmaUri-End -->
+
+<!-- Device-Configuration-IntelTDTEnabled-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting configures the Intel TDT integration level for Intel TDT-capable devices.
+<!-- Device-Configuration-IntelTDTEnabled-Description-End -->
+
+<!-- Device-Configuration-IntelTDTEnabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-IntelTDTEnabled-Editable-End -->
+
+<!-- Device-Configuration-IntelTDTEnabled-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-IntelTDTEnabled-DFProperties-End -->
+
+<!-- Device-Configuration-IntelTDTEnabled-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | If you do not configure this setting, the default value will be applied. The default value is controlled by Microsoft security intelligence updates. Microsoft will enable Intel TDT if there is a known threat. |
+| 2 | If you configure this setting to disabled, Intel TDT integration will turn off. |
+<!-- Device-Configuration-IntelTDTEnabled-AllowedValues-End -->
+
+<!-- Device-Configuration-IntelTDTEnabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-IntelTDTEnabled-Examples-End -->
+
+<!-- Device-Configuration-IntelTDTEnabled-End -->
 
 <!-- Device-Configuration-MeteredConnectionUpdates-Begin -->
 ### Configuration/MeteredConnectionUpdates
@@ -1584,7 +1723,8 @@ This policy setting controls whether or not exclusions are visible to local admi
 <!-- Device-Configuration-MeteredConnectionUpdates-OmaUri-End -->
 
 <!-- Device-Configuration-MeteredConnectionUpdates-Description-Begin -->
-Allow managed devices to update through metered connections. Default is 0 - not allowed, 1 - allowed
+<!-- Description-Source-DDF -->
+Allow managed devices to update through metered connections. Default is 0 - not allowed, 1 - allowed.
 <!-- Device-Configuration-MeteredConnectionUpdates-Description-End -->
 
 <!-- Device-Configuration-MeteredConnectionUpdates-Editable-Begin -->
@@ -1606,8 +1746,8 @@ Allow managed devices to update through metered connections. Default is 0 - not 
 
 | Value | Description |
 |:--|:--|
-| 1 | Allowed |
-| 0 (Default) | Not Allowed |
+| 1 | Allowed. |
+| 0 (Default) | Not Allowed. |
 <!-- Device-Configuration-MeteredConnectionUpdates-AllowedValues-End -->
 
 <!-- Device-Configuration-MeteredConnectionUpdates-Examples-Begin -->
@@ -1632,6 +1772,7 @@ Allow managed devices to update through metered connections. Default is 0 - not 
 <!-- Device-Configuration-PassiveRemediation-OmaUri-End -->
 
 <!-- Device-Configuration-PassiveRemediation-Description-Begin -->
+<!-- Description-Source-DDF -->
 Setting to control automatic remediation for Sense scans.
 <!-- Device-Configuration-PassiveRemediation-Description-End -->
 
@@ -1646,6 +1787,7 @@ Setting to control automatic remediation for Sense scans.
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-PassiveRemediation-DFProperties-End -->
 
 <!-- Device-Configuration-PassiveRemediation-AllowedValues-Begin -->
@@ -1653,9 +1795,9 @@ Setting to control automatic remediation for Sense scans.
 
 | Flag | Description |
 |:--|:--|
-| 0x1 | PASSIVE_REMEDIATION_FLAG_SENSE_AUTO_REMEDIATION: Passive Remediation Sense AutoRemediation |
-| 0x2 | PASSIVE_REMEDIATION_FLAG_RTP_AUDIT: Passive Remediation Realtime Protection Audit |
-| 0x4 | PASSIVE_REMEDIATION_FLAG_RTP_REMEDIATION: Passive Remediation Realtime Protection Remediation |
+| 0x1 |  |
+| 0x2 |  |
+| 0x4 |  |
 <!-- Device-Configuration-PassiveRemediation-AllowedValues-End -->
 
 <!-- Device-Configuration-PassiveRemediation-Examples-Begin -->
@@ -1663,129 +1805,6 @@ Setting to control automatic remediation for Sense scans.
 <!-- Device-Configuration-PassiveRemediation-Examples-End -->
 
 <!-- Device-Configuration-PassiveRemediation-End -->
-
-<!-- Device-Configuration-PauseUpdateExpirationTime-Begin -->
-### Configuration/PauseUpdateExpirationTime
-
-<!-- Device-Configuration-PauseUpdateExpirationTime-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
-<!-- Device-Configuration-PauseUpdateExpirationTime-Applicability-End -->
-
-<!-- Device-Configuration-PauseUpdateExpirationTime-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Defender/Configuration/PauseUpdateExpirationTime
-```
-<!-- Device-Configuration-PauseUpdateExpirationTime-OmaUri-End -->
-
-<!-- Device-Configuration-PauseUpdateExpirationTime-Description-Begin -->
-Pause update until the UTC time in ISO string format without milliseconds, for example, 2022-02-24T00:03:59Z.
-<!-- Device-Configuration-PauseUpdateExpirationTime-Description-End -->
-
-<!-- Device-Configuration-PauseUpdateExpirationTime-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Configuration-PauseUpdateExpirationTime-Editable-End -->
-
-<!-- Device-Configuration-PauseUpdateExpirationTime-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Device-Configuration-PauseUpdateExpirationTime-DFProperties-End -->
-
-<!-- Device-Configuration-PauseUpdateExpirationTime-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Configuration-PauseUpdateExpirationTime-Examples-End -->
-
-<!-- Device-Configuration-PauseUpdateExpirationTime-End -->
-
-<!-- Device-Configuration-PauseUpdateFlag-Begin -->
-### Configuration/PauseUpdateFlag
-
-<!-- Device-Configuration-PauseUpdateFlag-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
-<!-- Device-Configuration-PauseUpdateFlag-Applicability-End -->
-
-<!-- Device-Configuration-PauseUpdateFlag-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Defender/Configuration/PauseUpdateFlag
-```
-<!-- Device-Configuration-PauseUpdateFlag-OmaUri-End -->
-
-<!-- Device-Configuration-PauseUpdateFlag-Description-Begin -->
-Setting to control automatic remediation for Sense scans.
-<!-- Device-Configuration-PauseUpdateFlag-Description-End -->
-
-<!-- Device-Configuration-PauseUpdateFlag-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Configuration-PauseUpdateFlag-Editable-End -->
-
-<!-- Device-Configuration-PauseUpdateFlag-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Device-Configuration-PauseUpdateFlag-DFProperties-End -->
-
-<!-- Device-Configuration-PauseUpdateFlag-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 | Update not paused |
-| 1 | Update paused |
-<!-- Device-Configuration-PauseUpdateFlag-AllowedValues-End -->
-
-<!-- Device-Configuration-PauseUpdateFlag-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Configuration-PauseUpdateFlag-Examples-End -->
-
-<!-- Device-Configuration-PauseUpdateFlag-End -->
-
-<!-- Device-Configuration-PauseUpdateStartTime-Begin -->
-### Configuration/PauseUpdateStartTime
-
-<!-- Device-Configuration-PauseUpdateStartTime-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
-<!-- Device-Configuration-PauseUpdateStartTime-Applicability-End -->
-
-<!-- Device-Configuration-PauseUpdateStartTime-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Defender/Configuration/PauseUpdateStartTime
-```
-<!-- Device-Configuration-PauseUpdateStartTime-OmaUri-End -->
-
-<!-- Device-Configuration-PauseUpdateStartTime-Description-Begin -->
-Pause update from the UTC time in ISO string format without milliseconds, for example, 2022-02-24T00:03:59Z.
-<!-- Device-Configuration-PauseUpdateStartTime-Description-End -->
-
-<!-- Device-Configuration-PauseUpdateStartTime-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Configuration-PauseUpdateStartTime-Editable-End -->
-
-<!-- Device-Configuration-PauseUpdateStartTime-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Device-Configuration-PauseUpdateStartTime-DFProperties-End -->
-
-<!-- Device-Configuration-PauseUpdateStartTime-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Configuration-PauseUpdateStartTime-Examples-End -->
-
-<!-- Device-Configuration-PauseUpdateStartTime-End -->
 
 <!-- Device-Configuration-PlatformUpdatesChannel-Begin -->
 ### Configuration/PlatformUpdatesChannel
@@ -1803,6 +1822,7 @@ Pause update from the UTC time in ISO string format without milliseconds, for ex
 <!-- Device-Configuration-PlatformUpdatesChannel-OmaUri-End -->
 
 <!-- Device-Configuration-PlatformUpdatesChannel-Description-Begin -->
+<!-- Description-Source-DDF -->
 Enable this policy to specify when devices receive Microsoft Defender platform updates during the monthly gradual rollout.
 <!-- Device-Configuration-PlatformUpdatesChannel-Description-End -->
 
@@ -1817,6 +1837,7 @@ Enable this policy to specify when devices receive Microsoft Defender platform u
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-PlatformUpdatesChannel-DFProperties-End -->
 
 <!-- Device-Configuration-PlatformUpdatesChannel-AllowedValues-Begin -->
@@ -1824,7 +1845,7 @@ Enable this policy to specify when devices receive Microsoft Defender platform u
 
 | Value | Description |
 |:--|:--|
-| 0 | Not configured (Default). The device will stay up to date automatically during the gradual release cycle. Suitable for most devices. |
+| 0 (Default) | Not configured (Default). The device will stay up to date automatically during the gradual release cycle. Suitable for most devices. |
 | 2 | Beta Channel: Devices set to this channel will be the first to receive new updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in (manual) test environments only and a limited number of devices. |
 | 3 | Current Channel (Preview): Devices set to this channel will be offered updates earliest during the monthly gradual release cycle. Suggested for pre-production/validation environments. |
 | 4 | Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested to apply to a small, representative part of your production population (~10%). |
@@ -1837,6 +1858,104 @@ Enable this policy to specify when devices receive Microsoft Defender platform u
 <!-- Device-Configuration-PlatformUpdatesChannel-Examples-End -->
 
 <!-- Device-Configuration-PlatformUpdatesChannel-End -->
+
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-Begin -->
+### Configuration/RandomizeScheduleTaskTimes
+
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-Applicability-End -->
+
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/RandomizeScheduleTaskTimes
+```
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-OmaUri-End -->
+
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-Description-Begin -->
+<!-- Description-Source-DDF -->
+In Microsoft Defender Antivirus, randomize the start time of the scan to any interval from 0 to 23 hours. This can be useful in virtual machines or VDI deployments.
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-Description-End -->
+
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-Editable-End -->
+
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-DFProperties-End -->
+
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 (Default) | Widen or narrow the randomization period for scheduled scans. Specify a randomization window of between 1 and 23 hours by using the setting SchedulerRandomizationTime. |
+| 0 | Scheduled tasks will begin at a random time within 4 hours after the time specified in Task Scheduler. |
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-AllowedValues-End -->
+
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-Examples-End -->
+
+<!-- Device-Configuration-RandomizeScheduleTaskTimes-End -->
+
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-Begin -->
+### Configuration/ScanOnlyIfIdleEnabled
+
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-Applicability-End -->
+
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/ScanOnlyIfIdleEnabled
+```
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-OmaUri-End -->
+
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-Description-Begin -->
+<!-- Description-Source-DDF -->
+In Microsoft Defender Antivirus, this setting will run scheduled scans only if the system is idle.
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-Description-End -->
+
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-Editable-End -->
+
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-DFProperties-End -->
+
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 (Default) | Runs scheduled scans only if the system is idle. |
+| 0 | Runs scheduled scans regardless of whether the system is idle. |
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-AllowedValues-End -->
+
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-Examples-End -->
+
+<!-- Device-Configuration-ScanOnlyIfIdleEnabled-End -->
 
 <!-- Device-Configuration-SchedulerRandomizationTime-Begin -->
 ### Configuration/SchedulerRandomizationTime
@@ -1854,6 +1973,7 @@ Enable this policy to specify when devices receive Microsoft Defender platform u
 <!-- Device-Configuration-SchedulerRandomizationTime-OmaUri-End -->
 
 <!-- Device-Configuration-SchedulerRandomizationTime-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting allows you to configure the scheduler randomization in hours. The randomization interval is [1 - 23] hours. For more information on the randomization effect please check the RandomizeScheduleTaskTimes setting.
 <!-- Device-Configuration-SchedulerRandomizationTime-Description-End -->
 
@@ -1894,6 +2014,7 @@ This setting allows you to configure the scheduler randomization in hours. The r
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-OmaUri-End -->
 
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-Description-Begin -->
+<!-- Description-Source-DDF -->
 Enable this policy to specify when devices receive Microsoft Defender security intelligence updates during the daily gradual rollout.
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-Description-End -->
 
@@ -1908,6 +2029,7 @@ Enable this policy to specify when devices receive Microsoft Defender security i
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-DFProperties-End -->
 
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-AllowedValues-Begin -->
@@ -1915,7 +2037,7 @@ Enable this policy to specify when devices receive Microsoft Defender security i
 
 | Value | Description |
 |:--|:--|
-| 0 | Not configured (Default). The device will stay up to date automatically during the gradual release cycle. Suitable for most devices. |
+| 0 (Default) | Not configured (Default). The device will stay up to date automatically during the gradual release cycle. Suitable for most devices. |
 | 4 | Current Channel (Staged): Devices will be offered updates after the release cycle. Suggested to apply to a small, representative part of production population (~10%). |
 | 5 | Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%). |
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-AllowedValues-End -->
@@ -1942,6 +2064,7 @@ Enable this policy to specify when devices receive Microsoft Defender security i
 <!-- Device-Configuration-SupportLogLocation-OmaUri-End -->
 
 <!-- Device-Configuration-SupportLogLocation-Description-Begin -->
+<!-- Description-Source-DDF -->
 The support log location setting allows the administrator to specify where the Microsoft Defender Antivirus diagnostic data collection tool (MpCmdRun.exe) will save the resulting log files. This setting is configured with an MDM solution, such as Intune, and is available for Windows 10 Enterprise.
 <!-- Device-Configuration-SupportLogLocation-Description-End -->
 
@@ -1992,6 +2115,7 @@ More details:
 <!-- Device-Configuration-TamperProtection-OmaUri-End -->
 
 <!-- Device-Configuration-TamperProtection-Description-Begin -->
+<!-- Description-Source-DDF -->
 Tamper protection helps protect important security features from unwanted changes and interference. This includes real-time protection, behavior monitoring, and more. Accepts signed string to turn the feature on or off. Settings are configured with an MDM solution, such as Intune and is available in Windows 10 Enterprise E5 or equivalent subscriptions. Send off blob to device to reset tamper protection state before setting this configuration to "not configured" or "unassigned" in Intune. The data type is a Signed blob.
 <!-- Device-Configuration-TamperProtection-Description-End -->
 
@@ -2006,6 +2130,7 @@ Tamper protection helps protect important security features from unwanted change
 |:--|:--|
 | Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-TamperProtection-DFProperties-End -->
 
 <!-- Device-Configuration-TamperProtection-Examples-Begin -->
@@ -2013,54 +2138,6 @@ Tamper protection helps protect important security features from unwanted change
 <!-- Device-Configuration-TamperProtection-Examples-End -->
 
 <!-- Device-Configuration-TamperProtection-End -->
-
-<!-- Device-Configuration-TDTFeatureEnabled-Begin -->
-### Configuration/TDTFeatureEnabled
-
-<!-- Device-Configuration-TDTFeatureEnabled-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
-<!-- Device-Configuration-TDTFeatureEnabled-Applicability-End -->
-
-<!-- Device-Configuration-TDTFeatureEnabled-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Defender/Configuration/TDTFeatureEnabled
-```
-<!-- Device-Configuration-TDTFeatureEnabled-OmaUri-End -->
-
-<!-- Device-Configuration-TDTFeatureEnabled-Description-Begin -->
-This policy setting configures the integration level for Intel TDT integration for Intel TDT-capable devices.
-<!-- Device-Configuration-TDTFeatureEnabled-Description-End -->
-
-<!-- Device-Configuration-TDTFeatureEnabled-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Configuration-TDTFeatureEnabled-Editable-End -->
-
-<!-- Device-Configuration-TDTFeatureEnabled-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- Device-Configuration-TDTFeatureEnabled-DFProperties-End -->
-
-<!-- Device-Configuration-TDTFeatureEnabled-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | If you do not configure this setting, the default value will be applied. The default value is set to control by signatures. TDT will be enabled based on particular signatures that are released by Microsoft. |
-| 2 | If you configure this setting to disabled, Intel TDT integration will be turned off. |
-<!-- Device-Configuration-TDTFeatureEnabled-AllowedValues-End -->
-
-<!-- Device-Configuration-TDTFeatureEnabled-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Configuration-TDTFeatureEnabled-Examples-End -->
-
-<!-- Device-Configuration-TDTFeatureEnabled-End -->
 
 <!-- Device-Configuration-ThrottleForScheduledScanOnly-Begin -->
 ### Configuration/ThrottleForScheduledScanOnly
@@ -2078,6 +2155,7 @@ This policy setting configures the integration level for Intel TDT integration f
 <!-- Device-Configuration-ThrottleForScheduledScanOnly-OmaUri-End -->
 
 <!-- Device-Configuration-ThrottleForScheduledScanOnly-Description-Begin -->
+<!-- Description-Source-DDF -->
 A CPU usage limit can be applied to scheduled scans only, or to scheduled and custom scans. The default value applies a CPU usage limit to scheduled scans only.
 <!-- Device-Configuration-ThrottleForScheduledScanOnly-Description-End -->
 
@@ -2126,6 +2204,7 @@ A CPU usage limit can be applied to scheduled scans only, or to scheduled and cu
 <!-- Device-Detections-OmaUri-End -->
 
 <!-- Device-Detections-Description-Begin -->
+<!-- Description-Source-DDF -->
 An interior node to group all threats detected by Windows Defender.
 <!-- Device-Detections-Description-End -->
 
@@ -2164,6 +2243,7 @@ An interior node to group all threats detected by Windows Defender.
 <!-- Device-Detections-{ThreatId}-OmaUri-End -->
 
 <!-- Device-Detections-{ThreatId}-Description-Begin -->
+<!-- Description-Source-DDF -->
 The ID of a threat that has been detected by Windows Defender.
 <!-- Device-Detections-{ThreatId}-Description-End -->
 
@@ -2203,7 +2283,8 @@ The ID of a threat that has been detected by Windows Defender.
 <!-- Device-Detections-{ThreatId}-Category-OmaUri-End -->
 
 <!-- Device-Detections-{ThreatId}-Category-Description-Begin -->
-Threat category ID.  Supported values:
+<!-- Description-Source-DDF -->
+Threat category ID. Supported values:
 
 | Value | Description |
 |:--|:--|
@@ -2294,6 +2375,7 @@ Threat category ID.  Supported values:
 <!-- Device-Detections-{ThreatId}-CurrentStatus-OmaUri-End -->
 
 <!-- Device-Detections-{ThreatId}-CurrentStatus-Description-Begin -->
+<!-- Description-Source-DDF -->
 Information about the current status of the threat. The following list shows the supported values:
 
 | Value | Description |
@@ -2346,6 +2428,7 @@ Information about the current status of the threat. The following list shows the
 <!-- Device-Detections-{ThreatId}-ExecutionStatus-OmaUri-End -->
 
 <!-- Device-Detections-{ThreatId}-ExecutionStatus-Description-Begin -->
+<!-- Description-Source-DDF -->
 Information about the execution status of the threat.
 <!-- Device-Detections-{ThreatId}-ExecutionStatus-Description-End -->
 
@@ -2384,6 +2467,7 @@ Information about the execution status of the threat.
 <!-- Device-Detections-{ThreatId}-InitialDetectionTime-OmaUri-End -->
 
 <!-- Device-Detections-{ThreatId}-InitialDetectionTime-Description-Begin -->
+<!-- Description-Source-DDF -->
 The first time this particular threat was detected.
 <!-- Device-Detections-{ThreatId}-InitialDetectionTime-Description-End -->
 
@@ -2422,6 +2506,7 @@ The first time this particular threat was detected.
 <!-- Device-Detections-{ThreatId}-LastThreatStatusChangeTime-OmaUri-End -->
 
 <!-- Device-Detections-{ThreatId}-LastThreatStatusChangeTime-Description-Begin -->
+<!-- Description-Source-DDF -->
 The last time this particular threat was changed.
 <!-- Device-Detections-{ThreatId}-LastThreatStatusChangeTime-Description-End -->
 
@@ -2460,6 +2545,7 @@ The last time this particular threat was changed.
 <!-- Device-Detections-{ThreatId}-Name-OmaUri-End -->
 
 <!-- Device-Detections-{ThreatId}-Name-Description-Begin -->
+<!-- Description-Source-DDF -->
 The name of the specific threat.
 <!-- Device-Detections-{ThreatId}-Name-Description-End -->
 
@@ -2498,6 +2584,7 @@ The name of the specific threat.
 <!-- Device-Detections-{ThreatId}-NumberOfDetections-OmaUri-End -->
 
 <!-- Device-Detections-{ThreatId}-NumberOfDetections-Description-Begin -->
+<!-- Description-Source-DDF -->
 Number of times this threat has been detected on a particular client.
 <!-- Device-Detections-{ThreatId}-NumberOfDetections-Description-End -->
 
@@ -2536,6 +2623,7 @@ Number of times this threat has been detected on a particular client.
 <!-- Device-Detections-{ThreatId}-Severity-OmaUri-End -->
 
 <!-- Device-Detections-{ThreatId}-Severity-Description-Begin -->
+<!-- Description-Source-DDF -->
 Threat severity ID. The following list shows the supported values:
 
 | Value | Description |
@@ -2582,6 +2670,7 @@ Threat severity ID. The following list shows the supported values:
 <!-- Device-Detections-{ThreatId}-URL-OmaUri-End -->
 
 <!-- Device-Detections-{ThreatId}-URL-Description-Begin -->
+<!-- Description-Source-DDF -->
 URL link for additional threat information.
 <!-- Device-Detections-{ThreatId}-URL-Description-End -->
 
@@ -2620,6 +2709,7 @@ URL link for additional threat information.
 <!-- Device-Health-OmaUri-End -->
 
 <!-- Device-Health-Description-Begin -->
+<!-- Description-Source-DDF -->
 An interior node to group information about Windows Defender health status.
 <!-- Device-Health-Description-End -->
 
@@ -2658,6 +2748,7 @@ An interior node to group information about Windows Defender health status.
 <!-- Device-Health-ComputerState-OmaUri-End -->
 
 <!-- Device-Health-ComputerState-Description-Begin -->
+<!-- Description-Source-DDF -->
 Provide the current state of the device. The following list shows the supported values:
 
 | Value | Description |
@@ -2705,6 +2796,7 @@ Provide the current state of the device. The following list shows the supported 
 <!-- Device-Health-DefenderEnabled-OmaUri-End -->
 
 <!-- Device-Health-DefenderEnabled-Description-Begin -->
+<!-- Description-Source-DDF -->
 Indicates whether the Windows Defender service is running.
 <!-- Device-Health-DefenderEnabled-Description-End -->
 
@@ -2743,6 +2835,7 @@ Indicates whether the Windows Defender service is running.
 <!-- Device-Health-DefenderVersion-OmaUri-End -->
 
 <!-- Device-Health-DefenderVersion-Description-Begin -->
+<!-- Description-Source-DDF -->
 Version number of Windows Defender on the device.
 <!-- Device-Health-DefenderVersion-Description-End -->
 
@@ -2781,6 +2874,7 @@ Version number of Windows Defender on the device.
 <!-- Device-Health-EngineVersion-OmaUri-End -->
 
 <!-- Device-Health-EngineVersion-Description-Begin -->
+<!-- Description-Source-DDF -->
 Version number of the current Windows Defender engine on the device.
 <!-- Device-Health-EngineVersion-Description-End -->
 
@@ -2819,6 +2913,7 @@ Version number of the current Windows Defender engine on the device.
 <!-- Device-Health-FullScanOverdue-OmaUri-End -->
 
 <!-- Device-Health-FullScanOverdue-Description-Begin -->
+<!-- Description-Source-DDF -->
 Indicates whether a Windows Defender full scan is overdue for the device. A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and catchup Full scans are disabled (default).
 <!-- Device-Health-FullScanOverdue-Description-End -->
 
@@ -2857,6 +2952,7 @@ Indicates whether a Windows Defender full scan is overdue for the device. A Full
 <!-- Device-Health-FullScanRequired-OmaUri-End -->
 
 <!-- Device-Health-FullScanRequired-Description-Begin -->
+<!-- Description-Source-DDF -->
 Indicates whether a Windows Defender full scan is required.
 <!-- Device-Health-FullScanRequired-Description-End -->
 
@@ -2895,6 +2991,7 @@ Indicates whether a Windows Defender full scan is required.
 <!-- Device-Health-FullScanSigVersion-OmaUri-End -->
 
 <!-- Device-Health-FullScanSigVersion-Description-Begin -->
+<!-- Description-Source-DDF -->
 Signature version used for the last full scan of the device.
 <!-- Device-Health-FullScanSigVersion-Description-End -->
 
@@ -2933,6 +3030,7 @@ Signature version used for the last full scan of the device.
 <!-- Device-Health-FullScanTime-OmaUri-End -->
 
 <!-- Device-Health-FullScanTime-Description-Begin -->
+<!-- Description-Source-DDF -->
 Time of the last Windows Defender full scan of the device.
 <!-- Device-Health-FullScanTime-Description-End -->
 
@@ -2971,6 +3069,7 @@ Time of the last Windows Defender full scan of the device.
 <!-- Device-Health-IsVirtualMachine-OmaUri-End -->
 
 <!-- Device-Health-IsVirtualMachine-Description-Begin -->
+<!-- Description-Source-DDF -->
 Indicates whether the device is a virtual machine.
 <!-- Device-Health-IsVirtualMachine-Description-End -->
 
@@ -3009,6 +3108,7 @@ Indicates whether the device is a virtual machine.
 <!-- Device-Health-NisEnabled-OmaUri-End -->
 
 <!-- Device-Health-NisEnabled-Description-Begin -->
+<!-- Description-Source-DDF -->
 Indicates whether network protection is running.
 <!-- Device-Health-NisEnabled-Description-End -->
 
@@ -3047,6 +3147,7 @@ Indicates whether network protection is running.
 <!-- Device-Health-ProductStatus-OmaUri-End -->
 
 <!-- Device-Health-ProductStatus-Description-Begin -->
+<!-- Description-Source-DDF -->
 Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list. Supported product status values:
 
 | Value | Description |
@@ -3131,6 +3232,7 @@ Provide the current state of the product. This is a bitmask flag value that can 
 <!-- Device-Health-QuickScanOverdue-OmaUri-End -->
 
 <!-- Device-Health-QuickScanOverdue-Description-Begin -->
+<!-- Description-Source-DDF -->
 Indicates whether a Windows Defender quick scan is overdue for the device. A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and catchup Quick scans are disabled (default).
 <!-- Device-Health-QuickScanOverdue-Description-End -->
 
@@ -3169,6 +3271,7 @@ Indicates whether a Windows Defender quick scan is overdue for the device. A Qui
 <!-- Device-Health-QuickScanSigVersion-OmaUri-End -->
 
 <!-- Device-Health-QuickScanSigVersion-Description-Begin -->
+<!-- Description-Source-DDF -->
 Signature version used for the last quick scan of the device.
 <!-- Device-Health-QuickScanSigVersion-Description-End -->
 
@@ -3207,6 +3310,7 @@ Signature version used for the last quick scan of the device.
 <!-- Device-Health-QuickScanTime-OmaUri-End -->
 
 <!-- Device-Health-QuickScanTime-Description-Begin -->
+<!-- Description-Source-DDF -->
 Time of the last Windows Defender quick scan of the device.
 <!-- Device-Health-QuickScanTime-Description-End -->
 
@@ -3245,6 +3349,7 @@ Time of the last Windows Defender quick scan of the device.
 <!-- Device-Health-RebootRequired-OmaUri-End -->
 
 <!-- Device-Health-RebootRequired-Description-Begin -->
+<!-- Description-Source-DDF -->
 Indicates whether a device reboot is needed.
 <!-- Device-Health-RebootRequired-Description-End -->
 
@@ -3283,6 +3388,7 @@ Indicates whether a device reboot is needed.
 <!-- Device-Health-RtpEnabled-OmaUri-End -->
 
 <!-- Device-Health-RtpEnabled-Description-Begin -->
+<!-- Description-Source-DDF -->
 Indicates whether real-time protection is running.
 <!-- Device-Health-RtpEnabled-Description-End -->
 
@@ -3321,6 +3427,7 @@ Indicates whether real-time protection is running.
 <!-- Device-Health-SignatureOutOfDate-OmaUri-End -->
 
 <!-- Device-Health-SignatureOutOfDate-Description-Begin -->
+<!-- Description-Source-DDF -->
 Indicates whether the Windows Defender signature is outdated.
 <!-- Device-Health-SignatureOutOfDate-Description-End -->
 
@@ -3359,6 +3466,7 @@ Indicates whether the Windows Defender signature is outdated.
 <!-- Device-Health-SignatureVersion-OmaUri-End -->
 
 <!-- Device-Health-SignatureVersion-Description-Begin -->
+<!-- Description-Source-DDF -->
 Version number of the current Windows Defender signatures on the device.
 <!-- Device-Health-SignatureVersion-Description-End -->
 
@@ -3397,6 +3505,7 @@ Version number of the current Windows Defender signatures on the device.
 <!-- Device-Health-TamperProtectionEnabled-OmaUri-End -->
 
 <!-- Device-Health-TamperProtectionEnabled-Description-Begin -->
+<!-- Description-Source-DDF -->
 Indicates whether the Windows Defender tamper protection feature is enabled.
 <!-- Device-Health-TamperProtectionEnabled-Description-End -->
 
@@ -3435,6 +3544,7 @@ Indicates whether the Windows Defender tamper protection feature is enabled.
 <!-- Device-OfflineScan-OmaUri-End -->
 
 <!-- Device-OfflineScan-Description-Begin -->
+<!-- Description-Source-DDF -->
 OfflineScan action starts a Microsoft Defender Offline scan on the computer where you run the command. After the next OS reboot, the device will start in Microsoft Defender Offline mode to begin the scan.
 <!-- Device-OfflineScan-Description-End -->
 
@@ -3474,6 +3584,7 @@ OfflineScan action starts a Microsoft Defender Offline scan on the computer wher
 <!-- Device-RollbackEngine-OmaUri-End -->
 
 <!-- Device-RollbackEngine-Description-Begin -->
+<!-- Description-Source-DDF -->
 RollbackEngine action rolls back Microsoft Defender engine to it's last known good saved version on the computer where you run the command.
 <!-- Device-RollbackEngine-Description-End -->
 
@@ -3513,6 +3624,7 @@ RollbackEngine action rolls back Microsoft Defender engine to it's last known go
 <!-- Device-RollbackPlatform-OmaUri-End -->
 
 <!-- Device-RollbackPlatform-Description-Begin -->
+<!-- Description-Source-DDF -->
 RollbackPlatform action rolls back Microsoft Defender to it's last known good installation location on the computer where you run the command.
 <!-- Device-RollbackPlatform-Description-End -->
 
@@ -3552,6 +3664,7 @@ RollbackPlatform action rolls back Microsoft Defender to it's last known good in
 <!-- Device-Scan-OmaUri-End -->
 
 <!-- Device-Scan-Description-Begin -->
+<!-- Description-Source-DDF -->
 Node that can be used to start a Windows Defender scan on a device.
 <!-- Device-Scan-Description-End -->
 
@@ -3573,8 +3686,8 @@ Node that can be used to start a Windows Defender scan on a device.
 
 | Value | Description |
 |:--|:--|
-| 1 | quick scan |
-| 2 | full scan |
+| 1 | Quick scan. |
+| 2 | Full scan. |
 <!-- Device-Scan-AllowedValues-End -->
 
 <!-- Device-Scan-Examples-Begin -->
@@ -3599,6 +3712,7 @@ Node that can be used to start a Windows Defender scan on a device.
 <!-- Device-UpdateSignature-OmaUri-End -->
 
 <!-- Device-UpdateSignature-Description-Begin -->
+<!-- Description-Source-DDF -->
 Node that can be used to perform signature updates for Windows Defender.
 <!-- Device-UpdateSignature-Description-End -->
 

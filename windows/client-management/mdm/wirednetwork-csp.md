@@ -4,7 +4,7 @@ description: Learn more about the WiredNetwork CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/16/2023
+ms.date: 02/17/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -91,7 +91,7 @@ Enable block period (minutes), used to specify the duration for which automatic 
 
 <!-- Device-LanXML-Description-Begin -->
 <!-- Description-Source-DDF -->
-XML describing the wired network configuration and follows the LAN_profile schemas <https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx>.
+XML describing the wired network configuration and follows the LAN_profile schemas <https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx>
 <!-- Device-LanXML-Description-End -->
 
 <!-- Device-LanXML-Editable-Begin -->
@@ -170,7 +170,7 @@ Enable block period (minutes), used to specify the duration for which automatic 
 
 <!-- User-LanXML-Description-Begin -->
 <!-- Description-Source-DDF -->
-XML describing the wired network configuration and follows the LAN_profile schemas <https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx>.
+XML describing the wired network configuration and follows the LAN_profile schemas <https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx>
 <!-- User-LanXML-Description-End -->
 
 <!-- User-LanXML-Editable-Begin -->

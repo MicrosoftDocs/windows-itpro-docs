@@ -678,7 +678,7 @@ items:
     - name: DeviceStatus
       href: devicestatus-csp.md
       items:
-      - name: DeviceStatus DDF
+      - name: DeviceStatus DDF file
         href: devicestatus-ddf.md
     - name: DevInfo
       href: devinfo-csp.md
