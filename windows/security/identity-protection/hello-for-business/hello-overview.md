@@ -3,6 +3,7 @@ title: Windows Hello for Business Overview (Windows)
 description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices in Windows 10 and Windows 11.
 ms.collection: 
   - highpri
+  - tier1
 ms.topic: conceptual
 appliesto: 
   - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>

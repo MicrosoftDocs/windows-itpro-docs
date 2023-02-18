@@ -11,6 +11,7 @@ manager: aaroncz
 ms.technology: itpro-security
 ms.collection: 
   - highpri
+  - tier2
 ms.date: 12/31/2017
 ms.topic: article
 ---

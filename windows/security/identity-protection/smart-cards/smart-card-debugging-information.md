@@ -8,6 +8,7 @@ ms.reviewer: ardenw
 manager: aaroncz
 ms.collection: 
   - highpri
+  - tier2
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/24/2021
