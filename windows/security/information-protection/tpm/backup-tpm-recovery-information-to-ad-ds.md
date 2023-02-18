@@ -14,7 +14,7 @@ ms.technology: itpro-security
 # Back up the TPM recovery information to AD DS
 
 **Applies to**
--   Windows 10
+-   Windows 10
 -   Windows 11
 -   Windows Server 2016 and above
 
@@ -22,7 +22,7 @@ ms.technology: itpro-security
 
 -   Windows 10, version 1607 or later
 
-With Windows 10, versions 1511 and 1507, or Windows 11, you can back up a computer’s Trusted Platform Module (TPM) information to Active Directory Domain Services (AD DS). By doing this, you can use AD DS to administer the TPM from a remote computer. The procedure is the same as it was for Windows 8.1. For more information, see [Backup the TPM Recovery Information to AD DS](/previous-versions/windows/it-pro/windows-8.1-and-8/dn466534(v=ws.11)).
+With Windows 10, versions 1511 and 1507, or Windows 11, you can back up a computer's Trusted Platform Module (TPM) information to Active Directory Domain Services (AD DS). By doing this, you can use AD DS to administer the TPM from a remote computer. The procedure is the same as it was for Windows 8.1. For more information, see [Backup the TPM Recovery Information to AD DS](/previous-versions/windows/it-pro/windows-8.1-and-8/dn466534(v=ws.11)).
 
 ## Related topics
 
