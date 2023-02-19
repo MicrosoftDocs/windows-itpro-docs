@@ -8,6 +8,7 @@ ms.author: frankroj
 manager: aaroncz
 ms.collection: 
   - highpri
+  - tier1
 ms.topic: conceptual
 ms.date: 11/08/2022
 ms.custom: bitlocker

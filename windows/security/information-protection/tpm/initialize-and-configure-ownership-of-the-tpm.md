@@ -8,6 +8,7 @@ ms.author: dansimp
 manager: aaroncz
 ms.collection: 
   - highpri
+  - tier1
 ms.topic: conceptual
 ms.date: 09/06/2021
 ms.technology: itpro-security
@@ -71,7 +72,7 @@ You can use the Windows Defender Security Center app to clear the TPM as a troub
 Clearing the TPM resets it to an unowned state. After you clear the TPM, the Windows operating system will automatically re-initialize it and take ownership again.
 
 > [!WARNING]
-> Clearing the TPM can result in data loss. For more information, see the next section, “Precautions to take before clearing the TPM.”
+> Clearing the TPM can result in data loss. For more information, see the next section, "Precautions to take before clearing the TPM."
 
 ### Precautions to take before clearing the TPM
 

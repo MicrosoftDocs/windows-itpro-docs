@@ -1,12 +1,13 @@
 ---
 title: Kernel DMA Protection (Windows)
-description: Kernel DMA Protection protects PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to Thunderbolt™ 3 ports.
+description: Kernel DMA Protection protects PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to Thunderbolt&trade; 3 ports.
 ms.prod: windows-client
 author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
 ms.collection: 
   - highpri
+  - tier1
 ms.topic: conceptual
 ms.date: 01/05/2023
 ms.technology: itpro-security
@@ -18,7 +19,7 @@ ms.technology: itpro-security
 -   Windows 10
 -   Windows 11
 
-In Windows 10 version 1803, Microsoft introduced a new feature called Kernel DMA Protection to protect PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to externally accessible PCIe ports (for example, Thunderbolt™ 3 ports and CFexpress). In Windows 10 version 1903, Microsoft expanded the Kernel DMA Protection support to cover internal PCIe ports (for example, M.2 slots)
+In Windows 10 version 1803, Microsoft introduced a new feature called Kernel DMA Protection to protect PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to externally accessible PCIe ports (for example, Thunderbolt&trade; 3 ports and CFexpress). In Windows 10 version 1903, Microsoft expanded the Kernel DMA Protection support to cover internal PCIe ports (for example, M.2 slots)
 
 Drive-by DMA attacks can lead to disclosure of sensitive information residing on a PC, or even injection of malware that allows attackers to bypass the lock screen or control PCs remotely.
 
@@ -32,9 +33,9 @@ The DMA capability is what makes PCI devices the highest performing devices avai
 These devices have historically existed only inside the PC chassis, either connected as a card or soldered on the motherboard. 
 Access to these devices required the user to turn off power to the system and disassemble the chassis. 
 
-Today, this is no longer the case with hot plug PCIe ports (for example, Thunderbolt™ and CFexpress). 
+Today, this is no longer the case with hot plug PCIe ports (for example, Thunderbolt&trade; and CFexpress). 
 
-Hot plug PCIe ports such as Thunderbolt™ technology have provided modern PCs with extensibility that wasn't available before for PCs. 
+Hot plug PCIe ports such as Thunderbolt&trade; technology have provided modern PCs with extensibility that wasn't available before for PCs. 
 It allows users to attach new classes of external peripherals, such as graphics cards or other PCI devices, to their PCs with a hot plug experience identical to USB. 
 Having PCI hot plug ports externally and easily accessible makes PCs susceptible to drive-by DMA attacks.
 
@@ -102,15 +103,15 @@ Beginning with Windows 10 version 1809, you can use the Windows Security app to 
 
 4. If the state of **Kernel DMA Protection** remains Off, then the system does not support this feature. 
 
-   For systems that do not support Kernel DMA Protection, please refer to the [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md) or [Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating system](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf) for other means of DMA protection.
+   For systems that do not support Kernel DMA Protection, please refer to the [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md) or [Thunderbolt&trade; 3 and Security on Microsoft Windows&reg; 10 Operating system](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf) for other means of DMA protection.
 
 ## Frequently asked questions
 
-### Do in-market systems support Kernel DMA Protection for Thunderbolt™ 3?
-In-market systems, released with Windows 10 version 1709 or earlier, will not support Kernel DMA Protection for Thunderbolt™ 3 after upgrading to Windows 10 version 1803, as this feature requires the BIOS/platform firmware changes and guarantees that cannot be backported to previously released devices. For these systems, please refer to the [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md) or [Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating system](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf) for other means of DMA protection.
+### Do in-market systems support Kernel DMA Protection for Thunderbolt&trade; 3?
+In-market systems, released with Windows 10 version 1709 or earlier, will not support Kernel DMA Protection for Thunderbolt&trade; 3 after upgrading to Windows 10 version 1803, as this feature requires the BIOS/platform firmware changes and guarantees that cannot be backported to previously released devices. For these systems, please refer to the [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md) or [Thunderbolt&trade; 3 and Security on Microsoft Windows&reg; 10 Operating system](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf) for other means of DMA protection.
 
 ### Does Kernel DMA Protection prevent drive-by DMA attacks during Boot?
-No, Kernel DMA Protection only protects against drive-by DMA attacks after the OS is loaded. It is the responsibility of the system firmware/BIOS to protect against attacks via the Thunderbolt™ 3 ports during boot. 
+No, Kernel DMA Protection only protects against drive-by DMA attacks after the OS is loaded. It is the responsibility of the system firmware/BIOS to protect against attacks via the Thunderbolt&trade; 3 ports during boot. 
 
 ### How can I check if a certain driver supports DMA-remapping?
 DMA-remapping is supported for specific device drivers, and is not universally supported by all devices and drivers on a platform. To check if a specific driver is opted into DMA-remapping, check the values corresponding to the DMA Remapping Policy property in the Details tab of a device in Device Manager*. A value of 0 or 1 means that the device driver does not support DMA-remapping. A value of two means that the device driver supports DMA-remapping. If the property is not available, then the policy is not set by the device driver (that is, the device driver does not support DMA-remapping).
@@ -122,7 +123,7 @@ Check the driver instance for the device you are testing. Some drivers may have 
 
 ![Experience of a user about Kernel DMA protection](images/device-details-tab.png)
 
-### When the drivers for PCI or Thunderbolt™ 3 peripherals do not support DMA-remapping?
+### When the drivers for PCI or Thunderbolt&trade; 3 peripherals do not support DMA-remapping?
 
 If the peripherals do have class drivers provided by Windows, use these drivers on your systems. If there are no class drivers provided by Windows for your peripherals, contact your peripheral vendor/driver vendor to update the driver to support [DMA Remapping](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers).
 

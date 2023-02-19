@@ -8,7 +8,9 @@ manager: aaroncz
 ms.localizationpriority: medium
 ms.date: 03/28/2022
 ms.topic: article
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-manage
 ---
 
