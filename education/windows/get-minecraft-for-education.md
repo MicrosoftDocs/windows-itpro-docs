@@ -15,19 +15,13 @@ ms.collection:
 
 Minecraft Education is a game-based platform that inspires creative, inclusive learning through play. Explore blocky worlds that unlock new ways to tackle any subject or challenge. Dive into subjects like reading, math, history, and coding with lessons and standardized curriculum designed for all types of learners. Or explore and build together in creative open worlds.
 
-### Use it your way
+**Use it your way**: with hundreds of ready-to-teach lessons, creative challenges, and blank canvas worlds, there are lots of ways to make Minecraft Education work for your students. It's easy to get started, no gaming experience necessary.
 
-With hundreds of ready-to-teach lessons, creative challenges, and blank canvas worlds, there are lots of ways to make Minecraft Education work for your students. It's easy to get started, no gaming experience necessary.  
+**Prepare students for the future**: learners develop key skills like problem solving, collaboration, digital citizenship, and critical thinking to help them thrive now and in the future workplace. Spark a passion for STEM.
 
-### Prepare students for the future
+**Game based learning**: unlock creativity and deep learning with immersive content created with partners including BBC Earth, NASA, and the Nobel Peace Center. Inspire students to engage in real-world topics with culturally relevant lessons and build challenges.  
 
-Learners develop key skills like problem solving, collaboration, digital citizenship, and critical thinking to help them thrive now and in the future workplace. Spark a passion for STEM.
-
-### Game based learning
-
-Unlock creativity and deep learning with immersive content created with partners including BBC Earth, NASA, and the Nobel Peace Center. Inspire students to engage in real-world topics with culturally relevant lessons and build challenges.  
-
-### Key features
+## Minecraft Education key features
 
 - Multiplayer mode enables collaboration in-game across platforms, devices, and hybrid environments  
 - Code Builder supports block-based coding, JavaScript, and Python with intuitive interface and in-game execution  
