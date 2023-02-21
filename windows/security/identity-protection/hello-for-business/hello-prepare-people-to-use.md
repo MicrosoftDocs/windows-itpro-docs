@@ -52,6 +52,6 @@ If your policy allows it, people can use biometrics (fingerprint, iris, and faci
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Event ID 300 - Windows Hello successfully created](/windows/security/identity-protection/hello-for-business/hello-faq)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
 
