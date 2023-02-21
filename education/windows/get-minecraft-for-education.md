@@ -125,7 +125,7 @@ Intune will install Minecraft Education at the next device check-in, or will mak
 
 For more information how to deploy Minecraft Education, see:
 
-- [Windows installation guide][EDU-6]]
+- [Windows installation guide][EDU-6]
 - [Chromebook installation guide][EDU-7]
 - [iOS installation guide][EDU-8]
 - [macOS installation guide][EDU-9]
