@@ -27,7 +27,7 @@ Describes the best practices, location, values, management, and security conside
 
 ## Reference
 
-This setting prevents using the **Settings** app to add a Microsoft account for single sign-on (SSO) authentication for Microsoft services and some background services, or using a Microsoft account for single sign-on to other applications or services. For more information, see [Microsoft Accounts](../../identity-protection/access-control/microsoft-accounts.md).
+This setting prevents using the **Settings** app to add a Microsoft account for single sign-on (SSO) authentication for Microsoft services and some background services, or using a Microsoft account for single sign-on to other applications or services. For more information, see [Microsoft Accounts](/windows-server/identity/ad-ds/manage/understand-microsoft-accounts).
 
 There are two options if this setting is enabled:
 
