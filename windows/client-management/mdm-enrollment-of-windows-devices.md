@@ -1,17 +1,19 @@
 ---
 title: MDM enrollment of Windows 10-based devices
 description: Learn about mobile device management (MDM) enrollment of Windows 10-based devices to simplify access to your organization’s resources.
-MS-HAID: 
+MS-HAID:
   - 'p\_phdevicemgmt.enrollment\_ui'
   - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
 ms.date: 12/31/2017
 ---
 
@@ -35,7 +37,7 @@ Devices running Windows 10 Pro, Windows 10 Enterprise, or Windows 10 Educatio
 > [!NOTE]
 > Mobile devices can't be connected to an Active Directory domain.
 
-### Out-of-box-experience 
+### Out-of-box-experience
 
 Joining your device to an Active Directory domain during the out-of-box-experience (OOBE) isn't supported. To join a domain:
 
@@ -90,7 +92,7 @@ There are a few instances where your device can't be connected to an Active Dire
 | You're logged in as a standard user.                           | Your device can only be connected to an Azure AD domain if you're logged in as an administrative user. You’ll need to switch to an administrator account to continue.                                                    |
 | Your device is running Windows 10 Home.                         | This feature isn't available on Windows 10 Home, so you'll be unable to connect to an Active Directory domain. You'll need to upgrade to Windows 10 Pro, Windows 10 Enterprise, or Windows 10 Education to continue. |
 
- 
+
 
 ### Connect your device to an Azure AD domain (join Azure AD)
 
@@ -167,9 +169,9 @@ There are a few instances where your device can't be connected to an Azure AD do
 | Your device is already managed by MDM.                          | The connect to Azure AD flow will attempt to enroll your device into MDM if your Azure AD tenant has a preconfigured MDM endpoint. Your device must be unenrolled from MDM to be able to connect to Azure AD in this case. |
 | Your device is running Windows 10 Home.                         | This feature isn't available on Windows 10 Home, so you'll be unable to connect to an Azure AD domain. You'll need to upgrade to Windows 10 Pro, Windows 10 Enterprise, or Windows 10 Education to continue.          |
 
- 
 
-## Connect personally owned devices 
+
+## Connect personally owned devices
 
 
 Personally owned devices, also known as bring your own device (BYOD), can be connected to a work or school account, or to MDM. Windows 10 doesn't require a personal Microsoft account on devices to connect to work or school.
@@ -247,7 +249,7 @@ To create a local account and connect the device:
    ![screen to set up your device](images/unifiedenrollment-rs1-33-b.png)
 
    After you complete the flow, your device will be connected to your organization’s MDM.
-   
+
 ### Help with connecting personally owned devices
 
 There are a few instances where your device may not be able to connect to work.
@@ -260,7 +262,7 @@ There are a few instances where your device may not be able to connect to work.
 | You don’t have the right privileges to perform this operation. Talk to your admin.                                                                                                  | You can't enroll your device into MDM as a standard user. You must be on an administrator account. |
 | We couldn’t auto-discover a management endpoint matching the username entered. Check your username and try again. If you know the URL to your management endpoint, enter it. | You need to provide the server URL for your MDM or check the spelling of the username you entered.  |
 
- 
+
 ## Connect your Windows 10-based device to work using a deep link
 
 
@@ -283,13 +285,13 @@ The deep link used for connecting your device to work will always use the follow
 | ownership | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used to determine whether the device is BYOD or Corp Owned. Added in Windows 10, version 1703. | 1, 2, or 3. Where "1" means ownership is unknown, "2" means the device is personally owned, and "3" means the device is corporate-owned |
 
 > [!NOTE]
-> AWA and Azure Active Directory-joined values for mode are only supported on Windows 10, version 1709 and later. 
+> AWA and Azure Active Directory-joined values for mode are only supported on Windows 10, version 1709 and later.
 
 ### Connect to MDM using a deep link
 
 > [!NOTE]
 > Deep links only work with Internet Explorer or Microsoft Edge browsers. Examples of URI's that may be used to connect to MDM using a deep link:
-> 
+>
 > - **ms-device-enrollment:?mode=mdm**
 > - **ms-device-enrollment:?mode=mdm&username=`someone@example.com`&servername=`https://example.server.com`**
 
@@ -342,7 +344,7 @@ Starting in Windows 10, version 1709, selecting the **Info** button will show a 
 ![work or school info.](images/unifiedenrollment-rs1-35-b.png)
 
 > [!NOTE]
-> Starting in Windows 10, version 1709, the **Manage** button is no longer available. 
+> Starting in Windows 10, version 1709, the **Manage** button is no longer available.
 
 ### Disconnect
 
@@ -363,7 +365,7 @@ Starting in Windows 10, version 1709, you can get the advanced diagnostic report
 
 ![collecting enrollment management log files.](images/unifiedenrollment-rs1-37-c.png)
 
- 
+
 
 
 

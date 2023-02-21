@@ -5,8 +5,9 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 author: dansimp
 manager: aaroncz
-ms.collection: 
+ms.collection:
   - highpri
+  - tier1
 ms.topic: conceptual
 ms.date: 05/12/2022
 ms.author: dansimp

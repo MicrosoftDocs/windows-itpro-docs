@@ -212,9 +212,9 @@ For a change operation, you'll typically see two 5136 events for one action, wit
 
 -   **Type** \[Type = UnicodeString\]**:** type of performed operation.
 
-    -   **Value Added** – new value added.
+    -   **Value Added** – new value added ('%%14674')
 
-    -   **Value Deleted** – value deleted (typically “Value Deleted” is a part of change operation).
+    -   **Value Deleted** – value deleted ('%%14675', typically “Value Deleted” is a part of change operation).
 
 <!-- -->
 
@@ -237,3 +237,4 @@ For 5136(S): A directory service object was modified.
 -   If you need to monitor modifications to specific Active Directory attributes, monitor for **LDAP Display Name** field with specific attribute name.
 
 -   It's better to monitor **Operation\\Type = Value Added** events, because you'll see the new value of attribute. At the same time, you can correlate to previous **Operation\\Type = Value Deleted** event with the same **Correlation ID** to see the previous value.
+   
