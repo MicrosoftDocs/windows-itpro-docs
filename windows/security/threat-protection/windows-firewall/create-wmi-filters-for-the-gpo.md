@@ -9,6 +9,7 @@ author: paolomatarazzo
 manager: aaroncz
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.technology: itpro-security

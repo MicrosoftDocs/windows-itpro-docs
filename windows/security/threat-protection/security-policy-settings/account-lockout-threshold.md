@@ -14,6 +14,7 @@ manager: aaroncz
 audience: ITPro
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.technology: itpro-security
@@ -34,7 +35,7 @@ The **Account lockout threshold** policy setting determines the number of failed
 Brute force password attacks can be automated to try thousands or even millions of password combinations for any or all user accounts. Limiting the number of failed sign-ins that can be performed nearly eliminates the effectiveness of such attacks.
 However, it's important to note that a denial-of-service (DoS) attack could be performed on a domain that has an account lockout threshold configured. A malicious user could programmatically attempt a series of password attacks against all users in the organization. If the number of attempts is greater than the value of **Account lockout threshold**, the attacker could potentially lock every account.
 
-Failed attempts to unlock a workstation can cause account lockout even if the [Interactive logon: Require Domain Controller authentication to unlock workstation](interactive-logon-require-domain-controller-authentication-to-unlock-workstation.md) security option is disabled. Windows doesn’t need to contact a domain controller for an unlock if you enter the same password that you logged on with, but if you enter a different password, Windows has to contact a domain controller in case you had changed your password from another machine.
+Failed attempts to unlock a workstation can cause account lockout even if the [Interactive logon: Require Domain Controller authentication to unlock workstation](interactive-logon-require-domain-controller-authentication-to-unlock-workstation.md) security option is disabled. Windows doesn't need to contact a domain controller for an unlock if you enter the same password that you logged on with, but if you enter a different password, Windows has to contact a domain controller in case you had changed your password from another machine.
 
 ### Possible values
 

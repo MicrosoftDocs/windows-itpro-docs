@@ -7,6 +7,7 @@ author: frankroj
 ms.author: frankroj
 manager: aaroncz
 ms.collection: 
+  - tier1
   - highpri
 ms.topic: conceptual
 ms.date: 11/08/2022

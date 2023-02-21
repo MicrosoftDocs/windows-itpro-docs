@@ -14,6 +14,7 @@ manager: aaroncz
 audience: ITPro
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: conceptual
 ms.technology: itpro-security
 ms.date: 12/31/2017
