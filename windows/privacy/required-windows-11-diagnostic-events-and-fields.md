@@ -6531,7 +6531,7 @@ The following fields are available:
 - **TargetUserFreeSpace**  The target user free space that was passed into the reserve manager to determine reserve sizing post upgrade.
 - **UpdateScratchFinalUsedSpace**  The used space in the scratch reserve.
 - **UpdateScratchInitialUsedSpace**  The utilization of the scratch reserve after initialization.
-- **UpdateScratchReserveFinalSize**  The utilization of the scratch reserve after initialization.
+- **UpdateScratchReserveFinalSize**  The final size of the scratch reserve.
 - **UpdateScratchReserveInitialSize**  The size of the scratch reserve after initialization.
 
 
