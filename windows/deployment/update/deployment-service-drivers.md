@@ -221,7 +221,7 @@ The following truncated response displays:
 
 ## Approve driver content for deployment
 
-Each driver update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). Approve content for drivers and firmware by adding a [content approval](/graph/api/resources/windowsupdates-contentapproval) for the catalog entry to an existing policy. Content approval is a [compliance change](/graph/api/resources/windowsupdates-compliance) for the policy.
+Each driver update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). Approve content for drivers and firmware by adding a [content approval](/graph/api/resources/windowsupdates-contentapproval) for the catalog entry to an existing policy. Content approval is a [compliance change](/graph/api/resources/windowsupdates-compliancechange) for the policy.
 
 > [!IMPORTANT]
 > Any [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings) configured for the content approval will be combined with the existing [update policy's](#create-an-update-policy) deployment settings. If the content approval and update policy specify the same deployment setting, the setting from the content approval is used.
@@ -277,7 +277,7 @@ Review all of the compliance changes to a policy with the most recent changes li
    ```
 
    > [!TIP]
-   > There should only be one **Compliance Change ID** per **Catalog ID** for a policy. If there are multiple **Compliance Change IDs** for the same **Catalog ID** then, most likely, there's multiple deployments for the same piece of content targeted to the same audience but with different deployment behaviors. To remove the duplicate, [delete the compliance change](/graph/api/resources/windowsupdates-compliancechange-delete) with the duplicate **Catalog ID**. Deleting the compliance change will mark any deployments created by the approval as `archived`.
+   > There should only be one **Compliance Change ID** per **Catalog ID** for a policy. If there are multiple **Compliance Change IDs** for the same **Catalog ID** then, most likely, there's multiple deployments for the same piece of content targeted to the same audience but with different deployment behaviors. To remove the duplicate, [delete the compliance change](/graph/api/windowsupdates-compliancechange-delete) with the duplicate **Catalog ID**. Deleting the compliance change will mark any deployments created by the approval as `archived`.
 
 To retrieve the deployment ID, use the [expand parameter](/graph/query-parameters#expand-parameter) to review the deployment information related the content approval. The following example displays the content approval and the deployment information for **Compliance Change ID** `c03911a7-9876-5432-10ab-cdef98765432` in update **Policy ID** `9011c330-1234-5678-9abc-def012345678`:
 
@@ -287,7 +287,7 @@ To retrieve the deployment ID, use the [expand parameter](/graph/query-parameter
 
 ### Edit deployment settings for a content approval
 
-Since content approval is a compliance change for the policy, when you [update a content approval](/graph/api/resources/windowsupdates--contentapproval-update), you're editing the compliance change for the policy. The following example changes the `startDateTime` for the **Compliance Change ID** of `c03911a7-9876-5432-10ab-cdef98765432` in the update **Policy ID** `9011c330-1234-5678-9abc-def012345678` to February 28, 2023 at 5 AM UTC:
+Since content approval is a compliance change for the policy, when you [update a content approval](/g/graph/api/windowsupdates-contentapproval-update), you're editing the compliance change for the policy. The following example changes the `startDateTime` for the **Compliance Change ID** of `c03911a7-9876-5432-10ab-cdef98765432` in the update **Policy ID** `9011c330-1234-5678-9abc-def012345678` to February 28, 2023 at 5 AM UTC:
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges/c03911a7-9876-5432-10ab-cdef98765432
@@ -307,7 +307,7 @@ content-type: application/json
 
 ## Revoke content approval
 
-Approval for content can be revoked by setting the `isRevoked` property of the [compliance change](/graph/api/resources/windowsupdates-compliance) to true. This setting can be changed while a deployment is in progress. However, revoking will only prevent the content from being offered to devices if they haven't already received it. To resume offering the content, a new [approval](#approve-driver-content-for-deployment) will need to be created.
+Approval for content can be revoked by setting the `isRevoked` property of the [compliance change](/graph/api/resources/windowsupdates-compliancechange) to true. This setting can be changed while a deployment is in progress. However, revoking will only prevent the content from being offered to devices if they haven't already received it. To resume offering the content, a new [approval](#approve-driver-content-for-deployment) will need to be created.
 
 
 ```msgraph-interactive
