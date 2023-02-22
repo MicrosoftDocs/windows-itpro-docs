@@ -34,7 +34,7 @@ This article depicts the BitLocker deployment comparison chart.
 |*Cloud or on premises*      |     Cloud    |  On premises     |    On premises     |
 |Server components required?      |         |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::    |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::       |
 |*Additional agent required?*     |     No (device enrollment only)    |   Configuration Manager client      |     MBAM client    |
-|*Administrative plane*     | Microsoft Endpoint Manager admin center        |    Configuration Manager console     |    Group Policy Management Console and MBAM sites     |
+|*Administrative plane*     | Microsoft Intune admin center        |    Configuration Manager console     |    Group Policy Management Console and MBAM sites     |
 |*Administrative portal installation required*     |         |   :::image type="content" source="images/yes-icon.png" alt-text="supported.":::    |    :::image type="content" source="images/yes-icon.png" alt-text="supported.":::     |
 |*Compliance reporting capabilities*     |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::       |   :::image type="content" source="images/yes-icon.png" alt-text="supported.":::      |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::       |
 |*Force encryption*     |    :::image type="content" source="images/yes-icon.png" alt-text="supported.":::   |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::   | :::image type="content" source="images/yes-icon.png" alt-text="supported.":::       |

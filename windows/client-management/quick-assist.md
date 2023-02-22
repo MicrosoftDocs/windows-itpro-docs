@@ -122,13 +122,13 @@ For more information, visit [Install Quick Assist](https://support.microsoft.com
 
 Before installing Quick Assist, you'll need to set up synchronization between Intune and Microsoft Store for Business. If you've already set up sync, log into [Microsoft Store for Business](https://businessstore.microsoft.com) and skip to step 5.
 
-1. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Tenant administration** / **Connectors and tokens** / **Microsoft Store for Business** and verify that **Microsoft Store for Business sync** is set to **Enable**.
+1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Tenant administration** / **Connectors and tokens** / **Microsoft Store for Business** and verify that **Microsoft Store for Business sync** is set to **Enable**.
 1. Using your Global Admin account, log into [Microsoft Store for Business](https://businessstore.microsoft.com).
 1. Select **Manage** / **Settings** and turn on **Show offline apps**.
 1. Choose the **Distribute** tab and verify that **Microsoft Intune** is **Active**. You may need to use the **+Add management tool** link if it's not.
 1. Search for **Quick Assist** and select it from the Search results.
 1. Choose the **Offline** license and select **Get the app**
-1. In the Endpoint Manager admin center, choose **Sync**.
+1. In the Intune admin center, choose **Sync**.
 1. Navigate to **Apps** / **Windows** and you should see **Quick Assist (Offline)** in the list.
 1. Select it to view its properties. By default, the app won't be assigned to anyone or any devices, select the **Edit** link.
 1. Assign the app to the required group of devices and choose **Review + save** to complete the application install.

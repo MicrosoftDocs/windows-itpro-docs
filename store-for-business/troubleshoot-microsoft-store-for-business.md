@@ -21,7 +21,7 @@ ms.date: 07/21/2021
 -   Windows 10
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Endpoint Manager integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 Troubleshooting topics for Microsoft Store for Business.
 
@@ -53,7 +53,7 @@ The private store for your organization is a page in Microsoft Store app that co
 
     ![Private store for Contoso publishing.](images/wsfb-privatestoreapps.png)
 
-## Troubleshooting Microsoft Store for Business integration with Microsoft Endpoint Configuration Manager
+## Troubleshooting Microsoft Store for Business integration with Microsoft Configuration Manager
 
 If you encounter any problems when integrating Microsoft Store for Business with Configuration Manager, use the [troubleshooting guide](/troubleshoot/mem/configmgr/troubleshoot-microsoft-store-for-business-integration).
 
