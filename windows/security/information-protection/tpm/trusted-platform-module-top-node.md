@@ -2,24 +2,21 @@
 title: Trusted Platform Module (Windows)
 description: This topic for the IT professional provides links to information about the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication.
 ms.prod: windows-client
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: paolomatarazzo
+ms.author: paoloma
 manager: aaroncz
+ms.topic: conceptual
+ms.date: 02/02/2023
+ms.technology: itpro-security
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.collection: 
   - highpri
   - tier1
-ms.topic: conceptual
-ms.date: 09/06/2021
-ms.technology: itpro-security
 ---
 
 # Trusted Platform Module
-
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. The following topics provide details.
 

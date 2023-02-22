@@ -1,34 +1,29 @@
 ---
 title: Troubleshoot the TPM (Windows)
 description: This article for the IT professional describes how to view status for, clear, or troubleshoot the Trusted Platform Module (TPM).
-ms.reviewer: 
 ms.prod: windows-client
-author: dansimp
-ms.author: dansimp
+author: paolomatarazzo
+ms.author: paoloma
 manager: aaroncz
-ms.collection: 
-  - highpri
-  - tier1
 ms.topic: conceptual
-ms.date: 09/06/2021
+ms.date: 02/02/2023
 ms.technology: itpro-security
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
+ms.collection:
+- highpri
+- tier1
 ---
 
 # Troubleshoot the TPM
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
-
 This article provides information for the IT professional to troubleshoot the Trusted Platform Module (TPM):
 
 -   [Troubleshoot TPM initialization](#troubleshoot-tpm-initialization)
-
 -   [Clear all the keys from the TPM](#clear-all-the-keys-from-the-tpm)
 
-With TPM 1.2 and Windows 10, version 1507 or 1511, or Windows 11, you can also take the following actions:
-
+With TPM 1.2 and Windows 11, you can also take the following actions:
 -   [Turn on or turn off the TPM](#turn-on-or-turn-off)
 
 For information about the TPM cmdlets, see [TPM Cmdlets in Windows PowerShell](/powershell/module/trustedplatformmodule/?view=win10-ps&preserve-view=true).
@@ -45,13 +40,13 @@ If you find that Windows isn't able to initialize the TPM automatically, review 
 
 -   If the TPM is a TPM 2.0 and isn't detected by Windows, verify that your computer hardware contains a Unified Extensible Firmware Interface (UEFI) that is Trusted Computing Group-compliant. Also, ensure that in the UEFI settings, the TPM hasn't been disabled or hidden from the operating system.
 
--   If you have TPM 1.2 with Windows 10, version 1507 or 1511, or Windows 11, the TPM might be turned off, and need to be turned back on, as described in [Turn on the TPM](#turn-on-the-tpm). When it's turned back on, Windows will re-initialize it.
+-   If you have TPM 1.2 with Windows 11, the TPM might be turned off, and need to be turned back on, as described in [Turn on the TPM](#turn-on-the-tpm). When it's turned back on, Windows will re-initialize it.
 
 -   If you're attempting to set up BitLocker with the TPM, check which TPM driver is installed on the computer. We recommend always using one of the TPM drivers that is provided by Microsoft and is protected with BitLocker. If a non-Microsoft TPM driver is installed, it may prevent the default TPM driver from loading and cause BitLocker to report that a TPM isn't present on the computer. If you have a non-Microsoft driver installed, remove it and then allow the operating system to initialize the TPM.
 
-### Troubleshoot network connection issues for Windows 10, versions 1507 and 1511, or Windows 11
+### Troubleshoot network connection issues for Windows 11
 
-If you have Windows 10, version 1507 or 1511, or Windows 11, the initialization of the TPM can't complete when your computer has network connection issues and both of the following conditions exist:
+If you have Windows 11, the initialization of the TPM can't complete when your computer has network connection issues and both of the following conditions exist:
 
 -   An administrator has configured your computer to require that TPM recovery information be saved in Active Directory Domain Services (AD DS). This requirement can be configured through Group Policy.
 

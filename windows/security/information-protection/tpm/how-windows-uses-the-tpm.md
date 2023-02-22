@@ -1,30 +1,21 @@
 ---
 title: How Windows uses the TPM
-description: This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it to enhance security.
-ms.reviewer: 
+description: Learn how Windows uses the Trusted Platform Module (TPM) to enhance security.
 ms.prod: windows-client
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: paolomatarazzo
+ms.author: paoloma
 manager: aaroncz
 ms.topic: conceptual
-ms.date: 09/03/2021
+ms.date: 02/02/2023
 ms.technology: itpro-security
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # How Windows uses the Trusted Platform Module
 
-The Windows operating system improves most existing security features in the operating system and adds groundbreaking new security features such as Device Guard and Windows Hello for Business. It places hardware-based security deeper inside the operating system than previous Windows versions had done, maximizing platform security while increasing usability. To achieve many of these security enhancements, Windows makes extensive use of the Trusted Platform Module (TPM). This article offers a brief overview of the TPM, describes how it works, and discusses the benefits that TPM brings to Windows and the cumulative security impact of running Windows on a PC that contains a TPM.
-
-
-**See also:**
-- [Windows 11 Specifications](https://www.microsoft.com/windows/windows-11-specifications)
-
-- [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)
-
-- [TPM Fundamentals](tpm-fundamentals.md)
-
-- [TPM Recommendations](tpm-recommendations.md) 
+The Windows operating system places hardware-based security deeper inside many features, maximizing platform security while increasing usability. To achieve many of these security enhancements, Windows makes extensive use of the Trusted Platform Module (TPM). This article offers an overview of the TPM, describes how it works, and discusses the benefits that TPM brings to Windows and the cumulative security impact of running Windows on a device with a TPM.
 
 ## TPM Overview
 
@@ -32,17 +23,17 @@ The TPM is a cryptographic module that enhances computer security and privacy. P
 
 Historically, TPMs have been discrete chips soldered to a computer's motherboard. Such implementations allow the computer's original equipment manufacturer (OEM) to evaluate and certify the TPM separate from the rest of the system. Although discrete TPM implementations are still common, they can be problematic for integrated devices that are small or have low power consumption. Some newer TPM implementations integrate TPM functionality into the same chipset as other platform components while still providing logical separation similar to discrete TPM chips.
 
-TPMs are passive: they receive commands and return responses. To realize the full benefit of a TPM, the OEM must carefully integrate system hardware and firmware with the TPM to send it commands and react to its responses. TPMs were originally designed to provide security and privacy benefits to a platform's owner and users, but newer versions can provide security and privacy benefits to the system hardware itself. Before it can be used for advanced scenarios, a TPM must be provisioned. Windows automatically provisions a TPM, but if the user reinstalls the operating system, user may need to tell the operating system to explicitly provision the TPM again before it can use all the TPM's features.
+TPMs are passive: they receive commands and return responses. To realize the full benefit of a TPM, the OEM must carefully integrate system hardware and firmware with the TPM to send it commands and react to its responses. TPMs were originally designed to provide security and privacy benefits to a platform's owner and users, but newer versions can provide security and privacy benefits to the system hardware itself. Before it can be used for advanced scenarios, a TPM must be provisioned. Windows automatically provisions a TPM, but if the operating system is reinstalled, the TPM may be required to be explicitly re-provisioned before it can use all the TPM's features.
 
 The Trusted Computing Group (TCG) is the nonprofit organization that publishes and maintains the TPM specification. The TCG exists to develop, define, and promote vendor-neutral, global industry standards that support a hardware-based root of trust for interoperable trusted computing platforms. The TCG also publishes the TPM specification as the international standard ISO/IEC 11889, using the Publicly Available Specification Submission Process that the Joint Technical Committee 1 defines between the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).
 
-OEMs implement the TPM as a component in a trusted computing platform, such as a PC, tablet, or phone. Trusted computing platforms use the TPM to support privacy and security scenarios that software alone cannot achieve. For example, software alone cannot reliably report whether malware is present during the system startup process. The close integration between TPM and platform increases the transparency of the startup process and supports evaluating device health by enabling reliable measuring and reporting of the software that starts the device. Implementation of a TPM as part of a trusted computing platform provides a hardware root of trust—that is, it behaves in a trusted way. For example, if a key stored in a TPM has properties that disallow exporting the key, that key *truly cannot leave the TPM*.
+OEMs implement the TPM as a component in a trusted computing platform, such as a PC, tablet, or phone. Trusted computing platforms use the TPM to support privacy and security scenarios that software alone can't achieve. For example, software alone can't reliably report whether malware is present during the system startup process. The close integration between TPM and platform increases the transparency of the startup process and supports evaluating device health by enabling reliable measuring and reporting of the software that starts the device. Implementation of a TPM as part of a trusted computing platform provides a hardware root of trust—that is, it behaves in a trusted way. For example, if a key stored in a TPM has properties that disallow exporting the key, that key *truly can't leave the TPM*.
 
-The TCG designed the TPM as a low-cost, mass-market security solution that addresses the requirements of different customer segments. There are variations in the security properties of different TPM implementations just as there are variations in customer and regulatory requirements for different sectors. In public-sector procurement, for example, some governments have clearly defined security requirements for TPMs, whereas others do not.
+The TCG designed the TPM as a low-cost, mass-market security solution that addresses the requirements of different customer segments. There are variations in the security properties of different TPM implementations just as there are variations in customer and regulatory requirements for different sectors. In public-sector procurement, for example, some governments have clearly defined security requirements for TPMs, whereas others don't.
 
 Certification programs for TPMs—and technology in general—continue to evolve as the speed of innovation increases. Although having a TPM is clearly better than not having a TPM, Microsoft's best advice is to determine your organization's security needs and research any regulatory requirements associated with procurement for your industry. The result is a balance between scenarios used, assurance level, cost, convenience, and availability.
 
-## TPM in Windows 
+## TPM in Windows
 
 The security features of Windows combined with the benefits of a TPM offer practical security and privacy benefits. The following sections start with major TPM-related security features in Windows and go on to describe how key technologies use the TPM to enable or increase security.
 
@@ -52,9 +43,9 @@ Windows includes a cryptography framework called *Cryptographic API: Next Genera
 
 Although CNG sounds like a mundane starting point, it illustrates some of the advantages that a TPM provides. Underneath the CNG interface, Windows or third parties supply a cryptographic provider (that is, an implementation of an algorithm) implemented as software libraries alone or in a combination of software and available system hardware or third-party hardware. If implemented through hardware, the cryptographic provider communicates with the hardware behind the software interface of CNG.
 
-The Platform Crypto Provider, introduced in the Windows 8 operating system, exposes the following special TPM properties, which software-only CNG providers cannot offer or cannot offer as effectively:
+The Platform Crypto Provider, introduced in the Windows 8 operating system, exposes the following special TPM properties, which software-only CNG providers can't offer or can't offer as effectively:
 
-- **Key protection**. The Platform Crypto Provider can create keys in the TPM with restrictions on their use. The operating system can load and use the keys in the TPM without copying the keys to system memory, where they are vulnerable to malware. The Platform Crypto Provider can also configure keys that a TPM protects so that they are not removable. If a TPM creates a key, the key is unique and resides only in that TPM. If the TPM imports a key, the Platform Crypto Provider can use the key in that TPM, but that TPM is not a source for making more copies of the key or enabling the use of copies elsewhere. In sharp contrast, software solutions that protect keys from copying are subject to reverse-engineering attacks, in which someone figures out how the solution stores keys or makes copies of keys while they are in memory during use.
+- **Key protection**. The Platform Crypto Provider can create keys in the TPM with restrictions on their use. The operating system can load and use the keys in the TPM without copying the keys to system memory, where they're vulnerable to malware. The Platform Crypto Provider can also configure keys that a TPM protects so that they aren't removable. If a TPM creates a key, the key is unique and resides only in that TPM. If the TPM imports a key, the Platform Crypto Provider can use the key in that TPM, but that TPM isn't a source for making more copies of the key or enabling the use of copies elsewhere. In sharp contrast, software solutions that protect keys from copying are subject to reverse-engineering attacks, in which someone figures out how the solution stores keys or makes copies of keys while they are in memory during use.
 
 - **Dictionary attack protection**. Keys that a TPM protects can require an authorization value such as a PIN. With dictionary attack protection, the TPM can prevent attacks that attempt a large number of guesses to determine the PIN. After too many guesses, the TPM simply returns an error saying no more guesses are allowed for a period of time. Software solutions might provide similar features, but they cannot provide the same level of protection, especially if the system restarts, the system clock changes, or files on the hard disk that count failed guesses are rolled back. In addition, with dictionary attack protection, authorization values such as PINs can be shorter and easier to remember while still providing the same level of protection as more complex values when using software solutions.
 
@@ -64,15 +55,15 @@ These TPM features give Platform Crypto Provider distinct advantages over softwa
 
 [!INCLUDE [virtual-smart-card-deprecation-notice](../../includes/virtual-smart-card-deprecation-notice.md)]
 
-Smart cards are highly secure physical devices that typically store a single certificate and the corresponding private key. Users insert a smart card into a built-in or USB card reader and enter a PIN to unlock it. Windows can then access the card's certificate and use the private key for authentication or to unlock BitLocker protected data volumes. Smart cards are popular because they provide two-factor authentication that requires both something the user has (that is, the smart card) and something the user knows (such as the smart card PIN). Smart cards are difficult to use, however, because they require purchase and deployment of both smart cards and smart card readers.
+Smart cards are physical devices that typically store a single certificate and the corresponding private key. Users insert a smart card into a built-in or USB card reader and enter a PIN to unlock it. Windows can then access the card's certificate and use the private key for authentication or to unlock BitLocker protected data volumes. Smart cards are popular because they provide two-factor authentication that requires both something the user has (that is, the smart card) and something the user knows (such as the smart card PIN). However, smart cards can be expensive because they require purchase and deployment of both smart cards and smart card readers.
 
-In Windows, the Virtual Smart Card feature allows the TPM to mimic a permanently inserted smart card. The TPM becomes "something the user has" but still requires a PIN. Although physical smart cards limit the number of PIN attempts before locking the card and requiring a reset, a virtual smart card relies on the TPM's dictionary attack protection to prevent too many PIN guesses.
+In Windows, the *Virtual Smart Card* feature allows the TPM to mimic a permanently inserted smart card. The TPM becomes *something the user has* but still requires a PIN. While physical smart cards limit the number of PIN attempts before locking the card and requiring a reset, a virtual smart card relies on the TPM's dictionary attack protection to prevent too many PIN guesses.
 
-For TPM-based virtual smart cards, the TPM protects the use and storage of the certificate private key so that it cannot be copied when it is in use or stored and used elsewhere. Using a component that is part of the system rather than a separate physical smart card can reduce total cost of ownership because it eliminates "lost card" and "card left at home" scenarios while still delivering the benefits of smart card–based multifactor authentication. For users, virtual smart cards are simple to use, requiring only a PIN to unlock. Virtual smart cards support the same scenarios that physical smart cards support, including signing in to Windows or authenticating for resource access.
+For TPM-based virtual smart cards, the TPM protects the use and storage of the certificate private key, so that it cannot be copied when it is in use or stored and used elsewhere. Using a component that is part of the system rather than a separate physical smart card, can reduce total cost of ownership. The *lost card* or *card left at home* scenarios are not applicable, and the benefits of smart card-based multifactor authentication is preserved. For users, virtual smart cards are simple to use, requiring only a PIN to unlock. Virtual smart cards support the same scenarios that physical smart cards support, including signing in to Windows or authenticating for resource access.
 
 ## Windows Hello for Business
 
-Windows Hello for Business provides authentication methods intended to replace passwords, which can be difficult to remember and easily compromised. In addition, user name - password solutions for authentication often reuse the same user name – password combinations on multiple devices and services; if those credentials are compromised, they are compromised in many places. Windows Hello for Business provisions devices one by one and combines the information provisioned on each device (i.e., the cryptographic key) with additional information to authenticate users. On a system that has a TPM, the TPM can protect the key. If a system does not have a TPM, software-based techniques protect the key. The additional information the user supplies can be a PIN value or, if the system has the necessary hardware, biometric information, such as fingerprint or facial recognition. To protect privacy, the biometric information is used only on the provisioned device to access the provisioned key: it is not shared across devices.
+Windows Hello for Business provides authentication methods intended to replace passwords, which can be difficult to remember and easily compromised. In addition, username/password solutions for authentication often reuse the same credential combinations on multiple devices and services. If those credentials are compromised, they are compromised in multiple places. Windows Hello for Business combines the information provisioned on each device (i.e., the cryptographic key) with additional information to authenticate users. On a system that has a TPM, the TPM can protect the key. If a system does not have a TPM, software-based techniques protect the key. The additional information the user supplies can be a PIN value or, if the system has the necessary hardware, biometric information, such as fingerprint or facial recognition. To protect privacy, the biometric information is used only on the provisioned device to access the provisioned key: it is not shared across devices.
 
 The adoption of new authentication technology requires that identity providers and organizations deploy and use that technology. Windows Hello for Business lets users authenticate with their existing Microsoft account, an Active Directory account, a Microsoft Azure Active Directory account, or even non-Microsoft Identity Provider Services or Relying Party Services that support [Fast ID Online V2.0 authentication](https://go.microsoft.com/fwlink/p/?LinkId=533889).
 
@@ -125,7 +116,6 @@ When new security features are added to Windows, Measured Boot adds security-rel
 
 :::image type="content" alt-text="Process to Create Evidence of Boot Software and Configuration Using TPM." source="images/process-to-create-evidence-of-boot-software-and-configuration-using-tpm.png" lightbox="images/process-to-create-evidence-of-boot-software-and-configuration-using-tpm.png":::
 *Figure 2:  Process used to create evidence of boot software and configuration using a TPM*
-
 
 ## Health Attestation
 

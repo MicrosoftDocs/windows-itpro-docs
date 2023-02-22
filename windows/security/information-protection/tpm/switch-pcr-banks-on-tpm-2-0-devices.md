@@ -1,22 +1,19 @@
 ---
 title: Understanding PCR banks on TPM 2.0 devices (Windows)
 description: This topic for the IT professional provides background about what happens when you switch PCR banks on TPM 2.0 devices.
-ms.reviewer: 
 ms.prod: windows-client
-author: dansimp
-ms.author: dansimp
+author: paolomatarazzo
+ms.author: paoloma
 manager: aaroncz
 ms.topic: conceptual
-ms.date: 09/06/2021
+ms.date: 02/02/2023
 ms.technology: itpro-security
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # Understanding PCR banks on TPM 2.0 devices
-
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 For steps on how to switch PCR banks on TPM 2.0 devices on your PC, you should contact your OEM or UEFI vendor. This topic provides background about what happens when you switch PCR banks on TPM 2.0 devices.
 
