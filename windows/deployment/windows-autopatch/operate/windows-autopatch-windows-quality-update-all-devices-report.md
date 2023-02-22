@@ -18,7 +18,7 @@ The All devices report provides a per device view of the current update status f
 
 **To view the All devices report:**
 
-1. Sign into the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign into the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Navigate to **Reports** > **Windows Autopatch** > **Windows Quality Updates**.
 1. Select the **Reports** tab.
 1. Select **All devices report**.
