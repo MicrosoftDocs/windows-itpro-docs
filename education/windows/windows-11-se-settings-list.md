@@ -53,7 +53,7 @@ The following settings can't be changed.
 | Allowed Account Types  | Microsoft accounts and Azure AD accounts are allowed. |
 | Virtual Desktops  | Virtual Desktops are blocked. |
 | Microsoft Store  | The Microsoft Store is blocked. |
-| Administrative tools  | Administrative tools, such as the command prompt and Windows PowerShell, can't be opened. Windows PowerShell scripts deployed using Microsoft Endpoint Manager can run. |
+| Administrative tools  | Administrative tools, such as the command prompt and Windows PowerShell, can't be opened. Windows PowerShell scripts deployed using Microsoft Intune can run. |
 | Apps  | Only certain apps are allowed to run on Windows 11 SE. For more info on what apps can run on Windows 11 SE, see [Windows 11 SE for Education overview](windows-11-se-overview.md).  |
 
 ## Next steps
