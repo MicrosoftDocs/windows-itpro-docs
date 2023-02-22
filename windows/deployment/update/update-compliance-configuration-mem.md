@@ -33,7 +33,7 @@ This article is specifically targeted at configuring devices enrolled to [Micros
 
 Take the following steps to create a configuration profile that will set required policies for Update Compliance:
 
-1. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices/Windows/Configuration profiles**.
+1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices/Windows/Configuration profiles**.
 1. On the **Configuration profiles** view, select **Create a profile**.
 1. Select **Platform**="Windows 10 and later" and **Profile type**="Templates".
 1. For **Template name**, select **Custom**, and then press **Create**.

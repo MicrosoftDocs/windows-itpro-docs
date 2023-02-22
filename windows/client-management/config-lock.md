@@ -41,7 +41,7 @@ Config lock isn't enabled by default, or turned on by the OS during boot. Rather
 The steps to turn on config lock using Microsoft Intune are as follows:
 
 1. Ensure that the device to turn on config lock is enrolled in Microsoft Intune.
-1. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Configuration Profiles** > **Create a profile**.
+1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Configuration Profiles** > **Create a profile**.
 1. Select the following and press **Create**:
     - **Platform**: Windows 10 and later
     - **Profile type**: Templates
