@@ -24,7 +24,7 @@ After you've created and deployed your Windows Information Protection (WIP) poli
 
 To associate your WIP policy with your organization's existing VPN policy, use the following steps:
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 3. Enter the following properties:
 
