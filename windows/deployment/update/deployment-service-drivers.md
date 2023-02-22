@@ -304,11 +304,9 @@ content-type: application/json
 }
 ```
 
-
 ## Revoke content approval
 
 Approval for content can be revoked by setting the `isRevoked` property of the [compliance change](/graph/api/resources/windowsupdates-compliancechange) to true. This setting can be changed while a deployment is in progress. However, revoking will only prevent the content from being offered to devices if they haven't already received it. To resume offering the content, a new [approval](#approve-driver-content-for-deployment) will need to be created.
-
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges/c03911a7-9876-5432-10ab-cdef98765432
