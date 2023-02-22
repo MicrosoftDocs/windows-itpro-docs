@@ -13,7 +13,7 @@ ms.collection:
 
 # Configure federated sign-in for Windows devices
 
-Starting in Windows 11 SE, version 22H2 and Windows 11 Pro Edu/Education, version 22H2 with [KB5022913][KB-1], you can enable your users to sign-in using a SAML 2.0 identity provider (IdP). This feature is called *federated sign-in*. Federated sign-in is a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Azure AD, they can sign-in using their existing credentials from the IdP. For example, students and educators can use QR code badges to sign-in.
+Starting in Windows 11 SE, version 22H2 and Windows 11 Pro Edu/Education, version 22H2 with [KB5022913][KB-1], you can enable your users to sign-in using a federated identity provider (IdP) via web sign-in. This feature is called *federated sign-in*. Federated sign-in is a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Azure AD, they can sign-in using their existing credentials from the IdP. For example, students and educators can use QR code badges to sign-in.
 
 ## Benefits of federated sign-in
 
@@ -26,7 +26,7 @@ With fewer credentials to remember and a simplified sign-in process, students ar
 
 To implement federated sign-in, the following prerequisites must be met:
 
-1. An Azure AD tenant, with one or multiple domains federated to a third-party SAML 2.0 IdP. For more information, see [Use a SAML 2.0 Identity Provider (IdP) for Single Sign On][AZ-1]
+1. An Azure AD tenant, with one or multiple domains federated to a third-party IdP. For more information, see [What is federation with Azure AD?][AZ-1] and [Use a SAML 2.0 IdP for Single Sign On][AZ-4]
     >[!NOTE]
     >If your organization uses a third-party federation solution, you can configure single sign-on to Azure Active Directory if the solution is compatible with Azure Active Directory. For questions regarding compatibility, contact your identity provider. If you're an IdP, and would like to validate your solution for interoperability, refer to these [guidelines][MSFT-1].
 
@@ -45,9 +45,14 @@ To implement federated sign-in, the following prerequisites must be met:
 
 To use federated sign-in, the devices must have Internet access. This feature won't work without it, as the authentication is done over the Internet.
 
+> [!IMPORTANT]
+> WS-Fed is the only supported federated protocol to join a device to Azure AD. If you have a SAMl 2.0 IdP, it's recommended to complete the Azure AD join process using one of the following methods:
+> - provisioning packages (PPKG)
+> - Windows Autopilot self-deploying mode
+
 ## Configure federated sign-in
 
-To sign-in with a SAML 2.0 identity provider, your devices must be configured with different policies. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+To use web sign-in with a federated identity provider, your devices must be configured with different policies. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -113,7 +118,8 @@ Federated sign-in doesn't work on devices that have the following settings enabl
 
 <!--links-->
 
-[AZ-1]: /azure/active-directory/hybrid/how-to-connect-fed-saml-idp
+[AZ-1]: /azure/active-directory/hybrid/whatis-fed
+[AZ-4]: /azure/active-directory/hybrid/how-to-connect-fed-saml-idp
 [AZ-2]: /azure/active-directory/enterprise-users/licensing-groups-assign
 [AZ-3]: /azure/active-directory/hybrid/how-to-connect-sync-whatis
 
