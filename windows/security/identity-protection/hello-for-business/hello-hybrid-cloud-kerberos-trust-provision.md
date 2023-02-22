@@ -234,16 +234,10 @@ For a list of frequently asked questions about Windows Hello for Business cloud 
 
 <!--Links-->
 
-[AZ-1]: /azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises
 [AZ-2]: /azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azure-ad-kerberos-powershell-module
 [AZ-3]: /azure/active-directory/fundamentals/active-directory-how-to-find-tenant
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
 
 [MEM-1]: /mem/intune/protect/identity-protection-windows-settings
-
-[SERV-1]: /windows-server/administration/performance-tuning/role/active-directory-server/capacity-planning-for-active-directory-domain-services
-
-[SUP-1]: https://support.microsoft.com/topic/january-23-2020-kb4534307-os-build-14393-3474-b181594e-2c6a-14ea-e75b-678efea9d27e
-[SUP-2]: https://support.microsoft.com/topic/january-23-2020-kb4534321-os-build-17763-1012-023e84c3-f9aa-3b55-8aff-d512911c459f
 
 [TS-1]: /troubleshoot/windows-client/group-policy/create-and-manage-central-store
