@@ -84,7 +84,7 @@ The following groups target Windows Autopatch configurations to devices and mana
 - Windows Autopatch - DSS Policy [First]
 - Windows Autopatch - DSS Policy [Fast]
 - Windows Autopatch - DSS Policy [Broad]
-- Windows Autopatch - DSS Policy [Windows 11]
+- Modern Workplace DSS Policy [Windows 11]
 
 | Policy name | Policy description | Value |
 | ----- | ----- | ----- |
@@ -92,7 +92,7 @@ The following groups target Windows Autopatch configurations to devices and mana
 | Windows Autopatch - DSS Policy [First] | DSS policy for First device group | Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace - Windows 11 Pre-Release Test Devices</li> |
 | Windows Autopatch - DSS Policy [Fast] | DSS policy for Fast device group | Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Fast</li></ul><br>Exclude from:<ul><li>Modern Workplace - Windows 11 Pre-Release Test Devices</li></ul> |
 | Windows Autopatch - Policy [Broad] | DSS policy for Broad device group | Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul><br>Exclude from:<ul><li>Modern Workplace - Windows 11 Pre-Release Test Devices</li></ul>|
-| Windows Autopatch - DSS Policy [Windows 11] | Windows 11 DSS policy | Assigned to:<ul><li>Modern Workplace - Windows 11 Pre-Release Test Devices</li></ul>|
+| Modern Workplace DSS Policy [Windows 11] | Windows 11 DSS policy | Assigned to:<ul><li>Modern Workplace - Windows 11 Pre-Release Test Devices</li></ul>|
 
 ## Microsoft Office update policies
 
