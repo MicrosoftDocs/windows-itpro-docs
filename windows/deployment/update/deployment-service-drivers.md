@@ -287,7 +287,7 @@ To retrieve the deployment ID, use the [expand parameter](/graph/query-parameter
 
 ### Edit deployment settings for a content approval
 
-Since content approval is a compliance change for the policy, when you [update a content approval](/g/graph/api/windowsupdates-contentapproval-update), you're editing the compliance change for the policy. The following example changes the `startDateTime` for the **Compliance Change ID** of `c03911a7-9876-5432-10ab-cdef98765432` in the update **Policy ID** `9011c330-1234-5678-9abc-def012345678` to February 28, 2023 at 5 AM UTC:
+Since content approval is a compliance change for the policy, when you [update a content approval](/graph/api/windowsupdates-contentapproval-update), you're editing the compliance change for the policy. The following example changes the `startDateTime` for the **Compliance Change ID** of `c03911a7-9876-5432-10ab-cdef98765432` in the update **Policy ID** `9011c330-1234-5678-9abc-def012345678` to February 28, 2023 at 5 AM UTC:
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/9011c330-1234-5678-9abc-def012345678/complianceChanges/c03911a7-9876-5432-10ab-cdef98765432
