@@ -1,7 +1,7 @@
 ---
 title: Configuration service provider support
 description: Learn more about configuration service provider (CSP) supported scenarios.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -9,7 +9,9 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/18/2020
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
 ---
 
 # Configuration service provider support

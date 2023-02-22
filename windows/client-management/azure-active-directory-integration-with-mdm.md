@@ -1,14 +1,16 @@
 ---
 title: Azure Active Directory integration with MDM
 description: Azure Active Directory is the world's largest enterprise cloud identity management service.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
 ms.date: 12/31/2017
 ---
 
@@ -46,7 +48,7 @@ Azure AD Join also enables company owned devices to be automatically enrolled in
 > [!IMPORTANT]
 > Every user enabled for automatic MDM enrollment with Azure AD Join must be assigned a valid [Azure Active Directory Premium](/previous-versions/azure/dn499825(v=azure.100)) license.
 
- 
+
 ### BYOD scenario
 
 Windows 10 also introduces a simpler way to configure personal devices to access work apps and resources. Users can add their Microsoft work account to Windows and enjoy simpler and safer access to the apps and resources of the organization. During this process, Azure AD detects if the organization has configured an MDM. If that’s the case, Windows attempts to enroll the device in MDM as part of the “add account” flow. In the BYOD case, users can reject the MDM Terms of Use. The device isn't enrolled in MDM and access to organization resources is typically restricted.
@@ -70,7 +72,7 @@ Once a user has an Azure AD account added to Windows and enrolled in MDM, the en
 > [!NOTE]
 > Users can't remove the device enrollment through the **Work access** user interface because management is tied to the Azure AD or work account.
 
- 
+
 ### MDM endpoints involved in Azure AD–integrated enrollment
 
 Azure AD MDM enrollment is a two-step process:
@@ -187,7 +189,7 @@ The following image show how MDM applications show up in the Azure app gallery.
 ### Add cloud-based MDM to the app gallery
 
 > [!NOTE]
-> You should work with the Azure AD engineering team if your MDM application is cloud-based and needs to be enabled as a multi-tenant MDM application 
+> You should work with the Azure AD engineering team if your MDM application is cloud-based and needs to be enabled as a multi-tenant MDM application
 
 The following table shows the required information to create an entry in the Azure AD app gallery.
 
@@ -200,7 +202,7 @@ The following table shows the required information to create an entry in the Azu
 |**Icons**|A set of logo icons for the MDM app. Dimensions: 45 X 45, 150 X 122, 214 X 215|
 
 
- 
+
 ### Add on-premises MDM to the app gallery
 
 There are no special requirements for adding on-premises MDM to the app gallery. There's a generic entry for administrators to add an app to their tenant.
@@ -232,7 +234,7 @@ An MDM page must adhere to a predefined theme depending on the scenario that is 
 |--- |--- |--- |--- |--- |
 |FRX|OOBE|Dark theme + blue background color|Filename: Ui-dark.css|Filename: oobe-dekstop.css|
 |MOSET|Settings/Post OOBE|Light theme|Filename: Ui-light.css|Filename: settings-desktop.css|
- 
+
 ## Terms of Use protocol semantics
 
 The Terms of Use endpoint is hosted by the MDM server. During the Azure AD Join protocol flow, Windows does a full-page redirect to this endpoint. This redirect enables the MDM to display the terms and conditions that apply. It allows the user to accept or reject the terms associated with enrollment. After the user accepts the terms, the MDM redirects back to Windows for the enrollment process to continue.
@@ -332,7 +334,7 @@ The following table shows the error codes.
 |Azure AD token validation failed|302|unauthorized_client|unauthorized_client|
 |internal service error|302|server_error|internal service error|
 
- 
+
 ## Enrollment protocol with Azure AD
 
 With Azure integrated MDM enrollment, there's no discovery phase and the discovery URL is directly passed down to the system from Azure. The following table shows the comparison between the traditional and Azure enrollments.

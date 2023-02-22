@@ -14,6 +14,7 @@ manager: aaroncz
 audience: ITPro
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 09/18/2018
 ms.technology: itpro-security
@@ -29,7 +30,7 @@ Describes the best practices, location, values, management, and security conside
 
 ## Reference
 
-Beginning with Windows Server 2012 and Windows 8, Windows detects user-input inactivity of a sign-in (logon) session by using the security policy setting **Interactive logon: Machine inactivity limit**. If the amount of inactive time exceeds the inactivity limit set by this policy, then the user’s session locks by invoking the screen saver (screen saver should be active on the destination machine). You can activate the screen saver by enabling the Group Policy **User Configuration\Administrative Templates\Control Panel\Personalization\Enable screen saver**. This policy setting allows you to control the locking time by using Group Policy.
+Beginning with Windows Server 2012 and Windows 8, Windows detects user-input inactivity of a sign-in (logon) session by using the security policy setting **Interactive logon: Machine inactivity limit**. If the amount of inactive time exceeds the inactivity limit set by this policy, then the user's session locks by invoking the screen saver (screen saver should be active on the destination machine). You can activate the screen saver by enabling the Group Policy **User Configuration\Administrative Templates\Control Panel\Personalization\Enable screen saver**. This policy setting allows you to control the locking time by using Group Policy.
 
 > [!NOTE]
 > If the **Interactive logon: Machine inactivity limit** security policy setting is configured, the device locks not only when inactive time exceeds the inactivity limit, but also when the screensaver activates or when the display turns off because of power settings.
@@ -42,7 +43,7 @@ If **Machine will be locked after** is set to zero (0) or has no value (blank), 
 
 ### Best practices
 
-Set the time for elapsed user-input inactivity based on the device’s usage and location requirements. For example, if the device or device is in a public area, you might want to have the device automatically lock after a short period of inactivity to prevent unauthorized access. However, if the device is used by an individual or group of trusted individuals, such as in a restricted manufacturing area, automatically locking the device might hinder productivity.
+Set the time for elapsed user-input inactivity based on the device's usage and location requirements. For example, if the device or device is in a public area, you might want to have the device automatically lock after a short period of inactivity to prevent unauthorized access. However, if the device is used by an individual or group of trusted individuals, such as in a restricted manufacturing area, automatically locking the device might hinder productivity.
 
 ### Location
 
@@ -52,7 +53,7 @@ Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Local Pol
 
 ### Default values
 
-The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
+The following table lists the actual and effective default values for this policy. Default values are also listed on the policy's property page.
 
 | Server type or GPO | Default value |
 | - | - |
@@ -85,7 +86,7 @@ This policy setting helps you prevent unauthorized access to devices under your 
 
 ### Countermeasure
 
-Set the time for elapsed user-input inactivity time by using the security policy setting **Interactive logon: Machine inactivity limit** based on the device’s usage and location requirements.
+Set the time for elapsed user-input inactivity time by using the security policy setting **Interactive logon: Machine inactivity limit** based on the device's usage and location requirements.
 
 ### Potential impact
 

@@ -14,6 +14,7 @@ manager: aaroncz
 audience: ITPro
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 08/16/2021
 ms.technology: itpro-security
@@ -23,7 +24,7 @@ ms.technology: itpro-security
 
 **Applies to**
 -   Windows 11
--   Windows 10
+-   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Account lockout duration** security policy setting.
 
@@ -47,7 +48,7 @@ It's advisable to set **Account lockout duration** to approximately 15 minutes.
 
 ### Default values
 
-The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
+The following table lists the actual and effective default policy values. Default values are also listed on the policy's property page.
 
 | Server type or Group Policy Object (GPO) | Default value |
 | - | - |

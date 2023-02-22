@@ -11,7 +11,7 @@ ms.reviewer:
 manager: dansimp
 title: Enterprise Mode for Microsoft Edge
 ms.sitesec: library
-ms.date: ''
+ms.date: 07/17/2018
 ---
 
 # Enterprise Mode for Microsoft Edge
@@ -55,5 +55,3 @@ You can build and manage your Enterprise Mode Site List is by using any generic 
 
 
 ### Add multiple sites to the site list
-
-

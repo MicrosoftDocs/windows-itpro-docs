@@ -2,6 +2,7 @@
 title: Review a reminder suggested by Cortana (Windows)
 description: A test scenario on how to use Cortana with the Suggested reminders feature.
 ms.prod: windows-client
+ms.collection: tier3
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

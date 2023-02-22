@@ -1,7 +1,7 @@
 ---
 title: Windows quality updates
 description: This article explains how Windows quality updates are managed in Autopatch
-ms.date: 12/15/2022
+ms.date: 02/17/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+msreviewer: andredm7
 ---
 
 # Windows quality updates
@@ -33,6 +33,9 @@ For a device to be eligible for Windows quality updates as a part of Windows Aut
 | Mobile device management (MDM) policy conflict | Devices must not have deployed any policies that would prevent device management. For more information, see [Conflicting and unsupported policies](../references/windows-autopatch-windows-update-unsupported-policies.md). |
 | Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](../references/windows-autopatch-windows-update-unsupported-policies.md#group-policy-and-other-policy-managers) |
 
+> [!NOTE]
+> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Additionally, Windows Autopatch can only manage Windows quality updates for devices that haven't reached the LTSC's [end of servicing date](/windows/release-health/release-information#enterprise-and-iot-enterprise-ltsbltsc-editions).
+
 ## Windows quality update releases
 
 Windows Autopatch deploys the [B release of Windows quality updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-quality-updates-primer/ba-p/2569385) that are released on the second Tuesday of each month.
@@ -53,6 +56,9 @@ Windows Autopatch configures these policies differently across deployment rings 
 :::image type="content" source="../media/release-process-timeline.png" alt-text="Release process timeline" lightbox="../media/release-process-timeline.png":::
 
 ## Release management
+
+> [!NOTE]
+> To access the Release management blade, you must have the correct [role-based access control](../deploy/windows-autopatch-register-devices.md#built-in-roles-required-for-device-registration).
 
 In the Release management blade, you can:
 
@@ -89,7 +95,7 @@ By default, the service expedites quality updates as needed. For those organizat
 **To turn off service-driven expedited quality updates:**
 
 1. Go to **[Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)** > **Devices**.
-2. Under **Windows Autopatch** > **Release management**, go to the **Release settings** tab and turn off the **Expedited Quality Updates** setting.
+2. Under **Windows Autopatch** > **Release management**, go to the **Release settings** tab and turn off the **Expedited quality updates** setting.
 
 > [!NOTE]
 > Windows Autopatch doesn't allow customers to request expedited releases.
@@ -108,6 +114,11 @@ Windows Autopatch schedules and deploys required Out of Band (OOB) updates relea
 
 ### Pausing and resuming a release
 
+> [!CAUTION]
+> It's only recommended to use Windows Autopatch's end-user experience to pause and resume [Windows quality](windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release). If you need assistance with pausing and resuming updates, please [submit a support request](../operate/windows-autopatch-support-request.md).
+
+The service-level pause of updates is driven by the various software update deployment-related signals Windows Autopatch receives from Windows Update for Business, and several other product groups within Microsoft.
+
 If Windows Autopatch detects a [significant issue with a release](../operate/windows-autopatch-windows-quality-update-signals.md), we may decide to pause that release.
 
 > [!IMPORTANT]
@@ -125,12 +136,13 @@ If Windows Autopatch detects a [significant issue with a release](../operate/win
 8. If you're resuming an update, you can select one or more deployment rings.
 9. Select **Okay**.
 
-There are two statuses associated with paused quality updates, **Service Paused** and **Customer Paused**.
+The three following statuses are associated with paused quality updates:
 
 | Status | Description |
 | ----- | ------ |
-| Service Paused | If the Windows Autopatch service has paused an update, the release will have the **Service Paused** status. You must [submit a support request](windows-autopatch-support-request.md) to resume the update. |
-| Customer Paused | If you've paused an update, the release will have the **Customer Paused** status. The Windows Autopatch service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update. |
+| Service Pause | If the Windows Autopatch service has paused an update, the release will have the **Service Pause** status. You must [submit a support request](../operate/windows-autopatch-support-request.md) to resume the update. |
+| Customer Pause | If you've paused an update, the release will have the **Customer Pause** status. The Windows Autopatch service can't overwrite an IT admin's pause. You must select **Resume** to resume the update. |
+| Customer & Service Pause | If you and Windows Autopatch have both paused an update, the release will have the **Customer & Service Pause** status. If you resume the update, and the **Service Pause** status still remains, you must [submit a support request](../operate/windows-autopatch-support-request.md) for Windows Autopatch to resume the update deployment on your behalf. |
 
 ## Remediating Ineligible and/or Not up to Date devices
 

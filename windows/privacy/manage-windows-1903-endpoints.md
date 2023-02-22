@@ -7,6 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
+ms.date: 01/18/2018
 ms.topic: reference
 ---
 # Manage connection endpoints for Windows 10 Enterprise, version 1903
