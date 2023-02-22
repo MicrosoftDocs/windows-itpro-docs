@@ -76,7 +76,7 @@ Windows Autopatch will create Azure Active Directory groups that are required to
 | Modern Workplace Update Policy [Fast]-[Windows Autopatch] | Windows Update for Business Configuration for the Fast Ring<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Fast</li></ul>|<ul><li>QualityUpdatesDeferralPeriodInDays</li><li>FeatureUpdatesDeferralPeriodInDays</li><li>FeatureUpdatesRollbackWindowInDays</li><li>BusinessReadyUpdatesOnly</li><li>AutomaticUpdateMode</li><li>InstallTime</li><li>DeadlineForFeatureUpdatesInDays</li><li>DeadlineForQualityUpdatesInDays</li><li>DeadlineGracePeriodInDays</li><li>PostponeRebootUntilAfterDeadline</li><li>DriversExcluded</li></ul>|<ul><li>6</li><li>0</li><li>30</li><li>All</li><li>WindowsDefault</li><li>3</li><li>5</li><li>2</li><li>2</li><li>False</li><li>False</li>|
 | Modern Workplace Update Policy [Broad]-[Windows Autopatch] | Windows Update for Business Configuration for the Broad Ring<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>|<ul><li>QualityUpdatesDeferralPeriodInDays</li><li>FeatureUpdatesDeferralPeriodInDays</li><li>FeatureUpdatesRollbackWindowInDays</li><li>BusinessReadyUpdatesOnly</li><li>AutomaticUpdateMode</li><li>InstallTime</li><li>DeadlineForFeatureUpdatesInDays</li><li>DeadlineForQualityUpdatesInDays</li><li>DeadlineGracePeriodInDays</li><li>PostponeRebootUntilAfterDeadline</li><li>DriversExcluded</li></ul>|<ul><li>9</li><li>0</li><li>30</li><li>All</li><li>WindowsDefault</li><li>3</li><li>5</li><li>5</li><li>2</li><li>False</li><li>False</li>|
 
-## Feature update policies
+## Windows feature update policies
 
 - Windows Autopatch - DSS Policy [Test]
 - Windows Autopatch - DSS Policy [First]
@@ -90,7 +90,7 @@ Windows Autopatch will create Azure Active Directory groups that are required to
 | Windows Autopatch - DSS Policy [First] | DSS policy for First device group | Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace - Windows 11 Pre-Release Test Devices</li> |
 | Windows Autopatch - DSS Policy [Fast] | DSS policy for Fast device group | Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Fast</li></ul><br>Exclude from:<ul><li>Modern Workplace - Windows 11 Pre-Release Test Devices</li></ul> |
 | Windows Autopatch - Policy [Broad] | DSS policy for Broad device group | Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul><br>Exclude from:<ul><li>Modern Workplace - Windows 11 Pre-Release Test Devices</li></ul>|
-| Modern Workplace DSS Policy [Windows 11] | Windows 11 DSS policy | Assigned to:<ul><li>Modern Workplace - Windows 11 Pre-Release Test Devices</li></ul>|
+| Windows Autopatch - DSS Policy [Windows 11] | Windows 11 DSS policy | Assigned to:<ul><li>Modern Workplace - Windows 11 Pre-Release Test Devices</li></ul>|
 
 ## Microsoft Office update policies
 
