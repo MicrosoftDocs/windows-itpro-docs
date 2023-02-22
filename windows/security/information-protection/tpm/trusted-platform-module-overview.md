@@ -9,6 +9,7 @@ ms.author: dansimp
 manager: aaroncz
 ms.collection: 
   - highpri
+  - tier1
 ms.topic: conceptual
 adobe-target: true
 ms.technology: itpro-security
@@ -32,7 +33,7 @@ This topic for the IT professional describes the Trusted Platform Module (TPM) a
 
 - Generate, store, and limit the use of cryptographic keys.
 
-- Use TPM technology for platform device authentication by using the TPM’s unique RSA key, which is burned into it.
+- Use TPM technology for platform device authentication by using the TPM's unique RSA key, which is burned into it.
 
 - Help ensure platform integrity by taking and storing security measurements.
 

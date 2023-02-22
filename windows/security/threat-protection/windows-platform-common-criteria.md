@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 ms.date: 11/4/2022
 ms.reviewer: paoloma
 ms.technology: itpro-security
+ms.collection:
+    - tier3
 ---
 
 # Common Criteria certifications

@@ -7,6 +7,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.collection: 
   - highpri
+  - tier2
 ms.topic: article
 ms.date: 6/30/2022
 ms.technology: itpro-security

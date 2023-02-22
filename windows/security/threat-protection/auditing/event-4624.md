@@ -14,6 +14,7 @@ ms.author: vinpa
 ms.technology: itpro-security
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: reference
 ---
 
@@ -127,7 +128,7 @@ This event generates when a logon session is created (on destination machine). I
 
 - **Account Name** [Type = UnicodeString]**:** the name of the account that reported information about successful logon.
 
-- **Account Domain** [Type = UnicodeString]**:** subject’s domain or computer name. Formats vary, and include the following:
+- **Account Domain** [Type = UnicodeString]**:** subject's domain or computer name. Formats vary, and include the following:
 
     - Domain NETBIOS name example: CONTOSO
 
@@ -191,7 +192,7 @@ This event generates when a logon session is created (on destination machine). I
 
 - **Account Name** [Type = UnicodeString]**:** the name of the account for which logon was performed.
 
-- **Account Domain** [Type = UnicodeString]**:** subject’s domain or computer name. Formats vary, and include the following:
+- **Account Domain** [Type = UnicodeString]**:** subject's domain or computer name. Formats vary, and include the following:
 
     - Domain NETBIOS name example: CONTOSO
 
@@ -289,7 +290,7 @@ For 4624(S): An account was successfully logged on.
 | **Accounts of different types**: You might want to ensure that certain actions are performed only by certain account types, for example, local or domain account, machine or user account, vendor or employee account, and so on.                                                                                 | If this event corresponds to an action you want to monitor for certain account types, review the **"New Logon\\Security ID"** to see whether the account type is as expected. |
 | **External accounts**: You might be monitoring accounts from another domain, or "external" accounts that are not allowed to perform certain actions (represented by certain specific events).                                                                                                                     | Monitor this event for the **"Subject\\Account Domain"** corresponding to accounts from another domain or "external" accounts.                                                |
 | **Restricted-use computers or devices**: You might have certain computers, machines, or devices on which certain people (accounts) should not typically perform any actions.                                                                                                                                      | Monitor the target **Computer:** (or other target device) for actions performed by the **"New Logon\\Security ID"** that you are concerned about.                             |
-| **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor "**Subject\\Account Name"** for names that don’t comply with naming conventions.                                                                                      |
+| **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor "**Subject\\Account Name"** for names that don't comply with naming conventions.                                                                                      |
 
 - Because this event is typically triggered by the SYSTEM account, we recommend that you report it whenever **"Subject\\Security ID"** is not SYSTEM.
 

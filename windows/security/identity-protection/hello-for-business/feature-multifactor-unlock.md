@@ -267,7 +267,7 @@ This example configures an IPConfig signal type using Ipv4Prefix, Ipv4DnsServer,
         <ipv4DnsServer>10.10.0.1</ipv4DnsServer>
         <ipv4DnsServer>10.10.0.2</ipv4DnsServer>
         <dnsSuffix>corp.contoso.com</dnsSuffix> 
-	</signal> 
+    </signal> 
 </rule>
 ```
 
@@ -280,12 +280,12 @@ This example configures an IpConfig signal type using a dnsSuffix element and a 
 
 ```xml
 <rule schemaVersion="1.0"> 
-	<signal type="ipConfig"> 
-	    <dnsSuffix>corp.contoso.com</dnsSuffix> 
-	</signal> 
+    <signal type="ipConfig"> 
+        <dnsSuffix>corp.contoso.com</dnsSuffix> 
+    </signal> 
 </rule>,
 <rule schemaVersion="1.0">
-	<signal type="bluetooth" scenario="Authentication" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/>
+    <signal type="bluetooth" scenario="Authentication" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/>
 </rule>
 ```
 
