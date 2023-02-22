@@ -1,20 +1,16 @@
 ---
 title: Use Virtual Smart Cards (Windows 10)
 description: This topic for the IT professional describes requirements for virtual smart cards and provides information about how to use and manage them.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.topic: article
-ms.localizationpriority: medium
-ms.date: 10/13/2017
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows Server 2016</b>
-ms.technology: itpro-security
+ms.topic: conceptual
+ms.date: 02/22/2023
+appliesto:
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # Use Virtual Smart Cards
+
+[!INCLUDE [virtual-smart-card-deprecation-notice](../../includes/virtual-smart-card-deprecation-notice.md)]
 
 This topic for the IT professional describes requirements for virtual smart cards, how to use virtual smart cards, and tools that are available to help you create and manage them.
 
@@ -96,7 +92,7 @@ If the operating system is reinstalled, prior TPM virtual smart cards are no lon
 
 ### TPM in lockout state
 
-Sometimes, due to frequent incorrect PIN attempts from a user, the TPM may enter the lockout state. To resume using the TPM virtual smart card, it is necessary to reset the lockout on the TPM by using the owner’s password or to wait for the lockout to expire. Unblocking the user PIN does not reset the lockout in the TPM. When the TPM is in lockout, the TPM virtual smart card appears as if it is blocked. When the TPM enters the lockout state because the user entered an incorrect PIN too many times, it may be necessary to reset the user PIN by using the virtual smart card management tools, such as Tpmvscmgr command-line tool.
+Sometimes, due to frequent incorrect PIN attempts from a user, the TPM may enter the lockout state. To resume using the TPM virtual smart card, it is necessary to reset the lockout on the TPM by using the owner's password or to wait for the lockout to expire. Unblocking the user PIN does not reset the lockout in the TPM. When the TPM is in lockout, the TPM virtual smart card appears as if it is blocked. When the TPM enters the lockout state because the user entered an incorrect PIN too many times, it may be necessary to reset the user PIN by using the virtual smart card management tools, such as Tpmvscmgr command-line tool.
 
 ## See also
 

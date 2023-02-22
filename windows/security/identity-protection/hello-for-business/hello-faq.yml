@@ -196,7 +196,7 @@ sections:
           No. While it's possible to set a convenience PIN on Azure AD joined and hybrid Azure AD joined devices, convenience PIN isn't supported for Azure AD user accounts (including synchronized identities). Convenience PIN is only supported for on-premises Active Directory users and local account users.
       - question: What about virtual smart cards?
         answer: |
-          Windows Hello for Business is the modern, two-factor credential for Windows. Microsoft will be deprecating virtual smart cards in the future, but no date is set at this time. Customers using virtual smart cards should move to Windows Hello for Business. Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business. Microsoft recommends that new Windows deployments use Windows Hello for Business.
+          Windows Hello for Business is the modern, two-factor authentication for Windows. Microsoft will deprecate virtual smart cards in the near future. Customers using virtual smart cards are strongly encouraged to move to Windows Hello for Business. Microsoft will publish the deprecation date to ensure customers have adequate lead time to move to Windows Hello for Business. We recommend that new Windows deployments use Windows Hello for Business.      - question: What URLs do I need to allow for a hybrid deployment?
       - question: What URLs do I need to allow for a hybrid deployment?
         answer: |
           For a list of required URLs, see [Microsoft 365 Common and Office Online](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#microsoft-365-common-and-office-online).

@@ -1,20 +1,16 @@
 ---
 title: Tpmvscmgr (Windows 10)
 description: This topic for the IT professional describes the Tpmvscmgr command-line tool, through which an administrator can create and delete TPM virtual smart cards on a computer.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.topic: article
-ms.localizationpriority: medium
-ms.date: 04/19/2017
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows Server 2016</b>
-ms.technology: itpro-security
+ms.topic: conceptual
+ms.date: 02/22/2023
+appliesto:
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # Tpmvscmgr
+
+[!INCLUDE [virtual-smart-card-deprecation-notice](../../includes/virtual-smart-card-deprecation-notice.md)]
 
 The Tpmvscmgr command-line tool allows users with Administrative credentials to create and delete TPM virtual smart cards on a computer. For examples of how this command can be used, see [Examples](#examples).
 
@@ -26,7 +22,7 @@ The Tpmvscmgr command-line tool allows users with Administrative credentials to 
 
 ### Parameters for Create command
 
-The Create command sets up new virtual smart cards on the user’s system. It returns the instance ID of the newly created card for later reference if deletion is required. The instance ID is in the format ROOT\\SMARTCARDREADER\\000n where n starts from 0 and is increased by 1 each time you create a new virtual smart card.
+The Create command sets up new virtual smart cards on the user's system. It returns the instance ID of the newly created card for later reference if deletion is required. The instance ID is in the format ROOT\\SMARTCARDREADER\\000n where n starts from 0 and is increased by 1 each time you create a new virtual smart card.
 
 | Parameter | Description |
 |-----------|-------------|

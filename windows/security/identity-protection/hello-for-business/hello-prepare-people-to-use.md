@@ -16,6 +16,8 @@ Although the organization may require users to change their Active Directory or 
 
 People who are currently using virtual or physical smart cards for authentication can use their virtual smart card to verify their identity when they set up Hello.
 
+[!INCLUDE [virtual-smart-card-deprecation-notice](../../includes/virtual-smart-card-deprecation-notice.md)]
+
 ## On devices owned by the organization
 
 When someone sets up a new device, they are prompted to choose who owns the device. For corporate devices, they select **This device belongs to my organization**.

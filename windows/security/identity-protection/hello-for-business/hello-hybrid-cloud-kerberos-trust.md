@@ -1,10 +1,10 @@
 ---
 title: Windows Hello for Business cloud Kerberos trust deployment
 description: Learn how to deploy Windows Hello for Business in a cloud Kerberos trust scenario.
-ms.date: 11/1/2022
+ms.date: 02/22/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10, version 21H2 and later</a>
-ms.topic: article
+ms.topic: tutorial
 ---
 # Cloud Kerberos trust deployment
 

@@ -34,23 +34,15 @@ For info about which versions of Windows support which versions of the TPM, see 
 
 The following sections provide an overview of the technologies that support the TPM:
 
--   [Measured Boot with support for attestation](#measured-boot-with-support-for-attestation)
-
--   [TPM-based Virtual Smart Card](#tpm-based-virtual-smart-card)
-
--   [TPM-based certificate storage](#tpm-based-certificate-storage)
-
--   [TPM Cmdlets](#tpm-cmdlets)
-
--   [Physical presence interface](#physical-presence-interface)
-
--   [TPM 1.2 states and initialization](#tpm-12-states-and-initialization)
-
--   [Endorsement keys](#endorsement-keys)
-
--   [TPM Key Attestation](#key-attestation)
-
--   [Anti-hammering](#anti-hammering)
+- [Measured Boot with support for attestation](#measured-boot-with-support-for-attestation)
+- [TPM-based Virtual Smart Card](#tpm-based-virtual-smart-card)
+- [TPM-based certificate storage](#tpm-based-certificate-storage)
+- [TPM Cmdlets](#tpm-cmdlets)
+- [Physical presence interface](#physical-presence-interface)
+- [TPM 1.2 states and initialization](#tpm-12-states-and-initialization)
+- [Endorsement keys](#endorsement-keys)
+- [TPM Key Attestation](#key-attestation)
+- [Anti-hammering](#anti-hammering)
 
 The following topic describes the TPM Services that can be controlled centrally by using Group Policy settings:
 [TPM Group Policy Settings](trusted-platform-module-services-group-policy-settings.md).
@@ -60,6 +52,8 @@ The following topic describes the TPM Services that can be controlled centrally 
 The Measured Boot feature provides antimalware software with a trusted (resistant to spoofing and tampering) log of all boot components. Antimalware software can use the log to determine whether components that ran before it are trustworthy versus infected with malware. It can also send the Measured Boot logs to a remote server for evaluation. The remote server can start remediation actions by interacting with software on the client or through out-of-band mechanisms, as appropriate.
 
 ## TPM-based Virtual Smart Card
+
+[!INCLUDE [virtual-smart-card-deprecation-notice](../../includes/virtual-smart-card-deprecation-notice.md)]
 
 The Virtual Smart Card emulates the functionality of traditional smart cards. Virtual Smart Cards use the TPM chip that is available on an organization's computers, rather than using a separate physical smart card and reader. This greatly reduces the management and deployment cost of smart cards in an enterprise. To the end user, the Virtual Smart Card is always available on the computer. If a user needs to use more than one computer, a Virtual Smart Card must be issued to the user for each computer. A computer that is shared among multiple users can host multiple Virtual Smart Cards, one for each user.
 

@@ -1,22 +1,16 @@
 ---
 title: Deploy Virtual Smart Cards (Windows 10)
 description: This topic for the IT professional discusses the factors to consider when you deploy a virtual smart card authentication solution.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
 ms.topic: article
-ms.localizationpriority: medium
-ms.date: 04/19/2017
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows Server 2016</b>
-ms.technology: itpro-security
+ms.date: 02/22/2023
+appliesto:
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # Deploy Virtual Smart Cards
 
-Applies To: Windows 10, Windows Server 2016
+[!INCLUDE [virtual-smart-card-deprecation-notice](../../includes/virtual-smart-card-deprecation-notice.md)]
 
 This topic for the IT professional discusses the factors to consider when you deploy a virtual smart card authentication solution.
 
@@ -24,7 +18,7 @@ Traditional identity devices, such as physical smart cards, follow a predictable
 
 ![Diagram of physical smart card lifecycle.](images/vsc-physical-smart-card-lifecycle.png)
 
-Physical devices are created by a dedicated manufacturer and then purchased by the corporation that will ultimately deploy it. The device passes through the personalization stage, where its unique properties are set. In smart cards, these properties are the administrator key, Personal Identification Number (PIN), PIN Unlock Key (PUK), and its physical appearance. To provision the device, it is loaded with the required certificates, such as a sign-in certificate. After you provision the device, it is ready for use. The device must simply be maintained. For example, you must replace cards when they are lost or stolen and reset PINs when users forget them. Finally, you’ll retire devices when they exceed their intended lifetime or when employees leave the company.
+Physical devices are created by a dedicated manufacturer and then purchased by the corporation that will ultimately deploy it. The device passes through the personalization stage, where its unique properties are set. In smart cards, these properties are the administrator key, Personal Identification Number (PIN), PIN Unlock Key (PUK), and its physical appearance. To provision the device, it is loaded with the required certificates, such as a sign-in certificate. After you provision the device, it is ready for use. The device must simply be maintained. For example, you must replace cards when they are lost or stolen and reset PINs when users forget them. Finally, you'll retire devices when they exceed their intended lifetime or when employees leave the company.
 
 This topic contains information about the following phases in a virtual smart card lifecycle:
 
@@ -71,7 +65,7 @@ A TPM virtual smart card simulates a physical smart card, and it uses the TPM to
 -   **Anti-hammering**: If a user enters a PIN incorrectly, the virtual smart card responds by using the anti-hammering logic of the TPM, which rejects further attempts for a period of time instead of blocking the card. This is also known as lockout.
     For more information, see [Blocked virtual smart card](#blocked-virtual-smart-card) and [Evaluate Virtual Smart Card Security](virtual-smart-card-evaluate-security.md). 
 
-There are several options for creating virtual smart cards, depending on the size of the deployment and budget of the organization. The lowest cost option is using Tpmvscmgr.exe to create cards individually on users’ computers. Alternatively, a virtual smart card management solution can be purchased to more easily accomplish virtual smart card creation on a larger scale and aid in further phases of deployment. Virtual smart cards can be created on computers that are to be provisioned for an employee or on those that are already in an employee’s possession. In either approach, there should be some central control over personalization and provisioning. If a computer is intended for use by multiple employees, multiple virtual smart cards can be created on a computer.
+There are several options for creating virtual smart cards, depending on the size of the deployment and budget of the organization. The lowest cost option is using Tpmvscmgr.exe to create cards individually on users' computers. Alternatively, a virtual smart card management solution can be purchased to more easily accomplish virtual smart card creation on a larger scale and aid in further phases of deployment. Virtual smart cards can be created on computers that are to be provisioned for an employee or on those that are already in an employee's possession. In either approach, there should be some central control over personalization and provisioning. If a computer is intended for use by multiple employees, multiple virtual smart cards can be created on a computer.
 
 For information about the TPM Virtual Smart Card command-line tool, see [Tpmvscmgr](virtual-smart-card-tpmvscmgr.md).
 
@@ -85,7 +79,7 @@ Because the administrator key is critical to the security of the card, it is imp
 
 -   **Random, not stored**: Administrator keys are assigned randomly for all virtual smart cards, and they are not recorded. This is a valid option if the deployment administrators do not require the ability to reset PINs, and instead prefer to delete and reissue virtual smart cards. This could also be a viable strategy if the administrator prefers to set PUK values for the virtual smart cards and then use this value to reset PINs, if necessary.
 
--   **Random, stored**: Administrator keys are assigned randomly and stored in a central location. Each card’s security is independent of the others. This is secure on a large scale unless the administrator key database is compromised.
+-   **Random, stored**: Administrator keys are assigned randomly and stored in a central location. Each card's security is independent of the others. This is secure on a large scale unless the administrator key database is compromised.
 
 -   **Deterministic**: Administrator keys are the result of some function or known information. For example, the user ID could be used to randomly generate data that can be further processed through a symmetric encryption algorithm by using a secret. This administrator key can be similarly regenerated when needed, and it does not need to be stored. The security of this method relies on the security of the secret used.
 
@@ -99,13 +93,13 @@ TPM virtual smart cards can be personalized on an individual basis when they are
 
 Provisioning is the process of loading specific credentials onto a TPM virtual smart card. These credentials consist of certificates that are created to give users access to a specific service, such as domain sign in. A maximum of 30 certificates is allowed on each virtual smart card. As with physical smart cards, several decisions must be made regarding the provisioning strategy, based on the environment of the deployment and the desired level of security.
 
-A high-assurance level of secure provisioning requires absolute certainty about the identity of the individual who is receiving the certificate. Therefore, one method of high-assurance provisioning is utilizing previously provisioned strong credentials, such as a physical smart card, to validate identity during provisioning. In-person proofing at enrollment stations is another option, because an individual can easily and securely prove his or her identity with a passport or driver’s license, although this can become infeasible on a larger scale. To achieve a similar level of assurance, a large organization can implement an “enroll-on-behalf-of” strategy, in which employees are enrolled with their credentials by a superior who can personally verify their identities. This creates a chain of trust that ensures individuals are checked in person against their proposed identities, but without the administrative strain of provisioning all virtual smart cards from a single central enrollment station.
+A high-assurance level of secure provisioning requires absolute certainty about the identity of the individual who is receiving the certificate. Therefore, one method of high-assurance provisioning is utilizing previously provisioned strong credentials, such as a physical smart card, to validate identity during provisioning. In-person proofing at enrollment stations is another option, because an individual can easily and securely prove his or her identity with a passport or driver's license, although this can become infeasible on a larger scale. To achieve a similar level of assurance, a large organization can implement an "enroll-on-behalf-of" strategy, in which employees are enrolled with their credentials by a superior who can personally verify their identities. This creates a chain of trust that ensures individuals are checked in person against their proposed identities, but without the administrative strain of provisioning all virtual smart cards from a single central enrollment station.
 
 For deployments in which a high-assurance level is not a primary concern, you can use self-service solutions. These can include using an online portal to obtain credentials or simply enrolling for certificates by using Certificate Manager, depending on the deployment. Consider that virtual smart card authentication is only as strong as the method of provisioning. For example, if weak domain credentials (such as a password alone) are used to request the authentication certificate, virtual smart card authentication will be equivalent to using only the password, and the benefits of two-factor authentication are lost.
 
 For information about using Certificate Manager to configure virtual smart cards, see [Get Started with Virtual Smart Cards: Walkthrough Guide](virtual-smart-card-get-started.md).
 
-High-assurance and self-service solutions approach virtual smart card provisioning by assuming that the user’s computer has been issued prior to the virtual smart card deployment, but this is not always the case. If virtual smart cards are being deployed with new computers, they can be created, personalized, and provisioned on the computer before the user has contact with that computer.
+High-assurance and self-service solutions approach virtual smart card provisioning by assuming that the user's computer has been issued prior to the virtual smart card deployment, but this is not always the case. If virtual smart cards are being deployed with new computers, they can be created, personalized, and provisioned on the computer before the user has contact with that computer.
 
 In this situation, provisioning becomes relatively simple, but identity checks must be put in place to ensure that the recipient of the computer is the individual who was expected during provisioning. This can be accomplished by requiring the employee to set the initial PIN under the supervision of the deployment administrator or manager.
 
@@ -192,7 +186,7 @@ Certificate revocation requires careful planning. When information about the cer
 
 ## Unmanaged cards
 
-Unmanaged virtual smart cards are not serviceable by an IT administrator. Unmanaged cards might be suitable if an organzation does not have an elaborate smart card deployment management tool and using remote desktop connections to manage the card is not desirable. Because unmanaged cards are not serviceable by the IT administrator, when a user needs help with a virtual smart card (for example, resetting or unlocking a PIN), the only option available to the user is to delete the card and create it again. This results in loss of the user’s credentials and he or she must re-enroll.
+Unmanaged virtual smart cards are not serviceable by an IT administrator. Unmanaged cards might be suitable if an organzation does not have an elaborate smart card deployment management tool and using remote desktop connections to manage the card is not desirable. Because unmanaged cards are not serviceable by the IT administrator, when a user needs help with a virtual smart card (for example, resetting or unlocking a PIN), the only option available to the user is to delete the card and create it again. This results in loss of the user's credentials and he or she must re-enroll.
 
 ### Unmanaged card creation
 
@@ -222,7 +216,7 @@ Another option is to have the user access an enrollment portal that is available
 
 You can provide users with a short-term certificate through a Personal Information Exchange (.pfx) file. You can generate the .pfx file by initiating a request from a domain-joined computer. Additional policy constraints can be enforced on the .pfx file to assert the identity of the user.
 
-The user can import the certificate into the **MY** store (which is the user’s certificate store). And your organization can present the user with a script that can be used to sign the request for the short-term certificate and to request a virtual smart card.
+The user can import the certificate into the **MY** store (which is the user's certificate store). And your organization can present the user with a script that can be used to sign the request for the short-term certificate and to request a virtual smart card.
 
 For deployments that require users to use a physical smart card to sign the certificate request, you can use the procedure:
 
@@ -246,11 +240,11 @@ Certificate revocation requires careful planning. When information about the cer
 
 Maintenance is a significant portion of the virtual smart card lifecycle and one of the most important considerations from a management perspective. After virtual smart cards are created, personalized, and provisioned, they can be used for convenient two-factor authentication. Deployment administrators must be aware of several common administrative scenarios, which can be approached by using a purchased virtual smart card solution or on a case-by-case basis with in-house methods.
 
-**Renewal**: Renewing virtual smart card credentials is a regular task that is necessary to preserve the security of a virtual smart card deployment. Renewal is the result of a signed request from a user who specifies the key pair desired for the new credentials. Depending on user’s choice or deployment specification, the user can request credentials with the same key pair as previously used, or choose a newly generated key pair.
+**Renewal**: Renewing virtual smart card credentials is a regular task that is necessary to preserve the security of a virtual smart card deployment. Renewal is the result of a signed request from a user who specifies the key pair desired for the new credentials. Depending on user's choice or deployment specification, the user can request credentials with the same key pair as previously used, or choose a newly generated key pair.
 
 When renewing with a previously used key, no extra steps are required because a strong certificate with this key was issued during the initial provisioning. However, when the user requests a new key pair, you must take the same steps that were used during provisioning to assure the strength of the credentials. Renewal with new keys should occur periodically to counter sophisticated long-term attempts by malicious users to infiltrate the system. When new keys are assigned, you must ensure that the new keys are being used by the expected individuals on the same virtual smart cards.
 
-**Resetting PINs**: Resetting virtual smart card PINs is also a frequent necessity, because employees forget their PINs. There are two ways to accomplish this, depending on choices made earlier in the deployment: Use a PUK (if the PUK is set), or use a challenge-response approach with the administration key. Before resetting the PIN, the user’s identity must be verified by using some means other than the card—most likely the verification method that you used during initial provisioning (for example, in-person proofing). This is necessary in user-error scenarios when users forget their PINs. However, you should never reset a PIN if it has been compromised because the level of vulnerability after the PIN is exposed is difficult to identify. The entire card should be reissued.
+**Resetting PINs**: Resetting virtual smart card PINs is also a frequent necessity, because employees forget their PINs. There are two ways to accomplish this, depending on choices made earlier in the deployment: Use a PUK (if the PUK is set), or use a challenge-response approach with the administration key. Before resetting the PIN, the user's identity must be verified by using some means other than the card—most likely the verification method that you used during initial provisioning (for example, in-person proofing). This is necessary in user-error scenarios when users forget their PINs. However, you should never reset a PIN if it has been compromised because the level of vulnerability after the PIN is exposed is difficult to identify. The entire card should be reissued.
 
 **Lockout reset**: A frequent precursor to resetting a PIN is the necessity of resetting the TPM lockout time because the TPM anti-hammering logic will be engaged with multiple PIN entry failures for a virtual smart card. This is currently device specific.
 
@@ -262,7 +256,7 @@ The card should be reissued if the same computer is used by other employees with
 
 #### Card reissuance
 
-The most common scenario in an organization is reissuing virtual smart cards, which can be necessary if the operating system is reinstalled or if the virtual smart card is compromised in some manner. Reissuance is essentially the recreation of the card, which involves establishing a new PIN and administrator key and provisioning a new set of associated certificates. This is an immediate necessity when a card is compromised, for example, if the virtual smart card-protected computer is exposed to an adversary who might have access to the correct PIN. Reissuance is the most secure response to an unknown exposure of a card’s privacy. Additionally, reissuance is necessary after an operating system is reinstalled because the virtual smart card device profile is removed with all other user data when the operating system is reinstalled.
+The most common scenario in an organization is reissuing virtual smart cards, which can be necessary if the operating system is reinstalled or if the virtual smart card is compromised in some manner. Reissuance is essentially the recreation of the card, which involves establishing a new PIN and administrator key and provisioning a new set of associated certificates. This is an immediate necessity when a card is compromised, for example, if the virtual smart card-protected computer is exposed to an adversary who might have access to the correct PIN. Reissuance is the most secure response to an unknown exposure of a card's privacy. Additionally, reissuance is necessary after an operating system is reinstalled because the virtual smart card device profile is removed with all other user data when the operating system is reinstalled.
 
 #### Blocked virtual smart card
 
