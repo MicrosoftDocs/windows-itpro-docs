@@ -77,4 +77,4 @@ Before moving to the next section, ensure the following steps are complete:
 > - Update group memberships for the AD FS service account
 
 > [!div class="nextstepaction"]
-> [Next: configure policy settings >](hello-hybrid-cert-whfb-settings-policy.md)
+> [Next: configure policy settings >](/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-provision)

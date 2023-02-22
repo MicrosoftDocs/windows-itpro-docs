@@ -29,14 +29,14 @@ Object owners generally grant permissions to security groups rather than to indi
 
 This content set contains:
 
-- [Dynamic Access Control Overview](dynamic-access-control.md)
-- [Security identifiers](security-identifiers.md)
-- [Security Principals](security-principals.md)
+- [Dynamic Access Control Overview](/windows-server/identity/solution-guides/dynamic-access-control-overview)
+- [Security identifiers](/windows-server/identity/ad-ds/manage/understand-security-identifiers)
+- [Security Principals](/windows-server/identity/ad-ds/manage/understand-security-principals)
   - [Local Accounts](local-accounts.md)
-  - [Active Directory Accounts](active-directory-accounts.md)
-  - [Microsoft Accounts](microsoft-accounts.md)
-  - [Service Accounts](service-accounts.md)
-  - [Active Directory Security Groups](active-directory-security-groups.md)
+  - [Active Directory Accounts](/windows-server/identity/ad-ds/manage/understand-default-user-accounts)
+  - [Microsoft Accounts](/windows-server/identity/ad-ds/manage/understand-microsoft-accounts)
+  - [Service Accounts](/windows-server/identity/ad-ds/manage/understand-service-accounts)
+  - [Active Directory Security Groups](/windows-server/identity/ad-ds/manage/understand-security-groups)
 
 ## Practical applications
 
