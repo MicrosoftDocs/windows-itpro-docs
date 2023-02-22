@@ -25,8 +25,8 @@ ms.technology: itpro-security
 - Windows 11
 - Windows Server 2016 and above
 
-> [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional lists software requirements to use AppLocker on the supported Windows operating systems.
 
