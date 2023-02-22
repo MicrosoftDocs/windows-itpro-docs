@@ -1,7 +1,7 @@
 ---
 title: Roles and responsibilities
 description: This article describes the roles and responsibilities provided by Windows Autopatch and what the customer must do
-ms.date: 12/12/2022
+ms.date: 02/28/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
