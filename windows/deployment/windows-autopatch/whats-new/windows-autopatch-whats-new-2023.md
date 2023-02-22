@@ -36,8 +36,8 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Message center post number | Description |
 | ----- | ----- |
-| [MC517327](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned service maintenance downtime for European Union (EU) Windows Autopatch customers enrolled before November 8, 2022 |
 | [MC517330](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Ability to opt out of Microsoft 365 App updates |
+| [MC517327](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned service maintenance downtime for European Union (EU) Windows Autopatch customers enrolled before November 8, 2022 |
 
 ## January 2023
 
