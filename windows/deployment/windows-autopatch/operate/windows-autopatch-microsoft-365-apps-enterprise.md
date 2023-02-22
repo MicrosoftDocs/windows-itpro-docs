@@ -98,11 +98,11 @@ For organizations seeking greater control, you can allow or block Microsoft 365 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Navigate to the **Devices** > **Release Management** > **Release settings**.
 3. Go to the **Microsoft 365 apps updates** section. By default, the **Allow/Block** toggle is set to **Allow**.
-4. Turn off the **Allow** toggle to opt out of Microsoft 365 App update policies. You'll see the *Update in process. This setting will be unavailable until the update is complete.* notification.
-5. Once the update is complete, you’ll receive the *This setting is updated.* notification.
+4. Turn off the **Allow** toggle to opt out of Microsoft 365 App update policies. You'll see the notification: *Update in process. This setting will be unavailable until the update is complete.*
+5. Once the update is complete, you’ll receive the notification: *This setting is updated.*
 
 > [!NOTE]
-> If the *This setting couldn’t be updated. Please try again or submit a support request.* notification appears. Use the following steps:<ol><li>Refresh your page.</li><li>Please repeat the same steps in To block Windows Autopatch Microsoft 365 apps updates.</li><li>If the issue persists, [submit a support request](../operate/windows-autopatch-support-request.md).</li>
+> If the notification: *This setting couldn’t be updated. Please try again or submit a support request.* appears, use the following steps:<ol><li>Refresh your page.</li><li>Please repeat the same steps in To block Windows Autopatch Microsoft 365 apps updates.</li><li>If the issue persists, [submit a support request](../operate/windows-autopatch-support-request.md).</li>
 
 **To verify if the Microsoft 365 App update setting is set to Allow:**
 
