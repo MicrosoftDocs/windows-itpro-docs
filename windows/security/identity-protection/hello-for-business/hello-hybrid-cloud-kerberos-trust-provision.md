@@ -199,15 +199,6 @@ If you deployed Windows Hello for Business using the certificate trust model, an
 > [!NOTE]
 > For hybrid Azure AD joined devices, users must perform the first sign in with new credentials while having line of sight to a DC.
 
-## Troubleshooting
-
-If you encounter issues or want to share feedback about Windows Hello for Business cloud Kerberos trust, share via the *Windows Feedback Hub* app by following these steps:
-
-1. Open **Feedback Hub**, and make sure that you're signed in
-1. Submit feedback by selecting the following categories:
-  - Category: Security and Privacy
-  - Subcategory: Windows Hello PIN
-
 ## Frequently Asked Questions
 
 For a list of frequently asked questions about Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business Frequently Asked Questions](hello-faq.yml#cloud-kerberos-trust).
