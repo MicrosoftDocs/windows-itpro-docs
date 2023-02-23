@@ -20,7 +20,7 @@ ms.collection:
 
 This article provides information how to troubleshoot the Trusted Platform Module (TPM):
 
-- [Troubleshoot TPM initialization](#troubleshoot-tpm-initialization)
+- [Troubleshoot TPM initialization](#tpm-initialization)
 - [Clear all the keys from the TPM](#clear-all-the-keys-from-the-tpm)
 
 With TPM 1.2 and Windows 11, you can also take the following actions:

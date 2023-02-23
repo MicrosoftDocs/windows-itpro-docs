@@ -1,13 +1,13 @@
 ---
-title: Trusted Platform Module (TPM) fundamentals (Windows)
-description: Inform yourself about the components of the Trusted Platform Module (TPM 1.2 and TPM 2.0) and how they are used to mitigate dictionary attacks.
+title: Trusted Platform Module (TPM) fundamentals
+description: Learn about the components of the Trusted Platform Module and how they're used to mitigate dictionary attacks.
 ms.reviewer: 
 ms.prod: windows-client
 author: dansimp
 ms.author: dansimp
 manager: aaroncz
 ms.topic: conceptual
-ms.date: 12/27/2021
+ms.date: 02/22/2023
 ms.technology: itpro-security
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
@@ -65,7 +65,7 @@ You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets i
 
 ## Physical presence interface
 
-For TPM 1.2, the TCG specifications for TPMs require physical presence (typically, pressing a key) for turning on the TPM, turning it off, or clearing it. These actions typically cannot be automated with scripts or other automation tools unless the individual OEM supplies them.
+For TPM 1.2, the TCG specifications for TPMs require physical presence (typically, pressing a key) for turning on the TPM, turning it off, or clearing it. These actions typically can't be automated with scripts or other automation tools unless the individual OEM supplies them.
 
 ## TPM 1.2 states and initialization
 
@@ -114,7 +114,7 @@ Both BitLocker and Windows Hello use the TPM to prevent PIN brute-force attacks.
 
 Windows 10, version 1607 and earlier used Dictionary Attack Prevention parameters. The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability. For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time. A TPM 2.0 in this example could be configured to allow only 32 PIN guesses immediately, and then only one more guess every two hours. This totals a maximum of about 4415 guesses per year. If the PIN is four digits, all 9999 possible PIN combinations could be attempted in a little over two years.
 
-Staring in Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to 6 characters, to better align with other Windows features that use TPM 2.0, including Windows Hello. Increasing the PIN length requires a greater number of guesses for an attacker. Therefore, the lockout duration between each guess was shortened to allow legitimate users to retry a failed attempt sooner while maintaining a similar level of protection. In case the legacy parameters for lockout threshold and recovery time need to be used, make sure that GPO is enabled and [configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0](/windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings#configure-the-system-to-use-legacy-dictionary-attack-prevention-parameters-setting-for-tpm-20).
+Staring in Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to six characters, to better align with other Windows features that use TPM 2.0, including Windows Hello. Increasing the PIN length requires a greater number of guesses for an attacker. Therefore, the lockout duration between each guess was shortened to allow legitimate users to retry a failed attempt sooner while maintaining a similar level of protection. In case the legacy parameters for lockout threshold and recovery time need to be used, make sure that GPO is enabled and [configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0](/windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings#configure-the-system-to-use-legacy-dictionary-attack-prevention-parameters-setting-for-tpm-20).
 
 ### TPM-based smart cards
 
