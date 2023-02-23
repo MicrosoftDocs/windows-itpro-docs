@@ -2,7 +2,7 @@
 title: Get and deploy Minecraft Education
 description: Learn how to obtain and distribute Minecraft Education to Windows devices.
 ms.topic: how-to
-ms.date: 02/21/2023
+ms.date: 02/23/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ms.collection:
@@ -31,9 +31,9 @@ Minecraft Education is a game-based platform that inspires creative and inclusiv
 
 ## Try or purchase Minecraft Education
 
-Users in a Microsoft-verified academic organization with Microsoft 365 accounts have [access to a free trial][EDU-1] for Minecraft Education. This grants faculty accounts 25 free logins, and student accounts 10 free logins before a paid license is required to continue playing. Users in non-Microsoft-verified academic organizations are granted 10 free logins.
+Users in a Microsoft-verified academic organization with Microsoft 365 accounts have [access to a free trial][EDU-1] for Minecraft Education. This grants faculty accounts 25 free logins, and student accounts 10 free logins before a paid license is required to continue playing. Users in non-Microsoft-verified academic organizations have 10 free logins.
 
-[Subscriptions can be purchased][EDU-2] directly in the *Microsoft 365 admin center*, via volume licensing agreements, or through partner resellers.
+Organizations can [purchase subscriptions][EDU-2] directly in the *Microsoft 365 admin center*, via volume licensing agreements, or through partner resellers.
 
 When you sign up for a Minecraft Education trial, or purchase a subscription, Minecraft Education licenses are linked to your Azure Active Directory (Azure AD) tenant. If you don't have an Azure AD tenant:
 
@@ -107,15 +107,15 @@ For more information about license assignment, see [Manage Licenses in the Admin
 There are different ways to install Minecraft Education on Windows devices. You can manually install the app on each device, or you can use a deployment tool to distribute the app to multiple devices.
 If you're using Microsoft Intune to manage your devices, follow these steps to deploy Minecraft Education:
 
-1. Go to the <a href="https://intune.micorsoft.com" target="_blank"><b>Microsoft Intune admin center</b></a>
+1. Go to the <a href="https://intune.microsoft.com" target="_blank"><b>Microsoft Intune admin center</b></a>
 1. Select **Apps > Windows > Add**
 1. Under *App type*, select **Microsoft Store app (new)** and choose **Select**
 1. Select **Search the Microsoft Store app (new)** and search for **Minecraft Education**
 1. Select the app and choose **Select**
 1. On the *App information* screen, select **Next**
 1. On the *Assignments* screen, choose how you want to target the installation of Minecraft Education
-    - *Required* means that the app is installed without user interaction
-    - *Available* enables Minecraft Education in the Company Portal, where user can install the app on-demand
+    - *Required* means that Intune installs the app without user interaction
+    - *Available* enables Minecraft Education in the Company Portal, where users can install the app on-demand
 1. Select **Next**
 1. On the *Review + Create* screen, select **Create**
 
@@ -130,7 +130,7 @@ For more information how to deploy Minecraft Education, see:
 - [iOS installation guide][EDU-8]
 - [macOS installation guide][EDU-9]
 
-If you're having trouble installing the app, you can get more help on the [Minecraft Education support page](https://aka.ms/minecraftedusupport).
+If you're having trouble installing the app, you can get more help on the [Minecraft Education support page][AKA-1].
 
 <!--links-->
 [EDU-1]: https://educommunity.minecraft.net/hc/articles/360047116432
@@ -145,3 +145,5 @@ If you're having trouble installing the app, you can get more help on the [Minec
 
 [M365-1]: /microsoft-365/commerce/billing-and-payments/pay-for-your-subscription
 [M365-2]: /microsoft-365/admin/add-users/about-admin-roles
+
+[AKA-1]: https://aka.ms/minecraftedusupport
