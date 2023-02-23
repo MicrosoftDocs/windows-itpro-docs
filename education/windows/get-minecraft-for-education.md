@@ -98,7 +98,7 @@ You must be a *Global*, *License*, or *User admin* to assign licenses. For more 
     > [!Note]
     > If you turn off this setting after students have been using Minecraft Education, they will have up to 30 more days to use Minecraft Education before they don't have access
 
-:::image type="content" source="images/minecraft/admin-center-minecraft-license.png" alt-text="Microsoft 365 admin center - assignment of a Minecraft Education license to a user" lightbox="images/minecraft/admin-center-minecraft-license.png":::
+:::image type="content" source="images/minecraft/admin-center-minecraft-license.png" alt-text="Screenshot of the Microsoft 365 admin center - assignment of a Minecraft Education license to a user." lightbox="images/minecraft/admin-center-minecraft-license.png":::
 
 For more information about license assignment, see [Manage Licenses in the Admin Center][EDU-5].
 
@@ -121,7 +121,7 @@ If you're using Microsoft Intune to manage your devices, follow these steps to d
 
 Intune will install Minecraft Education at the next device check-in, or will make it available in Company Portal for on-demand installs.
 
-:::image type="content" source="images/minecraft/win11-minecraft-education.png" alt-text="Minecraft Education executing on a Windows 11 device.":::
+:::image type="content" source="images/minecraft/win11-minecraft-education.png" alt-text="Screenshot of Minecraft Education executing on a Windows 11 device.":::
 
 For more information how to deploy Minecraft Education, see:
 
