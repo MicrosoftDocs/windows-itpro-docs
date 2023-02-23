@@ -21,7 +21,7 @@ ms.date: 12/13/2022
 
 ### Enable Personal Data Encryption (PDE)
 
-1. Sign into [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign into [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Navigate to **Devices** > **Configuration Profiles**
 
@@ -65,7 +65,7 @@ ms.date: 12/13/2022
 
 ### Disable Winlogon automatic restart sign-on (ARSO)
 
-1. Sign into [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign into [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Navigate to **Devices** > **Configuration Profiles**
 
@@ -107,7 +107,7 @@ ms.date: 12/13/2022
 
 ### Disable kernel-mode crash dumps and live dumps
 
-1. Sign into [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign into [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Navigate to **Devices** > **Configuration Profiles**
 
@@ -145,7 +145,7 @@ ms.date: 12/13/2022
 
 ### Disable Windows Error Reporting (WER)/Disable user-mode crash dumps
 
-1. Sign into [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign into [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Navigate to **Devices** > **Configuration Profiles**
 
@@ -183,7 +183,7 @@ ms.date: 12/13/2022
 
 ### Disable hibernation
 
-1. Sign into [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign into [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Navigate to **Devices** > **Configuration Profiles**
 
@@ -221,7 +221,7 @@ ms.date: 12/13/2022
 
 ### Disable allowing users to select when a password is required when resuming from connected standby
 
-1. Sign into [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign into [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Navigate to **Devices** > **Configuration Profiles**
 

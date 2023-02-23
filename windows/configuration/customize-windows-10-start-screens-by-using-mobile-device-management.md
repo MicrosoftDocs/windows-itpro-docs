@@ -55,7 +55,7 @@ Two features enable Start layout control:
 
 The following example uses Microsoft Intune to configure an MDM policy that applies a customized Start layout:
 
-1. Sign in to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 

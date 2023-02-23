@@ -32,7 +32,7 @@ Create a configuration profile that will set the required policies for Windows U
 
 ### Settings catalog
 
-1. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Windows** > **Configuration profiles**.
+1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Windows** > **Configuration profiles**.
 1. On the **Configuration profiles** view, select **Create profile**.
 1. Select **Platform**="Windows 10 and later" and **Profile type**="Settings Catalog", and then select **Create**.
 1. You're now on the Configuration profile creation screen. On the **Basics** tab, give a **Name** and **Description**.
@@ -57,7 +57,7 @@ Create a configuration profile that will set the required policies for Windows U
 
 ### Custom OMA URI-based profile
 
-1. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Windows** > **Configuration profiles**.
+1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Windows** > **Configuration profiles**.
 1. On the **Configuration profiles** view, select **Create profile**.
 1. Select **Platform**="Windows 10 and later" and **Profile type**="Templates".
 1. For **Template name**, select **Custom**, and then select **Create**.
