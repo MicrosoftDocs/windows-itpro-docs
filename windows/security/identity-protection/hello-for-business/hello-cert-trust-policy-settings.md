@@ -3,6 +3,7 @@ title: Configure Windows Hello for Business Policy settings in an on-premises ce
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business in an on-premises certificate trust scenario
 ms.collection: 
   - highpri
+  - tier1
 ms.date: 12/12/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>

@@ -1,7 +1,7 @@
 ---
 title: Windows quality updates
 description: This article explains how Windows quality updates are managed in Autopatch
-ms.date: 02/07/2023
+ms.date: 02/17/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -32,6 +32,9 @@ For a device to be eligible for Windows quality updates as a part of Windows Aut
 | Windows edition | Devices must be on a Windows edition supported by Windows Autopatch. For more information, see [Prerequisites](../prepare/windows-autopatch-prerequisites.md). |
 | Mobile device management (MDM) policy conflict | Devices must not have deployed any policies that would prevent device management. For more information, see [Conflicting and unsupported policies](../references/windows-autopatch-windows-update-unsupported-policies.md). |
 | Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](../references/windows-autopatch-windows-update-unsupported-policies.md#group-policy-and-other-policy-managers) |
+
+> [!NOTE]
+> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Additionally, Windows Autopatch can only manage Windows quality updates for devices that haven't reached the LTSC's [end of servicing date](/windows/release-health/release-information#enterprise-and-iot-enterprise-ltsbltsc-editions).
 
 ## Windows quality update releases
 
@@ -91,7 +94,7 @@ By default, the service expedites quality updates as needed. For those organizat
 
 **To turn off service-driven expedited quality updates:**
 
-1. Go to **[Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)** > **Devices**.
+1. Go to **[Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)** > **Devices**.
 2. Under **Windows Autopatch** > **Release management**, go to the **Release settings** tab and turn off the **Expedited quality updates** setting.
 
 > [!NOTE]
@@ -103,7 +106,7 @@ Windows Autopatch schedules and deploys required Out of Band (OOB) updates relea
 
 **To view deployed Out of Band quality updates:**
 
-1. Go to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > **Windows Autopatch** > **Release management**.
+1. Go to [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > **Windows Autopatch** > **Release management**.
 2. Under the **Release Announcements** tab, you can view the knowledge base (KB) articles corresponding to deployed OOB and regular Windows quality updates.
 
 > [!NOTE]
@@ -123,7 +126,7 @@ If Windows Autopatch detects a [significant issue with a release](../operate/win
 
 **To pause or resume a Windows quality update:**
 
-1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** from the left navigation menu.
 3. Under the **Windows Autopatch** section, select **Release management**.
 4. In the **Release management** blade, select either: **Pause** or **Resume**.

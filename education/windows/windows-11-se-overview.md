@@ -94,6 +94,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Class Policy`                            | 114.0.0           | Win32    | `Class Policy`                            |
 | `Classroom.cloud`                         | 1.40.0004         | Win32    | `NetSupport`                              |
 | `CoGat Secure Browser`                    | 11.0.0.19         | Win32    | `Riverside Insights`                      |
+| `ColorVeil`                               | 4.0.0.175         | Win32    | `East-Tec`                                | 
 | `ContentKeeper Cloud`                     | 9.01.45           | Win32    | `ContentKeeper Technologies`              |
 | `Dragon Professional Individual`          | 15.00.100         | Win32    | `Nuance Communications`                   |
 | `DRC INSIGHT Online Assessments`          | 12.0.0.0          | `Store`  | `Data recognition Corporation`            |
@@ -107,6 +108,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Ghotit Real Writer & Reader`             | 10.14.2.3         | Win32    | `Ghotit Ltd`                              |
 | `GoGuardian`                              | 1.4.4             | Win32    | `GoGuardian`                              |
 | `Google Chrome`                           | 109.0.5414.75     | Win32    | `Google`                                  |
+| `GuideConnect`                            | 1.23              | Win32    | `Dolphin Computer Access`                 |
 | `Illuminate Lockdown Browser`             | 2.0.5             | Win32    | `Illuminate Education`                    |
 | `Immunet`                                 | 7.5.8.21178       | Win32    | `Immunet`                                 |
 | `Impero Backdrop Client`                  | 4.4.86            | Win32    | `Impero Software`                         |

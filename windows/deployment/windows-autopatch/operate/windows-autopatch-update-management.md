@@ -71,7 +71,7 @@ If you want to move separate devices to different deployment rings, after Window
 
 **To move devices in between deployment rings:**
 
-1. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** in the left pane.
+1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** in the left pane.
 2. In the **Windows Autopatch** section, select **Devices**.
 3. In the **Ready** tab, select one or more devices you want to assign. All selected devices will be assigned to the deployment ring you specify.
 4. Select **Device actions** from the menu.

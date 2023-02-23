@@ -3,6 +3,7 @@ title: User Account Control Group Policy and registry key settings (Windows)
 description: Here's a list of UAC  Group Policy and registry key settings that your organization can use to manage UAC.
 ms.collection: 
   - highpri
+  - tier2
 ms.topic: article
 ms.date: 04/19/2017
 appliesto: 

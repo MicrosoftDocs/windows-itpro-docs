@@ -11,6 +11,7 @@ ms.reviewer:
 manager: aaroncz
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: conceptual
 ---
 

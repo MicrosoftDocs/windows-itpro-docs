@@ -90,17 +90,17 @@ To address these issues, [BitLocker Network Unlock](./bitlocker-how-to-enable-ne
 
 ### Protecting Thunderbolt and other DMA ports
 
-There are a few different options to protect DMA ports, such as Thunderbolt™3. Beginning with Windows 10 version 1803, new Intel-based devices have kernel protection against DMA attacks via Thunderbolt™ 3 ports enabled by default. This Kernel DMA Protection is available only for new systems beginning with Windows 10 version 1803, as it requires changes in the system firmware and/or BIOS.  
+There are a few different options to protect DMA ports, such as Thunderbolt&trade;3. Beginning with Windows 10 version 1803, new Intel-based devices have kernel protection against DMA attacks via Thunderbolt&trade; 3 ports enabled by default. This Kernel DMA Protection is available only for new systems beginning with Windows 10 version 1803, as it requires changes in the system firmware and/or BIOS.  
 
 You can use the System Information desktop app `MSINFO32.exe` to check if a device has kernel DMA protection enabled:
 
 ![Kernel DMA protection.](images/kernel-dma-protection.png)
 
-If kernel DMA protection isn't enabled, follow these steps to protect Thunderbolt™ 3 enabled ports:
+If kernel DMA protection isn't enabled, follow these steps to protect Thunderbolt&trade; 3 enabled ports:
 
 1. Require a password for BIOS changes
 
-2. Intel Thunderbolt Security must be set to User Authorization in BIOS settings. Refer to [Intel Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating System documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf)
+2. Intel Thunderbolt Security must be set to User Authorization in BIOS settings. Refer to [Intel Thunderbolt&trade; 3 and Security on Microsoft Windows&reg; 10 Operating System documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf)
 
 3. Additional DMA security may be added by deploying policy (beginning with Windows 10 version 1607 or Windows 11):
 
@@ -141,7 +141,7 @@ Enable secure boot and mandatorily prompt a password to change BIOS settings. Fo
 
 ### Tricking BitLocker to pass the key to a rogue operating system
 
-An attacker might modify the boot manager configuration database (BCD) which is stored on a non-encrypted partition and add an entry point to a rogue operating system on a different partition. During the boot process, BitLocker code will make sure that the operating system that the encryption key obtained from the TPM is given to, is cryptographically verified to be the intended recipient. Because this strong cryptographic verification already exists, we don’t recommend storing a hash of a disk partition table in Platform Configuration Register (PCR) 5.
+An attacker might modify the boot manager configuration database (BCD) which is stored on a non-encrypted partition and add an entry point to a rogue operating system on a different partition. During the boot process, BitLocker code will make sure that the operating system that the encryption key obtained from the TPM is given to, is cryptographically verified to be the intended recipient. Because this strong cryptographic verification already exists, we don't recommend storing a hash of a disk partition table in Platform Configuration Register (PCR) 5.
  
 An attacker might also replace the entire operating system disk while preserving the platform hardware and firmware and could then extract a protected BitLocker key blob from the metadata of the victim OS partition. The attacker could then attempt to unseal that BitLocker key blob by calling the TPM API from an operating system under their control. This will not succeed because when Windows seals the BitLocker key to the TPM, it does it with a PCR 11 value of 0, and to successfully unseal the blob, PCR 11 in the TPM must have a value of 0. However, when the boot manager passes the control to any boot loader (legitimate or rogue) it always changes PCR 11 to a value of 1. Since the PCR 11 value is guaranteed to be different after exiting the boot manager, the attacker can't unlock the BitLocker key.
 

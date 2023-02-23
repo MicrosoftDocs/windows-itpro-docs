@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: 
   - highpri
+  - tier3
 author: jgeurten
 ms.reviewer: jsuther
 ms.author: vinpa

@@ -4,6 +4,7 @@ description: Learn how to deploy and manage Windows Defender Credential Guard us
 ms.date: 11/23/2022
 ms.collection:
   - highpri
+  - tier2
 ms.topic: article
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
@@ -66,7 +67,7 @@ To enforce processing of the group policy, you can run `gpupdate /force`.
 
 ### Enable Windows Defender Credential Guard by using Microsoft Intune
 
-1. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices**.
+1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices**.
 
 1. Select **Configuration Profiles**.
 

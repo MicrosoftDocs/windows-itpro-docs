@@ -5,8 +5,9 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 author: dansimp
 manager: aaroncz
-ms.collection: 
+ms.collection:
   - highpri
+  - tier1
 ms.topic: conceptual
 ms.date: 05/12/2022
 ms.author: dansimp
@@ -91,13 +92,13 @@ To trust and boot operating systems, like Linux, and components signed by the UE
 
 1. Open the firmware menu, either: 
   
-  - Boot the PC, and press the manufacturer’s key to open the menus. Common keys used: Esc, Delete, F1, F2, F10, F11, or F12. On tablets, common buttons are Volume up or Volume down. During startup, there’s often a screen that mentions the key. If there’s not one, or if the screen goes by too fast to see it, check your manufacturer’s site.
+  - Boot the PC, and press the manufacturer's key to open the menus. Common keys used: Esc, Delete, F1, F2, F10, F11, or F12. On tablets, common buttons are Volume up or Volume down. During startup, there's often a screen that mentions the key. If there's not one, or if the screen goes by too fast to see it, check your manufacturer's site.
 
   - Or, if Windows is already installed, from either the Sign on screen or the Start menu, select Power ( ) > hold Shift while selecting Restart. Select Troubleshoot > Advanced options > UEFI Firmware settings.
   
-2.	From the firmware menu navigate to Security > Secure Boot and select the option to trust the “3rd Party CA”. 
+2.    From the firmware menu navigate to Security > Secure Boot and select the option to trust the "3rd Party CA". 
 
-3.	Save changes and exit. 
+3.    Save changes and exit. 
  
 Microsoft continues to collaborate with Linux and IHV ecosystem partners to design least privileged features to help you stay secure and opt-in trust for only the publishers and components you trust. 
 
@@ -131,6 +132,8 @@ Measured Boot works with the TPM and non-Microsoft software in Windows. It allow
 Depending on the implementation and configuration, the server can now determine whether the client is healthy. It can grant the client access to either a limited quarantine network or to the full network.
 
 Figure 2 illustrates the Measured Boot and remote attestation process.
+
+
 
 ![Measured Boot and remote attestation process.](./images/dn168167.measure_boot(en-us,MSDN.10).png)
 

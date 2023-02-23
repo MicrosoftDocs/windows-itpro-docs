@@ -1767,7 +1767,7 @@ _**Turn syncing off by default but don’t disable**_
 
 <!-- EnableOrganizationalMessages-Description-Begin -->
 <!-- Description-Source-DDF -->
-Organizational messages allow Administrators to deliver messages to their end users on selected Windows 11 experiences. Organizational messages are available to Administrators via services like Microsoft Endpoint Manager. By default, this policy is disabled.
+Organizational messages allow Administrators to deliver messages to their end users on selected Windows 11 experiences. Organizational messages are available to Administrators via services like Microsoft Intune. By default, this policy is disabled.
 - If you enable this policy, these experiences will show content booked by Administrators. Enabling this policy will have no impact on existing MDM policy settings governing delivery of content from Microsoft on Windows experiences.
 <!-- EnableOrganizationalMessages-Description-End -->
 

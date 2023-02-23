@@ -3,6 +3,7 @@ title: Deploy certificates for remote desktop sign-in
 description: Learn how to deploy certificates to cloud Kerberos trust and key trust users, to enable remote desktop sign-in with supplied credentials.
 ms.collection: 
   - ContentEngagementFY23
+  - tier1
 ms.topic: article
 ms.date: 11/15/2022
 appliesto: 
@@ -105,7 +106,7 @@ Once these requirements are met, a policy can be configured in Intune that provi
 
 This section describes how to configure a SCEP policy in Intune. Similar steps can be followed to configure a PKCS policy.
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Intune admin center</b></a>
 1. Select **Devices > Configuration profiles > Create profile**
 1. Select **Platform > Windows 10 and later** and **Profile type > Templates > SCEP Certificate**
 1. Select **Create**

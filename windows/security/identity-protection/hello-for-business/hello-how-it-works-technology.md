@@ -101,7 +101,7 @@ In Windows 10 and Windows 11, cloud experience host is an application used while
 
 ### More information on cloud experience host
 
-[Windows Hello for Business and device registration](./hello-how-it-works-device-registration.md)
+[Windows Hello for Business and device registration](/azure/active-directory/devices/device-registration-how-it-works)
 
 ## Cloud Kerberos trust
 

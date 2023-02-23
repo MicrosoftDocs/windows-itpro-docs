@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ---
 <!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
 
-For this article, you'll use Graph Explorer to make requests to the [Microsoft Graph APIs](/graph/api/resources/windowsupdates-updates?view=graph-rest-beta&preserve-view=true) to retrieve, add, delete, and update data. Graph Explorer is a developer tool that lets you learn about Microsoft Graph APIs. For more information about using Graph Explorer, see [Get started with Graph Explorer](/graph/graph-explorer/overview).
+For this article, you'll use Graph Explorer to make requests to the [Microsoft Graph APIs](/graph/api/resources/adminwindowsupdates) to retrieve, add, delete, and update data. Graph Explorer is a developer tool that lets you learn about Microsoft Graph APIs. For more information about using Graph Explorer, see [Get started with Graph Explorer](/graph/graph-explorer/graph-explorer-overview).
 
 > [!WARNING]
 >
