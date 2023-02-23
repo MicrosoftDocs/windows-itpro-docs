@@ -27,9 +27,6 @@ This topic contains the following sections:
 -   [Authentication design options](#authentication-design-options):
     Describes how passwords, smart cards, and virtual smart cards can be used to reach authentication goals in your organization.
 
--   [See also](#see-also):
-    Links to other topics that can help you design, deploy, and troubleshoot virtual smart cards.
-
 ## Comparing virtual smart cards with physical smart cards
 
 Virtual smart cards function much like physical smart cards, but they differ in that they protect private keys by using the TPM of the computer instead of smart card media.
