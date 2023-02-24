@@ -7,6 +7,24 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
 ---
 
+# Deploy apps to Windows 11 SE with Managed Installer
+
+Currently, Windows 11 SE prevents the installation of 3<sup>rd</sup> party applications, unless the application is in an [approved list][EDU-1] or the IT admin consults with Microsoft.
+
+Microsoft is changing the 3<sup>rd</sup> party application installation process by enabling the **Intune Management Extension (IME)** as a *managed installer*. What that means, is that you will be able to install 3<sup>rd</sup> party applications on Windows 11 SE devices via Intune, without having to contact Microsoft.
+
+The documentation in this GitHub repository covers how to set up Windows 11 SE devices with the IME as a managed installer, and deploy apps via Intune to those devices.
+
+## Goals
+
+In this documentation you will learn:
+
+- [x]  what applications can be installed on a Windows 11 SE device when managed installer policies are enabled
+- [x]  how to install an application to a Windows 11 SE device
+- [x]  how to validate that an application is installed and runs successfully
+- [x]  how to write additional policies to enable incompatible applications
+- [x]  how to troubleshoot problems related to application installation
+- 
 ## Introduction
 
 Windows 11 SE prevents the installation and execution of 3<sup>rd</sup> party applications with a technology called **Windows Defender Application Control (WDAC)**.\
@@ -20,13 +38,7 @@ Microsoft is changing the 3<sup>rd</sup> party app installation process by enabl
 
 Some applications may experience difficulties running due to their app type or due to the complexity of how the app is installed and executed. In these cases, the IT admin may need to write additional policies to enable the application. This documentation covers how to set up Windows 11 SE devices with the IME as a managed installer, and deploy apps via Intune to those devices.
 
-During the TAP program:
-- IT admins can write their own WDAC supplemental policies to allow 3<sup>rd</sup> party applications to run
-- Microsoft will need to review and sign these policies
-- Once signed by Microsoft, the supplemental policies can be deployed via Microsoft Intune
-
-After the TAP program:
-- IT admins can write and deploy their own WDAC supplemental policies through Microsoft Intune, to allow 3<sup>rd</sup> party application to run. There won't be any need to work with Microsoft directly.
+IT admins can write and deploy their own WDAC supplemental policies through Microsoft Intune, to allow 3<sup>rd</sup> party application to run. There won't be any need to work with Microsoft directly.
 
 ## Installation process
 
@@ -34,7 +46,6 @@ There are four main steps to install an application on Windows 11 SE using the m
 
 ![](./images/tap-process.svg)
 
-1. **Prepare devices for managed installer (TAP only)** - The policies that allow the use of a managed installer and app deployment via Intune must be configured and deployed to the Windows 11 SE devices. This step is only required during the TAP program. After the TAP program, the policies will be automatically deployed to Windows 11 SE devices.
 1. **Deploy an application via Microsoft Intune** - Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but this step is the same as it would be for non-Windows 11 SE devices.
 1. **Validate the application** - Applications are validated to ensure that they are installed and running successfully. This step is the same as it would be for non-Windows 11 SE devices. Since some applications may be incompatible due to how they are installed, how they execute, or how they update, the known limitations are discussed in a later section of this tutorial.
 1. **Create additional policies (optional)** - To allow apps that are not installable or do not behave as intended, additional policies can be created and deployed so that these applications can be used.
@@ -45,25 +56,6 @@ All four of these steps are done by the IT administrator. Once the steps are com
 In order to receive policies on your Windows 11 SE device to allow 3rd party app installation controlled by your IT admin, you must have the following:
 - Windows 11 SE devices with a minimum version of 10.0.22621.819 (22H2, November Update) and later.
 - Your Windows 11 devices must be connected to a tenant with an Intune for Education license. If you do not have an Intune for Education license for your devices yet, refer to [Microsoft Intune for Education][EXT-1] for access to a free trial version. This license is needed for Managed Installer to successfully deploy apps and supplemental policies via Intune.
-
-
-## Welcome to the *Windows 11 SE - managed installer* TAP!
-
-Currently, Windows 11 SE prevents the installation of 3<sup>rd</sup> party applications, unless the application is in an [approved list][EDU-1] or the IT admin consults with Microsoft.
-
-Through this *Technology Adoption Program (TAP)*, Microsoft is changing the 3<sup>rd</sup> party application installation process by enabling the **Intune Management Extension (IME)** as a *managed installer*. What that means, is that you will be able to install 3<sup>rd</sup> party applications on Windows 11 SE devices via Intune, without having to contact Microsoft.
-
-The documentation in this GitHub repository covers how to set up Windows 11 SE devices with the IME as a managed installer, and deploy apps via Intune to those devices.
-
-## Goals
-
-In this documentation you will learn:
-
-- [x]  what applications can be installed on a Windows 11 SE device when managed installer policies are enabled
-- [x]  how to install an application to a Windows 11 SE device
-- [x]  how to validate that an application is installed and runs successfully
-- [x]  how to write additional policies to enable incompatible applications
-- [x]  how to troubleshoot problems related to application installation
 
 ---
 
