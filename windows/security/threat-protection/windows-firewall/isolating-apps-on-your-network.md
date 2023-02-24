@@ -2,20 +2,11 @@
 title: Isolating Microsoft Store Apps on Your Network (Windows)
 description: Learn how to customize your firewall configuration to isolate the network access of the new Microsoft Store apps that run on devices added to your network.
 ms.prod: windows-client
-ms.localizationpriority: medium
-author: paolomatarazzo
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.reviewer: jekrynit
-ms.author: paoloma
-ms.technology: itpro-security
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Isolating Microsoft Store Apps on Your Network
