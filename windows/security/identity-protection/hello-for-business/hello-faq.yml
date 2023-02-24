@@ -2,8 +2,11 @@
 metadata:
   title: Windows Hello for Business Frequently Asked Questions (FAQ)
   description: Use these frequently asked questions (FAQ) to learn important details about Windows Hello for Business.
+  author: paolomatarazzo
+  ms.author: paoloma
   ms.collection:
     - highpri
+    - tier1
   ms.topic: faq
   ms.date: 01/06/2023
   appliesto: 

@@ -8,6 +8,7 @@ ms.author: paoloma
 manager: aaroncz
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.reviewer: jekrynit
@@ -36,7 +37,7 @@ The Windows Defender Firewall with Advanced Security MMC snap-in is more flexibl
 
 ## Feature description
 
-Windows Defender Firewall with Advanced Security is an important part of a layered security model. By providing host-based, two-way network traffic filtering for a device, Windows Defender Firewall blocks unauthorized network traffic flowing into or out of the local device. Windows Defender Firewall also works with Network Awareness so that it can apply security settings appropriate to the types of networks to which the device is connected. Windows Defender Firewall and Internet Protocol Security (IPsec) configuration settings are integrated into a single Microsoft Management Console (MMC) named Windows Defender Firewall, so Windows Defender Firewall is also an important part of your network’s isolation strategy.
+Windows Defender Firewall with Advanced Security is an important part of a layered security model. By providing host-based, two-way network traffic filtering for a device, Windows Defender Firewall blocks unauthorized network traffic flowing into or out of the local device. Windows Defender Firewall also works with Network Awareness so that it can apply security settings appropriate to the types of networks to which the device is connected. Windows Defender Firewall and Internet Protocol Security (IPsec) configuration settings are integrated into a single Microsoft Management Console (MMC) named Windows Defender Firewall, so Windows Defender Firewall is also an important part of your network's isolation strategy.
 
 ## Practical applications
 

@@ -35,7 +35,7 @@
     - name: Plan
       items:
         - name: Plan for Windows 11
-          href: /windows/whats-new/windows-11-plan
+          href: /windows/whats-new/windows-11-plan?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: Create a deployment plan
           href: update/create-deployment-plan.md
         - name: Define readiness criteria
@@ -65,12 +65,14 @@
               href: /windows/whats-new/feature-lifecycle?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
             - name: Deprecated features
               href: /windows/whats-new/deprecated-features?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+            - name: Resources for deprecated features
+              href: /windows/whats-new/deprecated-features-resources?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json              
             - name: Removed features
               href: /windows/whats-new/removed-features?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json   
     - name: Prepare
       items: 
         - name: Prepare for Windows 11
-          href: /windows/whats-new/windows-11-prepare
+          href: /windows/whats-new/windows-11-prepare?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: Prepare to deploy Windows client updates
           href: update/prepare-deploy-windows.md
         - name: Evaluate and update infrastructure
@@ -164,19 +166,30 @@
               href: update/waas-configure-wufb.md
             - name: Use Windows Update for Business and WSUS
               href: update/wufb-wsus.md    
-            - name: Windows Update for Business deployment service
-              href: update/deployment-service-overview.md
-              items:
-                - name: Troubleshoot the Windows Update for Business deployment service
-                  href: update/deployment-service-troubleshoot.md
             - name: Enforcing compliance deadlines for updates
               href: update/wufb-compliancedeadlines.md
             - name: Integrate Windows Update for Business with management solutions
               href: update/waas-integrate-wufb.md
             - name: 'Walkthrough: use Group Policy to configure Windows Update for Business'
               href: update/waas-wufb-group-policy.md
-            - name: 'Walkthrough: use Intune to configure Windows Update for Business'
+            - name: 'Walkupdatesthrough: use Intune to configure Windows Update for Business'
               href: update/deploy-updates-intune.md
+        - name: Windows Update for Business deployment service
+          items:
+          - name: Windows Update for Business deployment service overview
+            href: update/deployment-service-overview.md
+          - name: Prerequisites for Windows Update for Business deployment service
+            href: update/deployment-service-prerequisites.md
+          - name: Deploy updates with the deployment service
+            items:            
+            - name: Deploy feature updates using Graph Explorer
+              href: update/deployment-service-feature-updates.md
+            - name: Deploy expedited updates using Graph Explorer
+              href: update/deployment-service-expedited-updates.md
+            - name: Deploy driver and firmware updates using Graph Explorer
+              href: update/deployment-service-drivers.md
+          - name: Troubleshoot Windows Update for Business deployment service
+            href: update/deployment-service-troubleshoot.md
     - name: Monitor
       items:
       - name: Windows Update for Business reports

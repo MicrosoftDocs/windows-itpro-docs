@@ -9,6 +9,7 @@ author: vinaypamnani-msft
 manager: aaroncz
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 04/19/2017
 ms.technology: itpro-security

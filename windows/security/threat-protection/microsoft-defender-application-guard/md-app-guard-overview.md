@@ -15,6 +15,7 @@ ms.custom: asr
 ms.technology: itpro-security
 ms.collection: 
   - highpri
+  - tier2
 ms.topic: conceptual
 ---
 

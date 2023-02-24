@@ -8,6 +8,7 @@ author: vinaypamnani-msft
 manager: aaroncz
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 01/26/2022
 ms.reviewer: jmunck

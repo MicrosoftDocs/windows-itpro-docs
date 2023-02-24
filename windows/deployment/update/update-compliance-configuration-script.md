@@ -53,6 +53,7 @@ Open `RunConfig.bat` and configure the following (assuming a first-run, with `ru
 [!INCLUDE [Update Compliance script error codes](./includes/wufb-reports-script-error-codes.md)]
 
 ## Verify device configuration
+
 <!--Using include for verifying device configuration-->
-[!INCLUDE [Endpoints for Update Compliance](./includes/wufb-reports-verify-device-configuration.md)]:
+[!INCLUDE [Endpoints for Update Compliance](./includes/wufb-reports-verify-device-configuration.md)]
 

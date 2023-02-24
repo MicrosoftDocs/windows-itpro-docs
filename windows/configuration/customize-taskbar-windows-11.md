@@ -1,5 +1,5 @@
 ---
-title: Configure and customize Windows 11 taskbar | Microsoft Docs
+title: Configure and customize Windows 11 taskbar
 description: On Windows 11 devices, pin and unpin default apps and organization apps on the taskbar using an XML file. Deploy the taskbar XML file using Group Policy or MDM and Microsoft Intune. See what happens to the taskbar when the Windows OS client is installed or upgraded.
 manager: aaroncz
 ms.author: lizlong
@@ -7,7 +7,9 @@ ms.reviewer: chataylo
 ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
-ms.collection: highpri
+ms.collection:
+ - highpri
+ - tier1
 ms.technology: itpro-configure
 ms.date: 12/31/2017
 ms.topic: article
@@ -168,7 +170,7 @@ MDM providers can deploy policies to devices managed by the organization, includ
 
 Use the following steps to create an Intune policy that deploys your taskbar XML file:
 
-1. Sign in to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 

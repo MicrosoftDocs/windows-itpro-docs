@@ -34,7 +34,7 @@ When you unassign an existing policy, it removes the intent to deploy WIP from t
 
 If you're currently deploying a WIP policy for enrolled or unenrolled devices, you switch the WIP policy to Off. When devices check in after this change, the devices will proceed to unprotect files previously protected by WIP.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Open Microsoft Intune and select **Apps** > **App protection policies**.
 1. Select the existing policy to turn off, and then select the **Properties**.
 1. Edit **Required settings**.

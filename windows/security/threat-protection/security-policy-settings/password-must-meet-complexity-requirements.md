@@ -14,6 +14,7 @@ manager: aaroncz
 audience: ITPro
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: conceptual
 ms.technology: itpro-security
 ms.date: 12/31/2017
@@ -112,4 +113,4 @@ The use of ALT key character combinations may greatly enhance the complexity of 
 
 ## Related articles
 
-- [Password Policy](password-policy.md)
+- [Password Policy](/microsoft-365/admin/misc/password-policy-recommendations)
