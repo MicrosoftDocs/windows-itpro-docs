@@ -1,25 +1,11 @@
 ---
 title: Basic Firewall Policy Design (Windows)
 description: Protect the devices in your organization from unwanted network traffic that gets through the perimeter defenses by using basic firewall policy design.
-ms.assetid: 6f7af99e-6850-4522-b7f5-db98e6941418
-ms.reviewer: jekrynit
-ms.author: paoloma
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: paolomatarazzo
-manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
-ms.technology: itpro-security
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ms.date: 12/31/2017
 ---
 
