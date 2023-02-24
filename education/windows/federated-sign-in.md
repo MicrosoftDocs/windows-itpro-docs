@@ -120,7 +120,7 @@ Federated sign-in doesn't work on devices that have the following settings enabl
 
 ### Identity matching in Azure AD
 
-When federated sign-in is enabled, the user's identity from the IdP must match an existing user object in Azure AD.
+When an Azure AD user is federated, the user's identity from the IdP must match an existing user object in Azure AD.
 After the token sent by the IdP is validated, Azure AD searches for a matching user object in the tenant by using an attribute called *ImmutableId*.
 If the matching object is found, the user is signed-in. If not, the user is presented with an error message. The following picture shows that a user with the ImmutableId *260051* can't be found:
 
