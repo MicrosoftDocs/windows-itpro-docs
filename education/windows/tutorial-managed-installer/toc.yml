@@ -1,0 +1,17 @@
+items: 
+  - name: Introduction
+    href: overview.md
+  - name: 1. Prepare devices
+    href: prepare-devices.md
+  - name: 2. Considerations for your tenant
+    href: considerations.md
+  - name: 3. Deploy apps
+    href: deploy-apps.md
+  - name: 4. Validate apps
+    href: validate-applications.md
+  - name: 5. Create supplemental policies
+    href: create-supplemental-policies.md
+  - name: Troubleshoot and get help
+    href: troubleshoot-managed-installer.md
+  - name: Troubleshoot and get help
+    href: managed-installer-checklists.md
