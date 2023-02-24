@@ -131,20 +131,22 @@ If the matching object is found, the user is signed-in. If not, the user is pres
 > [!IMPORTANT]
 > The ImmutableId matching is case-sensitive.
 
-The ImmutableId is a string value that should be unique for each user in the tenant, and it shouldn't change over time. For example, the ImmutableId could be the student ID or SIS ID. The ImmutableId is typically configured when the user is created in Azure AD, but it can also be updated later.\
+The ImmutableId is a string value that should be unique for each user in the tenant, and it shouldn't change over time. For example, the ImmutableId could be the student ID or SIS ID. The ImmutableId value should be based on the federation setup and configuration with your IdP, so confirm with your IdP before setting it.
+
+The ImmutableId is typically configured when the user is created in Azure AD, but it can also be updated later.\
 In a scenario where a user is federated and you want to change the ImmutableId, you must:
 
-1. Convert the user to a cloud-only user
+1. Convert the user to a cloud-only user (update the UPN to a non-federated domain)
 1. Update the ImmutableId
 1. Convert the user back to a federated user
 
-Here's a PowerShell script example to update the ImmutableId for a federated user:
+Here's a PowerShell example to update the ImmutableId for a federated user:
 
 ```powershell
-#1. switch the user from federated to managed
+#1. Convert the user from federated to cloud-only
 Get-AzureADUser -SearchString alton@example.com | Set-AzureADUser -UserPrincipalName alton@example.onmicrosoft.com
-    
-#2. swtich the user from managed to federated while setting the immutableId
+
+#2. Convert the user back to federated, while setting the immutableId
 Get-AzureADUser -SearchString alton@example.onmicrosoft.com | Set-AzureADUser -UserPrincipalName alton@example.com -ImmutableId '260051'
 ```
 
