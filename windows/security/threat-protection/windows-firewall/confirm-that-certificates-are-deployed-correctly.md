@@ -1,19 +1,12 @@
 ---
 title: Confirm That Certificates Are Deployed Correctly (Windows)
 description: Learn how to confirm that a Group Policy is being applied as expected and that the certificates are being properly installed on the workstations.
-ms.author: paoloma
 ms.prod: windows-client
-author: paolomatarazzo
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 01/24/2023
-ms.technology: itpro-security
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Confirm That Certificates Are Deployed Correctly

@@ -1,21 +1,12 @@
 ---
 title: GPO\_DOMISO\_IsolatedDomain\_Servers (Windows)
 description: Author this GPO by using the Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools.
-ms.reviewer: jekrynit
-ms.author: paoloma
 ms.prod: windows-client
-ms.localizationpriority: medium
-author: paolomatarazzo
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.technology: itpro-security
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # GPO\_DOMISO\_IsolatedDomain\_Servers
