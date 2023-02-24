@@ -8,7 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 12/31/2017
+ms.date: 02/28/2023
 ---
 
 # Walkthrough: Use CSPs and MDMs to configure Windows Update for Business
@@ -16,8 +16,8 @@ ms.date: 12/31/2017
 
 **Applies to**
 
--   Windows 10
--   Windows 11
+- Windows 10
+- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -194,4 +194,16 @@ When you disable this setting, users will see **Some settings are managed by you
 
 If you use Windows Server Update Server (WSUS), you can prevent users from scanning Windows Update. To do this, use [Update/SetDisableUXWUAccess](/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess).
 
+#### I want to enable features introduced via servicing that are off by default
+<!--6544872-->
+(*Starting in Windows 11, version 22H2 or later*)
 
+New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features are temporarily turned off by default. Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly.
+
+The features that are turned off by default from servicing updates will be enabled in the next annual feature update. Organizations can choose to deploy feature updates at their own pace, to delay these features until they're ready for them.
+
+ You can enable these features by using [AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol). The following options are available:
+
+- **0** (default): Allowed. All features in the latest monthly cumulative update are enabled.
+  - When the policy is set to **0**, all features that are currently turned off will turn on when the device next reboots
+- **1** - Not allowed. Features that are shipped turned off by default will remain off
