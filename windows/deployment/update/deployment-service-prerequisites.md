@@ -59,7 +59,7 @@ When you use [Windows Update for Business reports](wufb-reports-overview.md) in 
 
 ## Permissions
 
-- [Windows Update for Business deployment service](/graph/api/resources/windowsupdates) operations require [WindowsUpdates.ReadWrite.All](/graph/permissions-reference#windows-updates-permissions)
+- [Windows Update for Business deployment service](/graph/api/resources/adminwindowsupdates) operations require [WindowsUpdates.ReadWrite.All](/graph/permissions-reference#windows-updates-permissions)
   - Some roles, such as the [Windows Update deployment administrator](/azure/active-directory/roles/permissions-reference#windows-update-deployment-administrator), already have the permissions.
 
 > [!NOTE]

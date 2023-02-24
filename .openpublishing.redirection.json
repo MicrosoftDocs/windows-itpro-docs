@@ -20521,6 +20521,21 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "education/windows/education-scenarios-store-for-business.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/teacher-get-minecraft.md",
+      "redirect_url": "/education/windows/get-minecraft-for-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/school-get-minecraft.md",
+      "redirect_url": "/education/windows/get-minecraft-for-education",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/identity-protection/credential-guard/dg-readiness-tool.md",
       "redirect_url": "/windows/security/identity-protection/credential-guard/credential-guard",
       "redirect_document_id": true
@@ -20585,6 +20600,11 @@
       "redirect_url": "/windows/security",
       "redirect_document_id": false
     },
+    {
+      "source_path": "windows/whats-new/windows-10-insider-preview.md",
+      "redirect_url": "/windows/whats-new",
+      "redirect_document_id": false
+    },    
     {
       "source_path": "windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md",
       "redirect_url": "/windows/security",
