@@ -201,11 +201,15 @@ If you use Windows Server Update Server (WSUS), you can prevent users from scann
 
 #### I want to enable features introduced via servicing that are off by default
 <!--6544872-->
+(*Starting in Windows 11, version 22H2 or later*)
+
 New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features are temporarily turned off by default. Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly.
 
 The features that are turned off by default from servicing updates will be enabled in the next annual feature update. Organizations can choose to deploy feature updates at their own pace, to delay these features until they're ready for them.
 
- You can enable these features by using **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage end user experience > Enable features introduced via servicing that are off by default**. The following options are available: 
-- **Enabled**: All features in the lastest monthly cumulative update are enabled.
+ You can enable these features by using **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage end user experience > Enable features introduced via servicing that are off by default**. The following options are available:
+
+- **Enabled**: All features in the latest monthly cumulative update are enabled.
+  - When the policy is set to **Enabled**, all features that are currently turned off will turn on when the device next reboots
 - **Disabled** - Features that are shipped turned off by default will remain off
 - **Not configured** - Features that are shipped turned off by default will remain off
