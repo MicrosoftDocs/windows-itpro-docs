@@ -25,7 +25,12 @@ The following table details the two policy types to allow apps to run:
 ## WDAC supplemental policies
 
 WDAC supplemental policies can be created and then deployed through Intune.\
-[🎬 Watch the **WDAC supplemental policy** video.](https://github.com/microsoft/WinSE_TAP/wiki/images/WDAC-Supplemental-Policy.mp4)
+
+Watch Jeffrey Sutherland explain ...
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWReO]
+
+
 
 Follow the instructions below for authoring and deploying these policies.
 
