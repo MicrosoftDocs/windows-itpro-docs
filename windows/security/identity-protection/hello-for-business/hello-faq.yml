@@ -187,7 +187,7 @@ sections:
       - question: Which is a better or more secure for of authentication, key or certificate?
         answer: |
           Both types of authentication provide the same security; one is not more secure than the other.
-          The trust models of your deployment determine how you authenticate to Active Directory (on-premises). Both key trust and certificate trust use the same hardware-backed, two-factor credential. The differences between the two trust types is the issuance of end-entity certificates:
+          The trust models of your deployment determine how you authenticate to Active Directory (on-premises). Both key trust and certificate trust use the same hardware-backed, two-factor credential. The difference between the two trust types is the issuance of end-entity certificates:
           - The *key trust* model authenticates to Active Directory by using a raw key. Key trust doesn't require an enterprise-issued certificate, therefore you don't need to issue certificates to users (domain controller certificates are still needed)
           - The *certificate trust* model authenticates to Active Directory by using a certificate. Therefore, you need to issue certificates to users. The certificate used in certificate trust uses the TPM-protected private key to request a certificate from your enterprise's issuing CA
       - question: What is convenience PIN?
