@@ -158,21 +158,20 @@ Get-AzureADUser -SearchString alton@example.onmicrosoft.com | Set-AzureADUser -U
 <!--links-->
 
 [AZ-1]: /azure/active-directory/hybrid/whatis-fed
-[AZ-4]: /azure/active-directory/hybrid/how-to-connect-fed-saml-idp
 [AZ-2]: /azure/active-directory/enterprise-users/licensing-groups-assign
 [AZ-3]: /azure/active-directory/hybrid/how-to-connect-sync-whatis
+[AZ-4]: /azure/active-directory/hybrid/how-to-connect-fed-saml-idp
 
 [GRAPH-1]: /graph/api/user-post-users?tabs=powershell
 
+[EXT-1]: https://support.clever.com/hc/s/articles/000001546
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
 
 [MSFT-1]: https://www.microsoft.com/download/details.aspx?id=56843
 
 [SDS-1]: /schooldatasync
 
-[WIN-1]: /windows/client-management/mdm/sharedpc-csp
-[WIN-2]: /windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin
-
 [KB-1]: https://support.microsoft.com/kb/5022913
 
-[EXT-1]: https://support.clever.com/hc/s/articles/000001546
+[WIN-1]: /windows/client-management/mdm/sharedpc-csp
+[WIN-2]: /windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin
