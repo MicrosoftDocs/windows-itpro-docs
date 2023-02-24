@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business cloud Kerberos trust clients configuration and enrollment
 description: Learn how to configure devices and enroll them in Windows Hello for Business in a cloud Kerberos trust scenario.
-ms.date: 02/22/2023
+ms.date: 02/24/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10, version 21H2 and later</a>
 ms.topic: tutorial
@@ -52,7 +52,7 @@ To check the Windows Hello for Business policy applied at enrollment time:
 
 :::image type="content" source="images/whfb-intune-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Intune admin center." border="true" lightbox="images/whfb-intune-disable.png":::
 
-If the tenant-wide policy is enabled and configured to your needs, you can skip to [Configure cloud Kerberos trust policy](#configure-cloud-kerberos-trust-policy). Otherwise, follow the instructions below to create a policy using an *account protection* policy.
+If the tenant-wide policy is enabled and configured to your needs, you can skip to [Configure cloud Kerberos trust policy](#configure-the-cloud-kerberos-trust-policy). Otherwise, follow the instructions below to create a policy using an *account protection* policy.
 
 ### Enable Windows Hello for Business
 
