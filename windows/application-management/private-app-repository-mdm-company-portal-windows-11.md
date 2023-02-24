@@ -4,11 +4,13 @@ description: Use the Company Portal app in Windows 11 devices to access the priv
 author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
-ms.reviewer: amanh
-ms.prod: windows-client
 ms.date: 09/15/2021
-ms.localizationpriority: medium
+ms.topic: article
+ms.prod: windows-client
 ms.technology: itpro-apps
+ms.localizationpriority: medium
+ms.collection: tier2
+ms.reviewer: amanh
 ---
 
 # Private app repository in Windows 11
