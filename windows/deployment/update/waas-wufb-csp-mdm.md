@@ -202,7 +202,7 @@ New features and enhancements are introduced through the monthly cumulative upda
 
 The features that are turned off by default from servicing updates will be enabled in the next annual feature update. Organizations can choose to deploy feature updates at their own pace, to delay these features until they're ready for them.
 
- You can enable these features by using [AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol) The following options are available:
+ You can enable these features by using [AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol). The following options are available:
 
 - **0** (default): Allowed. All features in the latest monthly cumulative update are enabled.
   - When the policy is set to **0**, all features that are currently turned off will turn on when the device next reboots
