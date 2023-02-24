@@ -124,6 +124,10 @@ Federated sign-in doesn't work on devices that have the following settings enabl
 
 When an Azure AD user is federated, the user's identity from the IdP must match an existing user object in Azure AD.
 After the token sent by the IdP is validated, Azure AD searches for a matching user object in the tenant by using an attribute called *ImmutableId*.
+
+> [!NOTE]
+> The ImmutableId is a string value that **must be unique** for each user in the tenant, and it shouldn't change over time. For example, the ImmutableId could be the student ID or SIS ID. The ImmutableId value should be based on the federation setup and configuration with your IdP, so confirm with your IdP before setting it.
+
 If the matching object is found, the user is signed-in. If not, the user is presented with an error message. The following picture shows that a user with the ImmutableId *260051* can't be found:
 
 :::image type="content" source="images/federation/user-match-lookup-failure.png" alt-text="Azure AD sign-in error: a user with a matching ImmutableId can't be found in the tenant." lightbox="images/federation/user-match-lookup-failure.png":::
@@ -131,12 +135,10 @@ If the matching object is found, the user is signed-in. If not, the user is pres
 > [!IMPORTANT]
 > The ImmutableId matching is case-sensitive.
 
-The ImmutableId is a string value that should be unique for each user in the tenant, and it shouldn't change over time. For example, the ImmutableId could be the student ID or SIS ID. The ImmutableId value should be based on the federation setup and configuration with your IdP, so confirm with your IdP before setting it.
-
 The ImmutableId is typically configured when the user is created in Azure AD, but it can also be updated later.\
 In a scenario where a user is federated and you want to change the ImmutableId, you must:
 
-1. Convert the user to a cloud-only user (update the UPN to a non-federated domain)
+1. Convert the federated user to a cloud-only user (update the UPN to a non-federated domain)
 1. Update the ImmutableId
 1. Convert the user back to a federated user
 
