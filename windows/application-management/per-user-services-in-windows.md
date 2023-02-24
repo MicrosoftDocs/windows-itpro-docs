@@ -1,18 +1,24 @@
 ---
 title: Per-user services in Windows 10 and Windows Server
 description: Learn about per-user services, how to change the template service Startup Type, and manage per-user services through Group Policy and security templates.
-ms.prod: windows-client
 author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
 ms.date: 09/14/2017
-ms.reviewer: 
+ms.topic: article
+ms.prod: windows-client
 ms.technology: itpro-apps
+ms.localizationpriority: medium
+ms.collection: tier2
+ms.reviewer:
 ---
 
 # Per-user services in Windows 10 and Windows Server 
 
-> Applies to: Windows 10, Windows Server
+**Applies to**:
+
+- Windows 10
+- Windows Server
 
 Per-user services are services that are created when a user signs into Windows or Windows Server and are stopped and deleted when that user signs out. These services run in the security context of the user account - this provides better resource management than the previous approach of running these kinds of services in Explorer, associated with a preconfigured account, or as tasks. 
 
