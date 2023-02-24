@@ -1,6 +1,6 @@
 ---
-title: Backup TPM recovery information to Active Directory
-description: Learn how to backup the Trusted Platform Module (TPM) recovery information to Active Directory.
+title: Back up TPM recovery information to Active Directory
+description: Learn how to back up the Trusted Platform Module (TPM) recovery information to Active Directory.
 ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
@@ -17,4 +17,4 @@ appliesto:
 
 In Windows 11, you can back up a device's Trusted Platform Module (TPM) information to Active Directory Domain Services (AD DS), enabling remote management of the TPM.
 
-For more information, see [Backup the TPM Recovery Information to AD DS](/previous-versions/windows/it-pro/windows-8.1-and-8/dn466534(v=ws.11)).
+For more information, see [Back up the TPM Recovery Information to AD DS](/previous-versions/windows/it-pro/windows-8.1-and-8/dn466534(v=ws.11)).
