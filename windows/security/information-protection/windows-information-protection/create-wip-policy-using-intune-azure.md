@@ -1,6 +1,6 @@
 ---
 title: Create a WIP policy in Intune
-description: Learn how to use the Microsoft Endpoint Manager admin center to create and deploy your Windows Information Protection (WIP) policy to protect data on your network.
+description: Learn how to use the Microsoft Intune admin center to create and deploy your Windows Information Protection (WIP) policy to protect data on your network.
 ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
@@ -53,7 +53,7 @@ Before you can create a WIP policy using Intune, you need to configure an MDM or
 
 ## Create a WIP policy
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Open Microsoft Intune and select **Apps** > **App protection policies** > **Create policy**.
 

@@ -14,7 +14,7 @@ ms.topic: how-to
 If you plan to use certificates for on-premises single-sign on, then follow these **additional** steps to configure the environment to enroll Windows Hello for Business certificates for Azure AD-joined devices.
 
 > [!IMPORTANT]
-> Ensure you have performed the configurations in [Azure AD-joined devices for On-premises Single-Sign On](hello-hybrid-aadj-sso-base.md) before you continue.
+> Ensure you have performed the configurations in [Azure AD-joined devices for On-premises Single-Sign On](/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso) before you continue.
 
 Steps you'll perform include:
 
@@ -848,7 +848,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 Sign-in a workstation with access equivalent to a _domain user_.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Select **Devices**, and then select **Configuration Profiles**.
 
@@ -901,7 +901,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 Sign-in a workstation with access equivalent to a _domain user_.
 
-1. Sign-in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign-in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Select **Devices**, and then select **Configuration Profiles**.
 

@@ -3,6 +3,7 @@ title: How User Account Control works (Windows)
 description: User Account Control (UAC) is a fundamental component of Microsoft's overall security vision. UAC helps mitigate the impact of malware.
 ms.collection: 
   - highpri
+  - tier2
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/23/2021

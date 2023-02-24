@@ -14,6 +14,7 @@ manager: aaroncz
 audience: ITPro
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: article
 ms.technology: itpro-security
 appliesto: 

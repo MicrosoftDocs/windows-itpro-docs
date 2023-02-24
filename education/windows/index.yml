@@ -12,6 +12,7 @@ metadata:
   ms.collection:
   - education
   - highpri
+  - tier1
   author: paolomatarazzo
   ms.author: paoloma
   ms.date: 08/10/2022
@@ -100,5 +101,5 @@ landingContent:
           url: edu-take-a-test-kiosk-mode.md
         - text: Configure Shared PC
           url: /windows/configuration/set-up-shared-or-guest-pc?context=/education/context/context
-        - text: "Deploy Minecraft: Education Edition"
+        - text: Get and deploy Minecraft Education
           url: get-minecraft-for-education.md

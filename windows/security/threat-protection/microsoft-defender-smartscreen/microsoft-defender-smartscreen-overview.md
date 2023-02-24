@@ -10,6 +10,7 @@ manager: aaroncz
 ms.technology: itpro-security
 adobe-target: true
 ms.collection: 
+  - tier2
   - highpri
 ms.date: 12/31/2017
 ms.topic: article

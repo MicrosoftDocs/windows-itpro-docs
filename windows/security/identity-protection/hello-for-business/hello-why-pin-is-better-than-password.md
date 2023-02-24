@@ -3,6 +3,7 @@ title: Why a PIN is better than an online password (Windows)
 description: Windows Hello enables users to sign in to their device using a PIN. How is a PIN different from (and better than) an online password.
 ms.collection: 
   - highpri
+  - tier1
 ms.date: 10/23/2017
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
@@ -81,5 +82,5 @@ If you only had a biometric sign-in configured and, for any reason, were unable 
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Event ID 300 - Windows Hello successfully created](/windows/security/identity-protection/hello-for-business/hello-faq)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
