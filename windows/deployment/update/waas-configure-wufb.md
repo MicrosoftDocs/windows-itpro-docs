@@ -212,7 +212,6 @@ Starting with Windows 10, version 1607, you can selectively opt out of receiving
 
 ## Enable features introduced via servicing that are off by default
 <!--6544872-->
-(*Starting in Windows 11, version 22H2 or later*)
 
 New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features are temporarily turned off by default. Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly.
 
@@ -234,8 +233,8 @@ The following are quick-reference tables of the supported policy values for Wind
 
 | GPO Key |	Key type | Value |
 | --- | --- | --- |
-| AllowTemporaryEnterpriseFeatureControl | REG_DWORD | 1: Allowed. All features in the latest monthly cumulative update are enabled.</br> Other value or absent: Features that are shipped turned off by default will remain off |
-| BranchReadinessLevel	| REG_DWORD | 2: Systems take feature updates for the Windows Insider build - Fast (added in Windows 10, version 1709)</br> 4: Systems take feature updates for the Windows Insider build - Slow (added in Windows 10, version 1709)</br> 8: Systems take feature updates for the Release Windows Insider build (added in Windows 10, version 1709)</br></br> Other value or absent: Receive all applicable updates |
+| AllowTemporaryEnterpriseFeatureControl </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Allowed. All features in the latest monthly cumulative update are enabled.</br> Other value or absent: Features that are shipped turned off by default will remain off |
+| BranchReadinessLevel	| REG_DWORD | 2: Systems take feature updates for the Windows Insider build - Fast </br> 4: Systems take feature updates for the Windows Insider build - Slow </br> 8: Systems take feature updates for the Release Windows Insider build </br></br> Other value or absent: Receive all applicable updates |
 | DeferFeatureUpdates | REG_DWORD | 1: Defer feature updates</br>Other value or absent: Don't defer feature updates |
 | DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-365: Defer feature updates by given days |
 | DeferQualityUpdates | REG_DWORD | 1: Defer quality updates</br>Other value or absent: Don't defer quality updates | 
@@ -250,8 +249,8 @@ The following are quick-reference tables of the supported policy values for Wind
 
 | MDM Key | Key type | Value |
 | --- | --- | --- |
-| AllowTemporaryEnterpriseFeatureControl | REG_DWORD | 1: Allowed. All features in the latest monthly cumulative update are enabled.</br> Other value or absent: Features that are shipped turned off by default will remain off |
-| BranchReadinessLevel | REG_DWORD |2: Systems take feature updates for the Windows Insider build - Fast (added in Windows 10, version 1709)</br> 4: Systems take feature updates for the Windows Insider build - Slow (added in Windows 10, version 1709)</br> 8: Systems take feature updates for the Release Windows Insider build (added in Windows 10, version 1709) </br>32: Systems take feature updates from General Availability Channel </br>Note: Other value or absent: Receive all applicable updates |
+| AllowTemporaryEnterpriseFeatureControl </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Allowed. All features in the latest monthly cumulative update are enabled.</br> Other value or absent: Features that are shipped turned off by default will remain off |
+| BranchReadinessLevel | REG_DWORD |2: Systems take feature updates for the Windows Insider build - Fast </br> 4: Systems take feature updates for the Windows Insider build - Slow </br> 8: Systems take feature updates for the Release Windows Insider build  </br>32: Systems take feature updates from General Availability Channel </br>Note: Other value or absent: Receive all applicable updates |
 | DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-365: Defer feature updates by given days |
 | DeferQualityUpdatesPeriodinDays | REG_DWORD | 0-35: Defer quality updates by given days |
 | ExcludeWUDriversinQualityUpdate | REG_DWORD | 1: Exclude Windows Update drivers</br>Other value or absent: Offer Windows Update drivers |
