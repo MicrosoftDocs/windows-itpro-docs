@@ -34,4 +34,15 @@ items:
     - name: Deployment
       tocHref: /mem/intune/protect/
       topicHref: /windows/deployment/
-      
+
+- name: Learn
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Windows
+    tocHref: /windows/
+    topicHref: /windows/resources/
+    items:
+    - name: Deployment
+      tocHref: /windows/client-management/mdm
+      topicHref: /windows/deployment/     
