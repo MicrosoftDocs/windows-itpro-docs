@@ -61,7 +61,7 @@ To configure Windows Hello for Business using an account protection policy:
 1. Sign in to the <a href="https://intune.microsoft.com" target="_blank"><b>Microsoft Intune admin center</b></a>
 1. Select **Endpoint security** > **Account protection**
 1. Select **+ Create Policy**
-1. For **Platform**, select **Windows 10 and later** and for **Profile* select **Account protection**
+1. For **Platform**, select **Windows 10 and later** and for **Profile** select **Account protection**
 1. Select **Create**
 1. Specify a **Name** and, optionally, a **Description** > **Next**
 1. Under **Block Windows Hello for Business**, select **Disabled** and multiple policies become available
