@@ -80,9 +80,9 @@ To configure Windows Hello for Business using an account protection policy:
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
-### Configure cloud Kerberos trust policy
+### Configure the cloud Kerberos trust policy
 
-The cloud Kerberos trust policy can be configured using a custom template, and is configured separately from enabling Windows Hello from Business.
+The cloud Kerberos trust policy can be configured using a custom template, and it's configured separately from enabling Windows Hello for Business.
 
 To configure the cloud Kerberos trust policy:
 
