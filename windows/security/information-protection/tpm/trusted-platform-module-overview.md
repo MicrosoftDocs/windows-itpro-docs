@@ -58,7 +58,7 @@ For more info on new and changed functionality for Trusted Platform Module in Wi
 
 Device health attestation enables enterprises to establish trust based on hardware and software components of a managed device. With device heath attestation, you can configure an MDM server to query a health attestation service that will allow or deny a managed device access to a secure resource.
 
-Some things that you can check on the device include:
+Some security issues that you can check on the device include the following:
 
 - Is Data Execution Prevention supported and enabled?
 - Is BitLocker Drive Encryption supported and enabled?
