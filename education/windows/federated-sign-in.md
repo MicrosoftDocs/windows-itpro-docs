@@ -122,7 +122,7 @@ Federated sign-in doesn't work on devices that have the following settings enabl
 
 When federated sign-in is enabled, the user's identity from the IdP must match an existing user object in Azure AD.
 After the token sent by the IdP is validated, Azure AD searches for a matching user object in the tenant by using an attribute called *ImmutableId*.
-If the matching object is found, the user is signed-in. If not, the user is presented with the following error message, showing that a user with an ImmutableId matching *260051* can't be found:
+If the matching object is found, the user is signed-in. If not, the user is presented with an error message. The following picture shows that a user with the ImmutableId *260051* can't be found:
 
 :::image type="content" source="images/federation/user-match-lookup-failure.png" alt-text="Azure AD sign-in error: a user with a matching ImmutableId can't be found in the tenant." lightbox="images/federation/user-match-lookup-failure.png":::
 
@@ -140,10 +140,10 @@ Here's a PowerShell script example to update the ImmutableId for a federated use
 
 ```powershell
 #1. switch the user from federated to managed
-Get-AzureADUser -SearchString alton@example.com | Set-AzureADUser -UserPrincipalName alexander@example.onmicrosoft.com
+Get-AzureADUser -SearchString alton@example.com | Set-AzureADUser -UserPrincipalName alton@example.onmicrosoft.com
     
 #2. swtich the user from managed to federated while setting the immutableId
-Get-AzureADUser -SearchString alexander@example.onmicrosoft.com | Set-AzureADUser -UserPrincipalName alexander@example.com -ImmutableId '260051'
+Get-AzureADUser -SearchString alton@example.onmicrosoft.com | Set-AzureADUser -UserPrincipalName alton@example.com -ImmutableId '260051'
 ```
 
 ## Troubleshooting
