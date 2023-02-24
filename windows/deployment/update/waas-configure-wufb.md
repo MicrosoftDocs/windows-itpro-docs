@@ -242,7 +242,6 @@ The following are quick-reference tables of the supported policy values for Wind
 | ExcludeWUDriversInQualityUpdate | REG_DWORD | 1: Exclude Windows Update drivers</br>Other value or absent: Offer Windows Update drivers |
 | PauseFeatureUpdatesStartTime | REG_DWORD |1: Pause feature updates</br>Other value or absent: Don't pause feature updates |
 | PauseQualityUpdatesStartTime | REG_DWORD | 1: Pause quality updates</br>Other value or absent: Don't pause quality updates |
-|
 
 
 **MDM: HKEY_LOCAL_MACHINE\Software\Microsoft\PolicyManager\default\Update**
