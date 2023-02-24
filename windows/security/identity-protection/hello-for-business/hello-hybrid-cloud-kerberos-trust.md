@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business cloud Kerberos trust deployment
 description: Learn how to deploy Windows Hello for Business in a cloud Kerberos trust scenario.
-ms.date: 02/22/2023
+ms.date: 02/24/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10, version 21H2 and later</a>
 ms.topic: tutorial
@@ -79,7 +79,7 @@ Once the prerequisites are met, deploying Windows Hello for Business with a clou
 > * Provision Windows Hello for Business on Windows clients
 
 > [!div class="nextstepaction"]
-> [Next: **configure** and provision **Windows** Hello for **Business** >](hello-hybrid-cloud-kerberos-trust-provision.md)
+> [Next: configure and provision Windows Hello for Business >](hello-hybrid-cloud-kerberos-trust-provision.md)
 
 <!--Links-->
 
@@ -89,6 +89,3 @@ Once the prerequisites are met, deploying Windows Hello for Business with a clou
 
 [SUP-1]: https://support.microsoft.com/topic/january-23-2020-kb4534307-os-build-14393-3474-b181594e-2c6a-14ea-e75b-678efea9d27e
 [SUP-2]: https://support.microsoft.com/topic/january-23-2020-kb4534321-os-build-17763-1012-023e84c3-f9aa-3b55-8aff-d512911c459f
-
-
-**hello** you **there**
