@@ -10,7 +10,7 @@ ms.topic: tutorial
 
 [!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cloudkerb-trust.md)]
 
-Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to successfully deploy Windows Hello for Business in a *cloud Kerberos trust* scenario.
+Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to deploy Windows Hello for Business in a *cloud Kerberos trust* scenario.
 
 ## Introduction to cloud Kerberos trust
 
@@ -19,7 +19,7 @@ The goal of Windows Hello for Business cloud Kerberos trust is to bring the simp
 Windows Hello for Business cloud Kerberos trust uses *Azure AD Kerberos*, which enables a simpler deployment when compared to the *key trust model*:
 
 - No need to deploy a public key infrastructure (PKI) or to change an existing PKI
-- No need to synchronize public keys between Azure AD and Active Directory for users to access on-premises resources. This means that there isn't delay between the user's WHFB provisioning and being able to authenticate to Active Directory
+- No need to synchronize public keys between Azure AD and Active Directory for users to access on-premises resources. There isn't any delay between the user's Windows Hello for Business provisioning, and being able to authenticate to Active Directory
 - [Passwordless security key sign-in][AZ-1] can be deployed with minimal extra setup
 
 > [!NOTE]
@@ -30,7 +30,7 @@ Windows Hello for Business cloud Kerberos trust uses *Azure AD Kerberos*, which 
 *Key trust* and *certificate trust* use certificate authentication-based Kerberos for requesting kerberos ticket-granting-tickets (TGTs) for on-premises authentication. This type of authentication requires a PKI for DC certificates, and requires end-user certificates for certificate trust.
 
 Cloud Kerberos trust uses Azure AD Kerberos, which doesn't require a PKI to request TGTs.\
-With Azure AD Kerberos, Azure AD can issue TGTs for one or more AD domains. Windows can request a TGT from Azure AD when authenticating with Windows Hello for Business, and use the returned TGT for logon or to access traditional AD-based resources. Kerberos service tickets and authorization continue to be controlled by the on-premises Domain Controllers.
+With Azure AD Kerberos, Azure AD can issue TGTs for one or more AD domains. Windows can request a TGT from Azure AD when authenticating with Windows Hello for Business, and use the returned TGT for sign-in or to access AD-based resources. The on-premises domain controllers are still responsible for Kerberos service tickets and authorization.
 
 When Azure AD Kerberos is enabled in an Active Directory domain, an *Azure AD Kerberos server object* is created in the domain. This object:
 
@@ -79,7 +79,7 @@ Once the prerequisites are met, deploying Windows Hello for Business with a clou
 > * Provision Windows Hello for Business on Windows clients
 
 > [!div class="nextstepaction"]
-> [Next: configure and provision Windows Hello for Business >](hello-hybrid-cloud-kerberos-trust-provision.md)
+> [Next: **configure** and provision **Windows** Hello for **Business** >](hello-hybrid-cloud-kerberos-trust-provision.md)
 
 <!--Links-->
 
@@ -89,3 +89,6 @@ Once the prerequisites are met, deploying Windows Hello for Business with a clou
 
 [SUP-1]: https://support.microsoft.com/topic/january-23-2020-kb4534307-os-build-14393-3474-b181594e-2c6a-14ea-e75b-678efea9d27e
 [SUP-2]: https://support.microsoft.com/topic/january-23-2020-kb4534321-os-build-17763-1012-023e84c3-f9aa-3b55-8aff-d512911c459f
+
+
+**hello** you **there**

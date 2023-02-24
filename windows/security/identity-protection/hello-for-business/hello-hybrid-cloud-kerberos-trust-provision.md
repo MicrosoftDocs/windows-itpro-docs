@@ -29,16 +29,12 @@ After setting up the Azure AD Kerberos object, Windows Hello for business cloud 
 
 #### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-## Configure Windows Hello for Business using Microsoft Intune
-
-For devices enrolled in Intune, you can use Intune policies to manage Windows Hello for Business.
+For devices managed by Intune, you can use Intune policies to configure Windows Hello for Business.
 
 There are different ways to enable and configure Windows Hello for Business in Intune:
 
-- Using a policy applied at the tenant level. The tenant policy:
-  - Is only applied at enrollment time, and any changes to its configuration won't apply to devices already enrolled in Intune
-  - It applies to *all devices* getting enrolled in Intune. For this reason, the policy is usually disabled and Windows Hello for Business is enabled using a policy targeted to a security group
-- A device configuration policy that is applied *after* device enrollment. Any changes to the policy will be applied to the devices during regular policy refresh intervals. Chose from the following policy types:
+- When the device is enrolled in Intune, a tenant-wide policy is applied to the device. This policy is applied at enrollment time only, and any changes to its configuration won't apply to devices already enrolled in Intune. For this reason, this policy is usually disabled, and Windows Hello for Business can be enabled using a policy targeted to a security group
+- After the device is enrolled in Intune, you can apply a device configuration policy. Any changes to the policy will be applied to the devices during regular policy refresh intervals. There are different policy types to choose from:
   - [Settings catalog][MEM-7]
   - [Security baselines][MEM-2]
   - [Custom policy][MEM-3], via the [PassportForWork CSP][MEM-4]
@@ -49,7 +45,7 @@ There are different ways to enable and configure Windows Hello for Business in I
 
 To check the Windows Hello for Business policy applied at enrollment time:
 
-1. Sign in to the <a href="https://intune.microsoft.com/" target="_blank"><b>Microsoft Intune admin center</b></a>
+1. Sign in to the <a href="https://intune.microsoft.com" target="_blank"><b>Microsoft Intune admin center</b></a>
 1. Select **Devices** > **Windows** > **Windows Enrollment**
 1. Select **Windows Hello for Business**
 1. Verify the status of **Configure Windows Hello for Business** and any settings that may be configured
@@ -60,25 +56,25 @@ If the tenant-wide policy is enabled and configured to your needs, you can skip 
 
 ### Enable Windows Hello for Business
 
-To configure Windows Hello for Business using an *account protection* policy:
+To configure Windows Hello for Business using an account protection policy:
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Intune admin center</b></a>
+1. Sign in to the <a href="https://intune.microsoft.com" target="_blank"><b>Microsoft Intune admin center</b></a>
 1. Select **Endpoint security** > **Account protection**
 1. Select **+ Create Policy**
-1. For *Platform**, select **Windows 10 and later** and for *Profile* select **Account protection**
+1. For **Platform**, select **Windows 10 and later** and for **Profile* select **Account protection**
 1. Select **Create**
 1. Specify a **Name** and, optionally, a **Description** > **Next**
-1. Under *Block Windows Hello for Business*, select **Disabled** and multiple policies become available
-    - These policies are optional to configure, but it's recommended to configure *Enable to use a Trusted Platform Module (TPM)* to **Yes**
+1. Under **Block Windows Hello for Business**, select **Disabled** and multiple policies become available
+    - These policies are optional to configure, but it's recommended to configure **Enable to use a Trusted Platform Module (TPM)** to **Yes**
     - For more information about these policies, see [MDM policy settings for Windows Hello for Business](hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business)
-1. Under *Enable to certificate for on-premises resources*, select **Disabled** and multiple policies become available
+1. Under **Enable to certificate for on-premises resources**, select **Disabled** and multiple policies become available
 1. Select **Next**
-1. Optionally, add *scope tags* > **Next**
+1. Optionally, add **scope tags** and select **Next**
 1. Assign the policy to a security group that contains as members the devices or users that you want to configure > **Next**
 1. Review the policy configuration and select **Create**
 
 > [!TIP]
-> If you want to enforce the use of digits for your Windows Hello for Business PIN, use the settings catalog and choose **Digits** or **Digits (User)** instead of using the Identity Protection template.
+> If you want to enforce the use of digits for your Windows Hello for Business PIN, use the settings catalog and choose **Digits** or **Digits (User)** instead of using the Account protection template.
 
 :::image type="content" source="images/whfb-intune-account-protection-enable.png" alt-text="Enablement of Windows Hello for Business from Microsoft Intune admin center using an account protection policy." lightbox="images/whfb-intune-account-protection-enable.png":::
 
@@ -86,14 +82,14 @@ Assign the policy to a security group that contains as members the devices or us
 
 ### Configure cloud Kerberos trust policy
 
-The cloud Kerberos trust policy needs to be configured using a custom template, and is configured separately from enabling Windows Hello from Business.
+The cloud Kerberos trust policy can be configured using a custom template, and is configured separately from enabling Windows Hello from Business.
 
 To configure the cloud Kerberos trust policy:
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Select **Devices** > **Windows** > **Configuration Profiles** > **Create profile**.
-1. For Profile Type, select **Templates** and select the **Custom** Template.
-1. Name the profile with a familiar name. For example, "Windows Hello for Business cloud Kerberos trust".
+1. Sign in to the <a href="https://intune.microsoft.com" target="_blank"><b>Microsoft Intune admin center</b></a>
+1. Select **Devices** > **Windows** > **Configuration Profiles** > **Create profile**
+1. For Profile Type, select **Templates** and select the **Custom** Template
+1. Name the profile with a familiar name. For example, "Windows Hello for Business cloud Kerberos trust"
 1. In Configuration Settings, add a new configuration with the following settings:
 
     | Setting |
@@ -135,12 +131,12 @@ You can configure Windows Hello for Business cloud Kerberos trust using a Group 
 1. Expand **Computer Configuration > Administrative Templates > Windows Components > Windows Hello for Business**
 1. Select **Use Windows Hello for Business** > **Enable** > **OK**
 1. Select **Use cloud Kerberos trust for on-premises authentication** > **Enable** > **OK**
-1. *Optional, but recommended*: select **Use a hardware security device** > **Enable** > **OK**
+1. Optional, but recommended: select **Use a hardware security device** > **Enable** > **OK**
 
 ---
 
 > [!IMPORTANT]
-> If the *Use certificate for on-premises authentication* policy is enabled, certificate trust will take precedence over cloud Kerberos trust. Ensure that the machines that you want to enable cloud Kerberos trust have this policy *not configured* or *disabled*.
+> If the **Use certificate for on-premises authentication** policy is enabled, certificate trust will take precedence over cloud Kerberos trust. Ensure that the machines that you want to enable cloud Kerberos trust have this policy **not configured** or **disabled**.
 
 ## Provision Windows Hello for Business
 
