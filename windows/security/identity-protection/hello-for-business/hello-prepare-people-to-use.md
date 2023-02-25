@@ -42,9 +42,7 @@ People can go to **Settings** &gt; **Accounts** &gt; **Work or school**, select 
 
 If your policy allows it, people can use biometrics (fingerprint, iris, and facial recognition) with Windows Hello for Business, if the hardware supports it.
 
-![sign in to windows, apps, and services using fingerprint or face.](images/hellosettings.png)
-
-
+:::image type="content" alt-text="This screenshot shows account sign-in options to windows, apps, and services using fingerprint or face." source="images/hellosettings.png":::
 
 ## Related topics
 
