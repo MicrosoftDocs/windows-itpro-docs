@@ -79,10 +79,10 @@ Membership in the local Administrators group, or equivalent, is the minimum requ
 
 **To clear the TPM**
 
-1. Open the Windows Defender Security Center app
-1. Select **Device security**
-1. Select **Security processor details**
-1. Select **Security processor troubleshooting**
+1. Open the Windows Defender Security Center app.
+1. Select **Device security**.
+1. Select **Security processor details**.
+1. Select **Security processor troubleshooting**.
 1. Select **Clear TPM**.
     - You'll be prompted to restart the computer. During the restart, you might be prompted by the UEFI to press a button to confirm that you wish to clear the TPM.
     - After the device restarts, your TPM will be automatically prepared for use by Windows.
@@ -95,9 +95,9 @@ Normally, the TPM is turned on as part of the TPM initialization process. You do
 
 If you want to use the TPM after you've turned it off, you can use the following procedure to turn on the TPM.
 
-1. Open the TPM MMC (tpm.msc)
-1. In the **Action** pane, select **Turn TPM On** to display the **Turn on the TPM Security Hardware** page. Read the instructions on this page
-1. Select **Shutdown** (or **Restart**), and then follow the UEFI screen prompts
+1. Open the TPM MMC (tpm.msc).
+1. In the **Action** pane, select **Turn TPM On** to display the **Turn on the TPM Security Hardware** page. Read the instructions on this page.
+1. Select **Shutdown** (or **Restart**), and then follow the UEFI screen prompts.
 
 After the device restarts, but before you sign in to Windows, you'll be prompted to accept the reconfiguration of the TPM. The acceptance ensures that the user has physical access to the computer and that malicious software isn't attempting to make changes to the TPM.
 
@@ -105,12 +105,12 @@ After the device restarts, but before you sign in to Windows, you'll be prompted
 
 If you want to stop using the services that are provided by the TPM, you can use the TPM MMC to turn off the TPM.
 
-1. Open the TPM MMC (`tpm.msc`)
-1. In the **Action** pane, select **Turn TPM Off** to display the **Turn off the TPM security hardware** page
+1. Open the TPM MMC (`tpm.msc`).
+1. In the **Action** pane, select **Turn TPM Off** to display the **Turn off the TPM security hardware** page.
 1. In the **Turn off the TPM security hardware** dialog box, select a method to enter your owner password and turning off the TPM:
-   - If you saved your TPM owner password on a removable storage device, insert it, and then select **I have the owner password file**. In the **Select backup file with the TPM owner password** dialog box, select **Browse** to locate the *.tpm* file that is saved on your removable storage device, select **Open**, and then select **Turn TPM Off**
-   - If you don't have the removable storage device with your saved TPM owner password, select **I want to enter the password**. In the **Type your TPM owner password** dialog box, type your password (including hyphens), and then select **Turn TPM Off**
-   - If you didn't save your TPM owner password or no longer know it, select **I do not have the TPM owner password**, and follow the instructions that are provided in the dialog box and subsequent UEFI screens to turn off the TPM without entering the password
+   - If you saved your TPM owner password on a removable storage device, insert it, and then select **I have the owner password file**. In the **Select backup file with the TPM owner password** dialog box, select **Browse** to locate the *.tpm* file that is saved on your removable storage device, select **Open**, and then select **Turn TPM Off**.
+   - If you don't have the removable storage device with your saved TPM owner password, select **I want to enter the password**. In the **Type your TPM owner password** dialog box, type your password (including hyphens), and then select **Turn TPM Off**.
+   - If you didn't save your TPM owner password or no longer know it, select **I do not have the TPM owner password**, and follow the instructions that are provided in the dialog box and subsequent UEFI screens to turn off the TPM without entering the password.
   
 ## Use the TPM cmdlets
 
