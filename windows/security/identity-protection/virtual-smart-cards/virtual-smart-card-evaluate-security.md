@@ -21,7 +21,7 @@ Data can be accessed and used within the virtual smart card system, but it's mea
 
 The following diagram illustrates the secure key hierarchy and the process of accessing the user key.
 
-![Diagram of the process of accessing the user key.](images/vsc-process-of-accessing-user-key.png)
+:::image type="content" alt-text="Diagram of the process of accessing the user key." source="images/vsc-process-of-accessing-user-key.png" lightbox="images/vsc-process-of-accessing-user-key.png":::
 
 The following keys are stored on the hard disk:
 
