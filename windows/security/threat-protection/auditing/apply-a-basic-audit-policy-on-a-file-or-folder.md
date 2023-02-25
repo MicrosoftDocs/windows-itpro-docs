@@ -66,7 +66,7 @@ To complete this procedure, you must be signed in as a member of the built-in Ad
  
 ## More considerations
 
--   After you turn on object access auditing, view the security login Event Viewer to review the results of your changes.
+-   After you turn on object access auditing, view the security log in Event Viewer to review the results of your changes.
 -   You can set up file and folder auditing only on NTFS drives.
 -   Because the security log is limited in size, carefully select the files and folders to be audited. Also, consider the amount of disk space that you want to devote to the security log. The maximum size for the security log is defined in Event Viewer.
  
