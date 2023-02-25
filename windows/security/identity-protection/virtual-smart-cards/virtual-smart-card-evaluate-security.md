@@ -41,7 +41,8 @@ The Trusted Computing Group specifies that if the response to attacks involves s
 
 1. Allow only a limited number of wrong PIN attempts before enabling a lockout that enforces a time delay before any further commands are accepted by the TPM.
 
-    > **Note**
+    > [!NOTE]
+    > 
     > If the user enters the wrong PIN five consecutive times for a virtual smart card (which works in conjunction with the TPM), the card is blocked. When the card is blocked, it must be unblocked by using the administrative key or the PUK.
 
 1. Increase the time delay exponentially as the user enters the wrong PIN so that an excessive number of wrong PIN attempts quickly trigger long delays in accepting commands.
