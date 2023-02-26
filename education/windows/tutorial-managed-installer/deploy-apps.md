@@ -58,7 +58,7 @@ If you are trying to install a PWA via Intune, you can do so with the [WebAppIns
 
 ## Store apps
 
-<!-->
+<!--
 ### Store for Education
 [Microsoft Store for Education - M365 Education | Microsoft Learn][M365-1]
 
