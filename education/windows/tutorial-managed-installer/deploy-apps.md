@@ -58,6 +58,7 @@ If you are trying to install a PWA via Intune, you can do so with the [WebAppIns
 
 ## Store apps
 
+<!-->
 ### Store for Education
 [Microsoft Store for Education - M365 Education | Microsoft Learn][M365-1]
 
@@ -99,8 +100,10 @@ To install apps, you'll first get the app from the [Microsoft Store for Educatio
 11. On the following page, set the groups and devices you'd like to install the app to under the Required section.
 12. Click the Review + Save button to review the assignments, then click the Save button.
 
+-->
 ### Store app (new)
-UWP apps deployed through Intune via Apps > Microsoft Store (new) are currently not supported and are currently in investigation.
+
+UWP apps deployed through Intune via Apps > Microsoft Store (new) are currently not supported.
 
 Win32 apps can be deployed through this flow, but are subject to the [known limitations of managed installers](Validate-applications#known-limitations).
 

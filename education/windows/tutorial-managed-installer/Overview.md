@@ -17,14 +17,15 @@ The documentation in this GitHub repository covers how to set up Windows 11 SE d
 
 ## Goals
 
-In this documentation you will learn:
+In this tutorial you will learn:
 
-- [x]  what applications can be installed on a Windows 11 SE device when managed installer policies are enabled
-- [x]  how to install an application to a Windows 11 SE device
-- [x]  how to validate that an application is installed and runs successfully
-- [x]  how to write additional policies to enable incompatible applications
-- [x]  how to troubleshoot problems related to application installation
-- 
+> [!div class="checklist"]
+> - what applications can be installed on a Windows 11 SE device when managed installer policies are enabled
+> - How to install an application to a Windows 11 SE device
+> - How to validate that an application is installed and runs successfully
+> - How to write additional policies to enable incompatible applications
+> - How to troubleshoot problems related to application installation
+
 ## Introduction
 
 Windows 11 SE prevents the installation and execution of 3<sup>rd</sup> party applications with a technology called **Windows Defender Application Control (WDAC)**.\
@@ -44,7 +45,7 @@ IT admins can write and deploy their own WDAC supplemental policies through Micr
 
 There are four main steps to install an application on Windows 11 SE using the managed installer. Each step will be covered in detail in this tutorial.
 
-![](./images/tap-process.svg)
+![](./images/process.svg)
 
 1. **Deploy an application via Microsoft Intune** - Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but this step is the same as it would be for non-Windows 11 SE devices.
 1. **Validate the application** - Applications are validated to ensure that they are installed and running successfully. This step is the same as it would be for non-Windows 11 SE devices. Since some applications may be incompatible due to how they are installed, how they execute, or how they update, the known limitations are discussed in a later section of this tutorial.
@@ -53,18 +54,18 @@ There are four main steps to install an application on Windows 11 SE using the m
 All four of these steps are done by the IT administrator. Once the steps are complete, users of Windows 11 SE devices should be able to run the applications that you've deployed via Intune.
 
 ## Prerequisites
+
 In order to receive policies on your Windows 11 SE device to allow 3rd party app installation controlled by your IT admin, you must have the following:
 - Windows 11 SE devices with a minimum version of 10.0.22621.819 (22H2, November Update) and later.
 - Your Windows 11 devices must be connected to a tenant with an Intune for Education license. If you do not have an Intune for Education license for your devices yet, refer to [Microsoft Intune for Education][EXT-1] for access to a free trial version. This license is needed for Managed Installer to successfully deploy apps and supplemental policies via Intune.
 
----
+## Next steps
 
-[EDU-1]: https://learn.microsoft.com/education/windows/windows-11-se-overview#available-applications
+Advance to the next article to learn how to create...
+> [!div class="nextstepaction"]
+> [Next: deploy apps](deploy-apps.md)
 
-
-
----
-
-[WIN-1]: https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create
 [EDU-1]: https://learn.microsoft.com/education/windows/windows-11-se-overview#add-your-own-applications
+[EDU-2]: https://learn.microsoft.com/education/windows/windows-11-se-overview#available-applications
 [EXT-1]: https://www.microsoft.com/en-us/education/intune
+[WIN-1]: https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create
