@@ -8795,7 +8795,7 @@ Determines whether the credential manager will save ras credentials after a conn
 
 <!-- VPNv2-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
-# ProfileXML XSD Schema
+## ProfileXML XSD Schema
 
 ```xml
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
