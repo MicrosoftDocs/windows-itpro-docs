@@ -5,10 +5,11 @@ ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.author: mstewart
 author: mestew
-manager: dougeby
+manager: aaroncz
 ms.localizationpriority: medium
-ms.topic: overview
+ms.topic: article
 ms.date: 10/18/2022
+ms.collection: highpri, tier1
 ---
 
 # What's new in Windows 10, version 22H2

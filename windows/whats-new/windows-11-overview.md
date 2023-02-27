@@ -1,7 +1,6 @@
 ---
 title: Windows 11 overview for administrators
 description: Learn more about Windows 11. Read about the features IT professionals and administrators should know about Windows 11, including security, using apps, using Android apps, the new desktop, and deploying and servicing PCs.
-ms.reviewer: 
 manager: aaroncz
 author: mestew
 ms.author: mstewart
@@ -10,8 +9,7 @@ ms.date: 09/20/2022
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: overview
-ms.collection: highpri
-ms.custom: intro-overview
+ms.collection: highpri, tier1
 ---
 
 # Windows 11 overview
