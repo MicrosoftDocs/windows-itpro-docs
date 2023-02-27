@@ -2,9 +2,9 @@
 title: What's new in Windows 10, version 1903
 description: New and updated features in Windows 10, version 1903 (also known as the Windows 10 May 2019 Update).
 ms.prod: windows-client
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
