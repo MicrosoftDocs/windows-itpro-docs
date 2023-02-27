@@ -5,7 +5,7 @@ ms.author: mstewart
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2015 (also known as Windows 10 Enterprise 2015 LTSB).
 ms.prod: windows-client
 author: mestew
-ms.localizationpriority: medium
+ms.localizationpriority: low
 ms.topic: article
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017

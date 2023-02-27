@@ -5,7 +5,7 @@ ms.author: mstewart
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2021.
 ms.prod: windows-client
 author: mestew
-ms.localizationpriority: low
+ms.localizationpriority: high
 ms.topic: article
 ms.collection: highpri, tier1
 ms.technology: itpro-fundamentals
