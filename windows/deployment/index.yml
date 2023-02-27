@@ -9,8 +9,7 @@ metadata:
   ms.topic: landing-page
   ms.technology: itpro-apps
   ms.prod: windows-client
-  ms.collection:
-    - highpri
+  ms.collection: highpri, tier1
   author: frankroj
   ms.author: frankroj
   manager: aaroncz
