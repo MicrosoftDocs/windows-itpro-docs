@@ -738,10 +738,8 @@ items:
     - name: EnterpriseDesktopAppManagement
       href: enterprisedesktopappmanagement-csp.md
       items:
-      - name: EnterpriseDesktopAppManagement DDF
+      - name: EnterpriseDesktopAppManagement DDF file
         href: enterprisedesktopappmanagement-ddf-file.md
-      - name: EnterpriseDesktopAppManagement XSD
-        href: enterprisedesktopappmanagement2-xsd.md
     - name: EnterpriseModernAppManagement
       href: enterprisemodernappmanagement-csp.md
       items:
