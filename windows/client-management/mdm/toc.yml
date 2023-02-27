@@ -917,8 +917,6 @@ items:
       items:
       - name: VPNv2 DDF file
         href: vpnv2-ddf-file.md
-      - name: ProfileXML XSD
-        href: vpnv2-profile-xsd.md
       - name: EAP configuration
         href: eap-configuration.md
     - name: w4 APPLICATION
