@@ -5,8 +5,7 @@ ms.prod: windows-client
 author: mestew
 ms.localizationpriority: medium
 ms.author: mstewart
-ms.collection: 
-  - highpri
+ms.collection: highpri, tier2
 manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates

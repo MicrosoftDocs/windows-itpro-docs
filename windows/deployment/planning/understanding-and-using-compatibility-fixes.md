@@ -1,7 +1,6 @@
 ---
 title: Understanding and Using Compatibility Fixes (Windows 10)
 description: As the Windows operating system evolves to support new technology and functionality, the implementations of some functions may change.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

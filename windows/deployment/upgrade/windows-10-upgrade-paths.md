@@ -7,7 +7,7 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
-ms.collection: highpri
+ms.collection: highpri, tier2
 ms.technology: itpro-deploy
 ms.date: 10/28/2022
 ---

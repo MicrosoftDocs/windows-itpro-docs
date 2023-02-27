@@ -1,6 +1,5 @@
 ---
 title: Set up MDT for BitLocker (Windows 10)
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 description: Learn how to configure your environment for BitLocker, the disk volume encryption built into Windows 10 Enterprise and Windows 10 Pro, using MDT.
@@ -8,7 +7,6 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
-ms.custom: seo-marvel-mar2020
 ms.technology: itpro-deploy
 ms.date: 11/28/2022
 ---

@@ -1,7 +1,6 @@
 ---
 title: General Conventions (Windows 10)
 description: Learn about general XML guidelines and how to use XML helper functions in the XML Elements library to change migration behavior.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

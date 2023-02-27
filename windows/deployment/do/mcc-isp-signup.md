@@ -3,13 +3,12 @@ title: Operator sign up and service onboarding
 manager: aaroncz
 description: Service onboarding for Microsoft Connected Cache for ISP
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-audience: itpro
 author: nidos
 ms.author: nidos
 ms.topic: article
 ms.date: 12/31/2017
 ms.technology: itpro-updates
+ms.collection: tier3
 ---
 
 # Operator sign up and service onboarding for Microsoft Connected Cache

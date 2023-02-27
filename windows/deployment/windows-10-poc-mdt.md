@@ -4,7 +4,6 @@ description: In this article, you'll learn how to deploy Windows 10 in a test la
 ms.prod: windows-client
 ms.localizationpriority: medium
 ms.date: 11/23/2022
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 author: frankroj

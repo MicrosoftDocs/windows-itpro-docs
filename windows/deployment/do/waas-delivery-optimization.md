@@ -1,15 +1,13 @@
 ---
 title: What is Delivery Optimization?
-manager: dougeby
+manager: aaroncz
 description: This article provides information about Delivery Optimization, a peer-to-peer distribution method in Windows 10 and Windows 11.
 ms.prod: windows-client
-author: carmenf
+author: cmknox
 ms.localizationpriority: medium
 ms.author: carmenf
-ms.collection: 
-  - highpri
+ms.collection: tier3, highpri
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates
 ms.date: 12/31/2017
 ---

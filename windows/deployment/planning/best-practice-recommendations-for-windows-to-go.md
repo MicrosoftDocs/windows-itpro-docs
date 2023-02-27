@@ -1,7 +1,6 @@
 ---
 title: Best practice recommendations for Windows To Go (Windows 10)
 description: Learn about best practice recommendations for using Windows To Go, like using a USB 3.0 port with Windows to Go if it's available.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

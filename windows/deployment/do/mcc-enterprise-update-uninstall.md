@@ -1,6 +1,6 @@
 ---
 title: Update or uninstall Microsoft Connected Cache for Enterprise and Education
-manager: dougeby
+manager: aaroncz
 description: Details on updating or uninstalling Microsoft Connected Cache (MCC) for Enterprise and Education.
 ms.prod: windows-client
 author: amymzhou
@@ -8,6 +8,7 @@ ms.author: amyzhou
 ms.topic: article
 ms.date: 12/31/2017
 ms.technology: itpro-updates
+ms.collection: tier3
 ---
 # Update or uninstall Microsoft Connected Cache for Enterprise and Education
 
