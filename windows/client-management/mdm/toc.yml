@@ -758,7 +758,7 @@ items:
     - name: HealthAttestation
       href: healthattestation-csp.md
       items:
-      - name: HealthAttestation DDF
+      - name: HealthAttestation DDF file
         href: healthattestation-ddf.md
     - name: LanguagePackManagement
       href: language-pack-management-csp.md
