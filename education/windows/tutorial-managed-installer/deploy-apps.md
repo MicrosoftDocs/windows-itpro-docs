@@ -1,7 +1,7 @@
 ---
 title: Consideration before deploying apps with Managed Installer
 description: Learn how to Consideration before deploying apps with Managed Installer
-ms.date: 02/24/2023
+ms.date: 02/27/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
@@ -14,24 +14,20 @@ However, on Windows SE devices, apps may successfully install, but they need val
 
 The following table details the applications types that can be deployed via Intune, and considerations about the installation on Windows SE:
 
-| **Application type** | **Installer extensions** | **Example** | **Installable via Intune** |
-|---|---|---|---|
-| Win32 | <li>.exe</li><li>.msi</li>|<li>Kite Student Portal</li><li>JAWS</li><li>Zoom</li>| Installable* |
-| UWP Line of business apps | <li>.msix</li><li>.msixbundle</li><li>.appx</li><li>.appxbundle</li> | These are usually custom developed apps |<li>Not installable via IME initially</li><li>Requires writing additional WDAC supplemental policy</li> |
-| Progressive Web Apps (PWAs) |<li>.msix</li>|<li>Outlook</li><li>Wikipedia</li>| <li>PWAs in an MSIX is not installable via IME</li><li>PWAs can be deployed through [Microsoft Edge policies in Intune][EDGE-1]</li>|
-| Store For Education | N/A | <li>QuickAssist</li><li>Kortext</li> | <li>Not installable via IME initially</li><li>Requires writing additional WDAC supplemental policy</li> |
-| Microsoft Store app (legacy) option in Intune | N/A | Kortext | Apps provisioned via this option in Intune are not compatible with Windows 11 SE. If you need to install Store apps, use the Store for Education instead. |
-| Microsoft Store app (new) option in Intune | N/A | <li>Adobe Reader DC</li><li>(Win32) Kortext (UWP)</li> | UWP Store apps provisioned via this option in Intune are not compatible with Windows 11 SE. If you need to install UWP Store apps, use the Store for Education instead. Win32 Store apps provisioned via this option in Intune are installable*. |
-| Web links | N/A | https://outlook.com | Installable; link to web page shows up in the Start Menu |
+|**Installer/App type**|**Installer extensions**|**Install methods via Intune**|**Notes**|
+|-|-|-|-|
+|[Universal Windows Platform (UWP)](/windows/uwp/get-started/universal-application-platform-guide)|`.appx`<br>`.appxbundle`<br>`.msix`<br>|<ul><li>For public apps (apps publicly available from an independent software vendor) use the integration with Microsoft Store (Windows Package Manager)</li><li>Private apps (internal line-of-business apps) are currently unsupported</li></ul>|You must write WDAC supplemental policies.|
+|Win32|`.exe`<br>`.msi`|<ul><li>Microsoft Store integration (Windows Package Manager)</li><li>[Intune Management Extension (IME)](mem/intune/apps/apps-win32-app-management)</li></ul>|There are known limitations that might prevent a specific app from being installed. For more information, see [validate applications](Validate-applications#known-limitations).|
+| Progressive Web Apps (PWAs) |`.msix`|<ul><li>Microsoft Store integration (Windows Package Manager)</li><li>[Force-installed web Apps](/deployedge/microsoft-edge-policies#configure-list-of-force-installed-web-apps) via [settings catalog policies](/mem/intune/configuration/settings-catalog)</li></ul>||
+| Web links | n/a | [Web apps](/mem/intune/apps/web-app)||
 
-\* = Although generally these apps can be installed, there are known limitations that might prevent a specific app from being installed. These is covered in more detail [here](Validate-applications#known-limitations)).
-
-> **Important**
-> 
+>**Important**
+>
 > Although you'll be able to install apps on Windows 11 SE devices via Intune, some apps may not perform well on these devices due those apps' minimum spec requirements.
 >
 > Before deploying apps, first check which apps will be targeting your Windows 11 SE devices and ensure that they will have their minimum requirements met, and ensure that apps which were previously blocked from installing or running are no longer unintentionally being provisioned once the managed installer policies are introduced.
 >
+
 
 ## Win32 apps
 
@@ -67,7 +63,7 @@ The instructions in this documentation are not new; other Windows SKUs have also
 
 #### Getting set up
 In order to start deploying Microsoft Store apps, you'll need to get the Microsoft Store for Education set up with Intune.
-To set this up, you'll need to configure both Intune and the Microsoft Store for Education. You'll only need to do these configurations once. 
+To set this up, you'll need to configure both Intune and the Microsoft Store for Education. You'll only need to do these configurations once.
 ##### Set Intune as the Management tool
 Setting Intune as the management tool will be useful for assigning, monitoring, and managing Store apps that you purchase in the [Microsoft Store for Education](https://educationstore.microsoft.com/).
 1. Ensure that you sign into the Microsoft Store for Education using the same tenant account you use to sign into Intune. This should be a Global Administrator account.
@@ -79,7 +75,7 @@ Synchronization will ensure that apps purchased in the Microsoft Store for Educa
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) (i.e. Intune).
 2. Select Tenant administration > Connectors and tokens > Microsoft Store for Business.
 (Note that the Microsoft Store for Education name is not used in Intune, but it refers to syncing with the Microsoft Store for Education and can be used interchangeably.)
-3. Click Enable. 
+3. Click Enable.
 4. If you haven't already done so, click the link to sign up for the Microsoft Store for Education and associate your account as detailed previously.
 5. From the Language drop-down list, choose the language in which apps from the Microsoft Store for Education are displayed in the portal. Regardless of the language in which they are displayed, they are installed in the end user's language when available.
 6. Click Sync to get the apps you've purchased from the Microsoft Store for Education into Intune.
@@ -90,7 +86,7 @@ To install apps, you'll first get the app from the [Microsoft Store for Educatio
 2. Search the Store for an app, and click on the app.
 3. From the app's page, click the "Get the app" button.
 4.Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) (i.e. Intune).
-5. Select Tenant administration > Connectors and tokens > Microsoft Store for Business.  
+5. Select Tenant administration > Connectors and tokens > Microsoft Store for Business.
 (Note that the Microsoft Store for Education name is not used in Intune, but it refers to syncing with the Microsoft Store for Education.)
 6. Click Sync to get the apps you've purchased from the Microsoft Store for Education into Intune.
 7. Your app should now be visible in the Apps > All apps list in Intune:
@@ -119,3 +115,17 @@ Win32 apps can be deployed through this flow, but are subject to the [known limi
 [MEM-2]: https://learn.microsoft.com/mem/intune/apps/apps-win32-prepare
 [MEM-3]: https://learn.microsoft.com/mem/intune/apps/apps-win32-add
 [MEM-4]: https://learn.microsoft.com/mem/intune/apps/lob-apps-windows
+
+
+
+<!--
+| **Application type** | **Installer extensions** | **Example** | **Installable via Intune** |
+|---|---|---|---|
+| Win32 | <li>.exe</li><li>.msi</li>|<li>Kite Student Portal</li><li>JAWS</li><li>Zoom</li>| Installable* |
+| UWP Line of business apps | <li>.msix</li><li>.msixbundle</li><li>.appx</li><li>.appxbundle</li> | These are usually custom developed apps |<li>Not installable via IME initially</li><li>Requires writing additional WDAC supplemental policy</li> |
+| Progressive Web Apps (PWAs) |<li>.msix</li>|<li>Outlook</li><li>Wikipedia</li>| <li>PWAs in an MSIX is not installable via IME</li><li>PWAs can be deployed through [Microsoft Edge policies in Intune][EDGE-1]</li>|
+| Store For Education | N/A | <li>QuickAssist</li><li>Kortext</li> | <li>Not installable via IME initially</li><li>Requires writing additional WDAC supplemental policy</li> |
+| Microsoft Store app (legacy) option in Intune | N/A | Kortext | Apps provisioned via this option in Intune are not compatible with Windows 11 SE. If you need to install Store apps, use the Store for Education instead. |
+| Microsoft Store app (new) option in Intune | N/A | <li>Adobe Reader DC</li><li>(Win32) Kortext (UWP)</li> | UWP Store apps provisioned via this option in Intune are not compatible with Windows 11 SE. If you need to install UWP Store apps, use the Store for Education instead. Win32 Store apps provisioned via this option in Intune are installable*. |
+| Web links | N/A | https://outlook.com | Installable; link to web page shows up in the Start Menu |
+-->
