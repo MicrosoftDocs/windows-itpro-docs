@@ -1,11 +1,10 @@
 ---
 title: What's new in Windows 10, versions 1507 and 1511 (Windows 10)
 description: What's new in Windows 10 for Windows 10 (versions 1507 and 1511)?
-ms.reviewer: 
 ms.prod: windows-client
-author: aczechowski
-manager: dougeby
-ms.author: aaroncz
+author: mestew
+manager: aaroncz
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
