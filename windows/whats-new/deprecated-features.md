@@ -8,8 +8,8 @@ ms.localizationpriority: medium
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.reviewer: 
 ms.topic: article
+ms.collection: highpri, tier1
 ---
 
 # Deprecated features for Windows client
