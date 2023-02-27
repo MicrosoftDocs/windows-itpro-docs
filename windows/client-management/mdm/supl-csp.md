@@ -17,17 +17,6 @@ ms.topic: reference
 # SUPL CSP
 
 <!-- SUPL-Editable-Begin -->
-The SUPL configuration service provider is used to configure the location client, as shown in the following:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
 The SUPL configuration service provider is used to configure the location client, as shown in the following table:
 
 - **Location Service**: Connection type
@@ -63,7 +52,7 @@ The following example shows the SUPL configuration service provider in tree form
 ------------ HighAccPositioningMethod
 ------------ LocMasterSwitchDependencyNII
 ------------ MCCMNCPairs
------------- NIDefaultTimeout 
+------------ NIDefaultTimeout
 ------------ RootCertificate
 --------------- Data
 --------------- Name
@@ -84,11 +73,11 @@ The following example shows the SUPL configuration service provider in tree form
 --------------- Name
 ------------ ServerAccessInterval
 ------------ Version
---- V2UPL1 
+--- V2UPL1
 ------ ApplicationTypeIndicator_MR
 ------ LocMasterSwitchDependencyNII
 ------ MPC
------- NIDefaultTimeout 
+------ NIDefaultTimeout
 ------ PDE
 ------ PositioningMethod_MR
 ------ ServerAccessInterval
@@ -502,7 +491,7 @@ For OMA DM, if the format for this node is incorrect then an entry will be ignor
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -Begin -->
-##### SUPL1/Ext/Microsoft/NIDefaultTimeout 
+##### SUPL1/Ext/Microsoft/NIDefaultTimeout
 
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -512,7 +501,7 @@ For OMA DM, if the format for this node is incorrect then an entry will be ignor
 
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/SUPL1/Ext/Microsoft/NIDefaultTimeout 
+./Vendor/MSFT//SUPL/SUPL1/Ext/Microsoft/NIDefaultTimeout
 ```
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -OmaUri-End -->
 
@@ -1325,7 +1314,7 @@ Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0
 <!-- Device-SUPL1-Ext-Microsoft-Version-End -->
 
 <!-- Device-V2UPL1 -Begin -->
-## V2UPL1 
+## V2UPL1
 
 <!-- Device-V2UPL1 -Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -1335,7 +1324,7 @@ Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0
 
 <!-- Device-V2UPL1 -OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/V2UPL1 
+./Vendor/MSFT//SUPL/V2UPL1
 ```
 <!-- Device-V2UPL1 -OmaUri-End -->
 
@@ -1491,7 +1480,7 @@ Optional. The address of the mobile positioning center (MPC), in the format ipAd
 <!-- Device-V2UPL1 -MPC-End -->
 
 <!-- Device-V2UPL1 -NIDefaultTimeout -Begin -->
-### V2UPL1 /NIDefaultTimeout 
+### V2UPL1 /NIDefaultTimeout
 
 <!-- Device-V2UPL1 -NIDefaultTimeout -Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -1501,7 +1490,7 @@ Optional. The address of the mobile positioning center (MPC), in the format ipAd
 
 <!-- Device-V2UPL1 -NIDefaultTimeout -OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/V2UPL1 /NIDefaultTimeout 
+./Vendor/MSFT//SUPL/V2UPL1 /NIDefaultTimeout
 ```
 <!-- Device-V2UPL1 -NIDefaultTimeout -OmaUri-End -->
 
@@ -1664,21 +1653,15 @@ Optional. Integer. Defines the minimum interval of time in seconds between mobil
 <!-- SUPL-CspMoreInfo-Begin -->
 ## Unsupported Nodes
 
-The following optional nodes aren't supported on Windows devices.
+The following optional nodes aren't supported on Windows devices.
 
--   ProviderID
-
--   Name
-
--   PrefConRef
-
--   ToConRef
-
--   ToConRef/&lt;X&gt;
-
--   ToConRef/&lt;X&gt;/ConRef
-
--   AddrType
+- ProviderID
+- Name
+- PrefConRef
+- ToConRef
+- ToConRef/&lt;X&gt;
+- ToConRef/&lt;X&gt;/ConRef
+- AddrType
 
 If the configuration application tries to set, delete or query these nodes, a response indicating this node isn't implemented will be returned over OMA DM. In OMA Client Provisioning, the request to set this node will be ignored and the configuration service provider will continue processing the rest of the nodes.
 
@@ -1820,7 +1803,7 @@ The following table shows the Microsoft custom elements that this configuration 
 |Elements|Available|
 |--- |--- |
 |parm-query|Yes|
-|characteristic-query|Yes <br/><br/>Recursive query: No<br/><br/>Top level query: No
+|characteristic-query|Yes <br/><br/>Recursive query: No<br/><br/>Top level query: No|
 <!-- SUPL-CspMoreInfo-End -->
 
 <!-- SUPL-End -->

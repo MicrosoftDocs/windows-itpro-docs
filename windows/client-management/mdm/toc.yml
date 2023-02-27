@@ -738,10 +738,8 @@ items:
     - name: EnterpriseDesktopAppManagement
       href: enterprisedesktopappmanagement-csp.md
       items:
-      - name: EnterpriseDesktopAppManagement DDF
+      - name: EnterpriseDesktopAppManagement DDF file
         href: enterprisedesktopappmanagement-ddf-file.md
-      - name: EnterpriseDesktopAppManagement XSD
-        href: enterprisedesktopappmanagement2-xsd.md
     - name: EnterpriseModernAppManagement
       href: enterprisemodernappmanagement-csp.md
       items:
@@ -760,7 +758,7 @@ items:
     - name: HealthAttestation
       href: healthattestation-csp.md
       items:
-      - name: HealthAttestation DDF
+      - name: HealthAttestation DDF file
         href: healthattestation-ddf.md
     - name: LanguagePackManagement
       href: language-pack-management-csp.md
@@ -917,8 +915,6 @@ items:
       items:
       - name: VPNv2 DDF file
         href: vpnv2-ddf-file.md
-      - name: ProfileXML XSD
-        href: vpnv2-profile-xsd.md
       - name: EAP configuration
         href: eap-configuration.md
     - name: w4 APPLICATION
