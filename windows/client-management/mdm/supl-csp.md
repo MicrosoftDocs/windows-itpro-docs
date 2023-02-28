@@ -51,7 +51,7 @@ The following list shows the SUPL configuration service provider nodes:
         - [HighAccPositioningMethod](#supl1extmicrosofthighaccpositioningmethod)
         - [LocMasterSwitchDependencyNII](#supl1extmicrosoftlocmasterswitchdependencynii)
         - [MCCMNCPairs](#supl1extmicrosoftmccmncpairs)
-        - [NIDefaultTimeout ](#supl1extmicrosoftnidefaulttimeout-)
+        - [NIDefaultTimeout](#supl1extmicrosoftnidefaulttimeout)
         - [RootCertificate](#supl1extmicrosoftrootcertificate)
           - [Data](#supl1extmicrosoftrootcertificatedata)
           - [Name](#supl1extmicrosoftrootcertificatename)
@@ -72,14 +72,14 @@ The following list shows the SUPL configuration service provider nodes:
           - [Name](#supl1extmicrosoftrootcertificate6name)
         - [ServerAccessInterval](#supl1extmicrosoftserveraccessinterval)
         - [Version](#supl1extmicrosoftversion)
-  - [V2UPL1 ](#v2upl1-)
-    - [ApplicationTypeIndicator_MR](#v2upl1-applicationtypeindicator_mr)
-    - [LocMasterSwitchDependencyNII](#v2upl1-locmasterswitchdependencynii)
-    - [MPC](#v2upl1-mpc)
-    - [NIDefaultTimeout ](#v2upl1-nidefaulttimeout-)
-    - [PDE](#v2upl1-pde)
-    - [PositioningMethod_MR](#v2upl1-positioningmethod_mr)
-    - [ServerAccessInterval](#v2upl1-serveraccessinterval)
+  - [V2UPL1](#v2upl1)
+    - [ApplicationTypeIndicator_MR](#v2upl1applicationtypeindicator_mr)
+    - [LocMasterSwitchDependencyNII](#v2upl1locmasterswitchdependencynii)
+    - [MPC](#v2upl1mpc)
+    - [NIDefaultTimeout](#v2upl1nidefaulttimeout)
+    - [PDE](#v2upl1pde)
+    - [PositioningMethod_MR](#v2upl1positioningmethod_mr)
+    - [ServerAccessInterval](#v2upl1serveraccessinterval)
 <!-- SUPL-Tree-End -->
 
 <!-- Device-SUPL1-Begin -->
@@ -395,22 +395,19 @@ This setting is deprecated in Windows 10. Optional. Boolean. Specifies whether t
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Description-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Editable-Begin -->
-|Location toggle setting|LocMasterSwitchDependencyNII setting|NI request processing allowed|
-|--- |--- |--- |
-|On|0|Yes|
-|On|1|Yes|
-|Off|0|Yes|
-|Off|1|No (unless privacyOverride is set)|
+| Location toggle setting | LocMasterSwitchDependencyNII setting | NI request processing allowed      |
+|-------------------------|--------------------------------------|------------------------------------|
+| On                      | 0                                    | Yes                                |
+| On                      | 1                                    | Yes                                |
+| Off                     | 0                                    | Yes                                |
+| Off                     | 1                                    | No (unless privacyOverride is set) |
 
 When the location toggle is set to Off and this value is set to 1, the following application requests will fail:
 
--   `noNotificationNoVerification`
-
--   `notificationOnly`
-
--   `notificationAndVerficationAllowedNA`
-
--   `notificationAndVerficationDeniedNA`
+- `noNotificationNoVerification`
+- `notificationOnly`
+- `notificationAndVerficationAllowedNA`
+- `notificationAndVerficationDeniedNA`
 
 However, if `privacyOverride` is set in the message, the location will be returned.
 
@@ -486,31 +483,31 @@ For OMA DM, if the format for this node is incorrect then an entry will be ignor
 
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-End -->
 
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -Begin -->
-##### SUPL1/Ext/Microsoft/NIDefaultTimeout 
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-Begin -->
+##### SUPL1/Ext/Microsoft/NIDefaultTimeout
 
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -Applicability-Begin -->
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -Applicability-End -->
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-Applicability-End -->
 
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -OmaUri-Begin -->
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/SUPL1/Ext/Microsoft/NIDefaultTimeout 
+./Vendor/MSFT//SUPL/SUPL1/Ext/Microsoft/NIDefaultTimeout
 ```
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -OmaUri-End -->
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-OmaUri-End -->
 
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -Description-Begin -->
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Time in seconds that the network-initiated location request is displayed to the user, while awaiting a response and before doing the default action. The default is 30 seconds. A value between 20 and 60 seconds is recommended.
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -Description-End -->
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-Description-End -->
 
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -Editable-Begin -->
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -Editable-End -->
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-Editable-End -->
 
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -DFProperties-Begin -->
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
@@ -518,13 +515,13 @@ Optional. Time in seconds that the network-initiated location request is display
 | Format | int |
 | Access Type | Get, Replace |
 | Default Value  | 30 |
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -DFProperties-End -->
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-DFProperties-End -->
 
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -Examples-Begin -->
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -Examples-End -->
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-Examples-End -->
 
-<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -End -->
+<!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Begin -->
 ##### SUPL1/Ext/Microsoft/RootCertificate
@@ -1309,109 +1306,109 @@ Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0
 
 <!-- Device-SUPL1-Ext-Microsoft-Version-End -->
 
-<!-- Device-V2UPL1 -Begin -->
-## V2UPL1 
+<!-- Device-V2UPL1-Begin -->
+## V2UPL1
 
-<!-- Device-V2UPL1 -Applicability-Begin -->
+<!-- Device-V2UPL1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
-<!-- Device-V2UPL1 -Applicability-End -->
+<!-- Device-V2UPL1-Applicability-End -->
 
-<!-- Device-V2UPL1 -OmaUri-Begin -->
+<!-- Device-V2UPL1-OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/V2UPL1 
+./Vendor/MSFT//SUPL/V2UPL1
 ```
-<!-- Device-V2UPL1 -OmaUri-End -->
+<!-- Device-V2UPL1-OmaUri-End -->
 
-<!-- Device-V2UPL1 -Description-Begin -->
+<!-- Device-V2UPL1-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required for V2 UPL for CDMA. Specifies the account settings for user plane location and IS-801 for CDMA. Only one account is supported at a given time.
-<!-- Device-V2UPL1 -Description-End -->
+<!-- Device-V2UPL1-Description-End -->
 
-<!-- Device-V2UPL1 -Editable-Begin -->
+<!-- Device-V2UPL1-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -Editable-End -->
+<!-- Device-V2UPL1-Editable-End -->
 
-<!-- Device-V2UPL1 -DFProperties-Begin -->
+<!-- Device-V2UPL1-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
 |:--|:--|
 | Format | node |
 | Access Type | Get |
-<!-- Device-V2UPL1 -DFProperties-End -->
+<!-- Device-V2UPL1-DFProperties-End -->
 
-<!-- Device-V2UPL1 -Examples-Begin -->
+<!-- Device-V2UPL1-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -Examples-End -->
+<!-- Device-V2UPL1-Examples-End -->
 
-<!-- Device-V2UPL1 -End -->
+<!-- Device-V2UPL1-End -->
 
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-Begin -->
-### V2UPL1 /ApplicationTypeIndicator_MR
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-Begin -->
+### V2UPL1/ApplicationTypeIndicator_MR
 
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-Applicability-Begin -->
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-Applicability-End -->
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-Applicability-End -->
 
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-OmaUri-Begin -->
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/V2UPL1 /ApplicationTypeIndicator_MR
+./Vendor/MSFT//SUPL/V2UPL1/ApplicationTypeIndicator_MR
 ```
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-OmaUri-End -->
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-OmaUri-End -->
 
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-Description-Begin -->
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required. This value must always be set to 00000011.
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-Description-End -->
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-Description-End -->
 
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-Editable-Begin -->
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-Editable-End -->
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-Editable-End -->
 
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-DFProperties-Begin -->
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
 |:--|:--|
 | Format | node |
 | Access Type | Get |
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-DFProperties-End -->
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-DFProperties-End -->
 
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-Examples-Begin -->
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-Examples-End -->
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-Examples-End -->
 
-<!-- Device-V2UPL1 -ApplicationTypeIndicator_MR-End -->
+<!-- Device-V2UPL1-ApplicationTypeIndicator_MR-End -->
 
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-Begin -->
-### V2UPL1 /LocMasterSwitchDependencyNII
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-Begin -->
+### V2UPL1/LocMasterSwitchDependencyNII
 
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-Applicability-Begin -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-Applicability-End -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-Applicability-End -->
 
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-OmaUri-Begin -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/V2UPL1 /LocMasterSwitchDependencyNII
+./Vendor/MSFT//SUPL/V2UPL1/LocMasterSwitchDependencyNII
 ```
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-OmaUri-End -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-OmaUri-End -->
 
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-Description-Begin -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Boolean. Specifies whether the location toggle on the location screen in Settings is also used to manage network-initiated requests for location. If the value is set to 0, the NI behavior is independent from the current location toggle setting. If the value is set to 1, the NI behavior follows the current location toggle setting. For CDMA phones, this value must be set to 1. The default value is 1.
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-Description-End -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-Description-End -->
 
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-Editable-Begin -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-Editable-End -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-Editable-End -->
 
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-DFProperties-Begin -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
@@ -1419,87 +1416,87 @@ Optional. Boolean. Specifies whether the location toggle on the location screen 
 | Format | bool |
 | Access Type | Get, Replace |
 | Default Value  | true |
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-DFProperties-End -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-DFProperties-End -->
 
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-AllowedValues-Begin -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-AllowedValues-Begin -->
 **Allowed values**:
 
 | Value | Description |
 |:--|:--|
 | false | The NI behavior is independent from the current location toggle setting. |
 | true (Default) | The NI behavior follows the current location toggle setting. |
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-AllowedValues-End -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-AllowedValues-End -->
 
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-Examples-Begin -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-Examples-End -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-Examples-End -->
 
-<!-- Device-V2UPL1 -LocMasterSwitchDependencyNII-End -->
+<!-- Device-V2UPL1-LocMasterSwitchDependencyNII-End -->
 
-<!-- Device-V2UPL1 -MPC-Begin -->
-### V2UPL1 /MPC
+<!-- Device-V2UPL1-MPC-Begin -->
+### V2UPL1/MPC
 
-<!-- Device-V2UPL1 -MPC-Applicability-Begin -->
+<!-- Device-V2UPL1-MPC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
-<!-- Device-V2UPL1 -MPC-Applicability-End -->
+<!-- Device-V2UPL1-MPC-Applicability-End -->
 
-<!-- Device-V2UPL1 -MPC-OmaUri-Begin -->
+<!-- Device-V2UPL1-MPC-OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/V2UPL1 /MPC
+./Vendor/MSFT//SUPL/V2UPL1/MPC
 ```
-<!-- Device-V2UPL1 -MPC-OmaUri-End -->
+<!-- Device-V2UPL1-MPC-OmaUri-End -->
 
-<!-- Device-V2UPL1 -MPC-Description-Begin -->
+<!-- Device-V2UPL1-MPC-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. The address of the mobile positioning center (MPC), in the format ipAddress: portNumber. For non-trusted mode of operation, this parameter is mandatory and the PDE parameter must be empty.
-<!-- Device-V2UPL1 -MPC-Description-End -->
+<!-- Device-V2UPL1-MPC-Description-End -->
 
-<!-- Device-V2UPL1 -MPC-Editable-Begin -->
+<!-- Device-V2UPL1-MPC-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -MPC-Editable-End -->
+<!-- Device-V2UPL1-MPC-Editable-End -->
 
-<!-- Device-V2UPL1 -MPC-DFProperties-Begin -->
+<!-- Device-V2UPL1-MPC-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
 |:--|:--|
 | Format | chr (string) |
 | Access Type | Get, Replace |
-<!-- Device-V2UPL1 -MPC-DFProperties-End -->
+<!-- Device-V2UPL1-MPC-DFProperties-End -->
 
-<!-- Device-V2UPL1 -MPC-Examples-Begin -->
+<!-- Device-V2UPL1-MPC-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -MPC-Examples-End -->
+<!-- Device-V2UPL1-MPC-Examples-End -->
 
-<!-- Device-V2UPL1 -MPC-End -->
+<!-- Device-V2UPL1-MPC-End -->
 
-<!-- Device-V2UPL1 -NIDefaultTimeout -Begin -->
-### V2UPL1 /NIDefaultTimeout 
+<!-- Device-V2UPL1-NIDefaultTimeout-Begin -->
+### V2UPL1/NIDefaultTimeout
 
-<!-- Device-V2UPL1 -NIDefaultTimeout -Applicability-Begin -->
+<!-- Device-V2UPL1-NIDefaultTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
-<!-- Device-V2UPL1 -NIDefaultTimeout -Applicability-End -->
+<!-- Device-V2UPL1-NIDefaultTimeout-Applicability-End -->
 
-<!-- Device-V2UPL1 -NIDefaultTimeout -OmaUri-Begin -->
+<!-- Device-V2UPL1-NIDefaultTimeout-OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/V2UPL1 /NIDefaultTimeout 
+./Vendor/MSFT//SUPL/V2UPL1/NIDefaultTimeout
 ```
-<!-- Device-V2UPL1 -NIDefaultTimeout -OmaUri-End -->
+<!-- Device-V2UPL1-NIDefaultTimeout-OmaUri-End -->
 
-<!-- Device-V2UPL1 -NIDefaultTimeout -Description-Begin -->
+<!-- Device-V2UPL1-NIDefaultTimeout-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Time in seconds that the network-initiated location request is displayed to the user, while awaiting a response and before doing the default action. The default is 30 seconds. A value between 20 and 60 seconds is recommended.
-<!-- Device-V2UPL1 -NIDefaultTimeout -Description-End -->
+<!-- Device-V2UPL1-NIDefaultTimeout-Description-End -->
 
-<!-- Device-V2UPL1 -NIDefaultTimeout -Editable-Begin -->
-This value manages the settings for both SUPL and v2 UPL. If a device is configured for both SUPL and V2 UPL, then these values will differ, and the SUPL setting will always be used.
-<!-- Device-V2UPL1 -NIDefaultTimeout -Editable-End -->
+<!-- Device-V2UPL1-NIDefaultTimeout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-V2UPL1-NIDefaultTimeout-Editable-End -->
 
-<!-- Device-V2UPL1 -NIDefaultTimeout -DFProperties-Begin -->
+<!-- Device-V2UPL1-NIDefaultTimeout-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
@@ -1507,78 +1504,78 @@ This value manages the settings for both SUPL and v2 UPL. If a device is configu
 | Format | int |
 | Access Type | Get, Replace |
 | Default Value  | 30 |
-<!-- Device-V2UPL1 -NIDefaultTimeout -DFProperties-End -->
+<!-- Device-V2UPL1-NIDefaultTimeout-DFProperties-End -->
 
-<!-- Device-V2UPL1 -NIDefaultTimeout -Examples-Begin -->
+<!-- Device-V2UPL1-NIDefaultTimeout-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -NIDefaultTimeout -Examples-End -->
+<!-- Device-V2UPL1-NIDefaultTimeout-Examples-End -->
 
-<!-- Device-V2UPL1 -NIDefaultTimeout -End -->
+<!-- Device-V2UPL1-NIDefaultTimeout-End -->
 
-<!-- Device-V2UPL1 -PDE-Begin -->
-### V2UPL1 /PDE
+<!-- Device-V2UPL1-PDE-Begin -->
+### V2UPL1/PDE
 
-<!-- Device-V2UPL1 -PDE-Applicability-Begin -->
+<!-- Device-V2UPL1-PDE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
-<!-- Device-V2UPL1 -PDE-Applicability-End -->
+<!-- Device-V2UPL1-PDE-Applicability-End -->
 
-<!-- Device-V2UPL1 -PDE-OmaUri-Begin -->
+<!-- Device-V2UPL1-PDE-OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/V2UPL1 /PDE
+./Vendor/MSFT//SUPL/V2UPL1/PDE
 ```
-<!-- Device-V2UPL1 -PDE-OmaUri-End -->
+<!-- Device-V2UPL1-PDE-OmaUri-End -->
 
-<!-- Device-V2UPL1 -PDE-Description-Begin -->
+<!-- Device-V2UPL1-PDE-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. The address of the Position Determination Entity (PDE), in the format ipAddress: portNumber. For non-trusted mode of operation, this parameter must be empty.
-<!-- Device-V2UPL1 -PDE-Description-End -->
+<!-- Device-V2UPL1-PDE-Description-End -->
 
-<!-- Device-V2UPL1 -PDE-Editable-Begin -->
+<!-- Device-V2UPL1-PDE-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -PDE-Editable-End -->
+<!-- Device-V2UPL1-PDE-Editable-End -->
 
-<!-- Device-V2UPL1 -PDE-DFProperties-Begin -->
+<!-- Device-V2UPL1-PDE-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
 |:--|:--|
 | Format | chr (string) |
 | Access Type | Get, Replace |
-<!-- Device-V2UPL1 -PDE-DFProperties-End -->
+<!-- Device-V2UPL1-PDE-DFProperties-End -->
 
-<!-- Device-V2UPL1 -PDE-Examples-Begin -->
+<!-- Device-V2UPL1-PDE-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -PDE-Examples-End -->
+<!-- Device-V2UPL1-PDE-Examples-End -->
 
-<!-- Device-V2UPL1 -PDE-End -->
+<!-- Device-V2UPL1-PDE-End -->
 
-<!-- Device-V2UPL1 -PositioningMethod_MR-Begin -->
-### V2UPL1 /PositioningMethod_MR
+<!-- Device-V2UPL1-PositioningMethod_MR-Begin -->
+### V2UPL1/PositioningMethod_MR
 
-<!-- Device-V2UPL1 -PositioningMethod_MR-Applicability-Begin -->
+<!-- Device-V2UPL1-PositioningMethod_MR-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
-<!-- Device-V2UPL1 -PositioningMethod_MR-Applicability-End -->
+<!-- Device-V2UPL1-PositioningMethod_MR-Applicability-End -->
 
-<!-- Device-V2UPL1 -PositioningMethod_MR-OmaUri-Begin -->
+<!-- Device-V2UPL1-PositioningMethod_MR-OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/V2UPL1 /PositioningMethod_MR
+./Vendor/MSFT//SUPL/V2UPL1/PositioningMethod_MR
 ```
-<!-- Device-V2UPL1 -PositioningMethod_MR-OmaUri-End -->
+<!-- Device-V2UPL1-PositioningMethod_MR-OmaUri-End -->
 
-<!-- Device-V2UPL1 -PositioningMethod_MR-Description-Begin -->
+<!-- Device-V2UPL1-PositioningMethod_MR-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The default is 0. The default method in Windows Phones provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator's network or location services. The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes. For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
-<!-- Device-V2UPL1 -PositioningMethod_MR-Description-End -->
+<!-- Device-V2UPL1-PositioningMethod_MR-Description-End -->
 
-<!-- Device-V2UPL1 -PositioningMethod_MR-Editable-Begin -->
+<!-- Device-V2UPL1-PositioningMethod_MR-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -PositioningMethod_MR-Editable-End -->
+<!-- Device-V2UPL1-PositioningMethod_MR-Editable-End -->
 
-<!-- Device-V2UPL1 -PositioningMethod_MR-DFProperties-Begin -->
+<!-- Device-V2UPL1-PositioningMethod_MR-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
@@ -1586,9 +1583,9 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 | Format | int |
 | Access Type | Get, Replace |
 | Default Value  | 0 |
-<!-- Device-V2UPL1 -PositioningMethod_MR-DFProperties-End -->
+<!-- Device-V2UPL1-PositioningMethod_MR-DFProperties-End -->
 
-<!-- Device-V2UPL1 -PositioningMethod_MR-AllowedValues-Begin -->
+<!-- Device-V2UPL1-PositioningMethod_MR-AllowedValues-Begin -->
 **Allowed values**:
 
 | Value | Description |
@@ -1598,39 +1595,39 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 | 2 | Mobile Station Based: The device obtains location-aiding data (almanac, ephemeris data, time and coarse initial position of the device) from the H-SLP server, and the device uses this information to help GPS obtain a fix. All position calculations are done in the device. |
 | 3 | Mobile Station Standalone: The device obtains assistance as required from the Microsoft location services. |
 | 4 | AFLT. |
-<!-- Device-V2UPL1 -PositioningMethod_MR-AllowedValues-End -->
+<!-- Device-V2UPL1-PositioningMethod_MR-AllowedValues-End -->
 
-<!-- Device-V2UPL1 -PositioningMethod_MR-Examples-Begin -->
+<!-- Device-V2UPL1-PositioningMethod_MR-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -PositioningMethod_MR-Examples-End -->
+<!-- Device-V2UPL1-PositioningMethod_MR-Examples-End -->
 
-<!-- Device-V2UPL1 -PositioningMethod_MR-End -->
+<!-- Device-V2UPL1-PositioningMethod_MR-End -->
 
-<!-- Device-V2UPL1 -ServerAccessInterval-Begin -->
-### V2UPL1 /ServerAccessInterval
+<!-- Device-V2UPL1-ServerAccessInterval-Begin -->
+### V2UPL1/ServerAccessInterval
 
-<!-- Device-V2UPL1 -ServerAccessInterval-Applicability-Begin -->
+<!-- Device-V2UPL1-ServerAccessInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
-<!-- Device-V2UPL1 -ServerAccessInterval-Applicability-End -->
+<!-- Device-V2UPL1-ServerAccessInterval-Applicability-End -->
 
-<!-- Device-V2UPL1 -ServerAccessInterval-OmaUri-Begin -->
+<!-- Device-V2UPL1-ServerAccessInterval-OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/V2UPL1 /ServerAccessInterval
+./Vendor/MSFT//SUPL/V2UPL1/ServerAccessInterval
 ```
-<!-- Device-V2UPL1 -ServerAccessInterval-OmaUri-End -->
+<!-- Device-V2UPL1-ServerAccessInterval-OmaUri-End -->
 
-<!-- Device-V2UPL1 -ServerAccessInterval-Description-Begin -->
+<!-- Device-V2UPL1-ServerAccessInterval-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Integer. Defines the minimum interval of time in seconds between mobile originated requests sent to the server to prevent overloading the mobile operator's network. The default value is 60.
-<!-- Device-V2UPL1 -ServerAccessInterval-Description-End -->
+<!-- Device-V2UPL1-ServerAccessInterval-Description-End -->
 
-<!-- Device-V2UPL1 -ServerAccessInterval-Editable-Begin -->
+<!-- Device-V2UPL1-ServerAccessInterval-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -ServerAccessInterval-Editable-End -->
+<!-- Device-V2UPL1-ServerAccessInterval-Editable-End -->
 
-<!-- Device-V2UPL1 -ServerAccessInterval-DFProperties-Begin -->
+<!-- Device-V2UPL1-ServerAccessInterval-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
@@ -1638,13 +1635,13 @@ Optional. Integer. Defines the minimum interval of time in seconds between mobil
 | Format | int |
 | Access Type | Get, Replace |
 | Default Value  | 60 |
-<!-- Device-V2UPL1 -ServerAccessInterval-DFProperties-End -->
+<!-- Device-V2UPL1-ServerAccessInterval-DFProperties-End -->
 
-<!-- Device-V2UPL1 -ServerAccessInterval-Examples-Begin -->
+<!-- Device-V2UPL1-ServerAccessInterval-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-V2UPL1 -ServerAccessInterval-Examples-End -->
+<!-- Device-V2UPL1-ServerAccessInterval-Examples-End -->
 
-<!-- Device-V2UPL1 -ServerAccessInterval-End -->
+<!-- Device-V2UPL1-ServerAccessInterval-End -->
 
 <!-- SUPL-CspMoreInfo-Begin -->
 ## Unsupported Nodes
