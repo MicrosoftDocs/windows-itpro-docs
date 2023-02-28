@@ -9,7 +9,7 @@ appliesto:
 
 # Deploy applications to Windows 11 SE with Intune as a managed installer
 
-Windows 11 SE prevents the installation of third party applications, unless the application is in an [approved list][EDU-1] or the IT admin consults with Microsoft.\
+Windows 11 SE prevents the installation of third party applications, unless the application is in an approved list, or the IT admin consults with Microsoft.\
 Starting with Windows 11 SE, version 22H2, you can deploy any applications to Windows 11 SE devices via Intune, without having to contact Microsoft. This is possible because Microsoft has enabled the *Intune Management Extension (IME)* as a *WDAC managed installer*.
 
 In this tutorial, you'll learn how to set up Windows 11 SE devices with the IME as a managed installer, and how to validate the applications deployed via Intune.
@@ -21,7 +21,7 @@ On Windows 11 SE, WDAC applies an *allowlist policy* called *E-Mode*. The E-Mode
 
 When Windows 11 SE was initially released, Microsoft allowed specific application by using [WDAC supplemental policies][WIN-1], with an [allowlist process][EDU-1] done on an app-by-app basis.
 
-Starting in Windows 11 SE, version 22H2, Microsoft enabled the IME as a managed installer. Applications deployed through Microsoft Intune will be automatically allowed on Windows 11 SE, removing the allowlist process requirement.
+Starting in Windows 11 SE, version 22H2, Microsoft enabled the IME as a managed installer. Applications deployed through Microsoft Intune will be automatically allowed on Windows 11 SE, removing the allowlist process requirement. For more information, see [How does a managed installer work?][WIN-2]
 
 > [!NOTE]
 > End-users of Windows 11 SE devices still cannot install and use arbitrary applications without being blocked. Only IT admins can control what apps are allowed.
@@ -68,7 +68,7 @@ Advance to the next article to learn which application can be deployed to Window
 > [!div class="nextstepaction"]
 > [Next: app deployment considerations >](deploy-apps.md)
 
-[EDU-1]: https://learn.microsoft.com/education/windows/windows-11-se-overview#add-your-own-applications
-[EDU-2]: https://learn.microsoft.com/education/windows/windows-11-se-overview#available-applications
+[EDU-1]: /education/windows/windows-11-se-overview#add-your-own-applications
 [EXT-1]: https://www.microsoft.com/en-us/education/intune
-[WIN-1]: https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create
+[WIN-1]: /windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create
+[WIN-2]: /windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer#how-does-a-managed-installer-work
