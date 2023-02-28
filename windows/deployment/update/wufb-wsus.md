@@ -79,4 +79,4 @@ The policy can be configured using the following two methods:
 
 
 > [!NOTE]
-> Configuring registry keys directly to get the behavior of any Windows update policy is *not* recommended. However, if you are choosing to go this route, please also ensure you have configured the "UseUpdateClassPolicySource" registry key as well or the scan source will not be alterred. Again, it is recommended that you leverage the Group Policy (GP) or Configuration Service Provider (CSP) policy instead of directly writing these keys. 
+> Editing the registry to change the behavior of update policies isn't recommended. Use Group Policy or the Configuration Service Provider (CSP) policy instead of directly writing to the registry. However, if you choose to edit the registry, ensure you've configured the `UseUpdateClassPolicySource` registry key too or the scan source won't be alterred. 
