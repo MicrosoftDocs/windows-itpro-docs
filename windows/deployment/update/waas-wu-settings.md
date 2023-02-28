@@ -7,8 +7,7 @@ author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.topic: article
-ms.collection: highpri
-date: 09/22/2022
+ms.collection: highpri, tier2
 ms.technology: itpro-updates
 ms.date: 01/06/2023
 ---

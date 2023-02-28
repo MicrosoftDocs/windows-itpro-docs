@@ -2,12 +2,12 @@
 title: What's new in Windows 10, version 20H2
 description: New and updated features in Windows 10, version 20H2 (also known as the Windows 10 October 2020 Update).
 ms.prod: windows-client
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: high
 ms.topic: article
-ms.collection: highpri
+ms.collection: highpri, tier2
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
 ---

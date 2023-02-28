@@ -1,14 +1,12 @@
 ---
 title: Perform in-place upgrade to Windows 10 via Configuration Manager
 description: Learn how to perform an in-place upgrade to Windows 10 by automating the process with a Microsoft Configuration Manager task sequence.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ms.technology: itpro-deploy
 ms.date: 10/27/2022
 ---

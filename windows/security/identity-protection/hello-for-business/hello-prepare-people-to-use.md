@@ -16,6 +16,8 @@ Although the organization may require users to change their Active Directory or 
 
 People who are currently using virtual or physical smart cards for authentication can use their virtual smart card to verify their identity when they set up Hello.
 
+[!INCLUDE [virtual-smart-card-deprecation-notice](../../includes/virtual-smart-card-deprecation-notice.md)]
+
 ## On devices owned by the organization
 
 When someone sets up a new device, they are prompted to choose who owns the device. For corporate devices, they select **This device belongs to my organization**.
@@ -40,9 +42,7 @@ People can go to **Settings** &gt; **Accounts** &gt; **Work or school**, select 
 
 If your policy allows it, people can use biometrics (fingerprint, iris, and facial recognition) with Windows Hello for Business, if the hardware supports it.
 
-![sign in to windows, apps, and services using fingerprint or face.](images/hellosettings.png)
-
-
+:::image type="content" alt-text="This screenshot shows account sign-in options to windows, apps, and services using fingerprint or face." source="images/hellosettings.png":::
 
 ## Related topics
 

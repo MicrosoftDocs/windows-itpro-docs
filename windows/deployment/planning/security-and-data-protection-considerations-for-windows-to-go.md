@@ -1,7 +1,6 @@
 ---
 title: Security and data protection considerations for Windows To Go (Windows 10)
 description: Ensure that the data, content, and resources you work with in the Windows To Go workspace are protected and secure.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

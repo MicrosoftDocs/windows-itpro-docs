@@ -1,7 +1,6 @@
 ---
 title: Fixing Applications by Using the SUA Tool (Windows 10)
 description: On the user interface for the Standard User Analyzer (SUA) tool, you can apply fixes to an application.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

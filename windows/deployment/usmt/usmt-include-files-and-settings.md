@@ -1,7 +1,6 @@
 ---
 title: Include Files and Settings (Windows 10)
 description: Specify the migration .xml files you want, then use the User State Migration Tool (USMT) 10.0  to migrate the settings and components specified.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

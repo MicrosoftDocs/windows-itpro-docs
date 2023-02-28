@@ -1,8 +1,7 @@
 ---
 title: Update Product Status (Windows 10)
 description: Learn how to use the Update license status function to add the products that are installed on the computers.
-ms.reviewer: 
-  - nganguly
+ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

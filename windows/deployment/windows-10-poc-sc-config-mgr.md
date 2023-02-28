@@ -4,7 +4,6 @@ description: Learn how to deploy Windows 10 in a test lab using Microsoft Config
 ms.prod: windows-client
 ms.technology: itpro-deploy
 ms.localizationpriority: medium
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 author: frankroj

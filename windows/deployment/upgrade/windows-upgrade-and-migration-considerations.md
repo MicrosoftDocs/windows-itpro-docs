@@ -1,7 +1,6 @@
 ---
 title: Windows Upgrade and Migration Considerations (Windows 10)
 description: Discover the Microsoft tools you can use to move files and settings between installations including special considerations for performing an upgrade or migration.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

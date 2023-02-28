@@ -1916,7 +1916,11 @@ Fires at the beginning and end of the HVCI auto-enablement process in sysprep.
 
 The following fields are available:
 
-- **wilActivity**  Contains the thread ID used to match the begin and end events, and for the end event also a HResult indicating sucess or failure. 
+- **wilActivity**  Contains the thread ID used to match the begin and end events, and for the end event also a HResult indicating sucess or failure.
+
+### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HvciAlreadyEnabled
+
+Fires when HVCI is already enabled so no need to continue auto-enablement.
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HvciScanGetResultFailed
@@ -2160,6 +2164,7 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
+
 ## Common data fields
 
 ### Ms.Device.DeviceInventoryChange
@@ -2173,6 +2178,7 @@ The following fields are available:
 - **objectInstanceId**  Object identity which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+
 
 ## Component-based servicing events
 
@@ -3032,6 +3038,18 @@ The following fields are available:
 - **Version**  The version number of the program.
 
 
+### Microsoft.Windows.Inventory.Core.InventoryApplicationDriverAdd
+
+This event represents what drivers an application installs. The data collected with this event is used to keep Windows performing properly.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory component
+- **ProgramIds**  The unique program identifier the driver is associated with
+
+
 ### Microsoft.Windows.Inventory.Core.InventoryApplicationDriverStartSync
 
 The InventoryApplicationDriverStartSync event indicates that a new set of InventoryApplicationDriverStartAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
@@ -3420,12 +3438,6 @@ This event sends details collected for a specific application on the source devi
 
 
 
-### Microsoft.Windows.Inventory.General.AppHealthStaticStartSync
-
-This event indicates the beginning of a series of AppHealthStaticAdd events. The data collected with this event is used to keep Windows performing properly.
-
-
-
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousMemorySlotArrayInfoAdd
 
 This event provides basic information about active memory slots on the device.
@@ -3757,6 +3769,17 @@ The following fields are available:
 
 
 ## Migration events
+
+### Microsoft.Windows.MigrationCore.MigObjectCountDLSys
+
+This event is used to indicate object count for system paths during different phases of Windows feature update.
+
+The following fields are available:
+
+- **migDiagSession->CString**  Indicates the phase of the update.
+- **objectCount**  Number of files being tracked for the corresponding phase of the update.
+- **sfInfo.Name**  This indicates well know folder location path (Ex: PUBLIC_downloads etc.)
+
 
 ### Microsoft.Windows.MigrationCore.MigObjectCountDLUsr
 
@@ -6143,6 +6166,26 @@ The following fields are available:
 - **updateId**  Unique identifier for each update.
 
 
+### Microsoft.Windows.Update.NotificationUx.RebootScheduled
+
+This event sends basic information for scheduling a device restart to install security updates. It's used to help keep Windows secure and up-to-date by indicating when a reboot is scheduled by the system or a user for a security, quality, or feature update.
+
+The following fields are available:
+
+- **activeHoursApplicable**  Indicates whether an Active Hours policy is present on the device.
+- **IsEnhancedEngagedReboot**  Indicates whether this is an Enhanced Engaged reboot.
+- **rebootArgument**  Argument for the reboot task. It also represents specific reboot related action.
+- **rebootOutsideOfActiveHours**  Indicates whether a restart is scheduled outside of active hours.
+- **rebootScheduledByUser**  Indicates whether the restart was scheduled by user (if not, it was scheduled automatically).
+- **rebootState**  The current state of the restart.
+- **rebootUsingSmartScheduler**  Indicates whether the reboot is scheduled by smart scheduler.
+- **revisionNumber**  Revision number of the update that is getting installed with this restart.
+- **scheduledRebootTime**  Time of the scheduled restart.
+- **scheduledRebootTimeInUTC**  Time of the scheduled restart in Coordinated Universal Time.
+- **updateId**  ID of the update that is getting installed with this restart.
+- **wuDeviceid**  Unique device ID used by Windows Update.
+
+
 ### Microsoft.Windows.Update.Orchestrator.Client.BizCriticalStoreAppInstallResult
 
 This event returns the result after installing a business critical store application. The data collected with this event is used to help keep Windows secure and up to date.
@@ -6230,7 +6273,6 @@ The following fields are available:
 - **update**  Update related metadata including UpdateId.
 - **uptimeMinutes**  Duration USO for up for in the current boot session.
 - **wilActivity**  Wil Activity related information.
-
 
 ### Microsoft.Windows.Update.WUClientExt.UUSLoadModuleFailed
 
@@ -6342,6 +6384,27 @@ The following fields are available:
 - **ScenarioSupported**  Indicates whether the scenario was supported.
 - **SessionId**  Unique value for each update attempt.
 - **UpdateId**  Unique ID for each Windows Update.
+- **WuId**  Unique ID for the Windows Update client.
+
+
+### Mitigation360Telemetry.MitigationCustom.CryptcatsvcRebuild
+
+This event sends data specific to the CryptcatsvcRebuild mitigation used for OS Updates. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ClientId**  In the Windows Update scenario, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **FlightId**  The unique identifier for each flight.
+- **InstanceId**  Unique GUID that identifies each instances of setuphost.exe.
+- **MitigationNeeded**  Information on whether the mitigation was needed.
+- **MitigationScenario**  The update scenario in which the mitigation was executed.
+- **RelatedCV**  Correlation vector value generated from the latest USO scan.
+- **Result**  HResult of this operation.
+- **ScenarioId**  ID indicating the mitigation scenario.
+- **ScenarioSupported**  Indicates whether the scenario was supported.
+- **ServiceDisabled**  Information on whether the service was disabled.
+- **SessionId**  Unique value for each update attempt.
+- **UpdateId**  Unique ID for each Update.
 - **WuId**  Unique ID for the Windows Update client.
 
 
@@ -6468,7 +6531,7 @@ The following fields are available:
 - **TargetUserFreeSpace**  The target user free space that was passed into the reserve manager to determine reserve sizing post upgrade.
 - **UpdateScratchFinalUsedSpace**  The used space in the scratch reserve.
 - **UpdateScratchInitialUsedSpace**  The utilization of the scratch reserve after initialization.
-- **UpdateScratchReserveFinalSize**  The utilization of the scratch reserve after initialization.
+- **UpdateScratchReserveFinalSize**  The final size of the scratch reserve.
 - **UpdateScratchReserveInitialSize**  The size of the scratch reserve after initialization.
 
 
@@ -6510,8 +6573,6 @@ The following fields are available:
 ### Microsoft.Windows.UpdateReserveManager.RemovePendingHardReserveAdjustment
 
 This event is sent when the Update Reserve Manager removes a pending hard reserve adjustment. The data collected with this event is used to help keep Windows secure and up to date.
-
-
 
 ### Microsoft.Windows.UpdateReserveManager.TurnOffReserves
 

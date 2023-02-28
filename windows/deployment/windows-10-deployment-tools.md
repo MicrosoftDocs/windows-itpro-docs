@@ -1,7 +1,6 @@
 ---
 title: Windows 10 deployment tools
 description: Learn how to use Windows 10 deployment tools to successfully deploy Windows 10 to your organization.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 author: frankroj

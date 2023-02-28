@@ -1,7 +1,6 @@
 ---
 title: User State Migration Tool (USMT) Troubleshooting (Windows 10)
 description: Learn about topics that address common User State Migration Tool (USMT) 10.0 issues and questions to help troubleshooting.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

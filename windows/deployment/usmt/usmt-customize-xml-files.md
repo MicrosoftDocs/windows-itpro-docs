@@ -1,7 +1,6 @@
 ---
 title: Customize USMT XML Files (Windows 10)
 description: Learn how to customize USMT XML files. Also, learn about the migration XML files that are included with USMT.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

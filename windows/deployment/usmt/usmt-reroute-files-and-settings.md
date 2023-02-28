@@ -1,7 +1,6 @@
 ---
 title: Reroute Files and Settings (Windows 10)
 description: Learn how to create a custom .xml file and specify this file name on both the ScanState and LoadState command lines to reroute files and settings.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
