@@ -68,15 +68,18 @@
     },
     "fileMetadata": {
       "author":{
-        "identity-protection/**/*.md": "paolomatarazzo"
+        "identity-protection/**/*.md": "paolomatarazzo",
+        "threat-protection/windows-firewall/**/*.md": "aczechowski"
       },
       "ms.author":{
-        "identity-protection/**/*.md": "paoloma"
+        "identity-protection/**/*.md": "paoloma",
+        "threat-protection/windows-firewall/*.md": "aaroncz"
       },
       "ms.reviewer":{
         "identity-protection/hello-for-business/*.md": "erikdau",
         "identity-protection/credential-guard/*.md": "zwhittington",
-        "identity-protection/access-control/*.md": "sulahiri"
+        "identity-protection/access-control/*.md": "sulahiri",
+        "threat-protection/windows-firewall/*.md": "paoloma"
       },
       "ms.collection":{
         "identity-protection/hello-for-business/*.md": "tier1",

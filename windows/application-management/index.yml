@@ -6,14 +6,15 @@ summary: Learn about managing applications in Windows client, including how to r
 metadata:
   title: Windows application management
   description: Learn about managing applications in Windows 10 and Windows 11.
-  ms.topic: landing-page
-  ms.prod: windows-client
-  ms.collection:
-    - highpri
   author: nicholasswhite
   ms.author: nwhite
   manager: aaroncz
   ms.date: 08/24/2021
+  ms.topic: landing-page
+  ms.prod: windows-client
+  ms.collection:
+    - tier1
+    - highpri
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects

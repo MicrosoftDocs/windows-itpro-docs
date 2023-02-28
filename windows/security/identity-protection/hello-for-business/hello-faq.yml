@@ -2,6 +2,8 @@
 metadata:
   title: Windows Hello for Business Frequently Asked Questions (FAQ)
   description: Use these frequently asked questions (FAQ) to learn important details about Windows Hello for Business.
+  author: paolomatarazzo
+  ms.author: paoloma
   ms.collection:
     - highpri
     - tier1
@@ -78,7 +80,7 @@ sections:
           Windows Hello biometrics template database file is created on the device only when a user is enrolled into Windows Hello biometrics-based authentication. Your workplace or IT administrator may have turned certain authentication functionality, however, it is always your choice if you want to use Windows Hello or an alternative method, like a PIN. Users can check their current enrollment into Windows Hello biometrics by going to sign-in options on their device. Go to **Start > Settings > Accounts > Sign-in** options. If you don't see Windows Hello in Sign-in options, then it may not be available for your device or blocked by admin via policy. Admins can request users to enroll into Windows Hello during Autopilot or during the initial setup of the device. Admins can disallow users to enroll into biometrics via Windows Hello for Business policy configurations. However, when allowed via policy configurations, enrollment into Windows Hello biometrics is always optional for users.
       - question: When is Windows Hello biometrics database file deleted? How can a user be unenrolled from Windows Hello face or fingerprint authentication?
         answer: |
-            To remove Windows Hello and any associated biometric identification data from the device, user can go to **Start > Settings > Accounts > Sign-in options**. Select the Windows Hello biometrics authentication method you want to remove, and then select **Remove**. This will u-enroll the user from Windows Hello biometrics authentication and will also delete the associated biometrics template database file. For more details, see [Windows sign-in options and account protection (microsoft.com)](https://support.microsoft.com/en-us/windows/windows-sign-in-options-and-account-protection-7b34d4cf-794f-f6bd-ddcc-e73cdf1a6fbf#bkmk_helloandprivacy).
+            To remove Windows Hello and any associated biometric identification data from the device, user can go to **Start > Settings > Accounts > Sign-in options**. Select the Windows Hello biometrics authentication method you want to remove, and then select **Remove**. This will u-enroll the user from Windows Hello biometrics authentication and will also delete the associated biometrics template database file. For more details, see [Windows sign-in options and account protection (microsoft.com)](https://support.microsoft.com/windows/windows-sign-in-options-and-account-protection-7b34d4cf-794f-f6bd-ddcc-e73cdf1a6fbf#bkmk_helloandprivacy).
 
   - name: Management and operations
     questions:  
@@ -117,7 +119,7 @@ sections:
           - Data about whether people sign in with their face, iris, fingerprint, or PIN
           - The number of times they use it
           - Whether it works or not
-          All this is valuable information that helps Microsoft building a better product. The data is pseudonymized, does not include biometric information, and is encrypted before it is transmitted to Microsoft. You can choose to stop sending diagnostic data to Microsoft at any time. [Learn more about diagnostic data in Windows](https://support.microsoft.com/en-us/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319). 
+          All this is valuable information that helps Microsoft building a better product. The data is pseudonymized, does not include biometric information, and is encrypted before it is transmitted to Microsoft. You can choose to stop sending diagnostic data to Microsoft at any time. [Learn more about diagnostic data in Windows](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319). 
       - question: Can I disable the PIN while using Windows Hello for Business?
         answer: |
           No. The movement away from passwords is accomplished by gradually reducing the use of the password. In situations where you can't authenticate by using biometrics, you need a fallback mechanism that isn't a password. The PIN is the fallback mechanism. Disabling or hiding the PIN credential provider will disable the use of biometrics.
@@ -185,7 +187,7 @@ sections:
       - question: Which is a better or more secure for of authentication, key or certificate?
         answer: |
           Both types of authentication provide the same security; one is not more secure than the other.
-          The trust models of your deployment determine how you authenticate to Active Directory (on-premises). Both key trust and certificate trust use the same hardware-backed, two-factor credential. The differences between the two trust types is the issuance of end-entity certificates:
+          The trust models of your deployment determine how you authenticate to Active Directory (on-premises). Both key trust and certificate trust use the same hardware-backed, two-factor credential. The difference between the two trust types is the issuance of end-entity certificates:
           - The *key trust* model authenticates to Active Directory by using a raw key. Key trust doesn't require an enterprise-issued certificate, therefore you don't need to issue certificates to users (domain controller certificates are still needed)
           - The *certificate trust* model authenticates to Active Directory by using a certificate. Therefore, you need to issue certificates to users. The certificate used in certificate trust uses the TPM-protected private key to request a certificate from your enterprise's issuing CA
       - question: What is convenience PIN?
@@ -196,7 +198,7 @@ sections:
           No. While it's possible to set a convenience PIN on Azure AD joined and hybrid Azure AD joined devices, convenience PIN isn't supported for Azure AD user accounts (including synchronized identities). Convenience PIN is only supported for on-premises Active Directory users and local account users.
       - question: What about virtual smart cards?
         answer: |
-          Windows Hello for Business is the modern, two-factor credential for Windows. Microsoft will be deprecating virtual smart cards in the future, but no date is set at this time. Customers using virtual smart cards should move to Windows Hello for Business. Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business. Microsoft recommends that new Windows deployments use Windows Hello for Business.
+          Windows Hello for Business is the modern, two-factor authentication for Windows. Microsoft will deprecate virtual smart cards in the near future. Customers using virtual smart cards are strongly encouraged to move to Windows Hello for Business. Microsoft will publish the deprecation date to ensure customers have adequate lead time to move to Windows Hello for Business. We recommend that new Windows deployments use Windows Hello for Business.
       - question: What URLs do I need to allow for a hybrid deployment?
         answer: |
           For a list of required URLs, see [Microsoft 365 Common and Office Online](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#microsoft-365-common-and-office-online).

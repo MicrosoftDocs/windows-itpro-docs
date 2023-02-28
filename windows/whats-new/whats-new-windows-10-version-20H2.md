@@ -2,12 +2,12 @@
 title: What's new in Windows 10, version 20H2
 description: New and updated features in Windows 10, version 20H2 (also known as the Windows 10 October 2020 Update).
 ms.prod: windows-client
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: high
 ms.topic: article
-ms.collection: highpri
+ms.collection: highpri, tier2
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
 ---
@@ -71,7 +71,7 @@ Activities are grouped into the following phases: **Plan** > **Prepare** > **Dep
 Enhancements to Windows Autopilot since the last release of Windows 10 include:
 - [Windows Autopilot for HoloLens](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-autopilot-for-hololens-2/ba-p/1371494): Set up HoloLens 2 devices with Windows Autopilot for HoloLens 2 self-deploying mode.
 - [Windows Autopilot with co-management](/mem/configmgr/comanage/quickstart-autopilot): Co-management and Autopilot together can help you reduce cost and improve the end user experience.
-- Enhancements to Windows Autopilot deployment reporting are in preview. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Monitor** and scroll down to the **Enrollment** section. Select **Autopilot deployment (preview)**.
+- Enhancements to Windows Autopilot deployment reporting are in preview. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Monitor** and scroll down to the **Enrollment** section. Select **Autopilot deployment (preview)**.
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 

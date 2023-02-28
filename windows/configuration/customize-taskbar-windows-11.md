@@ -29,7 +29,7 @@ For example, you can override the default set of apps with your own a set of pin
 
 To add apps you want pinned to the taskbar, you use an XML file. You can use an existing XML file, or create a new file. If you have an XML file that's used on Windows 10 devices, you can also use it on Windows 11 devices. You may have to update the App IDs.
 
-This article shows you how to create the XML file, add apps to the XML, and deploy the XML file.
+This article shows you how to create the XML file, add apps to the XML, and deploy the XML file. To learn how to customize the taskbar buttons, see [CSP policies to customize Windows 11 taskbar buttons](supported-csp-taskbar-windows.md#csp-policies-to-customize-windows-11-taskbar-buttons).
 
 ## Before you begin
 
@@ -170,7 +170,7 @@ MDM providers can deploy policies to devices managed by the organization, includ
 
 Use the following steps to create an Intune policy that deploys your taskbar XML file:
 
-1. Sign in to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 
