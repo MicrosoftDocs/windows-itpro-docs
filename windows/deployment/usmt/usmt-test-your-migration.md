@@ -1,7 +1,6 @@
 ---
 title: Test Your Migration (Windows 10)
 description: Learn about testing your migration plan in a controlled laboratory setting before you deploy it to your entire organization.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

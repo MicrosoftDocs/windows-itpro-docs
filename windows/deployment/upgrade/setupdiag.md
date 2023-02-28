@@ -3,12 +3,11 @@ title: SetupDiag
 manager: aaroncz
 ms.author: frankroj
 description: SetupDiag works by examining Windows Setup log files. This article shows how to use the SetupDiag tool to diagnose Windows Setup errors.
-ms.custom: seo-marvel-apr2020
 ms.prod: windows-client
 author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri
+ms.collection: highpri, tier2
 ms.technology: itpro-deploy
 ms.date: 10/28/2022
 ---

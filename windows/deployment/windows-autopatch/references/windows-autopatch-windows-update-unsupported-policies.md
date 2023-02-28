@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: adnich
+ms.reviewer: adnich
 ---
 
 # Windows update policies
