@@ -1,7 +1,6 @@
 ---
 title: Configure MDT for UserExit scripts (Windows 10)
 description: In this article, you'll learn how to configure the MDT rules engine to use a UserExit script to generate computer names based on a prefix and the computer MAC Address.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

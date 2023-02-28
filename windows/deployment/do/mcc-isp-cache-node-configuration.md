@@ -8,6 +8,7 @@ ms.author: amyzhou
 ms.topic: article
 ms.date: 12/31/2017
 ms.technology: itpro-updates
+ms.collection: tier3
 ---
 
 # Cache node configuration

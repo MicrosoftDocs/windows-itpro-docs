@@ -1,7 +1,6 @@
 ---
 title: Managing Application-Compatibility Fixes and Custom Fix Databases (Windows 10)
 description: Learn why you should use compatibility fixes, and how to deploy and manage custom-compatibility fix databases.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

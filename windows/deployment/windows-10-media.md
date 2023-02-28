@@ -4,7 +4,6 @@ description: Learn about volume license media in Windows 10, and channels such a
 ms.prod: windows-client
 ms.localizationpriority: medium
 ms.date: 11/23/2022
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 author: frankroj

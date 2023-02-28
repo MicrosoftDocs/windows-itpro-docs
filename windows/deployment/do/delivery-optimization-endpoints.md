@@ -9,7 +9,8 @@ ms.localizationpriority: medium
 author: cmknox
 ms.author: carmenf
 ms.reviewer: mstewart
-manager: naengler
+manager: aaroncz
+ms.collection: tier3
 ---
 
 # Delivery Optimization and Microsoft Connected Cache content type endpoints

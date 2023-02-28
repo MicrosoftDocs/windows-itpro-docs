@@ -7,8 +7,7 @@ ms.technology: itpro-deploy
 ms.localizationpriority: medium
 author: frankroj
 ms.author: frankroj
-ms.collection: 
-  - highpri
+ms.collection: highpri, tier2
 ms.topic: tutorial
 ms.date: 10/28/2022
 ---

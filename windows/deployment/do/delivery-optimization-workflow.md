@@ -1,14 +1,15 @@
 ---
 title: Delivery Optimization client-service communication explained
-manager: dougeby
+manager: aaroncz
 description: Details of how Delivery Optimization communicates with the server when content is requested to download.
 ms.prod: windows-client
-author: carmenf
+author: cmknox
 ms.localizationpriority: medium
 ms.author: carmenf
 ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017
+ms.collection: tier3
 ---
 
 # Delivery Optimization client-service communication explained
