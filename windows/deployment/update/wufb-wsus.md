@@ -76,3 +76,7 @@ The policy can be configured using the following two methods:
 - [Update/SetPolicyDrivenUpdateSourceForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforfeature)
 - [Update/SetPolicyDrivenUpdateSourceForOtherUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforother)
 - [Update/SetPolicyDrivenUpdateSourceForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforquality)
+
+
+> [!NOTE]
+> Configuring registry keys directly to get the behavior of any Windows update policy is *not* recommended. However, if you are choosing to go this route, please also ensure you have configured the "UseUpdateClassPolicySource" registry key as well or the scan source will not be alterred. Again, it is recommended that you leverage the Group Policy (GP) or Configuration Service Provider (CSP) policy instead of directly writing these keys. 
