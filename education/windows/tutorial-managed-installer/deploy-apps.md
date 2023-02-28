@@ -18,10 +18,10 @@ The following table details the applications types that can be deployed to Windo
 
 |**Installer/App type**|**Installer extensions**|**Available installation methods via Intune**|**Considerations for Windows 11 SE**|
 |-|-|-|-|
-|[Win32][WIN-1]|`.exe`<br>`.msi`|- Intune Management Extension (IME)<br> - Microsoft Store integration (Windows Package Manager)|✅ Deploy using IME.<br>There are known limitations that might prevent a specific app from being installed. For more information, see [validate applications](validate-apps#known-limitations).<br><br>⛔It's currently unsupported to use the Microsoft Store to deploy Win32 apps.|
-|[Progressive Web Apps (PWAs)][EDGE-2] |`.msix`|- Settings catalog policies<br>- Microsoft Store integration (Windows Package Manager)|✅ Use settings catalog policies.<br><br>⛔It's currently unsupported to use the Microsoft Store to deploy PWAs.|
+|[Win32][WIN-1]|`.exe`<br>`.msi`|- Intune Management Extension (IME)<br> - Microsoft Store integration (Windows Package Manager)|⚠️ Deploy using IME.<br>There are known limitations that might prevent a specific app from being installed. For more information, see [validate applications](validate-apps#known-limitations).<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy Win32 apps.|
+|[Progressive Web Apps (PWAs)][EDGE-2] |`.msix`|- Settings catalog policies<br>- Microsoft Store integration (Windows Package Manager)|✅ Use settings catalog policies.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy PWAs.|
 |Web links| n/a |- Deploy as web apps|✅ Web links are supported.|
-|[Universal Windows Platform (UWP)](/windows/uwp/get-started/universal-application-platform-guide)|`.appx`<br>`.appxbundle`<br>`.msix`<br>|- For private, line-of-business (LOB) apps, [deploy as line-of-business apps][MEM-4]<br>- For public apps: Microsoft Store integration (Windows Package Manager)|✅ LOB apps are supported.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy UWP apps.|
+|[Universal Windows Platform (UWP)](/windows/uwp/get-started/universal-application-platform-guide)|`.appx`<br>`.appxbundle`<br>`.msix`<br>|- For private, line-of-business (LOB) apps, [deploy as line-of-business apps][MEM-4]<br>- For public apps: Microsoft Store integration (Windows Package Manager)|⚠️ LOB apps are supported but require using a supplemental policy.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy UWP apps.|
 
 > [!IMPORTANT]
 > Although you'll be able to install apps on Windows 11 SE devices via Intune, some apps may not perform well on these devices due those apps' minimum spec requirements.
