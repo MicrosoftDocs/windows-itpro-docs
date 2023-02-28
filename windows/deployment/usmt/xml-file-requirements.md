@@ -1,7 +1,6 @@
 ---
 title: XML File Requirements (Windows 10)
 description: Learn about the XML file requirements for creating custom .xml files, like the file must be in UTF-8 and have a unique migration URL ID.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

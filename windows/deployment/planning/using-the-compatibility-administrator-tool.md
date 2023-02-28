@@ -1,7 +1,6 @@
 ---
 title: Using the Compatibility Administrator Tool (Windows 10)
 description: This section provides information about using the Compatibility Administrator tool.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

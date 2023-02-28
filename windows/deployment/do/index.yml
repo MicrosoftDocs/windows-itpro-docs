@@ -9,8 +9,7 @@ metadata:
   ms.topic: landing-page
   ms.prod: windows-client
   ms.technology: itpro-updates
-  ms.collection:
-    - highpri
+  ms.collection: highpri, tier3
   author: aczechowski
   ms.author: aaroncz
   manager: dougeby

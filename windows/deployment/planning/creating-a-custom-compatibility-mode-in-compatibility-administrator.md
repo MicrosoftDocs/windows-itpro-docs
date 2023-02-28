@@ -1,7 +1,6 @@
 ---
 title: Create a Custom Compatibility Mode (Windows 10)
 description: Windows® provides several compatibility modes, groups of compatibility fixes found to resolve many common application-compatibility issues.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

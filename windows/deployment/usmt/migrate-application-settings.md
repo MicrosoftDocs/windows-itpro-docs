@@ -1,7 +1,6 @@
 ---
 title: Migrate Application Settings (Windows 10)
 description: Learn how to author a custom migration .xml file that migrates the settings of an application that isn't migrated by default using MigApp.xml.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
