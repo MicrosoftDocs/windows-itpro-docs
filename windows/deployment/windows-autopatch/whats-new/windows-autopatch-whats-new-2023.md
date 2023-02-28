@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 02/22/2023
+ms.date: 02/28/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+ms.reviewer: hathind
 ---
 
 # What's new 2023
@@ -24,6 +24,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
+| [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) | Added [Allow or block Microsoft 365 App updates](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#allow-or-block-microsoft-365-app-updates) section |
 | [Windows feature updates](../operate/windows-autopatch-windows-feature-update-overview.md#) | Added note about [Windows 10 Long-Term Servicing Channel (LTSC) support](../operate/windows-autopatch-windows-feature-update-overview.md#enforcing-a-minimum-windows-os-version) |
 | [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) | Added note about [Windows 10 Long-Term Servicing Channel (LTSC) support](../operate/windows-autopatch-windows-quality-update-overview.md#device-eligibility) |
 | [Register your devices](../deploy/windows-autopatch-register-devices.md) | Added note about [Windows 10 Long-Term Servicing Channel (LTSC) support](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration) |

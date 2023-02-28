@@ -3,10 +3,9 @@ title: What's new in Windows 10, version 1703
 description: New and updated features in Windows 10, version 1703 (also known as the Creators Updated).
 ms.prod: windows-client
 ms.localizationpriority: medium
-ms.reviewer: 
-author: aczechowski
-manager: dougeby
-ms.author: aaroncz
+author: mestew
+manager: aaroncz
+ms.author: mstewart
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: itpro-fundamentals

@@ -1,26 +1,12 @@
 ---
 title: Checklist Creating Group Policy Objects (Windows)
 description: Learn to deploy firewall settings, IPsec settings, firewall rules, or connection security rules, by using Group Policy in AD DS.
-ms.assetid: e99bd6a4-34a7-47b5-9791-ae819977a559
-ms.reviewer: jekrynit
-ms.author: paoloma
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: paolomatarazzo
-manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: itpro-security
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Checklist: Creating Group Policy Objects

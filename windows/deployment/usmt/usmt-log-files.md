@@ -1,7 +1,6 @@
 ---
 title: Log Files (Windows 10)
 description: Learn how to use User State Migration Tool (USMT) 10.0 logs to monitor your migration and to troubleshoot errors and failed migrations.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

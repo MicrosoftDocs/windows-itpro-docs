@@ -7,10 +7,7 @@ ms.localizationpriority: medium
 author: frankroj
 ms.author: frankroj
 manager: aaroncz
-ms.collection: 
-  - highpri
-search.appverid: 
-  - MET150
+ms.collection: highpri, tier2
 ms.topic: conceptual
 ms.date: 11/23/2022
 appliesto: 

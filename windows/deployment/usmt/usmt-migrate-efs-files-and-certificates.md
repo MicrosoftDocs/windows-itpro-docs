@@ -1,7 +1,6 @@
 ---
 title: Migrate EFS Files and Certificates (Windows 10)
 description: Learn how to migrate Encrypting File System (EFS) certificates. Also, learn where to find information about how to identify file types, files, and folders.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

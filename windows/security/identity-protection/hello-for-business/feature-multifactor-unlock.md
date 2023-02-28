@@ -10,7 +10,7 @@ ms.topic: article
 
 Windows Hello for Business supports the use of a single credential (PIN and biometrics) for unlocking a device. Therefore, if any of those credentials are compromised (shoulder surfed), an attacker could gain access to the system.
 
-Windows Hello for Business can be configured with multi-factor device unlock, by extending Windows Hello with trusted signals. Administrators can configure devices to request a combination of factors and trusted signals to unlock theim.
+Windows Hello for Business can be configured with multi-factor device unlock, by extending Windows Hello with trusted signals. Administrators can configure devices to request a combination of factors and trusted signals to unlock them.
 
 Which organizations can take advantage of Multi-factor unlock? Those who:
 
@@ -65,7 +65,7 @@ For example, if you include the PIN and fingerprint credential providers in both
 The **Signal rules for device unlock** setting contains the rules the Trusted Signal credential provider uses to satisfy unlocking the device.
 
 ### Rule element
-You represent signal rules in XML.  Each signal rule has an starting and ending **rule** element that contains the **schemaVersion** attribute and value.  The current supported schema version is 1.0.
+You represent signal rules in XML.  Each signal rule has a starting and ending **rule** element that contains the **schemaVersion** attribute and value.  The current supported schema version is 1.0.
 
 **Example**
 ```xml

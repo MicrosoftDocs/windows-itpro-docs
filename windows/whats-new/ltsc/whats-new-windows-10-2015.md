@@ -1,12 +1,11 @@
 ---
 title: What's new in Windows 10 Enterprise LTSC 2015
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: mstewart
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2015 (also known as Windows 10 Enterprise 2015 LTSB).
 ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
+author: mestew
+ms.localizationpriority: low
 ms.topic: article
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017

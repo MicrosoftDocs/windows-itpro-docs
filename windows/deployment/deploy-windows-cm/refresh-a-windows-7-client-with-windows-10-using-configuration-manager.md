@@ -1,14 +1,12 @@
 ---
 title: Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager
 description: Learn how to use Configuration Manager and Microsoft Deployment Toolkit (MDT) to refresh a Windows 7 SP1 client with Windows 10.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ms.technology: itpro-deploy
 ms.date: 10/27/2022
 ---

@@ -1,7 +1,6 @@
 ---
 title: Understanding Migration XML Files (Windows 10)
 description: Learn how to modify the behavior of a basic User State Migration Tool (USMT) 10.0 migration by using XML files.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

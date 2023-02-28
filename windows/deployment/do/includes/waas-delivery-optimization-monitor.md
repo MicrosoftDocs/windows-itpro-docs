@@ -1,9 +1,9 @@
 ---
 author: mestew
 ms.author: mstewart
-manager: dougeby
-ms.prod: w10
-ms.collection: M365-modern-desktop
+manager: aaroncz
+ms.prod: windows-client
+ms.technology: itpro-deploy
 ms.topic: include
 ms.date: 04/06/2022
 ms.localizationpriority: medium

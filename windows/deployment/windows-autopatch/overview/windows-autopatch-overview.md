@@ -9,9 +9,8 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
-ms.collection: 
-  - highpri
+ms.collection: highpri, tier2
+ms.reviewer: hathind
 ---
 
 # What is Windows Autopatch?

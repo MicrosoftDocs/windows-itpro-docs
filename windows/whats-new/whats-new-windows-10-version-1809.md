@@ -1,6 +1,5 @@
 ---
 title: What's new in Windows 10, version 1809
-ms.reviewer: 
 description: Learn about features for Windows 10, version 1809, including features and fixes included in previous cumulative updates to Windows 10, version 1803.
 ms.prod: windows-client
 author: mestew

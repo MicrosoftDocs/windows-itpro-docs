@@ -1,14 +1,15 @@
 ---
 title: Using a proxy with Delivery Optimization
-manager: dansimp
+manager: aaroncz
 description: Settings to use with various proxy configurations to allow Delivery Optimization to work
 ms.prod: windows-client
-author: carmenf
+author: cmknox
 ms.localizationpriority: medium
 ms.author: carmenf
 ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017
+ms.collection: tier3
 ---
 
 # Using a proxy with Delivery Optimization

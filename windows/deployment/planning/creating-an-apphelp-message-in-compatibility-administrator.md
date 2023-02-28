@@ -1,7 +1,6 @@
 ---
 title: Create AppHelp Message in Compatibility Administrator (Windows 10)
 description: Create an AppHelp text message with Compatibility Administrator; a message that appears upon starting an app with major issues on the Windows® operating system.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
