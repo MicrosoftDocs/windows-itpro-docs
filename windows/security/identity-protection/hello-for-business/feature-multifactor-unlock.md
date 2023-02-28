@@ -65,7 +65,7 @@ For example, if you include the PIN and fingerprint credential providers in both
 The **Signal rules for device unlock** setting contains the rules the Trusted Signal credential provider uses to satisfy unlocking the device.
 
 ### Rule element
-You represent signal rules in XML.  Each signal rule has an starting and ending **rule** element that contains the **schemaVersion** attribute and value.  The current supported schema version is 1.0.
+You represent signal rules in XML.  Each signal rule has a starting and ending **rule** element that contains the **schemaVersion** attribute and value.  The current supported schema version is 1.0.
 
 **Example**
 ```xml
