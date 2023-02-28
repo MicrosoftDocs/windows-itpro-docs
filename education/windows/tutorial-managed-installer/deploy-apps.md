@@ -28,7 +28,6 @@ The following table details the applications types that can be deployed via Intu
 > Before deploying apps, first check which apps will be targeting your Windows 11 SE devices and ensure that they will have their minimum requirements met, and ensure that apps which were previously blocked from installing or running are no longer unintentionally being provisioned once the managed installer policies are introduced.
 >
 
-
 ## Win32 apps
 
 Win32 apps are installed from Intune via an .intunewin package created by the IntuneWinAppUtil command line tool.\
