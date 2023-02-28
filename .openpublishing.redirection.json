@@ -20536,6 +20536,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows/client-management/mdm/enterprisemodernappmanagement-xsd.md",
+      "redirect_url": "/windows/client-management/mdm/enterprisemodernappmanagement-csp#enterprisemodernappmanagement-xsd",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "education/windows/education-scenarios-store-for-business.md",
       "redirect_url": "/windows/resources",
       "redirect_document_id": false

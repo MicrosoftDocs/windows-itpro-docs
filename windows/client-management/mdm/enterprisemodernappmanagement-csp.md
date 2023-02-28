@@ -4,7 +4,7 @@ description: Learn more about the EnterpriseModernAppManagement CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/24/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -19,241 +19,237 @@ ms.topic: reference
 <!-- EnterpriseModernAppManagement-Editable-Begin -->
 The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](../enterprise-app-management.md).
 
-Device or User context For user context, use ./User/Vendor/MSFT path and for device context, use ./Device/Vendor/MSFT path.
-
-> [!Note]
+> [!NOTE]
 > Windows Holographic only supports per-user configuration of the EnterpriseModernAppManagement CSP.
 <!-- EnterpriseModernAppManagement-Editable-End -->
 
 <!-- EnterpriseModernAppManagement-Tree-Begin -->
-The following example shows the EnterpriseModernAppManagement configuration service provider in tree format.
+The following list shows the EnterpriseModernAppManagement configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/EnterpriseModernAppManagement
---- AppInstallation
------- {PackageFamilyName}
---------- HostedInstall
---------- LastError
---------- LastErrorDesc
---------- ProgressStatus
---------- Status
---------- StoreInstall
---- AppLicenses
------- StoreLicenses
---------- {LicenseID}
------------- AddLicense
------------- GetLicenseFromStore
------------- LicenseCategory
------------- LicenseUsage
------------- RequesterID
---- AppManagement
------- AppInventoryQuery
------- AppInventoryResults
------- AppStore
---------- {PackageFamilyName}
------------- {PackageFullName}
---------------- Architecture
---------------- InstallDate
---------------- InstallLocation
---------------- IsBundle
---------------- IsFramework
---------------- IsProvisioned
---------------- IsStub
---------------- Name
---------------- PackageStatus
---------------- Publisher
---------------- RequiresReinstall
---------------- ResourceID
---------------- Users
---------------- Version
------------- DoNotUpdate
------------- MaintainProcessorArchitectureOnUpdate
------------- NonRemovable
---------- ReleaseManagement
------------- {ReleaseManagementKey}
---------------- ChannelId
---------------- EffectiveRelease
------------------- ChannelId
------------------- ReleaseManagementId
---------------- ReleaseManagementId
------- LastScanError
------- nonStore
---------- {PackageFamilyName}
------------- {PackageFullName}
---------------- Architecture
---------------- InstallDate
---------------- InstallLocation
---------------- IsBundle
---------------- IsFramework
---------------- IsProvisioned
---------------- IsStub
---------------- Name
---------------- PackageStatus
---------------- Publisher
---------------- RequiresReinstall
---------------- ResourceID
---------------- Users
---------------- Version
------------- DoNotUpdate
------------- MaintainProcessorArchitectureOnUpdate
------------- NonRemovable
---------- ReleaseManagement
------------- {ReleaseManagementKey}
---------------- ChannelId
---------------- EffectiveRelease
------------------- ChannelId
------------------- ReleaseManagementId
---------------- ReleaseManagementId
------- ResetPackage
------- System
---------- {PackageFamilyName}
------------- {PackageFullName}
---------------- Architecture
---------------- InstallDate
---------------- InstallLocation
---------------- IsBundle
---------------- IsFramework
---------------- IsProvisioned
---------------- IsStub
---------------- Name
---------------- PackageStatus
---------------- Publisher
---------------- RequiresReinstall
---------------- ResourceID
---------------- Users
---------------- Version
------------- AppUpdateSettings
---------------- AutoRepair
------------------- PackageSource
---------------- AutoUpdateSettings
------------------- AutomaticBackgroundTask
------------------- Disable
------------------- ForceUpdateFromAnyVersion
------------------- HoursBetweenUpdateChecks
------------------- OnLaunchUpdateCheck
------------------- PackageSource
------------------- ShowPrompt
------------------- UpdateBlocksActivation
------------- DoNotUpdate
------------- MaintainProcessorArchitectureOnUpdate
------------- NonRemovable
---------- ReleaseManagement
------------- {ReleaseManagementKey}
---------------- ChannelId
---------------- EffectiveRelease
------------------- ChannelId
------------------- ReleaseManagementId
---------------- ReleaseManagementId
------- UpdateScan
-./User/Vendor/MSFT/EnterpriseModernAppManagement
---- AppInstallation
------- {PackageFamilyName}
---------- HostedInstall
---------- LastError
---------- LastErrorDesc
---------- ProgressStatus
---------- Status
---------- StoreInstall
---- AppLicenses
------- StoreLicenses
---------- {LicenseID}
------------- AddLicense
------------- GetLicenseFromStore
------------- LicenseCategory
------------- LicenseUsage
------------- RequesterID
---- AppManagement
------- AppInventoryQuery
------- AppInventoryResults
------- AppStore
---------- {PackageFamilyName}
------------- {PackageFullName}
---------------- Architecture
---------------- InstallDate
---------------- InstallLocation
---------------- IsBundle
---------------- IsFramework
---------------- IsProvisioned
---------------- IsStub
---------------- Name
---------------- PackageStatus
---------------- Publisher
---------------- RequiresReinstall
---------------- ResourceID
---------------- Users
---------------- Version
------------- AppSettingPolicy
---------------- {SettingValue}
------------- DoNotUpdate
------------- MaintainProcessorArchitectureOnUpdate
---------- ReleaseManagement
------------- {ReleaseManagementKey}
---------------- ChannelId
---------------- EffectiveRelease
------------------- ChannelId
------------------- ReleaseManagementId
---------------- ReleaseManagementId
------- LastScanError
------- nonStore
---------- {PackageFamilyName}
------------- {PackageFullName}
---------------- Architecture
---------------- InstallDate
---------------- InstallLocation
---------------- IsBundle
---------------- IsFramework
---------------- IsProvisioned
---------------- IsStub
---------------- Name
---------------- PackageStatus
---------------- Publisher
---------------- RequiresReinstall
---------------- ResourceID
---------------- Users
---------------- Version
------------- AppSettingPolicy
---------------- {SettingValue}
------------- DoNotUpdate
------------- MaintainProcessorArchitectureOnUpdate
---------- ReleaseManagement
------------- {ReleaseManagementKey}
---------------- ChannelId
---------------- EffectiveRelease
------------------- ChannelId
------------------- ReleaseManagementId
---------------- ReleaseManagementId
------- RemovePackage
------- ResetPackage
------- System
---------- {PackageFamilyName}
------------- {PackageFullName}
---------------- Architecture
---------------- InstallDate
---------------- InstallLocation
---------------- IsBundle
---------------- IsFramework
---------------- IsProvisioned
---------------- IsStub
---------------- Name
---------------- PackageStatus
---------------- Publisher
---------------- RequiresReinstall
---------------- ResourceID
---------------- Users
---------------- Version
------------- AppSettingPolicy
---------------- {SettingValue}
------------- DoNotUpdate
------------- MaintainProcessorArchitectureOnUpdate
---------- ReleaseManagement
------------- {ReleaseManagementKey}
---------------- ChannelId
---------------- EffectiveRelease
------------------- ChannelId
------------------- ReleaseManagementId
---------------- ReleaseManagementId
------- UpdateScan
-```
+- ./Device/Vendor/MSFT/EnterpriseModernAppManagement
+  - [AppInstallation](#deviceappinstallation)
+    - [{PackageFamilyName}](#deviceappinstallationpackagefamilyname)
+      - [HostedInstall](#deviceappinstallationpackagefamilynamehostedinstall)
+      - [LastError](#deviceappinstallationpackagefamilynamelasterror)
+      - [LastErrorDesc](#deviceappinstallationpackagefamilynamelasterrordesc)
+      - [ProgressStatus](#deviceappinstallationpackagefamilynameprogressstatus)
+      - [Status](#deviceappinstallationpackagefamilynamestatus)
+      - [StoreInstall](#deviceappinstallationpackagefamilynamestoreinstall)
+  - [AppLicenses](#deviceapplicenses)
+    - [StoreLicenses](#deviceapplicensesstorelicenses)
+      - [{LicenseID}](#deviceapplicensesstorelicenseslicenseid)
+        - [AddLicense](#deviceapplicensesstorelicenseslicenseidaddlicense)
+        - [GetLicenseFromStore](#deviceapplicensesstorelicenseslicenseidgetlicensefromstore)
+        - [LicenseCategory](#deviceapplicensesstorelicenseslicenseidlicensecategory)
+        - [LicenseUsage](#deviceapplicensesstorelicenseslicenseidlicenseusage)
+        - [RequesterID](#deviceapplicensesstorelicenseslicenseidrequesterid)
+  - [AppManagement](#deviceappmanagement)
+    - [AppInventoryQuery](#deviceappmanagementappinventoryquery)
+    - [AppInventoryResults](#deviceappmanagementappinventoryresults)
+    - [AppStore](#deviceappmanagementappstore)
+      - [{PackageFamilyName}](#deviceappmanagementappstorepackagefamilyname)
+        - [{PackageFullName}](#deviceappmanagementappstorepackagefamilynamepackagefullname)
+          - [Architecture](#deviceappmanagementappstorepackagefamilynamepackagefullnamearchitecture)
+          - [InstallDate](#deviceappmanagementappstorepackagefamilynamepackagefullnameinstalldate)
+          - [InstallLocation](#deviceappmanagementappstorepackagefamilynamepackagefullnameinstalllocation)
+          - [IsBundle](#deviceappmanagementappstorepackagefamilynamepackagefullnameisbundle)
+          - [IsFramework](#deviceappmanagementappstorepackagefamilynamepackagefullnameisframework)
+          - [IsProvisioned](#deviceappmanagementappstorepackagefamilynamepackagefullnameisprovisioned)
+          - [IsStub](#deviceappmanagementappstorepackagefamilynamepackagefullnameisstub)
+          - [Name](#deviceappmanagementappstorepackagefamilynamepackagefullnamename)
+          - [PackageStatus](#deviceappmanagementappstorepackagefamilynamepackagefullnamepackagestatus)
+          - [Publisher](#deviceappmanagementappstorepackagefamilynamepackagefullnamepublisher)
+          - [RequiresReinstall](#deviceappmanagementappstorepackagefamilynamepackagefullnamerequiresreinstall)
+          - [ResourceID](#deviceappmanagementappstorepackagefamilynamepackagefullnameresourceid)
+          - [Users](#deviceappmanagementappstorepackagefamilynamepackagefullnameusers)
+          - [Version](#deviceappmanagementappstorepackagefamilynamepackagefullnameversion)
+        - [DoNotUpdate](#deviceappmanagementappstorepackagefamilynamedonotupdate)
+        - [MaintainProcessorArchitectureOnUpdate](#deviceappmanagementappstorepackagefamilynamemaintainprocessorarchitectureonupdate)
+        - [NonRemovable](#deviceappmanagementappstorepackagefamilynamenonremovable)
+      - [ReleaseManagement](#deviceappmanagementappstorereleasemanagement)
+        - [{ReleaseManagementKey}](#deviceappmanagementappstorereleasemanagementreleasemanagementkey)
+          - [ChannelId](#deviceappmanagementappstorereleasemanagementreleasemanagementkeychannelid)
+          - [EffectiveRelease](#deviceappmanagementappstorereleasemanagementreleasemanagementkeyeffectiverelease)
+            - [ChannelId](#deviceappmanagementappstorereleasemanagementreleasemanagementkeyeffectivereleasechannelid)
+            - [ReleaseManagementId](#deviceappmanagementappstorereleasemanagementreleasemanagementkeyeffectivereleasereleasemanagementid)
+          - [ReleaseManagementId](#deviceappmanagementappstorereleasemanagementreleasemanagementkeyreleasemanagementid)
+    - [LastScanError](#deviceappmanagementlastscanerror)
+    - [nonStore](#deviceappmanagementnonstore)
+      - [{PackageFamilyName}](#deviceappmanagementnonstorepackagefamilyname)
+        - [{PackageFullName}](#deviceappmanagementnonstorepackagefamilynamepackagefullname)
+          - [Architecture](#deviceappmanagementnonstorepackagefamilynamepackagefullnamearchitecture)
+          - [InstallDate](#deviceappmanagementnonstorepackagefamilynamepackagefullnameinstalldate)
+          - [InstallLocation](#deviceappmanagementnonstorepackagefamilynamepackagefullnameinstalllocation)
+          - [IsBundle](#deviceappmanagementnonstorepackagefamilynamepackagefullnameisbundle)
+          - [IsFramework](#deviceappmanagementnonstorepackagefamilynamepackagefullnameisframework)
+          - [IsProvisioned](#deviceappmanagementnonstorepackagefamilynamepackagefullnameisprovisioned)
+          - [IsStub](#deviceappmanagementnonstorepackagefamilynamepackagefullnameisstub)
+          - [Name](#deviceappmanagementnonstorepackagefamilynamepackagefullnamename)
+          - [PackageStatus](#deviceappmanagementnonstorepackagefamilynamepackagefullnamepackagestatus)
+          - [Publisher](#deviceappmanagementnonstorepackagefamilynamepackagefullnamepublisher)
+          - [RequiresReinstall](#deviceappmanagementnonstorepackagefamilynamepackagefullnamerequiresreinstall)
+          - [ResourceID](#deviceappmanagementnonstorepackagefamilynamepackagefullnameresourceid)
+          - [Users](#deviceappmanagementnonstorepackagefamilynamepackagefullnameusers)
+          - [Version](#deviceappmanagementnonstorepackagefamilynamepackagefullnameversion)
+        - [DoNotUpdate](#deviceappmanagementnonstorepackagefamilynamedonotupdate)
+        - [MaintainProcessorArchitectureOnUpdate](#deviceappmanagementnonstorepackagefamilynamemaintainprocessorarchitectureonupdate)
+        - [NonRemovable](#deviceappmanagementnonstorepackagefamilynamenonremovable)
+      - [ReleaseManagement](#deviceappmanagementnonstorereleasemanagement)
+        - [{ReleaseManagementKey}](#deviceappmanagementnonstorereleasemanagementreleasemanagementkey)
+          - [ChannelId](#deviceappmanagementnonstorereleasemanagementreleasemanagementkeychannelid)
+          - [EffectiveRelease](#deviceappmanagementnonstorereleasemanagementreleasemanagementkeyeffectiverelease)
+            - [ChannelId](#deviceappmanagementnonstorereleasemanagementreleasemanagementkeyeffectivereleasechannelid)
+            - [ReleaseManagementId](#deviceappmanagementnonstorereleasemanagementreleasemanagementkeyeffectivereleasereleasemanagementid)
+          - [ReleaseManagementId](#deviceappmanagementnonstorereleasemanagementreleasemanagementkeyreleasemanagementid)
+    - [ResetPackage](#deviceappmanagementresetpackage)
+    - [System](#deviceappmanagementsystem)
+      - [{PackageFamilyName}](#deviceappmanagementsystempackagefamilyname)
+        - [{PackageFullName}](#deviceappmanagementsystempackagefamilynamepackagefullname)
+          - [Architecture](#deviceappmanagementsystempackagefamilynamepackagefullnamearchitecture)
+          - [InstallDate](#deviceappmanagementsystempackagefamilynamepackagefullnameinstalldate)
+          - [InstallLocation](#deviceappmanagementsystempackagefamilynamepackagefullnameinstalllocation)
+          - [IsBundle](#deviceappmanagementsystempackagefamilynamepackagefullnameisbundle)
+          - [IsFramework](#deviceappmanagementsystempackagefamilynamepackagefullnameisframework)
+          - [IsProvisioned](#deviceappmanagementsystempackagefamilynamepackagefullnameisprovisioned)
+          - [IsStub](#deviceappmanagementsystempackagefamilynamepackagefullnameisstub)
+          - [Name](#deviceappmanagementsystempackagefamilynamepackagefullnamename)
+          - [PackageStatus](#deviceappmanagementsystempackagefamilynamepackagefullnamepackagestatus)
+          - [Publisher](#deviceappmanagementsystempackagefamilynamepackagefullnamepublisher)
+          - [RequiresReinstall](#deviceappmanagementsystempackagefamilynamepackagefullnamerequiresreinstall)
+          - [ResourceID](#deviceappmanagementsystempackagefamilynamepackagefullnameresourceid)
+          - [Users](#deviceappmanagementsystempackagefamilynamepackagefullnameusers)
+          - [Version](#deviceappmanagementsystempackagefamilynamepackagefullnameversion)
+        - [AppUpdateSettings](#deviceappmanagementsystempackagefamilynameappupdatesettings)
+          - [AutoRepair](#deviceappmanagementsystempackagefamilynameappupdatesettingsautorepair)
+            - [PackageSource](#deviceappmanagementsystempackagefamilynameappupdatesettingsautorepairpackagesource)
+          - [AutoUpdateSettings](#deviceappmanagementsystempackagefamilynameappupdatesettingsautoupdatesettings)
+            - [AutomaticBackgroundTask](#deviceappmanagementsystempackagefamilynameappupdatesettingsautoupdatesettingsautomaticbackgroundtask)
+            - [Disable](#deviceappmanagementsystempackagefamilynameappupdatesettingsautoupdatesettingsdisable)
+            - [ForceUpdateFromAnyVersion](#deviceappmanagementsystempackagefamilynameappupdatesettingsautoupdatesettingsforceupdatefromanyversion)
+            - [HoursBetweenUpdateChecks](#deviceappmanagementsystempackagefamilynameappupdatesettingsautoupdatesettingshoursbetweenupdatechecks)
+            - [OnLaunchUpdateCheck](#deviceappmanagementsystempackagefamilynameappupdatesettingsautoupdatesettingsonlaunchupdatecheck)
+            - [PackageSource](#deviceappmanagementsystempackagefamilynameappupdatesettingsautoupdatesettingspackagesource)
+            - [ShowPrompt](#deviceappmanagementsystempackagefamilynameappupdatesettingsautoupdatesettingsshowprompt)
+            - [UpdateBlocksActivation](#deviceappmanagementsystempackagefamilynameappupdatesettingsautoupdatesettingsupdateblocksactivation)
+        - [DoNotUpdate](#deviceappmanagementsystempackagefamilynamedonotupdate)
+        - [MaintainProcessorArchitectureOnUpdate](#deviceappmanagementsystempackagefamilynamemaintainprocessorarchitectureonupdate)
+        - [NonRemovable](#deviceappmanagementsystempackagefamilynamenonremovable)
+      - [ReleaseManagement](#deviceappmanagementsystemreleasemanagement)
+        - [{ReleaseManagementKey}](#deviceappmanagementsystemreleasemanagementreleasemanagementkey)
+          - [ChannelId](#deviceappmanagementsystemreleasemanagementreleasemanagementkeychannelid)
+          - [EffectiveRelease](#deviceappmanagementsystemreleasemanagementreleasemanagementkeyeffectiverelease)
+            - [ChannelId](#deviceappmanagementsystemreleasemanagementreleasemanagementkeyeffectivereleasechannelid)
+            - [ReleaseManagementId](#deviceappmanagementsystemreleasemanagementreleasemanagementkeyeffectivereleasereleasemanagementid)
+          - [ReleaseManagementId](#deviceappmanagementsystemreleasemanagementreleasemanagementkeyreleasemanagementid)
+    - [UpdateScan](#deviceappmanagementupdatescan)
+- ./User/Vendor/MSFT/EnterpriseModernAppManagement
+  - [AppInstallation](#userappinstallation)
+    - [{PackageFamilyName}](#userappinstallationpackagefamilyname)
+      - [HostedInstall](#userappinstallationpackagefamilynamehostedinstall)
+      - [LastError](#userappinstallationpackagefamilynamelasterror)
+      - [LastErrorDesc](#userappinstallationpackagefamilynamelasterrordesc)
+      - [ProgressStatus](#userappinstallationpackagefamilynameprogressstatus)
+      - [Status](#userappinstallationpackagefamilynamestatus)
+      - [StoreInstall](#userappinstallationpackagefamilynamestoreinstall)
+  - [AppLicenses](#userapplicenses)
+    - [StoreLicenses](#userapplicensesstorelicenses)
+      - [{LicenseID}](#userapplicensesstorelicenseslicenseid)
+        - [AddLicense](#userapplicensesstorelicenseslicenseidaddlicense)
+        - [GetLicenseFromStore](#userapplicensesstorelicenseslicenseidgetlicensefromstore)
+        - [LicenseCategory](#userapplicensesstorelicenseslicenseidlicensecategory)
+        - [LicenseUsage](#userapplicensesstorelicenseslicenseidlicenseusage)
+        - [RequesterID](#userapplicensesstorelicenseslicenseidrequesterid)
+  - [AppManagement](#userappmanagement)
+    - [AppInventoryQuery](#userappmanagementappinventoryquery)
+    - [AppInventoryResults](#userappmanagementappinventoryresults)
+    - [AppStore](#userappmanagementappstore)
+      - [{PackageFamilyName}](#userappmanagementappstorepackagefamilyname)
+        - [{PackageFullName}](#userappmanagementappstorepackagefamilynamepackagefullname)
+          - [Architecture](#userappmanagementappstorepackagefamilynamepackagefullnamearchitecture)
+          - [InstallDate](#userappmanagementappstorepackagefamilynamepackagefullnameinstalldate)
+          - [InstallLocation](#userappmanagementappstorepackagefamilynamepackagefullnameinstalllocation)
+          - [IsBundle](#userappmanagementappstorepackagefamilynamepackagefullnameisbundle)
+          - [IsFramework](#userappmanagementappstorepackagefamilynamepackagefullnameisframework)
+          - [IsProvisioned](#userappmanagementappstorepackagefamilynamepackagefullnameisprovisioned)
+          - [IsStub](#userappmanagementappstorepackagefamilynamepackagefullnameisstub)
+          - [Name](#userappmanagementappstorepackagefamilynamepackagefullnamename)
+          - [PackageStatus](#userappmanagementappstorepackagefamilynamepackagefullnamepackagestatus)
+          - [Publisher](#userappmanagementappstorepackagefamilynamepackagefullnamepublisher)
+          - [RequiresReinstall](#userappmanagementappstorepackagefamilynamepackagefullnamerequiresreinstall)
+          - [ResourceID](#userappmanagementappstorepackagefamilynamepackagefullnameresourceid)
+          - [Users](#userappmanagementappstorepackagefamilynamepackagefullnameusers)
+          - [Version](#userappmanagementappstorepackagefamilynamepackagefullnameversion)
+        - [AppSettingPolicy](#userappmanagementappstorepackagefamilynameappsettingpolicy)
+          - [{SettingValue}](#userappmanagementappstorepackagefamilynameappsettingpolicysettingvalue)
+        - [DoNotUpdate](#userappmanagementappstorepackagefamilynamedonotupdate)
+        - [MaintainProcessorArchitectureOnUpdate](#userappmanagementappstorepackagefamilynamemaintainprocessorarchitectureonupdate)
+      - [ReleaseManagement](#userappmanagementappstorereleasemanagement)
+        - [{ReleaseManagementKey}](#userappmanagementappstorereleasemanagementreleasemanagementkey)
+          - [ChannelId](#userappmanagementappstorereleasemanagementreleasemanagementkeychannelid)
+          - [EffectiveRelease](#userappmanagementappstorereleasemanagementreleasemanagementkeyeffectiverelease)
+            - [ChannelId](#userappmanagementappstorereleasemanagementreleasemanagementkeyeffectivereleasechannelid)
+            - [ReleaseManagementId](#userappmanagementappstorereleasemanagementreleasemanagementkeyeffectivereleasereleasemanagementid)
+          - [ReleaseManagementId](#userappmanagementappstorereleasemanagementreleasemanagementkeyreleasemanagementid)
+    - [LastScanError](#userappmanagementlastscanerror)
+    - [nonStore](#userappmanagementnonstore)
+      - [{PackageFamilyName}](#userappmanagementnonstorepackagefamilyname)
+        - [{PackageFullName}](#userappmanagementnonstorepackagefamilynamepackagefullname)
+          - [Architecture](#userappmanagementnonstorepackagefamilynamepackagefullnamearchitecture)
+          - [InstallDate](#userappmanagementnonstorepackagefamilynamepackagefullnameinstalldate)
+          - [InstallLocation](#userappmanagementnonstorepackagefamilynamepackagefullnameinstalllocation)
+          - [IsBundle](#userappmanagementnonstorepackagefamilynamepackagefullnameisbundle)
+          - [IsFramework](#userappmanagementnonstorepackagefamilynamepackagefullnameisframework)
+          - [IsProvisioned](#userappmanagementnonstorepackagefamilynamepackagefullnameisprovisioned)
+          - [IsStub](#userappmanagementnonstorepackagefamilynamepackagefullnameisstub)
+          - [Name](#userappmanagementnonstorepackagefamilynamepackagefullnamename)
+          - [PackageStatus](#userappmanagementnonstorepackagefamilynamepackagefullnamepackagestatus)
+          - [Publisher](#userappmanagementnonstorepackagefamilynamepackagefullnamepublisher)
+          - [RequiresReinstall](#userappmanagementnonstorepackagefamilynamepackagefullnamerequiresreinstall)
+          - [ResourceID](#userappmanagementnonstorepackagefamilynamepackagefullnameresourceid)
+          - [Users](#userappmanagementnonstorepackagefamilynamepackagefullnameusers)
+          - [Version](#userappmanagementnonstorepackagefamilynamepackagefullnameversion)
+        - [AppSettingPolicy](#userappmanagementnonstorepackagefamilynameappsettingpolicy)
+          - [{SettingValue}](#userappmanagementnonstorepackagefamilynameappsettingpolicysettingvalue)
+        - [DoNotUpdate](#userappmanagementnonstorepackagefamilynamedonotupdate)
+        - [MaintainProcessorArchitectureOnUpdate](#userappmanagementnonstorepackagefamilynamemaintainprocessorarchitectureonupdate)
+      - [ReleaseManagement](#userappmanagementnonstorereleasemanagement)
+        - [{ReleaseManagementKey}](#userappmanagementnonstorereleasemanagementreleasemanagementkey)
+          - [ChannelId](#userappmanagementnonstorereleasemanagementreleasemanagementkeychannelid)
+          - [EffectiveRelease](#userappmanagementnonstorereleasemanagementreleasemanagementkeyeffectiverelease)
+            - [ChannelId](#userappmanagementnonstorereleasemanagementreleasemanagementkeyeffectivereleasechannelid)
+            - [ReleaseManagementId](#userappmanagementnonstorereleasemanagementreleasemanagementkeyeffectivereleasereleasemanagementid)
+          - [ReleaseManagementId](#userappmanagementnonstorereleasemanagementreleasemanagementkeyreleasemanagementid)
+    - [RemovePackage](#userappmanagementremovepackage)
+    - [ResetPackage](#userappmanagementresetpackage)
+    - [System](#userappmanagementsystem)
+      - [{PackageFamilyName}](#userappmanagementsystempackagefamilyname)
+        - [{PackageFullName}](#userappmanagementsystempackagefamilynamepackagefullname)
+          - [Architecture](#userappmanagementsystempackagefamilynamepackagefullnamearchitecture)
+          - [InstallDate](#userappmanagementsystempackagefamilynamepackagefullnameinstalldate)
+          - [InstallLocation](#userappmanagementsystempackagefamilynamepackagefullnameinstalllocation)
+          - [IsBundle](#userappmanagementsystempackagefamilynamepackagefullnameisbundle)
+          - [IsFramework](#userappmanagementsystempackagefamilynamepackagefullnameisframework)
+          - [IsProvisioned](#userappmanagementsystempackagefamilynamepackagefullnameisprovisioned)
+          - [IsStub](#userappmanagementsystempackagefamilynamepackagefullnameisstub)
+          - [Name](#userappmanagementsystempackagefamilynamepackagefullnamename)
+          - [PackageStatus](#userappmanagementsystempackagefamilynamepackagefullnamepackagestatus)
+          - [Publisher](#userappmanagementsystempackagefamilynamepackagefullnamepublisher)
+          - [RequiresReinstall](#userappmanagementsystempackagefamilynamepackagefullnamerequiresreinstall)
+          - [ResourceID](#userappmanagementsystempackagefamilynamepackagefullnameresourceid)
+          - [Users](#userappmanagementsystempackagefamilynamepackagefullnameusers)
+          - [Version](#userappmanagementsystempackagefamilynamepackagefullnameversion)
+        - [AppSettingPolicy](#userappmanagementsystempackagefamilynameappsettingpolicy)
+          - [{SettingValue}](#userappmanagementsystempackagefamilynameappsettingpolicysettingvalue)
+        - [DoNotUpdate](#userappmanagementsystempackagefamilynamedonotupdate)
+        - [MaintainProcessorArchitectureOnUpdate](#userappmanagementsystempackagefamilynamemaintainprocessorarchitectureonupdate)
+      - [ReleaseManagement](#userappmanagementsystemreleasemanagement)
+        - [{ReleaseManagementKey}](#userappmanagementsystemreleasemanagementreleasemanagementkey)
+          - [ChannelId](#userappmanagementsystemreleasemanagementreleasemanagementkeychannelid)
+          - [EffectiveRelease](#userappmanagementsystemreleasemanagementreleasemanagementkeyeffectiverelease)
+            - [ChannelId](#userappmanagementsystemreleasemanagementreleasemanagementkeyeffectivereleasechannelid)
+            - [ReleaseManagementId](#userappmanagementsystemreleasemanagementreleasemanagementkeyeffectivereleasereleasemanagementid)
+          - [ReleaseManagementId](#userappmanagementsystemreleasemanagementreleasemanagementkeyreleasemanagementid)
+    - [UpdateScan](#userappmanagementupdatescan)
 <!-- EnterpriseModernAppManagement-Tree-End -->
 
 <!-- Device-AppInstallation-Begin -->
@@ -277,7 +273,7 @@ Used to perform app installation.
 <!-- Device-AppInstallation-Description-End -->
 
 <!-- Device-AppInstallation-Editable-Begin -->
-Required node.
+This is a required node.
 <!-- Device-AppInstallation-Editable-End -->
 
 <!-- Device-AppInstallation-DFProperties-Begin -->
@@ -316,9 +312,9 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppInstallation-{PackageFamilyName}-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Editable-Begin -->
-Optional.
+This is an optional node.
 
-> [!Note]
+> [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- Device-AppInstallation-{PackageFamilyName}-Editable-End -->
 
@@ -333,6 +329,8 @@ Optional.
 <!-- Device-AppInstallation-{PackageFamilyName}-DFProperties-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Examples-Begin -->
+**Example**:
+
 Here's an example for uninstalling an app:
 
 ```xml
@@ -376,14 +374,12 @@ Command to perform an install of an app package from a hosted location (this can
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-Editable-Begin -->
-Required.
-
-The following list shows the supported deployment options:
+This is a required node. The following list shows the supported deployment options:
 
 - ForceApplicationShutdown
-- DevelopmentMode 
+- DevelopmentMode
 - InstallAllResources
-- ForceTargetApplicationShutdown 
+- ForceTargetApplicationShutdown
 - ForceUpdateToAnyVersion
 - DeferRegistration="1". If the app is in use at the time of installation. This option stages the files for an app update and completes the registration of the app update after the app closes. Available in the latest insider flight of 20H1.
 - StageOnly="1". Stages the files for an app installation or update without installing the app. Available in 1803.
@@ -428,7 +424,7 @@ Last error relating to the app installation.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > This element isn't present after the app is installed.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-Editable-End -->
 
@@ -468,7 +464,7 @@ Description of last error relating to the app installation.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > This element isn't present after the app is installed.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-Editable-End -->
 
@@ -508,7 +504,7 @@ An integer the indicates the progress of the app installation. For https locatio
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > This element isn't present after the app is installed.
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-End -->
 
@@ -548,7 +544,7 @@ Status of app installation. The following values are returned: NOT_INSTALLED (0)
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > This element isn't present after the app is installed.
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Editable-End -->
 
@@ -666,7 +662,7 @@ Used to manage licenses for store apps.
 <!-- Device-AppLicenses-StoreLicenses-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-Editable-Begin -->
-Required.
+This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-Editable-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-DFProperties-Begin -->
@@ -705,7 +701,7 @@ License ID for a store installed app. The license ID is generally the PFN of the
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-Editable-Begin -->
-Optional.
+This is an optional node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-Editable-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-DFProperties-Begin -->
@@ -745,7 +741,7 @@ Command to add license.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Editable-Begin -->
-Required.
+This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Editable-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-DFProperties-Begin -->
@@ -784,7 +780,7 @@ Command to get license from the store.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Editable-Begin -->
-Required.
+This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Editable-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-DFProperties-Begin -->
@@ -940,7 +936,7 @@ Used for inventory and app management (post-install).
 <!-- Device-AppManagement-Description-End -->
 
 <!-- Device-AppManagement-Editable-Begin -->
-Required.
+This is a required node.
 <!-- Device-AppManagement-Editable-End -->
 
 <!-- Device-AppManagement-DFProperties-Begin -->
@@ -979,36 +975,35 @@ Specifies the query for app inventory.
 <!-- Device-AppManagement-AppInventoryQuery-Description-End -->
 
 <!-- Device-AppManagement-AppInventoryQuery-Editable-Begin -->
-Required.
+This is a required node. Query parameters:
 
-Query parameters:
+- Output - Specifies the parameters for the information returned in AppInventoryResults operation. Multiple value must be separate by |. Valid values are:
+  - PackagesName - returns the *PackageFamilyName* and *PackageFullName* of the app. Default if nothing is specified.
+    - PackageDetails - returns all inventory attributes of the package. This information includes all information from PackageNames parameter, but doesn't validate RequiresReinstall.
+    - RequiredReinstall - Validates the app status of the apps in the inventory query to determine if they require a reinstallation. This attribute may impact system performance depending on the number of apps installed. Requiring reinstall occurs when resource package updates or when the app is in a tampered state.
 
--   Output - Specifies the parameters for the information returned in AppInventoryResults operation. Multiple value must be separate by |. Valid values are:
-    -   PackagesName - returns the *PackageFamilyName* and *PackageFullName* of the app. Default if nothing is specified.
-    -   PackageDetails - returns all inventory attributes of the package. This information includes all information from PackageNames parameter, but doesn't validate RequiresReinstall.
-    -   RequiredReinstall - Validates the app status of the apps in the inventory query to determine if they require a reinstallation. This attribute may impact system performance depending on the number of apps installed. Requiring reinstall occurs when resource package updates or when the app is in a tampered state.
--   Source - specifies the app classification that aligns to the existing inventory nodes. You can use a specific filter or if no filter is specified then all sources will be returned. If no value is specified, all classifications are returned. Valid values are:
-    -   AppStore - This classification is for apps that were acquired from Microsoft Store. These were apps directly installed from Microsoft Store or enterprise apps from Microsoft Store for Business.
-    -   nonStore - This classification is for apps that weren't acquired from the Microsoft Store.
-    -   System - Apps that are part of the OS. You can't uninstall these apps. This classification is read-only and can only be inventoried.
--   PackageTypeFilter - Specifies one or multiple types of packages you can use to query the user or device. Multiple values must be separated by |. Valid values are:
+- Source - specifies the app classification that aligns to the existing inventory nodes. You can use a specific filter or if no filter is specified then all sources will be returned. If no value is specified, all classifications are returned. Valid values are:
+  - AppStore - This classification is for apps that were acquired from Microsoft Store. These were apps directly installed from Microsoft Store or enterprise apps from Microsoft Store for Business.
+  - nonStore - This classification is for apps that weren't acquired from the Microsoft Store.
+  - System - Apps that are part of the OS. You can't uninstall these apps. This classification is read-only and can only be inventoried.
 
-    -   Main - returns the main installed package.
-    -   Bundle - returns installed bundle packages.
-    -   Framework - returns installed framework packages.
-    -   Resource - returns installed resources packages. Resources are either language, scale, or DirectX resources. They're parts of a bundle.
-    -   XAP - returns XAP package types. This filter is only supported on Windows Mobile.
-    -   All - returns all package types.
+- PackageTypeFilter - Specifies one or multiple types of packages you can use to query the user or device. Multiple values must be separated by |. Valid values are:
+  - Main - returns the main installed package.
+  - Bundle - returns installed bundle packages.
+  - Framework - returns installed framework packages.
+  - Resource - returns installed resources packages. Resources are either language, scale, or DirectX resources. They're parts of a bundle.
+  - XAP - returns XAP package types. This filter is only supported on Windows Mobile.
+  - All - returns all package types.
 
-    If no value is specified, the combination of Main, Bundle, and Framework are returned.
+  If no value is specified, the combination of Main, Bundle, and Framework are returned.
 
--   PackageFamilyName - specifies the name of a particular package. If you specify this parameter, it returns the Package Family name if the package contains this value.
+- PackageFamilyName - specifies the name of a particular package. If you specify this parameter, it returns the Package Family name if the package contains this value.
 
-    If you don't specify this value, then all packages are returned.
+  If you don't specify this value, then all packages are returned.
 
--   Publisher - specifies the publisher of a particular package. If you specify this parameter, it returns the publisher if the value exists in the Publisher field.
+- Publisher - specifies the publisher of a particular package. If you specify this parameter, it returns the publisher if the value exists in the Publisher field.
 
-    If you don't specify this value, then all publishers are returned.
+  If you don't specify this value, then all publishers are returned.
 <!-- Device-AppManagement-AppInventoryQuery-Editable-End -->
 
 <!-- Device-AppManagement-AppInventoryQuery-DFProperties-Begin -->
@@ -1021,6 +1016,8 @@ Query parameters:
 <!-- Device-AppManagement-AppInventoryQuery-DFProperties-End -->
 
 <!-- Device-AppManagement-AppInventoryQuery-Examples-Begin -->
+**Example**:
+
 The following example sets the inventory query for the package names and checks the status for reinstallation for all main packages that are nonStore apps.
 
 ```xml
@@ -1060,7 +1057,7 @@ Returns the results for app inventory that was created after the AppInventoryQue
 <!-- Device-AppManagement-AppInventoryResults-Description-End -->
 
 <!-- Device-AppManagement-AppInventoryResults-Editable-Begin -->
-Required.
+This is a required node.
 <!-- Device-AppManagement-AppInventoryResults-Editable-End -->
 
 <!-- Device-AppManagement-AppInventoryResults-DFProperties-Begin -->
@@ -1073,6 +1070,8 @@ Required.
 <!-- Device-AppManagement-AppInventoryResults-DFProperties-End -->
 
 <!-- Device-AppManagement-AppInventoryResults-Examples-Begin -->
+**Example**:
+
 Here's an example of AppInventoryResults operation.
 
 ```xml
@@ -1109,7 +1108,7 @@ Here's an example of AppInventoryResults operation.
 <!-- Device-AppManagement-AppStore-Description-End -->
 
 <!-- Device-AppManagement-AppStore-Editable-Begin -->
-Required. Used for managing apps from the Microsoft Store.
+This is a required node. Used for managing apps from the Microsoft Store.
 <!-- Device-AppManagement-AppStore-Editable-End -->
 
 <!-- Device-AppManagement-AppStore-DFProperties-Begin -->
@@ -1148,7 +1147,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Editable-End -->
 
@@ -1163,6 +1162,8 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DFProperties-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Examples-Begin -->
+**Example**:
+
 Here's an example for uninstalling an app:
 
 ```xml
@@ -1246,7 +1247,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
 
@@ -1286,7 +1287,7 @@ Date the app was installed. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
-Required.
+This is a required node.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-DFProperties-Begin -->
@@ -1325,7 +1326,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
 
@@ -1404,7 +1405,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
 
@@ -1484,8 +1485,6 @@ This node is used to identify whether the package is a stub package. A stub pack
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
-
-Value type is int.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-DFProperties-Begin -->
@@ -1563,7 +1562,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
 
@@ -1642,9 +1641,9 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
-Required. 
+This is a required node.
 
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-End -->
 
@@ -1684,7 +1683,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
 
@@ -1724,12 +1723,12 @@ Registered users of the app and the package install state. If the query is at th
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
-Requried.
+This is a required node. Possible values:
 
-- Not Installed = 0
-- Staged = 1
-- Installed = 2
-- Paused = 6
+- 0 = Not Installed
+- 1 = Staged
+- 2 = Installed
+- 6 = Paused
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-DFProperties-Begin -->
@@ -1807,7 +1806,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
-Required.
+This is a required node.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-DFProperties-Begin -->
@@ -1857,12 +1856,12 @@ Specify whether on a AMD64 device, across an app update, the architecture of the
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
-|Applicability Setting |CSP state  |Result  |
-|---------|---------|---------|
-|True |Not configured     |X86 flavor is picked         |
-|True |Enabled    |X86 flavor is picked         |
-|True |Disabled         |X86 flavor is picked         |
-|False (not set) |Not configured         |X64 flavor is picked          |
+| Applicability Setting | CSP state      | Result               |
+|-----------------------|----------------|----------------------|
+| True                  | Not configured | X86 flavor is picked |
+| True                  | Enabled        | X86 flavor is picked |
+| True                  | Disabled       | X86 flavor is picked |
+| False (not set)       | Not configured | X64 flavor is picked |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-DFProperties-Begin -->
@@ -1932,69 +1931,69 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-AllowedValues-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Examples-Begin -->
-Add an app to the nonremovable app policy list
+**Examples**:
 
-```xml
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncBody>
-        <Add>
-            <CmdID>1</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
-                </Target>
-                <Meta>
-                    <Format xmlns="syncml:metinf">int</Format>
-                </Meta>
-                <Data>1</Data>
-            </Item>
-        </Add>
-        <Final/>
+- Add an app to the nonremovable app policy list
+
+   ```xml
+   <SyncML xmlns="SYNCML:SYNCML1.2">
+      <SyncBody>
+         <Add>
+               <CmdID>1</CmdID>
+               <Item>
+                  <Target>
+                     <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
+                  </Target>
+                  <Meta>
+                     <Format xmlns="syncml:metinf">int</Format>
+                  </Meta>
+                  <Data>1</Data>
+               </Item>
+         </Add>
+         <Final/>
+         </SyncBody>
+   </SyncML>
+   ```
+
+- Get the status for a particular app
+
+   ```xml
+   <SyncML xmlns="SYNCML:SYNCML1.2">
+      <SyncBody>
+         <Get>
+               <CmdID>1</CmdID>
+               <Item>
+                  <Target>
+                     <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
+                  </Target>
+               </Item>
+         </Get>
+         <Final/>
+        </SyncBody>
+    </SyncML>
+    ```
+
+- Replace an app in the nonremovable app policy list (Data 0 = app isn't in the app policy list; Data 1 = app is in the app policy list)
+
+   ```xml
+   <SyncML xmlns="SYNCML:SYNCML1.2">
+      <SyncBody>
+         <Replace>
+               <CmdID>1</CmdID>
+               <Item>
+                  <Target>
+                     <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
+                  </Target>
+                  <Meta>
+                     <Format xmlns="syncml:metinf">int</Format>
+                  </Meta>
+                  <Data>0</Data>
+               </Item>
+         </Replace>
+         <Final/>
       </SyncBody>
-</SyncML>
-```
-
-Get the status for a particular app
-
-```xml
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncBody>
-        <Get>
-            <CmdID>1</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
-                </Target>
-            </Item>
-        </Get>
-        <Final/>
-    </SyncBody>
-</SyncML>
-```
-
-Replace an app in the nonremovable app policy list
-Data 0 = app isn't in the app policy list
-Data 1 = app is in the app policy list
-
-```xml
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncBody>
-        <Replace>
-            <CmdID>1</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
-                </Target>
-                <Meta>
-                    <Format xmlns="syncml:metinf">int</Format>
-                </Meta>
-                <Data>0</Data>
-            </Item>
-        </Replace>
-        <Final/>
-    </SyncBody>
-</SyncML>
-```
+   </SyncML>
+   ```
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Examples-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-End -->
@@ -2295,7 +2294,7 @@ Reports the last error code returned by the update scan.
 <!-- Device-AppManagement-LastScanError-Description-End -->
 
 <!-- Device-AppManagement-LastScanError-Editable-Begin -->
-Required.
+This is a required node.
 <!-- Device-AppManagement-LastScanError-Editable-End -->
 
 <!-- Device-AppManagement-LastScanError-DFProperties-Begin -->
@@ -2372,7 +2371,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Editable-End -->
 
@@ -2387,6 +2386,8 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DFProperties-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Examples-Begin -->
+**Example**:
+
 Here's an example for uninstalling an app:
 
 ```xml
@@ -2470,7 +2471,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
 
@@ -2510,7 +2511,7 @@ Date the app was installed. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
-Required
+This is a required node.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-DFProperties-Begin -->
@@ -2549,7 +2550,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
 
@@ -2628,7 +2629,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
 
@@ -2708,8 +2709,6 @@ This node is used to identify whether the package is a stub package. A stub pack
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
-
-Value type is int.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-DFProperties-Begin -->
@@ -2787,7 +2786,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
 
@@ -2866,9 +2865,9 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
-Required. 
+This is a required node.
 
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-End -->
 
@@ -2908,7 +2907,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
 
@@ -2948,12 +2947,12 @@ Registered users of the app and the package install state. If the query is at th
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
-Requried.
+This is a required node. Possible values:
 
-- Not Installed = 0
-- Staged = 1
-- Installed = 2
-- Paused = 6
+- 0 = Not Installed
+- 1 = Staged
+- 2 = Installed
+- 6 = Paused
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-DFProperties-Begin -->
@@ -3031,7 +3030,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
-Required.
+This is a required node.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-DFProperties-Begin -->
@@ -3081,12 +3080,12 @@ Specify whether on a AMD64 device, across an app update, the architecture of the
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
-|Applicability Setting |CSP state  |Result  |
-|---------|---------|---------|
-|True |Not configured     |X86 flavor is picked         |
-|True |Enabled    |X86 flavor is picked         |
-|True |Disabled         |X86 flavor is picked         |
-|False (not set) |Not configured         |X64 flavor is picked          |
+| Applicability Setting | CSP state      | Result               |
+|-----------------------|----------------|----------------------|
+| True                  | Not configured | X86 flavor is picked |
+| True                  | Enabled        | X86 flavor is picked |
+| True                  | Disabled       | X86 flavor is picked |
+| False (not set)       | Not configured | X64 flavor is picked |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-DFProperties-Begin -->
@@ -3156,69 +3155,69 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-AllowedValues-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Examples-Begin -->
-Add an app to the nonremovable app policy list
+**Examples**:
 
-```xml
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncBody>
-        <Add>
+- Add an app to the nonremovable app policy list
+
+   ```xml
+   <SyncML xmlns="SYNCML:SYNCML1.2">
+      <SyncBody>
+         <Add>
+               <CmdID>1</CmdID>
+               <Item>
+                  <Target>
+                     <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
+                  </Target>
+                  <Meta>
+                     <Format xmlns="syncml:metinf">int</Format>
+                  </Meta>
+                  <Data>1</Data>
+               </Item>
+         </Add>
+         <Final/>
+         </SyncBody>
+   </SyncML>
+   ```
+
+- Get the status for a particular app
+
+   ```xml
+   <SyncML xmlns="SYNCML:SYNCML1.2">
+      <SyncBody>
+         <Get>
             <CmdID>1</CmdID>
             <Item>
-                <Target>
-                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
-                </Target>
-                <Meta>
-                    <Format xmlns="syncml:metinf">int</Format>
-                </Meta>
-                <Data>1</Data>
+                  <Target>
+                     <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
+                  </Target>
             </Item>
-        </Add>
-        <Final/>
+         </Get>
+         <Final/>
       </SyncBody>
-</SyncML>
-```
+   </SyncML>
+   ```
 
-Get the status for a particular app
+- Replace an app in the nonremovable app policy list (Data 0 = app isn't in the app policy list; Data 1 = app is in the app policy list)
 
-```xml
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncBody>
-        <Get>
-            <CmdID>1</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
-                </Target>
-            </Item>
-        </Get>
-        <Final/>
-    </SyncBody>
-</SyncML>
-```
-
-Replace an app in the nonremovable app policy list
-Data 0 = app isn't in the app policy list
-Data 1 = app is in the app policy list
-
-```xml
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncBody>
-        <Replace>
-            <CmdID>1</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
-                </Target>
-                <Meta>
-                    <Format xmlns="syncml:metinf">int</Format>
-                </Meta>
-                <Data>0</Data>
-            </Item>
-        </Replace>
-        <Final/>
-    </SyncBody>
-</SyncML>
-```
+   ```xml
+   <SyncML xmlns="SYNCML:SYNCML1.2">
+      <SyncBody>
+         <Replace>
+               <CmdID>1</CmdID>
+               <Item>
+                  <Target>
+                     <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
+                  </Target>
+                  <Meta>
+                     <Format xmlns="syncml:metinf">int</Format>
+                  </Meta>
+                  <Data>0</Data>
+               </Item>
+         </Replace>
+         <Final/>
+      </SyncBody>
+   </SyncML>
+   ```
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Examples-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-End -->
@@ -3595,7 +3594,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-System-{PackageFamilyName}-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- Device-AppManagement-System-{PackageFamilyName}-Editable-End -->
 
@@ -3676,7 +3675,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
 
@@ -3716,7 +3715,7 @@ Date the app was installed. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
-Required.
+This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-DFProperties-Begin -->
@@ -3755,7 +3754,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
 
@@ -3834,7 +3833,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
 
@@ -3914,8 +3913,6 @@ This node is used to identify whether the package is a stub package. A stub pack
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
-
-Value type is int.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-DFProperties-Begin -->
@@ -3993,7 +3990,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
 
@@ -4072,9 +4069,9 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
-Required. 
+This is a required node.
 
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-End -->
 
@@ -4114,7 +4111,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
 
@@ -4154,12 +4151,12 @@ Registered users of the app and the package install state. If the query is at th
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
-Requried.
+This is a required node.
 
-- Not Installed = 0
-- Staged = 1
-- Installed = 2
-- Paused = 6
+- 0 = Not Installed
+- 1 = Staged
+- 2 = Installed
+- 6 = Paused
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Editable-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-DFProperties-Begin -->
@@ -4769,7 +4766,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
-Required.
+This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-DFProperties-Begin -->
@@ -4819,12 +4816,12 @@ Specify whether on a AMD64 device, across an app update, the architecture of the
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
-|Applicability Setting |CSP state  |Result  |
-|---------|---------|---------|
-|True |Not configured     |X86 flavor is picked         |
-|True |Enabled    |X86 flavor is picked         |
-|True |Disabled         |X86 flavor is picked         |
-|False (not set) |Not configured         |X64 flavor is picked          |
+| Applicability Setting | CSP state      | Result               |
+|-----------------------|----------------|----------------------|
+| True                  | Not configured | X86 flavor is picked |
+| True                  | Enabled        | X86 flavor is picked |
+| True                  | Disabled       | X86 flavor is picked |
+| False (not set)       | Not configured | X64 flavor is picked |
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-DFProperties-Begin -->
@@ -4894,69 +4891,69 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-AllowedValues-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Examples-Begin -->
-Add an app to the nonremovable app policy list
+**Examples**:
 
-```xml
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncBody>
-        <Add>
-            <CmdID>1</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
-                </Target>
-                <Meta>
-                    <Format xmlns="syncml:metinf">int</Format>
-                </Meta>
-                <Data>1</Data>
-            </Item>
-        </Add>
-        <Final/>
+- Add an app to the nonremovable app policy list
+
+   ```xml
+   <SyncML xmlns="SYNCML:SYNCML1.2">
+      <SyncBody>
+         <Add>
+               <CmdID>1</CmdID>
+               <Item>
+                  <Target>
+                     <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
+                  </Target>
+                  <Meta>
+                     <Format xmlns="syncml:metinf">int</Format>
+                  </Meta>
+                  <Data>1</Data>
+               </Item>
+         </Add>
+         <Final/>
+         </SyncBody>
+   </SyncML>
+   ```
+
+- Get the status for a particular app
+
+   ```xml
+   <SyncML xmlns="SYNCML:SYNCML1.2">
+      <SyncBody>
+         <Get>
+               <CmdID>1</CmdID>
+               <Item>
+                  <Target>
+                     <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
+                  </Target>
+               </Item>
+         </Get>
+         <Final/>
       </SyncBody>
-</SyncML>
-```
+   </SyncML>
+   ```
 
-Get the status for a particular app
+- Replace an app in the nonremovable app policy list (Data 0 = app isn't in the app policy list; Data 1 = app is in the app policy list)
 
-```xml
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncBody>
-        <Get>
-            <CmdID>1</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
-                </Target>
-            </Item>
-        </Get>
-        <Final/>
-    </SyncBody>
-</SyncML>
-```
-
-Replace an app in the nonremovable app policy list
-Data 0 = app isn't in the app policy list
-Data 1 = app is in the app policy list
-
-```xml
-<SyncML xmlns="SYNCML:SYNCML1.2">
-    <SyncBody>
-        <Replace>
-            <CmdID>1</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
-                </Target>
-                <Meta>
-                    <Format xmlns="syncml:metinf">int</Format>
-                </Meta>
-                <Data>0</Data>
-            </Item>
-        </Replace>
-        <Final/>
-    </SyncBody>
-</SyncML>
-```
+   ```xml
+   <SyncML xmlns="SYNCML:SYNCML1.2">
+      <SyncBody>
+         <Replace>
+               <CmdID>1</CmdID>
+               <Item>
+                  <Target>
+                     <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI>
+                  </Target>
+                  <Meta>
+                     <Format xmlns="syncml:metinf">int</Format>
+                  </Meta>
+                  <Data>0</Data>
+               </Item>
+         </Replace>
+         <Final/>
+      </SyncBody>
+   </SyncML>
+   ```
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Examples-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-End -->
@@ -5256,7 +5253,7 @@ Used to start the Windows Update scan.
 <!-- Device-AppManagement-UpdateScan-Description-End -->
 
 <!-- Device-AppManagement-UpdateScan-Editable-Begin -->
-Required.
+This is a required node.
 <!-- Device-AppManagement-UpdateScan-Editable-End -->
 
 <!-- Device-AppManagement-UpdateScan-DFProperties-Begin -->
@@ -5334,7 +5331,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppInstallation-{PackageFamilyName}-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- User-AppInstallation-{PackageFamilyName}-Editable-End -->
 
@@ -5349,6 +5346,8 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppInstallation-{PackageFamilyName}-DFProperties-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-Examples-Begin -->
+**Example**:
+
 Here's an example for uninstalling an app:
 
 ```xml
@@ -5392,14 +5391,12 @@ Command to perform an install of an app package from a hosted location (this can
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-Editable-Begin -->
-Required.
-
-The following list shows the supported deployment options:
+This is a required node. The following list shows the supported deployment options:
 
 - ForceApplicationShutdown
-- DevelopmentMode 
+- DevelopmentMode
 - InstallAllResources
-- ForceTargetApplicationShutdown 
+- ForceTargetApplicationShutdown
 - ForceUpdateToAnyVersion
 - DeferRegistration="1". If the app is in use at the time of installation. This option stages the files for an app update and completes the registration of the app update after the app closes. Available in the latest insider flight of 20H1.
 - StageOnly="1". Stages the files for an app installation or update without installing the app. Available in 1803.
@@ -5444,7 +5441,7 @@ Last error relating to the app installation.
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > This element isn't present after the app is installed.
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-Editable-End -->
 
@@ -5484,7 +5481,7 @@ Description of last error relating to the app installation.
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > This element isn't present after the app is installed.
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-Editable-End -->
 
@@ -5524,7 +5521,7 @@ An integer the indicates the progress of the app installation. For https locatio
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > This element isn't present after the app is installed.
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-End -->
 
@@ -5564,7 +5561,7 @@ Status of app installation. The following values are returned: NOT_INSTALLED (0)
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > This element isn't present after the app is installed.
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Editable-End -->
 
@@ -5721,7 +5718,7 @@ License ID for a store installed app. The license ID is generally the PFN of the
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-Description-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-Editable-Begin -->
-Optional.
+This is an optional node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-Editable-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-DFProperties-Begin -->
@@ -5761,7 +5758,7 @@ Command to add license.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Description-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Editable-Begin -->
-Required.
+This is a required node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Editable-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-DFProperties-Begin -->
@@ -5800,7 +5797,7 @@ Command to get license from the store.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Description-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Editable-Begin -->
-Required.
+This is a required node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Editable-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-DFProperties-Begin -->
@@ -5995,37 +5992,33 @@ Specifies the query for app inventory.
 <!-- User-AppManagement-AppInventoryQuery-Description-End -->
 
 <!-- User-AppManagement-AppInventoryQuery-Editable-Begin -->
-Required.
+This is a required node. Query parameters:
 
-Query parameters:
+- Output - Specifies the parameters for the information returned in AppInventoryResults operation. Multiple value must be separate by |. Valid values are:
+  - PackagesName - returns the *PackageFamilyName* and *PackageFullName* of the app. Default if nothing is specified.
+  - PackageDetails - returns all inventory attributes of the package. This information includes all information from PackageNames parameter, but doesn't validate RequiresReinstall.
+  - RequiredReinstall - Validates the app status of the apps in the inventory query to determine if they require a reinstallation. This attribute may impact system performance depending on the number of apps installed. Requiring reinstall occurs when resource package updates or when the app is in a tampered state.
+- Source - specifies the app classification that aligns to the existing inventory nodes. You can use a specific filter or if no filter is specified then all sources will be returned. If no value is specified, all classifications are returned. Valid values are:
+  - AppStore - This classification is for apps that were acquired from Microsoft Store. These were apps directly installed from Microsoft Store or enterprise apps from Microsoft Store for Business.
+  - nonStore - This classification is for apps that weren't acquired from the Microsoft Store.
+  - System - Apps that are part of the OS. You can't uninstall these apps. This classification is read-only and can only be inventoried.
+- PackageTypeFilter - Specifies one or multiple types of packages you can use to query the user or device. Multiple values must be separated by `|`. Valid values are:
+  - Main - returns the main installed package.
+  - Bundle - returns installed bundle packages.
+  - Framework - returns installed framework packages.
+  - Resource - returns installed resources packages. Resources are either language, scale, or DirectX resources. They're parts of a bundle.
+  - XAP - returns XAP package types. This filter is only supported on Windows Mobile.
+  - All - returns all package types.
 
--   Output - Specifies the parameters for the information returned in AppInventoryResults operation. Multiple value must be separate by |. Valid values are:
-    -   PackagesName - returns the *PackageFamilyName* and *PackageFullName* of the app. Default if nothing is specified.
-    -   PackageDetails - returns all inventory attributes of the package. This information includes all information from PackageNames parameter, but doesn't validate RequiresReinstall.
-    -   RequiredReinstall - Validates the app status of the apps in the inventory query to determine if they require a reinstallation. This attribute may impact system performance depending on the number of apps installed. Requiring reinstall occurs when resource package updates or when the app is in a tampered state.
--   Source - specifies the app classification that aligns to the existing inventory nodes. You can use a specific filter or if no filter is specified then all sources will be returned. If no value is specified, all classifications are returned. Valid values are:
-    -   AppStore - This classification is for apps that were acquired from Microsoft Store. These were apps directly installed from Microsoft Store or enterprise apps from Microsoft Store for Business.
-    -   nonStore - This classification is for apps that weren't acquired from the Microsoft Store.
-    -   System - Apps that are part of the OS. You can't uninstall these apps. This classification is read-only and can only be inventoried.
--   PackageTypeFilter - Specifies one or multiple types of packages you can use to query the user or device. Multiple values must be separated by |. Valid values are:
+   If no value is specified, the combination of Main, Bundle, and Framework are returned.
 
-    -   Main - returns the main installed package.
-    -   Bundle - returns installed bundle packages.
-    -   Framework - returns installed framework packages.
-    -   Resource - returns installed resources packages. Resources are either language, scale, or DirectX resources. They're parts of a bundle.
-    -   XAP - returns XAP package types. This filter is only supported on Windows Mobile.
-    -   All - returns all package types.
+- PackageFamilyName - specifies the name of a particular package. If you specify this parameter, it returns the Package Family name if the package contains this value.
 
-    If no value is specified, the combination of Main, Bundle, and Framework are returned.
+  If you don't specify this value, then all packages are returned.
 
--   PackageFamilyName - specifies the name of a particular package. If you specify this parameter, it returns the Package Family name if the package contains this value.
+- Publisher - specifies the publisher of a particular package. If you specify this parameter, it returns the publisher if the value exists in the Publisher field.
 
-    If you don't specify this value, then all packages are returned.
-
--   Publisher - specifies the publisher of a particular package. If you specify this parameter, it returns the publisher if the value exists in the Publisher field.
-
-    If you don't specify this value, then all publishers are returned.
-
+  If you don't specify this value, then all publishers are returned.
 <!-- User-AppManagement-AppInventoryQuery-Editable-End -->
 
 <!-- User-AppManagement-AppInventoryQuery-DFProperties-Begin -->
@@ -6038,6 +6031,8 @@ Query parameters:
 <!-- User-AppManagement-AppInventoryQuery-DFProperties-End -->
 
 <!-- User-AppManagement-AppInventoryQuery-Examples-Begin -->
+**Example**:
+
 The following example sets the inventory query for the package names and checks the status for reinstallation for all main packages that are nonStore apps.
 
 ```xml
@@ -6077,7 +6072,7 @@ Returns the results for app inventory that was created after the AppInventoryQue
 <!-- User-AppManagement-AppInventoryResults-Description-End -->
 
 <!-- User-AppManagement-AppInventoryResults-Editable-Begin -->
-Required.
+This is a required node.
 <!-- User-AppManagement-AppInventoryResults-Editable-End -->
 
 <!-- User-AppManagement-AppInventoryResults-DFProperties-Begin -->
@@ -6090,6 +6085,8 @@ Required.
 <!-- User-AppManagement-AppInventoryResults-DFProperties-End -->
 
 <!-- User-AppManagement-AppInventoryResults-Examples-Begin -->
+**Example**:
+
 Here's an example of AppInventoryResults operation.
 
 ```xml
@@ -6126,7 +6123,7 @@ Here's an example of AppInventoryResults operation.
 <!-- User-AppManagement-AppStore-Description-End -->
 
 <!-- User-AppManagement-AppStore-Editable-Begin -->
-Required. Used for managing apps from the Microsoft Store.
+This is a required node. Used for managing apps from the Microsoft Store.
 <!-- User-AppManagement-AppStore-Editable-End -->
 
 <!-- User-AppManagement-AppStore-DFProperties-Begin -->
@@ -6165,7 +6162,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Editable-End -->
 
@@ -6180,6 +6177,8 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DFProperties-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Examples-Begin -->
+**Example**:
+
 Here's an example for uninstalling an app:
 
 ```xml
@@ -6263,7 +6262,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
 
@@ -6303,7 +6302,7 @@ Date the app was installed. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
-Required.
+This is a required node.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-DFProperties-Begin -->
@@ -6342,7 +6341,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
 
@@ -6421,7 +6420,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
 
@@ -6501,8 +6500,6 @@ This node is used to identify whether the package is a stub package. A stub pack
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
-
-Value type is int.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-DFProperties-Begin -->
@@ -6580,7 +6577,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
 
@@ -6659,9 +6656,9 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
-Required. 
+This is a required node.
 
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-End -->
 
@@ -6701,7 +6698,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
 
@@ -6741,12 +6738,12 @@ Registered users of the app and the package install state. If the query is at th
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
-Requried.
+This is a required node. Possible values:
 
-- Not Installed = 0
-- Staged = 1
-- Installed = 2
-- Paused = 6
+- 0 = Not Installed
+- 1 = Staged
+- 2 = Installed
+- 6 = Paused
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-DFProperties-Begin -->
@@ -6824,7 +6821,8 @@ Interior node for all managed app setting values.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-Editable-Begin -->
-This node is only supported in the user context.
+> [!NOTE]
+> This node is only supported in the user context.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-Editable-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-DFProperties-Begin -->
@@ -6877,37 +6875,39 @@ This setting only works for apps that support the feature and it's only supporte
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-DFProperties-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Examples-Begin -->
-The following example sets the value for the 'Server'
+**Examples**:
 
-```xml
-<!— Configure app settings -->
-<Add>
-   <CmdID>0</CmdID>
-   <Item>
-      <Target>
-         <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/AppSettingPolicy/Server</LocURI>
-      </Target>
-      <Meta>
-         <Format xmlns="syncml:metinf">chr</Format>
-      </Meta>
-      <Data>server1.contoso.com</Data>
-   </Item>
-</Add>
-```
+- The following example sets the value for the 'Server'
 
-The following example gets all managed app settings for a specific app.
+   ```xml
+   <!— Configure app settings -->
+   <Add>
+      <CmdID>0</CmdID>
+      <Item>
+         <Target>
+            <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/AppSettingPolicy/Server</LocURI>
+         </Target>
+         <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+         </Meta>
+         <Data>server1.contoso.com</Data>
+      </Item>
+   </Add>
+   ```
 
-```xml
-<!—Get app settings -->
-<Get>
-   <CmdID>0</CmdID>
-   <Item>
-      <Target>
-         <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/AppSettingPolicy?list=StructData</LocURI>
-      </Target>
-   </Item>
-</Get>
-```
+- The following example gets all managed app settings for a specific app.
+
+   ```xml
+   <!—- Get app settings -->
+   <Get>
+      <CmdID>0</CmdID>
+      <Item>
+         <Target>
+            <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/AppSettingPolicy?list=StructData</LocURI>
+         </Target>
+      </Item>
+   </Get>
+   ```
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Examples-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-End -->
@@ -6933,7 +6933,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
-Required.
+This is a required node.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-DFProperties-Begin -->
@@ -7311,7 +7311,7 @@ Reports the last error code returned by the update scan.
 <!-- User-AppManagement-LastScanError-Description-End -->
 
 <!-- User-AppManagement-LastScanError-Editable-Begin -->
-Required.
+This is a required node.
 <!-- User-AppManagement-LastScanError-Editable-End -->
 
 <!-- User-AppManagement-LastScanError-DFProperties-Begin -->
@@ -7388,7 +7388,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Editable-End -->
 
@@ -7484,7 +7484,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
 
@@ -7524,7 +7524,7 @@ Date the app was installed. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
-Required.
+This is a required node.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-DFProperties-Begin -->
@@ -7563,7 +7563,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
 
@@ -7642,7 +7642,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
 
@@ -7801,7 +7801,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
 
@@ -7880,9 +7880,9 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
-Required. 
+This is a required node.
 
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-End -->
 
@@ -7922,7 +7922,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
 
@@ -8154,7 +8154,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
-Required.
+This is a required node.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-DFProperties-Begin -->
@@ -8204,12 +8204,12 @@ Specify whether on a AMD64 device, across an app update, the architecture of the
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
-|Applicability Setting |CSP state  |Result  |
-|---------|---------|---------|
-|True |Not configured     |X86 flavor is picked         |
-|True |Enabled    |X86 flavor is picked         |
-|True |Disabled         |X86 flavor is picked         |
-|False (not set) |Not configured         |X64 flavor is picked          |
+| Applicability Setting | CSP state      | Result               |
+|-----------------------|----------------|----------------------|
+| True                  | Not configured | X86 flavor is picked |
+| True                  | Enabled        | X86 flavor is picked |
+| True                  | Disabled       | X86 flavor is picked |
+| False (not set)       | Not configured | X64 flavor is picked |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-DFProperties-Begin -->
@@ -8532,20 +8532,13 @@ Used to remove packages.
 
 <!-- User-AppManagement-RemovePackage-Editable-Begin -->
 Parameters:
-<ul>
-   <li>Package
-      <ul>
-         <li>Name: Specifies the PackageFullName of the particular package to remove.</li>
-         <li>RemoveForAllUsers:
-            <ul>
-               <li>0 (default) – Package will be unprovisioned so that new users don't receive the package. The package will remain installed for current users. This option isn't currently supported.</li>
-               <li>1 – Package will be removed for all users only if it's a provisioned package.</li>
-            </ul>
-         </li>
-      </ul>
-   </li>
-   <li>User (optional): Specifies the SID of the particular user for whom to remove the package; only the package for the specified user can be removed.</li>
-</ul><br/>
+
+- Package
+  - Name: Specifies the PackageFullName of the particular package to remove.
+  - RemoveForAllUsers:
+    - 0 (default) - Package will be un-provisioned so that new users don't receive the package. The package will remain installed for current users. This option isn't currently supported.
+    - 1 - Package will be removed for all users only if it's a provisioned package.
+- User (optional): Specifies the SID of the particular user for whom to remove the package; only the package for the specified user can be removed.
 <!-- User-AppManagement-RemovePackage-Editable-End -->
 
 <!-- User-AppManagement-RemovePackage-DFProperties-Begin -->
@@ -8558,6 +8551,8 @@ Parameters:
 <!-- User-AppManagement-RemovePackage-DFProperties-End -->
 
 <!-- User-AppManagement-RemovePackage-Examples-Begin -->
+**Example**:
+
 The following example removes a package for all users:
 
 ````XML
@@ -8676,7 +8671,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-System-{PackageFamilyName}-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- User-AppManagement-System-{PackageFamilyName}-Editable-End -->
 
@@ -8691,6 +8686,8 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-System-{PackageFamilyName}-DFProperties-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-Examples-Begin -->
+**Example**:
+
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -8772,7 +8769,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
 
@@ -8812,7 +8809,7 @@ Date the app was installed. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
-Required.
+This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-DFProperties-Begin -->
@@ -8851,7 +8848,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
 
@@ -8930,7 +8927,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
 
@@ -9010,8 +9007,6 @@ This node is used to identify whether the package is a stub package. A stub pack
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
-
-Value type is int.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-DFProperties-Begin -->
@@ -9089,7 +9084,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
 
@@ -9168,9 +9163,9 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
-Required. 
+This is a required node.
 
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-End -->
 
@@ -9210,7 +9205,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
-> [!Note]
+> [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
 
@@ -9250,12 +9245,12 @@ Registered users of the app and the package install state. If the query is at th
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
-Requried.
+This is a required node.
 
-- Not Installed = 0
-- Staged = 1
-- Installed = 2
-- Paused = 6
+- 0 = Not Installed
+- 1 = Staged
+- 2 = Installed
+- 6 = Paused
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Editable-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-DFProperties-Begin -->
@@ -9386,37 +9381,39 @@ This setting only works for apps that support the feature and it's only supporte
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-DFProperties-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Examples-Begin -->
-The following example sets the value for the 'Server'
+**Examples**:
 
-```xml
-<!— Configure app settings -->
-<Add>
-   <CmdID>0</CmdID>
-   <Item>
-      <Target>
-         <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/AppSettingPolicy/Server</LocURI>
-      </Target>
-      <Meta>
-         <Format xmlns="syncml:metinf">chr</Format>
-      </Meta>
-      <Data>server1.contoso.com</Data>
-   </Item>
-</Add>
-```
+- The following example sets the value for the 'Server'
 
-The following example gets all managed app settings for a specific app.
+   ```xml
+   <!— Configure app settings -->
+   <Add>
+      <CmdID>0</CmdID>
+      <Item>
+         <Target>
+            <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/AppSettingPolicy/Server</LocURI>
+         </Target>
+         <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+         </Meta>
+         <Data>server1.contoso.com</Data>
+      </Item>
+   </Add>
+   ```
 
-```xml
-<!—Get app settings -->
-<Get>
-   <CmdID>0</CmdID>
-   <Item>
-      <Target>
-         <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/AppSettingPolicy?list=StructData</LocURI>
-      </Target>
-   </Item>
-</Get>
-```
+- The following example gets all managed app settings for a specific app.
+
+   ```xml
+   <!—Get app settings -->
+   <Get>
+      <CmdID>0</CmdID>
+      <Item>
+         <Target>
+            <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/AppSettingPolicy?list=StructData</LocURI>
+         </Target>
+      </Item>
+   </Get>
+   ```
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Examples-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-End -->
@@ -9442,7 +9439,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
-Required.
+This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-DFProperties-Begin -->
@@ -9492,12 +9489,12 @@ Specify whether on a AMD64 device, across an app update, the architecture of the
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
-|Applicability Setting |CSP state  |Result  |
-|---------|---------|---------|
-|True |Not configured     |X86 flavor is picked         |
-|True |Enabled    |X86 flavor is picked         |
-|True |Disabled         |X86 flavor is picked         |
-|False (not set) |Not configured         |X64 flavor is picked          |
+| Applicability Setting | CSP state      | Result               |
+|-----------------------|----------------|----------------------|
+| True                  | Not configured | X86 flavor is picked |
+| True                  | Enabled        | X86 flavor is picked |
+| True                  | Disabled       | X86 flavor is picked |
+| False (not set)       | Not configured | X64 flavor is picked |
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-DFProperties-Begin -->
@@ -9819,7 +9816,7 @@ Used to start the Windows Update scan.
 <!-- User-AppManagement-UpdateScan-Description-End -->
 
 <!-- User-AppManagement-UpdateScan-Editable-Begin -->
-Required.
+This is a required node.
 <!-- User-AppManagement-UpdateScan-Editable-End -->
 
 <!-- User-AppManagement-UpdateScan-DFProperties-Begin -->
@@ -9838,6 +9835,42 @@ Required.
 <!-- User-AppManagement-UpdateScan-End -->
 
 <!-- EnterpriseModernAppManagement-CspMoreInfo-Begin -->
+
+## EnterpriseModernAppManagement XSD
+
+Here is the XSD for the application parameters.
+
+```xml
+<?xml version="1.0" encoding="utf-16"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Data">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="1" name="Application">
+                    <xs:complexType mixed="true">
+                        <xs:sequence minOccurs="0">
+                            <xs:element name="Dependencies">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" name="Dependency">
+                                            <xs:complexType>
+                                                <xs:attribute name="PackageUri" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="DeploymentOptions" type="xs:unsignedByte" use="optional" />
+                        <xs:attribute name="PackageUri" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+```
+
 ## Examples
 
 For examples of how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](../enterprise-app-management.md).
