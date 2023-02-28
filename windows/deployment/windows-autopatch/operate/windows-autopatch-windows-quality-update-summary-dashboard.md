@@ -1,6 +1,6 @@
 ---
 title: Summary dashboard
-description: Provides a summary view of the current update status for all devices enrolled into Windows Autopatch. 
+description: Provides a summary view of the current update status for all devices enrolled into Windows Autopatch.
 ms.date: 12/01/2022
 ms.prod: windows-client
 ms.technology: itpro-updates
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: adnich
+ms.reviewer: adnich
 ---
 
 # Summary dashboard
@@ -18,7 +18,7 @@ The Summary dashboard provides a summary view of the current update status for a
 
 **To view the current update status for all your enrolled devices:**
 
-1. Sign into the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign into the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Navigate to **Reports** > **Windows Autopatch** > **Windows Quality Updates**.
 
 :::image type="content" source="../media/windows-autopatch-summary-dashboard.png" alt-text="Summary dashboard" lightbox="../media/windows-autopatch-summary-dashboard.png":::

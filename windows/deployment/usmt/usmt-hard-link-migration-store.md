@@ -1,7 +1,6 @@
 ---
 title: Hard-Link Migration Store (Windows 10)
 description: Use of a hard-link migration store for a computer-refresh scenario drastically improves migration performance and significantly reduces hard-disk utilization.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

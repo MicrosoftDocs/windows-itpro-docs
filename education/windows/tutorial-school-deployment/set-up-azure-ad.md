@@ -30,7 +30,7 @@ For more information, see [Create your Office 365 tenant account][M365-1]
 
 The **Microsoft 365 admin center** is the hub for all administrative consoles for the Microsoft 365 cloud. To access the <a href="https://entra.microsoft.com" target="_blank"><u>Microsoft Entra admin center</u></a>, sign in with the same global administrator account when you [created the Microsoft 365 tenant](#create-a-microsoft-365-tenant).
 
-From the Microsoft 365 admin center, you can access different administrative dashboards: Azure Active Directory, Microsoft Endpoint Manager, Intune for Education, and others:
+From the Microsoft 365 admin center, you can access different administrative dashboards: Azure Active Directory, Microsoft Intune, Intune for Education, and others:
 
 :::image type="content" source="./images/m365-admin-center.png" alt-text="*All admin centers* page in *Microsoft 365 admin center*" lightbox="./images/m365-admin-center.png" border="true":::
 

@@ -1,15 +1,13 @@
 ---
 title: What's new in Windows 10 Enterprise LTSC 2021
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: mstewart
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2021.
 ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: low
+author: mestew
+ms.localizationpriority: high
 ms.topic: article
-ms.collection: 
-  - highpri
+ms.collection: highpri, tier1
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
 ---
@@ -165,7 +163,7 @@ Windows Hello enhancements include:
 
 ### Microsoft Intune family of products
 
-Configuration Manager, Intune, Desktop Analytics, Co-Management, and the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) are now part of the [Microsoft endpoint management services](/mem/endpoint-manager-overview). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/).
+Configuration Manager, Intune, Desktop Analytics, Co-Management, and the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) are now part of the [Microsoft endpoint management services](/mem/endpoint-manager-overview). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/).
 
 ### Configuration Manager
 

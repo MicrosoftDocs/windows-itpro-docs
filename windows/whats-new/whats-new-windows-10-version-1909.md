@@ -2,9 +2,9 @@
 title: What's new in Windows 10, version 1909
 description: New and updated features in Windows 10, version 1909 (also known as the Windows 10 November 2019 Update).
 ms.prod: windows-client
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
@@ -73,7 +73,7 @@ Windows Virtual Desktop is a comprehensive desktop and app virtualization servic
 
 ### Microsoft Intune family of products
 
-Configuration Manager, Intune, Desktop Analytics, Co-Management, and the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) are now part of the [Microsoft endpoint management services](/mem/endpoint-manager-overview). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/).
+Configuration Manager, Intune, Desktop Analytics, Co-Management, and the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) are now part of the [Microsoft endpoint management services](/mem/endpoint-manager-overview). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/).
 
 ### Windows 10 Pro and Enterprise in S mode
 

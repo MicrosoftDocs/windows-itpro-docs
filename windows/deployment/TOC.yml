@@ -35,7 +35,7 @@
     - name: Plan
       items:
         - name: Plan for Windows 11
-          href: /windows/whats-new/windows-11-plan
+          href: /windows/whats-new/windows-11-plan?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: Create a deployment plan
           href: update/create-deployment-plan.md
         - name: Define readiness criteria
@@ -72,7 +72,7 @@
     - name: Prepare
       items: 
         - name: Prepare for Windows 11
-          href: /windows/whats-new/windows-11-prepare
+          href: /windows/whats-new/windows-11-prepare?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: Prepare to deploy Windows client updates
           href: update/prepare-deploy-windows.md
         - name: Evaluate and update infrastructure
@@ -334,6 +334,8 @@
           href: update/windows-update-overview.md
         - name: Servicing stack updates
           href: update/servicing-stack-updates.md
+        - name: Update CSP policies
+          href: /windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json  
         - name: Additional Windows Update settings
           href: update/waas-wu-settings.md
         - name: Delivery Optimization reference

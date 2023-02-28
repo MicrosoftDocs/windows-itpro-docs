@@ -8,8 +8,8 @@ ms.localizationpriority: medium
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.reviewer: 
 ms.topic: reference
+ms.collection: highpri, tier1
 ---
 
 # Resources for deprecated features

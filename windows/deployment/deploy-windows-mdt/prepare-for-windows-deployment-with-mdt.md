@@ -1,7 +1,6 @@
 ---
 title: Prepare for deployment with MDT (Windows 10)
 description: This article will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT).
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
@@ -9,8 +8,7 @@ ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
-ms.collection: 
-  - highpri
+ms.collection: highpri, tier2
 ms.date: 11/28/2022
 ---
 
