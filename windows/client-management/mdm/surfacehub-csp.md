@@ -4,7 +4,7 @@ description: Learn more about the SurfaceHub CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/24/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -25,74 +25,72 @@ The SurfaceHub configuration service provider (CSP) is used to configure Microso
 <!-- SurfaceHub-Editable-End -->
 
 <!-- SurfaceHub-Tree-Begin -->
-The following example shows the SurfaceHub configuration service provider in tree format.
+The following list shows the SurfaceHub configuration service provider nodes:
 
-```text
-./Vendor/MSFT/SurfaceHub
---- AutopilotSelfdeploy
------- FriendlyName
------- Password
------- UserPrincipalName
---- DeviceAccount
------- CalendarSyncEnabled
------- DomainName
------- Email
------- ErrorContext
------- ExchangeModernAuthEnabled
------- ExchangeServer
------- Password
------- PasswordRotationPeriod
------- SipAddress
------- UserName
------- UserPrincipalName
------- ValidateAndCommit
---- Dot3
------- EapUserData
------- LanProfile
---- InBoxApps
------- Connect
---------- AutoLaunch
------- SkypeForBusiness
---------- DomainName
------- Teams
---------- Configurations
------- Welcome
---------- AutoWakeScreen
---------- CurrentBackgroundPath
---------- MeetingInfoOption
------- Whiteboard
---------- SharingDisabled
---------- SignInDisabled
---------- TelemetryDisabled
------- WirelessProjection
---------- Channel
---------- Enabled
---------- PINRequired
---- MaintenanceHoursSimple
------- Hours
---------- Duration
---------- StartTime
---- Management
------- GroupName
------- GroupSid
---- MOMAgent
------- WorkspaceID
------- WorkspaceKey
---- Properties
------- AllowAutoProxyAuth
------- AllowSessionResume
------- DefaultVolume
------- DisableSigninSuggestions
------- DoNotShowMyMeetingsAndFiles
------- FriendlyName
------- ProxyServers
------- ScreenTimeout
------- SessionTimeout
------- SleepMode
------- SleepTimeout
------- SurfaceHubMeetingMode
------- VtcAppPackageId
-```
+- ./Vendor/MSFT/SurfaceHub
+  - [AutopilotSelfdeploy](#autopilotselfdeploy)
+    - [FriendlyName](#autopilotselfdeployfriendlyname)
+    - [Password](#autopilotselfdeploypassword)
+    - [UserPrincipalName](#autopilotselfdeployuserprincipalname)
+  - [DeviceAccount](#deviceaccount)
+    - [CalendarSyncEnabled](#deviceaccountcalendarsyncenabled)
+    - [DomainName](#deviceaccountdomainname)
+    - [Email](#deviceaccountemail)
+    - [ErrorContext](#deviceaccounterrorcontext)
+    - [ExchangeModernAuthEnabled](#deviceaccountexchangemodernauthenabled)
+    - [ExchangeServer](#deviceaccountexchangeserver)
+    - [Password](#deviceaccountpassword)
+    - [PasswordRotationPeriod](#deviceaccountpasswordrotationperiod)
+    - [SipAddress](#deviceaccountsipaddress)
+    - [UserName](#deviceaccountusername)
+    - [UserPrincipalName](#deviceaccountuserprincipalname)
+    - [ValidateAndCommit](#deviceaccountvalidateandcommit)
+  - [Dot3](#dot3)
+    - [EapUserData](#dot3eapuserdata)
+    - [LanProfile](#dot3lanprofile)
+  - [InBoxApps](#inboxapps)
+    - [Connect](#inboxappsconnect)
+      - [AutoLaunch](#inboxappsconnectautolaunch)
+    - [SkypeForBusiness](#inboxappsskypeforbusiness)
+      - [DomainName](#inboxappsskypeforbusinessdomainname)
+    - [Teams](#inboxappsteams)
+      - [Configurations](#inboxappsteamsconfigurations)
+    - [Welcome](#inboxappswelcome)
+      - [AutoWakeScreen](#inboxappswelcomeautowakescreen)
+      - [CurrentBackgroundPath](#inboxappswelcomecurrentbackgroundpath)
+      - [MeetingInfoOption](#inboxappswelcomemeetinginfooption)
+    - [Whiteboard](#inboxappswhiteboard)
+      - [SharingDisabled](#inboxappswhiteboardsharingdisabled)
+      - [SignInDisabled](#inboxappswhiteboardsignindisabled)
+      - [TelemetryDisabled](#inboxappswhiteboardtelemetrydisabled)
+    - [WirelessProjection](#inboxappswirelessprojection)
+      - [Channel](#inboxappswirelessprojectionchannel)
+      - [Enabled](#inboxappswirelessprojectionenabled)
+      - [PINRequired](#inboxappswirelessprojectionpinrequired)
+  - [MaintenanceHoursSimple](#maintenancehourssimple)
+    - [Hours](#maintenancehourssimplehours)
+      - [Duration](#maintenancehourssimplehoursduration)
+      - [StartTime](#maintenancehourssimplehoursstarttime)
+  - [Management](#management)
+    - [GroupName](#managementgroupname)
+    - [GroupSid](#managementgroupsid)
+  - [MOMAgent](#momagent)
+    - [WorkspaceID](#momagentworkspaceid)
+    - [WorkspaceKey](#momagentworkspacekey)
+  - [Properties](#properties)
+    - [AllowAutoProxyAuth](#propertiesallowautoproxyauth)
+    - [AllowSessionResume](#propertiesallowsessionresume)
+    - [DefaultVolume](#propertiesdefaultvolume)
+    - [DisableSigninSuggestions](#propertiesdisablesigninsuggestions)
+    - [DoNotShowMyMeetingsAndFiles](#propertiesdonotshowmymeetingsandfiles)
+    - [FriendlyName](#propertiesfriendlyname)
+    - [ProxyServers](#propertiesproxyservers)
+    - [ScreenTimeout](#propertiesscreentimeout)
+    - [SessionTimeout](#propertiessessiontimeout)
+    - [SleepMode](#propertiessleepmode)
+    - [SleepTimeout](#propertiessleeptimeout)
+    - [SurfaceHubMeetingMode](#propertiessurfacehubmeetingmode)
+    - [VtcAppPackageId](#propertiesvtcapppackageid)
 <!-- SurfaceHub-Tree-End -->
 
 <!-- Device-AutopilotSelfdeploy-Begin -->
@@ -1148,7 +1146,7 @@ Node for the Skype for Business settings.
 
 <!-- Device-InBoxApps-SkypeForBusiness-DomainName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the domain of the Skype for Business account when you are using Active Directory. For more information, see <https://docs.microsoft.com/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online?redirectSourcePath=%252fen-us%252farticle%252fSet-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e#bkmk_users>
+Specifies the domain of the Skype for Business account when you are using Active Directory. For more information, see [Set up your domain and users](/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online#3-set-up-your-domain-and-users).
 <!-- Device-InBoxApps-SkypeForBusiness-DomainName-Description-End -->
 
 <!-- Device-InBoxApps-SkypeForBusiness-DomainName-Editable-Begin -->

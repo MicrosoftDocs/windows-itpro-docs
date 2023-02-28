@@ -324,8 +324,7 @@ This node accepts a ShellLauncherConfiguration xml as input.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 In **Windows 10, version 1903**, Shell Launcher V2 was introduced to support both UWP and Win32 apps as the custom shell.
 
-- For more information on the schema, see [ShellLauncherConfiguration XSD](#shelllauncherconfiguration-xsd).
-- For more information, see [Shell Launcher](/windows/configuration/kiosk-shelllauncher).
+For more information, see [Shell Launcher](/windows/configuration/kiosk-shelllauncher).
 
 > [!IMPORTANT]
 > You can't set both ShellLauncher and KioskModeApp at the same time on the device.

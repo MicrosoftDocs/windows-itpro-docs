@@ -4,7 +4,7 @@ description: Learn more about the VPNv2 CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/27/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,214 +36,212 @@ The XSDs for all EAP methods are shipped in the box and can be found at the foll
 <!-- VPNv2-Editable-End -->
 
 <!-- VPNv2-Tree-Begin -->
-The following example shows the VPNv2 configuration service provider in tree format.
+The following list shows the VPNv2 configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/VPNv2
---- {ProfileName}
------- AlwaysOn
------- AlwaysOnActive
------- APNBinding
---------- AccessPointName
---------- AuthenticationType
---------- IsCompressionEnabled
---------- Password
---------- ProviderId
---------- UserName
------- AppTriggerList
---------- {appTriggerRowId}
------------- App
---------------- Id
---------------- Type
------- ByPassForLocal
------- DataEncryption
------- DeviceCompliance
---------- Enabled
---------- Sso
------------- Eku
------------- Enabled
------------- IssuerHash
------- DeviceTunnel
------- DisableAdvancedOptionsEditButton
------- DisableDisconnectButton
------- DisableIKEv2Fragmentation
------- DnsSuffix
------- DomainNameInformationList
---------- {dniRowId}
------------- AutoTrigger
------------- DnsServers
------------- DomainName
------------- DomainNameType
------------- Persistent
------------- WebProxyServers
------- EdpModeId
------- IPv4InterfaceMetric
------- IPv6InterfaceMetric
------- NativeProfile
---------- Authentication
------------- Certificate
---------------- Eku
---------------- Issuer
------------- Eap
---------------- Configuration
---------------- Type
------------- MachineMethod
------------- UserMethod
---------- CryptographySuite
------------- AuthenticationTransformConstants
------------- CipherTransformConstants
------------- DHGroup
------------- EncryptionMethod
------------- IntegrityCheckMethod
------------- PfsGroup
---------- DisableClassBasedDefaultRoute
---------- L2tpPsk
---------- NativeProtocolType
---------- PlumbIKEv2TSAsRoutes
---------- ProtocolList
------------- NativeProtocolList
---------------- {NativeProtocolRowId}
------------------- Type
------------- RetryTimeInHours
---------- RoutingPolicyType
---------- Servers
------- NetworkOutageTime
------- PluginProfile
---------- CustomConfiguration
---------- PluginPackageFamilyName
---------- ServerUrlList
------- PrivateNetwork
------- ProfileXML
------- Proxy
---------- AutoConfigUrl
---------- Manual
------------- Server
------- RegisterDNS
------- RememberCredentials
------- RouteList
---------- {routeRowId}
------------- Address
------------- ExclusionRoute
------------- Metric
------------- PrefixSize
------- TrafficFilterList
---------- {trafficFilterId}
------------- App
---------------- Id
---------------- Type
------------- Claims
------------- Direction
------------- LocalAddressRanges
------------- LocalPortRanges
------------- Protocol
------------- RemoteAddressRanges
------------- RemotePortRanges
------------- RoutingPolicyType
------- TrustedNetworkDetection
------- UseRasCredentials
-./User/Vendor/MSFT/VPNv2
---- {ProfileName}
------- AlwaysOn
------- AlwaysOnActive
------- APNBinding
---------- AccessPointName
---------- AuthenticationType
---------- IsCompressionEnabled
---------- Password
---------- ProviderId
---------- UserName
------- AppTriggerList
---------- {appTriggerRowId}
------------- App
---------------- Id
---------------- Type
------- ByPassForLocal
------- DataEncryption
------- DeviceCompliance
---------- Enabled
---------- Sso
------------- Eku
------------- Enabled
------------- IssuerHash
------- DisableAdvancedOptionsEditButton
------- DisableDisconnectButton
------- DisableIKEv2Fragmentation
------- DnsSuffix
------- DomainNameInformationList
---------- {dniRowId}
------------- AutoTrigger
------------- DnsServers
------------- DomainName
------------- DomainNameType
------------- Persistent
------------- WebProxyServers
------- EdpModeId
------- IPv4InterfaceMetric
------- IPv6InterfaceMetric
------- NativeProfile
---------- Authentication
------------- Certificate
---------------- Eku
---------------- Issuer
------------- Eap
---------------- Configuration
---------------- Type
------------- MachineMethod
------------- UserMethod
---------- CryptographySuite
------------- AuthenticationTransformConstants
------------- CipherTransformConstants
------------- DHGroup
------------- EncryptionMethod
------------- IntegrityCheckMethod
------------- PfsGroup
---------- DisableClassBasedDefaultRoute
---------- L2tpPsk
---------- NativeProtocolType
---------- PlumbIKEv2TSAsRoutes
---------- ProtocolList
------------- NativeProtocolList
---------------- {NativeProtocolRowId}
------------------- Type
------------- RetryTimeInHours
---------- RoutingPolicyType
---------- Servers
------- NetworkOutageTime
------- PluginProfile
---------- CustomConfiguration
---------- PluginPackageFamilyName
---------- ServerUrlList
------- PrivateNetwork
------- ProfileXML
------- Proxy
---------- AutoConfigUrl
---------- Manual
------------- Server
------- RegisterDNS
------- RememberCredentials
------- RequireVpnClientAppUI
------- RouteList
---------- {routeRowId}
------------- Address
------------- ExclusionRoute
------------- Metric
------------- PrefixSize
------- TrafficFilterList
---------- {trafficFilterId}
------------- App
---------------- Id
---------------- Type
------------- Claims
------------- Direction
------------- LocalAddressRanges
------------- LocalPortRanges
------------- Protocol
------------- RemoteAddressRanges
------------- RemotePortRanges
------------- RoutingPolicyType
------- TrustedNetworkDetection
------- UseRasCredentials
-```
+- ./Device/Vendor/MSFT/VPNv2
+  - [{ProfileName}](#deviceprofilename)
+    - [AlwaysOn](#deviceprofilenamealwayson)
+    - [AlwaysOnActive](#deviceprofilenamealwaysonactive)
+    - [APNBinding](#deviceprofilenameapnbinding)
+      - [AccessPointName](#deviceprofilenameapnbindingaccesspointname)
+      - [AuthenticationType](#deviceprofilenameapnbindingauthenticationtype)
+      - [IsCompressionEnabled](#deviceprofilenameapnbindingiscompressionenabled)
+      - [Password](#deviceprofilenameapnbindingpassword)
+      - [ProviderId](#deviceprofilenameapnbindingproviderid)
+      - [UserName](#deviceprofilenameapnbindingusername)
+    - [AppTriggerList](#deviceprofilenameapptriggerlist)
+      - [{appTriggerRowId}](#deviceprofilenameapptriggerlistapptriggerrowid)
+        - [App](#deviceprofilenameapptriggerlistapptriggerrowidapp)
+          - [Id](#deviceprofilenameapptriggerlistapptriggerrowidappid)
+          - [Type](#deviceprofilenameapptriggerlistapptriggerrowidapptype)
+    - [ByPassForLocal](#deviceprofilenamebypassforlocal)
+    - [DataEncryption](#deviceprofilenamedataencryption)
+    - [DeviceCompliance](#deviceprofilenamedevicecompliance)
+      - [Enabled](#deviceprofilenamedevicecomplianceenabled)
+      - [Sso](#deviceprofilenamedevicecompliancesso)
+        - [Eku](#deviceprofilenamedevicecompliancessoeku)
+        - [Enabled](#deviceprofilenamedevicecompliancessoenabled)
+        - [IssuerHash](#deviceprofilenamedevicecompliancessoissuerhash)
+    - [DeviceTunnel](#deviceprofilenamedevicetunnel)
+    - [DisableAdvancedOptionsEditButton](#deviceprofilenamedisableadvancedoptionseditbutton)
+    - [DisableDisconnectButton](#deviceprofilenamedisabledisconnectbutton)
+    - [DisableIKEv2Fragmentation](#deviceprofilenamedisableikev2fragmentation)
+    - [DnsSuffix](#deviceprofilenamednssuffix)
+    - [DomainNameInformationList](#deviceprofilenamedomainnameinformationlist)
+      - [{dniRowId}](#deviceprofilenamedomainnameinformationlistdnirowid)
+        - [AutoTrigger](#deviceprofilenamedomainnameinformationlistdnirowidautotrigger)
+        - [DnsServers](#deviceprofilenamedomainnameinformationlistdnirowiddnsservers)
+        - [DomainName](#deviceprofilenamedomainnameinformationlistdnirowiddomainname)
+        - [DomainNameType](#deviceprofilenamedomainnameinformationlistdnirowiddomainnametype)
+        - [Persistent](#deviceprofilenamedomainnameinformationlistdnirowidpersistent)
+        - [WebProxyServers](#deviceprofilenamedomainnameinformationlistdnirowidwebproxyservers)
+    - [EdpModeId](#deviceprofilenameedpmodeid)
+    - [IPv4InterfaceMetric](#deviceprofilenameipv4interfacemetric)
+    - [IPv6InterfaceMetric](#deviceprofilenameipv6interfacemetric)
+    - [NativeProfile](#deviceprofilenamenativeprofile)
+      - [Authentication](#deviceprofilenamenativeprofileauthentication)
+        - [Certificate](#deviceprofilenamenativeprofileauthenticationcertificate)
+          - [Eku](#deviceprofilenamenativeprofileauthenticationcertificateeku)
+          - [Issuer](#deviceprofilenamenativeprofileauthenticationcertificateissuer)
+        - [Eap](#deviceprofilenamenativeprofileauthenticationeap)
+          - [Configuration](#deviceprofilenamenativeprofileauthenticationeapconfiguration)
+          - [Type](#deviceprofilenamenativeprofileauthenticationeaptype)
+        - [MachineMethod](#deviceprofilenamenativeprofileauthenticationmachinemethod)
+        - [UserMethod](#deviceprofilenamenativeprofileauthenticationusermethod)
+      - [CryptographySuite](#deviceprofilenamenativeprofilecryptographysuite)
+        - [AuthenticationTransformConstants](#deviceprofilenamenativeprofilecryptographysuiteauthenticationtransformconstants)
+        - [CipherTransformConstants](#deviceprofilenamenativeprofilecryptographysuiteciphertransformconstants)
+        - [DHGroup](#deviceprofilenamenativeprofilecryptographysuitedhgroup)
+        - [EncryptionMethod](#deviceprofilenamenativeprofilecryptographysuiteencryptionmethod)
+        - [IntegrityCheckMethod](#deviceprofilenamenativeprofilecryptographysuiteintegritycheckmethod)
+        - [PfsGroup](#deviceprofilenamenativeprofilecryptographysuitepfsgroup)
+      - [DisableClassBasedDefaultRoute](#deviceprofilenamenativeprofiledisableclassbaseddefaultroute)
+      - [L2tpPsk](#deviceprofilenamenativeprofilel2tppsk)
+      - [NativeProtocolType](#deviceprofilenamenativeprofilenativeprotocoltype)
+      - [PlumbIKEv2TSAsRoutes](#deviceprofilenamenativeprofileplumbikev2tsasroutes)
+      - [ProtocolList](#deviceprofilenamenativeprofileprotocollist)
+        - [NativeProtocolList](#deviceprofilenamenativeprofileprotocollistnativeprotocollist)
+          - [{NativeProtocolRowId}](#deviceprofilenamenativeprofileprotocollistnativeprotocollistnativeprotocolrowid)
+            - [Type](#deviceprofilenamenativeprofileprotocollistnativeprotocollistnativeprotocolrowidtype)
+        - [RetryTimeInHours](#deviceprofilenamenativeprofileprotocollistretrytimeinhours)
+      - [RoutingPolicyType](#deviceprofilenamenativeprofileroutingpolicytype)
+      - [Servers](#deviceprofilenamenativeprofileservers)
+    - [NetworkOutageTime](#deviceprofilenamenetworkoutagetime)
+    - [PluginProfile](#deviceprofilenamepluginprofile)
+      - [CustomConfiguration](#deviceprofilenamepluginprofilecustomconfiguration)
+      - [PluginPackageFamilyName](#deviceprofilenamepluginprofilepluginpackagefamilyname)
+      - [ServerUrlList](#deviceprofilenamepluginprofileserverurllist)
+    - [PrivateNetwork](#deviceprofilenameprivatenetwork)
+    - [ProfileXML](#deviceprofilenameprofilexml)
+    - [Proxy](#deviceprofilenameproxy)
+      - [AutoConfigUrl](#deviceprofilenameproxyautoconfigurl)
+      - [Manual](#deviceprofilenameproxymanual)
+        - [Server](#deviceprofilenameproxymanualserver)
+    - [RegisterDNS](#deviceprofilenameregisterdns)
+    - [RememberCredentials](#deviceprofilenameremembercredentials)
+    - [RouteList](#deviceprofilenameroutelist)
+      - [{routeRowId}](#deviceprofilenameroutelistrouterowid)
+        - [Address](#deviceprofilenameroutelistrouterowidaddress)
+        - [ExclusionRoute](#deviceprofilenameroutelistrouterowidexclusionroute)
+        - [Metric](#deviceprofilenameroutelistrouterowidmetric)
+        - [PrefixSize](#deviceprofilenameroutelistrouterowidprefixsize)
+    - [TrafficFilterList](#deviceprofilenametrafficfilterlist)
+      - [{trafficFilterId}](#deviceprofilenametrafficfilterlisttrafficfilterid)
+        - [App](#deviceprofilenametrafficfilterlisttrafficfilteridapp)
+          - [Id](#deviceprofilenametrafficfilterlisttrafficfilteridappid)
+          - [Type](#deviceprofilenametrafficfilterlisttrafficfilteridapptype)
+        - [Claims](#deviceprofilenametrafficfilterlisttrafficfilteridclaims)
+        - [Direction](#deviceprofilenametrafficfilterlisttrafficfilteriddirection)
+        - [LocalAddressRanges](#deviceprofilenametrafficfilterlisttrafficfilteridlocaladdressranges)
+        - [LocalPortRanges](#deviceprofilenametrafficfilterlisttrafficfilteridlocalportranges)
+        - [Protocol](#deviceprofilenametrafficfilterlisttrafficfilteridprotocol)
+        - [RemoteAddressRanges](#deviceprofilenametrafficfilterlisttrafficfilteridremoteaddressranges)
+        - [RemotePortRanges](#deviceprofilenametrafficfilterlisttrafficfilteridremoteportranges)
+        - [RoutingPolicyType](#deviceprofilenametrafficfilterlisttrafficfilteridroutingpolicytype)
+    - [TrustedNetworkDetection](#deviceprofilenametrustednetworkdetection)
+    - [UseRasCredentials](#deviceprofilenameuserascredentials)
+- ./User/Vendor/MSFT/VPNv2
+  - [{ProfileName}](#userprofilename)
+    - [AlwaysOn](#userprofilenamealwayson)
+    - [AlwaysOnActive](#userprofilenamealwaysonactive)
+    - [APNBinding](#userprofilenameapnbinding)
+      - [AccessPointName](#userprofilenameapnbindingaccesspointname)
+      - [AuthenticationType](#userprofilenameapnbindingauthenticationtype)
+      - [IsCompressionEnabled](#userprofilenameapnbindingiscompressionenabled)
+      - [Password](#userprofilenameapnbindingpassword)
+      - [ProviderId](#userprofilenameapnbindingproviderid)
+      - [UserName](#userprofilenameapnbindingusername)
+    - [AppTriggerList](#userprofilenameapptriggerlist)
+      - [{appTriggerRowId}](#userprofilenameapptriggerlistapptriggerrowid)
+        - [App](#userprofilenameapptriggerlistapptriggerrowidapp)
+          - [Id](#userprofilenameapptriggerlistapptriggerrowidappid)
+          - [Type](#userprofilenameapptriggerlistapptriggerrowidapptype)
+    - [ByPassForLocal](#userprofilenamebypassforlocal)
+    - [DataEncryption](#userprofilenamedataencryption)
+    - [DeviceCompliance](#userprofilenamedevicecompliance)
+      - [Enabled](#userprofilenamedevicecomplianceenabled)
+      - [Sso](#userprofilenamedevicecompliancesso)
+        - [Eku](#userprofilenamedevicecompliancessoeku)
+        - [Enabled](#userprofilenamedevicecompliancessoenabled)
+        - [IssuerHash](#userprofilenamedevicecompliancessoissuerhash)
+    - [DisableAdvancedOptionsEditButton](#userprofilenamedisableadvancedoptionseditbutton)
+    - [DisableDisconnectButton](#userprofilenamedisabledisconnectbutton)
+    - [DisableIKEv2Fragmentation](#userprofilenamedisableikev2fragmentation)
+    - [DnsSuffix](#userprofilenamednssuffix)
+    - [DomainNameInformationList](#userprofilenamedomainnameinformationlist)
+      - [{dniRowId}](#userprofilenamedomainnameinformationlistdnirowid)
+        - [AutoTrigger](#userprofilenamedomainnameinformationlistdnirowidautotrigger)
+        - [DnsServers](#userprofilenamedomainnameinformationlistdnirowiddnsservers)
+        - [DomainName](#userprofilenamedomainnameinformationlistdnirowiddomainname)
+        - [DomainNameType](#userprofilenamedomainnameinformationlistdnirowiddomainnametype)
+        - [Persistent](#userprofilenamedomainnameinformationlistdnirowidpersistent)
+        - [WebProxyServers](#userprofilenamedomainnameinformationlistdnirowidwebproxyservers)
+    - [EdpModeId](#userprofilenameedpmodeid)
+    - [IPv4InterfaceMetric](#userprofilenameipv4interfacemetric)
+    - [IPv6InterfaceMetric](#userprofilenameipv6interfacemetric)
+    - [NativeProfile](#userprofilenamenativeprofile)
+      - [Authentication](#userprofilenamenativeprofileauthentication)
+        - [Certificate](#userprofilenamenativeprofileauthenticationcertificate)
+          - [Eku](#userprofilenamenativeprofileauthenticationcertificateeku)
+          - [Issuer](#userprofilenamenativeprofileauthenticationcertificateissuer)
+        - [Eap](#userprofilenamenativeprofileauthenticationeap)
+          - [Configuration](#userprofilenamenativeprofileauthenticationeapconfiguration)
+          - [Type](#userprofilenamenativeprofileauthenticationeaptype)
+        - [MachineMethod](#userprofilenamenativeprofileauthenticationmachinemethod)
+        - [UserMethod](#userprofilenamenativeprofileauthenticationusermethod)
+      - [CryptographySuite](#userprofilenamenativeprofilecryptographysuite)
+        - [AuthenticationTransformConstants](#userprofilenamenativeprofilecryptographysuiteauthenticationtransformconstants)
+        - [CipherTransformConstants](#userprofilenamenativeprofilecryptographysuiteciphertransformconstants)
+        - [DHGroup](#userprofilenamenativeprofilecryptographysuitedhgroup)
+        - [EncryptionMethod](#userprofilenamenativeprofilecryptographysuiteencryptionmethod)
+        - [IntegrityCheckMethod](#userprofilenamenativeprofilecryptographysuiteintegritycheckmethod)
+        - [PfsGroup](#userprofilenamenativeprofilecryptographysuitepfsgroup)
+      - [DisableClassBasedDefaultRoute](#userprofilenamenativeprofiledisableclassbaseddefaultroute)
+      - [L2tpPsk](#userprofilenamenativeprofilel2tppsk)
+      - [NativeProtocolType](#userprofilenamenativeprofilenativeprotocoltype)
+      - [PlumbIKEv2TSAsRoutes](#userprofilenamenativeprofileplumbikev2tsasroutes)
+      - [ProtocolList](#userprofilenamenativeprofileprotocollist)
+        - [NativeProtocolList](#userprofilenamenativeprofileprotocollistnativeprotocollist)
+          - [{NativeProtocolRowId}](#userprofilenamenativeprofileprotocollistnativeprotocollistnativeprotocolrowid)
+            - [Type](#userprofilenamenativeprofileprotocollistnativeprotocollistnativeprotocolrowidtype)
+        - [RetryTimeInHours](#userprofilenamenativeprofileprotocollistretrytimeinhours)
+      - [RoutingPolicyType](#userprofilenamenativeprofileroutingpolicytype)
+      - [Servers](#userprofilenamenativeprofileservers)
+    - [NetworkOutageTime](#userprofilenamenetworkoutagetime)
+    - [PluginProfile](#userprofilenamepluginprofile)
+      - [CustomConfiguration](#userprofilenamepluginprofilecustomconfiguration)
+      - [PluginPackageFamilyName](#userprofilenamepluginprofilepluginpackagefamilyname)
+      - [ServerUrlList](#userprofilenamepluginprofileserverurllist)
+    - [PrivateNetwork](#userprofilenameprivatenetwork)
+    - [ProfileXML](#userprofilenameprofilexml)
+    - [Proxy](#userprofilenameproxy)
+      - [AutoConfigUrl](#userprofilenameproxyautoconfigurl)
+      - [Manual](#userprofilenameproxymanual)
+        - [Server](#userprofilenameproxymanualserver)
+    - [RegisterDNS](#userprofilenameregisterdns)
+    - [RememberCredentials](#userprofilenameremembercredentials)
+    - [RequireVpnClientAppUI](#userprofilenamerequirevpnclientappui)
+    - [RouteList](#userprofilenameroutelist)
+      - [{routeRowId}](#userprofilenameroutelistrouterowid)
+        - [Address](#userprofilenameroutelistrouterowidaddress)
+        - [ExclusionRoute](#userprofilenameroutelistrouterowidexclusionroute)
+        - [Metric](#userprofilenameroutelistrouterowidmetric)
+        - [PrefixSize](#userprofilenameroutelistrouterowidprefixsize)
+    - [TrafficFilterList](#userprofilenametrafficfilterlist)
+      - [{trafficFilterId}](#userprofilenametrafficfilterlisttrafficfilterid)
+        - [App](#userprofilenametrafficfilterlisttrafficfilteridapp)
+          - [Id](#userprofilenametrafficfilterlisttrafficfilteridappid)
+          - [Type](#userprofilenametrafficfilterlisttrafficfilteridapptype)
+        - [Claims](#userprofilenametrafficfilterlisttrafficfilteridclaims)
+        - [Direction](#userprofilenametrafficfilterlisttrafficfilteriddirection)
+        - [LocalAddressRanges](#userprofilenametrafficfilterlisttrafficfilteridlocaladdressranges)
+        - [LocalPortRanges](#userprofilenametrafficfilterlisttrafficfilteridlocalportranges)
+        - [Protocol](#userprofilenametrafficfilterlisttrafficfilteridprotocol)
+        - [RemoteAddressRanges](#userprofilenametrafficfilterlisttrafficfilteridremoteaddressranges)
+        - [RemotePortRanges](#userprofilenametrafficfilterlisttrafficfilteridremoteportranges)
+        - [RoutingPolicyType](#userprofilenametrafficfilterlisttrafficfilteridroutingpolicytype)
+    - [TrustedNetworkDetection](#userprofilenametrustednetworkdetection)
+    - [UseRasCredentials](#userprofilenameuserascredentials)
 <!-- VPNv2-Tree-End -->
 
 <!-- Device-{ProfileName}-Begin -->
@@ -2142,7 +2140,7 @@ Required when the native profile specifies EAP authentication. EAP configuration
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Description-Begin -->
 <!-- Description-Source-DDF -->
-HTML encoded XML of the EAP configuration. For more information about EAP configuration XML, see <https://docs.microsoft.com/windows/client-management/mdm/eap-configuration>.
+HTML encoded XML of the EAP configuration. For more information,see [EAP configuration](eap-configuration.md).
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Description-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Editable-Begin -->
@@ -6367,7 +6365,7 @@ Required when the native profile specifies EAP authentication. EAP configuration
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Description-Begin -->
 <!-- Description-Source-DDF -->
-HTML encoded XML of the EAP configuration. For more information about EAP configuration XML, see <https://docs.microsoft.com/windows/client-management/mdm/eap-configuration>.
+HTML encoded XML of the EAP configuration. For more information,see [EAP configuration](eap-configuration.md).
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Description-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Editable-Begin -->

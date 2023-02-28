@@ -4,7 +4,7 @@ description: Learn more about the Defender CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -21,92 +21,90 @@ ms.topic: reference
 <!-- Defender-Editable-End -->
 
 <!-- Defender-Tree-Begin -->
-The following example shows the Defender configuration service provider in tree format.
+The following list shows the Defender configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/Defender
---- Configuration
------- AllowDatagramProcessingOnWinServer
------- AllowNetworkProtectionDownLevel
------- AllowNetworkProtectionOnWinServer
------- ASROnlyPerRuleExclusions
------- DataDuplicationDirectory
------- DataDuplicationLocalRetentionPeriod
------- DataDuplicationRemoteLocation
------- DefaultEnforcement
------- DeviceControl
---------- PolicyGroups
------------- {GroupId}
---------------- GroupData
---------- PolicyRules
------------- {RuleId}
---------------- RuleData
------- DeviceControlEnabled
------- DisableCpuThrottleOnIdleScans
------- DisableDnsOverTcpParsing
------- DisableDnsParsing
------- DisableFtpParsing
------- DisableGradualRelease
------- DisableHttpParsing
------- DisableInboundConnectionFiltering
------- DisableLocalAdminMerge
------- DisableNetworkProtectionPerfTelemetry
------- DisableRdpParsing
------- DisableSmtpParsing
------- DisableSshParsing
------- DisableTlsParsing
------- EnableDnsSinkhole
------- EnableFileHashComputation
------- EngineUpdatesChannel
------- HideExclusionsFromLocalAdmins
------- IntelTDTEnabled
------- MeteredConnectionUpdates
------- PassiveRemediation
------- PlatformUpdatesChannel
------- RandomizeScheduleTaskTimes
------- ScanOnlyIfIdleEnabled
------- SchedulerRandomizationTime
------- SecurityIntelligenceUpdatesChannel
------- SupportLogLocation
------- TamperProtection
------- ThrottleForScheduledScanOnly
---- Detections
------- {ThreatId}
---------- Category
---------- CurrentStatus
---------- ExecutionStatus
---------- InitialDetectionTime
---------- LastThreatStatusChangeTime
---------- Name
---------- NumberOfDetections
---------- Severity
---------- URL
---- Health
------- ComputerState
------- DefenderEnabled
------- DefenderVersion
------- EngineVersion
------- FullScanOverdue
------- FullScanRequired
------- FullScanSigVersion
------- FullScanTime
------- IsVirtualMachine
------- NisEnabled
------- ProductStatus
------- QuickScanOverdue
------- QuickScanSigVersion
------- QuickScanTime
------- RebootRequired
------- RtpEnabled
------- SignatureOutOfDate
------- SignatureVersion
------- TamperProtectionEnabled
---- OfflineScan
---- RollbackEngine
---- RollbackPlatform
---- Scan
---- UpdateSignature
-```
+- ./Device/Vendor/MSFT/Defender
+  - [Configuration](#configuration)
+    - [AllowDatagramProcessingOnWinServer](#configurationallowdatagramprocessingonwinserver)
+    - [AllowNetworkProtectionDownLevel](#configurationallownetworkprotectiondownlevel)
+    - [AllowNetworkProtectionOnWinServer](#configurationallownetworkprotectiononwinserver)
+    - [ASROnlyPerRuleExclusions](#configurationasronlyperruleexclusions)
+    - [DataDuplicationDirectory](#configurationdataduplicationdirectory)
+    - [DataDuplicationLocalRetentionPeriod](#configurationdataduplicationlocalretentionperiod)
+    - [DataDuplicationRemoteLocation](#configurationdataduplicationremotelocation)
+    - [DefaultEnforcement](#configurationdefaultenforcement)
+    - [DeviceControl](#configurationdevicecontrol)
+      - [PolicyGroups](#configurationdevicecontrolpolicygroups)
+        - [{GroupId}](#configurationdevicecontrolpolicygroupsgroupid)
+          - [GroupData](#configurationdevicecontrolpolicygroupsgroupidgroupdata)
+      - [PolicyRules](#configurationdevicecontrolpolicyrules)
+        - [{RuleId}](#configurationdevicecontrolpolicyrulesruleid)
+          - [RuleData](#configurationdevicecontrolpolicyrulesruleidruledata)
+    - [DeviceControlEnabled](#configurationdevicecontrolenabled)
+    - [DisableCpuThrottleOnIdleScans](#configurationdisablecputhrottleonidlescans)
+    - [DisableDnsOverTcpParsing](#configurationdisablednsovertcpparsing)
+    - [DisableDnsParsing](#configurationdisablednsparsing)
+    - [DisableFtpParsing](#configurationdisableftpparsing)
+    - [DisableGradualRelease](#configurationdisablegradualrelease)
+    - [DisableHttpParsing](#configurationdisablehttpparsing)
+    - [DisableInboundConnectionFiltering](#configurationdisableinboundconnectionfiltering)
+    - [DisableLocalAdminMerge](#configurationdisablelocaladminmerge)
+    - [DisableNetworkProtectionPerfTelemetry](#configurationdisablenetworkprotectionperftelemetry)
+    - [DisableRdpParsing](#configurationdisablerdpparsing)
+    - [DisableSmtpParsing](#configurationdisablesmtpparsing)
+    - [DisableSshParsing](#configurationdisablesshparsing)
+    - [DisableTlsParsing](#configurationdisabletlsparsing)
+    - [EnableDnsSinkhole](#configurationenablednssinkhole)
+    - [EnableFileHashComputation](#configurationenablefilehashcomputation)
+    - [EngineUpdatesChannel](#configurationengineupdateschannel)
+    - [HideExclusionsFromLocalAdmins](#configurationhideexclusionsfromlocaladmins)
+    - [IntelTDTEnabled](#configurationinteltdtenabled)
+    - [MeteredConnectionUpdates](#configurationmeteredconnectionupdates)
+    - [PassiveRemediation](#configurationpassiveremediation)
+    - [PlatformUpdatesChannel](#configurationplatformupdateschannel)
+    - [RandomizeScheduleTaskTimes](#configurationrandomizescheduletasktimes)
+    - [ScanOnlyIfIdleEnabled](#configurationscanonlyifidleenabled)
+    - [SchedulerRandomizationTime](#configurationschedulerrandomizationtime)
+    - [SecurityIntelligenceUpdatesChannel](#configurationsecurityintelligenceupdateschannel)
+    - [SupportLogLocation](#configurationsupportloglocation)
+    - [TamperProtection](#configurationtamperprotection)
+    - [ThrottleForScheduledScanOnly](#configurationthrottleforscheduledscanonly)
+  - [Detections](#detections)
+    - [{ThreatId}](#detectionsthreatid)
+      - [Category](#detectionsthreatidcategory)
+      - [CurrentStatus](#detectionsthreatidcurrentstatus)
+      - [ExecutionStatus](#detectionsthreatidexecutionstatus)
+      - [InitialDetectionTime](#detectionsthreatidinitialdetectiontime)
+      - [LastThreatStatusChangeTime](#detectionsthreatidlastthreatstatuschangetime)
+      - [Name](#detectionsthreatidname)
+      - [NumberOfDetections](#detectionsthreatidnumberofdetections)
+      - [Severity](#detectionsthreatidseverity)
+      - [URL](#detectionsthreatidurl)
+  - [Health](#health)
+    - [ComputerState](#healthcomputerstate)
+    - [DefenderEnabled](#healthdefenderenabled)
+    - [DefenderVersion](#healthdefenderversion)
+    - [EngineVersion](#healthengineversion)
+    - [FullScanOverdue](#healthfullscanoverdue)
+    - [FullScanRequired](#healthfullscanrequired)
+    - [FullScanSigVersion](#healthfullscansigversion)
+    - [FullScanTime](#healthfullscantime)
+    - [IsVirtualMachine](#healthisvirtualmachine)
+    - [NisEnabled](#healthnisenabled)
+    - [ProductStatus](#healthproductstatus)
+    - [QuickScanOverdue](#healthquickscanoverdue)
+    - [QuickScanSigVersion](#healthquickscansigversion)
+    - [QuickScanTime](#healthquickscantime)
+    - [RebootRequired](#healthrebootrequired)
+    - [RtpEnabled](#healthrtpenabled)
+    - [SignatureOutOfDate](#healthsignatureoutofdate)
+    - [SignatureVersion](#healthsignatureversion)
+    - [TamperProtectionEnabled](#healthtamperprotectionenabled)
+  - [OfflineScan](#offlinescan)
+  - [RollbackEngine](#rollbackengine)
+  - [RollbackPlatform](#rollbackplatform)
+  - [Scan](#scan)
+  - [UpdateSignature](#updatesignature)
 <!-- Defender-Tree-End -->
 
 <!-- Device-Configuration-Begin -->
@@ -633,7 +631,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-Description-Begin -->
 <!-- Description-Source-DDF -->
-Follow the instructions provided here: <https://learn.microsoft.com/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control>
+For more information, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-Description-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-Editable-Begin -->
@@ -748,7 +746,7 @@ Follow the instructions provided here: <https://learn.microsoft.com/microsoft-36
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-Description-Begin -->
 <!-- Description-Source-DDF -->
-Follow the instructions provided here: <https://learn.microsoft.com/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control>
+For more information, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-Description-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-Editable-Begin -->
@@ -1795,9 +1793,9 @@ Setting to control automatic remediation for Sense scans.
 
 | Flag | Description |
 |:--|:--|
-| 0x1 |  |
-| 0x2 |  |
-| 0x4 |  |
+| 0x1 | PASSIVE_REMEDIATION_FLAG_SENSE_AUTO_REMEDIATION: Passive Remediation Sense AutoRemediation. |
+| 0x2 | PASSIVE_REMEDIATION_FLAG_RTP_AUDIT: Passive Remediation Realtime Protection Audit. |
+| 0x4 | PASSIVE_REMEDIATION_FLAG_RTP_REMEDIATION: Passive Remediation Realtime Protection Remediation. |
 <!-- Device-Configuration-PassiveRemediation-AllowedValues-End -->
 
 <!-- Device-Configuration-PassiveRemediation-Examples-Begin -->

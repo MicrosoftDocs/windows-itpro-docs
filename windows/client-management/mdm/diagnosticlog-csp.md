@@ -4,7 +4,7 @@ description: Learn more about the DiagnosticLog CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/21/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -21,49 +21,47 @@ ms.topic: reference
 <!-- DiagnosticLog-Editable-End -->
 
 <!-- DiagnosticLog-Tree-Begin -->
-The following example shows the DiagnosticLog configuration service provider in tree format.
+The following list shows the DiagnosticLog configuration service provider nodes:
 
-```text
-./Vendor/MSFT/DiagnosticLog
---- DeviceStateData
------- MdmConfiguration
---- DiagnosticArchive
------- ArchiveDefinition
------- ArchiveResults
---- EtwLog
------- Channels
---------- {ChannelName}
------------- Export
------------- Filter
------------- State
------- Collectors
---------- {CollectorName}
------------- LogFileSizeLimitMB
------------- Providers
---------------- {ProviderGuid}
------------------- Keywords
------------------- State
------------------- TraceLevel
------------- TraceControl
------------- TraceLogFileMode
------------- TraceStatus
---- FileDownload
------- DMChannel
---------- {FileContext}
------------- BlockCount
------------- BlockData
------------- BlockIndexToRead
------------- BlockSizeKB
------------- DataBlocks
---------------- {BlockNumber}
---- Policy
------- Channels
---------- {ChannelName}
------------- ActionWhenFull
------------- Enabled
------------- MaximumFileSize
------------- SDDL
-```
+- ./Vendor/MSFT/DiagnosticLog
+  - [DeviceStateData](#devicestatedata)
+    - [MdmConfiguration](#devicestatedatamdmconfiguration)
+  - [DiagnosticArchive](#diagnosticarchive)
+    - [ArchiveDefinition](#diagnosticarchivearchivedefinition)
+    - [ArchiveResults](#diagnosticarchivearchiveresults)
+  - [EtwLog](#etwlog)
+    - [Channels](#etwlogchannels)
+      - [{ChannelName}](#etwlogchannelschannelname)
+        - [Export](#etwlogchannelschannelnameexport)
+        - [Filter](#etwlogchannelschannelnamefilter)
+        - [State](#etwlogchannelschannelnamestate)
+    - [Collectors](#etwlogcollectors)
+      - [{CollectorName}](#etwlogcollectorscollectorname)
+        - [LogFileSizeLimitMB](#etwlogcollectorscollectornamelogfilesizelimitmb)
+        - [Providers](#etwlogcollectorscollectornameproviders)
+          - [{ProviderGuid}](#etwlogcollectorscollectornameprovidersproviderguid)
+            - [Keywords](#etwlogcollectorscollectornameprovidersproviderguidkeywords)
+            - [State](#etwlogcollectorscollectornameprovidersproviderguidstate)
+            - [TraceLevel](#etwlogcollectorscollectornameprovidersproviderguidtracelevel)
+        - [TraceControl](#etwlogcollectorscollectornametracecontrol)
+        - [TraceLogFileMode](#etwlogcollectorscollectornametracelogfilemode)
+        - [TraceStatus](#etwlogcollectorscollectornametracestatus)
+  - [FileDownload](#filedownload)
+    - [DMChannel](#filedownloaddmchannel)
+      - [{FileContext}](#filedownloaddmchannelfilecontext)
+        - [BlockCount](#filedownloaddmchannelfilecontextblockcount)
+        - [BlockData](#filedownloaddmchannelfilecontextblockdata)
+        - [BlockIndexToRead](#filedownloaddmchannelfilecontextblockindextoread)
+        - [BlockSizeKB](#filedownloaddmchannelfilecontextblocksizekb)
+        - [DataBlocks](#filedownloaddmchannelfilecontextdatablocks)
+          - [{BlockNumber}](#filedownloaddmchannelfilecontextdatablocksblocknumber)
+  - [Policy](#policy)
+    - [Channels](#policychannels)
+      - [{ChannelName}](#policychannelschannelname)
+        - [ActionWhenFull](#policychannelschannelnameactionwhenfull)
+        - [Enabled](#policychannelschannelnameenabled)
+        - [MaximumFileSize](#policychannelschannelnamemaximumfilesize)
+        - [SDDL](#policychannelschannelnamesddl)
 <!-- DiagnosticLog-Tree-End -->
 
 <!-- Device-DeviceStateData-Begin -->
@@ -2659,7 +2657,7 @@ Maximum size of the channel log file in MB.
 
 <!-- Device-Policy-Channels-{ChannelName}-SDDL-Description-Begin -->
 <!-- Description-Source-DDF -->
-SDDL String controlling access to the channel. Default: <https://docs.microsoft.com/windows/desktop/WES/eventmanifestschema-channeltype-complextype>
+SDDL String controlling access to the channel. For more information, see [ChannelType Complex Type](/windows/win32/wes/eventmanifestschema-channeltype-complextype).
 <!-- Device-Policy-Channels-{ChannelName}-SDDL-Description-End -->
 
 <!-- Device-Policy-Channels-{ChannelName}-SDDL-Editable-Begin -->
