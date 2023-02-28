@@ -1,7 +1,6 @@
 ---
 title: LoadState Syntax (Windows 10)
 description: Learn about the syntax and usage of the command-line options available when you use the LoadState command.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

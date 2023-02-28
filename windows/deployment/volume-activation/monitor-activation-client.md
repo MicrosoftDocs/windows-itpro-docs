@@ -1,7 +1,6 @@
 ---
 title: Monitor activation (Windows 10)
-ms.reviewer: 
-  - nganguly
+ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
 description: Understand the most common methods to monitor the success of the activation process for a computer running Windows.

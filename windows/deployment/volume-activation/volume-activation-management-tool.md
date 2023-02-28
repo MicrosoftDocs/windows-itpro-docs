@@ -1,8 +1,7 @@
 ---
 title: VAMT technical reference
 description: The Volume Activation Management Tool (VAMT) enables network administrators to automate and centrally manage volume activation and retail activation.
-ms.reviewer: 
-  - nganguly
+ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
@@ -10,7 +9,6 @@ ms.technology: itpro-fundamentals
 author: frankroj
 ms.date: 11/07/2022
 ms.topic: overview
-ms.custom: seo-marvel-apr2020
 ---
 
 # Volume Activation Management Tool (VAMT) technical reference

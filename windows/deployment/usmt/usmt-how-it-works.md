@@ -1,7 +1,6 @@
 ---
 title: How USMT Works (Windows 10)
 description: Learn how USMT works and how it includes two tools that migrate settings and data - ScanState and LoadState.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

@@ -1,8 +1,7 @@
 ---
 title: Activate using Active Directory-based activation
 description: Learn how active directory-based activation is implemented as a role service that relies on AD DS to store activation objects.
-ms.reviewer: 
-  - nganguly
+ms.reviewer: nganguly
 manager: aaroncz
 author: frankroj
 ms.author: frankroj
@@ -11,7 +10,7 @@ ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.date: 11/07/2022
 ms.topic: how-to
-ms.collection: highpri
+ms.collection: highpri, tier2
 ---
 
 # Activate using Active Directory-based activation

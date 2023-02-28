@@ -8,8 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
-ms.collection: 
-  - highpri
+ms.collection: highpri, tier2
 ms.date: 12/31/2017
 ---
 

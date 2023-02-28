@@ -1,7 +1,6 @@
 ---
 title: Searching for Installed Compatibility Fixes with the Query Tool in Compatibility Administrator (Windows 10)
 description: You can access the Query tool from within Compatibility Administrator. The Query tool provides the same functionality as using the Search feature.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
