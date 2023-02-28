@@ -8,8 +8,7 @@ ms.date: 11/23/2022
 manager: aaroncz
 ms.localizationpriority: high
 ms.topic: article
-ms.custom: seo-marvel-apr2020
-ms.collection: highpri
+ms.collection: highpri, tier2
 ms.technology: itpro-deploy
 ---
 

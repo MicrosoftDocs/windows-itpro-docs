@@ -8,6 +8,7 @@ ms.author: amyzhou
 ms.topic: reference
 ms.technology: itpro-updates
 ms.date: 12/31/2017
+ms.collection: tier3
 ---
 
 # Enhancing cache performance

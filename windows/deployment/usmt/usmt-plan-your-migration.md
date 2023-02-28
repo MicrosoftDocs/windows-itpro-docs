@@ -1,7 +1,6 @@
 ---
 title: Plan Your Migration (Windows 10)
 description: Learn how to your plan your migration carefully so your migration can proceed smoothly and so that you reduce the risk of migration failure.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

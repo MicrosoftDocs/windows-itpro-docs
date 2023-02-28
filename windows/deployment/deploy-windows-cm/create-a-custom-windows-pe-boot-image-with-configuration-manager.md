@@ -1,14 +1,12 @@
 ---
 title: Create a custom Windows PE boot image with Configuration Manager (Windows 10)
 description: Learn how to create custom Windows Preinstallation Environment (Windows PE) boot images in Microsoft Configuration Manager.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ms.technology: itpro-deploy
 ms.date: 10/27/2022
 ---

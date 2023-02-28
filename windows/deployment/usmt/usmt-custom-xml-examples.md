@@ -1,7 +1,6 @@
 ---
 title: Custom XML Examples (Windows 10)
 description: Use custom XML examples to learn how to migrate an unsupported application, migrate files and registry keys, and migrate the My Videos folder.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

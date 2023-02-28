@@ -1,7 +1,6 @@
 ---
 title: Verify the Condition of a Compressed Migration Store (Windows 10)
 description: Use these tips and tricks to verify the condition of a compressed migration store when using User State Migration Tool (USMT).
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

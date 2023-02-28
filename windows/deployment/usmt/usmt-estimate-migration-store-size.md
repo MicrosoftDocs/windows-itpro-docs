@@ -1,7 +1,6 @@
 ---
 title: Estimate Migration Store Size (Windows 10)
 description: Estimate the disk space requirement for a migration so that you can use User State Migration Tool (USMT).
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

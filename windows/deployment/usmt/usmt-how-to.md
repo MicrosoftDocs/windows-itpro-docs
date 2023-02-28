@@ -1,7 +1,6 @@
 ---
 title: User State Migration Tool (USMT) How-to articles (Windows 10)
 description: Reference the articles in this article to learn how to use User State Migration Tool (USMT) 10.0 to perform specific tasks.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
