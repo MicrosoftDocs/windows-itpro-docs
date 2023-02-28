@@ -86,3 +86,4 @@ The features in this article are no longer being actively developed, and might b
 |IPsec Task Offload| [IPsec Task Offload](/windows-hardware/drivers/network/task-offload) versions 1 and 2 are no longer being developed and shouldn't be used. | 1703 |
 |`wusa.exe /uninstall /kb:####### /quiet`|The `wusa` tool usage to quietly uninstall an update has been deprecated. The uninstall command with `/quiet` switch fails with event ID 8 in the Setup event log. Uninstalling updates quietly could be a security risk because malicious software could quietly uninstall an update in the background without user intervention.|1507 <br /> Applies to Windows Server 2016 and Windows Server 2019.|
 
+
