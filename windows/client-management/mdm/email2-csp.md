@@ -4,7 +4,7 @@ description: Learn more about the EMAIL2 CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/21/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -28,44 +28,42 @@ The EMAIL2 configuration service provider (CSP) is used to configure Simple Mail
 <!-- EMAIL2-Editable-End -->
 
 <!-- EMAIL2-Tree-Begin -->
-The following example shows the EMAIL2 configuration service provider in tree format.
+The following list shows the EMAIL2 configuration service provider nodes:
 
-```text
-./User/Vendor/MSFT/EMAIL2
---- {Account GUID}
------- ACCOUNTICON
------- ACCOUNTTYPE
------- AUTHNAME
------- AUTHREQUIRED
------- AUTHSECRET
------- CALENDARSERVER
------- CALENDARSERVERREQUIRESSL
------- CALENDARSYNCSCHEDULE
------- CELLULARONLY
------- CONTACTSSERVER
------- CONTACTSSERVERREQUIRESSL
------- CONTACTSSYNCSCHEDULE
------- DOMAIN
------- DWNDAY
------- INSERVER
------- KEEPMAX
------- LINGER
------- NAME
------- OUTSERVER
------- REPLYADDR
------- RETRIEVE
------- SERVERDELETEACTION
------- SERVICENAME
------- SERVICETYPE
------- SMTPALTAUTHNAME
------- SMTPALTDOMAIN
------- SMTPALTENABLED
------- SMTPALTPASSWORD
------- SYNCINGCONTENTTYPES
------- TAGPROPS
---------- 8128000B
---------- 812C000B
-```
+- ./User/Vendor/MSFT/EMAIL2
+  - [{Account GUID}](#account-guid)
+    - [ACCOUNTICON](#account-guidaccounticon)
+    - [ACCOUNTTYPE](#account-guidaccounttype)
+    - [AUTHNAME](#account-guidauthname)
+    - [AUTHREQUIRED](#account-guidauthrequired)
+    - [AUTHSECRET](#account-guidauthsecret)
+    - [CALENDARSERVER](#account-guidcalendarserver)
+    - [CALENDARSERVERREQUIRESSL](#account-guidcalendarserverrequiressl)
+    - [CALENDARSYNCSCHEDULE](#account-guidcalendarsyncschedule)
+    - [CELLULARONLY](#account-guidcellularonly)
+    - [CONTACTSSERVER](#account-guidcontactsserver)
+    - [CONTACTSSERVERREQUIRESSL](#account-guidcontactsserverrequiressl)
+    - [CONTACTSSYNCSCHEDULE](#account-guidcontactssyncschedule)
+    - [DOMAIN](#account-guiddomain)
+    - [DWNDAY](#account-guiddwnday)
+    - [INSERVER](#account-guidinserver)
+    - [KEEPMAX](#account-guidkeepmax)
+    - [LINGER](#account-guidlinger)
+    - [NAME](#account-guidname)
+    - [OUTSERVER](#account-guidoutserver)
+    - [REPLYADDR](#account-guidreplyaddr)
+    - [RETRIEVE](#account-guidretrieve)
+    - [SERVERDELETEACTION](#account-guidserverdeleteaction)
+    - [SERVICENAME](#account-guidservicename)
+    - [SERVICETYPE](#account-guidservicetype)
+    - [SMTPALTAUTHNAME](#account-guidsmtpaltauthname)
+    - [SMTPALTDOMAIN](#account-guidsmtpaltdomain)
+    - [SMTPALTENABLED](#account-guidsmtpaltenabled)
+    - [SMTPALTPASSWORD](#account-guidsmtpaltpassword)
+    - [SYNCINGCONTENTTYPES](#account-guidsyncingcontenttypes)
+    - [TAGPROPS](#account-guidtagprops)
+      - [8128000B](#account-guidtagprops8128000b)
+      - [812C000B](#account-guidtagprops812c000b)
 <!-- EMAIL2-Tree-End -->
 
 <!-- User-{Account GUID}-Begin -->
@@ -261,6 +259,7 @@ Character string that specifies the name used to authorize the user to a specifi
 Character string that specifies whether the outgoing server requires authentication.
 1 for TRUE
 0 for FALSE(default).
+
 > [!NOTE]
 > If this is not specified then SMTP authentication will not be done. Also, this is different from the SMTPALTENABLED. That is to specify different set of credentials for SMTP.
 <!-- User-{Account GUID}-AUTHREQUIRED-Description-End -->

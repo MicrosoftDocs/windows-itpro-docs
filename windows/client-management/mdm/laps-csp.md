@@ -4,7 +4,7 @@ description: Learn more about the LAPS CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -31,26 +31,24 @@ The Local Administrator Password Solution (LAPS) configuration service provider 
 <!-- LAPS-Editable-End -->
 
 <!-- LAPS-Tree-Begin -->
-The following example shows the LAPS configuration service provider in tree format.
+The following list shows the LAPS configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/LAPS
---- Actions
------- ResetPassword
------- ResetPasswordStatus
---- Policies
------- ADEncryptedPasswordHistorySize
------- AdministratorAccountName
------- ADPasswordEncryptionEnabled
------- ADPasswordEncryptionPrincipal
------- BackupDirectory
------- PasswordAgeDays
------- PasswordComplexity
------- PasswordExpirationProtectionEnabled
------- PasswordLength
------- PostAuthenticationActions
------- PostAuthenticationResetDelay
-```
+- ./Device/Vendor/MSFT/LAPS
+  - [Actions](#actions)
+    - [ResetPassword](#actionsresetpassword)
+    - [ResetPasswordStatus](#actionsresetpasswordstatus)
+  - [Policies](#policies)
+    - [ADEncryptedPasswordHistorySize](#policiesadencryptedpasswordhistorysize)
+    - [AdministratorAccountName](#policiesadministratoraccountname)
+    - [ADPasswordEncryptionEnabled](#policiesadpasswordencryptionenabled)
+    - [ADPasswordEncryptionPrincipal](#policiesadpasswordencryptionprincipal)
+    - [BackupDirectory](#policiesbackupdirectory)
+    - [PasswordAgeDays](#policiespasswordagedays)
+    - [PasswordComplexity](#policiespasswordcomplexity)
+    - [PasswordExpirationProtectionEnabled](#policiespasswordexpirationprotectionenabled)
+    - [PasswordLength](#policiespasswordlength)
+    - [PostAuthenticationActions](#policiespostauthenticationactions)
+    - [PostAuthenticationResetDelay](#policiespostauthenticationresetdelay)
 <!-- LAPS-Tree-End -->
 
 <!-- Device-Actions-Begin -->
@@ -258,7 +256,7 @@ This setting has a maximum allowed value of 12 passwords.
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-12]` |
 | Default Value  | 0 |
-| Dependency [BackupDirectory] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/LAPS/Policies/BackupDirectory` <br> Dependency Allowed Value: `` <br> Dependency Allowed Value Type: `ENUM` <br>  |
+| Dependency [BackupDirectory] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/LAPS/Policies/BackupDirectory` <br> Dependency Allowed Value: `2` <br> Dependency Allowed Value Type: `ENUM` <br>  |
 <!-- Device-Policies-ADEncryptedPasswordHistorySize-DFProperties-End -->
 
 <!-- Device-Policies-ADEncryptedPasswordHistorySize-Examples-Begin -->
@@ -356,7 +354,7 @@ If not specified, this setting defaults to True.
 | Format | bool |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | True |
-| Dependency [BackupDirectory] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/LAPS/Policies/BackupDirectory` <br> Dependency Allowed Value: `` <br> Dependency Allowed Value Type: `ENUM` <br>  |
+| Dependency [BackupDirectory] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/LAPS/Policies/BackupDirectory` <br> Dependency Allowed Value: `2` <br> Dependency Allowed Value Type: `ENUM` <br>  |
 <!-- Device-Policies-ADPasswordEncryptionEnabled-DFProperties-End -->
 
 <!-- Device-Policies-ADPasswordEncryptionEnabled-AllowedValues-Begin -->
@@ -421,7 +419,7 @@ If the specified user or group account is invalid the device will fallback to us
 |:--|:--|
 | Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Dependency [BackupDirectory] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/LAPS/Policies/BackupDirectory` <br> Dependency Allowed Value: `` <br> Dependency Allowed Value Type: `ENUM` <br>  |
+| Dependency [BackupDirectory] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/LAPS/Policies/BackupDirectory` <br> Dependency Allowed Value: `2` <br> Dependency Allowed Value Type: `ENUM` <br>  |
 <!-- Device-Policies-ADPasswordEncryptionPrincipal-DFProperties-End -->
 
 <!-- Device-Policies-ADPasswordEncryptionPrincipal-Examples-Begin -->
@@ -636,7 +634,7 @@ If not specified, this setting defaults to True.
 | Format | bool |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | True |
-| Dependency [BackupDirectory] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/LAPS/Policies/BackupDirectory` <br> Dependency Allowed Value: `` <br> Dependency Allowed Value Type: `ENUM` <br>  |
+| Dependency [BackupDirectory] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/LAPS/Policies/BackupDirectory` <br> Dependency Allowed Value: `2` <br> Dependency Allowed Value Type: `ENUM` <br>  |
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-DFProperties-End -->
 
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-AllowedValues-Begin -->

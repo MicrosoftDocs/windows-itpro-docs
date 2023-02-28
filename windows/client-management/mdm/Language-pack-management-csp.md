@@ -4,7 +4,7 @@ description: Learn more about the LanguagePackManagement CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -25,24 +25,22 @@ The Language Pack Management CSP allows a way to easily add languages and relate
 <!-- LanguagePackManagement-Editable-End -->
 
 <!-- LanguagePackManagement-Tree-Begin -->
-The following example shows the LanguagePackManagement configuration service provider in tree format.
+The following list shows the LanguagePackManagement configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/LanguagePackManagement
---- Install
------- {Language ID}
---------- CopyToDeviceInternationalSettings
---------- EnableLanguageFeatureInstallations
---------- ErrorCode
---------- StartInstallation
---------- Status
---- InstalledLanguages
------- {Language ID}
---------- LanguageFeatures
---------- Providers
---- LanguageSettings
------- SystemPreferredUILanguages
-```
+- ./Device/Vendor/MSFT/LanguagePackManagement
+  - [Install](#install)
+    - [{Language ID}](#installlanguage-id)
+      - [CopyToDeviceInternationalSettings](#installlanguage-idcopytodeviceinternationalsettings)
+      - [EnableLanguageFeatureInstallations](#installlanguage-idenablelanguagefeatureinstallations)
+      - [ErrorCode](#installlanguage-iderrorcode)
+      - [StartInstallation](#installlanguage-idstartinstallation)
+      - [Status](#installlanguage-idstatus)
+  - [InstalledLanguages](#installedlanguages)
+    - [{Language ID}](#installedlanguageslanguage-id)
+      - [LanguageFeatures](#installedlanguageslanguage-idlanguagefeatures)
+      - [Providers](#installedlanguageslanguage-idproviders)
+  - [LanguageSettings](#languagesettings)
+    - [SystemPreferredUILanguages](#languagesettingssystempreferreduilanguages)
 <!-- LanguagePackManagement-Tree-End -->
 
 <!-- Device-Install-Begin -->

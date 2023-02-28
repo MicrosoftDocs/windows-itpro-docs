@@ -4,7 +4,7 @@ description: Learn more about the AppLocker CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/23/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -22,54 +22,52 @@ The AppLocker configuration service provider is used to specify which applicatio
 <!-- AppLocker-Editable-End -->
 
 <!-- AppLocker-Tree-Begin -->
-The following example shows the AppLocker configuration service provider in tree format.
+The following list shows the AppLocker configuration service provider nodes:
 
-```text
-./Vendor/MSFT/AppLocker
---- ApplicationLaunchRestrictions
------- {Grouping}
---------- CodeIntegrity
------------- Policy
---------- DLL
------------- EnforcementMode
------------- NonInteractiveProcessEnforcement
------------- Policy
---------- EXE
------------- EnforcementMode
------------- NonInteractiveProcessEnforcement
------------- Policy
---------- MSI
------------- EnforcementMode
------------- Policy
---------- Script
------------- EnforcementMode
------------- Policy
---------- StoreApps
------------- EnforcementMode
------------- Policy
---- EnterpriseDataProtection
------- {Grouping}
---------- EXE
------------- Policy
---------- StoreApps
------------- Policy
---- FamilySafety
------- {Grouping}
---------- EXE
------------- EnforcementMode
------------- Policy
---------- StoreApps
------------- EnforcementMode
------------- Policy
---- LaunchControl
------- {Grouping}
---------- EXE
------------- EnforcementMode
------------- Policy
---------- StoreApps
------------- EnforcementMode
------------- Policy
-```
+- ./Vendor/MSFT/AppLocker
+  - [ApplicationLaunchRestrictions](#applicationlaunchrestrictions)
+    - [{Grouping}](#applicationlaunchrestrictionsgrouping)
+      - [CodeIntegrity](#applicationlaunchrestrictionsgroupingcodeintegrity)
+        - [Policy](#applicationlaunchrestrictionsgroupingcodeintegritypolicy)
+      - [DLL](#applicationlaunchrestrictionsgroupingdll)
+        - [EnforcementMode](#applicationlaunchrestrictionsgroupingdllenforcementmode)
+        - [NonInteractiveProcessEnforcement](#applicationlaunchrestrictionsgroupingdllnoninteractiveprocessenforcement)
+        - [Policy](#applicationlaunchrestrictionsgroupingdllpolicy)
+      - [EXE](#applicationlaunchrestrictionsgroupingexe)
+        - [EnforcementMode](#applicationlaunchrestrictionsgroupingexeenforcementmode)
+        - [NonInteractiveProcessEnforcement](#applicationlaunchrestrictionsgroupingexenoninteractiveprocessenforcement)
+        - [Policy](#applicationlaunchrestrictionsgroupingexepolicy)
+      - [MSI](#applicationlaunchrestrictionsgroupingmsi)
+        - [EnforcementMode](#applicationlaunchrestrictionsgroupingmsienforcementmode)
+        - [Policy](#applicationlaunchrestrictionsgroupingmsipolicy)
+      - [Script](#applicationlaunchrestrictionsgroupingscript)
+        - [EnforcementMode](#applicationlaunchrestrictionsgroupingscriptenforcementmode)
+        - [Policy](#applicationlaunchrestrictionsgroupingscriptpolicy)
+      - [StoreApps](#applicationlaunchrestrictionsgroupingstoreapps)
+        - [EnforcementMode](#applicationlaunchrestrictionsgroupingstoreappsenforcementmode)
+        - [Policy](#applicationlaunchrestrictionsgroupingstoreappspolicy)
+  - [EnterpriseDataProtection](#enterprisedataprotection)
+    - [{Grouping}](#enterprisedataprotectiongrouping)
+      - [EXE](#enterprisedataprotectiongroupingexe)
+        - [Policy](#enterprisedataprotectiongroupingexepolicy)
+      - [StoreApps](#enterprisedataprotectiongroupingstoreapps)
+        - [Policy](#enterprisedataprotectiongroupingstoreappspolicy)
+  - [FamilySafety](#familysafety)
+    - [{Grouping}](#familysafetygrouping)
+      - [EXE](#familysafetygroupingexe)
+        - [EnforcementMode](#familysafetygroupingexeenforcementmode)
+        - [Policy](#familysafetygroupingexepolicy)
+      - [StoreApps](#familysafetygroupingstoreapps)
+        - [EnforcementMode](#familysafetygroupingstoreappsenforcementmode)
+        - [Policy](#familysafetygroupingstoreappspolicy)
+  - [LaunchControl](#launchcontrol)
+    - [{Grouping}](#launchcontrolgrouping)
+      - [EXE](#launchcontrolgroupingexe)
+        - [EnforcementMode](#launchcontrolgroupingexeenforcementmode)
+        - [Policy](#launchcontrolgroupingexepolicy)
+      - [StoreApps](#launchcontrolgroupingstoreapps)
+        - [EnforcementMode](#launchcontrolgroupingstoreappsenforcementmode)
+        - [Policy](#launchcontrolgroupingstoreappspolicy)
 <!-- AppLocker-Tree-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-Begin -->

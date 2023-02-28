@@ -4,7 +4,7 @@ description: Learn more about the DMAcc CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/21/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -27,46 +27,44 @@ For the DMAcc CSP, you can't use the Replace command unless the node already exi
 <!-- DMAcc-Editable-End -->
 
 <!-- DMAcc-Tree-Begin -->
-The following example shows the DMAcc configuration service provider in tree format.
+The following list shows the DMAcc configuration service provider nodes:
 
-```text
-./SyncML/DMAcc
---- {AccountUID}
------- AAuthPref
------- AppAddr
---------- {ObjectName}
------------- Addr
------------- AddrType
------------- Port
---------------- {ObjectName}
------------------- PortNbr
------- AppAuth
---------- {ObjectName}
------------- AAuthData
------------- AAuthLevel
------------- AAuthName
------------- AAuthSecret
------------- AAuthType
------- AppID
------- Ext
---------- Microsoft
------------- BackCompatRetryDisabled
------------- ConnRetryFreq
------------- CRLCheck
------------- DefaultEncoding
------------- DisableOnRoaming
------------- InitialBackOffTime
------------- InitiateSession
------------- MaxBackOffTime
------------- ProtoVer
------------- Role
------------- SSLCLIENTCERTSEARCHCRITERIA
------------- UseHwDevID
------------- UseNonceResync
------- Name
------- PrefConRef
------- ServerID
-```
+- ./SyncML/DMAcc
+  - [{AccountUID}](#accountuid)
+    - [AAuthPref](#accountuidaauthpref)
+    - [AppAddr](#accountuidappaddr)
+      - [{ObjectName}](#accountuidappaddrobjectname)
+        - [Addr](#accountuidappaddrobjectnameaddr)
+        - [AddrType](#accountuidappaddrobjectnameaddrtype)
+        - [Port](#accountuidappaddrobjectnameport)
+          - [{ObjectName}](#accountuidappaddrobjectnameportobjectname)
+            - [PortNbr](#accountuidappaddrobjectnameportobjectnameportnbr)
+    - [AppAuth](#accountuidappauth)
+      - [{ObjectName}](#accountuidappauthobjectname)
+        - [AAuthData](#accountuidappauthobjectnameaauthdata)
+        - [AAuthLevel](#accountuidappauthobjectnameaauthlevel)
+        - [AAuthName](#accountuidappauthobjectnameaauthname)
+        - [AAuthSecret](#accountuidappauthobjectnameaauthsecret)
+        - [AAuthType](#accountuidappauthobjectnameaauthtype)
+    - [AppID](#accountuidappid)
+    - [Ext](#accountuidext)
+      - [Microsoft](#accountuidextmicrosoft)
+        - [BackCompatRetryDisabled](#accountuidextmicrosoftbackcompatretrydisabled)
+        - [ConnRetryFreq](#accountuidextmicrosoftconnretryfreq)
+        - [CRLCheck](#accountuidextmicrosoftcrlcheck)
+        - [DefaultEncoding](#accountuidextmicrosoftdefaultencoding)
+        - [DisableOnRoaming](#accountuidextmicrosoftdisableonroaming)
+        - [InitialBackOffTime](#accountuidextmicrosoftinitialbackofftime)
+        - [InitiateSession](#accountuidextmicrosoftinitiatesession)
+        - [MaxBackOffTime](#accountuidextmicrosoftmaxbackofftime)
+        - [ProtoVer](#accountuidextmicrosoftprotover)
+        - [Role](#accountuidextmicrosoftrole)
+        - [SSLCLIENTCERTSEARCHCRITERIA](#accountuidextmicrosoftsslclientcertsearchcriteria)
+        - [UseHwDevID](#accountuidextmicrosoftusehwdevid)
+        - [UseNonceResync](#accountuidextmicrosoftusenonceresync)
+    - [Name](#accountuidname)
+    - [PrefConRef](#accountuidprefconref)
+    - [ServerID](#accountuidserverid)
 <!-- DMAcc-Tree-End -->
 
 <!-- Device-{AccountUID}-Begin -->
@@ -718,7 +716,7 @@ Specifies the authentication type. If AAuthLevel is CLCRED, the supported types 
 |:--|:--|
 | Format | chr (string) |
 | Access Type | Add, Get, Replace |
-| Dependency [AAuthlevelDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/DMAcc/[AccountUID]/AppAuth/[ObjectName]/AAuthLevel` <br> Dependency Allowed Value: `` <br> Dependency Allowed Value Type: `ENUM` <br>  |
+| Dependency [AAuthlevelDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/DMAcc/[AccountUID]/AppAuth/[ObjectName]/AAuthLevel` <br> Dependency Allowed Value: `SRVCRED` <br> Dependency Allowed Value Type: `ENUM` <br>  |
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthType-DFProperties-End -->
 
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthType-AllowedValues-Begin -->

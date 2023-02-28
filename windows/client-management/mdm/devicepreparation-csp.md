@@ -4,7 +4,7 @@ description: Learn more about the DevicePreparation CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -24,18 +24,16 @@ ms.topic: reference
 <!-- DevicePreparation-Editable-End -->
 
 <!-- DevicePreparation-Tree-Begin -->
-The following example shows the DevicePreparation configuration service provider in tree format.
+The following list shows the DevicePreparation configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/DevicePreparation
---- BootstrapperAgent
------- ClassID
------- ExecutionContext
------- InstallationStatusUri
---- PageEnabled
---- PageSettings
---- PageStatus
-```
+- ./Device/Vendor/MSFT/DevicePreparation
+  - [BootstrapperAgent](#bootstrapperagent)
+    - [ClassID](#bootstrapperagentclassid)
+    - [ExecutionContext](#bootstrapperagentexecutioncontext)
+    - [InstallationStatusUri](#bootstrapperagentinstallationstatusuri)
+  - [PageEnabled](#pageenabled)
+  - [PageSettings](#pagesettings)
+  - [PageStatus](#pagestatus)
 <!-- DevicePreparation-Tree-End -->
 
 <!-- Device-BootstrapperAgent-Begin -->

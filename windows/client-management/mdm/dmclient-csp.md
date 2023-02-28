@@ -4,7 +4,7 @@ description: Learn more about the DMClient CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/27/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -22,115 +22,113 @@ The DMClient configuration service provider (CSP) has more enterprise-specific m
 <!-- DMClient-Editable-End -->
 
 <!-- DMClient-Tree-Begin -->
-The following example shows the DMClient configuration service provider in tree format.
+The following list shows the DMClient configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/DMClient
---- HWDevID
---- Provider
------- {ProviderID}
---------- AADDeviceID
---------- AADResourceID
---------- AADSendDeviceToken
---------- CertRenewTimeStamp
---------- CommercialID
---------- ConfigLock
------------- Lock
------------- SecureCore
------------- UnlockDuration
---------- CustomEnrollmentCompletePage
------------- BodyText
------------- HyperlinkHref
------------- HyperlinkText
------------- Title
---------- EnableOmaDmKeepAliveMessage
---------- EnhancedAppLayerSecurity
------------- Cert0
------------- Cert1
------------- SecurityMode
------------- UseCertIfRevocationCheckOffline
---------- EnrollmentType
---------- EntDeviceName
---------- EntDMID
---------- ExchangeID
---------- FirstSyncStatus
------------- AllowCollectLogsButton
------------- BlockInStatusPage
------------- CustomErrorText
------------- ExpectedModernAppPackages
------------- ExpectedMSIAppPackages
------------- ExpectedNetworkProfiles
------------- ExpectedPFXCerts
------------- ExpectedPolicies
------------- ExpectedSCEPCerts
------------- IsSyncDone
------------- ServerHasFinishedProvisioning
------------- SkipDeviceStatusPage
------------- SkipUserStatusPage
------------- TimeOutUntilSyncFailure
------------- WasDeviceSuccessfullyProvisioned
---------- ForceAadToken
---------- HelpEmailAddress
---------- HelpPhoneNumber
---------- HelpWebsite
---------- HWDevID
---------- LinkedEnrollment
------------- Enroll
------------- EnrollStatus
------------- LastError
------------- Priority
------------- Unenroll
---------- ManagementServerAddressList
---------- ManagementServerToUpgradeTo
---------- ManagementServiceAddress
---------- MaxSyncApplicationVersion
---------- MultipleSession
------------- IntervalForScheduledRetriesForUserSession
------------- NumAllowedConcurrentUserSessionAtUserLogonSync
------------- NumAllowedConcurrentUserSessionForBackgroundSync
------------- NumberOfScheduledRetriesForUserSession
---------- NumberOfDaysAfterLostContactToUnenroll
---------- Poll
------------- AllUsersPollOnFirstLogin
------------- IntervalForFirstSetOfRetries
------------- IntervalForRemainingScheduledRetries
------------- IntervalForSecondSetOfRetries
------------- NumberOfFirstRetries
------------- NumberOfRemainingScheduledRetries
------------- NumberOfSecondRetries
------------- PollOnLogin
---------- PublisherDeviceID
---------- Push
------------- ChannelURI
------------- PFN
------------- Status
---------- Recovery
------------- AllowRecovery
------------- InitiateRecovery
------------- RecoveryStatus
---------- RequireMessageSigning
---------- SignedEntDMID
---------- SyncApplicationVersion
---------- Unenroll
---------- UPN
---- Unenroll
---- UpdateManagementServiceAddress
-./User/Vendor/MSFT/DMClient
---- Provider
------- {ProviderID}
---------- FirstSyncStatus
------------- AllowCollectLogsButton
------------- CustomErrorText
------------- ExpectedModernAppPackages
------------- ExpectedMSIAppPackages
------------- ExpectedNetworkProfiles
------------- ExpectedPFXCerts
------------- ExpectedPolicies
------------- ExpectedSCEPCerts
------------- IsSyncDone
------------- ServerHasFinishedProvisioning
------------- WasDeviceSuccessfullyProvisioned
-```
+- ./Device/Vendor/MSFT/DMClient
+  - [HWDevID](#devicehwdevid)
+  - [Provider](#deviceprovider)
+    - [{ProviderID}](#deviceproviderproviderid)
+      - [AADDeviceID](#deviceproviderprovideridaaddeviceid)
+      - [AADResourceID](#deviceproviderprovideridaadresourceid)
+      - [AADSendDeviceToken](#deviceproviderprovideridaadsenddevicetoken)
+      - [CertRenewTimeStamp](#deviceproviderprovideridcertrenewtimestamp)
+      - [CommercialID](#deviceproviderprovideridcommercialid)
+      - [ConfigLock](#deviceproviderprovideridconfiglock)
+        - [Lock](#deviceproviderprovideridconfiglocklock)
+        - [SecureCore](#deviceproviderprovideridconfiglocksecurecore)
+        - [UnlockDuration](#deviceproviderprovideridconfiglockunlockduration)
+      - [CustomEnrollmentCompletePage](#deviceproviderprovideridcustomenrollmentcompletepage)
+        - [BodyText](#deviceproviderprovideridcustomenrollmentcompletepagebodytext)
+        - [HyperlinkHref](#deviceproviderprovideridcustomenrollmentcompletepagehyperlinkhref)
+        - [HyperlinkText](#deviceproviderprovideridcustomenrollmentcompletepagehyperlinktext)
+        - [Title](#deviceproviderprovideridcustomenrollmentcompletepagetitle)
+      - [EnableOmaDmKeepAliveMessage](#deviceproviderprovideridenableomadmkeepalivemessage)
+      - [EnhancedAppLayerSecurity](#deviceproviderprovideridenhancedapplayersecurity)
+        - [Cert0](#deviceproviderprovideridenhancedapplayersecuritycert0)
+        - [Cert1](#deviceproviderprovideridenhancedapplayersecuritycert1)
+        - [SecurityMode](#deviceproviderprovideridenhancedapplayersecuritysecuritymode)
+        - [UseCertIfRevocationCheckOffline](#deviceproviderprovideridenhancedapplayersecurityusecertifrevocationcheckoffline)
+      - [EnrollmentType](#deviceproviderprovideridenrollmenttype)
+      - [EntDeviceName](#deviceproviderprovideridentdevicename)
+      - [EntDMID](#deviceproviderprovideridentdmid)
+      - [ExchangeID](#deviceproviderprovideridexchangeid)
+      - [FirstSyncStatus](#deviceproviderprovideridfirstsyncstatus)
+        - [AllowCollectLogsButton](#deviceproviderprovideridfirstsyncstatusallowcollectlogsbutton)
+        - [BlockInStatusPage](#deviceproviderprovideridfirstsyncstatusblockinstatuspage)
+        - [CustomErrorText](#deviceproviderprovideridfirstsyncstatuscustomerrortext)
+        - [ExpectedModernAppPackages](#deviceproviderprovideridfirstsyncstatusexpectedmodernapppackages)
+        - [ExpectedMSIAppPackages](#deviceproviderprovideridfirstsyncstatusexpectedmsiapppackages)
+        - [ExpectedNetworkProfiles](#deviceproviderprovideridfirstsyncstatusexpectednetworkprofiles)
+        - [ExpectedPFXCerts](#deviceproviderprovideridfirstsyncstatusexpectedpfxcerts)
+        - [ExpectedPolicies](#deviceproviderprovideridfirstsyncstatusexpectedpolicies)
+        - [ExpectedSCEPCerts](#deviceproviderprovideridfirstsyncstatusexpectedscepcerts)
+        - [IsSyncDone](#deviceproviderprovideridfirstsyncstatusissyncdone)
+        - [ServerHasFinishedProvisioning](#deviceproviderprovideridfirstsyncstatusserverhasfinishedprovisioning)
+        - [SkipDeviceStatusPage](#deviceproviderprovideridfirstsyncstatusskipdevicestatuspage)
+        - [SkipUserStatusPage](#deviceproviderprovideridfirstsyncstatusskipuserstatuspage)
+        - [TimeOutUntilSyncFailure](#deviceproviderprovideridfirstsyncstatustimeoutuntilsyncfailure)
+        - [WasDeviceSuccessfullyProvisioned](#deviceproviderprovideridfirstsyncstatuswasdevicesuccessfullyprovisioned)
+      - [ForceAadToken](#deviceproviderprovideridforceaadtoken)
+      - [HelpEmailAddress](#deviceproviderprovideridhelpemailaddress)
+      - [HelpPhoneNumber](#deviceproviderprovideridhelpphonenumber)
+      - [HelpWebsite](#deviceproviderprovideridhelpwebsite)
+      - [HWDevID](#deviceproviderprovideridhwdevid)
+      - [LinkedEnrollment](#deviceproviderprovideridlinkedenrollment)
+        - [Enroll](#deviceproviderprovideridlinkedenrollmentenroll)
+        - [EnrollStatus](#deviceproviderprovideridlinkedenrollmentenrollstatus)
+        - [LastError](#deviceproviderprovideridlinkedenrollmentlasterror)
+        - [Priority](#deviceproviderprovideridlinkedenrollmentpriority)
+        - [Unenroll](#deviceproviderprovideridlinkedenrollmentunenroll)
+      - [ManagementServerAddressList](#deviceproviderprovideridmanagementserveraddresslist)
+      - [ManagementServerToUpgradeTo](#deviceproviderprovideridmanagementservertoupgradeto)
+      - [ManagementServiceAddress](#deviceproviderprovideridmanagementserviceaddress)
+      - [MaxSyncApplicationVersion](#deviceproviderprovideridmaxsyncapplicationversion)
+      - [MultipleSession](#deviceproviderprovideridmultiplesession)
+        - [IntervalForScheduledRetriesForUserSession](#deviceproviderprovideridmultiplesessionintervalforscheduledretriesforusersession)
+        - [NumAllowedConcurrentUserSessionAtUserLogonSync](#deviceproviderprovideridmultiplesessionnumallowedconcurrentusersessionatuserlogonsync)
+        - [NumAllowedConcurrentUserSessionForBackgroundSync](#deviceproviderprovideridmultiplesessionnumallowedconcurrentusersessionforbackgroundsync)
+        - [NumberOfScheduledRetriesForUserSession](#deviceproviderprovideridmultiplesessionnumberofscheduledretriesforusersession)
+      - [NumberOfDaysAfterLostContactToUnenroll](#deviceproviderprovideridnumberofdaysafterlostcontacttounenroll)
+      - [Poll](#deviceproviderprovideridpoll)
+        - [AllUsersPollOnFirstLogin](#deviceproviderprovideridpollalluserspollonfirstlogin)
+        - [IntervalForFirstSetOfRetries](#deviceproviderprovideridpollintervalforfirstsetofretries)
+        - [IntervalForRemainingScheduledRetries](#deviceproviderprovideridpollintervalforremainingscheduledretries)
+        - [IntervalForSecondSetOfRetries](#deviceproviderprovideridpollintervalforsecondsetofretries)
+        - [NumberOfFirstRetries](#deviceproviderprovideridpollnumberoffirstretries)
+        - [NumberOfRemainingScheduledRetries](#deviceproviderprovideridpollnumberofremainingscheduledretries)
+        - [NumberOfSecondRetries](#deviceproviderprovideridpollnumberofsecondretries)
+        - [PollOnLogin](#deviceproviderprovideridpollpollonlogin)
+      - [PublisherDeviceID](#deviceproviderprovideridpublisherdeviceid)
+      - [Push](#deviceproviderprovideridpush)
+        - [ChannelURI](#deviceproviderprovideridpushchanneluri)
+        - [PFN](#deviceproviderprovideridpushpfn)
+        - [Status](#deviceproviderprovideridpushstatus)
+      - [Recovery](#deviceproviderprovideridrecovery)
+        - [AllowRecovery](#deviceproviderprovideridrecoveryallowrecovery)
+        - [InitiateRecovery](#deviceproviderprovideridrecoveryinitiaterecovery)
+        - [RecoveryStatus](#deviceproviderprovideridrecoveryrecoverystatus)
+      - [RequireMessageSigning](#deviceproviderprovideridrequiremessagesigning)
+      - [SignedEntDMID](#deviceproviderprovideridsignedentdmid)
+      - [SyncApplicationVersion](#deviceproviderprovideridsyncapplicationversion)
+      - [Unenroll](#deviceproviderprovideridunenroll)
+      - [UPN](#deviceproviderprovideridupn)
+  - [Unenroll](#deviceunenroll)
+  - [UpdateManagementServiceAddress](#deviceupdatemanagementserviceaddress)
+- ./User/Vendor/MSFT/DMClient
+  - [Provider](#userprovider)
+    - [{ProviderID}](#userproviderproviderid)
+      - [FirstSyncStatus](#userproviderprovideridfirstsyncstatus)
+        - [AllowCollectLogsButton](#userproviderprovideridfirstsyncstatusallowcollectlogsbutton)
+        - [CustomErrorText](#userproviderprovideridfirstsyncstatuscustomerrortext)
+        - [ExpectedModernAppPackages](#userproviderprovideridfirstsyncstatusexpectedmodernapppackages)
+        - [ExpectedMSIAppPackages](#userproviderprovideridfirstsyncstatusexpectedmsiapppackages)
+        - [ExpectedNetworkProfiles](#userproviderprovideridfirstsyncstatusexpectednetworkprofiles)
+        - [ExpectedPFXCerts](#userproviderprovideridfirstsyncstatusexpectedpfxcerts)
+        - [ExpectedPolicies](#userproviderprovideridfirstsyncstatusexpectedpolicies)
+        - [ExpectedSCEPCerts](#userproviderprovideridfirstsyncstatusexpectedscepcerts)
+        - [IsSyncDone](#userproviderprovideridfirstsyncstatusissyncdone)
+        - [ServerHasFinishedProvisioning](#userproviderprovideridfirstsyncstatusserverhasfinishedprovisioning)
+        - [WasDeviceSuccessfullyProvisioned](#userproviderprovideridfirstsyncstatuswasdevicesuccessfullyprovisioned)
 <!-- DMClient-Tree-End -->
 
 <!-- Device-HWDevID-Begin -->

@@ -4,7 +4,7 @@ description: Learn more about the Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -49,33 +49,31 @@ The Policy configuration service provider has the following sub-categories:
 <!-- Policy-Editable-End -->
 
 <!-- Policy-Tree-Begin -->
-The following example shows the Policy configuration service provider in tree format.
+The following list shows the Policy configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/Policy
---- Config
------- {AreaName}
---------- {PolicyName}
---- ConfigOperations
------- ADMXInstall
---------- {AppName}
------------- {SettingsType}
---------------- {AdmxFileId}
------------- Properties
---------------- {SettingsType}
------------------- {AdmxFileId}
---------------------- Version
---- Result
------- {AreaName}
---------- {PolicyName}
-./User/Vendor/MSFT/Policy
---- Config
------- {AreaName}
---------- {PolicyName}
---- Result
------- {AreaName}
---------- {PolicyName}
-```
+- ./Device/Vendor/MSFT/Policy
+  - [Config](#deviceconfig)
+    - [{AreaName}](#deviceconfigareaname)
+      - [{PolicyName}](#deviceconfigareanamepolicyname)
+  - [ConfigOperations](#deviceconfigoperations)
+    - [ADMXInstall](#deviceconfigoperationsadmxinstall)
+      - [{AppName}](#deviceconfigoperationsadmxinstallappname)
+        - [{SettingsType}](#deviceconfigoperationsadmxinstallappnamesettingstype)
+          - [{AdmxFileId}](#deviceconfigoperationsadmxinstallappnamesettingstypeadmxfileid)
+        - [Properties](#deviceconfigoperationsadmxinstallappnameproperties)
+          - [{SettingsType}](#deviceconfigoperationsadmxinstallappnamepropertiessettingstype)
+            - [{AdmxFileId}](#deviceconfigoperationsadmxinstallappnamepropertiessettingstypeadmxfileid)
+              - [Version](#deviceconfigoperationsadmxinstallappnamepropertiessettingstypeadmxfileidversion)
+  - [Result](#deviceresult)
+    - [{AreaName}](#deviceresultareaname)
+      - [{PolicyName}](#deviceresultareanamepolicyname)
+- ./User/Vendor/MSFT/Policy
+  - [Config](#userconfig)
+    - [{AreaName}](#userconfigareaname)
+      - [{PolicyName}](#userconfigareanamepolicyname)
+  - [Result](#userresult)
+    - [{AreaName}](#userresultareaname)
+      - [{PolicyName}](#userresultareanamepolicyname)
 <!-- Policy-Tree-End -->
 
 <!-- Device-Config-Begin -->

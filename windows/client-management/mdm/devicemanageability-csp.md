@@ -4,7 +4,7 @@ description: Learn more about the DeviceManageability CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -24,18 +24,16 @@ For performance reasons, DeviceManageability CSP directly reads the CSP version 
 <!-- DeviceManageability-Editable-End -->
 
 <!-- DeviceManageability-Tree-Begin -->
-The following example shows the DeviceManageability configuration service provider in tree format.
+The following list shows the DeviceManageability configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/DeviceManageability
---- Capabilities
------- CSPVersions
---- Provider
------- {ProviderID}
---------- ConfigInfo
---------- EnrollmentInfo
---------- PayloadTransfer
-```
+- ./Device/Vendor/MSFT/DeviceManageability
+  - [Capabilities](#capabilities)
+    - [CSPVersions](#capabilitiescspversions)
+  - [Provider](#provider)
+    - [{ProviderID}](#providerproviderid)
+      - [ConfigInfo](#providerprovideridconfiginfo)
+      - [EnrollmentInfo](#providerprovideridenrollmentinfo)
+      - [PayloadTransfer](#providerprovideridpayloadtransfer)
 <!-- DeviceManageability-Tree-End -->
 
 <!-- Device-Capabilities-Begin -->

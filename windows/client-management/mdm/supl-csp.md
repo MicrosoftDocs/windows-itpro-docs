@@ -4,7 +4,7 @@ description: Learn more about the SUPL CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/23/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -39,49 +39,47 @@ The SUPL or V2 UPL connection will be reconfigured every time the device is rebo
 <!-- SUPL-Editable-End -->
 
 <!-- SUPL-Tree-Begin -->
-The following example shows the SUPL configuration service provider in tree format.
+The following list shows the SUPL configuration service provider nodes:
 
-```text
-./Vendor/MSFT//SUPL
---- SUPL1
------- Addr
------- AppID
------- Ext
---------- Microsoft
------------- FullVersion
------------- HighAccPositioningMethod
------------- LocMasterSwitchDependencyNII
------------- MCCMNCPairs
------------- NIDefaultTimeout
------------- RootCertificate
---------------- Data
---------------- Name
------------- RootCertificate2
---------------- Data
---------------- Name
------------- RootCertificate3
---------------- Data
---------------- Name
------------- RootCertificate4
---------------- Data
---------------- Name
------------- RootCertificate5
---------------- Data
---------------- Name
------------- RootCertificate6
---------------- Data
---------------- Name
------------- ServerAccessInterval
------------- Version
---- V2UPL1
------- ApplicationTypeIndicator_MR
------- LocMasterSwitchDependencyNII
------- MPC
------- NIDefaultTimeout
------- PDE
------- PositioningMethod_MR
------- ServerAccessInterval
-```
+- ./Vendor/MSFT//SUPL
+  - [SUPL1](#supl1)
+    - [Addr](#supl1addr)
+    - [AppID](#supl1appid)
+    - [Ext](#supl1ext)
+      - [Microsoft](#supl1extmicrosoft)
+        - [FullVersion](#supl1extmicrosoftfullversion)
+        - [HighAccPositioningMethod](#supl1extmicrosofthighaccpositioningmethod)
+        - [LocMasterSwitchDependencyNII](#supl1extmicrosoftlocmasterswitchdependencynii)
+        - [MCCMNCPairs](#supl1extmicrosoftmccmncpairs)
+        - [NIDefaultTimeout ](#supl1extmicrosoftnidefaulttimeout-)
+        - [RootCertificate](#supl1extmicrosoftrootcertificate)
+          - [Data](#supl1extmicrosoftrootcertificatedata)
+          - [Name](#supl1extmicrosoftrootcertificatename)
+        - [RootCertificate2](#supl1extmicrosoftrootcertificate2)
+          - [Data](#supl1extmicrosoftrootcertificate2data)
+          - [Name](#supl1extmicrosoftrootcertificate2name)
+        - [RootCertificate3](#supl1extmicrosoftrootcertificate3)
+          - [Data](#supl1extmicrosoftrootcertificate3data)
+          - [Name](#supl1extmicrosoftrootcertificate3name)
+        - [RootCertificate4](#supl1extmicrosoftrootcertificate4)
+          - [Data](#supl1extmicrosoftrootcertificate4data)
+          - [Name](#supl1extmicrosoftrootcertificate4name)
+        - [RootCertificate5](#supl1extmicrosoftrootcertificate5)
+          - [Data](#supl1extmicrosoftrootcertificate5data)
+          - [Name](#supl1extmicrosoftrootcertificate5name)
+        - [RootCertificate6](#supl1extmicrosoftrootcertificate6)
+          - [Data](#supl1extmicrosoftrootcertificate6data)
+          - [Name](#supl1extmicrosoftrootcertificate6name)
+        - [ServerAccessInterval](#supl1extmicrosoftserveraccessinterval)
+        - [Version](#supl1extmicrosoftversion)
+  - [V2UPL1 ](#v2upl1-)
+    - [ApplicationTypeIndicator_MR](#v2upl1-applicationtypeindicator_mr)
+    - [LocMasterSwitchDependencyNII](#v2upl1-locmasterswitchdependencynii)
+    - [MPC](#v2upl1-mpc)
+    - [NIDefaultTimeout ](#v2upl1-nidefaulttimeout-)
+    - [PDE](#v2upl1-pde)
+    - [PositioningMethod_MR](#v2upl1-positioningmethod_mr)
+    - [ServerAccessInterval](#v2upl1-serveraccessinterval)
 <!-- SUPL-Tree-End -->
 
 <!-- Device-SUPL1-Begin -->
@@ -220,8 +218,7 @@ Required. The AppID for SUPL is automatically set to "ap0004". This is a read-on
 <!-- Device-SUPL1-Ext-OmaUri-End -->
 
 <!-- Device-SUPL1-Ext-Description-Begin -->
-<!-- Description-Source-DDF -->
-Insert Description Here.
+<!-- Description-Source-Not-Found -->
 <!-- Device-SUPL1-Ext-Description-End -->
 
 <!-- Device-SUPL1-Ext-Editable-Begin -->
@@ -259,8 +256,7 @@ Insert Description Here.
 <!-- Device-SUPL1-Ext-Microsoft-OmaUri-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-Description-Begin -->
-<!-- Description-Source-DDF -->
-Insert Description Here.
+<!-- Description-Source-Not-Found -->
 <!-- Device-SUPL1-Ext-Microsoft-Description-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-Editable-Begin -->
@@ -491,7 +487,7 @@ For OMA DM, if the format for this node is incorrect then an entry will be ignor
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -Begin -->
-##### SUPL1/Ext/Microsoft/NIDefaultTimeout
+##### SUPL1/Ext/Microsoft/NIDefaultTimeout 
 
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -501,7 +497,7 @@ For OMA DM, if the format for this node is incorrect then an entry will be ignor
 
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/SUPL1/Ext/Microsoft/NIDefaultTimeout
+./Vendor/MSFT//SUPL/SUPL1/Ext/Microsoft/NIDefaultTimeout 
 ```
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout -OmaUri-End -->
 
@@ -1314,7 +1310,7 @@ Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0
 <!-- Device-SUPL1-Ext-Microsoft-Version-End -->
 
 <!-- Device-V2UPL1 -Begin -->
-## V2UPL1
+## V2UPL1 
 
 <!-- Device-V2UPL1 -Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -1324,7 +1320,7 @@ Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0
 
 <!-- Device-V2UPL1 -OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/V2UPL1
+./Vendor/MSFT//SUPL/V2UPL1 
 ```
 <!-- Device-V2UPL1 -OmaUri-End -->
 
@@ -1480,7 +1476,7 @@ Optional. The address of the mobile positioning center (MPC), in the format ipAd
 <!-- Device-V2UPL1 -MPC-End -->
 
 <!-- Device-V2UPL1 -NIDefaultTimeout -Begin -->
-### V2UPL1 /NIDefaultTimeout
+### V2UPL1 /NIDefaultTimeout 
 
 <!-- Device-V2UPL1 -NIDefaultTimeout -Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -1490,7 +1486,7 @@ Optional. The address of the mobile positioning center (MPC), in the format ipAd
 
 <!-- Device-V2UPL1 -NIDefaultTimeout -OmaUri-Begin -->
 ```Device
-./Vendor/MSFT//SUPL/V2UPL1 /NIDefaultTimeout
+./Vendor/MSFT//SUPL/V2UPL1 /NIDefaultTimeout 
 ```
 <!-- Device-V2UPL1 -NIDefaultTimeout -OmaUri-End -->
 

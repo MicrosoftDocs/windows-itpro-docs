@@ -4,7 +4,7 @@ description: Learn more about the NetworkQoSPolicy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -41,19 +41,17 @@ The following actions are supported:
 <!-- NetworkQoSPolicy-Editable-End -->
 
 <!-- NetworkQoSPolicy-Tree-Begin -->
-The following example shows the NetworkQoSPolicy configuration service provider in tree format.
+The following list shows the NetworkQoSPolicy configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/NetworkQoSPolicy
---- {Name}
------- AppPathNameMatchCondition
------- DestinationPortMatchCondition
------- DSCPAction
------- IPProtocolMatchCondition
------- PriorityValue8021Action
------- SourcePortMatchCondition
---- Version
-```
+- ./Device/Vendor/MSFT/NetworkQoSPolicy
+  - [{Name}](#name)
+    - [AppPathNameMatchCondition](#nameapppathnamematchcondition)
+    - [DestinationPortMatchCondition](#namedestinationportmatchcondition)
+    - [DSCPAction](#namedscpaction)
+    - [IPProtocolMatchCondition](#nameipprotocolmatchcondition)
+    - [PriorityValue8021Action](#namepriorityvalue8021action)
+    - [SourcePortMatchCondition](#namesourceportmatchcondition)
+  - [Version](#version)
 <!-- NetworkQoSPolicy-Tree-End -->
 
 <!-- Device-{Name}-Begin -->

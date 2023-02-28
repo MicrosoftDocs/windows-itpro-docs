@@ -4,7 +4,7 @@ description: Learn more about the RootCATrustedCertificates CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/24/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -25,100 +25,98 @@ The RootCATrustedCertificates configuration service provider enables the enterpr
 <!-- RootCATrustedCertificates-Editable-End -->
 
 <!-- RootCATrustedCertificates-Tree-Begin -->
-The following example shows the RootCATrustedCertificates configuration service provider in tree format.
+The following list shows the RootCATrustedCertificates configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/RootCATrustedCertificates
---- CA
------- {CertHash}
---------- EncodedCertificate
---------- IssuedBy
---------- IssuedTo
---------- TemplateName
---------- ValidFrom
---------- ValidTo
---- OemEsim
------- {CertHash}
---------- EncodedCertificate
---------- IssuedBy
---------- IssuedTo
---------- TemplateName
---------- ValidFrom
---------- ValidTo
---- Root
------- {CertHash}
---------- EncodedCertificate
---------- IssuedBy
---------- IssuedTo
---------- TemplateName
---------- ValidFrom
---------- ValidTo
---- TrustedPeople
------- {CertHash}
---------- EncodedCertificate
---------- IssuedBy
---------- IssuedTo
---------- TemplateName
---------- ValidFrom
---------- ValidTo
---- TrustedPublisher
------- {CertHash}
---------- EncodedCertificate
---------- IssuedBy
---------- IssuedTo
---------- TemplateName
---------- ValidFrom
---------- ValidTo
---- UntrustedCertificates
------- {CertHash}
---------- EncodedCertificate
---------- IssuedBy
---------- IssuedTo
---------- TemplateName
---------- ValidFrom
---------- ValidTo
-./User/Vendor/MSFT/RootCATrustedCertificates
---- CA
------- {CertHash}
---------- EncodedCertificate
---------- IssuedBy
---------- IssuedTo
---------- TemplateName
---------- ValidFrom
---------- ValidTo
---- OemEsim
------- {CertHash}
---------- EncodedCertificate
---------- IssuedBy
---------- IssuedTo
---------- TemplateName
---------- ValidFrom
---------- ValidTo
---- TrustedPeople
------- {CertHash}
---------- EncodedCertificate
---------- IssuedBy
---------- IssuedTo
---------- TemplateName
---------- ValidFrom
---------- ValidTo
---- TrustedPublisher
------- {CertHash}
---------- EncodedCertificate
---------- IssuedBy
---------- IssuedTo
---------- TemplateName
---------- ValidFrom
---------- ValidTo
---- UntrustedCertificates
------- {CertHash}
---------- EncodedCertificate
---------- IssuedBy
---------- IssuedTo
---------- TemplateName
---------- ValidFrom
---------- ValidTo
-```
+- ./Device/Vendor/MSFT/RootCATrustedCertificates
+  - [CA](#deviceca)
+    - [{CertHash}](#devicecacerthash)
+      - [EncodedCertificate](#devicecacerthashencodedcertificate)
+      - [IssuedBy](#devicecacerthashissuedby)
+      - [IssuedTo](#devicecacerthashissuedto)
+      - [TemplateName](#devicecacerthashtemplatename)
+      - [ValidFrom](#devicecacerthashvalidfrom)
+      - [ValidTo](#devicecacerthashvalidto)
+  - [OemEsim](#deviceoemesim)
+    - [{CertHash}](#deviceoemesimcerthash)
+      - [EncodedCertificate](#deviceoemesimcerthashencodedcertificate)
+      - [IssuedBy](#deviceoemesimcerthashissuedby)
+      - [IssuedTo](#deviceoemesimcerthashissuedto)
+      - [TemplateName](#deviceoemesimcerthashtemplatename)
+      - [ValidFrom](#deviceoemesimcerthashvalidfrom)
+      - [ValidTo](#deviceoemesimcerthashvalidto)
+  - [Root](#deviceroot)
+    - [{CertHash}](#devicerootcerthash)
+      - [EncodedCertificate](#devicerootcerthashencodedcertificate)
+      - [IssuedBy](#devicerootcerthashissuedby)
+      - [IssuedTo](#devicerootcerthashissuedto)
+      - [TemplateName](#devicerootcerthashtemplatename)
+      - [ValidFrom](#devicerootcerthashvalidfrom)
+      - [ValidTo](#devicerootcerthashvalidto)
+  - [TrustedPeople](#devicetrustedpeople)
+    - [{CertHash}](#devicetrustedpeoplecerthash)
+      - [EncodedCertificate](#devicetrustedpeoplecerthashencodedcertificate)
+      - [IssuedBy](#devicetrustedpeoplecerthashissuedby)
+      - [IssuedTo](#devicetrustedpeoplecerthashissuedto)
+      - [TemplateName](#devicetrustedpeoplecerthashtemplatename)
+      - [ValidFrom](#devicetrustedpeoplecerthashvalidfrom)
+      - [ValidTo](#devicetrustedpeoplecerthashvalidto)
+  - [TrustedPublisher](#devicetrustedpublisher)
+    - [{CertHash}](#devicetrustedpublishercerthash)
+      - [EncodedCertificate](#devicetrustedpublishercerthashencodedcertificate)
+      - [IssuedBy](#devicetrustedpublishercerthashissuedby)
+      - [IssuedTo](#devicetrustedpublishercerthashissuedto)
+      - [TemplateName](#devicetrustedpublishercerthashtemplatename)
+      - [ValidFrom](#devicetrustedpublishercerthashvalidfrom)
+      - [ValidTo](#devicetrustedpublishercerthashvalidto)
+  - [UntrustedCertificates](#deviceuntrustedcertificates)
+    - [{CertHash}](#deviceuntrustedcertificatescerthash)
+      - [EncodedCertificate](#deviceuntrustedcertificatescerthashencodedcertificate)
+      - [IssuedBy](#deviceuntrustedcertificatescerthashissuedby)
+      - [IssuedTo](#deviceuntrustedcertificatescerthashissuedto)
+      - [TemplateName](#deviceuntrustedcertificatescerthashtemplatename)
+      - [ValidFrom](#deviceuntrustedcertificatescerthashvalidfrom)
+      - [ValidTo](#deviceuntrustedcertificatescerthashvalidto)
+- ./User/Vendor/MSFT/RootCATrustedCertificates
+  - [CA](#userca)
+    - [{CertHash}](#usercacerthash)
+      - [EncodedCertificate](#usercacerthashencodedcertificate)
+      - [IssuedBy](#usercacerthashissuedby)
+      - [IssuedTo](#usercacerthashissuedto)
+      - [TemplateName](#usercacerthashtemplatename)
+      - [ValidFrom](#usercacerthashvalidfrom)
+      - [ValidTo](#usercacerthashvalidto)
+  - [OemEsim](#useroemesim)
+    - [{CertHash}](#useroemesimcerthash)
+      - [EncodedCertificate](#useroemesimcerthashencodedcertificate)
+      - [IssuedBy](#useroemesimcerthashissuedby)
+      - [IssuedTo](#useroemesimcerthashissuedto)
+      - [TemplateName](#useroemesimcerthashtemplatename)
+      - [ValidFrom](#useroemesimcerthashvalidfrom)
+      - [ValidTo](#useroemesimcerthashvalidto)
+  - [TrustedPeople](#usertrustedpeople)
+    - [{CertHash}](#usertrustedpeoplecerthash)
+      - [EncodedCertificate](#usertrustedpeoplecerthashencodedcertificate)
+      - [IssuedBy](#usertrustedpeoplecerthashissuedby)
+      - [IssuedTo](#usertrustedpeoplecerthashissuedto)
+      - [TemplateName](#usertrustedpeoplecerthashtemplatename)
+      - [ValidFrom](#usertrustedpeoplecerthashvalidfrom)
+      - [ValidTo](#usertrustedpeoplecerthashvalidto)
+  - [TrustedPublisher](#usertrustedpublisher)
+    - [{CertHash}](#usertrustedpublishercerthash)
+      - [EncodedCertificate](#usertrustedpublishercerthashencodedcertificate)
+      - [IssuedBy](#usertrustedpublishercerthashissuedby)
+      - [IssuedTo](#usertrustedpublishercerthashissuedto)
+      - [TemplateName](#usertrustedpublishercerthashtemplatename)
+      - [ValidFrom](#usertrustedpublishercerthashvalidfrom)
+      - [ValidTo](#usertrustedpublishercerthashvalidto)
+  - [UntrustedCertificates](#useruntrustedcertificates)
+    - [{CertHash}](#useruntrustedcertificatescerthash)
+      - [EncodedCertificate](#useruntrustedcertificatescerthashencodedcertificate)
+      - [IssuedBy](#useruntrustedcertificatescerthashissuedby)
+      - [IssuedTo](#useruntrustedcertificatescerthashissuedto)
+      - [TemplateName](#useruntrustedcertificatescerthashtemplatename)
+      - [ValidFrom](#useruntrustedcertificatescerthashvalidfrom)
+      - [ValidTo](#useruntrustedcertificatescerthashvalidto)
 <!-- RootCATrustedCertificates-Tree-End -->
 
 <!-- Device-CA-Begin -->

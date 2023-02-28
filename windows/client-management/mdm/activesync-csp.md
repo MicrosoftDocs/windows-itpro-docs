@@ -4,7 +4,7 @@ description: Learn more about the ActiveSync CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -27,37 +27,35 @@ Configuring Windows Live ActiveSync accounts through this configuration service 
 <!-- ActiveSync-Editable-End -->
 
 <!-- ActiveSync-Tree-Begin -->
-The following example shows the ActiveSync configuration service provider in tree format.
+The following list shows the ActiveSync configuration service provider nodes:
 
-```text
-./User/Vendor/MSFT/ActiveSync
---- Accounts
------- {Account GUID}
---------- AccountIcon
---------- AccountName
---------- AccountType
---------- Domain
---------- EmailAddress
---------- Options
------------- CalendarAgeFilter
------------- ContentTypes
---------------- {Content Type GUID}
------------------- Enabled
------------------- Name
------------- Logging
------------- MailAgeFilter
------------- MailBodyType
------------- MailHTMLTruncation
------------- MailPlainTextTruncation
------------- Schedule
------------- UseSSL
---------- Password
---------- Policies
------------- MailBodyType
------------- MaxMailAgeFilter
---------- ServerName
---------- UserName
-```
+- ./User/Vendor/MSFT/ActiveSync
+  - [Accounts](#accounts)
+    - [{Account GUID}](#accountsaccount-guid)
+      - [AccountIcon](#accountsaccount-guidaccounticon)
+      - [AccountName](#accountsaccount-guidaccountname)
+      - [AccountType](#accountsaccount-guidaccounttype)
+      - [Domain](#accountsaccount-guiddomain)
+      - [EmailAddress](#accountsaccount-guidemailaddress)
+      - [Options](#accountsaccount-guidoptions)
+        - [CalendarAgeFilter](#accountsaccount-guidoptionscalendaragefilter)
+        - [ContentTypes](#accountsaccount-guidoptionscontenttypes)
+          - [{Content Type GUID}](#accountsaccount-guidoptionscontenttypescontent-type-guid)
+            - [Enabled](#accountsaccount-guidoptionscontenttypescontent-type-guidenabled)
+            - [Name](#accountsaccount-guidoptionscontenttypescontent-type-guidname)
+        - [Logging](#accountsaccount-guidoptionslogging)
+        - [MailAgeFilter](#accountsaccount-guidoptionsmailagefilter)
+        - [MailBodyType](#accountsaccount-guidoptionsmailbodytype)
+        - [MailHTMLTruncation](#accountsaccount-guidoptionsmailhtmltruncation)
+        - [MailPlainTextTruncation](#accountsaccount-guidoptionsmailplaintexttruncation)
+        - [Schedule](#accountsaccount-guidoptionsschedule)
+        - [UseSSL](#accountsaccount-guidoptionsusessl)
+      - [Password](#accountsaccount-guidpassword)
+      - [Policies](#accountsaccount-guidpolicies)
+        - [MailBodyType](#accountsaccount-guidpoliciesmailbodytype)
+        - [MaxMailAgeFilter](#accountsaccount-guidpoliciesmaxmailagefilter)
+      - [ServerName](#accountsaccount-guidservername)
+      - [UserName](#accountsaccount-guidusername)
 <!-- ActiveSync-Tree-End -->
 
 <!-- User-Accounts-Begin -->

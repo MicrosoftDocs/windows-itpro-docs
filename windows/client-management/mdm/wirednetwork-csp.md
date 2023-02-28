@@ -4,7 +4,7 @@ description: Learn more about the WiredNetwork CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -22,16 +22,14 @@ The WiredNetwork configuration service provider (CSP) is used by the enterprise 
 <!-- WiredNetwork-Editable-End -->
 
 <!-- WiredNetwork-Tree-Begin -->
-The following example shows the WiredNetwork configuration service provider in tree format.
+The following list shows the WiredNetwork configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/WiredNetwork
---- EnableBlockPeriod
---- LanXML
-./User/Vendor/MSFT/WiredNetwork
---- EnableBlockPeriod
---- LanXML
-```
+- ./Device/Vendor/MSFT/WiredNetwork
+  - [EnableBlockPeriod](#deviceenableblockperiod)
+  - [LanXML](#devicelanxml)
+- ./User/Vendor/MSFT/WiredNetwork
+  - [EnableBlockPeriod](#userenableblockperiod)
+  - [LanXML](#userlanxml)
 <!-- WiredNetwork-Tree-End -->
 
 <!-- Device-EnableBlockPeriod-Begin -->

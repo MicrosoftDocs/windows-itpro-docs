@@ -4,7 +4,7 @@ description: Learn more about the ApplicationControl CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -24,29 +24,27 @@ Existing Windows Defender Application Control (WDAC) policies deployed using the
 <!-- ApplicationControl-Editable-End -->
 
 <!-- ApplicationControl-Tree-Begin -->
-The following example shows the ApplicationControl configuration service provider in tree format.
+The following list shows the ApplicationControl configuration service provider nodes:
 
-```text
-./Vendor/MSFT/ApplicationControl
---- Policies
------- {Policy GUID}
---------- Policy
---------- PolicyInfo
------------- FriendlyName
------------- IsAuthorized
------------- IsBasePolicy
------------- IsDeployed
------------- IsEffective
------------- IsSystemPolicy
------------- Status
------------- Version
---- Tokens
------- {ID}
---------- Token
---------- TokenInfo
------------- Status
------------- Type
-```
+- ./Vendor/MSFT/ApplicationControl
+  - [Policies](#policies)
+    - [{Policy GUID}](#policiespolicy-guid)
+      - [Policy](#policiespolicy-guidpolicy)
+      - [PolicyInfo](#policiespolicy-guidpolicyinfo)
+        - [FriendlyName](#policiespolicy-guidpolicyinfofriendlyname)
+        - [IsAuthorized](#policiespolicy-guidpolicyinfoisauthorized)
+        - [IsBasePolicy](#policiespolicy-guidpolicyinfoisbasepolicy)
+        - [IsDeployed](#policiespolicy-guidpolicyinfoisdeployed)
+        - [IsEffective](#policiespolicy-guidpolicyinfoiseffective)
+        - [IsSystemPolicy](#policiespolicy-guidpolicyinfoissystempolicy)
+        - [Status](#policiespolicy-guidpolicyinfostatus)
+        - [Version](#policiespolicy-guidpolicyinfoversion)
+  - [Tokens](#tokens)
+    - [{ID}](#tokensid)
+      - [Token](#tokensidtoken)
+      - [TokenInfo](#tokensidtokeninfo)
+        - [Status](#tokensidtokeninfostatus)
+        - [Type](#tokensidtokeninfotype)
 <!-- ApplicationControl-Tree-End -->
 
 <!-- Device-Policies-Begin -->

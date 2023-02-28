@@ -4,7 +4,7 @@ description: Learn more about the NodeCache CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/21/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -32,30 +32,28 @@ NodeCache will hash the values and compare with a hash value that was sent down 
 <!-- NodeCache-Editable-End -->
 
 <!-- NodeCache-Tree-Begin -->
-The following example shows the NodeCache configuration service provider in tree format.
+The following list shows the NodeCache configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/NodeCache
---- {ProviderID}
------- CacheVersion
------- ChangedNodes
------- ChangedNodesData
------- Nodes
---------- {NodeID}
------------- AutoSetExpectedValue
------------- ExpectedValue
------------- NodeURI
-./User/Vendor/MSFT/NodeCache
---- {ProviderID}
------- CacheVersion
------- ChangedNodes
------- ChangedNodesData
------- Nodes
---------- {NodeID}
------------- AutoSetExpectedValue
------------- ExpectedValue
------------- NodeURI
-```
+- ./Device/Vendor/MSFT/NodeCache
+  - [{ProviderID}](#deviceproviderid)
+    - [CacheVersion](#deviceprovideridcacheversion)
+    - [ChangedNodes](#deviceprovideridchangednodes)
+    - [ChangedNodesData](#deviceprovideridchangednodesdata)
+    - [Nodes](#deviceprovideridnodes)
+      - [{NodeID}](#deviceprovideridnodesnodeid)
+        - [AutoSetExpectedValue](#deviceprovideridnodesnodeidautosetexpectedvalue)
+        - [ExpectedValue](#deviceprovideridnodesnodeidexpectedvalue)
+        - [NodeURI](#deviceprovideridnodesnodeidnodeuri)
+- ./User/Vendor/MSFT/NodeCache
+  - [{ProviderID}](#userproviderid)
+    - [CacheVersion](#userprovideridcacheversion)
+    - [ChangedNodes](#userprovideridchangednodes)
+    - [ChangedNodesData](#userprovideridchangednodesdata)
+    - [Nodes](#userprovideridnodes)
+      - [{NodeID}](#userprovideridnodesnodeid)
+        - [AutoSetExpectedValue](#userprovideridnodesnodeidautosetexpectedvalue)
+        - [ExpectedValue](#userprovideridnodesnodeidexpectedvalue)
+        - [NodeURI](#userprovideridnodesnodeidnodeuri)
 <!-- NodeCache-Tree-End -->
 
 <!-- Device-{ProviderID}-Begin -->

@@ -4,7 +4,7 @@ description: Learn more about the HealthAttestation CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/27/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -596,7 +596,7 @@ Provides the maximum preferred protocol version that the client is configured to
 
 <!-- Device-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Provides the current status of the device health request. For the complete list of status values, see [HealthAttestation CSP status and error codes](#healthattestation-csp-status-and-error-codes)
+Provides the current status of the device health request. For the complete list of status values, see [HealthAttestation CSP status and error codes](#healthattestation-csp-status-and-error-codes).
 <!-- Device-Status-Description-End -->
 
 <!-- Device-Status-Editable-Begin -->

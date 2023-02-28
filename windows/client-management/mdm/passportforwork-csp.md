@@ -4,7 +4,7 @@ description: Learn more about the PassportForWork CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/24/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -25,61 +25,59 @@ The PassportForWork configuration service provider is used to provision Windows 
 <!-- PassportForWork-Editable-End -->
 
 <!-- PassportForWork-Tree-Begin -->
-The following example shows the PassportForWork configuration service provider in tree format.
+The following list shows the PassportForWork configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/PassportForWork
---- {TenantId}
------- Policies
---------- EnablePinRecovery
---------- ExcludeSecurityDevices
------------- TPM12
---------- PINComplexity
------------- Digits
------------- Expiration
------------- History
------------- LowercaseLetters
------------- MaximumPINLength
------------- MinimumPINLength
------------- SpecialCharacters
------------- UppercaseLetters
---------- Remote
------------- UseRemotePassport
---------- RequireSecurityDevice
---------- UseCertificateForOnPremAuth
---------- UseCloudTrustForOnPremAuth
---------- UseHelloCertificatesAsSmartCardCertificates
---------- UsePassportForWork
---- Biometrics
------- EnableESSwithSupportedPeripherals
------- FacialFeaturesUseEnhancedAntiSpoofing
------- UseBiometrics
---- DeviceUnlock
------- GroupA
------- GroupB
------- Plugins
---- DynamicLock
------- DynamicLock
------- Plugins
---- SecurityKey
------- UseSecurityKeyForSignin
---- UseBiometrics
-./User/Vendor/MSFT/PassportForWork
---- {TenantId}
------- Policies
---------- EnablePinRecovery
---------- PINComplexity
------------- Digits
------------- Expiration
------------- History
------------- LowercaseLetters
------------- MaximumPINLength
------------- MinimumPINLength
------------- SpecialCharacters
------------- UppercaseLetters
---------- RequireSecurityDevice
---------- UsePassportForWork
-```
+- ./Device/Vendor/MSFT/PassportForWork
+  - [{TenantId}](#devicetenantid)
+    - [Policies](#devicetenantidpolicies)
+      - [EnablePinRecovery](#devicetenantidpoliciesenablepinrecovery)
+      - [ExcludeSecurityDevices](#devicetenantidpoliciesexcludesecuritydevices)
+        - [TPM12](#devicetenantidpoliciesexcludesecuritydevicestpm12)
+      - [PINComplexity](#devicetenantidpoliciespincomplexity)
+        - [Digits](#devicetenantidpoliciespincomplexitydigits)
+        - [Expiration](#devicetenantidpoliciespincomplexityexpiration)
+        - [History](#devicetenantidpoliciespincomplexityhistory)
+        - [LowercaseLetters](#devicetenantidpoliciespincomplexitylowercaseletters)
+        - [MaximumPINLength](#devicetenantidpoliciespincomplexitymaximumpinlength)
+        - [MinimumPINLength](#devicetenantidpoliciespincomplexityminimumpinlength)
+        - [SpecialCharacters](#devicetenantidpoliciespincomplexityspecialcharacters)
+        - [UppercaseLetters](#devicetenantidpoliciespincomplexityuppercaseletters)
+      - [Remote](#devicetenantidpoliciesremote)
+        - [UseRemotePassport](#devicetenantidpoliciesremoteuseremotepassport)
+      - [RequireSecurityDevice](#devicetenantidpoliciesrequiresecuritydevice)
+      - [UseCertificateForOnPremAuth](#devicetenantidpoliciesusecertificateforonpremauth)
+      - [UseCloudTrustForOnPremAuth](#devicetenantidpoliciesusecloudtrustforonpremauth)
+      - [UseHelloCertificatesAsSmartCardCertificates](#devicetenantidpoliciesusehellocertificatesassmartcardcertificates)
+      - [UsePassportForWork](#devicetenantidpoliciesusepassportforwork)
+  - [Biometrics](#devicebiometrics)
+    - [EnableESSwithSupportedPeripherals](#devicebiometricsenableesswithsupportedperipherals)
+    - [FacialFeaturesUseEnhancedAntiSpoofing](#devicebiometricsfacialfeaturesuseenhancedantispoofing)
+    - [UseBiometrics](#devicebiometricsusebiometrics)
+  - [DeviceUnlock](#devicedeviceunlock)
+    - [GroupA](#devicedeviceunlockgroupa)
+    - [GroupB](#devicedeviceunlockgroupb)
+    - [Plugins](#devicedeviceunlockplugins)
+  - [DynamicLock](#devicedynamiclock)
+    - [DynamicLock](#devicedynamiclockdynamiclock)
+    - [Plugins](#devicedynamiclockplugins)
+  - [SecurityKey](#devicesecuritykey)
+    - [UseSecurityKeyForSignin](#devicesecuritykeyusesecuritykeyforsignin)
+  - [UseBiometrics](#deviceusebiometrics)
+- ./User/Vendor/MSFT/PassportForWork
+  - [{TenantId}](#usertenantid)
+    - [Policies](#usertenantidpolicies)
+      - [EnablePinRecovery](#usertenantidpoliciesenablepinrecovery)
+      - [PINComplexity](#usertenantidpoliciespincomplexity)
+        - [Digits](#usertenantidpoliciespincomplexitydigits)
+        - [Expiration](#usertenantidpoliciespincomplexityexpiration)
+        - [History](#usertenantidpoliciespincomplexityhistory)
+        - [LowercaseLetters](#usertenantidpoliciespincomplexitylowercaseletters)
+        - [MaximumPINLength](#usertenantidpoliciespincomplexitymaximumpinlength)
+        - [MinimumPINLength](#usertenantidpoliciespincomplexityminimumpinlength)
+        - [SpecialCharacters](#usertenantidpoliciespincomplexityspecialcharacters)
+        - [UppercaseLetters](#usertenantidpoliciespincomplexityuppercaseletters)
+      - [RequireSecurityDevice](#usertenantidpoliciesrequiresecuritydevice)
+      - [UsePassportForWork](#usertenantidpoliciesusepassportforwork)
 <!-- PassportForWork-Tree-End -->
 
 <!-- Device-{TenantId}-Begin -->

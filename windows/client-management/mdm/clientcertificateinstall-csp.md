@@ -4,7 +4,7 @@ description: Learn more about the ClientCertificateInstall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/24/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -25,86 +25,84 @@ The ClientCertificateInstall configuration service provider enables the enterpri
 <!-- ClientCertificateInstall-Editable-End -->
 
 <!-- ClientCertificateInstall-Tree-Begin -->
-The following example shows the ClientCertificateInstall configuration service provider in tree format.
+The following list shows the ClientCertificateInstall configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/ClientCertificateInstall
---- PFXCertInstall
------- {UniqueID}
---------- ContainerName
---------- KeyLocation
---------- PFXCertBlob
---------- PFXCertPassword
---------- PFXCertPasswordEncryptionStore
---------- PFXCertPasswordEncryptionType
---------- PFXKeyExportable
---------- Status
---------- Thumbprint
---- SCEP
------- {UniqueID}
---------- CertThumbprint
---------- ErrorCode
---------- Install
------------- AADKeyIdentifierList
------------- CAThumbprint
------------- Challenge
------------- ContainerName
------------- CustomTextToShowInPrompt
------------- EKUMapping
------------- Enroll
------------- HashAlgorithm
------------- KeyLength
------------- KeyProtection
------------- KeyUsage
------------- RetryCount
------------- RetryDelay
------------- ServerURL
------------- SubjectAlternativeNames
------------- SubjectName
------------- TemplateName
------------- ValidPeriod
------------- ValidPeriodUnits
---------- RespondentServerUrl
---------- Status
-./User/Vendor/MSFT/ClientCertificateInstall
---- PFXCertInstall
------- {UniqueID}
---------- ContainerName
---------- KeyLocation
---------- PFXCertBlob
---------- PFXCertPassword
---------- PFXCertPasswordEncryptionStore
---------- PFXCertPasswordEncryptionType
---------- PFXKeyExportable
---------- Status
---------- Thumbprint
---- SCEP
------- {UniqueID}
---------- CertThumbprint
---------- ErrorCode
---------- Install
------------- AADKeyIdentifierList
------------- CAThumbprint
------------- Challenge
------------- ContainerName
------------- CustomTextToShowInPrompt
------------- EKUMapping
------------- Enroll
------------- HashAlgorithm
------------- KeyLength
------------- KeyProtection
------------- KeyUsage
------------- RetryCount
------------- RetryDelay
------------- ServerURL
------------- SubjectAlternativeNames
------------- SubjectName
------------- TemplateName
------------- ValidPeriod
------------- ValidPeriodUnits
---------- RespondentServerUrl
---------- Status
-```
+- ./Device/Vendor/MSFT/ClientCertificateInstall
+  - [PFXCertInstall](#devicepfxcertinstall)
+    - [{UniqueID}](#devicepfxcertinstalluniqueid)
+      - [ContainerName](#devicepfxcertinstalluniqueidcontainername)
+      - [KeyLocation](#devicepfxcertinstalluniqueidkeylocation)
+      - [PFXCertBlob](#devicepfxcertinstalluniqueidpfxcertblob)
+      - [PFXCertPassword](#devicepfxcertinstalluniqueidpfxcertpassword)
+      - [PFXCertPasswordEncryptionStore](#devicepfxcertinstalluniqueidpfxcertpasswordencryptionstore)
+      - [PFXCertPasswordEncryptionType](#devicepfxcertinstalluniqueidpfxcertpasswordencryptiontype)
+      - [PFXKeyExportable](#devicepfxcertinstalluniqueidpfxkeyexportable)
+      - [Status](#devicepfxcertinstalluniqueidstatus)
+      - [Thumbprint](#devicepfxcertinstalluniqueidthumbprint)
+  - [SCEP](#devicescep)
+    - [{UniqueID}](#devicescepuniqueid)
+      - [CertThumbprint](#devicescepuniqueidcertthumbprint)
+      - [ErrorCode](#devicescepuniqueiderrorcode)
+      - [Install](#devicescepuniqueidinstall)
+        - [AADKeyIdentifierList](#devicescepuniqueidinstallaadkeyidentifierlist)
+        - [CAThumbprint](#devicescepuniqueidinstallcathumbprint)
+        - [Challenge](#devicescepuniqueidinstallchallenge)
+        - [ContainerName](#devicescepuniqueidinstallcontainername)
+        - [CustomTextToShowInPrompt](#devicescepuniqueidinstallcustomtexttoshowinprompt)
+        - [EKUMapping](#devicescepuniqueidinstallekumapping)
+        - [Enroll](#devicescepuniqueidinstallenroll)
+        - [HashAlgorithm](#devicescepuniqueidinstallhashalgorithm)
+        - [KeyLength](#devicescepuniqueidinstallkeylength)
+        - [KeyProtection](#devicescepuniqueidinstallkeyprotection)
+        - [KeyUsage](#devicescepuniqueidinstallkeyusage)
+        - [RetryCount](#devicescepuniqueidinstallretrycount)
+        - [RetryDelay](#devicescepuniqueidinstallretrydelay)
+        - [ServerURL](#devicescepuniqueidinstallserverurl)
+        - [SubjectAlternativeNames](#devicescepuniqueidinstallsubjectalternativenames)
+        - [SubjectName](#devicescepuniqueidinstallsubjectname)
+        - [TemplateName](#devicescepuniqueidinstalltemplatename)
+        - [ValidPeriod](#devicescepuniqueidinstallvalidperiod)
+        - [ValidPeriodUnits](#devicescepuniqueidinstallvalidperiodunits)
+      - [RespondentServerUrl](#devicescepuniqueidrespondentserverurl)
+      - [Status](#devicescepuniqueidstatus)
+- ./User/Vendor/MSFT/ClientCertificateInstall
+  - [PFXCertInstall](#userpfxcertinstall)
+    - [{UniqueID}](#userpfxcertinstalluniqueid)
+      - [ContainerName](#userpfxcertinstalluniqueidcontainername)
+      - [KeyLocation](#userpfxcertinstalluniqueidkeylocation)
+      - [PFXCertBlob](#userpfxcertinstalluniqueidpfxcertblob)
+      - [PFXCertPassword](#userpfxcertinstalluniqueidpfxcertpassword)
+      - [PFXCertPasswordEncryptionStore](#userpfxcertinstalluniqueidpfxcertpasswordencryptionstore)
+      - [PFXCertPasswordEncryptionType](#userpfxcertinstalluniqueidpfxcertpasswordencryptiontype)
+      - [PFXKeyExportable](#userpfxcertinstalluniqueidpfxkeyexportable)
+      - [Status](#userpfxcertinstalluniqueidstatus)
+      - [Thumbprint](#userpfxcertinstalluniqueidthumbprint)
+  - [SCEP](#userscep)
+    - [{UniqueID}](#userscepuniqueid)
+      - [CertThumbprint](#userscepuniqueidcertthumbprint)
+      - [ErrorCode](#userscepuniqueiderrorcode)
+      - [Install](#userscepuniqueidinstall)
+        - [AADKeyIdentifierList](#userscepuniqueidinstallaadkeyidentifierlist)
+        - [CAThumbprint](#userscepuniqueidinstallcathumbprint)
+        - [Challenge](#userscepuniqueidinstallchallenge)
+        - [ContainerName](#userscepuniqueidinstallcontainername)
+        - [CustomTextToShowInPrompt](#userscepuniqueidinstallcustomtexttoshowinprompt)
+        - [EKUMapping](#userscepuniqueidinstallekumapping)
+        - [Enroll](#userscepuniqueidinstallenroll)
+        - [HashAlgorithm](#userscepuniqueidinstallhashalgorithm)
+        - [KeyLength](#userscepuniqueidinstallkeylength)
+        - [KeyProtection](#userscepuniqueidinstallkeyprotection)
+        - [KeyUsage](#userscepuniqueidinstallkeyusage)
+        - [RetryCount](#userscepuniqueidinstallretrycount)
+        - [RetryDelay](#userscepuniqueidinstallretrydelay)
+        - [ServerURL](#userscepuniqueidinstallserverurl)
+        - [SubjectAlternativeNames](#userscepuniqueidinstallsubjectalternativenames)
+        - [SubjectName](#userscepuniqueidinstallsubjectname)
+        - [TemplateName](#userscepuniqueidinstalltemplatename)
+        - [ValidPeriod](#userscepuniqueidinstallvalidperiod)
+        - [ValidPeriodUnits](#userscepuniqueidinstallvalidperiodunits)
+      - [RespondentServerUrl](#userscepuniqueidrespondentserverurl)
+      - [Status](#userscepuniqueidstatus)
 <!-- ClientCertificateInstall-Tree-End -->
 
 <!-- Device-PFXCertInstall-Begin -->
@@ -845,7 +843,7 @@ Optional. Specify the AAD Key Identifier List as a semicolon separated values. O
 
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required. Specify root CA thumbprint. It is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates SCEP server, it checks CA cert from SCEP server whether match with this cert. If not match, fail the authentication.
+Required. Specify root CA thumbprint. It is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates SCEP server, it checks CA cert from SCEP server whether match with this cert. If no match is found, authentication will fail.
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-Editable-Begin -->
@@ -2403,7 +2401,7 @@ Optional. Specify the AAD Key Identifier List as a semicolon separated values. O
 
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required. Specify root CA thumbprint. It is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates SCEP server, it checks CA cert from SCEP server whether match with this cert. If not match, fail the authentication.
+Required. Specify root CA thumbprint. It is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates SCEP server, it checks CA cert from SCEP server whether match with this cert. If no match is found, authentication will fail.
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-Editable-Begin -->

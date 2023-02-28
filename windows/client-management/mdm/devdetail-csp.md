@@ -4,7 +4,7 @@ description: Learn more about the DevDetail CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -27,46 +27,44 @@ For the DevDetail CSP, you can't use the Replace command unless the node already
 <!-- DevDetail-Editable-End -->
 
 <!-- DevDetail-Tree-Begin -->
-The following example shows the DevDetail configuration service provider in tree format.
+The following list shows the DevDetail configuration service provider nodes:
 
-```text
-./DevDetail
---- DevTyp
---- Ext
------- DeviceHardwareData
------- Microsoft
---------- CommercializationOperator
---------- DeviceName
---------- DNSComputerName
---------- FreeStorage
---------- LocalTime
---------- MobileID
---------- OSPlatform
---------- ProcessorArchitecture
---------- ProcessorType
---------- RadioSwV
---------- Resolution
---------- SMBIOSSerialNumber
---------- SMBIOSVersion
---------- SystemSKU
---------- TotalRAM
---------- TotalStorage
------- VoLTEServiceSetting
------- WlanDnsSuffix
------- WlanIPv4Address
------- WlanIPv6Address
------- WLANMACAddress
------- WlanSubnetMask
---- FwV
---- HwV
---- LrgObj
---- OEM
---- SwV
---- URI
------- MaxDepth
------- MaxSegLen
------- MaxTotLen
-```
+- ./DevDetail
+  - [DevTyp](#devtyp)
+  - [Ext](#ext)
+    - [DeviceHardwareData](#extdevicehardwaredata)
+    - [Microsoft](#extmicrosoft)
+      - [CommercializationOperator](#extmicrosoftcommercializationoperator)
+      - [DeviceName](#extmicrosoftdevicename)
+      - [DNSComputerName](#extmicrosoftdnscomputername)
+      - [FreeStorage](#extmicrosoftfreestorage)
+      - [LocalTime](#extmicrosoftlocaltime)
+      - [MobileID](#extmicrosoftmobileid)
+      - [OSPlatform](#extmicrosoftosplatform)
+      - [ProcessorArchitecture](#extmicrosoftprocessorarchitecture)
+      - [ProcessorType](#extmicrosoftprocessortype)
+      - [RadioSwV](#extmicrosoftradioswv)
+      - [Resolution](#extmicrosoftresolution)
+      - [SMBIOSSerialNumber](#extmicrosoftsmbiosserialnumber)
+      - [SMBIOSVersion](#extmicrosoftsmbiosversion)
+      - [SystemSKU](#extmicrosoftsystemsku)
+      - [TotalRAM](#extmicrosofttotalram)
+      - [TotalStorage](#extmicrosofttotalstorage)
+    - [VoLTEServiceSetting](#extvolteservicesetting)
+    - [WlanDnsSuffix](#extwlandnssuffix)
+    - [WlanIPv4Address](#extwlanipv4address)
+    - [WlanIPv6Address](#extwlanipv6address)
+    - [WLANMACAddress](#extwlanmacaddress)
+    - [WlanSubnetMask](#extwlansubnetmask)
+  - [FwV](#fwv)
+  - [HwV](#hwv)
+  - [LrgObj](#lrgobj)
+  - [OEM](#oem)
+  - [SwV](#swv)
+  - [URI](#uri)
+    - [MaxDepth](#urimaxdepth)
+    - [MaxSegLen](#urimaxseglen)
+    - [MaxTotLen](#urimaxtotlen)
 <!-- DevDetail-Tree-End -->
 
 <!-- Device-DevTyp-Begin -->

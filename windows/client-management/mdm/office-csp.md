@@ -4,7 +4,7 @@ description: Learn more about the Office CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -22,24 +22,22 @@ The Office configuration service provider (CSP) enables a Microsoft Office clien
 <!-- Office-Editable-End -->
 
 <!-- Office-Tree-Begin -->
-The following example shows the Office configuration service provider in tree format.
+The following list shows the Office configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/Office
---- Installation
------- {id}
---------- FinalStatus
---------- Install
---------- Status
------- CurrentStatus
-./User/Vendor/MSFT/Office
---- Installation
------- {id}
---------- FinalStatus
---------- Install
---------- Status
------- CurrentStatus
-```
+- ./Device/Vendor/MSFT/Office
+  - [Installation](#deviceinstallation)
+    - [{id}](#deviceinstallationid)
+      - [FinalStatus](#deviceinstallationidfinalstatus)
+      - [Install](#deviceinstallationidinstall)
+      - [Status](#deviceinstallationidstatus)
+    - [CurrentStatus](#deviceinstallationcurrentstatus)
+- ./User/Vendor/MSFT/Office
+  - [Installation](#userinstallation)
+    - [{id}](#userinstallationid)
+      - [FinalStatus](#userinstallationidfinalstatus)
+      - [Install](#userinstallationidinstall)
+      - [Status](#userinstallationidstatus)
+    - [CurrentStatus](#userinstallationcurrentstatus)
 <!-- Office-Tree-End -->
 
 <!-- Device-Installation-Begin -->

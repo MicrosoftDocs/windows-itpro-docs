@@ -4,7 +4,7 @@ description: Learn more about the DeviceStatus CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -21,61 +21,59 @@ ms.topic: reference
 <!-- DeviceStatus-Editable-End -->
 
 <!-- DeviceStatus-Tree-Begin -->
-The following example shows the DeviceStatus configuration service provider in tree format.
+The following list shows the DeviceStatus configuration service provider nodes:
 
-```text
-./Vendor/MSFT/DeviceStatus
---- Antispyware
------- SignatureStatus
------- Status
---- Antivirus
------- SignatureStatus
------- Status
---- Battery
------- EstimatedChargeRemaining
------- EstimatedRuntime
------- Status
---- CellularIdentities
------- {IMEI}
---------- CommercializationOperator
---------- ICCID
---------- IMSI
---------- PhoneNumber
---------- RoamingCompliance
---------- RoamingStatus
---- CertAttestation
------- MDMClientCertAttestation
---- Compliance
------- EncryptionCompliance
---- DeviceGuard
------- HypervisorEnforcedCodeIntegrityStatus
------- LsaCfgCredGuardStatus
------- SystemGuardStatus
------- VirtualizationBasedSecurityHwReq
------- VirtualizationBasedSecurityStatus
---- DMA
------- BootDMAProtectionStatus
---- DomainName
---- Firewall
------- Status
---- NetworkIdentifiers
------- {MacAddress}
---------- IPAddressV4
---------- IPAddressV6
---------- IsConnected
---------- Type
---- OS
------- Edition
------- Mode
---- SecureBootState
---- TPM
------- ManufacturerId
------- ManufacturerIdTxt
------- ManufacturerVersion
------- SpecificationVersion
---- UAC
------- Status
-```
+- ./Vendor/MSFT/DeviceStatus
+  - [Antispyware](#antispyware)
+    - [SignatureStatus](#antispywaresignaturestatus)
+    - [Status](#antispywarestatus)
+  - [Antivirus](#antivirus)
+    - [SignatureStatus](#antivirussignaturestatus)
+    - [Status](#antivirusstatus)
+  - [Battery](#battery)
+    - [EstimatedChargeRemaining](#batteryestimatedchargeremaining)
+    - [EstimatedRuntime](#batteryestimatedruntime)
+    - [Status](#batterystatus)
+  - [CellularIdentities](#cellularidentities)
+    - [{IMEI}](#cellularidentitiesimei)
+      - [CommercializationOperator](#cellularidentitiesimeicommercializationoperator)
+      - [ICCID](#cellularidentitiesimeiiccid)
+      - [IMSI](#cellularidentitiesimeiimsi)
+      - [PhoneNumber](#cellularidentitiesimeiphonenumber)
+      - [RoamingCompliance](#cellularidentitiesimeiroamingcompliance)
+      - [RoamingStatus](#cellularidentitiesimeiroamingstatus)
+  - [CertAttestation](#certattestation)
+    - [MDMClientCertAttestation](#certattestationmdmclientcertattestation)
+  - [Compliance](#compliance)
+    - [EncryptionCompliance](#complianceencryptioncompliance)
+  - [DeviceGuard](#deviceguard)
+    - [HypervisorEnforcedCodeIntegrityStatus](#deviceguardhypervisorenforcedcodeintegritystatus)
+    - [LsaCfgCredGuardStatus](#deviceguardlsacfgcredguardstatus)
+    - [SystemGuardStatus](#deviceguardsystemguardstatus)
+    - [VirtualizationBasedSecurityHwReq](#deviceguardvirtualizationbasedsecurityhwreq)
+    - [VirtualizationBasedSecurityStatus](#deviceguardvirtualizationbasedsecuritystatus)
+  - [DMA](#dma)
+    - [BootDMAProtectionStatus](#dmabootdmaprotectionstatus)
+  - [DomainName](#domainname)
+  - [Firewall](#firewall)
+    - [Status](#firewallstatus)
+  - [NetworkIdentifiers](#networkidentifiers)
+    - [{MacAddress}](#networkidentifiersmacaddress)
+      - [IPAddressV4](#networkidentifiersmacaddressipaddressv4)
+      - [IPAddressV6](#networkidentifiersmacaddressipaddressv6)
+      - [IsConnected](#networkidentifiersmacaddressisconnected)
+      - [Type](#networkidentifiersmacaddresstype)
+  - [OS](#os)
+    - [Edition](#osedition)
+    - [Mode](#osmode)
+  - [SecureBootState](#securebootstate)
+  - [TPM](#tpm)
+    - [ManufacturerId](#tpmmanufacturerid)
+    - [ManufacturerIdTxt](#tpmmanufactureridtxt)
+    - [ManufacturerVersion](#tpmmanufacturerversion)
+    - [SpecificationVersion](#tpmspecificationversion)
+  - [UAC](#uac)
+    - [Status](#uacstatus)
 <!-- DeviceStatus-Tree-End -->
 
 <!-- Device-Antispyware-Begin -->
@@ -134,13 +132,7 @@ Node for the antispyware query.
 
 <!-- Device-Antispyware-SignatureStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the antispyware signature. Valid values:
-
-0 - The security software reports that it is not the most recent version.
-1 - The security software reports that it is the most recent version.
-2 - Not applicable.
-
-This is returned for devices like the phone that do not have an antivirus (where the API doesn't exist.) If more than one antispyware provider is active, this node returns: 1 - If every active antispyware provider has a valid signature status. 0 - If any of the active antispyware providers has an invalid signature status.
+Integer that specifies the status of the antispyware signature. Valid values: 0 - The security software reports that it is not the most recent version. 1 - The security software reports that it is the most recent version. 2 - Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn't exist.) If more than one antispyware provider is active, this node returns: 1 - If every active antispyware provider has a valid signature status. 0 - If any of the active antispyware providers has an invalid signature status.
 <!-- Device-Antispyware-SignatureStatus-Description-End -->
 
 <!-- Device-Antispyware-SignatureStatus-Editable-Begin -->
@@ -181,14 +173,7 @@ This node also returns 0 when no anti-spyware provider is active.
 
 <!-- Device-Antispyware-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the antispyware. Valid values:
-
-0 - The status of the security provider category is good and does not need user attention.
-1 - The status of the security provider category is not monitored by Windows Security Center(WSC).
-2 - The status of the security provider category is poor and the computer may be at risk.
-3 - The security provider category is in snooze state.
-
-Snooze indicates that WSC is not actively protecting the computer.
+Integer that specifies the status of the antispyware. Valid values: 0 - The status of the security provider category is good and does not need user attention. 1 - The status of the security provider category is not monitored by Windows Security Center (WSC). 2 - The status of the security provider category is poor and the computer may be at risk. 3 - The security provider category is in snooze state. Snooze indicates that WSC is not actively protecting the computer.
 <!-- Device-Antispyware-Status-Description-End -->
 
 <!-- Device-Antispyware-Status-Editable-Begin -->
@@ -1604,10 +1589,7 @@ Boolean value that indicates whether the network card associated with the MAC ad
 
 <!-- Device-NetworkIdentifiers-{MacAddress}-Type-Description-Begin -->
 <!-- Description-Source-DDF -->
-Type of network connection. The value is one of the following:
-
-2 - WLAN(or other Wireless interface)
-, 1 - LAN(or other Wired interface), 0 - Unknown.
+Type of network connection. The value is one of the following: 2 - WLAN (or other Wireless interface), 1 - LAN (or other Wired interface), 0 - Unknown.
 <!-- Device-NetworkIdentifiers-{MacAddress}-Type-Description-End -->
 
 <!-- Device-NetworkIdentifiers-{MacAddress}-Type-Editable-Begin -->

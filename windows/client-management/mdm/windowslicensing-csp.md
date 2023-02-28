@@ -4,7 +4,7 @@ description: Learn more about the WindowsLicensing CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -22,33 +22,31 @@ The WindowsLicensing configuration service provider is designed for licensing re
 <!-- WindowsLicensing-Editable-End -->
 
 <!-- WindowsLicensing-Tree-Begin -->
-The following example shows the WindowsLicensing configuration service provider in tree format.
+The following list shows the WindowsLicensing configuration service provider nodes:
 
-```text
-./Vendor/MSFT/WindowsLicensing
---- ChangeProductKey
---- CheckApplicability
---- DeviceLicensingService
------- AcquireDeviceLicense
------- DeviceLicensingLastError
------- DeviceLicensingLastErrorDescription
------- DeviceLicensingStatus
------- LicenseType
------- RemoveDeviceLicense
---- Edition
---- LicenseKeyType
---- SMode
------- Status
------- SwitchFromSMode
------- SwitchingPolicy
---- Status
---- Subscriptions
------- {SubscriptionId}
---------- Name
---------- Status
---- UpgradeEditionWithLicense
---- UpgradeEditionWithProductKey
-```
+- ./Vendor/MSFT/WindowsLicensing
+  - [ChangeProductKey](#changeproductkey)
+  - [CheckApplicability](#checkapplicability)
+  - [DeviceLicensingService](#devicelicensingservice)
+    - [AcquireDeviceLicense](#devicelicensingserviceacquiredevicelicense)
+    - [DeviceLicensingLastError](#devicelicensingservicedevicelicensinglasterror)
+    - [DeviceLicensingLastErrorDescription](#devicelicensingservicedevicelicensinglasterrordescription)
+    - [DeviceLicensingStatus](#devicelicensingservicedevicelicensingstatus)
+    - [LicenseType](#devicelicensingservicelicensetype)
+    - [RemoveDeviceLicense](#devicelicensingserviceremovedevicelicense)
+  - [Edition](#edition)
+  - [LicenseKeyType](#licensekeytype)
+  - [SMode](#smode)
+    - [Status](#smodestatus)
+    - [SwitchFromSMode](#smodeswitchfromsmode)
+    - [SwitchingPolicy](#smodeswitchingpolicy)
+  - [Status](#status)
+  - [Subscriptions](#subscriptions)
+    - [{SubscriptionId}](#subscriptionssubscriptionid)
+      - [Name](#subscriptionssubscriptionidname)
+      - [Status](#subscriptionssubscriptionidstatus)
+  - [UpgradeEditionWithLicense](#upgradeeditionwithlicense)
+  - [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey)
 <!-- WindowsLicensing-Tree-End -->
 
 <!-- Device-ChangeProductKey-Begin -->
@@ -169,8 +167,7 @@ Returns TRUE if the entered product key can be used for an edition upgrade of Wi
 <!-- Device-DeviceLicensingService-OmaUri-End -->
 
 <!-- Device-DeviceLicensingService-Description-Begin -->
-<!-- Description-Source-DDF -->
-Insert Description Here.
+<!-- Description-Source-Not-Found -->
 <!-- Device-DeviceLicensingService-Description-End -->
 
 <!-- Device-DeviceLicensingService-Editable-Begin -->

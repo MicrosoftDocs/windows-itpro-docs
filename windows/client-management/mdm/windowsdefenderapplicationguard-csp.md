@@ -4,7 +4,7 @@ description: Learn more about the WindowsDefenderApplicationGuard CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -22,27 +22,25 @@ The WindowsDefenderApplicationGuard configuration service provider (CSP) is used
 <!-- WindowsDefenderApplicationGuard-Editable-End -->
 
 <!-- WindowsDefenderApplicationGuard-Tree-Begin -->
-The following example shows the WindowsDefenderApplicationGuard configuration service provider in tree format.
+The following list shows the WindowsDefenderApplicationGuard configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/WindowsDefenderApplicationGuard
---- Audit
------- AuditApplicationGuard
---- InstallWindowsDefenderApplicationGuard
---- PlatformStatus
---- Settings
------- AllowCameraMicrophoneRedirection
------- AllowPersistence
------- AllowVirtualGPU
------- AllowWindowsDefenderApplicationGuard
------- BlockNonEnterpriseContent
------- CertificateThumbprints
------- ClipboardFileType
------- ClipboardSettings
------- PrintingSettings
------- SaveFilesToHost
---- Status
-```
+- ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard
+  - [Audit](#audit)
+    - [AuditApplicationGuard](#auditauditapplicationguard)
+  - [InstallWindowsDefenderApplicationGuard](#installwindowsdefenderapplicationguard)
+  - [PlatformStatus](#platformstatus)
+  - [Settings](#settings)
+    - [AllowCameraMicrophoneRedirection](#settingsallowcameramicrophoneredirection)
+    - [AllowPersistence](#settingsallowpersistence)
+    - [AllowVirtualGPU](#settingsallowvirtualgpu)
+    - [AllowWindowsDefenderApplicationGuard](#settingsallowwindowsdefenderapplicationguard)
+    - [BlockNonEnterpriseContent](#settingsblocknonenterprisecontent)
+    - [CertificateThumbprints](#settingscertificatethumbprints)
+    - [ClipboardFileType](#settingsclipboardfiletype)
+    - [ClipboardSettings](#settingsclipboardsettings)
+    - [PrintingSettings](#settingsprintingsettings)
+    - [SaveFilesToHost](#settingssavefilestohost)
+  - [Status](#status)
 <!-- WindowsDefenderApplicationGuard-Tree-End -->
 
 <!-- Device-Audit-Begin -->
@@ -212,15 +210,7 @@ Initiates remote installation of Application Guard feature.
 
 <!-- Device-PlatformStatus-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device.
-
-Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode.
-Bit 1 - Set to 1 when the client machine is Hyper-V capable.
-Bit 2 - Reserved for Microsoft.
-Bit 3 - Set to 1 when Application Guard is installed on the client machine.
-Bit 4 - Reserved for Microsoft.
-Bit 5 - Set to 1 when the client machine meets minimum hardware requirements.
-
+Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device. Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode. Bit 1 - Set to 1 when the client machine is Hyper-V capable. Bit 2 - Reserved for Microsoft. Bit 3 - Set to 1 when Application Guard is installed on the client machine. Bit 4 - Reserved for Microsoft. Bit 5 - Set to 1 when the client machine meets minimum hardware requirements.
 <!-- Device-PlatformStatus-Description-End -->
 
 <!-- Device-PlatformStatus-Editable-Begin -->
@@ -426,11 +416,7 @@ This policy setting allows you to decide whether data should persist across diff
 
 <!-- Device-Settings-AllowVirtualGPU-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-This policy setting allows you to determine whether Application Guard can use the virtual Graphics Processing Unit (GPU) to process graphics.
-
-- If you enable this setting, Microsoft Defender Application Guard uses Hyper-V to access supported, high-security rendering graphics hardware (GPUs). These GPUs improve rendering performance and battery life while using Microsoft Defender Application Guard, particularly for video playback and other graphics-intensive use cases.
-
-- If you enable this setting without connecting any high-security rendering graphics hardware, Microsoft Defender Application Guard will automatically revert to software-based (CPU) rendering.
+This policy setting allows you to determine whether Application Guard can use the virtual Graphics Processing Unit (GPU) to process graphics. If you enable this setting, Microsoft Defender Application Guard uses Hyper-V to access supported, high-security rendering graphics hardware (GPUs). These GPUs improve rendering performance and battery life while using Microsoft Defender Application Guard, particularly for video playback and other graphics-intensive use cases. If you enable this setting without connecting any high-security rendering graphics hardware, Microsoft Defender Application Guard will automatically revert to software-based (CPU) rendering.
 <!-- Device-Settings-AllowVirtualGPU-Description-End -->
 
 <!-- Device-Settings-AllowVirtualGPU-Editable-Begin -->
@@ -945,16 +931,7 @@ This policy setting allows you to determine whether users can elect to download 
 
 <!-- Device-Status-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Returns bitmask that indicates status of Application Guard installation and pre-requisites on the device.
-
-Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode.
-Bit 1 - Set to 1 when the client machine is Hyper-V capable.
-Bit 2 - Set to 1 when the client machine has a valid OS license and SKU.
-Bit 3 - Set to 1 when Application Guard installed on the client machine.
-Bit 4 - Set to 1 when required Network Isolation Policies are configured.
-Bit 5 - Set to 1 when the client machine meets minimum hardware requirements.
-Bit 6 - Set to 1 when system reboot is required.
-
+Returns bitmask that indicates status of Application Guard installation and pre-requisites on the device. Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode. Bit 1 - Set to 1 when the client machine is Hyper-V capable. Bit 2 - Set to 1 when the client machine has a valid OS license and SKU. Bit 3 - Set to 1 when Application Guard installed on the client machine. Bit 4 - Set to 1 when required Network Isolation Policies are configured. Bit 5 - Set to 1 when the client machine meets minimum hardware requirements. Bit 6 - Set to 1 when system reboot is required.
 <!-- Device-Status-Description-End -->
 
 <!-- Device-Status-Editable-Begin -->

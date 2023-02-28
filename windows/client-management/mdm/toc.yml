@@ -602,8 +602,6 @@ items:
       items:
       - name: AppLocker DDF file
         href: applocker-ddf-file.md
-      - name: AppLocker XSD
-        href: applocker-xsd.md
     - name: AssignedAccess
       href: assignedaccess-csp.md
       items:

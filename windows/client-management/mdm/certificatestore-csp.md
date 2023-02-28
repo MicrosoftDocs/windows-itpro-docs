@@ -4,7 +4,7 @@ description: Learn more about the CertificateStore CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/16/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -27,86 +27,84 @@ For the CertificateStore CSP, you can't use the Replace command unless the node 
 <!-- CertificateStore-Editable-End -->
 
 <!-- CertificateStore-Tree-Begin -->
-The following example shows the CertificateStore configuration service provider in tree format.
+The following list shows the CertificateStore configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/CertificateStore
---- CA
------- {CertHash}
---------- EncodedCertificate
---------- IssuedBy
---------- IssuedTo
---------- TemplateName
---------- ValidFrom
---------- ValidTo
------- System
---------- {CertHash}
------------- EncodedCertificate
------------- IssuedBy
------------- IssuedTo
------------- TemplateName
------------- ValidFrom
------------- ValidTo
---- MY
------- SCEP
---------- {UniqueID}
------------- CertThumbPrint
------------- ErrorCode
------------- Install
---------------- CAThumbPrint
---------------- Challenge
---------------- EKUMapping
---------------- Enroll
---------------- HashAlgrithm
---------------- KeyLength
---------------- KeyProtection
---------------- KeyUsage
---------------- RetryCount
---------------- RetryDelay
---------------- ServerURL
---------------- SubjectAlternativeNames
---------------- SubjectName
---------------- TemplateName
---------------- ValidPeriod
---------------- ValidPeriodUnit
------------- Status
------- User
---------- {CertHash}
------------- EncodedCertificate
------------- IssuedBy
------------- IssuedTo
------------- TemplateName
------------- ValidFrom
------------- ValidTo
------- WSTEP
---------- CertThumprint
---------- Renew
------------- ErrorCode
------------- LastRenewalAttemptTime
------------- RenewNow
------------- RenewPeriod
------------- RetryAfterExpiryInterval
------------- RetryInterval
------------- ROBOSupport
------------- ServerURL
------------- Status
---- ROOT
------- {CertHash}
---------- EncodedCertificate
---------- IssuedBy
---------- IssuedTo
---------- TemplateName
---------- ValidFrom
---------- ValidTo
------- System
---------- {CertHash}
------------- EncodedCertificate
------------- IssuedBy
------------- IssuedTo
------------- TemplateName
------------- ValidFrom
------------- ValidTo
-```
+- ./Device/Vendor/MSFT/CertificateStore
+  - [CA](#ca)
+    - [{CertHash}](#cacerthash)
+      - [EncodedCertificate](#cacerthashencodedcertificate)
+      - [IssuedBy](#cacerthashissuedby)
+      - [IssuedTo](#cacerthashissuedto)
+      - [TemplateName](#cacerthashtemplatename)
+      - [ValidFrom](#cacerthashvalidfrom)
+      - [ValidTo](#cacerthashvalidto)
+    - [System](#casystem)
+      - [{CertHash}](#casystemcerthash)
+        - [EncodedCertificate](#casystemcerthashencodedcertificate)
+        - [IssuedBy](#casystemcerthashissuedby)
+        - [IssuedTo](#casystemcerthashissuedto)
+        - [TemplateName](#casystemcerthashtemplatename)
+        - [ValidFrom](#casystemcerthashvalidfrom)
+        - [ValidTo](#casystemcerthashvalidto)
+  - [MY](#my)
+    - [SCEP](#myscep)
+      - [{UniqueID}](#myscepuniqueid)
+        - [CertThumbPrint](#myscepuniqueidcertthumbprint)
+        - [ErrorCode](#myscepuniqueiderrorcode)
+        - [Install](#myscepuniqueidinstall)
+          - [CAThumbPrint](#myscepuniqueidinstallcathumbprint)
+          - [Challenge](#myscepuniqueidinstallchallenge)
+          - [EKUMapping](#myscepuniqueidinstallekumapping)
+          - [Enroll](#myscepuniqueidinstallenroll)
+          - [HashAlgrithm](#myscepuniqueidinstallhashalgrithm)
+          - [KeyLength](#myscepuniqueidinstallkeylength)
+          - [KeyProtection](#myscepuniqueidinstallkeyprotection)
+          - [KeyUsage](#myscepuniqueidinstallkeyusage)
+          - [RetryCount](#myscepuniqueidinstallretrycount)
+          - [RetryDelay](#myscepuniqueidinstallretrydelay)
+          - [ServerURL](#myscepuniqueidinstallserverurl)
+          - [SubjectAlternativeNames](#myscepuniqueidinstallsubjectalternativenames)
+          - [SubjectName](#myscepuniqueidinstallsubjectname)
+          - [TemplateName](#myscepuniqueidinstalltemplatename)
+          - [ValidPeriod](#myscepuniqueidinstallvalidperiod)
+          - [ValidPeriodUnit](#myscepuniqueidinstallvalidperiodunit)
+        - [Status](#myscepuniqueidstatus)
+    - [User](#myuser)
+      - [{CertHash}](#myusercerthash)
+        - [EncodedCertificate](#myusercerthashencodedcertificate)
+        - [IssuedBy](#myusercerthashissuedby)
+        - [IssuedTo](#myusercerthashissuedto)
+        - [TemplateName](#myusercerthashtemplatename)
+        - [ValidFrom](#myusercerthashvalidfrom)
+        - [ValidTo](#myusercerthashvalidto)
+    - [WSTEP](#mywstep)
+      - [CertThumprint](#mywstepcertthumprint)
+      - [Renew](#mywsteprenew)
+        - [ErrorCode](#mywsteprenewerrorcode)
+        - [LastRenewalAttemptTime](#mywsteprenewlastrenewalattempttime)
+        - [RenewNow](#mywsteprenewrenewnow)
+        - [RenewPeriod](#mywsteprenewrenewperiod)
+        - [RetryAfterExpiryInterval](#mywsteprenewretryafterexpiryinterval)
+        - [RetryInterval](#mywsteprenewretryinterval)
+        - [ROBOSupport](#mywsteprenewrobosupport)
+        - [ServerURL](#mywsteprenewserverurl)
+        - [Status](#mywsteprenewstatus)
+  - [ROOT](#root)
+    - [{CertHash}](#rootcerthash)
+      - [EncodedCertificate](#rootcerthashencodedcertificate)
+      - [IssuedBy](#rootcerthashissuedby)
+      - [IssuedTo](#rootcerthashissuedto)
+      - [TemplateName](#rootcerthashtemplatename)
+      - [ValidFrom](#rootcerthashvalidfrom)
+      - [ValidTo](#rootcerthashvalidto)
+    - [System](#rootsystem)
+      - [{CertHash}](#rootsystemcerthash)
+        - [EncodedCertificate](#rootsystemcerthashencodedcertificate)
+        - [IssuedBy](#rootsystemcerthashissuedby)
+        - [IssuedTo](#rootsystemcerthashissuedto)
+        - [TemplateName](#rootsystemcerthashtemplatename)
+        - [ValidFrom](#rootsystemcerthashvalidfrom)
+        - [ValidTo](#rootsystemcerthashvalidto)
 <!-- CertificateStore-Tree-End -->
 
 <!-- Device-CA-Begin -->

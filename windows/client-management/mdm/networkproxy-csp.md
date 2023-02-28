@@ -4,7 +4,7 @@ description: Learn more about the NetworkProxy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -29,18 +29,16 @@ How the settings work:
 <!-- NetworkProxy-Editable-End -->
 
 <!-- NetworkProxy-Tree-Begin -->
-The following example shows the NetworkProxy configuration service provider in tree format.
+The following list shows the NetworkProxy configuration service provider nodes:
 
-```text
-./Vendor/MSFT/NetworkProxy
---- AutoDetect
---- ProxyServer
------- Exceptions
------- ProxyAddress
------- UseProxyForLocalAddresses
---- ProxySettingsPerUser
---- SetupScriptUrl
-```
+- ./Vendor/MSFT/NetworkProxy
+  - [AutoDetect](#autodetect)
+  - [ProxyServer](#proxyserver)
+    - [Exceptions](#proxyserverexceptions)
+    - [ProxyAddress](#proxyserverproxyaddress)
+    - [UseProxyForLocalAddresses](#proxyserveruseproxyforlocaladdresses)
+  - [ProxySettingsPerUser](#proxysettingsperuser)
+  - [SetupScriptUrl](#setupscripturl)
 <!-- NetworkProxy-Tree-End -->
 
 <!-- Device-AutoDetect-Begin -->

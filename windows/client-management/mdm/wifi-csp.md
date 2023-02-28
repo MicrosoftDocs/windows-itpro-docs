@@ -4,7 +4,7 @@ description: Learn more about the WiFi CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -31,28 +31,26 @@ Programming considerations:
 <!-- WiFi-Editable-End -->
 
 <!-- WiFi-Tree-Begin -->
-The following example shows the WiFi configuration service provider in tree format.
+The following list shows the WiFi configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/WiFi
---- Profile
------- {SSID}
---------- ProfileSource
---------- Proxy
---------- ProxyPacUrl
---------- ProxyWPAD
---------- WiFiCost
---------- WlanXml
-./User/Vendor/MSFT/WiFi
---- Profile
------- {SSID}
---------- ProfileSource
---------- Proxy
---------- ProxyPacUrl
---------- ProxyWPAD
---------- WiFiCost
---------- WlanXml
-```
+- ./Device/Vendor/MSFT/WiFi
+  - [Profile](#deviceprofile)
+    - [{SSID}](#deviceprofilessid)
+      - [ProfileSource](#deviceprofilessidprofilesource)
+      - [Proxy](#deviceprofilessidproxy)
+      - [ProxyPacUrl](#deviceprofilessidproxypacurl)
+      - [ProxyWPAD](#deviceprofilessidproxywpad)
+      - [WiFiCost](#deviceprofilessidwificost)
+      - [WlanXml](#deviceprofilessidwlanxml)
+- ./User/Vendor/MSFT/WiFi
+  - [Profile](#userprofile)
+    - [{SSID}](#userprofilessid)
+      - [ProfileSource](#userprofilessidprofilesource)
+      - [Proxy](#userprofilessidproxy)
+      - [ProxyPacUrl](#userprofilessidproxypacurl)
+      - [ProxyWPAD](#userprofilessidproxywpad)
+      - [WiFiCost](#userprofilessidwificost)
+      - [WlanXml](#userprofilessidwlanxml)
 <!-- WiFi-Tree-End -->
 
 <!-- Device-Profile-Begin -->

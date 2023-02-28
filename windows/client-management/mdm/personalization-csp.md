@@ -4,7 +4,7 @@ description: Learn more about the Personalization CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -22,15 +22,13 @@ The Personalization CSP can set the lock screen and desktop background images. S
 <!-- Personalization-Editable-End -->
 
 <!-- Personalization-Tree-Begin -->
-The following example shows the Personalization configuration service provider in tree format.
+The following list shows the Personalization configuration service provider nodes:
 
-```text
-./Vendor/MSFT/Personalization
---- DesktopImageStatus
---- DesktopImageUrl
---- LockScreenImageStatus
---- LockScreenImageUrl
-```
+- ./Vendor/MSFT/Personalization
+  - [DesktopImageStatus](#desktopimagestatus)
+  - [DesktopImageUrl](#desktopimageurl)
+  - [LockScreenImageStatus](#lockscreenimagestatus)
+  - [LockScreenImageUrl](#lockscreenimageurl)
 <!-- Personalization-Tree-End -->
 
 <!-- Device-DesktopImageStatus-Begin -->
@@ -50,15 +48,7 @@ The following example shows the Personalization configuration service provider i
 
 <!-- Device-DesktopImageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-This represents the status of the DesktopImage.
-
-1 - Successfully downloaded or copied.
-2 - Download/Copy in progress.
-3 - Download/Copy failed.
-4 - Unknown file type.
-5 - Unsupported Url scheme.
-6 - Max retry failed.
-
+This represents the status of the DesktopImage. 1 - Successfully downloaded or copied. 2 - Download/Copy in progress. 3 - Download/Copy failed. 4 - Unknown file type. 5 - Unsupported Url scheme. 6 - Max retry failed.
 <!-- Device-DesktopImageStatus-Description-End -->
 
 <!-- Device-DesktopImageStatus-Editable-Begin -->
@@ -136,15 +126,7 @@ A http or https Url to a jpg, jpeg or png image that needs to be downloaded and 
 
 <!-- Device-LockScreenImageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-This represents the status of the LockScreenImage.
-
-1 - Successfully downloaded or copied.
-2 - Download/Copy in progress.
-3 - Download/Copy failed.
-4 - Unknown file type.
-5 - Unsupported Url scheme.
-6 - Max retry failed.
-
+This represents the status of the LockScreenImage. 1 - Successfully downloaded or copied. 2 - Download/Copy in progress. 3 - Download/Copy failed. 4 - Unknown file type. 5 - Unsupported Url scheme. 6 - Max retry failed.
 <!-- Device-LockScreenImageStatus-Description-End -->
 
 <!-- Device-LockScreenImageStatus-Editable-Begin -->

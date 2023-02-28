@@ -4,7 +4,7 @@ description: Learn more about the SharedPC CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/21/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -22,29 +22,27 @@ The SharedPC configuration service provider is used to configure settings for Sh
 <!-- SharedPC-Editable-End -->
 
 <!-- SharedPC-Tree-Begin -->
-The following example shows the SharedPC configuration service provider in tree format.
+The following list shows the SharedPC configuration service provider nodes:
 
-```text
-./Vendor/MSFT/SharedPC
---- AccountModel
---- DeletionPolicy
---- DiskLevelCaching
---- DiskLevelDeletion
---- EnableAccountManager
---- EnableSharedPCMode
---- EnableSharedPCModeWithOneDriveSync
---- EnableWindowsInsiderPreviewFlighting
---- InactiveThreshold
---- KioskModeAUMID
---- KioskModeUserTileDisplayText
---- MaintenanceStartTime
---- MaxPageFileSizeMB
---- RestrictLocalStorage
---- SetEduPolicies
---- SetPowerPolicies
---- SignInOnResume
---- SleepTimeout
-```
+- ./Vendor/MSFT/SharedPC
+  - [AccountModel](#accountmodel)
+  - [DeletionPolicy](#deletionpolicy)
+  - [DiskLevelCaching](#disklevelcaching)
+  - [DiskLevelDeletion](#diskleveldeletion)
+  - [EnableAccountManager](#enableaccountmanager)
+  - [EnableSharedPCMode](#enablesharedpcmode)
+  - [EnableSharedPCModeWithOneDriveSync](#enablesharedpcmodewithonedrivesync)
+  - [EnableWindowsInsiderPreviewFlighting](#enablewindowsinsiderpreviewflighting)
+  - [InactiveThreshold](#inactivethreshold)
+  - [KioskModeAUMID](#kioskmodeaumid)
+  - [KioskModeUserTileDisplayText](#kioskmodeusertiledisplaytext)
+  - [MaintenanceStartTime](#maintenancestarttime)
+  - [MaxPageFileSizeMB](#maxpagefilesizemb)
+  - [RestrictLocalStorage](#restrictlocalstorage)
+  - [SetEduPolicies](#setedupolicies)
+  - [SetPowerPolicies](#setpowerpolicies)
+  - [SignInOnResume](#signinonresume)
+  - [SleepTimeout](#sleeptimeout)
 <!-- SharedPC-Tree-End -->
 
 <!-- Device-AccountModel-Begin -->

@@ -4,7 +4,7 @@ description: Learn more about the PrinterProvisioning CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -21,18 +21,16 @@ ms.topic: reference
 <!-- PrinterProvisioning-Editable-End -->
 
 <!-- PrinterProvisioning-Tree-Begin -->
-The following example shows the PrinterProvisioning configuration service provider in tree format.
+The following list shows the PrinterProvisioning configuration service provider nodes:
 
-```text
-./User/Vendor/MSFT/PrinterProvisioning
---- UPPrinterInstalls
------- {PrinterSharedID}
---------- CloudDeviceID
---------- ErrorCode
---------- Install
---------- PrinterSharedName
---------- Status
-```
+- ./User/Vendor/MSFT/PrinterProvisioning
+  - [UPPrinterInstalls](#upprinterinstalls)
+    - [{PrinterSharedID}](#upprinterinstallsprintersharedid)
+      - [CloudDeviceID](#upprinterinstallsprintersharedidclouddeviceid)
+      - [ErrorCode](#upprinterinstallsprintersharediderrorcode)
+      - [Install](#upprinterinstallsprintersharedidinstall)
+      - [PrinterSharedName](#upprinterinstallsprintersharedidprintersharedname)
+      - [Status](#upprinterinstallsprintersharedidstatus)
 <!-- PrinterProvisioning-Tree-End -->
 
 <!-- User-UPPrinterInstalls-Begin -->

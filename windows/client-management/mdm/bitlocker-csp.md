@@ -4,7 +4,7 @@ description: Learn more about the BitLocker CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/22/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,40 +36,38 @@ For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation 
 <!-- BitLocker-Editable-End -->
 
 <!-- BitLocker-Tree-Begin -->
-The following example shows the BitLocker configuration service provider in tree format.
+The following list shows the BitLocker configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/BitLocker
---- AllowStandardUserEncryption
---- AllowWarningForOtherDiskEncryption
---- ConfigureRecoveryPasswordRotation
---- EncryptionMethodByDriveType
---- FixedDrivesEncryptionType
---- FixedDrivesRecoveryOptions
---- FixedDrivesRequireEncryption
---- IdentificationField
---- RemovableDrivesConfigureBDE
---- RemovableDrivesEncryptionType
---- RemovableDrivesExcludedFromEncryption
---- RemovableDrivesRequireEncryption
---- RequireDeviceEncryption
---- RequireStorageCardEncryption
---- RotateRecoveryPasswords
---- Status
------- DeviceEncryptionStatus
------- RemovableDrivesEncryptionStatus
------- RotateRecoveryPasswordsRequestID
------- RotateRecoveryPasswordsStatus
---- SystemDrivesDisallowStandardUsersCanChangePIN
---- SystemDrivesEnablePrebootInputProtectorsOnSlates
---- SystemDrivesEnablePreBootPinExceptionOnDECapableDevice
---- SystemDrivesEncryptionType
---- SystemDrivesEnhancedPIN
---- SystemDrivesMinimumPINLength
---- SystemDrivesRecoveryMessage
---- SystemDrivesRecoveryOptions
---- SystemDrivesRequireStartupAuthentication
-```
+- ./Device/Vendor/MSFT/BitLocker
+  - [AllowStandardUserEncryption](#allowstandarduserencryption)
+  - [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption)
+  - [ConfigureRecoveryPasswordRotation](#configurerecoverypasswordrotation)
+  - [EncryptionMethodByDriveType](#encryptionmethodbydrivetype)
+  - [FixedDrivesEncryptionType](#fixeddrivesencryptiontype)
+  - [FixedDrivesRecoveryOptions](#fixeddrivesrecoveryoptions)
+  - [FixedDrivesRequireEncryption](#fixeddrivesrequireencryption)
+  - [IdentificationField](#identificationfield)
+  - [RemovableDrivesConfigureBDE](#removabledrivesconfigurebde)
+  - [RemovableDrivesEncryptionType](#removabledrivesencryptiontype)
+  - [RemovableDrivesExcludedFromEncryption](#removabledrivesexcludedfromencryption)
+  - [RemovableDrivesRequireEncryption](#removabledrivesrequireencryption)
+  - [RequireDeviceEncryption](#requiredeviceencryption)
+  - [RequireStorageCardEncryption](#requirestoragecardencryption)
+  - [RotateRecoveryPasswords](#rotaterecoverypasswords)
+  - [Status](#status)
+    - [DeviceEncryptionStatus](#statusdeviceencryptionstatus)
+    - [RemovableDrivesEncryptionStatus](#statusremovabledrivesencryptionstatus)
+    - [RotateRecoveryPasswordsRequestID](#statusrotaterecoverypasswordsrequestid)
+    - [RotateRecoveryPasswordsStatus](#statusrotaterecoverypasswordsstatus)
+  - [SystemDrivesDisallowStandardUsersCanChangePIN](#systemdrivesdisallowstandarduserscanchangepin)
+  - [SystemDrivesEnablePrebootInputProtectorsOnSlates](#systemdrivesenableprebootinputprotectorsonslates)
+  - [SystemDrivesEnablePreBootPinExceptionOnDECapableDevice](#systemdrivesenableprebootpinexceptionondecapabledevice)
+  - [SystemDrivesEncryptionType](#systemdrivesencryptiontype)
+  - [SystemDrivesEnhancedPIN](#systemdrivesenhancedpin)
+  - [SystemDrivesMinimumPINLength](#systemdrivesminimumpinlength)
+  - [SystemDrivesRecoveryMessage](#systemdrivesrecoverymessage)
+  - [SystemDrivesRecoveryOptions](#systemdrivesrecoveryoptions)
+  - [SystemDrivesRequireStartupAuthentication](#systemdrivesrequirestartupauthentication)
 <!-- BitLocker-Tree-End -->
 
 <!-- Device-AllowStandardUserEncryption-Begin -->
@@ -1850,7 +1848,8 @@ This policy setting allows you to configure a minimum length for a Trusted Platf
 
 - If you disable or do not configure this policy setting, users can configure a startup PIN of any length between 6 and 20 digits.
 
-NOTE: If minimum PIN length is set below 6 digits, Windows will attempt to update the TPM 2.0 lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset.
+> [!NOTE]
+> If minimum PIN length is set below 6 digits, Windows will attempt to update the TPM 2.0 lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset.
 <!-- Device-SystemDrivesMinimumPINLength-Description-End -->
 
 <!-- Device-SystemDrivesMinimumPINLength-Editable-Begin -->

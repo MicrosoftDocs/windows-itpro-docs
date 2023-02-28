@@ -4,7 +4,7 @@ description: Learn more about the Reboot CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -22,15 +22,13 @@ The Reboot configuration service provider is used to configure reboot settings.
 <!-- Reboot-Editable-End -->
 
 <!-- Reboot-Tree-Begin -->
-The following example shows the Reboot configuration service provider in tree format.
+The following list shows the Reboot configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/Reboot
---- RebootNow
---- Schedule
------- DailyRecurrent
------- Single
-```
+- ./Device/Vendor/MSFT/Reboot
+  - [RebootNow](#rebootnow)
+  - [Schedule](#schedule)
+    - [DailyRecurrent](#scheduledailyrecurrent)
+    - [Single](#schedulesingle)
 <!-- Reboot-Tree-End -->
 
 <!-- Device-RebootNow-Begin -->

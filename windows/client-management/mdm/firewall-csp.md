@@ -4,7 +4,7 @@ description: Learn more about the Firewall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/27/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -30,131 +30,129 @@ For detailed information on some of the fields below, see [[MS-FASP]: Firewall a
 <!-- Firewall-Editable-End -->
 
 <!-- Firewall-Tree-Begin -->
-The following example shows the Firewall configuration service provider in tree format.
+The following list shows the Firewall configuration service provider nodes:
 
-```text
-./Vendor/MSFT/Firewall
---- MdmStore
------- DomainProfile
---------- AllowLocalIpsecPolicyMerge
---------- AllowLocalPolicyMerge
---------- AuthAppsAllowUserPrefMerge
---------- DefaultInboundAction
---------- DefaultOutboundAction
---------- DisableInboundNotifications
---------- DisableStealthMode
---------- DisableStealthModeIpsecSecuredPacketExemption
---------- DisableUnicastResponsesToMulticastBroadcast
---------- EnableFirewall
---------- EnableLogDroppedPackets
---------- EnableLogIgnoredRules
---------- EnableLogSuccessConnections
---------- GlobalPortsAllowUserPrefMerge
---------- LogFilePath
---------- LogMaxFileSize
---------- Shielded
------- DynamicKeywords
---------- Addresses
------------- {Id}
---------------- Addresses
---------------- AutoResolve
---------------- Keyword
------- FirewallRules
---------- {FirewallRuleName}
------------- Action
---------------- Type
------------- App
---------------- FilePath
---------------- Fqbn
---------------- PackageFamilyName
---------------- ServiceName
------------- Description
------------- Direction
------------- EdgeTraversal
------------- Enabled
------------- IcmpTypesAndCodes
------------- InterfaceTypes
------------- LocalAddressRanges
------------- LocalPortRanges
------------- LocalUserAuthorizedList
------------- Name
------------- PolicyAppId
------------- Profiles
------------- Protocol
------------- RemoteAddressDynamicKeywords
------------- RemoteAddressRanges
------------- RemotePortRanges
------------- Status
------- Global
---------- BinaryVersionSupported
---------- CRLcheck
---------- CurrentProfiles
---------- DisableStatefulFtp
---------- EnablePacketQueue
---------- IPsecExempt
---------- OpportunisticallyMatchAuthSetPerKM
---------- PolicyVersion
---------- PolicyVersionSupported
---------- PresharedKeyEncoding
---------- SaIdleTime
------- HyperVFirewallRules
---------- {FirewallRuleName}
------------- Action
---------------- Type
------------- Direction
------------- Enabled
------------- LocalAddressRanges
------------- LocalPortRanges
------------- Name
------------- Priority
------------- Protocol
------------- RemoteAddressRanges
------------- RemotePortRanges
------------- Status
------------- VMCreatorId
------- HyperVVMSettings
---------- {VMCreatorId}
------------- DefaultInboundAction
------------- DefaultOutboundAction
------------- EnableFirewall
------------- EnableLoopback
------- PrivateProfile
---------- AllowLocalIpsecPolicyMerge
---------- AllowLocalPolicyMerge
---------- AuthAppsAllowUserPrefMerge
---------- DefaultInboundAction
---------- DefaultOutboundAction
---------- DisableInboundNotifications
---------- DisableStealthMode
---------- DisableStealthModeIpsecSecuredPacketExemption
---------- DisableUnicastResponsesToMulticastBroadcast
---------- EnableFirewall
---------- EnableLogDroppedPackets
---------- EnableLogIgnoredRules
---------- EnableLogSuccessConnections
---------- GlobalPortsAllowUserPrefMerge
---------- LogFilePath
---------- LogMaxFileSize
---------- Shielded
------- PublicProfile
---------- AllowLocalIpsecPolicyMerge
---------- AllowLocalPolicyMerge
---------- AuthAppsAllowUserPrefMerge
---------- DefaultInboundAction
---------- DefaultOutboundAction
---------- DisableInboundNotifications
---------- DisableStealthMode
---------- DisableStealthModeIpsecSecuredPacketExemption
---------- DisableUnicastResponsesToMulticastBroadcast
---------- EnableFirewall
---------- EnableLogDroppedPackets
---------- EnableLogIgnoredRules
---------- EnableLogSuccessConnections
---------- GlobalPortsAllowUserPrefMerge
---------- LogFilePath
---------- LogMaxFileSize
---------- Shielded
-```
+- ./Vendor/MSFT/Firewall
+  - [MdmStore](#mdmstore)
+    - [DomainProfile](#mdmstoredomainprofile)
+      - [AllowLocalIpsecPolicyMerge](#mdmstoredomainprofileallowlocalipsecpolicymerge)
+      - [AllowLocalPolicyMerge](#mdmstoredomainprofileallowlocalpolicymerge)
+      - [AuthAppsAllowUserPrefMerge](#mdmstoredomainprofileauthappsallowuserprefmerge)
+      - [DefaultInboundAction](#mdmstoredomainprofiledefaultinboundaction)
+      - [DefaultOutboundAction](#mdmstoredomainprofiledefaultoutboundaction)
+      - [DisableInboundNotifications](#mdmstoredomainprofiledisableinboundnotifications)
+      - [DisableStealthMode](#mdmstoredomainprofiledisablestealthmode)
+      - [DisableStealthModeIpsecSecuredPacketExemption](#mdmstoredomainprofiledisablestealthmodeipsecsecuredpacketexemption)
+      - [DisableUnicastResponsesToMulticastBroadcast](#mdmstoredomainprofiledisableunicastresponsestomulticastbroadcast)
+      - [EnableFirewall](#mdmstoredomainprofileenablefirewall)
+      - [EnableLogDroppedPackets](#mdmstoredomainprofileenablelogdroppedpackets)
+      - [EnableLogIgnoredRules](#mdmstoredomainprofileenablelogignoredrules)
+      - [EnableLogSuccessConnections](#mdmstoredomainprofileenablelogsuccessconnections)
+      - [GlobalPortsAllowUserPrefMerge](#mdmstoredomainprofileglobalportsallowuserprefmerge)
+      - [LogFilePath](#mdmstoredomainprofilelogfilepath)
+      - [LogMaxFileSize](#mdmstoredomainprofilelogmaxfilesize)
+      - [Shielded](#mdmstoredomainprofileshielded)
+    - [DynamicKeywords](#mdmstoredynamickeywords)
+      - [Addresses](#mdmstoredynamickeywordsaddresses)
+        - [{Id}](#mdmstoredynamickeywordsaddressesid)
+          - [Addresses](#mdmstoredynamickeywordsaddressesidaddresses)
+          - [AutoResolve](#mdmstoredynamickeywordsaddressesidautoresolve)
+          - [Keyword](#mdmstoredynamickeywordsaddressesidkeyword)
+    - [FirewallRules](#mdmstorefirewallrules)
+      - [{FirewallRuleName}](#mdmstorefirewallrulesfirewallrulename)
+        - [Action](#mdmstorefirewallrulesfirewallrulenameaction)
+          - [Type](#mdmstorefirewallrulesfirewallrulenameactiontype)
+        - [App](#mdmstorefirewallrulesfirewallrulenameapp)
+          - [FilePath](#mdmstorefirewallrulesfirewallrulenameappfilepath)
+          - [Fqbn](#mdmstorefirewallrulesfirewallrulenameappfqbn)
+          - [PackageFamilyName](#mdmstorefirewallrulesfirewallrulenameapppackagefamilyname)
+          - [ServiceName](#mdmstorefirewallrulesfirewallrulenameappservicename)
+        - [Description](#mdmstorefirewallrulesfirewallrulenamedescription)
+        - [Direction](#mdmstorefirewallrulesfirewallrulenamedirection)
+        - [EdgeTraversal](#mdmstorefirewallrulesfirewallrulenameedgetraversal)
+        - [Enabled](#mdmstorefirewallrulesfirewallrulenameenabled)
+        - [IcmpTypesAndCodes](#mdmstorefirewallrulesfirewallrulenameicmptypesandcodes)
+        - [InterfaceTypes](#mdmstorefirewallrulesfirewallrulenameinterfacetypes)
+        - [LocalAddressRanges](#mdmstorefirewallrulesfirewallrulenamelocaladdressranges)
+        - [LocalPortRanges](#mdmstorefirewallrulesfirewallrulenamelocalportranges)
+        - [LocalUserAuthorizedList](#mdmstorefirewallrulesfirewallrulenamelocaluserauthorizedlist)
+        - [Name](#mdmstorefirewallrulesfirewallrulenamename)
+        - [PolicyAppId](#mdmstorefirewallrulesfirewallrulenamepolicyappid)
+        - [Profiles](#mdmstorefirewallrulesfirewallrulenameprofiles)
+        - [Protocol](#mdmstorefirewallrulesfirewallrulenameprotocol)
+        - [RemoteAddressDynamicKeywords](#mdmstorefirewallrulesfirewallrulenameremoteaddressdynamickeywords)
+        - [RemoteAddressRanges](#mdmstorefirewallrulesfirewallrulenameremoteaddressranges)
+        - [RemotePortRanges](#mdmstorefirewallrulesfirewallrulenameremoteportranges)
+        - [Status](#mdmstorefirewallrulesfirewallrulenamestatus)
+    - [Global](#mdmstoreglobal)
+      - [BinaryVersionSupported](#mdmstoreglobalbinaryversionsupported)
+      - [CRLcheck](#mdmstoreglobalcrlcheck)
+      - [CurrentProfiles](#mdmstoreglobalcurrentprofiles)
+      - [DisableStatefulFtp](#mdmstoreglobaldisablestatefulftp)
+      - [EnablePacketQueue](#mdmstoreglobalenablepacketqueue)
+      - [IPsecExempt](#mdmstoreglobalipsecexempt)
+      - [OpportunisticallyMatchAuthSetPerKM](#mdmstoreglobalopportunisticallymatchauthsetperkm)
+      - [PolicyVersion](#mdmstoreglobalpolicyversion)
+      - [PolicyVersionSupported](#mdmstoreglobalpolicyversionsupported)
+      - [PresharedKeyEncoding](#mdmstoreglobalpresharedkeyencoding)
+      - [SaIdleTime](#mdmstoreglobalsaidletime)
+    - [HyperVFirewallRules](#mdmstorehypervfirewallrules)
+      - [{FirewallRuleName}](#mdmstorehypervfirewallrulesfirewallrulename)
+        - [Action](#mdmstorehypervfirewallrulesfirewallrulenameaction)
+          - [Type](#mdmstorehypervfirewallrulesfirewallrulenameactiontype)
+        - [Direction](#mdmstorehypervfirewallrulesfirewallrulenamedirection)
+        - [Enabled](#mdmstorehypervfirewallrulesfirewallrulenameenabled)
+        - [LocalAddressRanges](#mdmstorehypervfirewallrulesfirewallrulenamelocaladdressranges)
+        - [LocalPortRanges](#mdmstorehypervfirewallrulesfirewallrulenamelocalportranges)
+        - [Name](#mdmstorehypervfirewallrulesfirewallrulenamename)
+        - [Priority](#mdmstorehypervfirewallrulesfirewallrulenamepriority)
+        - [Protocol](#mdmstorehypervfirewallrulesfirewallrulenameprotocol)
+        - [RemoteAddressRanges](#mdmstorehypervfirewallrulesfirewallrulenameremoteaddressranges)
+        - [RemotePortRanges](#mdmstorehypervfirewallrulesfirewallrulenameremoteportranges)
+        - [Status](#mdmstorehypervfirewallrulesfirewallrulenamestatus)
+        - [VMCreatorId](#mdmstorehypervfirewallrulesfirewallrulenamevmcreatorid)
+    - [HyperVVMSettings](#mdmstorehypervvmsettings)
+      - [{VMCreatorId}](#mdmstorehypervvmsettingsvmcreatorid)
+        - [DefaultInboundAction](#mdmstorehypervvmsettingsvmcreatoriddefaultinboundaction)
+        - [DefaultOutboundAction](#mdmstorehypervvmsettingsvmcreatoriddefaultoutboundaction)
+        - [EnableFirewall](#mdmstorehypervvmsettingsvmcreatoridenablefirewall)
+        - [EnableLoopback](#mdmstorehypervvmsettingsvmcreatoridenableloopback)
+    - [PrivateProfile](#mdmstoreprivateprofile)
+      - [AllowLocalIpsecPolicyMerge](#mdmstoreprivateprofileallowlocalipsecpolicymerge)
+      - [AllowLocalPolicyMerge](#mdmstoreprivateprofileallowlocalpolicymerge)
+      - [AuthAppsAllowUserPrefMerge](#mdmstoreprivateprofileauthappsallowuserprefmerge)
+      - [DefaultInboundAction](#mdmstoreprivateprofiledefaultinboundaction)
+      - [DefaultOutboundAction](#mdmstoreprivateprofiledefaultoutboundaction)
+      - [DisableInboundNotifications](#mdmstoreprivateprofiledisableinboundnotifications)
+      - [DisableStealthMode](#mdmstoreprivateprofiledisablestealthmode)
+      - [DisableStealthModeIpsecSecuredPacketExemption](#mdmstoreprivateprofiledisablestealthmodeipsecsecuredpacketexemption)
+      - [DisableUnicastResponsesToMulticastBroadcast](#mdmstoreprivateprofiledisableunicastresponsestomulticastbroadcast)
+      - [EnableFirewall](#mdmstoreprivateprofileenablefirewall)
+      - [EnableLogDroppedPackets](#mdmstoreprivateprofileenablelogdroppedpackets)
+      - [EnableLogIgnoredRules](#mdmstoreprivateprofileenablelogignoredrules)
+      - [EnableLogSuccessConnections](#mdmstoreprivateprofileenablelogsuccessconnections)
+      - [GlobalPortsAllowUserPrefMerge](#mdmstoreprivateprofileglobalportsallowuserprefmerge)
+      - [LogFilePath](#mdmstoreprivateprofilelogfilepath)
+      - [LogMaxFileSize](#mdmstoreprivateprofilelogmaxfilesize)
+      - [Shielded](#mdmstoreprivateprofileshielded)
+    - [PublicProfile](#mdmstorepublicprofile)
+      - [AllowLocalIpsecPolicyMerge](#mdmstorepublicprofileallowlocalipsecpolicymerge)
+      - [AllowLocalPolicyMerge](#mdmstorepublicprofileallowlocalpolicymerge)
+      - [AuthAppsAllowUserPrefMerge](#mdmstorepublicprofileauthappsallowuserprefmerge)
+      - [DefaultInboundAction](#mdmstorepublicprofiledefaultinboundaction)
+      - [DefaultOutboundAction](#mdmstorepublicprofiledefaultoutboundaction)
+      - [DisableInboundNotifications](#mdmstorepublicprofiledisableinboundnotifications)
+      - [DisableStealthMode](#mdmstorepublicprofiledisablestealthmode)
+      - [DisableStealthModeIpsecSecuredPacketExemption](#mdmstorepublicprofiledisablestealthmodeipsecsecuredpacketexemption)
+      - [DisableUnicastResponsesToMulticastBroadcast](#mdmstorepublicprofiledisableunicastresponsestomulticastbroadcast)
+      - [EnableFirewall](#mdmstorepublicprofileenablefirewall)
+      - [EnableLogDroppedPackets](#mdmstorepublicprofileenablelogdroppedpackets)
+      - [EnableLogIgnoredRules](#mdmstorepublicprofileenablelogignoredrules)
+      - [EnableLogSuccessConnections](#mdmstorepublicprofileenablelogsuccessconnections)
+      - [GlobalPortsAllowUserPrefMerge](#mdmstorepublicprofileglobalportsallowuserprefmerge)
+      - [LogFilePath](#mdmstorepublicprofilelogfilepath)
+      - [LogMaxFileSize](#mdmstorepublicprofilelogmaxfilesize)
+      - [Shielded](#mdmstorepublicprofileshielded)
 <!-- Firewall-Tree-End -->
 
 <!-- Device-MdmStore-Begin -->

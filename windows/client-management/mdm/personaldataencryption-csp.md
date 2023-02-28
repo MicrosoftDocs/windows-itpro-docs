@@ -4,7 +4,7 @@ description: Learn more about the PDE CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -22,14 +22,12 @@ The Personal Data Encryption (PDE) configuration service provider (CSP) is used 
 <!-- PDE-Editable-End -->
 
 <!-- PDE-Tree-Begin -->
-The following example shows the PDE configuration service provider in tree format.
+The following list shows the PDE configuration service provider nodes:
 
-```text
-./User/Vendor/MSFT/PDE
---- EnablePersonalDataEncryption
---- Status
------- PersonalDataEncryptionStatus
-```
+- ./User/Vendor/MSFT/PDE
+  - [EnablePersonalDataEncryption](#enablepersonaldataencryption)
+  - [Status](#status)
+    - [PersonalDataEncryptionStatus](#statuspersonaldataencryptionstatus)
 <!-- PDE-Tree-End -->
 
 <!-- User-EnablePersonalDataEncryption-Begin -->

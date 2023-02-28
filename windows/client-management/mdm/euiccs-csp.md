@@ -4,7 +4,7 @@ description: Learn more about the eUICCs CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/21/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -22,35 +22,33 @@ The eUICCs configuration service provider is used to support eUICC enterprise us
 <!-- eUICCs-Editable-End -->
 
 <!-- eUICCs-Tree-Begin -->
-The following example shows the eUICCs configuration service provider in tree format.
+The following list shows the eUICCs configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/eUICCs
---- {eUICC}
------- Actions
---------- ResetToFactoryState
---------- Status
------- DownloadServers
---------- {ServerName}
------------- AutoEnable
------------- DiscoveryState
------------- IsDiscoveryServer
------- Identifier
------- IsActive
------- Policies
---------- LocalUIEnabled
------- PPR1Allowed
------- PPR1AlreadySet
------- Profiles
---------- {ICCID}
------------- ErrorDetail
------------- IsEnabled
------------- MatchingID
------------- PPR1Set
------------- PPR2Set
------------- ServerName
------------- State
-```
+- ./Device/Vendor/MSFT/eUICCs
+  - [{eUICC}](#euicc)
+    - [Actions](#euiccactions)
+      - [ResetToFactoryState](#euiccactionsresettofactorystate)
+      - [Status](#euiccactionsstatus)
+    - [DownloadServers](#euiccdownloadservers)
+      - [{ServerName}](#euiccdownloadserversservername)
+        - [AutoEnable](#euiccdownloadserversservernameautoenable)
+        - [DiscoveryState](#euiccdownloadserversservernamediscoverystate)
+        - [IsDiscoveryServer](#euiccdownloadserversservernameisdiscoveryserver)
+    - [Identifier](#euiccidentifier)
+    - [IsActive](#euiccisactive)
+    - [Policies](#euiccpolicies)
+      - [LocalUIEnabled](#euiccpolicieslocaluienabled)
+    - [PPR1Allowed](#euiccppr1allowed)
+    - [PPR1AlreadySet](#euiccppr1alreadyset)
+    - [Profiles](#euiccprofiles)
+      - [{ICCID}](#euiccprofilesiccid)
+        - [ErrorDetail](#euiccprofilesicciderrordetail)
+        - [IsEnabled](#euiccprofilesiccidisenabled)
+        - [MatchingID](#euiccprofilesiccidmatchingid)
+        - [PPR1Set](#euiccprofilesiccidppr1set)
+        - [PPR2Set](#euiccprofilesiccidppr2set)
+        - [ServerName](#euiccprofilesiccidservername)
+        - [State](#euiccprofilesiccidstate)
 <!-- eUICCs-Tree-End -->
 
 <!-- Device-{eUICC}-Begin -->

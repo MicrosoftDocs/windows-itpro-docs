@@ -4,7 +4,7 @@ description: Learn more about the RemoteWipe CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -22,22 +22,20 @@ The RemoteWipe configuration service provider can be used by mobile operators DM
 <!-- RemoteWipe-Editable-End -->
 
 <!-- RemoteWipe-Tree-Begin -->
-The following example shows the RemoteWipe configuration service provider in tree format.
+The following list shows the RemoteWipe configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/RemoteWipe
---- AutomaticRedeployment
------- doAutomaticRedeployment
------- LastError
------- Status
---- doWipe
---- doWipeCloud
---- doWipeCloudPersistProvisionedData
---- doWipeCloudPersistUserData
---- doWipePersistProvisionedData
---- doWipePersistUserData
---- doWipeProtected
-```
+- ./Device/Vendor/MSFT/RemoteWipe
+  - [AutomaticRedeployment](#automaticredeployment)
+    - [doAutomaticRedeployment](#automaticredeploymentdoautomaticredeployment)
+    - [LastError](#automaticredeploymentlasterror)
+    - [Status](#automaticredeploymentstatus)
+  - [doWipe](#dowipe)
+  - [doWipeCloud](#dowipecloud)
+  - [doWipeCloudPersistProvisionedData](#dowipecloudpersistprovisioneddata)
+  - [doWipeCloudPersistUserData](#dowipecloudpersistuserdata)
+  - [doWipePersistProvisionedData](#dowipepersistprovisioneddata)
+  - [doWipePersistUserData](#dowipepersistuserdata)
+  - [doWipeProtected](#dowipeprotected)
 <!-- RemoteWipe-Tree-End -->
 
 <!-- Device-AutomaticRedeployment-Begin -->

@@ -4,7 +4,7 @@ description: Learn more about the DevInfo CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -27,18 +27,16 @@ For the DevInfo CSP, you can't use the Replace command unless the node already e
 <!-- DevInfo-Editable-End -->
 
 <!-- DevInfo-Tree-Begin -->
-The following example shows the DevInfo configuration service provider in tree format.
+The following list shows the DevInfo configuration service provider nodes:
 
-```text
-./DevInfo
---- DevId
---- DmV
---- Ext
------- ICCID
---- Lang
---- Man
---- Mod
-```
+- ./DevInfo
+  - [DevId](#devid)
+  - [DmV](#dmv)
+  - [Ext](#ext)
+    - [ICCID](#exticcid)
+  - [Lang](#lang)
+  - [Man](#man)
+  - [Mod](#mod)
 <!-- DevInfo-Tree-End -->
 
 <!-- Device-DevId-Begin -->
