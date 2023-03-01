@@ -2,12 +2,12 @@
 title: Plan for Windows 11
 description: Windows 11 deployment planning, IT Pro content.
 ms.prod: windows-client
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: high
 ms.topic: article
-ms.collection: highpri
+ms.collection: highpri, tier1
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
 ---

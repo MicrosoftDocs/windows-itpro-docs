@@ -1,7 +1,6 @@
 ---
 title: Refresh a Windows 7 computer with Windows 10 (Windows 10)
 description: This article will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the computer refresh process.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

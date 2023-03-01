@@ -1,6 +1,6 @@
 ---
 title: Summary dashboard
-description: Provides a summary view of the current update status for all devices enrolled into Windows Autopatch. 
+description: Provides a summary view of the current update status for all devices enrolled into Windows Autopatch.
 ms.date: 12/01/2022
 ms.prod: windows-client
 ms.technology: itpro-updates
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: adnich
+ms.reviewer: adnich
 ---
 
 # Summary dashboard

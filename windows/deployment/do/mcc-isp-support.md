@@ -3,12 +3,12 @@ title: Support and troubleshooting
 manager: aaroncz
 description: Troubleshooting issues for Microsoft Connected Cache for ISP
 ms.prod: windows-client
-audience: itpro
 author: nidos
 ms.author: nidos
 ms.topic: reference
 ms.date: 12/31/2017
 ms.technology: itpro-updates
+ms.collection: tier3
 ---
 
 # Support and troubleshooting

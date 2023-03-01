@@ -1,8 +1,7 @@
 ---
 title: Plan for volume activation (Windows 10)
 description: Product activation is the process of validating software with the manufacturer after it has been installed on a specific computer.
-ms.reviewer: 
-  - nganguly
+ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

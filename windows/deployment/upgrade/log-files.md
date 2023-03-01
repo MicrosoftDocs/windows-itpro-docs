@@ -3,12 +3,11 @@ title: Log files and resolving upgrade errors
 manager: aaroncz
 ms.author: frankroj
 description: Learn how to interpret and analyze the log files that are generated during the Windows 10 upgrade process.
-ms.custom: seo-marvel-apr2020
 ms.prod: windows-client
 author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri
+ms.collection: highpri, tier2
 ms.technology: itpro-deploy
 ms.date: 10/28/2022
 ---

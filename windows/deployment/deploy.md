@@ -1,14 +1,12 @@
 ---
 title: Deploy Windows 10 (Windows 10)
 description: Learn about Windows 10 upgrade options for planning, testing, and managing your production deployment.
-ms.reviewer: 
 manager: aaroncz
 author: frankroj
 ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ms.date: 11/23/2022
 ms.technology: itpro-deploy
 ---

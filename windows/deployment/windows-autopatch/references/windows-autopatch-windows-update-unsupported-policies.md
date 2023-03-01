@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: adnich
+ms.reviewer: adnich
 ---
 
 # Windows update policies
@@ -26,10 +26,10 @@ The following policies contain settings which apply to both Windows quality and 
 | ----- | ----- | ----- | ----- | ----- |
 | Microsoft product updates | Allow | Allow | Allow | Allow |
 | Windows drivers | Allow | Allow | Allow | Allow |
-| Quality update deferral period | 0 | 1 | 6 | 9 |
-| Feature update deferral period | 0 | 0 | 0 | 0 |
+| Windows quality update deferral period | 0 | 1 | 6 | 9 |
+| Windows feature update deferral period | 0 | 0 | 0 | 0 |
 | Upgrade Windows 10 to latest Windows 11 release | No | No | No | No |
-| Set feature update uninstall period | 30 days | 30 days | 30 days | 30 days |
+| Set Windows feature update uninstall period | 30 days | 30 days | 30 days | 30 days |
 | Servicing channel | General availability |  General availability |  General availability |  General availability |
 
 ### Windows 10 and later user experience settings
@@ -41,8 +41,8 @@ The following policies contain settings which apply to both Windows quality and 
 | Option to pause updates | Disable | Disable | Disable | Disable |
 | Option to check for Windows updates | Default |  Default | Default | Default |
 | Change notification update level | Default | Default |  Default | Default |
-| Deadline for feature updates | 5 | 5 | 5 | 5 |
-| Deadline for quality updates | 0 | 2 | 2 | 5 |
+| Deadline for Windows feature updates | 5 | 5 | 5 | 5 |
+| Deadline for Windows quality updates | 0 | 2 | 2 | 5 |
 | Grace period | 0 | 2 | 2 | 2 |
 | Auto-restart before deadline | Yes | Yes | Yes | Yes |
 
@@ -53,24 +53,24 @@ The following policies contain settings which apply to both Windows quality and 
 | Included groups | Modern Workplace Devices–Windows Autopatch-Test | Modern Workplace Devices–Windows Autopatch-First | Modern Workplace Devices–Windows Autopatch-Fast | Modern Workplace Devices–Windows Autopatch-Broad |
 | Excluded groups | None | None | None | None |
 
-## Feature update policies
+## Windows feature update policies
 
-The service deploys policies using Microsoft Intune to control how feature updates are deployed to devices.  
+The service deploys policies using Microsoft Intune to control how Windows feature updates are deployed to devices.  
 
-### Feature updates for Windows 10 and later
+### Windows feature updates for Windows 10 and later
 
 These policies control the minimum target version of Windows which a device is meant to accept. Throughout the rest of the article, you will see these policies referred to as DSS policies. After onboarding there will be four of these policies in your tenant with the following naming convention:
 
 **Modern Workplace DSS Policy [ring name]**
 
-#### Feature update deployment settings
+#### Windows feature update deployment settings
 
 | Setting name | Test | First | Fast | Broad |
 | ----- | ----- | ----- | ----- | ----- |
 | Name | Current targeted version of Windows | Current targeted version of Windows | Current targeted version of Windows | Current targeted version of Windows |
 | Rollout options | Immediate start | Immediate start | Immediate start | Immediate start |
 
-#### Feature update policy assignments
+#### Windows feature update policy assignments
 
 | Setting name | Test | First | Fast | Broad |
 | ----- | ----- | ----- | ----- | ----- |

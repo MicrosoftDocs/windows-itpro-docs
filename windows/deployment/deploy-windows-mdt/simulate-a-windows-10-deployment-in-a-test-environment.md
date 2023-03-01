@@ -1,7 +1,6 @@
 ---
 title: Simulate a Windows 10 deployment in a test environment (Windows 10)
 description: This article will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

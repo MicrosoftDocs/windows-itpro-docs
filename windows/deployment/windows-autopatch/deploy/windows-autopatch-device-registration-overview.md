@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: andredm7
+ms.reviewer: andredm7
 ---
 
 # Device registration overview

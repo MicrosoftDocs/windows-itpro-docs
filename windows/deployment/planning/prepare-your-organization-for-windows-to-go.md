@@ -1,13 +1,11 @@
 ---
 title: Prepare your organization for Windows To Go (Windows 10)
-description: Though Windows To Go is no longer being developed, you can find info here about the "what", "why", and "when" of deployment.
-ms.reviewer: 
+description: Though Windows To Go is no longer being developed, you can find info here about the what, why, and when of deployment.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ms.technology: itpro-deploy
 ms.date: 10/28/2022
 ---

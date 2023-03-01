@@ -7,7 +7,7 @@ ms.prod: windows-client
 author: frankroj
 ms.date: 11/01/2022
 ms.topic: article
-ms.collection: highpri
+ms.collection: highpri, tier2
 ms.technology: itpro-deploy
 ---
 

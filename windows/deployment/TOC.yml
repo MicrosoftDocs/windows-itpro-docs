@@ -334,6 +334,8 @@
           href: update/windows-update-overview.md
         - name: Servicing stack updates
           href: update/servicing-stack-updates.md
+        - name: Update CSP policies
+          href: /windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json  
         - name: Additional Windows Update settings
           href: update/waas-wu-settings.md
         - name: Delivery Optimization reference

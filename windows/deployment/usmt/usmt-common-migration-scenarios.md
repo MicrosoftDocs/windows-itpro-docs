@@ -1,7 +1,6 @@
 ---
 title: Common Migration Scenarios (Windows 10)
 description: See how the User State Migration Tool (USMT) 10.0 is used when planning hardware and/or operating system upgrades.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
