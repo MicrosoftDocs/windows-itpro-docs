@@ -54,31 +54,22 @@ To check the installation status of an app from the Intune portal, follow these 
 1. Select the application you want to check
 1. From the **Overview** page, you can verify the overall installation status
     
-    :::image type="content" source="./images/intune-app-install-overview.png" alt-text="App installation details from Intune admin center.":::
+    :::image type="content" source="./images/intune-app-install-overview.png" alt-text="Microsoft Intune admin center - App installation details.":::
 
-1. From the **Device install status** page, you can verify the installation status for each device
+1. From the **Device install status** page, you can verify the installation status for each device, and the status code that indicates the cause of the failure
     
-    :::image type="content" source="./images/intune-app-install-status.png" alt-text="App installation status for each device from Intune admin center.":::
+    :::image type="content" source="./images/intune-app-install-status.png" alt-text="Microsoft Intune admin center - App installation status for each device.":::
 
+An application may have installed correctly, but reported as failed due to the detection rules defined in Intune.\
+If you find that the app is being reported as having a failure, but it has been installed successfully when checking for its presence on a device, you may need to adjust the app's detection rules in Intune.
 
-When reviewing an app, you can navigate to **Monitor** > **Device install status** to see which devices are failing and the status code for why it has failed to install.
-
-![](./images/image6.png)
-
-An application may have installed correctly, but reported as failed due to its Detection rules which were defined at the time when the app was added into Intune.\
-If you find that the app is being reported as having a failure but it has been installed successfully when checking for its presence on a device, you may need to adjust the app's detection rules in Intune.
-
-Also, consider the opposite case. If an app is reported as being installed but has actually failed to install on a target, it's possible that a reinstall would not be retried from Intune and you will need to ensure that you have the correct detection rules set for that app in Intune.
+You should also consider the opposite scenario. If an app is reported as being installed, but has actually failed to install, Intune will not retry the installation. You must ensure that you have the correct detection rules set for that app in Intune.
 
 ### Check for installation on the device
 
-From the Settings app, go to **Apps** > **Installed apps**. You can see the list of installed apps and validate that your targeted app is present here.
-
-Additionally, if your app was not installed via an msi (and therefore visible in the MEM portal), you can see the version number of the installed app in this list in Settings.
-
-You can also validate that the app has been installed by checking its installation directory. This is usually in `C:\Program Files` or `C:\Program Files (x86)`, but can vary from app to app.
-
-Lastly, you may want to launch the app to be sure that it has installed correctly.
+On a Windows SE device, open the **Settings** app and select **Apps** > **Installed apps**. You can see the list of installed apps and validate that your targeted app is listed.
+Another way to validate that the app has installed is to check its installation directory. The path is usually `C:\Program Files` or `C:\Program Files (x86)`, but can vary from app to app.
+Lastly, launch the app to ensure that it has installed correctly.
 
 ### Known limitations
 
