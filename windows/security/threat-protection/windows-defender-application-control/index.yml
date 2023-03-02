@@ -91,8 +91,10 @@ landingContent:
         links:
           - text: Using signed policies to protect against tampering
             url: use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md
-          - text: Audit and enforce policies
-            url: audit-and-enforce-windows-defender-application-control-policies.md
+          - text: Audit mode policies
+            url: audit-windows-defender-application-control-policies.md
+          - text: Enforcement mode policies
+            url: enforce-windows-defender-application-control-policies.md
           - text: Disabling WDAC policies
             url: disable-windows-defender-application-control-policies.md
       - linkListType: tutorial
