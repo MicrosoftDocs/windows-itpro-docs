@@ -1,37 +1,40 @@
 ---
-title: Consideration before deploying apps with Managed Installer
-description: Learn how to Consideration before deploying apps with Managed Installer
+title: Validate the applications deployed to Windows SE devices
+description: Learn how to validate the applications deployed to Windows SE devices via Intune.
 ms.date: 02/24/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
 ---
 
-![](./images/validate-app.svg)
+# Validate the applications deployed to Windows SE devices
 
-Validating the applications that you're deploying to Windows 11 SE devices, is a necessary step for ensuring that users can execute functional apps.
+:::image type="content" source="./images/validate-app.svg" alt-text="Diagram showing the three tutorial steps, highlighting the app validation step." border="false":::
 
-Application validation consists of a few steps:
+A fundamental step in deploying apps to Windows 11 SE devices is to validate that the apps work as expected.
 
-1. Wait for the application to install on a device that is managed by Intune
+Application validation consists of the following steps:
+
+1. Wait for the application to install
 1. Verify that the app has installed successfully
 1. Open the app and exercise all user workflows
 1. Inspect the app and take note of any potential problems
 1. If necessary, [create an additional policy](./create-additional-policies)
 
-> **Note**
->
+> [!NOTE]
 > Apps must be validated on a case-by-case basis. A successful installation doesn't mean that the app will run properly. A successful execution of the app, doesn't mean it will *always* run properly. More details about these behaviors are provided below.
 
 ## Wait for the application to install
 
-Application installation depends on when the initial managed installer policies are deployed, and when apps are deployed to a device.
+Application installation depends on two factors:
 
-> **Important**
->
+- when the initial managed installer policies are applied to the device
+- when the apps are deployed to a device
+
+> [!IMPORTANT]
 > The Intune management extension agent checks every hour (or on service or device restart) for any new Win32 app assignments.
 
-Unless applications are blocked by the E-Mode policy, the process to deploy apps to Windows SE devices (including how long it takes) should be consistent with the experience that you have with non-SE devices.
+Unless applications are blocked by the E-Mode policy, the process to deploy apps to Windows SE devices should be consistent with the experience that you have with non-SE devices.
 
 ## Check for installation
 
@@ -44,11 +47,21 @@ Both options are worth checking. Installation in Intune can be used to check the
 
 ### Check for installation from Intune
 
-From the Apps > All apps view in Intune, you can select an app to see the overall installation status.
+To check the installation status of an app from the Intune portal, follow these steps:
 
-![](./images/image5.png)
+1. Sign in to the <a href="https://intune.microsoft.com/" target="_blank"><b>Microsoft Intune admin center</b></a>
+1. Select **App > All apps**
+1. Select the application you want to check
+1. From the **Overview** page, you can verify the overall installation status
+    
+    :::image type="content" source="./images/intune-app-install-overview.png" alt-text="App installation details from Intune admin center.":::
 
-When looking at an app, you can navigate to **Monitor** > **Device install status** to see which devices are failing and the status code for why it has failed to install.
+1. From the **Device install status** page, you can verify the installation status for each device
+    
+    :::image type="content" source="./images/intune-app-install-status.png" alt-text="App installation status for each device from Intune admin center.":::
+
+
+When reviewing an app, you can navigate to **Monitor** > **Device install status** to see which devices are failing and the status code for why it has failed to install.
 
 ![](./images/image6.png)
 

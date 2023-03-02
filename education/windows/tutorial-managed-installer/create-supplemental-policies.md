@@ -1,5 +1,5 @@
 ---
-title: Consideration before deploying apps with Managed Installer
+title: Create additional policies for applications
 description: Learn how to Consideration before deploying apps with Managed Installer
 ms.date: 02/24/2023
 ms.topic: tutorial
