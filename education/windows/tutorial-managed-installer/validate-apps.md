@@ -95,7 +95,7 @@ Here are things to pay attention to and watch out for:
 - Dialogs show during use indicating something was blocked.
 - Multiple apps are installed, especially if one app appears to be a launcher/updater. (e.g. Downloading Adobe Photoshop includes the Adobe Creative Cloud launcher, which updates Photoshop)
 - Any messages indicating that the app is doing pre-installation work or downloading additional content.
-- Event logs found in CodeIntegrity - Operational, and AppLocker - MSI and Script. For more information, see [Troubleshooting - Event Viewer](./Troubleshooting#event-viewer).
+- Event logs found in CodeIntegrity - Operational, and AppLocker - MSI and Script. For more information, see [Troubleshooting - Event Viewer](troubleshoot.md#event-viewer).
 
 ### Compatible apps
 
@@ -121,7 +121,7 @@ You may see a dialog indicating *This app won't run on your PC*. Check the indic
 
 ### Event Viewer
 
-More detail can be obtained when looking for events where executables were blocked in the Event Viewer. For more information, see [Troubleshooting - Event Viewer](./Troubleshooting#event-viewer).
+More detail can be obtained when looking for events where executables were blocked in the Event Viewer. For more information, see [Troubleshooting - Event Viewer](troubleshoot.md#event-viewer).
 
 ## Section review
 
@@ -154,8 +154,9 @@ Advance to the next article to learn how to troubleshoot common errors when depl
 > [!div class="nextstepaction"]
 > [Next: troubleshoot >](troubleshoot.md)
 
-[M365-1]: https://learn.microsoft.com/microsoft-365/education/deploy/microsoft-store-for-education
 
-[WIN-1]: https://learn.microsoft.com/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer
-[WIN-2]: https://learn.microsoft.com/windows/msix/
-[WIN-3]: https://learn.microsoft.com/windows/security/threat-protection/windows-defender-application-control/manage-packaged-apps-with-windows-defender-application-control
+[M365-1]: /microsoft-365/education/deploy/microsoft-store-for-education
+
+[WIN-1]: /windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer
+[WIN-2]: /windows/msix/
+[WIN-3]: /windows/security/threat-protection/windows-defender-application-control/manage-packaged-apps-with-windows-defender-application-control

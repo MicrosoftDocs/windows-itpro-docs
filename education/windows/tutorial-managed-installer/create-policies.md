@@ -11,7 +11,7 @@ appliesto:
 
 :::image type="content" source="./images/create-additional-policies.svg" alt-text="Diagram showing the three tutorial steps, highlighting the policy creation step." border="false":::
 
-Additional policies can be written to allow applications that are [semi-compatible](./validate-apps#compatible-apps) or [incompatible](validate-appa#incompatible-apps) with the managed installer.
+Additional policies can be written to allow applications that are [semi-compatible](./validate-apps#compatible-apps) or [incompatible](./validate-apps#incompatible-apps) with the managed installer.
 
 The following table details the two policy types to allow apps to run:
 
