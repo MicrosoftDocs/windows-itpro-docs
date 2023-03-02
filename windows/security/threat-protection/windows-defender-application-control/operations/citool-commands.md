@@ -76,6 +76,7 @@ CiTool makes Windows Defender Application Control (WDAC) policy management easie
             Write-Host $wdacPolicy.PolicyID "`n"
         }
     }
+    
     ```
 
 5. Display the help menu
