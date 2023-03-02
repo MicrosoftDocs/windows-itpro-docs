@@ -73,21 +73,13 @@ If Windows Autopatch detects issues between versions of Microsoft 365 Apps for e
 
 Windows Autopatch will either:
 
-- Choose to stay on the previous version for rings that haven't received the update yet.
+- Choose to stay on the previous version for devices that haven't received the update yet.
 - Force all devices to roll back to the previous version.
 
 > [!NOTE]
-> Windows Autopatch doesn't currently allow customers to force their devices to stay on a previous version or rollback to a previous version.
+> Windows Autopatch doesn't allow you to:<ul><li>Pause or rollback an update in the Microsoft Intune admin center</li><li>Submit a request to the Windows Autopatch Service Engineering Team to pause or rollback an update</li>
 
-Windows quality updates are bundled together into a single release in the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). Therefore, we can't roll back only a portion of the update for Microsoft 365 Apps for enterprise.  
-
-## Compatibility with Servicing Profiles
-
-[Servicing profiles](/deployoffice/admincenter/servicing-profile) is a feature in the [Microsoft 365 Apps admin center](https://config.office.com/) that provides controlled update management of monthly Office updates, including controls for user and device targeting, scheduling, rollback, and reporting.
-
-A [service profile](/deployoffice/admincenter/servicing-profile#compatibility-with-other-management-tools) takes precedence over other policies, such as a Microsoft Intune policy or the Office Deployment Tool. The servicing profile will affect all devices that meet the [device eligibility requirements](#device-eligibility) regardless of existing management tools in your environment. So, if you're targeting a managed device with a servicing profile it will be ineligible for Microsoft 365 App update management.
-
-However, the device may still be eligible for other managed updates. For more information about a device's eligibility for a given [software update workload](windows-autopatch-update-management.md#software-update-workloads), see the Device eligibility section of each respective software update workload.
+Updates are bundled together into a single release in the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). Therefore, we can't roll back only a portion of the update for Microsoft 365 Apps for enterprise.  
 
 ## Allow or block Microsoft 365 App updates
 
@@ -125,6 +117,14 @@ For organizations seeking greater control, you can allow or block Microsoft 365 
     3. Windows Autopatch - Office Update Configuration [First]
     4. Windows Autopatch - Office Update Configuration [Fast]
     5. Windows Autopatch - Office Update Configuration [Broad]
+
+## Compatibility with Servicing Profiles
+
+[Servicing profiles](/deployoffice/admincenter/servicing-profile) is a feature in the [Microsoft 365 Apps admin center](https://config.office.com/) that provides controlled update management of monthly Office updates, including controls for user and device targeting, scheduling, rollback, and reporting.
+
+A [service profile](/deployoffice/admincenter/servicing-profile#compatibility-with-other-management-tools) takes precedence over other policies, such as a Microsoft Intune policy or the Office Deployment Tool. The servicing profile will affect all devices that meet the [device eligibility requirements](#device-eligibility) regardless of existing management tools in your environment. So, if you're targeting a managed device with a servicing profile it will be ineligible for Microsoft 365 App update management.
+
+However, the device may still be eligible for other managed updates. For more information about a device's eligibility for a given [software update workload](windows-autopatch-update-management.md#software-update-workloads), see the Device eligibility section of each respective software update workload.
 
 ## Incidents and outages
 
