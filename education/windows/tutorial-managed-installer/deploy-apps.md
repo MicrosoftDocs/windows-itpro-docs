@@ -33,7 +33,7 @@ The following table provides an overview of the applications types that can be d
 The addition of Win32 applications to Intune consists of repackaging the apps and defining the commands to silently install them. The process is described in the article [Add, assign, and monitor a Win32 app in Microsoft Intune][MEM-1].
 
 > [!IMPORTANT]
-> There are known limitations that might prevent a specific app from being installed. For more information, see the next section [validate applications](validate-apps#known-limitations).
+> There are known limitations that might prevent a specific app from being installed. For more information, see the next section [validate applications](validate-apps.md#known-limitations).
 
 > [!NOTE]
 > While Win32 apps can be deployed through the Microsoft Store integration with Intune, it's currently an unsupported deployment method for Windows 11 SE.
@@ -45,7 +45,7 @@ The addition of Win32 applications to Intune consists of repackaging the apps an
 For private, line-of-business (LOB) UWP apps, [deploy as line-of-business apps][MEM-2]
 
 > [!IMPORTANT]
-> UWP apps require the creation and deployment of supplemental policies. For more information, see the next section [validate applications](validate-apps#known-limitations).
+> UWP apps require the creation and deployment of supplemental policies. For more information, see the next section [validate applications](validate-apps.md#known-limitations).
 
 ### Microsoft Store apps
 
