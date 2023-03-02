@@ -1,6 +1,6 @@
 ---
-title: NetworkProxy DDF file
-description: View the XML file containing the device description framework (DDF) for the NetworkProxy configuration service provider.
+title: DevicePreparation DDF file
+description: View the XML file containing the device description framework (DDF) for the DevicePreparation configuration service provider.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
@@ -13,9 +13,9 @@ ms.topic: reference
 
 <!-- Auto-Generated CSP Document -->
 
-# NetworkProxy DDF file
+# DevicePreparation DDF file
 
-The following XML file contains the device description framework (DDF) for the NetworkProxy configuration service provider.
+The following XML file contains the device description framework (DDF) for the DevicePreparation configuration service provider.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -25,13 +25,13 @@ The following XML file contains the device description framework (DDF) for the N
   <MSFT:Diagnostics>
   </MSFT:Diagnostics>
   <Node>
-    <NodeName>NetworkProxy</NodeName>
-    <Path>./Vendor/MSFT</Path>
+    <NodeName>DevicePreparation</NodeName>
+    <Path>./Device/Vendor/MSFT</Path>
     <DFProperties>
       <AccessType>
         <Get />
       </AccessType>
-      <Description>The root node for the NetworkProxy configuration service provider.</Description>
+      <Description>Parent node for the CSP.</Description>
       <DFFormat>
         <node />
       </DFFormat>
@@ -42,26 +42,25 @@ The following XML file contains the device description framework (DDF) for the N
         <Permanent />
       </Scope>
       <DFType>
-        <MIME />
+        <DDFName />
       </DFType>
       <MSFT:Applicability>
-        <MSFT:OsBuildVersion>10.0.15063</MSFT:OsBuildVersion>
+        <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x88*;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x87;0x88;0x88*;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
-      <NodeName>ProxySettingsPerUser</NodeName>
+      <NodeName>PageEnabled</NodeName>
       <DFProperties>
         <AccessType>
-          <Delete />
           <Get />
           <Replace />
         </AccessType>
-        <DefaultValue>1</DefaultValue>
-        <Description>When set to 0, it enables proxy configuration as global, machine wide.</Description>
+        <DefaultValue>false</DefaultValue>
+        <Description>This node determines whether to enable or show the Device Preparation page.</Description>
         <DFFormat>
-          <int />
+          <bool />
         </DFFormat>
         <Occurrence>
           <One />
@@ -72,32 +71,25 @@ The following XML file contains the device description framework (DDF) for the N
         <DFType>
           <MIME />
         </DFType>
-        <MSFT:Applicability>
-          <MSFT:OsBuildVersion>10.0.17134</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="ENUM">
           <MSFT:Enum>
-            <MSFT:Value>0</MSFT:Value>
-            <MSFT:ValueDescription>Proxy configuration is global, machine wide.</MSFT:ValueDescription>
+            <MSFT:Value>false</MSFT:Value>
+            <MSFT:ValueDescription>The page is not enabled</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
-            <MSFT:Value>1</MSFT:Value>
-            <MSFT:ValueDescription>Proxy configuration is per user.</MSFT:ValueDescription>
+            <MSFT:Value>true</MSFT:Value>
+            <MSFT:ValueDescription>The page is enabled</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
       </DFProperties>
     </Node>
     <Node>
-      <NodeName>AutoDetect</NodeName>
+      <NodeName>PageStatus</NodeName>
       <DFProperties>
         <AccessType>
-          <Delete />
           <Get />
-          <Replace />
         </AccessType>
-        <DefaultValue>1</DefaultValue>
-        <Description>Automatically detect settings. If enabled, the system tries to find the path to a PAC script.</Description>
+        <Description>This node provides status of the Device Preparation page.  Values are an enum: 0 = Disabled; 1 = Enabled;  2 = InProgress; 3 = Succeeded; 4 = Failed.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -119,18 +111,29 @@ The following XML file contains the device description framework (DDF) for the N
             <MSFT:Value>1</MSFT:Value>
             <MSFT:ValueDescription>Enabled</MSFT:ValueDescription>
           </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>2</MSFT:Value>
+            <MSFT:ValueDescription>InProgress</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>3</MSFT:Value>
+            <MSFT:ValueDescription>Succeeded</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>4</MSFT:Value>
+            <MSFT:ValueDescription>Failed</MSFT:ValueDescription>
+          </MSFT:Enum>
         </MSFT:AllowedValues>
       </DFProperties>
     </Node>
     <Node>
-      <NodeName>SetupScriptUrl</NodeName>
+      <NodeName>PageSettings</NodeName>
       <DFProperties>
         <AccessType>
-          <Delete />
           <Get />
           <Replace />
         </AccessType>
-        <Description>Address to the PAC script you want to use.</Description>
+        <Description>This node configures specific settings for the Device Preparation page.</Description>
         <DFFormat>
           <chr />
         </DFFormat>
@@ -148,12 +151,12 @@ The following XML file contains the device description framework (DDF) for the N
       </DFProperties>
     </Node>
     <Node>
-      <NodeName>ProxyServer</NodeName>
+      <NodeName>BootstrapperAgent</NodeName>
       <DFProperties>
         <AccessType>
           <Get />
         </AccessType>
-        <Description>Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings do not apply to VPN connections.</Description>
+        <Description>The subnodes configure settings for the Bootstrapper Agent.</Description>
         <DFFormat>
           <node />
         </DFFormat>
@@ -168,14 +171,13 @@ The following XML file contains the device description framework (DDF) for the N
         </DFType>
       </DFProperties>
       <Node>
-        <NodeName>ProxyAddress</NodeName>
+        <NodeName>ClassID</NodeName>
         <DFProperties>
           <AccessType>
-            <Delete />
             <Get />
             <Replace />
           </AccessType>
-          <Description><![CDATA[Address to the proxy server. Specify an address in the format <server>[“:”<port>]. ]]></Description>
+          <Description>This node stores the class ID for the Bootstrapper Agent WinRT object.</Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -193,14 +195,13 @@ The following XML file contains the device description framework (DDF) for the N
         </DFProperties>
       </Node>
       <Node>
-        <NodeName>Exceptions</NodeName>
+        <NodeName>ExecutionContext</NodeName>
         <DFProperties>
           <AccessType>
-            <Delete />
             <Get />
             <Replace />
           </AccessType>
-          <Description>Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node. Use semicolons (;) to separate entries. </Description>
+          <Description>This node holds opaque data that will be passed to the Bootstrapper Agent as a parameter when it is invoked to execute.</Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -214,22 +215,19 @@ The following XML file contains the device description framework (DDF) for the N
             <MIME />
           </DFType>
           <MSFT:AllowedValues ValueType="None">
-            <MSFT:List Delimiter=";" />
           </MSFT:AllowedValues>
         </DFProperties>
       </Node>
       <Node>
-        <NodeName>UseProxyForLocalAddresses</NodeName>
+        <NodeName>InstallationStatusUri</NodeName>
         <DFProperties>
           <AccessType>
-            <Delete />
             <Get />
             <Replace />
           </AccessType>
-          <DefaultValue>0</DefaultValue>
-          <Description>Specifies whether the proxy server should be used for local (intranet) addresses.  Valid values:</Description>
+          <Description>This node holds a URI that can be queried for the status of the Bootstrapper Agent installation.</Description>
           <DFFormat>
-            <int />
+            <chr />
           </DFFormat>
           <Occurrence>
             <One />
@@ -240,15 +238,7 @@ The following XML file contains the device description framework (DDF) for the N
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="ENUM">
-            <MSFT:Enum>
-              <MSFT:Value>0</MSFT:Value>
-              <MSFT:ValueDescription>Use proxy server for local addresses</MSFT:ValueDescription>
-            </MSFT:Enum>
-            <MSFT:Enum>
-              <MSFT:Value>1</MSFT:Value>
-              <MSFT:ValueDescription>Do not use proxy server for local addresses</MSFT:ValueDescription>
-            </MSFT:Enum>
+          <MSFT:AllowedValues ValueType="None">
           </MSFT:AllowedValues>
         </DFProperties>
       </Node>
@@ -259,4 +249,4 @@ The following XML file contains the device description framework (DDF) for the N
 
 ## Related articles
 
-[NetworkProxy configuration service provider reference](networkproxy-csp.md)
+[DevicePreparation configuration service provider reference](devicepreparation-csp.md)
