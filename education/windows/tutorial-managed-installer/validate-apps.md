@@ -19,7 +19,7 @@ Application validation consists of the following steps:
 1. Verify that the app has installed successfully
 1. Open the app and exercise all user workflows
 1. Inspect the app and take note of any potential problems
-1. If necessary, [create an additional policy](./create-additional-policies)
+1. If necessary, create a policy to allow the app to run
 
 > [!NOTE]
 > Apps must be validated on a case-by-case basis. A successful installation doesn't mean that the app will run properly. A successful execution of the app, doesn't mean it will *always* run properly. More details about these behaviors are provided below.
