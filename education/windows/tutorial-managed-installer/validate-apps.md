@@ -1,7 +1,7 @@
 ---
 title: Validate the applications deployed to Windows SE devices
 description: Learn how to validate the applications deployed to Windows SE devices via Intune.
-ms.date: 02/24/2023
+ms.date: 03/02/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
@@ -95,13 +95,13 @@ Here are things to pay attention to and watch out for:
 - Dialogs show during use indicating something was blocked.
 - Multiple apps are installed, especially if one app appears to be a launcher/updater. (e.g. Downloading Adobe Photoshop includes the Adobe Creative Cloud launcher, which updates Photoshop)
 - Any messages indicating that the app is doing pre-installation work or downloading additional content.
-- Event logs found in CodeIntegrity - Operational, and AppLocker - MSI and Script. For more information, see [Troubleshooting - Event Viewer](troubleshoot.md#event-viewer).
+- Event logs found in CodeIntegrity - Operational, and AppLocker - MSI and Script. For more information, see [AppLocker - MSI and Script](troubleshoot.md#applocker---msi-and-script)
 
 ### Compatible apps
 
 If an app appears to be functioning correctly without being blocked, it is likely compatible with managed installer installation. Again, you should follow the recommendations above to test the behavior of your app.
 
-However, just because an app works initially does not mean it will *always* work. Apps can be updated by self-updating or done through a separate launcher/client. See more about this in the [Semi-compatible apps](#) section below.
+However, just because an app works initially does not mean it will *always* work. Apps can be updated by self-updating or done through a separate launcher/client. See more about this in the next section [Semi-compatible apps](#semi-compatible-apps).
 
 ### Semi-compatible apps
 
@@ -117,11 +117,11 @@ See [here][WIN-1] for the common classes of incompatible apps.
 
 You may see a dialog indicating *This app won't run on your PC*. Check the indicated executable and verify that it matches the one of the installed application.
 
-![](./images/image7.png)
+:::image type="content" source="images/image7.png" alt-text="This is a pic that needs info.":::
 
 ### Event Viewer
 
-More detail can be obtained when looking for events where executables were blocked in the Event Viewer. For more information, see [Troubleshooting - Event Viewer](troubleshoot.md#event-viewer).
+More detail can be obtained when looking for events where executables were blocked in the Event Viewer. For more information, see [Troubleshooting - Event Viewer](troubleshoot.md).
 
 ## Section review
 
