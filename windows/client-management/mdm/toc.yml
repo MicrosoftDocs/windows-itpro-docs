@@ -602,8 +602,6 @@ items:
       items:
       - name: AppLocker DDF file
         href: applocker-ddf-file.md
-      - name: AppLocker XSD
-        href: applocker-xsd.md
     - name: AssignedAccess
       href: assignedaccess-csp.md
       items:
@@ -668,12 +666,17 @@ items:
     - name: DeviceManageability
       href: devicemanageability-csp.md
       items:
-      - name: DeviceManageability DDF
+      - name: DeviceManageability DDF file
         href: devicemanageability-ddf.md
+    - name: DevicePreparation
+      href: devicepreparation-csp.md
+      items:
+      - name: DevicePreparation DDF file
+        href: devicepreparation-ddf-file.md
     - name: DeviceStatus
       href: devicestatus-csp.md
       items:
-      - name: DeviceStatus DDF
+      - name: DeviceStatus DDF file
         href: devicestatus-ddf.md
     - name: DevInfo
       href: devinfo-csp.md
@@ -733,17 +736,13 @@ items:
     - name: EnterpriseDesktopAppManagement
       href: enterprisedesktopappmanagement-csp.md
       items:
-      - name: EnterpriseDesktopAppManagement DDF
+      - name: EnterpriseDesktopAppManagement DDF file
         href: enterprisedesktopappmanagement-ddf-file.md
-      - name: EnterpriseDesktopAppManagement XSD
-        href: enterprisedesktopappmanagement2-xsd.md
     - name: EnterpriseModernAppManagement
       href: enterprisemodernappmanagement-csp.md
       items:
-      - name: EnterpriseModernAppManagement DDF
+      - name: EnterpriseModernAppManagement DDF file
         href: enterprisemodernappmanagement-ddf.md
-      - name: EnterpriseModernAppManagement XSD
-        href: enterprisemodernappmanagement-xsd.md
     - name: eUICCs
       href: euiccs-csp.md
       items:
@@ -757,12 +756,17 @@ items:
     - name: HealthAttestation
       href: healthattestation-csp.md
       items:
-      - name: HealthAttestation DDF
+      - name: HealthAttestation DDF file
         href: healthattestation-ddf.md
-    - name: Local Administrator Password Solution
+    - name: LanguagePackManagement
+      href: language-pack-management-csp.md
+      items:
+      - name: LanguagePackManagement DDF file
+        href: language-pack-management-ddf-file.md
+    - name: LAPS
       href: laps-csp.md
       items:
-      - name: Local Administrator Password Solution DDF
+      - name: LAPS DDF file
         href: laps-ddf-file.md
     - name: MultiSIM
       href: multisim-csp.md
@@ -791,23 +795,28 @@ items:
     - name: Office
       href: office-csp.md
       items:
-      - name: Office DDF
+      - name: Office DDF file
         href: office-ddf.md
     - name: PassportForWork
       href: passportforwork-csp.md
       items:
       - name: PassportForWork DDF file
         href: passportforwork-ddf.md
-    - name: PersonalDataEncryption
+    - name: PDE
       href: personaldataencryption-csp.md
       items:
-      - name: PersonalDataEncryption DDF file
+      - name: PDE DDF file
         href: personaldataencryption-ddf-file.md
     - name: Personalization
       href: personalization-csp.md
       items:
       - name: Personalization DDF file
         href: personalization-ddf.md
+    - name: PrinterProvisioning
+      href: printerprovisioning-csp.md
+      items:
+      - name: PrinterProvisioning DDF file
+        href: printerprovisioning-ddf-file.md
     - name: Provisioning
       href: provisioning-csp.md
     - name: PXLOGICAL
@@ -904,8 +913,6 @@ items:
       items:
       - name: VPNv2 DDF file
         href: vpnv2-ddf-file.md
-      - name: ProfileXML XSD
-        href: vpnv2-profile-xsd.md
       - name: EAP configuration
         href: eap-configuration.md
     - name: w4 APPLICATION
