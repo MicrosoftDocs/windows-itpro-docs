@@ -7,17 +7,17 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
 ---
 
-#Create additional policies for applications
+# Create additional policies for applications
 
 :::image type="content" source="./images/create-additional-policies.svg" alt-text="Diagram showing the three tutorial steps, highlighting the policy creation step." border="false":::
 
-Additional policies can be written to allow applications that are [semi-compatible](./Validate-applications#compatible-apps) or [incompatible](Validate-applications#incompatible-apps) with the managed installer.
+Additional policies can be written to allow applications that are [semi-compatible](./validate-apps#compatible-apps) or [incompatible](validate-appa#incompatible-apps) with the managed installer.
 
 The following table details the two policy types to allow apps to run:
 
 | **Policy type** | **How it works** | **When should I use this policy?** | **Security risk** |
 |---|---|---|---|
-| WDAC Supplemental policy | Directly allows apps meeting the rule criteria to run | For executables that are blocked by the E-Mode policy (Visible from the Event Viewer in the [CodeIntegrity events](./Troubleshooting#codeintegrity--operational-event-log)) | Low |
+| WDAC Supplemental policy | Directly allows apps meeting the rule criteria to run | For executables that are blocked by the E-Mode policy (Visible from the Event Viewer in the [CodeIntegrity events](./troubleshoot#codeintegrity--operational-event-log)) | Low |
 | AppLocker policy | Sets an app to be considered as a managed installer | Only for executables that do installations or updates which are blocked by the E-Mode policy | High |
 
 > **Note**
@@ -92,8 +92,10 @@ Set-CiPolicyIdInfo - FilePath <"Path to .xml from step 3"> -SupplementsBasePolic
 > If you have created multiple supplemental policies for different apps, it's recommended to merge all supplemental policies together before deploying. You can merge policies using the WDAC Wizard.
 
 
-### Writing a supplemental policy for a UWP Store app
-UWP Microsoft Store apps unfortunately do not work out-of-box due to the Windows 11 SE E-Mode policy. A supplemental policy can be created and deployed to allow a Store app to run. UWP Store apps are somewhat simpler to write supplemental policies for.
+### Writing a supplemental policy for a UWP LOB app
+
+UWP apps don't work out-of-box due to the Windows 11 SE E-Mode policy. A supplemental policy can be created and deployed to allow a Store app to run.
+
 1. On a non-Windows SE device, download, install, and launch the [WDAC Policy Wizard](https://webapp-wdac-wizard.azurewebsites.net/).
 1. After launching choose "Policy Creator", then choose to create a Supplemental policy.
 1. Choose a policy name and policy file location.
@@ -107,8 +109,7 @@ UWP Microsoft Store apps unfortunately do not work out-of-box due to the Windows
     - Rule action: Allow
     - Rule type: Packaged App
     - Package Name: Package name of app  
-1. This is available on the app's standard [Microsoft Store page](https://apps.microsoft.com/store/apps) in the "Configuration Manager ID" dialog of the Endpoint Manager link.  
-1. E.g. LEGOEducation.EV3ClassroomLEGOEducation_by3p0hsm2jzfy is the package name for the [EV3 Classroom LEGO Education](https://educationstore.microsoft.com/en-us/store/details/ev3-classroom-lego-education/9P8SJVZM63SZ) app, which can be found [here](https://apps.microsoft.com/store/detail/spike%E2%84%A2-3-lego%C2%AE-education/9NG9WXQ85LZM).
+1. This can be retrieved via PowerShell (add sample here) 
     - If the app is not installed on your current PC, check the "Use Custom Package Family" box.
 1. Click the Create button to the right of the Package Name. You should see the package added into the box below.
 1. Click the Create Rule button.
@@ -154,7 +155,7 @@ Policies can be deployed via Intune using a custom OMA-URI.
 
 ### Troubleshoot WDAC policies
 
-For information how to troubleshoot WDAC supplemental policies, see [WDAC supplemental policy validation](./troubleshooting#wdac-supplemental-policy-validation)
+For information how to troubleshoot WDAC supplemental policies, see [WDAC supplemental policy validation](./troubleshoot#wdac-supplemental-policy-validation)
 
 ## AppLocker policies
 
@@ -197,17 +198,17 @@ Once finished, you can deploy the script via Intune. For more information, see [
 
 ### Troubleshoot AppLocker policies
 
-For information how to troubleshoot AppLocker policies, see [WDAC supplemental policy validation](./troubleshooting#applocker---msi-and-script)
+For information how to troubleshoot AppLocker policies, see [WDAC supplemental policy validation](./troubleshoot#applocker---msi-and-script)
 
 ---
 
-[WIN-1]: https://learn.microsoft.com/windows/security/threat-protection/windows-defender-application-control/types-of-devices
-[WIN-2]: https://learn.microsoft.com/windows/security/threat-protection/windows-defender-application-control/wdac-wizard-create-supplemental-policy
-[WIN-3]: https://learn.microsoft.com/windows/security/threat-protection/windows-defender-application-control/audit-windows-defender-application-control-policies
-[WIN-4]: https://learn.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deployment/deploy-windows-defender-application-control-policies-using-intune
-[WIN-5]: https://learn.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/edit-an-applocker-policy
-[WIN-6]: https://learn.microsoft.com/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer
-[WIN-7]: https://learn.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/merge-applocker-policies-by-using-set-applockerpolicy
+[WIN-1]: /windows/security/threat-protection/windows-defender-application-control/types-of-devices
+[WIN-2]: /windows/security/threat-protection/windows-defender-application-control/wdac-wizard-create-supplemental-policy
+[WIN-3]: /windows/security/threat-protection/windows-defender-application-control/audit-windows-defender-application-control-policies
+[WIN-4]: /windows/security/threat-protection/windows-defender-application-control/deployment/deploy-windows-defender-application-control-policies-using-intune
+[WIN-5]: /windows/security/threat-protection/windows-defender-application-control/applocker/edit-an-applocker-policy
+[WIN-6]: /windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer
+[WIN-7]: /windows/security/threat-protection/windows-defender-application-control/applocker/merge-applocker-policies-by-using-set-applockerpolicy
 
 [EXT-1]: https://webapp-wdac-wizard.azurewebsites.net/
 
