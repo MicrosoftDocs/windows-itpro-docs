@@ -61,6 +61,15 @@ PWAs available in the Microsoft Store aren't currently supported for Windows 11 
 
 Web link can be deployed via Intune using [web apps][MEM-4], and will be available in the Start menu of the targeted devices.
 
+## Section review
+
+Before moving on to the next section, ensure that you've completed the following tasks:
+
+> [!div class="checklist"]
+> - `.intunewin` package created (for Win32 apps)
+> - App uploaded via Intune (for Win32 apps)
+> - App assigned to the correct groups
+
 ## Next steps
 
 Advance to the next article to learn how to validate the applications deployed to Windows 11 SE devices.

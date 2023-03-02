@@ -123,7 +123,36 @@ You may see a dialog indicating *This app won't run on your PC*. Check the indic
 
 More detail can be obtained when looking for events where executables were blocked in the Event Viewer. For more information, see [Troubleshooting - Event Viewer](./Troubleshooting#event-viewer).
 
----
+## Section review
+
+Before moving on to the next section, ensure that you've completed the following tasks:
+
+> [!div class="checklist"]
+> - No Intune installation errors
+> - No errors when opening the app from the device
+> - *CI Policy* in the Event Viewer logs don't show app's executables being blocked
+
+If there are any errors, create a WDAC supplemental policy
+
+> [!div class="checklist"]
+> - Signed .cip .p7b file with Device Guard
+> - Targets Base policy: `82443e1e-8a39-4b4a-96a8-f40ddc00b9f3`
+> - Policy created in Intune and assigned to the correct groups
+> - Policy applied in Event Viewer
+
+If there are any errors, create an AppLocker policy
+
+> [!div class="checklist"]
+> - Only applied to an updater or installer
+> - Merge option used
+> - Policy created in Intune and assigned to the correct groups
+
+## Next steps
+
+Advance to the next article to learn how to troubleshoot common errors when deploying apps with managed installer.
+
+> [!div class="nextstepaction"]
+> [Next: troubleshoot >](troubleshoot.md)
 
 [M365-1]: https://learn.microsoft.com/microsoft-365/education/deploy/microsoft-store-for-education
 

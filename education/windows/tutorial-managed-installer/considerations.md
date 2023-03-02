@@ -20,7 +20,9 @@ Autopilot and the Enrollment Status Page are compatible with Windows 11 SE. Howe
 An example of this is if you deployed an app via the Store for Education, but have not written a supplemental policy to allow that app's PackageFamilyName.
 In summary, if you choose to block device use on the installation of apps, you must ensure that apps are also not blocked from installation.
 
-![](./images/autopilot.png)
+:::image type="content" source="./images/autopilot.png" alt-text="Autopilot showing an error in OOBE on Windows 11 SE." border="false":::
+
+
 
 ### ESP mitigations
 

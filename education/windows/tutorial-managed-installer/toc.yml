@@ -7,9 +7,7 @@ items:
     href: validate-apps.md
   - name: 3. Create additional policies
     href: create-policies.md
+  - name: Troubleshoot and get help
+    href: troubleshoot.md
   - name: Considerations for your tenant
     href: considerations.md
-  - name: Troubleshoot and get help
-    href: troubleshoot-managed-installer.md
-  - name: Checklists
-    href: checklists.md
