@@ -107,7 +107,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Free NaturalReader`                      | 16.1.2            | Win32    | `Natural Soft`                            |
 | `Ghotit Real Writer & Reader`             | 10.14.2.3         | Win32    | `Ghotit Ltd`                              |
 | `GoGuardian`                              | 1.4.4             | Win32    | `GoGuardian`                              |
-| `Google Chrome`                           | 109.0.5414.75     | Win32    | `Google`                                  |
+| `Google Chrome`                           | 110.0.5481.178    | Win32    | `Google`                                  |
 | `GuideConnect`                            | 1.23              | Win32    | `Dolphin Computer Access`                 |
 | `Illuminate Lockdown Browser`             | 2.0.5             | Win32    | `Illuminate Education`                    |
 | `Immunet`                                 | 7.5.8.21178       | Win32    | `Immunet`                                 |
