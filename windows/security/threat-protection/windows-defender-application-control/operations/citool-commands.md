@@ -11,9 +11,9 @@ ms.prod: windows-client
 ms.technology: itpro-security
 ---
 
-# CITool.exe technical reference
+# CiTool technical reference
 
-CI Tool makes Windows Defender Application Control (WDAC) policy management easier for IT admins.  CI Tool can be used to manage Windows Defender Application Control policies and CI Tokens. This article describes how to use CI Tool to update and manage policies.  CI Tool is currently included in Windows 11, version 22H2.
+CiTool makes Windows Defender Application Control (WDAC) policy management easier for IT admins.  CI Tool can be used to manage Windows Defender Application Control policies and CI Tokens. This article describes how to use CiTool to update and manage policies.  CiTool is currently included as part of the Windows image in Windows 11 version 22H2.
 
 ## Policy Commands
 
@@ -44,33 +44,45 @@ CI Tool makes Windows Defender Application Control (WDAC) policy management easi
 
 ## Examples
 
-1. Deploy a WDAC policy onto the system
+1. Deploy a WDAC policy
 
     ```powershell
-    PS C:\Users\<USER> CITool --update-policy "\Windows\Temp\{BF61FE40-8929-4FDF-9EC2-F7A767717F0B}.cip"
-    Operation Successful
-    Press Enter to Continue
+    CiTool --update-policy "\Windows\Temp\{BF61FE40-8929-4FDF-9EC2-F7A767717F0B}.cip"
     ```
 
-2. Refresh the WDAC policies
+2. Refresh the WDAC policies on the system
 
     ```powershell
-    PS C:\Users\<USER> CITool --refresh
-    Operation Successful
+    CiTool --refresh
     ```
 
 3. Remove a specific WDAC policy by its policy ID
 
     ```powershell
-    PS C:\Users\<USER> CiTool --remove-policy "{BF61FE40-8929-4FDF-9EC2-F7A767717F0B}"
-    Operation Successful
-    Press Enter to Continue
+    CiTool --remove-policy "{BF61FE40-8929-4FDF-9EC2-F7A767717F0B}"
     ```
 
-4. Display the help menu
+4. List the actively enforced WDAC policies on the system
 
     ```powershell
-    PS C:\Users\<USER> CITool -h
+    $wdacPolicies = (CiTool -lp -json | ConvertFrom-Json).Policies
+   
+    # Check each policy's IsEnforced state and return only the enforced policies
+    foreach($wdacPolicy in $wdacPolicies ){
+    
+        if($wdacPolicy.IsEnforced)
+        {
+            Write-Host $wdacPolicy.FriendlyName
+            Write-Host $wdacPolicy.PolicyID "`n"
+        }
+    }
+    
+    ```
+
+5. Display the help menu
+
+    ```powershell
+    CiTool -h
 
     ----------------------------- Policy Commands ---------------------------------
       --update-policy /Path/To/Policy/File
