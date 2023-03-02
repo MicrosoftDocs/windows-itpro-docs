@@ -34,8 +34,8 @@ The policies can then be deployed to the Windows SE devices via Microsoft Intune
 In this tutorial you'll learn:
 
 > [!div class="checklist"]
-> - Which applications can be installed on a Windows 11 SE device when managed installer policies are enabled
-> - How to install an application to a Windows 11 SE device
+> - Which applications can be installed on a Windows 11 SE device manaed by Intune
+> - How to install an application to a Windows 11 SE device using Intune
 > - How to validate that an application is installed and runs successfully
 > - How to write additional policies to enable incompatible applications
 > - How to troubleshoot problems related to application installation

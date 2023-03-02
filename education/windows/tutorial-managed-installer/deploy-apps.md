@@ -36,7 +36,7 @@ The addition of Win32 applications to Intune consists of repackaging the apps an
 > There are known limitations that might prevent a specific app from being installed. For more information, see the next section [validate applications](validate-applications#known-limitations).
 
 > [!NOTE]
-> While Win32 apps can be deployed through the Microsoft Store integration with Intune (Windows Package Manager), it's currently an unsupported deployment method for Windows 11 SE.
+> While Win32 apps can be deployed through the Microsoft Store integration with Intune, it's currently an unsupported deployment method for Windows 11 SE.
 
 ## UWP apps
 

@@ -1,13 +1,15 @@
 ---
 title: Create additional policies for applications
-description: Learn how to Consideration before deploying apps with Managed Installer
+description: Learn how to create additional policies for applications.
 ms.date: 02/24/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
 ---
 
-![](./images/create-additional-policies.svg)
+#Create additional policies for applications
+
+:::image type="content" source="./images/create-additional-policies.svg" alt-text="Diagram showing the three tutorial steps, highlighting the policy creation step." border="false":::
 
 Additional policies can be written to allow applications that are [semi-compatible](./Validate-applications#compatible-apps) or [incompatible](Validate-applications#incompatible-apps) with the managed installer.
 
@@ -29,8 +31,6 @@ WDAC supplemental policies can be created and then deployed through Intune.\
 Watch Jeffrey Sutherland explain ...
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWReO]
-
-
 
 Follow the instructions below for authoring and deploying these policies.
 
@@ -87,36 +87,36 @@ To write a policy, you can use [audit events][WIN-3], as they allow you to obser
 ```PowerShell
 Set-CiPolicyIdInfo - FilePath <"Path to .xml from step 3"> -SupplementsBasePolicyId "{82443E1E-8A39-4B4A-96A8-F40DDC00B9F3}"
 ```
-> **Note**
->
+
+> [!NOTE]
 > If you have created multiple supplemental policies for different apps, it's recommended to merge all supplemental policies together before deploying. You can merge policies using the WDAC Wizard.
 
 
 ### Writing a supplemental policy for a UWP Store app
 UWP Microsoft Store apps unfortunately do not work out-of-box due to the Windows 11 SE E-Mode policy. A supplemental policy can be created and deployed to allow a Store app to run. UWP Store apps are somewhat simpler to write supplemental policies for.
 1. On a non-Windows SE device, download, install, and launch the [WDAC Policy Wizard](https://webapp-wdac-wizard.azurewebsites.net/).
-2. After launching choose "Policy Creator", then choose to create a Supplemental policy.
-3. Choose a policy name and policy file location.
-4. To set a Base policy that the supplemental policy will apply to, the WDAC Wizard includes a template policy called WinSEPolicy.xml based on Windows 11 SE E mode:
+1. After launching choose "Policy Creator", then choose to create a Supplemental policy.
+1. Choose a policy name and policy file location.
+1. To set a Base policy that the supplemental policy will apply to, the WDAC Wizard includes a template policy called WinSEPolicy.xml based on Windows 11 SE E mode:
     - Open the WDAC Wizard and select Policy Editor
     - In the Policy Path to Edit field, browse for %ProgramFiles%\WindowsApps\Microsoft.WDAC and select the file called WinSEPolicy.xml. Click the Next button.
-5. On Policy Rules, click the Next button.
-6. On Signing Rules, click Add Custom Rule.
-7. In the custom rules wizard, choose:
-  - Rule scope: Usermode Rule only
+1. On Policy Rules, click the Next button.
+1. On Signing Rules, click Add Custom Rule.
+1. In the custom rules wizard, choose:
+    - Rule scope: Usermode Rule only
     - Rule action: Allow
     - Rule type: Packaged App
     - Package Name: Package name of app  
-This is available on the app's standard [Microsoft Store page](https://apps.microsoft.com/store/apps) in the "Configuration Manager ID" dialog of the Endpoint Manager link.  
-E.g. LEGOEducation.EV3ClassroomLEGOEducation_by3p0hsm2jzfy is the package name for the [EV3 Classroom LEGO Education](https://educationstore.microsoft.com/en-us/store/details/ev3-classroom-lego-education/9P8SJVZM63SZ) app, which can be found [here](https://apps.microsoft.com/store/detail/spike%E2%84%A2-3-lego%C2%AE-education/9NG9WXQ85LZM).
+1. This is available on the app's standard [Microsoft Store page](https://apps.microsoft.com/store/apps) in the "Configuration Manager ID" dialog of the Endpoint Manager link.  
+1. E.g. LEGOEducation.EV3ClassroomLEGOEducation_by3p0hsm2jzfy is the package name for the [EV3 Classroom LEGO Education](https://educationstore.microsoft.com/en-us/store/details/ev3-classroom-lego-education/9P8SJVZM63SZ) app, which can be found [here](https://apps.microsoft.com/store/detail/spike%E2%84%A2-3-lego%C2%AE-education/9NG9WXQ85LZM).
     - If the app is not installed on your current PC, check the "Use Custom Package Family" box.
-8. Click the Create button to the right of the Package Name. You should see the package added into the box below.
-9. Click the Create Rule button.
-10. Back in the WDAC Policy Wizard, click the Next button.
-11. The policy should be created and output a .xml and .cip file to the policy file location that you specified earlier.
-12. The policy is not yet targeting the right base policy so run the following from PowerShell:  
-Set-CiPolicyIdInfo - FilePath <"Path to .xml from step 8"> -SupplementsBasePolicyId "{82443E1E-8A39-4B4A-96A8-F40DDC00B9F3}"
-13. Creation of the supplemental policy is complete; you still need to have the policy signed by Microsoft and uploaded into Intune to take effect.
+1. Click the Create button to the right of the Package Name. You should see the package added into the box below.
+1. Click the Create Rule button.
+1. Back in the WDAC Policy Wizard, click the Next button.
+1. The policy should be created and output a .xml and .cip file to the policy file location that you specified earlier.
+1. The policy is not yet targeting the right base policy so run the following from PowerShell:  
+1. Set-CiPolicyIdInfo - FilePath <"Path to .xml from step 8"> -SupplementsBasePolicyId "{82443E1E-8A39-4B4A-96A8-F40DDC00B9F3}"
+1. Creation of the supplemental policy is complete; you still need to have the policy signed by Microsoft and uploaded into Intune to take effect.
     - For review and signing of your policy, follow the instructions at [Create additional policies - Review and sign WDAC supplemental policies (TAP-only)](https://github.com/microsoft/WinSE_TAP/wiki/Create-additional-policies#review-and-sign-wdac-supplemental-policies-tap-only)
     - For deployment of your policy after receiving back the signed policy, follow the instructions at: [Create additional policies - Deploy WDAC policies](https://github.com/microsoft/WinSE_TAP/wiki/Create-additional-policies#deploy-wdac-policies)
 
@@ -127,38 +127,28 @@ Here are some general guidelines to follow when writing WDAC supplemental polici
 - For packaged apps (AppX or MSIX), choose *PackagedApp* and allow the file by its *PackageFamilyName*
 - For other apps, try to create *Publisher* rules wherever possible, combining the *Publisher* with other properties like *Product*, *Filename*, and *Version*
 
-  > **Note**
-  > 
+> [!NOTE]
   > The *WDAC Wizard* defaults to use all of the properties, if present. In some cases, you may want to combine a subset of the properties to allow multiple files. For example: Publisher + ProductName + Version.
 
 - When a *Publisher* rule is not an option (e.g. when the file is unsigned), use *Hash* as the most restrictive option
 - You might have to opt for a *FileAttribute* rule, but it can be easily spoofed
 
-### Review and sign WDAC supplemental policies (TAP-only)
+### Review and sign WDAC supplemental policies
 
-  > **Note**
-  > 
-  > During the TAP program, Microsoft will need to sign WDAC supplemental policies. This will not be required after the TAP program ends.
+THIS PROCESS MUST BE DEFINED
 
-Follow the instructions below when you want to sign and deploy your custom-made WDAC supplemental policy.
+Follow the instructions below when you want to sign and deploy your WDAC supplemental policy.
 
 - Create a supplemental policy with the instructions found above
-- Email your .xml policy to [haileyapps@microsoft.com](mailto:haileyapps@microsoft.com)
-- Microsoft will review the policy, provide feedback on it, and send it back for changes if needed with suggestions for modifications. You can expect a back-and-forth discussion with Microsoft about the supplemental policy that you've written. Microsoft may take up to 2 business days to respond
-- Once adequate, Microsoft will sign the policies on behalf of the customer and return the policy
-- Using the signed policies, you can deploy the signed policy file via Intune to your Windows 11 SE devices
-
-The goals of this process during TAP are to:
-
-- Sign the policy so that it can be deployed
-- Learn how IT admins are writing policies, and work with educating them on how to write policies
-- Review the policies being written to understand if they are over-authorizing unintended executables
+- Sign the policy
+- Deploy the signed policy file via Intune
 
 ### Deploy WDAC policies
 
-Policies can be deployed via MDM using a custom OMA-URI.
+Policies can be deployed via Intune using a custom OMA-URI.
 
-To prevent these policies from being applied to non-Windows 11 SE devices, you can create and target a group with only Windows 11 SE devices in it.
+> [!TIP]
+> To prevent these policies from being applied to non-Windows SE devices, you can create and target a group with only Windows 11 SE devices in it, or use assignment filters.
 
 [Deploy WDAC policies using Mobile Device Management][WIN-4]
 
@@ -166,12 +156,9 @@ To prevent these policies from being applied to non-Windows 11 SE devices, you c
 
 For information how to troubleshoot WDAC supplemental policies, see [WDAC supplemental policy validation](./troubleshooting#wdac-supplemental-policy-validation)
 
----
-
 ## AppLocker policies
 
-> **Warning**
->
+> [!WARNING]
 > It's recommended to use AppLocker policies for processes that perform **updates** or **install as managed installers** only. The preferred method to allow incompatible applications or other executables to run, is to write **WDAC supplemental policies** instead of modifying AppLocker policies.
 
 Additional AppLocker policies work by setting other apps to be managed installers.
