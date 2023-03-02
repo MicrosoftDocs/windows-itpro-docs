@@ -4,7 +4,7 @@ description: This article explains how Windows Autopatch manages Microsoft 365 A
 ms.date: 02/28/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
-ms.topic: conceptual
+ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
