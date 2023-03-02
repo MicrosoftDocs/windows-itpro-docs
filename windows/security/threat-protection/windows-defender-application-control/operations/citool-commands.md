@@ -64,8 +64,8 @@ CiTool makes Windows Defender Application Control (WDAC) policy management easie
 
 4. List the actively enforced WDAC policies on the system
 
-```powershell
-$wdacPolicies = (CiTool -lp -json | ConvertFrom-Json).Policies
+   ```powershell
+   $wdacPolicies = (CiTool -lp -json | ConvertFrom-Json).Policies
 
 # Check each policy's IsEnforced state and return only the enforced policies
 foreach($wdacPolicy in $wdacPolicies ){
