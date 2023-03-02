@@ -1,11 +1,13 @@
 ---
-title: Consideration before deploying apps with Managed Installer
-description: Learn how to Consideration before deploying apps with Managed Installer
+title: Troubleshooting guide when deploying apps with Managed Installer
+description: Troubleshoot common issues when deploying apps with Managed Installer
 ms.date: 02/24/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
 ---
+
+# Troubleshooting guide when deploying apps with Managed Installer
 
 The following table lists common problems and options to resolve them:
 
@@ -97,6 +99,13 @@ When executing the `sc.exe query` commands, the *STATE* property should show a s
 
 - [Collect diagnostics from a Windows device][MEM-1]
 - Logs can be collected from `%programdata%\Microsoft\IntuneManagementExtension\Logs`
+
+## Next steps
+
+Advance to the next article to learn about additional considerations before deploying apps with managed installer.
+
+> [!div class="nextstepaction"]
+> [Next: considerations >](considerations.md)
 
 [MEM-1]: https://learn.microsoft.com/mem/intune/remote-actions/collect-diagnostics
 [WIN-1]: https://learn.microsoft.com/windows/security/threat-protection/windows-defender-application-control/event-id-explanations
