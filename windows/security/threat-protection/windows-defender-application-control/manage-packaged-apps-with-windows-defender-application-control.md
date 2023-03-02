@@ -60,7 +60,7 @@ Then use the [Merge-CIPolicy](/powershell/module/configci/merge-cipolicy) PowerS
 
 ```powershell
 $Rules = $null
-$FilePath = $env:ProgramFiles++'\WindowsApps\Microsoft.WDAC.WDACWizard_2.1.0.1_x64__8wekyb3d8bbwe\AppxSignature.p7x'
+$FilePath = $env:ProgramFiles+'\WindowsApps\Microsoft.WDAC.WDACWizard_2.1.0.1_x64__8wekyb3d8bbwe\AppxSignature.p7x'
 $Rules = New-CIPolicyRule -DriverFilePath $FilePath -Level Publisher
 ```
 
