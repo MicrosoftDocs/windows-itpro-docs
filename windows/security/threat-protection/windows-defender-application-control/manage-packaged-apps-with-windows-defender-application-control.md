@@ -49,7 +49,6 @@ All of the files that make up an MSIX app are signed with a common catalog signa
 #### Create signer rule from MSIX/MSIXBUNDLE
 
 ```powershell
-$Rules = $null
 $FilePath = $env:USERPROFILE+'\Downloads\WDACWizard_2.1.0.1_x64_8wekyb3d8bbwe.MSIX'
 $Rules = New-CIPolicyRule -DriverFilePath $FilePath -Level Publisher
 ```
@@ -59,8 +58,7 @@ Then use the [Merge-CIPolicy](/powershell/module/configci/merge-cipolicy) PowerS
 #### Create signer rule from AppxSignature.p7x
 
 ```powershell
-$Rules = $null
-$FilePath = $env:ProgramFiles++'\WindowsApps\Microsoft.WDAC.WDACWizard_2.1.0.1_x64__8wekyb3d8bbwe\AppxSignature.p7x'
+$FilePath = $env:ProgramFiles+'\WindowsApps\Microsoft.WDAC.WDACWizard_2.1.0.1_x64__8wekyb3d8bbwe\AppxSignature.p7x'
 $Rules = New-CIPolicyRule -DriverFilePath $FilePath -Level Publisher
 ```
 
@@ -75,7 +73,6 @@ You can create PFN rules directly from packaged apps that are currently installe
 ```powershell
 # Query for the packaged apps. This example looks for all packages from Microsoft.
 $Packages = Get-AppXPackage -Name Microsoft.*
-$Rules = $null
 foreach ($Package in $Packages)
 {
    $Rules += New-CIPolicyRule -Package $Package
@@ -94,7 +91,7 @@ Use the following steps to create a WDAC PFN rule for an app that is installed o
 2. Check **Usermode Rule** as the Rule Scope, if not checked.
 3. Select either **Allow** or **Deny** for your Rule Action.
 4. Select **Packaged App** for your Rule Type.
-5. In the **Package Name** field, enter a string value to search. You can use "?" or "\*" wildcards in the search string. Then select **Search**.
+5. In the **Package Name** field, enter a string value to search. You can use `?` or `*` wildcards in the search string. Then select **Search**.
 6. In the results box, check one or more apps for which you want to create rules.
 7. Select **Create Rule**.
 8. Create any other rules desired, then complete the Wizard.
@@ -107,7 +104,7 @@ Use the following steps to create a PFN rule with a custom string value:
 
 1. Repeat steps 1-4 in the previous example.
 2. Check the box labeled **Use Custom Package Family**. The *Search* button label changes to *Create*.
-3. In the **Package Name** field, enter a string value for your PFN rule. You can use "?" or "\*" wildcards if targeting Windows 11 devices. Then select **Create**
+3. In the **Package Name** field, enter a string value for your PFN rule. You can use `?` or `*` wildcards if targeting Windows 11 devices. Then select **Create**
 4. In the results box, check one or more apps for which you want to create rules.
 5. Select **Create Rule**.
 6. Create any other rules desired, then complete the Wizard.
