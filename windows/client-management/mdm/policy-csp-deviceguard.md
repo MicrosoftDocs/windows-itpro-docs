@@ -4,7 +4,7 @@ description: Learn more about the DeviceGuard Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,7 +36,7 @@ ms.topic: reference
 <!-- ConfigureSystemGuardLaunch-OmaUri-End -->
 
 <!-- ConfigureSystemGuardLaunch-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-DDF-Forced -->
 Secure Launch configuration: 0 - Unmanaged, configurable by Administrative user, 1 - Enables Secure Launch if supported by hardware, 2 - Disables Secure Launch.
 <!-- ConfigureSystemGuardLaunch-Description-End -->
 
@@ -72,7 +72,7 @@ For more information about System Guard, see [Introducing Windows Defender Syste
 |:--|:--|
 | Name | VirtualizationBasedSecurity |
 | Friendly Name | Turn On Virtualization Based Security |
-| Element Name | Secure Launch Configuration |
+| Element Name | Secure Launch Configuration. |
 | Location | Computer Configuration |
 | Path | System > Device Guard |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |
@@ -149,7 +149,7 @@ Kernel-mode Hardware-enforced Stack Protection
 
 This setting enables Hardware-enforced Stack Protection for kernel-mode code. When this security feature is enabled, kernel-mode data stacks are hardened with hardware-based shadow stacks, which store intended return address targets to ensure that program control flow is not tampered.
 
-This security feature has the following prerequisites
+This security feature has the following prerequisites:
 1) The CPU hardware supports hardware-based shadow stacks.
 2) Virtualization Based Protection of Code Integrity is enabled.
 
@@ -166,7 +166,7 @@ The "Enabled in enforcement mode" option enables kernel-mode Hardware-enforced S
 The "Not Configured" option leaves the policy setting undefined. Group Policy does not write the policy setting to the registry, and so it has no impact on computers or users. If there is a current setting in the registry it will not be modified.
 
 > [!WARNING]
-> All drivers on the system must be compatible with this security feature or the system may crash in enforcement mode. Audit mode can be used to discover incompatible drivers. For more information, refer to <https//go.microsoft.com/fwlink/?LinkId=2162953>.
+> All drivers on the system must be compatible with this security feature or the system may crash in enforcement mode. Audit mode can be used to discover incompatible drivers. For more information, see [A driver can't load on this device](https://go.microsoft.com/fwlink/?LinkId=2162953).
 <!-- EnableVirtualizationBasedSecurity-Description-End -->
 
 <!-- EnableVirtualizationBasedSecurity-Editable-Begin -->
@@ -228,7 +228,7 @@ The "Not Configured" option leaves the policy setting undefined. Group Policy do
 <!-- LsaCfgFlags-OmaUri-End -->
 
 <!-- LsaCfgFlags-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-DDF-Forced -->
 Credential Guard Configuration: 0 - Turns off CredentialGuard remotely if configured previously without UEFI Lock, 1 - Turns on CredentialGuard with UEFI lock. 2 - Turns on CredentialGuard without UEFI lock.
 <!-- LsaCfgFlags-Description-End -->
 
@@ -263,7 +263,7 @@ Credential Guard Configuration: 0 - Turns off CredentialGuard remotely if config
 |:--|:--|
 | Name | VirtualizationBasedSecurity |
 | Friendly Name | Turn On Virtualization Based Security |
-| Element Name | Credential Guard Configuration |
+| Element Name | Credential Guard Configuration. |
 | Location | Computer Configuration |
 | Path | System > Device Guard |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |
@@ -292,7 +292,7 @@ Credential Guard Configuration: 0 - Turns off CredentialGuard remotely if config
 <!-- RequirePlatformSecurityFeatures-OmaUri-End -->
 
 <!-- RequirePlatformSecurityFeatures-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-DDF-Forced -->
 Select Platform Security Level: 1 - Turns on VBS with Secure Boot, 3 - Turns on VBS with Secure Boot and DMA. DMA requires hardware support.
 <!-- RequirePlatformSecurityFeatures-Description-End -->
 
@@ -327,7 +327,7 @@ This setting lets users turn on Credential Guard with virtualization-based secur
 |:--|:--|
 | Name | VirtualizationBasedSecurity |
 | Friendly Name | Turn On Virtualization Based Security |
-| Element Name | Select Platform Security Level |
+| Element Name | Select Platform Security Level. |
 | Location | Computer Configuration |
 | Path | System > Device Guard |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |
