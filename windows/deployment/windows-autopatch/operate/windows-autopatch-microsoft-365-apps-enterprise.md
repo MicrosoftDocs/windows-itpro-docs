@@ -91,7 +91,7 @@ However, the device may still be eligible for other managed updates. For more in
 
 ## Allow or block Microsoft 365 App updates
 
-For organizations seeking greater control, you can allow or block Microsoft 365 App updates for Windows Autopatch-enrolled devices. When the Microsoft 365 App update setting is set to **Block**, Windows Autopatch won't provide Microsoft 365 App updates on your behalf, and your organizations will have full control over these updates. You can choose to receive updates from [channels](/deployoffice/overview-update-channels) other than the default [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview).
+For organizations seeking greater control, you can allow or block Microsoft 365 App updates for Windows Autopatch-enrolled devices. When the Microsoft 365 App update setting is set to **Block**, Windows Autopatch won't provide Microsoft 365 App updates on your behalf, and your organizations will have full control over these updates. For example, you can continue to receive updates from [channels](/deployoffice/overview-update-channels) other than the default [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview).
 
 **To allow or block Microsoft 365 App updates:**
 
