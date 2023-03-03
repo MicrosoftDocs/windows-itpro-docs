@@ -15,7 +15,7 @@ The following table lists common problems and options to resolve them:
 |---|---|
 | **App hasn't installed** | <li>Check the type of app:<ul><li>Win32 apps should be able to install with no problem</li><li>UWP and Store apps require writing an additional supplemental policy</li></ul></li><li>Check that the managed installer policies are deployed correctly</li><li>It's possible the app is trying to execute a blocked binary. Check the AppLocker and CodeIntegrity logs in Event Viewer to see if any executables related to the app are being blocked.If so, you'll need to write a supplemental policy to support the app</li><li> Check the Intune Management Extension logs to see if there was an attempt to install your app</li>|
 | **App has problems when running** | It's possible the app is trying to execute a blocked binary. <br> Check the *AppLocker* and *CodeIntegrity* logs in Event Viewer to see if any executables related to the app are being blocked. If so, you'll need to write a supplemental policy to support the app. |
-| **My supplemental policy hasn't deployed** |<li>Your XML policy is malformed. Double-check to see if all markup is tagged correctly</li><li>Check that your policy was correctly applied. See [AppLocker policy deployment](./Prepare-devices-for-managed-installer-(TAP-ONLY)#applocker-policy-deployment) and verify that the policy with the matching PolicyID has been applied</li>|
+| **My supplemental policy hasn't deployed** |<li>Your XML policy is malformed. Double-check to see if all markup is tagged correctly</li><li>Check that your policy was correctly applied.|
 
 ## WDAC Supplemental policy validation
 
@@ -23,13 +23,13 @@ Use the Event Viewer to see if a supplemental policy has deployed correctly. The
 
 1. Open the *Event viewer* on a target device
 1. Expand **Applications and Services** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**
-1. Look for **event ID 3099**: *the policy was Refreshed and activated*
+1. Check for **event ID 3099**: *the policy was Refreshed and activated*
   - For example: `Refreshed and activated Code Integrity policy {GUID} . id . Status 0x0`
   - The policy that allows managed installers is **`C0DB889B-59C5-453C-B297-399C851934E4`**. Checking that this policy is applied correctly, indicates that a device is setup to allow managed installers (and therefore, can allow installation of Win32 apps via the Intune Management Extension).\
   You can check that the *Managed Installer policy* rule was set in the policy, by checking the *Options* field in the *details* pane.\
   For more information, see: [Understanding Application Control event IDs][WIN-1]
 
-  ![](./images/troubleshoot-managed-installer-policy.png)
+:::image type="content" source="images/troubleshoot-managed-installer-policy.png" alt-text="CodeIntegrity operational log":::
 
 You can also verify that the policy has been activated by running the following from the <kbd>Win</kbd> + <kbd>R</kbd> *Run dialog* on a target device as an Administrator (hold <kbd>CTRL</kbd> + <kbd>Shift</kbd> when pressing Enter to run the command):
 
@@ -40,12 +40,12 @@ You can also verify that the policy has been activated by running the following 
   - For the policy which allows managed installers to run, a policy with the ID `C0DB889B-59C5-453C-B297-399C851934E4` and Friendly Name *[Win-EDU] Microsoft Apps Supplemental Policy - Prod* should be present, and have *Is Currently Enforced* showing as *true*
   - For any additional policies that you deploy, check that a policy with a matching ID and Friendly Name is shown in the list and the *Is Currently Enforced* and *Is Authorized* properties are both showing as *true*
 
-    ![](./images/troubleshoot-citool.png)
+:::image type="content" source="images/troubleshoot-citool.png" alt-text="Output of citool.exe with the Win-EDU supplemental policy.":::
 
 
-1. Look for **error events** with code **3077**: and reference [Understanding Application Control event IDs][WIN-1]
+1. Check for **error events** with code **3077**: and reference [Understanding Application Control event IDs][WIN-1]
 
-![](./images/image9.png)
+:::image type="content" source="images/image9.png" alt-text="Error in the CodeIntegrity operational log":::
 
 When checking an error event, you can observe that the information in the *General* tab may show something like the following:
 
@@ -87,7 +87,7 @@ sc.exe query applockerfltr
 
 When executing the `sc.exe query` commands, the *STATE* property should show a state of *4 RUNNING* for both services:
 
-![](./images/sc-commands.png)
+:::image type="content" source="images/sc-command.png" alt-text="Output of the command sc.exe query.":::
 
 ## AppLocker - MSI and Script
 
@@ -105,7 +105,7 @@ When executing the `sc.exe query` commands, the *STATE* property should show a s
 Advance to the next article to learn about additional considerations before deploying apps with managed installer.
 
 > [!div class="nextstepaction"]
-> [Next: considerations >](considerations.md)
+> [Next: considerations >](./considerations.md)
 
-[MEM-1]: https://learn.microsoft.com/mem/intune/remote-actions/collect-diagnostics
-[WIN-1]: https://learn.microsoft.com/windows/security/threat-protection/windows-defender-application-control/event-id-explanations
+[MEM-1]: /mem/intune/remote-actions/collect-diagnostics
+[WIN-1]: /windows/security/threat-protection/windows-defender-application-control/event-id-explanations

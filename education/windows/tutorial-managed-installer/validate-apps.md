@@ -1,7 +1,7 @@
 ---
 title: Validate the applications deployed to Windows SE devices
 description: Learn how to validate the applications deployed to Windows SE devices via Intune.
-ms.date: 03/02/2023
+ms.date: 03/03/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
@@ -149,7 +149,7 @@ If there are any errors, create an AppLocker policy
 
 ## Next steps
 
-Advance to the next article to learn how to troubleshoot common errors when deploying apps with managed installer.
+Advance to the next article to learn how to create and deploy additional policies, in case the apps you deployed are not didn't work as expected.
 
 > [!div class="nextstepaction"]
 > [Next: troubleshoot >](troubleshoot.md)
