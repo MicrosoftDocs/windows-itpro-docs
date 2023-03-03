@@ -174,7 +174,7 @@ You can also use the following macros when the exact volume may vary: `%OSDRIVE%
 Without a wildcard, the filepath rule allows only a specific file (ex. `C:\foo\bar.exe`).
 
 > [!NOTE]
-> When authoring WDAC policies with Microsoft Configuration Manager (ConfigMgr), you can instruct ConfigMgr to create rules for specified files and folders. These rules **aren't** WDAC filepath rules. Rather, ConfigMgr performs a one-time scan of the specified files and folders and builds rules for any binaries found in those locations at the time of that scan. File changes to those specified files and folders after that scan won't be allowed unless the ConfigMgr policy is reapplied.
+> When authoring WDAC policies with Configuration Manager, there is an option to create rules for specified files and folders. These rules **aren't** WDAC filepath rules. Rather, Configuration Manager performs a one-time scan of the specified files and folders and builds rules for any binaries found in those locations at the time of that scan. File changes to those specified files and folders after that scan won't be allowed unless the Configuration Manager policy is reapplied.
 
 > [!NOTE]
 > There is currently a bug where MSIs cannot be allow listed in file path rules. MSIs must be allow listed using other rule types, for example, publisher rules or file attribute rules.
