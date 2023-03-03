@@ -99,7 +99,7 @@ Each file rule level has advantages and disadvantages. Use Table 2 to select the
 | **RootCertificate** | This level may produce an overly permissive policy and isn't recommended for most use cases. |
 | **WHQL** | Only trusts binaries that have been submitted to Microsoft and signed by the Windows Hardware Qualification Lab (WHQL). This level is primarily for kernel binaries. |
 | **WHQLPublisher** | This level combines the WHQL level and the CN on the leaf certificate, and is primarily for kernel binaries. |
-| **WHQLFilePublisher** | This level combines the the "FileName" attribute of the signed file, plus "WHQLPublisher", plus a minimum version number. This level is primarily for kernel binaries. |
+| **WHQLFilePublisher** | This level combines the "FileName" attribute of the signed file, plus "WHQLPublisher", plus a minimum version number. This level is primarily for kernel binaries. |
 
 > [!NOTE]
 > When you create WDAC policies with [New-CIPolicy](/powershell/module/configci/new-cipolicy), you can specify a primary file rule level, by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate, but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
@@ -168,8 +168,8 @@ You can also use the following macros when the exact volume may vary: `%OSDRIVE%
 | Examples | Description | Supported operating systems |
 |------------ | ----------- | ----------- |
 | **C:\\Windows\\\*** <br> **D:\\EnterpriseApps\\MyApp\\\*** <br> **%OSDRIVE%\\Windows\\\*** | Wildcards placed at the end of a path authorize all files in the immediate path and its subdirectories recursively. | Windows 11, Windows 10, and Windows Server 2022 |
-| **\*\\bar.exe** | Wildcards placed at the beginning of a path allows the exact specified filename in any location. | Windows 11, Windows 10, and Windows Server 2022 |
-| **C:\\\*\\CCMCACHE\\\*\\7z????-x64.exe** <br> **%OSDRIVE%\\\*\\CCMCACHE\\\*\\7z????-x64.exe** | Wildcards used in the middle of a path allows all files that match that pattern. Consider carefully all the possible matches, particularly if your policy disables the admin-writeable check with the **Disabled:Runtime FilePath Rule Protection** option. In this example both of these hypothetical paths would match: <br> *`C:\WINDOWS\CCMCACHE\12345\7zabcd-x64.exe`* <br> *`C:\USERS\WDACUSER\Downloads\Malware\CCMCACHE\Pwned\7zhaha-x64.exe`* | Windows 11 only |
+| **\*\\bar.exe** | Wildcards placed at the beginning of a path allow the exact specified filename in any location. | Windows 11, Windows 10, and Windows Server 2022 |
+| **C:\\\*\\CCMCACHE\\\*\\7z????-x64.exe** <br> **%OSDRIVE%\\\*\\CCMCACHE\\\*\\7z????-x64.exe** | Wildcards used in the middle of a path allow all files that match that pattern. Consider carefully all the possible matches, particularly if your policy disables the admin-writeable check with the **Disabled:Runtime FilePath Rule Protection** option. In this example, both of these hypothetical paths would match: <br> *`C:\WINDOWS\CCMCACHE\12345\7zabcd-x64.exe`* <br> *`C:\USERS\WDACUSER\Downloads\Malware\CCMCACHE\Pwned\7zhaha-x64.exe`* | Windows 11 only |
 
 Without a wildcard, the filepath rule allows only a specific file (ex. `C:\foo\bar.exe`).
 
