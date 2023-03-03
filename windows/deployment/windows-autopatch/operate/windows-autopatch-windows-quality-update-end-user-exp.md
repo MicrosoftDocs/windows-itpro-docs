@@ -14,7 +14,7 @@ ms.reviewer: hathind
 
 # Windows quality update end user experience
 
-Windows Autopatch aims to deploy updates predictably while minimizing the effect to end users by preventing reboots during business hours.
+Windows Autopatch aims to deploy updates predictably while minimizing the effect to end users by preventing restarts during business hours.
 
 ## User notifications  
 
