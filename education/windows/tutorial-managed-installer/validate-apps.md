@@ -53,11 +53,11 @@ To check the installation status of an app from the Intune portal:
 1. Select the application you want to check
 1. From the **Overview** page, you can verify the overall installation status
     
-    :::image type="content" source="./images/intune-app-install-overview.png" alt-text="Microsoft Intune admin center - App installation details.":::
+    :::image type="content" source="./images/intune-app-install-overview.png" alt-text="Microsoft Intune admin center - App installation details." lightbox="./images/intune-app-install-overview.png":::
 
 1. From the **Device install status** page, you can verify the installation status for each device, and the status code that indicates the cause of the failure
     
-    :::image type="content" source="./images/intune-app-install-status.png" alt-text="Microsoft Intune admin center - App installation status for each device.":::
+    :::image type="content" source="./images/intune-app-install-status.png" alt-text="Microsoft Intune admin center - App installation status for each device." lightbox="./images/intune-app-install-status.png":::
 
 > [!NOTE]
 > A Win32 application may install correctly, but report to Intune as failed.\
@@ -83,7 +83,7 @@ Checking for compatibility often means to execute the app and verify its functio
 
 Here are things to pay attention to:
 
-- Know how the apps you deploy are updated, whether through auto-updates and if they offer controls for automatic updates
+- Know how the apps you deploy are updated, and if they offer controls for automatic updates
 - Dialogs may pop up during the app use, indicating that something is blocked
 - Multiple apps are installed, especially if one app appears to be a launcher/updater. For example, Adobe Photoshop includes the Adobe Creative Cloud launcher, which updates Photoshop and other apps
 - Any messages indicating that the app is doing pre-installation work or downloading more content
@@ -103,13 +103,11 @@ Semi-compatible apps may run without problems initially, but in the future they 
 Incompatible apps may launch initially, but immediately begin to download more resources.\
 These apps are eventually blocked before any of their functionalities can be accessed. Or, these apps may not launch due to a dependent file blocked by the Windows 11 SE base policy.
 
-See [here][WIN-1] for the common classes of incompatible apps.
-
 ### Visual error notifications
 
 You may see a dialog indicating **This app won't run on your PC**. Check the indicated executable and verify that it matches the executable of the installed application.
 
-:::image type="content" source="images/image7.png" alt-text="Add more info.":::
+:::image type="content" source="images/winse-app-block.png" alt-text="Windows SE - error window while opening an app.":::
 
 ### Event Viewer
 
@@ -129,9 +127,9 @@ To learn about known limitations with apps deployed via a managed installer, see
 Before moving on to the next section, ensure that you've completed the following tasks:
 
 > [!div class="checklist"]
-> - No Intune installation errors
-> - No errors when opening the app from the device
-> - *CI Policy* in the Event Viewer logs don't show app's executables getting blocked
+> - Verified any installation errors from Intune
+> - Verified the app installation on the device
+> - Checked for any errors when opening the app from the device
 
 ## Next steps
 

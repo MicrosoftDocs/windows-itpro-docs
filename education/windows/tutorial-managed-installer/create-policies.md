@@ -20,17 +20,12 @@ The following table details the two policy types to allow apps to run:
 | WDAC Supplemental policy | Directly allows apps meeting the rule criteria to run | For executables that are blocked by the E-Mode policy (Visible from the Event Viewer in the [CodeIntegrity events](./troubleshoot.md)) | Low |
 | AppLocker policy | Sets an app to be considered as a managed installer | Only for executables that do installations or updates which are blocked by the E-Mode policy | High |
 
-> **Note**
->
+> [!NOTE]
 > The specifics of the policy you will need to write vary from app to app. Public documentation can help you determine which rules would be useful for your app.
 
 ## WDAC supplemental policies
 
-WDAC supplemental policies can be created and then deployed through Intune.\
-
-Watch Jeffrey Sutherland explain ...
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWReO]
+WDAC supplemental policies can be created and then deployed through Intune.
 
 Follow the instructions below for authoring and deploying these policies.
 
@@ -90,6 +85,11 @@ Set-CiPolicyIdInfo - FilePath <"Path to .xml from step 3"> -SupplementsBasePolic
 
 > [!NOTE]
 > If you have created multiple supplemental policies for different apps, it's recommended to merge all supplemental policies together before deploying. You can merge policies using the WDAC Wizard.
+
+In the following video, Jeffrey Sutherland explains how to create a supplemental policy for an app that is blocked by the Windows 11 SE E-Mode policy.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWReO]
+
 
 
 ### Writing a supplemental policy for a UWP LOB app
