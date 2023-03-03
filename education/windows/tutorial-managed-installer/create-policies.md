@@ -27,27 +27,20 @@ The following table details the two policy types to allow apps to run:
 
 WDAC supplemental policies can be created and then deployed through Intune.
 
-Follow the instructions below for authoring and deploying these policies.
+To allow apps to install and run, you must write supplemental policies targeting the correct base policy. The base policy that you need to target has a PolicyID of `{82443E1E-8A39-4B4A-96A8-F40DDC00B9F3}`.
 
-To allow apps to install and run by effectively overriding the Windows 11 SE E-Mode policy, supplemental policies you write must target the correct base policy. The base policy that you need to target has a PolicyID of `{82443E1E-8A39-4B4A-96A8-F40DDC00B9F3}`.
-
-- Policy creation: [Policy creation for common WDAC usage scenarios (Windows) - Windows security | Microsoft Docs][WIN-1]
-- Supplemental Policy creation: [Creating a new Supplemental Policy with the Wizard][WIN-2]
-- [WDAC Policy Wizard][EXT-1]
-
-### Writing a supplemental policy
+### Write a supplemental policy
 
 To write a policy, you can use [audit events][WIN-3], as they allow you to observe the actions that would be blocked by Windows 11 SE. From the audit events, you can create a policy to allow those actions.
 
-1. On a **non-Windows SE** device, apply an audit mode WDAC Base policy. The WDAC Wizard includes a template policy called *WinSEPolicy.xml based on Windows 11 SE E mode* that you can use:
+1. On a **non-Windows SE** device, apply an audit mode WDAC Base policy. The WDAC Wizard includes a template policy called *WinSEPolicy.xml* which is based on the **Windows 11 SE E-mode** policy:
    - Open the **WDAC Wizard** and select **Policy Editor**
-   - In the Policy Path to Edit field, browse for *%ProgramFiles%\WindowsApps\Microsoft.WDAC* and select the file called WinSEPolicy.xml. Select **Next**
-      :::image type="content" source="images/wdac-winsepolicy.png" alt-text="This is a placeholder.":::
-   - Toggle the option for **Audit Mode** and complete the Wizard.
-   - Note the location of the .cip and .xml files shown on the final page of the wizard.
+   - In the Policy Path to Edit field, browse for *%ProgramFiles%\WindowsApps\Microsoft.WDAC\** and select the file called *WinSEPolicy.xml*. Select **Next**
+      :::image type="content" source="images/wdac-winsepolicy.png" alt-text="WDAC wizard - creation of a policy targeting the base WinSEPolicy.xml policy":::
+   - Toggle the option for **Audit Mode** and complete the Wizard. Note the location of the .cip and .xml files shown on the final page of the wizard
    - From an elevated PowerShell session, run the following command to activate the policy:
-     ```
-     Citool.exe -up <Path to the .cip file>
+     ```cmd
+     citool.exe -up \<\*Path to the .cip file\*\>
      ```
 1. With the *Base audit mode policy* for Windows 11 SE in place:
     - Download and run the app install for your app
@@ -64,13 +57,13 @@ To write a policy, you can use [audit events][WIN-3], as they allow you to obser
 1. Convert the policy created in the previous step to a supplemental policy, specifying the E mode audit policy you created in the first step as its *Base*.
 
    ```PowerShell
-   Set-CiPolicyIdInfo -FilePath <"Path to.xml file from previous step"> -BasePolicyToSupplementPath <"Path to the E mode .xml created in the first step">
+   Set-CiPolicyIdInfo -FilePath \<Path to.xml file from previous step\> -BasePolicyToSupplementPath \<Path to the E mode .xml created in the first step\>
    ```
 
 1. From an elevated PowerShell session, run the following command to activate the policy:
 
-   ```
-   citool.exe -up <"Path to the .cip file">
+   ```cmd
+   citool.exe -up \<Path to the .cip file\>
    ```
 
 1. Clear the two event logs:
@@ -90,6 +83,11 @@ In the following video, Jeffrey Sutherland explains how to create a supplemental
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWReO]
 
+For additional information:
+
+- Policy creation: [Policy creation for common WDAC usage scenarios (Windows) - Windows security | Microsoft Docs][WIN-1]
+- Supplemental Policy creation: [Creating a new Supplemental Policy with the Wizard][WIN-2]
+- [WDAC Policy Wizard][EXT-1]
 
 
 ### Writing a supplemental policy for a UWP LOB app
