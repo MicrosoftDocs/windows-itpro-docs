@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 02/28/2023
+ms.date: 03/03/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -37,6 +37,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Message center post number | Description |
 | ----- | ----- |
+| [MC521882](https://admin.microsoft.com/adminportal/home#/MessageCenter) | February 2023 Windows Autopatch baseline configuration update |
 | [MC517330](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Ability to opt out of Microsoft 365 App updates |
 | [MC517327](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned service maintenance downtime for European Union (EU) Windows Autopatch customers enrolled before November 8, 2022 |
 
