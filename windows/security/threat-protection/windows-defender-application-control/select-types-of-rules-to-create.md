@@ -33,7 +33,7 @@ Windows Defender Application Control (WDAC) can control what runs on Windows 10 
 
 WDAC is used to restrict devices to run only approved apps, while the operating system is hardened against kernel memory attacks using [hypervisor-protected code integrity (HVCI)](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control).
 
-## WDAC policy rules
+## Windows Defender Application Control policy rules
 
 To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleOption](/powershell/module/configci/set-ruleoption). The following examples show how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
 
