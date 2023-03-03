@@ -50,7 +50,7 @@ The zip file will have logs according to the areas that were used in the command
 - DiagnosticLogCSP_Collector_DeviceProvisioning_*: Provisioning etls (Microsoft-Windows-Provisioning-Diagnostics-Provider)
 - MDMDiagHtmlReport.html: Summary snapshot of MDM configurations and policies. Includes, management url, MDM server device ID, certificates, policies.
 - MdmDiagLogMetadata, json: mdmdiagnosticstool metadata file, contains command-line arguments used to run the tool
-- MDMDiagReport.xml: contains a more detailed view into the MDM configurations, such as enrollment variables, provisioning packages, multivariant conditions, and others. For more information about diagnosing provisioning packages, see [Diagnose provisioning packages](windows/configuration/provisioning-packages/diagnose-provisioning-packages.md).
+- MDMDiagReport.xml: contains a more detailed view into the MDM configurations, such as enrollment variables, provisioning packages, multivariant conditions, and others. For more information about diagnosing provisioning packages, see [Diagnose provisioning packages](/windows/configuration/provisioning-packages/diagnose-provisioning-packages).
 - MdmDiagReport_RegistryDump.reg: contains dumps from common MDM registry locations
 - MdmLogCollectorFootPrint.txt: mdmdiagnosticslog tool logs from running the command
 - *.evtx: Common event viewer logs microsoft-windows-devicemanagement-enterprise-diagnostics-provider-admin.evtx main one that contains MDM events.
