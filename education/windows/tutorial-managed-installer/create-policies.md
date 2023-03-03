@@ -202,6 +202,23 @@ For information how to troubleshoot AppLocker policies, see [WDAC supplemental p
 
 ## Next steps
 
+Before moving on to the next section, ensure that you've completed the following tasks:
+
+If there are any errors, create a WDAC supplemental policy
+
+> [!div class="checklist"]
+> - Signed .cip .p7b file with Device Guard
+> - Targets Base policy: `82443e1e-8a39-4b4a-96a8-f40ddc00b9f3`
+> - Policy created in Intune and assigned to the correct groups
+> - Policy applied in Event Viewer
+
+If there are any errors, create an AppLocker policy
+
+> [!div class="checklist"]
+> - Only applied to an updater or installer
+> - Merge option used
+> - Policy created in Intune and assigned to the correct groups
+
 Advance to the next article to learn how to troubleshoot common errors when deploying apps with managed installer.
 
 > [!div class="nextstepaction"]
