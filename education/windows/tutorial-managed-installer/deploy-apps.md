@@ -21,7 +21,7 @@ The following table provides an overview of the applications types that can be d
 |[Win32][WIN-1]|`.exe`<br>`.msi`|- Intune Management Extension (IME)<br> - Microsoft Store integration|⚠️ There are known limitations that might prevent a specific app from being installed.|
 |[Universal Windows Platform (UWP)][UWP-1]|`.appx`<br>`.appxbundle`<br>`.msix`<br>|- For private apps: line-of-business apps<br>- For public apps: Microsoft Store integration|⚠️ LOB apps require a supplemental policy.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy UWP apps on Windows SE.|
 |[Progressive Web Apps (PWAs)][EDGE-2] |`.msix`|- Settings catalog policies<br>- Microsoft Store integration|✅ Use settings catalog policies.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy PWAs.|
-|Web links| n/a |- Web apps|✅ Web links are supported.|
+|Web links| n/a |- Windows web links|✅ Web links are supported.|
 
 > [!IMPORTANT]
 > Although you'll be able to install apps on Windows 11 SE devices via Intune, some apps may not perform well on these devices due those apps' minimum spec requirements.
@@ -59,7 +59,7 @@ PWAs available in the Microsoft Store aren't currently supported for Windows 11 
 
 ## Web links
 
-Web link can be deployed via Intune using [web apps][MEM-4], and will be available in the Start menu of the targeted devices.
+Web link can be deployed via Intune using [Windows web links][MEM-4], and will be available in the Start menu of the targeted devices.
 
 ## Section review
 
@@ -67,7 +67,7 @@ Before moving on to the next section, ensure that you've completed the following
 
 > [!div class="checklist"]
 > - `.intunewin` package created (for Win32 apps)
-> - App uploaded via Intune (for Win32 apps)
+> - App uploaded via Intune (for Win32 and UWP LOB apps)
 > - App assigned to the correct groups
 
 ## Next steps
