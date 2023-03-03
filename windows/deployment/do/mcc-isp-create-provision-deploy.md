@@ -8,9 +8,10 @@ ms.author: nidos
 ms.topic: article
 ms.date: 12/31/2017
 ms.technology: itpro-updates
+ms.collection: tier3
 ---
 
-# Create, Configure, provision, and deploy the cache node in Azure portal
+# Create, configure, provision, and deploy the cache node in Azure portal
 
 **Applies to**
 
@@ -58,8 +59,8 @@ BGP (Border Gateway Protocol) routing is another method offered for client routi
 
 1. Enter the max allowable egress that your hardware can support.  
 
-1. Under **Cache storage**, specify the location of the cache drives to store content along with the size of the cache drives in Gigabytes.  
-**Note:** Up to nine cache drives are supported.  
+1. Under **Cache storage**, specify the location of the cache drive folder to store content along with the size of the cache drives in Gigabytes.  
+**Note:** This is a **required** field. Up to nine cache drive folders are supported.  
 
 1. Under **Routing information**, select the routing method you would like to use. For more information, see [Client routing](#client-routing).
 
@@ -110,10 +111,10 @@ There are five IDs that the device provisioning script takes as input in order t
 
 1. Copy and paste the script command line shown in the Azure portal.
 
-1. Run the script in your server terminal for your cache node by . The script may take a few minutes to run. If there were no errors, you have set up your cache node successfully. To verify the server is set up correctly, follow the [verification steps](mcc-isp-verify-cache-node.md).
+1. Run the script in your server terminal for your cache node. The script may take a few minutes to run. If there were no errors, you have set up your cache node successfully. To verify the server is set up correctly, follow the [verification steps](mcc-isp-verify-cache-node.md).
 
     > [!NOTE]
-    > The same script can be used to provision multiple cache nodes, but the command line is unique per cache node. Additionally, if you need to reprovision your server or provision a new server or VM for the cache node, you must copy the command line from the Azure portal again as the "registrationkey" value is unique for each successful execution of the provisioning script.
+    > The same script can be used to provision multiple cache nodes, but the command line is unique per cache node. Additionally, if you need to re-provision your server or provision a new server or VM for the cache node, you must copy the command line from the Azure portal again as the "registrationkey" value is unique for each successful execution of the provisioning script.
 
 ### General configuration fields
 
@@ -127,12 +128,12 @@ There are five IDs that the device provisioning script takes as input in order t
 ### Storage fields
 
 > [!IMPORTANT]
-> All cache drives must have read/write permissions set or the cache node will not function.
-> For example, in a terminal you can run: `sudo chmod 777 /path/to/cachedrive`
+> All cache drives must have full read/write permissions set or the cache node will not function.
+> For example, in a terminal you can run: `sudo chmod 777 /path/to/cachedrivefolder`
 
 | Field Name | Expected Value| Description |
 |---|---|---|
-| **Cache drive** | File path string | Up to 9 drives can be configured for each cache node to configure cache storage. Enter the file path to each drive. For example: `/dev/folder/` Each cache drive should have read/write permissions configured. |
+| **Cache drive folder** | File path string | Up to 9 drive folders accessible by the cache node can be configured for each cache node to configure cache storage. Enter the location of the folder in Ubuntu where the external physical drive is mounted. For example: `/dev/sda3/` Each cache drive should have read/write permissions configured. Ensure your disks are mounted and visit [Attach a data disk to a Linux VM](/azure/virtual-machines/linux/attach-disk-portal#find-the-disk) for more information.|
 | **Cache drive size in gigabytes** | Integer in GB | Set the size of each drive configured for the cache node. |
 
 ### Client routing fields

@@ -8,6 +8,7 @@ localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
+ms.date: 08/26/2022
 ms.topic: reference
 ---
 
@@ -34,10 +35,6 @@ You can learn more about Windows functional and diagnostic data through these ar
 - [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 - [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
-
-
-
-
 
 ## Appraiser events
 
@@ -1286,7 +1283,6 @@ The following fields are available:
 - **objectInstanceId**  Object identity which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
- 
 
 ## Component-based servicing events
 
@@ -1713,6 +1709,18 @@ The following fields are available:
 
 
 ## Holographic events
+
+### Microsoft.Windows.Analog.Spectrum.TelemetryHolographicSpaceCreated
+
+This event indicates the state of Windows holographic scene. The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **AppSessionGuid**  GUID made up of process ID and is used as a correlation vector for process instances in the telemetry backend.
+- **IsForCompositor**  True/False to indicate whether the holographic space is for compositor process.
+- **Source**  An enumeration indicating the source of the log.
+- **WindowInstanceId**  Unique value for each window instance.
+
 
 ### Microsoft.Windows.Shell.HolographicFirstRun.AppActivated
 
@@ -2195,6 +2203,33 @@ The following fields are available:
 - **resultCode**  HR result of the cancellation.
 
 
+## Other events
+
+### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Entered
+
+This event sends data indicating the start of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **SessionID**  Unique value for each attempt.
+- **TargetAsId**  The sequence number for the process.
+- **windowInstanceId**  Unique value for each window instance.
+
+
+### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Leave
+
+This event sends data indicating the end of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **EventHistory**  Unique number of event history.
+- **ExternalComponentState**  State of external component.
+- **LastEvent**  Unique number of last event.
+- **SessionID**  Unique value for each attempt.
+- **TargetAsId**  The sequence number for the process.
+- **windowInstanceId**  Unique value for each window instance.
+
+
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -2403,6 +2438,22 @@ The following fields are available:
 
 
 ## Update events
+
+### Update360Telemetry.FellBackToDownloadingAllPackageFiles
+
+This event indicates whether a failure occurred during Missing File List generation and is applicable to Quality Update downloads.
+
+The following fields are available:
+
+- **ErrorCode**  Error code returned during Missing File List generation.
+- **FlightId**  Unique ID for each flight.
+- **ObjectId**  Unique ID for each flight.
+- **Package**  Name of the package for which Missing File List generation failed and we fell back to downloading all package files.
+- **RelatedCV**  Correlation vector value generated from the latest USO scan.
+- **ScenarioId**  Indicates the update scenario.
+- **SessionId**  Unique value for each attempt (same value for initialize, download, install commit phases).
+- **UpdateId**  Unique ID for each Update.
+
 
 ### Update360Telemetry.UpdateAgentDownloadRequest
 
@@ -3320,6 +3371,29 @@ The following fields are available:
 ### Microsoft.Windows.Update.Ux.MusUpdateSettings.Derived.ClientAggregated.LaunchPageDuration
 
 This event is derived event results for the LaunchPageDuration scenario.
+
+
+
+### Microsoft.Windows.Update.WUClient.DownloadPaused
+
+This event is fired when the Download stage is paused.
+
+The following fields are available:
+
+- **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
+- **CallerName**  Name of application making the Windows Update request. Used to identify context of request.
+- **ClassificationId**  Classification identifier of the update content.
+- **DownloadPriority**  Indicates the priority of the download activity.
+- **EventType**  Indicates the purpose of the event - whether because scan started, succeeded, failed, etc.
+- **FlightId**  Secondary status code for certain scenarios where StatusCode was not specific enough.
+- **HandlerInfo**  Blob of Handler related information.
+- **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
+- **Props**  Commit Props {MergedUpdate}
+- **RegulationResult**  The result code (HResult) of the last attempt to contact the regulation web service for download regulation of update content.
+- **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc).
+- **UpdateId**  Identifier associated with the specific piece of content.
+- **UusVersion**  The version of the Update Undocked Stack.
 
 
 ### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit

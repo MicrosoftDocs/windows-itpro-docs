@@ -34,7 +34,7 @@ items:
       href: policy-configuration-service-provider.md
       items:
       - name: Policy CSP DDF file
-        href: policy-ddf-file.md
+        href: configuration-service-provider-ddf.md
       - name: Policy CSP support scenarios
         items:
         - name: ADMX policies in Policy CSP
@@ -118,6 +118,10 @@ items:
           href: policy-csp-admx-digitallocker.md
         - name: ADMX_DiskDiagnostic
           href: policy-csp-admx-diskdiagnostic.md
+        - name: ADMX_DiskNVCache
+          href: policy-csp-admx-disknvcache.md
+        - name: ADMX_DiskQuota
+          href: policy-csp-admx-diskquota.md
         - name: ADMX_DistributedLinkTracking
           href: policy-csp-admx-distributedlinktracking.md
         - name: ADMX_DnsClient
@@ -156,7 +160,7 @@ items:
           href: policy-csp-admx-folderredirection.md
         - name: ADMX_FramePanes
           href: policy-csp-admx-framepanes.md
-        - name: ADMX_FTHSVC
+        - name: ADMX_fthsvc
           href: policy-csp-admx-fthsvc.md
         - name: ADMX_Globalization
           href: policy-csp-admx-globalization.md
@@ -166,7 +170,7 @@ items:
           href: policy-csp-admx-help.md
         - name: ADMX_HelpAndSupport
           href: policy-csp-admx-helpandsupport.md
-        - name: ADMX_HotSpotAuth
+        - name: ADMX_hotspotauth
           href: policy-csp-admx-hotspotauth.md
         - name: ADMX_ICM
           href: policy-csp-admx-icm.md
@@ -242,8 +246,12 @@ items:
           href: policy-csp-admx-printing2.md
         - name: ADMX_Programs
           href: policy-csp-admx-programs.md
+        - name: ADMX_PushToInstall
+          href: policy-csp-admx-pushtoinstall.md
         - name: ADMX_QOS
           href: policy-csp-admx-qos.md
+        - name: ADMX_Radar
+          href: policy-csp-admx-radar.md
         - name: ADMX_Reliability
           href: policy-csp-admx-reliability.md
         - name: ADMX_RemoteAssistance
@@ -280,6 +288,10 @@ items:
           href: policy-csp-admx-smartcard.md
         - name: ADMX_Snmp
           href: policy-csp-admx-snmp.md
+        - name: ADMX_SoundRec
+          href: policy-csp-admx-soundrec.md
+        - name: ADMX_srmfci
+          href: policy-csp-admx-srmfci.md
         - name: ADMX_StartMenu
           href: policy-csp-admx-startmenu.md
         - name: ADMX_SystemRestore
@@ -312,6 +324,8 @@ items:
           href: policy-csp-admx-wdi.md
         - name: ADMX_WinCal
           href: policy-csp-admx-wincal.md
+        - name: ADMX_WindowsColorSystem
+          href: policy-csp-admx-windowscolorsystem.md
         - name: ADMX_WindowsConnectNow
           href: policy-csp-admx-windowsconnectnow.md
         - name: ADMX_WindowsExplorer
@@ -328,6 +342,8 @@ items:
           href: policy-csp-admx-wininit.md
         - name: ADMX_WinLogon
           href: policy-csp-admx-winlogon.md
+        - name: ADMX_Winsrv
+          href: policy-csp-admx-winsrv.md
         - name: ADMX_wlansvc
           href: policy-csp-admx-wlansvc.md
         - name: ADMX_WordWheel
@@ -336,8 +352,6 @@ items:
           href: policy-csp-admx-workfoldersclient.md
         - name: ADMX_WPN
           href: policy-csp-admx-wpn.md
-        - name: ADMX-Winsrv
-          href: policy-csp-admx-winsrv.md
         - name: ApplicationDefaults
           href: policy-csp-applicationdefaults.md
         - name: ApplicationManagement
@@ -354,7 +368,7 @@ items:
           href: policy-csp-authentication.md
         - name: Autoplay
           href: policy-csp-autoplay.md
-        - name: BitLocker
+        - name: Bitlocker
           href: policy-csp-bitlocker.md
         - name: BITS
           href: policy-csp-bits.md
@@ -406,7 +420,7 @@ items:
           href: policy-csp-display.md
         - name: DmaGuard
           href: policy-csp-dmaguard.md
-        - name: EAP
+        - name: Eap
           href: policy-csp-eap.md
         - name: Education
           href: policy-csp-education.md
@@ -420,7 +434,7 @@ items:
           href: policy-csp-experience.md
         - name: ExploitGuard
           href: policy-csp-exploitguard.md
-        - name: Federated Authentication
+        - name: FederatedAuthentication
           href: policy-csp-federatedauthentication.md
         - name: Feeds
           href: policy-csp-feeds.md
@@ -502,6 +516,8 @@ items:
           href: policy-csp-settings.md
         - name: SettingsSync
           href: policy-csp-settingssync.md
+        - name: SmartScreen
+          href: policy-csp-smartscreen.md
         - name: Speech
           href: policy-csp-speech.md
         - name: Start
@@ -538,14 +554,12 @@ items:
           href: policy-csp-webthreatdefense.md
         - name: Wifi
           href: policy-csp-wifi.md
-        - name: WindowsAutoPilot
+        - name: WindowsAutopilot
           href: policy-csp-windowsautopilot.md
         - name: WindowsConnectionManager
           href: policy-csp-windowsconnectionmanager.md
         - name: WindowsDefenderSecurityCenter
           href: policy-csp-windowsdefendersecuritycenter.md
-        - name: WindowsDefenderSmartScreen
-          href: policy-csp-smartscreen.md
         - name: WindowsInkWorkspace
           href: policy-csp-windowsinkworkspace.md
         - name: WindowsLogon
@@ -588,8 +602,6 @@ items:
       items:
       - name: AppLocker DDF file
         href: applocker-ddf-file.md
-      - name: AppLocker XSD
-        href: applocker-xsd.md
     - name: AssignedAccess
       href: assignedaccess-csp.md
       items:
@@ -654,12 +666,17 @@ items:
     - name: DeviceManageability
       href: devicemanageability-csp.md
       items:
-      - name: DeviceManageability DDF
+      - name: DeviceManageability DDF file
         href: devicemanageability-ddf.md
+    - name: DevicePreparation
+      href: devicepreparation-csp.md
+      items:
+      - name: DevicePreparation DDF file
+        href: devicepreparation-ddf-file.md
     - name: DeviceStatus
       href: devicestatus-csp.md
       items:
-      - name: DeviceStatus DDF
+      - name: DeviceStatus DDF file
         href: devicestatus-ddf.md
     - name: DevInfo
       href: devinfo-csp.md
@@ -719,17 +736,13 @@ items:
     - name: EnterpriseDesktopAppManagement
       href: enterprisedesktopappmanagement-csp.md
       items:
-      - name: EnterpriseDesktopAppManagement DDF
+      - name: EnterpriseDesktopAppManagement DDF file
         href: enterprisedesktopappmanagement-ddf-file.md
-      - name: EnterpriseDesktopAppManagement XSD
-        href: enterprisedesktopappmanagement2-xsd.md
     - name: EnterpriseModernAppManagement
       href: enterprisemodernappmanagement-csp.md
       items:
-      - name: EnterpriseModernAppManagement DDF
+      - name: EnterpriseModernAppManagement DDF file
         href: enterprisemodernappmanagement-ddf.md
-      - name: EnterpriseModernAppManagement XSD
-        href: enterprisemodernappmanagement-xsd.md
     - name: eUICCs
       href: euiccs-csp.md
       items:
@@ -743,12 +756,17 @@ items:
     - name: HealthAttestation
       href: healthattestation-csp.md
       items:
-      - name: HealthAttestation DDF
+      - name: HealthAttestation DDF file
         href: healthattestation-ddf.md
-    - name: Local Administrator Password Solution
+    - name: LanguagePackManagement
+      href: language-pack-management-csp.md
+      items:
+      - name: LanguagePackManagement DDF file
+        href: language-pack-management-ddf-file.md
+    - name: LAPS
       href: laps-csp.md
       items:
-      - name: Local Administrator Password Solution DDF
+      - name: LAPS DDF file
         href: laps-ddf-file.md
     - name: MultiSIM
       href: multisim-csp.md
@@ -777,23 +795,28 @@ items:
     - name: Office
       href: office-csp.md
       items:
-      - name: Office DDF
+      - name: Office DDF file
         href: office-ddf.md
     - name: PassportForWork
       href: passportforwork-csp.md
       items:
       - name: PassportForWork DDF file
         href: passportforwork-ddf.md
-    - name: PersonalDataEncryption
+    - name: PDE
       href: personaldataencryption-csp.md
       items:
-      - name: PersonalDataEncryption DDF file
+      - name: PDE DDF file
         href: personaldataencryption-ddf-file.md
     - name: Personalization
       href: personalization-csp.md
       items:
       - name: Personalization DDF file
         href: personalization-ddf.md
+    - name: PrinterProvisioning
+      href: printerprovisioning-csp.md
+      items:
+      - name: PrinterProvisioning DDF file
+        href: printerprovisioning-ddf-file.md
     - name: Provisioning
       href: provisioning-csp.md
     - name: PXLOGICAL
@@ -890,8 +913,6 @@ items:
       items:
       - name: VPNv2 DDF file
         href: vpnv2-ddf-file.md
-      - name: ProfileXML XSD
-        href: vpnv2-profile-xsd.md
       - name: EAP configuration
         href: eap-configuration.md
     - name: w4 APPLICATION

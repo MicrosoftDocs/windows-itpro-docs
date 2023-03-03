@@ -1,15 +1,15 @@
 ---
 title: Microsoft Connected Cache overview
-manager: dougeby
+manager: aaroncz
 description: This article provides information about Microsoft Connected Cache (MCC), a software-only caching solution.
 ms.prod: windows-client
-author: carmenf
+author: cmknox
 ms.localizationpriority: medium
 ms.author: carmenf
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates
 ms.date: 12/31/2017
+ms.collection: tier3
 ---
 
 # Microsoft Connected Cache overview
@@ -20,13 +20,21 @@ ms.date: 12/31/2017
 - Windows 11
 
 > [!IMPORTANT]
-> Microsoft Connected Cache is currently a preview feature. To view our early preview documentation, visit [Microsoft Connected Cache for Internet Service Providers (ISPs)](mcc-isp.md). For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+> Microsoft Connected Cache is currently a preview feature. To view our Microsoft Connected Cache for ISPs early preview documentation, visit [Microsoft Connected Cache for Internet Service Providers (ISPs)](mcc-isp.md). For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
-Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many bare-metal servers or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the client policy using management tools such as Intune.
+Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. Microsoft Connected Cache has two main offerings: 1) Microsoft Connected Cache for Internet Service Providers and 2) Microsoft Connected Cache for Enterprise and Education (early preview). Both products are created and managed in the cloud portal.
+
+## Microsoft Connected Cache for ISPs (preview)
+Microsoft Connected Cache (MCC) for Internet Service Providers is currently in preview. MCC can be deployed to as many bare-metal servers or VMs as needed and is managed from a cloud portal. When deployed, MCC can help to reduce your network bandwidth usage for Microsoft software content and updates. Cache nodes are created in the cloud portal and are configured to deliver traffic to customers by manual CIDR or BGP routing.
+
+## Microsoft Connected Cache for Enterprise and Education (early preview)
+Microsoft Connected Cache (MCC) for Enterprise and Education (early preview) is a software-only caching solution that delivers Microsoft content within Enterprise and Education networks. MCC can be deployed to as many Windows servers, bare-metal servers, or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the client policy using management tools such as Intune.
 
 MCC is a hybrid (mix of on-premises and cloud resources) SaaS solution built as an Azure IoT Edge module and Docker compatible Linux container deployed to your Windows devices. The Delivery Optimization team chose IoT Edge for Linux on Windows (EFLOW) as a secure, reliable container management infrastructure. EFLOW is a Linux virtual machine, based on Microsoft's first party CBL-Mariner operating system. It’s built with the IoT Edge runtime and validated as a tier 1 supported environment for IoT Edge workloads. MCC will be a Linux IoT Edge module running on the Windows Host OS.  
 
-Even though your MCC scenario isn't related to IoT, Azure IoT Edge is used as a more generic Linux container deployment and management infrastructure. The Azure IoT Edge runtime sits on your designated MCC device and performs management and communication operations. The runtime performs several functions important to manage MCC on your edge device:
+## IoT Edge 
+
+Both of Microsoft Connected Cache product offerings use Azure IoT Edge. Even though your MCC scenario isn't related to IoT, Azure IoT Edge is used as a more generic Linux container deployment and management infrastructure. The Azure IoT Edge runtime sits on your designated MCC device and performs management and communication operations. The runtime performs several functions important to manage MCC on your edge device:
 
 1. Installs and updates MCC on your edge device.
 1. Maintains Azure IoT Edge security standards on your edge device.
@@ -50,8 +58,6 @@ For more information on Azure IoT Edge, see the Azure IoT Edge [documentation](/
 The following diagram displays and overview of how MCC functions:
 
 :::image type="content" source="./images/waas-mcc-diag-overview.png" alt-text="Diagram displaying the components of MCC." lightbox="./images/waas-mcc-diag-overview.png":::
-
-
 
 ## Next steps
 

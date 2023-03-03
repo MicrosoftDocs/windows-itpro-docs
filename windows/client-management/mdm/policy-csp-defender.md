@@ -1,10 +1,10 @@
 ---
 title: Defender Policy CSP
-description: Learn more about the Defender Area in Policy CSP
+description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/02/2022
+ms.date: 02/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,11 +36,12 @@ ms.topic: reference
 <!-- AllowArchiveScanning-OmaUri-End -->
 
 <!-- AllowArchiveScanning-Description-Begin -->
-This policy setting allows you to configure scans for malicious software and unwanted software in archive files such as .ZIP or .CAB files.
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure scans for malicious software and unwanted software in archive files such as . ZIP or . CAB files.
 
-If you enable or do not configure this setting, archive files will be scanned.
+- If you enable or do not configure this setting, archive files will be scanned.
 
-If you disable this setting, archive files will not be scanned. However, archives are always scanned during directed scans.
+- If you disable this setting, archive files will not be scanned. However, archives are always scanned during directed scans.
 <!-- AllowArchiveScanning-Description-End -->
 
 <!-- AllowArchiveScanning-Editable-Begin -->
@@ -102,11 +103,12 @@ If you disable this setting, archive files will not be scanned. However, archive
 <!-- AllowBehaviorMonitoring-OmaUri-End -->
 
 <!-- AllowBehaviorMonitoring-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure behavior monitoring.
 
-If you enable or do not configure this setting, behavior monitoring will be enabled.
+- If you enable or do not configure this setting, behavior monitoring will be enabled.
 
-If you disable this setting, behavior monitoring will be disabled.
+- If you disable this setting, behavior monitoring will be disabled.
 <!-- AllowBehaviorMonitoring-Description-End -->
 
 <!-- AllowBehaviorMonitoring-Editable-Begin -->
@@ -168,6 +170,7 @@ If you disable this setting, behavior monitoring will be disabled.
 <!-- AllowCloudProtection-OmaUri-End -->
 
 <!-- AllowCloudProtection-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to join Microsoft MAPS. Microsoft MAPS is the online community that helps you choose how to respond to potential threats. The community also helps stop the spread of new malicious software infections.
 
 You can choose to send basic or additional information about detected software. Additional information helps Microsoft create new security intelligence and help it to protect your computer. This information can include things like location of detected items on your computer if harmful software was removed. The information will be automatically collected and sent. In some instances, personal information might unintentionally be sent to Microsoft. However, Microsoft will not use this information to identify you or contact you.
@@ -181,9 +184,9 @@ Basic membership will send basic information to Microsoft about software that ha
 
 Advanced membership, in addition to basic information, will send more information to Microsoft about malicious software, spyware, and potentially unwanted software, including the location of the software, file names, how the software operates, and how it has impacted your computer.
 
-If you enable this setting, you will join Microsoft MAPS with the membership specified.
+- If you enable this setting, you will join Microsoft MAPS with the membership specified.
 
-If you disable or do not configure this setting, you will not join Microsoft MAPS.
+- If you disable or do not configure this setting, you will not join Microsoft MAPS.
 
 In Windows 10, Basic membership is no longer available, so setting the value to 1 or 2 enrolls the device into Advanced membership.
 <!-- AllowCloudProtection-Description-End -->
@@ -222,7 +225,6 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > MAPS |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Spynet |
-| Registry Value Name | SpynetReporting |
 | ADMX File Name | WindowsDefender.admx |
 <!-- AllowCloudProtection-GpMapping-End -->
 
@@ -248,11 +250,12 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 <!-- AllowEmailScanning-OmaUri-End -->
 
 <!-- AllowEmailScanning-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure e-mail scanning. When e-mail scanning is enabled, the engine will parse the mailbox and mail files, according to their specific format, in order to analyze the mail bodies and attachments. Several e-mail formats are currently supported, for example: pst (Outlook), dbx, mbx, mime (Outlook Express), binhex (Mac). Email scanning is not supported on modern email clients.
 
-If you enable this setting, e-mail scanning will be enabled.
+- If you enable this setting, e-mail scanning will be enabled.
 
-If you disable or do not configure this setting, e-mail scanning will be disabled.
+- If you disable or do not configure this setting, e-mail scanning will be disabled.
 <!-- AllowEmailScanning-Description-End -->
 
 <!-- AllowEmailScanning-Editable-Begin -->
@@ -314,11 +317,12 @@ If you disable or do not configure this setting, e-mail scanning will be disable
 <!-- AllowFullScanOnMappedNetworkDrives-OmaUri-End -->
 
 <!-- AllowFullScanOnMappedNetworkDrives-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure scanning mapped network drives.
 
-If you enable this setting, mapped network drives will be scanned.
+- If you enable this setting, mapped network drives will be scanned.
 
-If you disable or do not configure this setting, mapped network drives will not be scanned.
+- If you disable or do not configure this setting, mapped network drives will not be scanned.
 <!-- AllowFullScanOnMappedNetworkDrives-Description-End -->
 
 <!-- AllowFullScanOnMappedNetworkDrives-Editable-Begin -->
@@ -380,11 +384,12 @@ If you disable or do not configure this setting, mapped network drives will not 
 <!-- AllowFullScanRemovableDriveScanning-OmaUri-End -->
 
 <!-- AllowFullScanRemovableDriveScanning-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether or not to scan for malicious software and unwanted software in the contents of removable drives, such as USB flash drives, when running a full scan.
 
-If you enable this setting, removable drives will be scanned during any type of scan.
+- If you enable this setting, removable drives will be scanned during any type of scan.
 
-If you disable or do not configure this setting, removable drives will not be scanned during a full scan. Removable drives may still be scanned during quick scan and custom scan.
+- If you disable or do not configure this setting, removable drives will not be scanned during a full scan. Removable drives may still be scanned during quick scan and custom scan.
 <!-- AllowFullScanRemovableDriveScanning-Description-End -->
 
 <!-- AllowFullScanRemovableDriveScanning-Editable-Begin -->
@@ -446,6 +451,7 @@ If you disable or do not configure this setting, removable drives will not be sc
 <!-- AllowIntrusionPreventionSystem-OmaUri-End -->
 
 <!-- AllowIntrusionPreventionSystem-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows or disallows Windows Defender Intrusion Prevention functionality.
 <!-- AllowIntrusionPreventionSystem-Description-End -->
 
@@ -494,11 +500,12 @@ Allows or disallows Windows Defender Intrusion Prevention functionality.
 <!-- AllowIOAVProtection-OmaUri-End -->
 
 <!-- AllowIOAVProtection-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure scanning for all downloaded files and attachments.
 
-If you enable or do not configure this setting, scanning for all downloaded files and attachments will be enabled.
+- If you enable or do not configure this setting, scanning for all downloaded files and attachments will be enabled.
 
-If you disable this setting, scanning for all downloaded files and attachments will be disabled.
+- If you disable this setting, scanning for all downloaded files and attachments will be disabled.
 <!-- AllowIOAVProtection-Description-End -->
 
 <!-- AllowIOAVProtection-Editable-Begin -->
@@ -560,11 +567,12 @@ If you disable this setting, scanning for all downloaded files and attachments w
 <!-- AllowOnAccessProtection-OmaUri-End -->
 
 <!-- AllowOnAccessProtection-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure monitoring for file and program activity.
 
-If you enable or do not configure this setting, monitoring for file and program activity will be enabled.
+- If you enable or do not configure this setting, monitoring for file and program activity will be enabled.
 
-If you disable this setting, monitoring for file and program activity will be disabled.
+- If you disable this setting, monitoring for file and program activity will be disabled.
 <!-- AllowOnAccessProtection-Description-End -->
 
 <!-- AllowOnAccessProtection-Editable-Begin -->
@@ -626,13 +634,8 @@ If you disable this setting, monitoring for file and program activity will be di
 <!-- AllowRealtimeMonitoring-OmaUri-End -->
 
 <!-- AllowRealtimeMonitoring-Description-Begin -->
-This policy turns off real-time protection in Microsoft Defender Antivirus.
-
-Real-time protection consists of always-on scanning with file and process behavior monitoring and heuristics. When real-time protection is on, Microsoft Defender Antivirus detects malware and potentially unwanted software that attempts to install itself or run on your device, and prompts you to take action on malware detections.
-
-If you enable this policy setting, real-time protection is turned off.
-
-If you either disable or do not configure this policy setting, real-time protection is turned on.
+<!-- Description-Source-DDF -->
+Allows or disallows Windows Defender Realtime Monitoring functionality.
 <!-- AllowRealtimeMonitoring-Description-End -->
 
 <!-- AllowRealtimeMonitoring-Editable-Begin -->
@@ -694,11 +697,12 @@ If you either disable or do not configure this policy setting, real-time protect
 <!-- AllowScanningNetworkFiles-OmaUri-End -->
 
 <!-- AllowScanningNetworkFiles-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure scanning for network files. It is recommended that you do not enable this setting.
 
-If you enable this setting, network files will be scanned.
+- If you enable this setting, network files will be scanned.
 
-If you disable or do not configure this setting, network files will not be scanned.
+- If you disable or do not configure this setting, network files will not be scanned.
 <!-- AllowScanningNetworkFiles-Description-End -->
 
 <!-- AllowScanningNetworkFiles-Editable-Begin -->
@@ -760,6 +764,7 @@ If you disable or do not configure this setting, network files will not be scann
 <!-- AllowScriptScanning-OmaUri-End -->
 
 <!-- AllowScriptScanning-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows or disallows Windows Defender Script Scanning functionality.
 <!-- AllowScriptScanning-Description-End -->
 
@@ -808,8 +813,9 @@ Allows or disallows Windows Defender Script Scanning functionality.
 <!-- AllowUserUIAccess-OmaUri-End -->
 
 <!-- AllowUserUIAccess-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure whether or not to display AM UI to the users.
-If you enable this setting AM UI won't be available to users.
+- If you enable this setting AM UI won't be available to users.
 <!-- AllowUserUIAccess-Description-End -->
 
 <!-- AllowUserUIAccess-Editable-Begin -->
@@ -871,13 +877,14 @@ If you enable this setting AM UI won't be available to users.
 <!-- AttackSurfaceReductionOnlyExclusions-OmaUri-End -->
 
 <!-- AttackSurfaceReductionOnlyExclusions-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Exclude files and paths from Attack Surface Reduction (ASR) rules.
 
 Enabled:
 Specify the folders or files and resources that should be excluded from ASR rules in the Options section.
 Enter each rule on a new line as a name-value pair:
-- Name column: Enter a folder path or a fully qualified resource name. For example, ""C:\Windows"" will exclude all files in that directory. ""C:\Windows\App.exe"" will exclude only that specific file in that specific folder
-- Value column: Enter ""0"" for each item
+- Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
+- Value column: Enter "0" for each item
 
 Disabled:
 No exclusions will be applied to the ASR rules.
@@ -913,7 +920,6 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Attack Surface Reduction |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR |
-| Registry Value Name | ExploitGuard_ASR_ASROnlyExclusions |
 | ADMX File Name | WindowsDefender.admx |
 <!-- AttackSurfaceReductionOnlyExclusions-GpMapping-End -->
 
@@ -939,6 +945,7 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 <!-- AttackSurfaceReductionRules-OmaUri-End -->
 
 <!-- AttackSurfaceReductionRules-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Set the state for each Attack Surface Reduction (ASR) rule.
 
 After enabling this setting, you can set each rule to the following in the Options section:
@@ -963,11 +970,13 @@ The following status IDs are permitted under the value column:
 - 5 (Not Configured)
 - 6 (Warn)
 
-
 Example:
-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx            0
-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx            1
-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx            2
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+0
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+1
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+2
 
 Disabled:
 No ASR rules will be configured.
@@ -975,7 +984,7 @@ No ASR rules will be configured.
 Not configured:
 Same as Disabled.
 
-You can exclude folders or files in the ""Exclude files and paths from Attack Surface Reduction Rules"" GP setting.
+You can exclude folders or files in the "Exclude files and paths from Attack Surface Reduction Rules" GP setting.
 <!-- AttackSurfaceReductionRules-Description-End -->
 
 <!-- AttackSurfaceReductionRules-Editable-Begin -->
@@ -1002,7 +1011,6 @@ You can exclude folders or files in the ""Exclude files and paths from Attack Su
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Attack Surface Reduction |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR |
-| Registry Value Name | ExploitGuard_ASR_Rules |
 | ADMX File Name | WindowsDefender.admx |
 <!-- AttackSurfaceReductionRules-GpMapping-End -->
 
@@ -1028,11 +1036,12 @@ You can exclude folders or files in the ""Exclude files and paths from Attack Su
 <!-- AvgCPULoadFactor-OmaUri-End -->
 
 <!-- AvgCPULoadFactor-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure the maximum percentage CPU utilization permitted during a scan. Valid values for this setting are a percentage represented by the integers 5 to 100. A value of 0 indicates that there should be no throttling of CPU utilization. The default value is 50.
 
-If you enable this setting, CPU utilization will not exceed the percentage specified.
+- If you enable this setting, CPU utilization will not exceed the percentage specified.
 
-If you disable or do not configure this setting, CPU utilization will not exceed the default value.
+- If you disable or do not configure this setting, CPU utilization will not exceed the default value.
 <!-- AvgCPULoadFactor-Description-End -->
 
 <!-- AvgCPULoadFactor-Editable-Begin -->
@@ -1061,7 +1070,6 @@ If you disable or do not configure this setting, CPU utilization will not exceed
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
-| Registry Value Name | AvgCPULoadFactor |
 | ADMX File Name | WindowsDefender.admx |
 <!-- AvgCPULoadFactor-GpMapping-End -->
 
@@ -1087,13 +1095,14 @@ If you disable or do not configure this setting, CPU utilization will not exceed
 <!-- CheckForSignaturesBeforeRunningScan-OmaUri-End -->
 
 <!-- CheckForSignaturesBeforeRunningScan-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether a check for new virus and spyware security intelligence will occur before running a scan.
 
 This setting applies to scheduled scans, but it has no effect on scans initiated manually from the user interface or to the ones started from the command line using "mpcmdrun -Scan".
 
-If you enable this setting, a check for new security intelligence will occur before running a scan.
+- If you enable this setting, a check for new security intelligence will occur before running a scan.
 
-If you disable this setting or do not configure this setting, the scan will start using the existing security intelligence.
+- If you disable this setting or do not configure this setting, the scan will start using the existing security intelligence.
 <!-- CheckForSignaturesBeforeRunningScan-Description-End -->
 
 <!-- CheckForSignaturesBeforeRunningScan-Editable-Begin -->
@@ -1115,8 +1124,8 @@ If you disable this setting or do not configure this setting, the scan will star
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled |
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
 <!-- CheckForSignaturesBeforeRunningScan-AllowedValues-End -->
 
 <!-- CheckForSignaturesBeforeRunningScan-GpMapping-Begin -->
@@ -1129,7 +1138,6 @@ If you disable this setting or do not configure this setting, the scan will star
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
-| Registry Value Name | CheckForSignaturesBeforeRunningScan |
 | ADMX File Name | WindowsDefender.admx |
 <!-- CheckForSignaturesBeforeRunningScan-GpMapping-End -->
 
@@ -1155,7 +1163,11 @@ If you disable this setting or do not configure this setting, the scan will star
 <!-- CloudBlockLevel-OmaUri-End -->
 
 <!-- CloudBlockLevel-Description-Begin -->
-This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer. If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. For more information about specific values that are supported, see the Windows Defender Antivirus documentation site. NoteThis feature requires the Join Microsoft MAPS setting enabled in order to function.
+<!-- Description-Source-DDF -->
+This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer. If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. For more information about specific values that are supported, see [Specify the cloud protection level](/microsoft-365/security/defender-endpoint/specify-cloud-protection-level-microsoft-defender-antivirus).
+
+> [!NOTE]
+> This feature requires the Join Microsoft MAPS setting enabled in order to function.
 <!-- CloudBlockLevel-Description-End -->
 
 <!-- CloudBlockLevel-Editable-Begin -->
@@ -1177,10 +1189,10 @@ This policy setting determines how aggressive Windows Defender Antivirus will be
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | NotConfigured |
-| 2 | High |
-| 4 | HighPlus |
-| 6 | ZeroTolerance |
+| 0 (Default) | NotConfigured. |
+| 2 | High. |
+| 4 | HighPlus. |
+| 6 | ZeroTolerance. |
 <!-- CloudBlockLevel-AllowedValues-End -->
 
 <!-- CloudBlockLevel-GpMapping-Begin -->
@@ -1188,13 +1200,12 @@ This policy setting determines how aggressive Windows Defender Antivirus will be
 
 | Name | Value |
 |:--|:--|
-| Name | MpCloudBlockLevel |
+| Name | MpEngine_MpCloudBlockLevel |
 | Friendly Name | Select cloud protection level |
 | Element Name | Select cloud blocking level |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > MpEngine |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\MpEngine |
-| Registry Value Name | MpCloudBlockLevel |
 | ADMX File Name | WindowsDefender.admx |
 <!-- CloudBlockLevel-GpMapping-End -->
 
@@ -1220,7 +1231,11 @@ This policy setting determines how aggressive Windows Defender Antivirus will be
 <!-- CloudExtendedTimeout-OmaUri-End -->
 
 <!-- CloudExtendedTimeout-Description-Begin -->
-This feature allows Windows Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50. The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds. For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds. NoteThis feature depends on three other MAPS settings the must all be enabled- Configure the 'Block at First Sight' feature; Join Microsoft MAPS; Send file samples when further analysis is required.
+<!-- Description-Source-DDF -->
+This feature allows Windows Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50. The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds. For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds.
+
+> [!NOTE]
+> This feature depends on three other MAPS settings the must all be enabled- Configure the 'Block at First Sight' feature; Join Microsoft MAPS; Send file samples when further analysis is required.
 <!-- CloudExtendedTimeout-Description-End -->
 
 <!-- CloudExtendedTimeout-Editable-Begin -->
@@ -1243,13 +1258,12 @@ This feature allows Windows Defender Antivirus to block a suspicious file for up
 
 | Name | Value |
 |:--|:--|
-| Name | MpBafsExtendedTimeout |
+| Name | MpEngine_MpBafsExtendedTimeout |
 | Friendly Name | Configure extended cloud check |
 | Element Name | Specify the extended cloud check time in seconds |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > MpEngine |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\MpEngine |
-| Registry Value Name | MpBafsExtendedTimeout |
 | ADMX File Name | WindowsDefender.admx |
 <!-- CloudExtendedTimeout-GpMapping-End -->
 
@@ -1275,6 +1289,7 @@ This feature allows Windows Defender Antivirus to block a suspicious file for up
 <!-- ControlledFolderAccessAllowedApplications-OmaUri-End -->
 
 <!-- ControlledFolderAccessAllowedApplications-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Add additional applications that should be considered "trusted" by controlled folder access.
 
 These applications are allowed to modify or delete files in controlled folder access folders.
@@ -1320,7 +1335,6 @@ Default system folders are automatically guarded, but you can add folders in the
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Controlled Folder Access |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Controlled Folder Access |
-| Registry Value Name | ExploitGuard_ControlledFolderAccess_AllowedApplications |
 | ADMX File Name | WindowsDefender.admx |
 <!-- ControlledFolderAccessAllowedApplications-GpMapping-End -->
 
@@ -1346,6 +1360,7 @@ Default system folders are automatically guarded, but you can add folders in the
 <!-- ControlledFolderAccessProtectedFolders-OmaUri-End -->
 
 <!-- ControlledFolderAccessProtectedFolders-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specify additional folders that should be guarded by the Controlled folder access feature.
 
 Files in these folders cannot be modified or deleted by untrusted applications.
@@ -1392,7 +1407,6 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Controlled Folder Access |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Controlled Folder Access |
-| Registry Value Name | ExploitGuard_ControlledFolderAccess_ProtectedFolders |
 | ADMX File Name | WindowsDefender.admx |
 <!-- ControlledFolderAccessProtectedFolders-GpMapping-End -->
 
@@ -1418,11 +1432,12 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 <!-- DaysToRetainCleanedMalware-OmaUri-End -->
 
 <!-- DaysToRetainCleanedMalware-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting defines the number of days items should be kept in the Quarantine folder before being removed.
 
-If you enable this setting, items will be removed from the Quarantine folder after the number of days specified.
+- If you enable this setting, items will be removed from the Quarantine folder after the number of days specified.
 
-If you disable or do not configure this setting, items will be kept in the quarantine folder indefinitely and will not be automatically removed.
+- If you disable or do not configure this setting, items will be kept in the quarantine folder indefinitely and will not be automatically removed.
 <!-- DaysToRetainCleanedMalware-Description-End -->
 
 <!-- DaysToRetainCleanedMalware-Editable-Begin -->
@@ -1451,7 +1466,6 @@ If you disable or do not configure this setting, items will be kept in the quara
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Quarantine |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Quarantine |
-| Registry Value Name | PurgeItemsAfterDelay |
 | ADMX File Name | WindowsDefender.admx |
 <!-- DaysToRetainCleanedMalware-GpMapping-End -->
 
@@ -1477,11 +1491,12 @@ If you disable or do not configure this setting, items will be kept in the quara
 <!-- DisableCatchupFullScan-OmaUri-End -->
 
 <!-- DisableCatchupFullScan-Description-Begin -->
-This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed.  Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
 
-If you enable this setting, catch-up scans for scheduled full scans will be turned on.  If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run.
+- If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
 
-If you disable or do not configure this setting, catch-up scans for scheduled full scans will be turned off.
+- If you disable or do not configure this setting, catch-up scans for scheduled full scans will be turned off.
 <!-- DisableCatchupFullScan-Description-End -->
 
 <!-- DisableCatchupFullScan-Editable-Begin -->
@@ -1503,8 +1518,8 @@ If you disable or do not configure this setting, catch-up scans for scheduled fu
 
 | Value | Description |
 |:--|:--|
-| 0 | Enabled |
-| 1 (Default) | Disabled |
+| 0 | Enabled. |
+| 1 (Default) | Disabled. |
 <!-- DisableCatchupFullScan-AllowedValues-End -->
 
 <!-- DisableCatchupFullScan-GpMapping-Begin -->
@@ -1517,7 +1532,6 @@ If you disable or do not configure this setting, catch-up scans for scheduled fu
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
-| Registry Value Name | DisableCatchupFullScan |
 | ADMX File Name | WindowsDefender.admx |
 <!-- DisableCatchupFullScan-GpMapping-End -->
 
@@ -1543,11 +1557,12 @@ If you disable or do not configure this setting, catch-up scans for scheduled fu
 <!-- DisableCatchupQuickScan-OmaUri-End -->
 
 <!-- DisableCatchupQuickScan-Description-Begin -->
-This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed.  Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
 
-If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run.
+- If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
 
-If you disable or do not configure this setting, catch-up scans for scheduled quick scans will be turned off.
+- If you disable or do not configure this setting, catch-up scans for scheduled quick scans will be turned off.
 <!-- DisableCatchupQuickScan-Description-End -->
 
 <!-- DisableCatchupQuickScan-Editable-Begin -->
@@ -1569,8 +1584,8 @@ If you disable or do not configure this setting, catch-up scans for scheduled qu
 
 | Value | Description |
 |:--|:--|
-| 0 | Enabled |
-| 1 (Default) | Disabled |
+| 0 | Enabled. |
+| 1 (Default) | Disabled. |
 <!-- DisableCatchupQuickScan-AllowedValues-End -->
 
 <!-- DisableCatchupQuickScan-GpMapping-Begin -->
@@ -1583,7 +1598,6 @@ If you disable or do not configure this setting, catch-up scans for scheduled qu
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
-| Registry Value Name | DisableCatchupQuickScan |
 | ADMX File Name | WindowsDefender.admx |
 <!-- DisableCatchupQuickScan-GpMapping-End -->
 
@@ -1609,6 +1623,7 @@ If you disable or do not configure this setting, catch-up scans for scheduled qu
 <!-- EnableControlledFolderAccess-OmaUri-End -->
 
 <!-- EnableControlledFolderAccess-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Enable or disable controlled folder access for untrusted applications. You can choose to block, audit, or allow attempts by untrusted apps to:
 - Modify or delete files in protected folders, such as the Documents folder
 - Write to disk sectors
@@ -1624,20 +1639,17 @@ The following will be blocked:
 - Attempts by untrusted apps to write to disk sectors
 The Windows event log will record these blocks under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1123.
 
-
 Disabled:
 The following will not be blocked and will be allowed to run:
 - Attempts by untrusted apps to modify or delete files in protected folders
 - Attempts by untrusted apps to write to disk sectors
 These attempts will not be recorded in the Windows event log.
 
-
 Audit Mode:
 The following will not be blocked and will be allowed to run:
 - Attempts by untrusted apps to modify or delete files in protected folders
 - Attempts by untrusted apps to write to disk sectors
 The Windows event log will record these attempts under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1124.
-
 
 Block disk modification only:
 The following will be blocked:
@@ -1647,7 +1659,6 @@ The Windows event log will record these attempts under Applications and Services
 The following will not be blocked and will be allowed to run:
 - Attempts by untrusted apps to modify or delete files in protected folders
 These attempts will not be recorded in the Windows event log.
-
 
 Audit disk modification only:
 The following will not be blocked and will be allowed to run:
@@ -1679,9 +1690,9 @@ Same as Disabled.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled |
-| 2 | Audit Mode |
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+| 2 | Audit Mode. |
 <!-- EnableControlledFolderAccess-AllowedValues-End -->
 
 <!-- EnableControlledFolderAccess-GpMapping-Begin -->
@@ -1695,7 +1706,6 @@ Same as Disabled.
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Controlled Folder Access |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Controlled Folder Access |
-| Registry Value Name | EnableControlledFolderAccess |
 | ADMX File Name | WindowsDefender.admx |
 <!-- EnableControlledFolderAccess-GpMapping-End -->
 
@@ -1721,11 +1731,12 @@ Same as Disabled.
 <!-- EnableLowCPUPriority-OmaUri-End -->
 
 <!-- EnableLowCPUPriority-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to enable or disable low CPU priority for scheduled scans.
 
-If you enable this setting, low CPU priority will be used during scheduled scans.
+- If you enable this setting, low CPU priority will be used during scheduled scans.
 
-If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.
+- If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.
 <!-- EnableLowCPUPriority-Description-End -->
 
 <!-- EnableLowCPUPriority-Editable-Begin -->
@@ -1747,8 +1758,8 @@ If you disable or do not configure this setting, not changes will be made to CPU
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled |
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
 <!-- EnableLowCPUPriority-AllowedValues-End -->
 
 <!-- EnableLowCPUPriority-GpMapping-Begin -->
@@ -1761,7 +1772,6 @@ If you disable or do not configure this setting, not changes will be made to CPU
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
-| Registry Value Name | LowCpuPriority |
 | ADMX File Name | WindowsDefender.admx |
 <!-- EnableLowCPUPriority-GpMapping-End -->
 
@@ -1787,6 +1797,7 @@ If you disable or do not configure this setting, not changes will be made to CPU
 <!-- EnableNetworkProtection-OmaUri-End -->
 
 <!-- EnableNetworkProtection-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Enable or disable Microsoft Defender Exploit Guard network protection to prevent employees from using any application to access dangerous domains that may host phishing scams, exploit-hosting sites, and other malicious content on the Internet.
 
 Enabled:
@@ -1820,9 +1831,9 @@ Same as Disabled.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled |
-| 1 | Enabled (block mode) |
-| 2 | Enabled (audit mode) |
+| 0 (Default) | Disabled. |
+| 1 | Enabled (block mode). |
+| 2 | Enabled (audit mode). |
 <!-- EnableNetworkProtection-AllowedValues-End -->
 
 <!-- EnableNetworkProtection-GpMapping-Begin -->
@@ -1835,7 +1846,6 @@ Same as Disabled.
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Network Protection |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection |
-| Registry Value Name | EnableNetworkProtection |
 | ADMX File Name | WindowsDefender.admx |
 <!-- EnableNetworkProtection-GpMapping-End -->
 
@@ -1861,6 +1871,7 @@ Same as Disabled.
 <!-- ExcludedExtensions-OmaUri-End -->
 
 <!-- ExcludedExtensions-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a |. For example, lib|obj.
 <!-- ExcludedExtensions-Description-End -->
 
@@ -1889,7 +1900,6 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Exclusions |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Exclusions |
-| Registry Value Name | Exclusions_Extensions |
 | ADMX File Name | WindowsDefender.admx |
 <!-- ExcludedExtensions-GpMapping-End -->
 
@@ -1915,6 +1925,7 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 <!-- ExcludedPaths-OmaUri-End -->
 
 <!-- ExcludedPaths-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows an administrator to specify a list of directory paths to ignore during a scan. Each path in the list must be separated by a |. For example, C:\Example|C:\Example1.
 <!-- ExcludedPaths-Description-End -->
 
@@ -1943,7 +1954,6 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Exclusions |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Exclusions |
-| Registry Value Name | Exclusions_Paths |
 | ADMX File Name | WindowsDefender.admx |
 <!-- ExcludedPaths-GpMapping-End -->
 
@@ -1969,7 +1979,11 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 <!-- ExcludedProcesses-OmaUri-End -->
 
 <!-- ExcludedProcesses-Description-Begin -->
-Allows an administrator to specify a list of files opened by processes to ignore during a scan. ImportantThe process itself is not excluded from the scan, but can be by using the Defender/ExcludedPaths policy to exclude its path. Each file type must be separated by a |. For example, C:\Example. exe|C:\Example1.exe.
+<!-- Description-Source-DDF -->
+Allows an administrator to specify a list of files opened by processes to ignore during a scan.
+
+> [!IMPORTANT]
+> The process itself is not excluded from the scan, but can be by using the Defender/ExcludedPaths policy to exclude its path. Each file type must be separated by a |. For example, C\Example. exe|C\Example1.exe.
 <!-- ExcludedProcesses-Description-End -->
 
 <!-- ExcludedProcesses-Editable-Begin -->
@@ -1997,7 +2011,6 @@ Allows an administrator to specify a list of files opened by processes to ignore
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Exclusions |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Exclusions |
-| Registry Value Name | Exclusions_Processes |
 | ADMX File Name | WindowsDefender.admx |
 <!-- ExcludedProcesses-GpMapping-End -->
 
@@ -2023,6 +2036,7 @@ Allows an administrator to specify a list of files opened by processes to ignore
 <!-- PUAProtection-OmaUri-End -->
 
 <!-- PUAProtection-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Enable or disable detection for potentially unwanted applications. You can choose to block, audit, or allow when potentially unwanted software is being downloaded or attempts to install itself on your computer.
 
 Enabled:
@@ -2071,7 +2085,6 @@ Same as Disabled.
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender |
-| Registry Value Name | PUAProtection |
 | ADMX File Name | WindowsDefender.admx |
 <!-- PUAProtection-GpMapping-End -->
 
@@ -2097,20 +2110,21 @@ Same as Disabled.
 <!-- RealTimeScanDirection-OmaUri-End -->
 
 <!-- RealTimeScanDirection-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure monitoring for incoming and outgoing files, without having to turn off monitoring entirely. It is recommended for use on servers where there is a lot of incoming and outgoing file activity but for performance reasons need to have scanning disabled for a particular scan direction. The appropriate configuration should be evaluated based on the server role.
 
-Note that this configuration is only honored for NTFS volumes. For any other file system type, full monitoring of file and program activity will be present on those volumes.
+**Note** that this configuration is only honored for NTFS volumes. For any other file system type, full monitoring of file and program activity will be present on those volumes.
 
-The options for this setting are mutually exclusive:
+The options for this setting are mutually exclusive
 0 = Scan incoming and outgoing files (default)
 1 = Scan incoming files only
 2 = Scan outgoing files only
 
 Any other value, or if the value does not exist, resolves to the default (0).
 
-If you enable this setting, the specified type of monitoring will be enabled.
+- If you enable this setting, the specified type of monitoring will be enabled.
 
-If you disable or do not configure this setting, monitoring for incoming and outgoing files will be enabled.
+- If you disable or do not configure this setting, monitoring for incoming and outgoing files will be enabled.
 <!-- RealTimeScanDirection-Description-End -->
 
 <!-- RealTimeScanDirection-Editable-Begin -->
@@ -2148,7 +2162,6 @@ If you disable or do not configure this setting, monitoring for incoming and out
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Real-time Protection |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Real-Time Protection |
-| Registry Value Name | RealtimeScanDirection |
 | ADMX File Name | WindowsDefender.admx |
 <!-- RealTimeScanDirection-GpMapping-End -->
 
@@ -2174,13 +2187,14 @@ If you disable or do not configure this setting, monitoring for incoming and out
 <!-- ScanParameter-OmaUri-End -->
 
 <!-- ScanParameter-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify the scan type to use during a scheduled scan. Scan type options are:
 1 = Quick Scan (default)
 2 = Full Scan
 
-If you enable this setting, the scan type will be set to the specified value.
+- If you enable this setting, the scan type will be set to the specified value.
 
-If you disable or do not configure this setting, the default scan type will used.
+- If you disable or do not configure this setting, the default scan type will used.
 <!-- ScanParameter-Description-End -->
 
 <!-- ScanParameter-Editable-Begin -->
@@ -2202,8 +2216,8 @@ If you disable or do not configure this setting, the default scan type will used
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | Quick scan |
-| 2 | Full scan |
+| 1 (Default) | Quick scan. |
+| 2 | Full scan. |
 <!-- ScanParameter-AllowedValues-End -->
 
 <!-- ScanParameter-GpMapping-Begin -->
@@ -2217,7 +2231,6 @@ If you disable or do not configure this setting, the default scan type will used
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
-| Registry Value Name | ScanParameters |
 | ADMX File Name | WindowsDefender.admx |
 <!-- ScanParameter-GpMapping-End -->
 
@@ -2243,11 +2256,12 @@ If you disable or do not configure this setting, the default scan type will used
 <!-- ScheduleQuickScanTime-OmaUri-End -->
 
 <!-- ScheduleQuickScanTime-Description-Begin -->
-This policy setting allows you to specify the time of day at which to perform a daily quick scan. The time value is represented as the number of minutes past midnight (00:00).  For example, 120 (0x78) is equivalent to 02:00 AM. By default, this setting is set to disabled. The schedule is based on local time on the computer where the scan is executing.
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify the time of day at which to perform a daily quick scan. The time value is represented as the number of minutes past midnight (00:00). For example, 120 (0x78) is equivalent to 02:00 AM. By default, this setting is set to disabled. The schedule is based on local time on the computer where the scan is executing.
 
-If you enable this setting, a daily quick scan will run at the time of day specified.
+- If you enable this setting, a daily quick scan will run at the time of day specified.
 
-If you disable or do not configure this setting, daily quick scan controlled by this config will not be run.
+- If you disable or do not configure this setting, daily quick scan controlled by this config will not be run.
 <!-- ScheduleQuickScanTime-Description-End -->
 
 <!-- ScheduleQuickScanTime-Editable-Begin -->
@@ -2276,7 +2290,6 @@ If you disable or do not configure this setting, daily quick scan controlled by 
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
-| Registry Value Name | ScheduleQuickScanTime |
 | ADMX File Name | WindowsDefender.admx |
 <!-- ScheduleQuickScanTime-GpMapping-End -->
 
@@ -2302,6 +2315,7 @@ If you disable or do not configure this setting, daily quick scan controlled by 
 <!-- ScheduleScanDay-OmaUri-End -->
 
 <!-- ScheduleScanDay-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify the day of the week on which to perform a scheduled scan. The scan can also be configured to run every day or to never run at all.
 
 This setting can be configured with the following ordinal number values:
@@ -2315,9 +2329,9 @@ This setting can be configured with the following ordinal number values:
 (0x7) Saturday
 (0x8) Never (default)
 
-If you enable this setting, a scheduled scan will run at the frequency specified.
+- If you enable this setting, a scheduled scan will run at the frequency specified.
 
-If you disable or do not configure this setting, a scheduled scan will run at a default frequency.
+- If you disable or do not configure this setting, a scheduled scan will run at a default frequency.
 <!-- ScheduleScanDay-Description-End -->
 
 <!-- ScheduleScanDay-Editable-Begin -->
@@ -2339,15 +2353,15 @@ If you disable or do not configure this setting, a scheduled scan will run at a 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Every day |
-| 1 | Sunday |
-| 2 | Monday |
-| 3 | Tuesday |
-| 4 | Wednesday |
-| 5 | Thursday |
-| 6 | Friday |
-| 7 | Saturday |
-| 8 | No scheduled scan |
+| 0 (Default) | Every day. |
+| 1 | Sunday. |
+| 2 | Monday. |
+| 3 | Tuesday. |
+| 4 | Wednesday. |
+| 5 | Thursday. |
+| 6 | Friday. |
+| 7 | Saturday. |
+| 8 | No scheduled scan. |
 <!-- ScheduleScanDay-AllowedValues-End -->
 
 <!-- ScheduleScanDay-GpMapping-Begin -->
@@ -2361,7 +2375,6 @@ If you disable or do not configure this setting, a scheduled scan will run at a 
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
-| Registry Value Name | ScheduleDay |
 | ADMX File Name | WindowsDefender.admx |
 <!-- ScheduleScanDay-GpMapping-End -->
 
@@ -2387,11 +2400,12 @@ If you disable or do not configure this setting, a scheduled scan will run at a 
 <!-- ScheduleScanTime-OmaUri-End -->
 
 <!-- ScheduleScanTime-Description-Begin -->
-This policy setting allows you to specify the time of day at which to perform a scheduled scan. The time value is represented as the number of minutes past midnight (00:00).  For example, 120 (0x78) is equivalent to 02:00 AM. By default, this setting is set to  a time value of 2:00 AM. The schedule is based on local time on the computer where the scan is executing.
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify the time of day at which to perform a scheduled scan. The time value is represented as the number of minutes past midnight (00:00). For example, 120 (0x78) is equivalent to 02:00 AM. By default, this setting is set to a time value of 2:00 AM. The schedule is based on local time on the computer where the scan is executing.
 
-If you enable this setting, a scheduled scan will run at the time of day specified.
+- If you enable this setting, a scheduled scan will run at the time of day specified.
 
-If you disable or do not configure this setting, a scheduled scan will run at a default time.
+- If you disable or do not configure this setting, a scheduled scan will run at a default time.
 <!-- ScheduleScanTime-Description-End -->
 
 <!-- ScheduleScanTime-Editable-Begin -->
@@ -2420,7 +2434,6 @@ If you disable or do not configure this setting, a scheduled scan will run at a 
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
-| Registry Value Name | ScheduleTime |
 | ADMX File Name | WindowsDefender.admx |
 <!-- ScheduleScanTime-GpMapping-End -->
 
@@ -2446,9 +2459,10 @@ If you disable or do not configure this setting, a scheduled scan will run at a 
 <!-- SecurityIntelligenceLocation-OmaUri-End -->
 
 <!-- SecurityIntelligenceLocation-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to define the security intelligence location for VDI-configured computers.
 
-If you disable or do not configure this setting, security intelligence will be referred from the default local source.
+- If you disable or do not configure this setting, security intelligence will be referred from the default local source.
 <!-- SecurityIntelligenceLocation-Description-End -->
 
 <!-- SecurityIntelligenceLocation-Editable-Begin -->
@@ -2500,13 +2514,14 @@ If you disable or do not configure this setting, security intelligence will be r
 <!-- SignatureUpdateFallbackOrder-OmaUri-End -->
 
 <!-- SignatureUpdateFallbackOrder-Description-Begin -->
-This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: “InternalDefinitionUpdateServer”, “MicrosoftUpdateServer”, “MMPC”, and “FileShares”
+<!-- Description-Source-ADMX -->
+This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: "InternalDefinitionUpdateServer", "MicrosoftUpdateServer", "MMPC", and "FileShares"
 
 For example: { InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }
 
-If you enable this setting, security intelligence update sources will be contacted in the order specified. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
+- If you enable this setting, security intelligence update sources will be contacted in the order specified. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
 
-If you disable or do not configure this setting, security intelligence update sources will be contacted in a default order.
+- If you disable or do not configure this setting, security intelligence update sources will be contacted in a default order.
 <!-- SignatureUpdateFallbackOrder-Description-End -->
 
 <!-- SignatureUpdateFallbackOrder-Editable-Begin -->
@@ -2559,11 +2574,12 @@ If you disable or do not configure this setting, security intelligence update so
 <!-- SignatureUpdateFileSharesSources-OmaUri-End -->
 
 <!-- SignatureUpdateFileSharesSources-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure UNC file share sources for downloading security intelligence updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources. For example: "{\\unc1 | \\unc2 }". The list is empty by default.
 
-If you enable this setting, the specified sources will be contacted for security intelligence updates. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
+- If you enable this setting, the specified sources will be contacted for security intelligence updates. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
 
-If you disable or do not configure this setting, the list will remain empty by default and no sources will be contacted.
+- If you disable or do not configure this setting, the list will remain empty by default and no sources will be contacted.
 <!-- SignatureUpdateFileSharesSources-Description-End -->
 
 <!-- SignatureUpdateFileSharesSources-Editable-Begin -->
@@ -2616,11 +2632,12 @@ If you disable or do not configure this setting, the list will remain empty by d
 <!-- SignatureUpdateInterval-OmaUri-End -->
 
 <!-- SignatureUpdateInterval-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify an interval at which to check for security intelligence updates. The time value is represented as the number of hours between update checks. Valid values range from 1 (every hour) to 24 (once per day).
 
-If you enable this setting, checks for security intelligence updates will occur at the interval specified.
+- If you enable this setting, checks for security intelligence updates will occur at the interval specified.
 
-If you disable or do not configure this setting, checks for security intelligence updates will occur at the default interval.
+- If you disable or do not configure this setting, checks for security intelligence updates will occur at the default interval.
 <!-- SignatureUpdateInterval-Description-End -->
 
 <!-- SignatureUpdateInterval-Editable-Begin -->
@@ -2649,7 +2666,6 @@ If you disable or do not configure this setting, checks for security intelligenc
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Security Intelligence Updates |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Signature Updates |
-| Registry Value Name | SignatureUpdateInterval |
 | ADMX File Name | WindowsDefender.admx |
 <!-- SignatureUpdateInterval-GpMapping-End -->
 
@@ -2675,6 +2691,7 @@ If you disable or do not configure this setting, checks for security intelligenc
 <!-- SubmitSamplesConsent-OmaUri-End -->
 
 <!-- SubmitSamplesConsent-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures behaviour of samples submission when opt-in for MAPS telemetry is set.
 
 Possible options are:
@@ -2720,7 +2737,6 @@ Possible options are:
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > MAPS |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Spynet |
-| Registry Value Name | SubmitSamplesConsent |
 | ADMX File Name | WindowsDefender.admx |
 <!-- SubmitSamplesConsent-GpMapping-End -->
 
@@ -2746,7 +2762,8 @@ Possible options are:
 <!-- ThreatSeverityDefaultAction-OmaUri-End -->
 
 <!-- ThreatSeverityDefaultAction-Description-Begin -->
-Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take. This value is a list of threat severity level IDs and corresponding actions, separated by a | using the format threat level=action|threat level=action. For example, 1=6|2=2|4=10|5=3. The following list shows the supported values for threat severity levels:1 – Low severity threats2 – Moderate severity threats4 – High severity threats5 – Severe threatsThe following list shows the supported values for possible actions:1 – Clean. Service tries to recover files and try to disinfect. 2 – Quarantine. Moves files to quarantine. 3 – Remove. Removes files from system. 6 – Allow. Allows file/does none of the above actions. 8 – User defined. Requires user to make a decision on which action to take. 10 – Block. Blocks file execution.
+<!-- Description-Source-DDF -->
+Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take. This value is a list of threat severity level IDs and corresponding actions, separated by a | using the format threat level=action|threat level=action. For example, 1=6|2=2|4=10|5=3. The following list shows the supported values for threat severity levels:1 - Low severity threats2 - Moderate severity threats4 - High severity threats5 - Severe threatsThe following list shows the supported values for possible actions:2 - Quarantine. Moves files to quarantine. 3 - Remove. Removes files from system. 6 - Allow. Allows file/does none of the above actions. 8 - User defined. Requires user to make a decision on which action to take. 10 - Block. Blocks file execution.
 <!-- ThreatSeverityDefaultAction-Description-End -->
 
 <!-- ThreatSeverityDefaultAction-Editable-Begin -->
@@ -2773,7 +2790,6 @@ Allows an administrator to specify any valid threat severity levels and the corr
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Threats |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Threats |
-| Registry Value Name | Threats_ThreatSeverityDefaultAction |
 | ADMX File Name | WindowsDefender.admx |
 <!-- ThreatSeverityDefaultAction-GpMapping-End -->
 

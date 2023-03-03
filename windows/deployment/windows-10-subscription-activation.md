@@ -7,10 +7,7 @@ ms.localizationpriority: medium
 author: frankroj
 ms.author: frankroj
 manager: aaroncz
-ms.collection: 
-  - highpri
-search.appverid: 
-  - MET150
+ms.collection: highpri, tier2
 ms.topic: conceptual
 ms.date: 11/23/2022
 appliesto: 
@@ -40,7 +37,7 @@ This article covers the following information:
 For more information on how to deploy Enterprise licenses, see [Deploy Windows Enterprise licenses](deploy-enterprise-licenses.md).
 
 > [!NOTE]
-> Organizations that use the Subscription Activation feature to enable users to upgrade from one version of Windows to another and use Conditional Access policies to control access need to exclude the Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f, from their device compliance policy using **Select Excluded Cloud Apps**.
+> Organizations that use the Subscription Activation feature to enable users to upgrade from one version of Windows to another and use Conditional Access policies to control access need to exclude the [Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications), from their device compliance policy using **Select Excluded Cloud Apps**. For more information about configuring exclusions in Conditional Access policies, see [Application exclusions](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa#application-exclusions).
 
 ## Subscription activation for Enterprise
 

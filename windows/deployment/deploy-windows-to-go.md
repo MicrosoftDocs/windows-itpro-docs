@@ -1,14 +1,12 @@
 ---
 title: Deploy Windows To Go in your organization (Windows 10)
 description: Learn how to deploy Windows To Go in your organization through a wizard in the user interface and programatically with Windows PowerShell.
-ms.reviewer: 
 manager: aaroncz
 author: frankroj
 ms.author: frankroj
 ms.prod: windows-client
 ms.technology: itpro-deploy
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ms.date: 11/23/2022
 ---
 

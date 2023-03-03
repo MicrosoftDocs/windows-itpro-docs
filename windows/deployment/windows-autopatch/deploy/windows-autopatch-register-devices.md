@@ -1,7 +1,7 @@
 ---
 title: Register your devices
 description: This article details how to register devices in Autopatch
-ms.date: 09/07/2022
+ms.date: 02/03/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: andredm7
+ms.reviewer: andredm7
 ---
 
 # Register your devices
@@ -20,8 +20,8 @@ Before Microsoft can manage your devices in Windows Autopatch, you must have dev
 
 Windows Autopatch can take over software update management control of devices that meet software-based prerequisites as soon as an IT admin decides to have their tenant managed by the service. The Windows Autopatch software update management scope includes the following software update workloads:
 
-- [Windows quality updates](../operate/windows-autopatch-wqu-overview.md)
-- [Windows feature updates](../operate/windows-autopatch-fu-overview.md)
+- [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md)
+- [Windows feature updates](../operate/windows-autopatch-windows-feature-update-overview.md)
 - [Microsoft 365 Apps for enterprise updates](../operate/windows-autopatch-microsoft-365-apps-enterprise.md)
 - [Microsoft Edge updates](../operate/windows-autopatch-edge.md)
 - [Microsoft Teams updates](../operate/windows-autopatch-teams.md)
@@ -52,7 +52,7 @@ Azure AD groups synced up from:
 > It isn't recommended to sync Configuration Manager collections straight to the **Windows Autopatch Device Registration** Azure AD group. Use a different Azure AD group when syncing Configuration Manager collections to Azure AD groups then you can nest this or these groups into the **Windows Autopatch Device Registration** Azure AD group.
 
 > [!IMPORTANT]
-> The **Windows Autopatch Device Registration** Azure AD group only supports one level of Azure AD nested groups.
+> The **Windows Autopatch Device Registration** Azure AD group only supports **one level** of Azure AD nested groups.
 
 ### Clean up dual state of Hybrid Azure AD joined and Azure registered devices in your Azure AD tenant
 
@@ -79,8 +79,12 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
             - Office Click-to-run
 - Last Intune device check in completed within the last 28 days.
 - Devices must have Serial Number, Model and Manufacturer.
-	> [!NOTE]
-	> Windows Autopatch doesn't support device emulators that don't generate Serial number, Model and Manufacturer. Devices that use a non-supported device emulator fail the **Intune or Cloud-Attached** pre-requisite check. Additionally, devices with duplicated serial numbers will fail to register with Windows Autopatch.
+
+> [!NOTE]
+> Windows Autopatch doesn't support device emulators that don't generate the serial number, model and manufacturer information. Devices that use a non-supported device emulator fail the **Intune or Cloud-Attached** prerequisite check. Additionally, devices with duplicated serial numbers will fail to register with Windows Autopatch.
+
+> [!NOTE]
+> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Additionally, Windows Autopatch can only manage Windows quality updates for devices that haven't reached the LTSC's [end of servicing date](/windows/release-health/release-information#enterprise-and-iot-enterprise-ltsbltsc-editions).
 
 For more information, see [Windows Autopatch Prerequisites](../prepare/windows-autopatch-prerequisites.md).
 
@@ -111,12 +115,18 @@ A role defines the set of permissions granted to users assigned to that role. Yo
 
 - Azure AD Global Administrator
 - Intune Service Administrator
-- Modern Workplace Intune Administrator
 
 For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) and [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
-> [!NOTE]
-> The Modern Workplace Intune Admin role is a custom created role during the Windows Autopatch tenant enrollment process. This role can assign administrators to Intune roles, and allows you to create and configure custom Intune roles.
+If you want to assign less-privileged user accounts to perform specific tasks in the Windows Autopatch portal, such as register devices with the service, you can add these user accounts into one of the two Azure AD groups created during the [tenant enrollment](../prepare/windows-autopatch-enroll-tenant.md) process:
+
+| Role | Discover devices | Modify columns | Refresh device list | Export to .CSV | Device actions |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| Modern Workplace Roles - Service Administrator | Yes | Yes | Yes | Yes | Yes |
+| Modern Workplace Roles - Service Reader | No | Yes | Yes | Yes | No |
+
+> [!TIP]
+> If you're adding less-privileged user accounts into the **Modern Workplace Roles - Service Administrator** Azure AD group, it's recommended to add the same users as owners of the **Windows Autopatch Device Registration** Azure AD group. Owners of the **Windows Autopatch Device Registration** Azure AD group can add new devices as members of the group for registration purposes.<p>For more information, see [assign an owner of member of a group in Azure AD](/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group).</p>
 
 ## Details about the device registration process
 
@@ -129,12 +139,12 @@ For more information, see [Device registration overview](../deploy/windows-autop
 
 ## Steps to register devices
 
-Any device (either physical or virtual) that contains an Azure AD device ID, can be added into the **Windows Autopatch Device Registration** Azure AD group through either direct membership or by being part of another Azure AD group (either dynamic or assigned) that's nested to this group, so it can be registered with Windows Autopatch. The only exception is new Windows 365 Cloud PCs, as these virtual devices must be registered with Windows Autopatch from the Windows 365 provisioning policy. For more information, see [Windows Autopatch on Windows 365 Enterprise Workloads](#windows-autopatch-on-windows-365-enterprise-workloads).
+Any device (either physical or virtual) that contains an Azure AD device ID, can be added into the **Windows Autopatch Device Registration** Azure AD group through either direct membership or by being part of another Azure AD group (either dynamic or assigned) that's nested to this group, so it can be registered with Windows Autopatch. The only exception is new Windows 365 Cloud PCs, as these virtual devices should be registered with Windows Autopatch from the Windows 365 provisioning policy. For more information, see [Windows Autopatch on Windows 365 Enterprise Workloads](#windows-autopatch-on-windows-365-enterprise-workloads).
 Since existing Windows 365 Cloud PCs already have an existing Azure AD device ID, these devices can be added into the **Windows Autopatch Device Registration** Azure group through either direct membership or by being part of another Azure AD group (either dynamic or assigned) that's nested to this group.
 
 **To register devices with Windows Autopatch:**
 
-1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Go to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** from the left navigation menu.
 3. Under the **Windows Autopatch** section, select **Devices**.
 4. Select either the **Ready** or the **Not registered** tab, then select the **Windows Autopatch Device Registration** hyperlink. The Azure Active Directory group blade opens.
@@ -154,7 +164,7 @@ Windows 365 Enterprise gives IT admins the option to register devices with the W
 
 **To register new Windows 365 Cloud PC devices with Windows Autopatch from the Windows 365 Provisioning Policy:**
 
-1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Go to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. In the left pane, select **Devices**.
 1. Navigate to Provisioning > **Windows 365**.
 1. Select Provisioning policies > **Create policy**.

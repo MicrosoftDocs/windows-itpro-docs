@@ -1,21 +1,12 @@
 ---
 title: Planning Certificate-based Authentication (Windows)
 description: Learn how a device unable to join an Active Directory domain can still participate in an isolated domain by using certificate-based authentication.
-ms.reviewer: jekrynit
-ms.author: paoloma
 ms.prod: windows-client
-ms.localizationpriority: medium
-author: paolomatarazzo
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.technology: itpro-security
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Planning Certificate-based Authentication
@@ -55,6 +46,6 @@ If you're installing the certificates on an operating system other than Windows,
 
 When the clients and servers have the certificates available, you can configure the IPsec and connection security rules to include those certificates as a valid authentication method. The authentication method requires the subject name of the certificate, for example: **DC=com,DC=woodgrovebank,CN=CorporateCertServer**. Optionally, select **Enable certificate to account mapping** to support using these credentials for restricting access to users or devices that are members of authorized groups in a server isolation solution.
 
-Starting in Windows Server 2012, you can configure certificate selection criteria so the desired certificate is selected and/or validated. Enhanced Key Usage (EKU) criteria can be configured, and name restrictions and certificate thumbprints. This EKU is configured using the **Advanced** button when choosing certificates for the authentication method in the user interface, or through Windows PowerShell.
+Starting in Windows Server 2012, you can configure certificate selection criteria so the desired certificate is selected and/or validated. extended key usage (EKU) criteria can be configured, and name restrictions and certificate thumbprints. This EKU is configured using the **Advanced** button when choosing certificates for the authentication method in the user interface, or through Windows PowerShell.
 
 **Next:** [Documenting the Zones](documenting-the-zones.md)

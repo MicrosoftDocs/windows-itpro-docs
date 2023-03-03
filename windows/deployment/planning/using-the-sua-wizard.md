@@ -1,7 +1,6 @@
 ---
 title: Using the SUA wizard (Windows 10)
 description: The Standard User Analyzer (SUA) wizard, although it doesn't offer deep analysis, works much like the SUA tool to test for User Account Control (UAC) issues.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

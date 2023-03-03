@@ -9,6 +9,7 @@ ms.author: frankroj
 manager: aaroncz
 ms.collection: 
   - highpri
+  - tier1
 ms.topic: conceptual
 ms.date: 11/08/2022
 ms.custom: bitlocker
@@ -63,7 +64,7 @@ The following procedures describe the most common tasks performed by using the B
 
 By completing the procedures in this scenario, the recovery passwords for a computer have been viewed and copied and a password ID was used to locate a recovery password.
 
-## Replated articles
+## Related articles
 
 - [BitLocker Overview](bitlocker-overview.md)
 - [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.yml)

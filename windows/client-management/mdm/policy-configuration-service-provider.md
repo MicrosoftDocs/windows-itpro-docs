@@ -1,10 +1,10 @@
 ---
 title: Policy CSP
-description: Learn more about the Policy CSP
+description: Learn more about the Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/22/2022
+ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -49,33 +49,31 @@ The Policy configuration service provider has the following sub-categories:
 <!-- Policy-Editable-End -->
 
 <!-- Policy-Tree-Begin -->
-The following example shows the Policy configuration service provider in tree format.
+The following list shows the Policy configuration service provider nodes:
 
-```text
-./Device/Vendor/MSFT/Policy
---- Config
------- {AreaName}
---------- {PolicyName}
---- ConfigOperations
------- ADMXInstall
---------- {AppName}
------------- {SettingsType}
---------------- {AdmxFileId}
------------- Properties
---------------- {SettingsType}
------------------- {AdmxFileId}
---------------------- Version
---- Result
------- {AreaName}
---------- {PolicyName}
-./User/Vendor/MSFT/Policy
---- Config
------- {AreaName}
---------- {PolicyName}
---- Result
------- {AreaName}
---------- {PolicyName}
-```
+- ./Device/Vendor/MSFT/Policy
+  - [Config](#deviceconfig)
+    - [{AreaName}](#deviceconfigareaname)
+      - [{PolicyName}](#deviceconfigareanamepolicyname)
+  - [ConfigOperations](#deviceconfigoperations)
+    - [ADMXInstall](#deviceconfigoperationsadmxinstall)
+      - [{AppName}](#deviceconfigoperationsadmxinstallappname)
+        - [{SettingsType}](#deviceconfigoperationsadmxinstallappnamesettingstype)
+          - [{AdmxFileId}](#deviceconfigoperationsadmxinstallappnamesettingstypeadmxfileid)
+        - [Properties](#deviceconfigoperationsadmxinstallappnameproperties)
+          - [{SettingsType}](#deviceconfigoperationsadmxinstallappnamepropertiessettingstype)
+            - [{AdmxFileId}](#deviceconfigoperationsadmxinstallappnamepropertiessettingstypeadmxfileid)
+              - [Version](#deviceconfigoperationsadmxinstallappnamepropertiessettingstypeadmxfileidversion)
+  - [Result](#deviceresult)
+    - [{AreaName}](#deviceresultareaname)
+      - [{PolicyName}](#deviceresultareanamepolicyname)
+- ./User/Vendor/MSFT/Policy
+  - [Config](#userconfig)
+    - [{AreaName}](#userconfigareaname)
+      - [{PolicyName}](#userconfigareanamepolicyname)
+  - [Result](#userresult)
+    - [{AreaName}](#userresultareaname)
+      - [{PolicyName}](#userresultareanamepolicyname)
 <!-- Policy-Tree-End -->
 
 <!-- Device-Config-Begin -->
@@ -94,6 +92,7 @@ The following example shows the Policy configuration service provider in tree fo
 <!-- Device-Config-OmaUri-End -->
 
 <!-- Device-Config-Description-Begin -->
+<!-- Description-Source-DDF -->
 Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration sources. If a configuration source wants to query the result of conflict resolution (for example, if Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.
 <!-- Device-Config-Description-End -->
 
@@ -132,7 +131,8 @@ Node for grouping all policies configured by one source. The configuration sourc
 <!-- Device-Config-{AreaName}-OmaUri-End -->
 
 <!-- Device-Config-{AreaName}-Description-Begin -->
-The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.  See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
+<!-- Description-Source-DDF -->
+The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value. See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
 <!-- Device-Config-{AreaName}-Description-End -->
 
 <!-- Device-Config-{AreaName}-Editable-Begin -->
@@ -171,7 +171,8 @@ The area group that can be configured by a single technology for a single provid
 <!-- Device-Config-{AreaName}-{PolicyName}-OmaUri-End -->
 
 <!-- Device-Config-{AreaName}-{PolicyName}-Description-Begin -->
-Specifies the name/value pair used in the policy.  See the individual Area DDFs for more information about the policies available to configure.
+<!-- Description-Source-DDF -->
+Specifies the name/value pair used in the policy. See the individual Area DDFs for more information about the policies available to configure.
 <!-- Device-Config-{AreaName}-{PolicyName}-Description-End -->
 
 <!-- Device-Config-{AreaName}-{PolicyName}-Editable-Begin -->
@@ -218,6 +219,7 @@ The following list shows some tips to help you when configuring policies:
 <!-- Device-ConfigOperations-OmaUri-End -->
 
 <!-- Device-ConfigOperations-Description-Begin -->
+<!-- Description-Source-DDF -->
 The root node for grouping different configuration operations.
 <!-- Device-ConfigOperations-Description-End -->
 
@@ -256,6 +258,7 @@ The root node for grouping different configuration operations.
 <!-- Device-ConfigOperations-ADMXInstall-OmaUri-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: ./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall. Each ADMX-backed policy or preference that is added is assigned a unique ID. ADMX files that have been installed by using ConfigOperations/ADMXInstall can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, ./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}.
 <!-- Device-ConfigOperations-ADMXInstall-Description-End -->
 
@@ -298,6 +301,7 @@ Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-OmaUri-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Description-Begin -->
+<!-- Description-Source-DDF -->
 Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Description-End -->
 
@@ -337,7 +341,8 @@ Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX f
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-OmaUri-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-Description-Begin -->
-Setting Type of Win32 App. Policy Or Preference
+<!-- Description-Source-DDF -->
+Setting Type of Win32 App. Policy Or Preference.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-Description-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-Editable-Begin -->
@@ -376,7 +381,8 @@ Setting Type of Win32 App. Policy Or Preference
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-OmaUri-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-Description-Begin -->
-Unique ID of ADMX file
+<!-- Description-Source-DDF -->
+Unique ID of ADMX file.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-Description-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-Editable-Begin -->
@@ -415,7 +421,8 @@ Unique ID of ADMX file
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-OmaUri-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Description-Begin -->
-Properties of Win32 App ADMX Ingestion
+<!-- Description-Source-DDF -->
+Properties of Win32 App ADMX Ingestion.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Description-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Editable-Begin -->
@@ -453,7 +460,8 @@ Properties of Win32 App ADMX Ingestion
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-OmaUri-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Description-Begin -->
-Setting Type of Win32 App. Policy Or Preference
+<!-- Description-Source-DDF -->
+Setting Type of Win32 App. Policy Or Preference.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Description-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Editable-Begin -->
@@ -492,7 +500,8 @@ Setting Type of Win32 App. Policy Or Preference
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-OmaUri-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Description-Begin -->
-Unique ID of ADMX file
+<!-- Description-Source-DDF -->
+Unique ID of ADMX file.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Description-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Editable-Begin -->
@@ -531,7 +540,8 @@ Unique ID of ADMX file
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-OmaUri-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-Description-Begin -->
-Version of ADMX file.  This can be set by the server to keep a record of the versioning of the ADMX file ingested by the device.
+<!-- Description-Source-DDF -->
+Version of ADMX file. This can be set by the server to keep a record of the versioning of the ADMX file ingested by the device.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-Description-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-Editable-Begin -->
@@ -569,6 +579,7 @@ Version of ADMX file.  This can be set by the server to keep a record of the ver
 <!-- Device-Result-OmaUri-End -->
 
 <!-- Device-Result-Description-Begin -->
+<!-- Description-Source-DDF -->
 Groups the evaluated policies from all providers that can be configured.
 <!-- Device-Result-Description-End -->
 
@@ -607,6 +618,7 @@ Groups the evaluated policies from all providers that can be configured.
 <!-- Device-Result-{AreaName}-OmaUri-End -->
 
 <!-- Device-Result-{AreaName}-Description-Begin -->
+<!-- Description-Source-DDF -->
 The area group that can be configured by a single technology independent of the providers. See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
 <!-- Device-Result-{AreaName}-Description-End -->
 
@@ -646,6 +658,7 @@ The area group that can be configured by a single technology independent of the 
 <!-- Device-Result-{AreaName}-{PolicyName}-OmaUri-End -->
 
 <!-- Device-Result-{AreaName}-{PolicyName}-Description-Begin -->
+<!-- Description-Source-DDF -->
 Specifies the name/value pair used in the policy. See the individual Area DDFs for more information about the policies available to configure.
 <!-- Device-Result-{AreaName}-{PolicyName}-Description-End -->
 
@@ -685,6 +698,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 <!-- User-Config-OmaUri-End -->
 
 <!-- User-Config-Description-Begin -->
+<!-- Description-Source-DDF -->
 Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration sources. If a configuration source wants to query the result of conflict resolution (for example, if Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.
 <!-- User-Config-Description-End -->
 
@@ -723,7 +737,8 @@ Node for grouping all policies configured by one source. The configuration sourc
 <!-- User-Config-{AreaName}-OmaUri-End -->
 
 <!-- User-Config-{AreaName}-Description-Begin -->
-The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.  See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
+<!-- Description-Source-DDF -->
+The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value. See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
 <!-- User-Config-{AreaName}-Description-End -->
 
 <!-- User-Config-{AreaName}-Editable-Begin -->
@@ -770,7 +785,8 @@ The following list shows some tips to help you when configuring policies:
 <!-- User-Config-{AreaName}-{PolicyName}-OmaUri-End -->
 
 <!-- User-Config-{AreaName}-{PolicyName}-Description-Begin -->
-Specifies the name/value pair used in the policy.  See the individual Area DDFs for more information about the policies available to configure.
+<!-- Description-Source-DDF -->
+Specifies the name/value pair used in the policy. See the individual Area DDFs for more information about the policies available to configure.
 <!-- User-Config-{AreaName}-{PolicyName}-Description-End -->
 
 <!-- User-Config-{AreaName}-{PolicyName}-Editable-Begin -->
@@ -809,6 +825,7 @@ Specifies the name/value pair used in the policy.  See the individual Area DDFs 
 <!-- User-Result-OmaUri-End -->
 
 <!-- User-Result-Description-Begin -->
+<!-- Description-Source-DDF -->
 Groups the evaluated policies from all providers that can be configured.
 <!-- User-Result-Description-End -->
 
@@ -847,6 +864,7 @@ Groups the evaluated policies from all providers that can be configured.
 <!-- User-Result-{AreaName}-OmaUri-End -->
 
 <!-- User-Result-{AreaName}-Description-Begin -->
+<!-- Description-Source-DDF -->
 The area group that can be configured by a single technology independent of the providers. See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
 <!-- User-Result-{AreaName}-Description-End -->
 
@@ -886,6 +904,7 @@ The area group that can be configured by a single technology independent of the 
 <!-- User-Result-{AreaName}-{PolicyName}-OmaUri-End -->
 
 <!-- User-Result-{AreaName}-{PolicyName}-Description-Begin -->
+<!-- Description-Source-DDF -->
 Specifies the name/value pair used in the policy. See the individual Area DDFs for more information about the policies available to configure.
 <!-- User-Result-{AreaName}-{PolicyName}-Description-End -->
 
@@ -1074,7 +1093,6 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 - [Camera](policy-csp-camera.md)
 - [Cellular](policy-csp-cellular.md)
 - [CloudDesktop](policy-csp-clouddesktop.md)
-- [CloudPC](policy-csp-cloudpc.md)
 - [Connectivity](policy-csp-connectivity.md)
 - [ControlPolicyConflict](policy-csp-controlpolicyconflict.md)
 - [CredentialProviders](policy-csp-credentialproviders.md)

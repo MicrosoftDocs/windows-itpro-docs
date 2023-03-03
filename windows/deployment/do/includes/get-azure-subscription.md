@@ -1,9 +1,10 @@
 ---
 author: amymzhou
 ms.author: amyzhou
-manager: dougeby
-ms.prod: w10
-ms.collection: M365-modern-desktop
+manager: aaroncz
+ms.date: 10/18/2022
+ms.prod: windows-client
+ms.technology: itpro-deploy
 ms.topic: include
 ms.localizationpriority: medium
 ---

@@ -310,7 +310,7 @@
       href: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
     - name: Passwordless
       items:
-      - name: Windows Hello for Business
+      - name: Windows Hello for Business ⇒
         href: identity-protection/hello-for-business/index.yml
       - name: FIDO 2 security keys
         href: /azure/active-directory/authentication/howto-authentication-passwordless-security-key?context=/windows/security/context/context
@@ -328,8 +328,6 @@
           href: identity-protection/credential-guard/credential-guard-requirements.md
         - name: Manage Credential Guard
           href: identity-protection/credential-guard/credential-guard-manage.md
-        - name: Hardware readiness tool
-          href: identity-protection/credential-guard/dg-readiness-tool.md
         - name: Credential Guard protection limits
           href: identity-protection/credential-guard/credential-guard-protection-limits.md
         - name: Considerations when using Credential Guard
@@ -387,19 +385,19 @@
               href: identity-protection/smart-cards/smart-card-group-policy-and-registry-settings.md
             - name: Smart Card Events
               href: identity-protection/smart-cards/smart-card-events.md
-        - name: Virtual Smart Cards
+        - name: Virtual smart cards
           href: identity-protection/virtual-smart-cards/virtual-smart-card-overview.md
           items:
-            - name: Understanding and Evaluating Virtual Smart Cards
+            - name: Understand and evaluate virtual smart cards
               href: identity-protection/virtual-smart-cards/virtual-smart-card-understanding-and-evaluating.md
               items:
-                - name: "Get Started with Virtual Smart Cards: Walkthrough Guide"
+                - name: Get started with virtual smart cards
                   href: identity-protection/virtual-smart-cards/virtual-smart-card-get-started.md
-                - name: Use Virtual Smart Cards
+                - name: Use virtual smart cards
                   href: identity-protection/virtual-smart-cards/virtual-smart-card-use-virtual-smart-cards.md
-                - name: Deploy Virtual Smart Cards
+                - name: Deploy virtual smart cards
                   href: identity-protection/virtual-smart-cards/virtual-smart-card-deploy-virtual-smart-cards.md
-                - name: Evaluate Virtual Smart Card Security
+                - name: Evaluate virtual smart card security
                   href: identity-protection/virtual-smart-cards/virtual-smart-card-evaluate-security.md
             - name: Tpmvscmgr
               href: identity-protection/virtual-smart-cards/virtual-smart-card-tpmvscmgr.md

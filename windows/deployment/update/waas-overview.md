@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.author: mstewart
 manager: aaroncz
 ms.topic: article
-ms.collection: highpri
+ms.collection: highpri, tier2
 ms.technology: itpro-updates
 ms.date: 12/31/2017
 ---
@@ -41,11 +41,7 @@ Deploying Windows 10 and Windows 11 is simpler than with previous versions of Wi
 
 ### Application compatibility
 
-Application compatibility testing has historically been a burden when approaching a Windows deployment or upgrade. Application compatibility from the perspective of desktop applications, websites, and apps built on the Universal Windows Platform (UWP) has improved tremendously over older versions of Windows.
-
-
-For the most important business-critical applications, organizations should still perform testing on a regular basis to validate compatibility with new builds. For remaining applications, consider validating them as part of a pilot deployment process to reduce the time spent on compatibility testing. Desktop Analytics is a cloud-based service that integrates with Configuration Manager. The service provides insight and intelligence for you to make more informed decisions about the update readiness of your Windows endpoints, including assessment of your existing applications. For more, see [Ready for modern desktop retirement FAQ](/mem/configmgr/desktop-analytics/ready-for-windows).
-
+Application compatibility testing has historically been a burden when approaching a Windows deployment or upgrade. Application compatibility from the perspective of desktop applications, websites, and apps built on the Universal Windows Platform (UWP) has improved tremendously over older versions of Windows. For the most important business-critical applications, organizations should still perform testing on a regular basis to validate compatibility with new builds. 
 
 ## Servicing
 

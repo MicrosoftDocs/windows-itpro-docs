@@ -1,7 +1,6 @@
 ---
 title: Deploy Windows 10 using PXE and Configuration Manager (Windows 10)
 description: In this article, you'll learn how to deploy Windows 10 using Microsoft Configuration Manager deployment packages and task sequences.
-ms.assetid: fb93f514-5b30-4f4b-99dc-58e6860009fa
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

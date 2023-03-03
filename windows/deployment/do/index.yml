@@ -9,8 +9,7 @@ metadata:
   ms.topic: landing-page
   ms.prod: windows-client
   ms.technology: itpro-updates
-  ms.collection:
-    - highpri
+  ms.collection: highpri, tier3
   author: aczechowski
   ms.author: aaroncz
   manager: dougeby
@@ -59,8 +58,7 @@ landingContent:
           - text: Optimize Windows 10 or later update delivery with Configuration Manager
             url: /mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#windows-delivery-optimization
           - text: Delivery Optimization settings in Microsoft Intune
-            url: /mem/intune/configuration/delivery-optimization-windows
-            
+            url: /mem/intune/configuration/delivery-optimization-windows           
  
   # Card
   - title: Microsoft Connected Cache (MCC) for Enterprise and Education

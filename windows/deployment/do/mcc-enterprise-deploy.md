@@ -1,6 +1,6 @@
 ---
 title: Deploying your cache node
-manager: dougeby
+manager: aaroncz
 description: How to deploy Microsoft Connected Cache (MCC) for Enterprise and Education cache node
 ms.prod: windows-client
 author: amymzhou
@@ -8,6 +8,7 @@ ms.author: amyzhou
 ms.topic: article
 ms.date: 12/31/2017
 ms.technology: itpro-updates
+ms.collection: tier3
 ---
 
 # Deploying your cache node
@@ -31,18 +32,18 @@ To deploy MCC to your server:
 
 For questions regarding these instructions contact [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com)
 
-### Provide Microsoft with the Azure Subscription ID
+### Provide Microsoft with the Azure subscription ID
 
 As part of the MCC preview onboarding process an Azure subscription ID must be provided to Microsoft. 
 
 > [!IMPORTANT]
 > [Take this survey](https://aka.ms/MSConnectedCacheSignup) and provide your Azure subscription ID and contact information to be added to the allowlist for this preview. You will not be able to proceed if you skip this step.
 
-For information about creating or locating your subscription ID, see [Steps to obtain an Azure Subscription ID](mcc-enterprise-appendix.md#steps-to-obtain-an-azure-subscription-id).
+For information about creating or locating your subscription ID, see [Steps to obtain an Azure subscription ID](mcc-enterprise-appendix.md#steps-to-obtain-an-azure-subscription-id).
 
 ### Create the MCC resource in Azure
 
-The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes. 
+The MCC Azure management portal is used to create and manage MCC nodes. An Azure subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes. 
 
 Once you take the survey above and the MCC team adds your subscription ID to the allowlist, you'll be given a link to the Azure portal where you can create the resource described below. 
 
@@ -221,7 +222,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
 1. If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
 
-    1. You'll be shown a list of existing IoT Hubs in your Azure Subscription. Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter "1"**
+    1. You'll be shown a list of existing IoT Hubs in your Azure subscription. Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter "1"**
 
        :::image type="content" source="./images/ent-mcc-script-select-hub.png" alt-text="Screenshot of the installer script running in PowerShell prompting you to select which IoT Hub to use." lightbox="./images/ent-mcc-script-select-hub.png":::
        :::image type="content" source="./images/ent-mcc-script-complete.png" alt-text="Screenshot of the installer script displaying the completion summary in PowerShell." lightbox="./images/ent-mcc-script-complete.png":::
@@ -235,7 +236,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
 ## Verify proper functioning MCC server
 
-#### Verify Client Side
+#### Verify client side
 
 Connect to the EFLOW VM and check if MCC is properly running:
 
@@ -305,21 +306,16 @@ sudo iotedge list
 
 :::image type="content" source="./images/ent-mcc-iotedge-list.png" alt-text="Screenshot of the iotedge list command." lightbox="./images/ent-mcc-iotedge-list.png":::
 
-If edgeAgent and edgeHub containers are listed, but not "MCC", you may view the status of the IoT Edge security manager using the command:
+If edgeAgent and edgeHub containers are listed, but not "MCC", you may view the status of the IoT Edge security manager by using the command:
 
 ```bash
 sudo journalctl -u iotedge -f
 ```
 
-For example, this command will provide the current status of the starting, stopping of a container, or the container pull and start.  
+This command will provide the current status of the starting, stopping of a container, or the container pull and start.  
 
 :::image type="content" source="./images/ent-mcc-journalctl.png" alt-text="Screenshot of the output from journalctl -u iotedge -f." lightbox="./images/ent-mcc-journalctl.png":::
 
-Use this command to check the IoT Edge Journal
-
-```bash
-sudo journalctl -u iotedge -f
-```
 
 > [!NOTE]
 > You should consult the IoT Edge troubleshooting guide ([Common issues and resolutions for Azure IoT Edge](/azure/iot-edge/troubleshoot)) for any issues you may encounter configuring IoT Edge, but we've listed a few issues that we encountered during our internal validation.

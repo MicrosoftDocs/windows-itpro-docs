@@ -1,26 +1,12 @@
 ---
 title: Configure Authentication Methods (Windows)
 description: Learn how to configure authentication methods for devices in an isolated domain or standalone server zone in Windows Defender Firewall with Advanced Security.
-ms.assetid: 5fcdc523-617f-4233-9213-15fe19f4cd02
-ms.reviewer: jekrynit
-ms.author: paoloma
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: paolomatarazzo
-manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: itpro-security
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Configure Authentication Methods
@@ -52,7 +38,7 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
    4.  **User (using Kerberos V5)**. Selecting this option tells the computer to use and require authentication of the currently signed-in user by using their domain credentials.
 
-   5.  **Computer certificate from this certification authority**. Selecting this option and entering the identification of a certification authority (CA) tells the computer to use and require authentication by using a certificate that is issued by the selected CA. If you also select **Accept only health certificates**, then only certificates that include the system health authentication enhanced key usage (EKU) typically provided in a Network Access Protection (NAP) infrastructure can be used for this rule.
+   5.  **Computer certificate from this certification authority**. Selecting this option and entering the identification of a certification authority (CA) tells the computer to use and require authentication by using a certificate that is issued by the selected CA. If you also select **Accept only health certificates**, then only certificates that include the system health authentication extended key usage (EKU) typically provided in a Network Access Protection (NAP) infrastructure can be used for this rule.
 
    6.  **Advanced**. Click **Customize** to specify a custom combination of authentication methods required for your scenario. You can specify both a **First authentication method** and a **Second authentication method**.
 

@@ -1,7 +1,6 @@
 ---
 title: Tabs on the SUA Tool Interface (Windows 10)
 description: The tabs in the Standard User Analyzer (SUA) tool show the User Account Control (UAC) issues for the applications that you analyze.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

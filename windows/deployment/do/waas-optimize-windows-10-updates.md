@@ -3,22 +3,21 @@ title: Optimize Windows update delivery
 description: Two methods of peer-to-peer content distribution are available, Delivery Optimization and BranchCache.
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aaroncz
-ms.author: aaroncz
-ms.reviewer: 
-manager: dougeby
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017
+ms.collection: tier3
 ---
 
 # Optimize Windows update delivery
 
-
 **Applies to**
 
--   Windows 10
--   Windows 11
+- Windows 10
+- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
@@ -30,7 +29,7 @@ Two methods of peer-to-peer content distribution are available.
 
     Windows Update, Windows Update for Business, and Windows Server Update Services (WSUS) can use Delivery Optimization. Delivery Optimization can significantly reduce the amount of network traffic to external Windows Update sources and the time it takes for clients to retrieve the updates.
 
-- [BranchCache](../update/waas-branchcache.md) is a bandwidth optimization technology that is included in some editions of Windows Server 2016 and Windows operating systems, as well as in some editions of Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, and Windows 7.
+- [BranchCache](../update/waas-branchcache.md) is a bandwidth optimization technology that is included in some editions of Windows Server 2016 and Windows operating systems, and in some editions of Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, and Windows 7.
 
     >[!NOTE]
     >Full BranchCache functionality is supported in Windows 10 Enterprise and Education; Windows 10 Pro supports some BranchCache functionality, including BITS transfers used for servicing operations.
@@ -47,7 +46,7 @@ Two methods of peer-to-peer content distribution are available.
 > [!NOTE]
 > Microsoft Configuration Manager has an additional feature called Client Peer Cache that allows peer-to-peer content sharing between clients you use Configuration Manager to manage, in the same Configuration Manager boundary Group. For more information, see [Client Peer Cache](/configmgr/core/plan-design/hierarchy/client-peer-cache).
 >
-> In addition to Client Peer Cache, similar functionality is available in the Windows Preinstallation Environment (Windows PE) for imaging-related content. Using this technology, clients imaging with Configuration Manager task sequences can source operating system images, driver packages, boot images, packages, and programs from peers instead of distribution points. For detailed information about how Windows PE Peer Cache works and how to configure it, see [Prepare Windows PE peer cache to reduce WAN traffic in Microsoft Configuration Manager](/configmgr/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic).
+> In addition to Client Peer Cache, similar functionality is available in the Windows Pre-installation Environment (Windows PE) for imaging-related content. Using this technology, clients imaging with Configuration Manager task sequences can source operating system images, driver packages, boot images, packages, and programs from peers instead of distribution points. For detailed information about how Windows PE Peer Cache works and how to configure it, see [Prepare Windows PE peer cache to reduce WAN traffic in Microsoft Configuration Manager](/configmgr/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic).
 
 ## Express update delivery
 
@@ -57,6 +56,7 @@ Windows client quality update downloads can be large because every package conta
 > Express update delivery applies to quality update downloads. Starting with Windows 10, version 1709, Express update delivery also applies to feature update downloads for clients connected to Windows Update and Windows Update for Business.
 
 ### How Microsoft supports Express
+
 - **Express on Microsoft Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or later, or Windows 10, version 1607 with the April 2017 cumulative update.
 - **Express on WSUS Standalone**
 
@@ -67,6 +67,7 @@ Windows client quality update downloads can be large because every package conta
 ### How Express download works
 
 For OS updates that support Express, there are two versions of the file payload stored on the service:
+
 1. **Full-file version** - essentially replacing the local versions of the update binaries.
 2. **Express version** - containing the deltas needed to patch the existing binaries on the device.
 

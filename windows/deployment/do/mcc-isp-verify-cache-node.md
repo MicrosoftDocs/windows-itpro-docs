@@ -2,19 +2,40 @@
 title: Verify cache node functionality and monitor health and performance
 manager: aaroncz
 description: How to verify the functionality of a cache node
-keywords: updates, downloads, network, bandwidth
 ms.prod: windows-client
-audience: itpro
 author: amyzhou
 ms.author: amyzhou
 ms.topic: article
 ms.date: 12/31/2017
 ms.technology: itpro-updates
+ms.collection: tier3
 ---
 
 # Verify cache node functionality and monitor health and performance
 
 This article details how to verify that your cache node(s) are functioning properly and serving traffic. This article also details how to monitor your cache nodes. 
+
+## Verify cache node installation is complete
+
+Sign in to the Connected Cache server or use SSH. Run the following command from a terminal to see the running modules (containers):
+
+```bash
+sudo iotedge list
+```
+
+:::image type="content" source="./images/mcc-isp-running-containers.png" alt-text="Screenshot of the terminal output of iotedge list command, showing the running containers." lightbox="./images/mcc-isp-running-containers.png":::
+
+If it lists the **edgeAgent** and **edgeHub** containers, but doesn't include **MCC**, view the status of the IoT Edge security manager using the command:
+
+```bash
+sudo iotedge system logs -- -f
+```
+
+For example, this command provides the current status of the starting and stopping of a container, or the container pull and start:
+
+:::image type="content" source="./images/mcc-isp-edge-journalctl.png" alt-text="Terminal output of journalctl command for iotedge." lightbox="./images/mcc-isp-edge-journalctl.png":::
+
+You may need to wait up to 30 minutes for the cache node software to complete downloading and begin caching. 
 
 ## Verify functionality on Azure portal
 
@@ -47,6 +68,14 @@ http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsup
 ```
 
 If the test fails, for more information, see the [FAQ](mcc-isp-faq.yml) article.
+
+## Verify BGP routing configuration
+
+To verify your BGP routes are correctly configured for a cache node, navigate to **Settings > Cache nodes**. Select the cache node you wish to verify BGP routes for. 
+
+Verify that under **Routing Information**, the state of **BGP routes received** is True. Verify the IP space is correct. Lastly, select **Download JSON** next to **Download BGP Routes** to view the BGP routes that your cache node is currently advertising. 
+
+If **BGP routes received** is False, your **IP Space** is 0, or you're experiencing any BGP routing errors, ensure your **ASN** and **IP address** is entered correctly. 
 
 ## Monitor cache node health and performance
 

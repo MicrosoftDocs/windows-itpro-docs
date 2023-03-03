@@ -1,8 +1,7 @@
 ---
 title: VAMT Step-by-Step Scenarios (Windows 10)
 description: Learn step-by-step instructions on implementing the Volume Activation Management Tool (VAMT) in typical environments.
-ms.reviewer: 
-  - nganguly
+ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

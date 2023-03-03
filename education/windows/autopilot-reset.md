@@ -7,6 +7,7 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ms.collection:
   - highpri
+  - tier2
   - education
 ---
 

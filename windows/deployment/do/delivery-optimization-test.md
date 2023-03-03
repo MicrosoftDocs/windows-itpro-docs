@@ -1,5 +1,5 @@
 ---
-title: Testing Delivery Optimization 
+title: Testing Delivery Optimization
 description: Explanation of Delivery Optimization distributed cache and high-level design. Demonstrate how Delivery Optimization peer-to-peer works in different test scenarios.
 ms.date: 11/08/2022
 ms.prod: windows-client
@@ -9,7 +9,8 @@ ms.localizationpriority: medium
 author: cmknox
 ms.author: carmenf
 ms.reviewer: mstewart
-manager: naengler
+manager: aaroncz
+ms.collection: tier3
 ---
 
 # Testing Delivery Optimization

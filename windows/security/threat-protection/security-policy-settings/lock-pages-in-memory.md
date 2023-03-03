@@ -33,7 +33,8 @@ Normally, an application running on Windows can negotiate for more physical memo
 
 Enabling this policy setting for a specific account (a user account or a process account for an application) prevents paging of the data. Thereby, the amount of memory that Windows can reclaim under pressure is limited. This limitation could lead to performance degradation.
 
->**Note:**  By configuring this policy setting, the performance of the Windows operating system will differ depending on if applications are running on 32-bit or 64-bit systems, and if they are virtualized images. Performance will also differ between earlier and later versions of the Windows operating system.
+> [!NOTE]
+> By configuring this policy setting, the performance of the Windows operating system will differ depending on if applications are running on 32-bit or 64-bit systems, and if they are virtualized images. Performance will also differ between earlier and later versions of the Windows operating system.
  
 Constant: SeLockMemoryPrivilege
 

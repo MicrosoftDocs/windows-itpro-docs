@@ -10,6 +10,7 @@ ms.reviewer: carmenf
 manager: aaroncz
 ms.topic: how-to
 ms.date: 05/20/2022
+ms.collection: tier3
 ---
 
 # Microsoft Connected Cache for Internet Service Providers (early preview)

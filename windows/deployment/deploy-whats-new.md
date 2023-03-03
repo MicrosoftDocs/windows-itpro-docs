@@ -7,8 +7,7 @@ ms.localizationpriority: medium
 ms.prod: windows-client
 author: frankroj
 ms.topic: article
-ms.custom: seo-marvel-apr2020
-ms.collection: highpri
+ms.collection: highpri, tier2
 ms.date: 11/23/2022
 ms.technology: itpro-deploy
 ---

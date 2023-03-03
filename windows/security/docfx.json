@@ -34,6 +34,9 @@
     "externalReference": [],
     "globalMetadata": {
       "recommendations": true,
+      "ms.collection": [
+        "tier2"
+      ],
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
       "ms.localizationpriority": "medium",
@@ -65,15 +68,28 @@
     },
     "fileMetadata": {
       "author":{
-        "identity-protection/**/*.md": "paolomatarazzo"
+        "identity-protection/**/*.md": "paolomatarazzo",
+        "threat-protection/windows-firewall/**/*.md": "aczechowski"
       },
       "ms.author":{
-        "identity-protection/**/*.md": "paoloma"
+        "identity-protection/**/*.md": "paoloma",
+        "threat-protection/windows-firewall/*.md": "aaroncz"
       },
       "ms.reviewer":{
         "identity-protection/hello-for-business/*.md": "erikdau",
         "identity-protection/credential-guard/*.md": "zwhittington",
-        "identity-protection/access-control/*.md": "sulahiri"
+        "identity-protection/access-control/*.md": "sulahiri",
+        "threat-protection/windows-firewall/*.md": "paoloma"
+      },
+      "ms.collection":{
+        "identity-protection/hello-for-business/*.md": "tier1",
+        "information-protection/bitlocker/*.md": "tier1",
+        "information-protection/personal-data-encryption/*.md": "tier1",
+        "information-protection/pluton/*.md": "tier1",
+        "information-protection/tpm/*.md": "tier1",
+        "threat-protection/auditing/*.md": "tier3",
+        "threat-protection/windows-defender-application-control/*.md": "tier3",
+        "threat-protection/windows-firewall/*.md": "tier3"
       }
     },
     "template": [],

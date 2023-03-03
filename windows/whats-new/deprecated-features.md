@@ -8,8 +8,8 @@ ms.localizationpriority: medium
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.reviewer: 
 ms.topic: article
+ms.collection: highpri, tier1
 ---
 
 # Deprecated features for Windows client
@@ -36,6 +36,7 @@ The features in this article are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Deprecation announced |
 | ----------- | --------------------- | ---- |
+| Microsoft Support Diagnostic Tool (MSDT) <!--6968128--> | [MSDT](/windows-server/administration/windows-commands/msdt) is deprecated and will be removed in a future release of Windows. MSDT is used to gather diagnostic data for analysis by support professionals. For more information, see [Resources for deprecated features](deprecated-features-resources.md) | January 2023 |
 | Universal Windows Platform (UWP) Applications for 32-bit Arm <!--7116112-->| This change is applicable only to devices with an Arm processor, for example Snapdragon processors from Qualcomm. If you have a PC built with a processor from Intel or AMD, this content is not applicable. If you are not sure which type of processor you have, check **Settings** > **System** > **About**.</br> </br> Support for 32-bit Arm versions of applications will be removed in a future release of Windows 11. After this change, for the small number of applications affected, app features might be different and you might notice a difference in performance. For more technical details about this change, see [Update app architecture from Arm32 to Arm64](/windows/arm/arm32-to-arm64). | January 2023 |
 | Update Compliance <!--7260188-->| [Update Compliance](/windows/deployment/update/update-compliance-monitor), a cloud-based service for the Windows client, is no longer being developed. This service has been replaced with [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview), which provides reporting on client compliance with Microsoft updates from the Azure portal. | November 2022|
 | Windows Information Protection <!-- 6010051 --> | [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) will no longer be developed in future versions of Windows. For more information, see [Announcing sunset of Windows Information Protection (WIP)](https://go.microsoft.com/fwlink/?linkid=2202124).<br> <br>For your data protection needs, Microsoft recommends that you use [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) and [Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp). | July 2022 |
@@ -71,7 +72,7 @@ The features in this article are no longer being actively developed, and might b
 |RSA/AES Encryption for IIS   | We recommend that users use CNG encryption provider. | 1709 |
 |Screen saver functionality in Themes   | Disabled in Themes. Screen saver functionality in Group Policies, Control Panel, and Sysprep continues to be functional. Lock screen features and policies are preferred. | 1709 |
 |Sync your settings (updated: August 17, 2017) | Back-end changes: In future releases, the back-end storage for the current sync process will change. A single cloud storage system will be used for Enterprise State Roaming and all other users. The **Sync your settings** options and the Enterprise State Roaming feature will continue to work. | 1709 |
-|System Image Backup (SIB) Solution  | We recommend that users use full-disk backup solutions from other vendors. | 1709 |
+|System Image Backup (SIB) Solution|This feature is also known as the **Backup and Restore (Windows 7)** legacy control panel. For full-disk backup solutions, look for a third-party product from another software vendor. You can also use [OneDrive](/onedrive/) to sync data files with Microsoft 365.| 1709 |
 |TLS RC4 Ciphers  |To be disabled by default. For more information, see [TLS (Schannel SSP) changes in Windows 10 and Windows Server 2016](/windows-server/security/tls/tls-schannel-ssp-changes-in-windows-10-and-windows-server)| 1709 |
 |Trusted Platform Module (TPM) Owner Password Management |This functionality within TPM.msc will be migrated to a new user interface.| 1709 |
 |Trusted Platform Module (TPM): TPM.msc and TPM Remote Management  | To be replaced by a new user interface in a future release. | 1709 |
@@ -84,3 +85,5 @@ The features in this article are no longer being actively developed, and might b
 |TCPChimney | TCP Chimney Offload is no longer being developed.  See [Performance Tuning Network Adapters](/windows-server/networking/technologies/network-subsystem/net-sub-performance-tuning-nics). | 1703 |
 |IPsec Task Offload| [IPsec Task Offload](/windows-hardware/drivers/network/task-offload) versions 1 and 2 are no longer being developed and shouldn't be used. | 1703 |
 |`wusa.exe /uninstall /kb:####### /quiet`|The `wusa` tool usage to quietly uninstall an update has been deprecated. The uninstall command with `/quiet` switch fails with event ID 8 in the Setup event log. Uninstalling updates quietly could be a security risk because malicious software could quietly uninstall an update in the background without user intervention.|1507 <br /> Applies to Windows Server 2016 and Windows Server 2019.|
+
+

@@ -5,6 +5,9 @@ ms.topic: article
 ms.date: 09/12/2022
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
+ms.collection:
+  - education
+  - tier1
 ---
 
 # Windows 11 SE for Education settings list
@@ -50,7 +53,7 @@ The following settings can't be changed.
 | Allowed Account Types  | Microsoft accounts and Azure AD accounts are allowed. |
 | Virtual Desktops  | Virtual Desktops are blocked. |
 | Microsoft Store  | The Microsoft Store is blocked. |
-| Administrative tools  | Administrative tools, such as the command prompt and Windows PowerShell, can't be opened. Windows PowerShell scripts deployed using Microsoft Endpoint Manager can run. |
+| Administrative tools  | Administrative tools, such as the command prompt and Windows PowerShell, can't be opened. Windows PowerShell scripts deployed using Microsoft Intune can run. |
 | Apps  | Only certain apps are allowed to run on Windows 11 SE. For more info on what apps can run on Windows 11 SE, see [Windows 11 SE for Education overview](windows-11-se-overview.md).  |
 
 ## Next steps

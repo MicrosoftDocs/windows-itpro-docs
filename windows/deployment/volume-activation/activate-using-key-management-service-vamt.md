@@ -1,8 +1,7 @@
 ---
 title: Activate using Key Management Service (Windows 10)
 description: Learn how to use Key Management Service (KMS) to activate Windows.
-ms.reviewer: 
-  - nganguly
+ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
@@ -10,7 +9,7 @@ author: frankroj
 ms.localizationpriority: medium
 ms.date: 11/07/2022
 ms.topic: article
-ms.collection: highpri
+ms.collection: highpri, tier2
 ms.technology: itpro-fundamentals
 ---
 

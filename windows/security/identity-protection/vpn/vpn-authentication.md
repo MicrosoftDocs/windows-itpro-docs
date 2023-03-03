@@ -34,7 +34,7 @@ Windows supports a number of EAP authentication methods.
 
   - Certificate filtering:
     - Certificate filtering can be enabled to search for a particular certificate to use to authenticate with
-    - Filtering can be Issuer-based or Enhanced Key Usage (EKU)-based
+    - Filtering can be Issuer-based or extended key usage (EKU)-based
 
   - Server validation - with TLS, server validation can be toggled on or off:
     - Server name - specify the server to validate
@@ -88,7 +88,7 @@ See [EAP configuration](/windows/client-management/mdm/eap-configuration) for EA
 
 The following image shows the field for EAP XML in a Microsoft Intune VPN profile. The EAP XML field only appears when you select a built-in connection type (automatic, IKEv2, L2TP, PPTP).
 
-![EAP XML configuration in Intune profile.](images/vpn-eap-xml.png)
+:::image type="content" source="images/vpn-eap-xml.png" alt-text="EAP XML configuration in Intune profile.":::
 
 ## Related topics
 

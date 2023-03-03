@@ -1,10 +1,10 @@
 ---
 title: TenantRestrictions Policy CSP
-description: Learn more about the TenantRestrictions Area in Policy CSP
+description: Learn more about the TenantRestrictions Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/29/2022
+ms.date: 01/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,9 +17,7 @@ ms.topic: reference
 # Policy CSP - TenantRestrictions
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
@@ -43,16 +41,18 @@ ms.topic: reference
 <!-- ConfigureTenantRestrictions-OmaUri-End -->
 
 <!-- ConfigureTenantRestrictions-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This setting enables and configures the device-based tenant restrictions feature for Azure Active Directory.
 
 When you enable this setting, compliant applications will be prevented from accessing disallowed tenants, according to a policy set in your Azure AD tenant.
 
-Note: Creation of a policy in your home tenant is required, and additional security measures for managed devices are recommended for best protection. Refer to Azure AD Tenant Restrictions for more details.
+> [!NOTE]
+> Creation of a policy in your home tenant is required, and additional security measures for managed devices are recommended for best protection. Refer to Azure AD Tenant Restrictions for more details.
 
-https://go.microsoft.com/fwlink/?linkid=2148762
+<https://go.microsoft.com/fwlink/?linkid=2148762>
 
 Before enabling firewall protection, ensure that a Windows Defender Application Control (WDAC) policy that correctly tags applications has been applied to the target devices. Enabling firewall protection without a corresponding WDAC policy will prevent all applications from reaching Microsoft endpoints. This firewall setting is not supported on all versions of Windows - see the following link for more information.
-For details about setting up WDAC with tenant restrictions, see https://go.microsoft.com/fwlink/?linkid=2155230
+For details about setting up WDAC with tenant restrictions, see <https://go.microsoft.com/fwlink/?linkid=2155230>
 <!-- ConfigureTenantRestrictions-Description-End -->
 
 <!-- ConfigureTenantRestrictions-Editable-Begin -->
@@ -69,6 +69,9 @@ For details about setting up WDAC with tenant restrictions, see https://go.micro
 <!-- ConfigureTenantRestrictions-DFProperties-End -->
 
 <!-- ConfigureTenantRestrictions-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
 **ADMX mapping**:
 
 | Name | Value |
