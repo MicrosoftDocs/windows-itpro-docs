@@ -76,7 +76,7 @@ get-applockerpolicy -xml -effective
 ```
 
 - For the policy that sets the Intune Management Extension as a Managed installer, *MICROSOFT.MANAGEMENT.SERVICES.INTUNEWINDOWSAGENT.EXE* should be nested under a RuleCollection section of Type *ManagedInstaller*
-  ![](./images/applocker-policy-validation.png)
+  :::image type="content" source="images/applocker-policy-validation.png" alt-text="This is a placeholder.":::
 - For any policies you added to set additional executables you want to be managed installers, look for the rules you defined nested under a RuleCollection section of Type *ManagedInstaller*
 
 You can check the AppLocker service status with the following commands:
@@ -87,7 +87,7 @@ sc.exe query applockerfltr
 
 When executing the `sc.exe query` commands, the *STATE* property should show a state of *4 RUNNING* for both services:
 
-:::image type="content" source="images/sc-command.png" alt-text="Output of the command sc.exe query.":::
+:::image type="content" source="images/sc-commands.png" alt-text="Output of the command sc.exe query.":::
 
 ## AppLocker - MSI and Script
 

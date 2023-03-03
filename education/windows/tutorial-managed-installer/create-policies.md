@@ -17,7 +17,7 @@ The following table details the two policy types to allow apps to run:
 
 | **Policy type** | **How it works** | **When should I use this policy?** | **Security risk** |
 |---|---|---|---|
-| WDAC Supplemental policy | Directly allows apps meeting the rule criteria to run | For executables that are blocked by the E-Mode policy (Visible from the Event Viewer in the [CodeIntegrity events](./troubleshoot.md#codeintegrity--operational-event-log)) | Low |
+| WDAC Supplemental policy | Directly allows apps meeting the rule criteria to run | For executables that are blocked by the E-Mode policy (Visible from the Event Viewer in the [CodeIntegrity events](./troubleshoot.md)) | Low |
 | AppLocker policy | Sets an app to be considered as a managed installer | Only for executables that do installations or updates which are blocked by the E-Mode policy | High |
 
 > **Note**
@@ -47,7 +47,7 @@ To write a policy, you can use [audit events][WIN-3], as they allow you to obser
 1. On a **non-Windows SE** device, apply an audit mode WDAC Base policy. The WDAC Wizard includes a template policy called *WinSEPolicy.xml based on Windows 11 SE E mode* that you can use:
    - Open the **WDAC Wizard** and select **Policy Editor**
    - In the Policy Path to Edit field, browse for *%ProgramFiles%\WindowsApps\Microsoft.WDAC* and select the file called WinSEPolicy.xml. Select **Next**
-     ![](./images/wdac-winsepolicy.png)
+      :::image type="content" source="images/wdac-winsepolicy.png" alt-text="This is a placeholder.":::
    - Toggle the option for **Audit Mode** and complete the Wizard.
    - Note the location of the .cip and .xml files shown on the final page of the wizard.
    - From an elevated PowerShell session, run the following command to activate the policy:
@@ -118,8 +118,8 @@ UWP apps don't work out-of-box due to the Windows 11 SE E-Mode policy. A supplem
 1. The policy is not yet targeting the right base policy so run the following from PowerShell:  
 1. Set-CiPolicyIdInfo - FilePath <"Path to .xml from step 8"> -SupplementsBasePolicyId "{82443E1E-8A39-4B4A-96A8-F40DDC00B9F3}"
 1. Creation of the supplemental policy is complete; you still need to have the policy signed by Microsoft and uploaded into Intune to take effect.
-    - For review and signing of your policy, follow the instructions at [Create additional policies - Review and sign WDAC supplemental policies (TAP-only)](./create-policies.md#review-and-sign-wdac-supplemental-policies-tap-only)
-    - For deployment of your policy after receiving back the signed policy, follow the instructions at: [Create additional policies - Deploy WDAC policies](./create-policies.md#deploy-wdac-policies)
+    - For review and signing of your policy, follow the instructions at [Create additional policies - Review and sign WDAC supplemental policies (TAP-only)](./create-policies.md)
+    - For deployment of your policy after receiving back the signed policy, follow the instructions at: [Create additional policies - Deploy WDAC policies](./create-policies.md)
 
 ### Guidelines for authoring WDAC supplemental policy rules
 

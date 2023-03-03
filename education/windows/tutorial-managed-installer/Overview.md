@@ -1,13 +1,13 @@
 ---
-title: Deploy applications to Windows 11 SE with Intune as a managed installer
-description: Learn how to deploy application to Windows 11 SE devices with Intune as a managed installer.
+title: Deploy applications with managed installer to Windows SE
+description: Learn how to deploy application with Intune as a managed installer to Windows 11 SE devices.
 ms.date: 03/02/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
 ---
 
-# Deploy applications to Windows 11 SE with Intune as a managed installer
+# Deploy applications with managed installer to Windows SE
 
 Windows 11 SE prevents the installation of third party applications, unless the apps are in an *approved list*.\
 Starting with Windows 11 SE, version 22H2, you can deploy *any* applications to Windows SE devices via Intune, without having to contact Microsoft. The scenario is possible by configuring the *Intune Management Extension (IME)* as a *WDAC managed installer*.
