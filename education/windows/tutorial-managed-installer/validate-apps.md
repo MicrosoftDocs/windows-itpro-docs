@@ -87,7 +87,7 @@ Here are things to pay attention to:
 - Dialogs may pop up during the app use, indicating that something is blocked
 - Multiple apps are installed, especially if one app appears to be a launcher/updater. For example, Adobe Photoshop includes the Adobe Creative Cloud launcher, which updates Photoshop and other apps
 - Any messages indicating that the app is doing pre-installation work or downloading more content
-- Event logs found in **CodeIntegrity > Operational**, and **AppLocker - MSI and Script**. For more information, see [AppLocker - MSI and Script](troubleshoot.md#applocker---msi-and-script)
+- Event logs found in **CodeIntegrity > Operational**, and **AppLocker - MSI and Script**
 
 ### Compatible apps
 
@@ -111,7 +111,8 @@ You may see a dialog indicating **This app won't run on your PC**. Check the ind
 
 ### Event Viewer
 
-More detail can be obtained when looking for events where executables were blocked in the Event Viewer. For more information, see [Troubleshooting - Event Viewer](troubleshoot.md).
+More detail can be obtained when looking for events indicating blocked executables in the Event Viewer.\
+The event logs are **CodeIntegrity > Operational**, and **AppLocker - MSI and Script**. For more information, see [AppLocker - MSI and Script](troubleshoot.md#applocker---msi-and-script).
 
 ## Known limitations
 
@@ -130,6 +131,7 @@ Before moving on to the next section, ensure that you've completed the following
 > - Verified any installation errors from Intune
 > - Verified the app installation on the device
 > - Checked for any errors when opening the app from the device
+> - Checked for any errors in the Event Viewer
 
 ## Next steps
 
