@@ -52,7 +52,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 > [!NOTE]
 > We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
 
-### Table 1. WDAC policy - policy rule options
+### Table 1. Windows Defender Application Control policy - policy rule options
 
 | Rule option | Description | Valid supplemental option |
 |------------ | ----------- | ----------- |
@@ -78,13 +78,13 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically loaded libraries.<br/> NOTE: This option is only supported on Windows 10, version 1803 and above. | No |
 | **20 Enabled:Revoked Expired As Unsigned** | Use this option to treat binaries signed with expired and/or revoked certificates as "Unsigned binaries" for user-mode process/components, under enterprise signing scenarios. | No |
 
-## WDAC file rule levels
+## Windows Defender Application Control file rule levels
 
 File rule levels allow administrators to specify the level at which they want to trust their applications. This level of trust could be as granular as the hash of each binary, or as general as a CA certificate. You specify file rule levels when using WDAC PowerShell cmdlets to create and modify policies.
 
 Each file rule level has advantages and disadvantages. Use Table 2 to select the appropriate protection level for your available administrative resources and WDAC deployment scenario.
 
-### Table 2. WDAC policy - file rule levels
+### Table 2. Windows Defender Application Control policy - file rule levels
 
 | Rule level | Description |
 |----------- | ----------- |
@@ -196,13 +196,13 @@ In the cmdlets, rather than try to predict which hash will be used, we pre-calcu
 
 Separate rules are created for UMCI and KMCI. If the cmdlets can't determine that a file will only run in user-mode or in the kernel, then rules are created for both signing scenarios out of an abundance of caution. If you know that a particular file will only load in either user-mode or kernel, then you can safely remove the extra rules.
 
-## WDAC filename rules
+## Windows Defender Application Control filename rules
 
 File name rule levels let you specify file attributes to base a rule on. File name rules provide the same security guarantees that explicit signer rules do, as they're based on non-mutable file attributes. Specification of the file name level occurs when creating new policy rules.
 
 Use Table 3 to select the appropriate file name level for your use cases. For instance, an LOB or production application and its binaries may all share the same product name. This option lets you easily create targeted policies based on the Product Name filename rule level.
 
-### Table 3. WDAC policy - filename levels
+### Table 3. Windows Defender Application Control policy - filename levels
 
 | Rule level | Description |
 |----------- | ----------- |
