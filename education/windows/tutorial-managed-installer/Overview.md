@@ -1,7 +1,7 @@
 ---
 title: Deploy applications with managed installer to Windows SE
 description: Learn how to deploy application with Intune as a managed installer to Windows 11 SE devices.
-ms.date: 03/02/2023
+ms.date: 03/05/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
@@ -13,6 +13,24 @@ Windows 11 SE prevents the installation of third party applications, unless the 
 Starting with Windows 11 SE, version 22H2, you can deploy applications to Windows SE devices via Intune, without having to contact Microsoft. The scenario is possible by configuring the *Intune Management Extension (IME)* as a *WDAC managed installer*.
 
 In this tutorial, you'll learn how to set up Windows 11 SE devices with the IME as a managed installer, and how to validate the applications deployed via Intune.
+
+
+<!-- New part
+
+Windows 11 SE is designed to provide a simplified and secure experience for students. The installation and execution of applications that are not included in the operating system is prevented through the use of two technologies: WDAC and AppLocker.
+
+If Windows 11 SE is managed by Intune, IT admins may deploy applcations from a curated list of education apps maintained by Microsoft.
+
+Starting from <>, IT admins have more flexibility to deploy applications to Windows 11 SE devices. When a Windows 11 SE device is enrolled in Intune, it will automatically receive new polices that will enable the Intune Management Extention (IME) as a WDAC managed installer.\
+What that means is that IT admins can deploy any Win32 applications and other type of apps outside of the ones that are allowlisted by default.
+
+In this tutorial you will learn
+
+- which types of apps can be deployed via Intune to Windows 11 SE devices
+- how to verify that the apps are installed correctly
+- how to mitigate app installation issues
+- speical considerations when deploying apps to Windows 11 SE
+-->
 
 ## Introduction
 
