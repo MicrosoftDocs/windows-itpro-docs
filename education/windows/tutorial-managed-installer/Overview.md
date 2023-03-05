@@ -62,7 +62,7 @@ In this tutorial you'll learn:
 
 There are three main steps to install an application on Windows 11 SE using the managed installer. Each step will be covered in detail in the next sections of this tutorial:
 
-:::image type="content" source="./images/process.svg" alt-text="Diagram showing the three tutorial steps." border="false":::
+:::image type="content" source="./images/process.png" alt-text="Diagram showing the three steps deploying apps to Windows SE devices with Intune." border="false":::
 
 1. **Deploy an application via Microsoft Intune** - Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but the process is the same used for non-Windows 11 SE devices
 1. **Validate the application** - Applications are validated to ensure that they're installed and execute successfully. The process is the same for non-Windows 11 SE devices. Some applications may be incompatible due to how they're installed, how they execute, or how they update. You'll learn about known limitations in a later section of the tutorial
