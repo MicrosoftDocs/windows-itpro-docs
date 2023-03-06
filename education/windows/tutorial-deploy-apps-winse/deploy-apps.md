@@ -19,9 +19,9 @@ The following table provides an overview of the applications types that can be d
 |**Installer/App type**|**Installer extensions**|**Available installation methods via Intune**|**Considerations for Windows 11 SE**|
 |-|-|-|-|
 |[Win32][WIN-1]|`.exe`<br>`.msi`|- Intune Management Extension (IME)<br> - Microsoft Store integration|⚠️ There are known limitations that might prevent a specific app from being installed.|
-|[Universal Windows Platform (UWP)][WIN-2]|`.appx`<br>`.appxbundle`<br>`.msix`<br>|- For private apps: line-of-business apps<br>- For public apps: Microsoft Store integration|⚠️ LOB apps require a supplemental policy.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy UWP apps on Windows SE.|
+|[Universal Windows Platform (UWP)][WIN-2]|`.appx`<br>`.appxbundle`<br>`.msix`<br>|- For private apps: line-of-business (LOB) apps<br>- For public apps: Microsoft Store integration|⚠️ LOB apps require a supplemental policy.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy UWP apps.|
 |[Progressive Web Apps (PWAs)][EDGE-2] |`.msix`|- Settings catalog policies<br>- Microsoft Store integration|✅ Use settings catalog policies.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy PWAs.|
-|Web links| n/a |- Windows web links|✅ Web links are supported.|
+|Web links| n/a |- Windows web links|✅ Web links are supported. |
 
 > [!IMPORTANT]
 > Although you'll be able to install apps on Windows 11 SE devices via Intune, some apps may not perform well on these devices due those apps' minimum spec requirements.
@@ -30,9 +30,6 @@ The following table provides an overview of the applications types that can be d
 ## Win32 apps
 
 The addition of Win32 applications to Intune consists of repackaging the apps and defining the commands to silently install them. The process is described in the article [Add, assign, and monitor a Win32 app in Microsoft Intune][MEM-1].
-
-> [!IMPORTANT]
-> Ensure that apps which were previously blocked from installing or running are no longer unintentionally being provisioned once the managed installer policies are introduced.
 
 There are known limitations that might prevent applications from being installed or executed. For more information, see the next section [validate applications](validate-apps.md).
 

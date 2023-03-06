@@ -115,9 +115,9 @@ More detail can be obtained when looking for events indicating blocked executabl
 The event logs are:
 
 - **CodeIntegrity > Operational**
-- **AppLocker - MSI and Script**
- 
-For more information, see [AppLocker - MSI and Script](troubleshoot.md#applocker---msi-and-script).
+- **AppLocker > MSI and Script**
+
+For more information, see the [Troubleshoot](troubleshoot.md) section.
 
 ## Known limitations
 
@@ -140,10 +140,14 @@ Before moving on to the next section, ensure that you've completed the following
 
 ## Next steps
 
-Advance to the next article to learn how to create and deploy WDAC or AppLocker policies, in case the apps you deployed don't work as expected.
+Select one of the following options to learn the next steps:
 
-> [!div class="nextstepaction"]
-> [Next: create policies >](create-policies.md)
+- If the apps don't work as expected, you must create and deploy WDAC or AppLocker policies to allow the apps to run
+- If the applications you are deploying don't have any issues, you can skip to considerations for your tenant
+
+> [!div class="op_single_selector"]
+> - [Create policies](create-policies.md)
+> - [Considerations for your tenant](considerations.md)
 
 [M365-1]: /microsoft-365/education/deploy/microsoft-store-for-education
 
