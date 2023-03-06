@@ -11,7 +11,7 @@ appliesto:
 
 :::image type="content" source="./images/deploy-app.png" alt-text="Diagram showing the three tutorial steps, highlighting the app deployment step." border="false":::
 
-The process to deploy applications to Windows SE devices via Microsoft Intune is the same used for non-SE devices.\
+The process to deploy applications to Windows SE devices via Microsoft Intune is the same used for non-SE devices. Applications must be defined in Intune, and then assigned to the correct groups.\
 However, on Windows SE devices, apps may successfully install, but they need validation to be certain that they're functional.
 
 The following table provides an overview of the applications types that can be deployed to Windows devices via Intune, and considerations about the installation on Windows SE:
@@ -19,24 +19,22 @@ The following table provides an overview of the applications types that can be d
 |**Installer/App type**|**Installer extensions**|**Available installation methods via Intune**|**Considerations for Windows 11 SE**|
 |-|-|-|-|
 |[Win32][WIN-1]|`.exe`<br>`.msi`|- Intune Management Extension (IME)<br> - Microsoft Store integration|⚠️ There are known limitations that might prevent a specific app from being installed.|
-|[Universal Windows Platform (UWP)][UWP-1]|`.appx`<br>`.appxbundle`<br>`.msix`<br>|- For private apps: line-of-business apps<br>- For public apps: Microsoft Store integration|⚠️ LOB apps require a supplemental policy.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy UWP apps on Windows SE.|
+|[Universal Windows Platform (UWP)][WIN-2]|`.appx`<br>`.appxbundle`<br>`.msix`<br>|- For private apps: line-of-business apps<br>- For public apps: Microsoft Store integration|⚠️ LOB apps require a supplemental policy.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy UWP apps on Windows SE.|
 |[Progressive Web Apps (PWAs)][EDGE-2] |`.msix`|- Settings catalog policies<br>- Microsoft Store integration|✅ Use settings catalog policies.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy PWAs.|
 |Web links| n/a |- Windows web links|✅ Web links are supported.|
 
 > [!IMPORTANT]
 > Although you'll be able to install apps on Windows 11 SE devices via Intune, some apps may not perform well on these devices due those apps' minimum spec requirements.
->
-> Before deploying apps, first check which apps will be targeting your Windows 11 SE devices, and ensure that they meet the requirements. Ensure that apps which were previously blocked from installing or running are no longer unintentionally being provisioned once the managed installer policies are introduced.
+> Before deploying apps, first check which apps will be targeting your Windows 11 SE devices, and ensure that they meet the requirements.
 
 ## Win32 apps
 
 The addition of Win32 applications to Intune consists of repackaging the apps and defining the commands to silently install them. The process is described in the article [Add, assign, and monitor a Win32 app in Microsoft Intune][MEM-1].
 
 > [!IMPORTANT]
-> There are known limitations that might prevent a specific app from being installed. For more information, see the next section [validate applications](validate-apps.md).
+> Ensure that apps which were previously blocked from installing or running are no longer unintentionally being provisioned once the managed installer policies are introduced.
 
-> [!NOTE]
-> While Win32 apps can be deployed through the Microsoft Store integration with Intune, it's currently an unsupported deployment method for Windows 11 SE.
+There are known limitations that might prevent applications from being installed or executed. For more information, see the next section [validate applications](validate-apps.md).
 
 ## UWP apps
 
@@ -83,5 +81,5 @@ Advance to the next article to learn how to validate the applications deployed t
 [MEM-2]: /mem/intune/apps/lob-apps-windows
 [MEM-3]: /mem/intune/configuration/settings-catalog
 [MEM-4]: /mem/intune/apps/web-app
-[UWP-1]: /windows/uwp/get-started/universal-application-platform-guide
 [WIN-1]: /windows/win32
+[WIN-2]: /windows/uwp/get-started/universal-application-platform-guide

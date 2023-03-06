@@ -9,8 +9,8 @@ items:
     items: 
       - name: Create policies
         href: create-policies.md
-      - name: Sign and deploy policies
-        href: sign-deploy-policies.md
+      - name: Deploy policies
+        href: deploy-policies.md
   - name: Troubleshoot and get help
     href: troubleshoot.md
   - name: Considerations for your tenant

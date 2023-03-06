@@ -21,7 +21,7 @@ Application validation consists of the following steps:
 1. Inspect the app and take note of any potential problems
 
 > [!NOTE]
-> Apps must be validated on a case-by-case basis. A successful installation doesn't mean that the app will run properly. A successful execution of the app, doesn't mean it will *always* run properly. More details about these behaviors are provided below.
+> Apps must be validated on a case-by-case basis. A successful installation doesn't mean that the app will run properly. A successful execution of the app, doesn't mean it will *always* run properly.
 
 ## Wait for the application to install
 
@@ -63,7 +63,7 @@ To check the installation status of an app from the Intune portal:
 > A Win32 application may install correctly, but report to Intune as failed.\
 > A Win32 app may also fail to install, but report as installed to Intune.
 >
-> In both cases, the issue is in the detection rules defined in Intune, which must be configured correctly to detect the installation of the app.
+> In both cases, the issue may be in the detection rules defined in Intune, which must be configured correctly to detect the installation of the app.
 
 ### Check for installation on the device
 
@@ -87,7 +87,7 @@ Here are things to pay attention to:
 - Dialogs may pop up during the app use, indicating that something is blocked
 - Multiple apps are installed, especially if one app appears to be a launcher/updater. For example, Adobe Photoshop includes the Adobe Creative Cloud launcher, which updates Photoshop and other apps
 - Any messages indicating that the app is doing pre-installation work or downloading more content
-- Event logs found in **CodeIntegrity > Operational**, and **AppLocker - MSI and Script**
+- Logs in the Event Viewer
 
 ### Compatible apps
 
@@ -112,7 +112,12 @@ You may see a dialog indicating **This app won't run on your PC**. Check the ind
 ### Event Viewer
 
 More detail can be obtained when looking for events indicating blocked executables in the Event Viewer.\
-The event logs are **CodeIntegrity > Operational**, and **AppLocker - MSI and Script**. For more information, see [AppLocker - MSI and Script](troubleshoot.md#applocker---msi-and-script).
+The event logs are:
+
+- **CodeIntegrity > Operational**
+- **AppLocker - MSI and Script**
+ 
+For more information, see [AppLocker - MSI and Script](troubleshoot.md#applocker---msi-and-script).
 
 ## Known limitations
 
