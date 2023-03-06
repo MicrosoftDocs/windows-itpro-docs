@@ -1,62 +1,38 @@
 ---
-title: Deploy applications with managed installer to Windows SE
-description: Learn how to deploy application with Intune as a managed installer to Windows 11 SE devices.
-ms.date: 03/05/2023
+title: Deploy applications to Windows 11 SE with Intune
+description: Learn how to deploy applications to Windows 11 SE with Intune and how to validate the apps.
+ms.date: 03/06/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
 ---
 
-# Deploy applications with managed installer to Windows SE
+# Deploy applications to Windows 11 SE with Intune
 
-Windows 11 SE prevents the installation of third party applications, unless the apps are in an *approved list*.\
-Starting with Windows 11 SE, version 22H2, you can deploy applications to Windows SE devices via Intune, without having to contact Microsoft. The scenario is possible by configuring the *Intune Management Extension (IME)* as a *WDAC managed installer*.
+Windows 11 SE is designed to provide a simplified and secure experience for students. Windows 11 SE prevents the installation and execution of third party applications with a technology called *Windows Defender Application Control (WDAC)*.
 
-In this tutorial, you'll learn how to set up Windows 11 SE devices with the IME as a managed installer, and how to validate the applications deployed via Intune.
+## Intune Management Extension and managed installer
 
+WDAC applies an *allowlist* policy called *E-Mode*, which ensures that unwanted apps don't run or get installed. However, it also prevents IT admins from deploying apps to Windows 11 SE devices, unless they're included in the E-Mode policy.\
+With the use of WDAC *supplemental policies*, Microsoft allows specific third party applications to be installed and executed. The [allowlist process][EDU-1] is done on an app-by-app basis, and the time to request an application to be allowed and have the supplemental policy deployed can be lengthy.
 
-<!-- New part
-
-Windows 11 SE is designed to provide a simplified and secure experience for students. The installation and execution of applications that are not included in the operating system is prevented through the use of two technologies: WDAC and AppLocker.
-
-If Windows 11 SE is managed by Intune, IT admins may deploy applcations from a curated list of education apps maintained by Microsoft.
-
-Starting from <>, IT admins have more flexibility to deploy applications to Windows 11 SE devices. When a Windows 11 SE device is enrolled in Intune, it will automatically receive new polices that will enable the Intune Management Extention (IME) as a WDAC managed installer.\
-What that means is that IT admins can deploy any Win32 applications and other type of apps outside of the ones that are allowlisted by default.
-
-In this tutorial you will learn
-
-- which types of apps can be deployed via Intune to Windows 11 SE devices
-- how to verify that the apps are installed correctly
-- how to mitigate app installation issues
-- speical considerations when deploying apps to Windows 11 SE
--->
-
-## Introduction
-
-Windows 11 SE prevents the installation and execution of third party applications with a security feature called *Windows Defender Application Control (WDAC)*.\
-On Windows 11 SE, WDAC applies an *allowlist policy* called *E-Mode*. The E-Mode policy ensures that unwanted apps don't run or get installed.
-
-When Windows 11 SE was initially released, Microsoft enabled the execution of specific applications by using [WDAC supplemental policies][WIN-1], with an [allowlist process][EDU-1] done on an app-by-app basis.
-
-Starting in Windows 11 SE, version 22H2, Microsoft enabled the IME as a managed installer. Applications deployed through Microsoft Intune will be automatically allowed on Windows 11 SE, removing the allowlist process requirement. For more information about managed installer, see [How does a managed installer work?][WIN-2]
+Starting with Windows 11 SE, version 22H2, IT admins have more flexibility to deploy applications to Windows 11 SE devices. When a Windows 11 SE device is enrolled in Microsoft Intune, it will automatically receive polices that enable the *Intune Management Extension (IME)* as a *managed installer*.\
+As a managed installer, any applications deployed through the IME will be automatically allowed on Windows 11 SE, removing the allowlist process requirement. For more information about managed installer, see [How does a managed installer work?][WIN-2]
 
 > [!NOTE]
 > End-users of Windows 11 SE devices still cannot install and use arbitrary applications without being blocked. Only IT admins can control what apps are allowed.
 
-Some applications may not execute due to their type or complexity. In these scenarios, the IT admin must create their own policies that allow the apps execution.\
-The policies can then be deployed to the Windows SE devices via Microsoft Intune.
+## Tutorial objectives
 
-## Goals
+Even when using managed installer, some applications may not execute due to their type or complexity. In these scenarios, the IT admin must create their own policies that allow the apps execution.\
+The policies can then be deployed to the Windows SE devices via Intune.
 
 In this tutorial you'll learn:
 
-> [!div class="checklist"]
-> - Which applications can be installed on a Windows 11 SE device managed by Intune
-> - How to install an application to a Windows 11 SE device using Intune
-> - How to validate that an application is installed and runs successfully
-> - How to write additional policies to enable incompatible applications
-> - How to troubleshoot problems related to application installation
+- Which types of apps can be deployed via Intune to Windows 11 SE devices
+- How to verify that the apps are installed correctly
+- How to mitigate app installation issues
+- Special considerations when deploying apps to Windows 11 SE
 
 ## Installation process
 
@@ -72,7 +48,7 @@ All the steps are done by the IT administrator. Once the steps are complete, use
 
 ## Prerequisites
 
-To receive policies on your Windows 11 SE devices, allowing app installation controlled by your IT admin, you must have:
+To receive policies on your Windows 11 SE devices, allowing app installation from Intune, you must have:
 
 - Windows 11 SE, version 22H2 with [KB5019980][KB-1] and later
 - Intune for Education licenses. The license requirement is for the managed installer to deploy apps and supplemental policies via Intune
@@ -84,7 +60,7 @@ If you don't have an Intune for Education license for your devices yet, refer to
 Advance to the next article to learn which application can be deployed to Windows 11 SE devices, and how to deploy them via Intune.
 
 > [!div class="nextstepaction"]
-> [Next: app deployment considerations >](deploy-apps.md)
+> [Next: deploy apps >](deploy-apps.md)
 
 [KB-1]: https://support.microsoft.com/kb/5019980
 [EDU-1]: /education/windows/windows-11-se-overview#add-your-own-applications
