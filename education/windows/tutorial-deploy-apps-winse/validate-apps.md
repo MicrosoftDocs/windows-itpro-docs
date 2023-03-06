@@ -9,7 +9,7 @@ appliesto:
 
 # Validate the applications deployed to Windows SE devices
 
-:::image type="content" source="./images/validate-app.svg" alt-text="Diagram showing the three tutorial steps, highlighting the app validation step." border="false":::
+:::image type="content" source="./images/validate-app.png" alt-text="Diagram showing the three tutorial steps, highlighting the app validation step." border="false":::
 
 A fundamental step in deploying apps to Windows 11 SE devices is to validate that the apps work as expected.
 

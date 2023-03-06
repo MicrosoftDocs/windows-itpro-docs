@@ -9,7 +9,7 @@ appliesto:
 
 # Applications deployment considerations
 
-:::image type="content" source="./images/deploy-app.svg" alt-text="Diagram showing the three tutorial steps, highlighting the app deployment step." border="false":::
+:::image type="content" source="./images/deploy-app.png" alt-text="Diagram showing the three tutorial steps, highlighting the app deployment step." border="false":::
 
 The process to deploy applications to Windows SE devices via Microsoft Intune is the same used for non-SE devices.\
 However, on Windows SE devices, apps may successfully install, but they need validation to be certain that they're functional.

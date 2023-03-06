@@ -1,7 +1,7 @@
 ---
 title: Create additional policies for applications
 description: Learn how to create additional policies for applications.
-ms.date: 03/03/2023
+ms.date: 03/06/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
@@ -9,7 +9,7 @@ appliesto:
 
 # Create additional policies for applications
 
-:::image type="content" source="./images/create-additional-policies.svg" alt-text="Diagram showing the three tutorial steps, highlighting the policy creation step." border="false":::
+:::image type="content" source="./images/create-additional-policies.png" alt-text="Diagram showing the three tutorial steps, highlighting the policy creation step." border="false":::
 
 Additional policies can be written to allow applications that are [semi-compatible](./validate-apps.md#compatible-apps) or [incompatible](./validate-apps.md#incompatible-apps) with the managed installer.
 

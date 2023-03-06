@@ -22,8 +22,6 @@ In summary, if you choose to block device use on the installation of apps, you m
 
 :::image type="content" source="./images/autopilot.png" alt-text="Autopilot showing an error in OOBE on Windows 11 SE." border="false":::
 
-
-
 ### ESP mitigations
 
 To ensure that you don't run into installation or enrollment blocks, you can do the following in accordance with your internal policies:
