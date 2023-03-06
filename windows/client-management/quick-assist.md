@@ -1,6 +1,6 @@
 ---
 title: Use Quick Assist to help users
-description: How IT Pros can use Quick Assist to help users.
+description: Learn how IT Pros can use Quick Assist to help users.
 ms.prod: windows-client
 ms.topic: article
 ms.technology: itpro-manage
@@ -12,7 +12,7 @@ ms.reviewer: pmadrigal
 ms.collection:
   - highpri
   - tier1
-ms.date: 08/26/2022
+ms.date: 03/06/2023
 ---
 
 # Use Quick Assist to help users
@@ -82,9 +82,10 @@ Microsoft logs a small amount of session data to monitor the health of the Quick
 
 - Features used inside the app such as view only, annotation, and session pause
 
-No logs are created on either the helper's or sharer's device. Microsoft can't access a session or view any actions or keystrokes that occur in the session.
-
-The sharer sees only an abbreviated version of the helper's name (first name, last initial) and no other information about them. Microsoft doesn't store any data about either the sharer or the helper for longer than three days.
+> [!NOTE]
+> No logs are created on either the helper's or sharer's device. Microsoft can't access a session or view any actions or keystrokes that occur in the session.
+>
+> The sharer sees only an abbreviated version of the helper's name (first name, last initial) and no other information about them. Microsoft doesn't store any data about either the sharer or the helper for longer than three days.
 
 In some scenarios, the helper does require the sharer to respond to application permission prompts (User Account Control), but otherwise the helper has the same permissions as the sharer on the device.
 
@@ -92,22 +93,16 @@ In some scenarios, the helper does require the sharer to respond to application 
 
 Either the support staff or a user can start a Quick Assist session.
 
-1. Support staff ("helper") starts Quick Assist in any of a few ways:
-
-    - Type *Quick Assist* in the search box and press ENTER.
-    - Press **CTRL** + **Windows** + **Q**
-    - For **Windows 10** users, from the Start menu, select **Windows Accessories**, and then choose **Quick Assist**.
-    - For **Windows 11** users, from the Start menu, select **All Apps**, **Windows Tools**, and then choose **Quick Assist**.
-
-2. In the **Give assistance** section, the helper selects **Assist another person**. The helper might be asked to choose their account or sign in. Quick Assist generates a time-limited security code.
-
-3. Helper shares the security code with the user over the phone or with a messaging system.
-
-4. Quick Assist opens on the sharer's device. The user enters the provided code in the **Code from assistant** box, and then selects **Share screen**.
-
-5. The helper receives a dialog offering the opportunity to take full control of the device or just view its screen. After they choose an option, the helper selects **Continue**.
-
-6. The sharer receives a dialog asking for permission to show their screen or allow access. The sharer gives permission by selecting the **Allow** button.
+1. Support staff ("helper") and the user ("sharer") can start Quick Assist in any of a few ways:
+    - Type *Quick Assist* in the Windows search and press ENTER.
+    - Press **CTRL** + **Windows** + **Q**.
+    - For **Windows 10** users, from the Start menu, select **Windows Accessories**, and then select **Quick Assist**.
+    - For **Windows 11** users, from the Start menu, select **All Apps**, and then select **Quick Assist**.
+1. In the **Help someone** section, the helper selects the **Help someone** button. The helper might be asked to choose their account or sign in. Quick Assist generates a time-limited security code.
+1. Helper shares the security code with the user over the phone or with a messaging system.
+1. The sharer enters the provided code in the **Security code from assistant** box under the **Get help** section, and then selects **Submit**.
+1. The sharer receives a dialog asking for permission to allow screen sharing. The sharer gives permission by selecting the **Allow** button and the screen sharing session is established.
+1. After the screen sharing session is established, the helper can optionally request control of the sharer's screen by selecting **Request control**. The sharer then receives a dialog asking them if they want to **Allow** or **Deny** the request for control.
 
 ## Install Quick Assist
 
@@ -143,15 +138,16 @@ Visit [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps
 To install Quick Assist offline, you'll need to download your APPXBUNDLE and unencoded XML file from [Microsoft Store for Business](https://businessstore.microsoft.com). Visit [Download an offline-licensed app](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app) for more information.
 
 1. Start **Windows PowerShell** with Administrative privileges.
-1. In PowerShell, change the directory to the location you've saved the file to in step 1. (CD &#x3C;*location of package file*&#x3E;)
-1. Run the following command to install Quick Assist: </br>*Add-appxprovisionedpackage -online -PackagePath "MicrosoftCorporationII.QuickAssist_2022.509.2259.0_neutral___8wekyb3d8bbwe.AppxBundle" -LicensePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe_4bc27046-84c5-8679-dcc7-d44c77a47dd0.xml"*
-1. After Quick Assist has installed, run this command: </br>_Get-appxpackage \*QuickAssist* -alluser_
-
-After running the command, you'll see Quick Assist 2.X is installed for the user.
+1. In PowerShell, change the directory to the location you've saved the file to in step 1: `cd <location of package file>`
+1. Run the following command to install Quick Assist: `Add-AppxProvisionedPackage -Online -PackagePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe.AppxBundle" -LicensePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe_4bc27046-84c5-8679-dcc7-d44c77a47dd0.xml"`
+1. After Quick Assist has installed, run this command to confirm that Quick Assist is installed for the user: `Get-AppxPackage *QuickAssist* -AllUsers`
 
 ## Microsoft Edge WebView2
 
-The Microsoft Edge WebView2 is a development control that uses Microsoft Edge as the rendering engine to display web content in native apps. The new Quick Assist app is written using this control and is required. For Windows 11 users, this runtime control is built in. For Windows 10 users, the Quick Assist Store app will detect if WebView2 is present on launch and if necessary, it will be installed automatically. If an error message or prompt is shown indicating WebView2 isn't present, it will need to be installed separately.
+The Microsoft Edge WebView2 is a development control that uses Microsoft Edge as the rendering engine to display web content in native apps. The new Quick Assist application has been developed using this control, making it a necessary component for the app to function.
+
+- For Windows 11 users, this runtime control is built in.
+- For Windows 10 users, the Quick Assist Store app will detect if WebView2 is present on launch and if necessary, it will be installed automatically. If an error message or prompt is shown indicating WebView2 isn't present, it will need to be installed separately.
 
 For more information on distributing and installing Microsoft Edge WebView2, visit [Distribute your app and the WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution)
 
