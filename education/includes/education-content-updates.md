@@ -2,6 +2,15 @@
 
 
 
+## Week of February 27, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/28/2023 | [Configure federation between Google Workspace and Azure AD](/education/windows/configure-aad-google-trust) | modified |
+| 2/28/2023 | [Configure federated sign-in for Windows devices](/education/windows/federated-sign-in) | modified |
+
+
 ## Week of February 20, 2023
 
 
