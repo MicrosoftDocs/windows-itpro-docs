@@ -80,7 +80,7 @@ Advance to the next article to learn about important considerations for your ten
 
 > [!div class="nextstepaction"]
 >
-> - [Considerations for your tenant](considerations.md)
+> [Considerations for your tenant](considerations.md)
 
 [MEM-1]: /mem/intune/apps/intune-management-extension
 [WIN-4]: /windows/security/threat-protection/windows-defender-application-control/deployment/deploy-windows-defender-application-control-policies-using-intune

@@ -25,9 +25,10 @@ The following table details the two policy types to allow apps to run:
 
 ## WDAC supplemental policies
 
-You can create WDAC supplemental policies and then deploy them through Intune.
+A *supplemental policy* can expand only one base policy, but multiple supplemental policies can expand the same base policy. When you use supplemental policies, the apps allowed by the base or its supplemental policies will be allowed to execute.\
+The base policy that you must target for Windows SE devices has a PolicyID of **{82443e1e-8a39-4b4a-96a8-f40ddc00b9f3}**.
 
-To allow apps to install and run, you must write *supplemental policies* targeting the correct base policy. The base policy that you must target has a PolicyID of `{82443E1E-8A39-4B4A-96A8-F40DDC00B9F3}`.
+After you create WDAC supplemental policies, you must sign them and deploy them through Intune.
 
 In the following video, Jeffrey Sutherland provides an overview and explains how to create supplemental policies for apps blocked by the E Mode policy.
 
@@ -80,7 +81,7 @@ There are different ways to write a supplemental policy. The suggested method is
 1. Once you have a policy that works for your app, reset the supplemental policy's Base policy to the official Windows 11 SE BasePolicyId. From an elevated PowerShell session, run the following command:
 
     ```PowerShell
-    Set-CiPolicyIdInfo -FilePath "<Path to .xml from step #3>" -SupplementsBasePolicyId "{82443E1E-8A39-4B4A-96A8-F40DDC00B9F3}"
+    Set-CiPolicyIdInfo -FilePath "<Path to .xml from step #3>" -SupplementsBasePolicyId "{82443e1e-8a39-4b4a-96a8-f40ddc00b9f3}"
     ```
 
     > [!NOTE]
@@ -109,7 +110,7 @@ UWP apps don't work out-of-box due to the Windows 11 SE E Mode policy. You can c
 1. The policy isn't yet targeting the right base policy. Run the following PowerShell command to set the base policy to the Windows 11 SE E Mode policy:
 
     ```PowerShell
-    Set-CiPolicyIdInfo -FilePath "<Path to.xml file from previous step>" -SupplementsBasePolicyId "{82443E1E-8A39-4B4A-96A8-F40DDC00B9F3}"
+    Set-CiPolicyIdInfo -FilePath "<Path to.xml file from previous step>" -SupplementsBasePolicyId "{82443e1e-8a39-4b4a-96a8-f40ddc00b9f3}"
     ```
 
 1. The creation of the supplemental policy is complete. You must sign and deploy the policy to your devices to take effect.

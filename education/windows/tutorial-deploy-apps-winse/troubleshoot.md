@@ -13,13 +13,13 @@ The following table lists common problems and options to resolve them:
 
 | **Problem** | **Potential solution** |
 |---|---|
-| **App hasn't installed** | <li>Check the type of app:<ul><li>Win32 apps should be able to install with no problem</li><li>UWP and Store apps require writing an additional supplemental policy</li></ul></li><li>Check that the managed installer policies are deployed correctly</li><li>It's possible the app is trying to execute a blocked binary. Check the AppLocker and CodeIntegrity logs in Event Viewer to see if any executables related to the app are being blocked.If so, you'll need to write a supplemental policy to support the app</li><li> Check the Intune Management Extension logs to see if there was an attempt to install your app</li>|
+| **App hasn't installed** | <li>Check the type of app:<ul><li>Win32 apps should be able to install with no problem</li><li>UWP and Store apps require writing an additional supplemental policy</li></ul></li><li>Check that the managed installer policies are deployed correctly</li><li>It's possible the app is trying to execute a blocked binary. Check the AppLocker and CodeIntegrity logs in the Event Viewer and verify if any executables related to the app are blocked. If so, you'll need to write a supplemental policy to support the app</li><li> Check the Intune Management Extension logs to see if there was an attempt to install your app</li>|
 | **App has problems when running** | It's possible the app is trying to execute a blocked binary. <br> Check the *AppLocker* and *CodeIntegrity* logs in Event Viewer to see if any executables related to the app are being blocked. If so, you'll need to write a supplemental policy to support the app. |
 | **My supplemental policy hasn't deployed** |<li>Your XML policy is malformed. Double-check to see if all markup is tagged correctly</li><li>Check that your policy was correctly applied.|
 
 ## WDAC Supplemental policy validation
 
-Use the Event Viewer to see if a supplemental policy has deployed correctly. These rules apply to both the policy that allows managed installers and any additional supplemental policies that you deploy.
+Use the Event Viewer to see if a supplemental policy is deployed correctly. These rules apply to both the policy that allows managed installers and any supplemental policies that you deploy.
 
 1. Open the *Event viewer* on a target device
 1. Expand **Applications and Services** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**
@@ -45,11 +45,13 @@ You can also verify that the policy has been activated by running the following 
 
 1. Check for **error events** with code **3077**: and reference [Understanding Application Control event IDs][WIN-1]
 
-:::image type="content" source="images/image9.png" alt-text="Error in the CodeIntegrity operational log":::
+:::image type="content" source="images/troubleshoot-codeintegrity-log.png" alt-text="Error in the CodeIntegrity operational log showing that PowerShell execution is prevented by policy." lightbox="images/troubleshoot-codeintegrity-log.png":::
 
 When checking an error event, you can observe that the information in the *General* tab may show something like the following:
 
->`Code Integrity determined that a process (\Device\HarddiskVolume3\Windows\System32\svchost.exe) attempted to load` **`\Device\HarddiskVolume3\Program Files\Epic Games\Launcher\Portal\SelfUpdateStaging\Install\Portal\Extras\Redist\LauncherPrereqSetup_x64.exe`** `that did not meet the Enterprise signing level requirements or violated code integrity policy Policy ID:`**`{82443e1e-8a39-4b4a-96a8-f40ddc00b9f3}`**`).`
+```
+Code Integrity determined that a process (\Device\HarddiskVolume3\Windows\System32\svchost.exe) attempted to load **\Device\HarddiskVolume3\Windows\System32\WindowsPowerShell\v1.0\powershell.exe** that did not meet the Enterprise signing level requirements or violated code integrity policy (Policy ID:**{82443e1e-8a39-4b4a-96a8-f40ddc00b9f3}**).
+```
 
 The important things to parse here are:
 
@@ -57,17 +59,15 @@ The important things to parse here are:
 - **Error reason**: indicates why this the application was unable to run. `...did not meet the Enterprise signing level requirements or violated code integrity policy` is what should be seen
 - **Policy ID**: is the policy that is being violated, meaning that a rule in this policy is preventing the application from running
 
-> **Note**
->
-> **`{82443e1e-8a39-4b4a-96a8-f40ddc00b9f3}`** is the base policy, which is what restricts most third-party apps from running. If you see another policy ID, it's worth taking note of that.
+> [!NOTE]
+> **{82443e1e-8a39-4b4a-96a8-f40ddc00b9f3}** is the base policy, which is what restricts most third-party apps from running. If you see another policy ID, it's worth taking note of that.
 
 Alternatively you can use `cidiag.exe /stop`, which parses and copies all the relevant events to a text file.
 
 ## AppLocker policy validation
 
-> **Note**
->
-> The validation process described below requires access to PowerShell, which is not available on production devices.
+> [!NOTE]
+> The validation process described below requires access to PowerShell, which is not available on Windows SE devices. The process can be used to validate the policy from non-SE devices.
 
 You can query the existing AppLocker policy via PowerShell running from a device.
 
@@ -80,32 +80,26 @@ get-applockerpolicy -xml -effective
 - For any policies you added to set additional executables you want to be managed installers, look for the rules you defined nested under a RuleCollection section of Type *ManagedInstaller*
 
 You can check the AppLocker service status with the following commands:
+
 ```cmd
 sc.exe query appidsvc
 sc.exe query applockerfltr
 ```
 
-When executing the `sc.exe query` commands, the *STATE* property should show a state of *4 RUNNING* for both services:
+When executing the `sc.exe query` commands, the **STATE** property should show a state of **4 RUNNING** for both services:
 
 :::image type="content" source="images/sc-commands.png" alt-text="Output of the command sc.exe query.":::
 
-## AppLocker - MSI and Script
+### AppLocker event log validation
 
 1. Open the **Event Viewer** on a target device
 1. Expand **Applications and Services** > **Microsoft** > **Windows** > **AppLocker** > **MSI and Script**
-1. Check for **error events** with code *8040*, and reference [Understanding Application Control event IDs][WIN-1]
+1. Check for **error events** with code **8040**, and reference [Understanding Application Control event IDs][WIN-1]
 
 ## Intune Management Extension
 
 - [Collect diagnostics from a Windows device][MEM-1]
 - Logs can be collected from `%programdata%\Microsoft\IntuneManagementExtension\Logs`
-
-## Next steps
-
-Advance to the next article to learn about additional considerations before deploying apps with managed installer.
-
-> [!div class="nextstepaction"]
-> [Next: considerations >](./considerations.md)
 
 [MEM-1]: /mem/intune/remote-actions/collect-diagnostics
 [WIN-1]: /windows/security/threat-protection/windows-defender-application-control/event-id-explanations
