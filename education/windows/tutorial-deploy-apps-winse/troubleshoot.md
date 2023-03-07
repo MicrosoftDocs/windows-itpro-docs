@@ -1,15 +1,15 @@
 ---
-title: Troubleshooting guide when deploying apps with Managed Installer
-description: Troubleshoot common issues when deploying apps with Managed Installer
+title: Troubleshoot app deployment issues in Windows SE
+description: Troubleshoot common issues when deploying apps to Windows SE devices.
 ms.date: 02/24/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
 ---
 
-# Troubleshooting guide when deploying apps with Managed Installer
+# Troubleshoot app deployment issues in Windows SE
 
-The following table lists common problems and options to resolve them:
+The following table lists common app deployment issues on Windows 11 SE, and options to resolve them:
 
 | **Problem** | **Potential solution** |
 |---|---|

@@ -11,7 +11,7 @@ items:
         href: create-policies.md
       - name: Deploy policies
         href: deploy-policies.md
-  - name: Important deployment considerations
+  - name: Important app deployment considerations
     href: considerations.md
-  - name: Troubleshoot
+  - name: Troubleshoot common issues
     href: troubleshoot.md

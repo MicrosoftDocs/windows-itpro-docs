@@ -81,7 +81,7 @@ There are different ways to write a supplemental policy. The suggested method is
 1. Once you have a policy that works for your app, reset the supplemental policy's Base policy to the official Windows 11 SE BasePolicyId. From an elevated PowerShell session, run the following command:
 
     ```PowerShell
-    Set-CiPolicyIdInfo -FilePath "<Path to .xml from step #3>" -SupplementsBasePolicyId "{82443e1e-8a39-4b4a-96a8-f40ddc00b9f3}"
+    Set-CiPolicyIdInfo -FilePath "<Path to .xml from step #4>" -SupplementsBasePolicyId "{82443e1e-8a39-4b4a-96a8-f40ddc00b9f3}"
     ```
 
     > [!NOTE]
