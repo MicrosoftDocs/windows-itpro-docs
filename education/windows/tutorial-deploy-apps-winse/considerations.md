@@ -16,7 +16,7 @@ This article describes additional aspects to consider before deploying apps with
 Autopilot and the Enrollment Status Page are compatible with Windows 11 SE. However, due to the E Mode policy, devices can be blocked from completing enrollment if:
 
 1. You have the enrollment status page to block device use until required apps are installed.
-1. You are deploying an app that is blocked by the existing E Mode policy, not installable via a managed installer (without additional policies), and not allowed by any supplemental policies or AppLocker policies. 
+1. You are deploying an app that is blocked by the existing E Mode policy, not installable via a managed installer (without additional policies), and not allowed by any supplemental policies or AppLocker policies.
 An example of this is if you deployed an app via the Store for Education, but have not written a supplemental policy to allow that app's PackageFamilyName.
 In summary, if you choose to block device use on the installation of apps, you must ensure that apps are also not blocked from installation.
 
@@ -51,6 +51,4 @@ For more information, see [here][WIN-1]
 
 [MEM-1]: /mem/autopilot/windows-autopilot
 [MEM-2]: /mem/autopilot/enrollment-status
-[MEM-3]: /mem/intune/apps/apps-windows-10-app-deploy
-
 [WIN-1]: /windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker
