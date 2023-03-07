@@ -32,7 +32,7 @@ Policies can be deployed via Intune using a custom OMA-URI.
 
 For information how to validate and troubleshoot WDAC supplemental policies, see [WDAC supplemental policy validation](./troubleshoot.md#wdac-supplemental-policy-validation)
 
-### Deploy AppLocker policies
+## Deploy AppLocker policies
 
 Intune doesn't currently offer the option to modify AppLocker policies. The deployment of AppLocker policies can be done using PowerShell scripts deployed via Intune.
 
@@ -56,7 +56,7 @@ Once finished, you can deploy the script via Intune. For more information, see [
 
 ### Troubleshoot AppLocker policies
 
-For information how to validate and troubleshoot AppLocker policies, see [WDAC supplemental policy validation](./troubleshoot.md#applocker---msi-and-script)
+For information how to validate and troubleshoot AppLocker policies, see [AppLocker policy validation](./troubleshoot.md#applocker-policy-validation)
 
 ## Next steps
 

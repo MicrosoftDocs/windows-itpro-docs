@@ -11,7 +11,7 @@ items:
         href: create-policies.md
       - name: Deploy policies
         href: deploy-policies.md
-  - name: Considerations for your tenant
+  - name: Important deployment considerations
     href: considerations.md
   - name: Troubleshoot and get help
     href: troubleshoot.md

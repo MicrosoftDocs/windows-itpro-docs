@@ -31,6 +31,9 @@ The following table provides an overview of the applications types that can be d
 
 The addition of Win32 applications to Intune consists of repackaging the apps and defining the commands to silently install them. The process is described in the article [Add, assign, and monitor a Win32 app in Microsoft Intune][MEM-1].
 
+> [!IMPORTANT]
+> If you have Windows 11 SE devices that already have apps deployed through Intune, the apps will not get retroactively tagged with the *managed installer* mark. The reason is to avoid making any security assumptions for these apps. You may need to redeploy the apps through Intune to get them properly tagged with managed installer and allowed to run.
+
 There are known limitations that might prevent applications to install or execute. For more information, see the next section [validate applications](validate-apps.md).
 
 ## UWP apps

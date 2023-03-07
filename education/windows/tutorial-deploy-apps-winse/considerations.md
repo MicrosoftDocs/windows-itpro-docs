@@ -1,54 +1,53 @@
 ---
-title: Additional considerations before deploying apps with managed installer
-description: Learn about additional aspects to consider before deploying apps with managed installer.
-ms.date: 02/24/2023
+title: Important considerations before deploying apps with managed installer
+description: Learn about important aspects to consider before deploying apps with managed installer.
+ms.date: 03/07/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
 ---
 
-# Additional considerations before deploying apps with Managed Installer
+# Important considerations before deploying apps with Managed Installer
 
-This article describes additional aspects to consider before deploying apps with managed installer.
-
-## Autopilot and Enrollment Status Page
-
-Autopilot and the Enrollment Status Page are compatible with Windows 11 SE. However, due to the E Mode policy, devices can be blocked from completing enrollment if:
-
-1. You have the enrollment status page to block device use until required apps are installed.
-1. You are deploying an app that is blocked by the existing E Mode policy, not installable via a managed installer (without additional policies), and not allowed by any supplemental policies or AppLocker policies.
-An example of this is if you deployed an app via the Store for Education, but have not written a supplemental policy to allow that app's PackageFamilyName.
-In summary, if you choose to block device use on the installation of apps, you must ensure that apps are also not blocked from installation.
-
-:::image type="content" source="./images/autopilot.png" alt-text="Autopilot showing an error in OOBE on Windows 11 SE." border="false":::
-
-### ESP mitigations
-
-To ensure that you don't run into installation or enrollment blocks, you can do the following in accordance with your internal policies:
-
-1. Ensure that all apps are unblocked from installation. Apps must be compatible with the Windows 11 SE managed installer flow, and if they are not compatible out-of-box, they either have a supplemental policy or AppLocker policy written for them.
-If you need help writing a policy, see <section>.
-2. Do not deploy apps that you have not validated. See here for more information.
-3. Set your Enrollment Status Page configuration to not block device use based on required apps.
-
-To learn more about Windows Autopilot, see [Overview of Windows Autopilot][MEM-1].
-To learn more about the Enrollment Status Page, [Windows Autopilot Enrollment Status Page][MEM-2].
+This article describes important aspects to consider before deploying apps with managed installer.
 
 ## Existing apps deployed in Intune
 
-If you have Windows 11 SE devices that already have apps deployed through Intune, these apps will not get retroactively tagged with the *managed installer* mark. The reason is to avoid making any security assumptions for these apps. You may need to redeploy the apps through Intune to get them properly tagged with managed installer and allowed to run.
+If you have Windows 11 SE devices that already have apps deployed through Intune, the apps won't get retroactively tagged with the *managed installer* mark. The reason is to avoid making any security assumptions for these apps. You may need to redeploy the apps through Intune to get them properly tagged with managed installer and allowed to run.
+
+## Enrollment Status Page
+
+The Enrollment Status Page (ESP) is compatible with Windows 11 SE. However, due to the E Mode policy, devices can be blocked from completing enrollment if:
+
+1. You have the ESP configured to block device use until required apps are installed, and
+2. You deploy an app that is blocked by the E Mode policy, not installable via a managed installer (without more policies), and not allowed by any supplemental policies or AppLocker policies
+
+For example, if you deploy a UWP LOB app but have deployed a supplemental policy to allow the app, ESP will fail.
+
+If you choose to block device use on the installation of apps, you must ensure that apps are also not blocked from installation.
+
+:::image type="content" source="./images/esp-error.png" alt-text="Enrollment Status Page showing an error in OOBE on Windows 11 SE." border="false":::
+
+### ESP errors mitigation
+
+To ensure that you don't run into installation or enrollment blocks, you can pick one of the following options, in accordance with your internal policies:
+
+1. Ensure that all apps are unblocked from installation. Apps must be compatible with the Windows 11 SE managed installer flow, and if they aren't compatible out-of-box, they either have the correspondent supplemental policy or AppLocker policy to allow them
+2. Don't deploy apps that you haven't validated
+3. Set your Enrollment Status Page configuration to not block device use based on required apps
+
+To learn more about the ESP, see [Set up the Enrollment Status Page][MEM-1].
 
 ## Potential impact to events collected by Log Analytics integrations
 
-Log Analytics is a tool in the Azure Portal used to collect data from AppLocker policy events. Windows 11 SE device enrolled in an Intune Education tenant will automatically receive an AppLocker policy. The result is an increase in events generated by the AppLocker policy.
+Log Analytics is a cloud service that can be used to collect data from AppLocker policy events. Windows 11 SE device enrolled in an Intune Education tenant will automatically receive an AppLocker policy. The result is an increase in events generated by the AppLocker policy.
 
 If your organization is using Log Analytics, it's recommended to review your Log Analytics setup to:
 
-- Ensure there is an appropriate data collection cap in place to avoid unexpected billing costs
-- Turn off the collection of AppLocker events in Log Analytics (Error, Warning, Information) with the exception of MSI and Script logs
+- Ensure there's an appropriate data collection cap in place to avoid unexpected billing costs
+- Turn off the collection of AppLocker events in Log Analytics (Error, Warning, Information) except for MSI and Script logs
 
-For more information, see [here][WIN-1]
+For more information, see [Use Event Viewer with AppLocker][WIN-1]
 
-[MEM-1]: /mem/autopilot/windows-autopilot
-[MEM-2]: /mem/autopilot/enrollment-status
+[MEM-1]: /mem/intune/enrollment/windows-enrollment-status
 [WIN-1]: /windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker
