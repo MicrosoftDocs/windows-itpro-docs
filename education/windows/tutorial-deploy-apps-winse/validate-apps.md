@@ -33,7 +33,7 @@ Application installation depends on two factors:
 > [!IMPORTANT]
 > The Intune management extension agent checks every hour (or on service or device restart) for any new Win32 app assignments.
 
-If the E-mode policy doesn't block the application that you're trying to deploy, the process to deploy the app to Windows SE devices should be consistent with non-SE devices.
+If the E Mode policy doesn't block the application that you're trying to deploy, the process to deploy the app to Windows SE devices should be consistent with non-SE devices.
 
 ## Check for installation
 

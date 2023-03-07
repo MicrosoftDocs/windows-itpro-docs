@@ -1,7 +1,7 @@
 ---
 title: Create policies to enable applications
 description: Learn how to create policies to enable the installation and execution of apps on Windows SE.
-ms.date: 03/06/2023
+ms.date: 03/07/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
@@ -17,8 +17,8 @@ The following table details the two policy types to allow apps to run:
 
 | **Policy type** | **How it works** | **When should I use this policy?** | **Security risk** |
 |---|---|---|---|
-| WDAC supplemental policy | Allows apps meeting the rule criteria to run | For executables that are blocked by the E-Mode policy. The blocked executables are visible from the Event Viewer in the [CodeIntegrity events](./troubleshoot.md) | Low |
-| AppLocker policy | Sets an app to be considered as a managed installer | Only for executables that do installations or updates which are blocked by the E-Mode policy | High |
+| WDAC supplemental policy | Allows apps meeting the rule criteria to run | For executables that the E Mode policy blocks. The blocked executables are visible from the Event Viewer in the [CodeIntegrity events](./troubleshoot.md) | Low |
+| AppLocker policy | Sets an app to be considered as a managed installer | Only for executables that do installations or updates, that the E Mode policy blocks. | High |
 
 > [!NOTE]
 > The specifics of the policy you will need to create vary from app to app. Public documentation can help you determine which rules would be useful for your app.
@@ -29,17 +29,21 @@ You can create WDAC supplemental policies and then deploy them through Intune.
 
 To allow apps to install and run, you must write *supplemental policies* targeting the correct base policy. The base policy that you must target has a PolicyID of `{82443E1E-8A39-4B4A-96A8-F40DDC00B9F3}`.
 
+In the following video, Jeffrey Sutherland provides an overview and explains how to create supplemental policies for apps blocked by the E Mode policy.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWReO]
+
 ### Create a supplemental policy for Win32 apps
 
-There are different ways to write a supplemental policy. The suggested method is to use [audit events][WIN-3], as they allow to observe the actions that would be blocked by Windows 11 SE. From the audit events, you can create a policy to allow those actions.
+There are different ways to write a supplemental policy. The suggested method is to use [audit events][WIN-3], as they list the actions that Windows 11 SE would block. From the audit events, you can create a policy to allow those actions.
 
 1. On a **non-Windows SE device**, download, install, and launch the [WDAC Policy Wizard][EXT-1]
-1. Apply an audit mode WDAC Base policy. The WDAC Wizard includes a template policy called *WinSEPolicy.xml* which is based on the **Windows 11 SE E-mode** policy:
-   - Open the **WDAC Wizard** and select **Policy Editor**
-   - In the Policy Path to Edit field, browse for *%ProgramFiles%\WindowsApps\Microsoft.WDAC\** and select the file called *WinSEPolicy.xml*. Select **Next**
+1. Apply an audit mode WDAC Base policy. The WDAC Wizard includes a template policy called *WinSEPolicy.xml*, which is based on the E Mode policy:
+    - Open the **WDAC Wizard** and select **Policy Editor**
+    - In the Policy Path to Edit field, browse for *%ProgramFiles%\WindowsApps\Microsoft.WDAC\** and select the file called *WinSEPolicy.xml*. Select **Next**
       :::image type="content" source="images/wdac-winsepolicy.png" alt-text="WDAC wizard - creation of a policy targeting the base WinSEPolicy.xml policy":::
-   - Toggle the option for **Audit Mode** and complete the Wizard. Note the location of the .cip and .xml files shown on the final page of the wizard
-   - From an elevated PowerShell session, run the following command to activate the policy:
+    - Toggle the option for **Audit Mode** and complete the wizard. Note the location of the *.cip* and *.xml* files shown on the final page of the wizard
+    - From an elevated PowerShell session, run the following command to activate the policy:
      ```cmd
      citool.exe -up <"Path to the .cip file">
      ```
@@ -51,72 +55,53 @@ There are different ways to write a supplemental policy. The suggested method is
    - Open the **WDAC Wizard** and select **Policy Editor**
    - Select **Convert Event Log to a WDAC Policy** then select **Parse Event Log** to parse from the system Event Viewer. Select **Next**
    - Review each row in the table and choose the type of rule to create. You may want to sort the table by FileName to group duplicate rows together. You need to create a single rule if the values are duplicates
-   - Complete the wizard to generate the policy. This will be a *Base* policy. Note the location of the .xml shown, as you will use this in the next step.
+   - Complete the wizard to generate the policy. The policy will be a *Base* policy. Note the location of the *.xml* shown, as you'll use it in the next step.
    - Check the event log **AppLocker** > **MSI and Script** for any events
-       - If any events are shown, you can use the **WDAC Wizard** to edit the policy and add additional rules
+       - If any events are shown, you can use the **WDAC Wizard** to edit the policy and add more rules
        - Alternatively, you can save all events to *.evtx* file and create a policy from audit events, but browse for the saved *.evtx* file rather than parsing events from the system Event Viewer
-4. Convert the policy created in the previous step to a supplemental policy, specifying the E mode audit policy you created in the first step as its *base*.
-
+4. Convert the policy created in the previous step to a supplemental policy, specifying the E Mode audit policy you created in the first step as its *base*.
    ```PowerShell
-   Set-CiPolicyIdInfo -FilePath "<Path to.xml file from step #4>" -BasePolicyToSupplementPath "<Path to the E-Mode .xml created from step #2>"
+   Set-CiPolicyIdInfo -FilePath "<Path to.xml file from step #4>" -BasePolicyToSupplementPath "<Path to the E Mode .xml created from step #2>"
    ```
-
 5. From an elevated PowerShell session, run the following command to activate the policy:
-
    ```cmd
    citool.exe -up '<Path to the .cip file>'
    ```
-
 6. Clear the two event logs:
     - **CodeIntegrity** > **Operational**
     - **AppLocker** > **MSI and Script**
 7. Repeat the app testing from step 3. Repeat these steps as needed until no further events are generated.
 8. Once you have a policy that works for your app, reset the supplemental policy's Base policy to the official Windows 11 SE BasePolicyId. From an elevated PowerShell session, run the following command:
-
     ```PowerShell
     Set-CiPolicyIdInfo -FilePath "<Path to .xml from step #3>" -SupplementsBasePolicyId "{82443E1E-8A39-4B4A-96A8-F40DDC00B9F3}"
     ```
-
     > [!NOTE]
     > If you have created multiple supplemental policies for different apps, it's recommended to merge all supplemental policies together before deploying. You can merge policies using the WDAC Wizard.
-
 9. The creation of the supplemental policy is complete. You must sign and deploy the policy to your devices to take effect.
-
-In the following video, Jeffrey Sutherland explains how to create a supplemental policy for an app that is blocked by the Windows 11 SE E-Mode policy.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWReO]
-
-For additional information:
-
-- Policy creation: [Policy creation for common WDAC usage scenarios (Windows) - Windows security | Microsoft Docs][WIN-1]
-- Supplemental Policy creation: [Creating a new Supplemental Policy with the Wizard][WIN-2]
-- [WDAC Policy Wizard][EXT-1]
 
 ### Create a supplemental policy for UWP LOB apps
 
-UWP apps don't work out-of-box due to the Windows 11 SE E-Mode policy. You can create and deploy a supplemental policy using these steps:
+UWP apps don't work out-of-box due to the Windows 11 SE E Mode policy. You can create and deploy a supplemental policy using these steps:
 
 1. On a **non-Windows SE device**, download, install, and launch the [WDAC Policy Wizard][EXT-1]
 1. Open the **WDAC Wizard** and select **Policy Creator > Supplemental policy**
-  - Choose a **Policy Name** and **Policy File Location**
-  - In the **Base Policy** path to, browse for *%ProgramFiles%\WindowsApps\Microsoft.WDAC\** and select the file called *WinSEPolicy.xml*. Select **Next**
-  - In **Policy Rules**, select **Next**
-  - In **Signing Rules**, select **Add Custom Rule** and choose:
-    - **Rule scope**: **Usermode Rule**
-    - **Rule action**: **Allow**
-    - **Rule type**: **Packaged App**
-    - **Package Name**: specify the package name of app. If the app is installed, you can search by name. If the app is not installed, check the *Use Custom Package Family* box and specify the package family name of the app
-      :::image type="content" source="images/wdac-uwp-policy.png" alt-text="WDAC wizard - selection of an installed UWP app package.":::
-  - Select the app name
-  - Select **Create Rule**
-  - Select **Next**
-1. The policy should be created and output a *.xml* and *.cip* files to the policy file location specified earlier
-1. The policy is not yet targeting the right *base policy*. Run the following PowerShell command to set the base policy to the Windows 11 SE E-Mode policy:
-
-     ```PowerShell
-     Set-CiPolicyIdInfo -FilePath "<Path to.xml file from previous step>" -SupplementsBasePolicyId "{82443E1E-8A39-4B4A-96A8-F40DDC00B9F3}"
-     ```
-
+    - Choose a **Policy Name** and **Policy File Location**
+    - In the **Base Policy** path to, browse for *%ProgramFiles%\WindowsApps\Microsoft.WDAC\** and select the     file called *WinSEPolicy.xml*. Select **Next**
+    - In **Policy Rules**, select **Next**
+    - In **Signing Rules**, select **Add Custom Rule** and choose:
+      - **Rule scope**: **Usermode Rule**
+      - **Rule action**: **Allow**
+      - **Rule type**: **Packaged App**
+      - **Package Name**: specify the package name of app. If the app is installed, you can search by name. If the app isn't installed, check the *Use Custom Package Family* box and specify the package family name of the app
+        :::image type="content" source="images/wdac-uwp-policy.png" alt-text="WDAC wizard - selection of an installed UWP app package.":::
+    - Select the app name
+    - Select **Create Rule**
+    - Select **Next**
+1. The policy should be created and output an *.xml* and *.cip* files to the policy file location specified earlier
+1. The policy isn't yet targeting the right *base policy*. Run the following PowerShell command to set the base policy to the Windows 11 SE E Mode policy:
+    ```PowerShell
+    Set-CiPolicyIdInfo -FilePath "<Path to.xml file from previous step>" -SupplementsBasePolicyId "{82443E1E-8A39-4B4A-96A8-F40DDC00B9F3}"
+    ```
 1. The creation of the supplemental policy is complete. You must sign and deploy the policy to your devices to take effect.
 
 ### Guidelines for authoring WDAC supplemental policy rules
@@ -129,25 +114,42 @@ Here are some general guidelines to follow when writing WDAC supplemental polici
 > [!NOTE]
   > The *WDAC Wizard* defaults to use all of the properties, if present. In some cases, you may want to combine a subset of the properties to allow multiple files. For example: Publisher + ProductName + Version.
 
-- When a *Publisher* rule is not an option (e.g. when the file is unsigned), use *Hash* as the most restrictive option
+- When a *Publisher* rule isn't an option (for example, when the file is unsigned), use *Hash* as the most restrictive option
 - You might have to opt for a *FileAttribute* rule, but it can be easily spoofed
+
+For additional information:
+
+- [WDAC Policy Wizard][EXT-1]
+- [Policy creation for common WDAC usage scenarios][WIN-1]
+- [Create a new supplemental policy with the wizard][WIN-2]
 
 ## AppLocker policies
 
 > [!WARNING]
 > It's recommended to use AppLocker policies for processes that perform **updates** or **install as managed installers** only. The preferred method to allow incompatible applications or other executables to run, is to write **WDAC supplemental policies** instead of modifying AppLocker policies.
 
-Additional AppLocker policies work by setting other apps to be managed installers.
+Additional AppLocker policies work by configuring other apps to be *managed installers*. However, since anything downloaded or installed by a managed installer is trusted to run, it creates a significant security risk. For example, if the executable for a third-party browser is set as a managed installer, anything downloaded from that browser will be allowed to run.\
+Using a WDAC supplemental policy instead, allows you to have more control over what is allowed to run without the risk of those permissions propagating unintentionally.
 
-However, since anything downloaded or installed by a managed installer is trusted to run, this creates a significant risk for security. For example, if the executable for a third-party browser (e.g. Chrome or Firefox) is set as a managed installer, anything downloaded from that third-party browser will be allowed to run.\
-Using a WDAC supplemental policy instead allows you to have more control over what is allowed to run without the risk of those permissions propagating unintentionally.
-
-If you want to allow apps to run by setting their installers as managed installers, follow the guidance here:
+To allow apps to run by setting their installers as managed installers, follow the guidance here:
 
 - [Edit an AppLocker policy][WIN-5]
 - [Allow apps deployed with a WDAC managed installer][WIN-6]
 
 ## Next steps
+
+Before moving on to the next section, ensure that you've completed the following tasks.
+
+For a WDAC supplemental policy:
+
+> [!div class="checklist"]
+> - Create a policy, targeting  the base policy: **82443e1e-8a39-4b4a-96a8-f40ddc00b9f3**
+
+For an AppLocker policy:
+
+> [!div class="checklist"]
+> - Only applied to an updater or installer
+> - Created the policy with the **Merge** option
 
 Advance to the next article to learn how to deploy the WDAC supplemental policies or AppLocker policies to Windows 11 SE devices.
 
