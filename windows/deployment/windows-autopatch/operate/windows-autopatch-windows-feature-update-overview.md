@@ -68,6 +68,24 @@ You can test Windows 11 deployments by adding devices either through direct memb
 > [!IMPORTANT]
 > Windows Autopatch neither applies its deployment ring distribution, nor configures the [Windows Update for Business gradual rollout settings](/mem/intune/protect/windows-update-rollout-options) in the **Modern Workplace DSS Policy [Windows 11]** policy.<p>Once devices are added to the **Modern Workplace - Windows 11 Pre-Release Test Devices** Azure AD group, the devices can be offered the Windows 11 22H2 feature update at the same time.</p>
 
+## Windows continuous innovation settings
+Beginning with Windows 11, version 22H2, new features and enhancements are delivered more frequently using servicing technology. While the goal for this continuous innovation is to bring you new value on a more frequent basis, we understand the need for stability and control. Features that may be disruptive to organizations will be off by default for all Windows update managed devices until the device enables the policy or takes the next annual feature update. 
+  
+For organizations, we aspire to provide control for features that:
+ -Add new experiences or user interfaces to Windows, especially for any primary control surfaces (such as the taskbar and start menu)
+ -Are new in-box applications
+ -Remove existing capabilities
+ -Override previously configured settings (set by either IT or the end user)
+ 
+Not all features shipped via servicing will be controlled. Improvements, such as reductions in file size, performance fixes, and, as usual, any bug fixes, will be introduced in the LCU in an "on" state after being rolled out to unmanaged devices through a controlled feature rollout.
+
+###How to enable 
+Organizations wishing to turn on these features ahead of taking the next annual feature update can do so by enabling the new policy: "Enable features introduced via servicing that are off by default."
+-Group Policy: /Windows Components/Windows Update/Manage end user experience/Enable features introduced via servicing that are off by default
+-Configuration Service Provider (CSP) Policy: /Policy/Config/Update/[AllowTemporaryEnterpriseFeatureControl](https://learn.microsoft.com/windows/client-management/mdm/policy-csp-update)
+  
+For more info, on enabling Windows Continuous Innovation please visit: [Commercial control for continuous innovation](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/commercial-control-for-continuous-innovation/ba-p/3737575) 
+  
 ## Manage Windows feature update deployments
 
 Windows Autopatch uses Microsoft Intune’s built-in solution, which uses configuration service providers (CSPs), for pausing and resuming both [Windows quality](windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release).
