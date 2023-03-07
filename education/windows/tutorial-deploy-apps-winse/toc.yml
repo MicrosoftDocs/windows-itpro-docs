@@ -13,5 +13,5 @@ items:
         href: deploy-policies.md
   - name: Important deployment considerations
     href: considerations.md
-  - name: Troubleshoot and get help
+  - name: Troubleshoot
     href: troubleshoot.md
