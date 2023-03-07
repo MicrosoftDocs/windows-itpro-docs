@@ -76,11 +76,11 @@ For an AppLocker policy:
 >
 > - Policy created in Intune and assigned to the correct groups
 
-Advance to the next article to learn about important considerations for your tenant when deploying apps and policies to Windows SE devices.
+Advance to the next article to learn about important considerations when deploying apps and policies to Windows SE devices.
 
 > [!div class="nextstepaction"]
 >
-> [Considerations for your tenant](considerations.md)
+> [Next: important deployment considerations >](considerations.md)
 
 [MEM-1]: /mem/intune/apps/intune-management-extension
 [WIN-4]: /windows/security/threat-protection/windows-defender-application-control/deployment/deploy-windows-defender-application-control-policies-using-intune
