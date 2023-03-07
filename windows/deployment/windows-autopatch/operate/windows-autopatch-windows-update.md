@@ -1,6 +1,6 @@
 ---
 title: Customize Windows Update settings
-description: This article explains how customize Windows Updates in Windows Autopatch
+description: This article explains how to customize Windows Updates in Windows Autopatch
 ms.date: 03/07/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
@@ -72,7 +72,7 @@ The Scheduled install cadence has two options:
 | Option | Description |
 | ----- | ----- |
 | Active hours | The period (daily) that the user normally does their work, or the device is busy performing business critical actions.<p>The time outside of active hours is when the device is available for Windows to perform an update and restart the device (daily). The max range for Active hours is 18 hours. The six-hour period outside of the active hours is the deployment period, when Windows Update for Business will scan, install and restart the device.</p>
-| Schedule install and restart | Use this option to prevent the service from installing Windows Updates except during the specified start time. You can specify the following occurrence options:<ul><li>Weekly</li><li>Bi-weekly</li><li>Monthly</li></ul><p>Select a time when the device has low activity for the updates to complete.Ensure that the Windows Update has three to four hours to complete the installation and restart the device.</p> |
+| Schedule install and restart | Use this option to prevent the service from installing Windows Updates except during the specified start time. You can specify the following occurrence options:<ul><li>Weekly</li><li>Bi-weekly</li><li>Monthly</li></ul><p>Select a time when the device has low activity for the updates to complete. Ensure that the Windows Update has three to four hours to complete the installation and restart the device.</p> |
 
 > [!NOTE]
 > Changes made in one deployment ring won't impact other rings in your tenant.<p>Configured **Active hours** and **Scheduled install and restart** options will apply to bother Windows quality updates and Windows feature updates.</p>
