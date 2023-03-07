@@ -17,7 +17,7 @@ This article describes how to sign WDAC policies and how to deploy WDAC and AppL
 ## Sign WDAC supplemental policies
 
 > [!IMPORTANT]
-> *This section will be updated when the process using Azure CodeSigning for CI policy is released in April.
+> *This section will be updated when the process using Azure CodeSigning for CI policy is released in April.*
 
 ## Deploy WDAC supplemental policies
 
@@ -31,7 +31,6 @@ Policies can be deployed via Intune using a custom OMA-URI.
 ### Troubleshoot WDAC policies
 
 For information how to validate and troubleshoot WDAC supplemental policies, see [WDAC supplemental policy validation](./troubleshoot.md#wdac-supplemental-policy-validation)
-
 
 ### Deploy AppLocker policies
 
@@ -50,8 +49,7 @@ function MergeAppLockerPolicy([string]$policyXml)
 }
 ```
 
-> **Warning**
->
+> [!WARNING]
 > Intune deploys a script with the AppLocker policy to set **Intune Management Extension as a managed installer** on all Windows 11 SE devices enrolled into an Intune EDU tenant. If you want to deploy your own AppLocker policy to set another Managed Installer (in addition to Intune), be sure to use the `-Merge` parameter with `Set-AppLockerPolicy`. The `-Merge` parameter ensures that your policy plays well with Intune's AppLocker policy. Without using the `-Merge` parameter, it will result in issues with apps not getting tagged properly and their ability to run on impacted devices. To learn more about AppLocker Merge policy, see [Merge AppLocker policies][WIN-7].
 
 Once finished, you can deploy the script via Intune. For more information, see [Add PowerShell scripts to Windows devices in Microsoft Intune][MEM-1].
@@ -67,6 +65,7 @@ Before moving on to the next section, ensure that you've completed the following
 For a WDAC supplemental policy:
 
 > [!div class="checklist"]
+>
 > - Signed .cip .p7b file with Device Guard
 > - Policy created in Intune and assigned to the correct groups
 > - Policy applied in Event Viewer
@@ -74,9 +73,15 @@ For a WDAC supplemental policy:
 For an AppLocker policy:
 
 > [!div class="checklist"]
+>
 > - Policy created in Intune and assigned to the correct groups
 
 Advance to the next article to learn about important considerations for your tenant when deploying apps and policies to Windows SE devices.
 
 > [!div class="nextstepaction"]
+>
 > - [Considerations for your tenant](considerations.md)
+
+[MEM-1]: /mem/intune/apps/intune-management-extension
+[WIN-4]: /windows/security/threat-protection/windows-defender-application-control/deployment/deploy-windows-defender-application-control-policies-using-intune
+[WIN-7]: /windows/security/threat-protection/windows-defender-application-control/applocker/merge-applocker-policies-by-using-set-applockerpolicy
