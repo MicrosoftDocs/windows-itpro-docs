@@ -74,7 +74,7 @@ Create a configuration profile that will set the required policies for Windows U
 1. You're now on the Configuration profile creation screen. On the **Basics** tab, provide a **Name** and **Description**.
 1. On the **Configuration settings** page, you'll be adding multiple OMA-URI Settings that correspond to the policies described in [Manually configuring devices for Windows Update for Business reports](wufb-reports-configuration-manual.md).
 
-   **Required settings**:
+   **Required settings**: 
 
     1. Add a setting configuring the **Windows Diagnostic Data level** for devices:
         - **Name**: Allow Telemetry
