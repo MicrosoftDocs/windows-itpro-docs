@@ -318,6 +318,6 @@ For 4624(S): An account was successfully logged on.
 
     - If the **Authentication Package** is NTLM. In this case, monitor for **Key Length** not equal to 128, because all Windows operating systems starting with Windows 2000 support 128-bit Key Length.
 
-- If you monitor for potentially malicious software, or software that is not authorized to request logon actions, monitor this event for **Process Name**.
+- If you monitor for potentially malicious software, or software that isn't authorized to request logon actions, monitor this event for **Process Name**.
 
-- If you have a trusted logon processes list, monitor for a **Logon Process** that is not from the list.
+- If you have a trusted logon processes list, monitor for a **Logon Process** that isn't from the list.
