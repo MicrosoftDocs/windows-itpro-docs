@@ -98,6 +98,8 @@ There are five IDs that the device provisioning script takes as input in order t
 | Customer key | The unique alphanumeric ID that provides secure authentication of the cache node to Delivery Optimization services. |
 | Registration key | Single use device registration key used by Microsoft Delivery Optimization services. |
 
+#### Provision your server
+
 :::image type="content" source="images/mcc-isp-deploy-cache-node-numbered.png" alt-text="Screenshot of the server provisioning tab within cache node configuration in Azure portal.":::
 
 1. After completing cache node provisioning, navigate to the **Server provisioning** tab. Select **Download provisioning package** to download the installation package to your server.  
