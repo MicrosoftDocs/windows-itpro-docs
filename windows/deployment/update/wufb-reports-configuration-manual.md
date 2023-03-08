@@ -41,7 +41,7 @@ Each MDM Policy links to its documentation in the configuration service provider
 |**System/**[**AllowTelemetry**](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) |Integer | 1 - Basic |Configures the maximum allowed diagnostic data to be sent to Microsoft. Individual users can still set this value lower than what the policy defines. For more information, see the following policy. | Required |
 |**System/**[**ConfigureTelemetryOptInSettingsUx**](/windows/client-management/mdm/policy-csp-system#system-configuretelemetryoptinsettingsux) |Integer |1 - Disable Telemetry opt-in Settings | Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy or the effective diagnostic data level on devices might not be sufficient. | Recommended |
 |**System/**[**AllowDeviceNameInDiagnosticData**](/windows/client-management/mdm/policy-csp-system#system-allowdevicenameindiagnosticdata) |Integer | 1 - Allowed | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or set to 0 (Disabled), Device Name won't be sent and won't be visible in Windows Update for Business reports, showing `#` instead. | Recommended |
-| **System/**[**ConfigureTelemetryOptInChangeNotification**](/windows/client-management/mdm/policy-csp-system#configuretelemetryoptinchangenotification) | Integer | 1 - Disabled |  Disables user notifications that appears for changes to the diagnostic data level. | Recommended |
+| **System/**[**ConfigureTelemetryOptInChangeNotification**](/windows/client-management/mdm/policy-csp-system#configuretelemetryoptinchangenotification) | Integer | 1 - Disabled |  Disables user notifications that appear for changes to the diagnostic data level. | Recommended |
 
 ### Group policies
 
@@ -50,9 +50,9 @@ All Group policies that need to be configured for Windows Update for Business re
 | Policy | Value | Function | Required or recommended|
 |---|---|---|---|
 |**Allow Diagnostic Data** | Send required diagnostic data (minimum)  | Configures the maximum allowed diagnostic data to be sent to Microsoft. Individual users can still set this value lower than what the policy defines. For more information, see the **Configure diagnostic data opt-in setting user interface**. | Required |
-|**Configure diagnostic data opt-in setting user interface** |  Disable diagnostic data opt-in settings | Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy, otherwise the effective diagnostic data level on devices might not be sufficient. | Recommended |
+|**Configure diagnostic data opt-in setting user interface** |  Disable diagnostic data opt in settings | Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy, otherwise the effective diagnostic data level on devices might not be sufficient. | Recommended |
 |**Allow device name to be sent in Windows diagnostic data** | Enabled | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or Disabled, Device Name won't be sent and won't be visible in Windows Update for Business reports, showing `#` instead. | Recommended |
-|**Configure diagnostic data opt-in change notifications** |  Disable diagnostic data change notifications |  Disables user notifications that appears for changes to the diagnostic data level. | Recommended |
+|**Configure diagnostic data opt-in change notifications** |  Disable diagnostic data change notifications |  Disables user notifications that appear for changes to the diagnostic data level. | Recommended |
 
 ## Required endpoints
 

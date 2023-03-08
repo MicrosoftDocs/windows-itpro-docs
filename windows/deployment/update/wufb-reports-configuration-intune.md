@@ -43,18 +43,18 @@ Create a configuration profile that will set the required policies for Windows U
 1. Add the following required settings and values the **System** category:
    - **Setting**: Allow Telemetry
       - **Value**: Basic
-        -  Basic is the minimum value, but it can be safely set to a higher values. Basic is also known as required diagnostic data.
+        -  Basic is the minimum value, but it can be safely set to a higher value. Basic is also known as required diagnostic data.
 
 1. Add the following recommended settings and values from the **System** category:
    > [!Note]
    > These settings aren't required, but they're recommended to ensure that users of the device cannot override the diagnostic data level of the device.
    - **Setting**: Configure Telemetry Opt In Settings Ux
       - **Value**: Disabled
-        -  By turning this setting on you are disabling the ability for a user to potentially override the diagnostic data level of devices such that data won't be available for those devices in Windows Update for Business reports
+        -  By turning this setting on, you're disabling the ability for a user to potentially override the diagnostic data level of devices such that data won't be available for those devices in Windows Update for Business reports
 
    - **Setting**: Configure Telemetry Opt In Change Notification
         - **Value**: Disabled
-          -  By turning this setting on you are disabling notifications of diagnostic data changes
+          -  By turning this setting on, you're disabling notifications of diagnostic data changes
           
     - **Setting**: Allow device name to be sent in Windows diagnostic data
         - **Value**: Allowed
