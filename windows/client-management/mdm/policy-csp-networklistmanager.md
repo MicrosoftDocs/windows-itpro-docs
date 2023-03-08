@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowedTlsAuthenticationEndpoints-Description-Begin -->
 <!-- Description-Source-DDF -->
-List of URLs (seperated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
+List of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
 <!-- AllowedTlsAuthenticationEndpoints-Description-End -->
 
 <!-- AllowedTlsAuthenticationEndpoints-Editable-Begin -->
