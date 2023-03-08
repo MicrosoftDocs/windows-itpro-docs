@@ -1,7 +1,7 @@
 ---
 title: Customize Windows Update settings
 description: This article explains how to customize Windows Updates in Windows Autopatch
-ms.date: 03/07/2023
+ms.date: 03/08/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
