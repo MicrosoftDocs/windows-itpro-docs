@@ -18,6 +18,20 @@ This article lists new and updated feature releases, and service releases, with 
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
 
+## March 2023
+
+### March feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) | New [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) feature. This feature is in public preview. |
+
+### March service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC524715](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Public preview - Customize Windows Update settings |
+
 ## February 2023
 
 ### February feature releases or updates
