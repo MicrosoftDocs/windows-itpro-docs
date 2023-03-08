@@ -3252,7 +3252,7 @@ Enabling this policy for EDU devices that remain on Carts overnight will skip po
 
 <!-- SetEDURestart-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Enabling this policy will restrict updates to download and install outside of Active Hours. Updates will be allowed to start even if there is a logged on user or device is on battery power as long as there is more than 70% battery capacity. Windows will schedule the device to wake from sleep 1 hour after the [ActiveHoursEnd](#activehoursend) time with a 60 minute random delay. Devices will reboot immediately after the updates are installed. If there are still pending updates, the device will continue to retry every hour for 4 hours.
+Enabling this policy will restrict updates to download and install outside of Active Hours. Updates will be allowed to start even if there is a signed-in user or the device is on battery power, providing there is more than 70% battery capacity. Windows will schedule the device to wake from sleep 1 hour after the [ActiveHoursEnd](#activehoursend) time with a 60-minute random delay. Devices will reboot immediately after the updates are installed. If there are still pending updates, the device will continue to retry every hour for 4 hours.
 
 The following rules are followed regarding battery power:
 - Above 70% - allowed to start work;
