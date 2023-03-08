@@ -175,46 +175,62 @@ Subject:
  Logon ID:  0x3E6
 ```
 
-After the event, one more event ID is generated:
+After event 4716, you may see either event 4724 or event 4742 or both:
 
 ```
 Log Name:      Security
 Source:        Microsoft-Windows-Security-Auditing
 Date:          <time>
 Event ID:      4724
+Task Category: User Account Management
+Level:         Information
+Keywords:      Audit Success
+User:          N/A
+Computer:      <FQDN>
+Description:
+An attempt was made to reset an account's password.
+
+Subject:
+	Security ID:		ANONYMOUS LOGON
+	Account Name:		ANONYMOUS LOGON
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E6
+
+Target Account:
+	Security ID:		CONTOSO\CONTOSOPEERTREE$     //OBJECT representing the TRUST object
+	Account Name:		CONTOSOPEERTREE$
+	Account Domain:		CONTOSO
+```
+
+```
+Log Name:      Security
+Source:        Microsoft-Windows-Security-Auditing
+Date:          <time>
+Event ID:      4742
 Task Category: Computer Account Management
 Level:         Information
 Keywords:      Audit Success
 User:          N/A
-Computer:      <fqdn>
+Computer:      <FQDN>
 Description:
 A computer account was changed.
+
 Subject:
- Security ID:  ANONYMOUS LOGON
- Account Name:  ANONYMOUS LOGON
- Account Domain:  NT AUTHORITY
- Logon ID:  0x3E6
+	Security ID:		ANONYMOUS LOGON
+	Account Name:		ANONYMOUS LOGON
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E6
+
 Computer Account That Was Changed:
- Security ID:  CONTOSO\CONTOSOPEERTREE$     //OBJECT representing the TRUST object
- Account Name:  CONTOSOPEERTREE$
- Account Domain:  CONTOSO
- Password Last Set: 10/9/2019 12:02:08 PM
- 
-Log Name:      Security
-Source:        Microsoft-Windows-Security-Auditing
-Date:          10/1/2019 4:02:43 PM
-Event ID:      4716
-Task Category: Authentication Policy Change
-Level:         Information
-Keywords:      Audit Success
-User:          N/A
-Computer:      W-REDAD-P01.red.lhgroup.de
-Description:
-Trusted domain information was modified.
- 
-Subject:
-                    Security ID:       S-1-5-21-1313371058-2156521407-1595812000-1103        //Shows the respective domain Sid
-                    Account Name:      U806391a                                              //Users who has modified the attribute.
-                    Account Domain:    RED
-                    Logon ID:          0x16049916
+	Security ID:		CONTOSO\CONTOSOPEERTREE$
+	Account Name:		CONTOSOPEERTREE$
+	Account Domain:		CONTOSO
+
+Changed Attributes:
+	...
+	Password Last Set:	<time>
+	...
+
+Additional Information:
+	Privileges:		-
 ```
