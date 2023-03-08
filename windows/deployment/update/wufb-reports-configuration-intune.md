@@ -35,7 +35,7 @@ Create a configuration profile that will set the required policies for Windows U
 
 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Windows** > **Configuration profiles**.
 1. On the **Configuration profiles** view, select **Create profile**.
-1. Select the following options, then select **Create**:
+1. Select the following options, then select **Create** when you're done:
    - **Platform**: Windows 10 and later
    - **Profile type**: Settings Catalog
 1. You're now on the Configuration profile creation page. On the **Basics** tab, provide a **Name** and **Description** for the profile.
@@ -67,9 +67,11 @@ Create a configuration profile that will set the required policies for Windows U
 
 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Windows** > **Configuration profiles**.
 1. On the **Configuration profiles** view, select **Create profile**.
-1. Select **Platform**="Windows 10 and later" and **Profile type**="Templates".
-1. For **Template name**, select **Custom**, and then select **Create**.
-1. You're now on the Configuration profile creation screen. On the **Basics** tab, give a **Name** and **Description**.
+1. Select the following options, then select **Create** when you're done:
+   - **Platform**:Windows 10 and later
+   - **Profile type**: Templates
+   - **Template name**: Custom
+1. You're now on the Configuration profile creation screen. On the **Basics** tab, provide a **Name** and **Description**.
 1. On the **Configuration settings** page, you'll be adding multiple OMA-URI Settings that correspond to the policies described in [Manually configuring devices for Windows Update for Business reports](wufb-reports-configuration-manual.md).
 
    **Required settings**:
