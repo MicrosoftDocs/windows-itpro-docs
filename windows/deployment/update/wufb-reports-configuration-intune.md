@@ -43,7 +43,7 @@ Create a configuration profile that will set the required policies for Windows U
 1. Add the following required settings and values the **System** category:
    - **Setting**: Allow Telemetry
       - **Value**: Basic
-        -  Basic is the minimum value, but it can be safely set to a higher values
+        -  Basic is the minimum value, but it can be safely set to a higher values. Basic is also known as required diagnostic data.
 
 1. Add the following recommended settings and values from the **System** category:
    > [!Note]
@@ -80,7 +80,7 @@ Create a configuration profile that will set the required policies for Windows U
         - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/AllowTelemetry`
         - **Data type**: Integer
         - **Value**: 1 
-          - *1 is the minimum value meaning basic, but it can be safely set to a higher value.*
+          - *1 is the minimum value meaning required or basic diagnostic data, but it can be safely set to a higher value.*
 
    **Recommended settings, but not required**:
 
