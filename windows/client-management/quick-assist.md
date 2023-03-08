@@ -10,8 +10,8 @@ ms.author: vinpa
 manager: aaroncz
 ms.reviewer: pmadrigal
 appliesto:
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 and later</a>
 ms.collection:
   - highpri
   - tier1
@@ -57,41 +57,6 @@ Quick Assist communicates over port 443 (https) and connects to the Remote Assis
 > [!IMPORTANT]
 > Quick Assist uses Edge WebView2 browser control. For a list of domain URLs that you need to add to the allow list to ensure that the Edge WebView2 browser control can be installed and updated, see [Allow list for Microsoft Edge endpoints](/deployedge/microsoft-edge-security-endpoints).
 
-## How it works
-
-1. Both the helper and the sharer start Quick Assist.
-
-2. The helper selects **Assist another person**. Quick Assist on the helper's side contacts the Remote Assistance Service to obtain a session code. An RCC chat session is established, and the helper's Quick Assist instance joins it. The helper then provides the code to the sharer.
-
-3. After the sharer enters the code in their Quick Assist app, Quick Assist uses that code to contact the Remote Assistance Service and join that specific session. The sharer's Quick Assist instance joins the RCC chat session.
-
-4. The helper is prompted to select **View Only** or **Full Control**.
-
-5. The sharer is prompted to confirm allowing the helper to share their desktop with the helper.
-
-6. Quick Assist starts RDP control and connects to the RDP Relay service.
-
-7. RDP shares the video to the helper over https (port 443) through the RDP relay service to the helper's RDP control. Input is shared from the helper to the sharer through the RDP relay service.
-
-:::image type="content" source="images/quick-assist-flow.png" lightbox="images/quick-assist-flow.png" alt-text="Schematic flow of connections when a Quick Assist session is established.":::
-
-### Data and privacy
-
-Microsoft logs a small amount of session data to monitor the health of the Quick Assist system. This data includes the following information:
-
-- Start and end time of the session
-
-- Errors arising from Quick Assist itself, such as unexpected disconnections
-
-- Features used inside the app such as view only, annotation, and session pause
-
-> [!NOTE]
-> No logs are created on either the helper's or sharer's device. Microsoft can't access a session or view any actions or keystrokes that occur in the session.
->
-> The sharer sees only an abbreviated version of the helper's name (first name, last initial) and no other information about them. Microsoft doesn't store any data about either the sharer or the helper for longer than three days.
-
-In some scenarios, the helper does require the sharer to respond to application permission prompts (User Account Control), but otherwise the helper has the same permissions as the sharer on the device.
-
 ## Working with Quick Assist
 
 Either the support staff or a user can start a Quick Assist session.
@@ -109,6 +74,33 @@ Either the support staff or a user can start a Quick Assist session.
 
 > [!NOTE]
 > In case the helper and sharer use different keyboard layouts or mouse settings, the ones from the sharer are used during the session.
+
+## How it works
+
+1. Both the helper and the sharer start Quick Assist.
+1. The helper selects **Assist another person**. Quick Assist on the helper's side contacts the Remote Assistance Service to obtain a session code. An RCC chat session is established, and the helper's Quick Assist instance joins it. The helper then provides the code to the sharer.
+1. After the sharer enters the code in their Quick Assist app, Quick Assist uses that code to contact the Remote Assistance Service and join that specific session. The sharer's Quick Assist instance joins the RCC chat session.
+1. The helper is prompted to select **View Only** or **Full Control**.
+1. The sharer is prompted to confirm allowing the helper to share their desktop with the helper.
+1. Quick Assist starts RDP control and connects to the RDP Relay service.
+1. RDP shares the video to the helper over https (port 443) through the RDP relay service to the helper's RDP control. Input is shared from the helper to the sharer through the RDP relay service.
+
+:::image type="content" source="images/quick-assist-flow.png" lightbox="images/quick-assist-flow.png" alt-text="Schematic flow of connections when a Quick Assist session is established.":::
+
+### Data and privacy
+
+Microsoft logs a small amount of session data to monitor the health of the Quick Assist system. This data includes the following information:
+
+- Start and end time of the session
+- Errors arising from Quick Assist itself, such as unexpected disconnections
+- Features used inside the app such as view only, annotation, and session pause
+
+> [!NOTE]
+> No logs are created on either the helper's or sharer's device. Microsoft can't access a session or view any actions or keystrokes that occur in the session.
+>
+> The sharer sees only an abbreviated version of the helper's name (first name, last initial) and no other information about them. Microsoft doesn't store any data about either the sharer or the helper for longer than three days.
+
+In some scenarios, the helper does require the sharer to respond to application permission prompts (User Account Control), but otherwise the helper has the same permissions as the sharer on the device.
 
 ## Install Quick Assist
 
