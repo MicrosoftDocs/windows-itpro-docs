@@ -283,3 +283,17 @@ if (!(Test-Path $registryPath))
 
 New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWORD -Force | Out-Null
 ```
+
+## <a name="bkmk_display-name"> </a> Allow Windows Updates to install before initial user logon
+
+This value is supported on devices running Windows 11, version 22H2 or newer.
+
+On new devices Windows Update does not begin to install background updates until a user has completed the Out of Box Experience and logs on for the first time.  The initial logon typically happens immediately after completing that first user experience.  Some VM-based solutions provision a device and automate the first user experience but are not immediately assigned to a user and don't see an initial logon until several days later.  
+
+In those scenarios, setting the following registry value allows those devices to begin background update work before a first user logon:
+
+- **Registry key**: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator
+- **DWORD value name**: ScanBeforeInitialLogonAllowed
+- **Value data**: 1
+
+> [!NOTE] This value is designed to be used only for scenarios with a deferred initial user logon.  Setting this value on normal consumer retail devices could have a detrimental effect on performance as it may allow update work to occur as the user is logging in for the first time.
