@@ -37,7 +37,7 @@ From its release, Windows has supported remote connections to devices joined to 
 Azure AD Authentication can be used on the following operating systems:
 
 - Windows 11 with [2022-09 Cumulative Updates for Windows 11 Preview (KB5017383)](https://support.microsoft.com/kb/KB5017383) or later installed.
-- Windows 10, versions 20H2 or later with [2022-09 Cumulative Updates for Windows 10 Preview (KB5017380)](https://support.microsoft.com/kb/KB5017380) or later installed.
+- Windows 10, version 20H2 or later with [2022-09 Cumulative Updates for Windows 10 Preview (KB5017380)](https://support.microsoft.com/kb/KB5017380) or later installed.
 - Windows Server 2022 with [2022-09 Cumulative Update for Microsoft server operating system preview (KB5017381)](https://support.microsoft.com/kb/KB5017381) or later installed.
 
 There's no requirement for the local device to be joined to a domain or Azure AD. As a result, this method allows you to connect to the remote Azure AD joined device from:
