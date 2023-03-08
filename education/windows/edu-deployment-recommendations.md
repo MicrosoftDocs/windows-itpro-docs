@@ -9,9 +9,9 @@ appliesto:
 
 # Deployment recommendations for school IT administrators
 
-Your privacy is important to us, so we want to provide you with ways to customize the OS privacy settings, and some of the apps, so that you can choose what information is shared with Microsoft. To learn more about Microsoft’s commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305). The following sections provide some best practices and specific privacy settings we’d like you to be aware of. For more information about ways to customize the OS diagnostic data, consumer experiences, Cortana, and search, see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md).
+Your privacy is important to us, so we want to provide you with ways to customize the OS privacy settings, and some of the apps, so that you can choose what information is shared with Microsoft. To learn more about Microsoft's commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305). The following sections provide some best practices and specific privacy settings we'd like you to be aware of. For more information about ways to customize the OS diagnostic data, consumer experiences, Cortana, and search, see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md).
 
-We want all students to have the chance to use the apps they need for success in the classroom and all school personnel to have apps they need for their job. Students and school personnel who use assistive technology apps not available in the Microsoft Store for Education, and use devices running Windows 10 S, will be able to configure the device at no extra charge to Windows 10 Pro Education. To learn more about the steps to configure this device, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md).
+We want all students to have the chance to use the apps they need for success in the classroom and all school personnel to have apps they need for their job. Students and school personnel who use assistive technology apps not available in the Microsoft Store, and use devices running Windows 10 S, will be able to configure the device at no extra charge to Windows 10 Pro Education. To learn more about the steps to configure this device, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md).
 
 ## Deployment best practices
 
@@ -20,16 +20,16 @@ Keep these best practices in mind when deploying any edition of Windows 10 in sc
 * A Microsoft account is only intended for consumer services. Enterprises and educational institutions should use enterprise versions where possible, such as Skype for Business, OneDrive for Business, and so on. For schools, consider using mobile device management (MDM) or Group Policy to block students from adding a Microsoft account as a secondary account
 * If schools allow the use of personal accounts by their students to access personal services, schools should be aware that these accounts belong to individuals, not the school
 * IT administrators, school officials, and teachers should also consider ratings when picking apps from the Microsoft Store
-* If you've students or school personnel who rely on assistive technology apps that aren't available in the Microsoft Store for Education, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) for more info
+* If you've students or school personnel who rely on assistive technology apps that aren't available in the Microsoft Store, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) for more info
 
 ## Windows 10 Contacts privacy settings
 
-If you’re an IT administrator who deploys Windows 10 in a school or district, we recommend that you review these deployment resources to make informed decisions about how you can configure telemetry for your school or district:
+If you're an IT administrator who deploys Windows 10 in a school or district, we recommend that you review these deployment resources to make informed decisions about how you can configure telemetry for your school or district:
 
 * [Configure Windows telemetry in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization) - Describes the types of telemetry we gather and the ways you can manage this data
 * [Manage connections from Windows operating system components to Microsoft services](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services) - Learn about network connections that Windows components make to Microsoft and also the privacy settings (such as location, camera, messaging, and more) that affect data that is shared with either Microsoft or apps and how you can manage this data
 
-In particular, the **Contacts** area in the **Settings** > **Privacy** section lets you choose which apps can access a student’s contacts list. By default, this setting is turned on.
+In particular, the **Contacts** area in the **Settings** > **Privacy** section lets you choose which apps can access a student's contacts list. By default, this setting is turned on.
 
 To change the setting, you can:
 * [Turn off access to contacts for all apps](#turn-off-access-to-contacts-for-all-apps)
@@ -78,7 +78,7 @@ If the school allows the use of personal or Microsoft account in addition to org
 
 #### Skype
 
-Skype uses the user’s contact details to deliver important information about the account and it also lets friends find each other on Skype.
+Skype uses the user's contact details to deliver important information about the account and it also lets friends find each other on Skype.
 
 To manage and edit your profile in the Skype UWP app, follow these steps:
 
@@ -101,20 +101,20 @@ To manage and edit your profile in the Skype UWP app, follow these steps:
 
 #### Xbox
 
-A user’s Xbox friends and their friends’ friends can see their real name and profile. By default, the Xbox privacy settings enforce that no personal identifying information of a minor is shared on the Xbox Live network, although adults in the child’s family can change these default settings to allow it to be more permissive.
+A user's Xbox friends and their friends' friends can see their real name and profile. By default, the Xbox privacy settings enforce that no personal identifying information of a minor is shared on the Xbox Live network, although adults in the child's family can change these default settings to allow it to be more permissive.
 
 To learn more about how families can manage security and privacy settings on Xbox, see this [Xbox article on security](https://go.microsoft.com/fwlink/?LinkId=821445).
 
 
 ### Delete an account if username is identifying
 
-If you want to delete either (or both) the Skype and the Xbox accounts, here’s how to do it.
+If you want to delete either (or both) the Skype and the Xbox accounts, here's how to do it.
 
 #### Skype
 
 To delete a Skype account, you can follow the instructions here: [How do I close my Skype account?](https://go.microsoft.com/fwlink/?LinkId=816515)
 
-If you need help with deleting the account, you can contact Skype customer service by going to the [Skype support request page](https://go.microsoft.com/fwlink/?LinkId=816519). You may need to sign in and specify a Skype account. Once you’ve signed in, you can:
+If you need help with deleting the account, you can contact Skype customer service by going to the [Skype support request page](https://go.microsoft.com/fwlink/?LinkId=816519). You may need to sign in and specify a Skype account. Once you've signed in, you can:
 
 1. Select a help topic (**Account and Password**)
 1. Select a related problem (**Deleting an account**)
