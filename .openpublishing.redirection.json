@@ -20629,6 +20629,26 @@
       "source_path": "windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md",
       "redirect_url": "/windows/security",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/s-mode-switch-to-edu.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/change-to-pro-education.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/test-windows10s-for-edu.md",
+      "redirect_url": "/windows/deployment/s-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/enable-s-mode-on-surface-go-devices.md",
+      "redirect_url": "/windows/deployment/s-mode",
+      "redirect_document_id": false
     }
   ]
 }
