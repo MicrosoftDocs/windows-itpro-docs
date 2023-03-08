@@ -9,6 +9,9 @@ author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
 ms.reviewer: pmadrigal
+appliesto:
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ms.collection:
   - highpri
   - tier1
@@ -23,8 +26,8 @@ Quick Assist is a Microsoft Store application that enables a person to share the
 
 All that's required to use Quick Assist is suitable network and internet connectivity. No roles, permissions, or policies are involved. Neither party needs to be in a domain. The helper must have a Microsoft account. The sharer doesn't have to authenticate.
 
-> [!NOTE]
-> In case the helper and sharer use different keyboard layouts or mouse settings, the ones from the sharer are used during the session.
+> [!IMPORTANT]
+> Quick Assist is not available in Azure Government.
 
 ### Authentication
 
@@ -45,7 +48,7 @@ Quick Assist communicates over port 443 (https) and connects to the Remote Assis
 | `*.registrar.skype.com` | Required for Azure Communication Service. |
 | `*.support.services.microsoft.com` | Primary endpoint used for Quick Assist application |
 | `*.trouter.skype.com` | Used for Azure Communication Service for chat and connection between parties. |
-| `aadcdn.msauth.net` | Required for logging in to the application (AAD). |
+| `aadcdn.msauth.net` | Required for logging in to the application (Azure AD). |
 | `edge.skype.com` | Used for Azure Communication Service for chat and connection between parties. |
 | `login.microsoftonline.com` | Required for Microsoft login service. |
 | `remoteassistanceprodacs.communication.azure.com` | Used for Azure Communication Service for chat and connection between parties. |
@@ -104,29 +107,32 @@ Either the support staff or a user can start a Quick Assist session.
 1. The sharer receives a dialog asking for permission to allow screen sharing. The sharer gives permission by selecting the **Allow** button and the screen sharing session is established.
 1. After the screen sharing session is established, the helper can optionally request control of the sharer's screen by selecting **Request control**. The sharer then receives a dialog asking them if they want to **Allow** or **Deny** the request for control.
 
+> [!NOTE]
+> In case the helper and sharer use different keyboard layouts or mouse settings, the ones from the sharer are used during the session.
+
 ## Install Quick Assist
 
 ### Install Quick Assist from the Microsoft Store
 
 1. Download the new version of Quick Assist by visiting the [Microsoft Store](https://apps.microsoft.com/store/detail/quick-assist/9P7BP5VNWKX5).
-1. In the Microsoft Store, select **Get in Store app**. Then, give permission to install Quick Assist. When the installation is complete, you'll see **Get** change to **Open**.</br> :::image type="content" source="images/quick-assist-get.png" lightbox="images/quick-assist-get.png" alt-text="Microsoft Store window showing the Quick Assist app with a button labeled get in the bottom right corner.":::
+1. In the Microsoft Store, select **Get in Store app**. Then, give permission to install Quick Assist. When the installation is complete, **Get** changes to **Open**.</br> :::image type="content" source="images/quick-assist-get.png" lightbox="images/quick-assist-get.png" alt-text="Microsoft Store window showing the Quick Assist app with a button labeled get in the bottom right corner.":::
 
 For more information, visit [Install Quick Assist](https://support.microsoft.com/windows/install-quick-assist-c17479b7-a49d-4d12-938c-dbfb97c88bca).
 
 ### Install Quick Assist with Intune
 
-Before installing Quick Assist, you'll need to set up synchronization between Intune and Microsoft Store for Business. If you've already set up sync, log into [Microsoft Store for Business](https://businessstore.microsoft.com) and skip to step 5.
+Before installing Quick Assist, you need to set up synchronization between Intune and Microsoft Store for Business. If you've already set up sync, log into [Microsoft Store for Business](https://businessstore.microsoft.com) and skip to step 5.
 
 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Tenant administration** / **Connectors and tokens** / **Microsoft Store for Business** and verify that **Microsoft Store for Business sync** is set to **Enable**.
 1. Using your Global Admin account, log into [Microsoft Store for Business](https://businessstore.microsoft.com).
-1. Select **Manage** / **Settings** and turn on **Show offline apps**.
+1. Select **Manage** / **Settings** and enable **Show offline apps**.
 1. Choose the **Distribute** tab and verify that **Microsoft Intune** is **Active**. You may need to use the **+Add management tool** link if it's not.
 1. Search for **Quick Assist** and select it from the Search results.
 1. Choose the **Offline** license and select **Get the app**
 1. In the Intune admin center, choose **Sync**.
 1. Navigate to **Apps** / **Windows** and you should see **Quick Assist (Offline)** in the list.
-1. Select it to view its properties. By default, the app won't be assigned to anyone or any devices, select the **Edit** link.
-1. Assign the app to the required group of devices and choose **Review + save** to complete the application install.
+1. Select it to view its properties.
+1. By default, the app isn't assigned to any user or device, select the **Edit** link. Assign the app to the required group of devices and choose **Review + save** to complete the application install.
 
 > [!NOTE]
 > Assigning the app to a device or group of devices instead of a user is important because it's the only way to install a store app in device context.
@@ -135,7 +141,7 @@ Visit [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps
 
 ### Install Quick Assist Offline
 
-To install Quick Assist offline, you'll need to download your APPXBUNDLE and unencoded XML file from [Microsoft Store for Business](https://businessstore.microsoft.com). Visit [Download an offline-licensed app](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app) for more information.
+To install Quick Assist offline, you need to download your APPXBUNDLE and unencoded XML file from [Microsoft Store for Business](https://businessstore.microsoft.com). Visit [Download an offline-licensed app](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app) for more information.
 
 1. Start **Windows PowerShell** with Administrative privileges.
 1. In PowerShell, change the directory to the location you've saved the file to in step 1: `cd <location of package file>`
@@ -147,7 +153,7 @@ To install Quick Assist offline, you'll need to download your APPXBUNDLE and une
 The Microsoft Edge WebView2 is a development control that uses Microsoft Edge as the rendering engine to display web content in native apps. The new Quick Assist application has been developed using this control, making it a necessary component for the app to function.
 
 - For Windows 11 users, this runtime control is built in.
-- For Windows 10 users, the Quick Assist Store app will detect if WebView2 is present on launch and if necessary, it will be installed automatically. If an error message or prompt is shown indicating WebView2 isn't present, it will need to be installed separately.
+- For Windows 10 users, the Quick Assist Store app detects if WebView2 is present on launch and if necessary, installs it automatically. If an error message or prompt is shown indicating WebView2 isn't present, it needs to be installed separately.
 
 For more information on distributing and installing Microsoft Edge WebView2, visit [Distribute your app and the WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution)
 

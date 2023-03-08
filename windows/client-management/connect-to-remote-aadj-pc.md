@@ -1,93 +1,123 @@
 ---
-title: Connect to remote Azure Active Directory-joined PC (Windows)
-description: You can use Remote Desktop Connection to connect to an Azure AD-joined PC.
+title: Connect to remote Azure Active Directory joined device (Windows)
+description: Learn how to use Remote Desktop Connection to connect to an Azure AD joined device.
 ms.prod: windows-client
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.author: vinpa
 ms.date: 01/18/2022
-ms.reviewer:
 manager: aaroncz
 ms.topic: article
+appliesto:
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ms.collection:
   - highpri
   - tier2
 ms.technology: itpro-manage
 ---
 
-# Connect to remote Azure Active Directory-joined PC
+# Connect to remote Azure Active Directory joined device
 
+From its release, Windows has supported remote connections to devices joined to Active Directory using Remote Desktop Protocol (RDP). Windows 10, version 1607, added the ability to connect to a device that is joined to Azure Active Directory (Azure AD) using RDP.
 
-**Applies to**
+- Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session](/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics).
+- Starting in Windows 10/11, with 2022-09 preview update installed, you can [use Azure AD authentication to connect to the remote Azure AD device](#connect-with-azure-ad-authentication).
 
-- Windows 10
-- Windows 11
+## Prerequisites
 
+- Both devices (local and remote) must be running a supported version of Windows.
+- Remote device must have the **Connect to and use this PC from another device using the Remote Desktop app** option selected under **Settings** > **System** > **Remote Desktop**.
+  - It is recommended to select **Require devices to use Network Level Authentication to connect** option.
+- If the user who joined the device to Azure AD is the only one who is going to connect remotely, no other configuration is needed. To allow more users or groups to connect to the device remotely, you must [add users to the Remote Desktop Users group](#add-users-to-remote-desktop-users-group) on the remote device.
+- Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-guard) is turned off on the device you're using to connect to the remote device.
 
-From its release, Windows 10 has supported remote connections to PCs joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is [joined to Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join). Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session](/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics).
+## Connect with Azure AD Authentication
 
-![Remote Desktop Connection client.](images/rdp.png)
+Azure AD Authentication can be used on the following operating systems:
 
-## Set up
+- Windows 11 with [2022-09 Cumulative Updates for Windows 11 Preview (KB5017383)](https://support.microsoft.com/kb/KB5017383) or later installed.
+- Windows 10, versions 20H2 or later with [2022-09 Cumulative Updates for Windows 10 Preview (KB5017380)](https://support.microsoft.com/kb/KB5017380) or later installed.
+- Windows Server 2022 with [2022-09 Cumulative Update for Microsoft server operating system preview (KB5017381)](https://support.microsoft.com/kb/KB5017381) or later installed.
 
-- Both PCs (local and remote) must be running Windows 10, version 1607 or later. Remote connections to an Azure AD-joined PC running earlier versions of Windows 10 aren't supported.
-- Your local PC (where you're connecting from) must be either Azure AD-joined or Hybrid Azure AD-joined if using Windows 10, version 1607 and above, or [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register) if using Windows 10, version 2004 and above. Remote connections to an Azure AD-joined PC from an unjoined device or a non-Windows 10 device aren't supported.
-- The local PC and remote PC must be in the same Azure AD tenant. Azure AD B2B guests aren't supported for Remote desktop.
+There's no requirement for the local device to be joined to a domain or Azure AD. As a result, this method allows you to connect to the remote Azure AD joined device from:
 
-Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-guard), a new feature in Windows 10, version 1607, is turned off on the client PC you're using to connect to the remote PC.
+- [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) device.
+- Active Directory joined device.
+- Workgroup device.
 
-- On the PC you want to connect to:
+To connect to the remote computer:
 
-  1. Open system properties for the remote PC.
+- Launch **Remote Desktop Connection** from Windows Search, or by running `mstsc.exe`.
+- Specify the name of the remote computer.
+- Select **Use a web account to sign in to the remote computer** option in the **Advanced** tab. This option is equivalent to the `enablerdsaadauth` RDP property. For more information, see [Supported RDP properties with Remote Desktop Services](/windows-server/remote/remote-desktop-services/clients/rdp-files).
+- When prompted for credentials, specify your user name in `user@domain.com` format.
+- You will be prompted to allow the Remote Desktop connection when launching a connection to a new host. Azure AD remembers up to 15 hosts for 30 days before prompting again. If you see this dialogue, select **Yes** to connect.
 
-  2. Enable **Allow remote connections to this computer** and select **Allow connections only from computers running Remote Desktop with Network Level Authentication**.
+> [!IMPORTANT]
+> If your organization has configured and is using [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), then your device must satisfy the conditional access requirements to allow connection to the remote computer.
 
-     ![Allow remote connections to this computer.](images/allow-rdp.png)
+### Disconnection when the session is locked
 
-  3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no other configuration is needed. To allow more users or groups to connect to the PC, you must allow remote connections for the specified users or groups. Users can be added either manually or through MDM policies:
+The Windows lock screen in the remote session doesn't support Azure AD authentication tokens or passwordless authentication methods like FIDO keys. The lack of support for these authentication methods means that users can't unlock their screens in a remote session. When you try to lock a remote session, either through user action or system policy, the session is instead disconnected and the service sends a message to the user explaining they've been disconnected.
 
-      - Adding users manually
+Disconnecting the session also ensures that when the connection is relaunched after a period of inactivity, Azure AD reevaluates the applicable conditional access policies.
 
-        You can specify individual Azure AD accounts for remote connections by running the following PowerShell cmdlet:
-        ```powershell
-        net localgroup "Remote Desktop Users" /add "AzureAD\the-UPN-attribute-of-your-user"
-        ```
-        where *the-UPN-attribute-of-your-user* is the name of the user profile in C:\Users\, which is created based on the DisplayName attribute in Azure AD.
+## Connect without Azure AD Authentication
 
-        In order to execute this PowerShell command, you must be a member of the local Administrators group. Otherwise, you'll get an error like this example:
-        - for cloud only user: "There is no such global user or group : *name*"
-        - for synced user: "There is no such global user or group : *name*" </br>
+By default, RDP won't use Azure AD authentication, even if the remote PC supports it. This method allows you to connect to the remote Azure AD joined device from:
 
-         > [!NOTE]
-         > For devices running Windows 10, version 1703 or earlier, the user must sign in to the remote device first before attempting remote connections.
-         >
-         > Starting in Windows 10, version 1709, you can add other Azure AD users to the **Administrators** group on a device in **Settings** and restrict remote credentials to **Administrators**. If there's a problem connecting remotely, make sure that both devices are joined to Azure AD and that TPM is functioning properly on both devices.
-
-      - Adding users using policy
-
-         Starting in Windows 10, version 2004, you can add users to the Remote Desktop Users using MDM policies as described in [How to manage the local administrators group on Azure AD-joined devices](/azure/active-directory/devices/assign-local-admin#manage-administrator-privileges-using-azure-ad-groups-preview).
-
-         > [!TIP]
-         > When you connect to the remote PC, enter your account name in this format: AzureAD\yourloginid@domain.com.
-
-         > [!NOTE]
-         > If you cannot connect using Remote Desktop Connection 6.0, you must turn off the new features of RDP 6.0 and revert back to RDP 5.0 by making a few changes in the RDP file. See the details in this [support article](/troubleshoot/windows-server/remote/remote-desktop-connection-6-prompts-credentials).
-
-## Supported configurations
-
-The table below lists the supported configurations for remotely connecting to an Azure AD-joined PC:
-
-| Criteria | RDP from Azure AD registered device| RDP from Azure AD joined device| RDP from hybrid Azure AD joined device |
-| - | - | - | - |
-| **Client operating systems**| Windows 10, version 2004 and above| Windows 10, version 1607 and above | Windows 10, version 1607 and above |
-| **Supported credentials**| Password, smartcard| Password, smartcard, Windows Hello for Business certificate trust | Password, smartcard, Windows Hello for Business certificate trust |
-
+- [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) device using Windows 10, version 1607 or later.
+- [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register) device using Windows 10, version 2004 or later.
 
 > [!NOTE]
-> If the RDP client is running Windows Server 2016 or Windows Server 2019, to be able to connect to Azure Active Directory-joined PCs, it must [allow Public Key Cryptography Based User-to-User (PKU2U) authentication requests to use online identities](/windows/security/threat-protection/security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities).
+> Both the local and remote device must be in the same Azure AD tenant. Azure AD B2B guests aren't supported for Remote desktop.
+
+To connect to the remote computer:
+
+- Launch **Remote Desktop Connection** from Windows Search, or by running `mstsc.exe`.
+- Specify the name of the remote computer.
+- When prompted for credentials, specify your user name in either `user@domain.com` or `AzureAD\user@domain.com` format.
+
+> [!TIP]
+> If you specify your user name in `domain\user` format, you may receive an error indicating the logon attempt failed with the message **Remote machine is AAD joined. If you are signing in to your work account, try using your work email address**.
+
+> [!NOTE]
+> For devices running Windows 10, version 1703 or earlier, the user must sign in to the remote device first before attempting remote connections.
+
+### Supported configurations
+
+The table below lists the supported configurations for remotely connecting to an Azure AD joined device:
+
+| **Criteria**                               | **Client operating system**       | **Supported credentials**                                          |
+|--------------------------------------------|-----------------------------------|--------------------------------------------------------------------|
+| RDP from **Azure AD registered device**    | Windows 10, version 2004 or later | Password, smart card                                               |
+| RDP from **Azure AD joined device**        | Windows 10, version 1607 or later | Password, smart card, Windows Hello for Business certificate trust |
+| RDP from **hybrid Azure AD joined device** | Windows 10, version 1607 or later | Password, smart card, Windows Hello for Business certificate trust |
+
+> [!NOTE]
+> If the RDP client is running Windows Server 2016 or Windows Server 2019, to be able to connect to Azure AD joined devices, it must [allow Public Key Cryptography Based User-to-User (PKU2U) authentication requests to use online identities](/windows/security/threat-protection/security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities).
 
 > [!NOTE]
 > When an Azure Active Directory group is added to the Remote Desktop Users group on a Windows device, it isn't honoured when the user that belongs to the Azure AD group logs in through Remote Desktop Protocol (they can't sign in using Remote Desktop Connection). In this scenario, Network Level Authentication should be disabled to run the connection.
+
+## Add users to Remote Desktop Users group
+
+Remote Desktop Users group is used to grant users and groups permissions to remotely connect to the device. Users can be added either manually or through MDM policies:
+
+- **Adding users manually**:
+
+  You can specify individual Azure AD accounts for remote connections by running the following command, where `<userUPN>` is the UPN of the user, for example `user@domain.com`:
+
+  ```cmd
+  net localgroup "Remote Desktop Users" /add "AzureAD\<userUPN>"
+  ```
+
+  In order to execute this command, you must be a member of the local Administrators group. Otherwise, you'll get an error similar to "There is no such global user or group: `<name>`".
+
+- **Adding users using policy**:
+
+  Starting in Windows 10, version 2004, you can add users to the Remote Desktop Users using MDM policies as described in [How to manage the local administrators group on Azure AD-joined devices](/azure/active-directory/devices/assign-local-admin#manage-administrator-privileges-using-azure-ad-groups-preview).
 
 ## Related topics
 
