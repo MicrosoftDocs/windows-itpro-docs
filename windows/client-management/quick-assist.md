@@ -27,7 +27,7 @@ Quick Assist is a Microsoft Store application that enables a person to share the
 All that's required to use Quick Assist is suitable network and internet connectivity. No roles, permissions, or policies are involved. Neither party needs to be in a domain. The helper must have a Microsoft account. The sharer doesn't have to authenticate.
 
 > [!IMPORTANT]
-> Quick Assist is not available in Azure Government.
+> Quick Assist is not available in the Azure Government cloud.
 
 ### Authentication
 

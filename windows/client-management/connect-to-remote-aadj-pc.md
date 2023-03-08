@@ -28,7 +28,7 @@ From its release, Windows has supported remote connections to devices joined to 
 
 - Both devices (local and remote) must be running a supported version of Windows.
 - Remote device must have the **Connect to and use this PC from another device using the Remote Desktop app** option selected under **Settings** > **System** > **Remote Desktop**.
-  - It is recommended to select **Require devices to use Network Level Authentication to connect** option.
+  - It's recommended to select **Require devices to use Network Level Authentication to connect** option.
 - If the user who joined the device to Azure AD is the only one who is going to connect remotely, no other configuration is needed. To allow more users or groups to connect to the device remotely, you must [add users to the Remote Desktop Users group](#add-users-to-remote-desktop-users-group) on the remote device.
 - Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-guard) is turned off on the device you're using to connect to the remote device.
 
@@ -52,10 +52,10 @@ To connect to the remote computer:
 - Specify the name of the remote computer.
 - Select **Use a web account to sign in to the remote computer** option in the **Advanced** tab. This option is equivalent to the `enablerdsaadauth` RDP property. For more information, see [Supported RDP properties with Remote Desktop Services](/windows-server/remote/remote-desktop-services/clients/rdp-files).
 - When prompted for credentials, specify your user name in `user@domain.com` format.
-- You will be prompted to allow the Remote Desktop connection when launching a connection to a new host. Azure AD remembers up to 15 hosts for 30 days before prompting again. If you see this dialogue, select **Yes** to connect.
+- You're then prompted to allow the remote desktop connection when connecting to a new PC. Azure AD remembers up to 15 hosts for 30 days before prompting again. If you see this dialogue, select **Yes** to connect.
 
 > [!IMPORTANT]
-> If your organization has configured and is using [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), then your device must satisfy the conditional access requirements to allow connection to the remote computer.
+> If your organization has configured and is using [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), your device must satisfy the conditional access requirements to allow connection to the remote computer.
 
 ### Disconnection when the session is locked
 
@@ -65,7 +65,7 @@ Disconnecting the session also ensures that when the connection is relaunched af
 
 ## Connect without Azure AD Authentication
 
-By default, RDP won't use Azure AD authentication, even if the remote PC supports it. This method allows you to connect to the remote Azure AD joined device from:
+By default, RDP doesn't use Azure AD authentication, even if the remote PC supports it. This method allows you to connect to the remote Azure AD joined device from:
 
 - [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) device using Windows 10, version 1607 or later.
 - [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register) device using Windows 10, version 2004 or later.
@@ -87,7 +87,7 @@ To connect to the remote computer:
 
 ### Supported configurations
 
-The table below lists the supported configurations for remotely connecting to an Azure AD joined device:
+This table lists the supported configurations for remotely connecting to an Azure AD joined device:
 
 | **Criteria**                               | **Client operating system**       | **Supported credentials**                                          |
 |--------------------------------------------|-----------------------------------|--------------------------------------------------------------------|
@@ -99,7 +99,7 @@ The table below lists the supported configurations for remotely connecting to an
 > If the RDP client is running Windows Server 2016 or Windows Server 2019, to be able to connect to Azure AD joined devices, it must [allow Public Key Cryptography Based User-to-User (PKU2U) authentication requests to use online identities](/windows/security/threat-protection/security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities).
 
 > [!NOTE]
-> When an Azure Active Directory group is added to the Remote Desktop Users group on a Windows device, it isn't honoured when the user that belongs to the Azure AD group logs in through Remote Desktop Protocol (they can't sign in using Remote Desktop Connection). In this scenario, Network Level Authentication should be disabled to run the connection.
+> When an Azure AD group is added to the **Remote Desktop Users** group on a Windows device, it isn't honoured when the user that belongs to the Azure AD group logs in through RDP resulting in failure to establish the remote connection. In this scenario, Network Level Authentication should be disabled to allow the connection.
 
 ## Add users to Remote Desktop Users group
 
@@ -113,12 +113,12 @@ Remote Desktop Users group is used to grant users and groups permissions to remo
   net localgroup "Remote Desktop Users" /add "AzureAD\<userUPN>"
   ```
 
-  In order to execute this command, you must be a member of the local Administrators group. Otherwise, you'll get an error similar to "There is no such global user or group: `<name>`".
+  In order to execute this command, you must be a member of the local Administrators group. Otherwise, you may see an error similar to `There is no such global user or group: <name>`.
 
 - **Adding users using policy**:
 
   Starting in Windows 10, version 2004, you can add users to the Remote Desktop Users using MDM policies as described in [How to manage the local administrators group on Azure AD-joined devices](/azure/active-directory/devices/assign-local-admin#manage-administrator-privileges-using-azure-ad-groups-preview).
 
-## Related topics
+## Related articles
 
 [How to use Remote Desktop](https://support.microsoft.com/windows/how-to-use-remote-desktop-5fe128d5-8fb1-7a23-3b8a-41e636865e8c)
