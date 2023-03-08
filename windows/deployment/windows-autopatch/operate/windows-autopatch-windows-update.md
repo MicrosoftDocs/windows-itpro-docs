@@ -75,7 +75,7 @@ The Scheduled install cadence has two options:
 | Schedule install and restart | Use this option to prevent the service from installing Windows Updates except during the specified start time. You can specify the following occurrence options:<ul><li>Weekly</li><li>Bi-weekly</li><li>Monthly</li></ul><p>Select a time when the device has low activity for the updates to complete. Ensure that the Windows Update has three to four hours to complete the installation and restart the device.</p> |
 
 > [!NOTE]
-> Changes made in one deployment ring won't impact other rings in your tenant.<p>Configured **Active hours** and **Scheduled install and restart** options will apply to bother Windows quality updates and Windows feature updates.</p>
+> Changes made in one deployment ring won't impact other rings in your tenant.<p>Configured **Active hours** and **Scheduled install and restart** options will apply to both Windows quality updates and Windows feature updates.</p>
 
 ### User notifications
 
