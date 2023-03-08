@@ -22,7 +22,7 @@ ms.date: 05/20/2022
 ## Overview
 
 > [!IMPORTANT]
-> This document is for Microsoft Connected Cache (early preview). During this phase we invite customers to take part in early access for testing purposes. This phase doesn't include formal support. Instead, you'll be working directly with the product team to provide feedback on Microsoft Connected Cache. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+> This document is for Microsoft Connected Cache (early preview). Microsoft Connected Cache for ISPs is now in Public Preview - for our early preview customers, we highly encourage you to migrate your cache nodes to our public preview. See [instructions on how to migrate](#migrating-your-mcc-to-public-preview) below.
 
 Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within operator networks. MCC can be deployed to as many physical servers or VMs as needed and is managed from a cloud portal. Microsoft cloud services handle routing of consumer devices to the cache server for content downloads.
 
@@ -72,9 +72,6 @@ Your Azure subscription ID is first used to provision MCC services and enable ac
 
 The resources used for the preview, and in the future when this product is ready for production, will be free to you - like other caching solutions.
 
-> [!IMPORTANT]
-> To join the Microsoft Connected Cache early preview, provide your Azure subscription ID by filling out [this survey](https://aka.ms/MCCForISPSurvey).
-
 ### Hardware to host the MCC
 
 This recommended configuration can egress at a rate of 9 Gbps with a 10 Gbps NIC.
@@ -115,16 +112,13 @@ To deploy MCC:
 6. [Verify properly functioning MCC server](#verify-properly-functioning-mcc-server)
 7. [Review common issues if needed](#common-issues)
 
-For questions regarding these instructions, contact [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com).
 
 ## Provide Microsoft with your Azure subscription ID
 
 As part of the MCC preview onboarding process, an Azure subscription ID must be provided to Microsoft.
 
 > [!IMPORTANT]
-> If you haven't already, provide your Azure subscription ID by filling out [this survey](https://aka.ms/MCCForISPSurvey). You can't continue if you skip this step.
-
-For information about creating or locating your subscription ID, see [Steps to obtain an Azure subscription ID](#steps-to-obtain-an-azure-subscription-id).
+> For information about creating or locating your subscription ID, see [Steps to obtain an Azure subscription ID](#steps-to-obtain-an-azure-subscription-id).
 
 ### Create the MCC resource in Azure
 
@@ -508,9 +502,9 @@ To configure the device to work with your DNS, use the following steps:
     sudo restart IoTEdge
     ```
 
-### Diagnostics script
+<!-- ### Diagnostics script
 
-If you're having issues with your MCC, the installer file includes a diagnostics script. The script collects all logs and zips them into a single file. You can then email these logs to Microsoft.
+If you're having issues with your MCC, the installer file includes a diagnostics script. The script collects all logs and zips them into a single file. 
 
 To run the script:
 
@@ -527,7 +521,7 @@ To run the script:
 
 1. The script stores all the debug files into a folder and creates a tar file. After the script is finished running, it displays the path of the tar file that you can share with the MCC team. The file should be `/etc/mccdiagnostics/support_bundle_\$timestamp.tar.gz`
 
-1. [Email the MCC team](mailto:msconnectedcache@microsoft.com?subject=Debugging%20Support%20Request%20for%20MCC) and attach this tar file, asking for debugging support. Screenshots of the error along with any other warnings you saw will be helpful during the debugging process.
+1. [Email the MCC team](mailto:msconnectedcache@microsoft.com?subject=Debugging%20Support%20Request%20for%20MCC) and attach this tar file, asking for debugging support. Screenshots of the error along with any other warnings you saw will be helpful during the debugging process. -->
 
 ## Updating your MCC
 
@@ -556,6 +550,22 @@ If you have an MCC that's already active and running, follow the steps below to 
 1. Sign in with your Azure credentials using the device code.
 
 1. To finish configuring your MCC with BGP routing, continue from Step 10 of [Steps to Install MCC](#steps-to-install-mcc).
+
+## Migrating your MCC to Public Preview
+
+Please note, if you reboot your server, the version that you are currently on will no longer function, after which you will be required to migrate to the new version.
+
+We recommend migrating now to the new version to access these benefits and ensure no downtime.
+
+To migrate, use the following steps:
+
+1. Navigate to the cache node that you would like to migrate and select **Download Migration Package** using the button at the top of the page
+1. Follow the instructions under the "Connected Cache Migrate Scripts" section
+1. Go to https://portal.azure.com and navigate to your resource to check your migrated cache nodes
+
+Here is a screenshot from the Azure portal to help:
+
+:::image type="content" source="images/mcc-isp-migration.png" alt-text="A screenshot of Azure portal showing the migration instructions for migrating a cache node from the private preview to the public preview.":::
 
 ## Uninstalling MCC
 
