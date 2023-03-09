@@ -3,12 +3,11 @@ title: Recommended URLs for Windows Information Protection (Windows 10)
 description: Recommended URLs to add to your Enterprise Cloud Resources and Neutral Resources network settings, when used with Windows Information Protection (WIP).
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: aaroncz
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.reviewer: 
 ms.technology: itpro-security
 ---
 

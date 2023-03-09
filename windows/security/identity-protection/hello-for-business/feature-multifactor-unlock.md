@@ -95,7 +95,7 @@ You define the bluetooth signal with more attributes in the signal element. The 
 |rssiMin|"*number*"|no|
 |rssiMaxDelta|"*number*"|no|
 
-#### Example
+For example:
 
 ```xml
 <rule schemaVersion="1.0">
@@ -191,7 +191,7 @@ The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IP
 
 ##### IPv6DnsServer
 
-The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string. The **signal** element may contain one or more **ipv6DnsServer** element. For example:
+The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string. The **signal** element may contain one or more **ipv6DnsServer** elements. For example:
 
 ```xml
 <ipv6DnsServer>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6DnsServer>
@@ -199,7 +199,7 @@ The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IP
 
 ##### dnsSuffix
 
-The fully qualified domain name of your organization's internal DNS suffix where any part of the fully qualified domain name in this setting exists in the computer's primary DNS suffix. The **signal** element may contain one or more **dnsSuffix** element. For example:
+The fully qualified domain name of your organization's internal DNS suffix where any part of the fully qualified domain name in this setting exists in the computer's primary DNS suffix. The **signal** element may contain one or more **dnsSuffix** elements. For example:
 
 ```xml
 <dnsSuffix>corp.contoso.com</dnsSuffix>
@@ -209,25 +209,23 @@ The fully qualified domain name of your organization's internal DNS suffix where
 
 You define Wi-Fi signals using one or more wifi elements. Each element has a string value. Wifi elements don't have attributes or nested elements.
 
-#### SSID
+##### SSID
 
-Contains the service set identifier (SSID) of a wireless network. The SSID is the name of the wireless network. The SSID element is required.
+Contains the service set identifier (SSID) of a wireless network. The SSID is the name of the wireless network. The SSID element is required. For example:
 
 ```xml
 <ssid>corpnetwifi</ssid>
 ```
 
-#### BSSID
+##### BSSID
 
-Contains the basic service set identifier (BSSID) of a wireless access point. the BSSID is the mac address of the wireless access point. The BSSID element is optional.
-
-#### Example
+Contains the basic service set identifier (BSSID) of a wireless access point. the BSSID is the mac address of the wireless access point. The BSSID element is optional. For example:
 
 ```xml
 <bssid>12-ab-34-ff-e5-46</bssid>
 ```
 
-#### Security
+##### Security
 
 Contains the type of security the client uses when connecting to the wireless network. The security element is required and must contain one of the following values:<br>
 
@@ -240,7 +238,7 @@ Contains the type of security the client uses when connecting to the wireless ne
 |WPA2-Personal| The wireless network is protected using Wi-Fi Protected Access 2, which typically uses a pre-shared key.|
 |WPA2-Enterprise| The wireless network is protected using Wi-Fi Protected Access 2-Enterprise.|
 
-#### Example
+For example:
 
 ```xml
 <security>WPA2-Enterprise</security> 
@@ -248,9 +246,7 @@ Contains the type of security the client uses when connecting to the wireless ne
 
 #### TrustedRootCA
 
-Contains the thumbprint of the trusted root certificate of the wireless network. You can use any valid trusted root certificate. The value is represented as hexadecimal string, where each byte in the string is separated by a single space. The element is optional.
-
-#### Example
+Contains the thumbprint of the trusted root certificate of the wireless network. You can use any valid trusted root certificate. The value is represented as hexadecimal string, where each byte in the string is separated by a single space. The element is optional. For example:
 
 ```xml
 <trustedRootCA>a2 91 34 aa 22 3a a2 3a 4a 78 a2 aa 75 a2 34 2a 3a 11 4a aa</trustedRootCA>
@@ -259,7 +255,7 @@ Contains the thumbprint of the trusted root certificate of the wireless network.
 #### Sig_quality
 Contains numeric value ranging from 0 to 100 to represent the wireless network's signal strength needed to be considered a trusted signal.
 
-#### Example
+For example:
 
 ```xml
 <sig_quality>80</sig_quality>
