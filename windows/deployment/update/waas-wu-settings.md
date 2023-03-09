@@ -280,7 +280,7 @@ if (!(Test-Path $registryPath))
 New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWORD -Force | Out-Null
 ```
 
-## <a name="allow-windows-update-before-initial-sign-in"> </a> Allow Windows updates to install before initial user sign-in
+##Allow Windows updates to install before initial user sign-in
 *(Starting in Windows 11, version 22H2)*
 
 On new devices, Windows Update doesn't begin installing background updates until a user has completed the Out of Box Experience (OOBE) and signs in for the first time. In many cases, the user signs in immediately after completing the OOBE. However, some VM-based solutions provision a device and automate the first user experience. These VMs may not be immediately assigned to a user so they won't see an initial sign-in until several days later.  
