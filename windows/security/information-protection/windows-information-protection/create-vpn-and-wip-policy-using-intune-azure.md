@@ -43,7 +43,7 @@ To associate your WIP policy with your organization's existing VPN policy, use t
     - **Name**: Enter a name for your setting. For example, enter `EDPModeID`.
     - **OMA-URI**: Enter `./Vendor/MSFT/VPNv2/YourVPNProfileName/EDPModeId`.
     - **Data type**: Select `String`.
-    - **Value**: Type your fully-qualified domain that should be used by the OMA-URI setting. For example, enter `corp.contoso.com`.
+    - **Value**: Type your fully qualified domain that should be used by the OMA-URI setting. For example, enter `corp.contoso.com`.
 
     For more information on these settings, see [Use custom settings for Windows devices in Intune](/mem/intune/configuration/custom-settings-windows-10).
 
@@ -53,7 +53,7 @@ To associate your WIP policy with your organization's existing VPN policy, use t
 
 After you've created your VPN policy, you'll need to deploy it to the same group you deployed your Windows Information Protection (WIP) policy.
 
-1.  On the **App policy** blade, select your newly-created policy, select **User groups** from the menu that appears, and then select **Add user group**.
+1.  On the **App policy** blade, select your newly created policy, select **User groups** from the menu that appears, and then select **Add user group**.
 
     A list of user groups, made up of all of the security groups in your Azure Active Directory, appear in the **Add user group** blade.
 
