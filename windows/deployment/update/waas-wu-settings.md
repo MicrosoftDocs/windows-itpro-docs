@@ -251,7 +251,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\
 
    This value sets the SUS statistics server by HTTP name (for example, http://IntranetSUS).
 
-## <a name="bkmk_display-name"> </a> Display organization name in Windows Update notifications
+##Display organization name in Windows Update notifications
 <!--6286260-->
 When Windows 11 clients are associated with an Azure AD tenant, the organization name appears in the Windows Update notifications. For instance, when you have a compliance deadline configured for Windows Update for Business, the user notification will display a message similar to **Contoso requires important updates to be installed**. The organization name will also display on the **Windows Update** page in the **Settings** for Windows 11.  
   
