@@ -77,16 +77,15 @@ You represent signal rules in XML. Each signal rule has a starting and ending `r
 
 ### Signal element
 
-Each rule element has a `signal` element. All signal elements have a `type` element and `value`. The values currently supported listed in the following table:
+Each rule element has a `signal` element. All signal elements have a `type` element and `value`. The values supported are:
 
-|Attribute|Value|
-|---------|-----|
-|type| `bluetooth` or `ipConfig`|
-|type| `wifi`|
+- bluetooth
+- ipConfig
+- wifi
 
 #### Bluetooth
 
-You define the bluetooth signal with more attributes in the signal element. The bluetooth configuration doesn't use any other elements. You can end the signal element with short ending tag "\/>".
+You define the bluetooth signal with more attributes in the signal element. The bluetooth configuration doesn't use any other elements. You can end the signal element with short ending tag `/>`.
 
 |Attribute|Value|Required|
 |---------|-----|--------|
@@ -103,6 +102,7 @@ You define the bluetooth signal with more attributes in the signal element. The 
     <signal type="bluetooth" scenario="Authentication" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/>
 </rule>
 ```
+
 The **classofDevice** attribute defaults to Phone and uses the values from the following table:
 
 |Description|Value|
@@ -132,9 +132,7 @@ You define IP configuration signals using one or more ipConfiguration elements. 
 
 ##### IPv4Prefix
 
-The IPv4 network prefix represented in Internet standard dotted-decimal notation. A network prefix that uses the Classless Inter-Domain Routing (CIDR) notation is required as part of the network string. A network port must not be present in the network string. A **signal** element may only contain one **ipv4Prefix** element.
-
-#### Example
+The IPv4 network prefix represented in Internet standard dotted-decimal notation. A network prefix that uses the Classless Inter-Domain Routing (CIDR) notation is required as part of the network string. A network port must not be present in the network string. A **signal** element may only contain one **ipv4Prefix** element. For example:
 
 ```xml
 <ipv4Prefix>192.168.100.0/24</ipv4Prefix>
@@ -144,9 +142,7 @@ The assigned IPv4 addresses in the range of 192.168.100.1 to 192.168.100.254 mat
 
 ##### IPv4Gateway
 
-The IPv4 network gateway represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string. A **signal** element may only contain one **ipv4Gateway** element.
-
-#### Example
+The IPv4 network gateway represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string. A **signal** element may only contain one **ipv4Gateway** element. For example:
 
 ```xml
 <ipv4Gateway>192.168.100.10</ipv4Gateway>
@@ -154,9 +150,7 @@ The IPv4 network gateway represented in Internet standard dotted-decimal notatio
 
 ##### IPv4DhcpServer
 
-The IPv4 DHCP server represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string. A **signal** element may only contain one **ipv4DhcpServer** element.
-
-#### Example
+The IPv4 DHCP server represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string. A **signal** element may only contain one **ipv4DhcpServer** element. For example:
 
 ```xml
 <ipv4DhcpServer>192.168.100.10</ipv4DhcpServer>
@@ -173,9 +167,7 @@ The IPv4 DNS server represented in Internet standard dotted-decimal notation. A 
 
 ##### IPv6Prefix
 
-The IPv6 network prefix represented in IPv6 network using Internet standard hexadecimal encoding. A network prefix in CIDR notation is required as part of the network string. A network port or scope ID must not be present in the network string. A **signal** element may only contain one **ipv6Prefix** element.
-
-#### Example 
+The IPv6 network prefix represented in IPv6 network using Internet standard hexadecimal encoding. A network prefix in CIDR notation is required as part of the network string. A network port or scope ID must not be present in the network string. A **signal** element may only contain one **ipv6Prefix** element. For example: 
 
 ```xml
 <ipv6Prefix>21DA:D3::/48</ipv6Prefix>
@@ -183,9 +175,7 @@ The IPv6 network prefix represented in IPv6 network using Internet standard hexa
 
 ##### IPv6Gateway
 
-The IPv6 network gateway represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string. A **signal** element may only contain one **ipv6Gateway** element.
-
-#### Example
+The IPv6 network gateway represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string. A **signal** element may only contain one **ipv6Gateway** element. For example:
 
 ```xml
 <ipv6Gateway>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6Gateway>
@@ -193,9 +183,7 @@ The IPv6 network gateway represented in Internet standard hexadecimal encoding. 
 
 ##### IPv6DhcpServer
 
-The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string. A **signal** element may only contain one **ipv6DhcpServer** element.
-
-#### Example
+The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string. A **signal** element may only contain one **ipv6DhcpServer** element. For example:
 
 ```xml
 <ipv6DhcpServer>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6DhcpServer
@@ -203,9 +191,7 @@ The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IP
 
 ##### IPv6DnsServer
 
-The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string. The **signal** element may contain one or more **ipv6DnsServer** elements.
-
-#### Example
+The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string. The **signal** element may contain one or more **ipv6DnsServer** element. For example:
 
 ```xml
 <ipv6DnsServer>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6DnsServer>
@@ -213,9 +199,7 @@ The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IP
 
 ##### dnsSuffix
 
-The fully qualified domain name of your organization's internal DNS suffix where any part of the fully qualified domain name in this setting exists in the computer's primary DNS suffix. The **signal** element may contain one or more **dnsSuffix** elements.
-
-#### Example
+The fully qualified domain name of your organization's internal DNS suffix where any part of the fully qualified domain name in this setting exists in the computer's primary DNS suffix. The **signal** element may contain one or more **dnsSuffix** element. For example:
 
 ```xml
 <dnsSuffix>corp.contoso.com</dnsSuffix>
