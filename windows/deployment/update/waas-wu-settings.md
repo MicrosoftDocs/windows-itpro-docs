@@ -33,7 +33,7 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 | [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
 | [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
 | |  [Windows Update notifications display organization name](#bkmk_display-name) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->|
-| | [Allow Windows updates to install before initial user logon](#allow-windows-update-before-initial-logon) | Windows 11 version 22H2 |
+| | [Allow Windows updates to install before initial user sign-in](#allow-windows-update-before-initial-sign-in) | Windows 11 version 22H2 |
 
 >[!IMPORTANT]
 >Additional information about settings to manage device restarts and restart notifications for updates is available on **[Manage device restarts after updates](waas-restart.md)**.
@@ -280,7 +280,7 @@ if (!(Test-Path $registryPath))
 New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWORD -Force | Out-Null
 ```
 
-## <a name="allow-windows-update-before-initial-logon"> </a> Allow Windows updates to install before initial user logon
+## <a name="allow-windows-update-before-initial-sign-in"> </a> Allow Windows updates to install before initial user sign-in
 *(Starting in Windows 11, version 22H2)*
 
 On new devices, Windows Update doesn't begin installing background updates until a user has completed the Out of Box Experience (OOBE) and signs in for the first time. In many cases, the user signs in immediately after completing the OOBE. However, some VM-based solutions provision a device and automate the first user experience. These VMs may not be immediately assigned to a user so they won't see an initial sign-in until several days later.  
