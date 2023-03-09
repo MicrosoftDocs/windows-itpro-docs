@@ -107,7 +107,7 @@ You can try any of the processes included in these scenarios, but you should foc
 
 - **Use WIP on NTFS, FAT, and exFAT systems**:
 
-  1. Start an app that uses the FAT or exFAT file system (for example a SD card or USB flash drive), and appears on your allowed apps list.
+  1. Start an app that uses the FAT or exFAT file system (for example an SD card or USB flash drive), and appears on your allowed apps list.
   2. Create, edit, write, save, copy, and move files. Basic file and folder operations like copy, move, rename, delete, and so on, should work properly on encrypted files.
 
 - **Verify your shared files can use WIP**:
