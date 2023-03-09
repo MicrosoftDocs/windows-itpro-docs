@@ -1,7 +1,7 @@
 ---
 title: Validate the applications deployed to Windows SE devices
 description: Learn how to validate the applications deployed to Windows SE devices via Intune.
-ms.date: 03/03/2023
+ms.date: 03/09/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
@@ -148,6 +148,10 @@ Select one of the following options to learn the next steps:
 > [!div class="op_single_selector"]
 > - [Create policies](create-policies.md)
 > - [Important deployment considerations](considerations.md)
+
+> [!div class="nextstepaction"]
+> [Create policies](create-policies.md) [Important deployment considerations](considerations.md)
+> [Important deployment considerations](considerations.md)
 
 [M365-1]: /microsoft-365/education/deploy/microsoft-store-for-education
 
