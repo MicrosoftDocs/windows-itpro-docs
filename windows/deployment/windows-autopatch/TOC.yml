@@ -47,6 +47,8 @@
             - name: Windows updates
               href:
               items:
+                - name: Customize Windows Update settings
+                  href: operate/windows-autopatch-windows-update.md
                 - name: Windows quality updates
                   href: operate/windows-autopatch-windows-quality-update-overview.md
                   items:
