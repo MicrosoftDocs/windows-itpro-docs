@@ -59,7 +59,7 @@ You can try any of the processes included in these scenarios, but you should foc
       You should see a WIP-related warning box, asking you to click either **Change to personal** or **Keep at work**.
 
   2. Click **Keep at work**. The content isn't pasted into the non-enterprise app.
-  3. Repeat Step 1, but this time click **Change to personal**, and try to paste the content again.
+  3. Repeat Step 1, but this time select **Change to personal** and try to paste the content again.
 
       The content is pasted into the non-enterprise app.
 
@@ -72,7 +72,7 @@ You can try any of the processes included in these scenarios, but you should foc
       You should see a WIP-related warning box, asking you to click either **Keep at work** or **Change to personal**.
 
   2. Click **Keep at work**. The content isn't dropped into the non-enterprise app.
-  3. Repeat Step 1, but this time click **Change to personal**, and try to drop the content again.
+  3. Repeat Step 1, but this time select **Change to personal** and try to drop the content again.
 
       The content is dropped into the non-enterprise app.
 
@@ -85,7 +85,7 @@ You can try any of the processes included in these scenarios, but you should foc
       You should see a WIP-related warning box, asking you to click either **Keep at work** or **Change to personal**.
 
   2. Click **Keep at work**. The content isn't shared into Facebook.
-  3. Repeat Step 1, but this time click **Change to personal**, and try to share the content again.
+  3. Repeat Step 1, but this time select **Change to personal** and try to share the content again.
 
       The content is shared into Facebook.
 
