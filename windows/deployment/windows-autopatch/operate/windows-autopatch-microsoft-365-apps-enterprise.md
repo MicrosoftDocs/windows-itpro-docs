@@ -31,7 +31,7 @@ Microsoft 365 Apps deployed on the [Monthly Enterprise Channel](/deployoffice/ov
 For a device to be eligible for Microsoft 365 Apps for enterprise updates (both 32-bit and 64-bit versions), as a part of Windows Autopatch, they must meet the following criteria:  
 
 - The device must be turned on and have an internet connection.
-- The device must be able to access the [required network endpoints](../prepare/windows-autopatch-configure-network#required-microsoft-product-endpoints) to reach the Office Content Delivery Network (CDN).
+- The device must be able to access the [required network endpoints](../prepare/windows-autopatch-configure-network.md#required-microsoft-product-endpoints) to reach the Office Content Delivery Network (CDN).
 - There are no policy conflicts between Microsoft Autopatch policies and customer policies.
 - The device must have checked into the Intune service in the last five days.
 - If Microsoft 365 Apps are running, the apps must close for the update process to complete.
