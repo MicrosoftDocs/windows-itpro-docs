@@ -2,7 +2,7 @@
 title: Windows 11 SE Overview
 description: Learn about Windows 11 SE, and the apps that are included with the operating system.
 ms.topic: article
-ms.date: 09/12/2022
+ms.date: 03/09/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ms.collection:
