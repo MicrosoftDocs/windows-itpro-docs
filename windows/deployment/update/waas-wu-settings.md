@@ -9,17 +9,12 @@ manager: aaroncz
 ms.topic: article
 ms.collection: highpri, tier2
 ms.technology: itpro-updates
-ms.date: 01/06/2023
+ms.date: 03/09/2023
 ---
 
 # Manage additional Windows Update settings
 
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-
+***(Applies to: Windows 11 & Windows 10)***
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
@@ -38,7 +33,7 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 | [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
 | [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
 | |  [Windows Update notifications display organization name](#bkmk_display-name) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->| 
-| | [Allow Windows Updates to install before initial user logon](#allow-windows-update-before-initial-logon) | Windows 11 22H2 devices |
+| | [Allow Windows updates to install before initial user logon](#allow-windows-update-before-initial-logon) | Windows 11 version 22H2 |
 
 >[!IMPORTANT]
 >Additional information about settings to manage device restarts and restart notifications for updates is available on **[Manage device restarts after updates](waas-restart.md)**.
@@ -285,11 +280,11 @@ if (!(Test-Path $registryPath))
 New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWORD -Force | Out-Null
 ```
 
-## <a name="allow-windows-update-before-initial-logon"> </a> Allow Windows Updates to install before initial user logon
+## <a name="allow-windows-update-before-initial-logon"> </a> Allow Windows updates to install before initial user logon
 
-This value is supported on devices running Windows 11, version 22H2 or newer.
+*(Starting in Windows 11, version 22H2)*
 
-On new devices Windows Update does not begin to install background updates until a user has completed the Out of Box Experience and logs on for the first time.  The initial logon typically happens immediately after completing that first user experience.  Some VM-based solutions provision a device and automate the first user experience but are not immediately assigned to a user and don't see an initial logon until several days later.  
+On new devices, Windows Update doesn't begin installing background updates until a user has completed the Out of Box Experience (OOBE) and signs in for the first time. In many cases, the user signs in immediately after completing the OOBE. However, some VM-based solutions provision a device and automate the first user experience but aren't immediately assigned to a user and don't see an initial logon until several days later.  
 
 In those scenarios, setting the following registry value allows those devices to begin background update work before a first user logon:
 
@@ -297,5 +292,5 @@ In those scenarios, setting the following registry value allows those devices to
 - **DWORD value name**: ScanBeforeInitialLogonAllowed
 - **Value data**: 1
 
-> [!CAUTION]
-> This value is designed to be used only for scenarios with a deferred initial user logon.  Setting this value on normal consumer retail devices could have a detrimental effect on performance as it may allow update work to occur as the user is logging in for the first time.
+> [!Warning]
+> This value is designed to be used only for scenarios with a deferred initial user sign in. Setting this value on normal consumer retail devices could have a detrimental effect on performance as it may allow update work to occur as the user is logging in for the first time.
