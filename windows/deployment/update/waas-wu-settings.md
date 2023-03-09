@@ -282,15 +282,26 @@ New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWO
 
 ## <a name="allow-windows-update-before-initial-logon"> </a> Allow Windows updates to install before initial user logon
 
+<<<<<<< HEAD
 *(Starting in Windows 11, version 22H2)*
 
 On new devices, Windows Update doesn't begin installing background updates until a user has completed the Out of Box Experience (OOBE) and signs in for the first time. In many cases, the user signs in immediately after completing the OOBE. However, some VM-based solutions provision a device and automate the first user experience but aren't immediately assigned to a user and don't see an initial logon until several days later.  
+=======
+This value is supported on devices running Windows 11, version 22H2, or later.
 
-In those scenarios, setting the following registry value allows those devices to begin background update work before a first user logon:
+On new devices, Windows Update does not begin to install background updates until a user has completed the Out of Box Experience and signs in for the first time.  The user typically signs in initially immediately after completing that first user experience. Some VM-based solutions provision a device and automate the first user experience but are not immediately assigned to a user and don't see a user initially signing in until several days later.  
+>>>>>>> e9047ec25fd2823845599b3e4f516ef67e2972e4
+
+In those scenarios, setting the following registry values allows those devices to begin background update work before a user first signs in:
 
 - **Registry key**: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator
 - **DWORD value name**: ScanBeforeInitialLogonAllowed
 - **Value data**: 1
 
+<<<<<<< HEAD
 > [!Warning]
 > This value is designed to be used only for scenarios with a deferred initial user sign in. Setting this value on normal consumer retail devices could have a detrimental effect on performance as it may allow update work to occur as the user is logging in for the first time.
+=======
+> [!CAUTION]
+> This value is designed to be used only for scenarios where the initial signing-in of a user is deferred. Setting this value on normal consumer retail devices could have a detrimental effect on performance as it may allow update work to occur as the user signs in for the first time.
+>>>>>>> e9047ec25fd2823845599b3e4f516ef67e2972e4
