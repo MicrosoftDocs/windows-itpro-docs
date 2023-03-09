@@ -50,15 +50,15 @@ Create a configuration profile that will set the required policies for Windows U
    > These settings aren't required, but they're recommended to ensure that users of the device cannot override the diagnostic data level of the device.
    - **Setting**: Configure Telemetry Opt In Settings Ux
       - **Value**: Disabled
-        -  By turning this setting on, you're disabling the ability for a user to potentially override the diagnostic data level of devices such that data won't be available for those devices in Windows Update for Business reports
+        -  By turning this setting on, you're disabling the ability for a user to potentially override the diagnostic data level of devices such that data won't be available for those devices in Windows Update for Business reports.
 
    - **Setting**: Configure Telemetry Opt In Change Notification
         - **Value**: Disabled
-          -  By turning this setting on, you're disabling notifications of diagnostic data changes
+          -  By turning this setting on, you're disabling notifications of diagnostic data changes.
           
     - **Setting**: Allow device name to be sent in Windows diagnostic data
         - **Value**: Allowed
-          - If this policy is disabled, the device name won't be sent and won't be visible in Windows Update for Business reports
+          - If this policy is disabled, the device name won't be sent and won't be visible in Windows Update for Business reports.
 
 1. Continue through the next set of tabs **Scope tags**, **Assignments**, and **Applicability Rules** to assign the configuration profile to devices you wish to enroll.
 1. Review the settings and then select **Create**.
