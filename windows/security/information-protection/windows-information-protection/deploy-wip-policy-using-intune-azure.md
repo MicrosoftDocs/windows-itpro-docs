@@ -22,7 +22,7 @@ After you've created your Windows Information Protection (WIP) policy, you'll ne
 
 ## To deploy your WIP policy
 
-1. On the **App protection policies** pane, click your newly-created policy, click **Assignments**, and then select groups to include or exclude from the policy.
+1. On the **App protection policies** pane, click your newly created policy, click **Assignments**, and then select groups to include or exclude from the policy.
 
 2. Choose the group you want your policy to apply to, and then click **Select** to deploy the policy.
 
