@@ -2,12 +2,11 @@
 title: Microsoft Security Development Lifecycle
 description: Download the Microsoft Security Development Lifecycle white paper that covers a security assurance process focused on software development.
 ms.prod: windows-client
-author: dansimp
-ms.author: dansimp
-manager: aaroncz
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
-ms.reviewer: 
 ms.technology: itpro-security
 ms.date: 12/31/2017
 ---

@@ -3,9 +3,9 @@ title: Associate and deploy a VPN policy for Windows Information Protection (WIP
 description: After you've created and deployed your Windows Information Protection (WIP) policy, use Microsoft Intune to link it to your Virtual Private Network (VPN) policy
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: aaroncz
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: conceptual
 ms.date: 02/26/2019
 ms.reviewer: 
@@ -43,7 +43,7 @@ To associate your WIP policy with your organization's existing VPN policy, use t
     - **Name**: Enter a name for your setting. For example, enter `EDPModeID`.
     - **OMA-URI**: Enter `./Vendor/MSFT/VPNv2/YourVPNProfileName/EDPModeId`.
     - **Data type**: Select `String`.
-    - **Value**: Type your fully-qualified domain that should be used by the OMA-URI setting. For example, enter `corp.contoso.com`.
+    - **Value**: Type your fully qualified domain that should be used by the OMA-URI setting. For example, enter `corp.contoso.com`.
 
     For more information on these settings, see [Use custom settings for Windows devices in Intune](/mem/intune/configuration/custom-settings-windows-10).
 
@@ -51,9 +51,9 @@ To associate your WIP policy with your organization's existing VPN policy, use t
 
 ## Deploy your VPN policy using Microsoft Intune
 
-After you’ve created your VPN policy, you'll need to deploy it to the same group you deployed your Windows Information Protection (WIP) policy.
+After you've created your VPN policy, you'll need to deploy it to the same group you deployed your Windows Information Protection (WIP) policy.
 
-1.  On the **App policy** blade, select your newly-created policy, select **User groups** from the menu that appears, and then select **Add user group**.
+1.  On the **App policy** blade, select your newly created policy, select **User groups** from the menu that appears, and then select **Add user group**.
 
     A list of user groups, made up of all of the security groups in your Azure Active Directory, appear in the **Add user group** blade.
 
