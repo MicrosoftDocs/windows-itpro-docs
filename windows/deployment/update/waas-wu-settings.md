@@ -32,7 +32,7 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 | [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | All |
 | [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
 | [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
-| |  [Windows Update notifications display organization name](#bkmk_display-name) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->| 
+| |  [Windows Update notifications display organization name](#bkmk_display-name) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->|
 | | [Allow Windows updates to install before initial user logon](#allow-windows-update-before-initial-logon) | Windows 11 version 22H2 |
 
 >[!IMPORTANT]
@@ -281,27 +281,15 @@ New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWO
 ```
 
 ## <a name="allow-windows-update-before-initial-logon"> </a> Allow Windows updates to install before initial user logon
-
-<<<<<<< HEAD
 *(Starting in Windows 11, version 22H2)*
 
-On new devices, Windows Update doesn't begin installing background updates until a user has completed the Out of Box Experience (OOBE) and signs in for the first time. In many cases, the user signs in immediately after completing the OOBE. However, some VM-based solutions provision a device and automate the first user experience but aren't immediately assigned to a user and don't see an initial logon until several days later.  
-=======
-This value is supported on devices running Windows 11, version 22H2, or later.
+On new devices, Windows Update doesn't begin installing background updates until a user has completed the Out of Box Experience (OOBE) and signs in for the first time. In many cases, the user signs in immediately after completing the OOBE. However, some VM-based solutions provision a device and automate the first user experience. These VMs may not be immediately assigned to a user so they won't see an initial sign-in until several days later.  
 
-On new devices, Windows Update does not begin to install background updates until a user has completed the Out of Box Experience and signs in for the first time.  The user typically signs in initially immediately after completing that first user experience. Some VM-based solutions provision a device and automate the first user experience but are not immediately assigned to a user and don't see a user initially signing in until several days later.  
->>>>>>> e9047ec25fd2823845599b3e4f516ef67e2972e4
-
-In those scenarios, setting the following registry values allows those devices to begin background update work before a user first signs in:
+In scenarios where initial sign-in is delayed, setting the following registry values allow devices to begin background update work before a user first signs in:
 
 - **Registry key**: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator
 - **DWORD value name**: ScanBeforeInitialLogonAllowed
 - **Value data**: 1
 
-<<<<<<< HEAD
 > [!Warning]
-> This value is designed to be used only for scenarios with a deferred initial user sign in. Setting this value on normal consumer retail devices could have a detrimental effect on performance as it may allow update work to occur as the user is logging in for the first time.
-=======
-> [!CAUTION]
-> This value is designed to be used only for scenarios where the initial signing-in of a user is deferred. Setting this value on normal consumer retail devices could have a detrimental effect on performance as it may allow update work to occur as the user signs in for the first time.
->>>>>>> e9047ec25fd2823845599b3e4f516ef67e2972e4
+> This value is designed to be used only for scenarios with a deferred initial user sign in. Setting this value on devices where initial user sign in isn't delayed could have a detrimental effect on performance since it may allow update work to occur as the user is signing in for the first time.
