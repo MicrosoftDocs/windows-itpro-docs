@@ -9,12 +9,17 @@ manager: aaroncz
 ms.topic: article
 ms.collection: highpri, tier2
 ms.technology: itpro-updates
-ms.date: 03/09/2023
+ms.date: 01/06/2023
 ---
 
 # Manage additional Windows Update settings
 
-***(Applies to: Windows 11 & Windows 10)***
+
+**Applies to**
+
+- Windows 10
+- Windows 11
+
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
@@ -32,8 +37,7 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 | [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | All |
 | [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
 | [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
-| |  [Windows Update notifications display organization name](#bkmk_display-name) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->|
-| | [Allow Windows updates to install before initial user sign-in](#allow-windows-update-before-initial-sign-in) | Windows 11 version 22H2 |
+| |  [Windows Update notifications display organization name](#bkmk_display-name) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->| 
 
 >[!IMPORTANT]
 >Additional information about settings to manage device restarts and restart notifications for updates is available on **[Manage device restarts after updates](waas-restart.md)**.
@@ -279,17 +283,3 @@ if (!(Test-Path $registryPath))
 
 New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWORD -Force | Out-Null
 ```
-
-## <a name="allow-windows-update-before-initial-sign-in"> </a> Allow Windows updates to install before initial user sign-in
-*(Starting in Windows 11, version 22H2)*
-
-On new devices, Windows Update doesn't begin installing background updates until a user has completed the Out of Box Experience (OOBE) and signs in for the first time. In many cases, the user signs in immediately after completing the OOBE. However, some VM-based solutions provision a device and automate the first user experience. These VMs may not be immediately assigned to a user so they won't see an initial sign-in until several days later.  
-
-In scenarios where initial sign-in is delayed, setting the following registry values allow devices to begin background update work before a user first signs in:
-
-- **Registry key**: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator
-- **DWORD value name**: ScanBeforeInitialLogonAllowed
-- **Value data**: 1
-
-> [!Warning]
-> This value is designed to be used only for scenarios with a deferred initial user sign in. Setting this value on devices where initial user sign in isn't delayed could have a detrimental effect on performance since it may allow update work to occur as the user is signing in for the first time.
