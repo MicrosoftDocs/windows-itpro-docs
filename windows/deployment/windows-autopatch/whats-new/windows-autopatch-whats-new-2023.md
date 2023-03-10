@@ -24,7 +24,8 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
-| [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) | New [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) feature. This feature is in public preview. |
+| [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) | Updated entire article |
+| [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) | New [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) feature. This feature is in public preview |
 
 ### March service release
 

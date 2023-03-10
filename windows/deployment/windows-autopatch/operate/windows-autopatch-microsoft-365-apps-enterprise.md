@@ -71,7 +71,7 @@ To ensure that users are receiving automatic updates, Windows Autopatch prevents
 
 Windows Autopatch doesn't allow you to pause or roll back an update in the Microsoft Intune admin center.  
 
-Please [submit a support request](../operate/windows-autopatch-support-request.md) to the Windows Autopatch Service Engineering Team to pause or roll back an update when needed.
+[Submit a support request](../operate/windows-autopatch-support-request.md) to the Windows Autopatch Service Engineering Team to pause or roll back an update when needed.
 
 > [!NOTE]
 > Updates are bundled together into a single release in the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). Therefore, we can't roll back only a portion of the update for Microsoft 365 Apps for enterprise.  
