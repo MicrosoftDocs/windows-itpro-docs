@@ -1,14 +1,14 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 03/08/2023
+ms.date: 03/10/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: dougeby 
 ms.reviewer: hathind
 ---
 
@@ -24,7 +24,8 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
-| [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) | New [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) feature. This feature is in public preview. |
+| [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) | Updated entire article |
+| [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) | New [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) feature. This feature is in public preview |
 
 ### March service release
 
