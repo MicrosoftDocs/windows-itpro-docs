@@ -28,7 +28,7 @@ ms.technology: itpro-security
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
-This article for IT professionals describes the steps to delete an AppLocker rule.
+This article for IT professionals describes the steps to delete AppLocker rules.
 
 As older apps are retired and new apps are deployed in your organization, it's necessary to modify the application control policies. If an app is no longer supported by your organization, then deleting the rule or rules associated with that app prevents the app from running.
 
