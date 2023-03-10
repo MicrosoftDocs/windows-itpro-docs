@@ -57,7 +57,7 @@ On devices running Windows client, you can install [the Windows Configuration De
 
 - When running Windows Configuration Designer on Windows releases earlier than Windows 10, version 2004 you might need to enable TLS 1.2, especially if using Bulk Enrollment Tokens.  You may see the error message in the `icd.log` file: `Error: AADSTS1002016: You are using TLS version 1.0, 1.1 and/or 3DES cipher which are deprecated to improve the security posture of Azure AD` For more information, see [Enable TLS 1.2 on client or server operating systems](/troubleshoot/azure/active-directory/enable-support-tls-environment#enable-tls-12-on-client-or-server-operating-systems-).
  
-- Windows Configuration Designer will not up to the standard size button with steps for the guided wizard.  Each step will be oversized button with no description to the left if the **Policies > Administrative Templates > Windows Components > Internet Explorer > Security Zones: Use only machine settings** Group Policy setting is enabled. Instead of changing the security setting, we recommend you run Windows Configuration Designer on a different device.
+- Windows Configuration Designer will not display the the standard size buttons with steps for the guided wizard.  Each step will be oversized button with no description to the left if the **Policies > Administrative Templates > Windows Components > Internet Explorer > Security Zones: Use only machine settings** Group Policy setting is enabled. Instead of changing the security setting, we recommend you run Windows Configuration Designer on a different device.
 
 - You can only run one instance of Windows Configuration Designer on your computer at a time.
 
