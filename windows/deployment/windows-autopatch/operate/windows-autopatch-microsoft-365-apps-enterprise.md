@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Apps for enterprise
 description: This article explains how Windows Autopatch manages Microsoft 365 Apps for enterprise updates
-ms.date: 02/28/2023
+ms.date: 03/10/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -16,7 +16,12 @@ ms.reviewer: hathind
 
 ## Service level objective
 
-Windows Autopatch aims to keep at least 90% of eligible devices on a [supported version](/deployoffice/overview-update-channels#support-duration-for-monthly-enterprise-channel) of the Monthly Enterprise Channel (MEC) for [Enterprise Standard Suite](/deployoffice/about-microsoft-365-apps) (Access, Excel, OneNote, Outlook, PowerPoint, and Word). Microsoft 365 Apps deployed on the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) are supported for two months.
+Windows Autopatch aims to keep at least 90% of eligible devices on a [supported version](/deployoffice/overview-update-channels#support-duration-for-monthly-enterprise-channel) of the Monthly Enterprise Channel (MEC) for the:
+
+- [Enterprise Standard Suite](/deployoffice/about-microsoft-365-apps). The Enterprise Standard Suite includes Access, Excel, OneNote, Outlook, PowerPoint, and Word.
+- Subscription versions of Microsoft Project and Visio desktop apps, for example, Project Plan 3 or Visio Plan 2.
+
+Microsoft 365 Apps deployed on the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) are supported for two months.
 
 > [!NOTE]
 > [Microsoft Teams](../operate/windows-autopatch-teams.md) uses a different update channel from the rest of Microsoft 365 Apps.
@@ -25,8 +30,11 @@ Windows Autopatch aims to keep at least 90% of eligible devices on a [supported 
 
 For a device to be eligible for Microsoft 365 Apps for enterprise updates (both 32-bit and 64-bit versions), as a part of Windows Autopatch, they must meet the following criteria:  
 
+- The device must be turned on and have an internet connection.
+- The device must be able to access the [required network endpoints](../prepare/windows-autopatch-configure-network.md#required-microsoft-product-endpoints) to reach the Office Content Delivery Network (CDN).
 - There are no policy conflicts between Microsoft Autopatch policies and customer policies.
 - The device must have checked into the Intune service in the last five days.
+- If Microsoft 365 Apps are running, the apps must close for the update process to complete.
 
 ## Update release schedule
 
@@ -47,21 +55,13 @@ Windows Autopatch configures the following end user experiences:
 
 ### Behavior during updates
 
-Updates are only applied when Microsoft 365 Apps aren't running. Therefore, notifications usually appear because the user is working in a Microsoft 365 App, such as Microsoft Outlook, and hasn't closed it in several days.
+> [!NOTE]
+> If Microsoft 365 Apps are running, the apps must close for the update process to complete.
 
-Once the device downloads the update, users are given notifications leading up to the deadline. They'll receive the following message in the notification area in Windows, reminding them to apply the updates.
+Updates are only applied when Microsoft 365 Apps aren't running. Therefore, [end user notifications for Microsoft 365 Apps](/deployoffice/updates/end-user-update-notifications-microsoft-365-apps) usually appear when:
 
-*Updates ready to be applied
-Updates are required by your system admin are blocked by one or more apps. Office will restart at mm/dd/yyyy h:mm AM/PM to apply updates.*
-
-Alternatively, users can select **Update now** to apply the updates. Users are prompted to close all open Office programs. After the updates are applied, the message disappears.
-
-When the deadline arrives and the updates still aren't applied, users will:
-
-1. See a dialog box that warns them that they have 15 minutes before the updates are applied.
-1. Have 15 minutes to save and close any work.
-
-When the countdown reaches 00∶00, any open Office programs are closed, and the updates are applied.
+- The user is working in a Microsoft 365 App, such as Microsoft Outlook, and hasn't closed it in several days.
+- The update [deadline arrives](/deployoffice/updates/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) and the updates still aren't applied.
 
 ### Office client app configuration
 
@@ -69,17 +69,12 @@ To ensure that users are receiving automatic updates, Windows Autopatch prevents
 
 ## Microsoft 365 Apps for enterprise update controls
 
-If Windows Autopatch detects issues between versions of Microsoft 365 Apps for enterprise, we might pause the update by forcing Microsoft 365 Apps to stay on a specific version.  
+Windows Autopatch doesn't allow you to pause or roll back an update in the Microsoft Intune admin center.  
 
-Windows Autopatch will either:
-
-- Choose to stay on the previous version for devices that haven't received the update yet.
-- Force all devices to roll back to the previous version.
+[Submit a support request](../operate/windows-autopatch-support-request.md) to the Windows Autopatch Service Engineering Team to pause or roll back an update when needed.
 
 > [!NOTE]
-> Windows Autopatch doesn't allow you to:<ul><li>Pause or rollback an update in the Microsoft Intune admin center</li><li>Submit a request to the Windows Autopatch Service Engineering Team to pause or rollback an update</li>
-
-Updates are bundled together into a single release in the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). Therefore, we can't roll back only a portion of the update for Microsoft 365 Apps for enterprise.  
+> Updates are bundled together into a single release in the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). Therefore, we can't roll back only a portion of the update for Microsoft 365 Apps for enterprise.  
 
 ## Allow or block Microsoft 365 App updates
 
