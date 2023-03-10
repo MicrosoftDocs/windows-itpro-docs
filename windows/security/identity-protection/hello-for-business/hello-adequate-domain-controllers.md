@@ -1,6 +1,6 @@
 ---
-title: Having enough Domain Controllers for Windows Hello for Business deployments
-description: Guide for planning to have an adequate number of Domain Controllers for Windows Hello for Business deployments
+title: Plan an adequate number of Domain Controllers for Windows Hello for Business deployments
+description: Learn how to plan for an adequate number of Domain Controllers to support Windows Hello for Business deployments.
 ms.date: 03/10/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
