@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Apps for enterprise
 description: This article explains how Windows Autopatch manages Microsoft 365 Apps for enterprise updates
-ms.date: 03/10/2023
+ms.date: 03/10/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
