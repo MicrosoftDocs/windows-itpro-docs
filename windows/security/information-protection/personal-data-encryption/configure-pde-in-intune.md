@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.date: 12/13/2022
+ms.date: 03/10/2023
 ---
 
 <!-- Max 5963468 OS 32516487 -->
@@ -21,241 +21,353 @@ ms.date: 12/13/2022
 
 ### Enable Personal Data Encryption (PDE)
 
-1. Sign into [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Navigate to **Devices** > **Configuration Profiles**
+1. In the **Home** screen, select **Devices**.
 
-3. Select **Create profile**
+1. In the **Devices | Overview** screen, under **Policy**, select **Configuration Profiles**.
 
-4. Under **Platform**, select **Windows 10 and later**
+1. In the **Devices | Configuration profiles screen**, select **Create profile**.
 
-5. Under **Profile type**, select **Templates**
+1. In the **Create profile** window:
 
-6. Under **Template name**, select **Custom**, and then select **Create**
+   1. Under **Platform**, select **Windows 10 and later**.
 
-7. In **Basics**:
+   1. Under **Profile type**, select **Templates**.
 
-    1. Next to **Name**, enter **Personal Data Encryption**
-    2. Next to **Description**, enter a description
+   1. When the templates appears, under **Template name**, select **Custom**.
 
-8. Select **Next**
+   1. Select **Create**.
 
-9. In **Configuration settings**, select **Add**
+1. In the **Basics** page of the **Custom** screen:
 
-10. In **Add Row**:
+   1. Next to **Name**, enter **Personal Data Encryption**.
 
-    1. Next to **Name**, enter **Personal Data Encryption**
-    2. Next to **Description**, enter a description
-    3. Next to **OMA-URI**, enter in **./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption**
-    4. Next to **Data type**, select **Integer**
-    5. Next to **Value**, enter in **1**
+   1. Next to **Description**, enter a description.
 
-11. Select **Save**, and then select **Next**
+   1. Select **Next**.
 
-12. In **Assignments**:
+1. In **Configuration settings** page:
 
-    1. Under **Included groups**, select **Add groups**
-    2. Select the groups that the PDE policy should be deployed to
-    3. Select **Select**
-    4. Select **Next**
+   1. Select **Add**.
 
-13. In **Applicability Rules**, configure if necessary and then select **Next**
+   1. In the **Add Row** pane:
 
-14. In **Review + create**, review the configuration to make sure everything is configured correctly, and then select **Create**
+       1. Next to **Name**, enter **Personal Data Encryption**.
+       1. Next to **Description**, enter a description.
+       1. Next to **OMA-URI**, enter in **./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption**.
+       1. Next to **Data type**, select **Integer**.
+       1. Next to **Value**, enter in **1**.
+       1. Select **Save**.
+
+   1. Select **Next**
+
+1. In the **Scope tags** page, configure if necessary and then select **Next**.
+
+1. In the **Assignments** page:
+
+   1. Under **Included groups**, select **Add groups**.
+
+        > [!NOTE]
+        >
+        > Make sure to add the correct groups under **Included groups** and not under **Excluded groups**. Accidentally adding the desired device groups under **Excluded groups** will result in those devices being excluded and they won't receive the configuration profile.
+
+   1. In the **Select groups to include** window that opens, select the groups that the configuration profile should be assigned to, and then select **Select**.
+
+   1. Under **Groups**, ensure the correct group(s) are selected, and then select **Next**.
+
+1. In **Applicability Rules**, configure if necessary and then select **Next**.
+
+1. In **Review + create** page, review the configuration to make sure everything is configured correctly, and then select **Create**.
 
 ### Disable Winlogon automatic restart sign-on (ARSO)
 
-1. Sign into [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Navigate to **Devices** > **Configuration Profiles**
+1. In the **Home** screen, select **Devices**.
 
-3. Select **Create profile**
+1. In the **Devices | Overview** screen, under **Policy**, select **Configuration Profiles**.
 
-4. Under **Platform**, select **Windows 10 and later**
+1. In the **Devices | Configuration profiles screen**, select **Create profile**.
 
-5. Under **Profile type**, select **Templates**
+1. In the **Create profile** window:
 
-6. Under **Template name**, select **Administrative templates**, and then select **Create**
+   1. Under **Platform**, select **Windows 10 and later**.
 
-7. In **Basics**:
+   1. Under **Profile type**, select **Templates**.
 
-    1. Next to **Name**, enter **Disable ARSO**
-    2. Next to **Description**, enter a description
+   1. When the templates appears, under **Template name**, select **Administrative templates**.
 
-8. Select **Next**
+   1. Select **Create**.
 
-9. In **Configuration settings**, under **Computer Configuration**, navigate to **Windows Components** > **Windows Logon Options**
+1. In the **Basics** page of the **Create profile** screen:
 
-10. Select **Sign-in and lock last interactive user automatically after a restart**
+   1. Next to **Name**, enter **Disable ARSO**.
 
-11. In the **Sign-in and lock last interactive user automatically after a restart** window that opens, select **Disabled**, and then select **OK**
+   1. Next to **Description**, enter a description.
 
-12. Select **Next**
+   1. Select **Next**.
 
-13. In **Scope tags**, configure if necessary and then select **Next**
+1. In the **Configuration settings** page:
 
-14. In **Assignments**:
+   1. At the top of the page, make sure **Computer Configuration** is selected.
 
-    1. Under **Included groups**, select **Add groups**
-    2. Select the groups that the ARSO policy should be deployed to
-    3. Select **Select**
-    4. Select **Next**
+   1. Under **Setting name**, scroll down and select **Windows Components**.
 
-15. In **Review + create**, review the configuration to make sure everything is configured correctly, and then select **Create**
+   1. Under **Setting name**, scroll down and select **Windows Logon Options**. You may need to navigate between pages on the bottom right corner before finding the **Windows Logon Options** option.
+
+   1. Under **Setting name** of the **Windows Logon Options** pane, select **Sign-in and lock last interactive user automatically after a restart**.
+
+   1. In the **Sign-in and lock last interactive user automatically after a restart** window that opens, select **Disabled**, and then select **OK**
+
+   1. Select **Next**
+
+1. In the **Scope tags** page, configure if necessary and then select **Next**.
+
+1. In the **Assignments** page:
+
+   1. Under **Included groups**, select **Add groups**.
+
+        > [!NOTE]
+        >
+        > Make sure to add the correct groups under **Included groups** and not under **Excluded groups**. Accidentally adding the desired device groups under **Excluded groups** will result in those devices being excluded and they won't receive the configuration profile.
+
+   1. In the **Select groups to include** window that opens, select the groups that the configuration profile should be assigned to, and then select **Select**.
+
+   1. Under **Groups**, ensure the correct group(s) are selected, and then select **Next**.
+
+1. In **Review + create** page, review the configuration to make sure everything is configured correctly, and then select **Create**.
 
 ## Security hardening recommendations
 
 ### Disable kernel-mode crash dumps and live dumps
 
-1. Sign into [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Navigate to **Devices** > **Configuration Profiles**
+1. In the **Home** screen, select **Devices**.
 
-3. Select **Create profile**
+1. In the **Devices | Overview** screen, under **Policy**, select **Configuration Profiles**.
 
-4. Under **Platform**, select **Windows 10 and later**
+1. In the **Devices | Configuration profiles screen**, select **Create profile**.
 
-5. Under **Profile type**, select **Settings catalog**, and then select **Create**
+1. In the **Create profile** window:
 
-6. In **Basics**:
+   1. Under **Platform**, select **Windows 10 and later**.
 
-    1. Next to **Name**, enter **Disable Kernel-Mode Crash Dumps**
-    2. Next to **Description**, enter a description
+   1. Under **Profile type**, select **Settings catalog**.
 
-7. Select **Next**
+   1. Select **Create**.
 
-8. In **Configuration settings**, select **Add settings**
+1. In the **Basics** page of the **Create profile** screen:
 
-9. In the **Settings picker** window, under **Browse by category**, select **Memory Dump**
+   1. Next to **Name**, enter **Disable Kernel-Mode Crash Dumps**.
 
-10. When the settings appear under **Setting name**, select both **Allow Crash Dump** and **Allow Live Dump**, and then select the **X** in the top right corner of the **Settings picker** window to close the window
+   1. Next to **Description**, enter a description.
 
-11. Change both **Allow Live Dump** and **Allow Crash Dump** to **Block**, and then select **Next**
+   1. Select **Next**.
 
-12. In **Scope tags**, configure if necessary and then select **Next**
+1. In the **Configuration settings** page:
 
-13. In **Assignments**:
+   1. Select **Add settings**.
+   1. In the **Settings picker** pane:
 
-    1. Under **Included groups**, select **Add groups**
-    2. Select the groups that the disable crash dumps policy should be deployed to
-    3. Select **Select**
-    4. Select **Next**
+      1. Under **Browse by category**, scroll down and select **Memory Dump**.
 
-14. In **Review + create**, review the configuration to make sure everything is configured correctly, and then select **Create**
+      1. When the settings for the **Memory Dump** category appear under **Setting name**, select both **Allow Crash Dump** and **Allow Live Dump**, and then select the **X** in the top right corner of the **Settings picker** window to close the window.
+
+   1. Change both **Allow Live Dump** and **Allow Crash Dump** from **Allow** to **Block** by selecting the slider next to each option, and then select **Next**.
+
+1. In the **Scope tags** page, configure if necessary and then select **Next**.
+
+1. In the **Assignments** page:
+
+   1. Under **Included groups**, select **Add groups**.
+
+        > [!NOTE]
+        >
+        > Make sure to add the correct groups under **Included groups** and not under **Excluded groups**. Accidentally adding the desired device groups under **Excluded groups** will result in those devices being excluded and they won't receive the configuration profile.
+
+   1. In the **Select groups to include** window that opens, select the groups that the configuration profile should be assigned to, and then select **Select**.
+
+   1. Under **Groups**, ensure the correct group(s) are selected, and then select **Next**.
+
+1. In **Review + create** page, review the configuration to make sure everything is configured correctly, and then select **Create**.
 
 ### Disable Windows Error Reporting (WER)/Disable user-mode crash dumps
 
-1. Sign into [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Navigate to **Devices** > **Configuration Profiles**
+1. In the **Home** screen, select **Devices**.
 
-3. Select **Create profile**
+1. In the **Devices | Overview** screen, under **Policy**, select **Configuration Profiles**.
 
-4. Under **Platform**, select **Windows 10 and later**
+1. In the **Devices | Configuration profiles screen**, select **Create profile**.
 
-5. Under **Profile type**, select **Settings catalog**, and then select **Create**
+1. In the **Create profile** window:
 
-6. In **Basics**:
+   1. Under **Platform**, select **Windows 10 and later**.
 
-    1. Next to **Name**, enter **Disable Windows Error Reporting (WER)**
-    2. Next to **Description**, enter a description
+   1. Under **Profile type**, select **Settings catalog**.
 
-7. Select **Next**
+   1. Select **Create**.
 
-8. In **Configuration settings**, select **Add settings**
+1. In the **Basics** page of the **Create profile** screen:
 
-9. In the **Settings picker** window, under **Browse by category**, expand to **Administrative Templates** > **Windows Components**, and then select **Windows Error Reporting**
+   1. Next to **Name**, enter **Disable Windows Error Reporting (WER)**.
 
-10. When the settings appear under **Setting name**, select **Disable Windows Error Reporting**, and then select the **X** in the top right corner of the **Settings picker** window to close the window
+   1. Next to **Description**, enter a description.
 
-11. Change **Disable Windows Error Reporting** to **Enabled**, and then select **Next**
+   1. Select **Next**.
 
-12. In **Scope tags**, configure if necessary and then select **Next**
+1. In the **Configuration settings** page:
 
-13. In **Assignments**:
+   1. Select **Add settings**.
 
-    1. Under **Included groups**, select **Add groups**
-    2. Select the groups that the disable WER dumps policy should be deployed to
-    3. Select **Select**
-    4. Select **Next**
+   1. In the **Settings picker** window:
 
-14. In **Review + create**, review the configuration to make sure everything is configured correctly, and then select **Create**
+      1. Under **Browse by category**, expand **Administrative Templates** by selecting the **>** to the left of it.
+
+      1. Under **Administrative Templates**, scroll down and expand **Windows Components**.
+
+      1. Under **Windows Components**, scroll down and select **Windows Error Reporting**.
+
+      1. When the settings for the **Windows Error Reporting** subcategory appear under **Setting name**, select **Disable Windows Error Reporting**, and then select the **X** in the top right corner of the **Settings picker** window to close the window.
+
+   1. Change **Disable Windows Error Reporting** from **Disabled** to **Enabled** by selecting the slider next to the option.
+
+   1. select **Next**.
+
+1. In the **Scope tags** page, configure if necessary and then select **Next**.
+
+1. In the **Assignments** page:
+
+   1. Under **Included groups**, select **Add groups**.
+
+        > [!NOTE]
+        >
+        > Make sure to add the correct groups under **Included groups** and not under **Excluded groups**. Accidentally adding the desired device groups under **Excluded groups** will result in those devices being excluded and they won't receive the configuration profile.
+
+   1. In the **Select groups to include** window that opens, select the groups that the configuration profile should be assigned to, and then select **Select**.
+
+   1. Under **Groups**, ensure the correct group(s) are selected, and then select **Next**.
+
+1. In **Review + create** page, review the configuration to make sure everything is configured correctly, and then select **Create**.
 
 ### Disable hibernation
 
-1. Sign into [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Navigate to **Devices** > **Configuration Profiles**
+1. In the **Home** screen, select **Devices**.
 
-3. Select **Create profile**
+1. In the **Devices | Overview** screen, under **Policy**, select **Configuration Profiles**.
 
-4. Under **Platform**, select **Windows 10 and later**
+1. In the **Devices | Configuration profiles screen**, select **Create profile**.
 
-5. Under **Profile type**, select **Settings catalog**, and then select **Create**
+1. In the **Create profile** window:
 
-6. In **Basics**:
+   1. Under **Platform**, select **Windows 10 and later**.
 
-    1. Next to **Name**, enter **Disable Hibernation**
-    2. Next to **Description**, enter a description
+   1. Under **Profile type**, select **Settings catalog**.
 
-7. Select **Next**
+   1. Select **Create**.
 
-8. In **Configuration settings**, select **Add settings**
+1. In the **Basics** page of the **Create profile** screen:
 
-9. In the **Settings picker** window, under **Browse by category**, select **Power**
+   1. Next to **Name**, enter **Disable Hibernation**.
 
-10. When the settings appear under **Setting name**, select **Allow Hibernate**, and then select the **X** in the top right corner of the **Settings picker** window to close the window
+   1. Next to **Description**, enter a description.
 
-11. Change **Allow Hibernate** to **Block**, and then select **Next**
+   1. Select **Next**.
 
-12. In **Scope tags**, configure if necessary and then select **Next**
+1. In the **Configuration settings** page:
 
-13. In **Assignments**:
+   1. select **Add settings**.
 
-    1. Under **Included groups**, select **Add groups**
-    2. Select the groups that the disable hibernation policy should be deployed to
-    3. Select **Select**
-    4. Select **Next**
+   1. In the **Settings picker** window:
 
-14. In **Review + create**, review the configuration to make sure everything is configured correctly, and then select **Create**
+      1. Under **Browse by category**, scroll down and select **Power**.
+
+      1. When the settings for the **Power** category appear under **Setting name**, select **Allow Hibernate**, and then select the **X** in the top right corner of the **Settings picker** window to close the window.
+
+   1. Change **Allow Hibernate** from **Allow** to **Block** by selecting the slider next to the option.
+
+   1. Select **Next**.
+
+1. In the **Scope tags** page, configure if necessary and then select **Next**.
+
+1. In the **Assignments** page:
+
+   1. Under **Included groups**, select **Add groups**.
+
+        > [!NOTE]
+        >
+        > Make sure to add the correct groups under **Included groups** and not under **Excluded groups**. Accidentally adding the desired device groups under **Excluded groups** will result in those devices being excluded and they won't receive the configuration profile.
+
+   1. In the **Select groups to include** window that opens, select the groups that the configuration profile should be assigned to, and then select **Select**.
+
+   1. Under **Groups**, ensure the correct group(s) are selected, and then select **Next**.
+
+1. In **Review + create** page, review the configuration to make sure everything is configured correctly, and then select **Create**.
 
 ### Disable allowing users to select when a password is required when resuming from connected standby
 
-1. Sign into [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Navigate to **Devices** > **Configuration Profiles**
+1. In the **Home** screen, select **Devices**.
 
-3. Select **Create profile**
+1. In the **Devices | Overview** screen, under **Policy**, select **Configuration Profiles**.
 
-4. Under **Platform**, select **Windows 10 and later**
+1. In the **Devices | Configuration profiles screen**, select **Create profile**.
 
-5. Under **Profile type**, select **Settings catalog**, and then select **Create**
+1. In the **Create profile** window:
 
-6. In **Basics**:
+   1. Under **Platform**, select **Windows 10 and later**.
 
-    1. Next to **Name**, enter **Disable allowing users to select when a password is required when resuming from connected standby**
-    2. Next to **Description**, enter a description
+   1. Under **Profile type**, select **Settings catalog**.
 
-7. Select **Next**
+   1. Select **Create**.
 
-8. In **Configuration settings**, select **Add settings**
+1. In the **Basics** page of the **Create profile** screen:
 
-9. In the **Settings picker** window, under **Browse by category**, expand to **Administrative Templates** > **System**, and then select **Logon**
+    1. Next to **Name**, enter **Disable allowing users to select when a password is required when resuming from connected standby**.
 
-10. When the settings appear under **Setting name**, select **Allow users to select when a password is required when resuming from connected standby**, and then select the **X** in the top right corner of the **Settings picker** window to close the window
+    1. Next to **Description**, enter a description.
 
-11. Make sure that **Allow users to select when a password is required when resuming from connected standby** is left at the default of **Disabled**, and then select **Next**
+    1. Select **Next**.
 
-12. In **Scope tags**, configure if necessary and then select **Next**
+1. In the **Configuration settings** page:
 
-13. In **Assignments**:
+   1. Select **Add settings**.
 
-    1. Under **Included groups**, select **Add groups**
-    2. Select the groups that the disable Allow users to select when a password is required when resuming from connected standby policy should be deployed to
-    3. Select **Select**
-    4. Select **Next**
+   1. In the **Settings picker** window:
 
-14. In **Review + create**, review the configuration to make sure everything is configured correctly, and then select **Create**
+      1. Under **Browse by category**, expand **Administrative Templates** by selecting the **>** to the left of it.
+
+      1. Under **Administrative Templates**, scroll down and expand **System**.
+
+      1. Under **System**, scroll down and select **Logon**.
+
+      1. When the settings for the **Logon** subcategory appear under **Setting name**, select **Allow users to select when a password is required when resuming from connected standby**, and then select the **X** in the top right corner of the **Settings picker** window to close the window.
+
+   1. Leave the slider for **Allow users to select when a password is required when resuming from connected standby** at the default of **Disabled**.
+
+   1. select **Next**.
+
+1. In the **Scope tags** page, configure if necessary and then select **Next**.
+
+1. In the **Assignments** page:
+
+   1. Under **Included groups**, select **Add groups**.
+
+        > [!NOTE]
+        >
+        > Make sure to add the correct groups under **Included groups** and not under **Excluded groups**. Accidentally adding the desired device groups under **Excluded groups** will result in those devices being excluded and they won't receive the configuration profile.
+
+   1. In the **Select groups to include** window that opens, select the groups that the configuration profile should be assigned to, and then select **Select**.
+
+   1. Under **Groups**, ensure the correct group(s) are selected, and then select **Next**.
+
+1. In **Review + create** page, review the configuration to make sure everything is configured correctly, and then select **Create**.
 
 ## See also
 
