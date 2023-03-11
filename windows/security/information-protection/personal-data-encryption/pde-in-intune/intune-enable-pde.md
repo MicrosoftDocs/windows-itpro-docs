@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.date: 03/10/2023
 ---
 
-### Enable Personal Data Encryption (PDE) in Intune
+# Enable Personal Data Encryption (PDE) in Intune
 
 To enable Personal Data Encryption (PDE) using Intune, follow the below steps:
 

@@ -1,6 +1,6 @@
 ---
-title: Disable allowing users to select when a password is required when resuming from connected standby in Intune
-description: Disable allowing users to select when a password is required when resuming from connected standby in Intune
+title: Disable Windows Error Reporting (WER)/Disable user-mode crash dumps in Intune
+description: Disable Windows Error Reporting (WER)/Disable user-mode crash dumps in Intune
 author: frankroj
 ms.author: frankroj
 ms.reviewer: rhonnegowda

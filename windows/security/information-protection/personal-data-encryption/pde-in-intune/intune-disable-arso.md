@@ -14,7 +14,7 @@ ms.date: 03/10/2023
 
 # Disable Winlogon automatic restart sign-on (ARSO) in Intune
 
-Winlogon automatic restart sign-on (ARSO) is not supported for use in conjunction with Personal Data Encryption (PDE). To disable ARSO using Intune, follow the below steps:
+Winlogon automatic restart sign-on (ARSO) isn't supported for use with Personal Data Encryption (PDE). To disable ARSO using Intune, follow the below steps:
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 

@@ -1,6 +1,6 @@
 ---
-title: Disable hibernation in Intune
-description: Disable hibernation in Intune
+title: Disable kernel-mode crash dumps and live dumps in Intune
+description: Disable kernel-mode crash dumps and live dumps in Intune
 author: frankroj
 ms.author: frankroj
 ms.reviewer: rhonnegowda
