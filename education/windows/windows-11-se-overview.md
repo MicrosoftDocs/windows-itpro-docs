@@ -124,7 +124,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `MetaMoJi ClassRoom`                      | 3.12.4.0          | `Store`  | `MetaMoJi Corporation`                    |
 | `Microsoft Connect`                       | 10.0.22000.1      | `Store`  | `Microsoft`                               |
 | `Mozilla Firefox`                         | 105.0.0           | Win32    | `Mozilla`                                 |
-| `NAPLAN`                                  | 5.2.2             | Win32    | `NAP`                                     |
+| `NAPLAN`                                  | 2.5.0             | Win32    | `NAP`                                     |
 | `Netref Student`                          | 22.2.0            | Win32    | `NetRef`                                  |
 | `NetSupport Manager`                      | 12.01.0014        | Win32    | `NetSupport`                              |
 | `NetSupport Notify`                       | 5.10.1.215        | Win32    | `NetSupport`                              |
