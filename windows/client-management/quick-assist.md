@@ -78,9 +78,8 @@ Either the support staff or a user can start a Quick Assist session.
 ## How it works
 
 1. Both the helper and the sharer start Quick Assist.
-1. The helper selects **Assist another person**. Quick Assist on the helper's side contacts the Remote Assistance Service to obtain a session code. An RCC chat session is established, and the helper's Quick Assist instance joins it. The helper then provides the code to the sharer.
+1. The helper selects **Help someone**. Quick Assist on the helper's side contacts the Remote Assistance Service to obtain a session code. An RCC chat session is established, and the helper's Quick Assist instance joins it. The helper then provides the code to the sharer.
 1. After the sharer enters the code in their Quick Assist app, Quick Assist uses that code to contact the Remote Assistance Service and join that specific session. The sharer's Quick Assist instance joins the RCC chat session.
-1. The helper is prompted to select **View Only** or **Full Control**.
 1. The sharer is prompted to confirm allowing the helper to share their desktop with the helper.
 1. Quick Assist starts RDP control and connects to the RDP Relay service.
 1. RDP shares the video to the helper over https (port 443) through the RDP relay service to the helper's RDP control. Input is shared from the helper to the sharer through the RDP relay service.

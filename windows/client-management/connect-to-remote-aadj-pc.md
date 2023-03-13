@@ -19,7 +19,7 @@ ms.technology: itpro-manage
 
 # Connect to remote Azure Active Directory joined device
 
-From its release, Windows has supported remote connections to devices joined to Active Directory using Remote Desktop Protocol (RDP). Windows 10, version 1607, added the ability to connect to a device that is joined to Azure Active Directory (Azure AD) using RDP.
+From its release, Windows has supported remote connections to devices joined to Active Directory using Remote Desktop Protocol (RDP). Windows 10, version 1607 added the ability to connect to a device that is joined to Azure Active Directory (Azure AD) using RDP.
 
 - Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session](/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics).
 - Starting in Windows 10/11, with 2022-09 preview update installed, you can [use Azure AD authentication to connect to the remote Azure AD device](#connect-with-azure-ad-authentication).
