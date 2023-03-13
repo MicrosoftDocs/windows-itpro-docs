@@ -60,7 +60,7 @@ To disable Windows Error Reporting (WER) and user-mode crash dumps using Intune,
 
    1. Change **Disable Windows Error Reporting** from **Disabled** to **Enabled** by selecting the slider next to the option.
 
-   1. select **Next**.
+   1. Select **Next**.
 
 1. In the **Scope tags** page, configure if necessary and then select **Next**.
 
