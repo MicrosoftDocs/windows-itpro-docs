@@ -56,9 +56,9 @@ To disable ARSO using Intune, follow the below steps:
 
    1. Under **Setting name** of the **Windows Logon Options** pane, select **Sign-in and lock last interactive user automatically after a restart**.
 
-   1. In the **Sign-in and lock last interactive user automatically after a restart** window that opens, select **Disabled**, and then select **OK**
+   1. In the **Sign-in and lock last interactive user automatically after a restart** window that opens, select **Disabled**, and then select **OK**.
 
-   1. Select **Next**
+   1. Select **Next**.
 
 1. In the **Scope tags** page, configure if necessary and then select **Next**.
 
