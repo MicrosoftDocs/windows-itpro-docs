@@ -25,7 +25,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | Article | Description |
 | ----- | ----- |
 | [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) | <ul><li>Added support for subscription versions of Microsoft Project and Visio desktop apps</li><li>Updated device eligibility criteria</li><li>Clarified update controls</li></ul> |
-| [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) | New [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) feature. This feature is in public preview |
+| [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) | New [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) feature. This feature is in public preview<li>[MC524715](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li> |
 
 ### March service release
 
