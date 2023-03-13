@@ -2,6 +2,19 @@
 
 
 
+## Week of March 06, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/8/2023 | Change to Windows 10 Education from Windows 10 Pro | removed |
+| 3/8/2023 | [Deployment recommendations for school IT administrators](/education/windows/edu-deployment-recommendations) | modified |
+| 3/8/2023 | Enable S mode on Surface Go devices for Education | removed |
+| 3/8/2023 | Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode | removed |
+| 3/8/2023 | Test Windows 10 in S mode on existing Windows 10 education devices | removed |
+| 3/9/2023 | [Windows for Education documentation](/education/windows/index) | modified |
+
+
 ## Week of February 27, 2023
 
 

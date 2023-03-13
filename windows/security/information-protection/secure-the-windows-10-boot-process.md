@@ -2,25 +2,21 @@
 title: Secure the Windows boot process
 description: This article describes how Windows security features help protect your PC from malware, including rootkits and other applications.
 ms.prod: windows-client
-ms.localizationpriority: medium
-author: dansimp
+ms.author: paoloma
+author: paolomatarazzo
 manager: aaroncz
 ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
-ms.date: 05/12/2022
-ms.author: dansimp
+ms.date: 03/09/2023
 ms.technology: itpro-security
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ---
 
 # Secure the Windows boot process
 
-*Applies to:*
-
-- Windows 11
-- Windows 10
-- Windows 8.1
 
 The Windows OS has many features to help protect you from malware, and it does an amazingly good job. Except for apps that businesses develop and use internally, all Microsoft Store apps must meet a series of requirements to be certified and included in the Microsoft Store. This certification process examines several criteria, including security, and is an effective means of preventing malware from entering the Microsoft Store. Even if a malicious app does get through, the Windows 10 OS includes a series of security features that can mitigate the effect. For instance, Microsoft Store apps are sandboxed and lack the privileges necessary to access user data or change system settings.
 
