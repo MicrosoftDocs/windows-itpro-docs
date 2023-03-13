@@ -25,7 +25,7 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 | Task | Your responsibility | Windows Autopatch |
 | ----- | :-----: | :-----: |
 | Review the [prerequisites](../prepare/windows-autopatch-prerequisites.md) | :heavy_check_mark: | :x: |
-| [Review the service data platform and privacy compliance details](../references/windows-autopatch-privacy.md) | :heavy_check_mark: | :x: |
+| [Review the service data platform and privacy compliance details](../overview/windows-autopatch-privacy.md) | :heavy_check_mark: | :x: |
 | Ensure device [prerequisites](../prepare/windows-autopatch-prerequisites.md) are met and in place prior to enrollment | :heavy_check_mark: | :x: |
 | Ensure [infrastructure and environment prerequisites](../prepare/windows-autopatch-configure-network.md) are met and in place prior to enrollment | :heavy_check_mark: | :x: |
 | Prepare to remove your devices from existing unsupported [Windows update](../references/windows-autopatch-windows-update-unsupported-policies.md) and [Microsoft 365](../references/windows-autopatch-microsoft-365-policies.md) policies | :heavy_check_mark: | :x: |

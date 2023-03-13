@@ -44,7 +44,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) | Added note about [Windows 10 Long-Term Servicing Channel (LTSC) support](../operate/windows-autopatch-windows-quality-update-overview.md#device-eligibility) |
 | [Register your devices](../deploy/windows-autopatch-register-devices.md) | Added note about [Windows 10 Long-Term Servicing Channel (LTSC) support](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration) |
 | [Prerequisites](../prepare/windows-autopatch-prerequisites.md) | Added note about [Windows 10 Long-Term Servicing Channel (LTSC) support](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) |
-| [Privacy](../references/windows-autopatch-privacy.md) | Added additional resources to the [Microsoft Windows 10/11 diagnostic data](../references/windows-autopatch-privacy.md#microsoft-windows-1011-diagnostic-data) section |
+| [Privacy](../overview/windows-autopatch-privacy.md) | Added additional resources to the [Microsoft Windows 10/11 diagnostic data](../overview/windows-autopatch-privacy.md#microsoft-windows-1011-diagnostic-data) section |
 | [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) | Updated Feature update policies section with Windows Autopatch - DSS Policy [deployment ring] |
 | [Register your devices](../deploy/windows-autopatch-register-devices.md) |<ul><li>Updated the [Built-in roles required for registration](../deploy/windows-autopatch-register-devices.md#built-in-roles-required-for-device-registration) section</li><li>Added more information about assigning less-privileged user accounts</li></ul> |
 
