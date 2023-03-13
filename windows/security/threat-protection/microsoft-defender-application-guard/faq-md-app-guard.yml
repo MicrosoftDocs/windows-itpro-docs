@@ -230,7 +230,7 @@ sections:
          - Visit [Create a new support request](https://support.serviceshub.microsoft.com/supportforbusiness/create).
          - Under the Product Family, select Windows. Select the product and the product version you need help with. For the category that best describes the issue, select, **Windows Security Technologies**. In the final option, select **Windows Defender Application Guard**.
          
-          - question: |
+      - question: |
           Is there a way to enable or disable the behavior where the host Edge tab auto-closes when navigating to an untrusted site?
         answer: |
           Yes. Use this Edge flag to enable or disable this behavior: 
