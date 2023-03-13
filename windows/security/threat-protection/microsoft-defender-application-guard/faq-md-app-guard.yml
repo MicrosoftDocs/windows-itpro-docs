@@ -233,8 +233,7 @@ sections:
       - question: |
           Is there a way to enable or disable the behavior where the host Edge tab auto-closes when navigating to an untrusted site?
         answer: |
-          Yes. Use this Edge flag to enable or disable this behavior: 
-          --disable-features="msWdagAutoCloseNavigatedTabs"
+          Yes. Use this Edge flag to enable or disable this behavior: `--disable-features="msWdagAutoCloseNavigatedTabs"`
           
 additionalContent: |
 
