@@ -43,7 +43,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
-| [Privacy](../references/windows-autopatch-privacy.md) | Updated data center locations<ul><li>[MC448005](https://admin.microsoft.com/adminportal/home#/MessageCenter) |
+| [Privacy](../overview/windows-autopatch-privacy.md) | Updated data center locations<ul><li>[MC448005](https://admin.microsoft.com/adminportal/home#/MessageCenter) |
 | [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) | Updated multiple sections because of the OMA-URI to Intune Settings Catalog policy migration<ul><li>[MC443898](https://admin.microsoft.com/adminportal/home#/MessageCenter) |
 | [Configure your network](../prepare/windows-autopatch-configure-network.md) | Added information on Delivery Optimization  |
 | [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) | 32 and 64-bit versions are supported |

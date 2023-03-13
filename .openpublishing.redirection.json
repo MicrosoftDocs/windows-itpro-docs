@@ -20649,6 +20649,11 @@
       "source_path": "education/windows/enable-s-mode-on-surface-go-devices.md",
       "redirect_url": "/windows/deployment/s-mode",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-privacy.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-privacy",
+      "redirect_document_id": true
     }
   ]
 }
