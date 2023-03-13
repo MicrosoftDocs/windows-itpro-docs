@@ -720,7 +720,7 @@ You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an 
     >
     > :::image type="content" source="./images/mcc-isp-ubuntu-upgrade.png" alt-text="Screenshot of the Ubuntu install's Upgrade Available prompt with Don't Upgrade selected.":::
 
-Your Ubuntu VM is now ready to [Install MCC](#install-mcc).
+Your Ubuntu VM is now ready to install MCC.
 
 ### IoT Edge runtime
 
