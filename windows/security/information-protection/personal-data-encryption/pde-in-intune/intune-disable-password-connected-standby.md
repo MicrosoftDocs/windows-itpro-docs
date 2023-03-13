@@ -96,6 +96,8 @@ To disable the policy **Disable allowing users to select when a password is requ
 
 ## Additional PDE configurations in Intune
 
+The following PDE configurations can also be configured using Intune:
+
 ### Required prerequisites
 
 - [Enable Personal Data Encryption (PDE)](../pde-in-intune/intune-enable-pde.md)

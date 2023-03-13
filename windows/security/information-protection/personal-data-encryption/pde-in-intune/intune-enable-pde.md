@@ -87,6 +87,8 @@ To enable Personal Data Encryption (PDE) using Intune, follow the below steps:
 
 ## Additional PDE configurations in Intune
 
+The following PDE configurations can also be configured using Intune:
+
 ### Required prerequisites
 
 - [Disable Winlogon automatic restart sign-on (ARSO)](../pde-in-intune/intune-disable-arso.md)

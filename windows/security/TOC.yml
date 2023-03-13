@@ -163,19 +163,19 @@
         href: information-protection/personal-data-encryption/faq-pde.yml
       - name: Configure Personal Data Encryption (PDE) in Intune
         items:
-        - name: Configure Personal Data Encryption (PDE) in Intune
+        - name: Configure Personal Data Encryption (PDE) using Intune
           href: information-protection/personal-data-encryption/configure-pde-in-intune.md
-        - name: Enable Personal Data Encryption (PDE) in Intune
+        - name: Enable Personal Data Encryption (PDE)
           href: information-protection/personal-data-encryption/pde-in-intune/intune-enable-pde.md
-        - name: Disable Winlogon automatic restart sign-on (ARSO)
+        - name: Disable Winlogon automatic restart sign-on (ARSO) for PDE
           href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-arso.md
-        - name: Disable kernel-mode crash dumps and live dumps
+        - name: Disable kernel-mode crash dumps and live dumps for PDE
           href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-memory-dumps.md
-        - name: Disable Windows Error Reporting (WER)/Disable user-mode crash dumps
+        - name: Disable Windows Error Reporting (WER)/Disable user-mode crash dumps for PDE
           href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-wer.md
-        - name: Disable hibernation
+        - name: Disable hibernation for PDE
           href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-hibernation.md
-        - name: Disable allowing users to select when a password is required when resuming from connected standby
+        - name: Disable allowing users to select when a password is required when resuming from connected standby for PDE
           href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-password-connected-standby.md
     - name: Configure S/MIME for Windows
       href: identity-protection/configure-s-mime.md

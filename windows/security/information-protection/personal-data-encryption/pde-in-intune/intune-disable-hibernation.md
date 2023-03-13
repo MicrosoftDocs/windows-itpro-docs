@@ -76,6 +76,8 @@ To disable hibernation using Intune, follow the below steps:
 
 ## Additional PDE configurations in Intune
 
+The following PDE configurations can also be configured using Intune:
+
 ### Required prerequisites
 
 - [Enable Personal Data Encryption (PDE)](../pde-in-intune/intune-enable-pde.md)
