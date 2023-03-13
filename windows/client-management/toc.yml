@@ -98,10 +98,10 @@ items:
             href: administrative-tools-in-windows-10.md
           - name: Use Quick Assist to help users
             href: quick-assist.md
-          - name: Create mandatory user profiles
-            href: mandatory-user-profile.md
           - name: Connect to remote Azure Active Directory-joined PC
             href: connect-to-remote-aadj-pc.md
+          - name: Create mandatory user profiles
+            href: mandatory-user-profile.md
           - name: New policies for Windows 10
             href: new-policies-for-windows-10.md
           - name: Windows 10 default media removal policy
