@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.date: 03/10/2023
+ms.date: 03/13/2023
 ---
 
 # Disable hibernation for PDE
@@ -88,7 +88,7 @@ The following PDE configurations can also be configured using Intune:
 
 - [Disable kernel-mode crash dumps and live dumps](../pde-in-intune/intune-disable-memory-dumps.md)
 
-- [Disable Windows Error Reporting (WER)/Disable user-mode crash dumps](../pde-in-intune/intune-disable-wer.md)
+- [Disable Windows Error Reporting (WER)/user-mode crash dumps](../pde-in-intune/intune-disable-wer.md)
 
 - [Disable allowing users to select when a password is required when resuming from connected standby](../pde-in-intune/intune-disable-password-connected-standby.md)
 

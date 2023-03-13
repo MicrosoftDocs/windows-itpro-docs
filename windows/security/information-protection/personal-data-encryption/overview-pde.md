@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.date: 03/10/2023
+ms.date: 03/13/2023
 ---
 
 <!-- Max 5963468 OS 32516487 -->
@@ -48,7 +48,7 @@ ms.date: 03/10/2023
 
 - [Windows Error Reporting (WER) disabled/User-mode crash dumps disabled](/windows/client-management/mdm/policy-csp-errorreporting#errorreporting-disablewindowserrorreporting)
 
-   Disabling Windows Error Reporting prevents user-mode crash dumps. User-mode crash dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable user-mode crash dumps. For more information on disabling crash dumps via Intune, see [Disable Windows Error Reporting (WER)/Disable user-mode crash dumps](pde-in-intune/intune-disable-wer.md).
+   Disabling Windows Error Reporting prevents user-mode crash dumps. User-mode crash dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable user-mode crash dumps. For more information on disabling crash dumps via Intune, see [Disable Windows Error Reporting (WER)/user-mode crash dumps](pde-in-intune/intune-disable-wer.md).
 
 - [Hibernation disabled](/windows/client-management/mdm/policy-csp-power#power-allowhibernate)
 

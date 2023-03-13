@@ -171,7 +171,7 @@
           href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-arso.md
         - name: Disable kernel-mode crash dumps and live dumps for PDE
           href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-memory-dumps.md
-        - name: Disable Windows Error Reporting (WER)/Disable user-mode crash dumps for PDE
+        - name: Disable Windows Error Reporting (WER)/user-mode crash dumps for PDE
           href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-wer.md
         - name: Disable hibernation for PDE
           href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-hibernation.md

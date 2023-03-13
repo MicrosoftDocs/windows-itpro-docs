@@ -6,11 +6,11 @@ author: frankroj
 ms.author: frankroj
 ms.reviewer: rhonnegowda
 manager: aaroncz
-ms.topic: how-to
+ms.topic: include
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.date: 12/13/2022
+ms.date: 03/13/2023
 ---
 
 <!-- Max 5963468 OS 32516487 -->

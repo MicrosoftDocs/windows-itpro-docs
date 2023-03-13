@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.date: 03/10/2023
+ms.date: 03/13/2023
 ---
 
 # Disable kernel-mode crash dumps and live dumps for PDE
@@ -84,7 +84,7 @@ The following PDE configurations can also be configured using Intune:
 
 ### Security hardening recommendations
 
-- [Disable Windows Error Reporting (WER)/Disable user-mode crash dumps](../pde-in-intune/intune-disable-wer.md)
+- [Disable Windows Error Reporting (WER)/user-mode crash dumps](../pde-in-intune/intune-disable-wer.md)
 
 - [Disable hibernation](../pde-in-intune/intune-disable-hibernation.md)
 

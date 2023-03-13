@@ -1,6 +1,6 @@
 ---
-title: Disable Windows Error Reporting (WER)/Disable user-mode crash dumps for PDE using Intune
-description: Disable Windows Error Reporting (WER)/Disable user-mode crash dumps for PDE using Intune
+title: Disable Windows Error Reporting (WER)/user-mode crash dumps for PDE using Intune
+description: Disable Windows Error Reporting (WER)/user-mode crash dumps for PDE using Intune
 author: frankroj
 ms.author: frankroj
 ms.reviewer: rhonnegowda
@@ -9,14 +9,14 @@ ms.topic: how-to
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.date: 03/10/2023
+ms.date: 03/13/2023
 ---
 
-# Disable Windows Error Reporting (WER)/Disable user-mode crash dumps for PDE
+# Disable Windows Error Reporting (WER)/user-mode crash dumps for PDE
 
 Disabling Windows Error Reporting prevents user-mode crash dumps. User-mode crash dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable user-mode crash dumps.
 
-## Disable Windows Error Reporting (WER)/Disable user-mode crash dumps using Intune
+## Disable Windows Error Reporting (WER)/user-mode crash dumps using Intune
 
 To disable Windows Error Reporting (WER) and user-mode crash dumps using Intune, follow the below steps:
 

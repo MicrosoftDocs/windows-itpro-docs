@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.date: 03/10/2023
+ms.date: 03/13/2023
 ---
 
 <!-- Max 5963468 OS 32516487 -->
@@ -29,7 +29,7 @@ The various required and recommended policies needed for Personal Data Encryptio
 
 1. [Disable kernel-mode crash dumps and live dumps](pde-in-intune/intune-disable-memory-dumps.md)
 
-1. [Disable Windows Error Reporting (WER)/Disable user-mode crash dumps](pde-in-intune/intune-disable-wer.md)
+1. [Disable Windows Error Reporting (WER)/user-mode crash dumps](pde-in-intune/intune-disable-wer.md)
 
 1. [Disable hibernation](pde-in-intune/intune-disable-hibernation.md)
 
