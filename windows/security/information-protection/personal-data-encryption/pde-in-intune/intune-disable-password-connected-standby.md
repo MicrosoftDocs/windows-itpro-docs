@@ -1,6 +1,6 @@
 ---
-title: Disable allowing users to select when a password is required when resuming from connected standby in Intune
-description: Disable allowing users to select when a password is required when resuming from connected standby in Intune
+title: Disable allowing users to select when a password is required when resuming from connected standby for PDE using Intune
+description: Disable allowing users to select when a password is required when resuming from connected standby for PDE using Intune
 author: frankroj
 ms.author: frankroj
 ms.reviewer: rhonnegowda
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.date: 03/10/2023
 ---
 
-# Disable allowing users to select when a password is required when resuming from connected standby in Intune
+# Disable allowing users to select when a password is required when resuming from connected standby for PDE
 
 When the **Disable allowing users to select when a password is required when resuming from connected standby** policy isn't configured, the outcome between on-premises Active Directory joined devices and workgroup devices, including Azure Active Directory joined devices, is different:
 
@@ -32,53 +32,55 @@ When the **Disable allowing users to select when a password is required when res
 
 Because of this undesired outcome, it's recommended to explicitly disable this policy on Azure AD joined devices instead of leaving it at the default of **Not configured**.
 
+## Disable allowing users to select when a password is required when resuming from connected standby using Intune
+
 To disable the policy **Disable allowing users to select when a password is required when resuming from connected standby** using Intune, follow the below steps:
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. In the **Home** screen, select **Devices**.
+1. In the **Home** screen, select **Devices** in the left pane.
 
-3. In the **Devices | Overview** screen, under **Policy**, select **Configuration Profiles**.
+1. In the **Devices | Overview** screen, under **Policy**, select **Configuration Profiles**.
 
-4. In the **Devices | Configuration profiles screen**, select **Create profile**.
+1. In the **Devices | Configuration profiles** screen, make sure **Profiles** is selected at the top, and then select **Create profile**.
 
-5. In the **Create profile** window:
+1. In the **Create profile** window that opens:
 
    1. Under **Platform**, select **Windows 10 and later**.
 
-   2. Under **Profile type**, select **Settings catalog**.
+   1. Under **Profile type**, select **Settings catalog**.
 
-   3. Select **Create**.
+   1. Select **Create** to close the **Create profile** window.
 
-6. In the **Basics** page of the **Create profile** screen:
+1. The **Create profile** screen will open. In the **Basics** page:
 
     1. Next to **Name**, enter **Disable allowing users to select when a password is required when resuming from connected standby**.
 
-    2. Next to **Description**, enter a description.
+    1. Next to **Description**, enter a description.
 
-    3. Select **Next**.
+    1. Select **Next**.
 
-7. In the **Configuration settings** page:
+1. In the **Configuration settings** page:
 
    1. Select **Add settings**.
 
-   2. In the **Settings picker** window:
+   1. In the **Settings picker** window that opens:
 
-      1. Under **Browse by category**, expand **Administrative Templates** by selecting the **>** to the left of it.
+      1. Under **Browse by category**, expand **Administrative Templates**.
 
-      2. Under **Administrative Templates**, scroll down and expand **System**.
+      1. Under **Administrative Templates**, scroll down and expand **System**.
 
-      3. Under **System**, scroll down and select **Logon**.
+      1. Under **System**, scroll down and select **Logon**.
 
-      4. When the settings for the **Logon** subcategory appear under **Setting name**, select **Allow users to select when a password is required when resuming from connected standby**, and then select the **X** in the top right corner of the **Settings picker** window to close the window.
+      1. When the settings for the **Logon** subcategory appear under **Setting name** in the lower pane, select **Allow users to select when a password is required when resuming from connected standby**, and then select the **X** in the top right corner of the **Settings picker** window to close the window.
 
-   3. Leave the slider for **Allow users to select when a password is required when resuming from connected standby** at the default of **Disabled**.
+   1. Leave the slider for **Allow users to select when a password is required when resuming from connected standby** at the default of **Disabled**.
 
-   4. select **Next**.
+   1. select **Next**.
 
-8. In the **Scope tags** page, configure if necessary and then select **Next**.
+1. In the **Scope tags** page, configure if necessary and then select **Next**.
 
-9. In the **Assignments** page:
+1. In the **Assignments** page:
 
    1. Under **Included groups**, select **Add groups**.
 
@@ -86,8 +88,29 @@ To disable the policy **Disable allowing users to select when a password is requ
         >
         > Make sure to add the correct groups under **Included groups** and not under **Excluded groups**. Accidentally adding the desired device groups under **Excluded groups** will result in those devices being excluded and they won't receive the configuration profile.
 
-   2. In the **Select groups to include** window that opens, select the groups that the configuration profile should be assigned to, and then select **Select**.
+   1. In the **Select groups to include** window that opens, select the groups that the configuration profile should be assigned to, and then select **Select** to close the **Select groups to include** window.
 
-   3. Under **Groups**, ensure the correct group(s) are selected, and then select **Next**.
+   1. Under **Included groups** > **Groups**, ensure the correct group(s) are selected, and then select **Next**.
 
-10. In **Review + create** page, review the configuration to make sure everything is configured correctly, and then select **Create**.
+1. In **Review + create** page, review the configuration to make sure everything is configured correctly, and then select **Create**.
+
+## Additional PDE configurations in Intune
+
+### Required prerequisites
+
+- [Enable Personal Data Encryption (PDE)](../pde-in-intune/intune-enable-pde.md)
+
+- [Disable Winlogon automatic restart sign-on (ARSO)](../pde-in-intune/intune-disable-arso.md)
+
+### Security hardening recommendations
+
+- [Disable kernel-mode crash dumps and live dumps](../pde-in-intune/intune-disable-memory-dumps.md)
+
+- [Disable Windows Error Reporting (WER)/Disable user-mode crash dumps](../pde-in-intune/intune-disable-wer.md)
+
+- [Disable hibernation](../pde-in-intune/intune-disable-hibernation.md)
+
+## More information
+
+- [Personal Data Encryption (PDE)](../overview-pde.md)
+- [Personal Data Encryption (PDE) FAQ](../faq-pde.yml)
