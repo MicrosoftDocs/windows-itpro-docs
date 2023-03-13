@@ -1,6 +1,6 @@
 ---
-title: Disable allowing users to select when a password is required when resuming from connected standby for PDE using Intune
-description: Disable allowing users to select when a password is required when resuming from connected standby for PDE using Intune
+title: Disable allowing users to select when a password is required when resuming from connected standby for PDE in Intune
+description: Disable allowing users to select when a password is required when resuming from connected standby for PDE in Intune
 author: frankroj
 ms.author: frankroj
 ms.reviewer: rhonnegowda
@@ -32,7 +32,7 @@ When the **Disable allowing users to select when a password is required when res
 
 Because of this undesired outcome, it's recommended to explicitly disable this policy on Azure AD joined devices instead of leaving it at the default of **Not configured**.
 
-## Disable allowing users to select when a password is required when resuming from connected standby using Intune
+## Disable allowing users to select when a password is required when resuming from connected standby in Intune
 
 To disable the policy **Disable allowing users to select when a password is required when resuming from connected standby** using Intune, follow the below steps:
 

@@ -1,6 +1,6 @@
 ---
-title: Disable kernel-mode crash dumps and live dumps for PDE using Intune
-description: Disable kernel-mode crash dumps and live dumps for PDE using Intune
+title: Disable kernel-mode crash dumps and live dumps for PDE in Intune
+description: Disable kernel-mode crash dumps and live dumps for PDE in Intune
 author: frankroj
 ms.author: frankroj
 ms.reviewer: rhonnegowda
@@ -16,7 +16,7 @@ ms.date: 03/13/2023
 
 Kernel-mode crash dumps and live dumps can potentially cause the keys used by Personal Data Encryption (PDE) to protect content to be exposed. For greatest security, disable kernel-mode crash dumps and live dumps.
 
-## Disable kernel-mode crash dumps and live dumps using Intune
+## Disable kernel-mode crash dumps and live dumps in Intune
 
 To disable kernel-mode crash dumps and live dumps using Intune, follow the below steps:
 

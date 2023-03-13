@@ -163,7 +163,7 @@
         href: information-protection/personal-data-encryption/faq-pde.yml
       - name: Configure Personal Data Encryption (PDE) in Intune
         items:
-        - name: Configure Personal Data Encryption (PDE) using Intune
+        - name: Configure Personal Data Encryption (PDE) in Intune
           href: information-protection/personal-data-encryption/configure-pde-in-intune.md
         - name: Enable Personal Data Encryption (PDE)
           href: information-protection/personal-data-encryption/pde-in-intune/intune-enable-pde.md

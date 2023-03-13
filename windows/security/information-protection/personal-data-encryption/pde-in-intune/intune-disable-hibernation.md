@@ -1,6 +1,6 @@
 ---
-title: Disable hibernation for PDE using Intune
-description: Disable hibernation for PDE using Intune
+title: Disable hibernation for PDE in Intune
+description: Disable hibernation for PDE in Intune
 author: frankroj
 ms.author: frankroj
 ms.reviewer: rhonnegowda
@@ -16,7 +16,7 @@ ms.date: 03/13/2023
 
 Hibernation files can potentially cause the keys used by Personal Data Encryption (PDE) to protect content to be exposed. For greatest security, disable hibernation.
 
-## Disable hibernation using Intune
+## Disable hibernation in Intune
 
 To disable hibernation using Intune, follow the below steps:
 

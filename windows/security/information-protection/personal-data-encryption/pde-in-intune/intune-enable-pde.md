@@ -1,6 +1,6 @@
 ---
-title: Enable Personal Data Encryption (PDE) using Intune
-description: Enable Personal Data Encryption (PDE) using Intune
+title: Enable Personal Data Encryption (PDE) in Intune
+description: Enable Personal Data Encryption (PDE) in Intune
 author: frankroj
 ms.author: frankroj
 ms.reviewer: rhonnegowda
@@ -19,7 +19,7 @@ By default, Personal Data Encryption (PDE) is not enabled on devices. Before PDE
 > [!NOTE]
 > Enabling the PDE policy on devices only enables the PDE feature. It does not protect any content. To protect content via PDE, use the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager). The PDE APIs can be used to create custom applications and scripts to specify which content to protect and at what level to protect the content. Additionally, the PDE APIs can't be used to protect content until the PDE policy has been enabled.
 
-## Enable Personal Data Encryption (PDE) using Intune
+## Enable Personal Data Encryption (PDE) in Intune
 
 To enable Personal Data Encryption (PDE) using Intune, follow the below steps:
 

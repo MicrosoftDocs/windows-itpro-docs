@@ -1,5 +1,5 @@
 ---
-title: Configure Personal Data Encryption (PDE) using Intune
+title: Configure Personal Data Encryption (PDE) in Intune
 description: Configuring and enabling Personal Data Encryption (PDE) required and recommended policies in Intune
 author: frankroj
 ms.author: frankroj
@@ -15,7 +15,7 @@ ms.date: 03/13/2023
 <!-- Max 5963468 OS 32516487 -->
 <!-- Max 6946251 -->
 
-# Configure Personal Data Encryption (PDE) policies using Intune
+# Configure Personal Data Encryption (PDE) policies in Intune
 
 The various required and recommended policies needed for Personal Data Encryption (PDE) can be configured in Intune. The following links for both required and recommended policies contain step by step instructions on how to configure these policies in Intune.
 
