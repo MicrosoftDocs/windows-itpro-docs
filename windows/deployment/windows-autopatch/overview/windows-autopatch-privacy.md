@@ -77,7 +77,7 @@ Windows Autopatch creates an enterprise application in your tenant. This enterpr
 ### Service accounts
 
 > [!IMPORTANT]
-> Starting October 12, 2022, Windows Autopatch will manage your tenant with our [first party enterprise application](windows-autopatch-changes-to-tenant.md#windows-autopatch-enterprise-applications). If your tenant is still using the [Windows Autopatch service accounts](windows-autopatch-privacy.md#service-accounts), you must take action. To take action or see if you need to take action, visit the [Tenant management blade](../operate/windows-autopatch-maintain-environment.md#windows-autopatch-tenant-actions) in the Windows Autopatch portal.
+> Starting October 12, 2022, Windows Autopatch will manage your tenant with our [enterprise application](../references/windows-autopatch-changes-to-tenant.md#windows-autopatch-enterprise-applications). If your tenant is still using the [Windows Autopatch service accounts](windows-autopatch-privacy.md#service-accounts), you must take action. To take action or see if you need to take action, visit the [Tenant management blade](../operate/windows-autopatch-maintain-environment.md#windows-autopatch-tenant-actions) in the Windows Autopatch portal.
 
 Windows Autopatch creates and uses guest accounts using just-in-time access functionality when signing into a customer tenant to manage the Windows Autopatch service. To provide additional locked down control, Windows Autopatch maintains a separate conditional access policy to restrict access to these accounts.
 
