@@ -11,8 +11,6 @@ items:
                 href: mdm-overview.md
               - name: What's new in MDM enrollment and management
                 href: new-in-windows-mdm-enrollment-management.md
-              - name: Change history for MDM documentation
-                href: change-history-for-mdm-documentation.md
           - name: Azure Active Directory integration with MDM
             href: azure-active-directory-integration-with-mdm.md
             items:

@@ -19697,7 +19697,12 @@
     },
     {
       "source_path": "windows/client-management/mdm/change-history-for-mdm-documentation.md",
-      "redirect_url": "/windows/client-management/change-history-for-mdm-documentation",
+      "redirect_url": "/windows/client-management/new-in-windows-mdm-enrollment-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/change-history-for-mdm-documentation.md",
+      "redirect_url": "/windows/client-management/new-in-windows-mdm-enrollment-management",
       "redirect_document_id": false
     },
     {
