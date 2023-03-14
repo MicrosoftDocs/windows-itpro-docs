@@ -11,8 +11,6 @@ items:
                 href: mdm-overview.md
               - name: What's new in MDM enrollment and management
                 href: new-in-windows-mdm-enrollment-management.md
-              - name: Change history for MDM documentation
-                href: change-history-for-mdm-documentation.md
           - name: Azure Active Directory integration with MDM
             href: azure-active-directory-integration-with-mdm.md
             items:
@@ -44,40 +42,8 @@ items:
             items:
               - name: Enterprise app management
                 href: enterprise-app-management.md
-                items:
-                  - name: Deploy and configure App-V apps using MDM
-                    href: appv-deploy-and-config.md
-                  - name: Management tool for the Microsoft Store for Business
-                    href: management-tool-for-windows-store-for-business.md
-                  - name: REST API reference for Microsoft Store for Business
-                    href: rest-api-reference-windows-store-for-business.md
-                    items:
-                      - name: Data structures for Microsoft Store for Business
-                        href: data-structures-windows-store-for-business.md
-                      - name: Get Inventory
-                        href: get-inventory.md
-                      - name: Get product details
-                        href: get-product-details.md
-                      - name: Get localized product details
-                        href: get-localized-product-details.md
-                      - name: Get offline license
-                        href: get-offline-license.md
-                      - name: Get product packages
-                        href: get-product-packages.md
-                      - name: Get product package
-                        href: get-product-package.md
-                      - name: Get seats
-                        href: get-seats.md
-                      - name: Get seat
-                        href: get-seat.md
-                      - name: Assign seats
-                        href: assign-seats.md
-                      - name: Reclaim seat from user
-                        href: reclaim-seat-from-user.md
-                      - name: Bulk assign and reclaim seats from users
-                        href: bulk-assign-and-reclaim-seats-from-user.md
-                      - name: Get seats assigned to a user
-                        href: get-seats-assigned-to-a-user.md
+              - name: Deploy and configure App-V apps using MDM
+                href: appv-deploy-and-config.md
               - name: Mobile device management (MDM) for device updates
                 href: device-update-management.md
               - name: Secured-Core PC Configuration Lock
