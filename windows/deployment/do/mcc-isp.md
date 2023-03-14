@@ -544,7 +544,7 @@ For example:
 sudo ./updatemcc.sh version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-ubuntu-iot-amd64:1.2.1.981" tenantid="799a999aa-99a1-99aa-99aa-9a9aa099db99" customerid="99a999aa-99a1-99aa-99aa-9aaa9aaa0saa" cachenodeid=" aa99aaaa-999a-9aas-99aa99daaa99 " customerkey="a99d999a-aaaa-aa99-0999aaaa99aa"
 ``` -->
 
-### Configure BGP on an Existing MCC
+<!-- ### Configure BGP on an Existing MCC
 
 If you have an MCC that's already active and running, follow the steps below to configure BGP.
 
@@ -552,23 +552,24 @@ If you have an MCC that's already active and running, follow the steps below to 
 
 1. Sign in with your Azure credentials using the device code.
 
-1. To finish configuring your MCC with BGP routing, continue from Step 10 of [Steps to Install MCC](#steps-to-install-mcc).
+1. To finish configuring your MCC with BGP routing, continue from Step 10 of [Steps to Install MCC](#steps-to-install-mcc). -->
 
 ## Migrating your MCC to Public Preview
 
-Please note, if you reboot your server, the version that you are currently on will no longer function, after which you will be required to migrate to the new version.
+> [!NOTE]
+> Please note, if you reboot your server, the version that you are currently on will no longer function, after which you will be required to migrate to the new version.
 
 We recommend migrating now to the new version to access these benefits and ensure no downtime.
 
 To migrate, use the following steps:
 
 1. Navigate to the cache node that you would like to migrate and select **Download Migration Package** using the button at the top of the page
-1. Follow the instructions under the "Connected Cache Migrate Scripts" section
+1. Follow the instructions under the "Connected Cache Migrate Scripts". section within Azure portal.
 1. Go to https://portal.azure.com and navigate to your resource to check your migrated cache nodes
 
 Here is a screenshot from the Azure portal to help:
 
-:::image type="content" source="images/mcc-isp-migration.png" alt-text="A screenshot of Azure portal showing the migration instructions for migrating a cache node from the private preview to the public preview.":::
+:::image type="content" source="images/mcc-isp-migrate.png" alt-text="A screenshot of Azure portal showing the migration instructions for migrating a cache node from the private preview to the public preview.":::
 
 ## Uninstalling MCC
 
