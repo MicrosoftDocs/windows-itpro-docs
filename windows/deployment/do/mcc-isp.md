@@ -563,13 +563,11 @@ We recommend migrating now to the new version to access these benefits and ensur
 
 To migrate, use the following steps:
 
-1. Navigate to the cache node that you would like to migrate and select **Download Migration Package** using the button at the top of the page
-1. Follow the instructions under the "Connected Cache Migrate Scripts". section within Azure portal.
-1. Go to https://portal.azure.com and navigate to your resource to check your migrated cache nodes
+1. Navigate to the cache node that you would like to migrate and select **Download Migration Package** using the button at the top of the page.
+1. Follow the instructions under the **Connected Cache Migrate Scripts** section within Azure portal.
+   :::image type="content" source="images/mcc-isp-migrate.png" alt-text="A screenshot of Azure portal showing the migration instructions for migrating a cache node from the private preview to the public preview." lightbox="images/mcc-isp-migrate.png":::
+1. Go to https://portal.azure.com and navigate to your resource to check your migrated cache nodes.
 
-Here is a screenshot from the Azure portal to help:
-
-:::image type="content" source="images/mcc-isp-migrate.png" alt-text="A screenshot of Azure portal showing the migration instructions for migrating a cache node from the private preview to the public preview.":::
 
 ## Uninstalling MCC
 
