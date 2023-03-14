@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 03/13/2023
+ms.date: 03/14/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -31,6 +31,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Message center post number | Description |
 | ----- | ----- |
+| [MC527439](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Prepare for Windows Autopatch Groups |
 | [MC524715](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Public preview - Customize Windows Update settings |
 
 ## February 2023

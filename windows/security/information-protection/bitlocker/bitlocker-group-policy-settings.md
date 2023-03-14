@@ -252,7 +252,7 @@ This policy setting allows blocking of direct memory access (DMA) for all hot pl
 |**Drive type**|Operating system drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption*|
 |**Conflicts**|None|
-|**When enabled**|Every time the user locks the scree, DMA will be blocked on hot pluggable PCI ports until the user signs in again.|
+|**When enabled**|Every time the user locks the screen, DMA will be blocked on hot pluggable PCI ports until the user signs in again.|
 |**When disabled or not configured**|DMA is available on hot pluggable PCI devices if the device is turned on, regardless of whether a user is signed in.|
 
 #### Reference: Disable new DMA devices when this computer is locked
