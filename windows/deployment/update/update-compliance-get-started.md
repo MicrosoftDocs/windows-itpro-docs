@@ -6,8 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
-ms.collection: 
-  - highpri
+ms.collection: highpri, tier2
 ms.topic: article
 ms.date: 05/03/2022
 ms.technology: itpro-updates
@@ -56,7 +55,6 @@ Update Compliance is offered as an Azure Marketplace application that is linked 
 1. Go to the [Update Compliance page in the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/). The solution was published by Microsoft and named **WaaSUpdateInsights**.
 2. Select **Get it now**.
 3. Choose an existing or configure a new Log Analytics Workspace, ensuring it is in a **Compatible Log Analytics region** from the following table. Although an Azure subscription is required, you won't be charged for ingestion of Update Compliance data.
-   - [Desktop Analytics](/sccm/desktop-analytics/overview) users should use the same workspace for Update Compliance.
    - [Azure Update Management](/azure/automation/automation-intro#update-management) users should use the same workspace for Update Compliance.
 4. After your workspace is configured and selected, select **Create**. You'll receive a notification when the solution has been successfully created.
 
@@ -124,10 +122,6 @@ Once you've added Update Compliance to a workspace in your Azure subscription, y
 3. Finally, you should run the [Update Compliance Configuration Script](update-compliance-configuration-script.md) on all devices to ensure they're appropriately configured and troubleshoot any enrollment issues.
 
 After you configure devices, diagnostic data they send will begin to be associated with your Azure AD organization ("tenant"). However, enrolling to Update Compliance doesn't influence the rate at which required data is uploaded from devices. Device connectivity to the internet and generally how active the device is highly influences how long it will take before the device appears in Update Compliance. Devices that are active and connected to the internet daily can expect to be fully uploaded within one week (usually less than 72 hours). Devices that are less active can take up to two weeks before data is fully available. 
-
-### Update Compliance and Desktop Analytics
-
-If you use or plan to use [Desktop Analytics](/mem/configmgr/desktop-analytics/overview), you must use the same Log Analytics workspace for both solutions. 
 
 
 

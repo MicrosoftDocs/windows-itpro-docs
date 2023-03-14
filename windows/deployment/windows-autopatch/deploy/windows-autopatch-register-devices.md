@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: andredm7
+ms.reviewer: andredm7
 ---
 
 # Register your devices
@@ -139,12 +139,12 @@ For more information, see [Device registration overview](../deploy/windows-autop
 
 ## Steps to register devices
 
-Any device (either physical or virtual) that contains an Azure AD device ID, can be added into the **Windows Autopatch Device Registration** Azure AD group through either direct membership or by being part of another Azure AD group (either dynamic or assigned) that's nested to this group, so it can be registered with Windows Autopatch. The only exception is new Windows 365 Cloud PCs, as these virtual devices must be registered with Windows Autopatch from the Windows 365 provisioning policy. For more information, see [Windows Autopatch on Windows 365 Enterprise Workloads](#windows-autopatch-on-windows-365-enterprise-workloads).
+Any device (either physical or virtual) that contains an Azure AD device ID, can be added into the **Windows Autopatch Device Registration** Azure AD group through either direct membership or by being part of another Azure AD group (either dynamic or assigned) that's nested to this group, so it can be registered with Windows Autopatch. The only exception is new Windows 365 Cloud PCs, as these virtual devices should be registered with Windows Autopatch from the Windows 365 provisioning policy. For more information, see [Windows Autopatch on Windows 365 Enterprise Workloads](#windows-autopatch-on-windows-365-enterprise-workloads).
 Since existing Windows 365 Cloud PCs already have an existing Azure AD device ID, these devices can be added into the **Windows Autopatch Device Registration** Azure group through either direct membership or by being part of another Azure AD group (either dynamic or assigned) that's nested to this group.
 
 **To register devices with Windows Autopatch:**
 
-1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Go to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** from the left navigation menu.
 3. Under the **Windows Autopatch** section, select **Devices**.
 4. Select either the **Ready** or the **Not registered** tab, then select the **Windows Autopatch Device Registration** hyperlink. The Azure Active Directory group blade opens.
@@ -164,7 +164,7 @@ Windows 365 Enterprise gives IT admins the option to register devices with the W
 
 **To register new Windows 365 Cloud PC devices with Windows Autopatch from the Windows 365 Provisioning Policy:**
 
-1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Go to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. In the left pane, select **Devices**.
 1. Navigate to Provisioning > **Windows 365**.
 1. Select Provisioning policies > **Create policy**.

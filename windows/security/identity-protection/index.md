@@ -16,7 +16,9 @@ ms.technology: itpro-security
 
 # Identity and access management
 
-Learn more about identity and access management technologies in Windows 10 and Windows 11.
+Learn more about identity and access management technologies in Windows.
+
+[!INCLUDE [virtual-smart-card-deprecation-notice](../includes/virtual-smart-card-deprecation-notice.md)]
 
 | Section | Description |
 |-|-|

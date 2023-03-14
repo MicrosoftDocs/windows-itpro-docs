@@ -4,6 +4,7 @@ description: Learn how to secure and manage access to the resources on a standal
 ms.date: 12/05/2022
 ms.collection: 
   - highpri
+  - tier2
 ms.topic: article
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>

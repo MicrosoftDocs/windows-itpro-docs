@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/02/2022
+ms.date: 02/17/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -46,7 +46,7 @@ The following XML file contains the device description framework (DDF) for the D
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBD;0xBF;0xCA;0xCB;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -816,6 +816,7 @@ The following XML file contains the device description framework (DDF) for the D
                   <Get />
                   <Replace />
                 </AccessType>
+                <Description>Follow the instructions provided here: https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide </Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -884,6 +885,7 @@ The following XML file contains the device description framework (DDF) for the D
                   <Get />
                   <Replace />
                 </AccessType>
+                <Description>Follow the instructions provided here: https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide </Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -910,6 +912,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>Tamper protection helps protect important security features from unwanted changes and interference. This includes real-time protection, behavior monitoring, and more. Accepts signed string to turn the feature on or off. Settings are configured with an MDM solution, such as Intune and is available in Windows 10 Enterprise E5 or equivalent subscriptions. Send off blob to device to reset tamper protection state before setting this configuration to "not configured" or "unassigned" in Intune. The data type is a Signed blob.</Description>
           <DFFormat>
             <chr />
@@ -1024,7 +1027,7 @@ The following XML file contains the device description framework (DDF) for the D
           </DFType>
           <MSFT:Applicability>
             <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
-            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="None">
           </MSFT:AllowedValues>
@@ -1066,37 +1069,6 @@ The following XML file contains the device description framework (DDF) for the D
               <MSFT:Value>0</MSFT:Value>
               <MSFT:ValueDescription>Disallow</MSFT:ValueDescription>
             </MSFT:Enum>
-          </MSFT:AllowedValues>
-        </DFProperties>
-      </Node>
-      <Node>
-        <NodeName>ExcludedIpAddresses</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Add />
-            <Delete />
-            <Get />
-            <Replace />
-          </AccessType>
-          <Description>This node contains a list of values specifying any IP addresses that wdnisdrv will ignore when intercepting traffic.</Description>
-          <DFFormat>
-            <chr />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Dynamic />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-          <MSFT:Applicability>
-            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
-            <MSFT:CspVersion>1.3</MSFT:CspVersion>
-          </MSFT:Applicability>
-          <MSFT:AllowedValues ValueType="None">
-            <MSFT:List Delimiter="|" />
           </MSFT:AllowedValues>
         </DFProperties>
       </Node>
@@ -1148,6 +1120,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>When this value is set to false, it allows a local admin the ability to specify some settings for complex list type that will then merge /override the Preference settings with the Policy settings</Description>
           <DFFormat>
             <int />
@@ -1452,6 +1425,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>Enable this policy to specify when devices receive Microsoft Defender platform updates during the monthly gradual rollout.</Description>
           <DFFormat>
             <int />
@@ -1506,6 +1480,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>Enable this policy to specify when devices receive Microsoft Defender engine updates during the monthly gradual rollout.</Description>
           <DFFormat>
             <int />
@@ -1560,6 +1535,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>Enable this policy to specify when devices receive Microsoft Defender security intelligence updates during the daily gradual rollout.</Description>
           <DFFormat>
             <int />
@@ -1602,6 +1578,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>Enable this policy to disable gradual rollout of Defender updates.</Description>
           <DFFormat>
             <int />
@@ -1640,6 +1617,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>This settings controls whether Network Protection is allowed to be configured into block or audit mode on windows downlevel of RS3. If false, the value of EnableNetworkProtection will be ignored.</Description>
           <DFFormat>
             <int />
@@ -1678,6 +1656,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>1</DefaultValue>
           <Description>This setting enables the DNS Sinkhole feature for Network Protection, respecting the value of EnableNetworkProtection for block vs audit, does nothing in inspect mode.</Description>
           <DFFormat>
             <int />
@@ -1716,6 +1695,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>This setting disables Inbound connection filtering for Network Protection.</Description>
           <DFFormat>
             <int />
@@ -1754,6 +1734,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>This setting disables RDP Parsing for Network Protection.</Description>
           <DFFormat>
             <int />
@@ -1792,6 +1773,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>This settings controls whether Network Protection is allowed to enable datagram processing on Windows Server. If false, the value of DisableDatagramProcessing will be ignored and default to disabling Datagram inspection.</Description>
           <DFFormat>
             <int />
@@ -1830,6 +1812,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>This setting disables the gathering and send of performance telemetry from Network Protection.</Description>
           <DFFormat>
             <int />
@@ -1868,6 +1851,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>This policy setting controls whether or not exclusions are visible to local admins.  For end users (that are not local admins) exclusions are not visible, whether or not this setting is enabled.</Description>
           <DFFormat>
             <int />
@@ -2027,6 +2011,38 @@ The following XML file contains the device description framework (DDF) for the D
         </DFProperties>
       </Node>
       <Node>
+        <NodeName>DataDuplicationLocalRetentionPeriod</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>60</DefaultValue>
+          <Description>Define the retention period in days of how much time the evidence data will be kept on the client machine should any transfer to the remote locations would occur.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="Range">
+            <MSFT:Value>[1-120]</MSFT:Value>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
         <NodeName>DeviceControlEnabled</NodeName>
         <DFProperties>
           <AccessType>
@@ -2035,6 +2051,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>Control Device Control feature.</Description>
           <DFFormat>
             <int />
@@ -2075,6 +2092,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>1</DefaultValue>
           <Description>Control Device Control default enforcement. This is the enforcement applied if there are no policy rules present or at the end of the policy rules evaluation none were matched.</Description>
           <DFFormat>
             <int />
@@ -2113,6 +2131,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>Setting to control automatic remediation for Sense scans.</Description>
           <DFFormat>
             <int />
@@ -2147,105 +2166,7 @@ The following XML file contains the device description framework (DDF) for the D
         </DFProperties>
       </Node>
       <Node>
-        <NodeName>PauseUpdateStartTime</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Add />
-            <Delete />
-            <Get />
-            <Replace />
-          </AccessType>
-          <Description>Pause update from the UTC time in ISO string format without milliseconds, for example, 2022-02-24T00:03:59Z.</Description>
-          <DFFormat>
-            <chr />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Dynamic />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-          <MSFT:Applicability>
-            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
-            <MSFT:CspVersion>1.3</MSFT:CspVersion>
-          </MSFT:Applicability>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
-        </DFProperties>
-      </Node>
-      <Node>
-        <NodeName>PauseUpdateExpirationTime</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Add />
-            <Delete />
-            <Get />
-            <Replace />
-          </AccessType>
-          <Description>Pause update until the UTC time in ISO string format without milliseconds, for example, 2022-02-24T00:03:59Z.</Description>
-          <DFFormat>
-            <chr />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Dynamic />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-          <MSFT:Applicability>
-            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
-            <MSFT:CspVersion>1.3</MSFT:CspVersion>
-          </MSFT:Applicability>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
-        </DFProperties>
-      </Node>
-      <Node>
-        <NodeName>PauseUpdateFlag</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Add />
-            <Delete />
-            <Get />
-            <Replace />
-          </AccessType>
-          <Description>Setting to control automatic remediation for Sense scans.</Description>
-          <DFFormat>
-            <int />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Dynamic />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-          <MSFT:Applicability>
-            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
-            <MSFT:CspVersion>1.3</MSFT:CspVersion>
-          </MSFT:Applicability>
-          <MSFT:AllowedValues ValueType="ENUM">
-            <MSFT:Enum>
-              <MSFT:Value>0</MSFT:Value>
-              <MSFT:ValueDescription>Update not paused</MSFT:ValueDescription>
-            </MSFT:Enum>
-            <MSFT:Enum>
-              <MSFT:Value>1</MSFT:Value>
-              <MSFT:ValueDescription>Update paused</MSFT:ValueDescription>
-            </MSFT:Enum>
-          </MSFT:AllowedValues>
-        </DFProperties>
-      </Node>
-      <Node>
-        <NodeName>TDTFeatureEnabled</NodeName>
+        <NodeName>IntelTDTEnabled</NodeName>
         <DFProperties>
           <AccessType>
             <Add />
@@ -2254,7 +2175,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Replace />
           </AccessType>
           <DefaultValue>0</DefaultValue>
-          <Description>This policy setting configures the integration level for Intel TDT integration for Intel TDT-capable devices.</Description>
+          <Description>This policy setting configures the Intel TDT integration level for Intel TDT-capable devices.</Description>
           <DFFormat>
             <int />
           </DFFormat>
@@ -2274,11 +2195,128 @@ The following XML file contains the device description framework (DDF) for the D
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
-              <MSFT:ValueDescription>If you do not configure this setting, the default value will be applied. The default value is set to control by signatures. TDT will be enabled based on particular signatures that are released by Microsoft.</MSFT:ValueDescription>
+              <MSFT:ValueDescription>If you do not configure this setting, the default value will be applied. The default value is controlled by Microsoft security intelligence updates. Microsoft will enable Intel TDT if there is a known threat.</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>2</MSFT:Value>
-              <MSFT:ValueDescription>If you configure this setting to disabled, Intel TDT integration will be turned off.</MSFT:ValueDescription>
+              <MSFT:ValueDescription>If you configure this setting to disabled, Intel TDT integration will turn off.</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>DisableSmtpParsing</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This setting disables SMTP Parsing for Network Protection.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>SMTP parsing is disabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>SMTP parsing is enabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>RandomizeScheduleTaskTimes</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>1</DefaultValue>
+          <Description>In Microsoft Defender Antivirus, randomize the start time of the scan to any interval from 0 to 23 hours. This can be useful in virtual machines or VDI deployments.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Widen or narrow the randomization period for scheduled scans. Specify a randomization window of between 1 and 23 hours by using the setting SchedulerRandomizationTime.</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>Scheduled tasks will begin at a random time within 4 hours after the time specified in Task Scheduler.</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>ScanOnlyIfIdleEnabled</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>1</DefaultValue>
+          <Description>In Microsoft Defender Antivirus, this setting will run scheduled scans only if the system is idle.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Runs scheduled scans only if the system is idle.</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>Runs scheduled scans regardless of whether the system is idle.</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>

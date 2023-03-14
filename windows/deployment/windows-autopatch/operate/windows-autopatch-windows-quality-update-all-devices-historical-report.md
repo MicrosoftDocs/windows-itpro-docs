@@ -1,6 +1,6 @@
 ---
 title: All devices report—historical
-description: Provides a visual representation of the update status trend for all devices over the last 90 days. 
+description: Provides a visual representation of the update status trend for all devices over the last 90 days.
 ms.date: 12/01/2022
 ms.prod: windows-client
 ms.technology: itpro-updates
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: adnich
+ms.reviewer: adnich
 ---
 
 # All devices report—historical
@@ -18,7 +18,7 @@ The historical All devices report provides a visual representation of the update
 
 **To view the historical All devices report:**
 
-1. Sign into the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign into the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Navigate to **Reports** > **Windows Autopatch** > **Windows Quality Updates**.
 1. Select the **Reports** tab.
 1. Select **All devices report—historical**.

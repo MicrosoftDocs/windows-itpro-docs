@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+ms.reviewer: hathind
 ---
 
 # Submit a support request
@@ -23,7 +23,7 @@ Support requests are triaged and responded to as they're received.
 
 **To submit a new support request:**
 
-1. Sign into the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant administration** menu.
+1. Sign into the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant administration** menu.
 1. In the **Windows Autopatch** section, select **Support requests**.
 1. In the **Support requests** section, select **+ New support request**.
 1. Enter your question(s) and/or a description of the problem.
@@ -57,7 +57,7 @@ You can see the summary status of all your support requests. At any time, you ca
 
 **To view all your active support requests:**
 
-1. Sign into the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant Administration** menu.
+1. Sign into the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant Administration** menu.
 1. In the **Windows Autopatch** section, select **Support request**.
 1. From this view, you can export the summary view or select any case to view the details.
 
@@ -67,7 +67,7 @@ You can edit support request details, for example, updating the primary case con
 
 **To edit support request details:**
 
-1. Sign into the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant Administration** menu.
+1. Sign into the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant Administration** menu.
 1. In the **Windows Autopatch** section, select **Support request**.
 1. In the **Support requests** section, use the search bar or filters to find the case you want to edit.
 1. Select the case to open the request's details.

@@ -1,7 +1,6 @@
 ---
 title: Testing Your Application Mitigation Packages (Windows 10)
 description: Learn how to test your application-mitigation packages, including how to report your information and how to resolve any outstanding issues.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

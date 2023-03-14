@@ -3,10 +3,11 @@ title: Pin Reset
 description: Learn how Microsoft PIN reset services enable you to help users recover who have forgotten their PIN.
 ms.collection: 
   - highpri
-ms.date: 07/29/2022
+  - tier1
+ms.date: 03/10/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-ms.topic: article
+ms.topic: how-to
 ---
 
 # PIN reset
@@ -19,11 +20,9 @@ There are two forms of PIN reset:
 - **Non-destructive PIN reset**: with this option, the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed. For non-destructive PIN reset, you must deploy the **Microsoft PIN Reset Service** and configure your clients' policy to enable the **PIN Recovery** feature.
 ## Using PIN reset
 
-
 There are two forms of PIN reset called destructive and non-destructive. Destructive PIN reset is the default and doesn't require configuration. During a destructive PIN reset, the user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, will be deleted from the client and a new logon key and PIN are provisioned. For non-destructive PIN reset, you must deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature. During a non-destructive PIN reset, the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed.
 
 Destructive and non-destructive PIN reset use the same steps for initiating a PIN reset. If users have forgotten their PINs, but have an alternate sign-in method, they can navigate to Sign-in options in *Settings* and initiate a PIN reset from the PIN options. If users don't have an alternate way to sign into their devices, PIN reset can also be initiated from the Windows lock screen in the PIN credential provider.
-
 
 >[!IMPORTANT]
 >For hybrid Azure AD-joined devices, users must have corporate network connectivity to domain controllers to complete destructive PIN reset. If AD FS is being used for certificate trust or for on-premises only deployments, users must also have corporate network connectivity to federation services to reset their PIN.
@@ -34,7 +33,6 @@ Destructive and non-destructive PIN reset use the same steps for initiating a PI
 1. Open **Settings**, select **Accounts** > **Sign-in options**.
 1. Select **PIN (Windows Hello)** > **I forgot my PIN** and follow the instructions.
 
-
 ### Reset PIN above the Lock Screen
 
 For Azure AD-joined devices:
@@ -44,7 +42,6 @@ For Azure AD-joined devices:
 1. Select an authentication option from the list of presented options. This list will be based on the different authentication methods enabled in your tenant (like Password, PIN, Security key).
 1. Follow the instructions provided by the provisioning process.
 1. When finished, unlock your desktop using your newly created PIN.
-
 
 For Hybrid Azure AD-joined devices:
 
@@ -57,14 +54,14 @@ For Hybrid Azure AD-joined devices:
 > [!NOTE]
 > Key trust on hybrid Azure AD-joined devices does not support destructive PIN reset from above the Lock Screen. This is due to the sync delay between when a user provisions their Windows Hello for Business credential and being able to use it for sign-in. For this deployment model, you must deploy non-destructive PIN reset for above lock PIN reset to work.
 
-You may find that PIN reset from settings only works post login. Also, the "lock screen" PIN reset function won't work if you have any matching limitation of self-service password reset from the lock screen. For more information, see [Enable Azure Active Directory self-service password reset at the Windows sign-in screen - General ](/azure/active-directory/authentication/howto-sspr-windows#general-limitations).
+You may find that PIN reset from settings only works post login. Also, the lock screen PIN reset function won't work if you have any matching limitation of self-service password reset from the lock screen. For more information, see [Enable Azure Active Directory self-service password reset at the Windows sign-in screen - General ](/azure/active-directory/authentication/howto-sspr-windows#general-limitations).
 
 ## Non-Destructive PIN reset
 
 **Requirements:**
 
 - Azure Active Directory
-- Windows 10, version 1709 to 1809, Enterprise Edition. There's no licensing requirement for this feature since version 1903.
+- Windows Enterprise and Pro editions. There's no licensing requirement for this feature.
 - Hybrid Windows Hello for Business deployment
 - Azure AD registered, Azure AD joined, and Hybrid Azure AD joined
 
@@ -82,7 +79,7 @@ Using Group Policy, Microsoft Intune or a compatible MDM solution, you can confi
 |Category|Destructive PIN Reset|Non-Destructive PIN Reset|
 |--- |--- |--- |
 |**Functionality**|The user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, will be deleted from the client and a new logon key and PIN are provisioned.|You must deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature. For more information on how to deploy the Microsoft PIN reset service and client policy, see [Connect Azure Active Directory with the PIN reset service](#connect-azure-active-directory-with-the-pin-reset-service). During a non-destructive PIN reset, the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed.|
-|**Windows editions and versions**|Reset from settings - Windows 10, version 1703 or later, Windows 11. Reset above Lock - Windows 10, version 1709 or later, Windows 11.|Windows 10, version 1709 to 1809, Enterprise Edition. There isn't any licensing requirement for this feature since version 1903. Enterprise Edition and Pro edition with Windows 10, version 1903 and newer Windows 11.|
+|**Windows editions and versions**| Windows Enterprise and Pro editions.|
 |**Azure Active Directory Joined**|Cert Trust, Key Trust, and cloud Kerberos trust|Cert Trust, Key Trust, and cloud Kerberos trust|
 |**Hybrid Azure Active Directory Joined**|Cert Trust and cloud Kerberos trust for both settings and above the lock support destructive PIN reset. Key Trust doesn't support this from above the lock screen. This is due to the sync delay between when a user provisions their Windows Hello for Business credential and being able to use it for sign-in. It does support from the settings page and the users must have a corporate network connectivity to the DC. |Cert Trust, Key Trust, and cloud Kerberos trust for both settings and above the lock support non-destructive PIN reset. No network connection is required for the DC.|
 |**On Premises**|If ADFS is being used for on premises deployments, users must have a corporate network connectivity to federation services. |The PIN reset service relies on Azure Active Directory identities, so it's only available for Hybrid Azure Active Directory Joined and Azure Active Directory Joined devices.|
@@ -92,7 +89,6 @@ Using Group Policy, Microsoft Intune or a compatible MDM solution, you can confi
 ### Onboarding the Microsoft PIN reset service to your Intune tenant
 
 > The **Microsoft PIN Reset Service** is not currently available in Azure Government.
-
 
 ### Enable the Microsoft PIN Reset Service in your Azure AD tenant
 
@@ -128,7 +124,7 @@ Before you can remotely reset PINs, your devices must be configured to enable PI
 
 You can configure Windows devices to use the **Microsoft PIN Reset Service** using Microsoft Intune.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** > **Configuration profiles** > **Create profile**.
 1. Enter the following properties:
     - **Platform**: Select **Windows 10 and later**.
@@ -150,7 +146,7 @@ You can configure Windows devices to use the **Microsoft PIN Reset Service** usi
 
 >[!NOTE]
 > You can also configure PIN recovery from the **Endpoint security** blade:
-> 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+> 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 > 1. Select **Endpoint security** > **Account protection** > **Create Policy**.
 
 #### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
@@ -231,7 +227,7 @@ The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-au
 
 ### Configure Web Sign-in Allowed URLs using Microsoft Intune
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
 1. Select **Devices** > **Configuration profiles** > **Create profile**
 1. Enter the following properties:
     - **Platform**: Select **Windows 10 and later**
@@ -265,5 +261,5 @@ The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-au
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Event ID 300 - Windows Hello successfully created](/windows/security/identity-protection/hello-for-business/hello-faq)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)

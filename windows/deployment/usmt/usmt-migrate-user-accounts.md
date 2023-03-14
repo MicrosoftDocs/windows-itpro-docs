@@ -1,7 +1,6 @@
 ---
 title: Migrate User Accounts (Windows 10)
 description: Learn how to migrate user accounts and how to specify which users to include and exclude by using the User options on the command line.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

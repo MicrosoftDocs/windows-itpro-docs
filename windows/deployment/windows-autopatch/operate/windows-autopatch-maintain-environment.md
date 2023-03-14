@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+ms.reviewer: hathind
 ---
 
 # Maintain the Windows Autopatch environment
@@ -37,7 +37,7 @@ Windows Autopatch deploys, manages and maintains all configurations related to t
 The **Tenant management** blade can be found by navigating to Tenant administration > Windows Autopatch > **Tenant management**.
 
 > [!IMPORTANT]
-> Starting October 12, 2022, Windows Autopatch will manage your tenant with our [first party enterprise applications](../references/windows-autopatch-changes-to-tenant.md#windows-autopatch-enterprise-applications). If your tenant is still using the [Windows Autopatch service accounts](../references/windows-autopatch-privacy.md#service-accounts), your Global admin must take action in the new Windows Autopatch Tenant management blade to approve the configuration change. To take action or see if you need to take action, visit the Tenant management blade in the Windows Autopatch portal.
+> Starting October 12, 2022, Windows Autopatch will manage your tenant with our [first party enterprise applications](../references/windows-autopatch-changes-to-tenant.md#windows-autopatch-enterprise-applications). If your tenant is still using the [Windows Autopatch service accounts](../overview/windows-autopatch-privacy.md#service-accounts), your Global admin must take action in the new Windows Autopatch Tenant management blade to approve the configuration change. To take action or see if you need to take action, visit the Tenant management blade in the Windows Autopatch portal.
 
 The type of banner that appears depends on the severity of the action. Currently, only critical actions are listed.
 

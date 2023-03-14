@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: andredm7
+ms.reviewer: andredm7
 ---
 
 # Windows quality updates
@@ -94,7 +94,7 @@ By default, the service expedites quality updates as needed. For those organizat
 
 **To turn off service-driven expedited quality updates:**
 
-1. Go to **[Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)** > **Devices**.
+1. Go to **[Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)** > **Devices**.
 2. Under **Windows Autopatch** > **Release management**, go to the **Release settings** tab and turn off the **Expedited quality updates** setting.
 
 > [!NOTE]
@@ -106,7 +106,7 @@ Windows Autopatch schedules and deploys required Out of Band (OOB) updates relea
 
 **To view deployed Out of Band quality updates:**
 
-1. Go to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > **Windows Autopatch** > **Release management**.
+1. Go to [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > **Windows Autopatch** > **Release management**.
 2. Under the **Release Announcements** tab, you can view the knowledge base (KB) articles corresponding to deployed OOB and regular Windows quality updates.
 
 > [!NOTE]
@@ -115,7 +115,7 @@ Windows Autopatch schedules and deploys required Out of Band (OOB) updates relea
 ### Pausing and resuming a release
 
 > [!CAUTION]
-> It's only recommended to use Windows Autopatch's end-user experience to pause and resume [Windows quality](windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release). If you need assistance with pausing and resuming updates, please [submit a support request](../operate/windows-autopatch-support-request.md).
+> It's recommended to only use Windows Autopatch's Release management blade to pause and resume [Windows quality](windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release). If you need assistance with pausing and resuming updates, please [submit a support request](../operate/windows-autopatch-support-request.md).
 
 The service-level pause of updates is driven by the various software update deployment-related signals Windows Autopatch receives from Windows Update for Business, and several other product groups within Microsoft.
 
@@ -126,7 +126,7 @@ If Windows Autopatch detects a [significant issue with a release](../operate/win
 
 **To pause or resume a Windows quality update:**
 
-1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** from the left navigation menu.
 3. Under the **Windows Autopatch** section, select **Release management**.
 4. In the **Release management** blade, select either: **Pause** or **Resume**.

@@ -126,6 +126,8 @@
       href: provisioning-packages/provisioning-multivariant.md
     - name: PowerShell cmdlets for provisioning Windows client (reference)
       href: provisioning-packages/provisioning-powershell.md
+    - name: Diagnose provisioning packages
+      href: provisioning-packages/diagnose-provisioning-packages.md
     - name: Windows Configuration Designer command-line interface (reference)
       href: provisioning-packages/provisioning-command-line.md
 

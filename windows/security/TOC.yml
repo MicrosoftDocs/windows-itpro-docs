@@ -162,7 +162,21 @@
       - name: Personal Data Encryption (PDE) frequently asked questions (FAQ)
         href: information-protection/personal-data-encryption/faq-pde.yml
       - name: Configure Personal Data Encryption (PDE) in Intune
-        href: information-protection/personal-data-encryption/configure-pde-in-intune.md    
+        items:
+        - name: Configure Personal Data Encryption (PDE) in Intune
+          href: information-protection/personal-data-encryption/configure-pde-in-intune.md
+        - name: Enable Personal Data Encryption (PDE)
+          href: information-protection/personal-data-encryption/pde-in-intune/intune-enable-pde.md
+        - name: Disable Winlogon automatic restart sign-on (ARSO) for PDE
+          href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-arso.md
+        - name: Disable kernel-mode crash dumps and live dumps for PDE
+          href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-memory-dumps.md
+        - name: Disable Windows Error Reporting (WER)/user-mode crash dumps for PDE
+          href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-wer.md
+        - name: Disable hibernation for PDE
+          href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-hibernation.md
+        - name: Disable allowing users to select when a password is required when resuming from connected standby for PDE
+          href: information-protection/personal-data-encryption/pde-in-intune/intune-disable-password-connected-standby.md
     - name: Configure S/MIME for Windows
       href: identity-protection/configure-s-mime.md
     - name: Network security
@@ -385,19 +399,19 @@
               href: identity-protection/smart-cards/smart-card-group-policy-and-registry-settings.md
             - name: Smart Card Events
               href: identity-protection/smart-cards/smart-card-events.md
-        - name: Virtual Smart Cards
+        - name: Virtual smart cards
           href: identity-protection/virtual-smart-cards/virtual-smart-card-overview.md
           items:
-            - name: Understanding and Evaluating Virtual Smart Cards
+            - name: Understand and evaluate virtual smart cards
               href: identity-protection/virtual-smart-cards/virtual-smart-card-understanding-and-evaluating.md
               items:
-                - name: "Get Started with Virtual Smart Cards: Walkthrough Guide"
+                - name: Get started with virtual smart cards
                   href: identity-protection/virtual-smart-cards/virtual-smart-card-get-started.md
-                - name: Use Virtual Smart Cards
+                - name: Use virtual smart cards
                   href: identity-protection/virtual-smart-cards/virtual-smart-card-use-virtual-smart-cards.md
-                - name: Deploy Virtual Smart Cards
+                - name: Deploy virtual smart cards
                   href: identity-protection/virtual-smart-cards/virtual-smart-card-deploy-virtual-smart-cards.md
-                - name: Evaluate Virtual Smart Card Security
+                - name: Evaluate virtual smart card security
                   href: identity-protection/virtual-smart-cards/virtual-smart-card-evaluate-security.md
             - name: Tpmvscmgr
               href: identity-protection/virtual-smart-cards/virtual-smart-card-tpmvscmgr.md

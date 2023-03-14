@@ -4,11 +4,13 @@ description: Use the Company Portal app in Windows 11 devices to access the priv
 author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
-ms.reviewer: amanh
-ms.prod: windows-client
 ms.date: 09/15/2021
-ms.localizationpriority: medium
+ms.topic: article
+ms.prod: windows-client
 ms.technology: itpro-apps
+ms.localizationpriority: medium
+ms.collection: tier2
+ms.reviewer: amanh
 ---
 
 # Private app repository in Windows 11
@@ -63,7 +65,7 @@ To install the Company Portal app, you have some options:
 
 - **Use Windows Autopilot**: Windows Autopilot automatically provisions devices, registers them in your Azure AD organization (tenant), and gets them ready for production. If you're purchasing new devices, then we recommend using Windows Autopilot to preconfigure the devices, and get them ready for use.
 
-  - In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), you add the Company Portal app from the Microsoft Store. Once it's added, the app can be included in your Windows Autopilot deployment. When the device turns on and is getting ready, the Company Portal app is also installed, before users sign in.
+  - In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), you add the Company Portal app from the Microsoft Store. Once it's added, the app can be included in your Windows Autopilot deployment. When the device turns on and is getting ready, the Company Portal app is also installed, before users sign in.
 
   - When the Company Portal app is installed from the Microsoft Store app, by default, it's automatically updated. Users can also open the Microsoft Store app, go to the **Library**, and check for updates.
 
@@ -80,17 +82,17 @@ To install the Company Portal app, you have some options:
 
 ## Customize the Company Portal app
 
-Many organizations customize the Company Portal app to include their specific information. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), you can customize the Company Portal app. For example, you can add a brand logo, include support information, add self-service device actions, and more.
+Many organizations customize the Company Portal app to include their specific information. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), you can customize the Company Portal app. For example, you can add a brand logo, include support information, add self-service device actions, and more.
 
 For more information, see [Configure the Intune Company Portal app](/mem/intune/apps/company-portal-app).
 
 ## Add your organization apps to the Company Portal app
 
-When you add an app in the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), there's a **Show this as a featured app in the Company Portal** setting. Be sure you use this setting.
+When you add an app in the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), there's a **Show this as a featured app in the Company Portal** setting. Be sure you use this setting.
 
 On co-managed devices (Microsoft Intune + Configuration Manager together), your Configuration Manager apps can also be shown in the Company Portal app. For more information, see [Use the Company Portal app on co-managed devices](/mem/configmgr/comanage/company-portal).
 
-When the apps are shown, users can select and download the apps on their devices. You can add Microsoft Store apps, web apps, Microsoft 365 apps, LOB apps, Win32 apps, and sideload apps. For more information on adding apps to the Endpoint Manager admin center, see:
+When the apps are shown, users can select and download the apps on their devices. You can add Microsoft Store apps, web apps, Microsoft 365 apps, LOB apps, Win32 apps, and sideload apps. For more information on adding apps to the Intune admin center, see:
 
 - [Add Microsoft 365 apps using Intune](/mem/intune/apps/apps-add-office365)
 - [Add web apps using Intune](/mem/intune/apps/web-app)

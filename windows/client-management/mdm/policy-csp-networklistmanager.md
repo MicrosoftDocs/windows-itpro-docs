@@ -37,23 +37,24 @@ ms.topic: reference
 
 <!-- AllowedTlsAuthenticationEndpoints-Description-Begin -->
 <!-- Description-Source-DDF -->
-List of URLs (seperated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
+List of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
 <!-- AllowedTlsAuthenticationEndpoints-Description-End -->
 
 <!-- AllowedTlsAuthenticationEndpoints-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
-When entering a list of TLS endpoints in Microsoft Intune, use the following format, even in the UI:
-
-`<![CDATA[https://nls.corp.contoso.com&#xF000;https://nls.corp.fabricam.com]]>`
-
+- When entering a list of TLS endpoints in Microsoft Intune using a configuration profile with a custom template and the OMA URI, use the following format: `<![CDATA[https://nls.corp.contoso.com&#xF000;https://nls.corp.fabricam.com]]>`
 - The HTTPS endpoint must not have any more authentication checks, such as sign-in or multi-factor authentication.
-
 - The HTTPS endpoint must be an internal address not accessible from outside the organizational network.
-
 - The client must trust the server certificate. So the CA certificate that the HTTPS server certificate chains to must be present in the client machine's root certificate store.
-
 - A certificate shouldn't be a public certificate.
+
+To test the URL, use a PowerShell command similar to below:
+
+```powershell
+Invoke-WebRequest -Uri https://nls.corp.contoso.com -Method get -UseBasicParsing -MaximumRedirection 0
+```
+
+`StatusCode` return by the command must be 200 (`HTTP_STATUS_OK`).
 <!-- AllowedTlsAuthenticationEndpoints-Editable-End -->
 
 <!-- AllowedTlsAuthenticationEndpoints-DFProperties-Begin -->

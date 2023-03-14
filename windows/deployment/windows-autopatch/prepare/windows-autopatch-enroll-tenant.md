@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+ms.reviewer: hathind
 ---
 
 # Enroll your tenant
@@ -19,7 +19,7 @@ Before you enroll in Windows Autopatch, there are settings, and other parameters
 > [!IMPORTANT]
 > You must be a Global Administrator to enroll your tenant.
 
-The Readiness assessment tool, accessed in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), checks management or configuration-related settings. This tool allows you to check the relevant settings, and details steps to fix any settings that aren't configured properly for Windows Autopatch.  
+The Readiness assessment tool, accessed in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), checks management or configuration-related settings. This tool allows you to check the relevant settings, and details steps to fix any settings that aren't configured properly for Windows Autopatch.  
 
 ## Step 1: Review all prerequisites
 
@@ -37,7 +37,7 @@ The Readiness assessment tool checks the settings in [Microsoft Intune](#microso
 > [!IMPORTANT]
 > You must be a Global Administrator to run the Readiness assessment tool.
 
-1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Go to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. In the left pane, select Tenant administration and then navigate to Windows Autopatch > **Tenant enrollment**.
 
 > [!IMPORTANT]
@@ -109,7 +109,7 @@ Windows Autopatch retains the data associated with these checks for 12 months af
 
 **To delete the data we collect:**
 
-1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Navigate to Windows Autopatch > **Tenant enrollment**.
 3. Select **Delete all data**.
 

@@ -1,23 +1,15 @@
 ---
 title: Create WMI Filters for the GPO (Windows)
 description: Learn how to use WMI filters on a GPO to make sure that each GPO for a group can only be applied to devices running the correct version of Windows.
-ms.reviewer: jekrynit
-ms.author: paoloma
 ms.prod: windows-client
-ms.localizationpriority: medium
-author: paolomatarazzo
-manager: aaroncz
 ms.collection: 
   - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: itpro-security
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Create WMI Filters for the GPO

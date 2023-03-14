@@ -1,6 +1,6 @@
 ---
 title: Deploying your cache node
-manager: dougeby
+manager: aaroncz
 description: How to deploy Microsoft Connected Cache (MCC) for Enterprise and Education cache node
 ms.prod: windows-client
 author: amymzhou
@@ -8,6 +8,7 @@ ms.author: amyzhou
 ms.topic: article
 ms.date: 12/31/2017
 ms.technology: itpro-updates
+ms.collection: tier3
 ---
 
 # Deploying your cache node
@@ -163,7 +164,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
    1. Enable nested virtualization:
 
       ```powershell
-      Set -VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
+      Set-VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
       ```
 
    1. Enable MAC spoofing:

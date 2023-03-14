@@ -1,7 +1,6 @@
 ---
 title: Creating a Custom Compatibility Fix in Compatibility Administrator (Windows 10)
 description: The Compatibility Administrator tool uses the term fix to describe the combination of compatibility information added to a customized database for a specific application.
-ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

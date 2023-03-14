@@ -2,10 +2,9 @@
 title: What's new in Windows 10, version 1803
 description: New and updated features in Windows 10, version 1803 (also known as the Windows 10 April 2018 Update).
 ms.prod: windows-client
-ms.reviewer: 
-author: aczechowski
-manager: dougeby
-ms.author: aaroncz
+author: mestew
+manager: aaroncz
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX

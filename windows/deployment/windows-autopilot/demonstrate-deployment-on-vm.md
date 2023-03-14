@@ -7,8 +7,7 @@ ms.technology: itpro-deploy
 ms.localizationpriority: medium
 author: frankroj
 ms.author: frankroj
-ms.collection: 
-  - highpri
+ms.collection: highpri, tier2
 ms.topic: tutorial
 ms.date: 10/28/2022
 ---
@@ -400,7 +399,7 @@ Your VM (or device) can be registered either via Intune or Microsoft Store for B
 
 ### Autopilot registration using Intune
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Device enrollment | Enroll devices** > **Windows enrollment** > **Windows Autopilot Deployment Program | Devices** and then on the **Windows Autopilot devices** page, choose **Import**.
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Device enrollment | Enroll devices** > **Windows enrollment** > **Windows Autopilot Deployment Program | Devices** and then on the **Windows Autopilot devices** page, choose **Import**.
 
     ![Intune device import.](images/enroll1.png)
 
@@ -456,7 +455,7 @@ Pick one:
 
 The Autopilot deployment profile wizard asks for a device group, so you must create one first. To create a device group:
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Groups** > **New group**.
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Groups** > **New group**.
 
 2. In the **Group** pane:
     1. For **Group type**, choose **Security**.
@@ -605,7 +604,7 @@ To use the device (or VM) for other purposes after completion of this lab, you n
 
 ### Delete (deregister) Autopilot device
 
-You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), sign into the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), then go to **Devices > All Devices**. Select the device you want to delete, then select the **Delete** button along the top menu.
+You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), sign into the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), then go to **Devices > All Devices**. Select the device you want to delete, then select the **Delete** button along the top menu.
 
 > [!div class="mx-imgBorder"]
 > ![Delete device step 1.](images/delete-device1.png)

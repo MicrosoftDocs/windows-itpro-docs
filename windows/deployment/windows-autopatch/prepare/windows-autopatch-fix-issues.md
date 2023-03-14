@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+ms.reviewer: hathind
 ---
 
 # Fix issues found by the Readiness assessment tool
@@ -35,7 +35,7 @@ For each check, the tool will report one of four possible results:
 
 ## Microsoft Intune settings
 
-You can access Intune settings at the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+You can access Intune settings at the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 ### Unlicensed admins
 

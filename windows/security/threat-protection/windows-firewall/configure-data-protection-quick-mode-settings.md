@@ -1,26 +1,12 @@
 ---
 title: Configure Data Protection (Quick Mode) Settings (Windows)
 description: Learn how to configure the data protection settings for connection security rules in an isolated domain or a standalone isolated server zone.
-ms.assetid: fdcb1b36-e267-4be7-b842-5df9a067c9e0
-ms.reviewer: jekrynit
-ms.author: paoloma
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: paolomatarazzo
-manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: itpro-security
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Configure Data Protection (Quick Mode) Settings

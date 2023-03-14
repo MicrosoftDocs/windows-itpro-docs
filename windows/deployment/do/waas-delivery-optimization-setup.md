@@ -1,7 +1,7 @@
 ---
 title: Set up Delivery Optimization
 description: In this article, learn how to set up Delivery Optimization.
-author: carmenf
+author: cmknox
 ms.author: carmenf
 ms.reviewer: mstewart
 manager: aaroncz
@@ -10,6 +10,7 @@ ms.technology: itpro-updates
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.date: 12/19/2022
+ms.collection: tier3
 ---
 
 # Set up Delivery Optimization for Windows

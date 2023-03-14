@@ -7,9 +7,9 @@ author: mestew
 manager: aaroncz
 ms.author: mstewart
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ms.technology: itpro-fundamentals
 ms.date: 10/28/2022
+ms.collection: highpri, tier2
 ---
 # Windows client features lifecycle
 

@@ -1,8 +1,7 @@
 ---
 title: Appendix Information sent to Microsoft during activation (Windows 10)
 description: Learn about the information sent to Microsoft during activation.
-ms.reviewer: 
-  - nganguly
+ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
 author: frankroj

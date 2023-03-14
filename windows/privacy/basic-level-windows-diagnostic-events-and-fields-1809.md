@@ -2164,7 +2164,7 @@ The following fields are available:
 - **IsMDMEnrolled**  Whether the device has been MDM Enrolled or not.
 - **MPNId**  Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID
 - **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an enterprise Configuration Manager environment.
-- **ServerFeatures**  Represents the features installed on a Windows Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
+- **ServerFeatures**  Represents the features installed on a Windows Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
 - **SystemCenterID**  The Configuration Manager ID is an anonymized one-way hash of the Active Directory Organization identifier
 
 
@@ -5030,12 +5030,27 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 This event sends details collected for a specific application on the source device. The data collected with this event is used to keep Windows performing properly.
 
+The following fields are available:
 
-
-### Microsoft.Windows.Inventory.General.AppHealthStaticStartSync
-
-This event indicates the beginning of a series of AppHealthStaticAdd events. The data collected with this event is used to keep Windows performing properly.
-
+- **AhaVersion**  The binary version of the App Health Analyzer tool.
+- **ApplicationErrors**  The count of application errors from the event log.
+- **Bitness**  The architecture type of the application (16 Bit or 32 bit or 64 bit).
+- **device_level**  Various JRE/JAVA versions installed on a particular device.
+- **ExtendedProperties**  Attribute used for aggregating all other attributes under this event type.
+- **Jar**  Flag to determine if an app has a Java JAR file dependency.
+- **Jre**  Flag to determine if an app has JRE framework dependency.
+- **Jre_version**  JRE versions an app has declared framework dependency for.
+- **Name**  Name of the application.
+- **NonDPIAware**  Flag to determine if an app is non-DPI aware.
+- **NumBinaries**  Count of all binaries (.sys,.dll,.ini) from application install location.
+- **RequiresAdmin**  Flag to determine if an app requests admin privileges for execution.
+- **RequiresAdminv2**  Additional flag to determine if an app requests admin privileges for execution.
+- **RequiresUIAccess**  Flag to determine if an app is based on UI features for accessibility.
+- **VB6**  Flag to determine if an app is based on VB6 framework.
+- **VB6v2**  Additional flag to determine if an app is based on VB6 framework.
+- **Version**  Version of the application.
+- **VersionCheck**  Flag to determine if an app has a static dependency on OS version.
+- **VersionCheckv2**  Additional flag to determine if an app has a static dependency on OS version.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousMemorySlotArrayInfoAdd
