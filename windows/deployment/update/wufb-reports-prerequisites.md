@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 02/14/2023
+ms.date: 03/15/2023
 ms.technology: itpro-updates
 ---
 
@@ -32,8 +32,9 @@ Before you begin the process of adding Windows Update for Business reports to yo
 
 **Log Analytics permissions**:
 
+The data for Windows Update for Business reports is routed to a Log Analytics workspace for querying and analysis. To display or query data, users must have one of the following roles, or the equivalent permissions: 
 - [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role can be used to edit and write queries
-- [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role can be used to read data
+- [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role can be used to read data 
 
 ## Operating systems and editions
 
