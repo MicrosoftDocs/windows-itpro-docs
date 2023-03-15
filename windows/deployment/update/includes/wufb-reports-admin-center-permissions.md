@@ -15,7 +15,7 @@ To enroll into Windows Update for Business reports, edit configuration settings,
 - [Global Administrator role](/azure/active-directory/roles/permissions-reference#global-administrator)
 - [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator)
 - [Windows Update deployment administrator](/azure/active-directory/roles/permissions-reference#windows-update-deployment-administrator)
-   - This role allows enrollment through the [workbook](../wufb-reports-enable.md#bkmk_enroll-workbook) but not the Microsoft 365 admin center
+   - This role allows enrollment through the [workbook](../wufb-reports-enable.md#bkmk_enroll-workbook) but doesn't allow any access to the Microsoft 365 admin center
 - [Policy and profile manager](/mem/intune/fundamentals/role-based-access-control#built-in-roles) Intune role
    - This role allows enrollment through the [workbook](../wufb-reports-enable.md#bkmk_enroll-workbook) but doesn't allow any access to the Microsoft 365 admin center
 
