@@ -8,7 +8,7 @@ ms.topic: include
 ms.date: 08/10/2022
 ms.localizationpriority: medium
 ---
-<!--This file is shared by updates/wufb-reports-help.md and the update/wufb-reports-configuration-script.md articles. Headings are driven by article context.  -->
+<!--This file is used by update/wufb-reports-configuration-script.md articles. It was dropped from updates/wufb-reports-help.md. Headings are driven by article context.  -->
 
 In some cases, you may need to manually verify the device configuration has the `AllowUpdateComplianceProcessing` policy enabled. To verify the setting, use the following steps:
 
