@@ -5,7 +5,7 @@ manager: aaroncz
 ms.technology: itpro-updates
 ms.prod: windows-client
 ms.topic: include
-ms.date: 08/18/2022
+ms.date: 03/15/2023
 ms.localizationpriority: medium
 ---
 <!--This file is shared by updates/wufb-reports-enable.md and the update/wufb-reports-admin-center.md articles. Headings may be driven by article context.  -->
