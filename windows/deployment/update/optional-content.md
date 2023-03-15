@@ -8,7 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 12/31/2017
+ms.date: 03/15/2023
 ---
 
 # Migrating and acquiring optional Windows content during updates
@@ -22,7 +22,7 @@ This article provides some background on the problem of keeping language resourc
 
 When you update the operating system, it’s critical to keep language resources and Features on Demand (FODs). Many commercial organizations use Configuration Manager or other management tools to distribute and orchestrate Windows client setup using a local Windows image or WIM file (a “media-based” or “task-sequence-based” update). Others do in-place updates using an approved Windows client feature update by using Windows Server Update Services (WSUS), Configuration Manager, or equivalent tools (a "servicing-based” update). 
 
-Neither approach contains the full set of Windows optional features that a user’s device might need, so those features are not migrated to the new operating system. Further, those features are not available in Configuration Manager or WSUS for on-premises acquisition after a feature update 
+Neither approach contains the full set of Windows optional features that a user’s device might need, so those features are not migrated to the new operating system. In the past, those features were not available in Configuration Manager nor WSUS for on-premises acquisition after a feature update. 
 
 ## What is optional content?
 
@@ -46,7 +46,7 @@ Windows Setup needs access to the optional content. Since optional content is no
 
 ### User-initiated feature acquisition failure
 
-The second challenge involves a failure to acquire features when a user requests them. Imagine a user running a device with a new version of Windows client, either by using a clean installation or an in-place update. The user visits Settings, and attempts to install a second language, more language experience features, or other optional content. Again, since these features are not in the operating system, the packages need to be acquired. For a typical user with internet access, Windows will acquire the features from a nearby Microsoft content delivery network, and everything works as designed. For commercial users, some might not have internet access or have policies to prevent acquisition over the internet. In these situations, Windows must acquire the content from an alternative location. When the content can’t be found, users are frustrated and another help desk call could result. This pain point is sometimes referred to as "failure to acquire optional content.”
+The second challenge involves a failure to acquire features when a user requests them. Imagine a user running a device with a new version of Windows client, either by using a clean installation or an in-place update. The user visits Settings, and attempts to install a second language, more language experience features, or other optional content. Again, since these features are not in the operating system, the packages need to be acquired. For a typical user with internet access, Windows will acquire the features from a nearby Microsoft content delivery network, and everything works as designed. For commercial users, some might not have internet access or have policies to prevent acquisition over the internet. In these situations, Windows must acquire the content from an alternative location. When the content can’t be found, users are frustrated, and another help desk call could result. This pain point is sometimes referred to as "failure to acquire optional content.”
 
 ## Options for acquiring optional content
 
@@ -61,11 +61,12 @@ Most commercial organizations understand the pain points outlined above, and dis
 |Method  |Migration  |Acquisition  |Media  | Servicing |
 |---------|---------|---------|---------|--------------|
 |Option 1: Use Windows Update     | Yes        | Yes        | No        | Yes |
-|Option 2: Enable Dynamic Update     | Yes        | No        | Yes        |Yes  |
-|Option 3: Customize the Windows image before deployment     | Yes        | No       | Yes        |No |
-|Option 4: Install language features during deployment     | Partial        | No        | Yes        | No |
-|Option 5: Install optional content after deployment | Yes  | No |Yes | Yes |
-|Option 6: Configure alternative source for Features on Demand | No  | Partial | Yes | Yes |
+|Option 2: Use WSUS with UUP Integration     | Yes        | Yes        | No        | Yes |
+|Option 3: Enable Dynamic Update     | Yes        | No        | Yes        |Yes  |
+|Option 4: Customize the Windows image before deployment     | Yes        | No       | Yes        |No |
+|Option 5: Install language features during deployment     | Partial        | No        | Yes        | No |
+|Option 6: Install optional content after deployment | Yes  | No |Yes | Yes |
+|Option 7: Configure alternative source for Features on Demand | No  | Partial | Yes | Yes |
 
 
 
@@ -75,9 +76,20 @@ Windows Update for Business solves the optional content problem. Optional conten
 
 Starting with Windows 10, version 1709, we introduced the [Unified Update Platform](https://blogs.windows.com/windowsexperience/2016/11/03/introducing-unified-update-platform-uup/). The Unified Update Platform is an improvement in the underlying Windows update technology that results in smaller download sizes and a more efficient protocol for checking for updates, acquiring and installing the packages needed, and getting current in one update step. The technology is "unified" because it brings together the update stack for Windows client, Windows Server, and other products, such as HoloLens. The Unified Update Platform is not currently integrated with WSUS.
 
-Consider moving to Windows Update for Business. Not only will the optional content scenario work seamlessly (as it does for consumer devices today), but you also get the full benefits of smaller download sizes also known as Express Updates. Further, devices that use  devices are immune to the challenge of upgrading a Windows client device where the operating system installation language is inadvertently changed to a new language. Otherwise, any future media-based feature updates can fail when the installation media has a different installation language. For more info, see [Upgrading Windows 10 devices with installation media different than the original OS install language](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/upgrading-windows-10-devices-with-installation-media-different/ba-p/746126) for more details, and our [Ignite 2019 theater session THR4002](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR4002) on this topic.
+Consider moving to Windows Update for Business. Not only will the optional content scenario work seamlessly (as it does for consumer devices today), but you also get the full benefits of smaller download sizes also known as Express Updates. Further, devices that use  devices are immune to the challenge of upgrading a Windows client device where the operating system installation language is inadvertently changed to a new language. Otherwise, any future media-based feature updates can fail when the installation media has a different installation language. For more information, see [Upgrading Windows 10 devices with installation media different than the original OS install language](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/upgrading-windows-10-devices-with-installation-media-different/ba-p/746126) for more details, and our [Ignite 2019 theater session THR4002](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR4002) on this topic.
 
-### Option 2: Enable Dynamic Update
+
+### Option 2: Use WSUS with UUP Integration
+Starting in March 2023, UUP has been integrated with WSUS, and Configuration Manager, to bring the same optional content and acquisition benefits of Windows Update to on premises management solutions. For example:
+
+- devices that perform an in-place update using an approved Windows 11, version 22H2 client feature update using WSUS, FODs and languages will automatically migrate. Similarly, updates such as the combined cumulative update, Setup updates, Safe OS updates will be included, current based on the month that the feature update was approved. 
+
+- devices that upgrade using a local Windows image but use WSUS or Configuration Manager for approving the combined cumulative update will benefit by having support for optional content acquisition in the updated Windows OS be supported, as well as OS self-healing. 
+
+The content required to enable this will be acquired via WSUS, without endpoints requiring internet connectivity. To enable this improvement, a significant download to distribution point is required, once per major Windows release. This includes packages to support FOD and language acquisition, as packages to enable OS self-healing due to corruption. For more information, see [Plan your WSUS deployment](https://learn.microsoft.com/windows-server/administration/windows-server-update-services/plan/plan-your-wsus-deployment) 
+
+
+### Option 3: Enable Dynamic Update
 
 If you’re not ready to move to Windows Update, another option is to enable Dynamic Update during a feature update. As soon as a Windows feature update starts, whether via a media-based update or a WSUS-based feature update, Dynamic Update is one of the first steps invoked. Windows Setup connects to an internet-facing URL hosted by Microsoft to fetch Dynamic Update content, and then applies those updates to the operating system installation media. The content acquired includes the following:
 
@@ -94,7 +106,7 @@ Starting in Windows 10, version 2004, Dynamic Update can be configured with more
 One further consideration when using Dynamic Update is the affect on your network. One of the top blockers for this approach is the concern that each device will separately fetch this content from Microsoft. Windows 10, version 2004 setup now downloads Dynamic Update content using Delivery Optimization when available.
  For devices that aren’t connected to the internet, a subset of the Dynamic Update content is available by using WSUS and the Microsoft catalog. 
 
-### Option 3: Customize the Windows Image before deployment
+### Option 4: Customize the Windows Image before deployment
 
  For many organizations, the deployment workflow involves a Configuration Manager task sequence that performs a media-based update. Some customers either don’t have internet connectivity, or the connectivity is poor and so they can’t enable Dynamic Update. In these cases, we recommend installing optional content prior to deployment. This activity is sometimes referred to as customizing the installation media.
 
@@ -107,10 +119,10 @@ You can customize the Windows image in these ways:
 - Adding or removing languages
 - Adding or removing Features on Demand
 
-The benefit of this option is that the Windows image can include those additional languages, language experience features, and other Features on Demand through one-time updates to the image. Then you can use them in an existing task sequence or custom deployment where Setup.exe is involved. The downside of this approach is that it requires some preparation of the image in advance, including scripting with DISM to install the additional packages. It also means the image is the same for all devices that consume it and might contain more features than some users need. For more information on customizing your media, see [Updating Windows 10 media with Dynamic Update packages](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/updating-windows-10-media-with-dynamic-update-packages/ba-p/982477) and our [Ignite 2019 theater session THR3073](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR3073). Also like Option 2, you still have a solution for migration of optional content, but not supporting user-initiated optional content acquisition. Also, there is a variation of this option in which media is updated *on the device* just before installation. This option allows for device-specific image customization based on what's currently installed.
+The benefit of this option is that the Windows image can include those additional languages, language experience features, and other Features on Demand through one-time updates to the image. Then you can use them in an existing task sequence or custom deployment where Setup.exe is involved. The downside of this approach is that it requires some preparation of the image in advance, including scripting with DISM to install the additional packages. It also means the image is the same for all devices that consume it and might contain more features than some users need. For more information on customizing your media, see [Updating Windows 10 media with Dynamic Update packages](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/updating-windows-10-media-with-dynamic-update-packages/ba-p/982477) and our [Ignite 2019 theater session THR3073](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR3073). Also like Dynamic Update, you still have a solution for migration of optional content, but not supporting user-initiated optional content acquisition. Also, there is a variation of this option in which media is updated *on the device* just before installation. This option allows for device-specific image customization based on what's currently installed.
 
 
-### Option 4: Install language features during deployment
+### Option 5: Install language features during deployment
 
 A partial solution to address the first pain point of failing to migrate optional content during upgrade is to inject a subset of optional content during the upgrade process. This approach uses the Windows Setup option [/InstallLangPacks](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#installlangpacks) to add Language Packs and language capabilities such as text-to-speech recognition from a folder that contains the packages. This approach lets an IT pro take a subset of optional content and stage them within their network. If you use the servicing-based approach, you can configure InstallLangPacks using setupconfig.ini. See [Windows Setup Automation Overview](/windows-hardware/manufacture/desktop/windows-setup-automation-overview) for details.
 
@@ -118,11 +130,11 @@ When Setup runs, it will inject these packages into the new operating system dur
 
 This approach has some interesting benefits. The original Windows image doesn’t need to be modified, possibly saving time and scripting. 
 
-### Option 5: Install optional content after deployment
+### Option 6: Install optional content after deployment
 
-This option is like Option 3 in that you customize the operating system image with more optional content after it’s deployed. IT pros can extend the behavior of Windows Setup by running their own custom action scripts during and after a feature update. See [Run custom actions during feature update](/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions) for details. With this approach, you can create a device-specific migration of optional content by capturing the optional content that is installed in the operating system, and then saving this list to install the same optional content in the new operating system. Like Option 4, you would internally host a network share that contains the source of the optional content packages. Then, during the execution of Setup on the device, capture the list of installed optional content from the source operating system and save. Later, after Setup completes, you use the list to install the optional content, which leaves the user’s device without loss of functionality. 
+This option is like Option 4 in that you customize the operating system image with more optional content after it’s deployed. IT pros can extend the behavior of Windows Setup by running their own custom action scripts during and after a feature update. See [Run custom actions during feature update](/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions) for details. With this approach, you can create a device-specific migration of optional content by capturing the optional content that is installed in the operating system, and then saving this list to install the same optional content in the new operating system. Like Option 5, you would internally host a network share that contains the source of the optional content packages. Then, during the execution of Setup on the device, capture the list of installed optional content from the source operating system and save. Later, after Setup completes, you use the list to install the optional content, which leaves the user’s device without loss of functionality. 
 
-### Option 6: Configure an alternative source for optional content
+### Option 7: Configure an alternative source for optional content
 
 Several of the options address ways to address optional content migration issues during an in-place update. To address the second pain point of easily acquiring optional content in the user-initiated case, you can configure each device by using the Specify settings for optional component installation and component repair Group Policy. This policy setting specifies the network locations that will be used for the repair of operating system corruption and for enabling optional features that have had their payload files removed. This approach has the disadvantage of more content to be hosted within your network (in addition to the operating system image you might be still deploying to some clients) but has the advantage of acquiring content within your network. Some reminders about this policy:
 
@@ -137,20 +149,20 @@ See [Configure a Windows Repair Source](/windows-hardware/manufacture/desktop/co
 
 For more information about the Unified Update Platform and the approaches outlined in this article, see the following resources:
 
+- [Plan your WSUS deployment](https://learn.microsoft.com/windows-server/administration/windows-server-update-services/plan/plan-your-wsus-deployment)
 - [/InstallLangPacks](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#installlangpacks)
 - [/DynamicUpdate](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#dynamicupdate)
 - [Configure a Windows Repair Source](/windows-hardware/manufacture/desktop/configure-a-windows-repair-source)
-- [Ignite 2019 theater session THR3073](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR3073)  
-- [Ignite 2019 theater session THR4002](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR4002)
 - [Run custom actions during feature update](/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions)
 - [Unified Update Platform](https://blogs.windows.com/windowsexperience/2016/11/03/introducing-unified-update-platform-uup/)
 - [Updating Windows installation media with Dynamic Update packages](media-dynamic-update.md)
 - [Windows Setup Automation Overview](/windows-hardware/manufacture/desktop/windows-setup-automation-overview) 
-
+- [Ignite 2019 theater session THR3073](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR3073)  
+- [Ignite 2019 theater session THR4002](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR4002)
 
 ## Sample scripts
 
-Options 3 and 5 involve the most scripting. Sample scripts for Option 3 already exist, so we’ll look at sample scripts for [Option 5](#option-5-install-optional-content-after-deployment): Install Optional Content after Deployment.
+Options 4 and 6 involve the most scripting. Sample scripts for Option 4 already exist, so we’ll look at sample scripts for [Option 6](#option-6-install-optional-content-after-deployment): Install Optional Content after Deployment.
 
 ### Creating an optional content repository
 
