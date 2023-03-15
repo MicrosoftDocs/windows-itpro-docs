@@ -178,8 +178,6 @@ If you deployed Windows Hello for Business using the key trust model, and want t
 
 > [!NOTE]
 > For hybrid Azure AD joined devices, users must perform the first sign in with new credentials while having line of sight to a DC.
->
-> Without line of sight to a DC, even when the client is configured to use cloud Kerberos trust, the system will fall back to key trust if cloud Kerberos trust login fails.
 
 ## Migrate from certificate trust deployment model to cloud Kerberos trust
 
