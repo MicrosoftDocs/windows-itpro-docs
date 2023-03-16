@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 02/27/2023
+ms.date: 03/16/2023
 ms.technology: itpro-security
 ---
 
@@ -36,7 +36,7 @@ When you create policies for use with Windows Defender Application Control (WDAC
 | **Example Base Policy** | **Description** | **Where it can be found** |
 |-------------------------|---------------------------------------------------------------|--------|
 | **DefaultWindows_\*.xml** | This example policy is available in both audit and enforced mode. It includes rules to allow Windows, third-party hardware and software kernel drivers, and Windows Store apps. Used as the basis for the [Microsoft Intune product family](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune) policies. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies\DefaultWindows_\*.xml <br> %ProgramFiles%\WindowsApps\Microsoft.WDAC.WDACWizard*\DefaultWindows_Audit.xml |
-| **AllowMicrosoft.xml** | This example policy is available in enforcement mode. It includes the rules from DefaultWindows and adds rules to trust apps signed by the Microsoft product root certificate. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies\AllowMicrosoft.xml <br> %ProgramFiles%\WindowsApps\Microsoft.WDAC.WDACWizard*\AllowMicrosoft.xml |
+| **AllowMicrosoft.xml** | This example policy includes the rules from DefaultWindows and adds rules to trust apps signed by the Microsoft product root certificate. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies\AllowMicrosoft.xml <br> %ProgramFiles%\WindowsApps\Microsoft.WDAC.WDACWizard*\AllowMicrosoft.xml |
 | **AllowAll.xml** | This example policy is useful when creating a blocklist. All block policies should include rules allowing all other code to run and then add the DENY rules for your organization's needs. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies\AllowAll.xml |
 | **AllowAll_EnableHVCI.xml** | This example policy can be used to enable [memory integrity](https://support.microsoft.com/windows/core-isolation-e30ed737-17d8-42f3-a2a9-87521df09b78) (also known as hypervisor-protected code integrity) using WDAC. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies\AllowAll_EnableHVCI.xml |
 | **DenyAllAudit.xml** | ***Warning: May cause long boot time on Windows Server 2019.*** Only deploy this example policy in audit mode to track all binaries running on critical systems or to meet regulatory requirements. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies\DenyAllAudit.xml |

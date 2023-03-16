@@ -1,6 +1,6 @@
 ---
-title: Enable virtualization-based protection of code integrity
-description: This article explains the steps to opt in to using HVCI on Windows devices.
+title: Enable memory integrity
+description: This article explains the steps to opt in to using memory integrity on Windows devices.
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ ms.collection:
   - highpri
   - tier2
 ms.topic: conceptual
-ms.date: 12/16/2021
+ms.date: 03/16/2023
 ms.reviewer: 
 ms.technology: itpro-security
 ---
@@ -20,41 +20,50 @@ ms.technology: itpro-security
 # Enable virtualization-based protection of code integrity
 
 **Applies to** 
+
 - Windows 10
 - Windows 11
+- Windows Server 2016 or higher
 
-This topic covers different ways to enable Hypervisor-protected code integrity (HVCI) on Windows 10 and Windows 11.
-Some applications, including device drivers, may be incompatible with HVCI.
-This incompatibility can cause devices or software to malfunction and in rare cases may result in a blue screen. Such issues may occur after HVCI has been turned on or during the enablement process itself.
-If these issues occur, see [Troubleshooting](#troubleshooting) for remediation steps.
+**Memory integrity** is a virtualization-based security (VBS) feature available in Windows. Memory integrity and VBS improve the threat model of Windows and provide stronger protections against malware trying to exploit the Windows kernel. VBS uses the Windows hypervisor to create an isolated virtual environment that becomes the root of trust of the OS that assumes the kernel can be compromised. Memory integrity is a critical component that protects and hardens Windows by running kernel mode code integrity within the isolated virtual environment of VBS. Memory integrity also restricts kernel memory allocations that could be used to compromise the system.
 
 > [!NOTE]
-> Because it makes use of *Mode Based Execution Control*, HVCI works better with Intel Kaby Lake or AMD Zen 2 CPUs and newer. Processors without MBEC will rely on an emulation of this feature, called *Restricted User Mode*, which has a bigger impact on performance.
+> Memory integrity works better with Intel Kabylake and higher processors with *Mode-Based Execution Control*, and AMD Zen 2 and higher processors with *Guest Mode Execute Trap* capabilities. Older processors rely on an emulation of these features, called *Restricted User Mode*, and will have a bigger impact on performance.
 
-## HVCI Features
+> [!WARNING]
+> Some applications and hardware device drivers may be incompatible with memory integrity. This incompatibility can cause devices or software to malfunction and in rare cases may result in a boot failure (blue screen). Such issues may occur after memory integrity has been turned on or during the enablement process itself. If compatibility issues occur, see [Troubleshooting](#troubleshooting) for remediation steps.
 
-* HVCI protects modification of the Control Flow Guard (CFG) bitmap.
-* HVCI also ensures that your other trusted processes, like Credential Guard, have got a valid certificate.
-* Modern device drivers must also have an EV (Extended Validation) certificate and should support HVCI.
+> [!NOTE]
+> Memory integrity is sometimes referred to as *hypervisor-protected code integrity (HVCI)* or *hypervisor enforced code integrity*, and was originally released as part of *Device Guard*. Device Guard is no longer used except to locate memory integrity and VBS settings in Group Policy or the Windows registry.
 
-## How to turn on HVCI in Windows 10 and Windows 11 
+## Memory integrity features
 
-To enable HVCI on Windows 10 and Windows 11 devices with supporting hardware throughout an enterprise, use any of these options:
+- Protects modification of the Control Flow Guard (CFG) bitmap for kernel mode drivers.
+- Protects the kernel mode code integrity process that ensures that other trusted kernel processes have a valid certificate.
+
+## How to turn on memory integrity
+
+To enable memory integrity on Windows devices with supporting hardware throughout an enterprise, use any of these options:
+
 - [Windows Security app](#windows-security-app)
-- [Microsoft Intune (or another MDM provider)](#enable-hvci-using-intune)
-- [Group Policy](#enable-hvci-using-group-policy)
+- [Microsoft Intune (or another MDM provider)](#enable-memory-integrity-using-intune)
+- [Group Policy](#enable-memory-integrity-using-group-policy)
 - [Microsoft Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
-- [Registry](#use-registry-keys-to-enable-virtualization-based-protection-of-code-integrity)
+- [Registry](#use-registry-keys-to-enable-memory-integrity)
 
 ### Windows Security app
 
-HVCI is labeled **Memory integrity** in the Windows Security app and it can be accessed via **Settings** > **Update & Security** > **Windows Security** > **Device security** > **Core isolation details** > **Memory integrity**. For more information, see [KB4096339](https://support.microsoft.com/help/4096339/windows-10-device-protection-in-windows-defender-security-center).
+**Memory integrity** can be turned on in the Windows Security app and found at **Windows Security** > **Device security** > **Core isolation details** > **Memory integrity**. For more information, see [Device protection in Windows Security](https://support.microsoft.com/help/4096339/windows-10-device-protection-in-windows-defender-security-center).
 
-### Enable HVCI using Intune
+Beginning with Windows 11 22H2, the Windows Security app shows a warning if memory integrity is turned off. The warning indicator also appears on the Windows Security icon in the Windows Taskbar and in the Windows Notification Center. The user can dismiss the warning from within the Windows Security app.
 
-Enabling in Intune requires using the Code Integrity node in the [VirtualizationBasedTechnology CSP](/windows/client-management/mdm/policy-csp-virtualizationbasedtechnology). You can configure the settings in Windows by using the [settings catalog](/mem/intune/configuration/settings-catalog).
+To proactively dismiss the memory integrity warning, you can set the **Hardware_HVCI_Off** (DWORD) registry value under `HKLM\SOFTWARE\Microsoft\Windows Security Health\State` to 0. After you change the registry value, you must restart the device for the change to take effect.
 
-### Enable HVCI using Group Policy
+### Enable memory integrity using Intune
+
+Enabling in Intune requires using the Code Integrity node in the [VirtualizationBasedTechnology CSP](/windows/client-management/mdm/policy-csp-virtualizationbasedtechnology). You can configure these settings by using the [settings catalog](/mem/intune/configuration/settings-catalog).
+
+### Enable memory integrity using Group Policy
 
 1. Use Group Policy Editor (gpedit.msc) to either edit an existing GPO or create a new one.
 
@@ -62,17 +71,17 @@ Enabling in Intune requires using the Code Integrity node in the [Virtualization
 
 3. Double-click **Turn on Virtualization Based Security**.
 
-4. Click **Enabled** and under **Virtualization Based Protection of Code Integrity**, select **Enabled with UEFI lock** to ensure HVCI can't be disabled remotely or select **Enabled without UEFI lock**.
+4. Select **Enabled** and under **Virtualization Based Protection of Code Integrity**, select **Enabled without UEFI lock**. Only select **Enabled with UEFI lock** if you want to prevent memory integrity from being disabled remotely or by policy update. Once enabled with UEFI lock, you must have access to the UEFI BIOS menu to turn off Secure Boot if you want to turn off memory integrity.
 
-   ![Enable HVCI using Group Policy.](../images/enable-hvci-gp.png)
+   ![Enable memory integrity using Group Policy.](../images/enable-hvci-gp.png)
 
-5. Click **Ok** to close the editor.
+5. Select **Ok** to close the editor.
 
 To apply the new policy on a domain-joined computer, either restart or run `gpupdate /force` in an elevated command prompt.
 
-### Use registry keys to enable virtualization-based protection of code integrity
+### Use registry keys to enable memory integrity
 
-Set the following registry keys to enable HVCI. These keys provide exactly the same set of configuration options provided by Group Policy.
+Set the following registry keys to enable memory integrity. These keys provide exactly the same set of configuration options provided by Group Policy.
 
 <!--This comment ensures that the Important above and the Warning below don't merge together. -->
 
@@ -80,13 +89,13 @@ Set the following registry keys to enable HVCI. These keys provide exactly the s
 >
 > - Among the commands that follow, you can choose settings for **Secure Boot** and **Secure Boot with DMA**. In most situations, we recommend that you choose **Secure Boot**. This option provides Secure Boot with as much protection as is supported by a given computer's hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled.
 >
-> - In contrast, with **Secure Boot with DMA**, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can still have Windows Defender Application Control enabled.
+> - If you select **Secure Boot with DMA**, memory integrity and the other VBS features will only be turned on for computers that support DMA. That is, for computers with IOMMUs only. Any computer without IOMMUs will not have VBS or memory integrity protection.
 >
 > - All drivers on the system must be compatible with virtualization-based protection of code integrity; otherwise, your system may fail. We recommend that you enable these features on a group of test computers before you enable them on users' computers.
 
 #### For Windows 10 version 1607 and later and for Windows 11 version 21H2
 
-Recommended settings (to enable virtualization-based protection of Code Integrity policies, without UEFI Lock):
+Recommended settings (to enable memory integrity without UEFI Lock):
 
 ```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
@@ -100,9 +109,9 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorE
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 0 /f
 ```
 
-If you want to customize the preceding recommended settings, use the following settings.
+If you want to customize the preceding recommended settings, use the following registry keys.
 
-**To enable VBS**
+**To enable VBS only (no memory integrity)**
 
 ```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
@@ -132,19 +141,19 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_D
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 1 /f
 ```
 
-**To enable virtualization-based protection of Code Integrity policies**
+**To enable memory integrity**
 
 ```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 1 /f
 ```
 
-**To enable virtualization-based protection of Code Integrity policies without UEFI lock (value 0)**
+**To enable memory integrity without UEFI lock (value 0)**
 
 ```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 0 /f
 ```
 
-**To enable virtualization-based protection of Code Integrity policies with UEFI lock (value 1)**
+**To enable memory integrity with UEFI lock (value 1)**
 
 ```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 1 /f
@@ -152,7 +161,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorE
 
 #### For Windows 10 version 1511 and earlier
 
-Recommended settings (to enable virtualization-based protection of Code Integrity policies, without UEFI Lock):
+Recommended settings (to enable memory integrity, without UEFI Lock):
 
 ```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
@@ -184,34 +193,45 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformS
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 3 /f
 ```
 
-**To enable virtualization-based protection of Code Integrity policies (with the default, UEFI lock)**
+**To enable memory integrity (with the default, UEFI lock)**
 
 ```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "HypervisorEnforcedCodeIntegrity" /t REG_DWORD /d 1 /f
 ```
 
-**To enable virtualization-based protection of Code Integrity policies without UEFI lock**
+**To enable memory integrity without UEFI lock**
 
 ```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Unlocked" /t REG_DWORD /d 1 /f
 ```
 
-### Validate enabled Windows Defender Device Guard hardware-based security features
+### Enable memory integrity using Windows Defender Application Control (WDAC)
 
-Windows 10, Windows 11, and Windows Server 2016 have a WMI class for related properties and features: *Win32\_DeviceGuard*. This class can be queried from an elevated Windows PowerShell session by using the following command:
+You can use WDAC policy to turn on memory integrity using any of the following techniques:
+
+1. Use the [WDAC Wizard](https://aka.ms/wdacwizard) to create or edit your WDAC policy and select the option **Hypervisor-protected Code Integrity** on the **Policy Rules** page of the Wizard.
+2. Use the [Set-HVCIOptions](/powershell/module/configci/set-hvcioptions) PowerShell cmdlet.
+3. Edit your WDAC policy XML and modify the value set for the `<HVCIOptions>` element.
+
+> [!NOTE]
+> If your WDAC policy is set to turn memory integrity on, it will be turned on even if the policy is in audit mode.
+
+### Validate enabled VBS and memory integrity features
+
+Windows 10, Windows 11, and Windows Server 2016 and higher have a WMI class for VBS-related properties and features: *Win32\_DeviceGuard*. This class can be queried from an elevated Windows PowerShell session by using the following command:
 
 ```powershell
 Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard
 ```
 
 > [!NOTE]
-> Mode Based Execution Control property will only be listed as available starting with Windows 10 version 1803 and Windows 11 version 21H2.
+> Mode Based Execution Control property will only be listed as available starting with Windows 10 version 1803 and Windows 11 version 21H2. This value is reported for both Intel's *Mode-Based Execution Control* and AMD's *Guest Mode Execute Trap* capabilities.
 
 The output of this command provides details of the available hardware-based security features and those features that are currently enabled.
 
 #### AvailableSecurityProperties
 
-This field helps to enumerate and report state on the relevant security properties for Windows Defender Device Guard.
+This field helps to enumerate and report state on the relevant security properties for VBS and memory integrity.
 
 Value | Description
 -|-
@@ -227,11 +247,11 @@ Value | Description
 
 #### InstanceIdentifier
 
-A string that is unique to a particular device. Valid values are determined by WMI.
+A string that is unique to a particular device and set by WMI.
 
 #### RequiredSecurityProperties
 
-This field describes the required security properties to enable virtualization-based security.
+This field describes the required security properties to enable VBS.
 
 Value | Description
 -|-
@@ -246,25 +266,25 @@ Value | Description
 
 #### SecurityServicesConfigured
 
-This field indicates whether the Windows Defender Credential Guard or HVCI service has been configured.
+This field indicates whether Windows Defender Credential Guard or memory integrity has been configured.
 
 Value | Description
 -|-
 **0.** | No services are configured.
 **1.** | If present, Windows Defender Credential Guard is configured.
-**2.** | If present, HVCI is configured.
+**2.** | If present, memory integrity is configured.
 **3.** | If present, System Guard Secure Launch is configured.
 **4.** | If present, SMM Firmware Measurement is configured.
 
 #### SecurityServicesRunning
 
-This field indicates whether the Windows Defender Credential Guard or HVCI service is running.
+This field indicates whether Windows Defender Credential Guard or memory integrity is running.
 
 Value | Description
 -|-
 **0.** | No services running.
 **1.** | If present, Windows Defender Credential Guard is running.
-**2.** | If present, HVCI is running.
+**2.** | If present, memory integrity is running.
 **3.** | If present, System Guard Secure Launch is running.
 **4.** | If present, SMM Firmware Measurement is running.
 
@@ -286,43 +306,41 @@ Value  | Description
 
 This field lists the computer name. All valid values for computer name.
 
-Another method to determine the available and enabled virtualization-based security features is to run msinfo32.exe from an elevated PowerShell session. When you run this program, the virtualization-based security features are displayed at the bottom of the **System Summary** section.
+Another method to determine the available and enabled VBS features is to run msinfo32.exe from an elevated PowerShell session. When you run this program, the VBS features are displayed at the bottom of the **System Summary** section.
 
 :::image type="content" alt-text="Virtualization-based security features in the System Summary of System Information." source="images/system-information-virtualization-based-security.png" lightbox="images/system-information-virtualization-based-security.png":::
 
 ## Troubleshooting
 
-A. If a device driver fails to load or crashes at runtime, you may be able to update the driver using **Device Manager**.
+- If a device driver fails to load or crashes at runtime, you may be able to update the driver using **Device Manager**.
+- If you experience a critical error during boot or your system is unstable after turning on memory integrity, you can recover using the Windows Recovery Environment (Windows RE).
+    1. First, disable any policies that are used to enable VBS and memory integrity, for example Group Policy.
+    2. Then, boot to Windows RE on the affected computer, see [Windows RE Technical Reference](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference).
+    3. After logging in to Windows RE, set the memory integrity registry key to off:
 
-B. If you experience software or device malfunction after using the above procedure to turn on HVCI, but you're able to sign in to Windows, you can turn off HVCI by renaming or deleting the SIPolicy.p7b file from `<OS Volume>\Windows\System32\CodeIntegrity\` and then restart your device.
+        ```console
+        reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 0 /f
+        ```
 
-C. If you experience a critical error during boot or your system is unstable after using the above procedure to turn on HVCI, you can recover using the Windows Recovery Environment (Windows RE). To boot to Windows RE, see [Windows RE Technical Reference](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference). After logging in to Windows RE, you can turn off HVCI by renaming or deleting the SIPolicy.p7b file from `<OS Volume>\Windows\System32\CodeIntegrity\` and then restart your device.
+    4. Finally, restart your device.
 
-## How to turn off HVCI
+> [!NOTE]
+> If you turned on memory integrity with UEFI lock, you will need to disable Secure Boot to complete the Windows RE recovery steps.
 
-1. Run the following command from an elevated prompt to set the HVCI registry key to off:
+## Memory integrity deployment in virtual machines
 
-    ```console
-    reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 0 /f
-    ```
+Memory integrity can protect a Hyper-V virtual machine, just as it would a physical machine. The steps to enable memory integrity are the same from within the virtual machine.
 
-1. Restart the device.
-
-1. To confirm HVCI has been successfully disabled, open System Information and check **Virtualization-based security Services Running**, which should now have no value displayed.
-
-## HVCI deployment in virtual machines
-
-HVCI can protect a Hyper-V virtual machine, just as it would a physical machine. The steps to enable Windows Defender Application Control are the same from within the virtual machine.
-
-WDAC protects against malware running in the guest virtual machine. It doesn't provide extra protection from the host administrator. From the host, you can disable WDAC for a virtual machine:
+Memory integrity protects against malware running in the guest virtual machine. It doesn't provide extra protection from the host administrator. From the host, you can disable memory integrity for a virtual machine:
 
 ```powershell
 Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
 ```
 
-### Requirements for running HVCI in Hyper-V virtual machines
--   The Hyper-V host must run at least Windows Server 2016 or Windows 10 version 1607.
--   The Hyper-V virtual machine must be Generation 2, and running at least Windows Server 2016 or Windows 10.
--   HVCI and [nested virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) can be enabled at the same time. To enable the Hyper-V role on the virtual machine, you must first install the Hyper-V role in a Windows nested virtualization environment.
--   Virtual Fibre Channel adapters aren't compatible with HVCI. Before attaching a virtual Fibre Channel Adapter to a virtual machine, you must first opt out of virtualization-based security using `Set-VMSecurity`.
--   The AllowFullSCSICommandSet option for pass-through disks isn't compatible with HVCI. Before configuring a pass-through disk with AllowFullSCSICommandSet, you must first opt out of virtualization-based security using `Set-VMSecurity`.
+### Requirements for running memory integrity in Hyper-V virtual machines
+
+- The Hyper-V host must run at least Windows Server 2016 or Windows 10 version 1607.
+- The Hyper-V virtual machine must be Generation 2, and running at least Windows Server 2016 or Windows 10.
+- Memory integrity and [nested virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) can be enabled at the same time. To enable the Hyper-V role on the virtual machine, you must first install the Hyper-V role in a Windows nested virtualization environment.
+- Virtual Fibre Channel adapters aren't compatible with memory integrity. Before attaching a virtual Fibre Channel Adapter to a virtual machine, you must first opt out of virtualization-based security using `Set-VMSecurity`.
+- The AllowFullSCSICommandSet option for pass-through disks isn't compatible with memory integrity. Before configuring a pass-through disk with AllowFullSCSICommandSet, you must first opt out of virtualization-based security using `Set-VMSecurity`.
