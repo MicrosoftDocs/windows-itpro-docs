@@ -68,7 +68,7 @@ For more information about how Windows diagnostic data is used, see:
 
 ## Tenant access
 
-Windows Autopatch creates an enterprise application in your tenant. This enterprise application is a first party application used to run the Windows Autopatch service.
+Windows Autopatch creates an enterprise application in your tenant. This enterprise application is used to run the Windows Autopatch service.
 
 | Enterprise application name | Usage | Permissions |
 | ----- | ----- | ----- |
