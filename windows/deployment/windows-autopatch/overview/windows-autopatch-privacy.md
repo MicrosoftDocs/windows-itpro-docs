@@ -72,7 +72,7 @@ Windows Autopatch creates an enterprise application in your tenant. This enterpr
 
 | Enterprise application name | Usage | Permissions |
 | ----- | ----- | ----- |
-| Modern Workplace Management | This enterprise application is a limited first party enterprise application with elevated privileges. This application is used to manage the service, publish baseline configuration updates, and maintain overall service health. | <ul><li>DeviceManagementApps.ReadWrite.All</li><li>DeviceManagementConfiguration.ReadWrite.All</li><li>DeviceManagementManagedDevices.PriviligedOperation.All</li><li>DeviceManagementManagedDevices.ReadWrite.All</li><li>DeviceManagementRBAC.ReadWrite.All</li><li>DeviceManagementServiceConfig.ReadWrite.All</li><li>Directory.Read.All</li><li>Group.Create</li><li>Policy.Read.All</li><li>WindowsUpdates.ReadWrite.All</li></ul>|
+| Modern Workplace Management | The Modern Workplace Management application:<ul><li>Manages the service</li><li>Publishes baseline configuration updates</li><li>Maintains overall service health</li></ul> | <ul><li>DeviceManagementApps.ReadWrite.All</li><li>DeviceManagementConfiguration.ReadWrite.All</li><li>DeviceManagementManagedDevices.PriviligedOperation.All</li><li>DeviceManagementManagedDevices.ReadWrite.All</li><li>DeviceManagementRBAC.ReadWrite.All</li><li>DeviceManagementServiceConfig.ReadWrite.All</li><li>Directory.Read.All</li><li>Group.Create</li><li>Policy.Read.All</li><li>WindowsUpdates.ReadWrite.All</li></ul>|
 
 ### Service accounts
 
