@@ -77,7 +77,7 @@ Consider moving to Windows Update for Business. Not only will the optional conte
 
 Starting in March 2023, UUP has been integrated with WSUS and Configuration Manager to bring the same optional content and acquisition benefits of Windows Update to on-premises management solutions. For example:
 
-- FODs and languages will automatically migrate for devices that perform an in-place update using an approved Windows 11, version 22H2 client feature update from WSUS. Similarly, updates such as the combined cumulative update, Setup updates, Safe OS updates will be included and current based on the month that the feature update was approved.
+- FODs and languages will automatically migrate for devices that perform an in-place update using an approved Windows 11, version 22H2 client feature update from WSUS. Similarly, updates such as the combined cumulative update, Setup updates, and Safe OS updates will be included and current based on the month that the feature update was approved.
 
 - Devices that upgrade using a local Windows image but use WSUS or Configuration Manager for approving the combined cumulative update will benefit by having support for optional content acquisition in the updated Windows OS, as well as OS self-healing.
 
