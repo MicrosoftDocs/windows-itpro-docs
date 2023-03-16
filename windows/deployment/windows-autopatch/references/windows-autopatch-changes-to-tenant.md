@@ -23,7 +23,7 @@ The following configuration details explain the changes made to your tenant when
 
 Enterprise applications are applications (software) that a business uses to do its work.
 
-Windows Autopatch creates an enterprise application in your tenant. This enterprise application is a first party application used to run the Windows Autopatch service.
+Windows Autopatch creates an enterprise application in your tenant. This enterprise application is used to run the Windows Autopatch service.
 
 | Enterprise application name | Usage | Permissions |
 | ----- | ------ | ----- |
