@@ -24,6 +24,7 @@
     ],
     "globalMetadata": {
       "recommendations": true,
+      "adobe-target": true,
       "ms.collection": [
         "tier3"
       ],
