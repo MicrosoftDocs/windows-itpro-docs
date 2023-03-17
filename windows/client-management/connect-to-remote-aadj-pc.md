@@ -22,8 +22,8 @@ ms.technology: itpro-manage
 From its release, Windows has supported remote connections to devices joined to Active Directory using Remote Desktop Protocol (RDP). Windows 10, version 1607 added the ability to connect to a device that is joined to Azure Active Directory (Azure AD) using RDP.
 
 - Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session](/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics).
-- Starting in Windows 10/11, with 2022-09 preview update installed, you can [use Azure AD authentication to connect to the remote Azure AD device](#connect-with-azure-ad-authentication).
-
+- Starting in Windows 10/11, with 2022-10 update installed, you can [use Azure AD authentication to connect to the remote Azure AD device](#connect-with-azure-ad-authentication).
+ 
 ## Prerequisites
 
 - Both devices (local and remote) must be running a supported version of Windows.
@@ -34,17 +34,19 @@ From its release, Windows has supported remote connections to devices joined to 
 
 ## Connect with Azure AD Authentication
 
-Azure AD Authentication can be used on the following operating systems:
+Azure AD Authentication can be used on the following operating systems for both the local and remote device:
 
-- Windows 11 with [2022-09 Cumulative Updates for Windows 11 Preview (KB5017383)](https://support.microsoft.com/kb/KB5017383) or later installed.
-- Windows 10, version 20H2 or later with [2022-09 Cumulative Updates for Windows 10 Preview (KB5017380)](https://support.microsoft.com/kb/KB5017380) or later installed.
-- Windows Server 2022 with [2022-09 Cumulative Update for Microsoft server operating system preview (KB5017381)](https://support.microsoft.com/kb/KB5017381) or later installed.
-
+- Windows 11 with [2022-10 Cumulative Updates for Windows 11 (KB5018418)](https://support.microsoft.com/kb/KB5018418) or later installed.
+- Windows 10, version 20H2 or later with [2022-10 Cumulative Updates for Windows 10 (KB5018410)](https://support.microsoft.com/kb/KB5018410) or later installed.
+- Windows Server 2022 with [2022-10 Cumulative Update for Microsoft server operating system (KB5018421)](https://support.microsoft.com/kb/KB5018421) or later installed.
+   
 There's no requirement for the local device to be joined to a domain or Azure AD. As a result, this method allows you to connect to the remote Azure AD joined device from:
 
 - [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) device.
 - Active Directory joined device.
 - Workgroup device.
+ 
+Azure AD authentication can also be used to connect to Hybrid Azure AD joined devices.
 
 To connect to the remote computer:
 
@@ -54,6 +56,7 @@ To connect to the remote computer:
 
     > [!NOTE]
     > IP address cannot be used when **Use a web account to sign in to the remote computer** option is used.
+    > The name must match the hostname of the remote device in Azure AD and be network addressable, resolving to the IP address of the remote device.
 
 - When prompted for credentials, specify your user name in `user@domain.com` format.
 - You're then prompted to allow the remote desktop connection when connecting to a new PC. Azure AD remembers up to 15 hosts for 30 days before prompting again. If you see this dialogue, select **Yes** to connect.
@@ -103,7 +106,7 @@ This table lists the supported configurations for remotely connecting to an Azur
 > If the RDP client is running Windows Server 2016 or Windows Server 2019, to be able to connect to Azure AD joined devices, it must [allow Public Key Cryptography Based User-to-User (PKU2U) authentication requests to use online identities](/windows/security/threat-protection/security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities).
 
 > [!NOTE]
-> When an Azure AD group is added to the **Remote Desktop Users** group on a Windows device, it isn't honoured when the user that belongs to the Azure AD group logs in through RDP resulting in failure to establish the remote connection. In this scenario, Network Level Authentication should be disabled to allow the connection.
+> When an Azure AD group is added to the **Remote Desktop Users** group on a Windows device, it isn't honored when the user that belongs to the Azure AD group logs in through RDP resulting in failure to establish the remote connection. In this scenario, Network Level Authentication should be disabled to allow the connection.
 
 ## Add users to Remote Desktop Users group
 
@@ -126,3 +129,5 @@ Remote Desktop Users group is used to grant users and groups permissions to remo
 ## Related articles
 
 [How to use Remote Desktop](https://support.microsoft.com/windows/how-to-use-remote-desktop-5fe128d5-8fb1-7a23-3b8a-41e636865e8c)
+
+
