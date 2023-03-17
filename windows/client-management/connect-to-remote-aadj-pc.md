@@ -49,13 +49,14 @@ There's no requirement for the local device to be joined to a domain or Azure AD
 To connect to the remote computer:
 
 - Launch **Remote Desktop Connection** from Windows Search, or by running `mstsc.exe`.
-- Specify the name of the remote computer.
+- Specify the **name** of the remote computer (IP address cannot be used when **Use a web account to sign in to the remote computer** option is used.) 
 - Select **Use a web account to sign in to the remote computer** option in the **Advanced** tab. This option is equivalent to the `enablerdsaadauth` RDP property. For more information, see [Supported RDP properties with Remote Desktop Services](/windows-server/remote/remote-desktop-services/clients/rdp-files).
 - When prompted for credentials, specify your user name in `user@domain.com` format.
 - You're then prompted to allow the remote desktop connection when connecting to a new PC. Azure AD remembers up to 15 hosts for 30 days before prompting again. If you see this dialogue, select **Yes** to connect.
 
 > [!IMPORTANT]
-> If your organization has configured and is using [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), your device must satisfy the conditional access requirements to allow connection to the remote computer.
+> If your organization has configured and is using [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), your device must satisfy the conditional access requirements to allow connection to the remote computer. Conditional Access Policies can be used to "Require multi-factor authentication", "Require authentication strength" and session controls like "Sign-in frequency" by applying the Conditional Access Policy to the specific application **Microsoft Remote Desktop (a4a365df-50f1-4397-bc59-1a1564b8bb9c)**
+
 
 ### Disconnection when the session is locked
 
