@@ -21,3 +21,9 @@ To enroll into Windows Update for Business reports, edit configuration settings,
 
 To display the workbook and view the **Windows** tab in the **Software Updates** page [Microsoft 365 admin center](https://admin.microsoft.com) use the following role:
   - [Global Reader role](/azure/active-directory/roles/permissions-reference#global-reader)
+
+**Log Analytics permissions**:
+
+The data for Windows Update for Business reports is routed to a Log Analytics workspace for querying and analysis. To display or query data, users must have one of the following roles, or the equivalent permissions:
+- [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role can be used to edit and write queries
+- [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role can be used to read data
