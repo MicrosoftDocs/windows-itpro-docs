@@ -21,3 +21,24 @@ Windows Update for Business reports provides Delivery Optimization information i
 - [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md)
 - [UCDOStatus](wufb-reports-schema-ucdostatus.md)
 
+## Delivery Optimization terms
+
+Windows Update for Business reports uses the following Delivery Optimization terms:
+
+- **Peer**: A device in the solution
+- **Peering 'ON'** - Devices where DO peer-to-peer is enabled in one of the following modes:
+   - LAN (1)
+   - Group (2)
+   - Internet (3)
+- **Peering 'OFF'**: Devices where DO peer-to-peer is disabled, set to one of the following modes:
+   - HTTP Only (0)
+   - Simple Mode (99)
+   - Bypass (100), deprecated in Windows 11
+**Bandwidth savings**: Out of the total consumed bandwidth, the percentage of bandwidth that was downloaded from either LAN or Group peers, and from Microsoft Connected Cache (MCC)
+   - If bandwidth savings are <= 60% a *Warning* icon is displayed
+   - When bandwidth savings is <10% an *Error* icon is displayed.
+- **Configurations**: Based on the DownloadMode configuration set via MDM, Group Policy, or end-user via the user interface.
+
+<!--Check this formula w PG, might be VolCDN=-->
+Volume from the CDN is calculated with the following formula:
+BytesFromCDN = BytesFromCDN - BytesFromEnterpriseCache
