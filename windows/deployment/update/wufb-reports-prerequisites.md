@@ -30,12 +30,6 @@ Before you begin the process of adding Windows Update for Business reports to yo
 
 [!INCLUDE [Windows Update for Business reports permissions](./includes/wufb-reports-admin-center-permissions.md)]
 
-**Log Analytics permissions**:
-
-The data for Windows Update for Business reports is routed to a Log Analytics workspace for querying and analysis. To display or query data, users must have one of the following roles, or the equivalent permissions: 
-- [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role can be used to edit and write queries
-- [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role can be used to read data 
-
 ## Operating systems and editions
 
 - Windows 11 Professional, Education, Enterprise, and [Enterprise multi-session](/azure/virtual-desktop/windows-10-multisession-faq) editions
