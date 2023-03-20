@@ -194,7 +194,12 @@ The most common values:
 | 0x18                     | RC4-HMAC-EXP            | Default suite for operating systems before Windows Server 2008 and Windows Vista. |
 | 0xFFFFFFFF or 0xffffffff | -                       | This type shows in Audit Failure events.                                          |
 
--   **Failure Code** \[Type = HexInt32\]**:** hexadecimal result code of TGS issue operation. The table below contains the list of the most common error codes for this event:
+-   **Failure Code** \[Type = HexInt32\]**:** hexadecimal result code of TGS issue operation. 
+Some errors are only reported when you set KdcExtraLogLevel per [Kerberos and KDC registry entries] (https://learn.microsoft.com/en-us/troubleshoot/windows-server/windows-security/kerberos-protocol-registry-kdc-configuration-keys) hexadecimal flag, OR-connected for multiple flags being set:
+0x01: Audit SPN unknown errors.
+0x10: Log audit events on encryption type (ETYPE) and bad options errors.
+
+The table below contains the list of the most common error codes for this event:
 
 | Code | Code Name                              | Description                                                                 | Possible causes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |------|----------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
