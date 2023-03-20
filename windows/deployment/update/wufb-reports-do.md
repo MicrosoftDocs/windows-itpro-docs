@@ -36,7 +36,7 @@ Windows Update for Business reports uses the following Delivery Optimization ter
    - HTTP Only (0)
    - Simple Mode (99)
    - Bypass (100), deprecated in Windows 11
-**Bandwidth savings**: Out of the total consumed bandwidth, the percentage of bandwidth that was downloaded from either LAN or Group peers, and from Microsoft Connected Cache (MCC)
+- **Bandwidth savings**: Out of the total consumed bandwidth, the percentage of bandwidth that was downloaded from either LAN or Group peers, and from Microsoft Connected Cache (MCC)
    - If bandwidth savings are <= 60% a *Warning* icon is displayed
    - When bandwidth savings are <10% an *Error* icon is displayed.
 - **Configurations**: Based on the DownloadMode configuration set via MDM, Group Policy, or end-user via the user interface.
