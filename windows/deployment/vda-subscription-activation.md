@@ -1,6 +1,7 @@
 ---
 title: Configure VDA for Windows subscription activation
 description: Learn how to configure virtual machines (VMs) to enable Windows 10 Subscription Activation in a Windows Virtual Desktop Access (VDA) scenario.
+ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
@@ -37,7 +38,7 @@ Deployment instructions are provided for the following scenarios:
 ### Scenario 1
 
 - The VM is running a supported version of Windows.
-- The VM is hosted in Azure or another Qualified Multitenant Hoster (QMTH).
+- The VM is hosted in Azure, an authorized outsourcer, or another Qualified Multitenant Hoster (QMTH).
 
     When a user with VDA rights signs in to the VM using their Azure AD credentials, the VM is automatically stepped-up to Enterprise and activated. There's no need to do Windows Pro activation. This functionality eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
 
