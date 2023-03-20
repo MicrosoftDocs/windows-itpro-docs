@@ -196,7 +196,7 @@ The most common values:
 
 -   **Failure Code** \[Type = HexInt32\]**:** hexadecimal result code of TGS issue operation. 
 Some errors are only reported when you set [KdcExtraLogLevel](/troubleshoot/windows-server/windows-security/kerberos-protocol-registry-kdc-configuration-keys) registry key value with the following flags:
-0x01: Audit SPN unknown errors.
+- 0x01: Audit SPN unknown errors.
 0x10: Log audit events on encryption type (ETYPE) and bad options errors.
 
 The table below contains the list of the most common error codes for this event:
