@@ -14,12 +14,14 @@ ms.technology: itpro-updates
 <!--7715481-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-[Delivery Optimization](../do/waas-delivery-optimization.md) (DO) is a Windows feature that can be used to reduce bandwidth consumption by sharing the work of downloading updates among multiple devices in your environment. You can use DO in conjunction with many other deployment methods, but it's a cloud-managed solution, and access to the DO cloud services is a requirement.
+[Delivery Optimization](../do/waas-delivery-optimization.md) (DO) is a Windows feature that can be used to reduce bandwidth consumption by sharing the work of downloading updates among multiple devices in your environment. You can use DO in conjunction with many other deployment methods, but it's a cloud-managed solution, and access to the DO cloud services is a requirement. 
 
 Windows Update for Business reports provides Delivery Optimization information in the following places:
 - The Windows Update for Business reports [workbook](wufb-reports-workbook.md)
 - [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md)
 - [UCDOStatus](wufb-reports-schema-ucdostatus.md)
+
+Windows Update for Business reports doesn't include Delivery Optimization data for Windows Insider devices. 
 
 ## Delivery Optimization terms
 
@@ -39,6 +41,38 @@ Windows Update for Business reports uses the following Delivery Optimization ter
    - When bandwidth savings is <10% an *Error* icon is displayed.
 - **Configurations**: Based on the DownloadMode configuration set via MDM, Group Policy, or end-user via the user interface.
 
+## Calculations for Delivery Optimization
 <!--Check this formula w PG, might be VolCDN=-->
 Volume from the CDN is calculated with the following formula:
 BytesFromCDN = BytesFromCDN - BytesFromEnterpriseCache
+
+
+## Determine GroupID
+
+In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded hash. You can determine the **GroupID** from the hash, or determine the hash for a given **GroupID**.
+
+Determine the **GroupID** from the hash:
+
+Determine the hash for a **GroupID**:
+
+
+## Sample queries
+
+You can use the data in [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md)
+and [UCDOStatus](wufb-reports-schema-ucdostatus.md) to create your own queries. Create your custom queries using [Kusto Query Lanaguage (KQL)](/azure/data-explorer/kusto/query/), but note that Windows Update for Business reports uses Azure Monitor, so some operators aren't supported. The KQL documentation specifies which operators aren't supported by Azure Monitor or if they have different functionality. For more information about KQL in Azure Monitor, see [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview). The following queries are examples of how you can use the data:
+
+### Sample query 1
+
+Explanation of what the query displays
+
+```kusto
+UCDOAggregatedStatus
+| where Bogus =="SomethingBogus" and Neato =="Something Neat"
+| sort by Whatevs
+| project Whatevs, Neato, Bogus
+```
+
+
+### Sample query 2
+
+Explanation of what the query displays

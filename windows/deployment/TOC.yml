@@ -212,6 +212,8 @@
           items:
           - name: Windows Update for Business reports workbook
             href: update/wufb-reports-workbook.md
+          - name: Delivery Optimization data in reports
+            href: update/wufb-reports-do.md
           - name: Software updates in the Microsoft 365 admin center
             href: update/wufb-reports-admin-center.md                                
           - name: Use Windows Update for Business reports data
