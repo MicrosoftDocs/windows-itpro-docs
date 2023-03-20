@@ -14,7 +14,7 @@ ms.technology: itpro-updates
 <!--7715481-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-[Delivery Optimization](../do/waas-delivery-optimization.md) (DO) is a Windows feature that can be used to reduce bandwidth consumption by sharing the work of downloading updates among multiple devices in your environment. You can use DO in conjunction with many other deployment methods, but it's a cloud-managed solution, and access to the DO cloud services is a requirement. 
+[Delivery Optimization](../do/waas-delivery-optimization.md) (DO) is a Windows feature that can be used to reduce bandwidth consumption by sharing the work of downloading updates among multiple devices in your environment. You can use DO with many other deployment methods, but it's a cloud-managed solution, and access to the DO cloud services is a requirement. 
 
 Windows Update for Business reports provides Delivery Optimization information in the following places:
 - The Windows Update for Business reports [workbook](wufb-reports-workbook.md)
@@ -38,7 +38,7 @@ Windows Update for Business reports uses the following Delivery Optimization ter
    - Bypass (100), deprecated in Windows 11
 **Bandwidth savings**: Out of the total consumed bandwidth, the percentage of bandwidth that was downloaded from either LAN or Group peers, and from Microsoft Connected Cache (MCC)
    - If bandwidth savings are <= 60% a *Warning* icon is displayed
-   - When bandwidth savings is <10% an *Error* icon is displayed.
+   - When bandwidth savings are <10% an *Error* icon is displayed.
 - **Configurations**: Based on the DownloadMode configuration set via MDM, Group Policy, or end-user via the user interface.
 
 ## Calculations for Delivery Optimization
@@ -59,7 +59,7 @@ Determine the hash for a **GroupID**:
 ## Sample queries
 
 You can use the data in [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md)
-and [UCDOStatus](wufb-reports-schema-ucdostatus.md) to create your own queries. Create your custom queries using [Kusto Query Lanaguage (KQL)](/azure/data-explorer/kusto/query/), but note that Windows Update for Business reports uses Azure Monitor, so some operators aren't supported. The KQL documentation specifies which operators aren't supported by Azure Monitor or if they have different functionality. For more information about KQL in Azure Monitor, see [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview). The following queries are examples of how you can use the data:
+and [UCDOStatus](wufb-reports-schema-ucdostatus.md) to create your own queries. Create your custom queries using [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query/), but note that Windows Update for Business reports uses Azure Monitor, so some operators aren't supported. The KQL documentation specifies which operators aren't supported by Azure Monitor or if they have different functionality. For more information about KQL in Azure Monitor, see [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview). The following queries are examples of how you can use the data:
 
 ### Sample query 1
 
