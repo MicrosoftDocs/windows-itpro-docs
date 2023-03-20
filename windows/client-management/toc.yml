@@ -5,15 +5,23 @@ items:
       - name: Mobile device management (MDM)
         expanded: true
         items:
-          - name: What is MDM?
-            href: mdm-overview.md
-          - name: What's new in MDM enrollment and management
-            href: new-in-windows-mdm-enrollment-management.md
-          - name: Transitioning to modern management
-            href: manage-windows-10-in-your-organization-modern-management.md
-          - name: Azure Active Directory integration with MDM
-            href: azure-active-directory-integration-with-mdm.md
+          - name: MDM overview
+            expanded: true
+            items:
+            - name: What is MDM?
+              href: mdm-overview.md
+            - name: What's new in MDM enrollment and management
+              href: new-in-windows-mdm-enrollment-management.md
+            - name: Transitioning to modern management
+              href: manage-windows-10-in-your-organization-modern-management.md
+            - name: Azure Active Directory integration with MDM
+              href: azure-active-directory-integration-with-mdm.md
+            - name: Push notification support for device management
+              href: push-notification-windows-mdm.md
+            - name: MAM support for device management
+              href: implement-server-side-mobile-application-management.md
           - name: Enroll devices
+            expanded: true
             items:
               - name: Enrollment overview
                 href: mobile-device-enrollment.md
@@ -21,7 +29,7 @@ items:
                 items:
                   - name: Manual enrollment
                     href: mdm-enrollment-of-windows-devices.md
-                  - name: Automatic enrollment via Azure AD
+                  - name: Automatic enrollment
                     href: azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md
                   - name: Group Policy enrollment
                     href: enroll-a-windows-10-device-automatically-using-group-policy.md
@@ -34,6 +42,7 @@ items:
                   - name: On-premises authentication enrollment
                     href: on-premise-authentication-device-enrollment.md
           - name: Manage devices
+            expanded: true
             items:
               - name: Manage settings
                 href: windows-mdm-enterprise-settings.md
@@ -45,14 +54,10 @@ items:
                 href: config-lock.md
               - name: Certificate renewal
                 href: certificate-renewal-windows-mdm.md
-          - name: Disconnecting a device from MDM (unenrollment)
+          - name: Unenroll devices
             href: disconnecting-from-mdm-unenrollment.md
           - name: Diagnose MDM failures in Windows 10
             href: diagnose-mdm-failures-in-windows-10.md
-          - name: Push notification support for device management
-            href: push-notification-windows-mdm.md
-          - name: MAM support for device management
-            href: implement-server-side-mobile-application-management.md
           - name: Configuration service provider reference
             href: mdm/index.yml
       - name: Client management tools and settings
