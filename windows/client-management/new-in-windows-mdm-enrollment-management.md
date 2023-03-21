@@ -1,10 +1,10 @@
 ---
 title: What's new in MDM enrollment and management
 description: Discover what's new and breaking changes in Windows 10 and Windows 11 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
-MS-HAID: 
+MS-HAID:
   - 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
   - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -29,7 +29,7 @@ For details about Microsoft mobile device management protocols for Windows 10 an
 | [eUUICs](mdm/euiccs-csp.md) | Added the following node:<br><li>IsDiscoveryServer |
 | [PersonalDataEncryption](mdm/personaldataencryption-csp.md) | New CSP |
 | [Policy CSP](mdm/policy-configuration-service-provider.md) | Added the following nodes:<br><li>Accounts/RestrictToEnterpriseDeviceAuthenticationOnly<br><li>DesktopAppInstaller/EnableAdditionalSources<br><li>DesktopAppInstaller/EnableAllowedSources<br><li>DesktopAppInstaller/EnableAppInstaller<br><li>DesktopAppInstaller/EnableDefaultSource<br><li>DesktopAppInstaller/EnableExperimentalFeatures<br><li>DesktopAppInstaller/EnableHashOverride<br><li>DesktopAppInstaller/EnableLocalManifestFiles<br><li>DesktopAppInstaller/EnableMicrosoftStoreSource<br><li>DesktopAppInstaller/EnableMSAppInstallerProtocol<br><li>DesktopAppInstaller/EnableSettings<br><li>DesktopAppInstaller/SourceAutoUpdateInterval<br><li>Education/EnableEduThemes<br><li>Experience/AllowSpotlightCollectionOnDesktop<br><li>FileExplorer/DisableGraphRecentItems<br><li>HumanPresence/ForceInstantDim<br><li>InternetExplorer/EnableGlobalWindowListInIEMode<br><li>InternetExplorer/HideIEAppRetirementNotification<br><li>InternetExplorer/ResetZoomForDialogInIEMode<br><li>LocalSecurityAuthority/AllowCustomSSPsAPs<br><li>LocalSecurityAuthority/ConfigureLsaProtectedProcess<br><li>MixedReality/AllowCaptivePortalBeforeLogon<br><li>MixedReality/AllowLaunchUriInSingleAppKiosk<br><li>MixedReality/AutoLogonUser<br><li>MixedReality/ConfigureMovingPlatform<br><li>MixedReality/ConfigureNtpClient<br><li>MixedReality/ManualDownDirectionDisabled<br><li>MixedReality/NtpClientEnabled<br><li>MixedReality/SkipCalibrationDuringSetup<br><li>MixedReality/SkipTrainingDuringSetup<br><li>NetworkListManager/AllowedTlsAuthenticationEndpoints<br><li>NetworkListManager/ConfiguredTLSAuthenticationNetworkName<br><li>Printers/ConfigureCopyFilesPolicy<br><li>Printers/ConfigureDriverValidationLevel<br><li>Printers/ConfigureIppPageCountsPolicy<br><li>Printers/ConfigureRedirectionGuard<br><li>Printers/ConfigureRpcConnectionPolicy<br><li>Printers/ConfigureRpcListenerPolicy<br><li>Printers/ConfigureRpcTcpPort<br><li>Printers/ManageDriverExclusionList<br><li>Printers/RestrictDriverInstallationToAdministrators<br><li>RemoteDesktopServices/DoNotAllowWebAuthnRedirection<br><li>Search/AllowSearchHighlights<br><li>Search/DisableSearch<br><li>SharedPC/EnabledSharedPCModeWithOneDriveSync<br><li>Start/DisableControlCenter<br><li>Start/DisableEditingQuickSettings<br><li>Start/HideRecommendedSection<br><li>Start/HideTaskViewButton<br><li>Start/SimplifyQuickSettings<br><li>Stickers/EnableStickers<br><li>Textinput/allowimenetworkaccess<br><li>Update/NoUpdateNotificationDuringActiveHours<br><li>WebThreatDefense/EnableService<br><li>WebThreatDefense/NotifyMalicious<br><li>WebThreatDefense/NotifyPasswordReuse<br><li>WebThreatDefense/NotifyUnsafeApp<br><li>Windowslogon/EnableMPRNotifications |
-| [SecureAssessment](mdm/secureassessment-csp.md) | Added the following node:<br><li>Asssessments |
+| [SecureAssessment](mdm/secureassessment-csp.md) | Added the following node:<br><li>Assessments |
 | [WindowsAutopilot](mdm/windowsautopilot-csp.md) | Added the following node:<br><li>HardwareMismatchRemediationData |
 
 ## What's new in MDM for Windows 11, version 21H2
@@ -74,7 +74,6 @@ For details about Microsoft mobile device management protocols for Windows 10 an
 | [DiagnosticLog CSP](mdm/diagnosticlog-csp.md) <br> [DiagnosticLog DDF](mdm/diagnosticlog-ddf.md) | Added version 1.4 of the CSP in Windows 10, version 1903. <br>Added the new 1.4 version of the DDF. <br>Added the following new nodes:<br><li>Policy<br><li>Policy/Channels<br><li>Policy/Channels/ChannelName<br><li>Policy/Channels/ChannelName/MaximumFileSize<br><li>Policy/Channels/ChannelName/SDDL<br><li>Policy/Channels/ChannelName/ActionWhenFull<br><li>Policy/Channels/ChannelName/Enabled<br><li>DiagnosticArchive<br><li>DiagnosticArchive/ArchiveDefinition<br><li>DiagnosticArchive/ArchiveResults |
 | [EnrollmentStatusTracking CSP](mdm/enrollmentstatustracking-csp.md) | Added the new CSP. |
 | [PassportForWork CSP](mdm/passportforwork-csp.md) | Added the following new nodes:<br><li>SecurityKey<br><li>SecurityKey/UseSecurityKeyForSignin |
-
 
 ## What's new in MDM for Windows 10, version 1809
 
@@ -139,15 +138,15 @@ In your deployment, if you have multiple certificates provisioned on the device 
 
 Enterprises deploying certificate-based EAP authentication for VPN/Wi-Fi can face a situation where there are multiple certificates that meet the default criteria for authentication. This situation can lead to issues such as:
 
--   The user may be prompted to select the certificate.
--   The wrong certificate may get auto selected and cause an authentication failure.
+- The user may be prompted to select the certificate.
+- The wrong certificate may get auto selected and cause an authentication failure.
 
 A production ready deployment must have the appropriate certificate details as part of the profile being deployed. The following information explains how to create or update an EAP Configuration XML such that the extraneous certificates are filtered out and the appropriate certificate can be used for the authentication.
 
 EAP XML must be updated with relevant information for your environment. This task can be done either manually by editing the XML sample below, or by using the step by step UI guide. After the EAP XML is updated, refer to instructions from your MDM to deploy the updated configuration as follows:
 
--   For Wi-Fi, look for the &lt;EAPConfig&gt; section of your current WLAN Profile XML (This detail is what you specify for the WLanXml node in the Wi-Fi CSP). Within these tags, you'll find the complete EAP configuration. Replace the section under &lt;EAPConfig&gt; with your updated XML and update your Wi-Fi profile. You might need to refer to your MDM’s guidance on how to deploy a new Wi-Fi profile.
--   For VPN, EAP Configuration is a separate field in the MDM Configuration. Work with your MDM provider to identify and update the appropriate Field.
+- For Wi-Fi, look for the &lt;EAPConfig&gt; section of your current WLAN Profile XML (This detail is what you specify for the WLanXml node in the Wi-Fi CSP). Within these tags, you'll find the complete EAP configuration. Replace the section under &lt;EAPConfig&gt; with your updated XML and update your Wi-Fi profile. You might need to refer to your MDM’s guidance on how to deploy a new Wi-Fi profile.
+- For VPN, EAP Configuration is a separate field in the MDM Configuration. Work with your MDM provider to identify and update the appropriate Field.
 
 For information about EAP Settings, see <https://technet.microsoft.com/library/hh945104.aspx#BKMK_Cfg_cert_Selct>.
 
@@ -159,18 +158,17 @@ For information about adding extended key usage (EKU) to a certificate, see <htt
 
 The following list describes the prerequisites for a certificate to be used with EAP:
 
--   The certificate must have at least one of the following EKU (Extended Key Usage) properties:
-
-    -   Client Authentication.
-    -   As defined by RFC 5280, this property is a well-defined OID with Value 1.3.6.1.5.5.7.3.2.
-    -   Any Purpose.
-    -   An EKU Defined and published by Microsoft, is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that other non-critical or custom EKUs can still be added to the certificate for effective filtering.
-    -   All Purpose.
-    -   As defined by RFC 5280, If a CA includes extended key usages to satisfy some application needs, but doesn't want to restrict usage of the key, the CA can add an Extended Key Usage Value of 0. A certificate with such an EKU can be used for all purposes.
--   The user or the computer certificate on the client chains to a trusted root CA.
--   The user or the computer certificate doesn't fail any one of the checks that are performed by the CryptoAPI certificate store, and the certificate passes requirements in the remote access policy.
--   The user or the computer certificate doesn't fail any one of the certificate object identifier checks that are specified in the Internet Authentication Service (IAS)/Radius Server.
--   The Subject Alternative Name (SubjectAltName) extension in the certificate contains the user principal name (UPN) of the user.
+- The certificate must have at least one of the following EKU (Extended Key Usage) properties:
+  - Client Authentication.
+  - As defined by RFC 5280, this property is a well-defined OID with Value 1.3.6.1.5.5.7.3.2.
+  - Any Purpose.
+  - An EKU, defined and published by Microsoft, is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that other non-critical or custom EKUs can still be added to the certificate for effective filtering.
+  - All Purpose.
+  - As defined by RFC 5280, If a CA includes extended key usages to satisfy some application needs, but doesn't want to restrict usage of the key, the CA can add an Extended Key Usage Value of 0. A certificate with such an EKU can be used for all purposes.
+- The user or the computer certificate on the client chains to a trusted root CA.
+- The user or the computer certificate doesn't fail any one of the checks that are performed by the CryptoAPI certificate store, and the certificate passes requirements in the remote access policy.
+- The user or the computer certificate doesn't fail any one of the certificate object identifier checks that are specified in the Internet Authentication Service (IAS)/Radius Server.
+- The Subject Alternative Name (SubjectAltName) extension in the certificate contains the user principal name (UPN) of the user.
 
 The following XML sample explains the properties for the EAP TLS XML including certificate filtering.
 
@@ -281,38 +279,37 @@ The following XML sample explains the properties for the EAP TLS XML including c
 
 Alternatively you can use the following procedure to create an EAP Configuration XML.
 
-1.  Follow steps 1 through 7 in [EAP configuration](mdm/eap-configuration.md).
+1. Follow steps 1 through 7 in [EAP configuration](mdm/eap-configuration.md).
 
-2.  In the Microsoft VPN SelfHost Properties dialog box, select **Microsoft : Smart Card or other Certificate** from the drop-down menu (this drop-down menu selects EAP TLS.).
+2. In the Microsoft VPN SelfHost Properties dialog box, select **Microsoft : Smart Card or other Certificate** from the drop-down menu (this drop-down menu selects EAP TLS.).
 
     :::image type="content" alt-text="vpn selfhost properties window." source="images/certfiltering1.png":::
 
     > [!NOTE]
     > For PEAP or TTLS, select the appropriate method and continue following this procedure.
 
-3.  Click the **Properties** button underneath the drop-down menu.
+3. Click the **Properties** button underneath the drop-down menu.
 
-4.  In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
+4. In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
 
-	:::image type="content" alt-text="smart card or other certificate properties window." source="images/certfiltering2.png":::
+    :::image type="content" alt-text="smart card or other certificate properties window." source="images/certfiltering2.png":::
 
-5.  In the **Configure Certificate Selection** menu, adjust the filters as needed.
+5. In the **Configure Certificate Selection** menu, adjust the filters as needed.
 
-	:::image type="content" alt-text="configure certificate selection window." source="images/certfiltering3.png":::
+    :::image type="content" alt-text="configure certificate selection window." source="images/certfiltering3.png":::
 
-6.  Click **OK** to close the windows to get back to the main rasphone.exe dialog box.
+6. Click **OK** to close the windows to get back to the main rasphone.exe dialog box.
 
-7.  Close the rasphone dialog box.
+7. Close the rasphone dialog box.
 
-8.  Continue following the procedure in [EAP configuration](mdm/eap-configuration.md) from Step 9 to get an EAP TLS profile with appropriate filtering.
+8. Continue following the procedure in [EAP configuration](mdm/eap-configuration.md) from Step 9 to get an EAP TLS profile with appropriate filtering.
 
 > [!NOTE]
 > You can also set all the other applicable EAP Properties through this UI as well. A guide to what these properties mean can be found in [Extensible Authentication Protocol (EAP) Settings for Network Access](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh945104(v=ws.11)).
 
-
 ### MDM client will immediately check in with the MDM server after client renews WNS channel URI
 
-After the MDM client automatically renews the WNS channel URI, the MDM client will immediately check-in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
+After the MDM client automatically renews the WNS channel URI, the MDM client will immediately check in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
 ### User provisioning failure in Azure Active Directory-joined Windows 10 and Windows 11 devices
 
@@ -326,9 +323,7 @@ If you want to use the certificate used for VPN authentication also for Kerberos
 
 The DM agent for [push-button reset](/windows-hardware/manufacture/desktop/push-button-reset-overview) keeps the registry settings for OMA DM sessions, but deletes the task schedules. The client enrollment is retained, but it never syncs with the MDM service.
 
-
 ## Frequently Asked Questions
-
 
 ### Can there be more than one MDM server to enroll and manage devices in Windows 10 or 11?
 
@@ -351,8 +346,3 @@ Entry | Description
 What is dmwappushsvc? | It's a Windows service that ships in Windows 10 and Windows 11 operating system as a part of the windows management platform. It's used internally by the operating system as a queue for categorizing and processing all Wireless Application Protocol (WAP) messages, which include Windows management messages, and Service Indication/Service Loading (SI/SL). The service also initiates and orchestrates management sync sessions with the MDM server. |
 What data is handled by dmwappushsvc? | It's a component handling the internal workings of the management platform and involved in processing messages that have been received by the device remotely for management. The messages in the queue are serviced by another component that is also part of the Windows management stack to process messages. The service also routes and authenticates WAP messages received by the device to internal OS components that process them further. This service doesn't send telemetry.|
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc) and locating *Device Management Wireless Application Protocol (WAP) Push message Routing Service*. However, since this service is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to disable the service. Disabling this service will cause your management to fail.|
-
-
-## Change history for MDM documentation
-
-To know what's changed in MDM documentation, see [Change history for MDM documentation](change-history-for-mdm-documentation.md).

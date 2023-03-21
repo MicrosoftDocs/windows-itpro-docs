@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business hybrid certificate trust deployment
 description: Learn how to deploy Windows Hello for Business in a hybrid certificate trust scenario.
-ms.date: 12/28/2022
+ms.date: 03/16/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
@@ -19,7 +19,7 @@ This deployment guide describes how to deploy Windows Hello for Business in a hy
 > [!IMPORTANT]
 > Windows Hello for Business *cloud Kerberos trust* is the recommended deployment model when compared to the *key trust model*. It is also the recommended deployment model if you don't need to deploy certificates to the end users. For more information, see [cloud Kerberos trust deployment](hello-hybrid-cloud-kerberos-trust.md).
 
-It is recommended that you review the [Windows Hello for Business planning guide](hello-planning-guide.md) prior to using the deployment guide. The planning guide helps you make decisions by explaining the available options with each aspect of the deployment and explains the potential outcomes based on each of these decisions.
+It's recommended that you review the [Windows Hello for Business planning guide](hello-planning-guide.md) prior to using the deployment guide. The planning guide helps you make decisions by explaining the available options with each aspect of the deployment and explains the potential outcomes based on each of these decisions.
 
 ## Prerequisites
 The following prerequisites must be met for a hybrid certificate trust deployment:
@@ -64,18 +64,20 @@ Once you have your AD FS design ready:
 
 The AD FS farm used with Windows Hello for Business must be Windows Server 2016 with minimum update of [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
 
-### Device registration
+### Device registration and device write-back
 
 Windows devices must be registered in Azure AD. Devices can be registered in Azure AD using either *Azure AD join* or *hybrid Azure AD join*.\
-For *hybrid Azure AD joined* devices, review the guidance on the [plan your hybrid Azure Active Directory join implementation][AZ-8] page.
+For hybrid Azure AD joined devices, review the guidance on the [plan your hybrid Azure Active Directory join implementation][AZ-8] page.
 
-Hybrid certificate trust deployments need the device write back feature. Authentication to AD FS needs both the user and the computer to authenticate. Typically the users are synchronized, but not devices. This prevents AD FS from authenticating the computer and results in Windows Hello for Business certificate enrollment failures. For this reason, Windows Hello for Business deployments need device write-back.
+Refer to the [Configure hybrid Azure Active Directory join for federated domains][AZ-10] guide to learn more about using Azure AD Connect Sync to configure Azure AD device registration.\
+For a **manual configuration** of your AD FS farm to support device registration, review the [Configure AD FS for Azure AD device registration][AZ-11] guide.
+
+Hybrid certificate trust deployments require the *device write-back* feature. Authentication to AD FS needs both the user and the device to authenticate. Typically the users are synchronized, but not devices. This prevents AD FS from authenticating the device and results in Windows Hello for Business certificate enrollment failures. For this reason, Windows Hello for Business deployments need device write-back.
 
 > [!NOTE]
-> Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Azure Active Directory and Active Directory. Device write-back is used to update the msDS-KeyCredentialLink attribute on the computer object.
+> Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Azure Active Directory and Active Directory. Device write-back is used to update the *msDS-KeyCredentialLink* attribute on the computer object.
 
-Refer to the [configure hybrid Azure Active Directory join for federated domains][AZ-10] guide to learn more about setting up Azure AD Connect Sync to support Azure AD device registration.
-For a manual configuration of your AD FS farm to support device registration, review the [Configure AD FS for Azure AD device registration][AZ-11] guide.
+If you manually configured AD FS, or if you ran Azure AD Connect Sync using *Custom Settings*, you must ensure that you have configured **device write-back** and **device authentication** in your AD FS farm. For more information, see [Configure Device Write Back and Device Authentication][SER-5].
 
 ### Public Key Infrastructure
 
@@ -130,3 +132,4 @@ Once the prerequisites are met, deploying Windows Hello for Business with a hybr
 [SER-2]: /windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm
 [SER-3]: /windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts
 [SER-4]: /windows-server/identity/ad-fs/design/ad-fs-design-guide-in-windows-server-2012-r2
+[SER-5]: /windows-server/identity/ad-fs/operations/configure-device-based-conditional-access-on-premises#configure-device-write-back-and-device-authentication

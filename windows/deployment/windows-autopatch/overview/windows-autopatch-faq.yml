@@ -92,8 +92,8 @@ sections:
       - question: What happens if there's an issue with an update?
         answer: |
           Autopatch relies on the following capabilities to help resolve update issues:
-          - Pausing and resuming: If Windows Autopatch detects an issue with a Windows quality release, we may decide that it's necessary to pause that release. Once the issue is resolved, the release will be resumed. For more information, see [Pausing and resuming a Windows quality release](../operate/windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release).
-          - Rollback: If Windows Autopatch detects issues between versions of Microsoft 365 Apps for enterprise, we might force all devices to roll back to the previous version. For more information, see [Update controls for Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls).
+          - Pausing and resuming: For more information about pausing and resuming updates, see [pausing and resuming Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release).
+          - Rollback: For more information about Microsoft 365 Apps for enterprise, see [Update controls for Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls).
       - question: Can I permanently pause a Windows feature update deployment?
         answer: |
           Yes. Windows Autopatch provides a [permanent pause of either a feature update deployment](../operate/windows-autopatch-windows-feature-update-overview.md#pausing-and-resuming-a-release).
