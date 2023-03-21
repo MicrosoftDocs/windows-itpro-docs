@@ -1,6 +1,6 @@
 ---
 title: Allow LOB Win32 apps on Intune-managed S Mode devices
-description: Using Windows Defender Application Control supplemental policies, you can expand the S Mode base policy on your Intune-managed devices.
+description: Using Windows Defender Application Control (WDAC) supplemental policies, you can expand the S Mode base policy on your Intune-managed devices.
 ms.prod: windows-client
 ms.localizationpriority: medium
 author: jsuther1974
@@ -20,11 +20,11 @@ ms.topic: how-to
 - Windows 11
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](feature-availability.md).
 
 You can use Microsoft Intune to deploy and run critical Win32 applications and Windows components that are normally blocked in S mode on their Intune-managed Windows in S mode devices. For example, PowerShell.exe.
 
-With Intune, you can configure managed S mode devices using an Application Control supplemental policy that expands the S mode base policy to authorize the apps your organization uses. This feature changes the S mode security posture from "every app is Microsoft-verified" to "every app is verified by Microsoft or your organization".
+With Intune, you can configure managed S mode devices using a Windows Defender Application Control supplemental policy that expands the S mode base policy to authorize the apps your organization uses. This feature changes the S mode security posture from "every app is Microsoft-verified" to "every app is verified by Microsoft or your organization".
 
 For an overview and brief demo of this feature, see this video:
 
@@ -36,7 +36,7 @@ For an overview and brief demo of this feature, see this video:
 
 The general steps for expanding the S mode base policy on your Intune-managed devices are to generate a supplemental policy, sign that policy, and then upload the signed policy to Intune and assign it to user or device groups. Because you need access to PowerShell cmdlets to generate your supplemental policy, you should create and manage your policies on a non-S mode device. Once the policy has been uploaded to Intune, before deploying the policy more broadly, assign it to a single test S-mode device to verify expected functioning.
 
-1. Generate a supplemental policy with Application Control tooling.
+1. Generate a supplemental policy with Windows Defender Application Control tooling.
 
     This policy expands the S mode base policy to authorize more applications. Anything authorized by either the S mode base policy or your supplemental policy is allowed to run. Your supplemental policies can specify filepath rules, trusted publishers, and more.
 
@@ -162,7 +162,7 @@ The following policy is a sample that allows kernel debuggers, PowerShell ISE, a
     <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_UMCI" FriendlyName="Example Name">
       <ProductSigners>
         <AllowedSigners>
-          <AllowedSigner SignerId="EXAMPLE_ID_SIGNER_CODE" />          
+          <AllowedSigner SignerId="EXAMPLE_ID_SIGNER_CODE" />
         </AllowedSigners>
         <FileRulesRef>
           <FileRuleRef RuleID="ID_ALLOW_CBD_0" />

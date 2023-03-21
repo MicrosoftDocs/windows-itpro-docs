@@ -1,6 +1,6 @@
 ---
 title: Deploy catalog files to support Windows Defender Application Control
-description: Catalog files simplify running unsigned applications in the presence of a Windows Defender Application Control policy.
+description: Catalog files simplify running unsigned applications in the presence of a Windows Defender Application Control (WDAC) policy.
 ms.prod: windows-client
 ms.localizationpriority: medium
 ms.topic: how-to
@@ -23,11 +23,11 @@ ms.technology: itpro-security
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](feature-availability.md).
 
-*Catalog files* can be important in your deployment of Windows Defender Application Control if you have unsigned line-of-business (LOB) applications for which the process of signing is difficult. You can also use catalog files to add your own signature to apps you get from independent software vendors (ISV) when you don't want to trust all code signed by that ISV. In this way, catalog files provide a convenient way for you to "bless" apps for use in your Application Control-managed environment. And, you can create catalog files for existing apps without requiring access to the original source code or needing any expensive repackaging.
+*Catalog files* can be important in your deployment of Windows Defender Application Control (WDAC) if you have unsigned line-of-business (LOB) applications for which the process of signing is difficult. You can also use catalog files to add your own signature to apps you get from independent software vendors (ISV) when you don't want to trust all code signed by that ISV. In this way, catalog files provide a convenient way for you to "bless" apps for use in your WDAC-managed environment. And, you can create catalog files for existing apps without requiring access to the original source code or needing any expensive repackaging.
 
 You need to [obtain a code signing certificate for your own use](use-code-signing-to-simplify-application-control-for-classic-windows-applications.md#obtain-code-signing-certificates-for-your-own-use) and use it to sign the catalog file. Then, distribute the signed catalog file using your preferred content deployment mechanism.
 
-Finally, add a signer rule to your Application Control policy for your signing certificate. Then, any apps covered by your signed catalog files are able to run, even if the apps were previously unsigned. With this foundation, you can more easily build an Application Control policy that blocks all unsigned code, because most malware is unsigned.
+Finally, add a signer rule to your WDAC policy for your signing certificate. Then, any apps covered by your signed catalog files are able to run, even if the apps were previously unsigned. With this foundation, you can more easily build a WDAC policy that blocks all unsigned code, because most malware is unsigned.
 
 ## Create catalog files using Package Inspector
 
@@ -46,7 +46,7 @@ To create a catalog file for an existing app, you can use a tool called **Packag
     $PolicyBinary = $env:USERPROFILE+"\Desktop\"+$PolicyId.substring(11)+".cip"
     ```
 
-    Then apply the policy as described in [Deploy Application Control policies with script](deployment/deploy-wdac-policies-with-script.md).
+    Then apply the policy as described in [Deploy Windows Defender Application Control policies with script](deployment/deploy-wdac-policies-with-script.md).
 
 2. Start Package Inspector to monitor file creation on a **local drive** where you install the app, for example, drive C:
 
@@ -142,7 +142,7 @@ The following process walks you through the deployment of a signed catalog file 
 2. Create a new GPO: right-click an OU, for example, the **WDAC Enabled PCs OU**, and then select **Create a GPO in this domain, and Link it here**, as shown in Figure 2.
 
    > [!NOTE]
-   > You can use any OU name. Also, security group filtering is an option when you consider different ways of combining Application Control policies.
+   > You can use any OU name. Also, security group filtering is an option when you consider different ways of combining WDAC policies.
 
    ![Group Policy Management, create a GPO.](images/dg-fig13-createnewgpo.png)
 
@@ -311,9 +311,9 @@ At the time of the next software inventory cycle, when the targeted clients rece
 > [!NOTE]
 > If nothing is displayed in this view, navigate to Software\\Last Software Scan in Resource Explorer to verify that the client has recently completed a software inventory scan.
 
-## Allow apps signed by your catalog signing certificate in your Application Control policy
+## Allow apps signed by your catalog signing certificate in your WDAC policy
 
-Now that you have your signed catalog file, you can add a signer rule to your Application Control policy that allows anything signed with that certificate. If you haven't yet created an Application Control policy, see the [Application Control design guide](windows-defender-application-control-design-guide.md).
+Now that you have your signed catalog file, you can add a signer rule to your policy that allows anything signed with that certificate. If you haven't yet created a WDAC policy, see the [Windows Defender Application Control design guide](windows-defender-application-control-design-guide.md).
 
 On a computer where the signed catalog file has been deployed, you can use [New-CiPolicyRule](/powershell/module/configci/new-cipolicyrule) to create a signer rule from any file included in that catalog. Then use [Merge-CiPolicy](/powershell/module/configci/merge-cipolicy) to add the rule to your policy XML. Be sure to replace the path values in the following sample:
 
