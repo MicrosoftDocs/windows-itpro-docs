@@ -26,7 +26,7 @@ Releases are provided on a monthly schedule as two types of releases:
 1. **Monthly security update release**
 1. **Optional non-security preview release**
 
-[**Out-of-band (OOB) releases**]() can also be provided outside of the monthly schedule when there is an exceptional need.
+[**Out-of-band (OOB) releases**](#oob-releases) can also be provided outside of the monthly schedule when there is an exceptional need.
 
 ## Monthly security update release
 
@@ -52,8 +52,11 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 
 ## Optional non-security preview release
 
-Non-security preview releases provide IT admins an opportunity for early validation of that content prior to the combined release.
-IT admins have the option to test and validate production-quality releases ahead of the planned B release for the following month. These updates are optional, cumulative, non-security preview releases known as **C releases**. These releases are only offered to the most recent, supported versions of Windows. For example, new features like [News and Interests](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/group-configuration-news-and-interests-on-the-windows-taskbar/ba-p/2281005) might initially be deployed in the prior month's C preview release, then ship in the following month's B release. 
+**Optional non-security preview releases** provide IT admins an opportunity for early validation of that content prior to the **Monthly security update release**. Admins have the option to test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, non-security preview releases. These releases are only offered to the most recent, supported versions of Windows. For example, new features like [News and Interests](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/group-configuration-news-and-interests-on-the-windows-taskbar/ba-p/2281005) might initially be deployed in the prior month's **Optional non-security preview release**, then ship in the following **Monthly security update release**. 
+
+**Optional non-security preview releases** might commonly be commonly referred to as:
+
+- 
 
 For customers to access the C releases, they must navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**.  
 
