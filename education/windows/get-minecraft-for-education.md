@@ -44,9 +44,9 @@ When you sign up for a Minecraft Education trial, or purchase a subscription, Mi
 
 To purchase direct licenses:
 
-1. Go to [https://education.minecraft.net/](https://education.minecraft.net/) and select **How to Buy** in the top navigation bar
-1. Scroll down and select **Buy Now** under **Direct Purchase**
-1. In the *purchase* page, sign in with an account that has *Billing Admin* privileges in your organization
+1. Go to [https://education.minecraft.net/](https://education.minecraft.net/licensing)
+1. Under **Direct Purchase**, select **Buy Now**
+1. Sign in to the Admin Center purchase page with an account that has *Billing Admin* privileges in your organization
 1. If necessary, fill in any requested organization or payment information
 1. Select the quantity of licenses you'd like to purchase and select **Place Order**
 1. After you've purchased licenses, you'll need to [assign Minecraft Education licenses to your users](#assign-minecraft-education-licenses)
