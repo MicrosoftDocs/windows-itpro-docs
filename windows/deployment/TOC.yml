@@ -7,10 +7,10 @@
           href: deploy-whats-new.md
         - name: Windows client deployment scenarios
           href: windows-10-deployment-scenarios.md
+        - name: Quick guide to Windows as a service
+          href: update/waas-quick-start.md          
         - name: Windows as a service overview
           href: update/waas-overview.md          
-        - name: Update terminology
-          href: update/waas-quick-start.md
         - name: Monthly quality updates
           href: update/quality-updates.md
         - name: Basics of Windows updates, channels, and tools
