@@ -1,6 +1,6 @@
 ---
-title: Monthly quality updates (Windows 10/11)
-description: Learn about Windows monthly quality updates to stay productive and protected.
+title: Monthly updates for Windows clients
+description: Learn about Windows monthly update types to stay productive and protected.
 ms.prod: windows-client
 author: mestew
 ms.localizationpriority: medium
@@ -8,46 +8,58 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 12/31/2017
+ms.date: 03/23/2023
 ---
 
-# Monthly quality updates
+# Monthly updates for Windows clients
+<!--7696511-->
+***(Applies to: Windows 11 & Windows 10)***
 
-**Applies to**
+Windows updates help you to stay productive and protected. They provide your users and IT administrators with the security fixes they need, and protect devices so that unpatched vulnerabilities can't be exploited. Monthly updates are typically cumulative. They include all previously released fixes to guard against fragmentation of the operating system. Reliability and vulnerability issues can occur when only a subset of fixes is installed.
 
-- Windows 10
-- Windows 11
+This article provides details on the types of monthly updates that Microsoft provides, and how they help make the overall user experience simple and consistent.
 
-Windows monthly quality updates help you to stay productive and protected. They provide your users and IT administrators with the security fixes they need, and protect devices so that unpatched vulnerabilities can't be exploited. Quality updates are cumulative; they include all previously released fixes to guard against fragmentation of the operating system (OS). Reliability and vulnerability issues can occur when only a subset of fixes is installed.   
+## Types of monthly update releases
 
-This article provides details on the types of monthly quality updates that Microsoft provides, and how they help make the overall user experience simple and consistent. 
+Releases are provided on a monthly schedule as two types of releases:
 
-## Quality updates
+1. **Monthly security update release**
+1. **Optional non-security preview release**
 
-Quality updates are provided on a monthly schedule, as two types of releases: 
+[**Out-of-band (OOB) releases**]() can also be provided outside of the monthly schedule when there is an exceptional need.
 
-1. Non-security releases
-2. Combined security + non-security releases
+## Monthly security update release
 
-Non-security releases provide IT admins an opportunity for early validation of that content prior to the combined release. Releases can also be provided outside of the monthly schedule when there is an exceptional need. 
+Most people are familiar with the **Monthly security update release**. This release might commonly be commonly referred to as:
+- Patch Tuesday
+- Update Tuesday
+- B week releases (meaning the second week of the month)
+- Quality updates
+- Security updates
+- Latest cumulative update (LCU)
 
-### B releases
+- These updates are released on the second Tuesday of each month, and are known as the **Monthly security update release**. The monthly security update release is typically published at 10:00 AM Pacific Time (PST/PDT).  
 
-Most people are familiar with what is commonly referred to as **Patch Tuesday** or **Update Tuesday**. These updates are released on the second Tuesday of each month, and are known as the **B release** (where “**B**” refers to the second week in the month). B releases are typically published at 10:00 AM Pacific Time (PST/PDT).  
+**Monthly security update releases** are cumulative. The release includes both new and previously released security fixes, along with non-security content introduced in the prior month's [**Optional non-security preview release**](#ptional-non-security-preview-release). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. Typically, most organizations consider monthly security update releases as mandatory.
 
-Because they are cumulative, B releases include both new and previously released security fixes, along with non-security content introduced in the prior month’s **Preview C release** (see the next section). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. B releases are mandatory. 
+Monthly security update releases are available through the following channels:
 
-Channels for availability of B releases include: Windows Update, Windows Server Update Services (WSUS), and the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). 
+- Windows Update
+- Windows Server Update Services (WSUS)
+- The [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx)
 
-### C releases
+Many update management tools, such as [Microsoft Configuration Manager](/mem/configmgr/), rely on these channels for update deployment.
 
-IT admins have the option to test and validate production-quality releases ahead of the planned B release for the following month. These updates are optional, cumulative, non-security preview releases known as **C releases**. These releases are only offered to the most recent, supported versions of Windows. For example, new features like [News and Interests](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/group-configuration-news-and-interests-on-the-windows-taskbar/ba-p/2281005) might initially be deployed in the prior month’s C preview release, then ship in the following month’s B release. 
+## Optional non-security preview release
+
+Non-security preview releases provide IT admins an opportunity for early validation of that content prior to the combined release.
+IT admins have the option to test and validate production-quality releases ahead of the planned B release for the following month. These updates are optional, cumulative, non-security preview releases known as **C releases**. These releases are only offered to the most recent, supported versions of Windows. For example, new features like [News and Interests](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/group-configuration-news-and-interests-on-the-windows-taskbar/ba-p/2281005) might initially be deployed in the prior month's C preview release, then ship in the following month's B release. 
 
 For customers to access the C releases, they must navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**.  
 
 IT admins can also validate fixes and features in a preview update by leveraging the [Windows Insider Program for Business](https://insider.windows.com/for-business) or via the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). 
 
-### OOB releases
+## OOB releases
 
 Out-of-band (OOB) releases might be provided to fix a recently identified issue or vulnerability. They are used in atypical cases when an issue is detected and cannot wait for the next monthly release, because devices must be updated immediately to address security vulnerabilities or to resolve a quality issue impacting many devices. 
 
