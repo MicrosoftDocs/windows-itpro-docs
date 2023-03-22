@@ -52,7 +52,7 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 
 ## Optional non-security preview release
 
-**Optional non-security preview releases** provide IT admins an opportunity for early validation of that content prior to the **Monthly security update release**. Admins have the option to test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, non-security preview releases. These releases are only offered to the most recent, supported versions of Windows. For example, new features like [News and Interests](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/group-configuration-news-and-interests-on-the-windows-taskbar/ba-p/2281005) might initially be deployed in the prior month's **Optional non-security preview release**, then ship in the following **Monthly security update release**. 
+**Optional non-security preview releases** provide IT admins an opportunity for early validation of that content prior to the **Monthly security update release**. Admins have the option to test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, non-security preview releases. These releases are only offered to the most recent, supported versions of Windows. For example, new features might initially be deployed in the prior month's **Optional non-security preview release**, then ship in the following **Monthly security update release**. 
 
 **Optional non-security preview releases** might commonly be commonly referred to as:
 
