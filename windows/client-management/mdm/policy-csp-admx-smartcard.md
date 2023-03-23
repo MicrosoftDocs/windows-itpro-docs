@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Smartcard Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/23/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -352,6 +352,7 @@ This policy setting allows you to manage the certificate propagation that occurs
 <!-- CertPropRootCleanupString-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the clean up behavior of root certificates.
+
 - If you enable this policy setting then root certificate cleanup will occur according to the option selected.
 - If you disable or do not configure this setting then root certificate clean up will occur on log off.
 <!-- CertPropRootCleanupString-Description-End -->
@@ -413,7 +414,7 @@ This policy setting allows you to manage the root certificate propagation that o
 - If you enable or do not configure this policy setting then root certificate propagation will occur when you insert your smart card.
 
 > [!NOTE]
-> For this policy setting to work the following policy setting must also be enabled Turn on certificate propagation from smart card.
+> For this policy setting to work the following policy setting must also be enabled: Turn on certificate propagation from smart card.
 
 - If you disable this policy setting then root certificates will not be propagated from the smart card.
 <!-- CertPropRootEnabledString-Description-End -->
@@ -542,6 +543,7 @@ This policy setting allows you to control whether elliptic curve cryptography (E
 
 > [!NOTE]
 > This policy setting only affects a user's ability to log on to a domain. ECC certificates on a smart card that are used for other applications, such as document signing, are not affected by this policy setting.
+
 > [!NOTE]
 > If you use an ECDSA key to log on, you must also have an associated ECDH key to permit logons when you are not connected to the network.
 <!-- EnumerateECCCerts-Description-End -->
@@ -606,7 +608,7 @@ During the certificate renewal period, a user can have multiple valid logon cert
 If there are two or more of the "same" certificate on a smart card and this policy is enabled then the certificate that is used for logon on Windows 2000, Windows XP, and Windows 2003 Server will be shown, otherwise the the certificate with the expiration time furthest in the future will be shown.
 
 > [!NOTE]
-> This setting will be applied after the following policy "Allow time invalid certificates"
+> This setting will be applied after the following policy: "Allow time invalid certificates"
 
 - If you enable or do not configure this policy setting, filtering will take place.
 
@@ -794,7 +796,7 @@ This policy setting lets you reverse the subject name from how it is stored in t
 
 By default the user principal name (UPN) is displayed in addition to the common name to help users distinguish one certificate from another. For example, if the certificate subject was CN=User1, OU=Users, DN=example, DN=com and had an UPN of user1@example.com then "User1" will be displayed along with "user1@example.com." If the UPN is not present then the entire subject name will be displayed. This setting controls the appearance of that subject name and might need to be adjusted per organization.
 
-- If you enable this policy setting or do not configure this setting, then the subject name will be reversed.
+If you enable this policy setting or do not configure this setting, then the subject name will be reversed.
 
 If you disable , the subject name will be displayed as it appears in the certificate.
 <!-- ReverseSubject-Description-End -->

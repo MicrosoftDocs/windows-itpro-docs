@@ -4,7 +4,7 @@ description: Learn more about the ADMX_CtrlAltDel Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,7 +44,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from changing their Windows password on demand.
 
-- If you enable this policy setting, the 'Change Password' button on the Windows Security dialog box will not appear when you press Ctrl+Alt+Del.
+If you enable this policy setting, the 'Change Password' button on the Windows Security dialog box will not appear when you press Ctrl+Alt+Del.
 
 However, users are still able to change their password when prompted by the system. The system prompts users for a new password when an administrator requires a new password or their password is expiring.
 <!-- DisableChangePassword-Description-End -->

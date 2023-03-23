@@ -4,7 +4,7 @@ description: Learn more about the ADMX_MicrosoftDefenderAntivirus Area in Policy
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -589,7 +589,7 @@ This policy setting allows you to disable scheduled and real-time scanning for f
 
 <!-- Exclusions_Processes-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to disable real-time scanning for any file opened by any of the specified processes. This policy does not apply to scheduled scans. The process itself will not be excluded. To exclude the process, use the Path exclusion. Processes should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of the path to the process image. **Note** that only executables can be excluded. For example, a process might be defined as "c\windows\app.exe". The value is not used and it is recommended that this be set to 0.
+This policy setting allows you to disable real-time scanning for any file opened by any of the specified processes. This policy does not apply to scheduled scans. The process itself will not be excluded. To exclude the process, use the Path exclusion. Processes should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of the path to the process image. **Note** that only executables can be excluded. For example, a process might be defined as: "c:\windows\app.exe". The value is not used and it is recommended that this be set to 0.
 <!-- Exclusions_Processes-Description-End -->
 
 <!-- Exclusions_Processes-Editable-Begin -->
@@ -650,8 +650,8 @@ Exclude files and paths from Attack Surface Reduction (ASR) rules.
 Enabled:
 Specify the folders or files and resources that should be excluded from ASR rules in the Options section.
 Enter each rule on a new line as a name-value pair:
-- Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
-- Value column: Enter "0" for each item
+  - Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
+  - Value column: Enter "0" for each item
 
 Disabled:
 No exclusions will be applied to the ASR rules.
@@ -718,26 +718,26 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 Set the state for each Attack Surface Reduction (ASR) rule.
 
 After enabling this setting, you can set each rule to the following in the Options section:
-- Block: the rule will be applied
-- Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule will not actually be applied)
-- Off: the rule will not be applied
-- Not Configured: the rule is enabled with default values
-- Warn: the rule will be applied and the end-user will have the option to bypass the block
+  - Block: the rule will be applied
+  - Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule will not actually be applied)
+  - Off: the rule will not be applied
+  - Not Configured: the rule is enabled with default values
+  - Warn: the rule will be applied and the end-user will have the option to bypass the block
 
 Unless the ASR rule is disabled, a subsample of audit events are collected for ASR rules will the value of not configured.
 
 Enabled:
 Specify the state for each ASR rule under the Options section for this setting.
 Enter each rule on a new line as a name-value pair:
-- Name column: Enter a valid ASR rule ID
-- Value column: Enter the status ID that relates to state you want to specify for the associated rule
+  - Name column: Enter a valid ASR rule ID
+  - Value column: Enter the status ID that relates to state you want to specify for the associated rule
 
 The following status IDs are permitted under the value column:
-- 1 (Block)
-- 0 (Off)
-- 2 (Audit)
-- 5 (Not Configured)
-- 6 (Warn)
+  - 1 (Block)
+  - 0 (Off)
+  - 2 (Audit)
+  - 5 (Not Configured)
+  - 6 (Warn)
 
 Example:
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
@@ -1511,6 +1511,7 @@ This policy setting defines the number of days items should be kept in the Quara
 This policy setting allows you to configure the scheduled scan, and the scheduled security intelligence update, start time window in hours.
 
 - If you disable or do not configure this setting, scheduled tasks will begin at a random time within 4 hours after the time specified in Task Scheduler.
+
 - If you enable this setting, you can widen, or narrow, this randomization period. Specify a randomization window of between 1 and 23 hours.
 <!-- RandomizeScheduleTaskTimes-Description-End -->
 
@@ -2823,7 +2824,7 @@ Tracing levels are defined as:
 1 - Error
 2 - Warning
 3 - Info
-4 - Debug
+4 - Debug.
 <!-- Reporting_WppTracingLevel-Description-End -->
 
 <!-- Reporting_WppTracingLevel-Editable-Begin -->
@@ -4742,7 +4743,7 @@ This policy setting allows you to configure security intelligence updates on sta
 <!-- Description-Source-ADMX -->
 This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: "InternalDefinitionUpdateServer", "MicrosoftUpdateServer", "MMPC", and "FileShares"
 
-For example: { InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }
+For Example: `{ InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }`
 
 - If you enable this setting, security intelligence update sources will be contacted in the order specified. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
 
@@ -5054,7 +5055,7 @@ This policy setting allows you to specify the time of day at which to check for 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to define the security intelligence location for VDI-configured computers.
 
-- If you disable or do not configure this setting, security intelligence will be referred from the default local source.
+If you disable or do not configure this setting, security intelligence will be referred from the default local source.
 <!-- SignatureUpdate_SharedSignaturesLocation-Description-End -->
 
 <!-- SignatureUpdate_SharedSignaturesLocation-Editable-Begin -->
@@ -5427,7 +5428,7 @@ This policy setting customize which remediation action will be taken for each li
 Valid remediation action values are:
 2 = Quarantine
 3 = Remove
-6 = Ignore
+6 = Ignore.
 <!-- Threats_ThreatIdDefaultAction-Description-End -->
 
 <!-- Threats_ThreatIdDefaultAction-Editable-Begin -->
@@ -5603,7 +5604,7 @@ Use this policy setting to specify if you want Microsoft Defender Antivirus noti
 <!-- Description-Source-ADMX -->
 This policy setting allows user to supress reboot notifications in UI only mode (for cases where UI can't be in lockdown mode).
 
-- If you enable this setting AM UI won't show reboot notifications.
+If you enable this setting AM UI won't show reboot notifications.
 <!-- UX_Configuration_SuppressRebootNotification-Description-End -->
 
 <!-- UX_Configuration_SuppressRebootNotification-Editable-Begin -->
@@ -5660,7 +5661,7 @@ This policy setting allows user to supress reboot notifications in UI only mode 
 <!-- UX_Configuration_UILockdown-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure whether or not to display AM UI to the users.
-- If you enable this setting AM UI won't be available to users.
+If you enable this setting AM UI won't be available to users.
 <!-- UX_Configuration_UILockdown-Description-End -->
 
 <!-- UX_Configuration_UILockdown-Editable-Begin -->

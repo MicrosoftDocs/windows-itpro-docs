@@ -4,7 +4,7 @@ description: Learn more about the ADMX_GroupPolicy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,10 +47,10 @@ This policy setting allows user-based policy processing, roaming user profiles, 
 This policy setting affects all user accounts that interactively log on to a computer in a different forest when a trust across forests or a two-way forest trust exists.
 
 - If you do not configure this policy setting:
-- No user-based policy settings are applied from the user's forest.
-- Users do not receive their roaming profiles; they receive a local profile on the computer from the local forest. A warning message appears to the user, and an event log message (1529) is posted.
-- Loopback Group Policy processing is applied, using the Group Policy Objects (GPOs) that are scoped to the computer.
-- An event log message (1109) is posted, stating that loopback was invoked in Replace mode.
+  - No user-based policy settings are applied from the user's forest.
+  - Users do not receive their roaming profiles; they receive a local profile on the computer from the local forest. A warning message appears to the user, and an event log message (1529) is posted.
+  - Loopback Group Policy processing is applied, using the Group Policy Objects (GPOs) that are scoped to the computer.
+  - An event log message (1109) is posted, stating that loopback was invoked in Replace mode.
 
 - If you enable this policy setting, the behavior is exactly the same as in Windows 2000: user policy is applied, and a roaming user profile is allowed from the trusted forest.
 
@@ -1117,7 +1117,8 @@ Changing the status of this setting to Enabled will keep any source files from c
 
 Changing the status of this setting to Disabled will enforce the default behavior. Files will always be copied to the GPO if they have a later timestamp.
 
-NOTE: If the Computer Configuration policy setting, "Always use local ADM files for the Group Policy Object Editor" is enabled, the state of this setting is ignored and always treated as Enabled.
+> [!NOTE]
+> If the Computer Configuration policy setting, "Always use local ADM files for the Group Policy Object Editor" is enabled, the state of this setting is ignored and always treated as Enabled.
 <!-- DisableAutoADMUpdate-Description-End -->
 
 <!-- DisableAutoADMUpdate-Editable-Begin -->
@@ -1496,6 +1497,7 @@ The timeout value that is defined in this policy setting determines how long Gro
 <!-- EnableLogonOptimizationOnServerSKU-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure Group Policy caching behavior on Windows Server machines.
+
 - If you enable this policy setting, Group Policy caches policy information after every background processing session. This cache saves applicable GPOs and the settings contained within them. When Group Policy runs in synchronous foreground mode, it refers to this cache, which enables it to run faster. When the cache is read, Group Policy attempts to contact a logon domain controller to determine the link speed. When Group Policy runs in background mode or asynchronous foreground mode, it continues to download the latest version of the policy information, and it uses a bandwidth estimate to determine slow link thresholds. (See the "Configure Group Policy Slow Link Detection" policy setting to configure asynchronous foreground behavior.)
 The slow link value that is defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before reporting the link speed as slow. The default is 500 milliseconds.
 The timeout value that is defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before determining that there is no network connectivity. This stops the current Group Policy processing. Group Policy will run in the background the next time a connection to a domain controller is established. Setting this value too high might result in longer waits for the user at boot or logon. The default is 5000 milliseconds.
@@ -1819,7 +1821,7 @@ The system's response to a slow policy connection varies among policies. The pro
 
 This setting appears in the Computer Configuration and User Configuration folders. The setting in Computer Configuration defines a slow link for policies in the Computer Configuration folder. The setting in User Configuration defines a slow link for settings in the User Configuration folder.
 
-Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile
+Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile.
 
 > [!NOTE]
 > If the profile server has IP connectivity, the connection speed setting is used. If the profile server does not have IP connectivity, the SMB timing is used.
@@ -1889,7 +1891,7 @@ The system's response to a slow policy connection varies among policies. The pro
 
 This setting appears in the Computer Configuration and User Configuration folders. The setting in Computer Configuration defines a slow link for policies in the Computer Configuration folder. The setting in User Configuration defines a slow link for settings in the User Configuration folder.
 
-Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile
+Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile.
 
 > [!NOTE]
 > If the profile server has IP connectivity, the connection speed setting is used. If the profile server does not have IP connectivity, the SMB timing is used.
@@ -2231,7 +2233,7 @@ This setting allows you to specify the default name for new Group Policy objects
 
 The display name can contain environment variables and can be a maximum of 255 characters long.
 
-- If this setting is disabled or Not Configured, the default display name of New Group Policy object is used.
+If this setting is Disabled or Not Configured, the default display name of New Group Policy object is used.
 <!-- NewGPODisplayName-Description-End -->
 
 <!-- NewGPODisplayName-Editable-Begin -->
@@ -2694,12 +2696,10 @@ This policy directs Group Policy processing to skip processing any client side e
 - If you enable this policy setting, when a slow network connection is detected, Group Policy processing will always run in an asynchronous manner.
 Client computers will not wait for the network to be fully initialized at startup and logon. Existing users will be logged on using cached credentials,
 which will result in shorter logon times. Group Policy will be applied in the background after the network becomes available.
-> [!NOTE]
-> that because this is a background refresh, extensions requiring synchronous processing such as Software Installation, Folder Redirection
+**Note** that because this is a background refresh, extensions requiring synchronous processing such as Software Installation, Folder Redirection
 and Drive Maps preference extension will not be applied.
 
-> [!NOTE]
-> There are two conditions that will cause Group Policy to be processed synchronously even if this policy setting is enabled:
+**Note** There are two conditions that will cause Group Policy to be processed synchronously even if this policy setting is enabled:
 1 - At the first computer startup after the client computer has joined the domain.
 2 - If the policy setting "Always wait for the network at computer startup and logon" is enabled.
 
@@ -2821,6 +2821,7 @@ This policy setting specifies how long Group Policy should wait for network avai
 This policy setting directs the system to apply the set of Group Policy objects for the computer to any user who logs on to a computer affected by this setting. It is intended for special-use computers, such as those in public places, laboratories, and classrooms, where you must modify the user setting based on the computer that is being used.
 
 By default, the user's Group Policy Objects determine which user settings apply.
+
 - If this setting is enabled, then, when a user logs on to this computer, the computer's Group Policy Objects determine which set of Group Policy Objects applies.
 
 - If you enable this setting, you can select one of the following modes from the Mode box:

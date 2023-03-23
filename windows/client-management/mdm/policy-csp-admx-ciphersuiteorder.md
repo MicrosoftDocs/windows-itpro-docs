@@ -4,7 +4,7 @@ description: Learn more about the ADMX_CipherSuiteOrder Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -117,7 +117,7 @@ NistP384
 
 To See all the curves supported on the system, Use the following command:
 
-CertUtil.exe -DisplayEccCurve
+CertUtil.exe -DisplayEccCurve.
 <!-- SSLCurveOrder-Description-End -->
 
 <!-- SSLCurveOrder-Editable-Begin -->

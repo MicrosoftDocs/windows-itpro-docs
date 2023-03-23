@@ -4,7 +4,7 @@ description: Learn more about the ADMX_AddRemovePrograms Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -110,7 +110,7 @@ You can use this setting to direct users to the programs they are most likely to
 <!-- Description-Source-ADMX -->
 Removes the "Add a program from CD-ROM or floppy disk" section from the Add New Programs page. This prevents users from using Add or Remove Programs to install programs from removable media.
 
-- If you disable this setting or do not configure it, the "Add a program from CD-ROM or floppy disk" option is available to all users.
+If you disable this setting or do not configure it, the "Add a program from CD-ROM or floppy disk" option is available to all users.
 
 This setting does not prevent users from using other tools and methods to add or remove program components.
 
@@ -173,7 +173,7 @@ This setting does not prevent users from using other tools and methods to add or
 <!-- Description-Source-ADMX -->
 Removes the "Add programs from Microsoft" section from the Add New Programs page. This setting prevents users from using Add or Remove Programs to connect to Windows Update.
 
-- If you disable this setting or do not configure it, "Add programs from Microsoft" is available to all users.
+If you disable this setting or do not configure it, "Add programs from Microsoft" is available to all users.
 
 This setting does not prevent users from using other tools and methods to connect to Windows Update.
 
@@ -305,7 +305,7 @@ Removes the Add New Programs button from the Add or Remove Programs bar. As a re
 
 The Add New Programs button lets users install programs published or assigned by a system administrator.
 
-- If you disable this setting or do not configure it, the Add New Programs button is available to all users.
+If you disable this setting or do not configure it, the Add New Programs button is available to all users.
 
 This setting does not prevent users from using other tools and methods to install programs.
 <!-- NoAddPage-Description-End -->
@@ -369,7 +369,7 @@ This setting removes Add or Remove Programs from Control Panel and removes the A
 
 Add or Remove Programs lets users install, uninstall, repair, add, and remove features and components of Windows 2000 Professional and a wide variety of Windows programs. Programs published or assigned to the user appear in Add or Remove Programs.
 
-- If you disable this setting or do not configure it, Add or Remove Programs is available to all users.
+If you disable this setting or do not configure it, Add or Remove Programs is available to all users.
 
 When enabled, this setting takes precedence over the other settings in this folder.
 
@@ -433,7 +433,7 @@ Removes the Set Program Access and Defaults button from the Add or Remove Progra
 
 The Set Program Access and Defaults button lets administrators specify default programs for certain activities, such as Web browsing or sending e-mail, as well as which programs are accessible from the Start menu, desktop, and other locations.
 
-- If you disable this setting or do not configure it, the Set Program Access and Defaults button is available to all users.
+If you disable this setting or do not configure it, the Set Program Access and Defaults button is available to all users.
 
 This setting does not prevent users from using other tools and methods to change program access or defaults.
 
@@ -497,7 +497,7 @@ Removes the Change or Remove Programs button from the Add or Remove Programs bar
 
 The Change or Remove Programs button lets users uninstall, repair, add, or remove features of installed programs.
 
-- If you disable this setting or do not configure it, the Change or Remove Programs page is available to all users.
+If you disable this setting or do not configure it, the Change or Remove Programs page is available to all users.
 
 This setting does not prevent users from using other tools and methods to delete or uninstall programs.
 <!-- NoRemovePage-Description-End -->
@@ -560,6 +560,7 @@ Prevents users from using Add or Remove Programs to configure installed services
 This setting removes the "Set up services" section of the Add/Remove Windows Components page. The "Set up services" section lists system services that have not been configured and offers users easy access to the configuration tools.
 
 - If you disable this setting or do not configure it, "Set up services" appears only when there are unconfigured system services.
+
 - If you enable this setting, "Set up services" never appears.
 
 This setting does not prevent users from using other methods to configure services.
@@ -627,7 +628,7 @@ Removes links to the Support Info dialog box from programs on the Change or Remo
 
 Programs listed on the Change or Remove Programs page can include a "Click here for support information" hyperlink. When clicked, the hyperlink opens a dialog box that displays troubleshooting information, including a link to the installation files and data that users need to obtain product support, such as the Product ID and version number of the program. The dialog box also includes a hyperlink to support information on the Internet, such as the Microsoft Product Support Services Web page.
 
-- If you disable this setting or do not configure it, the Support Info hyperlink appears.
+If you disable this setting or do not configure it, the Support Info hyperlink appears.
 
 > [!NOTE]
 > Not all programs provide a support information hyperlink.
@@ -690,7 +691,7 @@ Removes the Add/Remove Windows Components button from the Add or Remove Programs
 
 The Add/Remove Windows Components button lets users configure installed services and use the Windows Component Wizard to add, remove, and configure components of Windows from the installation files.
 
-- If you disable this setting or do not configure it, the Add/Remove Windows Components button is available to all users.
+If you disable this setting or do not configure it, the Add/Remove Windows Components button is available to all users.
 
 This setting does not prevent users from using other tools and methods to configure services or add or remove program components. However, this setting blocks user access to the Windows Component Wizard.
 <!-- NoWindowsSetupPage-Description-End -->

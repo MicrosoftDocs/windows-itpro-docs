@@ -4,7 +4,7 @@ description: Learn more about the ADMX_FileSys Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,7 +44,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Compression can add to the processing overhead of filesystem operations. Enabling this setting will prevent access to and creation of compressed files.
 
-A reboot is required for this setting to take effect
+A reboot is required for this setting to take effect.
 <!-- DisableCompression-Description-End -->
 
 <!-- DisableCompression-Editable-Begin -->
@@ -161,7 +161,7 @@ A value of 1 will disable delete notifications for all volumes.
 <!-- Description-Source-ADMX -->
 Encryption can add to the processing overhead of filesystem operations. Enabling this setting will prevent access to and creation of encrypted files.
 
-A reboot is required for this setting to take effect
+A reboot is required for this setting to take effect.
 <!-- DisableEncryption-Description-End -->
 
 <!-- DisableEncryption-Editable-Begin -->
@@ -395,7 +395,8 @@ Remote Link to Local Target
 
 For further information please refer to the Windows Help section
 
-NOTE: If this policy is Disabled or Not Configured, local administrators may select the types of symbolic links to be evaluated.
+> [!NOTE]
+> If this policy is Disabled or Not Configured, local administrators may select the types of symbolic links to be evaluated.
 <!-- SymlinkEvaluation-Description-End -->
 
 <!-- SymlinkEvaluation-Editable-Begin -->

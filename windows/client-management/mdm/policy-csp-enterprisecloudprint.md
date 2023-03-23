@@ -4,7 +4,7 @@ description: Learn more about the EnterpriseCloudPrint Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- CloudPrinterDiscoveryEndPoint-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy provisions per-user discovery end point to discover cloud printers
+This policy provisions per-user discovery end point to discover cloud printers.
 <!-- CloudPrinterDiscoveryEndPoint-Description-End -->
 
 <!-- CloudPrinterDiscoveryEndPoint-Editable-Begin -->
@@ -84,7 +84,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 
 <!-- CloudPrintOAuthAuthority-Description-Begin -->
 <!-- Description-Source-DDF -->
-Authentication endpoint for acquiring OAuth tokens
+Authentication endpoint for acquiring OAuth tokens.
 <!-- CloudPrintOAuthAuthority-Description-End -->
 
 <!-- CloudPrintOAuthAuthority-Editable-Begin -->
@@ -131,7 +131,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 
 <!-- CloudPrintOAuthClientId-Description-Begin -->
 <!-- Description-Source-DDF -->
-A GUID identifying the client application authorized to retrieve OAuth tokens from the OAuthAuthority
+A GUID identifying the client application authorized to retrieve OAuth tokens from the OAuthAuthority.
 <!-- CloudPrintOAuthClientId-Description-End -->
 
 <!-- CloudPrintOAuthClientId-Editable-Begin -->
@@ -178,7 +178,7 @@ The default value is an empty string. Otherwise, the value should contain a GUID
 
 <!-- CloudPrintResourceId-Description-Begin -->
 <!-- Description-Source-DDF -->
-Resource URI for which access is being requested by the Enterprise Cloud Print client during OAuth authentication
+Resource URI for which access is being requested by the Enterprise Cloud Print client during OAuth authentication.
 <!-- CloudPrintResourceId-Description-End -->
 
 <!-- CloudPrintResourceId-Editable-Begin -->
@@ -225,7 +225,7 @@ The default value is an empty string. Otherwise, the value should contain a URL.
 
 <!-- DiscoveryMaxPrinterLimit-Description-Begin -->
 <!-- Description-Source-DDF -->
-Defines the maximum number of printers that should be queried from discovery end point
+Defines the maximum number of printers that should be queried from discovery end point.
 <!-- DiscoveryMaxPrinterLimit-Description-End -->
 
 <!-- DiscoveryMaxPrinterLimit-Editable-Begin -->
@@ -267,7 +267,7 @@ This policy must target ./User, otherwise it fails.
 
 <!-- MopriaDiscoveryResourceId-Description-Begin -->
 <!-- Description-Source-DDF -->
-Resource URI for which access is being requested by the Mopria discovery client during OAuth authentication
+Resource URI for which access is being requested by the Mopria discovery client during OAuth authentication.
 <!-- MopriaDiscoveryResourceId-Description-End -->
 
 <!-- MopriaDiscoveryResourceId-Editable-Begin -->

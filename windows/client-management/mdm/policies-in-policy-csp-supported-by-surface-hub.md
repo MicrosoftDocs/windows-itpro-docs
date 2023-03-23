@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Surface Hub.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/17/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -335,6 +335,8 @@ This article lists the policies in Policy CSP that are applicable for Surface Hu
 - [HideRecentlyAddedApps](policy-csp-start.md#hiderecentlyaddedapps)
 - [HideRecommendedSection](policy-csp-start.md#hiderecommendedsection)
 - [HideRecommendedSection](policy-csp-start.md#hiderecommendedsection)
+- [HideRecoPersonalizedSites](policy-csp-start.md#hiderecopersonalizedsites)
+- [HideRecoPersonalizedSites](policy-csp-start.md#hiderecopersonalizedsites)
 - [HideRestart](policy-csp-start.md#hiderestart)
 - [HideShutDown](policy-csp-start.md#hideshutdown)
 - [HideSignOut](policy-csp-start.md#hidesignout)

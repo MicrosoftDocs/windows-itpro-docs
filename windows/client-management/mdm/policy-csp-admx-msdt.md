@@ -4,7 +4,7 @@ description: Learn more about the ADMX_MSDT Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -115,6 +115,7 @@ Microsoft Support Diagnostic Tool (MSDT) gathers diagnostic data for analysis by
 These tools are required to completely troubleshoot the problem. If tool download is restricted, it may not be possible to find the root cause of the problem.
 
 - If you enable this policy setting for remote troubleshooting, MSDT prompts the user to download additional tools to diagnose problems on remote computers only.
+
 - If you enable this policy setting for local and remote troubleshooting, MSDT always prompts for additional tool downloading.
 
 - If you disable this policy setting, MSDT never downloads tools, and is unable to diagnose problems on remote computers.

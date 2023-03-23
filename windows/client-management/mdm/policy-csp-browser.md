@@ -4,7 +4,7 @@ description: Learn more about the Browser Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -200,7 +200,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 
 <!-- AllowBrowser-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy is deprecated
+This policy is deprecated.
 <!-- AllowBrowser-Description-End -->
 
 <!-- AllowBrowser-Editable-Begin -->
@@ -305,8 +305,15 @@ This policy setting lets you decide whether Microsoft Edge can automatically upd
 <!-- AllowCookies-OmaUri-End -->
 
 <!-- AllowCookies-Description-Begin -->
-<!-- Description-Source-DDF -->
-This setting lets you configure how your company deals with cookies.
+<!-- Description-Source-ADMX -->
+This setting lets you configure how to work with cookies.
+
+- If you enable this setting, you must also decide whether to:
+Allow all cookies (default): Allows all cookies from all websites.
+Block all cookies: Blocks all cookies from all websites.
+Block only 3rd-party cookies: Blocks only cookies from 3rd-party websites.
+
+- If you disable or don't configure this setting, all cookies are allowed from all sites.
 <!-- AllowCookies-Description-End -->
 
 <!-- AllowCookies-Editable-Begin -->
@@ -340,7 +347,7 @@ This setting lets you configure how your company deals with cookies.
 |:--|:--|
 | Name | Cookies |
 | Friendly Name | Configure cookies |
-| Element Name | Configure Cookies |
+| Element Name | Configure Cookies. |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Microsoft Edge |
 | Registry Key Name | Software\Policies\Microsoft\MicrosoftEdge\Main |
@@ -1483,8 +1490,8 @@ Computer Configuration > Administrative Templates > Windows Components > App Pac
 Supported versions: Microsoft Edge on Windows 10, version 1809
 Default setting: Disabled or not configured
 Related policies:
-- Allows development of Windows Store apps and installing them from an integrated development environment (IDE)
-- Allow all trusted apps to install
+  - Allows development of Windows Store apps and installing them from an integrated development environment (IDE)
+  - Allow all trusted apps to install 
 <!-- AllowSideloadingOfExtensions-Description-End -->
 
 <!-- AllowSideloadingOfExtensions-Editable-Begin -->
@@ -1920,9 +1927,17 @@ To verify whether browsing data is cleared on exit (ClearBrowsingDataOnExit is s
 <!-- ConfigureAdditionalSearchEngines-OmaUri-End -->
 
 <!-- ConfigureAdditionalSearchEngines-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows you to add up to 5 additional search engines for MDM-enrolled devices. If this setting is turned on, you can add up to 5 additional search engines for your employee. For each additional search engine you wish to add, you must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. This policy does not affect the default search engine. Employees will not be able to remove these search engines, but they can set any one of these as the default. If this setting is not configured, the search engines are the ones specified in the App settings.
-- If this setting is disabled, the search engines you had added will be deleted from your employee's machine. Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.
+<!-- Description-Source-ADMX -->
+This policy setting lets you add up to 5 additional search engines, which can't be removed by your employees, but can be made a personal default engine. This setting doesn't set the default search engine. For that, you must use the "Set default search engine" setting.
+
+**Important**
+This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
+
+- If you enable this setting, you can add up to 5 additional search engines. For each additional engine, you must also add a link to your OpenSearch XML file, including at least the short name and https: URL of the search engine. For more info about creating the OpenSearch XML file, see the Understanding OpenSearch Standards (https://msdn.microsoft.com/library/dd163546.aspx) topic. Use this format to specify the link(s) you wish to add: `<https://fabrikam.com/opensearch.xml>` `<https://www.contoso.com/opensearch.xml>`
+
+- If you disable this setting, any added search engines are removed from your employee's devices.
+
+- If you don't configure this setting, the search engine list is set to what is specified in App settings.
 <!-- ConfigureAdditionalSearchEngines-Description-End -->
 
 <!-- ConfigureAdditionalSearchEngines-Editable-Begin -->
@@ -1945,7 +1960,7 @@ Allows you to add up to 5 additional search engines for MDM-enrolled devices. If
 |:--|:--|
 | Name | ConfigureAdditionalSearchEngines |
 | Friendly Name | Configure additional search engines |
-| Element Name | Use this format to specify the link(s) you wish to add: `<<https://fabrikam.com/opensearch.xml>>` `<<https://www.contoso.com/opensearch.xml>>` |
+| Element Name | Use this format to specify the link(s) you wish to add: `<https://fabrikam.com/opensearch.xml>` `<https://www.contoso.com/opensearch.xml>` |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Microsoft Edge |
 | Registry Key Name | Software\Policies\Microsoft\MicrosoftEdge\OpenSearch |
@@ -2051,8 +2066,23 @@ If not configured, the favorites bar is hidden but is visible on the Start and N
 <!-- ConfigureHomeButton-OmaUri-End -->
 
 <!-- ConfigureHomeButton-Description-Begin -->
-<!-- Description-Source-DDF -->
-The Home button loads either the default Start page, the New tab page, or a URL defined in the Set Home Button URL policy. By default, this policy is disabled or not configured and clicking the home button loads the default Start page. When enabled, the home button is locked down preventing your users from making changes in Microsoft Edge's UI settings. To let your users change the Microsoft Edge UI settings, enable the Unlock Home Button policy. If Enabled AND: - Show home button & set to Start page is selected, clicking the home button loads the Start page. - Show home button & set to New tab page is selected, clicking the home button loads a New tab page. - Show home button & set a specific page is selected, clicking the home button loads the URL specified in the Set Home Button URL policy. - Hide home button is selected, the home button is hidden in Microsoft Edge. Default setting: Disabled or not configured Related policies: - Set Home Button URL - Unlock Home Button
+<!-- Description-Source-ADMX -->
+The Home button loads either the default Start page, the New tab page, or a URL defined in the Set Home Button URL policy.
+
+By default, this policy is disabled or not configured and clicking the home button loads the default Start page.
+
+When enabled, the home button is locked down preventing your users from making changes in Microsoft Edge's UI settings. To let your users change the Microsoft Edge UI settings, enable the Unlock Home Button policy.
+
+If Enabled AND:
+  - Show home button & set to Start page is selected, clicking the home button loads the Start page.
+  - Show home button & set to New tab page is selected, clicking the home button loads a New tab page.
+  - Show home button & set a specific page is selected, clicking the home button loads the URL specified in the Set Home Button URL policy.
+  - Hide home button is selected, the home button is hidden in Microsoft Edge.
+
+Default setting: Disabled or not configured
+Related policies:
+  - Set Home Button URL
+  - Unlock Home Button.
 <!-- ConfigureHomeButton-Description-End -->
 
 <!-- ConfigureHomeButton-Editable-Begin -->
@@ -2087,7 +2117,7 @@ The Home button loads either the default Start page, the New tab page, or a URL 
 |:--|:--|
 | Name | ConfigureHomeButton |
 | Friendly Name | Configure Home Button |
-| Element Name | Configure the Home Button |
+| Element Name | Configure the Home Button. |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Microsoft Edge |
 | Registry Key Name | Software\Policies\Microsoft\MicrosoftEdge\Internet Settings |
@@ -2122,8 +2152,17 @@ The Home button loads either the default Start page, the New tab page, or a URL 
 <!-- ConfigureKioskMode-OmaUri-End -->
 
 <!-- ConfigureKioskMode-Description-Begin -->
-<!-- Description-Source-DDF -->
-Configure how Microsoft Edge behaves when it's running in kiosk mode with assigned access, either as a single app or as one of multiple apps running on the kiosk device. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge. You need to configure Microsoft Edge in assigned access for this policy to take effect; otherwise, these settings are ignored. To learn more about assigned access and kiosk configuration, see "Configure kiosk and shared devices running Windows desktop editions" (<https://aka.ms/E489vw)>. If enabled and set to 0 (Default or not configured): - If it's a single app, it runs InPrivate full screen for digital signage or interactive displays. - If it's one of many apps, Microsoft Edge runs as normal. If enabled and set to 1: - If it's a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can't minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking "End session." You can configure Microsoft Edge to restart after a period of inactivity by using the "Configure kiosk reset after idle timeout" policy. - If it's one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can't customize Microsoft Edge.
+<!-- Description-Source-ADMX -->
+Configure how Microsoft Edge behaves when it's running in kiosk mode with assigned access, either as a single app or as one of multiple apps running on the kiosk device. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge.
+
+You need to configure Microsoft Edge in assigned access for this policy to take effect; otherwise, these settings are ignored. To learn more about assigned access and kiosk configuration, see "Configure kiosk and shared devices running Windows desktop editions" (https://aka.ms/E489vw).
+
+If enabled and set to 0 (Default or not configured):
+  - If it's a single app, it runs InPrivate full screen for digital signage or interactive displays.
+  - If it's one of many apps, Microsoft Edge runs as normal.
+If enabled and set to 1:
+  - If it's a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can't minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking "End session." You can configure Microsoft Edge to restart after a period of inactivity by using the "Configure kiosk reset after idle timeout" policy.
+  - If it's one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can't customize Microsoft Edge.
 <!-- ConfigureKioskMode-Description-End -->
 
 <!-- ConfigureKioskMode-Editable-Begin -->
@@ -2188,8 +2227,16 @@ Configure how Microsoft Edge behaves when it's running in kiosk mode with assign
 <!-- ConfigureKioskResetAfterIdleTimeout-OmaUri-End -->
 
 <!-- ConfigureKioskResetAfterIdleTimeout-Description-Begin -->
-<!-- Description-Source-DDF -->
-You can configure Microsoft Edge to reset to the configured start experience after a specified amount of idle time. The reset timer begins after the last user interaction. Resetting to the configured start experience deletes the current user's browsing data. If enabled, you can set the idle time in minutes (0-1440). You must set the Configure kiosk mode policy to 1 and configure Microsoft Edge in assigned access as a single app for this policy to work. Once the idle time meets the time specified, a confirmation message prompts the user to continue, and if no user action, Microsoft Edge resets after 30 seconds. If you set this policy to 0, Microsoft Edge does not use an idle timer. If disabled or not configured, the default value is 5 minutes. If you do not configure Microsoft Edge in assigned access, then this policy does not take effect.
+<!-- Description-Source-ADMX -->
+You can configure Microsoft Edge to reset to the configured start experience after a specified amount of idle time. The reset timer begins after the last user interaction. Resetting to the configured start experience deletes the current user's browsing data.
+
+If enabled, you can set the idle time in minutes (0-1440). You must set the Configure kiosk mode policy to 1 and configure Microsoft Edge in assigned access as a single app for this policy to work. Once the idle time meets the time specified, a confirmation message prompts the user to continue, and if no user action, Microsoft Edge resets after 30 seconds.
+
+If you set this policy to 0, Microsoft Edge does not use an idle timer.
+
+If disabled or not configured, the default value is 5 minutes.
+
+If you do not configure Microsoft Edge in assigned access, then this policy does not take effect.
 <!-- ConfigureKioskResetAfterIdleTimeout-Description-End -->
 
 <!-- ConfigureKioskResetAfterIdleTimeout-Editable-Begin -->
@@ -2247,8 +2294,23 @@ You can configure Microsoft Edge to reset to the configured start experience aft
 <!-- ConfigureOpenMicrosoftEdgeWith-OmaUri-End -->
 
 <!-- ConfigureOpenMicrosoftEdgeWith-Description-Begin -->
-<!-- Description-Source-DDF -->
-You can configure Microsoft Edge to lock down the Start page, preventing users from changing or customizing it. If enabled, you can choose one of the following options: - Start page: the Start page loads ignoring the Configure Start Pages policy. - New tab page: the New tab page loads ignoring the Configure Start Pages policy. - Previous pages: all tabs the user had open when Microsoft Edge last closed loads ignoring the Configure Start Pages policy. - A specific page or pages: the URL(s) specified with Configure Start Pages policy load(s). If selected, you must specify at least one URL in Configure Start Pages; otherwise, this policy is ignored. When enabled, and you want to make changes, you must first set the Disable Lockdown of Start Pages to not configured, make the changes to the Configure Open Edge With policy, and then enable the Disable Lockdown of Start Pages policy. If disabled or not configured, and you enable the Disable Lockdown of Start Pages policy, your users can change or customize the Start page. Default setting: A specific page or pages (default) Related policies: -Disable Lockdown of Start Pages -Configure Start Pages
+<!-- Description-Source-ADMX -->
+You can configure Microsoft Edge to lock down the Start page, preventing users from changing or customizing it.
+
+If enabled, you can choose one of the following options:
+  - Start page: the Start page loads ignoring the Configure Start Pages policy.
+  - New tab page: the New tab page loads ignoring the Configure Start Pages policy.
+  - Previous pages: all tabs the user had open when Microsoft Edge last closed loads ignoring the Configure Start Pages policy.
+  - A specific page or pages: the URL(s) specified with Configure Start Pages policy load(s). If selected, you must specify at least one URL in Configure Start Pages; otherwise, this policy is ignored.
+
+When enabled, and you want to make changes, you must first set the Disable Lockdown of Start Pages to not configured, make the changes to the Configure Open Microsoft Edge With policy, and then enable the Disable Lockdown of Start Pages policy.
+
+If disabled or not configured, and you enable the Disable Lockdown of Start Pages policy, your users can change or customize the Start page.
+
+Default setting: A specific page or pages (default)
+Related policies:
+-Disable Lockdown of Start Pages
+-Configure Start Pages.
 <!-- ConfigureOpenMicrosoftEdgeWith-Description-End -->
 
 <!-- ConfigureOpenMicrosoftEdgeWith-Editable-Begin -->
@@ -2283,7 +2345,7 @@ You can configure Microsoft Edge to lock down the Start page, preventing users f
 |:--|:--|
 | Name | ConfigureOpenEdgeWith |
 | Friendly Name | Configure Open Microsoft Edge With |
-| Element Name | Configure Open Microsoft Edge With |
+| Element Name | Configure Open Microsoft Edge With. |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Microsoft Edge |
 | Registry Key Name | Software\Policies\Microsoft\MicrosoftEdge\Internet Settings |
@@ -2321,8 +2383,11 @@ You can configure Microsoft Edge to lock down the Start page, preventing users f
 <!-- ConfigureTelemetryForMicrosoft365Analytics-OmaUri-End -->
 
 <!-- ConfigureTelemetryForMicrosoft365Analytics-Description-Begin -->
-<!-- Description-Source-DDF -->
-Configures what browsing data will be sent to Microsoft 365 Analytics for devices belonging to an organization.
+<!-- Description-Source-ADMX -->
+You can configure Microsoft Edge to send intranet history only, internet history only, or both to Desktop Analytics for enterprise devices with a configured Commercial ID. If disabled or not configured, Microsoft Edge does not send browsing history data to Desktop Analytics.
+
+Supported versions: Microsoft Edge on Windows 10, version 1809
+Default setting: Disabled or not configured (no data collected or sent)
 <!-- ConfigureTelemetryForMicrosoft365Analytics-Description-End -->
 
 <!-- ConfigureTelemetryForMicrosoft365Analytics-Editable-Begin -->
@@ -2357,7 +2422,7 @@ Configures what browsing data will be sent to Microsoft 365 Analytics for device
 |:--|:--|
 | Name | ConfigureTelemetryForMicrosoft365Analytics |
 | Friendly Name | Configure collection of browsing data for Desktop Analytics |
-| Element Name | Configure telemetry collection |
+| Element Name | Configure telemetry collection. |
 | Location | Computer and User Configuration |
 | Path | WindowsComponents > Data Collection and Preview Builds |
 | Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection |
@@ -2390,8 +2455,15 @@ Configures what browsing data will be sent to Microsoft 365 Analytics for device
 <!-- DisableLockdownOfStartPages-OmaUri-End -->
 
 <!-- DisableLockdownOfStartPages-Description-Begin -->
-<!-- Description-Source-DDF -->
-You can configure Microsoft Edge to disable the lockdown of Start pages allowing users to change or customize their start pages. To do this, you must also enable the Configure Start Pages or Configure Open Microsoft With policy. When enabled, all configured start pages are editable. Any Start page configured using the Configure Start pages policy is not locked down allowing users to edit their Start pages. If disabled or not configured, the Start pages configured in the Configure Start Pages policy cannot be changed and remain locked down. Supported devices: Domain-joined or MDM-enrolled Related policy: - Configure Start Pages - Configure Open Microsoft Edge With
+<!-- Description-Source-ADMX -->
+You can configure Microsoft Edge to disable the lockdown of Start pages allowing users to change or customize their start pages. To do this, you must also enable the Configure Start Pages or Configure Open Microsoft With policy. When enabled, all configured start pages are editable. Any Start page configured using the Configure Start pages policy is not locked down allowing users to edit their Start pages.
+
+If disabled or not configured, the Start pages configured in the Configure Start Pages policy cannot be changed and remain locked down.
+
+Supported devices: Domain-joined or MDM-enrolled
+Related policy:
+  - Configure Start Pages
+  - Configure Open Microsoft Edge With.
 <!-- DisableLockdownOfStartPages-Description-End -->
 
 <!-- DisableLockdownOfStartPages-Editable-Begin -->
@@ -2532,8 +2604,12 @@ This policy setting lets you decide how much data to send to Microsoft about the
 <!-- EnterpriseModeSiteList-OmaUri-End -->
 
 <!-- EnterpriseModeSiteList-Description-Begin -->
-<!-- Description-Source-DDF -->
-This setting lets you configure whether your company uses Enterprise Mode and the Enterprise Mode Site List to address common compatibility problems with legacy websites.
+<!-- Description-Source-ADMX -->
+This policy setting lets you configure whether to use Enterprise Mode and the Enterprise Mode Site List to address common compatibility problems with legacy apps.
+
+- If you enable this setting, Microsoft Edge looks for the Enterprise Mode Site List XML file. This file includes the sites and domains that need to be viewed using Internet Explorer 11 and Enterprise Mode.
+
+- If you disable or don't configure this setting, Microsoft Edge won't use the Enterprise Mode Site List XML file. In this case, employees might experience compatibility problems while using legacy apps.
 <!-- EnterpriseModeSiteList-Description-End -->
 
 <!-- EnterpriseModeSiteList-Editable-Begin -->
@@ -2556,7 +2632,7 @@ This setting lets you configure whether your company uses Enterprise Mode and th
 |:--|:--|
 | Name | EnterpriseModeSiteList |
 | Friendly Name | Configure the Enterprise Mode Site List |
-| Element Name | Type the location (URL) of your Enterprise Mode IE website list |
+| Element Name | Type the location (URL) of your Enterprise Mode IE website list. |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Microsoft Edge |
 | Registry Key Name | Software\Policies\Microsoft\MicrosoftEdge\Main\EnterpriseMode |
@@ -2676,8 +2752,25 @@ Configure first run URL.
 <!-- HomePages-OmaUri-End -->
 
 <!-- HomePages-Description-Begin -->
-<!-- Description-Source-DDF -->
-When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users are not allowed to make changes to their Start pages. If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format: `<support.contoso.com>` `<support.microsoft.com>` If disabled or not configured, the webpages specified in App settings loads as the default Start pages. Version 1703 or later: If you do not want to send traffic to Microsoft, enable this policy and use the `<about:blank>` value, which honors domain- and non-domain-joined devices, when it is the only configured URL. Version 1809: If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy. Supported devices: Domain-joined or MDM-enrolled Related policy: - Configure Open Microsoft Edge With - Disable Lockdown of Start Pages
+<!-- Description-Source-ADMX -->
+When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users are not allowed to make changes to their Start pages.
+
+If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
+
+`<support.contoso.com>` `<support.microsoft.com>`
+
+If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
+
+Version 1703 or later:
+If you do not want to send traffic to Microsoft, enable this policy and use the `<about:blank>` value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+
+Version 1809:
+If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
+
+Supported devices: Domain-joined or MDM-enrolled
+Related policy:
+  - Configure Open Microsoft Edge With
+  - Disable Lockdown of Start Pages.
 <!-- HomePages-Description-End -->
 
 <!-- HomePages-Editable-Begin -->
@@ -2700,7 +2793,7 @@ When you enable the Configure Open Microsoft Edge With policy, you can configure
 |:--|:--|
 | Name | HomePages |
 | Friendly Name | Configure Start pages |
-| Element Name | Use this format: `<support.contoso.com>` `<<https://support.microsoft.com/>>` |
+| Element Name | Use this format: `<support.contoso.com>` `<https://support.microsoft.com/>` |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Microsoft Edge |
 | Registry Key Name | Software\Policies\Microsoft\MicrosoftEdge\Internet Settings |
@@ -3374,12 +3467,14 @@ This policy setting lets you decide whether an employee's LocalHost IP address s
 <!-- ProvisionFavorites-OmaUri-End -->
 
 <!-- ProvisionFavorites-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees cannot modify, sort, move, export or delete these provisioned favorites.
-- If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites
 
-> [!IMPORTANT]
-> Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+- If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
+
+**Important**
+Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+
 - If you disable or don't configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.
 <!-- ProvisionFavorites-Description-End -->
 
@@ -3403,7 +3498,7 @@ This policy setting allows you to configure a default set of favorites, which wi
 |:--|:--|
 | Name | ConfiguredFavorites |
 | Friendly Name | Provision Favorites |
-| Element Name | Specify the URL which points to the file that has all the data for provisioning favorites (in html format). You can export a set of favorites from Microsoft Edge and use that html file for provisioning user machines.<br> <br> URL can be specified as<br> <br> 1. HTTP location: https://localhost:8080/URLs.html<br> 2. Local network: \\network\shares\URLs.html<br> 3. Local file: file:///c:\\Users\\`<user>`\\Documents\\URLs.html or C:\\Users\\`<user>`\\Documents\\URLs.html |
+| Element Name | Specify the URL which points to the file that has all the data for provisioning favorites (in html format). You can export a set of favorites from Microsoft Edge and use that html file for provisioning user machines.<br> <br> URL can be specified as<br> <br> 1. HTTP location: https://localhost:8080/URLs.html<br> 2. Local network: \\network\shares\URLs.html<br> 3. Local file: file:///c:\\Users\\`<user>`\\Documents\\URLs.html or C:\\Users\\`<user>`\\Documents\\URLs.html. |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Microsoft Edge |
 | Registry Key Name | Software\Policies\Microsoft\MicrosoftEdge\Favorites |
@@ -3514,9 +3609,24 @@ This policy setting lets you decide whether your intranet sites should all open 
 <!-- SetDefaultSearchEngine-OmaUri-End -->
 
 <!-- SetDefaultSearchEngine-Description-Begin -->
-<!-- Description-Source-DDF -->
-Sets the default search engine for MDM-enrolled devices. Users can still change their default search engine. If this setting is turned on, you are setting the default search engine that you would like your employees to use. Employees can still change the default search engine, unless you apply the AllowSearchEngineCustomization policy which will disable the ability to change it. You must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. If you would like for your employees to use the Edge factory settings for the default search engine for their market, set the string EDGEDEFAULT; if you would like for your employees to use Bing as the default search engine, set the string EDGEBING. If this setting is not configured, the default search engine is set to the one specified in App settings and can be changed by your employees.
-- If this setting is disabled, the policy-set search engine will be removed, and, if it is the current default, the default will be set back to the factory Microsoft Edge search engine for the market. Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.
+<!-- Description-Source-ADMX -->
+This policy setting lets you configure the default search engine for your employees. Your employees can change the default search engine at any time.
+
+**Important**
+This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
+
+- If you enable this setting, you can choose a default search engine for your employees.
+
+- If this setting is enabled, you must also add the default engine to the "Set default search engine" setting, by adding a link to your OpenSearch XML file, including at least the short name and https: URL of the search engine. For more info about creating the OpenSearch XML file, see the Understanding OpenSearch Standards (https://msdn.microsoft.com/library/dd163546.aspx) topic. Use this format to specify the link you wish to add: `<https://fabrikam.com/opensearch.xml>`
+
+**Note**
+If you'd like your employees to use the default Microsoft Edge settings for each market, you can set the string to EDGEDEFAULT. If you'd like your employees to use Microsoft Bing as the default search engine, you can set the string to EDGEBING.
+
+Employees can change the default search engine at any time, unless you disable the "Allow search engine customization" setting, which restricts any changes.
+
+- If you disable this setting, the policy-set default search engine is removed. If this is also the current in-use default, the engine changes to the Microsoft Edge specified engine for the market.
+
+- If you don't configure this setting, the default search engine is set to the one specified in App settings.
 <!-- SetDefaultSearchEngine-Description-End -->
 
 <!-- SetDefaultSearchEngine-Editable-Begin -->
@@ -3539,7 +3649,7 @@ Sets the default search engine for MDM-enrolled devices. Users can still change 
 |:--|:--|
 | Name | SetDefaultSearchEngine |
 | Friendly Name | Set default search engine |
-| Element Name | Use this format to specify the link you wish to add: `<<https://fabrikam.com/opensearch.xml>>` |
+| Element Name | Use this format to specify the link you wish to add: `<https://fabrikam.com/opensearch.xml>` |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Microsoft Edge |
 | Registry Key Name | Software\Policies\Microsoft\MicrosoftEdge\OpenSearch |
@@ -3572,8 +3682,13 @@ Sets the default search engine for MDM-enrolled devices. Users can still change 
 <!-- SetHomeButtonURL-OmaUri-End -->
 
 <!-- SetHomeButtonURL-Description-Begin -->
-<!-- Description-Source-DDF -->
-The home button can be configured to load a custom URL when your user clicks the home button. If enabled, or configured, and the Configure Home Button policy is enabled, and the Show home button & set a specific page is selected, a custom URL loads when your user clicks the home button. Default setting: Blank or not configured Related policy: Configure Home Button
+<!-- Description-Source-ADMX -->
+The home button can be configured to load a custom URL when your user clicks the home button.
+
+If enabled, or configured, and the Configure Home Button policy is enabled, and the Show home button & set a specific page is selected, a custom URL loads when your user clicks the home button.
+
+Default setting: Blank or not configured
+Related policy: Configure Home Button.
 <!-- SetHomeButtonURL-Description-End -->
 
 <!-- SetHomeButtonURL-Editable-Begin -->
@@ -3629,8 +3744,15 @@ The home button can be configured to load a custom URL when your user clicks the
 <!-- SetNewTabPageURL-OmaUri-End -->
 
 <!-- SetNewTabPageURL-Description-Begin -->
-<!-- Description-Source-DDF -->
-You can set the default New Tab page URL in Microsoft Edge. Enabling this policy prevents your users from changing the New tab page setting. When enabled and the Allow web content on New Tab page policy is disabled, Microsoft Edge ignores the URL specified in this policy and opens about:blank. If enabled, you can set the default New Tab page URL. If disabled or not configured, the default Microsoft Edge new tab page is used. Default setting: Disabled or not configured Related policy: Allow web content on New Tab page
+<!-- Description-Source-ADMX -->
+You can set the default New Tab page URL in Microsoft Edge. Enabling this policy prevents your users from changing the New tab page setting. When enabled and the Allow web content on New Tab page policy is disabled, Microsoft Edge ignores the URL specified in this policy and opens about:blank.
+
+If enabled, you can set the default New Tab page URL.
+
+If disabled or not configured, the default Microsoft Edge new tab page is used.
+
+Default setting: Disabled or not configured
+Related policy: Allow web content on New Tab page.
 <!-- SetNewTabPageURL-Description-End -->
 
 <!-- SetNewTabPageURL-Editable-Begin -->
@@ -3696,7 +3818,7 @@ If disabled or not configured, the default app behavior occurs and no additional
 Default setting: Disabled or not configured
 Related policies:
 -Configure the Enterprise Mode Site List
--Send all intranet sites to Internet Explorer 11
+-Send all intranet sites to Internet Explorer 11.
 <!-- ShowMessageWhenOpeningSitesInInternetExplorer-Description-End -->
 
 <!-- ShowMessageWhenOpeningSitesInInternetExplorer-Editable-Begin -->
@@ -3852,7 +3974,7 @@ If disabled or not configured, the UI settings for the home button are disabled 
 Default setting: Disabled or not configured
 Related policy:
 -Configure Home Button
--Set Home Button URL
+-Set Home Button URL.
 <!-- UnlockHomeButton-Description-End -->
 
 <!-- UnlockHomeButton-Editable-Begin -->

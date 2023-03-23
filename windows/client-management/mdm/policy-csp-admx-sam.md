@@ -4,7 +4,7 @@ description: Learn more about the ADMX_sam Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,19 +44,19 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure how domain controllers handle Windows Hello for Business (WHfB) keys that are vulnerable to the "Return of Coppersmith's attack" (ROCA) vulnerability.
 
-For more information on the ROCA vulnerability, please see
+For more information on the ROCA vulnerability, please see:
 
-<https//cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15361>
+<https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15361>
 
-<https//en.wikipedia.org/wiki/ROCA_vulnerability>
+<https://en.wikipedia.org/wiki/ROCA_vulnerability>
 
-- If you enable this policy setting the following options are supported
+If you enable this policy setting the following options are supported:
 
-Ignore during authentication the domain controller will not probe any WHfB keys for the ROCA vulnerability.
+Ignore: during authentication the domain controller will not probe any WHfB keys for the ROCA vulnerability.
 
-Audit during authentication the domain controller will emit audit events for WHfB keys that are subject to the ROCA vulnerability (authentications will still succeed).
+Audit: during authentication the domain controller will emit audit events for WHfB keys that are subject to the ROCA vulnerability (authentications will still succeed).
 
-Block during authentication the domain controller will block the use of WHfB keys that are subject to the ROCA vulnerability (authentications will fail).
+Block: during authentication the domain controller will block the use of WHfB keys that are subject to the ROCA vulnerability (authentications will fail).
 
 This setting only takes effect on domain controllers.
 
@@ -66,7 +66,7 @@ A reboot is not required for changes to this setting to take effect.
 
 **Note** to avoid unexpected disruptions this setting should not be set to Block until appropriate mitigations have been performed, for example patching of vulnerable TPMs.
 
-More information is available at <https//go.microsoft.com/fwlink/?linkid=2116430>.
+More information is available at< https://go.microsoft.com/fwlink/?linkid=2116430>.
 <!-- SamNGCKeyROCAValidation-Description-End -->
 
 <!-- SamNGCKeyROCAValidation-Editable-Begin -->
