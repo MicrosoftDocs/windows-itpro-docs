@@ -955,7 +955,7 @@ After enabling this setting, you can set each rule to the following in the Optio
   - Not Configured: the rule is enabled with default values
   - Warn: the rule will be applied and the end-user will have the option to bypass the block
 
-Unless the ASR rule is disabled, a subsample of audit events are collected for ASR rules will the value of not configured.
+Unless the ASR rule is disabled, a subsample of audit events are collected for ASR rules with the value of not configured.
 
 Enabled:
 Specify the state for each ASR rule under the Options section for this setting.
@@ -2206,7 +2206,7 @@ This policy setting allows you to specify the scan type to use during a schedule
 
 - If you enable this setting, the scan type will be set to the specified value.
 
-- If you disable or do not configure this setting, the default scan type will used.
+- If you disable or do not configure this setting, the default scan type will be used.
 <!-- ScanParameter-Description-End -->
 
 <!-- ScanParameter-Editable-Begin -->
