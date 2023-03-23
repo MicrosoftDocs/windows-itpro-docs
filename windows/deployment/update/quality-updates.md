@@ -30,7 +30,8 @@ Releases are provided on a monthly schedule as two types of releases:
 
 ## Monthly security update release
 
-Most people are familiar with the **Monthly security update release**. This release might commonly be commonly referred to as:
+Most people are familiar with the **Monthly security update release**. The **Monthly security update release** updates are released on the second Tuesday of each month, and are typically published at 10:00 AM Pacific Time (PST/PDT). This release might commonly be commonly referred to as:
+
 - Patch Tuesday
 - Update Tuesday
 - B week releases (meaning the second week of the month)
@@ -38,7 +39,6 @@ Most people are familiar with the **Monthly security update release**. This rele
 - Security updates
 - Latest cumulative update (LCU)
 
-- These updates are released on the second Tuesday of each month, and are known as the **Monthly security update release**. The monthly security update release is typically published at 10:00 AM Pacific Time (PST/PDT).  
 
 **Monthly security update releases** are cumulative. The release includes both new and previously released security fixes, along with non-security content introduced in the prior month's [**Optional non-security preview release**](#ptional-non-security-preview-release). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. Typically, most organizations consider monthly security update releases as mandatory.
 
