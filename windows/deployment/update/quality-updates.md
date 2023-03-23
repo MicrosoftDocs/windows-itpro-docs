@@ -52,15 +52,17 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 
 ## Optional non-security preview release
 
-**Optional non-security preview releases** provide IT admins an opportunity for early validation of that content prior to the **Monthly security update release**. Admins have the option to test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, non-security preview releases. These releases are only offered to the most recent, supported versions of Windows. For example, new features might initially be deployed in the prior month's **Optional non-security preview release**, then ship in the following **Monthly security update release**. 
+**Optional non-security preview releases** provide IT admins an opportunity for early validation of that content prior to the **Monthly security update release**. Admins have the option to test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, non-security preview releases. New features might initially be deployed in the prior month's **Optional non-security preview release**, then ship in the following **Monthly security update release**. These releases are only offered to the most recent, supported versions of Windows.
 
 **Optional non-security preview releases** might commonly be commonly referred to as:
 
-- 
+- C or D week releases (meaning the third or fourth week of the month)
+- Preview updates
+- Preview CUs
 
-For customers to access the C releases, they must navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**.  
+Starting in April 2023, all **Optional non-security preview releases** will be released on the fourth Tuesday of the month. This change in release cadence gives admins a consistent time cycle for testing and validating fixes and features.
 
-IT admins can also validate fixes and features in a preview update by leveraging the [Windows Insider Program for Business](https://insider.windows.com/for-business) or via the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). 
+To access the optional non-security preview release, navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**. Admins can also validate fixes and features in an optional non-security preview release by leveraging the [Windows Insider Program for Business](https://insider.windows.com/for-business) or via the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). 
 
 ## OOB releases
 
