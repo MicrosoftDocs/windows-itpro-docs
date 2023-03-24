@@ -26,11 +26,11 @@ Releases are provided on a monthly schedule as two types of releases:
 1. **Monthly security update release**
 1. **Optional non-security preview release**
 
-[**Out-of-band (OOB) releases**](#oob-releases) can also be provided outside of the monthly schedule when there is an exceptional need.
+[**Out-of-band (OOB) releases**](#oob-releases) can also be provided outside of the monthly schedule when there's an exceptional need.
 
 ## Monthly security update release
 
-Most people are familiar with the **Monthly security update release**. The **Monthly security update release** updates are released on the second Tuesday of each month, and are typically published at 10:00 AM Pacific Time (PST/PDT). This release might commonly be commonly referred to as:
+Most people are familiar with the **Monthly security update release**. The **Monthly security update release** updates are released on the second Tuesday of each month, and are typically published at 10:00 AM Pacific Time (PST/PDT). This release might commonly be referred to as:
 
 - Patch Tuesday
 - Update Tuesday
@@ -40,7 +40,7 @@ Most people are familiar with the **Monthly security update release**. The **Mon
 - Latest cumulative update (LCU)
 
 
-**Monthly security update releases** are cumulative. The release includes both new and previously released security fixes, along with non-security content introduced in the prior month's [**Optional non-security preview release**](#ptional-non-security-preview-release). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. Typically, most organizations consider monthly security update releases as mandatory.
+**Monthly security update releases** are cumulative. The release includes both new and previously released security fixes, along with non-security content introduced in the prior month's [**Optional non-security preview release**](#optional-non-security-preview-release). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. Typically, most organizations consider monthly security update releases as mandatory.
 
 Monthly security update releases are available through the following channels:
 
@@ -52,9 +52,9 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 
 ## Optional non-security preview release
 
-**Optional non-security preview releases** provide IT admins an opportunity for early validation of that content prior to the **Monthly security update release**. Admins have the option to test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, non-security preview releases. New features might initially be deployed in the prior month's **Optional non-security preview release**, then ship in the following **Monthly security update release**. These releases are only offered to the most recent, supported versions of Windows.
+**Optional non-security preview releases** provide IT admins an opportunity for early validation of that content prior to the **Monthly security update release**. Admins can test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, non-security preview releases. New features might initially be deployed in the prior month's **Optional non-security preview release**, then ship in the following **Monthly security update release**. These releases are only offered to the most recent, supported versions of Windows.
 
-**Optional non-security preview releases** might commonly be commonly referred to as:
+**Optional non-security preview releases** might commonly be referred to as:
 
 - C or D week releases (meaning the third or fourth week of the month)
 - Preview updates
@@ -62,11 +62,11 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 
 Starting in April 2023, all **Optional non-security preview releases** will be released on the fourth Tuesday of the month. This change in release cadence gives admins a consistent time cycle for testing and validating fixes and features.
 
-To access the optional non-security preview release, navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**. Admins can also validate fixes and features in an optional non-security preview release by leveraging the [Windows Insider Program for Business](https://insider.windows.com/for-business) or via the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). 
+To access the optional non-security preview release, navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**. Admins can also validate fixes and features in an optional non-security preview release by using the [Windows Insider Program for Business](https://insider.windows.com/for-business) or the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). 
 
 ## OOB releases
 
-Out-of-band (OOB) releases might be provided to fix a recently identified issue or vulnerability. They are used in atypical cases when an issue is detected and cannot wait for the next monthly release, because devices must be updated immediately to address security vulnerabilities or to resolve a quality issue impacting many devices. 
+Out-of-band (OOB) releases might be provided to fix a recently identified issue or vulnerability. They're used in atypical cases when an issue is detected and can't wait for the next monthly release, because devices must be updated immediately to address security vulnerabilities or to resolve a quality issue impacting many devices. 
 
 Some key considerations about OOB releases include: 
 
@@ -79,7 +79,7 @@ Some key considerations about OOB releases include:
 
 For additional details about the different types of Windows updates like critical, security, drivers, service packs, and more, please see the [Description of the standard terminology used to describe Microsoft software updates](/troubleshoot/windows-client/deployment/standard-terminology-software-updates) and [Introducing a new deployment service for driver and firmware updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-a-new-deployment-service-for-driver-and-firmware/ba-p/2176942). 
 
-## Related topics
+## Related articles
 
 - [Overview of Windows as a service](waas-overview.md)
 - [Update Windows 10 in the enterprise](index.md)
