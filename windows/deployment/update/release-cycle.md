@@ -93,15 +93,19 @@ Some of the new features may be disruptive to organizations. By default, these s
 - WSUS
   - Devices that have updates managed by Configuration Manager use WSUS
 
-Features that are turned off by default are listed in the KB article for the monthly cumulative update. If you want to enable these features, there is a client policy that allows admins to **Enable features introduced via servicing that are off by default**. For more information about this policy, see [Enable features introduced via servicing that are off by default](waas-configure-wufb.md#enable-features-introduced-via-servicing-that-are-off-by-default).
+Features that are turned off by default are listed in the KB article for the monthly cumulative update. If you want to enable these features, there's a client policy that allows admins to **Enable features introduced via servicing that are off by default**. For more information about this policy, see [Enable features introduced via servicing that are off by default](waas-configure-wufb.md#enable-features-introduced-via-servicing-that-are-off-by-default).
 
 ## Annual feature updates
 
-Annual feature updates are released in the second half of the calendar year. These updates are typically cumulative and include all previously released fixes. They also include new features and enhancements. The annual feature update marks the start of the support lifecycle, with 24 months of support for Home and Pro editions of Windows and 36 months of support for Enterprise and Education editions. For more information, see [Windows lifecycle FAQ](/lifecycle/faq/windows).
+Annual feature updates are released in the second half of the calendar year. These updates are typically cumulative and include all previously released fixes. They also include new features and enhancements. The annual feature update marks the start of the support lifecycle:
+- 24 months of support for Home and Pro editions of Windows
+- 36 months of support for Enterprise and Education editions
 
-## More information
+For more information, see [Windows lifecycle FAQ](/lifecycle/faq/windows).
 
-For additional details about releases, see:
+## Release information
+
+For more information about specific releases, see:
 
 <!--Using include for update history and release health links-->
 [!INCLUDE [Windows update history and release health links](./includes/update-history.md)]
