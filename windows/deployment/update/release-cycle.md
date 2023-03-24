@@ -11,22 +11,24 @@ ms.technology: itpro-updates
 ms.date: 03/23/2023
 ---
 
-# Monthly updates for Windows clients
+# Update release cycle for Windows clients
 <!--7696511-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-Windows updates help you to stay productive and protected. They provide your users and IT administrators with the security fixes they need, and protect devices so that unpatched vulnerabilities can't be exploited. Monthly updates are typically cumulative. They include all previously released fixes to guard against fragmentation of the operating system. Reliability and vulnerability issues can occur when only a subset of fixes is installed.
+Windows updates help you to stay productive and protected. They provide your users and IT administrators with the security fixes they need, and protect devices so that unpatched vulnerabilities can't be exploited. Updates for the Windows client OS are typically cumulative. They include all previously released fixes to guard against fragmentation of the operating system. Reliability and vulnerability issues can occur when only a subset of fixes is installed.
 
-This article provides details on the types of monthly updates that Microsoft provides, and how they help make the overall user experience simple and consistent.
+This article provides details on the types of updates that Microsoft provides, and how they help make the overall user experience simple and consistent.
 
-## Types of monthly update releases
+## Types update releases
 
-Releases are provided on a monthly schedule as two types of releases:
+|Release type | Description | Release cycle |
+|---|---|---|
+| [Monthly security update release](#monthly-security-update-release)| A cumulative update release that includes both security and non-security content | Second Tuesday of each month, typically published at 10:00 AM Pacific Time (PST/PDT) |
+| [Optional non-security preview release](#optional-non-security-preview-release)| An optional cumulative update release that's typically used for early validation of the monthly security update release| Fourth Tuesday of each month, typically published at 10:00 AM Pacific Time (PST/PDT) |
+| [Out-of-band (OOB) release](#oob-releases) | Resolves a recently identified issue or vulnerability | As needed |
+| [Annual feature update](#annual-feature-updates) |  | Once a year in the second half of the calendar year |
+| [Continuous innovation for Windows 11](#continuous-innovation-for-windows-11)| Introduces new features and enhancements for Windows 11 | Periodically included in an optional non-security preview release then in the monthly security update releases |
 
-1. **Monthly security update release**
-1. **Optional non-security preview release**
-
-[**Out-of-band (OOB) releases**](#oob-releases) can also be provided outside of the monthly schedule when there's an exceptional need.
 
 ## Monthly security update release
 
@@ -70,7 +72,7 @@ To access the optional non-security preview release:
 
 ## OOB releases
 
-**Out-of-band (OOB) releases** might be provided to fix a recently identified issue or vulnerability. They're used in atypical cases when an issue is detected and can't wait for the next monthly release, because devices must be updated immediately to address security vulnerabilities or to resolve a quality issue impacting many devices. 
+**Out-of-band (OOB) releases** might be provided to fix a recently identified issue or vulnerability. They're used in atypical cases when an issue is detected and can't wait for the next monthly release, because devices must be updated immediately to address security vulnerabilities or to resolve a quality issue impacting many devices. **Out-of-band (OOB) releases** are provided outside of the monthly schedule when there's an exceptional need.
 
 Some key considerations about OOB releases include: 
 
