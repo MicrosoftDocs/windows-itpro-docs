@@ -1,10 +1,10 @@
 ---
-title: Policies in Policy CSP supported by Surface Hub
-description: Learn about the policies in Policy CSP supported by Surface Hub.
+title: Policies in Policy CSP supported by Windows 10 Team
+description: Learn about the policies in Policy CSP supported by Windows 10 Team.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 03/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -13,9 +13,9 @@ ms.topic: reference
 
 <!-- Auto-Generated CSP Document -->
 
-# Policies in Policy CSP supported by Surface Hub
+# Policies in Policy CSP supported by Windows 10 Team
 
-This article lists the policies in Policy CSP that are applicable for Surface Hub.
+This article lists the policies in Policy CSP that are applicable for Windows 10 Team.
 
 ## Accounts
 

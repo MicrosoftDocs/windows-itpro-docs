@@ -49,7 +49,7 @@ items:
           href: policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md
         - name: Policies supported by Windows 10 IoT Core
           href: policies-in-policy-csp-supported-by-iot-core.md
-        - name: Policies supported by Microsoft Surface Hub
+        - name: Policies supported by Microsoft Windows 10 Team
           href: policies-in-policy-csp-supported-by-surface-hub.md
         - name: Policies that can be set using Exchange Active Sync (EAS)
           href: policies-in-policy-csp-that-can-be-set-using-eas.md
