@@ -40,7 +40,7 @@ Most people are familiar with the **Monthly security update release**. The **Mon
 - Latest cumulative update (LCU)
 
 
-**Monthly security update releases** are cumulative. The release includes both new and previously released security fixes, along with non-security content introduced in the prior month's [**Optional non-security preview release**](#optional-non-security-preview-release). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. Typically, most organizations consider monthly security update releases as mandatory.
+**Monthly security update releases** are cumulative. The release includes both new and previously released security fixes, along with non-security content introduced in the prior month's [**Optional non-security preview release**](#optional-non-security-preview-release). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. Most organizations consider monthly security update releases as mandatory.
 
 Monthly security update releases are available through the following channels:
 
@@ -60,34 +60,48 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 - Preview updates
 - Preview CUs
 
-Starting in April 2023, all **Optional non-security preview releases** will be released on the fourth Tuesday of the month. This change in release cadence gives admins a consistent time cycle for testing and validating fixes and features.
+> [!Important]
+> Starting in April 2023, all **Optional non-security preview releases** will be released on the fourth Tuesday of the month. This change in release cadence gives admins a consistent time cycle for testing and validating fixes and features.
 
-To access the optional non-security preview release, navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**. Admins can also validate fixes and features in an optional non-security preview release by using the [Windows Insider Program for Business](https://insider.windows.com/for-business) or the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). 
+To access the optional non-security preview release:
+- Navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**. 
+- Use [Windows Insider Program for Business](https://insider.windows.com/for-business)
+- Use the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx).
 
 ## OOB releases
 
-Out-of-band (OOB) releases might be provided to fix a recently identified issue or vulnerability. They're used in atypical cases when an issue is detected and can't wait for the next monthly release, because devices must be updated immediately to address security vulnerabilities or to resolve a quality issue impacting many devices. 
+**Out-of-band (OOB) releases** might be provided to fix a recently identified issue or vulnerability. They're used in atypical cases when an issue is detected and can't wait for the next monthly release, because devices must be updated immediately to address security vulnerabilities or to resolve a quality issue impacting many devices. 
 
 Some key considerations about OOB releases include: 
 
-- OOB releases are always cumulative, and they supersede any prior B or C release. 
-- The OOB releases will generally require IT admins to deploy off-cycle.  
-- Some OOB releases are classified as critical and will automatically be pushed to Windows Server Update Services and Windows Update for Business, just like the B releases.  
-- Some OOB releases are non-critical and only go to the Microsoft Update Catalog for users or organizations to voluntarily seek out the update. 
+- OOB releases are always cumulative. 
+  - OOB releases supersede any prior monthly security update and optional non-security preview release. 
+- OOB releases generally require IT admins to deploy off-cycle.  
+- Some OOB releases are classified as critical.
+  - Critical OOB releases are automatically available to WSUS and Windows Update for Business, just like the monthly security update releases.  
+- Some OOB releases are classified as non-critical.
+  - Non-critical releases only go to the Microsoft Update Catalog for users or organizations to voluntarily obtain the update.
+
+## Continuous innovation for Windows 11
+
+Starting with Windows 11, version 22H2, new features and enhancements are introduced periodically to provide continuous innovation for Windows 11. These features and enhancements use the normal update servicing channels you're already familiar with. At first, new features are introduced with an **Optional non-security preview release** and gradually rolled out to unmanaged clients. These new features are released later as part of a **Monthly security update release**.
+
+Some of the new features may be disruptive to organizations. By default, these select features are turned off temporarily for all managed devices until the next annual feature update is installed. In this scenario, a device is considered managed if  it uses one of the following to determine which updates to install:
+
+- Windows Update for Business
+  - Devices that have updates managed Microsoft Intune use Windows Update for Business
+- WSUS
+  - Devices that have updates managed by Configuration Manager use WSUS
+
+Features that are turned off by default are listed in the KB article for the monthly cumulative update. If you want to enable these features, there is a client policy that allows admins to **Enable features introduced via servicing that are off by default**. For more information about this policy, see [Enable features introduced via servicing that are off by default](waas-configure-wufb.md#enable-features-introduced-via-servicing-that-are-off-by-default).
+
+## Annual feature updates
+
+Annual feature updates are released in the second half of the calendar year. These updates are typically cumulative and include all previously released fixes. They also include new features and enhancements. The annual feature update marks the start of the support lifecycle, with 24 months of support for Home and Pro editions of Windows and 36 months of support for Enterprise and Education editions. For more information, see [Windows lifecycle FAQ](/lifecycle/faq/windows).
 
 ## More information
 
-For additional details about the different types of Windows updates like critical, security, drivers, service packs, and more, please see the [Description of the standard terminology used to describe Microsoft software updates](/troubleshoot/windows-client/deployment/standard-terminology-software-updates) and [Introducing a new deployment service for driver and firmware updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-a-new-deployment-service-for-driver-and-firmware/ba-p/2176942). 
+For additional details about releases, see:
 
-## Related articles
-
-- [Overview of Windows as a service](waas-overview.md)
-- [Update Windows 10 in the enterprise](index.md)
-- [Quick guide to Windows as a service](waas-quick-start.md) 
-- [Configure Delivery Optimization for Windows 10 updates](../do/waas-delivery-optimization.md)
-- [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Configure Windows Update for Business](waas-configure-wufb.md)
-- [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
-- [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](/intune/windows-update-for-business-configure)
-- [Manage device restarts after updates](waas-restart.md)
+<!--Using include for update history and release health links-->
+[!INCLUDE [Windows update history and release health links](./includes/update-history.md)]
