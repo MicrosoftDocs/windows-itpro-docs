@@ -1,6 +1,6 @@
 ---
-title: Monthly updates for Windows clients
-description: Learn about Windows monthly update types to stay productive and protected.
+title: Update release cycle for Windows clients
+description: Learn about the release cycle of updates for Windows clients to stay productive and protected.
 ms.prod: windows-client
 author: mestew
 ms.localizationpriority: medium

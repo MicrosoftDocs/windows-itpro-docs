@@ -11,8 +11,8 @@
           href: update/waas-quick-start.md        
         - name: Windows as a service overview
           href: update/waas-overview.md      
-        - name: Monthly updates
-          href: update/quality-updates.md
+        - name: Update release cycle
+          href: update/release-cycle.md
         - name: Basics of Windows updates, channels, and tools
           href: update/get-started-updates-channels-tools.md
         - name: Prepare servicing strategy for Windows client updates
