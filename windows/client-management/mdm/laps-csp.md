@@ -343,7 +343,7 @@ If not specified, this setting defaults to True.
 <!-- Device-Policies-ADPasswordEncryptionEnabled-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!IMPORTANT]
-> This setting is ignored unless BackupDirectory is configured to back up the password to Active Directory, AND the the Active Directory domain is at Windows Server 2016 Domain Functional Level or higher.
+> This setting is ignored unless BackupDirectory is configured to back up the password to Active Directory, AND the Active Directory domain is at Windows Server 2016 Domain Functional Level or higher.
 <!-- Device-Policies-ADPasswordEncryptionEnabled-Editable-End -->
 
 <!-- Device-Policies-ADPasswordEncryptionEnabled-DFProperties-Begin -->
