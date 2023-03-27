@@ -20736,9 +20736,19 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/update/quality-updates.md",
+      "redirect_url": "/windows/deployment/update/release-cycle",
+      "redirect_document_id": false
+    },    
+    {
       "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-privacy.md",
       "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-privacy",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "store-for-business/sign-up-microsoft-store-for-business.md",
+      "redirect_url": "/microsoft-store",
+      "redirect_document_id": false
     }
   ]
 }
