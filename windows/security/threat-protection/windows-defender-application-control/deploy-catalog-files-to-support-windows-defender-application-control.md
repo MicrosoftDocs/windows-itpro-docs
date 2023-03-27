@@ -1,15 +1,9 @@
 ---
-title: Deploy catalog files to support Windows Defender Application Control (Windows)
+title: Deploy catalog files to support Windows Defender Application Control
 description: Catalog files simplify running unsigned applications in the presence of a Windows Defender Application Control (WDAC) policy.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 author: jsuther1974
 ms.reviewer: jgeurten
 ms.author: vinpa
@@ -22,27 +16,27 @@ ms.technology: itpro-security
 
 **Applies to:**
 
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and later
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](feature-availability.md).
 
 *Catalog files* can be important in your deployment of Windows Defender Application Control (WDAC) if you have unsigned line-of-business (LOB) applications for which the process of signing is difficult. You can also use catalog files to add your own signature to apps you get from independent software vendors (ISV) when you don't want to trust all code signed by that ISV. In this way, catalog files provide a convenient way for you to "bless" apps for use in your WDAC-managed environment. And, you can create catalog files for existing apps without requiring access to the original source code or needing any expensive repackaging.
 
-You'll need to [obtain a code signing certificate for your own use](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications#obtain-code-signing-certificates-for-your-own-use) and use it to sign the catalog file. Then, distribute the signed catalog file using your preferred content deployment mechanism.
+You need to [obtain a code signing certificate for your own use](use-code-signing-to-simplify-application-control-for-classic-windows-applications.md#obtain-code-signing-certificates-for-your-own-use) and use it to sign the catalog file. Then, distribute the signed catalog file using your preferred content deployment mechanism.
 
-Finally, add a signer rule to your WDAC policy for your signing certificate. Then, any apps covered by your signed catalog files will be able to run, even if the apps were previously unsigned. With this foundation, you can more easily build a WDAC policy that blocks all unsigned code (most malware is unsigned).
+Finally, add a signer rule to your WDAC policy for your signing certificate. Then, any apps covered by your signed catalog files are able to run, even if the apps were previously unsigned. With this foundation, you can more easily build a WDAC policy that blocks all unsigned code, because most malware is unsigned.
 
 ## Create catalog files using Package Inspector
 
 To create a catalog file for an existing app, you can use a tool called **Package Inspector** that comes with Windows.
 
-1. Apply a WDAC policy in **audit mode** to the computer where you'll run Package Inspector. Package Inspector will use audit events to include hashes in the catalog file for any temporary installation files that are added and then removed from the computer during the installation process. The audit mode policy should **not** allow the app's binaries or you may miss some critical files that are needed in the catalog file.
+1. Apply a policy in **audit mode** to the computer where you run Package Inspector. Package Inspector uses audit events to include hashes in the catalog file for any temporary installation files that are added and then removed from the computer during the installation process. The audit mode policy should **not** allow the app's binaries or you may miss some critical files that are needed in the catalog file.
 
     > [!NOTE]
-    > You won't be able to complete this process if it's done on a system with an enforced WDAC policy, unless the enforced policy already allows the app to run.
+    > You won't be able to complete this process if it's done on a system with an enforced policy, unless the enforced policy already allows the app to run.
 
     You can use this PowerShell sample to make a copy of the DefaultWindows_Audit.xml template:
 
@@ -52,9 +46,9 @@ To create a catalog file for an existing app, you can use a tool called **Packag
     $PolicyBinary = $env:USERPROFILE+"\Desktop\"+$PolicyId.substring(11)+".cip"
     ```
 
-    Then apply the policy as described in [Deploy WDAC policies with script](/windows/security/threat-protection/windows-defender-application-control/deployment/deploy-wdac-policies-with-script).
+    Then apply the policy as described in [Deploy Windows Defender Application Control policies with script](deployment/deploy-wdac-policies-with-script.md).
 
-2. Start Package Inspector to monitor file creation on a **local drive** where you'll install the app, for example, drive C:
+2. Start Package Inspector to monitor file creation on a **local drive** where you install the app, for example, drive C:
 
     ```powershell
     PackageInspector.exe Start C:
@@ -73,11 +67,11 @@ To create a catalog file for an existing app, you can use a tool called **Packag
 
 7. Close and reopen the application to ensure that the scan has captured all binaries.
 
-8. As appropriate, with Package Inspector still running, repeat the steps above for any other apps that you want to include in the catalog.
+8. As appropriate, with Package Inspector still running, repeat the previous steps for any other apps that you want to include in the catalog.
 
-9. When you've confirmed that the previous steps are complete, use the following commands to stop Package Inspector. A catalog file and catalog definition file will be created in the specified location. Use a naming convention for your catalog files to make it easier to manage your deployed catalog files over time. The filenames used in this example are **LOBApp-Contoso.cat** (catalog file) and **LOBApp.cdf** (definition file).
+9. When you've confirmed that the previous steps are complete, use the following commands to stop Package Inspector. It creates a catalog file and catalog definition file in the specified location. Use a naming convention for your catalog files to make it easier to manage your deployed catalog files over time. The filenames used in this example are **LOBApp-Contoso.cat** (catalog file) and **LOBApp.cdf** (definition file).
 
-    For the last command, which stops Package Inspector, be sure to specify the same local drive you've been watching with Package Inspector, for example, C:.  
+    For the last command, which stops Package Inspector, be sure to specify the same local drive you've been watching with Package Inspector, for example, `C:`.
 
     ```powershell
     $ExamplePath=$env:userprofile+"\Desktop"
@@ -86,36 +80,28 @@ To create a catalog file for an existing app, you can use a tool called **Packag
     PackageInspector.exe Stop C: -Name $CatFileName -cdfpath $CatDefName
     ```
 
->[!NOTE]
->Package Inspector catalogs the hash values for each discovered file. If the applications that were scanned are updated, complete this process again to trust the new binaries' hash values.
+> [!NOTE]
+> Package Inspector catalogs the hash values for each discovered file. If the applications that were scanned are updated, complete this process again to trust the new binaries' hash values.
 
-When finished, the files will be saved to your desktop. You can view the \*.cdf file with a text editor and see what files were included by Package Inspector. You can also double-click the \*.cat file to see its contents and check for a specific file hash.
+When finished, the tool saves the files to your desktop. You can view the `*.cdf` file with a text editor and see what files Package Inspector included. You can also double-click the `*.cat` file to see its contents and check for a specific file hash.
 
-## Sign your Catalog file
+## Sign your catalog file
 
 Now that you've created a catalog file for your app, you're ready to sign it.
-
-### Catalog signing with Device Guard Signing Service v2 (DGSS)
-
-If you have an existing Microsoft Store for Business and Education account, you can use the DGSS to sign your catalog files. See [Submit-SigningJob](/windows/security/threat-protection/windows-defender-application-control/use-device-guard-signing-portal-in-microsoft-store-for-business#submit-signingjob).
 
 ### Catalog signing with SignTool.exe
 
 If you purchased a code signing certificate or issued one from your own public key infrastructure (PKI), you can use SignTool.exe to sign your catalog files.
 
-<br>
-<details>
-  <summary>Expand this section for detailed instructions on signing catalog files with signtool.exe.</summary>
-
 You need:
 
-- SignTool.exe, found in the [Windows software development kit (SDK)](https://developer.microsoft.com/windows/downloads/windows-sdk/)
-- The catalog file that you created earlier
-- A code signing certificate issued from an internal certificate authority (CA) or a purchased code signing certificate
+- SignTool.exe, found in the [Windows software development kit (SDK)](https://developer.microsoft.com/windows/downloads/windows-sdk/).
+- The catalog file that you created earlier.
+- A code signing certificate issued from an internal certificate authority (CA) or a purchased code signing certificate.
 
-Import the code signing certificate that will be used to sign the catalog file into the signing user's personal store. Then, sign the existing catalog file by copying each of the following commands into an elevated Windows PowerShell session.
+For the code signing certificate that you use to sign the catalog file, import it into the signing user's personal store. Then, sign the existing catalog file by copying each of the following commands into an elevated Windows PowerShell session.
 
-1. Initialize the variables that will be used. Replace the *$ExamplePath* and *$CatFileName* variables as needed:
+1. Initialize the variables to use. Replace the `$ExamplePath` and `$CatFileName` variables as needed:
 
    ```powershell
     $ExamplePath=$env:userprofile+"\Desktop"
@@ -128,38 +114,30 @@ Import the code signing certificate that will be used to sign the catalog file i
     <path to signtool.exe> sign /n "ContosoSigningCert" /fd sha256 /v $CatFileName
     ```
 
-   >[!NOTE]
-   >The *&lt;Path to signtool.exe&gt;* variable should be the full path to the Signtool.exe utility. *ContosoSigningCert* represents the subject name of the certificate that you will use to sign the catalog file. This certificate should be imported to your personal certificate store on the computer on which you are attempting to sign the catalog file.
+   > [!NOTE]
+   > The `<Path to signtool.exe>` variable should be the full path to the Signtool.exe utility. `ContosoSigningCert` represents the subject name of the certificate that you use to sign the catalog file. This certificate should be imported to your personal certificate store on the computer on which you are attempting to sign the catalog file.
    >
-   >For additional information about Signtool.exe and all additional switches, visit the [Sign Tool page](/dotnet/framework/tools/signtool-exe).
+   > For more information about Signtool.exe and all additional switches, see [Sign Tool](/dotnet/framework/tools/signtool-exe).
 
 3. Verify the catalog file's digital signature. Right-click the catalog file, and then select **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with a **sha256** algorithm, as shown in Figure 1.
 
    ![Digital Signature list in file Properties.](images/dg-fig12-verifysigning.png)
 
-   Figure 1. Verify that the signing certificate exists
-
-</details>
+   Figure 1. Verify that the signing certificate exists.
 
 ## Deploy the catalog file to your managed endpoints
 
-Catalog files in Windows are stored under ***%windir%\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}***.
+Catalog files in Windows are stored under `%windir%\System32\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}`.
 
-For testing purposes, you can manually copy signed catalog files to the folder above. For large-scale deployment of signed catalog files, we recommend that you use Group Policy File Preferences or an enterprise systems management product such as Microsoft Configuration Manager.
+For testing purposes, you can manually copy signed catalog files to this folder. For large-scale deployment of signed catalog files, use group policy file preferences or an enterprise systems management product such as Microsoft Configuration Manager.
 
-### Deploy catalog files with Group Policy
+### Deploy catalog files with group policy
 
-To simplify the management of catalog files, you can use Group Policy preferences to deploy catalog files to the appropriate computers in your organization.
+To simplify the management of catalog files, you can use group policy preferences to deploy catalog files to the appropriate computers in your organization.
 
-<br>
-<details>
-<summary>Expand this section for detailed instructions on deploying catalog files using Group Policy.</summary>
+The following process walks you through the deployment of a signed catalog file called **LOBApp-Contoso.cat** to a test OU called **WDAC Enabled PCs** with a GPO called **Contoso Catalog File GPO Test**.
 
-The following process walks you through the deployment of a signed catalog file called **LOBApp-Contoso.cat** to a test OU called WDAC Enabled PCs with a GPO called **Contoso Catalog File GPO Test**.
-
-**To deploy a catalog file with Group Policy:**
-
-1. From either a domain controller or a client computer that has Remote Server Administration Tools (RSAT) installed, open the Group Policy Management Console (GPMC) by running **GPMC.MSC** or by searching for Group Policy Management.
+1. From either a domain controller or a client computer that has Remote Server Administration Tools installed, open the Group Policy Management Console by running **GPMC.MSC** or by searching for Group Policy Management.
 
 2. Create a new GPO: right-click an OU, for example, the **WDAC Enabled PCs OU**, and then select **Create a GPO in this domain, and Link it here**, as shown in Figure 2.
 
@@ -168,33 +146,33 @@ The following process walks you through the deployment of a signed catalog file 
 
    ![Group Policy Management, create a GPO.](images/dg-fig13-createnewgpo.png)
 
-   Figure 2. Create a new GPO
+   Figure 2. Create a new GPO.
 
 3. Give the new GPO a name, for example, **Contoso Catalog File GPO Test**, or any name you prefer.
 
 4. Open the Group Policy Management Editor: right-click the new GPO, and then select **Edit**.
 
-5. Within the selected GPO, navigate to Computer Configuration\\Preferences\\Windows Settings\\Files. Right-click **Files**, point to **New**, and then select **File**, as shown in Figure 3.
+5. Within the selected GPO, navigate to **Computer Configuration\\Preferences\\Windows Settings\\Files**. Right-click **Files**, point to **New**, and then select **File**, as shown in Figure 3.
 
    ![Group Policy Management Editor, New File.](images/dg-fig14-createnewfile.png)
 
-   Figure 3. Create a new file
+   Figure 3. Create a new file.
 
 6. Configure the catalog file share.
 
-   To use this setting to provide consistent deployment of your catalog file (in this example, LOBApp-Contoso.cat), the source file should be on a share that is accessible to the computer account of every deployed computer. This example uses a share (on a computer running Windows 10) called \\\\Contoso-Win10\\Share. The catalog file being deployed is copied to this share.
+   To use this setting to provide consistent deployment of your catalog file (in this example, LOBApp-Contoso.cat), the source file should be on a share that is accessible to the computer account of every deployed computer. This example uses a share on a computer running Windows 10 called `\\Contoso-Win10\Share`. The catalog file being deployed is copied to this share.
 
-7. To keep versions consistent, in the **New File Properties** dialog box (Figure 4), select **Replace** from the **Action** list so that the newest version is always used.
+7. To keep versions consistent, in the **New File Properties** dialog box as shown in Figure 4, select **Replace** from the **Action** list so that the newest version is always used.
 
    ![File Properties, Replace option.](images/dg-fig15-setnewfileprops.png)
 
-   Figure 4. Set the new file properties
+   Figure 4. Set the new file properties.
 
-8. In the **Source file(s)** box, type the name of your accessible share, with the catalog file name included (for example, \\\\Contoso-Win10\\share\\LOBApp-Contoso.cat).
+8. In the **Source file(s)** box, type the name of your accessible share, with the catalog file name included. For example, `\\Contoso-Win10\share\LOBApp-Contoso.cat`.
 
 9. In the **Destination File** box, type a path and file name, for example:
 
-   **C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\\LOBApp-Contoso.cat**
+   `C:\Windows\System32\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\LOBApp-Contoso.cat`
 
    For the catalog file name, use the name of the catalog you're deploying.
 
@@ -202,22 +180,16 @@ The following process walks you through the deployment of a signed catalog file 
 
 11. Select **OK** to complete file creation.
 
-12. Close the Group Policy Management Editor, and then update the policy on the test computer running Windows 10 or Windows 11, by running GPUpdate.exe. When the policy has been updated, verify that the catalog file exists in C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE} on the computer running Windows 10.
-
-</details>
+12. Close the Group Policy Management Editor, and then update the policy on the test computer running Windows 10 or Windows 11, by running GPUpdate.exe. When the policy has been updated, verify that the catalog file exists in `C:\Windows\System32\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}` on the computer running Windows 10.
 
 ### Deploy catalog files with Microsoft Configuration Manager
 
-As an alternative to Group Policy, you can use Configuration Manager to deploy catalog files to the managed computers in your environment. This approach can simplify the deployment and management of multiple catalog files and provide reporting around which catalog each client or collection has deployed. In addition to the deployment of these files, Configuration Manager can also be used to inventory the currently deployed catalog files for reporting and compliance purposes.
-
-<br>
-<details>
-<summary>Expand this section for detailed instructions on deploying catalog files using Configuration Manager.</summary>
+As an alternative to group policy, you can use Configuration Manager to deploy catalog files to the managed computers in your environment. This approach can simplify the deployment and management of multiple catalog files and provide reporting around which catalog each client or collection has deployed. In addition to the deployment of these files, Configuration Manager can also be used to inventory the currently deployed catalog files for reporting and compliance purposes.
 
 Complete the following steps to create a new deployment package for catalog files:
 
->[!NOTE]
->The following example uses a network share named \\\\Shares\\CatalogShare as a source for the catalog files. If you have collection-specific catalog files, or prefer to deploy them individually, use whichever folder structure works best for your organization.
+> [!NOTE]
+> The following example uses a network share named `\\Shares\CatalogShare` as a source for the catalog files. If you have collection-specific catalog files, or prefer to deploy them individually, use whichever folder structure works best for your organization.
 
 1. Open the Configuration Manager console, and select the Software Library workspace.
 
@@ -227,24 +199,28 @@ Complete the following steps to create a new deployment package for catalog file
 
     ![Create Package and Program Wizard.](images/dg-fig16-specifyinfo.png)
 
-    Figure 5. Specify information about the new package
+    Figure 5. Specify information about the new package.
 
 4. Select **Next**, and then select **Standard program** as the program type.
 
-5. On the **Standard Program** page, select a name, and then set the **Command Line** property to **XCopy \\\\Shares\\CatalogShare C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE} /H /K /E /Y**.
+5. On the **Standard Program** page, select a name, and then set the **Command Line** property to the following command:
 
-6. On the **Standard Program** page, select the following options (Figure 6):
+    ```cmd
+    XCopy \\Shares\CatalogShare C:\Windows\System32\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE} /H /K /E /Y
+    ```
+
+6. On the **Standard Program** page, select the following options, as shown in Figure 6:
 
     - In **Name**, type a name such as **Contoso Catalog File Copy Program**.
     - In **Command line**, browse to the program location.
-    - In **Startup folder**, type **C:\\Windows\\System32**.
+    - In **Startup folder**, type `C:\Windows\System32`.
     - From the **Run** list, select **Hidden**.
     - From the **Program can run** list, select **Whether or not a user is logged on**.
     - From the **Drive mode** list, select **Runs with UNC name**.
 
     ![Standard Program page of wizard.](images/dg-fig17-specifyinfo.png)
 
-    Figure 6. Specify information about the standard program
+    Figure 6. Specify information about the standard program.
 
 7. Accept the defaults for the rest of the wizard, and then close the wizard.
 
@@ -252,9 +228,9 @@ After you create the deployment package, deploy it to a collection so that the c
 
 1. In the Software Library workspace, navigate to Overview\\Application Management\\Packages, right-click the catalog file package, and then select **Deploy**.
 
-2. On the **General** page, select the test collection to which the catalog files will be deployed, and then select **Next**.
+2. On the **General** page, select the test collection, and then select **Next**.
 
-3. On the **Content** page, select **Add** to select the distribution point that will serve content to the selected collection, and then select **Next**.
+3. On the **Content** page, select **Add** to select the distribution point to serve content to the selected collection, and then select **Next**.
 
 4. On the **Deployment Settings** page, select **Required** in the **Purpose** box.
 
@@ -264,7 +240,7 @@ After you create the deployment package, deploy it to a collection so that the c
 
 7. On the **Scheduling** page, select **Next**.
 
-8. On the **User Experience** page (Figure 7), set the following options, and then select **Next**:
+8. On the **User Experience** page as shown in Figure 7, set the following options, and then select **Next**:
 
     - Select the **Software installation** check box.
 
@@ -272,7 +248,7 @@ After you create the deployment package, deploy it to a collection so that the c
 
     ![Deploy Software Wizard, User Experience page.](images/dg-fig18-specifyux.png)
 
-    Figure 7. Specify the user experience
+    Figure 7. Specify the user experience.
 
 9. On the **Distribution Points** page, in the **Deployment options** box, select **Run program from distribution point**, and then select **Next**.
 
@@ -280,20 +256,14 @@ After you create the deployment package, deploy it to a collection so that the c
 
 11. Close the wizard.
 
-</details>
-
 #### Inventory catalog files with Microsoft Configuration Manager
 
-When catalog files have been deployed to the computers within your environment, whether by using Group Policy or Configuration Manager, you can inventory them with the software inventory feature of Configuration Manager.
-
-<br>
-<details>
-<summary>Expand this section for detailed instructions on inventorying catalog files using Configuration Manager.</summary>
+When catalog files have been deployed to the computers within your environment, whether by using group policy or Configuration Manager, you can inventory them with the software inventory feature of Configuration Manager.
 
 You can configure software inventory to find catalog files on your managed systems by creating and deploying a new client settings policy.
 
->[!NOTE]
->A standard naming convention for your catalog files will significantly simplify the catalog file software inventory process. In this example, *-Contoso* has been added to all catalog file names.
+> [!NOTE]
+> A standard naming convention for your catalog files will significantly simplify the catalog file software inventory process. In this example, *-Contoso* has been added to all catalog file names.
 
 1. Open the Configuration Manager console, and select the Administration workspace.
 
@@ -303,26 +273,26 @@ You can configure software inventory to find catalog files on your managed syste
 
     ![Create Custom Client Device Settings.](images/dg-fig19-customsettings.png)
 
-    Figure 8. Select custom settings
+    Figure 8. Select custom settings.
 
 4. In the navigation pane, select **Software Inventory**, and then select **Set Types**, as shown in Figure 9.
 
     ![Software Inventory settings for devices.](images/dg-fig20-setsoftwareinv.png)
 
-    Figure 9. Set the software inventory
+    Figure 9. Set the software inventory.
 
 5. In the **Configure Client Setting** dialog box, select the **Start** button to open the **Inventories File Properties** dialog box.
 
-6. In the **Name** box, type a name such as **\*Contoso.cat**, and then select **Set**.
+6. In the **Name** box, type a name such as `*Contoso.cat`, and then select **Set**.
 
-    >[!NOTE]
-    >When typing the name, follow your naming convention for catalog files.
+    > [!NOTE]
+    > When typing the name, follow your naming convention for catalog files.
 
-7. In the **Path Properties** dialog box, select **Variable or path name**, and then type **C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}** in the box, as shown in Figure 10.
+7. In the **Path Properties** dialog box, select **Variable or path name**, and then type `C:\Windows\System32\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}` in the box, as shown in Figure 10.
 
     ![Path Properties, specifying a path.](images/dg-fig21-pathproperties.png)
 
-    Figure 10. Set the path properties
+    Figure 10. Set the path properties.
 
 8. Select **OK**.
 
@@ -338,44 +308,36 @@ At the time of the next software inventory cycle, when the targeted clients rece
 
 4. In Resource Explorer, navigate to Software\\File Details to view the inventoried catalog files.
 
->[!NOTE]
->If nothing is displayed in this view, navigate to Software\\Last Software Scan in Resource Explorer to verify that the client has recently completed a software inventory scan.
-
-</details>
+> [!NOTE]
+> If nothing is displayed in this view, navigate to Software\\Last Software Scan in Resource Explorer to verify that the client has recently completed a software inventory scan.
 
 ## Allow apps signed by your catalog signing certificate in your WDAC policy
 
-Now that you have your signed catalog file, you can add a signer rule to your WDAC policy that will allow anything signed with that certificate. If you haven't yet created a WDAC policy, see [WDAC Design Guide](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide).
+Now that you have your signed catalog file, you can add a signer rule to your policy that allows anything signed with that certificate. If you haven't yet created a WDAC policy, see the [Windows Defender Application Control design guide](windows-defender-application-control-design-guide.md).
 
-<br>
-<details>
-<summary>Expand this section for detailed instructions on creating a signer rule for your catalog signer.</summary>
-
-On a computer where the signed catalog file has been deployed, you can use [New-CiPolicyRule](/powershell/module/configci/new-cipolicyrule) to create a signer rule from any file included in that catalog. Then use [Merge-CiPolicy](/powershell/module/configci/merge-cipolicy) to add the rule to your policy XML. Be sure to replace the path values in the sample below.
+On a computer where the signed catalog file has been deployed, you can use [New-CiPolicyRule](/powershell/module/configci/new-cipolicyrule) to create a signer rule from any file included in that catalog. Then use [Merge-CiPolicy](/powershell/module/configci/merge-cipolicy) to add the rule to your policy XML. Be sure to replace the path values in the following sample:
 
   ```powershell
   $Rules = New-CIPolicyRule -DriverFilePath <path to the file covered by the signed catalog> -Level Publisher
-  Merge-CIPolicy -OutputFilePath <path to your WDAC policy XML> -PolicyPaths <path to your WDAC policy XML> -Rules $Rules
+  Merge-CIPolicy -OutputFilePath <path to your policy XML> -PolicyPaths <path to your policy XML> -Rules $Rules
   ```
 
-Alternatively, you can use [Add-SignerRule](/powershell/module/configci/add-signerrule) to add a signer rule to your WDAC policy from the certificate file (.cer). You can easily save the .cer file from your signed catalog file.
+Alternatively, you can use [Add-SignerRule](/powershell/module/configci/add-signerrule) to add a signer rule to your policy from the certificate file (.cer). You can easily save the .cer file from your signed catalog file.
 
 1. Right-click the catalog file, and then select **Properties**.
 2. On the **Digital Signatures** tab, select the signature from the list and then select **Details**.
 3. Select **View Certificate** to view the properties of the leaf certificate.
-4. Select the **Details** tab and select **Copy to File** which will run the Certificate Export Wizard.
+4. Select the **Details** tab and select **Copy to File**. This action runs the Certificate Export Wizard.
 5. Complete the wizard using the default option for **Export File Format** and specifying a location and file name to save the .cer file.
 
 > [!NOTE]
-> The steps listed above will select the lowest level of the certificate chain (the "leaf" certificate). Instead, you can choose to use the certificate's intermediate or root issuer certificate. To use a different certificate in the chain, switch to the **Certification Path** tab after step 3 above, then select the certificate level you want to use and select **View Certificate**. Then complete the remaining steps.
+> These steps select the lowest level of the certificate chain, also called the "leaf" certificate. Instead, you can choose to use the certificate's intermediate or root issuer certificate. To use a different certificate in the chain, switch to the **Certification Path** tab after step 3 above, then select the certificate level you want to use and select **View Certificate**. Then complete the remaining steps.
 
-The following example uses the .cer file to add a signer rule to both the user and kernel mode signing scenarios. Be sure to replace the path values in the sample below.
+The following example uses the .cer file to add a signer rule to both the user and kernel mode signing scenarios. Be sure to replace the path values in the following sample:
 
   ```powershell
-  Add-SignerRule -FilePath <path to your WDAC policy XML> -CertificatePath <path to your certificate .cer file> -User -Kernel
+  Add-SignerRule -FilePath <path to your policy XML> -CertificatePath <path to your certificate .cer file> -User -Kernel
   ```
-
-</details>
 
 ## Known issues using Package Inspector
 
@@ -386,14 +348,14 @@ Some of the known issues using Package Inspector to build a catalog file are:
     - Get the value of the reg key at HKEY\_CURRENT\_USER/PackageInspectorRegistryKey/c: (this USN was the most recent one when you ran PackageInspector start). Then use fsutil.exe to read that starting location. Replace "RegKeyValue" in the following command with the value from the reg key:<br>
     `fsutil usn readjournal C: startusn=RegKeyValue > inspectedusn.txt`
     - The above command should return an error if the older USNs don't exist anymore due to overflow
-    - You can expand the USN Journal size using: `fsutil usn createjournal` with a new size and allocation delta. `Fsutil usn queryjournal` will show the current size and allocation delta, so using a multiple of that may help
+    - You can expand the USN Journal size using: `fsutil usn createjournal` with a new size and allocation delta. `Fsutil usn queryjournal` shows the current size and allocation delta, so using a multiple of that may help
 - **CodeIntegrity - Operational event log is too small to track all files created by the installer**
   - To diagnose whether Eventlog size is the issue, after running through Package Inspector:
     - Open Event Viewer and expand the **Application and Services//Microsoft//Windows//CodeIntegrity//Operational**. Check for a 3076 audit block event for the initial installer launch.
     - To increase the Event log size, in Event Viewer right-click the operational log, select Properties, and then set new values
 - **Installer or app files that change hash each time the app is installed or run**
-  - Some apps generate files at run time whose hash value is different every time. You can diagnose this issue by reviewing the hash values in the 3076 audit block events (or 3077 enforcement events) that are generated.  If each time you attempt to run the file you observe a new block event with a different hash, the package won't work with Package Inspector.
+  - Some apps generate files at run time whose hash value is different every time. You can diagnose this issue by reviewing the hash values in the 3076 audit block events (or 3077 enforcement events) that are generated. If each time you attempt to run the file you observe a new block event with a different hash, the package doesn't work with Package Inspector.
 - **Files with an invalid signature blob or otherwise "unhashable" files**
   - This issue arises when a signed file was modified in a way that invalidates the file's PE header. A file modified in this way is unable to be hashed according to the Authenticode spec.
-  - Although these "unhashable" files can't be included in the catalog file created by PackageInspector, you should be able to allow them by adding a hash ALLOW rule to your WDAC policy that uses the file's flat file hash.
+  - Although these "unhashable" files can't be included in the catalog file created by PackageInspector, you should be able to allow them by adding a hash ALLOW rule to your policy that uses the file's flat file hash.
   - This issue affects some versions of InstallShield packages that use signed DLL files in custom actions. InstallShield adds tracking markers to the file (editing it post signature) which leaves the file in this "unhashable" state.
