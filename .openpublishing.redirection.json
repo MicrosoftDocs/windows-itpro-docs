@@ -20739,6 +20739,11 @@
       "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-privacy.md",
       "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-privacy",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "/microsoft-store/sign-up-microsoft-store-for-business.md",
+      "redirect_url": "/microsoft-store",
+      "redirect_document_id": false
     }
   ]
 }
