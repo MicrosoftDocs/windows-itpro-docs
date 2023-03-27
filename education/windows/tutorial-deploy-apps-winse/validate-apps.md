@@ -33,7 +33,7 @@ Application installation depends on two factors:
 > [!IMPORTANT]
 > The Intune management extension agent checks every hour (or on service or device restart) for any new Win32 app assignments.
 
-If the E Mode policy doesn't block the application that you're trying to deploy, the process to deploy the app to Windows SE devices should be consistent with non-SE devices.
+If the Windows 11 SE base policy doesn't block the application that you're trying to deploy, the process to deploy the app to Windows SE devices should be consistent with non-SE devices.
 
 ## Check for installation
 
@@ -150,8 +150,8 @@ Select one of the following options to learn the next steps:
 > - [Important deployment considerations](considerations.md)
 
 > [!div class="nextstepaction"]
-> [Create policies](create-policies.md) [Important deployment considerations](considerations.md)
-> [Important deployment considerations](considerations.md)
+> [Next: Create policies>](create-policies.md) [Next: Important deployment considerations>](considerations.md)
+
 
 [M365-1]: /microsoft-365/education/deploy/microsoft-store-for-education
 

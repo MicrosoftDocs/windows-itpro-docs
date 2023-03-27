@@ -15,11 +15,13 @@ This guide describes how to deploy applications to Windows 11 SE devices that ar
 
 Windows 11 SE is designed to provide a simplified and secure experience for students. Windows 11 SE prevents the installation and execution of third party applications with a technology called *Windows Defender Application Control (WDAC)*.
 
-WDAC applies an *allowlist* (Code Integrity) policy called *E Mode*, which ensures that unwanted apps don't run or get installed. However, it also prevents IT admins from deploying apps to Windows 11 SE devices, unless they're included in the E Mode policy.\
+WDAC applies an *allowlist* policy called *Windows 11 SE base policy*, which ensures that unwanted apps don't run or get installed. However, it also prevents IT admins from deploying apps to Windows 11 SE devices, unless they're included in the E Mode policy.
+
 With the use of WDAC *supplemental policies*, Intune allows specific third party applications to be installed and executed. The [allowlist process][EDU-1] is done on an app-by-app basis, and the time to request an application to be allowed and have the supplemental policy deployed can be lengthy.
 
-Starting with Windows 11 SE, version 22H2, IT admins have more flexibility to deploy applications to Windows 11 SE devices. When a Windows 11 SE device is enrolled in an Intune education tenant, it will automatically receive an AppLocker policy that sets the *Intune Management Extension (IME)* as a *managed installer*.\
-As a managed installer, any applications deployed through the IME will be automatically allowed on Windows 11 SE, removing the allowlist process requirement. For more information about managed installer, see [How does a managed installer work?][WIN-2]
+Starting with Windows 11 SE, version 22H2, IT admins have more flexibility to deploy applications to Windows 11 SE devices. When a Windows 11 SE device is enrolled in an Intune education tenant, it will automatically receive an AppLocker policy that sets the *Intune Management Extension (IME)* as a *managed installer*.
+
+As a managed installer, applications deployed through the IME will be automatically allowed on Windows 11 SE, removing the allowlist process requirement. For more information about managed installer, see [How does a managed installer work?][WIN-2]
 
 > [!NOTE]
 > End-users of Windows 11 SE devices still cannot install and use arbitrary applications without being blocked. Only IT admins can control what apps are allowed.
