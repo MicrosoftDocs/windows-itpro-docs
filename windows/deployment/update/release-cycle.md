@@ -32,7 +32,7 @@ This article provides details on the types of updates that Microsoft provides, a
 
 ## Monthly security update release
 
-Most people are familiar with the **Monthly security update release**. The **Monthly security update release** updates are released on the second Tuesday of each month, and are typically published at 10:00 AM Pacific Time (PST/PDT). This release might commonly be referred to as:
+Most people are familiar with the **monthly security update release**. The **monthly security update release** is published on the second Tuesday of each month, typically at 10:00 AM Pacific Time (PST/PDT). This release might commonly be referred to as:
 
 - Patch Tuesday
 - Update Tuesday
@@ -54,7 +54,7 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 
 ## Optional non-security preview release
 
-**Optional non-security preview releases** provide IT admins an opportunity for early validation of that content prior to the **Monthly security update release**. Admins can test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, non-security preview releases. New features might initially be deployed in the prior month's **Optional non-security preview release**, then ship in the following **Monthly security update release**. These releases are only offered to the most recent, supported versions of Windows.
+**Optional non-security preview releases** provide IT admins an opportunity for early validation of that content prior to the **monthly security update release**. Admins can test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, non-security preview releases. New features might initially be deployed in the prior month's **optional non-security preview release**, then ship in the following **monthly security update release**. These releases are only offered to the most recent, supported versions of Windows.
 
 **Optional non-security preview releases** might commonly be referred to as:
 
@@ -63,7 +63,7 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 - Preview CUs
 
 > [!Important]
-> Starting in April 2023, all **Optional non-security preview releases** will be released on the fourth Tuesday of the month. This change in release cadence gives admins a consistent time cycle for testing and validating fixes and features.
+> Starting in April 2023, all **optional non-security preview releases** will be released on the fourth Tuesday of the month. This change in release cadence gives admins a consistent time cycle for testing and validating fixes and features.
 
 To access the optional non-security preview release:
 - Navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**. 
@@ -86,7 +86,7 @@ Some key considerations about OOB releases include:
 
 ## Continuous innovation for Windows 11
 
-Starting with Windows 11, version 22H2, new features and enhancements are introduced periodically to provide continuous innovation for Windows 11. These features and enhancements use the normal update servicing channels you're already familiar with. At first, new features are introduced with an **Optional non-security preview release** and gradually rolled out to unmanaged clients. These new features are released later as part of a **Monthly security update release**.
+Starting with Windows 11, version 22H2, new features and enhancements are introduced periodically to provide continuous innovation for Windows 11. These features and enhancements use the normal update servicing channels you're already familiar with. At first, new features are introduced with an **optional non-security preview release** and gradually rolled out to unmanaged clients. These new features are released later as part of a **monthly security update release**.
 
 Some of the new features may be disruptive to organizations. By default, these select features are turned off temporarily for all managed devices until the next annual feature update is installed. In this scenario, a device is considered managed if  it uses one of the following to determine which updates to install:
 
