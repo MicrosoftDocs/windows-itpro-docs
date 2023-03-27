@@ -1,6 +1,6 @@
 ---
-title: Windows monthly security update release signals
-description: This article explains the Windows monthly security update release signals
+title: Windows quality update release signals
+description: This article explains the Windows quality update release signals
 ms.date: 01/24/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
@@ -12,7 +12,7 @@ manager: dougeby
 ms.reviewer: hathind
 ---
 
-# Windows monthly security update release signals
+# Windows quality update signals
 
 Windows Autopatch monitors a specific set of signals and aims to release the monthly security update both quickly and safely. The service doesn't comprehensively monitor every use case in Windows.
 

@@ -51,16 +51,16 @@
               items:
                 - name: Customize Windows Update settings
                   href: operate/windows-autopatch-windows-update.md
-                - name: Windows monthly security update release
+                - name: Windows quality updates
                   href: operate/windows-autopatch-windows-quality-update-overview.md
                   items:
-                    - name: Windows monthly security update end user experience
+                    - name: Windows quality update end user experience
                       href: operate/windows-autopatch-windows-quality-update-end-user-exp.md
-                    - name: Windows monthly security update signals
+                    - name: Windows quality security update signals
                       href: operate/windows-autopatch-windows-quality-update-signals.md
-                    - name: Windows monthly security update communications
+                    - name: Windows quality security update communications
                       href: operate/windows-autopatch-windows-quality-update-communications.md
-                    - name: Windows monthly security update reports
+                    - name: Windows quality security update reports
                       href: operate/windows-autopatch-windows-quality-update-reports-overview.md
                       items:
                         - name: Summary dashboard
