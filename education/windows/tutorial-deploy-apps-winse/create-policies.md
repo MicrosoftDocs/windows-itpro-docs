@@ -29,7 +29,7 @@ A *supplemental policy* can expand only one base policy, but multiple supplement
 The base policy that you must target for Windows SE devices has a PolicyID of **{82443e1e-8a39-4b4a-96a8-f40ddc00b9f3}**.
 
 > [!WARNING]
-> The maximum number of active policies is 32, which includes the Windows 11 SE base policy, the Microsoft vulnerable driver block list, and potentially other inbox policies. When planning your supplemental policy strategy, avoid adding too many. For example, avoid creating a supplemental per app, which can add up very quickly.
+> The maximum number of active policies is 32, which includes the Windows 11 SE base policy, the Microsoft vulnerable driver block list, and potentially other inbox policies. When planning your supplemental policy strategy, avoid adding too many. For example, avoid creating a supplemental policy per app, which can add up very quickly.
 
 After you create WDAC supplemental policies, you must sign them and deploy them through Intune.
 
