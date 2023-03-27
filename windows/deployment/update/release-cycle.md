@@ -89,7 +89,7 @@ Some key considerations about OOB releases include:
 
 Starting with Windows 11, version 22H2, new features and enhancements are introduced periodically to provide continuous innovation for Windows 11. These features and enhancements use the normal update servicing channels you're already familiar with. At first, new features are introduced with an **optional non-security preview release** and gradually rolled out to unmanaged clients. These new features are released later as part of a **monthly security update release**.
 
-Some of the new features may be disruptive to organizations. By default, these select features are turned off temporarily for all managed devices until the next annual feature update is installed. In this scenario, a device is considered managed if  it uses one of the following to determine which updates to install:
+Some of the new features may be disruptive to organizations. By default, these select features are turned off temporarily for all managed devices until the next annual feature update is installed. In this scenario, a device is considered managed if it uses one of the following to determine which updates to install:
 
 - Windows Update for Business
   - Devices that have updates managed Microsoft Intune use Windows Update for Business
