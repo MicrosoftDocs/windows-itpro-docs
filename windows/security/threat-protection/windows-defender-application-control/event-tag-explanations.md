@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 07/13/2021
+ms.date: 03/24/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -37,14 +37,14 @@ Represents the type of signature which verified the image.
 | 6 | AppX / MSIX package catalog verified |
 | 7 | File was verified |
 
-## ValidatedSigningLevel
+## Requested and ValidatedSigningLevel
 
 Represents the signature level at which the code was verified.
 
 | ValidatedSigningLevel Value | Explanation |
 |---|----------|
 | 0 | Signing level hasn't yet been checked |
-| 1 | File is unsigned |
+| 1 | File is unsigned or has no signature that passes the active policies |
 | 2 | Trusted by Windows Defender Application Control policy |
 | 3 | Developer signed code |
 | 4 | Authenticode signed |
@@ -91,6 +91,56 @@ Represents why verification failed, or if it succeeded.
 | 26 | Explicitly denied by WADC policy |
 | 27 | The signing chain appears to be tampered/invalid |
 | 28 | Resource page hash mismatch |
+
+## Policy activation event Options
+
+The Application Control policy rule option values can be derived from the "Options" field in the Details section for successful [policy activation events](event-id-explanations.md#wdac-policy-activation-events). To parse the values, first convert the hex value to binary. To derive and parse these values, follow the below workflow.
+
+- Access Event Viewer.
+- Access the Code integrity 3099 event.
+- Access the details pane.
+- Identify the hex code listed in the "Options" field.
+- Convert the hex code to binary.
+
+:::image type="content" source="images/event-3099-options.png" alt-text="Event 3099 policy rule options.":::
+
+For a simple solution for converting hex to binary, follow these steps:
+
+1. Open the Calculator app.
+1. Select the menu icon. :::image type="icon" source="images/calculator-menu-icon.png" border="false":::
+1. Select **Programmer** mode.
+1. Select **HEX**. :::image type="icon" source="images/hex-icon.png" border="false":::
+1. Enter your hex code. For example, `80881000`.
+1. Switch to the **Bit Toggling Keyboard**. :::image type="icon" source="images/bit-toggling-keyboard-icon.png" border="false":::
+
+:::image type="content" source="images/calculator-with-hex-in-binary.png" alt-text="An example of the calculator app in programmer mode, with a hex code converted into binary.":::
+
+This view will provide the hex code in binary form, with each bit address shown separately.  The bit addresses start at 0 in the bottom right.  Each bit address correlates to a specific event policy-rule option.  If the bit address holds a value of 1, the setting is in the policy.
+
+Next, use the bit addresses and their values from the table below to determine the state of each [policy rule-option](select-types-of-rules-to-create.md#table-1-windows-defender-application-control-policy---policy-rule-options). For example, if the bit address of 16 holds a value of 1, then the **Enabled: Audit Mode (Default)** option is in the policy. This setting means that the policy is in audit mode.
+
+| Bit Address | Policy Rule Option |
+|-------|------|
+| 2 | `Enabled:UMCI` |
+| 3 | `Enabled:Boot Menu Protection` |
+| 4 | `Enabled:Intelligent Security Graph Authorization` |
+| 5 | `Enabled:Invalidate EAs on Reboot` |
+| 7 | `Required:WHQL` |
+| 10 | `Enabled:Allow Supplemental Policies` |
+| 11 | `Disabled:Runtime FilePath Rule Protection` |
+| 13 | `Enabled:Revoked Expired As Unsigned` |
+| 16 | `Enabled:Audit Mode (Default)` |
+| 17 | `Disabled:Flight Signing` |
+| 18 | `Enabled:Inherit Default Policy` |
+| 19 | `Enabled:Unsigned System Integrity Policy (Default)` |
+| 20 | `Enabled:Dynamic Code Security` |
+| 21 | `Required:EV Signers` |
+| 22 | `Enabled:Boot Audit on Failure` |
+| 23 | `Enabled:Advanced Boot Options Menu` |
+| 24 | `Disabled:Script Enforcement` |
+| 25 | `Required:Enforce Store Applications` |
+| 27 | `Enabled:Managed Installer`  |
+| 28 | `Enabled:Update Policy No Reboot` |
 
 ## Microsoft Root CAs trusted by Windows
 
