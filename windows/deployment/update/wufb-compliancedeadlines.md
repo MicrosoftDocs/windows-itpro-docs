@@ -44,4 +44,4 @@ For feature updates, the deadline and grace period start their countdown from th
 
 For quality updates, the deadline countdown starts from the time the update is *offered* (not downloaded or installed). The grace period countdown starts from the time of the pending restart. The device will try to download and install the update at a time based on your other download and installation policies (the default is to automatically download and install in in the background). When the pending restart time is reached, the device will notify the user and try to update outside of active hours. Once the effective deadline is reached, the device will try to restart during active hours.
 
-As deadline policy set, we no longer consider install time from AU policy anymore as AU option policy and deadline policy works independent with each other.
+As the deadline policy is set, we no longer consider the installation time from the automatic update policy because the automatic update policy and the deadline policy work independently of each other.
