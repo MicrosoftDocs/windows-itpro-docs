@@ -56,11 +56,11 @@
                   items:
                     - name: Windows quality update end user experience
                       href: operate/windows-autopatch-windows-quality-update-end-user-exp.md
-                    - name: Windows quality security update signals
+                    - name: Windows quality update signals
                       href: operate/windows-autopatch-windows-quality-update-signals.md
-                    - name: Windows quality security update communications
+                    - name: Windows quality update communications
                       href: operate/windows-autopatch-windows-quality-update-communications.md
-                    - name: Windows quality security update reports
+                    - name: Windows quality update reports
                       href: operate/windows-autopatch-windows-quality-update-reports-overview.md
                       items:
                         - name: Summary dashboard
