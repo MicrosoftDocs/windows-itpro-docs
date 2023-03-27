@@ -112,7 +112,7 @@ Use this setting to tell the CSP to immediately generate and store a new passwor
 
 <!-- Device-Actions-ResetPassword-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-This action invokes an immediate reset of the local administrator account password, ignoring the normal constraints such as PasswordLengthDays, etc
+This action invokes an immediate reset of the local administrator account password, ignoring the normal constraints such as PasswordLengthDays, etc.
 <!-- Device-Actions-ResetPassword-Editable-End -->
 
 <!-- Device-Actions-ResetPassword-DFProperties-Begin -->
@@ -333,7 +333,7 @@ This setting is ignored if the password is currently being stored in Azure.
 
 This setting is only honored when the Active Directory domain is at Windows Server 2016 Domain Functional Level or higher.
 
-- If this setting is enabled, and the Active Directory domain meets the DFL prerequisite, the password will be encrypted before before being stored in Active Directory.
+- If this setting is enabled, and the Active Directory domain meets the DFL prerequisite, the password will be encrypted before being stored in Active Directory.
 
 - If this setting is disabled, or the Active Directory domain does not meet the DFL prerequisite, the password will be stored as clear-text in Active Directory.
 
@@ -642,8 +642,8 @@ If not specified, this setting defaults to True.
 
 | Value | Description |
 |:--|:--|
-| false | Allow configured password expiriration timestamp to exceed maximum password age. |
-| true (Default) | Do not allow configured password expiriration timestamp to exceed maximum password age. |
+| false | Allow configured password expiration timestamp to exceed maximum password age. |
+| true (Default) | Do not allow configured password expiration timestamp to exceed maximum password age. |
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-AllowedValues-End -->
 
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-Examples-Begin -->
@@ -746,7 +746,7 @@ If not specified, this setting will default to 3 (Reset the password and logoff 
 | Value | Description |
 |:--|:--|
 | 1 | Reset password: upon expiry of the grace period, the managed account password will be reset. |
-| 3 (Default) | Reset the password and logoff the managed account: upon expiry of the grace period, the managed account password will be reset and any interactive logon sessions using the managed account will terminated. |
+| 3 (Default) | Reset the password and logoff the managed account: upon expiry of the grace period, the managed account password will be reset and any interactive logon sessions using the managed account will be terminated. |
 | 5 | Reset the password and reboot: upon expiry of the grace period, the managed account password will be reset and the managed device will be immediately rebooted. |
 <!-- Device-Policies-PostAuthenticationActions-AllowedValues-End -->
 
