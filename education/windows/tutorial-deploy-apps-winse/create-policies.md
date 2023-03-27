@@ -31,7 +31,8 @@ The base policy that you must target for Windows SE devices has a PolicyID of **
 > [!WARNING]
 > The maximum number of active policies is 32, which includes the Windows 11 SE base policy, the Microsoft vulnerable driver block list, and potentially other inbox policies. When planning your supplemental policy strategy, avoid adding too many. For example, avoid creating a supplemental policy per app, which can add up very quickly.
 
-After you create WDAC supplemental policies, you must sign them and deploy them through Intune.
+After you create WDAC supplemental policies, you must sign them and deploy them through Intune.\
+To create supplemental policies, download and install the [WDAC Policy Wizard][EXT-1] from a **non-Windows SE device**.
 
 The following video provides an overview and explains how to create supplemental policies for apps blocked by the Windows 11 SE base policy.
 
@@ -39,9 +40,9 @@ The following video provides an overview and explains how to create supplemental
 
 ### Create a supplemental policy for Win32 apps
 
-There are different ways to write a supplemental policy. The suggested method is to use [audit events][WIN-3], as they list the actions that Windows 11 SE would block. From the audit events, you can create a policy to allow those actions.
+There are different ways to write a supplemental policy. The suggested method is to use [audit events][WIN-3], as they list the actions that Windows 11 SE would block. From the audit events, you can create a policy to allow those actions.\
+From a non-Windows SE device with the WDAC Policy Wizard installed, follow these steps:
 
-1. On a **non-Windows SE device**, download, install, and launch the [WDAC Policy Wizard][EXT-1]
 1. Apply an audit mode WDAC Base policy. The WDAC Wizard includes a template policy called *WinSEPolicy.xml*, which is based on the Windows 11 SE base policy:
     - Open the **WDAC Wizard** and select **Policy Editor**
     - In the Policy Path to Edit field, browse for *%ProgramFiles%\WindowsApps\Microsoft.WDAC\** and select the file called *WinSEPolicy.xml*. Select **Next**
@@ -93,9 +94,9 @@ There are different ways to write a supplemental policy. The suggested method is
 
 ### Create a supplemental policy for UWP LOB apps
 
-UWP apps don't work out-of-box due to the Windows 11 SE Windows 11 SE base policy. You can create and deploy a supplemental policy using these steps:
+UWP apps don't work out-of-box due to the Windows 11 SE Windows 11 SE base policy.\
+From a non-Windows SE device with the WDAC Policy Wizard installed, you can create and deploy a supplemental policy using these steps:
 
-1. On a **non-Windows SE device**, download, install, and launch the [WDAC Policy Wizard][EXT-1]
 1. Open the **WDAC Wizard** and select **Policy Creator > Supplemental policy**
     - Choose a **Policy Name** and **Policy File Location**
     - In the **Base Policy** path to, browse for *%ProgramFiles%\WindowsApps\Microsoft.WDAC\** and select the     file called *WinSEPolicy.xml*. Select **Next**
