@@ -17,10 +17,10 @@ If you have Windows 11 SE devices that already have apps deployed through Intune
 
 ## Enrollment Status Page
 
-The Enrollment Status Page (ESP) is compatible with Windows 11 SE. However, due to the E Mode policy, devices can be blocked from completing enrollment if:
+The Enrollment Status Page (ESP) is compatible with Windows 11 SE. However, due to the Windows 11 SE base policy, devices can be blocked from completing enrollment if:
 
 1. You have the ESP configured to block device use until required apps are installed, and
-2. You deploy an app that is blocked by the E Mode policy, not installable via a managed installer (without more policies), and not allowed by any supplemental policies or AppLocker policies
+2. You deploy an app that is blocked by the Windows 11 SE base policy, not installable via a managed installer (without more policies), and not allowed by any supplemental policies or AppLocker policies
 
 For example, if you deploy a UWP LOB app but have deployed a supplemental policy to allow the app, ESP will fail.
 

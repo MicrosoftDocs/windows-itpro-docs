@@ -70,7 +70,7 @@ With the applications configured, you can now deploy students' and teachers' dev
 
 <!-- Reference links in article -->
 
-[EDU-1]: ../tutorial-deploy-apps-winse/index
+[EDU-1]: ../tutorial-deploy-apps-winse/index.md
 
 [MEM-1]: /mem/intune/apps/apps-win32-add
 

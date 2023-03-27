@@ -17,8 +17,8 @@ The following table details the two policy types to allow apps to run:
 
 | **Policy type** | **How it works** | **When should I use this policy?** | **Security risk** |
 |---|---|---|---|
-| WDAC supplemental policy | Allows apps meeting the rule criteria to run | For executables that the E Mode policy blocks. The blocked executables are visible from the Event Viewer in the [CodeIntegrity events](./troubleshoot.md). | Low |
-| AppLocker policy | Sets an app to be considered as a managed installer | Only for executables that do installations or updates, that the E Mode policy blocks. | High |
+| WDAC supplemental policy | Allows apps meeting the rule criteria to run | For executables that the Windows 11 SE base policy blocks. The blocked executables are visible from the Event Viewer in the [CodeIntegrity events](./troubleshoot.md). | Low |
+| AppLocker policy | Sets an app to be considered as a managed installer | Only for executables that do installations or updates, that the Windows 11 SE base policy blocks. | High |
 
 > [!NOTE]
 > The specifics of the policy you will need to create vary from app to app. Public documentation can help you determine which rules would be useful for your app.
@@ -28,9 +28,12 @@ The following table details the two policy types to allow apps to run:
 A *supplemental policy* can expand only one base policy, but multiple supplemental policies can expand the same base policy. When you use supplemental policies, the apps allowed by the base or its supplemental policies will be allowed to execute.\
 The base policy that you must target for Windows SE devices has a PolicyID of **{82443e1e-8a39-4b4a-96a8-f40ddc00b9f3}**.
 
+> [!WARNING]
+> The maximum number of active policies is 32, which includes the Windows 11 SE base policy, the Microsoft vulnerable driver block list, and potentially other inbox policies. When planning your supplemental policy strategy, avoid adding too many. For example, avoid creating a supplemental per app, which can add up very quickly.
+
 After you create WDAC supplemental policies, you must sign them and deploy them through Intune.
 
-In the following video, Jeffrey Sutherland provides an overview and explains how to create supplemental policies for apps blocked by the E Mode policy.
+The following video provides an overview and explains how to create supplemental policies for apps blocked by the Windows 11 SE base policy.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWReO]
 
@@ -39,7 +42,7 @@ In the following video, Jeffrey Sutherland provides an overview and explains how
 There are different ways to write a supplemental policy. The suggested method is to use [audit events][WIN-3], as they list the actions that Windows 11 SE would block. From the audit events, you can create a policy to allow those actions.
 
 1. On a **non-Windows SE device**, download, install, and launch the [WDAC Policy Wizard][EXT-1]
-1. Apply an audit mode WDAC Base policy. The WDAC Wizard includes a template policy called *WinSEPolicy.xml*, which is based on the E Mode policy:
+1. Apply an audit mode WDAC Base policy. The WDAC Wizard includes a template policy called *WinSEPolicy.xml*, which is based on the Windows 11 SE base policy:
     - Open the **WDAC Wizard** and select **Policy Editor**
     - In the Policy Path to Edit field, browse for *%ProgramFiles%\WindowsApps\Microsoft.WDAC\** and select the file called *WinSEPolicy.xml*. Select **Next**
       :::image type="content" source="images/wdac-winsepolicy.png" alt-text="WDAC wizard - creation of a policy targeting the base WinSEPolicy.xml policy":::
@@ -62,10 +65,10 @@ There are different ways to write a supplemental policy. The suggested method is
    - Check the event log **AppLocker** > **MSI and Script** for any events
        - If any events are shown, you can use the **WDAC Wizard** to edit the policy and add more rules
        - Alternatively, you can save all events to *.evtx* file and create a policy from audit events, but browse for the saved *.evtx* file rather than parsing events from the system Event Viewer
-1. Convert the policy created in the previous step to a supplemental policy, specifying the E Mode audit policy you created in the first step as its *base*
+1. Convert the policy created in the previous step to a supplemental policy, specifying the Base audit policy you created in the first step as its base
 
    ```PowerShell
-   Set-CiPolicyIdInfo -FilePath "<Path to.xml file from step #4>" -BasePolicyToSupplementPath "<Path to the E Mode .xml created from step #2>"
+   Set-CiPolicyIdInfo -FilePath "<Path to.xml file from step #4>" -BasePolicyToSupplementPath "<Path to the WDAC Base policy .xml created from step #2>"
    ```
 
 1. From an elevated PowerShell session, run the following command to activate the policy:
@@ -90,7 +93,7 @@ There are different ways to write a supplemental policy. The suggested method is
 
 ### Create a supplemental policy for UWP LOB apps
 
-UWP apps don't work out-of-box due to the Windows 11 SE E Mode policy. You can create and deploy a supplemental policy using these steps:
+UWP apps don't work out-of-box due to the Windows 11 SE Windows 11 SE base policy. You can create and deploy a supplemental policy using these steps:
 
 1. On a **non-Windows SE device**, download, install, and launch the [WDAC Policy Wizard][EXT-1]
 1. Open the **WDAC Wizard** and select **Policy Creator > Supplemental policy**
@@ -107,7 +110,7 @@ UWP apps don't work out-of-box due to the Windows 11 SE E Mode policy. You can c
     - Select **Create Rule**
     - Select **Next**
 1. The policy should be created and output an *.xml* and *.cip* files to the policy file location specified earlier
-1. The policy isn't yet targeting the right base policy. Run the following PowerShell command to set the base policy to the Windows 11 SE E Mode policy:
+1. The policy isn't yet targeting the right base policy. Run the following PowerShell command to set the base policy to the Windows 11 SE Windows 11 SE base policy:
 
     ```PowerShell
     Set-CiPolicyIdInfo -FilePath "<Path to.xml file from previous step>" -SupplementsBasePolicyId "{82443e1e-8a39-4b4a-96a8-f40ddc00b9f3}"
