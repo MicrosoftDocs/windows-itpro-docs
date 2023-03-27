@@ -60,7 +60,8 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 
 - C or D week releases (meaning the third or fourth week of the month)
 - Preview updates
-- Preview CUs
+- Preview CU
+- LCU preview
 
 > [!Important]
 > Starting in April 2023, all **optional non-security preview releases** will be released on the fourth Tuesday of the month. This change in release cadence gives admins a consistent time cycle for testing and validating fixes and features.
