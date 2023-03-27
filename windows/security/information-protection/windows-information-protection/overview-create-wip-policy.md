@@ -4,9 +4,9 @@ description: Microsoft Intune helps you create and deploy your enterprise data p
 ms.reviewer: 
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: aaroncz
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: conceptual
 ms.date: 03/11/2019
 ms.technology: itpro-security

@@ -44,9 +44,9 @@ When you sign up for a Minecraft Education trial, or purchase a subscription, Mi
 
 To purchase direct licenses:
 
-1. Go to [https://education.minecraft.net/](https://education.minecraft.net/) and select **How to Buy** in the top navigation bar
-1. Scroll down and select **Buy Now** under **Direct Purchase**
-1. In the *purchase* page, sign in with an account that has *Billing Admin* privileges in your organization
+1. Go to [https://education.minecraft.net/licensing](https://education.minecraft.net/licensing)
+1. Under **Direct Purchase**, select **Buy Now**
+1. Sign in to the Admin Center purchase page with an account that has *Billing Admin* privileges in your organization
 1. If necessary, fill in any requested organization or payment information
 1. Select the quantity of licenses you'd like to purchase and select **Place Order**
 1. After you've purchased licenses, you'll need to [assign Minecraft Education licenses to your users](#assign-minecraft-education-licenses)
@@ -112,7 +112,9 @@ If you're using Microsoft Intune to manage your devices, follow these steps to d
 1. Under *App type*, select **Microsoft Store app (new)** and choose **Select**
 1. Select **Search the Microsoft Store app (new)** and search for **Minecraft Education**
 1. Select the app and choose **Select**
-1. On the *App information* screen, select **Next**
+1. On the *App information* screen, select the *install behavior*, then select **Next**
+    - *System* means install for all users (recommended for most scenarios)
+    - *User* means only install for the targeted user or current user of a device
 1. On the *Assignments* screen, choose how you want to target the installation of Minecraft Education
     - *Required* means that Intune installs the app without user interaction
     - *Available* enables Minecraft Education in the Company Portal, where users can install the app on-demand

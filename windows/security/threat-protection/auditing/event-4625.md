@@ -157,40 +157,12 @@ This event generates on domain controllers, member servers, and workstations.
 
 -   **Failure Reason** \[Type = UnicodeString\]**:** textual explanation of **Status** field value. For this event, it typically has "**Account locked out**" value.
 
--   **Status** \[Type = HexInt32\]**:** the reason why logon failed. For this event, it typically has "**0xC0000234**" value. The most common status codes are listed in Table 12. Windows logon status codes.
+-   **Status** \[Type = HexInt32\]**:** the reason why logon failed. For this event, it typically has "**0xC0000234**" value.
 
-    <span id="_Ref433822658" class="anchor"></span>**Table 12: Windows logon status codes.**
-
-    | Status\\Sub-Status Code | Description                                                                      |
-    |-------------------------|------------------------------------------------------------------------------------------------------|
-    | 0XC000005E              | There are currently no logon servers available to service the logon request.                         |
-    | 0xC0000064              | User logon with misspelled or bad user account                                                       |
-    | 0xC000006A              | User logon with misspelled or bad password                                                           |
-    | 0XC000006D              | The cause is either a bad username or authentication information                                   |
-    | 0XC000006E              | Indicates a referenced user name and authentication information are valid, but some user account restriction has prevented successful authentication (such as time-of-day restrictions).     |
-    | 0xC000006F              | User logon outside authorized hours                                                                  |
-    | 0xC0000070              | User logon from unauthorized workstation                                                             |
-    | 0xC0000071              | User logon with expired password                                                                     |
-    | 0xC0000072              | User logon to account disabled by administrator                                                      |
-    | 0XC00000DC              | Indicates the Sam Server was in the wrong state to perform the desired operation.                    |
-    | 0XC0000133              | Clocks between DC and other computer too far out of sync                                             |
-    | 0XC000015B              | The user has not been granted the requested logon type (also called the *logon right*) at this machine             |
-    | 0XC000018C              | The logon request failed because the trust relationship between the primary domain and the trusted domain failed.      |
-    | 0XC0000192              | An attempt was made to logon, but the **Netlogon** service was not started.                                            |
-    | 0xC0000193              | User logon with expired account                                                                      |
-    | 0XC0000224              | User is required to change password at next logon                                                    |
-    | 0XC0000225              | Evidently a bug in Windows and not a risk                                                            |
-    | 0xC0000234              | User logon with account locked                                                                       |
-    | 0XC00002EE              | Failure Reason: An Error occurred during Logon                                                       |
-    | 0XC0000413              | Logon Failure: The machine you are logging on to is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine. |
-    | 0x0                     | Status OK.  |
+-   **Sub Status** \[Type = HexInt32\]**:** additional information about logon failure.
 
 > [!NOTE]
-> To see the meaning of other status or substatus codes, you might also check for status code in the Windows header file ntstatus.h in Windows SDK.
-
-More information: <https://dev.windows.com/en-us/downloads>
-
--   **Sub Status** \[Type = HexInt32\]**:** additional information about logon failure. The most common substatus codes listed in the "Table 12. Windows logon status codes.".
+> For more information about various Status or Sub Status codes, see [NTSTATUS Values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55).
 
 **Process Information:**
 

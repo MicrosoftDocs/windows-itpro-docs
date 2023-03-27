@@ -30,7 +30,7 @@ The Windows 10 Enterprise LTSC 2021 release includes the cumulative enhancements
 ## Lifecycle
 
 > [!IMPORTANT]
-> Windows 10 Enterprise LTSC 2021 has a 5 year lifecycle ([IoT](/windows/iot/product-family/what's-new-in-windows-10-iot-enterprise-21h2) continues to have a [10 year lifecycle](/windows/iot/product-family/product-lifecycle?tabs=2021)). Thus, the LTSC 2021 release is not a direct replacement for LTSC 2019, which has a 10 year lifecycle.
+> Windows 10 Enterprise LTSC 2021 has a 5 year lifecycle ([IoT Enterprise LTSC](/windows/iot/iot-enterprise/whats-new/windows-iot-enterprise-ltsc) continues to have a [10 year lifecycle](/lifecycle/products/windows-10-iot-enterprise-ltsc-2021)). Thus, the LTSC 2021 release is not a direct replacement for LTSC 2019, which has a 10 year lifecycle.
 
 For more information about the lifecycle for this release, see [The next Windows 10 Long Term Servicing Channel (LTSC) release](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-next-windows-10-long-term-servicing-channel-ltsc-release/ba-p/2147232).
 
@@ -227,7 +227,7 @@ Microsoft Edge Browser support is now included in-box.
 
 ### Microsoft Edge kiosk mode
 
-Microsoft Edge kiosk mode is available for LTSC releases starting in Windows 10 Enterprise 2021 LTSC and [Windows 10 IoT Enterprise 2021 LTSC](/windows/iot/product-family/what's-new-in-windows-10-iot-enterprise-21h2).
+Microsoft Edge kiosk mode is available for LTSC releases starting in Windows 10 Enterprise 2021 LTSC and [Windows 10 IoT Enterprise 2021 LTSC](/windows/iot/iot-enterprise/whats-new/windows-iot-enterprise-ltsc).
 
 Microsoft Edge kiosk mode offers two lockdown experiences of the browser so organizations can create, manage, and provide the best experience for their customers. The following lockdown experiences are available:
 - Digital/Interactive Signage experience - Displays a specific site in full-screen mode.

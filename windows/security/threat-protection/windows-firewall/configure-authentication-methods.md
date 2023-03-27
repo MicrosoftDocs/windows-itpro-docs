@@ -32,19 +32,11 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
    1.  **Default**. Selecting this option tells the computer to use the authentication method currently defined by the local administrator in Windows Defender Firewall or by Group Policy as the default.
 
-   2.  **Computer and User (using Kerberos V5)**. Selecting this option tells the computer to use and require authentication of both the computer and the currently logged-on user by using their domain credentials.
+   2.  **Computer certificate from this certification authority**. Selecting this option and entering the identification of a certification authority (CA) tells the computer to use and require authentication by using a certificate that is issued by the selected CA. If you also select **Accept only health certificates**, then only certificates that include the system health authentication extended key usage (EKU) typically provided in a Network Access Protection (NAP) infrastructure can be used for this rule.
 
-   3.  **Computer (using Kerberos V5)**. Selecting this option tells the computer to use and require authentication of the computer by using its domain credentials. This option works with other computers that can use IKE v1, including earlier versions of Windows.
-
-   4.  **User (using Kerberos V5)**. Selecting this option tells the computer to use and require authentication of the currently signed-in user by using their domain credentials.
-
-   5.  **Computer certificate from this certification authority**. Selecting this option and entering the identification of a certification authority (CA) tells the computer to use and require authentication by using a certificate that is issued by the selected CA. If you also select **Accept only health certificates**, then only certificates that include the system health authentication extended key usage (EKU) typically provided in a Network Access Protection (NAP) infrastructure can be used for this rule.
-
-   6.  **Advanced**. Click **Customize** to specify a custom combination of authentication methods required for your scenario. You can specify both a **First authentication method** and a **Second authentication method**.
+   3.  **Advanced**. Click **Customize** to specify a custom combination of authentication methods required for your scenario. You can specify both a **First authentication method** and a **Second authentication method**.
 
        The first authentication method can be one of the following methods:
-
-       -   **Computer (Kerberos V5)**. Selecting this option tells the computer to use and require authentication of the computer by using its domain credentials. This option works with other computers that can use IKE v1, including earlier versions of Windows.
 
        -   **Computer (NTLMv2)**. Selecting this option tells the computer to use and require authentication of the computer by using its domain credentials. This option works only with other computers that can use AuthIP. User-based authentication using Kerberos V5 isn't supported by IKE v1.
 
@@ -55,8 +47,6 @@ To complete these procedures, you must be a member of the Domain Administrators 
        If you select **First authentication is optional**, then the connection can succeed even if the authentication attempt specified in this column fails.
 
        The second authentication method can be one of the following methods:
-
-       -   **User (Kerberos V5)**. Selecting this option tells the computer to use and require authentication of the currently signed-in user by using their domain credentials. This authentication method works only with other computers that can use AuthIP. User-based authentication using Kerberos V5 isn't supported by IKE v1.
 
        -   **User (NTLMv2)**. Selecting this option tells the computer to use and require authentication of the currently signed-in user by using their domain credentials, and uses the NTLMv2 protocol instead of Kerberos V5. This authentication method works only with other computers that can use AuthIP. User-based authentication using Kerberos V5 isn't supported by IKE v1.
 

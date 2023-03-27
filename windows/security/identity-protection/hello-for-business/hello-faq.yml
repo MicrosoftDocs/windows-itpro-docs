@@ -8,7 +8,7 @@ metadata:
     - highpri
     - tier1
   ms.topic: faq
-  ms.date: 01/06/2023
+  ms.date: 03/09/2023
   appliesto: 
     - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 
@@ -109,7 +109,7 @@ sections:
           - The PIN 9630 has a constant delta of (7,7,7), so it isn't allowed
           - The PIN 1593 has a constant delta of (4,4,4), so it isn't allowed
           - The PIN 7036 has a constant delta of (3,3,3), so it isn't allowed
-          - The PIN 1231 doesn't have a constant delta (1,1,8), so it's allowed
+          - The PIN 1231 doesn't have a constant delta (1,1,2), so it's allowed
           - The PIN 1872 doesn't have a constant delta (7,9,5), so it's allowed
           
           This check prevents repeating numbers, sequential numbers, and simple patterns. It always results in a list of 100 disallowed PINs (independent of the PIN length). This algorithm doesn't apply to alphanumeric PINs.
@@ -238,7 +238,7 @@ sections:
           - attempting to access on-premises resources secured by Active Directory
       - question: Can I use RDP/VDI with Windows Hello for Business cloud Kerberos trust?
         answer: |
-          Windows Hello for Business cloud Kerberos trust can't be used as a supplied credential with RDP/VDI. Similar to key trust, cloud Kerberos trust can be used for RDP with [remote credential guard][/windows/security/identity-protection/remote-credential-guard] or if a [certificate is enrolled into Windows Hello for Business](hello-deployment-rdp-certs.md) for this purpose.
+          Windows Hello for Business cloud Kerberos trust can't be used as a supplied credential with RDP/VDI. Similar to key trust, cloud Kerberos trust can be used for RDP with [Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard) or if a [certificate is enrolled into Windows Hello for Business](hello-deployment-rdp-certs.md) for this purpose.
       - question: Do all my domain controllers need to be fully patched as per the prerequisites for me to use Windows Hello for Business cloud Kerberos trust?
         answer: |
           No, only the number necessary to handle the load from all cloud Kerberos trust devices.

@@ -20,10 +20,12 @@ items:
         href: windows-11-se-faq.yml
     - name: Windows in S Mode
       items:
-      - name: Test Windows 10 in S mode on existing Windows 10 education devices
-        href: test-windows10s-for-edu.md
-      - name: Enable Windows 10 in S mode on Surface Go devices
-        href: enable-s-mode-on-surface-go-devices.md
+      - name: Overview
+        href: /windows/deployment/s-mode?context=/education/context/context
+      - name: Switch Windows edition from S mode
+        href: /windows/deployment/windows-10-pro-in-s-mode?context=/education/context/context
+      - name: Deploy Win32 apps to S Mode devices
+        href: /windows/security/threat-protection/windows-defender-application-control/lob-win32-apps-on-s?context=/education/context/context
     - name: Windows 10 editions for education customers
       href: windows-editions-for-education-customers.md
     - name: Considerations for shared and guest devices
@@ -52,14 +54,8 @@ items:
       href: get-minecraft-for-education.md
     - name: Use the Set up School PCs app
       href: use-set-up-school-pcs-app.md
-    - name: Change Windows edition
-      items: 
-      - name: Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
-        href: s-mode-switch-to-edu.md
-      - name: Change to Windows 10 Pro Education from Windows 10 Pro
-        href: change-to-pro-education.md
-      - name: Upgrade Windows Home to Windows Education on student-owned devices
-        href: change-home-to-edu.md
+    - name: Upgrade Windows Home to Windows Education on student-owned devices
+      href: change-home-to-edu.md
     - name: Migrate from Chromebook to Windows
       items: 
         - name: Chromebook migration guide
