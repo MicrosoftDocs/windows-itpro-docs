@@ -18,6 +18,7 @@ ms.localizationpriority: medium
     - The Azure subscription
     - The Log Analytics workspace
 1. The initial setup can take up to 24 hours. During this time, the **Windows** tab will display that it's **Waiting for Windows Update for Business reports data**.
+    - Enrolling into Windows Update for Business reports doesn't influence the rate that required data is uploaded from devices. Device connectivity to the internet and how active the device is influences how long it will take before the device appears in reporting. Devices that are active and connected to the internet daily can expect to be fully uploaded within one week (usually less than 72 hours). Devices that are less active can take up to two weeks before data is fully available. 
 1. After the initial setup is complete, the **Windows** tab will display your Windows Update for Business reports data in the charts.
    > [!Note]
    > The device counts in the **Windows** tab may vary from the **Microsoft 365 Apps** tab since their requirements are different.  
