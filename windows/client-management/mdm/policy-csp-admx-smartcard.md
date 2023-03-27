@@ -599,7 +599,7 @@ This policy setting allows you to control whether elliptic curve cryptography (E
 
 <!-- FilterDuplicateCerts-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy settings lets you configure if all your valid logon certificates are displayed.
+This policy setting lets you configure if all your valid logon certificates are displayed.
 
 During the certificate renewal period, a user can have multiple valid logon certificates issued from the same certificate template. This can cause confusion as to which certificate to select for logon. The common case for this behavior is when a certificate is renewed and the old one has not yet expired. Two certificates are determined to be the same if they are issued from the same template with the same major version and they are for the same user (determined by their UPN).
 
@@ -796,7 +796,7 @@ By default the user principal name (UPN) is displayed in addition to the common 
 
 - If you enable this policy setting or do not configure this setting, then the subject name will be reversed.
 
-If you disable , the subject name will be displayed as it appears in the certificate.
+If you disable, the subject name will be displayed as it appears in the certificate.
 <!-- ReverseSubject-Description-End -->
 
 <!-- ReverseSubject-Editable-Begin -->
