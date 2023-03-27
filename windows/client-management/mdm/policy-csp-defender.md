@@ -702,6 +702,10 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 
 <!-- AllowScanningNetworkFiles-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy setting allows you to configure real-time scanning for files that are accessed over the network. It is recommended to enable this setting.
+
+- If you enable this setting or do not configure this setting, network files will be scanned.
+- If you disable this setting, network files will not be scanned.
 <!-- AllowScanningNetworkFiles-Editable-End -->
 
 <!-- AllowScanningNetworkFiles-DFProperties-Begin -->
