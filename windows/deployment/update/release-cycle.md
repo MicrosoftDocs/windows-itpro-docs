@@ -50,7 +50,7 @@ Monthly security update releases are available through the following channels:
 - Windows Server Update Services (WSUS)
 - The [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx)
 
-Many update management tools, such as [Microsoft Configuration Manager](/mem/configmgr/), rely on these channels for update deployment.
+Many update management tools, such as [Microsoft Configuration Manager](/mem/configmgr/) and [Microsoft Intune](/mem/intune/), rely on these channels for update deployment.
 
 ## Optional non-security preview release
 
