@@ -45,14 +45,13 @@ This setting must be turned on to avoid a "lack of permissions" error when we in
 | ----- | ----- |
 | Not ready | Allow access to unlicensed admins should be turned on. Without this setting enabled, errors can occur when we try to access your Azure AD organization for service. You can safely enable this setting without worrying about security implications. The scope of access is defined by the roles assigned to users, including our operations staff.<p><p>For more information, see [Unlicensed admins](/mem/intune/fundamentals/unlicensed-admins). |
 
-### Windows 10 and later update rings
+### Update rings for Windows 10 or later
 
-Your "Windows 10 and later update ring" policy in Intune must not target any Windows Autopatch devices.
+Your "Update rings for Windows 10 or later" policy in Intune must not target any Windows Autopatch devices.
 
 | Result | Meaning |
 | ----- | ----- |
-| Not ready | You have an "update ring" policy that targets all devices, all users, or both.<p>To resolve, change the policy to use an assignment that targets a specific Azure Active Directory (AD) group that doesn't include any Windows Autopatch devices.</p><p>For more information, see [Manage Windows 10 and later software updates in Intune](/mem/intune/protect/windows-update-for-business-configure).</p> |
-| Advisory | Both the **Modern Workplace Devices - All** and **Modern Workplace - All** Azure AD groups are groups that we create after you enroll in Windows Autopatch.<p>You can continue with enrollment. However, you must resolve the advisory prior to deploying your first device. To resolve the advisory, see [Maintain the Windows Autopatch environment](../operate/windows-autopatch-maintain-environment.md).</p>|
+| Advisory |  You have an "update ring" policy that targets all devices, all users, or both. Windows Autopatch will also create our own update ring policies during enrollment. To avoid conflicts with Windows Autopatch devices, we'll exclude our devices group from your existing update ring policies that target all devices, all users, or both. You must consent to this change when you go to enroll your tenant.</p>|
 
 ## Azure Active Directory settings
 
