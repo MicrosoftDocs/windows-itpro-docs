@@ -60,12 +60,12 @@ Use the Event Viewer to see if a supplemental policy is deployed correctly. Thes
     > [!NOTE]
     > **{82443e1e-8a39-4b4a-96a8-f40ddc00b9f3}** is the base policy, which is what restricts most third-party apps from running. If you see another policy ID, it's worth taking note of that.
 
-    Alternatively you can use `cidiag.exe /stop`, which parses and copies all the relevant events to a text file.
+    Alternatively you can use `cidiag.exe /stop`, which copies all potentially relevant logs and policy files to a folder. The command also parses the critical events from the **CodeIntegrity** and **AppLocker** logs to a text file.
 
 ## AppLocker policy validation
 
 > [!NOTE]
-> The validation process described below requires access to PowerShell, which is not available on Windows SE devices. The process can be used to validate the policy from non-SE devices.
+> The validation process described below requires the deployment of a PowerShell script from Intune to the Windows SE devices. This script will be used to query the AppLocker policy and validate that the policy is configured correctly. The script will also be used to validate the AppLocker service status.
 
 You can query the existing AppLocker policy via PowerShell running from a device.
 

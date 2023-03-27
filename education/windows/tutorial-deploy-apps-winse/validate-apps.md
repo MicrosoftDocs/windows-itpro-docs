@@ -27,7 +27,7 @@ Application validation consists of the following steps:
 
 Application installation depends on two factors:
 
-- When the managed installer policies are applied to the device
+- When the managed installer policies are applied to the device. These policies are automatically applied to Windows SE devices when they are enrolled in Intune
 - When the apps are deployed to a device
 
 > [!IMPORTANT]
@@ -143,15 +143,11 @@ Before moving on to the next section, ensure that you've completed the following
 Select one of the following options to learn the next steps:
 
 - If the apps don't work as expected, you must create and deploy WDAC or AppLocker policies to allow the apps to run
+  > [!div class="nextstepaction"]
+  > [Next: Create policies>](create-policies.md)
 - If the applications you are deploying don't have any issues, you can skip to important considerations when deploying apps and policies
-
-> [!div class="op_single_selector"]
-> - [Create policies](create-policies.md)
-> - [Important deployment considerations](considerations.md)
-
-> [!div class="nextstepaction"]
-> [Next: Create policies>](create-policies.md) [Next: Important deployment considerations>](considerations.md)
-
+  > [!div class="nextstepaction"]
+  > [Next: Important deployment considerations>](considerations.md)
 
 [M365-1]: /microsoft-365/education/deploy/microsoft-store-for-education
 
