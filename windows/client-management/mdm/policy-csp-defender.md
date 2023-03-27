@@ -4,7 +4,7 @@ description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 03/27/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -697,12 +697,7 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 <!-- AllowScanningNetworkFiles-OmaUri-End -->
 
 <!-- AllowScanningNetworkFiles-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to configure scanning for network files. It is recommended that you do not enable this setting.
-
-- If you enable this setting, network files will be scanned.
-
-- If you disable or do not configure this setting, network files will not be scanned.
+<!-- Description-Source-Manual-Forced -->
 <!-- AllowScanningNetworkFiles-Description-End -->
 
 <!-- AllowScanningNetworkFiles-Editable-Begin -->

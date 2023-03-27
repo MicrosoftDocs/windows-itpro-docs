@@ -15,11 +15,7 @@ ms.topic: reference
 
 # Policies in Policy CSP supported by Windows 10 Team
 
-This article lists the policies in Policy CSP that are applicable for Windows 10 Team.
-
-## Accounts
-
-- [AllowMicrosoftAccountConnection](policy-csp-accounts.md#allowmicrosoftaccountconnection)
+This article lists the policies in Policy CSP that are applicable for the Surface Hub operating system, **Windows 10 Team**.
 
 ## ApplicationDefaults
 

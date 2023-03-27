@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Smartcard Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 03/27/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -798,7 +798,7 @@ By default the user principal name (UPN) is displayed in addition to the common 
 
 If you enable this policy setting or do not configure this setting, then the subject name will be reversed.
 
-If you disable, the subject name will be displayed as it appears in the certificate.
+If you disable , the subject name will be displayed as it appears in the certificate.
 <!-- ReverseSubject-Description-End -->
 
 <!-- ReverseSubject-Editable-Begin -->

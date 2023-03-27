@@ -4,7 +4,7 @@ description: Learn more about the SurfaceHub CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/24/2023
+ms.date: 03/27/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,7 +36,7 @@ The following list shows the SurfaceHub configuration service provider nodes:
     - [ExchangeModernAuthEnabled](#deviceaccountexchangemodernauthenabled)
     - [ExchangeServer](#deviceaccountexchangeserver)
     - [Password](#deviceaccountpassword)
-    - [PasswordRotationPeriod](#deviceaccountpasswordrotationperiod)
+    - [PasswordRotationEnabled](#deviceaccountpasswordrotationenabled)
     - [SipAddress](#deviceaccountsipaddress)
     - [UserName](#deviceaccountusername)
     - [UserPrincipalName](#deviceaccountuserprincipalname)
@@ -482,53 +482,53 @@ Password for the device account. Get is allowed here, but will always return a b
 
 <!-- Device-DeviceAccount-Password-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Begin -->
-### DeviceAccount/PasswordRotationPeriod
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Begin -->
+### DeviceAccount/PasswordRotationEnabled
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Applicability-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Applicability-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Applicability-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-OmaUri-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-OmaUri-Begin -->
 ```Device
-./Vendor/MSFT/SurfaceHub/DeviceAccount/PasswordRotationPeriod
+./Vendor/MSFT/SurfaceHub/DeviceAccount/PasswordRotationEnabled
 ```
-<!-- Device-DeviceAccount-PasswordRotationPeriod-OmaUri-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-OmaUri-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Description-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Description-Begin -->
 <!-- Description-Source-DDF -->
 Specifies whether automatic password rotation is enabled. If you enforce a password expiration policy on the device account, use this setting to allow the device to manage its own password by changing it frequently, without requiring you to manually update the account information when the password expires. You can reset the password at any time using Active Directory (or Azure AD).
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Description-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Description-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Editable-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Editable-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Editable-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-DFProperties-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
 |:--|:--|
 | Format | int |
 | Access Type | Get, Replace |
-<!-- Device-DeviceAccount-PasswordRotationPeriod-DFProperties-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-DFProperties-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-AllowedValues-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-AllowedValues-Begin -->
 **Allowed values**:
 
 | Value | Description |
 |:--|:--|
 | 0 | Password rotation enabled. |
 | 1 | Disabled. |
-<!-- Device-DeviceAccount-PasswordRotationPeriod-AllowedValues-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-AllowedValues-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Examples-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Examples-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Examples-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-End -->
 
 <!-- Device-DeviceAccount-SipAddress-Begin -->
 ### DeviceAccount/SipAddress

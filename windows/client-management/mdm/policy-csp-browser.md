@@ -4,7 +4,7 @@ description: Learn more about the Browser Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 03/27/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2901,7 +2901,7 @@ Don't enable both this setting and the Keep favorites in sync between Internet E
 
 <!-- PreventAccessToAboutFlagsInMicrosoftEdge-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy settings lets you decide whether employees can access the about:flags page, which is used to change developer settings and to enable experimental features.
+This policy setting lets you decide whether employees can access the about:flags page, which is used to change developer settings and to enable experimental features.
 
 - If you enable this policy setting, employees can't access the about:flags page.
 
