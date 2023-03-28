@@ -31,11 +31,9 @@ PCs that meet the Windows 7 or later [certification requirements](/previous-vers
   - [<a href="" id="bkmk-wtgroam"></a>Roaming with Windows To Go](#roaming-with-windows-to-go)
   - [<a href="" id="wtg-prep-intro"></a>Prepare for Windows To Go](#prepare-for-windows-to-go)
   - [<a href="" id="wtg-hardware"></a>Hardware considerations for Windows To Go](#hardware-considerations-for-windows-to-go)
-  - [Other resources](#additional-resources)
-  - [Related articles](#related-topics)
 
 > [!NOTE]
-> Windows To Go is not supported on Windows RT.
+> Windows To Go isn't supported on Windows RT.
 
 ## <a href="" id="bkmk-wtgdif"></a>Differences between Windows To Go and a typical installation of Windows
 
@@ -157,7 +155,7 @@ In addition to the USB boot support in the BIOS, the Windows 10 image on your Wi
 |UEFI BIOS|32-bit|32-bit only|
 |UEFI BIOS|64-bit|64-bit only|
 
-## Additional resources
+## Other resources
 
 - [Windows 10 forums](https://go.microsoft.com/fwlink/p/?LinkId=618949)
 - [Windows To Go Step by Step Wiki](https://go.microsoft.com/fwlink/p/?LinkId=618950)
