@@ -28,7 +28,7 @@ This article describes how to debug and troubleshoot app and script failures whe
 
 Before debugging and troubleshooting WDAC issues, you must collect information from a device exhibiting the problem behavior. Run the following commands from an elevated PowerShell window to collect the diagnostic information you may need:
 
-1. Gather general WDAC diagnostic data and copy it to %userprofile%\AppData\Local\Temp\DiagOutputDir\CiDiag by running:
+1. Gather general WDAC diagnostic data and copy it to %userprofile%\AppData\Local\Temp\DiagOutputDir\CiDiag:
 
     ```powershell
     cidiag.exe /stop
@@ -41,22 +41,47 @@ Before debugging and troubleshooting WDAC issues, you must collect information f
     - AppLocker event logs
     - Other event logs that may contain useful information from other Windows apps and services
 
-2. Save the device's System Information to the CiDiag folder by running `msinfo32.exe /report $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\SystemInformation.txt`.
-3. Use [CiTool.exe](citool-commands.md) to inventory the list of WDAC policies on the device by running `citool.exe -lp -json > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\CiToolOutput.json`. Skip this step if CiTool.exe is not present in your version of Windows.
-4. Export AppLocker registry key data to the CiDiag folder by running the following commands:
+2. Save the device's System Information to the CiDiag folder:
 
-    `reg.exe query HKLM\Software\Policies\Microsoft\Windows\SrpV2 /s > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerRegistry.txt`<br>
-    `reg.exe query HKLM\Software\Policies\Microsoft\Windows\AppidPlugins /s >> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerRegistry.txt`<br>
-    `reg.exe query HKLM\System\CurrentControlSet\Control\Srp\ /s >> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerRegistry.txt`
+    ```powershell
+    msinfo32.exe /report $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\SystemInformation.txt
+    ```
 
-5. Copy any AppLocker policy files from  %windir%System32\AppLocker to the CiDiag folder by running `Copy-Item -Path $env:windir\System32\AppLocker -Destination $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\ -Recurse -Force`
-6. Collect file information for the AppLocker policy files collected in the previous step by running `Get-ChildItem -Path $env:windir\System32\AppLocker\ -Recurse | select Mode,LastWriteTime,CreationTime,Length,Name >> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerPolicyFiles.txt`
-7. Export the effective AppLocker policy by running `Get-AppLockerPolicy -xml -Effective > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLocker.xml`
-8. Collect AppLocker services configuration and state information by running the following commands:
+3. Use [CiTool.exe](citool-commands.md) to inventory the list of WDAC policies on the device. Skip this step if CiTool.exe is not present in your version of Windows.
 
-    `sc.exe query appid ; sc.exe query appidsvc; sc.exe query applockerfltr > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt`<br>
-    `>> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt`<br>
-    `>> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt`
+    ```powershell
+    citool.exe -lp -json > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\CiToolOutput.json
+    ````
+
+4. Export AppLocker registry key data to the CiDiag folder:
+
+    ```powershell
+    reg.exe query HKLM\Software\Policies\Microsoft\Windows\SrpV2 /s > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerRegistry.txt; reg.exe query HKLM\Software\Policies\Microsoft\Windows\AppidPlugins /s >> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerRegistry.txt; reg.exe query HKLM\System\CurrentControlSet\Control\Srp\ /s >> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerRegistry.txt
+    ```
+
+5. Copy any AppLocker policy files from  %windir%System32\AppLocker to the CiDiag folder:
+
+    ```powershell
+    Copy-Item -Path $env:windir\System32\AppLocker -Destination $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\ -Recurse -Force -ErrorAction Ignore
+    ```
+
+6. Collect file information for the AppLocker policy files collected in the previous step:
+
+    ```powershell
+    Get-ChildItem -Path $env:windir\System32\AppLocker\ -Recurse | select Mode,LastWriteTime,CreationTime,Length,Name >> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerPolicyFiles.txt
+    ```
+
+7. Export the effective AppLocker policy:
+
+    ```powershell
+    Get-AppLockerPolicy -xml -Effective > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLocker.xml
+    ```
+
+8. Collect AppLocker services configuration and state information:
+
+    ```powershell
+    sc.exe query appid > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt; sc.exe query appidsvc >> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt; sc.exe query applockerfltr >> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt
+    ```
 
 ### Core WDAC event logs
 
@@ -102,12 +127,12 @@ Most WDAC-related issues, including app and script failures, can be diagnosed us
 
 ## 3 - Resolve common problems
 
-### A file was blocked that you want to allow
+### Issue: A file was blocked that you want to allow
 
 - Use data from the core WDAC event logs to add rules to allow the blocked file.
 - Re-deploy the file or app using a managed installer if your policy trusts managed installers.
 
-### A policy is active that is unexpected
+### Issue: A policy is active that is unexpected
 
 This condition may exist if:
 
@@ -119,7 +144,7 @@ This condition may exist if:
 
 To resolve such an issue, follow the instructions to [Remove WDAC policies](../disable-windows-defender-application-control-policies.md) for the identified policy.
 
-### An unhandled app failure is occurring and no WDAC events are observed
+### Issue: An unhandled app failure is occurring and no WDAC events are observed
 
 Some apps alter their behavior when a user mode WDAC policy is active which can result in unexpected failures. This can also be seen as a side-effect of script enforcement, since the script enforcement behaviors are implemented by the individual script hosts and may not be handled by apps that interact with those script hosts.
 
@@ -130,12 +155,25 @@ Try to isolate the root cause by doing the following:
 - Temporarily replace the WDAC policy with another policy that [allows all COM objects](../allow-com-object-registration-in-windows-defender-application-control-policy.md) and re-test.
 - Temporarily replace the WDAC policy with another policy that relaxes other [policy rules](../select-types-of-rules-to-create.md#windows-defender-application-control-policy-rules) and re-test.
 
-### An app deployed by a managed installer is not working
+### Issue: An app deployed by a managed installer is not working
 
 To debug issues using managed installer, try the following:
 
-- Check that the effective AppLocker policy $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLocker.xml is correct as described in 
+- Check that the WDAC policy that is blocking the app includes the option to enable managed installer.
+- Check that the effective AppLocker policy $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLocker.xml is correct as described in [Automatically allow apps deployed by a managed installer](../configure-authorized-apps-deployed-with-a-managed-installer.md#create-and-deploy-an-applocker-policy-that-defines-your-managed-installer-rules-and-enables-services-enforcement-for-executables-and-dlls).
 - Check that the AppLocker services are running. These should be found in $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt created earlier.
-- Check that an AppLocker file exists called MANAGEDINSTALLER.APPLOCKER 
+- Check that an AppLocker file exists called MANAGEDINSTALLER.APPLOCKER exists in the CiDiag folder created earlier. If not, repeat the steps to deploy and enable the managed installer AppLocker configuration.
+- Restart the managed installer process and check that an 8002 event is observed in the **AppLocker - EXE and DLL** event log for the managed installer process with PolicyName = MANAGEDINSTALLER. If instead you see an event with 8003 or 8004 with PolicyName = MANAGEDINSTALLER, then check the ManagedInstaller rules in the AppLocker policy XML and ensure a rule matches the managed installer process.
+- [Use fsutil.exe](../configure-wdac-managed-installer.md#using-fsutil-to-query-extended-attributes-for-managed-installer-mi) to verify files written by the managed installer process have the managed installer origin extended attribute. If not, re-deploy the files with the managed installer and check again.
+- Test installation of a different app using the managed installer.
+- Add another managed installer to your AppLocker policy and test installation using the other managed installer.
 - Check if the app is encountering a [known limitation with managed installer](../configure-authorized-apps-deployed-with-a-managed-installer.md#known-limitations-with-managed-installer). If so, you must authorize the app using other means.
-- 
+
+### Issue: An app you expected to be allowed by the Intelligent Security Graph (ISG) is not working
+
+To debug issues using ISG, try the following:
+
+- Check that the WDAC policy that is blocking the app includes the option to enable the intelligent security graph.
+- Check that the AppLocker services are running. These should be found in $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt created earlier.
+- [Use fsutil.exe](../configure-wdac-managed-installer.md#using-fsutil-to-query-extended-attributes-for-intelligent-security-graph-isg) to verify files have the ISG origin extended attribute. If not, re-deploy the files with the managed installer and check again.
+- Check if the app is encountering a [known limitation with ISG](../use-windows-defender-application-control-with-intelligent-security-graph.md#known-limitations-with-using-the-isg).
