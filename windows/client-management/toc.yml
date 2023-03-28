@@ -12,10 +12,10 @@ items:
               href: mdm-overview.md
             - name: What's new in MDM enrollment and management
               href: new-in-windows-mdm-enrollment-management.md
-            - name: Transitioning to modern management
-              href: manage-windows-10-in-your-organization-modern-management.md
             - name: Azure Active Directory integration with MDM
               href: azure-active-directory-integration-with-mdm.md
+            - name: Transitioning to modern management
+              href: manage-windows-10-in-your-organization-modern-management.md
             - name: Push notification support for device management
               href: push-notification-windows-mdm.md
             - name: MAM support for device management
