@@ -6,8 +6,7 @@ description: New and updated IT Pro content about new features in Windows 10 Ent
 ms.prod: windows-client
 author: mestew
 ms.localizationpriority: medium
-ms.topic: article
-ms.collection: highpri, tier1
+ms.topic: conceptual
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
 ---

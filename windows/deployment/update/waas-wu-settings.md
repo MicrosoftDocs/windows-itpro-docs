@@ -6,8 +6,10 @@ ms.localizationpriority: medium
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.collection: highpri, tier2
+ms.topic: how-to
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-updates
 ms.date: 03/09/2023
 ---

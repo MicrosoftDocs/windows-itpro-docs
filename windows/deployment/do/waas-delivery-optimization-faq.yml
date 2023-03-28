@@ -2,13 +2,15 @@
 metadata:
   title: Delivery Optimization Frequently Asked Questions
   description: The following is a list of frequently asked questions for Delivery Optimization.
-  ms.reviewer: aaroncz
+  ms.reviewer: mstewart
   ms.prod: windows-client
-  author: carmenf
+  author: cmknox
   ms.author: carmenf
-  manager: dougeby
+  manager: aaroncz
   ms.technology: itpro-updates
-  ms.collection: highpri, tier3
+  ms.collection:
+    - highpri
+    - tier3
   ms.topic: faq
   ms.date: 08/04/2022
 title: Delivery Optimization Frequently Asked Questions

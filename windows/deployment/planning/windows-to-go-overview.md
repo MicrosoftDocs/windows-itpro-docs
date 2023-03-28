@@ -5,9 +5,11 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.topic: article
+ms.topic: overview
 ms.technology: itpro-deploy
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier2
 ms.date: 10/28/2022
 ---
 
