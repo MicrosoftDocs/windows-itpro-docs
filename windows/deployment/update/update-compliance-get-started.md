@@ -6,7 +6,9 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier2
 ms.topic: article
 ms.date: 05/03/2022
 ms.technology: itpro-updates

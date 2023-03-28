@@ -6,8 +6,10 @@ author: mestew
 ms.localizationpriority: high
 ms.author: mstewart
 manager: aaroncz
-ms.collection: highpri, tier2
-ms.topic: article
+ms.collection:
+  - highpri
+  - tier2
+ms.topic: conceptual
 ms.technology: itpro-updates
 ms.date: 12/31/2017
 ---
