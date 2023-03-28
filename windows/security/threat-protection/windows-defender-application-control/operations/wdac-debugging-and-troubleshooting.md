@@ -40,8 +40,6 @@ Before debugging and troubleshooting WDAC issues, you must collect information f
     - WDAC event logs
     - AppLocker event logs
     - Other event logs that may contain useful information from other Windows apps and services
-    - A text file containing only critical error events found in the WDAC event logs
-    - A text file containing full event details for critical error events found in the WDAC event logs
 
 2. Save the device's System Information to the CiDiag folder by running `msinfo32.exe /report $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\SystemInformation.txt`.
 3. Use [CiTool.exe](citool-commands.md) to inventory the list of WDAC policies on the device by running `citool.exe -lp -json > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\CiToolOutput.json`. Skip this step if CiTool.exe is not present in your version of Windows.
@@ -56,9 +54,9 @@ Before debugging and troubleshooting WDAC issues, you must collect information f
 7. Export the effective AppLocker policy by running `Get-AppLockerPolicy -xml -Effective > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLocker.xml`
 8. Collect AppLocker services configuration and state information by running the following commands:
 
-    `sc.exe query appid > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt`<br>
-    `sc.exe query appidsvc >> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt`<br>
-    `sc.exe query applockerfltr > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt`
+    `sc.exe query appid ; sc.exe query appidsvc; sc.exe query applockerfltr > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt`<br>
+    `>> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt`<br>
+    `>> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt`
 
 ### Core WDAC event logs
 
