@@ -285,7 +285,7 @@ This policy allows you to specify how your client(s) can discover Delivery Optim
 
 With either option, the client will query DHCP Option ID 235 and use the returned value as the Cache Server Hostname. Option 2 overrides the Cache Server Hostname policy, if set. **By default, this policy has no value.**
 
-Set this policy to designate Delivery Optimization in Network Cache servers through a custom DHCP Option. Specify the custom DHCP option on your server as *text* type. You can add one or more values as either fully qualified domain names (FQDN) or IP addresses. To add multiple values, separate each FQDN or IP address with commas.
+Set this policy to designate Delivery Optimization in Network Cache servers through a custom DHCP Option. Specify the custom DHCP option on your DHCP server as *text* type. You can add one or more values as either fully qualified domain names (FQDN) or IP addresses. To add multiple values, separate each FQDN or IP address with commas.
 
 > [!NOTE]
 > If you format the DHCP Option ID incorrectly, the client will fall back to the Cache Server Hostname policy value if that value has been set.

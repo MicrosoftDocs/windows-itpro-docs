@@ -5,9 +5,11 @@ ms.prod: windows-client
 author: mestew
 ms.localizationpriority: medium
 ms.author: mstewart
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier2
 manager: aaroncz
-ms.topic: article
+ms.topic: how-to
 ms.technology: itpro-updates
 ms.date: 02/28/2023
 ---

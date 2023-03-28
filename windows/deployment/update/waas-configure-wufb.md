@@ -210,7 +210,7 @@ Starting with Windows 10, version 1607, you can selectively opt out of receiving
 | GPO for Windows 10, version 1607 or later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Do not include drivers with Windows Updates** | \Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversInQualityUpdate  |
 | MDM for Windows 10, version 1607 and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**ExcludeWUDriversInQualityUpdate** | \Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate |
 
-## Enable features introduced via servicing that are off by default
+## Enable features introduced via servicing that are off by default 
 <!--6544872-->
 
 New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features are temporarily turned off by default. Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly.
@@ -221,8 +221,8 @@ The features that are turned off by default from servicing updates will be enabl
 
 | Policy | Sets registry key under HKLM\Software |
 | --- | --- |
-| GPO for Windows 11, version 22H2 and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage end user experience > **Enable features introduced via servicing that are off by default**| \Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversInQualityUpdate  |
-| MDM for Windows 11, version 22H2 and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**[AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol)** | \Microsoft\PolicyManager\default\Update\AllowTemporaryEnterpriseFeatureControl |
+| GPO for Windows 11, version 22H2 with [kb5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage end user experience > **Enable features introduced via servicing that are off by default**| \Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversInQualityUpdate  |
+| MDM for Windows 11, version 22H2 with [kb5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**[AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol)** | \Microsoft\PolicyManager\default\Update\AllowTemporaryEnterpriseFeatureControl |
 
 
 ## Summary: MDM and Group Policy settings for Windows 10, version 1703 and later
