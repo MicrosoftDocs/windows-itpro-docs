@@ -324,8 +324,6 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 - [DisableDualScan](policy-csp-update.md#disabledualscan)
 - [DisableWUfBSafeguards](policy-csp-update.md#disablewufbsafeguards)
 - [DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection](policy-csp-update.md#donotenforceenterprisetlscertpinningforupdatedetection)
-- [EngagedRestartDeadline](policy-csp-update.md#engagedrestartdeadline)
-- [EngagedRestartDeadlineForFeatureUpdates](policy-csp-update.md#engagedrestartdeadlineforfeatureupdates)
 - [ExcludeWUDriversInQualityUpdate](policy-csp-update.md#excludewudriversinqualityupdate)
 - [FillEmptyContentUrls](policy-csp-update.md#fillemptycontenturls)
 - [IgnoreMOAppDownloadLimit](policy-csp-update.md#ignoremoappdownloadlimit)
