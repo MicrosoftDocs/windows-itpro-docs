@@ -7,7 +7,9 @@ ms.author: mstewart
 author: mestew
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
 ---

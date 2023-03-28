@@ -1,14 +1,16 @@
 ---
-title: User State Migration Tool (USMT) Overview (Windows 10)
+title: User State Migration Tool (USMT) overview
 description: Learn about using User State Migration Tool (USMT) 10.0 to streamline and simplify user state migration during large deployments of Windows operating systems.
+ms.prod: windows-client
+ms.technology: itpro-deploy
+author: frankroj
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
-author: frankroj
 ms.date: 11/01/2022
-ms.topic: article
-ms.collection: highpri, tier2
-ms.technology: itpro-deploy
+ms.topic: overview
+ms.collection:
+  - highpri
+  - tier2
 ---
 
 # User State Migration Tool (USMT) overview

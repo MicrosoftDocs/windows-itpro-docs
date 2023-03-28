@@ -7,9 +7,11 @@ ms.author: mstewart
 author: mestew
 manager: aaroncz
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/18/2022
-ms.collection: highpri, tier1
+ms.collection:
+  - highpri
+  - tier2
 ---
 
 # What's new in Windows 10, version 22H2
