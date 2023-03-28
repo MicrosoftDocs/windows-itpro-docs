@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Windows 10 Team
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/24/2023
+ms.date: 03/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,15 +26,6 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 - [AllowAppStoreAutoUpdate](policy-csp-applicationmanagement.md#allowappstoreautoupdate)
 - [AllowDeveloperUnlock](policy-csp-applicationmanagement.md#allowdeveloperunlock)
 
-## Authentication
-
-- [AllowAadPasswordReset](policy-csp-authentication.md#allowaadpasswordreset)
-- [AllowEAPCertSSO](policy-csp-authentication.md#alloweapcertsso)
-- [AllowFastReconnect](policy-csp-authentication.md#allowfastreconnect)
-- [AllowSecondaryAuthenticationDevice](policy-csp-authentication.md#allowsecondaryauthenticationdevice)
-- [EnableFastFirstSignIn](policy-csp-authentication.md#enablefastfirstsignin)
-- [EnableWebSignIn](policy-csp-authentication.md#enablewebsignin)
-
 ## Bluetooth
 
 - [AllowAdvertising](policy-csp-bluetooth.md#allowadvertising)
@@ -48,48 +39,26 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 ## Browser
 
 - [AllowAddressBarDropdown](policy-csp-browser.md#allowaddressbardropdown)
-- [AllowAddressBarDropdown](policy-csp-browser.md#allowaddressbardropdown)
-- [AllowAutofill](policy-csp-browser.md#allowautofill)
 - [AllowAutofill](policy-csp-browser.md#allowautofill)
 - [AllowBrowser](policy-csp-browser.md#allowbrowser)
-- [AllowBrowser](policy-csp-browser.md#allowbrowser)
-- [AllowCookies](policy-csp-browser.md#allowcookies)
 - [AllowCookies](policy-csp-browser.md#allowcookies)
 - [AllowDeveloperTools](policy-csp-browser.md#allowdevelopertools)
-- [AllowDeveloperTools](policy-csp-browser.md#allowdevelopertools)
-- [AllowDoNotTrack](policy-csp-browser.md#allowdonottrack)
 - [AllowDoNotTrack](policy-csp-browser.md#allowdonottrack)
 - [AllowFlashClickToRun](policy-csp-browser.md#allowflashclicktorun)
-- [AllowFlashClickToRun](policy-csp-browser.md#allowflashclicktorun)
-- [AllowMicrosoftCompatibilityList](policy-csp-browser.md#allowmicrosoftcompatibilitylist)
 - [AllowMicrosoftCompatibilityList](policy-csp-browser.md#allowmicrosoftcompatibilitylist)
 - [AllowPasswordManager](policy-csp-browser.md#allowpasswordmanager)
-- [AllowPasswordManager](policy-csp-browser.md#allowpasswordmanager)
-- [AllowPopups](policy-csp-browser.md#allowpopups)
 - [AllowPopups](policy-csp-browser.md#allowpopups)
 - [AllowSearchSuggestionsinAddressBar](policy-csp-browser.md#allowsearchsuggestionsinaddressbar)
-- [AllowSearchSuggestionsinAddressBar](policy-csp-browser.md#allowsearchsuggestionsinaddressbar)
-- [AllowSmartScreen](policy-csp-browser.md#allowsmartscreen)
 - [AllowSmartScreen](policy-csp-browser.md#allowsmartscreen)
 - [ClearBrowsingDataOnExit](policy-csp-browser.md#clearbrowsingdataonexit)
-- [ClearBrowsingDataOnExit](policy-csp-browser.md#clearbrowsingdataonexit)
-- [ConfigureAdditionalSearchEngines](policy-csp-browser.md#configureadditionalsearchengines)
 - [ConfigureAdditionalSearchEngines](policy-csp-browser.md#configureadditionalsearchengines)
 - [DisableLockdownOfStartPages](policy-csp-browser.md#disablelockdownofstartpages)
-- [DisableLockdownOfStartPages](policy-csp-browser.md#disablelockdownofstartpages)
-- [EnterpriseModeSiteList](policy-csp-browser.md#enterprisemodesitelist)
 - [EnterpriseModeSiteList](policy-csp-browser.md#enterprisemodesitelist)
 - [HomePages](policy-csp-browser.md#homepages)
-- [HomePages](policy-csp-browser.md#homepages)
-- [PreventLiveTileDataCollection](policy-csp-browser.md#preventlivetiledatacollection)
 - [PreventLiveTileDataCollection](policy-csp-browser.md#preventlivetiledatacollection)
 - [PreventSmartScreenPromptOverride](policy-csp-browser.md#preventsmartscreenpromptoverride)
-- [PreventSmartScreenPromptOverride](policy-csp-browser.md#preventsmartscreenpromptoverride)
-- [PreventSmartScreenPromptOverrideForFiles](policy-csp-browser.md#preventsmartscreenpromptoverrideforfiles)
 - [PreventSmartScreenPromptOverrideForFiles](policy-csp-browser.md#preventsmartscreenpromptoverrideforfiles)
 - [PreventUsingLocalHostIPAddressForWebRTC](policy-csp-browser.md#preventusinglocalhostipaddressforwebrtc)
-- [PreventUsingLocalHostIPAddressForWebRTC](policy-csp-browser.md#preventusinglocalhostipaddressforwebrtc)
-- [SetDefaultSearchEngine](policy-csp-browser.md#setdefaultsearchengine)
 - [SetDefaultSearchEngine](policy-csp-browser.md#setdefaultsearchengine)
 
 ## Camera
@@ -120,7 +89,6 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 - [AllowRealtimeMonitoring](policy-csp-defender.md#allowrealtimemonitoring)
 - [AllowScanningNetworkFiles](policy-csp-defender.md#allowscanningnetworkfiles)
 - [AllowScriptScanning](policy-csp-defender.md#allowscriptscanning)
-- [AllowUserUIAccess](policy-csp-defender.md#allowuseruiaccess)
 - [AttackSurfaceReductionOnlyExclusions](policy-csp-defender.md#attacksurfacereductiononlyexclusions)
 - [AttackSurfaceReductionRules](policy-csp-defender.md#attacksurfacereductionrules)
 - [AvgCPULoadFactor](policy-csp-defender.md#avgcpuloadfactor)
@@ -182,10 +150,6 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 - [DOSetHoursToLimitBackgroundDownloadBandwidth](policy-csp-deliveryoptimization.md#dosethourstolimitbackgrounddownloadbandwidth)
 - [DOSetHoursToLimitForegroundDownloadBandwidth](policy-csp-deliveryoptimization.md#dosethourstolimitforegrounddownloadbandwidth)
 - [DOVpnKeywords](policy-csp-deliveryoptimization.md#dovpnkeywords)
-
-## Experience
-
-- [DoNotShowFeedbackNotifications](policy-csp-experience.md#donotshowfeedbacknotifications)
 
 ## ExploitGuard
 
@@ -288,73 +252,12 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 ## Security
 
 - [RecoveryEnvironmentAuthentication](policy-csp-security.md#recoveryenvironmentauthentication)
-- [RecoveryEnvironmentAuthentication](policy-csp-security.md#recoveryenvironmentauthentication)
 - [RequireProvisioningPackageSignature](policy-csp-security.md#requireprovisioningpackagesignature)
 - [RequireRetrieveHealthCertificateOnBoot](policy-csp-security.md#requireretrievehealthcertificateonboot)
 
-## Settings
-
-- [ConfigureTaskbarCalendar](policy-csp-settings.md#configuretaskbarcalendar)
-
 ## Start
 
-- [AllowPinnedFolderDocuments](policy-csp-start.md#allowpinnedfolderdocuments)
-- [AllowPinnedFolderDownloads](policy-csp-start.md#allowpinnedfolderdownloads)
-- [AllowPinnedFolderFileExplorer](policy-csp-start.md#allowpinnedfolderfileexplorer)
-- [AllowPinnedFolderHomeGroup](policy-csp-start.md#allowpinnedfolderhomegroup)
-- [AllowPinnedFolderMusic](policy-csp-start.md#allowpinnedfoldermusic)
-- [AllowPinnedFolderNetwork](policy-csp-start.md#allowpinnedfoldernetwork)
-- [AllowPinnedFolderPersonalFolder](policy-csp-start.md#allowpinnedfolderpersonalfolder)
-- [AllowPinnedFolderPictures](policy-csp-start.md#allowpinnedfolderpictures)
-- [AllowPinnedFolderSettings](policy-csp-start.md#allowpinnedfoldersettings)
-- [AllowPinnedFolderVideos](policy-csp-start.md#allowpinnedfoldervideos)
-- [ConfigureStartPins](policy-csp-start.md#configurestartpins)
-- [ConfigureStartPins](policy-csp-start.md#configurestartpins)
-- [DisableContextMenus](policy-csp-start.md#disablecontextmenus)
-- [DisableContextMenus](policy-csp-start.md#disablecontextmenus)
-- [DisableControlCenter](policy-csp-start.md#disablecontrolcenter)
-- [DisableEditingQuickSettings](policy-csp-start.md#disableeditingquicksettings)
-- [ForceStartSize](policy-csp-start.md#forcestartsize)
-- [ForceStartSize](policy-csp-start.md#forcestartsize)
-- [HideAppList](policy-csp-start.md#hideapplist)
-- [HideAppList](policy-csp-start.md#hideapplist)
-- [HideChangeAccountSettings](policy-csp-start.md#hidechangeaccountsettings)
-- [HideFrequentlyUsedApps](policy-csp-start.md#hidefrequentlyusedapps)
-- [HideFrequentlyUsedApps](policy-csp-start.md#hidefrequentlyusedapps)
-- [HideHibernate](policy-csp-start.md#hidehibernate)
-- [HideLock](policy-csp-start.md#hidelock)
-- [HidePeopleBar](policy-csp-start.md#hidepeoplebar)
-- [HidePowerButton](policy-csp-start.md#hidepowerbutton)
-- [HideRecentJumplists](policy-csp-start.md#hiderecentjumplists)
-- [HideRecentJumplists](policy-csp-start.md#hiderecentjumplists)
-- [HideRecentlyAddedApps](policy-csp-start.md#hiderecentlyaddedapps)
-- [HideRecentlyAddedApps](policy-csp-start.md#hiderecentlyaddedapps)
-- [HideRecommendedSection](policy-csp-start.md#hiderecommendedsection)
-- [HideRecommendedSection](policy-csp-start.md#hiderecommendedsection)
-- [HideRecoPersonalizedSites](policy-csp-start.md#hiderecopersonalizedsites)
-- [HideRecoPersonalizedSites](policy-csp-start.md#hiderecopersonalizedsites)
-- [HideRestart](policy-csp-start.md#hiderestart)
-- [HideShutDown](policy-csp-start.md#hideshutdown)
-- [HideSignOut](policy-csp-start.md#hidesignout)
-- [HideSleep](policy-csp-start.md#hidesleep)
-- [HideSwitchAccount](policy-csp-start.md#hideswitchaccount)
-- [HideTaskViewButton](policy-csp-start.md#hidetaskviewbutton)
-- [HideTaskViewButton](policy-csp-start.md#hidetaskviewbutton)
-- [HideUserTile](policy-csp-start.md#hideusertile)
-- [ImportEdgeAssets](policy-csp-start.md#importedgeassets)
-- [NoPinningToTaskbar](policy-csp-start.md#nopinningtotaskbar)
-- [ShowOrHideMostUsedApps](policy-csp-start.md#showorhidemostusedapps)
-- [ShowOrHideMostUsedApps](policy-csp-start.md#showorhidemostusedapps)
-- [SimplifyQuickSettings](policy-csp-start.md#simplifyquicksettings)
 - [StartLayout](policy-csp-start.md#startlayout)
-- [StartLayout](policy-csp-start.md#startlayout)
-
-## Storage
-
-- [WPDDevicesDenyReadAccessPerDevice](policy-csp-storage.md#wpddevicesdenyreadaccessperdevice)
-- [WPDDevicesDenyReadAccessPerUser](policy-csp-storage.md#wpddevicesdenyreadaccessperuser)
-- [WPDDevicesDenyWriteAccessPerDevice](policy-csp-storage.md#wpddevicesdenywriteaccessperdevice)
-- [WPDDevicesDenyWriteAccessPerUser](policy-csp-storage.md#wpddevicesdenywriteaccessperuser)
 
 ## System
 
@@ -363,7 +266,6 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 - [AllowFontProviders](policy-csp-system.md#allowfontproviders)
 - [AllowLocation](policy-csp-system.md#allowlocation)
 - [AllowStorageCard](policy-csp-system.md#allowstoragecard)
-- [AllowTelemetry](policy-csp-system.md#allowtelemetry)
 - [AllowTelemetry](policy-csp-system.md#allowtelemetry)
 
 ## TextInput
@@ -412,19 +314,7 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 - [AllowNonMicrosoftSignedUpdate](policy-csp-update.md#allownonmicrosoftsignedupdate)
 - [AllowTemporaryEnterpriseFeatureControl](policy-csp-update.md#allowtemporaryenterprisefeaturecontrol)
 - [AllowUpdateService](policy-csp-update.md#allowupdateservice)
-- [AutomaticMaintenanceWakeUp](policy-csp-update.md#automaticmaintenancewakeup)
-- [AutoRestartDeadlinePeriodInDays](policy-csp-update.md#autorestartdeadlineperiodindays)
-- [AutoRestartDeadlinePeriodInDaysForFeatureUpdates](policy-csp-update.md#autorestartdeadlineperiodindaysforfeatureupdates)
-- [AutoRestartNotificationSchedule](policy-csp-update.md#autorestartnotificationschedule)
-- [AutoRestartRequiredNotificationDismissal](policy-csp-update.md#autorestartrequirednotificationdismissal)
 - [BranchReadinessLevel](policy-csp-update.md#branchreadinesslevel)
-- [ConfigureDeadlineForFeatureUpdates](policy-csp-update.md#configuredeadlineforfeatureupdates)
-- [ConfigureDeadlineForQualityUpdates](policy-csp-update.md#configuredeadlineforqualityupdates)
-- [ConfigureDeadlineGracePeriod](policy-csp-update.md#configuredeadlinegraceperiod)
-- [ConfigureDeadlineGracePeriodForFeatureUpdates](policy-csp-update.md#configuredeadlinegraceperiodforfeatureupdates)
-- [ConfigureDeadlineNoAutoReboot](policy-csp-update.md#configuredeadlinenoautoreboot)
-- [ConfigureDeadlineNoAutoRebootForFeatureUpdates](policy-csp-update.md#configuredeadlinenoautorebootforfeatureupdates)
-- [ConfigureDeadlineNoAutoRebootForQualityUpdates](policy-csp-update.md#configuredeadlinenoautorebootforqualityupdates)
 - [ConfigureFeatureUpdateUninstallPeriod](policy-csp-update.md#configurefeatureupdateuninstallperiod)
 - [DeferFeatureUpdatesPeriodInDays](policy-csp-update.md#deferfeatureupdatesperiodindays)
 - [DeferQualityUpdatesPeriodInDays](policy-csp-update.md#deferqualityupdatesperiodindays)
@@ -436,23 +326,16 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 - [DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection](policy-csp-update.md#donotenforceenterprisetlscertpinningforupdatedetection)
 - [EngagedRestartDeadline](policy-csp-update.md#engagedrestartdeadline)
 - [EngagedRestartDeadlineForFeatureUpdates](policy-csp-update.md#engagedrestartdeadlineforfeatureupdates)
-- [EngagedRestartSnoozeSchedule](policy-csp-update.md#engagedrestartsnoozeschedule)
-- [EngagedRestartSnoozeScheduleForFeatureUpdates](policy-csp-update.md#engagedrestartsnoozescheduleforfeatureupdates)
-- [EngagedRestartTransitionSchedule](policy-csp-update.md#engagedrestarttransitionschedule)
-- [EngagedRestartTransitionScheduleForFeatureUpdates](policy-csp-update.md#engagedrestarttransitionscheduleforfeatureupdates)
 - [ExcludeWUDriversInQualityUpdate](policy-csp-update.md#excludewudriversinqualityupdate)
 - [FillEmptyContentUrls](policy-csp-update.md#fillemptycontenturls)
 - [IgnoreMOAppDownloadLimit](policy-csp-update.md#ignoremoappdownloadlimit)
 - [IgnoreMOUpdateDownloadLimit](policy-csp-update.md#ignoremoupdatedownloadlimit)
 - [ManagePreviewBuilds](policy-csp-update.md#managepreviewbuilds)
-- [NoUpdateNotificationsDuringActiveHours](policy-csp-update.md#noupdatenotificationsduringactivehours)
 - [PauseDeferrals](policy-csp-update.md#pausedeferrals)
 - [PauseFeatureUpdates](policy-csp-update.md#pausefeatureupdates)
 - [PauseFeatureUpdatesStartTime](policy-csp-update.md#pausefeatureupdatesstarttime)
 - [PauseQualityUpdates](policy-csp-update.md#pausequalityupdates)
 - [PauseQualityUpdatesStartTime](policy-csp-update.md#pausequalityupdatesstarttime)
-- [PhoneUpdateRestrictions](policy-csp-update.md#phoneupdaterestrictions)
-- [ProductVersion](policy-csp-update.md#productversion)
 - [RequireDeferUpgrade](policy-csp-update.md#requiredeferupgrade)
 - [RequireUpdateApproval](policy-csp-update.md#requireupdateapproval)
 - [ScheduledInstallDay](policy-csp-update.md#scheduledinstallday)
@@ -462,19 +345,11 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 - [ScheduledInstallSecondWeek](policy-csp-update.md#scheduledinstallsecondweek)
 - [ScheduledInstallThirdWeek](policy-csp-update.md#scheduledinstallthirdweek)
 - [ScheduledInstallTime](policy-csp-update.md#scheduledinstalltime)
-- [ScheduleImminentRestartWarning](policy-csp-update.md#scheduleimminentrestartwarning)
-- [ScheduleRestartWarning](policy-csp-update.md#schedulerestartwarning)
-- [SetAutoRestartNotificationDisable](policy-csp-update.md#setautorestartnotificationdisable)
-- [SetDisablePauseUXAccess](policy-csp-update.md#setdisablepauseuxaccess)
-- [SetDisableUXWUAccess](policy-csp-update.md#setdisableuxwuaccess)
-- [SetEDURestart](policy-csp-update.md#setedurestart)
 - [SetPolicyDrivenUpdateSourceForDriverUpdates](policy-csp-update.md#setpolicydrivenupdatesourcefordriverupdates)
 - [SetPolicyDrivenUpdateSourceForFeatureUpdates](policy-csp-update.md#setpolicydrivenupdatesourceforfeatureupdates)
 - [SetPolicyDrivenUpdateSourceForOtherUpdates](policy-csp-update.md#setpolicydrivenupdatesourceforotherupdates)
 - [SetPolicyDrivenUpdateSourceForQualityUpdates](policy-csp-update.md#setpolicydrivenupdatesourceforqualityupdates)
 - [SetProxyBehaviorForUpdateDetection](policy-csp-update.md#setproxybehaviorforupdatedetection)
-- [TargetReleaseVersion](policy-csp-update.md#targetreleaseversion)
-- [UpdateNotificationLevel](policy-csp-update.md#updatenotificationlevel)
 - [UpdateServiceUrl](policy-csp-update.md#updateserviceurl)
 - [UpdateServiceUrlAlternate](policy-csp-update.md#updateserviceurlalternate)
 
@@ -485,31 +360,6 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 - [AllowWiFi](policy-csp-wifi.md#allowwifi)
 - [AllowWiFiDirect](policy-csp-wifi.md#allowwifidirect)
 - [WLANScanMode](policy-csp-wifi.md#wlanscanmode)
-
-## WindowsDefenderSecurityCenter
-
-- [CompanyName](policy-csp-windowsdefendersecuritycenter.md#companyname)
-- [DisableAccountProtectionUI](policy-csp-windowsdefendersecuritycenter.md#disableaccountprotectionui)
-- [DisableAppBrowserUI](policy-csp-windowsdefendersecuritycenter.md#disableappbrowserui)
-- [DisableClearTpmButton](policy-csp-windowsdefendersecuritycenter.md#disablecleartpmbutton)
-- [DisableDeviceSecurityUI](policy-csp-windowsdefendersecuritycenter.md#disabledevicesecurityui)
-- [DisableEnhancedNotifications](policy-csp-windowsdefendersecuritycenter.md#disableenhancednotifications)
-- [DisableFamilyUI](policy-csp-windowsdefendersecuritycenter.md#disablefamilyui)
-- [DisableHealthUI](policy-csp-windowsdefendersecuritycenter.md#disablehealthui)
-- [DisableNetworkUI](policy-csp-windowsdefendersecuritycenter.md#disablenetworkui)
-- [DisableNotifications](policy-csp-windowsdefendersecuritycenter.md#disablenotifications)
-- [DisableTpmFirmwareUpdateWarning](policy-csp-windowsdefendersecuritycenter.md#disabletpmfirmwareupdatewarning)
-- [DisableVirusUI](policy-csp-windowsdefendersecuritycenter.md#disablevirusui)
-- [DisallowExploitProtectionOverride](policy-csp-windowsdefendersecuritycenter.md#disallowexploitprotectionoverride)
-- [Email](policy-csp-windowsdefendersecuritycenter.md#email)
-- [EnableCustomizedToasts](policy-csp-windowsdefendersecuritycenter.md#enablecustomizedtoasts)
-- [EnableInAppCustomization](policy-csp-windowsdefendersecuritycenter.md#enableinappcustomization)
-- [HideRansomwareDataRecovery](policy-csp-windowsdefendersecuritycenter.md#hideransomwaredatarecovery)
-- [HideSecureBoot](policy-csp-windowsdefendersecuritycenter.md#hidesecureboot)
-- [HideTPMTroubleshooting](policy-csp-windowsdefendersecuritycenter.md#hidetpmtroubleshooting)
-- [HideWindowsSecurityNotificationAreaControl](policy-csp-windowsdefendersecuritycenter.md#hidewindowssecuritynotificationareacontrol)
-- [Phone](policy-csp-windowsdefendersecuritycenter.md#phone)
-- [URL](policy-csp-windowsdefendersecuritycenter.md#url)
 
 ## WirelessDisplay
 
