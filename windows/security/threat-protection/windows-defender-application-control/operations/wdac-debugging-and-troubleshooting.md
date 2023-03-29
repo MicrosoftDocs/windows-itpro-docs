@@ -150,7 +150,20 @@ Here is a screenshot showing the detailed EventData from a typical WDAC enforcem
 | ProductName | Another immutable value set by the developer in the blocked file's resource header. You can substitute this value for the OriginalFileName in file rules with `-Level FileName -SpecificFileNameLevel ProductName`. |
 | FileVersion | The VersionEx value defined by the WDAC policy XML file. This is the internal version number for the policy and used to enforce version control over signed policies. |
 | PolicyGUID | The PolicyId of the WDAC policy that caused the block event. |
-| UserWriteable | A boolean value indicating if the file was in a user-writeable location. This is useful when including |
+| UserWriteable | A boolean value indicating if the file was in a user-writeable location. This is useful for diagnosing issues allowing by FilePath rules. |
+| PackageFamilyName | For files that are part of a packaged app (MSIX), this is the Package Family Name for the app. |
+
+**Event 3089** - WDAC signature information event
+
+![Example 3089 signature information event for PowerShell.exe.](../images/event-3089.png)
+
+| Element name | Description |
+| ----- | ----- |
+| System - Correlation - \[ActivityID\] | Use the correlation ActivityID to match a WDAC signature event with its block event. |
+| TotalSignatureCount | The total number of signatures detected for the blocked file. |
+| Signature | The index count of the current signature shown in this 3089 event. If the file had multiple signatures, you will find other 3089 events for the other signatures. |
+| Hash | The hash value that WDAC used to match the file. This should match one of the four hashes shown on the 3077 or 3076 block event. If no signatures were found for the file (TotalSignatureCount = 0), then this is the hash value you want to add to your policy to allow by hash. |
+| SignatureType | 
 
 ## 3 - Resolve common problems
 
