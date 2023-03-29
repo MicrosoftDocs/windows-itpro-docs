@@ -36,7 +36,7 @@ There are several ways to connect your devices to Azure AD:
 
 In each scenario, Azure AD authenticates the user and the device. It provides a verified unique device identifier that can be used for MDM enrollment. The enrollment flow provides an opportunity for the MDM service to render its own UI, using a web view. MDM vendors should use the UI to render the Terms of Use (TOU), which can be different for company-owned and bring-your-own-device (BYOD) devices. MDM vendors can also use the web view to render more UI elements, such as asking for a one-time PIN.
 
-In the out-of-the-box scenario, the web view is 100% full screen, which gives the MDM vendor the ability to paint an edge-to-edge experience. With great power comes great responsibility! It's important that MDM vendors who integrate with Azure AD respect the Windows design guidelines. This step includes using a responsive web design and respecting the Windows accessibility guidelines. For example, include the forward and back buttons that are properly wired to the navigation logic. More details are provided later in this article.
+In Windows 10, the web view during the out-of-the-box scenario is displayed as full-screen by default, providing MDM vendors with the capability to create a seamless edge-to-edge user experience. However, in Windows 11 the web view is rendered within an iframe. It's important that MDM vendors who integrate with Azure AD respect the Windows design guidelines. This step includes using a responsive web design and respecting the Windows accessibility guidelines. For example, include the forward and back buttons that are properly wired to the navigation logic. More details are provided later in this article.
 
 For Azure AD enrollment to work for an Active Directory Federated Services (AD FS) backed Azure AD account, you must enable password authentication for the intranet on the ADFS service. For more information, see [Configure Azure MFA as authentication provider with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
 
@@ -93,7 +93,7 @@ The MDM application uses keys to request access tokens from Azure AD. These keys
 
 An on-premises MDM application is different than a cloud MDM. It's a single-tenant application that is present uniquely within the tenant of the customer. Customers must add the application directly within their own tenant. Also, each instance of an on-premises MDM application must be registered separately and have a separate key for authentication with Azure AD.
 
-To add an on-premises MDM application to the tenant, use the Azure AD service, specifically under **Mobility (MDM and MAM)** > **Add application**. Administrators can configure the required URLs for enrollment and Terms of Use.
+To add an on-premises MDM application to the tenant, use the Azure AD service, specifically under **Mobility (MDM and MAM)** > **Add application** > **Create your own application**. Administrators can configure the required URLs for enrollment and Terms of Use.
 
 Your on-premises MDM product must expose a configuration experience where administrators can provide the client ID, app ID, and the key configured in their directory for that MDM application. You can use this client ID and key to request tokens from Azure AD when reporting device compliance.
 
