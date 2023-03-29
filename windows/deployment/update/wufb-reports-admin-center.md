@@ -7,7 +7,7 @@ author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
 ms.topic: article
-ms.date: 11/15/2022
+ms.date: 03/29/2023
 ms.technology: itpro-updates
 ---
 
@@ -27,11 +27,12 @@ The **Software updates** page has following tabs to assist you in monitoring upd
 
 ## Permissions
 
+> [!NOTE]
+> These permissions for the Microsoft 365 admin center apply specifically to the **Windows** tab of the **Software Updates** page. For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/DeployOffice/updates/software-update-status).
+
 <!--Using include Microsoft 365 admin center permissions-->
 [!INCLUDE [Windows Update for Business reports permissions](./includes/wufb-reports-admin-center-permissions.md)]
 
-> [!NOTE]
-> These permissions for the Microsoft 365 admin center apply specifically to the **Windows** tab of the **Software Updates** page. For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/DeployOffice/updates/software-update-status).
 
 ## Limitations
 
