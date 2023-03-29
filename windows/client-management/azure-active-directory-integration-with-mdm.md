@@ -118,6 +118,8 @@ IT administrators use the Azure AD app gallery to add an MDM for their organizat
 > [!NOTE]
 > You should work with the Azure AD engineering team if your MDM application is cloud-based and needs to be enabled as a multi-tenant MDM application
 
+To publish your application, [submit a request to publish your application in Azure Active Directory application gallery](/azure/active-directory/manage-apps/v2-howto-app-gallery-listing)
+
 The following table shows the required information to create an entry in the Azure AD app gallery.
 
 |Item|Description|
