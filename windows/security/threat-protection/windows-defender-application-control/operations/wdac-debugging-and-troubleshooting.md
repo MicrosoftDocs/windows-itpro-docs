@@ -123,7 +123,34 @@ Most WDAC-related issues, including app and script failures, can be diagnosed us
 
 ### Event analysis for an example blocked executable
 
-<!-- To be completed -->
+Here is a screenshot showing the detailed EventData from a typical WDAC enforcement mode block event 3077. The same data is shown for the 3076 audit mode version of the event. The table that follows describes some of the elements contained in the event.
+
+**Event 3077** - WDAC enforcement block event
+
+![Example 3077 block event for PowerShell.exe.](../images/event-3077.png)
+
+| Element name | Description |
+| ----- | ----- |
+| System - Correlation - \[ActivityID\] | **Not shown in screenshot** <br> Use the correlation ActivityID to match a WDAC block event with one or more 3089 signature events. |
+| File Name | The file's path and name on disk that was blocked from running. Since the name on disk is mutable, this is **not** the value used when creating WDAC file rules with `-Level FileName`. See the OriginalFileName element later in this table. |
+| Process Name | The path and name of the file that attempted to run the blocked file. Also called the parent process. |
+| Requested Signing Level | This is the Windows signing authorization level the code needed to pass in order to run. See [Requested and ValidatedSigningLevel](../event-tag-explanations.md#requested-and-validatedsigninglevel). In the example, Requested Signing Level 2 means the code simply must be allowed by the WDAC policy. |
+| Validated Signing Level | This is the Windows signing authorization level the code was determined to have met. See [Requested and ValidatedSigningLevel](../event-tag-explanations.md#requested-and-validatedsigninglevel). In the example, Validated Signing Level 1 means the code failed to pass the WDAC policy and was treated as though unsigned. |
+| Status | Windows NT status code. You can use `certutil.exe -error <status>` to look up the meaning of the status code. |
+| SHA1 Hash | The SHA1 Authenticode hash for the blocked file. |
+| SHA256 Hash | The SHA256 Authenticode hash for the blocked file. |
+| SHA1 Flat Hash | The SHA1 flat file hash for the blocked file. |
+| SHA256 Flat Hash | The SHA256 flat file hash for the blocked file. |
+| PolicyName | The friendly name of the WDAC policy, set by the policy author, that caused the block event. A separate 3077 block event (or 3076 audit block event) is shown for each policy that blocks the file from running. |
+| PolicyId | The friendly Id value of the WDAC policy, set by the policy author, that caused the block event. |
+| PolicyHash | The SHA256 Authenticode hash of the WDAC policy binary that caused the block event. |
+| OriginalFileName | The immutable file name set by the developer in the blocked file's resource header. This is the value used when creating WDAC file rules with `-Level FileName`. |
+| InternalName | Another immutable value set by the developer in the blocked file's resource header. You can substitute this value for the OriginalFileName in file rules with `-Level FileName -SpecificFileNameLevel InternalName`. |
+| FileDescription | Another immutable value set by the developer in the blocked file's resource header. You can substitute this value for the OriginalFileName in file rules with `-Level FileName -SpecificFileNameLevel FileDescription`. |
+| ProductName | Another immutable value set by the developer in the blocked file's resource header. You can substitute this value for the OriginalFileName in file rules with `-Level FileName -SpecificFileNameLevel ProductName`. |
+| FileVersion | The VersionEx value defined by the WDAC policy XML file. This is the internal version number for the policy and used to enforce version control over signed policies. |
+| PolicyGUID | The PolicyId of the WDAC policy that caused the block event. |
+| UserWriteable | A boolean value indicating if the file was in a user-writeable location. This is useful when including |
 
 ## 3 - Resolve common problems
 
