@@ -32,10 +32,21 @@ Communications are posted to, as appropriate for the type of communication, to t
 
 | Communication | Location | Timing | Description |
 | ----- | ----- |  ----- | ----- |
-| Release schedule | <ul><li>Message center</li><li>Messages blade</li><li>Email sent to your specified [admin contacts](../deploy/windows-autopatch-admin-contacts.md)</li><ul> | At least seven days prior to the second Tuesday of the month| Notification of the planned release window for each ring. |
+| Release schedule | <ul><li>Messages blade</li><li>Email sent to your specified [admin contacts](../deploy/windows-autopatch-admin-contacts.md)</li><ul> | At least seven days prior to the second Tuesday of the month| Notification of the planned release window for each ring. |
 | Release start | Same as release schedule | The second Tuesday of every month. | Notification that the update is now being released into your environment. |
 | Release summary | Same as release schedule | The fourth Tuesday of every month. | Informs you of the percentage of eligible devices that were patched during the release. |
 
+If you donot wish to receive Standard communications for Windows Updates releases via email, you can choose to opt out.
+
+**To opt out of receiving emails for Stanard communications:**
+
+1. Sign into the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Under **Tenant administration** in the **Windows Autopatch** section, select **Admin contacts**.
+3. Select the admin contact you want to opt out for. 
+4. Click on **Edit Contact** button.
+5. Un-select **Send me emails for Windows update releases and status** option on the fly in pane.   
+6. Select **Save** to apply the changes. 
+  
 ## Communications during release
 
 The most common type of communication during a release is a customer advisory. Customer advisories are posted to both Message center and the Messages blade of the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) shortly after Autopatch becomes aware of the new information.
