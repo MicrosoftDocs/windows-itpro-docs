@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 03/16/2020
+ms.date: 03/30/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -29,12 +29,17 @@ ms.topic: article
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-After enabling you understand how to design and deploy your Windows Defender Application Control (WDAC) policies, this guide covers understanding the effects your policies are having and troubleshooting when they aren't behaving as expected. It contains information on where to find events and what they mean, and also querying these events with Microsoft Defender for Endpoint Advanced Hunting feature.
+You now understand how to design and deploy your Windows Defender Application Control (WDAC) policies. This guide explains how to understand the effects your policies have and how to troubleshoot when they aren't behaving as expected. It contains information on where to find events and what they mean, and also querying these events with Microsoft Defender for Endpoint Advanced Hunting feature.
 
 ## In this section
 
-| Topic | Description |
+| Article | Description |
 | - | - |
-| [Understanding Application Control event IDs](event-id-explanations.md) | This topic explains the meaning of different WDAC event IDs. |
-| [Understanding Application Control event tags](event-tag-explanations.md) | This topic explains the meaning of different WDAC event tags. |
-| [Query WDAC events with Advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) | This topic covers how to view WDAC events centrally from all systems that are connected to Microsoft Defender for Endpoint. |
+| [Debugging and troubleshooting](/windows/security/threat-protection/windows-defender-application-control/operations/wdac-debugging-and-troubleshooting) | This article explains how to debug app and script failures with WDAC. |
+| [Understanding Application Control event IDs](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations) | This article explains the meaning of different WDAC event IDs. |
+| [Understanding Application Control event tags](/windows/security/threat-protection/windows-defender-application-control/event-tag-explanations) | This article explains the meaning of different WDAC event tags. |
+| [Query WDAC events with Advanced hunting](/windows/security/threat-protection/windows-defender-application-control/querying-application-control-events-centrally-using-advanced-hunting) | This article covers how to view WDAC events centrally from all systems that are connected to Microsoft Defender for Endpoint. |
+| [Admin Tips & Known Issues](/windows/security/threat-protection/windows-defender-application-control/operations/known-issues) | This article describes some WDAC Admin Tips & Known Issues. |
+| [Managed installer and ISG technical reference and troubleshooting guide](/windows/security/threat-protection/windows-defender-application-control/configure-wdac-managed-installer) | This article provides technical details and debugging steps for managed installer and ISG. |
+| [CITool.exe technical reference](/windows/security/threat-protection/windows-defender-application-control/operations/citool-commands) | This article explains how to use CITool.exe. |
+| [Inbox WDAC policies](/windows/security/threat-protection/windows-defender-application-control/operations/inbox-wdac-policies) | This article describes the WDAC policies that ship with Windows and when they're active. |
