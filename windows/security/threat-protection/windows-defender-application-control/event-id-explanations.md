@@ -34,7 +34,7 @@ WDAC events are generated under two locations in the Windows Event Viewer:
 Most app and script failures that occur when WDAC is active can be diagnosed using these two event logs. This article describes in greater detail the events that exist in these logs. To understand the meaning of different data elements, or tags, found in the details of these events, see [Understanding Application Control event tags](event-tag-explanations.md).
 
 > [!NOTE]
-> These event IDs are not included on Windows Server Core edition.
+> **Applications and Services logs – Microsoft – Windows – AppLocker – MSI and Script** events are not included on Windows Server Core edition.
 
 ## WDAC block events for executables, dlls, and drivers
 
