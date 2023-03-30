@@ -12,7 +12,6 @@ ms.custom: asr
 ms.technology: itpro-security
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 and later</a>
 ms.collection:
   - highpri
   - tier2
