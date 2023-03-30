@@ -59,11 +59,11 @@ You can use the Windows Security app to check if Kernel DMA Protection is enable
 1. Open Windows Security app
 1. Select **Device security > Core isolation details > Memory access protection**
 
-:::image type="content" source="images/kernel-dma-protection-security-center.png" alt-text="Kernel DMA protection in Windows Security" lightbox="images/kernel-dma-protection-security-center.png" border="true":::
+:::image type="content" source="images/kernel-dma-protection-security-center.png" alt-text="Screenshot of Kernel DMA protection in Windows Security." lightbox="images/kernel-dma-protection-security-center.png" border="true":::
 
 Alternatively, you can use the System Information desktop app (`msinfo32.exe`). If the system supports Kernel DMA Protection, the **Kernel DMA Protection** value will be set to **ON**.
 
-:::image type="content" source="images/kernel-dma-protection.png" alt-text="Kernel DMA protection in System Information" lightbox="images/kernel-dma-protection.png" border="true":::
+:::image type="content" source="images/kernel-dma-protection.png" alt-text="Screenshot of Kernel DMA protection in System Information." lightbox="images/kernel-dma-protection.png" border="true":::
 
 If the current state of **Kernel DMA Protection** is **OFF** and **Hyper-V - Virtualization Enabled in Firmware** is **NO**:
 
@@ -92,7 +92,7 @@ No, Kernel DMA Protection only protects against drive-by DMA attacks after the O
 Not all devices and drivers support DMA-remapping. To check if a specific driver is opted into DMA-remapping, check the values corresponding to the DMA Remapping Policy property in the Details tab of a device in Device Manager*. A value of **0** or **1** means that the device driver doesn't support DMA-remapping. A value of **2** means that the device driver supports DMA-remapping. If the property isn't available, then the device driver doesn't support DMA-remapping.
 Check the driver instance for the device you're testing. Some drivers may have varying values depending on the location of the device (internal vs. external).
 
-:::image type="content" source="images/device-details.png" alt-text="Device details for a Thunderbolt controller showing a value of 2." border="false":::
+:::image type="content" source="images/device-details.png" alt-text="Screenshot of device details for a Thunderbolt controller showing a value of 2." border="false":::
 
 ### When the drivers for PCI or Thunderbolt 3 peripherals don't support DMA-remapping?
 
