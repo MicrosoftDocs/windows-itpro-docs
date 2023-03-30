@@ -8,7 +8,10 @@ ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
-ms.date: 08/11/2017
+ms.date: 03/29/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 and later</a>
 ms.collection:
   - highpri
   - tier2
@@ -20,17 +23,17 @@ Mobile device enrollment is the first phase of enterprise management. The device
 
 The enrollment process includes the following steps:
 
-1.  Discovery of the enrollment endpoint
+1. Discovery of the enrollment endpoint
 
-    This step provides the enrollment endpoint configuration settings.
+  This step provides the enrollment endpoint configuration settings.
 
-2.  Certificate installation
+1. Certificate installation
 
-    This step handles user authentication, certificate generation, and certificate installation. The installed certificates will be used in the future to manage client/server Secure Sockets Layer (SSL) mutual authentication.
+  This step handles user authentication, certificate generation, and certificate installation. The installed certificates will be used in the future to manage client/server Secure Sockets Layer (SSL) mutual authentication.
 
-3.  DM Client provisioning
+1. DM Client provisioning
 
-    This step configures the Device Management (DM) client to connect to a Mobile Device Management (MDM) server after enrollment via DM SyncML over HTTPS (also known as Open Mobile Alliance Device Management (OMA DM) XML).
+  This step configures the Device Management (DM) client to connect to a Mobile Device Management (MDM) server after enrollment via DM SyncML over HTTPS (also known as Open Mobile Alliance Device Management (OMA DM) XML).
 
 ## Enrollment protocol
 
@@ -39,28 +42,33 @@ There are many changes made to the enrollment protocol to better support various
 The enrollment process involves the following steps:
 
 ### Discovery request
-   The discovery request is a simple HTTP post call that returns XML over HTTP. The returned XML includes the authentication URL, the management service URL, and the user credential type.
+
+The discovery request is a simple HTTP post call that returns XML over HTTP. The returned XML includes the authentication URL, the management service URL, and the user credential type.
 
 ### Certificate enrollment policy
+
 The certificate enrollment policy configuration is an implementation of the MS-XCEP protocol, which is described in \[MS-XCEP\]: X.509 Certificate Enrollment Policy Protocol Specification. Section 4 of the specification provides an example of the policy request and response. The X.509 Certificate Enrollment Policy Protocol is a minimal messaging protocol that includes a single client request message (GetPolicies) with a matching server response message (GetPoliciesResponse). For more information, see [\[MS-XCEP\]: X.509 Certificate Enrollment Policy Protocol](/openspecs/windows_protocols/ms-xcep/08ec4475-32c2-457d-8c27-5a176660a210)
 
 ### Certificate enrollment
+
 The certificate enrollment is an implementation of the MS-WSTEP protocol.
 
 ### Management configuration
+
 The server sends provisioning XML that contains a server certificate (for SSL server authentication), a client certificate issued by enterprise CA, DM client bootstrap information (for the client to communicate with the management server), an enterprise application token (for the user to install enterprise applications), and the link to download the Company Hub application.
 
 The following topics describe the end-to-end enrollment process using various authentication methods:
 
--   [Federated authentication device enrollment](federated-authentication-device-enrollment.md)
--   [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
--   [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
+- [Federated authentication device enrollment](federated-authentication-device-enrollment.md)
+- [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
+- [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
 
-> [!Note]
+> [!NOTE]
 > As a best practice, don't use hardcoded server-side checks on values such as:
-> -   User agent string
-> -   Any fixed URIs that are passed during enrollment
-> -   Specific formatting of any value unless otherwise noted, such as the format of the device ID.
+>
+> - User agent string
+> - Any fixed URIs that are passed during enrollment
+> - Specific formatting of any value unless otherwise noted, such as the format of the device ID.
 
 ## Enrollment support for domain-joined devices
 
@@ -112,7 +120,7 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
 </s:envelope>
 ```
 
-**Sample error messages**
+**Sample error messages**:
 
 - **Namespace**: `s:`
   - **Subcode**: MessageFormat
@@ -156,7 +164,7 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
   - **Description**: The Mobile Device Management (MDM) server was not able to validate your account. Try again or contact your system administrator.
   - **HRESULT**: 80180007
 
-In Windows 10, version 1507, we added the deviceenrollmentserviceerror element. Here's an example:
+In Windows 10, version 1507, we added the deviceenrollmentserviceerror element. Here's an example:
 
 ```xml
 <s:envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
@@ -188,7 +196,7 @@ In Windows 10, version 1507, we added the deviceenrollmentserviceerror element.
 </s:envelope>
 ```
 
-**Sample error messages**
+**Sample error messages**:
 
 - **Subcode**: DeviceCapReached
   - **Error**: MENROLL_E_DEVICECAPREACHED
@@ -229,7 +237,7 @@ TraceID is a freeform text node that is logged. It should identify the server si
 
 ## Related topics
 
--   [MDM enrollment of Windows-based devices](mdm-enrollment-of-windows-devices.md)
--   [Federated authentication device enrollment](federated-authentication-device-enrollment.md)
--   [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
--   [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
+- [MDM enrollment of Windows-based devices](mdm-enrollment-of-windows-devices.md)
+- [Federated authentication device enrollment](federated-authentication-device-enrollment.md)
+- [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
+- [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
