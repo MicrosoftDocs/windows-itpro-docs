@@ -36,15 +36,15 @@ Communications are posted to, as appropriate for the type of communication, to t
 | Release start | Same as release schedule | The second Tuesday of every month. | Notification that the update is now being released into your environment. |
 | Release summary | Same as release schedule | The fourth Tuesday of every month. | Informs you of the percentage of eligible devices that were patched during the release. |
 
-If you donot wish to receive Standard communications for Windows Updates releases via email, you can choose to opt out.
+If you don't want to receive standard communications for Windows Updates releases via email, you can choose to opt out.
 
-**To opt out of receiving emails for Stanard communications:**
+**To opt out of receiving emails for standard communications:**
 
-1. Sign into the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Under **Tenant administration** in the **Windows Autopatch** section, select **Admin contacts**.
+1. Go to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Go to **Windows Autopatch** > **Tenant administration** > select **Admin contacts**.
 3. Select the admin contact you want to opt out for. 
-4. Click on **Edit Contact** button.
-5. Un-select **Send me emails for Windows update releases and status** option on the fly in pane.   
+4. Select **Edit Contact**.
+5. Clear the **Send me emails for Windows update releases and status** option in the fly-in pane.   
 6. Select **Save** to apply the changes. 
   
 ## Communications during release
