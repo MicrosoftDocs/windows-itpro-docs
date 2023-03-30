@@ -65,7 +65,7 @@ These events are found in the **AppLocker – MSI and Script** event log.
 
 ## WDAC policy activation events
 
-These events are found in the **CodeIntegrity - Operational** event log, unless otherwise noted.
+These events are found in the **CodeIntegrity - Operational** event log.
 
 | Event ID | Explanation |
 |--------|-----------|
@@ -78,28 +78,26 @@ These events are found in the **CodeIntegrity - Operational** event log, unless 
 | 3102 | Application Control policy refresh finished for *N* policies. |
 | 3103 | The system is ignoring the Application Control policy refresh. For example, an inbox Windows policy that doesn't meet the conditions for activation. |
 | 3105 | The system is attempting to refresh the Application Control policy with the specified ID. |
-| 8002 | This event is found in the **AppLocker - EXE and DLL** event log. When a process launches that matches a managed installer rule, this event is raised with PolicyName = MANAGEDINSTALLER found in the event Details. Events with PolicyName = EXE or DLL aren't related to WDAC. |
 
 ## Diagnostic events for Intelligent Security Graph (ISG) and Managed Installer (MI)
 
 > [!NOTE]
 > When Managed Installer is enabled, customers using LogAnalytics should be aware that Managed Installer may fire many 3091 events.  Customers may need to filter out these events to avoid high LogAnalytics costs.
 
-### WDAC diagnostic events 3090, 3091, and 3092
+The following events provide helpful diagnostic information when a WDAC policy includes the ISG or MI option. These events can help you debug why something was allowed/denied based on managed installer or ISG. Events 3090, 3091, and 3092 don't necessarily indicate a problem but should be reviewed in context with other events like 3076 or 3077.
 
-Events 3090, 3091 and 3092 provide helpful diagnostic information when a WDAC policy includes the ISG or MI option. These events can help you debug why something was allowed/denied based on managed installer or ISG. These events don't necessarily indicate a problem but should be reviewed in context with other events like 3076 or 3077.
-
-These events are found in the **CodeIntegrity - Operational** event log.
+These events are found in the **CodeIntegrity - Operational** event log, unless otherwise noted.
 
 | Event ID | Explanation |
 |--------|---------|
 | 3090 | *Optional* This event indicates that a file was allowed to run based purely on ISG or managed installer. |
 | 3091 | This event indicates that a file didn't have ISG or managed installer authorization and the Application Control policy is in audit mode. |
 | 3092 | This event is the enforcement mode equivalent of 3091. |
+| 8002 | This event is found in the **AppLocker - EXE and DLL** event log. When a process launches that matches a managed installer rule, this event is raised with PolicyName = MANAGEDINSTALLER found in the event Details. Events with PolicyName = EXE or DLL aren't related to WDAC. |
 
-The above events are reported per active policy on the system, so you may see multiple events for the same file.
+Events 3090, 3091, and 3092 are reported per active policy on the system, so you may see multiple events for the same file.
 
-#### ISG and MI diagnostic event details
+### ISG and MI diagnostic event details
 
 The following information is found in the details for 3090, 3091, and 3092 events.
 
@@ -114,7 +112,7 @@ These events are found in either the **CodeIntegrity - Operational** event log o
 | AuditEnabled | True if the Application Control policy is in audit mode, otherwise it is in enforce mode |
 | PolicyName | The name of the Application Control policy to which the event applies |
 
-#### Enabling ISG and MI diagnostic events
+### Enabling ISG and MI diagnostic events
 
 To enable 3090 allow events, create a TestFlags regkey with a value of 0x300 as shown in the following PowerShell command. Then restart your computer.
 
