@@ -17,21 +17,15 @@ appliesto:
 
 # Kernel DMA Protection
 
-Kernel DMA Protection is a Windows security feature that protects against external peripherals from gaining unauthorized access to memory. Physical threats such as drive-by direct memory access (DMA) attacks, typically happen quickly while the system owner isn't present. PCIe hot plug devices such as Thunderbolt, USB4, and CFexpress allow users to attach classes of external peripherals, including graphics cards or other PCI devices, to their devices with the plug-and-play ease of USB. Because PCI hot plug ports are external and easily accessible, devices are susceptible to drive-by DMA attacks.
+Kernel DMA Protection is a Windows security feature that protects against external peripherals from gaining unauthorized access to memory.
 
-Drive-by DMA attacks can lead to disclosure of sensitive information residing on a device, or injection of malware that allows attackers to bypass the lock screen or control devices remotely.
+PCIe hot plug devices such as Thunderbolt, USB4, and CFexpress allow users to attach classes of external peripherals, including graphics cards, to their devices with the plug-and-play ease of USB.\
+These devices are DMA-capable, and can access system memory and perform read and write operations without the need for the system processor's involvement. This capability is the reason behind the exceptional performance of PCI devices, but it also makes them susceptible to *drive-by DMA attacks*.
+
+Drive-by DMA attacks are attacks that occur while the owner of the system isn't present and usually take just a few minutes, with simple-to-moderate attacking tools (affordable, off-the-shelf hardware and software), that don't require the disassembly of the device. For example, attackers can plug in a USB-like device while the device owner is on a break, and walk away with all the secrets on the machine, or inject a malware that allows them to have full control over the device remotely while bypassing the lock screen.
 
 > [!NOTE]
 > Kernel DMA Protection feature doesn't protect against DMA attacks via 1394/FireWire, PCMCIA, CardBus, or ExpressCard.
-
-## Background
-
-PCI devices are DMA-capable, which enables them to access system memory and perform read and write operations without the need for the system processor's involvement. This feature is the reason behind the exceptional performance of PCI devices.
-Historically, PCI devices have primarily been found inside devices, either integrated into the motherboard or connected as a card. To access these devices, users had to turn off the system's power and disassemble the chassis.
-
-Today, this is no longer the case with hot plug PCIe ports. Because PCI hot plug ports are external and easily accessible, devices are susceptible to drive-by DMA attacks.
-
-Drive-by DMA attacks are attacks that occur while the owner of the system isn't present and usually take less than 10 minutes, with simple to moderate attacking tools (affordable, off-the-shelf hardware and software) that don't require the disassembly of the device. For example, an attacker can plug in a USB-like device while the device owner is on a break, and walk away with all the secrets on the machine, or inject a malware that allows them to have full control over the PC remotely.
 
 ## How Windows protects against DMA drive-by attacks
 
