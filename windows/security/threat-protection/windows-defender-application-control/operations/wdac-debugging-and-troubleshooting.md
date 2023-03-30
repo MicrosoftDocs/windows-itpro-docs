@@ -126,10 +126,10 @@ Having gathered the necessary diagnostic information from a device, you're ready
 1. Verify the set of WDAC policies that are active and enforced. Confirm that only those policies you expect to be active are currently active. Be aware of the [Windows inbox policies](inbox-wdac-policies.md) that may also be active. You can use either of these methods:
 
     - Review the output from *CiTool.exe -lp*, if applicable, which was saved to the CIDiag output directory as CiToolOutput.json. See [use Microsoft Edge to view the formatted json file](/microsoft-edge/devtools-guide-chromium/json-viewer/json-viewer).
-    - Review all [policy activation events](../event-id-explanations.md#wdac-policy-activation-events) from the core WDAC event log found at  **Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational**. Within the CIDiag output directory, this event log is called CIOperational.evtx.
+    - Review all [policy activation events](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#wdac-policy-activation-events) from the core WDAC event log found at  **Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational**. Within the CIDiag output directory, this event log is called CIOperational.evtx.
 
-2. Review any [block events for executables, dlls, and drivers](../event-id-explanations.md#wdac-block-events-for-executables-dlls-and-drivers) from the core WDAC event log found at  **Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational**. Within the CIDiag output directory, this event log is called CIOperational.evtx. Use information from the block events and their correlated 3089 signature details event(s) to investigate any blocks that are unexplained or unexpected. See the blocked executable example described later in this article for reference.
-3. Review any [block events for packaged apps, MSI installers, scripts, and COM objects](../event-id-explanations.md#wdac-block-events-for-packaged-apps-msi-installers-scripts-and-com-objects) from the core script enforcement event log found at  **Applications and Services logs – Microsoft – Windows – AppLocker – MSI and Script**. Within the CIDiag output directory, this event log is called ALMsiAndScript.evtx. Use information from the block events and their correlated 8038 signature details event(s) to investigate any blocks that are unexplained or unexpected.
+2. Review any [block events for executables, dlls, and drivers](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#wdac-block-events-for-executables-dlls-and-drivers) from the core WDAC event log found at  **Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational**. Within the CIDiag output directory, this event log is called CIOperational.evtx. Use information from the block events and their correlated 3089 signature details event(s) to investigate any blocks that are unexplained or unexpected. See the blocked executable example described later in this article for reference.
+3. Review any [block events for packaged apps, MSI installers, scripts, and COM objects](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#wdac-block-events-for-packaged-apps-msi-installers-scripts-and-com-objects) from the core script enforcement event log found at  **Applications and Services logs – Microsoft – Windows – AppLocker – MSI and Script**. Within the CIDiag output directory, this event log is called ALMsiAndScript.evtx. Use information from the block events and their correlated 8038 signature details event(s) to investigate any blocks that are unexplained or unexpected.
 
 Most WDAC-related issues, including app and script failures, can be diagnosed using the preceding steps.
 
@@ -143,15 +143,15 @@ Here's an example of detailed EventData from a typical WDAC enforcement mode blo
 <details>
   <summary>Expand here to explore an example 3077 WDAC block event.</summary>
 
-![Example 3077 block event for PowerShell.exe.](../images/event-3077.png)
+![Example 3077 block event for PowerShell.exe.](/windows/security/threat-protection/windows-defender-application-control/images/event-3077.png)
 
 | Element name | Description |
 | ----- | ----- |
 | System - Correlation - \[ActivityID\] | **Not shown in screenshot** <br> Use the correlation ActivityID to match a WDAC block event with one or more 3089 signature events. |
 | File Name | The file's path and name on disk that was blocked from running. Since the name on disk is mutable, this value **isn't** the one used when creating WDAC file rules with `-Level FileName`. Instead, see the OriginalFileName element later in this table. |
 | Process Name | The path and name of the file that attempted to run the blocked file. Also called the parent process. |
-| Requested Signing Level | The Windows signing authorization level the code needed to pass in order to run. See [Requested and validated signing level](../event-tag-explanations.md#requested-and-validated-signing-level). |
-| Validated Signing Level | The Windows signing authorization level the code was given. See [Requested and validated signing level](../event-tag-explanations.md#requested-and-validated-signing-level). |
+| Requested Signing Level | The Windows signing authorization level the code needed to pass in order to run. See [Requested and validated signing level](/windows/security/threat-protection/windows-defender-application-control/event-tag-explanations#requested-and-validated-signing-level). |
+| Validated Signing Level | The Windows signing authorization level the code was given. See [Requested and validated signing level](/windows/security/threat-protection/windows-defender-application-control/event-tag-explanations#requested-and-validated-signing-level). |
 | Status | Windows NT status code. You can use `certutil.exe -error <status>` to look up the meaning of the status code. |
 | SHA1 Hash | The SHA1 Authenticode hash for the blocked file. |
 | SHA256 Hash | The SHA256 Authenticode hash for the blocked file. |
@@ -177,7 +177,7 @@ Here's an example of detailed EventData from a typical WDAC enforcement mode blo
 <details>
   <summary>Expand here to explore an example 3089 WDAC signature information event.</summary>
 
-![Example 3089 signature information event for PowerShell.exe.](../images/event-3089.png)
+![Example 3089 signature information event for PowerShell.exe.](/windows/security/threat-protection/windows-defender-application-control/images/event-3089.png)
 
 | Element name | Description |
 | ----- | ----- |
@@ -185,9 +185,9 @@ Here's an example of detailed EventData from a typical WDAC enforcement mode blo
 | TotalSignatureCount | The total number of signatures detected for the blocked file. |
 | Signature | The index count, starting at 0, of the current signature shown in this 3089 event. If the file had multiple signatures, you'll find other 3089 events for the other signatures. |
 | Hash | The hash value that WDAC used to match the file. This value should match one of the four hashes shown on the 3077 or 3076 block event. If no signatures were found for the file (TotalSignatureCount = 0), then only the hash value is shown. |
-| SignatureType | The [type of signature](../event-tag-explanations.md#signaturetype). |
-| ValidatedSigningLevel | The Windows signing authorization level the signature met. See [Requested and validated signing level](../event-tag-explanations.md#requested-and-validated-signing-level). |
-| VerificationError | The reason this particular signature failed to pass the WDAC policy. See [VerificationError](../event-tag-explanations.md#verificationerror). |
+| SignatureType | The [type of signature](/windows/security/threat-protection/windows-defender-application-control/event-tag-explanations#signaturetype). |
+| ValidatedSigningLevel | The Windows signing authorization level the signature met. See [Requested and validated signing level](/windows/security/threat-protection/windows-defender-application-control/event-tag-explanations#requested-and-validated-signing-level). |
+| VerificationError | The reason this particular signature failed to pass the WDAC policy. See [VerificationError](/windows/security/threat-protection/windows-defender-application-control/event-tag-explanations#verificationerror). |
 | PublisherName | The common name (CN) value from the leaf certificate. |
 | IssuerName | The CN value from the highest available certificate in the certificate chain. This level is typically one certificate below the root. |
 | PublisherTBSHash | The TBS hash of the leaf certificate. |
@@ -251,7 +251,7 @@ This condition may exist if:
 - A policy was incorrectly deployed to the device.
 - An attacker with administrator access has applied a policy to cause denial of service for some critical processes.
 
-To resolve such an issue, follow the instructions to [Remove WDAC policies](../disable-windows-defender-application-control-policies.md) for the identified policy.
+To resolve such an issue, follow the instructions to [Remove WDAC policies](/windows/security/threat-protection/windows-defender-application-control/disable-windows-defender-application-control-policies) for the identified policy.
 
 </details>
 
@@ -265,10 +265,10 @@ Some apps alter their behavior when a user mode WDAC policy is active, which can
 
 Try to isolate the root cause by doing the following actions:
 
-- Check for events in [other event logs](#other-windows-event-logs-that-may-be-useful) corresponding with the app failures.
-- Temporarily replace the WDAC policy with another policy that [disables script enforcement](../design/script-enforcement.md) and retest.
-- Temporarily replace the WDAC policy with another policy that [allows all COM objects](../allow-com-object-registration-in-windows-defender-application-control-policy.md) and retest.
-- Temporarily replace the WDAC policy with another policy that relaxes other [policy rules](../select-types-of-rules-to-create.md#windows-defender-application-control-policy-rules) and retest.
+- Check the other event logs listed in section 1 of this article for events corresponding with the unexpected app failures.
+- Temporarily replace the WDAC policy with another policy that [disables script enforcement](/windows/security/threat-protection/windows-defender-application-control/design/script-enforcement) and retest.
+- Temporarily replace the WDAC policy with another policy that [allows all COM objects](/windows/security/threat-protection/windows-defender-application-control/allow-com-object-registration-in-windows-defender-application-control-policy) and retest.
+- Temporarily replace the WDAC policy with another policy that relaxes other [policy rules](/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create#windows-defender-application-control-policy-rules) and retest.
 
 </details>
 
@@ -281,14 +281,14 @@ Try to isolate the root cause by doing the following actions:
 To debug issues using managed installer, try these steps:
 
 - Check that the WDAC policy that is blocking the app includes the option to enable managed installer.
-- Check that the effective AppLocker policy $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLocker.xml is correct as described in [Automatically allow apps deployed by a managed installer](../configure-authorized-apps-deployed-with-a-managed-installer.md#create-and-deploy-an-applocker-policy-that-defines-your-managed-installer-rules-and-enables-services-enforcement-for-executables-and-dlls).
+- Check that the effective AppLocker policy $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLocker.xml is correct as described in [Automatically allow apps deployed by a managed installer](/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer#create-and-deploy-an-applocker-policy-that-defines-your-managed-installer-rules-and-enables-services-enforcement-for-executables-and-dlls).
 - Check that the AppLocker services are running. This information is found in $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt created in section 1 of this article.
 - Check that an AppLocker file exists called MANAGEDINSTALLER.APPLOCKER exists in the CiDiag folder created earlier. If not, repeat the steps to deploy and enable the managed installer AppLocker configuration.
 - Restart the managed installer process and check that an 8002 event is observed in the **AppLocker - EXE and DLL** event log for the managed installer process with PolicyName = MANAGEDINSTALLER. If instead you see an event with 8003 or 8004 with PolicyName = MANAGEDINSTALLER, then check the ManagedInstaller rules in the AppLocker policy XML and ensure a rule matches the managed installer process.
-- [Use fsutil.exe](../configure-wdac-managed-installer.md#using-fsutil-to-query-extended-attributes-for-managed-installer-mi) to verify files written by the managed installer process have the managed installer origin extended attribute. If not, redeploy the files with the managed installer and check again.
+- [Use fsutil.exe](/windows/security/threat-protection/windows-defender-application-control/configure-wdac-managed-installer#using-fsutil-to-query-extended-attributes-for-managed-installer-mi) to verify files written by the managed installer process have the managed installer origin extended attribute. If not, redeploy the files with the managed installer and check again.
 - Test installation of a different app using the managed installer.
 - Add another managed installer to your AppLocker policy and test installation using the other managed installer.
-- Check if the app is encountering a [known limitation with managed installer](../configure-authorized-apps-deployed-with-a-managed-installer.md#known-limitations-with-managed-installer). If so, you must authorize the app using other means.
+- Check if the app is encountering a [known limitation with managed installer](/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer#known-limitations-with-managed-installer). If so, you must authorize the app using other means.
 
 </details>
 
@@ -302,7 +302,7 @@ To debug issues using ISG, try these steps:
 
 - Check that the WDAC policy that is blocking the app includes the option to enable the intelligent security graph.
 - Check that the AppLocker services are running. This information is found in $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt created in section 1 of this article.
-- [Use fsutil.exe](../configure-wdac-managed-installer.md#using-fsutil-to-query-extended-attributes-for-intelligent-security-graph-isg) to verify files have the ISG origin extended attribute. If not, redeploy the files with the managed installer and check again.
-- Check if the app is encountering a [known limitation with ISG](../use-windows-defender-application-control-with-intelligent-security-graph.md#known-limitations-with-using-the-isg).
+- [Use fsutil.exe](/windows/security/threat-protection/windows-defender-application-control/configure-wdac-managed-installer#using-fsutil-to-query-extended-attributes-for-intelligent-security-graph-isg) to verify files have the ISG origin extended attribute. If not, redeploy the files with the managed installer and check again.
+- Check if the app is encountering a [known limitation with ISG](/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph#known-limitations-with-using-the-isg).
 
 </details>
