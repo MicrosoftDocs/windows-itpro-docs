@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 **Enrolling into Windows Update for Business reports**
 
-To enroll into Windows Update for Business reports from the [Azure portal](portal.azure.com) or the [Microsoft 365 admin center](https://admin.microsoft.com) requires one of the following roles:
+To enroll into Windows Update for Business reports from the [Azure portal](https://portal.azure.com) or the [Microsoft 365 admin center](https://admin.microsoft.com) requires one of the following roles:
 
 - [Global Administrator role](/azure/active-directory/roles/permissions-reference#global-administrator)
 - [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator)
@@ -27,7 +27,7 @@ To enroll into Windows Update for Business reports from the [Azure portal](porta
 The data for Windows Update for Business reports is routed to a Log Analytics workspace for querying and analysis. To display or query any of Windows Update for Business reports data, users must have the following roles, or the equivalent permissions:
 
 - [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role can be used to read data
-- [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role can be used if write access is needed
+- [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role can be used if creating a new workspace or write access is needed
 
 > [!IMPORTANT]
-> Assigning either of the Log Analytics roles alone allows access to the [workbook](../wufb-reports-use.md), but doesn't allow access to the Microsoft 365 admin center. 
+> Assigning either of the Log Analytics roles alone allows access to the [workbook](../wufb-reports-use.md), but doesn't allow access to the Microsoft 365 admin center. For more information, see [Admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles). 
