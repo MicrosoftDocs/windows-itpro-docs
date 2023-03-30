@@ -76,7 +76,7 @@
         "identity-protection/**/*.md": "paoloma",
         "threat-protection/windows-firewall/*.md": "aaroncz"
       },
-      "ms.appliesto":{
+      "appliesto":{
         "identity-protection/**/*.md": [
         "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
         "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
