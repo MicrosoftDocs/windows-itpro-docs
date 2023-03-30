@@ -36,6 +36,8 @@ Communications are posted to, as appropriate for the type of communication, to t
 | Release start | Same as release schedule | The second Tuesday of every month. | Notification that the update is now being released into your environment. |
 | Release summary | Same as release schedule | The fourth Tuesday of every month. | Informs you of the percentage of eligible devices that were patched during the release. |
 
+### Opt out of receiving emails for standard communications
+
 If you don't want to receive standard communications for Windows Updates releases via email, you can choose to opt out.
 
 **To opt out of receiving emails for standard communications:**
