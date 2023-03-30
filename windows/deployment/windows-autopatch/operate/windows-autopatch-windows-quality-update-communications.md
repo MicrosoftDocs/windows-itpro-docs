@@ -1,7 +1,7 @@
 ---
 title: Windows quality update communications
 description: This article explains Windows quality update communications
-ms.date: 05/30/2022
+ms.date: 03/30/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -32,9 +32,22 @@ Communications are posted to, as appropriate for the type of communication, to t
 
 | Communication | Location | Timing | Description |
 | ----- | ----- |  ----- | ----- |
-| Release schedule | <ul><li>Message center</li><li>Messages blade</li><li>Email sent to your specified [admin contacts](../deploy/windows-autopatch-admin-contacts.md)</li><ul> | At least seven days prior to the second Tuesday of the month| Notification of the planned release window for each ring. |
+| Release schedule | <ul><li>Messages blade</li><li>Email sent to your specified [admin contacts](../deploy/windows-autopatch-admin-contacts.md)</li><ul> | At least seven days prior to the second Tuesday of the month| Notification of the planned release window for each ring. |
 | Release start | Same as release schedule | The second Tuesday of every month. | Notification that the update is now being released into your environment. |
 | Release summary | Same as release schedule | The fourth Tuesday of every month. | Informs you of the percentage of eligible devices that were patched during the release. |
+
+### Opt out of receiving emails for standard communications
+
+If you don't want to receive standard communications for Windows Updates releases via email, you can choose to opt out.
+
+**To opt out of receiving emails for standard communications:**
+
+1. Go to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Go to **Windows Autopatch** > **Tenant administration** > select **Admin contacts**.
+3. Select the admin contact you want to opt out for.
+4. Select **Edit Contact**.
+5. Clear the **Send me emails for Windows update releases and status** checkbox in the fly-in pane.
+6. Select **Save** to apply the changes.
 
 ## Communications during release
 
