@@ -86,7 +86,7 @@ These events are found in the **CodeIntegrity - Operational** event log.
 
 The following events provide helpful diagnostic information when a WDAC policy includes the ISG or MI option. These events can help you debug why something was allowed/denied based on managed installer or ISG. Events 3090, 3091, and 3092 don't necessarily indicate a problem but should be reviewed in context with other events like 3076 or 3077.
 
-These events are found in the **CodeIntegrity - Operational** event log, unless otherwise noted.
+Unless otherwise noted, these events are found in either the **CodeIntegrity - Operational** event log or the **CodeIntegrity - Verbose** event log depending on your version of Windows.
 
 | Event ID | Explanation |
 |--------|---------|
@@ -100,8 +100,6 @@ Events 3090, 3091, and 3092 are reported per active policy on the system, so you
 ### ISG and MI diagnostic event details
 
 The following information is found in the details for 3090, 3091, and 3092 events.
-
-These events are found in either the **CodeIntegrity - Operational** event log or the **CodeIntegrity - Verbose** event log, depending on your version of Windows.
 
 | Name | Explanation |
 |------|------|
