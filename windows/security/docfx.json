@@ -76,8 +76,11 @@
         "identity-protection/**/*.md": "paoloma",
         "threat-protection/windows-firewall/*.md": "aaroncz"
       },
-      "appliesto":{
-        "identity-protection/**/*.md": "- ✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later\"</a>"
+      "ms.appliesto":{
+        "identity-protection/**/*.md": [
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
+        ]
       },
       "ms.reviewer":{
         "identity-protection/hello-for-business/*.md": "erikdau",
