@@ -45,12 +45,12 @@ If you don't want to receive standard communications for Windows Updates release
 
 **To opt out of receiving emails for standard communications:**
 
-1. Go to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Go to the **[Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)**.
 2. Go to **Windows Autopatch** > **Tenant administration** > select **Admin contacts**.
 3. Select the admin contact you want to opt out for.
 4. Select **Edit Contact**.
 5. Clear the **Send me emails for Windows update releases and status** checkbox in the fly-in pane.
-6. Select **Save** to apply the changes. 
+6. Select **Save** to apply the changes.
 
 ## Communications during release
 
