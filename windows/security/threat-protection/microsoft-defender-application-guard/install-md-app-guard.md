@@ -103,9 +103,9 @@ Application Guard functionality is turned off by default. However, you can quick
 
    To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
-1. In the **Assignments** page, select the users or groups that will receive the policy.
+1. In the **Assignments** page, select the users or groups that will receive the policy. Select **Next**.
 
-   To learn more about assigning policies, see [Assign policies in Microsoft Intune](/mem/intune/configuration/device-profile-assign). Select **Next**.
+   To learn more about assigning policies, see [Assign policies in Microsoft Intune](/mem/intune/configuration/device-profile-assign).
 
 1. Review your settings, and then select **Create**.
 
