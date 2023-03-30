@@ -59,7 +59,7 @@ Application Guard functionality is turned off by default. However, you can quick
 
 ### Install from Control Panel
 
-1. Open the **Control Panel**, click **Programs,** and then select **Turn Windows features on or off**.
+1. Open the **Control Panel**, select **Programs,** and then select **Turn Windows features on or off**.
 
     ![Windows Features, turning on Microsoft Defender Application Guard.](images/turn-windows-features-on-off.png)
 
