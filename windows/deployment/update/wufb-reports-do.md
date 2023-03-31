@@ -86,6 +86,16 @@ In addition, you can see the both the encoded and decoded GroupIDs in the Delive
 ```powershell
 powershell Get-DeliveryOptimizationLog -Flush | Set-Content C:\dosvc.log
 ```
+```code
+
+These two lines are together in verbose logs:
+
+2023-02-15T12:33:11.3811337Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Using groupID = **<myEncodedGroupId>**
+2023-02-15T12:33:11.3811432Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Hashed groupID = **<myDecodedGroupId>**
+```
+
+ 
+
 ## Sample queries
 
 You can use the data in [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md)
