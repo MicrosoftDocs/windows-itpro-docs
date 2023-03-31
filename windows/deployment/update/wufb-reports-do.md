@@ -43,25 +43,28 @@ Windows Update for Business reports uses the following Delivery Optimization ter
 - **P2P Device Count**: The device count is determined by the number of devices that have received bytes from peers, for supported content types.
 - **Microsoft Connected Cache (MCC)**: Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. [Learn more] (https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache)
 - **MCC Device Count**: The device count is determined by the number of devices that have received bytes from the cache server, for supported content types.
-- **Total # of Devices**: The total number of devices with activity in last 28 days!
-**LAN Bytes**: Bytes delivered from LAN peers.
-**Group Bytes**: Bytes from Group peers. If a device is using Group DownloadMode, Delivery Optimization will first look for peers on the LAN and then in the Group. Therefore, if bytes are delivered from LAN peers, they will be calculated in 'LAN Bytes'.
-**CDN Bytes**: Bytes delivered from Content Delivery Network (CDN).
-**City**: City is determined based on the location of the device where the maximum amount of data is downloaded.
-**Country**: Country is determined based on the location of the device where the maximum amount of data is downloaded.
-**ISP**: ISP is determined based on the ISP delivering the maximum bytes to the device.
+- **Total # of Devices**: The total number of devices with activity in last 28 days.
+- **LAN Bytes**: Bytes delivered from LAN peers.
+- **Group Bytes**: Bytes from Group peers. If a device is using Group DownloadMode, Delivery Optimization will first look for peers on the LAN and then in the Group. Therefore, if bytes are delivered from LAN peers, they will be calculated in 'LAN Bytes'.
+- **CDN Bytes**: Bytes delivered from Content Delivery Network (CDN).
+- **City**: City is determined based on the location of the device where the maximum amount of data is downloaded.
+- **Country**: Country is determined based on the location of the device where the maximum amount of data is downloaded.
+- **ISP**: ISP is determined based on the ISP delivering the maximum bytes to the device.
 
 ## Calculations for Delivery Optimization
 There are sevaral calculated values that appear on the Delivery Optimization report.
+**% Effiency Calculations** 
 - Bandwidth Savings (BW SAV%) = BytesFromPeers + BytesFromGroupPeers + BytesFromCache)/
 (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN + BytesFromCache) * 100.0 (UCDOAggregatedStatus table)
 - % P2P Efficiency = (BytesFromPeers + BytesFromGroupPeers)/(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) * 100 (UCDOStatus table)
 - % MCC Efficiency = BytesFromCache/(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) * 100 (UCDOStatus table)
+**Bytes Calculations** 
 - TotalBytes = BytesFromCDN + BytesFromEnterpriseCache + BytesFromPeers + BytesFromGroupPeers (UCDOAggregatedStatus table)
 - BytesFromCDN = BytesFromCDN - BytesFromEnterpriseCache (UCDOAggregatedStatus table)
 - BytesFromPeers = BytesFromLAN (UCDOAggregatedStatus table)
 - BytesFromGroupPeers = BytesFromGroupPeers (UCDOAggregatedStatus table)
 - BytesFromCache = BytesFromCache (UCDOAggregatedStatus table)
+**Volume Calculations**
 - Volume by P2P = BytesFromPeers + BytesFromGroupPeers (UCDOStatus table)
 - Volume by MCC = BytesFromCache ((UCDOStatus table)
 - Volume by CDN = BytesFrom CDN (UCDOStatus table)
