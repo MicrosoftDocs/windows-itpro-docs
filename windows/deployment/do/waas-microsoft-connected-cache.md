@@ -22,7 +22,11 @@ ms.collection: tier3
 > [!IMPORTANT]
 > Microsoft Connected Cache is currently a preview feature. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
-Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. Microsoft Connected Cache has two main offerings: 1) Microsoft Connected Cache for Internet Service Providers and 2) Microsoft Connected Cache for Enterprise and Education (early preview). Both products are created and managed in the cloud portal.
+Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. Microsoft Connected Cache has two main offerings:
+- Microsoft Connected Cache for Internet Service Providers 
+- Microsoft Connected Cache for Enterprise and Education (early preview). 
+
+Both products are created and managed in the cloud portal.
 
 ## Microsoft Connected Cache for ISPs (preview)
 
@@ -34,7 +38,7 @@ Microsoft Connected Cache (MCC) for Internet Service Providers is currently in p
 ## Microsoft Connected Cache for Enterprise and Education (early preview)
 
 > [!NOTE]
-> We're still accepting Enterprise and Education customers to join the private preview. To register your interest, fill out the survey located at [https://aka.ms/MSConnectedCacheSignup](https://aka.ms/MSConnectedCacheSignup).
+> We're still accepting Enterprise and Education customers to join the early preview. To register your interest, fill out the survey located at [https://aka.ms/MSConnectedCacheSignup](https://aka.ms/MSConnectedCacheSignup).
 
 Microsoft Connected Cache (MCC) for Enterprise and Education (early preview) is a software-only caching solution that delivers Microsoft content within Enterprise and Education networks. MCC can be deployed to as many Windows servers, bare-metal servers, or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the client policy using management tools such as Intune.
 
