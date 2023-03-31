@@ -308,8 +308,6 @@ Figure 4 shows the Cryptography architecture that is used by the Windows operat
 
 ### Base CSP and smart card KSP properties in Windows
 
-The following properties are supported in versions of Windows designated in the **Applies To** list at the beginning of this topic.
-
 > **Note**&nbsp;&nbsp;The API definitions are located in WinCrypt.h and WinSCard.h.
 
 | **Property**          | **Description**  |

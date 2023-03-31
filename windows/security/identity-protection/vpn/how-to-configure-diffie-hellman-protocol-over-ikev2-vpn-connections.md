@@ -7,8 +7,6 @@ ms.topic: how-to
 
 # How to configure Diffie Hellman protocol over IKEv2 VPN connections
 
->Applies To: Windows Server (General Availability Channel), Windows Server 2016, Windows 10, Windows 11
-
 In IKEv2 VPN connections, the default configuration for Diffie Hellman group is Group 2, which is not secure for IKE exchanges.
 
 To secure the connections, update the configuration of VPN servers and clients by running VPN cmdlets.

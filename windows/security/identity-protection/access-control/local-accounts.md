@@ -62,7 +62,7 @@ Group Policy can be used to control the use of the local Administrators group au
 
 > [!IMPORTANT]
 > 
-> - Blank passwords are not allowed in the versions designated in the **Applies To** list at the beginning of this topic.
+> - Blank passwords are not allowed.
 >
 > - Even when the Administrator account has been disabled, it can still be used to gain access to a computer by using safe mode. In the Recovery Console or in safe mode, the Administrator account is automatically enabled. When normal operations are resumed, it is disabled. 
 
