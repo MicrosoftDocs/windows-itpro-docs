@@ -1,11 +1,8 @@
 ---
+ms.date: 01/06/2023
 title: Considerations when using Windows Defender Credential Guard
 description: Considerations and recommendations for certain scenarios when using Windows Defender Credential Guard.
-ms.date: 01/06/2023
 ms.topic: article
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # Considerations when using Windows Defender Credential Guard

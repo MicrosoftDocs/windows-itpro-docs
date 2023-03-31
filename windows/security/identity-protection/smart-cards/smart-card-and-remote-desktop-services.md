@@ -1,21 +1,9 @@
 ---
+ms.date: 09/24/2021
 title: Smart Card and Remote Desktop Services (Windows)
 description: This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: ardenw
-manager: aaroncz
 ms.topic: article
-ms.localizationpriority: medium
-ms.date: 09/24/2021
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
-ms.technology: itpro-security
+ms.reviewer: ardenw
 ---
 # Smart Card and Remote Desktop Services
 

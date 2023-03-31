@@ -1,21 +1,9 @@
 ---
 title: Smart Card Architecture (Windows)
 description: This topic for the IT professional describes the system architecture that supports smart cards in the Windows operating system.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
 ms.reviewer: ardenw
-manager: aaroncz
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 09/24/2021
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
-ms.technology: itpro-security
 ---
 
 # Smart Card Architecture
@@ -94,7 +82,7 @@ Figure 2 illustrates the relationship between the CryptoAPI, CSPs, the Smart Ca
 
 ### Caching with Base CSP and smart card KSP
 
-Smart card architecture uses caching mechanisms to assist in streamlining operations and to improve a user’s access to a PIN.
+Smart card architecture uses caching mechanisms to assist in streamlining operations and to improve a user's access to a PIN.
 
 -   [Data caching](#data-caching): The data cache provides for a single process to minimize smart card I/O operations.
 

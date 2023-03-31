@@ -1,17 +1,7 @@
 ---
 title: VPN and conditional access (Windows 10 and Windows 11)
 description: Learn how to integrate the VPN client with the Conditional Access Platform, so you can create access rules for Azure Active Directory (Azure AD) connected apps.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: pesmith
-manager: aaroncz
-ms.localizationpriority: medium
 ms.date: 09/23/2021
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
 ms.topic: conceptual
 ---
 
@@ -78,7 +68,7 @@ Two client-side configuration service providers are leveraged for VPN device com
    - Upon request, forward the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
    
 > [!NOTE]
-> Currently, it is required that certificates used for obtaining Kerberos tickets must be issued from an on-premises CA, and that SSO must be enabled in the user’s VPN profile. This will enable the user to access on-premises resources.
+> Currently, it is required that certificates used for obtaining Kerberos tickets must be issued from an on-premises CA, and that SSO must be enabled in the user's VPN profile. This will enable the user to access on-premises resources.
 > 
 > In the case of AzureAD-only joined devices (not hybrid joined devices), if the user certificate issued by the on-premises CA has the user UPN from AzureAD in Subject and SAN (Subject Alternative Name), the VPN profile must be modified to ensure that the client does not cache the credentials used for VPN authentication. To do this, after deploying the VPN profile to the client, modify the *Rasphone.pbk* on the client by changing the entry **UseRasCredentials** from 1 (default) to 0 (zero).
 
@@ -91,13 +81,13 @@ The VPN client side connection flow works as follows:
  
 When a VPNv2 Profile is configured with \<DeviceCompliance> \<Enabled>true<\/Enabled> the VPN client uses this connection flow:
 
-1.	 The VPN client calls into Windows 10’s or Windows 11’s Azure AD Token Broker, identifying itself as a VPN client.
+1.     The VPN client calls into Windows 10's or Windows 11's Azure AD Token Broker, identifying itself as a VPN client.
 
-2.	 The Azure AD Token Broker authenticates to Azure AD and provides it with information about the device trying to connect. The Azure AD Server checks if the device is in compliance with the policies.
+2.     The Azure AD Token Broker authenticates to Azure AD and provides it with information about the device trying to connect. The Azure AD Server checks if the device is in compliance with the policies.
 
-3.	 If compliant, Azure AD requests a short-lived certificate.
+3.     If compliant, Azure AD requests a short-lived certificate.
 
-4.	 Azure AD pushes down a short-lived certificate to the Certificate Store via the Token Broker. The Token Broker then returns control back over to the VPN client for further connection  processing.
+4.     Azure AD pushes down a short-lived certificate to the Certificate Store via the Token Broker. The Token Broker then returns control back over to the VPN client for further connection  processing.
 
 5. The VPN client uses the Azure AD-issued certificate to authenticate with the VPN server.
 
