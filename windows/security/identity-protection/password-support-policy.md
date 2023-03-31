@@ -1,22 +1,13 @@
 ---
 title: Technical support policy for lost or forgotten passwords
 description: Outlines the ways in which Microsoft can help you reset a lost or forgotten password, and provides links to instructions for doing so.
-ms.custom: 
-  - CI ID 110060
-  - CSSTroubleshoot
-ms.prod: windows-client
 ms.topic: article
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
 ms.date: 11/20/2019
-ms.technology: itpro-security
 ---
 
 # Technical support policy for lost or forgotten passwords
 
-Microsoft takes security seriously. This is for your protection. Microsoft accounts, the Windows operating system, and other Microsoft products include passwords to help secure your information. This article provides some options that you can use to reset or recover your password if you forget it. If these options don’t work, Microsoft support engineers can't help you retrieve or circumvent a lost or forgotten password.
+Microsoft takes security seriously. This is for your protection. Microsoft accounts, the Windows operating system, and other Microsoft products include passwords to help secure your information. This article provides some options that you can use to reset or recover your password if you forget it. If these options don't work, Microsoft support engineers can't help you retrieve or circumvent a lost or forgotten password.
 
 If you lose or forget a password, you can use the links in this article to find published support information that will help you reset the password.
 

@@ -5,6 +5,7 @@ ms.date: 03/15/2023
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ms.collection:
   - highpri
   - tier1

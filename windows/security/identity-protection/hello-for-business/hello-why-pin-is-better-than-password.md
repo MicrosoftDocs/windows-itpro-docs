@@ -5,8 +5,6 @@ ms.collection:
   - highpri
   - tier1
 ms.date: 03/15/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: conceptual
 ---
 # Why a PIN is better than an online password

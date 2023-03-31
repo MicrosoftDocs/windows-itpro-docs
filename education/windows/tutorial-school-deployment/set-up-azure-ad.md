@@ -3,6 +3,7 @@ title: Set up Azure Active Directory
 description: Learn how to create and prepare your Azure AD tenant for an education environment.
 ms.date: 08/31/2022
 ms.topic: tutorial
+appliesto:
 ---
 
 # Set up Azure Active Directory
