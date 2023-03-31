@@ -23,7 +23,7 @@ _Applies to:_
 > [!NOTE]
 > All ports are outbound.
 
-This article lists the content and services endpoints to allow in your Firewall to be used by Microsoft Connected Cache. 
+This article lists the content and services endpoints to allow in your firewall to be used by Microsoft Connected Cache. 
 Use the table below to reference any particular content types or services endpoints that are required for [Connected Cache on a Configuration Manager Distribution Point](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) or for [Connected Cache Managed in Azure](../do/waas-microsoft-connected-cache), or both.
 
 |Domain Name  |Protocol/Port(s)  | Content Type | Additional Information | Microsoft Connected Cache Version |
