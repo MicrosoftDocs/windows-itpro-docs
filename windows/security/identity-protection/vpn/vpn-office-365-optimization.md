@@ -1,18 +1,8 @@
 ---
-title: Optimizing Office 365 traffic for remote workers with the native Windows 10 or Windows 11 VPN client
-description: tbd
-ms.prod: windows-client
+title: Optimizing Office 365 traffic for remote workers with the native Windows VPN client
+description: Learn how to optimize Office 365 traffic for remote workers with the native Windows VPN client
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 09/23/2021
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: pesmith
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
 ---
 # Optimizing Office 365 traffic for remote workers with the native Windows 10 and Windows 11 VPN client
 

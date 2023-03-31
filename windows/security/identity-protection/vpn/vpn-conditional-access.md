@@ -1,17 +1,7 @@
 ---
 title: VPN and conditional access (Windows 10 and Windows 11)
 description: Learn how to integrate the VPN client with the Conditional Access Platform, so you can create access rules for Azure Active Directory (Azure AD) connected apps.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: pesmith
-manager: aaroncz
-ms.localizationpriority: medium
 ms.date: 09/23/2021
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
 ms.topic: conceptual
 ---
 
@@ -63,43 +53,34 @@ After the server side is set up, VPN admins can add the policy settings for cond
 Two client-side configuration service providers are leveraged for VPN device compliance.
 
 - VPNv2 CSP DeviceCompliance settings:
-
-   - **Enabled**: enables the Device Compliance flow from the client. If marked as **true**, the VPN client attempts to communicate with Azure AD to get a certificate to use for authentication. The VPN should be set up to use certificate authentication and the VPN server must trust the server returned by Azure AD.
-   - **Sso**: entries under SSO should be used to direct the VPN client to use a certificate other than the VPN authentication certificate when accessing resources that require Kerberos authentication.
-   - **Sso/Enabled**: if this field is set to **true**, the VPN client looks for a separate certificate for Kerberos authentication.
-   - **Sso/IssuerHash**: hashes for the VPN client to look for the correct certificate for Kerberos authentication.
-   - **Sso/Eku**: comma-separated list of extended key usage (EKU) extensions for the VPN client to look for the correct certificate for Kerberos authentication.
-   
+  - **Enabled**: enables the Device Compliance flow from the client. If marked as **true**, the VPN client attempts to communicate with Azure AD to get a certificate to use for authentication. The VPN should be set up to use certificate authentication and the VPN server must trust the server returned by Azure AD.
+  - **Sso**: entries under SSO should be used to direct the VPN client to use a certificate other than the VPN authentication certificate when accessing resources that require Kerberos authentication.
+  - **Sso/Enabled**: if this field is set to **true**, the VPN client looks for a separate certificate for Kerberos authentication.
+  - **Sso/IssuerHash**: hashes for the VPN client to look for the correct certificate for Kerberos authentication.
+  - **Sso/Eku**: comma-separated list of extended key usage (EKU) extensions for the VPN client to look for the correct certificate for Kerberos authentication.
 - HealthAttestation CSP (not a requirement) - functions performed by the HealthAttestation CSP include:
+  - Collects TPM data used to verify health states
+  - Forwards the data to the Health Attestation Service (HAS)
+  - Provisions the Health Attestation Certificate received from the HAS
+  - Upon request, forward the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
 
-   - Collects TPM data used to verify health states
-   - Forwards the data to the Health Attestation Service (HAS)
-   - Provisions the Health Attestation Certificate received from the HAS
-   - Upon request, forward the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
-   
 > [!NOTE]
-> Currently, it is required that certificates used for obtaining Kerberos tickets must be issued from an on-premises CA, and that SSO must be enabled in the user’s VPN profile. This will enable the user to access on-premises resources.
-> 
+> It's required that certificates used for obtaining Kerberos tickets to be issued from an on-premises CA, and that SSO to be enabled in the user's VPN profile. This will enable the user to access on-premises resources.
 > In the case of AzureAD-only joined devices (not hybrid joined devices), if the user certificate issued by the on-premises CA has the user UPN from AzureAD in Subject and SAN (Subject Alternative Name), the VPN profile must be modified to ensure that the client does not cache the credentials used for VPN authentication. To do this, after deploying the VPN profile to the client, modify the *Rasphone.pbk* on the client by changing the entry **UseRasCredentials** from 1 (default) to 0 (zero).
 
 ## Client connection flow
 
 The VPN client side connection flow works as follows:
 
-> [!div class="mx-imgBorder"]
-> ![Device compliance workflow when VPN client attempts to connect.](images/vpn-device-compliance.png)
- 
+![Device compliance workflow when VPN client attempts to connect.](images/vpn-device-compliance.png)
+
 When a VPNv2 Profile is configured with \<DeviceCompliance> \<Enabled>true<\/Enabled> the VPN client uses this connection flow:
 
-1.	 The VPN client calls into Windows 10’s or Windows 11’s Azure AD Token Broker, identifying itself as a VPN client.
-
-2.	 The Azure AD Token Broker authenticates to Azure AD and provides it with information about the device trying to connect. The Azure AD Server checks if the device is in compliance with the policies.
-
-3.	 If compliant, Azure AD requests a short-lived certificate.
-
-4.	 Azure AD pushes down a short-lived certificate to the Certificate Store via the Token Broker. The Token Broker then returns control back over to the VPN client for further connection  processing.
-
-5. The VPN client uses the Azure AD-issued certificate to authenticate with the VPN server.
+1. The VPN client calls into Windows 10's or Windows 11's Azure AD Token Broker, identifying itself as a VPN client.
+1. The Azure AD Token Broker authenticates to Azure AD and provides it with information about the device trying to connect. The Azure AD Server checks if the device is in compliance with the policies.
+1. If compliant, Azure AD requests a short-lived certificate.
+1. Azure AD pushes down a short-lived certificate to the Certificate Store via the Token Broker. The Token Broker then returns control back over to the VPN client for further connection  processing.
+1. The VPN client uses the Azure AD-issued certificate to authenticate with the VPN server.
 
 ## Configure conditional access
 

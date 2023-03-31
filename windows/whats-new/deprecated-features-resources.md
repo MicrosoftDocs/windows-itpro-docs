@@ -9,7 +9,9 @@ author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.topic: reference
-ms.collection: highpri, tier1
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Resources for deprecated features

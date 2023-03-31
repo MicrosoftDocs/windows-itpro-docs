@@ -6,10 +6,12 @@ ms.localizationpriority: medium
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
+ms.topic: conceptual
 ms.technology: itpro-fundamentals
 ms.date: 01/05/2023
-ms.collection: highpri, tier1
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Features and functionality removed in Windows client

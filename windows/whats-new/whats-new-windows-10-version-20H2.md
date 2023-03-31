@@ -7,7 +7,9 @@ ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: high
 ms.topic: article
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
 ---
