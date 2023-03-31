@@ -42,6 +42,8 @@ Windows Update for Business reports uses the following Delivery Optimization ter
 - **Configurations**: Based on the DownloadMode configuration set via MDM, Group Policy, or end-user via the user interface.
 
 ## Calculations for Delivery Optimization
+There are sevaral calculated values that appear on the Delivery Optimization report. Here is a list of them with the associated formula.
+Bandwidth Savings (BW SAV%):
 <!--Check this formula w PG, might be VolCDN=-->
 Volume from the CDN is calculated with the following formula:
 BytesFromCDN = BytesFromCDN - BytesFromEnterpriseCache
