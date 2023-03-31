@@ -17,7 +17,7 @@ ms.technology: itpro-security
 
 - Windows 10
 - Windows 11
-- Windows Server 2016 and above
+- Windows Server 2016 and later
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
