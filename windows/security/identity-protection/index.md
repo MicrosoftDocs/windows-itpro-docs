@@ -1,17 +1,8 @@
 ---
-title: Identity and access management (Windows 10)
+title: Identity and access management
 description: Learn more about identity and access protection technologies in Windows.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 02/05/2018
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
 ---
 
 # Identity and access management

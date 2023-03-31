@@ -5,8 +5,6 @@ ms.collection:
   - highpri
   - tier1
 ms.date: 03/10/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: how-to
 ---
 

@@ -2,8 +2,6 @@
 title: Configure single sign-on (SSO) for Azure AD joined devices
 description: Learn how to configure single sign-on to on-premises resources for Azure AD-joined devices, using Windows Hello for Business.
 ms.date: 12/30/2022
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 # Configure single sign-on for Azure AD joined devices
