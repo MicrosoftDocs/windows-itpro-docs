@@ -28,10 +28,6 @@ This article describes how to debug and troubleshoot app and script failures whe
 
 Before debugging and troubleshooting WDAC issues, you must collect information from a device exhibiting the problem behavior.
 
-<br>
-<details>
-  <summary><b>Expand here for instructions on collecting WDAC diagnostic data.</b></summary>
-
 Run the following commands from an elevated PowerShell window to collect the diagnostic information you may need:
 
 1. Gather general WDAC diagnostic data and copy it to %userprofile%\AppData\Local\Temp\DiagOutputDir\CiDiag:
@@ -43,9 +39,9 @@ Run the following commands from an elevated PowerShell window to collect the dia
     If CiDiag.exe isn't present in your version of Windows, gather this information manually:
 
     - WDAC policy binaries from the [Windows and EFI system partitions](known-issues.md#wdac-policy-file-locations)
-    - WDAC event logs
-    - AppLocker event logs
-    - Other event logs that may contain useful information from other Windows apps and services
+    - [WDAC event logs](#core-wdac-event-logs)
+    - [AppLocker event logs](#core-wdac-event-logs)
+    - [Other event logs that may contain useful information](#other-windows-event-logs-that-may-be-useful) from other Windows apps and services
 
 2. Save the device's System Information to the CiDiag folder:
 
@@ -64,6 +60,9 @@ Run the following commands from an elevated PowerShell window to collect the dia
     ```powershell
     reg.exe query HKLM\Software\Policies\Microsoft\Windows\SrpV2 /s > $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerRegistry.txt; reg.exe query HKLM\Software\Policies\Microsoft\Windows\AppidPlugins /s >> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerRegistry.txt; reg.exe query HKLM\System\CurrentControlSet\Control\Srp\ /s >> $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerRegistry.txt
     ```
+
+   > [!NOTE]
+   > You may see an error that the system was unable to find the specified registry key or value. This error doesn't indicate a problem and can be ignored.
 
 5. Copy any AppLocker policy files from  %windir%System32\AppLocker to the CiDiag folder:
 
@@ -113,15 +112,9 @@ Sometimes, you may be able to supplement the information contained in the core W
 - *Windows - Application*
 - *Windows - System*
 
-</details>
-
 ## 2 - Use the diagnostic and log data to identify problems
 
 Having gathered the necessary diagnostic information from a device, you're ready to begin your analysis of the diagnostic data collected in the previous section.
-
-<br>
-<details>
-  <summary><b>Expand here for steps on analyzing WDAC diagnostic data.</b></summary>
 
 1. Verify the set of WDAC policies that are active and enforced. Confirm that only those policies you expect to be active are currently active. Be aware of the [Windows inbox policies](inbox-wdac-policies.md) that may also be active. You can use either of these methods:
 
@@ -138,10 +131,6 @@ Most WDAC-related issues, including app and script failures, can be diagnosed us
 Here's an example of detailed EventData from a typical WDAC enforcement mode block event 3077, and one of its correlated 3089 signature information events. The tables that follow each event screenshot describe some of the elements contained in the events. Following the event descriptions is a step-by-step walkthrough explaining how to use the events to understand why the block occurred.
 
 #### Event 3077 - WDAC enforcement block event
-
-<br>
-<details>
-  <summary>Expand here to explore an example 3077 WDAC block event.</summary>
 
 ![Example 3077 block event for PowerShell.exe.](/windows/security/threat-protection/windows-defender-application-control/images/event-3077.png)
 
@@ -169,13 +158,7 @@ Here's an example of detailed EventData from a typical WDAC enforcement mode blo
 | UserWriteable | A boolean value indicating if the file was in a user-writeable location. This information is useful for diagnosing issues when allowing by FilePath rules. |
 | PackageFamilyName | The Package Family Name for the packaged app (MSIX) that includes the blocked file. |
 
-</details>
-
 #### Event 3089 - WDAC signature information event
-
-<br>
-<details>
-  <summary>Expand here to explore an example 3089 WDAC signature information event.</summary>
 
 ![Example 3089 signature information event for PowerShell.exe.](/windows/security/threat-protection/windows-defender-application-control/images/event-3089.png)
 
@@ -192,8 +175,6 @@ Here's an example of detailed EventData from a typical WDAC enforcement mode blo
 | IssuerName | The CN value from the highest available certificate in the certificate chain. This level is typically one certificate below the root. |
 | PublisherTBSHash | The TBS hash of the leaf certificate. |
 | IssuerTBSHash | The TBS hash of the highest available certificate in the certificate chain. This level is typically one certificate below the root. |
-
-</details>
 
 #### Step-by-step walkthrough of the example 3077 and 3089 events
 
@@ -220,26 +201,14 @@ It's important to review the information for each correlated 3089 event as each 
 >
 > In the case of the 3089 event, on the other hand, ValidatedSigningLevel tells us the potential **maximum** level the signature could receive. We must use the VerificationError to understand why the signature was rejected.
 
-</details>
-
 ## 3 - Resolve common problems
 
 Having analyzed the WDAC diagnostic data, you can take steps to resolve the issue or do more debugging steps. Following are some common problems and steps you can try to resolve or further isolate the root issue:
-
-<br>
-<details>
-  <summary><b>Issue: A file was blocked that you want to allow.</b></summary>
 
 ### Issue: A file was blocked that you want to allow
 
 - Use data from the core WDAC event logs to add rules to allow the blocked file.
 - Redeploy the file or app using a managed installer if your policy trusts managed installers.
-
-</details>
-
-<br>
-<details>
-  <summary><b>Issue: A policy is active that is unexpected.</b></summary>
 
 ### Issue: A policy is active that is unexpected
 
@@ -253,12 +222,6 @@ This condition may exist if:
 
 To resolve such an issue, follow the instructions to [Remove WDAC policies](/windows/security/threat-protection/windows-defender-application-control/disable-windows-defender-application-control-policies) for the identified policy.
 
-</details>
-
-<br>
-<details>
-  <summary><b>Issue: An unhandled app failure is occurring and no WDAC events are observed.</b></summary>
-
 ### Issue: An unhandled app failure is occurring and no WDAC events are observed
 
 Some apps alter their behavior when a user mode WDAC policy is active, which can result in unexpected failures. It can also be a side-effect of script enforcement for apps that don't properly handle the enforcement behaviors implemented by the script hosts.
@@ -269,12 +232,6 @@ Try to isolate the root cause by doing the following actions:
 - Temporarily replace the WDAC policy with another policy that [disables script enforcement](/windows/security/threat-protection/windows-defender-application-control/design/script-enforcement) and retest.
 - Temporarily replace the WDAC policy with another policy that [allows all COM objects](/windows/security/threat-protection/windows-defender-application-control/allow-com-object-registration-in-windows-defender-application-control-policy) and retest.
 - Temporarily replace the WDAC policy with another policy that relaxes other [policy rules](/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create#windows-defender-application-control-policy-rules) and retest.
-
-</details>
-
-<br>
-<details>
-  <summary><b>Issue: An app deployed by a managed installer is not working.</b></summary>
 
 ### Issue: An app deployed by a managed installer isn't working
 
@@ -290,12 +247,6 @@ To debug issues using managed installer, try these steps:
 - Add another managed installer to your AppLocker policy and test installation using the other managed installer.
 - Check if the app is encountering a [known limitation with managed installer](/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer#known-limitations-with-managed-installer). If so, you must authorize the app using other means.
 
-</details>
-
-<br>
-<details>
-  <summary><b>Issue: An app you expected the ISG to allow is not working.</b></summary>
-
 ### Issue: An app you expected the Intelligent Security Graph (ISG) to allow isn't working
 
 To debug issues using ISG, try these steps:
@@ -304,5 +255,3 @@ To debug issues using ISG, try these steps:
 - Check that the AppLocker services are running. This information is found in $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt created in section 1 of this article.
 - [Use fsutil.exe](/windows/security/threat-protection/windows-defender-application-control/configure-wdac-managed-installer#using-fsutil-to-query-extended-attributes-for-intelligent-security-graph-isg) to verify files have the ISG origin extended attribute. If not, redeploy the files with the managed installer and check again.
 - Check if the app is encountering a [known limitation with ISG](/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph#known-limitations-with-using-the-isg).
-
-</details>

@@ -151,7 +151,7 @@ The rule means trust anything signed by a certificate that chains to this root C
 | 0| None |
 | 1| Unknown |
 | 2 | Self-Signed |
-| 3 | Authenticode |
+| 3 | Microsoft Authenticode(tm) Root Authority |
 | 4 | Microsoft Product Root 1997 |
 | 5 | Microsoft Product Root 2001 |
 | 6 | Microsoft Product Root 2010 |
