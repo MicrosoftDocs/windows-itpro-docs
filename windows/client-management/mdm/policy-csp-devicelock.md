@@ -4,7 +4,7 @@ description: Learn more about the DeviceLock Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -21,11 +21,164 @@ ms.topic: reference
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
+> [!IMPORTANT]
+> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+
 <!-- DeviceLock-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!IMPORTANT]
 > The DeviceLock CSP utilizes the [Exchange ActiveSync Policy Engine](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)). When password length and complexity rules are applied, all the local user and administrator accounts are marked to change their password at the next sign in to ensure complexity requirements are met. For more information, see [Password length and complexity supported by account types](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)#password-length-and-complexity-supported-by-account-types).
 <!-- DeviceLock-Editable-End -->
+
+<!-- AccountLockoutDuration-Begin -->
+## AccountLockoutDuration
+
+<!-- AccountLockoutDuration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- AccountLockoutDuration-Applicability-End -->
+
+<!-- AccountLockoutDuration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceLock/AccountLockoutDuration
+```
+<!-- AccountLockoutDuration-OmaUri-End -->
+
+<!-- AccountLockoutDuration-Description-Begin -->
+<!-- Description-Source-DDF -->
+Account lockout duration This security setting determines the number of minutes a locked-out account remains locked out before automatically becoming unlocked. The available range is from 0 minutes through 99,999 minutes. If you set the account lockout duration to 0, the account will be locked out until an administrator explicitly unlocks it. If an account lockout threshold is defined, the account lockout duration must be greater than or equal to the reset time. Default: None, because this policy setting only has meaning when an Account lockout threshold is specified.
+<!-- AccountLockoutDuration-Description-End -->
+
+<!-- AccountLockoutDuration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AccountLockoutDuration-Editable-End -->
+
+<!-- AccountLockoutDuration-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-99999]` |
+| Default Value  | 0 |
+<!-- AccountLockoutDuration-DFProperties-End -->
+
+<!-- AccountLockoutDuration-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Account lockout duration |
+| Path | Windows Settings > Security Settings > Account Policies > Account Lockout Policy |
+<!-- AccountLockoutDuration-GpMapping-End -->
+
+<!-- AccountLockoutDuration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLockoutDuration-Examples-End -->
+
+<!-- AccountLockoutDuration-End -->
+
+<!-- AccountLockoutThreshold-Begin -->
+## AccountLockoutThreshold
+
+<!-- AccountLockoutThreshold-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- AccountLockoutThreshold-Applicability-End -->
+
+<!-- AccountLockoutThreshold-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceLock/AccountLockoutThreshold
+```
+<!-- AccountLockoutThreshold-OmaUri-End -->
+
+<!-- AccountLockoutThreshold-Description-Begin -->
+<!-- Description-Source-DDF -->
+Account lockout threshold - This security setting determines the number of failed logon attempts that causes a user account to be locked out. A locked-out account cannot be used until it is reset by an administrator or until the lockout duration for the account has expired. You can set a value between 0 and 999 failed logon attempts. If you set the value to 0, the account will never be locked out. Failed password attempts against workstations or member servers that have been locked using either CTRL+ALT+DELETE or password-protected screen savers count as failed logon attempts. Default: 0.
+<!-- AccountLockoutThreshold-Description-End -->
+
+<!-- AccountLockoutThreshold-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AccountLockoutThreshold-Editable-End -->
+
+<!-- AccountLockoutThreshold-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-10]` |
+| Default Value  | 0 |
+<!-- AccountLockoutThreshold-DFProperties-End -->
+
+<!-- AccountLockoutThreshold-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Account lockout threshold |
+| Path | Windows Settings > Security Settings > Account Policies > Account Lockout Policy |
+<!-- AccountLockoutThreshold-GpMapping-End -->
+
+<!-- AccountLockoutThreshold-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLockoutThreshold-Examples-End -->
+
+<!-- AccountLockoutThreshold-End -->
+
+<!-- AllowAdministratorLockout-Begin -->
+## AllowAdministratorLockout
+
+<!-- AllowAdministratorLockout-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- AllowAdministratorLockout-Applicability-End -->
+
+<!-- AllowAdministratorLockout-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceLock/AllowAdministratorLockout
+```
+<!-- AllowAdministratorLockout-OmaUri-End -->
+
+<!-- AllowAdministratorLockout-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow Administrator account lockout This security setting determines whether the builtin Administrator account is subject to account lockout policy.
+<!-- AllowAdministratorLockout-Description-End -->
+
+<!-- AllowAdministratorLockout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowAdministratorLockout-Editable-End -->
+
+<!-- AllowAdministratorLockout-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 0 |
+<!-- AllowAdministratorLockout-DFProperties-End -->
+
+<!-- AllowAdministratorLockout-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Allow Administrator account lockout |
+| Path | Windows Settings > Security Settings > Account Policies > Account Lockout Policy |
+<!-- AllowAdministratorLockout-GpMapping-End -->
+
+<!-- AllowAdministratorLockout-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowAdministratorLockout-Examples-End -->
+
+<!-- AllowAdministratorLockout-End -->
 
 <!-- AllowIdleReturnWithoutPassword-Begin -->
 ## AllowIdleReturnWithoutPassword
@@ -202,7 +355,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 
 <!-- AlphanumericDevicePasswordRequired-Description-Begin -->
 <!-- Description-Source-DDF -->
-Determines the type of PIN or password required. This policy only applies if the DeviceLock/DevicePasswordEnabled policy is set to 0
+Determines the type of PIN or password required. This policy only applies if the DeviceLock/DevicePasswordEnabled policy is set to 0.
 <!-- AlphanumericDevicePasswordRequired-Description-End -->
 
 <!-- AlphanumericDevicePasswordRequired-Editable-Begin -->
@@ -567,7 +720,7 @@ Specifies the default lock screen and logon image shown when no user is signed i
 
 <!-- MaxDevicePasswordFailedAttempts-Description-Begin -->
 <!-- Description-Source-DDF -->
-The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality
+The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality.
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command. This policy has different behaviors on the mobile device and desktop. On a mobile device, when the user reaches the value set by this policy, then the device is wiped. On a desktop, when the user reaches the value set by this policy, it is not wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker is not enabled, then the policy cannot be enforced. Prior to reaching the failed attempts limit, the user is sent to the lock screen and warned that more failed attempts will lock their computer. When the user reaches the limit, the device automatically reboots and shows the BitLocker recovery page. This page prompts the user for the BitLocker recovery key. Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value. For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
@@ -612,10 +765,10 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <!-- MaximumPasswordAge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting determines the period of time (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If the maximum password age is between 1 and 999 days, the Minimum password age must be less than the maximum password age. If the maximum password age is set to 0, the minimum password age can be any value between 0 and 998 days
+This security setting determines the period of time (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If the maximum password age is between 1 and 999 days, the Minimum password age must be less than the maximum password age. If the maximum password age is set to 0, the minimum password age can be any value between 0 and 998 days.
 
 > [!NOTE]
-> It is a security best practice to have passwords expire every 30 to 90 days, depending on your environment. This way, an attacker has a limited amount of time in which to crack a user's password and have access to your network resources. Default 42.
+> It is a security best practice to have passwords expire every 30 to 90 days, depending on your environment. This way, an attacker has a limited amount of time in which to crack a user's password and have access to your network resources. Default: 42.
 <!-- MaximumPasswordAge-Description-End -->
 
 <!-- MaximumPasswordAge-Editable-Begin -->
@@ -1013,10 +1166,10 @@ Complexity requirements are enforced when passwords are changed or created.
 <!-- PasswordHistorySize-Description-Begin -->
 <!-- Description-Source-DDF -->
 Minimum password length
-This security setting determines the least number of characters that a password for a user account may contain. The maximum value for this setting is dependent on the value of the Relax minimum password length limits setting. If the Relax minimum password length limits setting is not defined, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and disabled, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and enabled, this setting may be configured from 0 to 128. Setting the required number of characters to 0 means that no password is required
+This security setting determines the least number of characters that a password for a user account may contain. The maximum value for this setting is dependent on the value of the Relax minimum password length limits setting. If the Relax minimum password length limits setting is not defined, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and disabled, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and enabled, this setting may be configured from 0 to 128. Setting the required number of characters to 0 means that no password is required.
 
 > [!NOTE]
-> By default, member computers follow the configuration of their domain controllers. Default 7 on domain controllers. 0 on stand-alone servers. Configuring this setting than 14 may affect compatibility with clients, services, and applications. Microsoft recommends that you only configure this setting larger than 14 after using the Minimum password length audit setting to test for potential incompatibilities at the new setting.
+> By default, member computers follow the configuration of their domain controllers. Default: 7 on domain controllers. 0 on stand-alone servers. Configuring this setting than 14 may affect compatibility with clients, services, and applications. Microsoft recommends that you only configure this setting larger than 14 after using the Minimum password length audit setting to test for potential incompatibilities at the new setting.
 <!-- PasswordHistorySize-Description-End -->
 
 <!-- PasswordHistorySize-Editable-Begin -->
@@ -1070,7 +1223,7 @@ Disables the lock screen camera toggle switch in PC Settings and prevents a came
 
 By default, users can enable invocation of an available camera on the lock screen.
 
-- If you enable this setting, users will no longer be able to enable or disable lock screen camera access in PC Settings, and the camera cannot be invoked on the lock screen.
+If you enable this setting, users will no longer be able to enable or disable lock screen camera access in PC Settings, and the camera cannot be invoked on the lock screen.
 <!-- PreventEnablingLockScreenCamera-Description-End -->
 
 <!-- PreventEnablingLockScreenCamera-Editable-Begin -->
@@ -1130,7 +1283,7 @@ Disables the lock screen slide show settings in PC Settings and prevents a slide
 
 By default, users can enable a slide show that will run after they lock the machine.
 
-- If you enable this setting, users will no longer be able to modify slide show settings in PC Settings, and no slide show will ever start.
+If you enable this setting, users will no longer be able to modify slide show settings in PC Settings, and no slide show will ever start.
 <!-- PreventLockScreenSlideShow-Description-End -->
 
 <!-- PreventLockScreenSlideShow-Editable-Begin -->
@@ -1168,6 +1321,56 @@ By default, users can enable a slide show that will run after they lock the mach
 <!-- PreventLockScreenSlideShow-Examples-End -->
 
 <!-- PreventLockScreenSlideShow-End -->
+
+<!-- ResetAccountLockoutCounterAfter-Begin -->
+## ResetAccountLockoutCounterAfter
+
+<!-- ResetAccountLockoutCounterAfter-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- ResetAccountLockoutCounterAfter-Applicability-End -->
+
+<!-- ResetAccountLockoutCounterAfter-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceLock/ResetAccountLockoutCounterAfter
+```
+<!-- ResetAccountLockoutCounterAfter-OmaUri-End -->
+
+<!-- ResetAccountLockoutCounterAfter-Description-Begin -->
+<!-- Description-Source-DDF -->
+Reset account lockout counter after - This security setting determines the number of minutes that must elapse after a failed logon attempt before the failed logon attempt counter is reset to 0 bad logon attempts. The available range is 1 minute to 99,999 minutes. If an account lockout threshold is defined, this reset time must be less than or equal to the Account lockout duration. Default: None, because this policy setting only has meaning when an Account lockout threshold is specified.
+<!-- ResetAccountLockoutCounterAfter-Description-End -->
+
+<!-- ResetAccountLockoutCounterAfter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ResetAccountLockoutCounterAfter-Editable-End -->
+
+<!-- ResetAccountLockoutCounterAfter-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[1-99999]` |
+| Default Value  | 0 |
+<!-- ResetAccountLockoutCounterAfter-DFProperties-End -->
+
+<!-- ResetAccountLockoutCounterAfter-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Reset account lockout counter after |
+| Path | Windows Settings > Security Settings > Account Policies > Account Lockout Policy |
+<!-- ResetAccountLockoutCounterAfter-GpMapping-End -->
+
+<!-- ResetAccountLockoutCounterAfter-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ResetAccountLockoutCounterAfter-Examples-End -->
+
+<!-- ResetAccountLockoutCounterAfter-End -->
 
 <!-- ScreenTimeoutWhileLocked-Begin -->
 ## ScreenTimeoutWhileLocked

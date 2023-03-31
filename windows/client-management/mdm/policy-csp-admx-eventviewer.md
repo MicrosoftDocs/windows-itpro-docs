@@ -4,7 +4,7 @@ description: Learn more about the ADMX_EventViewer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -97,7 +97,7 @@ This is the program that will be invoked when the user clicks the events.asp lin
 
 <!-- EventViewer_RedirectionProgramCommandLineParameters-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This specifies the command line parameters that will be passed to the events.asp program
+This specifies the command line parameters that will be passed to the events.asp program.
 <!-- EventViewer_RedirectionProgramCommandLineParameters-Description-End -->
 
 <!-- EventViewer_RedirectionProgramCommandLineParameters-Editable-Begin -->

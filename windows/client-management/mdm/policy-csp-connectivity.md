@@ -4,7 +4,7 @@ description: Learn more about the Connectivity Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -42,7 +42,7 @@ ms.topic: reference
 
 <!-- AllowBluetooth-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the user to enable Bluetooth or restrict access
+Allows the user to enable Bluetooth or restrict access.
 
 > [!NOTE]
 > This value is not supported in Windows Phone 8. 1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile. If this is not set or it is deleted, the default value of 2 (Allow) is used. Most restricted value is 0.
@@ -220,6 +220,7 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 
 <!-- AllowConnectedDevices-Description-Begin -->
 <!-- Description-Source-DDF -->
+
 > [!NOTE]
 > This policy requires reboot to take effect. Allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
 <!-- AllowConnectedDevices-Description-End -->
@@ -396,6 +397,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 
 <!-- AllowUSBConnection-Description-Begin -->
 <!-- Description-Source-DDF -->
+
 > [!NOTE]
 > Currently, this policy is supported only in HoloLens 2, HoloLens (1st gen) Commercial Suite, and HoloLens (1st gen) Development Edition. Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy does not affect USB charging. Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy is enforced. Most restricted value is 0.
 <!-- AllowUSBConnection-Description-End -->
@@ -811,7 +813,7 @@ As part of determining the connectivity level, NCSI performs one of two active t
 <!-- Description-Source-ADMX -->
 This policy setting configures secure access to UNC paths.
 
-- If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.
+If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.
 <!-- HardenedUNCPaths-Description-End -->
 
 <!-- HardenedUNCPaths-Editable-Begin -->
@@ -874,7 +876,7 @@ Determines whether a user can install and configure the Network Bridge.
 
 The Network Bridge allows users to create a layer 2 MAC bridge, enabling them to connect two or more network segements together. This connection appears in the Network Connections folder.
 
-- If you disable this setting or do not configure it, the user will be able to create and modify the configuration of a Network Bridge. Enabling this setting does not remove an existing Network Bridge from the user's computer.
+If you disable this setting or do not configure it, the user will be able to create and modify the configuration of a Network Bridge. Enabling this setting does not remove an existing Network Bridge from the user's computer.
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Description-End -->
 
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Editable-Begin -->

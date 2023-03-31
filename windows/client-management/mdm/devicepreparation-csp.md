@@ -4,7 +4,7 @@ description: Learn more about the DevicePreparation CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -31,6 +31,8 @@ The following list shows the DevicePreparation configuration service provider no
     - [ClassID](#bootstrapperagentclassid)
     - [ExecutionContext](#bootstrapperagentexecutioncontext)
     - [InstallationStatusUri](#bootstrapperagentinstallationstatusuri)
+  - [MDMProvider](#mdmprovider)
+    - [Progress](#mdmproviderprogress)
   - [PageEnabled](#pageenabled)
   - [PageSettings](#pagesettings)
   - [PageStatus](#pagestatus)
@@ -192,6 +194,84 @@ This node holds a URI that can be queried for the status of the Bootstrapper Age
 
 <!-- Device-BootstrapperAgent-InstallationStatusUri-End -->
 
+<!-- Device-MDMProvider-Begin -->
+## MDMProvider
+
+<!-- Device-MDMProvider-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- Device-MDMProvider-Applicability-End -->
+
+<!-- Device-MDMProvider-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DevicePreparation/MDMProvider
+```
+<!-- Device-MDMProvider-OmaUri-End -->
+
+<!-- Device-MDMProvider-Description-Begin -->
+<!-- Description-Source-DDF -->
+The subnode configures the settings for the MDMProvider.
+<!-- Device-MDMProvider-Description-End -->
+
+<!-- Device-MDMProvider-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-MDMProvider-Editable-End -->
+
+<!-- Device-MDMProvider-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | node |
+| Access Type | Get |
+<!-- Device-MDMProvider-DFProperties-End -->
+
+<!-- Device-MDMProvider-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-MDMProvider-Examples-End -->
+
+<!-- Device-MDMProvider-End -->
+
+<!-- Device-MDMProvider-Progress-Begin -->
+### MDMProvider/Progress
+
+<!-- Device-MDMProvider-Progress-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- Device-MDMProvider-Progress-Applicability-End -->
+
+<!-- Device-MDMProvider-Progress-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DevicePreparation/MDMProvider/Progress
+```
+<!-- Device-MDMProvider-Progress-OmaUri-End -->
+
+<!-- Device-MDMProvider-Progress-Description-Begin -->
+<!-- Description-Source-DDF -->
+Noode for reporting progress status as opaque data.
+<!-- Device-MDMProvider-Progress-Description-End -->
+
+<!-- Device-MDMProvider-Progress-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-MDMProvider-Progress-Editable-End -->
+
+<!-- Device-MDMProvider-Progress-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Get, Replace |
+<!-- Device-MDMProvider-Progress-DFProperties-End -->
+
+<!-- Device-MDMProvider-Progress-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-MDMProvider-Progress-Examples-End -->
+
+<!-- Device-MDMProvider-Progress-End -->
+
 <!-- Device-PageEnabled-Begin -->
 ## PageEnabled
 
@@ -297,7 +377,7 @@ This node configures specific settings for the Device Preparation page.
 
 <!-- Device-PageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node provides status of the Device Preparation page. Values are an enum: 0 = Disabled; 1 = Enabled; 2 = InProgress; 3 = Succeeded; 4 = Failed.
+This node provides status of the Device Preparation page. Values are an enum: 0 = Disabled; 1 = Enabled; 2 = InProgress; 3 = ExitedOnSuccess; 4 = ExitedOnFailure.
 <!-- Device-PageStatus-Description-End -->
 
 <!-- Device-PageStatus-Editable-Begin -->

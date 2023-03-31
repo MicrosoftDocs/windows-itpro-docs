@@ -946,9 +946,9 @@ The ApplicationControl CSP can also be managed locally from PowerShell or via Co
 3. Use WMI Interface:
 
     ```powershell
-        $namespace = "root\cimv2\mdm\dmmap"
-        $policyClassName = "MDM_AppControl_Policies"
-        $policyBase64 = …
+    $namespace = "root\cimv2\mdm\dmmap"
+    $policyClassName = "MDM_ApplicationControl_Policies01_01"
+    $policyBase64 = "<base64policy>"
     ```
 
 ### Deploying a policy via WMI Bridge

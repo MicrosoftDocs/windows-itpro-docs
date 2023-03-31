@@ -105,6 +105,8 @@
 - name: WDAC operational guide
   href: windows-defender-application-control-operational-guide.md
   items:
+    - name: WDAC debugging and troubleshooting
+      href: operations/wdac-debugging-and-troubleshooting.md
     - name: Understanding Application Control event IDs
       href: event-id-explanations.md
     - name: Understanding Application Control event tags

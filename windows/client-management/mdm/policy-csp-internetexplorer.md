@@ -4,7 +4,7 @@ description: Learn more about the InternetExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -48,7 +48,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to add a specific list of search providers to the user's default list of search providers. Normally, search providers can be added from third-party toolbars or in Setup. The user can also add a search provider from the provider's website.
 
-- If you enable this policy setting, the user can add and remove search providers, but only from the set of search providers specified in the list of policy keys for search providers (found under [HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\SearchScopes])
+- If you enable this policy setting, the user can add and remove search providers, but only from the set of search providers specified in the list of policy keys for search providers (found under [HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\SearchScopes]).
 
 > [!NOTE]
 > This list can be created from a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.
@@ -577,7 +577,7 @@ This policy setting lets you decide whether users can turn on Enterprise Mode fo
 
 If you turn this setting on, users can see and use the Enterprise Mode option from the Tools menu. If you turn this setting on, but don't specify a report location, Enterprise Mode will still be available to your users, but you won't get any reports.
 
-- If you disable or don't configure this policy setting, the menu option won't appear and users won't be able to run websites in Enterprise Mode.
+If you disable or don't configure this policy setting, the menu option won't appear and users won't be able to run websites in Enterprise Mode.
 <!-- AllowEnterpriseModeFromToolsMenu-Description-End -->
 
 <!-- AllowEnterpriseModeFromToolsMenu-Editable-Begin -->
@@ -701,7 +701,7 @@ We recommend that you do not allow insecure fallback in order to prevent a man-i
 
 This policy does not affect which security protocols are enabled.
 
-- If you disable this policy, system defaults will be used.
+If you disable this policy, system defaults will be used.
 <!-- AllowFallbackToSSL3-Description-End -->
 
 <!-- AllowFallbackToSSL3-Editable-Begin -->
@@ -2098,23 +2098,23 @@ This policy setting allows you to manage whether Internet Explorer checks for di
 Enables you to configure up to three versions of Microsoft Edge to open a redirected site (in order of preference). Use this policy if your environment is configured to redirect sites from Internet Explorer 11 to Microsoft Edge. If any of the chosen versions are not installed on the device, that preference will be bypassed.
 
 If both the Windows Update for the next version of Microsoft Edge* and Microsoft Edge Stable channel are installed, the following behaviors occur:
-- If you disable or don't configure this policy, Microsoft Edge Stable channel is used. This is the default behavior.
-- If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
+  - If you disable or don't configure this policy, Microsoft Edge Stable channel is used. This is the default behavior.
+  - If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
 1 = Microsoft Edge Stable
 2 = Microsoft Edge Beta version 77 or later
 3 = Microsoft Edge Dev version 77 or later
 4 = Microsoft Edge Canary version 77 or later
 
 If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge Stable channel are not installed, the following behaviors occur:
-- If you disable or don't configure this policy, Microsoft Edge version 45 or earlier is automatically used. This is the default behavior.
-- If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
+  - If you disable or don't configure this policy, Microsoft Edge version 45 or earlier is automatically used. This is the default behavior.
+  - If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
 0 = Microsoft Edge version 45 or earlier
 1 = Microsoft Edge Stable
 2 = Microsoft Edge Beta version 77 or later
 3 = Microsoft Edge Dev version 77 or later
 4 = Microsoft Edge Canary version 77 or later
 
-*For more information about the Windows update for the next version of Microsoft Edge including how to disable it, see <https://go.microsoft.com/fwlink/?linkid=2102115>. This update applies only to Windows 10 version 1709 and higher.
+- For more information about the Windows update for the next version of Microsoft Edge including how to disable it, see< https://go.microsoft.com/fwlink/?linkid=2102115>. This update applies only to Windows 10 version 1709 and higher.
 <!-- ConfigureEdgeRedirectChannel-Description-End -->
 
 <!-- ConfigureEdgeRedirectChannel-Editable-Begin -->
@@ -3160,8 +3160,8 @@ This policy setting controls whether to have background synchronization for feed
 This policy setting prevents Internet Explorer from running the First Run wizard the first time a user starts the browser after installing Internet Explorer or Windows.
 
 - If you enable this policy setting, you must make one of the following choices:
-- Skip the First Run wizard, and go directly to the user's home page.
-- Skip the First Run wizard, and go directly to the "Welcome to Internet Explorer" webpage.
+  - Skip the First Run wizard, and go directly to the user's home page.
+  - Skip the First Run wizard, and go directly to the "Welcome to Internet Explorer" webpage.
 
 Starting with Windows 8, the "Welcome to Internet Explorer" webpage is not available. The user's home page will display regardless of which option is chosen.
 
@@ -3616,13 +3616,13 @@ InPrivate Browsing prevents Internet Explorer from storing data about a user's b
 <!-- Description-Source-ADMX -->
 This policy lets you restrict launching of Internet Explorer as a standalone browser.
 
-- If you enable this policy, it
-- Prevents Internet Explorer 11 from launching as a standalone browser.
-- Restricts Internet Explorer's usage to Microsoft Edge's native 'Internet Explorer mode'.
-- Redirects all attempts at launching Internet Explorer 11 to Microsoft Edge Stable Channel browser.
-- Overrides any other policies that redirect to Internet Explorer 11.
+If you enable this policy, it:
+  - Prevents Internet Explorer 11 from launching as a standalone browser.
+  - Restricts Internet Explorer's usage to Microsoft Edge's native 'Internet Explorer mode'.
+  - Redirects all attempts at launching Internet Explorer 11 to Microsoft Edge Stable Channel browser.
+  - Overrides any other policies that redirect to Internet Explorer 11.
 
-If you disable, or don't configure this policy, all sites are opened using the current active browser settings
+If you disable, or don't configure this policy, all sites are opened using the current active browser settings.
 
 > [!NOTE]
 > Microsoft Edge Stable Channel must be installed for this policy to take effect.
@@ -4503,7 +4503,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- Description-Source-ADMX -->
 This policy setting lets admins enable extended Microsoft Edge Internet Explorer mode hotkeys, such as "Ctrl+S" to have "Save as" functionality.
 
-- If you enable this policy, extended hotkey functionality is enabled in Internet Explorer mode and work the same as Internet Explorer.
+If you enable this policy, extended hotkey functionality is enabled in Internet Explorer mode and work the same as Internet Explorer.
 
 If you disable, or don't configure this policy, extended hotkeys will not work in Internet Explorer mode.
 
@@ -5095,6 +5095,7 @@ This policy setting allows you to manage whether users can drag files or copy an
 This policy setting allows you to manage whether pages of the zone may download HTML fonts.
 
 - If you enable this policy setting, HTML fonts can be downloaded automatically.
+
 - If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
@@ -7256,6 +7257,7 @@ This policy setting determines whether users will be prompted for non user-initi
 This policy setting allows you to manage whether pages of the zone may download HTML fonts.
 
 - If you enable this policy setting, HTML fonts can be downloaded automatically.
+
 - If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
@@ -7921,7 +7923,7 @@ This policy setting specifies whether JScript or JScript9Legacy is loaded for MS
 
 - If you disable this policy, then JScript will be utilized.
 
-If this policy is left unconfigured, then MSHTML will use JScript9Legacy and MSXML/Cscript will use JScript.
+- If this policy is left unconfigured, then MSHTML will use JScript9Legacy and MSXML/Cscript will use JScript.
 <!-- JScriptReplacement-Description-End -->
 
 <!-- JScriptReplacement-Editable-Begin -->
@@ -7990,10 +7992,10 @@ Prevents intranet sites from being opened in any browser except Internet Explore
 We strongly recommend keeping this policy in sync with the 'Send all intranet sites to Internet Explorer' ('SendIntranetToInternetExplorer') policy. Additionally, it's best to enable this policy only if your intranet sites have known compatibility problems with Microsoft Edge.
 
 Related policies:
-- Send all intranet sites to Internet Explorer ('SendIntranetToInternetExplorer')
-- Send all sites not included in the Enterprise Mode Site List to Microsoft Edge ('RestrictIE')
+  - Send all intranet sites to Internet Explorer ('SendIntranetToInternetExplorer')
+  - Send all sites not included in the Enterprise Mode Site List to Microsoft Edge ('RestrictIE')
 
-For more info about how to use this policy together with other related policies to create the optimal configuration for your organization, see <https://go.microsoft.com/fwlink/?linkid=2094210>.
+For more info about how to use this policy together with other related policies to create the optimal configuration for your organization, see< https://go.microsoft.com/fwlink/?linkid=2094210>.
 <!-- KeepIntranetSitesInInternetExplorer-Description-End -->
 
 <!-- KeepIntranetSitesInInternetExplorer-Editable-Begin -->
@@ -8272,6 +8274,7 @@ This policy setting determines whether users will be prompted for non user-initi
 This policy setting allows you to manage whether pages of the zone may download HTML fonts.
 
 - If you enable this policy setting, HTML fonts can be downloaded automatically.
+
 - If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
@@ -9127,6 +9130,7 @@ This policy setting determines whether users will be prompted for non user-initi
 This policy setting allows you to manage whether pages of the zone may download HTML fonts.
 
 - If you enable this policy setting, HTML fonts can be downloaded automatically.
+
 - If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
@@ -9988,6 +9992,7 @@ This policy setting determines whether users will be prompted for non user-initi
 This policy setting allows you to manage whether pages of the zone may download HTML fonts.
 
 - If you enable this policy setting, HTML fonts can be downloaded automatically.
+
 - If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
@@ -10707,6 +10712,7 @@ This policy setting determines whether users will be prompted for non user-initi
 This policy setting allows you to manage whether pages of the zone may download HTML fonts.
 
 - If you enable this policy setting, HTML fonts can be downloaded automatically.
+
 - If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
@@ -11497,6 +11503,7 @@ This policy setting determines whether users will be prompted for non user-initi
 This policy setting allows you to manage whether pages of the zone may download HTML fonts.
 
 - If you enable this policy setting, HTML fonts can be downloaded automatically.
+
 - If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
@@ -12287,6 +12294,7 @@ This policy setting determines whether users will be prompted for non user-initi
 This policy setting allows you to manage whether pages of the zone may download HTML fonts.
 
 - If you enable this policy setting, HTML fonts can be downloaded automatically.
+
 - If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
@@ -13399,7 +13407,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- Description-Source-ADMX -->
 This policy setting lets admins reset zoom to default for HTML dialogs in Internet Explorer mode.
 
-- If you enable this policy, the zoom of an HTML dialog in Internet Explorer mode will not get propagated from its parent page.
+If you enable this policy, the zoom of an HTML dialog in Internet Explorer mode will not get propagated from its parent page.
 
 If you disable, or don't configure this policy, the zoom of an HTML dialog in Internet Explorer mode will be set based on the zoom of it's parent page.
 
@@ -14051,6 +14059,7 @@ This policy setting allows you to manage whether file downloads are permitted fr
 This policy setting allows you to manage whether pages of the zone may download HTML fonts.
 
 - If you enable this policy setting, HTML fonts can be downloaded automatically.
+
 - If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
@@ -16414,7 +16423,7 @@ Internet Explorer allows scripts to programmatically open, resize, and repositio
 <!-- Description-Source-ADMX -->
 This policy setting allows you to restrict the search providers that appear in the Search box in Internet Explorer to those defined in the list of policy keys for search providers (found under [HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\SearchScopes]). Normally, search providers can be added from third-party toolbars or in Setup, but the user can also add them from a search provider's website.
 
-- If you enable this policy setting, the user cannot configure the list of search providers on his or her computer, and any default providers installed do not appear (including providers installed from other applications). The only providers that appear are those in the list of policy keys for search providers
+- If you enable this policy setting, the user cannot configure the list of search providers on his or her computer, and any default providers installed do not appear (including providers installed from other applications). The only providers that appear are those in the list of policy keys for search providers.
 
 > [!NOTE]
 > This list can be created through a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.
@@ -16895,6 +16904,7 @@ This policy setting determines whether users will be prompted for non user-initi
 This policy setting allows you to manage whether pages of the zone may download HTML fonts.
 
 - If you enable this policy setting, HTML fonts can be downloaded automatically.
+
 - If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
