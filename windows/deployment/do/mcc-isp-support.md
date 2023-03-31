@@ -46,11 +46,11 @@ Did you previously had access to your cache nodes but it's now no longer accessi
 If this page is not resolving the issue you're facing with your cache node, you can use the **Diagnose and solve problems** functionality within your MCC resource to continue troubleshooting. **Diagnose and solve problems** contains solutions to most common problems that users may face as they onboard.
  
 You can find **Diagnose and solve problems** on the left pane within your MCC resource as seen below:
-:::image type="content" source="images/mcc-isp-diagnose-solve.png" alt-text="A screenshot of Azure portal showing the Diagnose and Solve problems tab on the left hand pane of Azure portal." lightbox="images/mcc-isp-diagnose-solve.png":::
+:::image type="content" source="images/mcc-isp-diagnose-solve.png" alt-text="A screenshot of Azure portal showing the Diagnose and Solve problems tab on the left hand pane of Azure portal.":::
 
 Within **Diagnose and solve problems**, select **Troubleshoot** under the type of problem you are facing and follow the prompts that narrow down the solution to the issue.
 
-:::image type="content" source="images/mcc-isp-diagnose-solve-troubleshoot.png" alt-text="A screenshot of Azure portal showing the option to select "Troubleshoot" to continue troubleshooting common issues related to the installation of Microsoft Connected Cache." lightbox="images/mcc-isp-diagnose-solve-troubleshoot.png":::
+:::image type="content" source="images/mcc-isp-diagnose-solve-troubleshoot.png" alt-text="A screenshot of Azure portal showing the option to select "Troubleshoot" to continue troubleshooting common issues related to the installation of Microsoft Connected Cache.":::
 
 ## Steps to obtain an Azure subscription ID
 To onboard onto Microsoft Connected Cache, you will need an Azure subscription ID. Follow the steps below to obtain your subscription ID. 
