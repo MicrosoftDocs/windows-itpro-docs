@@ -52,7 +52,7 @@ Windows Update for Business reports uses the following Delivery Optimization ter
 - **ISP**: ISP is determined based on the ISP delivering the maximum bytes to the device.
 
 ## Calculations for Delivery Optimization
-There are sevaral calculated values that appear on the Delivery Optimization report.
+There are sevaral calculated values that appear on the Delivery Optimization report. The table used for each calculation is listed for each, in parenthesis.
 
 **Effiency (%) Calculations** 
 - Bandwidth Savings (BW SAV%) = BytesFromPeers + BytesFromGroupPeers + BytesFromCache)/
