@@ -1,6 +1,4 @@
 ---
-author: paolomatarazzo
-ms.author: paoloma
 ms.date: 02/22/2022
 ms.topic: include
 ---
