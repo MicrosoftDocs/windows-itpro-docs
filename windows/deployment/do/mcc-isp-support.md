@@ -54,7 +54,7 @@ Within **Diagnose and solve problems**, select **Troubleshoot** under the type o
 :::image type="content" source="images/mcc-isp-diagnose-solve-troubleshoot.png" alt-text="A screenshot of Azure portal showing the option to select Troubleshoot to continue troubleshooting common issues related to the installation of Microsoft Connected Cache." lightbox="images/mcc-isp-diagnose-solve-troubleshoot.png":::
 
 ## Steps to obtain an Azure subscription ID
-To onboard onto Microsoft Connected Cache, you will need an Azure subscription ID. Follow the steps below to obtain your subscription ID. 
+To onboard onto Microsoft Connected Cache, you will need an Azure subscription ID. Follow the steps below to obtain your subscription ID:
 <!--Using include file, get-azure-subscription.md, for shared content-->
 [!INCLUDE [Get Azure subscription](includes/get-azure-subscription.md)]
 
