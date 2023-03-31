@@ -77,7 +77,7 @@ There are sevaral calculated values that appear on the Delivery Optimization rep
 In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash. You can create a mapping of decoded to encoded GroupIDs using the following PowerShell example:
 
 ```powershell
-$text = "65f64d93-a6c1-446b-95c2-c6117378002c`0" ;
+$text = "<myEncodedGroupID>" ;
 
 $hashObj = [System.Security.Cryptography.HashAlgorithm]::Create('sha256') ; $dig = $hashObj.ComputeHash([System.Text.Encoding]::Unicode.GetBytes($text)) ; $digB64 = [System.Convert]::ToBase64String($dig) ; Write-Host "$text ==> $digB64"
 ```
