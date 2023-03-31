@@ -110,5 +110,8 @@ Explanation of what the query displays
 
 ### Frequency Asked Questions
 
-**Data is showing as 'Unknown', what does that mean?**
+- **What time period does the Delivery Optimization data include?**
+Data is available for the last 28 days.
+
+- **Data is showing as 'Unknown', what does that mean?**
 You may see data in the report listed as 'Unknown'. This indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.
