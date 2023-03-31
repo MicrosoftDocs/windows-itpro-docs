@@ -3,6 +3,7 @@ title: Configure federation between Google Workspace and Azure AD
 description: Configuration of a federated trust between Google Workspace and Azure AD, with Google Workspace acting as an identity provider (IdP) for Azure AD.
 ms.date: 02/24/2023
 ms.topic: how-to
+appliesto:
 ---
 
 # Configure federation between Google Workspace and Azure AD

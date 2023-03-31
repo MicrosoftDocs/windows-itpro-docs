@@ -3,8 +3,6 @@ title: Password-less strategy
 description: Learn about the password-less strategy and how Windows Hello for Business implements this strategy in Windows 10 and Windows 11.
 ms.topic: conceptual
 ms.date: 05/24/2022
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ---
 
 # Password-less strategy

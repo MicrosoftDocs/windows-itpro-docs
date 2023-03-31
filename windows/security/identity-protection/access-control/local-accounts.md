@@ -1,15 +1,17 @@
 ---
+ms.date: 12/05/2022
 title: Local Accounts
 description: Learn how to secure and manage access to the resources on a standalone or member server for services or users.
-ms.date: 12/05/2022
+ms.topic: conceptual
 ms.collection: 
   - highpri
   - tier2
-ms.topic: article
 appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ---
 
 # Local Accounts
@@ -60,7 +62,7 @@ Group Policy can be used to control the use of the local Administrators group au
 
 > [!IMPORTANT]
 > 
-> - Blank passwords are not allowed in the versions designated in the **Applies To** list at the beginning of this topic.
+> - Blank passwords are not allowed.
 >
 > - Even when the Administrator account has been disabled, it can still be used to gain access to a computer by using safe mode. In the Recovery Console or in safe mode, the Administrator account is automatically enabled. When normal operations are resumed, it is disabled. 
 
