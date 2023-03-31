@@ -1,7 +1,7 @@
 ---
 title: Microsoft Connected Cache content and services endpoints
 description: List of fully qualified domain names, ports, and associated content types to use Delivery Optimization and Microsoft Connected Cache.
-ms.date: 07/26/2022
+ms.date: 03/31/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: reference
@@ -24,7 +24,7 @@ _Applies to:_
 > All ports are outbound.
 
 This article lists the content and services endpoints to allow in your firewall to be used by Microsoft Connected Cache. 
-Use the table below to reference any particular content types or services endpoints that are required for [Connected Cache on a Configuration Manager Distribution Point](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) or for [Connected Cache Managed in Azure](../do/waas-microsoft-connected-cache), or both.
+Use the table below to reference any particular content types or services endpoints that are required for [Connected Cache on a Configuration Manager distribution point](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache), [Connected Cache managed in Azure](waas-microsoft-connected-cache.md), or both.
 
 |Domain Name  |Protocol/Port(s)  | Content Type | Additional Information | Microsoft Connected Cache Version |
 |---------|---------|---------------|-------------------|-----------------|
