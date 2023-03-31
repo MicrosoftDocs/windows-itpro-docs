@@ -53,17 +53,20 @@ Windows Update for Business reports uses the following Delivery Optimization ter
 
 ## Calculations for Delivery Optimization
 There are sevaral calculated values that appear on the Delivery Optimization report.
-**% Effiency Calculations** 
+
+**Effiency (%) Calculations** 
 - Bandwidth Savings (BW SAV%) = BytesFromPeers + BytesFromGroupPeers + BytesFromCache)/
 (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN + BytesFromCache) * 100.0 (UCDOAggregatedStatus table)
 - % P2P Efficiency = (BytesFromPeers + BytesFromGroupPeers)/(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) * 100 (UCDOStatus table)
 - % MCC Efficiency = BytesFromCache/(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) * 100 (UCDOStatus table)
+
 **Bytes Calculations** 
 - TotalBytes = BytesFromCDN + BytesFromEnterpriseCache + BytesFromPeers + BytesFromGroupPeers (UCDOAggregatedStatus table)
 - BytesFromCDN = BytesFromCDN - BytesFromEnterpriseCache (UCDOAggregatedStatus table)
 - BytesFromPeers = BytesFromLAN (UCDOAggregatedStatus table)
 - BytesFromGroupPeers = BytesFromGroupPeers (UCDOAggregatedStatus table)
 - BytesFromCache = BytesFromCache (UCDOAggregatedStatus table)
+
 **Volume Calculations**
 - Volume by P2P = BytesFromPeers + BytesFromGroupPeers (UCDOStatus table)
 - Volume by MCC = BytesFromCache ((UCDOStatus table)
