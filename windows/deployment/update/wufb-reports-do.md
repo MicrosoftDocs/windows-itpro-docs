@@ -69,7 +69,7 @@ There are sevaral calculated values that appear on the Delivery Optimization rep
 
 **Volume Calculations**
 - Volume by P2P = BytesFromPeers + BytesFromGroupPeers (UCDOStatus table)
-- Volume by MCC = BytesFromCache ((UCDOStatus table)
+- Volume by MCC = BytesFromCache (UCDOStatus table)
 - Volume by CDN = BytesFrom CDN (UCDOStatus table)
 
 ## Determine GroupID
