@@ -1,0 +1,74 @@
+### YamlMime:FAQ
+metadata:
+  title: Windows Update for Business reports - Frequently Asked Questions (FAQ)
+  description: Answers to frequently asked questions about Windows Update for Business reports.
+  ms.prod: windows-client
+  ms.topic: faq
+  ms.date: 03/31/2023
+  manager: aaroncz
+  author: mestew
+  ms.author: mstewart
+  ms.technology: itpro-updates
+title: Frequently Asked Questions about Windows Windows Update for Business reports
+summary: This article answers frequently asked questions about Windows Update for Business reports.
+sections:
+  - name: General
+    questions:
+      - question: What is Windows Update for Business reports?
+        answer: |
+          Windows Update for Business reports is a cloud-based solution that provides information about your Azure Active Directory-joined devices' compliance with Windows updates. Windows Update for Business reports is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses.  
+      - question: Is Windows Update for Business reports free?
+        answer: |
+          Data ingested into your Log Analytics workspace can be retained at no charge for up to first 31 days (or 90 days if [Microsoft Sentinel](/azure/sentinel/overview) is enabled on the workspace). Data ingested into [Application Insights](/azure/azure-monitor/app/app-insights-overview), either classic or workspace-based, is retained for 90 days without any charge.
+          Data retained beyond these no-charge periods will be charged for each GB of data retained for a month, pro-rated daily. For more information, see **Log Data Retention** in [Azure Monitor pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/#pricing).
+      - question: What Windows versions are supported?
+        answer: |
+          Windows Windows Update for Business reports supports clients running a [supported version of Windows 10 or Windows 11](/windows/release-health/supported-versions-windows-client) Professional, Education, Enterprise, and Enterprise multi-session editions. Windows Update for Business reports only provides data for the standard Desktop Windows client version and isn't currently compatible with Windows Server, Surface Hub, IoT, or other versions.
+      - question: How do you setup Windows Update for Business reports?
+        answer: |
+          After verifying the [prerequisites](wufb-reports-prerequisites.md) are met, you can start to set up Windows Update for Business reports. 
+          The two main steps for setting up  Windows Update for Business reports are:
+
+          1. [Add Windows Update for Business reports](wufb-reports-enable.md#bkmk_add) to your Azure subscription. This step has the following phases:
+            1. [Select or create a new Log Analytics workspace](wufb-reports-enable.md#bkmk_workspace) for use with Windows Update for Business reports.
+            1. Enroll into Windows Update for Business reports using one of the following methods:
+              - Enroll through the [Azure Workbook](wufb-reports-enable.md#bkmk_enroll) (preferred method)
+              - Enroll from the [Microsoft 365 admin center](wufb-reports-enable.md#bkmk_admin-center).
+          1. Configure the clients to send data to Windows Update for Business reports. You can configure clients in the following three ways:
+              - Use a [script](wufb-reports-configuration-script.md)
+              - Use [Microsoft Intune](wufb-reports-configuration-intune.md)
+              - Configure [manually](wufb-reports-configuration-manual.md)          
+  - name: Setup issues
+    questions:
+      - question: Why is **Waiting for Windows Update for Business reports data** displayed on the page?
+        answer: |
+          Typically, the **Waiting for Windows Update for Business reports data** message is displayed because: 
+          - You may not have the correct [permissions](wufb-reports-prerequisites.md#permissions) to display the data. 
+          - The initial enrollment may not be complete yet.
+          - It's possible that devices aren't sharing telemetry. If you received a successful save message during enrollment but still haven't seen any data after 48 hours, try using the [configuration script]((wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
+      - question: "Why am I getting the error `400 Bad Request: The specified resource already exists`?"
+        answer: |
+          A `400 Bad Request: The specified resource already exists` error message indicates that the service already has a subscription and workspace mapping saved. If you're trying to re-enroll with the same configuration settings, wait a few minutes, then refresh the page before saving your subscription and workspace again. Sometimes it can take time to register the save, so it's important to not re-enroll too quickly.
+      - question: "Why am I getting the error `400 Bad Request: Identifier must be GUID`?"
+        answer: |
+          The `400 Bad Request: Identifier must be GUID` error message indicates that you've provided an invalid or incorrect value for the resource connection ID when making a request to the Log Analytics API. Ensure that the resource group within your Azure subscription is a valid GUID (Globally Unique Identifier). 
+  - name: Using Windows Update for Business reports
+    questions:
+      - question: Why is the device name null(#)?
+        answer: |
+          If you're seeing the device ID but not the device name, it's possible that the required policy for displaying the device name isn't set on the client. Ensure clients have the policy configured.
+          - CSP: [System/AllowDeviceNameInDiagnosticData](/windows/client-management/mdm/policy-csp-system#allowdevicenameindiagnosticdata)
+          - Group Policy: Allow device name to be sent in Windows diagnostic data
+            - Located in **Computer Configuration** > **Administrative Templates** > **Windows Components** >**Data Collection and Preview Builds**
+      - question: Why am I missing devices in reports?
+        answer: |
+          Here are some reasons why you may not be seeing devices in reports:
+          - The device isn't enrolled with Azure Active Directory: A [prerequisite](wufb-reports-prerequisites.md#azure-and-azure-active-directory) for devices is that they're either [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+          - The device isn't sending telemetry: It is possible devices aren't sharing telemetry due to a policy being incorrectly configured or a proxy or firewall configuration. Try using the [configuration script]((wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
+          - The device isn't active enough: Clients must be active and connected to the internet to scan against Microsoft Update. Ensure devices are powered on and have been active at least once in the past 28 days.
+          - The workbook has limited the results: The default limit for rows in Azure workbooks is set to 250. This is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the 3 dots beside each component.
+  - name: Template
+    questions:
+      - question: What is X?
+        answer: |
+          X is awesome!
