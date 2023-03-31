@@ -4,7 +4,7 @@ description: Learn more about the Bluetooth Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -272,7 +272,7 @@ Sets the local Bluetooth device name. If this is set, the value that it is set t
 
 <!-- ServicesAllowedList-Description-Begin -->
 <!-- Description-Source-DDF -->
-Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7. CAA-436. C-8. BF0-78. CD0FFBD4AF}. The default value is an empty string. For more information, see ServicesAllowedList usage guide
+Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7. CAA-436. C-8. BF0-78. CD0FFBD4AF}. The default value is an empty string. For more information, see ServicesAllowedList usage guide.
 <!-- ServicesAllowedList-Description-End -->
 
 <!-- ServicesAllowedList-Editable-Begin -->

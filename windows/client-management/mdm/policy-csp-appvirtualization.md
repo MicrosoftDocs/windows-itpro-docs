@@ -4,7 +4,7 @@ description: Learn more about the AppVirtualization Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1526,7 +1526,7 @@ Specifies that streamed package contents will be not be saved to the local hard 
 
 <!-- StreamingSupportBranchCache-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support is not desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache
+If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support is not desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache.
 <!-- StreamingSupportBranchCache-Description-End -->
 
 <!-- StreamingSupportBranchCache-Editable-Begin -->

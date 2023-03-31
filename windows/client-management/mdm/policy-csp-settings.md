@@ -4,7 +4,7 @@ description: Learn more about the Settings Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowAutoPlay-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the user to change Auto Play settings
+Allows the user to change Auto Play settings.
 
 > [!NOTE]
 > Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
@@ -287,8 +287,10 @@ Allows the user to change the language settings.
 <!-- AllowOnlineTips-OmaUri-End -->
 
 <!-- AllowOnlineTips-Description-Begin -->
-<!-- Description-Source-DDF -->
-Enables or disables the retrieval of online tips and help for the Settings app. If disabled, Settings will not contact Microsoft content services to retrieve tips and help content.
+<!-- Description-Source-ADMX -->
+Enables or disables the retrieval of online tips and help for the Settings app.
+
+If disabled, Settings will not contact Microsoft content services to retrieve tips and help content.
 <!-- AllowOnlineTips-Description-End -->
 
 <!-- AllowOnlineTips-Editable-Begin -->
@@ -719,8 +721,22 @@ By default, the calendar is set according to the locale of the operating system,
 <!-- PageVisibilityList-OmaUri-End -->
 
 <!-- PageVisibilityList-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. The mode will be specified by the policy string beginning with either the string showonly or hide. Pages are identified by a shortened version of their already published URIs, which is the URI minus the ms-settings prefix. For example, if the URI for a settings page is ms-settingsbluetooth, the page identifier used in the policy will be just bluetooth. Multiple page identifiers are separated by semicolons. The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI ms-settingsabout and ms-settingsbluetooth respectivelyshowonlyabout;bluetooth. If the policy is not specified, the behavior will be that no pages are affected. If the policy string is formatted incorrectly, it will be ignored entirely (i. e. treated as not set) to prevent the machine from becoming unserviceable if data corruption occurs. **Note** that if a page is already hidden for another reason, then it will remain hidden even if it is in a showonly list. The format of the PageVisibilityList value is as follows The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity. There are two variants one that shows only the given pages and one which hides the given pages. The first variant starts with the string showonly and the second with the string hide. Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace. Each page identifier is the ms-settingsxyz URI for the page, minus the ms-settings prefix, so the identifier for the page with URI ms-settingsnetwork-wifi would be just network-wifi. The default value for this setting is an empty string, which is interpreted as show everything. Example 1, specifies that only the wifi and bluetooth pages should be shown (they have URIs ms-settingsnetwork-wifi and ms-settingsbluetooth). All other pages (and the categories they're in) will be hiddenshowonlynetwork-wifi;bluetooth. Example 2, specifies that the wifi page should not be shownhidenetwork-wifi
+<!-- Description-Source-ADMX -->
+Specifies the list of pages to show or hide from the System Settings app.
+
+This policy allows an administrator to block a given set of pages from the System Settings app. Blocked pages will not be visible in the app, and if all pages in a category are blocked the category will be hidden as well. Direct navigation to a blocked page via URI, context menu in Explorer or other means will result in the front page of Settings being shown instead.
+
+This policy has two modes: it can either specify a list of settings pages to show or a list of pages to hide. To specify a list of pages to show, the policy string must begin with "showonly:" (without quotes), and to specify a list of pages to hide, it must begin with "hide:". If a page in a showonly list would normally be hidden for other reasons (such as a missing hardware device), this policy will not force that page to appear. After this, the policy string must contain a semicolon-delimited list of settings page identifiers. The identifier for any given settings page is the published URI for that page, minus the "ms-settings:" protocol part.
+
+Example: to specify that only the About and Bluetooth pages should be shown (their respective URIs are ms-settings:about and ms-settings:bluetooth) and all other pages hidden:
+
+showonly:about;bluetooth
+
+Example: to specify that only the Bluetooth page (which has URI ms-settings:bluetooth) should be hidden:
+
+hide:bluetooth
+
+The availability of per-user support is documented here: <https://go.microsoft.com/fwlink/?linkid=2102995>
 <!-- PageVisibilityList-Description-End -->
 
 <!-- PageVisibilityList-Editable-Begin -->
@@ -751,7 +767,7 @@ To validate this policy, use the following steps:
 |:--|:--|
 | Name | SettingsPageVisibility |
 | Friendly Name | Settings Page Visibility |
-| Element Name | Settings Page Visibility |
+| Element Name | Settings Page Visibility. |
 | Location | Computer and User Configuration |
 | Path | Control Panel |
 | Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_ShellCommandPromptRegEditTools Area in Po
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -175,6 +175,7 @@ This policy setting only prevents users from running programs that are started b
 
 > [!NOTE]
 > Non-Microsoft applications with Windows 2000 or later certification are required to comply with this policy setting.
+
 > [!NOTE]
 > To create a list of allowed applications, click Show. In the Show Contents dialog box, in the Value column, type the application executable name (e.g., Winword.exe, Poledit.exe, Powerpnt.exe).
 <!-- DisallowApps-Description-End -->
@@ -242,6 +243,7 @@ This policy setting only prevents users from running programs that are started b
 
 > [!NOTE]
 > Non-Microsoft applications with Windows 2000 or later certification are required to comply with this policy setting.
+
 > [!NOTE]
 > To create a list of allowed applications, click Show. In the Show Contents dialog box, in the Value column, type the application executable name (e.g., Winword.exe, Poledit.exe, Powerpnt.exe).
 <!-- RestrictApps-Description-End -->

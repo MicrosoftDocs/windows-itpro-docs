@@ -4,7 +4,7 @@ description: Learn more about the ADMX_CredentialProviders Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -173,7 +173,7 @@ credential providers from use during authentication.
 
 **Note** credential providers are used to process and validate user
 credentials during logon or when authentication is required.
-Windows Vista provides two default credential providers
+Windows Vista provides two default credential providers:
 Password and Smart Card. An administrator can install additional
 credential providers for different sets of credentials
 (for example, to support biometric authentication).

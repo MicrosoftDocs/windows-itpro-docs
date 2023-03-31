@@ -4,7 +4,7 @@ description: Learn more about the WindowsDefenderSecurityCenter Area in Policy C
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,9 +36,17 @@ ms.topic: reference
 <!-- CompanyName-OmaUri-End -->
 
 <!-- CompanyName-Description-Begin -->
-<!-- Description-Source-DDF -->
-The company name that is displayed to the users. CompanyName is required for both EnableCustomizedToasts and EnableInAppCustomization.
-- If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display the contact options. Value type is string. Supported operations are Add, Get, Replace and Delete.
+<!-- Description-Source-ADMX -->
+Specify the company name that will be displayed in Windows Security and associated notifications. This setting must be enabled for any contact information to appear.
+
+Enabled:
+Enter the company name in the Options section.
+
+Disabled:
+Company information will not be shown at all in either Windows Security or any notifications that it creates.
+
+Not configured:
+Same as Disabled.
 <!-- CompanyName-Description-End -->
 
 <!-- CompanyName-Editable-Begin -->
@@ -61,7 +69,7 @@ The company name that is displayed to the users. CompanyName is required for bot
 |:--|:--|
 | Name | EnterpriseCustomization_CompanyName |
 | Friendly Name | Specify contact company name |
-| Element Name | Company name |
+| Element Name | Company name. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Security > Enterprise Customization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |
@@ -956,9 +964,19 @@ Same as Disabled.
 <!-- Email-OmaUri-End -->
 
 <!-- Email-Description-Begin -->
-<!-- Description-Source-DDF -->
-The email address that is displayed to users. The default mail application is used to initiate email actions.
-- If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options. Value type is string. Supported operations are Add, Get, Replace and Delete.
+<!-- Description-Source-ADMX -->
+Specify the email address or email ID that will be displayed in Windows Security and associated notifications.
+
+Users can click on the contact information to create an email that will be sent to the specified address. The default email application will be used.
+
+Enabled:
+Enter the email address or email ID in the Options section.
+
+Disabled:
+A contact email address or email ID will not be shown in either Windows Security or any notifications it creates.
+
+Not configured:
+Same as Disabled.
 <!-- Email-Description-End -->
 
 <!-- Email-Editable-Begin -->
@@ -981,7 +999,7 @@ The email address that is displayed to users. The default mail application is us
 |:--|:--|
 | Name | EnterpriseCustomization_Email |
 | Friendly Name | Specify contact email address or Email ID |
-| Element Name | Email address or email ID |
+| Element Name | Email address or email ID. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Security > Enterprise Customization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |
@@ -1455,9 +1473,19 @@ Same as Disabled.
 <!-- Phone-OmaUri-End -->
 
 <!-- Phone-Description-Begin -->
-<!-- Description-Source-DDF -->
-The phone number or Skype ID that is displayed to users. Skype is used to initiate the call.
-- If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options. Value type is string. Supported operations are Add, Get, Replace, and Delete.
+<!-- Description-Source-ADMX -->
+Specify the phone number or Skype ID that will be displayed in Windows Security and associated notifications.
+
+Users can click on the contact information to automatically call the supplied number. Skype will be used to initiate the call.
+
+Enabled:
+Enter the phone number or Skype ID in the Options section.
+
+Disabled:
+A contact phone number or Skype ID will not be shown in either Windows Security or any notifications it creates.
+
+Not configured:
+Same as Disabled.
 <!-- Phone-Description-End -->
 
 <!-- Phone-Editable-Begin -->
@@ -1480,7 +1508,7 @@ The phone number or Skype ID that is displayed to users. Skype is used to initia
 |:--|:--|
 | Name | EnterpriseCustomization_Phone |
 | Friendly Name | Specify contact phone number or Skype ID |
-| Element Name | Phone number or Skype ID |
+| Element Name | Phone number or Skype ID. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Security > Enterprise Customization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |
@@ -1509,9 +1537,19 @@ The phone number or Skype ID that is displayed to users. Skype is used to initia
 <!-- URL-OmaUri-End -->
 
 <!-- URL-Description-Begin -->
-<!-- Description-Source-DDF -->
-The help portal URL this is displayed to users. The default browser is used to initiate this action.
-- If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then the device will not display contact options. Value type is Value type is string. Supported operations are Add, Get, Replace, and Delete.
+<!-- Description-Source-ADMX -->
+Specify the URL that will be displayed in Windows Security and associated notifications.
+
+Users can click on the contact information to visit the specified website. The default web browser will be used.
+
+Enabled:
+Enter the URL in the Options section.
+
+Disabled:
+A contact website URL will not be shown in either Windows Security or any notifications it creates.
+
+Not configured:
+Same as Disabled.
 <!-- URL-Description-End -->
 
 <!-- URL-Editable-Begin -->
@@ -1534,7 +1572,7 @@ The help portal URL this is displayed to users. The default browser is used to i
 |:--|:--|
 | Name | EnterpriseCustomization_URL |
 | Friendly Name | Specify contact website |
-| Element Name | IT or support website |
+| Element Name | IT or support website. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Security > Enterprise Customization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |
