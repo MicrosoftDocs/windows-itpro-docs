@@ -46,6 +46,7 @@ Did you previously had access to your cache nodes but it's now no longer accessi
 If this page is not resolving the issue you're facing with your cache node, you can use the **Diagnose and solve problems** functionality within your MCC resource to continue troubleshooting. **Diagnose and solve problems** contains solutions to most common problems that users may face as they onboard.
  
 You can find **Diagnose and solve problems** on the left pane within your MCC resource as seen below:
+
 :::image type="content" source="images/mcc-isp-diagnose-solve.png" alt-text="A screenshot of Azure portal showing the Diagnose and Solve problems tab on the left hand pane of Azure portal." lightbox="images/mcc-isp-diagnose-solve.png":::
 
 Within **Diagnose and solve problems**, select **Troubleshoot** under the type of problem you are facing and follow the prompts that narrow down the solution to the issue.
