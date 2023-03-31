@@ -76,9 +76,8 @@ Two client-side configuration service providers are leveraged for VPN device com
 
 The VPN client side connection flow works as follows:
 
-> [!div class="mx-imgBorder"]
-> ![Device compliance workflow when VPN client attempts to connect.](images/vpn-device-compliance.png)
- 
+![Device compliance workflow when VPN client attempts to connect.](images/vpn-device-compliance.png)
+
 When a VPNv2 Profile is configured with \<DeviceCompliance> \<Enabled>true<\/Enabled> the VPN client uses this connection flow:
 
 1.     The VPN client calls into Windows 10's or Windows 11's Azure AD Token Broker, identifying itself as a VPN client.
