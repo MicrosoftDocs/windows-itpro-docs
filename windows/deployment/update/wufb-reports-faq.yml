@@ -9,7 +9,7 @@ metadata:
   author: mestew
   ms.author: mstewart
   ms.technology: itpro-updates
-title: Frequently Asked Questions about Windows Windows Update for Business reports
+title: Frequently Asked Questions about Windows Update for Business reports
 summary: This article answers frequently asked questions about Windows Update for Business reports. 
 sections:
   - name: General
@@ -23,7 +23,7 @@ sections:
           Data retained beyond these no-charge periods will be charged for each GB of data retained for a month, pro-rated daily. For more information, see **Log Data Retention** in [Azure Monitor pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/#pricing).
       - question: What Windows versions are supported?
         answer: |
-          Windows Windows Update for Business reports supports clients running a [supported version of Windows 10 or Windows 11](/windows/release-health/supported-versions-windows-client) Professional, Education, Enterprise, and Enterprise multi-session editions. Windows Update for Business reports only provides data for the standard Desktop Windows client version and isn't currently compatible with Windows Server, Surface Hub, IoT, or other versions.
+          Windows Update for Business reports supports clients running a [supported version of Windows 10 or Windows 11](/windows/release-health/supported-versions-windows-client) Professional, Education, Enterprise, and Enterprise multi-session editions. Windows Update for Business reports only provides data for the standard Desktop Windows client version and isn't currently compatible with Windows Server, Surface Hub, IoT, or other versions.
       - question: How do you setup Windows Update for Business reports?
         answer: |
           After verifying the [prerequisites](wufb-reports-prerequisites.md) are met, you can start to set up Windows Update for Business reports. 
@@ -45,7 +45,7 @@ sections:
           Typically, the **Waiting for Windows Update for Business reports data** message is displayed because: 
           - You may not have the correct [permissions](wufb-reports-prerequisites.md#permissions) to display the data. 
           - The initial enrollment may not be complete yet.
-          - It's possible that devices aren't sharing telemetry. If you received a successful save message during enrollment but still haven't seen any data after 48 hours, try using the [configuration script]((wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
+          - It's possible that devices aren't sharing data. If you received a successful save message during enrollment but still haven't seen any data after 48 hours, try using the [configuration script]((wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
       - question: "Why am I getting the error `400 Bad Request: The specified resource already exists`?"
         answer: |
           A `400 Bad Request: The specified resource already exists` error message indicates that the service already has a subscription and workspace mapping saved. If you're trying to re-enroll with the same configuration settings, wait a few minutes, then refresh the page before saving your subscription and workspace again. Sometimes it can take time to register the save, so it's important to not re-enroll too quickly.
@@ -63,15 +63,34 @@ sections:
       - question: Why am I missing devices in reports?
         answer: |
           Here are some reasons why you may not be seeing devices in reports:
+
           - The device isn't enrolled with Azure Active Directory: A [prerequisite](wufb-reports-prerequisites.md#azure-and-azure-active-directory) for devices is that they're either [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
-          - The device isn't sending telemetry: It is possible devices aren't sharing telemetry due to a policy being incorrectly configured or a proxy or firewall configuration. Try using the [configuration script]((wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
+          - The device isn't sending data: It's possible devices aren't sharing data due to a policy being incorrectly configured or a proxy or firewall configuration. Try using the [configuration script]((wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
           - The device isn't active enough: Clients must be active and connected to the internet to scan against Microsoft Update. Ensure devices are powered on and have been active at least once in the past 28 days.
           - The workbook has limited the results: The default limit for rows in Azure workbooks is set to 250. This is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the 3 dots beside each component.
       - question: What is the difference between OS version and target version?
         answer: |
-          The word *target* in the data labels refers to the update version, build or KB the client is actively being updated to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
-  - name: Template
-    questions:
-      - question: What is X?
+          The word *target* in data labels refers to the update version, build or KB the client is actively being updated to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
+      - question: When should I use the UCClient versus the UCClientUpdateStatus table?
         answer: |
-          X is awesome!
+          These tables can be used for the following information:
+
+          - **UCClient**: Represents an individual device's record. It contains data such as the device's name, currently installed build, and the OS Edition. Each device has one record in this table. Use this table to get the overall compliance status of your devices.
+          - **UCClientUpdateStatus**: Contains records for every update the device determined was applicable. There can be multiple records for a device if it's discovered multiple applicable updates in the past 60 days. Use this table if you want to get detailed update status for your active deployments.       
+      - question: What is the difference between quality and security updates?
+        answer: |
+          Windows quality updates are monthly updates that are [released on the second or fourth Tuesday of the month](release-cycle.md). The cumulative updates released on the second Tuesday of the month can contain both security updates and non-security updates. Cumulative updates released on the fourth Tuesday of the month are optional non-security preview releases. Use the fields within the [UCClient table](wufb-reports-schema-ucclient.md) for additional information, such as:
+            
+            - **OSSecurityUpdateStatus**: Indicates the status of the monthly update that's released on the second Tuesday
+            - **OSQualityUpdateStatus**: Indicates the status of the monthly update that's released on the fourth Tuesday
+      - question: How are the calculations for Delivery Optimization done?
+        answer: |
+          Volume from the CDN is calculated by subtracting the number bytes that came from the cache server: BytesFromCDN = BytesFromCDN - BytesFromEnterpriseCache 
+      - question: How do I confirm that devices are sending data?
+        answer: |
+          Once enrollment is done and devices are properly configured to share data, wait for 48 hours for data to start showing up in reports. It can take up to 14 days for all of your devices to show up in reports in some cases where devices aren't active or online much. You can check to see if the Log Analytics tables are being populated in your workspace. The data is ingested by the service daily to generate reports. If you notice a day is missing, it's possible that the reports service missed an ingestion. To confirm devices are sending data, [query](wufb-reports-use.md#display-windows-update-for-business-reports-data) the [UCClient table](wufb-reports-schema-ucclient.md). The following query shows total enrolled device count per time-generated: 
+          `UCClient | summarize count() by TimeGenerated`
+          :::image type="content" source="media/7760853-wufb-reports-time-generated.png" alt-text="Screenshot of using a Kusto (KQL) query for time generated on Windows Update for Business reports data in Log Analytics." lightbox="media/7760853-wufb-reports-time-generated.png":::
+      - question: Why isn't the workbook displaying data even though my UCClient table has data?
+        answer: |
+          If the [UCClient table](wufb-reports-schema-ucclient.md) has data, but the [workbook](wufb-reports-workbook.md) isn't displaying data, ensure that the user has correct permissions to read the data. The [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role is needed to view the data in the workbooks. The [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role is needed to do any edits to the queries and workbooks.           
