@@ -10,7 +10,23 @@ metadata:
   ms.author: mstewart
   ms.technology: itpro-updates
 title: Frequently Asked Questions about Windows Update for Business reports
-summary: This article answers frequently asked questions about Windows Update for Business reports. 
+summary: |
+  This article answers frequently asked questions about Windows Update for Business reports. 
+  - [What is Windows Update for Business reports?](#what-is-windows-update-for-business-reports)
+  - [Is Windows Update for Business reports free?](#is-windows-update-for-business-reports-free)
+  - [What Windows versions are supported?](#what-windows-versions-are-supported)
+  - [How do you setup Windows Update for Business reports?](#how-do-you-setup-windows-update-for-business-reports)
+  - [Why is `Waiting for Windows Update for Business reports data` displayed on the page](#why-is--waiting-for-windows-update-for-business-reports-data--displayed-on-the-page)
+  - [Why am I getting the error `400 Bad Request: The specified resource already exists`?](#why-am-i-getting-the-error--400-bad-request--the-specified-resource-already-exists-)
+  - [Why am I getting the error `400 Bad Request: Identifier must be GUID`?](#why-am-i-getting-the-error--400-bad-request--identifier-must-be-guid-)
+  - [Why is the device name null(#)?](#why-is-the-device-name-null---)
+  - [Why am I missing devices in reports?](#why-am-i-missing-devices-in-reports)
+  - [What is the difference between OS version and target version?](#what-is-the-difference-between-os-version-and-target-version)
+  - [When should I use the UCClient versus the UCClientUpdateStatus table?](#when-should-i-use-the-ucclient-versus-the-ucclientupdatestatus-table)
+  - [What is the difference between quality and security updates?](#what-is-the-difference-between-quality-and-security-updates)
+  - [How are the calculations for Delivery Optimization done?](#how-are-the-calculations-for-delivery-optimization-done)
+  - [How do I confirm that devices are sending data?](#how-do-i-confirm-that-devices-are-sending-data)
+  - [Why isn't the workbook displaying data even though my UCClient table has data?](#why-isn-t-the-workbook-displaying-data-even-though-my-ucclient-table-has-data)
 sections:
   - name: General
     questions:
