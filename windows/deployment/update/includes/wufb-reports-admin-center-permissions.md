@@ -14,10 +14,11 @@ ms.localizationpriority: medium
 
 To enroll into Windows Update for Business reports from the [Azure portal](https://portal.azure.com) or the [Microsoft 365 admin center](https://admin.microsoft.com) requires one of the following roles:
 
-- [Global Administrator role](/azure/active-directory/roles/permissions-reference#global-administrator)
+- [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator)
 - [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator)
 - [Windows Update deployment administrator](/azure/active-directory/roles/permissions-reference#windows-update-deployment-administrator)
 - [Policy and profile manager](/mem/intune/fundamentals/role-based-access-control#built-in-roles) Intune role
+- [Global reader](/azure/active-directory/roles/permissions-reference#global-reader) 
 
 > [!IMPORTANT]
 > At minimum, the Log Analytics Reader role (or equivalent permissions) needs to be assigned to the user all of the above enrollment roles because they don't have the permissions by default.
