@@ -10,7 +10,7 @@ metadata:
   ms.author: mstewart
   ms.technology: itpro-updates
 title: Frequently Asked Questions about Windows Windows Update for Business reports
-summary: This article answers frequently asked questions about Windows Update for Business reports.
+summary: This article answers frequently asked questions about Windows Update for Business reports. 
 sections:
   - name: General
     questions:
@@ -67,6 +67,9 @@ sections:
           - The device isn't sending telemetry: It is possible devices aren't sharing telemetry due to a policy being incorrectly configured or a proxy or firewall configuration. Try using the [configuration script]((wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
           - The device isn't active enough: Clients must be active and connected to the internet to scan against Microsoft Update. Ensure devices are powered on and have been active at least once in the past 28 days.
           - The workbook has limited the results: The default limit for rows in Azure workbooks is set to 250. This is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the 3 dots beside each component.
+      - question: What is the difference between OS version and target version?
+        answer: |
+          The word *target* in the data labels refers to the update version, build or KB the client is actively being updated to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
   - name: Template
     questions:
       - question: What is X?
