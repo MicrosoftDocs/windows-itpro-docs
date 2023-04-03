@@ -4,7 +4,7 @@ description: Learn more about the Security Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -302,7 +302,7 @@ This policy setting configures the system to prompt the user to clear the TPM if
 
 <!-- ConfigureWindowsPasswords-Description-Begin -->
 <!-- Description-Source-DDF -->
-Configures the use of passwords for Windows features
+Configures the use of passwords for Windows features.
 <!-- ConfigureWindowsPasswords-Description-End -->
 
 <!-- ConfigureWindowsPasswords-Editable-Begin -->
@@ -578,7 +578,7 @@ Specifies whether provisioning packages must have a certificate signed by a devi
 
 <!-- RequireRetrieveHealthCertificateOnBoot-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether to retrieve and post TCG Boot logs, and get or cache an encrypted or signed Health Attestation Report from the Microsoft Health Attestation Service (HAS) when a device boots or reboots. Setting this policy to 1 (Required)Determines whether a device is capable of Remote Device Health Attestation, by verifying if the device has TPM 2. 0. Improves the performance of the device by enabling the device to fetch and cache data to reduce the latency during Device Health Verification
+Specifies whether to retrieve and post TCG Boot logs, and get or cache an encrypted or signed Health Attestation Report from the Microsoft Health Attestation Service (HAS) when a device boots or reboots. Setting this policy to 1 (Required):Determines whether a device is capable of Remote Device Health Attestation, by verifying if the device has TPM 2. 0. Improves the performance of the device by enabling the device to fetch and cache data to reduce the latency during Device Health Verification.
 
 > [!NOTE]
 > We recommend that this policy is set to Required after MDM enrollment. Most restricted value is 1.

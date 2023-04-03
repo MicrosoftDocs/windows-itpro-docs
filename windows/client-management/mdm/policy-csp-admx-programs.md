@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Programs Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -46,7 +46,7 @@ This setting removes the Set Program Access and Defaults page from the Programs 
 
 The Set Program Access and Computer Defaults page allows administrators to specify default programs for certain activities, such as Web browsing or sending e-mail, as well as specify the programs that are accessible from the Start menu, desktop, and other locations.
 
-- If this setting is disabled or not configured, the Set Program Access and Defaults button is available to all users.
+If this setting is disabled or not configured, the Set Program Access and Defaults button is available to all users.
 
 This setting does not prevent users from using other tools and methods to change program access or defaults.
 
@@ -177,7 +177,7 @@ This setting prevents users from accessing "Installed Updates" page from the "Vi
 
 "Installed Updates" allows users to view and uninstall updates currently installed on the computer. The updates are often downloaded directly from Windows Update or from various program publishers.
 
-- If this setting is disabled or not configured, the "View installed updates" task and the "Installed Updates" page will be available to all users.
+If this setting is disabled or not configured, the "View installed updates" task and the "Installed Updates" page will be available to all users.
 
 This setting does not prevent users from using other tools and methods to install or uninstall programs.
 <!-- NoInstalledUpdates-Description-End -->
@@ -237,7 +237,7 @@ This setting does not prevent users from using other tools and methods to instal
 <!-- Description-Source-ADMX -->
 This setting prevents users from accessing "Programs and Features" to view, uninstall, change, or repair programs that are currently installed on the computer.
 
-- If this setting is disabled or not configured, "Programs and Features" will be available to all users.
+If this setting is disabled or not configured, "Programs and Features" will be available to all users.
 
 This setting does not prevent users from using other tools and methods to view or uninstall programs. It also does not prevent users from linking to related Programs Control Panel Features including Windows Features, Get Programs, or Windows Marketplace.
 <!-- NoProgramsAndFeatures-Description-End -->
@@ -299,7 +299,7 @@ This setting prevents users from using the Programs Control Panel in Category Vi
 
 The Programs Control Panel allows users to uninstall, change, and repair programs, enable and disable Windows Features, set program defaults, view installed updates, and purchase software from Windows Marketplace. Programs published or assigned to the user by the system administrator also appear in the Programs Control Panel.
 
-- If this setting is disabled or not configured, the Programs Control Panel in Category View and Programs and Features in Classic View will be available to all users.
+If this setting is disabled or not configured, the Programs Control Panel in Category View and Programs and Features in Classic View will be available to all users.
 
 When enabled, this setting takes precedence over the other settings in this folder.
 
@@ -361,7 +361,7 @@ This setting does not prevent users from using other tools and methods to instal
 <!-- Description-Source-ADMX -->
 This setting prevents users from accessing the "Turn Windows features on or off" task from the Programs Control Panel in Category View, Programs and Features in Classic View, and Get Programs. As a result, users cannot view, enable, or disable various Windows features and services.
 
-- If this setting is disabled or is not configured, the "Turn Windows features on or off" task will be available to all users.
+If this setting is disabled or is not configured, the "Turn Windows features on or off" task will be available to all users.
 
 This setting does not prevent users from using other tools and methods to configure services or enable or disable program components.
 <!-- NoWindowsFeatures-Description-End -->

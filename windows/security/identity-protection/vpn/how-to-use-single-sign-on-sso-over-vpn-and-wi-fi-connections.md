@@ -1,16 +1,7 @@
 ---
 title: How to use Single Sign-On (SSO) over VPN and Wi-Fi connections
 description: Explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over WiFi or VPN connections.
-ms.prod: windows-client
-author: paolomatarazzo
 ms.date: 12/28/2022
-manager: aaroncz
-ms.author: paoloma
-ms.reviewer: pesmith
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
 ms.topic: how-to
 ---
 
@@ -95,7 +86,7 @@ For more information, see [Configure certificate infrastructure for SCEP](/mem/i
 
 You need IP connectivity to a DNS server and domain controller over the network interface so that authentication can succeed as well.
 
-Domain controllers must have appropriate KDC certificates for the client to trust them as domain controllers. Because phones are not domain-joined, the root CA of the KDC’s certificate must be in the Third-Party Root CA or Smart Card Trusted Roots store.
+Domain controllers must have appropriate KDC certificates for the client to trust them as domain controllers. Because phones are not domain-joined, the root CA of the KDC's certificate must be in the Third-Party Root CA or Smart Card Trusted Roots store.
 
 Domain controllers must be using certificates based on the updated KDC certificate template Kerberos Authentication.
 This requires that all authenticating domain controllers run Windows Server 2016, or you'll need to enable strict KDC validation on domain controllers that run previous versions of Windows Server.

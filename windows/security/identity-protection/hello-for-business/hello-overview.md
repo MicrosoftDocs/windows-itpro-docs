@@ -5,8 +5,6 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
-appliesto: 
-  - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.date: 12/31/2017
 ---
 # Windows Hello for Business Overview
