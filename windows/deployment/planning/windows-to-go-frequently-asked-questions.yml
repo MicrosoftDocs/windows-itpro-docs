@@ -164,7 +164,7 @@ sections:
       - question: |
           Can the user self-provision Windows To Go?
         answer: |
-          Yes, if the user has administrator permissions they can self-provision a Windows To Go drive using the Windows To Go Creator wizard which is included in Windows 10 Enterprise, Windows 10 Education and Windows 10 Professional. Additionally, Configuration Manager SP1 and later releases includes support for user self-provisioning of Windows To Go drives. Configuration Manager can be downloaded for evaluation from the [Microsoft TechNet Evaluation Center](https://go.microsoft.com/fwlink/p/?LinkID=618746).
+          Yes, if the user has administrator permissions they can self-provision a Windows To Go drive using the Windows To Go Creator wizard which is included in Windows 10 Enterprise, Windows 10 Education and Windows 10 Professional. Additionally, Configuration Manager SP1 and later releases includes support for user self-provisioning of Windows To Go drives.
           
       - question: |
           How can Windows To Go be managed in an organization?
