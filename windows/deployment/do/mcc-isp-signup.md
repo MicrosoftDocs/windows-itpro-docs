@@ -20,6 +20,9 @@ ms.collection: tier3
 
 This article details the process of signing up for Microsoft Connected Cache for Internet Service Providers (public preview). 
 
+ > [!NOTE]
+ > Microsoft Connected Cache is now in public review. Instead of submitting a survey, you can directly onboard by following the instructions in this article.
+
 ## Prerequisites
 
 Before you begin sign up, ensure you have the following components:

@@ -4,7 +4,7 @@ description: Learn more about the BitLocker CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -176,7 +176,7 @@ require reinstallation of Windows.
 > [!NOTE]
 > This policy takes effect only if "RequireDeviceEncryption" policy is set to 1.
 
-The expected values for this policy are
+The expected values for this policy are:
 
 1 = This is the default, when the policy is not set. **Warning** prompt and encryption notification is allowed.
 0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update,
@@ -317,11 +317,16 @@ Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
 
 <!-- Device-EncryptionMethodByDriveType-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.
+This policy setting configures whether BitLocker protection is required for a computer to be able to write data to a removable data drive.
 
-- If you enable this policy setting you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10 (Version 1511).
+- If you enable this policy setting, all removable data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
 
-- If you disable or do not configure this policy setting, BitLocker will use AES with the same bit strength (128-bit or 256-bit) as the "Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)" and "Choose drive encryption method and cipher strength" policy settings (in that order), if they are set. If none of the policies are set, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by the setup script."
+If the "Deny write access to devices configured in another organization" option is selected, only drives with identification fields matching the computer's identification fields will be given write access. When a removable data drive is accessed it will be checked for valid identification field and allowed identification fields. These fields are defined by the "Provide the unique identifiers for your organization" policy setting.
+
+- If you disable or do not configure this policy setting, all removable data drives on the computer will be mounted with read and write access.
+
+> [!NOTE]
+> This policy setting can be overridden by the policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" policy setting is enabled this policy setting will be ignored.
 <!-- Device-EncryptionMethodByDriveType-Description-End -->
 
 <!-- Device-EncryptionMethodByDriveType-Editable-Begin -->
@@ -369,11 +374,12 @@ Sample value for this node to enable this policy and set the encryption methods 
 
 | Name | Value |
 |:--|:--|
-| Name | EncryptionMethodWithXts_Name |
-| Friendly Name | Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later) |
+| Name | RDVDenyWriteAccess_Name |
+| Friendly Name | Deny write access to removable drives not protected by BitLocker |
 | Location | Computer Configuration |
-| Path | Windows Components > BitLocker Drive Encryption |
-| Registry Key Name | SOFTWARE\Policies\Microsoft\FVE |
+| Path | Windows Components > BitLocker Drive Encryption > Removable Data Drives |
+| Registry Key Name | System\CurrentControlSet\Policies\Microsoft\FVE |
+| Registry Value Name | RDVDenyWriteAccess |
 | ADMX File Name | VolumeEncryption.admx |
 <!-- Device-EncryptionMethodByDriveType-AdmxBacked-End -->
 
@@ -1578,10 +1584,10 @@ The Windows touch keyboard (such as that used by tablets) isn't available in the
 
 - If this policy is not enabled, the Windows Recovery Environment must be enabled on tablets to support the entry of the BitLocker recovery password. When the Windows Recovery Environment is not enabled and this policy is not enabled, you cannot turn on BitLocker on a device that uses the Windows touch keyboard.
 
-**Note** that if you do not enable this policy setting, options in the "Require additional authentication at startup" policy might not be available on such devices. These options include
-- Configure TPM startup PIN Required/Allowed
-- Configure TPM startup key and PIN Required/Allowed
-- Configure use of passwords for operating system drives.
+**Note** that if you do not enable this policy setting, options in the "Require additional authentication at startup" policy might not be available on such devices. These options include:
+  - Configure TPM startup PIN: Required/Allowed
+  - Configure TPM startup key and PIN: Required/Allowed
+  - Configure use of passwords for operating system drives.
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-Description-End -->
 
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-Editable-Begin -->

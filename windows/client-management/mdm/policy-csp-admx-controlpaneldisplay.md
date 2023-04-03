@@ -4,7 +4,7 @@ description: Learn more about the ADMX_ControlPanelDisplay Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/13/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,7 +44,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Disables the Display Control Panel.
 
-- If you enable this setting, the Display Control Panel does not run. When users try to start Display, a message appears explaining that a setting prevents the action.
+If you enable this setting, the Display Control Panel does not run. When users try to start Display, a message appears explaining that a setting prevents the action.
 
 Also, see the "Prohibit access to the Control Panel" (User Configuration\Administrative Templates\Control Panel) and "Remove programs on Settings menu" (User Configuration\Administrative Templates\Start Menu & Taskbar) settings.
 <!-- CPL_Display_Disable-Description-End -->
@@ -537,7 +537,7 @@ Prevents users from changing the background image shown when the machine is lock
 
 By default, users can change the background image shown when the machine is locked or displaying the logon screen.
 
-- If you enable this setting, the user will not be able to change their lock screen and logon image, and they will instead see the default image.
+If you enable this setting, the user will not be able to change their lock screen and logon image, and they will instead see the default image.
 <!-- CPL_Personalization_NoChangingLockScreen-Description-End -->
 
 <!-- CPL_Personalization_NoChangingLockScreen-Editable-Begin -->
@@ -597,7 +597,7 @@ Prevents users from changing the look of their start menu background, such as it
 
 By default, users can change the look of their start menu background, such as its color or accent.
 
-- If you enable this setting, the user will be assigned the default start menu background and colors and will not be allowed to change them.
+If you enable this setting, the user will be assigned the default start menu background and colors and will not be allowed to change them.
 
 If the "Force a specific background and accent color" policy is also set on a supported version of Windows, then those colors take precedence over this policy.
 
@@ -661,7 +661,7 @@ Disables the Color (or Window Color) page in the Personalization Control Panel, 
 
 This setting prevents users from using Control Panel to change the window border and taskbar color (on Windows 8), glass color (on Windows Vista and Windows 7), system colors, or color scheme of the desktop and windows.
 
-- If this setting is disabled or not configured, the Color (or Window Color) page or Color Scheme dialog is available in the Personalization or Display Control Panel.
+If this setting is disabled or not configured, the Color (or Window Color) page or Color Scheme dialog is available in the Personalization or Display Control Panel.
 
 For systems prior to Windows Vista, this setting hides the Appearance and Themes tabs in the in Display in Control Panel.
 <!-- CPL_Personalization_NoColorAppearanceUI-Description-End -->
@@ -723,7 +723,7 @@ Prevents users from adding or changing the background design of the desktop.
 
 By default, users can use the Desktop Background page in the Personalization or Display Control Panel to add a background design (wallpaper) to their desktop.
 
-- If you enable this setting, none of the Desktop Background settings can be changed by the user.
+If you enable this setting, none of the Desktop Background settings can be changed by the user.
 
 To specify wallpaper for a group, use the "Desktop Wallpaper" setting.
 
@@ -790,7 +790,7 @@ Prevents users from changing the desktop icons.
 
 By default, users can use the Desktop Icon Settings dialog in the Personalization or Display Control Panel to show, hide, or change the desktop icons.
 
-- If you enable this setting, none of the desktop icons can be changed by the user.
+If you enable this setting, none of the desktop icons can be changed by the user.
 
 For systems prior to Windows Vista, this setting also hides the Desktop tab in the Display Control Panel.
 <!-- CPL_Personalization_NoDesktopIconsUI-Description-End -->
@@ -912,7 +912,7 @@ Prevents users from changing the mouse pointers.
 
 By default, users can use the Pointers tab in the Mouse Control Panel to add, remove, or change the mouse pointers.
 
-- If you enable this setting, none of the mouse pointer scheme settings can be changed by the user.
+If you enable this setting, none of the mouse pointer scheme settings can be changed by the user.
 <!-- CPL_Personalization_NoMousePointersUI-Description-End -->
 
 <!-- CPL_Personalization_NoMousePointersUI-Editable-Begin -->
@@ -1030,7 +1030,7 @@ Prevents users from changing the sound scheme.
 
 By default, users can use the Sounds tab in the Sound Control Panel to add, remove, or change the system Sound Scheme.
 
-- If you enable this setting, none of the Sound Scheme settings can be changed by the user.
+If you enable this setting, none of the Sound Scheme settings can be changed by the user.
 <!-- CPL_Personalization_NoSoundSchemeUI-Description-End -->
 
 <!-- CPL_Personalization_NoSoundSchemeUI-Editable-Begin -->
@@ -1090,7 +1090,7 @@ Forces Windows to use the specified colors for the background and accent. The co
 
 By default, users can change the background and accent colors.
 
-- If this setting is enabled, the background and accent colors of Windows will be set to the specified colors and users cannot change those colors. This setting will not be applied if the specified colors do not meet a contrast ratio of 2:1 with white text.
+If this setting is enabled, the background and accent colors of Windows will be set to the specified colors and users cannot change those colors. This setting will not be applied if the specified colors do not meet a contrast ratio of 2:1 with white text.
 <!-- CPL_Personalization_PersonalColors-Description-End -->
 
 <!-- CPL_Personalization_PersonalColors-Editable-Begin -->

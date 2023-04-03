@@ -4,7 +4,7 @@ description: Learn more about the ADMX_OfflineFiles Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1642,7 +1642,7 @@ Hides or displays reminder balloons, and prevents users from changing the settin
 
 Reminder balloons appear above the Offline Files icon in the notification area to notify users when they have lost the connection to a networked file and are working on a local copy of the file. Users can then decide how to proceed.
 
-- If you enable this setting, the system hides the reminder balloons, and prevents users from displaying them.
+If you enable this setting, the system hides the reminder balloons, and prevents users from displaying them.
 
 If you disable the setting, the system displays the reminder balloons and prevents users from hiding them.
 
@@ -1713,7 +1713,7 @@ Hides or displays reminder balloons, and prevents users from changing the settin
 
 Reminder balloons appear above the Offline Files icon in the notification area to notify users when they have lost the connection to a networked file and are working on a local copy of the file. Users can then decide how to proceed.
 
-- If you enable this setting, the system hides the reminder balloons, and prevents users from displaying them.
+If you enable this setting, the system hides the reminder balloons, and prevents users from displaying them.
 
 If you disable the setting, the system displays the reminder balloons and prevents users from hiding them.
 
@@ -1847,7 +1847,7 @@ Deletes local copies of the user's offline files when the user logs off.
 
 This setting specifies that automatically and manually cached offline files are retained only while the user is logged on to the computer. When the user logs off, the system deletes all local copies of offline files.
 
-- If you disable this setting or do not configure it, automatically and manually cached copies are retained on the user's computer for later offline use.
+If you disable this setting or do not configure it, automatically and manually cached copies are retained on the user's computer for later offline use.
 
 > [!CAUTION]
 > Files are not synchronized before they are deleted. Any changes to local files since the last synchronization are lost.
@@ -1968,7 +1968,7 @@ This policy setting allows you to turn on economical application of administrati
 <!-- Description-Source-ADMX -->
 Determines how often reminder balloon updates appear.
 
-- If you enable this setting, you can select how often reminder balloons updates appear and also prevent users from changing this setting.
+If you enable this setting, you can select how often reminder balloons updates appear and also prevent users from changing this setting.
 
 Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the update interval.
 
@@ -2032,7 +2032,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Description-Source-ADMX -->
 Determines how often reminder balloon updates appear.
 
-- If you enable this setting, you can select how often reminder balloons updates appear and also prevent users from changing this setting.
+If you enable this setting, you can select how often reminder balloons updates appear and also prevent users from changing this setting.
 
 Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the update interval.
 
@@ -2744,7 +2744,7 @@ Determines whether offline files are synchonized before a computer is suspended.
 
 - If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
 
-If you disable or do not configuring this setting, files are not synchronized when the computer is suspended.
+- If you disable or do not configuring this setting, files are not synchronized when the computer is suspended.
 
 > [!NOTE]
 > If the computer is suspended by closing the display on a portable computer, files are not synchronized. If multiple users are logged on to the computer at the time the computer is suspended, a synchronization is not performed.
@@ -2806,7 +2806,7 @@ Determines whether offline files are synchonized before a computer is suspended.
 
 - If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
 
-If you disable or do not configuring this setting, files are not synchronized when the computer is suspended.
+- If you disable or do not configuring this setting, files are not synchronized when the computer is suspended.
 
 > [!NOTE]
 > If the computer is suspended by closing the display on a portable computer, files are not synchronized. If multiple users are logged on to the computer at the time the computer is suspended, a synchronization is not performed.

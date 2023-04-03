@@ -4,7 +4,7 @@ description: Learn more about the ADMX_srmfci Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -227,7 +227,7 @@ The Classification tab enables users to manually classify files by selecting pro
 
 <!-- EnableShellAccessCheck-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This Group Policy Setting should be set on Windows clients to enable access-denied assistance for all file types
+This Group Policy Setting should be set on Windows clients to enable access-denied assistance for all file types.
 <!-- EnableShellAccessCheck-Description-End -->
 
 <!-- EnableShellAccessCheck-Editable-Begin -->

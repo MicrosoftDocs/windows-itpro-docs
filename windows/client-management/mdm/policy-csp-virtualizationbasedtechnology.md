@@ -4,7 +4,7 @@ description: Learn more about the VirtualizationBasedTechnology Area in Policy C
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,7 +36,7 @@ ms.topic: reference
 <!-- HypervisorEnforcedCodeIntegrity-OmaUri-End -->
 
 <!-- HypervisorEnforcedCodeIntegrity-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-DDF-Forced -->
 Hypervisor-Protected Code Integrity: 0 - Turns off Hypervisor-Protected Code Integrity remotely if configured previously without UEFI Lock, 1 - Turns on Hypervisor-Protected Code Integrity with UEFI lock, 2 - Turns on Hypervisor-Protected Code Integrity without UEFI lock.
 <!-- HypervisorEnforcedCodeIntegrity-Description-End -->
 
@@ -71,7 +71,7 @@ Hypervisor-Protected Code Integrity: 0 - Turns off Hypervisor-Protected Code Int
 |:--|:--|
 | Name | VirtualizationBasedSecurity |
 | Friendly Name | Turn On Virtualization Based Security |
-| Element Name | Virtualization Based Protection of Code Integrity |
+| Element Name | Virtualization Based Protection of Code Integrity. |
 | Location | Computer Configuration |
 | Path | System > Device Guard |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |
@@ -100,8 +100,8 @@ Hypervisor-Protected Code Integrity: 0 - Turns off Hypervisor-Protected Code Int
 <!-- RequireUEFIMemoryAttributesTable-OmaUri-End -->
 
 <!-- RequireUEFIMemoryAttributesTable-Description-Begin -->
-<!-- Description-Source-DDF -->
-Require UEFI Memory Attributes Table
+<!-- Description-Source-DDF-Forced -->
+Require UEFI Memory Attributes Table.
 <!-- RequireUEFIMemoryAttributesTable-Description-End -->
 
 <!-- RequireUEFIMemoryAttributesTable-Editable-Begin -->
@@ -134,7 +134,7 @@ Require UEFI Memory Attributes Table
 |:--|:--|
 | Name | VirtualizationBasedSecurity |
 | Friendly Name | Turn On Virtualization Based Security |
-| Element Name | Require UEFI Memory Attributes Table |
+| Element Name | Require UEFI Memory Attributes Table. |
 | Location | Computer Configuration |
 | Path | System > Device Guard |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |

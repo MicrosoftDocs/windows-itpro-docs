@@ -4,7 +4,7 @@ description: Learn more about the FederatedAuthentication Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- EnableWebSignInForPrimaryUser-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether web-based sign-in is enabled with the Primary User experience
+Specifies whether web-based sign-in is enabled with the Primary User experience.
 <!-- EnableWebSignInForPrimaryUser-Description-End -->
 
 <!-- EnableWebSignInForPrimaryUser-Editable-Begin -->

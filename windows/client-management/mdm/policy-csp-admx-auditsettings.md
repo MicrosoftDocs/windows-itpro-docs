@@ -4,7 +4,7 @@ description: Learn more about the ADMX_AuditSettings Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -45,6 +45,7 @@ ms.topic: reference
 This policy setting determines what information is logged in security audit events when a new process has been created.
 
 This setting only applies when the Audit Process Creation policy is enabled.
+
 - If you enable this policy setting the command line information for every process will be logged in plain text in the security event log as part of the Audit Process Creation event 4688, "a new process has been created," on the workstations and servers on which this policy setting is applied.
 
 - If you disable or do not configure this policy setting, the process's command line information will not be included in Audit Process Creation events.

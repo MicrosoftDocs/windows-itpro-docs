@@ -4,7 +4,7 @@ description: Learn about the ADMX-backed policies in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/18/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2303,7 +2303,9 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [EnableSettings](policy-csp-desktopappinstaller.md)
 - [EnableExperimentalFeatures](policy-csp-desktopappinstaller.md)
 - [EnableLocalManifestFiles](policy-csp-desktopappinstaller.md)
+- [EnableBypassCertificatePinningForMicrosoftStore](policy-csp-desktopappinstaller.md)
 - [EnableHashOverride](policy-csp-desktopappinstaller.md)
+- [EnableLocalArchiveMalwareScanOverride](policy-csp-desktopappinstaller.md)
 - [EnableDefaultSource](policy-csp-desktopappinstaller.md)
 - [EnableMicrosoftStoreSource](policy-csp-desktopappinstaller.md)
 - [SourceAutoUpdateInterval](policy-csp-desktopappinstaller.md)
