@@ -21,7 +21,6 @@ There are several resources that you can use to find help with Windows Update fo
 - Open a [Microsoft support case](#open-a-microsoft-support-case)
 
 - [Documentation feedback](#documentation-feedback)
-- [Troubleshooting tips](#troubleshooting-tips) for Windows Update for Business reports
 - Follow the [Windows IT Pro blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog) to learn about upcoming changes to Windows Update for Business reports
 - Use Microsoft Q&A to [ask product questions](/answers/products/)
 
