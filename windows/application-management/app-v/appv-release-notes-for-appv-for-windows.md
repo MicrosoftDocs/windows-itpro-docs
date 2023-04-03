@@ -73,7 +73,7 @@ Under HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVe
 
 File type associations added to an application package manually using the Shortcuts and FTAs tab at the end of the application upgrade wizard aren't saved correctly. They won't be available to the App-V Client or to the Sequencer when updating the saved package again.
 
-**Workaround**: To add a file type association, open the package for modification and run the update wizard. During the Installation step, add the new file type association through the operating system. The sequencer detects the new association in the system registry and add it to the package’s virtual registry, where it is available to the client.
+**Workaround**: To add a file type association, open the package for modification and run the update wizard. During the Installation step, add the new file type association through the operating system. The sequencer detects the new association in the system registry and adds it to the package’s virtual registry, where it is available to the client.
 
 ## When streaming packages in Shared Content Store (SCS) mode to a client that is also managed with AppLocker, extra data is written to the local disk.
 
