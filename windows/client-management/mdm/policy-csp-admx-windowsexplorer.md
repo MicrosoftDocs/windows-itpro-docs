@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WindowsExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/10/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -357,6 +357,7 @@ This disables access to user-defined properties, and properties stored in NTFS s
 <!-- DisableIndexedLibraryExperience-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off Windows Libraries features that need indexed file metadata to function properly.
+
 - If you enable this policy, some Windows Libraries features will be turned off to better handle included folders that have been redirected to non-indexed network locations.
 Setting this policy will:
 * Disable all Arrangement views except for "By Folder"
@@ -681,8 +682,7 @@ For more information, see [Microsoft Defender SmartScreen](/windows/security/thr
 
 <!-- EnforceShellExtensionSecurity-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting is designed to ensure that shell extensions can operate on a per-user basis.
-- If you enable this setting, Windows is directed to only run those shell extensions that have either been approved by an administrator or that will not impact other users of the machine.
+This setting is designed to ensure that shell extensions can operate on a per-user basis. If you enable this setting, Windows is directed to only run those shell extensions that have either been approved by an administrator or that will not impact other users of the machine.
 
 A shell extension only runs if there is an entry in at least one of the following locations in registry.
 
@@ -749,6 +749,7 @@ For shell extensions to run on a per-user basis, there must be an entry at HKEY_
 <!-- ExplorerRibbonStartsMinimized-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify whether the ribbon appears minimized or in full when new File Explorer windows are opened.
+
 - If you enable this policy setting, you can set how the ribbon appears the first time users open File Explorer and whenever they open new windows.
 - If you disable or do not configure this policy setting, users can choose how the ribbon appears when they open new windows.
 <!-- ExplorerRibbonStartsMinimized-Description-End -->
@@ -2776,7 +2777,7 @@ Also, see the "Prevent access to drives from My Computer" policy setting.
 <!-- Description-Source-ADMX -->
 Removes all computers outside of the user's workgroup or local domain from lists of network resources in File Explorer and Network Locations.
 
-- If you enable this setting, the system removes the Entire Network option and the icons representing networked computers from Network Locations and from the browser associated with the Map Network Drive option.
+If you enable this setting, the system removes the Entire Network option and the icons representing networked computers from Network Locations and from the browser associated with the Map Network Drive option.
 
 This setting does not prevent users from viewing or connecting to computers in their workgroup or domain. It also does not prevent users from connecting to remote computers by other commonly used methods, such as by typing the share name in the Run dialog box or the Map Network Drive dialog box.
 
@@ -2900,6 +2901,7 @@ This setting does not prevent users from using other methods to perform tasks av
 Removes the list of most recently used files from the Open dialog box.
 
 - If you disable this setting or do not configure it, the "File name" field includes a drop-down list of recently used files.
+
 - If you enable this setting, the "File name" field is a simple text box. Users must browse directories to find a file or type a file name in the text box.
 
 This setting, and others in this folder, lets you remove new features added in Windows 2000 Professional, so that the Open dialog box looks like it did in Windows NT 4.0 and earlier. These policies only affect programs that use the standard Open dialog box provided to developers of Windows programs.
@@ -3213,7 +3215,7 @@ When a Windows client is in a workgroup, a Shared Documents icon appears in the 
 <!-- Description-Source-ADMX -->
 Prevents users from using File Explorer or Network Locations to map or disconnect network drives.
 
-- If you enable this setting, the system removes the Map Network Drive and Disconnect Network Drive commands from the toolbar and Tools menus in File Explorer and Network Locations and from menus that appear when you right-click the File Explorer or Network Locations icons.
+If you enable this setting, the system removes the Map Network Drive and Disconnect Network Drive commands from the toolbar and Tools menus in File Explorer and Network Locations and from menus that appear when you right-click the File Explorer or Network Locations icons.
 
 This setting does not prevent users from connecting to another computer by typing the name of a shared folder in the Run dialog box.
 
@@ -3465,6 +3467,7 @@ Prevents users from submitting alternate logon credentials to install a program.
 This setting suppresses the "Install Program As Other User" dialog box for local and network installations. This dialog box, which prompts the current user for the user name and password of an administrator, appears when users who are not administrators try to install programs locally on their computers. This setting allows administrators who have logged on as regular users to install programs without logging off and logging on again using their administrator credentials.
 
 Many programs can be installed only by an administrator.
+
 - If you enable this setting and a user does not have sufficient permissions to install a program, the installation continues with the current user's logon credentials. As a result, the installation might fail, or it might complete but not include all features. Or, it might appear to complete successfully, but the installed program might not operate correctly.
 
 - If you disable this setting or do not configure it, the "Install Program As Other User" dialog box appears whenever users install programs locally on the computer.
@@ -3525,6 +3528,7 @@ By default, users are not prompted for alternate logon credentials when installi
 
 <!-- NoSearchInternetTryHarderButton-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy, the "Internet" "Search again" link will not be shown when the user performs a search in the Explorer window.
 
 - If you disable this policy, there will be an "Internet" "Search again" link when the user performs a search in the Explorer window. This button launches a search in the default browser with the search terms.
@@ -3714,6 +3718,7 @@ This policy setting does not affect the Search items on the File Explorer contex
 <!-- NoStrCmpLogical-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to have file names sorted literally (as in Windows 2000 and earlier) rather than in numerical order.
+
 - If you enable this policy setting, File Explorer will sort file names by each digit in a file name (for example, 111 < 22 < 3).
 - If you disable or do not configure this policy setting, File Explorer will sort file names by increasing number value (for example, 3 < 22 < 111).
 <!-- NoStrCmpLogical-Description-End -->
@@ -3773,7 +3778,7 @@ This policy setting allows you to have file names sorted literally (as in Window
 <!-- Description-Source-ADMX -->
 Removes shortcut menus from the desktop and File Explorer. Shortcut menus appear when you right-click an item.
 
-- If you enable this setting, menus do not appear when you right-click the desktop or when you right-click the items in File Explorer. This setting does not prevent users from using other methods to issue commands available on the shortcut menus.
+If you enable this setting, menus do not appear when you right-click the desktop or when you right-click the items in File Explorer. This setting does not prevent users from using other methods to issue commands available on the shortcut menus.
 <!-- NoViewContextMenu-Description-End -->
 
 <!-- NoViewContextMenu-Editable-Begin -->
@@ -3831,7 +3836,7 @@ Removes shortcut menus from the desktop and File Explorer. Shortcut menus appear
 <!-- Description-Source-ADMX -->
 Prevents users from using My Computer to gain access to the content of selected drives.
 
-- If you enable this setting, users can browse the directory structure of the selected drives in My Computer or File Explorer, but they cannot open folders and access the contents. Also, they cannot use the Run dialog box or the Map Network Drive dialog box to view the directories on these drives.
+If you enable this setting, users can browse the directory structure of the selected drives in My Computer or File Explorer, but they cannot open folders and access the contents. Also, they cannot use the Run dialog box or the Map Network Drive dialog box to view the directories on these drives.
 
 To use this setting, select a drive or combination of drives from the drop-down list. To allow access to all drive directories, disable this setting or select the "Do not restrict drives" option from the drop-down list.
 
@@ -4039,7 +4044,7 @@ The list of Common Shell Folders that may be specified:
 
 Desktop, Recent Places, Documents, Pictures, Music, Recently Changed, Attachments and Saved Searches.
 
-- If you disable or do not configure this setting the default list of items will be displayed in the Places Bar.
+If you disable or do not configure this setting the default list of items will be displayed in the Places Bar.
 
 > [!NOTE]
 > In Windows Vista, this policy setting applies only to applications that are using the Windows XP common dialog box style. This policy setting does not apply to the new Windows Vista common dialog box style.
@@ -4101,7 +4106,7 @@ Prompts users for alternate logon credentials during network-based installations
 
 This setting displays the "Install Program As Other User" dialog box even when a program is being installed from files on a network computer across a local area network connection.
 
-- If you disable this setting or do not configure it, this dialog box appears only when users are installing programs from local media.
+If you disable this setting or do not configure it, this dialog box appears only when users are installing programs from local media.
 
 The "Install Program as Other User" dialog box prompts the current user for the user name and password of an administrator. This setting allows administrators who have logged on as regular users to install programs without logging off and logging on again using their administrator credentials.
 

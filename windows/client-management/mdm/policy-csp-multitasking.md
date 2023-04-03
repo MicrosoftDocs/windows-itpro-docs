@@ -4,7 +4,7 @@ description: Learn more about the Multitasking Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,8 +36,12 @@ ms.topic: reference
 <!-- BrowserAltTabBlowout-OmaUri-End -->
 
 <!-- BrowserAltTabBlowout-Description-Begin -->
-<!-- Description-Source-DDF -->
-Configures the inclusion of Microsoft Edge tabs into Alt-Tab.
+<!-- Description-Source-ADMX -->
+This setting controls the inclusion of Microsoft Edge tabs into Alt+Tab.
+
+This can be set to show all tabs, the most recent 3 or 5 tabs, or no tabs from Microsoft Edge.
+
+If this is set to show "Open windows only", the whole feature will be disabled.
 <!-- BrowserAltTabBlowout-Description-End -->
 
 <!-- BrowserAltTabBlowout-Editable-Begin -->
@@ -77,9 +81,13 @@ This policy only applies to the Alt+Tab switcher. When the policy isn't enabled,
 
 | Name | Value |
 |:--|:--|
-| Name | MultiTaskingAltTabFilter |
-| Path | multitasking > AT > WindowsComponents > MULTITASKING |
-| Element Name | AltTabFilterDropdown |
+| Name | BrowserAltTabBlowout |
+| Friendly Name | Configure the inclusion of Microsoft Edge tabs into Alt-Tab |
+| Element Name | Pressing Alt + Tab shows. |
+| Location | User Configuration |
+| Path | Windows Components > Multitasking |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| ADMX File Name | Multitasking.admx |
 <!-- BrowserAltTabBlowout-GpMapping-End -->
 
 <!-- BrowserAltTabBlowout-Examples-Begin -->

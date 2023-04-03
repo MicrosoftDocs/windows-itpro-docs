@@ -4,7 +4,7 @@ description: Learn more about the ADMX_NCSI Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -317,8 +317,7 @@ This policy setting enables you to specify the HTTPS URL of the corporate websit
 
 <!-- NCSI_GlobalDns-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it is currently probing on.
-- If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
+This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it is currently probing on. If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
 <!-- NCSI_GlobalDns-Description-End -->
 
 <!-- NCSI_GlobalDns-Editable-Begin -->

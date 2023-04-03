@@ -4,7 +4,7 @@ description: Learn more about the RemoteAssistance Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -277,7 +277,7 @@ For computers running Windows Server 2003 with Service Pack 1 (SP1)
 Port 135:TCP
 %WINDIR%\PCHealth\HelpCtr\Binaries\Helpsvc.exe
 %WINDIR%\PCHealth\HelpCtr\Binaries\Helpctr.exe
-Allow Remote Desktop Exception
+Allow Remote Desktop Exception.
 <!-- UnsolicitedRemoteAssistance-Description-End -->
 
 <!-- UnsolicitedRemoteAssistance-Editable-Begin -->

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Logon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -839,15 +839,15 @@ If a user with a roaming profile, home directory, or user object logon script lo
 
 On servers running Windows Server 2008 or later, this policy setting is ignored during Group Policy processing at computer startup and Group Policy processing will be synchronous (these servers wait for the network to be initialized during computer startup).
 
-If the server is configured as follows, this policy setting takes effect during Group Policy processing at user logon
-- The server is configured as a terminal server (that is, the Terminal Server role service is installed and configured on the server); and
-- The "Allow asynchronous user Group Policy processing when logging on through Terminal Services" policy setting is enabled. This policy setting is located under Computer Configuration\Policies\Administrative templates\System\Group Policy\.
+If the server is configured as follows, this policy setting takes effect during Group Policy processing at user logon:
+  - The server is configured as a terminal server (that is, the Terminal Server role service is installed and configured on the server); and
+  - The "Allow asynchronous user Group Policy processing when logging on through Terminal Services" policy setting is enabled. This policy setting is located under Computer Configuration\Policies\Administrative templates\System\Group Policy\.
 
 If this configuration is not implemented on the server, this policy setting is ignored. In this case, Group Policy processing at user logon is synchronous (these servers wait for the network to be initialized during user logon).
 
 - If you disable or do not configure this policy setting and users log on to a client computer or a server running Windows Server 2008 or later and that is configured as described earlier, the computer typically does not wait for the network to be fully initialized. In this case, users are logged on with cached credentials. Group Policy is applied asynchronously in the background.
 
-**Note**
+**Note**:
 -If you want to guarantee the application of Folder Redirection, Software Installation, or roaming user profile settings in just one logon, enable this policy setting to ensure that Windows waits for the network to be available before applying policy.
 -If Folder Redirection policy will apply during the next logon, security policies will be applied asynchronously during the next update cycle, if network connectivity is available.
 <!-- SyncForegroundPolicy-Description-End -->

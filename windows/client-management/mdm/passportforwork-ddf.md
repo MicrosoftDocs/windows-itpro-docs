@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -815,6 +815,45 @@ If you disable or do not configure this policy setting, the PIN recovery secret 
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisablePostLogonProvisioning</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <DefaultValue>False</DefaultValue>
+            <Description>Do not start Windows Hello provisioning after sign-in.</Description>
+            <DFFormat>
+              <bool />
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.6</MSFT:CspVersion>
+            </MSFT:Applicability>
+            <MSFT:AllowedValues ValueType="ENUM">
+              <MSFT:Enum>
+                <MSFT:Value>false</MSFT:Value>
+                <MSFT:ValueDescription>Disabled</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>true</MSFT:Value>
+                <MSFT:ValueDescription>Enabled</MSFT:ValueDescription>
+              </MSFT:Enum>
+            </MSFT:AllowedValues>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>UseCertificateForOnPremAuth</NodeName>
           <DFProperties>
             <AccessType>
@@ -1507,11 +1546,11 @@ Note that enhanced anti-spoofing for Windows Hello face authentication is not re
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
-              <MSFT:ValueDescription>Enhanced sign-in security will be disabled on all systems. If a user already has a secure Windows Hello enrollment, they will lose their enrollment and must reset PIN, and they will have the option to re-enroll in normal face and fingerprint. Peripheral usage will be enabled by disabling Enhanced sign-in security. OS will not attempt to start secure components, even if the secure hardware and software components are present. (not recommended)</MSFT:ValueDescription>
+              <MSFT:ValueDescription>ESS will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. Authentication operations of peripheral Windows Hello capable devices will be allowed, subject to current feature limitations. In addition, with this setting, ESS will be enabled on devices with a mixture of biometric devices, such as an ESS capable FPR and a non-ESS capable camera. (not recommended)</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>1</MSFT:Value>
-              <MSFT:ValueDescription>Enhanced sign-in security will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. For systems with one secure modality (face or fingerprint) and one insecure modality (fingerprint or face), only the secure sensor can be used for sign-in and the insecure sensor(s) will be blocked. This includes peripheral devices, which are unsupported and will be unusable. (default and recommended for highest security)</MSFT:ValueDescription>
+              <MSFT:ValueDescription>ESS will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. Authentication operations of any peripheral biometric device will be blocked and not available for Windows Hello. (default and recommended for highest security)</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
           <MSFT:GpMapping GpEnglishName="Enable ESS with Supported Peripherals" GpAreaPath="Passport~AT~WindowsComponents~MSPassportForWorkCategory" />

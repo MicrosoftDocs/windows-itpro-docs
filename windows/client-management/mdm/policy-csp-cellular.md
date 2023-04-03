@@ -4,7 +4,7 @@ description: Learn more about the Cellular Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -41,8 +41,20 @@ ms.topic: reference
 <!-- LetAppsAccessCellularData-OmaUri-End -->
 
 <!-- LetAppsAccessCellularData-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can access cellular data.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access cellular data by using Settings > Network - Internet > Cellular on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access cellular data and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access cellular data and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access cellular data by using Settings > Network - Internet > Cellular on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCellularData-Description-End -->
 
 <!-- LetAppsAccessCellularData-Editable-Begin -->
@@ -87,7 +99,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 |:--|:--|
 | Name | LetAppsAccessCellularData |
 | Friendly Name | Let Windows apps access cellular data |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Network > WWAN Service > Cellular Data Access |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WwanSvc\CellularDataAccess |
@@ -116,8 +128,20 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCellularData_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessCellularData_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access cellular data.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access cellular data by using Settings > Network - Internet > Cellular on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access cellular data and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access cellular data and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access cellular data by using Settings > Network - Internet > Cellular on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCellularData_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessCellularData_ForceAllowTheseApps-Editable-Begin -->
@@ -169,8 +193,20 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 <!-- LetAppsAccessCellularData_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessCellularData_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access cellular data.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access cellular data by using Settings > Network - Internet > Cellular on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access cellular data and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access cellular data and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access cellular data by using Settings > Network - Internet > Cellular on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCellularData_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessCellularData_ForceDenyTheseApps-Editable-Begin -->
@@ -222,8 +258,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessCellularData_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessCellularData_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access cellular data.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access cellular data by using Settings > Network - Internet > Cellular on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access cellular data and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access cellular data and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access cellular data by using Settings > Network - Internet > Cellular on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCellularData_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessCellularData_UserInControlOfTheseApps-Editable-Begin -->
