@@ -40,7 +40,7 @@ sections:
               - Configure [manually](wufb-reports-configuration-manual.md)          
   - name: Setup issues
     questions:
-      - question: Why is "Waiting for Windows Update for Business reports data" displayed on the page?
+      - question: Why is `Waiting for Windows Update for Business reports data` displayed on the page?
         answer: |
           Typically, the **Waiting for Windows Update for Business reports data** message is displayed because: 
           - You may not have the correct [permissions](wufb-reports-prerequisites.md#permissions) to display the data. 
