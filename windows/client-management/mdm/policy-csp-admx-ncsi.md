@@ -42,7 +42,7 @@ ms.topic: reference
 
 <!-- NCSI_CorpDnsProbeContent-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables you to specify the expected address of the host name used for the DNS probe. Successful resolution of the host name to this address indicates corporate connectivity.
+This policy setting enables you to specify the expected address of the host name used for the DNS probe. Successful resolution of the host name to this address indicates corporate connectivity. This applies exclusively to DirectAccess clients.
 <!-- NCSI_CorpDnsProbeContent-Description-End -->
 
 <!-- NCSI_CorpDnsProbeContent-Editable-Begin -->
@@ -97,7 +97,7 @@ This policy setting enables you to specify the expected address of the host name
 
 <!-- NCSI_CorpDnsProbeHost-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables you to specify the host name of a computer known to be on the corporate network. Successful resolution of this host name to the expected address indicates corporate connectivity.
+This policy setting enables you to specify the host name of a computer known to be on the corporate network. Successful resolution of this host name to the expected address indicates corporate connectivity. This applies exclusively to DirectAccess clients.
 <!-- NCSI_CorpDnsProbeHost-Description-End -->
 
 <!-- NCSI_CorpDnsProbeHost-Editable-Begin -->
@@ -152,7 +152,7 @@ This policy setting enables you to specify the host name of a computer known to 
 
 <!-- NCSI_CorpSitePrefixes-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables you to specify the list of IPv6 corporate site prefixes to monitor for corporate connectivity. Reachability of addresses with any of these prefixes indicates corporate connectivity.
+This policy setting enables you to specify the list of IPv6 corporate site prefixes to monitor for corporate connectivity. Reachability of addresses with any of these prefixes indicates corporate connectivity. This applies exclusively to DirectAccess clients.
 <!-- NCSI_CorpSitePrefixes-Description-End -->
 
 <!-- NCSI_CorpSitePrefixes-Editable-Begin -->
@@ -207,7 +207,7 @@ This policy setting enables you to specify the list of IPv6 corporate site prefi
 
 <!-- NCSI_CorpWebProbeUrl-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables you to specify the URL of the corporate website, against which an active probe is performed.
+This policy setting enables you to specify the URL of the corporate website, against which an active probe is performed. This applies exclusively to DirectAccess clients.
 <!-- NCSI_CorpWebProbeUrl-Description-End -->
 
 <!-- NCSI_CorpWebProbeUrl-Editable-Begin -->
@@ -262,7 +262,7 @@ This policy setting enables you to specify the URL of the corporate website, aga
 
 <!-- NCSI_DomainLocationDeterminationUrl-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables you to specify the HTTPS URL of the corporate website that clients use to determine the current domain location (i.e. whether the computer is inside or outside the corporate network). Reachability of the URL destination indicates that the client location is inside corporate network; otherwise it is outside the network.
+This policy setting enables you to specify the HTTPS URL of the corporate website that clients use to determine the current domain location (i.e. whether the computer is inside or outside the corporate network). Reachability of the URL destination indicates that the client location is inside corporate network; otherwise it is outside the network. This indicates the Network Location Server (NLS) URL and applies exclusively to DirectAccess clients (it does NOT apply for example to VPN clients). For non-DirectAccess scenarios, such as Azure AD only joined devices, please refer to [Policy CSP - NetworkListManager](./policy-csp-networklistmanager.md).
 <!-- NCSI_DomainLocationDeterminationUrl-Description-End -->
 
 <!-- NCSI_DomainLocationDeterminationUrl-Editable-Begin -->
