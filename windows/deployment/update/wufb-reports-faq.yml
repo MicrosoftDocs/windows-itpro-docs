@@ -40,7 +40,7 @@ sections:
               - Configure [manually](wufb-reports-configuration-manual.md)          
   - name: Setup issues
     questions:
-      - question: Why is **Waiting for Windows Update for Business reports data** displayed on the page?
+      - question: Why is "Waiting for Windows Update for Business reports data" displayed on the page?
         answer: |
           Typically, the **Waiting for Windows Update for Business reports data** message is displayed because: 
           - You may not have the correct [permissions](wufb-reports-prerequisites.md#permissions) to display the data. 
@@ -64,10 +64,10 @@ sections:
         answer: |
           Here are some reasons why you may not be seeing devices in reports:
 
-          - The device isn't enrolled with Azure Active Directory: A [prerequisite](wufb-reports-prerequisites.md#azure-and-azure-active-directory) for devices is that they're either [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
-          - The device isn't sending data: It's possible devices aren't sharing data due to a policy being incorrectly configured or a proxy or firewall configuration. Try using the [configuration script]((wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
-          - The device isn't active enough: Clients must be active and connected to the internet to scan against Microsoft Update. Ensure devices are powered on and have been active at least once in the past 28 days.
-          - The workbook has limited the results: The default limit for rows in Azure workbooks is set to 250. This is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the 3 dots beside each component.
+          - **The device isn't enrolled with Azure Active Directory**: A [prerequisite](wufb-reports-prerequisites.md#azure-and-azure-active-directory) for devices is that they're either [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+          - **The device isn't sending data**: It's possible devices aren't sharing data due to a policy being incorrectly configured or a proxy or firewall configuration. Try using the [configuration script]((wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
+          - **The device isn't active enough**: Clients must be active and connected to the internet to scan against Microsoft Update. Ensure devices are powered on and have been active at least once in the past 28 days.
+          - **The workbook has limited the results**: The default limit for rows in Azure workbooks is set to 250. This is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the 3 dots beside each component.
       - question: What is the difference between OS version and target version?
         answer: |
           The word *target* in data labels refers to the update version, build or KB the client is actively being updated to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
@@ -89,7 +89,9 @@ sections:
       - question: How do I confirm that devices are sending data?
         answer: |
           Once enrollment is done and devices are properly configured to share data, wait for 48 hours for data to start showing up in reports. It can take up to 14 days for all of your devices to show up in reports in some cases where devices aren't active or online much. You can check to see if the Log Analytics tables are being populated in your workspace. The data is ingested by the service daily to generate reports. If you notice a day is missing, it's possible that the reports service missed an ingestion. To confirm devices are sending data, [query](wufb-reports-use.md#display-windows-update-for-business-reports-data) the [UCClient table](wufb-reports-schema-ucclient.md). The following query shows total enrolled device count per time-generated: 
+
           `UCClient | summarize count() by TimeGenerated`
+
           :::image type="content" source="media/7760853-wufb-reports-time-generated.png" alt-text="Screenshot of using a Kusto (KQL) query for time generated on Windows Update for Business reports data in Log Analytics." lightbox="media/7760853-wufb-reports-time-generated.png":::
       - question: Why isn't the workbook displaying data even though my UCClient table has data?
         answer: |
