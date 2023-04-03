@@ -21,7 +21,7 @@ To enroll into Windows Update for Business reports from the [Azure portal](https
 - [Global reader](/azure/active-directory/roles/permissions-reference#global-reader) 
 
 > [!IMPORTANT]
-> At minimum, the Log Analytics Reader role (or equivalent permissions) needs to be assigned to the user all of the above enrollment roles because they don't have the permissions by default.
+> At minimum, the Log Analytics Reader role (or equivalent permissions) needs to be assigned to the user as well. All of the above roles don't have the permissions to actually read the Windows Update for Business reports data by default.
 
 **Read Windows Update for Business reports data**:
 
