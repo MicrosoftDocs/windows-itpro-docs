@@ -49,7 +49,8 @@ On **PC0001**:
     & "C:\MDT\CMTrace" C:\MININT\SMSOSD\OSDLOGS\ZTIGather.log
     ```
 
-3. Download and install the free [Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717) on PC0001 so that you have access to the Configuration Manager Trace (cmtrace.exe) tool.
+    > [!NOTE]
+    > For more information about the Configuration Manager Trace (cmtrace.exe) tool, see [CMTrace](/mem/configmgr/core/support/cmtrace).
 
 4. Using Local Users and Groups (lusrmgr.msc), add the **contoso\\MDT\_BA** user account to the local **Administrators** group.
 
