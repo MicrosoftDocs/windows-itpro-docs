@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Explorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -165,7 +165,7 @@ This policy setting configures File Explorer to always display the menu bar.
 <!-- Description-Source-ADMX -->
 This policy setting allows administrators who have configured roaming profile in conjunction with Delete Cached Roaming Profile Group Policy setting to ensure that Explorer will not reinitialize default program associations and other settings to default values.
 
-- If you enable this policy setting on a machine that does not contain all programs installed in the same manner as it was on the machine on which the user had last logged on, unexpected behavior could occur.
+If you enable this policy setting on a machine that does not contain all programs installed in the same manner as it was on the machine on which the user had last logged on, unexpected behavior could occur.
 <!-- DisableRoamedProfileInit-Description-End -->
 
 <!-- DisableRoamedProfileInit-Editable-Begin -->

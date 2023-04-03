@@ -4,7 +4,7 @@ description: Learn more about the Authentication Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,9 @@ ms.topic: reference
 
 <!-- Authentication-Begin -->
 # Policy CSP - Authentication
+
+> [!IMPORTANT]
+> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
 
 <!-- Authentication-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -356,7 +359,7 @@ Your organization's PIN reset or web sign-in authentication flow is expected to 
 
 <!-- EnableFastFirstSignIn-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether new non-admin AAD accounts should auto-connect to pre-created candidate local accounts
+Specifies whether new non-admin AAD accounts should auto-connect to pre-created candidate local accounts.
 <!-- EnableFastFirstSignIn-Description-End -->
 
 <!-- EnableFastFirstSignIn-Editable-Begin -->
@@ -394,6 +397,56 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 
 <!-- EnableFastFirstSignIn-End -->
 
+<!-- EnablePasswordlessExperience-Begin -->
+## EnablePasswordlessExperience
+
+<!-- EnablePasswordlessExperience-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- EnablePasswordlessExperience-Applicability-End -->
+
+<!-- EnablePasswordlessExperience-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Authentication/EnablePasswordlessExperience
+```
+<!-- EnablePasswordlessExperience-OmaUri-End -->
+
+<!-- EnablePasswordlessExperience-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether connected users on AADJ devices receive a Passwordless experience on Windows.
+<!-- EnablePasswordlessExperience-Description-End -->
+
+<!-- EnablePasswordlessExperience-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnablePasswordlessExperience-Editable-End -->
+
+<!-- EnablePasswordlessExperience-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnablePasswordlessExperience-DFProperties-End -->
+
+<!-- EnablePasswordlessExperience-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | The feature defaults to the existing edition and device capabilities. |
+| 1 | Enabled. The Passwordless experience will be enabled on Windows. |
+| 2 | Disabled. The Passwordless experience will not be enabled on Windows. |
+<!-- EnablePasswordlessExperience-AllowedValues-End -->
+
+<!-- EnablePasswordlessExperience-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnablePasswordlessExperience-Examples-End -->
+
+<!-- EnablePasswordlessExperience-End -->
+
 <!-- EnableWebSignIn-Begin -->
 ## EnableWebSignIn
 
@@ -411,7 +464,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 
 <!-- EnableWebSignIn-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether web-based sign-in is allowed for signing in to Windows
+Specifies whether web-based sign-in is allowed for signing in to Windows.
 <!-- EnableWebSignIn-Description-End -->
 
 <!-- EnableWebSignIn-Editable-Begin -->

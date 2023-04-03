@@ -9,9 +9,6 @@ author: vinaypamnani-msft
 ms.date: 06/26/2017
 ms.reviewer:
 manager: aaroncz
-ms.collection:
-  - highpri
-  - tier2
 ---
 
 # DynamicManagement CSP

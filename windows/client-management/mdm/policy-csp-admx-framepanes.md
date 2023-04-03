@@ -4,7 +4,7 @@ description: Learn more about the ADMX_FramePanes Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,9 +44,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting shows or hides the Details Pane in File Explorer.
 
-- If you enable this policy setting and configure it to hide the pane, the Details Pane in File Explorer is hidden and cannot be turned on by the user.
+If you enable this policy setting and configure it to hide the pane, the Details Pane in File Explorer is hidden and cannot be turned on by the user.
 
-- If you enable this policy setting and configure it to show the pane, the Details Pane is always visible and cannot be hidden by the user
+If you enable this policy setting and configure it to show the pane, the Details Pane is always visible and cannot be hidden by the user.
 
 > [!NOTE]
 > This has a side effect of not being able to toggle to the Preview Pane since the two cannot be displayed at the same time.
@@ -108,7 +108,7 @@ If you disable, or do not configure this policy setting, the Details Pane is hid
 <!-- Description-Source-ADMX -->
 Hides the Preview Pane in File Explorer.
 
-- If you enable this policy setting, the Preview Pane in File Explorer is hidden and cannot be turned on by the user.
+If you enable this policy setting, the Preview Pane in File Explorer is hidden and cannot be turned on by the user.
 
 If you disable, or do not configure this setting, the Preview Pane is hidden by default and can be displayed by the user.
 <!-- NoReadingPane-Description-End -->

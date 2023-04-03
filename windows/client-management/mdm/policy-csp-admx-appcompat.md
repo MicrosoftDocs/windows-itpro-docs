@@ -4,7 +4,7 @@ description: Learn more about the ADMX_AppCompat Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -241,7 +241,8 @@ The Windows Resource Protection and User Account Control features of Windows use
 
 This option is useful to server administrators who require faster performance and are aware of the compatibility of the applications they are using. It is particularly useful for a web server where applications may be launched several hundred times a second, and the performance of the loader is essential.
 
-NOTE: Many system processes cache the value of this setting for performance reasons. If you make changes to this setting, please reboot to ensure that your system accurately reflects those changes.
+> [!NOTE]
+> Many system processes cache the value of this setting for performance reasons. If you make changes to this setting, please reboot to ensure that your system accurately reflects those changes.
 <!-- AppCompatTurnOffEngine-Description-End -->
 
 <!-- AppCompatTurnOffEngine-Editable-Begin -->

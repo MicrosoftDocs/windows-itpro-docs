@@ -4,7 +4,7 @@ description: Learn more about the ADMX_ErrorReporting Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -243,6 +243,7 @@ This policy setting does not enable or disable Windows Error Reporting. To turn 
 > If the Turn off Windows Error Reporting policy setting is not configured, then Control Panel settings for Windows Error Reporting override this policy setting.
 
 - If you enable this policy setting, the setting overrides any user changes made to Windows Error Reporting settings in Control Panel, and default values are applied for any Windows Error Reporting policy settings that are not configured (even if users have changed settings by using Control Panel).
+
 - If you enable this policy setting, you can configure the following settings in the policy setting:
 
 - "Do not display links to any Microsoft 'More information' websites": Select this option if you do not want error dialog boxes to display links to Microsoft websites.
@@ -1425,6 +1426,7 @@ This policy setting turns off Windows Error Reporting, so that reports are not c
 This policy setting limits Windows Error Reporting behavior for errors in general applications when Windows Error Reporting is turned on.
 
 - If you enable this policy setting, you can create a list of applications that are never included in error reports. To create a list of applications for which Windows Error Reporting never reports errors, click Show, and then add or remove applications from the list of application file names in the Show Contents dialog box (example: notepad.exe). File names must always include the .exe file name extension. To remove an application from the list, click the name, and then press DELETE.
+
 - If this policy setting is enabled, the Exclude errors for applications on this list setting takes precedence.
 
 - If you disable or do not configure this policy setting, errors are reported on all Microsoft and Windows applications by default.
@@ -1485,6 +1487,7 @@ This policy setting limits Windows Error Reporting behavior for errors in genera
 This policy setting limits Windows Error Reporting behavior for errors in general applications when Windows Error Reporting is turned on.
 
 - If you enable this policy setting, you can create a list of applications that are never included in error reports. To create a list of applications for which Windows Error Reporting never reports errors, click Show, and then add or remove applications from the list of application file names in the Show Contents dialog box (example: notepad.exe). File names must always include the .exe file name extension. To remove an application from the list, click the name, and then press DELETE.
+
 - If this policy setting is enabled, the Exclude errors for applications on this list setting takes precedence.
 
 - If you disable or do not configure this policy setting, errors are reported on all Microsoft and Windows applications by default.

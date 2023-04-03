@@ -4,7 +4,7 @@ description: Learn more about the ADMX_DCOM Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -107,7 +107,7 @@ Allows you to specify that local computer administrators can supplement the "Def
 <!-- Description-Source-ADMX -->
 Allows you to view and change a list of DCOM server application ids (appids) which are exempted from the DCOM Activation security check. DCOM uses two such lists, one configured via Group Policy through this policy setting, and the other via the actions of local computer administrators. DCOM ignores the second list when this policy setting is configured, unless the "Allow local activation security check exemptions" policy is enabled.
 
-DCOM server appids added to this policy must be listed in curly-brace format. For example: {b5dcb061-cefb-42e0-a1be-e6a6438133fe}. If you enter a non-existent or improperly formatted appid DCOM will add it to the list without checking for errors.
+DCOM server appids added to this policy must be listed in curly-brace format. For Example: `{b5dcb061-cefb-42e0-a1be-e6a6438133fe}`. If you enter a non-existent or improperly formatted appid DCOM will add it to the list without checking for errors.
 
 - If you enable this policy setting, you can view and change the list of DCOM activation security check exemptions defined by Group Policy settings. If you add an appid to this list and set its value to 1, DCOM will not enforce the Activation security check for that DCOM server. If you add an appid to this list and set its value to 0 DCOM will always enforce the Activation security check for that DCOM server regardless of local settings.
 

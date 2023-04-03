@@ -4,7 +4,7 @@ description: Learn more about the ApplicationDefaults Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,8 +36,19 @@ ms.topic: reference
 <!-- DefaultAssociationsConfiguration-OmaUri-End -->
 
 <!-- DefaultAssociationsConfiguration-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy allows an administrator to set default file type and protocol associations. When set, default associations will be applied on sign-in to the PC. The association file can be created using the DISM tool (dism /online /export-defaultappassociations:appassoc. xml), and then needs to be base64 encoded before being added to SyncML. If policy is enabled and the client machine is Azure Active Directory joined, the associations assigned in SyncML will be processed and default associations will be applied.
+<!-- Description-Source-ADMX -->
+This policy specifies the path to a file (e.g. either stored locally or on a network location) that contains file type and protocol default application associations. This file can be created using the DISM tool.
+
+For example:
+Dism.exe /Online /Export-DefaultAppAssociations:C:\AppAssoc.txt
+
+For more information, refer to the DISM documentation on TechNet.
+
+If this group policy is enabled and the client machine is domain-joined, the file will be processed and default associations will be applied at logon time.
+
+If the group policy is not configured, disabled, or the client machine is not domain-joined, no default associations will be applied at logon time.
+
+If the policy is enabled, disabled, or not configured, users will still be able to override default file type and protocol associations.
 <!-- DefaultAssociationsConfiguration-Description-End -->
 
 <!-- DefaultAssociationsConfiguration-Editable-Begin -->
@@ -60,7 +71,7 @@ This policy allows an administrator to set default file type and protocol associ
 |:--|:--|
 | Name | DefaultAssociationsConfiguration |
 | Friendly Name | Set a default associations configuration file |
-| Element Name | Default Associations Configuration File |
+| Element Name | Default Associations Configuration File. |
 | Location | Computer Configuration |
 | Path | WindowsComponents > File Explorer |
 | Registry Key Name | Software\Policies\Microsoft\Windows\System |
@@ -147,7 +158,7 @@ Enabling this policy setting enables web-to-app linking so that apps can be laun
 
 Disabling this policy disables web-to-app linking and http(s) URIs will be opened in the default browser instead of launching the associated app.
 
-- If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 <!-- EnableAppUriHandlers-Description-End -->
 
 <!-- EnableAppUriHandlers-Editable-Begin -->

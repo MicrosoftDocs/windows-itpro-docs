@@ -3,8 +3,6 @@ title: Device enrollment overview
 description: Learn about the different options to enroll Windows devices in Microsoft Intune
 ms.date: 08/31/2022
 ms.topic: overview
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Device enrollment overview

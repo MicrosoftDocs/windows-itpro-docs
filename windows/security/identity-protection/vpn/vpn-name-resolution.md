@@ -1,17 +1,7 @@
 ---
 title: VPN name resolution (Windows 10 and Windows 11)
 description: Learn how the name resolution setting in the VPN profile configures how name resolution works when a VPN client connects to a VPN server.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.localizationpriority: medium
 ms.date: 09/23/2021
-manager: aaroncz
-ms.author: paoloma
-ms.reviewer: pesmith
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
 ms.topic: conceptual
 ---
 
@@ -23,7 +13,7 @@ The name resolution setting in the VPN profile configures how name resolution sh
 
 ## Name Resolution Policy table (NRPT)
  
-The NRPT is a table of namespaces that determines the DNS client’s behavior when issuing name resolution queries and processing responses. It is the first place that the stack will look after the DNSCache.
+The NRPT is a table of namespaces that determines the DNS client's behavior when issuing name resolution queries and processing responses. It is the first place that the stack will look after the DNSCache.
 
 There are 3 types of name matches that can  set up for NRPT:
 
