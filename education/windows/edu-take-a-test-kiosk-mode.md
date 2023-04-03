@@ -3,8 +3,6 @@ title: Configure Take a Test in kiosk mode
 description: Learn how to configure Windows to execute the Take a Test app in kiosk mode, using Intune and provisioning packages.
 ms.date: 09/30/2022
 ms.topic: how-to
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Configure Take a Test in kiosk mode

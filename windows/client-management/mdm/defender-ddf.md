@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1852,7 +1852,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Replace />
           </AccessType>
           <DefaultValue>0</DefaultValue>
-          <Description>This policy setting controls whether or not exclusions are visible to local admins.  For end users (that are not local admins) exclusions are not visible, whether or not this setting is enabled.</Description>
+          <Description>This policy setting controls whether or not exclusions are visible to local admins. To control local users exlcusions visibility use HideExclusionsFromLocalUsers. If HideExclusionsFromLocalAdmins is set then HideExclusionsFromLocalUsers will be implicitly set.</Description>
           <DFFormat>
             <int />
           </DFFormat>
@@ -1877,6 +1877,45 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
               <MSFT:ValueDescription>If you disable or do not configure this setting, local admins will be able to see exclusions in the Windows Security App and via PowerShell.</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>HideExclusionsFromLocalUsers</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This policy setting controls whether or not exclusions are visible to local users. If HideExclusionsFromLocalAdmins is set then this policy will be implicitly set.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>If you enable this setting, local users will no longer be able to see the exclusion list in Windows Security App or via PowerShell.</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>If you disable or do not configure this setting, local users will be able to see exclusions in the Windows Security App and via PowerShell.</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
@@ -1990,6 +2029,36 @@ The following XML file contains the device description framework (DDF) for the D
             <Replace />
           </AccessType>
           <Description>Define data duplication remote location for device control.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="None">
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>SecuredDevicesConfiguration</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <Description>Defines what are the devices primary ids that should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration is not set the default value will be applied, meaning all of the supported devices will be secured.</Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -2196,6 +2265,10 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
               <MSFT:ValueDescription>If you do not configure this setting, the default value will be applied. The default value is controlled by Microsoft security intelligence updates. Microsoft will enable Intel TDT if there is a known threat.</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>If you configure this setting to enabled, Intel TDT integration will turn on.</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>2</MSFT:Value>

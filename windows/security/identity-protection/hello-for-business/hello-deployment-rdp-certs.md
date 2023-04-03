@@ -6,8 +6,6 @@ ms.collection:
   - tier1
 ms.topic: article
 ms.date: 03/15/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ---
 
 # Deploy certificates for remote desktop (RDP) sign-in

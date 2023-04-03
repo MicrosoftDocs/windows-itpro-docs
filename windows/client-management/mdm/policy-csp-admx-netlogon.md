@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Netlogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -54,7 +54,7 @@ The allowable values for this setting result in the following behaviors:
 
 To specify this behavior in the DC Locator DNS SRV records, click Enabled, and then enter a value. The range of values is from 0 to 2.
 
-- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_AddressLookupOnPingBehavior-Description-End -->
 
 <!-- Netlogon_AddressLookupOnPingBehavior-Editable-Begin -->
@@ -955,7 +955,7 @@ DCs configured to perform dynamic registration of the DC Locator DNS resource re
 
 To specify the Refresh Interval of the DC records, click Enabled, and then enter a value larger than 1800. This value specifies the Refresh Interval of the DC records in seconds (for example, the value 3600 is 60 minutes).
 
-- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_DnsRefreshInterval-Description-End -->
 
 <!-- Netlogon_DnsRefreshInterval-Editable-Begin -->
@@ -1082,7 +1082,7 @@ This policy setting specifies the value for the Time-To-Live (TTL) field in SRV 
 
 To specify the TTL for DC Locator DNS records, click Enabled, and then enter a value in seconds (for example, the value "900" is 15 minutes).
 
-- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_DnsTtl-Description-End -->
 
 <!-- Netlogon_DnsTtl-Editable-Begin -->
@@ -1141,7 +1141,7 @@ This policy setting specifies the additional time for the computer to wait for t
 
 To specify the expected dial-up delay at logon, click Enabled, and then enter the desired value in seconds (for example, the value "60" is 1 minute).
 
-- If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
+If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
 <!-- Netlogon_ExpectedDialupDelay-Description-End -->
 
 <!-- Netlogon_ExpectedDialupDelay-Editable-Begin -->
@@ -1265,7 +1265,7 @@ The GC Locator DNS records and the site-specific SRV records are dynamically reg
 
 To specify the sites covered by the GC Locator DNS SRV records, click Enabled, and enter the sites' names in a space-delimited format.
 
-- If you do not configure this policy setting, it is not applied to any GCs, and GCs use their local configuration.
+If you do not configure this policy setting, it is not applied to any GCs, and GCs use their local configuration.
 <!-- Netlogon_GcSiteCoverage-Description-End -->
 
 <!-- Netlogon_GcSiteCoverage-Editable-Begin -->
@@ -1391,7 +1391,7 @@ The Priority field in the SRV record sets the preference for target hosts (speci
 
 To specify the Priority in the DC Locator DNS SRV resource records, click Enabled, and then enter a value. The range of values is from 0 to 65535.
 
-- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_LdapSrvPriority-Description-End -->
 
 <!-- Netlogon_LdapSrvPriority-Editable-Begin -->
@@ -1452,7 +1452,7 @@ The Weight field in the SRV record can be used in addition to the Priority value
 
 To specify the Weight in the DC Locator DNS SRV records, click Enabled, and then enter a value. The range of values is from 0 to 65535.
 
-- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_LdapSrvWeight-Description-End -->
 
 <!-- Netlogon_LdapSrvWeight-Editable-Begin -->
@@ -1510,6 +1510,7 @@ To specify the Weight in the DC Locator DNS SRV records, click Enabled, and then
 This policy setting specifies the maximum size in bytes of the log file netlogon.log in the directory %windir%\debug when logging is enabled.
 
 By default, the maximum size of the log file is 20MB.
+
 - If you enable this policy setting, the maximum size of the log file is set to the specified size. Once this size is reached the log file is saved to netlogon.bak and netlogon.log is truncated. A reasonable value based on available storage should be specified.
 
 - If you disable or do not configure this policy setting, the default behavior occurs as indicated above.
@@ -1573,7 +1574,7 @@ The application directory partition DC Locator DNS records and the site-specific
 
 To specify the sites covered by the DC Locator application directory partition-specific DNS SRV records, click Enabled, and then enter the site names in a space-delimited format.
 
-- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_NdncSiteCoverage-Description-End -->
 
 <!-- Netlogon_NdncSiteCoverage-Editable-Begin -->
@@ -1823,7 +1824,7 @@ The allowable values for this setting result in the following behaviors:
 
 To specify this behavior, click Enabled and then enter a value. The range of values is from 1 to 2.
 
-- If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
+If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
 <!-- Netlogon_PingUrgencyMode-Description-End -->
 
 <!-- Netlogon_PingUrgencyMode-Editable-Begin -->
@@ -1949,7 +1950,7 @@ The DC Locator DNS records are dynamically registered by the Net Logon service, 
 
 To specify the sites covered by the DC Locator DNS SRV records, click Enabled, and then enter the sites names in a space-delimited format.
 
-- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_SiteCoverage-Description-End -->
 
 <!-- Netlogon_SiteCoverage-Editable-Begin -->
@@ -2010,7 +2011,7 @@ An Active Directory site is one or more well-connected TCP/IP subnets that allow
 
 To specify the site name for this setting, click Enabled, and then enter the site name. When the site to which a computer belongs is not specified, the computer automatically discovers its site from Active Directory.
 
-- If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
+If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
 <!-- Netlogon_SiteName-Description-End -->
 
 <!-- Netlogon_SiteName-Editable-Begin -->
@@ -2076,7 +2077,7 @@ By default, the SYSVOL share will grant shared read access to files on the share
 > [!NOTE]
 > The SYSVOL share is a share created by the Net Logon service for use by Group Policy clients in the domain. The default behavior of the SYSVOL share ensures that no application with only read permission to files on the sysvol share can lock the files by requesting exclusive read access, which might prevent Group Policy settings from being updated on clients in the domain. When this setting is enabled, an application that relies on the ability to lock files on the SYSVOL share with only read permission will be able to deny Group Policy clients from reading the files, and in general the availability of the SYSVOL share on the domain will be decreased.
 
-- If you enable this policy setting, domain administrators should ensure that the only applications using the exclusive read capability in the domain are those approved by the administrator.
+If you enable this policy setting, domain administrators should ensure that the only applications using the exclusive read capability in the domain are those approved by the administrator.
 <!-- Netlogon_SysvolShareCompatibilityMode-Description-End -->
 
 <!-- Netlogon_SysvolShareCompatibilityMode-Editable-Begin -->

@@ -4,7 +4,7 @@ description: Learn more about the RemoteShell Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,7 +44,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting configures access to remote shells.
 
-- If you enable or do not configure this policy setting, new remote shell connections are accepted by the server.
+If you enable or do not configure this policy setting, new remote shell connections are accepted by the server.
 
 If you set this policy to 'disabled', new remote shell connections are rejected by the server.
 <!-- AllowRemoteShellAccess-Description-End -->
@@ -169,7 +169,7 @@ Any value from 0 to 0x7FFFFFFF can be set. A minimum of 60000 milliseconds (1 mi
 
 - If you enable this policy setting, the server will wait for the specified amount of time since the last received message from the client before terminating the open shell.
 
-If you do not configure or disable this policy setting, the default value of 900000 or 15 min will be used.
+- If you do not configure or disable this policy setting, the default value of 900000 or 15 min will be used.
 <!-- SpecifyIdleTimeout-Description-End -->
 
 <!-- SpecifyIdleTimeout-Editable-Begin -->

@@ -4,7 +4,7 @@ description: Learn more about the WebThreatDefense Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,9 @@ ms.topic: reference
 
 <!-- WebThreatDefense-Begin -->
 # Policy CSP - WebThreatDefense
+
+> [!IMPORTANT]
+> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
 
 <!-- WebThreatDefense-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->

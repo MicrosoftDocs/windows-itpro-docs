@@ -4,7 +4,7 @@ description: Learn more about the Experience Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,9 @@ ms.topic: reference
 
 <!-- Experience-Begin -->
 # Policy CSP - Experience
+
+> [!IMPORTANT]
+> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
 
 <!-- Experience-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -38,6 +41,7 @@ ms.topic: reference
 <!-- AllowClipboardHistory-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting determines whether history of Clipboard contents can be stored in memory.
+
 - If you enable this policy setting, history of Clipboard contents are allowed to be stored.
 - If you disable this policy setting, history of Clipboard contents are not allowed to be stored.
 Policy change takes effect immediately.
@@ -346,7 +350,7 @@ When Find My Device is off, the device and its location are not registered and t
 
 <!-- AllowManualMDMUnenrollment-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e. g. auto-enrolled), then disabling the MDM unenrollment has no effect
+Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e. g. auto-enrolled), then disabling the MDM unenrollment has no effect.
 
 > [!NOTE]
 > The MDM server can always remotely delete the account. Most restricted value is 0.
@@ -447,7 +451,7 @@ This policy is deprecated.
 
 <!-- AllowScreenCapture-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allow screen capture
+Allow screen capture.
 <!-- AllowScreenCapture-Description-End -->
 
 <!-- AllowScreenCapture-Editable-Begin -->
@@ -598,6 +602,7 @@ Allow SIM error dialog prompts when no SIM is inserted.
 <!-- AllowSpotlightCollection-Description-Begin -->
 <!-- Description-Source-DDF -->
 Specifies whether Spotlight collection is allowed as a Personalization->Background Setting.
+
 - If you enable this policy setting, Spotlight collection will show as an option in the user's Personalization Settings, and the user will be able to get daily images from Microsoft displayed on their desktop.
 - If you disable this policy setting, Spotlight collection will not show as an option in Personalization Settings, and the user will not have the choice of getting Microsoft daily images shown on their desktop.
 <!-- AllowSpotlightCollection-Description-End -->
@@ -708,8 +713,9 @@ Allows or disallows all Windows sync settings on the device. For information abo
 <!-- AllowTailoredExperiencesWithDiagnosticData-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy allows you to prevent Windows from using diagnostic data to provide customized experiences to the user.
+
 - If you enable this policy setting, Windows will not use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant.
-- If you disable or do not configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them. Diagnostic data can include browser, app and feature usage, depending on the Diagnostic and usage data setting value
+- If you disable or do not configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them. Diagnostic data can include browser, app and feature usage, depending on the Diagnostic and usage data setting value.
 
 > [!NOTE]
 > This setting does not control Cortana cutomized experiences because there are separate policies to configure it. Most restricted value is 0.
@@ -1009,6 +1015,7 @@ Prior to Windows 10, version 1803, this policy had User scope. This policy allow
 <!-- AllowWindowsSpotlight-Description-Begin -->
 <!-- Description-Source-DDF -->
 Specifies whether to turn off all Windows spotlight features at once.
+
 - If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices.
 - If you disable or do not configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings. Most restricted value is 0.
 <!-- AllowWindowsSpotlight-Description-End -->
@@ -1074,6 +1081,7 @@ Specifies whether to turn off all Windows spotlight features at once.
 <!-- AllowWindowsSpotlightOnActionCenter-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy allows administrators to prevent Windows spotlight notifications from being displayed in the Action Center.
+
 - If you enable this policy, Windows spotlight notifications will no longer be displayed in the Action Center.
 - If you disable or do not configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows. Most restricted value is 0.
 <!-- AllowWindowsSpotlightOnActionCenter-Description-End -->
@@ -1203,6 +1211,7 @@ This policy allows IT admins to turn off Suggestions in Settings app. These sugg
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy setting lets you turn off the Windows spotlight Windows welcome experience feature. The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a webpage that highlights new features.
+
 - If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps.
 - If you disable or do not configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested. Most restricted value is 0.
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-Description-End -->
@@ -1318,6 +1327,9 @@ Enables or disables Windows Tips / soft landing.
 <!-- ConfigureChatIcon-Begin -->
 ## ConfigureChatIcon
 
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
+
 <!-- ConfigureChatIcon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
@@ -1331,8 +1343,16 @@ Enables or disables Windows Tips / soft landing.
 <!-- ConfigureChatIcon-OmaUri-End -->
 
 <!-- ConfigureChatIcon-Description-Begin -->
-<!-- Description-Source-DDF -->
-Configures the Chat icon on the taskbar
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the Chat icon on the taskbar.
+
+- If you enable this policy setting and set it to Show, the Chat icon will be displayed on the taskbar by default. Users can show or hide it in Settings.
+
+- If you enable this policy setting and set it to Hide, the Chat icon will be hidden by default. Users can show or hide it in Settings.
+
+- If you enable this policy setting and set it to Disabled, the Chat icon will not be displayed, and users cannot show or hide it in Settings.
+
+- If you disable or do not configure this policy setting, the Chat icon will be configured according to the defaults for your Windows edition.
 <!-- ConfigureChatIcon-Description-End -->
 
 <!-- ConfigureChatIcon-Editable-Begin -->
@@ -1369,7 +1389,7 @@ Configures the Chat icon on the taskbar
 |:--|:--|
 | Name | ConfigureChatIcon |
 | Friendly Name | Configures the Chat icon on the taskbar |
-| Element Name | State |
+| Element Name | State. |
 | Location | Computer Configuration |
 | Path | Windows Components > Chat |
 | Registry Key Name | Software\Policies\Microsoft\Windows\Windows Chat |
@@ -1410,7 +1430,7 @@ Additionally, if you check the "Include content from Enterprise spotlight" check
 - If you do not configure this policy, Windows spotlight will be available on the lock screen and will be selected by default, unless you have configured another default lock screen image using the "Force a specific default lock screen and logon image" policy.
 
 > [!NOTE]
-> This policy is only available for Enterprise SKUs
+> This policy is only available for Enterprise SKUs.
 <!-- ConfigureWindowsSpotlightOnLockScreen-Description-End -->
 
 <!-- ConfigureWindowsSpotlightOnLockScreen-Editable-Begin -->
@@ -1593,6 +1613,55 @@ This policy setting lets you turn off cloud consumer account state content in al
 
 <!-- DisableConsumerAccountStateContent-End -->
 
+<!-- DisableTextTranslation-Begin -->
+## DisableTextTranslation
+
+<!-- DisableTextTranslation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- DisableTextTranslation-Applicability-End -->
+
+<!-- DisableTextTranslation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/DisableTextTranslation
+```
+<!-- DisableTextTranslation-OmaUri-End -->
+
+<!-- DisableTextTranslation-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows Text Translation feature to be enabled/disabled.
+<!-- DisableTextTranslation-Description-End -->
+
+<!-- DisableTextTranslation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableTextTranslation-Editable-End -->
+
+<!-- DisableTextTranslation-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableTextTranslation-DFProperties-End -->
+
+<!-- DisableTextTranslation-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Enable Text Translation. |
+| 1 | Disable Text Translation. |
+<!-- DisableTextTranslation-AllowedValues-End -->
+
+<!-- DisableTextTranslation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableTextTranslation-Examples-End -->
+
+<!-- DisableTextTranslation-End -->
+
 <!-- DoNotShowFeedbackNotifications-Begin -->
 ## DoNotShowFeedbackNotifications
 
@@ -1682,7 +1751,7 @@ This policy setting allows an organization to prevent its devices from showing f
 <!-- Description-Source-ADMX -->
 Prevent the "browser" group from syncing to and from this PC. This turns off and disables the "browser" group on the "sync your settings" page in PC settings. The "browser" group contains settings and info like history and favorites.
 
-- If you enable this policy setting, the "browser" group, including info like history and favorites, will not be synced.
+If you enable this policy setting, the "browser" group, including info like history and favorites, will not be synced.
 
 Use the option "Allow users to turn browser syncing on" so that syncing is turned off by default but not disabled.
 
@@ -1767,8 +1836,7 @@ _**Turn syncing off by default but don’t disable**_
 
 <!-- EnableOrganizationalMessages-Description-Begin -->
 <!-- Description-Source-DDF -->
-Organizational messages allow Administrators to deliver messages to their end users on selected Windows 11 experiences. Organizational messages are available to Administrators via services like Microsoft Intune. By default, this policy is disabled.
-- If you enable this policy, these experiences will show content booked by Administrators. Enabling this policy will have no impact on existing MDM policy settings governing delivery of content from Microsoft on Windows experiences.
+Organizational messages allow Administrators to deliver messages to their end users on selected Windows 11 experiences. Organizational messages are available to Administrators via services like Microsoft Endpoint Manager. By default, this policy is disabled. If you enable this policy, these experiences will show content booked by Administrators. Enabling this policy will have no impact on existing MDM policy settings governing delivery of content from Microsoft on Windows experiences.
 <!-- EnableOrganizationalMessages-Description-End -->
 
 <!-- EnableOrganizationalMessages-Editable-Begin -->
@@ -1901,6 +1969,7 @@ _**Prevent syncing of browser settings and let users turn on syncing**_
 <!-- ShowLockOnUserTile-Description-Begin -->
 <!-- Description-Source-ADMX -->
 Shows or hides lock from the user tile menu.
+
 - If you enable this policy setting, the lock option will be shown in the User Tile menu.
 
 - If you disable this policy setting, the lock option will never be shown in the User Tile menu.

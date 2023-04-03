@@ -4,7 +4,7 @@ description: Learn more about the ADMX_UserProfiles Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -42,7 +42,7 @@ ms.topic: reference
 
 <!-- CleanupProfiles-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows an administrator to automatically delete user profiles on system restart that have not been used within a specified number of days
+This policy setting allows an administrator to automatically delete user profiles on system restart that have not been used within a specified number of days.
 
 > [!NOTE]
 > One day is interpreted as 24 hours after a specific user profile was accessed.
@@ -373,7 +373,7 @@ This policy setting and related policy settings in this folder together define t
 
 - If you enable this policy setting, you can change how long Windows waits for a response from the server before considering the connection to be slow.
 
-- If you disable or do not configure this policy setting, Windows considers the network connection to be slow if the server returns less than 500 kilobits of data per second or take 120 milliseconds to respond. Consider increasing this value for clients using DHCP Service-assigned addresses or for computers accessing profiles across dial-up connections
+- If you disable or do not configure this policy setting, Windows considers the network connection to be slow if the server returns less than 500 kilobits of data per second or take 120 milliseconds to respond. Consider increasing this value for clients using DHCP Service-assigned addresses or for computers accessing profiles across dial-up connections.
 
 > [!IMPORTANT]
 > If the "Do not detect slow network connections" policy setting is enabled, this policy setting is ignored. Also, if the "Delete cached copies of roaming profiles" policy setting is enabled, there is no local copy of the roaming profile to load when the system detects a slow connection.
@@ -507,7 +507,7 @@ This setting prevents users from managing the ability to allow apps to access th
 
 "Always off" - users will not be able to change this setting and the user's name and account picture will not be shared with apps (not desktop apps). In addition apps (not desktop apps) that have the enterprise authentication capability will not be able to retrieve the user's UPN, SIP/URI, and DNS. Selecting this option may have a negative impact on certain enterprise software and/or line of business apps that depend on the domain information protected by this setting to connect with network resources.
 
-If you do not configure or disable this policy the user will have full control over this setting and can turn it off and on. Selecting this option may have a negative impact on certain enterprise software and/or line of business apps that depend on the domain information protected by this setting to connect with network resources if users choose to turn the setting off.
+- If you do not configure or disable this policy the user will have full control over this setting and can turn it off and on. Selecting this option may have a negative impact on certain enterprise software and/or line of business apps that depend on the domain information protected by this setting to connect with network resources if users choose to turn the setting off.
 <!-- UserInfoAccessAction-Description-End -->
 
 <!-- UserInfoAccessAction-Editable-Begin -->
