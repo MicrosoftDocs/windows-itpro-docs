@@ -9,7 +9,7 @@ ms.reviewer: jogeurte
 ms.author: jogeurte
 ms.manager: jsuther
 manager: aaroncz
-ms.date: 02/02/2023
+ms.date: 04/04/2023
 ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
@@ -47,7 +47,7 @@ For **single policy format WDAC policies**, in addition to the two locations abo
 
 ## Known issues
 
-### Managed Installer and ISG will cause garrulous events
+### Managed Installer and ISG may cause excessive events
 
 When Managed Installer and ISG are enabled, 3091 and 3092 events will be logged when a file didn't have Managed Installer or ISG authorization, regardless of whether the file was allowed. These events have been moved to the verbose channel beginning with the September 2022 Update Preview since the events don't indicate an issue with the policy.
 
