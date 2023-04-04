@@ -53,6 +53,7 @@ However, if an update has already started for a particular deployment ring, Wind
 #### Scheduled install
 
 > [!NOTE]
+> This feature isn't suitable for business critical workloads since Windows Autopatch cannot guarantee that devices will always update and restart in the specified window.
 > If you select the Schedule install cadence type, the devices in that ring won’t be counted towards the [Windows quality update service level objective](../operate/windows-autopatch-windows-quality-update-overview.md#service-level-objective).
 
 While the Windows Autopatch default options will meet the majority of the needs for regular users with corporate devices, we understand there are devices that run critical activities and can only receive Windows Updates at specific times. The **Scheduled install** cadence type will prevent forced restarts and interruptions to critical business activities for end users, thereby minimizing disruptions. Upon selecting the **Scheduled install** cadence type, any previously set deadlines and grace periods will be removed. The expectation is that devices would only update and restart according to the time specified.
