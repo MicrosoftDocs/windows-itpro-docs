@@ -72,54 +72,6 @@ The configuration of Azure AD consists of changing the authentication method for
 Using the **IdP metadata** XML file downloaded from Google Workspace, modify the *$DomainName* variable of the following script to match your environment, and then run it in an elevated PowerShell session. When prompted to authenticate to Azure AD, use the credentials of an account with the *Global Administrator* role.
 
 ```powershell
-Install-Module -Name MSOnline
-Import-Module MSOnline
-
-$DomainName = "<your domain name>"
-
-$xml = [Xml](Get-Content GoogleIDPMetadata.xml)
-
-$cert = -join $xml.EntityDescriptor.IDPSSODescriptor.KeyDescriptor.KeyInfo.X509Data.X509Certificate.Split()
-$issuerUri = $xml.EntityDescriptor.entityID
-$logOnUri = $xml.EntityDescriptor.IDPSSODescriptor.SingleSignOnService | ? { $_.Binding.Contains('Redirect') } | % { $_.Location }
-$LogOffUri = "https://accounts.google.com/logout"
-$brand = "Google Workspace Identity"
-Connect-MsolService
-$DomainAuthParams = @{
-  DomainName = $DomainName
-  Authentication = "Federated"
-  IssuerUri = $issuerUri
-  FederationBrandName = $brand
-  ActiveLogOnUri = $logOnUri
-  PassiveLogOnUri = $logOnUri
-  LogOffUri = $LogOffUri
-  SigningCertificate = $cert
-  PreferredAuthenticationProtocol = "SAMLP"
-}
-Set-MsolDomainAuthentication @DomainAuthParams
-```
-
-To verify that the configuration is correct, you can use the following PowerShell command:
-
-```powershell
-Get-MsolDomainFederationSettings -DomainName $DomainName
-```
-
-```output
-ActiveLogOnUri                         : https://accounts.google.com/o/saml2/idp?<GUID>
-DefaultInteractiveAuthenticationMethod : 
-FederationBrandName                    : Google Workspace Identity
-IssuerUri                              : https://accounts.google.com/o/saml2?idpid=<GUID>
-LogOffUri                              : https://accounts.google.com/logout
-MetadataExchangeUri                    : 
-NextSigningCertificate                 : 
-OpenIdConnectDiscoveryEndpoint         : 
-PassiveLogOnUri                        : https://accounts.google.com/o/saml2/idp?idpid=<GUID>
-SigningCertificate                     : <BASE64 encoded certificate>
-SupportsMfa                            : 
-```
-
-```powershell
 Install-Module Microsoft.Graph
 Import-Module Microsoft.Graph
 
