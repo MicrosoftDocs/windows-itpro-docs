@@ -41,7 +41,7 @@ Windows Update for Business reports uses the following Delivery Optimization ter
    - When bandwidth savings are <10% an *Error* icon is displayed.
 - **Configurations**: Based on the DownloadMode configuration set via MDM, Group Policy, or end-user via the user interface.
 - **P2P Device Count**: The device count is determined by the number of devices that have received bytes from peers, for supported content types.
-- **Microsoft Connected Cache (MCC)**: Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. [Learn more](https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache)
+- **Microsoft Connected Cache (MCC)**: Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. [Learn more](https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache) about Microsoft Connected Cache.
 - **MCC Device Count**: The device count is determined by the number of devices that have received bytes from the cache server, for supported content types.
 - **Total # of Devices**: The total number of devices with activity in last 28 days.
 - **LAN Bytes**: Bytes delivered from LAN peers.
