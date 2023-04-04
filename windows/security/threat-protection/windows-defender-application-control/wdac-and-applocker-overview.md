@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: vinaypamnani-msft
-ms.reviewer: isbrahm
+ms.reviewer: jsuther
 ms.author: vinpa
 manager: aaroncz
-ms.date: 09/30/2020
+ms.date: 04/04/2023
 ms.custom: asr
 ms.technology: itpro-security
 ms.topic: article
@@ -51,7 +51,7 @@ Prior to Windows 10 version 1709, Windows Defender Application Control was known
 
 Windows Defender Application Control (WDAC) policies can be created on any client edition of Windows 10 build 1903+, or Windows 11, or on Windows Server 2016 and above.
 
-WDAC policies can be applied to devices running any edition of Windows 10, Windows 11, or Windows Server 2016 and above, via a Mobile Device Management (MDM) solution, for example, Intune; a management interface such as Configuration Manager; or a script host such as PowerShell. Group Policy can also be used to deploy WDAC policies to Windows 10 and Windows 11 Enterprise edition, or Windows Server 2016 and above, but can't deploy policies to devices running non-Enterprise SKUs of Windows 10.
+WDAC policies can be applied to devices running any edition of Windows 10, Windows 11, or Windows Server 2016 and above, via a Mobile Device Management (MDM) solution, for example, Intune; a management interface such as Configuration Manager; or a script host such as PowerShell. Group Policy can also be used to deploy WDAC policies, but is limited to single-policy format policies that work on Windows Server 2016 and 2019.
 
 For more information on which individual WDAC features are available on specific WDAC builds, see [WDAC feature availability](feature-availability.md).
 
