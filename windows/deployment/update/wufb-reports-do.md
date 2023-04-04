@@ -113,9 +113,20 @@ UCDOAggregatedStatus
 ```
 
 
-### Sample query 2
+### Sample UCDOStatus table query
 
-Explanation of what the query displays
+The following is the query used to display the Top 10 GroupIDs:
+
+```kusto
+UCDOStatus  | where TimeGenerated == _SnapshotTime
+| summarize sum(BytesFromCDN) ,  sum(BytesFromGroupPeers) , sum(BytesFromPeers) , sum(BytesFromCache) ,
+DeviceCount = count_distinct(GlobalDeviceId) by GroupID | top 10 by DeviceCount desc 
+| extend TotalBytes = (sum_BytesFromPeers + sum_BytesFromGroupPeers+sum_BytesFromCDN+sum_BytesFromCache)
+| extend P2PPercentage = ((0.0 + sum_BytesFromPeers + sum_BytesFromGroupPeers)/TotalBytes ) * 100.0  
+| extend  MCCPercentage = ((0.0 + sum_BytesFromCache)/ TotalBytes) * 100.0  , 
+ VolumeBytesFromPeers = sum_BytesFromPeers + sum_BytesFromGroupPeers
+| extend VolumeBytesFromMCC = sum_BytesFromCache , VolumeByCDN = sum_BytesFromCDN
+| project  GroupID , P2PPercentage , MCCPercentage ,  VolumeBytesFromPeers , VolumeBytesFromMCC ,VolumeByCDN , DeviceCount
 
 
 ### Frequency Asked Questions
@@ -125,3 +136,6 @@ Data is available for the last 28 days.
 
 - **Data is showing as 'Unknown', what does that mean?**
 You may see data in the report listed as 'Unknown'. This indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.
+
+-**How is the 'Top 10' groups identified?**
+The top groups are represented by the number of devices in a particular group, for any of the four group types (GroupID, City, Country, and ISP).
