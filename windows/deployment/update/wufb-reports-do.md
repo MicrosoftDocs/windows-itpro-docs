@@ -124,7 +124,7 @@ DeviceCount = count_distinct(GlobalDeviceId) by GroupID | top 10 by DeviceCount 
 | project  GroupID , P2PPercentage , MCCPercentage ,  VolumeBytesFromPeers , VolumeBytesFromMCC ,VolumeByCDN , DeviceCount
 ```
 
-### Frequency Asked Questions
+## Frequency Asked Questions
 
 - **What time period does the Delivery Optimization data include?**
 Data is available for the last 28 days.
