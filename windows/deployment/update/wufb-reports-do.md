@@ -137,3 +137,12 @@ The top groups are represented by the number of devices in a particular group, f
 
 - **The GroupIDs don't look familiar, why are they different?**
 The GroupID values are encoded for data protection telemetry requirements. You can find more information in the 'Mapping GroupIDs' section above.
+
+- **How can I see data for device in the office vs. out of the office?**
+Today, we don't have a distinction for data that was downloaded by location. 
+
+- **What does the data in UCDOStatus table represent?**
+A row in UCDOStatus represents data downloaded by a combination of a single device ID (AzureADDeviceId) by content type (ContentType). 
+
+- **What does the data in UCDOAggregatedStatus table represent?**
+A row in UCDOAggregatedStatus represents data summarized at the tenant level (AzureADTenantID) for each content type (ContentType).
