@@ -9,16 +9,19 @@ author: vinaypamnani-msft
 ms.date: 03/23/2020
 ms.reviewer: 
 manager: aaroncz
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Win32 and Desktop Bridge app ADMX policy Ingestion
 
 ## In this section
 
--   [Overview](#overview)
--   [Ingesting an app ADMX file](#ingesting-an-app-admx-file)
--   [URI format for configuring an app policy](#uri-format-for-configuring-an-app-policy)
--   [ADMX app policy examples](#admx-backed-app-policy-examples)
+- [Overview](#overview)
+- [Ingesting an app ADMX file](#ingesting-an-app-admx-file)
+- [URI format for configuring an app policy](#uri-format-for-configuring-an-app-policy)
+- [ADMX app policy examples](#admx-backed-app-policy-examples)
     - [Enabling an app policy](#enabling-an-app-policy)
     - [Disabling an app policy](#disabling-an-app-policy)
     - [Setting an app policy to not configured](#setting-an-app-policy-to-not-configured)
@@ -57,7 +60,7 @@ When the ADMX policies are ingested, the registry keys to which each policy is w
 - software\Microsoft\Edge
 - Software\Microsoft\EdgeUpdate\
 
-> [!Warning]
+> [!WARNING]
 > Some operating system components have built in functionality to check devices for domain membership. MDM enforces the configured policy values only if the devices are domain joined, otherwise it does not. However, you can still ingest ADMX files and set ADMX policies regardless of whether the device is domain joined or non-domain joined.
 
 > [!NOTE]
@@ -409,6 +412,7 @@ The policy {AreaName} format is {AppName}~{SettingType}~{CategoryPathFromAdmx}.
 {CategoryPathFromAdmx} is derived by traversing the parentCategory parameter. In this example, {CategoryPathFromAdmx} is ParentCategoryArea~Category2~Category3. Therefore, {AreaName} is ContosoCompanyApp~ Policy~ ParentCategoryArea~Category2~Category3.
 
 Therefore, from the example:
+
 - Class: User
 - Policy name: L_PolicyPreventRun_1
 - Policy area name: ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3

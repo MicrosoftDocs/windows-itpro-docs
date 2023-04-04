@@ -9,11 +9,14 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # On-premises authentication device enrollment
 
-This section provides an example of the mobile device enrollment protocol using on-premises authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
+This section provides an example of the mobile device enrollment protocol using on-premises authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 ## In this topic
 
@@ -23,7 +26,7 @@ This section provides an example of the mobile device enrollment protocol using 
   - [Enrollment policy web service](#enrollment-policy-web-service)
   - [Enrollment web service](#enrollment-web-service)
 
-For the list of enrollment scenarios not supported in Windows 10, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
+For the list of enrollment scenarios not supported in Windows 10, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
 
 ## Discovery service
 
@@ -32,7 +35,7 @@ The discovery web service provides the configuration information necessary for a
 > [!NOTE]
 > The administrator of the discovery service must create a host with the address enterpriseenrollment.*domain\_name*.com.
 
-The device’s automatic discovery flow uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain “enterpriseenrollment” to the domain of the email address, and by appending the path “/EnrollmentServer/Discovery.svc”. For example, if the email address is “sample@contoso.com”, the resulting URI for first Get request would be: http:<span></span>//enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc
+The device's automatic discovery flow uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain "enterpriseenrollment" to the domain of the email address, and by appending the path "/EnrollmentServer/Discovery.svc". For example, if the email address is "sample@contoso.com", the resulting URI for first Get request would be: http:<span></span>//enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc
 
 The first request is a standard HTTP GET request.
 
@@ -72,10 +75,10 @@ After the device gets a response from the server, the device sends a POST reques
 
 The following logic is applied:
 
-1.  The device first tries HTTPS. If the server cert is not trusted by the device, the HTTPS fails.
-2.  If that fails, the device tries HTTP to see whether it is redirected:
-    -   If the device is not redirected, it prompts the user for the server address.
-    -   If the device is redirected, it prompts the user to allow the redirect.
+1. The device first tries HTTPS. If the server cert is not trusted by the device, the HTTPS fails.
+1. If that fails, the device tries HTTP to see whether it is redirected:
+    - If the device is not redirected, it prompts the user for the server address.
+    - If the device is redirected, it prompts the user to allow the redirect.
 
 The following example shows a request via an HTTP POST command to the discovery web service given user@contoso.com as the email address:
 
@@ -124,9 +127,9 @@ If a domain and user name are provided by the user instead of an email address, 
 
 The discovery response is in the XML format and includes the following fields:
 
--   Enrollment service URL (EnrollmentServiceUrl) – Specifies the URL of the enrollment endpoint that is exposed by the management service. The device should call this URL after the user has been authenticated. This field is mandatory.
--   Authentication policy (AuthPolicy) – Indicates what type of authentication is required. For the MDM server, OnPremise is the supported value, which means that the user will be authenticated when calling the management service URL. This field is mandatory.
--   Federated is added as another supported value. This allows the server to leverage the Web Authentication Broker to perform customized user authentication, and term of usage acceptance.
+- Enrollment service URL (EnrollmentServiceUrl) - Specifies the URL of the enrollment endpoint that is exposed by the management service. The device should call this URL after the user has been authenticated. This field is mandatory.
+- Authentication policy (AuthPolicy) - Indicates what type of authentication is required. For the MDM server, OnPremise is the supported value, which means that the user will be authenticated when calling the management service URL. This field is mandatory.
+- Federated is added as another supported value. This allows the server to leverage the Web Authentication Broker to perform customized user authentication, and term of usage acceptance.
 
 > [!NOTE]
 > The HTTP server response must not be chunked; it must be sent as one message.
@@ -462,7 +465,7 @@ The following example shows the encoded provisioning XML.
          </characteristic>
          <characteristic type="WSTEP">
             <characteristic type="Renew">
-             <!—If the datatype for ROBOSupport, RenewPeriod, and RetryInterval tags exist, they must be set explicitly. -->
+             <!-If the datatype for ROBOSupport, RenewPeriod, and RetryInterval tags exist, they must be set explicitly. -->
                <parm name="ROBOSupport" value="true" datatype="boolean"/>
                <parm name="RenewPeriod" value="60" datatype="integer"/>
                <parm name="RetryInterval" value="4" datatype="integer"/>
@@ -505,7 +508,7 @@ The following example shows the encoded provisioning XML.
          <parm name="NumberOfSecondRetries" value="5" datatype="integer" />
          <parm name="IntervalForSecondSetOfRetries" value="3" datatype="integer" />
          <parm name="NumberOfRemainingScheduledRetries" value="0" datatype="integer" />
-<!-- Windows 10 supports MDM push for real-time communication. The DM client long term polling schedule’s retry waiting interval should be more than 24 hours (1440) to reduce the impact to data consumption and battery life. Refer to the DMClient Configuration Service Provider section for information about polling schedule parameters.-->
+<!-- Windows 10 supports MDM push for real-time communication. The DM client long term polling schedule's retry waiting interval should be more than 24 hours (1440) to reduce the impact to data consumption and battery life. Refer to the DMClient Configuration Service Provider section for information about polling schedule parameters.-->
          <parm name="IntervalForRemainingScheduledRetries" value="1560" datatype="integer" />
          <parm name="PollOnLogin" value="true" datatype="boolean" />
  </characteristic>

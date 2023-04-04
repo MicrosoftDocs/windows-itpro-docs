@@ -9,8 +9,10 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
-
 
 # OMA DM protocol support
 
@@ -31,7 +33,6 @@ The following table shows the OMA DM standards that Windows uses.
 |Provisioning Files|Provisioning XML must be well formed and follow the definition in [SyncML Representation Protocol](https://www.openmobilealliance.org/release/Common/V1_2_2-20090724-A/OMA-TS-SyncML-RepPro-V1_2_2-20090724-A.pdf).<br/><br/>If an XML element that isn't a valid OMA DM command is under SyncBody, the status code 400 is returned for that element.<div class="alert">**Note**<br>To represent a Unicode string as a URI, first encode the string as UTF-8. Then encode each of the UTF-8 bytes using URI encoding.</div>|
 |WBXML support|Windows supports sending and receiving SyncML in both XML format and encoded WBXML format. This dual-format support is configurable by using the DEFAULTENCODING node under the w7 APPLICATION characteristic during enrollment. For more information about WBXML encoding, see section 8 of the [SyncML Representation Protocol](https://www.openmobilealliance.org/release/Common/V1_2_2-20090724-A/OMA-TS-SyncML-RepPro-V1_2_2-20090724-A.pdf) specification.|
 |Handling of large objects|In Windows 10, version 1511, client support for uploading large objects to the server was added.|
-
 
 <a href="" id="protocol-common-elements"></a>
 ## OMA DM protocol common elements
@@ -68,26 +69,27 @@ A short DM session can be summarized as:
 A server sends a Get command to a client device to retrieve the contents of one of the nodes of the management tree. The device performs the operation and responds with a Result command that contains the requested contents.
 
 A DM session can be divided into two phases:
-1.  **Setup phase**: In response to a trigger event, a client device sends an initiating message to a DM server. The device and server exchange needed authentication and device information. This phase is represented by steps 1, 2, and 3 in the following table.
-2.  **Management phase**: The DM server is in control. It sends management commands to the device and the device responds. Phase 2 ends when the DM server stops sending commands and terminates the session. This phase is represented by steps 3, 4, and 5 in the following table.
+
+1. **Setup phase**: In response to a trigger event, a client device sends an initiating message to a DM server. The device and server exchange needed authentication and device information. This phase is represented by steps 1, 2, and 3 in the following table.
+1. **Management phase**: The DM server is in control. It sends management commands to the device and the device responds. Phase 2 ends when the DM server stops sending commands and terminates the session. This phase is represented by steps 3, 4, and 5 in the following table.
 
 The following information shows the sequence of events during a typical DM session.
 
-1. DM client is invoked to call back to the management server<br><br>Enterprise scenario – The device task schedule invokes the DM client.
+1. DM client is invoked to call back to the management server<br><br>Enterprise scenario - The device task schedule invokes the DM client.
 
     The MO server sends a server trigger message to invoke the DM client.
 
     The trigger message includes the server ID and tells the client device to initiate a session with the server. The client device authenticates the trigger message and verifies that the server is authorized to communicate with it.<br><br>Enterprise scenario - At the scheduled time, the DM client is invoked periodically to call back to the enterprise management server over HTTPS.
 
-2. The device sends a message, over an IP connection, to initiate the session.
+1. The device sends a message, over an IP connection, to initiate the session.
 
     This message includes device information and credentials. The client and server do mutual authentication over an SSL channel or at the DM application level.
 
-3. The DM server responds, over an IP connection (HTTPS). The server sends initial device management commands, if any.
+1. The DM server responds, over an IP connection (HTTPS). The server sends initial device management commands, if any.
 
-4. The device responds to server management commands. This message includes the results of performing the specified device management operations.
+1. The device responds to server management commands. This message includes the results of performing the specified device management operations.
 
-5. The DM server terminates the session or sends another command. The DM session ends, or Step 4 is repeated.
+1. The DM server terminates the session or sends another command. The DM session ends, or Step 4 is repeated.
 
 The step numbers don't represent message identification numbers (MsgID). All messages from the server must have a MsgID that is unique within the session, starting at 1 for the first message, and increasing by an increment of 1 for each extra message. For more information about MsgID and OMA SyncML protocol, see [OMA Device Management Representation Protocol (DM_RepPro-V1_2-20070209-A)](https://www.openmobilealliance.org/release/DM/V1_2-20070209-A/).
 
@@ -96,7 +98,6 @@ During OMA DM application level mutual authentication, if the device response co
 If a request includes credentials and the response code to the request is 200, the same credential must be sent within the next request. If the Chal element is included and the MD5 authentication is required, a new digest is created by using the next nonce via the Chal element for next request.
 
 For more information about Basic or MD5 client authentication, MD5 server authentication, MD5 hash, and MD5 nonce, see the OMA Device Management Security specification (OMA-TS-DM_Security-V1_2_1-20080617-A), authentication response code handling and step-by-step samples in OMA Device Management Protocol specification (OMA-TS-DM_Protocol-V1_2_1-20080617-A), available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_2_1-20080617-A/).
-
 
 ## User targeted vs. Device targeted configuration
 
@@ -129,7 +130,6 @@ The server notifies the device whether it's a user-targeted or device-targeted c
 The following LocURL shows a per user CSP node configuration: `./user/vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/<PackageFamilyName>/StoreInstall`
 
 The following LocURL shows a per device CSP node configuration: `./device/vendor/MSFT/RemoteWipe/DoWipe`
-
 
 <a href="" id="syncml-response-codes"></a>
 ## SyncML response status codes

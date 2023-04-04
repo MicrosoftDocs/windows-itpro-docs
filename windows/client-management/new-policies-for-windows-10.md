@@ -10,15 +10,12 @@ ms.localizationpriority: medium
 ms.date: 09/15/2021
 ms.topic: reference
 ms.technology: itpro-manage
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # New policies for Windows 10
-
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 As of September 2020 This page will no longer be updated. To find the Group Polices that ship in each version of Windows,  refer to the Group Policy Settings Reference Spreadsheet. You can always locate the most recent version of the Spreadsheet by searching the Internet for "Windows Version + Group Policy Settings Reference".
 
@@ -40,7 +37,6 @@ The following Group Policy settings were added in Windows 10, version 1903:
 - System\Storage Sense\Configure Storage Sense Recycle Bin cleanup threshold
 - System\Storage Sense\Configure Storage Sense Downloads cleanup threshold
 - System\Troubleshooting and Diagnostics\Microsoft Support Diagnostic Tool\Troubleshooting:Allow users to access recommended troubleshooting for known problems
-
 
 **Windows Components**
 
@@ -180,7 +176,7 @@ The following Group Policy settings were added in Windows 10, version 1809:
 - Windows Components\Microsoft Defender Antivirus\Scan\Configure low CPU priority for scheduled scans
 - Windows Components\Windows Defender Application Guard\Allow camera and microphone access in Windows Defender Application Guard
 - Windows Components\Windows Defender Application Guard\Allow users to trust files that open in Windows Defender Application Guard
-- Windows Components\Windows Defender Application Guard\Allow Windows Defender Application Guard to use Root Certificate Authorities from the user’s device
+- Windows Components\Windows Defender Application Guard\Allow Windows Defender Application Guard to use Root Certificate Authorities from the user's device
 - Windows Components\Windows Defender Application Guard\Configure additional sources for untrusted files in Windows Defender Application Guard
 - Windows Components\Windows Hello for Business\Use Windows Hello for Business certificates as smart card certificates
 - Windows Components\Windows Media Player\Do Not Show First Use Dialog Boxes
@@ -238,7 +234,6 @@ The following Group Policy settings were added in Windows 10, version 1809:
 
 - Network\Windows Connection Manager\Enable Windows to soft-disconnect a computer from a network
 
-
 ## New Group Policy settings in Windows 10, version 1803
 
 The following Group Policy settings were added in Windows 10, version 1803:
@@ -277,7 +272,6 @@ The following Group Policy settings were added in Windows 10, version 1803:
 - Windows Components\Windows Defender Security Center\Device security\Hide the Security processor (TPM) troubleshooter page
 - Windows Components\Windows Defender Security Center\Device security\Hide the Secure boot area
 - Windows Components\Windows Defender Security Center\Virus and threat protection\Hide the Ransomware data recovery area
-
 
 ## New Group Policy settings in Windows 10, version 1709
 
@@ -346,7 +340,6 @@ The following Group Policy settings were added in Windows 10, version 1709:
 - Windows Components\Windows Hello for Business\Allow enumeration of emulated smart card for all users
 - Windows Components\Windows Update\Allow updates to be downloaded automatically over metered connections
 - Windows Components\Windows Update\Do not allow update deferral policies to cause scans against Windows Update
-
 
 ## New Group Policy settings in Windows 10, version 1703
 
@@ -473,34 +466,33 @@ The following Group Policy settings were added in Windows 10, version 1703:
 - Windows Components\Windows Update\Turn on recommended updates via Automatic Updates
 - Windows Components\Shutdown Options\Turn off legacy remote shutdown interface
 
-
 For a spreadsheet of Group Policy settings included in Windows 10 and Windows Server 2016, see [Group Policy Settings Reference for Windows and Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=613627).
 
 ## New MDM policies
 
 Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education include previous Windows Phone settings, and new or enhanced settings for Windows 10, such as:
 
--   Defender (Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education only)
+- Defender (Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education only)
 
--   Enhanced Bluetooth policies
+- Enhanced Bluetooth policies
 
--   Passport and Hello
+- Passport and Hello
 
--   Device update
+- Device update
 
--   Hardware-based device health attestation
+- Hardware-based device health attestation
 
--   [Kiosk mode](/windows/configuration/set-up-a-device-for-anyone-to-use), start screen, start menu layout
+- [Kiosk mode](/windows/configuration/set-up-a-device-for-anyone-to-use), start screen, start menu layout
 
--   Security
+- Security
 
--   [VPN](/windows/security/identity-protection/vpn/vpn-profile-options) and enterprise Wi-Fi management
+- [VPN](/windows/security/identity-protection/vpn/vpn-profile-options) and enterprise Wi-Fi management
 
--   Certificate management
+- Certificate management
 
--   Windows Tips
+- Windows Tips
 
--   Consumer experiences, such as suggested apps in Start and app tiles from Microsoft dynamically inserted in the default Start menu
+- Consumer experiences, such as suggested apps in Start and app tiles from Microsoft dynamically inserted in the default Start menu
 
 Windows 10, version 1703, adds a number of [ADMX-backed policies to MDM](./mdm/policy-configuration-service-provider.md).
 

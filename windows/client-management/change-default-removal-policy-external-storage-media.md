@@ -6,14 +6,16 @@ author: vinaypamnani-msft
 ms.author: vinpa
 ms.date: 11/25/2020
 ms.topic: article
-ms.custom: 
-  - CI 111493
-  - CI 125140
-  - CSSTroubleshooting
-audience: ITPro
+ms.custom:
+- CI 111493
+- CI 125140
+- CSSTroubleshooting
 ms.localizationpriority: medium
 manager: kaushika
 ms.technology: itpro-manage
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Change in default removal policy for external storage media in Windows 10, version 1809
@@ -39,20 +41,20 @@ You can use the storage device policy setting to change the manner in which Wind
 To change the policy for an external storage device:
 
 1. Connect the device to the computer.
-2. Right-click **Start**, then select **File Explorer**.
-3. In File Explorer, identify the letter or label that is associated with the device (for example, **USB Drive (D:)**).
-4. Right-click **Start**, then select **Disk Management**.
-5. In the lower section of the Disk Management window, right-click the label of the device, and then select **Properties**.
+1. Right-click **Start**, then select **File Explorer**.
+1. In File Explorer, identify the letter or label that is associated with the device (for example, **USB Drive (D:)**).
+1. Right-click **Start**, then select **Disk Management**.
+1. In the lower section of the Disk Management window, right-click the label of the device, and then select **Properties**.
   
    ![In Disk Management, right-click the device and click Properties.](./images/change-def-rem-policy-1.png)
   
-6. Select **Policies**.
+1. Select **Policies**.
   
    > [!NOTE]  
    > Some recent versions of Windows may use a different arrangement of tabs in the disk properties dialog box.  
    >  
    > If you do not see the **Policies** tab, select **Hardware**, select the removable drive from the **All disk drives** list, and then select **Properties**. The **Policies** tab should now be available.
   
-7. Select the policy that you want to use.
+1. Select the policy that you want to use.
   
    ![Policy options for disk management.](./images/change-def-rem-policy-2.png)

@@ -1,6 +1,6 @@
 ---
 title: Enterprise app management
-description: This article covers one of the key mobile device management (MDM) features in Windows 10 for managing the lifecycle of apps across all of Windows.
+description: This article covers one of the key mobile device management (MDM) features in Windows 10 for managing the lifecycle of apps across all of Windows.
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
@@ -9,32 +9,35 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 10/04/2021
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Enterprise app management
 
-This article covers one of the key mobile device management (MDM) features in Windows 10. It manages the lifecycle of apps across all of Windows. It's the ability to manage both Store and non-Store apps as part of the native MDM capabilities. New in Windows 10 is the ability to take inventory of all your apps.
+This article covers one of the key mobile device management (MDM) features in Windows 10. It manages the lifecycle of apps across all of Windows. It's the ability to manage both Store and non-Store apps as part of the native MDM capabilities. New in Windows 10 is the ability to take inventory of all your apps.
 
 ## Application management goals
 
-Windows 10 offers the ability for management servers to:
+Windows 10 offers the ability for management servers to:
 
--   Install apps directly from the Microsoft Store for Business
--   Deploy offline Store apps and licenses
--   Deploy line-of-business (LOB) apps (non-Store apps)
--   Inventory all apps for a user (Store and non-Store apps)
--   Inventory all apps for a device (Store and non-Store apps)
--   Uninstall all apps for a user (Store and non-Store apps)
--   Provision apps so they're installed for all users of a device running Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
--   Remove the provisioned app on the device running Windows 10 for desktop editions
+- Install apps directly from the Microsoft Store for Business
+- Deploy offline Store apps and licenses
+- Deploy line-of-business (LOB) apps (non-Store apps)
+- Inventory all apps for a user (Store and non-Store apps)
+- Inventory all apps for a device (Store and non-Store apps)
+- Uninstall all apps for a user (Store and non-Store apps)
+- Provision apps so they're installed for all users of a device running Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
+- Remove the provisioned app on the device running Windows 10 for desktop editions
 
 ## Inventory your apps
 
-Windows 10 lets you inventory all apps deployed to a user, and inventory all apps for all users of a device on Windows 10 for desktop editions. The [EnterpriseModernAppManagement](mdm/enterprisemodernappmanagement-csp.md) configuration service provider (CSP) inventories packaged apps and doesn't include traditional Win32 apps installed via MSI or executables. When the apps are inventoried, they're separated based on the following app classifications:
+Windows 10 lets you inventory all apps deployed to a user, and inventory all apps for all users of a device on Windows 10 for desktop editions. The [EnterpriseModernAppManagement](mdm/enterprisemodernappmanagement-csp.md) configuration service provider (CSP) inventories packaged apps and doesn't include traditional Win32 apps installed via MSI or executables. When the apps are inventoried, they're separated based on the following app classifications:
 
--   Store - Apps that are from the Microsoft Store. Apps can be directly installed from the Store or delivered with the enterprise from the Store for Business
--   nonStore - Apps that weren't acquired from the Microsoft Store.
--   System - Apps that are part of the OS. You can't uninstall these apps. This classification is read-only and can only be inventoried.
+- Store - Apps that are from the Microsoft Store. Apps can be directly installed from the Store or delivered with the enterprise from the Store for Business
+- nonStore - Apps that weren't acquired from the Microsoft Store.
+- System - Apps that are part of the OS. You can't uninstall these apps. This classification is read-only and can only be inventoried.
 
 These classifications are represented as nodes in the EnterpriseModernAppManagement CSP.
 
@@ -150,19 +153,19 @@ Inventory is specific to the package full name and lists bundled packs and resou
 
 Here are the nodes for each package full name:
 
--   Name
--   Version
--   Publisher
--   Architecture
--   InstallLocation
--   IsFramework
--   IsBundle
--   InstallDate
--   ResourceID
--   RequiresReinstall
--   PackageStatus
--   Users
--   IsProvisioned
+- Name
+- Version
+- Publisher
+- Architecture
+- InstallLocation
+- IsFramework
+- IsBundle
+- InstallDate
+- ResourceID
+- RequiresReinstall
+- PackageStatus
+- Users
+- IsProvisioned
 
 For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](mdm/enterprisemodernappmanagement-csp.md).
 
@@ -206,9 +209,9 @@ You can use the EnterpriseModernAppManagement CSP to query for all app licenses 
 
 Here are the nodes for each license ID:
 
--   LicenseCategory
--   LicenseUsage
--   RequestedID
+- LicenseCategory
+- LicenseUsage
+- RequestedID
 
 For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](mdm/enterprisemodernappmanagement-csp.md).
 
@@ -285,11 +288,11 @@ Here are some examples.
 
 ### Unlock the device for developer mode
 
-Development of apps on Windows 10 no longer requires a special license. You can enable debugging and deployment of non-packaged apps using ApplicationManagement/AllowDeveloperUnlock policy in Policy CSP.
+Development of apps on Windows 10 no longer requires a special license. You can enable debugging and deployment of non-packaged apps using ApplicationManagement/AllowDeveloperUnlock policy in Policy CSP.
 
 AllowDeveloperUnlock policy enables the development mode on the device. The AllowDeveloperUnlock isn't configured by default, which means only Microsoft Store apps can be installed. If the management server explicitly sets the value to off, the setting is disabled in the settings panel on the device.
 
-Deployment of apps to Windows 10 for desktop editions requires that there's a chain to a certificate on the device. The app can be signed with a root certificate on the device (such as Symantec Enterprise), an enterprise owned root certificate, or a peer trust certificate deployed on the device.
+Deployment of apps to Windows 10 for desktop editions requires that there's a chain to a certificate on the device. The app can be signed with a root certificate on the device (such as Symantec Enterprise), an enterprise owned root certificate, or a peer trust certificate deployed on the device.
 
 For more information about the AllowDeveloperUnlock policy, see [Policy CSP](mdm/policy-configuration-service-provider.md).
 
@@ -333,10 +336,10 @@ If you purchased an app from the Store for Business and the app is specified for
 
 Here are the requirements for this scenario:
 
--   The app is assigned to a user Azure Active Directory (Azure AD) identity in the Store for Business. You can assign directly in the Store for Business or through a management server.
--   The device requires connectivity to the Microsoft Store.
--   Microsoft Store services must be enabled on the device. The UI for the Microsoft Store can be disabled by the enterprise admin.
--   The user must be signed in with their Azure AD identity.
+- The app is assigned to a user Azure Active Directory (Azure AD) identity in the Store for Business. You can assign directly in the Store for Business or through a management server.
+- The device requires connectivity to the Microsoft Store.
+- Microsoft Store services must be enabled on the device. The UI for the Microsoft Store can be disabled by the enterprise admin.
+- The user must be signed in with their Azure AD identity.
 
 Here are some examples.
 
@@ -357,12 +360,12 @@ Here are some examples.
 
 Here are the changes from the previous release:
 
-1.  The "{CatID}" reference should be updated to "{ProductID}". This value is acquired as a part of the Store for Business management tool.
-2.  The value for flags can be "0" or "1"
+1. The "{CatID}" reference should be updated to "{ProductID}". This value is acquired as a part of the Store for Business management tool.
+1. The value for flags can be "0" or "1"
 
     When using "0", the management tool calls back to the Store for Business sync to assign a user a seat of an application. When using "1", the management tool doesn't call back in to the Store for Business sync to assign a user a seat of an application. The CSP will claim a seat if one is available.
 
-3.  The `skuid` is a new parameter that is required. This value is acquired as a part of the Store for Business to management tool sync.
+1. The `skuid` is a new parameter that is required. This value is acquired as a part of the Store for Business to management tool sync.
 
 ### Deploy an offline license to a user
 
@@ -372,8 +375,8 @@ The app license only needs to be deployed as part of the initial installation of
 
 In the SyncML, you need to specify the following information in the Exec command:
 
--   License ID - This ID is specified in the LocURI. The License ID for the offline license is referred to as the "Content ID" in the license file. You can retrieve this information from the Base64 encoded license download from the Store for Business.
--   License Content - This content is specified in the data section. The License Content is the Base64 encoded blob of the license.
+- License ID - This ID is specified in the LocURI. The License ID for the offline license is referred to as the "Content ID" in the license file. You can retrieve this information from the Base64 encoded license download from the Store for Business.
+- License Content - This content is specified in the data section. The License Content is the Base64 encoded blob of the license.
 
 Here's an example of an offline license installation.
 
@@ -461,8 +464,8 @@ Here's an example of an app installation with dependencies.
       <Data>
          <Application PackageUri="\\server\share\HelloWorld10.appx" DeploymentOptions="0" >
             <Dependencies>
-                      <Dependency PackageUri=”\\server\share\HelloWorldFramework.appx” />
-                <Dependency PackageUri=”\\server2\share\HelloMarsFramework.appx” />
+                      <Dependency PackageUri="\\server\share\HelloWorldFramework.appx" />
+                <Dependency PackageUri="\\server2\share\HelloMarsFramework.appx" />
             </Dependencies>
         </Application>
       </Data>
@@ -495,13 +498,13 @@ Here's an example of an app installation with dependencies and optional packages
       <Data>
          <Application PackageUri="\\server\share\HelloWorld10.appx" DeploymentOptions="0" >
             <Dependencies>
-                <Dependency PackageUri=”\\server\share\HelloWorldFramework.appx” />
-                <Dependency PackageUri=”\\server2\share\HelloMarsFramework.appx” />
+                <Dependency PackageUri="\\server\share\HelloWorldFramework.appx" />
+                <Dependency PackageUri="\\server2\share\HelloMarsFramework.appx" />
             </Dependencies>
             <OptionalPackages>
-                <Package PackageUri=”\\server\share\OptionalPackage1.appx”
+                <Package PackageUri="\\server\share\OptionalPackage1.appx"
                          PackageFamilyName="/{PackageFamilyName}" />
-                <Package PackageUri=”\\server2\share\OptionalPackage2.appx”
+                <Package PackageUri="\\server2\share\OptionalPackage2.appx"
                          PackageFamilyName="/{PackageFamilyName}" />
             </OptionalPackages>
         </Application>
@@ -531,7 +534,7 @@ To provision app for all users of a device from a hosted location, the managemen
 Here's an example of app installation.
 
 > [!NOTE]
-> This is only supported in Windows 10 for desktop editions.
+> This is only supported in Windows 10 for desktop editions.
 
 ```xml
 <!-- Add PackageFamilyName -->
@@ -560,15 +563,15 @@ Here's an example of app installation.
 
 The HostedInstall Exec command contains a Data node that requires an embedded XML. Here are the requirements for the data XML:
 
--   Application node has a required parameter, PackageURI, which can be a local file location, UNC, or HTTPS location.
--   Dependencies can be specified if required to be installed with the package. This is optional.
+- Application node has a required parameter, PackageURI, which can be a local file location, UNC, or HTTPS location.
+- Dependencies can be specified if required to be installed with the package. This is optional.
 
 The DeploymentOptions parameter is only available in the user context.
 
 Here's an example of app installation with dependencies.
 
 > [!NOTE]
-> This is only supported in Windows 10 for desktop editions.
+> This is only supported in Windows 10 for desktop editions.
 
 ```xml
 <!-- Add PackageFamilyName -->
@@ -593,7 +596,7 @@ Here's an example of app installation with dependencies.
       <Data>
          <Application PackageUri="\\server\share\HelloWorld10.appx" />
             <Dependencies>
-                     <Dependency PackageUri=”\\server\share\HelloWorldFramework.appx” />
+                     <Dependency PackageUri="\\server\share\HelloWorldFramework.appx" />
                <Dependency PackageUri="\\server2\share\HelloMarsFramework.appx"/>
             </Dependencies>
          </Application>
@@ -606,14 +609,14 @@ Here's an example of app installation with dependencies.
 
 When an app installation is completed, a Windows notification is sent. You can also query the status of using the AppInstallation node. Here's the list of information you can get back in the query:
 
--   Status - indicates the status of app installation.
-    -   NOT\_INSTALLED (0) - The node was added, but the execution wasn't completed.
-    -   INSTALLING (1) - Execution has started, but the deployment hasn't completed. If the deployment completes regardless of success, then this value is updated.
-    -   FAILED (2) - Installation failed. The details of the error can be found under LastError and LastErrorDescription.
-    -   INSTALLED (3) - Once an install is successful this node is cleaned up. If the clean up action hasn't completed, then this state may briefly appear.
--   LastError - The last error reported by the app deployment server.
--   LastErrorDescription - Describes the last error reported by the app deployment server.
--   Status - An integer that indicates the progress of the app installation. In cases of an HTTPS location, this status shows the estimated download progress.
+- Status - indicates the status of app installation.
+    - NOT\_INSTALLED (0) - The node was added, but the execution wasn't completed.
+    - INSTALLING (1) - Execution has started, but the deployment hasn't completed. If the deployment completes regardless of success, then this value is updated.
+    - FAILED (2) - Installation failed. The details of the error can be found under LastError and LastErrorDescription.
+    - INSTALLED (3) - Once an install is successful this node is cleaned up. If the clean up action hasn't completed, then this state may briefly appear.
+- LastError - The last error reported by the app deployment server.
+- LastErrorDescription - Describes the last error reported by the app deployment server.
+- Status - An integer that indicates the progress of the app installation. In cases of an HTTPS location, this status shows the estimated download progress.
 
     Status isn't available for provisioning and only used for user-based installations. For provisioning, the value is always 0.
 
@@ -677,14 +680,13 @@ The Data field value of 0 (zero) indicates success. Otherwise it's an error code
 > [!NOTE]
 > At this time, the alert for Store app installation isn't yet available.
 
-
 ## Uninstall your apps
 
-You can uninstall apps from users from Windows 10 devices. To uninstall an app, you delete it from the AppManagement node of the CSP. Within the AppManagement node, packages are organized based on their origin according to the following nodes:
+You can uninstall apps from users from Windows 10 devices. To uninstall an app, you delete it from the AppManagement node of the CSP. Within the AppManagement node, packages are organized based on their origin according to the following nodes:
 
--   AppStore - These apps are for the Microsoft Store. Apps can be directly installed from the store or delivered to the enterprise from the Store for Business.
--   nonStore - These apps that weren't acquired from the Microsoft Store.
--   System - These apps are part of the OS. You can't uninstall these apps.
+- AppStore - These apps are for the Microsoft Store. Apps can be directly installed from the store or delivered to the enterprise from the Store for Business.
+- nonStore - These apps that weren't acquired from the Microsoft Store.
+- System - These apps are part of the OS. You can't uninstall these apps.
 
 To uninstall an app, you delete it under the origin node, package family name, and package full name. To uninstall a XAP, use the product ID in place of the package family name and package full name.
 
@@ -723,13 +725,12 @@ You can remove provisioned apps from a device for a specific version, or for all
 > [!NOTE]
 > You can only remove an app that has an inventory value IsProvisioned = 1.
 
-
 Removing provisioned app occurs in the device context.
 
 Here's an example for removing a provisioned app from a device.
 
 ```xml
-<!— Remove Provisioned App for a Package Family-->
+<!- Remove Provisioned App for a Package Family-->
 <Delete>
    <CmdID>1</CmdID>
    <Item>
@@ -821,7 +822,7 @@ To update an app from Microsoft Store, the device requires contact with the stor
 Here's an example of an update scan.
 
 ```xml
-<!— Initiate a update scan for a user-->
+<!- Initiate a update scan for a user-->
 <Exec>
    <CmdID>1</CmdID>
    <Item>
@@ -835,7 +836,7 @@ Here's an example of an update scan.
 Here's an example of a status check.
 
 ```xml
-<!— Get last error related to the update scan-->
+<!- Get last error related to the update scan-->
 <Get>
    <CmdID>1</CmdID>
    <Item>
@@ -863,7 +864,7 @@ Turning off updates only applies to updates from the Microsoft Store at the devi
 Here's an example.
 
 ```xml
-<!— Prevent app from being automatically updated-->
+<!- Prevent app from being automatically updated-->
 <Replace>
    <CmdID>1</CmdID>
    <Item>

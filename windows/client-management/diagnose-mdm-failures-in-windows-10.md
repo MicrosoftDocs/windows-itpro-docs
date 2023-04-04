@@ -1,7 +1,7 @@
 ---
 title: Diagnose MDM failures in Windows 10
 description: Learn how to collect MDM logs. Examining these logs can help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -10,8 +10,11 @@ ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/25/2018
 ms.collection:
-  - highpri
-  - tier2
+- highpri
+- tier2
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Diagnose MDM failures in Windows 10
@@ -70,22 +73,22 @@ In this location, the **Admin** channel logs events by default. However, if you 
 ### Collect admin logs
 
 1. Right click on the **Admin** node.
-2. Select **Save all events as**.
-3. Choose a location and enter a filename.
-4. Click **Save**.
-5. Choose **Display information for these languages** and then select **English**.
-6. Click **Ok**.
+1. Select **Save all events as**.
+1. Choose a location and enter a filename.
+1. Click **Save**.
+1. Choose **Display information for these languages** and then select **English**.
+1. Click **Ok**.
 
 For more detailed logging, you can enable **Debug** logs. Right click on the **Debug** node and then click **Enable Log**.
 
 ### Collect debug logs
 
 1. Right click on the **Debug** node.
-2. Select **Save all events as**.
-3. Choose a location and enter a filename.
-4. Click **Save**.
-5. Choose **Display information for these languages** and then select **English**.
-6. Click **Ok**.
+1. Select **Save all events as**.
+1. Choose a location and enter a filename.
+1. Click **Save**.
+1. Choose **Display information for these languages** and then select **English**.
+1. Click **Ok**.
 
 You can open the log files (.evtx files) in the Event Viewer on a Windows 10 PC running the November 2015 update.
 
@@ -240,32 +243,32 @@ After the logs are collected on the device, you can retrieve the files through t
 For best results, ensure that the PC or VM on which you're viewing logs matches the build of the OS from which the logs were collected.
 
 1. Open eventvwr.msc.
-2. Right-click on **Event Viewer(Local)** and select **Open Saved Log**.
+1. Right-click on **Event Viewer(Local)** and select **Open Saved Log**.
 
     ![event viewer screenshot.](images/diagnose-mdm-failures9.png)
 
-3. Navigate to the etl file that you got from the device and then open the file.
-4. Click **Yes** when prompted to save it to the new log format.
+1. Navigate to the etl file that you got from the device and then open the file.
+1. Click **Yes** when prompted to save it to the new log format.
 
     ![event viewer prompt.](images/diagnose-mdm-failures10.png)
 
     ![diagnose mdm failures.](images/diagnose-mdm-failures11.png)
 
-5. The new view contains traces from the channel. Click on **Filter Current Log** from the **Actions** menu.
+1. The new view contains traces from the channel. Click on **Filter Current Log** from the **Actions** menu.
 
     ![event viewer actions.](images/diagnose-mdm-failures12.png)
 
-6. Add a filter to Event sources by selecting **DeviceManagement-EnterpriseDiagnostics-Provider** and click **OK**.
+1. Add a filter to Event sources by selecting **DeviceManagement-EnterpriseDiagnostics-Provider** and click **OK**.
 
     ![event filter for Device Management.](images/diagnose-mdm-failures13.png)
 
-7. Now you're ready to start reviewing the logs.
+1. Now you're ready to start reviewing the logs.
 
     ![event viewer review logs.](images/diagnose-mdm-failures14.png)
 
 ## Collect device state data
 
-Here's an example of how to collect current MDM device state data using the [DiagnosticLog CSP](mdm/diagnosticlog-csp.md), version 1.3, which was added in Windows 10, version 1607. You can collect the file from the device using the same FileDownload node in the CSP as you do for the etl files.
+Here's an example of how to collect current MDM device state data using the [DiagnosticLog CSP](mdm/diagnosticlog-csp.md), version 1.3, which was added in Windows 10, version 1607. You can collect the file from the device using the same FileDownload node in the CSP as you do for the etl files.
 
 ```xml
 <?xml version="1.0"?>

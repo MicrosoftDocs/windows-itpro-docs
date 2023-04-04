@@ -9,6 +9,9 @@ author: vinaypamnani-msft
 ms.date: 06/26/2017
 ms.reviewer: 
 manager: aaroncz
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Deploy and configure App-V apps using MDM

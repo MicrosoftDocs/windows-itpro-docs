@@ -9,17 +9,15 @@ ms.localizationpriority: medium
 ms.date: 03/28/2022
 ms.topic: article
 ms.collection:
-  - highpri
-  - tier2
+- highpri
+- tier2
 ms.technology: itpro-manage
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Windows Tools/Administrative Tools
-
-**Applies to**
-
-- Windows 11
-- Windows 10
 
 **Windows Tools** is a folder in the Windows 11 Control Panel. **Administrative Tools** is a folder in the Windows 10 Control Panel. These folders contain tools for system administrators and advanced users.
 

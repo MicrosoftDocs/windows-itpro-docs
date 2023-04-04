@@ -6,13 +6,13 @@ ms.localizationpriority: medium
 ms.date: 06/03/2022
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.topic: overview
 ms.technology: itpro-manage
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 and later</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Manage Windows devices in your organization - transitioning to modern management

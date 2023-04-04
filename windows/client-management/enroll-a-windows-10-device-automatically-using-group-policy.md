@@ -7,25 +7,24 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 04/30/2022
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.collection:
-  - highpri
-  - tier2
+- highpri
+- tier2
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Enroll a Windows 10 device automatically using Group Policy
-
-**Applies to:**
-
--   Windows 11
--   Windows 10
 
 Starting in Windows 10, version 1709, you can use a Group Policy to trigger auto-enrollment to Mobile Device Management (MDM) for Active Directory (AD) domain-joined devices.
 
 The enrollment into Intune is triggered by a group policy created on your local AD and happens without any user interaction. This cause-and-effect mechanism means you can automatically mass-enroll a large number of domain-joined corporate devices into Microsoft Intune. The enrollment process starts in the background once you sign in to the device with your Azure AD account.
 
 Requirements:
+
 - Active Directory-joined PC running Windows 10, version 1709 or later
 - The enterprise has configured a mobile device management (MDM) service
 - The on-premises Active Directory must be [integrated with Azure AD (via Azure AD Connect)](/azure/architecture/reference-architectures/identity/azure-ad)
@@ -34,11 +33,12 @@ Requirements:
 
 > [!TIP]
 > For more information, see the following topics:
+>
 > - [How to configure automatic registration of Windows domain-joined devices with Azure Active Directory](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
 > - [How to plan your hybrid Azure Active Directory join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan)
 > - [Azure Active Directory integration with MDM](./azure-active-directory-integration-with-mdm.md)
 
-The auto-enrollment relies on the presence of an MDM service and the Azure Active Directory registration for the PC. Starting in Windows 10, version 1607, once the enterprise has registered its AD with Azure AD, a Windows PC that is domain joined is automatically Azure AD–registered.
+The auto-enrollment relies on the presence of an MDM service and the Azure Active Directory registration for the PC. Starting in Windows 10, version 1607, once the enterprise has registered its AD with Azure AD, a Windows PC that is domain joined is automatically Azure AD-registered.
 
 > [!NOTE]
 > In Windows 10, version 1709, the enrollment protocol was updated to check whether the device is domain-joined. For details, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692). For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation.
@@ -58,7 +58,7 @@ The following steps demonstrate required settings using the Intune service:
 
    :::image type="content" alt-text="Intune license verification." source="images/auto-enrollment-intune-license-verification.png" lightbox="images/auto-enrollment-intune-license-verification.png":::
 
-2. Verify that auto-enrollment is activated for those users who are going to enroll the devices into Mobile Device Management (MDM) with Intune. For more information, see [Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal](./azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md).
+1. Verify that auto-enrollment is activated for those users who are going to enroll the devices into Mobile Device Management (MDM) with Intune. For more information, see [Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal](./azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md).
 
     ![Auto-enrollment activation verification.](images/auto-enrollment-activation-verification.png)
 
@@ -67,9 +67,9 @@ The following steps demonstrate required settings using the Intune service:
     >
     > For corporate-owned devices, the MDM user scope takes precedence if both scopes are enabled. The devices get MDM enrolled.
 
-3. Verify that the device OS version is Windows 10, version 1709 or later.
+1. Verify that the device OS version is Windows 10, version 1709 or later.
 
-4. Auto-enrollment into Intune via Group Policy is valid only for devices that are hybrid Azure AD joined. This condition means that the device must be joined into both local Active Directory and Azure Active Directory. To verify that the device is hybrid Azure AD joined, run `dsregcmd /status` from the command line.
+1. Auto-enrollment into Intune via Group Policy is valid only for devices that are hybrid Azure AD joined. This condition means that the device must be joined into both local Active Directory and Azure Active Directory. To verify that the device is hybrid Azure AD joined, run `dsregcmd /status` from the command line.
 
     You can confirm that the device is properly hybrid-joined if both **AzureAdJoined** and **DomainJoined** are set to **YES**.
 
@@ -83,21 +83,21 @@ The following steps demonstrate required settings using the Intune service:
 
     ![Azure AD device list.](images/azure-ad-device-list.png)
 
-5. Verify that the MDM discovery URL during auto-enrollment is https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc
+1. Verify that the MDM discovery URL during auto-enrollment is https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc
 
     ![MDM discovery URL.](images/auto-enrollment-mdm-discovery-url.png)
 
-6. Some tenants might have both **Microsoft Intune** and **Microsoft Intune Enrollment** under **Mobility**. Make sure that your auto-enrollment settings are configured under **Microsoft Intune** instead of **Microsoft Intune Enrollment**.
+1. Some tenants might have both **Microsoft Intune** and **Microsoft Intune Enrollment** under **Mobility**. Make sure that your auto-enrollment settings are configured under **Microsoft Intune** instead of **Microsoft Intune Enrollment**.
 
    :::image type="content" alt-text="Mobility setting MDM intune." source="images/auto-enrollment-microsoft-intune-setting.png" lightbox="images/auto-enrollment-microsoft-intune-setting.png":::
 
-7. Verify that the *Enable Automatic MDM enrollment using default Azure AD credentials* group policy (**Local Group Policy Editor > Computer Configuration > Policies > Administrative Templates > Windows Components > MDM**) is properly deployed to all devices that should be enrolled into Intune.
+1. Verify that the *Enable Automatic MDM enrollment using default Azure AD credentials* group policy (**Local Group Policy Editor > Computer Configuration > Policies > Administrative Templates > Windows Components > MDM**) is properly deployed to all devices that should be enrolled into Intune.
 
 You may contact your domain administrators to verify if the group policy has been deployed successfully.
 
-8. Verify that the device isn't enrolled with the old Intune client used on the Intune Silverlight Portal (the Intune portal used before the Azure portal).
+1. Verify that the device isn't enrolled with the old Intune client used on the Intune Silverlight Portal (the Intune portal used before the Azure portal).
 
-9. Verify that Microsoft Intune should allow enrollment of Windows devices.
+1. Verify that Microsoft Intune should allow enrollment of Windows devices.
 
    :::image type="content" alt-text="Enrollment of Windows devices." source="images/auto-enrollment-enrollment-of-windows-devices.png" lightbox="images/auto-enrollment-enrollment-of-windows-devices.png":::
 
@@ -106,6 +106,7 @@ You may contact your domain administrators to verify if the group policy has bee
 This procedure is only for illustration purposes to show how the new auto-enrollment policy works. It's not recommended for the production environment in the enterprise. For bulk deployment, you should use the [Group Policy Management Console process](#configure-the-auto-enrollment-for-a-group-of-devices).
 
 Requirements:
+
 - AD-joined PC running Windows 10, version 1709 or later
 - Enterprise has MDM service already configured
 - Enterprise AD must be registered with Azure AD
@@ -114,17 +115,17 @@ Requirements:
 
     ![GPEdit desktop app search result.](images/autoenrollment-gpedit.png)
 
-2. Under **Best match**, select **Edit group policy** to launch it.
+1. Under **Best match**, select **Edit group policy** to launch it.
 
-3. In **Local Computer Policy**, select **Administrative Templates** > **Windows Components** > **MDM**.
+1. In **Local Computer Policy**, select **Administrative Templates** > **Windows Components** > **MDM**.
 
    :::image type="content" alt-text="MDM policies." source="images/autoenrollment-mdm-policies.png" lightbox="images/autoenrollment-mdm-policies.png":::
 
-4. Double-click **Enable automatic MDM enrollment using default Azure AD credentials** (previously called **Auto MDM Enrollment with AAD Token** in Windows 10, version 1709). For ADMX files in Windows 10, version 1903 and later, select **User Credential** as the **Selected Credential Type to use**.
+1. Double-click **Enable automatic MDM enrollment using default Azure AD credentials** (previously called **Auto MDM Enrollment with AAD Token** in Windows 10, version 1709). For ADMX files in Windows 10, version 1903 and later, select **User Credential** as the **Selected Credential Type to use**.
 
    :::image type="content" alt-text="MDM autoenrollment policy." source="images/autoenrollment-policy.png" lightbox="images/autoenrollment-policy.png":::
 
-5. Select **Enable**, select **User Credential** from the dropdown **Select Credential Type to Use**, then select **OK**.
+1. Select **Enable**, select **User Credential** from the dropdown **Select Credential Type to Use**, then select **OK**.
 
     > [!NOTE]
     > In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have installed Windows 10, version 1903 or later. The default behavior for older releases is to revert to **User Credential**.
@@ -138,18 +139,17 @@ Requirements:
 
     ![Two-factor authentication notification.](images/autoenrollment-2-factor-auth.png)
 
-    > [!Tip]
+    > [!TIP]
     > You can avoid this behavior by using Conditional Access Policies in Azure AD.
     Learn more by reading [What is Conditional Access?](/azure/active-directory/conditional-access/overview).
 
-6. To verify successful enrollment to MDM, go to **Start** > **Settings** > **Accounts** > **Access work or school**, then select your domain account.
+1. To verify successful enrollment to MDM, go to **Start** > **Settings** > **Accounts** > **Access work or school**, then select your domain account.
 
-7. Select **Info** to see the MDM enrollment information.
+1. Select **Info** to see the MDM enrollment information.
 
     ![Work School Settings.](images/autoenrollment-settings-work-school.png)
 
     If you don't see the **Info** button or the enrollment information, enrollment might have failed. Check the status in [Task Scheduler app](#task-scheduler-app).
-
 
 ### Task Scheduler app
 
@@ -157,9 +157,9 @@ Requirements:
 
    ![Task Scheduler search result.](images/autoenrollment-task-schedulerapp.png)
 
-2. Under **Best match**, select **Task Scheduler** to launch it.
+1. Under **Best match**, select **Task Scheduler** to launch it.
 
-3. In **Task Scheduler Library**, open **Microsoft > Windows** , then select **EnterpriseMgmt**.
+1. In **Task Scheduler Library**, open **Microsoft > Windows** , then select **EnterpriseMgmt**.
 
    :::image type="content" alt-text="Auto-enrollment scheduled task." source="images/autoenrollment-scheduled-task.png" lightbox="images/autoenrollment-scheduled-task.png":::
 
@@ -173,6 +173,7 @@ Requirements:
 ## Configure the auto-enrollment for a group of devices
 
 Requirements:
+
 - AD-joined PC running Windows 10, version 1709 or later
 - Enterprise has MDM service already configured (with Intune or a third-party service provider)
 - Enterprise AD must be integrated with Azure AD.
@@ -203,9 +204,9 @@ Requirements:
 
    - 22H2 --> [Administrative Templates (.admx) for Windows 11 2022 September Update (22H2)](https://www.microsoft.com/download/details.aspx?id=104593)
 
-2. Install the package on the Domain Controller.
+1. Install the package on the Domain Controller.
 
-3. Navigate, depending on the version to the folder:
+1. Navigate, depending on the version to the folder:
 
    - 1803 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 April 2018 Update (1803) v2**
 
@@ -227,23 +228,23 @@ Requirements:
 
    - 22H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 11 September 2022 Update (22H2)**
 
-4. Rename the extracted Policy Definitions folder to `PolicyDefinitions`.
+1. Rename the extracted Policy Definitions folder to `PolicyDefinitions`.
 
-5. Copy the PolicyDefinitions folder to `\\contoso.com\SYSVOL\contoso.com\policies\PolicyDefinitions`.
+1. Copy the PolicyDefinitions folder to `\\contoso.com\SYSVOL\contoso.com\policies\PolicyDefinitions`.
 
    If this folder doesn't exist, then you'll be switching to a [central policy store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) for your entire domain.
 
-6. Wait for the SYSVOL DFSR replication to be completed for the policy to be available.
+1. Wait for the SYSVOL DFSR replication to be completed for the policy to be available.
 
 This procedure will work for any future version as well.
 
 1. Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
 
-2. Create a Security Group for the PCs.
+1. Create a Security Group for the PCs.
 
-3. Link the GPO.
+1. Link the GPO.
 
-4. Filter using Security Groups.
+1. Filter using Security Groups.
 
 ## Troubleshoot auto-enrollment of devices
 
@@ -253,12 +254,12 @@ To collect Event Viewer logs:
 
 1. Open Event Viewer.
 
-2. Navigate to **Applications and Services Logs** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostic-Provider** > **Admin**.
+1. Navigate to **Applications and Services Logs** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostic-Provider** > **Admin**.
 
-    > [!Tip]
+    > [!TIP]
     > For guidance on how to collect event logs for Intune, see [Collect MDM Event Viewer Log YouTube video](https://www.youtube.com/watch?v=U_oCe2RmQEc).
 
-3. Search for event ID 75, which represents a successful auto-enrollment. Here's an example screenshot that shows the auto-enrollment completed successfully:
+1. Search for event ID 75, which represents a successful auto-enrollment. Here's an example screenshot that shows the auto-enrollment completed successfully:
 
    :::image type="content" alt-text="Event ID 75." source="images/auto-enrollment-troubleshooting-event-id-75.png"  lightbox="images/auto-enrollment-troubleshooting-event-id-75.png":::
 
@@ -276,7 +277,7 @@ To collect Event Viewer logs:
 
       :::image type="content" alt-text="Task scheduler." source="images/auto-enrollment-task-scheduler.png" lightbox="images/auto-enrollment-task-scheduler.png":::
 
-    > [!Note]
+    > [!NOTE]
     > This task isn't visible to standard users, run Scheduled Tasks with administrative credentials to find the task.
 
     This task runs every 5 minutes for the duration of one day. To confirm if the task succeeded, check the task scheduler event logs:
@@ -313,8 +314,8 @@ To collect Event Viewer logs:
 - [A Framework for Windows endpoint management transformation](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/a-framework-for-windows-endpoint-management-transformation/ba-p/2460684)
 - [Success with remote Windows Autopilot and Hybrid Azure Active Director join](https://techcommunity.microsoft.com/t5/intune-customer-success/success-with-remote-windows-autopilot-and-hybrid-azure-active/ba-p/2749353)
 
-
 ### Useful Links
+
 - [Windows 10 Administrative Templates for Windows 10 November 2021 Update (21H2)-v2.0](https://www.microsoft.com/download/details.aspx?id=104042)
 - [Windows 10 Administrative Templates for Windows 10 May 2021 Update 21H1](https://www.microsoft.com/download/details.aspx?id=103124)
 - [Windows 10 Administrative Templates for Windows 10 November 2019 Update 1909](https://www.microsoft.com/download/details.aspx?id=100591)

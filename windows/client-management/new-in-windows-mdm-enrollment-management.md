@@ -1,10 +1,7 @@
 ---
 title: What's new in MDM enrollment and management
 description: Discover what's new and breaking changes in Windows 10 and Windows 11 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
-MS-HAID:
-  - 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
-  - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -13,6 +10,9 @@ ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/16/2022
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # What's new in mobile device enrollment and management
@@ -145,7 +145,7 @@ A production ready deployment must have the appropriate certificate details as p
 
 EAP XML must be updated with relevant information for your environment. This task can be done either manually by editing the XML sample below, or by using the step by step UI guide. After the EAP XML is updated, refer to instructions from your MDM to deploy the updated configuration as follows:
 
-- For Wi-Fi, look for the &lt;EAPConfig&gt; section of your current WLAN Profile XML (This detail is what you specify for the WLanXml node in the Wi-Fi CSP). Within these tags, you'll find the complete EAP configuration. Replace the section under &lt;EAPConfig&gt; with your updated XML and update your Wi-Fi profile. You might need to refer to your MDM’s guidance on how to deploy a new Wi-Fi profile.
+- For Wi-Fi, look for the &lt;EAPConfig&gt; section of your current WLAN Profile XML (This detail is what you specify for the WLanXml node in the Wi-Fi CSP). Within these tags, you'll find the complete EAP configuration. Replace the section under &lt;EAPConfig&gt; with your updated XML and update your Wi-Fi profile. You might need to refer to your MDM's guidance on how to deploy a new Wi-Fi profile.
 - For VPN, EAP Configuration is a separate field in the MDM Configuration. Work with your MDM provider to identify and update the appropriate Field.
 
 For information about EAP Settings, see <https://technet.microsoft.com/library/hh945104.aspx#BKMK_Cfg_cert_Selct>.
@@ -281,28 +281,28 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
 1. Follow steps 1 through 7 in [EAP configuration](mdm/eap-configuration.md).
 
-2. In the Microsoft VPN SelfHost Properties dialog box, select **Microsoft : Smart Card or other Certificate** from the drop-down menu (this drop-down menu selects EAP TLS.).
+1. In the Microsoft VPN SelfHost Properties dialog box, select **Microsoft : Smart Card or other Certificate** from the drop-down menu (this drop-down menu selects EAP TLS.).
 
     :::image type="content" alt-text="vpn selfhost properties window." source="images/certfiltering1.png":::
 
     > [!NOTE]
     > For PEAP or TTLS, select the appropriate method and continue following this procedure.
 
-3. Click the **Properties** button underneath the drop-down menu.
+1. Click the **Properties** button underneath the drop-down menu.
 
-4. In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
+1. In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
 
     :::image type="content" alt-text="smart card or other certificate properties window." source="images/certfiltering2.png":::
 
-5. In the **Configure Certificate Selection** menu, adjust the filters as needed.
+1. In the **Configure Certificate Selection** menu, adjust the filters as needed.
 
     :::image type="content" alt-text="configure certificate selection window." source="images/certfiltering3.png":::
 
-6. Click **OK** to close the windows to get back to the main rasphone.exe dialog box.
+1. Click **OK** to close the windows to get back to the main rasphone.exe dialog box.
 
-7. Close the rasphone dialog box.
+1. Close the rasphone dialog box.
 
-8. Continue following the procedure in [EAP configuration](mdm/eap-configuration.md) from Step 9 to get an EAP TLS profile with appropriate filtering.
+1. Continue following the procedure in [EAP configuration](mdm/eap-configuration.md) from Step 9 to get an EAP TLS profile with appropriate filtering.
 
 > [!NOTE]
 > You can also set all the other applicable EAP Properties through this UI as well. A guide to what these properties mean can be found in [Extensible Authentication Protocol (EAP) Settings for Network Access](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh945104(v=ws.11)).
@@ -332,17 +332,16 @@ No. Only one MDM is allowed.
 ### How do I set the maximum number of Azure Active Directory-joined devices per user?
 
 1. Sign in to the portal as tenant admin: https://portal.azure.com.
-2. Select Active Directory on the left pane.
-3. Choose your tenant.
-4. Select **Configure**.
-5. Set quota to unlimited.
+1. Select Active Directory on the left pane.
+1. Choose your tenant.
+1. Select **Configure**.
+1. Set quota to unlimited.
 
   :::image type="content" alt-text="aad maximum joined devices." source="images/faq-max-devices.png":::
 
 ### What is dmwappushsvc?
 
 Entry | Description
---------------- | --------------------
-What is dmwappushsvc? | It's a Windows service that ships in Windows 10 and Windows 11 operating system as a part of the windows management platform. It's used internally by the operating system as a queue for categorizing and processing all Wireless Application Protocol (WAP) messages, which include Windows management messages, and Service Indication/Service Loading (SI/SL). The service also initiates and orchestrates management sync sessions with the MDM server. |
+--------------- | -------------------- What is dmwappushsvc? | It's a Windows service that ships in Windows 10 and Windows 11 operating system as a part of the windows management platform. It's used internally by the operating system as a queue for categorizing and processing all Wireless Application Protocol (WAP) messages, which include Windows management messages, and Service Indication/Service Loading (SI/SL). The service also initiates and orchestrates management sync sessions with the MDM server. |
 What data is handled by dmwappushsvc? | It's a component handling the internal workings of the management platform and involved in processing messages that have been received by the device remotely for management. The messages in the queue are serviced by another component that is also part of the Windows management stack to process messages. The service also routes and authenticates WAP messages received by the device to internal OS components that process them further. This service doesn't send telemetry.|
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc) and locating *Device Management Wireless Application Protocol (WAP) Push message Routing Service*. However, since this service is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to disable the service. Disabling this service will cause your management to fail.|

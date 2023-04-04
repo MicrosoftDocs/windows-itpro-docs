@@ -1,7 +1,7 @@
 ---
 title: Azure Active Directory integration with MDM
 description: Azure Active Directory is the world's largest enterprise cloud identity management service.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -9,9 +9,12 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.collection:
-  - highpri
-  - tier2
+- highpri
+- tier2
 ms.date: 12/31/2017
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Azure Active Directory integration with MDM
@@ -50,7 +53,7 @@ Once a user has an Azure AD account added to Windows and enrolled in MDM, the en
 Azure AD MDM enrollment is a two-step process:
 
 1. Display the Terms of Use and gather user consent: This consent is a passive flow where the user is redirected in a browser control (webview) to the URL of the Terms of Use of the MDM.
-2. Enroll the device: This step is an active flow where Windows OMA DM agent calls the MDM service to enroll the device.
+1. Enroll the device: This step is an active flow where Windows OMA DM agent calls the MDM service to enroll the device.
 
 To support Azure AD enrollment, MDM vendors must host and expose a **Terms of Use endpoint** and an **MDM enrollment endpoint**.
 
@@ -143,8 +146,8 @@ The pages rendered by the MDM in the integrated enrollment process must use Wind
 There are three distinct scenarios:
 
 1. MDM enrollment as part of Azure AD Join in Windows OOBE.
-2. MDM enrollment as part of Azure AD Join, after Windows OOBE from **Settings**.
-3. MDM enrollment as part of adding a Microsoft work account on a personal device (BYOD).
+1. MDM enrollment as part of Azure AD Join, after Windows OOBE from **Settings**.
+1. MDM enrollment as part of adding a Microsoft work account on a personal device (BYOD).
 
 These scenarios support Windows Pro, Enterprise, and Education.
 
@@ -183,7 +186,7 @@ The following parameters are passed in the query string:
 
 Azure AD issues a bearer access token. The token is passed in the authorization header of the HTTP request. Here's a typical format:
 
-**Authorization: Bearer** CI6MTQxmCF5xgu6yYcmV9ng6vhQfaJYw…
+**Authorization: Bearer** CI6MTQxmCF5xgu6yYcmV9ng6vhQfaJYw...
 
 The following claims are expected in the access token passed by Windows to the Terms of Use endpoint:
 
@@ -333,7 +336,7 @@ Alert sample:
    <Data>UserToken inserted here</Data>
   </Item>
  </Alert>
- … other XML tags …
+ ... other XML tags ...
 </SyncBody>
 ```
 
@@ -362,7 +365,7 @@ Here's an example.
    <Data>user</Data>
   </Item>
  </Alert>
- … other XML tags …
+ ... other XML tags ...
 </SyncBody>
 ```
 
@@ -386,7 +389,7 @@ The following sample REST API call illustrates how an MDM can use the Microsoft 
 Sample Graph API Request:
 
 PATCH https://graph.windows.net/contoso.com/devices/db7ab579-3759-4492-a03f-655ca7f52ae1?api-version=beta HTTP/1.1
-Authorization: Bearer eyJ0eXAiO………
+Authorization: Bearer eyJ0eXAiO.........
 Accept: application/json
 Content-Type: application/json
 {  "isManaged":true,
@@ -398,7 +401,7 @@ Where:
 
 - **contoso.com** - This value is the name of the Azure AD tenant to whose directory the device has been joined.
 - **db7ab579-3759-4492-a03f-655ca7f52ae1** - This value is the device identifier for the device whose compliance information is being reported to Azure AD.
-- **eyJ0eXAiO**……… - This value is the bearer access token issued by Azure AD to the MDM that authorizes the MDM to call the Microsoft Graph API. The access token is placed in the HTTP authorization header of the request.
+- **eyJ0eXAiO**......... - This value is the bearer access token issued by Azure AD to the MDM that authorizes the MDM to call the Microsoft Graph API. The access token is placed in the HTTP authorization header of the request.
 - **isManaged** and **isCompliant** - These Boolean attributes indicates compliance status.
 - **api-version** - Use this parameter to specify which version of the graph API is being requested.
 

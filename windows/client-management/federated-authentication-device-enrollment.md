@@ -9,6 +9,9 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 07/28/2017
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Federated authentication device enrollment
@@ -34,7 +37,7 @@ The discovery web service provides the configuration information necessary for a
 > [!NOTE]
 > The administrator of the discovery service must create a host with the address enterpriseenrollment.*domain\_name*.com.
 
-The automatic discovery flow of the device uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain “enterpriseenrollment” to the domain of the email address, and by appending the path “/EnrollmentServer/Discovery.svc”. For example, if the email address is “sample@contoso.com”, the resulting URI for first Get request would be: `http://enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc`.
+The automatic discovery flow of the device uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain "enterpriseenrollment" to the domain of the email address, and by appending the path "/EnrollmentServer/Discovery.svc". For example, if the email address is "sample@contoso.com", the resulting URI for first Get request would be: `http://enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc`.
 
 The first request is a standard HTTP GET request.
 
@@ -74,10 +77,10 @@ After the device gets a response from the server, the device sends a POST reques
 
 The following logic is applied:
 
-1.  The device first tries HTTPS. If the server cert isn't trusted by the device, the HTTPS fails.
-2.  If that fails, the device tries HTTP to see whether it's redirected:
-    -   If the device isn't redirected, it prompts the user for the server address.
-    -   If the device is redirected, it prompts the user to allow the redirect.
+1. The device first tries HTTPS. If the server cert isn't trusted by the device, the HTTPS fails.
+1. If that fails, the device tries HTTP to see whether it's redirected:
+    - If the device isn't redirected, it prompts the user for the server address.
+    - If the device is redirected, it prompts the user to allow the redirect.
 
 The following example shows a request via an HTTP POST command to the discovery web service given user@contoso.com as the email address
 
@@ -123,31 +126,32 @@ The following example shows the discovery service request.
 
 The discovery response is in the XML format and includes the following fields:
 
--   Enrollment service URL (EnrollmentServiceUrl) – Specifies the URL of the enrollment endpoint that is exposed by the management service. The device should call this URL after the user has been authenticated. This field is mandatory.
--   Authentication policy (AuthPolicy) – Indicates what type of authentication is required. For the MDM server, OnPremise is the supported value, which means that the user will be authenticated when calling the management service URL. This field is mandatory.
--   In Windows, Federated is added as another supported value. This addition allows the server to use the Web Authentication Broker to perform customized user authentication, and term of usage acceptance.
+- Enrollment service URL (EnrollmentServiceUrl) - Specifies the URL of the enrollment endpoint that is exposed by the management service. The device should call this URL after the user has been authenticated. This field is mandatory.
+- Authentication policy (AuthPolicy) - Indicates what type of authentication is required. For the MDM server, OnPremise is the supported value, which means that the user will be authenticated when calling the management service URL. This field is mandatory.
+- In Windows, Federated is added as another supported value. This addition allows the server to use the Web Authentication Broker to perform customized user authentication, and term of usage acceptance.
 
-> [!Note]
+> [!NOTE]
 > The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
 
 When authentication policy is set to be Federated, Web Authentication Broker (WAB) will be used by the enrollment client to get a security token. The WAB start page URL is provided by the discovery service in the response message. The enrollment client will call the WAB API within the response message to start the WAB process. WAB pages are server hosted web pages. The server should build those pages to fit the device screen nicely and be as consistent as possible to other builds in the MDM enrollment UI. The opaque security token that is returned from WAB as an endpage will be used by the enrollment client as the device security secret during the client certificate enrollment request call.
 
-> [!Note]
+> [!NOTE]
 > Instead of relying on the user agent string that is passed during authentication to get information, such as the OS version, use the following guidance:
-> -   Parse the OS version from the data sent up during the discovery request.
-> -   Append the OS version as a parameter in the AuthenticationServiceURL.
-> -   Parse out the OS version from the AuthenticiationServiceURL when the OS sends the response for authentication.
+>
+> - Parse the OS version from the data sent up during the discovery request.
+> - Append the OS version as a parameter in the AuthenticationServiceURL.
+> - Parse out the OS version from the AuthenticiationServiceURL when the OS sends the response for authentication.
 
 A new XML tag, AuthenticationServiceUrl, is introduced in the DiscoveryResponse XML to allow the server to specify the WAB page start URL. For Federated authentication, this XML tag must exist.
 
-> [!Note]
+> [!NOTE]
 > The enrollment client is agnostic with regards to the protocol flows for authenticating and returning the security token. While the server might prompt for user credentials directly or enter into a federation protocol with another server and directory service, the enrollment client is agnostic to all of this. To remain agnostic, all protocol flows pertaining to authentication that involve the enrollment client are passive, that is, browser-implemented.
 
 The following are the explicit requirements for the server.
 
--   The `<DiscoveryResponse>``<AuthenticationServiceUrl>` element must support HTTPS.
--   The authentication server must use a device trusted root certificate. Otherwise, the WAP call will fail.
--   WP doesn’t support Windows Integrated Authentication (WIA) for ADFS during WAB authentication. ADFS 2012 R2 if used needs to be configured to not attempt WIA for Windows device.
+- The `<DiscoveryResponse>``<AuthenticationServiceUrl>` element must support HTTPS.
+- The authentication server must use a device trusted root certificate. Otherwise, the WAP call will fail.
+- WP doesn't support Windows Integrated Authentication (WIA) for ADFS during WAB authentication. ADFS 2012 R2 if used needs to be configured to not attempt WIA for Windows device.
 
 The enrollment client issues an HTTPS request as follows:
 
@@ -236,8 +240,8 @@ This web service implements the X.509 Certificate Enrollment Policy Protocol (MS
 
 For Federated authentication policy, the security token credential is provided in a request message using the `<wsse:BinarySecurityToken>` element \[WSS\]. The security token is retrieved as described in the discovery response section. The authentication information is as follows:
 
--   wsse:Security: The enrollment client implements the `<wsse:Security>` element defined in \[WSS\] section 5. The `<wsse:Security>` element must be a child of the `<s:Header>` element.
--   wsse:BinarySecurityToken: The enrollment client implements the `<wsse:BinarySecurityToken>` element defined in \[WSS\] section 6.3. The `<wsse:BinarySecurityToken>` element must be included as a child of the `<wsse:Security>` element in the SOAP header.
+- wsse:Security: The enrollment client implements the `<wsse:Security>` element defined in \[WSS\] section 5. The `<wsse:Security>` element must be a child of the `<s:Header>` element.
+- wsse:BinarySecurityToken: The enrollment client implements the `<wsse:BinarySecurityToken>` element defined in \[WSS\] section 6.3. The `<wsse:BinarySecurityToken>` element must be included as a child of the `<wsse:Security>` element in the SOAP header.
 
 As was described in the discovery response section, the inclusion of the `<wsse:BinarySecurityToken>` element is opaque to the enrollment client, and the client doesn't interpret the string, and the inclusion of the element is agreed upon by the security token authentication server (as identified in the `<AuthenticationServiceUrl>` element of `<DiscoveryResponse>` and the enterprise server.
 
@@ -386,7 +390,7 @@ The RequestSecurityToken will use a custom TokenType (`http://schemas.microsoft.
 
 The RST may also specify many AdditionalContext items, such as DeviceType and Version. Based on these values, for example, the web service can return device-specific and version-specific DM configuration.
 
-> [!Note]
+> [!NOTE]
 > The policy service and the enrollment service must be on the same server; that is, they must have the same host name.
 
 The following example shows the enrollment web service request for federated authentication.
@@ -474,15 +478,15 @@ The following example shows the enrollment web service request for federated aut
 
 After validating the request, the web service looks up the assigned certificate template for the client, update it if needed, sends the PKCS\#10 requests to the CA, processes the response from the CA, constructs an OMA Client Provisioning XML format, and returns it in the RequestSecurityTokenResponse (RSTR).
 
-> [!Note]
+> [!NOTE]
 > The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
 
 Similar to the TokenType in the RST, the RSTR will use a custom ValueType in the BinarySecurityToken (`http://schemas.microsoft.com/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc`), because the token is more than an X.509 v3 certificate.
 
 The provisioning XML contains:
 
--   The requested certificates (required)
--   The DM client configuration (required)
+- The requested certificates (required)
+- The DM client configuration (required)
 
 The client will install the client certificate, the enterprise root certificate, and intermediate CA certificate if there's one. The DM configuration includes the name and address of the DM server, which client certificate to use, and schedules when the DM client calls back to the server.
 
@@ -558,7 +562,7 @@ The following code shows sample provisioning XML (presented in the preceding pac
          </characteristic>
          <characteristic type="WSTEP">
             <characteristic type="Renew">
-               <!—If the datatype for ROBOSupport, RenewPeriod, and RetryInterval tags exist, they must be set explicitly. -->
+               <!-If the datatype for ROBOSupport, RenewPeriod, and RetryInterval tags exist, they must be set explicitly. -->
                <parm name="ROBOSupport" value="true" datatype="boolean"/>
                <parm name="RenewPeriod" value="60" datatype="integer"/>
                <parm name="RetryInterval" value="4" datatype="integer"/>
@@ -602,7 +606,7 @@ The following code shows sample provisioning XML (presented in the preceding pac
                 <parm name="NumberOfSecondRetries" value="5" datatype="integer" />
                 <parm name="IntervalForSecondSetOfRetries" value="3" datatype="integer" />
                 <parm name="NumberOfRemainingScheduledRetries" value="0" datatype="integer" />
-                <!-- Windows 10 supports MDM push for real-time communication. The DM client long term polling schedule’s retry waiting interval should be more than 24 hours (1440) to reduce the impact to data consumption and battery life. Refer to the DMClient Configuration Service Provider section for information about polling schedule parameters.-->
+                <!-- Windows 10 supports MDM push for real-time communication. The DM client long term polling schedule's retry waiting interval should be more than 24 hours (1440) to reduce the impact to data consumption and battery life. Refer to the DMClient Configuration Service Provider section for information about polling schedule parameters.-->
                 <parm name="IntervalForRemainingScheduledRetries" value="1560" datatype="integer" />
                 <parm name="PollOnLogin" value="true" datatype="boolean" />
             </characteristic>
@@ -615,14 +619,14 @@ The following code shows sample provisioning XML (presented in the preceding pac
 
 > [!NOTE]
 > 
-> -   `<Parm name>` and `<characteristic type=>` elements in the w7 APPLICATION CSP XML are case sensitive and must be all uppercase.
+> - `<Parm name>` and `<characteristic type=>` elements in the w7 APPLICATION CSP XML are case sensitive and must be all uppercase.
 > 
-> -   In w7 APPLICATION characteristic, both CLIENT and APPSRV credentials should be provided in XML.
+> - In w7 APPLICATION characteristic, both CLIENT and APPSRV credentials should be provided in XML.
 > 
-> -   Detailed descriptions of these settings are located in the [Enterprise settings, policies and app management](windows-mdm-enterprise-settings.md) section of this document.
+> - Detailed descriptions of these settings are located in the [Enterprise settings, policies and app management](windows-mdm-enterprise-settings.md) section of this document.
 > 
-> -   The **PrivateKeyContainer** characteristic is required and must be present in the Enrollment provisioning XML by the enrollment. Other important settings are the **PROVIDER-ID**, **NAME**, and **ADDR** parameter elements, which need to contain the unique ID and NAME of your DM provider and the address where the device can connect for configuration provisioning. The ID and NAME can be arbitrary values, but they must be unique.
+> - The **PrivateKeyContainer** characteristic is required and must be present in the Enrollment provisioning XML by the enrollment. Other important settings are the **PROVIDER-ID**, **NAME**, and **ADDR** parameter elements, which need to contain the unique ID and NAME of your DM provider and the address where the device can connect for configuration provisioning. The ID and NAME can be arbitrary values, but they must be unique.
 > 
-> -   Also important is SSLCLIENTCERTSEARCHCRITERIA, which is used for selecting the certificate to be used for client authentication. The search is based on the subject attribute of the signed user certificate.
+> - Also important is SSLCLIENTCERTSEARCHCRITERIA, which is used for selecting the certificate to be used for client authentication. The search is based on the subject attribute of the signed user certificate.
 > 
-> -   CertificateStore/WSTEP enables certificate renewal. If the server does not support it, do not set it.
+> - CertificateStore/WSTEP enables certificate renewal. If the server does not support it, do not set it.

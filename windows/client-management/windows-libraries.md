@@ -10,17 +10,20 @@ ms.topic: article
 author: vinaypamnani-msft
 description: All about Windows Libraries, which are containers for users' content, such as Documents and Pictures.
 ms.date: 09/15/2021
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016</a>
 ---
 
 # Windows libraries
 
-> Applies to: Windows 10, Windows 11, Windows 8.1, Windows 7, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2
-
-Libraries are virtual containers for users’ content. A library can contain files and folders stored on the local computer or in a remote storage location. In Windows Explorer, users interact with libraries in ways similar to how they would interact with other folders. Libraries are built upon the legacy known folders (such as My Documents, My Pictures, and My Music) that users are familiar with, and these known folders are automatically included in the default libraries and set as the default save location.
+Libraries are virtual containers for users' content. A library can contain files and folders stored on the local computer or in a remote storage location. In Windows Explorer, users interact with libraries in ways similar to how they would interact with other folders. Libraries are built upon the legacy known folders (such as My Documents, My Pictures, and My Music) that users are familiar with, and these known folders are automatically included in the default libraries and set as the default save location.
 
 ## Features for Users
 
 Windows libraries are backed by full content search and rich metadata. Libraries offer the following advantages to users:
+
 - Aggregate content from multiple storage locations into a single, unified presentation.
 - Enable users to stack and group library contents based on metadata.
 - Enable fast, full-text searches across multiple storage locations, from Windows Explorer or from the Start menu.
@@ -30,6 +33,7 @@ Windows libraries are backed by full content search and rich metadata. Libraries
 ## Features for Administrators
 
 Administrators can configure and control Windows libraries in the following methods:
+
 - Create custom libraries by creating and deploying Library Description (*.library-ms) files.
 - Hide or delete the default libraries. (The Library node itself can't be hidden or deleted from the Windows Explorer navigation pane.)
 - Specify a set of libraries available to Default User, and then deploy those libraries to users that derive from Default User.
@@ -48,6 +52,7 @@ Including a folder in a library doesn't physically move or change the storage lo
 ### Default Libraries and Known Folders
 
 The default libraries include:
+
 - Documents
 - Music
 - Pictures
@@ -64,16 +69,17 @@ Users or administrators can hide or delete the default libraries, though the lib
 Each library has a default save location. Files are saved or copied to this location if the user chooses to save or copy a file to a library, rather than a specific location within the library. Known folders are the default save locations; however, users can select a different save location.
 If the user removes the default save location from a library, the next location is automatically selected as the new default save location. If the library is empty of locations or if all included locations can't be saved to, then the save operation fails.
 
-### Indexing Requirements and “Basic” Libraries
+### Indexing Requirements and "Basic" Libraries
 
 Certain library features depend on the contents of the libraries being indexed. Library locations must be available for local indexing or be indexed in a manner conforming to the Windows Indexing Protocol. If indexing isn't enabled for one or more locations within a library, the entire library reverts to basic functionality:
+
 - No support for metadata browsing via **Arrange By** views.
 - Grep-only searches.
 - Grep-only search suggestions. The only properties available for input suggestions are **Date Modified** and **Size**.
 - No support for searching from the Start menu. Start menu searches don't return files from basic libraries.
 - No previews of file snippets for search results returned in Content mode.
 
-To avoid this limited functionality, all locations within the library must be indexable, either locally or remotely. When users add local folders to libraries, Windows adds the location to the indexing scope and indexes the contents. Remote locations that aren't indexed remotely can be added to the local index using Offline File synchronization. This feature gives the user the benefits of local storage even though the location is remote. Making a folder “Always available offline” creates a local copy of the folder’s files, adds those files to the index, and keeps the local and remote copies in sync. Users can manually sync locations that aren't indexed remotely and aren't using folder redirection to gain the benefits of being indexed locally.
+To avoid this limited functionality, all locations within the library must be indexable, either locally or remotely. When users add local folders to libraries, Windows adds the location to the indexing scope and indexes the contents. Remote locations that aren't indexed remotely can be added to the local index using Offline File synchronization. This feature gives the user the benefits of local storage even though the location is remote. Making a folder "Always available offline" creates a local copy of the folder's files, adds those files to the index, and keeps the local and remote copies in sync. Users can manually sync locations that aren't indexed remotely and aren't using folder redirection to gain the benefits of being indexed locally.
 
 For instructions on enabling indexing, see [How to Enable Indexing of Library Locations](/previous-versions/windows/it-pro/windows-7/ee461108(v=ws.10)#BKMK_EnableIndexLocations).
 
@@ -81,7 +87,7 @@ If your environment doesn't support caching files locally, you should enable the
 
 ### Folder Redirection
 
-While library files themselves can't be redirected, you can redirect known folders included in libraries by using [Folder Redirection](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh848267(v=ws.11)). For example, you can redirect the “My Documents” folder, which is included in the default Documents library. When redirecting known folders, you should make sure that the destination is either indexed or always available offline in order to maintain full library functionality. In both cases, the files for the destination folder are indexed and supported in libraries. These settings are configured on the server side.
+While library files themselves can't be redirected, you can redirect known folders included in libraries by using [Folder Redirection](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh848267(v=ws.11)). For example, you can redirect the "My Documents" folder, which is included in the default Documents library. When redirecting known folders, you should make sure that the destination is either indexed or always available offline in order to maintain full library functionality. In both cases, the files for the destination folder are indexed and supported in libraries. These settings are configured on the server side.
 
 ### Supported storage locations
 
@@ -90,7 +96,7 @@ The following table shows which locations are supported in Windows libraries.
 |Supported Locations|Unsupported Locations|
 |---|---|
 |Fixed local volumes (NTFS/FAT)|Removable drives|
-|Shares that are indexed (departmental servers*, Windows home PCs)|Removable media (such as DVDs)<br><br>Network shares that are accessible through DFS Namespaces or are part of a failover cluster|
+|Shares that are indexed (departmental servers*, Windows home PCs)|Removable media (such as DVDs)<br><br>Network shares that are accessible through DFS Namespaces or are part of a failover cluster|
 |Shares that are available offline (redirected folders that use Offline Files)|Network shares that aren't available offline or remotely indexed <br><br>Network Attached Storage (NAS) devices|
 ||Other data sources: SharePoint, Exchange, etc.|
 
@@ -104,6 +110,7 @@ The following table shows which locations are supported in Windows libraries.
 ### Library Attributes
 
 The following library attributes can be modified within Windows Explorer, the Library Management dialog, or the Library Description file (*.library-ms):
+
 - Name
 - Library locations
 - Order of library locations

@@ -9,22 +9,25 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Certificate authentication device enrollment
 
-This section provides an example of the mobile device enrollment protocol using certificate authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://go.microsoft.com/fwlink/p/?LinkId=619347).
+This section provides an example of the mobile device enrollment protocol using certificate authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
-> [!Note]
+> [!NOTE]
 > To set up devices to use certificate authentication for enrollment, you should create a provisioning package. For more information about provisioning packages, see [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package).
 
 ## In this topic
 
--   [Discovery service](#discovery-service)
--   [Enrollment policy web service](#enrollment-policy-web-service)
--   [Enrollment web service](#enrollment-web-service)
+- [Discovery service](#discovery-service)
+- [Enrollment policy web service](#enrollment-policy-web-service)
+- [Enrollment web service](#enrollment-web-service)
 
-For the list of enrollment scenarios not supported in Windows 10, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
+For the list of enrollment scenarios not supported in Windows 10, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
 
 ## Discovery Service
 
@@ -135,7 +138,7 @@ Cache-Control: no-cache
          https://enrolltest.contoso.com/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
       </a:To>
       <wsse:Security s:mustUnderstand="1">
-         <wsse:BinarySecurityToken  wsse:ValueType="X509v3” wsse:Id="mytoken” wsse:EncodingType=
+         <wsse:BinarySecurityToken  wsse:ValueType="X509v3" wsse:Id="mytoken" wsse:EncodingType=
    http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
            xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
                   B64EncodedSampleBinarySecurityToken
@@ -296,14 +299,13 @@ http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrol
    http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
                   xmlns=
           http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
-                  wsu:Id=”29801C2F-F26B-46AD-984B-AFAEFB545FF8”>
+                  wsu:Id="29801C2F-F26B-46AD-984B-AFAEFB545FF8">
                   B64EncodedSampleBinarySecurityToken
-         </wsse:BinarySecurityToken> <!—X509v3 Exported Public Cert, B64 Encoded, includes ID reference value to reference  -->
+         </wsse:BinarySecurityToken> <!-X509v3 Exported Public Cert, B64 Encoded, includes ID reference value to reference  -->
          <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
             <ds:SignedInfo xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" 
                  xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
-                 xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-
-                            1.0.xsd”>
+                 xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility- 1.0.xsd">
                <ds:SignatureMethodAlgorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1/>
                <ds:Reference URI="#envelop">
                   <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/> 
@@ -312,13 +314,13 @@ http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrol
                </ds:Reference>
             </ds:SignedInfo>
             <ds:SignatureValue>SignedMessageBlob/ds:SignatureValue> 
-                <!-- Digest value of message signed with the user’s private key using RSA-SHA256 -->
+                <!-- Digest value of message signed with the user's private key using RSA-SHA256 -->
             <ds:KeyInfo>
                <wsse:SecurityTokenReference> 
                   <wsse:Reference URI="29801C2F-F26B-46AD-984B-AFAEFB545FF8" 
                                   ValueType="http://docs.oasis-open.org/wss/2004/01/
                                   oasis-200401-wss-x509-token-profile-1.0#X509"/>
-                  <!-— References BinarySecurityToken that contains public key to verify signature -->
+                  <!-- References BinarySecurityToken that contains public key to verify signature -->
                </wsse:SecurityTokenReference>
             </ds:KeyInfo>
          </ds:Signature>
@@ -443,7 +445,7 @@ The following example shows the encoded provisioning XML.
          </characteristic>
          <characteristic type="WSTEP">
             <characteristic type="Renew">
-             <!—If the datatype for ROBOSupport, RenewPeriod, and RetryInterval tags exist, they must be set explicitly. -->
+             <!-If the datatype for ROBOSupport, RenewPeriod, and RetryInterval tags exist, they must be set explicitly. -->
                <parm name="ROBOSupport" value="true" datatype="boolean"/>
                <parm name="RenewPeriod" value="60" datatype="integer"/>
                <parm name="RetryInterval" value="4" datatype="integer"/>
@@ -487,7 +489,7 @@ The following example shows the encoded provisioning XML.
                 <parm name="NumberOfSecondRetries" value="5" datatype="integer" />
                 <parm name="IntervalForSecondSetOfRetries" value="3" datatype="integer" />
                 <parm name="NumberOfRemainingScheduledRetries" value="0" datatype="integer" />
-<!-- Windows 10 supports MDM push for real-time communication. The DM client long term polling schedule’s retry waiting interval should be more than 24 hours (1440) to reduce the impact to data consumption and battery life. Refer to the DMClient Configuration Service Provider section for information about polling schedule parameters.-->
+<!-- Windows 10 supports MDM push for real-time communication. The DM client long term polling schedule's retry waiting interval should be more than 24 hours (1440) to reduce the impact to data consumption and battery life. Refer to the DMClient Configuration Service Provider section for information about polling schedule parameters.-->
          <parm name="IntervalForRemainingScheduledRetries" value="1560" datatype="integer" />
          <parm name="PollOnLogin" value="true" datatype="boolean" />
  </characteristic>

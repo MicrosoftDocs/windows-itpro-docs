@@ -1,9 +1,6 @@
 ---
 title: WMI providers supported in Windows 10
 description: Manage settings and applications on devices that subscribe to the Mobile Device Management (MDM) service with Windows Management Infrastructure (WMI).
-MS-HAID: 
-  - 'p\_phdevicemgmt.wmi\_providers\_supported\_in\_windows\_10\_technical\_preview'
-  - 'p\_phDeviceMgmt.wmi\_providers\_supported\_in\_windows'
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
@@ -12,11 +9,14 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # WMI providers supported in Windows 10
 
-Windows Management Infrastructure (WMI) providers (and the classes they support) are used to manage settings and applications on devices that subscribe to the Mobile Device Management (MDM) service. The following subsections show the list WMI MDM classes that are supported in Windows 10.
+Windows Management Infrastructure (WMI) providers (and the classes they support) are used to manage settings and applications on devices that subscribe to the Mobile Device Management (MDM) service. The following subsections show the list WMI MDM classes that are supported in Windows 10.
 
 > [!NOTE]
 > Applications installed using WMI classes are not removed when the MDM account is removed from device.
@@ -53,7 +53,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 
 ## MDM WMI classes
 
-|Class|Test completed in Windows 10 for desktop|
+|Class|Test completed in Windows 10 for desktop|
 |--- |--- |
 |[**MDM_AppInstallJob**](/previous-versions/windows/desktop/mdmappprov/mdm-appinstalljob)|Currently testing.|
 |[**MDM_Application**](/previous-versions/windows/desktop/mdmappprov/mdm-application)|Currently testing.|
@@ -92,7 +92,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 
 ### Parental control WMI classes
 
-| Class                                                                    | Test completed in Windows 10 for desktop |
+| Class                                                                    | Test completed in Windows 10 for desktop |
 |--------------------------------------------------------------------------|------------------------------------------|
 | [**wpcappoverride**](/windows/win32/parcon/parental-controls-wmi-provider-schema)       | Yes     |
 | [**wpcgameoverride**](/windows/win32/parcon/parental-controls-wmi-provider-schema)      | Yes     |
@@ -105,11 +105,9 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 | [**wpcusersettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)      | Yes     |
 | [**wpcwebsettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)       | Yes     |
 
-
-
 ### Win32 WMI classes
 
-| Class                                                                    | Test completed in Windows 10 for desktop |
+| Class                                                                    | Test completed in Windows 10 for desktop |
 |--------------------------------------------------------------------------|------------------------------------------|
 [**Win32\_1394Controller**](/windows/win32/cimwin32prov/win32-1394controller) |
 [**Win32\_BaseBoard**](/windows/win32/cimwin32prov/win32-baseboard)      |
@@ -180,10 +178,10 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 [**Win32\_VideoController**](/windows/win32/cimwin32prov/win32-videocontroller) |
 **Win32\_WindowsUpdateAgentVersion**                                                        |
 
-
 ## Related topics
 
 [Configuration service provider reference](mdm/index.yml)
 
 ## Related Links
+
 [CIM Video Controller](/windows/win32/cimwin32prov/cim-videocontroller)

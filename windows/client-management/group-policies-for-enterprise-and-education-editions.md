@@ -10,14 +10,12 @@ manager: aaroncz
 ms.author: vinpa
 ms.topic: troubleshooting
 ms.technology: itpro-manage
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Group Policy settings that apply only to Windows 10 Enterprise and Education Editions
-
-**Applies to**
--   Windows 10
--   Windows 11
-
 
 In Windows 10, version 1607, the following Group Policy settings apply only to Windows 10 Enterprise and Windows 10 Education.
 
@@ -34,7 +32,3 @@ In Windows 10, version 1607, the following Group Policy settings apply only to W
 | **Turn off the Store application** | Computer Configuration > Administrative Templates > Windows Components > Store > Turn off the Store application<br><br>User Configuration > Administrative Templates > Windows Components > Store > Turn off the Store application | For more info, see [Knowledge Base article# 3135657](/troubleshoot/windows-client/group-policy/cannot-disable-microsoft-store). |
 | **Only display the private store within the Microsoft Store app** | Computer Configuration > Administrative Templates > Windows Components > Store > Only display the private store within the Microsoft Store app<br><br>User Configuration > Administrative Templates > Windows Components > Store > Only display the private store within the Microsoft Store app | For more info, see [Manage access to private store](/microsoft-store/manage-access-to-private-store) |
 | **Don't search the web or display web results** | Computer Configuration\Administrative Templates\Windows Components\Search\Don't search the web or display web results | For more info, see [Cortana integration in your enterprise](/windows/configuration/cortana-at-work/cortana-at-work-overview) |
-
-
-
- 

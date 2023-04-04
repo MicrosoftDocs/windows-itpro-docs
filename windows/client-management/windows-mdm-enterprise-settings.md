@@ -1,9 +1,6 @@
 ---
 title: Enterprise settings, policies, and app management
 description: The DM client manages the interaction between a device and a server. Learn more about the client-server management workflow.
-MS-HAID: 
-  - 'p\_phdevicemgmt.enterprise\_settings\_\_policies\_\_and\_app\_management'
-  - 'p\_phDeviceMgmt.windows\_mdm\_enterprise\_settings'
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
@@ -12,6 +9,9 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Enterprise settings, policies, and app management
@@ -26,7 +26,6 @@ The following diagram shows the work flow between server and client.
 
 ![windows client and server mdm diagram.](images/enterprise-workflow.png)
 
-
 ## Management workflow
 
 This protocol defines an HTTPS-based client/server communication with DM SyncML XML as the package payload that carries management requests and execution results. The configuration request is addressed via a managed object (MO). The settings supported by the managed object are represented in a conceptual tree structure. This logical view of configurable device settings simplifies the way the server addresses the device settings by isolating the implementation details from the conceptual tree structure.
@@ -37,15 +36,7 @@ The DM client configuration, company policy enforcement, business application ma
 
 Here's a summary of the DM tasks supported for enterprise management:
 
--   Company policy management: Company policies are supported via the Policy CSP allows the enterprise to manage various settings. It enables the management service to configure device lock related policies, disable/enable the storage card, and query the device encryption status. The RemoteWipe CSP allows IT pros to remotely fully wipe the internal user data storage.
--   Enterprise application management: This task is addressed via the Enterprise ModernApp Management CSP and several ApplicationManagement-related policies. It's used to install the enterprise token, query installed business application names and versions, etc. This CSP is only accessible by the enterprise service.
--   Certificate management: CertificateStore CSP, RootCACertificate CSP, and ClientCertificateInstall CSP are used to install certificates.
--   Basic device inventory and asset management: Some basic device information can be retrieved via the DevInfo CSP, DevDetail CSPs and the DeviceStatus CSP. These provide basic device information such as OEM name, device model, hardware version, OS version, processor types, etc. This information is for asset management and device targeting. The NodeCache CSP enables the device to only send out delta inventory settings to the server to reduce over-the-air data usage. The NodeCache CSP is only accessible by the enterprise service.
-
- 
-
-
-
-
-
-
+- Company policy management: Company policies are supported via the Policy CSP allows the enterprise to manage various settings. It enables the management service to configure device lock related policies, disable/enable the storage card, and query the device encryption status. The RemoteWipe CSP allows IT pros to remotely fully wipe the internal user data storage.
+- Enterprise application management: This task is addressed via the Enterprise ModernApp Management CSP and several ApplicationManagement-related policies. It's used to install the enterprise token, query installed business application names and versions, etc. This CSP is only accessible by the enterprise service.
+- Certificate management: CertificateStore CSP, RootCACertificate CSP, and ClientCertificateInstall CSP are used to install certificates.
+- Basic device inventory and asset management: Some basic device information can be retrieved via the DevInfo CSP, DevDetail CSPs and the DeviceStatus CSP. These provide basic device information such as OEM name, device model, hardware version, OS version, processor types, etc. This information is for asset management and device targeting. The NodeCache CSP enables the device to only send out delta inventory settings to the server to reduce over-the-air data usage. The NodeCache CSP is only accessible by the enterprise service.

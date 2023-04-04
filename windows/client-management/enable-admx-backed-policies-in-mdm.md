@@ -8,18 +8,21 @@ ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 11/01/2017
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Enable ADMX policies in MDM
-
 
 Here's how to configure Group Policy administrative templates (ADMX policies) in Mobile Device Management (MDM).
 
 Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX policies)](mdm/policies-in-policy-csp-admx-backed.md) for Windows PCs via the [Policy configuration service provider (CSP)](mdm/policy-configuration-service-provider.md). Configuring ADMX policies in Policy CSP is different from the typical way you configure a traditional MDM policy.
 
 Summary of steps to enable a policy:
+
 - Find the policy from the list ADMX policies.
 - Find the Group Policy related information from the MDM policy description.
 - Use the Group Policy Editor to determine whether there are parameters necessary to enable the policy.
@@ -28,20 +31,20 @@ Summary of steps to enable a policy:
 See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Ingesting-Office-ADMX-Backed-policies-using/ba-p/354824) and [Deploying ADMX policies using Microsoft Intune](/archive/blogs/senthilkumar/intune-deploying-admx-backed-policies-using-microsoft-intune) for a walk-through using Intune.
 
 <!-- >[!TIP] -->
-<!--  >Intune has added a number of ADMX administrative templates in public preview. Check if the policy settings you need are available in a template before using the SyncML method described below. [Learn more about Intune's administrative templates.](/intune/administrative-templates-windows) -->
+<!-- >Intune has added a number of ADMX administrative templates in public preview. Check if the policy settings you need are available in a template before using the SyncML method described below. [Learn more about Intune's administrative templates.](/intune/administrative-templates-windows) -->
 
 ## Enable a policy
 
 > [!NOTE]
 > See [Understanding ADMX policies in Policy CSP](understanding-admx-backed-policies.md).
 
-1.  Find the policy from the list [ADMX policies](mdm/policies-in-policy-csp-admx-backed.md). You need the following information listed in the policy description.
+1. Find the policy from the list [ADMX policies](mdm/policies-in-policy-csp-admx-backed.md). You need the following information listed in the policy description.
     - GP Friendly name
     - GP name
     - GP ADMX file name
     - GP path
 
-2.  Use the Group Policy Editor to determine whether you need additional information to enable the policy. Run GPEdit.msc
+1. Use the Group Policy Editor to determine whether you need additional information to enable the policy. Run GPEdit.msc
 
     1. Click **Start**, then in the text box type **gpedit**.
 
@@ -61,7 +64,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
 
        ![Enable App-V client.](images/admx-appv-enableapp-vclient.png)
 
-3.  Create the SyncML to enable the policy that doesn't require any parameter.
+1. Create the SyncML to enable the policy that doesn't require any parameter.
 
     In this example, you configure **Enable App-V Client** to **Enabled**.
 
@@ -89,9 +92,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
     </SyncML>
     ```
 
-
 ## Enable a policy that requires parameters
-
 
    1. Create the SyncML to enable the policy that requires parameters.
 
@@ -113,13 +114,12 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
 
    4. Search for GP name **Publishing_Server2_policy**.
 
-
    5. Under **policy name="Publishing_Server2_Policy"** you can see the \<elements> listed. The *text id* and *enum id* represent the *data id* you need to include in the SyncML data payload. They correspond to the fields you see in the Group Policy Editor.
 
       Here's the snippet from appv.admx:
 
       ```xml
-      <!--  Publishing Server 2  -->
+      <!-- Publishing Server 2  -->
       <policy name="Publishing_Server2_Policy" class="Machine" displayName="$(string.PublishingServer2)"
           explainText="$(string.Publishing_Server_Help)" presentation="$(presentation.Publishing_Server2)"
           key="SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\2">
@@ -262,7 +262,6 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
             </SyncBody>
           </SyncML>
        ```
-
 
 ## Disable a policy
 

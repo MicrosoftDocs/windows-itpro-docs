@@ -1,10 +1,7 @@
 ---
 title: Push notification support for device management
 description: The DMClient CSP supports the ability to configure push-initiated device management sessions.
-MS-HAID:
- - 'p\_phdevicemgmt.push\_notification\_support\_for\_device\_management'
- - 'p\_phDeviceMgmt.push\_notification\_windows\_mdm'
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -12,6 +9,9 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/22/2017
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Push notification support for device management
@@ -33,7 +33,7 @@ The following restrictions are related to push notifications and WNS:
 - WNS reserves the right to block push notifications to your PFN if improper use of notifications is detected. Any devices being managed using this PFN will cease to have push initiated device management support.
 - On Windows 10, version 1511 as well as Windows 8 and 8.1, MDM Push may fail to renew the WNS Push channel automatically causing it to expire. It can also potentially hang when setting the PFN for the channel.
 
- To work around this issue, when a 410 is returned by the WNS server when attempting to send a Push notification to the device the PFN should be set during the next sync session. To prevent the push channel from expiring on older builds, servers can reset the PFN before the channel expires (~30 days). If they’re already running Windows 10, there should be an update available that they can install that should fix the issue.
+ To work around this issue, when a 410 is returned by the WNS server when attempting to send a Push notification to the device the PFN should be set during the next sync session. To prevent the push channel from expiring on older builds, servers can reset the PFN before the channel expires (~30 days). If they're already running Windows 10, there should be an update available that they can install that should fix the issue.
 
 - On Windows 10, version 1511, we use the following retry logic for the DMClient:
 
