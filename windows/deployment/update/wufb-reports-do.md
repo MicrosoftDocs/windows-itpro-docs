@@ -72,7 +72,7 @@ There are sevaral calculated values that appear on the Delivery Optimization rep
 - Volume by MCC = BytesFromCache (UCDOStatus table)
 - Volume by CDN = BytesFrom CDN (UCDOStatus table)
 
-## Determine GroupID
+## Mapping GroupID
 
 In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash. You can create a mapping of decoded to encoded GroupIDs using the following PowerShell example:
 
@@ -137,5 +137,8 @@ Data is available for the last 28 days.
 - **Data is showing as 'Unknown', what does that mean?**
 You may see data in the report listed as 'Unknown'. This indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.
 
--**How is the 'Top 10' groups identified?**
+- **How is the 'Top 10' groups identified?**
 The top groups are represented by the number of devices in a particular group, for any of the four group types (GroupID, City, Country, and ISP).
+
+- **The GroupIDs don't look familiar, why are they different?**
+The GroupID values are encoded for data protection telemetry requirements. You can find more information in the 'Mapping GroupIDs' section above.
