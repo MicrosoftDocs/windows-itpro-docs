@@ -93,9 +93,6 @@ These two lines are together in verbose logs:
 2023-02-15T12:33:11.3811337Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Using groupID = **<myEncodedGroupId>**
 2023-02-15T12:33:11.3811432Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Hashed groupID = **<myDecodedGroupId>**
 ```
-
- 
-
 ## Sample queries
 
 You can use the data in [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md)
@@ -111,8 +108,6 @@ UCDOAggregatedStatus| where TimeGenerated == _SnapshotTime
 | summarize LocalSources_BWSAV = round((sum(0.0 + LocalSourceBytes)/ sum(LocalSourceBytes+BytesFromCDN)) * 100.0 ,2)
 | extend Title = "BW SAV%" , SubTitle = "Local Sources"
 ```
-
-
 ### Example UCDOStatus table query
 
 The following is the query used to display the Top 10 GroupIDs:
