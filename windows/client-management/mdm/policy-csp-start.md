@@ -1493,35 +1493,35 @@ If you enable this policy setting, the Start Menu will no longer show the sectio
 
 <!-- HideRecommendedSection-End -->
 
-<!-- HideRecoPersonalizedSites-Begin -->
-## HideRecoPersonalizedSites
+<!-- HideRecommendedPersonalizedSites-Begin -->
+## HideRecommendedPersonalizedSites
 
-<!-- HideRecoPersonalizedSites-Applicability-Begin -->
+<!-- HideRecommendedPersonalizedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | <!-- Not-Found --> |
-<!-- HideRecoPersonalizedSites-Applicability-End -->
+<!-- HideRecommendedPersonalizedSites-Applicability-End -->
 
-<!-- HideRecoPersonalizedSites-OmaUri-Begin -->
+<!-- HideRecommendedPersonalizedSites-OmaUri-Begin -->
 ```User
-./User/Vendor/MSFT/Policy/Config/Start/HideRecoPersonalizedSites
+./User/Vendor/MSFT/Policy/Config/Start/HideRecommendedPersonalizedSites
 ```
 
 ```Device
-./Device/Vendor/MSFT/Policy/Config/Start/HideRecoPersonalizedSites
+./Device/Vendor/MSFT/Policy/Config/Start/HideRecommendedPersonalizedSites
 ```
-<!-- HideRecoPersonalizedSites-OmaUri-End -->
+<!-- HideRecommendedPersonalizedSites-OmaUri-End -->
 
-<!-- HideRecoPersonalizedSites-Description-Begin -->
+<!-- HideRecommendedPersonalizedSites-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy setting allows you to hide the personalized websites in the recommended section of the Start Menu. If you enable this policy setting, the Start Menu will no longer show personalized website recommendations in the recommended section of the start menu.
-<!-- HideRecoPersonalizedSites-Description-End -->
+<!-- HideRecommendedPersonalizedSites-Description-End -->
 
-<!-- HideRecoPersonalizedSites-Editable-Begin -->
+<!-- HideRecommendedPersonalizedSites-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- HideRecoPersonalizedSites-Editable-End -->
+<!-- HideRecommendedPersonalizedSites-Editable-End -->
 
-<!-- HideRecoPersonalizedSites-DFProperties-Begin -->
+<!-- HideRecommendedPersonalizedSites-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
@@ -1529,31 +1529,31 @@ This policy setting allows you to hide the personalized websites in the recommen
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
-<!-- HideRecoPersonalizedSites-DFProperties-End -->
+<!-- HideRecommendedPersonalizedSites-DFProperties-End -->
 
-<!-- HideRecoPersonalizedSites-AllowedValues-Begin -->
+<!-- HideRecommendedPersonalizedSites-AllowedValues-Begin -->
 **Allowed values**:
 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Personalized Website Recommendations shown. |
 | 1 | Personalized Website Recommendations hidden. |
-<!-- HideRecoPersonalizedSites-AllowedValues-End -->
+<!-- HideRecommendedPersonalizedSites-AllowedValues-End -->
 
-<!-- HideRecoPersonalizedSites-GpMapping-Begin -->
+<!-- HideRecommendedPersonalizedSites-GpMapping-Begin -->
 **Group policy mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | HideRecoPersonalizedSites |
+| Name | HideRecommendedPersonalizedSites |
 | Path | StartMenu > AT > StartMenu |
-<!-- HideRecoPersonalizedSites-GpMapping-End -->
+<!-- HideRecommendedPersonalizedSites-GpMapping-End -->
 
-<!-- HideRecoPersonalizedSites-Examples-Begin -->
+<!-- HideRecommendedPersonalizedSites-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- HideRecoPersonalizedSites-Examples-End -->
+<!-- HideRecommendedPersonalizedSites-Examples-End -->
 
-<!-- HideRecoPersonalizedSites-End -->
+<!-- HideRecommendedPersonalizedSites-End -->
 
 <!-- HideRestart-Begin -->
 ## HideRestart
