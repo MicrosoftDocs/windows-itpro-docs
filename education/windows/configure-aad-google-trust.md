@@ -86,15 +86,15 @@ $LogOffUri = "https://accounts.google.com/logout"
 $brand = "Google Workspace Identity"
 Connect-MsolService
 $DomainAuthParams = @{
-    DomainName = $DomainName
-    Authentication = "Federated"
-    IssuerUri = $issuerUri
-    FederationBrandName = $brand
-    ActiveLogOnUri = $logOnUri
-    PassiveLogOnUri = $logOnUri
-    LogOffUri = $LogOffUri
-    SigningCertificate = $cert
-    PreferredAuthenticationProtocol = "SAMLP"
+  DomainName = $DomainName
+  Authentication = "Federated"
+  IssuerUri = $issuerUri
+  FederationBrandName = $brand
+  ActiveLogOnUri = $logOnUri
+  PassiveLogOnUri = $logOnUri
+  LogOffUri = $LogOffUri
+  SigningCertificate = $cert
+  PreferredAuthenticationProtocol = "SAMLP"
 }
 Set-MsolDomainAuthentication @DomainAuthParams
 ```
@@ -117,6 +117,59 @@ OpenIdConnectDiscoveryEndpoint         :
 PassiveLogOnUri                        : https://accounts.google.com/o/saml2/idp?idpid=<GUID>
 SigningCertificate                     : <BASE64 encoded certificate>
 SupportsMfa                            : 
+```
+
+```powershell
+Install-Module Microsoft.Graph
+Import-Module Microsoft.Graph
+
+$domainId = "<your domain name>"
+
+$xml = [Xml](Get-Content GoogleIDPMetadata.xml)
+
+$cert = -join $xml.EntityDescriptor.IDPSSODescriptor.KeyDescriptor.KeyInfo.X509Data.X509Certificate.Split()
+$issuerUri = $xml.EntityDescriptor.entityID
+$signinUri = $xml.EntityDescriptor.IDPSSODescriptor.SingleSignOnService | ? { $_.Binding.Contains('Redirect') } | % { $_.Location }
+$signoutUri = "https://accounts.google.com/logout"
+$displayName = "Google Workspace Identity"
+Connect-MGGraph -Scopes "Domain.ReadWrite.All", "Directory.AccessAsUser.All"
+
+$domainAuthParams = @{
+  DomainId = $domainId
+  IssuerUri = $issuerUri
+  DisplayName = $displayName
+  ActiveSignInUri = $signinUri
+  PassiveSignInUri = $signinUri
+  SignOutUri = $signoutUri
+  SigningCertificate = $cert
+  PreferredAuthenticationProtocol = "saml"
+  federatedIdpMfaBehavior = "acceptIfMfaDoneByFederatedIdp"
+}
+
+New-MgDomainFederationConfiguration @domainAuthParams
+```
+
+To verify that the configuration is correct, you can use the following PowerShell command:
+
+```powershell
+Get-MgDomainFederationConfiguration -DomainId $domainId |fl
+```
+
+```output
+ActiveSignInUri                       : https://accounts.google.com/o/saml2/idp?idpid=<GUID>
+DisplayName                           : Google Workspace Identity
+FederatedIdpMfaBehavior               : acceptIfMfaDoneByFederatedIdp
+Id                                    : 3f600dce-ab37-4798-9341-ffd34b147f70
+IsSignedAuthenticationRequestRequired :
+IssuerUri                             : https://accounts.google.com/o/saml2?idpid=<GUID>
+MetadataExchangeUri                   :
+NextSigningCertificate                :
+PassiveSignInUri                      : https://accounts.google.com/o/saml2/idp?idpid=<GUID>
+PreferredAuthenticationProtocol       : saml
+PromptLoginBehavior                   :
+SignOutUri                            : https://accounts.google.com/logout
+SigningCertificate                    : <BASE64 encoded certificate>
+AdditionalProperties                  : {}
 ```
 
 ## Verify federated authentication between Google Workspace and Azure AD
