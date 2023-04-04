@@ -101,19 +101,19 @@ These two lines are together in verbose logs:
 You can use the data in [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md)
 and [UCDOStatus](wufb-reports-schema-ucdostatus.md) to create your own queries. Create your custom queries using [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query/), but note that Windows Update for Business reports uses Azure Monitor, so some operators aren't supported. The KQL documentation specifies which operators aren't supported by Azure Monitor or if they have different functionality. For more information about KQL in Azure Monitor, see [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview). The following queries are examples of how you can use the data:
 
-### Sample query 1
+### Example UCDOAggregatedStatus table query
 
-Explanation of what the query displays
+The following is the query used to display the total bandwidth savings % value:
 
 ```kusto
-UCDOAggregatedStatus
-| where Bogus =="SomethingBogus" and Neato =="Something Neat"
-| sort by Whatevs
-| project Whatevs, Neato, Bogus
+UCDOAggregatedStatus| where TimeGenerated == _SnapshotTime
+| extend LocalSourceBytes = BytesFromCache + BytesFromGroupPeers + BytesFromPeers
+| summarize LocalSources_BWSAV = round((sum(0.0 + LocalSourceBytes)/ sum(LocalSourceBytes+BytesFromCDN)) * 100.0 ,2)
+| extend Title = "BW SAV%" , SubTitle = "Local Sources"
 ```
 
 
-### Sample UCDOStatus table query
+### Example UCDOStatus table query
 
 The following is the query used to display the Top 10 GroupIDs:
 
@@ -127,7 +127,7 @@ DeviceCount = count_distinct(GlobalDeviceId) by GroupID | top 10 by DeviceCount 
  VolumeBytesFromPeers = sum_BytesFromPeers + sum_BytesFromGroupPeers
 | extend VolumeBytesFromMCC = sum_BytesFromCache , VolumeByCDN = sum_BytesFromCDN
 | project  GroupID , P2PPercentage , MCCPercentage ,  VolumeBytesFromPeers , VolumeBytesFromMCC ,VolumeByCDN , DeviceCount
-
+```
 
 ### Frequency Asked Questions
 
