@@ -1,7 +1,7 @@
 ---
 title: What's new in MDM enrollment and management
-description: Discover what's new and breaking changes in Windows 10 and Windows 11 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
-ms.reviewer: 
+description: Discover what's new and breaking changes in mobile device management (MDM) enrollment and management experience across all Windows devices.
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
-ms.date: 09/16/2022
+ms.date: 04/05/2023
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>

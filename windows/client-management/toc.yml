@@ -10,7 +10,7 @@ items:
             items:
             - name: What is MDM?
               href: mdm-overview.md
-            - name: What's new in MDM enrollment and management
+            - name: What's new in MDM
               href: new-in-windows-mdm-enrollment-management.md
             - name: Azure Active Directory integration with MDM
               href: azure-active-directory-integration-with-mdm.md
@@ -25,22 +25,20 @@ items:
             items:
               - name: Enrollment overview
                 href: mobile-device-enrollment.md
-              - name: Enrollment methods
-                items:
-                  - name: Manual enrollment
-                    href: mdm-enrollment-of-windows-devices.md
-                  - name: Automatic enrollment
-                    href: azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md
-                  - name: Group Policy enrollment
-                    href: enroll-a-windows-10-device-automatically-using-group-policy.md
-                  - name: Bulk enrollment
-                    href: bulk-enrollment-using-windows-provisioning-tool.md
-                  - name: Federated authentication enrollment
-                    href: federated-authentication-device-enrollment.md
-                  - name: Certificate authentication enrollment
-                    href: certificate-authentication-device-enrollment.md
-                  - name: On-premises authentication enrollment
-                    href: on-premise-authentication-device-enrollment.md
+              - name: Manual enrollment
+                href: mdm-enrollment-of-windows-devices.md
+              - name: Automatic enrollment
+                href: azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md
+              - name: Group policy enrollment
+                href: enroll-a-windows-10-device-automatically-using-group-policy.md
+              - name: Bulk enrollment
+                href: bulk-enrollment-using-windows-provisioning-tool.md
+              - name: Federated authentication enrollment
+                href: federated-authentication-device-enrollment.md
+              - name: Certificate authentication enrollment
+                href: certificate-authentication-device-enrollment.md
+              - name: On-premises authentication enrollment
+                href: on-premise-authentication-device-enrollment.md
           - name: Manage devices
             expanded: true
             items:

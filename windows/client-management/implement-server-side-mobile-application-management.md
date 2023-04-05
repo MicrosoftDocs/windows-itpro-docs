@@ -6,8 +6,8 @@ ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
-ms.date: 08/03/2022
-ms.reviewer: 
+ms.date: 04/05/2023
+ms.reviewer:
 manager: aaroncz
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

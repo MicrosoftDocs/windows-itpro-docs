@@ -1,6 +1,6 @@
 ---
-title: MDM enrollment of Windows 10-based devices
-description: Learn about mobile device management (MDM) enrollment of Windows 10-based devices to simplify access to your organization’s resources.
+title: MDM enrollment of Windows devices
+description: Learn about mobile device management (MDM) enrollment of Windows devices to simplify access to your organization's resources.
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
@@ -37,7 +37,7 @@ Devices running Windows 10 Pro, Windows 10 Enterprise, or Windows 10 Education c
 > [!NOTE]
 > Mobile devices can't be connected to an Active Directory domain.
 
-### Out-of-box-experience
+#### Out-of-box-experience
 
 Joining your device to an Active Directory domain during the out-of-box-experience (OOBE) isn't supported. To join a domain:
 
@@ -53,7 +53,7 @@ Joining your device to an Active Directory domain during the out-of-box-experien
 
     ![create pc account.](images/unifiedenrollment-rs1-4.png)
 
-### Use the Settings app
+#### Use the Settings app
 
 To create a local account and connect the device:
 
@@ -81,7 +81,7 @@ To create a local account and connect the device:
 
     ![type in domain name.](images/unifiedenrollment-rs1-10.png)
 
-### Help with connecting to an Active Directory domain
+#### Help with connecting to an Active Directory domain
 
 There are a few instances where your device can't be connected to an Active Directory domain.
 
@@ -96,7 +96,7 @@ There are a few instances where your device can't be connected to an Active Dire
 
 All Windows devices can be connected to an Azure AD domain. These devices can be connected during OOBE. Additionally, desktop devices can be connected to an Azure AD domain using the Settings app.
 
-### Out-of-box-experience
+#### Out-of-box-experience
 
 To join a domain:
 
@@ -116,7 +116,7 @@ To join a domain:
 
     ![azure ad signin.](images/unifiedenrollment-rs1-13.png)
 
-### Use the Settings app
+#### Use the Settings app
 
 To create a local account and connect the device:
 
@@ -154,7 +154,7 @@ To create a local account and connect the device:
 
     ![corporate sign in screen](images/unifiedenrollment-rs1-20.png)
 
-### Help with connecting to an Azure AD domain
+#### Help with connecting to an Azure AD domain
 
 There are a few instances where your device can't be connected to an Azure AD domain.
 
@@ -171,11 +171,9 @@ There are a few instances where your device can't be connected to an Azure AD do
 
 Personally owned devices, also known as bring your own device (BYOD), can be connected to a work or school account, or to MDM. Windows 10 doesn't require a personal Microsoft account on devices to connect to work or school.
 
-### Connect to a work or school account
-
 All Windows 10-based devices can be connected to a work or school account. You can connect to a work or school account either through the Settings app or through any of the numerous Universal Windows Platform (UWP) apps, such as the universal Office apps.
 
-### Use the Settings app
+### Register device in AAD and enroll in MDM
 
 To create a local account and connect the device:
 
@@ -209,13 +207,9 @@ To create a local account and connect the device:
 
     ![account successfully added.](images/unifiedenrollment-rs1-27.png)
 
-### Connect to MDM on a desktop (enrolling in device management)
+### Enroll in device management only
 
-All Windows 10-based devices can be connected to MDM. You can connect to an MDM through the Settings app.
-
-### Use the Settings app
-
-To create a local account and connect the device:
+All Windows 10-based devices can be connected to MDM. You can connect to an MDM through the Settings app. To create a local account and connect the device:
 
 1. Launch the Settings app.
 
@@ -257,7 +251,7 @@ There are a few instances where your device may not be able to connect to work.
 | You don't have the right privileges to perform this operation. Talk to your admin.                                                                                                  | You can't enroll your device into MDM as a standard user. You must be on an administrator account. |
 | We couldn't auto-discover a management endpoint matching the username entered. Check your username and try again. If you know the URL to your management endpoint, enter it. | You need to provide the server URL for your MDM or check the spelling of the username you entered.  |
 
-## Connect your Windows 10-based device to work using a deep link
+## Connect your Windows device to work using a deep link
 
 Windows 10-based devices may be connected to work using a deep link. Users will be able to select or open a link in a particular format from anywhere in Windows 10, and be directed to the new enrollment experience.
 

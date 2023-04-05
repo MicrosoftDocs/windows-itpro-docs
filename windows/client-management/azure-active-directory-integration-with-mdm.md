@@ -1,7 +1,7 @@
 ---
 title: Azure Active Directory integration with MDM
 description: Azure Active Directory is the world's largest enterprise cloud identity management service.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -11,7 +11,7 @@ author: vinaypamnani-msft
 ms.collection:
 - highpri
 - tier2
-ms.date: 12/31/2017
+ms.date: 04/05/2023
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>

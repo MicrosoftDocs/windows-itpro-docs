@@ -1,14 +1,14 @@
 ---
 title: Federated authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using federated authentication policy.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
-ms.date: 07/28/2017
+ms.date: 04/05/2023
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -20,28 +20,23 @@ This section provides an example of the mobile device enrollment protocol using 
 
 The `<AuthenticationServiceURL>` element the discovery response message specifies web authentication broker page start URL.
 
-For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692).
+For details about the Microsoft mobile device enrollment protocol for Windows, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692).
 
-## In this topic
-
-[Discovery service](#discovery-service)  
-[Enrollment policy web service](#enrollment-policy-web-service)  
-[Enrollment web service](#enrollment-web-service)  
-
-For the list of enrollment scenarios not supported in Windows 10, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
+> [!NOTE]
+> For the list of enrollment scenarios not supported in Windows, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
 
 ## Discovery service
 
 The discovery web service provides the configuration information necessary for a user to enroll a phone with a management service. The service is a restful web service over HTTPS (server authentication only).
 
 > [!NOTE]
-> The administrator of the discovery service must create a host with the address enterpriseenrollment.*domain\_name*.com.
+> The administrator of the discovery service must create a host with the address `enterpriseenrollment.<domain_name>.com`.
 
-The automatic discovery flow of the device uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain "enterpriseenrollment" to the domain of the email address, and by appending the path "/EnrollmentServer/Discovery.svc". For example, if the email address is "sample@contoso.com", the resulting URI for first Get request would be: `http://enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc`.
+The automatic discovery flow of the device uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain **enterpriseenrollment** to the domain of the email address, and by appending the path `/EnrollmentServer/Discovery.svc`. For example, if the email address is `sample@contoso.com`, the resulting URI for first Get request would be: `http://enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc`.
 
 The first request is a standard HTTP GET request.
 
-The following example shows a request via HTTP GET to the discovery server given user@contoso.com as the email address.
+The following example shows a request via HTTP GET to the discovery server given `user@contoso.com` as the email address.
 
 ```http
 Request Full Url: http://EnterpriseEnrollment.contoso.com/EnrollmentServer/Discovery.svc
@@ -73,16 +68,16 @@ Content-Type: text/html
 Content-Length: 0
 ```
 
-After the device gets a response from the server, the device sends a POST request to enterpriseenrollment.*domain\_name*/EnrollmentServer/Discovery.svc. After it gets another response from the server (which should tell the device where the enrollment server is), the next message sent from the device is to enterpriseenrollment.*domain\_name* to the enrollment server.
+After the device gets a response from the server, the device sends a POST request to `enterpriseenrollment.<domain_name>/EnrollmentServer/Discovery.svc`. After it gets another response from the server (which should tell the device where the enrollment server is), the next message sent from the device is to `enterpriseenrollment.<domain_name>` enrollment server.
 
 The following logic is applied:
 
 1. The device first tries HTTPS. If the server cert isn't trusted by the device, the HTTPS fails.
 1. If that fails, the device tries HTTP to see whether it's redirected:
-    - If the device isn't redirected, it prompts the user for the server address.
-    - If the device is redirected, it prompts the user to allow the redirect.
+   - If the device isn't redirected, it prompts the user for the server address.
+   - If the device is redirected, it prompts the user to allow the redirect.
 
-The following example shows a request via an HTTP POST command to the discovery web service given user@contoso.com as the email address
+The following example shows a request via an HTTP POST command to the discovery web service given `user@contoso.com` as the email address
 
 ```http
 https://EnterpriseEnrollment.Contoso.com/EnrollmentServer/Discovery.svc
@@ -93,34 +88,37 @@ The following example shows the discovery service request.
 ```xml
 <?xml version="1.0"?>
 <s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"
-   xmlns:s="http://www.w3.org/2003/05/soap-envelope">
-  <s:Header>
-	<a:Action s:mustUnderstand="1">
-	  http://schemas.microsoft.com/windows/management/2012/01/enrollment/IDiscoveryService/Discover
-	</a:Action>
-	<a:MessageID>urn:uuid: 748132ec-a575-4329-b01b-6171a9cf8478</a:MessageID>
-	<a:ReplyTo>
-	  <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
-	</a:ReplyTo>
-	<a:To s:mustUnderstand="1">
-	  https://ENROLLTEST.CONTOSO.COM/EnrollmentServer/Discovery.svc
-	</a:To>
-  </s:Header>
-  <s:Body>
-	<Discover xmlns="http://schemas.microsoft.com/windows/management/2012/01/enrollment/">
-	  <request xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-		<EmailAddress>user@contoso.com</EmailAddress>
-		<OSEdition>3</OSEdition> <!--New -->
-		<RequestVersion>3.0</RequestVersion> <!-- Updated -->
-		<DeviceType>WindowsPhone</DeviceType> <!--Updated -->
-		<ApplicationVersion>10.0.0.0</ApplicationVersion>
-		<AuthPolicies>
-			<AuthPolicy>OnPremise</AuthPolicy>
-			<AuthPolicy>Federated</AuthPolicy>
-		</AuthPolicies>
-	  </request>
-	</Discover>
-  </s:Body>
+    xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+    <s:Header>
+        <a:Action s:mustUnderstand="1">
+            http://schemas.microsoft.com/windows/management/2012/01/enrollment/IDiscoveryService/Discover
+        </a:Action>
+        <a:MessageID>urn:uuid: 748132ec-a575-4329-b01b-6171a9cf8478</a:MessageID>
+        <a:ReplyTo>
+            <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+        </a:ReplyTo>
+        <a:To s:mustUnderstand="1">
+            https://ENROLLTEST.CONTOSO.COM/EnrollmentServer/Discovery.svc
+        </a:To>
+    </s:Header>
+    <s:Body>
+        <Discover xmlns="http://schemas.microsoft.com/windows/management/2012/01/enrollment/">
+            <request xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <EmailAddress>user@contoso.com</EmailAddress>
+                <OSEdition>3</OSEdition>
+                <!-- New -->
+                <RequestVersion>3.0</RequestVersion>
+                <!-- Updated -->
+                <DeviceType>WindowsPhone</DeviceType>
+                <!-- Updated -->
+                <ApplicationVersion>10.0.0.0</ApplicationVersion>
+                <AuthPolicies>
+                    <AuthPolicy>OnPremise</AuthPolicy>
+                    <AuthPolicy>Federated</AuthPolicy>
+                </AuthPolicies>
+            </request>
+        </Discover>
+    </s:Body>
 </s:Envelope>
 ```
 
@@ -142,7 +140,7 @@ When authentication policy is set to be Federated, Web Authentication Broker (WA
 > - Append the OS version as a parameter in the AuthenticationServiceURL.
 > - Parse out the OS version from the AuthenticiationServiceURL when the OS sends the response for authentication.
 
-A new XML tag, AuthenticationServiceUrl, is introduced in the DiscoveryResponse XML to allow the server to specify the WAB page start URL. For Federated authentication, this XML tag must exist.
+A new XML tag, **AuthenticationServiceUrl**, is introduced in the DiscoveryResponse XML to allow the server to specify the WAB page start URL. For Federated authentication, this XML tag must exist.
 
 > [!NOTE]
 > The enrollment client is agnostic with regards to the protocol flows for authenticating and returning the security token. While the server might prompt for user credentials directly or enter into a federation protocol with another server and directory service, the enrollment client is agnostic to all of this. To remain agnostic, all protocol flows pertaining to authentication that involve the enrollment client are passive, that is, browser-implemented.
@@ -168,7 +166,7 @@ After authentication is complete, the auth server should return an HTML form doc
 > To make an application compatible with strict Content Security Policy, it's usually necessary to make some changes to HTML templates and client-side code, add the policy header, and test that everything works properly once the policy is deployed.
 
 ```html
-HTTP/1.1 200 OK 
+HTTP/1.1 200 OK
 Content-Type: text/html; charset=UTF-8
 Vary: Accept-Encoding
 Content-Length: 556
@@ -200,35 +198,34 @@ The following example shows a response received from the discovery web service t
 
 ```xml
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
-   xmlns:a="http://www.w3.org/2005/08/addressing">
-  <s:Header>
-	<a:Action s:mustUnderstand="1">
-	  http://schemas.microsoft.com/windows/management/2012/01/enrollment/IDiscoveryService/DiscoverResponse
-	</a:Action>
-	<ActivityId>
-	  d9eb2fdd-e38a-46ee-bd93-aea9dc86a3b8
-	</ActivityId>
-	<a:RelatesTo>urn:uuid: 748132ec-a575-4329-b01b-6171a9cf8478</a:RelatesTo>
-  </s:Header>
-  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	 xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<DiscoverResponse
-	   xmlns="http://schemas.microsoft.com/windows/management/2012/01/enrollment">
-	  <DiscoverResult>
-		<AuthPolicy>Federated</AuthPolicy>
-		<EnrollmentVersion>3.0</EnrollmentVersion>
-		<EnrollmentPolicyServiceUrl>
-		  https://enrolltest.contoso.com/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
-		</EnrollmentPolicyServiceUrl>
-		<EnrollmentServiceUrl>
-		  https://enrolltest.contoso.com/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
-		</EnrollmentServiceUrl>
-		<AuthenticationServiceUrl>
-		  https://portal.manage.contoso.com/LoginRedirect.aspx
-		</AuthenticationServiceUrl>
-	  </DiscoverResult>
-	</DiscoverResponse>
-  </s:Body>
+    xmlns:a="http://www.w3.org/2005/08/addressing">
+    <s:Header>
+        <a:Action s:mustUnderstand="1">
+            http://schemas.microsoft.com/windows/management/2012/01/enrollment/IDiscoveryService/DiscoverResponse
+        </a:Action>
+        <ActivityId>
+            d9eb2fdd-e38a-46ee-bd93-aea9dc86a3b8
+        </ActivityId>
+        <a:RelatesTo>urn:uuid: 748132ec-a575-4329-b01b-6171a9cf8478</a:RelatesTo>
+    </s:Header>
+    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <DiscoverResponse xmlns="http://schemas.microsoft.com/windows/management/2012/01/enrollment">
+            <DiscoverResult>
+                <AuthPolicy>Federated</AuthPolicy>
+                <EnrollmentVersion>3.0</EnrollmentVersion>
+                <EnrollmentPolicyServiceUrl>
+                    https://enrolltest.contoso.com/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
+                </EnrollmentPolicyServiceUrl>
+                <EnrollmentServiceUrl>
+                    https://enrolltest.contoso.com/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
+                </EnrollmentServiceUrl>
+                <AuthenticationServiceUrl>
+                    https://portal.manage.contoso.com/LoginRedirect.aspx
+                </AuthenticationServiceUrl>
+            </DiscoverResult>
+        </DiscoverResponse>
+    </s:Body>
 </s:Envelope>
 ```
 
@@ -245,7 +242,7 @@ For Federated authentication policy, the security token credential is provided i
 
 As was described in the discovery response section, the inclusion of the `<wsse:BinarySecurityToken>` element is opaque to the enrollment client, and the client doesn't interpret the string, and the inclusion of the element is agreed upon by the security token authentication server (as identified in the `<AuthenticationServiceUrl>` element of `<DiscoveryResponse>` and the enterprise server.
 
-The `<wsse:BinarySecurityToken>` element contains a base64-encoded string. The enrollment client uses the security token received from the authentication server and base64-encodes the token to populate the `<wsse:BinarySecurityToken>` element. 
+The `<wsse:BinarySecurityToken>` element contains a base64-encoded string. The enrollment client uses the security token received from the authentication server and base64-encodes the token to populate the `<wsse:BinarySecurityToken>` element.
 
 - wsse:BinarySecurityToken/attributes/ValueType: The `<wsse:BinarySecurityToken>` ValueType attribute must be `http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken`.
 
@@ -255,42 +252,39 @@ The following example is an enrollment policy request with a received security t
 
 ```xml
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
-   xmlns:a="http://www.w3.org/2005/08/addressing"
-   xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
-   xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
-   xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
-   xmlns:ac="http://schemas.xmlsoap.org/ws/2006/12/authorization">
-  <s:Header>
-	<a:Action s:mustUnderstand="1">
-	  http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy/IPolicy/GetPolicies
-	</a:Action>
-	<a:MessageID>urn:uuid:72048B64-0F19-448F-8C2E-B4C661860AA0</a:MessageID>
-	<a:ReplyTo>
-	  <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
-	</a:ReplyTo>
-	<a:To s:mustUnderstand="1">
-	  https://enrolltest.contoso.com/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
-	</a:To>
-	<wsse:Security s:mustUnderstand="1">
-	  <wsse:BinarySecurityToken
-		 ValueType="http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken"
-		 EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
-		 xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
-	  B64EncodedSampleBinarySecurityToken
-	  </wsse:BinarySecurityToken>
-	</wsse:Security>
-  </s:Header>
-  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	 xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<GetPolicies
-	   xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy">
-	  <client>
-		<lastUpdate xsi:nil="true"/>
-		<preferredLanguage xsi:nil="true"/>
-	  </client>
-	  <requestFilter xsi:nil="true"/>
-	</GetPolicies>
-  </s:Body>
+    xmlns:a="http://www.w3.org/2005/08/addressing"
+    xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+    xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+    xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
+    xmlns:ac="http://schemas.xmlsoap.org/ws/2006/12/authorization">
+    <s:Header>
+        <a:Action s:mustUnderstand="1">
+            http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy/IPolicy/GetPolicies
+        </a:Action>
+        <a:MessageID>urn:uuid:72048B64-0F19-448F-8C2E-B4C661860AA0</a:MessageID>
+        <a:ReplyTo>
+            <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+        </a:ReplyTo>
+        <a:To s:mustUnderstand="1">
+             https://enrolltest.contoso.com/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
+        </a:To>
+        <wsse:Security s:mustUnderstand="1">
+            <wsse:BinarySecurityToken ValueType="http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
+                xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+                B64EncodedSampleBinarySecurityToken
+            </wsse:BinarySecurityToken>
+        </wsse:Security>
+    </s:Header>
+    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <GetPolicies xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy">
+            <client>
+                <lastUpdate xsi:nil="true"/>
+                <preferredLanguage xsi:nil="true"/>
+            </client>
+            <requestFilter xsi:nil="true"/>
+        </GetPolicies>
+    </s:Body>
 </s:Envelope>
 ```
 
@@ -499,8 +493,8 @@ Here's a sample RSTR message and a sample of OMA client provisioning XML within 
 The following example shows the enrollment web service response.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
-   xmlns:a="http://www.w3.org/2005/08/addressing" 
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+   xmlns:a="http://www.w3.org/2005/08/addressing"
    xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
    <s:Header>
       <a:Action s:mustUnderstand="1" >
@@ -516,7 +510,7 @@ The following example shows the enrollment web service response.
       </o:Security>
    </s:Header>
    <s:Body>
-      <RequestSecurityTokenResponseCollection 
+      <RequestSecurityTokenResponseCollection
          xmlns="http://docs.oasis-open.org/ws-sx/ws-trust/200512">
          <RequestSecurityTokenResponse>
             <TokenType>
@@ -524,7 +518,7 @@ The following example shows the enrollment web service response.
             </TokenType>
              <DispositionMessage xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollment"/>
              <RequestedSecurityToken>
-               <BinarySecurityToken 
+               <BinarySecurityToken
                   ValueType="http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc"
                   EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
                   xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
@@ -552,7 +546,7 @@ The following code shows sample provisioning XML (presented in the preceding pac
       </characteristic>
    </characteristic>
    <characteristic type="CertificateStore">
-      <characteristic type="My" >      
+      <characteristic type="My" >
          <characteristic type="User">
             <characteristic type="Encoded Root Cert Hash Inserted Here">
                <parm name="EncodedCertificate" value="B64EncodedCertInsertedHere" />
@@ -618,15 +612,15 @@ The following code shows sample provisioning XML (presented in the preceding pac
 ```
 
 > [!NOTE]
-> 
+>
 > - `<Parm name>` and `<characteristic type=>` elements in the w7 APPLICATION CSP XML are case sensitive and must be all uppercase.
-> 
+>
 > - In w7 APPLICATION characteristic, both CLIENT and APPSRV credentials should be provided in XML.
-> 
+>
 > - Detailed descriptions of these settings are located in the [Enterprise settings, policies and app management](windows-mdm-enterprise-settings.md) section of this document.
-> 
+>
 > - The **PrivateKeyContainer** characteristic is required and must be present in the Enrollment provisioning XML by the enrollment. Other important settings are the **PROVIDER-ID**, **NAME**, and **ADDR** parameter elements, which need to contain the unique ID and NAME of your DM provider and the address where the device can connect for configuration provisioning. The ID and NAME can be arbitrary values, but they must be unique.
-> 
+>
 > - Also important is SSLCLIENTCERTSEARCHCRITERIA, which is used for selecting the certificate to be used for client authentication. The search is based on the subject attribute of the signed user certificate.
-> 
+>
 > - CertificateStore/WSTEP enables certificate renewal. If the server does not support it, do not set it.

@@ -3,10 +3,10 @@ title: Manage Windows devices in your organization - transitioning to modern man
 description: This article offers strategies for deploying and managing Windows devices, including deploying Windows in a mixed environment.
 ms.prod: windows-client
 ms.localizationpriority: medium
-ms.date: 06/03/2022
+ms.date: 04/05/2023
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.topic: overview
 ms.technology: itpro-manage
