@@ -35,7 +35,8 @@ The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC use
 
 ## Microsoft Intune
 
-Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later. [Update rings](/mem/intune/protect/windows-10-update-rings) can be used for quality updates for Windows 10 Enterprise LTSC 2019 clients. However, update rings can't be used for feature updates since they aren't supported by Windows Update for Business. 
+Microsoft Intune supports Windows 10 Enterprise LTSC 2019 with the following exception:
+- [Update rings](/mem/intune/protect/windows-10-update-rings) can't be used for feature updates since they aren't supported by Windows Update for Business. Update rings can be used for quality updates for Windows 10 Enterprise LTSC 2019 clients.
 
 ## Security
 
