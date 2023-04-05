@@ -37,40 +37,55 @@ Windows Update for Business reports uses the following Delivery Optimization ter
    - Simple Mode (99)
    - Bypass (100), deprecated in Windows 11
 - **Bandwidth savings**: Out of the total consumed bandwidth, the percentage of bandwidth that was downloaded from either LAN or Group peers, and from Microsoft Connected Cache (MCC)
-   - If bandwidth savings are <= 60% a *Warning* icon is displayed
-   - When bandwidth savings are <10% an *Error* icon is displayed.
+   - If bandwidth savings are <= 60%, a *Warning* icon is displayed
+   - When bandwidth savings are <10%, an *Error* icon is displayed.
 - **Configurations**: Based on the DownloadMode configuration set via MDM, Group Policy, or end-user via the user interface.
 - **P2P Device Count**: The device count is determined by the number of devices that have received bytes from peers, for supported content types.
-- **Microsoft Connected Cache (MCC)**: Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. [Learn more](https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache) about Microsoft Connected Cache.
+- **Microsoft Connected Cache (MCC)**: Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. For more information, see [Microsoft Connected Cache overview](../do/waas-microsoft-connected-cache.md).
 - **MCC Device Count**: The device count is determined by the number of devices that have received bytes from the cache server, for supported content types.
 - **Total # of Devices**: The total number of devices with activity in last 28 days.
 - **LAN Bytes**: Bytes delivered from LAN peers.
-- **Group Bytes**: Bytes from Group peers. If a device is using Group DownloadMode, Delivery Optimization will first look for peers on the LAN and then in the Group. Therefore, if bytes are delivered from LAN peers, they will be calculated in 'LAN Bytes'.
+- **Group Bytes**: Bytes from Group peers. If a device is using Group DownloadMode, Delivery Optimization will first look for peers on the LAN and then in the Group. Therefore, if bytes are delivered from LAN peers, they'll be calculated in 'LAN Bytes'.
 - **CDN Bytes**: Bytes delivered from Content Delivery Network (CDN).
 - **City**: City is determined based on the location of the device where the maximum amount of data is downloaded.
 - **Country**: Country is determined based on the location of the device where the maximum amount of data is downloaded.
 - **ISP**: ISP is determined based on the ISP delivering the maximum bytes to the device.
 
 ## Calculations for Delivery Optimization
-There are sevaral calculated values that appear on the Delivery Optimization report. The table used for each calculation is listed for each, in parenthesis.
 
-**Effiency (%) Calculations** 
-- Bandwidth Savings (BW SAV%) = BytesFromPeers + BytesFromGroupPeers + BytesFromCache)/
-(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN + BytesFromCache) * 100.0 (UCDOAggregatedStatus table)
-- % P2P Efficiency = (BytesFromPeers + BytesFromGroupPeers)/(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) * 100 (UCDOStatus table)
-- % MCC Efficiency = BytesFromCache/(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) * 100 (UCDOStatus table)
+There are several calculated values that appear on the Delivery Optimization report. Listed below each calculation is the table that's used for it:
 
-**Bytes Calculations** 
-- TotalBytes = BytesFromCDN + BytesFromEnterpriseCache + BytesFromPeers + BytesFromGroupPeers (UCDOAggregatedStatus table)
-- BytesFromCDN = BytesFromCDN - BytesFromEnterpriseCache (UCDOAggregatedStatus table)
-- BytesFromPeers = BytesFromLAN (UCDOAggregatedStatus table)
-- BytesFromGroupPeers = BytesFromGroupPeers (UCDOAggregatedStatus table)
-- BytesFromCache = BytesFromCache (UCDOAggregatedStatus table)
+**Efficiency (%) Calculations**:
+ 
+- Bandwidth Savings (BW SAV%) = (BytesFromPeers + BytesFromGroupPeers + BytesFromCache)/
+(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN + BytesFromCache) * 100.0
+  - [UCDOAggregatedStatus](wufb-reports-schema-ucdostatus.md) table
+- % P2P Efficiency = (BytesFromPeers + BytesFromGroupPeers)/(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) * 100
+  - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
+- % MCC Efficiency = BytesFromCache/(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) * 100 
+  - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
 
-**Volume Calculations**
-- Volume by P2P = BytesFromPeers + BytesFromGroupPeers (UCDOStatus table)
-- Volume by MCC = BytesFromCache (UCDOStatus table)
-- Volume by CDN = BytesFrom CDN (UCDOStatus table)
+**Bytes Calculations**:
+
+- TotalBytes = BytesFromCDN + BytesFromEnterpriseCache + BytesFromPeers + BytesFromGroupPeers
+  - [UCDOAggregatedStatus](wufb-reports-schema-ucdostatus.md) table
+- BytesFromCDN = BytesFromCDN - BytesFromEnterpriseCache 
+  - [UCDOAggregatedStatus](wufb-reports-schema-ucdostatus.md) table
+- BytesFromPeers = BytesFromLAN
+  - [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md) table
+- BytesFromGroupPeers = BytesFromGroupPeers
+  - [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md) table
+- BytesFromCache = BytesFromCache
+  - [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md) table
+
+**Volume Calculations**:
+
+- Volume by P2P = BytesFromPeers + BytesFromGroupPeers
+  - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
+- Volume by MCC = BytesFromCache
+  - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
+- Volume by CDN = BytesFrom CDN
+  - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
 
 ## Mapping GroupID
 
@@ -81,18 +96,20 @@ $text = "<myEncodedGroupID>" ;
 
 $hashObj = [System.Security.Cryptography.HashAlgorithm]::Create('sha256') ; $dig = $hashObj.ComputeHash([System.Text.Encoding]::Unicode.GetBytes($text)) ; $digB64 = [System.Convert]::ToBase64String($dig) ; Write-Host "$text ==> $digB64"
 ```
-In addition, you can see the both the encoded and decoded GroupIDs in the Delivery Optimization logs. 
+
+In addition, you can see both the encoded and decoded GroupIDs in the Delivery Optimization logs.
 
 ```powershell
-powershell Get-DeliveryOptimizationLog -Flush | Set-Content C:\dosvc.log
+Get-DeliveryOptimizationLog -Flush | Set-Content C:\dosvc.log
 ```
-```code
 
-These two lines are together in verbose logs:
+The below two lines are together in verbose logs:
 
-2023-02-15T12:33:11.3811337Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Using groupID = **<myEncodedGroupId>**
-2023-02-15T12:33:11.3811432Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Hashed groupID = **<myDecodedGroupId>**
+```text
+2023-02-15T12:33:11.3811337Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Using groupID = **<myEncodedGroupId>**
+2023-02-15T12:33:11.3811432Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Hashed groupID = **<myDecodedGroupId>**
 ```
+
 ## Sample queries
 
 You can use the data in [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md)
@@ -100,7 +117,7 @@ and [UCDOStatus](wufb-reports-schema-ucdostatus.md) to create your own queries. 
 
 ### Example UCDOAggregatedStatus table query
 
-The following is the query used to display the total bandwidth savings % value:
+The following query is used to display the total bandwidth savings % value:
 
 ```kusto
 UCDOAggregatedStatus| where TimeGenerated == _SnapshotTime
@@ -108,9 +125,10 @@ UCDOAggregatedStatus| where TimeGenerated == _SnapshotTime
 | summarize LocalSources_BWSAV = round((sum(0.0 + LocalSourceBytes)/ sum(LocalSourceBytes+BytesFromCDN)) * 100.0 ,2)
 | extend Title = "BW SAV%" , SubTitle = "Local Sources"
 ```
+
 ### Example UCDOStatus table query
 
-The following is the query used to display the Top 10 GroupIDs:
+The following query is used to display the Top 10 GroupIDs:
 
 ```kusto
 UCDOStatus  | where TimeGenerated == _SnapshotTime
@@ -130,7 +148,7 @@ DeviceCount = count_distinct(GlobalDeviceId) by GroupID | top 10 by DeviceCount 
 Data is available for the last 28 days.
 
 - **Data is showing as 'Unknown', what does that mean?**
-You may see data in the report listed as 'Unknown'. This indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.
+You may see data in the report listed as 'Unknown'. This status indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.
 
 - **How is the 'Top 10' groups identified?**
 The top groups are represented by the number of devices in a particular group, for any of the four group types (GroupID, City, Country, and ISP).
