@@ -4,7 +4,7 @@ description: Learn more about the ADMX_MMC Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,7 +44,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Permits or prohibits use of this snap-in.
 
-- If you enable this setting, the snap-in is permitted. If you disable the setting, the snap-in is prohibited.
+If you enable this setting, the snap-in is permitted. If you disable the setting, the snap-in is prohibited.
 
 If this setting is not configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
@@ -114,7 +114,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- Description-Source-ADMX -->
 Permits or prohibits use of this snap-in.
 
-- If you enable this setting, the snap-in is permitted. If you disable the setting, the snap-in is prohibited.
+If you enable this setting, the snap-in is permitted. If you disable the setting, the snap-in is prohibited.
 
 If this setting is not configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
@@ -184,7 +184,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- Description-Source-ADMX -->
 Permits or prohibits use of this snap-in.
 
-- If you enable this setting, the snap-in is permitted. If you disable the setting, the snap-in is prohibited.
+If you enable this setting, the snap-in is permitted. If you disable the setting, the snap-in is prohibited.
 
 If this setting is not configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
@@ -260,7 +260,7 @@ As a result, users cannot create console files or add or remove snap-ins. Also, 
 
 This setting permits users to open MMC user-mode console files, such as those on the Administrative Tools menu in Windows 2000 Server family or Windows Server 2003 family. However, users cannot open a blank MMC console window on the Start menu. (To open the MMC, click Start, click Run, and type mmc.) Users also cannot open a blank MMC console window from a command prompt.
 
-- If you disable this setting or do not configure it, users can enter author mode and open author-mode console files.
+If you disable this setting or do not configure it, users can enter author mode and open author-mode console files.
 <!-- MMC_Restrict_Author-Description-End -->
 
 <!-- MMC_Restrict_Author-Editable-Begin -->

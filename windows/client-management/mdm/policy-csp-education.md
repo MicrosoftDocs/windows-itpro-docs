@@ -4,7 +4,7 @@ description: Learn more about the Education Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -39,6 +39,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app.
 - If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app.
+
 - If you enable or don't configure this policy setting, users will be able to access graphing functionality.
 <!-- AllowGraphingCalculator-Description-End -->
 
@@ -102,7 +103,7 @@ This policy setting allows you to control whether graphing functionality is avai
 
 <!-- DefaultPrinterName-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy sets user's default printer
+This policy sets user's default printer.
 <!-- DefaultPrinterName-Description-End -->
 
 <!-- DefaultPrinterName-Editable-Begin -->
@@ -144,6 +145,7 @@ The policy value is expected to be the name (network host name) of an installed 
 <!-- Description-Source-DDF -->
 This policy setting allows you to control whether EDU-specific theme packs are available in Settings > Personalization.
 - If you disable or don't configure this policy setting, EDU-specific theme packs will not be included.
+
 - If you enable this policy setting, users will be able to personalize their devices with EDU-specific themes.
 <!-- EnableEduThemes-Description-End -->
 
@@ -193,7 +195,7 @@ This policy setting allows you to control whether EDU-specific theme packs are a
 
 <!-- IsEducationEnvironment-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows tenant to control whether to declare this OS as an education environment
+This policy setting allows tenant to control whether to declare this OS as an education environment.
 <!-- IsEducationEnvironment-Description-End -->
 
 <!-- IsEducationEnvironment-Editable-Begin -->
@@ -255,7 +257,7 @@ This setting does not delete printers that users have already added. However, if
 > [!NOTE]
 > You can use printer permissions to restrict the use of printers without specifying a setting. In the Printers folder, right-click a printer, click Properties, and then click the Security tab.
 
-If this policy is disabled, or not configured, users can add printers using the methods described above.
+- If this policy is disabled, or not configured, users can add printers using the methods described above.
 <!-- PreventAddingNewPrinters-Description-End -->
 
 <!-- PreventAddingNewPrinters-Editable-Begin -->
@@ -318,7 +320,7 @@ If this policy is disabled, or not configured, users can add printers using the 
 
 <!-- PrinterNames-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy provisions per-user network printers
+This policy provisions per-user network printers.
 <!-- PrinterNames-Description-End -->
 
 <!-- PrinterNames-Editable-Begin -->

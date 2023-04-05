@@ -4,7 +4,7 @@ description: Learn more about the Notifications Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -242,6 +242,67 @@ No reboots or service restarts are required for this policy setting to take effe
 
 <!-- DisallowTileNotification-End -->
 
+<!-- EnableExpandedToastNotifications-Begin -->
+## EnableExpandedToastNotifications
+
+<!-- EnableExpandedToastNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1620] and later |
+<!-- EnableExpandedToastNotifications-Applicability-End -->
+
+<!-- EnableExpandedToastNotifications-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Notifications/EnableExpandedToastNotifications
+```
+<!-- EnableExpandedToastNotifications-OmaUri-End -->
+
+<!-- EnableExpandedToastNotifications-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting turns on multiple expanded toast notifications in action center.
+
+- If you enable this policy setting, the first three notifications of each application will be expanded by default in action center.
+- If you disable or do not configure this policy setting, only the first notification of each application will be expanded by default in action center. Windows 10 only. This will be immediately deprecated for Windows 11. No reboots or service restarts are required for this policy setting to take effect.
+<!-- EnableExpandedToastNotifications-Description-End -->
+
+<!-- EnableExpandedToastNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableExpandedToastNotifications-Editable-End -->
+
+<!-- EnableExpandedToastNotifications-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableExpandedToastNotifications-DFProperties-End -->
+
+<!-- EnableExpandedToastNotifications-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disable multiple expanded toasts in action center. |
+| 1 | Enable multiple expanded toasts in action center. |
+<!-- EnableExpandedToastNotifications-AllowedValues-End -->
+
+<!-- EnableExpandedToastNotifications-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ExpandedToastNotifications |
+| Path | WPN > AT > StartMenu > NotificationsCategory |
+<!-- EnableExpandedToastNotifications-GpMapping-End -->
+
+<!-- EnableExpandedToastNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableExpandedToastNotifications-Examples-End -->
+
+<!-- EnableExpandedToastNotifications-End -->
+
 <!-- WnsEndpoint-Begin -->
 ## WnsEndpoint
 
@@ -258,8 +319,8 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- WnsEndpoint-OmaUri-End -->
 
 <!-- WnsEndpoint-Description-Begin -->
-<!-- Description-Source-DDF -->
-FQDN for the WNS endpoint
+<!-- Description-Source-ADMX -->
+This policy sets a special WNS FQDN for specific environments.
 <!-- WnsEndpoint-Description-End -->
 
 <!-- WnsEndpoint-Editable-Begin -->
@@ -289,7 +350,7 @@ If you disable or don't configure this setting, the push notifications will conn
 |:--|:--|
 | Name | WnsEndpoint_Policy |
 | Friendly Name | Enables group policy for the WNS FQDN |
-| Element Name | FQDN for WNS |
+| Element Name | FQDN for WNS. |
 | Location | Computer Configuration |
 | Path | Start Menu and Taskbar > Notifications |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications |

@@ -11,14 +11,12 @@
     href: waas-delivery-optimization-faq.yml    
   - name: Configure Delivery Optimization for Windows
     items:
-    - name: Windows Delivery Optimization settings
-      href: waas-delivery-optimization-setup.md#recommended-delivery-optimization-settings
+    - name: Set up Delivery Optimization for Windows
+      href: waas-delivery-optimization-setup.md
     - name: Configure Delivery Optimization settings using Microsoft Intune
       href: /mem/intune/configuration/delivery-optimization-windows
   - name: Resources for Delivery Optimization
     items:
-    - name: Set up Delivery Optimization for Windows
-      href: waas-delivery-optimization-setup.md
     - name: Delivery Optimization reference
       href: waas-delivery-optimization-reference.md
     - name: Delivery Optimization client-service communication

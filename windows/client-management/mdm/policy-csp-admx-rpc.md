@@ -4,7 +4,7 @@ description: Learn more about the ADMX_RPC Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -273,7 +273,7 @@ This policy setting determines whether the RPC Runtime maintains RPC state infor
 
 - If you enable this policy setting, you can use the drop-down box to determine which systems maintain RPC state information.
 
-- "None" indicates that the system does not maintain any RPC state information
+- "None" indicates that the system does not maintain any RPC state information.
 
 > [!NOTE]
 > Because the basic state information required for troubleshooting has a negligible effect on performance and uses only about 4K of memory, this setting is not recommended for most installations.

@@ -1,6 +1,6 @@
 ---
-title: Windows quality update signals
-description: This article explains the Windows quality update signals
+title: Windows quality update release signals
+description: This article explains the Windows quality update release signals
 ms.date: 01/24/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
@@ -14,7 +14,7 @@ ms.reviewer: hathind
 
 # Windows quality update signals
 
-Windows Autopatch monitors a specific set of signals and aims to release quality updates both quickly and safely. The service doesn't comprehensively monitor every use case in Windows.
+Windows Autopatch monitors a specific set of signals and aims to release the monthly security update both quickly and safely. The service doesn't comprehensively monitor every use case in Windows.
 
 If there's a scenario that is critical to your business, which isn't monitored by Windows Autopatch, you're responsible for testing and taking any follow-up actions, like requesting to pause the release.
 
@@ -24,9 +24,9 @@ Before being released to the Test ring, Windows Autopatch reviews several data s
 
 | Pre-release signal | Description |
 | ----- | ----- |
-| Windows Payload Review | The contents of the B release are reviewed to help focus your update testing on areas that have changed. If any relevant changes are detected, a [customer advisory](../operate/windows-autopatch-windows-quality-update-communications.md#communications-during-release) will be sent out. |
-| C-Release Review - Internal Signals | Windows Autopatch reviews active incidents associated with the previous C release to understand potential risks in the B release. |
-| C-Release Review - Social Signals | Windows Autopatch monitors social signals to better understand potential risks associated with the B release. |
+| Windows Payload Review | The contents of the monthly security update release are reviewed to help focus your update testing on areas that have changed. If any relevant changes are detected, a [customer advisory](../operate/windows-autopatch-windows-quality-update-communications.md#communications-during-release) will be sent out. |
+| Optional non-security preview release review - Internal Signals | Windows Autopatch reviews active incidents associated with the previous optional non-security preview release to understand potential risks in the monthly security update release. |
+| Optional non-security preview release review  - Social Signals | Windows Autopatch monitors social signals to better understand potential risks associated with the monthly security update release. |
 
 ## Early signals
 

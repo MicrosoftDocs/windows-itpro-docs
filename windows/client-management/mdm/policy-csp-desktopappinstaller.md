@@ -4,7 +4,7 @@ description: Learn more about the DesktopAppInstaller Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -210,6 +210,57 @@ Users will still be able to execute the *winget* command. The default help will 
 
 <!-- EnableAppInstaller-End -->
 
+<!-- EnableBypassCertificatePinningForMicrosoftStore-Begin -->
+## EnableBypassCertificatePinningForMicrosoftStore
+
+<!-- EnableBypassCertificatePinningForMicrosoftStore-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+<!-- EnableBypassCertificatePinningForMicrosoftStore-Applicability-End -->
+
+<!-- EnableBypassCertificatePinningForMicrosoftStore-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DesktopAppInstaller/EnableBypassCertificatePinningForMicrosoftStore
+```
+<!-- EnableBypassCertificatePinningForMicrosoftStore-OmaUri-End -->
+
+<!-- EnableBypassCertificatePinningForMicrosoftStore-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- EnableBypassCertificatePinningForMicrosoftStore-Description-End -->
+
+<!-- EnableBypassCertificatePinningForMicrosoftStore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableBypassCertificatePinningForMicrosoftStore-Editable-End -->
+
+<!-- EnableBypassCertificatePinningForMicrosoftStore-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableBypassCertificatePinningForMicrosoftStore-DFProperties-End -->
+
+<!-- EnableBypassCertificatePinningForMicrosoftStore-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | EnableBypassCertificatePinningForMicrosoftStore |
+| ADMX File Name | DesktopAppInstaller.admx |
+<!-- EnableBypassCertificatePinningForMicrosoftStore-AdmxBacked-End -->
+
+<!-- EnableBypassCertificatePinningForMicrosoftStore-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableBypassCertificatePinningForMicrosoftStore-Examples-End -->
+
+<!-- EnableBypassCertificatePinningForMicrosoftStore-End -->
+
 <!-- EnableDefaultSource-Begin -->
 ## EnableDefaultSource
 
@@ -392,6 +443,57 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 <!-- EnableHashOverride-Examples-End -->
 
 <!-- EnableHashOverride-End -->
+
+<!-- EnableLocalArchiveMalwareScanOverride-Begin -->
+## EnableLocalArchiveMalwareScanOverride
+
+<!-- EnableLocalArchiveMalwareScanOverride-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+<!-- EnableLocalArchiveMalwareScanOverride-Applicability-End -->
+
+<!-- EnableLocalArchiveMalwareScanOverride-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DesktopAppInstaller/EnableLocalArchiveMalwareScanOverride
+```
+<!-- EnableLocalArchiveMalwareScanOverride-OmaUri-End -->
+
+<!-- EnableLocalArchiveMalwareScanOverride-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- EnableLocalArchiveMalwareScanOverride-Description-End -->
+
+<!-- EnableLocalArchiveMalwareScanOverride-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableLocalArchiveMalwareScanOverride-Editable-End -->
+
+<!-- EnableLocalArchiveMalwareScanOverride-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableLocalArchiveMalwareScanOverride-DFProperties-End -->
+
+<!-- EnableLocalArchiveMalwareScanOverride-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | EnableLocalArchiveMalwareScanOverride |
+| ADMX File Name | DesktopAppInstaller.admx |
+<!-- EnableLocalArchiveMalwareScanOverride-AdmxBacked-End -->
+
+<!-- EnableLocalArchiveMalwareScanOverride-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableLocalArchiveMalwareScanOverride-Examples-End -->
+
+<!-- EnableLocalArchiveMalwareScanOverride-End -->
 
 <!-- EnableLocalManifestFiles-Begin -->
 ## EnableLocalManifestFiles

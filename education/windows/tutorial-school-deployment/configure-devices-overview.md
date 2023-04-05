@@ -3,8 +3,6 @@ title: Configure devices with Microsoft Intune
 description: Learn how to configure policies and applications in preparation for device deployment.
 ms.date: 08/31/2022
 ms.topic: tutorial
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Configure settings and applications with Microsoft Intune

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Taskbar Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -416,7 +416,7 @@ This policy setting allows you to remove the volume control icon from the system
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off feature advertisement balloon notifications.
 
-- If you enable this policy setting, certain notification balloons that are marked as feature advertisements are not shown.
+If you enable this policy setting, certain notification balloons that are marked as feature advertisements are not shown.
 
 If you disable do not configure this policy setting, feature advertisement balloons are shown.
 <!-- NoBalloonFeatureAdvertisements-Description-End -->

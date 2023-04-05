@@ -4,7 +4,7 @@ description: Learn more about the NetworkListManager Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowedTlsAuthenticationEndpoints-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
 <!-- AllowedTlsAuthenticationEndpoints-Applicability-End -->
 
 <!-- AllowedTlsAuthenticationEndpoints-OmaUri-Begin -->
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowedTlsAuthenticationEndpoints-Description-Begin -->
 <!-- Description-Source-DDF -->
-List of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
+List of URLs (seperated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
 <!-- AllowedTlsAuthenticationEndpoints-Description-End -->
 
 <!-- AllowedTlsAuthenticationEndpoints-Editable-Begin -->
@@ -79,7 +79,7 @@ Invoke-WebRequest -Uri https://nls.corp.contoso.com -Method get -UseBasicParsing
 <!-- ConfiguredTlsAuthenticationNetworkName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
 <!-- ConfiguredTlsAuthenticationNetworkName-Applicability-End -->
 
 <!-- ConfiguredTlsAuthenticationNetworkName-OmaUri-Begin -->
@@ -90,7 +90,7 @@ Invoke-WebRequest -Uri https://nls.corp.contoso.com -Method get -UseBasicParsing
 
 <!-- ConfiguredTlsAuthenticationNetworkName-Description-Begin -->
 <!-- Description-Source-DDF -->
-The string will be used to name the network authenticated against one of the endpoints listed in AllowedTlsAuthenticationEndpoints policy
+The string will be used to name the network authenticated against one of the endpoints listed in AllowedTlsAuthenticationEndpoints policy.
 <!-- ConfiguredTlsAuthenticationNetworkName-Description-End -->
 
 <!-- ConfiguredTlsAuthenticationNetworkName-Editable-Begin -->

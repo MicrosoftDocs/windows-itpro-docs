@@ -5,19 +5,19 @@ keywords: billing profile, invoices, charges, managed charges
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: trudyha
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 07/21/2021
 ms.reviewer: 
-manager: dansimp
 ---
 
 # Understand billing profiles
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 For commercial customers purchasing software or hardware products from Microsoft using a Microsoft customer agreement, billing profiles let you customize what products are included on your invoice, and how you pay your invoices. 
 

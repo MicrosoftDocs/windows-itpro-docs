@@ -72,11 +72,9 @@ There are several ways to get and use security baselines:
 
 [![Microsoft Security Guidance Blog.](./../images/community.png)](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
 
-## Related videos
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?show=defrag-tools&ep=174-security-baseline-policy-analyzer-lgpo]
 
 ## See also
 
 - [Microsoft Security Guidance Blog](/archive/blogs/secguide/)
 - [Microsoft Security Compliance Toolkit](https://www.microsoft.com/download/details.aspx?id=55319)
+- [Security Baseline Policy Analyzer](https://learn-video.azurefd.net/vod/player?show=defrag-tools&ep=174-security-baseline-policy-analyzer-lgpo)

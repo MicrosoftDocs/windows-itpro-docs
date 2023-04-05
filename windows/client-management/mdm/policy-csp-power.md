@@ -4,7 +4,7 @@ description: Learn more about the Power Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -332,9 +332,11 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- EnergySaverBatteryThresholdOnBattery-OmaUri-End -->
 
 <!-- EnergySaverBatteryThresholdOnBattery-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
+
 - If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level.
+
 - If you disable or do not configure this policy setting, users control this setting.
 <!-- EnergySaverBatteryThresholdOnBattery-Description-End -->
 
@@ -389,9 +391,11 @@ This policy setting allows you to specify battery charge level at which Energy S
 <!-- EnergySaverBatteryThresholdPluggedIn-OmaUri-End -->
 
 <!-- EnergySaverBatteryThresholdPluggedIn-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
+
 - If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level.
+
 - If you disable or do not configure this policy setting, users control this setting.
 <!-- EnergySaverBatteryThresholdPluggedIn-Description-End -->
 
@@ -688,8 +692,17 @@ This policy setting specifies whether or not the user is prompted for a password
 <!-- SelectLidCloseActionOnBattery-OmaUri-End -->
 
 <!-- SelectLidCloseActionOnBattery-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action.
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
+
+Possible actions include:
+-Take no action
+-Sleep
+-Hibernate
+-Shut down
+
+- If you enable this policy setting, you must select the desired action.
+
 - If you disable this policy setting or do not configure it, users can see and change this setting.
 <!-- SelectLidCloseActionOnBattery-Description-End -->
 
@@ -725,7 +738,7 @@ This policy setting specifies the action that Windows takes when a user closes t
 |:--|:--|
 | Name | DCSystemLidAction_2 |
 | Friendly Name | Select the lid switch action (on battery) |
-| Element Name | Lid Switch Action |
+| Element Name | Lid Switch Action. |
 | Location | Computer Configuration |
 | Path | System > Power Management > Button Settings |
 | Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\5CA83367-6E45-459F-A27B-476B1D01C936 |
@@ -754,8 +767,17 @@ This policy setting specifies the action that Windows takes when a user closes t
 <!-- SelectLidCloseActionPluggedIn-OmaUri-End -->
 
 <!-- SelectLidCloseActionPluggedIn-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action.
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
+
+Possible actions include:
+-Take no action
+-Sleep
+-Hibernate
+-Shut down
+
+- If you enable this policy setting, you must select the desired action.
+
 - If you disable this policy setting or do not configure it, users can see and change this setting.
 <!-- SelectLidCloseActionPluggedIn-Description-End -->
 
@@ -791,7 +813,7 @@ This policy setting specifies the action that Windows takes when a user closes t
 |:--|:--|
 | Name | ACSystemLidAction_2 |
 | Friendly Name | Select the lid switch action (plugged in) |
-| Element Name | Lid Switch Action |
+| Element Name | Lid Switch Action. |
 | Location | Computer Configuration |
 | Path | System > Power Management > Button Settings |
 | Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\5CA83367-6E45-459F-A27B-476B1D01C936 |
@@ -820,8 +842,17 @@ This policy setting specifies the action that Windows takes when a user closes t
 <!-- SelectPowerButtonActionOnBattery-OmaUri-End -->
 
 <!-- SelectPowerButtonActionOnBattery-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies the action that Windows takes when a user presses the power button. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action.
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when a user presses the power button.
+
+Possible actions include:
+-Take no action
+-Sleep
+-Hibernate
+-Shut down
+
+- If you enable this policy setting, you must select the desired action.
+
 - If you disable this policy setting or do not configure it, users can see and change this setting.
 <!-- SelectPowerButtonActionOnBattery-Description-End -->
 
@@ -857,7 +888,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 |:--|:--|
 | Name | DCPowerButtonAction_2 |
 | Friendly Name | Select the Power button action (on battery) |
-| Element Name | Power Button Action |
+| Element Name | Power Button Action. |
 | Location | Computer Configuration |
 | Path | System > Power Management > Button Settings |
 | Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\7648EFA3-DD9C-4E3E-B566-50F929386280 |
@@ -886,8 +917,17 @@ This policy setting specifies the action that Windows takes when a user presses 
 <!-- SelectPowerButtonActionPluggedIn-OmaUri-End -->
 
 <!-- SelectPowerButtonActionPluggedIn-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies the action that Windows takes when a user presses the power button. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action.
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when a user presses the power button.
+
+Possible actions include:
+-Take no action
+-Sleep
+-Hibernate
+-Shut down
+
+- If you enable this policy setting, you must select the desired action.
+
 - If you disable this policy setting or do not configure it, users can see and change this setting.
 <!-- SelectPowerButtonActionPluggedIn-Description-End -->
 
@@ -923,7 +963,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 |:--|:--|
 | Name | ACPowerButtonAction_2 |
 | Friendly Name | Select the Power button action (plugged in) |
-| Element Name | Power Button Action |
+| Element Name | Power Button Action. |
 | Location | Computer Configuration |
 | Path | System > Power Management > Button Settings |
 | Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\7648EFA3-DD9C-4E3E-B566-50F929386280 |
@@ -952,8 +992,17 @@ This policy setting specifies the action that Windows takes when a user presses 
 <!-- SelectSleepButtonActionOnBattery-OmaUri-End -->
 
 <!-- SelectSleepButtonActionOnBattery-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies the action that Windows takes when a user presses the sleep button. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action.
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when a user presses the sleep button.
+
+Possible actions include:
+-Take no action
+-Sleep
+-Hibernate
+-Shut down
+
+- If you enable this policy setting, you must select the desired action.
+
 - If you disable this policy setting or do not configure it, users can see and change this setting.
 <!-- SelectSleepButtonActionOnBattery-Description-End -->
 
@@ -989,7 +1038,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 |:--|:--|
 | Name | DCSleepButtonAction_2 |
 | Friendly Name | Select the Sleep button action (on battery) |
-| Element Name | Sleep Button Action |
+| Element Name | Sleep Button Action. |
 | Location | Computer Configuration |
 | Path | System > Power Management > Button Settings |
 | Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\96996BC0-AD50-47EC-923B-6F41874DD9EB |
@@ -1018,8 +1067,17 @@ This policy setting specifies the action that Windows takes when a user presses 
 <!-- SelectSleepButtonActionPluggedIn-OmaUri-End -->
 
 <!-- SelectSleepButtonActionPluggedIn-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies the action that Windows takes when a user presses the sleep button. Possible actions include: 0 - Take no action 1 - Sleep 2 - Hibernate 3 - Shut down If you enable this policy setting, you must select the desired action.
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when a user presses the sleep button.
+
+Possible actions include:
+-Take no action
+-Sleep
+-Hibernate
+-Shut down
+
+- If you enable this policy setting, you must select the desired action.
+
 - If you disable this policy setting or do not configure it, users can see and change this setting.
 <!-- SelectSleepButtonActionPluggedIn-Description-End -->
 
@@ -1055,7 +1113,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 |:--|:--|
 | Name | ACSleepButtonAction_2 |
 | Friendly Name | Select the Sleep button action (plugged in) |
-| Element Name | Sleep Button Action |
+| Element Name | Sleep Button Action. |
 | Location | Computer Configuration |
 | Path | System > Power Management > Button Settings |
 | Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\96996BC0-AD50-47EC-923B-6F41874DD9EB |
@@ -1340,10 +1398,14 @@ This policy setting allows you to turn off hybrid sleep.
 <!-- UnattendedSleepTimeoutOnBattery-OmaUri-End -->
 
 <!-- UnattendedSleepTimeoutOnBattery-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+
 - If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep.
-- If you disable or do not configure this policy setting, users control this setting. If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+
+- If you disable or do not configure this policy setting, users control this setting.
+
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- UnattendedSleepTimeoutOnBattery-Description-End -->
 
 <!-- UnattendedSleepTimeoutOnBattery-Editable-Begin -->
@@ -1397,10 +1459,14 @@ This policy setting allows you to specify the period of inactivity before Window
 <!-- UnattendedSleepTimeoutPluggedIn-OmaUri-End -->
 
 <!-- UnattendedSleepTimeoutPluggedIn-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+
 - If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep.
-- If you disable or do not configure this policy setting, users control this setting. If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+
+- If you disable or do not configure this policy setting, users control this setting.
+
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- UnattendedSleepTimeoutPluggedIn-Description-End -->
 
 <!-- UnattendedSleepTimeoutPluggedIn-Editable-Begin -->

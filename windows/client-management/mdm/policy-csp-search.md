@@ -4,7 +4,7 @@ description: Learn more about the Search Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/01/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -39,8 +39,8 @@ ms.topic: reference
 <!-- AllowCloudSearch-OmaUri-End -->
 
 <!-- AllowCloudSearch-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allow search and Cortana to search cloud sources like OneDrive and SharePoint. This policy allows corporate administrators to control whether employees can turn off/on the search of these cloud sources. The default policy value is to allow employees access to the setting that controls search of cloud sources.
+<!-- Description-Source-ADMX -->
+Allow search and Cortana to search cloud sources like OneDrive and SharePoint.
 <!-- AllowCloudSearch-Description-End -->
 
 <!-- AllowCloudSearch-Editable-Begin -->
@@ -73,7 +73,7 @@ Allow search and Cortana to search cloud sources like OneDrive and SharePoint. T
 |:--|:--|
 | Name | AllowCloudSearch |
 | Friendly Name | Allow Cloud Search |
-| Element Name | Cloud Search Setting |
+| Element Name | Cloud Search Setting. |
 | Location | Computer Configuration |
 | Path | Windows Components > Search |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
@@ -103,7 +103,7 @@ Allow search and Cortana to search cloud sources like OneDrive and SharePoint. T
 
 <!-- AllowCortanaInAAD-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Allow the cortana opt-in page during windows setup out of the box experience
+Allow the cortana opt-in page during windows setup out of the box experience.
 <!-- AllowCortanaInAAD-Description-End -->
 
 <!-- AllowCortanaInAAD-Editable-Begin -->
@@ -166,7 +166,7 @@ Allow the cortana opt-in page during windows setup out of the box experience
 
 <!-- AllowFindMyFiles-Description-Begin -->
 <!-- Description-Source-DDF -->
-This feature allows you to disable find my files completely on the machine
+This feature allows you to disable find my files completely on the machine.
 <!-- AllowFindMyFiles-Description-End -->
 
 <!-- AllowFindMyFiles-Editable-Begin -->
@@ -190,7 +190,7 @@ This policy controls whether the user can configure search to *Find My Files* mo
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | , and the settings UI is present. |
+| 1 (Default) | Find My Files feature can be toggled (still off by default), and the settings UI is present. |
 | 0 | Find My Files feature is turned off completely, and the settings UI is disabled. |
 <!-- AllowFindMyFiles-AllowedValues-End -->
 
@@ -227,6 +227,7 @@ This policy controls whether the user can configure search to *Find My Files* mo
 <!-- AllowIndexingEncryptedStoresOrItems-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows encrypted items to be indexed.
+
 - If you enable this policy setting, indexing will attempt to decrypt and index the content (access restrictions will still apply).
 - If you disable this policy setting, the search service components (including non-Microsoft components) are expected not to index encrypted items or encrypted stores. This policy setting is not configured by default.
 - If you do not configure this policy setting, the local setting, configured through Control Panel, will be used. By default, the Control Panel setting is set to not index encrypted content.
@@ -481,6 +482,7 @@ This policy has been deprecated.
 <!-- AllowUsingDiacritics-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows words that contain diacritic characters to be treated as separate words.
+
 - If you enable this policy setting, words that only differ in diacritics are treated as different words.
 - If you disable this policy setting, words with diacritics and words without diacritics are treated as identical words. This policy setting is not configured by default.
 - If you do not configure this policy setting, the local setting, configured through Control Panel, will be used.
@@ -593,6 +595,7 @@ Allow Windows indexer. Value type is integer.
 <!-- AlwaysUseAutoLangDetection-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting determines when Windows uses automatic language detection results, and when it relies on indexing history.
+
 - If you enable this policy setting, Windows will always use automatic language detection to index (as it did in Windows 7). Using automatic language detection can increase memory usage. We recommend enabling this policy setting only on PCs where documents are stored in many languages.
 - If you disable or do not configure this policy setting, Windows will use automatic language detection only when it can determine the language of a document with high confidence.
 <!-- AlwaysUseAutoLangDetection-Description-End -->
@@ -704,7 +707,7 @@ This policy setting allows you to configure search on the taskbar.
 |:--|:--|
 | Name | ConfigureSearchOnTaskbarMode |
 | Friendly Name | Configures search on the taskbar |
-| Element Name | Search on the taskbar |
+| Element Name | Search on the taskbar. |
 | Location | Computer Configuration |
 | Path | Windows Components > Search |
 | Registry Key Name | Software\Policies\Microsoft\Windows\Windows Search |
@@ -853,7 +856,7 @@ This policy setting configures whether or not locations on removable drives can 
 <!-- DisableSearch-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableSearch-Applicability-End -->
 
 <!-- DisableSearch-OmaUri-Begin -->
@@ -864,6 +867,7 @@ This policy setting configures whether or not locations on removable drives can 
 
 <!-- DisableSearch-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy, the Search UI will be disabled along with all its entry points, such as keyboard shortcuts, touchpad gestures, and type-to-search in the Start menu. The Start menu's search box and Search Taskbar button will also be hidden.
 
 - If you disable or don't configure this policy setting, the user will be able to open the Search UI and its different entry points will be shown.
@@ -929,13 +933,13 @@ This policy setting configures whether or not locations on removable drives can 
 
 <!-- DoNotUseWebResults-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to control whether or not Search can perform queries on the web, and if the web results are displayed in Search.
+This policy setting allows you to control whether or not Search can perform queries on the web, if web results are displayed in Search, and if search highlights are shown in the search box and in search home.
 
-- If you enable this policy setting, queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.
+- If you enable this policy setting, queries won't be performed on the web, web results won't be displayed when a user performs a query in Search, and search highlights will not be shown in the search box and in search home.
 
-- If you disable this policy setting, queries will be performed on the web and web results will be displayed when a user performs a query in Search.
+- If you disable this policy setting, queries will be performed on the web, web results will be displayed when a user performs a query in Search, and search highlights will be shown in the search box and in search home.
 
-- If you don't configure this policy setting, a user can choose whether or not Search can perform queries on the web, and if the web results are displayed in Search.
+- If you don't configure this policy setting, a user can choose whether or not Search can perform queries on the web, and if the web results are displayed in Search, and if search highlights are shown in the search box and in search home.
 <!-- DoNotUseWebResults-Description-End -->
 
 <!-- DoNotUseWebResults-Editable-Begin -->
@@ -1109,10 +1113,13 @@ If enabled, clients will be unable to query this computer's index remotely. Thus
 <!-- SafeSearchPermissions-Begin -->
 ## SafeSearchPermissions
 
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
+
 <!-- SafeSearchPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
 <!-- SafeSearchPermissions-Applicability-End -->
 
 <!-- SafeSearchPermissions-OmaUri-Begin -->
@@ -1122,7 +1129,8 @@ If enabled, clients will be unable to query this computer's index remotely. Thus
 <!-- SafeSearchPermissions-OmaUri-End -->
 
 <!-- SafeSearchPermissions-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+This policy is deprecated.
 <!-- SafeSearchPermissions-Description-End -->
 
 <!-- SafeSearchPermissions-Editable-Begin -->

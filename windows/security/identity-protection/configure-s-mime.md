@@ -1,25 +1,12 @@
 ---
 title: Configure S/MIME for Windows
 description: S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients with a digital ID, also known as a certificate, can read them.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 07/27/2017
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
 ---
 
 
 # Configure S/MIME for Windows
-
-**Applies to**
-- Windows 10
-- Windows 11
 
 S/MIME stands for Secure/Multipurpose Internet Mail Extensions, and provides an added layer of security for email sent to and from an Exchange ActiveSync (EAS) account. S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients who have a digital identification (ID), also known as a certificate, can read them. Users can digitally sign a message, which provides the recipients with a way to verify the identity of the sender and that the message hasn't been tampered with.
 
@@ -31,11 +18,11 @@ Encrypted messages can be read only by recipients who have a certificate. If you
 
 ## About digital signatures
 
-A digitally signed message reassures the recipient that the message hasn't been tampered with and verifies the identity of the sender. Recipients can only verify the digital signature if they’re using an email client that supports S/MIME.
+A digitally signed message reassures the recipient that the message hasn't been tampered with and verifies the identity of the sender. Recipients can only verify the digital signature if they're using an email client that supports S/MIME.
 
 ## Prerequisites
 
--   [S/MIME is enabled for Exchange accounts](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) (on-premises and Office 365). Users can’t use S/MIME signing and encryption with a personal account such as Outlook.com.
+-   [S/MIME is enabled for Exchange accounts](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) (on-premises and Office 365). Users can't use S/MIME signing and encryption with a personal account such as Outlook.com.
 -   Valid Personal Information Exchange (PFX) certificates are installed on the device.
 
     -   [How to Create PFX Certificate Profiles in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/mt131410(v=technet.10))
@@ -49,11 +36,11 @@ On the device, perform the following steps: (add select certificate)
 
 2.  Open **Settings** by tapping the gear icon on a PC, or the ellipsis (...) and then the gear icon on a phone.
 
-	:::image type="content" alt-text="settings icon in mail app." source="images/mailsettings.png":::
+    :::image type="content" alt-text="settings icon in mail app." source="images/mailsettings.png":::
 
 3.  Tap **Email security**.
 
-	:::image type="content" alt-text="email security settings." source="images/emailsecurity.png":::
+    :::image type="content" alt-text="email security settings." source="images/emailsecurity.png":::
 
 4.  In **Select an account**, select the account for which you want to configure S/MIME options.
 
@@ -74,7 +61,7 @@ On the device, perform the following steps: (add select certificate)
 
 2.  Use **Sign** and **Encrypt** icons to turn on digital signature and encryption for this message.
 
-	:::image type="content" alt-text="sign or encrypt message." source="images/signencrypt.png":::
+    :::image type="content" alt-text="sign or encrypt message." source="images/signencrypt.png":::
 
 ## Read signed or encrypted messages
 
@@ -90,5 +77,5 @@ When you receive a signed email, the app provides a feature to install correspon
 
 3.  Tap **Install.**
 
-	:::image type="content" alt-text="message security information." source="images/installcert.png":::
+    :::image type="content" alt-text="message security information." source="images/installcert.png":::
  

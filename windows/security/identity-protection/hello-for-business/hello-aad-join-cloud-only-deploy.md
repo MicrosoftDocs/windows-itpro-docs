@@ -2,8 +2,6 @@
 title: Windows Hello for Business cloud-only deployment
 description: Learn how to configure Windows Hello for Business in a cloud-only deployment scenario.
 ms.date: 06/23/2021
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 # Cloud-only deployment

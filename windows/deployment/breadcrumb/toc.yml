@@ -46,3 +46,15 @@ items:
     - name: Deployment
       tocHref: /windows/client-management/mdm
       topicHref: /windows/deployment/     
+
+- name: Learn
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Windows
+    tocHref: /windows/
+    topicHref: /windows/resources/
+    items:
+    - name: Deployment
+      tocHref: /windows/deployment/do
+      topicHref: /windows/deployment/

@@ -6,8 +6,10 @@ ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
 author: frankroj
-ms.topic: article
-ms.collection: highpri, tier2
+ms.topic: conceptual
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-deploy
 ms.date: 10/28/2022
 ---

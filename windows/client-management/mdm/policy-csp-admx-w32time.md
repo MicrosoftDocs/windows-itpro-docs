@@ -4,7 +4,7 @@ description: Learn more about the ADMX_W32Time Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -46,7 +46,7 @@ This policy setting allows you to specify Clock discipline and General values fo
 
 - If this policy setting is enabled, W32time Service on target machines use the settings provided here. Otherwise, the service on target machines use locally configured settings values.
 
-For more details on individual parameters, combinations of parameter values as well as definitions of flags, see <https://go.microsoft.com/fwlink/?linkid=847809>.
+For more details on individual parameters, combinations of parameter values as well as definitions of flags, see< https://go.microsoft.com/fwlink/?linkid=847809>.
 
 FrequencyCorrectRate
 This parameter controls the rate at which the W32time corrects the local clock's frequency. Lower values cause larger corrections; larger values cause smaller corrections. Default: 4 (scalar).
