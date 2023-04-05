@@ -39,7 +39,7 @@ Use the Event Viewer to see if a supplemental policy is deployed correctly. Thes
     - For the policy that allows managed installers to run, a policyID `C0DB889B-59C5-453C-B297-399C851934E4` and Friendly Name *[Win-EDU] Microsoft Apps Supplemental Policy - Prod* should be present, and have **Is Currently Enforced** showing as **true**
     - For any additional policies that you deploy, check that a policy with a matching ID and Friendly Name is shown in the list and the **Is Currently Enforced** and **Is Authorized** properties are both showing as **true**
     
-    :image type="content" source="images/troubleshoot-citool.png" alt-text="Output of citool.exe with the Win-EDU supplemental policy.":::
+    :::image type="content" source="images/troubleshoot-citool.png" alt-text="Output of citool.exe with the Win-EDU supplemental policy.":::
 
 1. Check for **error events** with code **3077**: and reference [Understanding Application Control event IDs][WIN-1]
 
@@ -92,7 +92,7 @@ When executing the `sc.exe query` commands, the **STATE** property should show a
 
 1. Open the **Event Viewer** on a target device
 1. Expand **Applications and Services > Microsoft > Windows > AppLocker > MSI and Script**
-1. Check for **error events** with code **8040**, and reference [Understanding Application Control event IDs][WIN-1]
+1. Check for **error events** with code **8040**, and reference [Understanding Application Control event IDs][WIN-2]
 
 ## Intune Management Extension
 
@@ -101,3 +101,4 @@ When executing the `sc.exe query` commands, the **STATE** property should show a
 
 [MEM-1]: /mem/intune/remote-actions/collect-diagnostics
 [WIN-1]: /windows/security/threat-protection/windows-defender-application-control/event-tag-explanations#policy-activation-event-options
+[WIN-2]: /windows/security/threat-protection/windows-defender-application-control/event-id-explanations
