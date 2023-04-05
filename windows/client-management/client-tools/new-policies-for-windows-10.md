@@ -1,7 +1,7 @@
 ---
 title: New policies for Windows 10 (Windows 10)
 description: Learn how Windows 10 includes new policies for management, like Group Policy settings for the Windows system and components.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.prod: windows-client
@@ -40,10 +40,10 @@ The following Group Policy settings were added in Windows 10, version 1903:
 
 **Windows Components**
 
-- Windows Components\App Privacy\Let Windows apps activate with voice 
+- Windows Components\App Privacy\Let Windows apps activate with voice
 - Windows Components\App Privacy\Let Windows apps activate with voice while the system is locked
 - Windows Components\Data Collection and Preview Builds\Allow commercial data pipeline
-- Windows Components\Data Collection and Preview Builds\Configure collection of browsing data for Desktop Analytics 
+- Windows Components\Data Collection and Preview Builds\Configure collection of browsing data for Desktop Analytics
 - Windows Components\Data Collection and Preview Builds\Configure diagnostic data upload endpoint for Desktop Analytics
 - Windows Components\Delivery Optimization\Delay background download Cache Server fallback (in seconds)
 - Windows Components\Delivery Optimization\Delay Foreground download Cache Server fallback (in seconds)
@@ -494,16 +494,14 @@ Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, and Wi
 
 - Consumer experiences, such as suggested apps in Start and app tiles from Microsoft dynamically inserted in the default Start menu
 
-Windows 10, version 1703, adds a number of [ADMX-backed policies to MDM](./mdm/policy-configuration-service-provider.md).
+Windows 10, version 1703, adds a number of [ADMX-backed policies to MDM](../mdm/policy-configuration-service-provider.md).
 
 If you use Microsoft Intune for MDM, you can [configure custom policies](/mem/intune/configuration/custom-settings-configure) to deploy Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings that can be used to control features on Windows 10. For a list of OMA-URI settings, see [Custom URI settings for Windows 10 devices](/mem/intune/configuration/custom-settings-windows-10).
 
-No new [Exchange ActiveSync policies](/exchange/mobile-device-mailbox-policies-exchange-2013-help). For more information, see the [ActiveSync configuration service provider](./mdm/activesync-csp.md) technical reference.
+No new [Exchange ActiveSync policies](/exchange/mobile-device-mailbox-policies-exchange-2013-help). For more information, see the [ActiveSync configuration service provider](../mdm/activesync-csp.md) technical reference.
 
 ## Related topics
 
-[Group Policy Settings Reference Spreadsheet Windows 1803](https://www.microsoft.com/download/details.aspx?id=56946)
-
-[Manage corporate devices](manage-corporate-devices.md)
-
-[Changes to Group Policy settings for Start in Windows 10](/windows/configuration/changes-to-start-policies-in-windows-10)
+- [Group Policy Settings Reference Spreadsheet Windows 1803](https://www.microsoft.com/download/details.aspx?id=56946)
+- [Manage corporate devices](../manage-corporate-devices.md)
+- [Changes to Group Policy settings for Start in Windows 10](/windows/configuration/changes-to-start-policies-in-windows-10)
