@@ -103,7 +103,7 @@ sections:
           - **The device isn't enrolled with Azure Active Directory**: A [prerequisite](wufb-reports-prerequisites.md#azure-and-azure-active-directory) for devices is that they're either [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
           - **The device isn't sending data**: It's possible devices aren't sharing data due to a policy being incorrectly configured or a proxy or firewall configuration. Try using the [configuration script]((wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
           - **The device isn't active enough**: Clients must be active and connected to the internet to scan against Microsoft Update. Ensure devices are powered on and have been active at least once in the past 28 days.
-          - **The workbook has limited the results**: The default limit for rows in Azure workbooks is set to 250. This is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the 3 dots beside each component.
+          - **The workbook has limited the results**: The default limit for rows in Azure workbooks is set to 250. This is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the three dots beside each component.
       - question: What is the difference between OS version and target version?
         answer: |
           The word *target* in data labels refers to the update version, build or KB the client is actively being updated to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
@@ -136,7 +136,7 @@ sections:
           Data is available for the last 28 days.
       - question: Data is showing as 'Unknown', what does that mean?
         answer: |
-          You may see data in the report listed as 'Unknown'. This staus indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.
+          You may see data in the report listed as 'Unknown'. This status indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.
       - question: How are the 'Top 10' groups identified?
         answer: |
           The top groups are represented by the number of devices in a particular group, for any of the four group types (GroupID, City, Country, and ISP).
