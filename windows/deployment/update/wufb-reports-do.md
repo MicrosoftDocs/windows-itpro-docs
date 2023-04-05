@@ -150,7 +150,7 @@ Data is available for the last 28 days.
 - **Data is showing as 'Unknown', what does that mean?**
 You may see data in the report listed as 'Unknown'. This status indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.
 
-- **How is the 'Top 10' groups identified?**
+- **How are the 'Top 10' groups identified?**
 The top groups are represented by the number of devices in a particular group, for any of the four group types (GroupID, City, Country, and ISP).
 
 - **The GroupIDs don't look familiar, why are they different?**
