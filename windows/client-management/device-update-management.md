@@ -206,4 +206,4 @@ The following diagram and screenshots show the process flow of the device update
 ## Related articles
 
 - [Policy CSP - Update](mdm/policy-csp-update.md)
-- [Policy configuration service provider](policy-configuration-service-provider.md)
+- [Policy configuration service provider](mdm/policy-configuration-service-provider.md)
