@@ -57,12 +57,12 @@ There are several calculated values that appear on the Delivery Optimization rep
 
 **Efficiency (%) Calculations**:
  
-- Bandwidth Savings (BW SAV%) = 100 * (BytesFromPeers + BytesFromGroupPeers + BytesFromCache)/
+- Bandwidth Savings (BW SAV%) = 100 * (BytesFromPeers + BytesFromGroupPeers + BytesFromCache) /
 (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN + BytesFromCache)
   - [UCDOAggregatedStatus](wufb-reports-schema-ucdostatus.md) table
-- % P2P Efficiency = 100 * (BytesFromPeers + BytesFromGroupPeers)/(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache)
+- % P2P Efficiency = 100 * (BytesFromPeers + BytesFromGroupPeers) / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache)
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
-- % MCC Efficiency = 100 * BytesFromCache/(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) 
+- % MCC Efficiency = 100 * BytesFromCache / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) 
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
 
 **Bytes Calculations**:
