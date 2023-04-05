@@ -115,7 +115,7 @@ Windows Autopatch schedules and deploys required Out of Band (OOB) updates relea
 ### Pausing and resuming a release
 
 > [!CAUTION]
-> It's recommended to only use Windows Autopatch's Release management blade to pause and resume [Windows quality](windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release). If you need assistance with pausing and resuming updates, please [submit a support request](../operate/windows-autopatch-support-request.md).
+> You should only pause and resume [Windows quality](windows-autopatch-windows-quality-update-overview.md#pausing-and-resuming-a-release) and [Windows feature updates](#pausing-and-resuming-a-release) on Windows Autopatch managed devices using the Windows Autopatch Release management blade. Do **not** use the Microsoft Intune end-user experience flows to pause or resume Windows Autopatch managed devices. If you need assistance with pausing and resuming updates, please [submit a support request](../operate/windows-autopatch-support-request.md).
 
 The service-level pause of updates is driven by the various software update deployment-related signals Windows Autopatch receives from Windows Update for Business, and several other product groups within Microsoft.
 
