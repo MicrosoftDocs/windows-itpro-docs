@@ -4,7 +4,7 @@ metadata:
   description: Answers to frequently asked questions about Windows Update for Business reports.
   ms.prod: windows-client
   ms.topic: faq
-  ms.date: 03/31/2023
+  ms.date: 04/06/2023
   manager: aaroncz
   author: mestew
   ms.author: mstewart
@@ -12,21 +12,33 @@ metadata:
 title: Frequently Asked Questions about Windows Update for Business reports
 summary: |
   This article answers frequently asked questions about Windows Update for Business reports. 
+  **General questions**:
   - [What is Windows Update for Business reports?](#what-is-windows-update-for-business-reports)
   - [Is Windows Update for Business reports free?](#is-windows-update-for-business-reports-free)
   - [What Windows versions are supported?](#what-windows-versions-are-supported)
+  **Setup questions**:
   - [How do you setup Windows Update for Business reports?](#how-do-you-setup-windows-update-for-business-reports)
   - [Why is "Waiting for Windows Update for Business reports data" displayed on the page](#why-is--waiting-for-windows-update-for-business-reports-data--displayed-on-the-page)
   - [Why am I getting the error "400 Bad Request: The specified resource already exists"?](#why-am-i-getting-the-error--400-bad-request--the-specified-resource-already-exists-)
   - [Why am I getting the error "400 Bad Request: Identifier must be GUID"?](#why-am-i-getting-the-error--400-bad-request--identifier-must-be-guid-)
+  **Questions about using Windows Update for Business reports**:
   - [Why is the device name null(#)?](#why-is-the-device-name-null---)
   - [Why am I missing devices in reports?](#why-am-i-missing-devices-in-reports)
   - [What is the difference between OS version and target version?](#what-is-the-difference-between-os-version-and-target-version)
   - [When should I use the UCClient versus the UCClientUpdateStatus table?](#when-should-i-use-the-ucclient-versus-the-ucclientupdatestatus-table)
   - [What is the difference between quality and security updates?](#what-is-the-difference-between-quality-and-security-updates)
-  - [How are the calculations for Delivery Optimization done?](#how-are-the-calculations-for-delivery-optimization-done)
   - [How do I confirm that devices are sending data?](#how-do-i-confirm-that-devices-are-sending-data)
   - [Why isn't the workbook displaying data even though my UCClient table has data?](#why-isn-t-the-workbook-displaying-data-even-though-my-ucclient-table-has-data)
+  **Delivery Optimization data**:
+  - [What time period does the Delivery Optimization data include?]
+  - [Data is showing as "Unknown", what does that mean?]
+  - [How are the 'Top 10' groups identified?]
+  - [The GroupIDs don't look familiar, why are they different?]
+  - [How can I see data for device in the office vs. out of the office?]
+  - [What does the data in UCDOStatus table represent?]
+  - [What does the data in UCDOAggregatedStatus table represent?]
+  - [How are the calculations for Delivery Optimization done?](#how-are-the-calculations-for-delivery-optimization-done)
+
 sections:
   - name: General
     questions:
@@ -99,9 +111,6 @@ sections:
             
             - **OSSecurityUpdateStatus**: Indicates the status of the monthly update that's released on the second Tuesday
             - **OSQualityUpdateStatus**: Indicates the status of the monthly update that's released on the fourth Tuesday
-      - question: How are the calculations for Delivery Optimization done?
-        answer: |
-          Volume from the CDN is calculated by subtracting the number bytes that came from the cache server: BytesFromCDN = BytesFromCDN - BytesFromEnterpriseCache 
       - question: How do I confirm that devices are sending data?
         answer: |
           Once enrollment is done and devices are properly configured to share data, wait for 48 hours for data to start showing up in reports. It can take up to 14 days for all of your devices to show up in reports in some cases where devices aren't active much. You can check to see if the Log Analytics tables are being populated in your workspace. The data is ingested by the service daily to generate reports. If you notice a day is missing, it's possible that the reports service missed an ingestion. To confirm devices are sending data, [query](wufb-reports-use.md#display-windows-update-for-business-reports-data) the [UCClient table](wufb-reports-schema-ucclient.md). The following query shows total enrolled device count per time-generated: 
@@ -111,4 +120,29 @@ sections:
           :::image type="content" source="media/7760853-wufb-reports-time-generated.png" alt-text="Screenshot of using a Kusto (KQL) query for time generated on Windows Update for Business reports data in Log Analytics." lightbox="media/7760853-wufb-reports-time-generated.png":::
       - question: Why isn't the workbook displaying data even though my UCClient table has data?
         answer: |
-          If the [UCClient table](wufb-reports-schema-ucclient.md) has data, but the [workbook](wufb-reports-workbook.md) isn't displaying data, ensure that the user has correct permissions to read the data. The [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role is needed to view the data in the workbooks. The [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role is needed to do any edits to the queries and workbooks.           
+          If the [UCClient table](wufb-reports-schema-ucclient.md) has data, but the [workbook](wufb-reports-workbook.md) isn't displaying data, ensure that the user has correct permissions to read the data. The [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role is needed to view the data in the workbooks. The [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role is needed to do any edits to the queries and workbooks.
+  - name: Delivery Optimization data
+      - question: What time period does the Delivery Optimization data include?
+        answer: |
+          Data is available for the last 28 days.
+      - question: Data is showing as 'Unknown', what does that mean?
+        answer: |
+          You may see data in the report listed as 'Unknown'. This indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.
+      - question: How are the 'Top 10' groups identified?
+        answer: |
+          The top groups are represented by the number of devices in a particular group, for any of the four group types (GroupID, City, Country, and ISP).
+      - question: The GroupIDs don't look familiar, why are they different?
+        answer: |
+          The GroupID values are encoded for data protection telemetry requirements. You can find more information in the 'Mapping GroupIDs' section above.
+      - question: How can I see data for device in the office vs. out of the office?
+        answer: |
+          Today, we don't have a distinction for data that was downloaded by location. 
+      - question: What does the data in UCDOStatus table represent?
+        answer: |
+          A row in UCDOStatus represents data downloaded by a combination of a single device ID (AzureADDeviceId) by content type (ContentType).
+      - question: What does the data in UCDOAggregatedStatus table represent?
+        answer: |
+          A row in UCDOAggregatedStatus represents data summarized at the tenant level (AzureADTenantID) for each content type (ContentType).
+      - question: How are the calculations for Delivery Optimization done?
+        answer: |
+            Volume from the CDN is calculated by subtracting the number bytes that came from the cache server: BytesFromCDN = BytesFromCDN - BytesFromEnterpriseCache
