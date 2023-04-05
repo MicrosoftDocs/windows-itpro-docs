@@ -6691,6 +6691,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/client-management/add-an-azure-ad-tenant-and-azure-ad-subscription.md",
+      "redirect_url": "/azure/active-directory/fundamentals/active-directory-access-create-new-tenant",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management//register-your-free-azure-active-directory-subscription.md",
+      "redirect_url": "/microsoft-365/compliance/use-your-free-azure-ad-subscription-in-office-365",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/client-management/mdm/policy-admx-backed.md",
       "redirect_url": "/windows/client-management/mdm/policy-configuration-service-provider",
       "redirect_document_id": false
