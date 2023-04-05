@@ -4,7 +4,7 @@ description: Learn more about the TextInput Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -86,8 +86,7 @@ Placeholder only. Do not use in production environment.
 
 <!-- AllowIMELogging-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file and history-based predictive input. Most restricted value is 0.
+Allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file and history-based predictive input. Most restricted value is 0.
 <!-- AllowIMELogging-Description-End -->
 
 <!-- AllowIMELogging-Editable-Begin -->
@@ -185,8 +184,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 <!-- AllowInputPanel-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the IT admin to disable the touch/handwriting keyboard on Windows. Most restricted value is 0.
+Allows the IT admin to disable the touch/handwriting keyboard on Windows. Most restricted value is 0.
 <!-- AllowInputPanel-Description-End -->
 
 <!-- AllowInputPanel-Editable-Begin -->
@@ -235,8 +233,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 <!-- AllowJapaneseIMESurrogatePairCharacters-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the Japanese IME surrogate pair characters. Most restricted value is 0.
+Allows the Japanese IME surrogate pair characters. Most restricted value is 0.
 <!-- AllowJapaneseIMESurrogatePairCharacters-Description-End -->
 
 <!-- AllowJapaneseIMESurrogatePairCharacters-Editable-Begin -->
@@ -285,8 +282,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 <!-- AllowJapaneseIVSCharacters-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows Japanese Ideographic Variation Sequence (IVS) characters. Most restricted value is 0.
+Allows Japanese Ideographic Variation Sequence (IVS) characters. Most restricted value is 0.
 <!-- AllowJapaneseIVSCharacters-Description-End -->
 
 <!-- AllowJapaneseIVSCharacters-Editable-Begin -->
@@ -335,8 +331,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 <!-- AllowJapaneseNonPublishingStandardGlyph-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the Japanese non-publishing standard glyph. Most restricted value is 0.
+Allows the Japanese non-publishing standard glyph. Most restricted value is 0.
 <!-- AllowJapaneseNonPublishingStandardGlyph-Description-End -->
 
 <!-- AllowJapaneseNonPublishingStandardGlyph-Editable-Begin -->
@@ -385,8 +380,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 <!-- AllowJapaneseUserDictionary-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the Japanese user dictionary. Most restricted value is 0.
+Allows the Japanese user dictionary. Most restricted value is 0.
 <!-- AllowJapaneseUserDictionary-Description-End -->
 
 <!-- AllowJapaneseUserDictionary-Editable-Begin -->
@@ -435,8 +429,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 <!-- AllowKeyboardTextSuggestions-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Specifies whether text prediction is enabled or disabled for the on-screen keyboard, touch keyboard, and handwriting recognition tool. When this policy is set to disabled, text prediction is disabled. Most restricted value is 0.
+Specifies whether text prediction is enabled or disabled for the on-screen keyboard, touch keyboard, and handwriting recognition tool. When this policy is set to disabled, text prediction is disabled. Most restricted value is 0.
 <!-- AllowKeyboardTextSuggestions-Description-End -->
 
 <!-- AllowKeyboardTextSuggestions-Editable-Begin -->
@@ -1005,8 +998,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 
 <!-- ExcludeJapaneseIMEExceptJIS0208-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the users to restrict character code range of conversion by setting the character filter.
+Allows the users to restrict character code range of conversion by setting the character filter.
 <!-- ExcludeJapaneseIMEExceptJIS0208-Description-End -->
 
 <!-- ExcludeJapaneseIMEExceptJIS0208-Editable-Begin -->
@@ -1055,8 +1047,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 
 <!-- ExcludeJapaneseIMEExceptJIS0208andEUDC-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the users to restrict character code range of conversion by setting the character filter.
+Allows the users to restrict character code range of conversion by setting the character filter.
 <!-- ExcludeJapaneseIMEExceptJIS0208andEUDC-Description-End -->
 
 <!-- ExcludeJapaneseIMEExceptJIS0208andEUDC-Editable-Begin -->
@@ -1105,8 +1096,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 
 <!-- ExcludeJapaneseIMEExceptShiftJIS-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the users to restrict character code range of conversion by setting the character filter.
+Allows the users to restrict character code range of conversion by setting the character filter.
 <!-- ExcludeJapaneseIMEExceptShiftJIS-Description-End -->
 
 <!-- ExcludeJapaneseIMEExceptShiftJIS-Editable-Begin -->

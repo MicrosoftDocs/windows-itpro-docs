@@ -4,7 +4,7 @@ description: Learn more about the WindowsInkWorkspace Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowSuggestedAppsInWindowsInkWorkspace-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Allow suggested apps in Windows Ink Workspace
+Allow suggested apps in Windows Ink Workspace.
 <!-- AllowSuggestedAppsInWindowsInkWorkspace-Description-End -->
 
 <!-- AllowSuggestedAppsInWindowsInkWorkspace-Editable-Begin -->
@@ -99,8 +99,8 @@ Allow suggested apps in Windows Ink Workspace
 <!-- AllowWindowsInkWorkspace-OmaUri-End -->
 
 <!-- AllowWindowsInkWorkspace-Description-Begin -->
-<!-- Description-Source-DDF -->
-Specifies whether to allow the user to access the ink workspace.
+<!-- Description-Source-ADMX -->
+Allow Windows Ink Workspace.
 <!-- AllowWindowsInkWorkspace-Description-End -->
 
 <!-- AllowWindowsInkWorkspace-Editable-Begin -->
@@ -134,7 +134,7 @@ Specifies whether to allow the user to access the ink workspace.
 |:--|:--|
 | Name | AllowWindowsInkWorkspace |
 | Friendly Name | Allow Windows Ink Workspace |
-| Element Name | Choose one of the following actions |
+| Element Name | Choose one of the following actions. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Ink Workspace |
 | Registry Key Name | Software\Policies\Microsoft\WindowsInkWorkspace |

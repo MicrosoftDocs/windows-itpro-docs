@@ -4,7 +4,7 @@ description: Learn more about the SurfaceHub CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 03/27/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -28,10 +28,6 @@ The SurfaceHub configuration service provider (CSP) is used to configure Microso
 The following list shows the SurfaceHub configuration service provider nodes:
 
 - ./Vendor/MSFT/SurfaceHub
-  - [AutopilotSelfdeploy](#autopilotselfdeploy)
-    - [FriendlyName](#autopilotselfdeployfriendlyname)
-    - [Password](#autopilotselfdeploypassword)
-    - [UserPrincipalName](#autopilotselfdeployuserprincipalname)
   - [DeviceAccount](#deviceaccount)
     - [CalendarSyncEnabled](#deviceaccountcalendarsyncenabled)
     - [DomainName](#deviceaccountdomainname)
@@ -40,7 +36,7 @@ The following list shows the SurfaceHub configuration service provider nodes:
     - [ExchangeModernAuthEnabled](#deviceaccountexchangemodernauthenabled)
     - [ExchangeServer](#deviceaccountexchangeserver)
     - [Password](#deviceaccountpassword)
-    - [PasswordRotationPeriod](#deviceaccountpasswordrotationperiod)
+    - [PasswordRotationEnabled](#deviceaccountpasswordrotationenabled)
     - [SipAddress](#deviceaccountsipaddress)
     - [UserName](#deviceaccountusername)
     - [UserPrincipalName](#deviceaccountuserprincipalname)
@@ -92,163 +88,6 @@ The following list shows the SurfaceHub configuration service provider nodes:
     - [SurfaceHubMeetingMode](#propertiessurfacehubmeetingmode)
     - [VtcAppPackageId](#propertiesvtcapppackageid)
 <!-- SurfaceHub-Tree-End -->
-
-<!-- Device-AutopilotSelfdeploy-Begin -->
-## AutopilotSelfdeploy
-
-<!-- Device-AutopilotSelfdeploy-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
-<!-- Device-AutopilotSelfdeploy-Applicability-End -->
-
-<!-- Device-AutopilotSelfdeploy-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/SurfaceHub/AutopilotSelfdeploy
-```
-<!-- Device-AutopilotSelfdeploy-OmaUri-End -->
-
-<!-- Device-AutopilotSelfdeploy-Description-Begin -->
-<!-- Description-Source-DDF -->
-Node for setting Autopilot self-deployment mode device account information. This information is stored and committed by the Autopilot client during the Enrollment Status Page phase of OOBE for Surface Hub devices that are using Autopilot self-deploying mode. These values should be set only during the first sync phase of enrollment and are ignored at any other time.
-<!-- Device-AutopilotSelfdeploy-Description-End -->
-
-<!-- Device-AutopilotSelfdeploy-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-AutopilotSelfdeploy-Editable-End -->
-
-<!-- Device-AutopilotSelfdeploy-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | node |
-| Access Type | Get |
-| Case Sensitive | True |
-<!-- Device-AutopilotSelfdeploy-DFProperties-End -->
-
-<!-- Device-AutopilotSelfdeploy-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-AutopilotSelfdeploy-Examples-End -->
-
-<!-- Device-AutopilotSelfdeploy-End -->
-
-<!-- Device-AutopilotSelfdeploy-FriendlyName-Begin -->
-### AutopilotSelfdeploy/FriendlyName
-
-<!-- Device-AutopilotSelfdeploy-FriendlyName-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
-<!-- Device-AutopilotSelfdeploy-FriendlyName-Applicability-End -->
-
-<!-- Device-AutopilotSelfdeploy-FriendlyName-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/SurfaceHub/AutopilotSelfdeploy/FriendlyName
-```
-<!-- Device-AutopilotSelfdeploy-FriendlyName-OmaUri-End -->
-
-<!-- Device-AutopilotSelfdeploy-FriendlyName-Description-Begin -->
-<!-- Description-Source-DDF -->
-The device friendly name set during Autopilot self-deploying mode on Surface Hub. Get is allowed here but only returns a blank.
-<!-- Device-AutopilotSelfdeploy-FriendlyName-Description-End -->
-
-<!-- Device-AutopilotSelfdeploy-FriendlyName-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-AutopilotSelfdeploy-FriendlyName-Editable-End -->
-
-<!-- Device-AutopilotSelfdeploy-FriendlyName-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Get, Replace |
-<!-- Device-AutopilotSelfdeploy-FriendlyName-DFProperties-End -->
-
-<!-- Device-AutopilotSelfdeploy-FriendlyName-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-AutopilotSelfdeploy-FriendlyName-Examples-End -->
-
-<!-- Device-AutopilotSelfdeploy-FriendlyName-End -->
-
-<!-- Device-AutopilotSelfdeploy-Password-Begin -->
-### AutopilotSelfdeploy/Password
-
-<!-- Device-AutopilotSelfdeploy-Password-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
-<!-- Device-AutopilotSelfdeploy-Password-Applicability-End -->
-
-<!-- Device-AutopilotSelfdeploy-Password-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/SurfaceHub/AutopilotSelfdeploy/Password
-```
-<!-- Device-AutopilotSelfdeploy-Password-OmaUri-End -->
-
-<!-- Device-AutopilotSelfdeploy-Password-Description-Begin -->
-<!-- Description-Source-DDF -->
-Password for the device account. Get is allowed here, but will always return a blank.
-<!-- Device-AutopilotSelfdeploy-Password-Description-End -->
-
-<!-- Device-AutopilotSelfdeploy-Password-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-AutopilotSelfdeploy-Password-Editable-End -->
-
-<!-- Device-AutopilotSelfdeploy-Password-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Get, Replace |
-<!-- Device-AutopilotSelfdeploy-Password-DFProperties-End -->
-
-<!-- Device-AutopilotSelfdeploy-Password-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-AutopilotSelfdeploy-Password-Examples-End -->
-
-<!-- Device-AutopilotSelfdeploy-Password-End -->
-
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-Begin -->
-### AutopilotSelfdeploy/UserPrincipalName
-
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-Applicability-End -->
-
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/SurfaceHub/AutopilotSelfdeploy/UserPrincipalName
-```
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-OmaUri-End -->
-
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-Description-Begin -->
-<!-- Description-Source-DDF -->
-User principal name (UPN) of the device account. Autopilot on Surface Hub only supports Azure Active Directory, and this should specify the UPN of the device account. Get is allowed here but only returns a blank.
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-Description-End -->
-
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-Editable-End -->
-
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Get, Replace |
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-DFProperties-End -->
-
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-Examples-End -->
-
-<!-- Device-AutopilotSelfdeploy-UserPrincipalName-End -->
 
 <!-- Device-DeviceAccount-Begin -->
 ## DeviceAccount
@@ -643,53 +482,53 @@ Password for the device account. Get is allowed here, but will always return a b
 
 <!-- Device-DeviceAccount-Password-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Begin -->
-### DeviceAccount/PasswordRotationPeriod
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Begin -->
+### DeviceAccount/PasswordRotationEnabled
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Applicability-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Applicability-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Applicability-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-OmaUri-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-OmaUri-Begin -->
 ```Device
-./Vendor/MSFT/SurfaceHub/DeviceAccount/PasswordRotationPeriod
+./Vendor/MSFT/SurfaceHub/DeviceAccount/PasswordRotationEnabled
 ```
-<!-- Device-DeviceAccount-PasswordRotationPeriod-OmaUri-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-OmaUri-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Description-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Description-Begin -->
 <!-- Description-Source-DDF -->
 Specifies whether automatic password rotation is enabled. If you enforce a password expiration policy on the device account, use this setting to allow the device to manage its own password by changing it frequently, without requiring you to manually update the account information when the password expires. You can reset the password at any time using Active Directory (or Azure AD).
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Description-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Description-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Editable-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Editable-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Editable-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-DFProperties-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
 |:--|:--|
 | Format | int |
 | Access Type | Get, Replace |
-<!-- Device-DeviceAccount-PasswordRotationPeriod-DFProperties-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-DFProperties-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-AllowedValues-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-AllowedValues-Begin -->
 **Allowed values**:
 
 | Value | Description |
 |:--|:--|
 | 0 | Password rotation enabled. |
 | 1 | Disabled. |
-<!-- Device-DeviceAccount-PasswordRotationPeriod-AllowedValues-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-AllowedValues-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Examples-Begin -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-DeviceAccount-PasswordRotationPeriod-Examples-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-Examples-End -->
 
-<!-- Device-DeviceAccount-PasswordRotationPeriod-End -->
+<!-- Device-DeviceAccount-PasswordRotationEnabled-End -->
 
 <!-- Device-DeviceAccount-SipAddress-Begin -->
 ### DeviceAccount/SipAddress

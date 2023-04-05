@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Help Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -187,7 +187,7 @@ This policy setting allows you to restrict programs from being run from online H
 > You can also restrict users from running applications by using the Software Restriction Policy settings available in Computer Configuration\Security Settings.
 
 > [!NOTE]
-> This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help
+> This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help.
 <!-- RestrictRunFromHelp-Description-End -->
 
 <!-- RestrictRunFromHelp-Editable-Begin -->
@@ -252,7 +252,7 @@ This policy setting allows you to restrict programs from being run from online H
 > You can also restrict users from running applications by using the Software Restriction Policy settings available in Computer Configuration\Security Settings.
 
 > [!NOTE]
-> This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help
+> This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help.
 <!-- RestrictRunFromHelp_Comp-Description-End -->
 
 <!-- RestrictRunFromHelp_Comp-Editable-Begin -->

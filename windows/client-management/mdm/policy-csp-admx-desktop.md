@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Desktop Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -233,7 +233,7 @@ Enables Active Desktop and prevents users from disabling it.
 
 This setting prevents users from trying to enable or disable Active Desktop while a policy controls it.
 
-- If you disable this setting or do not configure it, Active Desktop is disabled by default, but users can enable it.
+If you disable this setting or do not configure it, Active Desktop is disabled by default, but users can enable it.
 
 > [!NOTE]
 > If both the "Enable Active Desktop" setting and the "Disable Active Desktop" setting are enabled, the "Disable Active Desktop" setting is ignored. If the "Turn on Classic Shell" setting ( in User Configuration\Administrative Templates\Windows Components\Windows Explorer) is enabled, Active Desktop is disabled, and both of these policies are ignored.
@@ -296,7 +296,7 @@ Disables Active Desktop and prevents users from enabling it.
 
 This setting prevents users from trying to enable or disable Active Desktop while a policy controls it.
 
-- If you disable this setting or do not configure it, Active Desktop is disabled by default, but users can enable it.
+If you disable this setting or do not configure it, Active Desktop is disabled by default, but users can enable it.
 
 > [!NOTE]
 > If both the "Enable Active Desktop" setting and the "Disable Active Desktop" setting are enabled, the "Disable Active Desktop" setting is ignored. If the "Turn on Classic Shell" setting (in User Configuration\Administrative Templates\Windows Components\Windows Explorer) is enabled, Active Desktop is disabled, and both these policies are ignored.
@@ -1098,7 +1098,7 @@ Removes the Properties option from the Recycle Bin context menu.
 <!-- Description-Source-ADMX -->
 Prevents users from saving certain changes to the desktop.
 
-- If you enable this setting, users can change the desktop, but some changes, such as the position of open windows or the size and position of the taskbar, are not saved when users log off. However, shortcuts placed on the desktop are always saved.
+If you enable this setting, users can change the desktop, but some changes, such as the position of open windows or the size and position of the taskbar, are not saved when users log off. However, shortcuts placed on the desktop are always saved.
 <!-- NoSaveSettings-Description-End -->
 
 <!-- NoSaveSettings-Editable-Begin -->
@@ -1343,7 +1343,7 @@ Prevents users from removing Web content from their Active Desktop.
 
 In Active Desktop, you can add items to the desktop but close them so they are not displayed.
 
-- If you enable this setting, items added to the desktop cannot be closed; they always appear on the desktop. This setting removes the check boxes from items on the Web tab in Display in Control Panel.
+If you enable this setting, items added to the desktop cannot be closed; they always appear on the desktop. This setting removes the check boxes from items on the Web tab in Display in Control Panel.
 
 > [!NOTE]
 > This setting does not prevent users from deleting items from their Active Desktop.
@@ -1585,7 +1585,7 @@ This setting removes all Active Desktop items from the desktop. It also removes 
 <!-- Description-Source-ADMX -->
 Prevents users from manipulating desktop toolbars.
 
-- If you enable this setting, users cannot add or remove toolbars from the desktop. Also, users cannot drag toolbars on to or off of docked toolbars.
+If you enable this setting, users cannot add or remove toolbars from the desktop. Also, users cannot drag toolbars on to or off of docked toolbars.
 
 > [!NOTE]
 > If users have added or removed toolbars, this setting prevents them from restoring the default configuration.
@@ -1776,7 +1776,7 @@ This setting lets you specify the wallpaper on users' desktops and prevents user
 
 To use this setting, type the fully qualified path and name of the file that stores the wallpaper image. You can type a local path, such as C:\Windows\web\wallpaper\home.jpg or a UNC path, such as \\Server\Share\Corp.jpg. If the specified file is not available when the user logs on, no wallpaper is displayed. Users cannot specify alternative wallpaper. You can also use this setting to specify that the wallpaper image be centered, tiled, or stretched. Users cannot change this specification.
 
-- If you disable this setting or do not configure it, no wallpaper is displayed. However, users can select the wallpaper of their choice.
+If you disable this setting or do not configure it, no wallpaper is displayed. However, users can select the wallpaper of their choice.
 
 Also, see the "Allow only bitmapped wallpaper" in the same location, and the "Prevent changing wallpaper" setting in User Configuration\Administrative Templates\Control Panel.
 

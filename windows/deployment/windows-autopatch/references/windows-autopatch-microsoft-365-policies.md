@@ -26,8 +26,8 @@ Window Autopatch deploys mobile device management (MDM) policies to configure Mi
 | ----- | ----- | ----- |
 | Set updates to occur automatically | Enabled | Enable automatic updates |
 | Specify a location to look for updates | Blank | Don't use this setting since it overwrites the update branch |
-| Update branch | Monthly Enterprise | Supported branch for Windows Autopatch |
+| Update channel | Monthly Enterprise | Supported channel for Windows Autopatch |
 | Specify the version of Microsoft 365 Apps to update to | Variable | Used to roll back to a previous version if an error occurs |
-| Set a deadline by when updates must be applied | 3 | Update deadline |
+| Set a deadline by when updates must be applied | 7 | Update deadline |
 | Hide update notifications from users | Turned off | Users should be notified when Microsoft 365 Apps are being updated |
 | Hide the option to turn on or off automatic Office updates | Turned on | Prevents users from disabling automatic updates |

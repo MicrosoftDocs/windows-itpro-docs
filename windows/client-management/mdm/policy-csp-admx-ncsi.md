@@ -4,7 +4,7 @@ description: Learn more about the ADMX_NCSI Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,6 +47,8 @@ This policy setting enables you to specify the expected address of the host name
 
 <!-- NCSI_CorpDnsProbeContent-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This applies exclusively to DirectAccess clients.
 <!-- NCSI_CorpDnsProbeContent-Editable-End -->
 
 <!-- NCSI_CorpDnsProbeContent-DFProperties-Begin -->
@@ -102,6 +104,8 @@ This policy setting enables you to specify the host name of a computer known to 
 
 <!-- NCSI_CorpDnsProbeHost-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This applies exclusively to DirectAccess clients.
 <!-- NCSI_CorpDnsProbeHost-Editable-End -->
 
 <!-- NCSI_CorpDnsProbeHost-DFProperties-Begin -->
@@ -157,6 +161,8 @@ This policy setting enables you to specify the list of IPv6 corporate site prefi
 
 <!-- NCSI_CorpSitePrefixes-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This applies exclusively to DirectAccess clients.
 <!-- NCSI_CorpSitePrefixes-Editable-End -->
 
 <!-- NCSI_CorpSitePrefixes-DFProperties-Begin -->
@@ -212,6 +218,8 @@ This policy setting enables you to specify the URL of the corporate website, aga
 
 <!-- NCSI_CorpWebProbeUrl-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This applies exclusively to DirectAccess clients.
 <!-- NCSI_CorpWebProbeUrl-Editable-End -->
 
 <!-- NCSI_CorpWebProbeUrl-DFProperties-Begin -->
@@ -267,6 +275,8 @@ This policy setting enables you to specify the HTTPS URL of the corporate websit
 
 <!-- NCSI_DomainLocationDeterminationUrl-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This indicates the Network Location Server (NLS) URL and applies exclusively to DirectAccess clients (it does NOT apply for example to VPN clients). For non-DirectAccess scenarios, such as Azure AD only joined devices, please refer to [Policy CSP - NetworkListManager](./policy-csp-networklistmanager.md).
 <!-- NCSI_DomainLocationDeterminationUrl-Editable-End -->
 
 <!-- NCSI_DomainLocationDeterminationUrl-DFProperties-Begin -->
@@ -317,8 +327,7 @@ This policy setting enables you to specify the HTTPS URL of the corporate websit
 
 <!-- NCSI_GlobalDns-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it is currently probing on.
-- If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
+This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it is currently probing on. If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
 <!-- NCSI_GlobalDns-Description-End -->
 
 <!-- NCSI_GlobalDns-Editable-Begin -->

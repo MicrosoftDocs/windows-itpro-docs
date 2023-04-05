@@ -4,7 +4,7 @@ description: Learn more about the ADMX_PushToInstall Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -42,7 +42,7 @@ ms.topic: reference
 
 <!-- DisablePushToInstall-Description-Begin -->
 <!-- Description-Source-ADMX -->
-- If you enable this setting, users will not be able to push Apps to this device from the Microsoft Store running on other devices or the web.
+If you enable this setting, users will not be able to push Apps to this device from the Microsoft Store running on other devices or the web.
 <!-- DisablePushToInstall-Description-End -->
 
 <!-- DisablePushToInstall-Editable-Begin -->

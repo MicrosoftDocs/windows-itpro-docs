@@ -4,7 +4,7 @@ description: Learn more about the Wifi Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -193,7 +193,7 @@ By default, ICS is disabled when you create a remote access connection, but admi
 
 <!-- AllowManualWiFiConfiguration-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks. Most restricted value is 0
+Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks. Most restricted value is 0.
 
 > [!NOTE]
 > Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
@@ -343,7 +343,7 @@ Allow WiFi Direct connection. .
 
 <!-- WLANScanMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allow an enterprise to control the WLAN scanning behavior and how aggressively devices should be actively scanning for Wi-Fi networks to get devices connected. Supported values are 0-500, where 100 = normal scan frequency and 500 = low scan frequency. The default value is 0. Supported operations are Add, Delete, Get, and Replace.
+Allow an enterprise to control the WLAN scanning behavior and how aggressively devices should be actively scanning for Wi-Fi networks to get devices connected. Supported values are 0-500, where 100 = normal scan frequency and 500 = low scan frequency. The default value is 0.
 <!-- WLANScanMode-Description-End -->
 
 <!-- WLANScanMode-Editable-Begin -->
