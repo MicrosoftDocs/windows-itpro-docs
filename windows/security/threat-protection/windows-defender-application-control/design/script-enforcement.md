@@ -9,7 +9,7 @@ ms.reviewer: jogeurte
 ms.author: jogeurte
 ms.manager: jsuther
 manager: aaroncz
-ms.date: 02/02/2023
+ms.date: 04/05/2023
 ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
@@ -56,7 +56,7 @@ PowerShell **dot-sourcing** isn't recommended. Instead, scripts should use Power
 
 WDAC will put **interactive PowerShell** into Constrained Language Mode if any WDAC UMCI policy is enforced and *any* active WDAC policy enables script enforcement, even if that policy is in audit mode. To run interactive PowerShell with Full Language rights, you must disable script enforcement for *all* policies.
 
-For more information on PowerShell language modes, see [About Language Modes](/powershell/module/microsoft.powershell.core/about/about_language_modes).
+For more information, see [About Language Modes](/powershell/module/microsoft.powershell.core/about/about_language_modes) and [Constrained Language Mode](https://devblogs.microsoft.com/powershell/powershell-constrained-language-mode/).
 
 ### VBscript, cscript, and jscript
 
