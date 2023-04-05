@@ -1,7 +1,7 @@
 ---
 title: MDM enrollment of Windows 10-based devices
 description: Learn about mobile device management (MDM) enrollment of Windows 10-based devices to simplify access to your organization’s resources.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -11,20 +11,20 @@ author: vinaypamnani-msft
 ms.collection:
 - highpri
 - tier2
-ms.date: 12/31/2017
+ms.date: 04/05/2023
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
-# MDM enrollment of Windows 10-based devices
+# MDM enrollment of Windows devices
 
 In today's cloud-first world, enterprise IT departments increasingly want to let employees use their own devices, or even choose and purchase corporate-owned devices. Connecting your devices to work makes it easy for you to access your organization's resources, such as apps, the corporate network, and email.
 
 > [!NOTE]
 > When you connect your device using mobile device management (MDM) enrollment, your organization may enforce certain policies on your device.
 
-## Connect corporate-owned Windows 10-based devices
+## Connect corporate-owned Windows devices
 
 You can connect corporate-owned devices to work by either joining the device to an Active Directory domain, or to an Azure Active Directory (Azure AD) domain. Windows 10 doesn't require a personal Microsoft account on devices joined to Azure AD or an on-premises Active Directory domain.
 
