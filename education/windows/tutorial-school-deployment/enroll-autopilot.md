@@ -3,8 +3,6 @@ title: Enrollment in Intune with Windows Autopilot
 description: Learn how to join Azure AD and enroll in Intune using Windows Autopilot.
 ms.date: 08/31/2022
 ms.topic: tutorial
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Windows Autopilot

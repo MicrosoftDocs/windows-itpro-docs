@@ -4,7 +4,7 @@ description: Learn more about the Privacy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -90,6 +90,7 @@ Allows or disallows the automatic acceptance of the pairing and privacy user con
 <!-- AllowCrossDeviceClipboard-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Clipboard contents can be synchronized across devices.
+
 - If you enable this policy setting, Clipboard contents are allowed to be synchronized across devices logged in under the same Microsoft account or Azure AD account.
 - If you disable this policy setting, Clipboard contents cannot be shared to other devices.
 Policy change takes effect immediately.
@@ -372,6 +373,7 @@ In some managed environments, the privacy settings may be set by other policies.
 <!-- EnableActivityFeed-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting determines whether ActivityFeed is enabled.
+
 - If you enable this policy setting, all activity types (as applicable) are allowed to be published and ActivityFeed shall roam these activities across device graph of the user.
 - If you disable this policy setting, activities can't be published and ActivityFeed shall disable cloud sync.
 Policy change takes effect immediately.
@@ -436,8 +438,20 @@ Policy change takes effect immediately.
 <!-- LetAppsAccessAccountInfo-OmaUri-End -->
 
 <!-- LetAppsAccessAccountInfo-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can access account information.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access account information and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access account information and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessAccountInfo-Description-End -->
 
 <!-- LetAppsAccessAccountInfo-Editable-Begin -->
@@ -473,7 +487,7 @@ The most restrictive value is `2` to deny apps access to account information.
 |:--|:--|
 | Name | LetAppsAccessAccountInfo |
 | Friendly Name | Let Windows apps access account information |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -502,8 +516,20 @@ The most restrictive value is `2` to deny apps access to account information.
 <!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to account information. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access account information.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access account information and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access account information and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Editable-Begin -->
@@ -555,8 +581,20 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 <!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to account information. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access account information.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access account information and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access account information and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Editable-Begin -->
@@ -608,8 +646,20 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 <!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the account information privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access account information.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access account information and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access account information and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Editable-Begin -->
@@ -841,8 +891,20 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. The use
 <!-- LetAppsAccessCalendar-OmaUri-End -->
 
 <!-- LetAppsAccessCalendar-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can access the calendar.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the calendar and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the calendar and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCalendar-Description-End -->
 
 <!-- LetAppsAccessCalendar-Editable-Begin -->
@@ -878,7 +940,7 @@ The most restrictive value is `2` to deny apps access to the calendar.
 |:--|:--|
 | Name | LetAppsAccessCalendar |
 | Friendly Name | Let Windows apps access the calendar |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -907,8 +969,20 @@ The most restrictive value is `2` to deny apps access to the calendar.
 <!-- LetAppsAccessCalendar_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessCalendar_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to the calendar. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access the calendar.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the calendar and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the calendar and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCalendar_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessCalendar_ForceAllowTheseApps-Editable-Begin -->
@@ -960,8 +1034,20 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 <!-- LetAppsAccessCalendar_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessCalendar_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to the calendar. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access the calendar.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the calendar and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the calendar and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCalendar_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessCalendar_ForceDenyTheseApps-Editable-Begin -->
@@ -1013,8 +1099,20 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 <!-- LetAppsAccessCalendar_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the calendar privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access the calendar.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the calendar and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the calendar and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Editable-Begin -->
@@ -1066,8 +1164,20 @@ List of semi-colon delimited Package Family Names of Windows apps. The user is a
 <!-- LetAppsAccessCallHistory-OmaUri-End -->
 
 <!-- LetAppsAccessCallHistory-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can access call history.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access call history by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the call history and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the call history and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the call history by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCallHistory-Description-End -->
 
 <!-- LetAppsAccessCallHistory-Editable-Begin -->
@@ -1103,7 +1213,7 @@ The most restrictive value is `2` to deny apps access to call history.
 |:--|:--|
 | Name | LetAppsAccessCallHistory |
 | Friendly Name | Let Windows apps access call history |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -1132,8 +1242,20 @@ The most restrictive value is `2` to deny apps access to call history.
 <!-- LetAppsAccessCallHistory_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to call history. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access call history.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access call history by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the call history and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the call history and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the call history by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Editable-Begin -->
@@ -1185,8 +1307,20 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 <!-- LetAppsAccessCallHistory_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to call history. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access call history.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access call history by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the call history and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the call history and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the call history by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Editable-Begin -->
@@ -1238,8 +1372,20 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 <!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the call history privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access call history.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access call history by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the call history and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the call history and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the call history by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Editable-Begin -->
@@ -1291,8 +1437,20 @@ List of semi-colon delimited Package Family Names of Windows apps. The user is a
 <!-- LetAppsAccessCamera-OmaUri-End -->
 
 <!-- LetAppsAccessCamera-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can access the camera.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the camera and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the camera and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCamera-Description-End -->
 
 <!-- LetAppsAccessCamera-Editable-Begin -->
@@ -1328,7 +1486,7 @@ The most restrictive value is `2` to deny apps access to the camera.
 |:--|:--|
 | Name | LetAppsAccessCamera |
 | Friendly Name | Let Windows apps access the camera |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -1357,8 +1515,20 @@ The most restrictive value is `2` to deny apps access to the camera.
 <!-- LetAppsAccessCamera_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessCamera_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access the camera.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the camera and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the camera and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCamera_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessCamera_ForceAllowTheseApps-Editable-Begin -->
@@ -1410,8 +1580,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessCamera_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessCamera_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access the camera.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the camera and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the camera and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCamera_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessCamera_ForceDenyTheseApps-Editable-Begin -->
@@ -1463,8 +1645,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessCamera_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessCamera_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access the camera.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the camera and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the camera and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCamera_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessCamera_UserInControlOfTheseApps-Editable-Begin -->
@@ -1516,8 +1710,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessContacts-OmaUri-End -->
 
 <!-- LetAppsAccessContacts-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can access contacts.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access contacts and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access contacts and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessContacts-Description-End -->
 
 <!-- LetAppsAccessContacts-Editable-Begin -->
@@ -1553,7 +1759,7 @@ The most restrictive value is `2` to deny apps access to contacts.
 |:--|:--|
 | Name | LetAppsAccessContacts |
 | Friendly Name | Let Windows apps access contacts |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -1582,8 +1788,20 @@ The most restrictive value is `2` to deny apps access to contacts.
 <!-- LetAppsAccessContacts_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessContacts_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access contacts.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access contacts and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access contacts and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessContacts_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessContacts_ForceAllowTheseApps-Editable-Begin -->
@@ -1635,8 +1853,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessContacts_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessContacts_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access contacts.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access contacts and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access contacts and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessContacts_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessContacts_ForceDenyTheseApps-Editable-Begin -->
@@ -1688,8 +1918,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessContacts_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessContacts_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access contacts.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access contacts and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access contacts and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessContacts_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessContacts_UserInControlOfTheseApps-Editable-Begin -->
@@ -1741,8 +1983,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessEmail-OmaUri-End -->
 
 <!-- LetAppsAccessEmail-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can access email.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access email and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access email and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessEmail-Description-End -->
 
 <!-- LetAppsAccessEmail-Editable-Begin -->
@@ -1778,7 +2032,7 @@ The most restrictive value is `2` to deny apps access to email.
 |:--|:--|
 | Name | LetAppsAccessEmail |
 | Friendly Name | Let Windows apps access email |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -1807,8 +2061,20 @@ The most restrictive value is `2` to deny apps access to email.
 <!-- LetAppsAccessEmail_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessEmail_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access email.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access email and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access email and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessEmail_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessEmail_ForceAllowTheseApps-Editable-Begin -->
@@ -1860,8 +2126,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessEmail_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessEmail_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access email.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access email and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access email and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessEmail_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessEmail_ForceDenyTheseApps-Editable-Begin -->
@@ -1913,8 +2191,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessEmail_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessEmail_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access email.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access email and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access email and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessEmail_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessEmail_UserInControlOfTheseApps-Editable-Begin -->
@@ -2127,8 +2417,20 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. The use
 <!-- LetAppsAccessGraphicsCaptureProgrammatic-OmaUri-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies whether Windows apps can use screen capture on arbitrary windows or displays.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can take screenshots of various windows or displays.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureProgrammatic-Description-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic-Editable-Begin -->
@@ -2181,8 +2483,20 @@ This policy setting specifies whether Windows apps can use screen capture on arb
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to use screen capture on arbitrary windows or displays. This setting overrides the default LetAppsAccessGraphicsCaptureWithoutBorder policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can take screenshots of various windows or displays.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Editable-Begin -->
@@ -2234,8 +2548,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied the use of screen capture on arbitrary windows or displays. This setting overrides the default LetAppsAccessGraphicsCaptureWithoutBorder policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can take screenshots of various windows or displays.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Editable-Begin -->
@@ -2287,8 +2613,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the programmatic screen capture setting for the listed apps. This setting overrides the default LetAppsAccessGraphicsCaptureWithoutBorder policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can take screenshots of various windows or displays.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Editable-Begin -->
@@ -2340,8 +2678,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder-OmaUri-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies whether Windows apps can disable the screen capture border.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can turn off the screenshot border.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to turn off the screenshot border and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to turn off the screenshot border and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder-Description-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder-Editable-Begin -->
@@ -2366,7 +2716,7 @@ This policy setting specifies whether Windows apps can disable the screen captur
 |:--|:--|
 | Name | LetAppsAccessGraphicsCaptureWithoutBorder |
 | Friendly Name | Let Windows apps turn off the screenshot border |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -2395,8 +2745,20 @@ This policy setting specifies whether Windows apps can disable the screen captur
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to disable the screen capture border. This setting overrides the default LetAppsAccessGraphicsCaptureWithoutBorder policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can turn off the screenshot border.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to turn off the screenshot border and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to turn off the screenshot border and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Editable-Begin -->
@@ -2448,8 +2810,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied configuration access to the screen capture border. This setting overrides the default LetAppsAccessGraphicsCaptureWithoutBorder policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can turn off the screenshot border.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to turn off the screenshot border and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to turn off the screenshot border and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Editable-Begin -->
@@ -2501,8 +2875,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the screen capture border privacy setting for the listed apps. This setting overrides the default LetAppsAccessGraphicsCaptureWithoutBorder policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can turn off the screenshot border.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to turn off the screenshot border and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to turn off the screenshot border and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Editable-Begin -->
@@ -2538,6 +2924,216 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-End -->
 
+<!-- LetAppsAccessHumanPresence-Begin -->
+## LetAppsAccessHumanPresence
+
+<!-- LetAppsAccessHumanPresence-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.25000] and later |
+<!-- LetAppsAccessHumanPresence-Applicability-End -->
+
+<!-- LetAppsAccessHumanPresence-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessHumanPresence
+```
+<!-- LetAppsAccessHumanPresence-OmaUri-End -->
+
+<!-- LetAppsAccessHumanPresence-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access the human presence sensor.
+<!-- LetAppsAccessHumanPresence-Description-End -->
+
+<!-- LetAppsAccessHumanPresence-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessHumanPresence-Editable-End -->
+
+<!-- LetAppsAccessHumanPresence-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessHumanPresence-DFProperties-End -->
+
+<!-- LetAppsAccessHumanPresence-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessHumanPresence-AllowedValues-End -->
+
+<!-- LetAppsAccessHumanPresence-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessHumanPresence |
+| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
+| Element Name | LetAppsAccessHumanPresence_Enum |
+<!-- LetAppsAccessHumanPresence-GpMapping-End -->
+
+<!-- LetAppsAccessHumanPresence-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessHumanPresence-Examples-End -->
+
+<!-- LetAppsAccessHumanPresence-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Begin -->
+## LetAppsAccessHumanPresence_ForceAllowTheseApps
+
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.25000] and later |
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessHumanPresence_ForceAllowTheseApps
+```
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the human presence sensor. This setting overrides the default LetAppsAccessHumanPresence policy setting for the specified apps.
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Description-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Editable-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-DFProperties-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessHumanPresence |
+| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
+| Element Name | LetAppsAccessHumanPresence_ForceAllowTheseApps_List |
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-GpMapping-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Examples-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Begin -->
+## LetAppsAccessHumanPresence_ForceDenyTheseApps
+
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.25000] and later |
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessHumanPresence_ForceDenyTheseApps
+```
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the human presence sensor. This setting overrides the default LetAppsAccessHumanPresence policy setting for the specified apps.
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Description-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Editable-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-DFProperties-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessHumanPresence |
+| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
+| Element Name | LetAppsAccessHumanPresence_ForceDenyTheseApps_List |
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-GpMapping-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Examples-End -->
+
+<!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-End -->
+
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessHumanPresence_UserInControlOfTheseApps
+
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.25000] and later |
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessHumanPresence_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the human presence privacy setting for the listed apps. This setting overrides the default LetAppsAccessHumanPresence policy setting for the specified apps.
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Description-End -->
+
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Editable-End -->
+
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-DFProperties-End -->
+
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessHumanPresence |
+| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
+| Element Name | LetAppsAccessHumanPresence_UserInControlOfTheseApps_List |
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-GpMapping-End -->
+
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Examples-End -->
+
+<!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-End -->
+
 <!-- LetAppsAccessLocation-Begin -->
 ## LetAppsAccessLocation
 
@@ -2554,8 +3150,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessLocation-OmaUri-End -->
 
 <!-- LetAppsAccessLocation-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can access location.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access location and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access location and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessLocation-Description-End -->
 
 <!-- LetAppsAccessLocation-Editable-Begin -->
@@ -2591,7 +3199,7 @@ The most restrictive value is `2` to deny apps access to the device's location.
 |:--|:--|
 | Name | LetAppsAccessLocation |
 | Friendly Name | Let Windows apps access location |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -2620,8 +3228,20 @@ The most restrictive value is `2` to deny apps access to the device's location.
 <!-- LetAppsAccessLocation_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessLocation_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access location.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access location and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access location and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessLocation_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessLocation_ForceAllowTheseApps-Editable-Begin -->
@@ -2673,8 +3293,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessLocation_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessLocation_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access location.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access location and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access location and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessLocation_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessLocation_ForceDenyTheseApps-Editable-Begin -->
@@ -2726,8 +3358,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessLocation_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessLocation_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access location.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access location and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access location and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessLocation_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessLocation_UserInControlOfTheseApps-Editable-Begin -->
@@ -2779,8 +3423,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessMessaging-OmaUri-End -->
 
 <!-- LetAppsAccessMessaging-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can read or send messages (text or MMS).
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps can read or send messages and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps cannot read or send messages and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMessaging-Description-End -->
 
 <!-- LetAppsAccessMessaging-Editable-Begin -->
@@ -2816,7 +3472,7 @@ The most restrictive value is `2` to deny apps access to messaging.
 |:--|:--|
 | Name | LetAppsAccessMessaging |
 | Friendly Name | Let Windows apps access messaging |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -2845,8 +3501,20 @@ The most restrictive value is `2` to deny apps access to messaging.
 <!-- LetAppsAccessMessaging_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessMessaging_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can read or send messages (text or MMS).
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps can read or send messages and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps cannot read or send messages and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMessaging_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessMessaging_ForceAllowTheseApps-Editable-Begin -->
@@ -2898,8 +3566,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessMessaging_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessMessaging_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can read or send messages (text or MMS).
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps can read or send messages and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps cannot read or send messages and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMessaging_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessMessaging_ForceDenyTheseApps-Editable-Begin -->
@@ -2951,8 +3631,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessMessaging_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can read or send messages (text or MMS).
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps can read or send messages and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps cannot read or send messages and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Editable-Begin -->
@@ -3004,8 +3696,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessMicrophone-OmaUri-End -->
 
 <!-- LetAppsAccessMicrophone-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can access the microphone.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the microphone and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the microphone and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMicrophone-Description-End -->
 
 <!-- LetAppsAccessMicrophone-Editable-Begin -->
@@ -3041,7 +3745,7 @@ The most restrictive value is `2` to deny apps access to the microphone.
 |:--|:--|
 | Name | LetAppsAccessMicrophone |
 | Friendly Name | Let Windows apps access the microphone |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -3070,8 +3774,20 @@ The most restrictive value is `2` to deny apps access to the microphone.
 <!-- LetAppsAccessMicrophone_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access the microphone.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the microphone and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the microphone and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Editable-Begin -->
@@ -3123,8 +3839,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessMicrophone_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access the microphone.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the microphone and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the microphone and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Editable-Begin -->
@@ -3176,8 +3904,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access the microphone.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access the microphone and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access the microphone and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Editable-Begin -->
@@ -3229,8 +3969,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessMotion-OmaUri-End -->
 
 <!-- LetAppsAccessMotion-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can access motion data.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access motion data and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access motion data and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMotion-Description-End -->
 
 <!-- LetAppsAccessMotion-Editable-Begin -->
@@ -3266,7 +4018,7 @@ The most restrictive value is `2` to deny apps access to motion data.
 |:--|:--|
 | Name | LetAppsAccessMotion |
 | Friendly Name | Let Windows apps access motion |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -3295,8 +4047,20 @@ The most restrictive value is `2` to deny apps access to motion data.
 <!-- LetAppsAccessMotion_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessMotion_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access motion data.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access motion data and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access motion data and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMotion_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessMotion_ForceAllowTheseApps-Editable-Begin -->
@@ -3348,8 +4112,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessMotion_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessMotion_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access motion data.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access motion data and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access motion data and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMotion_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessMotion_ForceDenyTheseApps-Editable-Begin -->
@@ -3401,8 +4177,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessMotion_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessMotion_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access motion data.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access motion data and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access motion data and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMotion_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessMotion_UserInControlOfTheseApps-Editable-Begin -->
@@ -3454,8 +4242,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessNotifications-OmaUri-End -->
 
 <!-- LetAppsAccessNotifications-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can access notifications.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access notifications and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access notifications and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessNotifications-Description-End -->
 
 <!-- LetAppsAccessNotifications-Editable-Begin -->
@@ -3491,7 +4291,7 @@ The most restrictive value is `2` to deny apps access to notifications.
 |:--|:--|
 | Name | LetAppsAccessNotifications |
 | Friendly Name | Let Windows apps access notifications |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -3520,8 +4320,20 @@ The most restrictive value is `2` to deny apps access to notifications.
 <!-- LetAppsAccessNotifications_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessNotifications_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access notifications.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access notifications and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access notifications and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessNotifications_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessNotifications_ForceAllowTheseApps-Editable-Begin -->
@@ -3573,8 +4385,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessNotifications_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessNotifications_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access notifications.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access notifications and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access notifications and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessNotifications_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessNotifications_ForceDenyTheseApps-Editable-Begin -->
@@ -3626,8 +4450,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessNotifications_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access notifications.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access notifications and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access notifications and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Editable-Begin -->
@@ -3679,8 +4515,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessPhone-OmaUri-End -->
 
 <!-- LetAppsAccessPhone-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies whether Windows apps can make phone calls
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can make phone calls.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to make phone calls and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to make phone calls and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessPhone-Description-End -->
 
 <!-- LetAppsAccessPhone-Editable-Begin -->
@@ -3716,7 +4564,7 @@ The most restrictive value is `2` to deny apps access to make phone calls.
 |:--|:--|
 | Name | LetAppsAccessPhone |
 | Friendly Name | Let Windows apps make phone calls |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -3745,8 +4593,20 @@ The most restrictive value is `2` to deny apps access to make phone calls.
 <!-- LetAppsAccessPhone_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessPhone_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can make phone calls.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to make phone calls and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to make phone calls and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessPhone_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessPhone_ForceAllowTheseApps-Editable-Begin -->
@@ -3798,8 +4658,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessPhone_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessPhone_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can make phone calls.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to make phone calls and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to make phone calls and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessPhone_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessPhone_ForceDenyTheseApps-Editable-Begin -->
@@ -3851,8 +4723,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessPhone_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessPhone_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can make phone calls.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to make phone calls and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to make phone calls and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessPhone_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessPhone_UserInControlOfTheseApps-Editable-Begin -->
@@ -3904,8 +4788,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessRadios-OmaUri-End -->
 
 <!-- LetAppsAccessRadios-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps have access to control radios.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps will have access to control radios and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps will not have access to control radios and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessRadios-Description-End -->
 
 <!-- LetAppsAccessRadios-Editable-Begin -->
@@ -3941,7 +4837,7 @@ The most restrictive value is `2` to deny apps access to control radios.
 |:--|:--|
 | Name | LetAppsAccessRadios |
 | Friendly Name | Let Windows apps control radios |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -3970,8 +4866,20 @@ The most restrictive value is `2` to deny apps access to control radios.
 <!-- LetAppsAccessRadios_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessRadios_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps have access to control radios.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps will have access to control radios and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps will not have access to control radios and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessRadios_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessRadios_ForceAllowTheseApps-Editable-Begin -->
@@ -4023,8 +4931,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessRadios_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessRadios_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps have access to control radios.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps will have access to control radios and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps will not have access to control radios and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessRadios_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessRadios_ForceDenyTheseApps-Editable-Begin -->
@@ -4076,8 +4996,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessRadios_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessRadios_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps have access to control radios.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps will have access to control radios and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps will not have access to control radios and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessRadios_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessRadios_UserInControlOfTheseApps-Editable-Begin -->
@@ -4129,8 +5061,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessTasks-OmaUri-End -->
 
 <!-- LetAppsAccessTasks-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can access tasks.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access tasks and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access tasks and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTasks-Description-End -->
 
 <!-- LetAppsAccessTasks-Editable-Begin -->
@@ -4155,7 +5099,7 @@ This policy setting specifies whether Windows apps can access tasks.
 |:--|:--|
 | Name | LetAppsAccessTasks |
 | Friendly Name | Let Windows apps access Tasks |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -4184,8 +5128,20 @@ This policy setting specifies whether Windows apps can access tasks.
 <!-- LetAppsAccessTasks_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessTasks_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access tasks.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access tasks and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access tasks and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTasks_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessTasks_ForceAllowTheseApps-Editable-Begin -->
@@ -4237,8 +5193,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessTasks_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessTasks_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access tasks.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access tasks and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access tasks and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTasks_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessTasks_ForceDenyTheseApps-Editable-Begin -->
@@ -4290,8 +5258,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessTasks_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessTasks_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access tasks.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access tasks and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access tasks and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTasks_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessTasks_UserInControlOfTheseApps-Editable-Begin -->
@@ -4343,8 +5323,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessTrustedDevices-OmaUri-End -->
 
 <!-- LetAppsAccessTrustedDevices-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can access trusted devices.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access trusted devices and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access trusted devices and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTrustedDevices-Description-End -->
 
 <!-- LetAppsAccessTrustedDevices-Editable-Begin -->
@@ -4380,7 +5372,7 @@ The most restrictive value is `2` to deny apps access trusted devices.
 |:--|:--|
 | Name | LetAppsAccessTrustedDevices |
 | Friendly Name | Let Windows apps access trusted devices |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -4409,8 +5401,20 @@ The most restrictive value is `2` to deny apps access trusted devices.
 <!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access trusted devices.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access trusted devices and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access trusted devices and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Editable-Begin -->
@@ -4462,8 +5466,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access trusted devices.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access trusted devices and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access trusted devices and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Editable-Begin -->
@@ -4515,8 +5531,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access trusted devices.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access trusted devices and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access trusted devices and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Editable-Begin -->
@@ -4568,8 +5596,18 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsActivateWithVoice-OmaUri-End -->
 
 <!-- LetAppsActivateWithVoice-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can be activated by voice.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can be activated with a voice keyword by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to be activated with a voice keyword and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to be activated with a voice keyword and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can be activated with a voice keyword by using Settings > Privacy on the device.
+
+This policy is applied to Windows apps and Cortana.
 <!-- LetAppsActivateWithVoice-Description-End -->
 
 <!-- LetAppsActivateWithVoice-Editable-Begin -->
@@ -4603,7 +5641,7 @@ This policy setting specifies whether Windows apps can be activated by voice.
 |:--|:--|
 | Name | LetAppsActivateWithVoice |
 | Friendly Name | Let Windows apps activate with voice |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -4632,8 +5670,18 @@ This policy setting specifies whether Windows apps can be activated by voice.
 <!-- LetAppsActivateWithVoiceAboveLock-OmaUri-End -->
 
 <!-- LetAppsActivateWithVoiceAboveLock-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can be activated by voice while the system is locked.
+
+If you choose the "User is in control" option, employees in your organization can decide whether users can interact with applications using speech while the system is locked by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, users can interact with applications using speech while the system is locked and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, users cannot interact with applications using speech while the system is locked and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether users can interact with applications using speech while the system is locked by using Settings > Privacy on the device.
+
+This policy is applied to Windows apps and Cortana. It takes precedence of the "Allow Cortana above lock" policy. This policy is applicable only when "Allow voice activation" policy is configured to allow applications to be activated with voice.
 <!-- LetAppsActivateWithVoiceAboveLock-Description-End -->
 
 <!-- LetAppsActivateWithVoiceAboveLock-Editable-Begin -->
@@ -4667,7 +5715,7 @@ This policy setting specifies whether Windows apps can be activated by voice whi
 |:--|:--|
 | Name | LetAppsActivateWithVoiceAboveLock |
 | Friendly Name | Let Windows apps activate with voice while the system is locked |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -4696,8 +5744,20 @@ This policy setting specifies whether Windows apps can be activated by voice whi
 <!-- LetAppsGetDiagnosticInfo-OmaUri-End -->
 
 <!-- LetAppsGetDiagnosticInfo-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies whether Windows apps can get diagnostic information about other apps, including user names.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can get diagnostic information about other Windows apps, including user name.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can get diagnostic information about other apps using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can get diagnostic information about other apps by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsGetDiagnosticInfo-Description-End -->
 
 <!-- LetAppsGetDiagnosticInfo-Editable-Begin -->
@@ -4733,7 +5793,7 @@ The most restrictive value is `2` to deny apps access to diagnostic data.
 |:--|:--|
 | Name | LetAppsGetDiagnosticInfo |
 | Friendly Name | Let Windows apps access diagnostic information about other apps |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -4762,8 +5822,20 @@ The most restrictive value is `2` to deny apps access to diagnostic data.
 <!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed to get diagnostic information about other apps, including user names. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can get diagnostic information about other Windows apps, including user name.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can get diagnostic information about other apps using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can get diagnostic information about other apps by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Editable-Begin -->
@@ -4815,8 +5887,20 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 <!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are not allowed to get diagnostic information about other apps, including user names. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can get diagnostic information about other Windows apps, including user name.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can get diagnostic information about other apps using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can get diagnostic information about other apps by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Editable-Begin -->
@@ -4868,8 +5952,20 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 <!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the app diagnostics privacy setting for the listed Windows apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can get diagnostic information about other Windows apps, including user name.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can get diagnostic information about other apps using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can get diagnostic information about other apps by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Editable-Begin -->
@@ -4921,8 +6017,20 @@ List of semi-colon delimited Package Family Names of Windows apps. The user is a
 <!-- LetAppsRunInBackground-OmaUri-End -->
 
 <!-- LetAppsRunInBackground-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can run in the background.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to run in the background and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to run in the background and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsRunInBackground-Description-End -->
 
 <!-- LetAppsRunInBackground-Editable-Begin -->
@@ -4960,7 +6068,7 @@ The most restrictive value is `2` to deny apps from running in the background.
 |:--|:--|
 | Name | LetAppsRunInBackground |
 | Friendly Name | Let Windows apps run in the background |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -4989,8 +6097,20 @@ The most restrictive value is `2` to deny apps from running in the background.
 <!-- LetAppsRunInBackground_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsRunInBackground_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can run in the background.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to run in the background and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to run in the background and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsRunInBackground_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsRunInBackground_ForceAllowTheseApps-Editable-Begin -->
@@ -5042,8 +6162,20 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 <!-- LetAppsRunInBackground_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsRunInBackground_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are not allowed to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can run in the background.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to run in the background and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to run in the background and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsRunInBackground_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsRunInBackground_ForceDenyTheseApps-Editable-Begin -->
@@ -5095,8 +6227,20 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 <!-- LetAppsRunInBackground_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsRunInBackground_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the background apps privacy setting for the listed Windows apps. This setting overrides the default LetAppsRunInBackground policy setting for the specified Windows apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can run in the background.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to run in the background and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to run in the background and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsRunInBackground_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsRunInBackground_UserInControlOfTheseApps-Editable-Begin -->
@@ -5148,8 +6292,20 @@ List of semi-colon delimited Package Family Names of Windows apps. The user is a
 <!-- LetAppsSyncWithDevices-OmaUri-End -->
 
 <!-- LetAppsSyncWithDevices-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows apps can communicate with unpaired wireless devices.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsSyncWithDevices-Description-End -->
 
 <!-- LetAppsSyncWithDevices-Editable-Begin -->
@@ -5185,7 +6341,7 @@ The most restrictive value is `2` to deny apps syncing with devices.
 |:--|:--|
 | Name | LetAppsSyncWithDevices |
 | Friendly Name | Let Windows apps communicate with unpaired devices |
-| Element Name | Default for all apps |
+| Element Name | Default for all apps. |
 | Location | Computer Configuration |
 | Path | Windows Components > App Privacy |
 | Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
@@ -5214,8 +6370,20 @@ The most restrictive value is `2` to deny apps syncing with devices.
 <!-- LetAppsSyncWithDevices_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can communicate with unpaired wireless devices.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Editable-Begin -->
@@ -5267,8 +6435,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsSyncWithDevices_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can communicate with unpaired wireless devices.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Editable-Begin -->
@@ -5320,8 +6500,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can communicate with unpaired wireless devices.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Editable-Begin -->
@@ -5375,6 +6567,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- PublishUserActivities-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting determines whether User Activities can be published.
+
 - If you enable this policy setting, activities of type User Activity are allowed to be published.
 - If you disable this policy setting, activities of type User Activity are not allowed to be published.
 Policy change takes effect immediately.
@@ -5443,6 +6636,7 @@ For more information, see [Windows activity history and your privacy](https://su
 <!-- UploadUserActivities-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting determines whether published User Activities can be uploaded.
+
 - If you enable this policy setting, activities of type User Activity are allowed to be uploaded.
 - If you disable this policy setting, activities of type User Activity are not allowed to be uploaded.
 Deletion of activities of type User Activity are independent of this setting.

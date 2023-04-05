@@ -9,8 +9,6 @@ metadata:
     - tier1
   ms.topic: faq
   ms.date: 03/09/2023
-  appliesto: 
-    - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 
 title: Common questions about Windows Hello for Business
 summary: Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This Frequently Asked Questions (FAQ) article is intended to help you learn more about Windows Hello for Business.

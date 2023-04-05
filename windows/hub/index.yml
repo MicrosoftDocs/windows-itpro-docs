@@ -12,8 +12,9 @@ metadata:
   ms.prod: windows-client
   ms.collection:
     - highpri
-  author: dougeby #Required; your GitHub user alias, with correct capitalization.
-  ms.author: dougeby #Required; microsoft alias of author; optional team alias.
+    - tier1
+  author: aczechowski #Required; your GitHub user alias, with correct capitalization.
+  ms.author: aaroncz #Required; microsoft alias of author; optional team alias.
   ms.date: 10/01/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
 

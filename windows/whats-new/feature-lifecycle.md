@@ -9,7 +9,9 @@ ms.author: mstewart
 ms.topic: article
 ms.technology: itpro-fundamentals
 ms.date: 10/28/2022
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier2
 ---
 # Windows client features lifecycle
 

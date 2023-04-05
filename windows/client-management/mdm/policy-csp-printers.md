@@ -4,7 +4,7 @@ description: Learn more about the Printers Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -166,7 +166,7 @@ Manages how Queue-specific files are processed during printer installation. At p
 
 You can enable this setting to change the default behavior involving queue-specific files. To use this setting, select one of the options below from the "Manage processing of Queue-specific files" box.
 
-- If you disable or do not configure this policy setting, the default behavior is "Limit Queue-specific files to Color profiles".
+If you disable or do not configure this policy setting, the default behavior is "Limit Queue-specific files to Color profiles".
 
 - "Do not allow Queue-specific files" specifies that no queue-specific files will be allowed/processed during print queue/printer connection installation.
 
@@ -238,7 +238,7 @@ As part of this validation the catalog/embedded signature is verified and all fi
 
 You can enable this setting to change the default signature validation method. To use this setting, select one of the options below from the "Select the driver signature mechanism for this computer" box.
 
-- If you disable or do not configure this policy setting, the default method is "Allow all validly signed drivers".
+If you disable or do not configure this policy setting, the default method is "Allow all validly signed drivers".
 
 - "Require inbox signed drivers" specifies only drivers that are shipped as part of a Windows image are allowed on this computer.
 
@@ -508,15 +508,15 @@ This policy setting controls which protocol and protocol settings to use for out
 By default, RPC over TCP is used and authentication is always enabled. For RPC over named pipes, authentication is always enabled for domain joined machines but disabled for non domain joined machines.
 
 Protocol to use for outgoing RPC connections:
-- "RPC over TCP": Use RPC over TCP for outgoing RPC connections to a remote print spooler
-- "RPC over named pipes": Use RPC over named pipes for outgoing RPC connections to a remote print spooler
+  - "RPC over TCP": Use RPC over TCP for outgoing RPC connections to a remote print spooler
+  - "RPC over named pipes": Use RPC over named pipes for outgoing RPC connections to a remote print spooler
 
 Use authentication for outgoing RPC over named pipes connections:
-- "Default": By default domain joined computers enable RPC authentication for RPC over named pipes while non domain joined computers disable RPC authentication for RPC over named pipes
-- "Authentication enabled": RPC authentication will be used for outgoing RPC over named pipes connections
-- "Authentication disabled": RPC authentication will not be used for outgoing RPC over named pipes connections
+  - "Default": By default domain joined computers enable RPC authentication for RPC over named pipes while non domain joined computers disable RPC authentication for RPC over named pipes
+  - "Authentication enabled": RPC authentication will be used for outgoing RPC over named pipes connections
+  - "Authentication disabled": RPC authentication will not be used for outgoing RPC over named pipes connections
 
-- If you disable or do not configure this policy setting, the above defaults will be used.
+If you disable or do not configure this policy setting, the above defaults will be used.
 <!-- ConfigureRpcConnectionPolicy-Description-End -->
 
 <!-- ConfigureRpcConnectionPolicy-Editable-Begin -->
@@ -576,15 +576,15 @@ This policy setting controls which protocols incoming RPC connections to the pri
 By default, RPC over TCP is enabled and Negotiate is used for the authentication protocol.
 
 Protocols to allow for incoming RPC connections:
-- "RPC over named pipes": Incoming RPC connections are only allowed over named pipes
-- "RPC over TCP": Incoming RPC connections are only allowed over TCP (the default option)
-- "RPC over named pipes and TCP": Incoming RPC connections will be allowed over TCP and named pipes
+  - "RPC over named pipes": Incoming RPC connections are only allowed over named pipes
+  - "RPC over TCP": Incoming RPC connections are only allowed over TCP (the default option)
+  - "RPC over named pipes and TCP": Incoming RPC connections will be allowed over TCP and named pipes
 
 Authentication protocol to use for incoming RPC connections:
-- "Negotiate": Use the Negotiate authentication protocol (the default option)
-- "Kerberos": Use the Kerberos authentication protocol
+  - "Negotiate": Use the Negotiate authentication protocol (the default option)
+  - "Kerberos": Use the Kerberos authentication protocol
 
-- If you disable or do not configure this policy setting, the above defaults will be used.
+If you disable or do not configure this policy setting, the above defaults will be used.
 <!-- ConfigureRpcListenerPolicy-Description-End -->
 
 <!-- ConfigureRpcListenerPolicy-Editable-Begin -->
@@ -644,9 +644,9 @@ This policy setting controls which port is used for RPC over TCP for incoming co
 By default dynamic TCP ports are used.
 
 RPC over TCP port:
-- The port to use for RPC over TCP. A value of 0 is the default and indicates that dynamic TCP ports will be used
+  - The port to use for RPC over TCP. A value of 0 is the default and indicates that dynamic TCP ports will be used
 
-- If you disable or do not configure this policy setting, dynamic TCP ports are used.
+If you disable or do not configure this policy setting, dynamic TCP ports are used.
 <!-- ConfigureRpcTcpPort-Description-End -->
 
 <!-- ConfigureRpcTcpPort-Editable-Begin -->
@@ -831,7 +831,7 @@ This checks outranks the signature check and allows drivers that have a valid si
 
 Entries in the exclusion list consist of a SHA256 hash (or SHA1 hash for Win7) of the INF file and/or main driver DLL file of the driver and the name of the file.
 
-- If you disable or do not configure this policy setting, the registry key and values associated with this policy setting will be deleted, if currently set to a value.
+If you disable or do not configure this policy setting, the registry key and values associated with this policy setting will be deleted, if currently set to a value.
 <!-- ManageDriverExclusionList-Description-End -->
 
 <!-- ManageDriverExclusionList-Editable-Begin -->

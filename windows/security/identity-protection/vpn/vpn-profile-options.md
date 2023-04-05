@@ -1,17 +1,7 @@
 ---
 title: VPN profile options (Windows 10 and Windows 11)
 description: Windows adds Virtual Private Network (VPN) profile options to help manage how users connect. VPNs give users secure remote access to the company network.
-manager: aaroncz
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: pesmith
-ms.localizationpriority: medium
 ms.date: 05/17/2018
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
 ms.topic: conceptual
 ---
 
@@ -221,75 +211,75 @@ The following sample is a sample plug-in VPN profile. This blob would fall under
 
 ```xml
 <VPNProfile>
-	<ProfileName>TestVpnProfile</ProfileName>
-	<PluginProfile>
-		<ServerUrlList>testserver1.contoso.com;testserver2.contoso..com</ServerUrlList>
-		<PluginPackageFamilyName>JuniperNetworks.JunosPulseVpn_cw5n1h2txyewy</PluginPackageFamilyName>
-		<CustomConfiguration>&lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;</CustomConfiguration>
-	</PluginProfile>
-	<Route>
-		<Address>192.168.0.0</Address>
-		<PrefixSize>24</PrefixSize>
-	</Route>
-	<Route>
-		<Address>10.10.0.0</Address>
-		<PrefixSize>16</PrefixSize>
-	</Route>
-	<AppTrigger>
-		<App>
-			<Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
-		</App>
-	</AppTrigger>
-	<AppTrigger>
-		<App>
-			<Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>
-		</App>
-	</AppTrigger>
-	<TrafficFilter>
-		<App>
-			<Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>
-		</App>
-		<Protocol>6</Protocol>
-		<LocalPortRanges>10,20-50,100-200</LocalPortRanges>
-		<RemotePortRanges>20-50,100-200,300</RemotePortRanges>
-		<RemoteAddressRanges>30.30.0.0/16,10.10.10.10-20.20.20.20</RemoteAddressRanges>
-		<!--<RoutingPolicyType>ForceTunnel</RoutingPolicyType>-->
-	</TrafficFilter>
-	<TrafficFilter>
-		<App>
-			<Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
-		</App>
-		<LocalAddressRanges>3.3.3.3/32,1.1.1.1-2.2.2.2</LocalAddressRanges>
-	</TrafficFilter>
-	<TrafficFilter>
-		<App>
-			<Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
-		</App>
-		<Claims>O:SYG:SYD:(A;;CC;;;AU)</Claims>
-		<!--<RoutingPolicyType>SplitTunnel</RoutingPolicyType>-->
-	</TrafficFilter>
-	<DomainNameInformation>
-		<DomainName>corp.contoso.com</DomainName>
-		<DnsServers>1.2.3.4,5.6.7.8</DnsServers>
-		<WebProxyServers>5.5.5.5</WebProxyServers>
-		<AutoTrigger>false</AutoTrigger>
-	</DomainNameInformation>
-	<DomainNameInformation>
-		<DomainName>corp.contoso.com</DomainName>
-		<DnsServers>10.10.10.10,20.20.20.20</DnsServers>
-		<WebProxyServers>100.100.100.100</WebProxyServers>
-	</DomainNameInformation>
-	<!--<EdpModeId>corp.contoso.com</EdpModeId>-->
-	<RememberCredentials>true</RememberCredentials>
-	<AlwaysOn>false</AlwaysOn>
-	<DnsSuffix>corp.contoso.com</DnsSuffix>
-	<TrustedNetworkDetection>contoso.com,test.corp.contoso.com</TrustedNetworkDetection>
-	<Proxy>
-		<Manual>
-			<Server>HelloServer</Server>
-		</Manual>
-		<AutoConfigUrl>Helloworld.Com</AutoConfigUrl>
-	</Proxy>
+    <ProfileName>TestVpnProfile</ProfileName>
+    <PluginProfile>
+        <ServerUrlList>testserver1.contoso.com;testserver2.contoso..com</ServerUrlList>
+        <PluginPackageFamilyName>JuniperNetworks.JunosPulseVpn_cw5n1h2txyewy</PluginPackageFamilyName>
+        <CustomConfiguration>&lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;</CustomConfiguration>
+    </PluginProfile>
+    <Route>
+        <Address>192.168.0.0</Address>
+        <PrefixSize>24</PrefixSize>
+    </Route>
+    <Route>
+        <Address>10.10.0.0</Address>
+        <PrefixSize>16</PrefixSize>
+    </Route>
+    <AppTrigger>
+        <App>
+            <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
+        </App>
+    </AppTrigger>
+    <AppTrigger>
+        <App>
+            <Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>
+        </App>
+    </AppTrigger>
+    <TrafficFilter>
+        <App>
+            <Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>
+        </App>
+        <Protocol>6</Protocol>
+        <LocalPortRanges>10,20-50,100-200</LocalPortRanges>
+        <RemotePortRanges>20-50,100-200,300</RemotePortRanges>
+        <RemoteAddressRanges>30.30.0.0/16,10.10.10.10-20.20.20.20</RemoteAddressRanges>
+        <!--<RoutingPolicyType>ForceTunnel</RoutingPolicyType>-->
+    </TrafficFilter>
+    <TrafficFilter>
+        <App>
+            <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
+        </App>
+        <LocalAddressRanges>3.3.3.3/32,1.1.1.1-2.2.2.2</LocalAddressRanges>
+    </TrafficFilter>
+    <TrafficFilter>
+        <App>
+            <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
+        </App>
+        <Claims>O:SYG:SYD:(A;;CC;;;AU)</Claims>
+        <!--<RoutingPolicyType>SplitTunnel</RoutingPolicyType>-->
+    </TrafficFilter>
+    <DomainNameInformation>
+        <DomainName>corp.contoso.com</DomainName>
+        <DnsServers>1.2.3.4,5.6.7.8</DnsServers>
+        <WebProxyServers>5.5.5.5</WebProxyServers>
+        <AutoTrigger>false</AutoTrigger>
+    </DomainNameInformation>
+    <DomainNameInformation>
+        <DomainName>corp.contoso.com</DomainName>
+        <DnsServers>10.10.10.10,20.20.20.20</DnsServers>
+        <WebProxyServers>100.100.100.100</WebProxyServers>
+    </DomainNameInformation>
+    <!--<EdpModeId>corp.contoso.com</EdpModeId>-->
+    <RememberCredentials>true</RememberCredentials>
+    <AlwaysOn>false</AlwaysOn>
+    <DnsSuffix>corp.contoso.com</DnsSuffix>
+    <TrustedNetworkDetection>contoso.com,test.corp.contoso.com</TrustedNetworkDetection>
+    <Proxy>
+        <Manual>
+            <Server>HelloServer</Server>
+        </Manual>
+        <AutoConfigUrl>Helloworld.Com</AutoConfigUrl>
+    </Proxy>
 </VPNProfile>  
 ```
 
