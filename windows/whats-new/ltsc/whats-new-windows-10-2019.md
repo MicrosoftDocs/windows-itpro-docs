@@ -6,10 +6,9 @@ description: New and updated IT Pro content about new features in Windows 10 Ent
 ms.prod: windows-client
 author: mestew
 ms.localizationpriority: medium
-ms.topic: article
-ms.collection: highpri, tier1
+ms.topic: conceptual
 ms.technology: itpro-fundamentals
-ms.date: 12/31/2017
+ms.date: 04/05/2023
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2019
@@ -36,7 +35,8 @@ The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC use
 
 ## Microsoft Intune
 
-Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later. However, Windows 10 update rings device profiles don't support LTSC releases. For installing software updates, use the [policy configuration service provider (CSP)](/windows/client-management/mdm/policy-csp-update), Windows Server Update Services (WSUS), or Microsoft Configuration Manager.
+Microsoft Intune supports Windows 10 Enterprise LTSC 2019 with the following exception:
+- [Update rings](/mem/intune/protect/windows-10-update-rings) can't be used for feature updates since they aren't supported by Windows Update for Business. Update rings can be used for quality updates for Windows 10 Enterprise LTSC 2019 clients.
 
 ## Security
 
@@ -201,7 +201,7 @@ Windows Hello for Business now supports FIDO 2.0 authentication for Azure AD Joi
 
 - Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign-in, and will notify Dynamic lock users if Dynamic lock has stopped working because their device Bluetooth is off.
 
-- You can set up Windows Hello from lock screen for Microsoft accounts. We’ve made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
+- You can set up Windows Hello from lock screen for Microsoft accounts. We've made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
 
 - New [public API](/uwp/api/windows.security.authentication.web.core.webauthenticationcoremanager.findallaccountsasync) for secondary account SSO for a particular identity provider.
 

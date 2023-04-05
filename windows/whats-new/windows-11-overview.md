@@ -9,7 +9,9 @@ ms.date: 09/20/2022
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: overview
-ms.collection: highpri, tier1
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Windows 11 overview

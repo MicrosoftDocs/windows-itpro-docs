@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -89,7 +89,7 @@ The following XML file contains the device description framework (DDF) for the D
         <AccessType>
           <Get />
         </AccessType>
-        <Description>This node provides status of the Device Preparation page.  Values are an enum: 0 = Disabled; 1 = Enabled;  2 = InProgress; 3 = Succeeded; 4 = Failed.</Description>
+        <Description>This node provides status of the Device Preparation page.  Values are an enum: 0 = Disabled; 1 = Enabled;  2 = InProgress; 3 = ExitedOnSuccess; 4 = ExitedOnFailure.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -240,6 +240,49 @@ The following XML file contains the device description framework (DDF) for the D
           </DFType>
           <MSFT:AllowedValues ValueType="None">
           </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+    </Node>
+    <Node>
+      <NodeName>MDMProvider</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <Description>The subnode configures the settings for the MDMProvider.</Description>
+        <DFFormat>
+          <node />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <DDFName />
+        </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>Progress</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+            <Replace />
+          </AccessType>
+          <Description>Noode for reporting progress status as opaque data.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
         </DFProperties>
       </Node>
     </Node>

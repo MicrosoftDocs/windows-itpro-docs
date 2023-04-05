@@ -4,7 +4,7 @@ description: Learn more about the LAPS CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 03/27/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -112,7 +112,7 @@ Use this setting to tell the CSP to immediately generate and store a new passwor
 
 <!-- Device-Actions-ResetPassword-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-This action invokes an immediate reset of the local administrator account password, ignoring the normal constraints such as PasswordLengthDays, etc
+This action invokes an immediate reset of the local administrator account password, ignoring the normal constraints such as PasswordLengthDays, etc.
 <!-- Device-Actions-ResetPassword-Editable-End -->
 
 <!-- Device-Actions-ResetPassword-DFProperties-Begin -->
@@ -333,7 +333,7 @@ This setting is ignored if the password is currently being stored in Azure.
 
 This setting is only honored when the Active Directory domain is at Windows Server 2016 Domain Functional Level or higher.
 
-- If this setting is enabled, and the Active Directory domain meets the DFL prerequisite, the password will be encrypted before before being stored in Active Directory.
+- If this setting is enabled, and the Active Directory domain meets the DFL prerequisite, the password will be encrypted before being stored in Active Directory.
 
 - If this setting is disabled, or the Active Directory domain does not meet the DFL prerequisite, the password will be stored as clear-text in Active Directory.
 
@@ -343,7 +343,7 @@ If not specified, this setting defaults to True.
 <!-- Device-Policies-ADPasswordEncryptionEnabled-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!IMPORTANT]
-> This setting is ignored unless BackupDirectory is configured to back up the password to Active Directory, AND the the Active Directory domain is at Windows Server 2016 Domain Functional Level or higher.
+> This setting is ignored unless BackupDirectory is configured to back up the password to Active Directory, AND the Active Directory domain is at Windows Server 2016 Domain Functional Level or higher.
 <!-- Device-Policies-ADPasswordEncryptionEnabled-Editable-End -->
 
 <!-- Device-Policies-ADPasswordEncryptionEnabled-DFProperties-Begin -->
@@ -642,8 +642,8 @@ If not specified, this setting defaults to True.
 
 | Value | Description |
 |:--|:--|
-| false | Allow configured password expiriration timestamp to exceed maximum password age. |
-| true (Default) | Do not allow configured password expiriration timestamp to exceed maximum password age. |
+| false | Allow configured password expiration timestamp to exceed maximum password age. |
+| true (Default) | Do not allow configured password expiration timestamp to exceed maximum password age. |
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-AllowedValues-End -->
 
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-Examples-Begin -->

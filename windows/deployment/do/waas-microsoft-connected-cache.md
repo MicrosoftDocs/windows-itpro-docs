@@ -20,14 +20,26 @@ ms.collection: tier3
 - Windows 11
 
 > [!IMPORTANT]
-> Microsoft Connected Cache is currently a preview feature. To view our Microsoft Connected Cache for ISPs early preview documentation, visit [Microsoft Connected Cache for Internet Service Providers (ISPs)](mcc-isp.md). For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+> Microsoft Connected Cache is currently a preview feature. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
-Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. Microsoft Connected Cache has two main offerings: 1) Microsoft Connected Cache for Internet Service Providers and 2) Microsoft Connected Cache for Enterprise and Education (early preview). Both products are created and managed in the cloud portal.
+Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. Microsoft Connected Cache has two main offerings:
+- Microsoft Connected Cache for Internet Service Providers 
+- Microsoft Connected Cache for Enterprise and Education (early preview). 
+
+Both products are created and managed in the cloud portal.
 
 ## Microsoft Connected Cache for ISPs (preview)
+
+> [!NOTE]
+> Microsoft Connected Cache for Internet Service Providers is now in public preview. Instead of submitting a survey, you can directly onboard by following the instructions in the [Operator sign up and service onboarding](mcc-isp-signup.md) article.
+
 Microsoft Connected Cache (MCC) for Internet Service Providers is currently in preview. MCC can be deployed to as many bare-metal servers or VMs as needed and is managed from a cloud portal. When deployed, MCC can help to reduce your network bandwidth usage for Microsoft software content and updates. Cache nodes are created in the cloud portal and are configured to deliver traffic to customers by manual CIDR or BGP routing.
 
 ## Microsoft Connected Cache for Enterprise and Education (early preview)
+
+> [!NOTE]
+> We're still accepting Enterprise and Education customers to join the early preview. To register your interest, fill out the survey located at [https://aka.ms/MSConnectedCacheSignup](https://aka.ms/MSConnectedCacheSignup).
+
 Microsoft Connected Cache (MCC) for Enterprise and Education (early preview) is a software-only caching solution that delivers Microsoft content within Enterprise and Education networks. MCC can be deployed to as many Windows servers, bare-metal servers, or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the client policy using management tools such as Intune.
 
 MCC is a hybrid (mix of on-premises and cloud resources) SaaS solution built as an Azure IoT Edge module and Docker compatible Linux container deployed to your Windows devices. The Delivery Optimization team chose IoT Edge for Linux on Windows (EFLOW) as a secure, reliable container management infrastructure. EFLOW is a Linux virtual machine, based on Microsoft's first party CBL-Mariner operating system. It’s built with the IoT Edge runtime and validated as a tier 1 supported environment for IoT Edge workloads. MCC will be a Linux IoT Edge module running on the Windows Host OS.  

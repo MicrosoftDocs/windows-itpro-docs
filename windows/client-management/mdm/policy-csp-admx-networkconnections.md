@@ -4,7 +4,7 @@ description: Learn more about the ADMX_NetworkConnections Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -544,7 +544,7 @@ Specifies whether or not the "local access only" network icon will be shown.
 
 When enabled, the icon for Internet access will be shown in the system tray even when a user is connected to a network with local access only.
 
-- If you disable this setting or do not configure it, the "local access only" icon will be used when a user is connected to a network with local access only.
+If you disable this setting or do not configure it, the "local access only" icon will be used when a user is connected to a network with local access only.
 <!-- NC_DoNotShowLocalOnlyIcon-Description-End -->
 
 <!-- NC_DoNotShowLocalOnlyIcon-Editable-Begin -->
@@ -950,6 +950,7 @@ This setting determines whether the Properties menu item is enabled, and thus, w
 
 > [!NOTE]
 > This setting takes precedence over settings that manipulate the availability of features inside the Local Area Connection Properties dialog box.
+
 - If this setting is enabled, nothing within the properties dialog box for a LAN connection is available to users.
 
 > [!NOTE]
@@ -1378,6 +1379,7 @@ This setting determines whether the Properties menu item is enabled, and thus, w
 
 > [!NOTE]
 > This setting takes precedence over settings that manipulate the availability of features in the Remote Access Connection Properties dialog box.
+
 - If this setting is enabled, nothing within the properties dialog box for a remote access connection will be available to users.
 
 > [!NOTE]
@@ -1445,7 +1447,7 @@ To create an all-user connection, on the Connection Availability page in the New
 
 - If you disable this setting, the Rename option is disabled for nonadministrators only.
 
-If you do not configure the setting, only Administrators and Network Configuration Operators can rename all-user remote access connections.
+- If you do not configure the setting, only Administrators and Network Configuration Operators can rename all-user remote access connections.
 
 > [!NOTE]
 > This setting does not apply to Administrators

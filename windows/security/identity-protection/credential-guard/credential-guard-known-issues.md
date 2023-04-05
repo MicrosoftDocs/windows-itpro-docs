@@ -1,11 +1,8 @@
 ---
+ms.date: 11/28/2022
 title: Windows Defender Credential Guard - Known issues
 description: Windows Defender Credential Guard - Known issues in Windows Enterprise
 ms.topic: article
-ms.date: 11/28/2022
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 # Windows Defender Credential Guard: Known issues
 

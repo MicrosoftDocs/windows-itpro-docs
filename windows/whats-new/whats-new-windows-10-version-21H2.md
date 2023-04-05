@@ -7,7 +7,9 @@ ms.author: mstewart
 author: mestew
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
 ---
@@ -35,7 +37,7 @@ To learn more about the status of the November 2021 Update rollout, known issues
 
 Windows 10, version 21H2 feature updates are installed annually using the General Availability Channel. Previous feature updates were installed using the General Availability Channel. For more information on this change, see the [How to get the Windows 10 November 2021 Update](https://blogs.windows.com/windowsexperience/?p=176473).
 
-Quality updates are still installed monthly on patch Tuesday.
+Quality updates are still installed monthly on the second Tuesday of the month.
 
 For more information, see:
 

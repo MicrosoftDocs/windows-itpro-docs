@@ -5,8 +5,10 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.collection: highpri, tier2
+ms.topic: troubleshooting
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-updates
 ms.date: 12/31/2017
 ---

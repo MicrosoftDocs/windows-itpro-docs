@@ -4,7 +4,7 @@ description: Learn more about the ADMX_tcpip Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -535,7 +535,7 @@ This policy setting allows you to select the UDP port the Teredo client will use
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set Teredo to be ready to communicate, a process referred to as qualification. By default, Teredo enters a dormant state when not in use. The qualification process brings it out of a dormant state.
 
-- If you disable or do not configure this policy setting, the local host setting is used.
+If you disable or do not configure this policy setting, the local host setting is used.
 
 This policy setting contains only one state:
 

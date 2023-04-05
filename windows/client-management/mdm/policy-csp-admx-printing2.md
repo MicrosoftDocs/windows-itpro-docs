@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Printing2 Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -251,7 +251,7 @@ By default, the pruning service contacts computers every eight hours and allows 
 
 - If you enable this setting, you can change the interval between contact attempts.
 
-If you do not configure or disable this setting the default values will be used.
+- If you do not configure or disable this setting the default values will be used.
 
 > [!NOTE]
 > This setting is used only on domain controllers.
@@ -381,7 +381,7 @@ By default, the pruning service contacts computers every eight hours and allows 
 
 - If you enable this setting, you can change the interval between attempts.
 
-If you do not configure or disable this setting, the default values are used.
+- If you do not configure or disable this setting, the default values are used.
 
 > [!NOTE]
 > This setting is used only on domain controllers.

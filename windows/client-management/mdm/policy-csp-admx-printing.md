@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Printing Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -242,6 +242,7 @@ Web view is affected by the "Turn on Classic Shell" and "Do not allow Folder Opt
 
 <!-- DomainPrinters-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy setting, it sets the maximum number of printers (of each type) that the Add Printer wizard will display on a computer on a managed network (when the computer is able to reach a domain controller, e.g. a domain-joined laptop on a corporate network.)
 
 - If this policy setting is disabled, the network scan page will not be displayed.
@@ -258,6 +259,7 @@ In order to view available Web Services printers on your network, ensure that ne
 If you would like to not display printers of a certain type, enable this policy and set the number of printers to display to 0.
 
 In Windows 10 and later, only TCP/IP printers can be shown in the wizard.
+
 - If you enable this policy setting, only TCP/IP printer limits are applicable. On Windows 10 only, if you disable or do not configure this policy setting, the default limit is applied.
 
 In Windows 8 and later, Bluetooth printers are not shown so its limit does not apply to those versions of Windows.
@@ -577,7 +579,7 @@ Adds a link to an Internet or intranet Web page to the Add Printer Wizard.
 
 You can use this setting to direct users to a Web page from which they can install printers.
 
-- If you enable this setting and type an Internet or intranet address in the text box, the system adds a Browse button to the "Specify a Printer" page in the Add Printer Wizard. The Browse button appears beside the "Connect to a printer on the Internet or on a home or office network" option. When users click Browse, the system opens an Internet browser and navigates to the specified URL address to display the available printers.
+If you enable this setting and type an Internet or intranet address in the text box, the system adds a Browse button to the "Specify a Printer" page in the Add Printer Wizard. The Browse button appears beside the "Connect to a printer on the Internet or on a home or office network" option. When users click Browse, the system opens an Internet browser and navigates to the specified URL address to display the available printers.
 
 This setting makes it easy for users to find the printers you want them to add.
 
@@ -823,13 +825,14 @@ Microsoft XPS Document Writer (MXDW) generates OpenXPS (*.oxps) files by default
 
 <!-- NoDeletePrinter-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If this policy setting is enabled, it prevents users from deleting local and network printers.
 
 If a user tries to delete a printer, such as by using the Delete option in Printers in Control Panel, a message appears explaining that a setting prevents the action.
 
 This setting does not prevent users from running other programs to delete a printer.
 
-If this policy is disabled, or not configured, users can delete printers using the methods described above.
+- If this policy is disabled, or not configured, users can delete printers using the methods described above.
 <!-- NoDeletePrinter-Description-End -->
 
 <!-- NoDeletePrinter-Editable-Begin -->
@@ -898,6 +901,7 @@ Shared printers: 50
 If you would like to not display printers of a certain type, enable this policy and set the number of printers to display to 0.
 
 In Windows 10 and later, only TCP/IP printers can be shown in the wizard.
+
 - If you enable this policy setting, only TCP/IP printer limits are applicable. On Windows 10 only, if you disable or do not configure this policy setting, the default limit is applied.
 
 In Windows 8 and later, Bluetooth printers are not shown so its limit does not apply to those versions of Windows.
@@ -1204,6 +1208,7 @@ Windows Vista and later clients will attempt to make a non-package point and pri
 
 <!-- PhysicalLocation-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If this policy setting is enabled, it specifies the default location criteria used when searching for printers.
 
 This setting is a component of the Location Tracking feature of Windows printers. To use this setting, enable Location Tracking by enabling the "Pre-populate printer search location text" setting.
@@ -1463,7 +1468,7 @@ Specifies the Active Directory location where searches for printers begin.
 
 The Add Printer Wizard gives users the option of searching Active Directory for a shared printer.
 
-- If you enable this policy setting, these searches begin at the location you specify in the "Default Active Directory path" box. Otherwise, searches begin at the root of Active Directory.
+If you enable this policy setting, these searches begin at the location you specify in the "Default Active Directory path" box. Otherwise, searches begin at the root of Active Directory.
 
 This setting only provides a starting point for Active Directory searches for printers. It does not restrict user searches through Active Directory.
 <!-- PrinterDirectorySearchScope-Description-End -->

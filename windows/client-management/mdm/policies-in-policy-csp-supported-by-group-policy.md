@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Group Policy.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/03/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -340,6 +340,10 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [ClearTextPassword](policy-csp-devicelock.md)
 - [PasswordComplexity](policy-csp-devicelock.md)
 - [PasswordHistorySize](policy-csp-devicelock.md)
+- [AccountLockoutThreshold](policy-csp-devicelock.md)
+- [AccountLockoutDuration](policy-csp-devicelock.md)
+- [ResetAccountLockoutCounterAfter](policy-csp-devicelock.md)
+- [AllowAdministratorLockout](policy-csp-devicelock.md)
 
 ## Display
 
@@ -400,6 +404,10 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [ForceInstantLock](policy-csp-humanpresence.md)
 - [ForceLockTimeout](policy-csp-humanpresence.md)
 - [ForceInstantDim](policy-csp-humanpresence.md)
+- [ForceDisableWakeWhenBatterySaverOn](policy-csp-humanpresence.md)
+- [ForceAllowWakeWhenExternalDisplayConnected](policy-csp-humanpresence.md)
+- [ForceAllowLockWhenExternalDisplayConnected](policy-csp-humanpresence.md)
+- [ForceAllowDimWhenExternalDisplayConnected](policy-csp-humanpresence.md)
 
 ## Kerberos
 
@@ -511,6 +519,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 
 - [DisallowNotificationMirroring](policy-csp-notifications.md)
 - [DisallowTileNotification](policy-csp-notifications.md)
+- [EnableExpandedToastNotifications](policy-csp-notifications.md)
 - [DisallowCloudNotification](policy-csp-notifications.md)
 - [WnsEndpoint](policy-csp-notifications.md)
 
@@ -574,6 +583,10 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps](policy-csp-privacy.md)
+- [LetAppsAccessHumanPresence](policy-csp-privacy.md)
+- [LetAppsAccessHumanPresence_ForceAllowTheseApps](policy-csp-privacy.md)
+- [LetAppsAccessHumanPresence_ForceDenyTheseApps](policy-csp-privacy.md)
+- [LetAppsAccessHumanPresence_UserInControlOfTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessLocation](policy-csp-privacy.md)
 - [LetAppsAccessLocation_ForceAllowTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessLocation_ForceDenyTheseApps](policy-csp-privacy.md)
@@ -676,6 +689,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [StartLayout](policy-csp-start.md)
 - [ConfigureStartPins](policy-csp-start.md)
 - [HideRecommendedSection](policy-csp-start.md)
+- [HideRecoPersonalizedSites](policy-csp-start.md)
 - [HideTaskViewButton](policy-csp-start.md)
 - [DisableControlCenter](policy-csp-start.md)
 - [ForceStartSize](policy-csp-start.md)
@@ -686,6 +700,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [StartLayout](policy-csp-start.md)
 - [ConfigureStartPins](policy-csp-start.md)
 - [HideRecommendedSection](policy-csp-start.md)
+- [HideRecoPersonalizedSites](policy-csp-start.md)
 - [SimplifyQuickSettings](policy-csp-start.md)
 - [DisableEditingQuickSettings](policy-csp-start.md)
 - [HideTaskViewButton](policy-csp-start.md)
@@ -869,6 +884,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [DenyLogOnAsBatchJob](policy-csp-userrights.md)
 - [LogOnAsService](policy-csp-userrights.md)
 - [IncreaseProcessWorkingSet](policy-csp-userrights.md)
+- [DenyServiceLogonRight](policy-csp-userrights.md)
 
 ## VirtualizationBasedTechnology
 

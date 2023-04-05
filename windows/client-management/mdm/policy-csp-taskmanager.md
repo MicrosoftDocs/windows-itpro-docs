@@ -4,7 +4,7 @@ description: Learn more about the TaskManager Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowEndTask-Description-Begin -->
 <!-- Description-Source-DDF -->
-This setting determines whether non-administrators can use Task Manager to end tasks - enabled (1) or disabled (0). Default: enabled
+This setting determines whether non-administrators can use Task Manager to end tasks - enabled (1) or disabled (0). Default: enabled.
 <!-- AllowEndTask-Description-End -->
 
 <!-- AllowEndTask-Editable-Begin -->
