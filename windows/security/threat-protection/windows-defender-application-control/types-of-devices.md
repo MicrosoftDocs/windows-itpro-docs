@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 03/01/2018
+ms.date: 04/05/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -35,10 +35,10 @@ Typically, deployment of Windows Defender Application Control (WDAC) happens bes
 
 | **Type of device**                 | **How WDAC relates to this type of device**  | 
 |------------------------------------|------------------------------------------------------|
-| **Lightly managed devices**: Company-owned, but users are free to install software.<br>Devices are required to run organization's antivirus solution and client management tools. | Windows Defender Application Control can be used to help protect the kernel, and to monitor (audit) for problem applications rather than limiting the applications that can be run. | 
-| **Fully managed devices**: Allowed software is restricted by IT department.<br>Users can request for more software, or install from a list of applications provided by IT department.<br>Examples: locked-down, company-owned desktops and laptops. | An initial baseline Windows Defender Application Control policy can be established and enforced. Whenever the IT department approves more applications, it will update the WDAC policy and (for unsigned LOB applications) the catalog.<br>WDAC policies are supported by the HVCI service. | 
-| **Fixed-workload devices**: Perform same tasks every day.<br>Lists of approved applications rarely change.<br>Examples: kiosks, point-of-sale systems, call center computers. | Windows Defender Application Control can be deployed fully, and deployment and ongoing administration are relatively straightforward.<br>After Windows Defender Application Control deployment, only approved applications can run. This rule is because of protections offered by WDAC. | 
-| **Bring Your Own Device**: Employees are allowed to bring their own devices, and also use those devices away from work. | In most cases, Windows Defender Application Control doesn't apply. Instead, you can explore other hardening and security features with MDM-based conditional access solutions, such as Microsoft Intune. However, you may choose to deploy an audit-mode policy to these devices or employ a blocklist only policy to prevent specific apps or binaries that are considered malicious or vulnerable by your organization. | 
+| **Lightly managed devices**: Company-owned, but users are free to install software.<br>Devices are required to run organization's antivirus solution and client management tools. | Windows Defender Application Control can be used to help protect the kernel, and to monitor (audit) for problem applications rather than limiting the applications that can be run. |
+| **Fully managed devices**: Allowed software is restricted by IT department.<br>Users can request for more software, or install from a list of applications provided by IT department.<br>Examples: locked-down, company-owned desktops and laptops. | An initial baseline Windows Defender Application Control policy can be established and enforced. Whenever the IT department approves more applications, it updates the WDAC policy and (for unsigned LOB applications) the catalog. |
+| **Fixed-workload devices**: Perform same tasks every day.<br>Lists of approved applications rarely change.<br>Examples: kiosks, point-of-sale systems, call center computers. | Windows Defender Application Control can be deployed fully, and deployment and ongoing administration are relatively straightforward.<br>After Windows Defender Application Control deployment, only approved applications can run. This rule is because of protections offered by WDAC. |
+| **Bring Your Own Device**: Employees are allowed to bring their own devices, and also use those devices away from work. | In most cases, Windows Defender Application Control doesn't apply. Instead, you can explore other hardening and security features with MDM-based conditional access solutions, such as Microsoft Intune. However, you may choose to deploy an audit-mode policy to these devices or employ a blocklist only policy to prevent specific apps or binaries that are considered malicious or vulnerable by your organization. |
 
 ## An introduction to Lamna Healthcare Company
 
