@@ -122,6 +122,7 @@ sections:
         answer: |
           If the [UCClient table](wufb-reports-schema-ucclient.md) has data, but the [workbook](wufb-reports-workbook.md) isn't displaying data, ensure that the user has correct permissions to read the data. The [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role is needed to view the data in the workbooks. The [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role is needed to do any edits to the queries and workbooks.
   - name: Delivery Optimization data
+    questions:  
       - question: What time period does the Delivery Optimization data include?
         answer: |
           Data is available for the last 28 days.
