@@ -223,7 +223,7 @@ All Windows 10-based devices can be connected to MDM. You can connect to an MDM 
 
    ![access work or school.](images/unifiedenrollment-rs1-30.png)
 
-1. Select the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934). For older builds, see [Connect your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connect-your-windows-10-based-device-to-work-using-a-deep-link).
+1. Select the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934). For older builds, see [Connect your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connect-your-windows-device-to-work-using-a-deep-link).
 
    ![connect to work or school screen](images/unifiedenrollment-rs1-31.png)
 
