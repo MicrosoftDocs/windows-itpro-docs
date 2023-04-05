@@ -22,7 +22,7 @@ The following table lists common app deployment issues on Windows 11 SE, and opt
 Use the Event Viewer to see if a supplemental policy is deployed correctly. These rules apply to both the policy that allows managed installers and any supplemental policies that you deploy.
 
 1. Open the **Event viewer** on a target device
-1. Expand **Applications and Services > Microsoft > Windows > CodeIntegrity > **Operational**
+1. Expand **Applications and Services > Microsoft > Windows > CodeIntegrity > Operational**
 1. Check for **event ID 3099**: *the policy was Refreshed and activated*
     - For example: `Refreshed and activated Code Integrity policy {GUID} . id . Status 0x0`
     - The policy that allows managed installers is **`C0DB889B-59C5-453C-B297-399C851934E4`**. Checking that this policy is applied correctly, indicates that a device is setup to allow managed installers (and therefore, can allow installation of Win32 apps via the Intune Management Extension).\
@@ -91,7 +91,7 @@ When executing the `sc.exe query` commands, the **STATE** property should show a
 ### AppLocker event log validation
 
 1. Open the **Event Viewer** on a target device
-1. Expand **Applications and Services** > **Microsoft** > **Windows** > **AppLocker** > **MSI and Script**
+1. Expand **Applications and Services > Microsoft > Windows > AppLocker > MSI and Script**
 1. Check for **error events** with code **8040**, and reference [Understanding Application Control event IDs][WIN-1]
 
 ## Intune Management Extension
@@ -100,4 +100,4 @@ When executing the `sc.exe query` commands, the **STATE** property should show a
 - Logs can be collected from `%programdata%\Microsoft\IntuneManagementExtension\Logs`
 
 [MEM-1]: /mem/intune/remote-actions/collect-diagnostics
-[WIN-1]: /windows/security/threat-protection/windows-defender-application-control/event-id-explanations
+[WIN-1]: /windows/security/threat-protection/windows-defender-application-control/event-tag-explanations#policy-activation-event-options
