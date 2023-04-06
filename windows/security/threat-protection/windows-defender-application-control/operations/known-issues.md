@@ -55,7 +55,7 @@ When the WDAC engine evaluates files against the active set of policies on the d
 
 3. WDAC then checks for the [Managed Installer extended attribute (EA)](configure-authorized-apps-deployed-with-a-managed-installer.md) or the [Intelligent Security Graph (ISG) EA](use-windows-defender-application-control-with-intelligent-security-graph.md) on the file. If either EA exists and the policy enables the corresponding option, then the file is allowed.
 
-4. Lastly, WDAC makes a cloud call to the ISG to get reputation on file, if the policy enables the ISG option.
+4. Lastly, WDAC makes a cloud call to the ISG to get reputation about the file, if the policy enables the ISG option.
 
 5. If no rule exists for the file and it's not allowed based on ISG or MI, then the file is blocked implicitly.
 
