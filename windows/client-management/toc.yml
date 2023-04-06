@@ -54,8 +54,12 @@ items:
                 href: certificate-renewal-windows-mdm.md
           - name: Unenroll devices
             href: disconnecting-from-mdm-unenrollment.md
-          - name: Diagnose MDM failures in Windows 10
-            href: diagnose-mdm-failures-in-windows-10.md
+          - name: Diagnose MDM failures
+            items:
+              - name: Collect MDM logs
+                href: diagnose-mdm-failures-in-windows-10.md
+              - name: Diagnose MDM enrollment
+                href: diagnose-mdm-enrollment.md
           - name: Configuration service provider reference
             href: mdm/index.yml
       - name: Client management tools and settings

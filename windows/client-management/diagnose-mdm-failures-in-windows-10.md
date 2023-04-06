@@ -1,7 +1,7 @@
 ---
-title: Diagnose MDM failures in Windows 10
-description: Learn how to collect MDM logs. Examining these logs can help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server.
-ms.reviewer: 
+title: Collect MDM logs
+description: Learn how to collect MDM logs. Examining these logs can help diagnose enrollment or device management issues in Windows devices managed by an MDM server.
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -17,23 +17,25 @@ appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
-# Diagnose MDM failures in Windows 10
+# Collect MDM logs
 
-To help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server, you can examine the MDM logs collected from the desktop. The following sections describe the procedures for collecting MDM logs.
+To help diagnose enrollment or device management issues in Windows devices managed by an MDM server, you can examine the MDM logs collected from the desktop. The following sections describe the procedures for collecting MDM logs.
 
-## Download the MDM Diagnostic Information log from Windows 10 PCs
+## Download the MDM Diagnostic Information log from Windows devices
 
 1. On your managed device, go to **Settings** > **Accounts** > **Access work or school**.
-1. Click your work or school account, then click **Info.**
+1. Click your work or school account, then click **Info**.
+
    ![Access work or school page in Settings.](images/diagnose-mdm-failures15.png)
 
 1. At the bottom of the **Settings** page, click **Create report**.
+
    ![Access work or school page and then Create report.](images/diagnose-mdm-failures16.png)
 1. A window opens that shows the path to the log files. Click **Export**.
 
    ![Access work or school log files.](images/diagnose-mdm-failures17.png)
 
-1. In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
+1. In File Explorer, navigate to `C:\Users\Public\Documents\MDMDiagnostics` to see the report.
 
 ## Use command to collect logs directly from Windows 10 PCs
 

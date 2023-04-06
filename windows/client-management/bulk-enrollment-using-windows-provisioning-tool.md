@@ -56,7 +56,9 @@ Using the WCD, create a provisioning package using the enrollment information re
 
 1. Open the WCD tool.
 1. Select **Advanced Provisioning**.
+
    ![icd start page.](images/bulk-enrollment7.png)
+
 1. Enter a project name and select **Next**.
 1. Select **All Windows editions**, since Provisioning CSP is common to all Windows editions, then select **Next**.
 1. Skip **Import a provisioning package (optional)** and select **Finish**.
@@ -137,13 +139,7 @@ Using the WCD, create a provisioning package using the enrollment information re
 - [Apply a package during initial setup](/windows/configuration/provisioning-packages/provisioning-apply-package#during-initial-setup)
 - [Apply a package after initial setup](/windows/configuration/provisioning-packages/provisioning-apply-package#after-initial-setup)
 - [Apply a package directly](/windows/configuration/provisioning-packages/provisioning-apply-package#apply-directly)
-- [Apply a package from the Settings app](#apply-a-package-from-the-settings-app).
-
-## Apply a package from the Settings app
-
-1. Go to **Settings** > **Accounts** > **Access work or school**.
-1. Select **Add or remove a provisioning package**.
-1. Select **Add a package**.
+- [Apply a package from the Settings app](/windows/configuration/provisioning-packages/provisioning-apply-package#windows-settings).
 
 ## Validate that the provisioning package was applied
 
