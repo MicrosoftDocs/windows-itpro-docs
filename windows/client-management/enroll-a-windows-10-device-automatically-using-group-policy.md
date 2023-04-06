@@ -119,7 +119,7 @@ To verify successful enrollment to MDM, go to **Start** > **Settings** > **Accou
 ![Work School Settings.](images/autoenrollment-settings-work-school.png)
 
 > [!NOTE]
-> If you don't see the **Info** button or the enrollment information, enrollment might have failed. Check the status in [Task Scheduler app](#task-scheduler-app).
+> If you don't see the **Info** button or the enrollment information, enrollment might have failed. Check the status in [Task Scheduler app](#task-scheduler-app) and see [Diagnose MDM enrollment](./mdm-diagnose-enrollment.md).
 
 ## Task Scheduler app
 

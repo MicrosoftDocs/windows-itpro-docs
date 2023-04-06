@@ -70,7 +70,7 @@ To ensure that the auto-enrollment feature is working as expected, you must veri
 
 ## Troubleshoot auto-enrollment using group policy
 
-Investigate the logs if you have issues even after performing all the mandatory verification steps. The first log file to investigate is the event log on the target Windows device. To collect Event Viewer logs:
+Investigate the logs if you have issues even after performing all the verification steps. The first log file to investigate is the event log on the target Windows device. To collect Event Viewer logs:
 
 1. Open Event Viewer.
 
@@ -120,3 +120,7 @@ If you can't find event ID 75 in the logs, it indicates that the auto-enrollment
    A resolution to this issue is to remove the registry key manually. If you don't know which registry key to remove, go for the key that displays most entries as the screenshot above. All other keys will display fewer entries as shown in the following screenshot:
 
    :::image type="content" alt-text="Manually deleted entries." source="images/auto-enrollment-activation-verification-less-entries.png" lightbox="images/auto-enrollment-activation-verification-less-entries.png":::
+
+## Error codes
+
+[!INCLUDE [Enrollment error codes](includes/mdm-enrollment-error-codes.md)]

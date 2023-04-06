@@ -57,9 +57,9 @@ items:
           - name: Diagnose MDM failures
             items:
               - name: Collect MDM logs
-                href: diagnose-mdm-failures-in-windows-10.md
+                href: mdm-collect-logs.md
               - name: Diagnose MDM enrollment
-                href: diagnose-mdm-enrollment.md
+                href: mdm-diagnose-enrollment.md
           - name: Configuration service provider reference
             href: mdm/index.yml
       - name: Client management tools and settings

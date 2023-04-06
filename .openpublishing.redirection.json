@@ -6696,8 +6696,13 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/client-management//register-your-free-azure-active-directory-subscription.md",
+      "source_path": "windows/client-management/register-your-free-azure-active-directory-subscription.md",
       "redirect_url": "/microsoft-365/compliance/use-your-free-azure-ad-subscription-in-office-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/diagnose-mdm-failures-in-windows-10.md",
+      "redirect_url": "/windows/client-management/mdm-collect-logs",
       "redirect_document_id": false
     },
     {
@@ -19837,7 +19842,7 @@
     },
     {
       "source_path": "windows/client-management/mdm/diagnose-mdm-failures-in-windows-10.md",
-      "redirect_url": "/windows/client-management/diagnose-mdm-failures-in-windows-10",
+      "redirect_url": "/windows/client-management/mdm-collect-logs",
       "redirect_document_id": false
     },
     {

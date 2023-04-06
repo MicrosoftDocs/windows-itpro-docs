@@ -498,7 +498,7 @@ For each channel node, the user can:
 - Enable or disable the channel from Event Log service to allow or disallow event data being written into the channel.
 - Specify an XPath query to filter events while exporting the channel event data.
 
-For more information about using DiagnosticLog to collect logs remotely from a PC or mobile device, see [Diagnose MDM failures in Windows 10](../diagnose-mdm-failures-in-windows-10.md).
+For more information about using DiagnosticLog to collect logs remotely from a PC or mobile device, see [Collect MDM logs](../mdm-collect-logs.md).
 <!-- Device-EtwLog-Channels-Editable-End -->
 
 <!-- Device-EtwLog-Channels-DFProperties-Begin -->
