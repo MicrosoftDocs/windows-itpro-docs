@@ -8,7 +8,7 @@ metadata:
   author: vinaypamnani-msft
   ms.author: vinpa
   manager: aaroncz
-  ms.date: 12/07/2022
+  ms.date: 04/05/2023
 # linkListType: overview | how-to-guide | tutorial | video
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
@@ -108,10 +108,12 @@ landingContent:
           - text: Deployment with group policy
             url: deployment/deploy-windows-defender-application-control-policies-using-group-policy.md
   # Card
-  - title: Learn how to monitor WDAC events
+  - title: Learn how to troubleshoot and debug WDAC events
     linkLists:
       - linkListType: overview
         links:
+          - text: Debugging and troubleshooting
+            url: operations/wdac-debugging-and-troubleshooting.md
           - text: Understanding event IDs
             url: event-id-explanations.md
           - text: Understanding event Tags
