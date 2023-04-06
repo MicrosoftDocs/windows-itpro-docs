@@ -49,11 +49,11 @@ For **single policy format WDAC policies**, in addition to the two preceding loc
 
 When the WDAC engine evaluates files against the active set of policies on the device, rules are applied in the following order. Once a file encounters a match, WDAC stops further processing.
 
-1. Explicit deny rules - if any explicit deny rule exists for the file, it's blocked even if other rules are created to try to allow it. Deny rules can use any [rule level](select-types-of-rules-to-create.md#windows-defender-application-control-file-rule-levels). Use the most specific rule level practical when creating deny rules to avoid blocking more than you intend.
+1. Explicit deny rules - if any explicit deny rule exists for the file, it's blocked even if other rules are created to try to allow it. Deny rules can use any [rule level](/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create#windows-defender-application-control-file-rule-levels). Use the most specific rule level practical when creating deny rules to avoid blocking more than you intend.
 
 2. Explicit allow rules - if any explicit allow rul exists for the file, it's allowed by the policy.
 
-3. WDAC then checks for the [Managed Installer extended attribute (EA)](configure-authorized-apps-deployed-with-a-managed-installer.md) or the [Intelligent Security Graph (ISG) EA](use-windows-defender-application-control-with-intelligent-security-graph.md) on the file. If either EA exists and the policy enables the corresponding option, then the file is allowed.
+3. WDAC then checks for the [Managed Installer extended attribute (EA)](/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer) or the [Intelligent Security Graph (ISG) EA](/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph) on the file. If either EA exists and the policy enables the corresponding option, then the file is allowed.
 
 4. Lastly, WDAC makes a cloud call to the ISG to get reputation about the file, if the policy enables the ISG option.
 
