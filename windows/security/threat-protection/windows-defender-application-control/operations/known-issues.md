@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 - Windows 10
 - Windows 11
-- Windows Server 2016 and above
+- Windows Server 2016 and later
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -49,7 +49,7 @@ For **single policy format WDAC policies**, in addition to the two preceding loc
 
 When the WDAC engine evaluates files against the active set of policies on the device, rules are applied in the following order. Once a file encounters a match, WDAC stops further processing.
 
-1. Explicit deny rules - if any explicit deny rule exists for a file, it won't run even if other rules are created to try to allow it. Deny rules can use any [rule level](select-types-of-rules-to-create.md#windows-defender-application-control-file-rule-levels). Use the most specific rule level practical when creating deny rules to avoid blocking more than you intend.
+1. Explicit deny rules - if any explicit deny rule exists for a file, it's blocked even if other rules are created to try to allow it. Deny rules can use any [rule level](select-types-of-rules-to-create.md#windows-defender-application-control-file-rule-levels). Use the most specific rule level practical when creating deny rules to avoid blocking more than you intend.
 
 2. Explicit allow rules.
 
