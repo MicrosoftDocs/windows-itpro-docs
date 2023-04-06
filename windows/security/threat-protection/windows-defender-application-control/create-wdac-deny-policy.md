@@ -24,7 +24,7 @@ With Windows Defender Application Control (WDAC), you can create policies to exp
 
 ## Standalone Deny policy
 
-When creating a policy that consists solely of deny rules, you must include "Allow All" rules in both the kernel and user mode sections of the policy in addition to your explicit Deny rules. The "Allow All" rules ensure that anything not explicitly denied by your policy are allowed to run. If you fail to add "Allow All" rules to a deny-only policy, then you risk blocking everything. This outcome happens because some code is *explicitly* denied and all other code is *implicitly* denied, because there are no rules to authorize it. We recommend using the [AllowAll policy template](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies) when creating your Standalone Deny policies.
+When creating a policy that consists solely of deny rules, you must include "Allow All" rules in both the kernel and user mode sections of the policy in addition to your explicit deny rules. The "Allow All" rules ensure that anything not explicitly denied by your policy is allowed to run. If you fail to add "Allow All" rules to a deny-only policy, then you risk blocking everything. This outcome happens because some code is *explicitly* denied and all other code is *implicitly* denied, because there are no rules to authorize it. We recommend using the [AllowAll policy template](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies) when creating your standalone deny policies.
 
 ```xml
 <FileRules>
@@ -57,7 +57,7 @@ Policy2 is our new deny policy, which blocks MaliciousApp.exe and also the Windo
 
 - MaliciousApp.exe is blocked since there's an explicit block rule in Policy2. It's also *implicitly* blocked by Policy1 since there are no allow rules that cover the file in that policy.
 - The Windows-signed file wmic.exe is blocked since there's an explicit block rule in Policy2.
-- All other Windows- and Microsoft-signed applications are allowed since there's an explicit allow rule in both Policy1 and Policy2 (due to the Allow All rules).
+- All other Windows- and Microsoft-signed applications are allowed since there's an explicit allow rule in both Policy1 and Policy2 that covers the file.
 - All other applications are implicitly denied. For example, ExampleApp.exe, isn't allowed since it's only trusted by Policy2 (due to the Allow All rules) and not Policy1.
 
 ## Mixed Allow and Deny policy considerations
