@@ -76,7 +76,3 @@ On input, it indicates the buffer size of "Value". On successful return, it indi
 #### Return Value
 
 This method returns S_OK if successful or a failure code otherwise.
-
-#### Remarks
-
-See [WDAC Policy Settings] for more information on WDAC policy settings.
