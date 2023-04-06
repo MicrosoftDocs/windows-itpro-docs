@@ -13,10 +13,10 @@ ms.collection:
   - highpri
   - tier3
 author: vinaypamnani-msft
-ms.reviewer: isbrahm
+ms.reviewer: jsuther
 ms.author: vinpa
 manager: aaroncz
-ms.date: 05/26/2020
+ms.date: 04/06/2023
 ms.custom: asr
 ms.technology: itpro-security
 ms.topic: article
