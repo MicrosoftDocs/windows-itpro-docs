@@ -5,7 +5,7 @@ author: valemieux
 ms.author: jogeurte
 ms.reviewer: jsuther1974
 ms.topic: how-to
-ms.date: 03/23/2023
+ms.date: 04/06/2023
 ms.custom: template-how-to
 ms.prod: windows-client
 ms.technology: itpro-security
@@ -255,3 +255,16 @@ To debug issues using ISG, try these steps:
 - Check that the AppLocker services are running. This information is found in $env:USERPROFILE\AppData\Local\Temp\DiagOutputDir\CiDiag\AppLockerServices.txt created in section 1 of this article.
 - [Use fsutil.exe](/windows/security/threat-protection/windows-defender-application-control/configure-wdac-managed-installer#using-fsutil-to-query-extended-attributes-for-intelligent-security-graph-isg) to verify files have the ISG origin extended attribute. If not, redeploy the files with the managed installer and check again.
 - Check if the app is encountering a [known limitation with ISG](/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph#known-limitations-with-using-the-isg).
+
+## 4 - Report issues to Microsoft, if appropriate
+
+If after following the guidance covered by this article you believe you've identified a product issue, report the issue to Microsoft.
+
+- Customers with Microsoft Premier Support should log a service request through normal channels.
+- All other customers can report issues directly to the WDAC product team via the Windows [Feedback Hub](feedback-hub:?contextid=790&tabid=2&newFeedback=true). Select the category **Security & Privacy - Application Control** to ensure the issue is properly routed to the WDAC product team.
+
+When reporting issues, be sure to provide the following information:
+
+- All [WDAC diagnostic data](#1---gather-wdac-diagnostic-data) described earlier.
+- If possible, the blocked file(s).
+- Clear instructions to reproduce the problem.
