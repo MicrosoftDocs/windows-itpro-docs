@@ -33,7 +33,7 @@ Typically, deployment of Windows Defender Application Control (WDAC) happens bes
 
 ## Types of devices
 
-| **Type of device**                 | **How WDAC relates to this type of device**  | 
+|  Type of device                 | How WDAC relates to this type of device  | 
 |------------------------------------|------------------------------------------------------|
 | **Lightly managed devices**: Company-owned, but users are free to install software.<br>Devices are required to run organization's antivirus solution and client management tools. | Windows Defender Application Control can be used to help protect the kernel, and to monitor (audit) for problem applications rather than limiting the applications that can be run. |
 | **Fully managed devices**: Allowed software is restricted by IT department.<br>Users can request for more software, or install from a list of applications provided by IT department.<br>Examples: locked-down, company-owned desktops and laptops. | An initial baseline Windows Defender Application Control policy can be established and enforced. Whenever the IT department approves more applications, it updates the WDAC policy and (for unsigned LOB applications) the catalog. |
