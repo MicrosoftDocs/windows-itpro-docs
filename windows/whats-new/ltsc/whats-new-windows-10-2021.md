@@ -171,7 +171,7 @@ An in-place upgrade wizard is available in Configuration Manager. For more infor
 #### Microsoft Intune
 
 Microsoft Intune supports Windows 10 Enterprise LTSC 2021 with the following exception:
-- [Update rings](/mem/intune/protect/windows-10-update-rings) can't be used for feature updates since they aren't supported by Windows Update for Business. Update rings can be used for quality updates for Windows 10 Enterprise LTSC 2021 clients.
+- [Update rings](/mem/intune/protect/windows-10-update-rings) can't be used for feature updates since Windows 10 LTSC versions don't receive feature updates. Update rings can be used for quality updates for Windows 10 Enterprise LTSC 2021 clients.
 
 A new Intune remote action: **Collect diagnostics**, lets you collect the logs from corporate devices without interrupting or waiting for the end user. For more information, see [Collect diagnostics remote action](/mem/intune/fundamentals/whats-new#collect-diagnostics-remote-action).
 
