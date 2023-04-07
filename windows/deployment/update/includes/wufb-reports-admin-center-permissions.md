@@ -13,7 +13,7 @@ Accessing Windows Update for Business reports typcially requires permissions fro
 
 - [Azure Active Directory (Azure AD)](/azure/active-directory/roles/custom-overview) or [Intune](/mem/intune/fundamentals/role-based-access-control): Used for managing Windows Update for Business services through Microsoft Graph API, such as enrolling into reports
 - [Azure](/azure/role-based-access-control/overview): Used for controlling access to Azure resources through Azure Resource Management, such as access to the Log Analytics workspace
-- [Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles): Manages access to the Microsoft 365 admin center, which allows only users with certain roles access to sign in
+- [Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles): Manages access to the Microsoft 365 admin center, which allows only users with certain Azure AD roles access to sign in
 
 **Roles that allow enrollment into Windows Update for Business reports**
 
