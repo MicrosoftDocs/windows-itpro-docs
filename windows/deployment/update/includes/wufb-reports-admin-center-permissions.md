@@ -34,7 +34,7 @@ The data for Windows Update for Business reports is routed to a Log Analytics wo
 
 Examples of commonly assigned roles for Windows Update for Business reports users:
 
-| Roles | Enroll though the [workbook](wufb-reports-workbook.md) | Enroll through Microsoft 365 admin center | Display the workbook | Microsoft 365 admin center access | Create Log Analytics workspace |
+| Roles | Enroll though the [workbook](../wufb-reports-workbook.md) | Enroll through Microsoft 365 admin center | Display the workbook | Microsoft 365 admin center access | Create Log Analytics workspace |
 | --- | --- | --- | --- | --- | --- |
 | Intune Administrator + Log Analytics Contributor | Yes | Yes | Yes | Yes | Yes |
 | Windows Update deployment administrator + Log Analytics reader | Yes | Yes | Yes | Yes| No |

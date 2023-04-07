@@ -31,7 +31,7 @@ Windows Update for Business reports is a Windows service hosted in Azure that us
 
 ## Get started
 
-After verifying that you've met the [prerequisites and permissions](wufb-reports-prerequisistes.md) for Windows Update for Business reports, enroll using the instructions below if needed: 
+After verifying that you've met the [prerequisites and permissions](wufb-reports-prerequisites.md) for Windows Update for Business reports, enroll using the instructions below if needed: 
 
 <!--Using include for onboarding Windows Update for Business reports through the Microsoft 365 admin center-->
 [!INCLUDE [Onboarding Windows Update for Business reports through the Microsoft 365 admin center](./includes/wufb-reports-onboard-admin-center.md)]
