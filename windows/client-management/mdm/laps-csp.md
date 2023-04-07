@@ -4,7 +4,7 @@ description: Learn more about the LAPS CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/27/2023
+ms.date: 04/07/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,15 +16,12 @@ ms.topic: reference
 <!-- LAPS-Begin -->
 # LAPS CSP
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
-
 <!-- LAPS-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The Local Administrator Password Solution (LAPS) configuration service provider (CSP) is used by the enterprise to manage back up of local administrator account passwords. Windows supports a LAPS Group Policy Object that is entirely separate from the LAPS CSP. Many of the various settings are common across both the LAPS GPO and CSP (GPO does not support any of the Action-related settings). As long as at least one LAPS setting is configured via CSP, any GPO-configured settings will be ignored. Also see [Configure policy settings for Windows LAPS](/windows-server/identity/laps/laps-management-policy-settings).
 
 > [!NOTE]
-> Windows LAPS currently is available only in [Windows 11 Insider Preview Build 25145 and later](/windows-insider/flight-hub/#active-development-builds-of-windows-11). Support for the Windows LAPS Azure Active Directory scenario is currently in private preview, and limited to a small number of customers who have a direct engagement with engineering. Once public preview is declared in 2023, all customers will be able to evaluate this AAD scenario.
+> For more information on specific OS updates required to use the Windows LAPS CSP and associated features, plus the current status of the Azure Active Directory LAPS scenario, see [Windows LAPS availability and Azure AD LAPS public preview status](/windows-server/identity/laps/laps-overview#windows-laps-supported-platforms-and-azure-ad-laps-preview-status).
 
 > [!TIP]
 > This article covers the specific technical details of the LAPS CSP.  For more information about the scenarios in which the LAPS CSP would be used, see [Windows Local Administrator Password Solution](/windows-server/identity/laps/laps).
@@ -57,7 +54,7 @@ The following list shows the LAPS configuration service provider nodes:
 <!-- Device-Actions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Actions-Applicability-End -->
 
 <!-- Device-Actions-OmaUri-Begin -->
@@ -96,7 +93,7 @@ Defines the parent interior node for all action-related settings in the LAPS CSP
 <!-- Device-Actions-ResetPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Actions-ResetPassword-Applicability-End -->
 
 <!-- Device-Actions-ResetPassword-OmaUri-Begin -->
@@ -136,7 +133,7 @@ This action invokes an immediate reset of the local administrator account passwo
 <!-- Device-Actions-ResetPasswordStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Actions-ResetPasswordStatus-Applicability-End -->
 
 <!-- Device-Actions-ResetPasswordStatus-OmaUri-Begin -->
@@ -181,7 +178,7 @@ The value returned is an HRESULT code:
 <!-- Device-Policies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-Applicability-End -->
 
 <!-- Device-Policies-OmaUri-Begin -->
@@ -221,7 +218,7 @@ Root node for LAPS policies.
 <!-- Device-Policies-ADEncryptedPasswordHistorySize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-ADEncryptedPasswordHistorySize-Applicability-End -->
 
 <!-- Device-Policies-ADEncryptedPasswordHistorySize-OmaUri-Begin -->
@@ -271,7 +268,7 @@ This setting has a maximum allowed value of 12 passwords.
 <!-- Device-Policies-AdministratorAccountName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-AdministratorAccountName-Applicability-End -->
 
 <!-- Device-Policies-AdministratorAccountName-OmaUri-Begin -->
@@ -316,7 +313,7 @@ If specified, the specified account's password will be managed.
 <!-- Device-Policies-ADPasswordEncryptionEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-ADPasswordEncryptionEnabled-Applicability-End -->
 
 <!-- Device-Policies-ADPasswordEncryptionEnabled-OmaUri-Begin -->
@@ -378,7 +375,7 @@ If not specified, this setting defaults to True.
 <!-- Device-Policies-ADPasswordEncryptionPrincipal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-ADPasswordEncryptionPrincipal-Applicability-End -->
 
 <!-- Device-Policies-ADPasswordEncryptionPrincipal-OmaUri-Begin -->
@@ -434,7 +431,7 @@ If the specified user or group account is invalid the device will fallback to us
 <!-- Device-Policies-BackupDirectory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-BackupDirectory-Applicability-End -->
 
 <!-- Device-Policies-BackupDirectory-OmaUri-Begin -->
@@ -492,7 +489,7 @@ If not specified, this setting will default to 0.
 <!-- Device-Policies-PasswordAgeDays-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-PasswordAgeDays-Applicability-End -->
 
 <!-- Device-Policies-PasswordAgeDays-OmaUri-Begin -->
@@ -540,7 +537,7 @@ This setting has a maximum allowed value of 365 days.
 <!-- Device-Policies-PasswordComplexity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-PasswordComplexity-Applicability-End -->
 
 <!-- Device-Policies-PasswordComplexity-OmaUri-Begin -->
@@ -602,7 +599,7 @@ If not specified, this setting will default to 4.
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-Applicability-End -->
 
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-OmaUri-Begin -->
@@ -658,7 +655,7 @@ If not specified, this setting defaults to True.
 <!-- Device-Policies-PasswordLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-PasswordLength-Applicability-End -->
 
 <!-- Device-Policies-PasswordLength-OmaUri-Begin -->
@@ -705,7 +702,7 @@ This setting has a maximum allowed value of 64 characters.
 <!-- Device-Policies-PostAuthenticationActions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-PostAuthenticationActions-Applicability-End -->
 
 <!-- Device-Policies-PostAuthenticationActions-OmaUri-Begin -->
@@ -762,7 +759,7 @@ If not specified, this setting will default to 3 (Reset the password and logoff 
 <!-- Device-Policies-PostAuthenticationResetDelay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-PostAuthenticationResetDelay-Applicability-End -->
 
 <!-- Device-Policies-PostAuthenticationResetDelay-OmaUri-Begin -->
