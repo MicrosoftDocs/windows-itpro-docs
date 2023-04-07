@@ -4,10 +4,10 @@ description: Using Windows Defender Application Control (WDAC) supplemental poli
 ms.prod: windows-client
 ms.localizationpriority: medium
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 10/30/2019
+ms.date: 04/05/2023
 ms.technology: itpro-security
 ms.topic: how-to
 ---
@@ -17,14 +17,13 @@ ms.topic: how-to
 **Applies to:**
 
 - Windows 10
-- Windows 11
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](feature-availability.md).
 
-You can use Microsoft Intune to deploy and run critical Win32 applications and Windows components that are normally blocked in S mode on their Intune-managed Windows in S mode devices. For example, PowerShell.exe.
+You can use Microsoft Intune to deploy and run critical Win32 applications, and Windows components that are normally blocked in S mode, on your Intune-managed Windows 10 in S mode devices. For example, PowerShell.exe.
 
-With Intune, you can configure managed S mode devices using a Windows Defender Application Control supplemental policy that expands the S mode base policy to authorize the apps your organization uses. This feature changes the S mode security posture from "every app is Microsoft-verified" to "every app is verified by Microsoft or your organization".
+With Intune, you can configure managed S mode devices using a Windows Defender Application Control (WDAC) supplemental policy that expands the S mode base policy to authorize the apps your organization uses. This feature changes the S mode security posture from "Microsoft has verified every app" to "Microsoft or your organization has verified every app".
 
 For an overview and brief demo of this feature, see this video:
 
@@ -34,13 +33,13 @@ For an overview and brief demo of this feature, see this video:
 
 ![Basic diagram of the policy authorization flow.](images/wdac-intune-policy-authorization.png)
 
-The general steps for expanding the S mode base policy on your Intune-managed devices are to generate a supplemental policy, sign that policy, and then upload the signed policy to Intune and assign it to user or device groups. Because you need access to PowerShell cmdlets to generate your supplemental policy, you should create and manage your policies on a non-S mode device. Once the policy has been uploaded to Intune, before deploying the policy more broadly, assign it to a single test S-mode device to verify expected functioning.
+The general steps for expanding the S mode base policy on your Intune-managed Windows 10 in S mode devices are to generate a supplemental policy, sign that policy, upload the signed policy to Intune, and assign it to user or device groups. Because you need access to PowerShell cmdlets to generate your supplemental policy, you should create and manage your policies on a non-S mode device. Once the policy has been uploaded to Intune, before deploying the policy more broadly, assign it to a single test Windows 10 in S mode device to verify expected functioning.
 
-1. Generate a supplemental policy with Windows Defender Application Control tooling.
+1. Generate a supplemental policy with WDAC tooling.
 
     This policy expands the S mode base policy to authorize more applications. Anything authorized by either the S mode base policy or your supplemental policy is allowed to run. Your supplemental policies can specify filepath rules, trusted publishers, and more.
 
-    For more information on creating supplemental policies, see [Deploy multiple Windows Defender Application Control policies](deploy-multiple-windows-defender-application-control-policies.md). For more information on the right type of rules to create for your policy, see [Deploy Windows Defender Application Control policy rules and file rules](select-types-of-rules-to-create.md).
+    For more information on creating supplemental policies, see [Deploy multiple WDAC policies](deploy-multiple-windows-defender-application-control-policies.md). For more information on the right type of rules to create for your policy, see [Deploy WDAC policy rules and file rules](select-types-of-rules-to-create.md).
 
     The following instructions are a basic set for creating an S mode supplemental policy:
 
@@ -68,7 +67,7 @@ The general steps for expanding the S mode base policy on your Intune-managed de
 
     - Since you're signing your policy, you must authorize the signing certificate you use to sign the policy. Optionally, also authorize one or more extra signers that can be used to sign updates to the policy in the future. The next step in the overall process, **Sign the policy**, describes it in more detail.
 
-        To add the signing certificate to the Windows Defender Application Control policy, use [Add-SignerRule](/powershell/module/configci/add-signerrule?view=win10-ps&preserve-view=true).
+        To add the signing certificate to the WDAC policy, use [Add-SignerRule](/powershell/module/configci/add-signerrule?view=win10-ps&preserve-view=true).
 
         ```powershell
         Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User -Update
@@ -82,7 +81,7 @@ The general steps for expanding the S mode base policy on your Intune-managed de
 
 2. Sign the policy.
 
-    Supplemental S mode policies must be digitally signed. To sign your policy, use your organization's custom Public Key Infrastructure (PKI). For more information on signing using an internal CA, see [Create a code signing cert for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md).
+    Supplemental S mode policies must be digitally signed. To sign your policy, use your organization's custom Public Key Infrastructure (PKI). For more information on signing using an internal CA, see [Create a code signing cert for WDAC](create-code-signing-cert-for-windows-defender-application-control.md).
 
       > [!TIP]
       > For more information, see [Azure Code Signing, democratizing trust for developers and consumers](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-code-signing-democratizing-trust-for-developers-and/ba-p/3604669).
@@ -110,7 +109,7 @@ Your supplemental policy can be used to significantly relax the S mode base poli
 
 Instead of authorizing signers external to your organization, Intune has functionality to make it easier to authorize existing applications by using signed catalogs. This feature doesn't require repackaging or access to the source code. It works for apps that may be unsigned or even signed apps when you don't want to trust all apps that may share the same signing certificate.
 
-The basic process is to generate a catalog file for each app using Package Inspector, then sign the catalog files using a custom PKI. To authorize the catalog signing certificate in the supplemental policy, use the **Add-SignerRule** PowerShell cmdlet as shown above in step 1 of the [Policy authorization process](#policy-authorization-process). After that, use the [Standard process for deploying apps through Intune](#standard-process-for-deploying-apps-through-intune) outlined above. For more information on generating catalogs, see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md).
+The basic process is to generate a catalog file for each app using Package Inspector, then sign the catalog files using a custom PKI. To authorize the catalog signing certificate in the supplemental policy, use the **Add-SignerRule** PowerShell cmdlet as shown earlier in step 1 of the [Policy authorization process](#policy-authorization-process). After that, use the [Standard process for deploying apps through Intune](#standard-process-for-deploying-apps-through-intune) outlined earlier. For more information on generating catalogs, see [Deploy catalog files to support WDAC](deploy-catalog-files-to-support-windows-defender-application-control.md).
 
 > [!NOTE]
 > Every time an app updates, you need to deploy an updated catalog. Try to avoid using catalog files for applications that auto-update, and direct users not to update applications on their own.
@@ -260,4 +259,4 @@ You can also delete a supplemental policy through Intune.
 
 ## Errata
 
-If an S-mode device with a policy authorization token and supplemental policy is rolled back from the 1909 update to the 1903 build, it will not revert to locked-down S mode until the next policy refresh. To achieve an immediate change to a locked-down S mode state, IT Pros should delete any tokens in %SystemRoot%\System32\CI\Tokens\Active.
+If a Windows 10 in S mode device with a policy authorization token and supplemental policy is rolled back from the 1909 update to the 1903 build, it will not revert to locked-down S mode until the next policy refresh. To achieve an immediate change to a locked-down S mode state, IT Pros should delete any tokens in %SystemRoot%\System32\CI\Tokens\Active.

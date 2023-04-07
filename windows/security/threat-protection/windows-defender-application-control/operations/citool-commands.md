@@ -5,7 +5,7 @@ author: valemieux
 ms.author: jogeurte
 ms.reviewer: jsuther1974
 ms.topic: how-to
-ms.date: 12/03/2022
+ms.date: 04/05/2023
 ms.custom: template-how-to
 ms.prod: windows-client
 ms.technology: itpro-security
@@ -44,66 +44,66 @@ CiTool makes Windows Defender Application Control (WDAC) policy management easie
 
 ## Examples
 
-1. Deploy a WDAC policy
+### Deploy a WDAC policy
 
-    ```powershell
-    CiTool --update-policy "\Windows\Temp\{BF61FE40-8929-4FDF-9EC2-F7A767717F0B}.cip"
-    ```
+```powershell
+CiTool --update-policy "\Windows\Temp\{BF61FE40-8929-4FDF-9EC2-F7A767717F0B}.cip"
+```
 
-2. Refresh the WDAC policies on the system
+### Refresh the WDAC policies on the system
 
-    ```powershell
-    CiTool --refresh
-    ```
+```powershell
+CiTool --refresh
+```
 
-3. Remove a specific WDAC policy by its policy ID
+### Remove a specific WDAC policy by its policy ID
 
-    ```powershell
-    CiTool --remove-policy "{BF61FE40-8929-4FDF-9EC2-F7A767717F0B}"
-    ```
+```powershell
+CiTool --remove-policy "{BF61FE40-8929-4FDF-9EC2-F7A767717F0B}"
+```
 
-4. List the actively enforced WDAC policies on the system
+### List the actively enforced WDAC policies on the system
 
-    ```powershell
-    # Check each policy's IsEnforced state and return only the enforced policies
-    (CiTool -lp -json | ConvertFrom-Json).Policies | Where-Object {$_.IsEnforced -eq "True"} |
-    Select-Object -Property PolicyID,FriendlyName | Format-List
-    ```
+```powershell
+# Check each policy's IsEnforced state and return only the enforced policies
+(CiTool -lp -json | ConvertFrom-Json).Policies | Where-Object {$_.IsEnforced -eq "True"} |
+Select-Object -Property PolicyID,FriendlyName | Format-List
+```
 
-5. Display the help menu
+### Display the help menu
 
-    ```powershell
-    CiTool -h
+```powershell
+CiTool -h
 
-    ----------------------------- Policy Commands ---------------------------------
-      --update-policy /Path/To/Policy/File
-          Add or update a policy on the current system
-          aliases: -up
-      --remove-policy PolicyGUID
-          Remove a policy indicated by PolicyGUID from the system
-          aliases: -rp
-      --list-policies
-          Dump information about all policies on the system, whether they be active or not
-          aliases: -lp
-    ----------------------------- Token Commands ---------------------------------
-      --add-token Path/To/Token/File <--token-id ID>
-          Deploy a token onto the current system, with an optional specific ID
-              If <ID> is specified, a pre-existing token with <ID> should not exist.
-          aliases:-at
-      --remove-token ID
-          Remove a Token indicated by ID from the system.
-          aliases: -rt
-      --list-tokens
-          Dump information about all tokens on the system
-          aliases: -lt
-    ----------------------------- Misc Commands ---------------------------------
-      --device-id
-          Dump the Code Integrity Device Id
-          aliases: -id
-      --refresh
-          Attempt to Refresh CI Policies
-          aliases: -r
-      --help
-          Display this message
-          aliases: -h
-    ```
+----------------------------- Policy Commands ---------------------------------
+  --update-policy /Path/To/Policy/File
+    Add or update a policy on the current system
+    aliases: -up
+  --remove-policy PolicyGUID
+    Remove a policy indicated by PolicyGUID from the system
+    aliases: -rp
+  --list-policies
+    Dump information about all policies on the system, whether they be active or not
+    aliases: -lp
+----------------------------- Token Commands ---------------------------------
+  --add-token Path/To/Token/File <--token-id ID>
+    Deploy a token onto the current system, with an optional specific ID
+    If <ID> is specified, a pre-existing token with <ID> should not exist.
+    aliases:-at
+  --remove-token ID
+    Remove a Token indicated by ID from the system.
+    aliases: -rt
+  --list-tokens
+    Dump information about all tokens on the system
+    aliases: -lt
+----------------------------- Misc Commands ---------------------------------
+  --device-id
+    Dump the Code Integrity Device Id
+    aliases: -id
+  --refresh
+    Attempt to Refresh CI Policies
+    aliases: -r
+  --help
+    Display this message
+    aliases: -h
+```
