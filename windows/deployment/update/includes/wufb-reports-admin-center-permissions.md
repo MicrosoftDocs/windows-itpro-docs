@@ -17,7 +17,7 @@ Accessing Windows Update for Business reports typcially requires permissions fro
 
 **Roles that can enroll into Windows Update for Business reports**
 
-To enroll into Windows Update for Business reports from the [Azure portal](https://portal.azure.com) or the [Microsoft 365 admin center](https://admin.microsoft.com) requires one of the following roles:
+To [enroll](../bkmk_enroll.md) into Windows Update for Business reports from the [Azure portal](https://portal.azure.com) or the [Microsoft 365 admin center](https://admin.microsoft.com) requires one of the following roles:
 
 - [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) Azure AD role
 - [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator) Azure AD role
@@ -34,7 +34,7 @@ The data for Windows Update for Business reports is routed to a Log Analytics wo
 
 Examples of commonly assigned roles for Windows Update for Business reports users:
 
-| Roles | Enroll though the [workbook](../wufb-reports-workbook.md) | Enroll through Microsoft 365 admin center | Display the workbook | Microsoft 365 admin center access | Create Log Analytics workspace |
+| Roles | Enroll though the workbook | Enroll through Microsoft 365 admin center | Display the workbook | Microsoft 365 admin center access | Create Log Analytics workspace |
 | --- | --- | --- | --- | --- | --- |
 | Intune Administrator + Log Analytics Contributor | Yes | Yes | Yes | Yes | Yes |
 | Windows Update deployment administrator + Log Analytics reader | Yes | Yes | Yes | Yes| No |
