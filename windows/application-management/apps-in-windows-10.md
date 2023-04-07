@@ -71,9 +71,9 @@ There are different types of apps that can run on your Windows client devices. T
 
   Using an MDM provider, you can create shortcuts to your web apps and progressive web apps on devices.
 
-## Android™️ apps
+## Android&trade;️ apps
 
-Starting with Windows 11, users in the [Windows Insider program](https://insider.windows.com/) can use the Microsoft Store to search, download, and install Android™️ apps. This feature uses the Windows Subsystem for Android, and allows users to interact with Android apps, just like others apps installed from the Microsoft Store.
+Starting with Windows 11, users in the [Windows Insider program](https://insider.windows.com/) can use the Microsoft Store to search, download, and install Android&trade;️ apps. This feature uses the Windows Subsystem for Android, and allows users to interact with Android apps, just like others apps installed from the Microsoft Store.
 
 For more information, see:
 
@@ -85,7 +85,7 @@ For more information, see:
 When your apps are ready, you can add or deploy these apps to your Windows devices. This section lists some common options.
 
 > [!NOTE]
-> Microsoft Store for Business and Microsoft Store for Education will be retired on March 31, 2023. Customers may continue to use the current capabilities for free apps until that time. There will be no support for Microsoft Store for Business and Education for Windows 11.
+> The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. Customers may continue to use the current capabilities for free apps until that time. There will be no support for Microsoft Store for Business and Education for Windows 11.
 >Visit [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution) for more information about the new Microsoft Store experience for both Windows 11 and Windows 10, and learn about other options for getting and managing apps.
 
 - **Manually install**: On your devices, users can install apps from the Microsoft Store, from the internet, and from an organization shared drive. These apps, and more, are listed in **Settings** > **Apps** > **Apps and Features**.

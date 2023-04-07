@@ -4,7 +4,7 @@ description: Use the Company Portal app in Windows 11 devices to access the priv
 author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
-ms.date: 09/15/2021
+ms.date: 04/04/2023
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-apps
@@ -59,7 +59,7 @@ To install the Company Portal app, you have some options:
   For more information, see:
   
   - [Endpoint Management at Microsoft](/mem/endpoint-manager-overview)
-  - [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-windows)
+  - [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-microsoft)
   - [What is co-management?](/mem/configmgr/comanage/overview)
   - [Use the Company Portal app on co-managed devices](/mem/configmgr/comanage/company-portal)
 
