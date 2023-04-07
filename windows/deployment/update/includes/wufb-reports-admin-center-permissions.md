@@ -9,7 +9,7 @@ ms.date: 03/29/2023
 ms.localizationpriority: medium
 ---
 <!--This file is shared by updates/wufb-reports-enable.md and the update/wufb-reports-admin-center.md articles. Headings may be driven by article context.  -->
-Accessing Windows Update for Business reports typcially requires permissions from multiple sources. 
+Accessing Windows Update for Business reports typcially requires permissions from multiple sources including: 
 
 - [Azure Active Directory (Azure AD)](/azure/active-directory/roles/custom-overview) or [Intune](/mem/intune/fundamentals/role-based-access-control): Used for managing Windows Update for Business services through Microsoft Graph API, such as enrolling into reports
 - [Azure](/azure/role-based-access-control/overview): Used for controlling access to Azure resources through Azure Resource Management, such as access to the Log Analytics workspace
