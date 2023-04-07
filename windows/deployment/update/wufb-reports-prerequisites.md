@@ -25,7 +25,6 @@ Before you begin the process of adding Windows Update for Business reports to yo
 - The Log Analytics workspace must be in a [supported region](#log-analytics-regions)
 - Data in the **Driver update** tab of the [workbook](wufb-reports-workbook.md) is only available for devices that receive driver and firmware updates from the [Windows Update for Business deployment service](deployment-service-overview.md)
 
-
 ## Permissions
 
 [!INCLUDE [Windows Update for Business reports permissions](./includes/wufb-reports-admin-center-permissions.md)]

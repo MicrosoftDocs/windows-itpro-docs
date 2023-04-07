@@ -33,7 +33,6 @@ The **Software updates** page has following tabs to assist you in monitoring upd
 <!--Using include Microsoft 365 admin center permissions-->
 [!INCLUDE [Windows Update for Business reports permissions](./includes/wufb-reports-admin-center-permissions.md)]
 
-
 ## Limitations
 
 Windows Update for Business reports is a Windows service hosted in Azure that uses Windows diagnostic data. Windows Update for Business reports is available in the Azure Commercial cloud, but not available for GCC High or United States Department of Defense customers since it doesn't meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services, see the [Microsoft Trust Center](/compliance/regulatory/offering-home).
