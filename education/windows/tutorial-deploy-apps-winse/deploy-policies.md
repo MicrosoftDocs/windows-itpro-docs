@@ -1,15 +1,20 @@
 ---
 title: Deploy policies to enable applications
-description: Learn how to sign WDAC policies and how to deploy WDAC and AppLocker policies to enable apps execution on Windows SE devices.
+description: Learn how to deploy AppLocker policies to enable apps execution on Windows SE devices.
 ms.date: 03/07/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
 ---
 
+<!--description: Learn how to sign WDAC policies and how to deploy WDAC and AppLocker policies to enable apps execution on Windows SE devices.-->
+
 # Deploy policies to enable applications
 
-Once the policies are created, you must deploy them to the Windows SE devices.
+Once the policies are created, you must deploy them to the Windows SE devices.\
+AppLocker policies can be deployed via Intune. This article describes how to deploy AppLocker policies to enable apps execution on Windows SE devices.
+
+<!--
 WDAC and AppLocker policies can be deployed via Intune, but WDAC policies must be signed before they can be deployed.
 
 This article describes how to sign WDAC policies and how to deploy WDAC and AppLocker policies to enable apps execution on Windows SE devices.
@@ -31,6 +36,8 @@ Policies can be deployed via Intune using a custom OMA-URI.
 ### Troubleshoot WDAC policies
 
 For information how to validate and troubleshoot WDAC supplemental policies, see [WDAC supplemental policy validation](./troubleshoot.md#wdac-supplemental-policy-validation)
+
+-->
 
 ## Deploy AppLocker policies
 
@@ -60,6 +67,7 @@ For information how to validate and troubleshoot AppLocker policies, see [AppLoc
 
 ## Next steps
 
+<!--
 Before moving on to the next section, ensure that you've completed the following tasks.
 
 For a WDAC supplemental policy:
@@ -75,6 +83,7 @@ For an AppLocker policy:
 > [!div class="checklist"]
 >
 > - Policy created in Intune and assigned to the correct groups
+-->
 
 Advance to the next article to learn about important considerations when deploying apps and policies to Windows SE devices.
 

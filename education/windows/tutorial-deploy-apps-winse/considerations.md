@@ -21,8 +21,8 @@ The Enrollment Status Page (ESP) is compatible with Windows 11 SE. However, due 
 
 1. You have the ESP configured to block device use until required apps are installed, and
 2. You deploy an app that is blocked by the Windows 11 SE base policy, not installable via a managed installer (without more policies), and not allowed by any supplemental policies or AppLocker policies
-
-For example, if you deploy a UWP LOB app but haven't deployed a supplemental policy to allow the app, ESP will fail.
+<!--
+For example, if you deploy a UWP LOB app but haven't deployed a supplemental policy to allow the app, ESP will fail.-->
 
 If you choose to block device use on the installation of apps, you must ensure that apps are also not blocked from installation.
 

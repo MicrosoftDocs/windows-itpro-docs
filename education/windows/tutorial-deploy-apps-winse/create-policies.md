@@ -11,6 +11,9 @@ appliesto:
 
 :::image type="content" source="./images/create-policies.png" alt-text="Diagram showing the three tutorial steps, highlighting the policy creation step." border="false":::
 
+You can create AppLocker policies to allow apps that are [semi-compatible](./validate-apps.md#semi-compatible-apps) or [incompatible](./validate-apps.md#incompatible-apps) with the managed installer to run.
+
+<!--
 You can create policies to allow applications that are [semi-compatible](./validate-apps.md#semi-compatible-apps) or [incompatible](./validate-apps.md#incompatible-apps) with the managed installer.
 
 The following table details the two policy types to allow apps to run:
@@ -22,6 +25,7 @@ The following table details the two policy types to allow apps to run:
 
 > [!NOTE]
 > The specifics of the policy you will need to create vary from app to app. Public documentation can help you determine which rules would be useful for your app.
+
 
 ## WDAC supplemental policies
 
@@ -147,12 +151,17 @@ Additional AppLocker policies work by configuring other apps to be *managed inst
 Using a WDAC supplemental policy instead, allows you to have more control over what is allowed to run without the risk of those permissions propagating unintentionally.
 
 To allow apps to run by setting their installers as managed installers, follow the guidance here:
+-->
+
+Additional AppLocker policies work by configuring other apps to be *managed installers*. However, since anything downloaded or installed by a managed installer is trusted to run, it creates a significant security risk. For example, if the executable for a third-party browser is set as a managed installer, anything downloaded from that browser will be allowed to run.\
+
+To allow apps to run by setting their installers as managed installers, follow the guidance here:
 
 - [Edit an AppLocker policy][WIN-5]
 - [Allow apps deployed with a WDAC managed installer][WIN-6]
 
 ## Next steps
-
+<!-->
 Before moving on to the next section, ensure that you've completed the following tasks.
 
 For a WDAC supplemental policy:
@@ -169,6 +178,9 @@ For an AppLocker policy:
 > - Created the policy with the **Merge** option
 
 Advance to the next article to learn how to deploy the WDAC supplemental policies or AppLocker policies to Windows 11 SE devices.
+-->
+
+Advance to the next article to learn how to deploy the AppLocker policies to Windows 11 SE devices.
 
 > [!div class="nextstepaction"]
 > [Next: deploy policies >](deploy-policies.md)

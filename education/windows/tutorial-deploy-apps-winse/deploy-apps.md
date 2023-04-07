@@ -19,8 +19,8 @@ The following table provides an overview of the applications types that can be d
 |**Installer/App type**|**Installer extensions**|**Available installation methods via Intune**|**Considerations for Windows 11 SE**|
 |-|-|-|-|
 |[Win32][WIN-1]|`.exe`<br>`.msi`|- Intune Management Extension (IME)<br> - Microsoft Store integration|⚠️ There are known limitations that might prevent an app to install or run.|
-|[Universal Windows Platform (UWP)][WIN-2]|`.appx`<br>`.appxbundle`<br>`.msix`<br>|- For private apps: line-of-business (LOB) apps<br>- For public apps: Microsoft Store integration|⚠️ LOB apps require a supplemental policy.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy UWP apps.|
-|[Progressive Web Apps (PWAs)][EDGE-2] |`.msix`|- Settings catalog policies<br>- Microsoft Store integration|✅ Use settings catalog policies.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy PWAs.|
+|[Universal Windows Platform (UWP)][WIN-2]|`.appx`<br>`.appxbundle`<br>`.msix`<br>|- For private apps: line-of-business (LOB) apps<br>- For public apps: Microsoft Store integration|⛔ It's currently unsupported to deploy UWP apps.<!--⚠️ LOB apps require a supplemental policy.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy UWP apps.-->|
+|[Progressive Web Apps (PWAs)][EDGE-2] |`.msix`|- Settings catalog policies<br>- Microsoft Store integration|✅ PWAs are supported.<!--<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy PWAs.-->|
 |Web links| n/a |- Windows web links|✅ Web links are supported. |
 
 > [!IMPORTANT]
@@ -38,7 +38,9 @@ There are known limitations that might prevent applications to install or execut
 
 ## UWP apps
 
-### Line of business apps
+It's currently unsupported to deploy UWP apps.
+
+<!--### Line of business apps
 
 For private, line-of-business (LOB) UWP apps, [deploy as line-of-business apps][MEM-2]
 
@@ -48,12 +50,12 @@ For private, line-of-business (LOB) UWP apps, [deploy as line-of-business apps][
 ### Microsoft Store apps
 
 Public UWP apps available in the Microsoft Store aren't currently supported for Windows 11 SE.
-
+-->
 ## PWA apps
 
-PWAs can be deployed using the [Force-installed web Apps][EDGE-1] option via [settings catalog policies][MEM-3].
+PWAs can be deployed using the [Force-installed web Apps][EDGE-1] option via [settings catalog policies][MEM-3], or using the Microsoft Store integration with Intune.
 
-PWAs available in the Microsoft Store aren't currently supported for Windows 11 SE.
+<!--PWAs available in the Microsoft Store aren't currently supported for Windows 11 SE.-->
 
 ## Web links
 
