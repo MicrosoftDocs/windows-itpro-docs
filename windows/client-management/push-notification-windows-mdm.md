@@ -49,44 +49,17 @@ To get a PFN and WNS credentials, you must create a Microsoft Store app.
 
 1. Go to the Windows [Dashboard](https://dev.windows.com/en-US/dashboard) and sign in with your developer account.
 
-  ![mdm push notification1.](images/push-notification1.png)
-
-1. Create a new app.
-
- ![mdm push notification2.](images/push-notification2.png)
+1. Select **Apps and games** under Workspaces. Create a **New product** and select **MSIX or PWA app**.
 
 1. Reserve an app name.
 
- ![mdm push notification3.](images/push-notification3.png)
+1. Select **Product Identity** under Product Management to view the **Package Family Name (PFN)** of your app.
 
-1. Click **Services**.
+1. Select **WNS/MPNS** under Product Management.
 
- ![mdm push notification4.](images/push-notification4.png)
+   1. Click the **App Registration portal** link. A new window opens showing your app in the Azure Portal.
+   1. In the Application Registration Portal page, you'll see the properties for the app that you created, such as:
 
-1. Click **Push notifications**.
-
- ![mdm push notification5.](images/push-notification5.png)
-
-1. Click **Live Services site**. A new window opens for the **Application Registration Portal** page.
-
- ![mdm push notification6.](images/push-notification6.png)
-
-1. In the **Application Registration Portal** page, you'll see the properties for the app that you created, such as:
-
-- Application ID
-- Application Secrets
-- Microsoft Store Package SID, Application Identity, and Publisher.
-
- ![mdm push notification7.](images/push-notification7.png)
-
-1. Click **Save**.
-
-1. Close the **Application Registration Portal** window and go back to the Windows Dev Center Dashboard.
-
-1. Select your app from the list on the left.
-
-1. From the left nav, expand **App management** and then click **App identity**.
-
- ![mdm push notification10.](images/push-notification10.png)
-
-1. In the **App identity** page, you'll see the **Package Family Name (PFN)** of your app.
+      - Application ID
+      - Application Secrets
+      - Redirect URIs
