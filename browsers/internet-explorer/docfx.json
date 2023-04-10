@@ -24,6 +24,7 @@
     ],
     "globalMetadata": {
       "recommendations": true,
+      "adobe-target": true,
       "ms.collection": [
         "tier3"
       ],
@@ -46,7 +47,8 @@
         "claydetels19", 
         "jborsecnik",
         "tiburd",
-        "garycentric"
+        "garycentric",
+        "beccarobins"
       ]
     },
     "externalReference": [],

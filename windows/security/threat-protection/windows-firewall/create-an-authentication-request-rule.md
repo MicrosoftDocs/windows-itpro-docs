@@ -39,17 +39,11 @@ To create the authentication request rule:
 
     1.  **Default**. Selecting this option tells the device to request authentication by using the method currently defined as the default on the device. This default might have been configured when the operating system was installed or it might have been configured by Group Policy. Selecting this option is appropriate when you have configured system-wide settings by using the [Configure Authentication Methods](configure-authentication-methods.md) procedure.
 
-    2.  **Computer and User (Kerberos V5)**. Selecting this option tells the device to request authentication of both the device and the currently logged-on user by using their domain credentials. This authentication method works only with other devices that can use AuthIP. User-based authentication using Kerberos V5 is not supported by IKE v1.
-
-    3.  **Computer (Kerberos V5)**. Selecting this option tells the device to request authentication of the device by using its domain credentials. This option works with other devices than can use IKE v1, including earlier versions of Windows.
-
-    4.  **Advanced**. Selecting this option enables you to specify a custom combination of authentication methods required for your scenario.
+    2.  **Advanced**. Selecting this option enables you to specify a custom combination of authentication methods required for your scenario.
         
 6.  Optional: If you selected **Advanced** in the previous step, then Click **Customize** to specify a custom combination of authentication methods required for your scenario. You can specify both a **First authentication method** and a **Second authentication method**.
 
     The **First authentication method** can be one of the following:
-
-    -   **Computer (Kerberos V5)**. Selecting this option tells the device to request authentication of the device by using its domain credentials. This option works with other devices than can use IKE v1, including earlier versions of Windows.
 
     -   **Computer (NTLMv2)**. Selecting this option tells the device to use and require authentication of the device by using its domain credentials. This option works only with other devices that can use AuthIP. User-based authentication using Kerberos V5 is not supported by IKE v1.
 
@@ -60,8 +54,6 @@ To create the authentication request rule:
     If you select **First authentication is optional**, then the connection can succeed even if the authentication attempt specified in this column fails.
 
     The **Second authentication method** can be one of the following:
-
-    -   **User (Kerberos V5)**. Selecting this option tells the device to use and require authentication of the currently logged-on user by using his or her domain credentials. This authentication method works only with other devices that can use AuthIP. User-based authentication using Kerberos V5 is not supported by IKE v1.
 
     -   **User (NTLMv2)**. Selecting this option tells the device to use and require authentication of the currently logged-on user by using his or her domain credentials, and uses the NTLMv2 protocol instead of Kerberos V5. This authentication method works only with other devices that can use AuthIP. User-based authentication using NTLMv2 is not supported by IKE v1.
 

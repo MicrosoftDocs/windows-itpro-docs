@@ -32,6 +32,7 @@
     "externalReference": [],
     "globalMetadata": {
       "recommendations": true,
+      "adobe-target": true,
       "ms.collection": [
         "tier2"
       ],
@@ -64,7 +65,8 @@
         "dstrome",
         "v-dihans",        
         "garycentric",
-        "v-stsavell"
+        "v-stsavell",
+        "beccarobins"
       ]
     },
     "fileMetadata": {},

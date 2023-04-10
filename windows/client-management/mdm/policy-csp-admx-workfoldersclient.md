@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WorkFoldersClient Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -165,7 +165,7 @@ This policy setting specifies the Work Folders server for affected users, as wel
 
 The "Work Folders URL" can specify either the URL used by the organization for Work Folders discovery, or the specific URL of the file server that stores the affected users' data.
 
-The "Work Folders Local Path" specifies the local folder used on the client machine to sync files. This path may contain environment variables
+The "Work Folders Local Path" specifies the local folder used on the client machine to sync files. This path may contain environment variables.
 
 > [!NOTE]
 > In order for this configuration to take effect, a valid 'Work Folders URL' must also be specified.

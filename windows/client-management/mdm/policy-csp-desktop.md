@@ -4,7 +4,7 @@ description: Learn more about the Desktop Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -46,7 +46,7 @@ Prevents users from changing the path to their profile folders.
 
 By default, a user can change the location of their individual profile folders like Documents, Music etc. by typing a new path in the Locations tab of the folder's Properties dialog box.
 
-- If you enable this setting, users are unable to type a new location in the Target box.
+If you enable this setting, users are unable to type a new location in the Target box.
 <!-- PreventUserRedirectionOfProfileFolders-Description-End -->
 
 <!-- PreventUserRedirectionOfProfileFolders-Editable-Begin -->

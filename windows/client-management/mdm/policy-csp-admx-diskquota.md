@@ -4,7 +4,7 @@ description: Learn more about the ADMX_DiskQuota Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -189,7 +189,7 @@ This setting overrides new users' settings for the disk quota limit and warning 
 
 This policy setting applies to all new users as soon as they write to the volume. It does not affect disk quota limits for current users, or affect customized limits and warning levels set for particular users (on the Quota tab in Volume Properties).
 
-- If you disable or do not configure this policy setting, the disk space available to users is not limited. The disk quota management feature uses the physical space on each volume as its quota limit and warning level.
+If you disable or do not configure this policy setting, the disk space available to users is not limited. The disk quota management feature uses the physical space on each volume as its quota limit and warning level.
 
 When you select a limit, remember that the same limit applies to all users on all volumes, regardless of actual volume size. Be sure to set the limit and warning level so that it is reasonable for the range of volumes in the group.
 
@@ -384,7 +384,7 @@ This policy setting does not affect the Quota Entries window on the Quota tab. E
 <!-- Description-Source-ADMX -->
 This policy setting extends the disk quota policies in this folder to NTFS file system volumes on removable media.
 
-- If you disable or do not configure this policy setting, the disk quota policies established in this folder apply to fixed-media NTFS volumes only
+If you disable or do not configure this policy setting, the disk quota policies established in this folder apply to fixed-media NTFS volumes only.
 
 > [!NOTE]
 > When this policy setting is applied, the computer will apply the disk quota to both fixed and removable media.

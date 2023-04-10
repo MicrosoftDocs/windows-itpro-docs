@@ -1,13 +1,15 @@
 ---
 title: Demonstrate Autopilot deployment
-manager: aaroncz
 description: Step-by-step instructions on how to set up a virtual machine with a Windows Autopilot deployment.
 ms.prod: windows-client
 ms.technology: itpro-deploy
 ms.localizationpriority: medium
 author: frankroj
 ms.author: frankroj
-ms.collection: highpri, tier2
+manager: aaroncz
+ms.collection:
+  - highpri
+  - tier2
 ms.topic: tutorial
 ms.date: 10/28/2022
 ---

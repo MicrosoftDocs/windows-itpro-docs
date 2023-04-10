@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Kerberos Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -237,6 +237,7 @@ This policy setting allows you to specify which DNS host names and which DNS suf
 This policy setting allows you to disable revocation check for the SSL certificate of the targeted KDC proxy server.
 
 - If you enable this policy setting, revocation check for the SSL certificate of the KDC proxy server is ignored by the Kerberos client. This policy setting should only be used in troubleshooting KDC proxy connections.
+
 > [!WARNING]
 > When revocation check is ignored, the server represented by the certificate is not guaranteed valid.
 

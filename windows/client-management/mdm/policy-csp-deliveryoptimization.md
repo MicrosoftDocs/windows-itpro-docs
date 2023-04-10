@@ -4,7 +4,7 @@ description: Learn more about the DeliveryOptimization Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -134,7 +134,7 @@ Specifies whether the device is allowed to participate in Peer Caching while con
 |:--|:--|
 | Name | AllowVPNPeerCaching |
 | Friendly Name | Enable Peer Caching while the device connects via VPN |
-| Element Name | Enable Peer Caching while the device connects via VPN |
+| Element Name | Enable Peer Caching while the device connects via VPN. |
 | Location | Computer Configuration |
 | Path | Windows Components > Delivery Optimization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization |
@@ -192,7 +192,7 @@ One or more values can be added as either fully qualified domain names (FQDN) or
 |:--|:--|
 | Name | CacheHost |
 | Friendly Name | Cache Server Hostname |
-| Element Name | Cache Server |
+| Element Name | Cache Server. |
 | Location | Computer Configuration |
 | Path | Windows Components > Delivery Optimization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization |
@@ -259,7 +259,7 @@ If this policy is not configured, the client will attempt to automatically find 
 |:--|:--|
 | Name | CacheHostSource |
 | Friendly Name | Cache Server Hostname Source |
-| Element Name | Cache Server Hostname Source |
+| Element Name | Cache Server Hostname Source. |
 | Location | Computer Configuration |
 | Path | Windows Components > Delivery Optimization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization |
@@ -619,7 +619,7 @@ Specifies the download method that Delivery Optimization can use in downloads of
 |:--|:--|
 | Name | DownloadMode |
 | Friendly Name | Download Mode |
-| Element Name | Download Mode |
+| Element Name | Download Mode. |
 | Location | Computer Configuration |
 | Path | Windows Components > Delivery Optimization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization |
@@ -676,7 +676,7 @@ Use this if you need to create a single group for Local Network Peering for bran
 |:--|:--|
 | Name | GroupId |
 | Friendly Name | Group ID |
-| Element Name | Group ID |
+| Element Name | Group ID. |
 | Location | Computer Configuration |
 | Path | Windows Components > Delivery Optimization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization |
@@ -745,7 +745,7 @@ Set this policy to restrict peer selection to a specific source. Available optio
 |:--|:--|
 | Name | GroupIdSource |
 | Friendly Name | Select the source of Group IDs |
-| Element Name | Source of Group IDs |
+| Element Name | Source of Group IDs. |
 | Location | Computer Configuration |
 | Path | Windows Components > Delivery Optimization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization |
@@ -1308,7 +1308,7 @@ By default, %SystemDrive% is used to store the cache. The drive location can be 
 |:--|:--|
 | Name | ModifyCacheDrive |
 | Friendly Name | Modify Cache Drive |
-| Element Name | Modify Cache Drive |
+| Element Name | Modify Cache Drive. |
 | Location | Computer Configuration |
 | Path | Windows Components > Delivery Optimization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization |
@@ -1555,7 +1555,7 @@ In Windows 11 the 'Local Peer Discovery' option was introduced to restrict peer 
 |:--|:--|
 | Name | RestrictPeerSelectionBy |
 | Friendly Name | Select a method to restrict Peer Selection |
-| Element Name | Restrict Peer Selection By |
+| Element Name | Restrict Peer Selection By. |
 | Location | Computer Configuration |
 | Path | Windows Components > Delivery Optimization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization |

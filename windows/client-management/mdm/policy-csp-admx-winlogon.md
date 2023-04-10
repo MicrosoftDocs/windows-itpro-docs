@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WinLogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -45,6 +45,7 @@ ms.topic: reference
 Specifies an alternate user interface.
 
 The Explorer program (%windir%\explorer.exe) creates the familiar Windows interface, but you can use this setting to specify an alternate interface.
+
 - If you enable this setting, the system starts the interface you specify instead of Explorer.exe.
 
 To use this setting, copy your interface program to a network share or to your system drive. Then, enable this setting, and type the name of the interface program, including the file name extension, in the Shell name text box. If the interface program file is not located in a folder specified in the Path environment variable for your system, enter the fully qualified path to the file.
@@ -176,7 +177,7 @@ This policy controls whether the logged on user should be notified when his logo
 - If you disable or do not configure this setting, users receive warnings before the logon hours expire, if actions have been set to occur when the logon hours expire.
 
 > [!NOTE]
-> If you configure this setting, you might want to examine and appropriately configure the "Set action to take when logon hours expire" setting. If "Set action to take when logon hours expire" is disabled or not configured, the "Remove logon hours expiration warnings" setting will have no effect, and users receive no warnings about logon hour expiration
+> If you configure this setting, you might want to examine and appropriately configure the "Set action to take when logon hours expire" setting. If "Set action to take when logon hours expire" is disabled or not configured, the "Remove logon hours expiration warnings" setting will have no effect, and users receive no warnings about logon hour expiration.
 <!-- LogonHoursNotificationPolicyDescription-Description-End -->
 
 <!-- LogonHoursNotificationPolicyDescription-Editable-Begin -->
@@ -243,7 +244,7 @@ If you choose to log off a user, the user cannot log on again except during perm
 - If you disable or do not configure this setting, the system takes no action when the user's logon hours expire. The user can continue the existing session, but cannot log on to a new session.
 
 > [!NOTE]
-> If you configure this setting, you might want to examine and appropriately configure the "Remove logon hours expiration warnings" setting
+> If you configure this setting, you might want to examine and appropriately configure the "Remove logon hours expiration warnings" setting.
 <!-- LogonHoursPolicyDescription-Description-End -->
 
 <!-- LogonHoursPolicyDescription-Editable-Begin -->

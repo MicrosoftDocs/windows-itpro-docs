@@ -4,7 +4,7 @@ description: Learn more about the Stickers Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- EnableStickers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableStickers-Applicability-End -->
 
 <!-- EnableStickers-OmaUri-Begin -->
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- EnableStickers-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to control whether you want to allow stickers to be edited and placed on Desktop
+This policy setting allows you to control whether you want to allow stickers to be edited and placed on Desktop.
 <!-- EnableStickers-Description-End -->
 
 <!-- EnableStickers-Editable-Begin -->

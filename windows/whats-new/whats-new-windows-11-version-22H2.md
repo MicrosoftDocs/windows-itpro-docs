@@ -6,8 +6,10 @@ ms.prod: windows-client
 ms.author: mstewart
 author: mestew
 ms.localizationpriority: medium
-ms.topic: article
-ms.collection: highpri, tier1
+ms.topic: conceptual
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
 ---

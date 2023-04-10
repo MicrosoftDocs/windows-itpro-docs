@@ -55,19 +55,21 @@ To enable Personal Data Encryption (PDE) using Intune, follow the below steps:
 
    1. In the **Add Row** window that opens:
 
-       1. Next to **Name**, enter **Personal Data Encryption**.
+     1. Next to **Name**, enter **Personal Data Encryption**.
 
-       1. Next to **Description**, enter a description.
+     1. Next to **Description**, enter a description.
 
-       1. Next to **OMA-URI**, enter in **`./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption`**.
+     1. Next to **OMA-URI**, enter in:
 
-       1. Next to **Data type**, select **Integer**.
+        **`./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption`**
 
-       1. Next to **Value**, enter in **1**.
+     1. Next to **Data type**, select **Integer**.
 
-       1. Select **Save** to close the **Add Row** window.
+     1. Next to **Value**, enter in **1**.
 
-   1. Select **Next**
+     1. Select **Save** to close the **Add Row** window.
+
+   1. Select **Next**.
 
 1. In the **Assignments** page:
 

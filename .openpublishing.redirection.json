@@ -19697,7 +19697,12 @@
     },
     {
       "source_path": "windows/client-management/mdm/change-history-for-mdm-documentation.md",
-      "redirect_url": "/windows/client-management/change-history-for-mdm-documentation",
+      "redirect_url": "/windows/client-management/new-in-windows-mdm-enrollment-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/change-history-for-mdm-documentation.md",
+      "redirect_url": "/windows/client-management/new-in-windows-mdm-enrollment-management",
       "redirect_document_id": false
     },
     {
@@ -19944,8 +19949,8 @@
       "source_path": "windows/client-management/mdm/wmi-providers-supported-in-windows.md",
       "redirect_url": "/windows/client-management/wmi-providers-supported-in-windows",
       "redirect_document_id": false
-     },
-     {
+    },
+    {
       "source_path": "windows/deployment/do/mcc-enterprise.md",
       "redirect_url": "/windows/deployment/do/waas-microsoft-connected-cache",
       "redirect_document_id": false
@@ -20053,6 +20058,81 @@
     {
       "source_path": "windows/client-management/windows-10-support-solutions.md",
       "redirect_url": "/troubleshoot/windows-client/welcome-windows-client",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/management-tool-for-windows-store-for-business.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/rest-api-reference-windows-store-for-business.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/data-structures-windows-store-for-business.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-inventory.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-product-details.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-localized-product-details.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-offline-license.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-product-packages.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-product-package.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-seats.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-seat.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/assign-seats.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/reclaim-seat-from-user.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/bulk-assign-and-reclaim-seats-from-user.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-seats-assigned-to-a-user.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
       "redirect_document_id": false
     },
     {
@@ -20571,11 +20651,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/security/threat-protection/mbsa-removal-and-guidance.md",
-      "redirect_url": "/windows/security",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "windows/security/information-protection/bitlocker/bitlocker-recovery-loop-break.md",
       "redirect_url": "/windows/security",
       "redirect_document_id": false
@@ -20651,9 +20726,24 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/use-device-guard-signing-portal-in-microsoft-store-for-business.md",
+      "redirect_url": "https://aka.ms/AzureCodeSigning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/quality-updates.md",
+      "redirect_url": "/windows/deployment/update/release-cycle",
+      "redirect_document_id": false
+    },    
+    {
       "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-privacy.md",
       "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-privacy",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "store-for-business/sign-up-microsoft-store-for-business.md",
+      "redirect_url": "/microsoft-store",
+      "redirect_document_id": false
     }
   ]
 }
