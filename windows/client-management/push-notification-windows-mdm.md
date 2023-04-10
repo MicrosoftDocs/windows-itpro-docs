@@ -63,3 +63,5 @@ To get a PFN and WNS credentials, you must create a Microsoft Store app.
       - Application ID
       - Application Secrets
       - Redirect URIs
+
+For more information see, [Windows Push Notification Services (WNS) overview](/windows/apps/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview).
