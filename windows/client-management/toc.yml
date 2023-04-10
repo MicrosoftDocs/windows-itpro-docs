@@ -52,14 +52,16 @@ items:
                 href: config-lock.md
               - name: Certificate renewal
                 href: certificate-renewal-windows-mdm.md
-          - name: Unenroll devices
-            href: disconnecting-from-mdm-unenrollment.md
           - name: Diagnose MDM failures
             items:
               - name: Collect MDM logs
                 href: mdm-collect-logs.md
               - name: Diagnose MDM enrollment
                 href: mdm-diagnose-enrollment.md
+              - name: Known issues
+                href: mdm-known-issues.md
+          - name: Unenroll devices
+            href: disconnecting-from-mdm-unenrollment.md
           - name: Configuration service provider reference
             href: mdm/index.yml
       - name: Client management tools and settings

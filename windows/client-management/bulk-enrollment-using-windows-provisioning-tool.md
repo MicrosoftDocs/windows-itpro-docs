@@ -40,7 +40,7 @@ On the desktop and mobile devices, you can use an enrollment certificate or enro
 
 ## What you need
 
-- Windows 10 devices.
+- Windows devices.
 - Windows Configuration Designer (WCD) tool.
 
     To get the WCD tool, download from the [Microsoft Store](https://www.microsoft.com/store/productId/9NBLGGH4TX22). For more information about the WCD tool, see [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd) and [Getting started with Windows WCD](/windows/configuration/provisioning-packages/provisioning-install-icd).

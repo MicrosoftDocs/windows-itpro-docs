@@ -75,7 +75,7 @@ Config lock is designed to ensure that a secured-core PC isn't unintentionally m
 
 - Can I disable config lock? Yes. You can use MDM to turn off config lock completely or put it in temporary unlock mode for helpdesk activities.
 
-### List of locked policies
+## List of locked policies
 
 |**CSPs**     |
 |-----|
