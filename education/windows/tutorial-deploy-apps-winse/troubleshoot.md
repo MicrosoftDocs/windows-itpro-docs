@@ -13,9 +13,19 @@ The following table lists common app deployment issues on Windows 11 SE, and opt
 
 | **Problem** | **Potential solution** |
 |---|---|
+| **App hasn't installed** | <li>Check the type of app:<ul><li>Win32 apps should be able to install with no problem</li><li>UWP LOB apps apps aren't supported</li></ul></li><li>It's possible the app is trying to execute a blocked binary. Check the AppLocker and CodeIntegrity logs in the Event Viewer and verify if any executables related to the app are blocked. If so, you'll need to write a supplemental policy to support the app</li><li> Check the Intune Management Extension logs to see if there was an attempt to install your app</li>|
+| **App has problems when running** | It's possible the app is trying to execute a blocked binary<br> Check the **AppLocker** and **CodeIntegrity** logs in Event Viewer to see if any executables related to the app are being blocked. If so, you'll need to write a supplemental policy to support the app. |
+| **My supplemental policy hasn't deployed** |<li>Your XML policy is malformed. Double-check to see if all markup is tagged correctly</li><li>Check that your policy is correctly applied|
+
+<!--
+The following table lists common app deployment issues on Windows 11 SE, and options to resolve them:
+
+| **Problem** | **Potential solution** |
+|---|---|
 | **App hasn't installed** | <li>Check the type of app:<ul><li>Win32 apps should be able to install with no problem</li><li>UWP LOB apps require writing an additional supplemental policy</li><li>Microsoft Sore apps aren't supported</li></ul></li><li>Check that the managed installer policies are deployed correctly</li><li>It's possible the app is trying to execute a blocked binary. Check the AppLocker and CodeIntegrity logs in the Event Viewer and verify if any executables related to the app are blocked. If so, you'll need to write a supplemental policy to support the app</li><li> Check the Intune Management Extension logs to see if there was an attempt to install your app</li>|
 | **App has problems when running** | It's possible the app is trying to execute a blocked binary<br> Check the **AppLocker** and **CodeIntegrity** logs in Event Viewer to see if any executables related to the app are being blocked. If so, you'll need to write a supplemental policy to support the app. |
 | **My supplemental policy hasn't deployed** |<li>Your XML policy is malformed. Double-check to see if all markup is tagged correctly</li><li>Check that your policy is correctly applied|
+
 
 ## WDAC Supplemental policy validation
 
@@ -62,12 +72,14 @@ Use the Event Viewer to see if a supplemental policy is deployed correctly. Thes
 
     Alternatively you can use `cidiag.exe /stop`, which copies all potentially relevant logs and policy files to a folder. The command also parses the critical events from the **CodeIntegrity** and **AppLocker** logs to a text file.
 
+-->
+
 ## AppLocker policy validation
 
 > [!NOTE]
 > The validation process described below requires the deployment of a PowerShell script from Intune to the Windows SE devices. This script will be used to query the AppLocker policy and validate that the policy is configured correctly. The script will also be used to validate the AppLocker service status.
 
-You can query the existing AppLocker policy via PowerShell running from a device.
+You can query the existing AppLocker policy via PowerShell.
 
 ```PowerShell
 get-applockerpolicy -xml -effective
