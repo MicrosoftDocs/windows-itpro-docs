@@ -1,9 +1,9 @@
 ---
 title: WindowsLicensing CSP
 description: Learn more about the WindowsLicensing CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
+author: vst-world
+manager: valeed
+ms.author: valeed sabah
 ms.date: 02/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
