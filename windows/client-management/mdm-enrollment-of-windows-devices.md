@@ -287,6 +287,6 @@ The **Disconnect** button can be found on all work connections. Generally, selec
 
 You can collect diagnostic logs around your work connections by going to **Settings** > **Accounts** > **Access work or school**, and then selecting the **Export your management logs** link under **Related Settings**. Next, select **Export**, and follow the path displayed to retrieve your management log files.
 
-Starting in Windows 10, version 1709, you can get the advanced diagnostic report by going to **Settings** > **Accounts** > **Access work or school**, and selecting the **Info** button. At the bottom of the Settings page, you'll see the button to create a report, as shown here.
+Starting in Windows 10, version 1709, you can get the advanced diagnostic report by going to **Settings** > **Accounts** > **Access work or school**, and selecting the **Info** button. At the bottom of the Settings page, you'll see the button to create a report.
 
-![collecting enrollment management log files.](images/unifiedenrollment-rs1-37-c.png)
+For more information, see [Collect MDM logs](mdm-collect-logs.md).
