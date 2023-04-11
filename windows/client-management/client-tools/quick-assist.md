@@ -1,6 +1,7 @@
 ---
 title: Use Quick Assist to help users
 description: Learn how IT Pros can use Quick Assist to help users.
+ms.date: 04/11/2023
 ms.prod: windows-client
 ms.topic: article
 ms.technology: itpro-manage
@@ -15,7 +16,6 @@ appliesto:
 ms.collection:
 - highpri
 - tier1
-ms.date: 03/06/2023
 ---
 
 # Use Quick Assist to help users

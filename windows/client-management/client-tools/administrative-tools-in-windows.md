@@ -6,7 +6,7 @@ author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
 ms.localizationpriority: medium
-ms.date: 03/28/2022
+ms.date: 04/11/2023
 ms.topic: article
 ms.collection:
 - highpri
@@ -21,7 +21,7 @@ appliesto:
 
 **Windows Tools** is a folder in the Windows 11 Control Panel. **Administrative Tools** is a folder in the Windows 10 Control Panel. These folders contain tools for system administrators and advanced users.
 
-## Windows Tools folder (Windows 11)
+## Windows Tools folder
 
 The following graphic shows the **Windows Tools** folder in Windows 11:
 
@@ -31,7 +31,7 @@ The tools in the folder might vary depending on which edition of Windows you use
 
 :::image type="content" source="images/win11-windows-tools.png" alt-text="Screenshot of the contents of the Windows Tools folder in Windows 11." lightbox="images/win11-windows-tools.png":::
 
-## Administrative Tools folder (Windows 10)
+## Administrative Tools folder
 
 The following graphic shows the **Administrative Tools** folder in Windows 10:
 

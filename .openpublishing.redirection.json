@@ -6637,7 +6637,7 @@
     },
     {
       "source_path": "windows/client-management/administrative-tools-in-windows-10.md",
-      "redirect_url": "/windows/client-management/client-tools/administrative-tools-in-windows-10",
+      "redirect_url": "/windows/client-management/client-tools/administrative-tools-in-windows",
       "redirect_document_id": false
     },
     {
@@ -6652,7 +6652,7 @@
     },
     {
       "source_path": "windows/client-management/group-policies-for-enterprise-and-education-editions.md",
-      "redirect_url": "/windows/client-management/client-tools/group-policies-for-enterprise-and-education-editions",
+      "redirect_url": "https://www.microsoft.com/en-us/search/explore?q=Group+Policy+Settings+Reference+Spreadsheet",
       "redirect_document_id": false
     },
     {
@@ -6672,7 +6672,7 @@
     },
     {
       "source_path": "windows/client-management/new-policies-for-windows-10.md",
-      "redirect_url": "/windows/client-management/client-tools/new-policies-for-windows-10",
+      "redirect_url": "https://www.microsoft.com/en-us/search/explore?q=Group+Policy+Settings+Reference+Spreadsheet",
       "redirect_document_id": false
     },
     {

@@ -28,7 +28,7 @@ This six-minute video demonstrates how users can bring in a new retail device an
 > [!NOTE]
 > The video demonstrates the configuration process using the classic Azure portal, which is retired. Customers should use the new Azure portal. [Learn how use the new Azure portal to perform tasks that you used to do in the classic Azure portal.](/information-protection/deploy-use/migrate-portal)
 
-This article offers guidance on strategies for deploying and managing Windows devices, including deploying Windows in a mixed environment. It covers [management options](#reviewing-the-management-options-with-windows-10) plus the four stages of the device lifecycle:
+This article offers guidance on strategies for deploying and managing Windows devices, including deploying Windows in a mixed environment. It covers [management options](#reviewing-the-management-options-for-windows) plus the four stages of the device lifecycle:
 
 - [Deployment and Provisioning](#deployment-and-provisioning)
 - [Identity and Authentication](#identity-and-authentication)

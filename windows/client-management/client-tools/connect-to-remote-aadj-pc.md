@@ -1,11 +1,11 @@
 ---
-title: Connect to remote Azure Active Directory joined device (Windows)
+title: Connect to remote Azure Active Directory joined device
 description: Learn how to use Remote Desktop Connection to connect to an Azure AD joined device.
 ms.prod: windows-client
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.author: vinpa
-ms.date: 01/18/2022
+ms.date: 04/11/2023
 manager: aaroncz
 ms.topic: article
 appliesto:
@@ -19,11 +19,11 @@ ms.technology: itpro-manage
 
 # Connect to remote Azure Active Directory joined device
 
-From its release, Windows has supported remote connections to devices joined to Active Directory using Remote Desktop Protocol (RDP). Windows 10, version 1607 added the ability to connect to a device that is joined to Azure Active Directory (Azure AD) using RDP.
+Windows supports remote connections to devices joined to Active Directory s well as devices joined to Azure Active Directory (Azure AD) using Remote Desktop Protocol (RDP).
 
 - Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session](/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics).
 - Starting in Windows 10/11, with 2022-10 update installed, you can [use Azure AD authentication to connect to the remote Azure AD device](#connect-with-azure-ad-authentication).
- 
+
 ## Prerequisites
 
 - Both devices (local and remote) must be running a supported version of Windows.
@@ -39,20 +39,20 @@ Azure AD Authentication can be used on the following operating systems for both 
 - Windows 11 with [2022-10 Cumulative Updates for Windows 11 (KB5018418)](https://support.microsoft.com/kb/KB5018418) or later installed.
 - Windows 10, version 20H2 or later with [2022-10 Cumulative Updates for Windows 10 (KB5018410)](https://support.microsoft.com/kb/KB5018410) or later installed.
 - Windows Server 2022 with [2022-10 Cumulative Update for Microsoft server operating system (KB5018421)](https://support.microsoft.com/kb/KB5018421) or later installed.
-   
+
 There's no requirement for the local device to be joined to a domain or Azure AD. As a result, this method allows you to connect to the remote Azure AD joined device from:
 
 - [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) device.
 - Active Directory joined device.
 - Workgroup device.
- 
+
 Azure AD authentication can also be used to connect to Hybrid Azure AD joined devices.
 
 To connect to the remote computer:
 
 - Launch **Remote Desktop Connection** from Windows Search, or by running `mstsc.exe`.
 - Select **Use a web account to sign in to the remote computer** option in the **Advanced** tab. This option is equivalent to the `enablerdsaadauth` RDP property. For more information, see [Supported RDP properties with Remote Desktop Services](/windows-server/remote/remote-desktop-services/clients/rdp-files).
-- Specify the name of the remote computer and select **Connect**. 
+- Specify the name of the remote computer and select **Connect**.
 
     > [!NOTE]
     > IP address cannot be used when **Use a web account to sign in to the remote computer** option is used.
@@ -129,5 +129,3 @@ Remote Desktop Users group is used to grant users and groups permissions to remo
 ## Related articles
 
 [How to use Remote Desktop](https://support.microsoft.com/windows/how-to-use-remote-desktop-5fe128d5-8fb1-7a23-3b8a-41e636865e8c)
-
-
