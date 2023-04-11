@@ -65,6 +65,7 @@ items:
           - name: Configuration service provider reference
             href: mdm/index.yml
       - name: Client management tools and settings
+        expanded: true
         href: client-tools/toc.yml
       - name: Troubleshoot Windows clients
         href: /troubleshoot/windows-client/welcome-windows-client
