@@ -1,15 +1,14 @@
 ---
-ms.reviewer:
-manager: aaroncz
 title: Windows Libraries
+description: All about Windows Libraries, which are containers for users' content, such as Documents and Pictures.
 ms.prod: windows-client
+author: vinaypamnani-msft
 ms.author: vinpa
-ms.manager: dongill
+manager: aaroncz
+ms.reviewer:
 ms.technology: itpro-manage
 ms.topic: article
-author: vinaypamnani-msft
-description: All about Windows Libraries, which are containers for users' content, such as Documents and Pictures.
-ms.date: 09/15/2021
+ms.date: 04/11/2023
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -95,14 +94,14 @@ While library files themselves can't be redirected, you can redirect known folde
 
 The following table shows which locations are supported in Windows libraries.
 
-|Supported Locations|Unsupported Locations|
-|---|---|
-|Fixed local volumes (NTFS/FAT)|Removable drives|
-|Shares that are indexed (departmental servers*, Windows home PCs)|Removable media (such as DVDs)<br><br>Network shares that are accessible through DFS Namespaces or are part of a failover cluster|
-|Shares that are available offline (redirected folders that use Offline Files)|Network shares that aren't available offline or remotely indexed <br><br>Network Attached Storage (NAS) devices|
-||Other data sources: SharePoint, Exchange, etc.|
+| Supported Locations | Unsupported Locations |
+|--|--|
+| Fixed local volumes (NTFS/FAT) | Removable drives |
+| Shares that are indexed (departmental servers*, Windows home PCs) | Removable media (such as DVDs)<br><br>Network shares that are accessible through DFS Namespaces or are part of a failover cluster |
+| Shares that are available offline (redirected folders that use Offline Files) | Network shares that aren't available offline or remotely indexed <br><br>Network Attached Storage (NAS) devices |
+|  | Other data sources: SharePoint, Exchange, etc. |
 
-\* For shares that are indexed on a departmental server, Windows Search works well in workgroups or on a domain server that has similar characteristics to a workgroup server. For example, Windows Search works well on a single share departmental server with the following characteristics:
+\* For shares that are indexed on a departmental server, Windows Search works well in a workgroup or on a domain server that has similar characteristics to a workgroup server. For example, Windows Search works well on a single share departmental server with the following characteristics:
 
 - Expected maximum load is four concurrent query requests.
 - Expected indexing corpus is a maximum of one million documents.
@@ -120,7 +119,7 @@ The following library attributes can be modified within Windows Explorer, the Li
 
 The library icon can be modified by the administrator or user by directly editing the Library Description schema file.
 
-See the [Library Description Schema](/windows/win32/shell/library-schema-entry) topic on MSDN for information on creating Library Description files.
+See [Library Description Schema](/windows/win32/shell/library-schema-entry) for information on creating Library Description files.
 
 ## See also
 

@@ -135,11 +135,11 @@ It may take some time for this change to replicate to all domain controllers.
 
 When a user is configured with a mandatory profile, Windows starts as though it was the first sign-in each time the user signs in. To improve sign-in performance for users with mandatory user profiles, apply the Group Policy settings shown in the following table.
 
-| Group Policy setting                                                                                                                          | Windows 10                          | Windows Server 2016                    |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|----------------------------------------|
-| Computer Configuration > Administrative Templates > System > Logon > **Show first sign-in animation** = Disabled                              | ![supported.](images/checkmark.png) | ![supported](images/checkmark.png)     |
-| Computer Configuration > Administrative Templates > Windows Components > Search > **Allow Cortana** = Disabled                                | ![supported.](images/checkmark.png) | ![supported](images/checkmark.png)     |
-| Computer Configuration > Administrative Templates > Windows Components > Cloud Content > **Turn off Microsoft consumer experience** = Enabled | ![supported.](images/checkmark.png) | ![not supported](images/crossmark.png) |
+| Group Policy setting                                                                                                                          | Windows 10 | Windows Server 2016 |
+|-----------------------------------------------------------------------------------------------------------------------------------------------|:----------:|:-------------------:|
+| Computer Configuration > Administrative Templates > System > Logon > **Show first sign-in animation** = Disabled                              | ✅         | ✅                 |
+| Computer Configuration > Administrative Templates > Windows Components > Search > **Allow Cortana** = Disabled                                | ✅         | ✅                 |
+| Computer Configuration > Administrative Templates > Windows Components > Cloud Content > **Turn off Microsoft consumer experience** = Enabled | ✅         | ❌                 |
 
 > [!NOTE]
 > The Group Policy settings above can be applied in Windows Professional edition.
