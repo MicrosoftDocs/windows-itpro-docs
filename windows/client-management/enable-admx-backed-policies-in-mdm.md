@@ -8,7 +8,7 @@ ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 11/01/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -17,9 +17,7 @@ appliesto:
 
 # Enable ADMX policies in MDM
 
-Here's how to configure Group Policy administrative templates (ADMX policies) in Mobile Device Management (MDM).
-
-Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX policies)](mdm/policies-in-policy-csp-admx-backed.md) for Windows PCs via the [Policy configuration service provider (CSP)](mdm/policy-configuration-service-provider.md). Configuring ADMX policies in Policy CSP is different from the typical way you configure a traditional MDM policy.
+Starting in Windows 10, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX policies)](mdm/policies-in-policy-csp-admx-backed.md) for Windows PCs via the [Policy configuration service provider (CSP)](mdm/policy-configuration-service-provider.md). Configuring ADMX policies in Policy CSP is different from the typical way you configure a traditional MDM policy.
 
 Summary of steps to enable a policy:
 

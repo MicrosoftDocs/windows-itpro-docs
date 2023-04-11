@@ -38,7 +38,7 @@ To ensure that the auto-enrollment feature is working as expected, you must veri
     >
     > For corporate-owned devices, the MDM user scope takes precedence if both scopes are enabled. The devices get MDM enrolled.
 
-1. Verify that the device OS version is Windows 10, version 1709 or later.
+1. Verify that the device is running a [supported version of Windows](/windows/release-health/supported-versions-windows-client).
 
 1. Auto-enrollment into Intune via Group Policy is valid only for devices that are hybrid Azure AD joined. This condition means that the device must be joined into both local Active Directory and Azure Active Directory. To verify that the device is hybrid Azure AD joined, run `dsregcmd /status` from the command line.
 

@@ -35,7 +35,7 @@ This article offers guidance on strategies for deploying and managing Windows de
 - [Configuration](#settings-and-configuration)
 - [Updating and Servicing](#updating-and-servicing)
 
-## Reviewing the management options with Windows 10
+## Reviewing the management options for Windows
 
 Windows offers a range of management options, as shown in the following diagram:
 
@@ -115,7 +115,7 @@ There are various steps you can take to begin the process of modernizing device 
 
 **Take incremental steps.** Moving towards modern device management doesn't have to be an overnight transformation. New operating systems and devices can be brought in while older ones remain. With this "managed diversity," users can benefit from productivity enhancements on modern Windows devices, while you continue to maintain older devices according to your standards for security and manageability. The CSP policy [MDMWinsOverGP](./mdm/policy-csp-controlpolicyconflict.md#mdmwinsovergp) allows MDM policies to take precedence over group policy when both group policy and its equivalent MDM policies are set on the device. You can start implementing MDM policies while keeping your group policy environment. For more information, including the list of MDM policies with equivalent group policies, see [Policies supported by group policy](./mdm/policies-in-policy-csp-supported-by-group-policy.md).
 
-**Optimize your existing investments**. On the road from traditional on-premises management to modern cloud-based management, take advantage of the flexible, hybrid architecture of Configuration Manager and Intune. Co-management enables you to concurrently manage Windows 10 devices by using both Configuration Manager and Intune. For more information, see the following articles:
+**Optimize your existing investments**. On the road from traditional on-premises management to modern cloud-based management, take advantage of the flexible, hybrid architecture of Configuration Manager and Intune. Co-management enables you to concurrently manage Windows devices by using both Configuration Manager and Intune. For more information, see the following articles:
 
 - [Co-management for Windows devices](/mem/configmgr/comanage/overview)
 - [Prepare Windows devices for co-management](/mem/configmgr/comanage/how-to-prepare-Win10)

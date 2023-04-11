@@ -16,10 +16,10 @@ appliesto:
 
 # On-premises authentication device enrollment
 
-This section provides an example of the mobile device enrollment protocol using on-premises authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
+This section provides an example of the mobile device enrollment protocol using on-premises authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 > [!NOTE]
-> For the list of enrollment scenarios not supported in Windows 10, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
+> For the list of enrollment scenarios not supported in Windows, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
 
 ## Discovery service
 

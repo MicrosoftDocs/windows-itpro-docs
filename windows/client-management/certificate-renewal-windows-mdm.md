@@ -100,9 +100,6 @@ For more information about the parameters, see the CertificateStore configuratio
 
 Unlike manual certificate renewal, the device will not do an automatic MDM client certificate renewal if the certificate is already expired. To make sure the device has enough time to automatically renew, we recommend you set a renewal period a couple months (40-60 days) before the certificate expires. And, set the renewal retry interval to every few days, like every 4-5 days instead every 7 days (weekly). This change increases the chance that the device will try to connect at different days of the week.
 
-> [!NOTE]
-> For PCs that were previously enrolled in MDM in Windows 8.1 and then upgraded to Windows 10, renewal will be triggered for the enrollment certificate. Thereafter, renewal will happen at the configured ROBO interval.
-
 ## Certificate renewal response
 
 When RequestType is set to Renew, the web service verifies the following (in additional to initial enrollment):

@@ -383,7 +383,7 @@ For a sample that illustrates how an MDM can obtain an access token using OAuth 
 The following sample REST API call illustrates how an MDM can use the Microsoft Graph API to report compliance status of a device being managed by it.
 
 > [!NOTE]
-> This API is only applicable for approved MDM apps on Windows 10 devices.
+> This API is only applicable for approved MDM apps on Windows devices.
 
 ```console
 Sample Graph API Request:

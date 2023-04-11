@@ -16,7 +16,7 @@ appliesto:
 
 # Support for mobile application management on Windows
 
-The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP), starting in Windows 10, version 1703.
+The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP).
 
 [!INCLUDE [Deprecate Windows Information Protection](../security/information-protection/windows-information-protection/includes/wip-deprecation.md)]
 
@@ -46,7 +46,7 @@ MICROSOFTEDPAUTOPROTECTIONALLOWEDAPPINFO EDPAUTOPROTECTIONALLOWEDAPPINFOID
 
 ## Configuring an Azure AD tenant for MAM enrollment
 
-MAM enrollment requires integration with Azure AD. The MAM service provider needs to publish the Management MDM app to the Azure AD app gallery. Starting with Windows 10, version 1703 and later, the same cloud-based Management MDM app in Azure AD will support both MDM and MAM enrollments. If you've already published your MDM app, it needs to be updated to include MAM Enrollment and Terms of use URLs. The screenshot below illustrates the management app for an IT admin configuration.
+MAM enrollment requires integration with Azure AD. The MAM service provider needs to publish the Management MDM app to the Azure AD app gallery. The same cloud-based Management MDM app in Azure AD will support both MDM and MAM enrollments. If you've already published your MDM app, it needs to be updated to include MAM Enrollment and Terms of use URLs. The screenshot below illustrates the management app for an IT admin configuration.
 
 :::image type="content" alt-text="Mobile application management app." source="images/implement-server-side-mobile-application-management.png":::
 
@@ -87,12 +87,12 @@ MAM on Windows supports the following configuration service providers (CSPs). Al
 
 - [AppLocker CSP](mdm/applocker-csp.md) for configuration of Windows Information Protection enterprise allowed apps.
 - [ClientCertificateInstall CSP](mdm/clientcertificateinstall-csp.md) for installing VPN and Wi-Fi certs.
-- [DeviceStatus CSP](mdm/devicestatus-csp.md) required for Conditional Access support (starting with Windows 10, version 1703).
+- [DeviceStatus CSP](mdm/devicestatus-csp.md) required for Conditional Access support.
 - [DevInfo CSP](mdm/devinfo-csp.md).
 - [DMAcc CSP](mdm/dmacc-csp.md).
 - [DMClient CSP](mdm/dmclient-csp.md) for polling schedules configuration and MDM discovery URL.
 - [EnterpriseDataProtection CSP](mdm/enterprisedataprotection-csp.md) has Windows Information Protection policies.
-- [Health Attestation CSP](mdm/healthattestation-csp.md) required for Conditional Access support (starting with Windows 10, version 1703).
+- [Health Attestation CSP](mdm/healthattestation-csp.md) required for Conditional Access support.
 - [PassportForWork CSP](mdm/passportforwork-csp.md) for Windows Hello for Business PIN management.
 - [Policy CSP](mdm/policy-configuration-service-provider.md) specifically for NetworkIsolation and DeviceLock areas.
 - [Reporting CSP](mdm/reporting-csp.md) for retrieving Windows Information Protection logs.

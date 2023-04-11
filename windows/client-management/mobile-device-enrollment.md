@@ -80,7 +80,7 @@ The following scenarios don't allow MDM enrollments:
 
 ## Disable MDM enrollments
 
-In Windows 10 and Windows 11, IT admin can disable MDM enrollments for domain-joined PCs using the **Disable MDM Enrollment** group policy.
+IT admin can disable MDM enrollments for domain-joined PCs using the **Disable MDM Enrollment** group policy.
 
 Group Policy Path: **Computer configuration** > **Administrative Templates** > **Windows Components** > **MDM** > **Disable MDM Enrollment**.
 Corresponding registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\MDM\DisableRegistration (REG_DWORD)`
@@ -126,7 +126,7 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
 | a:        | InternalServiceFault | MENROLL_E_DEVICE_INTERNALSERVICE_ERROR    | There was an unhandled exception on the Mobile Device Management (MDM) server. Try again or contact your system administrator.                       | 80180006 |
 | a:        | InvalidSecurity      | MENROLL_E_DEVICE_INVALIDSECURITY_ERROR    | The Mobile Device Management (MDM) server was not able to validate your account. Try again or contact your system administrator.                     | 80180007 |
 
-In Windows 10, version 1507, `deviceenrollmentserviceerror` element was added. Here's an example:
+SOAP format also includes `deviceenrollmentserviceerror` element. Here's an example:
 
 ```xml
 <s:envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">

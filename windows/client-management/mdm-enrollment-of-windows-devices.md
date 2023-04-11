@@ -142,7 +142,7 @@ To create a local account and connect the device:
 
     If your Azure AD tenant has auto-enrollment configured, your device will also be enrolled into MDM during this flow. For more information, see [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/). If your tenant isn't configured for auto-enrollment, you'll have to go through the enrollment flow a second time to [connect your device to MDM](#enroll-in-device-management-only).
 
-    Starting in Windows 10, version 1709, you'll see the status page that shows the progress of your device being set up.
+    You'll see the status page that shows the progress of your device being set up.
 
     ![corporate sign in - screen and option](images/unifiedenrollment-rs1-26.png)
 
@@ -188,7 +188,7 @@ All Windows devices can be connected to MDM. You can connect to an MDM through t
 
 1. If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you'll be presented with a new window that will ask you for more authentication information.
 
-   Based on IT policy, you may also be prompted to provide a second factor of authentication at this point. Starting in Windows 10, version 1709, you'll see the enrollment progress on screen.
+   Based on IT policy, you may also be prompted to provide a second factor of authentication at this point. You'll see the enrollment progress on screen.
 
    ![screen to set up your device](images/unifiedenrollment-rs1-33-b.png)
 
@@ -204,16 +204,13 @@ The deep link used for connecting your device to work will always use the follow
 
 | Parameter | Description | Supported Value for Windows |
 |--|--|--|
-| mode | Describes which mode will be executed in the enrollment app. Added in Windows 10, version 1607 | Mobile Device Management (MDM), Adding Work Account (AWA), and Azure Active Directory-joined. |
-| username | Specifies the email address or UPN of the user who should be enrolled into MDM. Added in Windows 10, version 1703. | string |
-| servername | Specifies the MDM server URL that will be used to enroll the device. Added in Windows 10, version 1703. | string |
-| accesstoken | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used as a token to validate the enrollment request. Added in Windows 10, version 1703. | string |
-| deviceidentifier | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used to pass in a unique device identifier. Added in Windows 10, version 1703. | GUID |
-| tenantidentifier | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used to identify which tenant the device or user belongs to. Added in Windows 10, version 1703. | GUID or string |
-| ownership | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used to determine whether the device is BYOD or Corp Owned. Added in Windows 10, version 1703. | 1, 2, or 3. Where "1" means ownership is unknown, "2" means the device is personally owned, and "3" means the device is corporate-owned |
-
-> [!NOTE]
-> AWA and Azure Active Directory-joined values for mode are only supported on Windows 10, version 1709 and later.
+| mode | Describes which mode will be executed in the enrollment app. | Mobile Device Management (MDM), Adding Work Account (AWA), and Azure Active Directory-joined. |
+| username | Specifies the email address or UPN of the user who should be enrolled into MDM. | string |
+| servername | Specifies the MDM server URL that will be used to enroll the device. | string |
+| accesstoken | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used as a token to validate the enrollment request. | string |
+| deviceidentifier | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used to pass in a unique device identifier. | GUID |
+| tenantidentifier | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used to identify which tenant the device or user belongs to. | GUID or string |
+| ownership | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used to determine whether the device is BYOD or Corp Owned. | 1, 2, or 3. Where "1" means ownership is unknown, "2" means the device is personally owned, and "3" means the device is corporate-owned |
 
 ### Connect to MDM using a deep link
 
@@ -266,12 +263,9 @@ The **Info** button can be found on work or school connections involving MDM. Th
 
 Selecting the **Info** button will open a new page in the Settings app that provides details about your MDM connection. You'll be able to view your organization's support information (if configured) on this page. You'll also be able to start a sync session that forces your device to communicate to the MDM server and fetch any updates to policies if needed.
 
-Starting in Windows 10, version 1709, selecting the **Info** button will show a list of policies and line-of-business apps installed by your organization. Here's an example screenshot.
+Selecting the **Info** button will show a list of policies and line-of-business apps installed by your organization. Here's an example screenshot.
 
 ![work or school info.](images/unifiedenrollment-rs1-35-b.png)
-
-> [!NOTE]
-> Starting in Windows 10, version 1709, the **Manage** button is no longer available.
 
 ### Disconnect
 
@@ -287,6 +281,6 @@ The **Disconnect** button can be found on all work connections. Generally, selec
 
 You can collect diagnostic logs around your work connections by going to **Settings** > **Accounts** > **Access work or school**, and then selecting the **Export your management logs** link under **Related Settings**. Next, select **Export**, and follow the path displayed to retrieve your management log files.
 
-Starting in Windows 10, version 1709, you can get the advanced diagnostic report by going to **Settings** > **Accounts** > **Access work or school**, and selecting the **Info** button. At the bottom of the Settings page, you'll see the button to create a report.
+You can get the advanced diagnostic report by going to **Settings** > **Accounts** > **Access work or school**, and selecting the **Info** button. At the bottom of the Settings page, you'll see the button to create a report.
 
 For more information, see [Collect MDM logs](mdm-collect-logs.md).

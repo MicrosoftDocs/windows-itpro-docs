@@ -30,8 +30,8 @@ Windows offers the ability for management servers to:
 - Inventory all apps for a user (Store and non-Store apps)
 - Inventory all apps for a device (Store and non-Store apps)
 - Uninstall all apps for a user (Store and non-Store apps)
-- Provision apps so they're installed for all users of a device running Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
-- Remove the provisioned app on the device running Windows 10 for desktop editions
+- Provision apps so they're installed for all users of a device running Windows desktop editions (Home, Pro, Enterprise, and Education)
+- Remove the provisioned app on the device running Windows desktop editions
 
 ## Inventory apps
 
@@ -545,7 +545,7 @@ The Data field value of 0 (zero) indicates success. Otherwise it's an error code
 
 ## Uninstall your apps
 
-You can uninstall apps from users from Windows 10 devices. To uninstall an app, you delete it from the AppManagement node of the CSP. Within the AppManagement node, packages are organized based on their origin according to the following nodes:
+You can uninstall apps from users from Windows devices. To uninstall an app, you delete it from the AppManagement node of the CSP. Within the AppManagement node, packages are organized based on their origin according to the following nodes:
 
 - AppStore - These apps are for the Microsoft Store. Apps can be directly installed from the store or delivered to the enterprise from the Store for Business.
 - nonStore - These apps that weren't acquired from the Microsoft Store.

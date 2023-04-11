@@ -1,7 +1,7 @@
 ---
 title: OMA DM protocol support
 description: See how the OMA DM client communicates with the server over HTTPS and uses DM Sync (OMA DM v1.2) as the message payload.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -32,9 +32,8 @@ The following table shows the OMA DM standards that Windows uses.
 |Nodes|In the OMA DM tree, the following rules apply for the node name:<br/><li>"." can be part of the node name.<li>The node name can't be empty.<li>The node name can't be only the asterisk (`*`) character.|
 |Provisioning Files|Provisioning XML must be well formed and follow the definition in [SyncML Representation Protocol](https://www.openmobilealliance.org/release/Common/V1_2_2-20090724-A/OMA-TS-SyncML-RepPro-V1_2_2-20090724-A.pdf).<br/><br/>If an XML element that isn't a valid OMA DM command is under SyncBody, the status code 400 is returned for that element.<div class="alert">**Note**<br>To represent a Unicode string as a URI, first encode the string as UTF-8. Then encode each of the UTF-8 bytes using URI encoding.</div>|
 |WBXML support|Windows supports sending and receiving SyncML in both XML format and encoded WBXML format. This dual-format support is configurable by using the DEFAULTENCODING node under the w7 APPLICATION characteristic during enrollment. For more information about WBXML encoding, see section 8 of the [SyncML Representation Protocol](https://www.openmobilealliance.org/release/Common/V1_2_2-20090724-A/OMA-TS-SyncML-RepPro-V1_2_2-20090724-A.pdf) specification.|
-|Handling of large objects|In Windows 10, version 1511, client support for uploading large objects to the server was added.|
+|Handling of large objects|In Windows 10, client support for uploading large objects to the server was added.|
 
-<a href="" id="protocol-common-elements"></a>
 ## OMA DM protocol common elements
 
 Common elements are used by other OMA DM element types. The following table lists the OMA DM common elements used to configure the devices. For more information about OMA DM common elements, see "SyncML Representation Protocol Device Management Usage" (OMA-SyncML-DMRepPro-V1_1_2-20030613-A) available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/).
@@ -52,7 +51,7 @@ Common elements are used by other OMA DM element types. The following table list
 |MsgID|Specifies a unique identifier for an OMA DM session message.|
 |MsgRef|Specifies the ID of the corresponding request message. This element takes the value of the request message MsgID element.|
 |RespURI|Specifies the URI that the recipient must use when sending a response to this message.|
-|SessionID|Specifies the identifier of the OMA DM session associated with the containing message.<div class="alert">**Note**<br>  If the server doesn't notify the device that it supports a new version (through SyncApplicationVersion node in the DMClient CSP), the client returns the SessionID in integer in decimal format. If the server supports DM session sync version 2.0, which is used in Windows 10, the device client returns 2 bytes.</div>|
+|SessionID|Specifies the identifier of the OMA DM session associated with the containing message.<div class="alert">**Note**<br>  If the server doesn't notify the device that it supports a new version (through SyncApplicationVersion node in the DMClient CSP), the client returns the SessionID in integer in decimal format. If the server supports DM session sync version 2.0, which is used in Windows, the device client returns 2 bytes.</div>|
 |Source|Specifies the message source address.|
 |SourceRef|Specifies the source of the corresponding request message. This element takes the value of the request message Source element and is returned in the Status or Results element.|
 |Target|Specifies the address of the node, in the DM Tree, that is the target of the OMA DM command.|
@@ -131,7 +130,6 @@ The following LocURL shows a per user CSP node configuration: `./user/vendor/MSF
 
 The following LocURL shows a per device CSP node configuration: `./device/vendor/MSFT/RemoteWipe/DoWipe`
 
-<a href="" id="syncml-response-codes"></a>
 ## SyncML response status codes
 
 When using SyncML in OMA DM, there are standard response status codes that are returned. The following table lists the common SyncML response status codes you're likely to see. For more information about SyncML response status codes, see section 10 of the [SyncML Representation Protocol](https://openmobilealliance.org/release/Common/V1_2_2-20090724-A/OMA-TS-SyncML-RepPro-V1_2_2-20090724-A.pdf) specification.

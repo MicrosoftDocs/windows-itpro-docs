@@ -25,7 +25,7 @@ The enrollment into Intune is triggered by a group policy created on your local 
 
 **Requirements**:
 
-- The Active Directory joined device must be running Windows 10, version 1709 or later.
+- The Active Directory joined device must be running a [supported version of Windows](/windows/release-health/supported-versions-windows-client).
 - The enterprise has configured a Mobile Device Management (MDM) service.
 - The on-premises Active Directory must be [integrated with Azure AD (via Azure AD Connect)](/azure/architecture/reference-architectures/identity/azure-ad).
 - The device shouldn't already be enrolled in Intune using the classic agents (devices managed using agents will fail enrollment with `error 0x80180026`).
@@ -38,7 +38,7 @@ The enrollment into Intune is triggered by a group policy created on your local 
 > - [How to plan your hybrid Azure Active Directory join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan)
 > - [Azure Active Directory integration with MDM](./azure-active-directory-integration-with-mdm.md)
 
-The auto-enrollment relies on the presence of an MDM service and the Azure Active Directory registration for the PC. Starting in Windows 10, version 1607, once the enterprise has registered its AD with Azure AD, a Windows PC that is domain joined is automatically Azure AD-registered.
+The auto-enrollment relies on the presence of an MDM service and the Azure Active Directory registration for the PC. Once the enterprise has registered its AD with Azure AD, a Windows PC that is domain joined is automatically Azure AD-registered.
 
 > [!NOTE]
 > In Windows 10, version 1709, the enrollment protocol was updated to check whether the device is domain-joined. For details, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692). For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation.
@@ -46,7 +46,7 @@ The auto-enrollment relies on the presence of an MDM service and the Azure Activ
 When the auto-enrollment Group Policy is enabled, a task is created in the background that initiates the MDM enrollment. The task will use the existing MDM service configuration from the Azure Active Directory information of the user. If multi-factor authentication is required, the user will get a prompt to complete the authentication. Once the enrollment is configured, the user can check the status in the Settings page.
 
 - Starting in Windows 10, version 1709, when the same policy is configured in Group Policy and MDM, Group Policy policy takes precedence over MDM.
-- Starting in Windows 10, version 1803, a new setting allows you to change precedence to MDM. For more information, see [Windows 10 Group Policy vs. Intune MDM Policy who wins?](/archive/blogs/cbernier/windows-10-group-policy-vs-intune-mdm-policy-who-wins).
+- Starting in Windows 10, version 1803, a new setting allows you to change precedence to MDM. For more information, see [Windows Group Policy vs. Intune MDM Policy who wins?](/archive/blogs/cbernier/windows-10-group-policy-vs-intune-mdm-policy-who-wins).
 
 For this policy to work, you must verify that the MDM service provider allows Group Policy initiated MDM enrollment for domain-joined devices.
 
@@ -99,7 +99,7 @@ This procedure is only for illustration purposes to show how the new auto-enroll
    :::image type="content" alt-text="MDM autoenrollment policy." source="images/autoenrollment-policy.png" lightbox="images/autoenrollment-policy.png":::
 
    > [!NOTE]
-   > In Windows 10, version 1903 and later, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have installed Windows 10, version 1903 or later. The default behavior for older releases is to revert to **User Credential**.
+   > In Windows 10, version 1903 and later, the MDM.admx file was updated to include the **Device Credential** option to select which credential is used to enroll the device. The default behavior for older releases is to revert to **User Credential**.
    >
    > **Device Credential** is only supported for Microsoft Intune enrollment in scenarios with Co-management or [Azure Virtual Desktop multi-session host pools](/mem/intune/fundamentals/azure-virtual-desktop-multi-session) because the Intune subscription is user centric. User credentials are supported for [Azure Virtual Desktop personal host pools](/mem/intune/fundamentals/azure-virtual-desktop).
 

@@ -6701,6 +6701,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/client-management/appv-deploy-and-config.md",
+      "redirect_url": "/windows/application-management/app-v/appv-for-windows",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/client-management/diagnose-mdm-failures-in-windows-10.md",
       "redirect_url": "/windows/client-management/mdm-collect-logs",
       "redirect_document_id": false

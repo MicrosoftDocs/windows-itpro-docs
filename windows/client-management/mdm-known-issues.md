@@ -21,7 +21,7 @@ appliesto:
 
 ## Get command inside an atomic command isn't supported
 
-In Windows 10 and Windows 11, a Get command inside an atomic command isn't supported.
+A Get command inside an atomic command isn't supported.
 
 ## Apps installed using WMI classes are not removed
 
@@ -29,11 +29,11 @@ Applications installed using WMI classes aren't removed when the MDM account is 
 
 ## Passing CDATA in SyncML does not work
 
-Passing CDATA in data in SyncML to ConfigManager and CSPs doesn't work in Windows 10 and Windows 11.
+Passing CDATA in data in SyncML to ConfigManager and CSPs doesn't work.
 
 ## SSL settings in IIS server for SCEP must be set to "Ignore"
 
-The certificate setting under "SSL Settings" in the IIS server for SCEP must be set to "Ignore" in Windows 10 and Windows 11.
+The certificate setting under "SSL Settings" in the IIS server for SCEP must be set to "Ignore".
 
 ![ssl settings.](images/ssl-settings.png)
 
@@ -49,13 +49,13 @@ Remote server unenrollment is disabled for mobile devices enrolled via Azure Act
 
 ## Certificates causing issues with Wi-Fi and VPN
 
-In Windows 10 and Windows 11, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This dual installation may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We're working to fix this issue.
+When using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This dual installation may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We're working to fix this issue.
 
 ## Version information for Windows 11
 
 The software version information from **DevDetail/Ext/Microsoft/OSPlatform** doesn't match the version in **Settings** under **System/About**.
 
-## Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 and Windows 11
+## Multiple certificates might cause Wi-Fi connection instabilities
 
 In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned doesn't have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria such that it matches only one certificate.
 
@@ -234,9 +234,9 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
 After the MDM client automatically renews the WNS channel URI, the MDM client will immediately check in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
-## User provisioning failure in Azure Active Directory-joined Windows 10 and Windows 11 devices
+## User provisioning failure in Azure Active Directory-joined devices
 
-In Azure AD joined Windows 10 and Windows 11, provisioning /.User resources fails when the user isn't logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, ensure to sign out and sign in with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
+For Azure AD joined devices, provisioning `.\User` resources fails when the user isn't logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, ensure to sign out and sign in with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
 ## Requirements to note for VPN certificates also used for Kerberos Authentication
 
