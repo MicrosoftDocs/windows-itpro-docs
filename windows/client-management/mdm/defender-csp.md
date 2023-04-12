@@ -18,6 +18,8 @@ ms.topic: reference
 
 <!-- Defender-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> [ControlPolicyConflict (MDMWinsOverGP)](policy-csp-controlpolicyconflict.md) is not applicable to the Defender CSP. If using MDM, remove your current Defender group policy settings to avoid conflicts with your MDM settings.
 <!-- Defender-Editable-End -->
 
 <!-- Defender-Tree-Begin -->
@@ -2479,7 +2481,7 @@ Information about the current status of the threat. The following list shows the
 | 7 | Removed |
 | 8 | Cleaned |
 | 9 | Allowed |
-| 10 | No Status ( Cleared) |
+| 10 | No Status (Cleared) |
 <!-- Device-Detections-{ThreatId}-CurrentStatus-Description-End -->
 
 <!-- Device-Detections-{ThreatId}-CurrentStatus-Editable-Begin -->
@@ -3674,7 +3676,7 @@ OfflineScan action starts a Microsoft Defender Offline scan on the computer wher
 
 <!-- Device-RollbackEngine-Description-Begin -->
 <!-- Description-Source-DDF -->
-RollbackEngine action rolls back Microsoft Defender engine to it's last known good saved version on the computer where you run the command.
+RollbackEngine action rolls back Microsoft Defender engine to its last known good saved version on the computer where you run the command.
 <!-- Device-RollbackEngine-Description-End -->
 
 <!-- Device-RollbackEngine-Editable-Begin -->
