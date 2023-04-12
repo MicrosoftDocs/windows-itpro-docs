@@ -221,7 +221,7 @@ The features that are turned off by default from servicing updates will be enabl
 
 | Policy | Sets registry key under HKLM\Software |
 | --- | --- |
-| GPO for Windows 11, version 22H2 with [kb5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage end user experience > **Enable features introduced via servicing that are off by default**| \Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversInQualityUpdate  |
+| GPO for Windows 11, version 22H2 with [kb5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage end user experience > **Enable features introduced via servicing that are off by default**| \Policies\Microsoft\Windows\WindowsUpdate\AllowTemporaryEnterpriseFeatureControl  |
 | MDM for Windows 11, version 22H2 with [kb5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**[AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol)** | \Microsoft\PolicyManager\default\Update\AllowTemporaryEnterpriseFeatureControl |
 
 
