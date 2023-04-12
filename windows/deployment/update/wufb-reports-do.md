@@ -36,11 +36,11 @@ Windows Update for Business reports uses the following Delivery Optimization ter
    - HTTP Only (0)
    - Simple Mode (99)
    - Bypass (100), deprecated in Windows 11
-- **Bandwidth savings**: Out of the total consumed bandwidth, the percentage of bandwidth that was downloaded from either LAN or Group peers, and from Microsoft Connected Cache (MCC)
+- **Bandwidth savings**: The percentage of bandwidth that was downloaded from alternate sources (Peers or Microsoft Connected Cache (MCC) out of the total amount of data downloaded.
    - If bandwidth savings are <= 60%, a *Warning* icon is displayed
    - When bandwidth savings are <10%, an *Error* icon is displayed.
 - **Configurations**: Based on the DownloadMode configuration set via MDM, Group Policy, or end-user via the user interface.
-- **P2P Device Count**: The device count is determined by the number of devices that have received bytes from peers, for supported content types.
+- **P2P Device Count**: The device count is determined by the number of devices configured to use peering.
 - **Microsoft Connected Cache (MCC)**: Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. For more information, see [Microsoft Connected Cache overview](../do/waas-microsoft-connected-cache.md).
 - **MCC Device Count**: The device count is determined by the number of devices that have received bytes from the cache server, for supported content types.
 - **Total # of Devices**: The total number of devices with activity in last 28 days.
@@ -57,19 +57,19 @@ There are several calculated values that appear on the Delivery Optimization rep
 
 **Efficiency (%) Calculations**:
  
-- Bandwidth Savings (BW SAV%) = (BytesFromPeers + BytesFromGroupPeers + BytesFromCache)/
-(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN + BytesFromCache) * 100.0
+- Bandwidth Savings (BW SAV%) = 100 * (BytesFromPeers + BytesFromGroupPeers + BytesFromCache) /
+(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN + BytesFromCache)
   - [UCDOAggregatedStatus](wufb-reports-schema-ucdostatus.md) table
-- % P2P Efficiency = (BytesFromPeers + BytesFromGroupPeers)/(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) * 100
+- % P2P Efficiency = 100 * (BytesFromPeers + BytesFromGroupPeers) / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache)
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
-- % MCC Efficiency = BytesFromCache/(BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) * 100 
+- % MCC Efficiency = 100 * BytesFromCache / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) 
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
 
 **Bytes Calculations**:
 
 - TotalBytes = BytesFromCDN + BytesFromEnterpriseCache + BytesFromPeers + BytesFromGroupPeers
   - [UCDOAggregatedStatus](wufb-reports-schema-ucdostatus.md) table
-- BytesFromCDN = BytesFromCDN - BytesFromEnterpriseCache 
+- BytesFromCDN = BytesFromCDN
   - [UCDOAggregatedStatus](wufb-reports-schema-ucdostatus.md) table
 - BytesFromPeers = BytesFromLAN
   - [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md) table
@@ -145,7 +145,7 @@ DeviceCount = count_distinct(GlobalDeviceId) by GroupID | top 10 by DeviceCount 
 ## Frequency Asked Questions
 
 - **What time period does the Delivery Optimization data include?**
-Data is available for the last 28 days.
+Data is generated/aggregated for the last 28 days for active devices.
 
 - **Data is showing as 'Unknown', what does that mean?**
 You may see data in the report listed as 'Unknown'. This status indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.
