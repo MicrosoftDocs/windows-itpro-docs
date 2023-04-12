@@ -20,6 +20,10 @@ ms.topic: reference
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- Defender-Editable-End -->
 
+> [!NOTE]
+> [ControlPolicyConflict (MDMWinsOverGP)](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-controlpolicyconflict) is not applicable to the Defender CSP.
+> If using a MDM, you will want to clean up your current Defender Group Policy (GPO) settings in order to not conflict with your MDM settings.
+
 <!-- Defender-Tree-Begin -->
 The following list shows the Defender configuration service provider nodes:
 
