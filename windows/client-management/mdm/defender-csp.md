@@ -18,6 +18,8 @@ ms.topic: reference
 
 <!-- Defender-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> [ControlPolicyConflict (MDMWinsOverGP)](policy-csp-controlpolicyconflict.md) is not applicable to the Defender CSP. If using MDM, remove your current Defender group policy settings to avoid conflicts with your MDM settings.
 <!-- Defender-Editable-End -->
 
 <!-- Defender-Tree-Begin -->
