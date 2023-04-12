@@ -44,7 +44,7 @@ It's advisable to set **Account lockout duration** to approximately 15 minutes.
 
 ### Location
 
-**Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Password Policy**
+**Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Account Lockout Policy**
 
 ### Default values
 
