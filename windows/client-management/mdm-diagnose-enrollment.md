@@ -62,13 +62,13 @@ To ensure that the auto-enrollment feature is working as expected, you must veri
 
    :::image type="content" alt-text="Mobility setting MDM intune." source="images/auto-enrollment-microsoft-intune-setting.png" lightbox="images/auto-enrollment-microsoft-intune-setting.png":::
 
-1. Verify that the *Enable Automatic MDM enrollment using default Azure AD credentials* group policy (**Local Group Policy Editor > Computer Configuration > Policies > Administrative Templates > Windows Components > MDM**) is properly deployed to all devices that should be enrolled into Intune. You may contact your domain administrators to verify if the group policy has been deployed successfully.
+1. When using group policy for enrollment, verify that the *Enable Automatic MDM enrollment using default Azure AD credentials* group policy (**Local Group Policy Editor > Computer Configuration > Policies > Administrative Templates > Windows Components > MDM**) is properly deployed to all devices that should be enrolled into Intune. You may contact your domain administrators to verify if the group policy has been deployed successfully.
 
-1. Verify that Microsoft Intune should allow enrollment of Windows devices.
+1. Verify that Microsoft Intune allows enrollment of Windows devices.
 
    :::image type="content" alt-text="Enrollment of Windows devices." source="images/auto-enrollment-enrollment-of-windows-devices.png" lightbox="images/auto-enrollment-enrollment-of-windows-devices.png":::
 
-## Troubleshoot auto-enrollment using group policy
+## Troubleshoot group policy enrollment
 
 Investigate the logs if you have issues even after performing all the verification steps. The first log file to investigate is the event log on the target Windows device. To collect Event Viewer logs:
 

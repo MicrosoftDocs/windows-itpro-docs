@@ -21,7 +21,7 @@ items:
               - name: MAM support for device management
                 href: implement-server-side-mobile-application-management.md
           - name: Enroll devices
-            expanded: true
+            expanded: false
             items:
               - name: Enrollment overview
                 href: mobile-device-enrollment.md
@@ -40,7 +40,7 @@ items:
               - name: On-premises authentication enrollment
                 href: on-premise-authentication-device-enrollment.md
           - name: Manage devices
-            expanded: true
+            expanded: false
             items:
               - name: Manage settings
                 href: windows-mdm-enterprise-settings.md
@@ -53,6 +53,7 @@ items:
               - name: Certificate renewal
                 href: certificate-renewal-windows-mdm.md
           - name: Diagnose MDM failures
+            expanded: false
             items:
               - name: Collect MDM logs
                 href: mdm-collect-logs.md
