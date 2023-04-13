@@ -4,7 +4,7 @@ description: Discover which version of Windows you're running to determine wheth
 ms.prod: windows-client
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.date: 04/30/2018
+ms.date: 04/13/2023
 ms.reviewer:
 manager: aaroncz
 ms.topic: troubleshooting

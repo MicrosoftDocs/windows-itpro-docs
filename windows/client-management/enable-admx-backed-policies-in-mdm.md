@@ -102,17 +102,17 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
 
       ![Enable publishing server 2 settings.](images/admx-app-v-enablepublishingserver2settings.png)
 
-   2. Find the variable names of the parameters in the ADMX file.
+   1. Find the variable names of the parameters in the ADMX file.
 
       You can find the ADMX file name in the policy description in Policy CSP. In this example, the filename appv.admx is listed in [AppVirtualization/PublishingAllowServer2](mdm/policy-csp-appvirtualization.md#publishingallowserver2).
 
       ![Publishing server 2 policy description.](images/admx-appv-policy-description.png)
 
-   3. Navigate to **C:\Windows\PolicyDefinitions** (default location of the ADMX files) and open appv.admx.
+   1. Navigate to **C:\Windows\PolicyDefinitions** (default location of the ADMX files) and open appv.admx.
 
-   4. Search for GP name **Publishing_Server2_policy**.
+   1. Search for GP name **Publishing_Server2_policy**.
 
-   5. Under **policy name="Publishing_Server2_Policy"** you can see the \<elements> listed. The *text id* and *enum id* represent the *data id* you need to include in the SyncML data payload. They correspond to the fields you see in the Group Policy Editor.
+   1. Under **policy name="Publishing_Server2_Policy"** you can see the \<elements> listed. The *text id* and *enum id* represent the *data id* you need to include in the SyncML data payload. They correspond to the fields you see in the Group Policy Editor.
 
       Here's the snippet from appv.admx:
 
@@ -204,7 +204,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
       </policy>
       ```
 
-   6. From the **\<elements>**  tag, copy all of the *text id* and *enum id* and create an XML with *data id* and *value* fields. The *value* field contains the configuration settings that you would enter in the Group Policy Editor.
+   1. From the **\<elements>**  tag, copy all of the *text id* and *enum id* and create an XML with *data id* and *value* fields. The *value* field contains the configuration settings that you would enter in the Group Policy Editor.
 
       Here's the example XML for Publishing_Server2_Policy:
 
@@ -221,7 +221,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
       <data id="User_Refresh_Unit_Options" value="1"/>
       ```
 
-   7. Create the SyncML to enable the policy. Payload contains \<enabled/> and name/value pairs.
+   1. Create the SyncML to enable the policy. Payload contains \<enabled/> and name/value pairs.
 
       Here's the example for **AppVirtualization/PublishingAllowServer2**:
 

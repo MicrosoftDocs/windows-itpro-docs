@@ -3,7 +3,7 @@ title: Manage the Settings app with Group Policy
 description: Find out how to manage the Settings app with Group Policy so you can hide specific pages from users.
 ms.prod: windows-client
 author: vinaypamnani-msft
-ms.date: 09/14/2021
+ms.date: 04/13/2023
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
