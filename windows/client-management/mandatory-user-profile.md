@@ -118,6 +118,13 @@ First, you create a default user profile with the customizations that you want, 
 
 1. Rename `Ntuser.dat` to `Ntuser.man`.
 
+### Check and set the correct owner for the mandatory profile folders
+
+1. Open the properties of the "profile.v6" folder.
+2. Go to the "security" tab and click "Advanced".
+3. Check the "owner" of the folder. It has to be the builtin Administrators group. To change it here if it does not match, you need to be in the Administrators group of the file server to take ownership, or have "set owner" privilege on the server.
+4. When you have set the owner, check the box "Replace owner on subcontainers and objects" before you click OK.
+
 ## Apply a mandatory user profile to users
 
 In a domain, you modify properties for the user account to point to the mandatory profile in a shared folder residing on the server.
