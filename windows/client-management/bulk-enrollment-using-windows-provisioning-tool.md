@@ -16,7 +16,7 @@ appliesto:
 
 # Bulk enrollment using Windows Configuration Designer
 
-Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to re-image the devices. You can use the [Provisioning CSP](mdm/provisioning-csp.md) for bulk enrollment, except for the Azure Active Directory Join (Cloud Domain Join) enrollment scenario.
+Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to re-image the devices. You can use the [Provisioning CSP](mdm/provisioning-csp.md) for bulk enrollment, except for the Azure Active Directory Join enrollment scenario.
 
 ## Typical use cases
 
