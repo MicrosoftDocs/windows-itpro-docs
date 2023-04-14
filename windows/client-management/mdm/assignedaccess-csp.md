@@ -959,7 +959,7 @@ By default, the StatusConfiguration node doesn't exist, and it implies this feat
     </SyncML>
     ```
 
-Delete StatusConfiguration
+- Delete StatusConfiguration
 
     ```xml
     <SyncML xmlns='SYNCML:SYNCML1.2'>
