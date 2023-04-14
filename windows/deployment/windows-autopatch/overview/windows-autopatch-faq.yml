@@ -96,7 +96,7 @@ sections:
           - Rollback: For more information about Microsoft 365 Apps for enterprise, see [Update controls for Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls).
       - question: Can I permanently pause a Windows feature update deployment?
         answer: |
-          Yes. Windows Autopatch provides a [permanent pause of either a feature update deployment](../operate/windows-autopatch-windows-feature-update-overview.md#pausing-and-resuming-a-release).
+          Yes. Windows Autopatch provides a [permanent pause of a feature update deployment](../operate/windows-autopatch-windows-feature-update-overview.md#pausing-and-resuming-a-release).
       - question: Will Windows quality updates be released more quickly after vulnerabilities are identified, or what is the regular cadence of updates?
         answer: |
           For zero-day threats, Autopatch will have an [expedited release cadence](../operate/windows-autopatch-windows-quality-update-overview.md#expedited-releases). For normal updates Autopatch, uses a [regular release cadence](../operate/windows-autopatch-wqu-overview.md#windows-quality-update-releases) starting with devices in the Test ring and completing with general rollout to the Broad ring.
