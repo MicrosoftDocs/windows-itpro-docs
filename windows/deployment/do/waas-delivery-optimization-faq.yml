@@ -101,7 +101,7 @@ sections:
 
      - question: How are downloads initiated by Delivery Optimization?
        answer: |
-          Delivery Optimization only starts a download when it is initated by an application/service that has been integrated with Delivery Optimization (e.g. Edge browser).
+         Delivery Optimization only starts a download when it is initated by an application/service that has been integrated with Delivery Optimization (e.g. Edge browser).
             
      - question: How does Delivery Optimization determine which content is available for peering?
        answer: |
