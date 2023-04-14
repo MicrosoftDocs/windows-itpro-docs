@@ -1,10 +1,10 @@
 ---
 title: UnifiedWriteFilter DDF File
 description: UnifiedWriteFilter DDF File
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
