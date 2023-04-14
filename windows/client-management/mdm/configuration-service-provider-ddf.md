@@ -4,7 +4,7 @@ description: Learn more about the OMA DM device description framework (DDF) for 
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
