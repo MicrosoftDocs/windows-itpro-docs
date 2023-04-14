@@ -106,7 +106,7 @@ This policy specifies the Tenant ID in the format of a Globally Unique Identifie
 
 <!-- Device-{TenantId}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure.service/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
+To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
 <!-- Device-{TenantId}-Editable-End -->
 
 <!-- Device-{TenantId}-DFProperties-Begin -->
@@ -1831,7 +1831,7 @@ This policy specifies the Tenant ID in the format of a Globally Unique Identifie
 
 <!-- User-{TenantId}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure.service/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
+To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
 <!-- User-{TenantId}-Editable-End -->
 
 <!-- User-{TenantId}-DFProperties-Begin -->
