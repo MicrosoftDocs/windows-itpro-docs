@@ -99,11 +99,11 @@ sections:
           > [!NOTE]
           > If you use public IP addresses instead of private in LAN mode, the bytes downloaded from or uploaded to LAN peers with public IP addresses might be reported as coming from Internet peers.
 
-     - question: How are downloads initiated by Delivery Optimization?
-       answer: |
+      - question: How are downloads initiated by Delivery Optimization?
+        answer: |
          Delivery Optimization only starts a download when it is initated by an application/service that has been integrated with Delivery Optimization (e.g. Edge browser).
             
-     - question: How does Delivery Optimization determine which content is available for peering?
-       answer: |
+      - question: How does Delivery Optimization determine which content is available for peering?
+        answer: |
           Delivery Optimization uses the cache content on the device to determine what is available for peering. There is a limited number (4) of slots for cached content that is available for peering at a given time. Delivery Optimization contains logic that rotates the cached content in those slots.
           
