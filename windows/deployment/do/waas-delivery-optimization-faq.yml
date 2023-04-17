@@ -12,7 +12,7 @@ metadata:
     - highpri
     - tier3
   ms.topic: faq
-  ms.date: 08/04/2022
+  ms.date: 04/17/2023
 title: Delivery Optimization Frequently Asked Questions
 summary: |
   **Applies to**
@@ -101,9 +101,9 @@ sections:
 
       - question: How are downloads initiated by Delivery Optimization?
         answer: |
-         Delivery Optimization only starts when an application/service that has been integrated with Delivery Optimization initiates a download (for example, Edge browser). [Learn more](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) about the complete list of Delivery Optimization callers.
+         Delivery Optimization only starts when an application or service that's integrated with Delivery Optimization starts a download. For example, the Microsoft Edge browser. For more information about Delivery Optimization callers, see [Types of download content supported by Delivery Optimization](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization).
             
       - question: How does Delivery Optimization determine which content is available for peering?
         answer: |
-          Delivery Optimization uses the cache content on the device to determine what is available for peering. For the upload source device there's a limited number (4) of slots for cached content that is available for peering at a given time. Delivery Optimization contains logic that rotates the cached content in those slots.
+          Delivery Optimization uses the cache content on the device to determine what's available for peering. For the upload source device, there's a limited number (4) of slots for cached content that's available for peering at a given time. Delivery Optimization contains logic that rotates the cached content in those slots.
           
