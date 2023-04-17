@@ -54,6 +54,14 @@ To be informed about the latest updates and releases, follow [@WindowsUpdate](ht
 
    ![A screenshot showing issue details.](images/WRH-known-issue-detail.png)
 
+## Sign up for email notifications 
+
+You have the option to sign up for email notifications about Windows known issues and  information updates, such as a change in status, new workarounds, and resolutions released. To subscribe, go to the [Windows release health page](https://admin.microsoft.com/Adminportal/Home?#/windowsreleasehealth), select **Preferences > Email**, click **Send me email notifications about Windows release health**, and then specify: 
+- Up to two email addresses. Each admin can set their Preferences. The limit of two email addresses is per admin account. 
+- Which Windows versions you want to be notified about. If your organization has multiple versions of Windows, we recommend selecting all that apply. 
+Lastly, don’t forget to click on **Save**. It might take up to 8 hours for these changes to take effect. 
+**Note:** If one known issue affects more than one version of Windows, you will receive only one email, even if you sign up for multiple Windows versions. We won’t send duplicate emails. 
+
 ## Status definitions
 
 In the **Windows release health** experience, every known issue is assigned as status. Those statuses are defined as follows:
